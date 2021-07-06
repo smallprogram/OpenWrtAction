@@ -39,7 +39,7 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     timeout-minutes: 720
-    
+
     steps:
     - name: Checkout
       uses: actions/checkout@main
@@ -187,7 +187,7 @@ jobs:
       uses: dev-drprasad/delete-older-releases@v0.1.0
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
-        keep_latest: 6
+        keep_latest: 3
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
