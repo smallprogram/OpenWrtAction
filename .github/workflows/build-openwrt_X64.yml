@@ -38,7 +38,6 @@ env:
 jobs:
   build:
     runs-on: ubuntu-20.04
-    timeout-minutes: 720
 
     steps:
     - name: Checkout
@@ -102,7 +101,6 @@ jobs:
         find dl -size -1024c -exec rm -f {} \;
 
     - name: Compile the firmware
-      timeout-minutes: 720
       id: compile
       run: |
         cd openwrt
