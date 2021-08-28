@@ -1,3 +1,10 @@
+# 自用Lean Openwrt固件
+目前仅包含x86与R4S固件,每天1点编译，根据需求自取。
+## 包含内容
+[x64](https://github.com/smallprogram/OpenWrtAction/blob/main/config/x64.config)
+[R4S](https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config)
+
+
 # Actions-OpenWrt
 
 [![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
