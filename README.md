@@ -1,55 +1,22 @@
 # 自用Lean Openwrt固件
 目前仅包含x86与R4S固件,每天1点编译，根据需求自取。
 ## 包含内容
-[x64](https://github.com/smallprogram/OpenWrtAction/blob/main/config/x64.config)
-
-[R4S](https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config)
+详细的配置情况：[x64](https://github.com/smallprogram/OpenWrtAction/blob/main/config/x64.config)，[R4S](https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config)
 
 统一KERNEL大小128Mb,ROOTFS大小512Mb
 
-相关截图：
+包含vim、nano等编辑器
 
+包含openssh-sftp-client、openssh-sftp-server,支持FinalShell连接路由器后显示文件管理
 
-# Actions-OpenWrt
+## 相关截图：
 
-[![LICENSE](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square&label=LICENSE)](https://github.com/P3TERX/Actions-OpenWrt/blob/master/LICENSE)
-![GitHub Stars](https://img.shields.io/github/stars/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Stars&logo=github)
-![GitHub Forks](https://img.shields.io/github/forks/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Forks&logo=github)
-
-Build OpenWrt using GitHub Actions
-
-[Read the details in my blog (in Chinese) | 中文教程](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
-
-## Usage
-
-- Click the [Use this template](https://github.com/P3TERX/Actions-OpenWrt/generate) button to create a new repository.
-- Generate `.config` files using [Lean's OpenWrt](https://github.com/coolsnowwolf/lede) source code. ( You can change it through environment variables in the workflow file. )
-- Push `.config` file to the GitHub repository.
-- Select `Build OpenWrt` on the Actions page.
-- Click the `Run workflow` button.
-- When the build is complete, click the `Artifacts` button in the upper right corner of the Actions page to download the binaries.
-
-## Tips
-
-- It may take a long time to create a `.config` file and build the OpenWrt firmware. Thus, before create repository to build your own firmware, you may check out if others have already built it which meet your needs by simply [search `Actions-Openwrt` in GitHub](https://github.com/search?q=Actions-openwrt).
-- Add some meta info of your built firmware (such as firmware architecture and installed packages) to your repository introduction, this will save others' time.
-
-## Acknowledgments
-
-- [Microsoft Azure](https://azure.microsoft.com)
-- [GitHub Actions](https://github.com/features/actions)
-- [OpenWrt](https://github.com/openwrt/openwrt)
-- [Lean's OpenWrt](https://github.com/coolsnowwolf/lede)
-- [tmate](https://github.com/tmate-io/tmate)
-- [mxschmitt/action-tmate](https://github.com/mxschmitt/action-tmate)
-- [csexton/debugger-action](https://github.com/csexton/debugger-action)
-- [Cowtransfer](https://cowtransfer.com)
-- [WeTransfer](https://wetransfer.com/)
-- [Mikubill/transfer](https://github.com/Mikubill/transfer)
-- [softprops/action-gh-release](https://github.com/softprops/action-gh-release)
-- [c-hive/gha-remove-artifacts](https://github.com/c-hive/gha-remove-artifacts)
-- [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
-
-## License
-
-[MIT](https://github.com/P3TERX/Actions-OpenWrt/blob/main/LICENSE) © P3TERX  
+![image](https://user-images.githubusercontent.com/6050360/131204554-41935744-160c-4ffc-a6c1-aab6a644b0ab.png)
+![image](https://user-images.githubusercontent.com/6050360/131204362-71d7e6ca-dbec-4f94-9820-165e879631ae.png)
+![image](https://user-images.githubusercontent.com/6050360/131204365-fbf01e8e-e603-4502-9c3e-31bb80936a8b.png)
+![image](https://user-images.githubusercontent.com/6050360/131204375-e13ed58a-eb13-4b1e-b190-7f9ce5043a36.png)
+![image](https://user-images.githubusercontent.com/6050360/131204378-f82ad597-26a6-4731-9f4c-ccd15b2a819e.png)
+![image](https://user-images.githubusercontent.com/6050360/131204382-3fe521a2-6d73-4a44-ba5b-073c3b73781b.png)
+![image](https://user-images.githubusercontent.com/6050360/131204386-900de91f-8d96-47e1-bbdc-fa1d6d346e32.png)
+![image](https://user-images.githubusercontent.com/6050360/131204389-6c03346a-5a0a-4830-ba3e-eac250afa0b8.png)
+![image](https://user-images.githubusercontent.com/6050360/131204391-a52def28-8de9-4847-a1d3-b52824b27da4.png)
