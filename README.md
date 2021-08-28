@@ -2,7 +2,12 @@
 目前仅包含x86与R4S固件,每天1点编译，根据需求自取。
 ## 包含内容
 [x64](https://github.com/smallprogram/OpenWrtAction/blob/main/config/x64.config)
+
 [R4S](https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config)
+
+统一KERNEL大小128Mb,ROOTFS大小512Mb
+
+相关截图：
 
 
 # Actions-OpenWrt
