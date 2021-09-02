@@ -8,6 +8,15 @@
 统一KERNEL大小128Mb,ROOTFS大小512Mb
 
 相关截图：
+![image](https://user-images.githubusercontent.com/6050360/131844017-ace7ba93-01ae-45c9-8d40-ea8656196e87.png)
+![image](https://user-images.githubusercontent.com/6050360/131844072-015fc3a4-e2f4-40c1-a25f-2431c3560fd0.png)
+![image](https://user-images.githubusercontent.com/6050360/131844088-d964acb7-8cb6-4f09-aedb-0478a206dd95.png)
+![image](https://user-images.githubusercontent.com/6050360/131844113-9ca22378-7a7f-424c-94d3-394e64a09afd.png)
+![image](https://user-images.githubusercontent.com/6050360/131844136-1447924a-39fb-449c-9f09-cadf84231d1f.png)
+![image](https://user-images.githubusercontent.com/6050360/131844149-5a7b8985-e5b3-44e3-8f2a-481755d8c4ef.png)
+![image](https://user-images.githubusercontent.com/6050360/131844165-45a5cc09-1995-4d1d-9bd2-f4a3ace84ab2.png)
+![image](https://user-images.githubusercontent.com/6050360/131844196-6cd9badf-b688-47f7-bec7-85b907b35931.png)
+![image](https://user-images.githubusercontent.com/6050360/131844215-5491db28-7e52-4715-8418-47771397be9c.png)
 
 
 # Actions-OpenWrt
