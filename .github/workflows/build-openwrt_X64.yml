@@ -61,8 +61,10 @@ jobs:
         df -hT $PWD
         mkdir ../tmphold && mv * .git* ../tmphold/
         git clone $REPO_URL -b $REPO_BRANCH .
-        mv ../tmphold/* ./
         mv ../tmphold/config/* ./config/
+        rm ../tmphold/config -r
+        mv ../tmphold/* ./
+        
         
     - name: cache
       uses: klever1988/cachewrtbuild@main
