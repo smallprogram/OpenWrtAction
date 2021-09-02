@@ -42,15 +42,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
-      with:
-        ref: master
-        fetch-depth: 0
 
-    - name: cache
-      uses: klever1988/cachewrtbuild@main
-      with: |
-        ccache: 'true'
-  
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
@@ -88,7 +80,6 @@ jobs:
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-        echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config; make defconfig
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
