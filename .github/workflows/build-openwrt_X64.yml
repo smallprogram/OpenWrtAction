@@ -59,7 +59,9 @@ jobs:
     - name: Clone source code
       run: |
         df -hT $PWD
+        mkdir ../tmphold && mv * ../tmphold/
         git clone $REPO_URL -b $REPO_BRANCH .
+        mv ../tmphold/* ./
         
     - name: cache
       uses: klever1988/cachewrtbuild@main
