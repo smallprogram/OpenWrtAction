@@ -18,6 +18,6 @@ cd package/lean
 rm -rf luci-theme-argon  
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git 
 git clone https://github.com/jerrykuku/luci-app-argon-config.git
-mv source/img/36112_neon_genesis_evangelion.jpg luci-theme-argon/htdocs/luci-static/argon/background/bg1.jpg
+mv work/OpenWrtAction/OpenWrtAction/source/img/ luci-theme-argon/htdocs/luci-static/argon/background/
 cd luci-theme-argon/htdocs/luci-static/argon/background
 ls
