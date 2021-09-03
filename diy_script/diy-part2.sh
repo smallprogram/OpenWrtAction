@@ -22,8 +22,8 @@ cd
 cd work/OpenWrtAction/OpenWrtAction/openwrt/package/lean/luci-theme-argon/htdocs/luci-static/argon/
 ls
 cd
-mkdir -p /work/OpenWrtAction/OpenWrtAction/openwrt/package/lean/luci-theme-argon/htdocs/luci-static/argon/background
-cp -r work/OpenWrtAction/OpenWrtAction/source/img/36112_neon_genesis_evangelion.jpg work/OpenWrtAction/OpenWrtAction/openwrt/package/lean/luci-theme-argon/htdocs/luci-static/argon/background/
+sudo mkdir -p /work/OpenWrtAction/OpenWrtAction/openwrt/package/lean/luci-theme-argon/htdocs/luci-static/argon/background
+sudo cp -r work/OpenWrtAction/OpenWrtAction/source/img/36112_neon_genesis_evangelion.jpg work/OpenWrtAction/OpenWrtAction/openwrt/package/lean/luci-theme-argon/htdocs/luci-static/argon/background/
 cd work/OpenWrtAction/OpenWrtAction/openwrt/package/lean/luci-theme-argon/htdocs/luci-static/argon/background
 ls
 cd
