@@ -8,5 +8,6 @@
 统一KERNEL大小128Mb,ROOTFS大小1024Mb
 
 集成jerrykuku/luci-theme-argon主题以及jerrykuku/luci-app-argon-config主题控制器。
+还有那啥wall,那啥乳等等
 
 
