@@ -1,5 +1,5 @@
 # 自用Lean Openwrt固件
-目前仅包含x86与R4S固件,每天1点编译，根据需求自取。
+目前仅包含x86与R4S固件,每8小时编译一次，根据需求自取。
 ## 包含内容
 [x64](https://github.com/smallprogram/OpenWrtAction/blob/main/config/x64.config)
 
