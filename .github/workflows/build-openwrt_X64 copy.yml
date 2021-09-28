@@ -86,8 +86,8 @@ jobs:
       run: |
         echo "::set-output name=release_tag::X64-$(date +"%Y.%m.%d-%H%M")"
         cd openwrt
-        echo "sudo git log -n $COMMIT_LOG_NUM > /home/runner/work/OpenWrtAction/OpenWrtAction/release.txt"
-        sudo cat /home/runner/work/OpenWrtAction/OpenWrtAction/release.txt
+        echo "sudo git log -n $COMMIT_LOG_NUM > release.txt"
+        sudo cat release.txt
 
         touch release.txt
         echo "::set-output name=status::success"
