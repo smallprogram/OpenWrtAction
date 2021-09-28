@@ -140,7 +140,7 @@ jobs:
         # key: HEAD-${{ steps.getHash.outputs.commitHash_luci-app-dockerman }}
     
     - name: Show Commit Head
-    run: |
+      run: |
         echo ${{ steps.getHash.outputs.commitHash_Lede }}
         echo ${{ steps.getHash.outputs.commitHash_All }}
 
