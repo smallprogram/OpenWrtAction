@@ -1,0 +1,121 @@
+#
+# Copyright (c) 2019-2021 P3TERX <https://p3terx.com>
+#
+# This is free software, licensed under the MIT License.
+# See /LICENSE for more information.
+#
+# https://github.com/P3TERX/Actions-OpenWrt
+# File: .github/workflows/update-checker.yml
+# Description: Source code update checker
+#
+
+name: Source_Code_Update_Checker
+
+env:
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
+
+  REPO_URL_HelloWorld: https://github.com/fw876/helloworld
+  REPO_BRANCH_HelloWorld: master
+
+  REPO_URL_PassWall: https://github.com/xiaorouji/openwrt-passwall
+  REPO_BRANCH_PassWall: master
+
+  REPO_URL_ThemeArgon: https://github.com/jerrykuku/luci-theme-argon
+  REPO_BRANCH_ThemeArgon: master
+
+  REPO_URL_ArgonConfig: https://github.com/jerrykuku/luci-app-argon-config
+  REPO_BRANCH_ArgonConfig: master
+
+  REPO_URL_lua-maxminddb: https://github.com/jerrykuku/lua-maxminddb
+  REPO_BRANCH_lua-maxminddb: master
+
+  REPO_URL_luci-app-vssr: https://github.com/jerrykuku/luci-app-vssr
+  REPO_BRANCH_luci-app-vssr: master
+
+  REPO_URL_luci-app-dockerman: https://github.com/lisaac/luci-app-dockerman
+  REPO_BRANCH_luci-app-dockerman: master
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 0 */8 * * *
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Get Commit Hash
+      id: getHash
+      run: |
+        git clone --depth 1 $REPO_URL -b $REPO_BRANCH .
+        echo "::set-output name=commitHash::$(git rev-parse HEAD)"
+
+        git clone --depth 1 $REPO_URL_HelloWorld -b $REPO_BRANCH_HelloWorld .
+        echo "::set-output name=commitHash_HelloWorld::$(git rev-parse HEAD)"
+
+        git clone --depth 1 $REPO_URL_PassWall -b $REPO_BRANCH_PassWall .
+        echo "::set-output name=commitHash_PassWall::$(git rev-parse HEAD)"
+
+        git clone --depth 1 $REPO_URL_ThemeArgon -b $REPO_BRANCH_ThemeArgon .
+        echo "::set-output name=commitHash_ThemeArgon::$(git rev-parse HEAD)"
+
+        git clone --depth 1 $REPO_URL_ArgonConfig -b $REPO_BRANCH_ArgonConfig .
+        echo "::set-output name=commitHash_ArgonConfig::$(git rev-parse HEAD)"
+
+        git clone --depth 1 $REPO_URL_lua-maxminddb -b $REPO_BRANCH_lua-maxminddb .
+        echo "::set-output name=commitHash_lua-maxminddb::$(git rev-parse HEAD)"
+
+        git clone --depth 1 $REPO_URL_luci-app-vssr -b $REPO_BRANCH_luci-app-vssr .
+        echo "::set-output name=commitHash_luci-app-vssr::$(git rev-parse HEAD)"
+
+        git clone --depth 1 $REPO_URL_luci-app-dockerman -b $REPO_BRANCH_luci-app-dockerman .
+        echo "::set-output name=commitHash_luci-app-dockerman::$(git rev-parse HEAD)"
+
+    - name: Compare Commit Hash
+      id: cacheHash
+      uses: actions/cache@v2
+      with:
+        path: .commitHash
+        key: HEAD-${{ steps.getHash.outputs.commitHash }}
+        path: .commitHash_HelloWorld
+        key: HEAD-${{ steps.getHash.outputs.commitHash_HelloWorld }}
+        path: .commitHash_PassWall
+        key: HEAD-${{ steps.getHash.outputs.commitHash_PassWall }}
+        path: .commitHash_ThemeArgon
+        key: HEAD-${{ steps.getHash.outputs.commitHash_ThemeArgon }}
+        path: .commitHash_ArgonConfig
+        key: HEAD-${{ steps.getHash.outputs.commitHash_ArgonConfig }}
+        path: .commitHash_lua-maxminddb
+        key: HEAD-${{ steps.getHash.outputs.commitHash_lua-maxminddb }}
+        path: .commitHash_luci-app-vssr
+        key: HEAD-${{ steps.getHash.outputs.commitHash_luci-app-vssr }}
+        path: .commitHash_luci-app-dockerman
+        key: HEAD-${{ steps.getHash.outputs.commitHash_luci-app-dockerman }}
+
+    - name: Save New Commit Hash
+      if: steps.cacheHash.outputs.cache-hit != 'true'
+      run: |
+        echo ${{ steps.getHash.outputs.commitHash }} | tee .commitHash
+        echo ${{ steps.getHash.outputs.commitHash_HelloWorld }} | tee .commitHash_HelloWorld
+        echo ${{ steps.getHash.outputs.commitHash_PassWall }} | tee .commitHash_PassWall
+        echo ${{ steps.getHash.outputs.commitHash_ThemeArgon }} | tee .commitHash_ThemeArgon
+        echo ${{ steps.getHash.outputs.commitHash_ArgonConfig }} | tee .commitHash_ArgonConfig
+        echo ${{ steps.getHash.outputs.commitHash_lua-maxminddb }} | tee .commitHash_lua-maxminddb
+        echo ${{ steps.getHash.outputs.commitHash_luci-app-vssr }} | tee .commitHash_luci-app-vssr
+        echo ${{ steps.getHash.outputs.commitHash_luci-app-dockerman }} | tee .commitHash_luci-app-dockerman
+        
+    - name: Trigger build
+      if: steps.cacheHash.outputs.cache-hit != 'true'
+      uses: peter-evans/repository-dispatch@v1
+      with:
+        token: ${{ secrets.OPENWRTACTION_TRIGGER }}
+        event-type: Source Code Update
+
+    - name: Delete workflow runs
+      uses: GitRML/delete-workflow-runs@main
+      with:
+        retain_days: 1
+        keep_minimum_runs: 1
