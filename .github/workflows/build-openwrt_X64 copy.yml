@@ -86,9 +86,9 @@ jobs:
       run: |
         echo "::set-output name=release_tag::X64-$(date +"%Y.%m.%d-%H%M")"
         echo "PWD:$(pwd)"
-        echo "github.action_path:${github.action_path}"
+        echo "github.action_path:${{ github.action_path }}"
         cd openwrt
-        cat $(git log -n $COMMIT_LOG_NUM > ${github.action_path}/release.txt) 
+        cat $(git log -n $COMMIT_LOG_NUM > ${{ github.action_path }}/release.txt) 
         touch release.txt
         echo "::set-output name=status::success"
 
