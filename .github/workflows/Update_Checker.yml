@@ -134,16 +134,16 @@ jobs:
         echo "commitHash_lua_maxminddb: ${{ steps.getHash.outputs.commitHash_lua_maxminddb }}"
         echo "commitHash_luci_app_vssr: ${{ steps.getHash.outputs.commitHash_luci_app_vssr }}"
         echo "commitHash_luci_app_dockerman: ${{ steps.getHash.outputs.commitHash_luci_app_dockerman }}"
-        echo "::set-output name=commitHash_All:: ${{steps.getHash.outputs.commitHash_Lede} + {steps.getHash.outputs.commitHash_Lede_Package} +{steps.getHash.outputs.commitHash_HelloWorld} + {steps.getHash.outputs.commitHash_PassWall} +{steps.getHash.outputs.commitHash_ArgonConfig} + {steps.getHash.outputs.commitHash_lua_maxminddb} + {steps.getHash.outputs.commitHash_luci_app_vssr} + {steps.getHash.outputs.commitHash_luci_app_dockerman}}"
+        echo "::set-output name=commitHash_All:: ${{steps.getHash.outputs.commitHash_Lede + steps.getHash.outputs.commitHash_Lede_Package + steps.getHash.outputs.commitHash_HelloWorld + steps.getHash.outputs.commitHash_PassWall + steps.getHash.outputs.commitHash_ArgonConfig + steps.getHash.outputs.commitHash_lua_maxminddb + steps.getHash.outputs.commitHash_luci_app_vssr + steps.getHash.outputs.commitHash_luci_app_dockerman}}"
 
-        echo ${{ steps.combHeader.outputs.commitHash_All }}
+        echo "commitHash_All: ${{ steps.combHeader.outputs.commitHash_All }}"
 
     - name: Compare Commit Hash
       id: cacheHash
       uses: actions/cache@v2
       with:
         path: .commitHash_All
-        key: HEAD-${{ steps.getHash.outputs.commitHash_All }}
+        key: HEAD-${{ steps.combHeader.outputs.commitHash_All }}
    
 
     - name: Save New Commit Hash
@@ -157,7 +157,7 @@ jobs:
         echo ${{ steps.getHash.outputs.commitHash_lua_maxminddb }} | tee .commitHash_lua_maxminddb
         echo ${{ steps.getHash.outputs.commitHash_luci_app_vssr }} | tee .commitHash_luci_app_vssr
         echo ${{ steps.getHash.outputs.commitHash_luci_app_dockerman }} | tee .commitHash_luci_app_dockerman
-
+        echo ${{ steps.combHeader.outputs.commitHash_All }} | tee .commitHash_All
         
         
     - name: Trigger build
