@@ -57,7 +57,7 @@ on:
         required: false
         default: 'false'
   schedule:
-    - cron: 0 */8 * * *
+    - cron: 0 */4 * * *
 
 jobs:
   check:
@@ -142,8 +142,6 @@ jobs:
           ${{steps.getHash.outputs.commitHash_luci_app_vssr}}\
           ${{steps.getHash.outputs.commitHash_luci_app_dockerman}}"
 
-        echo "commitHash_All: ${{ steps.combHeader.outputs.commitHash_All }}"
-
     - name: Compare Commit Hash
       id: cacheHash
       uses: actions/cache@v2
@@ -171,10 +169,10 @@ jobs:
       uses: peter-evans/repository-dispatch@v1
       with:
         token: ${{ secrets.OPENWRTACTION_TRIGGER }}
-        event-type: Source Code Update
+        event-type: OpenWrt Related Code Updates
 
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
       with:
         retain_days: 1
-        keep_minimum_runs: 1
+        keep_minimum_runs: 2
