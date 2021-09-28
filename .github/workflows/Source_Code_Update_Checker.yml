@@ -32,17 +32,17 @@ env:
   REPO_BRANCH_ArgonConfig: master
   REPO_PATH_ArgonConfig : "luci-app-argon-config"
 
-  REPO_URL_lua-maxminddb: https://github.com/jerrykuku/lua-maxminddb
-  REPO_BRANCH_lua-maxminddb: master
-  REPO_PATH_lua-maxminddb : "lua-maxminddb"
+  REPO_URL_lua_maxminddb: https://github.com/jerrykuku/lua-maxminddb
+  REPO_BRANCH_lua_maxminddb: master
+  REPO_PATH_lua_maxminddb : "lua-maxminddb"
 
-  REPO_URL_luci-app-vssr: https://github.com/jerrykuku/luci-app-vssr
-  REPO_BRANCH_luci-app-vssr: master
-  REPO_PATH_luci-app-vssr : "luci-app-vssr"
+  REPO_URL_luci_app_vssr: https://github.com/jerrykuku/luci-app-vssr
+  REPO_BRANCH_luci_app_vssr: master
+  REPO_PATH_luci_app_vssr : "luci-app-vssr"
 
-  REPO_URL_luci-app-dockerman: https://github.com/lisaac/luci-app-dockerman
-  REPO_BRANCH_luci-app-dockerman: master
-  REPO_PATH_luci-app-dockerman : "luci-app-dockerman"
+  REPO_URL_luci_app_dockerman: https://github.com/lisaac/luci-app-dockerman
+  REPO_BRANCH_luci_app_dockerman: master
+  REPO_PATH_luci_app_dockerman : "luci-app-dockerman"
 
 on:
   repository_dispatch:
@@ -67,7 +67,7 @@ jobs:
       env:
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-        
+
     - name: Get Commit Hash
       id: getHash
       run: |
@@ -98,18 +98,18 @@ jobs:
         echo "::set-output name=commitHash_ArgonConfig::$(git rev-parse HEAD)"
         cd
 
-        git clone --depth 1 $REPO_URL_lua-maxminddb -b $REPO_BRANCH_lua-maxminddb $REPO_PATH_lua-maxminddb
-        cd $REPO_PATH_lua-maxminddb
+        git clone --depth 1 $REPO_URL_lua_maxminddb -b $REPO_BRANCH_lua_maxminddb $REPO_PATH_lua_maxminddb
+        cd $REPO_PATH_lua_maxminddb
         echo "::set-output name=commitHash_lua_maxminddb::$(git rev-parse HEAD)"
         cd
 
-        git clone --depth 1 $REPO_URL_luci-app-vssr -b $REPO_BRANCH_luci-app-vssr $REPO_PATH_luci-app-vssr
-        cd $REPO_PATH_luci-app-vssr
+        git clone --depth 1 $REPO_URL_luci_app_vssr -b $REPO_BRANCH_luci_app_vssr $REPO_PATH_luci_app_vssr
+        cd $REPO_PATH_luci_app_vssr
         echo "::set-output name=commitHash_luci_app_vssr::$(git rev-parse HEAD)"
         cd
 
-        git clone --depth 1 $REPO_URL_luci-app-dockerman -b $REPO_BRANCH_luci-app-dockerman $REPO_PATH_luci-app-dockerman
-        cd $REPO_PATH_luci-app-dockerman
+        git clone --depth 1 $REPO_URL_luci_app_dockerman -b $REPO_BRANCH_luci_app_dockerman $REPO_PATH_luci_app_dockerman
+        cd $REPO_PATH_luci_app_dockerman
         echo "::set-output name=commitHash_luci_app_dockerman::$(git rev-parse HEAD)"
         cd
 
