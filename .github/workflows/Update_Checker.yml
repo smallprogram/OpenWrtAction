@@ -12,38 +12,53 @@
 name: Update_Checker
 
 env:
+
+  # smallprogramOpenWrtAction源码
+  REPO_URL_smallprogramAction: https://github.com/smallprogram/OpenWrtAction
+  REPO_BRANCH_smallprogramAction: main
+  REPO_PATH_smallprogramAction : "smallprogramOpenWrtAction"
+
+  # Lean源码
   REPO_URL_Lede: https://github.com/coolsnowwolf/lede
   REPO_BRANCH_Lede: master
   REPO_PATH_Lede : "lede"
 
+  # Lean Package源码
   REPO_URL_Lede_Package: https://github.com/coolsnowwolf/packages
   REPO_BRANCH_Lede_Package: master
   REPO_PATH_Lede_Package : "ledepackage"
   
+   # SSRP源码
   REPO_URL_HelloWorld: https://github.com/fw876/helloworld
   REPO_BRANCH_HelloWorld: master
   REPO_PATH_HelloWorld : "helloworld"
 
+  # Passwall源码
   REPO_URL_PassWall: https://github.com/xiaorouji/openwrt-passwall
   REPO_BRANCH_PassWall: main
   REPO_PATH_PassWall : "openwrt-passwall"
 
+  # jerrykuku/luci-theme-argon主题源码
   REPO_URL_ThemeArgon: https://github.com/jerrykuku/luci-theme-argon
   REPO_BRANCH_ThemeArgon: master
   REPO_PATH_ThemeArgon : "luci-theme-argon"
 
+  # luci-app-argon-config主题配置源码
   REPO_URL_ArgonConfig: https://github.com/jerrykuku/luci-app-argon-config
   REPO_BRANCH_ArgonConfig: master
   REPO_PATH_ArgonConfig : "luci-app-argon-config"
 
+  # luci-app-vssr的依赖源码
   REPO_URL_lua_maxminddb: https://github.com/jerrykuku/lua-maxminddb
   REPO_BRANCH_lua_maxminddb: master
   REPO_PATH_lua_maxminddb : "lua-maxminddb"
 
+  # luci-app-vssr源码
   REPO_URL_luci_app_vssr: https://github.com/jerrykuku/luci-app-vssr
   REPO_BRANCH_luci_app_vssr: master
   REPO_PATH_luci_app_vssr : "luci-app-vssr"
 
+  # Dockerman源码
   REPO_URL_luci_app_dockerman: https://github.com/lisaac/luci-app-dockerman
   REPO_BRANCH_luci_app_dockerman: master
   REPO_PATH_luci_app_dockerman : "luci-app-dockerman"
@@ -75,6 +90,11 @@ jobs:
     - name: Get Commit Hash
       id: getHash
       run: |
+        git clone --depth 1 $REPO_URL_smallprogramAction -b $REPO_BRANCH_smallprogramAction $REPO_PATH_smallprogramAction
+        cd $REPO_PATH_smallprogramAction
+        echo "::set-output name=commitHash_smallprogramAction::$(git rev-parse HEAD)"
+        cd
+
         git clone --depth 1 $REPO_URL_Lede -b $REPO_BRANCH_Lede $REPO_PATH_Lede
         cd $REPO_PATH_Lede
         echo "::set-output name=commitHash_Lede::$(git rev-parse HEAD)"
@@ -123,6 +143,7 @@ jobs:
     - name: Show Commit Head and Combination Heads
       id: combHeader
       run: |
+        echo "commitHash_smallprogramAction: ${{ steps.getHash.outputs.commitHash_smallprogramAction }}"
         echo "commitHash_Lede: ${{ steps.getHash.outputs.commitHash_Lede }}"
         echo "commitHash_Lede_Package: ${{ steps.getHash.outputs.commitHash_Lede_Package }}"
         echo "commitHash_HelloWorld: ${{ steps.getHash.outputs.commitHash_HelloWorld }}"
@@ -133,6 +154,7 @@ jobs:
         echo "commitHash_luci_app_vssr: ${{ steps.getHash.outputs.commitHash_luci_app_vssr }}"
         echo "commitHash_luci_app_dockerman: ${{ steps.getHash.outputs.commitHash_luci_app_dockerman }}"
         echo "::set-output name=commitHash_All::\
+          ${{steps.getHash.outputs.commitHash_smallprogramAction}}
           ${{steps.getHash.outputs.commitHash_Lede}}\
           ${{steps.getHash.outputs.commitHash_Lede_Package}}\
           ${{steps.getHash.outputs.commitHash_HelloWorld}}\
@@ -153,7 +175,9 @@ jobs:
     - name: Save New Commit Hash
       if: steps.cacheHash.outputs.cache-hit != 'true'
       run: |
-        echo ${{ steps.getHash.outputs.commitHash }} | tee .commitHash
+        echo ${{ steps.getHash.outputs.commitHash_smallprogramAction }} | tee .commitHash_smallprogramAction
+        echo ${{ steps.getHash.outputs.commitHash_Lede }} | tee .commitHash_Lede
+        echo ${{ steps.getHash.outputs.commitHash_Lede_Package }} | tee .commitHash_Lede_Package
         echo ${{ steps.getHash.outputs.commitHash_HelloWorld }} | tee .commitHash_HelloWorld
         echo ${{ steps.getHash.outputs.commitHash_PassWall }} | tee .commitHash_PassWall
         echo ${{ steps.getHash.outputs.commitHash_ThemeArgon }} | tee .commitHash_ThemeArgon
