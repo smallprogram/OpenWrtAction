@@ -1,15 +1,15 @@
 #
-# Copyright (c) 2019-2021 P3TERX <https://p3terx.com>
+# Copyright (c) 2019-2021 smallprogram
 #
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 #
-# https://github.com/P3TERX/Actions-OpenWrt
-# File: .github/workflows/update-checker.yml
+# https://github.com/smallprogram/OpenWrtAction
+# File: .github/workflows/Update_Checker.yml
 # Description: Source code update checker
 #
 
-name: Source_Code_Update_Checker
+name: Update_Checker
 
 env:
   REPO_URL_Lede: https://github.com/coolsnowwolf/lede
