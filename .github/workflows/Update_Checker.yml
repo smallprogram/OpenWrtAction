@@ -115,14 +115,10 @@ jobs:
 
         echo "::set-output name=commitHash_All::$(commitHash_Lede + commitHash_HelloWorld + commitHash_PassWall + commitHash_ThemeArgon + commitHash_ArgonConfig + commitHash_lua_maxminddb + commitHash_luci_app_vssr + commitHash_luci_app_dockerman)"
 
-        echo ${{ steps.getHash.outputs.commitHash_Lede }}
-        echo ${{ steps.getHash.outputs.commitHash_All }}
+
     - name: Compare Commit Hash
       id: cacheHash
       uses: actions/cache@v2
-      run:
-        echo "LedeCommit: ${{ steps.getHash.outputs.commitHash_Lede }}"
-        echo "ALL :  ${{ steps.getHash.outputs.commitHash_All }}"
       with:
         path: .commitHash_All
         key: HEAD-${{ steps.getHash.outputs.commitHash_All }}
@@ -154,6 +150,9 @@ jobs:
         echo ${{ steps.getHash.outputs.commitHash_lua_maxminddb }} | tee .commitHash_lua_maxminddb
         echo ${{ steps.getHash.outputs.commitHash_luci_app_vssr }} | tee .commitHash_luci_app_vssr
         echo ${{ steps.getHash.outputs.commitHash_luci_app_dockerman }} | tee .commitHash_luci_app_dockerman
+
+        echo ${{ steps.getHash.outputs.commitHash_Lede }}
+        echo ${{ steps.getHash.outputs.commitHash_All }}
         
     - name: Trigger build
       if: steps.cacheHash.outputs.cache-hit != 'true'
