@@ -51,6 +51,7 @@ R4S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/mai
 ## argon主题的背景资源
 
 图片资源：https://github.com/smallprogram/OpenWrtAction/tree/main/source/img
+
 视频资源：https://github.com/smallprogram/OpenWrtAction/tree/main/source/vedio
 
 ## 具体功能组件相关截图：
