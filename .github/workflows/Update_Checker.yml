@@ -138,6 +138,11 @@ jobs:
         # key: HEAD-${{ steps.getHash.outputs.commitHash_luci-app-vssr }}
         # path: .commitHash_luci-app-dockerman
         # key: HEAD-${{ steps.getHash.outputs.commitHash_luci-app-dockerman }}
+    
+    - name: Show Commit Head
+    run: |
+        echo ${{ steps.getHash.outputs.commitHash_Lede }}
+        echo ${{ steps.getHash.outputs.commitHash_All }}
 
     - name: Save New Commit Hash
       if: steps.cacheHash.outputs.cache-hit != 'true'
@@ -151,8 +156,7 @@ jobs:
         echo ${{ steps.getHash.outputs.commitHash_luci_app_vssr }} | tee .commitHash_luci_app_vssr
         echo ${{ steps.getHash.outputs.commitHash_luci_app_dockerman }} | tee .commitHash_luci_app_dockerman
 
-        echo ${{ steps.getHash.outputs.commitHash_Lede }}
-        echo ${{ steps.getHash.outputs.commitHash_All }}
+        
         
     - name: Trigger build
       if: steps.cacheHash.outputs.cache-hit != 'true'
