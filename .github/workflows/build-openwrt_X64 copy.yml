@@ -88,7 +88,9 @@ jobs:
         echo "PWD:$(pwd)"
         echo "github.action_path:${{ github.action_path }}"
         cd openwrt
-        cat $(git log -n $COMMIT_LOG_NUM > ${{ github.action_path }}/release.txt) 
+        echo "sudo git log -n $COMMIT_LOG_NUM > ${{ github.action_path }}/release.txt"
+        sudo cat ${{ github.action_path }}/release.txt
+
         touch release.txt
         echo "::set-output name=status::success"
 
