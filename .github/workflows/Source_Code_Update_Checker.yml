@@ -12,35 +12,35 @@
 name: Source_Code_Update_Checker
 
 env:
-  REPO_URL_Lede: https://github.com/coolsnowwolf/lede
+  REPO_URL_Lede: https://github.com/coolsnowwolf/lede.git
   REPO_BRANCH_Lede: master
   REPO_PATH_Lede : "lede"
 
-  REPO_URL_HelloWorld: https://github.com/fw876/helloworld
+  REPO_URL_HelloWorld: https://github.com/fw876/helloworld.git
   REPO_BRANCH_HelloWorld: master
   REPO_PATH_HelloWorld : "helloworld"
 
-  REPO_URL_PassWall: https://github.com/xiaorouji/openwrt-passwall
+  REPO_URL_PassWall: https://github.com/xiaorouji/openwrt-passwall.git
   REPO_BRANCH_PassWall: master
   REPO_PATH_PassWall : "openwrt-passwall"
 
-  REPO_URL_ThemeArgon: https://github.com/jerrykuku/luci-theme-argon
+  REPO_URL_ThemeArgon: https://github.com/jerrykuku/luci-theme-argon.git
   REPO_BRANCH_ThemeArgon: master
   REPO_PATH_ThemeArgon : "luci-theme-argon"
 
-  REPO_URL_ArgonConfig: https://github.com/jerrykuku/luci-app-argon-config
+  REPO_URL_ArgonConfig: https://github.com/jerrykuku/luci-app-argon-config.git
   REPO_BRANCH_ArgonConfig: master
   REPO_PATH_ArgonConfig : "luci-app-argon-config"
 
-  REPO_URL_lua-maxminddb: https://github.com/jerrykuku/lua-maxminddb
+  REPO_URL_lua-maxminddb: https://github.com/jerrykuku/lua-maxminddb.git
   REPO_BRANCH_lua-maxminddb: master
   REPO_PATH_lua-maxminddb : "lua-maxminddb"
 
-  REPO_URL_luci-app-vssr: https://github.com/jerrykuku/luci-app-vssr
+  REPO_URL_luci-app-vssr: https://github.com/jerrykuku/luci-app-vssr.git
   REPO_BRANCH_luci-app-vssr: master
   REPO_PATH_luci-app-vssr : "luci-app-vssr"
 
-  REPO_URL_luci-app-dockerman: https://github.com/lisaac/luci-app-dockerman
+  REPO_URL_luci-app-dockerman: https://github.com/lisaac/luci-app-dockerman.git
   REPO_BRANCH_luci-app-dockerman: master
   REPO_PATH_luci-app-dockerman : "luci-app-dockerman"
 
