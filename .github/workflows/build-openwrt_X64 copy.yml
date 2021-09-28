@@ -85,11 +85,9 @@ jobs:
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
         echo "::set-output name=release_tag::X64-$(date +"%Y.%m.%d-%H%M")"
-        echo "PWD:$(pwd)"
-        echo "github.action_path:${{ github.action_path }}"
         cd openwrt
-        echo "sudo git log -n $COMMIT_LOG_NUM > ${{ github.action_path }}/release.txt"
-        sudo cat ${{ github.action_path }}/release.txt
+        echo "sudo git log -n $COMMIT_LOG_NUM > /home/runner/work/OpenWrtAction/OpenWrtAction/release.txt"
+        sudo cat /home/runner/work/OpenWrtAction/OpenWrtAction/release.txt
 
         touch release.txt
         echo "::set-output name=status::success"
