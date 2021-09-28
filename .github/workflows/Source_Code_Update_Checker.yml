@@ -50,28 +50,28 @@ jobs:
     - name: Get Commit Hash
       id: getHash
       run: |
-        git clone --depth 1 $REPO_URL_Lede -b $REPO_BRANCH_Lede .
+        git clone --depth 1 $REPO_URL_Lede -b $REPO_BRANCH_Lede 
         echo "::set-output name=commitHash_Lede::$(git rev-parse HEAD)"
 
-        git clone --depth 1 $REPO_URL_HelloWorld -b $REPO_BRANCH_HelloWorld .
+        git clone --depth 1 $REPO_URL_HelloWorld -b $REPO_BRANCH_HelloWorld 
         echo "::set-output name=commitHash_HelloWorld::$(git rev-parse HEAD)"
 
-        git clone --depth 1 $REPO_URL_PassWall -b $REPO_BRANCH_PassWall .
+        git clone --depth 1 $REPO_URL_PassWall -b $REPO_BRANCH_PassWall 
         echo "::set-output name=commitHash_PassWall::$(git rev-parse HEAD)"
 
-        git clone --depth 1 $REPO_URL_ThemeArgon -b $REPO_BRANCH_ThemeArgon .
+        git clone --depth 1 $REPO_URL_ThemeArgon -b $REPO_BRANCH_ThemeArgon 
         echo "::set-output name=commitHash_ThemeArgon::$(git rev-parse HEAD)"
 
-        git clone --depth 1 $REPO_URL_ArgonConfig -b $REPO_BRANCH_ArgonConfig .
+        git clone --depth 1 $REPO_URL_ArgonConfig -b $REPO_BRANCH_ArgonConfig 
         echo "::set-output name=commitHash_ArgonConfig::$(git rev-parse HEAD)"
 
-        git clone --depth 1 $REPO_URL_lua-maxminddb -b $REPO_BRANCH_lua-maxminddb .
+        git clone --depth 1 $REPO_URL_lua-maxminddb -b $REPO_BRANCH_lua-maxminddb 
         echo "::set-output name=commitHash_lua-maxminddb::$(git rev-parse HEAD)"
 
-        git clone --depth 1 $REPO_URL_luci-app-vssr -b $REPO_BRANCH_luci-app-vssr .
+        git clone --depth 1 $REPO_URL_luci-app-vssr -b $REPO_BRANCH_luci-app-vssr 
         echo "::set-output name=commitHash_luci-app-vssr::$(git rev-parse HEAD)"
 
-        git clone --depth 1 $REPO_URL_luci-app-dockerman -b $REPO_BRANCH_luci-app-dockerman .
+        git clone --depth 1 $REPO_URL_luci-app-dockerman -b $REPO_BRANCH_luci-app-dockerman 
         echo "::set-output name=commitHash_luci-app-dockerman::$(git rev-parse HEAD)"
 
         echo "::set-output name=commitHash_All::$(commitHash_Lede + commitHash_HelloWorld + commitHash_PassWall + commitHash_ThemeArgon + commitHash_ArgonConfig + commitHash_lua-maxminddb + commitHash_luci-app-vssr + commitHash_luci-app-dockerman)"
