@@ -21,7 +21,7 @@ env:
   REPO_PATH_HelloWorld : "helloworld"
 
   REPO_URL_PassWall: https://github.com/xiaorouji/openwrt-passwall
-  REPO_BRANCH_PassWall: master
+  REPO_BRANCH_PassWall: main
   REPO_PATH_PassWall : "openwrt-passwall"
 
   REPO_URL_ThemeArgon: https://github.com/jerrykuku/luci-theme-argon
@@ -63,7 +63,7 @@ jobs:
         echo "::set-output name=commitHash_Lede::$(git rev-parse HEAD)"
         cd
 
-        echo commitHash_Lede
+        echo $(commitHash_Lede)
 
         git clone --depth 1 $REPO_URL_HelloWorld -b $REPO_BRANCH_HelloWorld $REPO_PATH_HelloWorld 
         cd $REPO_PATH_HelloWorld
@@ -101,8 +101,8 @@ jobs:
         cd
 
         echo "::set-output name=commitHash_All::$(commitHash_Lede + commitHash_HelloWorld + commitHash_PassWall + commitHash_ThemeArgon + commitHash_ArgonConfig + commitHash_lua-maxminddb + commitHash_luci-app-vssr + commitHash_luci-app-dockerman)"
-        echo commitHash_All
-        
+        echo $(commitHash_All)
+
     - name: Compare Commit Hash
       id: cacheHash
       uses: actions/cache@v2
