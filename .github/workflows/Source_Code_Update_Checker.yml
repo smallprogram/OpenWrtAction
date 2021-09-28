@@ -12,8 +12,8 @@
 name: Source_Code_Update_Checker
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
+  REPO_URL_Lede: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH_Lede: master
 
   REPO_URL_HelloWorld: https://github.com/fw876/helloworld
   REPO_BRANCH_HelloWorld: master
@@ -50,8 +50,8 @@ jobs:
     - name: Get Commit Hash
       id: getHash
       run: |
-        git clone --depth 1 $REPO_URL -b $REPO_BRANCH .
-        echo "::set-output name=commitHash::$(git rev-parse HEAD)"
+        git clone --depth 1 $REPO_URL_Lede -b $REPO_BRANCH_Lede .
+        echo "::set-output name=commitHash_Lede::$(git rev-parse HEAD)"
 
         git clone --depth 1 $REPO_URL_HelloWorld -b $REPO_BRANCH_HelloWorld .
         echo "::set-output name=commitHash_HelloWorld::$(git rev-parse HEAD)"
@@ -74,26 +74,28 @@ jobs:
         git clone --depth 1 $REPO_URL_luci-app-dockerman -b $REPO_BRANCH_luci-app-dockerman .
         echo "::set-output name=commitHash_luci-app-dockerman::$(git rev-parse HEAD)"
 
+        echo "::set-output name=commitHash_All::$(commitHash_Lede + commitHash_HelloWorld + commitHash_PassWall + commitHash_ThemeArgon + commitHash_ArgonConfig + commitHash_lua-maxminddb + commitHash_luci-app-vssr + commitHash_luci-app-dockerman)"
+
     - name: Compare Commit Hash
       id: cacheHash
       uses: actions/cache@v2
       with:
-        path: .commitHash
-        key: HEAD-${{ steps.getHash.outputs.commitHash }}
-        path: .commitHash_HelloWorld
-        key: HEAD-${{ steps.getHash.outputs.commitHash_HelloWorld }}
-        path: .commitHash_PassWall
-        key: HEAD-${{ steps.getHash.outputs.commitHash_PassWall }}
-        path: .commitHash_ThemeArgon
-        key: HEAD-${{ steps.getHash.outputs.commitHash_ThemeArgon }}
-        path: .commitHash_ArgonConfig
-        key: HEAD-${{ steps.getHash.outputs.commitHash_ArgonConfig }}
-        path: .commitHash_lua-maxminddb
-        key: HEAD-${{ steps.getHash.outputs.commitHash_lua-maxminddb }}
-        path: .commitHash_luci-app-vssr
-        key: HEAD-${{ steps.getHash.outputs.commitHash_luci-app-vssr }}
-        path: .commitHash_luci-app-dockerman
-        key: HEAD-${{ steps.getHash.outputs.commitHash_luci-app-dockerman }}
+        path: .commitHash_All
+        key: HEAD-${{ steps.getHash.outputs.commitHash_All }}
+        # path: .commitHash_HelloWorld
+        # key: HEAD-${{ steps.getHash.outputs.commitHash_HelloWorld }}
+        # path: .commitHash_PassWall
+        # key: HEAD-${{ steps.getHash.outputs.commitHash_PassWall }}
+        # path: .commitHash_ThemeArgon
+        # key: HEAD-${{ steps.getHash.outputs.commitHash_ThemeArgon }}
+        # path: .commitHash_ArgonConfig
+        # key: HEAD-${{ steps.getHash.outputs.commitHash_ArgonConfig }}
+        # path: .commitHash_lua-maxminddb
+        # key: HEAD-${{ steps.getHash.outputs.commitHash_lua-maxminddb }}
+        # path: .commitHash_luci-app-vssr
+        # key: HEAD-${{ steps.getHash.outputs.commitHash_luci-app-vssr }}
+        # path: .commitHash_luci-app-dockerman
+        # key: HEAD-${{ steps.getHash.outputs.commitHash_luci-app-dockerman }}
 
     - name: Save New Commit Hash
       if: steps.cacheHash.outputs.cache-hit != 'true'
