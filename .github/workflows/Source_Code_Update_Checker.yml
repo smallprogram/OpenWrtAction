@@ -82,14 +82,16 @@ jobs:
         git clone --depth 1 $REPO_URL_luci-app-dockerman -b $REPO_BRANCH_luci-app-dockerman $REPO_PATH_luci-app-dockerman
         echo "::set-output name=commitHash_luci-app-dockerman::$(git rev-parse HEAD)"
 
-        echo "::set-output name=commitHash_All::$(commitHash_Lede + commitHash_HelloWorld + commitHash_PassWall + commitHash_ThemeArgon + commitHash_ArgonConfig + commitHash_lua-maxminddb + commitHash_luci-app-vssr + commitHash_luci-app-dockerman)"
+        # echo "::set-output name=commitHash_All::$(commitHash_Lede + commitHash_HelloWorld + commitHash_PassWall + commitHash_ThemeArgon + commitHash_ArgonConfig + commitHash_lua-maxminddb + commitHash_luci-app-vssr + commitHash_luci-app-dockerman)"
 
     - name: Compare Commit Hash
       id: cacheHash
       uses: actions/cache@v2
       with:
-        path: .commitHash_All
-        key: HEAD-${{ steps.getHash.outputs.commitHash_All }}
+        # path: .commitHash_All
+        # key: HEAD-${{ steps.getHash.outputs.commitHash_All }}
+        path: .commitHash_Lede
+        key: HEAD-${{ steps.getHash.outputs.commitHash_Lede }}
         # path: .commitHash_HelloWorld
         # key: HEAD-${{ steps.getHash.outputs.commitHash_HelloWorld }}
         # path: .commitHash_PassWall
