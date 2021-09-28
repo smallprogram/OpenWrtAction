@@ -14,35 +14,35 @@ name: Source_Code_Update_Checker
 env:
   REPO_URL_Lede: https://github.com/coolsnowwolf/lede
   REPO_BRANCH_Lede: master
-  REPO_PATH_Lede : "/lede"
+  REPO_PATH_Lede : "lede"
 
   REPO_URL_HelloWorld: https://github.com/fw876/helloworld
   REPO_BRANCH_HelloWorld: master
-  REPO_PATH_HelloWorld : "/helloworld"
+  REPO_PATH_HelloWorld : "helloworld"
 
   REPO_URL_PassWall: https://github.com/xiaorouji/openwrt-passwall
   REPO_BRANCH_PassWall: master
-  REPO_PATH_PassWall : "/openwrt-passwall"
+  REPO_PATH_PassWall : "openwrt-passwall"
 
   REPO_URL_ThemeArgon: https://github.com/jerrykuku/luci-theme-argon
   REPO_BRANCH_ThemeArgon: master
-  REPO_PATH_ThemeArgon : "/luci-theme-argon"
+  REPO_PATH_ThemeArgon : "luci-theme-argon"
 
   REPO_URL_ArgonConfig: https://github.com/jerrykuku/luci-app-argon-config
   REPO_BRANCH_ArgonConfig: master
-  REPO_PATH_ArgonConfig : "/luci-app-argon-config"
+  REPO_PATH_ArgonConfig : "luci-app-argon-config"
 
   REPO_URL_lua-maxminddb: https://github.com/jerrykuku/lua-maxminddb
   REPO_BRANCH_lua-maxminddb: master
-  REPO_PATH_lua-maxminddb : "/lua-maxminddb"
+  REPO_PATH_lua-maxminddb : "lua-maxminddb"
 
   REPO_URL_luci-app-vssr: https://github.com/jerrykuku/luci-app-vssr
   REPO_BRANCH_luci-app-vssr: master
-  REPO_PATH_luci-app-vssr : "/luci-app-vssr"
+  REPO_PATH_luci-app-vssr : "luci-app-vssr"
 
   REPO_URL_luci-app-dockerman: https://github.com/lisaac/luci-app-dockerman
   REPO_BRANCH_luci-app-dockerman: master
-  REPO_PATH_luci-app-dockerman : "/luci-app-dockerman"
+  REPO_PATH_luci-app-dockerman : "luci-app-dockerman"
 
 on:
   workflow_dispatch:
@@ -88,10 +88,10 @@ jobs:
       id: cacheHash
       uses: actions/cache@v2
       with:
-        # path: .commitHash_All
-        # key: HEAD-${{ steps.getHash.outputs.commitHash_All }}
-        path: .commitHash_Lede
-        key: HEAD-${{ steps.getHash.outputs.commitHash_Lede }}
+        path: .commitHash_All
+        key: HEAD-${{ steps.getHash.outputs.commitHash_All }}
+        # path: .commitHash_Lede
+        # key: HEAD-${{ steps.getHash.outputs.commitHash_Lede }}
         # path: .commitHash_HelloWorld
         # key: HEAD-${{ steps.getHash.outputs.commitHash_HelloWorld }}
         # path: .commitHash_PassWall
