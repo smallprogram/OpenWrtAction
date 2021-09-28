@@ -93,8 +93,8 @@ jobs:
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
         echo "::set-output name=release_tag::X64-$(date +"%Y.%m.%d-%H%M")"
-        echo "## Lede Commit >> release.txt"
-        echo "git -C openwrt log -n $COMMIT_LOG_NUM >> release.txt"
+        ## Lede Commit >> release.txt
+        git -C openwrt log -n $COMMIT_LOG_NUM >> release.txt
         sudo cat release.txt
         touch release.txt
         echo "::set-output name=status::success"
