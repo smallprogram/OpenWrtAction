@@ -74,6 +74,8 @@ R4S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/mai
 
 
 ## wsl2op.sh本地自动编译shell脚本说明
+
+运行前请确保你的编译环境已经安装Lean源码中要求的编译环境，并且使用非root用户执行。
 ### 执行方式
 #### 首次执行
 ```shell
