@@ -80,17 +80,17 @@ function Compile_Firmware()
     sleep 2s
     echo
     cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
-    
+
     # if [[ $isFirstCompile == 1 ]]; then
     #     echo -e  "\033[34m 由于你是首次编译，需要make menuconfig配置，如果保持原有config不做更改，请在进入菜单后直接exit即可 \033[0m"
     #     sleep 6s
     #     make menuconfig
     # fi
-    # if [[ $isFirstCompile == 0 ]]; then
-    #     echo -e  "\033[34m 开始执行make defconfig! \033[0m"
-    #     make defconfig | tee -a /home/${userName}/smb_openwrt/$folder_name/Main1_make_defconfig-git_log.log
+    if [[ $isFirstCompile == 0 ]]; then
+        echo -e  "\033[34m 开始执行make defconfig! \033[0m"
+        make defconfig | tee -a /home/${userName}/smb_openwrt/$folder_name/Main1_make_defconfig-git_log.log
 
-    # fi   
+    fi   
     
     make -j8 download V=s | tee -a /home/${userName}/smb_openwrt/$folder_name/Main2_make_download-git_log.log
     if [[ $sysenv == 1 ]]
