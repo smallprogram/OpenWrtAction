@@ -67,7 +67,19 @@ function Compile_Firmware()
         make clean
         make dirclean
     fi
+    echo
+    echo -e "\033[31m 开始将OpenwrtAction中的自定义feeds注入lean源码中.... \033[0m"
+    sleep 2s
+    echo
+    cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default > /home/${userName}/${ledeDir}/feeds.conf.default
+    
     ./scripts/feeds update -a && ./scripts/feeds install -a
+
+    echo
+    echo -e "\033[31m 开始将OpenwrtAction中的自定义config文件注入lean源码中.... \033[0m"
+    sleep 2s
+    echo
+    cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
     if [[ $isFirstCompile == 1 ]]; then
         echo -e  "\033[34m 由于你是首次编译，需要make menuconfig配置，如果保持原有config不做更改，请在进入菜单后直接exit即可 \033[0m"
         sleep 6s
@@ -193,17 +205,19 @@ then
     rm -rf luci-theme-argon  
     git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git 
     cd /home/${userName}
+    isFirstCompile=1
 else 
     cd ${ledeDir}
     git pull
     cd /home/${userName}
-fi
-
-if [ ! -f "/home/${userName}/${ledeDir}/.config" ]; then
-    isFirstCompile=1
-else
     isFirstCompile=0
 fi
+
+# if [ ! -f "/home/${userName}/${ledeDir}/.config" ]; then
+#     isFirstCompile=1
+# else
+#     isFirstCompile=0
+# fi
 
 # echo $isFirstCompile "dfffffffffffffffffffffffffffff"
 
@@ -292,12 +306,7 @@ else
     cd /home/${userName}
 fi
 
-echo
-echo -e "\033[31m 开始将OpenwrtAction中的自定义feeds与config文件注入lean源码中.... \033[0m"
-sleep 2s
-echo
-cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default > /home/${userName}/${ledeDir}/feeds.conf.default
-cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
+
 
 echo 
 echo -e "\033[31m 准备就绪，请按照导航选择操作.... \033[0m"
