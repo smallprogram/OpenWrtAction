@@ -68,13 +68,15 @@ function Compile_Firmware()
         make dirclean
     fi
     ./scripts/feeds update -a && ./scripts/feeds install -a
-    if [[ $isFirstCompile==1 ]]; then
+    if [[ $isFirstCompile == 1 ]]; then
         echo -e  "\033[34m 由于你是首次编译，需要make menuconfig配置，如果保持原有config不做更改，请在进入菜单后直接exit即可 \033[0m"
         sleep 6s
         make menuconfig
     fi
-    if [[ $isFirstCompile==0 ]]; then
+    if [[ $isFirstCompile == 0 ]]; then
+        echo -e  "\033[34m 开始执行make defconfig! \033[0m"
         make defconfig | tee -a /home/${userName}/smb_openwrt/$folder_name/Main1_make_defconfig-git_log.log
+
     fi   
     
     make -j8 download V=s | tee -a /home/${userName}/smb_openwrt/$folder_name/Main2_make_download-git_log.log
@@ -203,7 +205,7 @@ else
     isFirstCompile=0
 fi
 
-echo $isFirstCompile "dfffffffffffffffffffffffffffff"
+# echo $isFirstCompile "dfffffffffffffffffffffffffffff"
 
 echo
 echo -e "\033[31m 开始同步luci-theme-argon.... \033[0m"
