@@ -59,8 +59,10 @@ function Compile_Firmware()
     make -j8 download V=s | tee -a /home/${userName}/smb_openwrt/$folder_name/Main2_make_download-git_log.log
     if [[ sysenv == 1 ]]
     then
+        echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
         PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/smb_openwrt/$folder_name/Main3_Compile-git_log.log
     else
+        $PATH
         make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/smb_openwrt/$folder_name/Main3_Compile-git_log.log
     fi
 
