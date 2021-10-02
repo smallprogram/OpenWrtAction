@@ -370,7 +370,7 @@ then
 
     if [ -n "$(git status -s)" ]; then 
         git add .
-        git commit -m "update config"
+        git commit -m "update from local"
         git push origin
         echo -e "\033[31m 已将新配置的config同步回OpenwrtAction \033[0m"
         sleep 2s

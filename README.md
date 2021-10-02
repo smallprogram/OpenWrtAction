@@ -76,6 +76,23 @@ R4S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/mai
 ## wsl2op.sh本地自动编译shell脚本说明
 
 运行前请确保你的编译环境已经安装Lean源码中要求的编译环境，并且使用非root用户执行。
+
+
+
+注意，如果Fork我的Respository之后，需将修改的config同步回github，
+
+首先需要**修改wsl2op.sh脚本中owaUrl变量值，改为你Fork后的git Url**
+
+![image](source/owaUrl.png)
+
+之后需要输入<b>github用户名</b>与<b>github Token</b>
+
+**github Token请自行在自己的Github Settings --> Developer settings --> Personal access tokens中创建**
+
+![image](source/github%20auth.png)
+
+当然如果你嫌麻烦，也可以直接PR你的config到我的仓库config文件夹下，这样你就可以直接不同步编译了
+
 ### 执行方式
 #### 首次执行
 ```shell
