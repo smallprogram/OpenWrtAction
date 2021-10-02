@@ -65,6 +65,7 @@ function Compile_Firmware()
         make clean
         make dirclean
     fi
+    ./scripts/feeds update -a && ./scripts/feeds install -a
     make defconfig | tee -a /home/${userName}/smb_openwrt/$folder_name/Main1_make_defconfig-git_log.log
     make -j8 download V=s | tee -a /home/${userName}/smb_openwrt/$folder_name/Main2_make_download-git_log.log
     if [[ $sysenv == 1 ]]
