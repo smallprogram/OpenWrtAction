@@ -1,6 +1,19 @@
 
 ![image](https://img.shields.io/badge/support-x86%7CR4S-blue?style=flat&logo=rss)  ![image](https://img.shields.io/badge/SourceCode-Lean-green?style=flat&logo=GitHub) ![image](https://img.shields.io/badge/UpdateCheck-blueviolet?style=flat&logo=Checkmarx) ![image](https://img.shields.io/badge/GithubAction-2Actions-important?style=flat&logo=GitHubActions) ![image](https://img.shields.io/badge/LICENSE-MIT-important?style=flat)
 
+
+# 目录<!-- omit in toc --> 
+- [Lean Openwrt GitHubAction](#lean-openwrt-githubaction)
+    - [目前包含x86与R4S固件,根据源码更新自动编译](#目前包含x86与r4s固件根据源码更新自动编译)
+  - [包含内容](#包含内容)
+      - [包含各种常用插件，特殊的内容如下：](#包含各种常用插件特殊的内容如下)
+  - [config列表](#config列表)
+  - [argon主题的背景资源](#argon主题的背景资源)
+  - [具体功能组件相关截图：](#具体功能组件相关截图)
+  - [wsl2op.sh本地自动编译shell脚本说明](#wsl2opsh本地自动编译shell脚本说明)
+    - [执行方式](#执行方式)
+    - [执行过程详解](#执行过程详解)
+
 # Lean Openwrt GitHubAction
 
 ![image](source/login.gif)
