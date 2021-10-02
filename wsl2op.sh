@@ -197,7 +197,7 @@ else
     cd /home/${userName}
 fi
 
-if [ ! -d "/home/${userName}/${ledeDir}/.config.old" ]; then
+if [ ! -f "/home/${userName}/${ledeDir}/.config.old" ]; then
     isFirstCompile=1
 else
     isFirstCompile=0
