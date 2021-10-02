@@ -10,6 +10,7 @@ ledeDir=ledex64
 configName=x64.config
 userName=$USER
 timer=5
+sysenv
 
 
 # 函数
@@ -240,6 +241,7 @@ echo -e "\033[34m 2. 不是 \033[0m"
 read -t $timer sysenv
 if [ ! -n "$sysenv" ]; then
         sysenv=1
+        echo -e "\033[34m 输入超时使用默认值 \033[0m"
 fi
 until [[ $sysenv -ge 1 && $sysenv -le 2 ]]
 do
@@ -262,6 +264,7 @@ echo -e "\033[34m 2. 我要配置config，配置完毕后自动同步回OpenwrtA
 read -t $timer num
 if [ ! -n "$num" ]; then
         num=1
+        echo -e "\033[34m 输入超时使用默认值 \033[0m"
 fi
 until [[ $num -ge 1 && $num -le 2 ]]
 do
@@ -312,6 +315,7 @@ then
         read -t $timer num_continue
             if [ ! -n "$num_continue" ]; then
                 num_continue=1
+                echo -e "\033[34m 输入超时使用默认值 \033[0m"
             fi
     done
     
