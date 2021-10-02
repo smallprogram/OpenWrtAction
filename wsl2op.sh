@@ -308,7 +308,7 @@ if [ ! -n "$num" ]; then
         num=1
         echo -e "\033[34m 输入超时使用默认值 \033[0m"
 fi
-echo $num
+# echo $num
 until [[ $num -ge 1 && $num -le 2 ]]
 do
     echo -e "\033[34m 你输入的 ${num} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m"
@@ -328,12 +328,37 @@ then
 fi
 
 
+
 if [[ $num == 2 ]]
 then
     cd /home/${userName}/${ledeDir}
     make menuconfig
     cat /home/${userName}/${ledeDir}/.config > /home/${userName}/OpenWrtAction/config/${configName}
     cd /home/${userName}/OpenWrtAction
+    
+    if [ -n "$(git config --global user.email)" ]; then
+        echo "请输入git Global user.email:"
+        read  gitUserEmail
+        until [[ -n "$gitUserEmail" ]]
+        do
+            echo -e "\033[34m 不能输入空值 \033[0m"
+            read  gitUserEmail
+        done
+        git config --global user.email "$gitUserEmail"
+    fi
+
+    if [ -n "$(git config --global user.name)" ]; then
+        echo "请输入git Global user.name:"
+        read  gitUserName
+        until [[ -n "$gitUserName" ]]
+        do
+            echo -e "\033[34m 不能输入空值 \033[0m"
+            read  gitUserName
+        done
+        git config --global user.email "$gitUserName"
+    fi
+
+
     if [ -n "$(git status -s)" ]; then 
         git add .
         git commit -m "update config"
