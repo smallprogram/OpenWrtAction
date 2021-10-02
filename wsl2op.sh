@@ -10,7 +10,7 @@ ledeDir=ledex64
 configName=x64.config
 userName=$USER
 timer=5
-sysenv
+sysenv=1
 
 
 # 函数
