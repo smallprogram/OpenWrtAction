@@ -12,6 +12,8 @@
   - [具体功能组件相关截图：](#具体功能组件相关截图)
   - [wsl2op.sh本地自动编译shell脚本说明](#wsl2opsh本地自动编译shell脚本说明)
     - [执行方式](#执行方式)
+      - [首次执行](#首次执行)
+      - [二次执行](#二次执行)
     - [执行过程详解](#执行过程详解)
 
 # Lean Openwrt GitHubAction
@@ -73,7 +75,18 @@ R4S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/mai
 
 ## wsl2op.sh本地自动编译shell脚本说明
 ### 执行方式
+#### 首次执行
 ```shell
+cd
+git clone https://github.com/smallprogram/OpenWrtAction.git
+cd OpenWrtAction
+bash wsl2op.sh
+```
+#### 二次执行
+```shell
+cd
+cd OpenWrtAction
+git pull
 bash wsl2op.sh
 ```
 
