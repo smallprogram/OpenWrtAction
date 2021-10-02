@@ -108,7 +108,7 @@ function Compile_Firmware()
 
 
 
-echo -e "\033[31m 请输入默认lean源码文件夹名称,如果不输入默认ledex64,将在($timer秒后使用默认值) \033[0m"
+echo -e "\033[31m 请输入默认lean源码文件夹名称,如果不输入默认$ledeDir,将在($timer秒后使用默认值) \033[0m"
 read -t $timer ledeDirInp
 if [ ! -n "$ledeDirInp" ]; then
     echo -e  "\033[34m OK，使用默认值ledex64 \033[0m"
@@ -118,7 +118,7 @@ else
 fi
 
 echo
-echo -e "\033[31m 请输入默认OpenwrtAction中的config文件名，默认为x64.config \033[0m"
+echo -e "\033[31m 请输入默认OpenwrtAction中的config文件名，默认为$configName \033[0m"
 read -t $timer configNameInp
 if [ ! -n "$configNameInp" ]; then
     echo -e  "\033[34m OK，使用默认值x64.config \033[0m"
