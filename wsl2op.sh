@@ -6,6 +6,7 @@
 echo -e  "\033[34m 注意，请确保当前linux账户为非root账户，并且已经安装相关编译依赖 \033[0m"
 echo -e  "\033[34m 如果不符合上述条件，请ctrl+C退出 \033[0m"
 
+
 # 默认lean源码文件夹名
 ledeDir=ledex64
 
@@ -18,11 +19,14 @@ config_list=($(ls /home/$userName/OpenWrtAction/config))
 timer=15
 # 编译环境默认值，1为WSL2，2为非WSL2的Linux环境。不要修改这里
 sysenv=1
+# OpenWrtAction Git URL
+owaUrl=https://github.com/smallprogram/OpenWrtAction.git
 
 # 函数
 function Compile_Firmware() 
 {
     echo -e "\033[31m 是否启用Clean编译，如果不输入任何值默认否，输入任意值启用Clean编译，Clean操作适用于大版本更新 \033[0m"
+    echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
     read -t $timer isCleanCompile
     if [ ! -n "$isCleanCompile" ]; then
         echo -e  "\033[34m OK，不执行make clean && make dirclean  \033[0m"
@@ -33,7 +37,7 @@ function Compile_Firmware()
     fi
     
 
-    folder_name=编译日志$(date "+%Y-%m-%d-%H-%M-%S")
+    folder_name=编译日志${configName}_$(date "+%Y-%m-%d-%H-%M-%S")
     logfile_name=编译时间日志$(date "+%Y-%m-%d-%H-%M-%S")
     begin_date=开始时间$(date "+%Y-%m-%d-%H-%M-%S")
 
@@ -79,6 +83,7 @@ function Compile_Firmware()
 
 
     echo -e "\033[31m 是否拷贝编译固件到smb_openwrt/${folder_name}下？不输入默认不拷贝，输入任意值拷贝 \033[0m"
+    echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
     read -t $timer iscopy
     if [ ! -n "$iscopy" ]; then
         echo -e  "\033[34m OK，不拷贝 \033[0m"
@@ -141,6 +146,7 @@ function configList(){
 
 
 echo -e "\033[31m 请输入默认lean源码文件夹名称,如果不输入默认$ledeDir,将在($timer秒后使用默认值) \033[0m"
+echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
 read -t $timer ledeDirInp
 if [ ! -n "$ledeDirInp" ]; then
     echo -e  "\033[34m OK，使用默认值ledex64 \033[0m"
@@ -151,7 +157,7 @@ fi
 
 echo
 echo -e "\033[31m 请输入默认OpenwrtAction中的config文件名，默认为$configName \033[0m"
-
+echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
 
 configList
 until [[ $configNameInp -ge 1 && $configNameInp -le $key ]]
@@ -257,7 +263,7 @@ cd /home/${userName}
 
 if [ ! -d "/home/${userName}/OpenWrtAction" ];
 then
-    git clone https://github.com/smallprogram/OpenWrtAction.git
+    git clone $owaUrl
     cd /home/${userName}
 else
     cd /home/${userName}/OpenWrtAction
@@ -278,6 +284,7 @@ sleep 2s
 
 
 echo -e "\033[31m 你的编译环境是WSL2吗？ \033[0m"
+echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
 echo -e "\033[34m 1. 是(默认) \033[0m"
 echo -e "\033[34m 2. 不是 \033[0m"
 read -t $timer sysenv
@@ -294,31 +301,33 @@ do
     read -t $timer sysenv
     if [ ! -n "$sysenv" ]; then
         sysenv=1
-        echo -e "\033[34m 输入超时使用默认值 \033[0m"
+        echo -e "\033[34m 使用默认值 \033[0m"
     fi
 done
 echo 
 
 
 echo -e "\033[31m 你接下来要干啥？？？ \033[0m"
+echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
 echo -e "\033[34m 1. 根据config自动编译固件。(默认) \033[0m"
 echo -e "\033[34m 2. 我要配置config，配置完毕后自动同步回OpenwrtAction。 \033[0m"
 read -t $timer num
 if [ ! -n "$num" ]; then
         num=1
-        echo -e "\033[34m 输入超时使用默认值 \033[0m"
+        echo -e "\033[34m 使用默认值 \033[0m"
 fi
 # echo $num
 until [[ $num -ge 1 && $num -le 2 ]]
 do
     echo -e "\033[34m 你输入的 ${num} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m"
     echo -e "\033[31m 你接下来要干啥？？？ \033[0m"
+    echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
     echo -e "\033[34m 1. 根据config自动编译固件。(默认) \033[0m"
     echo -e "\033[34m 2. 我要配置config，配置完毕后自动同步回OpenwrtAction。 \033[0m"
     read -t $timer num
     if [ ! -n "$num" ]; then
         num=1
-        echo -e "\033[34m 输入超时使用默认值 \033[0m"
+        echo -e "\033[34m 使用默认值 \033[0m"
     fi
 done
 
@@ -336,7 +345,7 @@ then
     cat /home/${userName}/${ledeDir}/.config > /home/${userName}/OpenWrtAction/config/${configName}
     cd /home/${userName}/OpenWrtAction
     
-    if [ -n "$(git config --global user.email)" ]; then
+    if [ ! -n "$(git config --global user.email)" ]; then
         echo "请输入git Global user.email:"
         read  gitUserEmail
         until [[ -n "$gitUserEmail" ]]
@@ -347,7 +356,7 @@ then
         git config --global user.email "$gitUserEmail"
     fi
 
-    if [ -n "$(git config --global user.name)" ]; then
+    if [ ! -n "$(git config --global user.name)" ]; then
         echo "请输入git Global user.name:"
         read  gitUserName
         until [[ -n "$gitUserName" ]]
@@ -368,6 +377,7 @@ then
     fi
 
     echo -e "\033[31m 是否根据新的config编译？ \033[0m"
+    echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
     echo -e "\033[34m 1. 是(默认值) \033[0m"
     echo -e "\033[34m 2. 不编译了。退出 \033[0m"
     read -t $timer num_continue
@@ -378,12 +388,13 @@ then
     do
         echo -e "\033[34m 你输入的 ${num_continue} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m"
         echo -e "\033[31m 是否根据新的config编译？ \033[0m"
+        echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
         echo -e "\033[34m 1. 是(默认值) \033[0m"
         echo -e "\033[34m 2. 不编译了。退出 \033[0m"
         read -t $timer num_continue
             if [ ! -n "$num_continue" ]; then
                 num_continue=1
-                echo -e "\033[34m 输入超时使用默认值 \033[0m"
+                echo -e "\033[34m 使用默认值 \033[0m"
             fi
     done
     
