@@ -6,10 +6,15 @@
 echo -e  "\033[34m 注意，请确保当前linux账户为非root账户，并且已经安装相关编译依赖 \033[0m"
 echo -e  "\033[34m 如果不符合上述条件，请ctrl+C退出 \033[0m"
 
+# 默认lean源码文件夹名
 ledeDir=ledex64
+# 默认OpenWrtAction的Config文件夹中的config文件名
 configName=x64.config
+# 编译环境中当前账户名字
 userName=$USER
-timer=5
+# 默认输入超时时间，单位为秒
+timer=15
+# 编译环境默认值，1为WSL2，2为非WSL2的Linux环境。不要修改这里
 sysenv=1
 
 
