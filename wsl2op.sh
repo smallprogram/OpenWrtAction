@@ -8,15 +8,16 @@ echo -e  "\033[34m 如果不符合上述条件，请ctrl+C退出 \033[0m"
 
 # 默认lean源码文件夹名
 ledeDir=ledex64
-# 默认OpenWrtAction的Config文件夹中的config文件名
-configName=x64.config
+
 # 编译环境中当前账户名字
 userName=$USER
+# 默认OpenWrtAction的Config文件夹中的config文件名
+configName=x64.config
+config_list=($(ls /home/$userName/OpenWrtAction/config))
 # 默认输入超时时间，单位为秒
 timer=15
 # 编译环境默认值，1为WSL2，2为非WSL2的Linux环境。不要修改这里
 sysenv=1
-
 
 # 函数
 function Compile_Firmware() 
@@ -64,10 +65,10 @@ function Compile_Firmware()
     make -j8 download V=s | tee -a /home/${userName}/smb_openwrt/$folder_name/Main2_make_download-git_log.log
     if [[ $sysenv == 1 ]]
     then
-        echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
         PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/smb_openwrt/$folder_name/Main3_Compile-git_log.log
     else
-        $PATH
+        # $PATH
         make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/smb_openwrt/$folder_name/Main3_Compile-git_log.log
     fi
 
@@ -102,7 +103,38 @@ function Compile_Firmware()
 # }
 
 
-
+function configList(){
+    key=0
+    for conf in ${config_list[*]}; 
+    do 
+        key=$((${key} + 1))
+        echo "$key: $conf"; 
+        # echo "129 key的值："$key
+    done
+    read -t $timer configNameInp
+    if [ ! -n "$configNameInp" ]; then
+        i=1
+        configName=x64.config
+        # echo "135 configName的值："$configName
+        for context in ${config_list[*]}; 
+        do 
+            if [[ $context == $configName ]]; then
+                break
+            fi
+            i=$((${i} + 1))
+            # echo "142 i的值："$i
+        done
+        configNameInp=$i
+        # echo "145 configNameInp的值："$configNameInp
+        echo -e "\033[34m 输入超时使用默认值$configName \033[0m"
+    else 
+        if [[ $configNameInp -ge 1 && $configNameInp -le $key ]]; then
+            configName=${config_list[$(($configNameInp-1))]}
+            # echo $configNameInp
+            # echo $configName
+        fi
+    fi
+}
 
 # end函数
 
@@ -114,18 +146,21 @@ if [ ! -n "$ledeDirInp" ]; then
     echo -e  "\033[34m OK，使用默认值ledex64 \033[0m"
 else
     echo -e  "\033[34m 使用 ${ledeDirInp} 作为lean源码文件夹名。 \033[0m"
-    $ledeDir = $ledeDirInp
+    ledeDir=$ledeDirInp
 fi
 
 echo
 echo -e "\033[31m 请输入默认OpenwrtAction中的config文件名，默认为$configName \033[0m"
-read -t $timer configNameInp
-if [ ! -n "$configNameInp" ]; then
-    echo -e  "\033[34m OK，使用默认值x64.config \033[0m"
-else
-    echo -e  "\033[34m 使用 ${configNameInp} 作为默认OpenwrtAction中的config文件名。 \033[0m"
-    $configName = $configNameInp
-fi
+
+
+configList
+until [[ $configNameInp -ge 1 && $configNameInp -le $key ]]
+do
+    echo -e "\033[34m 你输入的 ${configNameInp} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m"
+    echo -e "\033[31m 请输入默认OpenwrtAction中的config文件名，默认为$configName \033[0m"
+    configList
+done
+
 
 echo
 echo -e "\033[31m 开始同步lean源码.... \033[0m"
@@ -273,6 +308,7 @@ if [ ! -n "$num" ]; then
         num=1
         echo -e "\033[34m 输入超时使用默认值 \033[0m"
 fi
+echo $num
 until [[ $num -ge 1 && $num -le 2 ]]
 do
     echo -e "\033[34m 你输入的 ${num} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m"
@@ -301,8 +337,8 @@ then
     if [ -n "$(git status -s)" ]; then 
         git add .
         git commit -m "update config"
-        git push origin main
-        echo -e "\033[31m 已将新配置的config同步会OpenwrtAction \033[0m"
+        git push origin
+        echo -e "\033[31m 已将新配置的config同步回OpenwrtAction \033[0m"
         sleep 2s
     fi
 
