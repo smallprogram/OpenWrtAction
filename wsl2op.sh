@@ -168,7 +168,7 @@ sleep 2s
 if [ ! -d "/home/${userName}/${ledeDir}/package/lean/lua-maxminddb" ];
 then
     cd /home/${userName}/${ledeDir}/package/lean/
-    git clone https://github.com/jerrykuku/luci-app-argon-config.git
+    git clone https://github.com/jerrykuku/lua-maxminddb.git 
     cd /home/${userName}
 else
     cd /home/${userName}/${ledeDir}/package/lean/lua-maxminddb

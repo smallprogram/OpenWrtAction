@@ -1,5 +1,5 @@
 
-![image](https://img.shields.io/badge/support-x86%7CR4S-blue?style=flat&logo=rss)  ![image](https://img.shields.io/badge/SourceCode-Lean-green?style=flat&logo=GitHub) ![image](https://img.shields.io/badge/UpdateCheck-OneHour-blueviolet?style=flat&logo=Checkmarx) ![image](https://img.shields.io/badge/GithubAction-2Actions-important?style=flat&logo=GitHubActions)
+![image](https://img.shields.io/badge/support-x86%7CR4S-blue?style=flat&logo=rss)  ![image](https://img.shields.io/badge/SourceCode-Lean-green?style=flat&logo=GitHub) ![image](https://img.shields.io/badge/UpdateCheck-blueviolet?style=flat&logo=Checkmarx) ![image](https://img.shields.io/badge/GithubAction-2Actions-important?style=flat&logo=GitHubActions) ![image](https://img.shields.io/badge/LICENSE-MIT-important?style=flat)
 
 # Lean Openwrt GitHubAction
 
@@ -56,3 +56,13 @@ R4S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/mai
 
 ## 具体功能组件相关截图：
 ![image](source/function.png)
+
+
+## wsl2op.sh本地自动编译shell脚本说明
+### 执行方式
+```shell
+bash wsl2op.sh
+```
+
+### 执行过程详解
+![image](source/wsl2op.png)
