@@ -41,7 +41,9 @@ log_after_defconfig_config=.config_new
 # 两个config的差异文件名
 log_diff_config=.config_diff
 
-# 函数
+#清理超过多少天的日志文件
+clean_day=3
+
 # 将编译的固件提交到GitHubRelease
 function UpdateFileToGithubRelease(){
     # 没思路
@@ -220,10 +222,26 @@ function configList(){
     fi
 }
 
-# end函数
+#清理日志文件夹函数
+function CleanLogFolder(){
+    if [ -d "/home/${userName}/${log_folder_name}" ];
+    then
+        echo -e "\033[31m 是否清理存储超过$clean_day天的日志文件，默认删除，如果录入任意值不删除 \033[0m"
+        echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
+        read -t $timer isclean
+        if [ ! -n "$isclean" ]; then
+            cd /home/${userName}/${log_folder_name}
+            find -mtime +$clean_day | xargs rm -rf
+            echo -e  "\033[31m 清理成功 \033[0m"
+        else
+            echo -e  "\033[34m OK，不清理超过$clean_day天的日志文件 \033[0m"
+        fi
+    fi
+}
 
 
-
+CleanLogFolder
+sleep 2s
 echo -e "\033[31m 请输入默认lean源码文件夹名称,如果不输入默认$ledeDir,将在($timer秒后使用默认值) \033[0m"
 echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
 read -t $timer ledeDirInp
