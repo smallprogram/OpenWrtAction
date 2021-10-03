@@ -47,6 +47,15 @@ log_diff_config=.config_diff
 #清理超过多少天的日志文件
 clean_day=3
 
+# 扩展luci插件地址
+luci_apps=(
+    https://github.com/jerrykuku/luci-theme-argon.git
+    https://github.com/jerrykuku/luci-app-argon-config.git
+    # https://github.com/jerrykuku/lua-maxminddb.git
+    # https://github.com/jerrykuku/luci-app-vssr.git
+    https://github.com/lisaac/luci-app-dockerman.git
+)
+
 # 将编译的固件提交到GitHubRelease
 # function UpdateFileToGithubRelease(){
 #     # 没思路
@@ -56,6 +65,37 @@ clean_day=3
 # function CheckUpdate(){
 #     # todo 感觉没啥必要先不写了
 # }
+
+# 获取自定插件函数
+function Get_luci_apps(){
+    for luci_app in "${luci_apps[@]}"; do
+
+        temp=${luci_app##*/} # xxx.git
+        dir=${temp%%.*}  # xxx
+
+        echo
+        echo -e "\033[31m 开始同步$dir.... \033[0m"
+        sleep 2s
+
+        if [[ $isFirstCompile == 1 && $dir == luci-theme-argon ]]; then
+            cd /home/${userName}/${ledeDir}/package/lean/
+            rm -rf $dir
+            git clone -b 18.06 $luci_app
+            continue
+        fi
+
+        if [ ! -d "/home/${userName}/${ledeDir}/package/lean/$dir" ];
+        then
+            cd /home/${userName}/${ledeDir}/package/lean/
+            git clone $luci_app
+            cd /home/${userName}
+        else
+            cd /home/${userName}/${ledeDir}/package/lean/$dir
+            git pull
+            cd /home/${userName}
+        fi
+    done
+}
 
 # 编译函数
 function Compile_Firmware() {
@@ -281,8 +321,6 @@ if [ ! -d "/home/${userName}/${ledeDir}" ];
 then
     git clone https://github.com/coolsnowwolf/lede ${ledeDir}
     cd ${ledeDir}/package/lean
-    rm -rf luci-theme-argon  
-    git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git 
     cd /home/${userName}
     isFirstCompile=1
 else 
@@ -300,91 +338,8 @@ fi
 
 # echo $isFirstCompile "dfffffffffffffffffffffffffffff"
 
-echo
-echo -e "\033[31m 开始同步luci-theme-argon.... \033[0m"
-sleep 2s
 
-
-cd /home/${userName}/${ledeDir}/package/lean/luci-theme-argon
-git pull
-cd /home/${userName}
-
-echo
-echo -e "\033[31m 开始同步luci-app-argon-config.... \033[0m"
-sleep 2s
-
-if [ ! -d "/home/${userName}/${ledeDir}/package/lean/luci-app-argon-config" ];
-then
-    cd /home/${userName}/${ledeDir}/package/lean/
-    git clone https://github.com/jerrykuku/luci-app-argon-config.git
-    cd /home/${userName}
-else
-    cd /home/${userName}/${ledeDir}/package/lean/luci-app-argon-config
-    git pull
-    cd /home/${userName}
-fi
-
-echo
-echo -e "\033[31m 开始同步lua-maxminddb.... \033[0m"
-sleep 2s
-
-if [ ! -d "/home/${userName}/${ledeDir}/package/lean/lua-maxminddb" ];
-then
-    cd /home/${userName}/${ledeDir}/package/lean/
-    git clone https://github.com/jerrykuku/lua-maxminddb.git 
-    cd /home/${userName}
-else
-    cd /home/${userName}/${ledeDir}/package/lean/lua-maxminddb
-    git pull
-    cd /home/${userName}
-fi
-
-echo
-echo -e "\033[31m 开始同步luci-app-vssr.... \033[0m"
-sleep 2s
-
-
-if [ ! -d "/home/${userName}/${ledeDir}/package/lean/luci-app-vssr" ];
-then
-    cd /home/${userName}/${ledeDir}/package/lean/
-    git clone https://github.com/jerrykuku/luci-app-vssr.git
-    cd /home/${userName}
-else
-    cd /home/${userName}/${ledeDir}/package/lean/luci-app-vssr
-    git pull
-    cd /home/${userName}
-fi
-
-echo
-echo -e "\033[31m 开始同步luci-app-dockerman.... \033[0m"
-sleep 2s
-
-if [ ! -d "/home/${userName}/${ledeDir}/package/lean/luci-app-dockerman" ];
-then
-    cd /home/${userName}/${ledeDir}/package/lean/
-    git clone https://github.com/lisaac/luci-app-dockerman.git  
-    cd /home/${userName}
-else
-    cd /home/${userName}/${ledeDir}/package/lean/luci-app-dockerman
-    git pull
-    cd
-fi
-
-echo
-echo -e "\033[31m 开始同步OpenWrtAction.... \033[0m"
-sleep 2s
-cd /home/${userName}
-
-if [ ! -d "/home/${userName}/OpenWrtAction" ];
-then
-    git clone $owaUrl
-    cd /home/${userName}
-else
-    cd /home/${userName}/OpenWrtAction
-    git pull
-    cd /home/${userName}
-fi
-
+Get_luci_apps
 
 
 echo 
