@@ -27,6 +27,21 @@ env:
   REPO_URL_Lede_Package: https://github.com/coolsnowwolf/packages
   REPO_BRANCH_Lede_Package: master
   REPO_PATH_Lede_Package : "ledepackage"
+
+  # Lean luci源码
+  REPO_URL_Lede_Luci: https://github.com/coolsnowwolf/luci
+  REPO_BRANCH_Lede_Luci: master
+  REPO_PATH_Lede_Luci : "luci"
+
+  # Openwrt routing源码
+  REPO_URL_OPENWRT_ROUTING: https://git.openwrt.org/feed/routing.git
+  REPO_BRANCH_OPENWRT_ROUTING: master
+  REPO_PATH_OPENWRT_ROUTING : "routing"
+
+  # Openwrt telephony源码
+  REPO_URL_OPENWRT_TELEPHONY: https://git.openwrt.org/feed/telephony.git
+  REPO_BRANCH_OPENWRT_TELEPHONY: master
+  REPO_PATH_OPENWRT_TELEPHONY : "telephony"
   
    # SSRP源码
   REPO_URL_HelloWorld: https://github.com/fw876/helloworld
@@ -48,20 +63,20 @@ env:
   REPO_BRANCH_ArgonConfig: master
   REPO_PATH_ArgonConfig : "luci-app-argon-config"
 
-  # luci-app-vssr的依赖源码
-  REPO_URL_lua_maxminddb: https://github.com/jerrykuku/lua-maxminddb
-  REPO_BRANCH_lua_maxminddb: master
-  REPO_PATH_lua_maxminddb : "lua-maxminddb"
-
-  # luci-app-vssr源码
-  REPO_URL_luci_app_vssr: https://github.com/jerrykuku/luci-app-vssr
-  REPO_BRANCH_luci_app_vssr: master
-  REPO_PATH_luci_app_vssr : "luci-app-vssr"
-
   # Dockerman源码
   REPO_URL_luci_app_dockerman: https://github.com/lisaac/luci-app-dockerman
   REPO_BRANCH_luci_app_dockerman: master
   REPO_PATH_luci_app_dockerman : "luci-app-dockerman"
+
+  # luci-app-vssr的依赖源码
+  # REPO_URL_lua_maxminddb: https://github.com/jerrykuku/lua-maxminddb
+  # REPO_BRANCH_lua_maxminddb: master
+  # REPO_PATH_lua_maxminddb : "lua-maxminddb"
+
+  # luci-app-vssr源码
+  # REPO_URL_luci_app_vssr: https://github.com/jerrykuku/luci-app-vssr
+  # REPO_BRANCH_luci_app_vssr: master
+  # REPO_PATH_luci_app_vssr : "luci-app-vssr"
 
 on:
   repository_dispatch:
@@ -105,6 +120,21 @@ jobs:
         echo "::set-output name=commitHash_Lede_Package::$(git rev-parse HEAD)"
         cd
 
+        git clone --depth 1 $REPO_URL_Lede_Luci -b $REPO_BRANCH_Lede_Luci $REPO_PATH_Lede_Luci
+        cd $REPO_PATH_Lede_Luci
+        echo "::set-output name=commitHash_Lede_Luci::$(git rev-parse HEAD)"
+        cd
+
+        git clone --depth 1 $REPO_URL_OPENWRT_ROUTING -b $REPO_BRANCH_OPENWRT_ROUTING $REPO_PATH_OPENWRT_ROUTING
+        cd $REPO_PATH_OPENWRT_ROUTING
+        echo "::set-output name=commitHash_OPENWRT_ROUTING::$(git rev-parse HEAD)"
+        cd
+        
+        git clone --depth 1 $REPO_URL_OPENWRT_TELEPHONY -b $REPO_BRANCH_OPENWRT_TELEPHONY $REPO_PATH_OPENWRT_TELEPHONY
+        cd $REPO_PATH_OPENWRT_TELEPHONY
+        echo "::set-output name=commitHash_OPENWRT_TELEPHONY::$(git rev-parse HEAD)"
+        cd
+
         git clone --depth 1 $REPO_URL_HelloWorld -b $REPO_BRANCH_HelloWorld $REPO_PATH_HelloWorld 
         cd $REPO_PATH_HelloWorld
         echo "::set-output name=commitHash_HelloWorld::$(git rev-parse HEAD)"
@@ -125,16 +155,6 @@ jobs:
         echo "::set-output name=commitHash_ArgonConfig::$(git rev-parse HEAD)"
         cd
 
-        git clone --depth 1 $REPO_URL_lua_maxminddb -b $REPO_BRANCH_lua_maxminddb $REPO_PATH_lua_maxminddb
-        cd $REPO_PATH_lua_maxminddb
-        echo "::set-output name=commitHash_lua_maxminddb::$(git rev-parse HEAD)"
-        cd
-
-        git clone --depth 1 $REPO_URL_luci_app_vssr -b $REPO_BRANCH_luci_app_vssr $REPO_PATH_luci_app_vssr
-        cd $REPO_PATH_luci_app_vssr
-        echo "::set-output name=commitHash_luci_app_vssr::$(git rev-parse HEAD)"
-        cd
-
         git clone --depth 1 $REPO_URL_luci_app_dockerman -b $REPO_BRANCH_luci_app_dockerman $REPO_PATH_luci_app_dockerman
         cd $REPO_PATH_luci_app_dockerman
         echo "::set-output name=commitHash_luci_app_dockerman::$(git rev-parse HEAD)"
@@ -146,22 +166,24 @@ jobs:
         echo "commitHash_smallprogramAction: ${{ steps.getHash.outputs.commitHash_smallprogramAction }}"
         echo "commitHash_Lede: ${{ steps.getHash.outputs.commitHash_Lede }}"
         echo "commitHash_Lede_Package: ${{ steps.getHash.outputs.commitHash_Lede_Package }}"
+        echo "commitHash_Lede_Luci: ${{ steps.getHash.outputs.commitHash_Lede_Luci }}"
+        echo "commitHash_OPENWRT_ROUTING: ${{ steps.getHash.outputs.commitHash_OPENWRT_ROUTING }}"
+        echo "commitHash_OPENWRT_TELEPHONY: ${{ steps.getHash.outputs.commitHash_OPENWRT_TELEPHONY }}"
         echo "commitHash_HelloWorld: ${{ steps.getHash.outputs.commitHash_HelloWorld }}"
         echo "commitHash_PassWall: ${{ steps.getHash.outputs.commitHash_PassWall }}"
         echo "commitHash_ThemeArgon: ${{ steps.getHash.outputs.commitHash_ThemeArgon }}"
         echo "commitHash_ArgonConfig: ${{ steps.getHash.outputs.commitHash_ArgonConfig }}"
-        echo "commitHash_lua_maxminddb: ${{ steps.getHash.outputs.commitHash_lua_maxminddb }}"
-        echo "commitHash_luci_app_vssr: ${{ steps.getHash.outputs.commitHash_luci_app_vssr }}"
         echo "commitHash_luci_app_dockerman: ${{ steps.getHash.outputs.commitHash_luci_app_dockerman }}"
         echo "::set-output name=commitHash_All::\
           ${{steps.getHash.outputs.commitHash_smallprogramAction}}\
           ${{steps.getHash.outputs.commitHash_Lede}}\
           ${{steps.getHash.outputs.commitHash_Lede_Package}}\
+          ${{steps.getHash.outputs.commitHash_Lede_Luci}}\
+          ${{steps.getHash.outputs.commitHash_OPENWRT_ROUTING}}\
+          ${{steps.getHash.outputs.commitHash_OPENWRT_TELEPHONY}}\
           ${{steps.getHash.outputs.commitHash_HelloWorld}}\
           ${{steps.getHash.outputs.commitHash_PassWall}}\
           ${{steps.getHash.outputs.commitHash_ArgonConfig}}\
-          ${{steps.getHash.outputs.commitHash_lua_maxminddb}}\
-          ${{steps.getHash.outputs.commitHash_luci_app_vssr}}\
           ${{steps.getHash.outputs.commitHash_luci_app_dockerman}}"
 
     - name: Compare Commit Hash
@@ -178,12 +200,13 @@ jobs:
         echo ${{ steps.getHash.outputs.commitHash_smallprogramAction }} | tee .commitHash_smallprogramAction
         echo ${{ steps.getHash.outputs.commitHash_Lede }} | tee .commitHash_Lede
         echo ${{ steps.getHash.outputs.commitHash_Lede_Package }} | tee .commitHash_Lede_Package
+        echo ${{ steps.getHash.outputs.commitHash_Lede_Luci }} | tee .commitHash_Lede_Luci
+        echo ${{ steps.getHash.outputs.commitHash_OPENWRT_ROUTING }} | tee .commitHash_OPENWRT_ROUTING
+        echo ${{ steps.getHash.outputs.commitHash_OPENWRT_TELEPHONY }} | tee .commitHash_OPENWRT_TELEPHONY
         echo ${{ steps.getHash.outputs.commitHash_HelloWorld }} | tee .commitHash_HelloWorld
         echo ${{ steps.getHash.outputs.commitHash_PassWall }} | tee .commitHash_PassWall
         echo ${{ steps.getHash.outputs.commitHash_ThemeArgon }} | tee .commitHash_ThemeArgon
         echo ${{ steps.getHash.outputs.commitHash_ArgonConfig }} | tee .commitHash_ArgonConfig
-        echo ${{ steps.getHash.outputs.commitHash_lua_maxminddb }} | tee .commitHash_lua_maxminddb
-        echo ${{ steps.getHash.outputs.commitHash_luci_app_vssr }} | tee .commitHash_luci_app_vssr
         echo ${{ steps.getHash.outputs.commitHash_luci_app_dockerman }} | tee .commitHash_luci_app_dockerman
         echo ${{ steps.combHeader.outputs.commitHash_All }} | tee .commitHash_All
         

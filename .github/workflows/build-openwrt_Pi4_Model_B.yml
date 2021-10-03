@@ -28,7 +28,7 @@ env:
   CONFIG_FILE: config/Pi4_Model_B.config
   DIY_P1_SH: diy_script/diy-part1.sh
   DIY_P2_SH: diy_script/diy-part2.sh
-  COMMIT_LOG_NUM: 5
+  COMMIT_LOG_NUM: 2
   RELEASE_TAG: Pi4_Model_B
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
@@ -170,6 +170,15 @@ jobs:
         echo "## Lean Package Commit Top $COMMIT_LOG_NUM" >> release.txt
         git -C openwrt/feeds/packages log -n $COMMIT_LOG_NUM >> release.txt
 
+        echo "## Lean Luci Commit Top $COMMIT_LOG_NUM" >> release.txt
+        git -C openwrt/feeds/luci log -n $COMMIT_LOG_NUM >> release.txt
+
+        echo "## Openwrt routing Commit Top $COMMIT_LOG_NUM" >> release.txt
+        git -C openwrt/feeds/routing log -n $COMMIT_LOG_NUM >> release.txt
+
+        echo "## Openwrt telephony Commit Top $COMMIT_LOG_NUM" >> release.txt
+        git -C openwrt/feeds/telephony log -n $COMMIT_LOG_NUM >> release.txt
+
         echo "## SSRP Commit Top $COMMIT_LOG_NUM" >> release.txt
         git -C openwrt/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
 
@@ -184,9 +193,6 @@ jobs:
 
         echo "## ArgonConfig Commit Top $COMMIT_LOG_NUM" >> release.txt
         git -C openwrt/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "## VSSR Commit Top $COMMIT_LOG_NUM" >> release.txt
-        git -C openwrt/package/lean/luci-app-vssr log -n $COMMIT_LOG_NUM >> release.txt
 
         touch release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt

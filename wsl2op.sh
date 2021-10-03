@@ -103,7 +103,7 @@ function Compile_Firmware() {
     # CheckUpdate
 
     begin_date=开始时间$(date "+%Y-%m-%d-%H-%M-%S")
-
+    folder_name=log_Compile_${configName}_$(date "+%Y-%m-%d-%H-%M-%S")
     echo -e "\033[31m 是否启用Clean编译，如果不输入任何值默认否，输入任意值启用Clean编译，Clean操作适用于大版本更新 \033[0m"
     echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
     read -t $timer isCleanCompile
