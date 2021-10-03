@@ -9,7 +9,6 @@ echo -e  "\033[34m 如果不符合上述条件，请ctrl+C退出 \033[0m"
 
 # 默认lean源码文件夹名
 ledeDir=ledex64
-
 # 编译环境中当前账户名字
 userName=$USER
 # 默认OpenWrtAction的Config文件夹中的config文件名
@@ -23,10 +22,43 @@ sysenv=1
 owaUrl=https://github.com/smallprogram/OpenWrtAction.git
 # 是否首次编译 0否，1是
 isFirstCompile=0
+# 编译openwrt的log日志文件夹名称
+log_folder_name=openwrt_log
+# 编译子文件夹名称
+folder_name=log_Compile_${configName}_$(date "+%Y-%m-%d-%H-%M-%S")
+# logfile名称
+log_feeds_update_filename=Main1_feeds_update-git_log.log
+log_feeds_install_filename=Main2_feeds_install-git_log.log
+log_make_defconfig_filename=Main3_make_defconfig-git_log.log
+log_make_down_filename=Main4_make_download-git_log.log
+log_Compile_filename=Main5_Compile-git_log.log
+log_Compile_time_filename=Main6_Compile_Time-git_log.log
+
+# defconfig操作之前的config文件名
+log_before_defconfig_config=.config_old
+# defconfig操作之后的config文件名
+log_after_defconfig_config=.config_new
+# 两个config的差异文件名
+log_diff_config=.config_diff
 
 # 函数
+# 将编译的固件提交到GitHubRelease
+function UpdateFileToGithubRelease(){
+    # 没思路
+}
+
+# 检测代码更新函数
+function CheckUpdate(){
+    # todo 感觉没啥必要先不写了
+}
+# 编译函数
 function Compile_Firmware() 
 {
+
+    # CheckUpdate
+
+    begin_date=开始时间$(date "+%Y-%m-%d-%H-%M-%S")
+
     echo -e "\033[31m 是否启用Clean编译，如果不输入任何值默认否，输入任意值启用Clean编译，Clean操作适用于大版本更新 \033[0m"
     echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
     read -t $timer isCleanCompile
@@ -38,23 +70,23 @@ function Compile_Firmware()
         sleep 1s
     fi
     
-
-    folder_name=编译日志${configName}_$(date "+%Y-%m-%d-%H-%M-%S")
-    logfile_name=编译时间日志$(date "+%Y-%m-%d-%H-%M-%S")
-    begin_date=开始时间$(date "+%Y-%m-%d-%H-%M-%S")
-
-    echo -e  "\033[34m 创建编译日志文件夹/home/${userName}/smb_openwrt/$folder_name \033[0m"
+    echo -e  "\033[34m 创建编译日志文件夹/home/${userName}/${log_folder_name}/${folder_name} \033[0m"
     sleep 1s
 
-    if [ ! -d "/home/${userName}/smb_openwrt" ];
+    if [ ! -d "/home/${userName}/${log_folder_name}" ];
     then
-        mkdir /home/${userName}/smb_openwrt
+        mkdir /home/${userName}/${log_folder_name}
     fi
-    mkdir /home/${userName}/smb_openwrt/$folder_name
-    touch /home/${userName}/smb_openwrt/$folder_name/Main1_make_defconfig-git_log.log
-    touch /home/${userName}/smb_openwrt/$folder_name/Main2_make_download-git_log.log
-    touch /home/${userName}/smb_openwrt/$folder_name/Main3_Compile-git_log.log
-    echo -e $begin_date > /home/${userName}/smb_openwrt/$folder_name/${logfile_name}.txt
+    if [ ! -d "/home/${userName}/${log_folder_name}/${folder_name}" ];
+    then
+        mkdir /home/${userName}/${log_folder_name}/${folder_name}
+    fi
+    touch /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_update_filename}
+    touch /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_install_filename}
+    touch /home/${userName}/${log_folder_name}/${folder_name}/${log_make_defconfig_filename}
+    touch /home/${userName}/${log_folder_name}/${folder_name}/${log_make_down_filename}
+    touch /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
+    echo -e $begin_date > /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_time_filename}
 
     echo -e  "\033[34m 编译日志文件夹创建成功 \033[0m"
     sleep 1s
@@ -72,50 +104,71 @@ function Compile_Firmware()
     sleep 2s
     echo
     cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default > /home/${userName}/${ledeDir}/feeds.conf.default
-    
-    ./scripts/feeds update -a && ./scripts/feeds install -a
+
+
+    echo -e "\033[31m 开始update feeds.... \033[0m"
+    sleep 1s
+    ./scripts/feeds update -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_update_filename}
+    echo -e "\033[31m 开始install feeds.... \033[0m"
+    sleep 1s
+    ./scripts/feeds install -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_install_filename}
 
     echo
     echo -e "\033[31m 开始将OpenwrtAction中的自定义config文件注入lean源码中.... \033[0m"
     sleep 2s
     echo
     cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
-
+    cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/${log_before_defconfig_config}
     # if [[ $isFirstCompile == 1 ]]; then
     #     echo -e  "\033[34m 由于你是首次编译，需要make menuconfig配置，如果保持原有config不做更改，请在进入菜单后直接exit即可 \033[0m"
     #     sleep 6s
     #     make menuconfig
     # fi
-    if [[ $isFirstCompile == 0 ]]; then
-        echo -e  "\033[34m 开始执行make defconfig! \033[0m"
-        make defconfig | tee -a /home/${userName}/smb_openwrt/$folder_name/Main1_make_defconfig-git_log.log
+    # if [[ $isFirstCompile == 0 ]]; then
+    #     echo -e  "\033[34m 开始执行make defconfig! \033[0m"
+    #     make defconfig | tee -a /home/${userName}/${log_folder_name}/${folder_name}/Main1_make_defconfig-git_log.log
 
-    fi   
-    
-    make -j8 download V=s | tee -a /home/${userName}/smb_openwrt/$folder_name/Main2_make_download-git_log.log
+    # fi
+
+    echo -e  "\033[34m 开始执行make defconfig! \033[0m"
+    sleep 1s
+    make defconfig | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_make_defconfig_filename}
+    cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/${log_after_defconfig_config}
+
+    diff  /home/${userName}/${log_folder_name}/${folder_name}/${log_before_defconfig_config} /home/${userName}/${log_folder_name}/${folder_name}/${log_after_defconfig_config} -y -W 200 > /home/${userName}/${log_folder_name}/${folder_name}/${log_diff_config}
+
+    echo -e  "\033[34m 开始执行make download! \033[0m"
+    sleep 1s
+    make -j8 download V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_make_down_filename}
+
+    echo -e  "\033[34m 开始执行make编译! \033[0m"
+    sleep 1s
     if [[ $sysenv == 1 ]]
     then
         # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-        PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/smb_openwrt/$folder_name/Main3_Compile-git_log.log
+        PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
     else
         # $PATH
-        make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/smb_openwrt/$folder_name/Main3_Compile-git_log.log
+        make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
     fi
 
+    echo -e  "\033[34m make编译结束! \033[0m"
+    sleep 1s
+
     end_date=结束时间$(date "+%Y-%m-%d-%H-%M-%S")
-    echo -e $end_date >> /home/zhusir/smb_openwrt/$folder_name/${logfile_name}.txt
+    echo -e $end_date >> /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_time_filename}
 
     ######是否提交编译结果到github Release
+    # UpdateFileToGithubRelease
 
-
-    echo -e "\033[31m 是否拷贝编译固件到smb_openwrt/${folder_name}下？不输入默认不拷贝，输入任意值拷贝 \033[0m"
+    echo -e "\033[31m 是否拷贝编译固件到${log_folder_name}/${folder_name}下？不输入默认不拷贝，输入任意值拷贝 \033[0m"
     echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
     read -t $timer iscopy
     if [ ! -n "$iscopy" ]; then
         echo -e  "\033[34m OK，不拷贝 \033[0m"
     else
         echo -e  "\033[34m 开始拷贝 \033[0m"
-        cp -r /home/${userName}/${ledeDir}/bin/targets /home/zhusir/smb_openwrt/$folder_name
+        cp -r /home/${userName}/${ledeDir}/bin/targets /home/${userName}/${log_folder_name}/${folder_name}
         echo -e  "\033[34m 拷贝完成 \033[0m"
     fi
     exit
@@ -133,7 +186,7 @@ function Compile_Firmware()
 #     done
 # }
 
-
+# config文件夹的config文件列表函数
 function configList(){
     key=0
     for conf in ${config_list[*]}; 
