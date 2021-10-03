@@ -284,7 +284,7 @@ function CleanLogFolder(){
     fi
 }
 
-
+export GIT_SSL_NO_VERIFY=1
 CleanLogFolder
 sleep 2s
 
@@ -490,5 +490,6 @@ then
 
 fi
 
+export GIT_SSL_NO_VERIFY=0
 echo
 
