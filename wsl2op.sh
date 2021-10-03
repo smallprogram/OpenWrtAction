@@ -7,12 +7,15 @@ echo -e  "\033[34m 注意，请确保当前linux账户为非root账户，并且�
 echo -e  "\033[34m 如果不符合上述条件，请ctrl+C退出 \033[0m"
 
 
-# 默认lean源码文件夹名
-ledeDir=ledex64
+
 # 编译环境中当前账户名字
 userName=$USER
 # 默认OpenWrtAction的Config文件夹中的config文件名
 configName=x64.config
+
+# 默认lean源码文件夹名
+ledeDir=lede_$configName
+
 config_list=($(ls /home/$userName/OpenWrtAction/config))
 # 默认输入超时时间，单位为秒
 timer=15
@@ -55,8 +58,7 @@ clean_day=3
 # }
 
 # 编译函数
-function Compile_Firmware() 
-{
+function Compile_Firmware() {
 
     # CheckUpdate
 
@@ -202,6 +204,7 @@ function configList(){
     if [ ! -n "$configNameInp" ]; then
         i=1
         configName=x64.config
+        ledeDir=lede_$configName
         # echo "135 configName的值："$configName
         for context in ${config_list[*]}; 
         do 
@@ -217,6 +220,7 @@ function configList(){
     else 
         if [[ $configNameInp -ge 1 && $configNameInp -le $key ]]; then
             configName=${config_list[$(($configNameInp-1))]}
+            ledeDir=lede_$configName
             # echo $configNameInp
             # echo $configName
         fi
@@ -243,15 +247,6 @@ function CleanLogFolder(){
 
 CleanLogFolder
 sleep 2s
-echo -e "\033[31m 请输入默认lean源码文件夹名称,如果不输入默认$ledeDir,将在($timer秒后使用默认值) \033[0m"
-echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
-read -t $timer ledeDirInp
-if [ ! -n "$ledeDirInp" ]; then
-    echo -e  "\033[34m OK，使用默认值ledex64 \033[0m"
-else
-    echo -e  "\033[34m 使用 ${ledeDirInp} 作为lean源码文件夹名。 \033[0m"
-    ledeDir=$ledeDirInp
-fi
 
 echo
 echo -e "\033[31m 请输入默认OpenwrtAction中的config文件名，默认为$configName \033[0m"
@@ -264,6 +259,17 @@ do
     echo -e "\033[31m 请输入默认OpenwrtAction中的config文件名，默认为$configName \033[0m"
     configList
 done
+
+
+echo -e "\033[31m 请输入默认lean源码文件夹名称,如果不输入默认$ledeDir,将在($timer秒后使用默认值) \033[0m"
+echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
+read -t $timer ledeDirInp
+if [ ! -n "$ledeDirInp" ]; then
+    echo -e  "\033[34m OK，使用默认值$ledeDir \033[0m"
+else
+    echo -e  "\033[34m 使用 ${ledeDirInp} 作为lean源码文件夹名。 \033[0m"
+    ledeDir=$ledeDirInp
+fi
 
 
 echo
