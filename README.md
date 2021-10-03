@@ -1,5 +1,5 @@
 
-![image](https://img.shields.io/badge/support-x86%7CR4S-blue?style=flat&logo=rss)  ![image](https://img.shields.io/badge/SourceCode-Lean-green?style=flat&logo=GitHub) ![image](https://img.shields.io/badge/UpdateCheck-blueviolet?style=flat&logo=Checkmarx) ![image](https://img.shields.io/badge/GithubAction-2Actions-important?style=flat&logo=GitHubActions) ![image](https://img.shields.io/badge/LICENSE-MIT-important?style=flat)
+![image](https://img.shields.io/badge/support-x86|R4S|Pi4ModelB-blue?style=flat&logo=rss)  ![image](https://img.shields.io/badge/SourceCode-Lean-green?style=flat&logo=GitHub) ![image](https://img.shields.io/badge/UpdateCheck-blueviolet?style=flat&logo=Checkmarx) ![image](https://img.shields.io/badge/GithubAction-2Actions-important?style=flat&logo=GitHubActions) ![image](https://img.shields.io/badge/LICENSE-MIT-important?style=flat)
 
 
 # 目录<!-- omit in toc --> 
@@ -46,6 +46,7 @@
 |Aria2|插件|下载器|lean code source|
 |qBittorrent|插件|下载器|lean code source|
 |aMule|插件|下载器|lean code source|
+|Aliyun-WebDav|插件|下载器|lean code source|
 |SSR Python Server|服务|SSR服务端|lean code source|
 |OpenVPN Server|服务|OpenVPN服务端|lean code source|
 |PPTP VPN Server|服务|PPTP VPN服务端|lean code source|
@@ -62,6 +63,7 @@
 -|-|-|-
 X86平台|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/x64.config|
 R4S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config
+Pi4_Model_B|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/Pi4_Model_B.config
 
 ## argon主题的背景资源
 
@@ -89,7 +91,7 @@ R4S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/mai
 
 **github Token请自行在自己的Github Settings --> Developer settings --> Personal access tokens中创建**
 
-![image](source/github%20auth.png)
+![image](source/githubauth.png)
 
 当然如果你嫌麻烦，也可以直接PR你的config到我的仓库config文件夹下，这样你就可以直接不同步编译了
 
