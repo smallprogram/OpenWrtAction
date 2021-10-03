@@ -404,6 +404,26 @@ fi
 
 if [[ $num == 2 ]]
 then
+    echo
+    echo -e "\033[31m 开始将OpenwrtAction中的自定义feeds注入lean源码中.... \033[0m"
+    sleep 2s
+    echo
+    cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default > /home/${userName}/${ledeDir}/feeds.conf.default
+
+
+    echo -e "\033[31m 开始update feeds.... \033[0m"
+    sleep 1s
+    ./scripts/feeds update -a 
+    echo -e "\033[31m 开始install feeds.... \033[0m"
+    sleep 1s
+    ./scripts/feeds install -a 
+
+    echo
+    echo -e "\033[31m 开始将OpenwrtAction中的自定义config文件注入lean源码中.... \033[0m"
+    sleep 2s
+    echo
+    cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
+    
     cd /home/${userName}/${ledeDir}
     make menuconfig
     cat /home/${userName}/${ledeDir}/.config > /home/${userName}/OpenWrtAction/config/${configName}
