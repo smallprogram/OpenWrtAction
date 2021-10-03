@@ -45,14 +45,15 @@ log_diff_config=.config_diff
 clean_day=3
 
 # 将编译的固件提交到GitHubRelease
-function UpdateFileToGithubRelease(){
-    # 没思路
-}
+# function UpdateFileToGithubRelease(){
+#     # 没思路
+# }
 
 # 检测代码更新函数
-function CheckUpdate(){
-    # todo 感觉没啥必要先不写了
-}
+# function CheckUpdate(){
+#     # todo 感觉没啥必要先不写了
+# }
+
 # 编译函数
 function Compile_Firmware() 
 {
