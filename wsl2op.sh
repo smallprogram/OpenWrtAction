@@ -159,7 +159,7 @@ function Compile_Firmware() {
     ./scripts/feeds install -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_install_filename}
 
     echo
-    echo -e "\033[31m 开始将OpenwrtAction中的自定义config文件注入lean源码中.... \033[0m"
+    echo -e "\033[31m 开始将OpenwrtAction中config文件夹下的${configName}注入lean源码中.... \033[0m"
     sleep 2s
     echo
     cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
@@ -419,7 +419,7 @@ then
     ./scripts/feeds install -a 
 
     echo
-    echo -e "\033[31m 开始将OpenwrtAction中的自定义config文件注入lean源码中.... \033[0m"
+    echo -e "\033[31m 开始将OpenwrtAction中config文件夹下的${configName}注入lean源码中.... \033[0m"
     sleep 2s
     echo
     cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
