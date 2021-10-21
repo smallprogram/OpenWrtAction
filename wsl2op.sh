@@ -7,7 +7,8 @@ echo -e  "\033[34m 注意，请确保当前linux账户为非root账户，并且�
 echo -e  "\033[34m 如果不符合上述条件，请ctrl+C退出 \033[0m"
 
 
-
+# 路由默认IP地址
+routeIP=10.10.0.253
 # 编译环境中当前账户名字
 userName=$USER
 # 默认OpenWrtAction的Config文件夹中的config文件名
@@ -174,6 +175,10 @@ function Compile_Firmware() {
     #     make defconfig | tee -a /home/${userName}/${log_folder_name}/${folder_name}/Main1_make_defconfig-git_log.log
 
     # fi
+
+    echo -e "\033[31m 正在修改源码中默认路由器IP地址为${routeIP} \033[0m"
+    sleep 2s
+    sed -i "s/192.168.1.1/${routeIP}/g" /home/${userName}/${ledeDir}/package/base-files/files/bin/config_generate
 
     echo -e  "\033[34m 开始执行make defconfig! \033[0m"
     sleep 1s
