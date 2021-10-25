@@ -1,0 +1,66 @@
+#
+# This is free software, lisence use MIT.
+# 
+# Copyright (C) 2021 smallprogram <smallprogramzhusir@gmail.com>
+# 
+
+
+name: Merge-upstream
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
+  push:
+    branches: 
+      - master
+  schedule:
+    - cron: 0 */2 * * *
+
+jobs:
+
+  merge:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.ref }}
+        fetch-depth: 0
+        lfs: true
+
+    - name: Set git identity
+      run : |
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com" 
+        git config --global user.name "github-actions[bot]"
+        git config --global pull.ff only
+    - name: Load upstream commits
+      run: git pull --rebase https://github.com/smallprogram/OpenWrtAction.git --log --no-commit
+
+    - name: Apply commit changes
+      run: |
+        if [ -f ./.git/MERGE_MSG ]; then
+        mkdir ./tmp && cp ./.git/MERGE_MSG ./tmp/message
+        sed -i "1c [bot] AutoMerging: merge all upstream's changes:" ./tmp/message
+        sed -i '/^\#.*/d' ./tmp/message
+        git commit --file="./tmp/message"
+        else
+        echo "There is no merge commits."
+        fi
+    - name: Push Commits
+      env:
+        DOWNSTREAM_BRANCH: ${{ github.ref }}
+      run: git push -f origin $DOWNSTREAM_BRANCH
+
+    - name: Delete workflow runs
+      uses: GitRML/delete-workflow-runs@main
+      with:
+        retain_days: 1
+        keep_minimum_runs: 4
