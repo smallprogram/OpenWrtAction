@@ -195,11 +195,37 @@ function Compile_Firmware() {
     sleep 1s
     if [[ $sysenv == 1 ]]
     then
-        # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-        PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
+        echo -e "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m"
+        echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
+        read -t $timer isSingleCompile
+        if [ ! -n "$isSingleCompile" ]; then
+            echo -e  "\033[34m OK，不执行单线程编译  \033[0m"
+            sleep 1s
+            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
+        else
+            echo -e  "\033[34m OK，执行单线程编译。 \033[0m"
+            echo -e  "\033[34m 准备开始编译 \033[0m"
+            sleep 1s
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
+        fi
+        
     else
+        echo -e "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m"
+        echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
+        read -t $timer isSingleCompile
+        if [ ! -n "$isSingleCompile" ]; then
+            echo -e  "\033[34m OK，不执行单线程编译  \033[0m"
+            sleep 1s
+            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
+        else
+            echo -e  "\033[34m OK，执行单线程编译。 \033[0m"
+            echo -e  "\033[34m 准备开始编译 \033[0m"
+            sleep 1s
+            make -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
+        fi
         # $PATH
-        make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
     fi
 
     echo -e  "\033[34m make编译结束! \033[0m"
