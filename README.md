@@ -49,7 +49,7 @@
 |Aliyun-WebDav|插件|下载器|lean code source|
 |SSR Python Server|服务|SSR服务端|lean code source|
 |OpenVPN Server|服务|OpenVPN服务端|lean code source|
-|PPTP VPN Server|服务|PPTP VPN服务端|lean code source|
+|~~PPTP VPN Server~~|~~服务~~|~~PPTP VPN服务端~~|~~lean code source~~|
 |IPSec VPN Server|服务|IPSec VPN服务端|lean code source|
 |ZeroTier|插件|内网穿透工具|lean code source|
 |多线多播|插件|多线多播工具|lean code source|
