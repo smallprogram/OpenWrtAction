@@ -32,7 +32,6 @@
 |SSRP|插件|Lean源码的亲儿子，评测说效率最高|https://github.com/fw876/helloworld|
 |PassWall|插件|一款功能强大的科学工具|https://github.com/xiaorouji/openwrt-passwall|
 |DockerMan|插件|OP上玩Docker的必备插件|https://github.com/lisaac/luci-app-dockerman|
-|~~VSSR~~|~~插件~~|~~基于SSRP开发的更加美观的科学工具~~|~~https://github.com/jerrykuku/luci-app-vssr~~|
 |新版argon主题|主题|十分漂亮的OP主题|https://github.com/jerrykuku/luci-theme-argon|
 |Argon Config|插件|新版argon主题的设置插件|https://github.com/jerrykuku/luci-app-argon-config|
 |广告屏蔽大师Plus+|插件|屏蔽广告插件|lean code source|
@@ -49,7 +48,7 @@
 |Aliyun-WebDav|插件|下载器|lean code source|
 |SSR Python Server|服务|SSR服务端|lean code source|
 |OpenVPN Server|服务|OpenVPN服务端|lean code source|
-|~~PPTP VPN Server~~|~~服务~~|~~PPTP VPN服务端~~|~~lean code source~~|
+|PPTP VPN Server|服务|PPTP VPN服务端|lean code source|
 |IPSec VPN Server|服务|IPSec VPN服务端|lean code source|
 |ZeroTier|插件|内网穿透工具|lean code source|
 |多线多播|插件|多线多播工具|lean code source|
