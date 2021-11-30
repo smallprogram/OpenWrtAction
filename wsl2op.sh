@@ -54,7 +54,7 @@ luci_apps=(
     https://github.com/jerrykuku/luci-app-argon-config.git
     # https://github.com/jerrykuku/lua-maxminddb.git
     # https://github.com/jerrykuku/luci-app-vssr.git
-    https://github.com/lisaac/luci-app-dockerman.git
+    # https://github.com/lisaac/luci-app-dockerman.git
 )
 
 # 将编译的固件提交到GitHubRelease
