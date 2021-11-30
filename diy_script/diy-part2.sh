@@ -20,4 +20,4 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
 git clone https://github.com/jerrykuku/luci-app-argon-config.git
 # git clone https://github.com/jerrykuku/lua-maxminddb.git
 # git clone https://github.com/jerrykuku/luci-app-vssr.git
-git clone https://github.com/lisaac/luci-app-dockerman.git
+# git clone https://github.com/lisaac/luci-app-dockerman.git
