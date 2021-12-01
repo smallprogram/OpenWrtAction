@@ -64,9 +64,9 @@ env:
   REPO_PATH_ArgonConfig : "luci-app-argon-config"
 
   # Dockerman源码
-  REPO_URL_luci_app_dockerman: https://github.com/lisaac/luci-app-dockerman
-  REPO_BRANCH_luci_app_dockerman: master
-  REPO_PATH_luci_app_dockerman : "luci-app-dockerman"
+  # REPO_URL_luci_app_dockerman: https://github.com/lisaac/luci-app-dockerman
+  # REPO_BRANCH_luci_app_dockerman: master
+  # REPO_PATH_luci_app_dockerman : "luci-app-dockerman"
 
   # luci-app-vssr的依赖源码
   # REPO_URL_lua_maxminddb: https://github.com/jerrykuku/lua-maxminddb
@@ -155,10 +155,10 @@ jobs:
         echo "::set-output name=commitHash_ArgonConfig::$(git rev-parse HEAD)"
         cd
 
-        git clone --depth 1 $REPO_URL_luci_app_dockerman -b $REPO_BRANCH_luci_app_dockerman $REPO_PATH_luci_app_dockerman
-        cd $REPO_PATH_luci_app_dockerman
-        echo "::set-output name=commitHash_luci_app_dockerman::$(git rev-parse HEAD)"
-        cd
+        # git clone --depth 1 $REPO_URL_luci_app_dockerman -b $REPO_BRANCH_luci_app_dockerman $REPO_PATH_luci_app_dockerman
+        # cd $REPO_PATH_luci_app_dockerman
+        # echo "::set-output name=commitHash_luci_app_dockerman::$(git rev-parse HEAD)"
+        # cd
 
     - name: Show Commit Head and Combination Heads
       id: combHeader
@@ -173,7 +173,7 @@ jobs:
         echo "commitHash_PassWall: ${{ steps.getHash.outputs.commitHash_PassWall }}"
         echo "commitHash_ThemeArgon: ${{ steps.getHash.outputs.commitHash_ThemeArgon }}"
         echo "commitHash_ArgonConfig: ${{ steps.getHash.outputs.commitHash_ArgonConfig }}"
-        echo "commitHash_luci_app_dockerman: ${{ steps.getHash.outputs.commitHash_luci_app_dockerman }}"
+        # echo "commitHash_luci_app_dockerman: ${{ steps.getHash.outputs.commitHash_luci_app_dockerman }}"
         echo "::set-output name=commitHash_All::\
           ${{steps.getHash.outputs.commitHash_smallprogramAction}}\
           ${{steps.getHash.outputs.commitHash_Lede}}\
@@ -183,8 +183,8 @@ jobs:
           ${{steps.getHash.outputs.commitHash_OPENWRT_TELEPHONY}}\
           ${{steps.getHash.outputs.commitHash_HelloWorld}}\
           ${{steps.getHash.outputs.commitHash_PassWall}}\
-          ${{steps.getHash.outputs.commitHash_ArgonConfig}}\
-          ${{steps.getHash.outputs.commitHash_luci_app_dockerman}}"
+          ${{steps.getHash.outputs.commitHash_ArgonConfig}}"
+          # ${{steps.getHash.outputs.commitHash_luci_app_dockerman}}"
 
     - name: Compare Commit Hash
       id: cacheHash
@@ -207,7 +207,7 @@ jobs:
         echo ${{ steps.getHash.outputs.commitHash_PassWall }} | tee .commitHash_PassWall
         echo ${{ steps.getHash.outputs.commitHash_ThemeArgon }} | tee .commitHash_ThemeArgon
         echo ${{ steps.getHash.outputs.commitHash_ArgonConfig }} | tee .commitHash_ArgonConfig
-        echo ${{ steps.getHash.outputs.commitHash_luci_app_dockerman }} | tee .commitHash_luci_app_dockerman
+        # echo ${{ steps.getHash.outputs.commitHash_luci_app_dockerman }} | tee .commitHash_luci_app_dockerman
         echo ${{ steps.combHeader.outputs.commitHash_All }} | tee .commitHash_All
         
         
