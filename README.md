@@ -1,5 +1,5 @@
 
-![image](https://img.shields.io/badge/support-x86|R4S|Pi4ModelB-blue?style=flat&logo=rss)  ![image](https://img.shields.io/badge/SourceCode-Lean-green?style=flat&logo=GitHub) ![image](https://img.shields.io/badge/UpdateCheck-blueviolet?style=flat&logo=Checkmarx) ![image](https://img.shields.io/badge/GithubAction-2Actions-important?style=flat&logo=GitHubActions) ![image](https://img.shields.io/badge/LICENSE-MIT-important?style=flat)
+[![releases](https://img.shields.io/badge/support-x86|R4S|Pi4ModelB-blue?style=flat&logo=rss)](https://github.com/smallprogram/OpenWrtAction/releases)  [![Lean](https://img.shields.io/badge/SourceCode-Lean-green?style=flat&logo=GitHub)](https://github.com/coolsnowwolf/lede) [![releases](https://img.shields.io/badge/UpdateCheck-blueviolet?style=flat&logo=Checkmarx)](https://github.com/smallprogram/OpenWrtAction/releases) [![Action](https://img.shields.io/badge/GithubAction-2Actions-important?style=flat&logo=GitHubActions)](https://github.com/smallprogram/OpenWrtAction/actions) [![LICENSE](https://img.shields.io/badge/LICENSE-MIT-important?style=flat)](https://github.com/smallprogram/OpenWrtAction/blob/main/LICENSE)
 
 
 # 目录<!-- omit in toc --> 
