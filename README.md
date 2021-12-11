@@ -1,7 +1,7 @@
 
 [![releases](https://img.shields.io/badge/support-x86|R4S|Pi4ModelB-blue?style=flat&logo=rss)](https://github.com/smallprogram/OpenWrtAction/releases)  [![Lean](https://img.shields.io/badge/SourceCode-Lean-green?style=flat&logo=GitHub)](https://github.com/coolsnowwolf/lede) [![releases](https://img.shields.io/badge/UpdateCheck-blueviolet?style=flat&logo=Checkmarx)](https://github.com/smallprogram/OpenWrtAction/releases) [![Action](https://img.shields.io/badge/GithubAction-2Actions-important?style=flat&logo=GitHubActions)](https://github.com/smallprogram/OpenWrtAction/actions) [![LICENSE](https://img.shields.io/badge/LICENSE-MIT-important?style=flat)](https://github.com/smallprogram/OpenWrtAction/blob/main/LICENSE)
 
-
+[推送说明](/bot.md)
 # 目录<!-- omit in toc --> 
 - [Lean Openwrt GitHubAction](#lean-openwrt-githubaction)
     - [目前包含x86与R4S固件,根据源码更新自动编译](#目前包含x86与r4s固件根据源码更新自动编译)
