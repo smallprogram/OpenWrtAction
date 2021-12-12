@@ -38,6 +38,9 @@
 
 7、设置完毕后如果打开了SSH连接的话，到了SSH这个步骤会自动把代码发送给你，也可以用于编译前后的信息提示。
 
+## 具体功能展示截图：
+![image](https://github.com/smallprogram/OpenWrtAction/blob/main/source/TGbot.jpeg)
+
 
 #
 ---
