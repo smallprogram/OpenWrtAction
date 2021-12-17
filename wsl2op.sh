@@ -55,6 +55,7 @@ luci_apps=(
     # https://github.com/jerrykuku/lua-maxminddb.git
     # https://github.com/jerrykuku/luci-app-vssr.git
     # https://github.com/lisaac/luci-app-dockerman.git
+    https://github.com/rufengsuixing/luci-app-adguardhome.git
 )
 
 # 将编译的固件提交到GitHubRelease
