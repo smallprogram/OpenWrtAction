@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build-OpenWrt_R4S
+name: Build-OpenWrt_R2C
 
 on:
   repository_dispatch:
@@ -25,11 +25,11 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds_config/custom.feeds.conf.default
-  CONFIG_FILE: config/R4S.config
+  CONFIG_FILE: config/R2C.config
   DIY_P1_SH: diy_script/diy-part1.sh
   DIY_P2_SH: diy_script/diy-part2.sh
   COMMIT_LOG_NUM: 2
-  RELEASE_TAG: R4S
+  RELEASE_TAG: R2C
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
