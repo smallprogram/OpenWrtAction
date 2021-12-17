@@ -19,7 +19,7 @@
 # Lean Openwrt GitHubAction
 
 ![image](source/login.gif)
-### 目前包含x86与R4S固件,根据源码更新自动编译
+### 根据源码更新自动编译
 
 
 ## 包含内容
