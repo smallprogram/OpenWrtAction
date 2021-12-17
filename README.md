@@ -1,5 +1,5 @@
 
-[![releases](https://img.shields.io/badge/support-x86|R4S|Pi4ModelB-blue?style=flat&logo=rss)](https://github.com/smallprogram/OpenWrtAction/releases)  [![Lean](https://img.shields.io/badge/SourceCode-Lean-green?style=flat&logo=GitHub)](https://github.com/coolsnowwolf/lede) [![releases](https://img.shields.io/badge/UpdateCheck-blueviolet?style=flat&logo=Checkmarx)](https://github.com/smallprogram/OpenWrtAction/releases) [![Action](https://img.shields.io/badge/GithubAction-2Actions-important?style=flat&logo=GitHubActions)](https://github.com/smallprogram/OpenWrtAction/actions) [![LICENSE](https://img.shields.io/badge/LICENSE-MIT-important?style=flat)](https://github.com/smallprogram/OpenWrtAction/blob/main/LICENSE)
+[![releases](https://img.shields.io/badge/support-x86|Pi4ModelB|R4S|R2S|R2C-blue?style=flat&logo=rss)](https://github.com/smallprogram/OpenWrtAction/releases)  [![Lean](https://img.shields.io/badge/SourceCode-Lean-green?style=flat&logo=GitHub)](https://github.com/coolsnowwolf/lede) [![releases](https://img.shields.io/badge/UpdateCheck-blueviolet?style=flat&logo=Checkmarx)](https://github.com/smallprogram/OpenWrtAction/releases) [![Action](https://img.shields.io/badge/GithubAction-5Actions-important?style=flat&logo=GitHubActions)](https://github.com/smallprogram/OpenWrtAction/actions) [![LICENSE](https://img.shields.io/badge/LICENSE-MIT-important?style=flat)](https://github.com/smallprogram/OpenWrtAction/blob/main/LICENSE)
 
 # 目录<!-- omit in toc --> 
 - [新增TG跟Wechat推送说明](source/bot.md)
@@ -62,9 +62,10 @@
 |适用平台|KERNEL大小|ROOTFS大小|地址|
 -|-|-|-
 X86平台|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/x64.config|
-R4S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config
 Pi4_Model_B|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/Pi4_Model_B.config
-
+R4S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config
+R2S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2S.config
+R2C软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2C.config
 ## argon主题的背景资源
 
 图片资源：https://github.com/smallprogram/OpenWrtAction/tree/main/source/img
