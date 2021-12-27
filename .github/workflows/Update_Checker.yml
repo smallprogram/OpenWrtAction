@@ -14,7 +14,7 @@ name: Update_Checker
 env:
 
   # smallprogramOpenWrtAction源码
-  REPO_URL_smallprogramAction: https://github.com/smallprogram/OpenWrtAction
+  REPO_URL_smallprogramAction: https://github.com/smallprogram/OpenWrtAction.git
   REPO_BRANCH_smallprogramAction: main
   REPO_PATH_smallprogramAction : "smallprogramOpenWrtAction"
 
