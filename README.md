@@ -66,11 +66,6 @@ Pi4_Model_B|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main
 R4S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config
 R2S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2S.config
 R2C软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2C.config
-## argon主题的背景资源
-
-图片资源：https://github.com/smallprogram/OpenWrtAction/tree/main/source/img
-
-视频资源：https://github.com/smallprogram/OpenWrtAction/tree/main/source/vedio
 
 ## 具体功能组件相关截图：
 ![image](source/function.png)
