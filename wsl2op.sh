@@ -452,6 +452,8 @@ if [ ! -n "$isCreateNewConfig" ]; then
     then
         Compile_Firmware
     fi
+else
+    num=2
 fi
 
 
