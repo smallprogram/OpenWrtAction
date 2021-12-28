@@ -1,22 +1,15 @@
 #!/bin/bash
 # OP编译
-
-
-
 echo -e  "\033[34m 注意，请确保当前linux账户为非root账户，并且已经安装相关编译依赖 \033[0m"
 echo -e  "\033[34m 如果不符合上述条件，请ctrl+C退出 \033[0m"
-
-
 # 路由默认IP地址
 routeIP=10.10.0.253
 # 编译环境中当前账户名字
 userName=$USER
 # 默认OpenWrtAction的Config文件夹中的config文件名
 configName=x64.config
-
 # 默认lean源码文件夹名
 ledeDir=lede_$configName
-
 config_list=($(ls /home/$userName/OpenWrtAction/config))
 # 默认输入超时时间，单位为秒
 timer=15
@@ -37,17 +30,14 @@ log_make_defconfig_filename=Main3_make_defconfig-git_log.log
 log_make_down_filename=Main4_make_download-git_log.log
 log_Compile_filename=Main5_Compile-git_log.log
 log_Compile_time_filename=Main6_Compile_Time-git_log.log
-
 # defconfig操作之前的config文件名
 log_before_defconfig_config=.config_old
 # defconfig操作之后的config文件名
 log_after_defconfig_config=.config_new
 # 两个config的差异文件名
 log_diff_config=.config_diff
-
 #清理超过多少天的日志文件
 clean_day=3
-
 # 扩展luci插件地址
 luci_apps=(
     https://github.com/jerrykuku/luci-theme-argon.git
@@ -57,17 +47,14 @@ luci_apps=(
     # https://github.com/lisaac/luci-app-dockerman.git
     https://github.com/rufengsuixing/luci-app-adguardhome.git
 )
-
 # 将编译的固件提交到GitHubRelease
 # function UpdateFileToGithubRelease(){
 #     # 没思路
 # }
-
 # 检测代码更新函数
 # function CheckUpdate(){
 #     # todo 感觉没啥必要先不写了
 # }
-
 # 获取自定插件函数
 function Get_luci_apps(){
     for luci_app in "${luci_apps[@]}"; do
@@ -98,7 +85,6 @@ function Get_luci_apps(){
         fi
     done
 }
-
 # 编译函数
 function Compile_Firmware() {
 
@@ -250,7 +236,6 @@ function Compile_Firmware() {
     fi
     exit
 }
-
 # function timer(){
 #     seconds_left=5
 #     echo "等待${seconds_left}秒后，使用默认值继续……"
@@ -262,7 +247,6 @@ function Compile_Firmware() {
 #       echo -ne "\r     \r" #清除本行文字
 #     done
 # }
-
 # config文件夹的config文件列表函数
 function configList(){
     key=0
@@ -298,7 +282,6 @@ function configList(){
         fi
     fi
 }
-
 #清理日志文件夹函数
 function CleanLogFolder(){
     if [ -d "/home/${userName}/${log_folder_name}" ];
@@ -320,28 +303,66 @@ export GIT_SSL_NO_VERIFY=1
 CleanLogFolder
 sleep 2s
 
-echo
-echo -e "\033[31m 请输入默认OpenwrtAction中的config文件名，默认为$configName \033[0m"
+
+
+echo -e "\033[31m 是否创建新的编译配置，默认否，输入任意字符将创建新的配置 \033[0m"
 echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
-
-configList
-until [[ $configNameInp -ge 1 && $configNameInp -le $key ]]
-do
-    echo -e "\033[34m 你输入的 ${configNameInp} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m"
-    echo -e "\033[31m 请输入默认OpenwrtAction中的config文件名，默认为$configName \033[0m"
-    configList
-done
-
-
-echo -e "\033[31m 请输入默认lean源码文件夹名称,如果不输入默认$ledeDir,将在($timer秒后使用默认值) \033[0m"
-echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
-read -t $timer ledeDirInp
-if [ ! -n "$ledeDirInp" ]; then
-    echo -e  "\033[34m OK，使用默认值$ledeDir \033[0m"
+read -t $timer isCreateNewConfig
+if [ ! -n "$isCreateNewConfig" ]; then
+    echo -e  "\033[34m OK，不创建新的编译配置 \033[0m"
 else
-    echo -e  "\033[34m 使用 ${ledeDirInp} 作为lean源码文件夹名。 \033[0m"
-    ledeDir=$ledeDirInp
+    echo -e "\033[31m 请输入新的Config文件名，请以xxx.config命名，例如xiaomi3.config \033[0m"
+    read newConfigName
+    for conf in ${config_list[*]}; 
+    do 
+        if [[ $newConfigName = $conf ]]; then
+            newConfigName=''
+        fi
+    done
+    until [[ -n "$newConfigName" ]]
+    do
+        echo -e "\033[34m 你输入的值为空或者与现有config文件名重复,请重新输入！ \033[0m"
+        read  newConfigName
+        for conf in ${config_list[*]}; 
+        do 
+        if [[ $newConfigName = $conf ]]; then
+            newConfigName=''
+        fi
+        done
+    done
 fi
+
+
+
+if [ ! -n "$isCreateNewConfig" ]; then
+    echo
+    echo -e "\033[31m 请输入默认OpenwrtAction中的config文件名，默认为$configName \033[0m"
+    echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
+
+    configList
+    until [[ $configNameInp -ge 1 && $configNameInp -le $key ]]
+    do
+        echo -e "\033[34m 你输入的 ${configNameInp} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m"
+        echo -e "\033[31m 请输入默认OpenwrtAction中的config文件名，默认为$configName \033[0m"
+        configList
+    done
+
+    echo -e "\033[31m 请输入默认lean源码文件夹名称,如果不输入默认$ledeDir,将在($timer秒后使用默认值) \033[0m"
+    echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
+    read -t $timer ledeDirInp
+    if [ ! -n "$ledeDirInp" ]; then
+        echo -e  "\033[34m OK，使用默认值$ledeDir \033[0m"
+    else
+        echo -e  "\033[34m 使用 ${ledeDirInp} 作为lean源码文件夹名。 \033[0m"
+        ledeDir=$ledeDirInp
+    fi
+
+else
+    configName=$newConfigName
+fi
+
+
+
 
 
 echo
@@ -402,36 +423,36 @@ do
 done
 echo 
 
-
-echo -e "\033[31m 你接下来要干啥？？？ \033[0m"
-echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
-echo -e "\033[34m 1. 根据config自动编译固件。(默认) \033[0m"
-echo -e "\033[34m 2. 我要配置config，配置完毕后自动同步回OpenwrtAction。 \033[0m"
-read -t $timer num
-if [ ! -n "$num" ]; then
-        num=1
-        echo -e "\033[34m 使用默认值 \033[0m"
-fi
-# echo $num
-until [[ $num -ge 1 && $num -le 2 ]]
-do
-    echo -e "\033[34m 你输入的 ${num} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m"
+if [ ! -n "$isCreateNewConfig" ]; then
     echo -e "\033[31m 你接下来要干啥？？？ \033[0m"
     echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
     echo -e "\033[34m 1. 根据config自动编译固件。(默认) \033[0m"
     echo -e "\033[34m 2. 我要配置config，配置完毕后自动同步回OpenwrtAction。 \033[0m"
     read -t $timer num
     if [ ! -n "$num" ]; then
-        num=1
-        echo -e "\033[34m 使用默认值 \033[0m"
+            num=1
+            echo -e "\033[34m 使用默认值 \033[0m"
     fi
-done
+    # echo $num
+    until [[ $num -ge 1 && $num -le 2 ]]
+    do
+        echo -e "\033[34m 你输入的 ${num} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m"
+        echo -e "\033[31m 你接下来要干啥？？？ \033[0m"
+        echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
+        echo -e "\033[34m 1. 根据config自动编译固件。(默认) \033[0m"
+        echo -e "\033[34m 2. 我要配置config，配置完毕后自动同步回OpenwrtAction。 \033[0m"
+        read -t $timer num
+        if [ ! -n "$num" ]; then
+            num=1
+            echo -e "\033[34m 使用默认值 \033[0m"
+        fi
+    done
 
-if [[ $num == 1 ]]
-then
-    Compile_Firmware
+    if [[ $num == 1 ]]
+    then
+        Compile_Firmware
+    fi
 fi
-
 
 
 if [[ $num == 2 ]]
@@ -450,11 +471,13 @@ then
     sleep 1s
     ./scripts/feeds install -a 
 
-    echo
-    echo -e "\033[31m 开始将OpenwrtAction中config文件夹下的${configName}注入lean源码中.... \033[0m"
-    sleep 2s
-    echo
-    cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
+    if [ ! -n "$isCreateNewConfig" ]; then
+        echo
+        echo -e "\033[31m 开始将OpenwrtAction中config文件夹下的${configName}注入lean源码中.... \033[0m"
+        sleep 2s
+        echo
+        cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
+    fi
 
     cd /home/${userName}/${ledeDir}
     make menuconfig
