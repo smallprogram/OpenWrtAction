@@ -31,5 +31,5 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/le
 
 #恢复主机型号
 sed -i 's/(dmesg | grep .*/{a}${b}${c}${d}${e}${f}/g' package/lean/autocore/files/x86/autocore
-sed -i '32d' package/lean/autocore/files/x86/autocore
+sed -i '/h=${g}.*/d' package/lean/autocore/files/x86/autocore
 sed -i 's/echo $h/echo $g/g' package/lean/autocore/files/x86/autocore
