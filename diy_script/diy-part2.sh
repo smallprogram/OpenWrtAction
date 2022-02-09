@@ -33,7 +33,3 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/le
 sed -i 's/(dmesg | grep .*/{a}${b}${c}${d}${e}${f}/g' package/lean/autocore/files/x86/autocore
 sed -i '/h=${g}.*/d' package/lean/autocore/files/x86/autocore
 sed -i 's/echo $h/echo $g/g' package/lean/autocore/files/x86/autocore
-
-#临时
-rm -rf package/utils/ucode/
-svn co https://github.com/openwrt/openwrt/trunk/package/utils/ucode package/utils/ucode
