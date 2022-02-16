@@ -28,7 +28,7 @@ env:
   CONFIG_FILE: config/R2S.config
   DIY_P1_SH: diy_script/diy-part1.sh
   DIY_P2_SH: diy_script/diy-part2.sh
-  COMMIT_LOG_NUM: 2
+  COMMIT_LOG_NUM: 1
   RELEASE_TAG: R2S
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
@@ -206,14 +206,14 @@ jobs:
         echo "## Passwall Commit Top $COMMIT_LOG_NUM" >> release.txt
         git -C openwrt/feeds/passwall log -n $COMMIT_LOG_NUM >> release.txt
 
-        echo "## DockerMan Commit Top $COMMIT_LOG_NUM" >> release.txt
-        git -C openwrt/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> release.txt
+        # echo "## DockerMan Commit Top $COMMIT_LOG_NUM" >> release.txt
+        # git -C openwrt/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> release.txt
 
-        echo "## ThemeArgon Commit Top $COMMIT_LOG_NUM" >> release.txt
-        git -C openwrt/package/lean/luci-theme-argon log -n $COMMIT_LOG_NUM >> release.txt
+        # echo "## ThemeArgon Commit Top $COMMIT_LOG_NUM" >> release.txt
+        # git -C openwrt/package/lean/luci-theme-argon log -n $COMMIT_LOG_NUM >> release.txt
 
-        echo "## ArgonConfig Commit Top $COMMIT_LOG_NUM" >> release.txt
-        git -C openwrt/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> release.txt
+        # echo "## ArgonConfig Commit Top $COMMIT_LOG_NUM" >> release.txt
+        # git -C openwrt/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> release.txt
 
         touch release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
