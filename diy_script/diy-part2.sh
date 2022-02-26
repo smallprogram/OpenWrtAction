@@ -33,3 +33,7 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/le
 sed -i 's/(dmesg | grep .*/{a}${b}${c}${d}${e}${f}/g' package/lean/autocore/files/x86/autocore
 sed -i '/h=${g}.*/d' package/lean/autocore/files/x86/autocore
 sed -i 's/echo $h/echo $g/g' package/lean/autocore/files/x86/autocore
+
+#关闭串口跑码
+sed -i 's/console=tty0//g'  target/linux/x86/image/Makefile
+
