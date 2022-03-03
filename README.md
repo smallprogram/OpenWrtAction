@@ -48,7 +48,6 @@
 |Transmission|插件|下载器|lean code source|
 |Aria2|插件|下载器|lean code source|
 |qBittorrent|插件|下载器|lean code source|
-|aMule|插件|下载器|lean code source|
 |Aliyun-WebDav|插件|下载器|lean code source|
 |SSR Python Server|服务|SSR服务端|lean code source|
 |OpenVPN Server|服务|OpenVPN服务端|lean code source|
