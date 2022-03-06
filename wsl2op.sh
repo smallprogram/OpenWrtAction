@@ -72,7 +72,36 @@ LogMessage "\033[34m 如果不符合上述条件，请ctrl+C退出 \033[0m" "\03
 #     # todo 感觉没啥必要先不写了
 # }
 
+# DIY Script函数
+function DIY_Script(){
+    LogMessage "\033[31m 开始执行自定义设置脚本 \033[0m" "\033[31m Start executing the custom setup script \033[0m"
+    sleep 1s
+    # Modify default IP
+    LogMessage "\033[31m 设置路由默认地址为10.10.0.253 \033[0m" "\033[31m Set the route default address to 10.10.0.253 \033[0m"
+    sed -i "s/192.168.1.1/${routeIP}/g" /home/${userName}/${ledeDir}/package/base-files/files/bin/config_generate
+    sleep 1s
+    # Modify default passwd
+    LogMessage "\033[31m 设置路由默认密码为空 \033[0m" "\033[31m Set route default password to empty \033[0m"
+    sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' /home/${userName}/${ledeDir}/package/lean/default-settings/files/zzz-default-settings
+    sleep 1s
+    #恢复主机型号
+    LogMessage "\033[31m 恢复主机型号 \033[0m" "\033[31m Restoring the host model \033[0m"
+    sed -i 's/(dmesg | grep .*/{a}${b}${c}${d}${e}${f}/g' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
+    sed -i '/h=${g}.*/d' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
+    sed -i 's/echo $h/echo $g/g' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
+    sleep 1s
+    #关闭串口跑码
+    LogMessage "\033[31m 关闭串口跑码 \033[0m" "\033[31m Close serial port running code \033[0m"
+    sed -i 's/console=tty0//g'  /home/${userName}/${ledeDir}/target/linux/x86/image/Makefile
+    sleep 1s
+    # 注入patches
+    LogMessage "\033[31m 注入patches \033[0m" "\033[31m inject patches \033[0m"
+    cp -r /home/${userName}/OpenWrtAction/patches/651-rt2x00-driver-compile-with-kernel-5.15.patch /home/${userName}/${ledeDir}/package/kernel/mac80211/patches/rt2x00
+    sleep 1s
 
+    LogMessage "\033[31m DIY脚本执行完成 \033[0m" "\033[31m DIY script execution completed \033[0m"
+    sleep 2s
+}
 
 # 获取自定插件函数
 function Get_luci_apps(){
@@ -107,27 +136,8 @@ function Get_luci_apps(){
 }
 # 编译函数
 function Compile_Firmware() {
-    LogMessage "\033[31m 开始执行自定义设置脚本 \033[0m" "\033[31m Start executing the custom setup script \033[0m"
-    sleep 1s
-    # Modify default IP
-    LogMessage "\033[31m 设置路由默认地址为10.10.0.253 \033[0m" "\033[31m Set the route default address to 10.10.0.253 \033[0m"
-    sed -i 's/192.168.1.1/10.10.0.253/g' /home/${userName}/${ledeDir}/package/base-files/files/bin/config_generate
-    # Modify default passwd
-    LogMessage "\033[31m 设置路由默认密码为空 \033[0m" "\033[31m Set route default password to empty \033[0m"
-    sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' /home/${userName}/${ledeDir}/package/lean/default-settings/files/zzz-default-settings
-    #恢复主机型号
-    LogMessage "\033[31m 恢复主机型号 \033[0m" "\033[31m Restoring the host model \033[0m"
-    sed -i 's/(dmesg | grep .*/{a}${b}${c}${d}${e}${f}/g' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
-    sed -i '/h=${g}.*/d' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
-    sed -i 's/echo $h/echo $g/g' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
-    #关闭串口跑码
-    LogMessage "\033[31m 关闭串口跑码 \033[0m" "\033[31m Close serial port running code \033[0m"
-    sed -i 's/console=tty0//g'  /home/${userName}/${ledeDir}/target/linux/x86/image/Makefile
-    # 注入patches
-    LogMessage "\033[31m 注入patches \033[0m" "\033[31m inject patches \033[0m"
-    cp -r /home/${userName}/OpenWrtAction/patches/651-rt2x00-driver-compile-with-kernel-5.15.patch /home/${userName}/${ledeDir}/package/kernel/mac80211/patches/rt2x00
-    
-    
+
+    DIY_Script
     # CheckUpdate
 
     begin_date=开始时间$(date "+%Y-%m-%d-%H-%M-%S")
@@ -202,10 +212,6 @@ function Compile_Firmware() {
     #     make defconfig | tee -a /home/${userName}/${log_folder_name}/${folder_name}/Main1_make_defconfig-git_log.log
 
     # fi
-
-    LogMessage "\033[31m 正在修改源码中默认路由器IP地址为${routeIP} \033[0m" "\033[31m The default router IP address in the source code is being modified to ${routeIP} \033[0m"
-    sleep 2s
-    sed -i "s/192.168.1.1/${routeIP}/g" /home/${userName}/${ledeDir}/package/base-files/files/bin/config_generate
 
     LogMessage "\033[34m 开始执行make defconfig! \033[0m" "\033[34m Start to execute make defconfig! \033[0m"
     sleep 1s
