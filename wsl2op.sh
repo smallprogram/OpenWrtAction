@@ -124,6 +124,7 @@ function Compile_Firmware() {
     LogMessage "\033[31m 关闭串口跑码 \033[0m" "\033[31m Close serial port running code \033[0m"
     sed -i 's/console=tty0//g'  /home/${userName}/${ledeDir}/target/linux/x86/image/Makefile
     # 注入patches
+    LogMessage "\033[31m 注入patches \033[0m" "\033[31m inject patches \033[0m"
     cp -r /home/${userName}/OpenWrtAction/patches/651-rt2x00-driver-compile-with-kernel-5.15.patch /home/${userName}/${ledeDir}/package/kernel/mac80211/patches/rt2x00
     
     
