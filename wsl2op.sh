@@ -49,6 +49,21 @@ luci_apps=(
     # https://github.com/lisaac/luci-app-dockerman.git
     https://github.com/rufengsuixing/luci-app-adguardhome.git
 )
+
+# 默认语言中文，其他英文
+isChinese
+
+# 输出默认语言函数
+function LogMessage(){
+    if [ ! -n "$isChinese" ];then
+        echo -e "$1"
+    else
+        echo -e "$2"
+    fi
+}
+
+
+
 # 将编译的固件提交到GitHubRelease
 # function UpdateFileToGithubRelease(){
 #     # 没思路
@@ -57,6 +72,9 @@ luci_apps=(
 # function CheckUpdate(){
 #     # todo 感觉没啥必要先不写了
 # }
+
+
+
 # 获取自定插件函数
 function Get_luci_apps(){
     for luci_app in "${luci_apps[@]}"; do
@@ -90,29 +108,42 @@ function Get_luci_apps(){
 }
 # 编译函数
 function Compile_Firmware() {
-
+    LogMessage "\033[31m 开始执行自定义设置脚本 \033[0m" "\033[31m Start executing the custom setup script \033[0m"
+    sleep 1s
+    # Modify default IP
+    LogMessage "\033[31m 设置路由默认地址为10.10.0.253 \033[0m" "\033[31m Set the route default address to 10.10.0.253 \033[0m"
+    sed -i 's/192.168.1.1/10.10.0.253/g' /home/${userName}/${ledeDir}/package/base-files/files/bin/config_generate
+    # Modify default passwd
+    LogMessage "\033[31m 设置路由默认密码为空 \033[0m" "\033[31m Set route default password to empty \033[0m"
+    sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' /home/${userName}/${ledeDir}/package/lean/default-settings/files/zzz-default-settings
+    #恢复主机型号
+    LogMessage "\033[31m 恢复主机型号 \033[0m" "\033[31m Restoring the host model \033[0m"
+    sed -i 's/(dmesg | grep .*/{a}${b}${c}${d}${e}${f}/g' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
+    sed -i '/h=${g}.*/d' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
+    sed -i 's/echo $h/echo $g/g' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
+    #关闭串口跑码
+    LogMessage "\033[31m 关闭串口跑码 \033[0m" "\033[31m Close serial port running code \033[0m"
+    sed -i 's/console=tty0//g'  /home/${userName}/${ledeDir}/target/linux/x86/image/Makefile
+    # 注入patches
+    cp -r /home/${userName}/OpenWrtAction/patches/651-rt2x00-driver-compile-with-kernel-5.15.patch /home/${userName}/${ledeDir}/package/kernel/mac80211/patches/rt2x00
+    
+    
     # CheckUpdate
 
     begin_date=开始时间$(date "+%Y-%m-%d-%H-%M-%S")
     folder_name=log_Compile_${configName}_$(date "+%Y-%m-%d-%H-%M-%S")
-    echo -e "\033[31m 是否启用Clean编译，如果不输入任何值默认否，输入任意值启用Clean编译，Clean操作适用于大版本更新 \033[0m"
-    echo -e "\033[31m Whether to enable Clean compilation, if you do not enter any value, the default is No, enter any value to enable Clean compilation, Clean operation is suitable for major version updates \033[0m"
-    echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
-    echo -e  "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+    LogMessage "\033[31m 是否启用Clean编译，如果不输入任何值默认否，输入任意值启用Clean编译，Clean操作适用于大版本更新 \033[0m" "\033[31m Whether to enable Clean compilation, if you do not enter any value, the default is No, enter any value to enable Clean compilation, Clean operation is suitable for major version updates \033[0m"
+    LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
     read -t $timer isCleanCompile
     if [ ! -n "$isCleanCompile" ]; then
-        echo -e  "\033[34m OK，不执行make clean && make dirclean  \033[0m"
-        echo -e  "\033[34m OK, do not execute make clean && make dirclean  \033[0m"
+        LogMessage "\033[34m OK，不执行make clean && make dirclean  \033[0m" "\033[34m OK, do not execute make clean && make dirclean  \033[0m"
     else
-        echo -e  "\033[34m OK，配置为Clean编译。 \033[0m"
-        echo -e  "\033[34m OK, configure for Clean compilation. \033[0m"
-        echo -e  "\033[34m 准备开始编译 \033[0m"
-        echo -e  "\033[34m Ready to compile \033[0m"
+        LogMessage "\033[34m OK，配置为Clean编译。 \033[0m" "\033[34m OK, configure for Clean compilation. \033[0m"
+        LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
         sleep 1s
     fi
     
-    echo -e  "\033[34m 创建编译日志文件夹/home/${userName}/${log_folder_name}/${folder_name} \033[0m"
-    echo -e  "\033[34m Create compilation log folder /home/${userName}/${log_folder_name}/${folder_name} \033[0m"
+    LogMessage "\033[34m 创建编译日志文件夹/home/${userName}/${log_folder_name}/${folder_name} \033[0m" "\033[34m Create compilation log folder /home/${userName}/${log_folder_name}/${folder_name} \033[0m"
     sleep 1s
 
     if [ ! -d "/home/${userName}/${log_folder_name}" ];
@@ -130,11 +161,9 @@ function Compile_Firmware() {
     touch /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
     echo -e $begin_date > /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_time_filename}
 
-    echo -e  "\033[34m 编译日志文件夹创建成功 \033[0m"
-    echo -e  "\033[34m The compilation log folder was created successfully \033[0m"
+    LogMessage "\033[34m 编译日志文件夹创建成功 \033[0m" "\033[34m The compilation log folder was created successfully \033[0m"
     sleep 1s
-    echo -e  "\033[34m 开始编译！！ \033[0m"
-    echo -e  "\033[34m Start compiling! ! \033[0m"
+    LogMessage "\033[34m 开始编译！！ \033[0m" "\033[34m Start compiling! ! \033[0m"
     sleep 1s
 
 
@@ -144,25 +173,21 @@ function Compile_Firmware() {
         make dirclean
     fi
     echo
-    echo -e "\033[31m 开始将OpenwrtAction中的自定义feeds注入lean源码中.... \033[0m"
-    echo -e "\033[31m Started injecting custom feeds in OpenwrtAction into lean source code... \033[0m"
+    LogMessage "\033[31m 开始将OpenwrtAction中的自定义feeds注入lean源码中.... \033[0m" "\033[31m Started injecting custom feeds in OpenwrtAction into lean source code... \033[0m"
     sleep 2s
     echo
     cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default > /home/${userName}/${ledeDir}/feeds.conf.default
 
 
-    echo -e "\033[31m 开始update feeds.... \033[0m"
-    echo -e "\033[31m begin update feeds.... \033[0m"
+    LogMessage "\033[31m 开始update feeds.... \033[0m" "\033[31m begin update feeds.... \033[0m"
     sleep 1s
     ./scripts/feeds update -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_update_filename}
-    echo -e "\033[31m 开始install feeds.... \033[0m"
-    echo -e "\033[31m begin install feeds.... \033[0m"
+    LogMessage "\033[31m 开始install feeds.... \033[0m" "\033[31m begin install feeds.... \033[0m"
     sleep 1s
     ./scripts/feeds install -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_install_filename}
 
     echo
-    echo -e "\033[31m 开始将OpenwrtAction中config文件夹下的${configName}注入lean源码中.... \033[0m"
-    echo -e "\033[31m Start to inject ${configName} under the config folder in OpenwrtAction into lean source code... \033[0m"
+    LogMessage "\033[31m 开始将OpenwrtAction中config文件夹下的${configName}注入lean源码中.... \033[0m" "\033[31m Start to inject ${configName} under the config folder in OpenwrtAction into lean source code... \033[0m"
     sleep 2s
     echo
     cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
@@ -178,97 +203,85 @@ function Compile_Firmware() {
 
     # fi
 
-    echo -e "\033[31m 正在修改源码中默认路由器IP地址为${routeIP} \033[0m"
-    echo -e "\033[31m The default router IP address in the source code is being modified to ${routeIP} \033[0m"
+    LogMessage "\033[31m 正在修改源码中默认路由器IP地址为${routeIP} \033[0m" "\033[31m The default router IP address in the source code is being modified to ${routeIP} \033[0m"
     sleep 2s
     sed -i "s/192.168.1.1/${routeIP}/g" /home/${userName}/${ledeDir}/package/base-files/files/bin/config_generate
 
-    echo -e  "\033[34m 开始执行make defconfig! \033[0m"
-    echo -e  "\033[34m Start to execute make defconfig! \033[0m"
+    LogMessage "\033[34m 开始执行make defconfig! \033[0m" "\033[34m Start to execute make defconfig! \033[0m"
     sleep 1s
     make defconfig | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_make_defconfig_filename}
     cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/${log_after_defconfig_config}
 
     diff  /home/${userName}/${log_folder_name}/${folder_name}/${log_before_defconfig_config} /home/${userName}/${log_folder_name}/${folder_name}/${log_after_defconfig_config} -y -W 200 > /home/${userName}/${log_folder_name}/${folder_name}/${log_diff_config}
 
-    echo -e  "\033[34m 开始执行make download! \033[0m"
-    echo -e  "\033[34m Start to execute make download! \033[0m"
+    LogMessage "\033[34m 开始执行make download! \033[0m" "\033[34m Start to execute make download! \033[0m"
     sleep 1s
     make -j8 download V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_make_down_filename}
 
-    echo -e  "\033[34m 开始执行make编译! \033[0m"
-    echo -e  "\033[34m Start to execute make compilation! \033[0m"
+    LogMessage "\033[34m 开始执行make编译! \033[0m" "\033[34m Start to execute make compilation! \033[0m"
     sleep 1s
     if [[ $sysenv == 1 ]]
     then
-        echo -e "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m"
-        echo -e "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
-        echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
-        echo -e  "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+        LogMessage "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m" "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
+        LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
         read -t $timer isSingleCompile
         if [ ! -n "$isSingleCompile" ]; then
-            echo -e  "\033[34m OK，不执行单线程编译  \033[0m"
-            echo -e  "\033[34m OK, do not perform single-threaded compilation  \033[0m"
+            LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
             PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
         else
-            echo -e  "\033[34m OK，执行单线程编译。 \033[0m"
-            echo -e  "\033[34m OK, execute single-threaded compilation. \033[0m"
-            echo -e  "\033[34m 准备开始编译 \033[0m"
-            echo -e  "\033[34m Ready to compile \033[0m"
+            LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
+            LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
             sleep 1s
             PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
         fi
         
     else
-        echo -e "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m"
-        echo -e "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
-        echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
-        echo -e  "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+        LogMessage "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m" "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
+        LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
         read -t $timer isSingleCompile
         if [ ! -n "$isSingleCompile" ]; then
-            echo -e  "\033[34m OK，不执行单线程编译  \033[0m"
-            echo -e  "\033[34m OK, do not perform single-threaded compilation  \033[0m"
+            LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
             make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
         else
-            echo -e  "\033[34m OK，执行单线程编译。 \033[0m"
-            echo -e  "\033[34m OK, execute single-threaded compilation. \033[0m"
-            echo -e  "\033[34m 准备开始编译 \033[0m"
-            echo -e  "\033[34m Ready to compile \033[0m"
+            LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
+            LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
             sleep 1s
             make -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
         fi
         # $PATH
     fi
 
-    echo -e  "\033[34m make编译结束! \033[0m"
-    echo -e  "\033[34m Make compilation is over! \033[0m"
+    LogMessage "\033[34m make编译结束! \033[0m" "\033[34m Make compilation is over! \033[0m"
     sleep 1s
-
+    
     end_date=结束时间$(date "+%Y-%m-%d-%H-%M-%S")
     echo -e $end_date >> /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_time_filename}
 
     ######是否提交编译结果到github Release
     # UpdateFileToGithubRelease
 
-    echo -e "\033[31m 是否拷贝编译固件到${log_folder_name}/${folder_name}下？不输入默认不拷贝，输入任意值拷贝 \033[0m"
-    echo -e "\033[31m Do you want to copy and compile the firmware to ${log_folder_name}/${folder_name}? Don’t copy by default, input any value to copy \033[0m"
-    echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
-    echo -e  "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+
+
+    LogMessage "\033[31m 是否拷贝编译固件到${log_folder_name}/${folder_name}下？不输入默认不拷贝，输入任意值拷贝 \033[0m" "\033[31m Do you want to copy and compile the firmware to ${log_folder_name}/${folder_name}? Don’t copy by default, input any value to copy \033[0m"
+    LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
     read -t $timer iscopy
     if [ ! -n "$iscopy" ]; then
-        echo -e  "\033[34m OK，不拷贝 \033[0m"
-        echo -e  "\033[34m OK, don't copy \033[0m"
+        LogMessage "\033[34m OK，不拷贝 \033[0m" "\033[34m OK, don't copy \033[0m"
     else
-        echo -e  "\033[34m 开始拷贝 \033[0m"
-        echo -e  "\033[34m Start copying \033[0m"
+        LogMessage "\033[34m 开始拷贝 \033[0m" "\033[34m Start copying \033[0m"
         cp -r /home/${userName}/${ledeDir}/bin/targets /home/${userName}/${log_folder_name}/${folder_name}
-        echo -e  "\033[34m 拷贝完成 \033[0m"
-        echo -e  "\033[34m Copy completed \033[0m"
+        LogMessage "\033[34m 拷贝完成 \033[0m" "\033[34m Copy completed \033[0m"
     fi
+
+    # 将lede还原
+    LogMessage "\033[34m 将lede源码还原到最后的hash状态! \033[0m" "\033[34m Restore the lede source code to the last hash state \033[0m"
+    git --git-dir=/home/${userName}/${ledeDir}/.git --work-tree=/home/${userName}/${ledeDir} checkout master
+    git --git-dir=/home/${userName}/${ledeDir}/.git --work-tree=/home/${userName}/${ledeDir} clean -xdf
+    
     exit
 }
 # function timer(){
@@ -307,8 +320,7 @@ function configList(){
         done
         configNameInp=$i
         # echo "145 configNameInp的值："$configNameInp
-        echo -e "\033[34m 输入超时使用默认值$configName \033[0m"
-        echo -e "\033[34m Use the default value $configName for input timeout \033[0m"
+        LogMessage "\033[34m 输入超时使用默认值$configName \033[0m" "\033[34m Use the default value $configName for input timeout \033[0m"
     else 
         if [[ $configNameInp -ge 1 && $configNameInp -le $key ]]; then
             configName=${config_list[$(($configNameInp-1))]}
@@ -322,19 +334,15 @@ function configList(){
 function CleanLogFolder(){
     if [ -d "/home/${userName}/${log_folder_name}" ];
     then
-        echo -e "\033[31m 是否清理存储超过$clean_day天的日志文件，默认删除，如果录入任意值不删除 \033[0m"
-        echo -e "\033[31m Whether to clean up the log files stored for more than $clean_day days, delete by default, if you enter any value, it will not be deleted \033[0m"
-        echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
-        echo -e  "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+        LogMessage "\033[31m 是否清理存储超过$clean_day天的日志文件，默认删除，如果录入任意值不删除 \033[0m" "\033[31m Whether to clean up the log files stored for more than $clean_day days, delete by default, if you enter any value, it will not be deleted \033[0m"
+        LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
         read -t $timer isclean
         if [ ! -n "$isclean" ]; then
             cd /home/${userName}/${log_folder_name}
             find -mtime +$clean_day | xargs rm -rf
-            echo -e  "\033[31m 清理成功 \033[0m"
-            echo -e  "\033[31m Cleaned up successfully \033[0m"
+            LogMessage "\033[31m 清理成功 \033[0m" "\033[31m Cleaned up successfully \033[0m"
         else
-            echo -e  "\033[34m OK，不清理超过$clean_day天的日志文件 \033[0m"
-            echo -e  "\033[34m OK, do not clean up log files older than $clean_day \033[0m"
+            LogMessage "\033[34m OK，不清理超过$clean_day天的日志文件 \033[0m" "\033[34m OK, do not clean up log files older than $clean_day \033[0m"
         fi
     fi
 }
@@ -343,19 +351,19 @@ export GIT_SSL_NO_VERIFY=1
 CleanLogFolder
 sleep 2s
 
+echo -e "\033[31m 请选择默认语言，输入任意字符为英文，不输入默认中文 \033[0m"
+read -t $timer isChinese
 
 
-echo -e "\033[31m 是否创建新的编译配置，默认否，输入任意字符将创建新的配置 \033[0m"
-echo -e "\033[31m Whether to create a new compilation configuration, the default is no, input any character will create a new configuration \033[0m"
-echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
-echo -e  "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+
+
+LogMessage "\033[31m 是否创建新的编译配置，默认否，输入任意字符将创建新的配置 \033[0m" "\033[31m Whether to create a new compilation configuration, the default is no, input any character will create a new configuration \033[0m"
+LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
 read -t $timer isCreateNewConfig
 if [ ! -n "$isCreateNewConfig" ]; then
-    echo -e  "\033[34m OK，不创建新的编译配置 \033[0m"
-    echo -e  "\033[34m OK, do not create a new compilation configuration \033[0m"
+    LogMessage "\033[34m OK，不创建新的编译配置 \033[0m" "\033[34m OK, do not create a new compilation configuration \033[0m"
 else
-    echo -e "\033[31m 请输入新的Config文件名，请以xxx.config命名，例如xiaomi3.config \033[0m"
-    echo -e "\033[31m Please enter the new Config file name, please name it after xxx.config, for example xiaomi3.config \033[0m"
+    LogMessage "\033[31m 请输入新的Config文件名，请以xxx.config命名，例如xiaomi3.config \033[0m" "\033[31m Please enter the new Config file name, please name it after xxx.config, for example xiaomi3.config \033[0m"
     read newConfigName
     for conf in ${config_list[*]}; 
     do 
@@ -365,8 +373,7 @@ else
     done
     until [[ -n "$newConfigName" ]]
     do
-        echo -e "\033[34m 你输入的值为空或者与现有config文件名重复,请重新输入！ \033[0m"
-        echo -e "\033[34m The value you entered is empty or duplicates the name of the existing config file, please re-enter! \033[0m"
+        LogMessage "\033[34m 你输入的值为空或者与现有config文件名重复,请重新输入！ \033[0m" "\033[34m The value you entered is empty or duplicates the name of the existing config file, please re-enter! \033[0m"
         read  newConfigName
         for conf in ${config_list[*]}; 
         do 
@@ -381,32 +388,24 @@ fi
 
 if [ ! -n "$isCreateNewConfig" ]; then
     echo
-    echo -e "\033[31m 请输入默认OpenwrtAction中的config文件名，默认为$configName \033[0m"
-    echo -e "\033[31m Please enter the config file name in the default OpenwrtAction, the default is $configName \033[0m"
-    echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
-    echo -e  "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
-
+    LogMessage "\033[31m 请输入默认OpenwrtAction中的config文件名，默认为$configName \033[0m" "\033[31m Please enter the config file name in the default OpenwrtAction, the default is $configName \033[0m"
+    LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
     configList
     until [[ $configNameInp -ge 1 && $configNameInp -le $key ]]
     do
-        echo -e "\033[34m 你输入的 ${configNameInp} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m"
-        echo -e "\033[34m What is the function of the ${configNameInp} you entered? Just take a good look at the serial number and just enter the value. \033[0m"
-        echo -e "\033[31m 请输入默认OpenwrtAction中的config文件名，默认为$configName \033[0m"
-        echo -e "\033[31m Please enter the config file name in the default OpenwrtAction, the default is $configName \033[0m"
+        LogMessage "\033[34m 你输入的 ${configNameInp} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m" "\033[34m What is the function of the ${configNameInp} you entered? Just take a good look at the serial number and just enter the value. \033[0m"
+        LogMessage "\033[31m 请输入默认OpenwrtAction中的config文件名，默认为$configName \033[0m" "\033[31m Please enter the config file name in the default OpenwrtAction, the default is $configName \033[0m"
         configList
     done
 
-    echo -e "\033[31m 请输入默认lean源码文件夹名称,如果不输入默认$ledeDir,将在($timer秒后使用默认值) \033[0m"
-    echo -e "\033[31m Please enter the default lean source folder name, if you do not enter the default $ledeDir, the default value will be used after ($timer seconds) \033[0m"
-    echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
-    echo -e  "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+    LogMessage "\033[31m 请输入默认lean源码文件夹名称,如果不输入默认$ledeDir,将在($timer秒后使用默认值) \033[0m" "\033[31m Please enter the default lean source folder name, if you do not enter the default $ledeDir, the default value will be used after ($timer seconds) \033[0m"
+    LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
     read -t $timer ledeDirInp
     if [ ! -n "$ledeDirInp" ]; then
-        echo -e  "\033[34m OK，使用默认值$ledeDir \033[0m"
-        echo -e  "\033[34m OK, use the default value $ledeDir \033[0m"
+        LogMessage "\033[34m OK，使用默认值$ledeDir \033[0m" "\033[34m OK, use the default value $ledeDir \033[0m"
     else
-        echo -e  "\033[34m 使用 ${ledeDirInp} 作为lean源码文件夹名。 \033[0m"
-        echo -e  "\033[34m Use ${ledeDirInp} as the lean source folder name. \033[0m"
+        LogMessage "\033[34m 使用 ${ledeDirInp} 作为lean源码文件夹名。 \033[0m" "\033[34m Use ${ledeDirInp} as the lean source folder name. \033[0m"
+        echo -e  
         ledeDir=$ledeDirInp
     fi
 
@@ -419,8 +418,7 @@ fi
 
 
 echo
-echo -e "\033[31m 开始同步lean源码.... \033[0m"
-echo -e "\033[31m Start to synchronize lean source code... \033[0m"
+LogMessage "\033[31m 开始同步lean源码.... \033[0m" "\033[31m Start to synchronize lean source code... \033[0m"
 sleep 2s
 
 cd /home/${userName}
@@ -450,69 +448,55 @@ Get_luci_apps
 
 
 echo 
-echo -e "\033[31m 准备就绪，请按照导航选择操作.... \033[0m"
-echo -e "\033[31m Ready, please follow the navigation options... \033[0m"
+LogMessage "\033[31m 准备就绪，请按照导航选择操作.... \033[0m" "\033[31m Ready, please follow the navigation options... \033[0m"
 sleep 2s
 
 
-echo -e "\033[31m 你的编译环境是WSL2吗？ \033[0m"
-echo -e "\033[31m Is your compilation environment WSL2? \033[0m"
-echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
-echo -e  "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
-echo -e "\033[34m 1. 是(默认) Yes (default) \033[0m"
-echo -e "\033[34m 2. 不是 NO \033[0m"
+LogMessage "\033[31m 你的编译环境是WSL2吗？ \033[0m" "\033[31m Is your compilation environment WSL2? \033[0m"
+LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+LogMessage "\033[34m 1. 是(默认) Yes (default) \033[0m" 
+LogMessage "\033[34m 2. 不是 NO \033[0m"
 read -t $timer sysenv
 if [ ! -n "$sysenv" ]; then
         sysenv=1
-        echo -e "\033[34m 输入超时使用默认值 \033[0m"
-        echo -e "\033[34m Use default value for input timeout \033[0m"
+        LogMessage "\033[34m 输入超时使用默认值 \033[0m" "\033[34m Use default value for input timeout \033[0m"
 fi
 until [[ $sysenv -ge 1 && $sysenv -le 2 ]]
 do
-    echo -e  "\033[34m 你输入的 ${sysenv} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m"
-    echo -e  "\033[34m What is the function of the ${sysenv} you entered? Just enter the value after taking a good look at the serial number. \033[0m"
-    echo -e "\033[31m 你的编译环境是WSL2吗？ \033[0m"
-    echo -e "\033[31m Is your compilation environment WSL2? \033[0m"
-    echo -e "\033[34m 1. 是(默认) Yes (default) \033[0m"
-    echo -e "\033[34m 2. 不是 NO \033[0m"
+    LogMessage "\033[34m 你输入的 ${sysenv} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m" "\033[34m What is the function of the ${sysenv} you entered? Just enter the value after taking a good look at the serial number. \033[0m"
+    LogMessage "\033[31m 你的编译环境是WSL2吗？ \033[0m" "\033[31m Is your compilation environment WSL2? \033[0m"
+    LogMessage "\033[34m 1. 是(默认) Yes (default) \033[0m"
+    LogMessage "\033[34m 2. 不是 NO \033[0m"
     read -t $timer sysenv
     if [ ! -n "$sysenv" ]; then
         sysenv=1
-        echo -e "\033[34m 使用默认值 \033[0m"
-        echo -e "\033[34m Use default \033[0m"
+        LogMessage "\033[34m 使用默认值 \033[0m" "\033[34m Use default \033[0m"
     fi
 done
 echo 
 
 if [ ! -n "$isCreateNewConfig" ]; then
-    echo -e "\033[31m 你接下来要干啥？？？ \033[0m"
-    echo -e "\033[31m What are you going to do next? ? ? \033[0m"
-    echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
-    echo -e  "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
-    echo -e "\033[34m 1. 根据config自动编译固件。(默认)  Automatically compile the firmware according to config. (default) \033[0m"
-    echo -e "\033[34m 2. 我要配置config，配置完毕后自动同步回OpenwrtAction。 I want to configure config, and automatically synchronize back to OpenwrtAction after configuration. \033[0m"
+    LogMessage "\033[31m 你接下来要干啥？？？ \033[0m" "\033[31m What are you going to do next? ? ? \033[0m"
+    LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+    LogMessage "\033[34m 1. 根据config自动编译固件。(默认) \033[0m" "\033[34m 1. Automatically compile the firmware according to config. (default)  \033[0m"
+    LogMessage "\033[34m 2. 我要配置config，配置完毕后自动同步回OpenwrtAction。 \033[0m" "\033[34m 2. I want to configure config, and automatically synchronize back to OpenwrtAction after configuration. \033[0m"
     read -t $timer num
     if [ ! -n "$num" ]; then
             num=1
-            echo -e "\033[34m 使用默认值 \033[0m"
-            echo -e "\033[34m Use default \033[0m"
+            LogMessage "\033[34m 使用默认值 \033[0m" "\033[34m Use default \033[0m"
     fi
     # echo $num
     until [[ $num -ge 1 && $num -le 2 ]]
     do
-        echo -e "\033[34m 你输入的 ${num} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m"
-        echo -e "\033[34m What is the function of the ${num} you entered? Just enter the number after you are optimistic about the serial number. \033[0m"
-        echo -e "\033[31m 你接下来要干啥？？？ \033[0m"
-        echo -e "\033[31m What are you going to do next? ? ? \033[0m"
-        echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
-        echo -e  "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
-        echo -e "\033[34m 1. 根据config自动编译固件。(默认)  Automatically compile the firmware according to config. (default) \033[0m"
-        echo -e "\033[34m 2. 我要配置config，配置完毕后自动同步回OpenwrtAction。 I want to configure config, and automatically synchronize back to OpenwrtAction after configuration. \033[0m"
+        LogMessage "\033[34m 你输入的 ${num} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m" "\033[34m What is the function of the ${num} you entered? Just enter the number after you are optimistic about the serial number. \033[0m"
+        LogMessage "\033[31m 你接下来要干啥？？？ \033[0m" "\033[31m What are you going to do next? ? ? \033[0m"
+        LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+        LogMessage "\033[34m 1. 根据config自动编译固件。(默认) \033[0m" "\033[34m 1.Automatically compile the firmware according to config. (default) \033[0m"
+        LogMessage "\033[34m 2. 我要配置config，配置完毕后自动同步回OpenwrtAction。 \033[0m" "\033[34m 2.I want to configure config, and automatically synchronize back to OpenwrtAction after configuration. \033[0m"
         read -t $timer num
         if [ ! -n "$num" ]; then
             num=1
-            echo -e "\033[34m 使用默认值 \033[0m"
-            echo -e "\033[34m Use default \033[0m"
+            LogMessage "\033[34m 使用默认值 \033[0m" "\033[34m Use default \033[0m"
         fi
     done
 
@@ -528,26 +512,22 @@ fi
 if [[ $num == 2 ]]
 then
     echo
-    echo -e "\033[31m 开始将OpenwrtAction中的自定义feeds注入lean源码中.... \033[0m"
-    echo -e "\033[31m Started injecting custom feeds in OpenwrtAction into lean source code... \033[0m"
+    LogMessage "\033[31m 开始将OpenwrtAction中的自定义feeds注入lean源码中.... \033[0m" "\033[31m Started injecting custom feeds in OpenwrtAction into lean source code... \033[0m"
     sleep 2s
     echo
     cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default > /home/${userName}/${ledeDir}/feeds.conf.default
 
     cd /home/${userName}/${ledeDir}
-    echo -e "\033[31m 开始update feeds.... \033[0m"
-    echo -e "\033[31m begin update feeds.... \033[0m"
+    LogMessage "\033[31m 开始update feeds.... \033[0m" "\033[31m begin update feeds.... \033[0m"
     sleep 1s
     ./scripts/feeds update -a 
-    echo -e "\033[31m 开始install feeds.... \033[0m"
-    echo -e "\033[31m begin install feeds.... \033[0m"
+    LogMessage "\033[31m 开始install feeds.... \033[0m" "\033[31m begin install feeds.... \033[0m"
     sleep 1s
     ./scripts/feeds install -a 
 
     if [ ! -n "$isCreateNewConfig" ]; then
         echo
-        echo -e "\033[31m 开始将OpenwrtAction中config文件夹下的${configName}注入lean源码中.... \033[0m"
-        echo -e "\033[31m Start to inject ${configName} under the config folder in OpenwrtAction into lean source code... \033[0m"
+        LogMessage "\033[31m 开始将OpenwrtAction中config文件夹下的${configName}注入lean源码中.... \033[0m" "\033[31m Start to inject ${configName} under the config folder in OpenwrtAction into lean source code... \033[0m"
         sleep 2s
         echo
         cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
@@ -559,26 +539,22 @@ then
     cd /home/${userName}/OpenWrtAction
     
     if [ ! -n "$(git config --global user.email)" ]; then
-        echo "请输入git Global user.email:"
-        echo "Please enter git Global user.email:"
+        LogMessage "请输入git Global user.email:" "Please enter git Global user.email:"
         read  gitUserEmail
         until [[ -n "$gitUserEmail" ]]
         do
-            echo -e "\033[34m 不能输入空值 \033[0m"
-            echo -e "\033[34m Cannot enter a null value \033[0m"
+            LogMessage "\033[34m 不能输入空值 \033[0m" "\033[34m Cannot enter a null value \033[0m"
             read  gitUserEmail
         done
         git config --global user.email "$gitUserEmail"
     fi
 
     if [ ! -n "$(git config --global user.name)" ]; then
-        echo "请输入git Global user.name:"
-        echo "Please enter git Global user.name:"
+        LogMessage "请输入git Global user.name:" "Please enter git Global user.name:"
         read  gitUserName
         until [[ -n "$gitUserName" ]]
         do
-            echo -e "\033[34m 不能输入空值 \033[0m"
-            echo -e "\033[34m Cannot enter a null value \033[0m"
+            LogMessage "\033[34m 不能输入空值 \033[0m" "\033[34m Cannot enter a null value \033[0m"
             read  gitUserName
         done
         git config --global user.email "$gitUserName"
@@ -589,36 +565,29 @@ then
         git add .
         git commit -m "update $configName from local bash"
         git push origin
-        echo -e "\033[31m 已将新配置的config同步回OpenwrtAction \033[0m"
-        echo -e "\033[31m The newly configured config has been synchronized back to OpenwrtAction \033[0m"
+        LogMessage "\033[31m 已将新配置的config同步回OpenwrtAction \033[0m" "\033[31m The newly configured config has been synchronized back to OpenwrtAction \033[0m"
         sleep 2s
     fi
 
-    echo -e "\033[31m 是否根据新的config编译？ \033[0m"
-    echo -e "\033[31m Is it compiled according to the new config? \033[0m"
-    echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
-    echo -e  "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
-    echo -e "\033[34m 1. 是(默认值) Yes(Default) \033[0m"
-    echo -e "\033[34m 2. 不编译了。退出  NO, Exit \033[0m"
+    LogMessage "\033[31m 是否根据新的config编译？ \033[0m" "\033[31m Is it compiled according to the new config? \033[0m"
+    LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+    LogMessage "\033[34m 1. 是(默认值) \033[0m" "\033[34m 1.Yes(Default) \033[0m"
+    LogMessage "\033[34m 2. 不编译了。退出 \033[0m" "\033[34m 2.NO, Exit \033[0m"
     read -t $timer num_continue
     if [ ! -n "$num_continue" ]; then
         num_continue=1
     fi
     until [[ $num_continue -ge 1 && $num_continue -le 2 ]]
     do
-        echo -e "\033[34m 你输入的 ${num_continue} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m"
-        echo -e "\033[34m What's the answer for the ${num_continue} you entered? Just enter the number after you are optimistic about the serial number. \033[0m"
-        echo -e "\033[31m 是否根据新的config编译？ \033[0m"
-        echo -e "\033[31m Is it compiled according to the new config? \033[0m"
-        echo -e  "\033[31m 将会在$timer秒后自动选择默认值 \033[0m"
-        echo -e  "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
-        echo -e "\033[34m 1. 是(默认值) Yes(Default) \033[0m"
-        echo -e "\033[34m 2. 不编译了。退出  NO, Exit \033[0m"
+        LogMessage "\033[34m 你输入的 ${num_continue} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m" "\033[34m What's the answer for the ${num_continue} you entered? Just enter the number after you are optimistic about the serial number. \033[0m"
+        LogMessage "\033[31m 是否根据新的config编译？ \033[0m" "\033[31m Is it compiled according to the new config? \033[0m"
+        LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+        LogMessage "\033[34m 1. 是(默认值) \033[0m" "\033[34m 1. Yes(Default) \033[0m"
+        LogMessage "\033[34m 2. 不编译了。退出  NO, Exit \033[0m" "\033[34m 2.NO, Exit \033[0m"
         read -t $timer num_continue
             if [ ! -n "$num_continue" ]; then
                 num_continue=1
-                echo -e "\033[34m 使用默认值 \033[0m"
-                echo -e "\033[34m Use default \033[0m"
+                LogMessage "\033[34m 使用默认值 \033[0m" "\033[34m Use default \033[0m"
             fi
     done
     
