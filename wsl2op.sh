@@ -98,6 +98,10 @@ function DIY_Script(){
     LogMessage "\033[31m 注入patches \033[0m" "\033[31m inject patches \033[0m"
     cp -r /home/${userName}/OpenWrtAction/patches/651-rt2x00-driver-compile-with-kernel-5.15.patch /home/${userName}/${ledeDir}/package/kernel/mac80211/patches/rt2x00
     sleep 1s
+    # 注入dl
+    LogMessage "\033[31m 注入dl \033[0m" "\033[31m inject dl \033[0m"
+    cp -r /home/${userName}/OpenWrtAction/library/* /home/${userName}/${ledeDir}/dl
+    sleep 1s
 
     LogMessage "\033[31m DIY脚本执行完成 \033[0m" "\033[31m DIY script execution completed \033[0m"
     sleep 2s
@@ -137,7 +141,7 @@ function Get_luci_apps(){
 # 编译函数
 function Compile_Firmware() {
 
-    DIY_Script
+    
     # CheckUpdate
 
     begin_date=开始时间$(date "+%Y-%m-%d-%H-%M-%S")
@@ -223,6 +227,8 @@ function Compile_Firmware() {
     LogMessage "\033[34m 开始执行make download! \033[0m" "\033[34m Start to execute make download! \033[0m"
     sleep 1s
     make -j8 download V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_make_down_filename}
+
+    DIY_Script
 
     LogMessage "\033[34m 开始执行make编译! \033[0m" "\033[34m Start to execute make compilation! \033[0m"
     sleep 1s
