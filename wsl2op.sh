@@ -1,9 +1,6 @@
 #!/bin/bash
 # OP编译
-echo -e  "\033[34m 注意，请确保当前linux账户为非root账户，并且已经安装相关编译依赖 \033[0m"
-echo -e  "\033[34m Note, please make sure that the current linux account is a non-root account, and the relevant compilation dependencies have been installed \033[0m"
-echo -e  "\033[34m 如果不符合上述条件，请ctrl+C退出 \033[0m"
-echo -e  "\033[34m If the above conditions are not met, please ctrl+C to exit \033[0m"
+
 # 路由默认IP地址
 routeIP=10.10.0.253
 # 编译环境中当前账户名字
@@ -51,7 +48,8 @@ luci_apps=(
 )
 
 # 默认语言中文，其他英文
-isChinese
+echo -e "\033[31m 请选择默认语言，输入任意字符为英文，不输入默认中文 \033[0m"
+read -t $timer isChinese
 
 # 输出默认语言函数
 function LogMessage(){
@@ -62,7 +60,8 @@ function LogMessage(){
     fi
 }
 
-
+LogMessage "\033[34m 注意，请确保当前linux账户为非root账户，并且已经安装相关编译依赖 \033[0m" "\033[34m Note, please make sure that the current linux account is a non-root account, and the relevant compilation dependencies have been installed \033[0m"
+LogMessage "\033[34m 如果不符合上述条件，请ctrl+C退出 \033[0m" "\033[34m If the above conditions are not met, please ctrl+C to exit \033[0m"
 
 # 将编译的固件提交到GitHubRelease
 # function UpdateFileToGithubRelease(){
@@ -281,7 +280,7 @@ function Compile_Firmware() {
     LogMessage "\033[34m 将lede源码还原到最后的hash状态! \033[0m" "\033[34m Restore the lede source code to the last hash state \033[0m"
     git --git-dir=/home/${userName}/${ledeDir}/.git --work-tree=/home/${userName}/${ledeDir} checkout master
     git --git-dir=/home/${userName}/${ledeDir}/.git --work-tree=/home/${userName}/${ledeDir} clean -xdf
-    
+
     exit
 }
 # function timer(){
@@ -350,12 +349,6 @@ function CleanLogFolder(){
 export GIT_SSL_NO_VERIFY=1
 CleanLogFolder
 sleep 2s
-
-echo -e "\033[31m 请选择默认语言，输入任意字符为英文，不输入默认中文 \033[0m"
-read -t $timer isChinese
-
-
-
 
 LogMessage "\033[31m 是否创建新的编译配置，默认否，输入任意字符将创建新的配置 \033[0m" "\033[31m Whether to create a new compilation configuration, the default is no, input any character will create a new configuration \033[0m"
 LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
