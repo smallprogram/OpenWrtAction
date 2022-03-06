@@ -37,3 +37,7 @@ sed -i 's/echo $h/echo $g/g' package/lean/autocore/files/x86/autocore
 #关闭串口跑码
 sed -i 's/console=tty0//g'  target/linux/x86/image/Makefile
 
+
+#修复一些问题
+## 修复mac80211编译报错
+cp -r $GITHUB_WORKSPACE/patches/651-rt2x00-driver-compile-with-kernel-5.15.patch $GITHUB_WORKSPACE/openwrt/package/kernel/mac80211/patches/rt2x00
