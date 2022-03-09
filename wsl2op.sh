@@ -475,8 +475,8 @@ sleep 2s
 
 LogMessage "\033[31m 你的编译环境是WSL2吗？ \033[0m" "\033[31m Is your compilation environment WSL2? \033[0m"
 LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
-LogMessage "\033[34m 1. 是(默认) Yes (default) \033[0m" 
-LogMessage "\033[34m 2. 不是 NO \033[0m"
+LogMessage "\033[34m 1. 是(默认) \033[0m" "\033[34m 1. Yes (default) \033[0m" 
+LogMessage "\033[34m 2. 不是  \033[0m" "\033[34m 1. NO \033[0m"
 read -t $timer sysenv
 if [ ! -n "$sysenv" ]; then
         sysenv=1
@@ -486,8 +486,8 @@ until [[ $sysenv -ge 1 && $sysenv -le 2 ]]
 do
     LogMessage "\033[34m 你输入的 ${sysenv} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m" "\033[34m What is the function of the ${sysenv} you entered? Just enter the value after taking a good look at the serial number. \033[0m"
     LogMessage "\033[31m 你的编译环境是WSL2吗？ \033[0m" "\033[31m Is your compilation environment WSL2? \033[0m"
-    LogMessage "\033[34m 1. 是(默认) Yes (default) \033[0m"
-    LogMessage "\033[34m 2. 不是 NO \033[0m"
+    LogMessage "\033[34m 1. 是(默认) \033[0m" "\033[34m 1. Yes (default) \033[0m" 
+    LogMessage "\033[34m 2. 不是  \033[0m" "\033[34m 1. NO \033[0m"
     read -t $timer sysenv
     if [ ! -n "$sysenv" ]; then
         sysenv=1
