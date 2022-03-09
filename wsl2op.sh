@@ -49,6 +49,7 @@ luci_apps=(
 
 # 默认语言中文，其他英文
 echo -e "\033[31m 请选择默认语言，输入任意字符为英文，不输入默认中文 \033[0m"
+echo -e "\033[31m Please select the default language, enter any character as English, and do not enter the default Chinese. \033[0m"
 read -t $timer isChinese
 
 # 输出默认语言函数
