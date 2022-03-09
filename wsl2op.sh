@@ -129,9 +129,7 @@ function Get_luci_apps(){
         temp=${luci_app##*/} # xxx.git
         dir=${temp%%.*}  # xxx
 
-        echo
-        echo -e "\033[31m 开始同步$dir.... \033[0m"
-        echo -e "\033[31m Start syncing $dir.... \033[0m"
+        LogMessage "\033[31m 开始同步$dir.... \033[0m" "\033[31m Start syncing $dir.... \033[0m"
         sleep 2s
 
         if [[ $isFirstCompile == 1 && $dir == luci-theme-argon ]]; then
