@@ -75,7 +75,7 @@ LogMessage "\033[31m 是否安装编译依赖，不输入默认不安装，输�
         sleep 10s
         git config --global http.sslverify false
         git config --global https.sslverify false
-        LogMessage "\033[34m 安装完成 \033[0m" "\033[34m Copy completed \033[0m" 
+        LogMessage "\033[34m 安装完成 \033[0m" "\033[34m Installation Completed \033[0m" 
     fi
 
 # 将编译的固件提交到GitHubRelease
