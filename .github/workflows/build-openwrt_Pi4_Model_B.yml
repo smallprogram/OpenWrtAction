@@ -197,8 +197,8 @@ jobs:
         echo "</details> <details> <summary> SSRP Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         git -C openwrt/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
 
-        echo "</details> <details> <summary> Passwall Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/passwall log -n $COMMIT_LOG_NUM >> release.txt
+        # echo "</details> <details> <summary> Passwall Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        # git -C openwrt/feeds/passwall log -n $COMMIT_LOG_NUM >> release.txt
 
         # echo "</details> <details> <summary> DockerMan Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         # git -C openwrt/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> release.txt
