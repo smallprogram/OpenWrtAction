@@ -8,6 +8,6 @@ src-git telephony https://git.openwrt.org/feed/telephony.git
 #src-git oldpackages http://git.openwrt.org/packages.git
 #src-link custom /usr/src/openwrt/custom-feed
 src-git helloworld https://github.com/fw876/helloworld
-src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;packages
+#src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;packages
 src-git nas https://github.com/linkease/nas-packages.git;master
 src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main

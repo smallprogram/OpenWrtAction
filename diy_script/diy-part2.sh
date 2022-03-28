@@ -29,6 +29,12 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/le
 # git clone https://github.com/jerrykuku/luci-app-vssr.git
 # git clone https://github.com/lisaac/luci-app-dockerman.git
 
+#passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git -b packages ./package/lean/passwall_package
+git clone https://github.com/xiaorouji/openwrt-passwall.git -b luci ./package/lean/passwall
+cp -rf ./package/lean/passwall_package/* ./package/lean/passwall
+rm -rf ./package/lean/passwall_package
+
 #恢复主机型号
 sed -i 's/(dmesg | grep .*/{a}${b}${c}${d}${e}${f}/g' package/lean/autocore/files/x86/autocore
 sed -i '/h=${g}.*/d' package/lean/autocore/files/x86/autocore

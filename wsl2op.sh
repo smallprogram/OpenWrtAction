@@ -1,6 +1,17 @@
 #!/bin/bash
 # OP编译
 
+#
+# Copyright (c) 2019-2022 smallprogram
+#
+# This is free software, licensed under the MIT License.
+# See /LICENSE for more information.
+#
+# https://github.com/smallprogram/OpenWrtAction
+# File: .github/workflows/Update_Checker.yml
+# Description: WSL automatically compiles Openwrt script code
+#
+
 # 路由默认IP地址
 routeIP=10.10.0.253
 # 编译环境中当前账户名字
@@ -44,6 +55,7 @@ luci_apps=(
     # https://github.com/jerrykuku/lua-maxminddb.git
     # https://github.com/jerrykuku/luci-app-vssr.git
     # https://github.com/lisaac/luci-app-dockerman.git
+    https://github.com/xiaorouji/openwrt-passwall.git
     https://github.com/rufengsuixing/luci-app-adguardhome.git
 )
 
@@ -136,6 +148,17 @@ function Get_luci_apps(){
             cd /home/${userName}/${ledeDir}/package/lean/
             rm -rf $dir
             git clone -b 18.06 $luci_app
+            continue
+        fi
+
+        if [[ $luci_app == https://github.com/xiaorouji/openwrt-passwall.git ]]; then
+            cd /home/${userName}/${ledeDir}/package/lean/
+            rm -rf passwall
+            rm -rf passwall_package
+            git clone -b luci $luci_app passwall
+            git clone -b packages $luci_app passwall_package
+            cp -rf passwall_package/* passwall
+            rm -rf passwall_package
             continue
         fi
 
