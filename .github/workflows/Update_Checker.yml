@@ -48,10 +48,15 @@ env:
   REPO_BRANCH_HelloWorld: master
   REPO_PATH_HelloWorld : "helloworld"
 
-  # Passwall源码
-  REPO_URL_PassWall: https://github.com/xiaorouji/openwrt-passwall
-  REPO_BRANCH_PassWall: packages
-  REPO_PATH_PassWall : "openwrt-passwall"
+  # Passwall packages源码
+  REPO_URL_PassWall_Packages: https://github.com/xiaorouji/openwrt-passwall
+  REPO_BRANCH_PassWall_Packages: packages
+  REPO_PATH_PassWall_Packages : "openwrt-passwall_packages"
+
+  # Passwall luci源码
+  REPO_URL_PassWall_Luci: https://github.com/xiaorouji/openwrt-passwall
+  REPO_BRANCH_PassWall_Luci: luci
+  REPO_PATH_PassWall_Luci : "openwrt-passwall_luci"
 
   # jerrykuku/luci-theme-argon主题源码
   REPO_URL_ThemeArgon: https://github.com/jerrykuku/luci-theme-argon
@@ -140,9 +145,14 @@ jobs:
         echo "::set-output name=commitHash_HelloWorld::$(git rev-parse HEAD)"
         cd
 
-        git clone --depth 1 $REPO_URL_PassWall -b $REPO_BRANCH_PassWall $REPO_PATH_PassWall
-        cd $REPO_PATH_PassWall
-        echo "::set-output name=commitHash_PassWall::$(git rev-parse HEAD)"
+        git clone --depth 1 $REPO_URL_PassWall_Packages -b $REPO_BRANCH_PassWall_Packages $REPO_PATH_PassWall_Packages
+        cd $REPO_PATH_PassWall_Packages
+        echo "::set-output name=commitHash_PassWall_Package::$(git rev-parse HEAD)"
+        cd
+
+        git clone --depth 1 $REPO_URL_PassWall_Luci -b $REPO_BRANCH_PassWall_Luci $REPO_PATH_PassWall_Luci
+        cd $REPO_PATH_PassWall_Luci
+        echo "::set-output name=commitHash_PassWall_Luci::$(git rev-parse HEAD)"
         cd
 
         git clone --depth 1 $REPO_URL_ThemeArgon -b $REPO_BRANCH_ThemeArgon $REPO_PATH_ThemeArgon
@@ -170,7 +180,8 @@ jobs:
         echo "commitHash_OPENWRT_ROUTING: ${{ steps.getHash.outputs.commitHash_OPENWRT_ROUTING }}"
         echo "commitHash_OPENWRT_TELEPHONY: ${{ steps.getHash.outputs.commitHash_OPENWRT_TELEPHONY }}"
         echo "commitHash_HelloWorld: ${{ steps.getHash.outputs.commitHash_HelloWorld }}"
-        echo "commitHash_PassWall: ${{ steps.getHash.outputs.commitHash_PassWall }}"
+        echo "commitHash_PassWall_Package: ${{ steps.getHash.outputs.commitHash_PassWall_Package }}"
+        echo "commitHash_PassWall_Luci: ${{ steps.getHash.outputs.commitHash_PassWall_Luci }}"
         echo "commitHash_ThemeArgon: ${{ steps.getHash.outputs.commitHash_ThemeArgon }}"
         echo "commitHash_ArgonConfig: ${{ steps.getHash.outputs.commitHash_ArgonConfig }}"
         # echo "commitHash_luci_app_dockerman: ${{ steps.getHash.outputs.commitHash_luci_app_dockerman }}"
@@ -182,7 +193,8 @@ jobs:
           ${{steps.getHash.outputs.commitHash_OPENWRT_ROUTING}}\
           ${{steps.getHash.outputs.commitHash_OPENWRT_TELEPHONY}}\
           ${{steps.getHash.outputs.commitHash_HelloWorld}}\
-          ${{steps.getHash.outputs.commitHash_PassWall}}\
+          ${{steps.getHash.outputs.commitHash_PassWall_Package}}\
+          ${{steps.getHash.outputs.commitHash_PassWall_Luci}}\
           ${{steps.getHash.outputs.commitHash_ArgonConfig}}"
           # ${{steps.getHash.outputs.commitHash_luci_app_dockerman}}"
 
@@ -204,7 +216,8 @@ jobs:
         echo ${{ steps.getHash.outputs.commitHash_OPENWRT_ROUTING }} | tee .commitHash_OPENWRT_ROUTING
         echo ${{ steps.getHash.outputs.commitHash_OPENWRT_TELEPHONY }} | tee .commitHash_OPENWRT_TELEPHONY
         echo ${{ steps.getHash.outputs.commitHash_HelloWorld }} | tee .commitHash_HelloWorld
-        echo ${{ steps.getHash.outputs.commitHash_PassWall }} | tee .commitHash_PassWall
+        echo ${{ steps.getHash.outputs.commitHash_PassWall_Package }} | tee .commitHash_PassWall_Package
+        echo ${{ steps.getHash.outputs.commitHash_PassWall_Luci }} | tee .commitHash_PassWall_Luci
         echo ${{ steps.getHash.outputs.commitHash_ThemeArgon }} | tee .commitHash_ThemeArgon
         echo ${{ steps.getHash.outputs.commitHash_ArgonConfig }} | tee .commitHash_ArgonConfig
         # echo ${{ steps.getHash.outputs.commitHash_luci_app_dockerman }} | tee .commitHash_luci_app_dockerman
