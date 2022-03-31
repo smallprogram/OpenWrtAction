@@ -122,9 +122,9 @@ function DIY_Script(){
     sed -i 's/console=tty0//g'  /home/${userName}/${ledeDir}/target/linux/x86/image/Makefile
     sleep 1s
     # 注入patches
-    LogMessage "\033[31m 注入patches \033[0m" "\033[31m inject patches \033[0m"
-    cp -r /home/${userName}/OpenWrtAction/patches/651-rt2x00-driver-compile-with-kernel-5.15.patch /home/${userName}/${ledeDir}/package/kernel/mac80211/patches/rt2x00
-    sleep 1s
+    # LogMessage "\033[31m 注入patches \033[0m" "\033[31m inject patches \033[0m"
+    # cp -r /home/${userName}/OpenWrtAction/patches/651-rt2x00-driver-compile-with-kernel-5.15.patch /home/${userName}/${ledeDir}/package/kernel/mac80211/patches/rt2x00
+    # sleep 1s
     # 注入dl
     LogMessage "\033[31m 注入dl \033[0m" "\033[31m inject dl \033[0m"
     cp -r /home/${userName}/OpenWrtAction/library/* /home/${userName}/${ledeDir}/dl
