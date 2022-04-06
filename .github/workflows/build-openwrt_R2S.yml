@@ -139,8 +139,6 @@ jobs:
       run: |
         rm -rf  $GITHUB_WORKSPACE/openwrt/build_dir
         rm -rf  $GITHUB_WORKSPACE/openwrt/dl
-        rm -rf  $GITHUB_WORKSPACE/openwrt/feeds
-        rm -rf  $GITHUB_WORKSPACE/openwrt/package
         rm -rf  $GITHUB_WORKSPACE/openwrt/staging_dir
         rm -rf  $GITHUB_WORKSPACE/openwrt/target
         rm -rf  $GITHUB_WORKSPACE/openwrt/toolchain
