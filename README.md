@@ -4,6 +4,9 @@
 
 # [English Readme](README_EN.md)
 
+# [最新固件列表，点击自取](https://github.com/smallprogram/OpenWrtAction/tags)
+
+
 # 目录<!-- omit in toc --> 
 - [新增TG跟Wechat推送说明](source/bot.md)
 - [Lean Openwrt GitHubAction](#lean-openwrt-githubaction)
