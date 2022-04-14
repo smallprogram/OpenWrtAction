@@ -55,7 +55,7 @@ luci_apps=(
     # https://github.com/jerrykuku/lua-maxminddb.git
     # https://github.com/jerrykuku/luci-app-vssr.git
     # https://github.com/lisaac/luci-app-dockerman.git
-    https://github.com/xiaorouji/openwrt-passwall.git
+    # https://github.com/xiaorouji/openwrt-passwall.git
     https://github.com/rufengsuixing/luci-app-adguardhome.git
 )
 
@@ -151,16 +151,16 @@ function Get_luci_apps(){
             continue
         fi
 
-        if [[ $luci_app == https://github.com/xiaorouji/openwrt-passwall.git ]]; then
-            cd /home/${userName}/${ledeDir}/package/lean/
-            rm -rf passwall
-            rm -rf passwall_package
-            git clone -b luci $luci_app passwall
-            git clone -b packages $luci_app passwall_package
-            cp -rf passwall_package/* passwall
-            rm -rf passwall_package
-            continue
-        fi
+        # if [[ $luci_app == https://github.com/xiaorouji/openwrt-passwall.git ]]; then
+        #     cd /home/${userName}/${ledeDir}/package/lean/
+        #     rm -rf passwall
+        #     rm -rf passwall_package
+        #     git clone -b luci $luci_app passwall
+        #     git clone -b packages $luci_app passwall_package
+        #     cp -rf passwall_package/* passwall
+        #     rm -rf passwall_package
+        #     continue
+        # fi
 
         if [ ! -d "/home/${userName}/${ledeDir}/package/lean/$dir" ];
         then
