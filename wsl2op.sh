@@ -169,6 +169,8 @@ function Get_luci_apps(){
             cd /home/${userName}
         else
             cd /home/${userName}/${ledeDir}/package/lean/$dir
+            git stash
+            git stash drop
             git pull
             cd /home/${userName}
         fi
@@ -472,6 +474,8 @@ then
     isFirstCompile=1
 else 
     cd ${ledeDir}
+    git stash
+    git stash drop
     git pull
     cd /home/${userName}
     isFirstCompile=0
