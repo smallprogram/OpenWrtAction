@@ -207,6 +207,7 @@ jobs:
           ${{steps.getHash.outputs.commitHash_PassWall_Package}}\
           ${{steps.getHash.outputs.commitHash_PassWall_Luci}}\
           ${{steps.getHash.outputs.commitHash_PassWall2}}\
+          ${{steps.getHash.outputs.commitHash_ThemeArgon}}\
           ${{steps.getHash.outputs.commitHash_ArgonConfig}}"
 
     - name: Compare Commit Hash
