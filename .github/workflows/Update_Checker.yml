@@ -58,6 +58,11 @@ env:
   REPO_BRANCH_PassWall_Luci: luci
   REPO_PATH_PassWall_Luci : "openwrt-passwall_luci"
 
+  # Passwall2源码
+  REPO_URL_PassWall2: https://github.com/xiaorouji/openwrt-passwall2.git
+  REPO_BRANCH_PassWall2: main
+  REPO_PATH_PassWall2 : "openwrt-passwall2"
+
   # jerrykuku/luci-theme-argon主题源码
   REPO_URL_ThemeArgon: https://github.com/jerrykuku/luci-theme-argon
   REPO_BRANCH_ThemeArgon: master
@@ -155,6 +160,12 @@ jobs:
         echo "::set-output name=commitHash_PassWall_Luci::$(git rev-parse HEAD)"
         cd
 
+        git clone --depth 1 $REPO_URL_PassWall2 -b $REPO_BRANCH_PassWall2 $REPO_PATH_PassWall2
+        cd $REPO_PATH_PassWall2
+        echo "::set-output name=commitHash_PassWall2::$(git rev-parse HEAD)"
+        cd
+
+
         git clone --depth 1 $REPO_URL_ThemeArgon -b $REPO_BRANCH_ThemeArgon $REPO_PATH_ThemeArgon
         cd $REPO_PATH_ThemeArgon
         echo "::set-output name=commitHash_ThemeArgon::$(git rev-parse HEAD)"
@@ -182,9 +193,9 @@ jobs:
         echo "commitHash_HelloWorld: ${{ steps.getHash.outputs.commitHash_HelloWorld }}"
         echo "commitHash_PassWall_Package: ${{ steps.getHash.outputs.commitHash_PassWall_Package }}"
         echo "commitHash_PassWall_Luci: ${{ steps.getHash.outputs.commitHash_PassWall_Luci }}"
+        echo "commitHash_PassWall2: ${{ steps.getHash.outputs.commitHash_PassWall2 }}"
         echo "commitHash_ThemeArgon: ${{ steps.getHash.outputs.commitHash_ThemeArgon }}"
         echo "commitHash_ArgonConfig: ${{ steps.getHash.outputs.commitHash_ArgonConfig }}"
-        # echo "commitHash_luci_app_dockerman: ${{ steps.getHash.outputs.commitHash_luci_app_dockerman }}"
         echo "::set-output name=commitHash_All::\
           ${{steps.getHash.outputs.commitHash_smallprogramAction}}\
           ${{steps.getHash.outputs.commitHash_Lede}}\
@@ -195,8 +206,8 @@ jobs:
           ${{steps.getHash.outputs.commitHash_HelloWorld}}\
           ${{steps.getHash.outputs.commitHash_PassWall_Package}}\
           ${{steps.getHash.outputs.commitHash_PassWall_Luci}}\
+          ${{steps.getHash.outputs.commitHash_PassWall2}}\
           ${{steps.getHash.outputs.commitHash_ArgonConfig}}"
-          # ${{steps.getHash.outputs.commitHash_luci_app_dockerman}}"
 
     - name: Compare Commit Hash
       id: cacheHash
@@ -218,9 +229,9 @@ jobs:
         echo ${{ steps.getHash.outputs.commitHash_HelloWorld }} | tee .commitHash_HelloWorld
         echo ${{ steps.getHash.outputs.commitHash_PassWall_Package }} | tee .commitHash_PassWall_Package
         echo ${{ steps.getHash.outputs.commitHash_PassWall_Luci }} | tee .commitHash_PassWall_Luci
+        echo ${{ steps.getHash.outputs.commitHash_PassWall2 }} | tee .commitHash_PassWall2
         echo ${{ steps.getHash.outputs.commitHash_ThemeArgon }} | tee .commitHash_ThemeArgon
         echo ${{ steps.getHash.outputs.commitHash_ArgonConfig }} | tee .commitHash_ArgonConfig
-        # echo ${{ steps.getHash.outputs.commitHash_luci_app_dockerman }} | tee .commitHash_luci_app_dockerman
         echo ${{ steps.combHeader.outputs.commitHash_All }} | tee .commitHash_All
         
         
