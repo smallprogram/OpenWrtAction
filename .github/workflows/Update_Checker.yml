@@ -235,13 +235,6 @@ jobs:
         echo ${{ steps.getHash.outputs.commitHash_ArgonConfig }} | tee .commitHash_ArgonConfig
         echo ${{ steps.combHeader.outputs.commitHash_All }} | tee .commitHash_All
         
-        
-    - name: Trigger build
-      if: steps.cacheHash.outputs.cache-hit != 'true'
-      uses: peter-evans/repository-dispatch@v1
-      with:
-        token: ${{ secrets.OPENWRTACTION_TRIGGER }}
-        event-type: OpenWrt Related Code Updates
 
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
@@ -250,3 +243,11 @@ jobs:
         repository: ${{ github.repository }}
         retain_days: 1
         keep_minimum_runs: 2
+        
+    - name: Trigger build
+      if: steps.cacheHash.outputs.cache-hit != 'true'
+      uses: peter-evans/repository-dispatch@v1
+      with:
+        token: ${{ secrets.OPENWRTACTION_TRIGGER }}
+        event-type: OpenWrt Related Code Updates
+
