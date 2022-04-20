@@ -25,6 +25,8 @@
 # Lean Openwrt GitHubAction
 
 ![image](source/login.gif)
+
+![image](source/login2.jpg)
 ### 根据源码更新自动编译
 
 

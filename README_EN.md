@@ -18,6 +18,8 @@
 # Lean Openwrt GitHubAction
 
 ![image](source/login.gif)
+
+![image](source/login2.jpg)
 ### Automatically compile according to source code updates
 
 
@@ -30,6 +32,7 @@
 -|-|-|-
 |SSRP|Plugin|The pro son of Lean source code, the evaluation says the most efficient|https://github.com/fw876/helloworld|
 |PassWall|Plugin|A powerful scientific tool|https://github.com/xiaorouji/openwrt-passwall|
+|PassWall2|Plugin|A powerful scientific tool|https://github.com/xiaorouji/openwrt-passwall2|
 |DockerMan|Plugin|The essential plug-in for playing Docker on OP|https://github.com/lisaac/luci-app-dockerman|
 |New version of argon theme|Theme|Very beautiful OP theme|https://github.com/jerrykuku/luci-theme-argon|
 |Argon Config|Plugin|Settings plugin for the new version of argon theme|https://github.com/jerrykuku/luci-app-argon-config|
