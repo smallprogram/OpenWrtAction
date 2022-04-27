@@ -1,16 +1,14 @@
 #!/bin/bash
 # OP编译
 
-#
 # Copyright (c) 2019-2022 smallprogram
 #
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 #
 # https://github.com/smallprogram/OpenWrtAction
-# File: .github/workflows/Update_Checker.yml
+# File: wsl2op.sh
 # Description: WSL automatically compiles Openwrt script code
-#
 
 # 路由默认IP地址
 routeIP=10.10.0.253
