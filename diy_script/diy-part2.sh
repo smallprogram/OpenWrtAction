@@ -47,5 +47,3 @@ sed -i 's/console=tty0//g'  target/linux/x86/image/Makefile
 #修复一些问题
 ## 修复mac80211编译报错
 # cp -r $GITHUB_WORKSPACE/patches/651-rt2x00-driver-compile-with-kernel-5.15.patch $GITHUB_WORKSPACE/openwrt/package/kernel/mac80211/patches/rt2x00
-## containerd临时关闭hash验证
-sed -i 's/PKG_HASH.*/PKG_HASH:=skip/' feeds/packages/utils/containerd/Makefile
