@@ -4,8 +4,6 @@
 
 # [English Readme](README_EN.md)
 
-## [欢迎加入TG讨论组](https://t.me/+hlcgSUOUO8s3ZjE9)
-
 # [最新固件列表，点击自取](https://github.com/smallprogram/OpenWrtAction/tags)
 
 # 感觉不错的话，给个Star吧
