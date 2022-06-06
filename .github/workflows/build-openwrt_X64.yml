@@ -43,19 +43,6 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-<<<<<<< HEAD
-
-    - name: Maximize build space
-      uses: easimon/maximize-build-space@master
-      with:
-        root-reserve-mb: 512
-        swap-size-mb: 1024
-        remove-dotnet: 'true'
-        remove-android: 'true'
-        remove-haskell: 'true'
-
-=======
->>>>>>> parent of dbb33e6 (free build space)
     - name: Checkout
       uses: actions/checkout@main
   
