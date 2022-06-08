@@ -35,10 +35,12 @@
 
 #### 包含各种常用插件，特殊的内容如下：
 
+> 由于SSRP目前与Xray冲突，暂时移除
+> 移除一系列下载工具
 
 |名称|类型|简介|源码地址
 -|-|-|-
-|SSRP|插件|Lean源码的亲儿子，评测说效率最高|https://github.com/fw876/helloworld|
+|~~SSRP~~|~~插件~~|~~Lean源码的亲儿子，评测说效率最高~~|~~https://github.com/fw876/helloworld~~|
 |PassWall|插件|一款功能强大的科学工具|https://github.com/xiaorouji/openwrt-passwall|
 |PassWall2|插件|一款功能强大的科学工具|https://github.com/xiaorouji/openwrt-passwall2|
 |DockerMan|插件|OP上玩Docker的必备插件|https://github.com/lisaac/luci-app-dockerman|
@@ -52,11 +54,11 @@
 |UU加速器|插件|土豪玩家必备插件，加速PS5 Switch等|lean code source|
 |FRP|插件|内网穿透|lean code source|
 |MWAN3|插件|多线的负载均衡|lean code source|
-|Transmission|插件|下载器|lean code source|
-|Aria2|插件|下载器|lean code source|
-|qBittorrent|插件|下载器|lean code source|
-|Aliyun-WebDav|插件|下载器|lean code source|
-|SSR Python Server|服务|SSR服务端|lean code source|
+|~~Transmission~~|~~插件~~|~~下载器~~|~~lean code source~~|
+|~~Aria2~~|~~插件~~|~~下载器~~|~~lean code source~~|
+|~~qBittorrent~~|~~插件~~|~~下载器~~|~~lean code source~~|
+|~~Aliyun-WebDav~~|~~插件~~|~~下载器~~|~~lean code source~~|
+|~~SSR Python Server~~|~~服务~~|~~SSR服务端~~|~~lean code source~~|
 |OpenVPN Server|服务|OpenVPN服务端|lean code source|
 |PPTP VPN Server|服务|PPTP VPN服务端|lean code source|
 |IPSec VPN Server|服务|IPSec VPN服务端|lean code source|
