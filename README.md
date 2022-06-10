@@ -7,7 +7,6 @@
 # [最新固件列表，点击自取](https://github.com/smallprogram/OpenWrtAction/tags)
 
 # 感觉不错的话，给个Star吧
-# 由于GithubAction性能越来越不给力，改为自托管模式
 
 # 目录<!-- omit in toc --> 
 - [新增TG跟Wechat推送说明](source/bot.md)
