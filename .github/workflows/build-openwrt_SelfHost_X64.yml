@@ -74,11 +74,11 @@ jobs:
       working-directory: /workdir
       run: |
         df -hT $PWD
-        if [ ! -d "/workdir/x64" ]; then git clone $REPO_URL -b $REPO_BRANCH /workdir/x64;   else cd /workdir/x64; git stash; git stash drop; git pull; fi;
-        
+        if [ ! -d "/workdir/x64" ]; then git clone $REPO_URL -b $REPO_BRANCH /workdir/x64;   else cd /workdir/x64; git stash; git stash drop;  fi;
+        ln -sf /workdir/x64 ${{ github.workspace }}/x64
 
     # - name: Cache
-    # ln -sf /workdir/x64 ${{ github.workspace }}/x64
+    # 
     #   uses: klever1988/cachewrtbuild@main
     #   with:
     #     ccache: 'true'
