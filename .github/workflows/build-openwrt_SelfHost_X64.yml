@@ -75,7 +75,7 @@ jobs:
       run: |
         df -hT $PWD
         if [ ! -d "/workdir/x64" ]; then git clone $REPO_URL -b $REPO_BRANCH /workdir/x64;   else cd /workdir/x64; git stash; git stash drop; git pull; fi;
-        ln -sf /workdir/x64 $GITHUB_WORKSPACE/x64
+        ln -sf /workdir/x64 ${{ github.workspace }}/x64
 
     # - name: Cache
     #   uses: klever1988/cachewrtbuild@main
@@ -85,24 +85,24 @@ jobs:
 
     - name: Load custom feeds
       run: |
-        [ -e $FEEDS_CONF ] && mv $FEEDS_CONF $GITHUB_WORKSPACE/x64/feeds.conf.default
+        [ -e $FEEDS_CONF ] && mv $FEEDS_CONF ${{ github.workspace }}/x64/feeds.conf.default
         chmod +x $DIY_P1_SH
-        cd $GITHUB_WORKSPACE/x64
-        $GITHUB_WORKSPACE/$DIY_P1_SH
+        cd ${{ github.workspace }}/x64
+        ${{ github.workspace }}/$DIY_P1_SH
 
     - name: Update feeds
-      run: cd $GITHUB_WORKSPACE/x64 && ./scripts/feeds update -a
+      run: cd ${{ github.workspace }}/x64 && ./scripts/feeds update -a
 
     - name: Install feeds
-      run: cd $GITHUB_WORKSPACE/x64 && ./scripts/feeds install -a
+      run: cd ${{ github.workspace }}/x64 && ./scripts/feeds install -a
 
     - name: Load custom configuration
       run: |
-        [ -e files ] && mv files $GITHUB_WORKSPACE/x64/files
-        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE $GITHUB_WORKSPACE/x64/.config
+        [ -e files ] && mv files ${{ github.workspace }}/x64/files
+        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE ${{ github.workspace }}/x64/.config
         chmod +x $DIY_P2_SH
-        cd $GITHUB_WORKSPACE/x64
-        $GITHUB_WORKSPACE/$DIY_P2_SH
+        cd ${{ github.workspace }}/x64
+        ${{ github.workspace }}/$DIY_P2_SH
 
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
@@ -114,9 +114,9 @@ jobs:
     - name: Download package
       id: package
       run: |
-        mkdir -p $GITHUB_WORKSPACE/x64/dl
-        cp -r $GITHUB_WORKSPACE/library/* $GITHUB_WORKSPACE/x64/dl
-        cd $GITHUB_WORKSPACE/x64
+        mkdir -p ${{ github.workspace }}/x64/dl
+        cp -r ${{ github.workspace }}/library/* ${{ github.workspace }}/x64/dl
+        cd ${{ github.workspace }}/x64
         make defconfig
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
@@ -125,7 +125,7 @@ jobs:
     - name: Compile the firmware
       id: compile
       run: |
-        cd $GITHUB_WORKSPACE/x64
+        cd ${{ github.workspace }}/x64
         echo -e "$(nproc) thread compile"
         make -j$(nproc) || make -j1 || make -j1 V=s
         echo "::set-output name=status::success"
@@ -136,12 +136,12 @@ jobs:
     # - name: Remove Unuselesss Files To Free Up Space
     #   id: removeunuselessfiles
     #   run: |
-    #     rm -rf  $GITHUB_WORKSPACE/x64/build_dir
-    #     rm -rf  $GITHUB_WORKSPACE/x64/dl
-    #     rm -rf  $GITHUB_WORKSPACE/x64/staging_dir
-    #     rm -rf  $GITHUB_WORKSPACE/x64/target
-    #     rm -rf  $GITHUB_WORKSPACE/x64/toolchain
-    #     rm -rf  $GITHUB_WORKSPACE/x64/tools
+    #     rm -rf  ${{ github.workspace }}/x64/build_dir
+    #     rm -rf  ${{ github.workspace }}/x64/dl
+    #     rm -rf  ${{ github.workspace }}/x64/staging_dir
+    #     rm -rf  ${{ github.workspace }}/x64/target
+    #     rm -rf  ${{ github.workspace }}/x64/toolchain
+    #     rm -rf  ${{ github.workspace }}/x64/tools
 
     - name: Check space usage
       if: (!cancelled())
@@ -152,13 +152,13 @@ jobs:
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
-        path: $GITHUB_WORKSPACE/x64/bin
+        path: ${{ github.workspace }}/x64/bin
 
     - name: Organize files
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
-        cd $GITHUB_WORKSPACE/x64/bin/targets/*/*
+        cd ${{ github.workspace }}/x64/bin/targets/*/*
         rm -rf packages
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "::set-output name=status::success"
@@ -197,40 +197,40 @@ jobs:
         echo "## Update content" >> release.txt
 
         echo "<details> <summary> Lean Openwrt Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/x64 log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/x64 log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Lean Package Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/x64/feeds/packages log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/x64/feeds/packages log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Lean Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/x64/feeds/luci log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/x64/feeds/luci log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Openwrt routing Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/x64/feeds/routing log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/x64/feeds/routing log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Openwrt telephony Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/x64/feeds/telephony log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/x64/feeds/telephony log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> SSRP Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/x64/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/x64/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Passwall Packages Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/x64/feeds/passwall_packages log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/x64/feeds/passwall_packages log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Passwall Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/x64/feeds/passwall_luci log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/x64/feeds/passwall_luci log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Passwall2 Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/x64/feeds/passwall2 log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/x64/feeds/passwall2 log -n $COMMIT_LOG_NUM >> release.txt
 
         # echo "</details> <details> <summary> DockerMan Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        # git -C $GITHUB_WORKSPACE/x64/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> release.txt
+        # git -C ${{ github.workspace }}/x64/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> release.txt
 
         # echo "</details> <details> <summary> ThemeArgon Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        # git -C $GITHUB_WORKSPACE/x64/package/lean/luci-theme-argon log -n $COMMIT_LOG_NUM >> release.txt
+        # git -C ${{ github.workspace }}/x64/package/lean/luci-theme-argon log -n $COMMIT_LOG_NUM >> release.txt
 
         # echo "</details> <details> <summary> ArgonConfig Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        # git -C $GITHUB_WORKSPACE/x64/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> release.txt
+        # git -C ${{ github.workspace }}/x64/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> release.txt
 
         touch release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
