@@ -66,12 +66,12 @@ jobs:
         echo githubaction | sudo -S -E apt-get -qq autoremove --purge
         echo githubaction | sudo -S -E apt-get -qq clean
         echo githubaction | sudo -S timedatectl set-timezone "$TZ"
-        echo githubaction | sudo -S mkdir -p /workdir/x64
-        echo githubaction | sudo -S chown $USER:$GROUPS /workdir/x64
+        echo githubaction | sudo -S mkdir -p /workdir
+        echo githubaction | sudo -S chown $USER:$GROUPS /workdir
         export GIT_SSL_NO_VERIFY=1
 
     - name: Clone source code
-      working-directory: /workdir/x64
+      working-directory: /workdir
       run: |
         df -hT $PWD
         if [ ! -d "/workdir/x64" ]; then git clone $REPO_URL -b $REPO_BRANCH /workdir/x64;   else cd /workdir/x64; git stash; git stash drop; git pull; fi;
