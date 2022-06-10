@@ -73,12 +73,12 @@ jobs:
       working-directory: /workdir/Pi4_Model_B
       run: |
         df -hT $PWD
-        if [ ! -d "/workdir/Pi4_Model_B/openwrt" ]; then git clone https://github.com/coolsnowwolf/lede  else git stash| git stash drop| git pull; fi;
+        if [ ! -d "/workdir/Pi4_Model_B/openwrt" ]; then git clone $REPO_URL -b $REPO_BRANCH /workdir/Pi4_Model_B/openwrt;   else cd /workdir/Pi4_Model_B/openwrt; git stash; git stash drop; git pull; fi;
         ln -sf /workdir/Pi4_Model_B/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: Load custom feeds
       run: |
-        [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
+        [ -e $FEEDS_CONF ] && mv $FEEDS_CONF $GITHUB_WORKSPACE/openwrt/feeds.conf.default
         chmod +x $DIY_P1_SH
         cd $GITHUB_WORKSPACE/openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
@@ -91,8 +91,8 @@ jobs:
 
     - name: Load custom configuration
       run: |
-        [ -e files ] && mv files openwrt/files
-        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
+        [ -e files ] && mv files $GITHUB_WORKSPACE/openwrt/files
+        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE $GITHUB_WORKSPACE/openwrt/.config
         chmod +x $DIY_P2_SH
         cd $GITHUB_WORKSPACE/openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
@@ -190,40 +190,40 @@ jobs:
         echo "## Update content" >> release.txt
 
         echo "<details> <summary> Lean Openwrt Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt log -n $COMMIT_LOG_NUM >> release.txt
+        git -C $GITHUB_WORKSPACE/openwrt log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Lean Package Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/packages log -n $COMMIT_LOG_NUM >> release.txt
+        git -C $GITHUB_WORKSPACE/openwrt/feeds/packages log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Lean Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/luci log -n $COMMIT_LOG_NUM >> release.txt
+        git -C $GITHUB_WORKSPACE/openwrt/feeds/luci log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Openwrt routing Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/routing log -n $COMMIT_LOG_NUM >> release.txt
+        git -C $GITHUB_WORKSPACE/openwrt/feeds/routing log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Openwrt telephony Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/telephony log -n $COMMIT_LOG_NUM >> release.txt
+        git -C $GITHUB_WORKSPACE/openwrt/feeds/telephony log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> SSRP Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
+        git -C $GITHUB_WORKSPACE/openwrt/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Passwall Packages Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/passwall_packages log -n $COMMIT_LOG_NUM >> release.txt
+        git -C $GITHUB_WORKSPACE/openwrt/feeds/passwall_packages log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Passwall Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/passwall_luci log -n $COMMIT_LOG_NUM >> release.txt
+        git -C $GITHUB_WORKSPACE/openwrt/feeds/passwall_luci log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Passwall2 Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/passwall2 log -n $COMMIT_LOG_NUM >> release.txt
+        git -C $GITHUB_WORKSPACE/openwrt/feeds/passwall2 log -n $COMMIT_LOG_NUM >> release.txt
 
         # echo "</details> <details> <summary> DockerMan Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        # git -C openwrt/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> release.txt
+        # git -C $GITHUB_WORKSPACE/openwrt/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> release.txt
 
         # echo "</details> <details> <summary> ThemeArgon Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        # git -C openwrt/package/lean/luci-theme-argon log -n $COMMIT_LOG_NUM >> release.txt
+        # git -C $GITHUB_WORKSPACE/openwrt/package/lean/luci-theme-argon log -n $COMMIT_LOG_NUM >> release.txt
 
         # echo "</details> <details> <summary> ArgonConfig Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        # git -C openwrt/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> release.txt
+        # git -C $GITHUB_WORKSPACE/openwrt/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> release.txt
 
         touch release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
