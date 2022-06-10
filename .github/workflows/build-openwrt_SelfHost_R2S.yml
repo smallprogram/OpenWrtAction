@@ -67,15 +67,15 @@ jobs:
         echo githubaction | sudo -S -E apt-get -qq autoremove --purge
         echo githubaction | sudo -S -E apt-get -qq clean
         echo githubaction | sudo -S timedatectl set-timezone "$TZ"
-        echo githubaction | sudo -S mkdir -p /workdir
-        echo githubaction | sudo -S chown $USER:$GROUPS /workdir
+        echo githubaction | sudo -S mkdir -p /workdir/R2S
+        echo githubaction | sudo -S chown $USER:$GROUPS /workdir/R2S
 
     - name: Clone source code
-      working-directory: /workdir
+      working-directory: /workdir/R2S
       run: |
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
-        ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+        ln -sf /workdir/R2S/openwrt $GITHUB_WORKSPACE/openwrt
 
     # - name: Cache
     #   uses: klever1988/cachewrtbuild@main
