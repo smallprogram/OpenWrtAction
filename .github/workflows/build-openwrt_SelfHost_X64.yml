@@ -128,7 +128,7 @@ jobs:
         cd ${{ github.workspace }}/$RELEASE_TAG/bin/targets/*/*
         zip -q -r packages.zip packages
         rm -rf packages
-        for i in `ls`; do mv -f $i `echo "SelfHost_$(date +"%Y%m%d%H%M")_"$i`; done
+        # for i in `ls`; do mv -f $i `echo "SelfHost_$(date +"%Y%m%d%H%M")_"$i`; done
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "::set-output name=status::success"
 
@@ -189,7 +189,7 @@ jobs:
         echo "::set-output name=status::success"
 
     - name: Upload firmware to release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v0.1.14
       if: steps.tag.outputs.status == 'success' && !cancelled()
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
