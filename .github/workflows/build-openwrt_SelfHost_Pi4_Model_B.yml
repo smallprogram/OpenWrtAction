@@ -1,10 +1,10 @@
 #
-# Copyright (c) 2019-2020 P3TERX <https://p3terx.com>
+# Copyright (c) 2022-2023 SMALLPROGRAM <https://github.com/smallprogram/OpenWrtAction>
 #
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 #
-# https://github.com/P3TERX/Actions-OpenWrt
+# https://github.com/smallprogram/OpenWrtAction
 # Description: Build OpenWrt using GitHub Actions
 #
 
@@ -45,17 +45,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
-      
-    # - name: TG Message
-    #   if: env.SERVERCHAN_SCKEY == 'true'
-    #   run: |
-    #     curl -k --data chat_id=${{ secrets.TGID }} --data "text=主人：正在为您编译新的$RELEASE_TAG-$(date +"%Y.%m.%d-%H%M"),请耐心等待...... 😋💐" "https://api.telegram.org/bot${{ secrets.TG_TOKEN }}/sendMessage"   
   
-    # - name: PUSHPLUS Message
-    #   if: env.SERVERCHAN_SCKEY == 'true'
-    #   run: |
-    #     curl -k --data token="${{ secrets.PUSH_PLUS_TOKEN }}" --data title="开始编译$RELEASE_TAG-$(date +"%Y.%m.%d-%H%M")" --data "content=🎉 主人：正在为您编译新的$RELEASE_TAG-$(date +"%Y.%m.%d-%H%M"),请耐心等待...... 😋💐" "http://www.pushplus.plus/send"
-
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
@@ -65,37 +55,38 @@ jobs:
         echo githubaction | sudo -S -E apt-get -qq autoremove --purge
         echo githubaction | sudo -S -E apt-get -qq clean
         echo githubaction | sudo -S timedatectl set-timezone "$TZ"
-        echo githubaction | sudo -S mkdir -p /workdir/Pi4_Model_B
-        echo githubaction | sudo -S chown $USER:$GROUPS /workdir/Pi4_Model_B
+        echo githubaction | sudo -S mkdir -p /workdir
+        echo githubaction | sudo -S chown $USER:$GROUPS /workdir
         export GIT_SSL_NO_VERIFY=1
 
-    - name: Clone source code
-      working-directory: /workdir/Pi4_Model_B
+    - name: Clone Or Update Source Code
+      working-directory: /workdir
       run: |
         df -hT $PWD
-        if [ ! -d "/workdir/Pi4_Model_B/openwrt" ]; then git clone $REPO_URL -b $REPO_BRANCH /workdir/Pi4_Model_B/openwrt;   else cd /workdir/Pi4_Model_B/openwrt; git stash; git stash drop; git pull; fi;
-        ln -sf /workdir/Pi4_Model_B/openwrt $GITHUB_WORKSPACE/openwrt
+        if [ ! -d "/workdir/$RELEASE_TAG" ]; then git clone $REPO_URL -b $REPO_BRANCH /workdir/$RELEASE_TAG;   else cd /workdir/$RELEASE_TAG; git stash; git stash drop; git pull; fi;
+        ln -sf /workdir/$RELEASE_TAG ${{ github.workspace }}/$RELEASE_TAG
+        rm -rf ${{ github.workspace }}/$RELEASE_TAG/bin
 
     - name: Load custom feeds
       run: |
-        [ -e $FEEDS_CONF ] && mv $FEEDS_CONF $GITHUB_WORKSPACE/openwrt/feeds.conf.default
+        [ -e $FEEDS_CONF ] && mv $FEEDS_CONF ${{ github.workspace }}/$RELEASE_TAG/feeds.conf.default
         chmod +x $DIY_P1_SH
-        cd $GITHUB_WORKSPACE/openwrt
-        $GITHUB_WORKSPACE/$DIY_P1_SH
+        cd ${{ github.workspace }}/$RELEASE_TAG
+        ${{ github.workspace }}/$DIY_P1_SH
 
     - name: Update feeds
-      run: cd $GITHUB_WORKSPACE/openwrt && ./scripts/feeds update -a
+      run: cd ${{ github.workspace }}/$RELEASE_TAG && ./scripts/feeds update -a
 
     - name: Install feeds
-      run: cd $GITHUB_WORKSPACE/openwrt && ./scripts/feeds install -a
+      run: cd ${{ github.workspace }}/$RELEASE_TAG && ./scripts/feeds install -a
 
     - name: Load custom configuration
       run: |
-        [ -e files ] && mv files $GITHUB_WORKSPACE/openwrt/files
-        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE $GITHUB_WORKSPACE/openwrt/.config
+        [ -e files ] && mv files ${{ github.workspace }}/$RELEASE_TAG/files
+        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE ${{ github.workspace }}/$RELEASE_TAG/.config
         chmod +x $DIY_P2_SH
-        cd $GITHUB_WORKSPACE/openwrt
-        $GITHUB_WORKSPACE/$DIY_P2_SH
+        cd ${{ github.workspace }}/$RELEASE_TAG
+        ${{ github.workspace }}/$DIY_P2_SH
 
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
@@ -107,9 +98,9 @@ jobs:
     - name: Download package
       id: package
       run: |
-        mkdir -p $GITHUB_WORKSPACE/openwrt/dl
-        cp -r $GITHUB_WORKSPACE/library/* $GITHUB_WORKSPACE/openwrt/dl
-        cd $GITHUB_WORKSPACE/openwrt
+        mkdir -p ${{ github.workspace }}/$RELEASE_TAG/dl
+        cp -r ${{ github.workspace }}/library/* ${{ github.workspace }}/$RELEASE_TAG/dl
+        cd ${{ github.workspace }}/$RELEASE_TAG
         make defconfig
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
@@ -118,7 +109,7 @@ jobs:
     - name: Compile the firmware
       id: compile
       run: |
-        cd $GITHUB_WORKSPACE/openwrt
+        cd ${{ github.workspace }}/$RELEASE_TAG
         echo -e "$(nproc) thread compile"
         make -j$(nproc) || make -j1 || make -j1 V=s
         echo "::set-output name=status::success"
@@ -126,33 +117,18 @@ jobs:
         [ -s DEVICE_NAME ] && echo "DEVICE_NAME=_$(cat DEVICE_NAME)" >> $GITHUB_ENV
         echo "FILE_DATE=_$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
 
-    # - name: Remove Unuselesss Files To Free Up Space
-    #   id: removeunuselessfiles
-    #   run: |
-    #     rm -rf  $GITHUB_WORKSPACE/openwrt/build_dir
-    #     rm -rf  $GITHUB_WORKSPACE/openwrt/dl
-    #     rm -rf  $GITHUB_WORKSPACE/openwrt/staging_dir
-    #     rm -rf  $GITHUB_WORKSPACE/openwrt/target
-    #     rm -rf  $GITHUB_WORKSPACE/openwrt/toolchain
-    #     rm -rf  $GITHUB_WORKSPACE/openwrt/tools
-
     - name: Check space usage
       if: (!cancelled())
       run: df -hT
-
-    - name: Upload bin directory
-      uses: actions/upload-artifact@main
-      if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
-      with:
-        name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
-        path: openwrt/bin
 
     - name: Organize files
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
-        cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
+        cd ${{ github.workspace }}/$RELEASE_TAG/bin/targets/*/*
+        zip -q -r packages.zip packages
         rm -rf packages
+        for i in `ls`; do mv -f $i `echo "SelfHost_$(date +"%Y%m%d%H%M")_"$i`; done
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "::set-output name=status::success"
 
@@ -163,24 +139,6 @@ jobs:
         name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
 
-    - name: Upload firmware to cowtransfer
-      id: cowtransfer
-      if: steps.organize.outputs.status == 'success' && env.UPLOAD_COWTRANSFER == 'true' && !cancelled()
-      run: |
-        curl -fsSL git.io/file-transfer | sh
-        ./transfer cow --block 2621440 -s -p 64 --no-progress ${FIRMWARE} 2>&1 | tee cowtransfer.log
-        echo "::warning file=cowtransfer.com::$(cat cowtransfer.log | grep https)"
-        echo "::set-output name=url::$(cat cowtransfer.log | grep https | cut -f3 -d" ")"
-
-    - name: Upload firmware to WeTransfer
-      id: wetransfer
-      if: steps.organize.outputs.status == 'success' && env.UPLOAD_WETRANSFER == 'true' && !cancelled()
-      run: |
-        curl -fsSL git.io/file-transfer | sh
-        ./transfer wet -s -p 16 --no-progress ${FIRMWARE} 2>&1 | tee wetransfer.log
-        echo "::warning file=wetransfer.com::$(cat wetransfer.log | grep https)"
-        echo "::set-output name=url::$(cat wetransfer.log | grep https | cut -f3 -d" ")"
-
     - name: Generate release tag
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
@@ -190,40 +148,40 @@ jobs:
         echo "## Update content" >> release.txt
 
         echo "<details> <summary> Lean Openwrt Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/openwrt log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/$RELEASE_TAG log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Lean Package Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/openwrt/feeds/packages log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/packages log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Lean Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/openwrt/feeds/luci log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/luci log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Openwrt routing Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/openwrt/feeds/routing log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/routing log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Openwrt telephony Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/openwrt/feeds/telephony log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/telephony log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> SSRP Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/openwrt/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Passwall Packages Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/openwrt/feeds/passwall_packages log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/passwall_packages log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Passwall Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/openwrt/feeds/passwall_luci log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/passwall_luci log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Passwall2 Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C $GITHUB_WORKSPACE/openwrt/feeds/passwall2 log -n $COMMIT_LOG_NUM >> release.txt
+        git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/passwall2 log -n $COMMIT_LOG_NUM >> release.txt
 
         # echo "</details> <details> <summary> DockerMan Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        # git -C $GITHUB_WORKSPACE/openwrt/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> release.txt
+        # git -C ${{ github.workspace }}/$RELEASE_TAG/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> release.txt
 
         # echo "</details> <details> <summary> ThemeArgon Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        # git -C $GITHUB_WORKSPACE/openwrt/package/lean/luci-theme-argon log -n $COMMIT_LOG_NUM >> release.txt
+        # git -C ${{ github.workspace }}/$RELEASE_TAG/package/lean/luci-theme-argon log -n $COMMIT_LOG_NUM >> release.txt
 
         # echo "</details> <details> <summary> ArgonConfig Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        # git -C $GITHUB_WORKSPACE/openwrt/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> release.txt
+        # git -C ${{ github.workspace }}/$RELEASE_TAG/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> release.txt
 
         touch release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
@@ -255,14 +213,4 @@ jobs:
         keep_latest: 15
         delete_tags: true
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    # - name: TG Message
-    #   if: env.SERVERCHAN_SCKEY == 'true'
-    #   run: |
-    #     curl -k --data chat_id=${{ secrets.TGID }} --data "text=我亲爱的主人您要编译的$RELEASE_TAG-$(date +"%Y.%m.%d-%H%M")固件编译成功！https://github.com/smallprogram/OpenWrtAction/releases/tag/${{ steps.tag.outputs.release_tag }} " "https://api.telegram.org/bot${{ secrets.TG_TOKEN }}/sendMessage"
-                       
-    # - name: PUSHPLUS Message
-    #   if: env.SERVERCHAN_SCKEY == 'true'
-    #   run: |
-    #     curl -k --data token="${{ secrets.PUSH_PLUS_TOKEN }}" --data title="恭喜主人$RELEASE_TAG-$(date +"%Y.%m.%d-%H%M")固件编译成功！" --data "content=我亲爱的主人您要编译的$RELEASE_TAG-$(date +"%Y.%m.%d-%H%M")固件成功完成了！https://github.com/smallprogram/OpenWrtAction/releases/tag/${{ steps.tag.outputs.release_tag }} " "http://www.pushplus.plus/send"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}       
