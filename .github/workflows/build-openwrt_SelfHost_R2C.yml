@@ -121,82 +121,82 @@ jobs:
       if: (!cancelled())
       run: df -hT
 
-    - name: Organize files
-      id: organize
-      if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
-      run: |
-        cd ${{ github.workspace }}/$RELEASE_TAG/bin/targets/*/*
-        zip -q -r packages.zip packages
-        rm -rf packages
-        for i in `ls`; do mv -f $i `echo "SelfHost_$(date +"%Y%m%d%H%M")_"$i`; done
-        echo "FIRMWARE=$PWD" >> $GITHUB_ENV
-        echo "::set-output name=status::success"
+    # - name: Organize files
+    #   id: organize
+    #   if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
+    #   run: |
+    #     cd ${{ github.workspace }}/$RELEASE_TAG/bin/targets/*/*
+    #     zip -q -r packages.zip packages
+    #     rm -rf packages
+    #     # for i in `ls`; do mv -f $i `echo "SelfHost_$(date +"%Y%m%d%H%M")_"$i`; done
+    #     echo "FIRMWARE=$PWD" >> $GITHUB_ENV
+    #     echo "::set-output name=status::success"
 
-    - name: Upload firmware directory
-      uses: actions/upload-artifact@main
-      if: steps.organize.outputs.status == 'success' && !cancelled()
-      with:
-        name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
-        path: ${{ env.FIRMWARE }}
+    # - name: Upload firmware directory
+    #   uses: actions/upload-artifact@main
+    #   if: steps.organize.outputs.status == 'success' && !cancelled()
+    #   with:
+    #     name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+    #     path: ${{ env.FIRMWARE }}
 
-    - name: Generate release tag
-      id: tag
-      if: env.UPLOAD_RELEASE == 'true' && !cancelled()
-      run: |
-        echo "::set-output name=release_tag::$RELEASE_TAG-$(date +"%Y.%m.%d-%H%M")"
+    # - name: Generate release tag
+    #   id: tag
+    #   if: env.UPLOAD_RELEASE == 'true' && !cancelled()
+    #   run: |
+    #     echo "::set-output name=release_tag::$RELEASE_TAG-$(date +"%Y.%m.%d-%H%M")"
         
-        echo "## Update content" >> release.txt
+    #     echo "## Update content" >> release.txt
 
-        echo "<details> <summary> Lean Openwrt Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C ${{ github.workspace }}/$RELEASE_TAG log -n $COMMIT_LOG_NUM >> release.txt
+    #     echo "<details> <summary> Lean Openwrt Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+    #     git -C ${{ github.workspace }}/$RELEASE_TAG log -n $COMMIT_LOG_NUM >> release.txt
 
-        echo "</details> <details> <summary> Lean Package Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/packages log -n $COMMIT_LOG_NUM >> release.txt
+    #     echo "</details> <details> <summary> Lean Package Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+    #     git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/packages log -n $COMMIT_LOG_NUM >> release.txt
 
-        echo "</details> <details> <summary> Lean Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/luci log -n $COMMIT_LOG_NUM >> release.txt
+    #     echo "</details> <details> <summary> Lean Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+    #     git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/luci log -n $COMMIT_LOG_NUM >> release.txt
 
-        echo "</details> <details> <summary> Openwrt routing Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/routing log -n $COMMIT_LOG_NUM >> release.txt
+    #     echo "</details> <details> <summary> Openwrt routing Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+    #     git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/routing log -n $COMMIT_LOG_NUM >> release.txt
 
-        echo "</details> <details> <summary> Openwrt telephony Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/telephony log -n $COMMIT_LOG_NUM >> release.txt
+    #     echo "</details> <details> <summary> Openwrt telephony Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+    #     git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/telephony log -n $COMMIT_LOG_NUM >> release.txt
 
-        echo "</details> <details> <summary> SSRP Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
+    #     echo "</details> <details> <summary> SSRP Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+    #     git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
 
-        echo "</details> <details> <summary> Passwall Packages Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/passwall_packages log -n $COMMIT_LOG_NUM >> release.txt
+    #     echo "</details> <details> <summary> Passwall Packages Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+    #     git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/passwall_packages log -n $COMMIT_LOG_NUM >> release.txt
 
-        echo "</details> <details> <summary> Passwall Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/passwall_luci log -n $COMMIT_LOG_NUM >> release.txt
+    #     echo "</details> <details> <summary> Passwall Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+    #     git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/passwall_luci log -n $COMMIT_LOG_NUM >> release.txt
 
-        echo "</details> <details> <summary> Passwall2 Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/passwall2 log -n $COMMIT_LOG_NUM >> release.txt
+    #     echo "</details> <details> <summary> Passwall2 Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+    #     git -C ${{ github.workspace }}/$RELEASE_TAG/feeds/passwall2 log -n $COMMIT_LOG_NUM >> release.txt
 
-        # echo "</details> <details> <summary> DockerMan Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        # git -C ${{ github.workspace }}/$RELEASE_TAG/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> release.txt
+    #     # echo "</details> <details> <summary> DockerMan Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+    #     # git -C ${{ github.workspace }}/$RELEASE_TAG/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> release.txt
 
-        # echo "</details> <details> <summary> ThemeArgon Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        # git -C ${{ github.workspace }}/$RELEASE_TAG/package/lean/luci-theme-argon log -n $COMMIT_LOG_NUM >> release.txt
+    #     # echo "</details> <details> <summary> ThemeArgon Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+    #     # git -C ${{ github.workspace }}/$RELEASE_TAG/package/lean/luci-theme-argon log -n $COMMIT_LOG_NUM >> release.txt
 
-        # echo "</details> <details> <summary> ArgonConfig Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        # git -C ${{ github.workspace }}/$RELEASE_TAG/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> release.txt
+    #     # echo "</details> <details> <summary> ArgonConfig Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+    #     # git -C ${{ github.workspace }}/$RELEASE_TAG/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> release.txt
 
-        touch release.txt
-        [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
-        [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
-        echo "::set-output name=status::success"
+    #     touch release.txt
+    #     [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
+    #     [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
+    #     echo "::set-output name=status::success"
 
-    - name: Upload firmware to release
-      uses: softprops/action-gh-release@v1
-      if: steps.tag.outputs.status == 'success' && !cancelled()
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ steps.tag.outputs.release_tag }}
-        body_path: release.txt
-        files: ${{ env.FIRMWARE }}/*
+    # - name: Upload firmware to release
+    #   uses: softprops/action-gh-release@v0.1.14
+    #   if: steps.tag.outputs.status == 'success' && !cancelled()
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     tag_name: ${{ steps.tag.outputs.release_tag }}
+    #     body_path: release.txt
+    #     files: ${{ env.FIRMWARE }}/*
 
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
