@@ -52,5 +52,7 @@ jobs:
 
     - name: Compile the firmware
       run: |
-        cd /home/zhusir/actions-runner/_work/OpenWrtAction/OpenWrtAction
+        cd /home/zhusir
+        if [ ! -d "/home/zhusir/OpenWrtAction" ]; then git clone https://github.com/smallprogram/OpenWrtAction.git; else cd /home/zhusir/OpenWrtAction; git stash; git stash drop; git pull; fi;
+        cd /home/zhusir/OpenWrtAction
         bash wsl2op_param.sh R2S.config

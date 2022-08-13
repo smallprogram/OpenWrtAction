@@ -277,12 +277,12 @@ function Compile_Firmware() {
             LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s --quiet | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
         else
             LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
             LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
             sleep 1s
-            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j1 V=s --quiet | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
         fi
         
     else
@@ -293,12 +293,12 @@ function Compile_Firmware() {
             LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
+            make -j$(($(nproc) + 1)) V=s --quiet | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
         else
             LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
             LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
             sleep 1s
-            make -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
+            make -j1 V=s --quiet | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
         fi
         # $PATH
     fi
