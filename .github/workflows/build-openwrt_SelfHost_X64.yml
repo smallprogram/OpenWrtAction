@@ -52,6 +52,7 @@ jobs:
 
     - name: Compile the firmware
       run: |
-        cd OpenWrtAction
+        cd
+        cd zhusir/actions-runner/OpenWrtAction/OpenWrtAction
         bash wsl2op_param.sh x64.config
 
