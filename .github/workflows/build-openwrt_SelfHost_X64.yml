@@ -32,15 +32,15 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
   
-    - name: Initialization environment
-      env:
-        DEBIAN_FRONTEND: noninteractive
-      run: |
-        echo githubaction | sudo -S -E apt-get -qq update
-        echo githubaction | sudo -S -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-2004)
-        echo githubaction | sudo -S -E apt-get -qq autoremove --purge
-        echo githubaction | sudo -S -E apt-get -qq clean
-        echo githubaction | sudo -S timedatectl set-timezone "$TZ"
+    # - name: Initialization environment
+    #   env:
+    #     DEBIAN_FRONTEND: noninteractive
+    #   run: |
+    #     echo githubaction | sudo -S -E apt-get -qq update
+    #     echo githubaction | sudo -S -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-2004)
+    #     echo githubaction | sudo -S -E apt-get -qq autoremove --purge
+    #     echo githubaction | sudo -S -E apt-get -qq clean
+    #     echo githubaction | sudo -S timedatectl set-timezone "$TZ"
     
     - name: SSH connection to Actions
       uses: P3TERX/ssh2actions@v1.0.0
