@@ -38,10 +38,10 @@ jobs:
     
     - name: Update Action Source
       run: |
-        cd /home/zhusir/actions-runner/_work/OpenWrtAction/OpenWrtAction
+        cd /home/$USER/actions-runner/_work/OpenWrtAction/OpenWrtAction
         bash SelfHostCheck.sh
 
     - name: Compile the firmware
       run: |
-        cd /home/zhusir/OpenWrtAction
+        cd /home/$USER/OpenWrtAction
         bash wsl2op_param.sh R4S.config
