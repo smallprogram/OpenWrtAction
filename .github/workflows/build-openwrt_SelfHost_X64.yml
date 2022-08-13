@@ -49,11 +49,13 @@ jobs:
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
     
-
-    - name: Compile the firmware
+    - name: Update Action Source
       run: |
         cd /home/zhusir
         if [ ! -d "/home/zhusir/OpenWrtAction" ]; then git clone https://github.com/smallprogram/OpenWrtAction.git; else cd /home/zhusir/OpenWrtAction; git stash; git stash drop; git pull; fi;
+
+    - name: Compile the firmware
+      run: |
         cd /home/zhusir/OpenWrtAction
         bash wsl2op_param.sh x64.config
 
