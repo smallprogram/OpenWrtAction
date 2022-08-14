@@ -115,15 +115,23 @@ jobs:
         touch /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
         echo "::set-output name=status::success"
 
-    - name: Upload firmware to release
-      uses: softprops/action-gh-release@v1
-      if: steps.tag.outputs.status == 'success' && !cancelled()
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    # - name: Upload firmware to release
+    #   uses: softprops/action-gh-release@v1
+    #   if: steps.tag.outputs.status == 'success' && !cancelled()
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     tag_name: ${{ steps.tag.outputs.release_tag }}
+    #     body_path: /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
+    #     files: /home/$USER/lede_$CONFIG_NAME/bin/targets/*/*
+
+    - name: Upload files to a GitHub release
+      uses: svenstaro/upload-release-action@2.3.0
       with:
-        tag_name: ${{ steps.tag.outputs.release_tag }}
-        body_path: /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
-        files: /home/$USER/lede_$CONFIG_NAME/bin/targets/*/*
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: /home/$USER/lede_$CONFIG_NAME/bin/targets/*/*
+        tag: ${{ steps.tag.outputs.release_tag }}
+        body: /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
 
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
