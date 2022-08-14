@@ -52,7 +52,7 @@ jobs:
       if: steps.UpdateSource.outputs.status == 'success' && !cancelled()
       run: |
         cd /home/$USER/OpenWrtAction
-        bash wsl2op_param.sh $CONFIG_NAME
+        # bash wsl2op_param.sh $CONFIG_NAME
         echo "::set-output name=status::success"
 
     - name: Organize files
