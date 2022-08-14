@@ -66,7 +66,7 @@ jobs:
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
         cd /home/$USER
-        mkdir -p openwrt_releaselog
+        mkdir -p openwrt_releaselog/$CONFIG_NAME
         cd openwrt_releaselog
         find -mtime +3 | xargs rm -rf
 
