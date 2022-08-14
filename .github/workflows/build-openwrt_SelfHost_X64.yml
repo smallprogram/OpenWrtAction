@@ -69,6 +69,7 @@ jobs:
         mkdir -p openwrt_releaselog/$CONFIG_NAME
         cd openwrt_releaselog
         find -mtime +3 | xargs rm -rf
+        cd /home/$USER
 
         echo "::set-output name=release_tag::SelfHost-$RELEASE_TAG-$(date +"%Y.%m.%d-%H%M")"
 
