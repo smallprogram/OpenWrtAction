@@ -136,6 +136,7 @@ jobs:
     - name: Remove Unuselesss Files To Free Up Space
       id: removeunuselessfiles
       run: |
+        df -hT
         rm -rf  $GITHUB_WORKSPACE/openwrt/build_dir
         rm -rf  $GITHUB_WORKSPACE/openwrt/dl
         rm -rf  $GITHUB_WORKSPACE/openwrt/staging_dir
