@@ -28,6 +28,7 @@ env:
   UPLOAD_RELEASE: true
   COMMIT_LOG_NUM: 1
 
+
 jobs:
   build:
     runs-on: self-hosted
@@ -67,51 +68,51 @@ jobs:
       run: |
         cd /home/$USER
         mkdir -p openwrt_releaselog/$CONFIG_NAME
-        cd openwrt_releaselog
-        find -mtime +3 | xargs rm -rf
+        cd openwrt_releaselog/$CONFIG_NAME
+        find . -name "*.txt" | xargs rm -rf
         cd /home/$USER
 
         echo "::set-output name=release_tag::SelfHost-$RELEASE_TAG-$(date +"%Y.%m.%d-%H%M")"
 
-        echo "## Update content" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
+        echo "## Update content" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
 
-        echo "<details> <summary> Lean Openwrt Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
-        git -C lede_$CONFIG_NAME log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
+        echo "<details> <summary> Lean Openwrt Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
+        git -C lede_$CONFIG_NAME log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
 
-        echo "</details> <details> <summary> Lean Package Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
-        git -C lede_$CONFIG_NAME/feeds/packages log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
+        echo "</details> <details> <summary> Lean Package Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
+        git -C lede_$CONFIG_NAME/feeds/packages log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
 
-        echo "</details> <details> <summary> Lean Luci Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
-        git -C lede_$CONFIG_NAME/feeds/luci log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
+        echo "</details> <details> <summary> Lean Luci Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
+        git -C lede_$CONFIG_NAME/feeds/luci log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
 
-        echo "</details> <details> <summary> Openwrt routing Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
-        git -C lede_$CONFIG_NAME/feeds/routing log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
+        echo "</details> <details> <summary> Openwrt routing Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
+        git -C lede_$CONFIG_NAME/feeds/routing log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
 
-        echo "</details> <details> <summary> Openwrt telephony Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
-        git -C lede_$CONFIG_NAME/feeds/telephony log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
+        echo "</details> <details> <summary> Openwrt telephony Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
+        git -C lede_$CONFIG_NAME/feeds/telephony log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
 
-        echo "</details> <details> <summary> SSRP Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
-        git -C lede_$CONFIG_NAME/feeds/helloworld log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
+        echo "</details> <details> <summary> SSRP Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
+        git -C lede_$CONFIG_NAME/feeds/helloworld log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
 
-        echo "</details> <details> <summary> Passwall Packages Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
-        git -C lede_$CONFIG_NAME/feeds/passwall_packages log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
+        echo "</details> <details> <summary> Passwall Packages Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
+        git -C lede_$CONFIG_NAME/feeds/passwall_packages log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
 
-        echo "</details> <details> <summary> Passwall Luci Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
-        git -C lede_$CONFIG_NAME/feeds/passwall_luci log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
+        echo "</details> <details> <summary> Passwall Luci Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
+        git -C lede_$CONFIG_NAME/feeds/passwall_luci log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
 
-        echo "</details> <details> <summary> Passwall2 Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
-        git -C lede_$CONFIG_NAME/feeds/passwall2 log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
+        echo "</details> <details> <summary> Passwall2 Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
+        git -C lede_$CONFIG_NAME/feeds/passwall2 log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
 
-        # echo "</details> <details> <summary> DockerMan Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
-        # git -C lede_$CONFIG_NAME/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
+        # echo "</details> <details> <summary> DockerMan Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
+        # git -C lede_$CONFIG_NAME/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
 
-        # echo "</details> <details> <summary> ThemeArgon Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
-        # git -C lede_$CONFIG_NAME/package/lean/luci-theme-argon log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
+        # echo "</details> <details> <summary> ThemeArgon Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
+        # git -C lede_$CONFIG_NAME/package/lean/luci-theme-argon log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
 
-        # echo "</details> <details> <summary> ArgonConfig Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
-        # git -C lede_$CONFIG_NAME/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
+        # echo "</details> <details> <summary> ArgonConfig Commit Top $COMMIT_LOG_NUM </summary>" >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
+        # git -C lede_$CONFIG_NAME/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
 
-        touch /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
+        touch /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
         echo "::set-output name=status::success"
 
     - name: Upload firmware to release
@@ -121,8 +122,8 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: ${{ steps.tag.outputs.release_tag }}
-        body_path: /home/$USER/openwrt_releaselog/$CONFIG_NAME/release-$(date +"%Y.%m.%d-%H%M").txt
-        files: lede_$CONFIG_NAME/bin/targets/*/*
+        body_path: /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
+        files: /home/$USER/lede_$CONFIG_NAME/bin/targets/*/*
 
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
