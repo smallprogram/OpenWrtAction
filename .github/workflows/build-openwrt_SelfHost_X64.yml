@@ -129,9 +129,9 @@ jobs:
       uses: svenstaro/upload-release-action@2.3.0
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: /home/$USER/lede_$CONFIG_NAME/bin/targets/*/*
+        file: /home/zhusir/lede_x64.config/bin/targets/*/*
         tag: ${{ steps.tag.outputs.release_tag }}
-        body: /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
+        body: /home/zhusir/openwrt_releaselog/x64.config/release.txt
 
     - name: Delete workflow runs
       uses: GitRML/delete-workflow-runs@main
