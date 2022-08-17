@@ -48,7 +48,7 @@ log_diff_config=.config_diff
 clean_day=3
 # 扩展luci插件地址
 luci_apps=(
-    https://github.com/jerrykuku/luci-theme-argon.git
+    # https://github.com/jerrykuku/luci-theme-argon.git
     https://github.com/jerrykuku/luci-app-argon-config.git
     # https://github.com/jerrykuku/lua-maxminddb.git
     # https://github.com/jerrykuku/luci-app-vssr.git
@@ -142,12 +142,12 @@ function Get_luci_apps(){
         LogMessage "\033[31m 开始同步$dir.... \033[0m" "\033[31m Start syncing $dir.... \033[0m"
         sleep 2s
 
-        if [[ $isFirstCompile == 1 && $dir == luci-theme-argon ]]; then
-            cd /home/${userName}/${ledeDir}/package/lean/
-            rm -rf $dir
-            git clone -b 18.06 $luci_app
-            continue
-        fi
+        # if [[ $isFirstCompile == 1 && $dir == luci-theme-argon ]]; then
+        #     cd /home/${userName}/${ledeDir}/package/lean/
+        #     rm -rf $dir
+        #     git clone -b 18.06 $luci_app
+        #     continue
+        # fi
 
         # if [[ $luci_app == https://github.com/xiaorouji/openwrt-passwall.git ]]; then
         #     cd /home/${userName}/${ledeDir}/package/lean/
