@@ -44,12 +44,6 @@
 |UU Accelerator|Plugins|A must-have plug-in for local players, to accelerate PS5 Switch, etc.|lean code source|
 |FRP|Plugin|Intranet penetration|lean code source|
 |MWAN3|Plugin|Multi-line load balancing|lean code source|
-|Transmission|Plugin|Downloader|lean code source|
-|Aria2|Plugin|Downloader|lean code source|
-|qBittorrent|Plugin|Downloader|lean code source|
-|aMule|Plugin|Downloader|lean code source|
-|Aliyun-WebDav|Plugin|Downloader|lean code source|
-|SSR Python Server|Service|SSR Server|lean code source|
 |OpenVPN Server|Service|OpenVPN Server|lean code source|
 |PPTP VPN Server|Service|PPTP VPN Server|lean code source|
 |IPSec VPN Server|Service|IPSec VPN Server|lean code source|
@@ -65,6 +59,7 @@
 -|-|-|-
 X86 platform|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/x64.config|
 Pi4_Model_B|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/Pi4_Model_B.config
+R5S soft routing|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R5S.config
 R4S soft routing|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config
 R2S soft routing|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2S.config
 R2C soft routing|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2C.config

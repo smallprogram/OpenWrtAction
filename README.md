@@ -1,5 +1,5 @@
 
-[![releases](https://img.shields.io/badge/support-x86|Pi4ModelB|R4S|R2S|R2C-blue?style=flat&logo=rss)](https://github.com/smallprogram/OpenWrtAction/releases)  [![Lean](https://img.shields.io/badge/SourceCode-Lean-green?style=flat&logo=GitHub)](https://github.com/coolsnowwolf/lede) [![releases](https://img.shields.io/badge/UpdateCheck-blueviolet?style=flat&logo=Checkmarx)](https://github.com/smallprogram/OpenWrtAction/releases) [![Action](https://img.shields.io/badge/GithubAction-5Actions-important?style=flat&logo=GitHubActions)](https://github.com/smallprogram/OpenWrtAction/actions) [![LICENSE](https://img.shields.io/badge/LICENSE-MIT-important?style=flat)](https://github.com/smallprogram/OpenWrtAction/blob/main/LICENSE)
+[![releases](https://img.shields.io/badge/support-x86|Pi4ModelB|R5S|R4S|R2S|R2C-blue?style=flat&logo=rss)](https://github.com/smallprogram/OpenWrtAction/releases)  [![Lean](https://img.shields.io/badge/SourceCode-Lean-green?style=flat&logo=GitHub)](https://github.com/coolsnowwolf/lede) [![releases](https://img.shields.io/badge/UpdateCheck-blueviolet?style=flat&logo=Checkmarx)](https://github.com/smallprogram/OpenWrtAction/releases) [![Action](https://img.shields.io/badge/GithubAction-5Actions-important?style=flat&logo=GitHubActions)](https://github.com/smallprogram/OpenWrtAction/actions) [![LICENSE](https://img.shields.io/badge/LICENSE-MIT-important?style=flat)](https://github.com/smallprogram/OpenWrtAction/blob/main/LICENSE)
 
 
 # [English Readme](README_EN.md)
@@ -11,11 +11,11 @@
 # 目录<!-- omit in toc --> 
 - [新增TG跟Wechat推送说明](source/bot.md)
 - [Lean Openwrt GitHubAction](#lean-openwrt-githubaction)
-    - [目前包含x86与R4S固件,根据源码更新自动编译](#目前包含x86与r4s固件根据源码更新自动编译)
+    - [目前包含x86与ARM固件,根据源码更新自动编译](#目前包含x86与ARM固件根据源码更新自动编译)
   - [包含内容](#包含内容)
       - [包含各种常用插件，特殊的内容如下：](#包含各种常用插件特殊的内容如下)
   - [config列表](#config列表)
-  - [argon主题的背景资源](#argon主题的背景资源)
+  - [argon主题的背景资源](https://github.com/smallprogram/OpenWrtAction/tree/main/source)
   - [具体功能组件相关截图：](#具体功能组件相关截图)
   - [wsl2op.sh本地自动编译shell脚本说明](#wsl2opsh本地自动编译shell脚本说明)
     - [执行方式](#执行方式)
@@ -53,11 +53,6 @@
 |UU加速器|插件|土豪玩家必备插件，加速PS5 Switch等|lean code source|
 |FRP|插件|内网穿透|lean code source|
 |MWAN3|插件|多线的负载均衡|lean code source|
-|~~Transmission~~|~~插件~~|~~下载器~~|~~lean code source~~|
-|~~Aria2~~|~~插件~~|~~下载器~~|~~lean code source~~|
-|~~qBittorrent~~|~~插件~~|~~下载器~~|~~lean code source~~|
-|~~Aliyun-WebDav~~|~~插件~~|~~下载器~~|~~lean code source~~|
-|~~SSR Python Server~~|~~服务~~|~~SSR服务端~~|~~lean code source~~|
 |OpenVPN Server|服务|OpenVPN服务端|lean code source|
 |PPTP VPN Server|服务|PPTP VPN服务端|lean code source|
 |IPSec VPN Server|服务|IPSec VPN服务端|lean code source|
@@ -73,9 +68,12 @@
 -|-|-|-
 X86平台|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/x64.config|
 Pi4_Model_B|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/Pi4_Model_B.config
+R5S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R5S.config
 R4S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config
 R2S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2S.config
 R2C软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2C.config
+
+
 
 ## 具体功能组件相关截图：
 ![image](source/function.png)
