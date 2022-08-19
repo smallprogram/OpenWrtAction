@@ -53,7 +53,8 @@ rm -rf /usr/local/src/openssl-1.1.1q.tar.gz
 echo -e "\033[31m 开始申请ECC证书 \033[0m"
 cd
 curl https://get.acme.sh | sh -s email=abc@abc.com
-source ~/.bashrc
+
+alias acme.sh=~/.acme.sh/acme.sh
 
 acme.sh --issue -w /etc/nginx/html -d $domainName --keylength ec-256
 
