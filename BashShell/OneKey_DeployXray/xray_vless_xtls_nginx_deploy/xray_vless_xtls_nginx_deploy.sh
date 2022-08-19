@@ -14,6 +14,8 @@ echo -e "\033[31m 请输入你的域名，请一定确保这个域名A记录已�
 
 read domainName
 
+cd
+
 echo -e "\033[31m 开始更新系统 \033[0m"
 apt-get -y update 
 apt-get -y install socat
@@ -49,6 +51,7 @@ rm -rf /usr/local/src/openssl-1.1.1q
 rm -rf /usr/local/src/openssl-1.1.1q.tar.gz
 
 echo -e "\033[31m 开始申请ECC证书 \033[0m"
+cd
 curl https://get.acme.sh | sh -s email=abc@abc.com
 source ~/.bashrc
 
