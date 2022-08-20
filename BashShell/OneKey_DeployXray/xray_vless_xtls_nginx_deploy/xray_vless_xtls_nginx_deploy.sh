@@ -16,18 +16,23 @@ read domainName
 
 cd
 
+
+
 echo -e "\033[31m 开始更新系统 \033[0m"
+sleep 5s
 apt-get -y update 
 apt-get -y install socat
-
+echo -e "\033[31m 系统更新完毕 \033[0m"
+sleep 5s
 
 echo -e "\033[31m 开始编译安装Nginx \033[0m"
+sleep 5s
 wget -nc --no-check-certificate https://www.openssl.org/source/openssl-1.1.1q.tar.gz -P /usr/local/src
 tar -zxvf  /usr/local/src/openssl-1.1.1q.tar.gz  -C /usr/local/src
 wget -nc --no-check-certificate http://nginx.org/download/nginx-1.23.1.tar.gz -P /usr/local/src
 tar -zxvf /usr/local/src/nginx-1.23.1.tar.gz -C /usr/local/src
 apt  -y install build-essential libpcre3 libpcre3-dev zlib1g-dev git  dbus manpages-dev aptitude g++
-mkdir /etc/nginx
+mkdir -p /etc/nginx
 cd /usr/local/src/nginx-1.23.1
 
 ./configure --prefix=/etc/nginx \
@@ -50,25 +55,68 @@ rm -rf /usr/local/src/nginx-1.23.1.tar.gz
 rm -rf /usr/local/src/openssl-1.1.1q
 rm -rf /usr/local/src/openssl-1.1.1q.tar.gz
 
+echo -e "\033[31m Nginx编译安装完毕 \033[0m"
+sleep 5s
+
+cp /etc/nginx/conf/nginx.conf -d /etc/nginx/conf/nginx.conf.default.bak.$(date +"%Y.%m.%d-%H%M")
+echo -e "\033[31m 备份Nginx默认配置完毕 \033[0m"
+sleep 5s
+
+
+echo -e "\033[31m 开始创建Nginx服务，并开启Nginx \033[0m"
+sleep 5s
+cat >/etc/systemd/system/nginx.service <<EOF
+[Unit]
+Description=The NGINX HTTP and reverse proxy server
+After=syslog.target network.target remote-fs.target nss-lookup.target
+[Service]
+Type=forking
+PIDFile=/etc/nginx/logs/nginx.pid
+ExecStartPre=/etc/nginx/sbin/nginx -t
+ExecStart=/etc/nginx/sbin/nginx -c /etc/nginx/conf/nginx.conf
+ExecReload=/etc/nginx/sbin/nginx -s reload
+ExecStop=/bin/kill -s QUIT \$MAINPID
+PrivateTmp=true
+User=root
+[Install]
+WantedBy=multi-user.target
+EOF
+
+systemctl daemon-reload
+systemctl enable nginx
+systemctl restart nginx
+echo -e "\033[31m 开启Nginx完毕 \033[0m"
+sleep 5s
+
 echo -e "\033[31m 开始申请ECC证书 \033[0m"
+sleep 5s
 cd
 curl https://get.acme.sh | sh -s email=abc@abc.com
 
 alias acme.sh=~/.acme.sh/acme.sh
 
-acme.sh --issue -w /etc/nginx/html -d $domainName --keylength ec-256
+/root/.acme.sh/acme.sh --issue -w /etc/nginx/html -d $domainName --keylength ec-256
 
-mkdir /data
-mkdir /data/$domainName
+echo -e "\033[31m 申请ECC证书完成 \033[0m"
+sleep 5s
 
-acme.sh --installcert -d $domainName --fullchainpath /data/$domainName/fullchain.crt --keypath /data/$domainName/$domainName.key --ecc --force
+echo -e "\033[31m 开始安装ECC证书 \033[0m"
+sleep 5s
+mkdir -p /data
+mkdir -p /data/$domainName
+
+/root/.acme.sh/acme.sh --installcert -d $domainName --fullchainpath /data/$domainName/fullchain.crt --keypath /data/$domainName/$domainName.key --ecc --force
+echo -e "\033[31m 安装ECC证书完成 \033[0m"
+sleep 5s
+
 
 echo -e "\033[31m 开始配置Nginx \033[0m"
-mkdir /usr/wwwroot
+sleep 5s
+mkdir -p /usr/wwwroot
 wget -P /usr/wwwroot https://github.com/smallprogram/OpenWrtAction/raw/main/source/web.zip
 unzip -o /usr/wwwroot/web.zip -d /usr/wwwroot
 
-cp /etc/nginx/conf/nginx.conf -d /etc/nginx/conf/nginx.conf.bak
+cp /etc/nginx/conf/nginx.conf -d /etc/nginx/conf/nginx.conf.bak.$(date +"%Y.%m.%d-%H%M")
 
 cat > /etc/nginx/conf/nginx.conf <<EOF
 user  root;
@@ -122,29 +170,14 @@ http {
 }
 EOF
 
-cat >/etc/systemd/system/nginx.service <<EOF
-[Unit]
-Description=The NGINX HTTP and reverse proxy server
-After=syslog.target network.target remote-fs.target nss-lookup.target
-[Service]
-Type=forking
-PIDFile=/etc/nginx/logs/nginx.pid
-ExecStartPre=/etc/nginx/sbin/nginx -t
-ExecStart=/etc/nginx/sbin/nginx -c /etc/nginx/conf/nginx.conf
-ExecReload=/etc/nginx/sbin/nginx -s reload
-ExecStop=/bin/kill -s QUIT \$MAINPID
-PrivateTmp=true
-User=root
-[Install]
-WantedBy=multi-user.target
-EOF
-
 systemctl daemon-reload
-systemctl enable nginx
 systemctl restart nginx
 
-echo -e "\033[31m 开始安装并配置xray \033[0m"
+echo -e "\033[31m 配置Nginx完成 \033[0m"
+sleep 5s
 
+echo -e "\033[31m 开始安装并配置xray \033[0m"
+sleep 5s
 bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install -u root --beta
 
 
@@ -221,5 +254,4 @@ cat >/usr/local/etc/xray/config.json <<EOF
 EOF
 
 service xray restart
-
 echo -e "\033[31m 配置完成，请访问 https://$domainName:4430 \033[0m"
