@@ -113,7 +113,7 @@ sleep 5s
 echo -e "\033[31m 开始配置Nginx \033[0m"
 sleep 5s
 mkdir -p /usr/wwwroot
-wget -P /usr/wwwroot https://github.com/smallprogram/OpenWrtAction/raw/main/source/web.zip
+wget -P /usr/wwwroot https://github.com/smallprogram/OpenWrtAction/raw/main/source/WebSite/web01.zip
 apt-get -y install unzip
 unzip -o /usr/wwwroot/web.zip -d /usr/wwwroot
 
