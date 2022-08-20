@@ -114,6 +114,7 @@ echo -e "\033[31m 开始配置Nginx \033[0m"
 sleep 5s
 mkdir -p /usr/wwwroot
 wget -P /usr/wwwroot https://github.com/smallprogram/OpenWrtAction/raw/main/source/web.zip
+apt-get -y install unzip
 unzip -o /usr/wwwroot/web.zip -d /usr/wwwroot
 
 cp /etc/nginx/conf/nginx.conf -d /etc/nginx/conf/nginx.conf.bak.$(date +"%Y.%m.%d-%H%M")
@@ -192,6 +193,61 @@ cat >/usr/local/etc/xray/config.json <<EOF
     {
       "tag": "vlessUser",
       "port": 4430,
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "faed07bb-7362-4103-80d1-28efa9373e53",
+            "flow": "xtls-rprx-direct",
+            "level": 0,
+            "email": "home"
+          },
+          {
+            "id": "98dbc57b-8a06-4ff9-a306-8a447360c156",
+            "flow": "xtls-rprx-direct",
+            "level": 0,
+            "email": "cgyy"
+          },
+          {
+            "id": "53523f6f-231b-45ff-a225-8bbd649876aa",
+            "flow": "xtls-rprx-direct",
+            "level": 0,
+            "email": "temp"
+          }
+        ],
+        "decryption": "none",
+        "fallbacks": [
+          {
+            "dest": "/dev/shm/default.sock",
+            "xver": 1
+          },
+          {
+            "alpn": "h2",
+            "dest": "/dev/shm/h2c.sock",
+            "xver": 1
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "xtls",
+        "xtlsSettings": {
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ],
+          "certificates": [
+            {
+              "certificateFile": "/data/$domainName/fullchain.crt",
+              "keyFile": "/data/$domainName/$domainName.key"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "tag": "vlessUserSSL",
+      "port": 443,
       "protocol": "vless",
       "settings": {
         "clients": [
