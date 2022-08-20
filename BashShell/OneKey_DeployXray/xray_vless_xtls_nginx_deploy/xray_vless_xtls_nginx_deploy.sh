@@ -181,6 +181,11 @@ echo -e "\033[31m 开始安装并配置xray \033[0m"
 sleep 5s
 bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release.sh)" @ install -u root --beta
 
+echo -e "\033[31m 开始生成随机UUID \033[0m"
+sleep 5s
+
+uuid=$(xray uuid)
+
 
 cat >/usr/local/etc/xray/config.json <<EOF
 {
@@ -212,7 +217,19 @@ cat >/usr/local/etc/xray/config.json <<EOF
             "id": "53523f6f-231b-45ff-a225-8bbd649876aa",
             "flow": "xtls-rprx-direct",
             "level": 0,
-            "email": "temp"
+            "email": "Temp01"
+          },
+          {
+            "id": "216058ae-7108-4831-bb95-6eef84ab4510",
+            "flow": "xtls-rprx-direct",
+            "level": 0,
+            "email": "Temp02"
+          },
+          {
+            "id": "$uuid",
+            "flow": "xtls-rprx-direct",
+            "level": 0,
+            "email": "Custom"
           }
         ],
         "decryption": "none",
@@ -246,7 +263,7 @@ cat >/usr/local/etc/xray/config.json <<EOF
       }
     },
     {
-      "tag": "vlessUserSSL",
+      "tag": "vlessCDN",
       "port": 443,
       "protocol": "vless",
       "settings": {
@@ -267,7 +284,19 @@ cat >/usr/local/etc/xray/config.json <<EOF
             "id": "53523f6f-231b-45ff-a225-8bbd649876aa",
             "flow": "xtls-rprx-direct",
             "level": 0,
-            "email": "temp"
+            "email": "Temp01"
+          },
+          {
+            "id": "216058ae-7108-4831-bb95-6eef84ab4510",
+            "flow": "xtls-rprx-direct",
+            "level": 0,
+            "email": "Temp02"
+          },
+          {
+            "id": "$uuid",
+            "flow": "xtls-rprx-direct",
+            "level": 0,
+            "email": "Custom"
           }
         ],
         "decryption": "none",
@@ -280,13 +309,18 @@ cat >/usr/local/etc/xray/config.json <<EOF
             "alpn": "h2",
             "dest": "/dev/shm/h2c.sock",
             "xver": 1
+          },
+          {
+            "path": "/VlessWS",
+            "dest": 6666,
+            "xver": 1
           }
         ]
       },
       "streamSettings": {
         "network": "tcp",
-        "security": "xtls",
-        "xtlsSettings": {
+        "security": "tls",
+        "tlsSettings": {
           "alpn": [
             "h2",
             "http/1.1"
@@ -299,15 +333,125 @@ cat >/usr/local/etc/xray/config.json <<EOF
           ]
         }
       }
+    },
+    {
+      "port": 6666,
+      "listen": "127.0.0.1",
+      "protocol": "vless",
+      "settings": {
+        "clients": [
+          {
+            "id": "faed07bb-7362-4103-80d1-28efa9373e53",
+            "level": 0,
+            "email": "home"
+          },
+          {
+            "id": "98dbc57b-8a06-4ff9-a306-8a447360c156",
+            "level": 0,
+            "email": "cgyy"
+          },
+          {
+            "id": "53523f6f-231b-45ff-a225-8bbd649876aa",
+            "level": 0,
+            "email": "Temp01"
+          },
+          {
+            "id": "216058ae-7108-4831-bb95-6eef84ab4510",
+            "level": 0,
+            "email": "Temp02"
+          },
+          {
+            "id": "$uuid",
+            "level": 0,
+            "email": "Custom"
+          }
+        ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "acceptProxyProtocol": true,
+          "path": "/VlessWS"
+        }
+      }
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": 60443,
+      "protocol": "dokodemo-door",
+      "settings": {
+        "address": "127.0.0.1"
+      },
+      "tag": "api"
     }
   ],
+  "stats": {},
+  "api": {
+    "tag": "api",
+    "services": [
+      "HandlerService",
+      "LoggerService",
+      "StatsService"
+    ]
+  },
+  "policy": {
+    "levels": {
+      "0": {
+        "statsUserUplink": true,
+        "statsUserDownlink": true
+      }
+    },
+    "system": {
+      "statsInboundUplink": true,
+      "statsInboundDownlink": true,
+      "statsOutboundUplink": true,
+      "statsOutboundDownlink": true
+    }
+  },
   "outbounds": [
     {
       "protocol": "freedom"
     }
-  ]
+  ],
+  "routing": {
+    "settings": {
+      "rules": [
+        {
+          "inboundTag": [
+            "api"
+          ],
+          "outboundTag": "api",
+          "type": "field"
+        }
+      ]
+    },
+    "strategy": "rules"
+  }
 }
 EOF
 
 service xray restart
-echo -e "\033[31m 配置完成，请访问 https://$domainName:4430 \033[0m"
+
+echo -e "\033[31m Xray Vless+TCP+XTLS配置完毕，具体内容如下： \033[0m"
+echo -e "\033[34m 地址：$domainName \033[0m"
+echo -e "\033[34m 端口：443 \033[0m"
+echo -e "\033[34m 协议：Vless \033[0m"
+echo -e "\033[34m ID: $uuid \033[0m"
+echo -e "\033[34m 传输协议: TCP \033[0m"
+echo -e "\033[34m 建议流控: xtls-rprx-splice 或 xtls-rprx-direct \033[0m"
+echo -e "\033[34m   \033[0m"
+
+echo -e "\033[31m Xray Vless+TCP+XTLS+Websocket 配置完毕，可套用CDN，具体内容如下： \033[0m"
+echo -e "\033[34m 地址：$domainName \033[0m"
+echo -e "\033[34m 端口：443 \033[0m"
+echo -e "\033[34m 协议：Vless \033[0m"
+echo -e "\033[34m ID: $uuid \033[0m"
+echo -e "\033[34m 传输协议: WebSocket \033[0m"
+echo -e "\033[34m 路径: /VlessWS \033[0m"
+echo -e "\033[34m 主机名(伪装域名): $domainName \033[0m"
+echo -e "\033[34m 当你需要使用CDN时，请将地址改为优选后的CDN IP \033[0m"
+echo -e "\033[34m   \033[0m"
+
+echo -e "\033[31m 配置完成，请访问 https://$domainName 查看网站效果 \033[0m"
