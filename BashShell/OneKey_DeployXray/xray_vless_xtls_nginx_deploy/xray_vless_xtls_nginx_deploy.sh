@@ -436,7 +436,7 @@ service xray restart
 
 echo -e "\033[31m Xray Vless+TCP+XTLS配置完毕，具体内容如下： \033[0m"
 echo -e "\033[34m 地址：$domainName \033[0m"
-echo -e "\033[34m 端口：443 \033[0m"
+echo -e "\033[34m 端口：4430 \033[0m"
 echo -e "\033[34m 协议：Vless \033[0m"
 echo -e "\033[34m ID: $uuid \033[0m"
 echo -e "\033[34m 传输协议: TCP \033[0m"
