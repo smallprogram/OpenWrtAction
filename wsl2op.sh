@@ -311,7 +311,13 @@ function Func_Compile_Firmware() {
     # git --git-dir=/home/${userName}/${ledeDir}/.git --work-tree=/home/${userName}/${ledeDir} checkout master
     # git --git-dir=/home/${userName}/${ledeDir}/.git --work-tree=/home/${userName}/${ledeDir} clean -xdf
 
-    exit
+    if [ ! -n "$is_compile_error" ]; then
+        echo "返回值：$is_compile_error"
+        exit 0
+    else
+        echo "返回值：$is_compile_error"
+        exit 1
+    fi
 }
 
 # config文件夹的config文件列表函数
@@ -657,11 +663,5 @@ function Func_Main(){
 #--------------------⬇⬇⬇⬇BashShell⬇⬇⬇⬇--------------------
 Func_Main
 
-if [ ! -n "$is_compile_error" ]; then
-    echo "返回值：$is_compile_error"
-    exit 0
-else
-    echo "返回值：$is_compile_error"
-    exit 1
-fi
+
 
