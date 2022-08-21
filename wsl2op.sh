@@ -57,12 +57,15 @@ luci_apps=(
     # https://github.com/xiaorouji/openwrt-passwall.git
     https://github.com/rufengsuixing/luci-app-adguardhome.git
 )
+#是否编译报错
+is_compile_error=""
 
 #--------------------⬇⬇⬇⬇各种函数⬇⬇⬇⬇--------------------
 #错误处理函数
 function Func_Error_exit {
   echo "$1" 1>&2
-  exit 1
+  is_compile_error="error"
+#   exit 1
 }
 
 # 输出默认语言函数
@@ -255,12 +258,12 @@ function Func_Compile_Firmware() {
             Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s || Func_Error_exit "编译失败..." | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            (PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s || Func_Error_exit "编译失败...") | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
         else
             Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
             Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
             sleep 1s
-            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j1 V=s || Func_Error_exit "编译失败..." | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            (PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j1 V=s || Func_Error_exit "编译失败...") | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
         fi
         
     else
@@ -271,12 +274,12 @@ function Func_Compile_Firmware() {
             Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            make -j$(($(nproc) + 1)) V=s || Func_Error_exit "编译失败..." | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            (make -j$(($(nproc) + 1)) V=s || Func_Error_exit "编译失败...") | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
         else
             Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
             Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
             sleep 1s
-            make -j1 V=s || Func_Error_exit "编译失败..." | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            (make -j1 V=s || Func_Error_exit "编译失败...") | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
         fi
         # $PATH
     fi
@@ -636,6 +639,7 @@ function Func_Main(){
 
     fi
 
+
     export GIT_SSL_NO_VERIFY=0
     echo
 }
@@ -652,4 +656,10 @@ function Func_Main(){
 
 #--------------------⬇⬇⬇⬇BashShell⬇⬇⬇⬇--------------------
 Func_Main
+
+if [ ! -n "$is_compile_error" ]; then
+    exit 0
+else
+    exit 1
+fi
 
