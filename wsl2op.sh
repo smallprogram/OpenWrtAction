@@ -658,8 +658,10 @@ function Func_Main(){
 Func_Main
 
 if [ ! -n "$is_compile_error" ]; then
+    echo "返回值：$is_compile_error"
     exit 0
 else
+    echo "返回值：$is_compile_error"
     exit 1
 fi
 
