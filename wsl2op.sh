@@ -365,7 +365,7 @@ function Func_CleanLogFolder(){
         read -t $timer isclean
         if [ ! -n "$isclean" ]; then
             cd /home/${userName}/${log_folder_name}
-            find -mtime +$clean_day | xargs rm -rf
+            find -mtime +$clean_day -type d | xargs rm -rf
             Func_LogMessage "\033[31m 清理成功 \033[0m" "\033[31m Cleaned up successfully \033[0m"
         else
             Func_LogMessage "\033[34m OK，不清理超过$clean_day天的日志文件 \033[0m" "\033[34m OK, do not clean up log files older than $clean_day \033[0m"
