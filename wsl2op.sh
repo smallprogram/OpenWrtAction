@@ -57,17 +57,9 @@ luci_apps=(
     # https://github.com/xiaorouji/openwrt-passwall.git
     https://github.com/rufengsuixing/luci-app-adguardhome.git
 )
-#是否编译报错
-is_compile_error=""
+
 
 #--------------------⬇⬇⬇⬇各种函数⬇⬇⬇⬇--------------------
-#错误处理函数
-function Func_Error_exit {
-  echo "$1" 1>&2
-  is_compile_error="error"
-#   exit 1
-}
-
 # 输出默认语言函数
 function Func_LogMessage(){
     if [ ! -n "$isChinese" ];then
@@ -249,6 +241,7 @@ function Func_Compile_Firmware() {
 
     Func_LogMessage "\033[34m 开始执行make编译! \033[0m" "\033[34m Start to execute make compilation! \033[0m"
     sleep 1s
+    result=0
     if [[ $sysenv == 1 ]]
     then
         Func_LogMessage "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m" "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
@@ -258,12 +251,12 @@ function Func_Compile_Firmware() {
             Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            (PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s || Func_Error_exit "编译失败...") | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            (PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s || result=1) | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
         else
             Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
             Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
             sleep 1s
-            (PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j1 V=s || Func_Error_exit "编译失败...") | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            (PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j1 V=s || result=1) | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
         fi
         
     else
@@ -274,12 +267,12 @@ function Func_Compile_Firmware() {
             Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            (make -j$(($(nproc) + 1)) V=s || Func_Error_exit "编译失败...") | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            (make -j$(($(nproc) + 1)) V=s || result=1) | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
         else
             Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
             Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
             sleep 1s
-            (make -j1 V=s || Func_Error_exit "编译失败...") | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            (make -j1 V=s || result=1) | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
         fi
         # $PATH
     fi
@@ -311,12 +304,12 @@ function Func_Compile_Firmware() {
     # git --git-dir=/home/${userName}/${ledeDir}/.git --work-tree=/home/${userName}/${ledeDir} checkout master
     # git --git-dir=/home/${userName}/${ledeDir}/.git --work-tree=/home/${userName}/${ledeDir} clean -xdf
 
-    if [ ! -n "$is_compile_error" ]; then
-        echo "返回值：$is_compile_error"
-        exit 0
+    echo -e "result: $result"
+
+    if [[ $result == 1 ]]; then
+        return $result
     else
-        echo "返回值：$is_compile_error"
-        exit 1
+        return 0
     fi
 }
 
@@ -366,6 +359,7 @@ function Func_CleanLogFolder(){
         if [ ! -n "$isclean" ]; then
             cd /home/${userName}/${log_folder_name}
             find -mtime +$clean_day -type d | xargs rm -rf
+            find -mtime +$clean_day -type f | xargs rm -rf
             Func_LogMessage "\033[31m 清理成功 \033[0m" "\033[31m Cleaned up successfully \033[0m"
         else
             Func_LogMessage "\033[34m OK，不清理超过$clean_day天的日志文件 \033[0m" "\033[34m OK, do not clean up log files older than $clean_day \033[0m"
@@ -549,6 +543,9 @@ function Func_Main(){
         if [[ $num == 1 ]]
         then
             Func_Compile_Firmware
+            ComplieResult=$?
+            echo -e "exit : $ComplieResult"
+            return $ComplieResult
         fi
     else
         num=2
@@ -639,15 +636,15 @@ function Func_Main(){
         
         if [[ $num_continue == 1 ]]; then
             Func_Compile_Firmware
+            ComplieResult=$?
+            echo -e "exit : $ComplieResult"
+            return $ComplieResult
         else
-            exit
+            return 0
         fi
 
     fi
 
-
-    export GIT_SSL_NO_VERIFY=0
-    echo
 }
 
 # 将编译的固件提交到GitHubRelease
@@ -662,6 +659,4 @@ function Func_Main(){
 
 #--------------------⬇⬇⬇⬇BashShell⬇⬇⬇⬇--------------------
 Func_Main
-
-
-
+exit $?
