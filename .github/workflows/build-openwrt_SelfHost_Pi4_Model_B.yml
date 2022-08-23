@@ -56,15 +56,23 @@ jobs:
         bash wsl2op.sh $CONFIG_NAME
         echo "::set-output name=status::success"
 
+    # - name: Compile Error Post Log To Issue
+    #   id: test
+    #   if: steps.complie.outputs.status != 'success' && !cancelled()
+    #   run: |
+    #     do someting
+
+
     # - name: Organize files
     #   id: organize
+    #   if: steps.complie.outputs.status == 'success' && !cancelled()
     #   run: |
     #     cd /home/$USER/lede_$CONFIG_NAME/bin/targets/*/*
     #     rm -rf packages
 
     # - name: Generate release tag
     #   id: tag
-    #   if: env.UPLOAD_RELEASE == 'true' && !cancelled()
+    #   if: steps.complie.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
     #   run: |
     #     cd /home/$USER
     #     mkdir -p openwrt_releaselog/$CONFIG_NAME
@@ -119,7 +127,7 @@ jobs:
 
     # - name: Upload firmware to release
     #   uses: softprops/action-gh-release@v1
-    #   if: steps.tag.outputs.status == 'success' && !cancelled()
+    #   if: steps.complie.outputs.status == 'success' && steps.tag.outputs.status == 'success' && !cancelled()
     #   env:
     #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     #   with:
@@ -143,4 +151,5 @@ jobs:
     #     delete_tags: true
     #   env:
     #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 

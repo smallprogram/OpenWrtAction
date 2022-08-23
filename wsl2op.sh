@@ -654,5 +654,4 @@ function Func_Main(){
 #--------------------⬇⬇⬇⬇BashShell⬇⬇⬇⬇--------------------
 Func_Main
 Func_LogMessage "\033[34m 编译状态:${is_complie_error} \033[0m" "\033[34m Compile Status Code:${is_complie_error} \033[0m"
-# exit $is_complie_error
-exit 10
+exit $is_complie_error
