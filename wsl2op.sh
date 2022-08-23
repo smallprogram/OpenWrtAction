@@ -57,9 +57,11 @@ luci_apps=(
     # https://github.com/xiaorouji/openwrt-passwall.git
     https://github.com/rufengsuixing/luci-app-adguardhome.git
 )
-
+# 编译结果变量
+is_complie_error=0
 
 #--------------------⬇⬇⬇⬇各种函数⬇⬇⬇⬇--------------------
+
 # 输出默认语言函数
 function Func_LogMessage(){
     if [ ! -n "$isChinese" ];then
@@ -241,7 +243,6 @@ function Func_Compile_Firmware() {
 
     Func_LogMessage "\033[34m 开始执行make编译! \033[0m" "\033[34m Start to execute make compilation! \033[0m"
     sleep 1s
-    result=0
     if [[ $sysenv == 1 ]]
     then
         Func_LogMessage "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m" "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
@@ -251,12 +252,14 @@ function Func_Compile_Firmware() {
             Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            (PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s || result=1) | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
             Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
             sleep 1s
-            (PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j1 V=s || result=1) | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            is_complie_error=${PIPESTATUS[0]}
         fi
         
     else
@@ -267,16 +270,20 @@ function Func_Compile_Firmware() {
             Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            (make -j$(($(nproc) + 1)) V=s || result=1) | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
             Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
             sleep 1s
-            (make -j1 V=s || result=1) | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            make -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            is_complie_error=${PIPESTATUS[0]}
         fi
         # $PATH
     fi
-
+    
+    Func_LogMessage "\033[34m 编译状态:${is_complie_error} \033[0m" "\033[34m Compile Status Code:${is_complie_error} \033[0m"
+    
     Func_LogMessage "\033[34m make编译结束! \033[0m" "\033[34m Make compilation is over! \033[0m"
     sleep 1s
     
@@ -304,13 +311,6 @@ function Func_Compile_Firmware() {
     # git --git-dir=/home/${userName}/${ledeDir}/.git --work-tree=/home/${userName}/${ledeDir} checkout master
     # git --git-dir=/home/${userName}/${ledeDir}/.git --work-tree=/home/${userName}/${ledeDir} clean -xdf
 
-    echo -e "result: $result"
-
-    if [[ $result == 1 ]]; then
-        return $result
-    else
-        return 0
-    fi
 }
 
 # config文件夹的config文件列表函数
@@ -543,9 +543,6 @@ function Func_Main(){
         if [[ $num == 1 ]]
         then
             Func_Compile_Firmware
-            ComplieResult=$?
-            echo -e "exit : $ComplieResult"
-            return $ComplieResult
         fi
     else
         num=2
@@ -636,11 +633,8 @@ function Func_Main(){
         
         if [[ $num_continue == 1 ]]; then
             Func_Compile_Firmware
-            ComplieResult=$?
-            echo -e "exit : $ComplieResult"
-            return $ComplieResult
         else
-            return 0
+            exit
         fi
 
     fi
@@ -659,4 +653,6 @@ function Func_Main(){
 
 #--------------------⬇⬇⬇⬇BashShell⬇⬇⬇⬇--------------------
 Func_Main
-exit $?
+Func_LogMessage "\033[34m 编译状态:${is_complie_error} \033[0m" "\033[34m Compile Status Code:${is_complie_error} \033[0m"
+# exit $is_complie_error
+exit 10
