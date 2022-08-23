@@ -434,6 +434,20 @@ EOF
 
 service xray restart
 
+echo -e "\033[31m 安装BBR加速 \033[0m"
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+echo -e "\033[31m 验证BBR \033[0m"
+uname -r
+# 查看内核版本，显示为最新版就表示 OK 了
+sysctl net.ipv4.tcp_available_congestion_control
+# net.ipv4.tcp_available_congestion_control = reno cubic bbr
+sysctl net.ipv4.tcp_congestion_control
+# net.ipv4.tcp_congestion_control = bbr
+sysctl net.core.default_qdisc
+# net.core.default_qdisc = fq
+lsmod | grep bbr
+# 返回值有 tcp_bbr 模块即说明 bbr 已启动。注意：并不是所有的 VPS 都会有此返回值，若没有也属正常。
+
 echo -e "\033[31m Xray Vless+TCP+XTLS配置完毕，具体内容如下： \033[0m"
 echo -e "\033[34m 地址：$domainName \033[0m"
 echo -e "\033[34m 端口：4430 \033[0m"
