@@ -10,6 +10,8 @@
 # File: xray_vless_xtls_nginx_deploy.sh
 # Description: xray vless xtls nginx deploy
 
+webSite=web01.zip
+
 echo -e "\033[31m 请输入你的域名，请一定确保这个域名A记录已经映射到你的服务器 \033[0m"
 
 read domainName
@@ -113,9 +115,9 @@ sleep 5s
 echo -e "\033[31m 开始配置Nginx \033[0m"
 sleep 5s
 mkdir -p /usr/wwwroot
-wget -P /usr/wwwroot https://github.com/smallprogram/OpenWrtAction/raw/main/source/WebSite/web01.zip
+wget -P /usr/wwwroot https://github.com/smallprogram/OpenWrtAction/raw/main/source/WebSite/$webSite
 apt-get -y install unzip
-unzip -o /usr/wwwroot/web.zip -d /usr/wwwroot
+unzip -o /usr/wwwroot/$webSite -d /usr/wwwroot
 
 cp /etc/nginx/conf/nginx.conf -d /etc/nginx/conf/nginx.conf.bak.$(date +"%Y.%m.%d-%H%M")
 
