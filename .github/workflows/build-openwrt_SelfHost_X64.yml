@@ -49,23 +49,33 @@ jobs:
         echo "::set-output name=status::success"
 
     - name: Compile the firmware
-      id: complie
+      id: compile
       if: steps.UpdateSource.outputs.status == 'success' && !cancelled()
       run: |
         # cd /home/$USER/OpenWrtAction
         # bash wsl2op.sh $CONFIG_NAME
         echo "::set-output name=status::success"
+        cd /home/$USER/lede_$CONFIG_NAME
+        grep '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/' > DEVICE_NAME
+        [ -s DEVICE_NAME ] && echo "DEVICE_NAME=_$(cat DEVICE_NAME)" >> $GITHUB_ENV
+        echo "FILE_DATE=_$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
 
     # - name: Compile Error Post Log To Issue
     #   id: test
-    #   if: steps.complie.outputs.status != 'success' && !cancelled()
+    #   if: steps.compile.outputs.status != 'success' && !cancelled()
     #   run: |
     #     do someting
 
+    - name: Upload bin directory
+      uses: actions/upload-artifact@main
+      if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
+      with:
+        name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        path: openwrt/bin
 
     - name: Organize files
       id: organize
-      if: steps.complie.outputs.status == 'success' && !cancelled()
+      if: steps.compile.outputs.status == 'success' && !cancelled()
       run: |
         cd /home/$USER/lede_$CONFIG_NAME/bin/targets/*/*
         rm -rf packages
@@ -73,7 +83,7 @@ jobs:
 
     - name: Generate release tag
       id: tag
-      if: steps.complie.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
+      if: steps.compile.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
         cd /home/$USER
         mkdir -p openwrt_releaselog/$CONFIG_NAME
@@ -128,7 +138,7 @@ jobs:
 
     - name: Upload firmware to release
       uses: softprops/action-gh-release@v1
-      if: steps.complie.outputs.status == 'success' && steps.tag.outputs.status == 'success' && !cancelled()
+      if: steps.compile.outputs.status == 'success' && steps.tag.outputs.status == 'success' && !cancelled()
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
