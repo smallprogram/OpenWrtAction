@@ -52,8 +52,8 @@ jobs:
       id: complie
       if: steps.UpdateSource.outputs.status == 'success' && !cancelled()
       run: |
-        cd /home/$USER/OpenWrtAction
-        bash wsl2op.sh $CONFIG_NAME
+        # cd /home/$USER/OpenWrtAction
+        # bash wsl2op.sh $CONFIG_NAME
         echo "::set-output name=status::success"
 
     # - name: Compile Error Post Log To Issue
