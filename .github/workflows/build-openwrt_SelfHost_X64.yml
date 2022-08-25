@@ -122,6 +122,8 @@ jobs:
         # git -C lede_$CONFIG_NAME/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
 
         touch /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
+        cd /home/$USER/openwrt_releaselog/$CONFIG_NAME/
+        echo "RELEASE_TAG=$PWD" >> $GITHUB_ENV
         echo "::set-output name=status::success"
 
     - name: Upload firmware to release
@@ -131,7 +133,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: ${{ steps.tag.outputs.release_tag }}
-        body_path: /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
+        body_path: ${{ env.RELEASE_TAG }}/release.txt
         files: ${{ env.FIRMWARE }}/*
 
     - name: Delete workflow runs
