@@ -59,6 +59,9 @@ luci_apps=(
 )
 # 编译结果变量
 is_complie_error=0
+#Git参数
+git_email=smallprogram@foxmail.com
+git_user=smallprogram
 
 #--------------------⬇⬇⬇⬇各种函数⬇⬇⬇⬇--------------------
 
@@ -104,6 +107,13 @@ function Func_DIY_Script(){
 
     Func_LogMessage "\033[31m DIY脚本执行完成 \033[0m" "\033[31m DIY script execution completed \033[0m"
     sleep 2s
+}
+
+#GIT设置
+function Func_GitSetting(){
+    git config --global user.email "${git_email}"
+    git config --global user.name "${git_user}"
+    export GIT_SSL_NO_VERIFY=1
 }
 
 # 获取自定插件函数
@@ -369,6 +379,8 @@ function Func_CleanLogFolder(){
 
 #主函数
 function Func_Main(){
+    # GitSetting
+    Func_GitSetting
     # 默认语言中文，其他英文
     echo -e "\033[31m 请选择默认语言，输入任意字符为英文，不输入默认中文 \033[0m"
     echo -e "\033[31m Please select the default language, enter any character as English, and do not enter the default Chinese. \033[0m"
@@ -391,7 +403,7 @@ function Func_Main(){
             Func_LogMessage "\033[34m 安装完成 \033[0m" "\033[34m Installation Completed \033[0m" 
         fi
 
-    export GIT_SSL_NO_VERIFY=1
+    
     Func_CleanLogFolder
     sleep 2s
 
