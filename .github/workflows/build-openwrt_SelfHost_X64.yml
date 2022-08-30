@@ -67,7 +67,7 @@ jobs:
       if: steps.compile.outputs.status != 'success' && !cancelled()
       uses: GuillaumeFalourd/open-issue-action@v1
       with:
-        access-token: ${{ secrets.ACCESS_TOKEN }}
+        access-token: ${{ secrets.PersonalClientToken }}
         repo-owner: coolsnowwolf
         repo-name: lede
         issue-title: test
