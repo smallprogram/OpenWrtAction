@@ -40,23 +40,11 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
       uses: actions/checkout@main
-     
-
-    # - name: TG Message
-    #   if: env.SERVERCHAN_SCKEY == 'true'
-    #   run: |
-    #     curl -k --data chat_id=${{ secrets.TGID }} --data "text=主人：正在为您编译新的$RELEASE_TAG-$(date +"%Y.%m.%d-%H%M"),请耐心等待...... 😋💐" "https://api.telegram.org/bot${{ secrets.TG_TOKEN }}/sendMessage"
-        
-    # - name: PUSHPLUS Message
-    #   if: env.SERVERCHAN_SCKEY == 'true'
-    #   run: |
-    #     curl -k --data token="${{ secrets.PUSH_PLUS_TOKEN }}" --data title="开始编译$RELEASE_TAG-$(date +"%Y.%m.%d-%H%M")" --data "content=🎉 主人：正在为您编译新的$RELEASE_TAG-$(date +"%Y.%m.%d-%H%M"),请耐心等待...... 😋💐" "http://www.pushplus.plus/send"
-
 
     - name: Initialization environment
       env:
@@ -64,7 +52,7 @@ jobs:
       run: |
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc
         sudo -E apt-get -qq update
-        sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-2004)
+        sudo -E apt-get -qq install ack antlr3 asciidoc autoconf automake autopoint binutils bison build-essential bzip2 ccache cmake cpio curl device-tree-compiler fastjar flex gawk gettext gcc-multilib g++-multilib git gperf haveged help2man intltool libc6-dev-i386 libelf-dev libglib2.0-dev libgmp3-dev libltdl-dev libmpc-dev libmpfr-dev libncurses5-dev libncursesw5-dev libreadline-dev libssl-dev libtool lrzsz mkisofs msmtp nano ninja-build p7zip p7zip-full patch pkgconf python2.7 python3 python3-pip libpython3-dev qemu-utils rsync scons squashfs-tools subversion swig texinfo uglifyjs upx-ucl unzip vim wget xmlto xxd zlib1g-dev
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"
@@ -77,12 +65,6 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-
-    # - name: Cache
-    #   uses: klever1988/cachewrtbuild@main
-    #   with:
-    #     ccache: 'true'
-    #     prefix: ${{ github.workspace }}/openwrt
 
     - name: Load custom feeds
       run: |
@@ -265,16 +247,4 @@ jobs:
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
-    # - name: TG Message
-    #   if: env.SERVERCHAN_SCKEY == 'true'
-    #   run: |
-    #     curl -k --data chat_id=${{ secrets.TGID }} --data "text=我亲爱的主人您要编译的$RELEASE_TAG-$(date +"%Y.%m.%d-%H%M")固件编译成功！https://github.com/smallprogram/OpenWrtAction/releases/tag/${{ steps.tag.outputs.release_tag }} " "https://api.telegram.org/bot${{ secrets.TG_TOKEN }}/sendMessage"
-        
-        
-    # - name: PUSHPLUS Message
-    #   if: env.SERVERCHAN_SCKEY == 'true'
-    #   run: |
-    #     curl -k --data token="${{ secrets.PUSH_PLUS_TOKEN }}" --data title="恭喜主人$RELEASE_TAG-$(date +"%Y.%m.%d-%H%M")固件编译成功！" --data "content=我亲爱的主人您要编译的$RELEASE_TAG-$(date +"%Y.%m.%d-%H%M")固件成功完成了！https://github.com/smallprogram/OpenWrtAction/releases/tag/${{ steps.tag.outputs.release_tag }} " "http://www.pushplus.plus/send"
-
 
