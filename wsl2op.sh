@@ -168,7 +168,7 @@ function Func_Compile_Firmware() {
 
     
     # CheckUpdate
-
+    cd /home/${userName}/${ledeDir}
     begin_date=开始时间$(date "+%Y-%m-%d-%H-%M-%S")
     folder_name=log_Compile_${configName}_$(date "+%Y-%m-%d-%H-%M-%S")
     Func_LogMessage "\033[31m 是否启用Clean编译，如果不输入任何值默认否，输入任意值启用Clean编译，Clean操作适用于大版本更新 \033[0m" "\033[31m Whether to enable Clean compilation, if you do not enter any value, the default is No, enter any value to enable Clean compilation, Clean operation is suitable for major version updates \033[0m"
@@ -177,7 +177,6 @@ function Func_Compile_Firmware() {
         Func_LogMessage "\033[34m 不执行make clean && make dirclean  \033[0m" "\033[34m OK, do not execute make clean && make dirclean  \033[0m"
     else
         Func_LogMessage "\033[34m 配置为Clean编译。执行make clean && make dirclean \033[0m" "\033[34m OK, configure for Clean compilation. \033[0m"
-        cd /home/${userName}/${ledeDir}
         make clean
         make dirclean
         Func_LogMessage "\033[34m 执行make clean && make dirclean完毕，准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
