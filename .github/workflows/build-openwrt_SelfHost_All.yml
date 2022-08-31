@@ -51,6 +51,14 @@ jobs:
         cd /home/$USER/OpenWrtAction
         bash wsl2op.sh x64.config
         echo "::set-output name=status::success"
+
+    - name: Clean Compile the firmware X64
+      id: clean_compile_X64
+      if: steps.compile_X64.outputs.status != 'success' && !cancelled()
+      run: |
+        cd /home/$USER/OpenWrtAction
+        bash wsl2op.sh x64.config 1
+        echo "::set-output name=status::success"
     
     - name: Compile the firmware R5S
       id: compile_R5S
@@ -58,6 +66,14 @@ jobs:
       run: |
         cd /home/$USER/OpenWrtAction
         bash wsl2op.sh R5S.config
+        echo "::set-output name=status::success"
+
+    - name: Clean Compile the firmware R5S
+      id: clean_compile_R5S
+      if: steps.compile_R5S.outputs.status != 'success' && !cancelled()
+      run: |
+        cd /home/$USER/OpenWrtAction
+        bash wsl2op.sh R5S.config 1
         echo "::set-output name=status::success"
 
     - name: Compile the firmware R4S
@@ -68,12 +84,28 @@ jobs:
         bash wsl2op.sh R4S.config
         echo "::set-output name=status::success"
 
+    - name: Clean Compile the firmware R4S
+      id: clean_compile_R4S
+      if: steps.compile_R4S.outputs.status != 'success' && !cancelled()
+      run: |
+        cd /home/$USER/OpenWrtAction
+        bash wsl2op.sh R4S.config 1
+        echo "::set-output name=status::success"
+
     - name: Compile the firmware R2S
       id: compile_R2S
       if: steps.UpdateSource.outputs.status == 'success' && !cancelled()
       run: |
         cd /home/$USER/OpenWrtAction
         bash wsl2op.sh R2S.config
+        echo "::set-output name=status::success"
+
+    - name: Clean Compile the firmware R2S
+      id: clean_compile_R2S
+      if: steps.compile_R2S.outputs.status != 'success' && !cancelled()
+      run: |
+        cd /home/$USER/OpenWrtAction
+        bash wsl2op.sh R2S.config 1
         echo "::set-output name=status::success"
 
     - name: Compile the firmware R2C
@@ -84,11 +116,27 @@ jobs:
         bash wsl2op.sh R2C.config
         echo "::set-output name=status::success"
 
+    - name: Clean Compile the firmware R2C
+      id: clean_compile_R2C
+      if: steps.compile_R2C.outputs.status != 'success' && !cancelled()
+      run: |
+        cd /home/$USER/OpenWrtAction
+        bash wsl2op.sh R2C.config 1
+        echo "::set-output name=status::success"
+
     - name: Compile the firmware Pi4_Model_B
       id: compile_Pi4_Model_B
       if: steps.UpdateSource.outputs.status == 'success' && !cancelled()
       run: |
         cd /home/$USER/OpenWrtAction
         bash wsl2op.sh Pi4_Model_B.config
+        echo "::set-output name=status::success"
+
+    - name: Clean Compile the firmware Pi4_Model_B
+      id: clean_compile_Pi4_Model_B
+      if: steps.compile_Pi4_Model_B.outputs.status != 'success' && !cancelled()
+      run: |
+        cd /home/$USER/OpenWrtAction
+        bash wsl2op.sh Pi4_Model_B.config 1
         echo "::set-output name=status::success"
         
