@@ -177,8 +177,9 @@ function Func_Compile_Firmware() {
         Func_LogMessage "\033[34m 不执行make clean && make dirclean  \033[0m" "\033[34m OK, do not execute make clean && make dirclean  \033[0m"
     else
         Func_LogMessage "\033[34m 配置为Clean编译。执行make clean && make dirclean \033[0m" "\033[34m OK, configure for Clean compilation. \033[0m"
-        make clean
+        # make clean
         make dirclean
+        # make distclean
         Func_LogMessage "\033[34m 执行make clean && make dirclean完毕，准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
         sleep 1s
     fi
