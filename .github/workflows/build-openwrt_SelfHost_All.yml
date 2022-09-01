@@ -25,10 +25,11 @@ env:
   TZ: Asia/Shanghai
 
 
+
 jobs:
   build:
     runs-on: self-hosted
-
+    timeout-minutes: 1440
     steps:
     - name: Checkout
       uses: actions/checkout@main
