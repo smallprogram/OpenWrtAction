@@ -2,6 +2,19 @@
 [![releases](https://img.shields.io/badge/support-x86|Pi4ModelB|R5S|R4S|R2S|R2C-blue?style=flat&logo=rss)](https://github.com/smallprogram/OpenWrtAction/releases)  [![Lean](https://img.shields.io/badge/SourceCode-Lean-green?style=flat&logo=GitHub)](https://github.com/coolsnowwolf/lede) [![releases](https://img.shields.io/badge/UpdateCheck-blueviolet?style=flat&logo=Checkmarx)](https://github.com/smallprogram/OpenWrtAction/releases) [![Action](https://img.shields.io/badge/GithubAction-5Actions-important?style=flat&logo=GitHubActions)](https://github.com/smallprogram/OpenWrtAction/actions) [![LICENSE](https://img.shields.io/badge/LICENSE-MIT-important?style=flat)](https://github.com/smallprogram/OpenWrtAction/blob/main/LICENSE)
 
 
+## WorkFLow
+|ActionStatus|
+|-|
+|[![Build-OpenWrt_X64](https://github.com/smallprogram/OpenWrtAction/actions/workflows/build-openwrt_X64.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/build-openwrt_X64.yml)|
+|[![Build-OpenWrt_R2C](https://github.com/smallprogram/OpenWrtAction/actions/workflows/build-openwrt_R2C.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/build-openwrt_R2C.yml)|
+|[![Build-OpenWrt_R2S](https://github.com/smallprogram/OpenWrtAction/actions/workflows/build-openwrt_R2S.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/build-openwrt_R2S.yml)|
+|[![Build-OpenWrt_R4S](https://github.com/smallprogram/OpenWrtAction/actions/workflows/build-openwrt_R4S.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/build-openwrt_R4S.yml)|
+|[![Build-OpenWrt_R5S](https://github.com/smallprogram/OpenWrtAction/actions/workflows/build-openwrt_R5S.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/build-openwrt_R5S.yml)|
+|[![Build-OpenWrt_Pi4_Model_B](https://github.com/smallprogram/OpenWrtAction/actions/workflows/build-openwrt_Pi4_Model_B.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/build-openwrt_Pi4_Model_B.yml)|
+|[![Build-OpenWrt_SelfHost_All](https://github.com/smallprogram/OpenWrtAction/actions/workflows/build-openwrt_SelfHost_All.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/build-openwrt_SelfHost_All.yml)|
+
+
+
 # [English Readme](README_EN.md)
 
 # [最新固件列表，点击自取](https://github.com/smallprogram/OpenWrtAction/tags)
