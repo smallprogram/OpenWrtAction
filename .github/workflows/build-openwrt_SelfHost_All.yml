@@ -51,6 +51,7 @@ jobs:
       run: |
         
         cd /home/$USER/OpenWrtAction
+        echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op.sh x64.config
         echo "::set-output name=status::success"
 
@@ -59,6 +60,7 @@ jobs:
       if: steps.compile_X64.outputs.status != 'success' && !cancelled()
       run: |
         cd /home/$USER/OpenWrtAction
+        echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op.sh x64.config 1
         echo "::set-output name=status::success"
     
@@ -67,6 +69,7 @@ jobs:
       if: steps.UpdateSource.outputs.status == 'success' && !cancelled()
       run: |
         cd /home/$USER/OpenWrtAction
+        echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op.sh R5S.config
         echo "::set-output name=status::success"
 
@@ -75,6 +78,7 @@ jobs:
       if: steps.compile_R5S.outputs.status != 'success' && !cancelled()
       run: |
         cd /home/$USER/OpenWrtAction
+        echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op.sh R5S.config 1
         echo "::set-output name=status::success"
 
@@ -83,6 +87,7 @@ jobs:
       if: steps.UpdateSource.outputs.status == 'success' && !cancelled()
       run: |
         cd /home/$USER/OpenWrtAction
+        echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op.sh R4S.config
         echo "::set-output name=status::success"
 
@@ -91,6 +96,7 @@ jobs:
       if: steps.compile_R4S.outputs.status != 'success' && !cancelled()
       run: |
         cd /home/$USER/OpenWrtAction
+        echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op.sh R4S.config 1
         echo "::set-output name=status::success"
 
@@ -99,6 +105,7 @@ jobs:
       if: steps.UpdateSource.outputs.status == 'success' && !cancelled()
       run: |
         cd /home/$USER/OpenWrtAction
+        echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op.sh R2S.config
         echo "::set-output name=status::success"
 
@@ -107,6 +114,7 @@ jobs:
       if: steps.compile_R2S.outputs.status != 'success' && !cancelled()
       run: |
         cd /home/$USER/OpenWrtAction
+        echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op.sh R2S.config 1
         echo "::set-output name=status::success"
 
@@ -115,6 +123,7 @@ jobs:
       if: steps.UpdateSource.outputs.status == 'success' && !cancelled()
       run: |
         cd /home/$USER/OpenWrtAction
+        echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op.sh R2C.config
         echo "::set-output name=status::success"
 
@@ -123,6 +132,7 @@ jobs:
       if: steps.compile_R2C.outputs.status != 'success' && !cancelled()
       run: |
         cd /home/$USER/OpenWrtAction
+        echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op.sh R2C.config 1
         echo "::set-output name=status::success"
 
@@ -131,6 +141,7 @@ jobs:
       if: steps.UpdateSource.outputs.status == 'success' && !cancelled()
       run: |
         cd /home/$USER/OpenWrtAction
+        echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op.sh Pi4_Model_B.config
         echo "::set-output name=status::success"
 
@@ -139,6 +150,7 @@ jobs:
       if: steps.compile_Pi4_Model_B.outputs.status != 'success' && !cancelled()
       run: |
         cd /home/$USER/OpenWrtAction
+        echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op.sh Pi4_Model_B.config 1
         echo "::set-output name=status::success"
         
