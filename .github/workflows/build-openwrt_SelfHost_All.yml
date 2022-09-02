@@ -49,6 +49,7 @@ jobs:
       id: compile_X64
       if: steps.UpdateSource.outputs.status == 'success' && !cancelled()
       run: |
+        
         cd /home/$USER/OpenWrtAction
         bash wsl2op.sh x64.config
         echo "::set-output name=status::success"
