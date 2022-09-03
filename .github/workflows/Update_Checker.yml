@@ -64,9 +64,9 @@ env:
   REPO_PATH_PassWall2 : "openwrt-passwall2"
 
   # jerrykuku/luci-theme-argon主题源码
-  REPO_URL_ThemeArgon: https://github.com/jerrykuku/luci-theme-argon
-  REPO_BRANCH_ThemeArgon: master
-  REPO_PATH_ThemeArgon : "luci-theme-argon"
+  # REPO_URL_ThemeArgon: https://github.com/jerrykuku/luci-theme-argon
+  # REPO_BRANCH_ThemeArgon: master
+  # REPO_PATH_ThemeArgon : "luci-theme-argon"
 
   # luci-app-argon-config主题配置源码
   REPO_URL_ArgonConfig: https://github.com/jerrykuku/luci-app-argon-config
@@ -166,10 +166,10 @@ jobs:
         cd
 
 
-        git clone --depth 1 $REPO_URL_ThemeArgon -b $REPO_BRANCH_ThemeArgon $REPO_PATH_ThemeArgon
-        cd $REPO_PATH_ThemeArgon
-        echo "::set-output name=commitHash_ThemeArgon::$(git rev-parse HEAD)"
-        cd
+        # git clone --depth 1 $REPO_URL_ThemeArgon -b $REPO_BRANCH_ThemeArgon $REPO_PATH_ThemeArgon
+        # cd $REPO_PATH_ThemeArgon
+        # echo "::set-output name=commitHash_ThemeArgon::$(git rev-parse HEAD)"
+        # cd
 
         git clone --depth 1 $REPO_URL_ArgonConfig -b $REPO_BRANCH_ArgonConfig $REPO_PATH_ArgonConfig 
         cd $REPO_PATH_ArgonConfig 
@@ -194,7 +194,7 @@ jobs:
         echo "commitHash_PassWall_Package: ${{ steps.getHash.outputs.commitHash_PassWall_Package }}"
         echo "commitHash_PassWall_Luci: ${{ steps.getHash.outputs.commitHash_PassWall_Luci }}"
         echo "commitHash_PassWall2: ${{ steps.getHash.outputs.commitHash_PassWall2 }}"
-        echo "commitHash_ThemeArgon: ${{ steps.getHash.outputs.commitHash_ThemeArgon }}"
+        # echo "commitHash_ThemeArgon: ${{ steps.getHash.outputs.commitHash_ThemeArgon }}"
         echo "commitHash_ArgonConfig: ${{ steps.getHash.outputs.commitHash_ArgonConfig }}"
         echo "::set-output name=commitHash_All::\
           ${{steps.getHash.outputs.commitHash_smallprogramAction}}\
@@ -207,7 +207,7 @@ jobs:
           ${{steps.getHash.outputs.commitHash_PassWall_Package}}\
           ${{steps.getHash.outputs.commitHash_PassWall_Luci}}\
           ${{steps.getHash.outputs.commitHash_PassWall2}}\
-          ${{steps.getHash.outputs.commitHash_ThemeArgon}}\
+          # ${{steps.getHash.outputs.commitHash_ThemeArgon}}\
           ${{steps.getHash.outputs.commitHash_ArgonConfig}}"
 
     - name: Compare Commit Hash
@@ -231,7 +231,7 @@ jobs:
         echo ${{ steps.getHash.outputs.commitHash_PassWall_Package }} | tee .commitHash_PassWall_Package
         echo ${{ steps.getHash.outputs.commitHash_PassWall_Luci }} | tee .commitHash_PassWall_Luci
         echo ${{ steps.getHash.outputs.commitHash_PassWall2 }} | tee .commitHash_PassWall2
-        echo ${{ steps.getHash.outputs.commitHash_ThemeArgon }} | tee .commitHash_ThemeArgon
+        # echo ${{ steps.getHash.outputs.commitHash_ThemeArgon }} | tee .commitHash_ThemeArgon
         echo ${{ steps.getHash.outputs.commitHash_ArgonConfig }} | tee .commitHash_ArgonConfig
         echo ${{ steps.combHeader.outputs.commitHash_All }} | tee .commitHash_All
         
