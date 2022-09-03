@@ -1,5 +1,5 @@
 
-[![releases](https://img.shields.io/badge/support-x86|Pi4ModelB|R5S|R4S|R2S|R2C-blue?style=flat&logo=rss)](https://github.com/smallprogram/OpenWrtAction/releases)  [![Lean](https://img.shields.io/badge/SourceCode-Lean-green?style=flat&logo=GitHub)](https://github.com/coolsnowwolf/lede) [![releases](https://img.shields.io/badge/UpdateCheck-blueviolet?style=flat&logo=Checkmarx)](https://github.com/smallprogram/OpenWrtAction/releases) [![Action](https://img.shields.io/badge/GithubAction-5Actions-important?style=flat&logo=GitHubActions)](https://github.com/smallprogram/OpenWrtAction/actions) [![LICENSE](https://img.shields.io/badge/LICENSE-MIT-important?style=flat)](https://github.com/smallprogram/OpenWrtAction/blob/main/LICENSE)
+[![Lean](https://img.shields.io/badge/SourceCode-Lean-green?style=flat&logo=GitHub)](https://github.com/coolsnowwolf/lede) [![releases](https://img.shields.io/badge/UpdateCheck-blueviolet?style=flat&logo=Checkmarx)](https://github.com/smallprogram/OpenWrtAction/releases) [![LICENSE](https://img.shields.io/badge/LICENSE-MIT-important?style=flat)](https://github.com/smallprogram/OpenWrtAction/blob/main/LICENSE)
 
 
 ## WorkFlows
@@ -94,37 +94,23 @@ R2C软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/mai
 
 ## wsl2op.sh本地自动编译shell脚本说明
 
-运行前请确保你的编译环境已经安装Lean源码中要求的编译环境，并且使用非root用户执行。
-
-
-
-注意，如果Fork我的Respository之后，需将修改的config同步回github，
-
-首先需要**修改wsl2op.sh脚本中owaUrl变量值，改为你Fork后的git Url**
-
-![image](source/owaUrl.png)
-
-之后需要输入<b>github用户名</b>与<b>github Token</b>
-
-**github Token请自行在自己的Github Settings --> Developer settings --> Personal access tokens中创建**
-
-![image](source/githubauth.png)
-
-当然如果你嫌麻烦，也可以直接PR你的config到我的仓库config文件夹下，这样你就可以直接不同步编译了
-
-### 执行方式
-#### 首次执行
+运行前请确保你的编译环境已经安装Lean源码中要求的编译环境，并且使用非root用户执行。如果未满足Lean源码编译环境要求，请执行如下命令:
 ```shell
-cd
-git clone https://github.com/smallprogram/OpenWrtAction.git
-cd OpenWrtAction
-bash wsl2op.sh
+sudo apt update -y
+sudo apt full-upgrade -y
+sudo apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils bison build-essential \
+bzip2 ccache cmake cpio curl device-tree-compiler fastjar flex gawk gettext gcc-multilib g++-multilib \
+git gperf haveged help2man intltool libc6-dev-i386 libelf-dev libglib2.0-dev libgmp3-dev libltdl-dev \
+libmpc-dev libmpfr-dev libncurses5-dev libncursesw5-dev libreadline-dev libssl-dev libtool lrzsz \
+mkisofs msmtp nano ninja-build p7zip p7zip-full patch pkgconf python2.7 python3 python3-pip libpython3-dev qemu-utils \
+rsync scons squashfs-tools subversion swig texinfo uglifyjs upx-ucl unzip vim wget xmlto xxd zlib1g-dev
 ```
-#### 二次执行
+
+### 执行编译方式(非Root用户)
+
 ```shell
-cd
-cd OpenWrtAction
-git pull
-bash wsl2op.sh
+cd /home/$USER && (if [ ! -d "/home/$USER/OpenWrtAction" ]; then git clone https://github.com/smallprogram/OpenWrtAction.git; else cd /home/$USER/OpenWrtAction; git stash; git stash drop; git pull; fi;) && cd /home/$USER/OpenWrtAction && bash wsl2op.sh
 ```
+
+
 
