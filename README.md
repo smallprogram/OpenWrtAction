@@ -13,28 +13,11 @@
 |[![Build-OpenWrt_Pi4_Model_B](https://github.com/smallprogram/OpenWrtAction/actions/workflows/build-openwrt_Pi4_Model_B.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/build-openwrt_Pi4_Model_B.yml)|
 
 
-
-
 # [English Readme](README_EN.md)
 
 # [最新固件列表，点击自取](https://github.com/smallprogram/OpenWrtAction/tags)
 
 # 感觉不错的话，给个Star吧
-
-# 目录<!-- omit in toc --> 
-- [新增TG跟Wechat推送说明](source/bot.md)
-- [Lean Openwrt GitHubAction](#lean-openwrt-githubaction)
-    - [目前包含x86与ARM固件,根据源码更新自动编译](#目前包含x86与ARM固件根据源码更新自动编译)
-  - [包含内容](#包含内容)
-      - [包含各种常用插件，特殊的内容如下：](#包含各种常用插件特殊的内容如下)
-  - [config列表](#config列表)
-  - [argon主题的背景资源](https://github.com/smallprogram/OpenWrtAction/tree/main/source)
-  - [具体功能组件相关截图：](#具体功能组件相关截图)
-  - [wsl2op.sh本地自动编译shell脚本说明](#wsl2opsh本地自动编译shell脚本说明)
-    - [执行方式](#执行方式)
-      - [首次执行](#首次执行)
-      - [二次执行](#二次执行)
-    - [执行过程详解](#执行过程详解)
 
 # Lean Openwrt GitHubAction
 
@@ -43,6 +26,10 @@
 ![image](source/login2.jpg)
 ### 根据源码更新自动编译
 
+## 相关参数
+1. 默认地址:`10.10.0.253`
+2. 默认账户:`root`
+3. 默认密码:`无`
 
 ## 包含内容
 
