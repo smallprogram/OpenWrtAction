@@ -157,7 +157,7 @@ function Func_Get_luci_apps(){
             cd /home/${userName}/${ledeDir}/package/lean/$dir
             git stash
             git stash drop
-            git pull
+            git pull --rebase
             cd /home/${userName}
         fi
     done
@@ -483,7 +483,7 @@ function Func_Main(){
         cd ${ledeDir}
         git stash
         git stash drop
-        git pull
+        git pull --rebase
         cd /home/${userName}
         isFirstCompile=0
     fi
