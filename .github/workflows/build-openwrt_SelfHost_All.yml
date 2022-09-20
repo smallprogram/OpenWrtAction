@@ -52,7 +52,7 @@ jobs:
         
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
-        bash wsl2op.sh x64.config
+        bash wsl2op_one.sh x64.config
         echo "::set-output name=status::success"
 
     - name: Clean Compile the firmware X64
@@ -61,7 +61,8 @@ jobs:
       run: |
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
-        bash wsl2op.sh x64.config 1
+        rm -rf /home/$USER/lean_openwrt/
+        bash wsl2op_one.sh x64.config 1
         echo "::set-output name=status::success"
     
     - name: Compile the firmware R5S
@@ -70,7 +71,7 @@ jobs:
       run: |
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
-        bash wsl2op.sh R5S.config
+        bash wsl2op_one.sh R5S.config
         echo "::set-output name=status::success"
 
     - name: Clean Compile the firmware R5S
@@ -79,7 +80,8 @@ jobs:
       run: |
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
-        bash wsl2op.sh R5S.config 1
+        rm -rf /home/$USER/lean_openwrt/
+        bash wsl2op_one.sh R5S.config 1
         echo "::set-output name=status::success"
 
     - name: Compile the firmware R4S
@@ -88,7 +90,7 @@ jobs:
       run: |
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
-        bash wsl2op.sh R4S.config
+        bash wsl2op_one.sh R4S.config
         echo "::set-output name=status::success"
 
     - name: Clean Compile the firmware R4S
@@ -97,7 +99,8 @@ jobs:
       run: |
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
-        bash wsl2op.sh R4S.config 1
+        rm -rf /home/$USER/lean_openwrt/
+        bash wsl2op_one.sh R4S.config 1
         echo "::set-output name=status::success"
 
     - name: Compile the firmware R2S
@@ -106,7 +109,7 @@ jobs:
       run: |
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
-        bash wsl2op.sh R2S.config
+        bash wsl2op_one.sh R2S.config
         echo "::set-output name=status::success"
 
     - name: Clean Compile the firmware R2S
@@ -115,7 +118,8 @@ jobs:
       run: |
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
-        bash wsl2op.sh R2S.config 1
+        rm -rf /home/$USER/lean_openwrt/
+        bash wsl2op_one.sh R2S.config 1
         echo "::set-output name=status::success"
 
     - name: Compile the firmware R2C
@@ -124,7 +128,7 @@ jobs:
       run: |
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
-        bash wsl2op.sh R2C.config
+        bash wsl2op_one.sh R2C.config
         echo "::set-output name=status::success"
 
     - name: Clean Compile the firmware R2C
@@ -133,7 +137,8 @@ jobs:
       run: |
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
-        bash wsl2op.sh R2C.config 1
+        rm -rf /home/$USER/lean_openwrt/
+        bash wsl2op_one.sh R2C.config 1
         echo "::set-output name=status::success"
 
     - name: Compile the firmware Pi4_Model_B
@@ -142,7 +147,7 @@ jobs:
       run: |
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
-        bash wsl2op.sh Pi4_Model_B.config
+        bash wsl2op_one.sh Pi4_Model_B.config
         echo "::set-output name=status::success"
 
     - name: Clean Compile the firmware Pi4_Model_B
@@ -151,6 +156,7 @@ jobs:
       run: |
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
-        bash wsl2op.sh Pi4_Model_B.config 1
+        rm -rf /home/$USER/lean_openwrt/
+        bash wsl2op_one.sh Pi4_Model_B.config 1
         echo "::set-output name=status::success"
         
