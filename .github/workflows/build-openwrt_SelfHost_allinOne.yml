@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build-OpenWrt_SelfHost_All
+name: build-openwrt_SelfHost_allinOne
 
 on:
   repository_dispatch:
