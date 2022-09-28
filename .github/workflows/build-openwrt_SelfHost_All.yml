@@ -103,43 +103,43 @@ jobs:
         bash wsl2op.sh R4S.config 1
         echo "::set-output name=status::success"
 
-    - name: Compile the firmware R2S
-      id: compile_R2S
-      if: steps.UpdateSource.outputs.status == 'success' && !cancelled()
-      run: |
-        cd /home/$USER/OpenWrtAction
-        echo githubaction | sudo -S bash Freemem.sh
-        bash wsl2op.sh R2S.config
-        echo "::set-output name=status::success"
+    # - name: Compile the firmware R2S
+    #   id: compile_R2S
+    #   if: steps.UpdateSource.outputs.status == 'success' && !cancelled()
+    #   run: |
+    #     cd /home/$USER/OpenWrtAction
+    #     echo githubaction | sudo -S bash Freemem.sh
+    #     bash wsl2op.sh R2S.config
+    #     echo "::set-output name=status::success"
 
-    - name: Clean Compile the firmware R2S
-      id: clean_compile_R2S
-      if: steps.compile_R2S.outputs.status != 'success' && !cancelled()
-      run: |
-        cd /home/$USER/OpenWrtAction
-        echo githubaction | sudo -S bash Freemem.sh
-        rm -rf /home/$USER/lede_R2S.config/
-        bash wsl2op.sh R2S.config 1
-        echo "::set-output name=status::success"
+    # - name: Clean Compile the firmware R2S
+    #   id: clean_compile_R2S
+    #   if: steps.compile_R2S.outputs.status != 'success' && !cancelled()
+    #   run: |
+    #     cd /home/$USER/OpenWrtAction
+    #     echo githubaction | sudo -S bash Freemem.sh
+    #     rm -rf /home/$USER/lede_R2S.config/
+    #     bash wsl2op.sh R2S.config 1
+    #     echo "::set-output name=status::success"
 
-    - name: Compile the firmware R2C
-      id: compile_R2C
-      if: steps.UpdateSource.outputs.status == 'success' && !cancelled()
-      run: |
-        cd /home/$USER/OpenWrtAction
-        echo githubaction | sudo -S bash Freemem.sh
-        bash wsl2op.sh R2C.config
-        echo "::set-output name=status::success"
+    # - name: Compile the firmware R2C
+    #   id: compile_R2C
+    #   if: steps.UpdateSource.outputs.status == 'success' && !cancelled()
+    #   run: |
+    #     cd /home/$USER/OpenWrtAction
+    #     echo githubaction | sudo -S bash Freemem.sh
+    #     bash wsl2op.sh R2C.config
+    #     echo "::set-output name=status::success"
 
-    - name: Clean Compile the firmware R2C
-      id: clean_compile_R2C
-      if: steps.compile_R2C.outputs.status != 'success' && !cancelled()
-      run: |
-        cd /home/$USER/OpenWrtAction
-        echo githubaction | sudo -S bash Freemem.sh
-        rm -rf /home/$USER/lede_R2C.config/
-        bash wsl2op.sh R2C.config 1
-        echo "::set-output name=status::success"
+    # - name: Clean Compile the firmware R2C
+    #   id: clean_compile_R2C
+    #   if: steps.compile_R2C.outputs.status != 'success' && !cancelled()
+    #   run: |
+    #     cd /home/$USER/OpenWrtAction
+    #     echo githubaction | sudo -S bash Freemem.sh
+    #     rm -rf /home/$USER/lede_R2C.config/
+    #     bash wsl2op.sh R2C.config 1
+    #     echo "::set-output name=status::success"
 
     - name: Compile the firmware Pi4_Model_B
       id: compile_Pi4_Model_B
