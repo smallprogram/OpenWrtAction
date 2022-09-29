@@ -49,3 +49,6 @@ sed -i 's/console=tty0//g'  target/linux/x86/image/Makefile
 #修复一些问题
 ## 修复mac80211编译报错
 # cp -r $GITHUB_WORKSPACE/patches/651-rt2x00-driver-compile-with-kernel-5.15.patch $GITHUB_WORKSPACE/openwrt/package/kernel/mac80211/patches/rt2x00
+
+#修复一些奇怪的hash问题
+sed -ri 's#42aa7c213dedbd95d33ca84d92f4187880f7e96062c6a3fb05bfb16f77ba2a91#88dcddf2a92b9dc9243e929340fdc6f3431b779e22438093d7a31a400f1c3909#' ./feeds/packages/utils/rrdtool1/Makefile
