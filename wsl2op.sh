@@ -109,6 +109,13 @@ function Func_DIY_Script(){
     cp -r /home/${userName}/OpenWrtAction/library/* /home/${userName}/${ledeDir}/dl
     sleep 1s
 
+    Func_LogMessage "\033[31m 下载安装默认背景 \033[0m" "\033[31m download and install default background \033[0m"
+    mkdir -p ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background
+    wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/Network45961.mp4
+    mkdir -p ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
+    wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/Network45961.mp4
+    sleep 1s
+
     Func_LogMessage "\033[31m DIY脚本执行完成 \033[0m" "\033[31m DIY script execution completed \033[0m"
     sleep 2s
 }

@@ -45,6 +45,12 @@ sed -i 's/echo $h/echo $g/g' package/lean/autocore/files/x86/autocore
 #关闭串口跑码
 sed -i 's/console=tty0//g'  target/linux/x86/image/Makefile
 
+#添加默认登录背景
+mkdir -p ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background
+wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/Network45961.mp4
+
+mkdir -p ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
+wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/Network45961.mp4
 
 #修复一些问题
 ## 修复mac80211编译报错
