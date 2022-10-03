@@ -114,7 +114,7 @@ function Func_DIY_Script(){
     mkdir -p ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background
     wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/Network45961.mp4
 
-    rm -rf ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background
+    rm -rf ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
     mkdir -p ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
     wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/Network45961.mp4
 
