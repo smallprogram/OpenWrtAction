@@ -373,7 +373,7 @@ function Func_ConfigList(){
     fi
 }
 
-#清理日志文件夹及还原修改函数
+#清理日志文件夹函数
 function Func_CleanLogFolder(){
     if [ -d "/home/${userName}/${log_folder_name}" ];
     then
@@ -390,7 +390,6 @@ function Func_CleanLogFolder(){
         fi
     fi
 
-    sed -ri 's#<tr><td width="33%"><%:Kernel Version%></td><td><%=unameinfo.release or "?"%></td></tr><tr><td width="33%"><%:固件信息%></td><td>PowerBy <a href="https://github.com/smallprogram/OpenWrtAction">smallprogram</a></td></tr>#<tr><td width="33%"><%:Kernel Version%></td><td><%=unameinfo.release or "?"%></td></tr>#' ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
 
 }
 
@@ -671,6 +670,11 @@ function Func_Main(){
 
 }
 
+Func_Finally(){
+    cd /home/${userName}/${ledeDir}
+    sed -ri 's#<tr><td width="33%"><%:Kernel Version%></td><td><%=unameinfo.release or "?"%></td></tr><tr><td width="33%"><%:固件信息%></td><td>PowerBy <a href="https://github.com/smallprogram/OpenWrtAction">smallprogram</a></td></tr>#<tr><td width="33%"><%:Kernel Version%></td><td><%=unameinfo.release or "?"%></td></tr>#' ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
+}
+
 # 将编译的固件提交到GitHubRelease
 # function UpdateFileToGithubRelease(){
 #     # 没思路
@@ -683,5 +687,6 @@ function Func_Main(){
 
 #--------------------⬇⬇⬇⬇BashShell⬇⬇⬇⬇--------------------
 Func_Main
+Func_Finally
 Func_LogMessage "\033[34m 编译状态:${is_complie_error} \033[0m" "\033[34m Compile Status Code:${is_complie_error} \033[0m"
 exit $is_complie_error
