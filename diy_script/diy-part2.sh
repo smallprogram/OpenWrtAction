@@ -46,14 +46,16 @@ sed -i 's/echo $h/echo $g/g' package/lean/autocore/files/x86/autocore
 sed -i 's/console=tty0//g'  target/linux/x86/image/Makefile
 
 #添加默认登录背景
+rm -rf ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background
 mkdir -p ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background
 wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/Network45961.mp4
 
+rm -rf ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background
 mkdir -p ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
 wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/Network45961.mp4
 
 #Diy
-sed -ri 's#<tr><td width="33%"><%:Kernel Version%></td><td><%=unameinfo.release or "?"%></td></tr>#<tr><td width="33%"><%:Kernel Version%></td><td><%=unameinfo.release or "?"%></td></tr><tr><td width="33%"><%:固件信息%></td><td>PowerBy <a href="https://github.com/smallprogram/OpenWrtAction">smallprogram</a></td></tr>#' ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.html
+sed -ri 's#<tr><td width="33%"><%:Kernel Version%></td><td><%=unameinfo.release or "?"%></td></tr>#<tr><td width="33%"><%:Kernel Version%></td><td><%=unameinfo.release or "?"%></td></tr><tr><td width="33%"><%:固件信息%></td><td>PowerBy <a href="https://github.com/smallprogram/OpenWrtAction">smallprogram</a></td></tr>#' ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
 
 #修复一些问题
 ## 修复mac80211编译报错
