@@ -116,6 +116,9 @@ function Func_DIY_Script(){
     wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/Network45961.mp4
     sleep 1s
 
+
+    sed -ri 's#<tr><td width="33%"><%:Kernel Version%></td><td><%=unameinfo.release or "?"%></td></tr>#<tr><td width="33%"><%:Kernel Version%></td><td><%=unameinfo.release or "?"%></td></tr><tr><td width="33%"><%:固件信息%></td><td>PowerBy <a href="https://github.com/smallprogram/OpenWrtAction">smallprogram</a></td></tr>#' ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.html
+
     Func_LogMessage "\033[31m DIY脚本执行完成 \033[0m" "\033[31m DIY script execution completed \033[0m"
     sleep 2s
 }
