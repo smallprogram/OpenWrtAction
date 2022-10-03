@@ -373,7 +373,7 @@ function Func_ConfigList(){
     fi
 }
 
-#清理日志文件夹函数
+#清理日志文件夹及还原修改函数
 function Func_CleanLogFolder(){
     if [ -d "/home/${userName}/${log_folder_name}" ];
     then
@@ -389,6 +389,9 @@ function Func_CleanLogFolder(){
             Func_LogMessage "\033[34m OK，不清理超过$clean_day天的日志文件 \033[0m" "\033[34m OK, do not clean up log files older than $clean_day \033[0m"
         fi
     fi
+
+    sed -ri 's#<tr><td width="33%"><%:Kernel Version%></td><td><%=unameinfo.release or "?"%></td></tr><tr><td width="33%"><%:固件信息%></td><td>PowerBy <a href="https://github.com/smallprogram/OpenWrtAction">smallprogram</a></td></tr>#<tr><td width="33%"><%:Kernel Version%></td><td><%=unameinfo.release or "?"%></td></tr>#' ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
+
 }
 
 #主函数
