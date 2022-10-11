@@ -52,12 +52,12 @@ clean_day=3
 # 扩展luci插件地址
 luci_apps=(
     # https://github.com/jerrykuku/luci-theme-argon.git
-    https://github.com/jerrykuku/luci-app-argon-config.git
+    # https://github.com/jerrykuku/luci-app-argon-config.git
     # https://github.com/jerrykuku/lua-maxminddb.git
     # https://github.com/jerrykuku/luci-app-vssr.git
     # https://github.com/lisaac/luci-app-dockerman.git
     # https://github.com/xiaorouji/openwrt-passwall.git
-    https://github.com/rufengsuixing/luci-app-adguardhome.git
+    # https://github.com/rufengsuixing/luci-app-adguardhome.git
 )
 # 编译结果变量
 is_complie_error=0
