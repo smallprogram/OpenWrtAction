@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build-OpenWrt_Pi4_Model_B
+name: Build-OpenWrt_Pi4ModelB
 
 on:
   repository_dispatch:

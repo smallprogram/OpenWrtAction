@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build-OpenWrt_SelfHost_R2C
+name: Build-OpenWrtSelfHost_R2S
 
 on:
   repository_dispatch:
@@ -23,8 +23,8 @@ on:
 
 env:
   TZ: Asia/Shanghai
-  RELEASE_TAG: R2C
-  CONFIG_NAME: R2C.config
+  RELEASE_TAG: R2S
+  CONFIG_NAME: R2S.config
   UPLOAD_RELEASE: true
   COMMIT_LOG_NUM: 1
 
@@ -151,5 +151,3 @@ jobs:
     #     delete_tags: true
     #   env:
     #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  

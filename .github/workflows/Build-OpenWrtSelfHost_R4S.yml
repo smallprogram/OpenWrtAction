@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build-OpenWrt_SelfHost_R2S
+name: Build-OpenWrtSelfHost_R4S
 
 on:
   repository_dispatch:
@@ -23,8 +23,8 @@ on:
 
 env:
   TZ: Asia/Shanghai
-  RELEASE_TAG: R2S
-  CONFIG_NAME: R2S.config
+  RELEASE_TAG: R4S
+  CONFIG_NAME: R4S.config
   UPLOAD_RELEASE: true
   COMMIT_LOG_NUM: 1
 

@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build-OpenWrt_SelfHost_Pi4_Model_B
+name: Build-OpenWrtSelfHost_R5S
 
 on:
   repository_dispatch:
@@ -23,8 +23,8 @@ on:
 
 env:
   TZ: Asia/Shanghai
-  RELEASE_TAG: Pi4_Model_B
-  CONFIG_NAME: Pi4_Model_B.config
+  RELEASE_TAG: R5S
+  CONFIG_NAME: R5S.config
   UPLOAD_RELEASE: true
   COMMIT_LOG_NUM: 1
 
@@ -151,5 +151,3 @@ jobs:
     #     delete_tags: true
     #   env:
     #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
