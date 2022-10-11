@@ -350,7 +350,7 @@ function Func_ConfigList(){
     read -t $timer configNameInp
     if [ ! -n "$configNameInp" ]; then
         i=1
-        # configName=x64.config
+        # configName=X86.config
         # ledeDir=lede_$configName
         # echo "135 configName的值："$configName
         for context in ${config_list[*]}; 
