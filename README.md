@@ -99,5 +99,13 @@ rsync scons squashfs-tools subversion swig texinfo uglifyjs upx-ucl unzip vim wg
 cd /home/$USER && (if [ ! -d "/home/$USER/OpenWrtAction" ]; then git clone https://github.com/smallprogram/OpenWrtAction.git; else cd /home/$USER/OpenWrtAction; git stash; git stash drop; git pull; fi;) && cd /home/$USER/OpenWrtAction && bash wsl2op.sh
 ```
 
+### 自动化编译参数
+可在 `wsl2op.sh` 后加入两个可选参数：
 
+`bash wsl2op.sh [configname] [distclean]`
+
+`[configname]`为配置文件名称，例如`bash wsl2op.sh X86.config`,会自动默认以X86配置编译。
+`[distclean]`为配置文件名称，例如`bash wsl2op.sh X86.config 1`,会自动默认以X86配置编译，并启用distclean模式。
+
+注意如果要使用`[distclean]`参数，必须要先加入`[configname]`参数，如果想不指定`[configname]`,可使用空格代替，例如`bash wsl2op.sh [空格] 1`
 
