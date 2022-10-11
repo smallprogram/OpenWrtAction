@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build-OpenWrtSelfHost_X64
+name: Build-OpenWrtSelfHost_X86
 
 on:
   repository_dispatch:
@@ -23,8 +23,8 @@ on:
 
 env:
   TZ: Asia/Shanghai
-  RELEASE_TAG: X64
-  CONFIG_NAME: x64.config
+  RELEASE_TAG: X86
+  CONFIG_NAME: X86.config
   UPLOAD_RELEASE: true
   COMMIT_LOG_NUM: 1
 
@@ -71,7 +71,7 @@ jobs:
         repo-owner: coolsnowwolf
         repo-name: lede
         issue-title: test
-        issue-body: '/home/zhusir/openwrt_log/log_Compile_x64.config_2022-08-30-20-04-03/Func_Main5_Compile-git_log.log'
+        issue-body: '/home/zhusir/openwrt_log/log_Compile_X86.config_2022-08-30-20-04-03/Func_Main5_Compile-git_log.log'
         # issue-labels: bug # Not mandatory
         # issue-assignees: <username> # Not mandatory
 

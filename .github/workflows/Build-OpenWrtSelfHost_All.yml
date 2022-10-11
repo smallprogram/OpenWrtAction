@@ -45,24 +45,24 @@ jobs:
         bash SelfHostCheck.sh
         echo "::set-output name=status::success"
 
-    - name: Compile the firmware X64
-      id: compile_X64
+    - name: Compile the firmware X86
+      id: compile_X86
       if: steps.UpdateSource.outputs.status == 'success' && !cancelled()
       run: |
         
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
-        bash wsl2op.sh x64.config
+        bash wsl2op.sh X86.config
         echo "::set-output name=status::success"
 
-    - name: Clean Compile the firmware X64
-      id: clean_compile_X64
-      if: steps.compile_X64.outputs.status != 'success' && !cancelled()
+    - name: Clean Compile the firmware X86
+      id: clean_compile_X86
+      if: steps.compile_X86.outputs.status != 'success' && !cancelled()
       run: |
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
-        rm -rf /home/$USER/lede_x64.config/
-        bash wsl2op.sh x64.config 1
+        rm -rf /home/$USER/lede_X86.config/
+        bash wsl2op.sh X86.config 1
         echo "::set-output name=status::success"
     
     - name: Compile the firmware R5S
