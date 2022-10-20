@@ -46,7 +46,7 @@ jobs:
       run: |
         cd /home/$USER/actions-runner/_work/OpenWrtAction/OpenWrtAction
         bash SelfHostCheck.sh
-        echo "::set-output name=status::success"
+        echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Compile the firmware
       id: complie
@@ -54,7 +54,7 @@ jobs:
       run: |
         cd /home/$USER/OpenWrtAction
         bash wsl2op.sh $CONFIG_NAME
-        echo "::set-output name=status::success"
+        echo "status=success" >> $GITHUB_OUTPUT
 
     # - name: Compile Error Post Log To Issue
     #   id: test
@@ -121,7 +121,7 @@ jobs:
     #     # git -C lede_$CONFIG_NAME/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
 
     #     touch /home/$USER/openwrt_releaselog/$CONFIG_NAME/release.txt
-    #     echo "::set-output name=status::success"
+    #     echo "status=success" >> $GITHUB_OUTPUT
 
     # has some error
 
