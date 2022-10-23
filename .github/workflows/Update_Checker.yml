@@ -117,68 +117,68 @@ jobs:
       run: |
         git clone --depth 1 $REPO_URL_smallprogramAction -b $REPO_BRANCH_smallprogramAction $REPO_PATH_smallprogramAction
         cd $REPO_PATH_smallprogramAction
-        echo "::set-output name=commitHash_smallprogramAction::$(git rev-parse HEAD)"
+        echo "commitHash_smallprogramAction=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone --depth 1 $REPO_URL_Lede -b $REPO_BRANCH_Lede $REPO_PATH_Lede
         cd $REPO_PATH_Lede
-        echo "::set-output name=commitHash_Lede::$(git rev-parse HEAD)"
+        echo "commitHash_Lede=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone --depth 1 $REPO_URL_Lede_Package -b $REPO_BRANCH_Lede_Package $REPO_PATH_Lede_Package
         cd $REPO_PATH_Lede_Package
-        echo "::set-output name=commitHash_Lede_Package::$(git rev-parse HEAD)"
+        echo "commitHash_Lede_Package=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone --depth 1 $REPO_URL_Lede_Luci -b $REPO_BRANCH_Lede_Luci $REPO_PATH_Lede_Luci
         cd $REPO_PATH_Lede_Luci
-        echo "::set-output name=commitHash_Lede_Luci::$(git rev-parse HEAD)"
+        echo "commitHash_Lede_Luci=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone --depth 1 $REPO_URL_OPENWRT_ROUTING -b $REPO_BRANCH_OPENWRT_ROUTING $REPO_PATH_OPENWRT_ROUTING
         cd $REPO_PATH_OPENWRT_ROUTING
-        echo "::set-output name=commitHash_OPENWRT_ROUTING::$(git rev-parse HEAD)"
+        echo "commitHash_OPENWRT_ROUTING=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         cd
         
         git clone --depth 1 $REPO_URL_OPENWRT_TELEPHONY -b $REPO_BRANCH_OPENWRT_TELEPHONY $REPO_PATH_OPENWRT_TELEPHONY
         cd $REPO_PATH_OPENWRT_TELEPHONY
-        echo "::set-output name=commitHash_OPENWRT_TELEPHONY::$(git rev-parse HEAD)"
+        echo "commitHash_OPENWRT_TELEPHONY=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone --depth 1 $REPO_URL_HelloWorld -b $REPO_BRANCH_HelloWorld $REPO_PATH_HelloWorld 
         cd $REPO_PATH_HelloWorld
-        echo "::set-output name=commitHash_HelloWorld::$(git rev-parse HEAD)"
+        echo "commitHash_HelloWorld=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone --depth 1 $REPO_URL_PassWall_Packages -b $REPO_BRANCH_PassWall_Packages $REPO_PATH_PassWall_Packages
         cd $REPO_PATH_PassWall_Packages
-        echo "::set-output name=commitHash_PassWall_Package::$(git rev-parse HEAD)"
+        echo "commitHash_PassWall_Package=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone --depth 1 $REPO_URL_PassWall_Luci -b $REPO_BRANCH_PassWall_Luci $REPO_PATH_PassWall_Luci
         cd $REPO_PATH_PassWall_Luci
-        echo "::set-output name=commitHash_PassWall_Luci::$(git rev-parse HEAD)"
+        echo "commitHash_PassWall_Luci=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone --depth 1 $REPO_URL_PassWall2 -b $REPO_BRANCH_PassWall2 $REPO_PATH_PassWall2
         cd $REPO_PATH_PassWall2
-        echo "::set-output name=commitHash_PassWall2::$(git rev-parse HEAD)"
+        echo "commitHash_PassWall2=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         cd
 
 
         # git clone --depth 1 $REPO_URL_ThemeArgon -b $REPO_BRANCH_ThemeArgon $REPO_PATH_ThemeArgon
         # cd $REPO_PATH_ThemeArgon
-        # echo "::set-output name=commitHash_ThemeArgon::$(git rev-parse HEAD)"
+        # echo "commitHash_ThemeArgon=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         # cd
 
         git clone --depth 1 $REPO_URL_ArgonConfig -b $REPO_BRANCH_ArgonConfig $REPO_PATH_ArgonConfig 
         cd $REPO_PATH_ArgonConfig 
-        echo "::set-output name=commitHash_ArgonConfig::$(git rev-parse HEAD)"
+        echo "commitHash_ArgonConfig=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         cd
 
         # git clone --depth 1 $REPO_URL_luci_app_dockerman -b $REPO_BRANCH_luci_app_dockerman $REPO_PATH_luci_app_dockerman
         # cd $REPO_PATH_luci_app_dockerman
-        # echo "::set-output name=commitHash_luci_app_dockerman::$(git rev-parse HEAD)"
+        # echo "commitHash_luci_app_dockerman=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         # cd
 
     - name: Show Commit Head and Combination Heads
@@ -194,9 +194,8 @@ jobs:
         echo "commitHash_PassWall_Package: ${{ steps.getHash.outputs.commitHash_PassWall_Package }}"
         echo "commitHash_PassWall_Luci: ${{ steps.getHash.outputs.commitHash_PassWall_Luci }}"
         echo "commitHash_PassWall2: ${{ steps.getHash.outputs.commitHash_PassWall2 }}"
-        # echo "commitHash_ThemeArgon: ${{ steps.getHash.outputs.commitHash_ThemeArgon }}"
         echo "commitHash_ArgonConfig: ${{ steps.getHash.outputs.commitHash_ArgonConfig }}"
-        echo "::set-output name=commitHash_All::\
+        echo "commitHash_All=\
           ${{steps.getHash.outputs.commitHash_smallprogramAction}}\
           ${{steps.getHash.outputs.commitHash_Lede}}\
           ${{steps.getHash.outputs.commitHash_Lede_Package}}\
@@ -207,8 +206,7 @@ jobs:
           ${{steps.getHash.outputs.commitHash_PassWall_Package}}\
           ${{steps.getHash.outputs.commitHash_PassWall_Luci}}\
           ${{steps.getHash.outputs.commitHash_PassWall2}}\
-          # ${{steps.getHash.outputs.commitHash_ThemeArgon}}\
-          ${{steps.getHash.outputs.commitHash_ArgonConfig}}"
+          ${{steps.getHash.outputs.commitHash_ArgonConfig}}" >> $GITHUB_OUTPUT
 
     - name: Compare Commit Hash
       id: cacheHash
@@ -231,7 +229,6 @@ jobs:
         echo ${{ steps.getHash.outputs.commitHash_PassWall_Package }} | tee .commitHash_PassWall_Package
         echo ${{ steps.getHash.outputs.commitHash_PassWall_Luci }} | tee .commitHash_PassWall_Luci
         echo ${{ steps.getHash.outputs.commitHash_PassWall2 }} | tee .commitHash_PassWall2
-        # echo ${{ steps.getHash.outputs.commitHash_ThemeArgon }} | tee .commitHash_ThemeArgon
         echo ${{ steps.getHash.outputs.commitHash_ArgonConfig }} | tee .commitHash_ArgonConfig
         echo ${{ steps.combHeader.outputs.commitHash_All }} | tee .commitHash_All
         
