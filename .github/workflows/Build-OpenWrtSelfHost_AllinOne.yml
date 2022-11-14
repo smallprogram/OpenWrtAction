@@ -43,7 +43,7 @@ jobs:
       run: |
         cd /home/$USER/actions-runner/_work/OpenWrtAction/OpenWrtAction
         bash SelfHostCheck.sh
-        echo "::set-output name=status::success"
+        echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Compile the firmware X86
       id: compile_X86
@@ -53,7 +53,7 @@ jobs:
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op_one.sh X86.config
-        echo "::set-output name=status::success"
+        echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Clean Compile the firmware X86
       id: clean_compile_X86
@@ -63,7 +63,7 @@ jobs:
         echo githubaction | sudo -S bash Freemem.sh
         rm -rf /home/$USER/lean_openwrt/
         bash wsl2op_one.sh X86.config 1
-        echo "::set-output name=status::success"
+        echo "status=success" >> $GITHUB_OUTPUT
     
     - name: Compile the firmware R5S
       id: compile_R5S
@@ -72,7 +72,7 @@ jobs:
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op_one.sh R5S.config
-        echo "::set-output name=status::success"
+        echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Clean Compile the firmware R5S
       id: clean_compile_R5S
@@ -82,7 +82,7 @@ jobs:
         echo githubaction | sudo -S bash Freemem.sh
         rm -rf /home/$USER/lean_openwrt/
         bash wsl2op_one.sh R5S.config 1
-        echo "::set-output name=status::success"
+        echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Compile the firmware R4S
       id: compile_R4S
@@ -91,7 +91,7 @@ jobs:
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op_one.sh R4S.config
-        echo "::set-output name=status::success"
+        echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Clean Compile the firmware R4S
       id: clean_compile_R4S
@@ -101,7 +101,7 @@ jobs:
         echo githubaction | sudo -S bash Freemem.sh
         rm -rf /home/$USER/lean_openwrt/
         bash wsl2op_one.sh R4S.config 1
-        echo "::set-output name=status::success"
+        echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Compile the firmware R2S
       id: compile_R2S
@@ -110,7 +110,7 @@ jobs:
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op_one.sh R2S.config
-        echo "::set-output name=status::success"
+        echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Clean Compile the firmware R2S
       id: clean_compile_R2S
@@ -120,7 +120,7 @@ jobs:
         echo githubaction | sudo -S bash Freemem.sh
         rm -rf /home/$USER/lean_openwrt/
         bash wsl2op_one.sh R2S.config 1
-        echo "::set-output name=status::success"
+        echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Compile the firmware R2C
       id: compile_R2C
@@ -129,7 +129,7 @@ jobs:
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op_one.sh R2C.config
-        echo "::set-output name=status::success"
+        echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Clean Compile the firmware R2C
       id: clean_compile_R2C
@@ -139,7 +139,7 @@ jobs:
         echo githubaction | sudo -S bash Freemem.sh
         rm -rf /home/$USER/lean_openwrt/
         bash wsl2op_one.sh R2C.config 1
-        echo "::set-output name=status::success"
+        echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Compile the firmware Pi4_Model_B
       id: compile_Pi4_Model_B
@@ -148,7 +148,7 @@ jobs:
         cd /home/$USER/OpenWrtAction
         echo githubaction | sudo -S bash Freemem.sh
         bash wsl2op_one.sh Pi4_Model_B.config
-        echo "::set-output name=status::success"
+        echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Clean Compile the firmware Pi4_Model_B
       id: clean_compile_Pi4_Model_B
@@ -158,5 +158,5 @@ jobs:
         echo githubaction | sudo -S bash Freemem.sh
         rm -rf /home/$USER/lean_openwrt/
         bash wsl2op_one.sh Pi4_Model_B.config 1
-        echo "::set-output name=status::success"
+        echo "status=success" >> $GITHUB_OUTPUT
         
