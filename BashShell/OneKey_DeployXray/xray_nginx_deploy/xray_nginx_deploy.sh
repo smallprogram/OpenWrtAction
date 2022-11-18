@@ -337,6 +337,77 @@ cat >/usr/local/etc/xray/config.json <<EOF
       }
     },
     {
+        "listen": "0.0.0.0",
+        "port": 44300,
+        "protocol": "vless",
+        "settings": {
+            "clients": [
+                {
+                    "id": "faed07bb-7362-4103-80d1-28efa9373e53",
+                    "flow": "xtls-rprx-vision",
+                    "level": 0,
+                    "email": "home"
+                },
+                {
+                    "id": "98dbc57b-8a06-4ff9-a306-8a447360c156",
+                    "flow": "xtls-rprx-vision",
+                    "level": 0,
+                    "email": "cgyy"
+                },
+                {
+                    "id": "53523f6f-231b-45ff-a225-8bbd649876aa",
+                    "flow": "xtls-rprx-vision",
+                    "level": 0,
+                    "email": "Temp01"
+                },
+                {
+                    "id": "216058ae-7108-4831-bb95-6eef84ab4510",
+                    "flow": "xtls-rprx-vision",
+                    "level": 0,
+                    "email": "Temp02"
+                },
+                {
+                    "id": "$uuid",
+                    "flow": "xtls-rprx-vision",
+                    "level": 0,
+                    "email": "Custom"
+                }
+            ],
+            "decryption": "none",
+            "fallbacks": [
+                {
+                    "dest": "/dev/shm/default.sock",
+                    "xver": 1
+                },
+                {
+                    "alpn": "h2",
+                    "dest": "/dev/shm/h2c.sock",
+                    "xver": 1
+                }
+            ]           
+        },
+        "streamSettings": {
+            "network": "tcp",
+            "security": "tls",
+            "tlsSettings": {
+                "rejectUnknownSni": true,
+                "certificates": [
+                    {
+                        "certificateFile": "/data/$domainName/fullchain.crt",
+                        "keyFile": "/data/$domainName/$domainName.key"
+                    }
+                ]
+            }
+        },
+        "sniffing": {
+            "enabled": true,
+            "destOverride": [
+                "http",
+                "tls"
+            ]
+        }
+    },
+    {
       "port": 6666,
       "listen": "127.0.0.1",
       "protocol": "vless",
@@ -457,6 +528,15 @@ echo -e "\033[34m 协议：Vless \033[0m"
 echo -e "\033[34m ID: $uuid \033[0m"
 echo -e "\033[34m 传输协议: TCP \033[0m"
 echo -e "\033[34m 建议流控: xtls-rprx-splice 或 xtls-rprx-direct \033[0m"
+echo -e "\033[34m   \033[0m"
+
+echo -e "\033[31m Xray Vless+TCP+Version配置完毕，具体内容如下： \033[0m"
+echo -e "\033[34m 地址：$domainName \033[0m"
+echo -e "\033[34m 端口：44300 \033[0m"
+echo -e "\033[34m 协议：Vless \033[0m"
+echo -e "\033[34m ID: $uuid \033[0m"
+echo -e "\033[34m 传输协议: TCP \033[0m"
+echo -e "\033[34m 流控: xtls-rprx-vision \033[0m"
 echo -e "\033[34m   \033[0m"
 
 echo -e "\033[31m Xray Vless+TCP+XTLS+Websocket 配置完毕，可套用CDN，具体内容如下： \033[0m"
