@@ -168,6 +168,22 @@ http {
             location = /50x.html {
         }
     }
+
+    server {
+        listen       80;
+        server_name  localhost;
+	      root         /usr/wwwroot;
+
+        location / {
+            root   html;
+            index  index.html index.htm;
+        }
+
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+    }
     
     include conf.d/*.conf;
 }
@@ -520,6 +536,15 @@ sysctl net.core.default_qdisc
 # net.core.default_qdisc = fq
 lsmod | grep bbr
 # 返回值有 tcp_bbr 模块即说明 bbr 已启动。注意：并不是所有的 VPS 都会有此返回值，若没有也属正常。
+
+
+# 配置自动更新证书
+acme.sh --upgrade --auto-upgrade
+acme.sh --renew -d $domainName --force --ecc
+systemctl stop nginx && service xray stop
+rm -rf /dev/shm/default.sock && rm -rf /dev/shm/h2c.sock
+systemctl start nginx && service xray start
+# xray会自动检测证书更新状态并重载，这里不用配置xray的证书检测了
 
 echo -e "\033[31m Xray Vless+TCP+XTLS配置完毕，具体内容如下： \033[0m"
 echo -e "\033[34m 地址：$domainName \033[0m"
