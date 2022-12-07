@@ -21,9 +21,9 @@
 
 # Lean Openwrt GitHubAction
 
-![image](source/login.gif)
+![image](/source/login.gif)
 
-![image](source/login2.jpg)
+![image](/source/login2.jpg)
 ### 根据源码更新自动编译
 
 ## 相关参数
@@ -76,7 +76,7 @@ R2C软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/mai
 
 
 ## 具体功能组件相关截图：
-![image](source/function.png)
+![image](/source/function.png)
 
 
 ## wsl2op.sh本地自动编译shell脚本说明
