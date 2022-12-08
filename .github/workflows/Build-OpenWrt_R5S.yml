@@ -183,7 +183,7 @@ jobs:
       run: |
         echo "release_tag=$RELEASE_TAG-$(date +"%Y.%m.%d-%H%M")" >> $GITHUB_OUTPUT
 
-        echo "## Update content" >> release.txt
+        echo "## :mega:Update content" >> release.txt
 
         echo "<details> <summary> Lean Openwrt Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         git -C openwrt log -n $COMMIT_LOG_NUM >> release.txt
