@@ -45,6 +45,7 @@
 |SSRP(Xray内核)|插件|Lean源码的亲儿子，评测说效率最高|https://github.com/fw876/helloworld|
 |PassWall|插件|一款功能强大的科学工具|https://github.com/xiaorouji/openwrt-passwall|
 |PassWall2|插件|一款功能强大的科学工具|https://github.com/xiaorouji/openwrt-passwall2|
+|OpenClash|插件|配置自由度极高的科学工具|https://github.com/vernesong/OpenClash|
 |DockerMan|插件|OP上玩Docker的必备插件|https://github.com/lisaac/luci-app-dockerman|
 |新版argon主题|主题|十分漂亮的OP主题|https://github.com/jerrykuku/luci-theme-argon|
 |Argon Config|插件|新版argon主题的设置插件|https://github.com/jerrykuku/luci-app-argon-config|
@@ -69,12 +70,12 @@
 ## config列表
 |适用平台|KERNEL大小|ROOTFS大小|地址|
 -|-|-|-
-X86平台|128Mb|512Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/X86.config|
-Pi4_Model_B|128Mb|512Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/Pi4_Model_B.config
-R5S软路由|128Mb|512Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R5S.config
-R4S软路由|128Mb|512Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config
-R2S软路由|128Mb|512Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2S.config
-R2C软路由|128Mb|512Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2C.config
+X86平台|128Mb|768Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/X86.config|
+Pi4_Model_B|128Mb|768Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/Pi4_Model_B.config
+R5S软路由|128Mb|768Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R5S.config
+R4S软路由|128Mb|768Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config
+R2S软路由|128Mb|768Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2S.config
+R2C软路由|128Mb|768Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2C.config
 
 
 

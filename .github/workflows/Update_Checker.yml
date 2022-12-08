@@ -63,6 +63,11 @@ env:
   REPO_BRANCH_PassWall2: main
   REPO_PATH_PassWall2 : "openwrt-passwall2"
 
+  # OpenClash源码
+  REPO_URL_OpenClash: https://github.com/vernesong/OpenClash.git
+  REPO_BRANCH_OpenClash: master
+  REPO_PATH_OpenClash : "openclash"
+
   # jerrykuku/luci-theme-argon主题源码
   # REPO_URL_ThemeArgon: https://github.com/jerrykuku/luci-theme-argon
   # REPO_BRANCH_ThemeArgon: master
@@ -165,6 +170,10 @@ jobs:
         echo "commitHash_PassWall2=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         cd
 
+        git clone --depth 1 $REPO_URL_OpenClash -b $REPO_BRANCH_OpenClash $REPO_PATH_OpenClash
+        cd $REPO_PATH_OpenClash
+        echo "commitHash_OpenClash=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        cd
 
         # git clone --depth 1 $REPO_URL_ThemeArgon -b $REPO_BRANCH_ThemeArgon $REPO_PATH_ThemeArgon
         # cd $REPO_PATH_ThemeArgon
@@ -194,6 +203,7 @@ jobs:
         echo "commitHash_PassWall_Package: ${{ steps.getHash.outputs.commitHash_PassWall_Package }}"
         echo "commitHash_PassWall_Luci: ${{ steps.getHash.outputs.commitHash_PassWall_Luci }}"
         echo "commitHash_PassWall2: ${{ steps.getHash.outputs.commitHash_PassWall2 }}"
+        echo "commitHash_OpenClash: ${{ steps.getHash.outputs.commitHash_OpenClash }}"
         echo "commitHash_ArgonConfig: ${{ steps.getHash.outputs.commitHash_ArgonConfig }}"
         echo "commitHash_All=\
           ${{steps.getHash.outputs.commitHash_smallprogramAction}}\
@@ -206,6 +216,7 @@ jobs:
           ${{steps.getHash.outputs.commitHash_PassWall_Package}}\
           ${{steps.getHash.outputs.commitHash_PassWall_Luci}}\
           ${{steps.getHash.outputs.commitHash_PassWall2}}\
+          ${{steps.getHash.outputs.commitHash_OpenClash}}\
           ${{steps.getHash.outputs.commitHash_ArgonConfig}}" >> $GITHUB_OUTPUT
 
     - name: Compare Commit Hash
@@ -229,6 +240,7 @@ jobs:
         echo ${{ steps.getHash.outputs.commitHash_PassWall_Package }} | tee .commitHash_PassWall_Package
         echo ${{ steps.getHash.outputs.commitHash_PassWall_Luci }} | tee .commitHash_PassWall_Luci
         echo ${{ steps.getHash.outputs.commitHash_PassWall2 }} | tee .commitHash_PassWall2
+        echo ${{ steps.getHash.outputs.commitHash_OpenClash }} | tee .commitHash_OpenClash
         echo ${{ steps.getHash.outputs.commitHash_ArgonConfig }} | tee .commitHash_ArgonConfig
         echo ${{ steps.combHeader.outputs.commitHash_All }} | tee .commitHash_All
         

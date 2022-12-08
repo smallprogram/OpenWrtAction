@@ -212,6 +212,9 @@ jobs:
         echo "</details> <details> <summary> Passwall2 Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         git -C openwrt/feeds/passwall2 log -n $COMMIT_LOG_NUM >> release.txt
 
+        echo "</details> <details> <summary> OpenClash Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        git -C openwrt/feeds/OpenClash log -n $COMMIT_LOG_NUM >> release.txt
+
         # echo "</details> <details> <summary> DockerMan Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         # git -C openwrt/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> release.txt
 

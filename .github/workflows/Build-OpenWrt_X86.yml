@@ -185,6 +185,13 @@ jobs:
 
         echo "## Update content" >> release.txt
 
+        echo "Cancel the ext4 format and only keep the squashfs format." >> release.txt
+        echo "Including traditional IMG format firmware and UEFI boot firmware." >> release.txt
+        echo "Including qcow2 format firmware and UEFI boot firmware supporting pve virtual machine." >> release.txt
+        echo "Including vdi format firmware and UEFI boot firmware supporting Visual Box virtual machine." >> release.txt
+        echo "Including vhdx format firmware and UEFI boot firmware supporting Hyper-v virtual machines." >> release.txt
+        echo "Including vmdk format firmware and UEFI boot firmware that support ESXi virtual machines (8.0 requires tool conversion)." >> release.txt
+
         echo "<details> <summary> Lean Openwrt Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         git -C openwrt log -n $COMMIT_LOG_NUM >> release.txt
 
@@ -211,6 +218,9 @@ jobs:
 
         echo "</details> <details> <summary> Passwall2 Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         git -C openwrt/feeds/passwall2 log -n $COMMIT_LOG_NUM >> release.txt
+
+        echo "</details> <details> <summary> OpenClash Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        git -C openwrt/feeds/OpenClash log -n $COMMIT_LOG_NUM >> release.txt
 
         # echo "</details> <details> <summary> DockerMan Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         # git -C openwrt/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> release.txt

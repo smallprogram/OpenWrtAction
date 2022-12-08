@@ -43,6 +43,7 @@
 |SSRP|Plugin|The pro son of Lean source code, the evaluation says the most efficient|https://github.com/fw876/helloworld|
 |PassWall|Plugin|A powerful scientific tool|https://github.com/xiaorouji/openwrt-passwall|
 |PassWall2|Plugin|A powerful scientific tool|https://github.com/xiaorouji/openwrt-passwall2|
+|OpenClash|Plugin|Scientific tools with a high degree of configuration freedom|https://github.com/vernesong/OpenClash|
 |DockerMan|Plugin|The essential plug-in for playing Docker on OP|https://github.com/lisaac/luci-app-dockerman|
 |New version of argon theme|Theme|Very beautiful OP theme|https://github.com/jerrykuku/luci-theme-argon|
 |Argon Config|Plugin|Settings plugin for the new version of argon theme|https://github.com/jerrykuku/luci-app-argon-config|
@@ -67,12 +68,12 @@
 ## config list
 |Applicable Platform|KERNEL Size|ROOTFS Size|Address|
 -|-|-|-
-X86 platform|128Mb|512Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/x64.config|
-Pi4_Model_B|128Mb|512Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/Pi4_Model_B.config
-R5S soft routing|128Mb|512Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R5S.config
-R4S soft routing|128Mb|512Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config
-R2S soft routing|128Mb|512Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2S.config
-R2C soft routing|128Mb|512Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2C.config
+X86 platform|128Mb|768Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/x64.config|
+Pi4_Model_B|128Mb|768Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/Pi4_Model_B.config
+R5S soft routing|128Mb|768Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R5S.config
+R4S soft routing|128Mb|768Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config
+R2S soft routing|128Mb|768Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2S.config
+R2C soft routing|128Mb|768Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2C.config
 
 ## Related screenshots of specific functional components:
 ![image](source/function.png)
