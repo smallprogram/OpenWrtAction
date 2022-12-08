@@ -80,7 +80,7 @@ R2C软路由|128Mb|896Mb|https://github.com/smallprogram/OpenWrtAction/blob/main
 
 
 ## 具体功能组件相关截图：
-![image](/source/function.png)
+![image](/source/main.png)
 
 
 ## wsl2op.sh本地自动编译shell脚本说明
