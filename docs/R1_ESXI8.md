@@ -36,6 +36,9 @@
 - 键盘鼠标和USB Hub
 - 8GB+容量U盘一个
 
+如果你懒得下载，可以用我下载好的文件，[点击此处(OneDrive)](https://1drv.ms/u/s!AjMAohXqVY4TgZV2lm2JJg6E3YWNTA?e=bwBWA8)
+
+
 ### ESXI 8 安装文件
 可以直接去官网下载，地址：https://customerconnect.vmware.com/evalcenter?p=vsphere-eval-8 ，注意，你需要注册一个VMWare的customer connect账号，注册登录完毕后，就可以下载60天试用版的ESXI8.0了，至于怎么激活可以问问Google，
 
