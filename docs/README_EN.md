@@ -29,9 +29,9 @@
 
 # Lean Openwrt GitHubAction
 
-![image](source/login.gif)
+![image](/source/login.gif)
 
-![image](source/login2.jpg)
+![image](/source/login2.jpg)
 ### Automatically compile according to source code updates
 
 
@@ -78,7 +78,7 @@ R2S soft routing|128Mb|896Mb|https://github.com/smallprogram/OpenWrtAction/blob/
 R2C soft routing|128Mb|896Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2C.config
 
 ## Related screenshots of specific functional components:
-![image](source/function.png)
+![image](/source/main.png)
 
 
 ## Description of wsl2op.sh local automatic compilation shell script
@@ -91,13 +91,13 @@ Note that if you fork my Respository, you need to synchronize the modified confi
 
 First you need to **modify the value of the owaUrl variable in the wsl2op.sh script to change it to the git Url after you fork**
 
-![image](source/owaUrl.png)
+![image](/source/owaUrl.png)
 
 Then you need to enter <b>github username</b> and <b>github Token</b>
 
 **github Token, please create it in your own Github Settings --> Developer settings --> Personal access tokens**
 
-![image](source/githubauth.png)
+![image](/source/githubauth.png)
 
 Of course, if you find it troublesome, you can also directly PR your config to my warehouse config folder, so you can directly compile asynchronously
 
@@ -118,4 +118,4 @@ bash wsl2op.sh
 ```
 
 ### Detailed execution process
-![image](source/wsl2op.png)
+![image](/source/wsl2op.png)
