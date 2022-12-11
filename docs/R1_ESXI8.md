@@ -25,6 +25,13 @@
     - [基础设置](#基础设置)
     - [网络设置](#网络设置)
     - [配置OPENWRT虚拟机](#配置openwrt虚拟机)
+  - [ESXi 8.0a升级](#esxi-80a升级)
+    - [升级步骤](#升级步骤)
+    - [VMWare官网下载补丁(以同步至前面的OneDrive中)](#vmware官网下载补丁以同步至前面的onedrive中)
+    - [将补丁上传至ESXi](#将补丁上传至esxi)
+    - [停用所有虚拟机，进入维护模式，开启SSH](#停用所有虚拟机进入维护模式开启ssh)
+    - [使用esxcli指令升级(重点)](#使用esxcli指令升级重点)
+
 
 
 
@@ -281,3 +288,68 @@ PCI设备 设置中，可以切换硬件是否直通，这个后边会说到
 
 ![image](pic/R1_ESXI8/esxisetup36.png)
 
+## ESXi 8.0a升级
+
+### 升级步骤
+1. VMWare官网下载补丁(以同步至前面的OneDrive中)
+2. 将补丁上传至ESXi
+3. 停用所有虚拟机，进入维护模式，开启SSH
+4. 使用esxcli指令升级(重点)
+
+### VMWare官网下载补丁(以同步至前面的OneDrive中)
+
+进入官方页面 https://customerconnect.vmware.com/cn/patch ，下载8.0的补丁，懒得下载去[网盘里下载](https://1drv.ms/u/s!AjMAohXqVY4TgZV2lm2JJg6E3YWNTA?e=bwBWA8)，具体的升级内容详见：https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-esxi-80a-release-notes/index.html
+
+![image](pic/R1_ESXI8/esxiupdate1.png)
+
+### 将补丁上传至ESXi
+
+使用ESXi存储管理器将zip补丁文件上传至存储，我这里新建了一个文件夹esxiUpdate,将升级文件上传至该文件夹下
+
+![image](pic/R1_ESXI8/esxiupdate2.png)
+
+
+### 停用所有虚拟机，进入维护模式，开启SSH
+
+停用所有虚拟机
+
+![image](pic/R1_ESXI8/esxiupdate3.png)
+
+进入维护模式
+
+![image](pic/R1_ESXI8/esxiupdate4.png)
+
+开启SSH
+
+![image](pic/R1_ESXI8/esxiupdate5.png)
+
+### 使用esxcli指令升级(重点)
+
+通过putty、powershell、FinalShell等工具ssh接入虚拟机
+
+![image](pic/R1_ESXI8/esxiupdate6.png)
+
+使用命令检查文件,正常会返回文件名称
+`ls /vmfs/volumes/datastore1/esxiUpdate/`
+
+![image](pic/R1_ESXI8/esxiupdate7.png)
+
+使用`vmware -v`查看当前esxi版本号，当前版本号为20513097
+
+![image](pic/R1_ESXI8/esxiupdate8.png)
+
+使用esxcli命令：`esxcli software vib update -d /vmfs/volumes/datastore1/esxiUpdate/VMware-ESXi-8.0a-20842819-depot.zip` 打补丁。
+
+略等一小会，会返回很多日志，看到`The update completed successfully, but the system needs to be rebooted for the changes to be effective.`，代表升级成功，但是需要重启esxi才能生效
+
+![image](pic/R1_ESXI8/esxiupdate9.png)
+
+使用`reboot`命令重启esxi
+
+![image](pic/R1_ESXI8/esxiupdate10.png)
+
+重启过后，进入esxi web管理页面，重新开启ssh，并通过工具ssh接入esxi，使用命令查看当前esxi版本号。
+
+![image](pic/R1_ESXI8/esxiupdate11.png)
+
+至此升级完成，记得**回到esxi web管理页面退出维护模式**，**关闭ssh权限**，**启用各个虚拟机**
