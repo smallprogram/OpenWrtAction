@@ -253,7 +253,7 @@ jobs:
           keep_minimum_runs: 6
 
     - name: Remove old Releases
-      uses: smallprogram/delete-older-releases@v0.2.1
+      uses: dev-drprasad/delete-older-releases@latest
       with:
         keep_latest: 6
         delete_tags: true
