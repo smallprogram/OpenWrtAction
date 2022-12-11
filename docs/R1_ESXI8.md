@@ -298,7 +298,7 @@ PCI设备 设置中，可以切换硬件是否直通，这个后边会说到
 
 ### VMWare官网下载补丁(以同步至前面的OneDrive中)
 
-进入官方页面 https://customerconnect.vmware.com/cn/patch ，下载8.0的补丁，懒得下载去[网盘里下载](https://1drv.ms/u/s!AjMAohXqVY4TgZV2lm2JJg6E3YWNTA?e=bwBWA8)，具体的升级内容详见：https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-esxi-80a-release-notes/index.html
+VMWare 2022年12月08发布了ESXI 8的8.0a补丁。官方页面 https://customerconnect.vmware.com/cn/patch ，下载8.0a补丁，懒得下载去[网盘里下载](https://1drv.ms/u/s!AjMAohXqVY4TgZV2lm2JJg6E3YWNTA?e=bwBWA8)，具体的升级内容详见：https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vsphere-esxi-80a-release-notes/index.html
 
 ![image](pic/R1_ESXI8/esxiupdate1.png)
 
