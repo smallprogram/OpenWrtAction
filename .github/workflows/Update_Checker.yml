@@ -221,7 +221,7 @@ jobs:
 
     - name: Compare Commit Hash
       id: cacheHash
-      uses: actions/cache@v2
+      uses: actions/cache@latest
       with:
         path: .commitHash_All
         key: HEAD-${{ steps.combHeader.outputs.commitHash_All }}
@@ -245,7 +245,7 @@ jobs:
         echo ${{ steps.combHeader.outputs.commitHash_All }} | tee .commitHash_All
         
     - name: Delete workflow runs
-      uses: Mattraks/delete-workflow-runs@v2.0.3
+      uses: Mattraks/delete-workflow-runs@latest
       with:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
