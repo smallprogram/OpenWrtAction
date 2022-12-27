@@ -133,15 +133,15 @@ jobs:
       run: |
         echo "status=success" >> $GITHUB_OUTPUT
 
-    - name: Git Auto Commit
-      uses: stefanzweifel/git-auto-commit-action@v4.16.0
-      id: commit
-      if: steps.upload.outputs.status == 'success' && !cancelled()
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        commit_message: Action Automated Change
-        branch: main
-        commit_user_name: My GitHub Actions Bot
-        commit_user_email: my-github-actions-bot@example.org
-        commit_author: smallprogram <smallprogram@foxmail.com>
+    # - name: Git Auto Commit
+    #   uses: stefanzweifel/git-auto-commit-action@v4.16.0
+    #   id: commit
+    #   if: steps.upload.outputs.status == 'success' && !cancelled()
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     commit_message: Action Automated Change
+    #     branch: main
+    #     commit_user_name: My GitHub Actions Bot
+    #     commit_user_email: my-github-actions-bot@example.org
+    #     commit_author: smallprogram <smallprogram@foxmail.com>
