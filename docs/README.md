@@ -16,6 +16,7 @@
 |[![Build-OpenWrt_R2C](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_R2C.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_R2C.yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|R2C: |
 |[![Build-OpenWrt_Pi4ModelB](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_Pi4ModelB.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_Pi4ModelB.yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|Pi4ModelB: |
 
+https://github.com/smallprogram/OpenWrtAction/releases/tag/2022.12.27-0650-R2C
 
 # [English Readme](README_EN.md)
 
