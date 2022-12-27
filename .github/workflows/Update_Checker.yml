@@ -120,10 +120,10 @@ jobs:
     - name: Get Commit Hash
       id: getHash
       run: |
-        git clone --depth 1 $REPO_URL_smallprogramAction -b $REPO_BRANCH_smallprogramAction $REPO_PATH_smallprogramAction
-        cd $REPO_PATH_smallprogramAction
-        echo "commitHash_smallprogramAction=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
-        cd
+        # git clone --depth 1 $REPO_URL_smallprogramAction -b $REPO_BRANCH_smallprogramAction $REPO_PATH_smallprogramAction
+        # cd $REPO_PATH_smallprogramAction
+        # echo "commitHash_smallprogramAction=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        # cd
 
         git clone --depth 1 $REPO_URL_Lede -b $REPO_BRANCH_Lede $REPO_PATH_Lede
         cd $REPO_PATH_Lede
@@ -193,7 +193,7 @@ jobs:
     - name: Show Commit Head and Combination Heads
       id: combHeader
       run: |
-        echo "commitHash_smallprogramAction: ${{ steps.getHash.outputs.commitHash_smallprogramAction }}"
+        # echo "commitHash_smallprogramAction: ${{ steps.getHash.outputs.commitHash_smallprogramAction }}"
         echo "commitHash_Lede: ${{ steps.getHash.outputs.commitHash_Lede }}"
         echo "commitHash_Lede_Package: ${{ steps.getHash.outputs.commitHash_Lede_Package }}"
         echo "commitHash_Lede_Luci: ${{ steps.getHash.outputs.commitHash_Lede_Luci }}"
@@ -230,7 +230,7 @@ jobs:
     - name: Save New Commit Hash
       if: steps.cacheHash.outputs.cache-hit != 'true'
       run: |
-        echo ${{ steps.getHash.outputs.commitHash_smallprogramAction }} | tee .commitHash_smallprogramAction
+        # echo ${{ steps.getHash.outputs.commitHash_smallprogramAction }} | tee .commitHash_smallprogramAction
         echo ${{ steps.getHash.outputs.commitHash_Lede }} | tee .commitHash_Lede
         echo ${{ steps.getHash.outputs.commitHash_Lede_Package }} | tee .commitHash_Lede_Package
         echo ${{ steps.getHash.outputs.commitHash_Lede_Luci }} | tee .commitHash_Lede_Luci
