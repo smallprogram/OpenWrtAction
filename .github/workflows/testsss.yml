@@ -125,8 +125,6 @@ jobs:
         tag_name: ${{ steps.tag.outputs.release_tag }}
         body_path: release.txt
         files: release.txt
-      run: |
-        echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Git Auto Commit
       uses: stefanzweifel/git-auto-commit-action@v4.16.0
