@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build-OpenWrt_X86_TEST
+name: testsss
 
 on:
   repository_dispatch:
@@ -97,12 +97,9 @@ jobs:
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
 
-     - name: Check space usage
-      if: (!cancelled())
-      run: df -hT
-
     - name: Generate release tag
       id: tag
+      if: steps.compile.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
         echo "release_tag=$(date +"%Y.%m.%d-%H%M")-$RELEASE_TAG" >> $GITHUB_OUTPUT
 
@@ -116,8 +113,6 @@ jobs:
         echo "**:dvd:Including vmdk format firmware and UEFI boot firmware that support ESXi virtual machines (8.0 requires tool conversion).**" >> release.txt
 
         touch release.txt
-        [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
-        [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Upload firmware to release
@@ -133,15 +128,16 @@ jobs:
       run: |
         echo "status=success" >> $GITHUB_OUTPUT
 
-    # - name: Git Auto Commit
-    #   uses: stefanzweifel/git-auto-commit-action@v4.16.0
-    #   id: commit
-    #   if: steps.upload.outputs.status == 'success' && !cancelled()
-    #   env:
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #   with:
-    #     commit_message: Action Automated Change
-    #     branch: main
-    #     commit_user_name: My GitHub Actions Bot
-    #     commit_user_email: my-github-actions-bot@example.org
-    #     commit_author: smallprogram <smallprogram@foxmail.com>
+    - name: Git Auto Commit
+      uses: stefanzweifel/git-auto-commit-action@v4.16.0
+      id: commit
+      if: steps.upload.outputs.status == 'success' && !cancelled()
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        commit_message: Action Automated Change
+        branch: main
+        commit_user_name: My GitHub Actions Bot
+        commit_user_email: my-github-actions-bot@example.org
+        commit_author: smallprogram <smallprogram@foxmail.com>
+
