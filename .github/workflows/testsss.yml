@@ -107,7 +107,6 @@ jobs:
 
     - name: Upload firmware to release
       uses: softprops/action-gh-release@v1
-      id: upload
       if: steps.tag.outputs.status == 'success' && !cancelled()
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -116,10 +115,16 @@ jobs:
         body_path: release.txt
         files: release.txt
 
+    - name: Generate commit
+      id: Gen_commit
+      run: |
+        sed 's/\(X86:\).*\(|\)/\X86: [![](https:\/\/img.shields.io\/badge\/LatestRelease-${{ steps.tag.outputs.release_tag }}-green?style=flat-square)](https:\/\/github.com\/smallprogram\/OpenWrtAction\/releases\/tag\/${{ steps.tag.outputs.release_tag }})\2/' docs/README.md
+        echo "status=success" >> $GITHUB_OUTPUT
+
     - name: Git Auto Commit
       uses: stefanzweifel/git-auto-commit-action@v4.16.0
       id: commit
-      if: steps.upload.outputs.status == 'success' && !cancelled()
+      if: steps.Gen_commit.outputs.status == 'success' && !cancelled()
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
