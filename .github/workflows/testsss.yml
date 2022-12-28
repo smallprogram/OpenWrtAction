@@ -69,11 +69,11 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
-    - name: Update feeds
-      run: cd openwrt && ./scripts/feeds update -a
+    # - name: Update feeds
+    #   run: cd openwrt && ./scripts/feeds update -a
 
-    - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install -a
+    # - name: Install feeds
+    #   run: cd openwrt && ./scripts/feeds install -a
 
     - name: Load custom configuration
       run: |
@@ -117,7 +117,7 @@ jobs:
     - name: Generate commit
       id: Gen_commit
       run: |
-        label=${steps.tag.outputs.release_tag//-/-}
+        label=${steps.tag.outputs.release_tag//-/--}
         echo label
         sed -i 's/\(X86:\).*\(|\)/\X86: [![](https:\/\/img.shields.io\/badge\/LatestRelease-$label-green?style=flat-square)](https:\/\/github.com\/smallprogram\/OpenWrtAction\/releases\/tag\/${{ steps.tag.outputs.release_tag }})\2/' docs/README.md
         echo "status=success" >> $GITHUB_OUTPUT
