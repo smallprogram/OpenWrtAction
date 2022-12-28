@@ -131,5 +131,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        commit_message: New Release Automated Change
+        commit_message: New Release Automated Change ${{ steps.tag.outputs.release_tag }}
         branch: main
