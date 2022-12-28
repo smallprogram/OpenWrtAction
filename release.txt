@@ -1,0 +1,7 @@
+## :mega:Update content
+**:loudspeaker:Cancel the ext4 format and only keep the squashfs format.**
+**:computer:Including traditional IMG format firmware and UEFI boot firmware.**
+**:cd:Including qcow2 format firmware and UEFI boot firmware supporting pve virtual machine.**
+**:cd:Including vdi format firmware and UEFI boot firmware supporting Visual Box virtual machine.**
+**:cd:Including vhdx format firmware and UEFI boot firmware supporting Hyper-v virtual machines.**
+**:dvd:Including vmdk format firmware and UEFI boot firmware that support ESXi virtual machines (8.0 requires tool conversion).**
