@@ -118,7 +118,7 @@ jobs:
     - name: Generate commit
       id: Gen_commit
       run: |
-        sed 's/\(X86:\).*\(|\)/\X86: [![](https:\/\/img.shields.io\/badge\/LatestRelease-${{ steps.tag.outputs.release_tag }}-green?style=flat-square)](https:\/\/github.com\/smallprogram\/OpenWrtAction\/releases\/tag\/${{ steps.tag.outputs.release_tag }})\2/' docs/README.md
+        sed -i 's/\(X86:\).*\(|\)/\X86: [![](https:\/\/img.shields.io\/badge\/LatestRelease-${{ steps.tag.outputs.release_tag }}-green?style=flat-square)](https:\/\/github.com\/smallprogram\/OpenWrtAction\/releases\/tag\/${{ steps.tag.outputs.release_tag }})\2/' docs/README.md
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Git Auto Commit
