@@ -129,9 +129,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        commit_message: Action Automated Change
+        commit_message: New Release Automated Change
         branch: main
-        commit_user_name: My GitHub Actions Bot
-        commit_user_email: my-github-actions-bot@example.org
-        commit_author: smallprogram <smallprogram@foxmail.com>
-
