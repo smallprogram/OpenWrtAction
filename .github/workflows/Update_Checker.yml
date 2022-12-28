@@ -264,6 +264,6 @@ jobs:
       if: steps.cacheHash.outputs.cache-hit != 'true'
       uses: peter-evans/repository-dispatch@v1
       with:
-        token: ${{ secrets.OPENWRTACTION_TRIGGER }}
+        token: ${{ secrets.GITHUB_TOKEN }}
         event-type: OpenWrt Related Code Updates
 
