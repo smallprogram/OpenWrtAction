@@ -9,7 +9,7 @@
 ## WorkFlows
 |ActionStatus|Network Support|Latest Release|
 |-|-|-|
-|[![Build-OpenWrt_X86](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_X86.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_X86.yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|X86: |
+|[![Build-OpenWrt_X86](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_X86.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_X86.yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|X86: [![](https://img.shields.io/badge/LatestRelease--green?style=flat-square)](https://github.com/smallprogram/OpenWrtAction/releases/tag/)|
 |[![Build-OpenWrt_R5S](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_R5S.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_R5S.yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|R5S: |
 |[![Build-OpenWrt_R4S](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_R4S.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_R4S.yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|R4S: |
 |[![Build-OpenWrt_R2S](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_R2S.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_R2S.yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|R2S: |
