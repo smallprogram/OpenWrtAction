@@ -114,10 +114,13 @@ jobs:
     #     body_path: release.txt
     #     files: release.txt
 
+    - name: Checkout
+      uses: actions/checkout@main
+      
     - name: Generate commit
       id: Gen_commit
       run: |
-        sed -i 's/\(X86:\).*\(|\)/\X86: [![](https:\/\/img.shields.io\/badge\/LatestRelease-${{ steps.tag.outputs.release_tag }}-green?style=flat-square)](https:\/\/github.com\/smallprogram\/OpenWrtAction\/releases\/tag\/${{ steps.tag.outputs.release_tag }})\2/' docs/README.md
+        sed -i 's/\(${{RELEASE_TAG}}:\).*\(|\)/\${{RELEASE_TAG}}: [![](https:\/\/img.shields.io\/badge\/LatestRelease-${{ steps.tag.outputs.release_tag }}-green?style=flat-square)](https:\/\/github.com\/smallprogram\/OpenWrtAction\/releases\/tag\/${{ steps.tag.outputs.release_tag }})\2/' docs/README.md
         rm -rf release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
