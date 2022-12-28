@@ -120,6 +120,7 @@ jobs:
         label=${steps.tag.outputs.release_tag//-/--}
         echo label
         sed -i 's/\(X86:\).*\(|\)/\X86: [![](https:\/\/img.shields.io\/badge\/LatestRelease-$label-green?style=flat-square)](https:\/\/github.com\/smallprogram\/OpenWrtAction\/releases\/tag\/${{ steps.tag.outputs.release_tag }})\2/' docs/README.md
+        rm -rf release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Git Auto Commit
