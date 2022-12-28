@@ -91,7 +91,7 @@ jobs:
       id: tag
       run: |
         echo "release_tag=$(date +"%Y.%m.%d-%H%M")-$RELEASE_TAG" >> $GITHUB_OUTPUT
-
+        
         echo "## :mega:Update content" >> release.txt
 
         echo "**:loudspeaker:Cancel the ext4 format and only keep the squashfs format.**" >> release.txt
@@ -117,7 +117,9 @@ jobs:
     - name: Generate commit
       id: Gen_commit
       run: |
-        sed -i 's/\(X86:\).*\(|\)/\X86: [![](https:\/\/img.shields.io\/badge\/LatestRelease-${{ steps.tag.outputs.release_tag }}-green?style=flat-square)](https:\/\/github.com\/smallprogram\/OpenWrtAction\/releases\/tag\/${{ steps.tag.outputs.release_tag }})\2/' docs/README.md
+        label=${steps.tag.outputs.release_tag//-/-}
+        echo label
+        sed -i 's/\(X86:\).*\(|\)/\X86: [![](https:\/\/img.shields.io\/badge\/LatestRelease-$label-green?style=flat-square)](https:\/\/github.com\/smallprogram\/OpenWrtAction\/releases\/tag\/${{ steps.tag.outputs.release_tag }})\2/' docs/README.md
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Git Auto Commit
