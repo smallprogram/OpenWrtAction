@@ -1,0 +1,17 @@
+src-git packages https://github.com/coolsnowwolf/packages
+#src-git packages https://github.com/smallprogram/packages
+src-git luci https://github.com/coolsnowwolf/luci
+src-git routing https://git.openwrt.org/feed/routing.git
+src-git telephony https://git.openwrt.org/feed/telephony.git
+#src-git video https://github.com/openwrt/video.git
+#src-git targets https://github.com/openwrt/targets.git
+#src-git management https://github.com/openwrt-management/packages.git
+#src-git oldpackages http://git.openwrt.org/packages.git
+#src-link custom /usr/src/openwrt/custom-feed
+src-git helloworld https://github.com/fw876/helloworld
+src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall.git;packages
+src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;luci
+src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main
+src-git OpenClash https://github.com/vernesong/OpenClash;master
+#src-git nas https://github.com/linkease/nas-packages.git;master
+#src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main
