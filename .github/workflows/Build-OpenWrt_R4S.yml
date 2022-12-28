@@ -178,7 +178,7 @@ jobs:
       id: tag
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "release_tag=$(date +"%Y.%m.%d-%H%M")-$RELEASE_TAG" >> $GITHUB_OUTPUT
+        echo "release_tag=$(date +"%Y.%m.%d_%H%M")_$RELEASE_TAG" >> $GITHUB_OUTPUT
 
         echo "## :mega:Update content" >> release.txt
 
@@ -235,6 +235,27 @@ jobs:
         tag_name: ${{ steps.tag.outputs.release_tag }}
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
+    
+    - name: Checkout
+      uses: actions/checkout@main
+
+    - name: Generate commit
+      id: Gen_commit
+      run: |
+        sed -i 's/\(${{ env.RELEASE_TAG }}:\).*\(|\)/\${{ env.RELEASE_TAG }}: [![](https:\/\/img.shields.io\/badge\/LatestRelease-${{ steps.tag.outputs.release_tag }}-green?style=flat-square)](https:\/\/github.com\/smallprogram\/OpenWrtAction\/releases\/tag\/${{ steps.tag.outputs.release_tag }})\2/' docs/README.md
+        sed -i 's/\(${{ env.RELEASE_TAG }}:\).*\(|\)/\${{ env.RELEASE_TAG }}: [![](https:\/\/img.shields.io\/badge\/LatestRelease-${{ steps.tag.outputs.release_tag }}-green?style=flat-square)](https:\/\/github.com\/smallprogram\/OpenWrtAction\/releases\/tag\/${{ steps.tag.outputs.release_tag }})\2/' docs/README_EN.md
+        rm -rf release.txt
+        echo "status=success" >> $GITHUB_OUTPUT
+
+    - name: Git Auto Commit
+      uses: stefanzweifel/git-auto-commit-action@v4.16.0
+      id: commit
+      if: steps.Gen_commit.outputs.status == 'success' && !cancelled()
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        commit_message: New Release Automated Change ${{ steps.tag.outputs.release_tag }}
+        branch: main
 
     # - name: Delete workflow runs
     #   uses: GitRML/delete-workflow-runs@main
