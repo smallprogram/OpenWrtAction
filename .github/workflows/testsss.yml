@@ -89,7 +89,6 @@ jobs:
 
     - name: Generate release tag
       id: tag
-      if: steps.compile.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
         echo "release_tag=$(date +"%Y.%m.%d-%H%M")-$RELEASE_TAG" >> $GITHUB_OUTPUT
 
