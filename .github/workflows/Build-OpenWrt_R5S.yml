@@ -182,6 +182,8 @@ jobs:
 
         echo "## :mega:Update content" >> release.txt
 
+        echo "![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/$(date +"%Y.%m.%d_%H%M")_$RELEASE_TAG/total?style=flat-square)" >> release.txt
+
         echo "<details> <summary> Lean Openwrt Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         git -C openwrt log -n $COMMIT_LOG_NUM >> release.txt
 
