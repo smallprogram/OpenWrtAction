@@ -155,6 +155,10 @@ jobs:
       run: |
         cd openwrt/bin/targets/*/*
         rm -rf packages
+        mv sha256sums sha256sums_${{ matrix.platforms }}
+        mv version.buildinfo version_${{ matrix.platforms }}.buildinfo
+        mv config.buildinfo config_${{ matrix.platforms }}.buildinfo
+        mv feeds.buildinfo feeds_${{ matrix.platforms }}.buildinfo
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "status=success" >> $GITHUB_OUTPUT
 
