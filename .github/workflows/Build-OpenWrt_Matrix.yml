@@ -44,13 +44,12 @@ jobs:
 
   job_build:
   needs: job_init
-    name: Build-OpenWrt-${{ matrix.platforms }}
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         platforms: [X86, R5S, R4S, R2S, R2C, R5S, Pi4_Model_B]
-        os: [ubuntu-latest]
-    runs-on: ${{ matrix.os }}
+
     steps:
     - name: Checkout
       uses: actions/checkout@main
