@@ -252,13 +252,13 @@ jobs:
           retain_days: 2
           keep_minimum_runs: 6
 
-    - name: Remove old Releases
-      uses: dev-drprasad/delete-older-releases@v0.2.1
-      with:
-        keep_latest: 6
-        delete_tags: true
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    # - name: Remove old Releases
+    #   uses: dev-drprasad/delete-older-releases@v0.2.1
+    #   with:
+    #     keep_latest: 6
+    #     delete_tags: true
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Trigger build
       if: steps.cacheHash.outputs.cache-hit != 'true'
