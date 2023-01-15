@@ -43,8 +43,9 @@ jobs:
         run: echo "release_tag=multi-platform_$(date +"%Y.%m.%d_%H%M")" >> $GITHUB_OUTPUT
 
   job_build:
-  needs: job_init
+    needs: job_init
     runs-on: ubuntu-latest
+    name: Build-OpenWrt-${{ matrix.platforms }}
     strategy:
       fail-fast: false
       matrix:
