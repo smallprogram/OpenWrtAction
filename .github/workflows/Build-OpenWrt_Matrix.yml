@@ -1,0 +1,276 @@
+#
+# Copyright (c) 2022-2023 SMALLPROGRAM <https://github.com/smallprogram/OpenWrtAction>
+#
+# This is free software, licensed under the MIT License.
+# See /LICENSE for more information.
+#
+# https://github.com/smallprogram/OpenWrtAction
+# Description: Build OpenWrt using GitHub Actions
+#
+
+name: Build-OpenWrt
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
+  # schedule:
+  #   - cron: 0 */8 * * *
+
+env:
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
+  FEEDS_CONF: feeds_config/custom.feeds.conf.default
+  DIY_P1_SH: diy_script/diy-part1.sh
+  DIY_P2_SH: diy_script/diy-part2.sh
+  COMMIT_LOG_NUM: 1
+  RELEASE_TAG: X86
+  UPLOAD_BIN_DIR: false
+  UPLOAD_FIRMWARE: true
+  UPLOAD_RELEASE: true
+  TZ: Asia/Shanghai
+
+jobs:
+  job_init: 
+    runs-on: ubuntu-latest
+    outputs:
+      output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
+    steps:
+      - id: gen_release_tag
+        run: echo "release_tag=multi-platform_$(date +"%Y.%m.%d_%H%M")" >> $GITHUB_OUTPUT
+
+  job_build:
+  needs: job_init
+    build:
+      runs-on: ubuntu-latest
+      name: Build-OpenWrt-${{ matrix.platforms }}
+      strategy:
+        fail-fast: false
+        matrix:
+          platforms: ['X86', 'R5S', 'R4S', 'R2S', 'R2C', 'R5S', 'Pi4_Model_B']
+          
+      steps:
+      - name: Checkout
+        uses: actions/checkout@main
+
+      - name: Initialization environment
+        env:
+          DEBIAN_FRONTEND: noninteractive
+        run: |
+          docker rmi `docker images -q`
+          sudo rm -rf /usr/share/dotnet /etc/mysql /etc/php /etc/apt/sources.list.d /usr/local/lib/android /opt/ghc
+          sudo -E apt-get -y purge azure-cli ghc* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* adoptopenjdk* mysql* php* mongodb* dotnet* moby* snapd* || true
+          sudo -E apt-get -qq update
+          sudo -E apt-get -qq install ack antlr3 aria2 asciidoc autoconf automake autopoint binutils bison build-essential bzip2 ccache cmake cpio curl device-tree-compiler fastjar flex gawk gettext gcc-multilib g++-multilib git gperf haveged help2man intltool libc6-dev-i386 libelf-dev libglib2.0-dev libgmp3-dev libltdl-dev libmpc-dev libmpfr-dev libncurses5-dev libncursesw5-dev libreadline-dev libssl-dev libtool lrzsz mkisofs msmtp nano ninja-build p7zip p7zip-full patch pkgconf python2.7 python3 python3-pip libpython3-dev qemu-utils rsync scons squashfs-tools subversion swig texinfo uglifyjs upx-ucl unzip vim wget xmlto xxd zlib1g-dev
+          sudo -E apt-get -qq autoremove --purge
+          sudo -E apt-get -qq clean
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown $USER:$GROUPS /workdir
+          df -hT $PWD
+
+      - name: Clone source code
+        working-directory: /workdir
+        run: |
+          df -hT $PWD
+          git clone $REPO_URL -b $REPO_BRANCH openwrt
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+
+      - name: Load custom feeds
+        run: |
+          [ -e $FEEDS_CONF ] && cp -r $FEEDS_CONF openwrt/feeds.conf.default
+          chmod +x $DIY_P1_SH
+          cd openwrt
+          $GITHUB_WORKSPACE/$DIY_P1_SH
+
+      - name: Update feeds
+        run: cd openwrt && ./scripts/feeds update -a
+
+      - name: Install feeds
+        run: cd openwrt && ./scripts/feeds install -a
+
+      - name: Load custom configuration
+        run: |
+          [ -e files ] && cp -r files openwrt/files
+          [ -e config/${{ matrix.platforms }} ] && cp -r config/${{ matrix.platforms }} openwrt/.config
+          chmod +x $DIY_P2_SH
+          cd openwrt
+          $GITHUB_WORKSPACE/$DIY_P2_SH
+
+      - name: SSH connection to Actions
+        uses: mxschmitt/action-tmate@v3.13
+        if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
+
+      - name: Download package
+        id: package
+        run: |
+          df -hT $PWD
+          mkdir -p $GITHUB_WORKSPACE/openwrt/dl
+          cp -r $GITHUB_WORKSPACE/library/* $GITHUB_WORKSPACE/openwrt/dl
+          cd $GITHUB_WORKSPACE/openwrt
+          make defconfig
+          make download -j8
+          find dl -size -1024c -exec ls -l {} \;
+          find dl -size -1024c -exec rm -f {} \;
+
+      # - name: Compile the firmware
+      #   id: compile
+      #   run: |
+      #     cd openwrt
+      #     echo -e "$(nproc) thread compile"
+      #     make -j$(nproc) || make -j1 || make -j1 V=s
+      #     echo "status=success" >> $GITHUB_OUTPUT
+      #     grep '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/' > DEVICE_NAME
+      #     [ -s DEVICE_NAME ] && echo "DEVICE_NAME=_$(cat DEVICE_NAME)" >> $GITHUB_ENV
+      #     echo "FILE_DATE=_$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
+      #     df -hT $PWD
+
+      - name: Remove Unuselesss Files To Free Up Space
+        id: removeunuselessfiles
+        run: |
+          df -hT
+          rm -rf  $GITHUB_WORKSPACE/openwrt/build_dir
+          rm -rf  $GITHUB_WORKSPACE/openwrt/dl
+          rm -rf  $GITHUB_WORKSPACE/openwrt/staging_dir
+          rm -rf  $GITHUB_WORKSPACE/openwrt/target
+          rm -rf  $GITHUB_WORKSPACE/openwrt/toolchain
+          rm -rf  $GITHUB_WORKSPACE/openwrt/tools
+
+      - name: Check space usage
+        if: (!cancelled())
+        run: df -hT
+
+      - name: Upload bin directory
+        uses: actions/upload-artifact@main
+        if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
+        with:
+          name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+          path: openwrt/bin
+
+      - name: Organize files
+        id: organize
+        if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
+        run: |
+          cd openwrt/bin/targets/*/*
+          rm -rf packages
+          echo "FIRMWARE=$PWD" >> $GITHUB_ENV
+          echo "status=success" >> $GITHUB_OUTPUT
+
+      - name: Upload firmware directory
+        uses: actions/upload-artifact@main
+        if: steps.organize.outputs.status == 'success' && !cancelled()
+        with:
+          name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+          path: ${{ env.FIRMWARE }}
+
+      - name: Generate release tag
+        id: tag
+        if: steps.compile.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
+        run: |
+          echo "release_tag=${{needs.job_init.outputs.output_release_tag}}" >> $GITHUB_OUTPUT
+
+          echo "## :mega:Update content" >> release.txt
+
+          echo "![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/${{needs.job_init.outputs.output_release_tag}}/total?style=flat-square)" >> release.txt
+
+          echo "**:loudspeaker:Cancel the ext4 format and only keep the squashfs format.**" >> release.txt
+          echo "**:computer:Including traditional IMG format firmware and UEFI boot firmware.**" >> release.txt
+          echo "**:cd:Including qcow2 format firmware and UEFI boot firmware supporting pve virtual machine.**" >> release.txt
+          echo "**:cd:Including vdi format firmware and UEFI boot firmware supporting Visual Box virtual machine.**" >> release.txt
+          echo "**:cd:Including vhdx format firmware and UEFI boot firmware supporting Hyper-v virtual machines.**" >> release.txt
+          echo "**:dvd:Including vmdk format firmware and UEFI boot firmware that support ESXi virtual machines (8.0 requires tool conversion).**" >> release.txt
+
+          echo "<details> <summary> Lean Openwrt Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+          git -C openwrt log -n $COMMIT_LOG_NUM >> release.txt
+
+          echo "</details> <details> <summary> Lean Package Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+          git -C openwrt/feeds/packages log -n $COMMIT_LOG_NUM >> release.txt
+
+          echo "</details> <details> <summary> Lean Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+          git -C openwrt/feeds/luci log -n $COMMIT_LOG_NUM >> release.txt
+
+          echo "</details> <details> <summary> Openwrt routing Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+          git -C openwrt/feeds/routing log -n $COMMIT_LOG_NUM >> release.txt
+
+          echo "</details> <details> <summary> Openwrt telephony Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+          git -C openwrt/feeds/telephony log -n $COMMIT_LOG_NUM >> release.txt
+
+          echo "</details> <details> <summary> SSRP Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+          git -C openwrt/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
+
+          echo "</details> <details> <summary> Passwall Packages Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+          git -C openwrt/feeds/passwall_packages log -n $COMMIT_LOG_NUM >> release.txt
+
+          echo "</details> <details> <summary> Passwall Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+          git -C openwrt/feeds/passwall_luci log -n $COMMIT_LOG_NUM >> release.txt
+
+          echo "</details> <details> <summary> Passwall2 Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+          git -C openwrt/feeds/passwall2 log -n $COMMIT_LOG_NUM >> release.txt
+
+          echo "</details> <details> <summary> OpenClash Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+          git -C openwrt/feeds/OpenClash log -n $COMMIT_LOG_NUM >> release.txt
+
+          # echo "</details> <details> <summary> DockerMan Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+          # git -C openwrt/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> release.txt
+
+          # echo "</details> <details> <summary> ThemeArgon Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+          # git -C openwrt/package/lean/luci-theme-argon log -n $COMMIT_LOG_NUM >> release.txt
+
+          # echo "</details> <details> <summary> ArgonConfig Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+          # git -C openwrt/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> release.txt
+
+          touch release.txt
+          echo "status=success" >> $GITHUB_OUTPUT
+
+      - name: Upload firmware to release
+        uses: softprops/action-gh-release@v1
+        if: steps.tag.outputs.status == 'success' && !cancelled()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.tag.outputs.release_tag }}
+          body_path: release.txt
+          files: ${{ env.FIRMWARE }}/*
+
+      # - name: Checkout
+      #   uses: actions/checkout@main
+
+      # - name: Generate commit
+      #   id: Gen_commit
+      #   run: |
+      #     sed -i 's/\(${{ env.RELEASE_TAG }}:\).*\(|\)/\${{ env.RELEASE_TAG }}: [![](https:\/\/img.shields.io\/badge\/LatestRelease-${{ steps.tag.outputs.release_tag }}-green?style=flat-square)](https:\/\/github.com\/smallprogram\/OpenWrtAction\/releases\/tag\/${{ steps.tag.outputs.release_tag }})\2/' docs/README.md
+      #     sed -i 's/\(${{ env.RELEASE_TAG }}:\).*\(|\)/\${{ env.RELEASE_TAG }}: [![](https:\/\/img.shields.io\/badge\/LatestRelease-${{ steps.tag.outputs.release_tag }}-green?style=flat-square)](https:\/\/github.com\/smallprogram\/OpenWrtAction\/releases\/tag\/${{ steps.tag.outputs.release_tag }})\2/' docs/README_EN.md
+      #     rm -rf release.txt
+      #     echo "status=success" >> $GITHUB_OUTPUT
+
+      # - name: Git Auto Commit
+      #   uses: stefanzweifel/git-auto-commit-action@v4.16.0
+      #   id: commit
+      #   if: steps.Gen_commit.outputs.status == 'success' && !cancelled()
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     commit_message: New Release Automated Change ${{ steps.tag.outputs.release_tag }}
+      #     branch: main   
+
+      # - name: Delete workflow runs
+      #   uses: GitRML/delete-workflow-runs@main
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     repository: ${{ github.repository }}
+      #     retain_days: 1
+      #     keep_minimum_runs: 2
+
+      # - name: Remove old Releases
+      #   uses: smallprogram/delete-older-releases@v0.2.1
+      #   if: env.UPLOAD_RELEASE == 'true' && !cancelled()
+      #   with:
+      #     keep_latest: 15
+      #     delete_tags: true
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+       
