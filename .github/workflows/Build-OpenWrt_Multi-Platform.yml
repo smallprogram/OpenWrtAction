@@ -154,9 +154,8 @@ jobs:
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
         mkdir -p openwrt/bin/targets/a/b
-        cd openwrt/bin/targets/a/b
-        echo "test ${{ matrix.platforms }}"  >> release_${{ matrix.platforms }}.txt
         cd openwrt/bin/targets/*/*
+        echo "test ${{ matrix.platforms }}"  >> release_${{ matrix.platforms }}.txt
         rm -rf packages
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "status=success" >> $GITHUB_OUTPUT
