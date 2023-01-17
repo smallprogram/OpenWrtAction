@@ -49,7 +49,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        platforms: [X86, R5S, R4S, R2S, R2C, R5S, Pi4_Model_B]
+        platforms: [X86, R5S, R4S, R2S, R2C, Pi4_Model_B]
 
     steps:
     - name: Checkout

@@ -91,11 +91,11 @@ function Func_DIY_Script(){
     sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' /home/${userName}/${ledeDir}/package/lean/default-settings/files/zzz-default-settings
     sleep 1s
     #恢复主机型号
-    Func_LogMessage "\033[31m 恢复主机型号 \033[0m" "\033[31m Restoring the host model \033[0m"
-    sed -i 's/(dmesg | grep .*/{a}${b}${c}${d}${e}${f}/g' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
-    sed -i '/h=${g}.*/d' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
-    sed -i 's/echo $h/echo $g/g' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
-    sleep 1s
+    # Func_LogMessage "\033[31m 恢复主机型号 \033[0m" "\033[31m Restoring the host model \033[0m"
+    # sed -i 's/(dmesg | grep .*/{a}${b}${c}${d}${e}${f}/g' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
+    # sed -i '/h=${g}.*/d' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
+    # sed -i 's/echo $h/echo $g/g' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
+    # sleep 1s
     #关闭串口跑码
     Func_LogMessage "\033[31m 关闭串口跑码 \033[0m" "\033[31m Close serial port running code \033[0m"
     sed -i 's/console=tty0//g'  /home/${userName}/${ledeDir}/target/linux/x86/image/Makefile

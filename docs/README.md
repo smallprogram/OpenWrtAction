@@ -9,9 +9,9 @@
 <!-- ![](https://img.shields.io/github/release-date/smallprogram/OpenWrtAction?style=flat-square) ![](https://img.shields.io/github/last-commit/smallprogram/OpenWrtAction?style=flat-square)  -->
 
 ## WorkFlows
-|ActionStatus|Network Support|Latest Release|
-|-|-|-|
-|[![Build-OpenWrt_Multi-Platform](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_Multi-Platform.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_Multi-Platform.yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/smallprogram/OpenWrtAction?include_prereleases&style=flat-square)|
+|ActionStatus|Network Support|Latest Release|Latest Download|
+|-|-|-|-|
+|[![Build-OpenWrt_Multi-Platform](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_Multi-Platform.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_Multi-Platform.yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/smallprogram/OpenWrtAction?include_prereleases&style=flat-square)|![GitHub release (latest by date)](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/latest/total?style=flat-square)|
 
 
 > 每一个Release包含多个平台固件，请根据自己的平台选择对应的固件下载
