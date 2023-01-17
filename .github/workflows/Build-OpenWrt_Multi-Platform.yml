@@ -127,7 +127,7 @@ jobs:
         echo "FILE_DATE=_$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
         df -hT $PWD
 
-    - name: Remove Unuselesss Files To Free Up Space
+    - name: Remove unuselesss files to free up space
       id: removeunuselessfiles
       run: |
         df -hT
