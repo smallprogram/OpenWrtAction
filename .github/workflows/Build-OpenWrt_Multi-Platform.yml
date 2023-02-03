@@ -185,6 +185,13 @@ jobs:
         echo "**:cd:Including vdi format firmware and UEFI boot firmware supporting Visual Box virtual machine.**" >> release.txt
         echo "**:cd:Including vhdx format firmware and UEFI boot firmware supporting Hyper-v virtual machines.**" >> release.txt
         echo "**:dvd:Including vmdk format firmware and UEFI boot firmware that support ESXi virtual machines (8.0 requires tool conversion).**" >> release.txt
+        echo "" >> release.txt
+        echo "**:ice_cube: X86 kernel: $(sed -n '13p' $GITHUB_WORKSPACE/openwrt/target/linux/x86/Makefile | awk -F '=' '{print $2}') **" >> release.txt
+        echo "**:ice_cube: R5S kernel: $(sed -n '12p' $GITHUB_WORKSPACE/openwrt/target/linux/armvirt/Makefile | awk -F '=' '{print $2}') **" >> release.txt
+        echo "**:ice_cube: R4S kernel: $(sed -n '12p' $GITHUB_WORKSPACE/openwrt/target/linux/armvirt/Makefile | awk -F '=' '{print $2}') **" >> release.txt
+        echo "**:ice_cube: R2S kernel: $(sed -n '12p' $GITHUB_WORKSPACE/openwrt/target/linux/armvirt/Makefile | awk -F '=' '{print $2}') **" >> release.txt
+        echo "**:ice_cube: R2C kernel: $(sed -n '12p' $GITHUB_WORKSPACE/openwrt/target/linux/armvirt/Makefile | awk -F '=' '{print $2}') **" >> release.txt
+        echo "**:ice_cube: Pi4ModelB kernel: $(sed -n '14p' $GITHUB_WORKSPACE/openwrt/target/linux/bcm27xx/Makefile | awk -F '=' '{print $2}') **" >> release.txt
 
         echo "<details> <summary> Lean Openwrt Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         git -C openwrt log -n $COMMIT_LOG_NUM >> release.txt
