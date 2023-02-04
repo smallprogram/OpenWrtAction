@@ -134,7 +134,6 @@ jobs:
         rm -rf  $GITHUB_WORKSPACE/openwrt/build_dir
         rm -rf  $GITHUB_WORKSPACE/openwrt/dl
         rm -rf  $GITHUB_WORKSPACE/openwrt/staging_dir
-        rm -rf  $GITHUB_WORKSPACE/openwrt/target
         rm -rf  $GITHUB_WORKSPACE/openwrt/toolchain
         rm -rf  $GITHUB_WORKSPACE/openwrt/tools
 
