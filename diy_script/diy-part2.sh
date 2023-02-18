@@ -56,7 +56,6 @@ wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/backgr
 wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/video3.mp4
 wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/video4.mp4
 wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/video5.mp4
-wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/video6.mp4
 wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/img/1.jpg
 
 
@@ -70,7 +69,6 @@ wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
 wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/video3.mp4
 wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/video4.mp4
 wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/video5.mp4
-wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/video6.mp4
 wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/img/1.jpg
 
 
