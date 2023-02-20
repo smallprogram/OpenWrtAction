@@ -84,12 +84,12 @@
 ## config列表
 |适用平台|KERNEL大小|ROOTFS大小|地址|
 -|-|-|-
-X86平台|128Mb|896Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/X86.config|
-Pi4_Model_B|128Mb|896Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/Pi4_Model_B.config
-R5S软路由|128Mb|896Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R5S.config
-R4S软路由|128Mb|896Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config
-R2S软路由|128Mb|896Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2S.config
-R2C软路由|128Mb|896Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2C.config
+X86平台|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/X86.config|
+Pi4_Model_B|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/Pi4_Model_B.config
+R5S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R5S.config
+R4S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config
+R2S软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2S.config
+R2C软路由|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2C.config
 
 
 
