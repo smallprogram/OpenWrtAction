@@ -52,6 +52,23 @@ jobs:
         platforms: [X86, R5S, R4S, R2S, R2C, Pi4_Model_B]
 
     steps:
+    - name: Initialization environment
+      run: |
+        sudo timedatectl set-timezone "$TZ"
+        sudo mkdir -p /workdir
+        sudo chown $USER:$GROUPS /workdir
+        df -hT
+
+    - name: Maximize build space
+      uses: easimon/maximize-build-space@master
+      with:
+        root-reserve-mb: 2048
+        swap-size-mb: 1024
+        remove-dotnet: 'true'
+        remove-android: 'true'
+        remove-haskell: 'true'
+        build-mount-path: '/workdir'
+
     - name: Checkout
       uses: actions/checkout@main
 
@@ -59,31 +76,31 @@ jobs:
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
-        docker rmi `docker images -q`
-        sudo rm -rf /usr/share/dotnet
-        sudo rm -rf /etc/mysql
-        sudo rm -rf /etc/php
-        sudo rm -rf /etc/apt/sources.list.d 
-        sudo rm -rf /usr/local/lib/android 
-        sudo rm -rf /opt/ghc
-        sudo rm -rf "/usr/local/share/boost"
-        sudo rm -rf "$AGENT_TOOLSDIRECTORY"
-        sudo -E apt-get -y purge azure-cli ghc* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* adoptopenjdk* mysql* php* mongodb* dotnet* moby* snapd* || true
+        # docker rmi `docker images -q`
+        # sudo rm -rf /usr/share/dotnet
+        # sudo rm -rf /etc/mysql
+        # sudo rm -rf /etc/php
+        # sudo rm -rf /etc/apt/sources.list.d 
+        # sudo rm -rf /usr/local/lib/android 
+        # sudo rm -rf /opt/ghc
+        # sudo rm -rf "/usr/local/share/boost"
+        # sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+        # sudo -E apt-get -y purge azure-cli ghc* zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* adoptopenjdk* mysql* php* mongodb* dotnet* moby* snapd* || true
+        echo "install packages!!!!!!"
         sudo -E apt-get -qq update
         sudo -E apt-get -qq install ack antlr3 aria2 asciidoc autoconf automake autopoint binutils bison build-essential bzip2 ccache cmake cpio curl device-tree-compiler fastjar flex gawk gettext gcc-multilib g++-multilib git gperf haveged help2man intltool libc6-dev-i386 libelf-dev libglib2.0-dev libgmp3-dev libltdl-dev libmpc-dev libmpfr-dev libncurses5-dev libncursesw5-dev libreadline-dev libssl-dev libtool lrzsz mkisofs msmtp nano ninja-build p7zip p7zip-full patch pkgconf python2.7 python3 python3-pip libpython3-dev qemu-utils rsync scons squashfs-tools subversion swig texinfo uglifyjs upx-ucl unzip vim wget xmlto xxd zlib1g-dev
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"
-        sudo mkdir -p /workdir
-        sudo chown $USER:$GROUPS /workdir
-        df -hT $PWD
+        df -hT
 
     - name: Clone source code
       working-directory: /workdir
       run: |
-        df -hT $PWD
+        df -hT
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+        df -hT
 
     - name: Load custom feeds
       run: |
@@ -113,7 +130,7 @@ jobs:
     - name: Download package
       id: package
       run: |
-        df -hT $PWD
+        df -hT
         mkdir -p $GITHUB_WORKSPACE/openwrt/dl
         cp -r $GITHUB_WORKSPACE/library/* $GITHUB_WORKSPACE/openwrt/dl
         cd $GITHUB_WORKSPACE/openwrt
@@ -121,6 +138,7 @@ jobs:
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
+        df -hT
 
     - name: Compile the firmware
       id: compile
@@ -132,7 +150,7 @@ jobs:
         grep '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/' > DEVICE_NAME
         [ -s DEVICE_NAME ] && echo "DEVICE_NAME=_$(cat DEVICE_NAME)" >> $GITHUB_ENV
         echo "FILE_DATE=_$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
-        df -hT $PWD
+        df -hT
 
     - name: Remove unuselesss files to free up space
       id: removeunuselessfiles
