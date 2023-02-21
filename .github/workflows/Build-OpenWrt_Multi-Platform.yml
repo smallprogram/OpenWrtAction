@@ -72,7 +72,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
 
-    - name: Initialization environment
+    - name: Install packages
       env:
         DEBIAN_FRONTEND: noninteractive
       run: |
