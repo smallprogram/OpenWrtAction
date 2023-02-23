@@ -63,7 +63,7 @@ jobs:
     - name: Maximize build space
       uses: easimon/maximize-build-space@master
       with:
-        root-reserve-mb: 4608
+        root-reserve-mb: 3072
         swap-size-mb: 1024
         remove-dotnet: 'true'
         remove-android: 'true'
@@ -185,11 +185,11 @@ jobs:
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
         cd openwrt/bin/targets/*/*
-        rm -rf packages
-        mv sha256sums sha256sums_${{ matrix.platforms }}
-        mv version.buildinfo version_${{ matrix.platforms }}.buildinfo
-        mv config.buildinfo config_${{ matrix.platforms }}.buildinfo
-        mv feeds.buildinfo feeds_${{ matrix.platforms }}.buildinfo
+        # rm -rf packages
+        # mv sha256sums sha256sums_${{ matrix.platforms }}
+        # mv version.buildinfo version_${{ matrix.platforms }}.buildinfo
+        # mv config.buildinfo config_${{ matrix.platforms }}.buildinfo
+        # mv feeds.buildinfo feeds_${{ matrix.platforms }}.buildinfo
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "status=success" >> $GITHUB_OUTPUT
 
