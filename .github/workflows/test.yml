@@ -36,7 +36,7 @@ env:
 
 jobs:
   job_init: 
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     outputs:
       output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
     steps:
@@ -45,7 +45,7 @@ jobs:
 
   job_build:
     needs: job_init
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     name: Build-OpenWrt-${{ matrix.platforms }}
     strategy:
       fail-fast: false
@@ -63,7 +63,7 @@ jobs:
     - name: Maximize build space
       uses: easimon/maximize-build-space@master
       with:
-        root-reserve-mb: 2048
+        root-reserve-mb: 3072
         swap-size-mb: 1024
         remove-dotnet: 'true'
         remove-android: 'true'
