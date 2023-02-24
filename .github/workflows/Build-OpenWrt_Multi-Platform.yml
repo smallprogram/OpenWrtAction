@@ -36,7 +36,7 @@ env:
 
 jobs:
   job_init: 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     outputs:
       output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
     steps:
@@ -45,7 +45,7 @@ jobs:
 
   job_build:
     needs: job_init
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     name: Build-OpenWrt-${{ matrix.platforms }}
     strategy:
       fail-fast: false
