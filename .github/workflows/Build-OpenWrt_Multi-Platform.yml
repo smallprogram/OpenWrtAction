@@ -213,10 +213,10 @@ jobs:
         echo "" >> release.txt
 
         kernel_X86=$(sed -n '13p' $GITHUB_WORKSPACE/openwrt/target/linux/x86/Makefile | awk -F '=' '{print $2}')
-        kernel_R5S=$(sed -n '12p' $GITHUB_WORKSPACE/openwrt/target/linux/armvirt/Makefile | awk -F '=' '{print $2}')
-        kernel_R4S=$(sed -n '12p' $GITHUB_WORKSPACE/openwrt/target/linux/armvirt/Makefile | awk -F '=' '{print $2}')
-        kernel_R2S=$(sed -n '12p' $GITHUB_WORKSPACE/openwrt/target/linux/armvirt/Makefile | awk -F '=' '{print $2}')
-        kernel_R2C=$(sed -n '12p' $GITHUB_WORKSPACE/openwrt/target/linux/armvirt/Makefile | awk -F '=' '{print $2}')
+        kernel_R5S=$(sed -n '10p' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile | awk -F '=' '{print $2}')
+        kernel_R4S=$(sed -n '10p' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile | awk -F '=' '{print $2}')
+        kernel_R2S=$(sed -n '10p' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile | awk -F '=' '{print $2}')
+        kernel_R2C=$(sed -n '10p' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile | awk -F '=' '{print $2}')
         kernel_Pi4ModelB=$(sed -n '14p' $GITHUB_WORKSPACE/openwrt/target/linux/bcm27xx/Makefile | awk -F '=' '{print $2}')
 
         echo "**:ice_cube: X86 kernel: $(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_X86} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**" >> release.txt
