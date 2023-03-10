@@ -220,30 +220,6 @@ cat >/usr/local/etc/xray/config.json <<EOF
             "settings": {
                 "clients": [
                     {
-                        "id": "faed07bb-7362-4103-80d1-28efa9373e53",
-                        "flow": "xtls-rprx-vision",
-                        "level": 0,
-                        "email": "home"
-                    },
-                    {
-                        "id": "98dbc57b-8a06-4ff9-a306-8a447360c156",
-                        "flow": "xtls-rprx-vision",
-                        "level": 0,
-                        "email": "cgyy"
-                    },
-                    {
-                        "id": "53523f6f-231b-45ff-a225-8bbd649876aa",
-                        "flow": "xtls-rprx-vision",
-                        "level": 0,
-                        "email": "Temp01"
-                    },
-                    {
-                        "id": "216058ae-7108-4831-bb95-6eef84ab4510",
-                        "flow": "xtls-rprx-vision",
-                        "level": 0,
-                        "email": "Temp02"
-                    },
-                    {
                         "id": "$uuid",
                         "flow": "xtls-rprx-vision",
                         "level": 0,
