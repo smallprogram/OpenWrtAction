@@ -207,317 +207,115 @@ uuid=$(xray uuid)
 
 cat >/usr/local/etc/xray/config.json <<EOF
 {
-  "log": {
-    "error": "/usr/local/etc/xray/error.log",
-    "loglevel": "warning",
-    "dnsLog": false
-  },
-  "inbounds": [
-    {
-      "tag": "vlessUser",
-      "port": 4430,
-      "protocol": "vless",
-      "settings": {
-        "clients": [
-          {
-            "id": "faed07bb-7362-4103-80d1-28efa9373e53",
-            "flow": "xtls-rprx-direct",
-            "level": 0,
-            "email": "home"
-          },
-          {
-            "id": "98dbc57b-8a06-4ff9-a306-8a447360c156",
-            "flow": "xtls-rprx-direct",
-            "level": 0,
-            "email": "cgyy"
-          },
-          {
-            "id": "53523f6f-231b-45ff-a225-8bbd649876aa",
-            "flow": "xtls-rprx-direct",
-            "level": 0,
-            "email": "Temp01"
-          },
-          {
-            "id": "216058ae-7108-4831-bb95-6eef84ab4510",
-            "flow": "xtls-rprx-direct",
-            "level": 0,
-            "email": "Temp02"
-          },
-          {
-            "id": "$uuid",
-            "flow": "xtls-rprx-direct",
-            "level": 0,
-            "email": "Custom"
-          }
-        ],
-        "decryption": "none",
-        "fallbacks": [
-          {
-            "dest": "/dev/shm/default.sock",
-            "xver": 1
-          },
-          {
-            "alpn": "h2",
-            "dest": "/dev/shm/h2c.sock",
-            "xver": 1
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "xtls",
-        "xtlsSettings": {
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "certificates": [
-            {
-              "certificateFile": "/data/$domainName/fullchain.crt",
-              "keyFile": "/data/$domainName/$domainName.key"
-            }
-          ]
-        }
-      }
+    "log": {
+        "error": "/usr/local/etc/xray/error.log",
+        "loglevel": "warning",
+        "dnsLog": false
     },
-    {
-      "tag": "vlessCDN",
-      "port": 443,
-      "protocol": "vless",
-      "settings": {
-        "clients": [
-          {
-            "id": "faed07bb-7362-4103-80d1-28efa9373e53",
-            "flow": "xtls-rprx-direct",
-            "level": 0,
-            "email": "home"
-          },
-          {
-            "id": "98dbc57b-8a06-4ff9-a306-8a447360c156",
-            "flow": "xtls-rprx-direct",
-            "level": 0,
-            "email": "cgyy"
-          },
-          {
-            "id": "53523f6f-231b-45ff-a225-8bbd649876aa",
-            "flow": "xtls-rprx-direct",
-            "level": 0,
-            "email": "Temp01"
-          },
-          {
-            "id": "216058ae-7108-4831-bb95-6eef84ab4510",
-            "flow": "xtls-rprx-direct",
-            "level": 0,
-            "email": "Temp02"
-          },
-          {
-            "id": "$uuid",
-            "flow": "xtls-rprx-direct",
-            "level": 0,
-            "email": "Custom"
-          }
-        ],
-        "decryption": "none",
-        "fallbacks": [
-          {
-            "dest": "/dev/shm/default.sock",
-            "xver": 1
-          },
-          {
-            "alpn": "h2",
-            "dest": "/dev/shm/h2c.sock",
-            "xver": 1
-          },
-          {
-            "path": "/VlessWS",
-            "dest": 6666,
-            "xver": 1
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ],
-          "certificates": [
-            {
-              "certificateFile": "/data/$domainName/fullchain.crt",
-              "keyFile": "/data/$domainName/$domainName.key"
-            }
-          ]
-        }
-      }
-    },
-    {
-        "listen": "0.0.0.0",
-        "port": 44300,
-        "protocol": "vless",
-        "settings": {
-            "clients": [
-                {
-                    "id": "faed07bb-7362-4103-80d1-28efa9373e53",
-                    "flow": "xtls-rprx-vision",
-                    "level": 0,
-                    "email": "home"
-                },
-                {
-                    "id": "98dbc57b-8a06-4ff9-a306-8a447360c156",
-                    "flow": "xtls-rprx-vision",
-                    "level": 0,
-                    "email": "cgyy"
-                },
-                {
-                    "id": "53523f6f-231b-45ff-a225-8bbd649876aa",
-                    "flow": "xtls-rprx-vision",
-                    "level": 0,
-                    "email": "Temp01"
-                },
-                {
-                    "id": "216058ae-7108-4831-bb95-6eef84ab4510",
-                    "flow": "xtls-rprx-vision",
-                    "level": 0,
-                    "email": "Temp02"
-                },
-                {
-                    "id": "$uuid",
-                    "flow": "xtls-rprx-vision",
-                    "level": 0,
-                    "email": "Custom"
-                }
-            ],
-            "decryption": "none",
-            "fallbacks": [
-                {
-                    "dest": "/dev/shm/default.sock",
-                    "xver": 1
-                },
-                {
-                    "alpn": "h2",
-                    "dest": "/dev/shm/h2c.sock",
-                    "xver": 1
-                }
-            ]           
-        },
-        "streamSettings": {
-            "network": "tcp",
-            "security": "tls",
-            "tlsSettings": {
-                "rejectUnknownSni": true,
-                "certificates": [
+    "inbounds": [
+        {
+            "listen": "0.0.0.0",
+            "port": 44300,
+            "protocol": "vless",
+            "settings": {
+                "clients": [
                     {
-                        "certificateFile": "/data/$domainName/fullchain.crt",
-                        "keyFile": "/data/$domainName/$domainName.key"
+                        "id": "faed07bb-7362-4103-80d1-28efa9373e53",
+                        "flow": "xtls-rprx-vision",
+                        "level": 0,
+                        "email": "home"
+                    },
+                    {
+                        "id": "98dbc57b-8a06-4ff9-a306-8a447360c156",
+                        "flow": "xtls-rprx-vision",
+                        "level": 0,
+                        "email": "cgyy"
+                    },
+                    {
+                        "id": "53523f6f-231b-45ff-a225-8bbd649876aa",
+                        "flow": "xtls-rprx-vision",
+                        "level": 0,
+                        "email": "Temp01"
+                    },
+                    {
+                        "id": "216058ae-7108-4831-bb95-6eef84ab4510",
+                        "flow": "xtls-rprx-vision",
+                        "level": 0,
+                        "email": "Temp02"
+                    },
+                    {
+                        "id": "$uuid",
+                        "flow": "xtls-rprx-vision",
+                        "level": 0,
+                        "email": "Custom"
+                    }
+                ],
+                "decryption": "none",
+                "fallbacks": [
+                    {
+                        "dest": "/dev/shm/default.sock",
+                        "xver": 1
+                    },
+                    {
+                        "alpn": "h2",
+                        "dest": "/dev/shm/h2c.sock",
+                        "xver": 1
                     }
                 ]
+            },
+            "streamSettings": {
+                "network": "tcp",
+                "security": "tls",
+                "tlsSettings": {
+                    "rejectUnknownSni": true,
+                    "minVersion": "1.2",
+                    "certificates": [
+                        {
+                            "ocspStapling": 3600,
+                            "certificateFile": "/data/$domainName/fullchain.crt",
+                            "keyFile": "/data/$domainName/$domainName.key"
+                        }
+                    ]
+                }
+            },
+            "sniffing": {
+                "enabled": true,
+                "destOverride": [
+                    "http",
+                    "tls"
+                ]
             }
-        },
-        "sniffing": {
-            "enabled": true,
-            "destOverride": [
-                "http",
-                "tls"
-            ]
         }
-    },
-    {
-      "port": 6666,
-      "listen": "127.0.0.1",
-      "protocol": "vless",
-      "settings": {
-        "clients": [
-          {
-            "id": "faed07bb-7362-4103-80d1-28efa9373e53",
-            "level": 0,
-            "email": "home"
-          },
-          {
-            "id": "98dbc57b-8a06-4ff9-a306-8a447360c156",
-            "level": 0,
-            "email": "cgyy"
-          },
-          {
-            "id": "53523f6f-231b-45ff-a225-8bbd649876aa",
-            "level": 0,
-            "email": "Temp01"
-          },
-          {
-            "id": "216058ae-7108-4831-bb95-6eef84ab4510",
-            "level": 0,
-            "email": "Temp02"
-          },
-          {
-            "id": "$uuid",
-            "level": 0,
-            "email": "Custom"
-          }
-        ],
-        "decryption": "none"
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "none",
-        "wsSettings": {
-          "acceptProxyProtocol": true,
-          "path": "/VlessWS"
-        }
-      }
-    },
-    {
-      "listen": "127.0.0.1",
-      "port": 60443,
-      "protocol": "dokodemo-door",
-      "settings": {
-        "address": "127.0.0.1"
-      },
-      "tag": "api"
-    }
-  ],
-  "stats": {},
-  "api": {
-    "tag": "api",
-    "services": [
-      "HandlerService",
-      "LoggerService",
-      "StatsService"
-    ]
-  },
-  "policy": {
-    "levels": {
-      "0": {
-        "statsUserUplink": true,
-        "statsUserDownlink": true
-      }
-    },
-    "system": {
-      "statsInboundUplink": true,
-      "statsInboundDownlink": true,
-      "statsOutboundUplink": true,
-      "statsOutboundDownlink": true
-    }
-  },
-  "outbounds": [
-    {
-      "protocol": "freedom"
-    }
-  ],
-  "routing": {
-    "settings": {
-      "rules": [
+    ],
+    "outbounds": [
         {
-          "inboundTag": [
-            "api"
-          ],
-          "outboundTag": "api",
-          "type": "field"
+            "protocol": "freedom"
+        },
+        {
+            "protocol": "blackhole",
+            "tag": "block"
         }
-      ]
+    ],
+    "routing": {
+        "domainStrategy": "IPIfNonMatch",
+        "rules": [
+            {
+                "type": "field",
+                "ip": [
+                    "geoip:cn"
+                ],
+                "outboundTag": "block"
+            }
+        ]
     },
-    "strategy": "rules"
-  }
+    "policy": {
+        "levels": {
+            "0": {
+                "handshake": 5, // 连接建立时的握手时间限制，单位为秒，默认值为 4，建议与默认值不同
+                "connIdle": 360 // 连接空闲的时间限制，单位为秒，默认值为 300，建议与默认值不同
+            }
+        }
+    }
 }
 EOF
 
@@ -546,14 +344,6 @@ rm -rf /dev/shm/default.sock && rm -rf /dev/shm/h2c.sock
 systemctl start nginx && service xray start
 # xray会自动检测证书更新状态并重载，这里不用配置xray的证书检测了
 
-echo -e "\033[31m Xray Vless+TCP+XTLS配置完毕，具体内容如下： \033[0m"
-echo -e "\033[34m 地址：$domainName \033[0m"
-echo -e "\033[34m 端口：4430 \033[0m"
-echo -e "\033[34m 协议：Vless \033[0m"
-echo -e "\033[34m ID: $uuid \033[0m"
-echo -e "\033[34m 传输协议: TCP \033[0m"
-echo -e "\033[34m 建议流控: xtls-rprx-splice 或 xtls-rprx-direct \033[0m"
-echo -e "\033[34m   \033[0m"
 
 echo -e "\033[31m Xray Vless+TCP+Version配置完毕，具体内容如下： \033[0m"
 echo -e "\033[34m 地址：$domainName \033[0m"
@@ -564,15 +354,5 @@ echo -e "\033[34m 传输协议: TCP \033[0m"
 echo -e "\033[34m 流控: xtls-rprx-vision \033[0m"
 echo -e "\033[34m   \033[0m"
 
-echo -e "\033[31m Xray Vless+TCP+XTLS+Websocket 配置完毕，可套用CDN，具体内容如下： \033[0m"
-echo -e "\033[34m 地址：$domainName \033[0m"
-echo -e "\033[34m 端口：443 \033[0m"
-echo -e "\033[34m 协议：Vless \033[0m"
-echo -e "\033[34m ID: $uuid \033[0m"
-echo -e "\033[34m 传输协议: WebSocket \033[0m"
-echo -e "\033[34m 路径: /VlessWS \033[0m"
-echo -e "\033[34m 主机名(伪装域名): $domainName \033[0m"
-echo -e "\033[34m 当你需要使用CDN时，请将地址改为优选后的CDN IP \033[0m"
-echo -e "\033[34m   \033[0m"
 
 echo -e "\033[31m 配置完成，请访问 https://$domainName 查看网站效果 \033[0m"
