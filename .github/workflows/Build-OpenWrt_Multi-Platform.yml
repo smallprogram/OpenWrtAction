@@ -110,6 +110,7 @@ jobs:
       with:
         ccache: 'true'
         prefix: ${{ github.workspace }}/openwrt
+        mixkey: ${{ matrix.platforms }}
 
     - name: Load custom feeds
       run: |
