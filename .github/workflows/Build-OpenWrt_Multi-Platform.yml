@@ -27,7 +27,7 @@ env:
   FEEDS_CONF: feeds_config/custom.feeds.conf.default
   DIY_P1_SH: diy_script/diy-part1.sh
   DIY_P2_SH: diy_script/diy-part2.sh
-  COMMIT_LOG_NUM: 1
+  COMMIT_LOG_NUM: 5
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_ARTIFACT: false
@@ -72,6 +72,8 @@ jobs:
 
     - name: Checkout
       uses: actions/checkout@main
+      with:
+        fetch-depth: 0
 
     - name: Install packages
       env:
@@ -102,6 +104,12 @@ jobs:
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         df -hT
+
+    - name: Cache toolchain
+      uses: klever1988/cachewrtbuild@main
+      with:
+        ccache: 'true'
+        prefix: $GITHUB_WORKSPACE/openwrt
 
     - name: Load custom feeds
       run: |
@@ -135,6 +143,7 @@ jobs:
         mkdir -p $GITHUB_WORKSPACE/openwrt/dl
         cp -r $GITHUB_WORKSPACE/library/* $GITHUB_WORKSPACE/openwrt/dl
         cd $GITHUB_WORKSPACE/openwrt
+        echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config
         make defconfig
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
