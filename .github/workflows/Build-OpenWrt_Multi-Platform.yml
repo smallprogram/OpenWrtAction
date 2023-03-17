@@ -105,12 +105,12 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         df -hT
 
-    - name: Cache toolchain
-      uses: klever1988/cachewrtbuild@main
-      with:
-        ccache: 'true'
-        prefix: ${{ github.workspace }}/openwrt
-        mixkey: ${{ matrix.platforms }}
+    # - name: Cache toolchain
+    #   uses: klever1988/cachewrtbuild@main
+    #   with:
+    #     ccache: 'true'
+    #     prefix: ${{ github.workspace }}/openwrt
+    #     mixkey: ${{ matrix.platforms }}
 
     - name: Load custom feeds
       run: |
@@ -144,7 +144,7 @@ jobs:
         mkdir -p $GITHUB_WORKSPACE/openwrt/dl
         cp -r $GITHUB_WORKSPACE/library/* $GITHUB_WORKSPACE/openwrt/dl
         cd $GITHUB_WORKSPACE/openwrt
-        echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config
+        # echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config
         make defconfig
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
