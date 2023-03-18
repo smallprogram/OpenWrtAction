@@ -30,6 +30,8 @@ owaUrl=https://github.com/smallprogram/OpenWrtAction.git
 isFirstCompile=0
 # 是否Make Clean & Make DirClean
 isCleanCompile=$2
+# 是否单线程编译
+isSingleCompile=$3
 # 编译openwrt的log日志文件夹名称
 log_folder_name=openwrt_log
 # 编译子文件夹名称
@@ -219,7 +221,7 @@ function Func_Compile_Firmware() {
         mkdir /home/${userName}/${log_folder_name}
     fi
     if [ ! -d "/home/${userName}/${log_folder_name}/${folder_name}" ];
-    then
+    thenisFirstCompile
         mkdir /home/${userName}/${log_folder_name}/${folder_name}
     fi
     touch /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_update_filename}
