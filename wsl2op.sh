@@ -221,7 +221,7 @@ function Func_Compile_Firmware() {
         mkdir /home/${userName}/${log_folder_name}
     fi
     if [ ! -d "/home/${userName}/${log_folder_name}/${folder_name}" ];
-    thenisFirstCompile
+    then
         mkdir /home/${userName}/${log_folder_name}/${folder_name}
     fi
     touch /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_update_filename}
