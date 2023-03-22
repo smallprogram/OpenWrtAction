@@ -126,7 +126,7 @@ cd /home/$USER && (if [ ! -d "/home/$USER/OpenWrtAction" ]; then git clone https
 - `[distclean]`为启用distclean编译开关，例如`bash wsl2op.sh X86.config 1`,会自动默认以X86配置编译，并启用distclean模式。
 - `[singleCompile]`为启用单线程编译开关，例如`bash wsl2op.sh X86.config 1 1`,会自动默认以X86配置和distclean模式和单线程方式进行编译
 
-注意如果要使用`[distclean]`参数，必须要先加入`[configname]`参数，如果想不指定`[configname]`,可使用空格代替，例如`bash wsl2op.sh [空格] 1`,单线程编译也是如此。
+注意如果要使用`[distclean]`参数，必须要先加入`[configname]`参数，如果想不指定`[configname]`,可使用空格代替，例如`bash wsl2op.sh '' 1`,单线程编译也是如此。
 如果不指定任何参数，也可以直接执行`bash wsl2op.sh`。在导航中选择即可。
 
 > 首次编译推荐使用单线程模式编译。
