@@ -226,7 +226,7 @@ jobs:
 
         echo "### Openwrt Information" >> release.txt
 
-        echo "**:minidisc: OpenWrt Version: $(sed -n '53s/^.*DISTRIB_REVISION='\''\([^'\'']*\)'\''.*$/\1/p' $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/files/zzz-default-settings)**" >> release.txt
+        echo "**:minidisc: OpenWrt Version: $(sed -n '51s/^.*DISTRIB_REVISION='\''\([^'\'']*\)'\''.*$/\1/p' $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/files/zzz-default-settings)**" >> release.txt
         echo "**:gear: Default-Setting Version Version: $(sed -n '10s/PKG_VERSION:=\([0-9]*\).*/\1/p; 11s/PKG_RELEASE:=\([0-9]*\).*/\1/p' $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/Makefile | tr '\n' '.' | sed 's/.$//' && echo)**" >> release.txt
 
         echo "### Kernel Information" >> release.txt
