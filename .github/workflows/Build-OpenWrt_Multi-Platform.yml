@@ -214,6 +214,8 @@ jobs:
 
         echo "![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/${{needs.job_init.outputs.output_release_tag}}/total?style=flat-square)" >> release.txt
 
+        echo "### Firmware Information" >> release.txt
+
         echo "**:loudspeaker:Cancel the ext4 format and only keep the squashfs format.**" >> release.txt
         echo "**:computer:Including traditional IMG format firmware and UEFI boot firmware.**" >> release.txt
         echo "**:cd:Including qcow2 format firmware and UEFI boot firmware supporting pve virtual machine.**" >> release.txt
@@ -221,6 +223,13 @@ jobs:
         echo "**:cd:Including vhdx format firmware and UEFI boot firmware supporting Hyper-v virtual machines.**" >> release.txt
         echo "**:dvd:Including vmdk format firmware and UEFI boot firmware that support ESXi virtual machines (8.0 requires tool conversion).**" >> release.txt
         echo "" >> release.txt
+
+        echo "### Openwrt Information" >> release.txt
+
+        echo "**:minidisc: OpenWrt Version: $(sed -n '53s/^.*DISTRIB_REVISION='\''\([^'\'']*\)'\''.*$/\1/p' package/lean/default-settings/files/zzz-default-settings)**" >> release.txt
+        echo "**:gear: Default-Setting Version Version: $(sed -n '10s/PKG_VERSION:=\([0-9]*\).*/\1/p; 11s/PKG_RELEASE:=\([0-9]*\).*/\1/p' package/lean/default-settings/Makefile | tr '\n' '.' | sed 's/.$//' && echo)**" >> release.txt
+
+        echo "### Kernel Information" >> release.txt
 
         kernel_X86=$(sed -n '13p' $GITHUB_WORKSPACE/openwrt/target/linux/x86/Makefile | awk -F '=' '{print $2}')
         kernel_R5S=$(sed -n '10p' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile | awk -F '=' '{print $2}')
@@ -235,6 +244,10 @@ jobs:
         echo "**:ice_cube: R2S kernel: $(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_R2S} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**" >> release.txt
         echo "**:ice_cube: R2C kernel: $(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_R2C} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**" >> release.txt
         echo "**:ice_cube: Pi4ModelB kernel: $(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_Pi4ModelB} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**" >> release.txt
+
+
+
+        echo "## What's Changed" >> release.txt
 
         echo "<details> <summary> Lean Openwrt Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         git -C openwrt log -n $COMMIT_LOG_NUM >> release.txt
