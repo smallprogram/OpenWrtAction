@@ -9,6 +9,7 @@
 # https://github.com/smallprogram/OpenWrtAction
 # File: xray_vless_xtls_nginx_deploy.sh
 # Description: xray vless xtls nginx deploy
+# ！！！！！！！！！！！该脚本已弃用！！！！！！！！！！！！！！！！！！！！！！
 
 webSite=web01.zip
 
