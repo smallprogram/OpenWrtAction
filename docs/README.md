@@ -60,6 +60,7 @@
 |PassWall|插件|一款功能强大的科学工具|https://github.com/xiaorouji/openwrt-passwall|
 |PassWall2|插件|一款功能强大的科学工具|https://github.com/xiaorouji/openwrt-passwall2|
 |OpenClash|插件|配置自由度极高的科学工具|https://github.com/vernesong/OpenClash|
+|v2ray server|插件|v2ray服务端|lean code source|
 |DockerMan|插件|OP上玩Docker的必备插件|https://github.com/lisaac/luci-app-dockerman|
 |新版argon主题|主题|十分漂亮的OP主题|https://github.com/jerrykuku/luci-theme-argon|
 |Argon Config|插件|新版argon主题的设置插件|https://github.com/jerrykuku/luci-app-argon-config|
@@ -80,6 +81,9 @@
 |vim|工具|Linux 系统上一款文本编辑器，它是操作Linux 的一款利器|lean code source|
 |nano|工具|比vi/vim要简单得多，比较适合Linux初学者使用|lean code source|
 |Openssh-sftp-server|服务|sshd内置的SFTP服务器|lean code source|
+|nginx-all-module|服务|nginx server|openwrt|
+|nginx-ssl-util|服务|nginx server|openwrt|
+|nginx-util|服务|nginx server|openwrt|
 
 ## config列表
 |适用平台|KERNEL大小|ROOTFS大小|地址|
