@@ -81,9 +81,8 @@
 |vim|工具|Linux 系统上一款文本编辑器，它是操作Linux 的一款利器|lean code source|
 |nano|工具|比vi/vim要简单得多，比较适合Linux初学者使用|lean code source|
 |Openssh-sftp-server|服务|sshd内置的SFTP服务器|lean code source|
-|nginx-all-module|服务|nginx server|openwrt|
-|nginx-ssl-util|服务|nginx server|openwrt|
-|nginx-util|服务|nginx server|openwrt|
+|uhttpd|服务|uhttpd server|openwrt|
+
 
 ## config列表
 |适用平台|KERNEL大小|ROOTFS大小|地址|
