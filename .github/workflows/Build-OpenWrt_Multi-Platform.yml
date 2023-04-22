@@ -78,14 +78,15 @@ jobs:
           chmod +x $DIY_P2_SH
           cd openwrt
           $GITHUB_WORKSPACE/$DIY_P2_SH
-
+          
+          cd ..
           platforms=("X86" "R5S" "R4S" "R2S" "R2C" "Pi4_Model_B")
           for i in "${platforms[@]}"; do
             [ -e config/$i.config ] && cp -r config/$i.config openwrt/.config
+            cd openwrt
             make defconfig
             cd ..
             cp -f openwrt/.config config/$i.config
-            cd openwrt
           done
 
       - name: Git auto update config
