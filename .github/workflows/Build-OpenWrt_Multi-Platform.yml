@@ -73,19 +73,14 @@ jobs:
 
       - name: Make defconfig custom configuration
         run: |
-          args:
-            - X86
-            - R5S
-            - R4S
-            - R2S
-            - R2C
-            - Pi4_Model_B
           
+         
           chmod +x $DIY_P2_SH
           cd openwrt
           $GITHUB_WORKSPACE/$DIY_P2_SH
 
-          for i in "${args[@]}"; do
+          platforms=("X86" "R5S" "R4S" "R2S" "R2C" "Pi4_Model_B")
+          for i in "${platforms[@]}"; do
             [ -e config/$i.config ] && cp -r config/$i.config openwrt/.config
             make defconfig
             cd ..
