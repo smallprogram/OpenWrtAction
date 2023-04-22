@@ -85,6 +85,7 @@ jobs:
             make defconfig
             cd ..
             cp -f openwrt/.config config/$i.config
+            cd openwrt
           done
 
       - name: Git auto update config
