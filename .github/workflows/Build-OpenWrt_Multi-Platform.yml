@@ -41,7 +41,68 @@ jobs:
       output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
     steps:
       - id: gen_release_tag
-        run: echo "release_tag=multi-platform_$(date +"%Y.%m.%d_%H%M")" >> $GITHUB_OUTPUT
+        run: |
+          echo "release_tag=multi-platform_$(date +"%Y.%m.%d_%H%M")" >> $GITHUB_OUTPUT
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown $USER:$GROUPS /workdir
+
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 0
+
+      - name: Clone source code
+        working-directory: /workdir
+        run: |
+          git clone $REPO_URL -b $REPO_BRANCH openwrt
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+
+      - name: Load custom feeds
+        run: |
+          [ -e $FEEDS_CONF ] && cp -r $FEEDS_CONF openwrt/feeds.conf.default
+          chmod +x $DIY_P1_SH
+          cd openwrt
+          $GITHUB_WORKSPACE/$DIY_P1_SH
+
+      - name: Update feeds
+        run: cd openwrt && ./scripts/feeds update -a
+
+      - name: Install feeds
+        run: cd openwrt && ./scripts/feeds install -a
+
+      - name: Make defconfig custom configuration
+        run: |
+          args:
+            - X86
+            - R5S
+            - R4S
+            - R2S
+            - R2C
+            - Pi4_Model_B
+          
+          chmod +x $DIY_P2_SH
+          cd openwrt
+          $GITHUB_WORKSPACE/$DIY_P2_SH
+
+          for i in "${args[@]}"; do
+            [ -e config/$i.config ] && cp -r config/$i.config openwrt/.config
+            make defconfig
+            cd ..
+            cp -f openwrt/.config config/$i.config
+          done
+
+      - name: Git auto update config
+        uses: stefanzweifel/git-auto-commit-action@v4.16.0
+        id: commit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          commit_message: auto update config
+          branch: main   
+
+
+
 
   job_build:
     needs: job_init
@@ -133,17 +194,7 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
         make defconfig
-        cd ..
-        cp -f openwrt/.config config/${{ matrix.platforms }}.config
 
-    - name: Git auto update config
-      uses: stefanzweifel/git-auto-commit-action@v4.16.0
-      id: commit
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        commit_message: update ${{ matrix.platforms }} config
-        branch: main   
 
     - name: SSH connection to Actions
       uses: mxschmitt/action-tmate@v3.13
