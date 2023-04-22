@@ -132,6 +132,18 @@ jobs:
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
+        make defconfig
+        cd ..
+        cp -f openwrt/.config config/${{ matrix.platforms }}.config
+
+    - name: Git auto update config
+      uses: stefanzweifel/git-auto-commit-action@v4.16.0
+      id: commit
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        commit_message: update ${{ matrix.platforms }} config
+        branch: main   
 
     - name: SSH connection to Actions
       uses: mxschmitt/action-tmate@v3.13
@@ -145,7 +157,6 @@ jobs:
         cp -r $GITHUB_WORKSPACE/library/* $GITHUB_WORKSPACE/openwrt/dl
         cd $GITHUB_WORKSPACE/openwrt
         # echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config
-        make defconfig
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
