@@ -127,8 +127,8 @@ function Func_DIY_Script(){
     cp ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background/* ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
 
     #Diy
-    rm -rf ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
-    wget -P ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status https://github.com/smallprogram/OpenWrtAction/raw/main/source/openwrtfile/index.htm
+    # rm -rf ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
+    # wget -P ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status https://github.com/smallprogram/OpenWrtAction/raw/main/source/openwrtfile/index.htm
 
     sleep 1s
 
