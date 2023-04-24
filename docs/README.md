@@ -15,6 +15,11 @@
 
 
 > 每一个Release包含多个平台固件，请根据自己的平台选择对应的固件下载
+
+> 每个Release包含各个平台的packages压缩包，如果你不想升级固件，只想升级某个ipk可以下载压缩包选择ipk上传至软路由安装即可。
+
+> 使用`opkg install *.ipk`或`opkg install *.ipk --force-reinstall`命令安装即可
+
 > 有时候可能某个Release没有你需要的固件，例如找不到X86固件，那有可能是Action中编译失败了，请耐心等待下次编译上传的Release
 
 
