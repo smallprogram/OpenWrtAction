@@ -73,8 +73,6 @@ jobs:
 
       - name: Make defconfig custom configuration
         run: |
-          
-         
           chmod +x $DIY_P2_SH
           cd openwrt
           $GITHUB_WORKSPACE/$DIY_P2_SH
@@ -96,10 +94,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           commit_message: auto update config
-          branch: main   
-
-
-
+          branch: main
+          commit_author: smallprogram <smallprogram@foxmail.com>
 
   job_build:
     needs: job_init
