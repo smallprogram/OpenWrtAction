@@ -247,8 +247,17 @@ jobs:
       id: organize
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
+        root_path=$PWD
         cd openwrt/bin/targets/*/*
         rm -rf packages
+        firmware_path=$PWD
+        cd openwrt/bin/packages/*/
+        packages_path=$PWD
+        
+        cd $root_path
+        zip -r $firmware_path/packages_${{ matrix.platforms }}.zip $packages_path
+
+        cd $firmware_path
         mv sha256sums sha256sums_${{ matrix.platforms }}
         mv version.buildinfo version_${{ matrix.platforms }}.buildinfo
         mv config.buildinfo config_${{ matrix.platforms }}.buildinfo
