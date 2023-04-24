@@ -254,8 +254,8 @@ jobs:
         cd openwrt/bin/packages/*/
         packages_path=$PWD
         
-        cd $root_path
-        zip -r $firmware_path/packages_${{ matrix.platforms }}.zip $packages_path
+        cd $packages_path
+        zip -r $firmware_path/packages_${{ matrix.platforms }}.zip ./
 
         cd $firmware_path
         mv sha256sums sha256sums_${{ matrix.platforms }}
