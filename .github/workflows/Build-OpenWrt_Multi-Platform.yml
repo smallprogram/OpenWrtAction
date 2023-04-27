@@ -244,13 +244,14 @@ jobs:
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
         root_path=$PWD
-        cd $root_path/openwrt/bin/packages/*/
-        packages_path=$PWD
+
         cd $root_path/openwrt/bin/targets/*/*
         firmware_path=$PWD
 
-        cd $packages_path
-        zip -r $firmware_path/packages_${{ matrix.platforms }}.zip ./
+        # cd $root_path/openwrt/bin/packages/*/
+        # packages_path=$PWD
+        # cd $packages_path
+        # zip -r $firmware_path/packages_${{ matrix.platforms }}.zip ./
 
         cd $firmware_path
         rm -rf packages
