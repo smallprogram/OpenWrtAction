@@ -268,7 +268,7 @@ function Func_Compile_Firmware() {
 
     Func_LogMessage "\033[34m 开始执行make download! \033[0m" "\033[34m Start to execute make download! \033[0m"
     sleep 1s
-    make -j8 download V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_make_down_filename}
+    make -j8 download | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_make_down_filename}
     find dl -size -1024c -exec ls -l {} \;
     find dl -size -1024c -exec rm -f {} \;
 
