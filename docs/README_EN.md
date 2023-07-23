@@ -71,12 +71,12 @@
 ## config list
 |Applicable Platform|KERNEL Size|ROOTFS Size|Address|
 -|-|-|-
-X86 platform|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/x64.config|
-Pi4_Model_B|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/Pi4_Model_B.config
-R5S soft routing|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R5S.config
-R4S soft routing|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config
-R2S soft routing|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2S.config
-R2C soft routing|128Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2C.config
+X86 platform|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/x64.config|
+Pi4_Model_B|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/Pi4_Model_B.config
+R5S soft routing|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R5S.config
+R4S soft routing|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config
+R2S soft routing|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2S.config
+R2C soft routing|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2C.config
 
 ## Related screenshots of specific functional components:
 ![image](/source/main.png)
