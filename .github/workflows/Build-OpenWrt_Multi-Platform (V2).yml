@@ -153,12 +153,11 @@ jobs:
       - name: Load Configuration
         run: |
           [ -e config/${{ matrix.platforms }}.config ] && cp -r config/${{ matrix.platforms }}.config openwrt/.config
-          chmod +x $DIY_P2_SH
           cd openwrt
-          $GITHUB_WORKSPACE/$DIY_P2_SH
           echo -e "\nCONFIG_ALL=y" >> .config
           echo -e "\nCONFIG_ALL_NONSHARED=y" >> .config
           make defconfig > /dev/null 2>&1
+          cat .config
       
       - name: Compile Tools
         id: compile_tools
