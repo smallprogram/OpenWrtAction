@@ -186,10 +186,11 @@ jobs:
         id: generate_image
         run: |
           cd $GITHUB_WORKSPACE
-          mksquashfs openwrt TOOLCHAIN_IMAGE_${{ matrix.platforms }} -force-gid 1001 -force-uid 1001 -comp zstd
+
           mkdir -p $GITHUB_WORKSPACE/output
-          split -d -b 1900M TOOLCHAIN_IMAGE_${{ matrix.platforms }} $GITHUB_WORKSPACE/output/TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img.
-          rm TOOLCHAIN_IMAGE_${{ matrix.platforms }}
+
+          #需改进，可采用tar
+          zip -0 -r -s 1900M output/TOOLCHAIN_IMAGE_${{ matrix.platforms }}.zip /openwrt
           
           cd $GITHUB_WORKSPACE/output
           echo "FIRMWARE=$PWD" >> $GITHUB_ENV
@@ -258,13 +259,19 @@ jobs:
       run: |
         echo "release_tag=${{needs.job_init.outputs.output_release_tag}}" >> $GITHUB_OUTPUT
 
-        cd workspace
+        cd $GITHUB_WORKSPACE
 
-        for i in {0..9}
-        do
-          curl -fsL https://github.com/$GITHUB_REPOSITORY/releases/download/${{needs.job_init.outputs.output_release_tag}}/TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img.0$i >> TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img || break
+        mkdir -p downloads
+
+        #需改进，可采用tar
+
+        curl -LOJ "https://github.com/$GITHUB_REPOSITORY/releases/download/${{needs.job_init.outputs.output_release_tag}}/TOOLCHAIN_IMAGE_${{ matrix.platforms }}.zip" && mv "${{needs.job_init.outputs.output_release_tag}}/TOOLCHAIN_IMAGE_${{ matrix.platforms }}.zip" "downloads/"
+        for i in {01..20}; do
+          url="https://github.com/$GITHUB_REPOSITORY/releases/download/${{needs.job_init.outputs.output_release_tag}}/TOOLCHAIN_IMAGE_${{ matrix.platforms }}.z$i"
+          curl -fLOJ "$url" && mv "TOOLCHAIN_IMAGE_${{ matrix.platforms }}.z$i" "downloads/" || break
         done
 
+        #需改进，可采用tar
         unsquashfs -d openwrt TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img
 
         
