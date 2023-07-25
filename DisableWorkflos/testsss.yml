@@ -84,7 +84,7 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P2_SH
 
     - name: Debugging with tmate
-      uses: mxschmitt/action-tmate@v3.13
+      uses: mxschmitt/action-tmate@v3.16
       if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
     - name: Generate release tag
@@ -105,7 +105,7 @@ jobs:
         echo "status=success" >> $GITHUB_OUTPUT
 
     # - name: Upload firmware to release
-    #   uses: softprops/action-gh-release@v1
+    #   uses: softprops/action-gh-release@v0.1.15
     #   if: steps.tag.outputs.status == 'success' && !cancelled()
     #   env:
     #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

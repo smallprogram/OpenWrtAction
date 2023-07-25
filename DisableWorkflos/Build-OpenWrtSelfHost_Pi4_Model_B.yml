@@ -127,7 +127,7 @@ jobs:
     # has some error
 
     # - name: Upload firmware to release
-    #   uses: softprops/action-gh-release@v1
+    #   uses: softprops/action-gh-release@v0.1.15
     #   if: steps.complie.outputs.status == 'success' && steps.tag.outputs.status == 'success' && !cancelled()
     #   env:
     #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
