@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build-OpenWrt_Multi-Platform
+name: Build-OpenWrt_Multi-Platform (V2)
 
 on:
   repository_dispatch:
@@ -294,7 +294,7 @@ jobs:
       uses: mxschmitt/action-tmate@v3.13
       if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
-    - name: Download package
+    - name: Download Package
       id: package
       run: |
         df -hT
@@ -307,19 +307,45 @@ jobs:
         find dl -size -1024c -exec rm -f {} \;
         df -hT
 
-    - name: Compile the firmware
-      id: compile
+    - name: Compile Target
+      id: compile_target
+      run: |
+        cd openwrt
+        echo "$(nproc) threads compile packages"
+        make buildinfo
+        make diffconfig buildversion feedsversion
+        make target/compile -j$(nproc) IGNORE_ERRORS="m n"
+        echo "status=success" >> $GITHUB_OUTPUT
+        df -hT
+
+    - name: Compile Packages
+      if: steps.compile_target.outputs.status == 'success'
+      id: compile_pacages
       run: |
         cd openwrt
         echo -e "$(nproc) thread compile"
-        make -j$(nproc) || make -j1 || make -j1 V=s
+        make package/compile -j$(nproc) IGNORE_ERRORS="m n"
+        make package/index
+        df -hT
+
+    - name: Generate Frimware
+      if: steps.compile_pacages.outputs.status == 'success'
+      id: compile
+      run: |
+        cd openwrt
+        make package/install -j$(nproc)
+        make target/install -j$(nproc)
+        make json_overview_image_info
+        make checksum
         echo "status=success" >> $GITHUB_OUTPUT
         grep '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/' > DEVICE_NAME
         [ -s DEVICE_NAME ] && echo "DEVICE_NAME=_$(cat DEVICE_NAME)" >> $GITHUB_ENV
         echo "FILE_DATE=_$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
         df -hT
 
-    - name: Remove unuselesss files to free up space
+
+
+    - name: Remove Unuselesss Files
       id: removeunuselessfiles
       run: |
         df -hT
@@ -329,18 +355,18 @@ jobs:
         rm -rf  $GITHUB_WORKSPACE/openwrt/toolchain
         rm -rf  $GITHUB_WORKSPACE/openwrt/tools
 
-    - name: Check space usage
+    - name: Check Space Usage
       if: (!cancelled())
       run: df -hT
 
-    - name: Upload bin directory
+    - name: Upload Bin Directory
       uses: actions/upload-artifact@main
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
         name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: openwrt/bin
 
-    - name: Organize files
+    - name: Organize Files
       id: organize
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
@@ -364,14 +390,14 @@ jobs:
         echo "FIRMWARE=$firmware_path" >> $GITHUB_ENV
         echo "status=success" >> $GITHUB_OUTPUT
 
-    - name: Upload firmware directory
+    - name: Upload Firmware Directory
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && !cancelled()
       with:
         name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
 
-    - name: Generate release tag
+    - name: Generate Release Tag
       id: tag
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
@@ -458,7 +484,7 @@ jobs:
         touch release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
-    - name: Upload firmware to release
+    - name: Upload Firmware To Release
       uses: softprops/action-gh-release@v1
       if: steps.tag.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
       env:
