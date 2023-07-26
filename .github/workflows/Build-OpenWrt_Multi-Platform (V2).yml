@@ -147,9 +147,15 @@ jobs:
           df -hT
           git clone $REPO_URL -b $REPO_BRANCH openwrt
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+          df -hT
+
+      - name: Initialization Dir
+        working-directory: /workdir
+        run: |
+          sudo mkdir -p output
+          sudo mkdir -p toolchain
           ln -sf /workdir/output $GITHUB_WORKSPACE/output
           ln -sf /workdir/toolchain $GITHUB_WORKSPACE/toolchain
-          df -hT
 
       - name: Load Configuration
         run: |
@@ -169,7 +175,7 @@ jobs:
         run: |
           cd openwrt
           echo "$(nproc) threads compile tools"
-          make tools/compile -j$(nproc)
+          # make tools/compile -j$(nproc)
           df -hT
           echo "status=success" >> $GITHUB_OUTPUT
 
@@ -179,7 +185,7 @@ jobs:
         run: |
           cd openwrt
           echo "$(nproc) threads compile toolchain"
-          make toolchain/compile -j$(nproc)
+          # make toolchain/compile -j$(nproc)
           rm -rf .config* dl bin
           df -hT
           echo "status=success" >> $GITHUB_OUTPUT
@@ -264,13 +270,19 @@ jobs:
         sudo timedatectl set-timezone "$TZ"
         df -hT
 
-    - name: Download Toolchain Image From Releases
+    - name: Initialization Directory
       working-directory: /workdir
+      run: |
+        sudo mkdir -p openwrt
+        sudo mkdir -p download
+        ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+        ln -sf /workdir/download $GITHUB_WORKSPACE/download
+
+
+    - name: Download Toolchain Image From Releases
       run: |
         echo "release_tag=${{needs.job_init.outputs.output_release_tag}}" >> $GITHUB_OUTPUT
 
-        ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-        ln -sf /workdir/download $GITHUB_WORKSPACE/download
         echo "ls......."
         ls
         echo "before download......."
