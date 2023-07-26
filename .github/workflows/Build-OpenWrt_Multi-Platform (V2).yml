@@ -134,10 +134,10 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          # sudo -E apt-get -qq update
-          # sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends)
-          # sudo -E apt-get -qq autoremove --purge
-          # sudo -E apt-get -qq clean
+          sudo -E apt-get -qq update
+          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends)
+          sudo -E apt-get -qq autoremove --purge
+          sudo -E apt-get -qq clean
           sudo timedatectl set-timezone "$TZ"
           df -hT
 
@@ -177,7 +177,7 @@ jobs:
         run: |
           cd openwrt
           echo "$(nproc) threads compile tools"
-          # make tools/compile -j$(nproc)
+          make tools/compile -j$(nproc)
           df -hT
           echo "status=success" >> $GITHUB_OUTPUT
 
@@ -187,7 +187,7 @@ jobs:
         run: |
           cd openwrt
           echo "$(nproc) threads compile toolchain"
-          # make toolchain/compile -j$(nproc)
+          make toolchain/compile -j$(nproc)
           rm -rf .config* dl bin
           df -hT
           echo "status=success" >> $GITHUB_OUTPUT
