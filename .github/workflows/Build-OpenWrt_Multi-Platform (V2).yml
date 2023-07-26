@@ -147,7 +147,8 @@ jobs:
           df -hT
           git clone $REPO_URL -b $REPO_BRANCH openwrt
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-          mkdir $GITHUB_WORKSPACE/output
+          ln -sf /workdir/output $GITHUB_WORKSPACE/output
+          ln -sf /workdir/toolchain $GITHUB_WORKSPACE/toolchain
           df -hT
 
       - name: Load Configuration
@@ -187,12 +188,11 @@ jobs:
         if: steps.compile_toolchain.outputs.status == 'success'
         id: generate_image
         run: |
-          cd $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/toolchain
 
-          mkdir -p $GITHUB_WORKSPACE/output
           echo "before mksquashfs..........."
           df -hT
-          mksquashfs openwrt/ TOOLCHAIN_IMAGE_${{ matrix.platforms }} -force-gid 1001 -force-uid 1001 -comp zstd
+          mksquashfs ../openwrt/ TOOLCHAIN_IMAGE_${{ matrix.platforms }} -force-gid 1001 -force-uid 1001 -comp zstd
           echo "after mksquashfs..........."
           df -hT
           split -d -b 1900M TOOLCHAIN_IMAGE_${{ matrix.platforms }} $GITHUB_WORKSPACE/output/TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img.
@@ -265,19 +265,37 @@ jobs:
         df -hT
 
     - name: Download Toolchain Image From Releases
+      working-directory: /workdir
       run: |
         echo "release_tag=${{needs.job_init.outputs.output_release_tag}}" >> $GITHUB_OUTPUT
 
-        cd $GITHUB_WORKSPACE
+        ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+        ln -sf /workdir/download $GITHUB_WORKSPACE/download
+        echo "ls......."
+        ls
+        echo "before download......."
+        df -hT
+        
+        cd $GITHUB_WORKSPACE/download
+        
 
         for i in {0..9}
         do
           curl -fsL https://github.com/$GITHUB_REPOSITORY/releases/download/$release_tag/TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img.0$i >> $TOOLCHAIN_IMAGE.img || break
         done
+        echo "after download......."
+        df -hT
+        echo "ls download......."
+        ls
 
-        unsquashfs -d openwrt TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img
-
+        unsquashfs -d ../openwrt -f TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img
+        
         rm -rf TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img
+        ls
+        df -hT
+
+        cd $GITHUB_WORKSPACE
+        ls
 
         
 
