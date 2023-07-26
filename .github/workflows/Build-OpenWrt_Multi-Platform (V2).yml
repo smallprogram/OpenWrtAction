@@ -375,6 +375,7 @@ jobs:
         echo -e "$(nproc) thread compile"
         make package/compile -j$(nproc) IGNORE_ERRORS="m n"
         make package/index
+        echo "status=success" >> $GITHUB_OUTPUT
         df -hT
 
     - name: Generate Frimware
