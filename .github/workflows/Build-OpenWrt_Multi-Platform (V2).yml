@@ -297,7 +297,7 @@ jobs:
 
         for i in {0..9}
         do
-          curl -fsL https://github.com/$GITHUB_REPOSITORY/releases/download/${{needs.job_init.outputs.output_release_tag}}/TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img.0$i >> $TOOLCHAIN_IMAGE.img || break
+          curl -fsL https://github.com/$GITHUB_REPOSITORY/releases/download/${{needs.job_init.outputs.output_release_tag}}/TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img.0$i >> TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img || break
         done
         echo "after download......."
         df -hT
