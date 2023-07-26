@@ -169,6 +169,7 @@ jobs:
           cd openwrt
           echo "$(nproc) threads compile tools"
           make tools/compile -j$(nproc)
+          df -hT
           echo "status=success" >> $GITHUB_OUTPUT
 
       - name: Compile Toolchain
@@ -179,6 +180,7 @@ jobs:
           echo "$(nproc) threads compile toolchain"
           make toolchain/compile -j$(nproc)
           rm -rf .config* dl bin
+          df -hT
           echo "status=success" >> $GITHUB_OUTPUT
 
       - name: Generate Toolchain Image
@@ -188,10 +190,16 @@ jobs:
           cd $GITHUB_WORKSPACE
 
           mkdir -p $GITHUB_WORKSPACE/output
-
+          echo "before mksquashfs..........."
+          df -hT
           mksquashfs openwrt/ TOOLCHAIN_IMAGE_${{ matrix.platforms }} -force-gid 1001 -force-uid 1001 -comp zstd
+          echo "after mksquashfs..........."
+          df -hT
           split -d -b 1900M TOOLCHAIN_IMAGE_${{ matrix.platforms }} $GITHUB_WORKSPACE/output/TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img.
+          echo "after split..........."
+          df -hT
           rm TOOLCHAIN_IMAGE_${{ matrix.platforms }}
+          df -hT
           cd $GITHUB_WORKSPACE/output
 
           echo "FIRMWARE=$PWD" >> $GITHUB_ENV
