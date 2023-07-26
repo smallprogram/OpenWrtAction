@@ -134,10 +134,10 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          sudo -E apt-get -qq update
-          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends)
-          sudo -E apt-get -qq autoremove --purge
-          sudo -E apt-get -qq clean
+          # sudo -E apt-get -qq update
+          # sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends)
+          # sudo -E apt-get -qq autoremove --purge
+          # sudo -E apt-get -qq clean
           sudo timedatectl set-timezone "$TZ"
           df -hT
 
@@ -149,11 +149,13 @@ jobs:
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
           df -hT
 
-      - name: Initialization Dir
+      - name: Initialization Directory
         working-directory: /workdir
         run: |
           sudo mkdir -p output
           sudo mkdir -p toolchain
+          sudo chown $USER:$GROUPS /workdir/output
+          sudo chown $USER:$GROUPS /workdir/toolchain
           ln -sf /workdir/output $GITHUB_WORKSPACE/output
           ln -sf /workdir/toolchain $GITHUB_WORKSPACE/toolchain
 
@@ -275,6 +277,9 @@ jobs:
       run: |
         sudo mkdir -p openwrt
         sudo mkdir -p download
+        sudo chown $USER:$GROUPS /workdir/openwrt
+        sudo chown $USER:$GROUPS /workdir/download
+        
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         ln -sf /workdir/download $GITHUB_WORKSPACE/download
 
