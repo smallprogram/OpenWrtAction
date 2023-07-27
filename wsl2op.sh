@@ -229,11 +229,115 @@ function Func_Compile_Firmware() {
     sleep 1s
     Func_LogMessage "\033[34m 开始编译！！ \033[0m" "\033[34m Start compiling! ! \033[0m"
     sleep 1s
+
+
+    echo
+    Func_LogMessage "\033[31m 开始将OpenwrtAction中config文件夹下的${configName}注入lean源码中,准备make toolchain.... \033[0m" "\033[31m Start to inject ${configName} under the config folder in OpenwrtAction into lean source code... \033[0m"
+    sleep 2s
+    echo
+    cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
+    echo -e "\nCONFIG_ALL=y" >> .config
+    echo -e "\nCONFIG_ALL_NONSHARED=y" >> .config
+    make defconfig > /dev/null 2>&1
+
+    echo
+    Func_LogMessage "\033[31m 开始make tools. \033[0m" "\033[31m Begin make tools \033[0m"
+    sleep 2s
+    echo
+    if [[ $sysenv == 1 ]]
+    then
+        Func_LogMessage "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m" "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
+        Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+        read -t $timer isSingleCompile
+        if [ ! -n "$isSingleCompile" ]; then
+            Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
+            sleep 1s
+            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make tools/compile -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile1_tools.log
+            is_complie_error=${PIPESTATUS[0]}
+        else
+            Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
+            Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
+            sleep 1s
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make tools/compile -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile1_tools.log
+            is_complie_error=${PIPESTATUS[0]}
+        fi
+        
+    else
+        Func_LogMessage "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m" "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
+        Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+        read -t $timer isSingleCompile
+        if [ ! -n "$isSingleCompile" ]; then
+            Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
+            sleep 1s
+            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            make tools/compile -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile1_tools.log
+            is_complie_error=${PIPESTATUS[0]}
+        else
+            Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
+            Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
+            sleep 1s
+            make tools/compile -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile1_tools.log
+            is_complie_error=${PIPESTATUS[0]}
+        fi
+        # $PATH
+    fi
+
+    echo
+    Func_LogMessage "\033[31m 开始make toolchain. \033[0m" "\033[31m Begin make toolchain \033[0m"
+    sleep 2s
+    echo
+    if [[ $sysenv == 1 ]]
+    then
+        Func_LogMessage "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m" "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
+        Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+        read -t $timer isSingleCompile
+        if [ ! -n "$isSingleCompile" ]; then
+            Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
+            sleep 1s
+            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make toolchain/compile -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
+            is_complie_error=${PIPESTATUS[0]}
+        else
+            Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
+            Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
+            sleep 1s
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make toolchain/compile -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
+            is_complie_error=${PIPESTATUS[0]}
+        fi
+        
+    else
+        Func_LogMessage "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m" "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
+        Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+        read -t $timer isSingleCompile
+        if [ ! -n "$isSingleCompile" ]; then
+            Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
+            sleep 1s
+            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            make toolchain/compile -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
+            is_complie_error=${PIPESTATUS[0]}
+        else
+            Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
+            Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
+            sleep 1s
+            make toolchain/compile -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
+            is_complie_error=${PIPESTATUS[0]}
+        fi
+        # $PATH
+    fi
+
+    rm -rf .config* dl bin
+
+
+
+    
     Func_LogMessage "\033[31m 开始将OpenwrtAction中的自定义feeds注入lean源码中.... \033[0m" "\033[31m Started injecting custom feeds in OpenwrtAction into lean source code... \033[0m"
     sleep 2s
     echo
     cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default > /home/${userName}/${ledeDir}/feeds.conf.default
 
+    Func_LogMessage "\033[31m 开始clean feeds.... \033[0m" "\033[31m begin update feeds.... \033[0m"
+    ./scripts/feeds clean
 
     Func_LogMessage "\033[31m 开始update feeds.... \033[0m" "\033[31m begin update feeds.... \033[0m"
     sleep 1s
@@ -274,7 +378,10 @@ function Func_Compile_Firmware() {
 
     Func_DIY_Script
 
-    Func_LogMessage "\033[34m 开始执行make编译! \033[0m" "\033[34m Start to execute make compilation! \033[0m"
+    make buildinfo
+    make diffconfig buildversion feedsversion
+
+    Func_LogMessage "\033[34m 开始执行make target! \033[0m" "\033[34m Start to execute make target! \033[0m"
     sleep 1s
     if [[ $sysenv == 1 ]]
     then
@@ -285,13 +392,13 @@ function Func_Compile_Firmware() {
             Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make target/compile -j$(nproc) V=s IGNORE_ERRORS="m n" | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile3_target.log
             is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
             Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
             sleep 1s
-            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make target/compile -j1 V=s IGNORE_ERRORS="m n" | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile3_target.log
             is_complie_error=${PIPESTATUS[0]}
         fi
         
@@ -303,17 +410,145 @@ function Func_Compile_Firmware() {
             Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            make target/compile -j$(nproc) V=s IGNORE_ERRORS="m n" | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile3_target.log
             is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
             Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
             sleep 1s
-            make -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            make target/compile -j1 V=s IGNORE_ERRORS="m n" | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile3_target.log
             is_complie_error=${PIPESTATUS[0]}
         fi
         # $PATH
     fi
+
+    Func_LogMessage "\033[34m 开始执行make packages! \033[0m" "\033[34m Start to execute make packages! \033[0m"
+    sleep 1s
+    if [[ $sysenv == 1 ]]
+    then
+        Func_LogMessage "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m" "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
+        Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+        read -t $timer isSingleCompile
+        if [ ! -n "$isSingleCompile" ]; then
+            Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
+            sleep 1s
+            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make package/compile -j$(nproc) V=s IGNORE_ERRORS="m n" | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile4_packages.log
+            is_complie_error=${PIPESTATUS[0]}
+        else
+            Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
+            Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
+            sleep 1s
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make package/compile -j1 V=s IGNORE_ERRORS="m n" | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile4_packages.log
+            is_complie_error=${PIPESTATUS[0]}
+        fi
+        
+    else
+        Func_LogMessage "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m" "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
+        Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+        read -t $timer isSingleCompile
+        if [ ! -n "$isSingleCompile" ]; then
+            Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
+            sleep 1s
+            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            make package/compile -j$(nproc) V=s IGNORE_ERRORS="m n" | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile4_packages.log
+            is_complie_error=${PIPESTATUS[0]}
+        else
+            Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
+            Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
+            sleep 1s
+            make package/compile -j1 V=s IGNORE_ERRORS="m n" | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile4_packages.log
+            is_complie_error=${PIPESTATUS[0]}
+        fi
+        # $PATH
+    fi
+
+    make package/index
+
+    Func_LogMessage "\033[34m 开始执行install package! \033[0m" "\033[34m Start to execute install package! \033[0m"
+    sleep 1s
+    if [[ $sysenv == 1 ]]
+    then
+        Func_LogMessage "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m" "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
+        Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+        read -t $timer isSingleCompile
+        if [ ! -n "$isSingleCompile" ]; then
+            Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
+            sleep 1s
+            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make package/install -j$(nproc) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile5_install_packages.log
+            is_complie_error=${PIPESTATUS[0]}
+        else
+            Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
+            Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
+            sleep 1s
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make package/install -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile5_install_packages.log
+            is_complie_error=${PIPESTATUS[0]}
+        fi
+        
+    else
+        Func_LogMessage "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m" "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
+        Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+        read -t $timer isSingleCompile
+        if [ ! -n "$isSingleCompile" ]; then
+            Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
+            sleep 1s
+            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            make package/install -j$(nproc) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile5_install_packages.log
+            is_complie_error=${PIPESTATUS[0]}
+        else
+            Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
+            Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
+            sleep 1s
+            make package/install -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile5_install_packages.log
+            is_complie_error=${PIPESTATUS[0]}
+        fi
+        # $PATH
+    fi
+
+    Func_LogMessage "\033[34m 开始执行install target! \033[0m" "\033[34m Start to execute install target! \033[0m"
+    sleep 1s
+    if [[ $sysenv == 1 ]]
+    then
+        Func_LogMessage "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m" "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
+        Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+        read -t $timer isSingleCompile
+        if [ ! -n "$isSingleCompile" ]; then
+            Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
+            sleep 1s
+            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make target/install -j$(nproc) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile6_install_target.log
+            is_complie_error=${PIPESTATUS[0]}
+        else
+            Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
+            Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
+            sleep 1s
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make target/install -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile6_install_target.log
+            is_complie_error=${PIPESTATUS[0]}
+        fi
+        
+    else
+        Func_LogMessage "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m" "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
+        Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
+        read -t $timer isSingleCompile
+        if [ ! -n "$isSingleCompile" ]; then
+            Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
+            sleep 1s
+            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            make target/install -j$(nproc) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile6_install_target.log
+            is_complie_error=${PIPESTATUS[0]}
+        else
+            Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
+            Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
+            sleep 1s
+            make target/install -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile6_install_target.log
+            is_complie_error=${PIPESTATUS[0]}
+        fi
+        # $PATH
+    fi
+
+    make json_overview_image_info
+    make checksum
     
     Func_LogMessage "\033[34m 编译状态:${is_complie_error} \033[0m" "\033[34m Compile Status Code:${is_complie_error} \033[0m"
     
