@@ -831,6 +831,7 @@ function Func_Main(){
         cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default > /home/${userName}/${ledeDir}/feeds.conf.default
 
         cd /home/${userName}/${ledeDir}
+        ./scripts/feeds clean
         Func_LogMessage "\033[31m 开始update feeds.... \033[0m" "\033[31m begin update feeds.... \033[0m"
         sleep 1s
         ./scripts/feeds update -a 
