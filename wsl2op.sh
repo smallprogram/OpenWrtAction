@@ -52,15 +52,15 @@ log_diff_config=.config_diff
 #清理超过多少天的日志文件
 clean_day=3
 # 扩展luci插件地址
-luci_apps=(
-    # https://github.com/jerrykuku/luci-theme-argon.git
-    https://github.com/jerrykuku/luci-app-argon-config.git
-    # https://github.com/jerrykuku/lua-maxminddb.git
-    # https://github.com/jerrykuku/luci-app-vssr.git
-    # https://github.com/lisaac/luci-app-dockerman.git
-    # https://github.com/xiaorouji/openwrt-passwall.git
-    https://github.com/rufengsuixing/luci-app-adguardhome.git
-)
+# luci_apps=(
+#     # https://github.com/jerrykuku/luci-theme-argon.git
+#     https://github.com/jerrykuku/luci-app-argon-config.git
+#     # https://github.com/jerrykuku/lua-maxminddb.git
+#     # https://github.com/jerrykuku/luci-app-vssr.git
+#     # https://github.com/lisaac/luci-app-dockerman.git
+#     # https://github.com/xiaorouji/openwrt-passwall.git
+#     https://github.com/rufengsuixing/luci-app-adguardhome.git
+# )
 # 编译结果变量
 is_complie_error=0
 #Git参数
@@ -81,58 +81,25 @@ function Func_LogMessage(){
 }
 
 # DIY Script函数
-function Func_DIY_Script(){
-    Func_LogMessage "\033[31m 开始执行自定义设置脚本 \033[0m" "\033[31m Start executing the custom setup script \033[0m"
-    sleep 1s
-    # Modify default IP
-    Func_LogMessage "\033[31m 设置路由默认地址为10.10.0.253 \033[0m" "\033[31m Set the route default address to 10.10.0.253 \033[0m"
-    sed -i "s/192.168.1.1/${routeIP}/g" /home/${userName}/${ledeDir}/package/base-files/files/bin/config_generate
-    sleep 1s
-    # Modify default passwd
-    Func_LogMessage "\033[31m 设置路由默认密码为空 \033[0m" "\033[31m Set route default password to empty \033[0m"
-    sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' /home/${userName}/${ledeDir}/package/lean/default-settings/files/zzz-default-settings
-    sleep 1s
-    #恢复主机型号
-    # Func_LogMessage "\033[31m 恢复主机型号 \033[0m" "\033[31m Restoring the host model \033[0m"
-    # sed -i 's/(dmesg | grep .*/{a}${b}${c}${d}${e}${f}/g' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
-    # sed -i '/h=${g}.*/d' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
-    # sed -i 's/echo $h/echo $g/g' /home/${userName}/${ledeDir}/package/lean/autocore/files/x86/autocore
-    # sleep 1s
-    #关闭串口跑码
-    Func_LogMessage "\033[31m 关闭串口跑码 \033[0m" "\033[31m Close serial port running code \033[0m"
-    sed -i 's/console=tty0//g'  /home/${userName}/${ledeDir}/target/linux/x86/image/Makefile
-    sleep 1s
-    # 注入patches
-    # Func_LogMessage "\033[31m 注入patches \033[0m" "\033[31m inject patches \033[0m"
-    # cp -r /home/${userName}/OpenWrtAction/patches/651-rt2x00-driver-compile-with-kernel-5.15.patch /home/${userName}/${ledeDir}/package/kernel/mac80211/patches/rt2x00
-    # sleep 1s
-    # 注入dl
-    Func_LogMessage "\033[31m 注入dl \033[0m" "\033[31m inject dl \033[0m"
-    cp -r /home/${userName}/OpenWrtAction/library/* /home/${userName}/${ledeDir}/dl
-    sleep 1s
 
-    Func_LogMessage "\033[31m 下载安装默认背景 \033[0m" "\033[31m download and install default background \033[0m"
-    rm -rf ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background
-    mkdir -p ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background
-    wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/NetworkWorld1.mp4
-    wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/NetworkWorld2.mp4
-    wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/NetworkWorld3.mp4
-    wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/video1.mp4
-    wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/video2.mp4
-    wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/video3.mp4
-    wget -P ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/img/1.jpg
-
-    rm -rf ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
-    mkdir -p ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
-    cp ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background/* ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
-
-    #Diy
-    # rm -rf ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
-    # wget -P ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status https://github.com/smallprogram/OpenWrtAction/raw/main/source/openwrtfile/index.htm
-
+function Func_DIY1_Script(){
+    Func_LogMessage "\033[31m 开始执行DIY1设置脚本 \033[0m" "\033[31m Start executing the DIY1 setup script \033[0m"
     sleep 1s
+    
+    bash ../OpenWrtAction/diy_script/diy-part1.sh
 
-    Func_LogMessage "\033[31m DIY脚本执行完成 \033[0m" "\033[31m DIY script execution completed \033[0m"
+    Func_LogMessage "\033[31m DIY1脚本执行完成 \033[0m" "\033[31m DIY script execution completed \033[0m"
+    sleep 2s
+}
+
+
+function Func_DIY2_Script(){
+    Func_LogMessage "\033[31m 开始执行DIY2设置脚本 \033[0m" "\033[31m Start executing the DIY2 setup script \033[0m"
+    sleep 1s
+    
+    bash ../OpenWrtAction/diy_script/diy-part2.sh
+
+    Func_LogMessage "\033[31m DIY2脚本执行完成 \033[0m" "\033[31m DIY script execution completed \033[0m"
     sleep 2s
 }
 
@@ -143,47 +110,60 @@ function Func_GitSetting(){
     export GIT_SSL_NO_VERIFY=1
 }
 
-# 获取自定插件函数
-function Func_Get_luci_apps(){
-    for luci_app in "${luci_apps[@]}"; do
+# 获取自定插件函数 作废，直接使用diy脚本
+# function Func_Get_luci_apps(){
+#     for luci_app in "${luci_apps[@]}"; do
 
-        temp=${luci_app##*/} # xxx.git
-        dir=${temp%%.*}  # xxx
+#         temp=${luci_app##*/} # xxx.git
+#         dir=${temp%%.*}  # xxx
 
-        Func_LogMessage "\033[31m 开始同步$dir.... \033[0m" "\033[31m Start syncing $dir.... \033[0m"
-        sleep 2s
+#         Func_LogMessage "\033[31m 开始同步$dir.... \033[0m" "\033[31m Start syncing $dir.... \033[0m"
+#         sleep 2s
 
-        # if [[ $isFirstCompile == 1 && $dir == luci-theme-argon ]]; then
-        #     cd /home/${userName}/${ledeDir}/package/lean/
-        #     rm -rf $dir
-        #     git clone -b 18.06 $luci_app
-        #     continue
-        # fi
+#         # if [[ $isFirstCompile == 1 && $dir == luci-theme-argon ]]; then
+#         #     cd /home/${userName}/${ledeDir}/package/lean/
+#         #     rm -rf $dir
+#         #     git clone -b 18.06 $luci_app
+#         #     continue
+#         # fi
 
-        # if [[ $luci_app == https://github.com/xiaorouji/openwrt-passwall.git ]]; then
-        #     cd /home/${userName}/${ledeDir}/package/lean/
-        #     rm -rf passwall
-        #     rm -rf passwall_package
-        #     git clone -b luci $luci_app passwall
-        #     git clone -b packages $luci_app passwall_package
-        #     cp -rf passwall_package/* passwall
-        #     rm -rf passwall_package
-        #     continue
-        # fi
+#         # if [[ $luci_app == https://github.com/xiaorouji/openwrt-passwall.git ]]; then
+#         #     cd /home/${userName}/${ledeDir}/package/lean/
+#         #     rm -rf passwall
+#         #     rm -rf passwall_package
+#         #     git clone -b luci $luci_app passwall
+#         #     git clone -b packages $luci_app passwall_package
+#         #     cp -rf passwall_package/* passwall
+#         #     rm -rf passwall_package
+#         #     continue
+#         # fi
 
-        if [ ! -d "/home/${userName}/${ledeDir}/package/lean/$dir" ];
-        then
-            cd /home/${userName}/${ledeDir}/package/lean/
-            git clone $luci_app
-            cd /home/${userName}
-        else
-            cd /home/${userName}/${ledeDir}/package/lean/$dir
-            git stash
-            git stash drop
-            git pull --rebase
-            cd /home/${userName}
-        fi
-    done
+#         if [ ! -d "/home/${userName}/${ledeDir}/package/lean/$dir" ];
+#         then
+#             cd /home/${userName}/${ledeDir}/package/lean/
+#             git clone $luci_app
+#             cd /home/${userName}
+#         else
+#             cd /home/${userName}/${ledeDir}/package/lean/$dir
+#             git stash
+#             git stash drop
+#             git pull --rebase
+#             cd /home/${userName}
+#         fi
+#     done
+# }
+
+# 编译报错检查函数
+check_compile_error() {
+  local is_compile_error=$1
+  local messages=$2
+
+  if [ "$is_compile_error" -ne 0 ]; then
+    Func_LogMessage "\033[34m ${messages},的编译状态:${is_compile_error} \033[0m" "\033[34m ${messages}，Compile Status Code:${is_complie_error} \033[0m"
+    exit $1
+  else
+    Func_LogMessage "\033[34m ${messages},的编译状态:${is_compile_error} \033[0m" "\033[34m ${messages}，Compile Status Code:${is_complie_error} \033[0m"
+  fi
 }
 
 # 编译函数
@@ -282,6 +262,7 @@ function Func_Compile_Firmware() {
         fi
         # $PATH
     fi
+    check_compile_error "$is_complie_error" "make tools"
 
     echo
     Func_LogMessage "\033[31m 开始make toolchain. \033[0m" "\033[31m Begin make toolchain \033[0m"
@@ -326,6 +307,8 @@ function Func_Compile_Firmware() {
         # $PATH
     fi
 
+    check_compile_error "$is_complie_error" "make toolchain"
+
     rm -rf .config* dl bin
 
 
@@ -335,6 +318,8 @@ function Func_Compile_Firmware() {
     sleep 2s
     echo
     cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default > /home/${userName}/${ledeDir}/feeds.conf.default
+
+    Func_DIY1_Script
 
     Func_LogMessage "\033[31m 开始clean feeds.... \033[0m" "\033[31m begin update feeds.... \033[0m"
     ./scripts/feeds clean
@@ -376,7 +361,7 @@ function Func_Compile_Firmware() {
     find dl -size -1024c -exec ls -l {} \;
     find dl -size -1024c -exec rm -f {} \;
 
-    Func_DIY_Script
+    Func_DIY2_Script
 
     make buildinfo
     make diffconfig buildversion feedsversion
@@ -422,6 +407,8 @@ function Func_Compile_Firmware() {
         # $PATH
     fi
 
+    check_compile_error "$is_complie_error" "make target"
+
     Func_LogMessage "\033[34m 开始执行make packages! \033[0m" "\033[34m Start to execute make packages! \033[0m"
     sleep 1s
     if [[ $sysenv == 1 ]]
@@ -462,6 +449,8 @@ function Func_Compile_Firmware() {
         fi
         # $PATH
     fi
+
+    check_compile_error "$is_complie_error" "make packages"
 
     make package/index
 
@@ -506,6 +495,8 @@ function Func_Compile_Firmware() {
         # $PATH
     fi
 
+    check_compile_error "$is_complie_error" "install package"
+
     Func_LogMessage "\033[34m 开始执行install target! \033[0m" "\033[34m Start to execute install target! \033[0m"
     sleep 1s
     if [[ $sysenv == 1 ]]
@@ -546,6 +537,8 @@ function Func_Compile_Firmware() {
         fi
         # $PATH
     fi
+
+    check_compile_error "$is_complie_error" "install target"
 
     make json_overview_image_info
     make checksum
@@ -755,9 +748,6 @@ function Func_Main(){
     # fi
 
     # echo $isFirstCompile "dfffffffffffffffffffffffffffff"
-
-
-    Func_Get_luci_apps
 
 
     echo 
