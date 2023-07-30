@@ -337,6 +337,9 @@ function Func_Compile_Firmware() {
     echo
     cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
     cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/${log_before_defconfig_config}
+
+    Func_DIY2_Script
+
     # if [[ $isFirstCompile == 1 ]]; then
     #     echo -e  "\033[34m 由于你是首次编译，需要make menuconfig配置，如果保持原有config不做更改，请在进入菜单后直接exit即可 \033[0m"
     #     sleep 6s
@@ -361,7 +364,7 @@ function Func_Compile_Firmware() {
     find dl -size -1024c -exec ls -l {} \;
     find dl -size -1024c -exec rm -f {} \;
 
-    Func_DIY2_Script
+    
 
     make buildinfo
     make diffconfig buildversion feedsversion
