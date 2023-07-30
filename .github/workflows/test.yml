@@ -30,7 +30,7 @@ jobs:
     - name: Remove old Releases
       uses: smallprogram/delete-older-releases@master
       with:
-        keep_latest: 6
+        keep_latest: 10
         keep_min_download_counts: 7
         delete_tags: true
       env:
