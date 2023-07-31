@@ -210,6 +210,27 @@ function Func_Compile_Firmware() {
     Func_LogMessage "\033[34m 开始编译！！ \033[0m" "\033[34m Start compiling! ! \033[0m"
     sleep 1s
 
+    Func_LogMessage "\033[31m 开始将OpenwrtAction中的自定义feeds注入lean源码中.... \033[0m" "\033[31m Started injecting custom feeds in OpenwrtAction into lean source code... \033[0m"
+    sleep 2s
+    echo
+    cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default > /home/${userName}/${ledeDir}/feeds.conf.default
+
+    Func_DIY1_Script
+
+    Func_LogMessage "\033[31m 开始clean feeds.... \033[0m" "\033[31m begin update feeds.... \033[0m"
+    ./scripts/feeds clean
+
+    Func_LogMessage "\033[31m 开始update feeds.... \033[0m" "\033[31m begin update feeds.... \033[0m"
+    sleep 1s
+    ./scripts/feeds update -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_update_filename}
+    Func_LogMessage "\033[31m 开始install feeds.... \033[0m" "\033[31m begin install feeds.... \033[0m"
+    sleep 1s
+    ./scripts/feeds install -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_install_filename}
+
+    
+
+    Func_DIY2_Script
+
 
     echo
     Func_LogMessage "\033[31m 开始将OpenwrtAction中config文件夹下的${configName}注入lean源码中,准备make toolchain.... \033[0m" "\033[31m Start to inject ${configName} under the config folder in OpenwrtAction into lean source code... \033[0m"
@@ -312,25 +333,6 @@ function Func_Compile_Firmware() {
     rm -rf .config* dl bin
 
 
-
-    
-    Func_LogMessage "\033[31m 开始将OpenwrtAction中的自定义feeds注入lean源码中.... \033[0m" "\033[31m Started injecting custom feeds in OpenwrtAction into lean source code... \033[0m"
-    sleep 2s
-    echo
-    cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default > /home/${userName}/${ledeDir}/feeds.conf.default
-
-    Func_DIY1_Script
-
-    Func_LogMessage "\033[31m 开始clean feeds.... \033[0m" "\033[31m begin update feeds.... \033[0m"
-    ./scripts/feeds clean
-
-    Func_LogMessage "\033[31m 开始update feeds.... \033[0m" "\033[31m begin update feeds.... \033[0m"
-    sleep 1s
-    ./scripts/feeds update -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_update_filename}
-    Func_LogMessage "\033[31m 开始install feeds.... \033[0m" "\033[31m begin install feeds.... \033[0m"
-    sleep 1s
-    ./scripts/feeds install -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_install_filename}
-
     echo
     Func_LogMessage "\033[31m 开始将OpenwrtAction中config文件夹下的${configName}注入lean源码中.... \033[0m" "\033[31m Start to inject ${configName} under the config folder in OpenwrtAction into lean source code... \033[0m"
     sleep 2s
@@ -338,7 +340,6 @@ function Func_Compile_Firmware() {
     cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
     cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/${log_before_defconfig_config}
 
-    Func_DIY2_Script
 
     # if [[ $isFirstCompile == 1 ]]; then
     #     echo -e  "\033[34m 由于你是首次编译，需要make menuconfig配置，如果保持原有config不做更改，请在进入菜单后直接exit即可 \033[0m"
