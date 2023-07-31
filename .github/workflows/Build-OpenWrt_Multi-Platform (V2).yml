@@ -168,7 +168,6 @@ jobs:
           ln -sf /workdir/output $GITHUB_WORKSPACE/output
           ln -sf /workdir/toolchain $GITHUB_WORKSPACE/toolchain
 
-          echo "release_tag=${{needs.job_init.outputs.output_release_tag}}" >> $GITHUB_OUTPUT
           cd openwrt
           mkdir -p compile_log
           cd compile_log
@@ -222,7 +221,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.init_directory.outputs.release_tag }}
+          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
           files: ${{ env.LOGFILES }}/*
 
       - name: Compile Toolchain
@@ -260,7 +259,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.init_directory.outputs.release_tag }}
+          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
           files: ${{ env.LOGFILES }}/*
 
       - name: Generate Toolchain Image
@@ -291,7 +290,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.generate_image.outputs.release_tag }}
+          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
           files: ${{ env.FIRMWARE }}/*
 
 
@@ -384,7 +383,6 @@ jobs:
         ls
 
         cd openwrt
-        echo "release_tag=${{needs.job_init.outputs.output_release_tag}}" >> $GITHUB_OUTPUT
         mkdir -p compile_log
         cd compile_log
         echo "LOGFILES=$PWD" >> $GITHUB_ENV
@@ -476,7 +474,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.download.outputs.release_tag }}
+        tag_name: ${{ needs.job_init.outputs.output_release_tag }}
         files: ${{ env.LOGFILES }}/*
           
     - name: Compile Packages
@@ -515,7 +513,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.download.outputs.release_tag }}
+        tag_name: ${{ needs.job_init.outputs.output_release_tag }}
         files: ${{ env.LOGFILES }}/*
           
           
@@ -552,7 +550,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.download.outputs.release_tag }}
+        tag_name: ${{ needs.job_init.outputs.output_release_tag }}
         files: ${{ env.LOGFILES }}/*
 
     - name: Install Target
@@ -588,7 +586,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.download.outputs.release_tag }}
+        tag_name: ${{ needs.job_init.outputs.output_release_tag }}
         files: ${{ env.LOGFILES }}/*
 
     - name: Generate Frimware Info
@@ -750,7 +748,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.download.outputs.release_tag }}
+        tag_name: ${{ needs.job_init.outputs.output_release_tag }}
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
 
