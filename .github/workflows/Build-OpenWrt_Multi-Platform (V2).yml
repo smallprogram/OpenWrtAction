@@ -126,7 +126,7 @@ jobs:
       - name: Maximize Build Space
         uses: easimon/maximize-build-space@master
         with:
-          root-reserve-mb: 4096
+          root-reserve-mb: 2048
           swap-size-mb: 1024
           remove-dotnet: 'true'
           remove-android: 'true'
@@ -173,13 +173,30 @@ jobs:
           cd compile_log
           echo "LOGFILES=$PWD" >> $GITHUB_ENV
 
+      - name: Load Custom Feeds
+        run: |
+          [ -e $FEEDS_CONF ] && cp -r $FEEDS_CONF openwrt/feeds.conf.default
+          chmod +x $DIY_P1_SH
+          cd openwrt
+          ./scripts/feeds clean
+          $GITHUB_WORKSPACE/$DIY_P1_SH
+
+      - name: Update Feeds
+        run: cd openwrt && ./scripts/feeds update -a
+
+      - name: Install Feeds
+        run: cd openwrt && ./scripts/feeds install -a
+
       - name: Load Configuration
         run: |
           [ -e config/${{ matrix.platforms }}.config ] && cp -r config/${{ matrix.platforms }}.config openwrt/.config
+          chmod +x $DIY_P2_SH
           cd openwrt
+          $GITHUB_WORKSPACE/$DIY_P2_SH
           echo -e "\nCONFIG_ALL=y" >> .config
           echo -e "\nCONFIG_ALL_NONSHARED=y" >> .config
           make defconfig > /dev/null 2>&1
+          echo "config file info......................................"
           cat .config
       
       - name: SSH connection to Actions
@@ -217,7 +234,7 @@ jobs:
 
       - name: Upload Log
         uses: softprops/action-gh-release@v0.1.15
-        if: steps.compile_tools.outputs.status != 'success'
+        if: steps.compile_tools.outcome=='failure'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -255,7 +272,7 @@ jobs:
 
       - name: Upload Log
         uses: softprops/action-gh-release@v0.1.15
-        if: steps.compile_toolchain.outputs.status != 'success'
+        if: steps.compile_toolchain.outcome=='failure'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -317,7 +334,7 @@ jobs:
     - name: Maximize Build Space
       uses: easimon/maximize-build-space@master
       with:
-        root-reserve-mb: 4096
+        root-reserve-mb: 2048
         swap-size-mb: 1024
         remove-dotnet: 'true'
         remove-android: 'true'
@@ -386,29 +403,11 @@ jobs:
         mkdir -p compile_log
         cd compile_log
         echo "LOGFILES=$PWD" >> $GITHUB_ENV
-        
-
-    - name: Load Custom Feeds
-      run: |
-        [ -e $FEEDS_CONF ] && cp -r $FEEDS_CONF openwrt/feeds.conf.default
-        chmod +x $DIY_P1_SH
-        cd openwrt
-        ./scripts/feeds clean
-        $GITHUB_WORKSPACE/$DIY_P1_SH
-
-    - name: Update Feeds
-      run: cd openwrt && ./scripts/feeds update -a
-
-    - name: Install Feeds
-      run: cd openwrt && ./scripts/feeds install -a
 
     - name: Load Custom Configuration
       run: |
         [ -e files ] && cp -r files openwrt/files
         [ -e config/${{ matrix.platforms }}.config ] && cp -r config/${{ matrix.platforms }}.config openwrt/.config
-        chmod +x $DIY_P2_SH
-        cd openwrt
-        $GITHUB_WORKSPACE/$DIY_P2_SH
         make defconfig
 
 
@@ -470,7 +469,7 @@ jobs:
   
     - name: Upload Log
       uses: softprops/action-gh-release@v0.1.15
-      if: steps.compile_target.outputs.status != 'success'
+      if: steps.compile_target.outcome=='failure'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
@@ -509,7 +508,7 @@ jobs:
 
     - name: Upload Log
       uses: softprops/action-gh-release@v0.1.15
-      if: steps.compile_pacages.outputs.status != 'success'
+      if: steps.compile_pacages.outcome=='failure'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
@@ -546,7 +545,7 @@ jobs:
 
     - name: Upload Log
       uses: softprops/action-gh-release@v0.1.15
-      if: steps.install_packages.outputs.status != 'success'
+      if: steps.install_packages.outcome=='failure'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
@@ -582,7 +581,7 @@ jobs:
 
     - name: Upload Log
       uses: softprops/action-gh-release@v0.1.15
-      if: steps.install_target.outputs.status != 'success'
+      if: steps.install_target.outcome=='failure'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
