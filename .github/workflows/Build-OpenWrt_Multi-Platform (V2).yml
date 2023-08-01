@@ -430,92 +430,92 @@ jobs:
         find dl -size -1024c -exec rm -f {} \;
         df -hT
 
-    - name: Compile Buildinfo
-      id: compile_buildinfo
-      run: |
-        cd openwrt
+    # - name: Compile Buildinfo
+    #   id: compile_buildinfo
+    #   run: |
+    #     cd openwrt
 
-        echo "compile buildinfo diffconfig buildversion feedsversion"
-        make buildinfo
-        make diffconfig buildversion feedsversion
+    #     echo "compile buildinfo diffconfig buildversion feedsversion"
+    #     make buildinfo
+    #     make diffconfig buildversion feedsversion
 
-        echo "status=success" >> $GITHUB_OUTPUT
-        df -hT
+    #     echo "status=success" >> $GITHUB_OUTPUT
+    #     df -hT
 
-    - name: Compile Target
-      if: steps.compile_buildinfo.outputs.status == 'success'
-      id: compile_target
-      run: |
-        cd openwrt
-        rm -rf compile_log/*
-        if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-          if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-              echo "1 threads compile target"
-              make target/compile -j1 V=s IGNORE_ERRORS="m n"  | tee -a compile_log/log_${{ matrix.platforms }}_3_compile_target.log
-          else
-              echo "$(nproc) threads compile target"
-              make target/compile -j$(nproc) V=s IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_3_compile_target.log
-          fi
-        else
-          if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-              echo "1 threads compile target"
-              make target/compile -j1 IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_3_compile_target.log
-          else
-              echo "$(nproc) threads compile target"
-              make target/compile -j$(nproc) IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_3_compile_target.log
-          fi
-        fi        
+    # - name: Compile Target
+    #   if: steps.compile_buildinfo.outputs.status == 'success'
+    #   id: compile_target
+    #   run: |
+    #     cd openwrt
+    #     rm -rf compile_log/*
+    #     if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+    #       if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+    #           echo "1 threads compile target"
+    #           make target/compile -j1 V=s IGNORE_ERRORS="m n"  | tee -a compile_log/log_${{ matrix.platforms }}_3_compile_target.log
+    #       else
+    #           echo "$(nproc) threads compile target"
+    #           make target/compile -j$(nproc) V=s IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_3_compile_target.log
+    #       fi
+    #     else
+    #       if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+    #           echo "1 threads compile target"
+    #           make target/compile -j1 IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_3_compile_target.log
+    #       else
+    #           echo "$(nproc) threads compile target"
+    #           make target/compile -j$(nproc) IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_3_compile_target.log
+    #       fi
+    #     fi        
 
-        echo "status=success" >> $GITHUB_OUTPUT
-        df -hT
+    #     echo "status=success" >> $GITHUB_OUTPUT
+    #     df -hT
   
-    - name: Upload Log
-      uses: softprops/action-gh-release@v0.1.15
-      if: steps.compile_target.outcome=='failure' || steps.compile_target.outcome=='cancelled'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ needs.job_init.outputs.output_release_tag }}
-        files: ${{ env.LOGFILES }}/*
+    # - name: Upload Log
+    #   uses: softprops/action-gh-release@v0.1.15
+    #   if: steps.compile_target.outcome=='failure' || steps.compile_target.outcome=='cancelled'
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+    #     files: ${{ env.LOGFILES }}/*
           
-    - name: Compile Packages
-      if: steps.compile_target.outputs.status == 'success'
-      id: compile_pacages
-      run: |
-        cd openwrt
-        rm -rf compile_log/*
-        if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-          if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-              echo "1 threads compile packages"
-              make package/compile -j1 V=s IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_4_compile_pacages.log
-          else
-              echo "$(nproc) threads compile packages"
-              make package/compile -j$(nproc) V=s IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_4_compile_pacages.log
-          fi
-        else
-          if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-              echo "1 threads compile packages"
-              make package/compile -j1 IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_4_compile_pacages.log
-          else
-              echo "$(nproc) threads compile packages"
-              make package/compile -j$(nproc) IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_4_compile_pacages.log
-          fi
-        fi  
+    # - name: Compile Packages
+    #   if: steps.compile_target.outputs.status == 'success'
+    #   id: compile_pacages
+    #   run: |
+    #     cd openwrt
+    #     rm -rf compile_log/*
+    #     if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+    #       if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+    #           echo "1 threads compile packages"
+    #           make package/compile -j1 V=s IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_4_compile_pacages.log
+    #       else
+    #           echo "$(nproc) threads compile packages"
+    #           make package/compile -j$(nproc) V=s IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_4_compile_pacages.log
+    #       fi
+    #     else
+    #       if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+    #           echo "1 threads compile packages"
+    #           make package/compile -j1 IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_4_compile_pacages.log
+    #       else
+    #           echo "$(nproc) threads compile packages"
+    #           make package/compile -j$(nproc) IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_4_compile_pacages.log
+    #       fi
+    #     fi  
 
 
-        echo -e "compile package/index..............."
-        make package/index
-        echo "status=success" >> $GITHUB_OUTPUT
-        df -hT
+    #     echo -e "compile package/index..............."
+    #     make package/index
+    #     echo "status=success" >> $GITHUB_OUTPUT
+    #     df -hT
 
-    - name: Upload Log
-      uses: softprops/action-gh-release@v0.1.15
-      if: steps.compile_pacages.outcome=='failure' || steps.compile_pacages.outcome=='cancelled'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ needs.job_init.outputs.output_release_tag }}
-        files: ${{ env.LOGFILES }}/*
+    # - name: Upload Log
+    #   uses: softprops/action-gh-release@v0.1.15
+    #   if: steps.compile_pacages.outcome=='failure' || steps.compile_pacages.outcome=='cancelled'
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+    #     files: ${{ env.LOGFILES }}/*
           
           
     # - name: Install Packages
