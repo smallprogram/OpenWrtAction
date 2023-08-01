@@ -406,8 +406,10 @@ jobs:
 
     - name: Load Custom Configuration
       run: |
+        cd $GITHUB_WORKSPACE
         [ -e files ] && cp -r files openwrt/files
         [ -e config/${{ matrix.platforms }}.config ] && cp -r config/${{ matrix.platforms }}.config openwrt/.config
+        cd openwrt
         make defconfig
 
 
