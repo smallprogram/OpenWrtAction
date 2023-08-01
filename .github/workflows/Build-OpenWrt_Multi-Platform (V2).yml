@@ -234,7 +234,7 @@ jobs:
 
       - name: Upload Log
         uses: softprops/action-gh-release@v0.1.15
-        if: steps.compile_tools.outcome=='failure'
+        if: steps.compile_tools.outcome=='failure' || steps.compile_tools.outcome=='cancelled'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -272,7 +272,7 @@ jobs:
 
       - name: Upload Log
         uses: softprops/action-gh-release@v0.1.15
-        if: steps.compile_toolchain.outcome=='failure'
+        if: steps.compile_toolchain.outcome=='failure' || steps.compile_toolchain.outcome=='cancelled'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -471,7 +471,7 @@ jobs:
   
     - name: Upload Log
       uses: softprops/action-gh-release@v0.1.15
-      if: steps.compile_target.outcome=='failure'
+      if: steps.compile_target.outcome=='failure' || steps.compile_target.outcome=='cancelled'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
@@ -510,7 +510,7 @@ jobs:
 
     - name: Upload Log
       uses: softprops/action-gh-release@v0.1.15
-      if: steps.compile_pacages.outcome=='failure'
+      if: steps.compile_pacages.outcome=='failure' || steps.compile_pacages.outcome=='cancelled'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
@@ -547,7 +547,7 @@ jobs:
 
     # - name: Upload Log
     #   uses: softprops/action-gh-release@v0.1.15
-    #   if: steps.install_packages.outcome=='failure'
+    #   if: steps.install_packages.outcome=='failure' || steps.install_packages.outcome=='cancelled'
     #   env:
     #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     #   with:
@@ -583,7 +583,7 @@ jobs:
 
     # - name: Upload Log
     #   uses: softprops/action-gh-release@v0.1.15
-    #   if: steps.install_target.outcome=='failure'
+    #   if: steps.install_target.outcome=='failure' || steps.install_target.outcome=='cancelled'
     #   env:
     #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     #   with:
@@ -621,7 +621,7 @@ jobs:
 
     - name: Upload Log
       uses: softprops/action-gh-release@v0.1.15
-      if: steps.compile.outcome=='failure'
+      if: steps.compile.outcome=='failure' || steps.compile.outcome=='cancelled'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
