@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build-OpenWrt_Multi-Platform (V2)
+name: Build-OpenWrt_Multi-Platform(V2)
 
 on:
   repository_dispatch:
@@ -109,7 +109,7 @@ jobs:
   job_build_toolchain:
     needs: job_init
     runs-on: ubuntu-latest
-    name: Build-OpenWrtToolChain-${{ matrix.platforms }}
+    name: Build-ToolChain-${{ matrix.platforms }}
     strategy:
       fail-fast: false
       matrix:
