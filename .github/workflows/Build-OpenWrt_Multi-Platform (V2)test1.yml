@@ -1,0 +1,799 @@
+#
+# Copyright (c) 2022-2023 SMALLPROGRAM <https://github.com/smallprogram/OpenWrtAction>
+#
+# This is free software, licensed under the MIT License.
+# See /LICENSE for more information.
+#
+# https://github.com/smallprogram/OpenWrtAction
+# Description: Build OpenWrt using GitHub Actions
+#
+
+name: Build-OpenWrt_Multi-Platform Test1 (V2)
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
+      is_display_detailed:
+        description: 'Whether to display detailed information about compilation'
+        required: false
+        default: 'false'
+      is_single_threaded:
+        description: 'Whether single-threaded compilation'
+        required: false
+        default: 'false'
+  # schedule:
+  #   - cron: 0 */8 * * *
+
+env:
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
+  FEEDS_CONF: feeds_config/custom.feeds.conf.default
+  DIY_P1_SH: diy_script/diy-part1.sh
+  DIY_P2_SH: diy_script/diy-part2.sh
+  COMMIT_LOG_NUM: 5
+  UPLOAD_BIN_DIR: false
+  UPLOAD_FIRMWARE: true
+  UPLOAD_ARTIFACT: false
+  UPLOAD_RELEASE: true
+  TZ: Asia/Shanghai
+
+jobs:
+  job_init: 
+    runs-on: ubuntu-latest
+    outputs:
+      output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
+    steps:
+      - id: gen_release_tag
+        run: |
+          echo "release_tag=multi-platform_$(date +"%Y.%m.%d_%H%M")" >> $GITHUB_OUTPUT
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown $USER:$GROUPS /workdir
+
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 0
+
+      - name: Clone source code
+        working-directory: /workdir
+        run: |
+          git clone $REPO_URL -b $REPO_BRANCH openwrt
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+
+      - name: Load custom feeds
+        run: |
+          [ -e $FEEDS_CONF ] && cp -r $FEEDS_CONF openwrt/feeds.conf.default
+          chmod +x $DIY_P1_SH
+          cd openwrt
+          $GITHUB_WORKSPACE/$DIY_P1_SH
+
+      - name: Update feeds
+        run: cd openwrt && ./scripts/feeds update -a
+
+      - name: Install feeds
+        run: cd openwrt && ./scripts/feeds install -a
+
+      - name: Make defconfig custom configuration
+        run: |
+          chmod +x $DIY_P2_SH
+          cd openwrt
+          $GITHUB_WORKSPACE/$DIY_P2_SH
+          
+          cd ..
+          platforms=("X86" "R5S" "R4S" "R2S" "R2C" "Pi4_Model_B")
+          for i in "${platforms[@]}"; do
+            [ -e config/$i.config ] && cp -r config/$i.config openwrt/.config
+            cd openwrt
+            make defconfig
+            cd ..
+            cp -f openwrt/.config config/$i.config
+          done
+
+      - name: Git auto update config
+        uses: stefanzweifel/git-auto-commit-action@v4.16.0
+        id: commit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          commit_message: auto update config
+          branch: main
+          commit_author: smallprogram <smallprogram@foxmail.com>
+
+
+  job_build_toolchain:
+    needs: job_init
+    runs-on: ubuntu-latest
+    name: Build-OpenWrtToolChain-${{ matrix.platforms }}
+    strategy:
+      fail-fast: false
+      matrix:
+        platforms: [X86, R5S, R4S, R2S, R2C, Pi4_Model_B]
+
+    steps:
+      - name: Initialization Environment
+        run: |
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown $USER:$GROUPS /workdir
+          df -hT
+  
+      - name: Maximize Build Space
+        uses: easimon/maximize-build-space@master
+        with:
+          root-reserve-mb: 2048
+          swap-size-mb: 1024
+          remove-dotnet: 'true'
+          remove-android: 'true'
+          remove-haskell: 'true'
+          build-mount-path: '/workdir'
+
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 0
+
+      - name: Install Packages
+        env:
+          DEBIAN_FRONTEND: noninteractive
+        run: |
+          sudo -E apt-get -qq update
+          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends)
+          sudo -E apt-get -qq autoremove --purge
+          sudo -E apt-get -qq clean
+          sudo timedatectl set-timezone "$TZ"
+          df -hT
+
+      - name: Clone Source Code
+        working-directory: /workdir
+        run: |
+          df -hT
+          git clone $REPO_URL -b $REPO_BRANCH openwrt
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+          df -hT
+
+      - name: Initialization Directory
+        working-directory: /workdir
+        id: init_directory
+        run: |
+          sudo mkdir -p output
+          sudo mkdir -p toolchain
+          sudo chown $USER:$GROUPS /workdir/output
+          sudo chown $USER:$GROUPS /workdir/toolchain
+          ln -sf /workdir/output $GITHUB_WORKSPACE/output
+          ln -sf /workdir/toolchain $GITHUB_WORKSPACE/toolchain
+
+          cd openwrt
+          mkdir -p compile_log
+          cd compile_log
+          echo "LOGFILES=$PWD" >> $GITHUB_ENV
+
+      - name: Load Custom Feeds
+        run: |
+          [ -e $FEEDS_CONF ] && cp -r $FEEDS_CONF openwrt/feeds.conf.default
+          chmod +x $DIY_P1_SH
+          cd openwrt
+          ./scripts/feeds clean
+          $GITHUB_WORKSPACE/$DIY_P1_SH
+
+      - name: Update Feeds
+        run: cd openwrt && ./scripts/feeds update -a
+
+      - name: Install Feeds
+        run: cd openwrt && ./scripts/feeds install -a
+
+      - name: Load Configuration
+        run: |
+          [ -e config/${{ matrix.platforms }}.config ] && cp -r config/${{ matrix.platforms }}.config openwrt/.config
+          chmod +x $DIY_P2_SH
+          cd openwrt
+          $GITHUB_WORKSPACE/$DIY_P2_SH
+          # echo -e "\nCONFIG_ALL=y" >> .config
+          # echo -e "\nCONFIG_ALL_NONSHARED=y" >> .config
+          make defconfig > /dev/null 2>&1
+          echo "config file info......................................"
+          cat .config
+      
+      - name: SSH connection to Actions
+        uses: mxschmitt/action-tmate@v3.16
+        if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
+
+      - name: Compile Tools
+        id: compile_tools
+        run: |
+          cd openwrt
+          rm -rf compile_log/*
+
+          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile tools"
+                make tools/compile -j1 V=s | tee -a compile_log/log_${{ matrix.platforms }}_1_compile_tools.log
+            else
+                echo "$(nproc) threads compile tools"
+                make tools/compile -j$(nproc) V=s | tee -a compile_log/log_${{ matrix.platforms }}_1_compile_tools.log
+            fi
+          else
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile tools"
+                make tools/compile -j1 | tee -a compile_log/log_${{ matrix.platforms }}_1_compile_tools.log
+            else
+                echo "$(nproc) threads compile tools"
+                make tools/compile -j$(nproc) | tee -a compile_log/log_${{ matrix.platforms }}_1_compile_tools.log
+            fi
+          fi
+
+
+          df -hT
+          
+          echo "status=success" >> $GITHUB_OUTPUT
+
+      - name: Upload Log
+        uses: softprops/action-gh-release@v0.1.15
+        if: steps.compile_tools.outcome=='failure' || steps.compile_tools.outcome=='cancelled'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+          files: ${{ env.LOGFILES }}/*
+
+      - name: Compile Toolchain
+        if: steps.compile_tools.outputs.status == 'success'
+        id: compile_toolchain
+        run: |
+          cd openwrt
+          rm -rf compile_log/*
+          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile toolchain"
+                make toolchain/compile -j1 V=s | tee -a compile_log/log_${{ matrix.platforms }}_2_compile_toolchain.log
+            else
+                echo "$(nproc) threads compile toolchain"
+                make toolchain/compile -j$(nproc) V=s | tee -a compile_log/log_${{ matrix.platforms }}_2_compile_toolchain.log
+            fi
+          else
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile toolchain"
+                make toolchain/compile -j1 | tee -a compile_log/log_${{ matrix.platforms }}_2_compile_toolchain.log
+            else
+                echo "$(nproc) threads compile toolchain"
+                make toolchain/compile -j$(nproc) | tee -a compile_log/log_${{ matrix.platforms }}_2_compile_toolchain.log
+            fi
+          fi
+
+          
+          rm -rf .config* dl bin
+          df -hT
+          echo "status=success" >> $GITHUB_OUTPUT
+
+      - name: Upload Log
+        uses: softprops/action-gh-release@v0.1.15
+        if: steps.compile_toolchain.outcome=='failure' || steps.compile_toolchain.outcome=='cancelled'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+          files: ${{ env.LOGFILES }}/*
+
+      - name: Generate Toolchain Image
+        if: steps.compile_toolchain.outputs.status == 'success'
+        id: generate_image
+        run: |
+          cd $GITHUB_WORKSPACE/toolchain
+          rm -rf ../openwrt/compile_log
+          echo "before mksquashfs..........."
+          df -hT
+          mksquashfs ../openwrt/ TOOLCHAIN_IMAGE_${{ matrix.platforms }} -force-gid 1001 -force-uid 1001 -comp zstd
+          echo "after mksquashfs..........."
+          df -hT
+          split -d -b 1900M TOOLCHAIN_IMAGE_${{ matrix.platforms }} $GITHUB_WORKSPACE/output/TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img.
+          echo "after split..........."
+          df -hT
+          rm TOOLCHAIN_IMAGE_${{ matrix.platforms }}
+          df -hT
+          cd $GITHUB_WORKSPACE/output
+
+          echo "FIRMWARE=$PWD" >> $GITHUB_ENV
+
+          echo "status=success" >> $GITHUB_OUTPUT
+
+      - name: Upload Toolchain to release
+        uses: softprops/action-gh-release@v0.1.15
+        if: steps.generate_image.outputs.status == 'success'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+          files: ${{ env.FIRMWARE }}/*
+
+
+
+  job_build:
+    needs: [job_init, job_build_toolchain]
+    runs-on: ubuntu-latest
+    name: Build-OpenWrt-${{ matrix.platforms }}
+    strategy:
+      fail-fast: false
+      matrix:
+        platforms: [X86, R5S, R4S, R2S, R2C, Pi4_Model_B]
+
+
+
+    steps:
+    - name: Initialization Environment
+      run: |
+        sudo timedatectl set-timezone "$TZ"
+        sudo mkdir -p /workdir
+        sudo chown $USER:$GROUPS /workdir
+        df -hT
+
+    - name: Maximize Build Space
+      uses: easimon/maximize-build-space@master
+      with:
+        root-reserve-mb: 2048
+        swap-size-mb: 1024
+        remove-dotnet: 'true'
+        remove-android: 'true'
+        remove-haskell: 'true'
+        build-mount-path: '/workdir'
+
+    - name: Checkout
+      uses: actions/checkout@main
+      with:
+        fetch-depth: 0
+
+    - name: Install Packages
+      env:
+        DEBIAN_FRONTEND: noninteractive
+      run: |
+        echo "install packages!!!!!!"
+        sudo -E apt-get -qq update
+        sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends)
+        sudo -E apt-get -qq autoremove --purge
+        sudo -E apt-get -qq clean
+        sudo timedatectl set-timezone "$TZ"
+        df -hT
+
+    - name: Initialization Directory
+      working-directory: /workdir
+      run: |
+        sudo mkdir -p openwrt
+        sudo mkdir -p download
+        sudo chown $USER:$GROUPS /workdir/openwrt
+        sudo chown $USER:$GROUPS /workdir/download
+
+        ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+        ln -sf /workdir/download $GITHUB_WORKSPACE/download
+
+    - name: Download Toolchain Image From Releases
+      id : download
+      run: |
+
+        echo "ls......."
+        ls
+        echo "before download......."
+        df -hT
+        
+        cd $GITHUB_WORKSPACE/download
+        
+
+        for i in {0..9}
+        do
+          curl -fsL https://github.com/$GITHUB_REPOSITORY/releases/download/${{needs.job_init.outputs.output_release_tag}}/TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img.0$i >> TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img || break
+        done
+        echo "after download......."
+        df -hT
+        echo "ls download......."
+        ls
+
+        unsquashfs -d ../openwrt -f TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img
+        
+        rm -rf TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img
+        ls
+        df -hT
+
+        cd $GITHUB_WORKSPACE
+        ls
+
+        cd openwrt
+        mkdir -p compile_log
+        cd compile_log
+        echo "LOGFILES=$PWD" >> $GITHUB_ENV
+
+    - name: Load Custom Configuration
+      run: |
+        cd $GITHUB_WORKSPACE
+        [ -e files ] && cp -r files openwrt/files
+        [ -e config/${{ matrix.platforms }}.config ] && cp -r config/${{ matrix.platforms }}.config openwrt/.config
+        cd openwrt
+        make defconfig
+
+
+    - name: SSH connection to Actions
+      uses: mxschmitt/action-tmate@v3.16
+      if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
+
+    - name: Download Package
+      id: package
+      run: |
+        df -hT
+        mkdir -p $GITHUB_WORKSPACE/openwrt/dl
+        cp -r $GITHUB_WORKSPACE/library/* $GITHUB_WORKSPACE/openwrt/dl
+        cd $GITHUB_WORKSPACE/openwrt
+        # echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config
+        make download -j8
+        find dl -size -1024c -exec ls -l {} \;
+        find dl -size -1024c -exec rm -f {} \;
+        df -hT
+
+    # - name: Compile Buildinfo
+    #   id: compile_buildinfo
+    #   run: |
+    #     cd openwrt
+
+    #     echo "compile buildinfo diffconfig buildversion feedsversion"
+    #     make buildinfo
+    #     make diffconfig buildversion feedsversion
+
+    #     echo "status=success" >> $GITHUB_OUTPUT
+    #     df -hT
+
+    # - name: Compile Target
+    #   if: steps.compile_buildinfo.outputs.status == 'success'
+    #   id: compile_target
+    #   run: |
+    #     cd openwrt
+    #     rm -rf compile_log/*
+    #     if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+    #       if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+    #           echo "1 threads compile target"
+    #           make target/compile -j1 V=s IGNORE_ERRORS="m n"  | tee -a compile_log/log_${{ matrix.platforms }}_3_compile_target.log
+    #       else
+    #           echo "$(nproc) threads compile target"
+    #           make target/compile -j$(nproc) V=s IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_3_compile_target.log
+    #       fi
+    #     else
+    #       if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+    #           echo "1 threads compile target"
+    #           make target/compile -j1 IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_3_compile_target.log
+    #       else
+    #           echo "$(nproc) threads compile target"
+    #           make target/compile -j$(nproc) IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_3_compile_target.log
+    #       fi
+    #     fi        
+
+    #     echo "status=success" >> $GITHUB_OUTPUT
+    #     df -hT
+  
+    # - name: Upload Log
+    #   uses: softprops/action-gh-release@v0.1.15
+    #   if: steps.compile_target.outcome=='failure' || steps.compile_target.outcome=='cancelled'
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+    #     files: ${{ env.LOGFILES }}/*
+          
+    # - name: Compile Packages
+    #   if: steps.compile_target.outputs.status == 'success'
+    #   id: compile_pacages
+    #   run: |
+    #     cd openwrt
+    #     rm -rf compile_log/*
+    #     if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+    #       if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+    #           echo "1 threads compile packages"
+    #           make package/compile -j1 V=s IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_4_compile_pacages.log
+    #       else
+    #           echo "$(nproc) threads compile packages"
+    #           make package/compile -j$(nproc) V=s IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_4_compile_pacages.log
+    #       fi
+    #     else
+    #       if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+    #           echo "1 threads compile packages"
+    #           make package/compile -j1 IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_4_compile_pacages.log
+    #       else
+    #           echo "$(nproc) threads compile packages"
+    #           make package/compile -j$(nproc) IGNORE_ERRORS="m n" | tee -a compile_log/log_${{ matrix.platforms }}_4_compile_pacages.log
+    #       fi
+    #     fi  
+
+
+    #     echo -e "compile package/index..............."
+    #     make package/index
+    #     echo "status=success" >> $GITHUB_OUTPUT
+    #     df -hT
+
+    # - name: Upload Log
+    #   uses: softprops/action-gh-release@v0.1.15
+    #   if: steps.compile_pacages.outcome=='failure' || steps.compile_pacages.outcome=='cancelled'
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+    #     files: ${{ env.LOGFILES }}/*
+          
+          
+    # - name: Install Packages
+    #   if: steps.compile_pacages.outputs.status == 'success'
+    #   id: install_packages
+    #   run: |
+    #     cd openwrt
+    #     rm -rf compile_log/*
+    #     if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+    #       if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+    #           echo "1 threads install packages"
+    #           make package/install -j1 V=s | tee -a compile_log/log_${{ matrix.platforms }}_5_install_pacages.log
+    #       else
+    #           echo "$(nproc) threads install packages"
+    #           make package/install -j$(nproc) V=s | tee -a compile_log/log_${{ matrix.platforms }}_5_install_pacages.log
+    #       fi
+    #     else
+    #       if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+    #           echo "1 threads install packages"
+    #           make package/install -j1 | tee -a compile_log/log_${{ matrix.platforms }}_5_install_pacages.log
+    #       else
+    #           echo "$(nproc) threads install packages"
+    #           make package/install -j$(nproc) | tee -a compile_log/log_${{ matrix.platforms }}_5_install_pacages.log
+    #       fi
+    #     fi
+
+    #     echo "status=success" >> $GITHUB_OUTPUT
+    #     df -hT
+
+    # - name: Upload Log
+    #   uses: softprops/action-gh-release@v0.1.15
+    #   if: steps.install_packages.outcome=='failure' || steps.install_packages.outcome=='cancelled'
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+    #     files: ${{ env.LOGFILES }}/*
+
+    # - name: Install Target
+    #   if: steps.install_packages.outputs.status == 'success'
+    #   id: install_target
+    #   run: |
+    #     cd openwrt
+    #     rm -rf compile_log/*
+    #     if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+    #       if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+    #           echo "1 threads install target"
+    #           make target/install -j1 V=s | tee -a compile_log/log_${{ matrix.platforms }}_6_install_target.log
+    #       else
+    #           echo "$(nproc) threads install target"
+    #           make target/install -j$(nproc) V=s | tee -a compile_log/log_${{ matrix.platforms }}_6_install_target.log
+    #       fi
+    #     else
+    #       if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+    #           echo "1 threads install target"
+    #           make target/install -j1 | tee -a compile_log/log_${{ matrix.platforms }}_6_install_target.log
+    #       else
+    #           echo "$(nproc) threads install target"
+    #           make target/install -j$(nproc) | tee -a compile_log/log_${{ matrix.platforms }}_6_install_target.log
+    #       fi
+    #     fi
+
+    #     echo "status=success" >> $GITHUB_OUTPUT
+    #     df -hT
+
+    # - name: Upload Log
+    #   uses: softprops/action-gh-release@v0.1.15
+    #   if: steps.install_target.outcome=='failure' || steps.install_target.outcome=='cancelled'
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+    #     files: ${{ env.LOGFILES }}/*
+
+    - name: Generate Frimware
+      id: compile
+      run: |
+        cd openwrt
+        rm -rf compile_log/*
+        if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+          if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+              echo "1 threads compile frimware"
+              make -j1 V=s | tee -a compile_log/log_${{ matrix.platforms }}_6_generate_frimware.log
+          else
+              echo "$(nproc) threads compile frimware"
+              make -j$(nproc) V=s | tee -a compile_log/log_${{ matrix.platforms }}_6_generate_frimware.log
+          fi
+        else
+          if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+              echo "1 threads compile frimware"
+              make -j1 | tee -a compile_log/log_${{ matrix.platforms }}_6_generate_frimware.log
+          else
+              echo "$(nproc) threads compile frimware"
+              make -j$(nproc) | tee -a compile_log/log_${{ matrix.platforms }}_6_generate_frimware.log
+          fi
+        fi
+        echo "status=success" >> $GITHUB_OUTPUT
+        grep '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/' > DEVICE_NAME
+        [ -s DEVICE_NAME ] && echo "DEVICE_NAME=_$(cat DEVICE_NAME)" >> $GITHUB_ENV
+        echo "FILE_DATE=_$(date +"%Y%m%d%H%M")" >> $GITHUB_ENV
+        df -hT
+
+    - name: Upload Log
+      uses: softprops/action-gh-release@v0.1.15
+      if: steps.compile.outcome=='failure' || steps.compile.outcome=='cancelled'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+        files: ${{ env.LOGFILES }}/*
+
+
+    - name: Remove Unuselesss Files
+      id: removeunuselessfiles
+      run: |
+        df -hT
+        rm -rf  $GITHUB_WORKSPACE/openwrt/build_dir
+        rm -rf  $GITHUB_WORKSPACE/openwrt/dl
+        rm -rf  $GITHUB_WORKSPACE/openwrt/staging_dir
+        rm -rf  $GITHUB_WORKSPACE/openwrt/toolchain
+        rm -rf  $GITHUB_WORKSPACE/openwrt/tools
+
+    - name: Check Space Usage
+      if: (!cancelled())
+      run: df -hT
+
+    - name: Upload Bin Directory
+      uses: actions/upload-artifact@main
+      if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
+      with:
+        name: OpenWrt_bin${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        path: openwrt/bin
+
+    - name: Organize Files
+      id: organize
+      if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
+      run: |
+        root_path=$PWD
+
+        cd $root_path/openwrt/bin/targets/*/*
+        firmware_path=$PWD
+
+        # cd $root_path/openwrt/bin/packages/*/
+        # packages_path=$PWD
+        # cd $packages_path
+        # zip -r $firmware_path/packages_${{ matrix.platforms }}.zip ./
+
+        cd $firmware_path
+        rm -rf packages
+        mv sha256sums sha256sums_${{ matrix.platforms }}
+        mv version.buildinfo version_${{ matrix.platforms }}.buildinfo
+        mv config.buildinfo config_${{ matrix.platforms }}.buildinfo
+        mv feeds.buildinfo feeds_${{ matrix.platforms }}.buildinfo
+
+        echo "FIRMWARE=$firmware_path" >> $GITHUB_ENV
+        echo "status=success" >> $GITHUB_OUTPUT
+
+    - name: Upload Firmware Directory
+      uses: actions/upload-artifact@main
+      if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && !cancelled()
+      with:
+        name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        path: ${{ env.FIRMWARE }}
+
+    - name: Generate Release Tag
+      id: tag
+      if: steps.compile.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
+      run: |
+
+        echo "## :mega:Update content" >> release.txt
+
+        echo "![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/${{needs.job_init.outputs.output_release_tag}}/total?style=flat-square)" >> release.txt
+
+        echo "### Firmware Information" >> release.txt
+
+        echo "**:loudspeaker:Cancel the ext4 format and only keep the squashfs format.**" >> release.txt
+        echo "**:computer:Including traditional IMG format firmware and UEFI boot firmware.**" >> release.txt
+        echo "**:cd:Including qcow2 format firmware and UEFI boot firmware supporting pve virtual machine.**" >> release.txt
+        echo "**:cd:Including vdi format firmware and UEFI boot firmware supporting Visual Box virtual machine.**" >> release.txt
+        echo "**:cd:Including vhdx format firmware and UEFI boot firmware supporting Hyper-v virtual machines.**" >> release.txt
+        echo "**:dvd:Including vmdk format firmware and UEFI boot firmware that support ESXi virtual machines (8.0 requires tool conversion).**" >> release.txt
+        echo "" >> release.txt
+
+        echo "### Openwrt Information" >> release.txt
+
+        echo "**:minidisc: OpenWrt Version: $(sed -n '51s/^.*DISTRIB_REVISION='\''\([^'\'']*\)'\''.*$/\1/p' $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/files/zzz-default-settings)**" >> release.txt
+        echo "**:gear: Default-Setting Version: $(sed -n '10s/PKG_VERSION:=\([0-9]*\).*/\1/p; 11s/PKG_RELEASE:=\([0-9]*\).*/\1/p' $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/Makefile | tr '\n' '.' | sed 's/.$//' && echo)**" >> release.txt
+
+        echo "### Kernel Information" >> release.txt
+
+        kernel_X86=$(sed -n '13p' $GITHUB_WORKSPACE/openwrt/target/linux/x86/Makefile | awk -F '=' '{print $2}')
+        kernel_R5S=$(sed -n '10p' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile | awk -F '=' '{print $2}')
+        kernel_R4S=$(sed -n '10p' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile | awk -F '=' '{print $2}')
+        kernel_R2S=$(sed -n '10p' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile | awk -F '=' '{print $2}')
+        kernel_R2C=$(sed -n '10p' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile | awk -F '=' '{print $2}')
+        kernel_Pi4ModelB=$(sed -n '14p' $GITHUB_WORKSPACE/openwrt/target/linux/bcm27xx/Makefile | awk -F '=' '{print $2}')
+
+        echo "**:ice_cube: X86 kernel: $(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_X86} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**" >> release.txt
+        echo "**:ice_cube: R5S kernel: $(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_R5S} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**" >> release.txt
+        echo "**:ice_cube: R4S kernel: $(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_R4S} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**" >> release.txt
+        echo "**:ice_cube: R2S kernel: $(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_R2S} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**" >> release.txt
+        echo "**:ice_cube: R2C kernel: $(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_R2C} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**" >> release.txt
+        echo "**:ice_cube: Pi4ModelB kernel: $(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_Pi4ModelB} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**" >> release.txt
+
+
+
+        echo "## What's Changed" >> release.txt
+
+        echo "<details> <summary> Lean Openwrt Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        git -C openwrt log -n $COMMIT_LOG_NUM >> release.txt
+
+        echo "</details> <details> <summary> Lean Package Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        git -C openwrt/feeds/packages log -n $COMMIT_LOG_NUM >> release.txt
+
+        echo "</details> <details> <summary> Lean Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        git -C openwrt/feeds/luci log -n $COMMIT_LOG_NUM >> release.txt
+
+        echo "</details> <details> <summary> Openwrt routing Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        git -C openwrt/feeds/routing log -n $COMMIT_LOG_NUM >> release.txt
+
+        echo "</details> <details> <summary> Openwrt telephony Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        git -C openwrt/feeds/telephony log -n $COMMIT_LOG_NUM >> release.txt
+
+        echo "</details> <details> <summary> SSRP Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        git -C openwrt/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
+
+        echo "</details> <details> <summary> Passwall Packages Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        git -C openwrt/feeds/passwall_packages log -n $COMMIT_LOG_NUM >> release.txt
+
+        echo "</details> <details> <summary> Passwall Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        git -C openwrt/feeds/passwall_luci log -n $COMMIT_LOG_NUM >> release.txt
+
+        echo "</details> <details> <summary> Passwall2 Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        git -C openwrt/feeds/passwall2 log -n $COMMIT_LOG_NUM >> release.txt
+
+        echo "</details> <details> <summary> OpenClash Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        git -C openwrt/feeds/OpenClash log -n $COMMIT_LOG_NUM >> release.txt
+
+        # echo "</details> <details> <summary> DockerMan Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        # git -C openwrt/package/lean/luci-app-dockerman log -n $COMMIT_LOG_NUM >> release.txt
+
+        # echo "</details> <details> <summary> ThemeArgon Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        # git -C openwrt/package/lean/luci-theme-argon log -n $COMMIT_LOG_NUM >> release.txt
+
+        # echo "</details> <details> <summary> ArgonConfig Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        # git -C openwrt/package/lean/luci-app-argon-config log -n $COMMIT_LOG_NUM >> release.txt
+
+        touch release.txt
+        echo "status=success" >> $GITHUB_OUTPUT
+
+    - name: Upload Firmware To Release
+      uses: softprops/action-gh-release@v0.1.15
+      if: steps.tag.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+        body_path: release.txt
+        files: ${{ env.FIRMWARE }}/*
+
+
+    # - name: Generate commit
+    #   id: Gen_commit
+    #   run: |
+    #     sed -i 's/\(${{ env.RELEASE_TAG }}:\).*\(|\)/\${{ env.RELEASE_TAG }}: [![](https:\/\/img.shields.io\/badge\/LatestRelease-${{ steps.tag.outputs.release_tag }}-green?style=flat-square)](https:\/\/github.com\/smallprogram\/OpenWrtAction\/releases\/tag\/${{ steps.tag.outputs.release_tag }})\2/' docs/README.md
+    #     sed -i 's/\(${{ env.RELEASE_TAG }}:\).*\(|\)/\${{ env.RELEASE_TAG }}: [![](https:\/\/img.shields.io\/badge\/LatestRelease-${{ steps.tag.outputs.release_tag }}-green?style=flat-square)](https:\/\/github.com\/smallprogram\/OpenWrtAction\/releases\/tag\/${{ steps.tag.outputs.release_tag }})\2/' docs/README_EN.md
+    #     rm -rf release.txt
+    #     echo "status=success" >> $GITHUB_OUTPUT
+
+    # - name: Git Auto Commit
+    #   uses: stefanzweifel/git-auto-commit-action@v4.16.0
+    #   id: commit
+    #   if: steps.Gen_commit.outputs.status == 'success' && !cancelled()
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     commit_message: New Release Automated Change ${{ steps.tag.outputs.release_tag }}
+    #     branch: main   
+
+
+       
