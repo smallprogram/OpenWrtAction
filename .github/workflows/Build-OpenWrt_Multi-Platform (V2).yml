@@ -279,7 +279,7 @@ jobs:
           fi
 
           
-          rm -rf .config* dl bin
+          # rm -rf .config* dl bin
           df -hT
           echo "status=success" >> $GITHUB_OUTPUT
 

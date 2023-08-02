@@ -37,7 +37,7 @@ if [ ! -d "./package/lean/luci-app-adguardhome" ]; then git clone https://github
 # sed -i 's/echo $h/echo $g/g' package/lean/autocore/files/x86/autocore
 
 #关闭串口跑码
-sed -i 's/console=tty0//g'  target/linux/x86/image/Makefile
+# sed -i 's/console=tty0//g'  target/linux/x86/image/Makefile
 
 #添加默认登录背景
 rm -rf ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
