@@ -251,6 +251,14 @@ function Func_Compile_Firmware() {
     cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/${log_after_defconfig_config}
     diff  /home/${userName}/${log_folder_name}/${folder_name}/${log_before_defconfig_config} /home/${userName}/${log_folder_name}/${folder_name}/${log_after_defconfig_config} -y -W 200 > /home/${userName}/${log_folder_name}/${folder_name}/${log_diff_config}
 
+
+    Func_LogMessage "\033[34m 开始执行make download! \033[0m" "\033[34m Start to execute make download! \033[0m"
+    sleep 1s
+    make -j8 download | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_make_down_filename}
+    find dl -size -1024c -exec ls -l {} \;
+    find dl -size -1024c -exec rm -f {} \;
+
+
     echo
     Func_LogMessage "\033[31m 开始make tools. \033[0m" "\033[31m Begin make tools \033[0m"
     sleep 2s
@@ -341,14 +349,6 @@ function Func_Compile_Firmware() {
     check_compile_error "$is_complie_error" "make toolchain"
 
     # rm -rf .config* dl bin
-
-    Func_LogMessage "\033[34m 开始执行make download! \033[0m" "\033[34m Start to execute make download! \033[0m"
-    sleep 1s
-    make -j8 download | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_make_down_filename}
-    find dl -size -1024c -exec ls -l {} \;
-    find dl -size -1024c -exec rm -f {} \;
-
-    
 
     # make buildinfo
     # make diffconfig buildversion feedsversion
