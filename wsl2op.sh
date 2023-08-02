@@ -239,9 +239,17 @@ function Func_Compile_Firmware() {
     sleep 2s
     echo
     cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
-    echo -e "\nCONFIG_ALL=y" >> .config
-    echo -e "\nCONFIG_ALL_NONSHARED=y" >> .config
-    make defconfig > /dev/null 2>&1
+
+    cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/${log_before_defconfig_config}
+    # echo -e "\nCONFIG_ALL=y" >> .config
+    # echo -e "\nCONFIG_ALL_NONSHARED=y" >> .config
+
+    Func_LogMessage "\033[34m 开始执行make defconfig! \033[0m" "\033[34m Start to execute make defconfig! \033[0m"
+    sleep 1s
+    make defconfig | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_make_defconfig_filename}
+
+    cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/${log_after_defconfig_config}
+    diff  /home/${userName}/${log_folder_name}/${folder_name}/${log_before_defconfig_config} /home/${userName}/${log_folder_name}/${folder_name}/${log_after_defconfig_config} -y -W 200 > /home/${userName}/${log_folder_name}/${folder_name}/${log_diff_config}
 
     echo
     Func_LogMessage "\033[31m 开始make tools. \033[0m" "\033[31m Begin make tools \033[0m"
@@ -332,34 +340,7 @@ function Func_Compile_Firmware() {
 
     check_compile_error "$is_complie_error" "make toolchain"
 
-    rm -rf .config* dl bin
-
-
-    echo
-    Func_LogMessage "\033[31m 开始将OpenwrtAction中config文件夹下的${configName}注入lean源码中.... \033[0m" "\033[31m Start to inject ${configName} under the config folder in OpenwrtAction into lean source code... \033[0m"
-    sleep 2s
-    echo
-    cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
-    cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/${log_before_defconfig_config}
-
-
-    # if [[ $isFirstCompile == 1 ]]; then
-    #     echo -e  "\033[34m 由于你是首次编译，需要make menuconfig配置，如果保持原有config不做更改，请在进入菜单后直接exit即可 \033[0m"
-    #     sleep 6s
-    #     make menuconfig
-    # fi
-    # if [[ $isFirstCompile == 0 ]]; then
-    #     echo -e  "\033[34m 开始执行make defconfig! \033[0m"
-    #     make defconfig | tee -a /home/${userName}/${log_folder_name}/${folder_name}/Func_Main1_make_defconfig-git_log.log
-
-    # fi
-
-    Func_LogMessage "\033[34m 开始执行make defconfig! \033[0m" "\033[34m Start to execute make defconfig! \033[0m"
-    sleep 1s
-    make defconfig | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_make_defconfig_filename}
-    cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/${log_after_defconfig_config}
-
-    diff  /home/${userName}/${log_folder_name}/${folder_name}/${log_before_defconfig_config} /home/${userName}/${log_folder_name}/${folder_name}/${log_after_defconfig_config} -y -W 200 > /home/${userName}/${log_folder_name}/${folder_name}/${log_diff_config}
+    # rm -rf .config* dl bin
 
     Func_LogMessage "\033[34m 开始执行make download! \033[0m" "\033[34m Start to execute make download! \033[0m"
     sleep 1s
