@@ -245,14 +245,14 @@ jobs:
           
           echo "status=success" >> $GITHUB_OUTPUT
 
-      - name: Upload Log
-        uses: softprops/action-gh-release@v0.1.15
-        if: steps.compile_tools.outcome=='failure' || steps.compile_tools.outcome=='cancelled'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
-          files: ${{ env.LOGFILES }}/*
+      # - name: Upload Log
+      #   uses: softprops/action-gh-release@v0.1.15
+      #   if: steps.compile_tools.outcome=='failure' || steps.compile_tools.outcome=='cancelled'
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+      #     files: ${{ env.LOGFILES }}/*
 
       - name: Compile Toolchain
         if: steps.compile_tools.outputs.status == 'success'
@@ -283,46 +283,62 @@ jobs:
           df -hT
           echo "status=success" >> $GITHUB_OUTPUT
 
-      - name: Upload Log
-        uses: softprops/action-gh-release@v0.1.15
-        if: steps.compile_toolchain.outcome=='failure' || steps.compile_toolchain.outcome=='cancelled'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
-          files: ${{ env.LOGFILES }}/*
+      # - name: Upload Log
+      #   uses: softprops/action-gh-release@v0.1.15
+      #   if: steps.compile_toolchain.outcome=='failure' || steps.compile_toolchain.outcome=='cancelled'
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+      #     files: ${{ env.LOGFILES }}/*
+
+      # - name: Generate Toolchain Image
+      #   if: steps.compile_toolchain.outputs.status == 'success'
+      #   id: generate_image
+      #   run: |
+      #     cd $GITHUB_WORKSPACE/toolchain
+      #     rm -rf ../openwrt/compile_log
+      #     echo "before mksquashfs..........."
+      #     df -hT
+      #     mksquashfs ../openwrt/ TOOLCHAIN_IMAGE_${{ matrix.platforms }} -force-gid 1001 -force-uid 1001 -comp zstd
+      #     echo "after mksquashfs..........."
+      #     df -hT
+      #     split -d -b 1900M TOOLCHAIN_IMAGE_${{ matrix.platforms }} $GITHUB_WORKSPACE/output/TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img.
+      #     echo "after split..........."
+      #     df -hT
+      #     rm TOOLCHAIN_IMAGE_${{ matrix.platforms }}
+      #     df -hT
+      #     cd $GITHUB_WORKSPACE/output
+
+      #     echo "FIRMWARE=$PWD" >> $GITHUB_ENV
+
+      #     echo "status=success" >> $GITHUB_OUTPUT
+
+      # - name: Upload Toolchain to release
+      #   uses: softprops/action-gh-release@v0.1.15
+      #   if: steps.generate_image.outputs.status == 'success'
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+      #     files: ${{ env.FIRMWARE }}/*
 
       - name: Generate Toolchain Image
         if: steps.compile_toolchain.outputs.status == 'success'
         id: generate_image
         run: |
-          cd $GITHUB_WORKSPACE/toolchain
-          rm -rf ../openwrt/compile_log
-          echo "before mksquashfs..........."
-          df -hT
-          mksquashfs ../openwrt/ TOOLCHAIN_IMAGE_${{ matrix.platforms }} -force-gid 1001 -force-uid 1001 -comp zstd
-          echo "after mksquashfs..........."
-          df -hT
-          split -d -b 1900M TOOLCHAIN_IMAGE_${{ matrix.platforms }} $GITHUB_WORKSPACE/output/TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img.
-          echo "after split..........."
-          df -hT
-          rm TOOLCHAIN_IMAGE_${{ matrix.platforms }}
-          df -hT
-          cd $GITHUB_WORKSPACE/output
-
-          echo "FIRMWARE=$PWD" >> $GITHUB_ENV
-
+          cd $GITHUB_WORKSPACE
+          rm -rf openwrt/compile_log/*
+          tar -czf output/output.tar.gz openwrt/
           echo "status=success" >> $GITHUB_OUTPUT
 
-      - name: Upload Toolchain to release
-        uses: softprops/action-gh-release@v0.1.15
+      - name: Upload Toolchain to artifact
+        uses: actions/upload-artifact@v3
         if: steps.generate_image.outputs.status == 'success'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
-          files: ${{ env.FIRMWARE }}/*
-
+          name: TOOLCHAIN_IMAGE_${{ matrix.platforms }}
+          path: output/output.tar
+          retention-days: 5
 
 
   job_build:
@@ -382,34 +398,48 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         ln -sf /workdir/download $GITHUB_WORKSPACE/download
 
-    - name: Download Toolchain Image From Releases
+    # - name: Download Toolchain Image From Releases
+    #   id : download
+    #   run: |
+    #     echo "before download space......."
+    #     df -hT
+        
+    #     cd $GITHUB_WORKSPACE/download
+        
+
+    #     for i in {0..9}
+    #     do
+    #       curl -fsL https://github.com/$GITHUB_REPOSITORY/releases/download/${{needs.job_init.outputs.output_release_tag}}/TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img.0$i >> TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img || break
+    #     done
+    #     echo
+    #     echo "after download space......."
+    #     df -hT
+
+    #     unsquashfs -d ../openwrt -f TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img
+        
+    #     rm -rf TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img
+    #     echo
+    #     echo "after rm img space......."
+    #     df -hT
+
+    #     cd openwrt
+    #     mkdir -p compile_log
+    #     cd compile_log
+    #     echo "LOGFILES=$PWD" >> $GITHUB_ENV
+
+    - name: Download Toolchain From Artifacts
       id : download
+      uses: actions/download-artifact@v3
+      with:
+        name: TOOLCHAIN_IMAGE_${{ matrix.platforms }}
+        path: download
+
+    - name: File Extraction
       run: |
-        echo "before download space......."
-        df -hT
-        
-        cd $GITHUB_WORKSPACE/download
-        
+        cd $GITHUB_WORKSPACE
+        tar -xzf download/output.tar.gz
+        rm -rf download/*
 
-        for i in {0..9}
-        do
-          curl -fsL https://github.com/$GITHUB_REPOSITORY/releases/download/${{needs.job_init.outputs.output_release_tag}}/TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img.0$i >> TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img || break
-        done
-        echo
-        echo "after download space......."
-        df -hT
-
-        unsquashfs -d ../openwrt -f TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img
-        
-        rm -rf TOOLCHAIN_IMAGE_${{ matrix.platforms }}.img
-        echo
-        echo "after rm img space......."
-        df -hT
-
-        cd openwrt
-        mkdir -p compile_log
-        cd compile_log
-        echo "LOGFILES=$PWD" >> $GITHUB_ENV
 
     - name: SSH connection to Actions
       uses: mxschmitt/action-tmate@v3.16

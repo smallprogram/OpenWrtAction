@@ -256,7 +256,7 @@ jobs:
       uses: smallprogram/delete-older-releases@master
       with:
         keep_latest: 10
-        keep_min_download_counts: 19
+        keep_min_download_counts: 3
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
