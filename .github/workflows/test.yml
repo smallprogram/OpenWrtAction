@@ -44,12 +44,6 @@ jobs:
         cd openwrt
         git clone https://github.com/coolsnowwolf/lede openwrt1
         git clone https://github.com/coolsnowwolf/lede openwrt2
-        git clone https://github.com/coolsnowwolf/lede openwrt3
-        git clone https://github.com/coolsnowwolf/lede openwrt4
-        git clone https://github.com/coolsnowwolf/lede openwrt5
-        git clone https://github.com/coolsnowwolf/lede openwrt6
-        git clone https://github.com/coolsnowwolf/lede openwrt7
-        git clone https://github.com/coolsnowwolf/lede openwrt8
         cd ..
 
         du -sh $GITHUB_WORKSPACE
@@ -73,19 +67,19 @@ jobs:
     - name: aa
       run: |
         cd $GITHUB_WORKSPACE
-        mkdir openwrt
+        mkdir download
 
     - name: Download Toolchain Image From Artifacts
       uses: actions/download-artifact@v3
       with:
         name: test1
-        path: $GITHUB_WORKSPACE
+        path: download
 
     - name: bbls
       run: |
         cd $GITHUB_WORKSPACE
-        tar -xf output.tar -C $GITHUB_WORKSPACE
+        tar -xf download/output.tar -C $GITHUB_WORKSPACE
         du -sh $GITHUB_WORKSPACE
-        rm -rf output.tar
+        rm -rf download
         du -sh $GITHUB_WORKSPACE
         ls
