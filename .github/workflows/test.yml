@@ -36,4 +36,55 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Generate Toolchain Image
+      if: steps.compile_toolchain.outputs.status == 'success'
+      id: generate_image
+      run: |
+
+        mkdir openwrt
+        cd openwrt
+        dd if=/dev/zero of=outputfile bs=1G count=20
+        ls
+        cd ..
+
+        
+        mkdir toolchain
+        cd $GITHUB_WORKSPACE/toolchain
+
+        
+
+        echo "before mksquashfs..........."
+        df -hT
+        mksquashfs ../openwrt/ TOOLCHAIN_IMAGE -force-gid 1001 -force-uid 1001 -comp zstd
+        ls
+        echo "after mksquashfs..........."
+        df -hT
+        cd ..
+        mkdir output
+        split -d -b 1900M TOOLCHAIN_IMAGE $GITHUB_WORKSPACE/output/TOOLCHAIN_IMAGE.img.
+        echo "after split..........."
+        df -hT
+        cd output
+        ls
+        cd ..
+        cd toolchain
+        rm TOOLCHAIN_IMAGE
+        df -hT
+        cd ..
+        mkdir output
+        cd $GITHUB_WORKSPACE/output
+
+        echo "FIRMWARE=$PWD" >> $GITHUB_ENV
+
+        echo "status=success" >> $GITHUB_OUTPUT
+
+    - name: Upload Toolchain to release
+      uses: softprops/action-gh-release@v0.1.15
+      if: steps.generate_image.outputs.status == 'success'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: 'test'
+        files: ${{ env.FIRMWARE }}/*    
+
  
