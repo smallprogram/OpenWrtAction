@@ -60,9 +60,11 @@ jobs:
         df -hT
         cd ..
         mkdir output
+        cd $GITHUB_WORKSPACE/toolchain
         split -d -b 1900M TOOLCHAIN_IMAGE $GITHUB_WORKSPACE/output/TOOLCHAIN_IMAGE.img.
         echo "after split..........."
         df -hT
+        cd ..
         cd output
         ls
         cd ..
