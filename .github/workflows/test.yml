@@ -53,13 +53,10 @@ jobs:
 
         echo "status=success" >> $GITHUB_OUTPUT
 
-    - name: Upload Toolchain to release
-      uses: softprops/action-gh-release@v0.1.15
-      if: steps.generate_image.outputs.status == 'success'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Upload Firmware Directory
+      uses: actions/upload-artifact@main
       with:
-        tag_name: 'test'
-        files: ${{ env.FIRMWARE }}/*    
+        name: test
+        path: ${{ env.FIRMWARE }}
 
  
