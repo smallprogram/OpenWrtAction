@@ -40,23 +40,51 @@ jobs:
       id: generate_image
       run: |
 
-        mkdir output
+        git clone https://github.com/coolsnowwolf/lede openwrt
+        cd openwrt
+        git clone https://github.com/coolsnowwolf/lede openwrt1
+        git clone https://github.com/coolsnowwolf/lede openwrt2
+        git clone https://github.com/coolsnowwolf/lede openwrt3
+        git clone https://github.com/coolsnowwolf/lede openwrt4
+        git clone https://github.com/coolsnowwolf/lede openwrt5
+        git clone https://github.com/coolsnowwolf/lede openwrt6
+        git clone https://github.com/coolsnowwolf/lede openwrt7
+        git clone https://github.com/coolsnowwolf/lede openwrt8
+        cd ..
 
-        cd $GITHUB_WORKSPACE/output
-        dd if=/dev/zero of=outputfile.img.00 bs=1M count=1900
-        dd if=/dev/zero of=outputfile.img.01 bs=1M count=1900
-        dd if=/dev/zero of=outputfile.img.02 bs=1M count=1900
-        dd if=/dev/zero of=outputfile.img.03 bs=1M count=1900
-        dd if=/dev/zero of=outputfile.img.04 bs=1M count=1900
-        dd if=/dev/zero of=outputfile.img.05 bs=1M count=1900
-        echo "FIRMWARE=$PWD" >> $GITHUB_ENV
+        du -sh $GITHUB_WORKSPACE
 
-        echo "status=success" >> $GITHUB_OUTPUT
+        tar -cf output.tar openwrt/
 
+        ls
+        du -sh $GITHUB_WORKSPACE
+        
     - name: Upload Firmware Directory
-      uses: actions/upload-artifact@main
+      uses: actions/upload-artifact@v3
       with:
-        name: test
-        path: ${{ env.FIRMWARE }}
+        name: test1
+        path: output.tar
+        retention-days: 5
 
- 
+  job_init2: 
+    runs-on: ubuntu-latest
+    steps:
+    - name: aa
+      run: |
+        cd $GITHUB_WORKSPACE
+        mkdir openwrt
+
+    - name: Download Toolchain Image From Artifacts
+      uses: actions/download-artifact@v3
+      with:
+        name: test1
+        path: $GITHUB_WORKSPACE
+
+    - name: bbls
+      run: |
+        cd $GITHUB_WORKSPACE
+        tar -xf output.tar -C $GITHUB_WORKSPACE
+        du -sh $GITHUB_WORKSPACE
+        rm -rf output.tar
+        du -sh $GITHUB_WORKSPACE
+        ls
