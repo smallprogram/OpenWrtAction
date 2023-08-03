@@ -68,6 +68,7 @@ jobs:
 
   job_init2: 
     runs-on: ubuntu-latest
+    needs: job_init
     steps:
     - name: aa
       run: |
