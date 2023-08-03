@@ -65,6 +65,7 @@ jobs:
         echo "after split..........."
         df -hT
         cd ..
+        du -h $GITHUB_WORKSPACE
         cd output
         ls
         cd ..
@@ -72,7 +73,6 @@ jobs:
         rm TOOLCHAIN_IMAGE
         df -hT
         cd ..
-        mkdir output
         cd $GITHUB_WORKSPACE/output
 
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
