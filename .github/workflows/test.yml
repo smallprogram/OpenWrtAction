@@ -40,41 +40,15 @@ jobs:
       id: generate_image
       run: |
 
-        mkdir openwrt
-        cd openwrt
-        dd if=/dev/zero of=outputfile bs=1G count=20
-        ls
-        cd ..
-
-        
-        mkdir toolchain
-        cd $GITHUB_WORKSPACE/toolchain
-
-        
-
-        echo "before mksquashfs..........."
-        df -hT
-        mksquashfs ../openwrt/ TOOLCHAIN_IMAGE -force-gid 1001 -force-uid 1001 -comp zstd
-        ls
-        echo "after mksquashfs..........."
-        df -hT
-        cd ..
         mkdir output
-        cd $GITHUB_WORKSPACE/toolchain
-        split -d -b 1900M TOOLCHAIN_IMAGE $GITHUB_WORKSPACE/output/TOOLCHAIN_IMAGE.img.
-        echo "after split..........."
-        df -hT
-        cd ..
-        du -h $GITHUB_WORKSPACE
-        cd output
-        ls
-        cd ..
-        cd toolchain
-        rm TOOLCHAIN_IMAGE
-        df -hT
-        cd ..
-        cd $GITHUB_WORKSPACE/output
 
+        cd $GITHUB_WORKSPACE/output
+        dd if=/dev/zero of=outputfile.img.00 bs=1M count=1900
+        dd if=/dev/zero of=outputfile.img.01 bs=1M count=1900
+        dd if=/dev/zero of=outputfile.img.02 bs=1M count=1900
+        dd if=/dev/zero of=outputfile.img.03 bs=1M count=1900
+        dd if=/dev/zero of=outputfile.img.04 bs=1M count=1900
+        dd if=/dev/zero of=outputfile.img.05 bs=1M count=1900
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
 
         echo "status=success" >> $GITHUB_OUTPUT
