@@ -244,7 +244,8 @@ jobs:
           df -hT
           
           echo "status=success" >> $GITHUB_OUTPUT
-
+      
+      # region: deprecated 
       # - name: Upload Log
       #   uses: softprops/action-gh-release@v0.1.15
       #   if: steps.compile_tools.outcome=='failure' || steps.compile_tools.outcome=='cancelled'
@@ -253,6 +254,7 @@ jobs:
       #   with:
       #     tag_name: ${{ needs.job_init.outputs.output_release_tag }}
       #     files: ${{ env.LOGFILES }}/*
+      # endregion: deprecated 
 
       - name: Compile Toolchain
         if: steps.compile_tools.outputs.status == 'success'
@@ -283,6 +285,7 @@ jobs:
           df -hT
           echo "status=success" >> $GITHUB_OUTPUT
 
+      # region: deprecated 
       # - name: Upload Log
       #   uses: softprops/action-gh-release@v0.1.15
       #   if: steps.compile_toolchain.outcome=='failure' || steps.compile_toolchain.outcome=='cancelled'
@@ -322,14 +325,17 @@ jobs:
       #   with:
       #     tag_name: ${{ needs.job_init.outputs.output_release_tag }}
       #     files: ${{ env.FIRMWARE }}/*
+      # endregion: deprecated 
 
-      - name: Generate Toolchain Image
+      - name: Generate Toolchain Packages
         if: steps.compile_toolchain.outputs.status == 'success'
+        working-directory: /workdir
         id: generate_image
         run: |
-          cd $GITHUB_WORKSPACE
           rm -rf openwrt/compile_log/*
+          echo "begin generate toolchain packages"
           tar -czf output/output.tar.gz openwrt/
+          echo "generate toolchain packages complate"
           echo "status=success" >> $GITHUB_OUTPUT
 
       - name: Upload Toolchain to artifact
@@ -337,7 +343,7 @@ jobs:
         if: steps.generate_image.outputs.status == 'success'
         with:
           name: TOOLCHAIN_IMAGE_${{ matrix.platforms }}
-          path: output/output.tar
+          path: output/output.tar.gz
           retention-days: 5
 
 
@@ -398,6 +404,7 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         ln -sf /workdir/download $GITHUB_WORKSPACE/download
 
+    # region: deprecated 
     # - name: Download Toolchain Image From Releases
     #   id : download
     #   run: |
@@ -426,6 +433,7 @@ jobs:
     #     mkdir -p compile_log
     #     cd compile_log
     #     echo "LOGFILES=$PWD" >> $GITHUB_ENV
+    # endregion: deprecated 
 
     - name: Download Toolchain From Artifacts
       id : download
@@ -435,16 +443,18 @@ jobs:
         path: download
 
     - name: File Extraction
+      working-directory: /workdir
       run: |
-        cd $GITHUB_WORKSPACE
         tar -xzf download/output.tar.gz
         rm -rf download/*
+        sudo chown -R $USER:$GROUPS /workdir/openwrt
 
 
     - name: SSH connection to Actions
       uses: mxschmitt/action-tmate@v3.16
       if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
+    # region: deprecated      
     # - name: Download Package
     #   id: package
     #   run: |
@@ -617,6 +627,7 @@ jobs:
     #   with:
     #     tag_name: ${{ needs.job_init.outputs.output_release_tag }}
     #     files: ${{ env.LOGFILES }}/*
+    # endregion: deprecated 
 
     - name: Generate Frimware
       id: compile
@@ -804,7 +815,7 @@ jobs:
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
 
-
+    # region: deprecated
     # - name: Generate commit
     #   id: Gen_commit
     #   run: |
@@ -822,6 +833,6 @@ jobs:
     #   with:
     #     commit_message: New Release Automated Change ${{ steps.tag.outputs.release_tag }}
     #     branch: main   
-
+    # endregion: deprecated
 
        
