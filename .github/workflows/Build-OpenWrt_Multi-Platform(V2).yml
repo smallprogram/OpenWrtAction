@@ -336,6 +336,9 @@ jobs:
           echo "begin generate toolchain packages"
           tar -czf output/output.tar.gz openwrt/
           echo "generate toolchain packages complate"
+
+          cd output
+          echo "TOOLCHAIN=$PWD" >> $GITHUB_ENV
           echo "status=success" >> $GITHUB_OUTPUT
 
       - name: Upload Toolchain to artifact
@@ -343,7 +346,7 @@ jobs:
         if: steps.generate_image.outputs.status == 'success'
         with:
           name: TOOLCHAIN_IMAGE_${{ matrix.platforms }}
-          path: output/output.tar.gz
+          path: ${{ env.TOOLCHAIN }}/output.tar.gz
           retention-days: 5
 
 
