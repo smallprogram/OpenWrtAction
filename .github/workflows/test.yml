@@ -176,4 +176,8 @@ jobs:
         rm -rf download/*
         sudo chown -R $USER:$GROUPS /workdir/openwrt
 
+        cd $GITHUB_WORKSPACE/openwrt
+        ls
+        
+
 
