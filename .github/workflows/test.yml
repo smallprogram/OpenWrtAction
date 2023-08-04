@@ -21,7 +21,18 @@ on:
   # schedule:
   #   - cron: 0 */8 * * *
 
-
+env:
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
+  FEEDS_CONF: feeds_config/custom.feeds.conf.default
+  DIY_P1_SH: diy_script/diy-part1.sh
+  DIY_P2_SH: diy_script/diy-part2.sh
+  COMMIT_LOG_NUM: 5
+  UPLOAD_BIN_DIR: false
+  UPLOAD_FIRMWARE: true
+  UPLOAD_ARTIFACT: false
+  UPLOAD_RELEASE: true
+  TZ: Asia/Shanghai
 
 jobs:
   job_build_toolchain:
