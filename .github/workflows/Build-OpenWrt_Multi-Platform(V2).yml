@@ -187,6 +187,44 @@ jobs:
       - name: Install Feeds
         run: cd openwrt && ./scripts/feeds install -a
 
+      - name: Feeds Git Unshallow
+        run: |
+          cd openwrt/feeds/packages
+          git pull --unshallow
+          cd $GITHUB_WORKSPACE
+
+          cd openwrt/feeds/luci
+          git pull --unshallow
+          cd $GITHUB_WORKSPACE
+
+          cd openwrt/feeds/routing
+          git pull --unshallow
+          cd $GITHUB_WORKSPACE
+
+          cd openwrt/feeds/telephony
+          git pull --unshallow
+          cd $GITHUB_WORKSPACE
+
+          cd openwrt/feeds/helloworld
+          git pull --unshallow
+          cd $GITHUB_WORKSPACE
+
+          cd openwrt/feeds/passwall_packages
+          git pull --unshallow
+          cd $GITHUB_WORKSPACE
+
+          cd openwrt/feeds/passwall_luci
+          git pull --unshallow
+          cd $GITHUB_WORKSPACE
+
+          cd openwrt/feeds/passwall2
+          git pull --unshallow
+          cd $GITHUB_WORKSPACE
+
+          cd openwrt/feeds/OpenClash
+          git pull --unshallow
+          cd $GITHUB_WORKSPACE
+
       - name: Load Configuration
         run: |
           [ -e config/${{ matrix.platforms }}.config ] && cp -r config/${{ matrix.platforms }}.config openwrt/.config
@@ -641,21 +679,21 @@ jobs:
         if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
           if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
               echo "1 threads compile frimware"
-              make -j1 V=s | tee -a compile_log/log_${{ matrix.platforms }}_6_generate_frimware.log
+              make -j1 V=s | tee -a compile_log/log_error_${{ matrix.platforms }}_6_generate_frimware.log
               is_complie_error=${PIPESTATUS[0]}
           else
               echo "$(nproc) threads compile frimware"
-              make -j$(nproc) V=s | tee -a compile_log/log_${{ matrix.platforms }}_6_generate_frimware.log
+              make -j$(nproc) V=s | tee -a compile_log/log_error_${{ matrix.platforms }}_6_generate_frimware.log
               is_complie_error=${PIPESTATUS[0]}
           fi
         else
           if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
               echo "1 threads compile frimware"
-              make -j1 | tee -a compile_log/log_${{ matrix.platforms }}_6_generate_frimware.log
+              make -j1 | tee -a compile_log/log_error_${{ matrix.platforms }}_6_generate_frimware.log
               is_complie_error=${PIPESTATUS[0]}
           else
               echo "$(nproc) threads compile frimware"
-              make -j$(nproc) | tee -a compile_log/log_${{ matrix.platforms }}_6_generate_frimware.log
+              make -j$(nproc) | tee -a compile_log/log_error_${{ matrix.platforms }}_6_generate_frimware.log
               is_complie_error=${PIPESTATUS[0]}
           fi
         fi
@@ -675,7 +713,7 @@ jobs:
 
     - name: Upload Log
       uses: softprops/action-gh-release@v0.1.15
-      if: steps.compile.outcome=='failure' || steps.compile.outcome=='cancelled'
+      if: steps.compile.outputs.status == 'failure' || steps.compile.outcome=='cancelled'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
@@ -685,6 +723,7 @@ jobs:
 
     - name: Remove Unuselesss Files
       id: removeunuselessfiles
+      if: steps.compile.outputs.status == 'success'
       run: |
         df -hT
         rm -rf  $GITHUB_WORKSPACE/openwrt/build_dir
