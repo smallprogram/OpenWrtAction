@@ -184,9 +184,6 @@ jobs:
       - name: Update Feeds
         run: cd openwrt && ./scripts/feeds update -a
 
-      - name: Install Feeds
-        run: cd openwrt && ./scripts/feeds install -a
-
       - name: Feeds Git Unshallow
         run: |
           cd openwrt/feeds/packages
@@ -224,6 +221,9 @@ jobs:
           cd openwrt/feeds/OpenClash
           git pull --unshallow
           cd $GITHUB_WORKSPACE
+      
+      - name: Install Feeds
+        run: cd openwrt && ./scripts/feeds install -a
 
       - name: Load Configuration
         run: |
