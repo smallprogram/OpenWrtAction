@@ -489,6 +489,10 @@ jobs:
         tar -xzf download/output.tar.gz
         rm -rf download/*
         sudo chown -R $USER:$GROUPS /workdir/openwrt
+        cd openwrt
+        mkdir -p compile_log
+        cd compile_log
+        echo "LOGFILES=$PWD" >> $GITHUB_ENV
 
 
     - name: SSH connection to Actions
