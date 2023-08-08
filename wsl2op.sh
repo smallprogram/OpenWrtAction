@@ -850,15 +850,25 @@ function Func_Main(){
         sleep 2s
         echo
         cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default > /home/${userName}/${ledeDir}/feeds.conf.default
-
         cd /home/${userName}/${ledeDir}
+
+        Func_DIY1_Script
+
+        Func_LogMessage "\033[31m 开始clean feeds.... \033[0m" "\033[31m begin update feeds.... \033[0m"
         ./scripts/feeds clean
+        echo
         Func_LogMessage "\033[31m 开始update feeds.... \033[0m" "\033[31m begin update feeds.... \033[0m"
         sleep 1s
-        ./scripts/feeds update -a 
+        ./scripts/feeds update -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_update_filename}
+        echo
         Func_LogMessage "\033[31m 开始install feeds.... \033[0m" "\033[31m begin install feeds.... \033[0m"
         sleep 1s
-        ./scripts/feeds install -a 
+        ./scripts/feeds install -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_install_filename}
+        echo
+
+
+
+        Func_DIY2_Script
 
         if [ ! -n "$isCreateNewConfig" ]; then
             echo
