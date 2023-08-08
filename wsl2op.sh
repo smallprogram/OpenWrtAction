@@ -9,6 +9,37 @@
 # File: wsl2op.sh
 # Description: WSL automatically compiles Openwrt script code
 
+# ------------------------------------------------------⬇⬇⬇⬇Code⬇⬇⬇⬇------------------------------------------------------
+# PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(nproc)
+# ----------------------------------------------------------------------------------------------------------------
+# PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make tools/compile -j$(nproc)
+# PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make toolchain/compile -j$(nproc)
+# PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make package/cleanup -j$(nproc)
+# PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make target/compile -j$(nproc)
+# PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make buildinfo -j$(nproc)
+# PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make package/compile -j$(nproc)
+# PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make diffconfig buildversion feedsversion
+# PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make package/install -j$(nproc)
+# PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make target/install -j$(nproc)
+# PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make package/index -j$(nproc)
+# PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make json_overview_image_info -j$(nproc)
+# PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make checksum -j$(nproc)
+# ================================================================================================================
+# make -j$(nproc)
+# ----------------------------------------------------------------------------------------------------------------
+# make tools/compile -j$(nproc)
+# make toolchain/compile -j$(nproc)
+# make package/cleanup -j$(nproc)
+# make target/compile -j$(nproc)
+# make buildinfo -j$(nproc)
+# make package/compile -j$(nproc)
+# make diffconfig buildversion feedsversion
+# make package/install -j$(nproc)
+# make target/install -j$(nproc)
+# make package/index -j$(nproc)
+# make json_overview_image_info -j$(nproc)
+# make checksum -j$(nproc)
+
 
 #--------------------⬇⬇⬇⬇环境变量⬇⬇⬇⬇--------------------
 # 路由默认IP地址
