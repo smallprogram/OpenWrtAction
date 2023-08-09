@@ -35,149 +35,28 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
-  job_build_toolchain:
+  job_1:
     runs-on: ubuntu-latest
-    name: Build-ToolChain-${{ matrix.platforms }}
-    strategy:
-      fail-fast: false
-      matrix:
-        platforms: [X86, R5S, R4S, R2S, R2C, Pi4_Model_B]
-
+    
     steps:
-      - name: Initialization Environment
+      - name: aaa
         run: |
-          sudo timedatectl set-timezone "$TZ"
-          sudo mkdir -p /workdir
-          sudo chown $USER:$GROUPS /workdir
           df -hT
 
       - name: Maximize Build Space
         uses: easimon/maximize-build-space@master
         with:
-          root-reserve-mb: 3072
+          root-reserve-mb: 2048
           swap-size-mb: 1024
           remove-dotnet: 'true'
           remove-android: 'true'
           remove-haskell: 'true'
+          remove-codeql: 'true'
+          remove-docker-images: 'true'
           build-mount-path: '/workdir'
 
-      - name: Checkout
-        uses: actions/checkout@main
-        with:
-          fetch-depth: 0
-
-      - name: Clone Source Code
-        working-directory: /workdir
+      - name: bbb
         run: |
           df -hT
-          git clone $REPO_URL -b $REPO_BRANCH openwrt
-          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-          df -hT
 
-      - name: Initialization Directory
-        working-directory: /workdir
-        id: init_directory
-        run: |
-          sudo mkdir -p output
-          sudo mkdir -p toolchain
-          sudo chown $USER:$GROUPS /workdir/output
-          sudo chown $USER:$GROUPS /workdir/toolchain
-          ln -sf /workdir/output $GITHUB_WORKSPACE/output
-          ln -sf /workdir/toolchain $GITHUB_WORKSPACE/toolchain
-
-          cd openwrt
-          mkdir -p compile_log
-          cd compile_log
-          echo "LOGFILES=$PWD" >> $GITHUB_ENV
-
-
-
-      - name: Generate Toolchain Packages
-        working-directory: /workdir
-        id: generate_image
-        run: |
-          rm -rf openwrt/compile_log/*
-          echo "begin generate toolchain packages"
-          tar -czf output/output.tar.gz openwrt/
-          echo "generate toolchain packages complate"
-
-          cd output
-          echo "TOOLCHAIN=$PWD" >> $GITHUB_ENV
-
-          echo "status=success" >> $GITHUB_OUTPUT
-
-      - name: Upload Toolchain to artifact
-        uses: actions/upload-artifact@v3
-        if: steps.generate_image.outputs.status == 'success'
-        with:
-          name: TOOLCHAIN_IMAGE_${{ matrix.platforms }}
-          path: ${{ env.TOOLCHAIN }}/output.tar.gz
-          retention-days: 5
-
-
-  job_build:
-    needs: [job_build_toolchain]
-    runs-on: ubuntu-latest
-    name: Build-OpenWrt-${{ matrix.platforms }}
-    strategy:
-      fail-fast: false
-      matrix:
-        platforms: [X86, R5S, R4S, R2S, R2C, Pi4_Model_B]
-
-
-
-    steps:
-    - name: Initialization Environment
-      run: |
-        sudo timedatectl set-timezone "$TZ"
-        sudo mkdir -p /workdir
-        sudo chown $USER:$GROUPS /workdir
-        df -hT
-
-    - name: Maximize Build Space
-      uses: easimon/maximize-build-space@master
-      with:
-        root-reserve-mb: 3072
-        swap-size-mb: 1024
-        remove-dotnet: 'true'
-        remove-android: 'true'
-        remove-haskell: 'true'
-        build-mount-path: '/workdir'
-
-    - name: Checkout
-      uses: actions/checkout@main
-      with:
-        fetch-depth: 0
-
-
-    - name: Initialization Directory
-      working-directory: /workdir
-      run: |
-        sudo mkdir -p openwrt
-        sudo mkdir -p download
-        sudo chown $USER:$GROUPS /workdir/openwrt
-        sudo chown $USER:$GROUPS /workdir/download
-
-        ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-        ln -sf /workdir/download $GITHUB_WORKSPACE/download
-
-
-    - name: Download Toolchain From Artifacts
-      id : download
-      uses: actions/download-artifact@v3
-      with:
-        name: TOOLCHAIN_IMAGE_${{ matrix.platforms }}
-        path: download
-
-    - name: File Extraction
-      working-directory: /workdir
-      run: |
-        tar -xzf download/output.tar.gz
-        rm -rf download/*
-        sudo chown -R $USER:$GROUPS /workdir/openwrt
-
-        cd $GITHUB_WORKSPACE/openwrt
-        ls
-        
-
-
+      
