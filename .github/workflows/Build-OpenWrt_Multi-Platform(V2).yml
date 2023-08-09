@@ -186,44 +186,7 @@ jobs:
       - name: Update Feeds
         run: cd openwrt && ./scripts/feeds update -a
 
-      - name: Feeds Git Unshallow
-        run: |
-          cd openwrt/feeds/packages
-          git pull --unshallow
-          cd $GITHUB_WORKSPACE
 
-          cd openwrt/feeds/luci
-          git pull --unshallow
-          cd $GITHUB_WORKSPACE
-
-          cd openwrt/feeds/routing
-          git pull --unshallow
-          cd $GITHUB_WORKSPACE
-
-          cd openwrt/feeds/telephony
-          git pull --unshallow
-          cd $GITHUB_WORKSPACE
-
-          cd openwrt/feeds/helloworld
-          git pull --unshallow
-          cd $GITHUB_WORKSPACE
-
-          cd openwrt/feeds/passwall_packages
-          git pull --unshallow
-          cd $GITHUB_WORKSPACE
-
-          cd openwrt/feeds/passwall_luci
-          git pull --unshallow
-          cd $GITHUB_WORKSPACE
-
-          cd openwrt/feeds/passwall2
-          git pull --unshallow
-          cd $GITHUB_WORKSPACE
-
-          cd openwrt/feeds/OpenClash
-          git pull --unshallow
-          cd $GITHUB_WORKSPACE
-      
       - name: Install Feeds
         run: cd openwrt && ./scripts/feeds install -a
 
@@ -659,6 +622,45 @@ jobs:
 
 
       # region: deprecated 
+      
+      # - name: Feeds Git Unshallow
+      #   run: |
+      #     cd openwrt/feeds/packages
+      #     git pull --unshallow
+      #     cd $GITHUB_WORKSPACE
+
+      #     cd openwrt/feeds/luci
+      #     git pull --unshallow
+      #     cd $GITHUB_WORKSPACE
+
+      #     cd openwrt/feeds/routing
+      #     git pull --unshallow
+      #     cd $GITHUB_WORKSPACE
+
+      #     cd openwrt/feeds/telephony
+      #     git pull --unshallow
+      #     cd $GITHUB_WORKSPACE
+
+      #     cd openwrt/feeds/helloworld
+      #     git pull --unshallow
+      #     cd $GITHUB_WORKSPACE
+
+      #     cd openwrt/feeds/passwall_packages
+      #     git pull --unshallow
+      #     cd $GITHUB_WORKSPACE
+
+      #     cd openwrt/feeds/passwall_luci
+      #     git pull --unshallow
+      #     cd $GITHUB_WORKSPACE
+
+      #     cd openwrt/feeds/passwall2
+      #     git pull --unshallow
+      #     cd $GITHUB_WORKSPACE
+
+      #     cd openwrt/feeds/OpenClash
+      #     git pull --unshallow
+      #     cd $GITHUB_WORKSPACE
+
       # - name: Generate Toolchain Image
       #   if: steps.compile_toolchain.outputs.status == 'success'
       #   id: generate_image
