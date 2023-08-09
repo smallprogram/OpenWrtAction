@@ -39,26 +39,11 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: aaa
-        run: |
-          sudo mkdir -p /workdir
-          sudo chown $USER:$GROUPS /workdir
-          df -hT
-
-      - name: Maximize Build Space
-        uses: easimon/maximize-build-space@master
-        with:
-          root-reserve-mb: 2048
-          swap-size-mb: 1024
-          remove-dotnet: 'true'
-          remove-android: 'true'
-          remove-haskell: 'true'
-          remove-codeql: 'true'
-          remove-docker-images: 'true'
-          build-mount-path: '/workdir'
-
-      - name: bbb
-        run: |
-          df -hT
+    - name: Remove old Releases
+      uses: smallprogram/delete-older-releases@master
+      with:
+        keep_latest: 10
+        keep_min_download_counts: 3
+        delete_tags: true
 
       
