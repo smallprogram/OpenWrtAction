@@ -41,6 +41,8 @@ jobs:
     steps:
       - name: aaa
         run: |
+          sudo mkdir -p /workdir
+          sudo chown $USER:$GROUPS /workdir
           df -hT
 
       - name: Maximize Build Space
