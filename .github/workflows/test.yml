@@ -18,6 +18,14 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
+      is_display_detailed:
+        description: 'Whether to display detailed information about compilation'
+        required: false
+        default: 'true'
+      is_single_threaded:
+        description: 'Whether single-threaded compilation'
+        required: false
+        default: 'false'
   # schedule:
   #   - cron: 0 */8 * * *
 
@@ -27,25 +35,61 @@ env:
   FEEDS_CONF: feeds_config/custom.feeds.conf.default
   DIY_P1_SH: diy_script/diy-part1.sh
   DIY_P2_SH: diy_script/diy-part2.sh
-  COMMIT_LOG_NUM: 5
+  COMMIT_LOG_NUM: 1
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_ARTIFACT: false
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
+  
+
 
 jobs:
-  job_1:
+  job_Organize_Tags:
     runs-on: ubuntu-latest
-    
-    steps:
-    - name: Remove old Releases
-      uses: smallprogram/delete-older-releases@master
-      with:
-        keep_latest: 10
-        keep_min_download_counts: 3
-        delete_tags: true
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
 
+    steps:
+    - name: Download Release Tag From release
+      id : download
+      run: |
+        wget https://github.com/$GITHUB_REPOSITORY/releases/download/multi-platform_2023.08.15_15.01.44/release.txt
+
+    - name: SSH connection to Actions
+      uses: mxschmitt/action-tmate@v3.16
+      if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
+
+    - name: Organize Tags
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        ARTIFACTS=$(gh api repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts)
+        NAMES=$(echo "$ARTIFACTS" | jq -r '.artifacts[].name')
+        NAMES_ARRAY=($(echo "$NAMES" | tr '\n' ' '))
+        platforms=(X86 R5S R4S R2S R2C Pi4_Model_B)
+        for ((i = 0; i < ${#platforms[@]}; i++)); do
+          platform="${platforms[i]}"
+          found=false
+          row=$((i+17))s
+          for ((j = 0; j < ${#NAMES_ARRAY[@]}; j++)); do
+            name="${NAMES_ARRAY[j]}"
+            if [[ "$name" == "log_error_$platform"* ]]; then
+              found=true
+              break
+            fi
+          done
+          
+          if $found; then
+            sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow/build-failure-red?logo=githubactions&logoColor=red/" release.txt;
+          else
+            sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow/build-passing-green?logo=githubactions&logoColor=green/" release.txt;
+          fi
+        done
+
+    - name: Upload Release Tag
+      uses: softprops/action-gh-release@v0.1.15
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: multi-platform_2023.08.15_15.01.44
+        body_path: release.txt
       
