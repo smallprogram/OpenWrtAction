@@ -329,7 +329,7 @@ jobs:
           echo "TOOLCHAIN=$PWD" >> $GITHUB_ENV
           echo "status=success" >> $GITHUB_OUTPUT
 
-      - name: Upload Toolchain to artifact
+      - name: Upload Toolchain To Artifact
         uses: actions/upload-artifact@v3
         if: steps.generate_image.outputs.status == 'success'
         with:
@@ -554,7 +554,7 @@ jobs:
         echo "**:minidisc: OpenWrt Version: $(sed -n '51s/^.*DISTRIB_REVISION='\''\([^'\'']*\)'\''.*$/\1/p' $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/files/zzz-default-settings)**" >> release.txt
         echo "**:gear: Default-Setting Version: $(sed -n '10s/PKG_VERSION:=\([0-9]*\).*/\1/p; 11s/PKG_RELEASE:=\([0-9]*\).*/\1/p' $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/Makefile | tr '\n' '.' | sed 's/.$//' && echo)**" >> release.txt
 
-        echo "### Kernel Information" >> release.txt
+        echo "### Compile Information" >> release.txt
 
         kernel_X86=$(sed -n '13p' $GITHUB_WORKSPACE/openwrt/target/linux/x86/Makefile | awk -F '=' '{print $2}')
         kernel_R5S=$(sed -n '10p' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile | awk -F '=' '{print $2}')
@@ -563,12 +563,14 @@ jobs:
         kernel_R2C=$(sed -n '10p' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile | awk -F '=' '{print $2}')
         kernel_Pi4ModelB=$(sed -n '14p' $GITHUB_WORKSPACE/openwrt/target/linux/bcm27xx/Makefile | awk -F '=' '{print $2}')
 
-        echo "**:ice_cube: X86 kernel: $(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_X86} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**" >> release.txt
-        echo "**:ice_cube: R5S kernel: $(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_R5S} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**" >> release.txt
-        echo "**:ice_cube: R4S kernel: $(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_R4S} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**" >> release.txt
-        echo "**:ice_cube: R2S kernel: $(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_R2S} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**" >> release.txt
-        echo "**:ice_cube: R2C kernel: $(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_R2C} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**" >> release.txt
-        echo "**:ice_cube: Pi4ModelB kernel: $(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_Pi4ModelB} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**" >> release.txt
+        platform|kernel|compile status
+        -|-|-
+        echo "**:ice_cube: X86**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_X86} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: R5S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_R5S} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: R4S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_R4S} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: R2S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_R2S} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: R2C**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_R2C} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: Pi4ModelB**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_Pi4ModelB} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
 
 
 
@@ -607,6 +609,14 @@ jobs:
         touch release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
+    - name: Upload Toolchain To artifact
+      uses: actions/upload-artifact@v3
+      if: steps.tag.outputs.status == 'success'
+      with:
+        name: release_tag
+        path: release.txt
+        retention-days: 5
+
     - name: Upload Firmware To Release
       uses: softprops/action-gh-release@v0.1.15
       if: steps.tag.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
@@ -617,8 +627,51 @@ jobs:
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
 
-
+  job_organize_tags:
+    needs: [job_init, job_build]
+    runs-on: ubuntu-latest
+    name: Build-OpenWrt-Organize-Tags
        
+    steps:
+    - name: Download Tags
+      uses: actions/download-artifact@v3
+      with:
+        name: release_tag
+
+    - name: Organize Tags
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        ARTIFACTS=$(gh api repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts)
+        NAMES=$(echo "$ARTIFACTS" | jq -r '.artifacts[].name')
+        NAMES_ARRAY=($(echo "$NAMES" | tr '\n' ' '))
+        platforms=(X86 R5S R4S R2S R2C Pi4_Model_B)
+        for ((i = 0; i < ${#platforms[@]}; i++)); do
+          platform="${platforms[i]}"
+          found=false
+          row=$((i+17))s
+          for ((j = 0; j < ${#NAMES_ARRAY[@]}; j++)); do
+            name="${NAMES_ARRAY[j]}"
+            if [[ "$name" == "log_error_$platform"* ]]; then
+              found=true
+              break
+            fi
+          done
+          
+          if $found; then
+            sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow/build-failure-red?logo=githubactions&logoColor=red/" release.txt;
+          else
+            sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow/build-passing-green?logo=githubactions&logoColor=green/" release.txt;
+          fi
+        done
+  
+    - name: Upload Release Tag
+      uses: softprops/action-gh-release@v0.1.15
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+        body_path: release.txt
 
 
       # region: deprecated 
