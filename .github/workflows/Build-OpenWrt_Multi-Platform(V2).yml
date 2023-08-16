@@ -631,15 +631,15 @@ jobs:
 
   job_organize_tags:
     needs: [job_init, job_build_toolchain, job_build]
+    if: ${{ always() }}
     runs-on: ubuntu-latest
     name: Organize-Release-Tags
        
     steps:
     - name: Download Tags
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        echo $(gh run download -n release_tag)
+      uses: actions/download-artifact@v3
+      with:
+        name: release_tag
 
     - name: Organize Tags
       id: organize_tags
