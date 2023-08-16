@@ -63,6 +63,7 @@ jobs:
 
 
   job_2:
+    needs: job_1
     runs-on: ubuntu-latest
 
     steps:
