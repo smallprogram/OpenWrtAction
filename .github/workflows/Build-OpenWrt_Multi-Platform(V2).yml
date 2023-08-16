@@ -21,7 +21,7 @@ on:
       is_display_detailed:
         description: 'Whether to display detailed information about compilation'
         required: false
-        default: 'true'
+        default: 'false'
       is_single_threaded:
         description: 'Whether single-threaded compilation'
         required: false
@@ -45,6 +45,7 @@ env:
 jobs:
   job_init: 
     runs-on: ubuntu-latest
+    name: Build-Openwrt-Init
     outputs:
       output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
     steps:
@@ -104,7 +105,6 @@ jobs:
           commit_message: auto update config
           branch: main
           commit_author: smallprogram <smallprogram@foxmail.com>
-
 
   job_build_toolchain:
     needs: job_init
@@ -224,6 +224,7 @@ jobs:
         run: |
           cd openwrt
           rm -rf compile_log/*
+          touch compile_log/log_error_${{ matrix.platforms }}_compile_tools.log
           is_complie_error=0
 
           if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
@@ -259,7 +260,7 @@ jobs:
 
       - name: Upload Error Log To Artifact
         uses: actions/upload-artifact@v3
-        if: steps.compile_tools.outputs.status == 'failure' || steps.compile_tools.outcome=='cancelled'
+        if: steps.compile_tools.outputs.status == 'failure' || steps.compile_tools.outcome=='cancelled' || steps.compile_tools.outcome=='failure'
         with:
           name: log_error_${{ matrix.platforms }}_compile_tools
           path: ${{ env.LOGFILES }}/*
@@ -271,6 +272,7 @@ jobs:
         run: |
           cd openwrt
           rm -rf compile_log/*
+          touch compile_log/log_error_${{ matrix.platforms }}_compile_toolchain.log
           is_complie_error=0
           if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
             if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
@@ -306,7 +308,7 @@ jobs:
 
       - name: Upload Error Log To Artifact
         uses: actions/upload-artifact@v3
-        if: steps.compile_toolchain.outputs.status == 'failure' || steps.compile_toolchain.outcome=='cancelled'
+        if: steps.compile_toolchain.outputs.status == 'failure' || steps.compile_toolchain.outcome=='cancelled' || steps.compile_toolchain.outcome=='failure'
         with:
           name: log_error_${{ matrix.platforms }}_compile_toolchain
           path: ${{ env.LOGFILES }}/*
@@ -336,7 +338,6 @@ jobs:
           name: TOOLCHAIN_IMAGE_${{ matrix.platforms }}
           path: ${{ env.TOOLCHAIN }}/output.tar.gz
           retention-days: 5
-
 
   job_build:
     needs: [job_init, job_build_toolchain]
@@ -431,6 +432,7 @@ jobs:
       run: |
         cd openwrt
         rm -rf compile_log/*
+        touch compile_log/log_error_${{ matrix.platforms }}_generate_frimware.log
         is_complie_error=0
         if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
           if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
@@ -472,7 +474,7 @@ jobs:
 
     - name: Upload Error Log To Artifact
       uses: actions/upload-artifact@v3
-      if: steps.compile.outputs.status == 'failure' || steps.compile.outcome=='cancelled'
+      if: steps.compile.outputs.status == 'failure' || steps.compile.outcome=='cancelled' || steps.compile.outcome=='failure'
       with:
         name: log_error_${{ matrix.platforms }}_generate_frimware
         path: ${{ env.LOGFILES }}/*
@@ -563,8 +565,8 @@ jobs:
         kernel_R2C=$(sed -n '10p' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile | awk -F '=' '{print $2}')
         kernel_Pi4ModelB=$(sed -n '14p' $GITHUB_WORKSPACE/openwrt/target/linux/bcm27xx/Makefile | awk -F '=' '{print $2}')
 
-        platform|kernel|compile status
-        -|-|-
+        echo "platform|kernel|compile status" >> release.txt
+        echo "-|-|-" >> release.txt
         echo "**:ice_cube: X86**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_X86} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
         echo "**:ice_cube: R5S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_R5S} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
         echo "**:ice_cube: R4S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_R4S} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
@@ -609,7 +611,7 @@ jobs:
         touch release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
-    - name: Upload Toolchain To artifact
+    - name: Upload Tags To Artifact
       uses: actions/upload-artifact@v3
       if: steps.tag.outputs.status == 'success'
       with:
@@ -628,45 +630,59 @@ jobs:
         files: ${{ env.FIRMWARE }}/*
 
   job_organize_tags:
-    needs: [job_init, job_build]
+    needs: [job_init, job_build_toolchain, job_build]
     runs-on: ubuntu-latest
-    name: Build-OpenWrt-Organize-Tags
+    name: Organize-Release-Tags
        
     steps:
     - name: Download Tags
-      uses: actions/download-artifact@v3
-      with:
-        name: release_tag
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo $(gh run download -n release_tag)
 
     - name: Organize Tags
+      id: organize_tags
       env:
         GH_TOKEN: ${{ github.token }}
       run: |
-        ARTIFACTS=$(gh api repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts)
-        NAMES=$(echo "$ARTIFACTS" | jq -r '.artifacts[].name')
-        NAMES_ARRAY=($(echo "$NAMES" | tr '\n' ' '))
-        platforms=(X86 R5S R4S R2S R2C Pi4_Model_B)
-        for ((i = 0; i < ${#platforms[@]}; i++)); do
-          platform="${platforms[i]}"
-          found=false
-          row=$((i+17))s
-          for ((j = 0; j < ${#NAMES_ARRAY[@]}; j++)); do
-            name="${NAMES_ARRAY[j]}"
-            if [[ "$name" == "log_error_$platform"* ]]; then
-              found=true
-              break
+        
+        if [ -f "release.txt" ]; then
+
+          ARTIFACTS=$(gh api repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts)
+          NAMES=$(echo "$ARTIFACTS" | jq -r '.artifacts[].name')
+          NAMES_ARRAY=($(echo "$NAMES" | tr '\n' ' '))
+          platforms=(X86 R5S R4S R2S R2C Pi4_Model_B)
+          for ((i = 0; i < ${#platforms[@]}; i++)); do
+            platform="${platforms[i]}"
+            found=false
+            row=$((i+17))s
+            for ((j = 0; j < ${#NAMES_ARRAY[@]}; j++)); do
+              name="${NAMES_ARRAY[j]}"
+              if [[ "$name" == "log_error_$platform"* ]]; then
+                found=true
+                break
+              fi
+            done
+            
+            if $found; then
+              sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow/build-failure-red?logo=githubactions&logoColor=red/" release.txt;
+            else
+              sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow/build-passing-green?logo=githubactions&logoColor=green/" release.txt;
             fi
           done
-          
-          if $found; then
-            sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow/build-failure-red?logo=githubactions&logoColor=red/" release.txt;
-          else
-            sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow/build-passing-green?logo=githubactions&logoColor=green/" release.txt;
-          fi
-        done
+
+          echo "status=success" >> $GITHUB_OUTPUT
+        else
+          echo "status=failure" >> $GITHUB_OUTPUT
+        fi
+
+
+        
   
     - name: Upload Release Tag
       uses: softprops/action-gh-release@v0.1.15
+      if: steps.organize_tags.outputs.status == 'success'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
