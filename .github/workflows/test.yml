@@ -55,7 +55,6 @@ jobs:
 
     - name: upload
       uses: actions/upload-artifact@v3
-      if: steps.tag.outputs.status == 'success'
       with:
         name: myfile
         path: myfile.txt
@@ -69,7 +68,6 @@ jobs:
     steps:
     - name: download1
       uses: actions/download-artifact@v3
-      if: steps.tag.outputs.status == 'success'
       with:
         name: myfile1
 
@@ -80,7 +78,6 @@ jobs:
 
     - name: download2
       uses: actions/download-artifact@v3
-      if: steps.tag.outputs.status == 'success'
       with:
         name: myfile
 
