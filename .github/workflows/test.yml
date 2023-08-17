@@ -76,8 +76,11 @@ jobs:
             echo $row
             if $found; then
               echo $found
+              echo "----true----"
             else
               echo $found
+              echo "----false----"
+
             fi
           done
 
