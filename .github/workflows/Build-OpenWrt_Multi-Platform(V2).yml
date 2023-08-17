@@ -653,28 +653,47 @@ jobs:
           NAMES=$(echo "$ARTIFACTS" | jq -r '.artifacts[].name')
           NAMES_ARRAY=($(echo "$NAMES" | tr '\n' ' '))
           platforms=(X86 R5S R4S R2S R2C Pi4_Model_B)
+          
           for ((i = 0; i < ${#platforms[@]}; i++)); do
             platform="${platforms[i]}"
+            echo "-------------------platforms for $i --------------------"
             found=false
             row=$((i+17))s
+            echo "platforms: $platforms"
+            echo "row: $row"
+
             for ((j = 0; j < ${#NAMES_ARRAY[@]}; j++)); do
               name="${NAMES_ARRAY[j]}"
+              echo "----------artifacts for $j ----------"
+              echo "artifacts name: $name"
               if [[ "$name" == "log_error_$platform"* ]]; then
                 found=true
+                echo "--------end artifacts for $j --------"
                 break
               fi
+              echo "--------end artifacts for $j --------"
             done
-            
+
+            echo "is found: $found"
             if $found; then
+              echo "found be true: $found"
               sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow/build-failure-red?logo=githubactions&logoColor=red/" release.txt;
             else
+              echo "found be false: $found"
               sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow/build-passing-green?logo=githubactions&logoColor=green/" release.txt;
             fi
+            echo "---------------end platforms for $i --------------------"
           done
 
           echo "status=success" >> $GITHUB_OUTPUT
+          echo "-----------------------release.txt------------------------"
+          cat release.txt
+
         else
+
+          echo "-----------------------can't find release.txt------------------------"
           echo "status=failure" >> $GITHUB_OUTPUT
+
         fi
 
 
