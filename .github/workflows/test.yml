@@ -61,18 +61,21 @@ jobs:
           platforms=(X86 R5S R4S R2S R2C Pi4_Model_B)
           for ((i = 0; i < ${#platforms[@]}; i++)); do
             platform="${platforms[i]}"
-            echo $platform
+            echo "-------------------platforms for $i --------------------"
+            echo "platform: $platform"
             found=false
             row=$((i+17))s
             for ((j = 0; j < ${#NAMES_ARRAY[@]}; j++)); do
+              echo "----------artifacts for $j ----------"
               name="${NAMES_ARRAY[j]}"
-              echo $name
+              echo "artifacts file name: $name"
               if [[ "$name" == "log_error_$platform"* ]]; then
                 found=true
+                echo "----------end artifacts for $j ----------"
                 break
               fi
             done
-            echo "---------------------------row------------"
+            echo "----------artifacts for $j ----------"
             echo $row
             if $found; then
               echo $found
