@@ -72,7 +72,8 @@ jobs:
                 break
               fi
             done
-            
+            echo "---------------------------row------------"
+            echo $row
             if $found; then
               echo $found
             else
