@@ -49,42 +49,38 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: gen file
+    - name: Organize Tags
+      id: organize_tags
+      env:
+        GH_TOKEN: ${{ github.token }}
       run: |
-        dd if=/dev/zero of=myfile.txt bs=1M count=10
+        
+          ARTIFACTS=$(gh api repos/${{ github.repository }}/actions/runs/5879528860/artifacts)
+          NAMES=$(echo "$ARTIFACTS" | jq -r '.artifacts[].name')
+          NAMES_ARRAY=($(echo "$NAMES" | tr '\n' ' '))
+          platforms=(X86 R5S R4S R2S R2C Pi4_Model_B)
+          for ((i = 0; i < ${#platforms[@]}; i++)); do
+            platform="${platforms[i]}"
+            echo $platform
+            found=false
+            row=$((i+17))s
+            for ((j = 0; j < ${#NAMES_ARRAY[@]}; j++)); do
+              name="${NAMES_ARRAY[j]}"
+              echo $name
+              if [[ "$name" == "log_error_$platform"* ]]; then
+                found=true
+                break
+              fi
+            done
+            
+            if $found; then
+              echo $found
+            else
+              echo $found
+            fi
+          done
 
-    - name: upload
-      uses: actions/upload-artifact@v3
-      with:
-        name: myfile
-        path: myfile.txt
-        retention-days: 5
 
-
-  job_2:
-    needs: job_1
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: download1
-      uses: actions/download-artifact@v3
-      with:
-        name: myfile1
-
-
-    - name: ls1
-      run: |
-        ls
-
-    - name: download2
-      uses: actions/download-artifact@v3
-      with:
-        name: myfile
-
-    - name: ls2
-      run: |
-        ls
-       
 
 
         
