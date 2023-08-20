@@ -649,7 +649,11 @@ jobs:
         
         if [ -f "release.txt" ]; then
 
+          echo "--------------------ARTIFACTS:-------------------------------"
           ARTIFACTS=$(gh api repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts)
+          echo "$ARTIFACTS"
+          echo "--------------------ARTIFACTS JSON:-------------------------------"
+          echo "$ARTIFACTS" | jq .
           NAMES=$(echo "$ARTIFACTS" | jq -r '.artifacts[].name')
 
           echo "------------------------------------------------------------"
