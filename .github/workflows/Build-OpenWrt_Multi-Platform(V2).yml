@@ -643,14 +643,15 @@ jobs:
 
     - name: Organize Tags
       id: organize_tags
-      env:
-        GH_TOKEN: ${{ github.token }}
+      # env:
+      #   GH_TOKEN: ${{ github.token }}
       run: |
         
         if [ -f "release.txt" ]; then
 
           echo "--------------------ARTIFACTS:-------------------------------"
-          ARTIFACTS=$(gh api repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts)
+          # ARTIFACTS=$(gh api repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts)
+          ARTIFACTS=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts")
           echo "$ARTIFACTS"
           echo "--------------------ARTIFACTS JSON:-------------------------------"
           echo "$ARTIFACTS" | jq .
@@ -692,10 +693,10 @@ jobs:
             echo "is found: $found"
             if $found; then
               echo "found be true: $found"
-              sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow/build-failure-red?logo=githubactions&logoColor=red/" release.txt;
+              sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions\&logoColor=yellow/build-failure-red?logo=githubactions\&logoColor=red/" release.txt;
             else
               echo "found be false: $found"
-              sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow/build-passing-green?logo=githubactions&logoColor=green/" release.txt;
+              sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions\&logoColor=yellow/build-passing-green?logo=githubactions\&logoColor=green/" release.txt;
             fi
             echo "---------------end platforms for $i --------------------"
           done
@@ -990,4 +991,4 @@ jobs:
 
 
 
-      # endregion: deprecated 
+      # endregion: deprecated
