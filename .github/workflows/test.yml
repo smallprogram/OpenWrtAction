@@ -9,6 +9,25 @@
 #
 
 name: test dfv
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
+      is_display_detailed:
+        description: 'Whether to display detailed information about compilation'
+        required: false
+        default: 'false'
+      is_single_threaded:
+        description: 'Whether single-threaded compilation'
+        required: false
+        default: 'false'
+
+
 jobs:
   job_build:
     runs-on: ubuntu-latest
