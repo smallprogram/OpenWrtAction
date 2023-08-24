@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: test dfv
+name: test
 
 on:
   repository_dispatch:
@@ -27,39 +27,32 @@ on:
         required: false
         default: 'false'
 
-
 jobs:
   job_build:
     runs-on: ubuntu-latest
-    name: Build-OpenWrt-${{ matrix.platforms }}
+    name: Build-${{ matrix.platforms }}
     strategy:
       matrix:
-        platforms: [X86, R5S, R4S, R2S, R2C, Pi4_Model_B]
+        platforms: [a, b, c]
 
     steps:
     - name: Generate Firmware
       id: compile
       run: |
         is_compile_error=0
-        if [ "${{ matrix.platforms }}" = "X86" ]; then
+        if [ "${{ matrix.platforms }}" = "a" ]; then
           is_compile_error=1
         fi
-        if [ "${{ matrix.platforms }}" = "R5S" ]; then
+        if [ "${{ matrix.platforms }}" = "b" ]; then
           is_compile_error=2
         fi
-        if [ "${{ matrix.platforms }}" = "R4S" ]; then
+        if [ "${{ matrix.platforms }}" = "c" ]; then
           is_compile_error=3
+          exit 1
         fi
         echo "compile result: $is_compile_error"
-        echo "is_compile_error_${{ matrix.platforms }}=$is_compile_error" >> $GITHUB_OUTPUT
-
-    - name: Upload Error Log To Artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: compile_status
-        path: ${{ env.LOGFILES }}/*
-        retention-days: 5    
-
+        echo "is_compile_error=$is_compile_error" >> $GITHUB_OUTPU
+        
   job_organize_tags:
     needs: [job_build]
     if: ${{ always() }}
@@ -70,12 +63,12 @@ jobs:
     - name: Get Values
       id: organize_tags
       run: |
-        x86_compile_error="${{ needs.job_build.outputs.compile.is_compile_error_X86 }}"
-        echo $x86_compile_error
-        r5s_compile_error="${{ needs.job_build.outputs.compile.is_compile_error_R5S }}"
-        echo $r5s_compile_error
-        r4s_compile_error="${{ needs.job_build.outputs.compile.is_compile_error_R4S }}"
-        echo $r4s_compile_error
+        a_compile_error="${{ needs.job_build.outputs.compile.is_compile_error }}"
+        echo $a_compile_error
+        b_compile_error="${{ needs.job_build.outputs.compile.is_compile_error }}"
+        echo $b_compile_error
+        c_compile_error="${{ needs.job_build.outputs.compile.is_compile_error }}"
+        echo $c_compile_error
 
 
 
