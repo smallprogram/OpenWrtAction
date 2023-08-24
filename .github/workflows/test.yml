@@ -51,7 +51,7 @@ jobs:
           exit 1
         fi
         echo "compile result: $is_compile_error"
-        echo "is_compile_error=$is_compile_error" >> $GITHUB_OUTPU
+        echo "is_compile_error=$is_compile_error" >> $GITHUB_OUTPUT
         
   job_organize_tags:
     needs: [job_build]
