@@ -30,7 +30,7 @@ on:
 jobs:
   job_build:
     runs-on: ubuntu-latest
-    name: Build-${{ matrix.platforms }}
+    name: Build-OpenWrt-${{ matrix.platforms }}
     strategy:
       matrix:
         platforms: [a, b, c]
@@ -63,12 +63,11 @@ jobs:
     - name: Get Values
       id: organize_tags
       run: |
-        a_compile_error="${{ needs.job_build.outputs.compile.is_compile_error }}"
-        echo $a_compile_error
-        b_compile_error="${{ needs.job_build.outputs.compile.is_compile_error }}"
-        echo $b_compile_error
-        c_compile_error="${{ needs.job_build.outputs.compile.is_compile_error }}"
-        echo $c_compile_error
+        echo "Fetch workflow run jobs"
+        curl \
+        -H "Authorization: Bearer ${{ github.token }}" \
+        '[https://api.github.com/repos/${{github.repository}}/actions/runs/${{ github.run_id }}/jobs' \
+        | jq ."jobs" | jq '.[] | select(.name | startswith("Build-OpenWrt-"))' | ."conclusion"'
 
 
 
