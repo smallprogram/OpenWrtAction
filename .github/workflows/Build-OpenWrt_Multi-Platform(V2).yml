@@ -650,56 +650,41 @@ jobs:
         
         if [ -f "release.txt" ]; then
 
-          echo "--------------------ARTIFACTS:-------------------------------"
-          # ARTIFACTS=$(gh api repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts)
-          ARTIFACTS=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts")
-          echo "$ARTIFACTS"
-          echo "--------------------ARTIFACTS JSON:-------------------------------"
-          echo "$ARTIFACTS" | jq .
-          NAMES=$(echo "$ARTIFACTS" | jq -r '.artifacts[].name')
-
-          echo "------------------------------------------------------------"
-          for ((a = 0; a < ${#NAMES[@]}; a++)); do
-              echo "name $a : ${NAMES[a]}"
-          done
-          echo "------------------------------------------------------------"
-          NAMES_ARRAY=($(echo "$NAMES" | tr '\n' ' '))
-          for ((b = 0; b < ${#NAMES_ARRAY[@]}; b++)); do
-              echo "names_array $b : ${NAMES_ARRAY[b]}"
-          done
-          echo "------------------------------------------------------------"
+          json_data=$(curl -s -H "Authorization: Bearer ${{ github.token }}" "https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs")
+          name_conclusion_array=($(echo "$json_data" | jq -r '.jobs[] | select(.name | startswith("Build-OpenWrt-")) | "\(.name).\(.conclusion)"'))
 
           platforms=(X86 R5S R4S R2S R2C Pi4_Model_B)
           
           for ((i = 0; i < ${#platforms[@]}; i++)); do
             platform="${platforms[i]}"
-            echo "-------------------platforms for $i --------------------"
-            found=false
+            is_error=false
             row=$((i+17))s
             echo "platform: $platform"
             echo "row: $row"
 
-            for ((j = 0; j < ${#NAMES_ARRAY[@]}; j++)); do
-              name="${NAMES_ARRAY[j]}"
-              echo "----------artifacts for $j ----------"
-              echo "artifacts name: $name"
-              if [[ "$name" == "log_error_$platform"* ]]; then
-                found=true
-                echo "--------end artifacts for $j --------"
-                break
+            for item in "${name_conclusion_array[@]}"; do
+              IFS='.' read -r name conclusion <<< "$item"
+              echo "Name: $name"
+              echo "Conclusion: $conclusion"
+              
+              if [[ "$name" == "Build-OpenWrt-$platform" ]]; then
+                if [[ "$conclusion" == "success" ]]; then
+                  break
+                else
+                  is_error=true
+                  break
+                fi
               fi
-              echo "--------end artifacts for $j --------"
             done
 
-            echo "is found: $found"
-            if $found; then
-              echo "found be true: $found"
+            echo "is_error: $is_error"
+            if $is_error; then
+              echo "is_error be true: $is_error"
               sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions\&logoColor=yellow/build-failure-red?logo=githubactions\&logoColor=red/" release.txt;
             else
-              echo "found be false: $found"
+              echo "is_error be false: $is_error"
               sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions\&logoColor=yellow/build-passing-green?logo=githubactions\&logoColor=green/" release.txt;
             fi
-            echo "---------------end platforms for $i --------------------"
           done
 
           echo "status=success" >> $GITHUB_OUTPUT
@@ -707,15 +692,9 @@ jobs:
           cat release.txt
 
         else
-
-          echo "-----------------------can't find release.txt------------------------"
           echo "status=failure" >> $GITHUB_OUTPUT
-
         fi
 
-
-        
-  
     - name: Upload Release Tag
       uses: softprops/action-gh-release@v0.1.15
       if: steps.organize_tags.outputs.status == 'success'
