@@ -8,84 +8,48 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: TEST
-
-on:
-  repository_dispatch:
-  workflow_dispatch:
-    inputs:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
-      is_display_detailed:
-        description: 'Whether to display detailed information about compilation'
-        required: false
-        default: 'true'
-      is_single_threaded:
-        description: 'Whether single-threaded compilation'
-        required: false
-        default: 'false'
-  # schedule:
-  #   - cron: 0 */8 * * *
-
-env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
-  FEEDS_CONF: feeds_config/custom.feeds.conf.default
-  DIY_P1_SH: diy_script/diy-part1.sh
-  DIY_P2_SH: diy_script/diy-part2.sh
-  COMMIT_LOG_NUM: 1
-  UPLOAD_BIN_DIR: false
-  UPLOAD_FIRMWARE: true
-  UPLOAD_ARTIFACT: false
-  UPLOAD_RELEASE: true
-  TZ: Asia/Shanghai
-  
-
-
+name: test dfv
 jobs:
-  job_1:
+  job_build:
     runs-on: ubuntu-latest
+    name: Build-OpenWrt-${{ matrix.platforms }}
+    strategy:
+      matrix:
+        platforms: [X86, R5S, R4S, R2S, R2C, Pi4_Model_B]
 
     steps:
-    - name: Organize Tags
-      id: organize_tags
-      env:
-        GH_TOKEN: ${{ github.token }}
+    - name: Generate Firmware
+      id: compile
       run: |
-        
-          ARTIFACTS=$(gh api repos/${{ github.repository }}/actions/runs/5879528860/artifacts)
-          NAMES=$(echo "$ARTIFACTS" | jq -r '.artifacts[].name')
-          NAMES_ARRAY=($(echo "$NAMES" | tr '\n' ' '))
-          platforms=(X86 R5S R4S R2S R2C Pi4_Model_B)
-          for ((i = 0; i < ${#platforms[@]}; i++)); do
-            platform="${platforms[i]}"
-            echo "-------------------platforms for $i --------------------"
-            echo "platform: $platform"
-            found=false
-            row=$((i+17))s
-            for ((j = 0; j < ${#NAMES_ARRAY[@]}; j++)); do
-              echo "----------artifacts for $j ----------"
-              name="${NAMES_ARRAY[j]}"
-              echo "artifacts file name: $name"
-              if [[ "$name" == "log_error_$platform"* ]]; then
-                found=true
-                echo "----------end artifacts for $j ----------"
-                break
-              fi
-            done
-            echo "----------artifacts for $j ----------"
-            echo $row
-            if $found; then
-              echo $found
-              echo "----true----"
-            else
-              echo $found
-              echo "----false----"
+        is_compile_error=0
+        if [ "${{ matrix.platforms }}" = "X86" ]; then
+          is_compile_error=1
+        fi
+        if [ "${{ matrix.platforms }}" = "R5S" ]; then
+          is_compile_error=2
+        fi
+        if [ "${{ matrix.platforms }}" = "R4S" ]; then
+          is_compile_error=3
+        fi
+        echo "compile result: $is_compile_error"
+        echo "is_compile_error=$is_compile_error" >> $GITHUB_OUTPUT
 
-            fi
-          done
+  job_organize_tags:
+    needs: [job_build]
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    name: Organize-Release-Tags
+
+    steps:
+    - name: Get Values
+      id: organize_tags
+      run: |
+        x86_compile_error="${{ needs.job_build.outputs.X86.compile.is_compile_error }}"
+        echo $x86_compile_error
+        r5s_compile_error="${{ needs.job_build.outputs.R5S.compile.is_compile_error }}"
+        echo $r5s_compile_error
+        r4s_compile_error="${{ needs.job_build.outputs.R4S.compile.is_compile_error }}"
+        echo $r4s_compile_error
 
 
 
