@@ -64,10 +64,9 @@ jobs:
       id: organize_tags
       run: |
         echo "Fetch workflow run jobs"
-        curl \
-        -H "Authorization: Bearer ${{ github.token }}" \
-        '[https://api.github.com/repos/${{github.repository}}/actions/runs/${{ github.run_id }}/jobs' \
-        | jq ."jobs" | jq '.[] | select(.name | startswith("Build-OpenWrt-"))' | ."conclusion"'
+        curl -H "Authorization: Bearer ${{ github.token }}" \
+          "https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs" \
+          | jq '.jobs[] | select(.name | startswith("Build-OpenWrt-")) | .conclusion'
 
 
 
