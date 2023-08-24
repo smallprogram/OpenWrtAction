@@ -51,7 +51,14 @@ jobs:
           is_compile_error=3
         fi
         echo "compile result: $is_compile_error"
-        echo "is_compile_error=$is_compile_error" >> $GITHUB_OUTPUT
+        echo "is_compile_error_${{ matrix.platforms }}=$is_compile_error" >> $GITHUB_OUTPUT
+
+    - name: Upload Error Log To Artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: compile_status
+        path: ${{ env.LOGFILES }}/*
+        retention-days: 5    
 
   job_organize_tags:
     needs: [job_build]
@@ -63,11 +70,11 @@ jobs:
     - name: Get Values
       id: organize_tags
       run: |
-        x86_compile_error="${{ needs.job_build.outputs.X86.compile.is_compile_error }}"
+        x86_compile_error="${{ needs.job_build.outputs.compile.is_compile_error_X86 }}"
         echo $x86_compile_error
-        r5s_compile_error="${{ needs.job_build.outputs.R5S.compile.is_compile_error }}"
+        r5s_compile_error="${{ needs.job_build.outputs.compile.is_compile_error_R5S }}"
         echo $r5s_compile_error
-        r4s_compile_error="${{ needs.job_build.outputs.R4S.compile.is_compile_error }}"
+        r4s_compile_error="${{ needs.job_build.outputs.compile.is_compile_error_R4S }}"
         echo $r4s_compile_error
 
 
