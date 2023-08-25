@@ -94,10 +94,18 @@
 -|-|-|-
 X86平台|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/X86.config|
 Pi4_Model_B|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/Pi4_Model_B.config
+H66K软路由|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/H66K.config
+H68K软路由|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/H68K.config
+H69K软路由|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/H69K.config
 R5S软路由|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R5S.config
+R5C软路由|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R5C.config
 R4S软路由|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config
+R4SE软路由|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4SE.config
 R2S软路由|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2S.config
 R2C软路由|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2C.config
+R66S(电犀牛)软路由|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R66S.config
+R68S(电犀牛)软路由|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R68S.config
+
 
 
 

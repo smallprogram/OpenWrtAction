@@ -73,10 +73,17 @@
 -|-|-|-
 X86 platform|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/x64.config|
 Pi4_Model_B|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/Pi4_Model_B.config
+H66K soft routing|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/H66K.config
+H68K soft routing|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/H68K.config
+H69K soft routing|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/H69K.config
 R5S soft routing|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R5S.config
+R5C soft routing|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R5C.config
 R4S soft routing|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4S.config
+R4SE soft routing|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R4SE.config
 R2S soft routing|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2S.config
 R2C soft routing|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R2C.config
+R66S soft routing|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R66S.config
+R68S soft routing|256Mb|1024Mb|https://github.com/smallprogram/OpenWrtAction/blob/main/config/R68S.config
 
 ## Related screenshots of specific functional components:
 ![image](/source/main.png)
