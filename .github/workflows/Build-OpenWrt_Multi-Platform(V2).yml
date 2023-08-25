@@ -254,13 +254,14 @@ jobs:
             echo "status=success" >> $GITHUB_OUTPUT
           else
             echo "status=failure" >> $GITHUB_OUTPUT
+            exit $is_complie_error
           fi
 
           df -hT
 
       - name: Upload Error Log To Artifact
         uses: actions/upload-artifact@v3
-        if: steps.compile_tools.outputs.status == 'failure' || steps.compile_tools.outcome=='cancelled' || steps.compile_tools.outcome=='failure'
+        if: steps.compile_tools.conclusion == 'failure' || steps.compile_tools.conclusion == 'timed_out' || steps.compile_tools.conclusion == 'cancelled' || steps.compile_tools.outputs.status == 'failure'
         with:
           name: log_error_${{ matrix.platforms }}_compile_tools
           path: ${{ env.LOGFILES }}/*
@@ -301,6 +302,7 @@ jobs:
             echo "status=success" >> $GITHUB_OUTPUT
           else
             echo "status=failure" >> $GITHUB_OUTPUT
+            exit $is_complie_error
           fi
           
           # rm -rf .config* dl bin
@@ -308,7 +310,7 @@ jobs:
 
       - name: Upload Error Log To Artifact
         uses: actions/upload-artifact@v3
-        if: steps.compile_toolchain.outputs.status == 'failure' || steps.compile_toolchain.outcome=='cancelled' || steps.compile_toolchain.outcome=='failure'
+        if: steps.compile_toolchain.conclusion == 'failure' || steps.compile_toolchain.conclusion == 'timed_out' || steps.compile_toolchain.conclusion == 'cancelled' || steps.compile_toolchain.outputs.status == 'failure'
         with:
           name: log_error_${{ matrix.platforms }}_compile_toolchain
           path: ${{ env.LOGFILES }}/*
@@ -475,7 +477,7 @@ jobs:
 
     - name: Upload Error Log To Artifact
       uses: actions/upload-artifact@v3
-      if: steps.compile.outputs.status == 'failure' || steps.compile.outcome=='cancelled' || steps.compile.outcome=='failure'
+      if: steps.compile.conclusion == 'failure' || steps.compile.conclusion == 'timed_out' || steps.compile.conclusion == 'cancelled' || steps.compile.outputs.status == 'failure'
       with:
         name: log_error_${{ matrix.platforms }}_generate_frimware
         path: ${{ env.LOGFILES }}/*
