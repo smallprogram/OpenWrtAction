@@ -263,7 +263,7 @@ jobs:
         uses: actions/upload-artifact@v3
         if:  steps.compile_tools.outputs.status != 'success' || steps.compile_tools.conclusion == 'failure' || steps.compile_tools.conclusion == 'timed_out' || steps.compile_tools.conclusion == 'cancelled'
         with:
-          name: log_error_${{ matrix.platforms }}_compile_tools
+          name: log_error_${{ matrix.platforms }}_compile_tools_${{ needs.job_init.outputs.output_release_tag }}
           path: ${{ env.LOGFILES }}/*
           retention-days: 5
 
@@ -312,7 +312,7 @@ jobs:
         uses: actions/upload-artifact@v3
         if: steps.compile_toolchain.outputs.status != 'success' || steps.compile_toolchain.conclusion == 'failure' || steps.compile_toolchain.conclusion == 'timed_out' || steps.compile_toolchain.conclusion == 'cancelled' 
         with:
-          name: log_error_${{ matrix.platforms }}_compile_toolchain
+          name: log_error_${{ matrix.platforms }}_compile_toolchain_${{ needs.job_init.outputs.output_release_tag }}
           path: ${{ env.LOGFILES }}/*
           retention-days: 5
 
@@ -337,7 +337,7 @@ jobs:
         uses: actions/upload-artifact@v3
         if: steps.generate_image.outputs.status == 'success'
         with:
-          name: TOOLCHAIN_IMAGE_${{ matrix.platforms }}
+          name: TOOLCHAIN_IMAGE_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
           path: ${{ env.TOOLCHAIN }}/output.tar.gz
           retention-days: 5
 
@@ -404,7 +404,7 @@ jobs:
       id : download
       uses: actions/download-artifact@v3
       with:
-        name: TOOLCHAIN_IMAGE_${{ matrix.platforms }}
+        name: TOOLCHAIN_IMAGE_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
         path: download
 
     - name: File Extraction
@@ -479,7 +479,7 @@ jobs:
       uses: actions/upload-artifact@v3
       if: steps.compile.outputs.status != 'success' || steps.compile.conclusion == 'failure' || steps.compile.conclusion == 'timed_out' || steps.compile.conclusion == 'cancelled' 
       with:
-        name: log_error_${{ matrix.platforms }}_generate_frimware
+        name: log_error_${{ matrix.platforms }}_generate_frimware_${{ needs.job_init.outputs.output_release_tag }}
         path: ${{ env.LOGFILES }}/*
         retention-days: 5
 
@@ -623,7 +623,7 @@ jobs:
       uses: actions/upload-artifact@v3
       if: steps.tag.outputs.status == 'success'
       with:
-        name: release_tag
+        name: release_tag_${{ needs.job_init.outputs.output_release_tag }}
         path: release.txt
         retention-days: 5
 
@@ -647,7 +647,7 @@ jobs:
     - name: Download Tags
       uses: actions/download-artifact@v3
       with:
-        name: release_tag
+        name: release_tag_${{ needs.job_init.outputs.output_release_tag }}
 
     - name: Organize Tags
       id: organize_tags
