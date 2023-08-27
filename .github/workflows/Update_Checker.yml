@@ -69,9 +69,9 @@ env:
   REPO_PATH_OpenClash : "openclash"
 
   # jerrykuku/luci-theme-argon主题源码
-  # REPO_URL_ThemeArgon: https://github.com/jerrykuku/luci-theme-argon
-  # REPO_BRANCH_ThemeArgon: master
-  # REPO_PATH_ThemeArgon : "luci-theme-argon"
+  REPO_URL_ThemeArgon: https://github.com/jerrykuku/luci-theme-argon
+  REPO_BRANCH_ThemeArgon: master
+  REPO_PATH_ThemeArgon : "luci-theme-argon"
 
   # luci-app-argon-config主题配置源码
   REPO_URL_ArgonConfig: https://github.com/jerrykuku/luci-app-argon-config
@@ -172,10 +172,10 @@ jobs:
         echo "commitHash_OpenClash=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         cd
 
-        # git clone --depth 1 $REPO_URL_ThemeArgon -b $REPO_BRANCH_ThemeArgon $REPO_PATH_ThemeArgon
-        # cd $REPO_PATH_ThemeArgon
-        # echo "commitHash_ThemeArgon=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
-        # cd
+        git clone --depth 1 $REPO_URL_ThemeArgon -b $REPO_BRANCH_ThemeArgon $REPO_PATH_ThemeArgon
+        cd $REPO_PATH_ThemeArgon
+        echo "commitHash_ThemeArgon=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        cd
 
         git clone --depth 1 $REPO_URL_ArgonConfig -b $REPO_BRANCH_ArgonConfig $REPO_PATH_ArgonConfig 
         cd $REPO_PATH_ArgonConfig 
@@ -201,6 +201,7 @@ jobs:
         echo "commitHash_PassWall_Luci: ${{ steps.getHash.outputs.commitHash_PassWall_Luci }}"
         echo "commitHash_PassWall2: ${{ steps.getHash.outputs.commitHash_PassWall2 }}"
         echo "commitHash_OpenClash: ${{ steps.getHash.outputs.commitHash_OpenClash }}"
+        echo "commitHash_ThemeArgon: ${{ steps.getHash.outputs.commitHash_ThemeArgon }}"
         echo "commitHash_ArgonConfig: ${{ steps.getHash.outputs.commitHash_ArgonConfig }}"
         echo "commitHash_All=\
           ${{steps.getHash.outputs.commitHash_smallprogramAction}}\
@@ -214,6 +215,7 @@ jobs:
           ${{steps.getHash.outputs.commitHash_PassWall_Luci}}\
           ${{steps.getHash.outputs.commitHash_PassWall2}}\
           ${{steps.getHash.outputs.commitHash_OpenClash}}\
+          ${{steps.getHash.outputs.commitHash_ThemeArgon}}\
           ${{steps.getHash.outputs.commitHash_ArgonConfig}}" >> $GITHUB_OUTPUT
 
     - name: Compare Commit Hash
@@ -238,6 +240,7 @@ jobs:
         echo ${{ steps.getHash.outputs.commitHash_PassWall_Luci }} | tee .commitHash_PassWall_Luci
         echo ${{ steps.getHash.outputs.commitHash_PassWall2 }} | tee .commitHash_PassWall2
         echo ${{ steps.getHash.outputs.commitHash_OpenClash }} | tee .commitHash_OpenClash
+        echo ${{ steps.getHash.outputs.commitHash_ThemeArgon }} | tee .commitHash_ThemeArgon
         echo ${{ steps.getHash.outputs.commitHash_ArgonConfig }} | tee .commitHash_ArgonConfig
         echo ${{ steps.combHeader.outputs.commitHash_All }} | tee .commitHash_All
         
@@ -246,13 +249,13 @@ jobs:
       with:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
-          retain_days: 2
+          retain_days: 1
           keep_minimum_runs: 3
 
     - name: Remove old Releases
       uses: smallprogram/delete-older-releases@master
       with:
-        keep_latest: 10
+        keep_latest: 5
         keep_min_download_counts: 1
         delete_tags: true
       env:
