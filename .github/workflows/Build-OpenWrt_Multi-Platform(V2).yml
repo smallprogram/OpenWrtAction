@@ -415,9 +415,9 @@ jobs:
         tar -xzf download/output.tar.gz
         rm -rf download/*
         sudo chown -R $USER:$GROUPS /workdir/openwrt
-        echo
-        echo "directory size:"
-        du -hs /workdir/openwrt/
+        # echo
+        # echo "directory size:"
+        # du -hs /workdir/openwrt/
         cd openwrt
         mkdir -p compile_log
         cd compile_log
@@ -466,9 +466,9 @@ jobs:
           exit $is_complie_error
         fi
 
-        echo
-        echo "directory size:"
-        du -hs $GITHUB_WORKSPACE/openwrt/
+        # echo
+        # echo "directory size:"
+        # du -hs $GITHUB_WORKSPACE/openwrt/
 
         grep '^CONFIG_TARGET.*DEVICE.*=y' .config | sed -r 's/.*DEVICE_(.*)=y/\1/' > DEVICE_NAME
         [ -s DEVICE_NAME ] && echo "DEVICE_NAME=_$(cat DEVICE_NAME)" >> $GITHUB_ENV
@@ -484,16 +484,16 @@ jobs:
         retention-days: 5
 
 
-    - name: Remove Unuselesss Files
-      id: removeunuselessfiles
-      if: steps.compile.outputs.status == 'success'
-      run: |
-        df -hT
-        rm -rf  $GITHUB_WORKSPACE/openwrt/build_dir
-        rm -rf  $GITHUB_WORKSPACE/openwrt/dl
-        rm -rf  $GITHUB_WORKSPACE/openwrt/staging_dir
-        rm -rf  $GITHUB_WORKSPACE/openwrt/toolchain
-        rm -rf  $GITHUB_WORKSPACE/openwrt/tools
+    # - name: Remove Unuselesss Files
+    #   id: removeunuselessfiles
+    #   if: steps.compile.outputs.status == 'success'
+    #   run: |
+    #     df -hT
+    #     rm -rf  $GITHUB_WORKSPACE/openwrt/build_dir
+    #     rm -rf  $GITHUB_WORKSPACE/openwrt/dl
+    #     rm -rf  $GITHUB_WORKSPACE/openwrt/staging_dir
+    #     rm -rf  $GITHUB_WORKSPACE/openwrt/toolchain
+    #     rm -rf  $GITHUB_WORKSPACE/openwrt/tools
 
     - name: Check Space Usage
       if: (!cancelled())
