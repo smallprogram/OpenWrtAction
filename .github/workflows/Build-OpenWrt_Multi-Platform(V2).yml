@@ -206,8 +206,8 @@ jobs:
         id: package
         run: |
           df -hT
-          # mkdir -p $GITHUB_WORKSPACE/openwrt/dl
-          # cp -r $GITHUB_WORKSPACE/library/* $GITHUB_WORKSPACE/openwrt/dl
+          mkdir -p $GITHUB_WORKSPACE/openwrt/dl
+          cp -r $GITHUB_WORKSPACE/library/* $GITHUB_WORKSPACE/openwrt/dl
           cd $GITHUB_WORKSPACE/openwrt
           # echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config
           make download -j8
