@@ -43,24 +43,38 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/le
 # Close running yards
 # sed -i 's/console=tty0//g'  target/linux/x86/image/Makefile
 
-# Add default login background
+
 rm -rf ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
 mkdir -p ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
+
 if [ ! -n "$is_wsl2op" ]; then
+    # Add default login background
     cp -r $GITHUB_WORKSPACE/source/video/* ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background/
     cp -r $GITHUB_WORKSPACE/source/img/* ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background/
+
+    # Inject download package
+    mkdir -p $GITHUB_WORKSPACE/openwrt/dl
+    cp -r $GITHUB_WORKSPACE/library/* $GITHUB_WORKSPACE/openwrt/dl/
+
+    # Fixed qmi_wwan_f complie error
+    cp -r $GITHUB_WORKSPACE/patches/qmi_wwan_f.c $GITHUB_WORKSPACE/openwrt/package/wwan/driver/fibocom_QMI_WWAN/src/qmi_wwan_f.c
+
 else
+    # Add default login background
     cp -r ../OpenWrtAction/source/video/* ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background/
     cp -r ../OpenWrtAction/source/img/* ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background/
-fi
 
-# Fixed qmi_wwan_f complie error
-if [ ! -n "$is_wsl2op" ]; then
-    cp -r $GITHUB_WORKSPACE/patches/qmi_wwan_f.c $GITHUB_WORKSPACE/openwrt/package/wwan/driver/fibocom_QMI_WWAN/src/qmi_wwan_f.c
-else
+    # Inject download package
+    mkdir -p dl
+    cp -r ../OpenWrtAction/library/* dl/
+    
+    # Fixed qmi_wwan_f complie error
     cp -r ../OpenWrtAction/patches/qmi_wwan_f.c ./package/wwan/driver/fibocom_QMI_WWAN/src/qmi_wwan_f.c
 fi
 
+
+
+          
 # Diy
 # rm -rf ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
 # wget -P ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status https://github.com/smallprogram/OpenWrtAction/raw/main/source/openwrtfile/index.htm
