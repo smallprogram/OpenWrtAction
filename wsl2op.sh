@@ -319,7 +319,7 @@ function Func_Compile_Firmware() {
             Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make tools/compile -j$(($(nproc) + 1)) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile1_tools.log
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make tools/compile -j$(nproc) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile1_tools.log
             is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
@@ -337,7 +337,7 @@ function Func_Compile_Firmware() {
             Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            make tools/compile -j$(($(nproc) + 1)) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile1_tools.log
+            make tools/compile -j$(nproc) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile1_tools.log
             is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
@@ -363,7 +363,7 @@ function Func_Compile_Firmware() {
             Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make toolchain/compile -j$(($(nproc) + 1)) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make toolchain/compile -j$(nproc) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
             is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
@@ -381,7 +381,7 @@ function Func_Compile_Firmware() {
             Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            make toolchain/compile -j$(($(nproc) + 1)) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
+            make toolchain/compile -j$(nproc) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
             is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
