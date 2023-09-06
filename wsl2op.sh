@@ -128,7 +128,7 @@ function Func_DIY2_Script(){
     Func_LogMessage "\033[31m 开始执行DIY2设置脚本 \033[0m" "\033[31m Start executing the DIY2 setup script \033[0m"
     sleep 1s
     
-    bash ../OpenWrtAction/diy_script/diy-part2.sh
+    bash ../OpenWrtAction/diy_script/diy-part2.sh 1
 
     Func_LogMessage "\033[31m DIY2脚本执行完成 \033[0m" "\033[31m DIY script execution completed \033[0m"
     sleep 2s
