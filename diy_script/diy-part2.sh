@@ -56,6 +56,9 @@ wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background
 wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/video3.mp4
 wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/img/1.jpg
 
+# Fixed qmi_wwan_f complie error
+cp -r $GITHUB_WORKSPACE/patches/qmi_wwan_f.c $GITHUB_WORKSPACE/openwrt/package/wwan/driver/fibocom_QMI_WWAN/src/qmi_wwan_f.c
+
 
 # rm -rf ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background
 # mkdir -p ./feeds/luci/themes/luci-theme-argon-mod/htdocs/luci-static/argon/background
