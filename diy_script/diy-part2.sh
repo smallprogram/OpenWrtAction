@@ -57,7 +57,7 @@ if [ ! -n "$is_wsl2op" ]; then
     cp -r $GITHUB_WORKSPACE/library/* $GITHUB_WORKSPACE/openwrt/dl/
 
     # Fixed qmi_wwan_f complie error
-    cp -r $GITHUB_WORKSPACE/patches/qmi_wwan_f.c $GITHUB_WORKSPACE/openwrt/package/wwan/driver/fibocom_QMI_WWAN/src/qmi_wwan_f.c
+    # cp -r $GITHUB_WORKSPACE/patches/qmi_wwan_f.c $GITHUB_WORKSPACE/openwrt/package/wwan/driver/fibocom_QMI_WWAN/src/qmi_wwan_f.c
 
 else
     # Add default login background
@@ -67,9 +67,9 @@ else
     # Inject download package
     mkdir -p dl
     cp -r ../OpenWrtAction/library/* dl/
-    
+
     # Fixed qmi_wwan_f complie error
-    cp -r ../OpenWrtAction/patches/qmi_wwan_f.c ./package/wwan/driver/fibocom_QMI_WWAN/src/qmi_wwan_f.c
+    # cp -r ../OpenWrtAction/patches/qmi_wwan_f.c ./package/wwan/driver/fibocom_QMI_WWAN/src/qmi_wwan_f.c
 fi
 
 
