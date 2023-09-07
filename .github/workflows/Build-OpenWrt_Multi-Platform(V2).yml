@@ -341,6 +341,7 @@ jobs:
 
   job_build:
     needs: [job_init, job_build_toolchain]
+    if: ${{ always() }}
     runs-on: ubuntu-latest
     name: Build-OpenWrt-${{ matrix.platforms }}
     strategy:
