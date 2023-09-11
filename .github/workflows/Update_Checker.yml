@@ -49,14 +49,14 @@ env:
   REPO_PATH_HelloWorld : "helloworld"
 
   # Passwall packages源码
-  REPO_URL_PassWall_Packages: https://github.com/xiaorouji/openwrt-passwall
-  REPO_BRANCH_PassWall_Packages: packages
+  REPO_URL_PassWall_Packages: https://github.com/xiaorouji/openwrt-passwall-packages
+  REPO_BRANCH_PassWall_Packages: main
   REPO_PATH_PassWall_Packages : "openwrt-passwall_packages"
 
   # Passwall luci源码
-  REPO_URL_PassWall_Luci: https://github.com/xiaorouji/openwrt-passwall
-  REPO_BRANCH_PassWall_Luci: luci
-  REPO_PATH_PassWall_Luci : "openwrt-passwall_luci"
+  REPO_URL_PassWall: https://github.com/xiaorouji/openwrt-passwall
+  REPO_BRANCH_PassWall: main
+  REPO_PATH_PassWall : "openwrt-passwall"
 
   # Passwall2源码
   REPO_URL_PassWall2: https://github.com/xiaorouji/openwrt-passwall2.git
@@ -157,9 +157,9 @@ jobs:
         echo "commitHash_PassWall_Package=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         cd
 
-        git clone --depth 1 $REPO_URL_PassWall_Luci -b $REPO_BRANCH_PassWall_Luci $REPO_PATH_PassWall_Luci
-        cd $REPO_PATH_PassWall_Luci
-        echo "commitHash_PassWall_Luci=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        git clone --depth 1 $REPO_URL_PassWall -b $REPO_BRANCH_PassWall $REPO_PATH_PassWall
+        cd $REPO_PATH_PassWall
+        echo "commitHash_PassWall=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone --depth 1 $REPO_URL_PassWall2 -b $REPO_BRANCH_PassWall2 $REPO_PATH_PassWall2
@@ -190,21 +190,7 @@ jobs:
     - name: Show Commit Head and Combination Heads
       id: combHeader
       run: |
-        # echo "commitHash_smallprogramAction: ${{ steps.getHash.outputs.commitHash_smallprogramAction }}"
-        echo "commitHash_Lede: ${{ steps.getHash.outputs.commitHash_Lede }}"
-        echo "commitHash_Lede_Package: ${{ steps.getHash.outputs.commitHash_Lede_Package }}"
-        echo "commitHash_Lede_Luci: ${{ steps.getHash.outputs.commitHash_Lede_Luci }}"
-        echo "commitHash_OPENWRT_ROUTING: ${{ steps.getHash.outputs.commitHash_OPENWRT_ROUTING }}"
-        echo "commitHash_OPENWRT_TELEPHONY: ${{ steps.getHash.outputs.commitHash_OPENWRT_TELEPHONY }}"
-        echo "commitHash_HelloWorld: ${{ steps.getHash.outputs.commitHash_HelloWorld }}"
-        echo "commitHash_PassWall_Package: ${{ steps.getHash.outputs.commitHash_PassWall_Package }}"
-        echo "commitHash_PassWall_Luci: ${{ steps.getHash.outputs.commitHash_PassWall_Luci }}"
-        echo "commitHash_PassWall2: ${{ steps.getHash.outputs.commitHash_PassWall2 }}"
-        echo "commitHash_OpenClash: ${{ steps.getHash.outputs.commitHash_OpenClash }}"
-        echo "commitHash_ThemeArgon: ${{ steps.getHash.outputs.commitHash_ThemeArgon }}"
-        echo "commitHash_ArgonConfig: ${{ steps.getHash.outputs.commitHash_ArgonConfig }}"
         echo "commitHash_All=\
-          ${{steps.getHash.outputs.commitHash_smallprogramAction}}\
           ${{steps.getHash.outputs.commitHash_Lede}}\
           ${{steps.getHash.outputs.commitHash_Lede_Package}}\
           ${{steps.getHash.outputs.commitHash_Lede_Luci}}\
@@ -212,7 +198,7 @@ jobs:
           ${{steps.getHash.outputs.commitHash_OPENWRT_TELEPHONY}}\
           ${{steps.getHash.outputs.commitHash_HelloWorld}}\
           ${{steps.getHash.outputs.commitHash_PassWall_Package}}\
-          ${{steps.getHash.outputs.commitHash_PassWall_Luci}}\
+          ${{steps.getHash.outputs.commitHash_PassWall}}\
           ${{steps.getHash.outputs.commitHash_PassWall2}}\
           ${{steps.getHash.outputs.commitHash_OpenClash}}\
           ${{steps.getHash.outputs.commitHash_ThemeArgon}}\
@@ -229,19 +215,6 @@ jobs:
     - name: Save New Commit Hash
       if: steps.cacheHash.outputs.cache-hit != 'true'
       run: |
-        # echo ${{ steps.getHash.outputs.commitHash_smallprogramAction }} | tee .commitHash_smallprogramAction
-        echo ${{ steps.getHash.outputs.commitHash_Lede }} | tee .commitHash_Lede
-        echo ${{ steps.getHash.outputs.commitHash_Lede_Package }} | tee .commitHash_Lede_Package
-        echo ${{ steps.getHash.outputs.commitHash_Lede_Luci }} | tee .commitHash_Lede_Luci
-        echo ${{ steps.getHash.outputs.commitHash_OPENWRT_ROUTING }} | tee .commitHash_OPENWRT_ROUTING
-        echo ${{ steps.getHash.outputs.commitHash_OPENWRT_TELEPHONY }} | tee .commitHash_OPENWRT_TELEPHONY
-        echo ${{ steps.getHash.outputs.commitHash_HelloWorld }} | tee .commitHash_HelloWorld
-        echo ${{ steps.getHash.outputs.commitHash_PassWall_Package }} | tee .commitHash_PassWall_Package
-        echo ${{ steps.getHash.outputs.commitHash_PassWall_Luci }} | tee .commitHash_PassWall_Luci
-        echo ${{ steps.getHash.outputs.commitHash_PassWall2 }} | tee .commitHash_PassWall2
-        echo ${{ steps.getHash.outputs.commitHash_OpenClash }} | tee .commitHash_OpenClash
-        echo ${{ steps.getHash.outputs.commitHash_ThemeArgon }} | tee .commitHash_ThemeArgon
-        echo ${{ steps.getHash.outputs.commitHash_ArgonConfig }} | tee .commitHash_ArgonConfig
         echo ${{ steps.combHeader.outputs.commitHash_All }} | tee .commitHash_All
         
     - name: Delete workflow runs
