@@ -610,7 +610,7 @@ jobs:
         git -C openwrt/feeds/passwall_packages log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Passwall Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/passwall_luci log -n $COMMIT_LOG_NUM >> release.txt
+        git -C openwrt/feeds/passwall log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Passwall2 Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         git -C openwrt/feeds/passwall2 log -n $COMMIT_LOG_NUM >> release.txt
