@@ -60,11 +60,13 @@ jobs:
     - name: Generate Release Tag
       id: tag
       run: |
+        echo -e ${latest_tag}
         changelog=""
         while IFS= read -r line; do
           changelog="${changelog}- $line\n"
         done < <(git log --oneline ${latest_tag}..HEAD --pretty=format:'%h %s by @%an in #%h')
         changelog=${changelog%$'\n'}
+        echo -e $changelog
 
         echo "## :mega:Update content" >> release.txt
 
