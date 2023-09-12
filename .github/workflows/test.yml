@@ -60,6 +60,7 @@ jobs:
     - name: Generate Release Tag
       id: tag
       run: |
+        latest_tag=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r '.tag_name')
         echo -e ${latest_tag}
         changelog=""
         while IFS= read -r line; do
