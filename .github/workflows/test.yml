@@ -60,12 +60,12 @@ jobs:
     - name: Generate Release Tag
       id: tag
       run: |
-        latest_tag=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r '.tag_name')
-        echo -e ${latest_tag}
+        latest_tag_sha=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/git/ref/tags/${{ steps.get-latest-tag.outputs.latest_tag }}" | jq -r '.object.sha')
+        echo "Latest Tag SHA: $latest_tag_sha"
         changelog=""
         while IFS= read -r line; do
           changelog="${changelog}- $line\n"
-        done < <(git log --oneline ${latest_tag}..HEAD --pretty=format:'%h %s by @%an in #%h')
+        done < <(git log --oneline $latest_tag_sha..HEAD --pretty=format:'%h %s by @%an in #%h')
         changelog=${changelog%$'\n'}
         echo -e $changelog
 
