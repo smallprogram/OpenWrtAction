@@ -50,53 +50,70 @@ jobs:
 
 
     steps:
+
+    - name: Maximize Build Space
+      uses: easimon/maximize-build-space@master
+      with:
+        root-reserve-mb: 6144
+        swap-size-mb: 1024
+        remove-dotnet: 'true'
+        remove-android: 'true'
+        remove-haskell: 'true'
+        remove-codeql: 'true'
+        remove-docker-images: 'true'
+
+
+
     - name: Checkout
       uses: actions/checkout@main
       with:
         fetch-depth: 0
 
 
+    - name: SSH connection to Actions
+      uses: mxschmitt/action-tmate@v3.16
+      if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
-    - name: Generate Release Tag
-      id: tag
-      run: |
-        ls
-        git log
-        latest_tag=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r '.tag_name')
-        echo -e ${latest_tag}
-        changelog=""
-        while IFS= read -r line; do
-          changelog="${changelog}- $line\n"
-        done < <(git log --oneline ${latest_tag}..HEAD --pretty=format:'%h %s by @%an in #%h')
-        changelog=${changelog%$'\n'}
-        echo -e $changelog
+    # - name: Generate Release Tag
+    #   id: tag
+    #   run: |
+    #     ls
+    #     git log
+    #     latest_tag=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r '.tag_name')
+    #     echo -e ${latest_tag}
+    #     changelog=""
+    #     while IFS= read -r line; do
+    #       changelog="${changelog}- $line\n"
+    #     done < <(git log --oneline ${latest_tag}..HEAD --pretty=format:'%h %s by @%an in #%h')
+    #     changelog=${changelog%$'\n'}
+    #     echo -e $changelog
 
-        echo "## :mega:Update content" >> release.txt
+    #     echo "## :mega:Update content" >> release.txt
 
-        echo "![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/${{needs.job_init.outputs.output_release_tag}}/total?style=flat-square)" >> release.txt
+    #     echo "![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/${{needs.job_init.outputs.output_release_tag}}/total?style=flat-square)" >> release.txt
 
-        echo "### Firmware Information" >> release.txt
+    #     echo "### Firmware Information" >> release.txt
 
-        echo "**:loudspeaker:Cancel the ext4 format and only keep the squashfs format.**" >> release.txt
-        echo "**:computer:Including traditional IMG format firmware and UEFI boot firmware.**" >> release.txt
-        echo "**:cd:Including qcow2 format firmware and UEFI boot firmware supporting pve virtual machine.**" >> release.txt
-        echo "**:cd:Including vdi format firmware and UEFI boot firmware supporting Visual Box virtual machine.**" >> release.txt
-        echo "**:cd:Including vhdx format firmware and UEFI boot firmware supporting Hyper-v virtual machines.**" >> release.txt
-        echo "**:dvd:Including vmdk format firmware and UEFI boot firmware that support ESXi virtual machines (8.0 requires tool conversion).**" >> release.txt
-        echo "" >> release.txt
+    #     echo "**:loudspeaker:Cancel the ext4 format and only keep the squashfs format.**" >> release.txt
+    #     echo "**:computer:Including traditional IMG format firmware and UEFI boot firmware.**" >> release.txt
+    #     echo "**:cd:Including qcow2 format firmware and UEFI boot firmware supporting pve virtual machine.**" >> release.txt
+    #     echo "**:cd:Including vdi format firmware and UEFI boot firmware supporting Visual Box virtual machine.**" >> release.txt
+    #     echo "**:cd:Including vhdx format firmware and UEFI boot firmware supporting Hyper-v virtual machines.**" >> release.txt
+    #     echo "**:dvd:Including vmdk format firmware and UEFI boot firmware that support ESXi virtual machines (8.0 requires tool conversion).**" >> release.txt
+    #     echo "" >> release.txt
 
-        echo "## What's Changed" >> release.txt
+    #     echo "## What's Changed" >> release.txt
 
-        echo -e $changelog >> release.txt
+    #     echo -e $changelog >> release.txt
 
-        touch release.txt
-        echo "status=success" >> $GITHUB_OUTPUT
+    #     touch release.txt
+    #     echo "status=success" >> $GITHUB_OUTPUT
 
 
-    - name: Upload Firmware To Release
-      uses: softprops/action-gh-release@v0.1.15
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: test
-        body_path: release.txt
+    # - name: Upload Firmware To Release
+    #   uses: softprops/action-gh-release@v0.1.15
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    #   with:
+    #     tag_name: test
+    #     body_path: release.txt
