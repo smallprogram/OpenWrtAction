@@ -126,7 +126,7 @@ jobs:
       - name: Maximize Build Space
         uses: easimon/maximize-build-space@master
         with:
-          root-reserve-mb: 2048
+          root-reserve-mb: 6144
           swap-size-mb: 1024
           remove-dotnet: 'true'
           remove-android: 'true'
@@ -362,7 +362,7 @@ jobs:
     - name: Maximize Build Space
       uses: easimon/maximize-build-space@master
       with:
-        root-reserve-mb: 2048
+        root-reserve-mb: 6144
         swap-size-mb: 1024
         remove-dotnet: 'true'
         remove-android: 'true'
@@ -480,16 +480,16 @@ jobs:
         retention-days: 5
 
 
-    # - name: Remove Unuselesss Files
-    #   id: removeunuselessfiles
-    #   if: steps.compile.outputs.status == 'success'
-    #   run: |
-    #     df -hT
-    #     rm -rf  $GITHUB_WORKSPACE/openwrt/build_dir
-    #     rm -rf  $GITHUB_WORKSPACE/openwrt/dl
-    #     rm -rf  $GITHUB_WORKSPACE/openwrt/staging_dir
-    #     rm -rf  $GITHUB_WORKSPACE/openwrt/toolchain
-    #     rm -rf  $GITHUB_WORKSPACE/openwrt/tools
+    - name: Remove Unuselesss Files
+      id: removeunuselessfiles
+      if: steps.compile.outputs.status == 'success'
+      run: |
+        df -hT
+        rm -rf  $GITHUB_WORKSPACE/openwrt/build_dir
+        rm -rf  $GITHUB_WORKSPACE/openwrt/dl
+        rm -rf  $GITHUB_WORKSPACE/openwrt/staging_dir
+        rm -rf  $GITHUB_WORKSPACE/openwrt/toolchain
+        rm -rf  $GITHUB_WORKSPACE/openwrt/tools
 
     - name: Check Space Usage
       if: (!cancelled())
