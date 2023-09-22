@@ -102,7 +102,7 @@ on:
         required: false
         default: 'false'
   schedule:
-    - cron: 0 */6 * * *
+    - cron: 0 */8 * * *
 
 jobs:
   check:
