@@ -79,6 +79,7 @@ jobs:
       with:
         keep_latest: 5
         keep_min_download_counts: 1
+        delete_expired_data: 210
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
