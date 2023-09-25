@@ -51,28 +51,28 @@ jobs:
 
     steps:
 
-    - name: Maximize Build Space
-      uses: easimon/maximize-build-space@master
-      with:
-        root-reserve-mb: 6144
-        swap-size-mb: 1024
-        remove-dotnet: 'true'
-        remove-android: 'true'
-        remove-haskell: 'true'
-        remove-codeql: 'true'
-        remove-docker-images: 'true'
+    # - name: Maximize Build Space
+    #   uses: easimon/maximize-build-space@master
+    #   with:
+    #     root-reserve-mb: 6144
+    #     swap-size-mb: 1024
+    #     remove-dotnet: 'true'
+    #     remove-android: 'true'
+    #     remove-haskell: 'true'
+    #     remove-codeql: 'true'
+    #     remove-docker-images: 'true'
 
 
 
-    - name: Checkout
-      uses: actions/checkout@main
-      with:
-        fetch-depth: 0
+    # - name: Checkout
+    #   uses: actions/checkout@main
+    #   with:
+    #     fetch-depth: 0
 
 
-    - name: SSH connection to Actions
-      uses: mxschmitt/action-tmate@v3.16
-      if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
+    # - name: SSH connection to Actions
+    #   uses: mxschmitt/action-tmate@v3.16
+    #   if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
     - name: Remove old Releases
       uses: smallprogram/delete-older-releases@master
