@@ -74,6 +74,15 @@ jobs:
       uses: mxschmitt/action-tmate@v3.16
       if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
+    - name: Remove old Releases
+      uses: smallprogram/delete-older-releases@master
+      with:
+        keep_latest: 5
+        keep_min_download_counts: 1
+        delete_tags: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
+
     # - name: Generate Release Tag
     #   id: tag
     #   run: |
