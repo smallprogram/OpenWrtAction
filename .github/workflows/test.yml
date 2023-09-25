@@ -19,11 +19,11 @@ on:
         required: false
         default: 'false'
       delete_expired_data:
-        description: 'Whether to display detailed information about compilation'
+        description: 'delete_expired_data'
         required: false
         default: '0'
       keep_min_download_counts:
-        description: 'Whether single-threaded compilation'
+        description: 'keep_min_download_counts'
         required: false
         default: '0'
   # schedule:
