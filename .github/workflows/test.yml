@@ -18,14 +18,14 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-      is_display_detailed:
+      delete_expired_data:
         description: 'Whether to display detailed information about compilation'
         required: false
-        default: 'false'
-      is_single_threaded:
+        default: '0'
+      keep_min_download_counts:
         description: 'Whether single-threaded compilation'
         required: false
-        default: 'false'
+        default: '0'
   # schedule:
   #   - cron: 0 */8 * * *
 
@@ -78,8 +78,8 @@ jobs:
       uses: smallprogram/delete-older-releases@master
       with:
         keep_latest: 5
-        keep_min_download_counts: 1
-        delete_expired_data: 100
+        keep_min_download_counts: ${{github.event.inputs.keep_min_download_counts}}
+        delete_expired_data: ${{github.event.inputs.delete_expired_data}}
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
