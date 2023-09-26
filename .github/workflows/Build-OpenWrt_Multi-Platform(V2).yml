@@ -603,14 +603,14 @@ jobs:
         echo "</details> <details> <summary> SSRP Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         git -C openwrt/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
 
-        echo "</details> <details> <summary> Passwall Packages Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/passwall_packages log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> Passwall Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        echo "</details> <details> <summary> Passwall Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         git -C openwrt/feeds/passwall log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Passwall2 Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         git -C openwrt/feeds/passwall2 log -n $COMMIT_LOG_NUM >> release.txt
+
+        echo "</details> <details> <summary> Passwall Packages Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        git -C openwrt/feeds/passwall_packages log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> OpenClash Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         git -C openwrt/feeds/OpenClash log -n $COMMIT_LOG_NUM >> release.txt
