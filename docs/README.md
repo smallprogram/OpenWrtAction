@@ -41,7 +41,6 @@
 ## 感觉不错的话，给个Star吧
 
 ## [R1软路由安装ESXi 8.0教程](R1_ESXI8.md)
-![image](pic/R1_ESXI8/banner.png)
 
 # Lean Openwrt GitHubAction
 
