@@ -114,7 +114,7 @@
 
 
 ## 具体功能组件相关截图：
-![image](/source/main.png)
+![image](/source/function.png)
 
 
 ## wsl2op.sh本地自动编译shell脚本说明
