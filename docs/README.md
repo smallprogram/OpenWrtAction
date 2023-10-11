@@ -87,6 +87,8 @@
 |vim|工具|Linux 系统上一款文本编辑器，它是操作Linux 的一款利器|lean code source|
 |nano|工具|比vi/vim要简单得多，比较适合Linux初学者使用|lean code source|
 |Openssh-sftp-server|服务|sshd内置的SFTP服务器|lean code source|
+|SmartDNS|服务|DNS服务|lean code source|
+|MosDNS|服务|DNS服务|lean code source|
 |uhttpd|服务|uhttpd server|openwrt|
 
 

@@ -62,6 +62,8 @@
 |OpenVPN Server|Service|OpenVPN Server|lean code source|
 |PPTP VPN Server|Service|PPTP VPN Server|lean code source|
 |IPSec VPN Server|Service|IPSec VPN Server|lean code source|
+|SmartDNS|Service|DNS Service|lean code source|
+|MosDNS|Service|DNS Service|lean code source|
 |ZeroTier|Plugin|Intranet penetration tool|lean code source|
 |Multi-line multicast|Plugin|Multi-line multicast tool|lean code source|
 |Turbo ACC|Plugin|Network Accelerator|lean code source|
