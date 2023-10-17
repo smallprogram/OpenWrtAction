@@ -38,7 +38,7 @@ env:
   COMMIT_LOG_NUM: 1
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
-  UPLOAD_ARTIFACT: true
+  UPLOAD_ARTIFACT: false
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
