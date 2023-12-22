@@ -199,8 +199,15 @@ jobs:
           # echo -e "\nCONFIG_ALL=y" >> .config
           # echo -e "\nCONFIG_ALL_NONSHARED=y" >> .config
           make defconfig
-          echo "config file info......................................"
-          cat .config
+          # echo "config file info......................................"
+          # cat .config
+
+      - name: Execute commands for X86 platform
+        if: matrix.platforms == 'X86'
+        run: |
+          cd openwrt
+          sed -i '/CONFIG_DEFAULT_kmod-usb-audio=y/s/=y/=n/' .confg
+          sed -i '/CONFIG_PACKAGE_kmod-media-core=y/s/=y/=n/' .config
 
       - name: Download Package
         id: package
