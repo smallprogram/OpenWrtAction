@@ -206,7 +206,7 @@ jobs:
         if: matrix.platforms == 'X86'
         run: |
           cd openwrt
-          sed -i '/CONFIG_DEFAULT_kmod-usb-audio=y/s/=y/=n/' .confg
+          sed -i '/CONFIG_DEFAULT_kmod-usb-audio=y/s/=y/=n/' .config
           sed -i '/CONFIG_PACKAGE_kmod-media-core=y/s/=y/=n/' .config
 
       - name: Download Package
