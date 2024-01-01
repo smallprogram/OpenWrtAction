@@ -607,8 +607,8 @@ jobs:
         echo "</details> <details> <summary> Openwrt telephony Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         git -C openwrt/feeds/telephony log -n $COMMIT_LOG_NUM >> release.txt
 
-        # echo "</details> <details> <summary> SSRP Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        # git -C openwrt/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
+        echo "</details> <details> <summary> SSRP Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
+        git -C openwrt/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
 
         echo "</details> <details> <summary> Passwall Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
         git -C openwrt/feeds/passwall log -n $COMMIT_LOG_NUM >> release.txt

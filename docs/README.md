@@ -62,7 +62,7 @@
 
 |名称|类型|简介|源码地址
 -|-|-|-
-|~~SSRP(Xray内核)~~|~~插件~~|~~Lean源码的亲儿子，评测说效率最高~~|https://github.com/fw876/helloworld|
+|SSRP(Xray内核)|插件|Lean源码的亲儿子，评测说效率最高|https://github.com/fw876/helloworld|
 |PassWall|插件|一款功能强大的科学工具|https://github.com/xiaorouji/openwrt-passwall|
 |PassWall2|插件|一款功能强大的科学工具|https://github.com/xiaorouji/openwrt-passwall2|
 |OpenClash|插件|配置自由度极高的科学工具|https://github.com/vernesong/OpenClash|
