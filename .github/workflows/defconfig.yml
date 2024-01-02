@@ -1,0 +1,109 @@
+#
+# Copyright (c) 2022-2023 SMALLPROGRAM <https://github.com/smallprogram/OpenWrtAction>
+#
+# This is free software, licensed under the MIT License.
+# See /LICENSE for more information.
+#
+# https://github.com/smallprogram/OpenWrtAction
+# Description: Build OpenWrt using GitHub Actions
+#
+
+name: defconfig
+
+on:
+  repository_dispatch:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
+      is_display_detailed:
+        description: 'Whether to display detailed information about compilation'
+        required: false
+        default: 'false'
+      is_single_threaded:
+        description: 'Whether single-threaded compilation'
+        required: false
+        default: 'false'
+  # schedule:
+  #   - cron: 0 */8 * * *
+
+env:
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
+  FEEDS_CONF: feeds_config/custom.feeds.conf.default
+  DIY_P1_SH: diy_script/diy-part1.sh
+  DIY_P2_SH: diy_script/diy-part2.sh
+  COMMIT_LOG_NUM: 1
+  UPLOAD_BIN_DIR: false
+  UPLOAD_FIRMWARE: true
+  UPLOAD_ARTIFACT: false
+  UPLOAD_RELEASE: true
+  TZ: Asia/Shanghai
+
+jobs:
+  job_init: 
+    runs-on: ubuntu-latest
+    name: Build-Openwrt-Init
+    outputs:
+      output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
+    steps:
+      - id: gen_release_tag
+        run: |
+          echo "release_tag=multi-platform_$(date +"%Y.%m.%d_%H.%M.%S")" >> $GITHUB_OUTPUT
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown $USER:$GROUPS /workdir
+
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 0
+
+      - name: Clone source code
+        working-directory: /workdir
+        run: |
+          git clone $REPO_URL -b $REPO_BRANCH openwrt
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+
+      - name: Load custom feeds
+        run: |
+          [ -e $FEEDS_CONF ] && cp -r $FEEDS_CONF openwrt/feeds.conf.default
+          chmod +x $DIY_P1_SH
+          cd openwrt
+          $GITHUB_WORKSPACE/$DIY_P1_SH
+
+      - name: Update feeds
+        run: cd openwrt && ./scripts/feeds update -a
+
+      - name: Install feeds
+        run: cd openwrt && ./scripts/feeds install -a
+
+      - name: Make defconfig custom configuration
+        run: |
+          chmod +x $DIY_P2_SH
+          cd openwrt
+          $GITHUB_WORKSPACE/$DIY_P2_SH
+          
+          cd ..
+          platforms=(X86 R5S R5C R4S R4SE R2S R2C H66K H68K H69K R66S R68S R_PI_3b R_PI_4b)
+          for i in "${platforms[@]}"; do
+            [ -e config/$i.config ] && cp -r config/$i.config openwrt/.config
+            cd openwrt
+            make defconfig
+            cd ..
+            cp -f openwrt/.config config/$i.config
+          done
+
+      - name: Git auto update config
+        uses: stefanzweifel/git-auto-commit-action@v5.0.0
+        id: commit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          commit_message: auto update config
+          branch: main
+          commit_author: smallprogram <smallprogram@foxmail.com>
+
+ 
