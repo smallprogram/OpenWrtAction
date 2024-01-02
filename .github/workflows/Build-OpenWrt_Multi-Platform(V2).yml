@@ -516,10 +516,8 @@ jobs:
         cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
         firmware_path=$PWD
 
-        # cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
-        # packages_path=$PWD
-        # cd $packages_path
-        # zip -r $firmware_path/packages_${{ matrix.platforms }}.zip ./
+        cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
+        zip -r $firmware_path/ipk_${{ matrix.platforms }}.zip helloworld OpenClash passwall passwall_packages passwall2
 
         cd $firmware_path
         rm -rf packages
@@ -588,7 +586,27 @@ jobs:
         echo "**:ice_cube: R_Pi_3b**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
         echo "**:ice_cube: R_Pi_4b**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
 
+        echo "## File Description" >> release.txt
+        echo "File Name|Meaning" >> release.txt
+        echo "-|-" >> release.txt
+        echo "**config_*.buildinfo**|compile configuration information" >> release.txt
+        echo "**feeds_*.buildinfo**|feeds file content and git head information during compilation" >> release.txt
+        echo "**ipk_*.zip**|Including the ipk installation files of helloworld OpenClash passwall passwall_packages passwall2" >> release.txt
+        echo "**openwrt-*.img.gz**|openwrt firmware file" >> release.txt
+        echo "**sha256sums_***|hash verification code file corresponding to the firmware" >> release.txt
+        echo "**version_*.buildinfo**|the version file corresponding to the firmware" >> release.txt
 
+        echo "## IPK File Description" >> release.txt
+        echo "**Note that sometimes the dependent ipk of passwall and helloworld will be repeated. You may see that there are many ipk in helloworld, but there are few files of passwall_packages. Don’t be surprised, install them all**" >> release.txt
+        echo "This ipk package is suitable for friends who do not want to upgrade the firmware but want to upgrade the scientific Internet plug-in." >> release.txt
+        echo "You may see that each package contains four files: Packages, Packages.gz, Packages.manifest, and Packages.sig. Their meanings are as follows:" >> release.txt
+        echo "1. Packages: This is a clear text file that contains information about all packages in the software source, such as package name, version, description, dependencies, etc. When configuring the opkg package manager to use a new software repository, opkg will download and read this file to know what packages are available in the repository." >> release.txt
+
+        echo "2. Packages.gz: This is a compressed version of the Packages file. Since Packages files can be large, compressing them can save download time and bandwidth. opkg can also handle files in this compressed format." >> release.txt
+
+        echo "3. Packages.manifest: This file is usually used for development and debugging purposes. It records the file structure and contents of each package in the software source in detail. This is useful for developers as it provides the exact contents of the package." >> release.txt
+
+        echo "4. Packages.sig: This is a signature file used to verify the integrity and origin of Packages files. When opkg downloads a Packages or Packages.gz file, it can use this signature file to confirm that the package list has not been tampered with in transit and that it was indeed published by a trusted source." >> release.txt
 
         echo "## What's Changed" >> release.txt
 
