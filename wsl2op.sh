@@ -54,7 +54,7 @@ config_list=($(ls /home/$userName/OpenWrtAction/config))
 # 默认输入超时时间，单位为秒
 timer=15
 # 编译环境默认值，1为WSL2，2为非WSL2的Linux环境。不要修改这里
-sysenv=1
+sysenv=2
 # OpenWrtAction Git URL
 owaUrl=https://github.com/smallprogram/OpenWrtAction.git
 # 是否首次编译 0否，1是
@@ -859,10 +859,11 @@ function Func_Main(){
     sleep 2s
 
 
-    Func_LogMessage "你的编译环境是WSL2吗？" "Is your compilation environment WSL2?"
+    Func_LogMessage "你的编译环境是WSL2并且没有配置appendWindowsPath吗？" "Is your compilation environment WSL2?"
     Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-    Func_LogMessage "1. 是(默认)" "1. Yes (default)" 
-    Func_LogMessage "2. 不是 " "2. NO"
+    Func_LogError "关于WSL2如何通过配置屏蔽Windows宿主机的环境变量，请参考:https://learn.microsoft.com/zh-cn/windows/wsl/wsl-config ，配置wsl.conf的appendWindowsPath值" "Regarding how WSL2 shields the environment variables of the Windows host through configuration, please refer to: https://learn.microsoft.com/zh-cn/windows/wsl/wsl-config and configure the appendWindowsPath value of wsl.conf"
+    Func_LogMessage "1. 是" "1. Yes" 
+    Func_LogMessage "2. 不是(默认) " "2. NO (default)"
     read -t $timer sysenv
     if [ ! -n "$sysenv" ]; then
             sysenv=1
@@ -870,10 +871,11 @@ function Func_Main(){
     fi
     until [[ $sysenv -ge 1 && $sysenv -le 2 ]]
     do
-        Func_LogMessage "你输入的 ${sysenv} 是啥玩应啊，看好了序号，输入数值就行了。" "What is the function of the ${sysenv} you entered? Just enter the value after taking a good look at the serial number."
-        Func_LogMessage "你的编译环境是WSL2吗？" "Is your compilation environment WSL2?"
-        Func_LogMessage "1. 是(默认)" "1. Yes (default)" 
-        Func_LogMessage "2. 不是 " "2. NO"
+        Func_LogMessage "你的编译环境是WSL2并且没有配置appendWindowsPath吗？" "Is your compilation environment WSL2?"
+        Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
+        Func_LogError "关于WSL2如何通过配置屏蔽Windows宿主机的环境变量，请参考:https://learn.microsoft.com/zh-cn/windows/wsl/wsl-config ，配置wsl.conf的appendWindowsPath值" "Regarding how WSL2 shields the environment variables of the Windows host through configuration, please refer to: https://learn.microsoft.com/zh-cn/windows/wsl/wsl-config and configure the appendWindowsPath value of wsl.conf"
+        Func_LogMessage "1. 是" "1. Yes" 
+        Func_LogMessage "2. 不是(默认) " "2. NO (default)"
         read -t $timer sysenv
         if [ ! -n "$sysenv" ]; then
             sysenv=1
