@@ -328,6 +328,9 @@ function Func_Compile_Firmware() {
     Func_LogMessage "开始执行make download!" "Start to execute make download!"
     sleep 1s
     make -j8 download | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_make_down_filename}
+
+    Func_LogMessage "开始清理download残留!" "Start cleaning up download residue!"
+    find dl -mindepth 1 -type d -exec rm -rf {} \;
     find dl -size -1024c -exec ls -l {} \;
     find dl -size -1024c -exec rm -f {} \;
 
