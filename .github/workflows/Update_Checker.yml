@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2019-2021 smallprogram
+# Copyright (c) 2019-2024 smallprogram
 #
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
@@ -10,88 +10,6 @@
 #
 
 name: Update_Checker
-
-env:
-
-  # smallprogramOpenWrtAction源码
-  REPO_URL_smallprogramAction: https://github.com/smallprogram/OpenWrtAction.git
-  REPO_BRANCH_smallprogramAction: main
-  REPO_PATH_smallprogramAction : "smallprogramOpenWrtAction"
-
-  # Lean源码
-  REPO_URL_Lede: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH_Lede: master
-  REPO_PATH_Lede : "lede"
-
-  # Lean Package源码
-  REPO_URL_Lede_Package: https://github.com/coolsnowwolf/packages
-  REPO_BRANCH_Lede_Package: master
-  REPO_PATH_Lede_Package : "ledepackage"
-
-  # Lean luci源码
-  REPO_URL_Lede_Luci: https://github.com/coolsnowwolf/luci
-  REPO_BRANCH_Lede_Luci: master
-  REPO_PATH_Lede_Luci : "luci"
-
-  # Openwrt routing源码
-  REPO_URL_OPENWRT_ROUTING: https://git.openwrt.org/feed/routing.git
-  REPO_BRANCH_OPENWRT_ROUTING: master
-  REPO_PATH_OPENWRT_ROUTING : "routing"
-
-  # Openwrt telephony源码
-  REPO_URL_OPENWRT_TELEPHONY: https://git.openwrt.org/feed/telephony.git
-  REPO_BRANCH_OPENWRT_TELEPHONY: master
-  REPO_PATH_OPENWRT_TELEPHONY : "telephony"
-  
-   # SSRP源码
-  REPO_URL_HelloWorld: https://github.com/fw876/helloworld
-  REPO_BRANCH_HelloWorld: master
-  REPO_PATH_HelloWorld : "helloworld"
-
-  # Passwall packages源码
-  REPO_URL_PassWall_Packages: https://github.com/xiaorouji/openwrt-passwall-packages
-  REPO_BRANCH_PassWall_Packages: main
-  REPO_PATH_PassWall_Packages : "openwrt-passwall_packages"
-
-  # Passwall luci源码
-  REPO_URL_PassWall: https://github.com/xiaorouji/openwrt-passwall
-  REPO_BRANCH_PassWall: main
-  REPO_PATH_PassWall : "openwrt-passwall"
-
-  # Passwall2源码
-  REPO_URL_PassWall2: https://github.com/xiaorouji/openwrt-passwall2.git
-  REPO_BRANCH_PassWall2: main
-  REPO_PATH_PassWall2 : "openwrt-passwall2"
-
-  # OpenClash源码
-  REPO_URL_OpenClash: https://github.com/vernesong/OpenClash.git
-  REPO_BRANCH_OpenClash: master
-  REPO_PATH_OpenClash : "openclash"
-
-  # jerrykuku/luci-theme-argon主题源码
-  REPO_URL_ThemeArgon: https://github.com/jerrykuku/luci-theme-argon
-  REPO_BRANCH_ThemeArgon: master
-  REPO_PATH_ThemeArgon : "luci-theme-argon"
-
-  # luci-app-argon-config主题配置源码
-  REPO_URL_ArgonConfig: https://github.com/jerrykuku/luci-app-argon-config
-  REPO_BRANCH_ArgonConfig: master
-  REPO_PATH_ArgonConfig : "luci-app-argon-config"
-
-  # Dockerman源码
-  # REPO_URL_luci_app_dockerman: https://github.com/lisaac/luci-app-dockerman
-  # REPO_BRANCH_luci_app_dockerman: master
-  # REPO_PATH_luci_app_dockerman : "luci-app-dockerman"
-
-  # luci-app-vssr的依赖源码
-  # REPO_URL_lua_maxminddb: https://github.com/jerrykuku/lua-maxminddb
-  # REPO_BRANCH_lua_maxminddb: master
-  # REPO_PATH_lua_maxminddb : "lua-maxminddb"
-
-  # luci-app-vssr源码
-  # REPO_URL_luci_app_vssr: https://github.com/jerrykuku/luci-app-vssr
-  # REPO_BRANCH_luci_app_vssr: master
-  # REPO_PATH_luci_app_vssr : "luci-app-vssr"
 
 on:
   repository_dispatch:
@@ -114,95 +32,104 @@ jobs:
       uses: P3TERX/ssh2actions@v1.0.0
       if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
+    - name: Checkout
+      uses: actions/checkout@main
+      with:
+        fetch-depth: 0
+
     - name: Get Commit Hash
       id: getHash
       run: |
-        # git clone --depth 1 $REPO_URL_smallprogramAction -b $REPO_BRANCH_smallprogramAction $REPO_PATH_smallprogramAction
-        # cd $REPO_PATH_smallprogramAction
-        # echo "commitHash_smallprogramAction=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
-        # cd
-
-        git clone --depth 1 $REPO_URL_Lede -b $REPO_BRANCH_Lede $REPO_PATH_Lede
-        cd $REPO_PATH_Lede
-        echo "commitHash_Lede=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        git clone https://github.com/coolsnowwolf/lede --filter=blob:none
+        cd lede
+        echo "SHA_01=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
-        git clone --depth 1 $REPO_URL_Lede_Package -b $REPO_BRANCH_Lede_Package $REPO_PATH_Lede_Package
-        cd $REPO_PATH_Lede_Package
-        echo "commitHash_Lede_Package=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        git clone https://github.com/coolsnowwolf/packages --filter=blob:none
+        cd packages
+        echo "SHA_02=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
-        git clone --depth 1 $REPO_URL_Lede_Luci -b $REPO_BRANCH_Lede_Luci $REPO_PATH_Lede_Luci
-        cd $REPO_PATH_Lede_Luci
-        echo "commitHash_Lede_Luci=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        git clone https://github.com/coolsnowwolf/luci --filter=blob:none
+        cd luci
+        echo "SHA_03=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
-        git clone --depth 1 $REPO_URL_OPENWRT_ROUTING -b $REPO_BRANCH_OPENWRT_ROUTING $REPO_PATH_OPENWRT_ROUTING
-        cd $REPO_PATH_OPENWRT_ROUTING
-        echo "commitHash_OPENWRT_ROUTING=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        git clone https://git.openwrt.org/feed/routing.git --filter=blob:none
+        cd routing
+        echo "SHA_04=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
         
-        git clone --depth 1 $REPO_URL_OPENWRT_TELEPHONY -b $REPO_BRANCH_OPENWRT_TELEPHONY $REPO_PATH_OPENWRT_TELEPHONY
-        cd $REPO_PATH_OPENWRT_TELEPHONY
-        echo "commitHash_OPENWRT_TELEPHONY=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        git clone https://git.openwrt.org/feed/telephony.git --filter=blob:none
+        cd telephony
+        echo "SHA_05=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
-        git clone --depth 1 $REPO_URL_HelloWorld -b $REPO_BRANCH_HelloWorld $REPO_PATH_HelloWorld 
-        cd $REPO_PATH_HelloWorld
-        echo "commitHash_HelloWorld=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        git clone https://github.com/fw876/helloworld --filter=blob:none
+        cd helloworld
+        echo "SHA_06=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
-        git clone --depth 1 $REPO_URL_PassWall_Packages -b $REPO_BRANCH_PassWall_Packages $REPO_PATH_PassWall_Packages
-        cd $REPO_PATH_PassWall_Packages
-        echo "commitHash_PassWall_Package=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        git clone https://github.com/xiaorouji/openwrt-passwall-packages --filter=blob:none
+        cd openwrt-passwall-packages
+        echo "SHA_07=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
-        git clone --depth 1 $REPO_URL_PassWall -b $REPO_BRANCH_PassWall $REPO_PATH_PassWall
-        cd $REPO_PATH_PassWall
-        echo "commitHash_PassWall=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        git clone https://github.com/xiaorouji/openwrt-passwall --filter=blob:none
+        cd openwrt-passwall
+        echo "SHA_08=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
-        git clone --depth 1 $REPO_URL_PassWall2 -b $REPO_BRANCH_PassWall2 $REPO_PATH_PassWall2
-        cd $REPO_PATH_PassWall2
-        echo "commitHash_PassWall2=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        git clone https://github.com/xiaorouji/openwrt-passwall2 --filter=blob:none
+        cd openwrt-passwall2
+        echo "SHA_09=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
-        git clone --depth 1 $REPO_URL_OpenClash -b $REPO_BRANCH_OpenClash $REPO_PATH_OpenClash
-        cd $REPO_PATH_OpenClash
-        echo "commitHash_OpenClash=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        git clone  https://github.com/vernesong/OpenClash.git --filter=blob:none
+        cd OpenClash
+        echo "SHA_10=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
-        git clone --depth 1 $REPO_URL_ThemeArgon -b $REPO_BRANCH_ThemeArgon $REPO_PATH_ThemeArgon
-        cd $REPO_PATH_ThemeArgon
-        echo "commitHash_ThemeArgon=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git --filter=blob:none
+        cd luci-theme-argon
+        echo "SHA_11=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
-        git clone --depth 1 $REPO_URL_ArgonConfig -b $REPO_BRANCH_ArgonConfig $REPO_PATH_ArgonConfig 
-        cd $REPO_PATH_ArgonConfig 
-        echo "commitHash_ArgonConfig=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git --filter=blob:none
+        cd luci-app-argon-config
+        echo "SHA_12=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
-        # git clone --depth 1 $REPO_URL_luci_app_dockerman -b $REPO_BRANCH_luci_app_dockerman $REPO_PATH_luci_app_dockerman
-        # cd $REPO_PATH_luci_app_dockerman
-        # echo "commitHash_luci_app_dockerman=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
-        # cd
+        git clone https://github.com/rufengsuixing/luci-app-adguardhome.git --filter=blob:none
+        cd luci-app-adguardhome
+        echo "SHA_13=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+        cd
+
+        git clone https://github.com/sbwml/luci-app-mosdns -b v5 --filter=blob:none
+        cd luci-app-mosdns
+        echo "SHA_14=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+        cd
+
+
 
     - name: Show Commit Head and Combination Heads
       id: combHeader
       run: |
         echo "commitHash_All=\
-          ${{steps.getHash.outputs.commitHash_Lede}}\
-          ${{steps.getHash.outputs.commitHash_Lede_Package}}\
-          ${{steps.getHash.outputs.commitHash_Lede_Luci}}\
-          ${{steps.getHash.outputs.commitHash_OPENWRT_ROUTING}}\
-          ${{steps.getHash.outputs.commitHash_OPENWRT_TELEPHONY}}\
-          ${{steps.getHash.outputs.commitHash_HelloWorld}}\
-          ${{steps.getHash.outputs.commitHash_PassWall_Package}}\
-          ${{steps.getHash.outputs.commitHash_PassWall}}\
-          ${{steps.getHash.outputs.commitHash_PassWall2}}\
-          ${{steps.getHash.outputs.commitHash_OpenClash}}\
-          ${{steps.getHash.outputs.commitHash_ThemeArgon}}\
-          ${{steps.getHash.outputs.commitHash_ArgonConfig}}" >> $GITHUB_OUTPUT
+          ${{steps.getHash.outputs.SHA_01}}\
+          ${{steps.getHash.outputs.SHA_02}}\
+          ${{steps.getHash.outputs.SHA_03}}\
+          ${{steps.getHash.outputs.SHA_04}}\
+          ${{steps.getHash.outputs.SHA_05}}\
+          ${{steps.getHash.outputs.SHA_06}}\
+          ${{steps.getHash.outputs.SHA_07}}\
+          ${{steps.getHash.outputs.SHA_08}}\
+          ${{steps.getHash.outputs.SHA_09}}\
+          ${{steps.getHash.outputs.SHA_10}}\
+          ${{steps.getHash.outputs.SHA_11}}\
+          ${{steps.getHash.outputs.SHA_12}}\
+          ${{steps.getHash.outputs.SHA_13}}\
+          ${{steps.getHash.outputs.SHA_14}}" >> $GITHUB_OUTPUT
 
     - name: Compare Commit Hash
       id: cacheHash

@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2022-2023 SMALLPROGRAM <https://github.com/smallprogram/OpenWrtAction>
+# Copyright (c) 2022-2024 SMALLPROGRAM <https://github.com/smallprogram/OpenWrtAction>
 #
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
@@ -35,7 +35,6 @@ env:
   FEEDS_CONF: feeds_config/custom.feeds.conf.default
   DIY_P1_SH: diy_script/diy-part1.sh
   DIY_P2_SH: diy_script/diy-part2.sh
-  COMMIT_LOG_NUM: 1
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_ARTIFACT: false
@@ -96,13 +95,101 @@ jobs:
             cp -f openwrt/.config config/$i.config
           done
 
+      - name: Generate Git Log
+        run: |
+          REPO_URLS=(
+            "https://github.com/coolsnowwolf/lede --filter=blob:none"
+            "https://github.com/coolsnowwolf/packages --filter=blob:none"
+            "https://github.com/coolsnowwolf/luci --filter=blob:none"
+            "https://git.openwrt.org/feed/routing.git --filter=blob:none"
+            "https://git.openwrt.org/feed/telephony.git --filter=blob:none"
+            "https://github.com/fw876/helloworld --filter=blob:none"
+            "https://github.com/xiaorouji/openwrt-passwall-packages --filter=blob:none"
+            "https://github.com/xiaorouji/openwrt-passwall --filter=blob:none"
+            "https://github.com/xiaorouji/openwrt-passwall2 --filter=blob:none"
+            "https://github.com/vernesong/OpenClash.git --filter=blob:none"
+            "https://github.com/jerrykuku/luci-theme-argon.git --filter=blob:none -b 18.06"
+            "https://github.com/jerrykuku/luci-app-argon-config.git --filter=blob:none -b 18.06"
+            "https://github.com/rufengsuixing/luci-app-adguardhome.git --filter=blob:none"
+            "https://github.com/sbwml/luci-app-mosdns --filter=blob:none -b v5"
+          )
+          LINE_NUMBERS=(1 2 3 4 5 6 7 8 9 10 11 12 13 14)
+          OUTPUT_FILES=(
+            "lede"
+            "packages"
+            "luci"
+            "routing"
+            "telephony"
+            "helloworld"
+            "openwrt-passwall-packages"
+            "openwrt-passwall"
+            "openwrt-passwall2"
+            "OpenClash"
+            "luci-theme-argon"
+            "luci-app-argon-config"
+            "luci-app-adguardhome"
+            "luci-app-mosdns"
+          )
+          TITLE_MESSAGES=(
+            "Lean Openwrt New Git Log :new: "
+            "Lean Package New Git Log :new: "
+            "Lean Luci New Git Log :new: "
+            "Openwrt routing New Git Log :new: "
+            "Openwrt telephony New Git Log :new: "
+            "HelloWorld New Git Log :new: "
+            "Passwall Packages New Git Log :new: "
+            "Passwall New Git Log :new: "
+            "Passwall2 New Git Log :new: "
+            "OpenClash New Git Log :new: "
+            "luci-theme-argon New Git Log :new: "
+            "luci-app-argon-config New Git Log :new: "
+            "luci-app-adguardhome New Git Log :new: "
+            "luci-app-mosdns New Git Log :new: "
+          )
+          cd $GITHUB_WORKSPACE
+          find git_log -type f ! -name 'log' -exec rm {} +
+
+          for i in "${!REPO_URLS[@]}"; do
+            REPO_URL=${REPO_URLS[$i]}
+            LINE_NUMBER=${LINE_NUMBERS[$i]}
+            OUTPUT_FILE=${OUTPUT_FILES[$i]}
+            TITLE_MESSAGE=${TITLE_MESSAGES[$i]}
+
+            git clone $REPO_URL $OUTPUT_FILE
+            cd $OUTPUT_FILE || exit
+            SHA=$(git rev-parse --short HEAD)
+            cd ..
+
+            sed -i "${LINE_NUMBER}s/\*.*/*$SHA/" git_log/log
+            line=$(sed -n "${LINE_NUMBER}p" git_log/log)
+            SHA_Begin=$(echo "$line" | sed -n 's/.*:\(.*\)\*.*/\1/p')
+            SHA_End=$(echo "$line" | sed -n 's/.*\*\(.*\)/\1/p')
+
+            if [ -z "$SHA_Begin" ]; then
+              sed -i "${LINE_NUMBER}s/\(:\).*\(\*\)/\1$SHA_End\2/" git_log/log
+            elif [ "$SHA_Begin" != "$SHA_End" ]; then
+              echo "<details> <summary> <b>$TITLE_MESSAGE</b>  </summary>" >> "git_log/$OUTPUT_FILE.log"
+              echo "" >> "git_log/$OUTPUT_FILE.log"
+              echo "SHA|Author|Date|Message" >> "git_log/$OUTPUT_FILE.log"
+              echo "-|-|-|-" >> "git_log/$OUTPUT_FILE.log"
+              git -C $OUTPUT_FILE log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >> "git_log/$OUTPUT_FILE.log"
+              echo "" >> "git_log/$OUTPUT_FILE.log"
+              echo "</details>" >> "git_log/$OUTPUT_FILE.log"
+              sed -i "${LINE_NUMBER}s/\(:\).*\(\*\)/\1$SHA_End\2/" git_log/log
+            fi
+
+            cd $GITHUB_WORKSPACE || exit
+            rm -rf $OUTPUT_FILE
+          done
+
+
       - name: Git auto update config
         uses: stefanzweifel/git-auto-commit-action@v5.0.0
         id: commit
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          commit_message: auto update config
+          commit_message: auto update config and git log
           branch: main
           commit_author: smallprogram <smallprogram@foxmail.com>
 
@@ -596,49 +683,17 @@ jobs:
         echo "**sha256sums_***|hash verification code file corresponding to the firmware" >> release.txt
         echo "**version_*.buildinfo**|the version file corresponding to the firmware" >> release.txt
 
-        echo "## IPK File Description" >> release.txt
-        echo "**Note that sometimes the dependent ipk of passwall and helloworld will be repeated. You may see that there are many ipk in helloworld, but there are few files of passwall_packages. Don’t be surprised, install them all**" >> release.txt
-        echo "This ipk package is suitable for friends who do not want to upgrade the firmware but want to upgrade the scientific Internet plug-in." >> release.txt
-        echo "You may see that each package contains four files: Packages, Packages.gz, Packages.manifest, and Packages.sig. Their meanings are as follows:" >> release.txt
-        echo "1. Packages: This is a clear text file that contains information about all packages in the software source, such as package name, version, description, dependencies, etc. When configuring the opkg package manager to use a new software repository, opkg will download and read this file to know what packages are available in the repository." >> release.txt
+        # echo "## IPK File Description" >> release.txt
+        # echo "**Note that sometimes the dependent ipk of passwall and helloworld will be repeated. You may see that there are many ipk in helloworld, but there are few files of passwall_packages. Don’t be surprised, install them all**" >> release.txt
+        # echo "This ipk package is suitable for friends who do not want to upgrade the firmware but want to upgrade the scientific Internet plug-in." >> release.txt
+        # echo "You may see that each package contains four files: Packages, Packages.gz, Packages.manifest, and Packages.sig. Their meanings are as follows:" >> release.txt
+        # echo "1. Packages: This is a clear text file that contains information about all packages in the software source, such as package name, version, description, dependencies, etc. When configuring the opkg package manager to use a new software repository, opkg will download and read this file to know what packages are available in the repository." >> release.txt
 
-        echo "2. Packages.gz: This is a compressed version of the Packages file. Since Packages files can be large, compressing them can save download time and bandwidth. opkg can also handle files in this compressed format." >> release.txt
+        # echo "2. Packages.gz: This is a compressed version of the Packages file. Since Packages files can be large, compressing them can save download time and bandwidth. opkg can also handle files in this compressed format." >> release.txt
 
-        echo "3. Packages.manifest: This file is usually used for development and debugging purposes. It records the file structure and contents of each package in the software source in detail. This is useful for developers as it provides the exact contents of the package." >> release.txt
+        # echo "3. Packages.manifest: This file is usually used for development and debugging purposes. It records the file structure and contents of each package in the software source in detail. This is useful for developers as it provides the exact contents of the package." >> release.txt
 
-        echo "4. Packages.sig: This is a signature file used to verify the integrity and origin of Packages files. When opkg downloads a Packages or Packages.gz file, it can use this signature file to confirm that the package list has not been tampered with in transit and that it was indeed published by a trusted source." >> release.txt
-
-        echo "## What's Changed" >> release.txt
-
-        echo "<details> <summary> Lean Openwrt Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> Lean Package Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/packages log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> Lean Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/luci log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> Openwrt routing Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/routing log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> Openwrt telephony Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/telephony log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> SSRP Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> Passwall Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/passwall log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> Passwall2 Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/passwall2 log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> Passwall Packages Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/passwall_packages log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> OpenClash Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/OpenClash log -n $COMMIT_LOG_NUM >> release.txt
+        # echo "4. Packages.sig: This is a signature file used to verify the integrity and origin of Packages files. When opkg downloads a Packages or Packages.gz file, it can use this signature file to confirm that the package list has not been tampered with in transit and that it was indeed published by a trusted source." >> release.txt
 
         touch release.txt
         echo "status=success" >> $GITHUB_OUTPUT
@@ -668,6 +723,11 @@ jobs:
     name: Organize-Release-Tags
        
     steps:
+    - name: Checkout
+      uses: actions/checkout@main
+      with:
+        fetch-depth: 0
+
     - name: Download Tags
       uses: actions/download-artifact@v3
       with:
@@ -716,6 +776,31 @@ jobs:
             else
               echo "is_error be false: $is_error"
               sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions\&logoColor=yellow/build-passing-green?logo=githubactions\&logoColor=green/" release.txt;
+            fi
+          done
+
+          echo "## What's Changed" >> release.txt
+
+          OUTPUT_FILES=(
+            "lede"
+            "packages"
+            "luci"
+            "routing"
+            "telephony"
+            "helloworld"
+            "openwrt-passwall-packages"
+            "openwrt-passwall"
+            "openwrt-passwall2"
+            "OpenClash"
+            "luci-theme-argon"
+            "luci-app-argon-config"
+            "luci-app-adguardhome"
+            "luci-app-mosdns"
+          )
+
+          for file in "${OUTPUT_FILES[@]}"; do
+            if [ -f "$GITHUB_WORKSPACE/git_log/$file.log" ]; then
+              cat "$GITHUB_WORKSPACE/git_log/$file.log" >> release.txt
             fi
           done
 
