@@ -799,8 +799,8 @@ jobs:
           )
 
           for file in "${OUTPUT_FILES[@]}"; do
-            if [ -f "$GITHUB_WORKSPACE/git_log/$file.log" ]; then
-              cat "$GITHUB_WORKSPACE/git_log/$file.log" >> release.txt
+            if [ -f "git_log/$file.log" ]; then
+              cat "git_log/$file.log" >> release.txt
             fi
           done
 
