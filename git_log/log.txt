@@ -7,7 +7,6 @@ helloworld:*
 openwrt-passwall-packages:*
 openwrt-passwall:*
 openwrt-passwall2:*
-OpenClash:*
 luci-theme-argon:*
 luci-app-argon-config:*
 luci-app-adguardhome:*

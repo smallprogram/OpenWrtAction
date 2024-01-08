@@ -85,29 +85,24 @@ jobs:
         echo "SHA_09=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
-        git clone https://github.com/vernesong/OpenClash
-        cd OpenClash
-        echo "SHA_10=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        cd
-
         git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
         cd luci-theme-argon
-        echo "SHA_11=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_10=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git
         cd luci-app-argon-config
-        echo "SHA_12=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_11=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
         cd luci-app-adguardhome
-        echo "SHA_13=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_12=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone https://github.com/sbwml/luci-app-mosdns -b v5
         cd luci-app-mosdns
-        echo "SHA_14=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_13=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
 
@@ -128,8 +123,7 @@ jobs:
           ${{steps.getHash.outputs.SHA_10}}\
           ${{steps.getHash.outputs.SHA_11}}\
           ${{steps.getHash.outputs.SHA_12}}\
-          ${{steps.getHash.outputs.SHA_13}}\
-          ${{steps.getHash.outputs.SHA_14}}" >> $GITHUB_OUTPUT
+          ${{steps.getHash.outputs.SHA_13}}" >> $GITHUB_OUTPUT
 
     - name: Compare Commit Hash
       id: cacheHash

@@ -107,13 +107,12 @@ jobs:
             "https://github.com/xiaorouji/openwrt-passwall-packages"
             "https://github.com/xiaorouji/openwrt-passwall"
             "https://github.com/xiaorouji/openwrt-passwall2"
-            "https://github.com/vernesong/OpenClash"
             "https://github.com/jerrykuku/luci-theme-argon.git -b 18.06"
             "https://github.com/jerrykuku/luci-app-argon-config.git -b 18.06"
             "https://github.com/rufengsuixing/luci-app-adguardhome.git"
             "https://github.com/sbwml/luci-app-mosdns -b v5"
           )
-          LINE_NUMBERS=(1 2 3 4 5 6 7 8 9 10 11 12 13 14)
+          LINE_NUMBERS=(1 2 3 4 5 6 7 8 9 10 11 12 13)
           OUTPUT_FILES=(
             "lede"
             "packages"
@@ -124,7 +123,6 @@ jobs:
             "openwrt-passwall-packages"
             "openwrt-passwall"
             "openwrt-passwall2"
-            "OpenClash"
             "luci-theme-argon"
             "luci-app-argon-config"
             "luci-app-adguardhome"
@@ -140,7 +138,6 @@ jobs:
             "Passwall Packages New Git Log :new: "
             "Passwall New Git Log :new: "
             "Passwall2 New Git Log :new: "
-            "OpenClash New Git Log :new: "
             "luci-theme-argon New Git Log :new: "
             "luci-app-argon-config New Git Log :new: "
             "luci-app-adguardhome New Git Log :new: "
@@ -155,8 +152,8 @@ jobs:
             OUTPUT_FILE=${OUTPUT_FILES[$i]}
             TITLE_MESSAGE=${TITLE_MESSAGES[$i]}
 
-            git clone $REPO_URL gitLog
-            cd gitLog || exit
+            git clone $REPO_URL $OUTPUT_FILE
+            cd $OUTPUT_FILE || exit
             SHA=$(git rev-parse --short HEAD)
             cd ..
 
@@ -168,16 +165,16 @@ jobs:
             if [ -z "$SHA_Begin" ]; then
               sed -i "${LINE_NUMBER}s/\(:\).*\(\*\)/\1$SHA_End\2/" git_log/log.txt
             elif [ "$SHA_Begin" != "$SHA_End" ]; then
-              echo "</details> <details> <summary> $TITLE_MESSAGE  </summary>" >> "../git_log/$OUTPUT_FILE"
-              echo "SHA|Author|Date|Message" >> "../git_log/$OUTPUT_FILE"
-              echo "-|-|-|-" >> "../git_log/$OUTPUT_FILE"
-              git -C gitLog log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >> "../git_log/$OUTPUT_FILE"
-              echo "</details>" >> "../git_log/$OUTPUT_FILE"
+              echo "</details> <details> <summary> $TITLE_MESSAGE  </summary>" >> "git_log/$OUTPUT_FILE"
+              echo "SHA|Author|Date|Message" >> "git_log/$OUTPUT_FILE"
+              echo "-|-|-|-" >> "git_log/$OUTPUT_FILE"
+              git -C $OUTPUT_FILE log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >> "git_log/$OUTPUT_FILE"
+              echo "</details>" >> "git_log/$OUTPUT_FILE"
               sed -i "${LINE_NUMBER}s/\(:\).*\(\*\)/\1$SHA_End\2/" git_log/log.txt
             fi
 
             cd $GITHUB_WORKSPACE || exit
-            rm -rf gitLog
+            rm -rf $OUTPUT_FILE
           done
 
       - name: Git auto update config
@@ -705,7 +702,6 @@ jobs:
           "openwrt-passwall-packages"
           "openwrt-passwall"
           "openwrt-passwall2"
-          "OpenClash"
           "luci-theme-argon"
           "luci-app-argon-config"
           "luci-app-adguardhome"

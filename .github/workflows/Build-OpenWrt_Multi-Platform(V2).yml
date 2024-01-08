@@ -35,7 +35,6 @@ env:
   FEEDS_CONF: feeds_config/custom.feeds.conf.default
   DIY_P1_SH: diy_script/diy-part1.sh
   DIY_P2_SH: diy_script/diy-part2.sh
-  COMMIT_LOG_NUM: 1
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_ARTIFACT: false
@@ -96,13 +95,95 @@ jobs:
             cp -f openwrt/.config config/$i.config
           done
 
+      - name: Generate Git Log
+        run: |
+          REPO_URLS=(
+            "https://github.com/coolsnowwolf/lede"
+            "https://github.com/coolsnowwolf/packages"
+            "https://github.com/coolsnowwolf/luci"
+            "https://git.openwrt.org/feed/routing.git"
+            "https://git.openwrt.org/feed/telephony.git"
+            "https://github.com/fw876/helloworld"
+            "https://github.com/xiaorouji/openwrt-passwall-packages"
+            "https://github.com/xiaorouji/openwrt-passwall"
+            "https://github.com/xiaorouji/openwrt-passwall2"
+            "https://github.com/jerrykuku/luci-theme-argon.git -b 18.06"
+            "https://github.com/jerrykuku/luci-app-argon-config.git -b 18.06"
+            "https://github.com/rufengsuixing/luci-app-adguardhome.git"
+            "https://github.com/sbwml/luci-app-mosdns -b v5"
+          )
+          LINE_NUMBERS=(1 2 3 4 5 6 7 8 9 10 11 12 13)
+          OUTPUT_FILES=(
+            "lede"
+            "packages"
+            "luci"
+            "routing"
+            "telephony"
+            "helloworld"
+            "openwrt-passwall-packages"
+            "openwrt-passwall"
+            "openwrt-passwall2"
+            "luci-theme-argon"
+            "luci-app-argon-config"
+            "luci-app-adguardhome"
+            "luci-app-mosdns"
+          )
+          TITLE_MESSAGES=(
+            "Lean Openwrt New Git Log :new: "
+            "Lean Package New Git Log :new: "
+            "Lean Luci New Git Log :new: "
+            "Openwrt routing New Git Log :new: "
+            "Openwrt telephony New Git Log :new: "
+            "HelloWorld New Git Log :new: "
+            "Passwall Packages New Git Log :new: "
+            "Passwall New Git Log :new: "
+            "Passwall2 New Git Log :new: "
+            "luci-theme-argon New Git Log :new: "
+            "luci-app-argon-config New Git Log :new: "
+            "luci-app-adguardhome New Git Log :new: "
+            "luci-app-mosdns New Git Log :new: "
+          )
+          cd $GITHUB_WORKSPACE
+          find git_log -type f ! -name 'log.txt' -exec rm {} +
+
+          for i in "${!REPO_URLS[@]}"; do
+            REPO_URL=${REPO_URLS[$i]}
+            LINE_NUMBER=${LINE_NUMBERS[$i]}
+            OUTPUT_FILE=${OUTPUT_FILES[$i]}
+            TITLE_MESSAGE=${TITLE_MESSAGES[$i]}
+
+            git clone $REPO_URL $OUTPUT_FILE
+            cd $OUTPUT_FILE || exit
+            SHA=$(git rev-parse --short HEAD)
+            cd ..
+
+            sed -i "${LINE_NUMBER}s/\*.*/*$SHA/" git_log/log.txt
+            line=$(sed -n "${LINE_NUMBER}p" git_log/log.txt)
+            SHA_Begin=$(echo "$line" | sed -n 's/.*:\(.*\)\*.*/\1/p')
+            SHA_End=$(echo "$line" | sed -n 's/.*\*\(.*\)/\1/p')
+
+            if [ -z "$SHA_Begin" ]; then
+              sed -i "${LINE_NUMBER}s/\(:\).*\(\*\)/\1$SHA_End\2/" git_log/log.txt
+            elif [ "$SHA_Begin" != "$SHA_End" ]; then
+              echo "</details> <details> <summary> $TITLE_MESSAGE  </summary>" >> "git_log/$OUTPUT_FILE"
+              echo "SHA|Author|Date|Message" >> "../git_log/$OUTPUT_FILE"
+              echo "-|-|-|-" >> "../git_log/$OUTPUT_FILE"
+              git -C $OUTPUT_FILE log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >> "git_log/$OUTPUT_FILE"
+              echo "</details>" >> "git_log/$OUTPUT_FILE"
+              sed -i "${LINE_NUMBER}s/\(:\).*\(\*\)/\1$SHA_End\2/" git_log/log.txt
+            fi
+
+            cd $GITHUB_WORKSPACE || exit
+            rm -rf $OUTPUT_FILE
+          done
+
       - name: Git auto update config
         uses: stefanzweifel/git-auto-commit-action@v5.0.0
         id: commit
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          commit_message: auto update config
+          commit_message: auto update config and git log
           branch: main
           commit_author: smallprogram <smallprogram@foxmail.com>
 
@@ -610,35 +691,27 @@ jobs:
 
         echo "## What's Changed" >> release.txt
 
-        echo "<details> <summary> Lean Openwrt Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt log -n $COMMIT_LOG_NUM >> release.txt
+        OUTPUT_FILES=(
+          "lede"
+          "packages"
+          "luci"
+          "routing"
+          "telephony"
+          "helloworld"
+          "openwrt-passwall-packages"
+          "openwrt-passwall"
+          "openwrt-passwall2"
+          "luci-theme-argon"
+          "luci-app-argon-config"
+          "luci-app-adguardhome"
+          "luci-app-mosdns"
+        )
 
-        echo "</details> <details> <summary> Lean Package Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/packages log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> Lean Luci Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/luci log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> Openwrt routing Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/routing log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> Openwrt telephony Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/telephony log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> SSRP Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/helloworld log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> Passwall Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/passwall log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> Passwall2 Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/passwall2 log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> Passwall Packages Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/passwall_packages log -n $COMMIT_LOG_NUM >> release.txt
-
-        echo "</details> <details> <summary> OpenClash Commit Top $COMMIT_LOG_NUM </summary>" >> release.txt
-        git -C openwrt/feeds/OpenClash log -n $COMMIT_LOG_NUM >> release.txt
+        for file in "${OUTPUT_FILES[@]}"; do
+          if [ -f "git_log/$file" ]; then
+            cat "git_log/$file" >> release.txt
+          fi
+        done
 
         touch release.txt
         echo "status=success" >> $GITHUB_OUTPUT
