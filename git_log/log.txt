@@ -7,7 +7,7 @@ helloworld:318391ca*66fa0c5
 openwrt-passwall-packages:e466b5e*e466b5e
 openwrt-passwall:8a9da9a*8a9da9a
 openwrt-passwall2:c4e4042*c4e4042
-luci-theme-argon:9e2f3e5*9e2f3e5
-luci-app-argon-config:37fdf50*37fdf50
-luci-app-adguardhome:a073a03*a073a03
+luci-theme-argon:*
+luci-app-argon-config:*
+luci-app-adguardhome:*
 luci-app-mosdns:*
