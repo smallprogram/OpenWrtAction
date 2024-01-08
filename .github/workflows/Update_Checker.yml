@@ -115,21 +115,6 @@ jobs:
     - name: Show Commit Head and Combination Heads
       id: combHeader
       run: |
-        sed -i "1s/\*.*/*${{steps.getHash.outputs.SHA_01}}/" log.txt
-        sed -i "2s/\*.*/*${{steps.getHash.outputs.SHA_02}}/" log.txt
-        sed -i "3s/\*.*/*${{steps.getHash.outputs.SHA_03}}/" log.txt
-        sed -i "4s/\*.*/*${{steps.getHash.outputs.SHA_04}}/" log.txt
-        sed -i "5s/\*.*/*${{steps.getHash.outputs.SHA_05}}/" log.txt
-        sed -i "6s/\*.*/*${{steps.getHash.outputs.SHA_06}}/" log.txt
-        sed -i "7s/\*.*/*${{steps.getHash.outputs.SHA_07}}/" log.txt
-        sed -i "8s/\*.*/*${{steps.getHash.outputs.SHA_08}}/" log.txt
-        sed -i "9s/\*.*/*${{steps.getHash.outputs.SHA_09}}/" log.txt
-        sed -i "10s/\*.*/*${{steps.getHash.outputs.SHA_10}}/" log.txt
-        sed -i "11s/\*.*/*${{steps.getHash.outputs.SHA_11}}/" log.txt
-        sed -i "12s/\*.*/*${{steps.getHash.outputs.SHA_12}}/" log.txt
-        sed -i "13s/\*.*/*${{steps.getHash.outputs.SHA_13}}/" log.txt
-        sed -i "14s/\*.*/*${{steps.getHash.outputs.SHA_14}}/" log.txt
-
         echo "commitHash_All=\
           ${{steps.getHash.outputs.SHA_01}}\
           ${{steps.getHash.outputs.SHA_02}}\
