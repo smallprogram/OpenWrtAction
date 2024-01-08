@@ -1,0 +1,22 @@
+<details> <summary> <b>OpenClash New Git Log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+605973b4|sangyishuje1123|Thu Jan 4 06:53:57 2024 +0800|整理并修改 ISSUE_TEMPLATE (#3697)
+b1599d26|vernesong|Sat Dec 2 14:17:00 2023 +0800|0.45.157
+1891cc65|vernesong|Sat Dec 2 14:16:36 2023 +0800|fix typo
+a646b474|vernesong|Sat Dec 2 13:58:46 2023 +0800|0.45.156
+b8522e33|vernesong|Sat Dec 2 13:58:20 2023 +0800|chore: refine
+cb76e2f3|vernesong|Sat Dec 2 13:06:39 2023 +0800|chore: random Dashboard secret
+2ce83cf6|vernesong|Sat Dec 2 12:49:31 2023 +0800|chore: loop firewall reload
+3b60e266|Yu Xin|Fri Dec 1 18:26:48 2023 +0800|update core repo (#3636)
+a06c32ff|vernesong|Fri Dec 1 18:25:53 2023 +0800|chore: refine
+885163e7|vernesong|Sun Nov 26 16:37:08 2023 +0800|0.45.155
+0ce45df0|vernesong|Sun Nov 26 16:05:59 2023 +0800|chore: fix typo
+d80bc21a|vernesong|Sat Nov 25 11:56:04 2023 +0800|0.45.154
+803da0df|Tdssed|Sat Nov 25 11:09:38 2023 +0800|Fix (#3609)
+24ee8bdc|vernesong|Sat Nov 25 11:04:57 2023 +0800|chore: fix typo
+904efc52|vernesong|Sat Nov 25 10:42:42 2023 +0800|fix #3625
+a59342b7|vernesong|Sat Nov 25 10:14:54 2023 +0800|chore: #3621
+9ad7b0b4|vernesong|Tue Nov 21 12:08:48 2023 +0800|0.45.153
+</details>

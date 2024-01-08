@@ -1,0 +1,14 @@
+<details> <summary> <b>luci-app-adguardhome New Git Log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+37fdf50|rufengsuixing|Mon Jan 13 00:18:16 2020 +0800|fix log view
+d317051|rufengsuixing|Thu Jan 9 01:39:07 2020 +0800|fix :verbose log time bug
+748612f|rufengsuixing|Thu Jan 9 01:16:14 2020 +0800|improve: support wget or curl
+524a70d|rufengsuixing|Mon Jan 6 21:40:28 2020 +0800|Update README.md
+c727fa9|rufengsuixing|Sun Jan 5 14:59:43 2020 +0800|fix:open file limit
+8ad4abc|rufengsuixing|Sat Jan 4 21:17:25 2020 +0800|Update README.md
+6566dd4|rufengsuixing|Sat Jan 4 20:51:33 2020 +0800|1.8-11
+edb82be|rufengsuixing|Sat Jan 4 20:42:15 2020 +0800|fix:password set
+9c851b0|rufengsuixing|Sat Jan 4 19:43:26 2020 +0800|improve:isrunning function and wait for no bin
+</details>

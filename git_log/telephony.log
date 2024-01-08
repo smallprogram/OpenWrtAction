@@ -1,0 +1,21 @@
+<details> <summary> <b>Openwrt telephony New Git Log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0b0af5c|Jiri Slachta|Fri Dec 29 11:11:14 2023 +0100|Merge pull request #849 from micmac1/ast-20.5.2
+3d1eac3|micmac1|Fri Dec 29 09:14:35 2023 +0100|Merge pull request #848 from micmac1/dongle-2022
+4e4b281|Sebastian Kemper|Fri Dec 29 09:03:00 2023 +0100|asterisk: bump to 20.5.2
+6643627|Sebastian Kemper|Fri Dec 29 09:01:10 2023 +0100|pjproject: sync patches with asterisk 20.5.2
+411b6fb|Sebastian Kemper|Tue Dec 26 14:21:58 2023 +0100|asterisk-chan-dongle: bump to latest git
+ca2a412|micmac1|Mon Dec 25 15:30:44 2023 +0100|Merge pull request #847 from micmac1/rtpe-11.5.1.18
+de75348|Sebastian Kemper|Sun Dec 24 23:50:51 2023 +0100|rtpengine: bump to 11.5.1.18
+02f4ad1|micmac1|Sun Dec 24 12:09:27 2023 +0100|Merge pull request #844 from micmac1/fs-1.10.11
+390b0aa|Sebastian Kemper|Sat Dec 23 23:40:37 2023 +0100|freeswitch: bump to 1.10.11
+2ec7aac|Sebastian Kemper|Sat Dec 23 23:38:30 2023 +0100|sofia-sip: bump to 1.13.17
+04666c3|Jiri Slachta|Sat Nov 25 22:45:44 2023 +0100|Merge pull request #843 from guidosarducci/master-fix-network-device
+7ab8207|Tony Ambardar|Tue Nov 21 18:53:39 2023 -0800|siproxd: improve network device resolution
+b28229f|Jiri Slachta|Sat Nov 11 19:47:27 2023 +0100|Merge pull request #840 from Ansuel/pcre-kamailio
+ac4ad7f|Christian Marangi|Fri Nov 3 03:37:05 2023 +0100|kamailio: backport and move to PCRE2
+231910d|Christian Marangi|Fri Nov 3 03:35:35 2023 +0100|kamailio: bump to release 5.7.2
+ceb721c|Christian Marangi|Fri Nov 3 03:33:16 2023 +0100|kamailio: add patch fixing fragile kamcmd
+</details>

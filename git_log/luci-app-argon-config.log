@@ -1,0 +1,16 @@
+<details> <summary> <b>luci-app-argon-config New Git Log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+9e2f3e5|老竭力|Sun May 14 22:37:00 2023 +0800|Merge pull request #25 from OpenWrt-Galaxy/master
+45b9941|老竭力|Sun May 14 22:36:36 2023 +0800|Merge pull request #26 from Yamabuki-bakery/master
+0b69208|老竭力|Sun May 14 22:36:17 2023 +0800|Merge pull request #30 from Palatis/i18n/zh-tw
+cae2b4c|老竭力|Sun May 14 22:36:07 2023 +0800|Merge pull request #29 from Palatis/ci
+188c9b3|Victor Tseng|Thu May 4 01:26:17 2023 +0800|add github workflow for release and check
+d9b7d7f|Victor Tseng|Thu May 4 01:17:55 2023 +0800|[i18n] add zh-tw translation
+73dfdfd|Kimika|Mon Dec 19 23:32:37 2022 +0900|add webp support
+e80ca24|Kimika|Mon Dec 19 23:32:08 2022 +0900|add webp support
+48751ba|Kimika|Mon Dec 19 23:31:31 2022 +0900|add webp support
+9dd766c|Kimika|Mon Dec 19 23:30:39 2022 +0900|add webp support
+a55ad9c|Kimika|Mon Dec 19 23:30:12 2022 +0900|add webp support
+</details>

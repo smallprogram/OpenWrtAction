@@ -1,0 +1,18 @@
+<details> <summary> <b>HelloWorld New Git Log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+2f19517|zxlhhyccc|Mon Jan 8 23:00:39 2024 +0800|luci-app-ssr-plus: clean up spaces (#1372)
+453ecb7|Beginner|Mon Jan 8 23:00:00 2024 +0800|xray-plugin: update to 1.8.7
+bdf6b12|Beginner|Mon Jan 8 22:59:18 2024 +0800|xray-core: update to 1.8.7
+66fa0c5|ちか|Sat Jan 6 23:19:30 2024 +0800|luci-app-ssr-plus: add Xray `sniffing`(enable/disable) `domainsExcluded` `routeOnly` (#1370)
+69abbd0|coolsnowwolf|Thu Jan 4 11:20:48 2024 +0800|Revert-luci-app-ssr-plus-drop-vmess-node-with-alterID
+b56fff0|Beginner|Wed Jan 3 01:04:14 2024 +0800|hysteria: update to 2.2.3
+318391c|zxlhhyccc|Wed Jan 3 01:02:23 2024 +0800|luci-app-ssr-plus: Only in log display `hysteria2` version number (#1364)
+e2c63e1|zxlhhyccc|Wed Jan 3 01:01:40 2024 +0800|luci-app-ssr-plus: Optimal `hysteria2` allocation (#1363)
+f0a3c45|ちか|Tue Jan 2 00:30:35 2024 +0800|luci-app-ssr-plus: add Xray-core `xudpConcurrency` `xudpProxyUDP443` `tcpcongestion` `tcpMptcp` `tcpNoDelay` (#1362)
+f5c3e82|zxlhhyccc|Mon Jan 1 03:08:06 2024 +0800|luci-app-ssr-plus: Fix `Hysteria2` failure to start problem (#1360)
+4840ddc|zxlhhyccc|Mon Jan 1 03:03:57 2024 +0800|luci-app-ssr-plus: Repair `Hysteria2` version detection (#1358)
+3c70798|Beginner|Wed Dec 13 03:25:56 2023 +0800|v2ray-core: update to 5.13.0 (#1353)
+42d85cc|Beginner|Wed Dec 13 03:25:43 2023 +0800|v2ray-plugin: update to 5.13.0 (#1354)
+</details>

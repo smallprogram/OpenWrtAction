@@ -1,0 +1,26 @@
+<details> <summary> <b>Openwrt routing New Git Log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6f74738|Simon Wunderlich|Sat Dec 23 18:05:57 2023 +0100|Merge pull request #1038 from ecsv/batadv-2023.3
+96b5fa1|Sven Eckelmann|Sat Dec 23 11:55:49 2023 +0100|batman-adv: compat: Fix skb_vlan_eth_hdr conflict in stable kernels
+a5ec54a|Rob White|Thu Nov 23 16:06:11 2023 +0000|opennds: update to version 10.2.0
+f0f1b0a|Simon Wunderlich|Fri Nov 17 22:05:13 2023 +0100|Merge pull request #1033 from ecsv/batadv-2023.3
+28b8a5e|Sven Eckelmann|Fri Nov 17 21:31:47 2023 +0100|batman-adv: update to version 2023.3
+b69c629|Sven Eckelmann|Fri Nov 17 21:31:28 2023 +0100|batctl: update to version 2023.3
+1bdab4b|Sven Eckelmann|Fri Nov 17 21:30:59 2023 +0100|alfred: update to version 2023.3
+601bd6c|William Fleurant|Sun Oct 29 10:05:17 2023 +0100|cjdns: always build without ccache prefix
+2a725e7|Moritz Warning|Tue Oct 10 20:51:00 2023 +0200|nodogsplash: explicit file copy
+49da9e9|Bradford Zhang|Sat Oct 7 21:41:10 2023 +0800|bird2: bump to version 2.14
+fe1c67f|Moritz Warning|Tue Oct 10 00:35:21 2023 +0200|nodogsplash: update to version 5.0.2
+c2124dd|Josef Schlehofer|Thu Sep 28 09:34:27 2023 +0200|luci-app-bmx6: drop this because of security vulnerabilities
+9fb9d93|Josef Schlehofer|Thu Sep 28 09:31:02 2023 +0200|bmx6: drop package
+88c98c9|Rob White|Mon Aug 28 16:19:06 2023 +0100|opennds: update to version 10.1.3
+d86c0c2|Simon Wunderlich|Wed Aug 23 09:14:28 2023 +0200|Merge pull request #1015 from ecsv/batman-adv-2023.2
+364379c|Sven Eckelmann|Tue Aug 22 18:26:35 2023 +0200|batman-adv: Fix lock assert after fragmentation change
+6f6bcba|Simon Wunderlich|Fri Aug 18 17:06:22 2023 +0200|Merge pull request #1012 from ecsv/batman-adv-2023.2
+167d93c|Sven Eckelmann|Fri Aug 18 16:01:22 2023 +0200|alfred: update to version 2023.2
+8fd009e|Sven Eckelmann|Fri Aug 18 16:01:22 2023 +0200|batctl: update to version 2023.2
+e7ee4c5|Sven Eckelmann|Fri Aug 18 16:01:22 2023 +0200|batman-adv: update to version 2023.2
+5beb3be|Rob White|Mon Jul 31 21:33:11 2023 +0100|mesh11sd: Release v2.0.0
+</details>
