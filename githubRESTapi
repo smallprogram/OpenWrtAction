@@ -6,3 +6,14 @@ curl -s "https://api.github.com/repos/xiaorouji/openwrt-passwall/compare/85508e2
 
 curl -s "https://api.github.com/repos/xiaorouji/openwrt-passwall/compare/85508e2e73af960b7b26926d02169221fde7000b...main" | jq -r '.commits | reverse| .[] | "\(.sha) | \(.commit.author.name) | \(.commit.author.date) | \(.commit.message | gsub("\r\n"; "\n") | gsub("\n\n"; "\n") | split("\n") | map(select(. != "")) | join("<br>"))"' > bbb.txt
 
+
+
+git log --pretty=format:"%h|%an|%ad|%s" 0716c8ada16d784f07c8cead63f856a0eb2b47d0...8a9da9a57f93e7745141e1783845e405f2c3dcd0
+
+
+sed -i '2s/\(:\).*\(\*\)/\1cbad1c9\2/' log.txt
+sed -i "2s/\*.*/*cbad1c9/" log.txt
+
+line=$(sed -n '2p' log.txt)
+a=$(echo "$line" | sed -n 's/.*:\(.*\)\*.*/\1/p')
+b=$(echo "$line" | sed -n 's/.*\*\(.*\)/\1/p')
