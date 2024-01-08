@@ -1,0 +1,6 @@
+</details> <details> <summary> HelloWorld New Git Log :new:   </summary>
+SHA|Author|Date|Message
+-|-|-|-
+66fa0c5|ちか|Sat Jan 6 23:19:30 2024 +0800|luci-app-ssr-plus: add Xray `sniffing`(enable/disable) `domainsExcluded` `routeOnly` (#1370)
+69abbd0|coolsnowwolf|Thu Jan 4 11:20:48 2024 +0800|Revert-luci-app-ssr-plus-drop-vmess-node-with-alterID
+b56fff0|Beginner|Wed Jan 3 01:04:14 2024 +0800|hysteria: update to 2.2.3</details>

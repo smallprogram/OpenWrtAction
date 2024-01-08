@@ -1,0 +1,6 @@
+</details> <details> <summary> Lean Openwrt New Git Log :new:   </summary>
+SHA|Author|Date|Message
+-|-|-|-
+e2a09540e|Ashley Lee|Fri Jan 5 18:30:25 2024 +0800|mediatek: add support for Ruijie RG-X60 Pro (#11745)
+4fa8c8b72|Daniel Golle|Tue May 30 02:46:18 2023 +0100|kernel: include MT7988 Ethernet support in Linux 6.1
+7f1d1eed6|Daniel Golle|Tue May 30 02:44:00 2023 +0100|kernel: backport MT7988 DSA support for Linux 6.1</details>

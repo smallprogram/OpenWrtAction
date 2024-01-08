@@ -1,13 +1,1 @@
-lede:*
-packages:*
-luci:*
-routing:*
-telephony:*
-helloworld:*
-openwrt-passwall-packages:*
-openwrt-passwall:*
-openwrt-passwall2:*
-luci-theme-argon:*
-luci-app-argon-config:*
-luci-app-adguardhome:*
-luci-app-mosdns:*
+
