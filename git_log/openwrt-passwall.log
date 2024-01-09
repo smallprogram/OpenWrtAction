@@ -2,23 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8a9da9a|Ariesly|Tue Dec 12 23:48:31 2023 +0800|luci: hysteria2 support verify tls pinSHA256 (#2889)
-446cf17|MoetaYuko|Sat Dec 9 16:02:32 2023 +0800|luci: add Mozilla Location Service to direct_host (#2888)
-93193e8|zhusir|Mon Dec 4 00:36:40 2023 +0800|luci: update version
-761f6ec|Gzxhwq|Mon Dec 4 00:35:38 2023 +0800|luci: add sing-box TCP Brutal support (#2887)
-0716c8a|Gzxhwq|Mon Dec 4 00:35:17 2023 +0800|luci: add sing-box HTTPUpgrade support (#2886)
-f5ff675|yk271|Fri Nov 24 22:54:37 2023 +0800|luci: add excluded domain(#2885)
-85508e2|zhusir|Tue Nov 7 21:01:47 2023 +0800|rm
-8592453|zhusir|Thu Oct 19 16:28:41 2023 +0800|action: update tag body
-bd6abac|Tianhe Y|Thu Oct 19 16:22:12 2023 +0800|Update Auto compile with openwrt sdk.yml (#2868)
-9f5d27f|zhusir|Thu Oct 19 13:24:55 2023 +0800|action: update openwrt sdk to 23.05.0
-3509adc|xiaorouji|Mon Oct 16 20:37:05 2023 +0800|luci: bump version
-a953315|ztbh|Mon Oct 16 20:35:28 2023 +0800|luci: add chinadns-ng domain default tag config (#2854)
-97e11cf|Gzxhwq|Mon Oct 16 20:35:03 2023 +0800|luci: fix hysteria2 bandwidth when nil (#2855)
-e834b8e|xiaorouji|Mon Oct 16 20:31:47 2023 +0800|luci: fix bug
-b9a4d8b|xiaorouji|Wed Oct 11 22:26:57 2023 +0800|luci: 4.71
-f3e52a0|xiaorouji|Wed Oct 11 22:19:19 2023 +0800|luci: update default rules
-ef745e9|xiaorouji|Wed Oct 11 21:51:41 2023 +0800|luci: optimization code
-4068c2c|xiaorouji|Mon Oct 9 01:10:08 2023 +0800|luci: fix Xray settings
-8641c37|xiaorouji|Mon Oct 9 01:19:20 2023 +0800|luci: fix acl dns option
+9c7039e|xiaorouji|Tue Jan 9 03:06:02 2024 +0800|luci: 4.72
+4568d3f|xiaorouji|Tue Jan 9 02:59:41 2024 +0800|luci: update default config
+fe22a98|xiaorouji|Tue Jan 9 02:52:51 2024 +0800|luci: update and fix the subscribe module
+52ae62f|xiaorouji|Sat Nov 25 02:12:35 2023 +0800|luci: shunt rule add `inboundTag` option
+b6a34d1|xiaorouji|Thu Nov 23 02:35:19 2023 +0800|luci: add `remove sing-box resource files` button
+2abf169|xiaorouji|Thu Nov 23 02:06:23 2023 +0800|luci: socks config can choose all node
+2b04ecb|xiaorouji|Wed Nov 22 19:56:06 2023 +0800|luci: shunt rule add some option
 </details>
