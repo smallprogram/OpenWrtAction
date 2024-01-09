@@ -679,15 +679,15 @@ jobs:
         echo "**:ice_cube: R_Pi_3b**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
         echo "**:ice_cube: R_Pi_4b**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
 
-        echo "## File Description" >> release.txt
-        echo "File Name|Meaning" >> release.txt
-        echo "-|-" >> release.txt
-        echo "**config_*.buildinfo**|compile configuration information" >> release.txt
-        echo "**feeds_*.buildinfo**|feeds file content and git head information during compilation" >> release.txt
-        echo "**ipk_*.zip**|Including the ipk installation files of helloworld OpenClash passwall passwall_packages passwall2" >> release.txt
-        echo "**openwrt-*.img.gz**|openwrt firmware file" >> release.txt
-        echo "**sha256sums_***|hash verification code file corresponding to the firmware" >> release.txt
-        echo "**version_*.buildinfo**|the version file corresponding to the firmware" >> release.txt
+        # echo "## File Description" >> release.txt
+        # echo "File Name|Meaning" >> release.txt
+        # echo "-|-" >> release.txt
+        # echo "**config_*.buildinfo**|compile configuration information" >> release.txt
+        # echo "**feeds_*.buildinfo**|feeds file content and git head information during compilation" >> release.txt
+        # echo "**ipk_*.zip**|Including the ipk installation files of helloworld OpenClash passwall passwall_packages passwall2" >> release.txt
+        # echo "**openwrt-*.img.gz**|openwrt firmware file" >> release.txt
+        # echo "**sha256sums_***|hash verification code file corresponding to the firmware" >> release.txt
+        # echo "**version_*.buildinfo**|the version file corresponding to the firmware" >> release.txt
 
         # echo "## IPK File Description" >> release.txt
         # echo "**Note that sometimes the dependent ipk of passwall and helloworld will be repeated. You may see that there are many ipk in helloworld, but there are few files of passwall_packages. Don’t be surprised, install them all**" >> release.txt
