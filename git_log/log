@@ -1,9 +1,9 @@
-lede:e2a09540e*e2a09540e
+lede:135a4e954*135a4e954
 packages:c19ac843*c19ac843
 luci:f3fe5b5*f3fe5b5
 routing:6f74738*6f74738
 telephony:0b0af5c*0b0af5c
-helloworld:2f19517*2f19517
+helloworld:8b3e6a5*8b3e6a5
 openwrt-passwall-packages:e466b5e*e466b5e
 openwrt-passwall:6d9c4dc*6d9c4dc
 openwrt-passwall2:afb4f89*afb4f89

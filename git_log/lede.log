@@ -1,0 +1,7 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+135a4e954|John Audia|Fri Jan 5 15:40:08 2024 -0500|kernel: bump 5.15 to 5.15.146
+89e25b571|aiamadeus|Sun Jan 7 23:05:16 2024 +0800|mediatek: add missing nmbm for RG-X60 Pro
+</details>
