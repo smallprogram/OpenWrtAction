@@ -47,6 +47,7 @@ jobs:
     name: Build-Openwrt-Init
     outputs:
       output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
+      output_sha: ${{steps.commit.outputs.commit_hash }}
     steps:
       - id: gen_release_tag
         run: |
@@ -231,7 +232,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@main
         with:
-          fetch-depth: 0
+          ref: ${{ needs.job_init.outputs.output_sha }}
 
       - name: Install Packages
         env:
@@ -474,7 +475,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
       with:
-        fetch-depth: 0
+        ref: ${{ needs.job_init.outputs.output_sha }}
 
     - name: Install Packages
       env:
@@ -732,7 +733,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
       with:
-        fetch-depth: 0
+        ref: ${{ needs.job_init.outputs.output_sha }}
 
     - name: Download Tags
       uses: actions/download-artifact@v3
@@ -788,7 +789,7 @@ jobs:
           echo "|=========================================|"
           ls git_log
           echo "|=========================================|"
-          
+
           echo "## What's Changed" >> release.txt
 
           OUTPUT_FILES=(
