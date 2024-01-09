@@ -785,6 +785,10 @@ jobs:
             fi
           done
 
+          echo "|=========================================|"
+          ls git_log
+          echo "|=========================================|"
+          
           echo "## What's Changed" >> release.txt
 
           OUTPUT_FILES=(
@@ -812,9 +816,7 @@ jobs:
               echo "no file $file.log 404"
             fi
           done
-          echo "|=========================================|"
-          ls git_log
-          echo "|=========================================|"
+          
 
           echo "status=success" >> $GITHUB_OUTPUT
           echo "-----------------------release.txt------------------------"
