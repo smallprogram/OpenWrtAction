@@ -608,16 +608,15 @@ jobs:
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
         cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
+        mkdir -p feeds_packages
         firmware_path=$PWD
-
         cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
-        # zip -r $firmware_path/ipk_${{ matrix.platforms }}.zip helloworld OpenClash passwall passwall_packages passwall2
-
         mv * $firmware_path/feeds_packages
         cd $firmware_path
         zip -r buildinfo_${{ matrix.platforms }}.zip feeds_packages packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
         rm -rf packages feeds_packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
 
+        # zip -r $firmware_path/ipk_${{ matrix.platforms }}.zip helloworld OpenClash passwall passwall_packages passwall2
         # zip -r buildinfo_${{ matrix.platforms }}
         # mv sha256sums sha256sums_${{ matrix.platforms }}
         # mv version.buildinfo version_${{ matrix.platforms }}.buildinfo
@@ -636,7 +635,7 @@ jobs:
 
     - name: Generate Release Tag
       id: tag
-      if: steps.compile.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
+      if: steps.organize.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
 
         echo "## :mega:Update content" >> release.txt
