@@ -1,0 +1,7 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+cbcb69593|David Bauer|Thu Nov 30 07:32:52 2023 +0100|mac80211: avoid crashing on invalid band info
+6f40d7387|Felix Fietkau|Tue Jan 9 15:15:08 2024 +0100|mediatek: fix BPI-R3 wifi mac address
+</details>
