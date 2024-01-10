@@ -611,14 +611,18 @@ jobs:
         firmware_path=$PWD
 
         cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
-        zip -r $firmware_path/ipk_${{ matrix.platforms }}.zip helloworld OpenClash passwall passwall_packages passwall2
+        # zip -r $firmware_path/ipk_${{ matrix.platforms }}.zip helloworld OpenClash passwall passwall_packages passwall2
 
+        mv * $firmware_path/feeds_packages
         cd $firmware_path
-        rm -rf packages
-        mv sha256sums sha256sums_${{ matrix.platforms }}
-        mv version.buildinfo version_${{ matrix.platforms }}.buildinfo
-        mv config.buildinfo config_${{ matrix.platforms }}.buildinfo
-        mv feeds.buildinfo feeds_${{ matrix.platforms }}.buildinfo
+        zip -r buildinfo_${{ matrix.platforms }}.zip feeds_packages packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
+        rm -rf packages feeds_packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
+
+        # zip -r buildinfo_${{ matrix.platforms }}
+        # mv sha256sums sha256sums_${{ matrix.platforms }}
+        # mv version.buildinfo version_${{ matrix.platforms }}.buildinfo
+        # mv config.buildinfo config_${{ matrix.platforms }}.buildinfo
+        # mv feeds.buildinfo feeds_${{ matrix.platforms }}.buildinfo
 
         echo "FIRMWARE=$firmware_path" >> $GITHUB_ENV
         echo "status=success" >> $GITHUB_OUTPUT
