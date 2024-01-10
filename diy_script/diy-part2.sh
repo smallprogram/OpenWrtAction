@@ -34,6 +34,7 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/le
 # find ./ | grep Makefile | grep mosdns | xargs rm -f
 rm -rf ./feeds/luci/applications/luci-app-mosdns/
 rm -rf ./feeds/packages/net/mosdns/
+rm -rf ./package/custom_packages/mosdns
 # rm -rf feeds/packages/net/v2ray-geodata/
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 ./package/custom_packages/mosdns
 # git clone https://github.com/sbwml/v2ray-geodata ./package/custom_packages/v2ray-geodata
