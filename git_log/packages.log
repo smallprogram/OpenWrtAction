@@ -1,6 +1,0 @@
-<details> <summary> <b>lean package new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-b2f32ae4|xiaotan8|Wed Jan 10 20:38:17 2024 +0800|openconnect: fix PKG_HASH (#749)
-</details>
