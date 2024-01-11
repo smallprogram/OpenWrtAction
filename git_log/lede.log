@@ -1,0 +1,9 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+c0bfa64da|coolsnowwolf|Thu Jan 11 11:40:01 2024 +0800|toolchain: glibc: Update to glibc 2.37
+229e5e43f|coolsnowwolf|Thu Jan 11 11:30:49 2024 +0800|binutils: update to 2.41
+321f1572f|coolsnowwolf|Thu Jan 11 11:27:44 2024 +0800|toolchain/binutils: add support for version 2.41
+be9cb16c8|coolsnowwolf|Thu Jan 11 11:22:30 2024 +0800|toolchain: gcc: add support for GCC 13
+</details>
