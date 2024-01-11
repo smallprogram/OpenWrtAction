@@ -2,8 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c0bfa64da|coolsnowwolf|Thu Jan 11 11:40:01 2024 +0800|toolchain: glibc: Update to glibc 2.37
-229e5e43f|coolsnowwolf|Thu Jan 11 11:30:49 2024 +0800|binutils: update to 2.41
-321f1572f|coolsnowwolf|Thu Jan 11 11:27:44 2024 +0800|toolchain/binutils: add support for version 2.41
-be9cb16c8|coolsnowwolf|Thu Jan 11 11:22:30 2024 +0800|toolchain: gcc: add support for GCC 13
+9c8d19675|coolsnowwolf|Thu Jan 11 21:14:49 2024 +0800|toolchain/gcc: add loongarch64 new target
+253878b85|coolsnowwolf|Thu Jan 11 20:56:50 2024 +0800|include: add loongarch64 new target
+4103edf7b|coolsnowwolf|Thu Jan 11 20:45:33 2024 +0800|tools: add util-linux
+01edff43e|coolsnowwolf|Thu Jan 11 20:38:46 2024 +0800|gpio-button-hotplug: fix kernel 6.2+ build failure
+29c2367ca|coolsnowwolf|Thu Jan 11 20:36:11 2024 +0800|cryptodev-linux: update to 1.13
+7fa5e13df|coolsnowwolf|Thu Jan 11 20:31:15 2024 +0800|openssl: add linux64-loongarch64 into the targets list
+39d6ad704|coolsnowwolf|Thu Jan 11 20:18:46 2024 +0800|grub2: add loongarch64 support
+df3c79e2b|coolsnowwolf|Thu Jan 11 20:12:59 2024 +0800|toolchain/binutils: switch to version 2.40 by default
 </details>
