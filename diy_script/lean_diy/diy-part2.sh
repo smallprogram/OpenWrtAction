@@ -73,12 +73,12 @@ if [ ! -n "$is_wsl2op" ]; then
 
 else
     # Add default login background
-    cp -r ../OpenWrtAction/source/video/* ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background/
-    cp -r ../OpenWrtAction/source/img/* ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background/
+    cp -r /home/$USER/OpenWrtAction/source/video/* ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background/
+    cp -r /home/$USER/OpenWrtAction/source/img/* ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background/
 
     # Inject download package
     mkdir -p dl
-    cp -r ../OpenWrtAction/library/* dl/
+    cp -r /home/$USER/OpenWrtAction/library/* dl/
 
     # Fixed qmi_wwan_f complie error
     # cp -r ../OpenWrtAction/patches/qmi_wwan_f.c ./package/wwan/driver/fibocom_QMI_WWAN/src/qmi_wwan_f.c
