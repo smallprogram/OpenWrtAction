@@ -2,12 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9c8d19675|coolsnowwolf|Thu Jan 11 21:14:49 2024 +0800|toolchain/gcc: add loongarch64 new target
-253878b85|coolsnowwolf|Thu Jan 11 20:56:50 2024 +0800|include: add loongarch64 new target
-4103edf7b|coolsnowwolf|Thu Jan 11 20:45:33 2024 +0800|tools: add util-linux
-01edff43e|coolsnowwolf|Thu Jan 11 20:38:46 2024 +0800|gpio-button-hotplug: fix kernel 6.2+ build failure
-29c2367ca|coolsnowwolf|Thu Jan 11 20:36:11 2024 +0800|cryptodev-linux: update to 1.13
-7fa5e13df|coolsnowwolf|Thu Jan 11 20:31:15 2024 +0800|openssl: add linux64-loongarch64 into the targets list
-39d6ad704|coolsnowwolf|Thu Jan 11 20:18:46 2024 +0800|grub2: add loongarch64 support
-df3c79e2b|coolsnowwolf|Thu Jan 11 20:12:59 2024 +0800|toolchain/binutils: switch to version 2.40 by default
+bfb12d78c|coolsnowwolf|Fri Jan 12 14:20:18 2024 +0800|toolchain/musl: update to 1.2.4
+51459ab19|coolsnowwolf|Fri Jan 12 13:28:00 2024 +0800|toolchain: gdb: Add optional python support
+f426fce6c|coolsnowwolf|Fri Jan 12 10:34:28 2024 +0800|video.mk: add AMD Displaycard (RX580) support for loongarch64
+a5a63865f|coolsnowwolf|Fri Jan 12 10:23:48 2024 +0800|target: add loongarch64 support
+b055b3b40|coolsnowwolf|Fri Jan 12 10:18:22 2024 +0800|generic: init linux kernel 6.6 support
+c6c5c79e3|coolsnowwolf|Fri Jan 12 10:13:05 2024 +0800|target.mk: add GRUB2 EFI support for loongarch64
 </details>

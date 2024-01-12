@@ -1,9 +1,0 @@
-<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-37775c0|xiaorouji|Thu Jan 11 20:43:13 2024 +0800|luci: 1.23-2
-148309d|xiaorouji|Thu Jan 11 20:42:45 2024 +0800|luci: sing-box do not use pre-release
-3e6c58b|xiaorouji|Thu Jan 11 20:39:24 2024 +0800|luci: Xray shunt rule DNS in order
-27ffbf2|xiaorouji|Thu Jan 11 19:58:16 2024 +0800|luci: fix #444
-</details>
