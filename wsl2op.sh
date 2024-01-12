@@ -148,7 +148,7 @@ function Func_DIY1_Script(){
     Func_LogMessage "开始执行DIY1设置脚本" "Start executing the DIY1 setup script"
     sleep 1s
     
-    bash ../OpenWrtAction/$diy_script_1
+    bash ../OpenWrtAction/$diy_script_1 1
 
     Func_LogSuccess "DIY1脚本执行完成" "DIY script execution completed"
     sleep 2s
@@ -159,7 +159,7 @@ function Func_DIY2_Script(){
     Func_LogMessage "开始执行DIY2设置脚本" "Start executing the DIY2 setup script"
     sleep 1s
     
-    bash ../OpenWrtAction/$diy_script_2
+    bash ../OpenWrtAction/$diy_script_2 1
 
     Func_LogSuccess "DIY2脚本执行完成" "DIY script execution completed"
     sleep 2s
