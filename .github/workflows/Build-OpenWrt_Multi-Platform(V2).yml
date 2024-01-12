@@ -33,8 +33,9 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds_config/lean.feeds.conf.default
-  DIY_P1_SH: diy_script/diy-part1.sh
-  DIY_P2_SH: diy_script/diy-part2.sh
+  CONFIGS: config/leanlede_config
+  DIY_P1_SH: diy_script/lean_diy/diy-part1.sh
+  DIY_P2_SH: diy_script/lean_diy/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_ARTIFACT: false
@@ -89,11 +90,11 @@ jobs:
           cd ..
           platforms=(X86 R5S R5C R4S R4SE R2S R2C H66K H68K H69K R66S R68S R_PI_3b R_PI_4b)
           for i in "${platforms[@]}"; do
-            [ -e config/$i.config ] && cp -r config/$i.config openwrt/.config
+            [ -e $CONFIGS/$i.config ] && cp -r $CONFIGS/$i.config openwrt/.config
             cd openwrt
             make defconfig
             cd ..
-            cp -f openwrt/.config config/$i.config
+            cp -f openwrt/.config $CONFIGS/$i.config
           done
 
       - name: Generate Git Log
@@ -286,7 +287,7 @@ jobs:
 
       - name: Load Configuration
         run: |
-          [ -e config/leanlede_config/${{ matrix.platforms }}.config ] && cp -r config/leanlede_config/${{ matrix.platforms }}.config openwrt/.config
+          [ -e $CONFIGS/${{ matrix.platforms }}.config ] && cp -r $CONFIGS/${{ matrix.platforms }}.config openwrt/.config
           chmod +x $DIY_P2_SH
           cd openwrt
           $GITHUB_WORKSPACE/$DIY_P2_SH

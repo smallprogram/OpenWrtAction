@@ -42,21 +42,30 @@
 
 
 #--------------------⬇⬇⬇⬇环境变量⬇⬇⬇⬇--------------------
-# 路由默认IP地址
-routeIP=10.10.0.253
 # 编译环境中当前账户名字
 userName=$USER
+# 默认lean源码文件夹名
+ledeDir=${ledeDirFront}${configName}
+ledeDirFront=lean_
 # 默认OpenWrtAction的Config文件夹中的config文件名
 configName=$1
-# 默认lean源码文件夹名
-ledeDir=lede_$configName
-config_list=($(ls /home/$userName/OpenWrtAction/config))
+# 默认的config目录
+config_dir=config/leanlede_config
+# config列表
+config_list=($(ls /home/$userName/OpenWrtAction/$config_dir))
 # 默认输入超时时间，单位为秒
 timer=15
 # 编译环境默认值，1为WSL2，2为非WSL2的Linux环境。不要修改这里
 sysenv=2
 # OpenWrtAction Git URL
 owaUrl=https://github.com/smallprogram/OpenWrtAction.git
+# 依赖列表
+my_depends=https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends
+# oepnwrt主源码
+openwrt_source=https://github.com/coolsnowwolf/lede
+# diy script
+diy_script_1=diy_script/lean_diy/diy-part1.sh
+diy_script_2=diy_script/lean_diy/diy-part2.sh
 # 是否首次编译 0否，1是
 isFirstCompile=0
 # 是否Make Clean & Make DirClean
@@ -64,34 +73,11 @@ isCleanCompile=$2
 # 是否单线程编译
 isSingleCompile=$3
 # 编译openwrt的log日志文件夹名称
-log_folder_name=openwrt_log
+log_folder_name=lean_openwrt_log
 # 编译子文件夹名称
-folder_name=log_Compile_${configName}_$(date "+%Y-%m-%d-%H-%M-%S")
-# logfile名称
-log_feeds_update_filename=Func_Main1_feeds_update-git_log.log
-log_feeds_install_filename=Func_Main2_feeds_install-git_log.log
-log_make_defconfig_filename=Func_Main3_make_defconfig-git_log.log
-log_make_down_filename=Func_Main4_make_download-git_log.log
-log_Compile_filename=Func_Main5_Compile-git_log.log
-log_Compile_time_filename=Func_Main6_Compile_Time-git_log.log
-# defconfig操作之前的config文件名
-log_before_defconfig_config=.config_old
-# defconfig操作之后的config文件名
-log_after_defconfig_config=.config_new
-# 两个config的差异文件名
-log_diff_config=.config_diff
+folder_name=log_leanlede_Compile_${configName}_$(date "+%Y-%m-%d-%H-%M-%S")
 #清理超过多少天的日志文件
 clean_day=3
-# 扩展luci插件地址
-# luci_apps=(
-#     # https://github.com/jerrykuku/luci-theme-argon.git
-#     https://github.com/jerrykuku/luci-app-argon-config.git
-#     # https://github.com/jerrykuku/lua-maxminddb.git
-#     # https://github.com/jerrykuku/luci-app-vssr.git
-#     # https://github.com/lisaac/luci-app-dockerman.git
-#     # https://github.com/xiaorouji/openwrt-passwall.git
-#     https://github.com/rufengsuixing/luci-app-adguardhome.git
-# )
 # 编译结果变量
 is_complie_error=0
 # 编译是否展示详细信息
@@ -158,7 +144,7 @@ function Func_DIY1_Script(){
     Func_LogMessage "开始执行DIY1设置脚本" "Start executing the DIY1 setup script"
     sleep 1s
     
-    bash ../OpenWrtAction/diy_script/diy-part1.sh
+    bash ../OpenWrtAction/$diy_script_1
 
     Func_LogSuccess "DIY1脚本执行完成" "DIY script execution completed"
     sleep 2s
@@ -169,7 +155,7 @@ function Func_DIY2_Script(){
     Func_LogMessage "开始执行DIY2设置脚本" "Start executing the DIY2 setup script"
     sleep 1s
     
-    bash ../OpenWrtAction/diy_script/diy-part2.sh 1
+    bash ../OpenWrtAction/$diy_script_2
 
     Func_LogSuccess "DIY2脚本执行完成" "DIY script execution completed"
     sleep 2s
@@ -181,49 +167,6 @@ function Func_GitSetting(){
     git config --global user.name "${git_user}"
     export GIT_SSL_NO_VERIFY=1
 }
-
-# 获取自定插件函数 作废，直接使用diy脚本
-# function Func_Get_luci_apps(){
-#     for luci_app in "${luci_apps[@]}"; do
-
-#         temp=${luci_app##*/} # xxx.git
-#         dir=${temp%%.*}  # xxx
-
-#         Func_LogMessage "开始同步$dir...." "Start syncing $dir...."
-#         sleep 2s
-
-#         # if [[ $isFirstCompile == 1 && $dir == luci-theme-argon ]]; then
-#         #     cd /home/${userName}/${ledeDir}/package/lean/
-#         #     rm -rf $dir
-#         #     git clone -b 18.06 $luci_app
-#         #     continue
-#         # fi
-
-#         # if [[ $luci_app == https://github.com/xiaorouji/openwrt-passwall.git ]]; then
-#         #     cd /home/${userName}/${ledeDir}/package/lean/
-#         #     rm -rf passwall
-#         #     rm -rf passwall_package
-#         #     git clone -b luci $luci_app passwall
-#         #     git clone -b packages $luci_app passwall_package
-#         #     cp -rf passwall_package/* passwall
-#         #     rm -rf passwall_package
-#         #     continue
-#         # fi
-
-#         if [ ! -d "/home/${userName}/${ledeDir}/package/lean/$dir" ];
-#         then
-#             cd /home/${userName}/${ledeDir}/package/lean/
-#             git clone $luci_app
-#             cd /home/${userName}
-#         else
-#             cd /home/${userName}/${ledeDir}/package/lean/$dir
-#             git stash
-#             git stash drop
-#             git pull --rebase
-#             cd /home/${userName}
-#         fi
-#     done
-# }
 
 # 编译报错检查函数
 check_compile_error() {
@@ -271,12 +214,7 @@ function Func_Compile_Firmware() {
     then
         mkdir /home/${userName}/${log_folder_name}/${folder_name}
     fi
-    touch /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_update_filename}
-    touch /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_install_filename}
-    touch /home/${userName}/${log_folder_name}/${folder_name}/${log_make_defconfig_filename}
-    touch /home/${userName}/${log_folder_name}/${folder_name}/${log_make_down_filename}
-    touch /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
-    echo -e $begin_date > /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_time_filename}
+    echo -e $begin_date > /home/${userName}/${log_folder_name}/${folder_name}/Func_Main6_Compile_Time-git_log.log
 
     Func_LogSuccess "编译日志文件夹创建成功" "The compilation log folder was created successfully"
     sleep 1s
@@ -295,11 +233,11 @@ function Func_Compile_Firmware() {
     echo
     Func_LogMessage "开始update feeds...." "begin update feeds...."
     sleep 1s
-    ./scripts/feeds update -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_update_filename}
+    ./scripts/feeds update -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/Func_Main1_feeds_update-git_log.log
     echo
     Func_LogMessage "开始install feeds...." "begin install feeds...."
     sleep 1s
-    ./scripts/feeds install -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_install_filename}
+    ./scripts/feeds install -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/Func_Main2_feeds_install-git_log.log
     echo
 
     
@@ -311,23 +249,23 @@ function Func_Compile_Firmware() {
     Func_LogMessage "开始将OpenwrtAction中config文件夹下的${configName}注入lean源码中,准备make toolchain...." "Start to inject ${configName} under the config folder in OpenwrtAction into lean source code..."
     sleep 2s
     echo
-    cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
+    cat /home/${userName}/OpenWrtAction/$config_dir/${configName} > /home/${userName}/${ledeDir}/.config
 
-    cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/${log_before_defconfig_config}
+    cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/.config_old
     # echo -e "\nCONFIG_ALL=y" >> .config
     # echo -e "\nCONFIG_ALL_NONSHARED=y" >> .config
 
     Func_LogMessage "开始执行make defconfig!" "Start to execute make defconfig!"
     sleep 1s
-    make defconfig | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_make_defconfig_filename}
+    make defconfig | tee -a /home/${userName}/${log_folder_name}/${folder_name}/Func_Main3_make_defconfig-git_log.log
 
-    cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/${log_after_defconfig_config}
-    diff  /home/${userName}/${log_folder_name}/${folder_name}/${log_before_defconfig_config} /home/${userName}/${log_folder_name}/${folder_name}/${log_after_defconfig_config} -y -W 200 > /home/${userName}/${log_folder_name}/${folder_name}/${log_diff_config}
+    cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/.config_new
+    diff  /home/${userName}/${log_folder_name}/${folder_name}/.config_old /home/${userName}/${log_folder_name}/${folder_name}/.config_new -y -W 200 > /home/${userName}/${log_folder_name}/${folder_name}/.config_diff
 
 
     Func_LogMessage "开始执行make download!" "Start to execute make download!"
     sleep 1s
-    make -j8 download | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_make_down_filename}
+    make -j8 download | tee -a /home/${userName}/${log_folder_name}/${folder_name}/Func_Main4_make_download-git_log.log
 
     Func_LogMessage "开始清理download残留!" "Start cleaning up download residue!"
     find dl -mindepth 1 -type d -exec rm -rf {} \;
@@ -656,7 +594,7 @@ function Func_Compile_Firmware() {
     sleep 1s
     
     end_date=结束时间$(date "+%Y-%m-%d-%H-%M-%S")
-    echo -e $end_date >> /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_time_filename}
+    echo -e $end_date >> /home/${userName}/${log_folder_name}/${folder_name}/Func_Main6_Compile_Time-git_log.log
 
     ######是否提交编译结果到github Release
     # UpdateFileToGithubRelease
@@ -710,7 +648,7 @@ function Func_ConfigList(){
     else 
         if [[ $configNameInp -ge 1 && $configNameInp -le $key ]]; then
             configName=${config_list[$(($configNameInp-1))]}
-            ledeDir=lede_$configName
+            ledeDir=${ledeDirFront}${configName}
             # echo $configNameInp
             # echo $configName
         fi
@@ -757,7 +695,7 @@ function Func_Main(){
             sudo apt update -y
             sudo apt full-upgrade -y
             sleep 5s
-            sudo apt-get -y install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends)
+            sudo apt-get -y install $(curl -fsSL $my_depends)
             sleep 5s
             git config --global http.sslverify false
             git config --global https.sslverify false
@@ -835,7 +773,7 @@ function Func_Main(){
     cd /home/${userName}
     if [ ! -d "/home/${userName}/${ledeDir}" ];
     then
-        git clone https://github.com/coolsnowwolf/lede ${ledeDir}
+        git clone $openwrt_source ${ledeDir}
         cd ${ledeDir}/package/lean
         cd /home/${userName}
         isFirstCompile=1
@@ -937,11 +875,11 @@ function Func_Main(){
         echo
         Func_LogMessage "开始update feeds...." "begin update feeds...."
         sleep 1s
-        ./scripts/feeds update -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_update_filename}
+        ./scripts/feeds update -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/Func_Main1_feeds_update-git_log.log
         echo
         Func_LogMessage "开始install feeds...." "begin install feeds...."
         sleep 1s
-        ./scripts/feeds install -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_install_filename}
+        ./scripts/feeds install -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/Func_Main2_feeds_install-git_log.log
         echo
 
 
