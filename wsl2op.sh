@@ -1,6 +1,6 @@
 #!/bin/bash
 # OP编译
-# Copyright (c) 2019-2022 smallprogram
+# Copyright (c) 2019-2024 smallprogram
 #
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
