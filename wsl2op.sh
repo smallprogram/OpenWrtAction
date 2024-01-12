@@ -43,16 +43,20 @@
 
 #--------------------⬇⬇⬇⬇环境变量⬇⬇⬇⬇--------------------
 # 编译环境中当前账户名字
-userName=$USER
+user_name=$USER
 # 默认lean源码文件夹名
-ledeDir=${ledeDirFront}${configName}
-ledeDirFront=lean_
+openwrt_dir=${openwrt_dir_front}${config_name}
+openwrt_dir_front=lean_
 # 默认OpenWrtAction的Config文件夹中的config文件名
-configName=$1
+config_name=$1
 # 默认的config目录
 config_dir=config/leanlede_config
 # config列表
-config_list=($(ls /home/$userName/OpenWrtAction/$config_dir))
+config_list=($(ls /home/$user_name/OpenWrtAction/$config_dir))
+# feeds目录
+feeds_dir=feeds_config/lean.feeds.conf.default
+# wsl PATH路径
+wsl_path=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # 默认输入超时时间，单位为秒
 timer=15
 # 编译环境默认值，1为WSL2，2为非WSL2的Linux环境。不要修改这里
@@ -67,15 +71,15 @@ openwrt_source=https://github.com/coolsnowwolf/lede
 diy_script_1=diy_script/lean_diy/diy-part1.sh
 diy_script_2=diy_script/lean_diy/diy-part2.sh
 # 是否首次编译 0否，1是
-isFirstCompile=0
+is_first_compile=0
 # 是否Make Clean & Make DirClean
-isCleanCompile=$2
+is_clean_compile=$2
 # 是否单线程编译
-isSingleCompile=$3
+is_single_compile=$3
 # 编译openwrt的log日志文件夹名称
 log_folder_name=lean_openwrt_log
 # 编译子文件夹名称
-folder_name=log_leanlede_Compile_${configName}_$(date "+%Y-%m-%d-%H-%M-%S")
+folder_name=log_leanlede_Compile_${config_name}_$(date "+%Y-%m-%d-%H-%M-%S")
 #清理超过多少天的日志文件
 clean_day=3
 # 编译结果变量
@@ -186,13 +190,13 @@ function Func_Compile_Firmware() {
 
     
     # CheckUpdate
-    cd /home/${userName}/${ledeDir}
+    cd /home/${user_name}/${openwrt_dir}
     begin_date=开始时间$(date "+%Y-%m-%d-%H-%M-%S")
-    folder_name=log_Compile_${configName}_$(date "+%Y-%m-%d-%H-%M-%S")
+    folder_name=log_Compile_${config_name}_$(date "+%Y-%m-%d-%H-%M-%S")
     Func_LogMessage "是否启用Clean编译，如果不输入任何值默认否，输入任意值启用Clean编译，Clean操作适用于大版本更新" "Whether to enable Clean compilation, if you do not enter any value, the default is No, enter any value to enable Clean compilation, Clean operation is suitable for major version updates"
     Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-    read -t $timer isSingleCompile
-    if [ ! -n "$isCleanCompile" ]; then
+    read -t $timer is_single_compile
+    if [ ! -n "$is_clean_compile" ]; then
         Func_LogMessage "不执行make clean && make dirclean " "OK, do not execute make clean && make dirclean "
     else
         Func_LogMessage "配置为Clean编译。执行make clean && make dirclean" "OK, configure for Clean compilation."
@@ -203,18 +207,13 @@ function Func_Compile_Firmware() {
         sleep 1s
     fi
     
-    Func_LogMessage "创建编译日志文件夹/home/${userName}/${log_folder_name}/${folder_name}" "Create compilation log folder /home/${userName}/${log_folder_name}/${folder_name}"
+    Func_LogMessage "创建编译日志文件夹/home/${user_name}/${log_folder_name}/${folder_name}" "Create compilation log folder /home/${user_name}/${log_folder_name}/${folder_name}"
     sleep 1s
 
-    if [ ! -d "/home/${userName}/${log_folder_name}" ];
-    then
-        mkdir /home/${userName}/${log_folder_name}
-    fi
-    if [ ! -d "/home/${userName}/${log_folder_name}/${folder_name}" ];
-    then
-        mkdir /home/${userName}/${log_folder_name}/${folder_name}
-    fi
-    echo -e $begin_date > /home/${userName}/${log_folder_name}/${folder_name}/Func_Main6_Compile_Time-git_log.log
+    mkdir -p /home/${user_name}/${log_folder_name}
+    mkdir /home/${user_name}/${log_folder_name}/${folder_name}
+
+    echo -e $begin_date > /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main6_Compile_Time-git_log.log
 
     Func_LogSuccess "编译日志文件夹创建成功" "The compilation log folder was created successfully"
     sleep 1s
@@ -224,7 +223,7 @@ function Func_Compile_Firmware() {
     Func_LogMessage "开始将OpenwrtAction中的自定义feeds注入lean源码中...." "Started injecting custom feeds in OpenwrtAction into lean source code..."
     sleep 2s
     echo
-    cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default > /home/${userName}/${ledeDir}/feeds.conf.default
+    cat /home/${user_name}/OpenWrtAction/$feeds_dir > /home/${user_name}/${openwrt_dir}/feeds.conf.default
 
     Func_DIY1_Script
 
@@ -233,11 +232,11 @@ function Func_Compile_Firmware() {
     echo
     Func_LogMessage "开始update feeds...." "begin update feeds...."
     sleep 1s
-    ./scripts/feeds update -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/Func_Main1_feeds_update-git_log.log
+    ./scripts/feeds update -a | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main1_feeds_update-git_log.log
     echo
     Func_LogMessage "开始install feeds...." "begin install feeds...."
     sleep 1s
-    ./scripts/feeds install -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/Func_Main2_feeds_install-git_log.log
+    ./scripts/feeds install -a | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main2_feeds_install-git_log.log
     echo
 
     
@@ -246,26 +245,26 @@ function Func_Compile_Firmware() {
 
 
     echo
-    Func_LogMessage "开始将OpenwrtAction中config文件夹下的${configName}注入lean源码中,准备make toolchain...." "Start to inject ${configName} under the config folder in OpenwrtAction into lean source code..."
+    Func_LogMessage "开始将OpenwrtAction中config文件夹下的${config_name}注入lean源码中,准备make toolchain...." "Start to inject ${config_name} under the config folder in OpenwrtAction into lean source code..."
     sleep 2s
     echo
-    cat /home/${userName}/OpenWrtAction/$config_dir/${configName} > /home/${userName}/${ledeDir}/.config
+    cat /home/${user_name}/OpenWrtAction/$config_dir/${config_name} > /home/${user_name}/${openwrt_dir}/.config
 
-    cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/.config_old
+    cat /home/${user_name}/${openwrt_dir}/.config > /home/${user_name}/${log_folder_name}/${folder_name}/.config_old
     # echo -e "\nCONFIG_ALL=y" >> .config
     # echo -e "\nCONFIG_ALL_NONSHARED=y" >> .config
 
     Func_LogMessage "开始执行make defconfig!" "Start to execute make defconfig!"
     sleep 1s
-    make defconfig | tee -a /home/${userName}/${log_folder_name}/${folder_name}/Func_Main3_make_defconfig-git_log.log
+    make defconfig | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main3_make_defconfig-git_log.log
 
-    cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/.config_new
-    diff  /home/${userName}/${log_folder_name}/${folder_name}/.config_old /home/${userName}/${log_folder_name}/${folder_name}/.config_new -y -W 200 > /home/${userName}/${log_folder_name}/${folder_name}/.config_diff
+    cat /home/${user_name}/${openwrt_dir}/.config > /home/${user_name}/${log_folder_name}/${folder_name}/.config_new
+    diff  /home/${user_name}/${log_folder_name}/${folder_name}/.config_old /home/${user_name}/${log_folder_name}/${folder_name}/.config_new -y -W 200 > /home/${user_name}/${log_folder_name}/${folder_name}/.config_diff
 
 
     Func_LogMessage "开始执行make download!" "Start to execute make download!"
     sleep 1s
-    make -j8 download | tee -a /home/${userName}/${log_folder_name}/${folder_name}/Func_Main4_make_download-git_log.log
+    make -j8 download | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main4_make_download-git_log.log
 
     Func_LogMessage "开始清理download残留!" "Start cleaning up download residue!"
     find dl -mindepth 1 -type d -exec rm -rf {} \;
@@ -281,36 +280,36 @@ function Func_Compile_Firmware() {
     then
         Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-        read -t $timer isSingleCompile
-        if [ ! -n "$isSingleCompile" ]; then
+        read -t $timer is_single_compile
+        if [ ! -n "$is_single_compile" ]; then
             Func_LogSuccess "OK，不执行单线程编译 " "OK, do not perform single-threaded compilation "
             sleep 1s
-            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make tools/compile -j$(nproc) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile1_tools.log
+            # echo "PATH=$wsl_path"
+            PATH=$wsl_path make tools/compile -j$(nproc) $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile1_tools.log
             is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogSuccess "OK，执行单线程编译。" "OK, execute single-threaded compilation."
             Func_LogMessage "准备开始编译" "Ready to compile"
             sleep 1s
-            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make tools/compile -j1 $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile1_tools.log
+            PATH=$wsl_path make tools/compile -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile1_tools.log
             is_complie_error=${PIPESTATUS[0]}
         fi
         
     else
         Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-        read -t $timer isSingleCompile
-        if [ ! -n "$isSingleCompile" ]; then
+        read -t $timer is_single_compile
+        if [ ! -n "$is_single_compile" ]; then
             Func_LogSuccess "OK，不执行单线程编译 " "OK, do not perform single-threaded compilation "
             sleep 1s
-            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            make tools/compile -j$(nproc) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile1_tools.log
+            # echo "PATH=$wsl_path"
+            make tools/compile -j$(nproc) $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile1_tools.log
             is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogSuccess "OK，执行单线程编译。" "OK, execute single-threaded compilation."
             Func_LogMessage "准备开始编译" "Ready to compile"
             sleep 1s
-            make tools/compile -j1 $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile1_tools.log
+            make tools/compile -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile1_tools.log
             is_complie_error=${PIPESTATUS[0]}
         fi
         # $PATH
@@ -325,36 +324,36 @@ function Func_Compile_Firmware() {
     then
         Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-        read -t $timer isSingleCompile
-        if [ ! -n "$isSingleCompile" ]; then
+        read -t $timer is_single_compile
+        if [ ! -n "$is_single_compile" ]; then
             Func_LogSuccess "OK，不执行单线程编译 " "OK, do not perform single-threaded compilation "
             sleep 1s
-            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make toolchain/compile -j$(nproc) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
+            # echo "PATH=$wsl_path"
+            PATH=$wsl_path make toolchain/compile -j$(nproc) $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
             is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogSuccess "OK，执行单线程编译。" "OK, execute single-threaded compilation."
             Func_LogMessage "准备开始编译" "Ready to compile"
             sleep 1s
-            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make toolchain/compile -j1 $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
+            PATH=$wsl_path make toolchain/compile -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
             is_complie_error=${PIPESTATUS[0]}
         fi
         
     else
         Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-        read -t $timer isSingleCompile
-        if [ ! -n "$isSingleCompile" ]; then
+        read -t $timer is_single_compile
+        if [ ! -n "$is_single_compile" ]; then
             Func_LogSuccess "OK，不执行单线程编译 " "OK, do not perform single-threaded compilation "
             sleep 1s
-            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            make toolchain/compile -j$(nproc) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
+            # echo "PATH=$wsl_path"
+            make toolchain/compile -j$(nproc) $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
             is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogSuccess "OK，执行单线程编译。" "OK, execute single-threaded compilation."
             Func_LogMessage "准备开始编译" "Ready to compile"
             sleep 1s
-            make toolchain/compile -j1 $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
+            make toolchain/compile -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
             is_complie_error=${PIPESTATUS[0]}
         fi
         # $PATH
@@ -373,36 +372,36 @@ function Func_Compile_Firmware() {
     # then
     #     Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
     #     Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-    #     read -t $timer isSingleCompile
-    #     if [ ! -n "$isSingleCompile" ]; then
+    #     read -t $timer is_single_compile
+    #     if [ ! -n "$is_single_compile" ]; then
     #         Func_LogMessage "OK，不执行单线程编译 " "OK, do not perform single-threaded compilation "
     #         sleep 1s
-    #         # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-    #         PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make target/compile -j$(nproc) $is_VS IGNORE_ERRORS="m n" | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile3_target.log
+    #         # echo "PATH=$wsl_path"
+    #         PATH=$wsl_path make target/compile -j$(nproc) $is_VS IGNORE_ERRORS="m n" | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile3_target.log
     #         is_complie_error=${PIPESTATUS[0]}
     #     else
     #         Func_LogMessage "OK，执行单线程编译。" "OK, execute single-threaded compilation."
     #         Func_LogMessage "准备开始编译" "Ready to compile"
     #         sleep 1s
-    #         PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make target/compile -j1 $is_VS IGNORE_ERRORS="m n" | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile3_target.log
+    #         PATH=$wsl_path make target/compile -j1 $is_VS IGNORE_ERRORS="m n" | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile3_target.log
     #         is_complie_error=${PIPESTATUS[0]}
     #     fi
         
     # else
     #     Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
     #     Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-    #     read -t $timer isSingleCompile
-    #     if [ ! -n "$isSingleCompile" ]; then
+    #     read -t $timer is_single_compile
+    #     if [ ! -n "$is_single_compile" ]; then
     #         Func_LogMessage "OK，不执行单线程编译 " "OK, do not perform single-threaded compilation "
     #         sleep 1s
-    #         # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-    #         make target/compile -j$(nproc) $is_VS IGNORE_ERRORS="m n" | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile3_target.log
+    #         # echo "PATH=$wsl_path"
+    #         make target/compile -j$(nproc) $is_VS IGNORE_ERRORS="m n" | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile3_target.log
     #         is_complie_error=${PIPESTATUS[0]}
     #     else
     #         Func_LogMessage "OK，执行单线程编译。" "OK, execute single-threaded compilation."
     #         Func_LogMessage "准备开始编译" "Ready to compile"
     #         sleep 1s
-    #         make target/compile -j1 $is_VS IGNORE_ERRORS="m n" | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile3_target.log
+    #         make target/compile -j1 $is_VS IGNORE_ERRORS="m n" | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile3_target.log
     #         is_complie_error=${PIPESTATUS[0]}
     #     fi
     #     # $PATH
@@ -416,36 +415,36 @@ function Func_Compile_Firmware() {
     # then
     #     Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
     #     Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-    #     read -t $timer isSingleCompile
-    #     if [ ! -n "$isSingleCompile" ]; then
+    #     read -t $timer is_single_compile
+    #     if [ ! -n "$is_single_compile" ]; then
     #         Func_LogMessage "OK，不执行单线程编译 " "OK, do not perform single-threaded compilation "
     #         sleep 1s
-    #         # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-    #         PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make package/compile -j$(nproc) $is_VS IGNORE_ERRORS="m n" | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile4_packages.log
+    #         # echo "PATH=$wsl_path"
+    #         PATH=$wsl_path make package/compile -j$(nproc) $is_VS IGNORE_ERRORS="m n" | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile4_packages.log
     #         is_complie_error=${PIPESTATUS[0]}
     #     else
     #         Func_LogMessage "OK，执行单线程编译。" "OK, execute single-threaded compilation."
     #         Func_LogMessage "准备开始编译" "Ready to compile"
     #         sleep 1s
-    #         PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make package/compile -j1 $is_VS IGNORE_ERRORS="m n" | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile4_packages.log
+    #         PATH=$wsl_path make package/compile -j1 $is_VS IGNORE_ERRORS="m n" | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile4_packages.log
     #         is_complie_error=${PIPESTATUS[0]}
     #     fi
         
     # else
     #     Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
     #     Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-    #     read -t $timer isSingleCompile
-    #     if [ ! -n "$isSingleCompile" ]; then
+    #     read -t $timer is_single_compile
+    #     if [ ! -n "$is_single_compile" ]; then
     #         Func_LogMessage "OK，不执行单线程编译 " "OK, do not perform single-threaded compilation "
     #         sleep 1s
-    #         # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-    #         make package/compile -j$(nproc) $is_VS IGNORE_ERRORS="m n" | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile4_packages.log
+    #         # echo "PATH=$wsl_path"
+    #         make package/compile -j$(nproc) $is_VS IGNORE_ERRORS="m n" | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile4_packages.log
     #         is_complie_error=${PIPESTATUS[0]}
     #     else
     #         Func_LogMessage "OK，执行单线程编译。" "OK, execute single-threaded compilation."
     #         Func_LogMessage "准备开始编译" "Ready to compile"
     #         sleep 1s
-    #         make package/compile -j1 $is_VS IGNORE_ERRORS="m n" | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile4_packages.log
+    #         make package/compile -j1 $is_VS IGNORE_ERRORS="m n" | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile4_packages.log
     #         is_complie_error=${PIPESTATUS[0]}
     #     fi
     #     # $PATH
@@ -461,36 +460,36 @@ function Func_Compile_Firmware() {
     # then
     #     Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
     #     Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-    #     read -t $timer isSingleCompile
-    #     if [ ! -n "$isSingleCompile" ]; then
+    #     read -t $timer is_single_compile
+    #     if [ ! -n "$is_single_compile" ]; then
     #         Func_LogMessage "OK，不执行单线程编译 " "OK, do not perform single-threaded compilation "
     #         sleep 1s
-    #         # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-    #         PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make package/install -j$(nproc) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile5_install_packages.log
+    #         # echo "PATH=$wsl_path"
+    #         PATH=$wsl_path make package/install -j$(nproc) $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile5_install_packages.log
     #         is_complie_error=${PIPESTATUS[0]}
     #     else
     #         Func_LogMessage "OK，执行单线程编译。" "OK, execute single-threaded compilation."
     #         Func_LogMessage "准备开始编译" "Ready to compile"
     #         sleep 1s
-    #         PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make package/install -j1 $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile5_install_packages.log
+    #         PATH=$wsl_path make package/install -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile5_install_packages.log
     #         is_complie_error=${PIPESTATUS[0]}
     #     fi
         
     # else
     #     Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
     #     Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-    #     read -t $timer isSingleCompile
-    #     if [ ! -n "$isSingleCompile" ]; then
+    #     read -t $timer is_single_compile
+    #     if [ ! -n "$is_single_compile" ]; then
     #         Func_LogMessage "OK，不执行单线程编译 " "OK, do not perform single-threaded compilation "
     #         sleep 1s
-    #         # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-    #         make package/install -j$(nproc) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile5_install_packages.log
+    #         # echo "PATH=$wsl_path"
+    #         make package/install -j$(nproc) $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile5_install_packages.log
     #         is_complie_error=${PIPESTATUS[0]}
     #     else
     #         Func_LogMessage "OK，执行单线程编译。" "OK, execute single-threaded compilation."
     #         Func_LogMessage "准备开始编译" "Ready to compile"
     #         sleep 1s
-    #         make package/install -j1 $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile5_install_packages.log
+    #         make package/install -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile5_install_packages.log
     #         is_complie_error=${PIPESTATUS[0]}
     #     fi
     #     # $PATH
@@ -504,36 +503,36 @@ function Func_Compile_Firmware() {
     # then
     #     Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
     #     Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-    #     read -t $timer isSingleCompile
-    #     if [ ! -n "$isSingleCompile" ]; then
+    #     read -t $timer is_single_compile
+    #     if [ ! -n "$is_single_compile" ]; then
     #         Func_LogMessage "OK，不执行单线程编译 " "OK, do not perform single-threaded compilation "
     #         sleep 1s
-    #         # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-    #         PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make target/install -j$(nproc) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile6_install_target.log
+    #         # echo "PATH=$wsl_path"
+    #         PATH=$wsl_path make target/install -j$(nproc) $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_install_target.log
     #         is_complie_error=${PIPESTATUS[0]}
     #     else
     #         Func_LogMessage "OK，执行单线程编译。" "OK, execute single-threaded compilation."
     #         Func_LogMessage "准备开始编译" "Ready to compile"
     #         sleep 1s
-    #         PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make target/install -j1 $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile6_install_target.log
+    #         PATH=$wsl_path make target/install -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_install_target.log
     #         is_complie_error=${PIPESTATUS[0]}
     #     fi
         
     # else
     #     Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
     #     Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-    #     read -t $timer isSingleCompile
-    #     if [ ! -n "$isSingleCompile" ]; then
+    #     read -t $timer is_single_compile
+    #     if [ ! -n "$is_single_compile" ]; then
     #         Func_LogMessage "OK，不执行单线程编译 " "OK, do not perform single-threaded compilation "
     #         sleep 1s
-    #         # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-    #         make target/install -j$(nproc) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile6_install_target.log
+    #         # echo "PATH=$wsl_path"
+    #         make target/install -j$(nproc) $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_install_target.log
     #         is_complie_error=${PIPESTATUS[0]}
     #     else
     #         Func_LogMessage "OK，执行单线程编译。" "OK, execute single-threaded compilation."
     #         Func_LogMessage "准备开始编译" "Ready to compile"
     #         sleep 1s
-    #         make target/install -j1 $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile6_install_target.log
+    #         make target/install -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_install_target.log
     #         is_complie_error=${PIPESTATUS[0]}
     #     fi
     #     # $PATH
@@ -551,36 +550,36 @@ function Func_Compile_Firmware() {
     then
         Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-        read -t $timer isSingleCompile
-        if [ ! -n "$isSingleCompile" ]; then
+        read -t $timer is_single_compile
+        if [ ! -n "$is_single_compile" ]; then
             Func_LogSuccess "OK，不执行单线程编译 " "OK, do not perform single-threaded compilation "
             sleep 1s
-            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(nproc) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
+            # echo "PATH=$wsl_path"
+            PATH=$wsl_path make -j$(nproc) $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
             is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogSuccess "OK，执行单线程编译。" "OK, execute single-threaded compilation."
             Func_LogMessage "准备开始编译" "Ready to compile"
             sleep 1s
-            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j1 $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
+            PATH=$wsl_path make -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
             is_complie_error=${PIPESTATUS[0]}
         fi
         
     else
         Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-        read -t $timer isSingleCompile
-        if [ ! -n "$isSingleCompile" ]; then
+        read -t $timer is_single_compile
+        if [ ! -n "$is_single_compile" ]; then
             Func_LogSuccess "OK，不执行单线程编译 " "OK, do not perform single-threaded compilation "
             sleep 1s
-            # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            make -j$(nproc) $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
+            # echo "PATH=$wsl_path"
+            make -j$(nproc) $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
             is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogSuccess "OK，执行单线程编译。" "OK, execute single-threaded compilation."
             Func_LogMessage "准备开始编译" "Ready to compile"
             sleep 1s
-            make -j1 $is_VS | tee -a /home/${userName}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
+            make -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
             is_complie_error=${PIPESTATUS[0]}
         fi
         # $PATH
@@ -594,7 +593,7 @@ function Func_Compile_Firmware() {
     sleep 1s
     
     end_date=结束时间$(date "+%Y-%m-%d-%H-%M-%S")
-    echo -e $end_date >> /home/${userName}/${log_folder_name}/${folder_name}/Func_Main6_Compile_Time-git_log.log
+    echo -e $end_date >> /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main6_Compile_Time-git_log.log
 
     ######是否提交编译结果到github Release
     # UpdateFileToGithubRelease
@@ -608,14 +607,14 @@ function Func_Compile_Firmware() {
         Func_LogSuccess "OK，不拷贝" "OK, don't copy"
     else
         Func_LogMessage "开始拷贝" "Start copying"
-        cp -r /home/${userName}/${ledeDir}/bin/targets /home/${userName}/${log_folder_name}/${folder_name}
+        cp -r /home/${user_name}/${openwrt_dir}/bin/targets /home/${user_name}/${log_folder_name}/${folder_name}
         Func_LogSuccess "拷贝完成" "Copy completed"
     fi
 
     # 将lede还原
     # Func_LogMessage "将lede源码还原到最后的hash状态!" "Restore the lede source code to the last hash state"
-    # git --git-dir=/home/${userName}/${ledeDir}/.git --work-tree=/home/${userName}/${ledeDir} checkout master
-    # git --git-dir=/home/${userName}/${ledeDir}/.git --work-tree=/home/${userName}/${ledeDir} clean -xdf
+    # git --git-dir=/home/${user_name}/${openwrt_dir}/.git --work-tree=/home/${user_name}/${openwrt_dir} checkout master
+    # git --git-dir=/home/${user_name}/${openwrt_dir}/.git --work-tree=/home/${user_name}/${openwrt_dir} clean -xdf
 
 }
 
@@ -632,11 +631,11 @@ function Func_ConfigList(){
     if [ ! -n "$configNameInp" ]; then
         i=1
         # configName=X86.config
-        # ledeDir=lede_$configName
+        # openwrt_dir=lede_$configName
         # echo "135 configName的值："$configName
         for context in ${config_list[*]}; 
         do 
-            if [[ $context == $configName ]]; then
+            if [[ $context == $config_name ]]; then
                 break
             fi
             i=$((${i} + 1))
@@ -644,11 +643,11 @@ function Func_ConfigList(){
         done
         configNameInp=$i
         # echo "145 configNameInp的值："$configNameInp
-        Func_LogError "输入超时使用默认值$configName" "Use the default value $configName for input timeout"
+        Func_LogError "输入超时使用默认值$config_name" "Use the default value $config_name for input timeout"
     else 
         if [[ $configNameInp -ge 1 && $configNameInp -le $key ]]; then
-            configName=${config_list[$(($configNameInp-1))]}
-            ledeDir=${ledeDirFront}${configName}
+            config_name=${config_list[$(($configNameInp-1))]}
+            openwrt_dir=${openwrt_dir_front}${config_name}
             # echo $configNameInp
             # echo $configName
         fi
@@ -657,13 +656,13 @@ function Func_ConfigList(){
 
 #清理日志文件夹函数
 function Func_CleanLogFolder(){
-    if [ -d "/home/${userName}/${log_folder_name}" ];
+    if [ -d "/home/${user_name}/${log_folder_name}" ];
     then
         Func_LogMessage "是否清理存储超过$clean_day天的日志文件，默认删除，如果录入任意值不删除" "Whether to clean up the log files stored for more than $clean_day days, delete by default, if you enter any value, it will not be deleted"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
         read -t $timer isclean
         if [ ! -n "$isclean" ]; then
-            cd /home/${userName}/${log_folder_name}
+            cd /home/${user_name}/${log_folder_name}
             find -mtime +$clean_day -type d | xargs rm -rf
             find -mtime +$clean_day -type f | xargs rm -rf
             Func_LogSuccess "清理成功" "Cleaned up successfully"
@@ -737,29 +736,29 @@ function Func_Main(){
 
     if [ ! -n "$isCreateNewConfig" ]; then
         echo
-        Func_LogMessage "请输入默认OpenwrtAction中的config文件名，默认为$configName" "Please enter the config file name in the default OpenwrtAction, the default is $configName"
+        Func_LogMessage "请输入默认OpenwrtAction中的config文件名，默认为$config_name" "Please enter the config file name in the default OpenwrtAction, the default is $config_name"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
         Func_ConfigList
         until [[ $configNameInp -ge 1 && $configNameInp -le $key ]]
         do
             Func_LogError "你输入的 ${configNameInp} 是啥玩应啊，看好了序号，输入数值就行了。" "What is the function of the ${configNameInp} you entered? Just take a good look at the serial number and just enter the value."
-            Func_LogMessage "请输入默认OpenwrtAction中的config文件名，默认为$configName" "Please enter the config file name in the default OpenwrtAction, the default is $configName"
+            Func_LogMessage "请输入默认OpenwrtAction中的config文件名，默认为$config_name" "Please enter the config file name in the default OpenwrtAction, the default is $config_name"
             Func_ConfigList
         done
 
-        Func_LogMessage "请输入默认lean源码文件夹名称,如果不输入默认$ledeDir,将在($timer秒后使用默认值)" "Please enter the default lean source folder name, if you do not enter the default $ledeDir, the default value will be used after ($timer seconds)"
+        Func_LogMessage "请输入默认lean源码文件夹名称,如果不输入默认$openwrt_dir,将在($timer秒后使用默认值)" "Please enter the default lean source folder name, if you do not enter the default $openwrt_dir, the default value will be used after ($timer seconds)"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-        read -t $timer ledeDirInp
-        if [ ! -n "$ledeDirInp" ]; then
-            Func_LogSuccess "OK，使用默认值$ledeDir" "OK, use the default value $ledeDir"
+        read -t $timer openwrt_dirInp
+        if [ ! -n "$openwrt_dirInp" ]; then
+            Func_LogSuccess "OK，使用默认值$openwrt_dir" "OK, use the default value $openwrt_dir"
         else
-            Func_LogMessage "使用 ${ledeDirInp} 作为lean源码文件夹名。" "Use ${ledeDirInp} as the lean source folder name."
+            Func_LogMessage "使用 ${openwrt_dirInp} 作为lean源码文件夹名。" "Use ${openwrt_dirInp} as the lean source folder name."
             echo -e  
-            ledeDir=$ledeDirInp
+            openwrt_dir=$openwrt_dirInp
         fi
 
     else
-        configName=$newConfigName
+        config_name=$newConfigName
     fi
 
 
@@ -770,29 +769,29 @@ function Func_Main(){
     Func_LogMessage "开始同步lean源码...." "Start to synchronize lean source code..."
     sleep 2s
 
-    cd /home/${userName}
-    if [ ! -d "/home/${userName}/${ledeDir}" ];
+    cd /home/${user_name}
+    if [ ! -d "/home/${user_name}/${openwrt_dir}" ];
     then
-        git clone $openwrt_source ${ledeDir}
-        cd ${ledeDir}/package/lean
-        cd /home/${userName}
-        isFirstCompile=1
+        git clone $openwrt_source ${openwrt_dir}
+        cd ${openwrt_dir}/package/lean
+        cd /home/${user_name}
+        is_first_compile=1
     else 
-        cd ${ledeDir}
+        cd ${openwrt_dir}
         git stash
         git stash drop
         git pull --rebase
-        cd /home/${userName}
-        isFirstCompile=0
+        cd /home/${user_name}
+        is_first_compile=0
     fi
 
-    # if [ ! -f "/home/${userName}/${ledeDir}/.config" ]; then
-    #     isFirstCompile=1
+    # if [ ! -f "/home/${user_name}/${openwrt_dir}/.config" ]; then
+    #     is_first_compile=1
     # else
-    #     isFirstCompile=0
+    #     is_first_compile=0
     # fi
 
-    # echo $isFirstCompile "dfffffffffffffffffffffffffffff"
+    # echo $is_first_compile "dfffffffffffffffffffffffffffff"
 
 
     echo 
@@ -865,8 +864,8 @@ function Func_Main(){
         Func_LogMessage "开始将OpenwrtAction中的自定义feeds注入lean源码中...." "Started injecting custom feeds in OpenwrtAction into lean source code..."
         sleep 2s
         echo
-        cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default > /home/${userName}/${ledeDir}/feeds.conf.default
-        cd /home/${userName}/${ledeDir}
+        cat /home/${user_name}/OpenWrtAction/$feeds_dir > /home/${user_name}/${openwrt_dir}/feeds.conf.default
+        cd /home/${user_name}/${openwrt_dir}
 
         Func_DIY1_Script
 
@@ -875,11 +874,11 @@ function Func_Main(){
         echo
         Func_LogMessage "开始update feeds...." "begin update feeds...."
         sleep 1s
-        ./scripts/feeds update -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/Func_Main1_feeds_update-git_log.log
+        ./scripts/feeds update -a | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main1_feeds_update-git_log.log
         echo
         Func_LogMessage "开始install feeds...." "begin install feeds...."
         sleep 1s
-        ./scripts/feeds install -a | tee -a /home/${userName}/${log_folder_name}/${folder_name}/Func_Main2_feeds_install-git_log.log
+        ./scripts/feeds install -a | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main2_feeds_install-git_log.log
         echo
 
 
@@ -888,16 +887,16 @@ function Func_Main(){
 
         if [ ! -n "$isCreateNewConfig" ]; then
             echo
-            Func_LogMessage "开始将OpenwrtAction中config文件夹下的${configName}注入lean源码中...." "Start to inject ${configName} under the config folder in OpenwrtAction into lean source code..."
+            Func_LogMessage "开始将OpenwrtAction中config文件夹下的${config_name}注入lean源码中...." "Start to inject ${config_name} under the config folder in OpenwrtAction into lean source code..."
             sleep 2s
             echo
-            cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
+            cat /home/${user_name}/OpenWrtAction/config/${config_name} > /home/${user_name}/${openwrt_dir}/.config
         fi
 
-        cd /home/${userName}/${ledeDir}
+        cd /home/${user_name}/${openwrt_dir}
         make menuconfig
-        cat /home/${userName}/${ledeDir}/.config > /home/${userName}/OpenWrtAction/config/${configName}
-        cd /home/${userName}/OpenWrtAction
+        cat /home/${user_name}/${openwrt_dir}/.config > /home/${user_name}/OpenWrtAction/config/${config_name}
+        cd /home/${user_name}/OpenWrtAction
         
         if [ ! -n "$(git config --global user.email)" ]; then
             Func_LogSuccess "请输入git Global user.email:" "Please enter git Global user.email:"
@@ -924,7 +923,7 @@ function Func_Main(){
 
         if [ -n "$(git status -s)" ]; then 
             git add .
-            git commit -m "update $configName from local bash"
+            git commit -m "update $config_name from local bash"
             git push origin
             Func_LogSuccess "已将新配置的config同步回OpenwrtAction" "The newly configured config has been synchronized back to OpenwrtAction"
             sleep 2s
