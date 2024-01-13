@@ -1,0 +1,8 @@
+<details> <summary> <b>luci-theme-argon new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+cbad1c9|SpeedPartner|Sat Sep 2 19:23:06 2023 +0800|修复 移动端页面 下 [IPv4 WAN 状态] 和 [IPv6 WAN 状态] 显示布局未对齐
+4543246|SpeedPartner|Sun Aug 20 22:20:57 2023 +0800|改进:为 登录页面[sysauth] 中 主机名[brand-text] 增加1px的 字间距[letter-spacing]; 并将文本的 底部内间距[padding-bottom] 增加0.1rem,以避免小写字母y和g显示不全
+31459ac|SpeedPartner|Sun Aug 20 22:11:06 2023 +0800|Merge pull request #436 from yhl452493373/18.06
+</details>

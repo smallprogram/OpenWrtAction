@@ -1,0 +1,9 @@
+<details> <summary> <b>passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+51c8782|xiaorouji|Sat Jan 13 15:31:57 2024 +0800|luci: fix hysteria(2) subscribe
+3dab428|lllrrr2|Wed Jan 10 10:32:35 2024 +0800|luci: default config clean up spaces (#2892)
+6d9c4dc|zhusir|Tue Jan 9 15:34:06 2024 +0800|luci: update default config
+9c7039e|xiaorouji|Tue Jan 9 03:06:02 2024 +0800|luci: 4.72
+</details>

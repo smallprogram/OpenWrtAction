@@ -1,0 +1,9 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b1816c7d0|coolsnowwolf|Sat Jan 13 13:50:40 2024 +0800|gpio-button-hotplug: fix kernel 5.4 support
+ce521963d|coolsnowwolf|Sat Jan 13 13:43:43 2024 +0800|package: adds pcre2 to base
+648202bb8|coolsnowwolf|Sat Jan 13 13:23:49 2024 +0800|e2fsprogs: Update to 1.45.6
+87b3c3e10|coolsnowwolf|Sat Jan 13 12:57:22 2024 +0800|kernel: bump 5.4 to 5.4.266
+</details>

@@ -1,0 +1,10 @@
+<details> <summary> <b>openwrt routing new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6f74738|Simon Wunderlich|Sat Dec 23 18:05:57 2023 +0100|Merge pull request #1038 from ecsv/batadv-2023.3
+96b5fa1|Sven Eckelmann|Sat Dec 23 11:55:49 2023 +0100|batman-adv: compat: Fix skb_vlan_eth_hdr conflict in stable kernels
+a5ec54a|Rob White|Thu Nov 23 16:06:11 2023 +0000|opennds: update to version 10.2.0
+f0f1b0a|Simon Wunderlich|Fri Nov 17 22:05:13 2023 +0100|Merge pull request #1033 from ecsv/batadv-2023.3
+28b8a5e|Sven Eckelmann|Fri Nov 17 21:31:47 2023 +0100|batman-adv: update to version 2023.3
+</details>

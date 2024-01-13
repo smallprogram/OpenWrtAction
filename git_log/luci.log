@@ -1,0 +1,7 @@
+<details> <summary> <b>lean luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+f3fe5b5|coolsnowwolf|Tue Dec 26 23:19:37 2023 +0800|luci-app-cpufreq: add qualcommax support
+5071ebf|coolsnowwolf|Tue Jun 13 23:19:37 2023 +0800|Revert "wifi: unify signal view"
+</details>
