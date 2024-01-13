@@ -323,7 +323,6 @@ jobs:
       #     retention-days: 5
 
       - name: Generate Toolchain Packages
-        if: steps.compile_toolchain.outputs.status == 'success'
         working-directory: /workdir
         id: generate_image
         run: |
