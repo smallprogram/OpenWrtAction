@@ -751,8 +751,8 @@ jobs:
             ! git -C git_repositories/$OUTPUT_FILE cat-file -t "$SHA_End" >/dev/null 2>&1; then
             sed -i "${LINE_NUMBER}s/:.*/:$SHA_End/" git_log/log
 
-            echo ":negative_squared_cross_mark: Invalid SHA detected (Begin: $SHA_Begin, End: $SHA_End) for $OUTPUT_FILE"
-            echo "<details> <summary> <b>$TITLE_MESSAGE :negative_squared_cross_mark: </b>  </summary>" >> "git_log/$OUTPUT_FILE.log"
+            echo " :x: Invalid SHA detected (Begin: $SHA_Begin, End: $SHA_End) for $OUTPUT_FILE"
+            echo "<details> <summary> <b>$TITLE_MESSAGE :x: </b>  </summary>" >> "git_log/$OUTPUT_FILE.log"
             echo "" >> "git_log/$OUTPUT_FILE.log"
             echo "<b> It is detected that $OUTPUT_FILE has an illegal SHA value. It is possible that $OUTPUT_FILE has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>" >> "git_log/$OUTPUT_FILE.log"
             echo "" >> "git_log/$OUTPUT_FILE.log"
