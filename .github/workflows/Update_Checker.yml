@@ -42,72 +42,72 @@ jobs:
       run: |
         git clone https://github.com/coolsnowwolf/lede --filter=blob:none
         cd lede
-        echo "SHA_01=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_01=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone https://github.com/coolsnowwolf/packages --filter=blob:none
         cd packages
-        echo "SHA_02=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_02=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone https://github.com/coolsnowwolf/luci --filter=blob:none
         cd luci
-        echo "SHA_03=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_03=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone https://git.openwrt.org/feed/routing.git
         cd routing
-        echo "SHA_04=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_04=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
         
         git clone https://git.openwrt.org/feed/telephony.git
         cd telephony
-        echo "SHA_05=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_05=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone https://github.com/fw876/helloworld --filter=blob:none
         cd helloworld
-        echo "SHA_06=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_06=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone https://github.com/xiaorouji/openwrt-passwall-packages --filter=blob:none
         cd openwrt-passwall-packages
-        echo "SHA_07=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_07=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone https://github.com/xiaorouji/openwrt-passwall --filter=blob:none
         cd openwrt-passwall
-        echo "SHA_08=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_08=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone https://github.com/xiaorouji/openwrt-passwall2 --filter=blob:none
         cd openwrt-passwall2
-        echo "SHA_09=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_09=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone  https://github.com/vernesong/OpenClash.git --filter=blob:none
         cd OpenClash
-        echo "SHA_10=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_10=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git --filter=blob:none
         cd luci-theme-argon
-        echo "SHA_11=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_11=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git --filter=blob:none
         cd luci-app-argon-config
-        echo "SHA_12=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_12=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone https://github.com/rufengsuixing/luci-app-adguardhome.git --filter=blob:none
         cd luci-app-adguardhome
-        echo "SHA_13=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_13=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
         git clone https://github.com/sbwml/luci-app-mosdns -b v5 --filter=blob:none
         cd luci-app-mosdns
-        echo "SHA_14=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+        echo "SHA_14=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
 
