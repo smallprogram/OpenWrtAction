@@ -709,12 +709,12 @@ function Func_Main(){
             Func_LogMessage "开始将OpenwrtAction中config文件夹下的${config_name}注入lean源码中...." "Start to inject ${config_name} under the config folder in OpenwrtAction into lean source code..."
             sleep 2s
             echo
-            cat /home/${user_name}/OpenWrtAction/config/${config_name} > /home/${user_name}/${openwrt_dir}/.config
+            cat /home/${user_name}/OpenWrtAction/$config_dir/${config_name} > /home/${user_name}/${openwrt_dir}/.config
         fi
 
         cd /home/${user_name}/${openwrt_dir}
         make menuconfig
-        cat /home/${user_name}/${openwrt_dir}/.config > /home/${user_name}/OpenWrtAction/config/${config_name}
+        cat /home/${user_name}/${openwrt_dir}/.config > /home/${user_name}/OpenWrtAction/$config_dir/${config_name}
         cd /home/${user_name}/OpenWrtAction
         
         if [ ! -n "$(git config --global user.email)" ]; then
