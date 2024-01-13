@@ -435,83 +435,13 @@ jobs:
       if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
 
-    # - name: Generate Frimware
-    #   id: compile
-    #   run: |
-    #     cd openwrt
-    #     rm -rf compile_log/*
-    #     touch compile_log/log_error_${{ matrix.platforms }}_generate_frimware.log
-    #     is_complie_error=0
-    #     if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-    #       if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-    #           echo "1 threads compile frimware"
-    #           make -j1 V=s | tee -a compile_log/log_error_${{ matrix.platforms }}_generate_frimware.log
-    #           is_complie_error=${PIPESTATUS[0]}
-    #       else
-    #           echo "$(nproc) threads compile frimware"
-    #           make -j$(nproc) V=s | tee -a compile_log/log_error_${{ matrix.platforms }}_generate_frimware.log
-    #           is_complie_error=${PIPESTATUS[0]}
-    #       fi
-    #     else
-    #       if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-    #           echo "1 threads compile frimware"
-    #           make -j1 | tee -a compile_log/log_error_${{ matrix.platforms }}_generate_frimware.log
-    #           is_complie_error=${PIPESTATUS[0]}
-    #       else
-    #           echo "$(nproc) threads compile frimware"
-    #           make -j$(nproc) | tee -a compile_log/log_error_${{ matrix.platforms }}_generate_frimware.log
-    #           is_complie_error=${PIPESTATUS[0]}
-    #       fi
-    #     fi
-
-    #     echo "complie result： $is_complie_error"
-    #     if [ "$is_complie_error" -eq 0 ]; then
-    #       echo "status=success" >> $GITHUB_OUTPUT
-    #     else
-    #       echo "status=failure" >> $GITHUB_OUTPUT
-    #       exit $is_complie_error
-    #     fi
-
-    #     # echo
-    #     # echo "directory size:"
-    #     # du -hs $GITHUB_WORKSPACE/openwrt/
-
-    #     df -hT
-
-    # - name: Upload Error Log To Artifact
-    #   uses: actions/upload-artifact@v3
-    #   if: ${{ failure() }}
-    #   with:
-    #     name: log_error_${{ matrix.platforms }}_generate_frimware_${{ needs.job_init.outputs.output_release_tag }}
-    #     path: ${{ env.LOGFILES }}/*
-    #     retention-days: 5
-
-
-    # - name: Remove Unuselesss Files
-    #   id: removeunuselessfiles
-    #   if: steps.compile.outputs.status == 'success'
-    #   run: |
-    #     df -hT
-    #     rm -rf  $GITHUB_WORKSPACE/openwrt/build_dir
-    #     rm -rf  $GITHUB_WORKSPACE/openwrt/dl
-    #     rm -rf  $GITHUB_WORKSPACE/openwrt/staging_dir
-    #     rm -rf  $GITHUB_WORKSPACE/openwrt/toolchain
-    #     rm -rf  $GITHUB_WORKSPACE/openwrt/tools
-
     - name: Check Space Usage
       if: (!cancelled())
       run: df -hT
 
-    # - name: Upload Bin Directory
-    #   uses: actions/upload-artifact@main
-    #   if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
-    #   with:
-    #     name: OpenWrt_bin_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
-    #     path: openwrt/bin
 
     - name: Organize Files
       id: organize
-      if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
         mkdir -p test
         cd test
@@ -522,16 +452,9 @@ jobs:
         echo "FIRMWARE=$firmware_path" >> $GITHUB_ENV
         echo "status=success" >> $GITHUB_OUTPUT
 
-    - name: Upload Firmware Directory
-      uses: actions/upload-artifact@main
-      if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && !cancelled()
-      with:
-        name: OpenWrt_firmware_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
-        path: ${{ env.FIRMWARE }}
 
     - name: Generate Release Tag
       id: tag
-      if: steps.organize.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
 
         echo "## :mega:Update content" >> release.txt
