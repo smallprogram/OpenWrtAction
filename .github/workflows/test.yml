@@ -18,10 +18,6 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-      sshs:
-        description: 'SSH connection to Actions Test'
-        required: false
-        default: 'false'  
       is_display_detailed:
         description: 'Whether to display detailed information about compilation'
         required: false
@@ -36,9 +32,10 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  FEEDS_CONF: feeds_config/custom.feeds.conf.default
-  DIY_P1_SH: diy_script/diy-part1.sh
-  DIY_P2_SH: diy_script/diy-part2.sh
+  FEEDS_CONF: feeds_config/lean.feeds.conf.default
+  CONFIGS: config/leanlede_config
+  DIY_P1_SH: diy_script/lean_diy/diy-part1.sh
+  DIY_P2_SH: diy_script/lean_diy/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_ARTIFACT: false
@@ -51,6 +48,7 @@ jobs:
     name: Build-Openwrt-Init
     outputs:
       output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
+      output_sha: ${{steps.commit.outputs.commit_hash }}
     steps:
       - id: gen_release_tag
         run: |
@@ -59,10 +57,10 @@ jobs:
           sudo mkdir -p /workdir
           sudo chown $USER:$GROUPS /workdir
 
-      - name: Checkout
-        uses: actions/checkout@main
-        with:
-          fetch-depth: 0
+      # - name: Checkout
+      #   uses: actions/checkout@main
+      #   with:
+      #     fetch-depth: 0
 
       # - name: Clone source code
       #   working-directory: /workdir
@@ -92,99 +90,12 @@ jobs:
       #     cd ..
       #     platforms=(X86 R5S R5C R4S R4SE R2S R2C H66K H68K H69K R66S R68S R_PI_3b R_PI_4b)
       #     for i in "${platforms[@]}"; do
-      #       [ -e config/$i.config ] && cp -r config/$i.config openwrt/.config
+      #       [ -e $CONFIGS/$i.config ] && cp -r $CONFIGS/$i.config openwrt/.config
       #       cd openwrt
       #       make defconfig
       #       cd ..
-      #       cp -f openwrt/.config config/$i.config
+      #       cp -f openwrt/.config $CONFIGS/$i.config
       #     done
-
-      - name: Generate Git Log
-        run: |
-          REPO_URLS=(
-            "https://github.com/coolsnowwolf/lede --filter=blob:none"
-            "https://github.com/coolsnowwolf/packages --filter=blob:none"
-            "https://github.com/coolsnowwolf/luci --filter=blob:none"
-            "https://git.openwrt.org/feed/routing.git --filter=blob:none"
-            "https://git.openwrt.org/feed/telephony.git --filter=blob:none"
-            "https://github.com/fw876/helloworld --filter=blob:none"
-            "https://github.com/xiaorouji/openwrt-passwall-packages --filter=blob:none"
-            "https://github.com/xiaorouji/openwrt-passwall --filter=blob:none"
-            "https://github.com/xiaorouji/openwrt-passwall2 --filter=blob:none"
-            "https://github.com/vernesong/OpenClash.git --filter=blob:none"
-            "https://github.com/jerrykuku/luci-theme-argon.git --filter=blob:none -b 18.06"
-            "https://github.com/jerrykuku/luci-app-argon-config.git --filter=blob:none -b 18.06"
-            "https://github.com/rufengsuixing/luci-app-adguardhome.git --filter=blob:none"
-            "https://github.com/sbwml/luci-app-mosdns --filter=blob:none -b v5"
-          )
-          LINE_NUMBERS=(1 2 3 4 5 6 7 8 9 10 11 12 13 14)
-          OUTPUT_FILES=(
-            "lede"
-            "packages"
-            "luci"
-            "routing"
-            "telephony"
-            "helloworld"
-            "openwrt-passwall-packages"
-            "openwrt-passwall"
-            "openwrt-passwall2"
-            "OpenClash"
-            "luci-theme-argon"
-            "luci-app-argon-config"
-            "luci-app-adguardhome"
-            "luci-app-mosdns"
-          )
-          TITLE_MESSAGES=(
-            "Lean Openwrt New Git Log :new: "
-            "Lean Package New Git Log :new: "
-            "Lean Luci New Git Log :new: "
-            "Openwrt routing New Git Log :new: "
-            "Openwrt telephony New Git Log :new: "
-            "HelloWorld New Git Log :new: "
-            "Passwall Packages New Git Log :new: "
-            "Passwall New Git Log :new: "
-            "Passwall2 New Git Log :new: "
-            "OpenClash New Git Log :new: "
-            "luci-theme-argon New Git Log :new: "
-            "luci-app-argon-config New Git Log :new: "
-            "luci-app-adguardhome New Git Log :new: "
-            "luci-app-mosdns New Git Log :new: "
-          )
-          cd $GITHUB_WORKSPACE
-          find git_log -type f ! -name 'log' -exec rm {} +
-
-          for i in "${!REPO_URLS[@]}"; do
-            REPO_URL=${REPO_URLS[$i]}
-            LINE_NUMBER=${LINE_NUMBERS[$i]}
-            OUTPUT_FILE=${OUTPUT_FILES[$i]}
-            TITLE_MESSAGE=${TITLE_MESSAGES[$i]}
-
-            git clone $REPO_URL $OUTPUT_FILE
-            cd $OUTPUT_FILE || exit
-            SHA=$(git rev-parse --short HEAD)
-            cd ..
-
-            sed -i "${LINE_NUMBER}s/\*.*/*$SHA/" git_log/log
-            line=$(sed -n "${LINE_NUMBER}p" git_log/log)
-            SHA_Begin=$(echo "$line" | sed -n 's/.*:\(.*\)\*.*/\1/p')
-            SHA_End=$(echo "$line" | sed -n 's/.*\*\(.*\)/\1/p')
-
-            if [ -z "$SHA_Begin" ]; then
-              sed -i "${LINE_NUMBER}s/\(:\).*\(\*\)/\1$SHA_End\2/" git_log/log
-            elif [ "$SHA_Begin" != "$SHA_End" ]; then
-              echo "<details> <summary> <b>$TITLE_MESSAGE</b>  </summary>" >> "git_log/$OUTPUT_FILE.log"
-              echo "" >> "git_log/$OUTPUT_FILE.log"
-              echo "SHA|Author|Date|Message" >> "git_log/$OUTPUT_FILE.log"
-              echo "-|-|-|-" >> "git_log/$OUTPUT_FILE.log"
-              git -C $OUTPUT_FILE log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >> "git_log/$OUTPUT_FILE.log"
-              echo "" >> "git_log/$OUTPUT_FILE.log"
-              echo "</details>" >> "git_log/$OUTPUT_FILE.log"
-              sed -i "${LINE_NUMBER}s/\(:\).*\(\*\)/\1$SHA_End\2/" git_log/log
-            fi
-
-            cd $GITHUB_WORKSPACE || exit
-            rm -rf $OUTPUT_FILE
-          done
 
       - name: Git auto update config
         uses: stefanzweifel/git-auto-commit-action@v5.0.0
@@ -192,7 +103,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          commit_message: auto update config and git log
+          commit_message: auto update config
           branch: main
           commit_author: smallprogram <smallprogram@foxmail.com>
 
@@ -228,7 +139,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@main
         with:
-          fetch-depth: 0
+          ref: ${{ needs.job_init.outputs.output_sha }}
 
       - name: Install Packages
         env:
@@ -265,32 +176,32 @@ jobs:
           cd compile_log
           echo "LOGFILES=$PWD" >> $GITHUB_ENV
 
-      # - name: Load Custom Feeds
-      #   run: |
-      #     [ -e $FEEDS_CONF ] && cp -r $FEEDS_CONF openwrt/feeds.conf.default
-      #     chmod +x $DIY_P1_SH
-      #     cd openwrt
-      #     ./scripts/feeds clean
-      #     $GITHUB_WORKSPACE/$DIY_P1_SH
+      - name: Load Custom Feeds
+        run: |
+          [ -e $FEEDS_CONF ] && cp -r $FEEDS_CONF openwrt/feeds.conf.default
+          chmod +x $DIY_P1_SH
+          cd openwrt
+          ./scripts/feeds clean
+          $GITHUB_WORKSPACE/$DIY_P1_SH
 
-      # - name: Update Feeds
-      #   run: cd openwrt && ./scripts/feeds update -a
+      - name: Update Feeds
+        run: cd openwrt && ./scripts/feeds update -a
 
 
-      # - name: Install Feeds
-      #   run: cd openwrt && ./scripts/feeds install -a
+      - name: Install Feeds
+        run: cd openwrt && ./scripts/feeds install -a
 
-      # - name: Load Configuration
-      #   run: |
-      #     [ -e config/${{ matrix.platforms }}.config ] && cp -r config/${{ matrix.platforms }}.config openwrt/.config
-      #     chmod +x $DIY_P2_SH
-      #     cd openwrt
-      #     $GITHUB_WORKSPACE/$DIY_P2_SH
-      #     # echo -e "\nCONFIG_ALL=y" >> .config
-      #     # echo -e "\nCONFIG_ALL_NONSHARED=y" >> .config
-      #     make defconfig
-      #     # echo "config file info......................................"
-      #     # cat .config
+      - name: Load Configuration
+        run: |
+          [ -e $CONFIGS/${{ matrix.platforms }}.config ] && cp -r $CONFIGS/${{ matrix.platforms }}.config openwrt/.config
+          chmod +x $DIY_P2_SH
+          cd openwrt
+          $GITHUB_WORKSPACE/$DIY_P2_SH
+          # echo -e "\nCONFIG_ALL=y" >> .config
+          # echo -e "\nCONFIG_ALL_NONSHARED=y" >> .config
+          make defconfig
+          # echo "config file info......................................"
+          # cat .config
 
       # - name: Execute commands for X86 platform
       #   if: matrix.platforms == 'X86'
@@ -411,30 +322,30 @@ jobs:
       #     path: ${{ env.LOGFILES }}/*
       #     retention-days: 5
 
-      # - name: Generate Toolchain Packages
-      #   if: steps.compile_toolchain.outputs.status == 'success'
-      #   working-directory: /workdir
-      #   id: generate_image
-      #   run: |
-      #     rm -rf openwrt/compile_log/*
-      #     echo "before generate toolchain packages directory size:"
-      #     du -hs openwrt/
-      #     echo
-      #     tar -czf output/output.tar.gz openwrt/
+      - name: Generate Toolchain Packages
+        if: steps.compile_toolchain.outputs.status == 'success'
+        working-directory: /workdir
+        id: generate_image
+        run: |
+          rm -rf openwrt/compile_log/*
+          echo "before generate toolchain packages directory size:"
+          du -hs openwrt/
+          echo
+          tar -czf output/output.tar.gz openwrt/
 
-      #     echo "toolchain packages size:"
-      #     cd output
-      #     ls -lh output.tar.gz
-      #     echo "TOOLCHAIN=$PWD" >> $GITHUB_ENV
-      #     echo "status=success" >> $GITHUB_OUTPUT
+          echo "toolchain packages size:"
+          cd output
+          ls -lh output.tar.gz
+          echo "TOOLCHAIN=$PWD" >> $GITHUB_ENV
+          echo "status=success" >> $GITHUB_OUTPUT
 
-      # - name: Upload Toolchain To Artifact
-      #   uses: actions/upload-artifact@v3
-      #   if: steps.generate_image.outputs.status == 'success'
-      #   with:
-      #     name: TOOLCHAIN_IMAGE_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
-      #     path: ${{ env.TOOLCHAIN }}/output.tar.gz
-      #     retention-days: 5
+      - name: Upload Toolchain To Artifact
+        uses: actions/upload-artifact@v3
+        if: steps.generate_image.outputs.status == 'success'
+        with:
+          name: TOOLCHAIN_IMAGE_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
+          path: ${{ env.TOOLCHAIN }}/output.tar.gz
+          retention-days: 5
 
   job_build:
     needs: [job_init, job_build_toolchain]
@@ -471,7 +382,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
       with:
-        fetch-depth: 0
+        ref: ${{ needs.job_init.outputs.output_sha }}
 
     - name: Install Packages
       env:
@@ -496,28 +407,28 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         ln -sf /workdir/download $GITHUB_WORKSPACE/download
 
-    # - name: Download Toolchain From Artifacts
-    #   id : download
-    #   uses: actions/download-artifact@v3
-    #   with:
-    #     name: TOOLCHAIN_IMAGE_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
-    #     path: download
+    - name: Download Toolchain From Artifacts
+      id : download
+      uses: actions/download-artifact@v3
+      with:
+        name: TOOLCHAIN_IMAGE_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
+        path: download
 
-    # - name: File Extraction
-    #   working-directory: /workdir
-    #   run: |
-    #     echo "toolchain packages size:"
-    #     ls -lh download/output.tar.gz
-    #     tar -xzf download/output.tar.gz
-    #     rm -rf download/*
-    #     sudo chown -R $USER:$GROUPS /workdir/openwrt
-    #     # echo
-    #     # echo "directory size:"
-    #     # du -hs /workdir/openwrt/
-    #     cd openwrt
-    #     mkdir -p compile_log
-    #     cd compile_log
-    #     echo "LOGFILES=$PWD" >> $GITHUB_ENV
+    - name: File Extraction
+      working-directory: /workdir
+      run: |
+        echo "toolchain packages size:"
+        ls -lh download/output.tar.gz
+        tar -xzf download/output.tar.gz
+        rm -rf download/*
+        sudo chown -R $USER:$GROUPS /workdir/openwrt
+        # echo
+        # echo "directory size:"
+        # du -hs /workdir/openwrt/
+        cd openwrt
+        mkdir -p compile_log
+        cd compile_log
+        echo "LOGFILES=$PWD" >> $GITHUB_ENV
 
 
     - name: SSH connection to Actions
@@ -525,49 +436,48 @@ jobs:
       if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
 
-    - name: Generate Frimware
-      id: compile
-      run: |
-        # cd openwrt
-        # rm -rf compile_log/*
-        # touch compile_log/log_error_${{ matrix.platforms }}_generate_frimware.log
-        # is_complie_error=0
-        # if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-        #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-        #       echo "1 threads compile frimware"
-        #       make -j1 V=s | tee -a compile_log/log_error_${{ matrix.platforms }}_generate_frimware.log
-        #       is_complie_error=${PIPESTATUS[0]}
-        #   else
-        #       echo "$(nproc) threads compile frimware"
-        #       make -j$(nproc) V=s | tee -a compile_log/log_error_${{ matrix.platforms }}_generate_frimware.log
-        #       is_complie_error=${PIPESTATUS[0]}
-        #   fi
-        # else
-        #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-        #       echo "1 threads compile frimware"
-        #       make -j1 | tee -a compile_log/log_error_${{ matrix.platforms }}_generate_frimware.log
-        #       is_complie_error=${PIPESTATUS[0]}
-        #   else
-        #       echo "$(nproc) threads compile frimware"
-        #       make -j$(nproc) | tee -a compile_log/log_error_${{ matrix.platforms }}_generate_frimware.log
-        #       is_complie_error=${PIPESTATUS[0]}
-        #   fi
-        # fi
+    # - name: Generate Frimware
+    #   id: compile
+    #   run: |
+    #     cd openwrt
+    #     rm -rf compile_log/*
+    #     touch compile_log/log_error_${{ matrix.platforms }}_generate_frimware.log
+    #     is_complie_error=0
+    #     if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+    #       if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+    #           echo "1 threads compile frimware"
+    #           make -j1 V=s | tee -a compile_log/log_error_${{ matrix.platforms }}_generate_frimware.log
+    #           is_complie_error=${PIPESTATUS[0]}
+    #       else
+    #           echo "$(nproc) threads compile frimware"
+    #           make -j$(nproc) V=s | tee -a compile_log/log_error_${{ matrix.platforms }}_generate_frimware.log
+    #           is_complie_error=${PIPESTATUS[0]}
+    #       fi
+    #     else
+    #       if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+    #           echo "1 threads compile frimware"
+    #           make -j1 | tee -a compile_log/log_error_${{ matrix.platforms }}_generate_frimware.log
+    #           is_complie_error=${PIPESTATUS[0]}
+    #       else
+    #           echo "$(nproc) threads compile frimware"
+    #           make -j$(nproc) | tee -a compile_log/log_error_${{ matrix.platforms }}_generate_frimware.log
+    #           is_complie_error=${PIPESTATUS[0]}
+    #       fi
+    #     fi
 
-        # echo "complie result： $is_complie_error"
-        # if [ "$is_complie_error" -eq 0 ]; then
-        #   echo "status=success" >> $GITHUB_OUTPUT
-        # else
-        #   echo "status=failure" >> $GITHUB_OUTPUT
-        #   exit $is_complie_error
-        # fi
+    #     echo "complie result： $is_complie_error"
+    #     if [ "$is_complie_error" -eq 0 ]; then
+    #       echo "status=success" >> $GITHUB_OUTPUT
+    #     else
+    #       echo "status=failure" >> $GITHUB_OUTPUT
+    #       exit $is_complie_error
+    #     fi
 
-        # echo
-        # echo "directory size:"
-        # du -hs $GITHUB_WORKSPACE/openwrt/
+    #     # echo
+    #     # echo "directory size:"
+    #     # du -hs $GITHUB_WORKSPACE/openwrt/
 
-        echo "status=success" >> $GITHUB_OUTPUT
-        df -hT
+    #     df -hT
 
     # - name: Upload Error Log To Artifact
     #   uses: actions/upload-artifact@v3
@@ -604,32 +514,25 @@ jobs:
       id: organize
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
-        # cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
-        # firmware_path=$PWD
+        mkdir -p test
+        cd test
+        dd if=/dev/zero of=test.txt bs=1M count=10
+        firmware_path=$PWD
+        
 
-        # cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
-        # zip -r $firmware_path/ipk_${{ matrix.platforms }}.zip helloworld OpenClash passwall passwall_packages passwall2
-
-        # cd $firmware_path
-        # rm -rf packages
-        # mv sha256sums sha256sums_${{ matrix.platforms }}
-        # mv version.buildinfo version_${{ matrix.platforms }}.buildinfo
-        # mv config.buildinfo config_${{ matrix.platforms }}.buildinfo
-        # mv feeds.buildinfo feeds_${{ matrix.platforms }}.buildinfo
-
-        # echo "FIRMWARE=$firmware_path" >> $GITHUB_ENV
+        echo "FIRMWARE=$firmware_path" >> $GITHUB_ENV
         echo "status=success" >> $GITHUB_OUTPUT
 
-    # - name: Upload Firmware Directory
-    #   uses: actions/upload-artifact@main
-    #   if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && !cancelled()
-    #   with:
-    #     name: OpenWrt_firmware_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
-    #     path: ${{ env.FIRMWARE }}
+    - name: Upload Firmware Directory
+      uses: actions/upload-artifact@main
+      if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && !cancelled()
+      with:
+        name: OpenWrt_firmware_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
+        path: ${{ env.FIRMWARE }}
 
     - name: Generate Release Tag
       id: tag
-      if: steps.compile.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
+      if: steps.organize.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
 
         echo "## :mega:Update content" >> release.txt
@@ -646,60 +549,58 @@ jobs:
         echo "**:dvd:Including vmdk format firmware and UEFI boot firmware that support ESXi virtual machines (8.0 requires tool conversion).**" >> release.txt
         echo "" >> release.txt
 
-        # echo "### Openwrt Information" >> release.txt
+        echo "### Openwrt Information" >> release.txt
 
-        # echo "**:minidisc: OpenWrt Version: $(grep -o "DISTRIB_REVISION='[^']*'" $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/files/zzz-default-settings | sed "s/DISTRIB_REVISION='\([^']*\)'/\1/")**" >> release.txt
+        echo "**:minidisc: OpenWrt Version: $(grep -o "DISTRIB_REVISION='[^']*'" $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/files/zzz-default-settings | sed "s/DISTRIB_REVISION='\([^']*\)'/\1/")**" >> release.txt
         
-        # PKG_VERSION=$(grep -oP 'PKG_VERSION:=\K[^ ]+' "$GITHUB_WORKSPACE/openwrt/package/lean/default-settings/Makefile")
-        # PKG_RELEASE=$(grep -oP 'PKG_RELEASE:=\K[^ ]+' "$GITHUB_WORKSPACE/openwrt/package/lean/default-settings/Makefile")
-        # echo "**:gear: Default-Setting Version: $PKG_VERSION.$PKG_RELEASE**" >> release.txt
+        PKG_VERSION=$(grep -oP 'PKG_VERSION:=\K[^ ]+' "$GITHUB_WORKSPACE/openwrt/package/lean/default-settings/Makefile")
+        PKG_RELEASE=$(grep -oP 'PKG_RELEASE:=\K[^ ]+' "$GITHUB_WORKSPACE/openwrt/package/lean/default-settings/Makefile")
+        echo "**:gear: Default-Setting Version: $PKG_VERSION.$PKG_RELEASE**" >> release.txt
 
-        # echo "### Compile Information" >> release.txt
+        echo "### Compile Information" >> release.txt
 
-        # kernel_X86=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/x86/Makefile)
-        # kernel_rockchip=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile)
-        # kernel_bcm27xx=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/bcm27xx/Makefile)
+        kernel_X86=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/x86/Makefile)
+        kernel_rockchip=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile)
+        kernel_bcm27xx=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/bcm27xx/Makefile)
 
-        # echo "platform|kernel|compile status" >> release.txt
-        # echo "-|-|-" >> release.txt
-        # echo "**:ice_cube: X86**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_X86} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-        # echo "**:ice_cube: R5S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-        # echo "**:ice_cube: R5C**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-        # echo "**:ice_cube: R4S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-        # echo "**:ice_cube: R4SE**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-        # echo "**:ice_cube: R2S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-        # echo "**:ice_cube: R2C**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-        # echo "**:ice_cube: H66K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-        # echo "**:ice_cube: H68K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-        # echo "**:ice_cube: H69K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-        # echo "**:ice_cube: R66S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-        # echo "**:ice_cube: R68S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-        # echo "**:ice_cube: R_Pi_3b**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-        # echo "**:ice_cube: R_Pi_4b**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "platform|kernel|compile status" >> release.txt
+        echo "-|-|-" >> release.txt
+        echo "**:ice_cube: X86**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_X86} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: R5S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: R5C**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: R4S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: R4SE**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: R2S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: R2C**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: H66K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: H68K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: H69K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: R66S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: R68S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: R_Pi_3b**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+        echo "**:ice_cube: R_Pi_4b**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
 
-        echo "## File Description" >> release.txt
-        echo "File Name|Meaning" >> release.txt
-        echo "-|-" >> release.txt
-        echo "**config_*.buildinfo**|compile configuration information" >> release.txt
-        echo "**feeds_*.buildinfo**|feeds file content and git head information during compilation" >> release.txt
-        echo "**ipk_*.zip**|Including the ipk installation files of helloworld OpenClash passwall passwall_packages passwall2" >> release.txt
-        echo "**openwrt-*.img.gz**|openwrt firmware file" >> release.txt
-        echo "**sha256sums_***|hash verification code file corresponding to the firmware" >> release.txt
-        echo "**version_*.buildinfo**|the version file corresponding to the firmware" >> release.txt
+        # echo "## File Description" >> release.txt
+        # echo "File Name|Meaning" >> release.txt
+        # echo "-|-" >> release.txt
+        # echo "**config_*.buildinfo**|compile configuration information" >> release.txt
+        # echo "**feeds_*.buildinfo**|feeds file content and git head information during compilation" >> release.txt
+        # echo "**ipk_*.zip**|Including the ipk installation files of helloworld OpenClash passwall passwall_packages passwall2" >> release.txt
+        # echo "**openwrt-*.img.gz**|openwrt firmware file" >> release.txt
+        # echo "**sha256sums_***|hash verification code file corresponding to the firmware" >> release.txt
+        # echo "**version_*.buildinfo**|the version file corresponding to the firmware" >> release.txt
 
-        echo "## IPK File Description" >> release.txt
-        echo "**Note that sometimes the dependent ipk of passwall and helloworld will be repeated. You may see that there are many ipk in helloworld, but there are few files of passwall_packages. Don’t be surprised, install them all**" >> release.txt
-        echo "This ipk package is suitable for friends who do not want to upgrade the firmware but want to upgrade the scientific Internet plug-in." >> release.txt
-        echo "You may see that each package contains four files: Packages, Packages.gz, Packages.manifest, and Packages.sig. Their meanings are as follows:" >> release.txt
-        echo "1. Packages: This is a clear text file that contains information about all packages in the software source, such as package name, version, description, dependencies, etc. When configuring the opkg package manager to use a new software repository, opkg will download and read this file to know what packages are available in the repository." >> release.txt
+        # echo "## IPK File Description" >> release.txt
+        # echo "**Note that sometimes the dependent ipk of passwall and helloworld will be repeated. You may see that there are many ipk in helloworld, but there are few files of passwall_packages. Don’t be surprised, install them all**" >> release.txt
+        # echo "This ipk package is suitable for friends who do not want to upgrade the firmware but want to upgrade the scientific Internet plug-in." >> release.txt
+        # echo "You may see that each package contains four files: Packages, Packages.gz, Packages.manifest, and Packages.sig. Their meanings are as follows:" >> release.txt
+        # echo "1. Packages: This is a clear text file that contains information about all packages in the software source, such as package name, version, description, dependencies, etc. When configuring the opkg package manager to use a new software repository, opkg will download and read this file to know what packages are available in the repository." >> release.txt
 
-        echo "2. Packages.gz: This is a compressed version of the Packages file. Since Packages files can be large, compressing them can save download time and bandwidth. opkg can also handle files in this compressed format." >> release.txt
+        # echo "2. Packages.gz: This is a compressed version of the Packages file. Since Packages files can be large, compressing them can save download time and bandwidth. opkg can also handle files in this compressed format." >> release.txt
 
-        echo "3. Packages.manifest: This file is usually used for development and debugging purposes. It records the file structure and contents of each package in the software source in detail. This is useful for developers as it provides the exact contents of the package." >> release.txt
+        # echo "3. Packages.manifest: This file is usually used for development and debugging purposes. It records the file structure and contents of each package in the software source in detail. This is useful for developers as it provides the exact contents of the package." >> release.txt
 
-        echo "4. Packages.sig: This is a signature file used to verify the integrity and origin of Packages files. When opkg downloads a Packages or Packages.gz file, it can use this signature file to confirm that the package list has not been tampered with in transit and that it was indeed published by a trusted source." >> release.txt
-
-
+        # echo "4. Packages.sig: This is a signature file used to verify the integrity and origin of Packages files. When opkg downloads a Packages or Packages.gz file, it can use this signature file to confirm that the package list has not been tampered with in transit and that it was indeed published by a trusted source." >> release.txt
 
         touch release.txt
         echo "status=success" >> $GITHUB_OUTPUT
@@ -712,19 +613,179 @@ jobs:
         path: release.txt
         retention-days: 5
 
+    - name: Generate Git Log
+      id: git_log
+      if: steps.tag.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
+      run: |
+          git -C openwrt log -n 1 --format="%h" >> git_log.txt
+          git -C openwrt/feeds/packages log -n 1 --format="%h" >> git_log.txt
+          git -C openwrt/feeds/luci log -n 1 --format="%h" >> git_log.txt
+          git -C openwrt/feeds/routing log -n 1 --format="%h" >> git_log.txt
+          git -C openwrt/feeds/telephony log -n 1 --format="%h" >> git_log.txt
+          git -C openwrt/feeds/helloworld log -n 1 --format="%h" >> git_log.txt
+          git -C openwrt/feeds/passwall_packages log -n 1 --format="%h" >> git_log.txt
+          git -C openwrt/feeds/passwall log -n 1 --format="%h" >> git_log.txt
+          git -C openwrt/feeds/passwall2 log -n 1 --format="%h" >> git_log.txt
+          git -C openwrt/feeds/OpenClash log -n 1 --format="%h" >> git_log.txt
+          git -C openwrt/feeds/luci/themes/luci-theme-argon log -n 1 --format="%h" >> git_log.txt
+          git -C openwrt/package/lean/luci-app-argon-config log -n 1 --format="%h" >> git_log.txt
+          git -C openwrt/package/lean/luci-app-adguardhome log -n 1 --format="%h" >> git_log.txt
+          git -C openwrt/package/custom_packages/mosdns log -n 1 --format="%h" >> git_log.txt
+          echo "status=success" >> $GITHUB_OUTPUT
+
+    - name: Upload Git Log To Artifact
+      uses: actions/upload-artifact@v3
+      if: steps.git_log.outputs.status == 'success'
+      with:
+        name: git_log_${{ needs.job_init.outputs.output_release_tag }}
+        path: git_log.txt
+        retention-days: 5
+
+    - name: Upload Firmware To Release
+      uses: softprops/action-gh-release@v0.1.15
+      if: steps.tag.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+        body_path: release.txt
+        files: ${{ env.FIRMWARE }}/*
+
+  job_organize_git_log:
+    needs: [job_init, job_build_toolchain, job_build]
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+    name: Organize-Git-Log
+    outputs:
+      output_sha: ${{steps.commit.outputs.commit_hash }}
+       
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+      with:
+        ref: ${{ needs.job_init.outputs.output_sha }}
+
+    - name: Download Git Log
+      uses: actions/download-artifact@v3
+      with:
+        name: git_log_${{ needs.job_init.outputs.output_release_tag }}
+
+    - name: Generate Git Log
+      run: |
+        REPO_URLS=(
+          "https://github.com/coolsnowwolf/lede --filter=blob:none"
+          "https://github.com/coolsnowwolf/packages --filter=blob:none"
+          "https://github.com/coolsnowwolf/luci --filter=blob:none"
+          "https://git.openwrt.org/feed/routing.git"
+          "https://git.openwrt.org/feed/telephony.git"
+          "https://github.com/fw876/helloworld --filter=blob:none"
+          "https://github.com/xiaorouji/openwrt-passwall-packages --filter=blob:none"
+          "https://github.com/xiaorouji/openwrt-passwall --filter=blob:none"
+          "https://github.com/xiaorouji/openwrt-passwall2 --filter=blob:none"
+          "https://github.com/vernesong/OpenClash.git --filter=blob:none"
+          "https://github.com/jerrykuku/luci-theme-argon.git --filter=blob:none -b 18.06"
+          "https://github.com/jerrykuku/luci-app-argon-config.git --filter=blob:none -b 18.06"
+          "https://github.com/rufengsuixing/luci-app-adguardhome.git --filter=blob:none"
+          "https://github.com/sbwml/luci-app-mosdns --filter=blob:none -b v5"
+        )
+        LINE_NUMBERS=(1 2 3 4 5 6 7 8 9 10 11 12 13 14)
+        OUTPUT_FILES=(
+          "lede"
+          "packages"
+          "luci"
+          "routing"
+          "telephony"
+          "helloworld"
+          "openwrt-passwall-packages"
+          "openwrt-passwall"
+          "openwrt-passwall2"
+          "OpenClash"
+          "luci-theme-argon"
+          "luci-app-argon-config"
+          "luci-app-adguardhome"
+          "luci-app-mosdns"
+        )
+        TITLE_MESSAGES=(
+          "lean openwrt new commit log :new: "
+          "lean package new commit log :new: "
+          "lean luci new commit log :new: "
+          "openwrt routing new commit log :new: "
+          "openwrt telephony new commit log :new: "
+          "helloworld new commit log :new: "
+          "passwall packages new commit log :new: "
+          "passwall new commit log :new: "
+          "passwall2 new commit log :new: "
+          "openclash new commit log :new: "
+          "luci-theme-argon new commit log :new: "
+          "luci-app-argon-config new commit log :new: "
+          "luci-app-adguardhome new commit log :new: "
+          "luci-app-mosdns new commit log :new: "
+        )
+        cd $GITHUB_WORKSPACE
+        find git_log -type f ! -name 'log' -exec rm {} +
+
+        for i in "${!REPO_URLS[@]}"; do
+          REPO_URL=${REPO_URLS[$i]}
+          LINE_NUMBER=${LINE_NUMBERS[$i]}
+          OUTPUT_FILE=${OUTPUT_FILES[$i]}
+          TITLE_MESSAGE=${TITLE_MESSAGES[$i]}
+
+          git clone $REPO_URL $OUTPUT_FILE
+          cd $OUTPUT_FILE || exit
+          SHA=$(sed -n "${LINE_NUMBER}p" git_log.txt)
+          cd ..
+
+          sed -i "${LINE_NUMBER}s/\*.*/*$SHA/" git_log/log
+          line=$(sed -n "${LINE_NUMBER}p" git_log/log)
+          SHA_Begin=$(echo "$line" | sed -n 's/.*:\(.*\)\*.*/\1/p')
+          SHA_End=$(echo "$line" | sed -n 's/.*\*\(.*\)/\1/p')
+
+          if [ -z "$SHA_Begin" ]; then
+            sed -i "${LINE_NUMBER}s/\(:\).*\(\*\)/\1$SHA_End\2/" git_log/log
+          elif [ "$SHA_Begin" != "$SHA_End" ]; then
+            echo "<details> <summary> <b>$TITLE_MESSAGE</b>  </summary>" >> "git_log/$OUTPUT_FILE.log"
+            echo "" >> "git_log/$OUTPUT_FILE.log"
+            echo "SHA|Author|Date|Message" >> "git_log/$OUTPUT_FILE.log"
+            echo "-|-|-|-" >> "git_log/$OUTPUT_FILE.log"
+            git -C $OUTPUT_FILE log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >> "git_log/$OUTPUT_FILE.log"
+            echo "" >> "git_log/$OUTPUT_FILE.log"
+            echo "|-----------------------------------|"
+            echo "$OUTPUT_FILE has update log"
+            echo "|-----------------------------------|"
+            echo "</details>" >> "git_log/$OUTPUT_FILE.log"
+            sed -i "${LINE_NUMBER}s/\(:\).*\(\*\)/\1$SHA_End\2/" git_log/log
+          fi
+
+          cd $GITHUB_WORKSPACE || exit
+          rm -rf $OUTPUT_FILE
+        done
+        echo "|=========================================|"
+        ls git_log
+        echo "|=========================================|"
+
+
+    - name: Git auto update git log
+      uses: stefanzweifel/git-auto-commit-action@v5.0.0
+      id: commit
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        commit_message: auto update git log
+        branch: main
+        commit_author: smallprogram <smallprogram@foxmail.com>
+
 
   job_organize_tags:
-    needs: [job_init, job_build_toolchain, job_build]
+    needs: [job_init, job_build_toolchain, job_build,job_organize_git_log]
     if: ${{ always() }}
     runs-on: ubuntu-latest
     name: Organize-Release-Tags
         
     steps:
-
     - name: Checkout
       uses: actions/checkout@main
       with:
-        fetch-depth: 0
+        ref: ${{ needs.job_organize_git_log.outputs.output_sha }}
 
     - name: Download Tags
       uses: actions/download-artifact@v3
@@ -777,6 +838,10 @@ jobs:
             fi
           done
 
+          echo "|=========================================|"
+          ls git_log
+          echo "|=========================================|"
+
           echo "## What's Changed" >> release.txt
 
           OUTPUT_FILES=(
@@ -798,28 +863,27 @@ jobs:
 
           for file in "${OUTPUT_FILES[@]}"; do
             if [ -f "git_log/$file.log" ]; then
+              echo "found file $file.log!"
               cat "git_log/$file.log" >> release.txt
-              cat "git_log/$file.log"
+            else
+              echo "no file $file.log 404"
             fi
           done
+          
 
-
+          echo "status=success" >> $GITHUB_OUTPUT
+          echo "-----------------------release.txt------------------------"
           cat release.txt
 
         else
           echo "status=failure" >> $GITHUB_OUTPUT
         fi
- 
-    - name: SSH connection to Actions
-      uses: mxschmitt/action-tmate@v3.16
-      if: (github.event.inputs.sshs == 'true' && github.event.inputs.sshs  != 'false') || contains(github.event.action, 'sshs')
 
     - name: Upload Release Tag
       uses: softprops/action-gh-release@v0.1.15
+      if: steps.organize_tags.outputs.status == 'success'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: ${{ needs.job_init.outputs.output_release_tag }}
-        body_path: release.txt    
-
-  
+        body_path: release.txt
