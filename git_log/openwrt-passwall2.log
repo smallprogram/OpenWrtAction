@@ -1,0 +1,16 @@
+<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+37775c0|xiaorouji|Thu Jan 11 20:43:13 2024 +0800|luci: 1.23-2
+148309d|xiaorouji|Thu Jan 11 20:42:45 2024 +0800|luci: sing-box do not use pre-release
+3e6c58b|xiaorouji|Thu Jan 11 20:39:24 2024 +0800|luci: Xray shunt rule DNS in order
+27ffbf2|xiaorouji|Thu Jan 11 19:58:16 2024 +0800|luci: fix #444
+7a7e58f|xiaorouji|Thu Jan 11 01:09:00 2024 +0800|luci: 1.23
+5e5be42|xiaorouji|Thu Jan 11 00:36:45 2024 +0800|luci: delete the logical code that is not used
+f2226e2|xiaorouji|Thu Jan 11 00:14:57 2024 +0800|luci: Xray 1.8.6 config optimization
+6d6c68c|xiaorouji|Wed Jan 10 16:54:55 2024 +0800|luci: sing-box 1.8.0 Migrate cache file options
+8ea1fbf|xiaorouji|Thu Jan 11 00:51:17 2024 +0800|luci: direct DNS multiple server
+c8c57bc|xiaorouji|Tue Jan 9 02:52:51 2024 +0800|luci: update and fix the subscribe module
+afb4f89|zhusir|Tue Jan 9 15:37:18 2024 +0800|luci: update default config
+</details>

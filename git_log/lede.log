@@ -1,0 +1,31 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b1816c7d0|coolsnowwolf|Sat Jan 13 13:50:40 2024 +0800|gpio-button-hotplug: fix kernel 5.4 support
+ce521963d|coolsnowwolf|Sat Jan 13 13:43:43 2024 +0800|package: adds pcre2 to base
+648202bb8|coolsnowwolf|Sat Jan 13 13:23:49 2024 +0800|e2fsprogs: Update to 1.45.6
+87b3c3e10|coolsnowwolf|Sat Jan 13 12:57:22 2024 +0800|kernel: bump 5.4 to 5.4.266
+bfb12d78c|coolsnowwolf|Fri Jan 12 14:20:18 2024 +0800|toolchain/musl: update to 1.2.4
+51459ab19|coolsnowwolf|Fri Jan 12 13:28:00 2024 +0800|toolchain: gdb: Add optional python support
+f426fce6c|coolsnowwolf|Fri Jan 12 10:34:28 2024 +0800|video.mk: add AMD Displaycard (RX580) support for loongarch64
+a5a63865f|coolsnowwolf|Fri Jan 12 10:23:48 2024 +0800|target: add loongarch64 support
+b055b3b40|coolsnowwolf|Fri Jan 12 10:18:22 2024 +0800|generic: init linux kernel 6.6 support
+c6c5c79e3|coolsnowwolf|Fri Jan 12 10:13:05 2024 +0800|target.mk: add GRUB2 EFI support for loongarch64
+9c8d19675|coolsnowwolf|Thu Jan 11 21:14:49 2024 +0800|toolchain/gcc: add loongarch64 new target
+253878b85|coolsnowwolf|Thu Jan 11 20:56:50 2024 +0800|include: add loongarch64 new target
+4103edf7b|coolsnowwolf|Thu Jan 11 20:45:33 2024 +0800|tools: add util-linux
+01edff43e|coolsnowwolf|Thu Jan 11 20:38:46 2024 +0800|gpio-button-hotplug: fix kernel 6.2+ build failure
+29c2367ca|coolsnowwolf|Thu Jan 11 20:36:11 2024 +0800|cryptodev-linux: update to 1.13
+7fa5e13df|coolsnowwolf|Thu Jan 11 20:31:15 2024 +0800|openssl: add linux64-loongarch64 into the targets list
+39d6ad704|coolsnowwolf|Thu Jan 11 20:18:46 2024 +0800|grub2: add loongarch64 support
+df3c79e2b|coolsnowwolf|Thu Jan 11 20:12:59 2024 +0800|toolchain/binutils: switch to version 2.40 by default
+c0bfa64da|coolsnowwolf|Thu Jan 11 11:40:01 2024 +0800|toolchain: glibc: Update to glibc 2.37
+229e5e43f|coolsnowwolf|Thu Jan 11 11:30:49 2024 +0800|binutils: update to 2.41
+321f1572f|coolsnowwolf|Thu Jan 11 11:27:44 2024 +0800|toolchain/binutils: add support for version 2.41
+be9cb16c8|coolsnowwolf|Thu Jan 11 11:22:30 2024 +0800|toolchain: gcc: add support for GCC 13
+cbcb69593|David Bauer|Thu Nov 30 07:32:52 2023 +0100|mac80211: avoid crashing on invalid band info
+6f40d7387|Felix Fietkau|Tue Jan 9 15:15:08 2024 +0100|mediatek: fix BPI-R3 wifi mac address
+135a4e954|John Audia|Fri Jan 5 15:40:08 2024 -0500|kernel: bump 5.15 to 5.15.146
+89e25b571|aiamadeus|Sun Jan 7 23:05:16 2024 +0800|mediatek: add missing nmbm for RG-X60 Pro
+</details>
