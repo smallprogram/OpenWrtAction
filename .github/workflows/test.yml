@@ -533,21 +533,21 @@ jobs:
       id: git_log
       if: steps.tag.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-          git -C openwrt log -n 1 --format="%h" >> git_log.txt
-          git -C openwrt/feeds/packages log -n 1 --format="%h" >> git_log.txt
-          git -C openwrt/feeds/luci log -n 1 --format="%h" >> git_log.txt
-          git -C openwrt/feeds/routing log -n 1 --format="%h" >> git_log.txt
-          git -C openwrt/feeds/telephony log -n 1 --format="%h" >> git_log.txt
-          git -C openwrt/feeds/helloworld log -n 1 --format="%h" >> git_log.txt
-          git -C openwrt/feeds/passwall_packages log -n 1 --format="%h" >> git_log.txt
-          git -C openwrt/feeds/passwall log -n 1 --format="%h" >> git_log.txt
-          git -C openwrt/feeds/passwall2 log -n 1 --format="%h" >> git_log.txt
-          git -C openwrt/feeds/OpenClash log -n 1 --format="%h" >> git_log.txt
-          git -C openwrt/feeds/luci/themes/luci-theme-argon log -n 1 --format="%h" >> git_log.txt
-          git -C openwrt/package/lean/luci-app-argon-config log -n 1 --format="%h" >> git_log.txt
-          git -C openwrt/package/lean/luci-app-adguardhome log -n 1 --format="%h" >> git_log.txt
-          git -C openwrt/package/custom_packages/mosdns log -n 1 --format="%h" >> git_log.txt
-          echo "status=success" >> $GITHUB_OUTPUT
+        git -C openwrt log -n 1 --format="%H" >> git_log.txt
+        git -C openwrt/feeds/packages log -n 1 --format="%H" >> git_log.txt
+        git -C openwrt/feeds/luci log -n 1 --format="%H" >> git_log.txt
+        git -C openwrt/feeds/routing log -n 1 --format="%H" >> git_log.txt
+        git -C openwrt/feeds/telephony log -n 1 --format="%H" >> git_log.txt
+        git -C openwrt/feeds/helloworld log -n 1 --format="%H" >> git_log.txt
+        git -C openwrt/feeds/passwall_packages log -n 1 --format="%H" >> git_log.txt
+        git -C openwrt/feeds/passwall log -n 1 --format="%H" >> git_log.txt
+        git -C openwrt/feeds/passwall2 log -n 1 --format="%H" >> git_log.txt
+        git -C openwrt/feeds/OpenClash log -n 1 --format="%H" >> git_log.txt
+        git -C openwrt/feeds/luci/themes/luci-theme-argon log -n 1 --format="%H" >> git_log.txt
+        git -C openwrt/package/lean/luci-app-argon-config log -n 1 --format="%H" >> git_log.txt
+        git -C openwrt/package/lean/luci-app-adguardhome log -n 1 --format="%H" >> git_log.txt
+        git -C openwrt/package/custom_packages/mosdns log -n 1 --format="%H" >> git_log.txt
+        echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Upload Git Log To Artifact
       uses: actions/upload-artifact@v3
@@ -626,23 +626,24 @@ jobs:
           "luci-app-mosdns"
         )
         TITLE_MESSAGES=(
-          "lean openwrt new commit log :new: "
-          "lean package new commit log :new: "
-          "lean luci new commit log :new: "
-          "openwrt routing new commit log :new: "
-          "openwrt telephony new commit log :new: "
-          "helloworld new commit log :new: "
-          "passwall packages new commit log :new: "
-          "passwall new commit log :new: "
-          "passwall2 new commit log :new: "
-          "openclash new commit log :new: "
-          "luci-theme-argon new commit log :new: "
-          "luci-app-argon-config new commit log :new: "
-          "luci-app-adguardhome new commit log :new: "
-          "luci-app-mosdns new commit log :new: "
+          "lean openwrt new commit log"
+          "lean package new commit log"
+          "lean luci new commit log"
+          "openwrt routing new commit log"
+          "openwrt telephony new commit log"
+          "helloworld new commit log"
+          "passwall packages new commit log"
+          "passwall new commit log"
+          "passwall2 new commit log"
+          "openclash new commit log"
+          "luci-theme-argon new commit log"
+          "luci-app-argon-config new commit log"
+          "luci-app-adguardhome new commit log"
+          "luci-app-mosdns new commit log"
         )
         cd $GITHUB_WORKSPACE
         find git_log -type f ! -name 'log' -exec rm {} +
+        mkdir -p git_repositories
 
         for i in "${!REPO_URLS[@]}"; do
           REPO_URL=${REPO_URLS[$i]}
@@ -650,28 +651,39 @@ jobs:
           OUTPUT_FILE=${OUTPUT_FILES[$i]}
           TITLE_MESSAGE=${TITLE_MESSAGES[$i]}
           
-          SHA=$(sed -n "${LINE_NUMBER}p" git_log.txt)
-          sed -i "${LINE_NUMBER}s/\*.*/*$SHA/" git_log/log
           line=$(sed -n "${LINE_NUMBER}p" git_log/log)
-          SHA_Begin=$(echo "$line" | sed -n 's/.*:\(.*\)\*.*/\1/p')
-          SHA_End=$(echo "$line" | sed -n 's/.*\*\(.*\)/\1/p')
+          SHA_Begin=$(echo "$line" | sed -n 's/^[^:]*://p')
+          SHA_End=$(sed -n "${LINE_NUMBER}p" git_log.txt)
+
+          git clone $REPO_URL git_repositories/$OUTPUT_FILE
+
+          if ! git -C git_repositories/$OUTPUT_FILE cat-file -t "$SHA_Begin" >/dev/null 2>&1 || \
+            ! git -C git_repositories/$OUTPUT_FILE cat-file -t "$SHA_End" >/dev/null 2>&1; then
+            sed -i "${LINE_NUMBER}s/:.*/:$SHA_End/" git_log/log
+
+            echo ":negative_squared_cross_mark: Invalid SHA detected (Begin: $SHA_Begin, End: $SHA_End) for $OUTPUT_FILE"
+            echo "<details> <summary> <b>$TITLE_MESSAGE :negative_squared_cross_mark: </b>  </summary>" >> "git_log/$OUTPUT_FILE.log"
+            echo "" >> "git_log/$OUTPUT_FILE.log"
+            echo "<b> It is detected that $OUTPUT_FILE has an illegal SHA value. It is possible that $OUTPUT_FILE has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>" >> "git_log/$OUTPUT_FILE.log"
+            echo "" >> "git_log/$OUTPUT_FILE.log"
+            echo "</details>" >> "git_log/$OUTPUT_FILE.log"
+            continue
+          fi
 
           if [ -z "$SHA_Begin" ]; then
-            sed -i "${LINE_NUMBER}s/\(:\).*\(\*\)/\1$SHA_End\2/" git_log/log
+            sed -i "${LINE_NUMBER}s/:.*/:$SHA_End/" git_log/log
           elif [ "$SHA_Begin" != "$SHA_End" ]; then
-            git clone $REPO_URL $OUTPUT_FILE
-            echo "<details> <summary> <b>$TITLE_MESSAGE</b>  </summary>" >> "git_log/$OUTPUT_FILE.log"
+            echo "<details> <summary> <b>$TITLE_MESSAGE :new: </b>  </summary>" >> "git_log/$OUTPUT_FILE.log"
             echo "" >> "git_log/$OUTPUT_FILE.log"
             echo "SHA|Author|Date|Message" >> "git_log/$OUTPUT_FILE.log"
             echo "-|-|-|-" >> "git_log/$OUTPUT_FILE.log"
-            git -C $OUTPUT_FILE log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >> "git_log/$OUTPUT_FILE.log"
+            git -C git_repositories/$OUTPUT_FILE log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >> "git_log/$OUTPUT_FILE.log"
             echo "" >> "git_log/$OUTPUT_FILE.log"
+            echo "</details>" >> "git_log/$OUTPUT_FILE.log"
             echo "|-----------------------------------|"
             echo "$OUTPUT_FILE has update log"
             echo "|-----------------------------------|"
-            echo "</details>" >> "git_log/$OUTPUT_FILE.log"
-            sed -i "${LINE_NUMBER}s/\(:\).*\(\*\)/\1$SHA_End\2/" git_log/log
-            rm -rf $OUTPUT_FILE
+            sed -i "${LINE_NUMBER}s/:.*/:$SHA_End/" git_log/log
           fi
         done
 
@@ -679,7 +691,7 @@ jobs:
         ls git_log
         echo "|=========================================|"
         cd $GITHUB_WORKSPACE
-        rm -rf git_log.txt
+        rm -rf git_log.txt git_repositories
 
 
     - name: Git auto update git log
