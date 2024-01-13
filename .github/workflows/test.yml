@@ -649,12 +649,8 @@ jobs:
           LINE_NUMBER=${LINE_NUMBERS[$i]}
           OUTPUT_FILE=${OUTPUT_FILES[$i]}
           TITLE_MESSAGE=${TITLE_MESSAGES[$i]}
-
-          git clone $REPO_URL $OUTPUT_FILE
-          cd $OUTPUT_FILE || exit
+          
           SHA=$(sed -n "${LINE_NUMBER}p" git_log.txt)
-          cd ..
-
           sed -i "${LINE_NUMBER}s/\*.*/*$SHA/" git_log/log
           line=$(sed -n "${LINE_NUMBER}p" git_log/log)
           SHA_Begin=$(echo "$line" | sed -n 's/.*:\(.*\)\*.*/\1/p')
@@ -663,6 +659,7 @@ jobs:
           if [ -z "$SHA_Begin" ]; then
             sed -i "${LINE_NUMBER}s/\(:\).*\(\*\)/\1$SHA_End\2/" git_log/log
           elif [ "$SHA_Begin" != "$SHA_End" ]; then
+            git clone $REPO_URL $OUTPUT_FILE
             echo "<details> <summary> <b>$TITLE_MESSAGE</b>  </summary>" >> "git_log/$OUTPUT_FILE.log"
             echo "" >> "git_log/$OUTPUT_FILE.log"
             echo "SHA|Author|Date|Message" >> "git_log/$OUTPUT_FILE.log"
@@ -674,14 +671,15 @@ jobs:
             echo "|-----------------------------------|"
             echo "</details>" >> "git_log/$OUTPUT_FILE.log"
             sed -i "${LINE_NUMBER}s/\(:\).*\(\*\)/\1$SHA_End\2/" git_log/log
+            rm -rf $OUTPUT_FILE
           fi
-
-          cd $GITHUB_WORKSPACE || exit
-          rm -rf $OUTPUT_FILE
         done
+
         echo "|=========================================|"
         ls git_log
         echo "|=========================================|"
+        cd $GITHUB_WORKSPACE
+        rm -rf git_log.txt
 
 
     - name: Git auto update git log
