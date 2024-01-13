@@ -221,9 +221,6 @@ jobs:
       #     find dl -size -1024c -exec rm -f {} \;
       #     df -hT
       
-      - name: SSH connection to Actions
-        uses: mxschmitt/action-tmate@v3.16
-        if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
       # - name: Compile Tools
       #   id: compile_tools
@@ -430,10 +427,6 @@ jobs:
         echo "LOGFILES=$PWD" >> $GITHUB_ENV
 
 
-    - name: SSH connection to Actions
-      uses: mxschmitt/action-tmate@v3.16
-      if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
-
 
     - name: Check Space Usage
       if: (!cancelled())
@@ -446,6 +439,7 @@ jobs:
         mkdir -p test
         cd test
         dd if=/dev/zero of=test.txt bs=1M count=10
+        mv test.txt test-${{ matrix.platforms }}.txt
         firmware_path=$PWD
         
 
@@ -591,6 +585,10 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: git_log_${{ needs.job_init.outputs.output_release_tag }}
+
+    - name: SSH connection to Actions
+      uses: mxschmitt/action-tmate@v3.16
+      if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
     - name: Generate Git Log
       run: |
