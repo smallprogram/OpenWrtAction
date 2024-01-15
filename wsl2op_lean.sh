@@ -45,8 +45,8 @@
 # 编译环境中当前账户名字
 user_name=$USER
 # 默认lean源码文件夹名
-openwrt_dir=${openwrt_dir_front}${config_name}
 openwrt_dir_front=lean_
+openwrt_dir=${openwrt_dir_front}${config_name}
 # 默认OpenWrtAction的Config文件夹中的config文件名
 config_name=$1
 # 默认的config目录
@@ -685,6 +685,12 @@ function Func_Main(){
         echo
         cat /home/${user_name}/OpenWrtAction/$feeds_dir > /home/${user_name}/${openwrt_dir}/feeds.conf.default
         cd /home/${user_name}/${openwrt_dir}
+
+        Func_LogMessage "创建编译日志文件夹/home/${user_name}/${log_folder_name}/${folder_name}" "Create compilation log folder /home/${user_name}/${log_folder_name}/${folder_name}"
+        sleep 1s
+
+        mkdir -p /home/${user_name}/${log_folder_name}
+        mkdir /home/${user_name}/${log_folder_name}/${folder_name}
 
         Func_DIY1_Script
 

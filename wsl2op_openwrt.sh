@@ -45,8 +45,8 @@
 # 编译环境中当前账户名字
 user_name=$USER
 # 默认lean源码文件夹名
-openwrt_dir=${openwrt_dir_front}${config_name}
 openwrt_dir_front=openwrt_
+openwrt_dir=${openwrt_dir_front}${config_name}
 # 默认OpenWrtAction的Config文件夹中的config文件名
 config_name=$1
 # 默认的config目录
@@ -449,9 +449,6 @@ function Func_ConfigList(){
     read -t $timer configNameInp
     if [ ! -n "$configNameInp" ]; then
         i=1
-        # configName=X86.config
-        # openwrt_dir=lede_$configName
-        # echo "135 configName的值："$configName
         for context in ${config_list[*]}; 
         do 
             if [[ $context == $config_name ]]; then
@@ -577,6 +574,7 @@ function Func_Main(){
         fi
 
     else
+        Func_LogMessage "新config名称为$newConfigName"
         config_name=$newConfigName
     fi
 
@@ -586,16 +584,21 @@ function Func_Main(){
 
     echo
     Func_LogMessage "开始同步openwrt源码...." "Start to synchronize openwrt source code..."
+    Func_LogMessage "源码地址为:${openwrt_dir}"
     sleep 2s
 
     cd /home/${user_name}
+    Func_LogMessage  "当前路径: /home/${user_name}/${openwrt_dir}"
     if [ ! -d "/home/${user_name}/${openwrt_dir}" ];
     then
+        Func_LogMessage "执行git clone命令" 
         echo "git clone $openwrt_source ${openwrt_dir}"
+
         git clone $openwrt_source ${openwrt_dir}
         cd /home/${user_name}
         is_first_compile=1
     else 
+        Func_LogMessage "执行git pull命令"
         cd ${openwrt_dir}
         git stash
         git stash drop
@@ -685,6 +688,12 @@ function Func_Main(){
         echo
         cat /home/${user_name}/OpenWrtAction/$feeds_dir > /home/${user_name}/${openwrt_dir}/feeds.conf.default
         cd /home/${user_name}/${openwrt_dir}
+
+        Func_LogMessage "创建编译日志文件夹/home/${user_name}/${log_folder_name}/${folder_name}" "Create compilation log folder /home/${user_name}/${log_folder_name}/${folder_name}"
+        sleep 1s
+
+        mkdir -p /home/${user_name}/${log_folder_name}
+        mkdir /home/${user_name}/${log_folder_name}/${folder_name}
 
         Func_DIY1_Script
 
