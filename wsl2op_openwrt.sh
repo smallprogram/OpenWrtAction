@@ -591,12 +591,14 @@ function Func_Main(){
     cd /home/${user_name}
     if [ ! -d "/home/${user_name}/${openwrt_dir}" ];
     then
+        Func_LogMessage "执行git clone命令" 
         echo "git clone $openwrt_source ${openwrt_dir}"
-        
+
         git clone $openwrt_source ${openwrt_dir}
         cd /home/${user_name}
         is_first_compile=1
     else 
+        Func_LogMessage "执行git pull命令"
         cd ${openwrt_dir}
         git stash
         git stash drop
