@@ -577,6 +577,7 @@ function Func_Main(){
         fi
 
     else
+        Func_LogMessage "新config名称为$newConfigName"
         config_name=$newConfigName
     fi
 
@@ -586,6 +587,7 @@ function Func_Main(){
 
     echo
     Func_LogMessage "开始同步openwrt源码...." "Start to synchronize openwrt source code..."
+    Func_LogMessage "源码地址为:${openwrt_dir}"
     sleep 2s
 
     cd /home/${user_name}
