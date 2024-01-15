@@ -589,6 +589,7 @@ function Func_Main(){
     sleep 2s
 
     cd /home/${user_name}
+    Func_LogMessage  "当前路径: /home/${user_name}/${openwrt_dir}"
     if [ ! -d "/home/${user_name}/${openwrt_dir}" ];
     then
         Func_LogMessage "执行git clone命令" 
