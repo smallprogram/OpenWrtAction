@@ -592,6 +592,7 @@ function Func_Main(){
     if [ ! -d "/home/${user_name}/${openwrt_dir}" ];
     then
         echo "git clone $openwrt_source ${openwrt_dir}"
+        
         git clone $openwrt_source ${openwrt_dir}
         cd /home/${user_name}
         is_first_compile=1
