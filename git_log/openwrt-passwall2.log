@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-37775c0|xiaorouji|Thu Jan 11 20:43:13 2024 +0800|luci: 1.23-2
-148309d|xiaorouji|Thu Jan 11 20:42:45 2024 +0800|luci: sing-box do not use pre-release
-3e6c58b|xiaorouji|Thu Jan 11 20:39:24 2024 +0800|luci: Xray shunt rule DNS in order
+fb1703a|xiaorouji|Sat Jan 13 15:31:57 2024 +0800|luci: fix hysteria(2) subscribe
 </details>

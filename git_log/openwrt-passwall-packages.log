@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e466b5e|github-actions[bot]|Mon Jan 8 12:24:00 2024 +0800|xray-plugin: update to 1.8.7 (#98)
-4e66736|github-actions[bot]|Mon Jan 8 08:53:45 2024 +0800|xray-core: update to 1.8.7 (#97)
-4dc84e5|github-actions[bot]|Sat Jan 6 11:12:37 2024 +0800|sing-box: update to 1.8.0 (#95)
+52bcba1|Beginner|Mon Jan 15 11:47:07 2024 +0800|brook: `drop` patches (#106)
+2ca1c63|github-actions[bot]|Sun Jan 14 23:24:40 2024 +0800|sing-box: update to 1.8.1 (#103)
+46d8958|github-actions[bot]|Sun Jan 14 22:06:56 2024 +0800|brook: update to 20240214 (#104)
 </details>

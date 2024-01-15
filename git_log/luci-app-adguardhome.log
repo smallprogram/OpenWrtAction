@@ -1,7 +1,0 @@
-<details> <summary> <b>luci-app-adguardhome new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-37fdf50|rufengsuixing|Mon Jan 13 00:18:16 2020 +0800|fix log view
-d317051|rufengsuixing|Thu Jan 9 01:39:07 2020 +0800|fix :verbose log time bug
-</details>

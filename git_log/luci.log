@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f3fe5b5|coolsnowwolf|Tue Dec 26 23:19:37 2023 +0800|luci-app-cpufreq: add qualcommax support
-5071ebf|coolsnowwolf|Tue Jun 13 23:19:37 2023 +0800|Revert "wifi: unify signal view"
+f45ed56|Further|Mon Jan 15 02:32:09 2024 +0800|luci-fwknopd: Update gen-qr.sh (#258)
 </details>
