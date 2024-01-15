@@ -117,27 +117,27 @@
 ![image](/source/function.png)
 
 
-## wsl2op.sh本地自动编译shell脚本说明
+## wsl2op_lean.sh本地自动编译shell脚本说明
 
 运行前请确保你的编译环境已经安装Lean源码中要求的编译环境，并且使用非root用户执行。
 
 ### 执行编译方式(非Root用户)
 
 ```shell
-cd /home/$USER && (if [ ! -d "/home/$USER/OpenWrtAction" ]; then git clone https://github.com/smallprogram/OpenWrtAction.git; else cd /home/$USER/OpenWrtAction; git stash; git stash drop; git pull; fi;) && cd /home/$USER/OpenWrtAction && bash wsl2op.sh
+cd /home/$USER && (if [ ! -d "/home/$USER/OpenWrtAction" ]; then git clone https://github.com/smallprogram/OpenWrtAction.git; else cd /home/$USER/OpenWrtAction; git stash; git stash drop; git pull; fi;) && cd /home/$USER/OpenWrtAction && bash wsl2op_lean.sh
 ```
 
 ### 自动化编译参数
-可在 `wsl2op.sh` 后加入两个可选参数：
+可在 `wsl2op_lean.sh` 后加入两个可选参数：
 
-`bash wsl2op.sh [configname] [distclean] [singleCompile]`
+`bash wsl2op_lean.sh [configname] [distclean] [singleCompile]`
 
-- `[configname]`为配置文件名称，例如`bash wsl2op.sh X86.config`,会自动默认以X86配置编译。
-- `[distclean]`为启用distclean编译开关，例如`bash wsl2op.sh X86.config 1`,会自动默认以X86配置编译，并启用distclean模式。
-- `[singleCompile]`为启用单线程编译开关，例如`bash wsl2op.sh X86.config 1 1`,会自动默认以X86配置和distclean模式和单线程方式进行编译
+- `[configname]`为配置文件名称，例如`bash wsl2op_lean.sh X86.config`,会自动默认以X86配置编译。
+- `[distclean]`为启用distclean编译开关，例如`bash wsl2op_lean.sh X86.config 1`,会自动默认以X86配置编译，并启用distclean模式。
+- `[singleCompile]`为启用单线程编译开关，例如`bash wsl2op_lean.sh X86.config 1 1`,会自动默认以X86配置和distclean模式和单线程方式进行编译
 
-注意如果要使用`[distclean]`参数，必须要先加入`[configname]`参数，如果想不指定`[configname]`,可使用空格代替，例如`bash wsl2op.sh '' 1`,单线程编译也是如此。
-如果不指定任何参数，也可以直接执行`bash wsl2op.sh`。在导航中选择即可。
+注意如果要使用`[distclean]`参数，必须要先加入`[configname]`参数，如果想不指定`[configname]`,可使用空格代替，例如`bash wsl2op_lean.sh '' 1`,单线程编译也是如此。
+如果不指定任何参数，也可以直接执行`bash wsl2op_lean.sh`。在导航中选择即可。
 
 > 首次编译推荐使用单线程模式编译。
 > 首次编译如果使用默认的多线程编译，有很大几率会编译报错。
