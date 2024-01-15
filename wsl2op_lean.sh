@@ -45,8 +45,8 @@
 # 编译环境中当前账户名字
 user_name=$USER
 # 默认lean源码文件夹名
-openwrt_dir=${openwrt_dir_front}${config_name}
 openwrt_dir_front=lean_
+openwrt_dir=${openwrt_dir_front}${config_name}
 # 默认OpenWrtAction的Config文件夹中的config文件名
 config_name=$1
 # 默认的config目录

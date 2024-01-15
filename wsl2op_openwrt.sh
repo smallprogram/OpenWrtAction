@@ -45,8 +45,8 @@
 # 编译环境中当前账户名字
 user_name=$USER
 # 默认lean源码文件夹名
-openwrt_dir=${openwrt_dir_front}${config_name}
 openwrt_dir_front=openwrt_
+openwrt_dir=${openwrt_dir_front}${config_name}
 # 默认OpenWrtAction的Config文件夹中的config文件名
 config_name=$1
 # 默认的config目录
@@ -449,9 +449,6 @@ function Func_ConfigList(){
     read -t $timer configNameInp
     if [ ! -n "$configNameInp" ]; then
         i=1
-        # configName=X86.config
-        # openwrt_dir=lede_$configName
-        # echo "135 configName的值："$configName
         for context in ${config_list[*]}; 
         do 
             if [[ $context == $config_name ]]; then
