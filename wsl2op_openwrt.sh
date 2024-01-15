@@ -689,6 +689,12 @@ function Func_Main(){
         cat /home/${user_name}/OpenWrtAction/$feeds_dir > /home/${user_name}/${openwrt_dir}/feeds.conf.default
         cd /home/${user_name}/${openwrt_dir}
 
+        Func_LogMessage "创建编译日志文件夹/home/${user_name}/${log_folder_name}/${folder_name}" "Create compilation log folder /home/${user_name}/${log_folder_name}/${folder_name}"
+        sleep 1s
+
+        mkdir -p /home/${user_name}/${log_folder_name}
+        mkdir /home/${user_name}/${log_folder_name}/${folder_name}
+
         Func_DIY1_Script
 
         Func_LogMessage "开始clean feeds...." "begin update feeds...."
