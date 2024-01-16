@@ -2,29 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e302ace38|coolsnowwolf|Mon Jan 15 17:40:44 2024 +0800|generic: refresh xt_FLOWOFFLOAD patch with new API
-cac1207d8|aakkll|Sun Jan 14 18:08:32 2024 +0800|kernel: bump 6.1 to 6.1.72 (#11769)
-156a1b67d|coolsnowwolf|Mon Jan 15 17:28:00 2024 +0800|netsupport.mk: add missing Kconfig for sched
-4ad82acf0|coolsnowwolf|Mon Jan 15 02:43:54 2024 +0800|revert: package: adds pcre2 to base
-766b0bc36|coolsnowwolf|Mon Jan 15 02:37:48 2024 +0800|Version update to R24.1.13
-1f7b499eb|coolsnowwolf|Mon Jan 15 02:15:50 2024 +0800|Revert "kernel: bump 6.1 to 6.1.72 (#11769)"
-945b472e9|coolsnowwolf|Mon Jan 15 01:40:12 2024 +0800|Update README.md loongarch64 info
-c2b9dbf31|coolsnowwolf|Mon Jan 15 01:27:42 2024 +0800|loongarch64: add wireless support by default
-c24837295|coolsnowwolf|Mon Jan 15 01:15:20 2024 +0800|mac80211: add loongarch64 and kernle 6.6 support
-f1803bc46|coolsnowwolf|Sun Jan 14 23:35:58 2024 +0800|loongarch64: fix image build
-4fb7370e0|coolsnowwolf|Sun Jan 14 23:16:29 2024 +0800|generic: fix loogarch64 kernel modules build
-eadf20fda|coolsnowwolf|Sun Jan 14 22:45:29 2024 +0800|toolchain/musl: add loogarch64 support
-f4405a959|coolsnowwolf|Sun Jan 14 21:47:34 2024 +0800|tools/zstd: update to 1.5.5
-2c67f6832|aakkll|Sun Jan 14 18:08:32 2024 +0800|kernel: bump 6.1 to 6.1.72 (#11769)
-6c05d9908|coolsnowwolf|Sun Jan 14 23:20:37 2024 +0800|package: fix compilation with musl 1.2.4
-b1816c7d0|coolsnowwolf|Sat Jan 13 13:50:40 2024 +0800|gpio-button-hotplug: fix kernel 5.4 support
-ce521963d|coolsnowwolf|Sat Jan 13 13:43:43 2024 +0800|package: adds pcre2 to base
-648202bb8|coolsnowwolf|Sat Jan 13 13:23:49 2024 +0800|e2fsprogs: Update to 1.45.6
-87b3c3e10|coolsnowwolf|Sat Jan 13 12:57:22 2024 +0800|kernel: bump 5.4 to 5.4.266
-bfb12d78c|coolsnowwolf|Fri Jan 12 14:20:18 2024 +0800|toolchain/musl: update to 1.2.4
-51459ab19|coolsnowwolf|Fri Jan 12 13:28:00 2024 +0800|toolchain: gdb: Add optional python support
-f426fce6c|coolsnowwolf|Fri Jan 12 10:34:28 2024 +0800|video.mk: add AMD Displaycard (RX580) support for loongarch64
-a5a63865f|coolsnowwolf|Fri Jan 12 10:23:48 2024 +0800|target: add loongarch64 support
-b055b3b40|coolsnowwolf|Fri Jan 12 10:18:22 2024 +0800|generic: init linux kernel 6.6 support
-c6c5c79e3|coolsnowwolf|Fri Jan 12 10:13:05 2024 +0800|target.mk: add GRUB2 EFI support for loongarch64
+9d7e32349|coolsnowwolf|Tue Jan 16 23:00:01 2024 +0800|kernel: bump 6.1 to 6.1.73
+19dba8a52|Miles Poupart|Tue Jan 16 22:48:52 2024 +0800|dwarves: bump to 1.25 (#11793)
+32a89b611|coolsnowwolf|Tue Jan 16 22:28:12 2024 +0800|generic: fix kernel 6.1 FLOWOFFLOAD for iptables support
 </details>

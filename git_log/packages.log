@@ -2,22 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-00f9b3be|coolsnowwolf|Mon Jan 15 22:11:09 2024 +0800|Merge pull request #759 from lxg2001/master
-c7e4045c|lxg2001|Mon Jan 15 18:01:06 2024 +0800|mariadb: fix compilation with musl 1.2.4
-6654fe65|coolsnowwolf|Mon Jan 15 17:48:49 2024 +0800|qemu: update to 8.1.2
-c0ce43a8|coolsnowwolf|Mon Jan 15 17:44:14 2024 +0800|Merge branch 'master' of https://github.com/coolsnowwolf/packages
-ac528f35|coolsnowwolf|Mon Jan 15 17:43:54 2024 +0800|nfs-kernel-server: fix compilation with musl 1.2.4
-9b782c36|coolsnowwolf|Mon Jan 15 17:37:39 2024 +0800|Merge pull request #758 from HHJLKK/master
-25d68325|HHJLKK|Mon Jan 15 14:05:57 2024 +0800|nebula: update to 1.8.2
-c31a814a|coolsnowwolf|Mon Jan 15 02:43:36 2024 +0800|revert: package: adds pcre2 to base
-28d68d7f|coolsnowwolf|Sun Jan 14 22:12:08 2024 +0800|Merge branch 'master' of https://github.com/coolsnowwolf/packages
-cc920473|coolsnowwolf|Sun Jan 14 22:11:29 2024 +0800|efivar: fix compilation with musl 1.2.4
-881c0be6|coolsnowwolf|Sun Jan 14 19:00:18 2024 +0800|Merge pull request #757 from ywt114/patch-1
-f2b9ae57|ywt114|Sun Jan 14 18:56:50 2024 +0800|xupnpd: fix compilation with musl 1.2.4
-8b2f4e59|Hex|Sun Jan 14 03:33:36 2024 +0800|btrfs-progs: fix compilation with musl 1.2.4 (#756)
-ceb8a218|Hex|Sun Jan 14 03:33:24 2024 +0800|perl: fix compilation with musl 1.2.4 (#755)
-d82c028f|Hex|Sun Jan 14 03:33:05 2024 +0800|btop: fix compilation with musl 1.2.4 (#754)
-98896f24|vant|Sun Jan 14 03:30:27 2024 +0800|tailscale: update to 1.44.3 (#753)
-24e31cc5|coolsnowwolf|Sat Jan 13 14:06:42 2024 +0800|coreutils: update to 9.3
-4e2a9c59|coolsnowwolf|Sat Jan 13 13:44:14 2024 +0800|package: adds pcre2 to base
+e7280b2a|coolsnowwolf|Tue Jan 16 23:03:46 2024 +0800|rust: Update to 1.75.0
 </details>

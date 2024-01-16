@@ -1,8 +1,0 @@
-<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-edb9e0f|coolsnowwolf|Mon Jan 15 01:03:37 2024 +0800|shadowsocksr-libev: bump version
-24c4890|coolsnowwolf|Mon Jan 15 00:45:43 2024 +0800|shadowsocksr-libev: fix build with GCC12/13
-311f6ef|ちか|Sat Jan 13 00:34:31 2024 +0800|luci-app-ssr-plus: add Xray `DNS` `Log` Setting options Simplifying `Mux` Options (#1374)
-</details>
