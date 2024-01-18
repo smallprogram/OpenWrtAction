@@ -1,0 +1,11 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ab582e396|coolsnowwolf|Thu Jan 18 15:18:55 2024 +0800|Update README.md for Phytium
+a462d2b75|HunZI|Thu Jan 18 15:16:24 2024 +0800|target: add phytium support (#11798)
+03b416d21|John Audia|Mon Jan 15 15:25:53 2024 -0500|kernel: bump 5.15 to 5.15.147
+390d8c540|Christian Marangi|Mon Jan 15 22:47:20 2024 +0100|generic: 6.1: backport FIELD_PREP_CONST patch
+386201a32|Christian Marangi|Mon Jan 15 19:53:06 2024 +0100|generic: 6.1: renumber MediaTek SGMII PCS patch
+93fc272fc|Chen Minqiang|Tue Jan 16 17:20:04 2024 +0800|kernel: ksmbd: only v2 leases handle the directory
+</details>
