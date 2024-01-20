@@ -1,9 +1,15 @@
+<p align="center">
+
 ![](pic/openwrt-logo.jpg)
+
+</p>
+
+<div align="center">
 
 [![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Fsmallprogram%2FOpenWrtAction&countColor=%2344cc11&style=flat-square)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fsmallprogram%2FOpenWrtAction) ![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/total?style=flat-square) ![](https://img.shields.io/github/repo-size/smallprogram/OpenWrtAction?style=flat-square) ![](https://img.shields.io/github/release-date/smallprogram/OpenWrtAction?style=flat-square) ![](https://img.shields.io/github/last-commit/smallprogram/OpenWrtAction?style=flat-square) [![](https://img.shields.io/github/license/smallprogram/OpenWrtAction?style=flat-square)](https://github.com/smallprogram/OpenWrtAction/blob/main/LICENSE?style=flat-square)
 [![](https://img.shields.io/badge/source%20code-Lean-green?style=flat-square&logo=GitHub)](https://github.com/coolsnowwolf/lede) [![](https://img.shields.io/badge/update%20checker-blueviolet?style=flat-square&logo=Checkmarx)](https://github.com/smallprogram/OpenWrtAction/releases) 
 
-![](https://img.shields.io/github/watchers/smallprogram/OpenWrtAction?style=social) ![](https://img.shields.io/github/forks/smallprogram/OpenWrtAction?style=social) ![](https://img.shields.io/github/stars/smallprogram/OpenWrtAction?style=social)
+</div>
 
 
 
@@ -27,7 +33,6 @@
     - [execution way](#execution-way)
       - [First execution](#first-execution)
       - [Second execution](#second-execution)
-    - [Detailed execution process](#detailed-execution-process)
 
 # Lean Openwrt GitHubAction
 
@@ -120,15 +125,14 @@ Of course, if you find it troublesome, you can also directly PR your config to m
 cd
 git clone https://github.com/smallprogram/OpenWrtAction.git
 cd OpenWrtAction
-bash wsl2op.sh
+bash wsl2op_lean.sh
 ```
 #### Second execution
 ```shell
 cd
 cd OpenWrtAction
 git pull
-bash wsl2op.sh
+bash wsl2op_lean.sh
 ```
 
-### Detailed execution process
-![image](/source/wsl2op.png)
+
