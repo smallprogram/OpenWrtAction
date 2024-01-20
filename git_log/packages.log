@@ -1,0 +1,7 @@
+<details> <summary> <b>lean package new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+72566f49|coolsnowwolf|Sat Jan 20 21:46:25 2024 +0800|nspr: fix musl compile
+78971139|coolsnowwolf|Sat Jan 20 21:44:38 2024 +0800|perl: add support for riscv64
+</details>
