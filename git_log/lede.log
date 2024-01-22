@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ce91432bb|HHJLKK|Sun Jan 21 16:00:17 2024 +0800|mediatek: add support for IMOU LC-HX3001 (#11812)
-64ed808de|CheWei Chien|Thu Jan 4 13:28:40 2024 +0800|kernel: add kmod-leds-lp5562 and lp55xx-common
-8d0d1a493|coolsnowwolf|Sat Jan 20 22:35:26 2024 +0800|mediatek: add CMCC RAX3000M NAND/eMMC Uboot-mod support
+311b20a4c|coolsnowwolf|Mon Jan 22 14:39:21 2024 +0800|uqmi: fix build with arm64 in GCC11
 </details>
