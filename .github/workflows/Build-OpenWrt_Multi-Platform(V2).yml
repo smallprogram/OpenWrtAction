@@ -266,7 +266,7 @@ jobs:
           df -hT
 
       - name: Upload Error Log To Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         if:  ${{ failure() }}
         with:
           name: log_error_${{ matrix.platforms }}_compile_tools_${{ needs.job_init.outputs.output_release_tag }}
@@ -315,7 +315,7 @@ jobs:
           df -hT
 
       - name: Upload Error Log To Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         if: ${{ failure() }}
         with:
           name: log_error_${{ matrix.platforms }}_compile_toolchain_${{ needs.job_init.outputs.output_release_tag }}
@@ -340,7 +340,7 @@ jobs:
           echo "status=success" >> $GITHUB_OUTPUT
 
       - name: Upload Toolchain To Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         if: steps.generate_image.outputs.status == 'success'
         with:
           name: TOOLCHAIN_IMAGE_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
@@ -480,7 +480,7 @@ jobs:
         df -hT
 
     - name: Upload Error Log To Artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
       if: ${{ failure() }}
       with:
         name: log_error_${{ matrix.platforms }}_generate_frimware_${{ needs.job_init.outputs.output_release_tag }}
@@ -504,7 +504,7 @@ jobs:
       run: df -hT
 
     - name: Upload Bin Directory
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
       if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
       with:
         name: OpenWrt_bin_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
@@ -534,7 +534,7 @@ jobs:
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Upload Firmware Directory
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
       if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && !cancelled()
       with:
         name: OpenWrt_firmware_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
@@ -616,7 +616,7 @@ jobs:
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Upload Tags To Artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
       if: steps.tag.outputs.status == 'success'
       with:
         name: release_tag_${{ needs.job_init.outputs.output_release_tag }}
@@ -644,7 +644,7 @@ jobs:
           echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Upload Git Log To Artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v3
       if: steps.git_log.outputs.status == 'success'
       with:
         name: git_log_${{ needs.job_init.outputs.output_release_tag }}
