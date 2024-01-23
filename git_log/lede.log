@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-311b20a4c|coolsnowwolf|Mon Jan 22 14:39:21 2024 +0800|uqmi: fix build with arm64 in GCC11
+a5823d43b|Beginner|Tue Jan 23 00:30:12 2024 +0800|kernel: bump 6.6 to 6.6.13 (#11817)
+b15250f0b|Beginner|Tue Jan 23 00:20:07 2024 +0800|kernel: bump 5.10 to 5.10.208 (#11815)
+1975f1321|coolsnowwolf|Wed Jan 17 23:19:27 2024 +0800|umbim/uqmi: sync with upstream
 </details>
