@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7515f84ea|coolsnowwolf|Fri Jan 19 23:15:22 2024 +0800|ipq806x: switch to kernel 5.10
-b23965cfb|coolsnowwolf|Mon Dec 18 23:15:01 2023 +0800|linux-firmware: update to 20231211
+974533966|coolsnowwolf|Thu Jan 25 12:02:56 2024 +0800|x86: add linux kernel 6.6 support
 </details>
