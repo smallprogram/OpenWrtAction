@@ -1,7 +1,0 @@
-<details> <summary> <b>lean package new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-2a1f2f82|coolsnowwolf|Fri Jan 26 12:58:24 2024 +0800|Merge branch 'master' of https://github.com/coolsnowwolf/packages
-1257305f|coolsnowwolf|Fri Jan 26 12:58:05 2024 +0800|xtables-addons: fix build with kernel 6.6
-</details>
