@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-14e928eea|coolsnowwolf|Thu Jan 25 20:29:27 2024 +0800|modules: fix usb-net support for kernel 6.6
-e7298575b|coolsnowwolf|Thu Jan 25 20:17:05 2024 +0800|modules: fix nfs and ksmbd build with kernel 6.6
-6022ecc6b|coolsnowwolf|Thu Jan 25 20:00:54 2024 +0800|modules: fix nls.mk support for linux 6.6
+4b0ca23c8|coolsnowwolf|Fri Jan 26 13:13:56 2024 +0800|kernel: refresh kernel 6.6 config
+781ce8d14|aakkll|Fri Jan 26 12:42:34 2024 +0800|kernel: bump 6.6 to 6.6.14 (#11827)
 </details>
