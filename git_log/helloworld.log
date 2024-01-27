@@ -1,9 +1,0 @@
-<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-ea2a48d|coolsnowwolf|Sat Jan 27 12:24:03 2024 +0800|Merge pull request #1387 from fw876/main
-f3ecd43|coolsnowwolf|Sat Jan 27 12:18:39 2024 +0800|v2ray-geodata: remove package
-0bf0486|coolsnowwolf|Wed Dec 6 01:34:13 2023 +0800|Merge pull request #1350 from Yonsm/main
-63de76b|Yonsm|Sat Dec 2 23:50:31 2023 +0800|Add libopenssl-legacy to fix chipher failure on openwrt 23 with openssl 3.0
-</details>

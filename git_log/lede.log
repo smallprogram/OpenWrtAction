@@ -3,5 +3,4 @@
 SHA|Author|Date|Message
 -|-|-|-
 346b2da69|Felix Fietkau|Tue Jan 16 19:29:52 2024 +0100|mediatek: fix ethernet rx hang issue on MT7981/MT7986
-9a642a661|wi11iamzhao|Sat Jan 27 12:21:56 2024 +0800|Revert 'x86: increase bios boot partition to 1 MiB (#11741)' (#11818)
 </details>
