@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-87b840818|coolsnowwolf|Fri Jan 26 17:58:35 2024 +0800|mt76: add linux kernel 6.6 support
-460dc3039|coolsnowwolf|Fri Jan 26 17:42:01 2024 +0800|rockchip: add photonicat-firmware for photonicat wireless
+053f193d0|Beginner|Sat Jan 27 08:03:21 2024 +0800|kernel: bump 6.1 to 6.1.75 (#11830)
+ab07e6a93|Beginner|Sat Jan 27 08:02:23 2024 +0800|kernel: bump 5.4 to 5.4.268 (#11834)
+edb87675d|Beginner|Sat Jan 27 08:01:24 2024 +0800|kernel: bump 5.15 to 5.15.148 (#11832)
+a96f1c3ec|Beginner|Sat Jan 27 08:00:35 2024 +0800|kernel: bump 5.10 to 5.10.209 (#11833)
 </details>
