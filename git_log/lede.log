@@ -1,6 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-346b2da69|Felix Fietkau|Tue Jan 16 19:29:52 2024 +0100|mediatek: fix ethernet rx hang issue on MT7981/MT7986
-</details>
