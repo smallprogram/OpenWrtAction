@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-26a3ebc|Beginner|Sun Jan 28 03:22:02 2024 +0800|hysteria: update to 2.2.4 (#1390)
+2729e74|coolsnowwolf|Sun Jan 28 14:48:29 2024 +0800|Merge pull request #1388 from fw876/naive
+8866fe8|coolsnowwolf|Sun Jan 28 14:48:14 2024 +0800|Merge pull request #1389 from fw876/gn
+11c5a52|zxlhhyccc|Sat Jan 27 18:29:23 2024 +0000|gn: update to git HEAD
+97b62ac|zxlhhyccc|Sat Jan 27 18:27:09 2024 +0000|naiveproxy: update to 121.0.6167.71-1
 </details>

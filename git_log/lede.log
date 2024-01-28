@@ -1,0 +1,8 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+8a89f464c|coolsnowwolf|Thu Oct 13 23:16:06 2022 +0800|x86: fix sysupgrade failure
+7fd1b241b|coolsnowwolf|Wed Jan 24 23:38:35 2024 +0800|Fix photonicat-firmware dependencies
+9a642a661|wi11iamzhao|Sat Jan 27 12:21:56 2024 +0800|Revert 'x86: increase bios boot partition to 1 MiB (#11741)' (#11818)
+</details>
