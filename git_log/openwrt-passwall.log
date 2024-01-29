@@ -1,9 +1,0 @@
-<details> <summary> <b>passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-525d186|xiaorouji|Mon Jan 29 01:51:32 2024 +0800|luci: 4.73
-cb07c6c|xiaorouji|Mon Jan 29 01:36:47 2024 +0800|luci: optimization
-ec0e61a|xiaorouji|Sun Jan 28 23:49:39 2024 +0800|luci: fix URI Scheme bug
-b9e3f36|xiaorouji|Wed Jan 10 16:54:55 2024 +0800|luci: sing-box 1.8.0 Migrate cache file options
-</details>

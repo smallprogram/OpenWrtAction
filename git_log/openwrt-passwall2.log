@@ -1,8 +1,0 @@
-<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-56076dc|xiaorouji|Mon Jan 29 03:10:42 2024 +0800|luci: 1.25
-b7e0256|xiaorouji|Mon Jan 29 03:08:46 2024 +0800|luci: optimization
-7046135|xiaorouji|Mon Jan 29 02:53:08 2024 +0800|luci: fix URI Scheme bug
-</details>
