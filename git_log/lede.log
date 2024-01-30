@@ -2,5 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+e4dedaf40|coolsnowwolf|Sun Jan 21 23:18:03 2024 +0800|Add support to build qualcommax image
+5a7493773|coolsnowwolf|Sun Dec 31 23:17:38 2023 +0800|ath11k-firmware: add ipq6018 support
+b7fcf33b0|coolsnowwolf|Tue Jan 30 17:00:15 2024 +0800|ipq60xx: rename target to qualcommax
+8fcf7f091|coolsnowwolf|Tue Jan 30 11:00:16 2024 +0800|ipq807x: rename target to qualcommax
 51a154dce|coolsnowwolf|Tue Jan 30 03:41:22 2024 +0800|ipq-wifi: add support for qualcommax target
 </details>
