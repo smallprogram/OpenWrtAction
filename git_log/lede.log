@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cabbb92ab|coolsnowwolf|Sun Oct 15 23:40:49 2023 +0800|mac80211: ath11k: add ipq60xx support
-8bad26fbd|coolsnowwolf|Fri Dec 8 23:29:29 2023 +0800|package: support qualcommax target
-2feb51efe|coolsnowwolf|Sat Jul 23 11:03:02 2022 +0800|Fix k3-firmware dependencies
+51a154dce|coolsnowwolf|Tue Jan 30 03:41:22 2024 +0800|ipq-wifi: add support for qualcommax target
 </details>
