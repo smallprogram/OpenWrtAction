@@ -2,9 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e4dedaf40|coolsnowwolf|Sun Jan 21 23:18:03 2024 +0800|Add support to build qualcommax image
-5a7493773|coolsnowwolf|Sun Dec 31 23:17:38 2023 +0800|ath11k-firmware: add ipq6018 support
-b7fcf33b0|coolsnowwolf|Tue Jan 30 17:00:15 2024 +0800|ipq60xx: rename target to qualcommax
-8fcf7f091|coolsnowwolf|Tue Jan 30 11:00:16 2024 +0800|ipq807x: rename target to qualcommax
-51a154dce|coolsnowwolf|Tue Jan 30 03:41:22 2024 +0800|ipq-wifi: add support for qualcommax target
+e59e80698|coolsnowwolf|Wed Jan 31 02:50:02 2024 +0800|ipq60xx: add JDCloud AX1800 Pro support
+6c52d1ded|aiamadeus|Sun Dec 10 23:25:08 2023 +0800|ipq60xx: add GL.iNet GL-AX1800 support
 </details>

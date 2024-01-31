@@ -1,0 +1,7 @@
+<details> <summary> <b>lean package new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+7d82ca32|coolsnowwolf|Wed Jan 31 01:37:32 2024 +0800|Merge branch 'master' of https://github.com/coolsnowwolf/packages
+84e69624|coolsnowwolf|Wed Jan 31 01:37:19 2024 +0800|libxslt: fix build with gcc8.x
+</details>
