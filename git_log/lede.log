@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+299db83de|Arimune|Wed Jan 31 12:26:54 2024 +0800|Add support for Marvell 88W8897 SDIO (#11853)
+2843c0b91|aiamadeus|Sun Jan 21 23:20:10 2024 +0800|gpio-button-hotplug: fix probe failed
+e0ea643c5|aiamadeus|Mon Jan 8 23:15:10 2024 +0800|ipq60xx: add 1.5GHz CPU frequency
 e59e80698|coolsnowwolf|Wed Jan 31 02:50:02 2024 +0800|ipq60xx: add JDCloud AX1800 Pro support
-6c52d1ded|aiamadeus|Sun Dec 10 23:25:08 2023 +0800|ipq60xx: add GL.iNet GL-AX1800 support
 </details>
