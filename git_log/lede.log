@@ -1,0 +1,7 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d1f7b7d26|Daniel Golle|Thu Sep 28 19:13:23 2023 +0100|kernel: modules: package MT7986 audio drivers
+e93070740|Daniel Golle|Mon Dec 11 00:24:40 2023 +0000|kernel: modules: break-out WM8960 codec module
+</details>

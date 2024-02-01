@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt telephony new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-51c6f58|micmac1|Wed Jan 31 18:35:54 2024 +0100|Merge pull request #856 from micmac1/sipp-372
-352384f|micmac1|Wed Jan 31 18:35:06 2024 +0100|Merge pull request #788 from guijan/pcapsipdump-libobsd
-7e66d0e|Sebastian Kemper|Sun Jan 21 15:15:08 2024 +0100|sipp: bump to 3.7.2
-1d3ed80|Guilherme Janczak|Thu Nov 3 21:13:39 2022 +0000|pcapsipdump: fix linking against libobsd
-</details>
