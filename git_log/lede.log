@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-458735dec|Beginner|Fri Feb 2 11:01:16 2024 +0800|kernel: bump 6.6 to 6.6.15 (#11857)
-e3811adc6|Beginner|Fri Feb 2 11:00:06 2024 +0800|kernel: bump 6.1 to 6.1.76 (#11858)
+63c106fd8|coolsnowwolf|Fri Feb 2 23:16:33 2024 +0800|mediatek: fix CMCC RAX3000M  eMMC version sysupgrade
+c8656b43b|coolsnowwolf|Fri Feb 2 17:53:57 2024 +0800|Version update to R24.2.2
+7d41f4a37|coolsnowwolf|Fri Feb 2 17:42:15 2024 +0800|mediatek: filogic: add support for CMCC RAX3000M (Nand and eMMC version)
 </details>
