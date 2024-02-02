@@ -1,0 +1,7 @@
+<details> <summary> <b>passwall packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b68bd36|github-actions[bot]|Fri Feb 2 15:05:58 2024 +0800|shadowsocks-rust: update to 1.17.2 (#120)
+a1b9f47|Beginner|Fri Feb 2 12:36:09 2024 +0800|action: add `shadowsocks-rust` auto update (#119)
+</details>

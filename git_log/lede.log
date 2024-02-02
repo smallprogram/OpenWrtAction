@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d1f7b7d26|Daniel Golle|Thu Sep 28 19:13:23 2023 +0100|kernel: modules: package MT7986 audio drivers
-e93070740|Daniel Golle|Mon Dec 11 00:24:40 2023 +0000|kernel: modules: break-out WM8960 codec module
+458735dec|Beginner|Fri Feb 2 11:01:16 2024 +0800|kernel: bump 6.6 to 6.6.15 (#11857)
+e3811adc6|Beginner|Fri Feb 2 11:00:06 2024 +0800|kernel: bump 6.1 to 6.1.76 (#11858)
 </details>
