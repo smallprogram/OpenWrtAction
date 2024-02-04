@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt routing new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-6a7a1a5|Sven Eckelmann|Fri Feb 2 22:46:09 2024 +0100|batman-adv: update to version 2024.0
-5b1caf1|Sven Eckelmann|Fri Feb 2 22:45:32 2024 +0100|batctl: update to version 2024.0
-b40ad19|Sven Eckelmann|Fri Feb 2 22:44:57 2024 +0100|alfred: update to version 2024.0
-</details>

@@ -2,11 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-eb3e9ad2e|coolsnowwolf|Sat Feb 3 21:31:05 2024 +0800|mediatek: filogic: add support for CMCC RAX3000M (NAND and eMMC version)
-6606bb39b|aiamadeus|Fri Dec 15 23:06:38 2023 +0800|mediatek: add support for ABT ASR3000
-64f24a233|Ivan Pavlov|Fri Feb 2 08:46:52 2024 +0300|openssl: update to 3.0.13
-63c106fd8|coolsnowwolf|Fri Feb 2 23:16:33 2024 +0800|mediatek: fix CMCC RAX3000M  eMMC version sysupgrade
-9ccbfda2b|coolsnowwolf|Fri Feb 2 17:53:57 2024 +0800|Version update to R24.2.2
-c8656b43b|coolsnowwolf|Fri Feb 2 17:53:57 2024 +0800|Version update to R24.2.2
-7d41f4a37|coolsnowwolf|Fri Feb 2 17:42:15 2024 +0800|mediatek: filogic: add support for CMCC RAX3000M (Nand and eMMC version)
+9ea2a9923|Daniel Golle|Sun Jun 4 19:55:11 2023 +0100|mediatek: use updated device tree overlay mechanism for BPi-R64
+faded141e|Daniel Golle|Sun Jun 4 18:55:17 2023 +0100|uboot-mediatek: adapt BPi-R3 and BPi-R64 to new device tree overlay
 </details>
