@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9ea2a9923|Daniel Golle|Sun Jun 4 19:55:11 2023 +0100|mediatek: use updated device tree overlay mechanism for BPi-R64
-faded141e|Daniel Golle|Sun Jun 4 18:55:17 2023 +0100|uboot-mediatek: adapt BPi-R3 and BPi-R64 to new device tree overlay
+b87a11fc4|Daniel Golle|Mon Mar 21 23:31:38 2022 +0000|kernel: generic: use chosen bootconf in FIT partition parser
+907233353|Daniel Golle|Tue Jan 11 00:00:36 2022 +0000|generic: deny write to uImage.FIT sub-image partitions
 </details>
