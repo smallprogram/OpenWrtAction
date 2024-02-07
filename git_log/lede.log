@@ -1,6 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-0e8b0cf63|Daniel Golle|Sun Jun 4 15:57:25 2023 +0100|image: improve uImage.FIT device tree overlay support
-</details>
