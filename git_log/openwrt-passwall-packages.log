@@ -1,0 +1,6 @@
+<details> <summary> <b>passwall packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+048ff6a|MoetaYuko|Wed Feb 7 22:21:47 2024 +0800|gn: readd patch to build with gcc (#124)
+</details>
