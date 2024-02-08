@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+4bb8b87ab|coolsnowwolf|Thu Feb 8 23:33:43 2024 +0800|mediatek: drop the use of device tree overlays on mt7986a-rfb board
+1dbf71990|Daniel Golle|Sun Jun 4 15:56:15 2023 +0100|mediatek: sync MT7986 device trees with upstream
+db2706825|Daniel Golle|Wed Mar 23 19:29:07 2022 +0000|kernel: generic: improve FIT partition parser
 ae263d5ce|coolsnowwolf|Thu Feb 8 13:10:48 2024 +0800|mediatek: fix dts overlay support for Bananapi BPi-R3
 </details>
