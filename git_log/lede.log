@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-24e2cfc64|arrio464|Wed Feb 7 19:41:57 2024 +0800|upx: bump to v4.2.2 (#11878)
+ae263d5ce|coolsnowwolf|Thu Feb 8 13:10:48 2024 +0800|mediatek: fix dts overlay support for Bananapi BPi-R3
 </details>
