@@ -1,0 +1,8 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+801b8fdb8|Daniel Golle|Tue Jun 27 02:15:55 2023 +0200|mediatek: adapt files and patches for Linux 6.1
+69ebf02aa|Daniel Golle|Tue Jun 27 02:06:47 2023 +0200|mediatek: copy patches and files for Linux 6.1
+4bb8b87ab|coolsnowwolf|Thu Feb 8 23:33:43 2024 +0800|mediatek: drop the use of device tree overlays on mt7986a-rfb board
+</details>
