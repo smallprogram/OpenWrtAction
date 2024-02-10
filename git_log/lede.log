@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-801b8fdb8|Daniel Golle|Tue Jun 27 02:15:55 2023 +0200|mediatek: adapt files and patches for Linux 6.1
-69ebf02aa|Daniel Golle|Tue Jun 27 02:06:47 2023 +0200|mediatek: copy patches and files for Linux 6.1
-4bb8b87ab|coolsnowwolf|Thu Feb 8 23:33:43 2024 +0800|mediatek: drop the use of device tree overlays on mt7986a-rfb board
+4115f464a|Daniel Golle|Sun Jun 4 18:21:29 2023 +0100|generic: use only first element in bootconf for uImage.FIT
+9f86d11f1|Daniel Golle|Wed Apr 20 15:19:59 2022 +0100|kernel: update FIT partition parser to new property name
 </details>
