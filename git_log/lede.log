@@ -1,7 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-4115f464a|Daniel Golle|Sun Jun 4 18:21:29 2023 +0100|generic: use only first element in bootconf for uImage.FIT
-9f86d11f1|Daniel Golle|Wed Apr 20 15:19:59 2022 +0100|kernel: update FIT partition parser to new property name
-</details>
