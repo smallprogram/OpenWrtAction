@@ -1,0 +1,9 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a47cff2bc|Daniel Golle|Tue Jun 6 13:05:50 2023 +0100|mediatek: use DEVICE_DTC_FLAGS and drop DTC_FLAGS
+5f201f97e|Daniel Golle|Tue Jun 6 13:04:08 2023 +0100|mediatek: use DEVICE_DTC_FLAGS for BPi-R64
+2d309fec9|Daniel Golle|Tue Jun 6 13:01:15 2023 +0100|image: introduce DEVICE_DTC_FLAGS and DEVICE_DTCO_FLAGS
+b018b4df3|Daniel Golle|Tue Jun 6 01:14:27 2023 +0100|mediatek: set new compat version if booted on R64 and R3
+</details>
