@@ -1,0 +1,6 @@
+<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+f352501|xiaorouji|Mon Feb 12 18:00:46 2024 +0800|luci: set Xray DNS nonIPQuery = drop
+</details>
