@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1eef526cb|Daniel Golle|Tue Jun 27 02:22:57 2023 +0200|mediatek: copy config-5.15 to config-6.1 for all subtargets
-e4165bcd1|Daniel Golle|Sun Jun 18 03:22:51 2023 +0200|mediatek: prepare old rtk switch driver for use with Linux 6.1
+ebbf93927|Daniel Golle|Sat Jun 17 22:10:26 2023 +0200|mediatek: expose testing Linux 6.1 testing kernel
+f2be6935f|Daniel Golle|Tue Jun 27 02:25:08 2023 +0200|mediatek: adapt kernel configuration for Linux 6.1
 </details>
