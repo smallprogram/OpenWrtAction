@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ebbf93927|Daniel Golle|Sat Jun 17 22:10:26 2023 +0200|mediatek: expose testing Linux 6.1 testing kernel
-f2be6935f|Daniel Golle|Tue Jun 27 02:25:08 2023 +0200|mediatek: adapt kernel configuration for Linux 6.1
+12c2bc20d|Daniel Golle|Sat Jul 8 17:21:27 2023 +0100|mediatek: use backported Ethernet PHY driver also for 5.15
+a7509fafb|Daniel Golle|Sat Jul 8 16:27:25 2023 +0100|mediatek: dts: mt7988a: wire-up mediatek,pio for PHY LEDs
 </details>
