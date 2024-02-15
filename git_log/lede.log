@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-12c2bc20d|Daniel Golle|Sat Jul 8 17:21:27 2023 +0100|mediatek: use backported Ethernet PHY driver also for 5.15
-a7509fafb|Daniel Golle|Sat Jul 8 16:27:25 2023 +0100|mediatek: dts: mt7988a: wire-up mediatek,pio for PHY LEDs
+87fe8bb38|Daniel Golle|Sun Aug 27 16:32:50 2023 +0100|mediatek: re-add missing patch for Linux 6.1
+d6bd2cab6|Daniel Golle|Fri Aug 25 14:00:09 2023 +0100|mediatek: re-add dropped properties on BPi-R3
 </details>
