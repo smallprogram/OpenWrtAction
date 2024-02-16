@@ -1,7 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-87fe8bb38|Daniel Golle|Sun Aug 27 16:32:50 2023 +0100|mediatek: re-add missing patch for Linux 6.1
-d6bd2cab6|Daniel Golle|Fri Aug 25 14:00:09 2023 +0100|mediatek: re-add dropped properties on BPi-R3
-</details>
