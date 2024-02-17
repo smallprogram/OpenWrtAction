@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-735ea0d11|Tony91590|Fri Feb 16 15:40:15 2024 +0100|mediatek: filogic: set special upgrade for Asus AX4200 (#11893)
+0ea4b6430|Beginner|Sat Feb 17 19:30:11 2024 +0800|kernel: bump 6.6 to 6.6.17 (#11895)
+6255b11d5|Beginner|Sat Feb 17 19:28:03 2024 +0800|kernel: bump 6.1 to 6.1.78 (#11894)
 </details>
