@@ -226,7 +226,7 @@ jobs:
   job_build:
     needs: job_init
     runs-on: ubuntu-latest
-    name: Build-${{ matrix.platforms }}
+    name: Build-OpenWrt-${{ matrix.platforms }}
     strategy:
       fail-fast: false
       matrix:
