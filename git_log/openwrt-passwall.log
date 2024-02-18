@@ -1,0 +1,7 @@
+<details> <summary> <b>passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+797e134|zhusir|Sun Feb 18 14:53:18 2024 +0800|luci: fixed check connect function (#2925)
+ebd3355|MoetaYuko|Sun Feb 18 14:30:36 2024 +0800|luci: select backend packages instead of depending on them (#2920)
+</details>
