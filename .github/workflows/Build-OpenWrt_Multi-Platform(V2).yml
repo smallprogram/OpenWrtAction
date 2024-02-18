@@ -292,40 +292,33 @@ jobs:
           name: Source_${{ needs.job_init.outputs.output_release_tag }}
           path: download
 
+      - name: Download Tags
+        uses: actions/download-artifact@v4
+        with:
+          name: release_tag_${{ needs.job_init.outputs.output_release_tag }}
+          path: download
+
       - name: File Extraction
         working-directory: /workdir
         run: |
           echo "source packages size:"
           ls -lh download/output.tar.gz
           tar -xzf download/output.tar.gz
-          rm -rf download/*
+          rm -rf download/output.tar.gz
+          cd download
+          echo "TAG_PATH=$PWD" >> $GITHUB_ENV
+          cd ..
           sudo chown -R $USER:$GROUPS /workdir/openwrt
           cd openwrt
           mkdir -p compile_log
           cd compile_log
           echo "LOGFILES=$PWD" >> $GITHUB_ENV
-
-      - name: Load Custom Feeds
-        run: |
-          [ -e $FEEDS_CONF ] && cp -r $FEEDS_CONF openwrt/feeds.conf.default
-          chmod +x $DIY_P1_SH
-          cd openwrt
-          ./scripts/feeds clean
-          $GITHUB_WORKSPACE/$DIY_P1_SH
-
-      - name: Update Feeds
-        run: cd openwrt && ./scripts/feeds update -a
-
-
-      - name: Install Feeds
-        run: cd openwrt && ./scripts/feeds install -a
+          
 
       - name: Load Configuration
         run: |
           [ -e $CONFIGS/${{ matrix.platforms }}.config ] && cp -r $CONFIGS/${{ matrix.platforms }}.config openwrt/.config
-          chmod +x $DIY_P2_SH
           cd openwrt
-          $GITHUB_WORKSPACE/$DIY_P2_SH
           make defconfig
 
       - name: Download Package
@@ -544,8 +537,6 @@ jobs:
           name: OpenWrt_firmware_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
           path: ${{ env.FIRMWARE }}
 
-
-
       - name: Upload Firmware To Release
         uses: softprops/action-gh-release@v0.1.15
         if: steps.organize.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
@@ -553,7 +544,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ needs.job_init.outputs.output_release_tag }}
-          body_path: release.txt
+          body_path: ${{ env.TAG_PATH }}/release.txt
           files: ${{ env.FIRMWARE }}/*
 
   job_organize_git_log:
