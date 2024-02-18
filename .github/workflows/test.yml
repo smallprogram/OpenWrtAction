@@ -57,10 +57,12 @@ jobs:
           echo "## :mega:Update content" >> release.txt
 
 
-      - name: Upload Firmware To Release
-        uses: softprops/action-gh-release@master
+      - name: Remove old Releases
+        uses: dev-drprasad/delete-older-releases@master
+        with:
+          keep_latest: 5
+          keep_min_download_counts: 2
+          delete_expired_data: 60
+          delete_tags: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: test
-          body_path: release.txt
