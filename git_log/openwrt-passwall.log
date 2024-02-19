@@ -2,13 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-44243d6|xiaorouji|Mon Feb 19 16:03:39 2024 +0800|luci: bump version
-52d2978|ヒカル|Sun Feb 18 21:37:04 2024 +0800|luci: check_connect use HTTPS
-cad9fab|xiaorouji|Mon Feb 19 16:03:15 2024 +0800|Revert "luci: fixed check connect function (#2925)"
-7cefa82|zhusir|Sun Feb 18 14:53:18 2024 +0800|luci: fixed check connect function (#2925)
-da89528|xiaorouji|Mon Jan 29 02:24:49 2024 +0800|luci: drop Trojan-Go
-1c3a716|xiaorouji|Mon Jan 29 02:16:49 2024 +0800|luci: drop Brook
-bc0bce7|xiaorouji|Thu Jan 11 04:08:37 2024 +0800|luci: optimization and adjust proxy mode logic
-85e2fd0|ヒカル|Sun Feb 18 21:37:04 2024 +0800|luci: fix connect_status by curl  (#2926)
-797e134|zhusir|Sun Feb 18 14:53:18 2024 +0800|luci: fixed check connect function (#2925)
+42d9c68|Ting Yang|Mon Feb 19 18:19:31 2024 +0800|luci: add `c.mi.com` to proxy list
 </details>

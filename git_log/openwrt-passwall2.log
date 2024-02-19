@@ -1,0 +1,7 @@
+<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6d99774|xiaorouji|Mon Feb 19 23:20:15 2024 +0800|luci: check_connect use HTTPS
+384bf39|xiaorouji|Mon Feb 19 23:17:46 2024 +0800|luci: add Xray `mptcp` option support
+</details>
