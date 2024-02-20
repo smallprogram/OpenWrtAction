@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-eaa0b4f0c|Janusz Dziedzic|Thu Feb 1 09:37:54 2024 +0100|linux-firmware: intel: add BE200 wifi firmware
+1c57996f6|coolsnowwolf|Tue Feb 20 00:44:02 2024 +0800|target: enable crypto-sha512 by default
+7f7562ee7|coolsnowwolf|Tue Feb 20 00:18:02 2024 +0800|grub2: fix EFI support for armvirt
+586df2917|Christian Marangi|Thu Feb 8 00:49:27 2024 +0100|kernel-build.mk: add support for compiling only DTS
 </details>
