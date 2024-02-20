@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a81da68|xiaorouji|Tue Feb 20 01:40:25 2024 +0800|luci: 1.26
-1d10eb4|xiaorouji|Tue Feb 20 01:20:49 2024 +0800|luci: Xray Fragment
-20f1bb5|bowhorse|Mon Feb 19 02:02:01 2024 -0200|luci: Add Xray Fragment block to outbounds table (#486)
-7c1bb40|bowhorse|Mon Feb 19 01:47:06 2024 -0200|luci: Add Xray fragment front-end options (#486)
+9e892fd|zhusir|Tue Feb 20 16:26:45 2024 +0800|luci: update connect_status curl param
 </details>
