@@ -167,5 +167,5 @@ jobs:
       uses: peter-evans/repository-dispatch@main
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        event-type: OpenWrt Related Code Updates
+        event-type: openwrt_source_update
 

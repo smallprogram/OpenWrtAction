@@ -12,6 +12,7 @@ name: Build-OpenWrt_Multi-Platform(V2)
 
 on:
   repository_dispatch:
+    types: [openwrt_source_update]
   workflow_dispatch:
     inputs:
       ssh:
