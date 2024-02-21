@@ -504,15 +504,8 @@ jobs:
           for ((i = 0; i < ${#platforms[@]}; i++)); do
             if $is_success_compiled; then break; fi
             platform="${platforms[i]}"
-            row=$((i+17))s
-            echo "platform: $platform"
-            echo "row: $row"
-            echo "----------------------------------------------------------------"
             for item in "${name_conclusion_array[@]}"; do
               IFS='.' read -r name conclusion <<< "$item"
-              echo "Name: $name"
-              echo "Conclusion: $conclusion"
-              
               if [[ "$name" == "Build-OpenWrt-$platform" ]]; then
                 if [[ "$conclusion" == "success" ]]; then
                   is_success_compiled=true
@@ -521,6 +514,16 @@ jobs:
               fi
             done
           done
+
+          echo "-------------------build status--------------------------"
+          for item in "${name_conclusion_array[@]}"; do
+            IFS='.' read -r name conclusion <<< "$item"
+            echo "Name: $name"
+            echo "Conclusion: $conclusion"
+          done
+          echo "-----------------------------------------------------------"
+
+          
 
           if $is_success_compiled; then
             echo "status=success" >> $GITHUB_OUTPUT
@@ -694,19 +697,21 @@ jobs:
           name_conclusion_array=($(echo "$json_data" | jq -r '.jobs[] | select(.name | startswith("Build-OpenWrt-")) | "\(.name).\(.conclusion)"'))
 
           platforms=(X86 R5S R5C R4S R4SE R2S R2C H66K H68K H69K R66S R68S R_PI_3b R_PI_4b)
+
+          echo "-------------------build status--------------------------"
+          for item in "${name_conclusion_array[@]}"; do
+            IFS='.' read -r name conclusion <<< "$item"
+            echo "Name: $name"
+            echo "Conclusion: $conclusion"
+          done
+          echo "-----------------------------------------------------------"
           
           for ((i = 0; i < ${#platforms[@]}; i++)); do
             platform="${platforms[i]}"
             is_error=false
             row=$((i+17))s
-            echo "platform: $platform"
-            echo "row: $row"
-            echo "----------------------------------------------------------------"
             for item in "${name_conclusion_array[@]}"; do
-              IFS='.' read -r name conclusion <<< "$item"
-              echo "Name: $name"
-              echo "Conclusion: $conclusion"
-              
+              IFS='.' read -r name conclusion <<< "$item"          
               if [[ "$name" == "Build-OpenWrt-$platform" ]]; then
                 if [[ "$conclusion" == "success" ]]; then
                   break
@@ -716,9 +721,7 @@ jobs:
                 fi
               fi
             done
-            echo "----------------------------------------------------------------"
-
-            echo "is_error: $is_error"
+            
             if $is_error; then
               echo "is_error be true: $is_error"
               sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions\&logoColor=yellow/build-failure-red?logo=githubactions\&logoColor=red/" release.txt;
