@@ -43,26 +43,97 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
-  job_init: 
+  job_build:
     runs-on: ubuntu-latest
-    name: Build-Openwrt-Init
-    outputs:
-      output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
-      output_sha: ${{steps.commit.outputs.commit_hash }}
+    name: Build-OpenWrt-${{ matrix.platforms }}
+    strategy:
+      fail-fast: false
+      matrix:
+        platforms: [X86, R5S, R5C, R4S, R4SE, R2S, R2C, H66K, H68K, H69K, R66S, R68S, R_PI_3b, R_PI_4b]
     steps:
-      - id: gen_release_tag
+      - name: Initialization Environment
+        id: compile
         run: |
-          echo "release_tag=multi-platform_$(date +"%Y.%m.%d_%H.%M.%S")" >> $GITHUB_OUTPUT
-          sudo timedatectl set-timezone "$TZ"
-          echo "## :mega:Update content" >> release.txt
+            exit 1
+            # if [[ "${{ matrix.platforms }}" == "X86" ]]; then
+            #   exit 1   --如果修改为0，保证matrix都执行成功，那么job_test和job_organize_git_log才会执行
+            # else
+            #   exit 0
+            # fi
 
 
-      - name: Remove old Releases
-        uses: dev-drprasad/delete-older-releases@master
-        with:
-          keep_latest: 5
-          keep_min_download_counts: 2
-          delete_expired_data: 60
-          delete_tags: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  build_status_flag:
+    needs: job_build
+    if: ${{ always() }}
+    name: Build-Status-Flag
+    runs-on: ubuntu-latest
+    outputs:
+      checking_build_status: ${{ steps.status_checking.outputs.status }}
+    steps:
+      - name: Build_status_checking
+        id: status_checking
+        run: |
+          json_data=$(curl -s -H "Authorization: Bearer ${{ github.token }}" "https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs")
+          name_conclusion_array=($(echo "$json_data" | jq -r '.jobs[] | select(.name | startswith("Build-OpenWrt-")) | "\(.name).\(.conclusion)"'))
+
+          platforms=(X86 R5S R5C R4S R4SE R2S R2C H66K H68K H69K R66S R68S R_PI_3b R_PI_4b)
+          
+          is_success_compiled=false
+          for ((i = 0; i < ${#platforms[@]}; i++)); do
+            if $is_success_compiled; then break; fi
+            platform="${platforms[i]}"
+            for item in "${name_conclusion_array[@]}"; do
+              IFS='.' read -r name conclusion <<< "$item"
+              if [[ "$name" == "Build-OpenWrt-$platform" ]]; then
+                if [[ "$conclusion" == "success" ]]; then
+                  is_success_compiled=true
+                  break
+                fi
+              fi
+            done
+          done
+
+          echo "-------------------build status--------------------------"
+          for item in "${name_conclusion_array[@]}"; do
+            IFS='.' read -r name conclusion <<< "$item"
+            echo "Name: $name"
+            echo "Conclusion: $conclusion"
+          done
+          echo "-----------------------------------------------------------"
+
+            
+
+            if $is_success_compiled; then
+              echo "status=success" >> $GITHUB_OUTPUT
+              echo "Compilation succeeded for at least one platform."
+            else
+              echo "status=failed" >> $GITHUB_OUTPUT
+              echo "Compilation failed for all platforms."
+            fi
+
+      - name: Build_status_checking
+        id: test
+        run: |
+          echo "${{steps.status_checking.outputs.status}}"
+
+  job_test:
+    needs: [build_status_flag]
+    runs-on: ubuntu-latest
+    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
+    name: dddd
+        
+    steps:
+    - name: ddd
+      run: |
+        echo "${{ needs.build_status_flag.outputs.checking_build_status}}"
+
+  job_organize_git_log:
+    needs: [job_build, build_status_flag]
+    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
+    runs-on: ubuntu-latest
+    name: Organize-Git-Log
+       
+    steps:
+    - name: Generate Git Log
+      run: |
+        echo "success"
