@@ -1,0 +1,6 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a61217134|coolsnowwolf|Wed Feb 21 14:41:41 2024 +0800|kmod-crypto-sha512: fix kernel 6.6 support
+</details>

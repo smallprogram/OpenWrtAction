@@ -1,0 +1,7 @@
+<details> <summary> <b>passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ab7e088|zhusir|Wed Feb 21 14:34:06 2024 +0800|action: update package compile code
+e5f80b4|MoetaYuko|Wed Feb 21 13:20:54 2024 +0800|action: fix packages build (#2933)
+</details>
