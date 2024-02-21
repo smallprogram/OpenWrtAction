@@ -12,7 +12,6 @@
 name: Update_Checker
 
 on:
-  repository_dispatch:
   workflow_dispatch:
     inputs:
       ssh:
