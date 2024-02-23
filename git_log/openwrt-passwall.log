@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5b461ad|xiaorouji|Fri Feb 23 02:08:58 2024 +0800|luci: bump version
-a2da204|xiaorouji|Fri Feb 23 00:42:57 2024 +0800|luci: fix bugs
+f2f8bab|xiaorouji|Fri Feb 23 16:52:49 2024 +0800|luci: fix and optimization
+4fd3ca1|xiaorouji|Fri Feb 23 17:02:26 2024 +0800|luci: add node http tls depends
+82480c0|zhusir|Fri Feb 23 13:28:00 2024 +0800|action: update auto compile code hide useless warnings
+1c806ab|zhusir|Fri Feb 23 13:10:33 2024 +0800|action: update auto compile update action-gh-release version update cache verion update compile packages code add diskspace free code
 </details>
