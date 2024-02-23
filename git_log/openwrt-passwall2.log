@@ -1,0 +1,8 @@
+<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+10b14b1|xiaorouji|Fri Feb 23 02:18:50 2024 +0800|luci: bump version
+bdedbff|xiaorouji|Fri Feb 23 02:18:37 2024 +0800|luci: fix bugs
+fd3abc7|xiaorouji|Fri Feb 23 00:20:16 2024 +0800|luci: fix acl config depends
+</details>

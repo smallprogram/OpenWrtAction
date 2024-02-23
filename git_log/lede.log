@@ -1,0 +1,7 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+eeae80a9d|Daniel Golle|Sat Jul 8 17:31:24 2023 +0100|mediatek: replace hack for MaxLinear 2.5G PHY
+02c78e823|Daniel Golle|Sat Jul 8 16:48:39 2023 +0100|mediatek: dts: mt7988a: remove boottrap hack
+</details>
