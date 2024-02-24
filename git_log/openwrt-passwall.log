@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f496cdf|xiaorouji|Fri Feb 23 22:42:19 2024 +0800|luci: fix typo
-c8892a3|xiaorouji|Fri Feb 23 20:45:48 2024 +0800|luci: optimize subscribe
+9238b25|ShanStone|Fri Feb 23 11:05:35 2024 +0800|luci: fix nftables acl rule error in some cases
 </details>
