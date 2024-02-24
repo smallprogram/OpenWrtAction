@@ -1,7 +1,0 @@
-<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-44b506c|zhusir|Fri Feb 23 13:28:35 2024 +0800|action: update auto compile code hide useless warnings
-8a047c3|zhusir|Fri Feb 23 13:10:21 2024 +0800|action: update auto compile update action-gh-release version update cache verion update compile packages code add diskspace free code
-</details>

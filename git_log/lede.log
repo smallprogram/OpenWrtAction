@@ -1,0 +1,7 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5a1eaf2a0|Daniel Golle|Sun Aug 27 15:57:00 2023 +0100|mediatek: improve mt7981.dtsi
+40bd975f2|Daniel Golle|Sun Aug 27 00:38:38 2023 +0100|mediatek: filogic: improve pinctrl drivers
+</details>
