@@ -1,6 +1,0 @@
-<details> <summary> <b>passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-9238b25|ShanStone|Fri Feb 23 11:05:35 2024 +0800|luci: fix nftables acl rule error in some cases
-</details>

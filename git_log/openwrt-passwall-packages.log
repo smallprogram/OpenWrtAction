@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1f2a2ef|Gzxhwq|Sat Feb 24 17:26:35 2024 +0800|action: auto update packages workflow (#138)
-afc7acd|zhusir|Sat Feb 24 16:18:42 2024 +0800|action: update auto compilation testing (#135)
-645d017|github-actions[bot]|Sat Feb 24 15:31:59 2024 +0800|v2ray-core: update to 5.12.1 (#134)
-b4dc2e7|github-actions[bot]|Sat Feb 24 15:31:25 2024 +0800|sing-box: update to 1.8.6 (#133)
-397d4c1|Gzxhwq|Sat Feb 24 15:19:42 2024 +0800|action: auto update packages workflow (#132)
+b7e1852|xiaorouji|Sun Feb 25 02:47:14 2024 +0800|sing-box: default Build with gVisor support
 </details>
