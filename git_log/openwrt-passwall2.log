@@ -1,0 +1,10 @@
+<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+2a90504|xiaorouji|Sun Feb 25 22:00:33 2024 +0800|luci: bump version
+f9a3aa8|ShanStone|Fri Feb 23 11:05:35 2024 +0800|luci: fix nftables acl rule error in some cases
+0efd4ce|xiaorouji|Sun Feb 25 19:57:43 2024 +0800|luci: add Sing-Box node `domain_strategy` option
+5902ca3|xiaorouji|Fri Feb 23 20:45:48 2024 +0800|luci: optimize subscribe
+719873e|xiaorouji|Fri Feb 23 17:02:26 2024 +0800|luci: add node http tls depends
+</details>
