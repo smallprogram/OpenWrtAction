@@ -1,9 +1,0 @@
-<details> <summary> <b>luci-app-mosdns new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-21bff11|sbwml|Tue Feb 27 21:33:38 2024 +0800|mosdns/v2dat: drop GO_PKG_TARGET_VARS variable
-2dac1a5|Bard|Mon Feb 26 22:14:56 2024 +0800|v2dat: add missing no MIPS16 variable
-0da873f|sbwml|Mon Feb 26 21:31:40 2024 +0800|luci-app-mosdns: fix using local filter lists to get stuck in infinite loops
-67e8851|sbwml|Mon Feb 26 21:29:57 2024 +0800|ci: update actions
-</details>

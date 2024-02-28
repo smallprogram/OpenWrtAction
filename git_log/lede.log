@@ -1,8 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-05390b546|Mieczyslaw Nalewaj|Wed Feb 14 20:27:23 2024 +0100|kernel: support for RTL8367C/S switch
-06b4e7d34|coolsnowwolf|Sat Feb 24 23:35:28 2024 +0800|package: bump up broadcom firmware
-92238a38e|coolsnowwolf|Fri Feb 9 23:22:36 2024 +0800|bcm27xx: switch to kernel v6.1
-</details>
