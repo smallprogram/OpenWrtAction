@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-be54fac|github-actions[bot]|Mon Feb 26 15:52:28 2024 +0800|xray-core: update to 1.8.8 (#141)
-3b133d3|github-actions[bot]|Mon Feb 26 15:38:51 2024 +0800|xray-plugin: update to 1.8.8 (#140)
+c37c639|Gzxhwq|Tue Feb 27 19:14:20 2024 +0800|sing-box: enable CGO by default (#147)
+07eec56|github-actions[bot]|Tue Feb 27 09:31:18 2024 +0800|microsocks: update to 1.0.4 (#144)
 </details>

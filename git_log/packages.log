@@ -1,0 +1,13 @@
+<details> <summary> <b>lean package new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+95cf76b6|coolsnowwolf|Tue Feb 27 01:05:06 2024 +0800|Revert "golang: Update to 1.22.0"
+e700ff49|coolsnowwolf|Tue Feb 27 00:54:50 2024 +0800|inih: add new package
+69edf9c8|coolsnowwolf|Tue Feb 27 00:49:50 2024 +0800|Merge pull request #772 from HHJLKK/master
+52df5b73|coolsnowwolf|Tue Feb 27 00:49:26 2024 +0800|Merge pull request #773 from cxxxfu/master
+e87ab287|coolsnowwolf|Tue Feb 27 00:46:33 2024 +0800|rust: update to 1.74.1
+5d77e8e4|coolsnowwolf|Mon Feb 26 20:17:47 2024 +0800|golang: Update to 1.22.0
+d2fba1fe|cxxxfu|Sat Feb 24 19:35:55 2024 +0800|Update strongswan Makefile
+9aac3d65|HHJLKK|Mon Feb 19 17:41:09 2024 +0800|xfsprogs: fix compile issues
+</details>
