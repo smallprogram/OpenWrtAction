@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-aef5c79f1|coolsnowwolf|Wed Feb 28 14:19:49 2024 +0800|bcm27xx: add wireless support for Raspberry Pi 5
+08ebc6e10|coolsnowwolf|Wed Feb 28 22:06:42 2024 +0800|kernel: add support for mem2mem devices
 </details>
