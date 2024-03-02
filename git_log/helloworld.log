@@ -1,9 +1,0 @@
-<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-4d5fb92|zxlhhyccc|Sat Mar 2 03:39:36 2024 +0800|luci-app-ssr-plus: update translate (#1416)
-fd70a01|coolsnowwolf|Fri Mar 1 20:29:03 2024 +0800|Merge pull request #1415 from shenyunet/master
-acf5fb5|shenyunet|Fri Mar 1 19:51:15 2024 +0800|修正小错误
-76c9632|shenyunet|Fri Mar 1 19:36:21 2024 +0800|luci-app-ssr-plus: Enhance proxy port configuration with custom port support
-</details>
