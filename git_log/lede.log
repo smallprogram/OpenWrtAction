@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+f903cc897|coolsnowwolf|Sat Mar 2 23:15:24 2024 +0800|target: generic: fix xt_FLOWOFFLOAD patches
+d75705cfc|Beginner|Sun Mar 3 00:10:26 2024 +0800|kernel: bump 5.15 to 5.15.150 (#11938)
+256ab6f77|Beginner|Sun Mar 3 00:01:06 2024 +0800|kernel: bump 5.4 to 5.4.270 (#11942)
 428cb5e29|Zoltan HERPAI|Wed May 24 23:51:14 2023 +0200|d1: add new target
-c33693071|Beginner|Sat Mar 2 16:55:46 2024 +0800|kernel: bump 6.1 to 6.1.80 (#11934)
-ca1355ce8|Beginner|Sat Mar 2 15:25:33 2024 +0800|kernel: bump 6.6 to 6.6.19 (#11933)
 </details>
