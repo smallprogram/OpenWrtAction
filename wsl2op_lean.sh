@@ -571,9 +571,9 @@ function Func_Main(){
         if [ ! -n "$openwrt_dirInp" ]; then
             Func_LogSuccess "OK，使用默认值$openwrt_dir" "OK, use the default value $openwrt_dir"
         else
-            Func_LogMessage "使用 ${openwrt_dirInp} 作为lean源码文件夹名。" "Use ${openwrt_dirInp} as the lean source folder name."
+            Func_LogMessage "使用 ${openwrt_dir_front}${config_name} 作为lean源码文件夹名。" "Use ${openwrt_dir_front}${config_name} as the lean source folder name."
             echo -e  
-            openwrt_dir=$openwrt_dirInp
+            openwrt_dir=${openwrt_dir_front}${config_name}
         fi
 
     else
