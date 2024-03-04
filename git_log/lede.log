@@ -1,0 +1,7 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+4e9456453|Hauke Mehrtens|Sun Mar 3 12:32:28 2024 +0100|kernel: Remove dsmark support
+e612846e1|coolsnowwolf|Sun Mar 3 23:10:16 2024 +0800|target: generic: fixes dst_release issue
+</details>
