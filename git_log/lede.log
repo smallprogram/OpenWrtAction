@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4e9456453|Hauke Mehrtens|Sun Mar 3 12:32:28 2024 +0100|kernel: Remove dsmark support
-e612846e1|coolsnowwolf|Sun Mar 3 23:10:16 2024 +0800|target: generic: fixes dst_release issue
+6ff88a72c|coolsnowwolf|Mon Mar 4 15:30:18 2024 +0800|rockchip: add reset gpio button for T68M
+6c3044be0|coolsnowwolf|Mon Mar 4 12:41:42 2024 +0800|kernel: dsmark support in kernel 5.4/5.10
 </details>
