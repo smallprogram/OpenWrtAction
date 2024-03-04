@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt telephony new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+dc889d8|Daniel Golle|Sun Mar 3 16:16:51 2024 +0000|Merge pull request #857 from dangowrt/lantiq-vmmc-group
+6b3fe2b|Daniel Golle|Sun Mar 3 15:25:22 2024 +0000|asterisk-chan-lantiq: add user 'asterisk' to 'vmmc' group
+</details>

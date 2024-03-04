@@ -1,0 +1,7 @@
+<details> <summary> <b>passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+8ddec37|xiaorouji|Mon Mar 4 03:08:40 2024 +0800|luci: add transition button...
+0f87f2c|xiaorouji|Mon Mar 4 03:17:40 2024 +0800|luci: revert TCP DNS logic when use Xray or SingBox
+</details>
