@@ -1,0 +1,7 @@
+<details> <summary> <b>passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+2a4cf41|xiaorouji|Tue Mar 5 01:31:37 2024 +0800|luci: optimize && fix
+bd07110|守望|Sat Mar 2 16:13:15 2024 +0800|luci: fix Xray server acceptProxyProtocol and Short Id
+</details>
