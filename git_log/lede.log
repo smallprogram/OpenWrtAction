@@ -2,8 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+262c581ec|coolsnowwolf|Wed Mar 6 00:38:22 2024 +0800|ramips: add support for Huasifei WS1208V2
+20239689f|coolsnowwolf|Sun Mar 3 18:20:21 2024 +0800|rockchip: rename LYT T68M eth ports to lanx
 a185c5b91|coolsnowwolf|Tue Mar 5 18:20:21 2024 +0800|rockchip: rename T68M eth ports to lan1/2/3/4
-de9f57fc5|coolsnowwolf|Tue Mar 5 18:14:47 2024 +0800|rockchip: stmmac: add devname configuration from OF
-892b843ec|coolsnowwolf|Tue Mar 5 18:11:59 2024 +0800|r8125: add support for reading devname configuration from dts OF
-4de28071b|coolsnowwolf|Tue Mar 5 18:09:02 2024 +0800|Revert "kernel: dsmark support in kernel 5.4/5.10"
 </details>
