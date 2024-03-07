@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-262c581ec|coolsnowwolf|Wed Mar 6 00:38:22 2024 +0800|ramips: add support for Huasifei WS1208V2
-20239689f|coolsnowwolf|Sun Mar 3 18:20:21 2024 +0800|rockchip: rename LYT T68M eth ports to lanx
-a185c5b91|coolsnowwolf|Tue Mar 5 18:20:21 2024 +0800|rockchip: rename T68M eth ports to lan1/2/3/4
+85291c2a2|coolsnowwolf|Sat Mar 2 23:16:21 2024 +0800|kernel: modules: remove dsmark support
 </details>

@@ -1,0 +1,8 @@
+<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+94fee0d|ShanStone|Wed Mar 6 15:31:59 2024 +0800|luci: optimise
+1f72d6a|Tianhe Y|Thu Mar 7 01:02:53 2024 +0800|luci: update description
+16f8a20|zhusir|Thu Mar 7 00:32:55 2024 +0800|action: fixed compile packages error fixed https://github.com/xiaorouji/openwrt-passwall-packages/issues/146
+</details>
