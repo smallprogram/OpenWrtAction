@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-85291c2a2|coolsnowwolf|Sat Mar 2 23:16:21 2024 +0800|kernel: modules: remove dsmark support
+651cda280|Beginner|Thu Mar 7 20:28:14 2024 +0800|kernel: bump 6.1 to 6.1.81 (#11955)
+50d484f3b|Beginner|Thu Mar 7 20:26:23 2024 +0800|kernel: bump 6.6 to 6.6.21 (#11954)
 </details>
