@@ -1,0 +1,7 @@
+<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+fdeb550|xiaorouji|Fri Mar 8 20:36:24 2024 +0800|luci: Xray DNS config optimize
+c337650|xiaorouji|Fri Mar 8 19:11:07 2024 +0800|luci: add write to IPSet/NFTSet option
+</details>
