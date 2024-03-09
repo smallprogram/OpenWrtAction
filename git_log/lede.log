@@ -1,0 +1,7 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+525b77c08|coolsnowwolf|Sat Mar 9 21:01:07 2024 +0800|sunxi: add kernel 6.1 support
+6b306de18|coolsnowwolf|Sat Mar 9 20:50:25 2024 +0800|uboot-sunxi: bump to version 2024.01
+</details>

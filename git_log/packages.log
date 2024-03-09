@@ -1,9 +1,0 @@
-<details> <summary> <b>lean package new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-5da06093|coolsnowwolf|Fri Mar 8 22:06:18 2024 +0800|Merge pull request #779 from MilesPoupart/iperf_update
-ba2b8e22|coolsnowwolf|Fri Mar 8 22:05:44 2024 +0800|mosdns: remove CGO target flag
-1b041b16|Jonas Jelonek|Sat Mar 2 21:11:41 2024 +0800|iperf3: update to 3.16
-a92d03ec|Jakub Raczynski|Sat Mar 2 21:07:43 2024 +0800|iperf3: Fix dependecy conflict with iperf3-ssl
-</details>
