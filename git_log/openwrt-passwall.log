@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c788ab4|xiaorouji|Sun Mar 10 03:12:24 2024 +0800|luci: optimise
-182f26d|xiaorouji|Sun Mar 10 02:38:27 2024 +0800|luci: optimise
-d702b83|Tianhe Y|Sun Mar 10 03:33:25 2024 +0800|luci: app_update adapt chinadns-ng 2024.03.07
+868d035|Tianhe Y|Sun Mar 10 11:24:18 2024 +0800|luci: app_update continue adapt chinadns-ng new release (#3012)
 </details>
