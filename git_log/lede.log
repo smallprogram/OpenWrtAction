@@ -1,0 +1,6 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a4bb24ad8|Missing|Mon Mar 11 11:08:38 2024 +0900|package: add ipip6 support (#11970)
+</details>
