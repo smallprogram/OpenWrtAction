@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a4bb24ad8|Missing|Mon Mar 11 11:08:38 2024 +0900|package: add ipip6 support (#11970)
+bc21d2c7d|Beginner|Mon Mar 11 18:08:15 2024 +0800|x86: fix build on kernel 5.10.211 (#11972)
 </details>

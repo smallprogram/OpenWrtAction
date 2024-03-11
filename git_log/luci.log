@@ -1,6 +1,0 @@
-<details> <summary> <b>lean luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-8e15fc6|Missing|Mon Mar 11 11:10:17 2024 +0900|luci-proto-ipv6: add ipip6 support (#271)
-</details>
