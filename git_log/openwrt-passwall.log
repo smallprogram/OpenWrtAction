@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4a84b7a|xiaorouji|Sun Mar 10 16:12:55 2024 +0800|luci: fix https://github.com/xiaorouji/openwrt-passwall/issues/3010
+a663e60|xiaorouji|Mon Mar 11 01:16:27 2024 +0800|luci: complete #2959
 </details>
