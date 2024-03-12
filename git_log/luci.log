@@ -1,6 +1,0 @@
-<details> <summary> <b>lean luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-c79d23b|arrio464|Tue Mar 12 04:41:59 2024 +0800|Revert "luci-app-zerotier: update runtime file path" (#272)
-</details>

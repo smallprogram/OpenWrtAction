@@ -1,0 +1,8 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+3089e0e02|Beginner-Go|Tue Mar 12 10:26:19 2024 +0000|kernel: refresh all 6.6 patches (#11979)
+6eba666e7|coolsnowwolf|Sat Apr 8 23:18:36 2023 +0800|target: move motorcomm driver to generic
+ce6d48a35|coolsnowwolf|Tue Mar 12 15:15:28 2024 +0800|generic: sync kernel 6.6 from upstream
+</details>
