@@ -1,6 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-bc21d2c7d|Beginner|Mon Mar 11 18:08:15 2024 +0800|x86: fix build on kernel 5.10.211 (#11972)
-</details>

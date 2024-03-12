@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a522569|xiaorouji|Mon Mar 11 17:07:42 2024 +0800|luci: bump version
-52c7ff8|Bard|Mon Mar 11 17:06:35 2024 +0800|luci: use `busybox top` command (#3015)
-45d94e4|xiaorouji|Mon Mar 11 16:59:17 2024 +0800|luci: fix #3013
-8943c0b|xiaorouji|Mon Mar 11 16:46:03 2024 +0800|luci: fix acl
+14d525a|xiaorouji|Tue Mar 12 01:36:28 2024 +0800|luci: optimize && fix
 </details>
