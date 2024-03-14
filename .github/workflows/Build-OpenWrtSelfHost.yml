@@ -40,7 +40,13 @@ jobs:
       id: compile
       run: |
         cd /home/$USER
-        rm -rf OpenWrtAction
-        cp -r /home/$USER/actions-runner/_work/OpenWrtAction/OpenWrtAction /home/$USER/
-        cd /home/$USER/OpenWrtAction
+        if [ ! -d "/home/$USER/OpenWrtAction" ]; then 
+          git clone https://github.com/smallprogram/OpenWrtAction.git; 
+        else 
+          cd /home/$USER/OpenWrtAction; 
+          git stash; 
+          git stash drop; 
+          git pull; 
+        fi;
+        cd /home/$USER/OpenWrtAction; 
         bash wsl2op_lean.sh X86.config
