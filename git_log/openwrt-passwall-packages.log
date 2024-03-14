@@ -1,6 +1,0 @@
-<details> <summary> <b>passwall packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-85894a3|Bard|Thu Mar 14 11:58:51 2024 +0800|shadowsocksr-libev: Upgrade PCRE2 & Add libopenssl-legacy depends (#171)
-</details>
