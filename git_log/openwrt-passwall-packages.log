@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-02603e7|github-actions[bot]|Thu Mar 14 01:34:25 2024 +0800|shadowsocks-rust: update to 1.18.2 (#170)
+85894a3|Bard|Thu Mar 14 11:58:51 2024 +0800|shadowsocksr-libev: Upgrade PCRE2 & Add libopenssl-legacy depends (#171)
 </details>
