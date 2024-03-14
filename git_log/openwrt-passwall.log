@@ -1,0 +1,7 @@
+<details> <summary> <b>passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+4bb95de|MkQtS|Thu Mar 14 00:08:41 2024 +0800|luci: Remove unzip and add dnsmasq-full for depends (#3021)
+ac57e7d|lwb1978|Thu Mar 14 00:03:06 2024 +0800|luci: fix #3025
+</details>

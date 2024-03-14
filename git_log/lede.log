@@ -1,6 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-6f205863c|coolsnowwolf|Thu Oct 5 23:16:01 2023 +0800|modules: fixes build for x86 platform
-</details>
