@@ -529,6 +529,7 @@ function Func_Main(){
     read -t $timer isCreateNewConfig
     if [ ! -n "$isCreateNewConfig" ]; then
         Func_LogSuccess "OK，不创建新的编译配置" "OK, do not create a new compilation configuration"
+        openwrt_dir=${openwrt_dir_front}${config_name}
     else
         Func_LogMessage "请输入新的Config文件名，请以xxx.config命名，例如xiaomi3.config" "Please enter the new Config file name, please name it after xxx.config, for example xiaomi3.config"
         read newConfigName
