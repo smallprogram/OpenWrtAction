@@ -41,12 +41,14 @@ jobs:
       run: |
         cd /home/$USER
         if [ ! -d "/home/$USER/OpenWrtAction" ]; then 
-          git clone https://github.com/smallprogram/OpenWrtAction.git; 
+          git clone https://github.com/smallprogram/OpenWrtAction.git
+          cd /home/$USER/OpenWrtAction
         else 
-          cd /home/$USER/OpenWrtAction; 
-          git stash; 
-          git stash drop; 
-          git pull; 
-        fi;
-        cd /home/$USER/OpenWrtAction; 
+          cd /home/$USER/OpenWrtAction
+          git stash 
+          git stash drop
+          git pull
+        fi
+        echo "check source complate!"
+        cd /home/$USER/OpenWrtAction
         bash wsl2op_lean.sh X86.config
