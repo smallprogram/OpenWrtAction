@@ -1,0 +1,8 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5fea82cd1|coolsnowwolf|Fri Mar 15 03:23:30 2024 +0800|generic: 6.6: revert 6.5 deprecated API support for backport 6.1
+722f16926|coolsnowwolf|Fri Mar 15 03:19:19 2024 +0800|kernel: crypto: fix geniv build as a separate module for 5.4
+9a345491d|aiamadeus|Sat Nov 11 23:06:38 2023 +0800|generic: 6.1: backport AXP313a PMIC support
+</details>
