@@ -1,6 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-3b5f54d82|coolsnowwolf|Fri Mar 15 14:24:06 2024 +0800|generic: 6.6: revert genetlink: remove userhdr from struct genl_info
-</details>
