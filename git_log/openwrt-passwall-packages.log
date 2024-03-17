@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-93c325e|Bard|Sat Mar 16 18:37:31 2024 +0800|shadowsocksr-libev: drop libopenssl-legacy depends (#175)
-5d3d40f|github-actions[bot]|Sat Mar 16 18:37:06 2024 +0800|sing-box: update to 1.8.9 (#174)
-57ddabe|github-actions[bot]|Sat Mar 16 14:09:44 2024 +0800|v2ray-plugin: update to 5.15.0 (#173)
+9b41669|lwb1978|Sat Mar 16 21:41:08 2024 +0800|chinadns-ng: fix mips/mipsel target (#176)
 </details>

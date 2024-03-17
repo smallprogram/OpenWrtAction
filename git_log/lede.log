@@ -1,0 +1,7 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+4fb3ef836|Daniel Golle|Sat Jul 22 15:50:27 2023 +0100|uboot-mediatek: update to version 2023.07.02
+d95acb11e|Daniel Golle|Sat Jul 22 15:12:27 2023 +0100|arm-trusted-firmware-mediatek: update to sources of 2023-07-24
+</details>
