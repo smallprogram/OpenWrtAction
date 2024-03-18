@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a30f30033|Beginner|Sun Mar 17 18:20:51 2024 +0800|kernel: bump 6.6 to 6.6.22 (#12003)
-1d96ca70b|Beginner|Sun Mar 17 18:15:42 2024 +0800|kernel: bump 6.1 to 6.1.82 (#12002)
-524175abb|Beginner|Sun Mar 17 15:30:06 2024 +0800|kernel: bump 5.4 to 5.4.272 (#12007)
-78375ff40|Beginner|Sun Mar 17 15:25:09 2024 +0800|kernel: bump 5.10 to 5.10.213 (#12006)
-5f3d8d464|Beginner|Sun Mar 17 15:20:10 2024 +0800|kernel: bump 5.15 to 5.15.152 (#12005)
+a4880e2ff|pc.xue|Mon Mar 18 15:06:01 2024 +0800|strace: bump to version 6.6 (#12012)
 </details>

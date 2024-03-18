@@ -1,9 +1,0 @@
-<details> <summary> <b>passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-6bab597|xiaorouji|Sun Mar 17 19:25:03 2024 +0800|luci: bump version
-07d04cd|xiaorouji|Sun Mar 17 19:33:28 2024 +0800|luci: sing-box api url do not use pre version
-f0c974a|xiaorouji|Sun Mar 17 18:31:38 2024 +0800|luci: optimise
-72378bb|xiaorouji|Sun Mar 17 15:21:54 2024 +0800|luci: add Xray HttpUpgrade option
-</details>
