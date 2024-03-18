@@ -133,11 +133,12 @@ function Func_LogError(){
 Func_LogMessage "输入任意值取消显示详细编译信息" "Enter any value to cancel the display of detailed compilation information"
 Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
 read -t $timer isVS
-if [ ! -n "$isVS" ]; then
-    Func_LogMessage "默认显示详细编译信息 " "Display detailed compilation information by default "
+if [ -n "$isVS" ]; then
+    Func_LogMessage "显示详细编译信息 " "Display detailed compilation information"
+    is_VS='V=s'
     sleep 1s
 else
-    Func_LogMessage "取消默认显示详细编译信息" "Cancel the default display of detailed compilation information"
+    Func_LogMessage "默认不显示详细编译信息" "Do not display detailed compilation information by default"
     is_VS=''
     sleep 1s
 fi
