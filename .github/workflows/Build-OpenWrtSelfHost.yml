@@ -52,7 +52,7 @@ jobs:
         fi
         echo "check source complate!"
         cd /home/$USER/OpenWrtAction
-        # bash wsl2op_lean.sh X86.config
+        bash wsl2op_lean.sh X86.config
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: rsync file to server
