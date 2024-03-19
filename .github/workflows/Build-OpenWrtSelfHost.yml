@@ -61,4 +61,3 @@ jobs:
         DATE_FOLDER=$(date +%Y%m%d_%H%M)
         sudo mkdir -p /mnt/windows_share/Openwrt/${DATE_FOLDER}
         sudo rsync -av  /home/$USER/lean_X86.config/bin/targets/x86/64/ /mnt/windows_share/Openwrt/${DATE_FOLDER}/
-        sudo find /mnt/windows_share/Openwrt/ -mindepth 1 -maxdepth 1 -type d -mtime +2 -exec rm -rf {} \;
