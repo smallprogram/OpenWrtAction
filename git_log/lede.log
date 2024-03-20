@@ -1,0 +1,7 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b0516a441|AmadeusGhost|Tue Mar 12 23:03:28 2024 +0800|target: 5.15/6.1: fix broken patches
+0716d8c54|AmadeusGhost|Mon Mar 11 23:16:39 2024 +0800|rockchip: refresh kernel 6.1 config
+</details>

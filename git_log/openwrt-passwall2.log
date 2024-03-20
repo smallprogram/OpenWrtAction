@@ -1,0 +1,11 @@
+<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+497ce93|xiaorouji|Wed Mar 20 15:58:58 2024 +0800|luci: fix #531
+94d34f7|xiaorouji|Wed Mar 20 15:28:13 2024 +0800|luci: close #529
+3ba865f|xiaorouji|Tue Mar 19 23:40:50 2024 +0800|luci: bump version
+90892f3|xiaorouji|Tue Mar 19 18:38:32 2024 +0800|luci: add Socks log
+146f38d|xiaorouji|Tue Mar 19 18:06:51 2024 +0800|luci: add node generate QRCode func
+bf7bca3|xiaorouji|Tue Mar 19 19:13:53 2024 +0800|luci: Optimize subscribe UA
+</details>

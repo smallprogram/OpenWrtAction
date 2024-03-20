@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-394833b|xiaorouji|Tue Mar 19 19:15:31 2024 +0800|luci: 4.76
-d3ed850|xiaorouji|Tue Mar 19 18:38:32 2024 +0800|luci: add Socks log
-220f8e2|xiaorouji|Tue Mar 19 18:06:51 2024 +0800|luci: add node generate QRCode func
-d00d09f|xiaorouji|Tue Mar 19 19:13:53 2024 +0800|luci: Optimize subscribe UA
-c76bd22|lwb1978|Tue Mar 19 19:09:22 2024 +0800|luci: fix chinadns-ng x86_64 api url (#3047)
+ebbee7b|xiaorouji|Wed Mar 20 15:22:39 2024 +0800|luci: close #3050
 </details>
