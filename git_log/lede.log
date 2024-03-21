@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9d50fcccf|aiamadeus|Sun Mar 10 23:25:50 2024 +0800|sunxi: h616: cpufreq and thermal support
-f69a1db02|aiamadeus|Fri Nov 24 23:19:36 2023 +0800|sunxi: add support for Orange Pi Zero 3
+1dce30889|coolsnowwolf|Sun Mar 17 14:26:15 2024 +0800|quectel-cm: update to version 1.6.5
+68253688d|coolsnowwolf|Sun Mar 17 14:30:20 2024 +0800|quectel_MHI: add support Linux Kernel 6.1+
 </details>
