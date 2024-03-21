@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt telephony new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+c60658b|Christian Marangi|Wed Mar 20 19:56:42 2024 +0100|dahdi-linux: fix compilation for mips_24k arch
+</details>

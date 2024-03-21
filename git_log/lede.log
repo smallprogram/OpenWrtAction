@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b0516a441|AmadeusGhost|Tue Mar 12 23:03:28 2024 +0800|target: 5.15/6.1: fix broken patches
-0716d8c54|AmadeusGhost|Mon Mar 11 23:16:39 2024 +0800|rockchip: refresh kernel 6.1 config
+9d50fcccf|aiamadeus|Sun Mar 10 23:25:50 2024 +0800|sunxi: h616: cpufreq and thermal support
+f69a1db02|aiamadeus|Fri Nov 24 23:19:36 2023 +0800|sunxi: add support for Orange Pi Zero 3
 </details>
