@@ -58,8 +58,9 @@ jobs:
     - name: rsync file to server
       if: steps.compile.outputs.status == 'success'
       run: |
-        DATE_FOLDER=$(date +%Y%m%d_%H%M)
+        DATE_FOLDER=$(date +%Y%m%d%H%M)
         echo $DATE_FOLDER
         sudo mkdir -p /mnt/windows_share/Openwrt/${DATE_FOLDER}
         sudo rsync -av  /home/$USER/lean_X86.config/bin/targets/x86/64/ /mnt/windows_share/Openwrt/${DATE_FOLDER}/
+        sudo touch -t $DATE_FOLDER /mnt/windows_share/Openwrt/${DATE_FOLDER}
         sudo find /mnt/windows_share/Openwrt/ -mindepth 1 -maxdepth 1 -type d -mtime +2 -exec rm -rf {} \;
