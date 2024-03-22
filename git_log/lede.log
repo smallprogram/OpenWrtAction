@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-36e6d2962|sKyissKy|Thu Mar 21 21:25:10 2024 +0800|ramips : fix zte e8820s upgrade (#12021)
+2a4194fa4|aiamadeus|Thu Jan 18 22:19:31 2024 +0800|mediatek: add Nokia EA0326GMP support
+4af62c65c|aiamadeus|Wed Jan 3 23:19:31 2024 +0800|generic: 6.1: backport AXP PMIC support
 </details>
