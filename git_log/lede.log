@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1dce30889|coolsnowwolf|Sun Mar 17 14:26:15 2024 +0800|quectel-cm: update to version 1.6.5
-68253688d|coolsnowwolf|Sun Mar 17 14:30:20 2024 +0800|quectel_MHI: add support Linux Kernel 6.1+
+36e6d2962|sKyissKy|Thu Mar 21 21:25:10 2024 +0800|ramips : fix zte e8820s upgrade (#12021)
 </details>
