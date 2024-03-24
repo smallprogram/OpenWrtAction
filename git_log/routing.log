@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt routing new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+da3b774|Paul Spooren|Thu Mar 14 14:46:15 2024 +0100|ci: set correct arch for rootfs tests
+10d7b78|Paul Spooren|Wed Jan 10 17:22:54 2024 +0100|ci: no longer require real name
+</details>
