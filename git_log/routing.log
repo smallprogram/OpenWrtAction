@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-da3b774|Paul Spooren|Thu Mar 14 14:46:15 2024 +0100|ci: set correct arch for rootfs tests
-10d7b78|Paul Spooren|Wed Jan 10 17:22:54 2024 +0100|ci: no longer require real name
+4af9b69|Rob White|Thu Mar 21 20:39:24 2024 +0000|mesh11sd: update to version 3.1.0
 </details>
