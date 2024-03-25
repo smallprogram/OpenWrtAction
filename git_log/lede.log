@@ -1,7 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-af6fdbd09|aiamadeus|Tue Mar 19 23:16:29 2024 +0800|rockchip: add kernel 6.6 support
-38ed25d03|aiamadeus|Fri Jan 19 23:16:27 2024 +0800|rockchip: use upstream rfkill patches
-</details>
