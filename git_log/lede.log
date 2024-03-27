@@ -1,8 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-b47919465|coolsnowwolf|Tue Mar 26 04:05:39 2024 +0800|vsftpd-alt: Pass TARGET_CPPFLAGS
-c7b64067f|coolsnowwolf|Tue Mar 26 02:06:41 2024 +0800|vsftpd: fix compilation with musl 1.2.4
-86abbb783|coolsnowwolf|Sat Mar 23 22:01:37 2024 +0800|generic: 6.6: add missing kconfig
-</details>

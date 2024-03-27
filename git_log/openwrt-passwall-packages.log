@@ -1,8 +1,0 @@
-<details> <summary> <b>passwall packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-fa7f323|lwb1978|Tue Mar 26 16:09:01 2024 +0800|chinadns-ng: Fix file hash value (#184)
-3f9524b|lwb1978|Tue Mar 26 01:34:34 2024 +0800|chinadns-ng: update to 2024.03.25 (#182)
-b9dcee8|zhusir|Mon Mar 25 21:19:09 2024 +0800|action: remove chinadns-ng auto update
-</details>
