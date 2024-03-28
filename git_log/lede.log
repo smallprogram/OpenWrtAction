@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3f061d422|Hauke Mehrtens|Sat Jul 1 12:06:34 2023 +0200|libnl-tiny: update to latest git HEAD
-19c63babf|=?UTF-8?q?=C3=81lvaro=20Fern=C3=A1ndez=20Rojas?=|Wed Mar 27 22:54:29 2024 +0800|iwinfo: update to latest git HEAD
+3e5300b8e|coolsnowwolf|Thu Mar 28 18:10:09 2024 +0800|sunxi: port sunxi_get_soc_chipid / sunxi_get_serial from SDK
+0d1280a18|coolsnowwolf|Thu Mar 28 18:00:02 2024 +0800|uboot-sunxi: add support for H618 x98h
+5c5b7af07|coolsnowwolf|Thu Mar 28 17:56:26 2024 +0800|uboot-sunxi: add ac200/ac300 with internal eth phy support
 </details>
