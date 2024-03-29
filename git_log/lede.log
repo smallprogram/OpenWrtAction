@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3e5300b8e|coolsnowwolf|Thu Mar 28 18:10:09 2024 +0800|sunxi: port sunxi_get_soc_chipid / sunxi_get_serial from SDK
-0d1280a18|coolsnowwolf|Thu Mar 28 18:00:02 2024 +0800|uboot-sunxi: add support for H618 x98h
-5c5b7af07|coolsnowwolf|Thu Mar 28 17:56:26 2024 +0800|uboot-sunxi: add ac200/ac300 with internal eth phy support
+f56c9ece3|Beginner|Fri Mar 29 00:26:13 2024 +0800|kernel: bump 6.6 to 6.6.23 (#12034)
 </details>
