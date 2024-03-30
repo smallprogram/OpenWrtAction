@@ -1,9 +1,0 @@
-<details> <summary> <b>passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-cbf6891|xiaorouji|Sat Mar 30 02:36:02 2024 +0800|luci: bump version
-710ab2b|xiaorouji|Sat Mar 30 01:38:03 2024 +0800|luci: Optimize subscribe
-e20f8ce|xiaorouji|Sat Mar 30 01:26:37 2024 +0800|luci: resolve #3069
-40b55e6|xiaorouji|Sat Mar 30 02:34:49 2024 +0800|luci: optimize generate Dnsmasq rules logic
-</details>
