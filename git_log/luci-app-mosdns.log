@@ -1,6 +1,0 @@
-<details> <summary> <b>luci-app-mosdns new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-49051db|sbwml|Sat Mar 30 20:56:51 2024 +0800|luci-app-mosdns: remove lockfile when adlist download fail
-</details>

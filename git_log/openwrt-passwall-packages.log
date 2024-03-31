@@ -1,0 +1,6 @@
+<details> <summary> <b>passwall packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+445a484|MoetaYuko|Sun Mar 31 19:06:59 2024 +0800|shadowsocksr-libev: fix use-after-free due to a typo (#193)
+</details>
