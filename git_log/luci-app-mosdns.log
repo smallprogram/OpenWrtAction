@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a4b8a30|sbwml|Sat Mar 30 15:10:28 2024 +0800|luci-app-mosdns: use jshn to generate config file
+49051db|sbwml|Sat Mar 30 20:56:51 2024 +0800|luci-app-mosdns: remove lockfile when adlist download fail
 </details>

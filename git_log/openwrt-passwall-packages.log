@@ -1,9 +1,0 @@
-<details> <summary> <b>passwall packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-7e408e8|github-actions[bot]|Sat Mar 30 19:59:27 2024 +0800|xray-core: update to 1.8.10 (#192)
-7c955d8|github-actions[bot]|Sat Mar 30 19:59:21 2024 +0800|xray-plugin: update to 1.8.10 (#191)
-2f11240|github-actions[bot]|Sat Mar 30 17:36:31 2024 +0800|xray-core: update to 1.8.10 (#190)
-80e5027|lwb1978|Sat Mar 30 13:06:53 2024 +0800|chinadns-ng: download cache named after $(PKG_VERSION) (#189)
-</details>
