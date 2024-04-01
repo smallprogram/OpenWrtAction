@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fdcc1f4|lyin|Sun Mar 31 22:01:05 2024 +0800|luci: update hysteria2.lua (#3077)
-b585fb1|Tianhe Y|Sun Mar 31 22:00:13 2024 +0800|luci: xray balancer add fallback support (#3079)
+4eae384|xiaorouji|Mon Apr 1 17:26:07 2024 +0800|luci: bump version
+c9f326d|xiaorouji|Mon Apr 1 17:24:46 2024 +0800|luci: add button to switch global mode
+26a217c|xiaorouji|Mon Apr 1 16:31:13 2024 +0800|luci: clear ipset/nftset when update rule list
+43c4d79|xiaorouji|Mon Apr 1 16:41:27 2024 +0800|luci: fix TProxy
 </details>
