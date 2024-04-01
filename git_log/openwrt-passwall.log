@@ -1,0 +1,7 @@
+<details> <summary> <b>passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+fdcc1f4|lyin|Sun Mar 31 22:01:05 2024 +0800|luci: update hysteria2.lua (#3077)
+b585fb1|Tianhe Y|Sun Mar 31 22:00:13 2024 +0800|luci: xray balancer add fallback support (#3079)
+</details>
