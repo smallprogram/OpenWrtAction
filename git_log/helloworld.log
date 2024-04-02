@@ -2,16 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0d45767|coolsnowwolf|Mon Apr 1 17:11:30 2024 +0800|Merge pull request #1439 from chika0801/master
-b47885e|coolsnowwolf|Mon Apr 1 16:56:51 2024 +0800|shadowsocksr-libev: Upgrade PCRE to PCRE2
-15ec1d7|coolsnowwolf|Mon Apr 1 16:32:48 2024 +0800|Merge pull request #1441 from zxlhhyccc/patch-46
-68350a7|zxlhhyccc|Sun Mar 31 20:06:12 2024 +0800|shadowsocksr-libev: fix use-after-free due to a typo
-443fcc4|ちか|Sun Mar 31 08:41:42 2024 +0800|Update ssr-plus.po
-ba4590d|ちか|Sun Mar 31 08:41:22 2024 +0800|Update gen_config.lua
-c92fd40|ちか|Sun Mar 31 08:40:39 2024 +0800|Update client-config.lua
-bb72fb1|ちか|Sun Mar 31 08:38:37 2024 +0800|Merge branch 'fw876:master' into master
-41d232b|ちか|Tue Mar 26 17:35:20 2024 +0800|Update client-config.lua
-ead95bd|ちか|Tue Mar 26 17:27:17 2024 +0800|add httpupgrade in ssr-plus.po
-4282202|ちか|Tue Mar 26 17:25:43 2024 +0800|add httpupgrade in  gen_config.lua
-409bd58|ちか|Tue Mar 26 17:24:51 2024 +0800|add httpupgrade in client-config.lua
+03a8dfe|coolsnowwolf|Tue Apr 2 01:15:10 2024 +0800|shadowsocksr-libev: resolve recursive depend
 </details>

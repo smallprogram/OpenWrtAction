@@ -1,0 +1,7 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5d367a85b|Qingfang Deng|Tue Mar 12 10:08:30 2024 +0800|kernel: support RISC-V PMU
+b5c127760|Felix Fietkau|Sun Mar 24 15:43:02 2024 +0100|perf: fix build on linux 6.6
+</details>
