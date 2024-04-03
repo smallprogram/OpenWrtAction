@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5d367a85b|Qingfang Deng|Tue Mar 12 10:08:30 2024 +0800|kernel: support RISC-V PMU
-b5c127760|Felix Fietkau|Sun Mar 24 15:43:02 2024 +0100|perf: fix build on linux 6.6
+05c7666b4|Florian Eckert|Mon Aug 7 11:15:28 2023 +0200|tools: add tmon package
+d3c28faf8|Rosen Penev|Sat Dec 16 17:12:33 2023 -0800|kernel: backport ethtool_puts
 </details>
