@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-05c7666b4|Florian Eckert|Mon Aug 7 11:15:28 2023 +0200|tools: add tmon package
-d3c28faf8|Rosen Penev|Sat Dec 16 17:12:33 2023 -0800|kernel: backport ethtool_puts
+b171813f4|Beginner|Thu Apr 4 00:20:30 2024 +0800|kernel: bump 6.1 to 6.1.84 (#12046)
+7d7e57814|Beginner|Thu Apr 4 00:10:16 2024 +0800|kernel: bump 6.6 to 6.6.24 (#12047)
 </details>

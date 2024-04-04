@@ -1,0 +1,8 @@
+<details> <summary> <b>lean package new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+99d2e28f|Jiale  Liu|Thu Apr 4 02:21:36 2024 +0800|libxslt: update to 1.1.39 (#787)
+29008421|Fabrice Fontaine|Tue Jan 30 22:15:08 2024 +0100|libs/libpciaccess: assign PKG_LICENSE
+167ef390|Tianling Shen|Wed May 17 15:01:41 2023 +0800|libpciaccess: Update to 0.17
+</details>
