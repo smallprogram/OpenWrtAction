@@ -1,0 +1,9 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+3b6819725|coolsnowwolf|Fri Apr 5 18:22:48 2024 +0800|arm-trusted-firmware-rockchip-vendor: add RK3528/RK3588 support
+a77180564|coolsnowwolf|Fri Apr 5 17:48:16 2024 +0800|uboot-sunxi: fix h2 without SPL I2C failed to build
+658668556|Lollipop907|Fri Apr 5 16:57:42 2024 +0800|rockchip: Add support for Advantech RSB4810 (#12031)
+f221abf68|Beginner|Fri Apr 5 16:10:08 2024 +0800|kernel: bump 6.6 to 6.6.25 (#12052)
+</details>
