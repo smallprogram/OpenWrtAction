@@ -1,6 +1,0 @@
-<details> <summary> <b>passwall packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-8e9ae6e|lwb1978|Sun Apr 7 10:30:03 2024 +0800|chinadns-ng: use soft floating point for arm-eabi (#195)
-</details>
