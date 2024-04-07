@@ -1,8 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-3de103535|Daniel Golle|Fri Mar 15 17:18:19 2024 +0000|generic: 6.1: backport support for various MHI 5G modems
-7e90035c7|Daniel Golle|Fri Mar 15 18:04:53 2024 +0000|generic: 6.6: backport support for SDX75-based MHI 5G modems
-0273ba389|Daniel Golle|Sun Mar 17 22:38:58 2024 +0000|kernel: modules: package driver for MediaTek T7xx PCIe 5G modem
-</details>
