@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt routing new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-0fed081|Robert Marko|Sun Apr 7 17:35:58 2024 +0200|treewide: refresh hashes after move to use ZSTD as default
-</details>

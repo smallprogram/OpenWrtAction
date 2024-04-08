@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt telephony new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+22dd505|Robert Marko|Mon Apr 8 00:01:22 2024 +0200|treewide: refresh hashes after move to use ZSTD as default
+</details>

@@ -1,0 +1,7 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0983191cb|Weijie Gao|Sun Jan 7 03:31:28 2024 +0800|gpio-button-hotplug: fix linux 6.2 build failure
+9415e0a37|Qingfang Deng|Wed Mar 13 11:48:44 2024 +0800|kernel: xt_FLOWOFFLOAD: fix use of uninitialized dir variable
+</details>
