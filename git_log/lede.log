@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e4172db5d|coolsnowwolf|Wed Apr 10 08:50:23 2024 +0800|sunxi: add F1C100/200 (arm926ej-s) support
-259cf7247|coolsnowwolf|Wed Apr 10 08:39:48 2024 +0800|r8125: bump to 9.012.04
+ad5d57cd8|coolsnowwolf|Wed Apr 10 16:59:16 2024 +0800|uboot-rockchip: update rk356x ATF and DDR version
 </details>
