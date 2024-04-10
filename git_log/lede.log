@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c897f32a4|coolsnowwolf|Tue Apr 9 23:28:22 2024 +0800|tools/automake: bump to 1.16.5
-d3ab2cd00|Rodrigo Balerdi|Sat Apr 6 03:18:00 2024 -0300|base-files: minor fix to mmc_mac_ascii function
-f788f35b3|coolsnowwolf|Thu Apr 4 23:03:02 2024 +0800|closed-arm-firmware-rockchip: bump to 2024-02-22
+e4172db5d|coolsnowwolf|Wed Apr 10 08:50:23 2024 +0800|sunxi: add F1C100/200 (arm926ej-s) support
+259cf7247|coolsnowwolf|Wed Apr 10 08:39:48 2024 +0800|r8125: bump to 9.012.04
 </details>
