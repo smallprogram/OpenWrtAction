@@ -1,0 +1,10 @@
+<details> <summary> <b>lean package new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+476c0049|coolsnowwolf|Wed Apr 10 01:10:53 2024 +0800|Merge pull request #789 from teleostnacl/update-speedtest-go-package
+ed02a817|coolsnowwolf|Wed Apr 10 01:10:31 2024 +0800|Merge pull request #791 from xkstudio/dev
+7ac8242a|coolsnowwolf|Tue Apr 9 23:25:24 2024 +0800|modemmanager: bump to 1.22.0
+eae0bd77|Xiaok|Mon Apr 8 16:24:43 2024 +0800|v2ray-geodata: update to 202404040040
+ebc883e7|TeleostNaCl|Sat Apr 6 20:32:30 2024 +0800|speedtest-go: update to 1.6.10
+</details>
