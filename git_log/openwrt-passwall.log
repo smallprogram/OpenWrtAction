@@ -1,6 +1,0 @@
-<details> <summary> <b>passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-e162489|Bard|Wed Apr 10 15:23:22 2024 +0800|luci: hotplug.d: output restart log as syslog (#3112)
-</details>

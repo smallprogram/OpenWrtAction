@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ad5d57cd8|coolsnowwolf|Wed Apr 10 16:59:16 2024 +0800|uboot-rockchip: update rk356x ATF and DDR version
+a66f5342c|coolsnowwolf|Thu Apr 11 08:14:17 2024 +0800|kernel: bump 6.1 to 6.1.85
+14f04764c|coolsnowwolf|Thu Apr 11 08:07:13 2024 +0800|kernel: bump 6.6 to 6.6.26
+e703f844c|coolsnowwolf|Thu Apr 11 07:58:28 2024 +0800|uboot-rockchip: update rk3566 ATF and DDR version
 </details>
