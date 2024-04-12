@@ -1,0 +1,6 @@
+<details> <summary> <b>lean luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+8c6da73|coolsnowwolf|Thu Apr 11 22:23:27 2024 +0800|luci-proto-modemmanager: fix register_error_code API support
+</details>
