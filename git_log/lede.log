@@ -1,8 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-784b562e9|coolsnowwolf|Sat Apr 13 11:03:00 2024 +0800|USB: serial: option: add MEDIATEK FM350-GL module usb mode support
-9e29b15c0|Beginner|Sat Apr 13 10:57:10 2024 +0800|kernel: refresh `6.6` patches (#12069)
-0bc2188f4|Beginner|Sat Apr 13 10:56:47 2024 +0800|kernel: refresh `6.1` patches (#12068)
-</details>
