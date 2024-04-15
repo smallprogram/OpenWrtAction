@@ -1,7 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-fd8808e40|Beginner|Mon Apr 15 10:10:29 2024 +0800|kernel: bump 5.15 to 5.15.155 (#12076)
-032853708|Beginner|Mon Apr 15 10:00:38 2024 +0800|kernel: bump 6.1 to 6.1.86 (#12075)
-</details>
