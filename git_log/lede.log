@@ -1,0 +1,9 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+c44b8f56d|Beginner|Sun Apr 14 23:37:18 2024 +0800|kernel: bump 6.6 to 6.6.27 (#12074)
+5966985c1|coolsnowwolf|Sun Apr 14 22:54:30 2024 +0800|kernel: modules: netdevices: adapt for loongarch64
+27a7480dc|Daniel Golle|Thu Aug 3 23:30:25 2023 +0100|mediatek: filogic: restore non-const type in pinctrl-mt7988 driver
+e89c9e588|Daniel Golle|Tue Aug 1 00:04:56 2023 +0100|mediatek: filogic: sync pinctrl-mt7988 with MediaTek SDK
+</details>
