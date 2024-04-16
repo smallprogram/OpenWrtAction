@@ -1,0 +1,6 @@
+<details> <summary> <b>passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+f19fec2|Paul Git|Mon Apr 15 20:37:34 2024 +0800|Expanded comment regex pattern to include lines starting with '#'
+</details>
