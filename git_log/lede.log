@@ -1,0 +1,7 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+01c841d07|aiamadeus|Sat Apr 6 23:15:03 2024 +0800|rockchip: enable hdmi console output
+7a4a98ec7|aiamadeus|Fri Apr 5 23:26:05 2024 +0800|kernel: modules: sync upstream fixes
+</details>
