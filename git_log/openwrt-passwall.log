@@ -1,8 +1,0 @@
-<details> <summary> <b>passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-ef4ca73|xiaorouji|Tue Apr 16 22:34:14 2024 +0800|luci: bump version
-1a0b5e2|xiaorouji|Tue Apr 16 22:33:59 2024 +0800|luci: fix fragment typo
-9030897|lwb1978|Tue Apr 16 21:09:03 2024 +0800|luci: adapt to chinadns-ng updates (#3125)
-</details>
