@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4e3bf7d|xiaorouji|Fri Apr 19 02:30:24 2024 +0800|luci: 4.77
-e126f69|xiaorouji|Fri Apr 19 02:30:01 2024 +0800|luci: resolve #3098
-af681d0|xiaorouji|Fri Apr 19 01:39:34 2024 +0800|luci: update ChinaDNS-NG logic
-c7e6d6a|xiaorouji|Thu Apr 11 23:29:57 2024 +0800|luci: shunt rules support with `#` as a annotation line
+84daad2|xiaorouji|Sat Apr 20 03:21:59 2024 +0800|luci: optimize and improve
 </details>

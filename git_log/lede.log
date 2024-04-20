@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9546676d1|aakkll|Fri Apr 19 03:08:59 2024 +0800|kernel: bump 6.6 to 6.6.28 (#12079)
-5a6426b34|Beginner|Fri Apr 19 03:08:41 2024 +0800|kernel: bump 6.1 to 6.1.87 (#12081)
-cba149338|Hauke Mehrtens|Thu Feb 22 21:33:45 2024 +0100|linux-firmware: update to 20240220
-121653569|aiamadeus|Mon Apr 15 23:18:17 2024 +0800|rtw88-usb: update to latest git HEAD
+849b8c3db|Beginner|Sat Apr 20 00:10:53 2024 +0800|kernel: bump 5.15 to 5.15.156 (#12082)
 </details>
