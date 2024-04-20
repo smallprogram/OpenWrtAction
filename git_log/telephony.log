@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt telephony new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-d7d51d2|micmac1|Fri Apr 19 18:25:18 2024 +0200|Merge pull request #861 from aduskett/dahdi-linux
-06917fd|Adam Duskett|Fri Apr 12 16:06:50 2024 -0600|libs/dahdi-linux: bump to latest git head
-</details>
