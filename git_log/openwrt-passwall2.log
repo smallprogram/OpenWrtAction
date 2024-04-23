@@ -1,9 +1,0 @@
-<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-3d4101e|xiaorouji|Tue Apr 23 00:06:39 2024 +0800|luci: 1.29
-c811f15|ShanStone|Sun Apr 21 11:06:26 2024 +0800|luci: adapt lastest luci branch
-074d8e8|xiaorouji|Tue Apr 23 00:02:34 2024 +0800|luci: Adjust node log option logic
-cab4a2b|xiaorouji|Fri Apr 19 02:30:01 2024 +0800|luci: optimize and improve
-</details>
