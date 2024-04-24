@@ -1,6 +1,0 @@
-<details> <summary> <b>passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-355a741|Tianhe Y|Tue Apr 23 14:28:29 2024 +0800|luci: log support filter log & trigger action (#3138)
-</details>
