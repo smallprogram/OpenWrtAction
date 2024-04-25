@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c2f35f654|Beginner|Thu Apr 25 00:10:11 2024 +0800|kernel: bump 5.10 to 5.10.215 (#12095)
-0b74998c3|lean|Wed Apr 24 23:57:06 2024 +0800|arm-trusted-firmware-rockchip-vendor: revert version
+75b424cc1|Beginner|Thu Apr 25 09:10:23 2024 +0800|kernel: bump 5.4 to 5.4.274 (#12096)
 </details>
