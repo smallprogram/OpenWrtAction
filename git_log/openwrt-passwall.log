@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7a74112|Tianhe Y|Wed Apr 24 11:37:50 2024 +0800|luci: fix translation
+35f70ad|xiaorouji|Thu Apr 25 03:32:01 2024 +0800|luci: bump version
+f14b91c|xiaorouji|Thu Apr 25 00:27:44 2024 +0800|luci: update default rules
+cf7003f|xiaorouji|Thu Apr 25 00:22:01 2024 +0800|luci: optimize and improve
 </details>
