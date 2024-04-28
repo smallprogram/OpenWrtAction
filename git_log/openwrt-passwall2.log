@@ -1,0 +1,7 @@
+<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6ba4338|756yang|Sun Apr 28 16:41:22 2024 +0800|luci: sing-box add system interface support for wireguard
+4a2aa03|756yang|Sun Apr 28 16:39:59 2024 +0800|luci: nftables add icmp redirection whitelist
+</details>
