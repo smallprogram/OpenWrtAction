@@ -1,0 +1,7 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+80fdc8951|coolsnowwolf|Sun Apr 28 00:07:57 2024 +0800| kernel: modules: jitterentropy_rng requires SHA3 support for kernel 6.1.87+
+5ebdcf2f4|coolsnowwolf|Mon Apr 8 23:16:02 2024 +0800|atf-rockchip-vendor: add rk3528 support
+</details>

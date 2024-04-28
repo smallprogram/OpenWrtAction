@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt telephony new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-139cc14|Jiri Slachta|Sat Apr 27 07:25:28 2024 +0200|Merge pull request #866 from neheb/2
-8b26659|Jiri Slachta|Sat Apr 27 07:24:07 2024 +0200|Merge pull request #867 from neheb/3
-a623e1a|Rosen Penev|Fri Apr 26 15:34:35 2024 -0700|libsrtp: update to 2.6.0
-ba31f7c|Rosen Penev|Fri Apr 26 15:42:09 2024 -0700|coturn: update to 4.6.2
-</details>
