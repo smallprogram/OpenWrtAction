@@ -1,8 +1,0 @@
-<details> <summary> <b>passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-159f788|xiaorouji|Mon Apr 29 00:22:20 2024 +0800|luci: bump version
-854231b|xiaorouji|Sun Apr 28 20:07:35 2024 +0800|luci: add socks `bind_local` option
-c43957b|xiaorouji|Sun Apr 28 23:36:33 2024 +0800|luci: update po
-</details>
