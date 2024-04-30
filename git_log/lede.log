@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-61bc98ea1|Daniel Golle|Sat Jul 22 15:10:54 2023 +0100|arm-trusted-firmware-tools: update to version 2.9
-07afd0f58|Daniel Golle|Thu Jul 6 20:55:17 2023 +0200|generic: 6.1: fix uImage.FIT partitions on mtdblock and ubiblock
+bdcee653d|Felix Fietkau|Tue Apr 23 12:08:45 2024 +0200|kernel: backport flow offload pppoe fix
 </details>
