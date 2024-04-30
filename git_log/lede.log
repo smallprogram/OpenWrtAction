@@ -1,6 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-bdcee653d|Felix Fietkau|Tue Apr 23 12:08:45 2024 +0200|kernel: backport flow offload pppoe fix
-</details>
