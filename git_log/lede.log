@@ -1,0 +1,8 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+fcd30851f|Beginner|Tue Apr 30 23:32:40 2024 +0800|kernel: bump 6.6 to 6.6.28 (#12106)
+b760a6f16|aiamadeus|Fri Apr 19 23:20:39 2024 +0800|uboot-sunxi: drop broken patches
+54bb95de0|aiamadeus|Thu Apr 18 23:10:48 2024 +0800|target: add some missing patches
+</details>

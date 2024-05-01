@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c9b2814|Tianhe Y|Tue Apr 30 17:35:18 2024 +0800|luci: force enable sniffing when using shunt
+3f67c72|Tianhe Y|Wed May 1 00:20:38 2024 +0800|luci: fix typo error
 </details>
