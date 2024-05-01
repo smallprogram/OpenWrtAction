@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fcd30851f|Beginner|Tue Apr 30 23:32:40 2024 +0800|kernel: bump 6.6 to 6.6.28 (#12106)
-b760a6f16|aiamadeus|Fri Apr 19 23:20:39 2024 +0800|uboot-sunxi: drop broken patches
-54bb95de0|aiamadeus|Thu Apr 18 23:10:48 2024 +0800|target: add some missing patches
+87d7c07cf|Beginner|Wed May 1 20:00:14 2024 +0800|kernel: bump 5.15 to 5.15.157 (#12108)
+76c97b741|Beginner|Wed May 1 18:10:10 2024 +0800|kernel: bump 6.1 to 6.1.89 (#12107)
+eef66478a|Beginner|Wed May 1 15:00:15 2024 +0800|kernel: refresh 6.6 patches (#12113)
 </details>
