@@ -670,7 +670,7 @@ jobs:
 
 
   job_organize_tags:
-    needs: [job_init, job_build, job_organize_git_log, build_status_flag]
+    needs: [job_init, job_build, build_status_flag, job_organize_git_log]
     if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
     runs-on: ubuntu-latest
     name: Organize-Release-Tags
@@ -781,3 +781,17 @@ jobs:
       with:
         tag_name: ${{ needs.job_init.outputs.output_release_tag }}
         body_path: release.txt
+
+  job_my_action:
+    needs: [job_init, job_build, build_status_flag, job_organize_git_log, job_organize_tags]
+    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
+    runs-on: ubuntu-latest
+    name: My-Action
+
+    steps:
+      - name: Trigger build
+        uses: peter-evans/repository-dispatch@main
+        with:
+          token: ${{ secrets.MY_SECRET_PAT }}
+          repository: smallprogram/MyAction
+          event-type: openwrt_compilation_completed
