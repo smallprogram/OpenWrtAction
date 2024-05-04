@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt telephony new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-3ddc581|micmac1|Wed May 1 18:21:40 2024 +0200|Merge pull request #868 from neheb/4
-6227c48|micmac1|Wed May 1 18:20:48 2024 +0200|Merge pull request #863 from neheb/1
-bfb4ef2|Rosen Penev|Fri Apr 26 15:25:49 2024 -0700|libosip2: update to 5.3.1
-6fd05b1|Rosen Penev|Sat Apr 20 18:30:27 2024 -0700|sipgrep: update to 2.2.0
-</details>
