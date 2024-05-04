@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8f593dd70|Daniel Golle|Tue Aug 1 00:08:56 2023 +0100|mediatek: filogic: update MT7988 device tree
+e5c26e903|Beginner|Sat May 4 11:00:08 2024 +0800|kernel: bump 5.10 to 5.10.216 (#12127)
+0f35cfbb6|Beginner|Sat May 4 10:10:03 2024 +0800|kernel: bump 5.15 to 5.15.158 (#12126)
 </details>
