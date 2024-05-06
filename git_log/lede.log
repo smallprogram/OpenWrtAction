@@ -2,12 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dde01c597|coolsnowwolf|Sun May 5 20:04:10 2024 +0800|kernel: remove 640-bridge-only-accept-EAP-locally.patch
-524107deb|coolsnowwolf|Sun May 5 14:25:14 2024 +0800|Revert "kernel: bump 5.15 to 5.15.158 (#12126)"
-89a6a0c63|coolsnowwolf|Sun May 5 14:25:06 2024 +0800|Revert "kernel: bump 5.10 to 5.10.216 (#12127)"
-cf57cfaee|coolsnowwolf|Sun May 5 14:24:57 2024 +0800|Revert "kernel: bump 5.4 to 5.4.275 (#12128)"
-e5d8feddc|coolsnowwolf|Sun May 5 14:23:46 2024 +0800|kernel: backport upstream GRO fixes
-542de0b0a|coolsnowwolf|Sun May 5 13:33:15 2024 +0800|kernel: add missing check for TCP GRO
-8c6cc8f46|Beginner|Sun May 5 10:00:11 2024 +0800|kernel: bump 6.1 to 6.1.90 (#12125)
-722c2739b|Beginner|Sun May 5 06:00:32 2024 +0800|kernel: bump 6.6 to 6.6.30 (#12123)
+179329cbb|coolsnowwolf|Mon May 6 05:57:17 2024 +0800|Version update to R24.5.1
+6e604e987|coolsnowwolf|Mon May 6 05:53:58 2024 +0800|amlogic: add mesongx Phicomm N1 support
 </details>
