@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-179329cbb|coolsnowwolf|Mon May 6 05:57:17 2024 +0800|Version update to R24.5.1
-6e604e987|coolsnowwolf|Mon May 6 05:53:58 2024 +0800|amlogic: add mesongx Phicomm N1 support
+c7d931e7b|Felix Fietkau|Sun May 5 20:48:23 2024 +0200|kernel: fix corrupted ethernet header on bridge multicast-to-unicast
 </details>
