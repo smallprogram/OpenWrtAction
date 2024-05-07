@@ -1,6 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-c7d931e7b|Felix Fietkau|Sun May 5 20:48:23 2024 +0200|kernel: fix corrupted ethernet header on bridge multicast-to-unicast
-</details>
