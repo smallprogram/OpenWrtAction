@@ -1,0 +1,9 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+1b3612a28|coolsnowwolf|Tue May 7 10:13:18 2024 +0800|kernel: bump 5.15 to 5.15.158
+4e3d253ef|coolsnowwolf|Tue May 7 10:00:13 2024 +0800|kernel: bump 5.10 to 5.10.216
+e87716ac8|coolsnowwolf|Tue May 7 09:44:13 2024 +0800|kernel: bump 5.4 to 5.4.275
+77a790bd2|Antonio Flores|Thu Apr 11 14:43:06 2024 -0400|kernel: add kmod-ata-ahci-dwc
+</details>
