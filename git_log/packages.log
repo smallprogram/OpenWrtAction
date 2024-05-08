@@ -1,0 +1,9 @@
+<details> <summary> <b>lean package new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+46611bf5|coolsnowwolf|Wed May 8 03:22:38 2024 +0800|crowdsec-firewall-bouncer: add package
+6f445b61|coolsnowwolf|Wed May 8 03:21:21 2024 +0800|transmission: rename transmission-openssl to transmission
+9509a1ce|coolsnowwolf|Wed May 8 03:02:19 2024 +0800|adblock-fast: remove conflict
+ab94451c|coolsnowwolf|Wed May 8 02:58:43 2024 +0800|net: add new package from 23.05
+</details>
