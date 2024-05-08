@@ -1,0 +1,9 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+1531aa758|coolsnowwolf|Wed May 8 13:15:25 2024 +0800|feeds.conf.default: add option switch to luci-23.05
+918879abc|coolsnowwolf|Wed May 8 13:14:10 2024 +0800|default-settings: compatibility with luci-23.05
+1b7087bae|coolsnowwolf|Wed May 8 12:55:32 2024 +0800|firewall/firewall4: provide uci-firewall
+2e865ac65|coolsnowwolf|Wed May 8 12:26:19 2024 +0800|unetd: add WireGuard based VPN connection manager for OpenWrt
+</details>

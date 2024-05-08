@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e97f9f8|Tianhe Y|Wed May 8 10:21:16 2024 +0800|luci: update default_config & uci-defaults
+c1af7c7|Tianhe Y|Wed May 8 16:26:40 2024 +0800|action: update auto compile Auto compile action can now build and release all branches of passwall
+9613570|Tianhe Y|Wed May 8 14:20:18 2024 +0800|luci: fix typo in controller
 </details>
