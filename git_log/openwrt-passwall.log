@@ -1,7 +1,0 @@
-<details> <summary> <b>passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-c1af7c7|Tianhe Y|Wed May 8 16:26:40 2024 +0800|action: update auto compile Auto compile action can now build and release all branches of passwall
-9613570|Tianhe Y|Wed May 8 14:20:18 2024 +0800|luci: fix typo in controller
-</details>
