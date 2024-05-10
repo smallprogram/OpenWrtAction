@@ -1,8 +1,0 @@
-<details> <summary> <b>lean luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-0191870|coolsnowwolf|Thu May 9 23:47:51 2024 +0800|luci-proto-ppp: override mac to pppoe
-f9dfa30|coolsnowwolf|Thu May 9 22:09:41 2024 +0800|luci-mod-admin-full: update wireless new API config
-dd457f9|coolsnowwolf|Thu May 9 22:02:22 2024 +0800|luci-proto-ipv6: improve dhcpv6 support
-</details>

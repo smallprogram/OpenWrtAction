@@ -1,6 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-c6bb9a791|coolsnowwolf|Thu May 9 22:11:31 2024 +0800|target.mk: remove luci-newapi
-</details>
