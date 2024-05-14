@@ -1,0 +1,8 @@
+<details> <summary> <b>lean package new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6bfc9b16|HHJLKK|Tue May 14 17:51:16 2024 +0800|tailscale: Update to 1.66.1 (#813)
+e79dcf95|Miles Poupart|Tue May 14 17:51:04 2024 +0800|zerotier: refresh patches (#811)
+579e94a2|Albert Xu|Tue May 14 17:50:46 2024 +0800|qemu: Remove --disable-hax (#810)
+</details>

@@ -1,7 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-417283624|Álvaro Fernández Rojas|Fri May 10 13:39:07 2024 +0200|image: add missing DTC include directory
-a9ce86f16|Álvaro Fernández Rojas|Fri May 10 19:49:21 2024 +0200|kernel: add missing kernel 6.6 symbols
-</details>
