@@ -1,0 +1,7 @@
+<details> <summary> <b>passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+c62cdc5|lwb1978|Sat May 18 17:51:08 2024 +0800|luci: check connect optimization (#3193)
+73e9dcc|shendageasw|Sat May 18 17:50:45 2024 +0800|luci: add 149.112.112.112（Quad9）DNS option (#3202)
+</details>

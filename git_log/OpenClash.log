@@ -1,0 +1,42 @@
+<details> <summary> <b>openclash new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d0141ee1|vernesong|Sat May 18 19:57:12 2024 +0800|Merge branch 'dev'
+759306e2|vernesong|Sat May 18 19:41:07 2024 +0800|0.46.011
+80146d1b|vernesong|Sat May 18 19:13:29 2024 +0800|chore: refine
+062ddd15|vernesong|Sun May 5 21:02:28 2024 +0800|0.46.010
+346d82d2|vernesong|Sun May 5 21:01:46 2024 +0800|fix typo
+c5fbc161|vernesong|Sun May 5 21:01:27 2024 +0800|fix typo
+57a4db53|vernesong|Sun May 5 20:44:47 2024 +0800|0.46.009
+29109b33|vernesong|Sun May 5 20:43:45 2024 +0800|chore: add cdn select window for download
+baddc425|shendageasw|Sun May 5 02:11:32 2024 +0800|config: readjust the fallback group (#3872)
+e26adde4|vernesong|Wed May 1 18:14:12 2024 +0800|fix typo
+7256d89a|vernesong|Tue Apr 30 02:19:06 2024 +0800|0.46.008
+dc144195|vernesong|Tue Apr 30 02:15:41 2024 +0800|chore: #3863
+e9575929|vernesong|Sun Apr 28 16:10:53 2024 +0800|chore: refine
+c0cd0f19|zxlhhyccc|Sat Apr 20 07:04:51 2024 +0800|Fixed an issue with the official latest master branch not working. (#3853)
+5f0a7c03|vernesong|Mon Apr 15 07:57:01 2024 +0800|0.46.007
+a7281cb2|vernesong|Mon Apr 15 07:56:46 2024 +0800|chore: refine
+f8ddf1ec|vernesong|Sat Apr 13 18:35:15 2024 +0800|chore: refine ip result
+e110c069|vernesong|Wed Apr 10 10:40:37 2024 +0800|fix typo
+3d554272|vernesong|Tue Apr 9 23:24:37 2024 +0800|0.46.006
+316e979c|vernesong|Tue Apr 9 22:32:39 2024 +0800|workflow: refine
+97859669|vernesong|Tue Apr 9 15:31:19 2024 +0800|workflow: fix error
+3c4a0f70|vernesong|Tue Apr 9 15:27:32 2024 +0800|workflow: test
+19fe6f62|vernesong|Tue Apr 9 14:35:38 2024 +0800|workflow: fix typo
+ceb0b863|vernesong|Tue Apr 9 06:36:28 2024 +0800|workflow: refine
+1d2016ff|vernesong|Tue Apr 9 06:26:28 2024 +0800|workflow: meta
+e95e72c6|vernesong|Tue Apr 9 05:50:42 2024 +0800|chore: #3834
+266be0a0|vernesong|Fri Mar 22 10:37:57 2024 +0800|chore: refine
+c23f1391|vernesong|Fri Mar 22 10:25:10 2024 +0800|chore: refine
+7b70f798|vernesong|Fri Mar 22 10:11:48 2024 +0800|fix #3816
+6cd46b2e|vernesong|Tue Mar 19 19:23:51 2024 +0800|0.46.005
+7c0009cd|vernesong|Tue Mar 19 18:16:47 2024 +0800|fix typo
+fb323351|vernesong|Mon Mar 18 22:25:22 2024 +0800|0.46.004
+a6784690|zxlhhyccc|Mon Mar 18 22:10:28 2024 +0800|luci-app-openclash: Update translate (#3807)
+f0c1cffa|bcseputetto|Fri Mar 15 22:07:09 2024 +0800|fix add_utun_firewall_zone (#3802)
+fa1cc40f|snachx|Thu Mar 14 01:36:46 2024 +0800|IPv6 support for dns debugging and skip proxy address feature (#3801)
+b12c0167|zxlhhyccc|Mon Mar 11 14:06:36 2024 +0800|Fix the protocol that exists in the configuration file when the protocol is not configured. (#3794)
+b384325f|zxlhhyccc|Sun Mar 10 16:50:40 2024 +0800|add Port Hopping (#3792)
+</details>

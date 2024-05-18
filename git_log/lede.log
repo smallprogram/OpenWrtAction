@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-19e494cfe|Beginner|Sat May 18 06:30:07 2024 +0800|kernel: bump 5.15 to 5.15.159 (#12166)
+bcbc08ab4|Beginner|Sat May 18 15:50:32 2024 +0800|kernel: bump 6.6 to 6.6.31 (#12164)
+638fe853a|Beginner|Sat May 18 15:50:13 2024 +0800|kernel: bump 6.1 to 6.1.91 (#12165)
 </details>
