@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt routing new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b0f316a|Axel Neumann|Sun May 19 16:12:09 2024 +0200|bmx7: Fix for mbedtls-3.6.0
+</details>
