@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d49fa04|coolsnowwolf|Mon May 20 16:05:26 2024 +0800|luci: add luci support for PPPWN
+8db02ef|coolsnowwolf|Tue May 21 00:13:42 2024 +0800|luci-app-pppwn: add GoldHEN Payload and logs
 </details>
