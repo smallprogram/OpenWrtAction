@@ -1,0 +1,7 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+8ccd96e80|coolsnowwolf|Tue May 21 20:55:12 2024 +0800|kernel: asymmetric: Add missing dependency on CRYPTO_SIG for 6.6
+5376eb13b|coolsnowwolf|Tue May 21 20:49:55 2024 +0800|ramips: improve AP-MT7621A-V60 EVB support
+</details>
