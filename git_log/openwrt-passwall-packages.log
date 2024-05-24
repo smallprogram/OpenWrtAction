@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c7561d2|github-actions[bot]|Wed May 22 13:54:42 2024 +0800|xray-core: update to 1.8.12 (#219)
-2b1c162|github-actions[bot]|Wed May 22 13:54:32 2024 +0800|xray-plugin: update to 1.8.12 (#220)
+ee20df9|CATTERY|Thu May 23 20:17:53 2024 +0800|dns2tcp: update to 1.1.1 (#224)
+faac82f|github-actions[bot]|Thu May 23 09:21:05 2024 +0800|xray-core: update to 1.8.13 (#223)
 </details>

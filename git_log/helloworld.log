@@ -1,0 +1,9 @@
+<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b7d1d04|Beginner|Fri May 24 02:03:11 2024 +0800|dns2tcp: sync upstream (#1481)
+f6120c1|zxlhhyccc|Fri May 24 01:45:00 2024 +0800|xray-core: update to 1.8.13 (#1480)
+f2b08db|Beginner|Wed May 22 21:53:20 2024 +0800|xray-core: update to 1.8.12
+fa5405f|Beginner|Wed May 22 21:52:36 2024 +0800|xray-plugin: update to 1.8.12
+</details>

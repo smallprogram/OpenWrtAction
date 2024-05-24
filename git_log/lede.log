@@ -1,0 +1,9 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+1144959ad|Daniel Golle|Fri Aug 4 14:07:43 2023 +0100|mediatek: filogic: mt7988: mark RTC clock as critical
+f643c08df|Daniel Golle|Sun Aug 13 14:57:10 2023 +0100|generic: 5.15: rename patches to match correct version
+8f988ed37|Daniel Golle|Mon Jul 31 18:05:22 2023 +0100|mediatek: filogic: enable driver for MediaTek XS-PHY
+563de907f|John Crispin|Mon May 13 07:36:24 2024 +0200|arm-trusted-firmware-mediatek: add mt7981 ddr4 builds
+</details>
