@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b49e163a9|Rany Hany|Mon May 6 01:39:58 2024 +0300|mediatek: fix broken PCIe caused by kernel update
-813a3468e|Rui Salvaterra|Wed May 8 22:04:55 2024 +0100|linux-firmware: realtek: update rtl8821ae firmware
+85171714a|coolsnowwolf|Sat May 25 04:10:58 2024 +0800|ipq60xx: add support for JD Cloud AX1800 Pro
 </details>
