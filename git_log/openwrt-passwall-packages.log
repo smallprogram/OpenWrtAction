@@ -1,7 +1,0 @@
-<details> <summary> <b>passwall packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-ee20df9|CATTERY|Thu May 23 20:17:53 2024 +0800|dns2tcp: update to 1.1.1 (#224)
-faac82f|github-actions[bot]|Thu May 23 09:21:05 2024 +0800|xray-core: update to 1.8.13 (#223)
-</details>
