@@ -1,0 +1,9 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d57b79961|Beginner|Sun May 26 18:30:08 2024 +0800|kernel: bump 5.10 to 5.10.218 (#12190)
+73d37cb1d|Beginner|Sun May 26 18:00:11 2024 +0800|kernel: bump 5.15 to 5.15.160 (#12188)
+63af18b5a|Shiji Yang|Sun Mar 20 23:42:37 2022 +0800|ramips: add support for H3C TX180x series devices
+85171714a|coolsnowwolf|Sat May 25 04:10:58 2024 +0800|ipq60xx: add support for JD Cloud AX1800 Pro
+</details>
