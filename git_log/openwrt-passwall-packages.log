@@ -1,7 +1,0 @@
-<details> <summary> <b>passwall packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-fcd0801|zhusir|Sun May 26 15:56:59 2024 +0800|shadowsocks-rust: udpate hash fixed [Bug]: 拉取最新源码编译报错 #227
-80867c3|github-actions[bot]|Sun May 26 00:15:50 2024 +0800|shadowsocks-rust: update to 1.19.0 (#226)
-</details>

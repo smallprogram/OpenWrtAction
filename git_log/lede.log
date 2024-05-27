@@ -2,8 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d57b79961|Beginner|Sun May 26 18:30:08 2024 +0800|kernel: bump 5.10 to 5.10.218 (#12190)
-73d37cb1d|Beginner|Sun May 26 18:00:11 2024 +0800|kernel: bump 5.15 to 5.15.160 (#12188)
-63af18b5a|Shiji Yang|Sun Mar 20 23:42:37 2022 +0800|ramips: add support for H3C TX180x series devices
-85171714a|coolsnowwolf|Sat May 25 04:10:58 2024 +0800|ipq60xx: add support for JD Cloud AX1800 Pro
+d447f22e7|coolsnowwolf|Mon May 27 00:03:38 2024 +0800|hostapd: fix mbo module build
+13931a492|Beginner|Sun May 26 23:50:41 2024 +0800|kernel: bump 6.6 to 6.6.32 (#12186)
+481990743|Beginner|Sun May 26 23:50:17 2024 +0800|kernel: bump 6.1 to 6.1.92 (#12187)
+d88c0116f|coolsnowwolf|Sun May 26 23:29:20 2024 +0800|mtd: spi-nor: add support for Winbond W25Q512
+a459786ac|coolsnowwolf|Sun May 26 23:19:20 2024 +0800|mvebu: add support for QNAP QHora-321/322 with commo image
+57c907ddb|coolsnowwolf|Sun May 26 23:16:05 2024 +0800|base-files: add legacy-sdcard sysupgrade support
+86b8e436b|Beginner|Sun May 26 20:30:07 2024 +0800|kernel: bump 5.4 to 5.4.277 (#12191)
 </details>
