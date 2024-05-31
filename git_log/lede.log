@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0186d5207|coolsnowwolf|Wed May 29 10:35:11 2024 +0800|build: introduce PKG_BUILD_FLAGS
+3b8e07ae1|Sheng Huang|Mon May 6 13:51:27 2024 +0800|ramips: add support for JDCloud RE-CP-02
+22f1e5eab|Michael Lyle|Sat Oct 29 21:00:41 2022 -0700|ramips: gl-mt1300: downclock SPI to 50MHz
 </details>
