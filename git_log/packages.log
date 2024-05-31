@@ -1,7 +1,0 @@
-<details> <summary> <b>lean package new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-af92c811|coolsnowwolf|Fri May 31 11:38:38 2024 +0800|inotify-tools: fix link error on x86
-a6cba2ee|HHJLKK|Fri May 31 09:30:09 2024 +0800|haproxy: update to v3.0.0 (#822)
-</details>
