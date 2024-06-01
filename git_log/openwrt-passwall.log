@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-af556d2|Tianhe Y|Fri May 31 14:39:43 2024 +0800|luci: optimize the settings of shunt_rules fix #3230
+47d7784|Tianhe Y|Fri May 31 23:01:18 2024 +0800|luci: bump version 4.77-6
+27f323d|Tianhe Y|Fri May 31 22:22:25 2024 +0800|luci: add some probe urls for xray balancer
+de2add4|Tianhe Y|Fri May 31 22:12:09 2024 +0800|luci: fix #3231
 </details>

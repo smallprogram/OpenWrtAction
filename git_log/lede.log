@@ -1,0 +1,7 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+9042bd040|Hauke Mehrtens|Sat May 25 18:27:32 2024 +0200|x86: 6.6: Activate CONFIG_FB_DEVICE
+258e84d30|Hauke Mehrtens|Sun May 26 23:53:10 2024 +0200|kernel: Add CONFIG_FB_DEVICE to kmod-fb
+</details>
