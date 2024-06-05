@@ -1,0 +1,6 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a5af3cafa|Hao Guan|Wed Jun 5 00:18:09 2024 +0800|tools: fix build on macOS Sonoma (#12212)
+</details>
