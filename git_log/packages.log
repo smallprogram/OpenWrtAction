@@ -1,6 +1,0 @@
-<details> <summary> <b>lean package new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-7d89c094|Hao Guan|Wed Jun 5 01:40:07 2024 +0800|nginx-util: fix compilation with GCC13 (#824)
-</details>

@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a5af3cafa|Hao Guan|Wed Jun 5 00:18:09 2024 +0800|tools: fix build on macOS Sonoma (#12212)
+cb1f2c6a5|aiamadeus|Wed May 29 23:15:09 2024 +0800|rockchip: fix rk3568 nvme detection issue
 </details>

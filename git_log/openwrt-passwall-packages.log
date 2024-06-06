@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9c794e7|zhusir|Tue Jun 4 22:32:19 2024 +0800|dns2tcp: fixed #231
+bd58625|zhusir|Wed Jun 5 23:27:33 2024 +0800| hysteria: add major version suffix v2
+9c85da1|github-actions[bot]|Wed Jun 5 15:03:30 2024 +0800|hysteria: update to 2.4.5 (#232)
 </details>
