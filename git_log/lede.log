@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a87cb8cd9|aiamadeus|Mon Apr 22 23:09:37 2024 +0800|rockchip: sync rk3568 upstream dts changes
+5c11df48a|coolsnowwolf|Fri Jun 7 12:48:08 2024 +0800|qualcommax: ipq60xx: add reserved NSS memory nodes
 </details>
