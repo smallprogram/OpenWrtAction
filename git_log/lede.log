@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cb1f2c6a5|aiamadeus|Wed May 29 23:15:09 2024 +0800|rockchip: fix rk3568 nvme detection issue
+a87cb8cd9|aiamadeus|Mon Apr 22 23:09:37 2024 +0800|rockchip: sync rk3568 upstream dts changes
 </details>
