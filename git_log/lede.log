@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-be9a39901|Daniel Golle|Mon Apr 8 19:35:27 2024 +0100|uboot-mediatek: snfi: FM35Q1GA is x4-only
-b3bbc4b90|Daniel Golle|Mon Apr 8 17:46:33 2024 +0100|mediatek: improve reliability of Fidelix SPI-NAND
+94f8d8b73|IFV|Sun Jun 9 03:59:02 2024 -0700|autoconf-archive: fix ax_c_float_words_bigendian fails when lto enabled (#12227)
 </details>
