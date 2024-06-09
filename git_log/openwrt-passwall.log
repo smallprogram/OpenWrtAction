@@ -1,0 +1,7 @@
+<details> <summary> <b>passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a7f56b4|Liangbin Lian|Sun Jun 9 01:35:22 2024 +0800|luci: fix app.sh check_depends fail on installing (#3252)
+ff2ab98|lwb1978|Sun Jun 9 01:34:43 2024 +0800|luci: add dns redirection and optimization (#3254)
+</details>

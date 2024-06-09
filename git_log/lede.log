@@ -1,0 +1,7 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+be9a39901|Daniel Golle|Mon Apr 8 19:35:27 2024 +0100|uboot-mediatek: snfi: FM35Q1GA is x4-only
+b3bbc4b90|Daniel Golle|Mon Apr 8 17:46:33 2024 +0100|mediatek: improve reliability of Fidelix SPI-NAND
+</details>
