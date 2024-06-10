@@ -1,0 +1,18 @@
+<details> <summary> <b>openclash new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+dd5e07d8|vernesong|Mon Jun 10 10:48:13 2024 +0800|Merge branch 'dev'
+50ef8b8b|vernesong|Mon Jun 10 10:45:58 2024 +0800|0.46.014
+cd8a0107|vernesong|Mon Jun 10 10:45:12 2024 +0800|chore: refine
+e31b87c1|vernesong|Mon Jun 10 10:12:22 2024 +0800|fix error
+4359f3d7|vernesong|Mon Jun 10 09:53:37 2024 +0800|chore: refine
+6f8233ec|vernesong|Sat Jun 1 15:54:13 2024 +0800|chore: refine
+2513ee1b|vernesong|Fri May 31 10:59:28 2024 +0800|0.46.013
+3a5506fb|vernesong|Fri May 31 10:56:20 2024 +0800|fix typo
+f55578f7|vernesong|Thu May 23 18:55:16 2024 +0800|0.46.012
+932d8dd7|vernesong|Thu May 23 18:54:48 2024 +0800|chore: update rules
+11d776ef|vernesong|Thu May 23 18:52:06 2024 +0800|chore: fix error
+d9c67099|vernesong|Mon May 20 16:15:39 2024 +0800|chore: retry for ipk update
+ba9d8eb9|vernesong|Mon May 20 11:26:04 2024 +0800|chore: fix typo
+</details>
