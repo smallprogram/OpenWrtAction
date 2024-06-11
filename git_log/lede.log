@@ -1,0 +1,7 @@
+<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+dbf65dd82|Daniel Golle|Mon Apr 8 21:43:38 2024 +0100|arm-trusted-firmware-mediatek: import patchset for Fidelix flash on SNFI
+d5ae67bea|Daniel Golle|Mon Apr 8 21:40:34 2024 +0100|arm-trusted-firmware-mediatek: update to MediaTek-patched v2.10.0
+</details>
