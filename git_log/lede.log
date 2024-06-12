@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dbf65dd82|Daniel Golle|Mon Apr 8 21:43:38 2024 +0100|arm-trusted-firmware-mediatek: import patchset for Fidelix flash on SNFI
-d5ae67bea|Daniel Golle|Mon Apr 8 21:40:34 2024 +0100|arm-trusted-firmware-mediatek: update to MediaTek-patched v2.10.0
+176eb7d8e|Daniel Golle|Thu May 30 12:06:26 2024 +0100|generic: 6.6: net: sfp-bus: fix SFP mode detect from bitrate
+a07fca99c|Daniel Golle|Mon Sep 11 22:49:59 2023 +0100|kernel: serial: 8250_mtk: track busclk state to avoid bus error
 </details>
