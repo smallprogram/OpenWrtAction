@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e5dffcadd|Daniel Golle|Fri Aug 25 04:09:28 2023 +0100|mediatek: generate bootloader artifacts for mt7988_rfb
+50bebefb6|coolsnowwolf|Thu Jun 13 20:03:57 2024 +0800|qualcommax: add Redmi AX5 JDCloud emmc f2fs overlay support
+1b205aafd|coolsnowwolf|Thu Jun 13 19:54:57 2024 +0800|qualcommax: add qca-nss-ecm kernel support
 </details>
