@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-176eb7d8e|Daniel Golle|Thu May 30 12:06:26 2024 +0100|generic: 6.6: net: sfp-bus: fix SFP mode detect from bitrate
-a07fca99c|Daniel Golle|Mon Sep 11 22:49:59 2023 +0100|kernel: serial: 8250_mtk: track busclk state to avoid bus error
+e5dffcadd|Daniel Golle|Fri Aug 25 04:09:28 2023 +0100|mediatek: generate bootloader artifacts for mt7988_rfb
 </details>
