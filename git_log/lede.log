@@ -2,11 +2,19 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+aeb660ba5|coolsnowwolf|Tue Apr 30 23:17:37 2024 +0800|autocore: add nss usage display on index
+2fc5d8058|coolsnowwolf|Sun May 12 23:17:30 2024 +0800|qualcommax: fix mmc upgrade for ipq60xx
+809226391|coolsnowwolf|Sat May 4 20:32:16 2024 +0800|qualcommax: add all nss support package
+568f5ab87|coolsnowwolf|Fri May 3 20:32:17 2024 +0800|package: add nss packages for qualcommax
+935b13b61|coolsnowwolf|Wed May 1 23:19:54 2024 +0800|qualcommax: add qca-nss-ecm kernel support
 fdd69dee6|coolsnowwolf|Thu Jun 13 22:25:51 2024 +0800|Version update to R24.6.6
 5a5fdc39e|coolsnowwolf|Thu Jun 13 22:21:38 2024 +0800|qualcommax: ipq60xx add more model nss support
+fb42176cd|Daniel Golle|Sat Aug 26 02:19:18 2023 +0100|generic: sync MediaTek Ethernet driver with upstream
 2fe61cd53|coolsnowwolf|Thu Jun 13 22:19:32 2024 +0800|qualcommax: ipq60xx: switch to generic emmc_do_upgrade sysupgrade
 9ef121fda|coolsnowwolf|Thu Jun 13 21:12:47 2024 +0800|autocore: add nss usage display on index page
 fe9987839|coolsnowwolf|Thu Jun 13 20:45:12 2024 +0800|qualcommax: ipq60xx: also add mmc_do_upgrade support
 c7d017c06|coolsnowwolf|Thu Jun 13 20:42:16 2024 +0800|qualcommax: ipq60xx: add nss support package
 5625bc4d3|coolsnowwolf|Thu Jun 13 20:32:17 2024 +0800|package: add qca nss packages
+50bebefb6|coolsnowwolf|Thu Jun 13 20:03:57 2024 +0800|qualcommax: add Redmi AX5 JDCloud emmc f2fs overlay support
+1b205aafd|coolsnowwolf|Thu Jun 13 19:54:57 2024 +0800|qualcommax: add qca-nss-ecm kernel support
 </details>
