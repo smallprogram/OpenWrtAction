@@ -8,9 +8,11 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: test
+name: TEST
 
 on:
+  repository_dispatch:
+    types: [openwrt_source_update]
   workflow_dispatch:
     inputs:
       ssh:
@@ -42,97 +44,89 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
-  job_build:
+  job_init: 
     runs-on: ubuntu-latest
-    name: Build-OpenWrt-${{ matrix.platforms }}
-    strategy:
-      fail-fast: false
-      matrix:
-        platforms: [X86, R5S, R5C, R4S, R4SE, R2S, R2C, H66K, H68K, H69K, R66S, R68S, R_PI_3b, R_PI_4b]
-    steps:
-      - name: Initialization Environment
-        id: compile
-        run: |
-            exit 1
-            # if [[ "${{ matrix.platforms }}" == "X86" ]]; then
-            #   exit 1   --如果修改为0，保证matrix都执行成功，那么job_test和job_organize_git_log才会执行
-            # else
-            #   exit 0
-            # fi
-
-
-  build_status_flag:
-    needs: job_build
-    if: ${{ always() }}
-    name: Build-Status-Flag
-    runs-on: ubuntu-latest
+    name: Build-Init
     outputs:
-      checking_build_status: ${{ steps.status_checking.outputs.status }}
+      output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
+      output_sha: ${{steps.commit.outputs.commit_hash }}
     steps:
-      - name: Build_status_checking
-        id: status_checking
+      - name: Generate Tag Name
+        id: gen_release_tag
         run: |
-          json_data=$(curl -s -H "Authorization: Bearer ${{ github.token }}" "https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs")
-          name_conclusion_array=($(echo "$json_data" | jq -r '.jobs[] | select(.name | startswith("Build-OpenWrt-")) | "\(.name).\(.conclusion)"'))
+          echo "release_tag=multi-platform_$(date +"%Y.%m.%d_%H.%M.%S")" >> $GITHUB_OUTPUT
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown $USER:$GROUPS /workdir
+          cd /workdir
+          sudo mkdir -p output
+          sudo chown $USER:$GROUPS /workdir/output
+          ln -sf /workdir/output $GITHUB_WORKSPACE/output
 
-          platforms=(X86 R5S R5C R4S R4SE R2S R2C H66K H68K H69K R66S R68S R_PI_3b R_PI_4b)
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 0
+
+      - name: Clone Source Code
+        working-directory: /workdir
+        run: |
+          git clone $REPO_URL -b $REPO_BRANCH openwrt
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+
+      - name: SSH connection to Actions
+        uses: mxschmitt/action-tmate@v3.16
+        if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
+
+      - name: Generate Release Tag
+        id: tag
+        run: |
+          echo "## :mega:Update content" >> release.txt
+
+          echo "![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/${{ steps.gen_release_tag.outputs.release_tag }}/total?style=flat-square)" >> release.txt
+
+          echo "### Firmware Information" >> release.txt
+
+          echo "**:loudspeaker:Cancel the ext4 format and only keep the squashfs format.**" >> release.txt
+          echo "**:computer:Including traditional IMG format firmware and UEFI boot firmware.**" >> release.txt
+          echo "**:cd:Including qcow2 format firmware and UEFI boot firmware supporting pve virtual machine.**" >> release.txt
+          echo "**:cd:Including vdi format firmware and UEFI boot firmware supporting Visual Box virtual machine.**" >> release.txt
+          echo "**:cd:Including vhdx format firmware and UEFI boot firmware supporting Hyper-v virtual machines.**" >> release.txt
+          echo "**:dvd:Including vmdk format firmware and UEFI boot firmware that support ESXi virtual machines (8.0 requires tool conversion).**" >> release.txt
+          echo "" >> release.txt
+
+          echo "### Openwrt Information" >> release.txt
+
+          echo "**:minidisc: OpenWrt Version: $(grep -o "DISTRIB_REVISION='[^']*'" $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/files/zzz-default-settings | sed "s/DISTRIB_REVISION='\([^']*\)'/\1/")**" >> release.txt
           
-          is_success_compiled=false
-          for ((i = 0; i < ${#platforms[@]}; i++)); do
-            if $is_success_compiled; then break; fi
-            platform="${platforms[i]}"
-            for item in "${name_conclusion_array[@]}"; do
-              IFS='.' read -r name conclusion <<< "$item"
-              if [[ "$name" == "Build-OpenWrt-$platform" ]]; then
-                if [[ "$conclusion" == "success" ]]; then
-                  is_success_compiled=true
-                  break
-                fi
-              fi
-            done
-          done
+          PKG_VERSION=$(grep -oP 'PKG_VERSION:=\K[^ ]+' "$GITHUB_WORKSPACE/openwrt/package/lean/default-settings/Makefile")
+          PKG_RELEASE=$(grep -oP 'PKG_RELEASE:=\K[^ ]+' "$GITHUB_WORKSPACE/openwrt/package/lean/default-settings/Makefile")
+          echo "**:gear: Default-Setting Version: $PKG_VERSION.$PKG_RELEASE**" >> release.txt
 
-          echo "-------------------build status--------------------------"
-          for item in "${name_conclusion_array[@]}"; do
-            IFS='.' read -r name conclusion <<< "$item"
-            echo "Name: $name"
-            echo "Conclusion: $conclusion"
-          done
-          echo "-----------------------------------------------------------"
+          echo "### Compile Information" >> release.txt
 
-            
+          kernel_X86=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/x86/Makefile)
+          kernel_rockchip=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile)
+          kernel_bcm27xx=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/bcm27xx/Makefile)
 
-            if $is_success_compiled; then
-              echo "status=success" >> $GITHUB_OUTPUT
-              echo "Compilation succeeded for at least one platform."
-            else
-              echo "status=failed" >> $GITHUB_OUTPUT
-              echo "Compilation failed for all platforms."
-            fi
+          echo "platform|kernel|compile status" >> release.txt
+          echo "-|-|-" >> release.txt
+          echo "**:ice_cube: X86**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_X86} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+          echo "**:ice_cube: R5S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+          echo "**:ice_cube: R5C**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+          echo "**:ice_cube: R4S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+          echo "**:ice_cube: R4SE**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+          echo "**:ice_cube: R2S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+          echo "**:ice_cube: R2C**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+          echo "**:ice_cube: H66K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+          echo "**:ice_cube: H68K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+          echo "**:ice_cube: H69K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+          echo "**:ice_cube: R66S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+          echo "**:ice_cube: R68S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+          echo "**:ice_cube: R_Pi_3b**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
+          echo "**:ice_cube: R_Pi_4b**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
 
-      - name: Build_status_checking
-        id: test
-        run: |
-          echo "${{steps.status_checking.outputs.status}}"
+          touch release.txt
+          echo "status=success" >> $GITHUB_OUTPUT
 
-  job_test:
-    needs: [build_status_flag]
-    runs-on: ubuntu-latest
-    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
-    name: dddd
-        
-    steps:
-    - name: ddd
-      run: |
-        echo "${{ needs.build_status_flag.outputs.checking_build_status}}"
-
-  job_organize_git_log:
-    needs: [job_build, build_status_flag]
-    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
-    runs-on: ubuntu-latest
-    name: Organize-Git-Log
-       
-    steps:
-    - name: Generate Git Log
-      run: |
-        echo "success"
+ 
