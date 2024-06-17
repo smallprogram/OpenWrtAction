@@ -120,60 +120,36 @@ jobs:
           line028="**:ice_cube: R_Pi_4b**|**$kernel_bcm27xx_version')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)"
 
           echo $line001 >> release.txt
-          echo "1111111111111111111111111111111111"
           echo $line002 >> release.txt
-          echo "1111111111111111111111111111111111"
           echo $line003 >> release.txt
-          echo "1111111111111111111111111111111111"
           echo $line004 >> release.txt
-          echo "1111111111111111111111111111111111"
-          echo $line005 >> release.txt
-          echo "1111111111111111111111111111111111"
-          echo $line006 >> release.txt
-          echo "1111111111111111111111111111111111"
-          echo $line007 >> release.txt
-          echo "1111111111111111111111111111111111"
-          echo $line008 >> release.txt
-          echo "1111111111111111111111111111111111"
-          echo $line009 >> release.txt
-          echo "1111111111111111111111111111111111"
-          echo $line010 >> release.txt
-          echo "1111111111111111111111111111111111"
+          echo $line005 >> release.txt        
+          echo $line006 >> release.txt         
+          echo $line007 >> release.txt       
+          echo $line008 >> release.txt        
+          echo $line009 >> release.txt   
+          echo $line010 >> release.txt  
           # echo $line011 >> release.txt
-          echo $line012 >> release.txt
-          echo "1111111111111111111111111111111111"
+          echo $line012 >> release.txt 
           echo $line013 >> release.txt
-          echo "1111111111111111111111111111111111"
           echo $line014 >> release.txt
-          echo "1111111111111111111111111111111111"
           echo $line015 >> release.txt
-          echo "1111111111111111111111111111111111"
           echo $line016 >> release.txt
-          echo "1111111111111111111111111111111111"
           echo $line017 >> release.txt
-          echo "1111111111111111111111111111111111"
           echo $line018 >> release.txt
-          echo "1111111111111111111111111111111111"
           echo $line019 >> release.txt
-          echo "1111111111111111111111111111111111"
           echo $line020 >> release.txt
-          echo "1111111111111111111111111111111111"
-          echo $line021 >> release.txt
-          echo "1111111111111111111111111111111111"
-          echo $line022 >> release.txt
-          echo "1111111111111111111111111111111111"
-          echo $line023 >> release.txt
-          echo "1111111111111111111111111111111111"
-          echo $line024 >> release.txt
-          echo "1111111111111111111111111111111111"
-          echo $line025 >> release.txt
-          echo "1111111111111111111111111111111111"
-          echo $line026 >> release.txt
-          echo "1111111111111111111111111111111111"
-          echo $line027 >> release.txt
-          echo "1111111111111111111111111111111111"
+          echo $line021 >> release.txt         
+          echo $line022 >> release.txt          
+          echo $line023 >> release.txt          
+          echo $line024 >> release.txt          
+          echo $line025 >> release.txt          
+          echo $line026 >> release.txt          
+          echo $line027 >> release.txt          
           echo $line028 >> release.txt
-          echo "1111111111111111111111111111111111"
+          
+          cat release.txt
+
           touch release.txt
           echo 'status=success' >> $GITHUB_OUTPUT
 
