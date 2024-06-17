@@ -32,8 +32,6 @@
 
 > 详细信息请参考release中的说明
 
-### [更新频率投票~](https://github.com/smallprogram/OpenWrtAction/discussions/13)
-
 <!-- |[![Build-OpenWrt_X86](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_X86.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_X86.yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|
 |[![Build-OpenWrt_R5S](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_R5S.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_R5S.yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|
 |[![Build-OpenWrt_R4S](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_R4S.yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_R4S.yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|
