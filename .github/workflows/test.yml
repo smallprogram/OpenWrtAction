@@ -123,12 +123,12 @@ jobs:
           echo $line002 >> release.txt
           echo $line003 >> release.txt
           echo $line004 >> release.txt
-          echo $line005 >> release.txt        
-          echo $line006 >> release.txt         
-          echo $line007 >> release.txt       
-          echo $line008 >> release.txt        
-          echo $line009 >> release.txt   
-          echo $line010 >> release.txt  
+          echo $line005 >> release.txt
+          echo $line006 >> release.txt
+          echo $line007 >> release.txt
+          echo $line008 >> release.txt
+          echo $line009 >> release.txt
+          echo $line010 >> release.txt
           # echo $line011 >> release.txt
           echo $line012 >> release.txt 
           echo $line013 >> release.txt
@@ -139,18 +139,13 @@ jobs:
           echo $line018 >> release.txt
           echo $line019 >> release.txt
           echo $line020 >> release.txt
-          echo $line021 >> release.txt         
-          echo $line022 >> release.txt          
-          echo $line023 >> release.txt          
-          echo $line024 >> release.txt          
-          echo $line025 >> release.txt          
-          echo $line026 >> release.txt          
-          echo $line027 >> release.txt          
+          echo $line021 >> release.txt
+          echo $line022 >> release.txt
+          echo $line023 >> release.txt
+          echo $line024 >> release.txt
+          echo $line025 >> release.txt
+          echo $line026 >> release.txt
+          echo $line027 >> release.txt
           echo $line028 >> release.txt
-          
-          cat release.txt
-
           touch release.txt
           echo 'status=success' >> $GITHUB_OUTPUT
-
- 
