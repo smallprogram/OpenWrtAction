@@ -154,7 +154,7 @@ jobs:
           line025="**:ice_cube: R66S**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
           line026="**:ice_cube: R68S**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
           line027="**:ice_cube: R_Pi_3b**|**$kernel_bcm27xx_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line028="**:ice_cube: R_Pi_4b**|**$kernel_bcm27xx_version')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)"
+          line028="**:ice_cube: R_Pi_4b**|**$kernel_bcm27xx_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)"
 
           echo $line001 >> release.txt
           echo $line002 >> release.txt
@@ -731,7 +731,7 @@ jobs:
           for ((i = 0; i < ${#platforms[@]}; i++)); do
             platform="${platforms[i]}"
             is_error=false
-            row=$((i+17))s
+            row=$((i+14))s
             for item in "${name_conclusion_array[@]}"; do
               IFS='.' read -r name conclusion <<< "$item"          
               if [[ "$name" == "Build-OpenWrt-$platform" ]]; then
