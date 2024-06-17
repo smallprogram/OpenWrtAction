@@ -286,6 +286,7 @@ jobs:
         run: |
           sudo -E apt-get -qq update
           sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends)
+          sudo -E apt-get -qq install -y build-essential cpulimit
           sudo -E apt-get -qq autoremove --purge
           sudo -E apt-get -qq clean
           sudo timedatectl set-timezone "$TZ"
@@ -361,7 +362,7 @@ jobs:
                 is_complie_error=${PIPESTATUS[0]}
             else
                 echo "$(nproc) threads compile tools"
-                make tools/compile -j$(nproc) V=s
+                make tools/compile -j$(nproc) V=s & MAKE_PID=$! && sudo cpulimit -p $MAKE_PID -l 99 && wait $MAKE_PID
                 is_complie_error=${PIPESTATUS[0]}
             fi
           else
@@ -371,7 +372,7 @@ jobs:
                 is_complie_error=${PIPESTATUS[0]}
             else
                 echo "$(nproc) threads compile tools"
-                make tools/compile -j$(nproc)
+                make tools/compile -j$(nproc) & MAKE_PID=$! && sudo cpulimit -p $MAKE_PID -l 99 && wait $MAKE_PID
                 is_complie_error=${PIPESTATUS[0]}
             fi
           fi
@@ -399,7 +400,7 @@ jobs:
                 is_complie_error=${PIPESTATUS[0]}
             else
                 echo "$(nproc) threads compile toolchain"
-                make toolchain/compile -j$(nproc) V=s
+                make toolchain/compile -j$(nproc) V=s & MAKE_PID=$! && sudo cpulimit -p $MAKE_PID -l 99 && wait $MAKE_PID
                 is_complie_error=${PIPESTATUS[0]}
             fi
           else
@@ -409,7 +410,7 @@ jobs:
                 is_complie_error=${PIPESTATUS[0]}
             else
                 echo "$(nproc) threads compile toolchain"
-                make toolchain/compile -j$(nproc)
+                make toolchain/compile -j$(nproc) & MAKE_PID=$! && sudo cpulimit -p $MAKE_PID -l 99 && wait $MAKE_PID
                 is_complie_error=${PIPESTATUS[0]}
             fi
           fi
@@ -437,7 +438,7 @@ jobs:
                 is_complie_error=${PIPESTATUS[0]}
             else
                 echo "$(nproc) threads compile frimware"
-                make -j$(nproc) V=s
+                make -j$(nproc) V=s & MAKE_PID=$! && sudo cpulimit -p $MAKE_PID -l 99 && wait $MAKE_PID
                 is_complie_error=${PIPESTATUS[0]}
             fi
           else
@@ -447,7 +448,7 @@ jobs:
                 is_complie_error=${PIPESTATUS[0]}
             else
                 echo "$(nproc) threads compile frimware"
-                make -j$(nproc)
+                make -j$(nproc) & MAKE_PID=$! && sudo cpulimit -p $MAKE_PID -l 99 && wait $MAKE_PID
                 is_complie_error=${PIPESTATUS[0]}
             fi
           fi
