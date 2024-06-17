@@ -81,51 +81,69 @@ jobs:
       - name: Generate Release Tag
         id: tag
         run: |
-          echo "## :mega:Update content" >> release.txt
-
-          echo "![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/${{ steps.gen_release_tag.outputs.release_tag }}/total?style=flat-square)" >> release.txt
-
-          echo "### Firmware Information" >> release.txt
-
-          echo "**:loudspeaker:Cancel the ext4 format and only keep the squashfs format.**" >> release.txt
-          echo "**:computer:Including traditional IMG format firmware and UEFI boot firmware.**" >> release.txt
-          echo "**:cd:Including qcow2 format firmware and UEFI boot firmware supporting pve virtual machine.**" >> release.txt
-          echo "**:cd:Including vdi format firmware and UEFI boot firmware supporting Visual Box virtual machine.**" >> release.txt
-          echo "**:cd:Including vhdx format firmware and UEFI boot firmware supporting Hyper-v virtual machines.**" >> release.txt
-          echo "**:dvd:Including vmdk format firmware and UEFI boot firmware that support ESXi virtual machines (8.0 requires tool conversion).**" >> release.txt
-          echo "" >> release.txt
-
-          echo "### Openwrt Information" >> release.txt
-
-          echo "**:minidisc: OpenWrt Version: $(grep -o "DISTRIB_REVISION='[^']*'" $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/files/zzz-default-settings | sed "s/DISTRIB_REVISION='\([^']*\)'/\1/")**" >> release.txt
-          
           PKG_VERSION=$(grep -oP 'PKG_VERSION:=\K[^ ]+' "$GITHUB_WORKSPACE/openwrt/package/lean/default-settings/Makefile")
           PKG_RELEASE=$(grep -oP 'PKG_RELEASE:=\K[^ ]+' "$GITHUB_WORKSPACE/openwrt/package/lean/default-settings/Makefile")
-          echo "**:gear: Default-Setting Version: $PKG_VERSION.$PKG_RELEASE**" >> release.txt
-
-          echo "### Compile Information" >> release.txt
-
           kernel_X86=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/x86/Makefile)
           kernel_rockchip=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile)
           kernel_bcm27xx=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/bcm27xx/Makefile)
+          
+          line001="![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/${{ steps.gen_release_tag.outputs.release_tag }}/total?style=flat-square)" 
+          line002="### Firmware Information" 
+          line003="**:loudspeaker:Cancel the ext4 format and only keep the squashfs format.**" 
+          line004="**:computer:Including traditional IMG format firmware and UEFI boot firmware.**" 
+          line005="**:cd:Including qcow2 format firmware and UEFI boot firmware supporting pve virtual machine.**" 
+          line006="**:cd:Including vdi format firmware and UEFI boot firmware supporting Visual Box virtual machine.**" 
+          line007="**:cd:Including vhdx format firmware and UEFI boot firmware supporting Hyper-v virtual machines.**" 
+          line008="**:dvd:Including vmdk format firmware and UEFI boot firmware that support ESXi virtual machines (8.0 requires tool conversion).**" 
+          line009="### Openwrt Information" 
+          line010="**:minidisc: OpenWrt Version: $(grep -o "DISTRIB_REVISION='[^']*'" $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/files/zzz-default-settings | sed "s/DISTRIB_REVISION='\([^']*\)'/\1/")**" 
+          line011="**:gear: Default-Setting Version: $PKG_VERSION.$PKG_RELEASE**" 
+          line012="### Compile Information" 
+          line013="platform|kernel|compile status" 
+          line014="-|-|-" 
+          line015="**:ice_cube: X86**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_X86} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line016="**:ice_cube: R5S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line017="**:ice_cube: R5C**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line018="**:ice_cube: R4S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line019="**:ice_cube: R4SE**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line020="**:ice_cube: R2S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line021="**:ice_cube: R2C**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line022="**:ice_cube: H66K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line023="**:ice_cube: H68K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line024="**:ice_cube: H69K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line025="**:ice_cube: R66S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line026="**:ice_cube: R68S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line027="**:ice_cube: R_Pi_3b**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line028="**:ice_cube: R_Pi_4b**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)"
 
-          echo "platform|kernel|compile status" >> release.txt
-          echo "-|-|-" >> release.txt
-          echo "**:ice_cube: X86**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_X86} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-          echo "**:ice_cube: R5S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-          echo "**:ice_cube: R5C**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-          echo "**:ice_cube: R4S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-          echo "**:ice_cube: R4SE**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-          echo "**:ice_cube: R2S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-          echo "**:ice_cube: R2C**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-          echo "**:ice_cube: H66K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-          echo "**:ice_cube: H68K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-          echo "**:ice_cube: H69K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-          echo "**:ice_cube: R66S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-          echo "**:ice_cube: R68S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-          echo "**:ice_cube: R_Pi_3b**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-          echo "**:ice_cube: R_Pi_4b**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" >> release.txt
-
+          echo $line001 >> release.txt
+          echo $line002 >> release.txt
+          echo $line003 >> release.txt
+          echo $line004 >> release.txt
+          echo $line005 >> release.txt
+          echo $line006 >> release.txt
+          echo $line007 >> release.txt
+          echo $line008 >> release.txt
+          echo $line009 >> release.txt
+          echo $line010 >> release.txt
+          echo $line011 >> release.txt
+          echo $line012 >> release.txt
+          echo $line013 >> release.txt
+          echo $line014 >> release.txt
+          echo $line015 >> release.txt
+          echo $line016 >> release.txt
+          echo $line017 >> release.txt
+          echo $line018 >> release.txt
+          echo $line019 >> release.txt
+          echo $line020 >> release.txt
+          echo $line021 >> release.txt
+          echo $line022 >> release.txt
+          echo $line023 >> release.txt
+          echo $line024 >> release.txt
+          echo $line025 >> release.txt
+          echo $line026 >> release.txt
+          echo $line027 >> release.txt
+          echo $line028 >> release.txt
           touch release.txt
           echo "status=success" >> $GITHUB_OUTPUT
 
