@@ -54,8 +54,8 @@ jobs:
       - name: Generate Tag Name
         id: gen_release_tag
         run: |
-          echo "release_tag=multi-platform_$(date +"%Y.%m.%d_%H.%M.%S")" >> $GITHUB_OUTPUT
-          sudo timedatectl set-timezone "$TZ"
+          echo 'release_tag=multi-platform_$(date +'%Y.%m.%d_%H.%M.%S')' >> $GITHUB_OUTPUT
+          sudo timedatectl set-timezone '$TZ'
           sudo mkdir -p /workdir
           sudo chown $USER:$GROUPS /workdir
           cd /workdir
@@ -81,11 +81,14 @@ jobs:
       - name: Generate Release Tag
         id: tag
         run: |
-          PKG_VERSION=$(grep -oP 'PKG_VERSION:=\K[^ ]+' "$GITHUB_WORKSPACE/openwrt/package/lean/default-settings/Makefile")
-          PKG_RELEASE=$(grep -oP 'PKG_RELEASE:=\K[^ ]+' "$GITHUB_WORKSPACE/openwrt/package/lean/default-settings/Makefile")
           kernel_X86=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/x86/Makefile)
+          kernel_X86_version=$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_X86} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')
           kernel_rockchip=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile)
+          kernel_rockchip_version=$kernel_rockchip_version
           kernel_bcm27xx=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/bcm27xx/Makefile)
+          kernel_bcm27xx_version=$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')
+          openwrt_version=$(grep -o "DISTRIB_REVISION='[^']*'" $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/files/zzz-default-settings | sed "s/DISTRIB_REVISION='\([^']*\)'/\1/")
+
           
           line001="![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/${{ steps.gen_release_tag.outputs.release_tag }}/total?style=flat-square)" 
           line002="### Firmware Information" 
@@ -96,55 +99,82 @@ jobs:
           line007="**:cd:Including vhdx format firmware and UEFI boot firmware supporting Hyper-v virtual machines.**" 
           line008="**:dvd:Including vmdk format firmware and UEFI boot firmware that support ESXi virtual machines (8.0 requires tool conversion).**" 
           line009="### Openwrt Information" 
-          line010="**:minidisc: OpenWrt Version: $(grep -o "DISTRIB_REVISION='[^']*'" $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/files/zzz-default-settings | sed "s/DISTRIB_REVISION='\([^']*\)'/\1/")**" 
-          line011="**:gear: Default-Setting Version: $PKG_VERSION.$PKG_RELEASE**" 
+          line010="**:minidisc: OpenWrt Version: $openwrt_version**" 
+          # line011="**:gear: Default-Setting Version: $PKG_VERSION.$PKG_RELEASE**" 
           line012="### Compile Information" 
           line013="platform|kernel|compile status" 
           line014="-|-|-" 
-          line015="**:ice_cube: X86**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_X86} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line016="**:ice_cube: R5S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line017="**:ice_cube: R5C**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line018="**:ice_cube: R4S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line019="**:ice_cube: R4SE**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line020="**:ice_cube: R2S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line021="**:ice_cube: R2C**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line022="**:ice_cube: H66K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line023="**:ice_cube: H68K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line024="**:ice_cube: H69K**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line025="**:ice_cube: R66S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line026="**:ice_cube: R68S**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line027="**:ice_cube: R_Pi_3b**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line028="**:ice_cube: R_Pi_4b**|**$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)"
+          line015="**:ice_cube: X86**|**$kernel_X86_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line016="**:ice_cube: R5S**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line017="**:ice_cube: R5C**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line018="**:ice_cube: R4S**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line019="**:ice_cube: R4SE**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line020="**:ice_cube: R2S**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line021="**:ice_cube: R2C**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line022="**:ice_cube: H66K**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line023="**:ice_cube: H68K**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line024="**:ice_cube: H69K**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line025="**:ice_cube: R66S**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line026="**:ice_cube: R68S**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line027="**:ice_cube: R_Pi_3b**|**$kernel_bcm27xx_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
+          line028="**:ice_cube: R_Pi_4b**|**$kernel_bcm27xx_version')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)"
 
           echo $line001 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line002 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line003 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line004 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line005 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line006 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line007 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line008 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line009 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line010 >> release.txt
-          echo $line011 >> release.txt
+          echo "1111111111111111111111111111111111"
+          # echo $line011 >> release.txt
           echo $line012 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line013 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line014 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line015 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line016 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line017 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line018 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line019 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line020 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line021 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line022 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line023 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line024 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line025 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line026 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line027 >> release.txt
+          echo "1111111111111111111111111111111111"
           echo $line028 >> release.txt
+          echo "1111111111111111111111111111111111"
           touch release.txt
-          echo "status=success" >> $GITHUB_OUTPUT
+          echo 'status=success' >> $GITHUB_OUTPUT
 
  
