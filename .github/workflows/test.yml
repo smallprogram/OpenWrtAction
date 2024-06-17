@@ -55,7 +55,7 @@ jobs:
         id: gen_release_tag
         run: |
           echo 'release_tag=multi-platform_$(date +'%Y.%m.%d_%H.%M.%S')' >> $GITHUB_OUTPUT
-          sudo timedatectl set-timezone '$TZ'
+          sudo timedatectl set-timezone 'Asia/Shanghai'
           sudo mkdir -p /workdir
           sudo chown $USER:$GROUPS /workdir
           cd /workdir
