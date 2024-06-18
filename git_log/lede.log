@@ -2,20 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+88d69f5ed|coolsnowwolf|Tue Apr 16 23:15:03 2024 +0800|package: nss-firmware: add Qualcomm IPQ5018 support
+a95c23c18|coolsnowwolf|Mon Apr 15 23:00:37 2024 +0800|qualcommax: ipq60xx: add JDCloud AX1800 Pro and AX6600 support
 0547c4833|coolsnowwolf|Mon Jun 17 15:30:09 2024 +0800|qualcommax: ipq807x: add TPLINK TL-ER2260T with 10Gbps SFP support
-0f039195d|coolsnowwolf|Mon Jun 17 15:10:08 2024 +0800|qualcommax: ipq807x: fix IPQ807x devices NSS build and nss-firmware
-edb64fde2|coolsnowwolf|Mon Jun 17 14:43:14 2024 +0800|qualcommax: ipq807x: add IPQ807x devices NSS support
-c1573c8ac|Beginner|Mon Jun 17 14:15:10 2024 +0800|kernel: bump 6.1 to 6.1.94 (#12245)
-5e947a9df|Beginner|Mon Jun 17 12:30:01 2024 +0800|kernel: bump 5.4 to 5.4.278 (#12247)
-781b3b4c0|Beginner|Mon Jun 17 10:00:02 2024 +0800|kernel: bump 5.10 to 5.10.219 (#12246)
-330337a64|Beginner|Sun Jun 16 22:41:02 2024 +0800|kernel: bump 5.15 to 5.15.161 (#12243)
-89db9c405|Beginner|Sun Jun 16 18:35:31 2024 +0800|kernel: bump 6.6 to 6.6.33 (#12236)
-a8156c5d1|Christian Marangi|Wed Aug 16 18:51:28 2023 +0200|generic: 6.1: backport patch adding support for LED PHY
-8340d2f0e|Christian Marangi|Wed Jun 21 11:35:33 2023 +0200|generic: 6.1: backport LEDs patch adding modes
-df60447f3|Christian Marangi|Mon Sep 12 18:40:16 2022 +0200|generic: 5.15: qca8k: backport code split patch
-fb661b474|Christian Marangi|Sun Jun 4 04:26:59 2023 +0200|generic: backport initial LEDs hw control support
-eb557774e|coolsnowwolf|Sat Jun 15 23:22:45 2024 +0800|qualcommax: add ipq8074-nss.dtsi for IPQ807x devices NSS support
-7b6fe1d69|coolsnowwolf|Sat Jun 15 23:07:03 2024 +0800|qualcommax: ipq60xx: add Xiaomi RM1800 (AX5) wireless support
-ca0d93bec|coolsnowwolf|Sat Jun 15 13:25:51 2024 +0800|Version update to R24.6.6
-e7b75aae8|coolsnowwolf|Sun Apr 21 17:39:40 2024 +0800|package: qca: fix target dependencies
 </details>
