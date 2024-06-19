@@ -1,8 +1,0 @@
-<details> <summary> <b>lean openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-88d69f5ed|coolsnowwolf|Tue Apr 16 23:15:03 2024 +0800|package: nss-firmware: add Qualcomm IPQ5018 support
-a95c23c18|coolsnowwolf|Mon Apr 15 23:00:37 2024 +0800|qualcommax: ipq60xx: add JDCloud AX1800 Pro and AX6600 support
-0547c4833|coolsnowwolf|Mon Jun 17 15:30:09 2024 +0800|qualcommax: ipq807x: add TPLINK TL-ER2260T with 10Gbps SFP support
-</details>
