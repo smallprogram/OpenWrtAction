@@ -12,6 +12,9 @@
 
 is_wsl2op=$1
 
+rm -rf ./package/custom_packages
+mkdir -p ./package/custom_packages
+
 # Modify default IP
 sed -i 's/192.168.1.1/10.10.0.253/g' package/base-files/files/bin/config_generate
 
@@ -20,13 +23,13 @@ sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' package/lean/default-settings/fi
 
 # Add Theme
 rm -rf ./feeds/luci/themes/luci-theme-argon
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git ./feeds/luci/themes/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git ./package/custom_packages/luci-theme-argon
 
 rm -rf ./package/lean/luci-app-argon-config
-git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git ./package/lean/luci-app-argon-config
+git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git ./package/custom_packages/luci-app-argon-config
 
 rm -rf ./package/lean/luci-app-adguardhome
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/lean/luci-app-adguardhome
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/custom_packages/luci-app-adguardhome
 
 # mosdns
 
@@ -34,17 +37,22 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/le
 # find ./ | grep Makefile | grep mosdns | xargs rm -f
 rm -rf ./feeds/luci/applications/luci-app-mosdns/
 rm -rf ./feeds/packages/net/mosdns/
-rm -rf ./package/custom_packages/mosdns
 # rm -rf feeds/packages/net/v2ray-geodata/
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 ./package/custom_packages/mosdns
 # git clone https://github.com/sbwml/v2ray-geodata ./package/custom_packages/v2ray-geodata
 
 
-# if [ ! -d "./package/lean/luci-app-argon-config" ]; then git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git ./package/lean/luci-app-argon-config;   else cd ./package/lean/luci-app-argon-config; git stash; git stash drop; git pull; cd ..; cd ..; cd ..; fi;
-# if [ ! -d "./package/lean/luci-app-adguardhome" ]; then git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/lean/luci-app-adguardhome;   else cd ./package/lean/luci-app-adguardhome; git stash; git stash drop; git pull; cd ..; cd ..; cd ..; fi;
 # git clone https://github.com/jerrykuku/lua-maxminddb.git
 # git clone https://github.com/jerrykuku/luci-app-vssr.git
-# git clone https://github.com/lisaac/luci-app-dockerman.git
+
+# docker
+rm -rf ./feeds/luci/applications/luci-app-dockerman
+rm -rf ./feeds/luci/applications/luci-app-docker
+git clone https://github.com/lisaac/luci-app-dockerman.git ./package/custom_packages/luci-app-dockerman
+
+# smartdns
+# 由lean package维护版本
+# git clone https://github.com/pymumu/smartdns.git ./package/custom_packages/smartdns
 
 
 # Reset drive type

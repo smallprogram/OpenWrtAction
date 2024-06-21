@@ -72,7 +72,6 @@
 |PassWall|插件|一款功能强大的科学工具|https://github.com/xiaorouji/openwrt-passwall|
 |PassWall2|插件|一款功能强大的科学工具|https://github.com/xiaorouji/openwrt-passwall2|
 |OpenClash|插件|配置自由度极高的科学工具|https://github.com/vernesong/OpenClash|
-|v2ray server|插件|v2ray服务端|lean code source|
 |DockerMan|插件|OP上玩Docker的必备插件|https://github.com/lisaac/luci-app-dockerman|
 |新版argon主题|主题|十分漂亮的OP主题|https://github.com/jerrykuku/luci-theme-argon|
 |Argon Config|插件|新版argon主题的设置插件|https://github.com/jerrykuku/luci-app-argon-config|
@@ -81,7 +80,6 @@
 |京东签到|插件|白嫖京豆插件|lean code source|
 |PushPlus全能推送|插件|钉钉、企业微信推送、Bark、PushPlus各种推送|https://github.com/zzsj0928/luci-app-pushbot|
 |网易云音乐Unlock|插件|周杰伦出现在网易云音乐|lean code source|
-|UU加速器|插件|土豪玩家必备插件，加速PS5 Switch等|lean code source|
 |FRP|插件|内网穿透|lean code source|
 |MWAN3|插件|多线的负载均衡|lean code source|
 |OpenVPN Server|服务|OpenVPN服务端|lean code source|

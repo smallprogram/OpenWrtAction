@@ -61,7 +61,6 @@
 |Jingdong Sign-in|Plugin|White Prostitution Jingdou Plugin|lean code source|
 |PushPlus Almighty Push|Plugin|DingTalk, Enterprise WeChat Push, Bark, PushPlus Various Push|https://github.com/zzsj0928/luci-app-pushbot|
 |NetEase Cloud Music Unlock|Plugin|Jay Chou appeared in NetEase Cloud Music|lean code source|
-|UU Accelerator|Plugins|A must-have plug-in for local players, to accelerate PS5 Switch, etc.|lean code source|
 |FRP|Plugin|Intranet penetration|lean code source|
 |MWAN3|Plugin|Multi-line load balancing|lean code source|
 |OpenVPN Server|Service|OpenVPN Server|lean code source|
