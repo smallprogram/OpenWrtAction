@@ -90,6 +90,9 @@ jobs:
           for i in "${platforms[@]}"; do
             [ -e config/$i.config ] && cp -r config/$i.config openwrt/.config
             cd openwrt
+            echo ""
+            echo "make defconfig for $i platform....."
+            echo "result:"
             make defconfig
             cd ..
             cp -f openwrt/.config config/$i.config
