@@ -54,12 +54,12 @@ jobs:
         echo "SHA_03=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
-        git clone https://git.openwrt.org/feed/routing.git
+        git clone https://github.com/coolsnowwolf/routing.git --filter=blob:none
         cd routing
         echo "SHA_04=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
         
-        git clone https://git.openwrt.org/feed/telephony.git
+        git clone -b openwrt-23.05 https://github.com/openwrt/telephony.git --filter=blob:none
         cd telephony
         echo "SHA_05=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
