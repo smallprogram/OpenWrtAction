@@ -1,0 +1,11 @@
+<details> <summary> <b>telephony new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+08ba3ba|Daniel Golle|Thu Jun 20 12:11:56 2024 +0100|asterisk-chan-lantiq: apply hook state timing in right order
+b6a3fca|Daniel Golle|Tue Jun 18 20:48:42 2024 +0100|asterisk-chan-lantiq: import patches to improve pulse-dial phones
+361ed0f|Daniel Golle|Sat Jun 22 15:40:52 2024 +0100|asterisk: update to version 20.8.1
+b4659cc|Daniel Golle|Sun May 19 09:05:42 2024 +0200|pjproject: bump to 2.14.1
+86af194|Daniel Golle|Sun Mar 3 15:25:22 2024 +0000|asterisk-chan-lantiq: add user 'asterisk' to 'vmmc' group
+cc4938c|micmac1|Sat Jan 6 10:43:09 2024 +0100|Merge pull request #852 from micmac1/rtpe-10.5.6.3-23.05
+</details>

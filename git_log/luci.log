@@ -1,0 +1,9 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+66d29de|uparrows|Sun Jun 30 18:02:31 2024 +0800|luci-theme-netgear : add docker icon (#285)
+75adc26|coolsnowwolf|Thu Jun 27 13:54:06 2024 +0800|luci-app-vpnbypass: fix dependence with OpenWrt v19.07
+b8fa320|coolsnowwolf|Sat Jun 22 17:55:35 2024 +0800|csstidy: move to luci feed
+2c766c3|Pr0m1x|Thu Jun 20 15:30:07 2024 +0800|luci-app-mwan3: fixes status page load issue (#284)
+</details>
