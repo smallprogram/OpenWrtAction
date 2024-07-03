@@ -2,14 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9c99a24|coolsnowwolf|Fri Jun 28 03:09:07 2024 +0800|Merge pull request #1499 from chika0801/test
-7ea550f|ちか|Wed Jun 26 23:02:36 2024 +0800|Update ssr-plus.po
-db0e90b|ちか|Wed Jun 26 23:00:16 2024 +0800|Update gen_config.lua
-eb06c0e|ちか|Wed Jun 26 22:59:56 2024 +0800|Update client-config.lua
-888663f|ちか|Wed Jun 26 22:55:39 2024 +0800|Update client-config.lua
-e1b6d62|coolsnowwolf|Fri Jun 21 19:54:08 2024 +0800|i18n: change zh_CN to zh-Hans
-9fc20d6|coolsnowwolf|Fri Jun 21 18:04:34 2024 +0800|xray-core: update to 1.8.16
-7c8caa1|coolsnowwolf|Thu Jun 20 21:30:50 2024 +0800|shadowsocks-rust: update to 1.20.1
-899b242|coolsnowwolf|Thu Jun 20 21:27:26 2024 +0800|xray-plugin: update to 1.8.15
-c1027db|coolsnowwolf|Thu Jun 20 21:26:38 2024 +0800| xray-core: update to 1.8.15
+d3eff8a|Beginner|Wed Jul 3 04:37:39 2024 +0800|hysteria: update to 2.5.0
 </details>
