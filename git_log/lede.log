@@ -2,10 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ade305508|Sean Khan|Mon Jul 1 13:59:45 2024 -0400|f2fs-tools: Add missing 'f2fslabel' symlink
-0397de106|coolsnowwolf|Wed Jul 3 14:34:32 2024 +0800|mt76: add MediaTek MT7996 (PCIe) support
-3a5a4986f|coolsnowwolf|Wed Jul 3 14:27:19 2024 +0800|mac80211: Add EHT UL MU-MIMO flag in ieee80211_bss_conf
-5d1aadf43|coolsnowwolf|Wed Jul 3 13:42:54 2024 +0800|mt76: update to Git HEAD (2024-04-19)
-12be5cfdd|Beginner|Wed Jul 3 13:12:10 2024 +0800|kernel: bump 6.1 to 6.1.96 (#12298)
-79c106c72|Beginner|Wed Jul 3 12:10:03 2024 +0800|kernel: bump 6.6 to 6.6.36 (#12299)
+df4e307b3|coolsnowwolf|Thu Jul 4 02:51:44 2024 +0800|mediatek: fix PWM fan on BPi-R4 for 6.1 kernel
+c672c2da4|coolsnowwolf|Thu Jul 4 02:48:38 2024 +0800|Version update to R24.7.7
+4c5284498|coolsnowwolf|Thu Jul 4 02:46:17 2024 +0800|autocore: add mediatek mt7988 cpufreq display
+c2a01cf77|coolsnowwolf|Thu Jul 4 02:26:54 2024 +0800|mediatek: sync kernel 6.1 from upstream
+382d2c2e3|coolsnowwolf|Thu Jul 4 01:11:24 2024 +0800|mediatek: filogic: fix HF-M7986R1 reset button
+b4fe0e291|coolsnowwolf|Wed Jul 3 20:13:09 2024 +0800|mediatek: filogic: add HF-M7986R1 emmc sysupgrade support
 </details>
