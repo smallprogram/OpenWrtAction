@@ -584,7 +584,7 @@ jobs:
           "https://github.com/coolsnowwolf/lede --filter=blob:none"
           "https://github.com/coolsnowwolf/packages --filter=blob:none"
           "https://github.com/coolsnowwolf/luci --filter=blob:none"
-          "https://github.com/coolsnowwolf/routing.git --filter=blob:none"
+          "https://github.com/openwrt/routing.git --filter=blob:none -b openwrt-23.05"
           "https://github.com/openwrt/telephony.git --filter=blob:none -b openwrt-23.05"
           "https://github.com/fw876/helloworld --filter=blob:none"
           "https://github.com/xiaorouji/openwrt-passwall-packages --filter=blob:none"

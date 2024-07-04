@@ -54,7 +54,7 @@ jobs:
         echo "SHA_03=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
-        git clone -b openwrt-23.05  https://github.com/openwrt/routing.git--filter=blob:none
+        git clone -b openwrt-23.05  https://github.com/openwrt/routing.git --filter=blob:none
         cd routing
         echo "SHA_04=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
