@@ -1,7 +1,0 @@
-<details> <summary> <b>telephony new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-98c8a5a|Jiri Slachta|Wed Jul 3 17:19:40 2024 +0200|Merge pull request #878 from dangowrt/asterisk-chan-lantiq-log-channel-state-23.05
-872a399|Daniel Golle|Sat Jun 29 01:56:35 2024 +0100|asterisk-chan-lantiq: import patches improving log output
-</details>

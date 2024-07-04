@@ -2,10 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-df4e307b3|coolsnowwolf|Thu Jul 4 02:51:44 2024 +0800|mediatek: fix PWM fan on BPi-R4 for 6.1 kernel
-c672c2da4|coolsnowwolf|Thu Jul 4 02:48:38 2024 +0800|Version update to R24.7.7
-4c5284498|coolsnowwolf|Thu Jul 4 02:46:17 2024 +0800|autocore: add mediatek mt7988 cpufreq display
-c2a01cf77|coolsnowwolf|Thu Jul 4 02:26:54 2024 +0800|mediatek: sync kernel 6.1 from upstream
-382d2c2e3|coolsnowwolf|Thu Jul 4 01:11:24 2024 +0800|mediatek: filogic: fix HF-M7986R1 reset button
-b4fe0e291|coolsnowwolf|Wed Jul 3 20:13:09 2024 +0800|mediatek: filogic: add HF-M7986R1 emmc sysupgrade support
+7ecb40bb3|coolsnowwolf|Thu Jul 4 13:47:52 2024 +0800|quectel_QMI_WWAN: bump to v3.0-2
+983de37cf|coolsnowwolf|Thu Jul 4 13:36:18 2024 +0800|mt76: update to Git HEAD (2024-05-17)
 </details>
