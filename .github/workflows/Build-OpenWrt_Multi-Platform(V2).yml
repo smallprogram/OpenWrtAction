@@ -39,7 +39,7 @@ env:
   DIY_P2_SH: diy_script/lean_diy/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
-  UPLOAD_ARTIFACT: false
+  UPLOAD_ARTIFACT: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
