@@ -469,7 +469,7 @@ jobs:
         if: (!cancelled())
         run: df -hT
 
-      - name: Upload Bin Directory
+      - name: Upload Bin Directory To Artifact
         uses: actions/upload-artifact@v4
         if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
         with:
@@ -492,7 +492,7 @@ jobs:
           echo "FIRMWARE=$firmware_path" >> $GITHUB_ENV
           echo "status=success" >> $GITHUB_OUTPUT
 
-      - name: Upload Firmware Directory
+      - name: Upload Firmware Directory To Artifact
         uses: actions/upload-artifact@v4
         if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && !cancelled()
         with:
