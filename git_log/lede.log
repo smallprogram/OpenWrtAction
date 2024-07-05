@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-7ecb40bb3|coolsnowwolf|Thu Jul 4 13:47:52 2024 +0800|quectel_QMI_WWAN: bump to v3.0-2
-983de37cf|coolsnowwolf|Thu Jul 4 13:36:18 2024 +0800|mt76: update to Git HEAD (2024-05-17)
-</details>
