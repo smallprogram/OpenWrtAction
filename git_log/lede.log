@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+34a261f30|Christian Lamparter|Sun Jun 2 15:54:14 2024 +0200|firmware: intel-microcode: update to 20240531
+cc3b73156|Daniel Golle|Fri Jun 28 03:39:45 2024 +0100|generic: fitblk: typo in dmesg output
+</details>
