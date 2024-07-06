@@ -500,7 +500,7 @@ jobs:
           path: ${{ env.FIRMWARE }}
 
       - name: Upload Firmware To Release
-        uses: softprops/action-gh-release@master
+        uses: softprops/action-gh-release@v2.0.6
         if: steps.organize.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -798,7 +798,7 @@ jobs:
         fi
 
     - name: Upload Release Tag
-      uses: softprops/action-gh-release@master
+      uses: softprops/action-gh-release@v2.0.6
       if: steps.organize_tags.outputs.status == 'success'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
