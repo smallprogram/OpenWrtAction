@@ -1,6 +1,0 @@
-<details> <summary> <b>passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-5273e74|lwb1978|Sat Jul 6 14:22:17 2024 +0800|luci: set the default value of dns_redirect to 0 if it is not configured (#3299)
-</details>

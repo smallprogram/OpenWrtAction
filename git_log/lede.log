@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ddaa6722f|aiamadeus|Sun Jun 9 23:06:03 2024 +0800|base-files: move ntp server to default settings
+a68bae1b9|aiamadeus|Fri Jun 14 23:15:18 2024 +0800|qualcommax: fixes dts part for some devices
+</details>
