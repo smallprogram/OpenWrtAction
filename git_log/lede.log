@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ddaa6722f|aiamadeus|Sun Jun 9 23:06:03 2024 +0800|base-files: move ntp server to default settings
-a68bae1b9|aiamadeus|Fri Jun 14 23:15:18 2024 +0800|qualcommax: fixes dts part for some devices
+f3887ab8b|Beginner|Sun Jul 7 17:11:27 2024 +0800|kernel: bump 6.6 to 6.6.37 (#12313)
+6b275d3f2|Beginner|Sun Jul 7 17:11:09 2024 +0800|kernel: bump 6.1 to 6.1.97 (#12312)
+87cc82ea6|Miles Poupart|Sun Jul 7 16:18:13 2024 +0800|autocore: add missing CPU frequency info (#12314)
 </details>
