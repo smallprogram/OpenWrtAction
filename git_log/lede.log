@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f3887ab8b|Beginner|Sun Jul 7 17:11:27 2024 +0800|kernel: bump 6.6 to 6.6.37 (#12313)
-6b275d3f2|Beginner|Sun Jul 7 17:11:09 2024 +0800|kernel: bump 6.1 to 6.1.97 (#12312)
-87cc82ea6|Miles Poupart|Sun Jul 7 16:18:13 2024 +0800|autocore: add missing CPU frequency info (#12314)
+a0cb802ac|Martin Schiller|Mon Jul 1 11:41:36 2024 +0200|generic: 6.6: backport fix for broken cmdline "nosmp" and "maxcpus=0"
+adfb25ecd|Qingfang Deng|Fri Jun 28 17:01:00 2024 +0800|mediatek: fit: fix use of uninitialized variable
+44e17fac5|Chuanhong Guo|Fri Jun 28 16:31:59 2024 +0800|kernel: mtdsplit: fix fit rootfs_data split
+ca094bc31|coolsnowwolf|Sun Jul 7 22:21:10 2024 +0800|generic: fix compilation warning for ar8xxx swconfig for kernel 5.4/5.10
 </details>
