@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e693552f7|Daniel Golle|Sat Jul 6 04:02:31 2024 +0100|generic: 6.6: mtk_eth_soc: import accepted patches
-ded1993bd|Daniel Golle|Thu Jul 4 02:19:01 2024 +0100|generic: 6.6: mtk_eth_soc: add support for flow-control settings
-ae0e24c15|coolsnowwolf|Sat Jul 6 23:10:24 2024 +0800|qualcommax: ipq60xx: fix squashfs configuration for emmc image
+8cf859bf0|Beginner|Mon Jul 8 14:57:44 2024 +0800|kernel: bump 5.15 to 5.15.162 (#12317)
 </details>
