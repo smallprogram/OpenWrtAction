@@ -2,8 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a0cb802ac|Martin Schiller|Mon Jul 1 11:41:36 2024 +0200|generic: 6.6: backport fix for broken cmdline "nosmp" and "maxcpus=0"
-adfb25ecd|Qingfang Deng|Fri Jun 28 17:01:00 2024 +0800|mediatek: fit: fix use of uninitialized variable
-44e17fac5|Chuanhong Guo|Fri Jun 28 16:31:59 2024 +0800|kernel: mtdsplit: fix fit rootfs_data split
-ca094bc31|coolsnowwolf|Sun Jul 7 22:21:10 2024 +0800|generic: fix compilation warning for ar8xxx swconfig for kernel 5.4/5.10
+e693552f7|Daniel Golle|Sat Jul 6 04:02:31 2024 +0100|generic: 6.6: mtk_eth_soc: import accepted patches
+ded1993bd|Daniel Golle|Thu Jul 4 02:19:01 2024 +0100|generic: 6.6: mtk_eth_soc: add support for flow-control settings
+ae0e24c15|coolsnowwolf|Sat Jul 6 23:10:24 2024 +0800|qualcommax: ipq60xx: fix squashfs configuration for emmc image
 </details>
