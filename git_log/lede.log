@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-33489cf2e|Álvaro Fernández Rojas|Sun Jun 23 18:40:34 2024 +0200|linux-firmware: add RTL8126 firmware
-83fc42fcd|coolsnowwolf|Sun Mar 31 23:48:30 2024 +0800|build: enable ipv6 support by default
+6a9ab8e56|aiamadeus|Sun Jun 16 23:16:12 2024 +0800|sunxi: backport H616 cpufreq support
 </details>
