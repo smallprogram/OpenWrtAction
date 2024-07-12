@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+54ad1c500|coolsnowwolf|Wed Jul 10 23:12:15 2024 +0800|rockchip: fix sata support for rk3568
+8a8bf4573|coolsnowwolf|Wed Jul 10 22:09:11 2024 +0800|mediatek: filogic: fix HF-M7986R1 typo
+</details>
