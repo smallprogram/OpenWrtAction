@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-54ad1c500|coolsnowwolf|Wed Jul 10 23:12:15 2024 +0800|rockchip: fix sata support for rk3568
-8a8bf4573|coolsnowwolf|Wed Jul 10 22:09:11 2024 +0800|mediatek: filogic: fix HF-M7986R1 typo
+b3de7a9ad|Robert Marko|Sun May 12 21:18:19 2024 +0200|config: add ARM PMUv3 for kernel 6.6
 </details>
