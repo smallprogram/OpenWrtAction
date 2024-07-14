@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b3de7a9ad|Robert Marko|Sun May 12 21:18:19 2024 +0200|config: add ARM PMUv3 for kernel 6.6
+665cedd25|coolsnowwolf|Sat Jul 13 23:01:31 2024 +0800|mt76: fixes build error for mt7925
 </details>
