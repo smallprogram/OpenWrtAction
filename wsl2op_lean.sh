@@ -551,6 +551,8 @@ function Func_Main(){
             fi
             done
         done
+        config_name=$newConfigName
+        openwrt_dir=${openwrt_dir_front}${config_name}
     fi
 
 
