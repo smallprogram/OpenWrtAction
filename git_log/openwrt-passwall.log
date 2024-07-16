@@ -1,0 +1,6 @@
+<details> <summary> <b>passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+56b04be|lwb1978|Tue Jul 16 01:21:30 2024 +0800|luci: nftables fix high CPU usage in specific situations (#3313)
+</details>

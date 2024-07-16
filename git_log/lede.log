@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-991451d00|Zxl hhyccc|Sun Jul 14 13:37:10 2024 +0800|kernel: bump 6.1 to 6.1.98 (#15935)
+02c176caa|Rosen Penev|Sun Feb 11 15:06:40 2024 -0800|lua: fix CVE-2014-5461 (Buffer overflow)
 </details>
