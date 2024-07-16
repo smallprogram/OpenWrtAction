@@ -35,8 +35,18 @@ env:
   REPO_BRANCH: master
   FEEDS_CONF: feeds_config/lean.feeds.conf.default
   CONFIGS: config/leanlede_config
+
   DIY_P1_SH: diy_script/lean_diy/diy-part1.sh
   DIY_P2_SH: diy_script/lean_diy/diy-part2.sh
+  MAKE_DEFCONFIG_SH: compile_script/make_defconfig.sh
+  GENERATE_RELEASE_TAG_SH: compile_script/generate_release_tag.sh
+  GENERATE_GIT_LOG_SH: compile_script/generate_git_log.sh
+  BUILD_STATUS_CHECKING_SH: compile_script/build_status_checking.sh
+  UPDATE_GIT_LOG_SH:  compile_script/update_git_log.sh
+  ORGANIZE_TAG_SH: compile_script/organize_tag.sh
+
+  PLATFORMS_SH: compile_script/platforms.sh
+
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_ARTIFACT: true
@@ -50,6 +60,7 @@ jobs:
     outputs:
       output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
       output_sha: ${{steps.commit.outputs.commit_hash }}
+      output_platforms: ${{steps.read-platforms.outputs.platforms}}
     steps:
       - name: Generate Tag Name
         id: gen_release_tag
@@ -90,23 +101,10 @@ jobs:
       - name: Make Defconfig Custom Configuration
         run: |
           chmod +x $DIY_P2_SH
+          chmod +x $MAKE_DEFCONFIG_SH
           cd openwrt
           $GITHUB_WORKSPACE/$DIY_P2_SH
-          
-          cd ..
-          platforms=(X86 R5S R5C R4S R4SE R2S R2C H66K H68K H69K R66S R68S R_PI_3b R_PI_4b)
-          for i in "${platforms[@]}"; do
-            [ -e $CONFIGS/$i.config ] && cp -r $CONFIGS/$i.config openwrt/.config
-            cd openwrt
-            echo ""
-            echo "make defconfig for $i platform....."
-            echo "result:"
-            make defconfig
-            cd ..
-            cp -f openwrt/.config $CONFIGS/$i.config
-          done
-          cd openwrt
-          rm -rf .config
+          $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH
 
       - name: Git Auto Update Config
         uses: stefanzweifel/git-auto-commit-action@v5.0.0
@@ -121,75 +119,9 @@ jobs:
       - name: Generate Release Tag
         id: tag
         run: |
-          kernel_X86=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/x86/Makefile)
-          kernel_X86_version=$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_X86} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')
-          kernel_rockchip=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile)
-          kernel_rockchip_version=$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')
-          kernel_bcm27xx=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/bcm27xx/Makefile)
-          kernel_bcm27xx_version=$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')
-          openwrt_version=$(grep -o "DISTRIB_REVISION='[^']*'" $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/files/zzz-default-settings | sed "s/DISTRIB_REVISION='\([^']*\)'/\1/")
-
+          chmod +x $GENERATE_RELEASE_TAG_SH
+          $GITHUB_WORKSPACE/$GENERATE_RELEASE_TAG_SH
           
-          line001="![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/${{ steps.gen_release_tag.outputs.release_tag }}/total?style=flat-square)" 
-          line002="### Firmware Information" 
-          line003="**:loudspeaker:Cancel the ext4 format and only keep the squashfs format.**" 
-          line004="**:computer:Including traditional IMG format firmware and UEFI boot firmware.**" 
-          line005="**:cd:Including qcow2 format firmware and UEFI boot firmware supporting pve virtual machine.**" 
-          line006="**:cd:Including vdi format firmware and UEFI boot firmware supporting Visual Box virtual machine.**" 
-          line007="**:cd:Including vhdx format firmware and UEFI boot firmware supporting Hyper-v virtual machines.**" 
-          line008="**:dvd:Including vmdk format firmware and UEFI boot firmware that support ESXi virtual machines (8.0 requires tool conversion).**" 
-          line009="### Openwrt Information" 
-          line010="**:minidisc: OpenWrt Version: $openwrt_version**" 
-          # line011="**:gear: Default-Setting Version: $PKG_VERSION.$PKG_RELEASE**" 
-          line012="### Compile Information" 
-          line013="platform|kernel|compile status" 
-          line014="-|-|-" 
-          line015="**:ice_cube: X86**|**$kernel_X86_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line016="**:ice_cube: R5S**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line017="**:ice_cube: R5C**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line018="**:ice_cube: R4S**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line019="**:ice_cube: R4SE**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line020="**:ice_cube: R2S**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line021="**:ice_cube: R2C**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line022="**:ice_cube: H66K**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line023="**:ice_cube: H68K**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line024="**:ice_cube: H69K**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line025="**:ice_cube: R66S**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line026="**:ice_cube: R68S**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line027="**:ice_cube: R_Pi_3b**|**$kernel_bcm27xx_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line028="**:ice_cube: R_Pi_4b**|**$kernel_bcm27xx_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)"
-
-          echo $line001 >> release.txt
-          echo $line002 >> release.txt
-          echo $line003 >> release.txt
-          echo $line004 >> release.txt
-          echo $line005 >> release.txt
-          echo $line006 >> release.txt
-          echo $line007 >> release.txt
-          echo $line008 >> release.txt
-          echo $line009 >> release.txt
-          echo $line010 >> release.txt
-          # echo $line011 >> release.txt
-          echo $line012 >> release.txt 
-          echo $line013 >> release.txt
-          echo $line014 >> release.txt
-          echo $line015 >> release.txt
-          echo $line016 >> release.txt
-          echo $line017 >> release.txt
-          echo $line018 >> release.txt
-          echo $line019 >> release.txt
-          echo $line020 >> release.txt
-          echo $line021 >> release.txt
-          echo $line022 >> release.txt
-          echo $line023 >> release.txt
-          echo $line024 >> release.txt
-          echo $line025 >> release.txt
-          echo $line026 >> release.txt
-          echo $line027 >> release.txt
-          echo $line028 >> release.txt
-          touch release.txt
-          echo 'status=success' >> $GITHUB_OUTPUT
-
       - name: Upload Tags To Artifact
         uses: actions/upload-artifact@v4
         with:
@@ -201,23 +133,9 @@ jobs:
         if: steps.tag.outputs.status == 'success'
         id: git_log
         run: |
-            cd $GITHUB_WORKSPACE
-            git -C openwrt log -n 1 --format="%H" >> git_log.txt
-            git -C openwrt/feeds/packages log -n 1 --format="%H" >> git_log.txt
-            git -C openwrt/feeds/luci log -n 1 --format="%H" >> git_log.txt
-            git -C openwrt/feeds/routing log -n 1 --format="%H" >> git_log.txt
-            git -C openwrt/feeds/telephony log -n 1 --format="%H" >> git_log.txt
-            git -C openwrt/feeds/helloworld log -n 1 --format="%H" >> git_log.txt
-            git -C openwrt/feeds/passwall_packages log -n 1 --format="%H" >> git_log.txt
-            git -C openwrt/feeds/passwall log -n 1 --format="%H" >> git_log.txt
-            git -C openwrt/feeds/passwall2 log -n 1 --format="%H" >> git_log.txt
-            git -C openwrt/feeds/OpenClash log -n 1 --format="%H" >> git_log.txt
-            git -C openwrt/package/custom_packages/luci-theme-argon log -n 1 --format="%H" >> git_log.txt
-            git -C openwrt/package/custom_packages/luci-app-argon-config log -n 1 --format="%H" >> git_log.txt
-            git -C openwrt/package/custom_packages/luci-app-adguardhome log -n 1 --format="%H" >> git_log.txt
-            git -C openwrt/package/custom_packages/mosdns log -n 1 --format="%H" >> git_log.txt
-            echo "status=success" >> $GITHUB_OUTPUT
-
+          chmod +x $GENERATE_GIT_LOG_SH 
+          $GITHUB_WORKSPACE/$GENERATE_GIT_LOG_SH
+          
       - name: Upload Git Log To Artifact
         uses: actions/upload-artifact@v4
         if: steps.git_log.outputs.status == 'success'
@@ -249,14 +167,21 @@ jobs:
           path: ${{ env.SOURCE_PATH }}/output.tar.gz
           retention-days: 5
 
+      - name: Read Platforms From File
+        id: read-platforms
+        run: |
+          source $PLATFORMS_SH
+          platforms_json=$(printf '%s\n' "${platforms[@]}" | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          echo "platforms=$platforms_json" >> $GITHUB_OUTPUT
+
   job_build:
     needs: job_init
     runs-on: ubuntu-latest
-    name: Build-OpenWrt-${{ matrix.platforms }}
     strategy:
       fail-fast: false
       matrix:
-        platforms: [X86, R5S, R5C, R4S, R4SE, R2S, R2C, H66K, H68K, H69K, R66S, R68S, R_PI_3b, R_PI_4b]
+        platforms: ${{ fromJson(needs.job_init.outputs.output_platforms) }}
+    name: Build-OpenWrt-${{ matrix.platforms }}
 
     steps:
       - name: Initialization Environment
@@ -510,53 +435,26 @@ jobs:
           files: ${{ env.FIRMWARE }}/*
 
   build_status_flag:
-    needs: job_build
+    needs: [job_init, job_build]
     if: ${{ always() }}
     name: Build-Status-Flag
     runs-on: ubuntu-latest
     outputs:
       checking_build_status: ${{ steps.status_checking.outputs.status }}
     steps:
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          ref: ${{ needs.job_init.outputs.output_sha }}
+
       - name: Build_status_checking
         id: status_checking
         run: |
-          json_data=$(curl -s -H "Authorization: Bearer ${{ github.token }}" "https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs")
-          name_conclusion_array=($(echo "$json_data" | jq -r '.jobs[] | select(.name | startswith("Build-OpenWrt-")) | "\(.name).\(.conclusion)"'))
 
-          platforms=(X86 R5S R5C R4S R4SE R2S R2C H66K H68K H69K R66S R68S R_PI_3b R_PI_4b)
-          
-          is_success_compiled=false
-          for ((i = 0; i < ${#platforms[@]}; i++)); do
-            if $is_success_compiled; then break; fi
-            platform="${platforms[i]}"
-            for item in "${name_conclusion_array[@]}"; do
-              IFS='.' read -r name conclusion <<< "$item"
-              if [[ "$name" == "Build-OpenWrt-$platform" ]]; then
-                if [[ "$conclusion" == "success" ]]; then
-                  is_success_compiled=true
-                  break
-                fi
-              fi
-            done
-          done
-
-          echo "-------------------build status--------------------------"
-          for item in "${name_conclusion_array[@]}"; do
-            IFS='.' read -r name conclusion <<< "$item"
-            echo "Name: $name"
-            echo "Conclusion: $conclusion"
-          done
-          echo "-----------------------------------------------------------"
-
+          chmod +x $BUILD_STATUS_CHECKING_SH
+          $GITHUB_WORKSPACE/$BUILD_STATUS_CHECKING_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
           
 
-          if $is_success_compiled; then
-            echo "status=success" >> $GITHUB_OUTPUT
-            echo "Compilation succeeded for at least one platform."
-          else
-            echo "status=failed" >> $GITHUB_OUTPUT
-            echo "Compilation failed for all platforms."
-          fi
 
 
   job_organize_git_log:
@@ -578,108 +476,10 @@ jobs:
       with:
         name: git_log_${{ needs.job_init.outputs.output_release_tag }}
 
-    - name: Generate Git Log
+    - name: Update Git Log
       run: |
-        REPO_URLS=(
-          "https://github.com/coolsnowwolf/lede --filter=blob:none"
-          "https://github.com/coolsnowwolf/packages --filter=blob:none"
-          "https://github.com/coolsnowwolf/luci --filter=blob:none"
-          "https://github.com/openwrt/routing.git --filter=blob:none -b openwrt-23.05"
-          "https://github.com/openwrt/telephony.git --filter=blob:none -b openwrt-23.05"
-          "https://github.com/fw876/helloworld --filter=blob:none"
-          "https://github.com/xiaorouji/openwrt-passwall-packages --filter=blob:none"
-          "https://github.com/xiaorouji/openwrt-passwall --filter=blob:none"
-          "https://github.com/xiaorouji/openwrt-passwall2 --filter=blob:none"
-          "https://github.com/vernesong/OpenClash.git --filter=blob:none"
-          "https://github.com/jerrykuku/luci-theme-argon.git --filter=blob:none -b 18.06"
-          "https://github.com/jerrykuku/luci-app-argon-config.git --filter=blob:none -b 18.06"
-          "https://github.com/rufengsuixing/luci-app-adguardhome.git --filter=blob:none"
-          "https://github.com/sbwml/luci-app-mosdns --filter=blob:none -b v5"
-        )
-        LINE_NUMBERS=(1 2 3 4 5 6 7 8 9 10 11 12 13 14)
-        OUTPUT_FILES=(
-          "lede"
-          "packages"
-          "luci"
-          "routing"
-          "telephony"
-          "helloworld"
-          "openwrt-passwall-packages"
-          "openwrt-passwall"
-          "openwrt-passwall2"
-          "OpenClash"
-          "luci-theme-argon"
-          "luci-app-argon-config"
-          "luci-app-adguardhome"
-          "luci-app-mosdns"
-        )
-        TITLE_MESSAGES=(
-          "openwrt new commit log"
-          "package new commit log"
-          "luci new commit log"
-          "routing new commit log"
-          "telephony new commit log"
-          "helloworld new commit log"
-          "passwall packages new commit log"
-          "passwall new commit log"
-          "passwall2 new commit log"
-          "openclash new commit log"
-          "luci-theme-argon new commit log"
-          "luci-app-argon-config new commit log"
-          "luci-app-adguardhome new commit log"
-          "luci-app-mosdns new commit log"
-        )
-        cd $GITHUB_WORKSPACE
-        find git_log -type f ! -name 'log' -exec rm {} +
-        mkdir -p git_repositories
-
-        for i in "${!REPO_URLS[@]}"; do
-          REPO_URL=${REPO_URLS[$i]}
-          LINE_NUMBER=${LINE_NUMBERS[$i]}
-          OUTPUT_FILE=${OUTPUT_FILES[$i]}
-          TITLE_MESSAGE=${TITLE_MESSAGES[$i]}
-          
-          line=$(sed -n "${LINE_NUMBER}p" git_log/log)
-          SHA_Begin=$(echo "$line" | sed -n 's/^[^:]*://p')
-          SHA_End=$(sed -n "${LINE_NUMBER}p" git_log.txt)
-
-          git clone $REPO_URL git_repositories/$OUTPUT_FILE
-
-          if ! git -C git_repositories/$OUTPUT_FILE cat-file -t "$SHA_Begin" >/dev/null 2>&1 || \
-            ! git -C git_repositories/$OUTPUT_FILE cat-file -t "$SHA_End" >/dev/null 2>&1; then
-            sed -i "${LINE_NUMBER}s/:.*/:$SHA_End/" git_log/log
-
-            echo " :x: Invalid SHA detected (Begin: $SHA_Begin, End: $SHA_End) for $OUTPUT_FILE"
-            echo "<details> <summary> <b>$TITLE_MESSAGE :x: </b>  </summary>" >> "git_log/$OUTPUT_FILE.log"
-            echo "" >> "git_log/$OUTPUT_FILE.log"
-            echo "<b> It is detected that $OUTPUT_FILE has an illegal SHA value. It is possible that $OUTPUT_FILE has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>" >> "git_log/$OUTPUT_FILE.log"
-            echo "" >> "git_log/$OUTPUT_FILE.log"
-            echo "</details>" >> "git_log/$OUTPUT_FILE.log"
-            continue
-          fi
-
-          if [ -z "$SHA_Begin" ]; then
-            sed -i "${LINE_NUMBER}s/:.*/:$SHA_End/" git_log/log
-          elif [ "$SHA_Begin" != "$SHA_End" ]; then
-            echo "<details> <summary> <b>$TITLE_MESSAGE :new: </b>  </summary>" >> "git_log/$OUTPUT_FILE.log"
-            echo "" >> "git_log/$OUTPUT_FILE.log"
-            echo "SHA|Author|Date|Message" >> "git_log/$OUTPUT_FILE.log"
-            echo "-|-|-|-" >> "git_log/$OUTPUT_FILE.log"
-            git -C git_repositories/$OUTPUT_FILE log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >> "git_log/$OUTPUT_FILE.log"
-            echo "" >> "git_log/$OUTPUT_FILE.log"
-            echo "</details>" >> "git_log/$OUTPUT_FILE.log"
-            echo "|-----------------------------------|"
-            echo "$OUTPUT_FILE has update log"
-            echo "|-----------------------------------|"
-            sed -i "${LINE_NUMBER}s/:.*/:$SHA_End/" git_log/log
-          fi
-        done
-
-        echo "|=========================================|"
-        ls git_log
-        echo "|=========================================|"
-        cd $GITHUB_WORKSPACE
-        rm -rf git_log.txt git_repositories
+          chmod +x $UPDATE_GIT_LOG_SH
+          $GITHUB_WORKSPACE/$UPDATE_GIT_LOG_SH
 
 
     - name: Git auto update git log
@@ -715,87 +515,8 @@ jobs:
       # env:
       #   GH_TOKEN: ${{ github.token }}
       run: |
-        
-        if [ -f "release.txt" ]; then
-
-          json_data=$(curl -s -H "Authorization: Bearer ${{ github.token }}" "https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs")
-          name_conclusion_array=($(echo "$json_data" | jq -r '.jobs[] | select(.name | startswith("Build-OpenWrt-")) | "\(.name).\(.conclusion)"'))
-
-          platforms=(X86 R5S R5C R4S R4SE R2S R2C H66K H68K H69K R66S R68S R_PI_3b R_PI_4b)
-
-          echo "-------------------build status--------------------------"
-          for item in "${name_conclusion_array[@]}"; do
-            IFS='.' read -r name conclusion <<< "$item"
-            echo "Name: $name"
-            echo "Conclusion: $conclusion"
-          done
-          echo "-----------------------------------------------------------"
-          
-          for ((i = 0; i < ${#platforms[@]}; i++)); do
-            platform="${platforms[i]}"
-            is_error=false
-            row=$((i+14))s
-            for item in "${name_conclusion_array[@]}"; do
-              IFS='.' read -r name conclusion <<< "$item"          
-              if [[ "$name" == "Build-OpenWrt-$platform" ]]; then
-                if [[ "$conclusion" == "success" ]]; then
-                  break
-                else
-                  is_error=true
-                  break
-                fi
-              fi
-            done
-            
-            if $is_error; then
-              echo "is_error be true: $is_error"
-              sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions\&logoColor=yellow/build-failure-red?logo=githubactions\&logoColor=red/" release.txt;
-            else
-              echo "is_error be false: $is_error"
-              sed -i "$row/build-in_progress_or_waiting.....-yellow?logo=githubactions\&logoColor=yellow/build-passing-green?logo=githubactions\&logoColor=green/" release.txt;
-            fi
-          done
-
-          echo "|=========================================|"
-          ls git_log
-          echo "|=========================================|"
-
-          echo "## What's Changed" >> release.txt
-
-          OUTPUT_FILES=(
-            "lede"
-            "packages"
-            "luci"
-            "routing"
-            "telephony"
-            "helloworld"
-            "openwrt-passwall-packages"
-            "openwrt-passwall"
-            "openwrt-passwall2"
-            "OpenClash"
-            "luci-theme-argon"
-            "luci-app-argon-config"
-            "luci-app-adguardhome"
-            "luci-app-mosdns"
-          )
-
-          for file in "${OUTPUT_FILES[@]}"; do
-            if [ -f "git_log/$file.log" ]; then
-              echo "found file $file.log!"
-              cat "git_log/$file.log" >> release.txt
-            else
-              echo "no file $file.log 404"
-            fi
-          done
-          
-
-          echo "status=success" >> $GITHUB_OUTPUT
-          echo "-----------------------release.txt------------------------"
-          cat release.txt
-
-        else
-          echo "status=failure" >> $GITHUB_OUTPUT
-        fi
+          chmod +x $ORGANIZE_TAG_SH
+          $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH
 
     - name: Upload Release Tag
       uses: softprops/action-gh-release@v2.0.6
