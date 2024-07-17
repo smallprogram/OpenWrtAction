@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: TEST
+name: Build-OpenWrt_Multi-Platform(V2)
 
 on:
   repository_dispatch:
@@ -35,11 +35,22 @@ env:
   REPO_BRANCH: master
   FEEDS_CONF: feeds_config/lean.feeds.conf.default
   CONFIGS: config/leanlede_config
+
   DIY_P1_SH: diy_script/lean_diy/diy-part1.sh
   DIY_P2_SH: diy_script/lean_diy/diy-part2.sh
+  MAKE_DEFCONFIG_SH: compile_script/make_defconfig.sh
+  GENERATE_RELEASE_TAG_SH: compile_script/generate_release_tag.sh
+  GENERATE_GIT_LOG_SH: compile_script/generate_git_log.sh
+  BUILD_STATUS_CHECKING_SH: compile_script/build_status_checking.sh
+  UPDATE_GIT_LOG_SH:  compile_script/update_git_log.sh
+  ORGANIZE_TAG_SH: compile_script/organize_tag.sh
+  COPY_BACKGROUNDFILES_SH: compile_script/copy_backgroundfiles.sh
+
+  PLATFORMS_SH: compile_script/platforms.sh
+
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
-  UPLOAD_ARTIFACT: false
+  UPLOAD_ARTIFACT: true
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
@@ -50,12 +61,13 @@ jobs:
     outputs:
       output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
       output_sha: ${{steps.commit.outputs.commit_hash }}
+      output_platforms: ${{steps.read-platforms.outputs.platforms}}
     steps:
       - name: Generate Tag Name
         id: gen_release_tag
         run: |
-          echo 'release_tag=multi-platform_$(date +'%Y.%m.%d_%H.%M.%S')' >> $GITHUB_OUTPUT
-          sudo timedatectl set-timezone 'Asia/Shanghai'
+          echo "release_tag=multi-platform_$(date +"%Y.%m.%d_%H.%M.%S")" >> $GITHUB_OUTPUT
+          sudo timedatectl set-timezone "$TZ"
           sudo mkdir -p /workdir
           sudo chown $USER:$GROUPS /workdir
           cd /workdir
@@ -74,78 +86,358 @@ jobs:
           git clone $REPO_URL -b $REPO_BRANCH openwrt
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
-      - name: SSH connection to Actions
-        uses: mxschmitt/action-tmate@v3.16
-        if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
+      - name: Load Custom Feeds
+        run: |
+          [ -e $FEEDS_CONF ] && cp -r $FEEDS_CONF openwrt/feeds.conf.default
+          chmod +x $DIY_P1_SH
+          cd openwrt
+          $GITHUB_WORKSPACE/$DIY_P1_SH
+
+      - name: Update Feeds
+        run: cd openwrt && ./scripts/feeds update -a
+
+      - name: Install Feeds
+        run: cd openwrt && ./scripts/feeds install -a
+
+      - name: Make Defconfig Custom Configuration
+        run: |
+          chmod +x $DIY_P2_SH
+          cd openwrt
+          $GITHUB_WORKSPACE/$DIY_P2_SH
+
+      - name: Git Auto Update Config
+        uses: stefanzweifel/git-auto-commit-action@v5.0.0
+        id: commit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          commit_message: auto update config
+          branch: main
+          commit_author: smallprogram <smallprogram@foxmail.com>
 
       - name: Generate Release Tag
         id: tag
         run: |
-          kernel_X86=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/x86/Makefile)
-          kernel_X86_version=$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_X86} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')
-          kernel_rockchip=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile)
-          kernel_rockchip_version=$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_rockchip} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')
-          kernel_bcm27xx=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/bcm27xx/Makefile)
-          kernel_bcm27xx_version=$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_bcm27xx} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')
-          openwrt_version=$(grep -o "DISTRIB_REVISION='[^']*'" $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/files/zzz-default-settings | sed "s/DISTRIB_REVISION='\([^']*\)'/\1/")
-
+          chmod +x $GENERATE_RELEASE_TAG_SH
+          $GITHUB_WORKSPACE/$GENERATE_RELEASE_TAG_SH "${{ steps.gen_release_tag.outputs.release_tag }}"
           
-          line001="![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/${{ steps.gen_release_tag.outputs.release_tag }}/total?style=flat-square)" 
-          line002="### Firmware Information" 
-          line003="**:loudspeaker:Cancel the ext4 format and only keep the squashfs format.**" 
-          line004="**:computer:Including traditional IMG format firmware and UEFI boot firmware.**" 
-          line005="**:cd:Including qcow2 format firmware and UEFI boot firmware supporting pve virtual machine.**" 
-          line006="**:cd:Including vdi format firmware and UEFI boot firmware supporting Visual Box virtual machine.**" 
-          line007="**:cd:Including vhdx format firmware and UEFI boot firmware supporting Hyper-v virtual machines.**" 
-          line008="**:dvd:Including vmdk format firmware and UEFI boot firmware that support ESXi virtual machines (8.0 requires tool conversion).**" 
-          line009="### Openwrt Information" 
-          line010="**:minidisc: OpenWrt Version: $openwrt_version**" 
-          # line011="**:gear: Default-Setting Version: $PKG_VERSION.$PKG_RELEASE**" 
-          line012="### Compile Information" 
-          line013="platform|kernel|compile status" 
-          line014="-|-|-" 
-          line015="**:ice_cube: X86**|**$kernel_X86_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line016="**:ice_cube: R5S**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line017="**:ice_cube: R5C**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line018="**:ice_cube: R4S**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line019="**:ice_cube: R4SE**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line020="**:ice_cube: R2S**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line021="**:ice_cube: R2C**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line022="**:ice_cube: H66K**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line023="**:ice_cube: H68K**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line024="**:ice_cube: H69K**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line025="**:ice_cube: R66S**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line026="**:ice_cube: R68S**|**$kernel_rockchip_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line027="**:ice_cube: R_Pi_3b**|**$kernel_bcm27xx_version**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)" 
-          line028="**:ice_cube: R_Pi_4b**|**$kernel_bcm27xx_version')**|![](https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square)"
+      - name: Upload Tags To Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: release_tag_${{ steps.gen_release_tag.outputs.release_tag }}
+          path: release.txt
+          retention-days: 5
 
-          echo $line001 >> release.txt
-          echo $line002 >> release.txt
-          echo $line003 >> release.txt
-          echo $line004 >> release.txt
-          echo $line005 >> release.txt
-          echo $line006 >> release.txt
-          echo $line007 >> release.txt
-          echo $line008 >> release.txt
-          echo $line009 >> release.txt
-          echo $line010 >> release.txt
-          # echo $line011 >> release.txt
-          echo $line012 >> release.txt 
-          echo $line013 >> release.txt
-          echo $line014 >> release.txt
-          echo $line015 >> release.txt
-          echo $line016 >> release.txt
-          echo $line017 >> release.txt
-          echo $line018 >> release.txt
-          echo $line019 >> release.txt
-          echo $line020 >> release.txt
-          echo $line021 >> release.txt
-          echo $line022 >> release.txt
-          echo $line023 >> release.txt
-          echo $line024 >> release.txt
-          echo $line025 >> release.txt
-          echo $line026 >> release.txt
-          echo $line027 >> release.txt
-          echo $line028 >> release.txt
-          touch release.txt
-          echo 'status=success' >> $GITHUB_OUTPUT
+      - name: Generate Git Log
+        if: steps.tag.outputs.status == 'success'
+        id: git_log
+        run: |
+          chmod +x $GENERATE_GIT_LOG_SH 
+          $GITHUB_WORKSPACE/$GENERATE_GIT_LOG_SH
+          
+      - name: Upload Git Log To Artifact
+        uses: actions/upload-artifact@v4
+        if: steps.git_log.outputs.status == 'success'
+        with:
+          name: git_log_${{ steps.gen_release_tag.outputs.release_tag }}
+          path: git_log.txt
+          retention-days: 5
+
+      - name: Generate Source Packages
+        working-directory: /workdir
+        id: generate_image
+        run: |
+          echo "source folder size:"
+          du -hs openwrt/
+          echo
+          tar -czf output/output.tar.gz openwrt/
+
+          echo "source code size:"
+          cd output
+          ls -lh output.tar.gz
+          echo "SOURCE_PATH=$PWD" >> $GITHUB_ENV
+          echo "status=success" >> $GITHUB_OUTPUT
+
+      - name: Upload Source To Artifact
+        uses: actions/upload-artifact@v4
+        if: steps.generate_image.outputs.status == 'success'
+        with:
+          name: Source_${{ steps.gen_release_tag.outputs.release_tag }}
+          path: ${{ env.SOURCE_PATH }}/output.tar.gz
+          retention-days: 5
+
+      - name: Read Platforms From File
+        id: read-platforms
+        run: |
+          source $PLATFORMS_SH
+          platforms_json=$(printf '%s\n' "${platforms[@]}" | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          echo "platforms=$platforms_json" >> $GITHUB_OUTPUT
+
+  job_build:
+    needs: job_init
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        platforms: ${{ fromJson(needs.job_init.outputs.output_platforms) }}
+    name: Build-OpenWrt-${{ matrix.platforms }}
+
+    steps:
+      - name: Initialization Environment
+        run: |
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown $USER:$GROUPS /workdir
+          df -hT
+  
+
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          ref: ${{ needs.job_init.outputs.output_sha }}
+
+      - name: Install Packages
+        env:
+          DEBIAN_FRONTEND: noninteractive
+        run: |
+          sudo timedatectl set-timezone "$TZ"
+          df -hT
+
+      - name: Initialization Directory
+        working-directory: /workdir
+        id: init_directory
+        run: |
+          sudo mkdir -p openwrt
+          sudo mkdir -p download
+          sudo chown $USER:$GROUPS /workdir/openwrt
+          sudo chown $USER:$GROUPS /workdir/download
+
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+          ln -sf /workdir/download $GITHUB_WORKSPACE/download
+
+      - name: Download Source From Artifacts
+        id : download
+        uses: actions/download-artifact@v4
+        with:
+          name: Source_${{ needs.job_init.outputs.output_release_tag }}
+          path: download
+
+      - name: Download Tags
+        uses: actions/download-artifact@v4
+        with:
+          name: release_tag_${{ needs.job_init.outputs.output_release_tag }}
+          path: download
+
+      - name: File Extraction
+        working-directory: /workdir
+        run: |
+          echo "source packages size:"
+          ls -lh download/output.tar.gz
+          tar -xzf download/output.tar.gz
+          rm -rf download/output.tar.gz
+          cd download
+          echo "TAG_PATH=$PWD" >> $GITHUB_ENV
+          cd ..
+          sudo chown -R $USER:$GROUPS /workdir/openwrt
+
+      - name: Load Configuration
+        run: |
+          chmod +x $COPY_BACKGROUNDFILES_SH
+          [ -e $CONFIGS/${{ matrix.platforms }}.config ] && cp -r $CONFIGS/${{ matrix.platforms }}.config openwrt/.config
+          cd openwrt
+          make defconfig
+          $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platforms }}"
+
+      - name: Download Package
+        id: package
+        run: |
+          df -hT
+          cd $GITHUB_WORKSPACE/openwrt
+          df -hT
+      
+      - name: SSH connection to Actions
+        uses: mxschmitt/action-tmate@v3.16
+        if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
+
+      - name: Compile Tools
+        id: compile_tools
+        run: |
+          cd openwrt
+          is_complie_error=0
+
+          echo "status=success" >> $GITHUB_OUTPUT
+          df -hT
+
+      - name: Compile Toolchain
+        if: steps.compile_tools.outputs.status == 'success'
+        id: compile_toolchain
+        run: |
+          cd openwrt
+          is_complie_error=0
+
+          echo "status=success" >> $GITHUB_OUTPUT
+          df -hT
+
+      - name: Generate Frimware
+        if: steps.compile_toolchain.outputs.status == 'success'
+        id: compile
+        run: |
+          cd openwrt
+          is_complie_error=0
+          mkdir -p bin
+          cd bin
+          mkdir -p targets
+          cd targets
+          mkdir -p a
+          cd a
+          mkdir -p b
+          cd b
+          dd if=/dev/zero of=${{ matrix.platforms }}test.log bs=10MB count=1
+          echo "status=success" >> $GITHUB_OUTPUT
+          df -hT
+
+      - name: Check Space Usage
+        if: (!cancelled())
+        run: df -hT
+
+      - name: Upload Bin Directory To Artifact
+        uses: actions/upload-artifact@v4
+        if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
+        with:
+          name: OpenWrt_bin_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
+          path: openwrt/bin
+
+      - name: Organize Files
+        id: organize
+        if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
+        run: |
+          cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
+          firmware_path=$PWD
+          cd $firmware_path
+
+          echo "FIRMWARE=$firmware_path" >> $GITHUB_ENV
+          echo "status=success" >> $GITHUB_OUTPUT
+
+      - name: Upload Firmware Directory To Artifact
+        uses: actions/upload-artifact@v4
+        if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && !cancelled()
+        with:
+          name: OpenWrt_firmware_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
+          path: ${{ env.FIRMWARE }}
+
+      - name: Upload Firmware To Release
+        uses: softprops/action-gh-release@v2.0.6
+        if: steps.organize.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+          body_path: ${{ env.TAG_PATH }}/release.txt
+          files: ${{ env.FIRMWARE }}/*
+
+  build_status_flag:
+    needs: [job_init, job_build]
+    if: ${{ always() }}
+    name: Build-Status-Flag
+    runs-on: ubuntu-latest
+    outputs:
+      checking_build_status: ${{ steps.status_checking.outputs.status }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          ref: ${{ needs.job_init.outputs.output_sha }}
+
+      - name: Build_status_checking
+        id: status_checking
+        run: |
+
+          chmod +x $BUILD_STATUS_CHECKING_SH
+          $GITHUB_WORKSPACE/$BUILD_STATUS_CHECKING_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
+          
+
+
+
+  job_organize_git_log:
+    needs: [job_init, job_build, build_status_flag]
+    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
+    runs-on: ubuntu-latest
+    name: Organize-Git-Log
+    outputs:
+      output_sha: ${{steps.commit.outputs.commit_hash }}
+       
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+      with:
+        ref: ${{ needs.job_init.outputs.output_sha }}
+
+    - name: Download Git Log
+      uses: actions/download-artifact@v4
+      with:
+        name: git_log_${{ needs.job_init.outputs.output_release_tag }}
+
+    - name: Update Git Log
+      run: |
+          chmod +x $UPDATE_GIT_LOG_SH
+          $GITHUB_WORKSPACE/$UPDATE_GIT_LOG_SH
+
+
+    - name: Git auto update git log
+      uses: stefanzweifel/git-auto-commit-action@v5.0.0
+      id: commit
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        commit_message: auto update git log
+        branch: main
+        commit_author: smallprogram <smallprogram@foxmail.com>
+
+
+  job_organize_tags:
+    needs: [job_init, job_build, build_status_flag, job_organize_git_log]
+    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
+    runs-on: ubuntu-latest
+    name: Organize-Release-Tags
+        
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+      with:
+        ref: ${{ needs.job_organize_git_log.outputs.output_sha }}
+
+    - name: Download Tags
+      uses: actions/download-artifact@v4
+      with:
+        name: release_tag_${{ needs.job_init.outputs.output_release_tag }}
+
+    - name: Organize Tags
+      id: organize_tags
+      # env:
+      #   GH_TOKEN: ${{ github.token }}
+      run: |
+          chmod +x $ORGANIZE_TAG_SH
+          $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
+
+    - name: Upload Release Tag
+      uses: softprops/action-gh-release@v2.0.6
+      if: steps.organize_tags.outputs.status == 'success'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+        body_path: release.txt
+
+  job_my_action:
+    needs: [job_init, job_build, build_status_flag, job_organize_git_log, job_organize_tags]
+    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
+    runs-on: ubuntu-latest
+    name: My-Action
+
+    steps:
+      - name: Trigger build
+        uses: peter-evans/repository-dispatch@main
+        with:
+          token: ${{ secrets.MY_SECRET_PAT }}
+          repository: smallprogram/MyAction
+          event-type: openwrt_compilation_completed
