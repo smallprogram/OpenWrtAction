@@ -120,7 +120,7 @@ jobs:
         id: tag
         run: |
           chmod +x $GENERATE_RELEASE_TAG_SH
-          $GITHUB_WORKSPACE/$GENERATE_RELEASE_TAG_SH
+          $GITHUB_WORKSPACE/$GENERATE_RELEASE_TAG_SH "${{ steps.gen_release_tag.outputs.release_tag }}"
           
       - name: Upload Tags To Artifact
         uses: actions/upload-artifact@v4
@@ -516,7 +516,7 @@ jobs:
       #   GH_TOKEN: ${{ github.token }}
       run: |
           chmod +x $ORGANIZE_TAG_SH
-          $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH
+          $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
 
     - name: Upload Release Tag
       uses: softprops/action-gh-release@v2.0.6

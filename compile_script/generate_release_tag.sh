@@ -1,5 +1,7 @@
 #!/bin/bash
 
+release_tag=$1
+
 kernel_X86=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/x86/Makefile)
 kernel_X86_version=$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${kernel_X86} | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')
 kernel_rockchip=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' $GITHUB_WORKSPACE/openwrt/target/linux/rockchip/Makefile)
@@ -11,7 +13,7 @@ kernel_ipq60xx_version=$(sed -n '2p' $GITHUB_WORKSPACE/openwrt/include/kernel-${
 openwrt_version=$(grep -o "DISTRIB_REVISION='[^']*'" $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/files/zzz-default-settings | sed "s/DISTRIB_REVISION='\([^']*\)'/\1/")
 
 
-echo "![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/${{ steps.gen_release_tag.outputs.release_tag }}/total?style=flat-square)" >> release.txt
+echo "![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/$release_tag/total?style=flat-square)" >> release.txt
 echo "### Firmware Information" >> release.txt
 echo "**:loudspeaker:Cancel the ext4 format and only keep the squashfs format.**" >> release.txt
 echo "**:computer:Including traditional IMG format firmware and UEFI boot firmware.**" >> release.txt

@@ -1,10 +1,14 @@
 #!/bin/bash
 
+token=$1
+repository=$2
+run_id=$3
+
 source $GITHUB_WORKSPACE/compile_script/platforms.sh
 
 if [ -f "release.txt" ]; then
 
-json_data=$(curl -s -H "Authorization: Bearer ${{ github.token }}" "https://api.github.com/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/jobs")
+json_data=$(curl -s -H "Authorization: Bearer $token" "https://api.github.com/repos/$repository/actions/runs/$run_id/jobs")
 name_conclusion_array=($(echo "$json_data" | jq -r '.jobs[] | select(.name | startswith("Build-OpenWrt-")) | "\(.name).\(.conclusion)"'))
 
 
