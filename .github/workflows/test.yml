@@ -292,6 +292,18 @@ jobs:
           cd a
           mkdir -p b
           cd b
+          if [[ "${{ matrix.platforms }}" == "X86" ]]; then
+            echo "status=ffff" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+          if [[ "${{ matrix.platforms }}" == "R5S" ]]; then
+            echo "status=ffff" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+          if [[ "${{ matrix.platforms }}" == "XiaoMI_AX6S" ]]; then
+            echo "status=ffff" >> $GITHUB_OUTPUT
+            exit 1
+          fi
           dd if=/dev/zero of=${{ matrix.platforms }}test.log bs=10MB count=1
           echo "status=success" >> $GITHUB_OUTPUT
           df -hT
