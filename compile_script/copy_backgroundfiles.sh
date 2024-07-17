@@ -3,7 +3,11 @@
 is_wsl2op=$1
 platform=$2
 
-source $GITHUB_WORKSPACE/compile_script/platforms.sh
+if [ ! -n "$is_wsl2op" ]; then
+    source $GITHUB_WORKSPACE/compile_script/platforms.sh
+else
+    source /home/$USER/OpenWrtAction/compile_script/platforms.sh
+fi
 
 is_copy_backgroundfiles=false
 
