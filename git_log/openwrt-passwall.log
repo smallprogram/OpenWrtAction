@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-56b04be|lwb1978|Tue Jul 16 01:21:30 2024 +0800|luci: nftables fix high CPU usage in specific situations (#3313)
+da4eecc|lwb1978|Wed Jul 17 18:33:04 2024 +0800|luci: app_update adapt chinadns-ng wolfssl version (#3316)
 </details>

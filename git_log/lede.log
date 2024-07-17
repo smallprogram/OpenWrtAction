@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-02c176caa|Rosen Penev|Sun Feb 11 15:06:40 2024 -0800|lua: fix CVE-2014-5461 (Buffer overflow)
-</details>
