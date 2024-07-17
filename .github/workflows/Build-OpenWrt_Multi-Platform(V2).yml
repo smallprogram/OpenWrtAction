@@ -44,6 +44,7 @@ env:
   BUILD_STATUS_CHECKING_SH: compile_script/build_status_checking.sh
   UPDATE_GIT_LOG_SH:  compile_script/update_git_log.sh
   ORGANIZE_TAG_SH: compile_script/organize_tag.sh
+  COPY_BACKGROUNDFILES_SH: compile_script/copy_backgroundfiles.sh
 
   PLATFORMS_SH: compile_script/platforms.sh
 
@@ -258,9 +259,11 @@ jobs:
 
       - name: Load Configuration
         run: |
+          chmod +x $COPY_BACKGROUNDFILES_SH
           [ -e $CONFIGS/${{ matrix.platforms }}.config ] && cp -r $CONFIGS/${{ matrix.platforms }}.config openwrt/.config
           cd openwrt
           make defconfig
+          $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platforms }}"
 
       - name: Download Package
         id: package

@@ -10,8 +10,6 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-is_wsl2op=$1
-is_copy_backgroundfiles=$2
 
 rm -rf ./package/custom_packages
 mkdir -p ./package/custom_packages
@@ -67,35 +65,6 @@ git clone https://github.com/lisaac/luci-app-dockerman.git ./package/custom_pack
 # sed -i 's/console=tty0//g'  target/linux/x86/image/Makefile
 
 
-rm -rf ./package/custom_packages/luci-theme-argon/htdocs/luci-static/argon/background
-mkdir -p ./package/custom_packages/luci-theme-argon/htdocs/luci-static/argon/background
-
-if [ ! -n "$is_copy_backgroundfiles" ]; then
-    if [ ! -n "$is_wsl2op" ]; then
-        # Add default login background
-        cp -r $GITHUB_WORKSPACE/source/video/* ./package/custom_packages/luci-theme-argon/htdocs/luci-static/argon/background/
-        cp -r $GITHUB_WORKSPACE/source/img/* ./package/custom_packages/luci-theme-argon/htdocs/luci-static/argon/background/
-
-        # Inject download package
-        mkdir -p $GITHUB_WORKSPACE/openwrt/dl
-        cp -r $GITHUB_WORKSPACE/library/* $GITHUB_WORKSPACE/openwrt/dl/
-
-        # Fixed qmi_wwan_f complie error
-        # cp -r $GITHUB_WORKSPACE/patches/qmi_wwan_f.c $GITHUB_WORKSPACE/openwrt/package/wwan/driver/fibocom_QMI_WWAN/src/qmi_wwan_f.c
-
-    else
-        # Add default login background
-        cp -r /home/$USER/OpenWrtAction/source/video/* ./package/custom_packages/luci-theme-argon/htdocs/luci-static/argon/background/
-        cp -r /home/$USER/OpenWrtAction/source/img/* ./package/custom_packages/luci-theme-argon/htdocs/luci-static/argon/background/
-
-        # Inject download package
-        mkdir -p dl
-        cp -r /home/$USER/OpenWrtAction/library/* dl/
-
-        # Fixed qmi_wwan_f complie error
-        # cp -r ../OpenWrtAction/patches/qmi_wwan_f.c ./package/wwan/driver/fibocom_QMI_WWAN/src/qmi_wwan_f.c
-    fi
-fi
 
 
           

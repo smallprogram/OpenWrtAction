@@ -67,9 +67,6 @@ owaUrl=https://github.com/smallprogram/OpenWrtAction.git
 my_depends=https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends
 # oepnwrt主源码
 openwrt_source=https://github.com/coolsnowwolf/lede
-# diy script
-diy_script_1=diy_script/lean_diy/diy-part1.sh
-diy_script_2=diy_script/lean_diy/diy-part2.sh
 # 是否首次编译 0否，1是
 is_first_compile=0
 # 是否Make Clean & Make DirClean
@@ -149,7 +146,7 @@ function Func_DIY1_Script(){
     Func_LogMessage "开始执行DIY1设置脚本" "Start executing the DIY1 setup script"
     sleep 1s
     
-    bash ../OpenWrtAction/$diy_script_1 1
+    bash ../OpenWrtAction/diy_script/diy-part1.sh
 
     Func_LogSuccess "DIY1脚本执行完成" "DIY script execution completed"
     sleep 2s
@@ -160,9 +157,23 @@ function Func_DIY2_Script(){
     Func_LogMessage "开始执行DIY2设置脚本" "Start executing the DIY2 setup script"
     sleep 1s
     
-    bash ../OpenWrtAction/$diy_script_2 1
+    bash ../OpenWrtAction/diy_script/diy-part2.sh
 
     Func_LogSuccess "DIY2脚本执行完成" "DIY script execution completed"
+    sleep 2s
+}
+
+function Func_Copy_Backgroundfiles(){
+    local is_wsl2op=$1
+    local platform_config=$2
+    local platform="${platform_config%%.config}"
+
+    Func_LogMessage "开始执行背景文件生成脚本" "Start executing copy background files script"
+    sleep 1s
+    
+    bash ../OpenWrtAction/compile_script/copy_backgroundfiles.sh "$is_wsl2op" "$platform"
+
+    Func_LogSuccess "背景文件生成脚本执行完成" "copy background files script execution completed"
     sleep 2s
 }
 
@@ -244,6 +255,7 @@ function Func_Compile_Firmware() {
 
     Func_DIY2_Script
 
+    Func_Copy_Backgroundfiles "1" "${config_name}"
 
     echo
     Func_LogMessage "开始将OpenwrtAction中config文件夹下的${config_name}注入lean源码中,准备make toolchain...." "Start to inject ${config_name} under the config folder in OpenwrtAction into lean source code..."
