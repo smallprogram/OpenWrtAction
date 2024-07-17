@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build-OpenWrt_Multi-Platform(V2)
+name: Test
 
 on:
   repository_dispatch:
