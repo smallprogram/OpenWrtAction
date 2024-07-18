@@ -27,7 +27,7 @@ if [ -f "release.txt" ]; then
     while IFS= read -r line; do
         updated_line="$line"
         for platform in "${platforms[@]}"; do
-            if [[ "$line" == *"$platform"* ]]; then
+            if echo "$line" | grep -q "\*\*:ice_cube: $platform\*\*"; then
                 for item in "${name_conclusion_array[@]}"; do
                     IFS='.' read -r name conclusion <<< "$item"
                     if [[ "$name" == "Build-OpenWrt-$platform" ]]; then
