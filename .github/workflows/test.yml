@@ -290,7 +290,7 @@ jobs:
           cd a
           mkdir -p b
           cd b
-          if [[ "${{ matrix.platforms }}" == "X86" ]]; then
+          if [[ "${{ matrix.platforms }}" == "R4S" ]]; then
             echo "status=ffff" >> $GITHUB_OUTPUT
             exit 1
           fi
