@@ -373,8 +373,6 @@ jobs:
     if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
     runs-on: ubuntu-latest
     name: Organize-Git-Log
-    outputs:
-      output_sha: ${{steps.commit.outputs.commit_hash }}
        
     steps:
     - name: Checkout
@@ -393,17 +391,6 @@ jobs:
           $GITHUB_WORKSPACE/$UPDATE_GIT_LOG_SH
 
 
-    - name: Git auto update git log
-      uses: stefanzweifel/git-auto-commit-action@v5.0.0
-      id: commit
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        commit_message: auto update git log
-        branch: main
-        commit_author: smallprogram <smallprogram@foxmail.com>
-
-
   job_organize_tags:
     needs: [job_init, job_build, build_status_flag, job_organize_git_log]
     if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
@@ -414,7 +401,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
       with:
-        ref: ${{ needs.job_organize_git_log.outputs.output_sha }}
+        ref: ${{ needs.job_init.outputs.output_sha }}
 
     - name: Download Tags
       uses: actions/download-artifact@v4
@@ -437,17 +424,3 @@ jobs:
       with:
         tag_name: ${{ needs.job_init.outputs.output_release_tag }}
         body_path: release.txt
-
-  job_my_action:
-    needs: [job_init, job_build, build_status_flag, job_organize_git_log, job_organize_tags]
-    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
-    runs-on: ubuntu-latest
-    name: My-Action
-
-    steps:
-      - name: Trigger build
-        uses: peter-evans/repository-dispatch@main
-        with:
-          token: ${{ secrets.MY_SECRET_PAT }}
-          repository: smallprogram/MyAction
-          event-type: openwrt_compilation_completed
