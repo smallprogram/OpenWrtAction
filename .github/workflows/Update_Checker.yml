@@ -19,7 +19,8 @@ on:
         required: false
         default: 'false'
   schedule:
-    - cron: 0 4 * * 5
+    - cron: 0 4 * * *
+      # 0 4 * * 5
       # 0 4,12,20 * * *
 
 jobs:
