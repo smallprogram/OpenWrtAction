@@ -2,6 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-da4eecc|lwb1978|Wed Jul 17 18:33:04 2024 +0800|luci: app_update adapt chinadns-ng wolfssl version (#3316)
-56b04be|lwb1978|Tue Jul 16 01:21:30 2024 +0800|luci: nftables fix high CPU usage in specific situations (#3313)
+4dbb164|xiaorouji|Thu Jul 18 00:36:22 2024 +0800|luci: 4.78-1
+3b17abd|xiaorouji|Thu Jul 18 00:27:09 2024 +0800|luci: update default rules
+cd1cb5f|xiaorouji|Thu Jul 18 00:16:11 2024 +0800|luci: simplify Direct DNS logic
+ed50603|xiaorouji|Wed Jul 17 01:55:41 2024 +0800|luci: add Direct DNS option
+bac0fcd|xiaorouji|Wed Jul 17 22:54:25 2024 +0800|luci: optimization
+acbf5d8|xiaorouji|Thu Jul 18 00:37:25 2024 +0800|luci: update Sing-Box shunt domain_suffix logic
+ba351c9|xiaorouji|Thu Jul 18 00:39:09 2024 +0800|luci: add haproxy `bind_local` option depends
 </details>
