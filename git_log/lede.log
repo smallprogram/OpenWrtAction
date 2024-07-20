@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d4b2121ac|秋野かえで|Thu Jul 18 21:10:10 2024 +0800|config: add xdp-sockets-diag support (#12341)
-e725c6198|Robert Marko|Mon Jul 8 09:46:02 2024 +0200|kernel: fix x86 compilation on macOS
-410fe9f49|John Audia|Tue Jul 9 16:20:30 2024 -0400|kernel: bump 6.6 to 6.6.38
+e7646d45d|aiamadeus|Wed Jul 17 23:15:06 2024 +0800|generic: add missing realtek phy led patches
+64b80093d|aiamadeus|Tue Jul 16 23:25:10 2024 +0800|mediatek: replace mac-address-increment hack
 </details>

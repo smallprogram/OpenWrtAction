@@ -2,11 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4dbb164|xiaorouji|Thu Jul 18 00:36:22 2024 +0800|luci: 4.78-1
-3b17abd|xiaorouji|Thu Jul 18 00:27:09 2024 +0800|luci: update default rules
-cd1cb5f|xiaorouji|Thu Jul 18 00:16:11 2024 +0800|luci: simplify Direct DNS logic
-ed50603|xiaorouji|Wed Jul 17 01:55:41 2024 +0800|luci: add Direct DNS option
-bac0fcd|xiaorouji|Wed Jul 17 22:54:25 2024 +0800|luci: optimization
-acbf5d8|xiaorouji|Thu Jul 18 00:37:25 2024 +0800|luci: update Sing-Box shunt domain_suffix logic
-ba351c9|xiaorouji|Thu Jul 18 00:39:09 2024 +0800|luci: add haproxy `bind_local` option depends
+0eb890e|lwb1978|Sat Jul 20 04:30:57 2024 +0800|luci: optimize the settings of rule_list
+639dd48|lwb1978|Fri Jul 19 15:59:24 2024 +0800|luci: optimize rules
+71236a5|yk271|Fri Jul 19 14:35:48 2024 +0800|Update 0_default_config
+304a3ab|yk271|Fri Jul 19 02:24:44 2024 +0800|Update 0_default_config
+a65db29|yk271|Fri Jul 19 01:33:53 2024 +0800|Update 0_default_config
 </details>
