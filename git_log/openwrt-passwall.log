@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0eb890e|lwb1978|Sat Jul 20 04:30:57 2024 +0800|luci: optimize the settings of rule_list
-639dd48|lwb1978|Fri Jul 19 15:59:24 2024 +0800|luci: optimize rules
-71236a5|yk271|Fri Jul 19 14:35:48 2024 +0800|Update 0_default_config
-304a3ab|yk271|Fri Jul 19 02:24:44 2024 +0800|Update 0_default_config
-a65db29|yk271|Fri Jul 19 01:33:53 2024 +0800|Update 0_default_config
+6a027ea|YunClick|Sat Jul 20 16:11:17 2024 +0800|luci: adjust fw4 include script
 </details>

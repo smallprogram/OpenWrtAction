@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-e7646d45d|aiamadeus|Wed Jul 17 23:15:06 2024 +0800|generic: add missing realtek phy led patches
-64b80093d|aiamadeus|Tue Jul 16 23:25:10 2024 +0800|mediatek: replace mac-address-increment hack
-</details>
