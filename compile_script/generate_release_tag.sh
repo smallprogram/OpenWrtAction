@@ -6,8 +6,7 @@ source $GITHUB_WORKSPACE/compile_script/platforms.sh
 
 openwrt_version=$(grep -o "DISTRIB_REVISION='[^']*'" $GITHUB_WORKSPACE/openwrt/package/lean/default-settings/files/zzz-default-settings | sed "s/DISTRIB_REVISION='\([^']*\)'/\1/")
 
-
-echo "![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/$release_tag/total?style=flat-square)" >> release.txt
+echo "[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/$release_tag/total?style=flat-square)](https://github.com/smallprogram/MyAction)" >> release.txt
 echo "### Firmware Information" >> release.txt
 echo "**:loudspeaker:Cancel the ext4 format and only keep the squashfs format.**" >> release.txt
 echo "**:computer:Including traditional IMG format firmware and UEFI boot firmware.**" >> release.txt
