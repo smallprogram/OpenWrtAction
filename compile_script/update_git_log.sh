@@ -58,40 +58,40 @@ for i in "${!REPO_URLS[@]}"; do
     LINE_NUMBER=${LINE_NUMBERS[$i]}
     OUTPUT_FILE=${OUTPUT_FILES[$i]}
     TITLE_MESSAGE=${TITLE_MESSAGES[$i]}
-    
+
     line=$(sed -n "${LINE_NUMBER}p" git_log/log)
     SHA_Begin=$(echo "$line" | sed -n 's/^[^:]*://p')
     SHA_End=$(sed -n "${LINE_NUMBER}p" git_log.txt)
 
     git clone $REPO_URL git_repositories/$OUTPUT_FILE
 
-    if ! git -C git_repositories/$OUTPUT_FILE cat-file -t "$SHA_Begin" >/dev/null 2>&1 || \
-    ! git -C git_repositories/$OUTPUT_FILE cat-file -t "$SHA_End" >/dev/null 2>&1; then
-    sed -i "${LINE_NUMBER}s/:.*/:$SHA_End/" git_log/log
+    if ! git -C git_repositories/$OUTPUT_FILE cat-file -t "$SHA_Begin" >/dev/null 2>&1 ||
+        ! git -C git_repositories/$OUTPUT_FILE cat-file -t "$SHA_End" >/dev/null 2>&1; then
+        sed -i "${LINE_NUMBER}s/:.*/:$SHA_End/" git_log/log
 
-    echo " :x: Invalid SHA detected (Begin: $SHA_Begin, End: $SHA_End) for $OUTPUT_FILE"
-    echo "<details> <summary> <b>$TITLE_MESSAGE :x: </b>  </summary>" >> "git_log/$OUTPUT_FILE.log"
-    echo "" >> "git_log/$OUTPUT_FILE.log"
-    echo "<b> It is detected that $OUTPUT_FILE has an illegal SHA value. It is possible that $OUTPUT_FILE has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>" >> "git_log/$OUTPUT_FILE.log"
-    echo "" >> "git_log/$OUTPUT_FILE.log"
-    echo "</details>" >> "git_log/$OUTPUT_FILE.log"
-    continue
+        echo " :x: Invalid SHA detected (Begin: $SHA_Begin, End: $SHA_End) for $OUTPUT_FILE"
+        echo "<details> <summary> <b>$TITLE_MESSAGE :x: </b>  </summary>" >>"git_log/$OUTPUT_FILE.log"
+        echo "" >>"git_log/$OUTPUT_FILE.log"
+        echo "<b> It is detected that $OUTPUT_FILE has an illegal SHA value. It is possible that $OUTPUT_FILE has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>" >>"git_log/$OUTPUT_FILE.log"
+        echo "" >>"git_log/$OUTPUT_FILE.log"
+        echo "</details>" >>"git_log/$OUTPUT_FILE.log"
+        continue
     fi
 
     if [ -z "$SHA_Begin" ]; then
-    sed -i "${LINE_NUMBER}s/:.*/:$SHA_End/" git_log/log
+        sed -i "${LINE_NUMBER}s/:.*/:$SHA_End/" git_log/log
     elif [ "$SHA_Begin" != "$SHA_End" ]; then
-    echo "<details> <summary> <b>$TITLE_MESSAGE :new: </b>  </summary>" >> "git_log/$OUTPUT_FILE.log"
-    echo "" >> "git_log/$OUTPUT_FILE.log"
-    echo "SHA|Author|Date|Message" >> "git_log/$OUTPUT_FILE.log"
-    echo "-|-|-|-" >> "git_log/$OUTPUT_FILE.log"
-    git -C git_repositories/$OUTPUT_FILE log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >> "git_log/$OUTPUT_FILE.log"
-    echo "" >> "git_log/$OUTPUT_FILE.log"
-    echo "</details>" >> "git_log/$OUTPUT_FILE.log"
-    echo "|-----------------------------------|"
-    echo "$OUTPUT_FILE has update log"
-    echo "|-----------------------------------|"
-    sed -i "${LINE_NUMBER}s/:.*/:$SHA_End/" git_log/log
+        echo "<details> <summary> <b>$TITLE_MESSAGE :new: </b>  </summary>" >>"git_log/$OUTPUT_FILE.log"
+        echo "" >>"git_log/$OUTPUT_FILE.log"
+        echo "SHA|Author|Date|Message" >>"git_log/$OUTPUT_FILE.log"
+        echo "-|-|-|-" >>"git_log/$OUTPUT_FILE.log"
+        git -C git_repositories/$OUTPUT_FILE log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >>"git_log/$OUTPUT_FILE.log"
+        echo "" >>"git_log/$OUTPUT_FILE.log"
+        echo "</details>" >>"git_log/$OUTPUT_FILE.log"
+        echo "|-----------------------------------|"
+        echo "$OUTPUT_FILE has update log"
+        echo "|-----------------------------------|"
+        sed -i "${LINE_NUMBER}s/:.*/:$SHA_End/" git_log/log
     fi
 done
 

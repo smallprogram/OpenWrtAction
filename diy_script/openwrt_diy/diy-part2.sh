@@ -27,13 +27,11 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/cu
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 ./package/custom_packages/mosdns
 # git clone https://github.com/sbwml/v2ray-geodata ./package/custom_packages/v2ray-geodata
 
-
 # if [ ! -d "./package/lean/luci-app-argon-config" ]; then git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git ./package/lean/luci-app-argon-config;   else cd ./package/lean/luci-app-argon-config; git stash; git stash drop; git pull; cd ..; cd ..; cd ..; fi;
 # if [ ! -d "./package/lean/luci-app-adguardhome" ]; then git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/lean/luci-app-adguardhome;   else cd ./package/lean/luci-app-adguardhome; git stash; git stash drop; git pull; cd ..; cd ..; cd ..; fi;
 # git clone https://github.com/jerrykuku/lua-maxminddb.git
 # git clone https://github.com/jerrykuku/luci-app-vssr.git
 # git clone https://github.com/lisaac/luci-app-dockerman.git
-
 
 # Reset drive type
 # sed -i 's/(dmesg | grep .*/{a}${b}${c}${d}${e}${f}/g' package/lean/autocore/files/x86/autocore
@@ -42,7 +40,6 @@ git clone https://github.com/sbwml/luci-app-mosdns -b v5 ./package/custom_packag
 
 # Close running yards
 # sed -i 's/console=tty0//g'  target/linux/x86/image/Makefile
-
 
 if [ ! -n "$is_wsl2op" ]; then
     # Add default login background
@@ -69,12 +66,6 @@ else
     # cp -r ../OpenWrtAction/patches/qmi_wwan_f.c ./package/wwan/driver/fibocom_QMI_WWAN/src/qmi_wwan_f.c
 fi
 
-
-
-          
 # Diy
 # rm -rf ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
 # wget -P ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status https://github.com/smallprogram/OpenWrtAction/raw/main/source/openwrtfile/index.htm
-
-
-

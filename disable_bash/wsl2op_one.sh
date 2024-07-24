@@ -9,7 +9,6 @@
 # File: wsl2op.sh
 # Description: WSL automatically compiles Openwrt script code
 
-
 #--------------------⬇⬇⬇⬇环境变量⬇⬇⬇⬇--------------------
 # 路由默认IP地址
 routeIP=10.10.0.253
@@ -65,13 +64,11 @@ is_complie_error=0
 git_email=smallprogram@foxmail.com
 git_user=smallprogram
 
-
-
 #--------------------⬇⬇⬇⬇各种函数⬇⬇⬇⬇--------------------
 
 # 输出默认语言函数
-function Func_LogMessage(){
-    if [ ! -n "$isChinese" ];then
+function Func_LogMessage() {
+    if [ ! -n "$isChinese" ]; then
         echo -e "$1"
     else
         echo -e "$2"
@@ -79,7 +76,7 @@ function Func_LogMessage(){
 }
 
 # DIY Script函数
-function Func_DIY_Script(){
+function Func_DIY_Script() {
     Func_LogMessage "\033[31m 开始执行自定义设置脚本 \033[0m" "\033[31m Start executing the custom setup script \033[0m"
     sleep 1s
     # Modify default IP
@@ -98,7 +95,7 @@ function Func_DIY_Script(){
     # sleep 1s
     #关闭串口跑码
     Func_LogMessage "\033[31m 关闭串口跑码 \033[0m" "\033[31m Close serial port running code \033[0m"
-    sed -i 's/console=tty0//g'  /home/${userName}/${ledeDir}/target/linux/x86/image/Makefile
+    sed -i 's/console=tty0//g' /home/${userName}/${ledeDir}/target/linux/x86/image/Makefile
     sleep 1s
     # 注入patches
     # Func_LogMessage "\033[31m 注入patches \033[0m" "\033[31m inject patches \033[0m"
@@ -133,29 +130,29 @@ function Func_DIY_Script(){
     wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/video4.mp4
     wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/video/video5.mp4
     wget -P ./feeds/luci/themes/luci-theme-argon/htdocs/luci-static/argon/background https://github.com/smallprogram/OpenWrtAction/raw/main/source/img/1.jpg
-    
+
     #Diy
     rm -rf ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
     wget -P ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status https://github.com/smallprogram/OpenWrtAction/raw/main/source/openwrtfile/index.htm
     sleep 1s
-    
+
     Func_LogMessage "\033[31m DIY脚本执行完成 \033[0m" "\033[31m DIY script execution completed \033[0m"
     sleep 2s
 }
 
 #GIT设置
-function Func_GitSetting(){
+function Func_GitSetting() {
     git config --global user.email "${git_email}"
     git config --global user.name "${git_user}"
     export GIT_SSL_NO_VERIFY=1
 }
 
 # 获取自定插件函数
-function Func_Get_luci_apps(){
+function Func_Get_luci_apps() {
     for luci_app in "${luci_apps[@]}"; do
 
         temp=${luci_app##*/} # xxx.git
-        dir=${temp%%.*}  # xxx
+        dir=${temp%%.*}      # xxx
 
         Func_LogMessage "\033[31m 开始同步$dir.... \033[0m" "\033[31m Start syncing $dir.... \033[0m"
         sleep 2s
@@ -178,8 +175,7 @@ function Func_Get_luci_apps(){
         #     continue
         # fi
 
-        if [ ! -d "/home/${userName}/${ledeDir}/package/lean/$dir" ];
-        then
+        if [ ! -d "/home/${userName}/${ledeDir}/package/lean/$dir" ]; then
             cd /home/${userName}/${ledeDir}/package/lean/
             git clone $luci_app
             cd /home/${userName}
@@ -196,7 +192,6 @@ function Func_Get_luci_apps(){
 # 编译函数
 function Func_Compile_Firmware() {
 
-    
     # CheckUpdate
     cd /home/${userName}/${ledeDir}
     begin_date=开始时间$(date "+%Y-%m-%d-%H-%M-%S")
@@ -213,16 +208,14 @@ function Func_Compile_Firmware() {
         Func_LogMessage "\033[34m 执行make clean && make dirclean完毕，准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
         sleep 1s
     fi
-    
+
     Func_LogMessage "\033[34m 创建编译日志文件夹/home/${userName}/${log_folder_name}/${folder_name} \033[0m" "\033[34m Create compilation log folder /home/${userName}/${log_folder_name}/${folder_name} \033[0m"
     sleep 1s
 
-    if [ ! -d "/home/${userName}/${log_folder_name}" ];
-    then
+    if [ ! -d "/home/${userName}/${log_folder_name}" ]; then
         mkdir /home/${userName}/${log_folder_name}
     fi
-    if [ ! -d "/home/${userName}/${log_folder_name}/${folder_name}" ];
-    then
+    if [ ! -d "/home/${userName}/${log_folder_name}/${folder_name}" ]; then
         mkdir /home/${userName}/${log_folder_name}/${folder_name}
     fi
     touch /home/${userName}/${log_folder_name}/${folder_name}/${log_feeds_update_filename}
@@ -230,7 +223,7 @@ function Func_Compile_Firmware() {
     touch /home/${userName}/${log_folder_name}/${folder_name}/${log_make_defconfig_filename}
     touch /home/${userName}/${log_folder_name}/${folder_name}/${log_make_down_filename}
     touch /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
-    echo -e $begin_date > /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_time_filename}
+    echo -e $begin_date >/home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_time_filename}
 
     Func_LogMessage "\033[34m 编译日志文件夹创建成功 \033[0m" "\033[34m The compilation log folder was created successfully \033[0m"
     sleep 1s
@@ -239,8 +232,7 @@ function Func_Compile_Firmware() {
     Func_LogMessage "\033[31m 开始将OpenwrtAction中的自定义feeds注入lean源码中.... \033[0m" "\033[31m Started injecting custom feeds in OpenwrtAction into lean source code... \033[0m"
     sleep 2s
     echo
-    cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default > /home/${userName}/${ledeDir}/feeds.conf.default
-
+    cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default >/home/${userName}/${ledeDir}/feeds.conf.default
 
     Func_LogMessage "\033[31m 开始update feeds.... \033[0m" "\033[31m begin update feeds.... \033[0m"
     sleep 1s
@@ -253,8 +245,8 @@ function Func_Compile_Firmware() {
     Func_LogMessage "\033[31m 开始将OpenwrtAction中config文件夹下的${configName}注入lean源码中.... \033[0m" "\033[31m Start to inject ${configName} under the config folder in OpenwrtAction into lean source code... \033[0m"
     sleep 2s
     echo
-    cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
-    cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/${log_before_defconfig_config}
+    cat /home/${userName}/OpenWrtAction/config/${configName} >/home/${userName}/${ledeDir}/.config
+    cat /home/${userName}/${ledeDir}/.config >/home/${userName}/${log_folder_name}/${folder_name}/${log_before_defconfig_config}
     # if [[ $isFirstCompile == 1 ]]; then
     #     echo -e  "\033[34m 由于你是首次编译，需要make menuconfig配置，如果保持原有config不做更改，请在进入菜单后直接exit即可 \033[0m"
     #     sleep 6s
@@ -269,9 +261,9 @@ function Func_Compile_Firmware() {
     Func_LogMessage "\033[34m 开始执行make defconfig! \033[0m" "\033[34m Start to execute make defconfig! \033[0m"
     sleep 1s
     make defconfig | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_make_defconfig_filename}
-    cat /home/${userName}/${ledeDir}/.config > /home/${userName}/${log_folder_name}/${folder_name}/${log_after_defconfig_config}
+    cat /home/${userName}/${ledeDir}/.config >/home/${userName}/${log_folder_name}/${folder_name}/${log_after_defconfig_config}
 
-    diff  /home/${userName}/${log_folder_name}/${folder_name}/${log_before_defconfig_config} /home/${userName}/${log_folder_name}/${folder_name}/${log_after_defconfig_config} -y -W 200 > /home/${userName}/${log_folder_name}/${folder_name}/${log_diff_config}
+    diff /home/${userName}/${log_folder_name}/${folder_name}/${log_before_defconfig_config} /home/${userName}/${log_folder_name}/${folder_name}/${log_after_defconfig_config} -y -W 200 >/home/${userName}/${log_folder_name}/${folder_name}/${log_diff_config}
 
     Func_LogMessage "\033[34m 开始执行make download! \033[0m" "\033[34m Start to execute make download! \033[0m"
     sleep 1s
@@ -283,8 +275,7 @@ function Func_Compile_Firmware() {
 
     Func_LogMessage "\033[34m 开始执行make编译! \033[0m" "\033[34m Start to execute make compilation! \033[0m"
     sleep 1s
-    if [[ $sysenv == 1 ]]
-    then
+    if [[ $sysenv == 1 ]]; then
         Func_LogMessage "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m" "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
         Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
         read -t $timer isSingleCompile
@@ -292,16 +283,16 @@ function Func_Compile_Firmware() {
             Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
             is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
             Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
             sleep 1s
-            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin make -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
             is_complie_error=${PIPESTATUS[0]}
         fi
-        
+
     else
         Func_LogMessage "\033[31m 是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译 \033[0m" "\033[31m Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation \033[0m"
         Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
@@ -310,37 +301,34 @@ function Func_Compile_Firmware() {
             Func_LogMessage "\033[34m OK，不执行单线程编译  \033[0m" "\033[34m OK, do not perform single-threaded compilation  \033[0m"
             sleep 1s
             # echo "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
-            make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            make -j$(($(nproc) + 1)) V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
             is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogMessage "\033[34m OK，执行单线程编译。 \033[0m" "\033[34m OK, execute single-threaded compilation. \033[0m"
             Func_LogMessage "\033[34m 准备开始编译 \033[0m" "\033[34m Ready to compile \033[0m"
             sleep 1s
-            make -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename} 
+            make -j1 V=s | tee -a /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_filename}
             is_complie_error=${PIPESTATUS[0]}
         fi
         # $PATH
     fi
-    
+
     Func_LogMessage "\033[34m 编译状态:${is_complie_error} \033[0m" "\033[34m Compile Status Code:${is_complie_error} \033[0m"
-    
+
     Func_LogMessage "\033[34m make编译结束! \033[0m" "\033[34m Make compilation is over! \033[0m"
     sleep 1s
-    
+
     end_date=结束时间$(date "+%Y-%m-%d-%H-%M-%S")
-    echo -e $end_date >> /home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_time_filename}
+    echo -e $end_date >>/home/${userName}/${log_folder_name}/${folder_name}/${log_Compile_time_filename}
 
     ######是否提交编译结果到github Release
     # UpdateFileToGithubRelease
-
-
 
     Func_LogMessage "\033[31m 准备拷贝编译固件到${log_folder_name}/${folder_name}下" "\033[31m Copy and compile the firmware to ${log_folder_name}/${folder_name} \033[0m"
     Func_LogMessage "\033[34m 开始拷贝 \033[0m" "\033[34m Start copying \033[0m"
     cp -r /home/${userName}/${ledeDir}/bin/targets /home/${userName}/${log_folder_name}/${folder_name}
     rm -rf /home/${userName}/${ledeDir}/bin/targets/
     Func_LogMessage "\033[34m 拷贝完成 \033[0m" "\033[34m Copy completed \033[0m"
-
 
     # Func_LogMessage "\033[31m 是否拷贝编译固件到${log_folder_name}/${folder_name}下？不输入默认不拷贝，输入任意值拷贝 \033[0m" "\033[31m Do you want to copy and compile the firmware to ${log_folder_name}/${folder_name}? Don’t copy by default, input any value to copy \033[0m"
     # Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
@@ -362,12 +350,11 @@ function Func_Compile_Firmware() {
 }
 
 # config文件夹的config文件列表函数
-function Func_ConfigList(){
+function Func_ConfigList() {
     key=0
-    for conf in ${config_list[*]}; 
-    do 
+    for conf in ${config_list[*]}; do
         key=$((${key} + 1))
-        echo "$key: $conf"; 
+        echo "$key: $conf"
         # echo "129 key的值："$key
     done
     read -t $timer configNameInp
@@ -376,8 +363,7 @@ function Func_ConfigList(){
         # configName=X86.config
         # ledeDir=lede_$configName
         # echo "135 configName的值："$configName
-        for context in ${config_list[*]}; 
-        do 
+        for context in ${config_list[*]}; do
             if [[ $context == $configName ]]; then
                 break
             fi
@@ -387,9 +373,9 @@ function Func_ConfigList(){
         configNameInp=$i
         # echo "145 configNameInp的值："$configNameInp
         Func_LogMessage "\033[34m 输入超时使用默认值$configName \033[0m" "\033[34m Use the default value $configName for input timeout \033[0m"
-    else 
+    else
         if [[ $configNameInp -ge 1 && $configNameInp -le $key ]]; then
-            configName=${config_list[$(($configNameInp-1))]}
+            configName=${config_list[$(($configNameInp - 1))]}
             # ledeDir=lede_$configName
             # echo $configNameInp
             # echo $configName
@@ -398,9 +384,8 @@ function Func_ConfigList(){
 }
 
 #清理日志文件夹函数
-function Func_CleanLogFolder(){
-    if [ -d "/home/${userName}/${log_folder_name}" ];
-    then
+function Func_CleanLogFolder() {
+    if [ -d "/home/${userName}/${log_folder_name}" ]; then
         Func_LogMessage "\033[31m 是否清理存储超过$clean_day天的日志文件，默认删除，如果录入任意值不删除 \033[0m" "\033[31m Whether to clean up the log files stored for more than $clean_day days, delete by default, if you enter any value, it will not be deleted \033[0m"
         Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
         read -t $timer isclean
@@ -417,7 +402,7 @@ function Func_CleanLogFolder(){
 }
 
 #主函数
-function Func_Main(){
+function Func_Main() {
     # GitSetting
     Func_GitSetting
     # 默认语言中文，其他英文
@@ -428,22 +413,21 @@ function Func_Main(){
     Func_LogMessage "\033[34m 注意，请确保当前linux账户为非root账户，并且已经安装相关编译依赖 \033[0m" "\033[34m Note, please make sure that the current linux account is a non-root account, and the relevant compilation dependencies have been installed \033[0m"
     Func_LogMessage "\033[34m 如果不符合上述条件，请安装依赖或ctrl+C退出 \033[0m" "\033[34m If the above conditions are not met, please Install dependencies or ctrl+C to exit \033[0m"
     Func_LogMessage "\033[31m 是否安装编译依赖，不输入默认不安装，输入任意值安装，将会在$timer秒后自动选择默认值 \033[0m" "\033[31m Whether to install the compilation dependencies. Do not enter the default. Do not install. Enter any value to install. The default value will be automatically selected after $timer seconds \033[0m"
-        read -t $timer dependencies
-        if [ ! -n "$dependencies" ]; then
-            Func_LogMessage "\033[34m OK，不安装 \033[0m" "\033[34m OK, Not installed \033[0m"   
-        else
-            Func_LogMessage "\033[34m 开始安装 \033[0m" "\033[34m Start installation \033[0m"
-            sudo apt update -y
-            sudo apt full-upgrade -y
-            sleep 5s
-            sudo apt-get -y install ack antlr3 asciidoc autoconf automake autopoint binutils bison build-essential bzip2 ccache cmake cpio curl device-tree-compiler fastjar flex gawk gettext gcc-multilib g++-multilib git gperf haveged help2man intltool libc6-dev-i386 libelf-dev libglib2.0-dev libgmp3-dev libltdl-dev libmpc-dev libmpfr-dev libncurses5-dev libncursesw5-dev libreadline-dev libssl-dev libtool lrzsz mkisofs msmtp nano ninja-build p7zip p7zip-full patch pkgconf python2.7 python3 python3-pip libpython3-dev qemu-utils rsync scons squashfs-tools subversion swig texinfo uglifyjs upx-ucl unzip vim wget xmlto xxd zlib1g-dev
-            sleep 5s
-            git config --global http.sslverify false
-            git config --global https.sslverify false
-            Func_LogMessage "\033[34m 安装完成 \033[0m" "\033[34m Installation Completed \033[0m" 
-        fi
+    read -t $timer dependencies
+    if [ ! -n "$dependencies" ]; then
+        Func_LogMessage "\033[34m OK，不安装 \033[0m" "\033[34m OK, Not installed \033[0m"
+    else
+        Func_LogMessage "\033[34m 开始安装 \033[0m" "\033[34m Start installation \033[0m"
+        sudo apt update -y
+        sudo apt full-upgrade -y
+        sleep 5s
+        sudo apt-get -y install ack antlr3 asciidoc autoconf automake autopoint binutils bison build-essential bzip2 ccache cmake cpio curl device-tree-compiler fastjar flex gawk gettext gcc-multilib g++-multilib git gperf haveged help2man intltool libc6-dev-i386 libelf-dev libglib2.0-dev libgmp3-dev libltdl-dev libmpc-dev libmpfr-dev libncurses5-dev libncursesw5-dev libreadline-dev libssl-dev libtool lrzsz mkisofs msmtp nano ninja-build p7zip p7zip-full patch pkgconf python2.7 python3 python3-pip libpython3-dev qemu-utils rsync scons squashfs-tools subversion swig texinfo uglifyjs upx-ucl unzip vim wget xmlto xxd zlib1g-dev
+        sleep 5s
+        git config --global http.sslverify false
+        git config --global https.sslverify false
+        Func_LogMessage "\033[34m 安装完成 \033[0m" "\033[34m Installation Completed \033[0m"
+    fi
 
-    
     Func_CleanLogFolder
     sleep 2s
 
@@ -455,34 +439,28 @@ function Func_Main(){
     else
         Func_LogMessage "\033[31m 请输入新的Config文件名，请以xxx.config命名，例如xiaomi3.config \033[0m" "\033[31m Please enter the new Config file name, please name it after xxx.config, for example xiaomi3.config \033[0m"
         read newConfigName
-        for conf in ${config_list[*]}; 
-        do 
+        for conf in ${config_list[*]}; do
             if [[ $newConfigName = $conf ]]; then
                 newConfigName=''
             fi
         done
-        until [[ -n "$newConfigName" ]]
-        do
+        until [[ -n "$newConfigName" ]]; do
             Func_LogMessage "\033[34m 你输入的值为空或者与现有config文件名重复,请重新输入！ \033[0m" "\033[34m The value you entered is empty or duplicates the name of the existing config file, please re-enter! \033[0m"
-            read  newConfigName
-            for conf in ${config_list[*]}; 
-            do 
-            if [[ $newConfigName = $conf ]]; then
-                newConfigName=''
-            fi
+            read newConfigName
+            for conf in ${config_list[*]}; do
+                if [[ $newConfigName = $conf ]]; then
+                    newConfigName=''
+                fi
             done
         done
     fi
-
-
 
     if [ ! -n "$isCreateNewConfig" ]; then
         echo
         Func_LogMessage "\033[31m 请输入默认OpenwrtAction中的config文件名，默认为$configName \033[0m" "\033[31m Please enter the config file name in the default OpenwrtAction, the default is $configName \033[0m"
         Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
         Func_ConfigList
-        until [[ $configNameInp -ge 1 && $configNameInp -le $key ]]
-        do
+        until [[ $configNameInp -ge 1 && $configNameInp -le $key ]]; do
             Func_LogMessage "\033[34m 你输入的 ${configNameInp} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m" "\033[34m What is the function of the ${configNameInp} you entered? Just take a good look at the serial number and just enter the value. \033[0m"
             Func_LogMessage "\033[31m 请输入默认OpenwrtAction中的config文件名，默认为$configName \033[0m" "\033[31m Please enter the config file name in the default OpenwrtAction, the default is $configName \033[0m"
             Func_ConfigList
@@ -495,7 +473,7 @@ function Func_Main(){
             Func_LogMessage "\033[34m OK，使用默认值$ledeDir \033[0m" "\033[34m OK, use the default value $ledeDir \033[0m"
         else
             Func_LogMessage "\033[34m 使用 ${ledeDirInp} 作为lean源码文件夹名。 \033[0m" "\033[34m Use ${ledeDirInp} as the lean source folder name. \033[0m"
-            echo -e  
+            echo -e
             # ledeDir=$ledeDirInp
         fi
 
@@ -503,22 +481,17 @@ function Func_Main(){
         configName=$newConfigName
     fi
 
-
-
-
-
     echo
     Func_LogMessage "\033[31m 开始同步lean源码.... \033[0m" "\033[31m Start to synchronize lean source code... \033[0m"
     sleep 2s
 
     cd /home/${userName}
-    if [ ! -d "/home/${userName}/${ledeDir}" ];
-    then
+    if [ ! -d "/home/${userName}/${ledeDir}" ]; then
         git clone https://github.com/coolsnowwolf/lede ${ledeDir}
         cd ${ledeDir}/package/lean
         cd /home/${userName}
         isFirstCompile=1
-    else 
+    else
         cd ${ledeDir}
         git stash
         git stash drop
@@ -535,29 +508,25 @@ function Func_Main(){
 
     # echo $isFirstCompile "dfffffffffffffffffffffffffffff"
 
-
     Func_Get_luci_apps
 
-
-    echo 
+    echo
     Func_LogMessage "\033[31m 准备就绪，请按照导航选择操作.... \033[0m" "\033[31m Ready, please follow the navigation options... \033[0m"
     sleep 2s
 
-
     Func_LogMessage "\033[31m 你的编译环境是WSL2吗？ \033[0m" "\033[31m Is your compilation environment WSL2? \033[0m"
     Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
-    Func_LogMessage "\033[34m 1. 是(默认) \033[0m" "\033[34m 1. Yes (default) \033[0m" 
+    Func_LogMessage "\033[34m 1. 是(默认) \033[0m" "\033[34m 1. Yes (default) \033[0m"
     Func_LogMessage "\033[34m 2. 不是  \033[0m" "\033[34m 2. NO \033[0m"
     read -t $timer sysenv
     if [ ! -n "$sysenv" ]; then
-            sysenv=1
-            Func_LogMessage "\033[34m 输入超时使用默认值 \033[0m" "\033[34m Use default value for input timeout \033[0m"
+        sysenv=1
+        Func_LogMessage "\033[34m 输入超时使用默认值 \033[0m" "\033[34m Use default value for input timeout \033[0m"
     fi
-    until [[ $sysenv -ge 1 && $sysenv -le 2 ]]
-    do
+    until [[ $sysenv -ge 1 && $sysenv -le 2 ]]; do
         Func_LogMessage "\033[34m 你输入的 ${sysenv} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m" "\033[34m What is the function of the ${sysenv} you entered? Just enter the value after taking a good look at the serial number. \033[0m"
         Func_LogMessage "\033[31m 你的编译环境是WSL2吗？ \033[0m" "\033[31m Is your compilation environment WSL2? \033[0m"
-        Func_LogMessage "\033[34m 1. 是(默认) \033[0m" "\033[34m 1. Yes (default) \033[0m" 
+        Func_LogMessage "\033[34m 1. 是(默认) \033[0m" "\033[34m 1. Yes (default) \033[0m"
         Func_LogMessage "\033[34m 2. 不是  \033[0m" "\033[34m 2. NO \033[0m"
         read -t $timer sysenv
         if [ ! -n "$sysenv" ]; then
@@ -565,7 +534,7 @@ function Func_Main(){
             Func_LogMessage "\033[34m 使用默认值 \033[0m" "\033[34m Use default \033[0m"
         fi
     done
-    echo 
+    echo
 
     if [ ! -n "$isCreateNewConfig" ]; then
         Func_LogMessage "\033[31m 你接下来要干啥？？？ \033[0m" "\033[31m What are you going to do next? ? ? \033[0m"
@@ -574,12 +543,11 @@ function Func_Main(){
         Func_LogMessage "\033[34m 2. 我要配置config，配置完毕后自动同步回OpenwrtAction。 \033[0m" "\033[34m 2. I want to configure config, and automatically synchronize back to OpenwrtAction after configuration. \033[0m"
         read -t $timer num
         if [ ! -n "$num" ]; then
-                num=1
-                Func_LogMessage "\033[34m 使用默认值 \033[0m" "\033[34m Use default \033[0m"
+            num=1
+            Func_LogMessage "\033[34m 使用默认值 \033[0m" "\033[34m Use default \033[0m"
         fi
         # echo $num
-        until [[ $num -ge 1 && $num -le 2 ]]
-        do
+        until [[ $num -ge 1 && $num -le 2 ]]; do
             Func_LogMessage "\033[34m 你输入的 ${num} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m" "\033[34m What is the function of the ${num} you entered? Just enter the number after you are optimistic about the serial number. \033[0m"
             Func_LogMessage "\033[31m 你接下来要干啥？？？ \033[0m" "\033[31m What are you going to do next? ? ? \033[0m"
             Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
@@ -592,68 +560,62 @@ function Func_Main(){
             fi
         done
 
-        if [[ $num == 1 ]]
-        then
+        if [[ $num == 1 ]]; then
             Func_Compile_Firmware
         fi
     else
         num=2
     fi
 
-
-    if [[ $num == 2 ]]
-    then
+    if [[ $num == 2 ]]; then
         echo
         Func_LogMessage "\033[31m 开始将OpenwrtAction中的自定义feeds注入lean源码中.... \033[0m" "\033[31m Started injecting custom feeds in OpenwrtAction into lean source code... \033[0m"
         sleep 2s
         echo
-        cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default > /home/${userName}/${ledeDir}/feeds.conf.default
+        cat /home/${userName}/OpenWrtAction/feeds_config/custom.feeds.conf.default >/home/${userName}/${ledeDir}/feeds.conf.default
 
         cd /home/${userName}/${ledeDir}
         Func_LogMessage "\033[31m 开始update feeds.... \033[0m" "\033[31m begin update feeds.... \033[0m"
         sleep 1s
-        ./scripts/feeds update -a 
+        ./scripts/feeds update -a
         Func_LogMessage "\033[31m 开始install feeds.... \033[0m" "\033[31m begin install feeds.... \033[0m"
         sleep 1s
-        ./scripts/feeds install -a 
+        ./scripts/feeds install -a
 
         if [ ! -n "$isCreateNewConfig" ]; then
             echo
             Func_LogMessage "\033[31m 开始将OpenwrtAction中config文件夹下的${configName}注入lean源码中.... \033[0m" "\033[31m Start to inject ${configName} under the config folder in OpenwrtAction into lean source code... \033[0m"
             sleep 2s
             echo
-            cat /home/${userName}/OpenWrtAction/config/${configName} > /home/${userName}/${ledeDir}/.config
+            cat /home/${userName}/OpenWrtAction/config/${configName} >/home/${userName}/${ledeDir}/.config
         fi
 
         cd /home/${userName}/${ledeDir}
         make menuconfig
-        cat /home/${userName}/${ledeDir}/.config > /home/${userName}/OpenWrtAction/config/${configName}
+        cat /home/${userName}/${ledeDir}/.config >/home/${userName}/OpenWrtAction/config/${configName}
         cd /home/${userName}/OpenWrtAction
-        
+
         if [ ! -n "$(git config --global user.email)" ]; then
             Func_LogMessage "请输入git Global user.email:" "Please enter git Global user.email:"
-            read  gitUserEmail
-            until [[ -n "$gitUserEmail" ]]
-            do
+            read gitUserEmail
+            until [[ -n "$gitUserEmail" ]]; do
                 Func_LogMessage "\033[34m 不能输入空值 \033[0m" "\033[34m Cannot enter a null value \033[0m"
-                read  gitUserEmail
+                read gitUserEmail
             done
             git config --global user.email "$gitUserEmail"
         fi
 
         if [ ! -n "$(git config --global user.name)" ]; then
             Func_LogMessage "请输入git Global user.name:" "Please enter git Global user.name:"
-            read  gitUserName
-            until [[ -n "$gitUserName" ]]
-            do
+            read gitUserName
+            until [[ -n "$gitUserName" ]]; do
                 Func_LogMessage "\033[34m 不能输入空值 \033[0m" "\033[34m Cannot enter a null value \033[0m"
-                read  gitUserName
+                read gitUserName
             done
             git config --global user.email "$gitUserName"
         fi
 
-
-        if [ -n "$(git status -s)" ]; then 
+        if [ -n "$(git status -s)" ]; then
             git add .
             git commit -m "update $configName from local bash"
             git push origin
@@ -669,20 +631,19 @@ function Func_Main(){
         if [ ! -n "$num_continue" ]; then
             num_continue=1
         fi
-        until [[ $num_continue -ge 1 && $num_continue -le 2 ]]
-        do
+        until [[ $num_continue -ge 1 && $num_continue -le 2 ]]; do
             Func_LogMessage "\033[34m 你输入的 ${num_continue} 是啥玩应啊，看好了序号，输入数值就行了。 \033[0m" "\033[34m What's the answer for the ${num_continue} you entered? Just enter the number after you are optimistic about the serial number. \033[0m"
             Func_LogMessage "\033[31m 是否根据新的config编译？ \033[0m" "\033[31m Is it compiled according to the new config? \033[0m"
             Func_LogMessage "\033[31m 将会在$timer秒后自动选择默认值 \033[0m" "\033[31m The default value will be automatically selected after $timer seconds \033[0m"
             Func_LogMessage "\033[34m 1. 是(默认值) \033[0m" "\033[34m 1. Yes(Default) \033[0m"
             Func_LogMessage "\033[34m 2. 不编译了。退出  NO, Exit \033[0m" "\033[34m 2.NO, Exit \033[0m"
             read -t $timer num_continue
-                if [ ! -n "$num_continue" ]; then
-                    num_continue=1
-                    Func_LogMessage "\033[34m 使用默认值 \033[0m" "\033[34m Use default \033[0m"
-                fi
+            if [ ! -n "$num_continue" ]; then
+                num_continue=1
+                Func_LogMessage "\033[34m 使用默认值 \033[0m" "\033[34m Use default \033[0m"
+            fi
         done
-        
+
         if [[ $num_continue == 1 ]]; then
             Func_Compile_Firmware
         else

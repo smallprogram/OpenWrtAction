@@ -11,10 +11,9 @@ if [ -f "release.txt" ]; then
     json_data=$(curl -s -H "Authorization: Bearer $token" "https://api.github.com/repos/$repository/actions/runs/$run_id/jobs")
     name_conclusion_array=($(echo "$json_data" | jq -r '.jobs[] | select(.name | startswith("Build-OpenWrt-")) | "\(.name).\(.conclusion)"'))
 
-
     echo "-------------------build status--------------------------"
     for item in "${name_conclusion_array[@]}"; do
-        IFS='.' read -r name conclusion <<< "$item"
+        IFS='.' read -r name conclusion <<<"$item"
         echo "Name: $name"
         echo "Conclusion: $conclusion"
     done
@@ -29,7 +28,7 @@ if [ -f "release.txt" ]; then
         for platform in "${platforms[@]}"; do
             if echo "$line" | grep -q "\*\*:ice_cube: $platform\*\*"; then
                 for item in "${name_conclusion_array[@]}"; do
-                    IFS='.' read -r name conclusion <<< "$item"
+                    IFS='.' read -r name conclusion <<<"$item"
                     if [[ "$name" == "Build-OpenWrt-$platform" ]]; then
                         if [[ "$conclusion" == "success" ]]; then
                             updated_line=$(echo "$line" | sed 's/build-in_progress_or_waiting.....-yellow?logo=githubactions\&logoColor=yellow/build-passing-green?logo=githubactions\&logoColor=green/')
@@ -42,8 +41,8 @@ if [ -f "release.txt" ]; then
                 break
             fi
         done
-        echo "$updated_line" >> "$tmp_file"
-    done < "release.txt"
+        echo "$updated_line" >>"$tmp_file"
+    done <"release.txt"
 
     # Replace the original file with the updated content
     mv "$tmp_file" "release.txt"
@@ -52,7 +51,7 @@ if [ -f "release.txt" ]; then
     ls git_log
     echo "|=========================================|"
 
-    echo "## What's Changed" >> release.txt
+    echo "## What's Changed" >>release.txt
 
     OUTPUT_FILES=(
         "lede"
@@ -73,18 +72,17 @@ if [ -f "release.txt" ]; then
 
     for file in "${OUTPUT_FILES[@]}"; do
         if [ -f "git_log/$file.log" ]; then
-        echo "found file $file.log!"
-        cat "git_log/$file.log" >> release.txt
+            echo "found file $file.log!"
+            cat "git_log/$file.log" >>release.txt
         else
-        echo "no file $file.log 404"
+            echo "no file $file.log 404"
         fi
     done
 
-
-    echo "status=success" >> $GITHUB_OUTPUT
+    echo "status=success" >>$GITHUB_OUTPUT
     echo "-----------------------release.txt------------------------"
     cat release.txt
 
 else
-    echo "status=failure" >> $GITHUB_OUTPUT
+    echo "status=failure" >>$GITHUB_OUTPUT
 fi

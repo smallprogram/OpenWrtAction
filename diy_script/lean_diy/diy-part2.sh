@@ -10,7 +10,6 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-
 rm -rf ./package/custom_packages
 mkdir -p ./package/custom_packages
 
@@ -42,7 +41,6 @@ rm -rf ./feeds/packages/net/mosdns/
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 ./package/custom_packages/mosdns
 # git clone https://github.com/sbwml/v2ray-geodata ./package/custom_packages/v2ray-geodata
 
-
 # git clone https://github.com/jerrykuku/lua-maxminddb.git
 # git clone https://github.com/jerrykuku/luci-app-vssr.git
 
@@ -55,7 +53,6 @@ git clone https://github.com/lisaac/luci-app-dockerman.git ./package/custom_pack
 # 由lean package维护版本
 # git clone https://github.com/pymumu/smartdns.git ./package/custom_packages/smartdns
 
-
 # Reset drive type
 # sed -i 's/(dmesg | grep .*/{a}${b}${c}${d}${e}${f}/g' package/lean/autocore/files/x86/autocore
 # sed -i '/h=${g}.*/d' package/lean/autocore/files/x86/autocore
@@ -64,13 +61,6 @@ git clone https://github.com/lisaac/luci-app-dockerman.git ./package/custom_pack
 # Close running yards
 # sed -i 's/console=tty0//g'  target/linux/x86/image/Makefile
 
-
-
-
-          
 # Diy
 # rm -rf ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
 # wget -P ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status https://github.com/smallprogram/OpenWrtAction/raw/main/source/openwrtfile/index.htm
-
-
-

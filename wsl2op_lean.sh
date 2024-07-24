@@ -40,7 +40,6 @@
 # make json_overview_image_info -j$(nproc)
 # make checksum -j$(nproc)
 
-
 #--------------------⬇⬇⬇⬇环境变量⬇⬇⬇⬇--------------------
 # 编译环境中当前账户名字
 user_name=$USER
@@ -87,13 +86,10 @@ is_VS='V=s'
 git_email=smallprogram@foxmail.com
 git_user=smallprogram
 
-
-
-
 #--------------------⬇⬇⬇⬇各种函数⬇⬇⬇⬇--------------------
 
 # 输出默认语言函数
-function Func_LogMessage(){
+function Func_LogMessage() {
     Begin="\033[1;96m"
     End="\033[0m"
 
@@ -104,7 +100,7 @@ function Func_LogMessage(){
     fi
 }
 
-function Func_LogSuccess(){
+function Func_LogSuccess() {
     Begin="\033[1;92m"
     End="\033[0m"
 
@@ -115,7 +111,7 @@ function Func_LogSuccess(){
     fi
 }
 
-function Func_LogError(){
+function Func_LogError() {
     Begin="\033[1;91m"
     End="\033[0m"
 
@@ -125,7 +121,6 @@ function Func_LogError(){
         echo -e "${Begin}$2${End}"
     fi
 }
-
 
 Func_LogMessage "输入任意值取消显示详细编译信息" "Enter any value to cancel the display of detailed compilation information"
 Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
@@ -142,35 +137,34 @@ fi
 
 # DIY Script函数
 
-function Func_DIY1_Script(){
+function Func_DIY1_Script() {
     Func_LogMessage "开始执行DIY1设置脚本" "Start executing the DIY1 setup script"
     sleep 1s
-    
+
     bash ../OpenWrtAction/diy_script/lean_diy/diy-part1.sh
 
     Func_LogSuccess "DIY1脚本执行完成" "DIY script execution completed"
     sleep 2s
 }
 
-
-function Func_DIY2_Script(){
+function Func_DIY2_Script() {
     Func_LogMessage "开始执行DIY2设置脚本" "Start executing the DIY2 setup script"
     sleep 1s
-    
+
     bash ../OpenWrtAction/diy_script/lean_diy/diy-part2.sh
 
     Func_LogSuccess "DIY2脚本执行完成" "DIY script execution completed"
     sleep 2s
 }
 
-function Func_Copy_Backgroundfiles(){
+function Func_Copy_Backgroundfiles() {
     local is_wsl2op=$1
     local platform_config=$2
     local platform="${platform_config%%.config}"
 
     Func_LogMessage "开始执行背景文件生成脚本" "Start executing copy background files script"
     sleep 1s
-    
+
     bash ../OpenWrtAction/compile_script/copy_backgroundfiles.sh "$is_wsl2op" "$platform"
 
     Func_LogSuccess "背景文件生成脚本执行完成" "copy background files script execution completed"
@@ -178,7 +172,7 @@ function Func_Copy_Backgroundfiles(){
 }
 
 #GIT设置
-function Func_GitSetting(){
+function Func_GitSetting() {
     git config --global user.email "${git_email}"
     git config --global user.name "${git_user}"
     export GIT_SSL_NO_VERIFY=1
@@ -186,21 +180,20 @@ function Func_GitSetting(){
 
 # 编译报错检查函数
 check_compile_error() {
-  local is_compile_error=$1
-  local messages=$2
+    local is_compile_error=$1
+    local messages=$2
 
-  if [ "$is_compile_error" -ne 0 ]; then
-    Func_LogError "${messages},的编译状态:${is_compile_error}" "${messages}，Compile Status Code:${is_complie_error}"
-    exit $1
-  else
-    Func_LogSuccess "${messages},的编译状态:${is_compile_error}" "${messages}，Compile Status Code:${is_complie_error}"
-  fi
+    if [ "$is_compile_error" -ne 0 ]; then
+        Func_LogError "${messages},的编译状态:${is_compile_error}" "${messages}，Compile Status Code:${is_complie_error}"
+        exit $1
+    else
+        Func_LogSuccess "${messages},的编译状态:${is_compile_error}" "${messages}，Compile Status Code:${is_complie_error}"
+    fi
 }
 
 # 编译函数
 function Func_Compile_Firmware() {
 
-    
     # CheckUpdate
     cd /home/${user_name}/${openwrt_dir}
     begin_date=开始时间$(date "+%Y-%m-%d-%H-%M-%S")
@@ -218,14 +211,14 @@ function Func_Compile_Firmware() {
         Func_LogSuccess "执行make clean && make dirclean完毕，准备开始编译" "Ready to compile"
         sleep 1s
     fi
-    
+
     Func_LogMessage "创建编译日志文件夹/home/${user_name}/${log_folder_name}/${folder_name}" "Create compilation log folder /home/${user_name}/${log_folder_name}/${folder_name}"
     sleep 1s
 
     mkdir -p /home/${user_name}/${log_folder_name}
     mkdir /home/${user_name}/${log_folder_name}/${folder_name}
 
-    echo -e $begin_date > /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main6_Compile_Time-git_log.log
+    echo -e $begin_date >/home/${user_name}/${log_folder_name}/${folder_name}/Func_Main6_Compile_Time-git_log.log
 
     Func_LogSuccess "编译日志文件夹创建成功" "The compilation log folder was created successfully"
     sleep 1s
@@ -235,7 +228,7 @@ function Func_Compile_Firmware() {
     Func_LogMessage "开始将OpenwrtAction中的自定义feeds注入lean源码中...." "Started injecting custom feeds in OpenwrtAction into lean source code..."
     sleep 2s
     echo
-    cat /home/${user_name}/OpenWrtAction/$feeds_dir > /home/${user_name}/${openwrt_dir}/feeds.conf.default
+    cat /home/${user_name}/OpenWrtAction/$feeds_dir >/home/${user_name}/${openwrt_dir}/feeds.conf.default
 
     Func_DIY1_Script
 
@@ -251,8 +244,6 @@ function Func_Compile_Firmware() {
     ./scripts/feeds install -a | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main2_feeds_install-git_log.log
     echo
 
-    
-
     Func_DIY2_Script
 
     Func_Copy_Backgroundfiles "1" "${config_name}"
@@ -261,9 +252,9 @@ function Func_Compile_Firmware() {
     Func_LogMessage "开始将OpenwrtAction中config文件夹下的${config_name}注入lean源码中,准备make toolchain...." "Start to inject ${config_name} under the config folder in OpenwrtAction into lean source code..."
     sleep 2s
     echo
-    cat /home/${user_name}/OpenWrtAction/$config_dir/${config_name} > /home/${user_name}/${openwrt_dir}/.config
+    cat /home/${user_name}/OpenWrtAction/$config_dir/${config_name} >/home/${user_name}/${openwrt_dir}/.config
 
-    cat /home/${user_name}/${openwrt_dir}/.config > /home/${user_name}/${log_folder_name}/${folder_name}/.config_old
+    cat /home/${user_name}/${openwrt_dir}/.config >/home/${user_name}/${log_folder_name}/${folder_name}/.config_old
     # echo -e "\nCONFIG_ALL=y" >> .config
     # echo -e "\nCONFIG_ALL_NONSHARED=y" >> .config
 
@@ -271,9 +262,8 @@ function Func_Compile_Firmware() {
     sleep 1s
     make defconfig | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main3_make_defconfig-git_log.log
 
-    cat /home/${user_name}/${openwrt_dir}/.config > /home/${user_name}/${log_folder_name}/${folder_name}/.config_new
-    diff  /home/${user_name}/${log_folder_name}/${folder_name}/.config_old /home/${user_name}/${log_folder_name}/${folder_name}/.config_new -y -W 200 > /home/${user_name}/${log_folder_name}/${folder_name}/.config_diff
-
+    cat /home/${user_name}/${openwrt_dir}/.config >/home/${user_name}/${log_folder_name}/${folder_name}/.config_new
+    diff /home/${user_name}/${log_folder_name}/${folder_name}/.config_old /home/${user_name}/${log_folder_name}/${folder_name}/.config_new -y -W 200 >/home/${user_name}/${log_folder_name}/${folder_name}/.config_diff
 
     Func_LogMessage "开始执行make download!" "Start to execute make download!"
     sleep 1s
@@ -286,13 +276,11 @@ function Func_Compile_Firmware() {
     find dl -size -1024c -exec ls -l {} \;
     find dl -size -1024c -exec rm -f {} \;
 
-
     echo
     Func_LogMessage "开始make tools." "Begin make tools"
     sleep 2s
     echo
-    if [[ $sysenv == 1 ]]
-    then
+    if [[ $sysenv == 1 ]]; then
         Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
         read -t $timer is_single_compile
@@ -309,7 +297,7 @@ function Func_Compile_Firmware() {
             PATH=$wsl_path make tools/compile -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile1_tools.log
             is_complie_error=${PIPESTATUS[0]}
         fi
-        
+
     else
         Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
@@ -335,8 +323,7 @@ function Func_Compile_Firmware() {
     Func_LogMessage "开始make toolchain." "Begin make toolchain"
     sleep 2s
     echo
-    if [[ $sysenv == 1 ]]
-    then
+    if [[ $sysenv == 1 ]]; then
         Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
         read -t $timer is_single_compile
@@ -353,7 +340,7 @@ function Func_Compile_Firmware() {
             PATH=$wsl_path make toolchain/compile -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
             is_complie_error=${PIPESTATUS[0]}
         fi
-        
+
     else
         Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
@@ -378,8 +365,7 @@ function Func_Compile_Firmware() {
 
     Func_LogMessage "开始执行生成固件" "Start to Generate Frimware!"
     sleep 1s
-    if [[ $sysenv == 1 ]]
-    then
+    if [[ $sysenv == 1 ]]; then
         Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
         read -t $timer is_single_compile
@@ -396,7 +382,7 @@ function Func_Compile_Firmware() {
             PATH=$wsl_path make -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
             is_complie_error=${PIPESTATUS[0]}
         fi
-        
+
     else
         Func_LogMessage "是否启用单线程编译，如果不输入任何值默认否，输入任意值启用单线程编译" "Whether to enable single-threaded compilation, if you do not enter any value, the default is No, enter any value to enable single-threaded compilation"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
@@ -418,19 +404,17 @@ function Func_Compile_Firmware() {
     fi
 
     check_compile_error "$is_complie_error" "Generate Frimware"
-    
+
     Func_LogMessage "编译状态:${is_complie_error}" "Compile Status Code:${is_complie_error}"
-    
+
     Func_LogMessage "make编译结束!" "Make compilation is over!"
     sleep 1s
-    
+
     end_date=结束时间$(date "+%Y-%m-%d-%H-%M-%S")
-    echo -e $end_date >> /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main6_Compile_Time-git_log.log
+    echo -e $end_date >>/home/${user_name}/${log_folder_name}/${folder_name}/Func_Main6_Compile_Time-git_log.log
 
     ######是否提交编译结果到github Release
     # UpdateFileToGithubRelease
-
-
 
     Func_LogMessage "是否拷贝编译固件到${log_folder_name}/${folder_name}下？不输入默认不拷贝，输入任意值拷贝" "Do you want to copy and compile the firmware to ${log_folder_name}/${folder_name}? Don’t copy by default, input any value to copy"
     Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
@@ -451,12 +435,11 @@ function Func_Compile_Firmware() {
 }
 
 # config文件夹的config文件列表函数
-function Func_ConfigList(){
+function Func_ConfigList() {
     key=0
-    for conf in ${config_list[*]}; 
-    do 
+    for conf in ${config_list[*]}; do
         key=$((${key} + 1))
-        echo "$key: $conf"; 
+        echo "$key: $conf"
         # echo "129 key的值："$key
     done
     read -t $timer configNameInp
@@ -465,8 +448,7 @@ function Func_ConfigList(){
         # configName=X86.config
         # openwrt_dir=lede_$configName
         # echo "135 configName的值："$configName
-        for context in ${config_list[*]}; 
-        do 
+        for context in ${config_list[*]}; do
             if [[ $context == $config_name ]]; then
                 break
             fi
@@ -476,9 +458,9 @@ function Func_ConfigList(){
         configNameInp=$i
         # echo "145 configNameInp的值："$configNameInp
         Func_LogError "输入超时使用默认值$config_name" "Use the default value $config_name for input timeout"
-    else 
+    else
         if [[ $configNameInp -ge 1 && $configNameInp -le $key ]]; then
-            config_name=${config_list[$(($configNameInp-1))]}
+            config_name=${config_list[$(($configNameInp - 1))]}
             openwrt_dir=${openwrt_dir_front}${config_name}
             # echo $configNameInp
             # echo $configName
@@ -487,9 +469,8 @@ function Func_ConfigList(){
 }
 
 #清理日志文件夹函数
-function Func_CleanLogFolder(){
-    if [ -d "/home/${user_name}/${log_folder_name}" ];
-    then
+function Func_CleanLogFolder() {
+    if [ -d "/home/${user_name}/${log_folder_name}" ]; then
         Func_LogMessage "是否清理存储超过$clean_day天的日志文件，默认删除，如果录入任意值不删除" "Whether to clean up the log files stored for more than $clean_day days, delete by default, if you enter any value, it will not be deleted"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
         read -t $timer isclean
@@ -503,11 +484,10 @@ function Func_CleanLogFolder(){
         fi
     fi
 
-
 }
 
 #主函数
-function Func_Main(){
+function Func_Main() {
     # GitSetting
     Func_GitSetting
     # 默认语言中文，其他英文
@@ -518,22 +498,21 @@ function Func_Main(){
     Func_LogMessage "注意，请确保当前linux账户为非root账户，并且已经安装相关编译依赖" "Note, please make sure that the current linux account is a non-root account, and the relevant compilation dependencies have been installed"
     Func_LogMessage "如果不符合上述条件，请安装依赖或ctrl+C退出" "If the above conditions are not met, please Install dependencies or ctrl+C to exit"
     Func_LogMessage "是否安装编译依赖，不输入默认不安装，输入任意值安装，将会在$timer秒后自动选择默认值" "Whether to install the compilation dependencies. Do not enter the default. Do not install. Enter any value to install. The default value will be automatically selected after $timer seconds"
-        read -t $timer dependencies
-        if [ ! -n "$dependencies" ]; then
-            Func_LogSuccess "OK，不安装" "OK, Not installed"   
-        else
-            Func_LogMessage "开始安装" "Start installation"
-            sudo apt update -y
-            sudo apt full-upgrade -y
-            sleep 5s
-            sudo apt-get -y install $(curl -fsSL $my_depends)
-            sleep 5s
-            git config --global http.sslverify false
-            git config --global https.sslverify false
-            Func_LogSuccess "安装完成" "Installation Completed" 
-        fi
+    read -t $timer dependencies
+    if [ ! -n "$dependencies" ]; then
+        Func_LogSuccess "OK，不安装" "OK, Not installed"
+    else
+        Func_LogMessage "开始安装" "Start installation"
+        sudo apt update -y
+        sudo apt full-upgrade -y
+        sleep 5s
+        sudo apt-get -y install $(curl -fsSL $my_depends)
+        sleep 5s
+        git config --global http.sslverify false
+        git config --global https.sslverify false
+        Func_LogSuccess "安装完成" "Installation Completed"
+    fi
 
-    
     Func_CleanLogFolder
     sleep 2s
 
@@ -546,36 +525,30 @@ function Func_Main(){
     else
         Func_LogMessage "请输入新的Config文件名，请以xxx.config命名，例如xiaomi3.config" "Please enter the new Config file name, please name it after xxx.config, for example xiaomi3.config"
         read newConfigName
-        for conf in ${config_list[*]}; 
-        do 
+        for conf in ${config_list[*]}; do
             if [[ $newConfigName = $conf ]]; then
                 newConfigName=''
             fi
         done
-        until [[ -n "$newConfigName" ]]
-        do
+        until [[ -n "$newConfigName" ]]; do
             Func_LogError "你输入的值为空或者与现有config文件名重复,请重新输入！" "The value you entered is empty or duplicates the name of the existing config file, please re-enter!"
-            read  newConfigName
-            for conf in ${config_list[*]}; 
-            do 
-            if [[ $newConfigName = $conf ]]; then
-                newConfigName=''
-            fi
+            read newConfigName
+            for conf in ${config_list[*]}; do
+                if [[ $newConfigName = $conf ]]; then
+                    newConfigName=''
+                fi
             done
         done
         config_name=$newConfigName
         openwrt_dir=${openwrt_dir_front}${config_name}
     fi
 
-
-
     if [ ! -n "$isCreateNewConfig" ]; then
         echo
         Func_LogMessage "请输入默认OpenwrtAction中的config文件名，默认为$config_name" "Please enter the config file name in the default OpenwrtAction, the default is $config_name"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
         Func_ConfigList
-        until [[ $configNameInp -ge 1 && $configNameInp -le $key ]]
-        do
+        until [[ $configNameInp -ge 1 && $configNameInp -le $key ]]; do
             Func_LogError "你输入的 ${configNameInp} 是啥玩应啊，看好了序号，输入数值就行了。" "What is the function of the ${configNameInp} you entered? Just take a good look at the serial number and just enter the value."
             Func_LogMessage "请输入默认OpenwrtAction中的config文件名，默认为$config_name" "Please enter the config file name in the default OpenwrtAction, the default is $config_name"
             Func_ConfigList
@@ -588,7 +561,7 @@ function Func_Main(){
             Func_LogSuccess "OK，使用默认值$openwrt_dir" "OK, use the default value $openwrt_dir"
         else
             Func_LogMessage "使用 ${openwrt_dir_front}${config_name} 作为lean源码文件夹名。" "Use ${openwrt_dir_front}${config_name} as the lean source folder name."
-            echo -e  
+            echo -e
             openwrt_dir=${openwrt_dir_front}${config_name}
         fi
 
@@ -596,22 +569,17 @@ function Func_Main(){
         config_name=$newConfigName
     fi
 
-
-
-
-
     echo
     Func_LogMessage "开始同步lean源码...." "Start to synchronize lean source code..."
     sleep 2s
 
     cd /home/${user_name}
-    if [ ! -d "/home/${user_name}/${openwrt_dir}" ];
-    then
+    if [ ! -d "/home/${user_name}/${openwrt_dir}" ]; then
         git clone $openwrt_source ${openwrt_dir}
         cd ${openwrt_dir}/package/lean
         cd /home/${user_name}
         is_first_compile=1
-    else 
+    else
         cd ${openwrt_dir}
         git stash
         git stash drop
@@ -628,28 +596,25 @@ function Func_Main(){
 
     # echo $is_first_compile "dfffffffffffffffffffffffffffff"
 
-
-    echo 
+    echo
     Func_LogMessage "准备就绪，请按照导航选择操作...." "Ready, please follow the navigation options..."
     sleep 2s
-
 
     Func_LogMessage "你的编译环境是WSL2并且没有配置appendWindowsPath吗？" "Is your compilation environment WSL2?"
     Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
     Func_LogError "关于WSL2如何通过配置屏蔽Windows宿主机的环境变量，请参考:https://learn.microsoft.com/zh-cn/windows/wsl/wsl-config ，配置wsl.conf的appendWindowsPath值" "Regarding how WSL2 shields the environment variables of the Windows host through configuration, please refer to: https://learn.microsoft.com/zh-cn/windows/wsl/wsl-config and configure the appendWindowsPath value of wsl.conf"
-    Func_LogMessage "1. 是" "1. Yes" 
+    Func_LogMessage "1. 是" "1. Yes"
     Func_LogMessage "2. 不是(默认) " "2. NO (default)"
     read -t $timer sysenv
     if [ ! -n "$sysenv" ]; then
-            sysenv=1
-            Func_LogError "输入超时使用默认值" "Use default value for input timeout"
+        sysenv=1
+        Func_LogError "输入超时使用默认值" "Use default value for input timeout"
     fi
-    until [[ $sysenv -ge 1 && $sysenv -le 2 ]]
-    do
+    until [[ $sysenv -ge 1 && $sysenv -le 2 ]]; do
         Func_LogMessage "你的编译环境是WSL2并且没有配置appendWindowsPath吗？" "Is your compilation environment WSL2?"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
         Func_LogError "关于WSL2如何通过配置屏蔽Windows宿主机的环境变量，请参考:https://learn.microsoft.com/zh-cn/windows/wsl/wsl-config ，配置wsl.conf的appendWindowsPath值" "Regarding how WSL2 shields the environment variables of the Windows host through configuration, please refer to: https://learn.microsoft.com/zh-cn/windows/wsl/wsl-config and configure the appendWindowsPath value of wsl.conf"
-        Func_LogMessage "1. 是" "1. Yes" 
+        Func_LogMessage "1. 是" "1. Yes"
         Func_LogMessage "2. 不是(默认) " "2. NO (default)"
         read -t $timer sysenv
         if [ ! -n "$sysenv" ]; then
@@ -657,7 +622,7 @@ function Func_Main(){
             Func_LogSuccess "使用默认值" "Use default"
         fi
     done
-    echo 
+    echo
 
     if [ ! -n "$isCreateNewConfig" ]; then
         Func_LogMessage "你接下来要干啥？？？" "What are you going to do next? ? ?"
@@ -666,12 +631,11 @@ function Func_Main(){
         Func_LogMessage "2. 我要配置config，配置完毕后自动同步回OpenwrtAction。" "2. I want to configure config, and automatically synchronize back to OpenwrtAction after configuration."
         read -t $timer num
         if [ ! -n "$num" ]; then
-                num=1
-                Func_LogSuccess "使用默认值" "Use default"
+            num=1
+            Func_LogSuccess "使用默认值" "Use default"
         fi
         # echo $num
-        until [[ $num -ge 1 && $num -le 2 ]]
-        do
+        until [[ $num -ge 1 && $num -le 2 ]]; do
             Func_LogMessage "你输入的 ${num} 是啥玩应啊，看好了序号，输入数值就行了。" "What is the function of the ${num} you entered? Just enter the number after you are optimistic about the serial number."
             Func_LogMessage "你接下来要干啥？？？" "What are you going to do next? ? ?"
             Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
@@ -684,22 +648,19 @@ function Func_Main(){
             fi
         done
 
-        if [[ $num == 1 ]]
-        then
+        if [[ $num == 1 ]]; then
             Func_Compile_Firmware
         fi
     else
         num=2
     fi
 
-
-    if [[ $num == 2 ]]
-    then
+    if [[ $num == 2 ]]; then
         echo
         Func_LogMessage "开始将OpenwrtAction中的自定义feeds注入lean源码中...." "Started injecting custom feeds in OpenwrtAction into lean source code..."
         sleep 2s
         echo
-        cat /home/${user_name}/OpenWrtAction/$feeds_dir > /home/${user_name}/${openwrt_dir}/feeds.conf.default
+        cat /home/${user_name}/OpenWrtAction/$feeds_dir >/home/${user_name}/${openwrt_dir}/feeds.conf.default
         cd /home/${user_name}/${openwrt_dir}
 
         Func_LogMessage "创建编译日志文件夹/home/${user_name}/${log_folder_name}/${folder_name}" "Create compilation log folder /home/${user_name}/${log_folder_name}/${folder_name}"
@@ -722,8 +683,6 @@ function Func_Main(){
         ./scripts/feeds install -a | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main2_feeds_install-git_log.log
         echo
 
-
-
         Func_DIY2_Script
 
         if [ ! -n "$isCreateNewConfig" ]; then
@@ -731,38 +690,35 @@ function Func_Main(){
             Func_LogMessage "开始将OpenwrtAction中config文件夹下的${config_name}注入lean源码中...." "Start to inject ${config_name} under the config folder in OpenwrtAction into lean source code..."
             sleep 2s
             echo
-            cat /home/${user_name}/OpenWrtAction/$config_dir/${config_name} > /home/${user_name}/${openwrt_dir}/.config
+            cat /home/${user_name}/OpenWrtAction/$config_dir/${config_name} >/home/${user_name}/${openwrt_dir}/.config
         fi
 
         cd /home/${user_name}/${openwrt_dir}
         make menuconfig
-        cat /home/${user_name}/${openwrt_dir}/.config > /home/${user_name}/OpenWrtAction/$config_dir/${config_name}
+        cat /home/${user_name}/${openwrt_dir}/.config >/home/${user_name}/OpenWrtAction/$config_dir/${config_name}
         cd /home/${user_name}/OpenWrtAction
-        
+
         if [ ! -n "$(git config --global user.email)" ]; then
             Func_LogSuccess "请输入git Global user.email:" "Please enter git Global user.email:"
-            read  gitUserEmail
-            until [[ -n "$gitUserEmail" ]]
-            do
+            read gitUserEmail
+            until [[ -n "$gitUserEmail" ]]; do
                 Func_LogError "不能输入空值" "Cannot enter a null value"
-                read  gitUserEmail
+                read gitUserEmail
             done
             git config --global user.email "$gitUserEmail"
         fi
 
         if [ ! -n "$(git config --global user.name)" ]; then
             Func_LogSuccess "请输入git Global user.name:" "Please enter git Global user.name:"
-            read  gitUserName
-            until [[ -n "$gitUserName" ]]
-            do
+            read gitUserName
+            until [[ -n "$gitUserName" ]]; do
                 Func_LogError "不能输入空值" "Cannot enter a null value"
-                read  gitUserName
+                read gitUserName
             done
             git config --global user.email "$gitUserName"
         fi
 
-
-        if [ -n "$(git status -s)" ]; then 
+        if [ -n "$(git status -s)" ]; then
             git add .
             git commit -m "update $config_name from local bash"
             git push origin
@@ -778,20 +734,19 @@ function Func_Main(){
         if [ ! -n "$num_continue" ]; then
             num_continue=1
         fi
-        until [[ $num_continue -ge 1 && $num_continue -le 2 ]]
-        do
+        until [[ $num_continue -ge 1 && $num_continue -le 2 ]]; do
             Func_LogMessage "你输入的 ${num_continue} 是啥玩应啊，看好了序号，输入数值就行了。" "What's the answer for the ${num_continue} you entered? Just enter the number after you are optimistic about the serial number."
             Func_LogMessage "是否根据新的config编译？" "Is it compiled according to the new config?"
             Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
             Func_LogMessage "1. 是(默认值)" "1. Yes(Default)"
             Func_LogMessage "2. 不编译了。退出  NO, Exit" "2.NO, Exit"
             read -t $timer num_continue
-                if [ ! -n "$num_continue" ]; then
-                    num_continue=1
-                    Func_LogSuccess "使用默认值" "Use default"
-                fi
+            if [ ! -n "$num_continue" ]; then
+                num_continue=1
+                Func_LogSuccess "使用默认值" "Use default"
+            fi
         done
-        
+
         if [[ $num_continue == 1 ]]; then
             Func_Compile_Firmware
         else
