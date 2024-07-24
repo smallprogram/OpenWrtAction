@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-150b74525|coolsnowwolf|Sun Jul 21 20:39:03 2024 +0800|mt76: fixes build for older kernel
-2dde298ca|coolsnowwolf|Mon Jul 15 23:36:17 2024 +0800|config: sync with upstream source code
+062d85f8f|John Audia|Mon Jul 15 15:37:46 2024 -0400|kernel: bump 6.6 to 6.6.40 (#15956)
+f9f1a684e|Zxl hhyccc|Fri Jul 19 00:45:20 2024 +0800|kernel: bump 6.1 to 6.1.100 (#15973)
 </details>
