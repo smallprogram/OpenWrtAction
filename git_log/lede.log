@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-062d85f8f|John Audia|Mon Jul 15 15:37:46 2024 -0400|kernel: bump 6.6 to 6.6.40 (#15956)
-f9f1a684e|Zxl hhyccc|Fri Jul 19 00:45:20 2024 +0800|kernel: bump 6.1 to 6.1.100 (#15973)
+ff2689bd4|coolsnowwolf|Tue Jul 16 21:28:14 2024 +0800|mediatek: fixes kernel 5.15 build
 </details>
