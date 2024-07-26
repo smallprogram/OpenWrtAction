@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ff2689bd4|coolsnowwolf|Tue Jul 16 21:28:14 2024 +0800|mediatek: fixes kernel 5.15 build
+5859fc60a|coolsnowwolf|Sat Jul 20 23:40:06 2024 +0800|config: revert to use GRUB_SERIAL
 </details>
