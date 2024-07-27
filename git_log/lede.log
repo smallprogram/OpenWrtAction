@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5859fc60a|coolsnowwolf|Sat Jul 20 23:40:06 2024 +0800|config: revert to use GRUB_SERIAL
+1faba8061|coolsnowwolf|Fri Jul 26 17:00:34 2024 +0800|apk: move package to core
+8c14a219b|coolsnowwolf|Fri Jul 26 16:36:04 2024 +0800|kmod-switch-bcm53xx: fixes build on kernel 5.4
 </details>
