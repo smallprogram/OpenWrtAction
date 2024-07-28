@@ -1,0 +1,6 @@
+<details> <summary> <b>passwall packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+2214d06|moetayuko|Sat Jul 27 18:24:15 2024 +0800|gn & naiveproxy: re-apply build fixes for official openwrt sdk (#260)
+</details>

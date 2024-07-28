@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1faba8061|coolsnowwolf|Fri Jul 26 17:00:34 2024 +0800|apk: move package to core
-8c14a219b|coolsnowwolf|Fri Jul 26 16:36:04 2024 +0800|kmod-switch-bcm53xx: fixes build on kernel 5.4
+3bbf60335|Yogi Hermawan|Sat Jul 27 17:01:35 2024 +0700|ramips: fix Bolt BL201 support (#12361)
 </details>
