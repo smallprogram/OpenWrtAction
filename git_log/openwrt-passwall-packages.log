@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2214d06|moetayuko|Sat Jul 27 18:24:15 2024 +0800|gn & naiveproxy: re-apply build fixes for official openwrt sdk (#260)
+f919d1c|github-actions[bot]|Mon Jul 29 10:12:58 2024 +0800|shadowsocks-rust: update to 1.20.3 (#261)
 </details>

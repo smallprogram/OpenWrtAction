@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3bbf60335|Yogi Hermawan|Sat Jul 27 17:01:35 2024 +0700|ramips: fix Bolt BL201 support (#12361)
+f252f21b3|XIE Zhibang|Mon Jun 17 16:07:53 2024 +0000|netfilter: kmod-nft-netdev: add egress support
 </details>
