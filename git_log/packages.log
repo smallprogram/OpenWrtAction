@@ -1,7 +1,0 @@
-<details> <summary> <b>package new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-7a3de3c5|John Thomson|Sun Jul 28 16:02:07 2024 +0800|xr_usb_serial_common: bump to 2023-03-31
-df7f208c|Carsten Schuette|Tue Nov 7 08:28:21 2023 +0000|libsodium: update to 1.0.19
-</details>

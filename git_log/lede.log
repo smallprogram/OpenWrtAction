@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f252f21b3|XIE Zhibang|Mon Jun 17 16:07:53 2024 +0000|netfilter: kmod-nft-netdev: add egress support
+deb218ea2|aiamadeus|Tue Jul 23 22:01:26 2024 +0800|generic: 6.1/6.6: remove gro improvement patch
 </details>
