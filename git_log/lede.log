@@ -2,10 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-75c143384|coolsnowwolf|Wed Jul 31 10:52:47 2024 +0800|Version update to R24.8.1
-a5cb49ea4|coolsnowwolf|Wed Jul 31 10:52:00 2024 +0800|autocore: fix AMD Ryzen AI 300 Series Processors CPU temp display
-b55f5d84a|coolsnowwolf|Wed Jul 31 10:47:20 2024 +0800|x86: use kernel 6.6 by default
-625dbc350|coolsnowwolf|Wed Jul 31 10:46:10 2024 +0800|linux-firmware: amd64-microcode: add AMD Ryzen AI 300 Series Processors ucode support
-a03505e14|Daniel Golle|Tue Oct 3 02:32:35 2023 +0100|mediatek: fix PCIe #PERST de-asserted too early
-88450c61a|Daniel Golle|Mon Sep 11 12:50:38 2023 +0100|kernel: backport fixes for MTK Ethernet driver
+576235b0f|coolsnowwolf|Thu Aug 1 11:29:55 2024 +0800|phy-aquantia: fix build with 6.1.100+
+31c0baa4d|Álvaro Fernández Rojas|Sun Jun 23 19:19:47 2024 +0200|generic: 6.6: backport upstream r8169 patches
 </details>
