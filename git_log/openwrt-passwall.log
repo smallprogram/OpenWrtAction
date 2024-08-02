@@ -1,0 +1,6 @@
+<details> <summary> <b>passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ffe8278|lwb1978|Thu Aug 1 23:49:43 2024 +0800|luci: fix the loopback when the shunt default node is direct
+</details>

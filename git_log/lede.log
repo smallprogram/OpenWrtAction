@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-576235b0f|coolsnowwolf|Thu Aug 1 11:29:55 2024 +0800|phy-aquantia: fix build with 6.1.100+
-31c0baa4d|Álvaro Fernández Rojas|Sun Jun 23 19:19:47 2024 +0200|generic: 6.6: backport upstream r8169 patches
+e53905ae4|喵二|Fri Aug 2 01:49:26 2024 +0800| leigod-acc: fix typo and add conntrack depends (#12376)
+e958c5f2b|coolsnowwolf|Thu Aug 1 18:32:40 2024 +0800|leigod-acc: add Leigod Game Accelerater package and luci
 </details>
