@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ffe8278|lwb1978|Thu Aug 1 23:49:43 2024 +0800|luci: fix the loopback when the shunt default node is direct
+f24d17e|YunClick|Fri Aug 2 21:19:21 2024 +0800|luci: fix nftables rules will repeated in some cases
 </details>

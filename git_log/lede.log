@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e53905ae4|喵二|Fri Aug 2 01:49:26 2024 +0800| leigod-acc: fix typo and add conntrack depends (#12376)
-e958c5f2b|coolsnowwolf|Thu Aug 1 18:32:40 2024 +0800|leigod-acc: add Leigod Game Accelerater package and luci
+33188e1cc|喵二|Fri Aug 2 22:10:06 2024 +0800|luci-app-leigod-acc: add scheduled pause (#12378)
+0d4e0de6a|coolsnowwolf|Fri Aug 2 16:37:53 2024 +0800|luci-app-leigod-acc: add tun mode support
 </details>
