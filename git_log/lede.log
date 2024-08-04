@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-33188e1cc|喵二|Fri Aug 2 22:10:06 2024 +0800|luci-app-leigod-acc: add scheduled pause (#12378)
-0d4e0de6a|coolsnowwolf|Fri Aug 2 16:37:53 2024 +0800|luci-app-leigod-acc: add tun mode support
+d0aedf02f|aiamadeus|Sat Aug 3 23:27:20 2024 +0800|libcryptopp: rewrite compilation process
 </details>
