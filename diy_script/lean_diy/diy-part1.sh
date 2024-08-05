@@ -16,4 +16,42 @@
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
+rm -rf ./package/custom_packages
+mkdir -p ./package/custom_packages
 
+# Add Theme
+rm -rf ./feeds/luci/themes/luci-theme-argon
+rm -rf ./feeds/luci/themes/luci-theme-argon-mod
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git ./package/custom_packages/luci-theme-argon
+
+rm -rf ./feeds/luci/applications/luci-app-argon-config
+git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git ./package/custom_packages/luci-app-argon-config
+
+# adguardhome
+# rm -rf ./package/lean/luci-app-adguardhome
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/custom_packages/luci-app-adguardhome
+
+# mosdns
+
+# find ./ | grep Makefile | grep v2ray-geodata | xargs rm -f
+# find ./ | grep Makefile | grep mosdns | xargs rm -f
+rm -rf ./feeds/luci/applications/luci-app-mosdns/
+rm -rf ./feeds/packages/net/mosdns/
+# rm -rf feeds/packages/net/v2ray-geodata/
+git clone https://github.com/sbwml/luci-app-mosdns -b v5 ./package/custom_packages/mosdns
+# git clone https://github.com/sbwml/v2ray-geodata ./package/custom_packages/v2ray-geodata
+
+# git clone https://github.com/jerrykuku/lua-maxminddb.git
+# git clone https://github.com/jerrykuku/luci-app-vssr.git
+
+# docker
+rm -rf ./feeds/luci/applications/luci-app-dockerman
+rm -rf ./feeds/luci/applications/luci-app-docker
+git clone https://github.com/lisaac/luci-app-dockerman.git ./package/custom_packages/luci-app-dockerman
+
+# Open App Filter
+git clone https://github.com/destan19/OpenAppFilter.git ./package/custom_packages/luci-app-openappfilter
+
+# smartdns
+# 由lean package维护版本
+# git clone https://github.com/pymumu/smartdns.git ./package/custom_packages/smartdns
