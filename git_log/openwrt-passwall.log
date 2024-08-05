@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-70ce2b6|lwb1978|Sat Aug 3 22:23:32 2024 +0800|luci: maintain code consistency
-c735efe|lwb1978|Sat Aug 3 18:35:37 2024 +0800|luci: fix #3342
-00a4d7f|lwb1978|Sat Aug 3 18:26:50 2024 +0800|luci: some DNS optimize and fix #3348
+cb62073|lwb1978|Sun Aug 4 21:47:15 2024 +0800|luci: app update adds mips64 for xray and chinadns-ng
+f0e062b|lwb1978|Sun Aug 4 20:54:04 2024 +0800|luci: simplify the node names for xray and sing-box
+cd2922f|lwb1978|Sun Aug 4 13:33:04 2024 +0800|luci: optimize connect status
 </details>

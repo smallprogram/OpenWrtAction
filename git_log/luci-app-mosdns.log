@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b99b579|sbwml|Sat Aug 3 16:16:47 2024 +0800|luci-app-mosdns: rewritten in LuCI2
+84fdff5|sbwml|Sun Aug 4 19:02:43 2024 +0800|luci-app-mosdns: fix ACL permission error
 </details>

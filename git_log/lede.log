@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d0aedf02f|aiamadeus|Sat Aug 3 23:27:20 2024 +0800|libcryptopp: rewrite compilation process
+2c6595fa4|Marek Behún|Mon Jul 22 15:33:17 2024 +0200|gpio-button-hotplug: add vendor button
 </details>
