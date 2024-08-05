@@ -68,6 +68,7 @@ if [ -f "release.txt" ]; then
         "luci-app-argon-config"
         "luci-app-adguardhome"
         "luci-app-mosdns"
+        "OpenAppFilter"
     )
 
     for file in "${OUTPUT_FILES[@]}"; do

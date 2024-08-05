@@ -15,4 +15,5 @@ git -C openwrt/package/custom_packages/luci-theme-argon log -n 1 --format="%H" >
 git -C openwrt/package/custom_packages/luci-app-argon-config log -n 1 --format="%H" >>git_log.txt
 git -C openwrt/package/custom_packages/luci-app-adguardhome log -n 1 --format="%H" >>git_log.txt
 git -C openwrt/package/custom_packages/mosdns log -n 1 --format="%H" >>git_log.txt
+git -C openwrt/package/custom_packages/luci-app-openappfilter log -n 1 --format="%H" >>git_log.txt
 echo "status=success" >>$GITHUB_OUTPUT

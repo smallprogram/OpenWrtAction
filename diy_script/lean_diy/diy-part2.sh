@@ -49,6 +49,9 @@ rm -rf ./feeds/luci/applications/luci-app-dockerman
 rm -rf ./feeds/luci/applications/luci-app-docker
 git clone https://github.com/lisaac/luci-app-dockerman.git ./package/custom_packages/luci-app-dockerman
 
+# Open App Filter
+git clone https://github.com/destan19/OpenAppFilter.git ./package/custom_packages/luci-app-openappfilter
+
 # smartdns
 # 由lean package维护版本
 # git clone https://github.com/pymumu/smartdns.git ./package/custom_packages/smartdns

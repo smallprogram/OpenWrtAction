@@ -111,6 +111,11 @@ jobs:
         echo "SHA_14=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
         cd
 
+        git clone https://github.com/destan19/OpenAppFilter.git --filter=blob:none
+        cd OpenAppFilter
+        echo "SHA_15=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+        cd
+
 
 
     - name: Show Commit Head and Combination Heads
@@ -130,7 +135,8 @@ jobs:
           ${{steps.getHash.outputs.SHA_11}}\
           ${{steps.getHash.outputs.SHA_12}}\
           ${{steps.getHash.outputs.SHA_13}}\
-          ${{steps.getHash.outputs.SHA_14}}" >> $GITHUB_OUTPUT
+          ${{steps.getHash.outputs.SHA_14}}\
+          ${{steps.getHash.outputs.SHA_15}}" >> $GITHUB_OUTPUT
 
     - name: Compare Commit Hash
       id: cacheHash
