@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2c6595fa4|Marek Behún|Mon Jul 22 15:33:17 2024 +0200|gpio-button-hotplug: add vendor button
+1640f5708|coolsnowwolf|Tue Aug 6 00:25:46 2024 +0800|Revert "luci-app-leigod-acc: add scheduled pause (#12378)"
+bb839963b|Stijn Tintel|Sat Aug 3 15:55:18 2024 +0300|kernel: add missing BTF symbol for 6.6
 </details>

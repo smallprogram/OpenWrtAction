@@ -1,6 +1,0 @@
-<details> <summary> <b>luci-app-mosdns new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-84fdff5|sbwml|Sun Aug 4 19:02:43 2024 +0800|luci-app-mosdns: fix ACL permission error
-</details>
