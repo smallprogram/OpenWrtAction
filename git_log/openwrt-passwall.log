@@ -1,0 +1,7 @@
+<details> <summary> <b>passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+14b7631|lwb1978|Tue Aug 6 21:44:41 2024 +0800|luci: optimize 'add direct DNS to iptables/nftables'
+c9dfa28|lwb1978|Tue Aug 6 20:14:15 2024 +0800|luci: optimize sing-box direct DNS
+</details>
