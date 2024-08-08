@@ -61,7 +61,6 @@ jobs:
     name: Build-Init
     outputs:
       output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
-      output_sha: ${{steps.commit.outputs.commit_hash }}
       output_platforms: ${{steps.read-platforms.outputs.platforms}}
     steps:
       - name: Generate Tag Name
@@ -100,6 +99,11 @@ jobs:
       - name: Install Feeds
         run: cd openwrt && ./scripts/feeds install -a
 
+      - name: Pull the latest changes and Create temporary branch
+        run: |
+          git pull origin ${{ github.ref_name }}
+          git checkout -b temp-branch
+
       - name: Make Defconfig Custom Configuration
         run: |
           chmod +x $DIY_P2_SH
@@ -115,8 +119,18 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           commit_message: auto update config
-          branch: main
+          branch: temp-branch
           commit_author: smallprogram <smallprogram@foxmail.com>
+      
+      - name: Merge and push changes with "theirs" strategy
+        run: |
+          git checkout ${{ github.ref_name }}
+          git pull origin ${{ github.ref_name }}
+          git merge temp-branch --strategy-option theirs --no-edit
+          git push origin ${{ github.ref_name }}
+          git branch -d temp-branch
+          git push origin --delete temp-branch
+
 
       - name: Generate Release Tag
         id: tag
@@ -208,7 +222,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@main
         with:
-          ref: ${{ needs.job_init.outputs.output_sha }}
+          fetch-depth: 0
+
+      - name: Pull the latest changes
+        run: git pull origin ${{ github.ref_name }}
 
       - name: Install Packages
         env:
@@ -449,7 +466,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@main
         with:
-          ref: ${{ needs.job_init.outputs.output_sha }}
+          fetch-depth: 0
+
+      - name: Pull the latest changes
+        run: git pull origin ${{ github.ref_name }}
 
       - name: Build_status_checking
         id: status_checking
@@ -466,14 +486,17 @@ jobs:
     if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
     runs-on: ubuntu-latest
     name: Organize-Git-Log
-    outputs:
-      output_sha: ${{steps.commit.outputs.commit_hash }}
        
     steps:
     - name: Checkout
       uses: actions/checkout@main
       with:
-        ref: ${{ needs.job_init.outputs.output_sha }}
+        fetch-depth: 0
+
+    - name: Pull the latest changes and Create temporary branch
+      run: |
+        git pull origin ${{ github.ref_name }}
+        git checkout -b temp-branch
 
     - name: Download Git Log
       uses: actions/download-artifact@v4
@@ -493,8 +516,17 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         commit_message: auto update git log
-        branch: main
+        branch: temp-branch
         commit_author: smallprogram <smallprogram@foxmail.com>
+
+    - name: Merge and push changes with "theirs" strategy
+      run: |
+        git checkout ${{ github.ref_name }}
+        git pull origin ${{ github.ref_name }}
+        git merge temp-branch --strategy-option theirs --no-edit
+        git push origin ${{ github.ref_name }}
+        git branch -d temp-branch
+        git push origin --delete temp-branch        
 
 
   job_organize_tags:
@@ -507,7 +539,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@main
       with:
-        ref: ${{ needs.job_organize_git_log.outputs.output_sha }}
+        fetch-depth: 0
+
+    - name: Pull the latest changes
+      run: |
+        git pull origin ${{ github.ref_name }}
 
     - name: Download Tags
       uses: actions/download-artifact@v4
