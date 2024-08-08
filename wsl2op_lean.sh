@@ -62,10 +62,12 @@ timer=15
 sysenv=2
 # OpenWrtAction Git URL
 owaUrl=https://github.com/smallprogram/OpenWrtAction.git
+owa_branch=main
 # 依赖列表
 my_depends=https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends
 # oepnwrt主源码
 openwrt_source=https://github.com/coolsnowwolf/lede
+openwrt_branch=master
 # 是否首次编译 0否，1是
 is_first_compile=0
 # 是否Make Clean & Make DirClean
@@ -581,9 +583,8 @@ function Func_Main() {
         is_first_compile=1
     else
         cd ${openwrt_dir}
-        git stash
-        git stash drop
-        git pull --rebase
+        git fetch origin
+        git reset --hard origin/${openwrt_branch}
         cd /home/${user_name}
         is_first_compile=0
     fi
@@ -768,6 +769,8 @@ function Func_Main() {
 # }
 
 #--------------------⬇⬇⬇⬇BashShell⬇⬇⬇⬇--------------------
+git fetch origin
+git reset --hard origin/${owa_branch}
 Func_Main
 Func_LogMessage "编译状态:${is_complie_error}" "Compile Status Code:${is_complie_error}"
 exit $is_complie_error
