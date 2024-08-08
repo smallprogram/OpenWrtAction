@@ -128,8 +128,8 @@ jobs:
           git pull origin ${{ github.ref_name }}
           git merge temp-branch --strategy-option theirs --no-edit
           git push origin ${{ github.ref_name }}
-          git branch -d temp-branch
-          git push origin --delete temp-branch
+          git branch -d temp-branch || echo "Local temp-branch not found"
+          git push origin --delete temp-branch || echo "Remote temp-branch not found"
 
 
       - name: Generate Release Tag
@@ -525,8 +525,8 @@ jobs:
         git pull origin ${{ github.ref_name }}
         git merge temp-branch --strategy-option theirs --no-edit
         git push origin ${{ github.ref_name }}
-        git branch -d temp-branch
-        git push origin --delete temp-branch        
+        git branch -d temp-branch || echo "Local temp-branch not found"
+        git push origin --delete temp-branch || echo "Remote temp-branch not found"        
 
 
   job_organize_tags:
