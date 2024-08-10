@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-2593995b8|left_left|Thu Aug 8 21:36:23 2024 +0800|autocore: fix CPU usage display with procps (#12399)
-</details>
