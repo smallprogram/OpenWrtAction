@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3341f523c|coolsnowwolf|Wed Aug 7 22:09:40 2024 +0800|update default packages for filogic and ipq60xx, x86
+2593995b8|left_left|Thu Aug 8 21:36:23 2024 +0800|autocore: fix CPU usage display with procps (#12399)
 </details>

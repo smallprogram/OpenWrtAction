@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dd9c9d9|lwb1978|Thu Aug 8 20:14:27 2024 +0800|luci: optimize vpslist DNS logs when using chinadns-ng
+dd01852|lwb1978|Fri Aug 9 23:40:40 2024 +0800|luci: fix bugs in trojan import/export and subscribe #3349
 </details>
