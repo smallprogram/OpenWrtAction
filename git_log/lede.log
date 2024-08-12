@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9cb68c2e6|Mieczyslaw Nalewaj|Tue Apr 2 08:23:46 2024 +0200|kernel: 6.6: modules: lan743x: add missing dependency
+6df7d6894|coolsnowwolf|Sun Aug 11 15:22:19 2024 +0800|ramips: add Huasifei MT7621 DTU support
 </details>
