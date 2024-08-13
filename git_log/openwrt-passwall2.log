@@ -1,0 +1,11 @@
+<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+dfb1721|lwb1978|Sat Aug 10 14:41:09 2024 +0800|luci: adapt to Xray-SplitHTTP transport subscribe
+b675507|lwb1978|Fri Aug 9 23:40:40 2024 +0800|luci: fix bugs in trojan import/export and subscribe
+f93e4af|lwb1978|Sun Aug 4 20:54:04 2024 +0800|luci: simplify the node names for xray and sing-box
+9329e94|lwb1978|Mon Jul 22 20:18:37 2024 +0800|luci: modify the sing-box shunt rule download link
+3aa0ae3|YunClick|Fri Aug 2 21:19:21 2024 +0800|luci: fix nftables rules will repeated in some cases
+3982ed3|YunClick|Sat Jul 20 16:11:17 2024 +0800|luci: adjust fw4 include script
+</details>

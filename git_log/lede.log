@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6df7d6894|coolsnowwolf|Sun Aug 11 15:22:19 2024 +0800|ramips: add Huasifei MT7621 DTU support
+26a04de18|coolsnowwolf|Mon Aug 12 16:51:44 2024 +0800|ramips: add Huasifei MT7621 DTU network and wwan cpe settings
+912cb4bdc|coolsnowwolf|Mon Aug 12 16:30:47 2024 +0800|sendat: add AT Commnad package
 </details>
