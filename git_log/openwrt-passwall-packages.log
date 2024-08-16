@@ -1,7 +1,0 @@
-<details> <summary> <b>passwall packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-bc64dd0|xiaorouji|Wed Aug 14 22:58:27 2024 +0800|treewide: add PKG_SOURCE
-0757478|xiaorouji|Tue Aug 13 21:49:23 2024 +0800|treewide: remove not needed.
-</details>
