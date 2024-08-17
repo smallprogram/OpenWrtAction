@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-83b3707|sbwml|Thu Aug 15 12:31:01 2024 +0800|mosdns: update to 5.3.3
-36ea52d|sbwml|Thu Aug 15 12:48:08 2024 +0800|luci-app-mosdns: print mosdns core version
-5bd8087|sbwml|Thu Aug 15 12:33:04 2024 +0800|ci: sdk: update go1.23
+6f37807|sbwml|Fri Aug 16 18:35:57 2024 +0800|install.sh: openwrt-18.06 is no longer supported
 </details>
