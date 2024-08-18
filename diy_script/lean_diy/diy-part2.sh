@@ -18,6 +18,8 @@ sed -i 's/192.168.1.1/10.10.0.253/g' package/base-files/files/bin/config_generat
 # Modify default passwd
 sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' package/lean/default-settings/files/zzz-default-settings
 
+# Temporary Fix
+sed -i '/^UBOOT_TARGETS := rk3528-evb rk3588-evb/s/^/#/' package/boot/uboot-rk35xx/Makefile
 
 # Reset drive type
 # sed -i 's/(dmesg | grep .*/{a}${b}${c}${d}${e}${f}/g' package/lean/autocore/files/x86/autocore
