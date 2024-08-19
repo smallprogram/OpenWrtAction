@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a0dd951|YunClick|Sat Aug 17 20:27:42 2024 +0800|luci: Separate the passwall nftables rule from the fw4 table
-d90a9aa|lucky-beans|Sun Aug 18 10:39:22 2024 +0800|luci: fixed the lanlist about reserved IP address (#3368)
+2c1bcc3|xiaorouji|Sun Aug 18 14:58:53 2024 +0800|luci: adjust fakeip subnet
 </details>
