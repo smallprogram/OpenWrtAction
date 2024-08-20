@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b98af55|sbwml|Mon Aug 19 00:25:22 2024 +0800|luci-app-mosdns: optimize rule file write
+a0f7f2a|sbwml|Tue Aug 20 01:25:51 2024 +0800|luci-app-mosdns: Add code highlight and code format checking
+6458fb2|sbwml|Mon Aug 19 19:32:09 2024 +0800|luci-app-mosdns: fix TypeError by checking DOM element existence before setting innerHTML
+92bf8db|sbwml|Mon Aug 19 19:16:38 2024 +0800|luci-app-mosdns: fix some issues with log printing
 </details>

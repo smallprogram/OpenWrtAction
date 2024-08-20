@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2c1bcc3|xiaorouji|Sun Aug 18 14:58:53 2024 +0800|luci: adjust fakeip subnet
+c75cb86|lwb1978|Mon Aug 19 13:51:40 2024 +0800|luci: optimize the iptables.sh code,write DNS hijack code into the function
 </details>
