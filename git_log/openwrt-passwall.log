@@ -1,6 +1,0 @@
-<details> <summary> <b>passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-c75cb86|lwb1978|Mon Aug 19 13:51:40 2024 +0800|luci: optimize the iptables.sh code,write DNS hijack code into the function
-</details>
