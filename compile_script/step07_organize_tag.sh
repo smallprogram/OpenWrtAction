@@ -69,6 +69,7 @@ if [ -f "release.txt" ]; then
         "luci-app-adguardhome"
         "luci-app-mosdns"
         "OpenAppFilter"
+        "netspeedtest"
     )
 
     for file in "${OUTPUT_FILES[@]}"; do

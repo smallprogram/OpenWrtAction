@@ -52,6 +52,10 @@ git clone https://github.com/lisaac/luci-app-dockerman.git ./package/custom_pack
 # Open App Filter
 git clone https://github.com/destan19/OpenAppFilter.git ./package/custom_packages/luci-app-openappfilter
 
+# Speedtest
+git clone https://github.com/sirpdboy/netspeedtest.git ./package/custom_packages/netspeedtest
+
+
 # smartdns
 # 由lean package维护版本
 # git clone https://github.com/pymumu/smartdns.git ./package/custom_packages/smartdns

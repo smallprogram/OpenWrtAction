@@ -16,8 +16,9 @@ REPO_URLS=(
     "https://github.com/rufengsuixing/luci-app-adguardhome.git --filter=blob:none"
     "https://github.com/sbwml/luci-app-mosdns --filter=blob:none -b v5"
     "https://github.com/destan19/OpenAppFilter.git --filter=blob:none"
+    "https://github.com/sirpdboy/netspeedtest.git --filter=blob:none"
 )
-LINE_NUMBERS=(1 2 3 4 5 6 7 8 9 10 11 12 13 14 15)
+LINE_NUMBERS=(1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16)
 OUTPUT_FILES=(
     "lede"
     "packages"
@@ -34,6 +35,7 @@ OUTPUT_FILES=(
     "luci-app-adguardhome"
     "luci-app-mosdns"
     "OpenAppFilter"
+    "netspeedtest"
 )
 TITLE_MESSAGES=(
     "openwrt new commit log"
@@ -51,6 +53,7 @@ TITLE_MESSAGES=(
     "luci-app-adguardhome new commit log"
     "luci-app-mosdns new commit log"
     "OpenAppFilter new commit log"
+    "netspeedtest new commit log"
 )
 cd $GITHUB_WORKSPACE
 find git_log -type f ! -name 'log' -exec rm {} +

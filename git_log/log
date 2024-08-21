@@ -13,3 +13,4 @@ luci-app-argon-config:9e2f3e5eba0a9ab64433414d63fe7eeb221a5d2e
 luci-app-adguardhome:37fdf502b99328b37c9ef4c4387f069f67253f85
 luci-app-mosdns:a0f7f2a583e23289f495e2a2465abbddb9c6633a
 OpenAppFilter:76f97d37dd0ead72f0d7795cf6523009924712ee
+netspeedtest:d1ef12c91236b34379ca1f27d17c4bb710997f0f
