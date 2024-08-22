@@ -1,0 +1,6 @@
+<details> <summary> <b>luci-app-mosdns new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6865a06|sbwml|Wed Aug 21 20:20:38 2024 +0800|luci-app-mosdns: fix codemirror may not work correctly
+</details>
