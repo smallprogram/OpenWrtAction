@@ -18,7 +18,7 @@ REPO_URLS=(
     "https://github.com/destan19/OpenAppFilter.git --filter=blob:none"
     "https://github.com/sirpdboy/netspeedtest.git --filter=blob:none"
 )
-LINE_NUMBERS=(1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16)
+
 OUTPUT_FILES=(
     "lede"
     "packages"
@@ -37,6 +37,7 @@ OUTPUT_FILES=(
     "OpenAppFilter"
     "netspeedtest"
 )
+
 TITLE_MESSAGES=(
     "openwrt new commit log"
     "package new commit log"
@@ -55,13 +56,14 @@ TITLE_MESSAGES=(
     "OpenAppFilter new commit log"
     "netspeedtest new commit log"
 )
+
 cd $GITHUB_WORKSPACE
 find git_log -type f ! -name 'log' -exec rm {} +
 mkdir -p git_repositories
 
 for i in "${!REPO_URLS[@]}"; do
     REPO_URL=${REPO_URLS[$i]}
-    LINE_NUMBER=${LINE_NUMBERS[$i]}
+    LINE_NUMBER=$((i+1))
     OUTPUT_FILE=${OUTPUT_FILES[$i]}
     TITLE_MESSAGE=${TITLE_MESSAGES[$i]}
 
