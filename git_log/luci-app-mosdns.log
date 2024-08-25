@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-18b3a9f|sbwml|Fri Aug 23 18:24:19 2024 +0800|luci-app-mosdns: codemirror5: disable cursor style from openwrt theme
+fdf5ff5|sbwml|Sat Aug 24 19:24:54 2024 +0800|luci-app-mosdns: bump verson to 1.6.5
+bba908b|sbwml|Sat Aug 24 18:47:40 2024 +0800|luci-app-mosdns: adjust the delay for loading codemirror configuration
 </details>
