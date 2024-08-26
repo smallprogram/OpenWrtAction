@@ -1,0 +1,8 @@
+<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6d122ad|xiaorouji|Sun Aug 25 16:05:51 2024 +0800|luci: add `direct_dns_query_strategy` option
+cba6cca|lwb1978|Sat Aug 24 12:20:23 2024 +0800|luci: optimize subscribe
+fce68b4|lwb1978|Fri Aug 23 01:17:43 2024 +0800|luci: add tuic node import/export and subscribe support
+</details>

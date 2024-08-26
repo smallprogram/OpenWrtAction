@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-236967d|lwb1978|Sat Aug 24 12:20:23 2024 +0800|luci: optimize subscribe
+bcdf0eb|lwb1978|Sun Aug 25 18:52:36 2024 +0800|luci: fix subscribe bug for certain SS links encrypted with base64
 </details>

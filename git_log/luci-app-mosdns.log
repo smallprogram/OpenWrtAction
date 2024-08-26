@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fdf5ff5|sbwml|Sat Aug 24 19:24:54 2024 +0800|luci-app-mosdns: bump verson to 1.6.5
-bba908b|sbwml|Sat Aug 24 18:47:40 2024 +0800|luci-app-mosdns: adjust the delay for loading codemirror configuration
+9c42ea4|sbwml|Sun Aug 25 22:23:57 2024 +0800|luci-app-mosdns: updated Simplified Chinese translation
 </details>
