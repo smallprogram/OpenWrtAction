@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f0f9201|lwb1978|Mon Aug 26 21:49:05 2024 +0800| luci: haproxy add health check probe URL option
+4cc150d|lwb1978|Tue Aug 27 20:34:26 2024 +0800|luci: bump version 4.78-2
 </details>

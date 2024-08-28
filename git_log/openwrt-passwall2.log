@@ -1,0 +1,10 @@
+<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+3118247|xiaorouji|Wed Aug 28 00:47:07 2024 +0800|chmod +x app.sh
+8cbc6b9|xiaorouji|Wed Aug 28 00:40:41 2024 +0800|luci: 1.31
+6fefad6|YunClick|Sat Aug 17 20:27:42 2024 +0800|luci: Separate the passwall2 nftables rule from the fw4 table
+838afeb|lwb1978|Mon Aug 26 21:49:05 2024 +0800|luci: haproxy add health check probe URL option
+94d53b9|lwb1978|Tue Aug 13 02:37:55 2024 +0800|luci: shadowsocks node import/export enhancements and optimizations
+</details>
