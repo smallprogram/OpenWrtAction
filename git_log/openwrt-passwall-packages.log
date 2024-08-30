@@ -1,0 +1,7 @@
+<details> <summary> <b>passwall packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+27ccfbf|github-actions[bot]|Fri Aug 30 12:07:58 2024 +0800|v2ray-plugin: update to 5.17.0 (#270)
+5465e76|lwb1978|Fri Aug 30 12:07:42 2024 +0800|naiveproxy: update to 128.0.6613.40-1 and use prebuilt (#271)
+</details>

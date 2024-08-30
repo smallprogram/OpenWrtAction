@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-00db7df6b|coolsnowwolf|Thu Aug 29 11:24:08 2024 +0800|rockchip: sync kernel 6.6 kconfig from upstream
-ed0654dd3|coolsnowwolf|Thu Aug 29 11:19:23 2024 +0800|rockchip: sync kernel 6.6 patches from upstream
-</details>
