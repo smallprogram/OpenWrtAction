@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ec9a54c9a|coolsnowwolf|Fri Aug 30 15:06:16 2024 +0800|rockchip: add ArmSom Sige3 (RK3568 ARM64 4 cores) support
+</details>

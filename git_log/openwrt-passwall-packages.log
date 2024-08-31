@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-27ccfbf|github-actions[bot]|Fri Aug 30 12:07:58 2024 +0800|v2ray-plugin: update to 5.17.0 (#270)
-5465e76|lwb1978|Fri Aug 30 12:07:42 2024 +0800|naiveproxy: update to 128.0.6613.40-1 and use prebuilt (#271)
+f0b22f0|github-actions[bot]|Fri Aug 30 20:14:31 2024 +0800|xray-plugin: update to 1.8.24 (#272)
+60f55d6|github-actions[bot]|Fri Aug 30 20:14:17 2024 +0800|xray-core: update to 1.8.24 (#273)
 </details>
