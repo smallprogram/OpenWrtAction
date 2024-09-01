@@ -1,0 +1,7 @@
+<details> <summary> <b>passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+4dbe462|lwb1978|Sun Sep 1 11:03:09 2024 +0800|luci: add support for updating geosite using dlc.dat
+a408c36|lwb1978|Sat Aug 31 18:11:50 2024 +0800|luci: optimize chinadns-ng domain default tag option for acl
+</details>

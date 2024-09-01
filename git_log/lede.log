@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ec9a54c9a|coolsnowwolf|Fri Aug 30 15:06:16 2024 +0800|rockchip: add ArmSom Sige3 (RK3568 ARM64 4 cores) support
+d05841060|coolsnowwolf|Sun Sep 1 00:59:01 2024 +0800|rockchip: rk35xx: add Cyber 3588 AIB support
 </details>

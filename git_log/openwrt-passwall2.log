@@ -1,0 +1,8 @@
+<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+4323de1|lyin|Sat Aug 31 14:55:21 2024 +0800|Update Auto compile with openwrt sdk.yml (#636)
+b9dd296|Pacalini|Sat Aug 31 14:54:55 2024 +0800|luci: Add support for updating geosite using dlc.dat (#639)
+6dada4e|守望|Sat Aug 31 14:54:27 2024 +0800|luci: Xray support `direct_dns_query_strategy`
+</details>
