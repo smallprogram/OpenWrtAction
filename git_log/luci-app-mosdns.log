@@ -1,0 +1,6 @@
+<details> <summary> <b>luci-app-mosdns new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+49e5a0d|sbwml|Mon Sep 2 10:40:19 2024 +0800|luci-app-mosdns: update: add GeoIP database type support
+</details>

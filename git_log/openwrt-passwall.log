@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4dbe462|lwb1978|Sun Sep 1 11:03:09 2024 +0800|luci: add support for updating geosite using dlc.dat
-a408c36|lwb1978|Sat Aug 31 18:11:50 2024 +0800|luci: optimize chinadns-ng domain default tag option for acl
+8af7908|lwb1978|Sun Sep 1 20:25:05 2024 +0800|luci: no longer generates a default routing rule for xray
+0275c07|lwb1978|Sun Sep 1 18:42:44 2024 +0800|luci: simplify DoT input check code
+1aaeb3b|lwb1978|Sun Sep 1 14:26:56 2024 +0800|luci: add remote DoH of Xray to iptables/nftables
 </details>
