@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8af7908|lwb1978|Sun Sep 1 20:25:05 2024 +0800|luci: no longer generates a default routing rule for xray
-0275c07|lwb1978|Sun Sep 1 18:42:44 2024 +0800|luci: simplify DoT input check code
-1aaeb3b|lwb1978|Sun Sep 1 14:26:56 2024 +0800|luci: add remote DoH of Xray to iptables/nftables
+670c768|lwb1978|Tue Sep 3 00:45:03 2024 +0800|luci: DoH supports IPv6
 </details>

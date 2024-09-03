@@ -1,6 +1,0 @@
-<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-72c24ea|Pacalini|Sun Sep 1 19:50:41 2024 +0800|luci: No longer generates a default routing rule for xray (#640)
-</details>
