@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-670c768|lwb1978|Tue Sep 3 00:45:03 2024 +0800|luci: DoH supports IPv6
+bb333cb|lwb1978|Tue Sep 3 22:53:22 2024 +0800|luci: add remote DoT support
 </details>

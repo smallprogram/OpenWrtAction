@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8ff02ee61|coolsnowwolf|Tue Sep 3 08:59:33 2024 +0800|x86: add support for iKOOLCORE R2 Max
+e90fe2d90|coolsnowwolf|Tue Sep 3 17:25:12 2024 +0800|arm-trusted-firmware-rockchip: Update to 2.10
+c330a805d|coolsnowwolf|Tue Sep 3 13:39:24 2024 +0800|ramips: mt7621: improve Huasifei MT7621 DTU support
 </details>
