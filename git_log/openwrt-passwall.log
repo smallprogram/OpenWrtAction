@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bb333cb|lwb1978|Tue Sep 3 22:53:22 2024 +0800|luci: add remote DoT support
+231e3cb|lwb1978|Wed Sep 4 17:03:01 2024 +0800|luci: some optimize for iptables/nftables
 </details>

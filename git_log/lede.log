@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e90fe2d90|coolsnowwolf|Tue Sep 3 17:25:12 2024 +0800|arm-trusted-firmware-rockchip: Update to 2.10
-c330a805d|coolsnowwolf|Tue Sep 3 13:39:24 2024 +0800|ramips: mt7621: improve Huasifei MT7621 DTU support
+a8fa2567a|coolsnowwolf|Wed Sep 4 12:50:40 2024 +0800|rockchip: add missing Cyber 3588 AIB dts
+b311f99c2|coolsnowwolf|Wed Sep 4 12:49:50 2024 +0800|uboot-rk35xx: bump to v2024-02-23
 </details>
