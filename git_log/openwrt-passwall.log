@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-231e3cb|lwb1978|Wed Sep 4 17:03:01 2024 +0800|luci: some optimize for iptables/nftables
+6816460|lwb1978|Thu Sep 5 17:23:33 2024 +0800|luci: remove invalid code for iptables/nftables
 </details>

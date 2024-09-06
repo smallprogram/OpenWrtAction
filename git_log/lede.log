@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-a8fa2567a|coolsnowwolf|Wed Sep 4 12:50:40 2024 +0800|rockchip: add missing Cyber 3588 AIB dts
-b311f99c2|coolsnowwolf|Wed Sep 4 12:49:50 2024 +0800|uboot-rk35xx: bump to v2024-02-23
-</details>
