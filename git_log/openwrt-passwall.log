@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6816460|lwb1978|Thu Sep 5 17:23:33 2024 +0800|luci: remove invalid code for iptables/nftables
+57c918e|lwb1978|Sat Sep 7 00:07:49 2024 +0800|luci: Some DNS optimize
 </details>
