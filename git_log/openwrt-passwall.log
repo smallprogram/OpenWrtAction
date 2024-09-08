@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-57c918e|lwb1978|Sat Sep 7 00:07:49 2024 +0800|luci: Some DNS optimize
+d736dcf|lwb1978|Sat Sep 7 23:38:24 2024 +0800|luci: allow force app-update
+be5960e|lwb1978|Sat Sep 7 12:31:20 2024 +0800|luci: add some direct DNS addresses
 </details>
