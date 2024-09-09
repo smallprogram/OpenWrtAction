@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d736dcf|lwb1978|Sat Sep 7 23:38:24 2024 +0800|luci: allow force app-update
-be5960e|lwb1978|Sat Sep 7 12:31:20 2024 +0800|luci: add some direct DNS addresses
+d58a82f|lwb1978|Sun Sep 8 18:28:54 2024 +0800|luci: add wechat c2c to xray domain excluded
 </details>

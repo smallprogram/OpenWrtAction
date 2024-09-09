@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+cceaa09ba|coolsnowwolf|Mon Sep 9 02:12:18 2024 +0800|Version update to R24.9.9
+613d282e4|coolsnowwolf|Mon Sep 9 02:06:16 2024 +0800|kernel: bump 6.6 to 6.6.50
+db4464fa1|coolsnowwolf|Mon Sep 9 01:45:48 2024 +0800|rockchip: add RUMU3F Fine 3399 (RK3399) support
+</details>
