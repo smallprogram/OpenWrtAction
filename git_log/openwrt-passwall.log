@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d58a82f|lwb1978|Sun Sep 8 18:28:54 2024 +0800|luci: add wechat c2c to xray domain excluded
+a5ea05f|bigice996|Tue Sep 10 08:58:24 2024 +0800|luci: subscribe adapted to httpupgrade transport (#3391)
 </details>
