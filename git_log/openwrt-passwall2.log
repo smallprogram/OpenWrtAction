@@ -1,8 +1,0 @@
-<details> <summary> <b>passwall2 new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-17ff1a0|mofanxt|Tue Sep 10 15:38:57 2024 +0800|luci: Xray sniffing add wechat c2c to xray domain excluded
-5732c97|Pacalini|Tue Sep 10 15:38:24 2024 +0800|luci: Allow force app-update
-7a9f47b|mofanxt|Tue Sep 10 15:36:43 2024 +0800|luci: add timeout:3d when create whitelist ipset
-</details>

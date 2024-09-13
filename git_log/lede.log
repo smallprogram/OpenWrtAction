@@ -1,0 +1,12 @@
+<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+2c01ece84|coolsnowwolf|Fri Sep 13 08:11:24 2024 +0800|Update README.md for macOS
+d46d3adec|coolsnowwolf|Fri Sep 13 01:02:10 2024 +0800|uboot-rockchip: fix Fine 3399 uboot arm-trusted-firmware build
+a0fed43d9|coolsnowwolf|Fri Sep 13 00:29:54 2024 +0800|procd: use standard POSIX header for basename()
+205cf4326|coolsnowwolf|Fri Sep 13 00:24:57 2024 +0800|bpftools: update, split off bpftool and libbpf packages
+82ffc84e2|coolsnowwolf|Thu Sep 12 22:56:53 2024 +0800|toolchain/musl: Update to 1.2.5
+548c46921|coolsnowwolf|Thu Sep 12 22:51:56 2024 +0800|elfutils: update to 1.91
+3eedade61|coolsnowwolf|Thu Sep 12 22:42:38 2024 +0800|toolchain/gcc: switch to version 12 by default
+</details>
