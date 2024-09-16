@@ -30,8 +30,8 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git ./package/custo
 # rm -rf ./package/lean/luci-app-adguardhome
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/custom_packages/luci-app-adguardhome
 
-# homeproxy
-git clone https://github.com/immortalwrt/homeproxy.git ./package/custom_packages/homeproxy
+# homeproxy incloude luci pakcage
+# git clone https://github.com/immortalwrt/homeproxy.git ./package/custom_packages/homeproxy
 
 # mosdns
 

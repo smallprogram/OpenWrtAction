@@ -238,9 +238,9 @@ function Func_Compile_Firmware() {
 
     Func_DIY1_Script
 
-    # Func_LogMessage "开始clean feeds...." "begin update feeds...."
-    # ./scripts/feeds clean
-    # echo
+    Func_LogMessage "开始clean feeds...." "begin update feeds...."
+    ./scripts/feeds clean
+    echo
     Func_LogMessage "开始update feeds...." "begin update feeds...."
     sleep 1s
     ./scripts/feeds update -a | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main1_feeds_update-git_log.log
