@@ -173,6 +173,10 @@ function Func_Copy_Backgroundfiles() {
     sleep 2s
 }
 
+function Func_ZH_CN_Init(){
+    sed -i '/^# .*zh-cn.* is not set$/ { s/^# //; s/ is not set$/=y/ }' "$1"
+}
+
 #GIT设置
 function Func_GitSetting() {
     git config --global user.email "${git_email}"
@@ -259,6 +263,8 @@ function Func_Compile_Firmware() {
     cat /home/${user_name}/${openwrt_dir}/.config >/home/${user_name}/${log_folder_name}/${folder_name}/.config_old
     # echo -e "\nCONFIG_ALL=y" >> .config
     # echo -e "\nCONFIG_ALL_NONSHARED=y" >> .config
+
+    Func_ZH_CN_Init "/home/${user_name}/${openwrt_dir}/.config"
 
     Func_LogMessage "开始执行make defconfig!" "Start to execute make defconfig!"
     sleep 1s
