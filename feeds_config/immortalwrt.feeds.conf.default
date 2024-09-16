@@ -6,8 +6,7 @@ src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages
 src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main
 src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main
 src-git OpenClash https://github.com/vernesong/OpenClash;master
-#src-git helloworld https://github.com/fw876/helloworld;master
-
+src-git helloworld https://github.com/fw876/helloworld;master
 
 
 #src-git-full video https://github.com/openwrt/video.git
