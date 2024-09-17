@@ -264,7 +264,7 @@ function Func_Compile_Firmware() {
     # echo -e "\nCONFIG_ALL=y" >> .config
     # echo -e "\nCONFIG_ALL_NONSHARED=y" >> .config
 
-    Func_ZH_CN_Init "/home/${user_name}/${openwrt_dir}/.config"
+    # Func_ZH_CN_Init "/home/${user_name}/${openwrt_dir}/.config"
 
     Func_LogMessage "开始执行make defconfig!" "Start to execute make defconfig!"
     sleep 1s
