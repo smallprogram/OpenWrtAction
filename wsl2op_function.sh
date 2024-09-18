@@ -459,6 +459,7 @@ function Func_Main() {
     fi
 
     if [ ! -n "$isCreateNewConfig" ]; then
+        echo "11111111111111111111111111111111111111111111111"
         echo
         Func_LogMessage "请输入默认OpenwrtAction中的config文件名，默认为$config_name" "Please enter the config file name in the default OpenwrtAction, the default is $config_name"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
@@ -481,6 +482,7 @@ function Func_Main() {
         fi
 
     else
+        echo "222222222222222222222222222222222222222222222222"
         config_name=$newConfigName
     fi
 
