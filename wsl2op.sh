@@ -42,14 +42,12 @@
 
 #--------------------⬇⬇⬇⬇环境变量⬇⬇⬇⬇--------------------
 
-source ./wsl2op_commfun.sh
+source ./platform_function.sh
 
 # 编译环境中当前账户名字
 user_name=$USER
 # 默认OpenWrtAction的Config文件夹中的config文件名
 config_name=$1
-# config列表
-config_list=($(ls /home/$user_name/OpenWrtAction/$config_dir))
 # wsl PATH路径
 wsl_path=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # 默认输入超时时间，单位为秒
@@ -99,7 +97,7 @@ Func_LogMessage "将在15秒后默认选择 platform_immortalwrt.sh..." "The def
 
 # 使用read命令等待用户输入，超时15秒后自动选择1
 read -t $timer -p "$(Func_LogMessage '输入对应的数字选择（默认1）: ' 'Enter the corresponding number to select (default 1): ')" choice
-
+echo
 # 根据用户输入选择对应的配置文件
 case $choice in
     1)
@@ -119,12 +117,10 @@ case $choice in
         source ./platform_immortalwrt.sh
         ;;
 esac
-
+echo
 # 后续脚本执行
 Func_LogMessage "配置文件已加载，继续执行脚本..." "Configuration file loaded, continuing script execution..."
-
-source ./wsl2op_function.sh
-
+echo
 Func_LogMessage "输入任意值取消显示详细编译信息" "Enter any value to cancel the display of detailed compilation information"
 Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
 read -t $timer isVS
@@ -137,7 +133,7 @@ else
     is_VS=''
     sleep 1s
 fi
-
+echo
 Func_Main
 Func_LogMessage "编译状态:${is_complie_error}" "Compile Status Code:${is_complie_error}"
 exit $is_complie_error
