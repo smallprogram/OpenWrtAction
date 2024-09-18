@@ -130,14 +130,14 @@ Of course, if you find it troublesome, you can also directly PR your config to m
 cd
 git clone https://github.com/smallprogram/OpenWrtAction.git
 cd OpenWrtAction
-bash wsl2op_lean.sh
+bash wsl2op.sh
 ```
 #### Second execution
 ```shell
 cd
 cd OpenWrtAction
 git pull
-bash wsl2op_lean.sh
+bash wsl2op.sh
 ```
 
 

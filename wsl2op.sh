@@ -43,17 +43,10 @@
 #--------------------⬇⬇⬇⬇环境变量⬇⬇⬇⬇--------------------
 # 编译环境中当前账户名字
 user_name=$USER
-# 默认lean源码文件夹名
-openwrt_dir_front=openwrt_
-openwrt_dir=${openwrt_dir_front}${config_name}
 # 默认OpenWrtAction的Config文件夹中的config文件名
 config_name=$1
-# 默认的config目录
-config_dir=config/openwrt_config
 # config列表
 config_list=($(ls /home/$user_name/OpenWrtAction/$config_dir))
-# feeds目录
-feeds_dir=feeds_config/openwrt.feeds.conf.default
 # wsl PATH路径
 wsl_path=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # 默认输入超时时间，单位为秒
@@ -62,23 +55,13 @@ timer=15
 sysenv=2
 # OpenWrtAction Git URL
 owaUrl=https://github.com/smallprogram/OpenWrtAction.git
-# 依赖列表
-my_depends=https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends
-# oepnwrt主源码
-openwrt_source=https://github.com/openwrt/openwrt.git
-# diy script
-diy_script_1=diy_script/openwrt_diy/diy-part1.sh
-diy_script_2=diy_script/openwrt_diy/diy-part2.sh
+owa_branch=main
 # 是否首次编译 0否，1是
 is_first_compile=0
 # 是否Make Clean & Make DirClean
 is_clean_compile=$2
 # 是否单线程编译
 is_single_compile=$3
-# 编译openwrt的log日志文件夹名称
-log_folder_name=openwrt_log
-# 编译子文件夹名称
-folder_name=log_openwrt_Compile_${config_name}_$(date "+%Y-%m-%d-%H-%M-%S")
 #清理超过多少天的日志文件
 clean_day=3
 # 编译结果变量
@@ -88,6 +71,74 @@ is_VS='V=s'
 #Git参数
 git_email=smallprogram@foxmail.com
 git_user=smallprogram
+
+
+# 拉取最新代码
+Func_LogMessage "正在从远程获取最新代码..." "Fetching the latest code from remote..."
+git fetch origin
+
+Func_LogMessage "正在重置到最新的远程分支 ${owa_branch}..." "Resetting to the latest remote branch ${owa_branch}..."
+git reset --hard origin/${owa_branch}
+
+# 检查当前脚本是否被更新
+CURRENT_SCRIPT="$(basename "$0")"
+if [[ $(git diff origin/${owa_branch} -- "$CURRENT_SCRIPT") ]]; then
+    Func_LogMessage "脚本已更新，重新启动..." "Script has been updated, restarting..."
+    exec "$0" "$@"
+fi
+
+
+Func_LogMessage "请选择要编译的平台：" "Please choose the configuration file to import:"
+Func_LogMessage "1) immortalwrt" "1) platform_immortalwrt.sh"
+Func_LogMessage "2) lean" "2) platform_lean.sh"
+Func_LogMessage "3) openwrt" "3) platform_openwrt.sh"
+Func_LogMessage "将在15秒后默认选择 platform_immortalwrt.sh..." "The default choice will be platform_immortalwrt.sh in 15 seconds..."
+
+# 使用read命令等待用户输入，超时15秒后自动选择1
+read -t $timer -p "$(Func_LogMessage '输入对应的数字选择（默认1）: ' 'Enter the corresponding number to select (default 1): ')" choice
+
+# 根据用户输入选择对应的配置文件
+case $choice in
+    1)
+        Func_LogMessage "选择 platform_immortalwrt.sh" "Selected platform_immortalwrt.sh"
+        source ./platform_immortalwrt.sh
+        ;;
+    2)
+        Func_LogMessage "选择 platform_lean.sh" "Selected platform_lean.sh"
+        source ./platform_lean.sh
+        ;;
+    3)
+        Func_LogMessage "选择 platform_openwrt.sh" "Selected platform_openwrt.sh"
+        source ./platform_openwrt.sh
+        ;;
+    *)
+        Func_LogMessage "超时或无效输入，默认选择 platform_immortalwrt.sh" "Timeout or invalid input, defaulting to platform_immortalwrt.sh"
+        source ./platform_immortalwrt.sh
+        ;;
+esac
+
+# 后续脚本执行
+Func_LogMessage "配置文件已加载，继续执行脚本..." "Configuration file loaded, continuing script execution..."
+
+
+
+Func_LogMessage "输入任意值取消显示详细编译信息" "Enter any value to cancel the display of detailed compilation information"
+Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
+read -t $timer isVS
+if [ -n "$isVS" ]; then
+    Func_LogMessage "显示详细编译信息 " "Display detailed compilation information"
+    is_VS='V=s'
+    sleep 1s
+else
+    Func_LogMessage "默认不显示详细编译信息" "Do not display detailed compilation information by default"
+    is_VS=''
+    sleep 1s
+fi
+
+Func_Main
+Func_LogMessage "编译状态:${is_complie_error}" "Compile Status Code:${is_complie_error}"
+exit $is_complie_error
+
 
 #--------------------⬇⬇⬇⬇各种函数⬇⬇⬇⬇--------------------
 
@@ -125,25 +176,13 @@ function Func_LogError() {
     fi
 }
 
-Func_LogMessage "输入任意值取消显示详细编译信息" "Enter any value to cancel the display of detailed compilation information"
-Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-read -t $timer isVS
-if [ ! -n "$isVS" ]; then
-    Func_LogMessage "默认显示详细编译信息 " "Display detailed compilation information by default "
-    sleep 1s
-else
-    Func_LogMessage "取消默认显示详细编译信息" "Cancel the default display of detailed compilation information"
-    is_VS=''
-    sleep 1s
-fi
-
 # DIY Script函数
 
 function Func_DIY1_Script() {
     Func_LogMessage "开始执行DIY1设置脚本" "Start executing the DIY1 setup script"
     sleep 1s
 
-    bash ../OpenWrtAction/$diy_script_1 1
+    bash ../OpenWrtAction/$diy_script_1
 
     Func_LogSuccess "DIY1脚本执行完成" "DIY script execution completed"
     sleep 2s
@@ -153,11 +192,29 @@ function Func_DIY2_Script() {
     Func_LogMessage "开始执行DIY2设置脚本" "Start executing the DIY2 setup script"
     sleep 1s
 
-    bash ../OpenWrtAction/$diy_script_2 1
+    bash ../OpenWrtAction/$diy_script_2
 
     Func_LogSuccess "DIY2脚本执行完成" "DIY script execution completed"
     sleep 2s
 }
+
+function Func_Copy_Backgroundfiles() {
+    local is_wsl2op=$1
+    local platform_config=$2
+    local platform="${platform_config%%.config}"
+
+    Func_LogMessage "开始执行背景文件生成脚本" "Start executing copy background files script"
+    sleep 1s
+
+    bash ../OpenWrtAction/compile_script/step04_copy_backgroundfiles.sh "$is_wsl2op" "$platform"
+
+    Func_LogSuccess "背景文件生成脚本执行完成" "copy background files script execution completed"
+    sleep 2s
+}
+
+# function Func_ZH_CN_Init(){
+#     sed -i '/^# .*zh-cn.* is not set$/ { s/^# //; s/ is not set$/=y/ }' "$1"
+# }
 
 #GIT设置
 function Func_GitSetting() {
@@ -213,7 +270,7 @@ function Func_Compile_Firmware() {
     Func_LogMessage "开始编译！！" "Start compiling! !"
     sleep 1s
 
-    Func_LogMessage "开始将OpenwrtAction中的自定义feeds注入openwrt源码中...." "Started injecting custom feeds in OpenwrtAction into openwrt source code..."
+    Func_LogMessage "开始将OpenwrtAction中的自定义feeds注入源码中...." "Started injecting custom feeds in OpenwrtAction into source code..."
     sleep 2s
     echo
     cat /home/${user_name}/OpenWrtAction/$feeds_dir >/home/${user_name}/${openwrt_dir}/feeds.conf.default
@@ -241,8 +298,9 @@ function Func_Compile_Firmware() {
 
     Func_DIY2_Script
 
+    Func_Copy_Backgroundfiles "1" "${config_name}"
     echo
-    Func_LogMessage "开始将OpenwrtAction中config文件夹下的${config_name}注入openwrt源码中,准备make toolchain...." "Start to inject ${config_name} under the config folder in OpenwrtAction into openwrt source code..."
+    Func_LogMessage "开始将OpenwrtAction中config文件夹下的${config_name}注入源码中,准备make toolchain...." "Start to inject ${config_name} under the config folder in OpenwrtAction into source code..."
     sleep 2s
     echo
     cat /home/${user_name}/OpenWrtAction/$config_dir/${config_name} >/home/${user_name}/${openwrt_dir}/.config
@@ -511,6 +569,7 @@ function Func_Main() {
     read -t $timer isCreateNewConfig
     if [ ! -n "$isCreateNewConfig" ]; then
         Func_LogSuccess "OK，不创建新的编译配置" "OK, do not create a new compilation configuration"
+        openwrt_dir=${openwrt_dir_front}${config_name}
     else
         Func_LogMessage "请输入新的Config文件名，请以xxx.config命名，例如xiaomi3.config" "Please enter the new Config file name, please name it after xxx.config, for example xiaomi3.config"
         read newConfigName
@@ -528,6 +587,8 @@ function Func_Main() {
                 fi
             done
         done
+        config_name=$newConfigName
+        openwrt_dir=${openwrt_dir_front}${config_name}
     fi
 
     if [ ! -n "$isCreateNewConfig" ]; then
@@ -541,42 +602,34 @@ function Func_Main() {
             Func_ConfigList
         done
 
-        Func_LogMessage "请输入默认openwrt源码文件夹名称,如果不输入默认$openwrt_dir,将在($timer秒后使用默认值)" "Please enter the default openwrt source folder name, if you do not enter the default $openwrt_dir, the default value will be used after ($timer seconds)"
+        Func_LogMessage "请输入默认源码文件夹名称,如果不输入默认$openwrt_dir,将在($timer秒后使用默认值)" "Please enter the default source folder name, if you do not enter the default $openwrt_dir, the default value will be used after ($timer seconds)"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
         read -t $timer openwrt_dirInp
         if [ ! -n "$openwrt_dirInp" ]; then
             Func_LogSuccess "OK，使用默认值$openwrt_dir" "OK, use the default value $openwrt_dir"
         else
-            Func_LogMessage "使用 ${openwrt_dirInp} 作为lean源码文件夹名。" "Use ${openwrt_dirInp} as the openwrt source folder name."
+            Func_LogMessage "使用 ${openwrt_dir_front}${config_name} 作为源码文件夹名。" "Use ${openwrt_dir_front}${config_name} as the source folder name."
             echo -e
-            openwrt_dir=$openwrt_dirInp
+            openwrt_dir=${openwrt_dir_front}${config_name}
         fi
 
     else
-        Func_LogMessage "新config名称为$newConfigName"
         config_name=$newConfigName
     fi
 
     echo
-    Func_LogMessage "开始同步openwrt源码...." "Start to synchronize openwrt source code..."
-    Func_LogMessage "源码地址为:${openwrt_dir}"
+    Func_LogMessage "开始同步源码...." "Start to synchronize source code..."
     sleep 2s
 
     cd /home/${user_name}
-    Func_LogMessage "当前路径: /home/${user_name}/${openwrt_dir}"
     if [ ! -d "/home/${user_name}/${openwrt_dir}" ]; then
-        Func_LogMessage "执行git clone命令"
-        echo "git clone $openwrt_source ${openwrt_dir}"
-
         git clone $openwrt_source ${openwrt_dir}
         cd /home/${user_name}
         is_first_compile=1
     else
-        Func_LogMessage "执行git pull命令"
         cd ${openwrt_dir}
-        git stash
-        git stash drop
-        git pull --rebase
+        git fetch origin
+        git reset --hard origin/${openwrt_branch}
         cd /home/${user_name}
         is_first_compile=0
     fi
@@ -650,7 +703,7 @@ function Func_Main() {
 
     if [[ $num == 2 ]]; then
         echo
-        Func_LogMessage "开始将OpenwrtAction中的自定义feeds注入openwrt源码中...." "Started injecting custom feeds in OpenwrtAction into openwrt source code..."
+        Func_LogMessage "开始将OpenwrtAction中的自定义feeds注入源码中...." "Started injecting custom feeds in OpenwrtAction into source code..."
         sleep 2s
         echo
         cat /home/${user_name}/OpenWrtAction/$feeds_dir >/home/${user_name}/${openwrt_dir}/feeds.conf.default
@@ -687,7 +740,7 @@ function Func_Main() {
 
         if [ ! -n "$isCreateNewConfig" ]; then
             echo
-            Func_LogMessage "开始将OpenwrtAction中config文件夹下的${config_name}注入openwrt源码中...." "Start to inject ${config_name} under the config folder in OpenwrtAction into openwrt source code..."
+            Func_LogMessage "开始将OpenwrtAction中config文件夹下的${config_name}注入源码中...." "Start to inject ${config_name} under the config folder in OpenwrtAction into source code..."
             sleep 2s
             echo
             cat /home/${user_name}/OpenWrtAction/$config_dir/${config_name} >/home/${user_name}/${openwrt_dir}/.config
@@ -768,6 +821,3 @@ function Func_Main() {
 # }
 
 #--------------------⬇⬇⬇⬇BashShell⬇⬇⬇⬇--------------------
-Func_Main
-Func_LogMessage "编译状态:${is_complie_error}" "Compile Status Code:${is_complie_error}"
-exit $is_complie_error
