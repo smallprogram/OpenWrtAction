@@ -42,7 +42,8 @@
 
 #--------------------⬇⬇⬇⬇环境变量⬇⬇⬇⬇--------------------
 
-source ./wsl2op_function.sh
+source ./wsl2op_commfun.sh
+
 # 编译环境中当前账户名字
 user_name=$USER
 # 默认OpenWrtAction的Config文件夹中的config文件名
@@ -122,7 +123,7 @@ esac
 # 后续脚本执行
 Func_LogMessage "配置文件已加载，继续执行脚本..." "Configuration file loaded, continuing script execution..."
 
-
+source ./wsl2op_function.sh
 
 Func_LogMessage "输入任意值取消显示详细编译信息" "Enter any value to cancel the display of detailed compilation information"
 Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"

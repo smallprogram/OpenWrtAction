@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # OP编译
 # Copyright (c) 2019-2024 smallprogram
 #
@@ -8,40 +9,6 @@
 # https://github.com/smallprogram/OpenWrtAction
 # File: wsl2op_function.sh
 # Description: WSL automatically compiles Openwrt script code
-
-# 输出默认语言函数
-function Func_LogMessage() {
-    Begin="\033[1;96m"
-    End="\033[0m"
-
-    if [ ! -n "$isChinese" ]; then
-        echo -e "${Begin}$1${End}"
-    else
-        echo -e "${Begin}$2${End}"
-    fi
-}
-
-function Func_LogSuccess() {
-    Begin="\033[1;92m"
-    End="\033[0m"
-
-    if [ ! -n "$isChinese" ]; then
-        echo -e "${Begin}$1${End}"
-    else
-        echo -e "${Begin}$2${End}"
-    fi
-}
-
-function Func_LogError() {
-    Begin="\033[1;91m"
-    End="\033[0m"
-
-    if [ ! -n "$isChinese" ]; then
-        echo -e "${Begin}$1${End}"
-    else
-        echo -e "${Begin}$2${End}"
-    fi
-}
 
 # DIY Script函数
 
@@ -459,7 +426,6 @@ function Func_Main() {
     fi
 
     if [ ! -n "$isCreateNewConfig" ]; then
-        echo "11111111111111111111111111111111111111111111111"
         echo
         Func_LogMessage "请输入默认OpenwrtAction中的config文件名，默认为$config_name" "Please enter the config file name in the default OpenwrtAction, the default is $config_name"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
@@ -482,7 +448,6 @@ function Func_Main() {
         fi
 
     else
-        echo "222222222222222222222222222222222222222222222222"
         config_name=$newConfigName
     fi
 
