@@ -664,8 +664,15 @@ function Func_Main() {
 
         Func_DIY1_Script
 
-        Func_LogMessage "开始clean feeds...." "begin update feeds...."
-        ./scripts/feeds clean
+        Func_LogMessage "是否清理feeds，如果不输入任何值默认否，输入任意值清理feeds" "Whether to clean up feeds. If no value is entered, the default is "no". If any value is entered, the feeds are cleaned up."
+        Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
+        read -t $timer is_clean_feeds
+        if [ ! -n "$is_clean_feeds" ]; then
+            Func_LogSuccess "OK，不清理feeds " "OK, do not clean up feeds"
+        else
+            Func_LogMessage "开始clean feeds...." "begin update feeds...."
+            ./scripts/feeds clean
+        fi
         echo
         Func_LogMessage "开始update feeds...." "begin update feeds...."
         sleep 1s
