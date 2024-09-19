@@ -2,6 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dcb074e9d|Chuanhong Guo|Wed Apr 17 12:09:07 2024 +0800|ipset: update to version 7.21
-6d659cd7f|Chuanhong Guo|Wed Apr 17 12:12:25 2024 +0800|ipset: include libgen.h for basename
+7b04035b7|coolsnowwolf|Wed Sep 18 22:43:52 2024 +0800|kernel: bump 5.4 to 5.4.284
+037eb4438|coolsnowwolf|Wed Sep 18 17:40:57 2024 +0800|kernel: bump 6.6 to 6.6.51
+53661b6a1|coolsnowwolf|Wed Sep 18 17:14:00 2024 +0800|rockchip: add RUMU3F FINE 3399 support
+92d4a09c0|coolsnowwolf|Wed Sep 18 17:01:32 2024 +0800|Version update to R24.9.18
+dc8ed6a7b|coolsnowwolf|Wed Sep 18 15:08:32 2024 +0800|rockchip: switch to kernel 6.6
+2ad20218e|coolsnowwolf|Wed Sep 18 15:01:54 2024 +0800|uboot-rockchip: add ArmSoM Sige7 support
+98e2f0b48|coolsnowwolf|Wed Sep 18 14:05:09 2024 +0800|rockchip: add ArmSom Sige3 RK3568 (ARM64 4 cores) support
+3aad94cd0|aiamadeus|Thu Aug 22 23:26:40 2024 +0800|r8125/r8126: conflicts with rss
+a3ca5c60f|coolsnowwolf|Sat Aug 24 23:19:05 2024 +0800|rkbin: remove tfa references
+a45c29192|Ivan Pavlov|Thu Sep 5 11:21:57 2024 +0300|openssl: update to 3.0.15
 </details>
