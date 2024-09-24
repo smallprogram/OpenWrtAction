@@ -53,6 +53,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
+      source_matrix: ${{ steps.set-matrix.outputs.source_matrix_json }}
     steps:
       - name: Checkout
         uses: actions/checkout@main
@@ -73,6 +74,22 @@ jobs:
       fail-fast: false
       matrix:
         include: ${{ fromJson(needs.job_init.outputs.matrix) }}
+    
+    steps:
+      - name: Echo matrix values
+        run: |
+          echo "Source Code Platform: ${{ matrix.source_code_platform }}"
+          echo "Platform: ${{ matrix.platform }}"
+          echo "REPO_URL: ${{ matrix.value.REPO_URL }}"   # 直接引用 REPO_URL
+          echo "REPO_BRANCH: ${{ matrix.value.REPO_BRANCH }}"  # 可以引用其他的字段
+
+  build2:
+    needs: job_init
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.job_init.outputs.source_matrix) }}
     
     steps:
       - name: Echo matrix values
