@@ -56,5 +56,7 @@ done
 # 移除最后一个多余的逗号
 matrix_json="${matrix_json%,}]"
 
+echo $matrix_json
+
 # 输出到 GITHUB_OUTPUT
-echo "matrix=$matrix_json" >> "$GITHUB_OUTPUT"
+echo "matrix=$matrix_json" >> $GITHUB_OUTPUT
