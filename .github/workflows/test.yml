@@ -60,7 +60,7 @@ jobs:
       - name: Set up matrix from platforms
         id: set-matrix
         run: |
-          source platforms.sh
+          source $PLATFORMS_SH
           # 构建JSON矩阵
           matrix_json="["
 
