@@ -63,7 +63,23 @@ jobs:
         id: set-matrix
         run: |
           source $PLATFORMS_SH
-        shell: bash
+
+          matrix_json="["
+              
+          for source_platform in "${source_code_platforms[@]}"; do
+              platforms_var="${source_platform}_platforms[@]"
+              platforms=("${!platforms_var}")
+              value_var="${source_platform}_value"
+              value="${!value_var}"
+              
+              for platform in "${platforms[@]}"; do
+              matrix_json+="{\"source_code_platform\":\"${source_platform}\",\"platform\":\"${platform}\",\"value\":${value}},"
+              done
+          done
+
+          matrix_json="${matrix_json%,}]"
+          echo $matrix_json
+          echo "matrix=$matrix_json" >> $GITHUB_OUTPUT
 
   build:
     needs: job_init
