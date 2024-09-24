@@ -55,32 +55,15 @@ jobs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 0
 
       - name: Set up matrix from platforms
         id: set-matrix
         run: |
-          source $PLATFORMS_SH
-          # 构建JSON矩阵
-          matrix_json="["
-
-          for source_platform in "${source_code_platforms[@]}"; do
-              # 根据 source_code_platforms 名称获取对应的变量名
-              platforms_var="${source_platform}_platforms[@]"
-              platforms=("${!platforms_var}")
-          
-              for platform in "${platforms[@]}"; do
-                  matrix_json+="{\"source_code_platform\":\"${source_platform}\",\"platform\":\"${platform}\"},"
-              done
-          done
-          
-          # 移除最后一个多余的逗号
-          matrix_json="${matrix_json%,}]"
-          
-          echo $matrix_json
-  
-          # 输出到 GITHUB_OUTPUT
-          echo "matrix=$matrix_json" >> $GITHUB_OUTPUT
+          source platforms.sh
+        shell: bash
 
   build:
     needs: job_init
