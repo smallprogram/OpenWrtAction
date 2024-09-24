@@ -62,7 +62,7 @@ jobs:
       - name: Set up matrix from platforms
         id: set-matrix
         run: |
-          source platforms.sh
+          source $PLATFORMS_SH
         shell: bash
 
   build:
