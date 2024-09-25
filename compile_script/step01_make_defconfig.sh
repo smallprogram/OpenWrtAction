@@ -11,9 +11,12 @@ elif [[ "$source_code_platform" == "lede" ]]; then
   selected_platforms=("${lede_platforms[@]}")
 fi
 
+echo $source_code_platform
+echo $CONFIGS
 
 cd ..
 for i in "${selected_platforms[@]}"; do
+    echo $i
     [ -e $CONFIGS/$i.config ] && cp -r $CONFIGS/$i.config openwrt/.config
     cd openwrt
     echo ""

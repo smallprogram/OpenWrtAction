@@ -124,7 +124,6 @@ jobs:
 
       - name: Make Defconfig Custom Configuration
         run: |
-          source $PLATFORMS_SH
           chmod +x ${{ matrix.value.DIY_P2_SH }}
           chmod +x $MAKE_DEFCONFIG_SH
           cd openwrt
