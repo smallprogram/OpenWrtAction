@@ -63,7 +63,7 @@ jobs:
           echo "release_tag=multi-platform_$(date +"%Y.%m.%d_%H.%M.%S")" >> $GITHUB_OUTPUT
 
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -94,7 +94,7 @@ jobs:
           ln -sf /workdir/output $GITHUB_WORKSPACE/output
 
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -119,7 +119,8 @@ jobs:
 
       - name: Pull the latest changes and Create temporary branch
         run: |
-          git pull origin ${{ github.ref_name }}
+          git fetch origin
+          git reset --hard origin/${{ github.ref_name }}
           git checkout -b temp-${{ matrix.source_code_platform }}
 
       - name: Make Defconfig Custom Configuration
@@ -131,24 +132,53 @@ jobs:
 
           $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
 
-      - name: Git Auto Update Config
-        uses: stefanzweifel/git-auto-commit-action@v5.0.0
-        id: commit
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          commit_message: auto update ${{ matrix.source_code_platform }} config
-          branch: temp-${{ matrix.source_code_platform }}
-          commit_author: smallprogram <smallprogram@foxmail.com>
-      
+      # - name: Git Auto Update Config
+      #   uses: stefanzweifel/git-auto-commit-action@v5.0.0
+      #   id: commit
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     commit_message: auto update ${{ matrix.source_code_platform }} config
+      #     branch: temp-${{ matrix.source_code_platform }}
+      #     commit_author: smallprogram <smallprogram@foxmail.com>
+
       - name: Merge and push changes with "theirs" strategy
         run: |
-          git checkout ${{ github.ref_name }}
-          git pull origin ${{ github.ref_name }}
-          git merge temp-${{ matrix.source_code_platform }} --strategy-option theirs --no-edit
-          git push origin ${{ github.ref_name }}
-          git branch -d temp-${{ matrix.source_code_platform }} || echo "Local temp-${{ matrix.source_code_platform }} not found"
-          git push origin --delete temp-${{ matrix.source_code_platform }} || echo "Remote temp-${{ matrix.source_code_platform }} not found"
+          git checkout temp-${{ matrix.source_code_platform }}
+          git add .
+
+          if ! git diff --cached --quiet; then
+            git config user.name "smallprogram"
+            git config user.email "smallprogram@foxmail.com"
+            git commit -m "Manual update for ${{ matrix.source_code_platform }} configuration"
+
+            git checkout ${{ github.ref_name }}
+            git fetch origin
+            git reset --hard origin/${{ github.ref_name }}
+
+            git checkout temp-${{ matrix.source_code_platform }}
+            git merge origin/${{ github.ref_name }} --no-ff --strategy-option theirs --no-edit || {
+              echo "Merge conflict in temp branch, please resolve manually."
+              exit 100
+            }
+
+            git checkout ${{ github.ref_name }} 
+            git merge temp-${{ matrix.source_code_platform }} --strategy-option theirs --no-edit
+            git push origin ${{ github.ref_name }} --force
+            git branch -d temp-${{ matrix.source_code_platform }} || echo "Local temp-${{ matrix.source_code_platform }} not found"
+            git push origin --delete temp-${{ matrix.source_code_platform }} || echo "Remote temp-${{ matrix.source_code_platform }} not found"
+
+          else
+            echo "No changes to commit."
+          fi
+
+          
+
+      # - name: Unlock workflow
+      #   uses: github/lock@v2.3.0
+      #   id: unlock
+      #   with:
+      #     mode: unlock
 
       - name: Generate Source Packages
         working-directory: /workdir
@@ -231,7 +261,7 @@ jobs:
           build-mount-path: '/workdir'
 
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -290,7 +320,7 @@ jobs:
       - name: Load Configuration
         run: |
           chmod +x $COPY_BACKGROUNDFILES_SH
-          [ -e ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config ] && cp -r ${{ matrix.value.CONFIGS }}/${{ matrix.platforms }}.config openwrt/.config
+          [ -e ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config ] && cp -r ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config openwrt/.config
           cd openwrt
           make defconfig
           $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platform }}"
@@ -486,7 +516,7 @@ jobs:
   #     checking_build_status: ${{ steps.status_checking.outputs.status }}
   #   steps:
   #     - name: Checkout
-  #       uses: actions/checkout@main
+  #       uses: actions/checkout@v4
   #       with:
   #         fetch-depth: 0
 
@@ -511,7 +541,7 @@ jobs:
        
   #   steps:
   #   - name: Checkout
-  #     uses: actions/checkout@main
+  #     uses: actions/checkout@v4
   #     with:
   #       fetch-depth: 0
 
@@ -559,7 +589,7 @@ jobs:
         
   #   steps:
   #   - name: Checkout
-  #     uses: actions/checkout@main
+  #     uses: actions/checkout@v4
   #     with:
   #       fetch-depth: 0
 
@@ -597,7 +627,7 @@ jobs:
 
   #   steps:
   #     - name: Trigger build
-  #       uses: peter-evans/repository-dispatch@main
+  #       uses: peter-evans/repository-dispatch@v3
   #       with:
   #         token: ${{ secrets.MY_SECRET_PAT }}
   #         repository: smallprogram/MyAction
