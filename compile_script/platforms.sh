@@ -23,7 +23,7 @@ for source_platform in "${source_code_platforms[@]}"; do
     value_var="${source_platform}_value"
     value="${!value_var}"
 
-    source_matrix_json+="{\"source_code_platform\":\"${source_platform}\,\"value\":${value}},"
+    source_matrix_json+="{\"source_code_platform\":\"${source_platform}\",\"value\":${value}},"
     
     for platform in "${platforms[@]}"; do
         matrix_json+="{\"source_code_platform\":\"${source_platform}\",\"platform\":\"${platform}\",\"value\":${value}},"
