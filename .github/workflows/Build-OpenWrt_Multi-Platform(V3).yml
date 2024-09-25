@@ -127,7 +127,7 @@ jobs:
           chmod +x ${{ matrix.value.DIY_P2_SH }}
           chmod +x $MAKE_DEFCONFIG_SH
           cd openwrt
-          $GITHUB_WORKSPACE/$DIY_P2_SH
+          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
 
           $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
 
