@@ -130,7 +130,7 @@ jobs:
           cd openwrt
           $GITHUB_WORKSPACE/$DIY_P2_SH
 
-          $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH ${{ matrix.source_code_platform }} ${{ matrix.value.CONFIGS }}
+          $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
 
       - name: Git Auto Update Config
         uses: stefanzweifel/git-auto-commit-action@v5.0.0
@@ -174,6 +174,33 @@ jobs:
           path: ${{ env.SOURCE_PATH }}/output.tar.gz
           retention-days: 5
 
+      - name: Generate Release Tag
+        id: tag
+        run: |
+          chmod +x $GENERATE_RELEASE_TAG_SH
+          $GITHUB_WORKSPACE/$GENERATE_RELEASE_TAG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
+          
+      - name: Upload Tags To Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: release_tag_${{ matrix.source_code_platform }}
+          path: ${{ matrix.source_code_platform }}_release.txt
+          retention-days: 5
+
+      - name: Generate Git Log
+        if: steps.tag.outputs.status == 'success'
+        id: git_log
+        run: |
+          chmod +x $GENERATE_GIT_LOG_SH 
+          $GITHUB_WORKSPACE/$GENERATE_GIT_LOG_SH
+          
+      - name: Upload Git Log To Artifact
+        uses: actions/upload-artifact@v4
+        if: steps.git_log.outputs.status == 'success'
+        with:
+          name: git_log_${{ matrix.source_code_platform }}
+          path: git_log.txt
+          retention-days: 5
       
   job_build:
     needs: job_init
@@ -181,8 +208,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        platforms: ${{ fromJson(needs.job_init.outputs.output_platforms) }}
-    name: Build-OpenWrt-${{ matrix.platforms }}
+        include: ${{ fromJson(needs.job_init.outputs.platforms) }}
+    name: Build-OpenWrt-${{ matrix.source_code_platform }}-${{ matrix.platform }}
 
     steps:
       - name: Initialization Environment
@@ -217,7 +244,8 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           sudo -E apt-get -qq update
-          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends)
+          # sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends)
+          sudo bash -c 'bash <(curl -s https://build-scripts.immortalwrt.org/init_build_environment.sh)'
           sudo -E apt-get -qq autoremove --purge
           sudo -E apt-get -qq clean
           sudo timedatectl set-timezone "$TZ"
@@ -239,13 +267,13 @@ jobs:
         id : download
         uses: actions/download-artifact@v4
         with:
-          name: Source_${{ needs.job_init.outputs.output_release_tag }}
+          name: Source_${{ matrix.source_code_platform }}
           path: download
 
       - name: Download Tags
         uses: actions/download-artifact@v4
         with:
-          name: release_tag_${{ needs.job_init.outputs.output_release_tag }}
+          name: release_tag_${{ matrix.source_code_platform }}
           path: download
 
       - name: File Extraction
@@ -263,10 +291,10 @@ jobs:
       - name: Load Configuration
         run: |
           chmod +x $COPY_BACKGROUNDFILES_SH
-          [ -e $CONFIGS/${{ matrix.platforms }}.config ] && cp -r $CONFIGS/${{ matrix.platforms }}.config openwrt/.config
+          [ -e ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config ] && cp -r ${{ matrix.value.CONFIGS }}/${{ matrix.platforms }}.config openwrt/.config
           cd openwrt
           make defconfig
-          $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platforms }}"
+          $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platform }}"
 
       - name: Download Package
         id: package
@@ -404,7 +432,7 @@ jobs:
         uses: actions/upload-artifact@v4
         if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
         with:
-          name: OpenWrt_bin_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
+          name: OpenWrt_bin_${{ matrix.source_code_platform }}_${{ matrix.platform }}
           path: openwrt/bin
 
       - name: Organize Files
@@ -417,7 +445,7 @@ jobs:
           cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
           mv * $firmware_path/feeds_packages
           cd $firmware_path
-          zip -r buildinfo_${{ matrix.platforms }}.zip feeds_packages packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
+          zip -r buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip feeds_packages packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
           rm -rf packages feeds_packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
 
           echo "FIRMWARE=$firmware_path" >> $GITHUB_ENV
