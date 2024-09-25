@@ -203,7 +203,7 @@ jobs:
           retention-days: 5
       
   job_build:
-    needs: job_init
+    needs: [job_init, job_defconfig]
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -445,8 +445,17 @@ jobs:
           cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
           mv * $firmware_path/feeds_packages
           cd $firmware_path
+
           zip -r buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip feeds_packages packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
           rm -rf packages feeds_packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
+
+          if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
+              for file in openwrt-*; do
+                  if [[ -f "$file" ]]; then
+                      mv "$file" "${file/openwrt-/lean-}"
+                  fi
+              done
+          fi
 
           echo "FIRMWARE=$firmware_path" >> $GITHUB_ENV
           echo "status=success" >> $GITHUB_OUTPUT
@@ -469,7 +478,7 @@ jobs:
           files: ${{ env.FIRMWARE }}/*
 
   build_status_flag:
-    needs: [job_init, job_build]
+    needs: [job_init, job_defconfig, job_build]
     if: ${{ always() }}
     name: Build-Status-Flag
     runs-on: ubuntu-latest
@@ -495,7 +504,7 @@ jobs:
 
 
   job_organize_git_log:
-    needs: [job_init, job_build, build_status_flag]
+    needs: [job_init, job_defconfig, job_build, build_status_flag]
     if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
     runs-on: ubuntu-latest
     name: Organize-Git-Log
@@ -543,7 +552,7 @@ jobs:
 
 
   job_organize_tags:
-    needs: [job_init, job_build, build_status_flag, job_organize_git_log]
+    needs: [job_init, job_defconfig, job_build, build_status_flag, job_organize_git_log]
     if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
     runs-on: ubuntu-latest
     name: Organize-Release-Tags
@@ -581,7 +590,7 @@ jobs:
         body_path: release.txt
 
   job_my_action:
-    needs: [job_init, job_build, build_status_flag, job_organize_git_log, job_organize_tags]
+    needs: [job_init, job_defconfig, job_build, build_status_flag, job_organize_git_log, job_organize_tags]
     if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
     runs-on: ubuntu-latest
     name: My-Action
