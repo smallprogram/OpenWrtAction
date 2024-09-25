@@ -316,29 +316,29 @@ jobs:
           cd openwrt
           is_complie_error=0
 
-          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile tools"
-                make tools/compile -j1 V=s
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile tools"
-                make tools/compile -j$(nproc) V=s
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          else
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile tools"
-                make tools/compile -j1
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile tools"
-                make tools/compile -j$(nproc)
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          fi
+          # if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+          #       echo "1 threads compile tools"
+          #       make tools/compile -j1 V=s
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   else
+          #       echo "$(nproc) threads compile tools"
+          #       make tools/compile -j$(nproc) V=s
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   fi
+          # else
+          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+          #       echo "1 threads compile tools"
+          #       make tools/compile -j1
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   else
+          #       echo "$(nproc) threads compile tools"
+          #       make tools/compile -j$(nproc)
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   fi
+          # fi
 
-          echo "complie result： $is_complie_error"
+          # echo "complie result： $is_complie_error"
           if [ "$is_complie_error" -eq 0 ]; then
             echo "status=success" >> $GITHUB_OUTPUT
           else
@@ -354,29 +354,29 @@ jobs:
         run: |
           cd openwrt
           is_complie_error=0
-          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile toolchain"
-                make toolchain/compile -j1 V=s
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile toolchain"
-                make toolchain/compile -j$(nproc) V=s
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          else
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile toolchain"
-                make toolchain/compile -j1
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile toolchain"
-                make toolchain/compile -j$(nproc)
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          fi
+          # if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+          #       echo "1 threads compile toolchain"
+          #       make toolchain/compile -j1 V=s
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   else
+          #       echo "$(nproc) threads compile toolchain"
+          #       make toolchain/compile -j$(nproc) V=s
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   fi
+          # else
+          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+          #       echo "1 threads compile toolchain"
+          #       make toolchain/compile -j1
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   else
+          #       echo "$(nproc) threads compile toolchain"
+          #       make toolchain/compile -j$(nproc)
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   fi
+          # fi
 
-          echo "complie result： $is_complie_error"
+          # echo "complie result： $is_complie_error"
           if [ "$is_complie_error" -eq 0 ]; then
             echo "status=success" >> $GITHUB_OUTPUT
           else
@@ -392,27 +392,28 @@ jobs:
         run: |
           cd openwrt
           is_complie_error=0
-          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile frimware"
-                make -j1 V=s
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile frimware"
-                make -j$(nproc) V=s
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          else
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile frimware"
-                make -j1
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile frimware"
-                make -j$(nproc)
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          fi
+          
+          # if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+          #       echo "1 threads compile frimware"
+          #       make -j1 V=s
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   else
+          #       echo "$(nproc) threads compile frimware"
+          #       make -j$(nproc) V=s
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   fi
+          # else
+          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+          #       echo "1 threads compile frimware"
+          #       make -j1
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   else
+          #       echo "$(nproc) threads compile frimware"
+          #       make -j$(nproc)
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   fi
+          # fi
 
           echo "complie result： $is_complie_error"
           if [ "$is_complie_error" -eq 0 ]; then
@@ -428,177 +429,177 @@ jobs:
         if: (!cancelled())
         run: df -hT
 
-      - name: Upload Bin Directory To Artifact
-        uses: actions/upload-artifact@v4
-        if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
-        with:
-          name: OpenWrt_bin_${{ matrix.source_code_platform }}_${{ matrix.platform }}
-          path: openwrt/bin
+      # - name: Upload Bin Directory To Artifact
+      #   uses: actions/upload-artifact@v4
+      #   if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
+      #   with:
+      #     name: OpenWrt_bin_${{ matrix.source_code_platform }}_${{ matrix.platform }}
+      #     path: openwrt/bin
 
-      - name: Organize Files
-        id: organize
-        if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
-        run: |
-          cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
-          mkdir -p feeds_packages
-          firmware_path=$PWD
-          cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
-          mv * $firmware_path/feeds_packages
-          cd $firmware_path
+      # - name: Organize Files
+      #   id: organize
+      #   if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
+      #   run: |
+      #     cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
+      #     mkdir -p feeds_packages
+      #     firmware_path=$PWD
+      #     cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
+      #     mv * $firmware_path/feeds_packages
+      #     cd $firmware_path
 
-          zip -r buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip feeds_packages packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
-          rm -rf packages feeds_packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
+      #     zip -r buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip feeds_packages packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
+      #     rm -rf packages feeds_packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
 
-          if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
-              for file in openwrt-*; do
-                  if [[ -f "$file" ]]; then
-                      mv "$file" "${file/openwrt-/lean-}"
-                  fi
-              done
-          fi
+      #     if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
+      #         for file in openwrt-*; do
+      #             if [[ -f "$file" ]]; then
+      #                 mv "$file" "${file/openwrt-/lean-}"
+      #             fi
+      #         done
+      #     fi
 
-          echo "FIRMWARE=$firmware_path" >> $GITHUB_ENV
-          echo "status=success" >> $GITHUB_OUTPUT
+      #     echo "FIRMWARE=$firmware_path" >> $GITHUB_ENV
+      #     echo "status=success" >> $GITHUB_OUTPUT
 
-      - name: Upload Firmware Directory To Artifact
-        uses: actions/upload-artifact@v4
-        if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && !cancelled()
-        with:
-          name: OpenWrt_firmware_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
-          path: ${{ env.FIRMWARE }}
+      # - name: Upload Firmware Directory To Artifact
+      #   uses: actions/upload-artifact@v4
+      #   if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && !cancelled()
+      #   with:
+      #     name: OpenWrt_firmware_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
+      #     path: ${{ env.FIRMWARE }}
 
-      - name: Upload Firmware To Release
-        uses: softprops/action-gh-release@v2.0.6
-        if: steps.organize.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
-          body_path: ${{ env.TAG_PATH }}/release.txt
-          files: ${{ env.FIRMWARE }}/*
+      # - name: Upload Firmware To Release
+      #   uses: softprops/action-gh-release@v2.0.6
+      #   if: steps.organize.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+      #     body_path: ${{ env.TAG_PATH }}/release.txt
+      #     files: ${{ env.FIRMWARE }}/*
 
-  build_status_flag:
-    needs: [job_init, job_defconfig, job_build]
-    if: ${{ always() }}
-    name: Build-Status-Flag
-    runs-on: ubuntu-latest
-    outputs:
-      checking_build_status: ${{ steps.status_checking.outputs.status }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@main
-        with:
-          fetch-depth: 0
+  # build_status_flag:
+  #   needs: [job_init, job_defconfig, job_build]
+  #   if: ${{ always() }}
+  #   name: Build-Status-Flag
+  #   runs-on: ubuntu-latest
+  #   outputs:
+  #     checking_build_status: ${{ steps.status_checking.outputs.status }}
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@main
+  #       with:
+  #         fetch-depth: 0
 
-      - name: Pull the latest changes
-        run: git pull origin ${{ github.ref_name }}
+  #     - name: Pull the latest changes
+  #       run: git pull origin ${{ github.ref_name }}
 
-      - name: Build_status_checking
-        id: status_checking
-        run: |
+  #     - name: Build_status_checking
+  #       id: status_checking
+  #       run: |
 
-          chmod +x $BUILD_STATUS_CHECKING_SH
-          $GITHUB_WORKSPACE/$BUILD_STATUS_CHECKING_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
+  #         chmod +x $BUILD_STATUS_CHECKING_SH
+  #         $GITHUB_WORKSPACE/$BUILD_STATUS_CHECKING_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
           
 
 
 
-  job_organize_git_log:
-    needs: [job_init, job_defconfig, job_build, build_status_flag]
-    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
-    runs-on: ubuntu-latest
-    name: Organize-Git-Log
+  # job_organize_git_log:
+  #   needs: [job_init, job_defconfig, job_build, build_status_flag]
+  #   if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
+  #   runs-on: ubuntu-latest
+  #   name: Organize-Git-Log
        
-    steps:
-    - name: Checkout
-      uses: actions/checkout@main
-      with:
-        fetch-depth: 0
+  #   steps:
+  #   - name: Checkout
+  #     uses: actions/checkout@main
+  #     with:
+  #       fetch-depth: 0
 
-    - name: Pull the latest changes and Create temporary branch
-      run: |
-        git pull origin ${{ github.ref_name }}
-        git checkout -b temp-branch
+  #   - name: Pull the latest changes and Create temporary branch
+  #     run: |
+  #       git pull origin ${{ github.ref_name }}
+  #       git checkout -b temp-branch
 
-    - name: Download Git Log
-      uses: actions/download-artifact@v4
-      with:
-        name: git_log_${{ needs.job_init.outputs.output_release_tag }}
+  #   - name: Download Git Log
+  #     uses: actions/download-artifact@v4
+  #     with:
+  #       name: git_log_${{ needs.job_init.outputs.output_release_tag }}
 
-    - name: Update Git Log
-      run: |
-          chmod +x $UPDATE_GIT_LOG_SH
-          $GITHUB_WORKSPACE/$UPDATE_GIT_LOG_SH
-
-
-    - name: Git auto update git log
-      uses: stefanzweifel/git-auto-commit-action@v5.0.0
-      id: commit
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        commit_message: auto update git log
-        branch: temp-branch
-        commit_author: smallprogram <smallprogram@foxmail.com>
-
-    - name: Merge and push changes with "theirs" strategy
-      run: |
-        git checkout ${{ github.ref_name }}
-        git pull origin ${{ github.ref_name }}
-        git merge temp-branch --strategy-option theirs --no-edit
-        git push origin ${{ github.ref_name }}
-        git branch -d temp-branch || echo "Local temp-branch not found"
-        git push origin --delete temp-branch || echo "Remote temp-branch not found"        
+  #   - name: Update Git Log
+  #     run: |
+  #         chmod +x $UPDATE_GIT_LOG_SH
+  #         $GITHUB_WORKSPACE/$UPDATE_GIT_LOG_SH
 
 
-  job_organize_tags:
-    needs: [job_init, job_defconfig, job_build, build_status_flag, job_organize_git_log]
-    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
-    runs-on: ubuntu-latest
-    name: Organize-Release-Tags
+  #   - name: Git auto update git log
+  #     uses: stefanzweifel/git-auto-commit-action@v5.0.0
+  #     id: commit
+  #     env:
+  #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #     with:
+  #       commit_message: auto update git log
+  #       branch: temp-branch
+  #       commit_author: smallprogram <smallprogram@foxmail.com>
+
+  #   - name: Merge and push changes with "theirs" strategy
+  #     run: |
+  #       git checkout ${{ github.ref_name }}
+  #       git pull origin ${{ github.ref_name }}
+  #       git merge temp-branch --strategy-option theirs --no-edit
+  #       git push origin ${{ github.ref_name }}
+  #       git branch -d temp-branch || echo "Local temp-branch not found"
+  #       git push origin --delete temp-branch || echo "Remote temp-branch not found"        
+
+
+  # job_organize_tags:
+  #   needs: [job_init, job_defconfig, job_build, build_status_flag, job_organize_git_log]
+  #   if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
+  #   runs-on: ubuntu-latest
+  #   name: Organize-Release-Tags
         
-    steps:
-    - name: Checkout
-      uses: actions/checkout@main
-      with:
-        fetch-depth: 0
+  #   steps:
+  #   - name: Checkout
+  #     uses: actions/checkout@main
+  #     with:
+  #       fetch-depth: 0
 
-    - name: Pull the latest changes
-      run: |
-        git pull origin ${{ github.ref_name }}
+  #   - name: Pull the latest changes
+  #     run: |
+  #       git pull origin ${{ github.ref_name }}
 
-    - name: Download Tags
-      uses: actions/download-artifact@v4
-      with:
-        name: release_tag_${{ needs.job_init.outputs.output_release_tag }}
+  #   - name: Download Tags
+  #     uses: actions/download-artifact@v4
+  #     with:
+  #       name: release_tag_${{ needs.job_init.outputs.output_release_tag }}
 
-    - name: Organize Tags
-      id: organize_tags
-      # env:
-      #   GH_TOKEN: ${{ github.token }}
-      run: |
-          chmod +x $ORGANIZE_TAG_SH
-          $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
+  #   - name: Organize Tags
+  #     id: organize_tags
+  #     # env:
+  #     #   GH_TOKEN: ${{ github.token }}
+  #     run: |
+  #         chmod +x $ORGANIZE_TAG_SH
+  #         $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
 
-    - name: Upload Release Tag
-      uses: softprops/action-gh-release@v2.0.6
-      if: steps.organize_tags.outputs.status == 'success'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ needs.job_init.outputs.output_release_tag }}
-        body_path: release.txt
+  #   - name: Upload Release Tag
+  #     uses: softprops/action-gh-release@v2.0.6
+  #     if: steps.organize_tags.outputs.status == 'success'
+  #     env:
+  #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #     with:
+  #       tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+  #       body_path: release.txt
 
-  job_my_action:
-    needs: [job_init, job_defconfig, job_build, build_status_flag, job_organize_git_log, job_organize_tags]
-    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
-    runs-on: ubuntu-latest
-    name: My-Action
+  # job_my_action:
+  #   needs: [job_init, job_defconfig, job_build, build_status_flag, job_organize_git_log, job_organize_tags]
+  #   if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
+  #   runs-on: ubuntu-latest
+  #   name: My-Action
 
-    steps:
-      - name: Trigger build
-        uses: peter-evans/repository-dispatch@main
-        with:
-          token: ${{ secrets.MY_SECRET_PAT }}
-          repository: smallprogram/MyAction
-          event-type: openwrt_compilation_completed
+  #   steps:
+  #     - name: Trigger build
+  #       uses: peter-evans/repository-dispatch@main
+  #       with:
+  #         token: ${{ secrets.MY_SECRET_PAT }}
+  #         repository: smallprogram/MyAction
+  #         event-type: openwrt_compilation_completed
