@@ -231,7 +231,7 @@ jobs:
       fail-fast: false
       matrix:
         include: ${{ fromJson(needs.job_init.outputs.platforms) }}
-    name: Build-OpenWrt-${{ matrix.source_code_platform }}-${{ matrix.platform }}
+    name: Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}
 
     steps:
       - name: Initialization Environment
@@ -266,10 +266,10 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           sudo -E apt-get -qq update
-          # sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends)
-          sudo bash -c 'bash <(curl -s https://build-scripts.immortalwrt.org/init_build_environment.sh)'
-          # sudo -E apt-get -qq autoremove --purge
-          # sudo -E apt-get -qq clean
+          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends)
+          # sudo bash -c 'bash <(curl -s https://build-scripts.immortalwrt.org/init_build_environment.sh)'
+          sudo -E apt-get -qq autoremove --purge
+          sudo -E apt-get -qq clean
           sudo timedatectl set-timezone "$TZ"
           df -hT
 
@@ -312,10 +312,19 @@ jobs:
 
       - name: Load Configuration
         run: |
-          chmod +x $COPY_BACKGROUNDFILES_SH
+          # chmod +x $COPY_BACKGROUNDFILES_SH
           [ -e ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config ] && cp -r ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config openwrt/.config
           cd openwrt
+          echo "config file info:"
+          echo "---------------------------------------------------------------------"
+          cat .config
+          echo "---------------------------------------------------------------------"
+          echo ""
           make defconfig
+          echo "defconfig file info:"
+          echo "---------------------------------------------------------------------"
+          cat .config
+          echo "---------------------------------------------------------------------"
           # $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platform }}"
 
       - name: Download Package
