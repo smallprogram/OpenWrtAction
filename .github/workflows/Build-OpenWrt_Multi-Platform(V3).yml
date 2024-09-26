@@ -316,7 +316,7 @@ jobs:
           [ -e ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config ] && cp -r ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config openwrt/.config
           cd openwrt
           make defconfig
-          $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platform }}"
+          # $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platform }}"
 
       - name: Download Package
         id: package
