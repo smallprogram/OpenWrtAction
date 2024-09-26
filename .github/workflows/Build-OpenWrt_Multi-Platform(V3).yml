@@ -313,8 +313,10 @@ jobs:
       - name: Load Configuration
         run: |
           # chmod +x $COPY_BACKGROUNDFILES_SH
+          echo "$PWD"
           [ -e ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config ] && cp -r ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config openwrt/.config
           cd openwrt
+          echo "$PWD"
           echo "config file info:"
           echo "---------------------------------------------------------------------"
           cat .config
