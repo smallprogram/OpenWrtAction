@@ -1,5 +1,5 @@
 #!/bin/bash
-
+release_tag=$1
 git_folders=(immortalwrt lede openwrt feeds)
 
 immortalwrt_REPO_URLS=(
@@ -33,6 +33,31 @@ feeds_REPO_URLS=(
 
 cd $GITHUB_WORKSPACE
 
+echo "[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/$release_tag/total?style=flat-square)](https://github.com/smallprogram/MyAction)">> release.txt
+echo "">> release.txt
+echo "## Source Code Information">> release.txt
+echo "[![](https://img.shields.io/badge/sorce-immortalwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt) [![](https://img.shields.io/badge/sorce-lean-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede) [![](https://img.shields.io/badge/sorce-openwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)">> release.txt
+echo """>>release.txt
+echo "## Build Information"">>release.txt
+
+echo "<table>">>release.txt
+echo "  <tr>">>release.txt
+echo "    <th>platform</th>">>release.txt
+echo "    <th>source platform</th>">>release.txt
+echo "    <th>kernel</th>">>release.txt
+echo "    <th>target</th>">>release.txt
+echo "    <th>compile status</th>">>release.txt
+echo "  </tr>">>release.txt
+
+for git_folder in "${git_folders[@]}"; do
+    if [[ "$git_folder" == "feeds" ]]; then
+        echo "jump $git_folder"
+    else
+        release_$git_folder.txt >> release.txt
+    fi
+done
+echo "</table>">>release.txt
+echo ""
 echo "## What's Changed" >>release.txt
 
 # 删掉git_log目录和子目录中的除了log文件以外的所有文件
@@ -56,12 +81,15 @@ for git_folder in "${git_folders[@]}"; do
         TITLE_MESSAGE="${url##*/} new commit log"
 
         SHA_Begin=$(grep '^${OUTPUT_FILE}:' git_log/${git_folder}/log | cut -d: -f2)
+        
+        echo "SHABegin:$SHA_Begin"
 
         if [[ "$git_folder" == "feeds" ]]; then
             SHA_End=$(grep '^${OUTPUT_FILE}:' git_log_immortalwrt.txt | cut -d: -f2)
         else
             SHA_End=$(grep '^${OUTPUT_FILE}:' git_log_${git_folder}.txt | cut -d: -f2)
         fi
+        echo "SHAEnd:$SHA_End"
 
         git clone $url --filter=blob:none git_repositories/$git_folder/$OUTPUT_FILE
 

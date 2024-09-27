@@ -200,6 +200,19 @@ jobs:
           path: git_log_${{ matrix.source_code_platform }}.txt
           retention-days: 5
 
+      - name: Generate Release Tag
+        id: tag
+        run: |
+          chmod +x $GENERATE_RELEASE_TAG_SH
+          $GITHUB_WORKSPACE/$GENERATE_RELEASE_TAG_SH "${{ needs.job_init.outputs.output_release_tag }}" "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
+      
+      - name: Upload Release Tag To Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: release_${{ matrix.source_code_platform }}
+          path: release_${{ matrix.source_code_platform }}.txt
+          retention-days: 5
+
   job_generate_release_tag: 
     needs: [job_init, job_defconfig]
     runs-on: ubuntu-22.04
@@ -218,19 +231,24 @@ jobs:
         git checkout -b temp-tag-gitlog
 
     - name: Download Git Log From Artifacts
-      id : download
+      id : download_gitlog
       uses: actions/download-artifact@v4
       with:
         pattern: git_log_*
         merge-multiple: true
 
+    - name: Download Git Log From Artifacts
+      id : download_releasetag
+      uses: actions/download-artifact@v4
+      with:
+        pattern: release_*
+        merge-multiple: true
+
     - name: Generate Release Tag
       id: tag
       run: |
-        chmod +x $GENERATE_RELEASE_TAG_SH
-        $GITHUB_WORKSPACE/$GENERATE_RELEASE_TAG_SH "${{ needs.job_init.outputs.output_release_tag }}"
         chmod +x $UPDATE_GIT_LOG_SH
-        $GITHUB_WORKSPACE/$UPDATE_GIT_LOG_SH
+        $GITHUB_WORKSPACE/$UPDATE_GIT_LOG_SH "${{ needs.job_init.outputs.output_release_tag }}"
 
     - name: Merge and push changes with "theirs" strategy
       run: |
