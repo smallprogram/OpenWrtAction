@@ -196,36 +196,52 @@ jobs:
           path: ${{ env.SOURCE_PATH }}/output.tar.gz
           retention-days: 5
 
-      - name: Generate Release Tag
-        id: tag
-        run: |
-          chmod +x $GENERATE_RELEASE_TAG_SH
-          $GITHUB_WORKSPACE/$GENERATE_RELEASE_TAG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
-          
-      - name: Upload Tags To Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: release_tag_${{ matrix.source_code_platform }}
-          path: ${{ matrix.source_code_platform }}_release.txt
-          retention-days: 5
-
       - name: Generate Git Log
         if: steps.tag.outputs.status == 'success'
         id: git_log
         run: |
           chmod +x $GENERATE_GIT_LOG_SH 
-          $GITHUB_WORKSPACE/$GENERATE_GIT_LOG_SH
+          $GITHUB_WORKSPACE/$GENERATE_GIT_LOG_SH "${{ matrix.source_code_platform }}"
           
       - name: Upload Git Log To Artifact
         uses: actions/upload-artifact@v4
         if: steps.git_log.outputs.status == 'success'
         with:
           name: git_log_${{ matrix.source_code_platform }}
-          path: git_log.txt
+          path: git_log_?.txt
           retention-days: 5
+
+  job_generate_release_tag: 
+    needs: job_init
+    runs-on: ubuntu-22.04
+    name: Generate Release tag
+
+    steps:
+
+    - name: Download Git Log From Artifacts
+      id : download
+      uses: actions/download-artifact@v4
+      with:
+        pattern: git_log_*
+        merge-multiple: true
+
+# 处理git log 合并到release.txt
+    - name: Generate Release Tag
+      id: tag
+      run: |
+        chmod +x $GENERATE_RELEASE_TAG_SH
+        $GITHUB_WORKSPACE/$GENERATE_RELEASE_TAG_SH "${{ needs.job_init.outputs.output_release_tag }}"
+
       
+    - name: Upload Tags To Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: release_tag
+        path: release.txt
+        retention-days: 5
+
   job_build:
-    needs: [job_init, job_defconfig]
+    needs: [job_init, job_defconfig, job_generate_release_tag]
     runs-on: ubuntu-22.04
     strategy:
       fail-fast: false
@@ -516,7 +532,7 @@ jobs:
       #     files: ${{ env.FIRMWARE }}/*
 
   # build_status_flag:
-  #   needs: [job_init, job_defconfig, job_build]
+  #   needs: [job_init, job_defconfig, job_generate_release_tag, job_build]
   #   if: ${{ always() }}
   #   name: Build-Status-Flag
   #   runs-on: ubuntu-22.04
@@ -542,7 +558,7 @@ jobs:
 
 
   # job_organize_git_log:
-  #   needs: [job_init, job_defconfig, job_build, build_status_flag]
+  #   needs: [job_init, job_defconfig, job_generate_release_tag, job_build, build_status_flag]
   #   if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
   #   runs-on: ubuntu-22.04
   #   name: Organize-Git-Log
