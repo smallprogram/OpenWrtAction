@@ -101,7 +101,7 @@ jobs:
       - name: Clone Source Code
         working-directory: /workdir
         run: |
-          git clone ${{ matrix.value.REPO_URL }} -b ${{ matrix.value.REPO_BRANCH }} openwrt
+          git clone ${{ matrix.value.REPO_URL }} openwrt
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
       - name: Load Custom Feeds
@@ -187,7 +187,6 @@ jobs:
           retention-days: 5
 
       - name: Generate Git Log
-        if: steps.tag.outputs.status == 'success'
         id: git_log
         run: |
           chmod +x $GENERATE_GIT_LOG_SH 
@@ -381,7 +380,7 @@ jobs:
         run: |
           df -hT
           cd $GITHUB_WORKSPACE/openwrt
-          make download -j8
+          # make download -j8
           find dl -size -1024c -exec ls -l {} \;
           find dl -size -1024c -exec rm -f {} \;
           df -hT
@@ -523,7 +522,7 @@ jobs:
         id: organize
         if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
         run: |
-
+          rm -rf $GITHUB_WORKSPACE/openwrt/bin
           mkdir -p $GITHUB_WORKSPACE/openwrt/bin
           mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets
           mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa

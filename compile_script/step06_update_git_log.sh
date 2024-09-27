@@ -3,31 +3,31 @@
 git_folders=(immortalwrt lede openwrt feeds)
 
 immortalwrt_REPO_URLS=(
-    "https://github.com/immortalwrt/immortalwrt --filter=blob:none"
-    "https://github.com/immortalwrt/packages --filter=blob:none"
-    "https://github.com/immortalwrt/luci --filter=blob:none"
+    "https://github.com/immortalwrt/immortalwrt"
+    "https://github.com/immortalwrt/packages"
+    "https://github.com/immortalwrt/luci"
 )
 
 lede_REPO_URLS=(
-    "https://github.com/coolsnowwolf/lede --filter=blob:none"
-    "https://github.com/coolsnowwolf/packages --filter=blob:none"
-    "https://github.com/coolsnowwolf/luci --filter=blob:none"
+    "https://github.com/coolsnowwolf/lede"
+    "https://github.com/coolsnowwolf/packages"
+    "https://github.com/coolsnowwolf/luci"
 )
 
 openwrt_REPO_URLS=(
-    "https://github.com/openwrt/openwrt --filter=blob:none"
-    "https://github.com/openwrt/packages --filter=blob:none"
-    "https://github.com/openwrt/luci --filter=blob:none"
+    "https://github.com/openwrt/openwrt"
+    "https://github.com/openwrt/packages"
+    "https://github.com/openwrt/luci"
 )
 
 feeds_REPO_URLS=(
-    "https://github.com/openwrt/routing --filter=blob:none"
-    "https://github.com/openwrt/telephony --filter=blob:none"
-    "https://github.com/fw876/helloworld --filter=blob:none"
-    "https://github.com/xiaorouji/openwrt-passwall-packages --filter=blob:none"
-    "https://github.com/xiaorouji/openwrt-passwall --filter=blob:none"
-    "https://github.com/xiaorouji/openwrt-passwall2 --filter=blob:none"
-    "https://github.com/vernesong/OpenClash --filter=blob:none"
+    "https://github.com/openwrt/routing"
+    "https://github.com/openwrt/telephony"
+    "https://github.com/fw876/helloworld"
+    "https://github.com/xiaorouji/openwrt-passwall-packages"
+    "https://github.com/xiaorouji/openwrt-passwall"
+    "https://github.com/xiaorouji/openwrt-passwall2"
+    "https://github.com/vernesong/OpenClash"
 )
 
 
