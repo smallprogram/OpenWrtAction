@@ -130,17 +130,7 @@ jobs:
           cd openwrt
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
 
-          $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
-
-      # - name: Git Auto Update Config
-      #   uses: stefanzweifel/git-auto-commit-action@v5.0.0
-      #   id: commit
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     commit_message: auto update ${{ matrix.source_code_platform }} config
-      #     branch: temp-${{ matrix.source_code_platform }}
-      #     commit_author: smallprogram <smallprogram@foxmail.com>
+          # $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
 
       - name: Merge and push changes with "theirs" strategy
         run: |
