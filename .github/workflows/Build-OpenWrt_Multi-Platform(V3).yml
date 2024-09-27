@@ -237,12 +237,27 @@ jobs:
         pattern: git_log_*
         merge-multiple: true
 
-    - name: Download Git Log From Artifacts
+    - name: Download Release Tag From Artifacts
       id : download_releasetag
       uses: actions/download-artifact@v4
       with:
         pattern: release_*
         merge-multiple: true
+
+    - name: SSH connection to Actions
+      uses: mxschmitt/action-tmate@v3.16
+      if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
+    # - name: File Extraction
+    #   working-directory: /workdir
+    #   run: |
+    #     echo "source packages size:"
+    #     ls -lh download/output.tar.gz
+    #     tar -xzf download/output.tar.gz
+    #     rm -rf download/output.tar.gz
+    #     cd download
+    #     echo "TAG_PATH=$PWD" >> $GITHUB_ENV
+    #     cd ..
+    #     sudo chown -R $USER:$GROUPS /workdir/openwrt
 
     - name: Generate Release Tag
       id: tag
