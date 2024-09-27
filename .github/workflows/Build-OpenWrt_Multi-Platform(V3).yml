@@ -381,8 +381,8 @@ jobs:
           df -hT
           cd $GITHUB_WORKSPACE/openwrt
           # make download -j8
-          find dl -size -1024c -exec ls -l {} \;
-          find dl -size -1024c -exec rm -f {} \;
+          # find dl -size -1024c -exec ls -l {} \;
+          # find dl -size -1024c -exec rm -f {} \;
           df -hT
       
       - name: SSH connection to Actions
