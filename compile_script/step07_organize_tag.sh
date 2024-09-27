@@ -9,77 +9,47 @@ source $GITHUB_WORKSPACE/compile_script/platforms.sh
 if [ -f "release.txt" ]; then
 
     json_data=$(curl -s -H "Authorization: Bearer $token" "https://api.github.com/repos/$repository/actions/runs/$run_id/jobs")
-    name_conclusion_array=($(echo "$json_data" | jq -r '.jobs[] | select(.name | startswith("Build-OpenWrt-")) | "\(.name).\(.conclusion)"'))
+    name_conclusion_array=($(echo "$json_data" | jq -r '.jobs[] | select(.name | startswith("Build-")) | "\(.name).\(.conclusion)"'))
 
-    echo "-------------------build status--------------------------"
+    # 创建一个数组存储执行状态
+    declare -A status_map
+
+    # 填充状态映射
     for item in "${name_conclusion_array[@]}"; do
         IFS='.' read -r name conclusion <<<"$item"
-        echo "Name: $name"
-        echo "Conclusion: $conclusion"
-    done
-    echo "-----------------------------------------------------------"
 
-    # Create a temporary file to store the updated content
-    tmp_file=$(mktemp)
+        # 动态提取 platform 和 source platform
+        platform=$(echo "$name" | sed -E 's/^Build-//; s/-.*//')  # 提取 Build- 后第一个 - 之前的部分
+        source_platform=$(echo "$name" | sed -E 's/^Build-[^-]+-//; s/-.*//')  # 提取第二个 - 后的内容
 
-    # Iterate through the lines of release.txt
-    while IFS= read -r line; do
-        updated_line="$line"
-        for platform in "${platforms[@]}"; do
-            if echo "$line" | grep -q "\*\*:ice_cube: $platform\*\*"; then
-                for item in "${name_conclusion_array[@]}"; do
-                    IFS='.' read -r name conclusion <<<"$item"
-                    if [[ "$name" == "Build-OpenWrt-$platform" ]]; then
-                        if [[ "$conclusion" == "success" ]]; then
-                            updated_line=$(echo "$line" | sed 's/build-in_progress_or_waiting.....-yellow?logo=githubactions\&logoColor=yellow/build-passing-green?logo=githubactions\&logoColor=green/')
-                        else
-                            updated_line=$(echo "$line" | sed 's/build-in_progress_or_waiting.....-yellow?logo=githubactions\&logoColor=yellow/build-failure-red?logo=githubactions\&logoColor=red/')
-                        fi
-                        break
-                    fi
-                done
-                break
-            fi
-        done
-        echo "$updated_line" >>"$tmp_file"
-    done <"release.txt"
-
-    # Replace the original file with the updated content
-    mv "$tmp_file" "release.txt"
-
-    echo "|=========================================|"
-    ls git_log
-    echo "|=========================================|"
-
-    echo "## What's Changed" >>release.txt
-
-    OUTPUT_FILES=(
-        "lede"
-        "packages"
-        "luci"
-        "routing"
-        "telephony"
-        "helloworld"
-        "openwrt-passwall-packages"
-        "openwrt-passwall"
-        "openwrt-passwall2"
-        "OpenClash"
-        "luci-theme-argon"
-        "luci-app-argon-config"
-        "luci-app-adguardhome"
-        "luci-app-mosdns"
-        "OpenAppFilter"
-        "netspeedtest"
-    )
-
-    for file in "${OUTPUT_FILES[@]}"; do
-        if [ -f "git_log/$file.log" ]; then
-            echo "found file $file.log!"
-            cat "git_log/$file.log" >>release.txt
+        # 根据 Conclusion 设置对应的状态
+        if [[ "$conclusion" == "success" ]]; then
+            status_map["$platform-$source_platform"]="![](https://img.shields.io/badge/build-passing-green?logo=githubactions&logoColor=green&style=flat-square)"
         else
-            echo "no file $file.log 404"
+            status_map["$platform-$source_platform"]="![](https://img.shields.io/badge/build-failure-red?logo=githubactions&logoColor=red&style=flat-square)"
         fi
     done
+
+    # 更新 release.txt 文件中的 compile status
+    while IFS= read -r line; do
+        if [[ "$line" =~ <td><strong>(.*)</strong></td> ]]; then
+            platform_name="${BASH_REMATCH[1]}"
+
+            # 提取当前行的 source platform
+            source_platform=$(echo "$line" | sed -E 's/.*<td><strong>([^<]*)<\/strong>.*/\1/')  # 提取 source platform
+
+            # 提取平台名并根据映射更新 compile status
+            compile_status_key="$platform_name-$source_platform"
+            if [[ -n "${status_map[$compile_status_key]}" ]]; then
+                new_status="${status_map[$compile_status_key]}"
+                line=$(echo "$line" | sed "s|<td>.*</td>|<td>$new_status</td>|")
+            fi
+        fi
+        echo "$line" >> updated_release.txt  # 输出到新的文件中
+    done < release.txt
+
+    # 替换原文件
+    mv updated_release.txt release.txt
 
     echo "status=success" >>$GITHUB_OUTPUT
     echo "-----------------------release.txt------------------------"
