@@ -50,7 +50,7 @@ env:
 
 jobs:
   job_init: 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     name: Build-Init
     outputs:
       output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
@@ -75,7 +75,7 @@ jobs:
   
   job_defconfig:
     needs: job_init
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     name: Defconfig-${{ matrix.source_code_platform }}
     strategy:
       fail-fast: false
@@ -226,7 +226,7 @@ jobs:
       
   job_build:
     needs: [job_init, job_defconfig]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       fail-fast: false
       matrix:
@@ -519,7 +519,7 @@ jobs:
   #   needs: [job_init, job_defconfig, job_build]
   #   if: ${{ always() }}
   #   name: Build-Status-Flag
-  #   runs-on: ubuntu-latest
+  #   runs-on: ubuntu-24.04
   #   outputs:
   #     checking_build_status: ${{ steps.status_checking.outputs.status }}
   #   steps:
@@ -544,7 +544,7 @@ jobs:
   # job_organize_git_log:
   #   needs: [job_init, job_defconfig, job_build, build_status_flag]
   #   if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
-  #   runs-on: ubuntu-latest
+  #   runs-on: ubuntu-24.04
   #   name: Organize-Git-Log
        
   #   steps:
@@ -592,7 +592,7 @@ jobs:
   # job_organize_tags:
   #   needs: [job_init, job_defconfig, job_build, build_status_flag, job_organize_git_log]
   #   if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
-  #   runs-on: ubuntu-latest
+  #   runs-on: ubuntu-24.04
   #   name: Organize-Release-Tags
         
   #   steps:
@@ -630,7 +630,7 @@ jobs:
   # job_my_action:
   #   needs: [job_init, job_defconfig, job_build, build_status_flag, job_organize_git_log, job_organize_tags]
   #   if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
-  #   runs-on: ubuntu-latest
+  #   runs-on: ubuntu-24.04
   #   name: My-Action
 
   #   steps:
