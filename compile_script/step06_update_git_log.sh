@@ -37,8 +37,8 @@ echo "[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/$r
 echo "">> release.txt
 echo "## Source Code Information">> release.txt
 echo "[![](https://img.shields.io/badge/sorce-immortalwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt) [![](https://img.shields.io/badge/sorce-lean-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede) [![](https://img.shields.io/badge/sorce-openwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)">> release.txt
-echo """>>release.txt
-echo "## Build Information"">>release.txt
+echo "">>release.txt
+echo "## Build Information">>release.txt
 
 echo "<table>">>release.txt
 echo "  <tr>">>release.txt
@@ -59,7 +59,7 @@ done
 echo "</table>">>release.txt
 echo ""
 echo "## What's Changed" >>release.txt
-
+echo ""
 # 删掉git_log目录和子目录中的除了log文件以外的所有文件
 find git_log -type f ! -name 'log' -exec rm {} +
 mkdir -p git_repositories
@@ -70,8 +70,10 @@ for git_folder in "${git_folders[@]}"; do
 
     if [[ "$git_folder" == "feeds" ]]; then
         echo "### common $git_folder" >>release.txt
+        echo ""
     else
         echo "### $git_folder" >>release.txt
+        echo ""
     fi
 
 
