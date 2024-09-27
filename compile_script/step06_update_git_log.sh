@@ -42,7 +42,7 @@ mkdir -p git_repositories
 for git_folder in "${git_folders[@]}"; do
     echo "git_folder: $git_folder"
     declare -n repo_urls="${git_folder}_REPO_URLS"
-    echo "### $git_folder" >>release.txt
+
     if [[ "$git_folder" == "feeds" ]]; then
         echo "### common $git_folder" >>release.txt
     else
@@ -58,7 +58,7 @@ for git_folder in "${git_folders[@]}"; do
         SHA_Begin=$(grep '^${OUTPUT_FILE}:' git_log/${git_folder}/log | cut -d: -f2)
 
         if [[ "$git_folder" == "feeds" ]]; then
-            SHA_End=$(grep '^${OUTPUT_FILE}:' git_log_feeds_immortalwrt.txt | cut -d: -f2)
+            SHA_End=$(grep '^${OUTPUT_FILE}:' git_log_immortalwrt.txt | cut -d: -f2)
         else
             SHA_End=$(grep '^${OUTPUT_FILE}:' git_log_${git_folder}.txt | cut -d: -f2)
         fi
