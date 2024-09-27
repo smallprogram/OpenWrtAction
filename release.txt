@@ -82,3 +82,41 @@
 <b> It is detected that OpenClash has an illegal SHA value. It is possible that OpenClash has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
 
 </details>
+[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/multi-platform_2024.09.28_01.41.25/total?style=flat-square)](https://github.com/smallprogram/MyAction)
+## Source Code Information
+[![](https://img.shields.io/badge/sorce-immortalwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt) [![](https://img.shields.io/badge/sorce-lean-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede) [![](https://img.shields.io/badge/sorce-openwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)
+
+<table>
+  <tr>
+    <th>platform</th>
+    <th>source platform</th>
+    <th>kernel</th>
+    <th>target</th>
+    <th>compile status</th>
+  </tr>
+</table>
+## What's Changed
+### immortalwrt
+<details> <summary> <b>luci new commit log :x: </b>  </summary>
+
+<b> It is detected that luci has an illegal SHA value. It is possible that luci has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
+
+</details>
+### lede
+<details> <summary> <b>luci new commit log :x: </b>  </summary>
+
+<b> It is detected that luci has an illegal SHA value. It is possible that luci has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
+
+</details>
+### openwrt
+<details> <summary> <b>luci new commit log :x: </b>  </summary>
+
+<b> It is detected that luci has an illegal SHA value. It is possible that luci has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
+
+</details>
+### common feeds
+<details> <summary> <b>OpenClash new commit log :x: </b>  </summary>
+
+<b> It is detected that OpenClash has an illegal SHA value. It is possible that OpenClash has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
+
+</details>
