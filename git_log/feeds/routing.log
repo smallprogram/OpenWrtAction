@@ -1,5 +1,9 @@
-<details> <summary> <b>routing new commit log :x: </b>  </summary>
+<details> <summary> <b>routing new commit log :new: </b>  </summary>
 
-<b> It is detected that routing has an illegal SHA value. It is possible that routing has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
-
+SHA|Author|Date|Message
+-|-|-|-
+233b3c6|Patrick Grimm|Sun Aug 25 15:48:05 2024 +0200|babeld: use an array for routing lists use underscore in key name for libubox/jshn.sh compat
+31e66c0|Rob White|Wed Jul 31 09:18:36 2024 +0100|mesh11sd: update to version 4.1.1
+3b79b64|Rob White|Sat Jul 20 22:25:17 2024 +0100|mesh11sd: remove unneeded default PKG_BUILD_DIR line in makefile
+3a773ab|Rob White|Sat Jul 20 21:55:10 2024 +0100|mesh11sd: update to version 4.1.0
 </details>

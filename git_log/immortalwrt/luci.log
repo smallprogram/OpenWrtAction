@@ -1,5 +1,28 @@
-<details> <summary> <b>luci new commit log :x: </b>  </summary>
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
 
-<b> It is detected that luci has an illegal SHA value. It is possible that luci has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
-
+SHA|Author|Date|Message
+-|-|-|-
+35a0e6d5a9|Tianling Shen|Tue Sep 24 20:38:41 2024 +0800|OpenClash: Update to 0.46.033
+187a71c644|Tianling Shen|Sat Sep 21 20:25:08 2024 +0800|Merge Official Source
+c360e3742c|Stan Grishin|Fri Sep 20 13:23:14 2024 -0700|Merge pull request #7287 from stangri/master-luci-app-pbr
+a2c21a62c9|Paul Donald|Fri Sep 20 17:49:07 2024 +0200|luci-mod-network: change to non-breaking space character
+8449716ceb|Paul Donald|Fri Sep 20 17:39:58 2024 +0200|luci-base: expunge correct transport cookies on logout
+c4aaaa3850|blueveryday|Fri Sep 20 21:42:40 2024 +0800|luci-app-ddns-go: add dns option
+66e78acb33|Tianling Shen|Fri Sep 20 18:12:16 2024 +0800|OpenClash: Update to 0.46.031
+b6814c3337|Hannu Nyman|Thu Sep 19 21:06:19 2024 +0300|treewide: Sync translations
+7e9bd06e82|Hosted Weblate|Thu Sep 19 20:00:39 2024 +0200|Translated using Weblate (Finnish)
+8bdad6dd16|Stan Grishin|Thu Sep 19 16:25:05 2024 +0000|luci-app-pbr: update to 1.1.7-10
+42194fba1b|Tianling Shen|Thu Sep 19 14:17:09 2024 +0800|luci-app-zerotier: add missing conffiles
+4a179de295|Tianling Shen|Thu Sep 19 14:13:17 2024 +0800|luci-app-zerotier: import config
+470bb2b854|Mikael Magnusson|Tue Aug 20 22:17:36 2024 +0200|luci-base: form.js: decode HTML entities in AbstractElement.stripTags()
+dfb86709c6|Vadim Vetrov|Sat Sep 14 19:30:33 2024 +0300|luci-mod-status: break-word for large commands in processes
+72255eb46c|Daniel Nilsson|Wed Sep 18 21:37:16 2024 +0200|luci-app-commands: correctly pass custom arguments as query string
+5a30e6c3af|Ramon Van Gorkom|Sun Sep 15 21:48:41 2024 +0200|luci-theme-openwrt: change to HTML (like all other themes) instead of XML to fix incompatibility
+b9751888a1|Hannu Nyman|Sun Sep 15 15:51:21 2024 +0300|luci-app-statistics: Fix b4a25a19a "Fix variable scope"
+169cec09ba|Hosted Weblate|Sun Sep 15 13:36:49 2024 +0200|Translated using Weblate (Czech)
+03ec6a8356|Feng Cheng|Tue Jul 30 18:33:07 2024 +0800|luci-app-udpxy: fix luci-app-udpxy
+4728618896|Luca Barbato|Mon Jun 3 11:08:02 2024 +0200|luci-base: refactor network devices enumeration
+d6d3c77df0|Chen Minqiang|Mon Apr 22 19:59:02 2024 +0800|luci-mod-network: sourcefilter option available for modemmanager
+94f187bc9b|Paul Donald|Sat Sep 14 20:43:55 2024 +0200|luci-app-mwan3: add name length error check and name collision check
+b4a25a19a9|Paul Donald|Sat Sep 14 19:19:15 2024 +0200|luci-app-statistics: Fix variable scope
 </details>

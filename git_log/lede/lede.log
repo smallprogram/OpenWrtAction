@@ -1,5 +1,18 @@
-<details> <summary> <b>lede new commit log :x: </b>  </summary>
+<details> <summary> <b>lede new commit log :new: </b>  </summary>
 
-<b> It is detected that lede has an illegal SHA value. It is possible that lede has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
-
+SHA|Author|Date|Message
+-|-|-|-
+91b20eaed|Oskari Lemmela|Sun Oct 8 10:33:50 2023 +0300|kernel: netdevices: add dsa support
+42d626f8d|Oskari Lemmela|Thu Jul 11 11:01:32 2024 +0300|kernel: netdevices: add leds support
+d51d4477e|Oskari Lemmela|Wed Jul 10 19:34:47 2024 +0300|kernel: netdevices: add phy modules
+6ca5e8551|Oskari Lemmela|Thu Jul 11 10:47:36 2024 +0300|kernel: modules: add irq support for pca953x
+a75453bbc|coolsnowwolf|Wed Sep 25 15:39:42 2024 +0800|rtw88-usb: fix rtw8703b build with kernel 6.6+
+297d4adf0|coolsnowwolf|Wed Sep 25 13:39:22 2024 +0800|Update README_EN.md
+af5276890|coolsnowwolf|Tue Sep 24 16:40:57 2024 +0800|README.md: update Armsom Sige Board series info
+3d47ebac7|coolsnowwolf|Tue Sep 24 15:15:27 2024 +0800|rockchip: add ArmSoM Sige7 (RK3588 ARM64 8 cores) support
+90131838f|Hauke Mehrtens|Mon Sep 23 00:47:40 2024 +0200|linux-firmware: Update to version 20240909
+0dc62d9d8|Chuanhong Guo|Thu Aug 8 12:56:03 2024 +0800|siflower: new target for Siflower SF19A2890
+a5d881f3a|Chuanhong Guo|Thu Aug 15 16:04:30 2024 +0800|package: busybox: disable mips16 on hard-float
+5ea6cb7c3|coolsnowwolf|Sat Sep 21 17:22:54 2024 +0800|rockchip: backport driver updates for rk3588
+801f34513|aiamadeus|Tue Sep 17 23:15:26 2024 +0800|kernel: refresh 6.1 patches
 </details>

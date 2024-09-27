@@ -1,7 +1,9 @@
-[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/multi-platform_2024.09.28_01.01.13/total?style=flat-square)](https://github.com/smallprogram/MyAction)
+[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/multi-platform_2024.09.28_03.04.44/total?style=flat-square)](https://github.com/smallprogram/MyAction)
+
 ## Source Code Information
 [![](https://img.shields.io/badge/sorce-immortalwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt) [![](https://img.shields.io/badge/sorce-lean-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede) [![](https://img.shields.io/badge/sorce-openwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)
-
+>>release.txt
+echo ## Build Information
 <table>
   <tr>
     <th>platform</th>
@@ -10,113 +12,1586 @@
     <th>target</th>
     <th>compile status</th>
   </tr>
-</table>
-## What's Changed
-### immortalwrt
-### immortalwrt
-<details> <summary> <b>luci --filter=blob:none new commit log :x: </b>  </summary>
-
-<b> It is detected that luci --filter=blob:none has an illegal SHA value. It is possible that luci --filter=blob:none has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
-
-</details>
-### lede
-### lede
-<details> <summary> <b>luci --filter=blob:none new commit log :x: </b>  </summary>
-
-<b> It is detected that luci --filter=blob:none has an illegal SHA value. It is possible that luci --filter=blob:none has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
-
-</details>
-### openwrt
-### openwrt
-<details> <summary> <b>luci --filter=blob:none new commit log :x: </b>  </summary>
-
-<b> It is detected that luci --filter=blob:none has an illegal SHA value. It is possible that luci --filter=blob:none has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
-
-</details>
-### feeds
-### common feeds
-<details> <summary> <b>OpenClash --filter=blob:none new commit log :x: </b>  </summary>
-
-<b> It is detected that OpenClash --filter=blob:none has an illegal SHA value. It is possible that OpenClash --filter=blob:none has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
-
-</details>
-[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/multi-platform_2024.09.28_01.20.29/total?style=flat-square)](https://github.com/smallprogram/MyAction)
-## Source Code Information
-[![](https://img.shields.io/badge/sorce-immortalwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt) [![](https://img.shields.io/badge/sorce-lean-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede) [![](https://img.shields.io/badge/sorce-openwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)
-
-<table>
   <tr>
-    <th>platform</th>
-    <th>source platform</th>
-    <th>kernel</th>
-    <th>target</th>
-    <th>compile status</th>
+    <td><strong>🧊 X86</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>x86</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R2C</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R2CPLUS</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R2S</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R4S</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R4SE</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R4SENT</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R5C</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R5S</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R6C</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R6S</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R66S</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R68S</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 X86</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>x86</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R5S</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R5C</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R4S</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R4SE</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R2S</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R2C</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 H66K</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 H68K</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 H69K</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R66S</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R68S</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R_PI_3b</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>bcm27xx</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R_PI_4b</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>bcm27xx</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 Asus_TUF_AX4200</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>mediatek</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 JDCloud_AX6000</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>mediatek</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 Phicomm_N1</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>amlogic</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 Thunder_OneCloud</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>amlogic</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 RedMi_AX5</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>qualcommax</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 XiaoMi_AX6S</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>mediatek</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 XiaoMi_AX3000T</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>mediatek</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 XiaoMi_AX3600</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>qualcommax</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 XiaoMi_AX6000</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>mediatek</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 XiaoMi_AX9000</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>qualcommax</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 X86</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>x86</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R2C</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R2CPLUS</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R2S</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R4S</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R4SE</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R5C</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R5S</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R6S</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
   </tr>
 </table>
 ## What's Changed
 ### immortalwrt
-### immortalwrt
-<details> <summary> <b>luci new commit log :x: </b>  </summary>
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
 
-<b> It is detected that luci has an illegal SHA value. It is possible that luci has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
-
+SHA|Author|Date|Message
+-|-|-|-
+35a0e6d5a9|Tianling Shen|Tue Sep 24 20:38:41 2024 +0800|OpenClash: Update to 0.46.033
+187a71c644|Tianling Shen|Sat Sep 21 20:25:08 2024 +0800|Merge Official Source
+c360e3742c|Stan Grishin|Fri Sep 20 13:23:14 2024 -0700|Merge pull request #7287 from stangri/master-luci-app-pbr
+a2c21a62c9|Paul Donald|Fri Sep 20 17:49:07 2024 +0200|luci-mod-network: change to non-breaking space character
+8449716ceb|Paul Donald|Fri Sep 20 17:39:58 2024 +0200|luci-base: expunge correct transport cookies on logout
+c4aaaa3850|blueveryday|Fri Sep 20 21:42:40 2024 +0800|luci-app-ddns-go: add dns option
+66e78acb33|Tianling Shen|Fri Sep 20 18:12:16 2024 +0800|OpenClash: Update to 0.46.031
+b6814c3337|Hannu Nyman|Thu Sep 19 21:06:19 2024 +0300|treewide: Sync translations
+7e9bd06e82|Hosted Weblate|Thu Sep 19 20:00:39 2024 +0200|Translated using Weblate (Finnish)
+8bdad6dd16|Stan Grishin|Thu Sep 19 16:25:05 2024 +0000|luci-app-pbr: update to 1.1.7-10
+42194fba1b|Tianling Shen|Thu Sep 19 14:17:09 2024 +0800|luci-app-zerotier: add missing conffiles
+4a179de295|Tianling Shen|Thu Sep 19 14:13:17 2024 +0800|luci-app-zerotier: import config
+470bb2b854|Mikael Magnusson|Tue Aug 20 22:17:36 2024 +0200|luci-base: form.js: decode HTML entities in AbstractElement.stripTags()
+dfb86709c6|Vadim Vetrov|Sat Sep 14 19:30:33 2024 +0300|luci-mod-status: break-word for large commands in processes
+72255eb46c|Daniel Nilsson|Wed Sep 18 21:37:16 2024 +0200|luci-app-commands: correctly pass custom arguments as query string
+5a30e6c3af|Ramon Van Gorkom|Sun Sep 15 21:48:41 2024 +0200|luci-theme-openwrt: change to HTML (like all other themes) instead of XML to fix incompatibility
+b9751888a1|Hannu Nyman|Sun Sep 15 15:51:21 2024 +0300|luci-app-statistics: Fix b4a25a19a "Fix variable scope"
+169cec09ba|Hosted Weblate|Sun Sep 15 13:36:49 2024 +0200|Translated using Weblate (Czech)
+03ec6a8356|Feng Cheng|Tue Jul 30 18:33:07 2024 +0800|luci-app-udpxy: fix luci-app-udpxy
+4728618896|Luca Barbato|Mon Jun 3 11:08:02 2024 +0200|luci-base: refactor network devices enumeration
+d6d3c77df0|Chen Minqiang|Mon Apr 22 19:59:02 2024 +0800|luci-mod-network: sourcefilter option available for modemmanager
+94f187bc9b|Paul Donald|Sat Sep 14 20:43:55 2024 +0200|luci-app-mwan3: add name length error check and name collision check
+b4a25a19a9|Paul Donald|Sat Sep 14 19:19:15 2024 +0200|luci-app-statistics: Fix variable scope
 </details>
 ### lede
-### lede
-<details> <summary> <b>luci new commit log :x: </b>  </summary>
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
 
-<b> It is detected that luci has an illegal SHA value. It is possible that luci has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
-
+SHA|Author|Date|Message
+-|-|-|-
+ddbc5ea|coolsnowwolf|Sat Aug 17 23:16:15 2024 +0800|luci-app-turboacc: update target default options
+01beb0b|coolsnowwolf|Sat Sep 14 20:16:04 2024 +0800|Revert "luci-proto-ipv6: improve dhcpv6 support"
+5cd327a|coolsnowwolf|Thu Aug 22 20:10:50 2024 +0800|luci-app-oled: add new package for ssd1306
 </details>
 ### openwrt
-### openwrt
-<details> <summary> <b>luci new commit log :x: </b>  </summary>
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
 
-<b> It is detected that luci has an illegal SHA value. It is possible that luci has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
-
-</details>
-### feeds
-### common feeds
-<details> <summary> <b>OpenClash new commit log :x: </b>  </summary>
-
-<b> It is detected that OpenClash has an illegal SHA value. It is possible that OpenClash has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
-
-</details>
-[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/multi-platform_2024.09.28_01.41.25/total?style=flat-square)](https://github.com/smallprogram/MyAction)
-## Source Code Information
-[![](https://img.shields.io/badge/sorce-immortalwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt) [![](https://img.shields.io/badge/sorce-lean-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede) [![](https://img.shields.io/badge/sorce-openwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)
-
-<table>
-  <tr>
-    <th>platform</th>
-    <th>source platform</th>
-    <th>kernel</th>
-    <th>target</th>
-    <th>compile status</th>
-  </tr>
-</table>
-## What's Changed
-### immortalwrt
-<details> <summary> <b>luci new commit log :x: </b>  </summary>
-
-<b> It is detected that luci has an illegal SHA value. It is possible that luci has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
-
-</details>
-### lede
-<details> <summary> <b>luci new commit log :x: </b>  </summary>
-
-<b> It is detected that luci has an illegal SHA value. It is possible that luci has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
-
-</details>
-### openwrt
-<details> <summary> <b>luci new commit log :x: </b>  </summary>
-
-<b> It is detected that luci has an illegal SHA value. It is possible that luci has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
-
+SHA|Author|Date|Message
+-|-|-|-
+63d8b79c79|Stan Grishin|Tue Sep 24 10:20:15 2024 -0700|Merge pull request #7292 from stangri/master-luci-app-https-dns-proxy
+366e4c9669|Hosted Weblate|Tue Sep 24 17:23:35 2024 +0200|Added translation using Weblate (Yucateco)
+c70ec6f8c7|Stan Grishin|Mon Sep 23 23:32:47 2024 +0000|luci-app-https-dns-proxy: better description/link for force_dns
+23e24b03db|Stan Grishin|Mon Sep 23 13:52:23 2024 -0700|Merge pull request #7290 from stangri/master-luci-app-pbr
+93d511d52a|Stan Grishin|Mon Sep 23 13:52:15 2024 -0700|Merge pull request #7291 from stangri/master-luci-app-advanced-reboot
+b884bf4f47|Stan Grishin|Sun Sep 22 17:45:28 2024 +0000|luci-app-advanced-reboot: update to 1.0.1-13
+9d8f9b7cdf|Stan Grishin|Sun Sep 22 17:38:01 2024 +0000|luci-app-pbr: bugfix: update luci.mk link in Makefile
+c360e3742c|Stan Grishin|Fri Sep 20 13:23:14 2024 -0700|Merge pull request #7287 from stangri/master-luci-app-pbr
+a2c21a62c9|Paul Donald|Fri Sep 20 17:49:07 2024 +0200|luci-mod-network: change to non-breaking space character
+8449716ceb|Paul Donald|Fri Sep 20 17:39:58 2024 +0200|luci-base: expunge correct transport cookies on logout
+b6814c3337|Hannu Nyman|Thu Sep 19 21:06:19 2024 +0300|treewide: Sync translations
+7e9bd06e82|Hosted Weblate|Thu Sep 19 20:00:39 2024 +0200|Translated using Weblate (Finnish)
+8bdad6dd16|Stan Grishin|Thu Sep 19 16:25:05 2024 +0000|luci-app-pbr: update to 1.1.7-10
+470bb2b854|Mikael Magnusson|Tue Aug 20 22:17:36 2024 +0200|luci-base: form.js: decode HTML entities in AbstractElement.stripTags()
 </details>
 ### common feeds
-<details> <summary> <b>OpenClash new commit log :x: </b>  </summary>
+<details> <summary> <b>OpenClash new commit log :new: </b>  </summary>
 
-<b> It is detected that OpenClash has an illegal SHA value. It is possible that OpenClash has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
-
+SHA|Author|Date|Message
+-|-|-|-
+fc741a80|vernesong|Tue Sep 24 00:20:48 2024 +0800|Merge branch 'dev'
+c2efe953|vernesong|Tue Sep 24 00:20:29 2024 +0800|0.46.033
+607c7c50|vernesong|Tue Sep 24 00:20:14 2024 +0800|chore: ip geo
+e3b53dad|LovinYarn|Mon Sep 23 20:52:32 2024 +0800|chore: update metacubexd v1.149.0 (#4046)
+9808d20f|vernesong|Mon Sep 23 19:44:04 2024 +0800|Update compile_meta_core.yml
+4966b3ab|vernesong|Mon Sep 23 08:41:36 2024 +0800|chore: refine
+f3c90850|vernesong|Mon Sep 23 08:34:03 2024 +0800|chore: refine
+d5a55a1a|vernesong|Sat Sep 21 18:57:28 2024 +0800|chore: refine
+05cc8e08|vernesong|Sat Sep 21 17:08:54 2024 +0800|0.46.032
+7c11f92d|vernesong|Sat Sep 21 12:40:50 2024 +0800|chore: refine
+1cd343f2|vernesong|Fri Sep 20 19:01:01 2024 +0800|fix typo
+6543ddda|vernesong|Fri Sep 20 12:23:34 2024 +0800|chore: refine code
+f9cc20c6|vernesong|Thu Sep 19 23:14:54 2024 +0800|Merge branch 'dev'
+468f9a41|vernesong|Thu Sep 19 22:53:28 2024 +0800|0.46.031
+fffcda1d|vernesong|Thu Sep 19 22:48:11 2024 +0800|#4030
+7cea54c0|vernesong|Thu Sep 19 22:09:46 2024 +0800|0.46.030
+03670ffd|vernesong|Thu Sep 19 22:09:14 2024 +0800|chore: refine
+19e219c4|vernesong|Thu Sep 19 22:08:33 2024 +0800|fix #4025
+927f815b|vernesong|Wed Sep 18 17:51:01 2024 +0800|chore: refine
+94d6240e|vernesong|Sat Sep 14 18:00:41 2024 +0800|0.46.029
+faa562b9|vernesong|Sat Sep 14 18:00:15 2024 +0800|chore: refine
+24b26f57|vernesong|Fri Sep 13 17:36:52 2024 +0800|0.46.028
+2db6fca3|vernesong|Fri Sep 13 17:32:57 2024 +0800|chore: add ecs option for dns
+195f5569|vernesong|Fri Sep 13 08:14:28 2024 +0800|chore: revert
+2a185804|vernesong|Fri Sep 13 06:09:05 2024 +0800|chore: refine
+b164651f|vernesong|Thu Sep 12 12:21:20 2024 +0800|0.46.027
+65de1bd5|vernesong|Thu Sep 12 12:21:00 2024 +0800|chore: refine translation
+09f43aee|vernesong|Thu Sep 12 11:55:04 2024 +0800|0.46.026
+44a7d812|vernesong|Thu Sep 12 11:54:29 2024 +0800|chore: change streaming unlock test cache path
+0e792e2d|vernesong|Mon Sep 9 21:53:27 2024 +0800|chore: refine
+97a11e54|vernesong|Mon Sep 9 10:52:03 2024 +0800|0.46.025
+f206ee55|vernesong|Mon Sep 9 10:17:38 2024 +0800|feat: add cache for streaming unlock
+a9b75b0d|vernesong|Mon Sep 9 03:00:25 2024 +0800|fix typo
+6be0cc51|vernesong|Tue Sep 3 09:37:23 2024 +0800|0.46.024
+bbf4e46b|vernesong|Tue Sep 3 09:37:09 2024 +0800|chore: refine
+62be2bd4|vernesong|Tue Sep 3 09:18:00 2024 +0800|0.46.023
+2317fd2e|zxl hhyccc|Tue Sep 3 09:13:17 2024 +0800|add 'fake-ip-filter-mode' in 'dns' (#4011)
+8d2694cb|vernesong|Wed Aug 28 21:30:07 2024 +0800|0.46.022
+65351b0d|vernesong|Wed Aug 28 21:17:49 2024 +0800|chore: remove stream prefetch and block google dns
+85ab52cd|vernesong|Wed Aug 28 20:30:47 2024 +0800|chore: refine
+1f9ce9d2|vernesong|Wed Aug 28 20:11:48 2024 +0800|0.46.021
+88977ba7|vernesong|Wed Aug 28 20:01:13 2024 +0800|chore: use geosite in fake-ip-filter for china ip bypass
+d7976973|vernesong|Tue Aug 27 23:40:58 2024 +0800|chore: refine ipv6
+98170a6d|vernesong|Tue Aug 27 11:46:27 2024 +0800|fix typo
+137976c5|vernesong|Mon Aug 26 20:34:40 2024 +0800|fix typo
+b57b0f0a|vernesong|Mon Aug 26 18:33:26 2024 +0800|#4003
+76f3c5d2|missing233|Mon Aug 26 18:17:39 2024 +0900|myip: Add tooltip to display full IP address on hover (#3997)
+6a1f894b|vernesong|Tue Aug 20 23:00:42 2024 +0800|0.46.020
+00505681|vernesong|Tue Aug 20 23:00:19 2024 +0800|fix typo
+5189caba|vernesong|Tue Aug 20 22:37:09 2024 +0800|0.46.019
+9b7b1ff0|vernesong|Tue Aug 20 22:34:50 2024 +0800|chore: remove dev&tun core support
+6824bbb0|vernesong|Tue Aug 20 19:05:13 2024 +0800|chore: remove ebpf because core not support anymore
+0a5cbd0f|vernesong|Tue Aug 20 18:49:07 2024 +0800|#3973
+5c32c60e|airwish|Mon Aug 19 09:55:08 2024 +0800|fix: Handle single-quote syntax in game rules list (#3992)
+a3c2e92d|vernesong|Sat Aug 17 01:26:16 2024 +0800|#3980
+e0fe8da0|vernesong|Sat Aug 17 01:21:05 2024 +0800|workflow: update
+4a717f1f|airwish|Sat Aug 17 01:11:41 2024 +0800|update game rules list (#3987)
+7465c42a|vernesong|Sat Aug 17 00:54:39 2024 +0800|Merge branch 'dev' of https://github.com/vernesong/OpenClash into dev
+6de24e7e|vernesong|Sat Aug 17 00:54:20 2024 +0800|chore: update metacubexd
+ed13ca48|LovinYarn|Sat Aug 17 00:52:03 2024 +0800|Fix Metacubexd Control Panel link (#3982)
+a14b1577|vernesong|Fri Aug 16 15:50:03 2024 +0800|0.46.018
+2621257b|vernesong|Fri Aug 16 15:48:10 2024 +0800|fix typo
+0ee14398|vernesong|Fri Aug 16 12:30:12 2024 +0800|0.46.017
+231cfa03|vernesong|Fri Aug 16 12:16:42 2024 +0800|chore: refine
+bd9c8178|missing233|Fri Aug 16 11:40:18 2024 +0900|China IP Route: add bypass overseas (#3970)
+e104464b|EternalARK|Fri Aug 16 10:10:10 2024 +0800|Enable eBPF support. (#3893)
+4d6f52c1|sqliuchang|Fri Aug 16 10:05:45 2024 +0800|fix(init):fix typo (#3959)
+9ee21835|VMatrices|Thu Jul 4 17:41:13 2024 +0800|Add custom parameters for online subscription conversion (#3945)
+afba30cd|vernesong|Wed Jun 26 19:18:36 2024 +0800|chore: refine
+21c012b0|snachx|Tue Jun 25 21:46:54 2024 +0800|fix typo (#3935)
+f2a50252|vernesong|Mon Jun 17 02:50:24 2024 +0800|0.46.016
+af6c3c6b|vernesong|Mon Jun 17 02:49:40 2024 +0800|fix typo
+3b26b3ae|vernesong|Sun Jun 16 21:55:02 2024 +0800|0.46.015
+cf88e9f1|vernesong|Sun Jun 16 21:54:16 2024 +0800|fix ipv6 rules #3919
+8019c63e|vernesong|Mon Jun 10 16:43:57 2024 +0800|chore: delete ConnersHua rules
+dd5e07d8|vernesong|Mon Jun 10 10:48:13 2024 +0800|Merge branch 'dev'
+5c6b112a|vernesong|Mon Jun 10 10:48:13 2024 +0800|Merge branch 'dev'
+9da96866|vernesong|Mon Jun 10 10:45:58 2024 +0800|0.46.014
+50ef8b8b|vernesong|Mon Jun 10 10:45:58 2024 +0800|0.46.014
+e082e940|vernesong|Mon Jun 10 10:45:12 2024 +0800|chore: refine
+cd8a0107|vernesong|Mon Jun 10 10:45:12 2024 +0800|chore: refine
+360bf148|vernesong|Mon Jun 10 10:12:22 2024 +0800|fix error
+e31b87c1|vernesong|Mon Jun 10 10:12:22 2024 +0800|fix error
+34528234|vernesong|Mon Jun 10 09:53:37 2024 +0800|chore: refine
+4359f3d7|vernesong|Mon Jun 10 09:53:37 2024 +0800|chore: refine
+c9f3c55d|vernesong|Sat Jun 1 15:54:13 2024 +0800|chore: refine
+6f8233ec|vernesong|Sat Jun 1 15:54:13 2024 +0800|chore: refine
+8a5b2139|vernesong|Fri May 31 10:59:28 2024 +0800|0.46.013
+2513ee1b|vernesong|Fri May 31 10:59:28 2024 +0800|0.46.013
+dcfbbe5d|vernesong|Fri May 31 10:56:20 2024 +0800|fix typo
+3a5506fb|vernesong|Fri May 31 10:56:20 2024 +0800|fix typo
+c7416390|vernesong|Thu May 23 18:55:16 2024 +0800|0.46.012
+f55578f7|vernesong|Thu May 23 18:55:16 2024 +0800|0.46.012
+8822b37a|vernesong|Thu May 23 18:54:48 2024 +0800|chore: update rules
+932d8dd7|vernesong|Thu May 23 18:54:48 2024 +0800|chore: update rules
+00f93ce7|vernesong|Thu May 23 18:52:06 2024 +0800|chore: fix error
+11d776ef|vernesong|Thu May 23 18:52:06 2024 +0800|chore: fix error
+6abe0af2|vernesong|Mon May 20 16:15:39 2024 +0800|chore: retry for ipk update
+d9c67099|vernesong|Mon May 20 16:15:39 2024 +0800|chore: retry for ipk update
+ea873cee|vernesong|Mon May 20 11:26:04 2024 +0800|chore: fix typo
+ba9d8eb9|vernesong|Mon May 20 11:26:04 2024 +0800|chore: fix typo
+d0141ee1|vernesong|Sat May 18 19:57:12 2024 +0800|Merge branch 'dev'
+a3453f81|vernesong|Sat May 18 19:57:12 2024 +0800|Merge branch 'dev'
+60f94c05|vernesong|Sat May 18 19:41:07 2024 +0800|0.46.011
+759306e2|vernesong|Sat May 18 19:41:07 2024 +0800|0.46.011
+f2f962fb|vernesong|Sat May 18 19:13:29 2024 +0800|chore: refine
+80146d1b|vernesong|Sat May 18 19:13:29 2024 +0800|chore: refine
+19b0cad0|vernesong|Sun May 5 21:02:28 2024 +0800|0.46.010
+062ddd15|vernesong|Sun May 5 21:02:28 2024 +0800|0.46.010
+43206948|vernesong|Sun May 5 21:01:46 2024 +0800|fix typo
+346d82d2|vernesong|Sun May 5 21:01:46 2024 +0800|fix typo
+0d6324fc|vernesong|Sun May 5 21:01:27 2024 +0800|fix typo
+c5fbc161|vernesong|Sun May 5 21:01:27 2024 +0800|fix typo
+17bf62c9|vernesong|Sun May 5 20:44:47 2024 +0800|0.46.009
+57a4db53|vernesong|Sun May 5 20:44:47 2024 +0800|0.46.009
+69ef32b5|vernesong|Sun May 5 20:43:45 2024 +0800|chore: add cdn select window for download
+29109b33|vernesong|Sun May 5 20:43:45 2024 +0800|chore: add cdn select window for download
+bd310dd2|shendageasw|Sun May 5 02:11:32 2024 +0800|config: readjust the fallback group (#3872)
+baddc425|shendageasw|Sun May 5 02:11:32 2024 +0800|config: readjust the fallback group (#3872)
+5bfd5779|vernesong|Wed May 1 18:14:12 2024 +0800|fix typo
+e26adde4|vernesong|Wed May 1 18:14:12 2024 +0800|fix typo
+cf1f8fba|vernesong|Tue Apr 30 02:19:06 2024 +0800|0.46.008
+7256d89a|vernesong|Tue Apr 30 02:19:06 2024 +0800|0.46.008
+8ac4105a|vernesong|Tue Apr 30 02:15:41 2024 +0800|chore: #3863
+dc144195|vernesong|Tue Apr 30 02:15:41 2024 +0800|chore: #3863
+b123a21f|vernesong|Sun Apr 28 16:10:53 2024 +0800|chore: refine
+e9575929|vernesong|Sun Apr 28 16:10:53 2024 +0800|chore: refine
+7860bc9f|zxlhhyccc|Sat Apr 20 07:04:51 2024 +0800|Fixed an issue with the official latest master branch not working. (#3853)
+c0cd0f19|zxlhhyccc|Sat Apr 20 07:04:51 2024 +0800|Fixed an issue with the official latest master branch not working. (#3853)
+2e74338f|vernesong|Mon Apr 15 07:57:01 2024 +0800|0.46.007
+5f0a7c03|vernesong|Mon Apr 15 07:57:01 2024 +0800|0.46.007
+3ac54389|vernesong|Mon Apr 15 07:56:46 2024 +0800|chore: refine
+a7281cb2|vernesong|Mon Apr 15 07:56:46 2024 +0800|chore: refine
+5648296a|vernesong|Sat Apr 13 18:35:15 2024 +0800|chore: refine ip result
+f8ddf1ec|vernesong|Sat Apr 13 18:35:15 2024 +0800|chore: refine ip result
+316165d2|vernesong|Wed Apr 10 10:40:37 2024 +0800|fix typo
+e110c069|vernesong|Wed Apr 10 10:40:37 2024 +0800|fix typo
+7b714354|vernesong|Tue Apr 9 23:24:37 2024 +0800|0.46.006
+3d554272|vernesong|Tue Apr 9 23:24:37 2024 +0800|0.46.006
+e347c6cd|vernesong|Tue Apr 9 22:32:39 2024 +0800|workflow: refine
+316e979c|vernesong|Tue Apr 9 22:32:39 2024 +0800|workflow: refine
+fe323d69|vernesong|Tue Apr 9 15:31:19 2024 +0800|workflow: fix error
+97859669|vernesong|Tue Apr 9 15:31:19 2024 +0800|workflow: fix error
+225bb557|vernesong|Tue Apr 9 15:27:32 2024 +0800|workflow: test
+3c4a0f70|vernesong|Tue Apr 9 15:27:32 2024 +0800|workflow: test
+2540c210|vernesong|Tue Apr 9 14:35:38 2024 +0800|workflow: fix typo
+19fe6f62|vernesong|Tue Apr 9 14:35:38 2024 +0800|workflow: fix typo
+139ffd7a|vernesong|Tue Apr 9 06:36:28 2024 +0800|workflow: refine
+ceb0b863|vernesong|Tue Apr 9 06:36:28 2024 +0800|workflow: refine
+abebc5b3|vernesong|Tue Apr 9 06:26:28 2024 +0800|workflow: meta
+1d2016ff|vernesong|Tue Apr 9 06:26:28 2024 +0800|workflow: meta
+17806b56|vernesong|Tue Apr 9 05:50:42 2024 +0800|chore: #3834
+e95e72c6|vernesong|Tue Apr 9 05:50:42 2024 +0800|chore: #3834
+38495988|vernesong|Fri Mar 22 10:37:57 2024 +0800|chore: refine
+266be0a0|vernesong|Fri Mar 22 10:37:57 2024 +0800|chore: refine
+6a443f21|vernesong|Fri Mar 22 10:25:10 2024 +0800|chore: refine
+c23f1391|vernesong|Fri Mar 22 10:25:10 2024 +0800|chore: refine
+e1b11d30|vernesong|Fri Mar 22 10:11:48 2024 +0800|fix #3816
+7b70f798|vernesong|Fri Mar 22 10:11:48 2024 +0800|fix #3816
+8aca4af4|vernesong|Tue Mar 19 19:23:51 2024 +0800|0.46.005
+6cd46b2e|vernesong|Tue Mar 19 19:23:51 2024 +0800|0.46.005
+4ef9e45c|vernesong|Tue Mar 19 18:16:47 2024 +0800|fix typo
+7c0009cd|vernesong|Tue Mar 19 18:16:47 2024 +0800|fix typo
+7aa61d07|vernesong|Mon Mar 18 22:25:22 2024 +0800|0.46.004
+fb323351|vernesong|Mon Mar 18 22:25:22 2024 +0800|0.46.004
+173460a5|zxlhhyccc|Mon Mar 18 22:10:28 2024 +0800|luci-app-openclash: Update translate (#3807)
+a6784690|zxlhhyccc|Mon Mar 18 22:10:28 2024 +0800|luci-app-openclash: Update translate (#3807)
+b7dbc55e|bcseputetto|Fri Mar 15 22:07:09 2024 +0800|fix add_utun_firewall_zone (#3802)
+f0c1cffa|bcseputetto|Fri Mar 15 22:07:09 2024 +0800|fix add_utun_firewall_zone (#3802)
+abffd6f5|snachx|Thu Mar 14 01:36:46 2024 +0800|IPv6 support for dns debugging and skip proxy address feature (#3801)
+fa1cc40f|snachx|Thu Mar 14 01:36:46 2024 +0800|IPv6 support for dns debugging and skip proxy address feature (#3801)
+b65333a6|zxlhhyccc|Mon Mar 11 14:06:36 2024 +0800|Fix the protocol that exists in the configuration file when the protocol is not configured. (#3794)
+b12c0167|zxlhhyccc|Mon Mar 11 14:06:36 2024 +0800|Fix the protocol that exists in the configuration file when the protocol is not configured. (#3794)
+d186af84|zxlhhyccc|Sun Mar 10 16:50:40 2024 +0800|add Port Hopping (#3792)
+b384325f|zxlhhyccc|Sun Mar 10 16:50:40 2024 +0800|add Port Hopping (#3792)
+8ebe09ee|vernesong|Sat Mar 9 12:29:50 2024 +0800|Merge branch 'dev'
+c6740aa1|vernesong|Sat Mar 9 12:29:50 2024 +0800|Merge branch 'dev'
+2a4a3aca|vernesong|Wed Mar 6 17:48:20 2024 +0800|workflow: fix error sdk address
+d8bcf91b|vernesong|Wed Mar 6 17:48:20 2024 +0800|workflow: fix error sdk address
+dfbf248b|vernesong|Wed Mar 6 17:42:54 2024 +0800|0.46.003
+b83d6981|vernesong|Wed Mar 6 17:42:54 2024 +0800|0.46.003
+633d20ed|vernesong|Wed Mar 6 17:42:27 2024 +0800|chore: refine
+ae3a9d0a|vernesong|Wed Mar 6 17:42:27 2024 +0800|chore: refine
+82f97fbf|vernesong|Tue Mar 5 14:40:07 2024 +0800|fix #3780
+1a10eb98|vernesong|Tue Mar 5 14:40:07 2024 +0800|fix #3780
+59331231|vernesong|Tue Feb 27 15:24:27 2024 +0800|chore: refine
+ba804a57|vernesong|Tue Feb 27 15:24:27 2024 +0800|chore: refine
+d7e9290a|vernesong|Tue Feb 27 15:09:47 2024 +0800|chore: #3771
+782c437f|vernesong|Tue Feb 27 15:09:47 2024 +0800|chore: #3771
+bd756e3d|vernesong|Tue Feb 27 14:47:57 2024 +0800|0.46.002
+7b31695b|vernesong|Tue Feb 27 14:47:57 2024 +0800|0.46.002
+5961c3b6|vernesong|Tue Feb 27 14:47:40 2024 +0800|chore: refine
+fea042ce|vernesong|Tue Feb 27 14:47:40 2024 +0800|chore: refine
+f3d2f725|forestL|Sun Feb 25 18:52:08 2024 +0800|fix:Disable the startup of the utun interface. (#3764)
+51d78c84|forestL|Sun Feb 25 18:52:08 2024 +0800|fix:Disable the startup of the utun interface. (#3764)
+dc3c9d96|vernesong|Sun Feb 25 18:49:41 2024 +0800|chore: #3768 #3763 #
+980d1ed7|vernesong|Sun Feb 25 18:49:41 2024 +0800|chore: #3768 #3763 #
+c38cb9ce|vernesong|Sat Feb 10 16:45:15 2024 +0800|Merge branch 'dev'
+b8533de6|vernesong|Sat Feb 10 16:45:15 2024 +0800|Merge branch 'dev'
+bc5380bf|vernesong|Sat Feb 10 16:32:50 2024 +0800|0.46.001
+bf4c4f4c|vernesong|Sat Feb 10 16:32:50 2024 +0800|0.46.001
+a8f18caa|vernesong|Sat Feb 10 16:28:17 2024 +0800|chore: refine
+207cc4e4|vernesong|Sat Feb 10 16:28:17 2024 +0800|chore: refine
+13bc8377|vernesong|Sat Feb 10 13:05:53 2024 +0800|chore: refine
+8f3ea6e2|vernesong|Sat Feb 10 13:05:53 2024 +0800|chore: refine
+12970862|vernesong|Fri Feb 9 16:23:39 2024 +0800|workflow: go 1.22
+a7563de1|vernesong|Fri Feb 9 16:23:39 2024 +0800|workflow: go 1.22
+2924f428|vernesong|Wed Feb 7 00:48:28 2024 +0800|0.45.167
+98b39c06|vernesong|Wed Feb 7 00:48:28 2024 +0800|0.45.167
+fe38c1df|vernesong|Wed Feb 7 00:44:16 2024 +0800|fix: ruby unexpected error
+c2569dd9|vernesong|Wed Feb 7 00:44:16 2024 +0800|fix: ruby unexpected error
+94f6d096|vernesong|Wed Feb 7 00:33:41 2024 +0800|chore: add meta check
+91888bdd|vernesong|Wed Feb 7 00:33:41 2024 +0800|chore: add meta check
+3c074b6c|vernesong|Tue Feb 6 22:19:56 2024 +0800|0.45.166
+85c3a7b2|vernesong|Tue Feb 6 22:19:56 2024 +0800|0.45.166
+b917c355|vernesong|Tue Feb 6 22:19:28 2024 +0800|chore: fix typo
+b393a945|vernesong|Tue Feb 6 22:19:28 2024 +0800|chore: fix typo
+f36a6448|vernesong|Tue Feb 6 22:05:12 2024 +0800|0.45.165
+04ac7de2|vernesong|Tue Feb 6 22:05:12 2024 +0800|0.45.165
+61561e93|vernesong|Tue Feb 6 22:04:38 2024 +0800|chore: add Fallback DNS Proxy Group option
+33f0a0c0|vernesong|Tue Feb 6 22:04:38 2024 +0800|chore: add Fallback DNS Proxy Group option
+fd357d53|vernesong|Mon Jan 22 12:17:41 2024 +0800|fix typo
+ec64649d|vernesong|Mon Jan 22 12:17:41 2024 +0800|fix typo
+1446b031|vernesong|Sat Jan 20 20:41:35 2024 +0800|chore: #3729
+dbedf409|vernesong|Sat Jan 20 20:41:35 2024 +0800|chore: #3729
+8ef49367|vernesong|Sat Jan 6 13:45:00 2024 +0800|chore: update fake filter list
+b4900619|vernesong|Sat Jan 6 13:45:00 2024 +0800|chore: update fake filter list
+b63ccfbd|Izumi|Fri Jan 5 08:12:24 2024 +0800|Update game_rules.list (#3712)
+00833c80|Izumi|Fri Jan 5 08:12:24 2024 +0800|Update game_rules.list (#3712)
+726ebbca|vernesong|Thu Jan 4 08:07:41 2024 +0800|0.45.164
+0515d04b|vernesong|Thu Jan 4 08:07:41 2024 +0800|0.45.164
+d6871c9f|vernesong|Thu Jan 4 08:06:39 2024 +0800|chore: fix typo
+aaaab0b8|vernesong|Thu Jan 4 08:06:39 2024 +0800|chore: fix typo
+1ac561f1|vernesong|Thu Jan 4 07:11:36 2024 +0800|0.45.163
+006ff765|vernesong|Thu Jan 4 07:11:36 2024 +0800|0.45.163
+4fbed307|vernesong|Thu Jan 4 07:10:59 2024 +0800|chore: refine
+cf91df17|vernesong|Thu Jan 4 07:10:59 2024 +0800|chore: refine
+605973b4|sangyishuje1123|Thu Jan 4 06:53:57 2024 +0800|整理并修改 ISSUE_TEMPLATE (#3697)
+141893fb|sangyishuje1123|Thu Jan 4 06:53:57 2024 +0800|整理并修改 ISSUE_TEMPLATE (#3697)
+cf717b67|vernesong|Thu Jan 4 06:30:05 2024 +0800|fix #3702
+374c628a|vernesong|Thu Jan 4 06:30:05 2024 +0800|fix #3702
+6027c39f|vernesong|Sun Dec 24 19:24:39 2023 +0800|chore: #3695
+41b564ac|vernesong|Sun Dec 24 19:24:39 2023 +0800|chore: #3695
+154d55e6|vernesong|Sun Dec 24 19:19:54 2023 +0800|chore: default dns overwrite
+dbfe8dff|vernesong|Sun Dec 24 19:19:54 2023 +0800|chore: default dns overwrite
+a52fe730|vernesong|Sat Dec 23 07:59:22 2023 +0800|0.45.162
+37d260cd|vernesong|Sat Dec 23 07:59:22 2023 +0800|0.45.162
+037c74fd|vernesong|Tue Dec 19 18:51:43 2023 +0800|chore: #3688
+c4333fb4|vernesong|Tue Dec 19 18:51:43 2023 +0800|chore: #3688
+20c5d14f|vernesong|Mon Dec 18 12:32:09 2023 +0800|chore: refine
+5e3902f9|vernesong|Mon Dec 18 12:32:09 2023 +0800|chore: refine
+76184faa|vernesong|Sun Dec 17 01:35:48 2023 +0800|0.45.161
+aad104e0|vernesong|Sun Dec 17 01:35:48 2023 +0800|0.45.161
+a6a755c4|vernesong|Sun Dec 17 01:34:34 2023 +0800|feat: skip proxies address
+cfd3c005|vernesong|Sun Dec 17 01:34:34 2023 +0800|feat: skip proxies address
+f9ae7661|vernesong|Sat Dec 16 18:23:14 2023 +0800|chore: refine
+e92d5531|vernesong|Sat Dec 16 18:23:14 2023 +0800|chore: refine
+ee8d7ce1|vernesong|Wed Dec 13 21:42:11 2023 +0800|0.45.160
+55a8ccfb|vernesong|Wed Dec 13 21:42:11 2023 +0800|0.45.160
+1b31834d|Simon Shi|Wed Dec 13 21:09:41 2023 +0800|feat: add mixed stack (#3599)
+ef5ce190|Simon Shi|Wed Dec 13 21:09:41 2023 +0800|feat: add mixed stack (#3599)
+40fbdbb4|vernesong|Wed Dec 13 20:50:46 2023 +0800|chore: refine subscribe code
+d7fd2a13|vernesong|Wed Dec 13 20:50:46 2023 +0800|chore: refine subscribe code
+52771c31|vernesong|Wed Dec 13 07:55:16 2023 +0800|workflow: revert
+12afbe84|vernesong|Wed Dec 13 07:55:16 2023 +0800|workflow: revert
+ee746c6b|vernesong|Sun Dec 10 02:18:48 2023 +0800|chore: #3661
+7eaf7a58|vernesong|Sun Dec 10 02:18:48 2023 +0800|chore: #3661
+ca5caf85|vernesong|Fri Dec 8 18:43:41 2023 +0800|chore: fix typo
+d3d219cd|vernesong|Fri Dec 8 18:43:41 2023 +0800|chore: fix typo
+5c71e813|vernesong|Fri Dec 8 17:33:23 2023 +0800|chore: refine
+2c800e32|vernesong|Fri Dec 8 17:33:23 2023 +0800|chore: refine
+967f6cb0|vernesong|Fri Dec 8 17:07:42 2023 +0800|0.45.159
+f8c11eef|vernesong|Fri Dec 8 17:07:42 2023 +0800|0.45.159
+7433e7b8|vernesong|Fri Dec 8 17:06:57 2023 +0800|chore: refine
+b49a0c4a|vernesong|Fri Dec 8 17:06:57 2023 +0800|chore: refine
+d3b696a7|vernesong|Thu Dec 7 20:16:23 2023 +0800|0.45.158
+53832ed5|vernesong|Thu Dec 7 20:16:23 2023 +0800|0.45.158
+c8c19e6b|vernesong|Thu Dec 7 20:10:56 2023 +0800|fix typo
+d8072dcb|vernesong|Thu Dec 7 20:10:56 2023 +0800|fix typo
+1b65303e|vernesong|Thu Dec 7 19:49:25 2023 +0800|chore: disable core log color
+d135fed2|vernesong|Thu Dec 7 19:49:25 2023 +0800|chore: disable core log color
+8baba8e0|vernesong|Thu Dec 7 19:43:57 2023 +0800|fix typo
+c5c2f40d|vernesong|Thu Dec 7 19:43:57 2023 +0800|fix typo
+b1599d26|vernesong|Sat Dec 2 14:17:00 2023 +0800|0.45.157
+bc8e8c3e|vernesong|Sat Dec 2 14:17:00 2023 +0800|0.45.157
+1891cc65|vernesong|Sat Dec 2 14:16:36 2023 +0800|fix typo
+d2884b2b|vernesong|Sat Dec 2 14:16:36 2023 +0800|fix typo
+a646b474|vernesong|Sat Dec 2 13:58:46 2023 +0800|0.45.156
+555b16b8|vernesong|Sat Dec 2 13:58:46 2023 +0800|0.45.156
+b8522e33|vernesong|Sat Dec 2 13:58:20 2023 +0800|chore: refine
+13fa41c2|vernesong|Sat Dec 2 13:58:20 2023 +0800|chore: refine
+cb76e2f3|vernesong|Sat Dec 2 13:06:39 2023 +0800|chore: random Dashboard secret
+1617eeab|vernesong|Sat Dec 2 13:06:39 2023 +0800|chore: random Dashboard secret
+2ce83cf6|vernesong|Sat Dec 2 12:49:31 2023 +0800|chore: loop firewall reload
+7daaa181|vernesong|Sat Dec 2 12:49:31 2023 +0800|chore: loop firewall reload
+3b60e266|Yu Xin|Fri Dec 1 18:26:48 2023 +0800|update core repo (#3636)
+70f0323c|Yu Xin|Fri Dec 1 18:26:48 2023 +0800|update core repo (#3636)
+a06c32ff|vernesong|Fri Dec 1 18:25:53 2023 +0800|chore: refine
+a1458600|vernesong|Fri Dec 1 18:25:53 2023 +0800|chore: refine
+885163e7|vernesong|Sun Nov 26 16:37:08 2023 +0800|0.45.155
+e1fb7b2c|vernesong|Sun Nov 26 16:37:08 2023 +0800|0.45.155
+0ce45df0|vernesong|Sun Nov 26 16:05:59 2023 +0800|chore: fix typo
+f7744a23|vernesong|Sun Nov 26 16:05:59 2023 +0800|chore: fix typo
+d80bc21a|vernesong|Sat Nov 25 11:56:04 2023 +0800|0.45.154
+1bfc634a|vernesong|Sat Nov 25 11:56:04 2023 +0800|0.45.154
+803da0df|Tdssed|Sat Nov 25 11:09:38 2023 +0800|Fix (#3609)
+e0f67e7e|Tdssed|Sat Nov 25 11:09:38 2023 +0800|Fix (#3609)
+24ee8bdc|vernesong|Sat Nov 25 11:04:57 2023 +0800|chore: fix typo
+2150e7d8|vernesong|Sat Nov 25 11:04:57 2023 +0800|chore: fix typo
+904efc52|vernesong|Sat Nov 25 10:42:42 2023 +0800|fix #3625
+188f9c12|vernesong|Sat Nov 25 10:42:42 2023 +0800|fix #3625
+a59342b7|vernesong|Sat Nov 25 10:14:54 2023 +0800|chore: #3621
+90b4ee75|vernesong|Sat Nov 25 10:14:54 2023 +0800|chore: #3621
+9ad7b0b4|vernesong|Tue Nov 21 12:08:48 2023 +0800|0.45.153
+107d1778|vernesong|Tue Nov 21 12:08:48 2023 +0800|0.45.153
+0f18a774|vernesong|Tue Nov 21 12:07:15 2023 +0800|fix #3610
+4c05c5a1|vernesong|Tue Nov 21 12:07:15 2023 +0800|fix #3610
+38035ef6|vernesong|Sun Nov 19 13:19:51 2023 +0800|0.45.152
+ef2b3645|vernesong|Sun Nov 19 13:19:51 2023 +0800|0.45.152
+2b940467|vernesong|Sun Nov 19 13:19:14 2023 +0800|chore: refine
+6c9f2818|vernesong|Sun Nov 19 13:19:14 2023 +0800|chore: refine
+d5d13034|vernesong|Sun Nov 19 10:46:38 2023 +0800|chore: remove osdn files download address
+87c20ed2|vernesong|Sun Nov 19 10:46:38 2023 +0800|chore: remove osdn files download address
+81d37a53|zxlhhyccc|Fri Nov 10 20:10:18 2023 +0800|chore:  fix typo (#3598)
+8f5a317b|zxlhhyccc|Fri Nov 10 20:10:18 2023 +0800|chore:  fix typo (#3598)
+ef7188c2|vernesong|Sun Nov 5 21:47:12 2023 +0800|chore: refine
+8eecd922|vernesong|Sun Nov 5 21:47:12 2023 +0800|chore: refine
+f369ebce|vernesong|Sat Nov 4 23:56:16 2023 +0800|0.45.151
+41c3cf3d|vernesong|Sat Nov 4 23:56:16 2023 +0800|0.45.151
+29579857|vernesong|Sat Nov 4 23:54:11 2023 +0800|fix #3592
+e5a794f4|vernesong|Sat Nov 4 23:54:11 2023 +0800|fix #3592
+e1410224|vernesong|Sat Nov 4 00:34:19 2023 +0800|0.45.150
+79a071c9|vernesong|Sat Nov 4 00:34:19 2023 +0800|0.45.150
+74d09ec0|vernesong|Sat Nov 4 00:33:20 2023 +0800|chore: fix upnp exclude rules
+9f969fa1|vernesong|Sat Nov 4 00:33:20 2023 +0800|chore: fix upnp exclude rules
+c8ef45d2|vernesong|Fri Nov 3 21:56:01 2023 +0800|chore: refine
+2c9ba2e0|vernesong|Fri Nov 3 21:56:01 2023 +0800|chore: refine
+fddb8edc|vernesong|Thu Oct 26 05:46:53 2023 +0800|fix #3576
+36deaf63|vernesong|Thu Oct 26 05:46:53 2023 +0800|fix #3576
+c0d664bc|vernesong|Sun Oct 8 23:09:22 2023 +0800|0.45.149
+a0f67e10|vernesong|Sun Oct 8 23:09:22 2023 +0800|0.45.149
+17b9b081|vernesong|Sun Oct 8 22:55:01 2023 +0800|0.45.148
+d9c24b57|vernesong|Sun Oct 8 22:55:01 2023 +0800|0.45.148
+59a6bf09|vernesong|Sun Oct 8 22:53:48 2023 +0800|chore: add metacubexd
+1572f9a5|vernesong|Sun Oct 8 22:53:48 2023 +0800|chore: add metacubexd
+dd4471a6|vernesong|Thu Oct 5 21:22:10 2023 +0800|0.45.147
+a497a9e6|vernesong|Thu Oct 5 21:22:10 2023 +0800|0.45.147
+e7d7f662|vernesong|Thu Oct 5 21:21:44 2023 +0800|fix: add utun device name
+1831cc11|vernesong|Thu Oct 5 21:21:44 2023 +0800|fix: add utun device name
+6e184503|vernesong|Thu Oct 5 20:23:29 2023 +0800|fix typo
+0854f9b3|vernesong|Thu Oct 5 20:23:29 2023 +0800|fix typo
+585bbbfa|zxlhhyccc|Thu Oct 5 20:17:59 2023 +0800|feat：Fixed an issue where configuration files could not be updated because UA could not be read (#3545)
+eca814c7|zxlhhyccc|Thu Oct 5 20:17:59 2023 +0800|feat：Fixed an issue where configuration files could not be updated because UA could not be read (#3545)
+494abfd3|vernesong|Thu Oct 5 02:19:12 2023 +0800|0.45.146
+577df4c8|vernesong|Thu Oct 5 02:19:12 2023 +0800|0.45.146
+10bfd685|vernesong|Thu Oct 5 02:18:40 2023 +0800|fix typo
+47150c36|vernesong|Thu Oct 5 02:18:40 2023 +0800|fix typo
+61a4ad8b|vernesong|Mon Oct 2 23:06:36 2023 +0800|0.45.145
+29d7cb3a|vernesong|Mon Oct 2 23:06:36 2023 +0800|0.45.145
+6ab0c4b0|vernesong|Mon Oct 2 21:53:21 2023 +0800|chore: add hysteria2
+1adc3a40|vernesong|Mon Oct 2 21:53:21 2023 +0800|chore: add hysteria2
+e110ac0b|vernesong|Mon Oct 2 21:26:32 2023 +0800|chore: refine
+cf03c69c|vernesong|Mon Oct 2 21:26:32 2023 +0800|chore: refine
+8c808c02|vernesong|Mon Oct 2 18:47:18 2023 +0800|fix: not reload network for utun
+55df1d4f|vernesong|Mon Oct 2 18:47:18 2023 +0800|fix: not reload network for utun
+e2f2ba84|vernesong|Mon Oct 2 03:59:56 2023 +0800|0.45.144
+c230fc2b|vernesong|Mon Oct 2 03:59:56 2023 +0800|0.45.144
+4d8ceecf|vernesong|Mon Oct 2 03:18:58 2023 +0800|chore: add user-agent custom option for subscribe
+1e1bda6f|vernesong|Mon Oct 2 03:18:58 2023 +0800|chore: add user-agent custom option for subscribe
+7d4f72a8|vernesong|Mon Oct 2 02:43:09 2023 +0800|chore: refine
+11ddc22b|vernesong|Mon Oct 2 02:43:09 2023 +0800|chore: refine
+65edb0b6|vernesong|Fri Sep 29 00:11:42 2023 +0800|fix: firewall rules not loaded
+7ce02bd4|vernesong|Fri Sep 29 00:11:42 2023 +0800|fix: firewall rules not loaded
+170fe040|vernesong|Thu Sep 28 23:20:03 2023 +0800|0.45.142
+4e3a06b2|vernesong|Thu Sep 28 23:20:03 2023 +0800|0.45.142
+6a718b85|vernesong|Thu Sep 28 23:19:38 2023 +0800|chore：add keep-alive-interval option for meta
+e6bc9ab3|vernesong|Thu Sep 28 23:19:38 2023 +0800|chore：add keep-alive-interval option for meta
+153ca9da|vernesong|Thu Sep 28 22:31:43 2023 +0800|chore: improve tun mode nat type
+cf9d7877|vernesong|Thu Sep 28 22:31:43 2023 +0800|chore: improve tun mode nat type
+979338e7|vernesong|Tue Aug 22 19:01:30 2023 +0800|0.45.141
+f0838b12|vernesong|Tue Aug 22 19:01:30 2023 +0800|0.45.141
+ef39eaa9|vernesong|Tue Aug 22 18:56:26 2023 +0800|Merge branch 'master' into dev
+62ac6e2c|vernesong|Tue Aug 22 18:56:26 2023 +0800|Merge branch 'master' into dev
+3c405185|Kai Yang|Tue Aug 22 18:48:52 2023 +0800|Fix firewall rules. Limit some chains to IPv4 only. (#3469)
+05fa7bc8|Kai Yang|Tue Aug 22 18:48:52 2023 +0800|Fix firewall rules. Limit some chains to IPv4 only. (#3469)
+43b4ff2e|vernesong|Thu Aug 17 09:23:01 2023 +0800|workflow: go 1.21
+4aeafd96|vernesong|Thu Aug 17 09:23:01 2023 +0800|workflow: go 1.21
+3cad8bbd|vernesong|Tue Aug 15 15:30:23 2023 +0800|chore: #3431
+a0e4e85e|vernesong|Tue Aug 15 15:30:23 2023 +0800|chore: #3431
+3e29a461|vernesong|Tue Aug 15 11:56:58 2023 +0800|0.45.140
+892c3647|vernesong|Tue Aug 15 11:56:58 2023 +0800|0.45.140
+ea2c9238|vernesong|Tue Aug 15 11:45:43 2023 +0800|chore: update rules
+506a6b8e|vernesong|Tue Aug 15 11:45:43 2023 +0800|chore: update rules
+50d741da|vernesong|Sun Aug 6 16:09:29 2023 +0800|Chore: global ipv6 could affect dns ipv6
+04805108|vernesong|Sun Aug 6 16:09:29 2023 +0800|Chore: global ipv6 could affect dns ipv6
+66bfd146|Doctor-Z|Sun Aug 6 15:30:54 2023 +0800|Update game_rules.list (#3442)
+6866dbab|Doctor-Z|Sun Aug 6 15:30:54 2023 +0800|Update game_rules.list (#3442)
+b1d32c1e|vernesong|Sun Aug 6 13:08:10 2023 +0800|0.45.139
+81c5928a|vernesong|Sun Aug 6 13:08:10 2023 +0800|0.45.139
+171353f3|vernesong|Sun Aug 6 04:27:31 2023 +0800|0.45.138
+5530abce|vernesong|Sun Aug 6 04:27:31 2023 +0800|0.45.138
+2e10fe83|vernesong|Sun Aug 6 03:57:47 2023 +0800|0.45.137
+4613aee3|vernesong|Sun Aug 6 03:57:47 2023 +0800|0.45.137
+1d156eb5|vernesong|Sun Aug 6 03:57:13 2023 +0800|chore: refine
+4fc47cff|vernesong|Sun Aug 6 03:57:13 2023 +0800|chore: refine
+e9a00203|vernesong|Fri Aug 4 10:29:29 2023 +0800|chore: refine
+cbe7f52b|vernesong|Fri Aug 4 10:29:29 2023 +0800|chore: refine
+46fd97e3|vernesong|Thu Aug 3 16:37:43 2023 +0800|chore: update lhie1 rules
+0baedc69|vernesong|Thu Aug 3 16:37:43 2023 +0800|chore: update lhie1 rules
+63bde968|vernesong|Thu Aug 3 14:31:04 2023 +0800|0.45.136
+61224861|vernesong|Thu Aug 3 14:31:04 2023 +0800|0.45.136
+7abae2af|vernesong|Thu Aug 3 14:17:19 2023 +0800|fix #3431
+d527f191|vernesong|Thu Aug 3 14:17:19 2023 +0800|fix #3431
+e6ff99c2|vernesong|Thu Aug 3 11:25:35 2023 +0800|0.45.135
+19224aa4|vernesong|Thu Aug 3 11:25:35 2023 +0800|0.45.135
+31ab3323|vernesong|Thu Aug 3 11:19:19 2023 +0800|0.45.134
+1ec52795|vernesong|Thu Aug 3 11:19:19 2023 +0800|0.45.134
+a6431260|vernesong|Thu Aug 3 11:19:05 2023 +0800|fix other rules error
+05c5ecb4|vernesong|Thu Aug 3 11:19:05 2023 +0800|fix other rules error
+c227071c|vernesong|Tue Jul 25 19:46:00 2023 +0800|chore: refine
+59f0079d|vernesong|Tue Jul 25 19:46:00 2023 +0800|chore: refine
+eee75a04|vernesong|Mon Jul 24 02:08:06 2023 +0800|fix typo
+23672d59|vernesong|Mon Jul 24 02:08:06 2023 +0800|fix typo
+b82f2fec|github-actions[bot]|Sun Jul 23 16:57:02 2023 +0000|Auto Release: v0.45.133-beta
+e7b49bc2|github-actions[bot]|Sun Jul 23 16:57:02 2023 +0000|Auto Release: v0.45.133-beta
+aa798712|vernesong|Mon Jul 24 00:56:05 2023 +0800|0.45.133
+ace90a6c|vernesong|Mon Jul 24 00:56:05 2023 +0800|0.45.133
+4364c6fb|vernesong|Mon Jul 24 00:55:34 2023 +0800|fix: error enhanced-mode when config test
+80fa9c4b|vernesong|Mon Jul 24 00:55:34 2023 +0800|fix: error enhanced-mode when config test
+88992263|vernesong|Sun Jul 23 21:03:00 2023 +0800|chore: refine
+bc6a243e|vernesong|Sun Jul 23 21:03:00 2023 +0800|chore: refine
+b258624c|vernesong|Sat Jul 22 08:54:43 2023 +0800|chore: refine
+c0d7d6fa|vernesong|Sat Jul 22 08:54:43 2023 +0800|chore: refine
+3a7d2def|vernesong|Sat Jul 22 08:47:55 2023 +0800|chore: add some doh dns services for fallback default
+4a4d224b|vernesong|Sat Jul 22 08:47:55 2023 +0800|chore: add some doh dns services for fallback default
+7c91f251|vernesong|Mon Jul 17 21:16:32 2023 +0800|chore: add services.googleapis.cn for excluding effectting by china ip bypass
+fe3d6196|vernesong|Mon Jul 17 21:16:32 2023 +0800|chore: add services.googleapis.cn for excluding effectting by china ip bypass
+75d68301|github-actions[bot]|Sat Jul 15 18:00:26 2023 +0000|Auto Release: v0.45.132-beta
+8ec6028b|github-actions[bot]|Sat Jul 15 18:00:26 2023 +0000|Auto Release: v0.45.132-beta
+3440e43b|vernesong|Sun Jul 16 01:59:11 2023 +0800|0.45.132
+b940fe2d|vernesong|Sun Jul 16 01:59:11 2023 +0800|0.45.132
+ef9988a5|vernesong|Sun Jul 16 01:58:41 2023 +0800|chore: add unified-delay option for meta
+41a62df2|vernesong|Sun Jul 16 01:58:41 2023 +0800|chore: add unified-delay option for meta
+bd68c2c6|github-actions[bot]|Sat Jul 15 16:20:45 2023 +0000|Auto Release: v0.45.131-beta
+e5ed847a|github-actions[bot]|Sat Jul 15 16:20:45 2023 +0000|Auto Release: v0.45.131-beta
+ddc84217|vernesong|Sun Jul 16 00:19:42 2023 +0800|0.45.131
+5df2423e|vernesong|Sun Jul 16 00:19:42 2023 +0800|0.45.131
+4d99167c|vernesong|Sun Jul 16 00:12:44 2023 +0800|chore: refine && update rule
+29ec2fc3|vernesong|Sun Jul 16 00:12:44 2023 +0800|chore: refine && update rule
+db4fde01|github-actions[bot]|Mon Jul 10 14:59:51 2023 +0000|Auto Release: v0.45.130-beta
+86766d14|github-actions[bot]|Mon Jul 10 14:59:51 2023 +0000|Auto Release: v0.45.130-beta
+14a195e4|vernesong|Mon Jul 10 22:58:50 2023 +0800|0.45.130
+1f44cd4d|vernesong|Mon Jul 10 22:58:50 2023 +0800|0.45.130
+ddf5b6ce|vernesong|Mon Jul 10 22:57:16 2023 +0800|chore: refine
+a4bbb0c2|vernesong|Mon Jul 10 22:57:16 2023 +0800|chore: refine
+e9ef4c3a|vernesong|Mon Jul 10 00:18:59 2023 +0800|chore: refine
+8fbbe16a|vernesong|Mon Jul 10 00:18:59 2023 +0800|chore: refine
+7d25dcb4|vernesong|Tue Jul 4 17:12:43 2023 +0800|chore: text color
+0f48f6fb|vernesong|Tue Jul 4 17:12:43 2023 +0800|chore: text color
+3952a3d4|github-actions[bot]|Tue Jul 4 08:37:40 2023 +0000|Auto Release: v0.45.129-beta
+1dd221dc|github-actions[bot]|Tue Jul 4 08:37:40 2023 +0000|Auto Release: v0.45.129-beta
+0918670a|vernesong|Tue Jul 4 16:36:42 2023 +0800|0.45.129
+03212abc|vernesong|Tue Jul 4 16:36:42 2023 +0800|0.45.129
+92fc4eca|vernesong|Tue Jul 4 16:17:34 2023 +0800|fix #3378
+eaf2b2b7|vernesong|Tue Jul 4 16:17:34 2023 +0800|fix #3378
+3ecef205|vernesong|Tue Jul 4 15:57:13 2023 +0800|fix #3380
+9d02dbf9|vernesong|Tue Jul 4 15:57:13 2023 +0800|fix #3380
+f6f2298d|Doctor-Z|Mon Jul 3 10:57:26 2023 +0800|Update game_rules.list (#3349)
+fe93b484|Doctor-Z|Mon Jul 3 10:57:26 2023 +0800|Update game_rules.list (#3349)
+e9089ae0|zxlhhyccc|Mon Jul 3 10:56:39 2023 +0800|luci-app-openclash: adapter luci-theme-openwrt-2020 theme (#3377)
+0ec6bb1f|zxlhhyccc|Mon Jul 3 10:56:39 2023 +0800|luci-app-openclash: adapter luci-theme-openwrt-2020 theme (#3377)
+84470d6c|github-actions[bot]|Sat Jul 1 17:08:45 2023 +0000|Auto Release: v0.45.128-beta
+308198ca|github-actions[bot]|Sat Jul 1 17:08:45 2023 +0000|Auto Release: v0.45.128-beta
+e5c20172|vernesong|Sun Jul 2 01:07:43 2023 +0800|0.45.128
+7e1d33ce|vernesong|Sun Jul 2 01:07:43 2023 +0800|0.45.128
+57bd6a5c|vernesong|Sun Jul 2 01:06:54 2023 +0800|fea: add support for custom proxy parameter
+6ca88a00|vernesong|Sun Jul 2 01:06:54 2023 +0800|fea: add support for custom proxy parameter
+22a5cc31|github-actions[bot]|Mon Jun 26 10:25:17 2023 +0000|Auto Release: v0.45.127-beta
+4ad088f6|github-actions[bot]|Mon Jun 26 10:25:17 2023 +0000|Auto Release: v0.45.127-beta
+858c6a52|vernesong|Mon Jun 26 18:24:06 2023 +0800|0.45.127
+d8300725|vernesong|Mon Jun 26 18:24:06 2023 +0800|0.45.127
+46b5b2fd|vernesong|Mon Jun 26 18:20:31 2023 +0800|fix：custom group regex typo
+0d391633|vernesong|Mon Jun 26 18:20:31 2023 +0800|fix：custom group regex typo
+df19f342|github-actions[bot]|Thu Jun 22 16:19:14 2023 +0000|Auto Release: v0.45.126-beta
+a7de4d56|github-actions[bot]|Thu Jun 22 16:19:14 2023 +0000|Auto Release: v0.45.126-beta
+e282d09a|vernesong|Fri Jun 23 00:17:58 2023 +0800|0.45.126
+948dc811|vernesong|Fri Jun 23 00:17:58 2023 +0800|0.45.126
+c6b755f7|vernesong|Fri Jun 23 00:10:35 2023 +0800|chore: refine
+d6b7dcdd|vernesong|Fri Jun 23 00:10:35 2023 +0800|chore: refine
+0adadbd8|vernesong|Thu Jun 22 23:11:40 2023 +0800|Merge branch 'dev' of https://github.com/vernesong/OpenClash into dev
+0af1302d|vernesong|Thu Jun 22 23:11:40 2023 +0800|Merge branch 'dev' of https://github.com/vernesong/OpenClash into dev
+8d9925d7|vernesong|Thu Jun 22 23:11:35 2023 +0800|chore: refine
+f13bdc89|vernesong|Thu Jun 22 23:11:35 2023 +0800|chore: refine
+5d92a830|github-actions[bot]|Wed Jun 21 18:42:13 2023 +0000|Auto Release: v0.45.125-beta
+9d54e4bb|github-actions[bot]|Wed Jun 21 18:42:13 2023 +0000|Auto Release: v0.45.125-beta
+79ebe5fb|vernesong|Thu Jun 22 02:41:06 2023 +0800|0.45.125
+9d8ee4bb|vernesong|Thu Jun 22 02:41:06 2023 +0800|0.45.125
+8f20b68e|vernesong|Thu Jun 22 02:40:41 2023 +0800|feature: #3344
+da703bd3|vernesong|Thu Jun 22 02:40:41 2023 +0800|feature: #3344
+620c97b0|vernesong|Thu Jun 22 01:55:28 2023 +0800|fix #3357
+09720de7|vernesong|Thu Jun 22 01:55:28 2023 +0800|fix #3357
+4d8e7620|vernesong|Thu Jun 22 01:32:27 2023 +0800|Merge branch 'dev' of https://github.com/vernesong/OpenClash into dev
+8e7016da|vernesong|Thu Jun 22 01:32:27 2023 +0800|Merge branch 'dev' of https://github.com/vernesong/OpenClash into dev
+d4993741|vernesong|Thu Jun 22 01:32:21 2023 +0800|fix #3354
+ae99862f|vernesong|Thu Jun 22 01:32:21 2023 +0800|fix #3354
+af7135c4|nick008a|Mon Jun 19 23:20:34 2023 +0800|fix #3348 (#3350)
+017f5c57|nick008a|Mon Jun 19 23:20:34 2023 +0800|fix #3348 (#3350)
+464cba12|vernesong|Mon Jun 12 00:04:40 2023 +0800|fix #3312
+5fa595c3|vernesong|Mon Jun 12 00:04:40 2023 +0800|fix #3312
+a444b3fc|vernesong|Wed Jun 7 23:01:38 2023 +0800|chore: refine #3315
+a89ee11d|vernesong|Wed Jun 7 23:01:38 2023 +0800|chore: refine #3315
+087224d7|github-actions[bot]|Tue Jun 6 18:51:07 2023 +0000|Auto Release: v0.45.124-beta
+4cd5aa66|github-actions[bot]|Tue Jun 6 18:51:07 2023 +0000|Auto Release: v0.45.124-beta
+07f3ccb7|vernesong|Wed Jun 7 02:50:12 2023 +0800|0.45.124
+b776c87c|vernesong|Wed Jun 7 02:50:12 2023 +0800|0.45.124
+4c52608c|vernesong|Wed Jun 7 02:49:53 2023 +0800|fix #3118
+0987089d|vernesong|Wed Jun 7 02:49:53 2023 +0800|fix #3118
+07f47eba|vernesong|Tue Jun 6 14:24:15 2023 +0800|fix #3316
+e1c4e418|vernesong|Tue Jun 6 14:24:15 2023 +0800|fix #3316
+49aac8ac|vernesong|Mon May 29 14:25:02 2023 +0800|fix #3306
+d46f18d8|vernesong|Mon May 29 14:25:02 2023 +0800|fix #3306
+270a4a1f|github-actions[bot]|Sun May 28 16:03:31 2023 +0000|Auto Release: v0.45.123-beta
+7c798135|github-actions[bot]|Sun May 28 16:03:31 2023 +0000|Auto Release: v0.45.123-beta
+3634d70d|vernesong|Mon May 29 00:02:33 2023 +0800|0.45.123
+b4ae2b54|vernesong|Mon May 29 00:02:33 2023 +0800|0.45.123
+e2ff0776|vernesong|Mon May 29 00:02:10 2023 +0800|chore: add config test for start and subscribe
+5cc6a852|vernesong|Mon May 29 00:02:10 2023 +0800|chore: add config test for start and subscribe
+92a5691d|LitoMore|Sun May 28 18:44:41 2023 +0800|fix: accessibility in dark mode (#3305)
+1cbc8651|LitoMore|Sun May 28 18:44:41 2023 +0800|fix: accessibility in dark mode (#3305)
+947d3ad6|github-actions[bot]|Sat May 27 09:53:29 2023 +0000|Auto Release: v0.45.122-beta
+2ca00ffe|github-actions[bot]|Sat May 27 09:53:29 2023 +0000|Auto Release: v0.45.122-beta
+21ac2d41|vernesong|Sat May 27 17:52:34 2023 +0800|0.45.122
+fe55e898|vernesong|Sat May 27 17:52:34 2023 +0800|0.45.122
+1a3754c6|vernesong|Sat May 27 17:51:58 2023 +0800|fix #3297
+ef2b0f00|vernesong|Sat May 27 17:51:58 2023 +0800|fix #3297
+9ee0f02e|Wey Gu|Sat May 27 09:34:56 2023 +0800|fix: #3296 bad indentation of smux (#3303)
+0c29a876|Wey Gu|Sat May 27 09:34:56 2023 +0800|fix: #3296 bad indentation of smux (#3303)
+40bc09df|github-actions[bot]|Thu May 18 14:26:22 2023 +0000|Auto Release: v0.45.121-beta
+4e8fae66|github-actions[bot]|Thu May 18 14:26:22 2023 +0000|Auto Release: v0.45.121-beta
+1a9d9b43|vernesong|Thu May 18 22:24:07 2023 +0800|0.45.121
+0a86698e|vernesong|Thu May 18 22:24:07 2023 +0800|0.45.121
+0e8684de|Silvan|Mon May 15 08:12:44 2023 +0800|fix: overwrite url-test interval not work (#3273)
+99bce418|Silvan|Mon May 15 08:12:44 2023 +0800|fix: overwrite url-test interval not work (#3273)
+64133442|github-actions[bot]|Fri May 12 11:47:58 2023 +0000|Auto Release: v0.45.120-beta
+bd4acff1|github-actions[bot]|Fri May 12 11:47:58 2023 +0000|Auto Release: v0.45.120-beta
+8283b1be|vernesong|Fri May 12 19:46:49 2023 +0800|0.45.120
+b748dbc3|vernesong|Fri May 12 19:46:49 2023 +0800|0.45.120
+2045a1d9|vernesong|Fri May 12 19:46:33 2023 +0800|chore: add format option for rule providers
+28ce55db|vernesong|Fri May 12 19:46:33 2023 +0800|chore: add format option for rule providers
+164e1c3a|vernesong|Fri May 12 19:12:03 2023 +0800|fix #3266
+7e14f1bc|vernesong|Fri May 12 19:12:03 2023 +0800|fix #3266
+51152394|vernesong|Wed May 10 09:22:20 2023 +0800|fix typo
+6c59e0f6|vernesong|Wed May 10 09:22:20 2023 +0800|fix typo
+ebe9f83f|vernesong|Tue May 9 12:09:36 2023 +0800|chore: refine
+c403c3db|vernesong|Tue May 9 12:09:36 2023 +0800|chore: refine
+20362bb5|github-actions[bot]|Thu May 4 12:07:41 2023 +0000|Auto Release: v0.45.119-beta
+104d8294|github-actions[bot]|Thu May 4 12:07:41 2023 +0000|Auto Release: v0.45.119-beta
+63ba79e5|vernesong|Thu May 4 14:46:01 2023 +0800|0.45.119
+7caec64a|vernesong|Thu May 4 14:46:01 2023 +0800|0.45.119
+6006da93|vernesong|Thu May 4 14:43:06 2023 +0800|Merge branch 'dev' of https://github.com/vernesong/OpenClash into dev
+eca0443c|vernesong|Thu May 4 14:43:06 2023 +0800|Merge branch 'dev' of https://github.com/vernesong/OpenClash into dev
+4e2e3fb9|vernesong|Thu May 4 14:43:02 2023 +0800|chore: typo
+02e420ec|vernesong|Thu May 4 14:43:02 2023 +0800|chore: typo
+0e85e3fc|github-actions[bot]|Thu May 4 01:09:16 2023 +0000|Auto Release: v0.45.118-beta
+63d9a222|github-actions[bot]|Thu May 4 01:09:16 2023 +0000|Auto Release: v0.45.118-beta
+12fee6cb|vernesong|Thu May 4 09:01:43 2023 +0800|0.45.118
+59d74080|vernesong|Thu May 4 09:01:43 2023 +0800|0.45.118
+a44e87f6|vernesong|Thu May 4 08:58:26 2023 +0800|chore: ipv6 localnetwork
+91c887ac|vernesong|Thu May 4 08:58:26 2023 +0800|chore: ipv6 localnetwork
+e28aeafd|github-actions[bot]|Tue May 2 16:00:13 2023 +0000|Auto Release: v0.45.117-beta
+5fa1adc5|github-actions[bot]|Tue May 2 16:00:13 2023 +0000|Auto Release: v0.45.117-beta
+2e39afca|vernesong|Tue May 2 23:58:55 2023 +0800|0.45.117
+db306fcc|vernesong|Tue May 2 23:58:55 2023 +0800|0.45.117
+939aa3d8|vernesong|Tue May 2 23:42:38 2023 +0800|chore: update dasnboard
+f9f481d3|vernesong|Tue May 2 23:42:38 2023 +0800|chore: update dasnboard
+d9228061|vernesong|Tue May 2 23:41:37 2023 +0800|chore: refine
+d4327a2a|vernesong|Tue May 2 23:41:37 2023 +0800|chore: refine
+4a503cd6|vernesong|Mon May 1 15:11:25 2023 +0800|chore: refine
+21972d95|vernesong|Mon May 1 15:11:25 2023 +0800|chore: refine
+53938cdb|github-actions[bot]|Sun Apr 30 10:36:51 2023 +0000|Auto Release: v0.45.116-beta
+71647f43|github-actions[bot]|Sun Apr 30 10:36:51 2023 +0000|Auto Release: v0.45.116-beta
+64721c39|vernesong|Sun Apr 30 18:35:50 2023 +0800|0.45.116
+bf96b4c6|vernesong|Sun Apr 30 18:35:50 2023 +0800|0.45.116
+de987520|vernesong|Sun Apr 30 18:35:33 2023 +0800|chore: refine
+05e50850|vernesong|Sun Apr 30 18:35:33 2023 +0800|chore: refine
+2d6ec209|github-actions[bot]|Fri Apr 28 05:56:12 2023 +0000|Auto Release: v0.45.115-beta
+13934139|github-actions[bot]|Fri Apr 28 05:56:12 2023 +0000|Auto Release: v0.45.115-beta
+7fc4c8ac|vernesong|Fri Apr 28 13:55:15 2023 +0800|0.45.115
+97aa41ee|vernesong|Fri Apr 28 13:55:15 2023 +0800|0.45.115
+1c12560f|vernesong|Fri Apr 28 13:54:57 2023 +0800|fix localnetwork default range #3079
+27a1418a|vernesong|Fri Apr 28 13:54:57 2023 +0800|fix localnetwork default range #3079
+f880b28d|vernesong|Fri Apr 28 13:11:12 2023 +0800|fix #3247 #3249 dnsmasq resolvfile option reset failed
+60d9ebcd|vernesong|Fri Apr 28 13:11:12 2023 +0800|fix #3247 #3249 dnsmasq resolvfile option reset failed
+516f3257|msylgj|Thu Apr 27 11:52:52 2023 +0800|fix(init): fix typo (#3241)
+bb0efc7d|msylgj|Thu Apr 27 11:52:52 2023 +0800|fix(init): fix typo (#3241)
+f4be9945|vernesong|Tue Apr 25 21:46:47 2023 +0800|chore: add multiplex option for meta core
+6e3eaff4|vernesong|Tue Apr 25 21:46:47 2023 +0800|chore: add multiplex option for meta core
+b8ab4d0d|github-actions[bot]|Sun Apr 23 13:19:13 2023 +0000|Auto Release: v0.45.114-beta
+043760e5|github-actions[bot]|Sun Apr 23 13:19:13 2023 +0000|Auto Release: v0.45.114-beta
+6da62fcd|vernesong|Sun Apr 23 21:18:17 2023 +0800|0.45.114
+9efdd308|vernesong|Sun Apr 23 21:18:17 2023 +0800|0.45.114
+b7074e22|vernesong|Sun Apr 23 21:07:29 2023 +0800|fix: #3195
+1847217f|vernesong|Sun Apr 23 21:07:29 2023 +0800|fix: #3195
+ad304287|vernesong|Sun Apr 23 10:25:29 2023 +0800|chore: refine
+2f4f6dbd|vernesong|Sun Apr 23 10:25:29 2023 +0800|chore: refine
+e3eb1174|Nicholas Sun|Sat Apr 22 17:29:36 2023 +0800|Fixed background shadow word mismatch (#3225)
+beb089b3|Nicholas Sun|Sat Apr 22 17:29:36 2023 +0800|Fixed background shadow word mismatch (#3225)
+dbfc6865|vernesong|Fri Apr 21 20:33:22 2023 +0800|Merge branch 'dev' of https://github.com/vernesong/OpenClash into dev
+9f9fcf5c|vernesong|Fri Apr 21 20:33:22 2023 +0800|Merge branch 'dev' of https://github.com/vernesong/OpenClash into dev
+d3680dac|vernesong|Fri Apr 21 19:44:06 2023 +0800|fix typo
+65667c50|vernesong|Fri Apr 21 19:44:06 2023 +0800|fix typo
+47315490|github-actions[bot]|Fri Apr 21 04:00:13 2023 +0000|Auto Release: v0.45.113-beta
+167539e8|github-actions[bot]|Fri Apr 21 04:00:13 2023 +0000|Auto Release: v0.45.113-beta
+988b3447|vernesong|Fri Apr 21 11:56:41 2023 +0800|0.45.113
+5a3ee1a2|vernesong|Fri Apr 21 11:56:41 2023 +0800|0.45.113
+62e2aace|vernesong|Fri Apr 21 11:38:26 2023 +0800|chore: refine
+23fdb3db|vernesong|Fri Apr 21 11:38:26 2023 +0800|chore: refine
+3199a877|vernesong|Fri Apr 21 11:11:01 2023 +0800|fix typo
+2e0a91fb|vernesong|Fri Apr 21 11:11:01 2023 +0800|fix typo
+6effde7a|vernesong|Thu Apr 20 22:25:33 2023 +0800|fix typo
+78d06ccc|vernesong|Thu Apr 20 22:25:33 2023 +0800|fix typo
+296707af|vernesong|Wed Apr 19 08:35:52 2023 +0800|chore: fix typo
+b3ba5ba1|vernesong|Wed Apr 19 08:35:52 2023 +0800|chore: fix typo
+c4881727|vernesong|Tue Apr 18 22:46:51 2023 +0800|chore: add ChatGPT unlock auto test
+579931fc|vernesong|Tue Apr 18 22:46:51 2023 +0800|chore: add ChatGPT unlock auto test
+0c87caa1|github-actions[bot]|Mon Apr 17 10:08:42 2023 +0000|Auto Release: v0.45.112-beta
+42eda5f1|github-actions[bot]|Mon Apr 17 10:08:42 2023 +0000|Auto Release: v0.45.112-beta
+53dfe324|vernesong|Mon Apr 17 18:07:42 2023 +0800|0.45.112
+0d6dbef4|vernesong|Mon Apr 17 18:07:42 2023 +0800|0.45.112
+bbcf8a29|vernesong|Mon Apr 17 18:06:48 2023 +0800|revert: firewall rules
+86b9bd49|vernesong|Mon Apr 17 18:06:48 2023 +0800|revert: firewall rules
+da20aef1|github-actions[bot]|Sat Apr 15 17:53:16 2023 +0000|Auto Release: v0.45.111-beta
+3e792421|github-actions[bot]|Sat Apr 15 17:53:16 2023 +0000|Auto Release: v0.45.111-beta
+3b3d0d7b|vernesong|Sun Apr 16 01:52:20 2023 +0800|0.45.111
+cdaf7a6b|vernesong|Sun Apr 16 01:52:20 2023 +0800|0.45.111
+06ddd84a|vernesong|Sun Apr 16 01:49:43 2023 +0800|fix: can not get the lan interface name
+1a3d0ece|vernesong|Sun Apr 16 01:49:43 2023 +0800|fix: can not get the lan interface name
+60a8e21e|github-actions[bot]|Sat Apr 15 08:23:58 2023 +0000|Auto Release: v0.45.110-beta
+cb12dc76|github-actions[bot]|Sat Apr 15 08:23:58 2023 +0000|Auto Release: v0.45.110-beta
+c6c2d1f3|vernesong|Sat Apr 15 16:23:01 2023 +0800|0.45.110
+000e716a|vernesong|Sat Apr 15 16:23:01 2023 +0800|0.45.110
+ae49d3da|vernesong|Sat Apr 15 16:22:34 2023 +0800|fix #3189
+7ad4f85a|vernesong|Sat Apr 15 16:22:34 2023 +0800|fix #3189
+570d153a|vernesong|Sat Apr 15 16:01:34 2023 +0800|fix loop
+b6b79565|vernesong|Sat Apr 15 16:01:34 2023 +0800|fix loop
+89d80c20|github-actions[bot]|Sat Apr 15 03:57:17 2023 +0000|Auto Release: v0.45.109-beta
+57b0c3f1|github-actions[bot]|Sat Apr 15 03:57:17 2023 +0000|Auto Release: v0.45.109-beta
+0185932b|vernesong|Sat Apr 15 11:56:22 2023 +0800|0.45.109
+e3a2ea30|vernesong|Sat Apr 15 11:56:22 2023 +0800|0.45.109
+5668d06a|vernesong|Sat Apr 15 11:55:56 2023 +0800|chore: refine
+d39baebd|vernesong|Sat Apr 15 11:55:56 2023 +0800|chore: refine
+de3dc633|vernesong|Wed Apr 12 23:27:48 2023 +0800|fix: firewall add iif name for localnetwork rule
+7c0c257a|vernesong|Wed Apr 12 23:27:48 2023 +0800|fix: firewall add iif name for localnetwork rule
+20b9cc34|github-actions[bot]|Mon Apr 10 13:49:20 2023 +0000|Auto Release: v0.45.108-beta
+362a061d|github-actions[bot]|Mon Apr 10 13:49:20 2023 +0000|Auto Release: v0.45.108-beta
+4564a7fe|vernesong|Mon Apr 10 21:48:23 2023 +0800|0.45.108
+b774920d|vernesong|Mon Apr 10 21:48:23 2023 +0800|0.45.108
+23c4b0fb|vernesong|Mon Apr 10 20:50:24 2023 +0800|fix typo
+33c25620|vernesong|Mon Apr 10 20:50:24 2023 +0800|fix typo
+c38aa86b|github-actions[bot]|Mon Apr 10 08:31:12 2023 +0000|Auto Release: v0.45.107-beta
+71ab6d32|github-actions[bot]|Mon Apr 10 08:31:12 2023 +0000|Auto Release: v0.45.107-beta
+3e9fff19|vernesong|Mon Apr 10 16:30:21 2023 +0800|0.45.107
+20960eae|vernesong|Mon Apr 10 16:30:21 2023 +0800|0.45.107
+0f673ed4|vernesong|Mon Apr 10 16:28:56 2023 +0800|fix typo
+e57f841b|vernesong|Mon Apr 10 16:28:56 2023 +0800|fix typo
+bf01bae5|vernesong|Mon Apr 10 16:01:53 2023 +0800|fix: luci can not save large file #3169 #3168 #3165
+8d1ae18d|vernesong|Mon Apr 10 16:01:53 2023 +0800|fix: luci can not save large file #3169 #3168 #3165
+03026340|vernesong|Mon Apr 10 11:52:38 2023 +0800|fix: tproxy not support output chain
+33a265ef|vernesong|Mon Apr 10 11:52:38 2023 +0800|fix: tproxy not support output chain
+9966ce8f|vernesong|Mon Apr 10 11:52:12 2023 +0800|chore: refine
+3fcb8199|vernesong|Mon Apr 10 11:52:12 2023 +0800|chore: refine
+723dc441|vernesong|Mon Apr 10 01:16:01 2023 +0800|chore: update dashboard
+20545969|vernesong|Mon Apr 10 01:16:01 2023 +0800|chore: update dashboard
+1dba1464|kooritea|Mon Apr 10 01:11:11 2023 +0800|Do not hijack dns outside the ac list (#3175)
+7b383c27|kooritea|Mon Apr 10 01:11:11 2023 +0800|Do not hijack dns outside the ac list (#3175)
+ee2a464e|vernesong|Sun Apr 9 20:57:06 2023 +0800|chore: refine
+1f7ac82b|vernesong|Sun Apr 9 20:57:06 2023 +0800|chore: refine
+223ada0d|Kamille|Sun Apr 9 20:54:13 2023 +0800|Update openclash_custom_fake_filter.list (#3176)
+1fa5cb7c|Kamille|Sun Apr 9 20:54:13 2023 +0800|Update openclash_custom_fake_filter.list (#3176)
+9e3ba65c|vernesong|Tue Apr 4 10:57:37 2023 +0800|fix #3162
+760693e5|vernesong|Tue Apr 4 10:57:37 2023 +0800|fix #3162
+7becc354|vernesong|Tue Apr 4 09:02:58 2023 +0800|chore: refine
+2611512e|vernesong|Tue Apr 4 09:02:58 2023 +0800|chore: refine
+638385e4|github-actions[bot]|Mon Apr 3 17:23:51 2023 +0000|Auto Release: v0.45.106-beta
+9f30111e|github-actions[bot]|Mon Apr 3 17:23:51 2023 +0000|Auto Release: v0.45.106-beta
+29f066b6|vernesong|Tue Apr 4 01:22:37 2023 +0800|0.45.106
+fa464f28|vernesong|Tue Apr 4 01:22:37 2023 +0800|0.45.106
+695cd2a7|vernesong|Tue Apr 4 01:22:19 2023 +0800|fea: add more ipv6 proxy mode
+6b42ed64|vernesong|Tue Apr 4 01:22:19 2023 +0800|fea: add more ipv6 proxy mode
+ee0cf7cb|github-actions[bot]|Sun Apr 2 17:23:18 2023 +0000|Auto Release: v0.45.105-beta
+0753fec2|github-actions[bot]|Sun Apr 2 17:23:18 2023 +0000|Auto Release: v0.45.105-beta
+d8a73b01|vernesong|Mon Apr 3 01:22:20 2023 +0800|0.45.105
+dbdb80ae|vernesong|Mon Apr 3 01:22:20 2023 +0800|0.45.105
+5e5d07c4|vernesong|Mon Apr 3 01:22:04 2023 +0800|fix: meta core version
+c046d036|vernesong|Mon Apr 3 01:22:04 2023 +0800|fix: meta core version
+0dda7fd1|vernesong|Mon Apr 3 00:56:14 2023 +0800|chore: refine
+fd07be5f|vernesong|Mon Apr 3 00:56:14 2023 +0800|chore: refine
+1422668a|vernesong|Sat Apr 1 17:19:27 2023 +0800|chore: add Serial Number for tblsection
+c25e4fc5|vernesong|Sat Apr 1 17:19:27 2023 +0800|chore: add Serial Number for tblsection
+d0ae97d9|github-actions[bot]|Fri Mar 31 17:04:55 2023 +0000|Auto Release: v0.45.104-beta
+35753a35|github-actions[bot]|Fri Mar 31 17:04:55 2023 +0000|Auto Release: v0.45.104-beta
+6f5609a9|vernesong|Sat Apr 1 01:03:57 2023 +0800|0.45.104
+91149e53|vernesong|Sat Apr 1 01:03:57 2023 +0800|0.45.104
+51603c64|vernesong|Sat Apr 1 01:03:37 2023 +0800|chore: refine
+e1cdd98d|vernesong|Sat Apr 1 01:03:37 2023 +0800|chore: refine
+8b5756f5|vernesong|Fri Mar 31 23:04:28 2023 +0800|chore: restls options for meta
+d3032bef|vernesong|Fri Mar 31 23:04:28 2023 +0800|chore: restls options for meta
+8f7d6882|vernesong|Fri Mar 31 23:03:59 2023 +0800|chore: fix style
+193ba4ef|vernesong|Fri Mar 31 23:03:59 2023 +0800|chore: fix style
+f5f50719|Halo|Mon Mar 27 12:44:05 2023 +0800|fix: custom rule (#3145)
+e919a88e|Halo|Mon Mar 27 12:44:05 2023 +0800|fix: custom rule (#3145)
+e33e5948|vernesong|Sun Mar 26 18:12:26 2023 +0800|chore: fix style
+e4fe2ba4|vernesong|Sun Mar 26 18:12:26 2023 +0800|chore: fix style
+ab69725e|vernesong|Sat Mar 25 22:28:52 2023 +0800|chore: meta wiki address
+3a9425b2|vernesong|Sat Mar 25 22:28:52 2023 +0800|chore: meta wiki address
+14a2279d|vernesong|Thu Mar 23 17:48:28 2023 +0800|chore: refine
+63fcd22d|vernesong|Thu Mar 23 17:48:28 2023 +0800|chore: refine
+02e216a8|vernesong|Wed Mar 22 23:08:44 2023 +0800|chore: refine
+4a70796e|vernesong|Wed Mar 22 23:08:44 2023 +0800|chore: refine
+45762fdb|vernesong|Sun Mar 19 15:10:12 2023 +0800|fix typo
+8a97f5b9|vernesong|Sun Mar 19 15:10:12 2023 +0800|fix typo
+1d4a8f0c|vernesong|Sun Mar 19 14:36:25 2023 +0800|fix typo
+59476a24|vernesong|Sun Mar 19 14:36:25 2023 +0800|fix typo
+cc49173c|github-actions[bot]|Tue Mar 14 04:26:07 2023 +0000|Auto Release: v0.45.103-beta
+79878910|github-actions[bot]|Tue Mar 14 04:26:07 2023 +0000|Auto Release: v0.45.103-beta
+b97b2bbc|vernesong|Tue Mar 14 12:25:10 2023 +0800|0.45.103
+ab6bf081|vernesong|Tue Mar 14 12:25:10 2023 +0800|0.45.103
+e1ee1083|vernesong|Tue Mar 14 12:19:59 2023 +0800|chore: refine
+15c50ebe|vernesong|Tue Mar 14 12:19:59 2023 +0800|chore: refine
+b0856e82|vernesong|Mon Mar 13 13:43:40 2023 +0800|chore: reality option for meta
+2bb54ea0|vernesong|Mon Mar 13 13:43:40 2023 +0800|chore: reality option for meta
+f0331503|vernesong|Sun Mar 12 20:19:43 2023 +0800|fix: nft wan ifname get
+297aa3ec|vernesong|Sun Mar 12 20:19:43 2023 +0800|fix: nft wan ifname get
+8bf9874a|vernesong|Sun Mar 12 18:40:31 2023 +0800|chore: fix wan interface get error
+7800551c|vernesong|Sun Mar 12 18:40:31 2023 +0800|chore: fix wan interface get error
+898063c5|github-actions[bot]|Sat Mar 11 16:18:27 2023 +0000|Auto Release: v0.45.102-beta
+09736935|github-actions[bot]|Sat Mar 11 16:18:27 2023 +0000|Auto Release: v0.45.102-beta
+c4f7817b|vernesong|Sun Mar 12 00:17:26 2023 +0800|0.45.102
+4f2b4295|vernesong|Sun Mar 12 00:17:26 2023 +0800|0.45.102
+83989e15|vernesong|Sat Mar 11 23:22:35 2023 +0800|chore: add diff for config codemirror
+a261ee29|vernesong|Sat Mar 11 23:22:35 2023 +0800|chore: add diff for config codemirror
+2dbf2072|vernesong|Fri Mar 10 07:51:04 2023 +0800|fix #3086
+e84c6342|vernesong|Fri Mar 10 07:51:04 2023 +0800|fix #3086
+ae384eb0|vernesong|Wed Mar 8 13:05:11 2023 +0800|Merge branch 'dev' of https://github.com/vernesong/OpenClash into dev
+0c6e84bf|vernesong|Wed Mar 8 13:05:11 2023 +0800|Merge branch 'dev' of https://github.com/vernesong/OpenClash into dev
+6eab7d38|vernesong|Wed Mar 8 13:05:07 2023 +0800|chore: fix translation
+8b431f1e|vernesong|Wed Mar 8 13:05:07 2023 +0800|chore: fix translation
+8fda1c8c|github-actions[bot]|Wed Mar 8 04:55:53 2023 +0000|Auto Release: v0.45.101-beta
+206be6ee|github-actions[bot]|Wed Mar 8 04:55:53 2023 +0000|Auto Release: v0.45.101-beta
+7132f837|vernesong|Wed Mar 8 12:54:45 2023 +0800|0.45.101
+dd4daf96|vernesong|Wed Mar 8 12:54:45 2023 +0800|0.45.101
+5a24eb7b|vernesong|Wed Mar 8 12:46:20 2023 +0800|fix style for some theme
+ea9efde9|vernesong|Wed Mar 8 12:46:20 2023 +0800|fix style for some theme
+ddab6028|github-actions[bot]|Mon Mar 6 14:04:13 2023 +0000|Auto Release: v0.45.100-beta
+9e9cfd5c|github-actions[bot]|Mon Mar 6 14:04:13 2023 +0000|Auto Release: v0.45.100-beta
+c48cd729|vernesong|Mon Mar 6 22:03:00 2023 +0800|0.45.100
+85f6b091|vernesong|Mon Mar 6 22:03:00 2023 +0800|0.45.100
+f1ae547d|github-actions[bot]|Mon Mar 6 13:59:05 2023 +0000|Auto Release: v0.45.99-beta
+268e8ddb|github-actions[bot]|Mon Mar 6 13:59:05 2023 +0000|Auto Release: v0.45.99-beta
+596248fb|vernesong|Mon Mar 6 21:57:54 2023 +0800|0.45.99
+4f21d207|vernesong|Mon Mar 6 21:57:54 2023 +0800|0.45.99
+0a045731|vernesong|Mon Mar 6 21:42:45 2023 +0800|chore: #3076
+1085845f|vernesong|Mon Mar 6 21:42:45 2023 +0800|chore: #3076
+6fd1beba|vernesong|Mon Mar 6 20:10:14 2023 +0800|fix #3070
+20858498|vernesong|Mon Mar 6 20:10:14 2023 +0800|fix #3070
+b9674095|vernesong|Mon Mar 6 19:17:36 2023 +0800|chore: fix style
+94339fc8|vernesong|Mon Mar 6 19:17:36 2023 +0800|chore: fix style
+0fde62a2|vernesong|Mon Mar 6 12:56:19 2023 +0800|fix style
+6707fbcf|vernesong|Mon Mar 6 12:56:19 2023 +0800|fix style
+b43b648e|github-actions[bot]|Sun Mar 5 15:16:33 2023 +0000|Auto Release: v0.45.98-beta
+7f18db22|github-actions[bot]|Sun Mar 5 15:16:33 2023 +0000|Auto Release: v0.45.98-beta
+f675bfad|vernesong|Sun Mar 5 23:15:33 2023 +0800|0.45.98
+64b2085c|vernesong|Sun Mar 5 23:15:33 2023 +0800|0.45.98
+9dae870e|vernesong|Sun Mar 5 23:14:42 2023 +0800|chore: delete ip script before newer loaded
+b603d610|vernesong|Sun Mar 5 23:14:42 2023 +0800|chore: delete ip script before newer loaded
+575cfcd4|vernesong|Sun Mar 5 12:39:27 2023 +0800|workflow: refine master release sync
+5aca17a7|vernesong|Sun Mar 5 12:39:27 2023 +0800|workflow: refine master release sync
+1c40e4fb|vernesong|Sun Mar 5 11:45:27 2023 +0800|fix #3058
+301ac841|vernesong|Sun Mar 5 11:45:27 2023 +0800|fix #3058
+2f30c74d|vernesong|Sun Mar 5 11:27:23 2023 +0800|chore: reduce unnecessary sleep time
+5b6c9c7f|vernesong|Sun Mar 5 11:27:23 2023 +0800|chore: reduce unnecessary sleep time
+c80407f7|vernesong|Sat Mar 4 23:44:15 2023 +0800|chore: remember my ip privacy setting
+ac59b709|vernesong|Sat Mar 4 23:44:15 2023 +0800|chore: remember my ip privacy setting
+3491375b|github-actions[bot]|Fri Mar 3 12:46:28 2023 +0000|Auto Release: v0.45.97-beta
+a3dcafa5|github-actions[bot]|Fri Mar 3 12:46:28 2023 +0000|Auto Release: v0.45.97-beta
+297c8ac1|vernesong|Fri Mar 3 20:45:26 2023 +0800|0.45.97
+14f69845|vernesong|Fri Mar 3 20:45:26 2023 +0800|0.45.97
+7efc878f|vernesong|Fri Mar 3 20:43:04 2023 +0800|chore: refine
+eaf0acac|vernesong|Fri Mar 3 20:43:04 2023 +0800|chore: refine
+a887ab34|vernesong|Fri Mar 3 14:45:27 2023 +0800|chore: better group filter option name
+f05c7e9f|vernesong|Fri Mar 3 14:45:27 2023 +0800|chore: better group filter option name
+9f469467|github-actions[bot]|Fri Mar 3 05:04:19 2023 +0000|Auto Release: v0.45.96-beta
+80f7fa31|github-actions[bot]|Fri Mar 3 05:04:19 2023 +0000|Auto Release: v0.45.96-beta
+e70b85e8|vernesong|Fri Mar 3 13:03:15 2023 +0800|0.45.96
+cec38f45|vernesong|Fri Mar 3 13:03:15 2023 +0800|0.45.96
+940f2e91|vernesong|Fri Mar 3 13:01:40 2023 +0800|chore: refresh ip check
+00e28b89|vernesong|Fri Mar 3 13:01:40 2023 +0800|chore: refresh ip check
+75932e00|vernesong|Fri Mar 3 08:06:17 2023 +0800|chore: fix typo
+da927127|vernesong|Fri Mar 3 08:06:17 2023 +0800|chore: fix typo
+8fe45929|vernesong|Thu Mar 2 23:00:05 2023 +0800|chore: refine
+e41895e7|vernesong|Thu Mar 2 23:00:05 2023 +0800|chore: refine
+cb30ff82|github-actions[bot]|Thu Mar 2 14:09:13 2023 +0000|Auto Release: v0.45.95-beta
+a647106a|github-actions[bot]|Thu Mar 2 14:09:13 2023 +0000|Auto Release: v0.45.95-beta
+3484583f|vernesong|Thu Mar 2 22:08:12 2023 +0800|0.45.95
+5a2a0bfa|vernesong|Thu Mar 2 22:08:12 2023 +0800|0.45.95
+d7165d3d|vernesong|Thu Mar 2 22:07:43 2023 +0800|chore: add tab for tblsection template
+e79311da|vernesong|Thu Mar 2 22:07:43 2023 +0800|chore: add tab for tblsection template
+69b03ed4|vernesong|Wed Mar 1 23:38:16 2023 +0800|fix style
+3fcccfb8|vernesong|Wed Mar 1 23:38:16 2023 +0800|fix style
+99547508|github-actions[bot]|Wed Mar 1 14:42:26 2023 +0000|Auto Release: v0.45.94-beta
+c75ea5f6|github-actions[bot]|Wed Mar 1 14:42:26 2023 +0000|Auto Release: v0.45.94-beta
+4d08e75e|vernesong|Wed Mar 1 22:41:18 2023 +0800|0.45.94
+b7339561|vernesong|Wed Mar 1 22:41:18 2023 +0800|0.45.94
+51483f42|vernesong|Wed Mar 1 22:30:24 2023 +0800|chore: increase timeout option value
+8d8b1c94|vernesong|Wed Mar 1 22:30:24 2023 +0800|chore: increase timeout option value
+08817baf|vernesong|Wed Mar 1 21:19:58 2023 +0800|chore: #3052
+c4cfd6b8|vernesong|Wed Mar 1 21:19:58 2023 +0800|chore: #3052
+d6f729b5|github-actions[bot]|Wed Mar 1 11:56:52 2023 +0000|Auto Release: v0.45.93-beta
+cc835910|github-actions[bot]|Wed Mar 1 11:56:52 2023 +0000|Auto Release: v0.45.93-beta
+7e005f01|vernesong|Wed Mar 1 19:55:46 2023 +0800|0.45.93
+86a0b731|vernesong|Wed Mar 1 19:55:46 2023 +0800|0.45.93
+a6282706|vernesong|Wed Mar 1 19:55:22 2023 +0800|chore: sub info custom icon and ip address privacy icon
+5736565c|vernesong|Wed Mar 1 19:55:22 2023 +0800|chore: sub info custom icon and ip address privacy icon
+b524a2d7|vernesong|Wed Mar 1 09:56:24 2023 +0800|chore: refine
+5324b5d1|vernesong|Wed Mar 1 09:56:24 2023 +0800|chore: refine
+d18eae90|vernesong|Wed Mar 1 01:05:03 2023 +0800|chore: ac ipmask datatype
+662e807c|vernesong|Wed Mar 1 01:05:03 2023 +0800|chore: ac ipmask datatype
+89511af7|vernesong|Tue Feb 28 15:59:56 2023 +0800|chore: refine
+24c0dafb|vernesong|Tue Feb 28 15:59:56 2023 +0800|chore: refine
+1d3f6f25|vernesong|Mon Feb 27 15:13:29 2023 +0800|workflow: refine
+9c206605|vernesong|Mon Feb 27 15:13:29 2023 +0800|workflow: refine
+40aabfd0|vernesong|Mon Feb 27 14:50:35 2023 +0800|fix: restore url not work after click
+f2300820|vernesong|Mon Feb 27 14:50:35 2023 +0800|fix: restore url not work after click
+d5695b92|vernesong|Mon Feb 27 11:46:06 2023 +0800|chore: hosts description
+a92e37a7|vernesong|Mon Feb 27 11:46:06 2023 +0800|chore: hosts description
+a8298731|github-actions|Sun Feb 26 17:44:50 2023 +0000|Auto Release: v0.45.92-beta
+99de80cb|github-actions|Sun Feb 26 17:44:50 2023 +0000|Auto Release: v0.45.92-beta
+1d1cd541|vernesong|Mon Feb 27 01:43:53 2023 +0800|0.45.92
+fa1ffadc|vernesong|Mon Feb 27 01:43:53 2023 +0800|0.45.92
+ea35b86c|vernesong|Mon Feb 27 01:43:06 2023 +0800|chore: add TFO option for meta
+9b247727|vernesong|Mon Feb 27 01:43:06 2023 +0800|chore: add TFO option for meta
+ca7a9440|vernesong|Mon Feb 27 01:19:06 2023 +0800|chore: allow custom common ports options
+b6500b2c|vernesong|Mon Feb 27 01:19:06 2023 +0800|chore: allow custom common ports options
+827c42c6|vernesong|Mon Feb 27 00:49:41 2023 +0800|chore: local setting version.svg
+a5843d98|vernesong|Mon Feb 27 00:49:41 2023 +0800|chore: local setting version.svg
+96cac55c|vernesong|Sun Feb 26 10:27:59 2023 +0800|workflow: change name
+ef9e77cd|vernesong|Sun Feb 26 10:27:59 2023 +0800|workflow: change name
+a9b8cb42|vernesong|Sun Feb 26 10:14:19 2023 +0800|workflow: add core compile action
+fff4f1aa|vernesong|Sun Feb 26 10:14:19 2023 +0800|workflow: add core compile action
+fc81ef7d|github-actions|Sun Feb 26 01:48:31 2023 +0000|Auto Release: v0.45.91-beta
+96d0433d|github-actions|Sun Feb 26 01:48:31 2023 +0000|Auto Release: v0.45.91-beta
+d3b44d25|vernesong|Sun Feb 26 09:47:28 2023 +0800|v0.45.91-beta
+397e23b4|vernesong|Sun Feb 26 09:47:28 2023 +0800|v0.45.91-beta
+b332935b|vernesong|Sun Feb 26 09:43:56 2023 +0800|chore: xtls-rprx-vision
+2c349a45|vernesong|Sun Feb 26 09:43:56 2023 +0800|chore: xtls-rprx-vision
+d24d8bc1|vernesong|Sun Feb 26 09:37:02 2023 +0800|chore: refine
+a942128b|vernesong|Sun Feb 26 09:37:02 2023 +0800|chore: refine
+1ed87d13|vernesong|Sun Feb 26 08:44:07 2023 +0800|fix #3038
+c78f9d41|vernesong|Sun Feb 26 08:44:07 2023 +0800|fix #3038
+6477ac43|vernesong|Sun Feb 26 08:16:55 2023 +0800|workflow: refine
+3a266551|vernesong|Sun Feb 26 08:16:55 2023 +0800|workflow: refine
+63f65c28|vernesong|Sat Feb 25 00:42:37 2023 +0800|workflow: fix typo
+81a67b7c|vernesong|Sat Feb 25 00:42:37 2023 +0800|workflow: fix typo
+199cba75|vernesong|Fri Feb 24 22:33:31 2023 +0800|workflow: compile after version check
+2c063040|vernesong|Fri Feb 24 22:33:31 2023 +0800|workflow: compile after version check
+ac35ed55|vernesong|Fri Feb 24 22:25:49 2023 +0800|workflow: compile depends on makefile
+5015cd53|vernesong|Fri Feb 24 22:25:49 2023 +0800|workflow: compile depends on makefile
+370c8908|vernesong|Fri Feb 24 22:13:32 2023 +0800|chore: upload ipk
+80e745f6|vernesong|Fri Feb 24 22:10:01 2023 +0800|v0.45.90-beta
+724208e3|vernesong|Fri Feb 24 22:10:01 2023 +0800|v0.45.90-beta
+40d3aec6|vernesong|Fri Feb 24 22:09:34 2023 +0800|fix #3031
+a1b072b6|vernesong|Fri Feb 24 22:09:34 2023 +0800|fix #3031
+468ab8ed|vernesong|Thu Feb 23 22:57:59 2023 +0800|chore: workflow dispatch
+83b722b7|vernesong|Thu Feb 23 22:57:59 2023 +0800|chore: workflow dispatch
+25397e39|vernesong|Thu Feb 23 05:30:30 2023 +0800|workflow: refine
+0eca7aac|vernesong|Thu Feb 23 05:30:30 2023 +0800|workflow: refine
+f4c21cce|vernesong|Thu Feb 23 05:25:10 2023 +0800|chore: test workflow
+0576dbd0|vernesong|Thu Feb 23 05:25:10 2023 +0800|chore: test workflow
+b14325bf|vernesong|Thu Feb 23 05:22:48 2023 +0800|chore: test workflow
+560c9425|vernesong|Thu Feb 23 05:22:48 2023 +0800|chore: test workflow
+ea4b5743|vernesong|Thu Feb 23 05:12:12 2023 +0800|chore: test workflow
+d210ffad|vernesong|Thu Feb 23 05:12:12 2023 +0800|chore: test workflow
+be6b72e4|vernesong|Thu Feb 23 05:09:24 2023 +0800|Create compile_new_ipk.yml
+f1a904fb|vernesong|Thu Feb 23 05:09:24 2023 +0800|Create compile_new_ipk.yml
+e35349f4|vernesong|Thu Feb 23 04:57:13 2023 +0800|chore: test workflow
+cae31072|vernesong|Thu Feb 23 04:57:13 2023 +0800|chore: test workflow
+ee7b76df|vernesong|Thu Feb 23 04:51:42 2023 +0800|chore: test workflow
+cae4f071|vernesong|Thu Feb 23 04:51:42 2023 +0800|chore: test workflow
+62eb05e0|vernesong|Thu Feb 23 04:35:25 2023 +0800|v0.45.89-beta
+bdeeca02|vernesong|Thu Feb 23 04:35:25 2023 +0800|v0.45.89-beta
+133331b6|vernesong|Thu Feb 23 04:33:38 2023 +0800|Revert "chore: update version"
+56fe0898|vernesong|Thu Feb 23 04:33:38 2023 +0800|Revert "chore: update version"
+d60a358d|vernesong|Thu Feb 23 03:39:16 2023 +0800|chore: update version
+3479bd8c|vernesong|Thu Feb 23 03:39:16 2023 +0800|chore: update version
+68385240|vernesong|Thu Feb 23 03:32:22 2023 +0800|chore: refresh
+473b7776|vernesong|Thu Feb 23 03:32:22 2023 +0800|chore: refresh
+9356ab53|vernesong|Thu Feb 23 03:22:11 2023 +0800|v0.45.89-beta
+0a1c947b|vernesong|Thu Feb 23 03:22:11 2023 +0800|v0.45.89-beta
+af24767d|vernesong|Thu Feb 23 02:20:57 2023 +0800|chore: change ipk&core download url
+08652e31|vernesong|Thu Feb 23 02:20:57 2023 +0800|chore: change ipk&core download url
+badbe398|vernesong|Thu Feb 23 01:44:26 2023 +0800|workflow: delete_old_workflow
+34c43f1a|vernesong|Thu Feb 23 01:44:26 2023 +0800|workflow: delete_old_workflow
+8f990579|vernesong|Wed Feb 22 03:11:01 2023 +0800|Update README.md
+787e011a|vernesong|Wed Feb 22 03:11:01 2023 +0800|Update README.md
+32ef5398|vernesong|Tue Feb 21 10:04:13 2023 +0800|fix typo
+f2687fce|vernesong|Tue Feb 21 10:04:13 2023 +0800|fix typo
+b5e89772|vernesong|Tue Feb 21 08:57:04 2023 +0800|chore: update meta core
+f0cd0ac9|vernesong|Tue Feb 21 08:57:04 2023 +0800|chore: update meta core
+6be573e7|vernesong|Tue Feb 21 08:45:21 2023 +0800|v0.45.88-beta
+46c7d85e|vernesong|Tue Feb 21 08:45:21 2023 +0800|v0.45.88-beta
+5d110341|vernesong|Tue Feb 21 08:43:02 2023 +0800|chore: refine
+7190e05a|vernesong|Tue Feb 21 08:43:02 2023 +0800|chore: refine
+f75ff59d|vernesong|Tue Feb 21 00:02:43 2023 +0800|chore: refine
+64f42f29|vernesong|Tue Feb 21 00:02:43 2023 +0800|chore: refine
+c2f913b0|vernesong|Mon Feb 20 22:25:12 2023 +0800|change: disable most overwrite settings by default
+b0c0e50c|vernesong|Mon Feb 20 22:25:12 2023 +0800|change: disable most overwrite settings by default
+a7e25818|vernesong|Sun Feb 19 03:09:40 2023 +0800|chore: update meta core
+f5a6fa36|vernesong|Sun Feb 19 03:09:40 2023 +0800|chore: update meta core
+8897dd3f|vernesong|Fri Feb 17 03:33:55 2023 +0800|chore: update core
+d9a126d2|vernesong|Fri Feb 17 03:33:55 2023 +0800|chore: update core
+b2c2c209|vernesong|Mon Feb 13 23:53:23 2023 +0800|chore: update meta core
+78c17f2b|vernesong|Mon Feb 13 23:53:23 2023 +0800|chore: update meta core
+4f9f0509|vernesong|Fri Feb 10 23:38:16 2023 +0800|chore: refine
+2c382da3|vernesong|Fri Feb 10 23:38:16 2023 +0800|chore: refine
+fa10bd8f|vernesong|Fri Feb 10 22:06:36 2023 +0800|Merge branch 'master' into dev
+06feaf09|vernesong|Fri Feb 10 22:06:36 2023 +0800|Merge branch 'master' into dev
+b5a9bd6a|vernesong|Fri Feb 10 19:32:43 2023 +0800|chore: update lhie1 rules
+f53423db|vernesong|Fri Feb 10 19:32:43 2023 +0800|chore: update lhie1 rules
+746163b3|vernesong|Fri Feb 10 19:02:36 2023 +0800|chore: revert v6 dns logic for meta core
+408463a9|vernesong|Fri Feb 10 19:02:36 2023 +0800|chore: revert v6 dns logic for meta core
+bcc039b3|Zhong Lufan|Fri Feb 10 08:38:50 2023 +0800|Add Tun interface wait timeout (#3008)
+3480f7b6|Zhong Lufan|Fri Feb 10 08:38:50 2023 +0800|Add Tun interface wait timeout (#3008)
+eec18e0c|vernesong|Thu Feb 9 23:14:20 2023 +0800|chore: update meta core
+945c6d5b|vernesong|Thu Feb 9 23:14:20 2023 +0800|chore: update meta core
+0523e02d|vernesong|Thu Feb 9 22:19:23 2023 +0800|fix: redir-host access control
+aa5e856b|vernesong|Thu Feb 9 22:19:23 2023 +0800|fix: redir-host access control
+2376ba80|vernesong|Wed Feb 8 18:59:08 2023 +0800|fix #3002
+53fe6151|vernesong|Wed Feb 8 18:59:08 2023 +0800|fix #3002
+bfbef699|vernesong|Tue Feb 7 19:55:33 2023 +0800|chore: update meta core
+07eacf6c|vernesong|Tue Feb 7 19:55:13 2023 +0800|chore: client-fingerprint
+5803239c|vernesong|Tue Feb 7 19:55:13 2023 +0800|chore: client-fingerprint
+fa8c6067|vernesong|Tue Feb 7 19:28:01 2023 +0800|chore: global client fingerprint
+1c498498|vernesong|Tue Feb 7 19:28:01 2023 +0800|chore: global client fingerprint
+4e0ea70f|vernesong|Sun Feb 5 22:22:30 2023 +0800|chore: update core
+85f066f2|vernesong|Sun Feb 5 22:22:30 2023 +0800|chore: update core
+30bca8f6|vernesong|Sun Feb 5 21:27:43 2023 +0800|v0.45.87-beta
+8d2d3b79|vernesong|Sun Feb 5 21:27:43 2023 +0800|v0.45.87-beta
+31738f78|vernesong|Sun Feb 5 18:32:26 2023 +0800|chore: refine
+0fe89b22|vernesong|Sun Feb 5 18:32:26 2023 +0800|chore: refine
+c285e0a8|vernesong|Sun Feb 5 18:16:50 2023 +0800|chore: Client Fingerprint
+a285a7d2|vernesong|Sun Feb 5 18:16:50 2023 +0800|chore: Client Fingerprint
+27eddbc4|vernesong|Sun Feb 5 18:02:44 2023 +0800|fix typo #2975
+c46432f4|vernesong|Sun Feb 5 18:02:44 2023 +0800|fix typo #2975
+bc90aa67|vernesong|Sun Feb 5 17:31:23 2023 +0800|chore: refine
+b28c6e80|vernesong|Sun Feb 5 17:31:23 2023 +0800|chore: refine
+75089e5e|vernesong|Sat Feb 4 02:42:43 2023 +0800|chore: update core
+b0a7c5c9|vernesong|Sat Feb 4 02:42:43 2023 +0800|chore: update core
+2397212c|vernesong|Sat Feb 4 02:36:31 2023 +0800|v0.45.86-beta
+b81517dc|vernesong|Sat Feb 4 02:36:31 2023 +0800|v0.45.86-beta
+83cb249f|vernesong|Fri Feb 3 17:43:26 2023 +0800|fix #2984
+7015f32d|vernesong|Fri Feb 3 17:43:26 2023 +0800|fix #2984
+347faf5c|vernesong|Thu Feb 2 21:37:28 2023 +0800|chore: add Client-fingerprint option for meta
+b8880c1c|vernesong|Thu Feb 2 21:37:28 2023 +0800|chore: add Client-fingerprint option for meta
+64090407|vernesong|Thu Feb 2 19:21:11 2023 +0800|chore: some server option for meta
+0932ead6|vernesong|Thu Feb 2 19:21:11 2023 +0800|chore: some server option for meta
+06a67364|vernesong|Thu Feb 2 00:09:10 2023 +0800|v0.45.85-beta
+ce34c2bf|vernesong|Thu Feb 2 00:09:10 2023 +0800|v0.45.85-beta
+37616fb8|Doctor-Z|Wed Feb 1 23:53:38 2023 +0800|Sync to the latest rules (#2972)
+4818d99f|Doctor-Z|Wed Feb 1 23:53:38 2023 +0800|Sync to the latest rules (#2972)
+fb1260df|vernesong|Wed Feb 1 23:41:42 2023 +0800|revert: keep redir-host for meta core
+c135f5a4|vernesong|Wed Feb 1 23:41:42 2023 +0800|revert: keep redir-host for meta core
+ab5e7748|vernesong|Wed Feb 1 23:35:14 2023 +0800|chore: debug add DNS test
+6be3523a|vernesong|Wed Feb 1 23:35:14 2023 +0800|chore: debug add DNS test
+ad7a2d91|vernesong|Wed Feb 1 20:43:00 2023 +0800|change: force replace redir-host to fake-ip
+5bc3910f|vernesong|Wed Feb 1 20:43:00 2023 +0800|change: force replace redir-host to fake-ip
+8c8e39b0|vernesong|Wed Feb 1 20:08:26 2023 +0800|chore: remove the koolshare section
+707d8181|vernesong|Wed Feb 1 20:08:26 2023 +0800|chore: remove the koolshare section
+768b5017|vernesong|Tue Jan 31 22:22:53 2023 +0800|chore: update fakeip filter for xunlei
+8c42dcd9|vernesong|Tue Jan 31 22:22:53 2023 +0800|chore: update fakeip filter for xunlei
+70c8db87|vernesong|Tue Jan 31 21:32:16 2023 +0800|chore: update core
+7ad4d47f|vernesong|Tue Jan 31 21:32:16 2023 +0800|chore: update core
+6dde3a9c|vernesong|Tue Jan 31 21:26:09 2023 +0800|chore: refine
+28cea74f|vernesong|Tue Jan 31 21:26:09 2023 +0800|chore: refine
+996efc3d|vernesong|Mon Jan 30 22:30:03 2023 +0800|v0.45.84-beta
+0a4818b6|vernesong|Mon Jan 30 22:30:03 2023 +0800|v0.45.84-beta
+9521edc5|vernesong|Mon Jan 30 21:56:53 2023 +0800|fix typo
+4f017904|vernesong|Mon Jan 30 21:56:53 2023 +0800|fix typo
+00ea0184|Doctor-Z|Mon Jan 30 21:46:42 2023 +0800|Update game_rules.list (#2968)
+ca2f21ec|Doctor-Z|Mon Jan 30 21:46:42 2023 +0800|Update game_rules.list (#2968)
+ed5571e8|vernesong|Mon Jan 30 21:28:26 2023 +0800|chore: add Developer Settings tab
+6bea5639|vernesong|Mon Jan 30 21:28:26 2023 +0800|chore: add Developer Settings tab
+62d802a3|vernesong|Mon Jan 30 20:17:20 2023 +0800|chore: add description for meta core ipv6 dns option
+41371fd2|vernesong|Mon Jan 30 20:17:20 2023 +0800|chore: add description for meta core ipv6 dns option
+3e47c125|vernesong|Mon Jan 30 20:10:36 2023 +0800|chore: add ipv6 settings tab
+133709dd|vernesong|Mon Jan 30 20:10:36 2023 +0800|chore: add ipv6 settings tab
+35999dd1|vernesong|Mon Jan 30 20:02:05 2023 +0800|chore: add fakeip range option
+ad0b4fca|vernesong|Mon Jan 30 20:02:05 2023 +0800|chore: add fakeip range option
+0d92a6f3|vernesong|Mon Jan 30 18:39:04 2023 +0800|chore: 'zero' security for vmess
+9ac17b00|vernesong|Mon Jan 30 18:39:04 2023 +0800|chore: 'zero' security for vmess
+5e334266|vernesong|Mon Jan 30 17:44:07 2023 +0800|chore: update meta core
+b79ba62a|vernesong|Mon Jan 30 17:44:07 2023 +0800|chore: update meta core
+bc613d8d|vernesong|Sun Jan 29 23:02:12 2023 +0800|fix ipv6 #2965
+2ebc25f3|vernesong|Sun Jan 29 23:02:12 2023 +0800|fix ipv6 #2965
+6ad9093c|vernesong|Sun Jan 29 19:03:06 2023 +0800|fix typo
+05e34b66|vernesong|Sun Jan 29 19:03:06 2023 +0800|fix typo
+fe6ec16a|vernesong|Sun Jan 29 18:50:59 2023 +0800|v0.45.83-beta
+c6960d3d|vernesong|Sun Jan 29 18:50:59 2023 +0800|v0.45.83-beta
+806e599b|vernesong|Sun Jan 29 16:35:45 2023 +0800|fix #2965
+d7d36a6e|vernesong|Sun Jan 29 16:35:45 2023 +0800|fix #2965
+3ff081a0|vernesong|Sat Jan 28 20:17:18 2023 +0800|chore: update core
+8ca8d712|vernesong|Sat Jan 28 20:17:18 2023 +0800|chore: update core
+6f5d4283|vernesong|Sat Jan 28 20:01:15 2023 +0800|fix typo
+e9875735|vernesong|Sat Jan 28 20:01:15 2023 +0800|fix typo
+1acd5b37|vernesong|Fri Jan 27 04:11:24 2023 +0800|fix #2947
+b8bb11b8|vernesong|Fri Jan 27 04:11:24 2023 +0800|fix #2947
+584290ce|vernesong|Fri Jan 27 04:10:17 2023 +0800|fix #2932 nft rules
+c0bf8a74|vernesong|Fri Jan 27 04:10:17 2023 +0800|fix #2932 nft rules
+7d0393da|kooritea|Fri Jan 27 03:41:22 2023 +0800|修复访问控制中mac白名单和ip白名单同时设置时第二个加载的白名单无效问题 (#2958)
+c57a49e4|kooritea|Fri Jan 27 03:41:22 2023 +0800|修复访问控制中mac白名单和ip白名单同时设置时第二个加载的白名单无效问题 (#2958)
+5337d51b|vernesong|Tue Jan 24 17:33:27 2023 +0800|v0.45.82-beta
+9397e40b|vernesong|Tue Jan 24 17:33:27 2023 +0800|v0.45.82-beta
+cd7dfe7f|vernesong|Mon Jan 23 23:09:54 2023 +0800|chore: meta sniffer conf change
+b2b528f3|vernesong|Mon Jan 23 23:09:54 2023 +0800|chore: meta sniffer conf change
+dd2187dd|vernesong|Mon Jan 23 23:08:32 2023 +0800|chore: update meta core
+366bdc3d|vernesong|Mon Jan 23 23:08:32 2023 +0800|chore: update meta core
+603bb924|vernesong|Mon Jan 23 20:00:21 2023 +0800|fix #2949
+d12d18d4|vernesong|Mon Jan 23 20:00:21 2023 +0800|fix #2949
+79a95d85|vernesong|Mon Jan 23 07:53:07 2023 +0800|v0.45.81-beta
+756b72ce|vernesong|Mon Jan 23 07:53:07 2023 +0800|v0.45.81-beta
+58aa4dd0|vernesong|Mon Jan 23 07:42:31 2023 +0800|chore: add firewall upnp exclude rules
+b0954186|vernesong|Mon Jan 23 07:42:31 2023 +0800|chore: add firewall upnp exclude rules
+deb26f1e|vernesong|Mon Jan 23 05:35:25 2023 +0800|chore: skip auto bypassing port when there is port-range
+f7fb9aee|vernesong|Mon Jan 23 05:35:25 2023 +0800|chore: skip auto bypassing port when there is port-range
+24919f9f|vernesong|Sun Jan 22 20:41:05 2023 +0800|fix typo
+1e847a1b|vernesong|Sun Jan 22 20:41:05 2023 +0800|fix typo
+ccb08013|vernesong|Sat Jan 21 04:13:56 2023 +0800|chore: update meta core
+8e320e7e|vernesong|Sat Jan 21 04:13:56 2023 +0800|chore: update meta core
+4cd38b6c|vernesong|Wed Jan 18 20:26:08 2023 +0800|v0.45.80-beta
+bc680318|vernesong|Wed Jan 18 20:26:08 2023 +0800|v0.45.80-beta
+e9f22339|vernesong|Wed Jan 18 20:06:54 2023 +0800|chore: sync game rules
+0b4df78e|vernesong|Wed Jan 18 20:06:54 2023 +0800|chore: sync game rules
+2a0d1255|vernesong|Wed Jan 18 02:08:21 2023 +0800|fix typo
+0cbf0807|vernesong|Wed Jan 18 02:08:21 2023 +0800|fix typo
+3f4f0783|vernesong|Wed Jan 18 02:06:54 2023 +0800|chore: update meta core
+eef0a830|vernesong|Wed Jan 18 02:06:54 2023 +0800|chore: update meta core
+b71c74ab|vernesong|Sun Jan 15 23:34:17 2023 +0800|fix: dns hijack lo only for router self
+58a65959|vernesong|Sun Jan 15 23:34:17 2023 +0800|fix: dns hijack lo only for router self
+7a5f7482|vernesong|Sun Jan 15 21:51:30 2023 +0800|chore: update meta core
+7b4e7787|vernesong|Sun Jan 15 21:51:30 2023 +0800|chore: update meta core
+4827e9d7|vernesong|Thu Jan 12 19:15:54 2023 +0800|fix: ip6tables rules do not cleaned up
+b203204a|vernesong|Thu Jan 12 19:15:54 2023 +0800|fix: ip6tables rules do not cleaned up
+394b9308|vernesong|Thu Jan 12 11:01:07 2023 +0800|v0.45.79-beta
+cf6b8e48|vernesong|Thu Jan 12 11:01:07 2023 +0800|v0.45.79-beta
+1906844f|vernesong|Thu Jan 12 10:50:56 2023 +0800|chore: refine
+742f50dd|vernesong|Thu Jan 12 10:50:56 2023 +0800|chore: refine
+3cd112d9|vernesong|Thu Jan 12 10:28:51 2023 +0800|chore: update core
+3acb1363|vernesong|Thu Jan 12 10:28:51 2023 +0800|chore: update core
+90c58403|vernesong|Thu Jan 12 10:27:35 2023 +0800|chore: #2929
+28c06246|vernesong|Thu Jan 12 10:27:35 2023 +0800|chore: #2929
+7685621d|vernesong|Thu Jan 12 09:46:27 2023 +0800|feat: DNS hijack support firewall redirect
+7757e192|vernesong|Thu Jan 12 09:46:27 2023 +0800|feat: DNS hijack support firewall redirect
+3ffc0f6d|vernesong|Wed Jan 11 16:39:22 2023 +0800|Merge branch 'master' into dev
+050565a7|vernesong|Wed Jan 11 16:39:22 2023 +0800|Merge branch 'master' into dev
+ec35a02d|Inspo on U|Wed Jan 11 16:37:37 2023 +0800|Add local.adguard.org to openclash_custom_fake_filter.list (#2932)
+e63a32de|Inspo on U|Wed Jan 11 16:37:37 2023 +0800|Add local.adguard.org to openclash_custom_fake_filter.list (#2932)
+35be26a9|vernesong|Wed Jan 11 16:33:06 2023 +0800|fix find-process-mode option not write in config
+aa751afe|vernesong|Wed Jan 11 16:33:06 2023 +0800|fix find-process-mode option not write in config
+b1f60580|vernesong|Wed Jan 11 16:25:52 2023 +0800|fix typo
+bc13e3fe|vernesong|Wed Jan 11 16:25:52 2023 +0800|fix typo
+f9176885|vernesong|Wed Jan 11 16:24:05 2023 +0800|chore: rm server ping option
+54781ec6|vernesong|Wed Jan 11 16:24:05 2023 +0800|chore: rm server ping option
+32ca7915|vernesong|Wed Jan 11 16:14:02 2023 +0800|chore: Enable Process Rule option for meta
+21f45954|vernesong|Wed Jan 11 16:14:02 2023 +0800|chore: Enable Process Rule option for meta
+2ae99429|vernesong|Wed Jan 11 16:00:12 2023 +0800|chore: shadow-tls for meta
+f30669a0|vernesong|Wed Jan 11 16:00:12 2023 +0800|chore: shadow-tls for meta
+f7b8c4dc|vernesong|Sat Jan 7 15:39:13 2023 +0800|chore: change disable dnsmasq cache to true as default
+f0b4bf54|vernesong|Sat Jan 7 15:39:13 2023 +0800|chore: change disable dnsmasq cache to true as default
+0597a611|vernesong|Tue Jan 3 16:59:34 2023 +0800|chore: update core
+de526ee7|vernesong|Tue Jan 3 16:59:34 2023 +0800|chore: update core
+68090657|vernesong|Mon Dec 19 21:22:25 2022 +0800|v0.45.78-beta
+9f0873d9|vernesong|Mon Dec 19 21:22:25 2022 +0800|v0.45.78-beta
+195785f3|vernesong|Mon Dec 19 21:10:41 2022 +0800|chore: update meta core
+d5e02a10|vernesong|Mon Dec 19 21:10:41 2022 +0800|chore: update meta core
+dcc16408|vernesong|Tue Dec 13 18:40:23 2022 +0800|chore: update meta core
+50b884ce|vernesong|Tue Dec 13 18:40:23 2022 +0800|chore: update meta core
+177e5e69|vernesong|Sun Dec 11 22:23:07 2022 +0800|chore: update meta core
+e20c4602|vernesong|Sun Dec 11 22:23:07 2022 +0800|chore: update meta core
+648f90bb|vernesong|Sat Dec 10 18:53:07 2022 +0800|chore: update core
+58838751|vernesong|Sat Dec 10 18:53:07 2022 +0800|chore: update core
+b5b71265|vernesong|Sat Dec 10 18:42:47 2022 +0800|v0.45.77-beta
+62e24fc4|vernesong|Sat Dec 10 18:42:47 2022 +0800|v0.45.77-beta
+fd0d328a|vernesong|Sat Dec 10 18:37:24 2022 +0800|chore: refine
+1e963718|vernesong|Sat Dec 10 18:37:24 2022 +0800|chore: refine
+f391824a|vernesong|Fri Dec 9 17:27:04 2022 +0800|chore: change default github_address_mod to https://testingcf.jsdelivr.net/
+a6853dca|vernesong|Fri Dec 9 17:27:04 2022 +0800|chore: change default github_address_mod to https://testingcf.jsdelivr.net/
+220d86d2|vernesong|Thu Dec 8 20:44:18 2022 +0800|chore: core restart when firewall reload
+df1873b0|vernesong|Thu Dec 8 20:44:18 2022 +0800|chore: core restart when firewall reload
+5b9905c3|vernesong|Wed Dec 7 18:59:09 2022 +0800|chore: refine
+5fe10475|vernesong|Wed Dec 7 18:59:09 2022 +0800|chore: refine
+7739769d|vernesong|Wed Dec 7 08:43:55 2022 +0800|fix typo
+351da447|vernesong|Wed Dec 7 08:43:55 2022 +0800|fix typo
+936e91a4|vernesong|Tue Dec 6 20:11:38 2022 +0800|chore: update meta core
+446a7464|vernesong|Tue Dec 6 20:11:38 2022 +0800|chore: update meta core
+79488321|vernesong|Tue Dec 6 20:10:44 2022 +0800|chore: refine
+93bf94b2|vernesong|Tue Dec 6 20:10:44 2022 +0800|chore: refine
+055ea5f3|vernesong|Tue Dec 6 19:54:54 2022 +0800|v0.45.76-beta
+7516657a|vernesong|Tue Dec 6 19:54:54 2022 +0800|v0.45.76-beta
+8d84a059|vernesong|Tue Dec 6 19:52:05 2022 +0800|chore: add urltest url custom option
+77fc1051|vernesong|Tue Dec 6 19:52:05 2022 +0800|chore: add urltest url custom option
+3d5f2513|vernesong|Tue Dec 6 18:56:49 2022 +0800|chore: refine
+f99a4d99|vernesong|Tue Dec 6 18:56:49 2022 +0800|chore: refine
+75b18964|vernesong|Fri Dec 2 22:54:00 2022 +0800|chore: refine
+c7678717|vernesong|Fri Dec 2 22:54:00 2022 +0800|chore: refine
+3f590679|vernesong|Thu Dec 1 21:28:08 2022 +0800|chore: update meta core
+f9c7b1cf|vernesong|Thu Dec 1 21:28:08 2022 +0800|chore: update meta core
+61b2feaf|vernesong|Wed Nov 30 19:38:24 2022 +0800|chore: log color
+a70307af|vernesong|Wed Nov 30 19:38:24 2022 +0800|chore: log color
+721bebe7|vernesong|Wed Nov 30 12:10:17 2022 +0800|fix: LOG ALERT
+cc2d042d|vernesong|Wed Nov 30 12:10:17 2022 +0800|fix: LOG ALERT
+c9ee0b82|vernesong|Tue Nov 29 20:53:10 2022 +0800|v0.45.75-beta
+ee245985|vernesong|Tue Nov 29 20:53:10 2022 +0800|v0.45.75-beta
+9b3e344c|vernesong|Tue Nov 29 20:47:22 2022 +0800|chore: update meta core
+e655e1e7|vernesong|Tue Nov 29 20:47:22 2022 +0800|chore: update meta core
+7f7937a6|vernesong|Sun Nov 27 19:10:58 2022 +0800|chore: update meta core
+1014a163|vernesong|Sun Nov 27 19:10:58 2022 +0800|chore: update meta core
+8bd7fe70|vernesong|Sun Nov 27 18:52:39 2022 +0800|chore: Port Hopping&Max Open Streams with meta
+14199763|vernesong|Sun Nov 27 18:52:39 2022 +0800|chore: Port Hopping&Max Open Streams with meta
+a7f51281|vernesong|Sat Nov 26 23:29:46 2022 +0800|v0.45.74-beta
+82143162|vernesong|Sat Nov 26 23:29:46 2022 +0800|v0.45.74-beta
+a88cc27b|vernesong|Sat Nov 26 23:14:23 2022 +0800|chore: fingerprint option for hysteria
+1688c69c|vernesong|Sat Nov 26 23:14:23 2022 +0800|chore: fingerprint option for hysteria
+cd2171dd|vernesong|Sat Nov 26 23:08:53 2022 +0800|chore: refine
+6589d422|vernesong|Sat Nov 26 23:08:53 2022 +0800|chore: refine
+ca759a74|vernesong|Fri Nov 25 21:56:24 2022 +0800|chore: meta with tuic
+10896a6c|vernesong|Fri Nov 25 21:56:24 2022 +0800|chore: meta with tuic
+df226e6f|vernesong|Thu Nov 24 17:46:59 2022 +0800|v0.45.73-beta
+2f20f58a|vernesong|Thu Nov 24 17:46:59 2022 +0800|v0.45.73-beta
+d5b229d6|vernesong|Thu Nov 24 17:18:41 2022 +0800|chore: change the dns port which used by adguard home
+5bad35b6|vernesong|Thu Nov 24 17:18:41 2022 +0800|chore: change the dns port which used by adguard home
+670e5891|vernesong|Thu Nov 24 00:42:29 2022 +0800|chore: refine
+4e47da37|vernesong|Thu Nov 24 00:42:29 2022 +0800|chore: refine
+ad5820c8|vernesong|Tue Nov 22 00:23:46 2022 +0800|chore: update core
+f71036d7|vernesong|Tue Nov 22 00:23:46 2022 +0800|chore: update core
+c9f9dc97|vernesong|Mon Nov 21 23:45:15 2022 +0800|fix typo
+30914bd2|vernesong|Mon Nov 21 23:45:15 2022 +0800|fix typo
+61e9c86f|vernesong|Mon Nov 21 23:23:13 2022 +0800|chore: debug hide wanip
+4954aa60|vernesong|Mon Nov 21 23:23:13 2022 +0800|chore: debug hide wanip
+5e9029e9|vernesong|Mon Nov 21 23:06:05 2022 +0800|chore: debug info
+d938d122|vernesong|Mon Nov 21 23:06:05 2022 +0800|chore: debug info
+b246fd2d|vernesong|Mon Nov 21 21:08:09 2022 +0800|chore: increase timeout value
+19e8b742|vernesong|Mon Nov 21 21:08:09 2022 +0800|chore: increase timeout value
+88ee6d10|vernesong|Sun Nov 20 23:58:51 2022 +0800|chore: WireGuard
+8d73f92a|vernesong|Sun Nov 20 23:58:51 2022 +0800|chore: WireGuard
+c77863ec|vernesong|Thu Nov 17 23:54:19 2022 +0800|chore: update core
+0bb093b5|vernesong|Thu Nov 17 23:54:19 2022 +0800|chore: update core
+bc1b260f|vernesong|Thu Nov 17 23:37:29 2022 +0800|v0.45.72-beta
+f004445e|vernesong|Thu Nov 17 23:37:29 2022 +0800|v0.45.72-beta
+902ef611|vernesong|Thu Nov 17 01:21:54 2022 +0800|fix #2818
+e5e04025|vernesong|Thu Nov 17 01:21:54 2022 +0800|fix #2818
+618bafae|vernesong|Wed Nov 16 22:09:16 2022 +0800|fix #2799 curl's urlencode not work
+c0c8a70c|vernesong|Wed Nov 16 22:09:16 2022 +0800|fix #2799 curl's urlencode not work
+5de03840|vernesong|Wed Nov 16 21:01:40 2022 +0800|fix #2823
+484756b9|vernesong|Wed Nov 16 21:01:40 2022 +0800|fix #2823
+4a8e9825|vernesong|Mon Nov 14 17:56:54 2022 +0800|fix #2789
+fc27ebc9|vernesong|Mon Nov 14 17:56:54 2022 +0800|fix #2789
+e5aad027|vernesong|Sat Nov 12 22:42:24 2022 +0800|fix: fakeip bypass not work after firewall reload
+0d8ce55d|vernesong|Sat Nov 12 22:42:24 2022 +0800|fix: fakeip bypass not work after firewall reload
+add40215|vernesong|Sun Nov 6 23:35:55 2022 +0800|v0.45.71-beta
+52b072d8|vernesong|Sun Nov 6 23:35:55 2022 +0800|v0.45.71-beta
+cd361895|vernesong|Sun Nov 6 23:16:27 2022 +0800|fix #2661
+a7bf6968|vernesong|Sun Nov 6 23:16:27 2022 +0800|fix #2661
+11479b9d|vernesong|Sun Nov 6 02:36:01 2022 +0800|v0.45.70-beta
+548cd32c|vernesong|Sun Nov 6 02:36:01 2022 +0800|v0.45.70-beta
+647fb042|vernesong|Sat Nov 5 19:44:45 2022 +0800|chore: clean
+b822a035|vernesong|Sat Nov 5 19:38:14 2022 +0800|Delete luci-app-openclash_0.45.59-beta_all.ipk
+e00ce859|vernesong|Sat Nov 5 19:36:40 2022 +0800|Merge branch 'dev'
+e475a5d3|vernesong|Sat Nov 5 19:36:40 2022 +0800|Merge branch 'dev'
+c941941c|vernesong|Sat Nov 5 19:34:17 2022 +0800|v0.45.69-beta
+1537ad29|vernesong|Sat Nov 5 19:34:17 2022 +0800|v0.45.69-beta
+0a8c0840|vernesong|Thu Nov 3 21:08:22 2022 +0800|chore refine
+3dc9463f|vernesong|Thu Nov 3 21:08:22 2022 +0800|chore refine
+0ebf3510|vernesong|Thu Nov 3 20:46:03 2022 +0800|chore: update
+577bac2f|vernesong|Thu Nov 3 20:46:03 2022 +0800|chore: update
+10bde121|vernesong|Thu Nov 3 07:47:47 2022 +0800|chore: update meta core
+8def573c|vernesong|Thu Nov 3 07:47:47 2022 +0800|chore: update meta core
+407e6e06|vernesong|Thu Nov 3 07:36:08 2022 +0800|v0.45.68-beta
+1446203f|vernesong|Thu Nov 3 07:36:08 2022 +0800|v0.45.68-beta
+196e61b4|vernesong|Mon Oct 31 23:02:09 2022 +0800|chore: refine
+3234acff|vernesong|Mon Oct 31 23:02:09 2022 +0800|chore: refine
+75b365e1|vernesong|Mon Oct 31 22:57:21 2022 +0800|fix typo
+83351d58|vernesong|Mon Oct 31 22:57:21 2022 +0800|fix typo
+414ef69e|vernesong|Mon Oct 31 22:41:23 2022 +0800|fix: prevent ipset/nfset repeat
+7277c7fc|vernesong|Mon Oct 31 22:41:23 2022 +0800|fix: prevent ipset/nfset repeat
+d6840ac5|vernesong|Mon Oct 31 20:56:07 2022 +0800|chore: clean
+410e28df|vernesong|Mon Oct 31 20:52:07 2022 +0800|chore: clean
 </details>
