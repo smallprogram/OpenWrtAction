@@ -7,7 +7,7 @@ resp="${url##*/}"
 
 cd $GITHUB_WORKSPACE
 mkdir -p TMP_SHA_RESP
-cd $GITHUB_WORKSPACE/SHA_RESP
+cd $GITHUB_WORKSPACE/TMP_SHA_RESP
 git clone $url --filter=blob:none
 ls
 cd $resp
