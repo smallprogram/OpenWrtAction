@@ -126,15 +126,16 @@ for git_folder in "${git_folders[@]}"; do
             echo "     |-----------------------------------|"
             sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" git_log/$git_folder/log
         fi
-
+        
+        if [ -f "git_log/$git_folder/$OUTPUT_FILE.log" ]; then
+            echo "found file $OUTPUT_FILE.log!"
+            cat "git_log/$git_folder/$OUTPUT_FILE.log" >>release.txt
+        else
+            echo "no file $OUTPUT_FILE.log 404"
+        fi  
         echo "$git_folder-$OUTPUT_FILE complate git log update-----------------------------------------------------------"
     done
-    if [ -f "git_log/$git_folder/$OUTPUT_FILE.log" ]; then
-        echo "found file $OUTPUT_FILE.log!"
-        cat "git_log/$git_folder/$OUTPUT_FILE.log" >>release.txt
-    else
-        echo "no file $OUTPUT_FILE.log 404"
-    fi    
+  
 done
 
 
