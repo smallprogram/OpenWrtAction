@@ -50,16 +50,7 @@ for platform in "${selected_platforms[@]}"; do
 
     # Get the kernel version from the corresponding kernel file
     kernel_version=$(sed -n '2p' "$GITHUB_WORKSPACE/openwrt/include/kernel-$kernel" | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')
-
-
-    echo "  <tr>">>release_$source_code_platform.txt
-    echo "    <td><strong>🧊 $platform</strong></td>">>release_$source_code_platform.txt
-    echo "    <td><strong>$source_code_platform</strong></td>">>release_$source_code_platform.txt
-    echo "    <td><strong>$kernel_version</strong></td>">>release_$source_code_platform.txt
-    echo "    <td><strong>$target_board</strong></td>">>release_$source_code_platform.txt
-    echo "    <td><img src=\"https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square\" alt=\"build status\"/></td>">>release_$source_code_platform.txt
-    echo "  </tr>">>release_$source_code_platform.txt
-
+    echo "  <tr><td><strong>🧊 $platform</strong></td><td><strong>$source_code_platform</strong></td><td><strong>$kernel_version</strong></td><td><strong>$target_board</strong></td><td><img src=\"https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square\" alt=\"build status\"/></td></tr>">>release_$source_code_platform.txt
 done
 
 
