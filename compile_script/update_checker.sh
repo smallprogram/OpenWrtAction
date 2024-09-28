@@ -5,6 +5,7 @@ num=$2
 
 resp="${url##*/}"
 cd $GITHUB_WORKSPACE
+ls
 git clone $url --filter=blob:none
 echo $resp
 cd $resp
