@@ -1,4 +1,4 @@
-[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/multi-platform_2024.09.28_18.18.36/total?style=flat-square)](https://github.com/smallprogram/MyAction)
+[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/multi-platform_2024.09.28_18.33.54/total?style=flat-square)](https://github.com/smallprogram/MyAction)
 
 ## Source Code Information
 [![](https://img.shields.io/badge/sorce-immortalwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt) [![](https://img.shields.io/badge/sorce-lean-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede) [![](https://img.shields.io/badge/sorce-openwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)
@@ -335,8 +335,12 @@
     <td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
   </tr>
 </table>
+
 ## What's Changed
+
+
 ### immortalwrt
+
 <details> <summary> <b>luci new commit log :new: </b>  </summary>
 
 SHA|Author|Date|Message
@@ -367,7 +371,9 @@ d6d3c77df0|Chen Minqiang|Mon Apr 22 19:59:02 2024 +0800|luci-mod-network: source
 94f187bc9b|Paul Donald|Sat Sep 14 20:43:55 2024 +0200|luci-app-mwan3: add name length error check and name collision check
 b4a25a19a9|Paul Donald|Sat Sep 14 19:19:15 2024 +0200|luci-app-statistics: Fix variable scope
 </details>
+
 ### lede
+
 <details> <summary> <b>luci new commit log :new: </b>  </summary>
 
 SHA|Author|Date|Message
@@ -376,7 +382,9 @@ ddbc5ea|coolsnowwolf|Sat Aug 17 23:16:15 2024 +0800|luci-app-turboacc: update ta
 01beb0b|coolsnowwolf|Sat Sep 14 20:16:04 2024 +0800|Revert "luci-proto-ipv6: improve dhcpv6 support"
 5cd327a|coolsnowwolf|Thu Aug 22 20:10:50 2024 +0800|luci-app-oled: add new package for ssd1306
 </details>
+
 ### openwrt
+
 <details> <summary> <b>luci new commit log :new: </b>  </summary>
 
 SHA|Author|Date|Message
@@ -398,7 +406,9 @@ b6814c3337|Hannu Nyman|Thu Sep 19 21:06:19 2024 +0300|treewide: Sync translation
 8bdad6dd16|Stan Grishin|Thu Sep 19 16:25:05 2024 +0000|luci-app-pbr: update to 1.1.7-10
 470bb2b854|Mikael Magnusson|Tue Aug 20 22:17:36 2024 +0200|luci-base: form.js: decode HTML entities in AbstractElement.stripTags()
 </details>
+
 ### common feeds
+
 <details> <summary> <b>OpenClash new commit log :new: </b>  </summary>
 
 SHA|Author|Date|Message
