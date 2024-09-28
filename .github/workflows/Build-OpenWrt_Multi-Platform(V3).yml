@@ -563,9 +563,7 @@ jobs:
           cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
           mkdir -p feeds_packages
           firmware_path=$PWD
-          dd if=/dev/zero of=test.txt bs=1M count=10
-          dd if=/dev/zero of=openwrt-ddd.txt bs=1M count=10
-          dd if=/dev/zero of=immortalwrt-ddd.txt bs=1M count=10
+          dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.txt bs=1M count=10
 
           
           # cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
