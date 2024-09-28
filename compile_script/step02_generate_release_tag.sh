@@ -57,7 +57,7 @@ for platform in "${selected_platforms[@]}"; do
     echo "    <td><strong>$source_code_platform</strong></td>">>release_$source_code_platform.txt
     echo "    <td><strong>$kernel_version</strong></td>">>release_$source_code_platform.txt
     echo "    <td><strong>$target_board</strong></td>">>release_$source_code_platform.txt
-    echo "    <td><img scp="$source_code_platform" plm="$platform" src=\"https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square\" alt=\"build status\"/></td>">>release_$source_code_platform.txt
+    echo "    <td><img scp=\"$source_code_platform\" plm=\"$platform\" src=\"https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square\" alt=\"build status\"/></td>">>release_$source_code_platform.txt
     echo "  </tr>">>release_$source_code_platform.txt
 
 done
