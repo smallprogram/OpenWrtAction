@@ -1,4 +1,4 @@
-[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/multi-platform_2024.09.28_22.19.14/total?style=flat-square)](https://github.com/smallprogram/MyAction)
+[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/multi-platform_2024.09.28_22.58.34/total?style=flat-square)](https://github.com/smallprogram/MyAction)
 
 ## Source Code Information
 [![](https://img.shields.io/badge/sorce-immortalwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt) [![](https://img.shields.io/badge/sorce-lean-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede) [![](https://img.shields.io/badge/sorce-openwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)
@@ -12,52 +12,328 @@
     <th>target</th>
     <th>compile status</th>
   </tr>
-  <tr><td><strong>🧊 X86</strong></td><td><strong>immortalwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>x86</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R2C</strong></td><td><strong>immortalwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R2CPLUS</strong></td><td><strong>immortalwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R2S</strong></td><td><strong>immortalwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R4S</strong></td><td><strong>immortalwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R4SE</strong></td><td><strong>immortalwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R4SENT</strong></td><td><strong>immortalwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R5C</strong></td><td><strong>immortalwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R5S</strong></td><td><strong>immortalwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R6C</strong></td><td><strong>immortalwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R6S</strong></td><td><strong>immortalwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R66S</strong></td><td><strong>immortalwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R68S</strong></td><td><strong>immortalwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 X86</strong></td><td><strong>lede</strong></td><td><strong>6.6.52</strong></td><td><strong>x86</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R5S</strong></td><td><strong>lede</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R5C</strong></td><td><strong>lede</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R4S</strong></td><td><strong>lede</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R4SE</strong></td><td><strong>lede</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R2S</strong></td><td><strong>lede</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R2C</strong></td><td><strong>lede</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 H66K</strong></td><td><strong>lede</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 H68K</strong></td><td><strong>lede</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 H69K</strong></td><td><strong>lede</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R66S</strong></td><td><strong>lede</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R68S</strong></td><td><strong>lede</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R_PI_3b</strong></td><td><strong>lede</strong></td><td><strong>6.1.111</strong></td><td><strong>bcm27xx</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R_PI_4b</strong></td><td><strong>lede</strong></td><td><strong>6.1.111</strong></td><td><strong>bcm27xx</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 Asus_TUF_AX4200</strong></td><td><strong>lede</strong></td><td><strong>6.1.111</strong></td><td><strong>mediatek</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 JDCloud_AX6000</strong></td><td><strong>lede</strong></td><td><strong>6.1.111</strong></td><td><strong>mediatek</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 Phicomm_N1</strong></td><td><strong>lede</strong></td><td><strong>6.1.111</strong></td><td><strong>amlogic</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 Thunder_OneCloud</strong></td><td><strong>lede</strong></td><td><strong>6.1.111</strong></td><td><strong>amlogic</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 RedMi_AX5</strong></td><td><strong>lede</strong></td><td><strong>6.1.111</strong></td><td><strong>qualcommax</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 XiaoMi_AX6S</strong></td><td><strong>lede</strong></td><td><strong>6.1.111</strong></td><td><strong>mediatek</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 XiaoMi_AX3000T</strong></td><td><strong>lede</strong></td><td><strong>6.1.111</strong></td><td><strong>mediatek</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 XiaoMi_AX3600</strong></td><td><strong>lede</strong></td><td><strong>6.1.111</strong></td><td><strong>qualcommax</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 XiaoMi_AX6000</strong></td><td><strong>lede</strong></td><td><strong>6.1.111</strong></td><td><strong>mediatek</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 XiaoMi_AX9000</strong></td><td><strong>lede</strong></td><td><strong>6.1.111</strong></td><td><strong>qualcommax</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 X86</strong></td><td><strong>openwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>x86</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R2C</strong></td><td><strong>openwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R2CPLUS</strong></td><td><strong>openwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R2S</strong></td><td><strong>openwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R4S</strong></td><td><strong>openwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R4SE</strong></td><td><strong>openwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R5C</strong></td><td><strong>openwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R5S</strong></td><td><strong>openwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
-  <tr><td><strong>🧊 R6S</strong></td><td><strong>openwrt</strong></td><td><strong>6.6.52</strong></td><td><strong>rockchip</strong></td><td><img src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td></tr>
+  <tr>
+    <td><strong>🧊 X86</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>x86</strong></td>
+    <td><img scp=immortalwrt plm=X86 src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R2C</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=immortalwrt plm=R2C src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R2CPLUS</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=immortalwrt plm=R2CPLUS src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R2S</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=immortalwrt plm=R2S src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R4S</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=immortalwrt plm=R4S src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R4SE</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=immortalwrt plm=R4SE src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R4SENT</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=immortalwrt plm=R4SENT src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R5C</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=immortalwrt plm=R5C src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R5S</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=immortalwrt plm=R5S src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R6C</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=immortalwrt plm=R6C src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R6S</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=immortalwrt plm=R6S src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R66S</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=immortalwrt plm=R66S src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R68S</strong></td>
+    <td><strong>immortalwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=immortalwrt plm=R68S src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 X86</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>x86</strong></td>
+    <td><img scp=lede plm=X86 src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R5S</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=lede plm=R5S src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R5C</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=lede plm=R5C src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R4S</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=lede plm=R4S src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R4SE</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=lede plm=R4SE src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R2S</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=lede plm=R2S src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R2C</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=lede plm=R2C src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 H66K</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=lede plm=H66K src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 H68K</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=lede plm=H68K src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 H69K</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=lede plm=H69K src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R66S</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=lede plm=R66S src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R68S</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=lede plm=R68S src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R_PI_3b</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>bcm27xx</strong></td>
+    <td><img scp=lede plm=R_PI_3b src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R_PI_4b</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>bcm27xx</strong></td>
+    <td><img scp=lede plm=R_PI_4b src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 Asus_TUF_AX4200</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>mediatek</strong></td>
+    <td><img scp=lede plm=Asus_TUF_AX4200 src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 JDCloud_AX6000</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>mediatek</strong></td>
+    <td><img scp=lede plm=JDCloud_AX6000 src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 Phicomm_N1</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>amlogic</strong></td>
+    <td><img scp=lede plm=Phicomm_N1 src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 Thunder_OneCloud</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>amlogic</strong></td>
+    <td><img scp=lede plm=Thunder_OneCloud src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 RedMi_AX5</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>qualcommax</strong></td>
+    <td><img scp=lede plm=RedMi_AX5 src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 XiaoMi_AX6S</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>mediatek</strong></td>
+    <td><img scp=lede plm=XiaoMi_AX6S src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 XiaoMi_AX3000T</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>mediatek</strong></td>
+    <td><img scp=lede plm=XiaoMi_AX3000T src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 XiaoMi_AX3600</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>qualcommax</strong></td>
+    <td><img scp=lede plm=XiaoMi_AX3600 src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 XiaoMi_AX6000</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>mediatek</strong></td>
+    <td><img scp=lede plm=XiaoMi_AX6000 src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 XiaoMi_AX9000</strong></td>
+    <td><strong>lede</strong></td>
+    <td><strong>6.1.111</strong></td>
+    <td><strong>qualcommax</strong></td>
+    <td><img scp=lede plm=XiaoMi_AX9000 src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 X86</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>x86</strong></td>
+    <td><img scp=openwrt plm=X86 src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R2C</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=openwrt plm=R2C src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R2CPLUS</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=openwrt plm=R2CPLUS src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R2S</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=openwrt plm=R2S src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R4S</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=openwrt plm=R4S src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R4SE</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=openwrt plm=R4SE src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R5C</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=openwrt plm=R5C src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R5S</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=openwrt plm=R5S src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
+  <tr>
+    <td><strong>🧊 R6S</strong></td>
+    <td><strong>openwrt</strong></td>
+    <td><strong>6.6.52</strong></td>
+    <td><strong>rockchip</strong></td>
+    <td><img scp=openwrt plm=R6S src="https://img.shields.io/badge/build-in_progress_or_waiting.....-yellow?logo=githubactions&logoColor=yellow&style=flat-square" alt="build status"/></td>
+  </tr>
 </table>
 
 ## What's Changed
@@ -65,16 +341,16 @@
 
 ### immortalwrt
 
-No source code updates......
-
-### lede
-
-<details> <summary> <b>lede new commit log :new: </b>  </summary>
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
 
 SHA|Author|Date|Message
 -|-|-|-
-02f936358|syb999|Sat Sep 21 17:25:09 2024 +0800|usb-audio: add kernel 6.6 dependency
+64fc2977b|Tianling Shen|Sat Sep 28 22:33:05 2024 +0800|daed: Update to 0.7.4
 </details>
+
+### lede
+
+No source code updates......
 
 ### openwrt
 
@@ -82,9 +358,4 @@ No source code updates......
 
 ### common feeds
 
-<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-f02cbb2|yk271|Sat Sep 28 21:55:02 2024 +0800|v2ray-geodata: bump to latest version (#292)
-</details>
+No source code updates......
