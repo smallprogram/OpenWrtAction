@@ -1,0 +1,12 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6ec371a|zhusir|Fri Sep 27 14:03:03 2024 +0800|action: update dependence
+deda3aa|github-actions[bot]|Mon Sep 23 00:20:50 2024 +0800|xray-core: update to 24.9.19 (#291)
+8b4e169|github-actions[bot]|Mon Sep 23 00:17:39 2024 +0800|shadowsocks-rust: update to 1.21.0 (#289)
+7bf29b6|github-actions[bot]|Sat Sep 21 22:09:06 2024 +0800|sing-box: update to 1.9.6 (#288)
+0897bac|github-actions[bot]|Thu Sep 19 02:56:55 2024 +0800|sing-box: update to 1.9.5 (#287)
+51a66a9|github-actions[bot]|Wed Sep 18 00:52:23 2024 +0800|v2ray-core: update to 5.19.0 (#285)
+414ec8d|github-actions[bot]|Wed Sep 18 00:52:07 2024 +0800|xray-core: update to 24.9.16 (#286)
+</details>
