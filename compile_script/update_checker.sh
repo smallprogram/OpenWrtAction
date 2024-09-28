@@ -4,11 +4,13 @@ url=$1
 num=$2
 
 resp="${url##*/}"
+
 cd $GITHUB_WORKSPACE
-ls
+rm -rf SHA_RESP
+mkdir -p SHA_RESP
+cd $GITHUB_WORKSPACE/SHA_RESP
 git clone $url --filter=blob:none
-echo $resp
+ls
 cd $resp
 echo "SHA_$num=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-cd
-rm -rf $GITHUB_WORKSPACE/$resp
+cd $GITHUB_WORKSPACE
