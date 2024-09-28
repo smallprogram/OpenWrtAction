@@ -11,8 +11,6 @@
 name: test
 
 on:
-  repository_dispatch:
-    types: [openwrt_source_update]
   workflow_dispatch:
     inputs:
       ssh:
