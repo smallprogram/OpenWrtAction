@@ -57,9 +57,9 @@ for git_folder in "${git_folders[@]}"; do
     fi
 done
 echo "</table>">>release.txt
-echo ""
+echo "">>release.txt
 echo "## What's Changed" >>release.txt
-echo ""
+echo "">>release.txt
 # 删掉git_log目录和子目录中的除了log文件以外的所有文件
 find git_log -type f ! -name 'log' -exec rm {} +
 mkdir -p git_repositories
@@ -69,13 +69,13 @@ for git_folder in "${git_folders[@]}"; do
     declare -n repo_urls="${git_folder}_REPO_URLS"
 
     if [[ "$git_folder" == "feeds" ]]; then
-        echo ""
+        echo "">>release.txt
         echo "### common $git_folder" >>release.txt
-        echo ""
+        echo "">>release.txt
     else
-        echo ""
+        echo "">>release.txt
         echo "### $git_folder" >>release.txt
-        echo ""
+        echo "">>release.txt
     fi
 
 
