@@ -4,57 +4,66 @@ token=$1
 repository=$2
 run_id=$3
 
-source $GITHUB_WORKSPACE/compile_script/platforms.sh
+page=1
+jobs_data_file=$(mktemp)  # 创建一个临时文件
+release_temp_file=$(mktemp)  # 创建一个临时文件用于存储release.txt内容
+
+
 
 if [ -f "release.txt" ]; then
-
-    json_data=$(curl -s -H "Authorization: Bearer $token" "https://api.github.com/repos/$repository/actions/runs/$run_id/jobs")
-    name_conclusion_array=($(echo "$json_data" | jq -r '.jobs[] | select(.name | startswith("Build-")) | "\(.name).\(.conclusion)"'))
-
-    # 创建一个数组存储执行状态
-    declare -A status_map
-
-    # 填充状态映射
-    for item in "${name_conclusion_array[@]}"; do
-        IFS='.' read -r name conclusion <<<"$item"
-
-        # 动态提取 platform 和 source platform
-        platform=$(echo "$name" | sed -E 's/^Build-//; s/-.*//')  # 提取 Build- 后第一个 - 之前的部分
-        source_platform=$(echo "$name" | sed -E 's/^Build-[^-]+-//; s/-.*//')  # 提取第二个 - 后的内容
-
-        # 根据 Conclusion 设置对应的状态
-        if [[ "$conclusion" == "success" ]]; then
-            status_map["$platform-$source_platform"]="![](https://img.shields.io/badge/build-passing-green?logo=githubactions&logoColor=green&style=flat-square)"
-        else
-            status_map["$platform-$source_platform"]="![](https://img.shields.io/badge/build-failure-red?logo=githubactions&logoColor=red&style=flat-square)"
+    while true; do
+        json_data=$(curl -s -H "Authorization: Bearer $token" "https://api.github.com/repos/$repository/actions/runs/$run_id/jobs?page=$page")
+        # 检查 jobs 数组是否为空
+        jobs=$(echo "$json_data" | jq '.jobs')
+        job_count=$(echo "$jobs" | jq 'length')
+        if [[ "$job_count" -eq 0 ]]; then
+            break
         fi
+
+        # 将当前页的 jobs 添加到 jobs_data_file 中，确保格式正确
+        echo "$jobs" | jq -c '.[]' >> "$jobs_data_file"
+        ((page++))  # 递增页码
     done
 
-    # 更新 release.txt 文件中的 compile status
-    while IFS= read -r line; do
-        if [[ "$line" =~ <td><strong>(.*)</strong></td> ]]; then
-            platform_name="${BASH_REMATCH[1]}"
+    # 从临时文件读取所有 jobs，并确保格式正确
+    all_jobs=$(jq -s '.' "$jobs_data_file")
 
-            # 提取当前行的 source platform
-            source_platform=$(echo "$line" | sed -E 's/.*<td><strong>([^<]*)<\/strong>.*/\1/')  # 提取 source platform
+    # 过滤以 Build- 开头的 jobs
+    filtered_jobs=$(echo "$all_jobs" | jq -c 'map(select(.name | startswith("Build-")))')
 
-            # 提取平台名并根据映射更新 compile status
-            compile_status_key="$platform_name-$source_platform"
-            if [[ -n "${status_map[$compile_status_key]}" ]]; then
-                new_status="${status_map[$compile_status_key]}"
-                line=$(echo "$line" | sed "s|<td>.*</td>|<td>$new_status</td>|")
-            fi
-        fi
-        echo "$line" >> updated_release.txt  # 输出到新的文件中
-    done < release.txt
+    # 读取release.txt文件内容
+    cp release.txt "$release_temp_file"
 
-    # 替换原文件
-    mv updated_release.txt release.txt
+    # 使用jq解析JSON并提取所需信息
+    echo "$filtered_jobs" | jq -c '.[]' | while read -r job; do
+        name=$(echo "$job" | jq -r '.name')
+        source_platform=$(echo "$name" | cut -d'-' -f2)
+        platform=$(echo "$name" | cut -d'-' -f3-)
+        conclusion=$(echo "$job" | jq -r '.conclusion')
 
-    echo "status=success" >>$GITHUB_OUTPUT
-    echo "-----------------------release.txt------------------------"
-    cat release.txt
+        echo "source_platform: $source_platform"
+        echo "platform: $platform"
+        echo "conclusion: $conclusion"
+        echo "-----------------------------"
+        awk -v sp="$source_platform" -v pl="$platform" -v concl="$conclusion" '
+        {
+            if ($0 ~ "scp=\"" sp "\"" && $0 ~ "plm=\"" pl "\"") {
+                gsub(/src="[^"]*"/, "src=\"\"", $0)  # 清除src属性的值
+                if (concl == "success") {
+                    gsub(/src=""/, "src=\"https://img.shields.io/badge/build-passing-green?logo=githubactions&logoColor=green&style=flat-square\"", $0)
+                } else {
+                    gsub(/src=""/, "src=\"https://img.shields.io/badge/build-failure-red?logo=githubactions&logoColor=red&style=flat-square\"", $0)
+                }
+            }
+            print
+        }' "$release_temp_file" > temp && mv temp "$release_temp_file"
+    done
+    # 将更新后的内容写回release.txt文件
+    cp "$release_temp_file" release.txt
+    sed -i 's/src=""/\&/g' release.txt
 
+    # 清理临时文件
+    rm "$jobs_data_file"
 else
     echo "status=failure" >>$GITHUB_OUTPUT
 fi
