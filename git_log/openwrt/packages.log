@@ -1,0 +1,17 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+7e9ef5781|Tianling Shen|Sat Sep 28 15:46:14 2024 +0800|btop: Update to 1.4.0
+a8dd735d9|Aleksey Vasilenko|Tue Sep 24 15:28:17 2024 +0300|git: update to 2.46.2
+381f729b4|S. Brusch|Thu Sep 26 15:23:08 2024 +0000|crowdsec-firewall-bouncer: updated to new upstream release version 0.0.31
+97a071620|Stan Grishin|Thu Sep 26 20:43:56 2024 +0000|pbr: update to 1.1.7-15
+1b9a6ae47|Florian Eckert|Fri Sep 27 15:19:05 2024 +0200|Revert "mwan3: use network_get_preferred_ipaddr6"
+179bf9d62|Aleksey Vasilenko|Thu Sep 19 11:16:45 2024 +0300|squid: update to 6.11
+ada1f4794|Aleksey Vasilenko|Thu Sep 19 10:04:06 2024 +0300|libpng: update to 1.6.44
+06eb25106|Milinda Brantini|Mon Sep 23 21:10:04 2024 +0800|sing-box: Update to 1.9.6
+500a8ab99|Milinda Brantini|Mon Sep 23 21:09:09 2024 +0800|sing-box: Update to 1.9.5
+b90e9b7eb|John Audia|Sun Sep 22 14:07:20 2024 -0400|openssh: bump to 9.9p1
+b1635b899|Noah Meyerhans|Mon Sep 9 09:06:29 2024 -0400|iputils: bump to 20240905
+d9cc0e1cd|Florian Eckert|Wed Sep 25 16:35:57 2024 +0200|ddns-scripts: fix update_porkbun_v3 shell syntax
+</details>
