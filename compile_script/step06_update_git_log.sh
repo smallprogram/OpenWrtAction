@@ -69,9 +69,11 @@ for git_folder in "${git_folders[@]}"; do
     declare -n repo_urls="${git_folder}_REPO_URLS"
 
     if [[ "$git_folder" == "feeds" ]]; then
+        echo ""
         echo "### common $git_folder" >>release.txt
         echo ""
     else
+        echo ""
         echo "### $git_folder" >>release.txt
         echo ""
     fi
@@ -83,7 +85,8 @@ for git_folder in "${git_folders[@]}"; do
         TITLE_MESSAGE="${url##*/} new commit log"
 
         SHA_Begin=$(grep "^${OUTPUT_FILE}:" git_log/${git_folder}/log | cut -d: -f2)
-        
+        echo ""
+        echo "$git_folder-$OUTPUT_FILE Begin git log update-----------------------------------------------------------"
         echo "SHABegin:$SHA_Begin"
 
         if [[ "$git_folder" == "feeds" ]]; then
@@ -123,6 +126,8 @@ for git_folder in "${git_folders[@]}"; do
             echo "     |-----------------------------------|"
             sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" git_log/$git_folder/log
         fi
+
+        echo "$git_folder-$OUTPUT_FILE complate git log update-----------------------------------------------------------"
     done
     if [ -f "git_log/$git_folder/$OUTPUT_FILE.log" ]; then
         echo "found file $OUTPUT_FILE.log!"
