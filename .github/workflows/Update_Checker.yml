@@ -23,6 +23,9 @@ on:
       # 0 4 * * 5
       # 0 4,12,20 * * *
 
+env:
+  UPDATE_CHECKER: compile_script/update_checker.sh
+
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -41,108 +44,44 @@ jobs:
     - name: Get Commit Hash
       id: getHash
       run: |
-        git clone https://github.com/coolsnowwolf/lede --filter=blob:none
-        cd lede
-        echo "SHA_01=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        cd
-
-        git clone https://github.com/coolsnowwolf/packages --filter=blob:none
-        cd packages
-        echo "SHA_02=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        cd
-
-        git clone https://github.com/coolsnowwolf/luci --filter=blob:none
-        cd luci
-        echo "SHA_03=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        cd
-
-        git clone -b openwrt-23.05  https://github.com/openwrt/routing.git --filter=blob:none
-        cd routing
-        echo "SHA_04=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        cd
-        
-        git clone -b openwrt-23.05 https://github.com/openwrt/telephony.git --filter=blob:none
-        cd telephony
-        echo "SHA_05=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        cd
-
-        git clone https://github.com/fw876/helloworld --filter=blob:none
-        cd helloworld
-        echo "SHA_06=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        cd
-
-        git clone https://github.com/xiaorouji/openwrt-passwall-packages --filter=blob:none
-        cd openwrt-passwall-packages
-        echo "SHA_07=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        cd
-
-        git clone https://github.com/xiaorouji/openwrt-passwall --filter=blob:none
-        cd openwrt-passwall
-        echo "SHA_08=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        cd
-
-        git clone https://github.com/xiaorouji/openwrt-passwall2 --filter=blob:none
-        cd openwrt-passwall2
-        echo "SHA_09=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        cd
-
-        git clone  https://github.com/vernesong/OpenClash.git --filter=blob:none
-        cd OpenClash
-        echo "SHA_10=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        cd
-
-        git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git --filter=blob:none
-        cd luci-theme-argon
-        echo "SHA_11=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        cd
-
-        git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git --filter=blob:none
-        cd luci-app-argon-config
-        echo "SHA_12=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        cd
-
-        git clone https://github.com/rufengsuixing/luci-app-adguardhome.git --filter=blob:none
-        cd luci-app-adguardhome
-        echo "SHA_13=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        cd
-
-        git clone https://github.com/sbwml/luci-app-mosdns -b v5 --filter=blob:none
-        cd luci-app-mosdns
-        echo "SHA_14=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        cd
-
-        git clone https://github.com/destan19/OpenAppFilter.git --filter=blob:none
-        cd OpenAppFilter
-        echo "SHA_15=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        cd
-
-        git clone https://github.com/sirpdboy/netspeedtest.git --filter=blob:none
-        cd netspeedtest
-        echo "SHA_16=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-        cd
-
-
-
+        chmod +x $UPDATE_CHECKER
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/immortalwrt/immortalwrt" "01"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/immortalwrt/packages" "02"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/immortalwrt/luci" "03"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/coolsnowwolf/lede" "04"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/coolsnowwolf/packages" "05"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/coolsnowwolf/luci" "06"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/openwrt" "07"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/packages" "08"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/luci" "09"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/routing" "10"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/telephony" "11"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/xiaorouji/openwrt-passwall-packages" "12"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/xiaorouji/openwrt-passwall" "13"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/xiaorouji/openwrt-passwall2" "14"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/fw876/helloworld" "15"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/vernesong/OpenClash" "16"
+             
     - name: Show Commit Head and Combination Heads
       id: combHeader
       run: |
         echo "commitHash_All=\
-          ${{steps.getHash.outputs.SHA_01}}\
-          ${{steps.getHash.outputs.SHA_02}}\
-          ${{steps.getHash.outputs.SHA_03}}\
-          ${{steps.getHash.outputs.SHA_04}}\
-          ${{steps.getHash.outputs.SHA_05}}\
-          ${{steps.getHash.outputs.SHA_06}}\
-          ${{steps.getHash.outputs.SHA_07}}\
-          ${{steps.getHash.outputs.SHA_08}}\
-          ${{steps.getHash.outputs.SHA_09}}\
-          ${{steps.getHash.outputs.SHA_10}}\
-          ${{steps.getHash.outputs.SHA_11}}\
-          ${{steps.getHash.outputs.SHA_12}}\
-          ${{steps.getHash.outputs.SHA_13}}\
-          ${{steps.getHash.outputs.SHA_14}}\
-          ${{steps.getHash.outputs.SHA_15}}\
-          ${{steps.getHash.outputs.SHA_16}}" >> $GITHUB_OUTPUT
+        ${{steps.getHash.outputs.SHA_01}}\
+        ${{steps.getHash.outputs.SHA_02}}\
+        ${{steps.getHash.outputs.SHA_03}}\
+        ${{steps.getHash.outputs.SHA_04}}\
+        ${{steps.getHash.outputs.SHA_05}}\
+        ${{steps.getHash.outputs.SHA_06}}\
+        ${{steps.getHash.outputs.SHA_07}}\
+        ${{steps.getHash.outputs.SHA_08}}\
+        ${{steps.getHash.outputs.SHA_09}}\
+        ${{steps.getHash.outputs.SHA_10}}\
+        ${{steps.getHash.outputs.SHA_11}}\
+        ${{steps.getHash.outputs.SHA_12}}\
+        ${{steps.getHash.outputs.SHA_13}}\
+        ${{steps.getHash.outputs.SHA_14}}\
+        ${{steps.getHash.outputs.SHA_15}}\
+        ${{steps.getHash.outputs.SHA_16}}" >> $GITHUB_OUTPUT
 
     - name: Compare Commit Hash
       id: cacheHash

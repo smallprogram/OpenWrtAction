@@ -64,6 +64,7 @@ if [ -f "release.txt" ]; then
 
     # 清理临时文件
     rm "$jobs_data_file"
+    echo "status=success" >>$GITHUB_OUTPUT
 else
     echo "status=failure" >>$GITHUB_OUTPUT
 fi

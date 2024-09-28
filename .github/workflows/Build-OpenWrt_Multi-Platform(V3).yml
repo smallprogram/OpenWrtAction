@@ -34,8 +34,6 @@ env:
   MAKE_DEFCONFIG_SH: compile_script/step01_make_defconfig.sh
   GENERATE_RELEASE_TAG_SH: compile_script/step02_generate_release_tag.sh
   GENERATE_GIT_LOG_SH: compile_script/step03_generate_git_log.sh
-  COPY_BACKGROUNDFILES_SH: compile_script/step04_copy_backgroundfiles.sh
-  BUILD_STATUS_CHECKING_SH: compile_script/step05_build_status_checking.sh
   UPDATE_GIT_LOG_SH:  compile_script/step06_update_git_log.sh
   ORGANIZE_TAG_SH: compile_script/step07_organize_tag.sh
 
@@ -244,30 +242,24 @@ jobs:
         pattern: release_*
         merge-multiple: true
 
-    - name: SSH connection to Actions
-      uses: mxschmitt/action-tmate@v3.16
-      if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
-    # - name: File Extraction
-    #   working-directory: /workdir
-    #   run: |
-    #     echo "source packages size:"
-    #     ls -lh download/output.tar.gz
-    #     tar -xzf download/output.tar.gz
-    #     rm -rf download/output.tar.gz
-    #     cd download
-    #     echo "TAG_PATH=$PWD" >> $GITHUB_ENV
-    #     cd ..
-    #     sudo chown -R $USER:$GROUPS /workdir/openwrt
-
     - name: Generate Release Tag
       id: tag
       run: |
         chmod +x $UPDATE_GIT_LOG_SH
         $GITHUB_WORKSPACE/$UPDATE_GIT_LOG_SH "${{ needs.job_init.outputs.output_release_tag }}"
 
+    - name: Upload Tags To Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: release_tag
+        path: release.txt
+        retention-days: 5
+
     - name: Merge and push changes with "theirs" strategy
       run: |
+        
         git checkout temp-tag-gitlog
+        rm -rf release.txt
         git add .
 
         if ! git diff --cached --quiet; then
@@ -296,12 +288,7 @@ jobs:
         fi
 
       
-    - name: Upload Tags To Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: release_tag
-        path: release.txt
-        retention-days: 5
+
 
   job_build:
     needs: [job_init, job_defconfig, job_generate_release_tag]
@@ -345,7 +332,7 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           sudo -E apt-get -qq update
-          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
+          # sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
           # sudo bash -c 'bash <(curl -s https://build-scripts.immortalwrt.org/init_build_environment.sh)'
           sudo -E apt-get -qq autoremove --purge
           sudo -E apt-get -qq clean
