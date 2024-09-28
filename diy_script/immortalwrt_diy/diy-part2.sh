@@ -32,3 +32,5 @@ sed -i 's/192.168.1.1/10.10.0.253/g' package/base-files/files/bin/config_generat
 # Diy
 # rm -rf ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
 # wget -P ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status https://github.com/smallprogram/OpenWrtAction/raw/main/source/openwrtfile/index.htm
+
+echo "DIY2 is complate!"

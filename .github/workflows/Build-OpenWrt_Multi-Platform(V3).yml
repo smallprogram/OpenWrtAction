@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build-OpenWrt_Multi-Platform(V2)
+name: Build-OpenWrt_Multi-Platform(V3)
 
 on:
   repository_dispatch:
@@ -31,18 +31,9 @@ on:
   #   - cron: 0 */8 * * *
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
-  FEEDS_CONF: feeds_config/lean.feeds.conf.default
-  CONFIGS: config/leanlede_config
-
-  DIY_P1_SH: diy_script/lean_diy/diy-part1.sh
-  DIY_P2_SH: diy_script/lean_diy/diy-part2.sh
   MAKE_DEFCONFIG_SH: compile_script/step01_make_defconfig.sh
   GENERATE_RELEASE_TAG_SH: compile_script/step02_generate_release_tag.sh
   GENERATE_GIT_LOG_SH: compile_script/step03_generate_git_log.sh
-  COPY_BACKGROUNDFILES_SH: compile_script/step04_copy_backgroundfiles.sh
-  BUILD_STATUS_CHECKING_SH: compile_script/step05_build_status_checking.sh
   UPDATE_GIT_LOG_SH:  compile_script/step06_update_git_log.sh
   ORGANIZE_TAG_SH: compile_script/step07_organize_tag.sh
 
@@ -57,16 +48,41 @@ env:
 
 jobs:
   job_init: 
-    runs-on: ubuntu-latest
-    name: Build-Init
+    runs-on: ubuntu-22.04
+    name: Init
     outputs:
       output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
-      output_platforms: ${{steps.read-platforms.outputs.platforms}}
+      platforms: ${{ steps.read-platforms.outputs.matrix }}
+      platforms_source: ${{ steps.read-platforms.outputs.source_matrix_json }}
     steps:
       - name: Generate Tag Name
         id: gen_release_tag
         run: |
           echo "release_tag=multi-platform_$(date +"%Y.%m.%d_%H.%M.%S")" >> $GITHUB_OUTPUT
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Read Platforms From File
+        id: read-platforms
+        run: |
+          bash $PLATFORMS_SH
+
+  
+  job_defconfig:
+    needs: job_init
+    runs-on: ubuntu-22.04
+    name: Defconfig-${{ matrix.source_code_platform }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.job_init.outputs.platforms_source) }}
+    steps:
+      - name: Init
+        id: init
+        run: |
           sudo timedatectl set-timezone "$TZ"
           sudo mkdir -p /workdir
           sudo chown $USER:$GROUPS /workdir
@@ -76,22 +92,22 @@ jobs:
           ln -sf /workdir/output $GITHUB_WORKSPACE/output
 
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Clone Source Code
         working-directory: /workdir
         run: |
-          git clone $REPO_URL -b $REPO_BRANCH openwrt
+          git clone ${{ matrix.value.REPO_URL }} openwrt
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
       - name: Load Custom Feeds
         run: |
-          [ -e $FEEDS_CONF ] && cp -r $FEEDS_CONF openwrt/feeds.conf.default
-          chmod +x $DIY_P1_SH
+          [ -e $FEEDS_CONF ] && cp -r ${{ matrix.value.FEEDS_CONF }} openwrt/feeds.conf.default
+          chmod +x ${{ matrix.value.DIY_P1_SH }}
           cd openwrt
-          $GITHUB_WORKSPACE/$DIY_P1_SH
+          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P1_SH }}
 
       - name: Update Feeds
         run: cd openwrt && ./scripts/feeds update -a
@@ -101,64 +117,49 @@ jobs:
 
       - name: Pull the latest changes and Create temporary branch
         run: |
-          git pull origin ${{ github.ref_name }}
-          git checkout -b temp-branch
+          git fetch origin
+          git reset --hard origin/${{ github.ref_name }}
+          git checkout -b temp-${{ matrix.source_code_platform }}
 
       - name: Make Defconfig Custom Configuration
         run: |
-          chmod +x $DIY_P2_SH
+          chmod +x ${{ matrix.value.DIY_P2_SH }}
           chmod +x $MAKE_DEFCONFIG_SH
           cd openwrt
-          $GITHUB_WORKSPACE/$DIY_P2_SH
-          $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH
+          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
 
-      - name: Git Auto Update Config
-        uses: stefanzweifel/git-auto-commit-action@v5.0.0
-        id: commit
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          commit_message: auto update config
-          branch: temp-branch
-          commit_author: smallprogram <smallprogram@foxmail.com>
-      
+          $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
+
       - name: Merge and push changes with "theirs" strategy
         run: |
-          git checkout ${{ github.ref_name }}
-          git pull origin ${{ github.ref_name }}
-          git merge temp-branch --strategy-option theirs --no-edit
-          git push origin ${{ github.ref_name }}
-          git branch -d temp-branch || echo "Local temp-branch not found"
-          git push origin --delete temp-branch || echo "Remote temp-branch not found"
+          git checkout temp-${{ matrix.source_code_platform }}
+          git add .
 
+          if ! git diff --cached --quiet; then
+            git config user.name "smallprogram"
+            git config user.email "smallprogram@foxmail.com"
+            git commit -m "Auto update for ${{ matrix.source_code_platform }} configuration"
 
-      - name: Generate Release Tag
-        id: tag
-        run: |
-          chmod +x $GENERATE_RELEASE_TAG_SH
-          $GITHUB_WORKSPACE/$GENERATE_RELEASE_TAG_SH "${{ steps.gen_release_tag.outputs.release_tag }}"
-          
-      - name: Upload Tags To Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: release_tag_${{ steps.gen_release_tag.outputs.release_tag }}
-          path: release.txt
-          retention-days: 5
+            git checkout ${{ github.ref_name }}
+            git fetch origin
+            git reset --hard origin/${{ github.ref_name }}
 
-      - name: Generate Git Log
-        if: steps.tag.outputs.status == 'success'
-        id: git_log
-        run: |
-          chmod +x $GENERATE_GIT_LOG_SH 
-          $GITHUB_WORKSPACE/$GENERATE_GIT_LOG_SH
-          
-      - name: Upload Git Log To Artifact
-        uses: actions/upload-artifact@v4
-        if: steps.git_log.outputs.status == 'success'
-        with:
-          name: git_log_${{ steps.gen_release_tag.outputs.release_tag }}
-          path: git_log.txt
-          retention-days: 5
+            git checkout temp-${{ matrix.source_code_platform }}
+            git merge origin/${{ github.ref_name }} --no-ff --strategy-option theirs --no-edit || {
+              echo "Merge conflict in temp branch, please resolve manually."
+              exit 100
+            }
+
+            git checkout ${{ github.ref_name }} 
+            git merge temp-${{ matrix.source_code_platform }} --strategy-option theirs --no-edit
+            git push origin ${{ github.ref_name }} --force
+            git branch -d temp-${{ matrix.source_code_platform }} || echo "Local temp-${{ matrix.source_code_platform }} not found"
+            git push origin --delete temp-${{ matrix.source_code_platform }} || echo "Remote temp-${{ matrix.source_code_platform }} not found"
+
+          else
+            echo "No changes to commit."
+          fi
+
 
       - name: Generate Source Packages
         working-directory: /workdir
@@ -179,25 +180,124 @@ jobs:
         uses: actions/upload-artifact@v4
         if: steps.generate_image.outputs.status == 'success'
         with:
-          name: Source_${{ steps.gen_release_tag.outputs.release_tag }}
+          name: Source_${{ matrix.source_code_platform }}
           path: ${{ env.SOURCE_PATH }}/output.tar.gz
           retention-days: 5
 
-      - name: Read Platforms From File
-        id: read-platforms
+      - name: Generate Git Log
+        id: git_log
         run: |
-          source $PLATFORMS_SH
-          platforms_json=$(printf '%s\n' "${platforms[@]}" | jq -R -s -c 'split("\n") | map(select(length > 0))')
-          echo "platforms=$platforms_json" >> $GITHUB_OUTPUT
+          chmod +x $GENERATE_GIT_LOG_SH 
+          $GITHUB_WORKSPACE/$GENERATE_GIT_LOG_SH "${{ matrix.source_code_platform }}"
+          
+      - name: Upload Git Log To Artifact
+        uses: actions/upload-artifact@v4
+        if: steps.git_log.outputs.status == 'success'
+        with:
+          name: git_log_${{ matrix.source_code_platform }}
+          path: git_log_${{ matrix.source_code_platform }}.txt
+          retention-days: 5
+
+      - name: Generate Release Tag
+        id: tag
+        run: |
+          chmod +x $GENERATE_RELEASE_TAG_SH
+          $GITHUB_WORKSPACE/$GENERATE_RELEASE_TAG_SH "${{ needs.job_init.outputs.output_release_tag }}" "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
+      
+      - name: Upload Release Tag To Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: release_${{ matrix.source_code_platform }}
+          path: release_${{ matrix.source_code_platform }}.txt
+          retention-days: 5
+
+  job_generate_release_tag: 
+    needs: [job_init, job_defconfig]
+    runs-on: ubuntu-22.04
+    name: Generate-Release-Tag-And-Git-Log
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Pull the latest changes and Create temporary branch
+      run: |
+        git fetch origin
+        git reset --hard origin/${{ github.ref_name }}
+        git checkout -b temp-tag-gitlog
+
+    - name: Download Git Log From Artifacts
+      id : download_gitlog
+      uses: actions/download-artifact@v4
+      with:
+        pattern: git_log_*
+        merge-multiple: true
+
+    - name: Download Release Tag From Artifacts
+      id : download_releasetag
+      uses: actions/download-artifact@v4
+      with:
+        pattern: release_*
+        merge-multiple: true
+
+    - name: Generate Release Tag
+      id: tag
+      run: |
+        chmod +x $UPDATE_GIT_LOG_SH
+        $GITHUB_WORKSPACE/$UPDATE_GIT_LOG_SH "${{ needs.job_init.outputs.output_release_tag }}"
+
+    - name: Upload Tags To Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: release_tag
+        path: release.txt
+        retention-days: 5
+
+    - name: Merge and push changes with "theirs" strategy
+      run: |
+        
+        git checkout temp-tag-gitlog
+        rm -rf release.txt
+        git add .
+
+        if ! git diff --cached --quiet; then
+          git config user.name "smallprogram"
+          git config user.email "smallprogram@foxmail.com"
+          git commit -m "Auto update git log"
+
+          git checkout ${{ github.ref_name }}
+          git fetch origin
+          git reset --hard origin/${{ github.ref_name }}
+
+          git checkout temp-tag-gitlog
+          git merge origin/${{ github.ref_name }} --no-ff --strategy-option theirs --no-edit || {
+            echo "Merge conflict in temp branch, please resolve manually."
+            exit 100
+          }
+
+          git checkout ${{ github.ref_name }} 
+          git merge temp-tag-gitlog --strategy-option theirs --no-edit
+          git push origin ${{ github.ref_name }} --force
+          git branch -d temp-tag-gitlog || echo "Local temp-tag-gitlog not found"
+          git push origin --delete temp-tag-gitlog || echo "Remote temp-tag-gitlog not found"
+
+        else
+          echo "No changes to commit."
+        fi
+
+      
+
 
   job_build:
-    needs: job_init
-    runs-on: ubuntu-latest
+    needs: [job_init, job_defconfig, job_generate_release_tag]
+    runs-on: ubuntu-22.04
     strategy:
       fail-fast: false
       matrix:
-        platforms: ${{ fromJson(needs.job_init.outputs.output_platforms) }}
-    name: Build-OpenWrt-${{ matrix.platforms }}
+        include: ${{ fromJson(needs.job_init.outputs.platforms) }}
+    name: Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}
 
     steps:
       - name: Initialization Environment
@@ -220,7 +320,7 @@ jobs:
           build-mount-path: '/workdir'
 
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -232,7 +332,8 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           sudo -E apt-get -qq update
-          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends)
+          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
+          # sudo bash -c 'bash <(curl -s https://build-scripts.immortalwrt.org/init_build_environment.sh)'
           sudo -E apt-get -qq autoremove --purge
           sudo -E apt-get -qq clean
           sudo timedatectl set-timezone "$TZ"
@@ -254,13 +355,13 @@ jobs:
         id : download
         uses: actions/download-artifact@v4
         with:
-          name: Source_${{ needs.job_init.outputs.output_release_tag }}
+          name: Source_${{ matrix.source_code_platform }}
           path: download
 
       - name: Download Tags
         uses: actions/download-artifact@v4
         with:
-          name: release_tag_${{ needs.job_init.outputs.output_release_tag }}
+          name: release_tag
           path: download
 
       - name: File Extraction
@@ -277,11 +378,11 @@ jobs:
 
       - name: Load Configuration
         run: |
-          chmod +x $COPY_BACKGROUNDFILES_SH
-          [ -e $CONFIGS/${{ matrix.platforms }}.config ] && cp -r $CONFIGS/${{ matrix.platforms }}.config openwrt/.config
+          # chmod +x $COPY_BACKGROUNDFILES_SH
+          [ -e ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config ] && cp -r ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config openwrt/.config
           cd openwrt
           make defconfig
-          $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platforms }}"
+          # $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platform }}"
 
       - name: Download Package
         id: package
@@ -379,6 +480,7 @@ jobs:
         run: |
           cd openwrt
           is_complie_error=0
+          
           if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
             if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
                 echo "1 threads compile frimware"
@@ -401,6 +503,9 @@ jobs:
             fi
           fi
 
+
+          
+
           echo "complie result： $is_complie_error"
           if [ "$is_complie_error" -eq 0 ]; then
             echo "status=success" >> $GITHUB_OUTPUT
@@ -419,21 +524,48 @@ jobs:
         uses: actions/upload-artifact@v4
         if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
         with:
-          name: OpenWrt_bin_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
+          name: OpenWrt_bin_${{ matrix.source_code_platform }}_${{ matrix.platform }}
           path: openwrt/bin
 
       - name: Organize Files
         id: organize
         if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
         run: |
+          # rm -rf $GITHUB_WORKSPACE/openwrt/bin
+          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin
+          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets
+          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa
+          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa/bb
+          # cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
+          # mkdir -p feeds_packages
+          # firmware_path=$PWD
+          # dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.txt bs=1M count=10
+          # if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
+          #     exit 200
+          # fi
+
+          
           cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
           mkdir -p feeds_packages
           firmware_path=$PWD
           cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
           mv * $firmware_path/feeds_packages
           cd $firmware_path
-          zip -r buildinfo_${{ matrix.platforms }}.zip feeds_packages packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
+
+          zip -r buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip feeds_packages packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
           rm -rf packages feeds_packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
+
+          
+
+          if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
+              for file in openwrt-*; do
+                  if [[ -f "$file" ]]; then
+                      mv "$file" "${file/openwrt-/lean-}"
+                  fi
+              done
+          fi
+
+          ls
 
           echo "FIRMWARE=$firmware_path" >> $GITHUB_ENV
           echo "status=success" >> $GITHUB_OUTPUT
@@ -442,11 +574,11 @@ jobs:
         uses: actions/upload-artifact@v4
         if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && !cancelled()
         with:
-          name: OpenWrt_firmware_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
+          name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
           path: ${{ env.FIRMWARE }}
 
       - name: Upload Firmware To Release
-        uses: softprops/action-gh-release@v2.0.6
+        uses: softprops/action-gh-release@v2.0.8
         if: steps.organize.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -455,89 +587,15 @@ jobs:
           body_path: ${{ env.TAG_PATH }}/release.txt
           files: ${{ env.FIRMWARE }}/*
 
-  build_status_flag:
-    needs: [job_init, job_build]
-    if: ${{ always() }}
-    name: Build-Status-Flag
-    runs-on: ubuntu-latest
-    outputs:
-      checking_build_status: ${{ steps.status_checking.outputs.status }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@main
-        with:
-          fetch-depth: 0
-
-      - name: Pull the latest changes
-        run: git pull origin ${{ github.ref_name }}
-
-      - name: Build_status_checking
-        id: status_checking
-        run: |
-
-          chmod +x $BUILD_STATUS_CHECKING_SH
-          $GITHUB_WORKSPACE/$BUILD_STATUS_CHECKING_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
-          
-
-
-
-  job_organize_git_log:
-    needs: [job_init, job_build, build_status_flag]
-    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
-    runs-on: ubuntu-latest
-    name: Organize-Git-Log
-       
-    steps:
-    - name: Checkout
-      uses: actions/checkout@main
-      with:
-        fetch-depth: 0
-
-    - name: Pull the latest changes and Create temporary branch
-      run: |
-        git pull origin ${{ github.ref_name }}
-        git checkout -b temp-branch
-
-    - name: Download Git Log
-      uses: actions/download-artifact@v4
-      with:
-        name: git_log_${{ needs.job_init.outputs.output_release_tag }}
-
-    - name: Update Git Log
-      run: |
-          chmod +x $UPDATE_GIT_LOG_SH
-          $GITHUB_WORKSPACE/$UPDATE_GIT_LOG_SH
-
-
-    - name: Git auto update git log
-      uses: stefanzweifel/git-auto-commit-action@v5.0.0
-      id: commit
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        commit_message: auto update git log
-        branch: temp-branch
-        commit_author: smallprogram <smallprogram@foxmail.com>
-
-    - name: Merge and push changes with "theirs" strategy
-      run: |
-        git checkout ${{ github.ref_name }}
-        git pull origin ${{ github.ref_name }}
-        git merge temp-branch --strategy-option theirs --no-edit
-        git push origin ${{ github.ref_name }}
-        git branch -d temp-branch || echo "Local temp-branch not found"
-        git push origin --delete temp-branch || echo "Remote temp-branch not found"        
-
-
   job_organize_tags:
-    needs: [job_init, job_build, build_status_flag, job_organize_git_log]
-    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
-    runs-on: ubuntu-latest
+    needs: [job_init, job_defconfig, job_generate_release_tag, job_build]
+    if: ${{ always() }}
+    runs-on: ubuntu-22.04
     name: Organize-Release-Tags
         
     steps:
     - name: Checkout
-      uses: actions/checkout@main
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
@@ -548,7 +606,7 @@ jobs:
     - name: Download Tags
       uses: actions/download-artifact@v4
       with:
-        name: release_tag_${{ needs.job_init.outputs.output_release_tag }}
+        name: release_tag
 
     - name: Organize Tags
       id: organize_tags
@@ -559,7 +617,7 @@ jobs:
           $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
 
     - name: Upload Release Tag
-      uses: softprops/action-gh-release@v2.0.6
+      uses: softprops/action-gh-release@v2.0.8
       if: steps.organize_tags.outputs.status == 'success'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -568,14 +626,14 @@ jobs:
         body_path: release.txt
 
   job_my_action:
-    needs: [job_init, job_build, build_status_flag, job_organize_git_log, job_organize_tags]
-    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
-    runs-on: ubuntu-latest
+    needs: [job_init, job_defconfig, job_generate_release_tag, job_build, job_organize_tags]
+    if: ${{ always() }}
+    runs-on: ubuntu-22.04
     name: My-Action
 
     steps:
       - name: Trigger build
-        uses: peter-evans/repository-dispatch@main
+        uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.MY_SECRET_PAT }}
           repository: smallprogram/MyAction

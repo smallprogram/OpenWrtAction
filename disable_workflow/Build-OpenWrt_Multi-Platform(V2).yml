@@ -1,0 +1,580 @@
+#
+# Copyright (c) 2022-2024 SMALLPROGRAM <https://github.com/smallprogram/OpenWrtAction>
+#
+# This is free software, licensed under the MIT License.
+# See /LICENSE for more information.
+#
+# https://github.com/smallprogram/OpenWrtAction
+# Description: Build OpenWrt using GitHub Actions
+#
+
+name: Build-OpenWrt_Multi-Platform(V2)
+
+on:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
+      is_display_detailed:
+        description: 'Whether to display detailed information about compilation'
+        required: false
+        default: 'false'
+      is_single_threaded:
+        description: 'Whether single-threaded compilation'
+        required: false
+        default: 'false'
+  # schedule:
+  #   - cron: 0 */8 * * *
+
+env:
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
+  FEEDS_CONF: feeds_config/lean.feeds.conf.default
+  CONFIGS: config/leanlede_config
+
+  DIY_P1_SH: diy_script/lean_diy/diy-part1.sh
+  DIY_P2_SH: diy_script/lean_diy/diy-part2.sh
+  MAKE_DEFCONFIG_SH: compile_script/step01_make_defconfig.sh
+  GENERATE_RELEASE_TAG_SH: compile_script/step02_generate_release_tag.sh
+  GENERATE_GIT_LOG_SH: compile_script/step03_generate_git_log.sh
+  COPY_BACKGROUNDFILES_SH: compile_script/step04_copy_backgroundfiles.sh
+  BUILD_STATUS_CHECKING_SH: compile_script/step05_build_status_checking.sh
+  UPDATE_GIT_LOG_SH:  compile_script/step06_update_git_log.sh
+  ORGANIZE_TAG_SH: compile_script/step07_organize_tag.sh
+
+
+  PLATFORMS_SH: compile_script/platforms.sh
+
+  UPLOAD_BIN_DIR: false
+  UPLOAD_FIRMWARE: true
+  UPLOAD_ARTIFACT: true
+  UPLOAD_RELEASE: true
+  TZ: Asia/Shanghai
+
+jobs:
+  job_init: 
+    runs-on: ubuntu-latest
+    name: Build-Init
+    outputs:
+      output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
+      output_platforms: ${{steps.read-platforms.outputs.platforms}}
+    steps:
+      - name: Generate Tag Name
+        id: gen_release_tag
+        run: |
+          echo "release_tag=multi-platform_$(date +"%Y.%m.%d_%H.%M.%S")" >> $GITHUB_OUTPUT
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown $USER:$GROUPS /workdir
+          cd /workdir
+          sudo mkdir -p output
+          sudo chown $USER:$GROUPS /workdir/output
+          ln -sf /workdir/output $GITHUB_WORKSPACE/output
+
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 0
+
+      - name: Clone Source Code
+        working-directory: /workdir
+        run: |
+          git clone $REPO_URL -b $REPO_BRANCH openwrt
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+
+      - name: Load Custom Feeds
+        run: |
+          [ -e $FEEDS_CONF ] && cp -r $FEEDS_CONF openwrt/feeds.conf.default
+          chmod +x $DIY_P1_SH
+          cd openwrt
+          $GITHUB_WORKSPACE/$DIY_P1_SH
+
+      - name: Update Feeds
+        run: cd openwrt && ./scripts/feeds update -a
+
+      - name: Install Feeds
+        run: cd openwrt && ./scripts/feeds install -a
+
+      - name: Pull the latest changes and Create temporary branch
+        run: |
+          git pull origin ${{ github.ref_name }}
+          git checkout -b temp-branch
+
+      - name: Make Defconfig Custom Configuration
+        run: |
+          chmod +x $DIY_P2_SH
+          chmod +x $MAKE_DEFCONFIG_SH
+          cd openwrt
+          $GITHUB_WORKSPACE/$DIY_P2_SH
+          $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH
+
+      - name: Git Auto Update Config
+        uses: stefanzweifel/git-auto-commit-action@v5.0.0
+        id: commit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          commit_message: auto update config
+          branch: temp-branch
+          commit_author: smallprogram <smallprogram@foxmail.com>
+      
+      - name: Merge and push changes with "theirs" strategy
+        run: |
+          git checkout ${{ github.ref_name }}
+          git pull origin ${{ github.ref_name }}
+          git merge temp-branch --strategy-option theirs --no-edit
+          git push origin ${{ github.ref_name }}
+          git branch -d temp-branch || echo "Local temp-branch not found"
+          git push origin --delete temp-branch || echo "Remote temp-branch not found"
+
+
+      - name: Generate Release Tag
+        id: tag
+        run: |
+          chmod +x $GENERATE_RELEASE_TAG_SH
+          $GITHUB_WORKSPACE/$GENERATE_RELEASE_TAG_SH "${{ steps.gen_release_tag.outputs.release_tag }}"
+          
+      - name: Upload Tags To Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: release_tag_${{ steps.gen_release_tag.outputs.release_tag }}
+          path: release.txt
+          retention-days: 5
+
+      - name: Generate Git Log
+        if: steps.tag.outputs.status == 'success'
+        id: git_log
+        run: |
+          chmod +x $GENERATE_GIT_LOG_SH 
+          $GITHUB_WORKSPACE/$GENERATE_GIT_LOG_SH
+          
+      - name: Upload Git Log To Artifact
+        uses: actions/upload-artifact@v4
+        if: steps.git_log.outputs.status == 'success'
+        with:
+          name: git_log_${{ steps.gen_release_tag.outputs.release_tag }}
+          path: git_log.txt
+          retention-days: 5
+
+      - name: Generate Source Packages
+        working-directory: /workdir
+        id: generate_image
+        run: |
+          echo "source folder size:"
+          du -hs openwrt/
+          echo
+          tar -czf output/output.tar.gz openwrt/
+
+          echo "source code size:"
+          cd output
+          ls -lh output.tar.gz
+          echo "SOURCE_PATH=$PWD" >> $GITHUB_ENV
+          echo "status=success" >> $GITHUB_OUTPUT
+
+      - name: Upload Source To Artifact
+        uses: actions/upload-artifact@v4
+        if: steps.generate_image.outputs.status == 'success'
+        with:
+          name: Source_${{ steps.gen_release_tag.outputs.release_tag }}
+          path: ${{ env.SOURCE_PATH }}/output.tar.gz
+          retention-days: 5
+
+      - name: Read Platforms From File
+        id: read-platforms
+        run: |
+          source $PLATFORMS_SH
+          platforms_json=$(printf '%s\n' "${platforms[@]}" | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          echo "platforms=$platforms_json" >> $GITHUB_OUTPUT
+
+  job_build:
+    needs: job_init
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        platforms: ${{ fromJson(needs.job_init.outputs.output_platforms) }}
+    name: Build-OpenWrt-${{ matrix.platforms }}
+
+    steps:
+      - name: Initialization Environment
+        run: |
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown $USER:$GROUPS /workdir
+          df -hT
+  
+      - name: Maximize Build Space
+        uses: easimon/maximize-build-space@master
+        with:
+          root-reserve-mb: 6144
+          swap-size-mb: 10240
+          remove-dotnet: 'true'
+          remove-android: 'true'
+          remove-haskell: 'true'
+          remove-codeql: 'true'
+          remove-docker-images: 'true'
+          build-mount-path: '/workdir'
+
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 0
+
+      - name: Pull the latest changes
+        run: git pull origin ${{ github.ref_name }}
+
+      - name: Install Packages
+        env:
+          DEBIAN_FRONTEND: noninteractive
+        run: |
+          sudo -E apt-get -qq update
+          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends)
+          sudo -E apt-get -qq autoremove --purge
+          sudo -E apt-get -qq clean
+          sudo timedatectl set-timezone "$TZ"
+          df -hT
+
+      - name: Initialization Directory
+        working-directory: /workdir
+        id: init_directory
+        run: |
+          sudo mkdir -p openwrt
+          sudo mkdir -p download
+          sudo chown $USER:$GROUPS /workdir/openwrt
+          sudo chown $USER:$GROUPS /workdir/download
+
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+          ln -sf /workdir/download $GITHUB_WORKSPACE/download
+
+      - name: Download Source From Artifacts
+        id : download
+        uses: actions/download-artifact@v4
+        with:
+          name: Source_${{ needs.job_init.outputs.output_release_tag }}
+          path: download
+
+      - name: Download Tags
+        uses: actions/download-artifact@v4
+        with:
+          name: release_tag_${{ needs.job_init.outputs.output_release_tag }}
+          path: download
+
+      - name: File Extraction
+        working-directory: /workdir
+        run: |
+          echo "source packages size:"
+          ls -lh download/output.tar.gz
+          tar -xzf download/output.tar.gz
+          rm -rf download/output.tar.gz
+          cd download
+          echo "TAG_PATH=$PWD" >> $GITHUB_ENV
+          cd ..
+          sudo chown -R $USER:$GROUPS /workdir/openwrt
+
+      - name: Load Configuration
+        run: |
+          chmod +x $COPY_BACKGROUNDFILES_SH
+          [ -e $CONFIGS/${{ matrix.platforms }}.config ] && cp -r $CONFIGS/${{ matrix.platforms }}.config openwrt/.config
+          cd openwrt
+          make defconfig
+          $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platforms }}"
+
+      - name: Download Package
+        id: package
+        run: |
+          df -hT
+          cd $GITHUB_WORKSPACE/openwrt
+          make download -j8
+          find dl -size -1024c -exec ls -l {} \;
+          find dl -size -1024c -exec rm -f {} \;
+          df -hT
+      
+      - name: SSH connection to Actions
+        uses: mxschmitt/action-tmate@v3.16
+        if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
+
+      - name: Compile Tools
+        id: compile_tools
+        run: |
+          cd openwrt
+          is_complie_error=0
+
+          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile tools"
+                make tools/compile -j1 V=s
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile tools"
+                make tools/compile -j$(nproc) V=s
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          else
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile tools"
+                make tools/compile -j1
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile tools"
+                make tools/compile -j$(nproc)
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          fi
+
+          echo "complie result： $is_complie_error"
+          if [ "$is_complie_error" -eq 0 ]; then
+            echo "status=success" >> $GITHUB_OUTPUT
+          else
+            echo "status=failure" >> $GITHUB_OUTPUT
+            exit $is_complie_error
+          fi
+
+          df -hT
+
+      - name: Compile Toolchain
+        if: steps.compile_tools.outputs.status == 'success'
+        id: compile_toolchain
+        run: |
+          cd openwrt
+          is_complie_error=0
+          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile toolchain"
+                make toolchain/compile -j1 V=s
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile toolchain"
+                make toolchain/compile -j$(nproc) V=s
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          else
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile toolchain"
+                make toolchain/compile -j1
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile toolchain"
+                make toolchain/compile -j$(nproc)
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          fi
+
+          echo "complie result： $is_complie_error"
+          if [ "$is_complie_error" -eq 0 ]; then
+            echo "status=success" >> $GITHUB_OUTPUT
+          else
+            echo "status=failure" >> $GITHUB_OUTPUT
+            exit $is_complie_error
+          fi
+
+          df -hT
+
+      - name: Generate Frimware
+        if: steps.compile_toolchain.outputs.status == 'success'
+        id: compile
+        run: |
+          cd openwrt
+          is_complie_error=0
+          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile frimware"
+                make -j1 V=s
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile frimware"
+                make -j$(nproc) V=s
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          else
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile frimware"
+                make -j1
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile frimware"
+                make -j$(nproc)
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          fi
+
+          echo "complie result： $is_complie_error"
+          if [ "$is_complie_error" -eq 0 ]; then
+            echo "status=success" >> $GITHUB_OUTPUT
+          else
+            echo "status=failure" >> $GITHUB_OUTPUT
+            exit $is_complie_error
+          fi
+
+          df -hT
+
+      - name: Check Space Usage
+        if: (!cancelled())
+        run: df -hT
+
+      - name: Upload Bin Directory To Artifact
+        uses: actions/upload-artifact@v4
+        if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
+        with:
+          name: OpenWrt_bin_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
+          path: openwrt/bin
+
+      - name: Organize Files
+        id: organize
+        if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
+        run: |
+          cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
+          mkdir -p feeds_packages
+          firmware_path=$PWD
+          cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
+          mv * $firmware_path/feeds_packages
+          cd $firmware_path
+          zip -r buildinfo_${{ matrix.platforms }}.zip feeds_packages packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
+          rm -rf packages feeds_packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
+
+          echo "FIRMWARE=$firmware_path" >> $GITHUB_ENV
+          echo "status=success" >> $GITHUB_OUTPUT
+
+      - name: Upload Firmware Directory To Artifact
+        uses: actions/upload-artifact@v4
+        if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && !cancelled()
+        with:
+          name: OpenWrt_firmware_${{ matrix.platforms }}_${{ needs.job_init.outputs.output_release_tag }}
+          path: ${{ env.FIRMWARE }}
+
+      - name: Upload Firmware To Release
+        uses: softprops/action-gh-release@v2.0.6
+        if: steps.organize.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+          body_path: ${{ env.TAG_PATH }}/release.txt
+          files: ${{ env.FIRMWARE }}/*
+
+  build_status_flag:
+    needs: [job_init, job_build]
+    if: ${{ always() }}
+    name: Build-Status-Flag
+    runs-on: ubuntu-latest
+    outputs:
+      checking_build_status: ${{ steps.status_checking.outputs.status }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 0
+
+      - name: Pull the latest changes
+        run: git pull origin ${{ github.ref_name }}
+
+      - name: Build_status_checking
+        id: status_checking
+        run: |
+
+          chmod +x $BUILD_STATUS_CHECKING_SH
+          $GITHUB_WORKSPACE/$BUILD_STATUS_CHECKING_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
+          
+
+
+
+  job_organize_git_log:
+    needs: [job_init, job_build, build_status_flag]
+    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
+    runs-on: ubuntu-latest
+    name: Organize-Git-Log
+       
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+      with:
+        fetch-depth: 0
+
+    - name: Pull the latest changes and Create temporary branch
+      run: |
+        git pull origin ${{ github.ref_name }}
+        git checkout -b temp-branch
+
+    - name: Download Git Log
+      uses: actions/download-artifact@v4
+      with:
+        name: git_log_${{ needs.job_init.outputs.output_release_tag }}
+
+    - name: Update Git Log
+      run: |
+          chmod +x $UPDATE_GIT_LOG_SH
+          $GITHUB_WORKSPACE/$UPDATE_GIT_LOG_SH
+
+
+    - name: Git auto update git log
+      uses: stefanzweifel/git-auto-commit-action@v5.0.0
+      id: commit
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        commit_message: auto update git log
+        branch: temp-branch
+        commit_author: smallprogram <smallprogram@foxmail.com>
+
+    - name: Merge and push changes with "theirs" strategy
+      run: |
+        git checkout ${{ github.ref_name }}
+        git pull origin ${{ github.ref_name }}
+        git merge temp-branch --strategy-option theirs --no-edit
+        git push origin ${{ github.ref_name }}
+        git branch -d temp-branch || echo "Local temp-branch not found"
+        git push origin --delete temp-branch || echo "Remote temp-branch not found"        
+
+
+  job_organize_tags:
+    needs: [job_init, job_build, build_status_flag, job_organize_git_log]
+    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
+    runs-on: ubuntu-latest
+    name: Organize-Release-Tags
+        
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+      with:
+        fetch-depth: 0
+
+    - name: Pull the latest changes
+      run: |
+        git pull origin ${{ github.ref_name }}
+
+    - name: Download Tags
+      uses: actions/download-artifact@v4
+      with:
+        name: release_tag_${{ needs.job_init.outputs.output_release_tag }}
+
+    - name: Organize Tags
+      id: organize_tags
+      # env:
+      #   GH_TOKEN: ${{ github.token }}
+      run: |
+          chmod +x $ORGANIZE_TAG_SH
+          $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
+
+    - name: Upload Release Tag
+      uses: softprops/action-gh-release@v2.0.6
+      if: steps.organize_tags.outputs.status == 'success'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+        body_path: release.txt
+
+  job_my_action:
+    needs: [job_init, job_build, build_status_flag, job_organize_git_log, job_organize_tags]
+    if: ${{ always() && needs.build_status_flag.outputs.checking_build_status == 'success' }}
+    runs-on: ubuntu-latest
+    name: My-Action
+
+    steps:
+      - name: Trigger build
+        uses: peter-evans/repository-dispatch@main
+        with:
+          token: ${{ secrets.MY_SECRET_PAT }}
+          repository: smallprogram/MyAction
+          event-type: openwrt_compilation_completed

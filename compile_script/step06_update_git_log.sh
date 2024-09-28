@@ -1,110 +1,148 @@
 #!/bin/bash
+release_tag=$1
+git_folders=(immortalwrt lede openwrt feeds)
 
-REPO_URLS=(
-    "https://github.com/coolsnowwolf/lede --filter=blob:none"
-    "https://github.com/coolsnowwolf/packages --filter=blob:none"
-    "https://github.com/coolsnowwolf/luci --filter=blob:none"
-    "https://github.com/openwrt/routing.git --filter=blob:none -b openwrt-23.05"
-    "https://github.com/openwrt/telephony.git --filter=blob:none -b openwrt-23.05"
-    "https://github.com/fw876/helloworld --filter=blob:none"
-    "https://github.com/xiaorouji/openwrt-passwall-packages --filter=blob:none"
-    "https://github.com/xiaorouji/openwrt-passwall --filter=blob:none"
-    "https://github.com/xiaorouji/openwrt-passwall2 --filter=blob:none"
-    "https://github.com/vernesong/OpenClash.git --filter=blob:none"
-    "https://github.com/jerrykuku/luci-theme-argon.git --filter=blob:none -b 18.06"
-    "https://github.com/jerrykuku/luci-app-argon-config.git --filter=blob:none -b 18.06"
-    "https://github.com/rufengsuixing/luci-app-adguardhome.git --filter=blob:none"
-    "https://github.com/sbwml/luci-app-mosdns --filter=blob:none -b v5"
-    "https://github.com/destan19/OpenAppFilter.git --filter=blob:none"
-    "https://github.com/sirpdboy/netspeedtest.git --filter=blob:none"
+immortalwrt_REPO_URLS=(
+    "https://github.com/immortalwrt/immortalwrt"
+    "https://github.com/immortalwrt/packages"
+    "https://github.com/immortalwrt/luci"
 )
 
-OUTPUT_FILES=(
-    "lede"
-    "packages"
-    "luci"
-    "routing"
-    "telephony"
-    "helloworld"
-    "openwrt-passwall-packages"
-    "openwrt-passwall"
-    "openwrt-passwall2"
-    "OpenClash"
-    "luci-theme-argon"
-    "luci-app-argon-config"
-    "luci-app-adguardhome"
-    "luci-app-mosdns"
-    "OpenAppFilter"
-    "netspeedtest"
+lede_REPO_URLS=(
+    "https://github.com/coolsnowwolf/lede"
+    "https://github.com/coolsnowwolf/packages"
+    "https://github.com/coolsnowwolf/luci"
 )
 
-TITLE_MESSAGES=(
-    "openwrt new commit log"
-    "package new commit log"
-    "luci new commit log"
-    "routing new commit log"
-    "telephony new commit log"
-    "helloworld new commit log"
-    "passwall packages new commit log"
-    "passwall new commit log"
-    "passwall2 new commit log"
-    "openclash new commit log"
-    "luci-theme-argon new commit log"
-    "luci-app-argon-config new commit log"
-    "luci-app-adguardhome new commit log"
-    "luci-app-mosdns new commit log"
-    "OpenAppFilter new commit log"
-    "netspeedtest new commit log"
+openwrt_REPO_URLS=(
+    "https://github.com/openwrt/openwrt"
+    "https://github.com/openwrt/packages"
+    "https://github.com/openwrt/luci"
 )
+
+feeds_REPO_URLS=(
+    "https://github.com/openwrt/routing"
+    "https://github.com/openwrt/telephony"
+    "https://github.com/fw876/helloworld"
+    "https://github.com/xiaorouji/openwrt-passwall-packages"
+    "https://github.com/xiaorouji/openwrt-passwall"
+    "https://github.com/xiaorouji/openwrt-passwall2"
+    "https://github.com/vernesong/OpenClash"
+)
+
 
 cd $GITHUB_WORKSPACE
+
+echo "[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/$release_tag/total?style=flat-square)](https://github.com/smallprogram/MyAction)"> release.txt
+echo "">> release.txt
+echo "## Source Code Information">> release.txt
+echo "[![](https://img.shields.io/badge/sorce-immortalwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt) [![](https://img.shields.io/badge/sorce-lean-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede) [![](https://img.shields.io/badge/sorce-openwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)">> release.txt
+echo "">>release.txt
+echo "## Build Information">>release.txt
+
+echo "<table>">>release.txt
+echo "  <tr>">>release.txt
+echo "    <th>platform</th>">>release.txt
+echo "    <th>source platform</th>">>release.txt
+echo "    <th>kernel</th>">>release.txt
+echo "    <th>target</th>">>release.txt
+echo "    <th>compile status</th>">>release.txt
+echo "  </tr>">>release.txt
+
+for git_folder in "${git_folders[@]}"; do
+    if [[ "$git_folder" == "feeds" ]]; then
+        echo "jump $git_folder"
+    else
+        cat release_$git_folder.txt >> release.txt
+    fi
+done
+echo "</table>">>release.txt
+echo "">>release.txt
+echo "## What's Changed" >>release.txt
+echo "">>release.txt
+# 删掉git_log目录和子目录中的除了log文件以外的所有文件
 find git_log -type f ! -name 'log' -exec rm {} +
 mkdir -p git_repositories
 
-for i in "${!REPO_URLS[@]}"; do
-    REPO_URL=${REPO_URLS[$i]}
-    LINE_NUMBER=$((i+1))
-    OUTPUT_FILE=${OUTPUT_FILES[$i]}
-    TITLE_MESSAGE=${TITLE_MESSAGES[$i]}
+for git_folder in "${git_folders[@]}"; do
+    echo "git_folder: $git_folder"
+    declare -n repo_urls="${git_folder}_REPO_URLS"
 
-    line=$(sed -n "${LINE_NUMBER}p" git_log/log)
-    SHA_Begin=$(echo "$line" | sed -n 's/^[^:]*://p')
-    SHA_End=$(sed -n "${LINE_NUMBER}p" git_log.txt)
-
-    git clone $REPO_URL git_repositories/$OUTPUT_FILE
-
-    if ! git -C git_repositories/$OUTPUT_FILE cat-file -t "$SHA_Begin" >/dev/null 2>&1 ||
-        ! git -C git_repositories/$OUTPUT_FILE cat-file -t "$SHA_End" >/dev/null 2>&1; then
-        sed -i "${LINE_NUMBER}s/:.*/:$SHA_End/" git_log/log
-
-        echo " :x: Invalid SHA detected (Begin: $SHA_Begin, End: $SHA_End) for $OUTPUT_FILE"
-        echo "<details> <summary> <b>$TITLE_MESSAGE :x: </b>  </summary>" >>"git_log/$OUTPUT_FILE.log"
-        echo "" >>"git_log/$OUTPUT_FILE.log"
-        echo "<b> It is detected that $OUTPUT_FILE has an illegal SHA value. It is possible that $OUTPUT_FILE has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>" >>"git_log/$OUTPUT_FILE.log"
-        echo "" >>"git_log/$OUTPUT_FILE.log"
-        echo "</details>" >>"git_log/$OUTPUT_FILE.log"
-        continue
+    if [[ "$git_folder" == "feeds" ]]; then
+        echo "">>release.txt
+        echo "### common $git_folder" >>release.txt
+        echo "">>release.txt
+    else
+        echo "">>release.txt
+        echo "### $git_folder" >>release.txt
+        echo "">>release.txt
     fi
 
-    if [ -z "$SHA_Begin" ]; then
-        sed -i "${LINE_NUMBER}s/:.*/:$SHA_End/" git_log/log
-    elif [ "$SHA_Begin" != "$SHA_End" ]; then
-        echo "<details> <summary> <b>$TITLE_MESSAGE :new: </b>  </summary>" >>"git_log/$OUTPUT_FILE.log"
-        echo "" >>"git_log/$OUTPUT_FILE.log"
-        echo "SHA|Author|Date|Message" >>"git_log/$OUTPUT_FILE.log"
-        echo "-|-|-|-" >>"git_log/$OUTPUT_FILE.log"
-        git -C git_repositories/$OUTPUT_FILE log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >>"git_log/$OUTPUT_FILE.log"
-        echo "" >>"git_log/$OUTPUT_FILE.log"
-        echo "</details>" >>"git_log/$OUTPUT_FILE.log"
-        echo "|-----------------------------------|"
-        echo "$OUTPUT_FILE has update log"
-        echo "|-----------------------------------|"
-        sed -i "${LINE_NUMBER}s/:.*/:$SHA_End/" git_log/log
+    UPDATE_COUNT=0
+    for url in "${repo_urls[@]}"; do
+        
+        OUTPUT_FILE="${url##*/}"
+        TITLE_MESSAGE="${url##*/} new commit log"
+
+        SHA_Begin=$(grep "^${OUTPUT_FILE}:" git_log/${git_folder}/log | cut -d: -f2)
+        echo ""
+        echo "$git_folder-$OUTPUT_FILE Begin git log update-----------------------------------------------------------"
+        echo "SHABegin:$SHA_Begin"
+
+        if [[ "$git_folder" == "feeds" ]]; then
+            SHA_End=$(grep "^${OUTPUT_FILE}:" git_log_immortalwrt.txt | cut -d: -f2)
+        else
+            SHA_End=$(grep "^${OUTPUT_FILE}:" git_log_${git_folder}.txt | cut -d: -f2)
+        fi
+        echo "SHAEnd:$SHA_End"
+
+        git clone $url --filter=blob:none git_repositories/$git_folder/$OUTPUT_FILE
+
+        if ! git -C git_repositories/$git_folder/$OUTPUT_FILE cat-file -t "$SHA_Begin" >/dev/null 2>&1 ||
+            ! git -C git_repositories/$git_folder/$OUTPUT_FILE cat-file -t "$SHA_End" >/dev/null 2>&1; then
+            sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" git_log/$git_folder/log
+
+            echo "     :x: Invalid SHA detected (Begin: $SHA_Begin, End: $SHA_End) for $OUTPUT_FILE"
+            echo "<details> <summary> <b>$TITLE_MESSAGE :x: </b>  </summary>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            echo "<b> It is detected that $OUTPUT_FILE has an illegal SHA value. It is possible that $OUTPUT_FILE has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            echo "</details>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            continue
+        fi
+
+        if [ -z "$SHA_Begin" ]; then
+            sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" git_log/$git_folder/log
+        elif [ "$SHA_Begin" != "$SHA_End" ]; then
+            echo "<details> <summary> <b>$TITLE_MESSAGE :new: </b>  </summary>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            echo "SHA|Author|Date|Message" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            echo "-|-|-|-" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            git -C git_repositories/$git_folder/$OUTPUT_FILE log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            echo "</details>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            echo "     |-----------------------------------|"
+            echo "     $OUTPUT_FILE has update log"
+            echo "     |-----------------------------------|"
+            sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" git_log/$git_folder/log
+        fi
+
+        if [ -f "git_log/$git_folder/$OUTPUT_FILE.log" ]; then
+            echo "found file $OUTPUT_FILE.log!"
+            cat "git_log/$git_folder/$OUTPUT_FILE.log" >>release.txt
+            UPDATE_COUNT=$((UPDATE_COUNT + 1))
+        else
+            echo "no file $OUTPUT_FILE.log 404"
+        fi  
+        echo "$git_folder-$OUTPUT_FILE complate git log update-----------------------------------------------------------"
+    done
+    if [ "$UPDATE_COUNT" -eq 0 ]; then
+        echo "No source code updates......">>release.txt
     fi
+  
 done
 
-echo "|=========================================|"
-ls git_log
-echo "|=========================================|"
+
 cd $GITHUB_WORKSPACE
-rm -rf git_log.txt git_repositories
+find . -type f -name "*.txt" ! -name "release.txt" -exec rm {} +
+rm -rf git_repositories
