@@ -128,7 +128,7 @@ jobs:
           cd openwrt
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
 
-          # $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
+          $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
 
       - name: Merge and push changes with "theirs" strategy
         run: |
@@ -332,7 +332,7 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           sudo -E apt-get -qq update
-          # sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
+          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
           # sudo bash -c 'bash <(curl -s https://build-scripts.immortalwrt.org/init_build_environment.sh)'
           sudo -E apt-get -qq autoremove --purge
           sudo -E apt-get -qq clean
@@ -379,20 +379,9 @@ jobs:
       - name: Load Configuration
         run: |
           # chmod +x $COPY_BACKGROUNDFILES_SH
-          echo "$PWD"
           [ -e ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config ] && cp -r ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config openwrt/.config
           cd openwrt
-          echo "$PWD"
-          echo "config file info:"
-          echo "---------------------------------------------------------------------"
-          cat .config
-          echo "---------------------------------------------------------------------"
-          echo ""
           make defconfig
-          echo "defconfig file info:"
-          echo "---------------------------------------------------------------------"
-          cat .config
-          echo "---------------------------------------------------------------------"
           # $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platform }}"
 
       - name: Download Package
@@ -400,9 +389,9 @@ jobs:
         run: |
           df -hT
           cd $GITHUB_WORKSPACE/openwrt
-          # make download -j8
-          # find dl -size -1024c -exec ls -l {} \;
-          # find dl -size -1024c -exec rm -f {} \;
+          make download -j8
+          find dl -size -1024c -exec ls -l {} \;
+          find dl -size -1024c -exec rm -f {} \;
           df -hT
       
       - name: SSH connection to Actions
@@ -415,29 +404,29 @@ jobs:
           cd openwrt
           is_complie_error=0
 
-          # if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-          #       echo "1 threads compile tools"
-          #       make tools/compile -j1 V=s
-          #       is_complie_error=${PIPESTATUS[0]}
-          #   else
-          #       echo "$(nproc) threads compile tools"
-          #       make tools/compile -j$(nproc) V=s
-          #       is_complie_error=${PIPESTATUS[0]}
-          #   fi
-          # else
-          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-          #       echo "1 threads compile tools"
-          #       make tools/compile -j1
-          #       is_complie_error=${PIPESTATUS[0]}
-          #   else
-          #       echo "$(nproc) threads compile tools"
-          #       make tools/compile -j$(nproc)
-          #       is_complie_error=${PIPESTATUS[0]}
-          #   fi
-          # fi
+          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile tools"
+                make tools/compile -j1 V=s
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile tools"
+                make tools/compile -j$(nproc) V=s
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          else
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile tools"
+                make tools/compile -j1
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile tools"
+                make tools/compile -j$(nproc)
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          fi
 
-          # echo "complie result： $is_complie_error"
+          echo "complie result： $is_complie_error"
           if [ "$is_complie_error" -eq 0 ]; then
             echo "status=success" >> $GITHUB_OUTPUT
           else
@@ -453,29 +442,29 @@ jobs:
         run: |
           cd openwrt
           is_complie_error=0
-          # if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-          #       echo "1 threads compile toolchain"
-          #       make toolchain/compile -j1 V=s
-          #       is_complie_error=${PIPESTATUS[0]}
-          #   else
-          #       echo "$(nproc) threads compile toolchain"
-          #       make toolchain/compile -j$(nproc) V=s
-          #       is_complie_error=${PIPESTATUS[0]}
-          #   fi
-          # else
-          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-          #       echo "1 threads compile toolchain"
-          #       make toolchain/compile -j1
-          #       is_complie_error=${PIPESTATUS[0]}
-          #   else
-          #       echo "$(nproc) threads compile toolchain"
-          #       make toolchain/compile -j$(nproc)
-          #       is_complie_error=${PIPESTATUS[0]}
-          #   fi
-          # fi
+          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile toolchain"
+                make toolchain/compile -j1 V=s
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile toolchain"
+                make toolchain/compile -j$(nproc) V=s
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          else
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile toolchain"
+                make toolchain/compile -j1
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile toolchain"
+                make toolchain/compile -j$(nproc)
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          fi
 
-          # echo "complie result： $is_complie_error"
+          echo "complie result： $is_complie_error"
           if [ "$is_complie_error" -eq 0 ]; then
             echo "status=success" >> $GITHUB_OUTPUT
           else
@@ -492,27 +481,27 @@ jobs:
           cd openwrt
           is_complie_error=0
           
-          # if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-          #       echo "1 threads compile frimware"
-          #       make -j1 V=s
-          #       is_complie_error=${PIPESTATUS[0]}
-          #   else
-          #       echo "$(nproc) threads compile frimware"
-          #       make -j$(nproc) V=s
-          #       is_complie_error=${PIPESTATUS[0]}
-          #   fi
-          # else
-          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-          #       echo "1 threads compile frimware"
-          #       make -j1
-          #       is_complie_error=${PIPESTATUS[0]}
-          #   else
-          #       echo "$(nproc) threads compile frimware"
-          #       make -j$(nproc)
-          #       is_complie_error=${PIPESTATUS[0]}
-          #   fi
-          # fi
+          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile frimware"
+                make -j1 V=s
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile frimware"
+                make -j$(nproc) V=s
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          else
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile frimware"
+                make -j1
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile frimware"
+                make -j$(nproc)
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          fi
 
 
           
@@ -542,29 +531,29 @@ jobs:
         id: organize
         if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
         run: |
-          rm -rf $GITHUB_WORKSPACE/openwrt/bin
-          mkdir -p $GITHUB_WORKSPACE/openwrt/bin
-          mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets
-          mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa
-          mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa/bb
-          cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
-          mkdir -p feeds_packages
-          firmware_path=$PWD
-          dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.txt bs=1M count=10
-          if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
-              exit 200
-          fi
-
-          
+          # rm -rf $GITHUB_WORKSPACE/openwrt/bin
+          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin
+          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets
+          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa
+          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa/bb
           # cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
           # mkdir -p feeds_packages
           # firmware_path=$PWD
-          # cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
-          # mv * $firmware_path/feeds_packages
-          # cd $firmware_path
+          # dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.txt bs=1M count=10
+          # if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
+          #     exit 200
+          # fi
 
-          # zip -r buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip feeds_packages packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
-          # rm -rf packages feeds_packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
+          
+          cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
+          mkdir -p feeds_packages
+          firmware_path=$PWD
+          cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
+          mv * $firmware_path/feeds_packages
+          cd $firmware_path
+
+          zip -r buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip feeds_packages packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
+          rm -rf packages feeds_packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
 
           
 
@@ -585,11 +574,11 @@ jobs:
         uses: actions/upload-artifact@v4
         if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && !cancelled()
         with:
-          name: OpenWrt_firmware_${{ matrix.source_code_platform }}_${{ matrix.platform }}
+          name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
           path: ${{ env.FIRMWARE }}
 
       - name: Upload Firmware To Release
-        uses: softprops/action-gh-release@v2.0.6
+        uses: softprops/action-gh-release@v2.0.8
         if: steps.organize.outputs.status == 'success' && env.UPLOAD_RELEASE == 'true' && !cancelled()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -628,7 +617,7 @@ jobs:
           $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
 
     - name: Upload Release Tag
-      uses: softprops/action-gh-release@v2.0.6
+      uses: softprops/action-gh-release@v2.0.8
       if: steps.organize_tags.outputs.status == 'success'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -636,16 +625,16 @@ jobs:
         tag_name: ${{ needs.job_init.outputs.output_release_tag }}
         body_path: release.txt
 
-  # job_my_action:
-  #   needs: [job_init, job_defconfig, job_generate_release_tag, job_build, job_organize_tags]
-  #   if: ${{ always() }}
-  #   runs-on: ubuntu-22.04
-  #   name: My-Action
+  job_my_action:
+    needs: [job_init, job_defconfig, job_generate_release_tag, job_build, job_organize_tags]
+    if: ${{ always() }}
+    runs-on: ubuntu-22.04
+    name: My-Action
 
-  #   steps:
-  #     - name: Trigger build
-  #       uses: peter-evans/repository-dispatch@v3
-  #       with:
-  #         token: ${{ secrets.MY_SECRET_PAT }}
-  #         repository: smallprogram/MyAction
-  #         event-type: openwrt_compilation_completed
+    steps:
+      - name: Trigger build
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.MY_SECRET_PAT }}
+          repository: smallprogram/MyAction
+          event-type: openwrt_compilation_completed
