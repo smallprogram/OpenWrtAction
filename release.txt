@@ -1,4 +1,4 @@
-[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/multi-platform_2024.09.28_18.01.27/total?style=flat-square)](https://github.com/smallprogram/MyAction)
+[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/multi-platform_2024.09.28_18.18.36/total?style=flat-square)](https://github.com/smallprogram/MyAction)
 
 ## Source Code Information
 [![](https://img.shields.io/badge/sorce-immortalwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt) [![](https://img.shields.io/badge/sorce-lean-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede) [![](https://img.shields.io/badge/sorce-openwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)
