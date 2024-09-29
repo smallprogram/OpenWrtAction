@@ -1,0 +1,151 @@
+#
+# Copyright (c) 2022-2024 SMALLPROGRAM <https://github.com/smallprogram/OpenWrtAction>
+#
+# This is free software, licensed under the MIT License.
+# See /LICENSE for more information.
+#
+# https://github.com/smallprogram/OpenWrtAction
+# Description: Build OpenWrt using GitHub Actions
+#
+
+name: test_lean
+
+on:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
+      is_display_detailed:
+        description: 'Whether to display detailed information about compilation'
+        required: false
+        default: 'false'
+      is_single_threaded:
+        description: 'Whether single-threaded compilation'
+        required: false
+        default: 'false'
+  # schedule:
+  #   - cron: 0 */8 * * *
+
+env:
+  MAKE_DEFCONFIG_SH: compile_script/step01_make_defconfig.sh
+  GENERATE_RELEASE_TAG_SH: compile_script/step02_generate_release_tag.sh
+  GENERATE_GIT_LOG_SH: compile_script/step03_generate_git_log.sh
+  UPDATE_GIT_LOG_SH:  compile_script/step06_update_git_log.sh
+  ORGANIZE_TAG_SH: compile_script/step07_organize_tag.sh
+
+
+  PLATFORMS_SH: compile_script/platforms.sh
+
+  UPLOAD_BIN_DIR: false
+  UPLOAD_FIRMWARE: true
+  UPLOAD_ARTIFACT: true
+  UPLOAD_RELEASE: true
+  TZ: Asia/Shanghai
+
+jobs:
+ job_build:
+    runs-on: ubuntu-24.04
+    name: build
+    steps:
+      - name: Initialization Environment
+        run: |
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown $USER:$GROUPS /workdir
+          df -hT
+
+      - name: Maximize Build Space
+        uses: easimon/maximize-build-space@master
+        with:
+          root-reserve-mb: 6144
+          swap-size-mb: 10240
+          remove-dotnet: 'true'
+          remove-android: 'true'
+          remove-haskell: 'true'
+          remove-codeql: 'true'
+          remove-docker-images: 'true'
+          build-mount-path: '/workdir'
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install Packages
+        env:
+          DEBIAN_FRONTEND: noninteractive
+        run: |
+          sudo -E apt-get -qq update
+          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/openwrt_dependence)
+          # sudo bash -c 'bash <(curl -s https://build-scripts.immortalwrt.org/init_build_environment.sh)'
+          sudo -E apt-get -qq autoremove --purge
+          sudo -E apt-get -qq clean
+          sudo timedatectl set-timezone "$TZ"
+          df -hT
+
+
+      - name: Clone Source Code
+        working-directory: /workdir
+        run: |
+          git clone https://github.com/coolsnowwolf/lede openwrt
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+
+      - name: Load Custom Feeds
+        run: |
+          cp -r feeds_config/lean.feeds.conf.default openwrt/feeds.conf.default
+          chmod +x diy_script/lean_diy/diy-part1.sh
+          cd openwrt
+          $GITHUB_WORKSPACE/diy_script/lean_diy/diy-part1.sh
+
+      - name: Update Feeds
+        run: cd openwrt && ./scripts/feeds update -a
+
+      - name: Install Feeds
+        run: cd openwrt && ./scripts/feeds install -a
+
+      - name: Load Configuration
+        run: |
+          cp -r config/leanlede_config/X86.config openwrt/.config
+          chmod +x diy_script/lean_diy/diy-part2.sh
+          cd openwrt
+          $GITHUB_WORKSPACE/diy_script/lean_diy/diy-part2.sh
+          make defconfig
+
+      - name: Download Package
+        id: package
+        run: |
+          cd $GITHUB_WORKSPACE/openwrt
+          make download -j8
+          find dl -size -1024c -exec ls -l {} \;
+          find dl -size -1024c -exec rm -f {} \;
+
+      - name: Generate Frimware
+        id: compile
+        run: |
+          cd openwrt
+          is_complie_error=0
+          
+          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile frimware"
+                make -j1 V=s
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile frimware"
+                make -j$(nproc) V=s
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          else
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile frimware"
+                make -j1
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile frimware"
+                make -j$(nproc)
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          fi
+          exit $is_complie_error
