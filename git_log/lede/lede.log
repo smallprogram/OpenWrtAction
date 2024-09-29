@@ -1,0 +1,7 @@
+<details> <summary> <b>lede new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ad43ee046|coolsnowwolf|Sun Sep 29 19:44:03 2024 +0800|rockchip: fix build issue with linux 5.15
+55b08d205|coolsnowwolf|Sun Sep 29 18:54:51 2024 +0800|bcm27xx: fix linux 6.1 compile issues
+</details>

@@ -1,0 +1,7 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+77e9cd398|hingbong lo|Thu Sep 26 14:58:55 2024 +0000|rust: use `TARGET_LINKER` as linker
+24ab6e40d|Jonas Jelonek|Sat Sep 28 22:26:22 2024 +0000|eza: update to 0.20.0
+</details>

@@ -1,0 +1,13 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+06e4a0cd|coolsnowwolf|Sun Sep 29 23:25:39 2024 +0800|Merge pull request #857 from MilesPoupart/zerotier-update
+c0d5ac60|coolsnowwolf|Sun Sep 29 23:23:51 2024 +0800|Merge pull request #848 from zxlhhyccc/patch-5
+19098bf5|coolsnowwolf|Sun Sep 29 23:23:37 2024 +0800|Merge pull request #856 from cstkingkey/agh
+3c1cf6ba|coolsnowwolf|Sun Sep 29 23:23:17 2024 +0800|Merge pull request #855 from cstkingkey/go
+22237093|root|Tue Sep 24 18:51:06 2024 +0800|adguardhome: Update to 0.107.52
+43336fe1|cstkingkey|Tue Sep 24 23:08:50 2024 +0800|golang: Update to 1.22.7
+bbc0866a|mwarning|Fri Sep 27 23:50:34 2024 +0800|zerotier: referesh patches and merge other upstream changes
+0158b004|zxl hhyccc|Sat Sep 14 12:58:22 2024 +0800| tini: Fix compilation with musl libc 1.2.5
+</details>
