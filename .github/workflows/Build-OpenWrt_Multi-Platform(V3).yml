@@ -551,11 +551,13 @@ jobs:
           cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
           mv * $firmware_path/feeds_packages
           cd $firmware_path
-
-          zip -r buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip feeds_packages packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
-          rm -rf packages feeds_packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
-
           
+          # zip -r buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip feeds_packages packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
+          # rm -rf packages feeds_packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
+
+          find . ! -name '*-*-*' -exec zip buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip {} +
+          find . -mindepth 1 ! \( -name '*-*-*' -o -name '*.zip' \) -exec rm -rf {} +
+
 
           if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
               for file in openwrt-*; do
