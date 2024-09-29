@@ -33,7 +33,7 @@ if [ -f "release.txt" ]; then
 
     # 读取release.txt文件内容
     cp release.txt "$release_temp_file"
-
+    conclusion_success_count=0
     # 使用jq解析JSON并提取所需信息
     echo "$filtered_jobs" | jq -c '.[]' | while read -r job; do
         name=$(echo "$job" | jq -r '.name')
@@ -45,6 +45,9 @@ if [ -f "release.txt" ]; then
         echo "platform: $platform"
         echo "conclusion: $conclusion"
         echo "-----------------------------"
+
+        conclusion_success_count=$((conclusion_success_count + 1))
+
         awk -v sp="$source_platform" -v pl="$platform" -v concl="$conclusion" '
         {
             if ($0 ~ "scp=\"" sp "\"" && $0 ~ "plm=\"" pl "\"") {
@@ -64,6 +67,12 @@ if [ -f "release.txt" ]; then
 
     # 清理临时文件
     rm "$jobs_data_file"
+
+    if [ "$conclusion_success_count" -eq 0 ]; then
+        echo "status=failure" >>$GITHUB_OUTPUT
+    else
+        echo "status=success" >>$GITHUB_OUTPUT
+    fi
     echo "status=success" >>$GITHUB_OUTPUT
 else
     echo "status=failure" >>$GITHUB_OUTPUT
