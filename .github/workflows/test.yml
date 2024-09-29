@@ -125,4 +125,27 @@ jobs:
         id: compile
         run: |
           cd openwrt
-          make -j$(nproc)
+          is_complie_error=0
+          
+          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile frimware"
+                make -j1 V=s
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile frimware"
+                make -j$(nproc) V=s
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          else
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile frimware"
+                make -j1
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile frimware"
+                make -j$(nproc)
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          fi
+          exit $is_complie_error
