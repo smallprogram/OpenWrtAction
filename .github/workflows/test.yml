@@ -32,8 +32,6 @@ env:
   MAKE_DEFCONFIG_SH: compile_script/step01_make_defconfig.sh
   GENERATE_RELEASE_TAG_SH: compile_script/step02_generate_release_tag.sh
   GENERATE_GIT_LOG_SH: compile_script/step03_generate_git_log.sh
-  COPY_BACKGROUNDFILES_SH: compile_script/step04_copy_backgroundfiles.sh
-  BUILD_STATUS_CHECKING_SH: compile_script/step05_build_status_checking.sh
   UPDATE_GIT_LOG_SH:  compile_script/step06_update_git_log.sh
   ORGANIZE_TAG_SH: compile_script/step07_organize_tag.sh
 
@@ -47,52 +45,84 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
-  job_init:
-    runs-on: ubuntu-latest
-    outputs:
-      matrix: ${{ steps.set-matrix.outputs.matrix }}
-      source_matrix: ${{ steps.set-matrix.outputs.source_matrix_json }}
+ job_build:
+    runs-on: ubuntu-22.04
+    name: build
     steps:
+      - name: Initialization Environment
+        run: |
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown $USER:$GROUPS /workdir
+          df -hT
+
+      - name: Maximize Build Space
+        uses: easimon/maximize-build-space@master
+        with:
+          root-reserve-mb: 6144
+          swap-size-mb: 10240
+          remove-dotnet: 'true'
+          remove-android: 'true'
+          remove-haskell: 'true'
+          remove-codeql: 'true'
+          remove-docker-images: 'true'
+          build-mount-path: '/workdir'
+
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Set up matrix from platforms
-        id: set-matrix
+      - name: Install Packages
+        env:
+          DEBIAN_FRONTEND: noninteractive
         run: |
-          bash $PLATFORMS_SH
+          sudo -E apt-get -qq update
+          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/immortalwrt_dependence)
+          # sudo bash -c 'bash <(curl -s https://build-scripts.immortalwrt.org/init_build_environment.sh)'
+          sudo -E apt-get -qq autoremove --purge
+          sudo -E apt-get -qq clean
+          sudo timedatectl set-timezone "$TZ"
+          df -hT
 
 
-
-  # build:
-  #   needs: job_init
-  #   runs-on: ubuntu-latest
-  #   strategy:
-  #     fail-fast: false
-  #     matrix:
-  #       include: ${{ fromJson(needs.job_init.outputs.matrix) }}
-    
-  #   steps:
-  #     - name: Echo matrix values
-  #       run: |
-  #         echo "Source Code Platform: ${{ matrix.source_code_platform }}"
-  #         echo "Platform: ${{ matrix.platform }}"
-  #         echo "REPO_URL: ${{ matrix.value.REPO_URL }}"   # 直接引用 REPO_URL
-  #         echo "REPO_BRANCH: ${{ matrix.value.REPO_BRANCH }}"  # 可以引用其他的字段
-
-  build2:
-    needs: job_init
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        include: ${{ fromJson(needs.job_init.outputs.source_matrix) }}
-    
-    steps:
-      - name: Echo matrix values
+      - name: Clone Source Code
+        working-directory: /workdir
         run: |
-          echo "Source Code Platform: ${{ matrix.source_code_platform }}"
-          echo "Platform: ${{ matrix.platform }}"
-          echo "REPO_URL: ${{ matrix.value.REPO_URL }}"   # 直接引用 REPO_URL
-          echo "REPO_BRANCH: ${{ matrix.value.REPO_BRANCH }}"  # 可以引用其他的字段
+          git clone https://github.com/immortalwrt/immortalwrt.git openwrt
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+
+      - name: Load Custom Feeds
+        run: |
+          [ -e $FEEDS_CONF ] && cp -r feeds_config/immortalwrt.feeds.conf.default openwrt/feeds.conf.default
+          chmod +x diy_script/immortalwrt_diy/diy-part1.sh
+          cd openwrt
+          $GITHUB_WORKSPACE/diy_script/immortalwrt_diy/diy-part1.sh
+
+      - name: Update Feeds
+        run: cd openwrt && ./scripts/feeds update -a
+
+      - name: Install Feeds
+        run: cd openwrt && ./scripts/feeds install -a
+
+      - name: Load Configuration
+        run: |
+          [ -e config/immortalwrt_config/X86.config ] && cp -r config/immortalwrt_config/X86.config openwrt/.config
+          chmod +x diy_script/immortalwrt_diy/diy-part2.sh
+          cd openwrt
+          $GITHUB_WORKSPACE/diy_script/immortalwrt_diy/diy-part2.sh
+          make defconfig
+
+      - name: Download Package
+        id: package
+        run: |
+          cd $GITHUB_WORKSPACE/openwrt
+          make download -j8
+          find dl -size -1024c -exec ls -l {} \;
+          find dl -size -1024c -exec rm -f {} \;
+
+      - name: Generate Frimware
+        id: compile
+        run: |
+          cd openwrt
+          make -j$(nproc)
