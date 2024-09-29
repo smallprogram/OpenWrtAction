@@ -48,7 +48,7 @@ env:
 
 jobs:
   job_init: 
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     name: Init
     outputs:
       output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
@@ -73,7 +73,7 @@ jobs:
   
   job_defconfig:
     needs: job_init
-    runs-on: ubuntu-22.04
+    runs-on: ${{ matrix.value.OS }}
     name: Defconfig-${{ matrix.source_code_platform }}
     strategy:
       fail-fast: false
@@ -213,7 +213,7 @@ jobs:
 
   job_generate_release_tag: 
     needs: [job_init, job_defconfig]
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     name: Generate-Release-Tag-And-Git-Log
 
     steps:
@@ -292,7 +292,7 @@ jobs:
 
   job_build:
     needs: [job_init, job_defconfig, job_generate_release_tag]
-    runs-on: ubuntu-22.04
+    runs-on: ${{ matrix.value.OS }}
     strategy:
       fail-fast: false
       matrix:
@@ -333,9 +333,8 @@ jobs:
         run: |
           sudo -E apt-get -qq update
           sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
-          # sudo bash -c 'bash <(curl -s https://build-scripts.immortalwrt.org/init_build_environment.sh)'
-          sudo -E apt-get -qq autoremove --purge
-          sudo -E apt-get -qq clean
+          # sudo -E apt-get -qq autoremove --purge
+          # sudo -E apt-get -qq clean
           sudo timedatectl set-timezone "$TZ"
           df -hT
 
@@ -592,7 +591,7 @@ jobs:
   job_organize_tags:
     needs: [job_init, job_defconfig, job_generate_release_tag, job_build]
     if: ${{ always() }}
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     name: Organize-Release-Tags
         
     steps:
@@ -630,7 +629,7 @@ jobs:
   job_my_action:
     needs: [job_init, job_defconfig, job_generate_release_tag, job_build, job_organize_tags]
     if: ${{ always() }}
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     name: My-Action
 
     steps:
