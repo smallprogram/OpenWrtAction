@@ -19,12 +19,50 @@
 </div>
 
 ## Source Code Information
-<div align="center">
+<!-- <div align="center">
 
 [![](https://img.shields.io/badge/source-immortalwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt) [![](https://img.shields.io/badge/source-lean-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede) [![](https://img.shields.io/badge/source-openwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)
 
-</div>
+</div> -->
 
+[![](https://img.shields.io/badge/source-immortalwrt-blue?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt)
+```
+.___                               __         .__
+|   | _____   _____   ____________/  |______  |  |
+|   |/     \ /     \ /  _ \_  __ \   __\__  \ |  |
+|   |  Y Y  \  Y Y  (  <_> )  | \/|  |  / __ \|  |__
+|___|__|_|  /__|_|  /\____/|__|   |__| (____  /____/
+          \/      \/  BE FREE AND UNAFRAID  \/
+ -------------------------------------------------------------------------
+ ImmortalWrt SNAPSHOT, https://github.com/immortalwrt/immortalwrt
+ -------------------------------------------------------------------------
+ ```
+[![](https://img.shields.io/badge/source-openwrt-blue?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)
+ ```
+
+  _______                     ________        __
+ |       |.-----.-----.-----.|  |  |  |.----.|  |_
+ |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|
+ |_______||   __|_____|__|__||________||__|  |____|
+          |__| W I R E L E S S   F R E E D O M
+ -------------------------------------------------------------------------
+ OpenWrt SNAPSHOT, https://github.com/openwrt/openwrt
+ -------------------------------------------------------------------------
+
+```
+ [![](https://img.shields.io/badge/source-lean-blue?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede)
+
+```
+     _________
+    /        /\        _    ___ ___  ___
+   /  LE    /  \      | |  | __|   \| __|
+  /    DE  /    \     | |__| _|| |) | _|
+ /________/  LE  \    |____|___|___/|___|
+ \        \   DE /
+  \    LE  \    /  -------------------------------------------------------
+   \  DE    \  /    OpenWrt SNAPSHOT, https://github.com/coolsnowwolf/lede
+    \________\/    -------------------------------------------------------
+```
 <!-- ![](https://img.shields.io/github/watchers/smallprogram/OpenWrtAction?style=social) ![](https://img.shields.io/github/forks/smallprogram/OpenWrtAction?style=social) ![](https://img.shields.io/github/stars/smallprogram/OpenWrtAction?style=social) -->
 
 
@@ -156,7 +194,5 @@ bash wsl2op.sh
 注意如果要使用`[distclean]`参数，必须要先加入`[configname]`参数，如果想不指定`[configname]`,可使用空格代替，例如`bash wsl2op.sh '' 1`,单线程编译也是如此。
 如果不指定任何参数，也可以直接执行`bash wsl2op.sh`。在导航中选择即可。 -->
 
-> 首次编译推荐使用单线程模式编译。
-> 首次编译如果使用默认的多线程编译，有很大几率会编译报错。
 
 
