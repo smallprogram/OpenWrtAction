@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-9cba185|zhusir|Tue Oct 1 13:52:06 2024 +0800|action: update dependence version
-cb23739|github-actions[bot]|Tue Oct 1 13:47:41 2024 +0800|xray-core: update to 24.9.30 (#293)
-</details>
