@@ -69,13 +69,13 @@ function Func_Copy_Backgroundfiles() {
     local platform_config=$2
     local platform="${platform_config%%.config}"
 
-    Func_LogMessage "开始执行背景文件生成脚本" "Start executing copy background files script"
-    sleep 1s
+    # Func_LogMessage "开始执行背景文件生成脚本" "Start executing copy background files script"
+    # sleep 1s
 
-    bash ../OpenWrtAction/compile_script/step04_copy_backgroundfiles.sh "$is_wsl2op" "$platform"
+    # bash ../OpenWrtAction/compile_script/step04_copy_backgroundfiles.sh "$is_wsl2op" "$platform"
 
-    Func_LogSuccess "背景文件生成脚本执行完成" "copy background files script execution completed"
-    sleep 2s
+    # Func_LogSuccess "背景文件生成脚本执行完成" "copy background files script execution completed"
+    # sleep 2s
 }
 
 # function Func_ZH_CN_Init(){
