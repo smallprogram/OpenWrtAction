@@ -130,6 +130,92 @@ jobs:
 
           $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
 
+      - name: Download Package
+        id: package
+        run: |
+          df -hT
+          cd $GITHUB_WORKSPACE/openwrt
+          make download -j8
+          find dl -size -1024c -exec ls -l {} \;
+          find dl -size -1024c -exec rm -f {} \;
+          df -hT
+
+      - name: Compile Tools
+        id: compile_tools
+        run: |
+          cd $GITHUB_WORKSPACE/openwrt
+          is_complie_error=0
+
+          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile tools"
+                make tools/compile -j1 V=s
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile tools"
+                make tools/compile -j$(nproc) V=s
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          else
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile tools"
+                make tools/compile -j1
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile tools"
+                make tools/compile -j$(nproc)
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          fi
+
+          echo "complie result： $is_complie_error"
+          if [ "$is_complie_error" -eq 0 ]; then
+            echo "status=success" >> $GITHUB_OUTPUT
+          else
+            echo "status=failure" >> $GITHUB_OUTPUT
+            exit $is_complie_error
+          fi
+
+          df -hT
+
+      - name: Compile Toolchain
+        if: steps.compile_tools.outputs.status == 'success'
+        id: compile_toolchain
+        run: |
+          cd $GITHUB_WORKSPACE/openwrt
+          is_complie_error=0
+          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile toolchain"
+                make toolchain/compile -j1 V=s
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile toolchain"
+                make toolchain/compile -j$(nproc) V=s
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          else
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile toolchain"
+                make toolchain/compile -j1
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile toolchain"
+                make toolchain/compile -j$(nproc)
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          fi
+
+          echo "complie result： $is_complie_error"
+          if [ "$is_complie_error" -eq 0 ]; then
+            echo "status=success" >> $GITHUB_OUTPUT
+          else
+            echo "status=failure" >> $GITHUB_OUTPUT
+            exit $is_complie_error
+          fi
+
+          df -hT      
+
       - name: Merge and push changes with "theirs" strategy
         run: |
           git checkout temp-${{ matrix.source_code_platform }}
@@ -383,98 +469,13 @@ jobs:
           make defconfig
           # $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platform }}"
 
-      - name: Download Package
-        id: package
-        run: |
-          df -hT
-          cd $GITHUB_WORKSPACE/openwrt
-          make download -j8
-          find dl -size -1024c -exec ls -l {} \;
-          find dl -size -1024c -exec rm -f {} \;
-          df -hT
       
       - name: SSH connection to Actions
         uses: mxschmitt/action-tmate@v3.16
         if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
-      - name: Compile Tools
-        id: compile_tools
-        run: |
-          cd openwrt
-          is_complie_error=0
-
-          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile tools"
-                make tools/compile -j1 V=s
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile tools"
-                make tools/compile -j$(nproc) V=s
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          else
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile tools"
-                make tools/compile -j1
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile tools"
-                make tools/compile -j$(nproc)
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          fi
-
-          echo "complie result： $is_complie_error"
-          if [ "$is_complie_error" -eq 0 ]; then
-            echo "status=success" >> $GITHUB_OUTPUT
-          else
-            echo "status=failure" >> $GITHUB_OUTPUT
-            exit $is_complie_error
-          fi
-
-          df -hT
-
-      - name: Compile Toolchain
-        if: steps.compile_tools.outputs.status == 'success'
-        id: compile_toolchain
-        run: |
-          cd openwrt
-          is_complie_error=0
-          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile toolchain"
-                make toolchain/compile -j1 V=s
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile toolchain"
-                make toolchain/compile -j$(nproc) V=s
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          else
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile toolchain"
-                make toolchain/compile -j1
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile toolchain"
-                make toolchain/compile -j$(nproc)
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          fi
-
-          echo "complie result： $is_complie_error"
-          if [ "$is_complie_error" -eq 0 ]; then
-            echo "status=success" >> $GITHUB_OUTPUT
-          else
-            echo "status=failure" >> $GITHUB_OUTPUT
-            exit $is_complie_error
-          fi
-
-          df -hT
 
       - name: Generate Frimware
-        if: steps.compile_toolchain.outputs.status == 'success'
         id: compile
         run: |
           cd openwrt
