@@ -20,6 +20,7 @@ cd feeds/packages
 git reflog
 git checkout 565e79e73619f806bc56ef189917ba013f306023 -- lang/ruby
 # git checkout HEAD -- lang/ruby
+cd $GITHUB_WORKSPACE/openwrt
 
 
 # Modify default passwd
