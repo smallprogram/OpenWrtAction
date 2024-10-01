@@ -2,6 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+b99d53231|coolsnowwolf|Tue Oct 1 14:11:04 2024 +0800|kernel: bump 5.4 to 5.4.284
+d1ebc2ca7|Beginner|Tue Oct 1 12:25:04 2024 +0800|kernel: bump 6.6 to 6.6.53 (#12509)
+1a1b7da30|Beginner|Tue Oct 1 12:20:19 2024 +0800|kernel: bump 6.1 to 6.1.112 (#12510)
+fac34a2df|coolsnowwolf|Fri Sep 27 10:30:19 2024 +0800|rockchip: sync upstream 6.6 source code
 ad43ee046|coolsnowwolf|Sun Sep 29 19:44:03 2024 +0800|rockchip: fix build issue with linux 5.15
-55b08d205|coolsnowwolf|Sun Sep 29 18:54:51 2024 +0800|bcm27xx: fix linux 6.1 compile issues
 </details>

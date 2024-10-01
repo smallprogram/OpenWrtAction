@@ -2,33 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7fba5aebb|Tianling Shen|Sun Sep 29 17:17:51 2024 +0800|Merge Official Source
-77e9cd398|hingbong lo|Thu Sep 26 14:58:55 2024 +0000|rust: use `TARGET_LINKER` as linker
-24ab6e40d|Jonas Jelonek|Sat Sep 28 22:26:22 2024 +0000|eza: update to 0.20.0
-7e9ef5781|Tianling Shen|Sat Sep 28 15:46:14 2024 +0800|btop: Update to 1.4.0
-a8dd735d9|Aleksey Vasilenko|Tue Sep 24 15:28:17 2024 +0300|git: update to 2.46.2
-381f729b4|S. Brusch|Thu Sep 26 15:23:08 2024 +0000|crowdsec-firewall-bouncer: updated to new upstream release version 0.0.31
-97a071620|Stan Grishin|Thu Sep 26 20:43:56 2024 +0000|pbr: update to 1.1.7-15
-1b9a6ae47|Florian Eckert|Fri Sep 27 15:19:05 2024 +0200|Revert "mwan3: use network_get_preferred_ipaddr6"
-179bf9d62|Aleksey Vasilenko|Thu Sep 19 11:16:45 2024 +0300|squid: update to 6.11
-ada1f4794|Aleksey Vasilenko|Thu Sep 19 10:04:06 2024 +0300|libpng: update to 1.6.44
-06eb25106|Milinda Brantini|Mon Sep 23 21:10:04 2024 +0800|sing-box: Update to 1.9.6
-500a8ab99|Milinda Brantini|Mon Sep 23 21:09:09 2024 +0800|sing-box: Update to 1.9.5
-b90e9b7eb|John Audia|Sun Sep 22 14:07:20 2024 -0400|openssh: bump to 9.9p1
-b1635b899|Noah Meyerhans|Mon Sep 9 09:06:29 2024 -0400|iputils: bump to 20240905
-d9cc0e1cd|Florian Eckert|Wed Sep 25 16:35:57 2024 +0200|ddns-scripts: fix update_porkbun_v3 shell syntax
-77eedd8c6|Stan Grishin|Mon Sep 23 21:00:11 2024 +0000|pbr: bugfix: filter only static routes for new tables
-e828f98ba|Lukas Voegl|Mon Jun 24 16:28:42 2024 +0200|fwupd: add package
-8c4113e2b|Lukas Voegl|Mon Jul 1 11:37:00 2024 +0200|libgudev: add package
-f1b0c84bb|Lukas Voegl|Mon Jun 24 16:28:23 2024 +0200|libxmlb: add package
-0cad8e8a7|Lukas Voegl|Mon Jun 24 16:28:11 2024 +0200|libjcat: add package
-6c1ce8ccc|Aleksey Vasilenko|Mon Sep 23 23:13:51 2024 +0300|iperf3: explicitly disable SCTP
-6e208887e|Jan Hák|Thu Sep 19 12:37:10 2024 +0200|knot-resolver: update to version 5.7.4
-0c7d79bed|Aleksey Vasilenko|Sat Sep 7 16:50:17 2024 +0300|libmariadb: update to 3.4.1
-3ea5b9520|Aleksey Vasilenko|Sat Sep 7 16:35:44 2024 +0300|mariadb: update to 11.4.3
-b892e7274|Aleksey Vasilenko|Sat Sep 7 19:52:23 2024 +0300|clamav: update to 1.4.1
-5b6db029e|Aleksey Vasilenko|Wed Sep 11 15:31:33 2024 +0300|nghttp2: update to 1.63.0
-04fbeb9dd|Eric Fahlgren|Sat Sep 21 06:39:28 2024 -0700|owut: update to 2024.09.21
-e691db004|Tianling Shen|Mon Sep 23 15:12:53 2024 +0800|dnsproxy: fix set hosts options
-99c28c28d|John Audia|Sat Sep 21 12:24:25 2024 -0400|stress-ng: bump to version 0.18.04
+a4b6c2710|Tianling Shen|Tue Oct 1 18:21:57 2024 +0800|Merge Official Source
+88a01c4ce|Milinda Brantini|Mon Sep 30 00:01:34 2024 +0800|ctop: Drop unused variable
+ae0d0879f|Milinda Brantini|Sun Sep 29 23:36:35 2024 +0800|golang: Optimized values to suit golang 1.23
+bfb9e266d|Milinda Brantini|Wed Sep 18 23:48:26 2024 +0800|golang: Update to 1.23.1
+372404716|Eric Fahlgren|Sun Sep 29 19:46:58 2024 -0700|owut: update to 2024.09.28
 </details>
