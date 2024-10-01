@@ -15,6 +15,13 @@
 # Modify default IP
 sed -i 's/192.168.1.1/10.10.0.253/g' package/base-files/files/bin/config_generate
 
+# rollback ruby verion from 3.3.4 to 3.2.2
+cd feeds/packages
+git reflog
+git checkout 565e79e73619f806bc56ef189917ba013f306023 -- lang/ruby
+# git checkout HEAD -- lang/ruby
+
+
 # Modify default passwd
 # sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' package/lean/default-settings/files/zzz-default-settings
 
