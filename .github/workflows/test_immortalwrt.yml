@@ -245,10 +245,23 @@ jobs:
           find dl -size -1024c -exec ls -l {} \;
           find dl -size -1024c -exec rm -f {} \;
 
+      - name: Generate Frimware ruby
+        id: compile_ruby
+        run: |
+          cd $GITHUB_WORKSPACE/openwrt
+          make package/feeds/packages/ruby/{clean,compile} V=s
+
+          echo "----------------------------------------------------------------"
+          make package/feeds/packages/ruby/{clean,compile}
+          cd $GITHUB_WORKSPACE
       - name: Generate Frimware
         id: compile
         run: |
           cd openwrt
+
+          make package/feeds/packages/ruby/{clean,compile} V=s
+
+
           is_complie_error=0
           
           if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
