@@ -17,7 +17,7 @@ sed -i 's/192.168.1.1/10.10.0.253/g' package/base-files/files/bin/config_generat
 
 # rollback ruby verion from 3.3.4 to 3.2.2
 cd feeds/packages
-git reflog
+git fetch --unshallow
 git checkout 565e79e73619f806bc56ef189917ba013f306023 -- lang/ruby
 # git checkout HEAD -- lang/ruby
 cd $GITHUB_WORKSPACE/openwrt
