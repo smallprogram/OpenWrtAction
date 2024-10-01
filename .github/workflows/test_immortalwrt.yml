@@ -93,7 +93,7 @@ jobs:
             at-spi2-core autoconf automake autopoint autotools-dev base-files base-passwd bash-completion \
             bash bind9-dnsutils bind9-host bind9-libs binfmt-support binutils-common binutils-x86-64-linux-gnu \
             binutils bison bsdextrautils bsdutils build-essential busybox-static byobu bzip2 ca-certificates-java \
-            ca-certificates ccache clang-14 clang-16 clang cmake-data cmake command-not-found console-setup-linux \
+            ca-certificates ccache clang cmake-data cmake command-not-found console-setup-linux \
             console-setup coreutils cpio cpp-11 cpp-9 cpp cron curl dash dblatex-doc dblatex dbus-x11 dbus \
             dconf-gsettings-backend dconf-service debconf-i18n debconf debianutils default-jre-headless device-tree-compiler \
             dh-elpa-helper diffstat diffutils dirmngr distro-info-data distro-info dmidecode dmsetup docbook-dsssl \
@@ -101,7 +101,7 @@ jobs:
             ecj ed eject emacsen-common fakeroot fastjar file findutils flex fontconfig-config fontconfig fonts-dejavu-core \
             fonts-droid-fallback fonts-gfs-baskerville fonts-gfs-porson fonts-lato fonts-lmodern fonts-noto-mono fonts-texgyre \
             fonts-ubuntu fonts-urw-base35 friendly-recovery ftp fuse3 g++-11-multilib g++-11 g++-9-multilib g++-9 g++-multilib \
-            g++ gawk gcc-11-base gcc-11-multilib gcc-11 gcc-12-base gcc-13-base gcc-9-base gcc-9-multilib gcc-9 gcc-multilib gcc \
+            g++ gawk gcc-11-base gcc-11-multilib gcc-11 gcc-12-base gcc-9-base gcc-9-multilib gcc-9 gcc-multilib gcc \
             genisoimage gettext-base gettext ghostscript gir1.2-glib-2.0 gir1.2-packagekitglib-1.0 git-man git gnupg-l10n \
             gnupg-utils gnupg2 gnupg golang-1.22-go golang-1.22-src gperf gpg-agent gpg-wks-client gpg-wks-server gpg gpgconf \
             gpgsm gpgv grep groff-base gsasl-common gsettings-desktop-schemas gtk-update-icon-cache gzip haveged hdparm help2man \
@@ -116,9 +116,9 @@ jobs:
             libaudit1 libauthen-sasl-perl libavahi-client3 libavahi-common-data libavahi-common3 libb-hooks-endofscope-perl \
             libb-hooks-op-check-perl libbinutils libblkid-dev libblkid1 libboost-iostreams1.74.0 libboost-thread1.74.0 libbpf0 \
             libbrotli1 libbsd0 libbz2-1.0 libc-bin libc-dev-bin libc-devtools libc6-dev-i386 libc6-dev-x32 libc6-dev libc6-i386 \
-            libc6-x32 libc6 libcairo-gobject2 libcairo2 libcap-ng0 libcap2-bin libcap2 libcbor0.8 libcc1-0 libclang-16-dev \
-            libclang-common-14-dev libclang-common-16-dev libclang-cpp14 libclang-cpp16 libclang-rt-16-dev libclang1-14 \
-            libclang1-16 libclass-c3-perl libclass-c3-xs-perl libclass-data-inheritable-perl libclass-method-modifiers-perl \
+            libc6-x32 libc6 libcairo-gobject2 libcairo2 libcap-ng0 libcap2-bin libcap2 libcbor0.8 libcc1-0 \
+            libclang-common-14-dev libclang-cpp14 libclang1-14 \
+            libclass-c3-perl libclass-c3-xs-perl libclass-data-inheritable-perl libclass-method-modifiers-perl \
             libclass-xsaccessor-perl libclone-perl libcolord2 libcom-err2 libcommon-sense-perl libcommons-logging-java \
             libcommons-parent-java libcrypt-dev libcrypt1 libcryptsetup12 libctf-nobfd0 libctf0 libcups2 libcurl3-gnutls \
             libcurl4 libdata-dump-perl libdata-optlist-perl libdatrie1 libdaxctl1 libdb5.3 libdbus-1-3 libdconf1 libdebconfclient0 \
@@ -140,8 +140,8 @@ jobs:
             libicu70 libidn12 libidn2-0 libidn2-dev libijs-0.35 libimagequant0 libio-html-perl libio-socket-ssl-perl libio-stringy-perl libip4tc2 \
             libip6tc2 libipc-shareable-perl libipc-system-simple-perl libisc-export1105 libiscsi7 libisl23 libitm1 libjansson4 libjbig0 libjbig2dec0 \
             libjpeg-turbo8 libjpeg8 libjq1 libjs-jquery libjs-sphinxdoc libjs-underscore libjson-c5 libjson-perl libjson-xs-perl libjsoncpp25 \
-            libk5crypto3 libkeyutils1 libkmod2 libkpathsea6 libkrb5-3 libkrb5support0 libksba8 liblcms2-2 libldap-2.5-0 libldap-common liblld-16-dev \
-            liblld-16 libllvm11 libllvm14 libllvm15 libllvm16 liblmdb0 liblocale-gettext-perl liblog-dispatch-perl liblog-log4perl-perl liblsan0 \
+            libk5crypto3 libkeyutils1 libkmod2 libkpathsea6 libkrb5-3 libkrb5support0 libksba8 liblcms2-2 libldap-2.5-0 libldap-common \
+            libllvm11 libllvm14 libllvm15 liblmdb0 liblocale-gettext-perl liblog-dispatch-perl liblog-log4perl-perl liblsan0 \
             libltdl-dev libltdl7 liblwp-mediatypes-perl liblwp-protocol-https-perl liblz4-1 liblzma5 liblzo2-2 libmagic-mgc libmagic1 libmail-sendmail-perl \
             libmailtools-perl libmaxminddb0 libmd0 libmime-charset-perl libmime-lite-perl libmime-types-perl libmnl0 libmodule-implementation-perl \
             libmodule-runtime-perl libmount-dev libmount1 libmpc-dev libmpc3 libmpdec3 libmpfr-dev libmpfr6 libmro-compat-perl libnamespace-autoclean-perl \
@@ -175,8 +175,8 @@ jobs:
             libxml-namespacesupport-perl libxml-parser-perl libxml-sax-base-perl libxml-sax-expat-perl libxml-sax-perl libxml-twig-perl libxml-xpathengine-perl \
             libxml2-dev libxml2-utils libxml2 libxmlb2 libxmu6 libxmuu1 libxpm4 libxrandr2 libxrender1 libxshmfence1 libxslt1.1 libxss1 libxstring-perl \
             libxt6 libxtables12 libxtst6 libxv1 libxxf86dga1 libxxf86vm1 libxxhash0 libyaml-0-2 libyaml-dev libyaml-tiny-perl libz3-4 libz3-dev libzstd-dev \
-            libzstd1 libzzip-0-13 linux-libc-dev lld-14 lld-16 lld llvm-14-dev llvm-14-linker-tools llvm-14-runtime llvm-14-tools llvm-14 llvm-16-dev \
-            llvm-16-linker-tools llvm-16-runtime llvm-16-tools llvm-16 llvm-runtime llvm lmodern locales login logrotate logsave lrzsz lsb-base \
+            libzstd1 libzzip-0-13 linux-libc-dev lld-14 lld llvm-14-dev llvm-14-linker-tools llvm-14-runtime llvm-14-tools llvm-14 \
+            llvm-runtime llvm lmodern locales login logrotate logsave lrzsz lsb-base \
             lsb-release lshw lsof lto-disabled-list lynx-common lynx m4 mailcap make man-db manpages-dev manpages mawk media-types mime-support \
             motd-news-config mount msmtp mtr-tiny nano ncurses-base ncurses-bin netbase netcat-openbsd netplan.io nettle-dev networkd-dispatcher \
             nftables ninja-build node-uglify-js nodejs ntfs-3g openjade openjdk-11-jre-headless opensp openssh-client openssl p7zip-full p7zip \
