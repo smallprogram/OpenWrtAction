@@ -248,6 +248,7 @@ jobs:
       - name: Generate tools toolchain
         id: compile_tools_toolchain
         run: |
+          cd $GITHUB_WORKSPACE/openwrt
           make tools/compile -j$(nproc)
           make toolchain/compile -j$(nproc)    
 
