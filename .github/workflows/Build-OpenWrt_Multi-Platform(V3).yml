@@ -84,6 +84,9 @@ jobs:
       - name: Init System
         id: init
         run: |
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown $USER:$GROUPS /workdir
           cd /workdir
           sudo mkdir -p output
           sudo chown $USER:$GROUPS /workdir/output
