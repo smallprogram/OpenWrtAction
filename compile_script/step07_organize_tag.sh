@@ -73,7 +73,6 @@ if [ -f "release.txt" ]; then
     else
         echo "status=success" >>$GITHUB_OUTPUT
     fi
-    echo "status=success" >>$GITHUB_OUTPUT
 else
     echo "status=failure" >>$GITHUB_OUTPUT
 fi
