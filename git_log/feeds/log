@@ -1,7 +1,7 @@
-routing:
-telephony:
-openwrt-passwall-packages:
-openwrt-passwall:
-openwrt-passwall2:
-helloworld:
-OpenClash:
+routing:233b3c66374ab4cc3a616a12125d9a55af08f2d6
+telephony:7f4fa9e79193c1853e1761a68dca585849cff435
+openwrt-passwall-packages:eb126215abac69ad7d415f81748b1c216cc6951c
+openwrt-passwall:4fdbae92753bfda2806d9a248cb7408945786196
+openwrt-passwall2:3f0d3a59d5f9e8e61fe90b70ed19b911395f0089
+helloworld:24a191cedb8ce45dc07343544a78ef2369c68098
+OpenClash:fc741a805883d6105c989af9bb6688e0edd7ab32
