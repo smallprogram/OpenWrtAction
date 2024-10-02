@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+acbc0165f4|Tianling Shen|Wed Oct 2 20:25:37 2024 +0800|Merge Official Source
+a9540a4e33|Felix Fietkau|Wed Oct 2 12:38:32 2024 +0200|mac80211: do not pass a stopped vif to the driver on get_txpower
 5f805aedbc|Tianling Shen|Wed Oct 2 15:38:42 2024 +0800|Merge Official Source
 123cb3793f|John Audia|Mon Sep 30 15:58:56 2024 -0400|kernel: bump 6.6 to 6.6.53
 5ca8a4a03a|Aleksander Jan Bajkowski|Tue Oct 1 20:49:55 2024 +0200|lantiq: backport latest upstream patches
