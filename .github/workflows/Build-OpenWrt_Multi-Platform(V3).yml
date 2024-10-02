@@ -80,36 +80,14 @@ jobs:
       matrix:
         include: ${{ fromJson(needs.job_init.outputs.platforms_source) }}
     steps:
-      - name: Initialization Environment
-        run: |
-          sudo timedatectl set-timezone "$TZ"
-          sudo mkdir -p /workdir
-          sudo chown $USER:$GROUPS /workdir
-          df -hT
-  
-      - name: Maximize Build Space
-        uses: easimon/maximize-build-space@master
-        with:
-          root-reserve-mb: 6144
-          swap-size-mb: 10240
-          remove-dotnet: 'true'
-          remove-android: 'true'
-          remove-haskell: 'true'
-          remove-codeql: 'true'
-          remove-docker-images: 'true'
-          build-mount-path: '/workdir'
 
-      - name: Init System And Install Packages
+      - name: Init System
         id: init
         run: |
           cd /workdir
           sudo mkdir -p output
           sudo chown $USER:$GROUPS /workdir/output
           ln -sf /workdir/output $GITHUB_WORKSPACE/output
-          sudo -E apt-get -qq update
-          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
-          # sudo -E apt-get -qq autoremove --purge
-          # sudo -E apt-get -qq clean
           df -hT
 
       - name: Checkout
@@ -142,104 +120,13 @@ jobs:
           git reset --hard origin/${{ github.ref_name }}
           git checkout -b temp-${{ matrix.source_code_platform }}
 
-      - name: Make Defconfig Custom Configuration And Init Config
+      - name: Make Defconfig Custom Configuration
         run: |
           chmod +x ${{ matrix.value.DIY_P2_SH }}
           chmod +x $MAKE_DEFCONFIG_SH
           cd openwrt
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
           $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
-          
-          cd $GITHUB_WORKSPACE
-          cp -r ${{ matrix.value.CONFIGS }}/X86.config openwrt/.config
-          cd openwrt
-          make defconfig
-
-      - name: Download Package Init
-        id: package
-        run: |
-          df -hT
-          cd $GITHUB_WORKSPACE/openwrt
-          make download -j8
-          find dl -size -1024c -exec ls -l {} \;
-          find dl -size -1024c -exec rm -f {} \;
-          df -hT
-
-      - name: Compile Tools
-        id: compile_tools
-        run: |
-          cd $GITHUB_WORKSPACE/openwrt
-          is_complie_error=0
-
-          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile tools"
-                make tools/compile -j1 V=s
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile tools"
-                make tools/compile -j$(nproc) V=s
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          else
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile tools"
-                make tools/compile -j1
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile tools"
-                make tools/compile -j$(nproc)
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          fi
-
-          echo "complie result： $is_complie_error"
-          if [ "$is_complie_error" -eq 0 ]; then
-            echo "status=success" >> $GITHUB_OUTPUT
-          else
-            echo "status=failure" >> $GITHUB_OUTPUT
-            exit $is_complie_error
-          fi
-
-          df -hT
-
-      - name: Compile Toolchain
-        if: steps.compile_tools.outputs.status == 'success'
-        id: compile_toolchain
-        run: |
-          cd $GITHUB_WORKSPACE/openwrt
-          is_complie_error=0
-          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile toolchain"
-                make toolchain/compile -j1 V=s
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile toolchain"
-                make toolchain/compile -j$(nproc) V=s
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          else
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile toolchain"
-                make toolchain/compile -j1
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile toolchain"
-                make toolchain/compile -j$(nproc)
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          fi
-
-          echo "complie result： $is_complie_error"
-          if [ "$is_complie_error" -eq 0 ]; then
-            echo "status=success" >> $GITHUB_OUTPUT
-          else
-            echo "status=failure" >> $GITHUB_OUTPUT
-            exit $is_complie_error
-          fi
-
-          df -hT      
 
       - name: Merge and push changes with "theirs" strategy
         run: |
@@ -398,17 +285,14 @@ jobs:
           echo "No changes to commit."
         fi
 
-      
-
-
-  job_build:
+  job_build_toolchain:
     needs: [job_init, job_source_init, job_generate_release_tag]
     runs-on: ${{ matrix.value.OS }}
     strategy:
       fail-fast: false
       matrix:
         include: ${{ fromJson(needs.job_init.outputs.platforms) }}
-    name: Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}
+    name: Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}
 
     steps:
       - name: Initialization Environment
@@ -468,12 +352,6 @@ jobs:
           name: Source_${{ matrix.source_code_platform }}
           path: download
 
-      - name: Download Tags
-        uses: actions/download-artifact@v4
-        with:
-          name: release_tag
-          path: download
-
       - name: File Extraction
         working-directory: /workdir
         run: |
@@ -503,7 +381,6 @@ jobs:
           find dl -size -1024c -exec ls -l {} \;
           find dl -size -1024c -exec rm -f {} \;
           df -hT
-
       
       - name: SSH connection to Actions
         uses: mxschmitt/action-tmate@v3.16
@@ -578,7 +455,120 @@ jobs:
             echo "status=failure" >> $GITHUB_OUTPUT
             exit $is_complie_error
           fi
+          df -hT      
+
+      - name: Generate Source Packages
+        working-directory: /workdir
+        id: generate_image
+        run: |
+          echo "source toolchain folder size:"
+          du -hs openwrt/
+          echo
+          tar -czf output/output_toolchain.tar.gz openwrt/
+
+          echo "source toolchain file size:"
+          cd output
+          ls -lh output_toolchain.tar.gz
+          echo "SOURCE_TOOLCHAIN_PATH=$PWD" >> $GITHUB_ENV
+          echo "status=success" >> $GITHUB_OUTPUT
+  
+      - name: Upload Source To Artifact
+        uses: actions/upload-artifact@v4
+        if: steps.generate_image.outputs.status == 'success'
+        with:
+          name: Source_${{ matrix.source_code_platform }}_${{ matrix.platform }}
+          path: ${{ env.SOURCE_TOOLCHAIN_PATH }}/output.tar.gz
+          retention-days: 5          
+
+  job_build:
+    needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain]
+    runs-on: ${{ matrix.value.OS }}
+    if: ${{ always() }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.job_init.outputs.platforms) }}
+    name: Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}
+
+    steps:
+      - name: Initialization Environment
+        run: |
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown $USER:$GROUPS /workdir
           df -hT
+  
+      - name: Maximize Build Space
+        uses: easimon/maximize-build-space@master
+        with:
+          root-reserve-mb: 6144
+          swap-size-mb: 10240
+          remove-dotnet: 'true'
+          remove-android: 'true'
+          remove-haskell: 'true'
+          remove-codeql: 'true'
+          remove-docker-images: 'true'
+          build-mount-path: '/workdir'
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Pull the latest changes
+        run: git pull origin ${{ github.ref_name }}
+
+      - name: Install Packages
+        env:
+          DEBIAN_FRONTEND: noninteractive
+        run: |
+          sudo -E apt-get -qq update
+          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
+          # sudo -E apt-get -qq autoremove --purge
+          # sudo -E apt-get -qq clean
+          sudo timedatectl set-timezone "$TZ"
+          df -hT
+
+      - name: Initialization Directory
+        working-directory: /workdir
+        id: init_directory
+        run: |
+          sudo mkdir -p openwrt
+          sudo mkdir -p download
+          sudo chown $USER:$GROUPS /workdir/openwrt
+          sudo chown $USER:$GROUPS /workdir/download
+
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+          ln -sf /workdir/download $GITHUB_WORKSPACE/download
+
+      - name: Download Source From Artifacts
+        id : download
+        uses: actions/download-artifact@v4
+        with:
+          name: Source_${{ matrix.source_code_platform }}_${{ matrix.platform }}
+          path: download
+
+      - name: Download Tags
+        uses: actions/download-artifact@v4
+        with:
+          name: release_tag
+          path: download
+
+      - name: File Extraction
+        working-directory: /workdir
+        run: |
+          echo "source packages size:"
+          ls -lh download/output_toolchain.tar.gz
+          tar -xzf download/output_toolchain.tar.gz
+          rm -rf download/output_toolchain.tar.gz
+          cd download
+          echo "TAG_PATH=$PWD" >> $GITHUB_ENV
+          cd ..
+          sudo chown -R $USER:$GROUPS /workdir/openwrt
+     
+      - name: SSH connection to Actions
+        uses: mxschmitt/action-tmate@v3.16
+        if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
       - name: Generate Frimware
         if: steps.compile_toolchain.outputs.status == 'success'
@@ -696,7 +686,7 @@ jobs:
           files: ${{ env.FIRMWARE }}/*
 
   job_organize_tags:
-    needs: [job_init, job_source_init, job_generate_release_tag, job_build]
+    needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain, job_build]
     if: ${{ always() }}
     runs-on: ubuntu-24.04
     name: Organize-Release-Tags
