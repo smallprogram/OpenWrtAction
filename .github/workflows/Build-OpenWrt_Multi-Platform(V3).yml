@@ -71,16 +71,16 @@ jobs:
           bash $PLATFORMS_SH
 
   
-  job_defconfig:
+  job_source_init:
     needs: job_init
     runs-on: ${{ matrix.value.OS }}
-    name: Defconfig-${{ matrix.source_code_platform }}
+    name: Source-Init-${{ matrix.source_code_platform }}
     strategy:
       fail-fast: false
       matrix:
         include: ${{ fromJson(needs.job_init.outputs.platforms_source) }}
     steps:
-      - name: Init
+      - name: Init System And Install Packages
         id: init
         run: |
           sudo timedatectl set-timezone "$TZ"
@@ -90,6 +90,11 @@ jobs:
           sudo mkdir -p output
           sudo chown $USER:$GROUPS /workdir/output
           ln -sf /workdir/output $GITHUB_WORKSPACE/output
+          sudo -E apt-get -qq update
+          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
+          # sudo -E apt-get -qq autoremove --purge
+          # sudo -E apt-get -qq clean
+          df -hT
 
       - name: Checkout
         uses: actions/checkout@v4
@@ -121,16 +126,20 @@ jobs:
           git reset --hard origin/${{ github.ref_name }}
           git checkout -b temp-${{ matrix.source_code_platform }}
 
-      - name: Make Defconfig Custom Configuration
+      - name: Make Defconfig Custom Configuration And Init Config
         run: |
           chmod +x ${{ matrix.value.DIY_P2_SH }}
           chmod +x $MAKE_DEFCONFIG_SH
           cd openwrt
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
-
           $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
+          
+          cd $GITHUB_WORKSPACE
+          cp -r ${{ matrix.value.CONFIGS }}/X86.config openwrt/.config
+          cd openwrt
+          make defconfig
 
-      - name: Download Package
+      - name: Download Package Init
         id: package
         run: |
           df -hT
@@ -298,7 +307,7 @@ jobs:
           retention-days: 5
 
   job_generate_release_tag: 
-    needs: [job_init, job_defconfig]
+    needs: [job_init, job_source_init]
     runs-on: ubuntu-24.04
     name: Generate-Release-Tag-And-Git-Log
 
@@ -377,7 +386,7 @@ jobs:
 
 
   job_build:
-    needs: [job_init, job_defconfig, job_generate_release_tag]
+    needs: [job_init, job_source_init, job_generate_release_tag]
     runs-on: ${{ matrix.value.OS }}
     strategy:
       fail-fast: false
@@ -469,13 +478,94 @@ jobs:
           make defconfig
           # $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platform }}"
 
+      - name: Download Package
+        id: package
+        run: |
+          df -hT
+          cd $GITHUB_WORKSPACE/openwrt
+          make download -j8
+          find dl -size -1024c -exec ls -l {} \;
+          find dl -size -1024c -exec rm -f {} \;
+          df -hT
+
       
       - name: SSH connection to Actions
         uses: mxschmitt/action-tmate@v3.16
         if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
+        
+      - name: Compile Tools
+        id: compile_tools
+        run: |
+          cd openwrt
+          is_complie_error=0
+          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile tools"
+                make tools/compile -j1 V=s
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile tools"
+                make tools/compile -j$(nproc) V=s
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          else
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile tools"
+                make tools/compile -j1
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile tools"
+                make tools/compile -j$(nproc)
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          fi
+          echo "complie result： $is_complie_error"
+          if [ "$is_complie_error" -eq 0 ]; then
+            echo "status=success" >> $GITHUB_OUTPUT
+          else
+            echo "status=failure" >> $GITHUB_OUTPUT
+            exit $is_complie_error
+          fi
+          df -hT
 
+      - name: Compile Toolchain
+        if: steps.compile_tools.outputs.status == 'success'
+        id: compile_toolchain
+        run: |
+          cd openwrt
+          is_complie_error=0
+          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile toolchain"
+                make toolchain/compile -j1 V=s
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile toolchain"
+                make toolchain/compile -j$(nproc) V=s
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          else
+            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+                echo "1 threads compile toolchain"
+                make toolchain/compile -j1
+                is_complie_error=${PIPESTATUS[0]}
+            else
+                echo "$(nproc) threads compile toolchain"
+                make toolchain/compile -j$(nproc)
+                is_complie_error=${PIPESTATUS[0]}
+            fi
+          fi
+          echo "complie result： $is_complie_error"
+          if [ "$is_complie_error" -eq 0 ]; then
+            echo "status=success" >> $GITHUB_OUTPUT
+          else
+            echo "status=failure" >> $GITHUB_OUTPUT
+            exit $is_complie_error
+          fi
+          df -hT
 
       - name: Generate Frimware
+        if: steps.compile_toolchain.outputs.status == 'success'
         id: compile
         run: |
           cd openwrt
@@ -590,7 +680,7 @@ jobs:
           files: ${{ env.FIRMWARE }}/*
 
   job_organize_tags:
-    needs: [job_init, job_defconfig, job_generate_release_tag, job_build]
+    needs: [job_init, job_source_init, job_generate_release_tag, job_build]
     if: ${{ always() }}
     runs-on: ubuntu-24.04
     name: Organize-Release-Tags
