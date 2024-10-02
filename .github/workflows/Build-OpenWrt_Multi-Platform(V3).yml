@@ -303,7 +303,10 @@ jobs:
           sudo timedatectl set-timezone "$TZ"
           sudo mkdir -p /workdir
           sudo chown $USER:$GROUPS /workdir
-          df -hT
+          cd /workdir
+          sudo mkdir -p output
+          sudo chown $USER:$GROUPS /workdir/output
+          ln -sf /workdir/output $GITHUB_WORKSPACE/output
   
       - name: Maximize Build Space
         uses: easimon/maximize-build-space@master
