@@ -104,18 +104,18 @@ jobs:
           git clone ${{ matrix.value.REPO_URL }} openwrt
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
-      - name: Load Custom Feeds
-        run: |
-          [ -e $FEEDS_CONF ] && cp -r ${{ matrix.value.FEEDS_CONF }} openwrt/feeds.conf.default
-          chmod +x ${{ matrix.value.DIY_P1_SH }}
-          cd openwrt
-          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P1_SH }}
+      # - name: Load Custom Feeds
+      #   run: |
+      #     [ -e $FEEDS_CONF ] && cp -r ${{ matrix.value.FEEDS_CONF }} openwrt/feeds.conf.default
+      #     chmod +x ${{ matrix.value.DIY_P1_SH }}
+      #     cd openwrt
+      #     $GITHUB_WORKSPACE/${{ matrix.value.DIY_P1_SH }}
 
-      - name: Update Feeds
-        run: cd openwrt && ./scripts/feeds update -a
+      # - name: Update Feeds
+      #   run: cd openwrt && ./scripts/feeds update -a
 
-      - name: Install Feeds
-        run: cd openwrt && ./scripts/feeds install -a
+      # - name: Install Feeds
+      #   run: cd openwrt && ./scripts/feeds install -a
 
       - name: Pull the latest changes and Create temporary branch
         run: |
@@ -129,7 +129,7 @@ jobs:
           chmod +x $MAKE_DEFCONFIG_SH
           cd openwrt
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
-          $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
+          # $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
 
       - name: Merge and push changes with "theirs" strategy
         run: |
@@ -303,11 +303,7 @@ jobs:
           sudo timedatectl set-timezone "$TZ"
           sudo mkdir -p /workdir
           sudo chown $USER:$GROUPS /workdir
-          cd /workdir
-          sudo mkdir -p output
-          sudo chown $USER:$GROUPS /workdir/output
-          ln -sf /workdir/output $GITHUB_WORKSPACE/output
-  
+ 
       - name: Maximize Build Space
         uses: easimon/maximize-build-space@master
         with:
@@ -332,8 +328,8 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          sudo -E apt-get -qq update
-          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
+          # sudo -E apt-get -qq update
+          # sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
           # sudo -E apt-get -qq autoremove --purge
           # sudo -E apt-get -qq clean
           sudo timedatectl set-timezone "$TZ"
@@ -375,18 +371,18 @@ jobs:
           # chmod +x $COPY_BACKGROUNDFILES_SH
           [ -e ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config ] && cp -r ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config openwrt/.config
           cd openwrt
-          make defconfig
+          # make defconfig
           # $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platform }}"
 
       - name: Download Package
         id: package
         run: |
-          df -hT
-          cd $GITHUB_WORKSPACE/openwrt
-          make download -j8
-          find dl -size -1024c -exec ls -l {} \;
-          find dl -size -1024c -exec rm -f {} \;
-          df -hT
+          # df -hT
+          # cd $GITHUB_WORKSPACE/openwrt
+          # make download -j8
+          # find dl -size -1024c -exec ls -l {} \;
+          # find dl -size -1024c -exec rm -f {} \;
+          # df -hT
       
       - name: SSH connection to Actions
         uses: mxschmitt/action-tmate@v3.16
@@ -397,27 +393,27 @@ jobs:
         run: |
           cd openwrt
           is_complie_error=0
-          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile tools"
-                make tools/compile -j1 V=s
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile tools"
-                make tools/compile -j$(nproc) V=s
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          else
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile tools"
-                make tools/compile -j1
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile tools"
-                make tools/compile -j$(nproc)
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          fi
+          # if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+          #       echo "1 threads compile tools"
+          #       make tools/compile -j1 V=s
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   else
+          #       echo "$(nproc) threads compile tools"
+          #       make tools/compile -j$(nproc) V=s
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   fi
+          # else
+          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+          #       echo "1 threads compile tools"
+          #       make tools/compile -j1
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   else
+          #       echo "$(nproc) threads compile tools"
+          #       make tools/compile -j$(nproc)
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   fi
+          # fi
           echo "complie result： $is_complie_error"
           if [ "$is_complie_error" -eq 0 ]; then
             echo "status=success" >> $GITHUB_OUTPUT
@@ -433,27 +429,27 @@ jobs:
         run: |
           cd openwrt
           is_complie_error=0
-          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile toolchain"
-                make toolchain/compile -j1 V=s
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile toolchain"
-                make toolchain/compile -j$(nproc) V=s
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          else
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile toolchain"
-                make toolchain/compile -j1
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile toolchain"
-                make toolchain/compile -j$(nproc)
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          fi
+          # if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+          #       echo "1 threads compile toolchain"
+          #       make toolchain/compile -j1 V=s
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   else
+          #       echo "$(nproc) threads compile toolchain"
+          #       make toolchain/compile -j$(nproc) V=s
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   fi
+          # else
+          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+          #       echo "1 threads compile toolchain"
+          #       make toolchain/compile -j1
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   else
+          #       echo "$(nproc) threads compile toolchain"
+          #       make toolchain/compile -j$(nproc)
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   fi
+          # fi
           echo "complie result： $is_complie_error"
           if [ "$is_complie_error" -eq 0 ]; then
             echo "status=success" >> $GITHUB_OUTPUT
@@ -469,6 +465,11 @@ jobs:
         run: |
           echo "source toolchain folder size:"
           du -hs openwrt/
+
+          sudo mkdir -p output
+          sudo chown $USER:$GROUPS /workdir/output
+          ln -sf /workdir/output $GITHUB_WORKSPACE/output
+
           echo
           tar -czf output/output_toolchain.tar.gz openwrt/
 
@@ -483,7 +484,7 @@ jobs:
         if: steps.generate_image.outputs.status == 'success'
         with:
           name: Source_${{ matrix.source_code_platform }}_${{ matrix.platform }}
-          path: ${{ env.SOURCE_TOOLCHAIN_PATH }}/output.tar.gz
+          path: ${{ env.SOURCE_TOOLCHAIN_PATH }}/output_toolchain.tar.gz
           retention-days: 5          
 
   job_build:
@@ -691,51 +692,51 @@ jobs:
           body_path: ${{ env.TAG_PATH }}/release.txt
           files: ${{ env.FIRMWARE }}/*
 
-  job_organize_tags:
-    needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain, job_build]
-    if: ${{ always() }}
-    runs-on: ubuntu-24.04
-    name: Organize-Release-Tags
+  # job_organize_tags:
+  #   needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain, job_build]
+  #   if: ${{ always() }}
+  #   runs-on: ubuntu-24.04
+  #   name: Organize-Release-Tags
         
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
+  #   steps:
+  #   - name: Checkout
+  #     uses: actions/checkout@v4
+  #     with:
+  #       fetch-depth: 0
 
-    - name: Pull the latest changes
-      run: |
-        git pull origin ${{ github.ref_name }}
+  #   - name: Pull the latest changes
+  #     run: |
+  #       git pull origin ${{ github.ref_name }}
 
-    - name: Download Tags
-      uses: actions/download-artifact@v4
-      with:
-        name: release_tag
+  #   - name: Download Tags
+  #     uses: actions/download-artifact@v4
+  #     with:
+  #       name: release_tag
 
-    - name: Organize Tags
-      id: organize_tags
-      # env:
-      #   GH_TOKEN: ${{ github.token }}
-      run: |
-          chmod +x $ORGANIZE_TAG_SH
-          $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
+  #   - name: Organize Tags
+  #     id: organize_tags
+  #     # env:
+  #     #   GH_TOKEN: ${{ github.token }}
+  #     run: |
+  #         chmod +x $ORGANIZE_TAG_SH
+  #         $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
 
-    - name: Upload Release Tag
-      uses: softprops/action-gh-release@v2.0.8
-      if: steps.organize_tags.outputs.status == 'success'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ needs.job_init.outputs.output_release_tag }}
-        body_path: release.txt
+  #   - name: Upload Release Tag
+  #     uses: softprops/action-gh-release@v2.0.8
+  #     if: steps.organize_tags.outputs.status == 'success'
+  #     env:
+  #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #     with:
+  #       tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+  #       body_path: release.txt
 
-    - name: Trigger build
-      if: steps.organize_tags.outputs.status == 'success'
-      uses: peter-evans/repository-dispatch@v3
-      with:
-        token: ${{ secrets.MY_SECRET_PAT }}
-        repository: smallprogram/MyAction
-        event-type: openwrt_compilation_completed    
+  #   - name: Trigger build
+  #     if: steps.organize_tags.outputs.status == 'success'
+  #     uses: peter-evans/repository-dispatch@v3
+  #     with:
+  #       token: ${{ secrets.MY_SECRET_PAT }}
+  #       repository: smallprogram/MyAction
+  #       event-type: openwrt_compilation_completed    
 
 
       
