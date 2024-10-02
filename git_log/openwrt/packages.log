@@ -1,0 +1,12 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+06a0fd48f|Koen Vandeputte|Tue Oct 1 17:52:30 2024 +0200|gstreamer1: bump to 1.24.8
+89e2db7a1|Koen Vandeputte|Tue Oct 1 17:52:21 2024 +0200|gst1-plugins-ugly: bump to 1.24.8
+9ee4db3bc|Koen Vandeputte|Tue Oct 1 17:52:04 2024 +0200|gst1-plugins-good: bump to 1.24.8
+66f7931fe|Koen Vandeputte|Tue Oct 1 17:51:53 2024 +0200|gst1-plugins-base: bump to 1.24.8
+75fc287ae|Koen Vandeputte|Tue Oct 1 17:51:41 2024 +0200|gst1-plugins-bad: bump to 1.24.8
+aada58c85|Koen Vandeputte|Tue Oct 1 17:51:27 2024 +0200|gst1-libav: bump to 1.24.8
+a77119090|Koen Vandeputte|Tue Oct 1 17:49:46 2024 +0200|gst1-plugins-bad: switch to https source
+</details>
