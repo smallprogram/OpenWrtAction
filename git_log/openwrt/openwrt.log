@@ -2,6 +2,18 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f9a0485c99|Álvaro Fernández Rojas|Wed Oct 2 19:01:57 2024 +0200|generic: backport upstream r8169 patches
-d03f3dcf3b|Markus Stockhausen|Sat Sep 14 17:17:44 2024 -0400|realtek: add support for Linksys LGS310C
+664b8ffb0a|John Audia|Sun Sep 29 06:37:43 2024 -0400|base-files: /etc/sysctl.conf: clarity in comment
+b22ba12390|Yanase Yuki|Sat Sep 14 19:22:18 2024 +0900|audit: update to 3.1.5
+0668537d29|Andrey Butirsky|Sat Sep 28 18:01:16 2024 +0000|meta: VS Code: add "Git: Always Sign Off" setting
+8c36040f04|Rosen Penev|Sun Sep 22 11:19:40 2024 -0700|ath79: rb91x-key: replace fwnode with pdev
+dedeb28755|Rosen Penev|Wed Aug 14 19:17:37 2024 -0700|ath79: rb91x-key: use more devm
+c38f04a092|John Audia|Fri Sep 27 14:08:09 2024 -0400|x86: generic: config-6.6: refresh config
+d1157090ff|Rosen Penev|Thu Sep 26 17:49:55 2024 -0700|ramips: modernize ralink i2c driver
+d3e5a4d0a1|Rosen Penev|Wed Sep 25 14:43:14 2024 -0700|kernel: ubnt-ledbar: return directly
+f09d973d14|Rosen Penev|Sun Sep 22 11:27:13 2024 -0700|kernel: ubnt-ledbar: use dev_err_probe
+4705398bbf|Nikolay Martynov|Wed Jul 3 23:21:52 2024 -0400|ramips: rename interfaces for tplink er605v2
+a8018f3210|Hauke Mehrtens|Thu Oct 3 15:35:01 2024 +0200|wifi-scripts: Fix typo in EHT320 name
+71da76158e|Manuel Fombuena|Wed Oct 2 22:08:01 2024 +0100|kernel: packages: kmod-pstore: remove deprecated Kconfig options
+b5ffbe7c75|Marek Puzyniak|Wed Sep 25 13:50:48 2024 +0200|mt76: mark mt7925 11BE capable
+3280f9e8f7|Janusz Dziedzic|Mon Sep 23 08:26:08 2024 +0200|mac80211: mark ath12k 80211BE capable
 </details>

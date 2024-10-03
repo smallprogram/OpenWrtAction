@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+feecad6e57|Paul Donald|Fri Sep 27 03:13:23 2024 +0200|luci-app-lorawan-basicstation: spell fix
+d735c4af12|Paul Donald|Thu Sep 26 20:40:31 2024 +0200|luci-app-lldpd: refactor status.js
+</details>
