@@ -34,8 +34,9 @@ if [ -f "release.txt" ]; then
     # 读取release.txt文件内容
     cp release.txt "$release_temp_file"
     conclusion_success_count=0
-    # 使用jq解析JSON并提取所需信息
-    echo "$filtered_jobs" | jq -c '.[]' | while read -r job; do
+    
+    # 使用进程替换
+    while IFS= read -r job; do
         name=$(echo "$job" | jq -r '.name')
         source_platform=$(echo "$name" | cut -d'-' -f2)
         platform=$(echo "$name" | cut -d'-' -f3-)
@@ -46,7 +47,11 @@ if [ -f "release.txt" ]; then
         echo "conclusion: $conclusion"
         echo "-----------------------------"
 
-        conclusion_success_count=$((conclusion_success_count + 1))
+        if [ "$conclusion" == "success" ]; then
+            conclusion_success_count=$((conclusion_success_count + 1))
+        fi
+
+        echo "Current count: $conclusion_success_count"
 
         awk -v sp="$source_platform" -v pl="$platform" -v concl="$conclusion" '
         {
@@ -60,7 +65,9 @@ if [ -f "release.txt" ]; then
             }
             print
         }' "$release_temp_file" > temp && mv temp "$release_temp_file"
-    done
+    done < <(echo "$filtered_jobs" | jq -c '.[]') # 使用jq解析JSON并提取所需信息
+
+    echo "Total success count: $conclusion_success_count"
     # 将更新后的内容写回release.txt文件
     cp "$release_temp_file" release.txt
     sed -i 's/src=""/\&/g' release.txt

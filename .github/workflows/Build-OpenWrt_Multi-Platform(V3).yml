@@ -696,6 +696,13 @@ jobs:
           chmod +x $ORGANIZE_TAG_SH
           $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
 
+    - name: Upload Tags To Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: release_tag_final
+        path: release.txt
+        retention-days: 5
+
     - name: Upload Release Tag
       uses: softprops/action-gh-release@v2.0.8
       if: steps.organize_tags.outputs.status == 'success'
