@@ -1,5 +1,22 @@
-<details> <summary> <b>packages new commit log :x: </b>  </summary>
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
 
-<b> It is detected that packages has an illegal SHA value. It is possible that packages has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
-
+SHA|Author|Date|Message
+-|-|-|-
+cd20d4c39|Milinda Brantini|Wed Oct 2 23:34:49 2024 +0800|golang: Update to 1.23.2
+4ea384f02|Wesley Gimenes|Fri Sep 13 20:25:32 2024 -0300|CONTRIBUTING.md: remove incorrect info about `PKG_VERSION`
+86179f138|Tianling Shen|Thu Oct 3 16:55:47 2024 +0800|rclone: Update to 1.68.1
+5fc567d19|Tianling Shen|Thu Oct 3 16:55:20 2024 +0800|v2ray-geodata: Update to latest version
+cabb85089|Tianling Shen|Thu Oct 3 16:55:14 2024 +0800|v2ray-core: Update to 5.19.0
+7b4ca70f6|John Audia|Wed Oct 2 14:30:17 2024 -0400|stress-ng: bump to version 0.18.05
+d21bdeb4c|Maxim Storchak|Wed Oct 2 20:47:16 2024 +0300|tmux: update to 3.5
+13c9d3997|Maxim Storchak|Wed Oct 2 20:49:46 2024 +0300|lsof: update to 4.99.3
+e1d8f3c80|Vladimir Ermakov|Sun Sep 29 16:11:44 2024 +0200|qemu: update to 9.1.0
+1b5648998|Zephyr Lykos|Tue Oct 1 23:25:32 2024 +0800|tailscale: add Sandro Jäckel as a maintainer
+20b76bf63|Zephyr Lykos|Tue Oct 1 18:34:57 2024 +0800|tailscale: Update to 1.74.1
+54933d555|Zephyr Lykos|Wed Sep 18 14:24:22 2024 +0800|tailscale: Update to 1.74.0
+dcc65127f|Matt Merhar|Fri Aug 23 15:21:41 2024 -0400|nut: specify pid path during build
+c1e6edfa8|Milinda Brantini|Tue Oct 1 18:12:50 2024 +0800|runc: Update to 1.1.14
+ade186898|Milinda Brantini|Tue Oct 1 17:24:56 2024 +0800|dockerd: Update to 27.3.1
+f49b8252e|Milinda Brantini|Tue Oct 1 17:24:00 2024 +0800|containerd: Update to 1.7.22
+605fb1af6|Milinda Brantini|Tue Oct 1 17:21:08 2024 +0800|docker: Update to 27.3.1
 </details>

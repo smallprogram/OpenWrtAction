@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+f9a0485c99|Álvaro Fernández Rojas|Wed Oct 2 19:01:57 2024 +0200|generic: backport upstream r8169 patches
+d03f3dcf3b|Markus Stockhausen|Sat Sep 14 17:17:44 2024 -0400|realtek: add support for Linksys LGS310C
+</details>
