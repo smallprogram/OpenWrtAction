@@ -699,7 +699,7 @@ jobs:
     - name: Upload Tags To Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: release_tag_final
+        name: release_tag_final_attempt_${{ fromJSON(github.run_attempt) }}
         path: release.txt
         retention-days: 5
 
