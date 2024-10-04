@@ -80,7 +80,6 @@ jobs:
       matrix:
         include: ${{ fromJson(needs.job_init.outputs.platforms_source) }}
     steps:
-
       - name: Init System
         id: init
         run: |
@@ -161,7 +160,6 @@ jobs:
             echo "No changes to commit."
           fi
 
-
       - name: Generate Source Packages
         working-directory: /workdir
         id: generate_image
@@ -218,75 +216,75 @@ jobs:
     name: Generate-Release-Tag-And-Git-Log
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    - name: Pull the latest changes and Create temporary branch
-      run: |
-        git fetch origin
-        git reset --hard origin/${{ github.ref_name }}
-        git checkout -b temp-tag-gitlog
-
-    - name: Download Git Log From Artifacts
-      id : download_gitlog
-      uses: actions/download-artifact@v4
-      with:
-        pattern: git_log_*
-        merge-multiple: true
-
-    - name: Download Release Tag From Artifacts
-      id : download_releasetag
-      uses: actions/download-artifact@v4
-      with:
-        pattern: release_*
-        merge-multiple: true
-
-    - name: Generate Release Tag
-      id: tag
-      run: |
-        chmod +x $UPDATE_GIT_LOG_SH
-        $GITHUB_WORKSPACE/$UPDATE_GIT_LOG_SH "${{ needs.job_init.outputs.output_release_tag }}"
-
-    - name: Upload Tags To Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: release_tag
-        path: release.txt
-        retention-days: 5
-
-    - name: Merge and push changes with "theirs" strategy
-      run: |
-        
-        git checkout temp-tag-gitlog
-        rm -rf release.txt
-        git add .
-
-        if ! git diff --cached --quiet; then
-          git config user.name "smallprogram"
-          git config user.email "smallprogram@foxmail.com"
-          git commit -m "Auto update git log"
-
-          git checkout ${{ github.ref_name }}
+      - name: Pull the latest changes and Create temporary branch
+        run: |
           git fetch origin
           git reset --hard origin/${{ github.ref_name }}
+          git checkout -b temp-tag-gitlog
 
+      - name: Download Git Log From Artifacts
+        id : download_gitlog
+        uses: actions/download-artifact@v4
+        with:
+          pattern: git_log_*
+          merge-multiple: true
+
+      - name: Download Release Tag From Artifacts
+        id : download_releasetag
+        uses: actions/download-artifact@v4
+        with:
+          pattern: release_*
+          merge-multiple: true
+
+      - name: Generate Release Tag
+        id: tag
+        run: |
+          chmod +x $UPDATE_GIT_LOG_SH
+          $GITHUB_WORKSPACE/$UPDATE_GIT_LOG_SH "${{ needs.job_init.outputs.output_release_tag }}"
+
+      - name: Upload Tags To Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: release_tag
+          path: release.txt
+          retention-days: 5
+
+      - name: Merge and push changes with "theirs" strategy
+        run: |
+          
           git checkout temp-tag-gitlog
-          git merge origin/${{ github.ref_name }} --no-ff --strategy-option theirs --no-edit || {
-            echo "Merge conflict in temp branch, please resolve manually."
-            exit 100
-          }
+          rm -rf release.txt
+          git add .
 
-          git checkout ${{ github.ref_name }} 
-          git merge temp-tag-gitlog --strategy-option theirs --no-edit
-          git push origin ${{ github.ref_name }} --force
-          git branch -d temp-tag-gitlog || echo "Local temp-tag-gitlog not found"
-          git push origin --delete temp-tag-gitlog || echo "Remote temp-tag-gitlog not found"
+          if ! git diff --cached --quiet; then
+            git config user.name "smallprogram"
+            git config user.email "smallprogram@foxmail.com"
+            git commit -m "Auto update git log"
 
-        else
-          echo "No changes to commit."
-        fi
+            git checkout ${{ github.ref_name }}
+            git fetch origin
+            git reset --hard origin/${{ github.ref_name }}
+
+            git checkout temp-tag-gitlog
+            git merge origin/${{ github.ref_name }} --no-ff --strategy-option theirs --no-edit || {
+              echo "Merge conflict in temp branch, please resolve manually."
+              exit 100
+            }
+
+            git checkout ${{ github.ref_name }} 
+            git merge temp-tag-gitlog --strategy-option theirs --no-edit
+            git push origin ${{ github.ref_name }} --force
+            git branch -d temp-tag-gitlog || echo "Local temp-tag-gitlog not found"
+            git push origin --delete temp-tag-gitlog || echo "Remote temp-tag-gitlog not found"
+
+          else
+            echo "No changes to commit."
+          fi
 
   job_build_toolchain:
     needs: [job_init, job_source_init, job_generate_release_tag]
@@ -674,51 +672,51 @@ jobs:
     name: Organize-Release-Tags
         
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    - name: Pull the latest changes
-      run: |
-        git pull origin ${{ github.ref_name }}
+      - name: Pull the latest changes
+        run: |
+          git pull origin ${{ github.ref_name }}
 
-    - name: Download Tags
-      uses: actions/download-artifact@v4
-      with:
-        name: release_tag
+      - name: Download Tags
+        uses: actions/download-artifact@v4
+        with:
+          name: release_tag
 
-    - name: Organize Tags
-      id: organize_tags
-      # env:
-      #   GH_TOKEN: ${{ github.token }}
-      run: |
-          chmod +x $ORGANIZE_TAG_SH
-          $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
+      - name: Organize Tags
+        id: organize_tags
+        # env:
+        #   GH_TOKEN: ${{ github.token }}
+        run: |
+            chmod +x $ORGANIZE_TAG_SH
+            $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
 
-    - name: Upload Tags To Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: release_tag_final_attempt_${{ fromJSON(github.run_attempt) }}
-        path: release.txt
-        retention-days: 5
+      - name: Upload Tags To Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: release_tag_final_attempt_${{ fromJSON(github.run_attempt) }}
+          path: release.txt
+          retention-days: 5
 
-    - name: Upload Release Tag
-      uses: softprops/action-gh-release@v2.0.8
-      if: steps.organize_tags.outputs.status == 'success'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ needs.job_init.outputs.output_release_tag }}
-        body_path: release.txt
+      - name: Upload Release Tag
+        uses: softprops/action-gh-release@v2.0.8
+        if: steps.organize_tags.outputs.status == 'success'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+          body_path: release.txt
 
-    - name: Trigger build
-      if: steps.organize_tags.outputs.status == 'success' && fromJSON(github.run_attempt) < 2
-      uses: peter-evans/repository-dispatch@v3
-      with:
-        token: ${{ secrets.MY_SECRET_PAT }}
-        repository: smallprogram/MyAction
-        event-type: openwrt_compilation_completed    
+      - name: Trigger build
+        if: steps.organize_tags.outputs.status == 'success' && fromJSON(github.run_attempt) < 2
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.MY_SECRET_PAT }}
+          repository: smallprogram/MyAction
+          event-type: openwrt_compilation_completed    
 
   rerun-failed-jobs:
     runs-on: ubuntu-24.04
