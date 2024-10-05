@@ -1,0 +1,8 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d3f6a448|coolsnowwolf|Sat Oct 5 01:59:26 2024 +0800|Revert "zerotier: referesh patches and merge other upstream changes"
+9ff14611|coolsnowwolf|Sat Oct 5 01:57:58 2024 +0800|Merge pull request #858 from xcf13363175/master
+660c43b8|xcf13363175|Wed Oct 2 20:04:25 2024 +0800|Update Makefile
+</details>

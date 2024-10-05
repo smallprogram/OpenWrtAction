@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-af37c0ffb|coolsnowwolf|Mon Sep 30 21:16:06 2024 +0800|atf-rockchip: update rk3568 support
+6df0b2d9f|Beginner|Sat Oct 5 01:55:15 2024 +0800|kernel: bump 6.6 to 6.6.54 (#12519)
+ff581ad03|John Audia|Fri Sep 27 14:08:09 2024 -0400|x86: generic: 6.6: refresh config
 </details>
