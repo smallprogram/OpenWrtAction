@@ -8,11 +8,9 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build-OpenWrt_Multi-Platform(V3)
+name: testv4
 
 on:
-  repository_dispatch:
-    types: [openwrt_source_update]
   workflow_dispatch:
     inputs:
       ssh:
@@ -85,10 +83,10 @@ jobs:
         run: |
           sudo timedatectl set-timezone "$TZ"
           sudo mkdir -p /workdir
-          sudo chown $USER:$GROUPS /workdir
+          sudo chown -R $USER:$GROUPS /workdir
           cd /workdir
           sudo mkdir -p output
-          sudo chown $USER:$GROUPS /workdir/output
+          sudo chown -R $USER:$GROUPS /workdir/output
           ln -sf /workdir/output $GITHUB_WORKSPACE/output
           df -hT
 
@@ -110,11 +108,11 @@ jobs:
           cd openwrt
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P1_SH }}
 
-      - name: Update Feeds
-        run: cd openwrt && ./scripts/feeds update -a
+      # - name: Update Feeds
+      #   run: cd openwrt && ./scripts/feeds update -a
 
-      - name: Install Feeds
-        run: cd openwrt && ./scripts/feeds install -a
+      # - name: Install Feeds
+      #   run: cd openwrt && ./scripts/feeds install -a
 
       - name: Pull the latest changes and Create temporary branch
         run: |
@@ -132,33 +130,33 @@ jobs:
 
       - name: Merge and push changes with "theirs" strategy
         run: |
-          git checkout temp-${{ matrix.source_code_platform }}
-          git add .
+          # git checkout temp-${{ matrix.source_code_platform }}
+          # git add .
 
-          if ! git diff --cached --quiet; then
-            git config user.name "smallprogram"
-            git config user.email "smallprogram@foxmail.com"
-            git commit -m "Auto update for ${{ matrix.source_code_platform }} configuration"
+          # if ! git diff --cached --quiet; then
+          #   git config user.name "smallprogram"
+          #   git config user.email "smallprogram@foxmail.com"
+          #   git commit -m "Auto update for ${{ matrix.source_code_platform }} configuration"
 
-            git checkout ${{ github.ref_name }}
-            git fetch origin
-            git reset --hard origin/${{ github.ref_name }}
+          #   git checkout ${{ github.ref_name }}
+          #   git fetch origin
+          #   git reset --hard origin/${{ github.ref_name }}
 
-            git checkout temp-${{ matrix.source_code_platform }}
-            git merge origin/${{ github.ref_name }} --no-ff --strategy-option theirs --no-edit || {
-              echo "Merge conflict in temp branch, please resolve manually."
-              exit 100
-            }
+          #   git checkout temp-${{ matrix.source_code_platform }}
+          #   git merge origin/${{ github.ref_name }} --no-ff --strategy-option theirs --no-edit || {
+          #     echo "Merge conflict in temp branch, please resolve manually."
+          #     exit 100
+          #   }
 
-            git checkout ${{ github.ref_name }} 
-            git merge temp-${{ matrix.source_code_platform }} --strategy-option theirs --no-edit
-            git push origin ${{ github.ref_name }} --force
-            git branch -d temp-${{ matrix.source_code_platform }} || echo "Local temp-${{ matrix.source_code_platform }} not found"
-            git push origin --delete temp-${{ matrix.source_code_platform }} || echo "Remote temp-${{ matrix.source_code_platform }} not found"
+          #   git checkout ${{ github.ref_name }} 
+          #   git merge temp-${{ matrix.source_code_platform }} --strategy-option theirs --no-edit
+          #   git push origin ${{ github.ref_name }} --force
+          #   git branch -d temp-${{ matrix.source_code_platform }} || echo "Local temp-${{ matrix.source_code_platform }} not found"
+          #   git push origin --delete temp-${{ matrix.source_code_platform }} || echo "Remote temp-${{ matrix.source_code_platform }} not found"
 
-          else
-            echo "No changes to commit."
-          fi
+          # else
+          #   echo "No changes to commit."
+          # fi
 
       - name: Generate Source Packages
         working-directory: /workdir
@@ -172,7 +170,7 @@ jobs:
           echo "source code size:"
           cd output
           ls -lh output.tar.gz
-          echo "SOURCE_PATH=$PWD" >> $GITHUB_ENV
+          echo "SOURCE_PATH=$PWD" >> $GITHUB_OUTPUT
           echo "status=success" >> $GITHUB_OUTPUT
 
       - name: Upload Source To Artifact
@@ -180,7 +178,7 @@ jobs:
         if: steps.generate_image.outputs.status == 'success'
         with:
           name: Source_${{ matrix.source_code_platform }}
-          path: ${{ env.SOURCE_PATH }}/output.tar.gz
+          path: ${{ steps.generate_image.outputs.SOURCE_PATH }}/output.tar.gz
           retention-days: 5
 
       - name: Generate Git Log
@@ -257,34 +255,34 @@ jobs:
       - name: Merge and push changes with "theirs" strategy
         run: |
           
-          git checkout temp-tag-gitlog
-          rm -rf release.txt
-          git add .
+          # git checkout temp-tag-gitlog
+          # rm -rf release.txt
+          # git add .
 
-          if ! git diff --cached --quiet; then
-            git config user.name "smallprogram"
-            git config user.email "smallprogram@foxmail.com"
-            git commit -m "Auto update git log"
+          # if ! git diff --cached --quiet; then
+          #   git config user.name "smallprogram"
+          #   git config user.email "smallprogram@foxmail.com"
+          #   git commit -m "Auto update git log"
 
-            git checkout ${{ github.ref_name }}
-            git fetch origin
-            git reset --hard origin/${{ github.ref_name }}
+          #   git checkout ${{ github.ref_name }}
+          #   git fetch origin
+          #   git reset --hard origin/${{ github.ref_name }}
 
-            git checkout temp-tag-gitlog
-            git merge origin/${{ github.ref_name }} --no-ff --strategy-option theirs --no-edit || {
-              echo "Merge conflict in temp branch, please resolve manually."
-              exit 100
-            }
+          #   git checkout temp-tag-gitlog
+          #   git merge origin/${{ github.ref_name }} --no-ff --strategy-option theirs --no-edit || {
+          #     echo "Merge conflict in temp branch, please resolve manually."
+          #     exit 100
+          #   }
 
-            git checkout ${{ github.ref_name }} 
-            git merge temp-tag-gitlog --strategy-option theirs --no-edit
-            git push origin ${{ github.ref_name }} --force
-            git branch -d temp-tag-gitlog || echo "Local temp-tag-gitlog not found"
-            git push origin --delete temp-tag-gitlog || echo "Remote temp-tag-gitlog not found"
+          #   git checkout ${{ github.ref_name }} 
+          #   git merge temp-tag-gitlog --strategy-option theirs --no-edit
+          #   git push origin ${{ github.ref_name }} --force
+          #   git branch -d temp-tag-gitlog || echo "Local temp-tag-gitlog not found"
+          #   git push origin --delete temp-tag-gitlog || echo "Remote temp-tag-gitlog not found"
 
-          else
-            echo "No changes to commit."
-          fi
+          # else
+          #   echo "No changes to commit."
+          # fi
 
   job_build_toolchain:
     needs: [job_init, job_source_init, job_generate_release_tag]
@@ -300,7 +298,7 @@ jobs:
         run: |
           sudo timedatectl set-timezone "$TZ"
           sudo mkdir -p /workdir
-          sudo chown $USER:$GROUPS /workdir
+          sudo chown -R $USER:$GROUPS /workdir
  
       - name: Maximize Build Space
         uses: easimon/maximize-build-space@master
@@ -326,8 +324,8 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          sudo -E apt-get -qq update
-          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
+          # sudo -E apt-get -qq update
+          # sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
           # sudo -E apt-get -qq autoremove --purge
           # sudo -E apt-get -qq clean
           sudo timedatectl set-timezone "$TZ"
@@ -339,8 +337,8 @@ jobs:
         run: |
           sudo mkdir -p openwrt
           sudo mkdir -p download
-          sudo chown $USER:$GROUPS /workdir/openwrt
-          sudo chown $USER:$GROUPS /workdir/download
+          sudo chown -R $USER:$GROUPS /workdir/openwrt
+          sudo chown -R $USER:$GROUPS /workdir/download
 
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
           ln -sf /workdir/download $GITHUB_WORKSPACE/download
@@ -359,9 +357,6 @@ jobs:
           ls -lh download/output.tar.gz
           tar -xzf download/output.tar.gz
           rm -rf download/output.tar.gz
-          cd download
-          echo "TAG_PATH=$PWD" >> $GITHUB_ENV
-          cd ..
           sudo chown -R $USER:$GROUPS /workdir/openwrt
 
       - name: Load Configuration
@@ -369,7 +364,7 @@ jobs:
           # chmod +x $COPY_BACKGROUNDFILES_SH
           [ -e ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config ] && cp -r ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config openwrt/.config
           cd openwrt
-          make defconfig
+          # make defconfig
           # $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platform }}"
 
       - name: Download Package
@@ -377,9 +372,9 @@ jobs:
         run: |
           df -hT
           cd $GITHUB_WORKSPACE/openwrt
-          make download -j8
-          find dl -size -1024c -exec ls -l {} \;
-          find dl -size -1024c -exec rm -f {} \;
+          # make download -j8
+          # find dl -size -1024c -exec ls -l {} \;
+          # find dl -size -1024c -exec rm -f {} \;
           df -hT
       
       - name: SSH connection to Actions
@@ -391,39 +386,39 @@ jobs:
         run: |
           cd openwrt
           is_complie_error=0
-          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile tools"
-                make tools/compile -j1 V=s
-                make toolchain/compile -j1 V=s
-                make package/cleanup -j1 V=s
-                make target/compile -j1 V=s
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile tools"
-                make tools/compile -j$(nproc) V=s
-                make toolchain/compile -j$(nproc) V=s
-                make package/cleanup -j$(nproc) V=s
-                make target/compile -j$(nproc) V=s
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          else
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile tools"
-                make tools/compile -j1
-                make toolchain/compile -j1
-                make package/cleanup -j1
-                make target/compile -j1
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile tools"
-                make tools/compile -j$(nproc)
-                make toolchain/compile -j$(nproc)
-                make package/cleanup -j$(nproc)
-                make target/compile -j$(nproc)
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          fi
+          # if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+          #       echo "1 threads compile tools"
+          #       make tools/compile -j1 V=s
+          #       make toolchain/compile -j1 V=s
+          #       make package/cleanup -j1 V=s
+          #       make target/compile -j1 V=s
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   else
+          #       echo "$(nproc) threads compile tools"
+          #       make tools/compile -j$(nproc) V=s
+          #       make toolchain/compile -j$(nproc) V=s
+          #       make package/cleanup -j$(nproc) V=s
+          #       make target/compile -j$(nproc) V=s
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   fi
+          # else
+          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+          #       echo "1 threads compile tools"
+          #       make tools/compile -j1
+          #       make toolchain/compile -j1
+          #       make package/cleanup -j1
+          #       make target/compile -j1
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   else
+          #       echo "$(nproc) threads compile tools"
+          #       make tools/compile -j$(nproc)
+          #       make toolchain/compile -j$(nproc)
+          #       make package/cleanup -j$(nproc)
+          #       make target/compile -j$(nproc)
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   fi
+          # fi
           echo "complie result： $is_complie_error"
           if [ "$is_complie_error" -eq 0 ]; then
             echo "status=success" >> $GITHUB_OUTPUT
@@ -441,7 +436,7 @@ jobs:
           du -hs openwrt/
 
           sudo mkdir -p output
-          sudo chown $USER:$GROUPS /workdir/output
+          sudo chown -R $USER:$GROUPS /workdir/output
           ln -sf /workdir/output $GITHUB_WORKSPACE/output
 
           echo
@@ -450,7 +445,7 @@ jobs:
           echo "source toolchain file size:"
           cd output
           ls -lh output_toolchain.tar.gz
-          echo "SOURCE_TOOLCHAIN_PATH=$PWD" >> $GITHUB_ENV
+          echo "SOURCE_TOOLCHAIN_PATH=$PWD" >> $GITHUB_OUTPUT
           echo "status=success" >> $GITHUB_OUTPUT
   
       - name: Upload Source To Artifact
@@ -458,8 +453,8 @@ jobs:
         if: steps.generate_image.outputs.status == 'success'
         with:
           name: Source_${{ matrix.source_code_platform }}_${{ matrix.platform }}
-          path: ${{ env.SOURCE_TOOLCHAIN_PATH }}/output_toolchain.tar.gz
-          retention-days: 5          
+          path: ${{ steps.generate_image.outputs.SOURCE_TOOLCHAIN_PATH }}/output_toolchain.tar.gz
+          retention-days: 5
 
   job_build:
     needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain]
@@ -476,7 +471,7 @@ jobs:
         run: |
           sudo timedatectl set-timezone "$TZ"
           sudo mkdir -p /workdir
-          sudo chown $USER:$GROUPS /workdir
+          sudo chown -R $USER:$GROUPS /workdir
           df -hT
   
       - name: Maximize Build Space
@@ -503,8 +498,8 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          sudo -E apt-get -qq update
-          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
+          # sudo -E apt-get -qq update
+          # sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
           # sudo -E apt-get -qq autoremove --purge
           # sudo -E apt-get -qq clean
           sudo timedatectl set-timezone "$TZ"
@@ -516,8 +511,8 @@ jobs:
         run: |
           sudo mkdir -p openwrt
           sudo mkdir -p download
-          sudo chown $USER:$GROUPS /workdir/openwrt
-          sudo chown $USER:$GROUPS /workdir/download
+          sudo chown -R $USER:$GROUPS /workdir/openwrt
+          sudo chown -R $USER:$GROUPS /workdir/download
 
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
           ln -sf /workdir/download $GITHUB_WORKSPACE/download
@@ -536,9 +531,6 @@ jobs:
           ls -lh download/output_toolchain.tar.gz
           tar -xzf download/output_toolchain.tar.gz
           rm -rf download/output_toolchain.tar.gz
-          cd download
-          echo "TAG_PATH=$PWD" >> $GITHUB_ENV
-          cd ..
           sudo chown -R $USER:$GROUPS /workdir/openwrt
      
       - name: SSH connection to Actions
@@ -551,27 +543,27 @@ jobs:
           cd openwrt
           is_complie_error=0
           
-          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile frimware"
-                make -j1 V=s
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile frimware"
-                make -j$(nproc) V=s
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          else
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile frimware"
-                make -j1
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile frimware"
-                make -j$(nproc)
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          fi
+          # if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+          #       echo "1 threads compile frimware"
+          #       make -j1 V=s
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   else
+          #       echo "$(nproc) threads compile frimware"
+          #       make -j$(nproc) V=s
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   fi
+          # else
+          #   if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+          #       echo "1 threads compile frimware"
+          #       make -j1
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   else
+          #       echo "$(nproc) threads compile frimware"
+          #       make -j$(nproc)
+          #       is_complie_error=${PIPESTATUS[0]}
+          #   fi
+          # fi
 
 
           
@@ -601,26 +593,29 @@ jobs:
         id: organize
         if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
         run: |
-          # rm -rf $GITHUB_WORKSPACE/openwrt/bin
-          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin
-          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets
-          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa
-          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa/bb
-          # cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
-          # mkdir -p feeds_packages
-          # firmware_path=$PWD
-          # dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.txt bs=1M count=10
+          rm -rf $GITHUB_WORKSPACE/openwrt/bin
+          mkdir -p $GITHUB_WORKSPACE/openwrt/bin
+          mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets
+          mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa
+          mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa/bb
+          cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
+          mkdir -p feeds_packages
+          firmware_path=$PWD
+          dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.txt bs=1M count=10
+          dd if=/dev/zero of=${{ matrix.source_code_platform }}-${{ matrix.platform }}-aa.txt bs=1M count=10
+          dd if=/dev/zero of=${{ matrix.source_code_platform }}-${{ matrix.platform }}-bb.txt bs=1M count=10
+          dd if=/dev/zero of=${{ matrix.source_code_platform }}-${{ matrix.platform }}-cc.img.gz bs=1M count=10
           # if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
           #     exit 200
           # fi
 
           
-          cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
-          mkdir -p feeds_packages
-          firmware_path=$PWD
-          cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
-          mv * $firmware_path/feeds_packages
-          cd $firmware_path
+          # cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
+          # mkdir -p feeds_packages
+          # firmware_path=$PWD
+          # cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
+          # mv * $firmware_path/feeds_packages
+          # cd $firmware_path
           
           # zip -r buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip feeds_packages packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
           # rm -rf packages feeds_packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
@@ -639,7 +634,7 @@ jobs:
 
           ls
 
-          echo "FIRMWARE=$firmware_path" >> $GITHUB_ENV
+          echo "FIRMWARE=$firmware_path" >> $GITHUB_OUTPUT
           echo "status=success" >> $GITHUB_OUTPUT
 
       - name: Upload Firmware Directory To Artifact
@@ -647,7 +642,7 @@ jobs:
         if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && !cancelled()
         with:
           name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
-          path: ${{ env.FIRMWARE }}
+          path: ${{ steps.organize.outputs.FIRMWARE }}
 
 
   job_upload_release:
@@ -662,11 +657,20 @@ jobs:
 
     steps:
       - name: Initialization Environment
+        id: init
         run: |
           sudo timedatectl set-timezone "$TZ"
           df -hT
+          cd $GITHUB_WORKSPACE
           sudo mkdir -p release_download
           sudo mkdir -p release_tag_download
+          sudo chown -R $USER:$GROUPS $GITHUB_WORKSPACE/release_download
+          sudo chown -R $USER:$GROUPS $GITHUB_WORKSPACE/release_tag_download
+          cd release_download
+          echo "release_dir=$PWD" >> $GITHUB_OUTPUT
+          cd ..
+          cd release_tag_download
+          echo "release_tag_dir=$PWD" >> $GITHUB_OUTPUT
 
 
       - name: Download Release From Artifacts
@@ -674,24 +678,28 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
-          path: release_download
+          path: ${{ steps.init.outputs.release_dir }}
 
       - name: Download Tags
         uses: actions/download-artifact@v4
         with:
           name: release_tag
-          path: release_tag_download
+          path: ${{ steps.init.outputs.release_tag_dir }}
 
-      - name: File Extraction
+      - name: File Show
         working-directory: /workdir
         run: |
           echo "release files:"
-          cd release_download
+          echo "---------------------------------------------"
+          cd ${{ steps.init.outputs.release_dir }}
           ls
-          echo "RELEASE_PATH=$PWD" >> $GITHUB_ENV
+          echo "-------------end release files---------------"
           cd ..
-          cd release_tag_download
-          echo "RELEASE_TAG_PATH=$PWD" >> $GITHUB_ENV
+          echo "release tag:"
+          echo "---------------------------------------------"
+          cd ${{ steps.init.outputs.release_tag_dir }}
+          ls
+          echo "-------------end release tag-----------------"
       
       - name: SSH connection to Actions
         uses: mxschmitt/action-tmate@v3.16
@@ -704,8 +712,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ needs.job_init.outputs.output_release_tag }}
-          body_path: ${{ env.RELEASE_TAG_PATH }}/release.txt
-          files: ${{ env.RELEASE_PATH }}/*
+          body_path: ${{ steps.init.outputs.release_tag_dir }}/release.txt
+          files: ${{ steps.init.outputs.release_dir }}/*
         
 
 
