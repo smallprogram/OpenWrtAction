@@ -23,6 +23,7 @@ if [ -f "release.txt" ]; then
         # 将当前页的 jobs 添加到 jobs_data_file 中，确保格式正确
         echo "$jobs" | jq -c '.[]' >> "$jobs_data_file"
         ((page++))  # 递增页码
+        echo $page
     done
 
     # 从临时文件读取所有 jobs，并确保格式正确
