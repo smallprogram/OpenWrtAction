@@ -29,7 +29,7 @@ if [ -f "release.txt" ]; then
     all_jobs=$(jq -s '.' "$jobs_data_file")
 
     # 过滤以 Build- 开头的 jobs
-    filtered_jobs=$(echo "$all_jobs" | jq -c 'map(select(.name | startswith("Build-")))')
+    filtered_jobs=$(echo "$all_jobs" | jq -c 'map(select(.name | startswith("UploadRelease-")))')
 
     # 读取release.txt文件内容
     cp release.txt "$release_temp_file"

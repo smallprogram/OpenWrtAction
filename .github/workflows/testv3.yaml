@@ -8,11 +8,9 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build-OpenWrt_Multi-Platform(V3)
+name: testv3
 
 on:
-  repository_dispatch:
-    types: [openwrt_source_update]
   workflow_dispatch:
     inputs:
       ssh:
@@ -110,11 +108,11 @@ jobs:
           cd openwrt
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P1_SH }}
 
-      - name: Update Feeds
-        run: cd openwrt && ./scripts/feeds update -a
+    #   - name: Update Feeds
+    #     run: cd openwrt && ./scripts/feeds update -a
 
-      - name: Install Feeds
-        run: cd openwrt && ./scripts/feeds install -a
+    #   - name: Install Feeds
+    #     run: cd openwrt && ./scripts/feeds install -a
 
       - name: Pull the latest changes and Create temporary branch
         run: |
@@ -128,37 +126,37 @@ jobs:
           chmod +x $MAKE_DEFCONFIG_SH
           cd openwrt
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
-          $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
+        #   $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
 
       - name: Merge and push changes with "theirs" strategy
         run: |
-          git checkout temp-${{ matrix.source_code_platform }}
-          git add .
+        #   git checkout temp-${{ matrix.source_code_platform }}
+        #   git add .
 
-          if ! git diff --cached --quiet; then
-            git config user.name "smallprogram"
-            git config user.email "smallprogram@foxmail.com"
-            git commit -m "Auto update for ${{ matrix.source_code_platform }} configuration"
+        #   if ! git diff --cached --quiet; then
+        #     git config user.name "smallprogram"
+        #     git config user.email "smallprogram@foxmail.com"
+        #     git commit -m "Auto update for ${{ matrix.source_code_platform }} configuration"
 
-            git checkout ${{ github.ref_name }}
-            git fetch origin
-            git reset --hard origin/${{ github.ref_name }}
+        #     git checkout ${{ github.ref_name }}
+        #     git fetch origin
+        #     git reset --hard origin/${{ github.ref_name }}
 
-            git checkout temp-${{ matrix.source_code_platform }}
-            git merge origin/${{ github.ref_name }} --no-ff --strategy-option theirs --no-edit || {
-              echo "Merge conflict in temp branch, please resolve manually."
-              exit 100
-            }
+        #     git checkout temp-${{ matrix.source_code_platform }}
+        #     git merge origin/${{ github.ref_name }} --no-ff --strategy-option theirs --no-edit || {
+        #       echo "Merge conflict in temp branch, please resolve manually."
+        #       exit 100
+        #     }
 
-            git checkout ${{ github.ref_name }} 
-            git merge temp-${{ matrix.source_code_platform }} --strategy-option theirs --no-edit
-            git push origin ${{ github.ref_name }} --force
-            git branch -d temp-${{ matrix.source_code_platform }} || echo "Local temp-${{ matrix.source_code_platform }} not found"
-            git push origin --delete temp-${{ matrix.source_code_platform }} || echo "Remote temp-${{ matrix.source_code_platform }} not found"
+        #     git checkout ${{ github.ref_name }} 
+        #     git merge temp-${{ matrix.source_code_platform }} --strategy-option theirs --no-edit
+        #     git push origin ${{ github.ref_name }} --force
+        #     git branch -d temp-${{ matrix.source_code_platform }} || echo "Local temp-${{ matrix.source_code_platform }} not found"
+        #     git push origin --delete temp-${{ matrix.source_code_platform }} || echo "Remote temp-${{ matrix.source_code_platform }} not found"
 
-          else
-            echo "No changes to commit."
-          fi
+        #   else
+        #     echo "No changes to commit."
+        #   fi
 
       - name: Generate Source Packages
         working-directory: /workdir
@@ -257,34 +255,34 @@ jobs:
       - name: Merge and push changes with "theirs" strategy
         run: |
           
-          git checkout temp-tag-gitlog
-          rm -rf release.txt
-          git add .
+        #   git checkout temp-tag-gitlog
+        #   rm -rf release.txt
+        #   git add .
 
-          if ! git diff --cached --quiet; then
-            git config user.name "smallprogram"
-            git config user.email "smallprogram@foxmail.com"
-            git commit -m "Auto update git log"
+        #   if ! git diff --cached --quiet; then
+        #     git config user.name "smallprogram"
+        #     git config user.email "smallprogram@foxmail.com"
+        #     git commit -m "Auto update git log"
 
-            git checkout ${{ github.ref_name }}
-            git fetch origin
-            git reset --hard origin/${{ github.ref_name }}
+        #     git checkout ${{ github.ref_name }}
+        #     git fetch origin
+        #     git reset --hard origin/${{ github.ref_name }}
 
-            git checkout temp-tag-gitlog
-            git merge origin/${{ github.ref_name }} --no-ff --strategy-option theirs --no-edit || {
-              echo "Merge conflict in temp branch, please resolve manually."
-              exit 100
-            }
+        #     git checkout temp-tag-gitlog
+        #     git merge origin/${{ github.ref_name }} --no-ff --strategy-option theirs --no-edit || {
+        #       echo "Merge conflict in temp branch, please resolve manually."
+        #       exit 100
+        #     }
 
-            git checkout ${{ github.ref_name }} 
-            git merge temp-tag-gitlog --strategy-option theirs --no-edit
-            git push origin ${{ github.ref_name }} --force
-            git branch -d temp-tag-gitlog || echo "Local temp-tag-gitlog not found"
-            git push origin --delete temp-tag-gitlog || echo "Remote temp-tag-gitlog not found"
+        #     git checkout ${{ github.ref_name }} 
+        #     git merge temp-tag-gitlog --strategy-option theirs --no-edit
+        #     git push origin ${{ github.ref_name }} --force
+        #     git branch -d temp-tag-gitlog || echo "Local temp-tag-gitlog not found"
+        #     git push origin --delete temp-tag-gitlog || echo "Remote temp-tag-gitlog not found"
 
-          else
-            echo "No changes to commit."
-          fi
+        #   else
+        #     echo "No changes to commit."
+        #   fi
 
   job_build_toolchain:
     needs: [job_init, job_source_init, job_generate_release_tag]
@@ -327,7 +325,7 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           sudo -E apt-get -qq update
-          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
+          #   sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
           # sudo -E apt-get -qq autoremove --purge
           # sudo -E apt-get -qq clean
           sudo timedatectl set-timezone "$TZ"
@@ -377,7 +375,7 @@ jobs:
         run: |
           df -hT
           cd $GITHUB_WORKSPACE/openwrt
-          make download -j8
+            #   make download -j8
           find dl -size -1024c -exec ls -l {} \;
           find dl -size -1024c -exec rm -f {} \;
           df -hT
@@ -391,39 +389,39 @@ jobs:
         run: |
           cd openwrt
           is_complie_error=0
-          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile tools"
-                make tools/compile -j1 V=s
-                make toolchain/compile -j1 V=s
-                make package/cleanup -j1 V=s
-                make target/compile -j1 V=s
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile tools"
-                make tools/compile -j$(nproc) V=s
-                make toolchain/compile -j$(nproc) V=s
-                make package/cleanup -j$(nproc) V=s
-                make target/compile -j$(nproc) V=s
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          else
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile tools"
-                make tools/compile -j1
-                make toolchain/compile -j1
-                make package/cleanup -j1
-                make target/compile -j1
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile tools"
-                make tools/compile -j$(nproc)
-                make toolchain/compile -j$(nproc)
-                make package/cleanup -j$(nproc)
-                make target/compile -j$(nproc)
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          fi
+            #   if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+            #     if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+            #         echo "1 threads compile tools"
+            #         make tools/compile -j1 V=s
+            #         make toolchain/compile -j1 V=s
+            #         make package/cleanup -j1 V=s
+            #         make target/compile -j1 V=s
+            #         is_complie_error=${PIPESTATUS[0]}
+            #     else
+            #         echo "$(nproc) threads compile tools"
+            #         make tools/compile -j$(nproc) V=s
+            #         make toolchain/compile -j$(nproc) V=s
+            #         make package/cleanup -j$(nproc) V=s
+            #         make target/compile -j$(nproc) V=s
+            #         is_complie_error=${PIPESTATUS[0]}
+            #     fi
+            #   else
+            #     if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+            #         echo "1 threads compile tools"
+            #         make tools/compile -j1
+            #         make toolchain/compile -j1
+            #         make package/cleanup -j1
+            #         make target/compile -j1
+            #         is_complie_error=${PIPESTATUS[0]}
+            #     else
+            #         echo "$(nproc) threads compile tools"
+            #         make tools/compile -j$(nproc)
+            #         make toolchain/compile -j$(nproc)
+            #         make package/cleanup -j$(nproc)
+            #         make target/compile -j$(nproc)
+            #         is_complie_error=${PIPESTATUS[0]}
+            #     fi
+            #   fi
           echo "complie result： $is_complie_error"
           if [ "$is_complie_error" -eq 0 ]; then
             echo "status=success" >> $GITHUB_OUTPUT
@@ -504,7 +502,7 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           sudo -E apt-get -qq update
-          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
+            #   sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
           # sudo -E apt-get -qq autoremove --purge
           # sudo -E apt-get -qq clean
           sudo timedatectl set-timezone "$TZ"
@@ -551,27 +549,27 @@ jobs:
           cd openwrt
           is_complie_error=0
           
-          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile frimware"
-                make -j1 V=s
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile frimware"
-                make -j$(nproc) V=s
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          else
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile frimware"
-                make -j1
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile frimware"
-                make -j$(nproc)
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          fi
+            #   if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
+            #     if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+            #         echo "1 threads compile frimware"
+            #         make -j1 V=s
+            #         is_complie_error=${PIPESTATUS[0]}
+            #     else
+            #         echo "$(nproc) threads compile frimware"
+            #         make -j$(nproc) V=s
+            #         is_complie_error=${PIPESTATUS[0]}
+            #     fi
+            #   else
+            #     if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
+            #         echo "1 threads compile frimware"
+            #         make -j1
+            #         is_complie_error=${PIPESTATUS[0]}
+            #     else
+            #         echo "$(nproc) threads compile frimware"
+            #         make -j$(nproc)
+            #         is_complie_error=${PIPESTATUS[0]}
+            #     fi
+            #   fi
 
 
           
@@ -601,26 +599,26 @@ jobs:
         id: organize
         if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
         run: |
-          # rm -rf $GITHUB_WORKSPACE/openwrt/bin
-          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin
-          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets
-          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa
-          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa/bb
-          # cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
-          # mkdir -p feeds_packages
-          # firmware_path=$PWD
-          # dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.txt bs=1M count=10
-          # if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
-          #     exit 200
-          # fi
-
-          
+          rm -rf $GITHUB_WORKSPACE/openwrt/bin
+          mkdir -p $GITHUB_WORKSPACE/openwrt/bin
+          mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets
+          mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa
+          mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa/bb
           cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
           mkdir -p feeds_packages
           firmware_path=$PWD
-          cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
-          mv * $firmware_path/feeds_packages
-          cd $firmware_path
+          dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.txt bs=1M count=10
+            #   if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
+            #       exit 200
+            #   fi
+
+          
+            #   cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
+            #   mkdir -p feeds_packages
+            #   firmware_path=$PWD
+            #   cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
+            #   mv * $firmware_path/feeds_packages
+            #   cd $firmware_path
           
           # zip -r buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip feeds_packages packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
           # rm -rf packages feeds_packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
