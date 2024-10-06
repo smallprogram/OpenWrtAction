@@ -3,6 +3,7 @@
 token=$1
 repository=$2
 run_id=$3
+attempts=$4
 
 page=1
 jobs_data_file=$(mktemp)  # 创建一个临时文件
@@ -10,7 +11,7 @@ release_temp_file=$(mktemp)  # 创建一个临时文件用于存储release.txt�
 
 if [ -f "release.txt" ]; then
     while true; do
-        json_data=$(curl -s -H "Authorization: Bearer $token" "https://api.github.com/repos/$repository/actions/runs/$run_id/jobs?page=$page")
+        json_data=$(curl -s -H "Authorization: Bearer $token" "https://api.github.com/repos/$repository/actions/runs/$run_id/attempts/$attempts/jobs?page=$page")
 
         # 检查 API 响应是否有效
         if [ -z "$json_data" ]; then

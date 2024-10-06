@@ -748,7 +748,7 @@ jobs:
         #   GH_TOKEN: ${{ github.token }}
         run: |
             chmod +x $ORGANIZE_TAG_SH
-            $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
+            $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}"
 
       - name: Upload Tags To Artifact
         uses: actions/upload-artifact@v4
