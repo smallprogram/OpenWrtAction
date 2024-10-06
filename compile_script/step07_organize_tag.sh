@@ -43,8 +43,9 @@ if [ -f "release.txt" ]; then
         echo "No jobs starting with 'Upload-' found."
         echo "status=failure" >> $GITHUB_OUTPUT
     else
+        all_jobs=$(jq -s '.' "$jobs_data_file")
         echo "-------------------------------api data----------------------------"
-        echo $jobs_data_file
+        echo $all_jobs
         echo "-------------------------------------------------------------------"
         # 读取release.txt文件内容
         cp release.txt "$release_temp_file"
@@ -80,7 +81,7 @@ if [ -f "release.txt" ]; then
                 }
                 print
             }' "$release_temp_file" > temp && mv temp "$release_temp_file"
-        done < <(echo "$filtered_jobs" | jq -c '.[]')  # 使用jq解析JSON并提取所需信息
+        done < <(echo "$all_jobs" | jq -c '.[]')  # 使用jq解析JSON并提取所需信息
 
         echo "Total success count: $conclusion_success_count"
         # 将更新后的内容写回release.txt文件
