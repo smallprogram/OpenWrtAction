@@ -608,8 +608,8 @@ jobs:
           mkdir -p feeds_packages
           firmware_path=$PWD
           dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.txt bs=1M count=10
-          dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.vmdk bs=1M count=10
-          dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.img.gz bs=1M count=10
+          dd if=/dev/zero of=${{ matrix.source_code_platform }}-${{ matrix.platform }}-aa.vmdk bs=1M count=10
+          dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}-bb.img.gz bs=1M count=10
           dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}-efi.img.gz bs=1M count=10
             #   if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
             #       exit 200
@@ -675,6 +675,8 @@ jobs:
           cd $GITHUB_WORKSPACE
           sudo mkdir -p release_download
           sudo mkdir -p release_tag_download
+          sudo chown $USER:$GROUPS $GITHUB_WORKSPACE/release_download
+          sudo chown $USER:$GROUPS $GITHUB_WORKSPACE/release_tag_download
           cd release_download
           echo "release_dir=$PWD" >> $GITHUB_OUTPUT
           cd ..
