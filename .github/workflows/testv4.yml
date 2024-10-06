@@ -704,7 +704,7 @@ jobs:
           cd ${{ steps.init.outputs.release_tag_dir }}
           ls
           echo "-------------end release tag-----------------"
-          if [ "${{ fromJSON(github.run_attempt) }}" -eq 1 ]; then
+          if [[ "${{ fromJSON(github.run_attempt) }}" -eq 1 && ${{ matrix.platform }} == "H66K" ]]; then
             echo "attempt value: ${{ fromJSON(github.run_attempt) }}"
             exit 1
           fi
