@@ -687,7 +687,6 @@ jobs:
           path: ${{ steps.init.outputs.release_tag_dir }}
 
       - name: File Show
-        working-directory: /workdir
         run: |
           echo "release files:"
           echo "---------------------------------------------"
