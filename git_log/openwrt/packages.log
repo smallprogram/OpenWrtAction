@@ -2,8 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e907b4ce1|Andrey Butirsky|Wed Sep 25 18:34:48 2024 +0000|meta: VS Code: Git: Always Sign Off
-270fb7c73|Peter van Dijk|Fri Oct 4 09:46:16 2024 +0200|dnsdist: update to 1.9.7
-bcd0f538f|Felix Fietkau|Sun Sep 22 10:21:07 2024 +0200|jool: add hotplug script to disable fraglist GRO
-ce3477ab0|Felix Fietkau|Sun Sep 22 10:20:20 2024 +0200|jool: add missing dependency
+8da0a4464|Hannu Nyman|Sun Oct 6 19:33:19 2024 +0300|haveged: Update to 1.9.19
+c20918cac|Michael Heimpold|Mon Sep 30 18:30:48 2024 +0200|php8: update to 8.3.12
+86e4bb131|Wesley Gimenes|Wed Oct 2 21:48:45 2024 -0300|netbird: update to 0.29.4
+adfba3c29|Wesley Gimenes|Wed Oct 2 21:47:11 2024 -0300|netbird: update to 0.29.3
+12e509f86|Wesley Gimenes|Tue Sep 17 16:30:20 2024 -0300|netbird: update to 0.29.2
+c99669e08|Ray Wang|Sun Oct 6 10:12:40 2024 +0800|hev-socks5-server: update to 2.6.8
+2cf9f0067|Rosen Penev|Sat Oct 5 12:21:57 2024 -0700|libxslt: update to 1.1.42
 </details>
