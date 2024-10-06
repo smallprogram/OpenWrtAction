@@ -656,6 +656,11 @@ jobs:
     name: Upload-${{ matrix.source_code_platform }}-${{ matrix.platform }}
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Initialization Environment
         id: init
         run: |
