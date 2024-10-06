@@ -77,7 +77,7 @@ if [ -f "release.txt" ]; then
                 }
                 print
             }' "$release_temp_file" > temp && mv temp "$release_temp_file"
-        done < <(jq -c '.[]' "$jobs_data_file") # 使用jq解析JSON并提取所需信息
+        done < <(echo "$filtered_jobs" | jq -c '.[]')  # 使用jq解析JSON并提取所需信息
 
         echo "Total success count: $conclusion_success_count"
         # 将更新后的内容写回release.txt文件
