@@ -56,7 +56,7 @@ jobs:
       - name: Generate Tag Name
         id: gen_release_tag
         run: |
-          echo "release_tag=multi-platform_$(date +"%Y.%m.%d_%H.%M.%S")" >> $GITHUB_OUTPUT
+          echo "release_tag=test-multi-platform_$(date +"%Y.%m.%d_%H.%M.%S")" >> $GITHUB_OUTPUT
 
       - name: Checkout
         uses: actions/checkout@v4
