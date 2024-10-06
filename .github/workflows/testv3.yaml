@@ -662,12 +662,25 @@ jobs:
     name: UploadRelease-${{ matrix.source_code_platform }}-${{ matrix.platform }}
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
       - name: Initialization Environment
+        id: int
         run: |
           sudo timedatectl set-timezone "$TZ"
           df -hT
+          cd $GITHUB_WORKSPACE
           sudo mkdir -p release_download
           sudo mkdir -p release_tag_download
+          cd release_download
+          echo "release_dir=$PWD" >> $GITHUB_OUTPUT
+          cd ..
+          cd release_tag_download
+          echo "release_tag_dir=$PWD" >> $GITHUB_OUTPUT
+
 
 
       - name: Download Release From Artifacts
@@ -675,29 +688,23 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
-          path: release_download
+          path: ${{ steps.int.outputs.release_dir }}
 
       - name: Download Tags
         uses: actions/download-artifact@v4
         with:
           name: release_tag
-          path: release_tag_download
+          path: ${{ steps.int.outputs.release_tag_dir }}
 
-      - name: File Extraction
-        working-directory: /workdir
+      - name: File Show
         run: |
           echo "release files:"
-          cd release_download
+          cd ${{ steps.int.outputs.release_dir }}
           ls
-          echo "RELEASE_PATH=$PWD" >> $GITHUB_ENV
           cd ..
-          cd release_tag_download
-          echo "RELEASE_TAG_PATH=$PWD" >> $GITHUB_ENV
-      
-      - name: SSH connection to Actions
-        uses: mxschmitt/action-tmate@v3.16
-        if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
-
+          echo "release tag"
+          cd ${{ steps.int.outputs.release_tag_dir }}
+          ls
 
       - name: Upload Firmware To Release
         uses: softprops/action-gh-release@v2.0.8
@@ -705,8 +712,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ needs.job_init.outputs.output_release_tag }}
-          body_path: ${{ env.RELEASE_TAG_PATH }}/release.txt
-          files: ${{ env.RELEASE_PATH }}/*
+          body_path: ${{ steps.int.outputs.release_tag_dir }}/release.txt
+          files: ${{ steps.int.outputs.release_dir }}/*
         
 
 
@@ -756,24 +763,24 @@ jobs:
           tag_name: ${{ needs.job_init.outputs.output_release_tag }}
           body_path: release.txt
 
-      - name: Trigger build
-        if: steps.organize_tags.outputs.status == 'success' && fromJSON(github.run_attempt) < 2
-        uses: peter-evans/repository-dispatch@v3
-        with:
-          token: ${{ secrets.MY_SECRET_PAT }}
-          repository: smallprogram/MyAction
-          event-type: openwrt_compilation_completed    
+    #   - name: Trigger build
+    #     if: steps.organize_tags.outputs.status == 'success' && fromJSON(github.run_attempt) < 2
+    #     uses: peter-evans/repository-dispatch@v3
+    #     with:
+    #       token: ${{ secrets.MY_SECRET_PAT }}
+    #       repository: smallprogram/MyAction
+    #       event-type: openwrt_compilation_completed    
 
-  rerun-failed-jobs:
-    runs-on: ubuntu-24.04
-    needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain, job_build, job_upload_release, job_organize_tags]
-    if: failure() && fromJSON(github.run_attempt) < 3
-    steps:
-      - name: Rerun failed jobs in the current workflow
-        env:
-          GH_REPO: ${{ github.repository }}
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          echo "Retry failed jobs for the ${{ fromJSON(github.run_attempt) }} time, Retry 3 times in total"
-          gh workflow run Retry_Failure_Jobs.yml -F run_id=${{ github.run_id }}
+#   rerun-failed-jobs:
+#     runs-on: ubuntu-24.04
+#     needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain, job_build, job_upload_release, job_organize_tags]
+#     if: failure() && fromJSON(github.run_attempt) < 3
+#     steps:
+#       - name: Rerun failed jobs in the current workflow
+#         env:
+#           GH_REPO: ${{ github.repository }}
+#           GH_TOKEN: ${{ github.token }}
+#         run: |
+#           echo "Retry failed jobs for the ${{ fromJSON(github.run_attempt) }} time, Retry 3 times in total"
+#           gh workflow run Retry_Failure_Jobs.yml -F run_id=${{ github.run_id }}
       
