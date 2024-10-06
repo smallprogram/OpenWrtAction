@@ -43,6 +43,9 @@ if [ -f "release.txt" ]; then
         echo "No jobs starting with 'Upload-' found."
         echo "status=failure" >> $GITHUB_OUTPUT
     else
+        echo "-------------------------------api data----------------------------"
+        echo $jobs_data_file
+        echo "-------------------------------------------------------------------"
         # 读取release.txt文件内容
         cp release.txt "$release_temp_file"
         conclusion_success_count=0
