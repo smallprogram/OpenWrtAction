@@ -704,6 +704,11 @@ jobs:
           cd ${{ steps.init.outputs.release_tag_dir }}
           ls
           echo "-------------end release tag-----------------"
+          if [ "${{ fromJSON(github.run_attempt) }}" -eq 1 ]; then
+            echo "attempt value: ${{ fromJSON(github.run_attempt) }}"
+            exit 1
+          fi
+
       
       - name: SSH connection to Actions
         uses: mxschmitt/action-tmate@v3.16
