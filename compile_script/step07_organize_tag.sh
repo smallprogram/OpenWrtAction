@@ -34,6 +34,7 @@ if [ -f "release.txt" ]; then
         ((page++))  # 递增页码
         echo "Fetching page: $page"
 
+        echo "sleep 1 second"
         sleep 1  # 等待1秒
     done
 

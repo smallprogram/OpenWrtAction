@@ -711,8 +711,8 @@ jobs:
         with:
           tag_name: ${{ needs.job_init.outputs.output_release_tag }}
           body_path: ${{ steps.init.outputs.release_tag_dir }}/release.txt
-          files: ${{ steps.init.outputs.release_dir }}/*
-        
+          files: |
+            ${{ steps.init.outputs.release_dir }}/*
 
 
 
@@ -772,7 +772,7 @@ jobs:
   rerun-failed-jobs:
     runs-on: ubuntu-24.04
     needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain, job_build, job_upload_release, job_organize_tags]
-    if: failure() && fromJSON(github.run_attempt) < 3
+    if: failure() && fromJSON(github.run_attempt) < 3 && !cancelled()
     steps:
       - name: Rerun failed jobs in the current workflow
         env:
