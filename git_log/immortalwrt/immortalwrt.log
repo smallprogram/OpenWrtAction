@@ -2,23 +2,25 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b8b8ccdf89|Tianling Shen|Sun Oct 6 16:37:41 2024 +0800|mediatek: make use of whole spi nor for konka komi-a31
-b3a41b80d4|Tianling Shen|Sun Oct 6 15:08:12 2024 +0800|Merge Official Source
-3a5ffb4e89|Tianling Shen|Sun Oct 6 15:02:31 2024 +0800|uboot-mediatek: drop useless regulator from konka komi-a31 nor dts
-ca325ee516|Hauke Mehrtens|Sat Oct 5 15:08:02 2024 +0200|gemini: apm821xx: Ignore return value of e2fsck
-0852d814f0|Hauke Mehrtens|Sat Oct 5 15:05:50 2024 +0200|gemini: Use absolute paths for tools
-685fa051d5|Rui Salvaterra|Sat Oct 5 20:34:17 2024 +0100|iproute2: fix tc-tiny build failure
-3a168e3595|Leo Barsky|Sat Oct 5 01:52:39 2024 +0000|rockchip: config-6.6: remove CONFIG_FORTIFY_SOURCE
-51db334005|John Audia|Fri Oct 4 15:39:07 2024 -0400|kernel: bump 6.6 to 6.6.54
-32024dbcaa|Hauke Mehrtens|Thu Oct 3 17:57:37 2024 +0200|tools: mtd-utils: update to 2.2.1
-1288852d33|Hauke Mehrtens|Thu Oct 3 17:56:23 2024 +0200|utils: mtd-utils: update to 2.2.1
-6262366381|Hauke Mehrtens|Thu Oct 3 21:51:54 2024 +0200|iproute2: update to 6.11.0
-8c2dcd1518|Hauke Mehrtens|Sun Sep 29 06:37:43 2024 -0400|ethtool: update to 6.10
-08dc2691e0|Hauke Mehrtens|Thu Oct 3 21:47:48 2024 +0200|libnl: update to 3.10.0
-6c00a462d1|Hauke Mehrtens|Thu Oct 3 22:02:51 2024 +0200|libxml2: update to 2.13.4
-271097101f|Hauke Mehrtens|Thu Oct 3 21:59:21 2024 +0200|libxml2: update to 2.12.9
-12f067a5f3|Hauke Mehrtens|Thu Oct 3 22:08:39 2024 +0200|libjson-c: update to 0.18
-d104edcd1b|Hauke Mehrtens|Thu Oct 3 21:39:13 2024 +0200|strace: Update to version 6.11
-1a55d90320|Hauke Mehrtens|Thu Oct 3 18:24:13 2024 +0200|valgrind: Update to version 3.23
-ec61ccc0d3|Felix Fietkau|Sat Oct 5 09:35:49 2024 +0200|mac80211: backport upstream DFS fixes
+39c6816bde|Tianling Shen|Mon Oct 7 20:43:44 2024 +0800|Merge Official Source
+da5b1e13f4|Tianling Shen|Mon Oct 7 20:35:12 2024 +0800|ipv6-helper: drop package
+293cea41ef|Tianling Shen|Mon Oct 7 20:33:26 2024 +0800|odhcpd: update default config
+73d3789e67|Janusz Dziedzic|Fri Oct 4 15:24:14 2024 +0200|mac80211: ath12k: allow country set for WCN7850
+9f73519e62|Chuanhong Guo|Mon Oct 7 01:05:51 2024 +0800|mediatek: add support for TP-Link TL-XDR3230 v1
+1d978085ee|Tianling Shen|Mon Oct 7 15:35:56 2024 +0800|autocore: fix read mt7622 wifi temp
+dae6a871de|Daniel Golle|Sat Oct 5 18:20:35 2024 +0100|base-files: don't wipe LED state when adding a single LED
+0b05cc7048|Robert Marko|Sun Oct 6 21:42:23 2024 +0200|tools: libdeflate: bump to 1.22
+cc29e90d0c|Robert Marko|Sun Oct 6 22:02:37 2024 +0200|ath10k-ct: select mac80211 debugfs support
+c80792e666|Rosen Penev|Thu Sep 26 16:29:43 2024 -0700|cmake.mk: disable shared libs for host packages
+3da8e385e0|Rosen Penev|Sun Oct 6 12:41:45 2024 -0700|mediatek: fix wrong compatible string
+8660d95860|Janusz Dziedzic|Tue Oct 1 11:41:23 2024 +0200|linux-firmware: intel: update BE200 wifi firmware
+12c1a56ec0|Felix Fietkau|Sun Oct 6 18:52:48 2024 +0200|hostapd: reload bss if a relevant ifindex changes
+cffc52bb9a|Goetz Goerisch|Sat Oct 5 08:56:43 2024 +0200|ramips: ER605v2 fix LED function definition
+b62e6f5beb|Shiji Yang|Tue Sep 24 18:50:01 2024 +0800|ramips: use OKLI loader for TP-Link RE200 v1 and RE210 v1
+08eecec355|Shiji Yang|Tue Sep 24 18:50:01 2024 +0800|ramips: introduce TP-Link v1 header OKLI image recipe
+ac840d74f1|Shiji Yang|Thu Sep 26 19:30:36 2024 +0800|ath10k-ct: switch to version 6.10
+7ada5ab1c9|Zxl hhyccc|Fri Oct 4 22:31:25 2024 +0800|kernel-build.mk: Fix multi-core build warning.
+5ee75b6bb2|Rosen Penev|Thu Oct 3 13:20:30 2024 -0700|kernel: ws2812b: use devm for mutex_init
+e15aab2a17|Rosen Penev|Thu Sep 26 13:09:19 2024 -0700|kernel: leds-ws2812b: remove sub 6.6 support
+63a92188fb|Rosen Penev|Fri Aug 2 15:13:43 2024 -0700|kernel: leds-ws2812b: use devm functions
 </details>

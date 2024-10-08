@@ -2,16 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-12c1a56ec0|Felix Fietkau|Sun Oct 6 18:52:48 2024 +0200|hostapd: reload bss if a relevant ifindex changes
-cffc52bb9a|Goetz Goerisch|Sat Oct 5 08:56:43 2024 +0200|ramips: ER605v2 fix LED function definition
-b62e6f5beb|Shiji Yang|Tue Sep 24 18:50:01 2024 +0800|ramips: use OKLI loader for TP-Link RE200 v1 and RE210 v1
-08eecec355|Shiji Yang|Tue Sep 24 18:50:01 2024 +0800|ramips: introduce TP-Link v1 header OKLI image recipe
-ac840d74f1|Shiji Yang|Thu Sep 26 19:30:36 2024 +0800|ath10k-ct: switch to version 6.10
-7ada5ab1c9|Zxl hhyccc|Fri Oct 4 22:31:25 2024 +0800|kernel-build.mk: Fix multi-core build warning.
-5ee75b6bb2|Rosen Penev|Thu Oct 3 13:20:30 2024 -0700|kernel: ws2812b: use devm for mutex_init
-e15aab2a17|Rosen Penev|Thu Sep 26 13:09:19 2024 -0700|kernel: leds-ws2812b: remove sub 6.6 support
-63a92188fb|Rosen Penev|Fri Aug 2 15:13:43 2024 -0700|kernel: leds-ws2812b: use devm functions
-ca325ee516|Hauke Mehrtens|Sat Oct 5 15:08:02 2024 +0200|gemini: apm821xx: Ignore return value of e2fsck
-0852d814f0|Hauke Mehrtens|Sat Oct 5 15:05:50 2024 +0200|gemini: Use absolute paths for tools
-685fa051d5|Rui Salvaterra|Sat Oct 5 20:34:17 2024 +0100|iproute2: fix tc-tiny build failure
+170ecbecfc|Hauke Mehrtens|Sun Oct 6 22:33:09 2024 +0200|linux-firmware: Update Intel AX101/AX210 firmware
+78d1689757|Rosen Penev|Wed Sep 11 12:46:28 2024 -0700|ath79: ar7200 usb phy: simplify probe
+06791742a0|Lech Perczak|Mon Oct 7 00:08:23 2024 +0200|ipq40xx: fix MAC address on Meraki MR33 and MR74 after nvmem-layout
+d51353db26|Rosen Penev|Fri Oct 4 13:24:29 2024 -0700|ath79: gpio-latch-mikrotik: use devm_mutex_init
+73d3789e67|Janusz Dziedzic|Fri Oct 4 15:24:14 2024 +0200|mac80211: ath12k: allow country set for WCN7850
+dae6a871de|Daniel Golle|Sat Oct 5 18:20:35 2024 +0100|base-files: don't wipe LED state when adding a single LED
+0b05cc7048|Robert Marko|Sun Oct 6 21:42:23 2024 +0200|tools: libdeflate: bump to 1.22
+cc29e90d0c|Robert Marko|Sun Oct 6 22:02:37 2024 +0200|ath10k-ct: select mac80211 debugfs support
+c80792e666|Rosen Penev|Thu Sep 26 16:29:43 2024 -0700|cmake.mk: disable shared libs for host packages
+3da8e385e0|Rosen Penev|Sun Oct 6 12:41:45 2024 -0700|mediatek: fix wrong compatible string
+8660d95860|Janusz Dziedzic|Tue Oct 1 11:41:23 2024 +0200|linux-firmware: intel: update BE200 wifi firmware
 </details>

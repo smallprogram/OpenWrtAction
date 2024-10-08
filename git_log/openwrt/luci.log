@@ -1,0 +1,12 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+7d897991a0|Paul Donald|Tue Oct 8 00:54:23 2024 +0200|luci-app-qos: Convert to JS
+3aa60877ea|Paul Donald|Mon Oct 7 22:18:04 2024 +0200|luci-app-rp-pppoe-server: convert to JS
+25a4d07555|Stan Grishin|Mon Oct 7 11:21:12 2024 -0700|Merge pull request #7309 from stangri/master-luci-app-pbr
+383edb4d6d|Rudy Andram|Thu Oct 3 09:39:10 2024 +0100|luci-wireless: Add 11be support
+300961bb1b|Daniel Nilsson|Sat Sep 21 19:38:49 2024 +0200|luci-mod-network: split interface name and protocol validation
+723eb38634|Paul Donald|Mon Oct 7 17:10:57 2024 +0200|luci-mod-dashboard: Minor repairs
+74bc3e3b2d|Stan Grishin|Sun Oct 6 23:11:55 2024 +0000|luci-app-pbr: update to 1.1.7-21
+</details>
