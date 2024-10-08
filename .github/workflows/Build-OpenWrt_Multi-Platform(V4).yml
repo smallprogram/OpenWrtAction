@@ -36,9 +36,9 @@ env:
   GENERATE_GIT_LOG_SH: compile_script/step03_generate_git_log.sh
   UPDATE_GIT_LOG_SH:  compile_script/step06_update_git_log.sh
   ORGANIZE_TAG_SH: compile_script/step07_organize_tag.sh
-
-
   PLATFORMS_SH: compile_script/platforms.sh
+
+  MAX_RETRY_TIMES: 3
 
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
@@ -748,7 +748,7 @@ jobs:
         #   GH_TOKEN: ${{ github.token }}
         run: |
             chmod +x $ORGANIZE_TAG_SH
-            $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}"
+            $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "${{ env.MAX_RETRY_TIMES }}"
 
       - name: Upload Tags To Artifact
         uses: actions/upload-artifact@v4
@@ -767,7 +767,7 @@ jobs:
           body_path: release.txt
 
       - name: Trigger build
-        if: steps.organize_tags.outputs.status == 'success' && fromJSON(github.run_attempt) < 2
+        if: steps.organize_tags.outputs.status == 'success' && fromJSON(github.run_attempt) == 1
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.MY_SECRET_PAT }}
@@ -777,7 +777,7 @@ jobs:
   rerun-failed-jobs:
     runs-on: ubuntu-24.04
     needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain, job_build, job_upload_release, job_organize_tags]
-    if: failure() && fromJSON(github.run_attempt) < 3 && !cancelled()
+    if: failure() && fromJSON(github.run_attempt) < ${{ github.env.MAX_RETRY_TIMES }}  && !cancelled()
     steps:
       - name: Rerun failed jobs in the current workflow
         env:

@@ -4,6 +4,7 @@ token=$1
 repository=$2
 run_id=$3
 attempts=$4
+max_retry_times=$5
 
 page=1
 jobs_data_file=$(mktemp)  # 创建一个临时文件
@@ -70,14 +71,18 @@ if [ -f "release.txt" ]; then
 
             echo "Current count: $conclusion_success_count"
 
-            awk -v sp="$source_platform" -v pl="$platform" -v concl="$conclusion" '
+            awk -v sp="$source_platform" -v pl="$platform" -v concl="$conclusion" -v attempts="$attempts" -v max_retry_times="$max_retry_times" '
             {
                 if ($0 ~ "scp=\"" sp "\"" && $0 ~ "plm=\"" pl "\"") {
-                    gsub(/src="[^"]*"/, "src=\"\"", $0)  # 清除src属性的值
+                    
                     if (concl == "success") {
+                        gsub(/src="[^"]*"/, "src=\"\"", $0)  # 清除src属性的值
                         gsub(/src=""/, "src=\"https://img.shields.io/badge/build-passing-green?logo=githubactions&logoColor=green&style=flat-square\"", $0)
                     } else {
-                        gsub(/src=""/, "src=\"https://img.shields.io/badge/build-failure-red?logo=githubactions&logoColor=red&style=flat-square\"", $0)
+                        if (attempts == max_retry_times) {
+                            gsub(/src="[^"]*"/, "src=\"\"", $0)  # 清除src属性的值
+                            gsub(/src=""/, "src=\"https://img.shields.io/badge/build-failure-red?logo=githubactions&logoColor=red&style=flat-square\"", $0)
+                        }
                     }
                 }
                 print
