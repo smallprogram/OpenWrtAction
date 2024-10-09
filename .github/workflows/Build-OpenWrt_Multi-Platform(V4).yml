@@ -37,9 +37,6 @@ env:
   UPDATE_GIT_LOG_SH:  compile_script/step06_update_git_log.sh
   ORGANIZE_TAG_SH: compile_script/step07_organize_tag.sh
   PLATFORMS_SH: compile_script/platforms.sh
-
-  MAX_RETRY_TIMES: 3
-
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_ARTIFACT: true
