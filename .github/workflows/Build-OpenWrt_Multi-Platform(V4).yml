@@ -710,7 +710,7 @@ jobs:
 
 
       - name: Upload Firmware To Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@0bd7e8b279c9b5b36661d552472fbbfe671fe26e
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -748,7 +748,7 @@ jobs:
         #   GH_TOKEN: ${{ github.token }}
         run: |
             chmod +x $ORGANIZE_TAG_SH
-            $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "${{ env.MAX_RETRY_TIMES }}"
+            $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "3"
 
       - name: Upload Tags To Artifact
         uses: actions/upload-artifact@v4
@@ -758,7 +758,7 @@ jobs:
           retention-days: 5
 
       - name: Upload Release Tag
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@0bd7e8b279c9b5b36661d552472fbbfe671fe26e
         if: steps.organize_tags.outputs.status == 'success'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -777,7 +777,7 @@ jobs:
   rerun-failed-jobs:
     runs-on: ubuntu-24.04
     needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain, job_build, job_upload_release, job_organize_tags]
-    if: failure() && fromJSON(github.run_attempt) < ${{ github.env.MAX_RETRY_TIMES }}  && !cancelled()
+    if: failure() && fromJSON(github.run_attempt) < 3  && !cancelled()
     steps:
       - name: Rerun failed jobs in the current workflow
         env:
