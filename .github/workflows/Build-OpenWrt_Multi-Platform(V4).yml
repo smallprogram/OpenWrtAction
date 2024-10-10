@@ -764,7 +764,7 @@ jobs:
           body_path: release.txt
 
       - name: Trigger build
-        if: steps.organize_tags.outputs.status == 'success' && fromJSON(github.run_attempt) == 1
+        if: steps.organize_tags.outputs.status == 'success'
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.MY_SECRET_PAT }}
