@@ -1,0 +1,9 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d57306298|Matthias Schiffer|Wed Oct 9 18:09:58 2024 +0200|ecdsautils: update to 0.4.2
+9ab9560be|Maxim Storchak|Tue Oct 8 12:17:30 2024 +0300|tmux: update to 3.5a
+91639e2e5|Milinda Brantini|Mon Oct 7 23:21:27 2024 +0800|sing-box: Update to 1.9.7
+6575ab559|Hirokazu MORIKAWA|Wed Oct 9 09:43:19 2024 +0900|node: bump to v20.18.0
+</details>
