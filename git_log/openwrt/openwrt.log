@@ -2,19 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5281033831|Daniel Golle|Wed Oct 9 00:23:53 2024 +0100|generic: net: phy: use all SerDes MAC interface modes
-69906789e0|Daniel Golle|Wed Oct 9 00:19:26 2024 +0100|generic: net: phy: realtek: various improvements
-7d256aff7b|Daniel Golle|Tue Oct 8 19:33:49 2024 +0100|mediatek: update MediaTek PHY patchset
-a544b9252b|Thomas Richard|Thu Sep 19 12:27:27 2024 +0200|toplevel.mk: add target feeds in 'make distclean'
-2760b7c8ec|Thomas Richard|Tue Sep 24 18:13:00 2024 +0200|gpio-button-hotplug: skip disabled buttons
-15f5c7e365|Rosen Penev|Tue Oct 8 13:23:38 2024 -0700|ubnt-ledbar: fix compilation error
-0b792954ff|Hauke Mehrtens|Mon Oct 7 23:33:59 2024 +0200|valgrind: Remove unsupported configure options.
-ffa4be4c14|Hauke Mehrtens|Mon Oct 7 23:28:20 2024 +0200|valgrind: Fix build on ARMv7
-084665698b|Rosen Penev|Fri Oct 4 13:20:13 2024 -0700|ath79: gpio-rb91x-key: use devm for mutex_init
-a35bfa68d3|Rosen Penev|Thu Oct 3 16:06:31 2024 -0700|ath79: gpio-rb4xx: use devm_mutex_init
-b37f3def86|Shiji Yang|Tue Sep 24 19:15:56 2024 +0800|ipq40xx: add support for SKSpruce WIA3300-20
-a48ba7efcc|Shiji Yang|Tue Oct 8 11:20:47 2024 +0800|ipq40xx: generic: enable userspace regulator consumer driver
-823fd1b166|Shiji Yang|Tue Oct 8 11:27:16 2024 +0800|ipq-wifi: update to latest version 2024-10-08
-3483f63c56|Rosen Penev|Fri Oct 4 13:27:26 2024 -0700|kernel: ubnt-ledbar: use devm_mutex_init
-7d33aedd10|John Thomson|Thu May 30 15:57:00 2024 +1000|generic: platform/mikrotik: add wlan lz77 decompress
+f8ca351936|Rosen Penev|Fri Aug 23 17:39:17 2024 -0700|mpc85xx: handle MSM460 wifi mac in dts
+c3251f5d52|Robert Marko|Mon Oct 7 15:07:39 2024 +0200|kernel: netdevices: add RmNet MAP support
+fa6bd065dd|Felix Fietkau|Wed Oct 9 10:44:10 2024 +0200|kernel: backport upstream commit that allows leaving out .ndo_get_stats64
 </details>
