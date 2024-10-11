@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-40f53ea|Pacalini|Fri Oct 11 01:29:36 2024 +0800|luci: default preproxy fix
-6830c6a|Pacalini|Fri Oct 11 01:29:02 2024 +0800|luci: Xray noise
-</details>

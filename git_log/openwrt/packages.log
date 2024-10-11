@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1294b5447|Dirk Brenken|Thu Oct 10 19:00:14 2024 +0200|adblock: update to 4.2.2-6
-850b2609c|Vladimir Ermakov|Tue Oct 8 13:44:46 2024 +0000|qemu: fix guest agent patch
-7fe51d7df|Jen Wolf|Wed Oct 2 20:01:03 2024 +0000|mtools: update to 4.0.45
-204747184|Milinda Brantini|Fri Oct 4 13:18:10 2024 +0800|adguardhome: Update to 0.107.53
+0fe73d3e3|Peter van Dijk|Thu Oct 3 14:22:47 2024 +0200|pdns-recursor: update to 5.1.2
+270e6f126|Dirk Brenken|Fri Oct 11 19:46:16 2024 +0200|banIP: update to 1.0.0-8
 </details>

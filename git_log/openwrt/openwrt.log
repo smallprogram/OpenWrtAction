@@ -2,8 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e00b6ba0c8|Tianling Shen|Wed Oct 9 20:47:34 2024 +0800|uboot-rockchip: Update to 2024.10
-51e083426b|Thomas Richard|Tue Sep 24 18:27:16 2024 +0200|scripts/feeds: force kernel package scan after a target installation
-9b66c7dfa5|Robert Marko|Thu Oct 10 11:30:40 2024 +0200|realtek: refresh patches
-3f6e087b6f|Felix Fietkau|Thu Oct 10 10:49:53 2024 +0200|mt76: update to Git HEAD (2024-10-10)
+6c35333316|Felix Fietkau|Fri Oct 11 20:03:23 2024 +0200|mt76: update to Git HEAD (2024-10-11.1)
+16bf650d50|John Audia|Thu Oct 10 17:20:15 2024 -0400|kernel: bump 6.6 to 6.6.56
+12f12df569|John Audia|Thu Oct 10 16:06:27 2024 -0400|kernel: bump 6.6 to 6.6.55
+6b7d549dd0|Felix Fietkau|Fri Oct 11 18:50:32 2024 +0200|mt76: update to Git HEAD (2024-10-11)
+f9a70a20c5|Christian Marangi|Fri Oct 11 14:05:40 2024 +0200|generic: backport BLOCK OF support patch
+48b8c602d0|Shiji Yang|Fri Oct 11 18:40:16 2024 +0800|ipq40xx: switch to zImage kernel for SKSpruce WIA3300-20
+7e942c53b2|Felix Fietkau|Fri Oct 11 14:39:54 2024 +0200|netifd: update to Git HEAD (2024-10-06)
 </details>

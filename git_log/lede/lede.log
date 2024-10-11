@@ -1,0 +1,6 @@
+<details> <summary> <b>lede new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+2d6568c5d|Daniel Golle|Tue Sep 17 17:29:20 2024 +0100|generic: 6.6: backport pending fix for Aquantia PHY LEDs
+</details>
