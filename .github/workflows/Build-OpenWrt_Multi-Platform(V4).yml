@@ -251,6 +251,14 @@ jobs:
           path: release.txt
           retention-days: 5
 
+      - name: Create Release Tag
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+          body_path: release.txt
+
       - name: Merge and push changes with "theirs" strategy
         run: |
           
@@ -647,7 +655,6 @@ jobs:
     if: ${{ always() }}
     strategy:
       fail-fast: false
-      max-parallel: 1
       matrix:
         include: ${{ fromJson(needs.job_init.outputs.platforms) }}
     name: Upload-${{ matrix.source_code_platform }}-${{ matrix.platform }}
@@ -755,7 +762,7 @@ jobs:
           path: release.txt
           retention-days: 5
 
-      - name: Upload Release Tag
+      - name: Update Release Tag
         uses: softprops/action-gh-release@v2
         if: steps.organize_tags.outputs.status == 'success'
         env:
