@@ -647,6 +647,7 @@ jobs:
     if: ${{ always() }}
     strategy:
       fail-fast: false
+      max-parallel: 1
       matrix:
         include: ${{ fromJson(needs.job_init.outputs.platforms) }}
     name: Upload-${{ matrix.source_code_platform }}-${{ matrix.platform }}
@@ -707,7 +708,7 @@ jobs:
 
 
       - name: Upload Firmware To Release
-        uses: softprops/action-gh-release@0bd7e8b279c9b5b36661d552472fbbfe671fe26e
+        uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -755,7 +756,7 @@ jobs:
           retention-days: 5
 
       - name: Upload Release Tag
-        uses: softprops/action-gh-release@0bd7e8b279c9b5b36661d552472fbbfe671fe26e
+        uses: softprops/action-gh-release@v2
         if: steps.organize_tags.outputs.status == 'success'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
