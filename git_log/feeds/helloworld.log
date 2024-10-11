@@ -2,6 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-465fc43|coolsnowwolf|Wed Oct 9 13:46:40 2024 +0800|Merge pull request #1550 from fw876/main
-9f3101f|coolsnowwolf|Wed Oct 9 13:45:00 2024 +0800|mosdns: bump version
+39a0d3d|coolsnowwolf|Fri Oct 11 10:51:15 2024 +0800|luci-app-ssr-plus: add remote BGP Google and CF public DNS to force proxy
+f7efd5a|coolsnowwolf|Thu Oct 10 17:58:59 2024 +0800|Merge pull request #1544 from zxlhhyccc/patch-72
+ab22961|coolsnowwolf|Thu Oct 10 17:58:41 2024 +0800|Merge pull request #1545 from zxlhhyccc/patch-73
+e01e22a|zxl hhyccc|Wed Oct 9 00:23:39 2024 +0800|naiveproxy: update build scripts
+1cd275d|zxl hhyccc|Wed Oct 9 00:22:56 2024 +0800|naiveproxy: update to 129.0.6668.81-2
+67a6a36|zxl hhyccc|Mon Oct 7 16:18:24 2024 +0800|gn: Update to git HEAD
+54c700a|zxl hhyccc|Mon Oct 7 16:15:22 2024 +0800|naiveproxy: update to 129.0.6668.81-1
+86298e5|zxl hhyccc|Mon Oct 7 16:12:18 2024 +0800|gn: Update to git HEAD
+61a2e13|zxl hhyccc|Mon Oct 7 16:11:27 2024 +0800|gn: Update to git HEAD
 </details>

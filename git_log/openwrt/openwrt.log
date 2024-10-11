@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f8ca351936|Rosen Penev|Fri Aug 23 17:39:17 2024 -0700|mpc85xx: handle MSM460 wifi mac in dts
-c3251f5d52|Robert Marko|Mon Oct 7 15:07:39 2024 +0200|kernel: netdevices: add RmNet MAP support
-fa6bd065dd|Felix Fietkau|Wed Oct 9 10:44:10 2024 +0200|kernel: backport upstream commit that allows leaving out .ndo_get_stats64
+e00b6ba0c8|Tianling Shen|Wed Oct 9 20:47:34 2024 +0800|uboot-rockchip: Update to 2024.10
+51e083426b|Thomas Richard|Tue Sep 24 18:27:16 2024 +0200|scripts/feeds: force kernel package scan after a target installation
+9b66c7dfa5|Robert Marko|Thu Oct 10 11:30:40 2024 +0200|realtek: refresh patches
+3f6e087b6f|Felix Fietkau|Thu Oct 10 10:49:53 2024 +0200|mt76: update to Git HEAD (2024-10-10)
 </details>

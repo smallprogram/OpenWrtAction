@@ -1,7 +1,0 @@
-<details> <summary> <b>lede new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-1c8d69465|coolsnowwolf|Thu Oct 10 00:52:09 2024 +0800|README.md: drop python2 as build environment requirement
-57abb30ed|Mieczyslaw Nalewaj|Tue Aug 27 18:47:28 2024 +0200|generic: mtd: winbond: more serial NAND flash types
-</details>

@@ -2,9 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c68d5c80bd|Griffen Edge|Wed Oct 9 16:00:42 2024 +1100|luci-theme-bootstrap: cascade.css: Refactor unnecessary calc()
-2ef9ef4190|Paul Donald|Thu Oct 10 02:08:54 2024 +0200|luci-app-dump1090: Convert to JS
-84c04c3707|Paul Donald|Wed Oct 9 15:27:46 2024 +0200|luci-app-nut: Convert to JS
-f6e6b055d5|Paul Donald|Wed Oct 9 01:55:50 2024 +0200|luci-app-mosquitto: Convert to JS
-77d4fd1cb4|Hosted Weblate|Wed Oct 9 07:48:57 2024 +0200|Translated using Weblate (Japanese)
+c40253ada3|Paul Donald|Thu Oct 10 22:03:46 2024 +0200|luci-app-lldpd: Fix mysterious Command failed: Unknown error
+02f2d47102|Dirk Brenken|Thu Oct 10 19:04:22 2024 +0200|luci-app-adblock: sync with adblock-4.2.2-6
+5840fec9fd|Hannu Nyman|Thu Oct 10 07:30:57 2024 +0300|treewide: Sync translations
 </details>
