@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2d6568c5d|Daniel Golle|Tue Sep 17 17:29:20 2024 +0100|generic: 6.6: backport pending fix for Aquantia PHY LEDs
+ecaf84009|Beginner|Sat Oct 12 10:10:41 2024 +0800|kernel: bump 6.6 to 6.6.56 (#12530)
+0b75ecd31|Robert Marko|Fri Oct 11 23:27:19 2024 +0200|generic: 5.15: add Winbond W25N01KV support
 </details>

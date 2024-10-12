@@ -1,7 +1,0 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-0fe73d3e3|Peter van Dijk|Thu Oct 3 14:22:47 2024 +0200|pdns-recursor: update to 5.1.2
-270e6f126|Dirk Brenken|Fri Oct 11 19:46:16 2024 +0200|banIP: update to 1.0.0-8
-</details>
