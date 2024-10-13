@@ -2,5 +2,25 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3d7040b7d6|Markus Stockhausen|Fri Oct 11 15:11:43 2024 -0400|realtek: scripts: fix error in belkin-header
+f8c22c9bff|Daniel Golle|Mon Oct 7 18:31:58 2024 +0100|uboot-mediatek: update to U-Boot 2024.10
+4f4cb52e24|Rosen Penev|Sat Aug 24 12:35:03 2024 -0700|ramips: use nvmem to get mikrotik mac
+c5287069ea|Magnus Sandin|Mon Oct 7 20:39:38 2024 +0000|mediatek: ASUS TUF-AX6000: Add Green & Red LEDs
+72731b445e|Yanase Yuki|Tue Oct 8 20:02:25 2024 +0900|toolchain/binutils: remove old versions
+14f79ad139|Linus Walleij|Mon Oct 7 12:12:40 2024 +0200|linux: generic: dsa: mv88e6xx: Drop obsolete patch
+c990f6e156|Linus Walleij|Fri Aug 9 11:45:04 2024 +0200|linux: generic: net: dsa: mv88e6xxx LED support
+09a6e4747f|Shiji Yang|Mon Oct 7 23:21:16 2024 +0800|ramips: remove useless cs gpio code for rt2800 SPI driver
+6e40f98208|Matteo Croce|Sun Sep 29 00:41:23 2024 +0200|scripts/download.pl: use perl builtins instead of system()
+a6de2d7784|Itay Shoshani|Sat Oct 12 09:56:35 2024 +0000|wireless-regdb: Update to version 2024.10.07
+2758e1b21c|Hauke Mehrtens|Thu Oct 10 22:26:56 2024 +0200|gdb: Remove MIPS NSIG patch
+c71e53bf9d|Hauke Mehrtens|Thu Oct 10 22:20:49 2024 +0200|gdb: Remove upstreamed SIGINT patch
+654983ea11|Hauke Mehrtens|Thu Oct 10 22:13:40 2024 +0200|gdb: Update to version 15.2
+1cd7708eb3|Hauke Mehrtens|Thu Oct 10 22:13:57 2024 +0200|toolchain: gdb: Update to version 15.2
+622be8e3d9|Aleksander Jan Bajkowski|Sat Oct 12 20:28:29 2024 +0200|lantiq: ase: disable adm6996 and swconfig
+bb71abb689|Aleksander Jan Bajkowski|Sat Oct 12 20:27:08 2024 +0200|lantiq: ase: refresh config
+eb05baff7f|Shiji Yang|Sat Oct 5 12:22:12 2024 +0800|ppp: clean up makefile
+7eb6bf1ac9|Shiji Yang|Fri Oct 4 22:40:11 2024 +0800|ppp: remove discovery phase timeout hack patch
+8766a92766|Shiji Yang|Fri Oct 4 22:25:52 2024 +0800|ppp: remove uClibc wtmp hack patch
+3e668c6d02|Shiji Yang|Sun Sep 29 10:39:56 2024 +0800|ppp: update to 2.5.1
+9cecf2b16e|Sergey Ivanov|Sat Jun 17 10:20:42 2023 +0300|ppp: update to 2.5.0
+2cea050024|Petr Štetiar|Sat Sep 28 13:27:19 2024 +0000|openwrt-keyring: add apk public key for signing of package indexes
 </details>

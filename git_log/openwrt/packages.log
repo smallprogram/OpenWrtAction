@@ -1,0 +1,8 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+27e7c37dd|Vladimir Ermakov|Sat Oct 12 10:38:10 2024 +0000|go2rtc: run service as regular user
+3ab468be2|Eric Fahlgren|Fri Oct 11 15:14:16 2024 -0700|owut: update to 2024.10.11
+fd5546fc1|Tianling Shen|Sat Oct 12 18:28:14 2024 +0800|v2raya: Update to 2.2.6
+</details>
