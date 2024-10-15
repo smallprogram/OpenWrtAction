@@ -2,13 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2d350fded6|Stijn Tintel|Sun Oct 13 16:12:58 2024 +0300|xdp-tools: bump to 1.4.3
-36e67f7b62|Stijn Tintel|Sun Oct 13 20:21:44 2024 +0300|libbpf: bump to 1.4.6
-61175a0506|Stijn Tintel|Sun Oct 13 22:25:10 2024 +0300|qoriq: drop source-only flag
-553e8da067|Rosen Penev|Sun Sep 1 15:33:43 2024 -0700|qoriq: use nvmem for MAC addresses
-0ba2e0868e|Peter Körner|Fri Oct 4 22:50:49 2024 +0200|rtl83xx: fix typo
-a9402a83e6|Boris Krasnovskiy|Sat Oct 12 20:01:57 2024 -0400|mvebu: fix sysupgrade failure
-d21720fa90|Boris Krasnovskiy|Sat Oct 12 19:57:16 2024 -0400|mvebu: fix default partition name
-5d962dc79b|Felix Fietkau|Sun Oct 6 17:43:23 2024 +0200|mac80211: fix letting drivers iterate over keys
-9cccc4d7c2|Jack Sun|Sat Oct 12 23:36:17 2024 +0800|tools/cmake: update to 3.30.5
+1bd6dda198|Stijn Tintel|Tue Oct 15 00:23:36 2024 +0300|qoriq: add missing kernel config symbol
+ac483e1c2a|Michael Pratt|Sat Oct 12 14:55:04 2024 -0400|tools/ninja: update to 1.12.1
+df303c7ef4|Michael Pratt|Fri Aug 2 04:02:58 2024 -0400|tools/ninja: use existing ninja to build ninja
+3efedda1da|Michael Pratt|Mon Jul 22 15:51:12 2024 -0400|tools/ninja: cleanup Makefile
+5338c8da6c|Robert Marko|Mon Oct 14 13:02:24 2024 +0200|mvebu: cortex-a9: add upgrade methode to nas1dual
 </details>
