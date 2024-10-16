@@ -2,12 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-102fcffa2d|Tianling Shen|Mon Oct 14 20:01:32 2024 +0800|Revert "qualcommax: drop stock layout for xiaomi ax3600 and redmi ax6"
-d097b8ed16|zxl hhyccc|Mon Oct 14 19:57:36 2024 +0800|ppp: Update `syncppp.c` header file
-a9ce8142cb|Tianling Shen|Mon Oct 14 13:24:09 2024 +0800|Merge Official Source
-2d350fded6|Stijn Tintel|Sun Oct 13 16:12:58 2024 +0300|xdp-tools: bump to 1.4.3
-36e67f7b62|Stijn Tintel|Sun Oct 13 20:21:44 2024 +0300|libbpf: bump to 1.4.6
-61175a0506|Stijn Tintel|Sun Oct 13 22:25:10 2024 +0300|qoriq: drop source-only flag
-553e8da067|Rosen Penev|Sun Sep 1 15:33:43 2024 -0700|qoriq: use nvmem for MAC addresses
-0ba2e0868e|Peter Körner|Fri Oct 4 22:50:49 2024 +0200|rtl83xx: fix typo
+9bd9e0a19a|Tianling Shen|Sat Oct 12 16:16:58 2024 +0800|sdk: bundle libraries for llvm toolchain
+8cdf691d8c|Tianling Shen|Tue Oct 15 19:28:03 2024 +0800|Merge Official Source
+0a2ed285e4|Stijn Tintel|Tue Oct 15 12:13:35 2024 +0300|qoriq: add squashfs to FEATURES
+506d0c421b|Felix Fietkau|Tue Oct 15 10:21:47 2024 +0200|kernel: fix mtk_eth_soc memory corruption issue on fq dma init
+1bd6dda198|Stijn Tintel|Tue Oct 15 00:23:36 2024 +0300|qoriq: add missing kernel config symbol
+ac483e1c2a|Michael Pratt|Sat Oct 12 14:55:04 2024 -0400|tools/ninja: update to 1.12.1
+df303c7ef4|Michael Pratt|Fri Aug 2 04:02:58 2024 -0400|tools/ninja: use existing ninja to build ninja
+3efedda1da|Michael Pratt|Mon Jul 22 15:51:12 2024 -0400|tools/ninja: cleanup Makefile
+5338c8da6c|Robert Marko|Mon Oct 14 13:02:24 2024 +0200|mvebu: cortex-a9: add upgrade methode to nas1dual
 </details>

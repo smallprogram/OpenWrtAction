@@ -2,9 +2,20 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1bd6dda198|Stijn Tintel|Tue Oct 15 00:23:36 2024 +0300|qoriq: add missing kernel config symbol
-ac483e1c2a|Michael Pratt|Sat Oct 12 14:55:04 2024 -0400|tools/ninja: update to 1.12.1
-df303c7ef4|Michael Pratt|Fri Aug 2 04:02:58 2024 -0400|tools/ninja: use existing ninja to build ninja
-3efedda1da|Michael Pratt|Mon Jul 22 15:51:12 2024 -0400|tools/ninja: cleanup Makefile
-5338c8da6c|Robert Marko|Mon Oct 14 13:02:24 2024 +0200|mvebu: cortex-a9: add upgrade methode to nas1dual
+92ca322dd1|Jonas Jelonek|Tue Oct 15 20:52:35 2024 +0200|uboot-mediatek: add noncached_set_region prototype to fix build
+7e51d6a4c8|Daniel Golle|Wed Oct 16 00:10:28 2024 +0100|mediatek: mt7622: add netdev rename preinit script
+e98987048a|Chukun Pan|Fri Sep 20 23:10:26 2024 +0800|mediatek: filogic: reorder alphabetically
+5fd4743d4c|Chukun Pan|Thu Sep 19 23:10:18 2024 +0800|mediatek: filogic: fix network config for mt7986b-rfb
+4d81f40d63|Daniel Golle|Tue Oct 15 21:15:19 2024 +0100|generic: fix kernel version and ordering of Aquantia backports
+3e6de5d77a|Daniel Golle|Mon Oct 7 15:33:21 2024 +0100|mediatek: use NVMEM framework on all Adtran devices
+b6d8297510|Daniel Golle|Sat Oct 5 18:22:20 2024 +0100|mediatek: mt7622: add Adtran SmartRG SDG-841t6 device
+175bd80349|Daniel Golle|Sat Oct 5 21:43:48 2024 +0100|mediatek: add driver for Adtran MFGINFO NVMEM layout
+330321421a|Daniel Golle|Fri Oct 4 14:04:25 2024 +0100|mediatek: mt7622: enable HWMON in kernel config
+3f3c27e22c|Daniel Golle|Sat Oct 5 22:21:17 2024 +0100|generic: net: phy: intel-way: add support for PHY LEDs
+5fd518b6e3|Daniel Golle|Wed Oct 2 00:35:07 2024 +0100|generic: net: phy: mxl-gpy: add support for PHY LEDs
+45bad8ba98|Daniel Golle|Sat Oct 5 22:19:43 2024 +0100|generic: phy: aquantia: correctly describe LED polarity
+8cc049cec2|Daniel Golle|Tue Oct 15 17:39:13 2024 +0100|generic: phy: aquantia: move accepted patches to backport-6.6
+ee03a2742b|Daniel Golle|Fri Oct 11 04:42:09 2024 +0100|generic: net: phy: be more conservative about MAC interface selection
+0a2ed285e4|Stijn Tintel|Tue Oct 15 12:13:35 2024 +0300|qoriq: add squashfs to FEATURES
+506d0c421b|Felix Fietkau|Tue Oct 15 10:21:47 2024 +0200|kernel: fix mtk_eth_soc memory corruption issue on fq dma init
 </details>

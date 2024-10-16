@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-148863ed8e|Paul Donald|Mon Oct 14 22:45:33 2024 +0200|luci-app-dnscrypt-proxy: Remove app
+09a1a58b13|Paul Donald|Tue Oct 15 17:43:23 2024 +0200|luci-app-coova-chilli: Convert to JS
+4afb477527|Paul Donald|Wed Oct 16 01:50:07 2024 +0200|luci-base: Minor spell fixes
+8265e370db|Paul Donald|Tue Oct 15 15:01:45 2024 +0200|luci-app-ahcp: Remove app
 </details>

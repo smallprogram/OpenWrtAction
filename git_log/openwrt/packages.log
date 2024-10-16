@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4d8a9a44c|Robert Marko|Mon Oct 14 20:28:20 2024 +0200|libmaxminddb: fixup lib and include dirs in pkg-config
-ad63c9cac|Lukas Voegl|Mon Oct 7 14:11:08 2024 +0200|libgudev: remove package
-cbbf61c16|Lukas Voegl|Mon Oct 7 14:10:58 2024 +0200|fwupd: Update to 2.0.0
-280a66ecb|S. Brusch|Sat Oct 12 11:22:01 2024 +0000|crowdsec-firewall-bouncer: updated nftables rules
-4549f122f|Wesley Gimenes|Sat Oct 12 23:35:37 2024 -0300|netbird: update to 0.30.1
+9e86e2280|Lehua Zhang|Fri Oct 11 14:35:09 2024 +0800|ddns-scripts: add ddns-scripts for huaweicloud
 </details>
