@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4f77bbc4a|coolsnowwolf|Sun Oct 13 23:19:35 2024 +0800|uboot-rockchip: refresh rk3399 devices config
+68e1f1606|coolsnowwolf|Wed Oct 2 23:08:06 2024 +0800|rockchip: sync kernel 6.x with upstream
+21bbc6fbe|coolsnowwolf|Wed Oct 16 23:10:43 2024 +0800|ipq807x: add support for Aliyun AP8220
+fd1b69424|aiamadeus|Tue Oct 8 21:16:25 2024 +0800|rockchip: 6.6: fixes rk3568 pcie msi issue
 </details>

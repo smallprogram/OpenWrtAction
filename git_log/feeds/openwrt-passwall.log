@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-d1cb3a9|Ariesly|Tue Oct 15 19:36:20 2024 +0800|luci: node_list _now_use dark background (#3441)
-</details>

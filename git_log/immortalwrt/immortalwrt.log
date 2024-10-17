@@ -2,13 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9bd9e0a19a|Tianling Shen|Sat Oct 12 16:16:58 2024 +0800|sdk: bundle libraries for llvm toolchain
-8cdf691d8c|Tianling Shen|Tue Oct 15 19:28:03 2024 +0800|Merge Official Source
-0a2ed285e4|Stijn Tintel|Tue Oct 15 12:13:35 2024 +0300|qoriq: add squashfs to FEATURES
-506d0c421b|Felix Fietkau|Tue Oct 15 10:21:47 2024 +0200|kernel: fix mtk_eth_soc memory corruption issue on fq dma init
-1bd6dda198|Stijn Tintel|Tue Oct 15 00:23:36 2024 +0300|qoriq: add missing kernel config symbol
-ac483e1c2a|Michael Pratt|Sat Oct 12 14:55:04 2024 -0400|tools/ninja: update to 1.12.1
-df303c7ef4|Michael Pratt|Fri Aug 2 04:02:58 2024 -0400|tools/ninja: use existing ninja to build ninja
-3efedda1da|Michael Pratt|Mon Jul 22 15:51:12 2024 -0400|tools/ninja: cleanup Makefile
-5338c8da6c|Robert Marko|Mon Oct 14 13:02:24 2024 +0200|mvebu: cortex-a9: add upgrade methode to nas1dual
+1477aaf4db|Tianling Shen|Wed Oct 16 16:43:43 2024 +0800|mediatek: increase phy assert time for openembed som7981
 </details>

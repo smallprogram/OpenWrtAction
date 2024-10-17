@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9e86e2280|Lehua Zhang|Fri Oct 11 14:35:09 2024 +0800|ddns-scripts: add ddns-scripts for huaweicloud
+f7cdf7dac|Koen Vandeputte|Wed Oct 2 16:25:12 2024 +0200|gst1-plugins-bad: add support for srt
+963c52821|Koen Vandeputte|Wed Oct 2 16:22:17 2024 +0200|libs/srt: add new package v1.5.3
+0fd7e2c2d|Peter van Dijk|Thu Oct 3 11:36:22 2024 +0200|pdns: update to 4.9.2
 </details>
