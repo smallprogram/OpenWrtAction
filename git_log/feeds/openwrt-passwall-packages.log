@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1f0c1b3|github-actions[bot]|Wed Oct 16 23:46:53 2024 +0800|xray-core: update to 24.10.16 (#298)
-bc40fce|github-actions[bot]|Wed Oct 16 23:46:39 2024 +0800|v2ray-geoip: update to 202410100052 (#297)
-f8ce055|github-actions[bot]|Wed Oct 16 23:46:27 2024 +0800|v2ray-geosite: update to 20241013063848 (#299)
+d047a60|lwb1978|Fri Oct 18 00:39:41 2024 +0800|naiveproxy: update to 130.0.6723.40-2
+6192289|github-actions[bot]|Thu Oct 17 21:16:59 2024 +0800|sing-box: update to 1.10.1 (#300)
 </details>

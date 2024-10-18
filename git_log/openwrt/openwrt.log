@@ -2,11 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a475171e07|INAGAKI Hiroshi|Mon Oct 14 00:31:43 2024 +0900|uboot-ath79: update to U-Boot v2024.10
-84e47e9cc7|Chukun Pan|Thu Oct 10 23:10:28 2024 +0800|mac80211: realtek: rtw89: add RTL8922AE support
-7ae883c29d|Chukun Pan|Wed Oct 9 23:10:26 2024 +0800|linux-firmware: update Realtek RTW89 firmware
-8191c8980f|Andre Heider|Mon Jan 9 16:38:05 2023 +0100|prereq-build: limit python distutils check to <v3.12
-bf059f7108|Paul Spooren|Sat Aug 17 16:23:54 2024 +0200|prereq-build: add Python 3.12 support
-f20893a6bc|Robert Marko|Wed Oct 16 11:14:54 2024 +0200|opkg: update to Git HEAD (2024-10-16)
-74238413b1|Felix Fietkau|Wed Oct 16 09:55:18 2024 +0200|ramips: disable CONFIG_LIST_HARDENED on MT7620
+caf5caae44|Robert Marko|Thu Oct 17 18:37:47 2024 +0200|lantiq: refresh patches
+1d98363bd2|Robert Marko|Thu Oct 17 18:37:27 2024 +0200|realtek: refresh patches
+494349f229|Jack Sun|Thu Oct 17 19:37:38 2024 +0800|package: busybox: update download link
+5004f3780d|Hannu Nyman|Wed Oct 16 22:03:34 2024 +0300|base-files: Increase failsafe trigger wait time from 2 to 4 sec
+172ccf7381|Robert Marko|Thu Oct 17 14:27:04 2024 +0200|ath11k-firmware: update IPQ8074 and QCN9074 to 2.9.0.1-02146
+abda39d86d|Daniel Golle|Thu Oct 17 13:33:18 2024 +0100|generic: import and move accepted RealTek PHY patches
+e2f64ce592|David Bauer|Wed Nov 22 02:45:13 2023 +0100|mpc85xx: convert Watchguard T10 mac-assignment to NVMEM
+0506dd393c|Rosen Penev|Wed Oct 16 15:31:20 2024 -0700|mpc85xx: p1010: fix NAND devices
 </details>

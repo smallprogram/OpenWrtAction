@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-46fb56000f|Eric Fahlgren|Wed Oct 16 09:14:23 2024 -0700|luci-app-attendedsysupgrade: update status keys and messages
-773fad2d89|Hosted Weblate|Wed Oct 16 21:05:12 2024 +0200|Translated using Weblate (Swedish)
-bbb08197c5|Ramon Van Gorkom|Sat Oct 12 17:32:20 2024 +0200|luci-app-tinyproxy: Translate to JS
+82e5c88840|Paul Donald|Fri Oct 18 04:54:58 2024 +0200|luci-app-dcwapd: Convert to JS
+5c6b08cf89|Daniel Nilsson|Tue Oct 8 20:12:28 2024 +0200|luci-app-squid: convert to JavaScript
+ade3606800|Paul Donald|Thu Oct 17 05:01:57 2024 +0200|luci-base: space -> tab
 </details>
