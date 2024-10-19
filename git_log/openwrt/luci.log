@@ -1,8 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-82e5c88840|Paul Donald|Fri Oct 18 04:54:58 2024 +0200|luci-app-dcwapd: Convert to JS
-5c6b08cf89|Daniel Nilsson|Tue Oct 8 20:12:28 2024 +0200|luci-app-squid: convert to JavaScript
-ade3606800|Paul Donald|Thu Oct 17 05:01:57 2024 +0200|luci-base: space -> tab
-</details>

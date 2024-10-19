@@ -2,12 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-caf5caae44|Robert Marko|Thu Oct 17 18:37:47 2024 +0200|lantiq: refresh patches
-1d98363bd2|Robert Marko|Thu Oct 17 18:37:27 2024 +0200|realtek: refresh patches
-494349f229|Jack Sun|Thu Oct 17 19:37:38 2024 +0800|package: busybox: update download link
-5004f3780d|Hannu Nyman|Wed Oct 16 22:03:34 2024 +0300|base-files: Increase failsafe trigger wait time from 2 to 4 sec
-172ccf7381|Robert Marko|Thu Oct 17 14:27:04 2024 +0200|ath11k-firmware: update IPQ8074 and QCN9074 to 2.9.0.1-02146
-abda39d86d|Daniel Golle|Thu Oct 17 13:33:18 2024 +0100|generic: import and move accepted RealTek PHY patches
-e2f64ce592|David Bauer|Wed Nov 22 02:45:13 2023 +0100|mpc85xx: convert Watchguard T10 mac-assignment to NVMEM
-0506dd393c|Rosen Penev|Wed Oct 16 15:31:20 2024 -0700|mpc85xx: p1010: fix NAND devices
+dbc2923cbe|Daniel Golle|Fri Oct 18 12:38:21 2024 +0100|mediatek: filogic: convert Acer Predator W6 to use NVMEM framework
+f9f2dd1d93|Felix Fietkau|Fri Oct 18 08:03:21 2024 +0200|firewall: update to Git HEAD (2024-10-18)
 </details>

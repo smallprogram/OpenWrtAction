@@ -2,29 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e2ebf13c3|coolsnowwolf|Thu Oct 17 21:24:12 2024 +0800|Version update to R24.10.24
-3f4f0ccac|coolsnowwolf|Thu Oct 17 19:26:28 2024 +0800|autocore: implement tempinfo display for luci js
-b7cf62b3a|coolsnowwolf|Thu Oct 17 19:05:31 2024 +0800|base-files: improve Luci2 js support
-8f378b329|Hauke Mehrtens|Tue Jun 22 00:45:20 2021 +0200|base-files: failsafe: Remove the VLAN modifier from interface name
-05979aadf|Arınç ÜNAL|Fri May 12 01:50:43 2023 +0200|base-files: add protocol ncm support for ucidef_set_interface()
-2757124d3|coolsnowwolf|Thu Oct 17 17:12:14 2024 +0800|procd: move service command to procd
-9f40de14c|coolsnowwolf|Thu Oct 17 17:04:21 2024 +0800|base-files: simplify restorecon logic
-8527c7528|coolsnowwolf|Thu Oct 17 16:51:29 2024 +0800|base-files: ipcalc.sh: check for params before calculating start/end
-864e34446|coolsnowwolf|Thu Oct 17 16:46:31 2024 +0800|base-files: stage2: add 'tail' to sysupgrade environment
-1175c829e|coolsnowwolf|Thu Oct 17 16:34:38 2024 +0800|base-files: rework mtd_get_mac_text()
-1627fd2c7|Luiz Angelo Daros de Luca|Tue Jun 22 00:45:22 2021 +0200|base-files: bring up vlan interface too
-508dd96b8|Mark Baker|Wed Feb 1 20:30:57 2023 -0500|base-files: add support for retrieving IPv6 assignments
-1c2a7462d|Karel Kočí|Mon Jun 7 19:25:06 2021 +0200|base-files: fix enabled for services with only STOP
-bd8d34909|Florian Eckert|Tue Jun 15 08:48:18 2021 +0200|base-files: fix service_running check
-b498e0ac3|Florian Eckert|Wed Dec 22 08:59:43 2021 +0100|base-files: add wrapper for procd service list command
-98b97c58f|Alexey Smirnov|Tue Jan 4 10:11:51 2022 +0300|base-files: add support for heartbeat led trigger
-8f7e660d4|Olliver Schinagl|Sun Jul 31 10:11:58 2022 +0200|base-files: LED/trigger/heartbeat: Add support for inversion
-cf0d45e53|Olliver Schinagl|Sun Jul 31 10:19:09 2022 +0200|base-files: LED/gpio: Ensure inverted is read as a boolean
-a4c100df5|Mark Mentovai|Mon Jun 6 00:59:14 2022 -0400|failsafe: run on all consoles listed in /proc/cmdline
-75663fdd7|Matthias Schiffer|Thu Aug 29 20:24:02 2024 +0200|base-files: fix merge of passwd/shadow/group lines with trailing colons
-a4b597b22|Shiji Yang|Tue Oct 31 18:47:49 2023 +0800|base-files: support parse DT LED color and function
-1172e4c4b|Philip Prindeville|Wed May 5 17:43:55 2021 -0600|busybox: preserve crontabs
-da4a16506|Tony Ambardar|Fri May 26 01:41:18 2023 -0700|base-files: enable BPF JIT kallsyms by default
-1af9ce777|David Bauer|Sat May 14 01:26:02 2022 +0200|base-files: allow ignoring minor compat-version check
-f6243f2bb|Andre Heider|Wed Nov 2 08:50:20 2022 +0100|base-files: add 'isup' to the wifi script
+eaa043c4c|coolsnowwolf|Fri Oct 18 17:33:52 2024 +0800|mediatek: Add support for GL.iNet X3000 (Spitz AX) and XE3000 (Puli AX)
+b9910de8d|喵二|Fri Oct 18 16:44:42 2024 +0800|luci-app-leigod-acc: add scheduled pause (#12404)
+28e2e4d04|coolsnowwolf|Fri Oct 18 15:10:00 2024 +0800|autocore: fix tempinfo path
 </details>

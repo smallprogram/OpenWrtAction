@@ -2,27 +2,18 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2f4a422673|Tianling Shen|Thu Oct 17 16:04:32 2024 +0800|rockchip: enable uhs sdr50 support for sdmmc
-7fe8ca3317|Tianling Shen|Thu Oct 17 14:09:24 2024 +0800|Merge Official Source
-a475171e07|INAGAKI Hiroshi|Mon Oct 14 00:31:43 2024 +0900|uboot-ath79: update to U-Boot v2024.10
-84e47e9cc7|Chukun Pan|Thu Oct 10 23:10:28 2024 +0800|mac80211: realtek: rtw89: add RTL8922AE support
-7ae883c29d|Chukun Pan|Wed Oct 9 23:10:26 2024 +0800|linux-firmware: update Realtek RTW89 firmware
-8191c8980f|Andre Heider|Mon Jan 9 16:38:05 2023 +0100|prereq-build: limit python distutils check to <v3.12
-bf059f7108|Paul Spooren|Sat Aug 17 16:23:54 2024 +0200|prereq-build: add Python 3.12 support
-f20893a6bc|Robert Marko|Wed Oct 16 11:14:54 2024 +0200|opkg: update to Git HEAD (2024-10-16)
-74238413b1|Felix Fietkau|Wed Oct 16 09:55:18 2024 +0200|ramips: disable CONFIG_LIST_HARDENED on MT7620
-92ca322dd1|Jonas Jelonek|Tue Oct 15 20:52:35 2024 +0200|uboot-mediatek: add noncached_set_region prototype to fix build
-7e51d6a4c8|Daniel Golle|Wed Oct 16 00:10:28 2024 +0100|mediatek: mt7622: add netdev rename preinit script
-e98987048a|Chukun Pan|Fri Sep 20 23:10:26 2024 +0800|mediatek: filogic: reorder alphabetically
-5fd4743d4c|Chukun Pan|Thu Sep 19 23:10:18 2024 +0800|mediatek: filogic: fix network config for mt7986b-rfb
-4d81f40d63|Daniel Golle|Tue Oct 15 21:15:19 2024 +0100|generic: fix kernel version and ordering of Aquantia backports
-3e6de5d77a|Daniel Golle|Mon Oct 7 15:33:21 2024 +0100|mediatek: use NVMEM framework on all Adtran devices
-b6d8297510|Daniel Golle|Sat Oct 5 18:22:20 2024 +0100|mediatek: mt7622: add Adtran SmartRG SDG-841t6 device
-175bd80349|Daniel Golle|Sat Oct 5 21:43:48 2024 +0100|mediatek: add driver for Adtran MFGINFO NVMEM layout
-330321421a|Daniel Golle|Fri Oct 4 14:04:25 2024 +0100|mediatek: mt7622: enable HWMON in kernel config
-3f3c27e22c|Daniel Golle|Sat Oct 5 22:21:17 2024 +0100|generic: net: phy: intel-way: add support for PHY LEDs
-5fd518b6e3|Daniel Golle|Wed Oct 2 00:35:07 2024 +0100|generic: net: phy: mxl-gpy: add support for PHY LEDs
-45bad8ba98|Daniel Golle|Sat Oct 5 22:19:43 2024 +0100|generic: phy: aquantia: correctly describe LED polarity
-8cc049cec2|Daniel Golle|Tue Oct 15 17:39:13 2024 +0100|generic: phy: aquantia: move accepted patches to backport-6.6
-ee03a2742b|Daniel Golle|Fri Oct 11 04:42:09 2024 +0100|generic: net: phy: be more conservative about MAC interface selection
+bb8da3b9bf|aiamadeus|Fri Oct 18 19:24:03 2024 +0800|rockchip: fixes rk3568 pcie msi issue
+16c3248384|Tianling Shen|Fri Oct 18 19:21:16 2024 +0800|rockchip: backport latest rk3588 clk updates
+e8c765190d|Tianling Shen|Fri Oct 18 15:43:00 2024 +0800|mediatek: fix gbe led gpios for openembed som7981
+02d897efeb|Tianling Shen|Fri Oct 18 15:18:34 2024 +0800|Merge Official Source
+737421d51e|Tianling Shen|Fri Oct 18 14:55:25 2024 +0800|mediatek: fix led register for openembed som7981
+f9f2dd1d93|Felix Fietkau|Fri Oct 18 08:03:21 2024 +0200|firewall: update to Git HEAD (2024-10-18)
+caf5caae44|Robert Marko|Thu Oct 17 18:37:47 2024 +0200|lantiq: refresh patches
+1d98363bd2|Robert Marko|Thu Oct 17 18:37:27 2024 +0200|realtek: refresh patches
+494349f229|Jack Sun|Thu Oct 17 19:37:38 2024 +0800|package: busybox: update download link
+5004f3780d|Hannu Nyman|Wed Oct 16 22:03:34 2024 +0300|base-files: Increase failsafe trigger wait time from 2 to 4 sec
+172ccf7381|Robert Marko|Thu Oct 17 14:27:04 2024 +0200|ath11k-firmware: update IPQ8074 and QCN9074 to 2.9.0.1-02146
+abda39d86d|Daniel Golle|Thu Oct 17 13:33:18 2024 +0100|generic: import and move accepted RealTek PHY patches
+e2f64ce592|David Bauer|Wed Nov 22 02:45:13 2023 +0100|mpc85xx: convert Watchguard T10 mac-assignment to NVMEM
+0506dd393c|Rosen Penev|Wed Oct 16 15:31:20 2024 -0700|mpc85xx: p1010: fix NAND devices
 </details>
