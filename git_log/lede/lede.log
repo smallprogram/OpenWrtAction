@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-eaa043c4c|coolsnowwolf|Fri Oct 18 17:33:52 2024 +0800|mediatek: Add support for GL.iNet X3000 (Spitz AX) and XE3000 (Puli AX)
-b9910de8d|喵二|Fri Oct 18 16:44:42 2024 +0800|luci-app-leigod-acc: add scheduled pause (#12404)
-28e2e4d04|coolsnowwolf|Fri Oct 18 15:10:00 2024 +0800|autocore: fix tempinfo path
+b3eded6f1|Daniel Golle|Tue Oct 15 17:39:13 2024 +0100|generic: phy: aquantia: move accepted patches to backport-6.6
+151296d52|Daniel Golle|Wed Aug 21 23:46:10 2024 +0100|generic: phy: aquantia: add pending patch to force MDI pair order
 </details>

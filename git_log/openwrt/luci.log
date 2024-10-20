@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ec585c2a80|Mathieu|Sat Oct 19 19:08:19 2024 +0200|luci-app-watchcat: Add missing leading <i> in watchcat.js
+c10daa3321|kumy|Sat Oct 19 18:30:44 2024 +0200|luci-app-watchcat: Typo in watchcat.js
+</details>

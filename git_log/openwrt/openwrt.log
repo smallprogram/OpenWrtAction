@@ -2,6 +2,37 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dbc2923cbe|Daniel Golle|Fri Oct 18 12:38:21 2024 +0100|mediatek: filogic: convert Acer Predator W6 to use NVMEM framework
-f9f2dd1d93|Felix Fietkau|Fri Oct 18 08:03:21 2024 +0200|firewall: update to Git HEAD (2024-10-18)
+19d84c60f8|Rosen Penev|Thu Sep 26 17:35:34 2024 -0700|ramips: modernize snd-mt7620 driver
+e659298a84|Hauke Mehrtens|Sat Oct 19 23:51:38 2024 +0200|firmware-utils: update to Git HEAD (2024-10-16)
+f33fd7d8be|Hauke Mehrtens|Sat Oct 19 23:50:38 2024 +0200|tools: firmware-utils: update to Git HEAD (2024-10-16)
+be2be0f32e|Rosen Penev|Mon Nov 27 11:40:48 2023 -0800|ath79: aruba,ap115: use nvmem
+94d775d01a|Shiji Yang|Thu Oct 10 18:29:06 2024 +0800|ipq40xx: dts: disable qpic_bam for EMMC and SPI Flash devices
+78322915bd|Priit Laes|Fri Oct 11 10:15:22 2024 +0300|ramips: mt7621: mikrotik rb760igs: Include "hEX S" in model name
+96fa9ee3da|Rosen Penev|Fri Sep 27 17:20:37 2024 -0700|realtek: use more devm
+e8d8cadd24|Stefan Kalscheuer|Sat Oct 12 11:08:50 2024 +0200|uboot-mvebu: update to version 2024.10
+f050c30d05|Tianling Shen|Sat Oct 12 16:16:58 2024 +0800|sdk: bundle libraries for llvm toolchain
+44b1993f76|Rodrigo B. de Sousa Martins|Wed Sep 25 15:35:20 2024 -0300|iptables: backport "nft: track each register individually" from 1.9
+4cca92af37|Rosen Penev|Thu Sep 26 17:22:29 2024 -0700|ramips: cleanup ralink SPI driver
+a6252a6dfc|Rosen Penev|Tue Oct 8 16:39:07 2024 -0700|mediatek: leds-smartrg: handle disabled LEDs
+0dfe1e876a|Rosen Penev|Tue Oct 8 16:37:08 2024 -0700|mediatek: leds-smartrg: use devm_mutex_init
+e52c57bb1b|Til Kaiser|Sun Sep 29 16:56:26 2024 +0200|x86: add Gowin 1U Rack Mount Router Server
+503596b8ce|Til Kaiser|Sun Sep 29 16:55:57 2024 +0200|base-files: add ucidef_set_network_device_path_port function
+0a47d518df|Til Kaiser|Sun Sep 29 16:54:54 2024 +0200|kernel: modules: add boot flag to igc, mlx4, and mlx5 drivers
+2d6e433e1d|Rosen Penev|Fri May 10 15:55:25 2024 -0700|mwlwifi: fix compilation with 6.6 and 64-bit
+cba40405f5|INAGAKI Hiroshi|Sat Jun 29 21:57:23 2024 +0900|ath79: add support for NEC Aterm WG1800HP2
+de6fa88f05|INAGAKI Hiroshi|Sat Jun 29 21:53:42 2024 +0900|ath79: add support for NEC Aterm WG1800HP
+2aed68b75f|INAGAKI Hiroshi|Sun Mar 3 02:48:18 2019 +0900|ath79: add support for NEC Aterm WG1400HP
+0e8af9f5a7|INAGAKI Hiroshi|Fri Jun 28 00:53:31 2024 +0900|ath79: commonize SGMII calibration functions of QCA955x in lzma-loader
+bffa206fd3|INAGAKI Hiroshi|Thu Jun 27 15:51:34 2024 +0900|ath79: add missing usb-phy-analog reset to usb phys for QCA955x
+1043aa8ac2|INAGAKI Hiroshi|Sat Aug 31 17:59:41 2024 +0900|uboot-ath79: refresh patches
+6924269558|INAGAKI Hiroshi|Sat Aug 31 17:46:54 2024 +0900|uboot-ath79: add support for NEC Aterm series based on QCA9558
+91e57a42e2|INAGAKI Hiroshi|Sat Aug 31 17:42:53 2024 +0900|uboot-ath79: add initial support for QCA955x SoCs
+7f73db6902|Stefan Lippers-Hollmann|Thu Oct 17 17:37:02 2024 +0200|mac80211: realtek: rtlwifi: add RTL8192DU support
+0012bff77b|Stefan Lippers-Hollmann|Thu Oct 17 17:31:58 2024 +0200|linux-firmware: add firmware for Realtek RTL8192DU
+807db521db|Stefan Lippers-Hollmann|Thu Oct 17 17:30:47 2024 +0200|linux-firmware: Update to version 20241017
+0bed8fd50c|Rosen Penev|Sun Jul 14 22:59:08 2024 -0700|ath79: apply qca,tx-gain-buffalo
+e80b596c58|Samuele Longhi|Sat Oct 12 18:20:49 2024 +0200|ramips: mt7621: add support for Gemtek WVRTM-127ACN and WVRTM-130ACN
+51bbc8114b|John Audia|Thu Oct 17 19:46:24 2024 -0400|kernel: bump 6.6 to 6.6.57
+3c76bed6a9|Hannu Nyman|Thu Oct 17 20:33:36 2024 +0300|base-files: increase default system log size to 128 kB
+f4858a490e|Roger Pueyo Centelles|Fri Nov 18 01:18:09 2022 +0100|ath79: Upstream b53 DSA driver for Ubiquiti EdgeSwitch 8XP
 </details>
