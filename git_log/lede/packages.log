@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fff92666|coolsnowwolf|Sat Oct 19 18:41:33 2024 +0800|daed: add package
-d1705362|coolsnowwolf|Sat Oct 19 18:29:48 2024 +0800|minieap: add package
-741eb437|coolsnowwolf|Sat Oct 19 18:22:59 2024 +0800|rust: update to 1.80.1
+a504021e|coolsnowwolf|Sun Oct 20 13:50:19 2024 +0800|xray-core: revert to 1.8.24
 </details>

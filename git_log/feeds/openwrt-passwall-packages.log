@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a2ef45b|lwb1978|Sun Oct 20 08:30:56 2024 +0800|naiveproxy: update to 130.0.6723.40-4
+58e817d|Gzxhwq|Sun Oct 20 15:32:54 2024 +0800|sing-box: add dependency for auto_redirect (#301)
+14a0ca6|lwb1978|Sun Oct 20 15:26:51 2024 +0800|naiveproxy: update to 130.0.6723.40-5
 </details>

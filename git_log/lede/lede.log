@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b3eded6f1|Daniel Golle|Tue Oct 15 17:39:13 2024 +0100|generic: phy: aquantia: move accepted patches to backport-6.6
-151296d52|Daniel Golle|Wed Aug 21 23:46:10 2024 +0100|generic: phy: aquantia: add pending patch to force MDI pair order
+adec0b5c1|coolsnowwolf|Mon Oct 21 10:30:51 2024 +0800|qualcommax: add compatibility devices model for JDC AX1800 Pro / AX6600
+cb77f7a85|coolsnowwolf|Mon Oct 21 10:14:24 2024 +0800|ipq-wifi: update to latest version 2024-10-08
+e325c0a2d|Beginner|Sun Oct 20 18:20:19 2024 +0800|kernel: bump 6.6 to 6.6.57 (#12556)
+f1b0e6c52|coolsnowwolf|Sun Oct 20 15:12:48 2024 +0800|qualcommax: net: QCA NSS MCS support
 </details>
