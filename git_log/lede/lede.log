@@ -2,8 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-adec0b5c1|coolsnowwolf|Mon Oct 21 10:30:51 2024 +0800|qualcommax: add compatibility devices model for JDC AX1800 Pro / AX6600
-cb77f7a85|coolsnowwolf|Mon Oct 21 10:14:24 2024 +0800|ipq-wifi: update to latest version 2024-10-08
-e325c0a2d|Beginner|Sun Oct 20 18:20:19 2024 +0800|kernel: bump 6.6 to 6.6.57 (#12556)
-f1b0e6c52|coolsnowwolf|Sun Oct 20 15:12:48 2024 +0800|qualcommax: net: QCA NSS MCS support
+2d1c8ab73|coolsnowwolf|Mon Oct 21 23:38:32 2024 +0800|rockchip: add FriendlyARM NanoPC T6 support
+129619e5f|coolsnowwolf|Mon Oct 21 23:37:45 2024 +0800|uboot: add support for nanopc t6
+6cc47bc65|coolsnowwolf|Mon Oct 21 23:24:16 2024 +0800|rockchip: add FriendlyARM NanoPi R6C support
+1b1c294cb|coolsnowwolf|Mon Oct 21 23:21:11 2024 +0800|uboot-rockchip: add FriendlyARM NanoPi R6c support
+d265b0612|coolsnowwolf|Mon Oct 21 23:19:28 2024 +0800|rockchip: add Radxa ROCK 5B support
+40156b8aa|coolsnowwolf|Mon Oct 21 23:15:31 2024 +0800|uboot-rockchip: add ROCK 5B support
+c9c3f69e8|coolsnowwolf|Mon Oct 21 18:06:47 2024 +0800|rockchip: add FriendlyARM NanoPi R6S support
+9b59cbca5|coolsnowwolf|Mon Oct 21 18:03:52 2024 +0800|uboot-rockchip: add nanopi r6s rk3588s board support
+e0fd42d84|coolsnowwolf|Mon Oct 21 13:40:37 2024 +0800|qualcommax: add autocore-arm for npu usage info display
+960c6b54b|coolsnowwolf|Mon Oct 21 13:35:08 2024 +0800|autocore: add getCPUUsage for ubus reading
 </details>

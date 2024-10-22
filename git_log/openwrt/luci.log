@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cbdbdd579d|Hosted Weblate|Sun Oct 20 21:09:40 2024 +0200|Translated using Weblate (Lithuanian)
+24bbea6825|Florian Eckert|Mon Oct 21 08:26:12 2024 +0200|Merge pull request #7331 from robimarko/modemmanager-eps
+50b67f8a00|Damir Samardzic|Thu Oct 17 22:22:18 2024 +0200|luci-proto-modemmanager: add initial EPS bearer support
 </details>

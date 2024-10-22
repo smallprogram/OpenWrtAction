@@ -1,0 +1,10 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+e2e3a5faf|Christian Marangi|Thu Oct 3 17:10:24 2024 +0200|nginx: Add support for NJS module
+159b6f09f|Christian Marangi|Thu Oct 3 23:33:34 2024 +0200|nginx: add patch to make libexslt optional
+782f05605|Christian Marangi|Thu Oct 3 17:06:32 2024 +0200|nginx: disable additional entry in feature test
+11a5d0bd9|Christian Marangi|Thu Oct 3 23:30:47 2024 +0200|libxslt: install header for libxlt by default
+d02650250|Martin Schiller|Thu Oct 17 10:36:07 2024 +0200|rp-pppoe: update to 4.0
+</details>
