@@ -2,20 +2,22 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e1d6013935|Ivan Pavlov|Tue Oct 8 23:41:27 2024 +0300|iptables: update to 1.8.10
-8f1332d275|Rosen Penev|Mon Oct 14 14:06:57 2024 -0700|kernel: move CONFIG_DRM_OFDRM to generic
-9bc0517b78|Rosen Penev|Sat Oct 19 16:04:26 2024 -0700|kernel: gpio-cascade: use gpiochip_get_data
-19bd5436c7|Rosen Penev|Thu Sep 26 16:36:35 2024 -0700|treewide: remove platform_get_resoruce
-7ad9988287|Matthew Hagan|Mon Sep 6 22:42:35 2021 +0000|bcm53xx: add support for Cisco Meraki MX64/MX65
-d2ffd43171|Lech Perczak|Wed Oct 2 15:10:48 2024 +0200|bcm53xx: enable CONFIG_NET_DSA_QCA8K
-a69eaf8079|Lech Perczak|Wed Oct 2 16:23:13 2024 +0200|bcm53xx: enable CONFIG_I2C_BCM_IPROC
-64424c2427|Lech Perczak|Wed Oct 2 15:07:47 2024 +0200|bcm53xx: enable CONFIG_EEPROM_AT24
-8d7c08f884|Lech Perczak|Mon Oct 21 00:58:21 2024 +0200|bcm53xx: meraki: backport NVMEM layout syntax patch
-3bd129f8e0|Matthew Hagan|Sun Sep 5 22:25:07 2021 +0000|bcm53xx: MR26,MR32: use REQUIRE_IMAGE_METADATA
-caf29ee97b|Rosen Penev|Wed Oct 2 14:59:04 2024 -0700|apm821xx: nand: add NVMEM-on-UBI support
-7754924c9e|Rosen Penev|Sat Oct 5 15:25:08 2024 -0700|apm821xx: remove ethernet0 node
-8b42827b4c|Rosen Penev|Sat Oct 5 12:05:41 2024 -0700|apm821xx: fix volume/volname
-0dfb7529b7|Rosen Penev|Wed Oct 2 14:47:08 2024 -0700|apm821xx: nand: add missing symbols
-684a4f7e94|Rosen Penev|Wed Oct 2 14:39:56 2024 -0700|apm821xx: nand: sort config-default
-eb5f0e3507|Rosen Penev|Wed Oct 2 14:42:43 2024 -0700|apm821xx: run make kernel_oldconfig
+b6bbc76c0b|Christian Marangi|Wed Oct 23 00:10:02 2024 +0200|include/package-pack: set missing Description on .apk creation
+1306885968|Hauke Mehrtens|Sun Oct 20 15:31:23 2024 +0200|kernel: Reorder config files
+d0abb26f40|Hauke Mehrtens|Sun Oct 20 15:38:57 2024 +0200|mediatek: Remove double CONFIG_HARDEN_BRANCH_PREDICTOR
+b8816343fb|Hauke Mehrtens|Tue Oct 22 00:02:28 2024 +0200|scripts: Add script to reorder kernel config-* files
+7e542f6a77|Felix Fietkau|Tue Oct 22 16:56:19 2024 +0200|hostapd: fix build error with SAE disabled
+eeb59f87a1|Christian Marangi|Tue Oct 22 16:10:05 2024 +0200|ppp: install pkg-config file on InstallDev
+04fb05914e|Felix Fietkau|Wed Jun 12 15:06:05 2024 +0200|wifi-scripts: add multi-radio config support
+cb60bee04d|Felix Fietkau|Wed Oct 2 19:56:52 2024 +0200|iwinfo: add multi-radio support
+5c1ee08e2d|Felix Fietkau|Sat Jun 29 13:03:30 2024 +0200|iw: add multi-radio support
+5db27664bc|Felix Fietkau|Wed Jul 17 16:11:30 2024 +0200|ucode: add support for nl80211 vif radio mask
+87033c3a0b|Felix Fietkau|Thu Sep 26 14:15:14 2024 +0200|mac80211: improve single-wiphy multi-radio support
+b2a2c28617|Felix Fietkau|Thu May 23 20:16:40 2024 +0200|hostapd: add support for authenticating with multiple PSKs via ubus helper
+9272728e35|Christian Marangi|Tue Oct 22 13:53:51 2024 +0200|imagebuilder: also remove vmlinuz initramfs image files
+2923935093|Felix Fietkau|Tue Oct 22 13:15:48 2024 +0200|uclient: update to Git HEAD (2024-10-22)
+ed484caa03|Felix Fietkau|Tue Oct 22 10:59:55 2024 +0200|hostapd: add support for querying bss config parameters via ubus
+efb8764a69|Piotr Dymacz|Mon Apr 22 11:34:27 2024 +0200|uboot-envtools: ath79: add support for ALFA Network WiFi CampPro Nano Duo
+861a9dac68|Piotr Dymacz|Mon Apr 22 11:01:52 2024 +0200|ath79: add support for ALFA Network WiFi CampPro Nano Duo
+3098b4bf07|Markus Stockhausen|Tue Oct 15 08:57:41 2024 -0400|scripts: linksys-image: add NAND devices
 </details>

@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-14690b2|zhusir|Tue Oct 22 01:37:34 2024 +0800|Revert "sing-box: add dependency for auto_redirect (#301)" (#304)
-</details>

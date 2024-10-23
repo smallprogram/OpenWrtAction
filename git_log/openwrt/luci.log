@@ -2,6 +2,18 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-24bbea6825|Florian Eckert|Mon Oct 21 08:26:12 2024 +0200|Merge pull request #7331 from robimarko/modemmanager-eps
-50b67f8a00|Damir Samardzic|Thu Oct 17 22:22:18 2024 +0200|luci-proto-modemmanager: add initial EPS bearer support
+e662dc8151|Christian Marangi|Tue Feb 22 14:54:42 2022 +0100|luci-mod-network: add support for wireless no outdoor restriction
+46e6b9ba44|Arınç ÜNAL|Tue Oct 11 22:17:34 2022 +0300|luci-app-firewall: make a dropdown list for flow offloading options
+83a147ea79|Paul Donald|Wed Oct 23 05:10:59 2024 +0200|luci-mod-network: use RichListValue widget from form.js
+801de3bede|Paul Donald|Wed Oct 23 04:51:38 2024 +0200|luci-base: implement RichListValue widget in form
+052d2f0b97|Paul Donald|Wed Oct 23 03:02:47 2024 +0200|luci-base: i18n refresh
+f2e14b8946|Manuel Giganto|Mon Oct 12 15:35:08 2020 +0000|luci-mod-network: add ppsk option (support for private psk)
+5b706f52d7|Florian Eckert|Fri Nov 13 15:49:01 2020 +0100|luci-base: show default forwarding target in general firewall settings
+4437b6bbfd|Paul Donald|Wed Oct 23 01:17:16 2024 +0200|luci-mod-network: Add cache-rr to cache responses by record type name
+4254b02e79|Paul Donald|Wed Oct 23 01:33:21 2024 +0200|luci-mod-network: Add filter-rr to filter responses by record type name
+f88f9034f2|Paul Donald|Sat Dec 23 18:27:59 2023 +0000|luci-mod-network: Add DNS-RR resource record tab to DHCP
+af48efd4f8|Paul Donald|Wed Oct 23 01:01:50 2024 +0200|luci-base: add 'create' boolean to MultiValue form widget
+1f32729428|Paul Donald|Tue Oct 22 22:33:00 2024 +0200|luci-base: allow terminal '.' in hostname checks
+361bee37af|Paul Donald|Tue Oct 22 14:00:37 2024 +0200|luci-app-dcwapd: Fix menu JSON bug
+dc44c7a68e|Paul Donald|Mon Oct 21 23:33:36 2024 +0200|build: co-opt i18n-init.sh to kick start an empty app folder
 </details>
