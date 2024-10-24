@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+aae954c|msdos03|Thu Oct 24 00:06:13 2024 +0800|chinadns-ng: fix arm and i386 and mipsel architecture detection (#302)
+</details>
