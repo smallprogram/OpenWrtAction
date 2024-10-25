@@ -58,3 +58,4 @@ jobs:
         run: |
           echo "Job1 ${{ needs.job1.result }}"
           echo "Job2 ${{ needs.job2.result }}"
+          echo "Job2 ${{ needs.job22.result }}"
