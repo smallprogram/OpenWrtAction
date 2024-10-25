@@ -771,14 +771,6 @@ jobs:
           tag_name: ${{ needs.job_init.outputs.output_release_tag }}
           body_path: release.txt
 
-      - name: Trigger build
-        if: steps.organize_tags.outputs.status == 'success'
-        uses: peter-evans/repository-dispatch@v3
-        with:
-          token: ${{ secrets.MY_SECRET_PAT }}
-          repository: smallprogram/MyAction
-          event-type: openwrt_compilation_completed    
-
   rerun-failed-jobs:
     runs-on: ubuntu-24.04
     needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain, job_build, job_upload_release, job_organize_tags]
@@ -791,4 +783,17 @@ jobs:
         run: |
           echo "Retry failed jobs for the ${{ fromJSON(github.run_attempt) }} time, Retry 3 times in total"
           gh workflow run Retry_Failure_Jobs.yml -F run_id=${{ github.run_id }}
+
+  final-execution-jobs:
+    runs-on: ubuntu-24.04
+    needs: [rerun-failed-jobs]
+    if: ${{ always() }}
+    steps:
+      - name: Trigger build
+        if: ${{ needs.rerun-failed-jobs.result == 'skipped' }}
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.MY_SECRET_PAT }}
+          repository: smallprogram/MyAction
+          event-type: openwrt_compilation_completed
       
