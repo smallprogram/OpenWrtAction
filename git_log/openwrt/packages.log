@@ -1,0 +1,6 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+02ab49c33|Stan Grishin|Wed Oct 23 16:32:53 2024 +0000|adblock-fast: explicitly allowing domains for dnsmasq.servers
+</details>

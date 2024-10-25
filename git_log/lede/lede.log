@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3a4c5001b|aiamadeus|Wed Oct 23 21:20:08 2024 +0800|rockchip: move rk3328 dmc node to dtsi
+ce8897569|Beginner|Thu Oct 24 22:16:05 2024 +0800|kernel: bump 6.6 to 6.6.58 (#12593)
 </details>

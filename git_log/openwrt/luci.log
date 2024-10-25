@@ -2,11 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fb8ce8fcca|Paul Donald|Thu Oct 24 00:10:42 2024 +0200|luci-app-package-manager: i18n refresh
-bcd13b918e|Christian Marangi|Wed Oct 23 01:29:10 2024 +0200|luci-app-package-manager: rename from luci-app-opkg and add APK support
-591911d172|Christian Marangi|Wed Oct 23 22:33:05 2024 +0200|luci-base: add APK as detectable feature
-3a8e9baf32|Christian Marangi|Wed Oct 23 00:21:35 2024 +0200|luci-app-opkg: fix passing wrong option on opkg update/install
-55e08bedf2|Paul Donald|Wed Oct 23 22:29:09 2024 +0200|luci-app-example: spell fix
-7acea81873|this-username-has-been-taken|Wed Oct 23 13:15:33 2024 +0300|luci-proto-wireguard: fixed bug with incorrect peer name detection
-13007611a3|Paul Donald|Wed Oct 23 22:19:49 2024 +0200|luci-app-firewall: follow-up fix to reuse previous i18n strings
+a09cba439f|Stan Grishin|Thu Oct 24 19:18:25 2024 -0700|Merge pull request #7316 from stangri/master-luci-app-advanced-reboot
+760ac165fa|Paul Donald|Thu Oct 24 20:34:43 2024 +0200|luci-proto-wireguard: follow-up fix for status overview
+e34c268411|Paul Donald|Thu Oct 24 16:15:30 2024 +0200|luci-base: actually use the packaged options for poll.add calls
+345f6b8796|hnyyghk|Thu Oct 24 19:05:01 2024 +0800|luci-app-package-manager: add PKG_PROVIDES luci-app-opkg
+0535c07460|hnyyghk|Thu Oct 24 13:12:15 2024 +0800|luci-nginx: rename luci-app-opkg to luci-app-package-manager
+4d75286519|James Haggerty|Thu Oct 24 12:17:21 2024 +1100|luci-app-statistics: render all graphs on refresh if no summary
+a917ad6c31|Stan Grishin|Tue Oct 8 23:04:40 2024 +0000|luci-app-advanced-reboot: update to 1.0.1-15
 </details>

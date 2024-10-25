@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-aae954c|msdos03|Thu Oct 24 00:06:13 2024 +0800|chinadns-ng: fix arm and i386 and mipsel architecture detection (#302)
+a4a01cb|github-actions[bot]|Fri Oct 25 11:22:33 2024 +0800|shadowsocks-rust: update to 1.21.2 (#306)
+5fb13e5|github-actions[bot]|Thu Oct 24 22:52:48 2024 +0800|shadowsocks-rust: update to 1.21.1 (#305)
 </details>
