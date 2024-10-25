@@ -43,196 +43,31 @@ env:
   TZ: Asia/Shanghai
 
 jobs:
-  job_init: 
-    runs-on: ubuntu-24.04
-    name: Init
-    outputs:
-      output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
-      platforms: ${{ steps.read-platforms.outputs.matrix }}
-      platforms_source: ${{ steps.read-platforms.outputs.source_matrix_json }}
+  job1:
+    runs-on: ubuntu-latest
     steps:
-      - name: Generate Tag Name
-        id: gen_release_tag
-        run: |
-          echo "release_tag=multi-platform_$(date +"%Y.%m.%d_%H.%M.%S")" >> $GITHUB_OUTPUT
+      - name: Step in job1
+        run: echo "Job1 is running"
 
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Read Platforms From File
-        id: read-platforms
-        run: |
-          bash $PLATFORMS_SH
-
-      - name: Generate Release Tag
-        id: tag
-        run: |
-          echo "ttttttttttttttttttttttttttttttttttttsssssssssssssssssssssssssssssssss" > release.txt
-          echo "---------------------------------------------------------------------" >> release.txt
-          echo "---------------------------------------------------------------------" >> release.txt
-          echo "---------------------------------------------------------------------" >> release.txt
-          echo "---------------------------------------------------------------------" >> release.txt
-
-      
-      - name: Upload Release Tag To Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: release_tag
-          path: release.txt
-          retention-days: 5
-          
-
-  job_build:
-    needs: [job_init]
-    runs-on: ${{ matrix.value.OS }}
-    if: ${{ always() }}
-    strategy:
-      fail-fast: false
-      matrix:
-        include: ${{ fromJson(needs.job_init.outputs.platforms) }}
-    name: Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}
-
+  job2:
+    runs-on: ubuntu-latest
+    if: failure()
     steps:
-      - name: Organize Files
-        id: organize
-        run: |
-          rm -rf $GITHUB_WORKSPACE/openwrt/bin
-          mkdir -p $GITHUB_WORKSPACE/openwrt/bin
-          mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets
-          mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa
-          mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa/bb
-          cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
-          mkdir -p feeds_packages
-          firmware_path=$PWD
-          dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.txt bs=1M count=10
-          if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
-              exit 200
-          fi
-
-          
-          # cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
-          # mkdir -p feeds_packages
-          # firmware_path=$PWD
-          # cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
-          # mv * $firmware_path/feeds_packages
-          # cd $firmware_path
-          
-          # zip -r buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip feeds_packages packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
-          # rm -rf packages feeds_packages sha256sums version.buildinfo config.buildinfo feeds.buildinfo
-
-          # find . ! -name '*-*-*' -exec zip buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip {} +
-          # find . -mindepth 1 ! \( -name '*-*-*' -o -name '*.zip' \) -exec rm -rf {} +
-
-
-          # if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
-          #     for file in openwrt-*; do
-          #         if [[ -f "$file" ]]; then
-          #             mv "$file" "${file/openwrt-/lean-}"
-          #         fi
-          #     done
-          # fi
-
-          # ls
-
-          echo "FIRMWARE=$firmware_path" >> $GITHUB_OUTPUT
-          echo "status=success" >> $GITHUB_OUTPUT
-
-      - name: Upload Firmware Directory To Artifact
-        uses: actions/upload-artifact@v4
-        if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && !cancelled()
-        with:
-          name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
-          path: ${{ steps.organize.outputs.FIRMWARE }}
-
-
-  job_upload_release:
-    needs: [job_init, job_build]
-    runs-on: ${{ matrix.value.OS }}
-    if: ${{ always() }}
-    strategy:
-      fail-fast: false
-      matrix:
-        include: ${{ fromJson(needs.job_init.outputs.platforms) }}
-    name: Upload-${{ matrix.source_code_platform }}-${{ matrix.platform }}
-
+      - name: Step in job2
+        run: echo "Job2 is running"
+  job22:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - name: Step in job22
+        run: exit 1
 
-      - name: Initialization Environment
-        id: init
-        run: |
-          sudo timedatectl set-timezone "$TZ"
-          df -hT
-          cd $GITHUB_WORKSPACE
-          sudo mkdir -p release_download
-          sudo mkdir -p release_tag_download
-          sudo chown -R $USER:$GROUPS $GITHUB_WORKSPACE/release_download
-          sudo chown -R $USER:$GROUPS $GITHUB_WORKSPACE/release_tag_download
-          cd release_download
-          echo "release_dir=$PWD" >> $GITHUB_OUTPUT
-          cd ..
-          cd release_tag_download
-          echo "release_tag_dir=$PWD" >> $GITHUB_OUTPUT
-
-
-      - name: Download Release From Artifacts
-        id : download
-        uses: actions/download-artifact@v4
-        with:
-          name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
-          path: ${{ steps.init.outputs.release_dir }}
-
-      - name: Download Tags
-        uses: actions/download-artifact@v4
-        with:
-          name: release_tag
-          path: ${{ steps.init.outputs.release_tag_dir }}
-
-      - name: File Show
-        run: |
-          echo "release files:"
-          echo "---------------------------------------------"
-          cd ${{ steps.init.outputs.release_dir }}
-          ls
-          echo "-------------end release files---------------"
-          cd ..
-          echo "release tag:"
-          echo "---------------------------------------------"
-          cd ${{ steps.init.outputs.release_tag_dir }}
-          ls
-          echo "-------------end release tag-----------------"
-      
-      - name: SSH connection to Actions
-        uses: mxschmitt/action-tmate@v3.16
-        if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
-
-
-      - name: Upload Firmware To Release
-        uses: softprops/action-gh-release@0bd7e8b279c9b5b36661d552472fbbfe671fe26e
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
-          body_path: ${{ steps.init.outputs.release_tag_dir }}/release.txt
-          files: |
-            ${{ steps.init.outputs.release_dir }}/*
-
-
-  rerun-failed-jobs:
-    runs-on: ubuntu-24.04
-    needs: [job_init,  job_build, job_upload_release]
-    if: failure() && fromJSON(github.run_attempt) < 3  && !cancelled()
+  job3:
+    runs-on: ubuntu-latest
+    needs: [job1, job2, job22]
+    if: ${{ needs.job2.result == 'skipped' }} 
     steps:
-      - name: Rerun failed jobs in the current workflow
-        env:
-          GH_REPO: ${{ github.repository }}
-          GH_TOKEN: ${{ github.token }}
+      - name: Step in job3
         run: |
-          echo "Retry failed jobs for the ${{ fromJSON(github.run_attempt) }} time, Retry 3 times in total"
-          gh workflow run Retry_Failure_Jobs.yml -F run_id=${{ github.run_id }}
-      
+          echo "Job1 ${{ needs.job1.result }}"
+          echo "Job2 ${{ needs.job2.result }}"
+          echo "Job22 ${{ needs.job22.result }}"
