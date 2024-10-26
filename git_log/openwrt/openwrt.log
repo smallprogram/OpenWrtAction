@@ -2,7 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-27657050d0|Hauke Mehrtens|Thu Oct 24 00:03:13 2024 +0200|mbedtls: update to 3.6.2
-6835ff8cbc|Christian Marangi|Thu Oct 24 12:46:47 2024 +0200|include/package-pack: Set missing Maintainer and URL for APK
-abeaf8df5c|Christian Marangi|Thu Oct 24 12:45:36 2024 +0200|include/package-pack: remove whitespace for Description info for APK
+1dc86af356|Andreas Gnau|Fri Oct 25 18:49:48 2024 +0200|airoha: Clarify subtarget compatibility
+d7ed4c77b5|Shiji Yang|Thu Oct 24 00:09:36 2024 +0800|ramips: rt3883: convert devices to interrupt-driven gpio-keys
+0bcb64041a|Shiji Yang|Thu Oct 24 00:09:19 2024 +0800|ramips: rt305x: convert devices to interrupt-driven gpio-keys
+a3819e23be|Shiji Yang|Thu Oct 24 00:08:25 2024 +0800|ramips: rt2880: convert devices to interrupt-driven gpio-keys
+7cc53ef09b|Shiji Yang|Thu Oct 24 00:07:53 2024 +0800|ramips: mt76x8: convert Minew G1-C to interrupt-driven gpio-keys
+0d4616b838|Shiji Yang|Wed Oct 23 23:09:57 2024 +0800|ramips: dts: add the missing interrupt properties for GPIO nodes
+2b2abdbb75|Shiji Yang|Wed Oct 23 21:56:23 2024 +0800|ramips: ralink-gpio: use irqchip helpers to register driver
 </details>

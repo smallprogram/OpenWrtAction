@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ce8897569|Beginner|Thu Oct 24 22:16:05 2024 +0800|kernel: bump 6.6 to 6.6.58 (#12593)
+02c320a0c|Tianling Shen|Fri Oct 25 21:20:26 2024 +0800|mediatek: minor fixes for openembed som7981 (#12598)
+972664bd0|aiamadeus|Sun Oct 13 20:18:27 2024 +0800|Revert "kernel: bump 6.1 to 6.1.111"
 </details>

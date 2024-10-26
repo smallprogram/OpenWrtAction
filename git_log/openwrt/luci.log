@@ -2,11 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a09cba439f|Stan Grishin|Thu Oct 24 19:18:25 2024 -0700|Merge pull request #7316 from stangri/master-luci-app-advanced-reboot
-760ac165fa|Paul Donald|Thu Oct 24 20:34:43 2024 +0200|luci-proto-wireguard: follow-up fix for status overview
-e34c268411|Paul Donald|Thu Oct 24 16:15:30 2024 +0200|luci-base: actually use the packaged options for poll.add calls
-345f6b8796|hnyyghk|Thu Oct 24 19:05:01 2024 +0800|luci-app-package-manager: add PKG_PROVIDES luci-app-opkg
-0535c07460|hnyyghk|Thu Oct 24 13:12:15 2024 +0800|luci-nginx: rename luci-app-opkg to luci-app-package-manager
-4d75286519|James Haggerty|Thu Oct 24 12:17:21 2024 +1100|luci-app-statistics: render all graphs on refresh if no summary
-a917ad6c31|Stan Grishin|Tue Oct 8 23:04:40 2024 +0000|luci-app-advanced-reboot: update to 1.0.1-15
+0df7955d37|Paul Donald|Fri Oct 25 23:50:17 2024 +0200|github: update issue_template
+ba530891d5|Paul Donald|Fri Sep 27 03:11:02 2024 +0200|luci-proto-vxlan: introduce peers tab and additional vxlan settings
+f1b302d49b|Paul Donald|Fri Oct 25 21:41:33 2024 +0200|luci-proto-wireguard: make peer entries sortable
+5d0d56ebfb|Hannu Nyman|Fri Oct 25 20:05:59 2024 +0300|treewide: Sync translations
+4c08b34511|Hosted Weblate|Fri Oct 25 18:55:06 2024 +0200|Translated using Weblate (Finnish)
 </details>

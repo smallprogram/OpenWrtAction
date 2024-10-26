@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-02ab49c33|Stan Grishin|Wed Oct 23 16:32:53 2024 +0000|adblock-fast: explicitly allowing domains for dnsmasq.servers
+24875c965|Wesley Gimenes|Thu Oct 24 22:31:57 2024 -0300|netbird: update to 0.30.3
 </details>
