@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0df7955d37|Paul Donald|Fri Oct 25 23:50:17 2024 +0200|github: update issue_template
-ba530891d5|Paul Donald|Fri Sep 27 03:11:02 2024 +0200|luci-proto-vxlan: introduce peers tab and additional vxlan settings
-f1b302d49b|Paul Donald|Fri Oct 25 21:41:33 2024 +0200|luci-proto-wireguard: make peer entries sortable
-5d0d56ebfb|Hannu Nyman|Fri Oct 25 20:05:59 2024 +0300|treewide: Sync translations
-4c08b34511|Hosted Weblate|Fri Oct 25 18:55:06 2024 +0200|Translated using Weblate (Finnish)
+392b7e6b0d|Paul Donald|Sat Oct 26 16:11:06 2024 +0200|luci-mod-dashboard: fix for devices that do not report noise floor
 </details>

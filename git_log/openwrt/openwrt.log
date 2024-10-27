@@ -2,11 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1dc86af356|Andreas Gnau|Fri Oct 25 18:49:48 2024 +0200|airoha: Clarify subtarget compatibility
-d7ed4c77b5|Shiji Yang|Thu Oct 24 00:09:36 2024 +0800|ramips: rt3883: convert devices to interrupt-driven gpio-keys
-0bcb64041a|Shiji Yang|Thu Oct 24 00:09:19 2024 +0800|ramips: rt305x: convert devices to interrupt-driven gpio-keys
-a3819e23be|Shiji Yang|Thu Oct 24 00:08:25 2024 +0800|ramips: rt2880: convert devices to interrupt-driven gpio-keys
-7cc53ef09b|Shiji Yang|Thu Oct 24 00:07:53 2024 +0800|ramips: mt76x8: convert Minew G1-C to interrupt-driven gpio-keys
-0d4616b838|Shiji Yang|Wed Oct 23 23:09:57 2024 +0800|ramips: dts: add the missing interrupt properties for GPIO nodes
-2b2abdbb75|Shiji Yang|Wed Oct 23 21:56:23 2024 +0800|ramips: ralink-gpio: use irqchip helpers to register driver
+a2aabc9a7a|Daniel Golle|Sat Oct 26 01:35:29 2024 +0100|kernel: add MultiPath TCP diag kernel module
+c8d5abd62b|Daniel Golle|Fri Oct 25 18:15:41 2024 +0100|kernel: enable Multi-Path TCP for !SMALL_FLASH targets
+b6c2422448|Daniel Golle|Sat Oct 26 15:18:50 2024 +0100|generic: mtk_wed: fix path of MT7988 WO firmware
 </details>

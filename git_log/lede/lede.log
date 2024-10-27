@@ -2,6 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-02c320a0c|Tianling Shen|Fri Oct 25 21:20:26 2024 +0800|mediatek: minor fixes for openembed som7981 (#12598)
-972664bd0|aiamadeus|Sun Oct 13 20:18:27 2024 +0800|Revert "kernel: bump 6.1 to 6.1.111"
+e0f6d6b7e|Daniel Golle|Sat Oct 26 01:35:29 2024 +0100|kernel: add MultiPath TCP diag kernel module
+33cec3d34|Daniel Golle|Fri Oct 25 18:15:41 2024 +0100|kernel: enable Multi-Path TCP for !SMALL_FLASH targets
+b84bb5305|coolsnowwolf|Sun Oct 27 06:48:17 2024 +0800|luci-app-leigod-acc: fix zh_Hans with luci js i18n
+17e8a30db|coolsnowwolf|Sun Oct 27 06:22:32 2024 +0800|Version: Celebrate 24/1024 Programmers Day
+e5706cfa8|coolsnowwolf|Sun Oct 27 05:19:28 2024 +0800|linux-firmware: add offloading firmware for MT7988
+2f58aa600|coolsnowwolf|Fri Oct 4 23:18:38 2024 +0800|Version update to R24.10.1
+6969af9b5|Stefan Lippers-Hollmann|Thu Oct 17 17:30:47 2024 +0200|linux-firmware: Update to version 20241017
 </details>

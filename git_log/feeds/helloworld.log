@@ -2,11 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-03a65be|Beginner|Sat Oct 26 02:01:43 2024 +0800|shadowsocks-rust: update to 1.21.2
-36ed583|zxl hhyccc|Sat Oct 26 01:57:09 2024 +0800|v2raya: update to 2.2.6 (#1568)
-d6ef70d|zxl hhyccc|Sat Oct 26 01:56:08 2024 +0800|hysteria: update to 2.5.2 (#1567)
-cc943d1|zxl hhyccc|Sat Oct 26 01:55:58 2024 +0800|v2ray-core: update to 5.21.0 (#1566)
-0661104|zxl hhyccc|Sat Oct 26 01:55:47 2024 +0800|v2ray-plugin: update to 5.17.0 (#1565)
-1fd6b90|zxl hhyccc|Sat Oct 26 01:55:36 2024 +0800|xray-plugin: update to 1.8.24 (#1564)
-b09bf97|zxl hhyccc|Sat Oct 26 01:55:25 2024 +0800|xray-core: update to 24.10.16 (#1563)
+d23d4a3|coolsnowwolf|Sun Oct 27 01:15:04 2024 +0800|Merge pull request #1570 from zxlhhyccc/Xray-new
+8de52f1|zxlhhyccc|Sat Oct 26 09:13:33 2024 +0800|luci-app-ssr-plus: Fix link failure for latest Xray version. Re-open PR: 1、已完美修复Xray更新到2024.9.30版本后，无法连接服务器导致不能科学上网问题； 2、本次修改已完美兼容1.8.24及以下版本，即使服务端节点为旧版本也正常使用。 3、本次修改已完美修改socks 的配置用以适配新旧Xray版本。 4、WireGuard 配置：替换kernelMode为noKernelTun，见：https://github.com/XTLS/Xray-core/commit/9bdf72d658cc3bd168374d2997b93299603c87af
 </details>
