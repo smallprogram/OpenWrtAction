@@ -2,11 +2,23 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e0f6d6b7e|Daniel Golle|Sat Oct 26 01:35:29 2024 +0100|kernel: add MultiPath TCP diag kernel module
-33cec3d34|Daniel Golle|Fri Oct 25 18:15:41 2024 +0100|kernel: enable Multi-Path TCP for !SMALL_FLASH targets
-b84bb5305|coolsnowwolf|Sun Oct 27 06:48:17 2024 +0800|luci-app-leigod-acc: fix zh_Hans with luci js i18n
-17e8a30db|coolsnowwolf|Sun Oct 27 06:22:32 2024 +0800|Version: Celebrate 24/1024 Programmers Day
-e5706cfa8|coolsnowwolf|Sun Oct 27 05:19:28 2024 +0800|linux-firmware: add offloading firmware for MT7988
-2f58aa600|coolsnowwolf|Fri Oct 4 23:18:38 2024 +0800|Version update to R24.10.1
-6969af9b5|Stefan Lippers-Hollmann|Thu Oct 17 17:30:47 2024 +0200|linux-firmware: Update to version 20241017
+8537d3eae|coolsnowwolf|Fri Nov 1 12:03:49 2024 +0800|filogic: add support for ZyXEL EX5700
+bd85b6392|coolsnowwolf|Thu Oct 31 17:11:03 2024 +0800|build: correctly ignore Initramfs image might fail as it's too big
+568395dbb|coolsnowwolf|Thu Oct 31 17:03:54 2024 +0800|ramips: switch to kernel 5.10
+f3d6035d7|coolsnowwolf|Thu Oct 31 16:53:49 2024 +0800|kernel: bump 5.10 to 5.10.221
+ecd7193bd|coolsnowwolf|Wed Oct 30 22:23:29 2024 +0800|Revert "tools/libtool: bump to 2.4.6"
+3e24ca110|coolsnowwolf|Wed Oct 30 21:04:40 2024 +0800|kernel: fix rtw88x kernel 6.x build
+3a31a9cf6|coolsnowwolf|Wed Oct 30 16:06:27 2024 +0800|feeds.conf.default: swtich to custom telephony feeds
+3f0ed5197|coolsnowwolf|Wed Oct 30 15:54:28 2024 +0800|ath10k-ct: fix build with arm/mips
+e40fe43e4|coolsnowwolf|Wed Oct 30 15:03:38 2024 +0800|gpio-nct5104d: fix kernel 6.x build
+906045201|coolsnowwolf|Wed Oct 30 11:57:42 2024 +0800|tools/libtool: bump to 2.4.6
+35cc3202b|coolsnowwolf|Wed Oct 30 11:19:26 2024 +0800|luci-app-spdmodem: remove spdmodem package
+2d97f3db6|coolsnowwolf|Wed Oct 30 11:18:34 2024 +0800|sprd_pcie: remove package in replace of kernel buildin
+b926a6f9c|coolsnowwolf|Thu Oct 3 23:10:30 2024 +0800|rockchip: refresh uboot devices config
+a82c6fd5f|coolsnowwolf|Tue Oct 29 20:25:38 2024 +0800|drm-nouveau: fix build with kernel 6.x
+a091a96c8|coolsnowwolf|Tue Oct 29 15:45:10 2024 +0800|hostapd: always enable nl80211 driver support
+7e49db2e3|coolsnowwolf|Tue Oct 29 03:31:19 2024 +0800|ddns-scripts_dnspod: update with luci upstream
+68d77afca|coolsnowwolf|Tue Oct 29 03:23:43 2024 +0800|ddns-scripts_aliyun: update with luci upstream
+b1684789e|Daniel Golle|Sun Oct 27 14:24:47 2024 +0000|mediatek: mt7988: add DT entries for WED
+e1b895b3c|Daniel Golle|Sat Oct 26 15:18:50 2024 +0100|generic: mtk_wed: fix path of MT7988 WO firmware
 </details>

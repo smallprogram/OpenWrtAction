@@ -2,6 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d23d4a3|coolsnowwolf|Sun Oct 27 01:15:04 2024 +0800|Merge pull request #1570 from zxlhhyccc/Xray-new
-8de52f1|zxlhhyccc|Sat Oct 26 09:13:33 2024 +0800|luci-app-ssr-plus: Fix link failure for latest Xray version. Re-open PR: 1、已完美修复Xray更新到2024.9.30版本后，无法连接服务器导致不能科学上网问题； 2、本次修改已完美兼容1.8.24及以下版本，即使服务端节点为旧版本也正常使用。 3、本次修改已完美修改socks 的配置用以适配新旧Xray版本。 4、WireGuard 配置：替换kernelMode为noKernelTun，见：https://github.com/XTLS/Xray-core/commit/9bdf72d658cc3bd168374d2997b93299603c87af
+8c362ba|zxl hhyccc|Tue Oct 29 21:54:21 2024 +0800|luci-app-ssr-plus: update.sh: adapt to openwrt official dnsmasq modifiy.
+1603b69|zxl hhyccc|Tue Oct 29 14:27:39 2024 +0800|luci-app-ssr-plus: ssr-rules: Delete unnecessary rules from the gfw.
+e098fd3|zxl hhyccc|Mon Oct 28 23:37:12 2024 +0800|Revert: `luci-app-ssr-plus: ssr-rules: Delete unnecessary rules from the gfw.`
+16972f7|zxl hhyccc|Mon Oct 28 23:21:21 2024 +0800|luci-app-ssr-plus: ssr-rules: Delete unnecessary rules from the gfw.
+7869f77|zxl hhyccc|Mon Oct 28 22:00:27 2024 +0800|luci-app-ssr-plus: adapt to openwrt official dnsmasq modifiy.
+234e18b|coolsnowwolf|Mon Oct 28 15:12:51 2024 +0800|Merge pull request #1572 from zxlhhyccc/Xray-new
+4ae54d2|zxlhhyccc|Sun Oct 27 16:04:07 2024 +0800|luci-app-ssr-plus: Add Xray `fragment` support.
 </details>

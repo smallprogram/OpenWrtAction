@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b99b66ae|coolsnowwolf|Sun Oct 27 05:47:13 2024 +0800|frpc: add anonymous proxy config support
-982dbed1|coolsnowwolf|Sun Oct 27 05:08:10 2024 +0800|xray-core: update to 24.10.16
+afd17588|coolsnowwolf|Thu Oct 31 17:42:47 2024 +0800|haproxy: revert to v2.8.5
+b784740c|coolsnowwolf|Wed Oct 30 11:24:05 2024 +0800|gl-mifi-mcu: remove package
+77142063|coolsnowwolf|Tue Oct 29 20:36:37 2024 +0800|dmx_usb_module: fix kernel 6.6 build
+058f961c|coolsnowwolf|Mon Oct 28 23:17:20 2024 +0800|ddns-scripts: bump version
 </details>

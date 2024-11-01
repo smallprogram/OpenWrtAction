@@ -2,5 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-392b7e6b0d|Paul Donald|Sat Oct 26 16:11:06 2024 +0200|luci-mod-dashboard: fix for devices that do not report noise floor
+23657ad52c|Stan Grishin|Thu Oct 31 10:05:01 2024 -0700|Merge pull request #7368 from stangri/master-luci-app-pbr
+2a09205aed|Stan Grishin|Thu Oct 31 01:59:47 2024 +0000|luci-app-pbr: update to sync with principal package
+f9899fd1a3|Hosted Weblate|Wed Oct 30 13:47:28 2024 +0100|Translated using Weblate (Irish)
+2becdcc2f5|Rudy Andram|Tue Oct 29 05:21:16 2024 +0000|luci-mod-network: add 11be support - revert hwval null check for 5g/2g mode
+ecd100475f|Stan Grishin|Mon Oct 28 17:12:16 2024 -0700|Merge pull request #7348 from stangri/master-luci-app-pbr
+d3ba74ed9b|Paul Donald|Mon Oct 28 14:22:37 2024 +0100|luci-mod-system: add 'reload' button to software start page
+79e9a4717b|Paul Donald|Mon Oct 28 02:09:30 2024 +0100|luci-mod-network: move wifi country-code to 'general' tab
+e9ce4e32d0|Stan Grishin|Thu Oct 24 20:20:41 2024 +0000|luci-app-pbr: Sync with pbr 1.1.7-29
 </details>

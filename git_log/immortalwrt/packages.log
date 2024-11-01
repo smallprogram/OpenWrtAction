@@ -2,9 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ceda7c95f|Stan Grishin|Thu Oct 31 01:45:57 2024 +0000|pbr: update to 1.1.7-47
-185c5f038|Yury Potapov|Tue Oct 15 18:14:51 2024 +0300|openconnect: introduced script parameter
-1fcaf0ac1|Rosen Penev|Mon Oct 7 18:13:17 2024 -0700|libseccomp: update to 2.5.5
+692005825|Tianling Shen|Thu Oct 31 16:17:10 2024 +0800|Merge Official Source
 12622acfc|Álvaro Fernández Rojas|Wed Oct 30 23:43:51 2024 +0100|bcm27xx-eeprom: update to latest version
 2255c9b9a|Eric Fahlgren|Wed Oct 30 17:42:19 2024 -0700|attendedsysupgrade-common: give the uci-defaults script a run level
 22ad5d889|Rosen Penev|Tue Oct 29 18:26:53 2024 -0700|apparmor: update to 3.0.13
@@ -43,4 +41,17 @@ ae675a5b1|Evgeny Grin (Karlson2k)|Sun Oct 27 17:03:10 2024 +0100|libmicrohttpd: 
 7a8ec328b|Jen Wolf|Sun Oct 27 14:45:41 2024 -0700|libmicrohttpd update to 1.0.1
 86602b5f3|Christian Marangi|Tue Oct 22 15:27:36 2024 +0200|micropython: bump to 1.23.0 release
 e3217b54e|Dirk Brenken|Sun Oct 27 15:24:16 2024 +0100|adblock: update to 4.2.2-8
+5af7612c5|Dirk Brenken|Sat Oct 26 23:21:26 2024 +0200|travelmate: update to 2.1.3-2
+bbaa72d73|Dirk Brenken|Sat Oct 26 21:54:31 2024 +0200|adblock: update to 4.2.2-7
+fb19c1469|Dirk Brenken|Sat Oct 26 21:24:52 2024 +0200|banIP: update to 1.0.0-9
+d6908b2c5|Daniel Golle|Fri Oct 25 19:54:29 2024 +0100|mptcpd: add package
+31a81c604|Daniel Golle|Fri Oct 25 19:55:17 2024 +0100|ell: add package
+a26c79293|Ivan Chashkin|Wed Oct 23 00:53:18 2024 +0300|yggdrasil: bump to 0.5.9
+9d7e679db|John Audia|Wed Oct 23 08:20:29 2024 -0400|gperftools:  bump to version 2.16
+23f08217a|Luiz Angelo Daros de Luca|Sun Oct 20 00:28:42 2024 -0300|ruby: fix yjit for target and host build
+857efd12c|Luiz Angelo Daros de Luca|Sat Oct 19 23:56:22 2024 -0300|ruby: update to 3.3.5
+41fc69e06|Christian Marangi|Tue Oct 22 16:12:57 2024 +0200|sstp-client: bump to 1.0.20 release
+da42d2f1b|Jianhui Zhao|Sat Oct 26 11:18:27 2024 +0800|libuhttpd: update to 3.14.2
+60833653f|Eric Fahlgren|Fri Oct 25 19:37:37 2024 -0700|owut: update to 2024.10.25
+24875c965|Wesley Gimenes|Thu Oct 24 22:31:57 2024 -0300|netbird: update to 0.30.3
 </details>
