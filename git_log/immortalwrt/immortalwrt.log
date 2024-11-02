@@ -2,80 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0294a9b2d8|Tianling Shen|Fri Nov 1 03:12:01 2024 +0800|rtl8189es: fix build with recent mac80211 update
-18b94111a0|Tianling Shen|Fri Nov 1 03:06:38 2024 +0800|rtl8188eu: fix build with recent mac80211 update
-96087967b9|Tianling Shen|Fri Nov 1 03:02:26 2024 +0800|rtl8812au-ac: fix build with recent mac80211 update
-220a0983a5|Tianling Shen|Thu Oct 31 16:19:48 2024 +0800|Merge Official Source
-67b0cd8976|Álvaro Fernández Rojas|Thu Oct 31 08:52:16 2024 +0100|CI: labeler: add bcm27xx-utils
-cdc607d535|Álvaro Fernández Rojas|Wed Oct 30 13:49:02 2024 +0100|bcm27xx-utils: update to latest version
-b5e1544f4d|Rafal Boni|Thu Oct 24 03:06:22 2024 -0400|ipq806x: Revert "ipq806x: swap lan leds for Meraki MR52"
-73edd3a41e|Christian Marangi|Wed Oct 30 14:07:22 2024 +0100|ramips: ignore errors from trx utility
-def70fa85b|Christian Marangi|Wed Oct 30 14:05:10 2024 +0100|image: ignore errors from more commands
-f303471ae9|Paul Spooren|Wed Oct 30 13:41:23 2024 +0100|imagebuilder: fix copying of missing kernel/libc
-5ba701fe19|Christian Marangi|Wed Oct 30 11:21:58 2024 +0100|image: ignore errors from mktplinkfw command
-618f079f5d|Christian Marangi|Wed Oct 30 11:19:33 2024 +0100|build: correctly ignore Initramfs image on error
-f9afff8b28|Christian Marangi|Wed Oct 30 10:25:25 2024 +0100|mxs: drop removal of firewall4 package
-d6c6e4f722|Christian Marangi|Wed Oct 30 10:23:10 2024 +0100|mvebu: cortexa9: drop removal of firewall4 package
-559df6cb99|Paul Spooren|Wed Oct 30 09:28:30 2024 +0100|build: Honor DEFAULT_VARIANT for APK packages
-07b845b1f2|Paul Spooren|Tue Oct 29 11:09:24 2024 +0100|build: don't include kernel/libc in package index
-36834ea340|John Thomson|Wed Oct 16 12:51:22 2024 +1000|kernel: mtdsplit_minor: accept bootimage filename
-ade045084b|John Thomson|Wed Oct 16 07:13:25 2024 +1000|kernel: mtdsplit_minor: return 0 if not fatal
-a6a44f94bf|Rosen Penev|Mon Oct 21 17:14:41 2024 -0700|ramips: linkit: replace driver with gpio-hog
-cbefc64cb3|Andreas Böhler|Mon Oct 28 18:52:02 2024 +0100|ramips: Fix WiFi on Sercomm NA502 and NA502s
-4929bafb0b|Álvaro Fernández Rojas|Tue Oct 29 15:30:09 2024 +0100|bcm27xx-utils: fix PKG_MIRROR_HASH
-57572de43a|Álvaro Fernández Rojas|Tue Oct 29 09:58:57 2024 +0100|generic: backport upstream r8169 irq patch
-a0eafc3c77|Paul Spooren|Mon Oct 28 23:20:57 2024 +0100|imagebuilder: always add local packages.adb
-408eab55ee|Paul Spooren|Mon Oct 28 22:33:48 2024 +0100|package: fix key creation for SDK
-03e0525325|Paul Spooren|Sun Oct 27 16:36:33 2024 +0100|include/package-pack: drop version from provides
-0357372896|Christian Marangi|Sun Oct 27 10:02:55 2024 +0100|armsr: don't limit kmods to armsr armv8 subtarget
-81ed181a51|Paul Spooren|Fri Apr 12 19:01:57 2024 +0200|dsl-vrx200-firmware-xdsl: fix PKG_VERSION for APK
-d42a8b25fa|Christian Marangi|Sat Oct 26 23:17:46 2024 +0200|layerscape: drop fmc and fmc-eth-config package
-1cb7764812|Christian Marangi|Sat Oct 26 23:16:21 2024 +0200|layerscape: set firmware package to skip installation
-377b66990b|Christian Marangi|Sat Oct 26 22:57:46 2024 +0200|build: introduce support to declare skip package
-fb56a46246|Christian Marangi|Sat Oct 26 12:29:32 2024 +0200|omnia-mcutool: fix version for APK
-cd2e5fbefc|Christian Marangi|Sat Oct 26 11:50:21 2024 +0200|adb: fix version for APK
-0d96ed1894|Christian Marangi|Fri Oct 25 22:35:02 2024 +0200|apk: switch to wget url backend for HOST tool
-285e200e5e|Christian Marangi|Fri Oct 25 14:56:20 2024 +0200|ramips: mt7621: drop kmod-i2c-ralink from ASUS RP-AC56
-8009342f43|Christian Marangi|Fri Oct 25 12:27:28 2024 +0200|bcm27xx-utils: fix version for APK
-088b83c845|Christian Marangi|Fri Oct 25 11:56:45 2024 +0200|msx: fix wrong device package list for I2SE Duckbill
-c8955268bc|Christian Marangi|Fri Oct 25 10:25:10 2024 +0200|adb-enablemodem: fix version for APK
-f59cbe55d1|Christian Marangi|Fri Oct 25 01:12:35 2024 +0200|apk: add patch adding support for ARM Big-Endian arch
-1ce7e9403b|Christian Marangi|Fri Oct 25 00:47:07 2024 +0200|ipq40xx: drop ipq-wifi-teltonika_rutx from Teltonika RUTX50
-4f1b7f5829|Christian Marangi|Fri Oct 25 00:12:05 2024 +0200|mac80211: reintroduce rt61/rt73 support
-7e85c30938|Christian Marangi|Thu Oct 24 23:46:44 2024 +0200|bcm53xx: drop kmod-ledtrig-default-on and kmod-ledtrig-netdev
-c73e231b5c|Christian Marangi|Thu Oct 24 23:37:24 2024 +0200|ath79: replace ancient kmod-ledtrig-usbdev with kmod-usb-ledtrig-usbport
-4b2f0beaf8|Christian Marangi|Thu Oct 24 23:23:03 2024 +0200|bcm27xx-gpu-fw: fix version for APK
-578f266ad7|Christian Marangi|Thu Oct 24 20:45:01 2024 +0200|imagebuilder: complete support for local signing keys
-a8d17c21e4|Christian Marangi|Thu Oct 24 20:36:43 2024 +0200|imagebuilder: actually support IB from buildbot
-1c211e7781|Christian Marangi|Thu Oct 24 20:32:42 2024 +0200|imagebuilder: correctly export PACKAGE_DIR and PACKAGE_DIR_ALL
-27c76121d8|Christian Marangi|Thu Oct 24 20:29:52 2024 +0200|imagebuilder: copy apk keys with CONFIG_SIGNATURE_CHECK
-23e27d21d5|Christian Marangi|Thu Oct 24 20:25:06 2024 +0200|build: detach apk repository handling from rootfs.mk
-5667b380cd|Christian Marangi|Thu Oct 24 20:13:07 2024 +0200|build: permit overwrite PACKAGE_DIR and PACKAGE_DIR_ALL
-221f81a330|Paul Spooren|Fri Aug 23 23:46:52 2024 +0200|cypress-firmware: fix version for APK
-f72879dd60|Christian Marangi|Tue Oct 29 00:03:39 2024 +0100|apk: bump to latest HEAD 2024-10-28
-bcd95cb9c4|Christian Marangi|Mon Oct 28 14:01:52 2024 +0100|airoha: an7581: replace TRNG patch with upstream version
-ff18576f84|Til Kaiser|Sun Oct 27 14:02:14 2024 +0100|xdp-tools: fix compilation when bpftool is installed
-7ac3f0e96c|Zoltan HERPAI|Sun Oct 27 17:36:12 2024 +0000|dns320l-mcu: bump to 2024-10-27
-e934e67f9c|Zoltan HERPAI|Sun Oct 27 17:35:11 2024 +0000|kirkwood: dns320l: export mcu_power GPIO
-945a335f66|Markus Stockhausen|Sun Sep 15 13:01:41 2024 -0400|realtek: ethernet: Improve SMI polling configuration based on DTS
-74509c0e7d|Markus Stockhausen|Fri Oct 18 02:20:20 2024 -0400|realtek: remove wrong SMI bus from XGS1250
-8f68e1abe5|Markus Stockhausen|Sun Sep 22 13:36:14 2024 -0400|realtek: phy: fix RTL8218D detection
-0ed688a4d9|Markus Stockhausen|Fri Oct 18 03:00:18 2024 -0400|realtek: phy: simplify RTL8214C detection
-597f87ebf5|Markus Stockhausen|Sun Sep 22 13:19:22 2024 -0400|realtek: phy: proper RTL8218B, RTL8214FC, RTL8214FB detection
-d607dc2a06|Markus Stockhausen|Sun Sep 22 12:46:18 2024 -0400|realtek: phy: adapt raw page for RTL839X
-8e4597297d|Markus Stockhausen|Sun Sep 22 12:03:43 2024 -0400|realtek: dsa: increase RTL839x max phy page to 8191
-a200f0cee7|Markus Stockhausen|Fri Oct 18 02:14:02 2024 -0400|realtek: dsa: allow USXGMII mode
-07159cc25a|Christian Marangi|Sun Oct 27 15:58:16 2024 +0100|Revert "scripts/download.pl: read file natively"
-388de64d9f|Daniel Golle|Sun Oct 27 14:24:47 2024 +0000|mediatek: mt7988: add DT entries for WED
-0f5e5dee1d|Rosen Penev|Wed Oct 9 13:44:56 2024 -0700|ramips: modernize pwm driver
-b5c7c67b8f|Kevin Zhang|Sun Oct 27 01:13:47 2024 -0400|rockchip: Add LED aliases for FriendlyElec NanoPi R3S
-2902b0a6fb|Kevin Zhang|Sun Oct 27 01:13:05 2024 -0400|rockchip: Add support for RK3566 FriendlyElec NanoPi R3S
-e35f0493b1|Kevin Zhang|Sun Oct 27 01:12:01 2024 -0400|uboot-rockchip: add support for NanoPi R3S
-3cdab2ad44|Rosen Penev|Tue Oct 22 16:21:46 2024 -0700|ramips: use platform_get_irq
-65560de58d|Matteo Croce|Sun Sep 29 01:01:01 2024 +0200|scripts/download.pl: read file natively
-5fdd18243e|Til Kaiser|Sun Oct 27 14:05:50 2024 +0100|xdp-tools: re-add vlan_hdr struct
-63ea5710d9|Marius Dinu|Sat Oct 26 20:10:55 2024 +0300|kernel: add missing CONFIG_DM_AUDIT
-a2aabc9a7a|Daniel Golle|Sat Oct 26 01:35:29 2024 +0100|kernel: add MultiPath TCP diag kernel module
-c8d5abd62b|Daniel Golle|Fri Oct 25 18:15:41 2024 +0100|kernel: enable Multi-Path TCP for !SMALL_FLASH targets
-b6c2422448|Daniel Golle|Sat Oct 26 15:18:50 2024 +0100|generic: mtk_wed: fix path of MT7988 WO firmware
+29c8bf55f4|Tianling Shen|Fri Nov 1 16:40:44 2024 +0800|Merge Official Source
+478b56a058|Tianling Shen|Fri Nov 1 16:15:53 2024 +0800|Merge Official Source
+a85f11f191|John Crispin|Sat Sep 21 09:48:47 2024 +0200|mediatek: filogic: add Arcadyan Mozart platform
+ddfae94a14|John Crispin|Tue Oct 29 13:40:11 2024 +0100|mediatek: add support for swapping the polarity on usxgmii interfaces
+cfe8e6e75f|John Crispin|Tue Oct 29 13:37:40 2024 +0100|mediatek: add support for Realtek RTL8261n 10G PHYs
+88fa1f7b1e|John Crispin|Sat Sep 21 09:47:26 2024 +0200|uboot-mediatek: add support for arcadyan,mozart
+a535cfc09e|Petr Štetiar|Fri Nov 1 06:25:07 2024 +0000|openwrt-keyring: add OpenWrt 24.10 release build usign key
+2b173ab730|Daniel Golle|Fri Nov 1 03:37:51 2024 +0000|mediatek: mt7988: fix peripheral SPI busses
+fc236f3b3c|Lech Perczak|Thu Oct 24 20:51:00 2024 +0200|ath79: Really fix 5GHz on QCA9886 variant of ZTE MF286
+538a1d740c|Álvaro Fernández Rojas|Thu Oct 31 10:09:44 2024 +0100|bcm27xx: update to latest RPi patches
+7afdbc0955|Álvaro Fernández Rojas|Thu Oct 31 00:25:41 2024 +0100|bcm27xx-gpu-fw: update to latest version
+9c6cd2241d|Rosen Penev|Fri Oct 25 15:39:30 2024 -0700|ramips: m4r v4: fix typo
 </details>

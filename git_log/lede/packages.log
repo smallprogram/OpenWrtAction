@@ -1,9 +1,0 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-afd17588|coolsnowwolf|Thu Oct 31 17:42:47 2024 +0800|haproxy: revert to v2.8.5
-b784740c|coolsnowwolf|Wed Oct 30 11:24:05 2024 +0800|gl-mifi-mcu: remove package
-77142063|coolsnowwolf|Tue Oct 29 20:36:37 2024 +0800|dmx_usb_module: fix kernel 6.6 build
-058f961c|coolsnowwolf|Mon Oct 28 23:17:20 2024 +0800|ddns-scripts: bump version
-</details>

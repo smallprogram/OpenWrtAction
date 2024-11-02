@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-290ac18|github-actions[bot]|Thu Oct 31 16:46:37 2024 +0800|xray-core: update to 24.10.31 (#308)
-4aa6b68|github-actions[bot]|Thu Oct 31 16:46:18 2024 +0800|v2ray-geoip: update to 202410310053 (#310)
-799daa0|github-actions[bot]|Thu Oct 31 16:46:06 2024 +0800|v2ray-core: update to 5.22.0 (#307)
-4e026f5|lwb1978|Thu Oct 31 12:37:30 2024 +0800|naiveproxy: add mipsel_24kc_24kf & mipsel_74kc architecture
-</details>

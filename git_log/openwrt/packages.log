@@ -2,45 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ceda7c95f|Stan Grishin|Thu Oct 31 01:45:57 2024 +0000|pbr: update to 1.1.7-47
-185c5f038|Yury Potapov|Tue Oct 15 18:14:51 2024 +0300|openconnect: introduced script parameter
-1fcaf0ac1|Rosen Penev|Mon Oct 7 18:13:17 2024 -0700|libseccomp: update to 2.5.5
-12622acfc|Álvaro Fernández Rojas|Wed Oct 30 23:43:51 2024 +0100|bcm27xx-eeprom: update to latest version
-2255c9b9a|Eric Fahlgren|Wed Oct 30 17:42:19 2024 -0700|attendedsysupgrade-common: give the uci-defaults script a run level
-22ad5d889|Rosen Penev|Tue Oct 29 18:26:53 2024 -0700|apparmor: update to 3.0.13
-4a55b26f9|Rosen Penev|Fri Aug 23 13:51:36 2024 -0700|nsutils: update to latest master
-30f8c9a76|Rosen Penev|Thu Aug 22 20:44:23 2024 -0700|luasoap: update to latest release
-2b6991a30|Javier Marcet|Wed Oct 30 12:26:36 2024 +0100|docker-compose: Update to version 2.30.1
-c91ce9677|Javier Marcet|Wed Oct 30 11:33:56 2024 +0100|docker-compose: Update to version 2.30.0
-4275b6930|Rosen Penev|Tue Oct 29 18:16:54 2024 -0700|pptp: fix compilation with GCC14
-b3d9e9094|Dillon Dixon|Sun Oct 27 15:22:56 2024 -0700|ddns-scripts: porkbun bugfix for subdomain on A/AAAA record
-0a0680af1|Othmar Truniger|Tue Oct 29 19:56:45 2024 +0100|knxd: bump to new version 0.14.66
-7e272a577|Rosen Penev|Sat Aug 17 21:35:49 2024 -0700|libuwifi: update to latest master
-0532015a2|Florian Eckert|Tue Oct 29 10:45:00 2024 +0100|mwan3: bump PKG_RELEASE
-138766c96|Stijn Tintel|Mon Oct 28 19:19:57 2024 +0200|keepalived: bump to 2.3.1
-eee70036a|Stijn Tintel|Mon Oct 28 19:18:07 2024 +0200|keepalived: bump to 2.3.0
-03691c224|Christian Marangi|Wed Oct 23 18:55:40 2024 +0200|luajit2: switch to GIT source and adapt to APK friendly version
-619629ce8|Florian Eckert|Mon Jul 29 09:23:35 2024 +0200|mwan3: close flock fd when starting mwan3.user scripts
-f60ea9a7f|Stan Grishin|Thu Oct 24 20:12:35 2024 +0000|pbr: update to 1.1.7-29
-d1e869462|Stan Grishin|Fri Oct 25 17:11:51 2024 +0000|adblock-fast: bugfix: fix allowed domains for dnsmasq.servers
-ae6d0ab7a|Evgeny Grin (Karlson2k)|Mon Oct 28 11:53:38 2024 +0100|libmicrohttpd: Fix too long title
-dda336d96|Jonas Jelonek|Mon Oct 28 08:21:05 2024 +0000|eza: update to 0.20.5
-7dc382a6e|Jonas Jelonek|Mon Oct 28 09:17:48 2024 +0000|croc: update to 10.0.13
-fca0cecf8|Sandro Jäckel|Fri Oct 18 04:28:32 2024 +0200|tailscale: update to 1.76.3
-c488c16c8|Javier Marcet|Mon Jun 24 17:32:10 2024 +0200|schroot: add boost-1.85 compatibility patch
-8fca94638|Paul Donald|Wed Oct 9 22:41:11 2024 +0200|clamav: bump PKG_RELEASE
-0becc62f8|Paul Donald|Tue Oct 8 22:18:33 2024 +0200|clamav: freshclam: Add documented options
-c7d23b60c|Paul Donald|Tue Oct 8 22:11:57 2024 +0200|clamav: freshclam: Remove UpdateLogFile option
-22a05a91b|Paul Donald|Tue Oct 8 22:59:56 2024 +0200|clamav: milter: Add Debug option
-921279261|Paul Donald|Tue Oct 8 22:59:18 2024 +0200|clamav: Add syslogging options
-1631ad8e3|Paul Donald|Tue Oct 8 21:14:26 2024 +0200|clamav: Align with milter options and remove LogFile* options
-fc26c6b4f|Paul Donald|Tue Oct 8 19:52:13 2024 +0200|clamav: milter: Remove deprecated AllowSupplementaryGroups option
-85e44b480|Paul Donald|Tue Oct 8 19:40:16 2024 +0200|clamav: Fix UCI error
-0689238ef|Evgeny Grin (Karlson2k)|Sun Oct 27 17:23:40 2024 +0100|libmicrohttpd: Use external hashing functions
-c60190ae6|Evgeny Grin (Karlson2k)|Sun Oct 27 17:17:28 2024 +0100|libmicrohttpd: Fixed 'TITLE'
-3c8028916|Evgeny Grin (Karlson2k)|Sun Oct 27 17:12:21 2024 +0100|libmicrohttpd: Drop unneeded libgcrypt dependency
-ae675a5b1|Evgeny Grin (Karlson2k)|Sun Oct 27 17:03:10 2024 +0100|libmicrohttpd: Enable 'poll()' usage
-7a8ec328b|Jen Wolf|Sun Oct 27 14:45:41 2024 -0700|libmicrohttpd update to 1.0.1
-86602b5f3|Christian Marangi|Tue Oct 22 15:27:36 2024 +0200|micropython: bump to 1.23.0 release
-e3217b54e|Dirk Brenken|Sun Oct 27 15:24:16 2024 +0100|adblock: update to 4.2.2-8
+0cb1b9d12|Stan Grishin|Thu Oct 31 01:57:37 2024 +0000|adblock-fast: update to 1.1.2-10
+6057b2702|Dengfeng Liu|Sat Oct 26 20:53:03 2024 +0800|apfree-wifidog: Update to 7.10.2082
+9cec28be5|Dengfeng Liu|Sat Oct 26 20:47:06 2024 +0800|apfree-wifidog: improve structure and readability
 </details>

@@ -2,19 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fc76f3e05c|Tianling Shen|Thu Oct 31 16:42:22 2024 +0800|Merge Official Source
-f9899fd1a3|Hosted Weblate|Wed Oct 30 13:47:28 2024 +0100|Translated using Weblate (Irish)
-de75eb9dfb|Interesting Gang|Wed Oct 30 08:39:15 2024 +0800|luci-app-passwall: bump version 4.78-4
-2becdcc2f5|Rudy Andram|Tue Oct 29 05:21:16 2024 +0000|luci-mod-network: add 11be support - revert hwval null check for 5g/2g mode
-ecd100475f|Stan Grishin|Mon Oct 28 17:12:16 2024 -0700|Merge pull request #7348 from stangri/master-luci-app-pbr
-d3ba74ed9b|Paul Donald|Mon Oct 28 14:22:37 2024 +0100|luci-mod-system: add 'reload' button to software start page
-e9db8fd8be|Tianling Shen|Mon Oct 28 16:30:10 2024 +0800|luci-theme-argon: keep background files uploaded by user
-79e9a4717b|Paul Donald|Mon Oct 28 02:09:30 2024 +0100|luci-mod-network: move wifi country-code to 'general' tab
-392b7e6b0d|Paul Donald|Sat Oct 26 16:11:06 2024 +0200|luci-mod-dashboard: fix for devices that do not report noise floor
-0df7955d37|Paul Donald|Fri Oct 25 23:50:17 2024 +0200|github: update issue_template
-ba530891d5|Paul Donald|Fri Sep 27 03:11:02 2024 +0200|luci-proto-vxlan: introduce peers tab and additional vxlan settings
-f1b302d49b|Paul Donald|Fri Oct 25 21:41:33 2024 +0200|luci-proto-wireguard: make peer entries sortable
-5d0d56ebfb|Hannu Nyman|Fri Oct 25 20:05:59 2024 +0300|treewide: Sync translations
-4c08b34511|Hosted Weblate|Fri Oct 25 18:55:06 2024 +0200|Translated using Weblate (Finnish)
-e9ce4e32d0|Stan Grishin|Thu Oct 24 20:20:41 2024 +0000|luci-app-pbr: Sync with pbr 1.1.7-29
+814564cc98|Tianling Shen|Fri Nov 1 16:56:40 2024 +0800|luci-app-homeproxy: sync mainline
+e492bc8e73|Tianling Shen|Fri Nov 1 16:20:23 2024 +0800|Merge Official Source
+23657ad52c|Stan Grishin|Thu Oct 31 10:05:01 2024 -0700|Merge pull request #7368 from stangri/master-luci-app-pbr
+2a09205aed|Stan Grishin|Thu Oct 31 01:59:47 2024 +0000|luci-app-pbr: update to sync with principal package
 </details>
