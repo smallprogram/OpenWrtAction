@@ -2,11 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-eed5c6b84|ImmortalWrt AutoUpdate Bot|Fri Nov 1 19:08:47 2024 +0000|v2raya: Update to 2.2.6.2
-e6cc9c386|ImmortalWrt AutoUpdate Bot|Fri Nov 1 19:07:45 2024 +0000|cloudflared: Update to 2024.10.1
-f05d1dcd8|ImmortalWrt AutoUpdate Bot|Fri Nov 1 19:08:03 2024 +0000|v2ray-core: Update to 5.21.0
-98d63963e|Tianling Shen|Fri Nov 1 16:19:32 2024 +0800|Merge Official Source
-ceda7c95f|Stan Grishin|Thu Oct 31 01:45:57 2024 +0000|pbr: update to 1.1.7-47
-185c5f038|Yury Potapov|Tue Oct 15 18:14:51 2024 +0300|openconnect: introduced script parameter
-1fcaf0ac1|Rosen Penev|Mon Oct 7 18:13:17 2024 -0700|libseccomp: update to 2.5.5
+15bf89688|Tianling Shen|Sat Nov 2 19:16:07 2024 +0800|v2ray-geodata: Update to latest version
 </details>

@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-897572506|Daniel Golle|Sat Oct 5 22:19:43 2024 +0100|generic: phy: aquantia: correctly describe LED polarity
-e5c20ddcd|Robert Marko|Sun Feb 11 18:56:54 2024 +0100|generic: add fix for AQR113 PMD Global Transmit Disable bit
-8537d3eae|coolsnowwolf|Fri Nov 1 12:03:49 2024 +0800|filogic: add support for ZyXEL EX5700
+011c3ad78|Daniel Golle|Tue Aug 20 17:20:29 2024 +0100|mediatek: backport pending Ethernet PHY driver patches
+407888519|Daniel Golle|Mon Jun 17 15:31:12 2024 +0100|generic: backport pending driver for Winchip CH348 USB
 </details>

@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0cb1b9d12|Stan Grishin|Thu Oct 31 01:57:37 2024 +0000|adblock-fast: update to 1.1.2-10
-6057b2702|Dengfeng Liu|Sat Oct 26 20:53:03 2024 +0800|apfree-wifidog: Update to 7.10.2082
-9cec28be5|Dengfeng Liu|Sat Oct 26 20:47:06 2024 +0800|apfree-wifidog: improve structure and readability
+5fb541f00|Tianling Shen|Sat Nov 2 19:19:10 2024 +0800|v2ray-geodata: Update to latest version
+a08614a04|Tianling Shen|Sat Nov 2 19:17:33 2024 +0800|v2raya: Update to 2.2.6.2
+a15d47d7b|Tianling Shen|Sat Nov 2 19:17:22 2024 +0800|cloudflared: Update to 2024.10.1
+ac02f53ea|Tianling Shen|Sat Nov 2 19:16:47 2024 +0800|v2ray-core: Update to 5.20.1
 </details>

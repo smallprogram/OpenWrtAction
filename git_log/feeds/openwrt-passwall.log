@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+fc2aa64|lwb1978|Sun Nov 3 12:03:07 2024 +0800|luci: Xray SplitHTTP XMUX
+d050c92|lwb1978|Sat Nov 2 21:03:22 2024 +0800|luci: Increase compatibility for custom domain names in the rule list
+</details>

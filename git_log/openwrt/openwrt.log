@@ -2,11 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-efd1ec51a1|Álvaro Fernández Rojas|Fri Nov 1 21:44:43 2024 +0100|bcm27xx-gpu-fw: fix package
-2915cfb626|Paul Donald|Tue Oct 29 21:49:00 2024 +0100|kernel: KERNEL_NET_L3_MASTER_DEV default to y if !SMALL_FLASH
-a85f11f191|John Crispin|Sat Sep 21 09:48:47 2024 +0200|mediatek: filogic: add Arcadyan Mozart platform
-ddfae94a14|John Crispin|Tue Oct 29 13:40:11 2024 +0100|mediatek: add support for swapping the polarity on usxgmii interfaces
-cfe8e6e75f|John Crispin|Tue Oct 29 13:37:40 2024 +0100|mediatek: add support for Realtek RTL8261n 10G PHYs
-88fa1f7b1e|John Crispin|Sat Sep 21 09:47:26 2024 +0200|uboot-mediatek: add support for arcadyan,mozart
-a535cfc09e|Petr Štetiar|Fri Nov 1 06:25:07 2024 +0000|openwrt-keyring: add OpenWrt 24.10 release build usign key
+675d7c8849|Daniel Golle|Sun Nov 3 02:38:17 2024 +0000|mediatek: refresh patches
+591272d197|Daniel Golle|Sat Nov 2 20:17:52 2024 +0000|mediatek: filogic: BPi-R4: wire up pinctrl for pwm-fan
+2cbd230091|Daniel Golle|Sat Nov 2 20:01:05 2024 +0000|mediatek: pinctrl-mt7988: add missing PWM pingroups
+5745b7e815|Daniel Golle|Thu Oct 31 21:08:10 2024 +0000|uboot-mediatek: import patches improving menu navigation
+57f2c72505|Rosen Penev|Fri Oct 18 18:56:30 2024 -0700|ipq40xx: use devm for mutex_init
 </details>

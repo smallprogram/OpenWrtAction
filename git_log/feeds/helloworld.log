@@ -1,0 +1,7 @@
+<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+de32f32|coolsnowwolf|Sat Nov 2 12:53:39 2024 +0800|xray-core: update to 24.10.31
+c68309f|coolsnowwolf|Sat Nov 2 12:48:55 2024 +0800|Revert "luci-app-ssr-plus: ssr-rules: Delete unnecessary rules from the gfw."
+</details>
