@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-011c3ad78|Daniel Golle|Tue Aug 20 17:20:29 2024 +0100|mediatek: backport pending Ethernet PHY driver patches
-407888519|Daniel Golle|Mon Jun 17 15:31:12 2024 +0100|generic: backport pending driver for Winchip CH348 USB
+4915cc9ed|喵二|Mon Nov 4 10:08:08 2024 +0800|leigod-acc: update binary program (#12608)
+963090631|Daniel Golle|Fri Nov 1 03:37:51 2024 +0000|mediatek: mt7988: fix peripheral SPI busses
+f942a330f|Daniel Golle|Sat Nov 2 20:17:52 2024 +0000|mediatek: filogic: BPi-R4: wire up pinctrl for pwm-fan
+6bcceed65|Daniel Golle|Sat Nov 2 20:01:05 2024 +0000|mediatek: pinctrl-mt7988: add missing PWM pingroups
 </details>

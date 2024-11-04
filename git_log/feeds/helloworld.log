@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-de32f32|coolsnowwolf|Sat Nov 2 12:53:39 2024 +0800|xray-core: update to 24.10.31
-c68309f|coolsnowwolf|Sat Nov 2 12:48:55 2024 +0800|Revert "luci-app-ssr-plus: ssr-rules: Delete unnecessary rules from the gfw."
+2603ac7|coolsnowwolf|Sun Nov 3 23:16:49 2024 +0800|luci-app-ssr-plus: refact config reset default button
 </details>

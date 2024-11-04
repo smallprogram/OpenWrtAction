@@ -2,8 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5fb541f00|Tianling Shen|Sat Nov 2 19:19:10 2024 +0800|v2ray-geodata: Update to latest version
-a08614a04|Tianling Shen|Sat Nov 2 19:17:33 2024 +0800|v2raya: Update to 2.2.6.2
-a15d47d7b|Tianling Shen|Sat Nov 2 19:17:22 2024 +0800|cloudflared: Update to 2024.10.1
-ac02f53ea|Tianling Shen|Sat Nov 2 19:16:47 2024 +0800|v2ray-core: Update to 5.20.1
+712e40370|Eric Fahlgren|Wed Oct 30 18:55:33 2024 -0700|owut: fix order of uci-defaults
+e0d8a72da|Moritz Warning|Fri Nov 1 20:09:27 2024 +0100|kadnode: Update to version 2.4.0
+1f3fa379d|Robert Marko|Sun Nov 3 22:43:32 2024 +0100|atop: add missing nls.mk include
+09a2427c2|Antonio Pastor|Sun Nov 3 13:41:21 2024 -0500|netatalk: Enable AppleTalk feature
+049a055b7|Antonio Pastor|Sun Nov 3 13:40:02 2024 -0500|netatalk: Clean up Makefile
+d0abe3d52|Antonio Pastor|Fri Oct 25 00:03:33 2024 -0400|netatalk: Update to 4.0.4
+d33977e50|Maxim Storchak|Mon Oct 7 19:10:58 2024 +0300|tgt: enable support for thin_provisioning
+44d2aff32|Gábor Deé|Tue Oct 29 11:39:19 2024 +0100|libdeflate: update to 1.22
+73eaf0b36|Rosen Penev|Sun Oct 27 14:52:43 2024 -0700|geth: remove
+28f48027b|Javier Marcet|Tue Aug 20 18:52:08 2024 +0200|luajit2: update to v2.1-20240815
+3a8c5cdd5|Rosen Penev|Fri Aug 23 13:52:24 2024 -0700|pservice: modify date for apk compatibility
 </details>

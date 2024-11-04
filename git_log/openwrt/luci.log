@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-22971a5bf8|Hannu Nyman|Sat Nov 2 13:46:14 2024 +0200|luci-app-package-manager: fix 'Update lists' button for apk
+d90728d2c0|Hannu Nyman|Sun Nov 3 16:19:15 2024 +0200|luci-app-package-manager: Show the executed command
+5c27cf3671|Hannu Nyman|Sat Nov 2 18:27:05 2024 +0200|luci-app-package-manager: Fix upgrade action for apk
 </details>
