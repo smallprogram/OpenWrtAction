@@ -1,7 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-d90728d2c0|Hannu Nyman|Sun Nov 3 16:19:15 2024 +0200|luci-app-package-manager: Show the executed command
-5c27cf3671|Hannu Nyman|Sat Nov 2 18:27:05 2024 +0200|luci-app-package-manager: Fix upgrade action for apk
-</details>

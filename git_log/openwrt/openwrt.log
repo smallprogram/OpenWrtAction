@@ -2,9 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d64e1ed421|Leon M. Busch-George|Sat Nov 2 12:28:51 2024 +0100|mediatek: YunCore AX835: fix voltage regulator
-e99b5832e8|Rosen Penev|Sat Oct 19 15:51:51 2024 -0700|ath79: gpio-rb91x-key: use gpiochip_get_data
-6d2ed484fa|Rosen Penev|Sat Oct 19 15:49:42 2024 -0700|ath79: gpio-latch-miktorik: use gpiochip_get_data
-e612900ae0|Rosen Penev|Thu Oct 24 14:51:29 2024 -0700|ramips: mt7621: convert usb power to regulators
-ef4df2b5e9|Chuanhong Guo|Sat Nov 2 22:24:21 2024 +0800|kernel: can: package driver for Geschwister Schneider interface
+31f1dabb4b|Mieczyslaw Nalewaj|Fri Nov 1 21:59:23 2024 +0100|mac80211: compatibility with kernel 6.6.59
+4fc47c6000|Mieczyslaw Nalewaj|Sun Nov 3 08:53:37 2024 +0100|kernel: bump 6.6 to 6.6.59
+8508d87495|Robert Marko|Mon Nov 4 18:20:06 2024 +0100|nu801: Mark as nonshared to build in step 1
+11ba2b141f|Mauri Sandberg|Fri Oct 11 10:38:07 2024 +0300|ramips: Fix EX400 imagebuilder
+f2bddc1789|Enrico Mioso|Mon Oct 21 23:39:59 2024 +0200|uboot-mediatek: fix boot media for mt7981 RFB NOR profile
+c6a6aac763|Rosen Penev|Fri Aug 2 14:30:32 2024 -0700|gpio-button-hotplug: use flexible array member
+37784c48e9|Petr Štetiar|Mon Nov 4 07:33:37 2024 +0000|openwrt-keyring: fix missing 24.10 usign key by installing it
+7da9d6bfe0|Linus Walleij|Sun Nov 3 09:34:31 2024 +0100|mtd: Add backported Winbond fix
 </details>

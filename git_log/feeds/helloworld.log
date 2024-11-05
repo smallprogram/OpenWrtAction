@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2603ac7|coolsnowwolf|Sun Nov 3 23:16:49 2024 +0800|luci-app-ssr-plus: refact config reset default button
+6ffe77c|zxlhhyccc|Mon Nov 4 21:51:51 2024 +0800|luci-app-ssr-plus: Fix fragment 'sockopt' tcpMptcp and tcpNoDelay options together use.
+b10949e|zxlhhyccc|Mon Nov 4 21:36:40 2024 +0800|luci-app-ssr-plus: Delete unnecessary rules from the gfw. In gfw mode, if this rule is used, foreign IP addresses that can be directly connected are proxy.
 </details>

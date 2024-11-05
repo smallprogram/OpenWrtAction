@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+9d7929e|lwb1978|Tue Nov 5 09:15:48 2024 +0800|luci: Xray XHTTP splitting(Client only)
+740a445|moetayuko|Mon Nov 4 23:31:17 2024 +0800|luci: remove nft cache on postrm (#3472)
+5680f4a|lwb1978|Mon Nov 4 23:29:44 2024 +0800|luci: app.sh separates the configuration code for chinadns-ng
+</details>
