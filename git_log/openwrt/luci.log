@@ -1,0 +1,9 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+1c61a66950|Paul Donald|Tue Nov 5 19:31:33 2024 +0100|luci-mod-network: show 'Interface disabled' in status
+7dde3239e0|Paul Donald|Tue Nov 5 19:06:49 2024 +0100|luci-mod-status: rework interface status info
+247820d854|Paul Donald|Tue Nov 5 18:34:18 2024 +0100|luci-mod-network: rework interface status info
+37682ded6f|Paul Donald|Tue Nov 5 18:33:05 2024 +0100|luci-base: network; implement getIP6Prefixes()
+</details>

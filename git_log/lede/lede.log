@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+d83c55af8|aiamadeus|Tue Oct 29 23:01:02 2024 +0800|rockchip: enable lcd/pwm-fan for srcm3588
+6cbe4f513|aiamadeus|Mon Oct 7 23:26:40 2024 +0800|ipq60xx: fixes usb3 power for jdc ax6600
 84cd7b81c|Beginner|Tue Nov 5 10:01:01 2024 +0800|kernel: bump 6.6 to 6.6.59 (#12644)
 </details>

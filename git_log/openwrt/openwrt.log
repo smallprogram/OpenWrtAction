@@ -2,12 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-31f1dabb4b|Mieczyslaw Nalewaj|Fri Nov 1 21:59:23 2024 +0100|mac80211: compatibility with kernel 6.6.59
-4fc47c6000|Mieczyslaw Nalewaj|Sun Nov 3 08:53:37 2024 +0100|kernel: bump 6.6 to 6.6.59
-8508d87495|Robert Marko|Mon Nov 4 18:20:06 2024 +0100|nu801: Mark as nonshared to build in step 1
-11ba2b141f|Mauri Sandberg|Fri Oct 11 10:38:07 2024 +0300|ramips: Fix EX400 imagebuilder
-f2bddc1789|Enrico Mioso|Mon Oct 21 23:39:59 2024 +0200|uboot-mediatek: fix boot media for mt7981 RFB NOR profile
-c6a6aac763|Rosen Penev|Fri Aug 2 14:30:32 2024 -0700|gpio-button-hotplug: use flexible array member
-37784c48e9|Petr Štetiar|Mon Nov 4 07:33:37 2024 +0000|openwrt-keyring: fix missing 24.10 usign key by installing it
-7da9d6bfe0|Linus Walleij|Sun Nov 3 09:34:31 2024 +0100|mtd: Add backported Winbond fix
+685e979d47|David Bauer|Tue Nov 5 20:03:39 2024 +0100|fritz-tools: fix mixed indentation
+6490c88c75|Álvaro Fernández Rojas|Tue Nov 5 14:01:06 2024 +0100|kernel: r8168: refresh patch
+21b5ac862e|Daniel Golle|Tue Nov 5 03:05:31 2024 +0000|build: set PATH for post-install scripts
+48028cd102|John Crispin|Tue Nov 5 09:43:38 2024 +0100|mediatek: set 7 MACs per wifi band in board.json on OpenWrt One
+6ec1477b4d|John Crispin|Sun Sep 22 09:07:58 2024 +0200|mediatek: set mac increment to 7 for the 5G radio on OpenWrt One
+f35a29d63f|Paul Spooren|Mon Nov 4 22:34:52 2024 +0100|packages: drop DEVICE specific dependency for omnia
+562b2c22ff|Álvaro Fernández Rojas|Tue Nov 5 00:33:02 2024 +0100|kernel: r8126: update to v10.014.01
 </details>
