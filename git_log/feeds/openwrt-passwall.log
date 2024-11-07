@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0a9bc7a|lwb1978|Wed Nov 6 00:38:39 2024 +0800|luci: optimize the logic of add shunt rule IP list to the firewall
+07974c2|lwb1978|Thu Nov 7 00:05:10 2024 +0800|luci: use chinadns-ng to handle domain lists for shunt rules
 </details>

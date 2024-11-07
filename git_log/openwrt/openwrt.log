@@ -2,11 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-685e979d47|David Bauer|Tue Nov 5 20:03:39 2024 +0100|fritz-tools: fix mixed indentation
-6490c88c75|Álvaro Fernández Rojas|Tue Nov 5 14:01:06 2024 +0100|kernel: r8168: refresh patch
-21b5ac862e|Daniel Golle|Tue Nov 5 03:05:31 2024 +0000|build: set PATH for post-install scripts
-48028cd102|John Crispin|Tue Nov 5 09:43:38 2024 +0100|mediatek: set 7 MACs per wifi band in board.json on OpenWrt One
-6ec1477b4d|John Crispin|Sun Sep 22 09:07:58 2024 +0200|mediatek: set mac increment to 7 for the 5G radio on OpenWrt One
-f35a29d63f|Paul Spooren|Mon Nov 4 22:34:52 2024 +0100|packages: drop DEVICE specific dependency for omnia
-562b2c22ff|Álvaro Fernández Rojas|Tue Nov 5 00:33:02 2024 +0100|kernel: r8126: update to v10.014.01
+e29bc67f9d|Álvaro Fernández Rojas|Wed Nov 6 10:00:56 2024 +0100|kernel: r8125: update to v9.014.01
+09a8b4920c|Christian Marangi|Wed Nov 6 10:38:20 2024 +0100|procd: update to Git HEAD (2024-11-06)
 </details>

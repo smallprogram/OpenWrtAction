@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c477c0b20|Eric Fahlgren|Sun Nov 3 19:43:44 2024 -0800|owut: update to 2024.10.27
-605e717fc|Tianling Shen|Tue Nov 5 16:05:28 2024 +0800|alist: Update to 3.39.1
-07efd504a|Antonio Pastor|Mon Nov 4 17:18:56 2024 -0500|netatalk: Remove apfstats feature to solve dependency issues
+6a1b0e8c9|Javier Marcet|Tue Nov 5 23:07:42 2024 +0100|docker-compose: Update to version 2.30.2
 </details>
