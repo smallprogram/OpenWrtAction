@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-07974c2|lwb1978|Thu Nov 7 00:05:10 2024 +0800|luci: use chinadns-ng to handle domain lists for shunt rules
+afff9ee|lwb1978|Thu Nov 7 21:11:31 2024 +0800|luci: iptables/nftables optimize and fix
 </details>

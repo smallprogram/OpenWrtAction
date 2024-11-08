@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-44cccd68f|aiamadeus|Sun Nov 3 21:02:26 2024 +0800|rtw88-usb: update to latest git HEAD
-7ce7dc32e|aiamadeus|Wed Oct 30 20:18:03 2024 +0800|linux-firmware: update RTW88/89 firmware
+19649ea2d|aiamadeus|Thu Nov 7 21:01:19 2024 +0800|r8152: update to version 2.19.2
+f0ab31724|aiamadeus|Mon Nov 4 23:15:06 2024 +0800|rkbin: update to latest git HEAD
 </details>

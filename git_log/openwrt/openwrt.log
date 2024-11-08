@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e29bc67f9d|Álvaro Fernández Rojas|Wed Nov 6 10:00:56 2024 +0100|kernel: r8125: update to v9.014.01
-09a8b4920c|Christian Marangi|Wed Nov 6 10:38:20 2024 +0100|procd: update to Git HEAD (2024-11-06)
+0a7b7ef27c|Daniel Golle|Sat Nov 2 20:22:35 2024 +0000|kernel: modules: package driver for generic MIPI DBI TFT panels
+6691ff86b7|Edward Chow|Tue Mar 5 01:24:10 2024 +0800|ath79: linksys_ea4500-v3: take over the space for user data
 </details>

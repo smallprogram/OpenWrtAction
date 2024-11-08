@@ -1,8 +1,0 @@
-<details> <summary> <b>telephony new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-0d8558a|Jiri Slachta|Wed Nov 6 23:09:47 2024 +0100|Update MAINTAINERS
-dfce253|Jiri Slachta|Wed Nov 6 23:07:42 2024 +0100|Merge pull request #886 from micmac1/no-maint
-81ecfdf|Sebastian Kemper|Wed Nov 6 18:50:59 2024 +0100|Remove maintainer
-</details>

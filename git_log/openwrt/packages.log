@@ -2,5 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6a1b0e8c9|Javier Marcet|Tue Nov 5 23:07:42 2024 +0100|docker-compose: Update to version 2.30.2
+49e3c330d|Sean Khan|Thu Jun 27 22:06:30 2024 -0400|python3: Bump version 3.11 to 3.11.9
+983d3a955|Daniel Golle|Tue Nov 5 03:15:26 2024 +0000|glib2: fix pkg-config path for glib_compile_schemas
+fe5649f37|Christian Marangi|Thu Nov 7 15:24:13 2024 +0100|fwupd: bump to 2.0.1 and make libdrm support configurable
+644bddc02|Rosen Penev|Sun Oct 27 22:06:37 2024 -0700|softethervpn: add APK compatibility
+2be77b655|Rosen Penev|Sun Oct 27 17:03:22 2024 -0700|softethervpn: fix compilation with GCC14
+a8dc8a281|Christian Marangi|Thu Nov 7 14:33:52 2024 +0100|umurmur: add pending patch fixing support for MbedTLS 3.x
+34cb47d34|Sebastian Kemper|Wed Nov 6 19:10:38 2024 +0100|treewide: remove maintainer
+b962029fa|Xiaolong Zhang|Mon Sep 30 03:46:29 2024 +0800|ddns-scripts: add colon char in DNS_CHARSET
 </details>

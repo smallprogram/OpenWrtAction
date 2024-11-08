@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-04bb122|zxl hhyccc|Thu Nov 7 00:01:47 2024 +0800|luci-app-ssr-plus: Generated original order `gfw` list.
-8f3b7ea|zxl hhyccc|Wed Nov 6 23:44:09 2024 +0800|luci-app-ssr-plus: Fix `cp: can't create '/dnsmasq-ssrplus.d/gfw_list.conf': No such file or directory`.
+2278b99|zxlhhyccc|Thu Nov 7 22:56:04 2024 +0800|luci-app-ssr-plus: Fix wrong path is:`/dnsmasq-ssrplus.d/gfw_list.conf`.
 </details>
