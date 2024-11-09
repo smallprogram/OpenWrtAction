@@ -1,0 +1,6 @@
+<details> <summary> <b>telephony new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+f3d37d5|Christian Marangi|Fri Nov 8 17:03:09 2024 +0100|CI: multi-arch-test-build: move to shared workflow
+</details>

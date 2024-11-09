@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-afff9ee|lwb1978|Thu Nov 7 21:11:31 2024 +0800|luci: iptables/nftables optimize and fix
+12a5d09|lwb1978|Sat Nov 9 01:27:20 2024 +0800|luci: Optimization when using ChinaDNS-NG
 </details>

@@ -1,7 +1,0 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-00fb8ee5|coolsnowwolf|Tue Nov 5 23:10:16 2024 +0800|cloudflared: bump to latest
-0fa76a3e|coolsnowwolf|Wed Nov 6 23:10:25 2024 +0800|ddns-go: update to v6.7.6
-</details>

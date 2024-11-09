@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2278b99|zxlhhyccc|Thu Nov 7 22:56:04 2024 +0800|luci-app-ssr-plus: Fix wrong path is:`/dnsmasq-ssrplus.d/gfw_list.conf`.
+88e303d|zxl hhyccc|Sat Nov 9 09:02:27 2024 +0800|Merge pull request #1583 from zxlhhyccc/Xray-update
+65ff69c|zxlhhyccc|Mon Nov 4 22:53:22 2024 +0800|luci-app-ssr-plus: Add Xray new version RAW transport (formerly tcp transport) support. See: https://xtls.github.io/config/transports/raw.html
 </details>

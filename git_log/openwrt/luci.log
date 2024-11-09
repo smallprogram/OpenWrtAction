@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0691504ef0|Paul Donald|Fri Nov 8 11:33:44 2024 +0100|luci-app-wifischedule: tighten acl perms
+8f7f14208a|Paul Donald|Thu Nov 7 21:23:25 2024 +0100|luci-base: fix documented path
+</details>
