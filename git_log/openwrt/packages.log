@@ -2,9 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0b1470bd6|Jan Hák|Tue Nov 5 13:05:12 2024 +0100|knot: update to verion 3.4.2
-e337b588a|Til Kaiser|Fri Nov 8 12:40:02 2024 +0100|mstflint: update to 4.30.0
-2a35a9cab|Christian Marangi|Fri Nov 8 19:36:52 2024 +0100|CI: multi-arch-test-build: move to shared workflow
-ee89d79eb|Roc Lai|Fri Oct 25 16:37:07 2024 +0800|ariang: Bump to version 1.3.7
-bfbb58ae0|Rosen Penev|Sun Oct 27 22:35:52 2024 -0700|nginx: update geoip2 module
+c9b32b99c|Jack Baldry|Tue Sep 24 15:18:13 2024 +0100|prometheus-node-exporter-lua: Fix typos
+1f17e41e4|Hirokazu MORIKAWA|Fri Nov 8 09:42:52 2024 +0900|node: Preparing to update ICU to 76
+dd3c410ab|Jianhui Zhao|Sat Nov 9 18:28:01 2024 +0800|lua-eco: update to 3.6.1
 </details>

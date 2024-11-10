@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-12a5d09|lwb1978|Sat Nov 9 01:27:20 2024 +0800|luci: Optimization when using ChinaDNS-NG
+cd67fdb|lwb1978|Sat Nov 9 17:39:54 2024 +0800|luci: optimize DNS related log output logic
 </details>

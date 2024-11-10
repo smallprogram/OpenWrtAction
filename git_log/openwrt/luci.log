@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0691504ef0|Paul Donald|Fri Nov 8 11:33:44 2024 +0100|luci-app-wifischedule: tighten acl perms
-8f7f14208a|Paul Donald|Thu Nov 7 21:23:25 2024 +0100|luci-base: fix documented path
+384790944d|Hannu Nyman|Sat Nov 9 21:10:12 2024 +0200|luci.mk: Add apk compatibility to PKG_RELEASE handling
+96fa870979|Hannu Nyman|Sat Nov 9 19:10:05 2024 +0200|Merge pull request #7367 from abajk/channel-160mhz
+aa79c3f30d|Aleksander Jan Bajkowski|Wed Oct 30 00:12:52 2024 +0100|luci-mod-status: channel_analysis: detect 160 MHz capable AP
 </details>

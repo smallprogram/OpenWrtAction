@@ -1,0 +1,72 @@
+<details> <summary> <b>OpenClash new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+1d0e7442|vernesong|Sat Nov 9 19:23:23 2024 +0800|Merge branch 'dev'
+870478ac|vernesong|Sat Nov 9 19:19:16 2024 +0800|0.46.050
+9bd23f65|vernesong|Sat Nov 9 16:44:19 2024 +0800|#4165
+59825685|vernesong|Fri Nov 8 16:59:47 2024 +0800|chore: refine
+6c1f40e5|vernesong|Fri Nov 8 16:28:56 2024 +0800|chore: refine
+4a31252e|vernesong|Fri Nov 8 10:01:59 2024 +0800|#4164
+9bd8366a|vernesong|Fri Nov 8 00:24:38 2024 +0800|0.46.049
+fc2eb25c|vernesong|Fri Nov 8 00:23:38 2024 +0800|chore: refine
+48e6b725|vernesong|Mon Nov 4 16:20:37 2024 +0800|chore: refine ruby code
+1095b244|vernesong|Sun Nov 3 17:36:37 2024 +0800|workflow: go 1.23
+3dcfe93e|vernesong|Fri Nov 1 02:13:59 2024 +0800|0.46.048
+8cd67b6a|vernesong|Fri Nov 1 02:10:58 2024 +0800|#4114 #4145
+18045850|vernesong|Thu Oct 31 18:03:18 2024 +0800|#4144
+179245f8|vernesong|Thu Oct 31 15:09:15 2024 +0800|#4143
+04b268da|vernesong|Sun Oct 27 17:28:59 2024 +0800|0.46.047
+8fb9048f|vernesong|Sun Oct 27 17:14:12 2024 +0800|chore: lhie1
+1138c527|vernesong|Fri Oct 25 13:32:32 2024 +0800|#4125
+78e2f9fb|vernesong|Sun Oct 20 22:17:50 2024 +0800|fix bug
+d1d95e39|Ekko|Sat Oct 19 18:41:42 2024 +0800|feat: support port range in common_ports (#4130)
+77910b27|vernesong|Fri Oct 18 08:17:07 2024 +0800|chore: refine
+54a9d876|vernesong|Fri Oct 18 07:16:55 2024 +0800|chore: ipset depend only fw3 and default y for dnsmasq sets support #4124
+0aa1c59e|vernesong|Thu Oct 17 12:47:17 2024 +0800|0.46.046
+a6eb22ed|vernesong|Thu Oct 17 11:59:15 2024 +0800|0.46.045
+8084c01d|vernesong|Thu Oct 17 11:58:47 2024 +0800|#4121
+1b28334f|Ekko|Wed Oct 16 10:10:27 2024 +0800|add more invalid IP to openclash_custom_fallback_filter.yaml (#4120)
+4c301282|vernesong|Mon Oct 14 00:39:18 2024 +0800|0.46.044
+9620a3a7|vernesong|Sun Oct 13 23:53:42 2024 +0800|fix ip rule for tun mode
+94e7b31b|vernesong|Sat Oct 12 12:04:55 2024 +0800|0.46.043
+064915dd|vernesong|Sat Oct 12 12:04:27 2024 +0800|chore: refine
+4ba8002c|vernesong|Wed Oct 9 18:40:30 2024 +0800|chore: add ipv6 mix mode
+bc3a12a2|vernesong|Wed Oct 9 03:42:37 2024 +0800|0.46.042
+e3e898ed|vernesong|Wed Oct 9 02:08:03 2024 +0800|0.46.041
+96aa8491|vernesong|Tue Oct 8 00:31:09 2024 +0800|chore: use Yacd-meta defaut
+1d486a7a|vernesong|Tue Oct 8 00:05:55 2024 +0800|chore: less file check
+012403b0|vernesong|Mon Oct 7 23:38:21 2024 +0800|chore: quick start logic
+f29d38ee|TJT-JTJ|Mon Oct 7 22:06:54 2024 +0800|Update client.lua (#4097)
+1dc6674f|vernesong|Mon Oct 7 22:06:03 2024 +0800|chore: sniffer custom option
+1d1f98bd|vernesong|Mon Oct 7 15:33:52 2024 +0800|fix log format
+92909d77|vernesong|Mon Oct 7 14:28:37 2024 +0800|#4096
+3f735123|vernesong|Mon Oct 7 01:42:00 2024 +0800|0.46.040
+c0016909|vernesong|Mon Oct 7 01:40:44 2024 +0800|chore: refine
+2dc0e884|vernesong|Sat Oct 5 17:10:20 2024 +0800|fix: tun not work after firewall reload
+2de10fdf|vernesong|Sat Oct 5 10:15:24 2024 +0800|chore: refine
+dd2a8b75|vernesong|Sat Oct 5 07:18:02 2024 +0800|0.46.039
+5cbb2320|vernesong|Sat Oct 5 03:04:19 2024 +0800|fix tun error
+0646db3b|LovinYarn|Sat Oct 5 00:50:33 2024 +0800|chore: update metacubexd v1.151.0 (#4079)
+f206d19f|vernesong|Sat Oct 5 00:46:12 2024 +0800|chore: refine
+bce5f032|vernesong|Fri Oct 4 01:03:31 2024 +0800|0.46.038
+38937912|vernesong|Fri Oct 4 00:37:04 2024 +0800|0.46.037
+15c5ec94|vernesong|Thu Oct 3 20:04:22 2024 +0800|chore: refine
+82e8c213|vernesong|Thu Oct 3 17:52:33 2024 +0800|chore: refine
+49a88cf6|vernesong|Thu Oct 3 10:21:04 2024 +0800|0.46.036
+2efae526|vernesong|Thu Oct 3 10:19:48 2024 +0800|chore: refine ruby codes
+b78df147|vernesong|Wed Oct 2 18:11:56 2024 +0800|chore: ruby code refine
+97a35897|vernesong|Wed Oct 2 16:47:28 2024 +0800|#4077
+1188652b|vernesong|Wed Oct 2 02:39:39 2024 +0800|0.46.035
+50bc2f9d|vernesong|Wed Oct 2 02:20:47 2024 +0800|chore: refine
+5416ba7d|vernesong|Tue Oct 1 08:01:38 2024 +0800|chore: refine
+61c94beb|vernesong|Sun Sep 29 17:28:47 2024 +0800|chore: refine
+03b2b597|vernesong|Sun Sep 29 17:16:44 2024 +0800|0.46.034
+8d1a9ba8|vernesong|Sun Sep 29 16:56:02 2024 +0800|#4065
+d7456e4e|vernesong|Sat Sep 28 09:58:50 2024 +0800|chore: show subscribe url infos in logs
+4df90ee5|LovinYarn|Fri Sep 27 17:58:51 2024 +0800|chore: update metacubexd v1.150.0 (#4059)
+b21ef156|vernesong|Fri Sep 27 17:56:53 2024 +0800|Update GeoSite.dat
+50e3dae1|vernesong|Thu Sep 26 14:08:36 2024 +0800|#4052
+5e7930c0|vernesong|Thu Sep 26 14:07:56 2024 +0800|fix typo
+54418915|vernesong|Thu Sep 26 11:51:00 2024 +0800|fix bug
+</details>

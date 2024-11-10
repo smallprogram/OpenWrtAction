@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f3d37d5|Christian Marangi|Fri Nov 8 17:03:09 2024 +0100|CI: multi-arch-test-build: move to shared workflow
+0256d07|Jiri Slachta|Sat Nov 9 19:36:31 2024 +0100|Merge pull request #887 from Ansuel/fix-freetdm
+0a9ac6c|Christian Marangi|Fri Nov 8 02:37:20 2024 +0100|freetdm: add patch for PCRE2 support
 </details>

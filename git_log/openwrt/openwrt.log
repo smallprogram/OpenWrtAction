@@ -2,16 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a7abc7ec3b|David Lutz|Tue Nov 5 10:55:43 2024 +0100|ath79: Add support for Sophos AP15C
-ca53f2d430|Andrew MacIntyre|Fri Nov 8 23:44:13 2024 +1100|vrx518_tc: allow larger MTU to support RFC4638
-5b406bccac|Tim Lunn|Fri Apr 26 11:27:45 2024 +1000|rampis: mt7621: Edgerouter-X adjust IMAGE_SIZE to reflect new kernel size
-4d90b79704|Tim Lunn|Fri Apr 19 22:16:11 2024 +1000|ramips: mt7621: Edgerouter-X drop factory image
-71b4842e3b|Tim Lunn|Thu Apr 18 10:53:54 2024 +1000|rampis: mt7621: Re-enable Edgerouter-X image builds
-1bdbd511b2|Tim Lunn|Thu Apr 18 10:57:17 2024 +1000|rampis: mt7621: Edgerouter-X update compat version to 2.0
-70c371d91c|Tim Lunn|Thu Apr 18 10:56:07 2024 +1000|rampis: mt7621: Edgerouter-X set compat version message
-09a6bffb6e|Tim Lunn|Wed Apr 17 10:51:35 2024 +1000|rampis: mt7621: resize Edgerouter-X kernel size to 6MB
-5e355f1f90|Tim Lunn|Wed Apr 17 12:51:22 2024 +1000|rampis: mt7621: Edgerouter-X disable toggling of kernel slots
-dc51c4355d|Tim Lunn|Wed Apr 17 10:49:49 2024 +1000|rampis: mt7621: Convert Edgerouter-X dts to single kernel config
-5f68e24333|Felix Fietkau|Fri Nov 8 10:50:39 2024 +0100|netifd: update to Git HEAD (2024-11-08)
-a3ec35cadb|Felix Fietkau|Fri Nov 8 09:13:54 2024 +0100|wifi-scripts: add free-form "tags" array option for wifi-iface
+999ef8270f|Paul Spooren|Sun Nov 10 04:26:43 2024 +0100|imagebuilder: fix OPKG package inclusion
+cc98cfafd7|Rosen Penev|Thu Oct 31 12:22:04 2024 -0700|treewide: remove THIS_MODULE assignment
+8b6d5874b8|Leon M. Busch-George|Mon Feb 19 12:49:28 2024 +0100|hostapd: split long lines
+cbf7be9fb3|Marius Dinu|Sat Nov 9 19:20:47 2024 +0200|menuconfig: add help description for Stack Smashing Protection options
+79f06827ff|Christian Marangi|Wed Oct 23 01:13:15 2024 +0200|apk: Implement apk list --full patch
+b18ed663a5|Christian Marangi|Sun Nov 10 02:09:43 2024 +0100|apk: Bump to version 2024-11-08
+a7bc6bf7db|Rosen Penev|Wed Nov 6 13:23:35 2024 -0800|ramips: mt7621: add missing regulator-boot-on
+12a7307869|Paul Spooren|Fri Nov 8 10:37:16 2024 +0100|imagebuilder: init APK dirs every time
+15b7994c01|Paul Spooren|Wed Nov 6 16:34:32 2024 +0100|imagebuilder: cleanup package inclusion
+451e2ce006|Paul Spooren|Wed Nov 6 16:32:03 2024 +0100|imagebuilder: fix package inclusion and APK index
+ad1c1b7047|Paul Spooren|Fri Nov 1 12:33:49 2024 +0100|imagebuilder: fix APK for packages dir and cache
+15de218a56|Daniel Golle|Sat Nov 9 13:06:02 2024 +0000|Revert "build: set PATH for post-install scripts"
 </details>
