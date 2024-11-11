@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2b10822e1|coolsnowwolf|Sat Nov 9 23:01:43 2024 +0800|kernel: qca-ssdk/qca-nss-dp: update to 12.5 for kernel 6.6 support
-f2e1532a7|coolsnowwolf|Sat Nov 9 15:36:01 2024 +0800|qualcommax: add support for JDCloud AX3000
-a6ea160b4|coolsnowwolf|Sat Nov 9 11:25:33 2024 +0800|ath11k-firmware: add IPQ5018 wifi firmware
-03595dea6|coolsnowwolf|Sat Nov 9 11:25:33 2024 +0800|ath11k-firmware: add wifi firmware and BDFs for IPQ5018-based boards
+17cbfefbe|coolsnowwolf|Fri Nov 8 23:19:17 2024 +0800|qualcommax: ipq50xx: add support for GL.iNet GL-B3000
+86b087632|coolsnowwolf|Sun Nov 10 23:16:10 2024 +0800|kernel: qca-ssdk/qca-nss-dp: fixes kernel 6.1 support
 </details>

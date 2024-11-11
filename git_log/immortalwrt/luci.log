@@ -1,9 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-543f977bbe|Tianling Shen|Sat Nov 9 20:14:36 2024 +0800|Merge Official Source
-fb1f395375|Tianling Shen|Sat Nov 9 20:09:30 2024 +0800|luci-app-openclash: Update to 0.46.050
-0691504ef0|Paul Donald|Fri Nov 8 11:33:44 2024 +0100|luci-app-wifischedule: tighten acl perms
-8f7f14208a|Paul Donald|Thu Nov 7 21:23:25 2024 +0100|luci-base: fix documented path
-</details>
