@@ -420,7 +420,7 @@ function Func_Main() {
         sudo apt update -y
         sudo apt full-upgrade -y
         sleep 5s
-        sudo apt-get -y install $(curl -fsSL $my_depends)
+        sudo apt -y install $(curl -fsSL $my_depends)
         sleep 5s
         git config --global http.sslverify false
         git config --global https.sslverify false
