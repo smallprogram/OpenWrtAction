@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-01f8914|lwb1978|Sun Nov 10 21:08:42 2024 +0800|luci: ChinaDNS-NG no longer relies on Dnsmasq
-362fc3d|lwb1978|Sun Nov 10 20:54:18 2024 +0800|luci: fix xhttp typo
-</details>

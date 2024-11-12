@@ -1,0 +1,29 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+e0a0dc019|Tianling Shen|Mon Nov 11 16:09:44 2024 +0800|node: drop useless patch
+36c63c3bb|Tianling Shen|Mon Nov 11 16:08:32 2024 +0800|Merge Official Source
+ca503cc40|Gagan Deep|Tue Oct 29 21:21:55 2024 +0530|openwisp-monitoring: allow not depending on rpcd-mod-iwinfo
+886b3fa36|Gagan Deep|Tue Oct 22 22:28:46 2024 +0530|openwisp-monitoring: fix Makefile for 0.2.0 update
+67d4fa3b0|Gagan Deep|Tue Oct 22 16:55:23 2024 +0530|openwisp-config: fix Makefile for 1.1.0
+5d3e41166|Javier Marcet|Sun Nov 10 16:29:31 2024 +0100|luajit2: update to v2.1-20241104
+a1e318dec|Tom Stöveken|Sun Nov 10 21:56:47 2024 +0100|restic-rest-server: update to 0.13.0
+b1a4acd25|Tom Stöveken|Sun Nov 10 17:32:43 2024 +0100|restic: update to 0.17.3
+6b989e0ad|Jan Klos|Sun Nov 10 21:24:52 2024 +0200|unbound: update to 1.22.0
+0b0841e29|Rosen Penev|Tue Oct 29 21:43:22 2024 -0700|atlas-probe: fix compilation with GCC14
+f2d5c861b|Rosen Penev|Thu Nov 7 15:14:10 2024 -0800|python3: update to 3.11.10
+78a88fa73|Rosen Penev|Thu Oct 31 17:13:17 2024 -0700|gatling: fix compilation with GCC14
+4d8c6d186|Ted Hess|Sat Nov 2 11:31:05 2024 -0400|Unbound: fix file lock race in odhcpd.sh
+bc14a5428|Hannu Nyman|Sun Nov 10 18:09:52 2024 +0200|squeezelite: Adjust versioning for apk
+77dd5b258|Hannu Nyman|Sun Nov 10 14:00:12 2024 +0200|pigeonhole: Make version apk compatible
+86e6c2100|Rosen Penev|Thu Nov 7 14:48:30 2024 -0800|portaudio: update to 19.7.0
+b74ca8feb|Hannu Nyman|Sun Nov 10 10:29:00 2024 +0200|ddns-scripts: Adjust descriptions in Makefile for apk
+bec279341|Rosen Penev|Sat Nov 9 16:01:22 2024 -0800|tunneldigger-broker: fix APK version
+c952d4574|Daniel Golle|Sat Nov 9 00:39:07 2024 +0000|libgcrypt: use pkgconfig metadata in InstallDev
+ae40d866c|Hirokazu MORIKAWA|Sun Nov 10 07:57:05 2024 +0900|icu: bump to 76.1
+a122ec8f6|Jonas Jelonek|Sat Nov 9 23:19:05 2024 +0000|croc: update to 10.1.0
+c9b32b99c|Jack Baldry|Tue Sep 24 15:18:13 2024 +0100|prometheus-node-exporter-lua: Fix typos
+1f17e41e4|Hirokazu MORIKAWA|Fri Nov 8 09:42:52 2024 +0900|node: Preparing to update ICU to 76
+dd3c410ab|Jianhui Zhao|Sat Nov 9 18:28:01 2024 +0800|lua-eco: update to 3.6.1
+</details>

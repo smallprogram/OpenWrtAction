@@ -2,13 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-40b8fbaa97|Paul Spooren|Wed Nov 6 16:08:32 2024 +0100|config: Use APK as package manager by default
-c11a18be0d|Hauke Mehrtens|Thu Oct 24 00:09:22 2024 +0200|nftables: update to 1.1.1
-d9ed0d438b|Hauke Mehrtens|Thu Oct 24 00:06:09 2024 +0200|libnftnl: update to 1.2.8
-fccff963c0|Rosen Penev|Thu Oct 31 12:22:04 2024 -0700|lantiq: use devm for mutex_init
-44824f0b78|Rosen Penev|Fri Oct 18 19:08:02 2024 -0700|lantiq: use more devm for i2c
-adb921c34f|Hannu Nyman|Sun Nov 10 17:16:51 2024 +0200|gdb: Fix description for apk, remove backtick
-be952e98bc|Hannu Nyman|Sun Nov 10 15:57:01 2024 +0200|wolfssl: Adjust version for apk
-0ce237a20c|Hauke Mehrtens|Thu Nov 7 22:49:21 2024 +0100|base-files: Remove pkg_check when using apk
-85844cfc5c|John Audia|Fri Nov 8 14:57:44 2024 -0500|kernel: bump 6.6 to 6.6.60
+be3e7a84bd|Daniel Golle|Sun Nov 10 00:32:05 2024 +0100|include: meson.mk: honor CONFIG_DEBUG
+fc9ec5bd3d|Daniel Golle|Sun Nov 10 00:31:18 2024 +0100|include: cmake.mk: honor CONFIG_DEBUG
+3e42526404|Rosen Penev|Mon Nov 11 12:23:01 2024 -0800|ramips: mt7621: fix typo
+1f3d5858b4|Rosen Penev|Sat Nov 9 15:46:26 2024 -0800|mdadm: backport musl patch
+44598c233d|Felix Fietkau|Mon Nov 11 19:52:14 2024 +0100|build: remove broken dependency of metadata on toplevel .config variables
+cdfe413d26|Mieczyslaw Nalewaj|Mon Nov 11 09:14:28 2024 +0100|spidev_test: fix version for APK
 </details>

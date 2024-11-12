@@ -1,8 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-d6506880ed|Aleksander Jan Bajkowski|Thu Oct 31 22:27:54 2024 +0100|luci-mod-status: channel_analysis: detect 40 MHz (20+20 bonded) APs
-c16643f7a7|Hosted Weblate|Sun Nov 10 09:41:16 2024 +0100|Translated using Weblate (Finnish)
-174e861e3d|Hannu Nyman|Sun Nov 10 10:16:51 2024 +0200|luci-app-dockerman: Use apk compatible versioning
-</details>
