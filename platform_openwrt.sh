@@ -16,4 +16,4 @@ log_folder_name=openwrt_log
 diy_script_1=diy_script/openwrt_diy/diy-part1.sh
 diy_script_2=diy_script/openwrt_diy/diy-part2.sh
 # 依赖列表
-my_depends=https://github.com/smallprogram/OpenWrtAction/blob/main/diy_script/openwrt_dependence
+my_depends=https://raw.githubusercontent.com/smallprogram/OpenWrtAction/refs/heads/main/diy_script/openwrt_dependence
