@@ -16,4 +16,4 @@ log_folder_name=immortalwrt_openwrt_log
 diy_script_1=diy_script/immortalwrt_diy/diy-part1.sh
 diy_script_2=diy_script/immortalwrt_diy/diy-part2.sh
 # 依赖列表
-my_depends=https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/depends
+my_depends=https://github.com/smallprogram/OpenWrtAction/blob/main/diy_script/immortalwrt_dependence
