@@ -489,7 +489,7 @@ function Func_Main() {
 
     cd /home/${user_name}
     if [ ! -d "/home/${user_name}/${openwrt_dir}" ]; then
-        git clone $openwrt_source ${openwrt_dir}
+        git clone $openwrt_source -b ${openwrt_branch} ${openwrt_dir}
         cd /home/${user_name}
         is_first_compile=1
     else
