@@ -2,13 +2,18 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-42cfb4fa0|Rosen Penev|Sun Nov 10 16:16:21 2024 -0800|inadyn: update to 2.12.0
-31c729da7|Rosen Penev|Sun Nov 10 17:14:55 2024 -0800|lftp: fix expat under GCC14
-37bef5023|Mathew McBride|Thu Mar 7 14:06:35 2024 +1100|net-tools: package full netstat implementation
-625c55f04|Rosen Penev|Thu Oct 31 13:59:53 2024 -0700|fluent-bit: update to 3.1.9
-ca503cc40|Gagan Deep|Tue Oct 29 21:21:55 2024 +0530|openwisp-monitoring: allow not depending on rpcd-mod-iwinfo
-886b3fa36|Gagan Deep|Tue Oct 22 22:28:46 2024 +0530|openwisp-monitoring: fix Makefile for 0.2.0 update
-67d4fa3b0|Gagan Deep|Tue Oct 22 16:55:23 2024 +0530|openwisp-config: fix Makefile for 1.1.0
-5d3e41166|Javier Marcet|Sun Nov 10 16:29:31 2024 +0100|luajit2: update to v2.1-20241104
-a1e318dec|Tom Stöveken|Sun Nov 10 21:56:47 2024 +0100|restic-rest-server: update to 0.13.0
+5313dd9be|Daniel Golle|Tue Nov 12 03:48:41 2024 +0100|libpng: add symlink to debug library
+ae6fc627c|Vladimir Ermakov|Tue Nov 12 14:46:26 2024 +0000|go2rtc: update to 1.9.7
+85e959c69|Moritz Warning|Tue Nov 12 17:55:05 2024 +0100|dhtd: update to version 1.0.4
+223d7e299|Daniel Golle|Mon Nov 11 19:36:35 2024 +0000|glib-networking: add package
+f9b8abf84|Daniel Golle|Thu Nov 7 20:24:40 2024 +0000|wavpack: add wavpack library for audio compression
+c266ed2d0|Daniel Golle|Thu Nov 7 20:21:31 2024 +0000|libxmp: package XMP sound module renderer
+b734716f1|Daniel Golle|Thu Nov 7 20:20:50 2024 +0000|fluidsynth: add package
+b5f4681fb|Daniel Golle|Tue Nov 12 03:50:24 2024 +0100|libdrm: update to 2.4.123
+0b2bd76ed|Daniel Golle|Tue Nov 5 03:18:16 2024 +0000|shared-mime-info: fix post-install behaviour
+49ef6ff30|Robert Marko|Tue Nov 12 17:29:47 2024 +0100|uspot: make EXTRA_DEPENDS APK compatible
+d6ad08828|Nick Hainke|Tue Nov 12 05:34:53 2024 +0100|snowflake: update to 2.10.1
+88c7b1b53|Vladimir Ermakov|Tue Nov 5 13:29:27 2024 +0000|go2rtc: update to 1.9.6
+28545bc22|Wesley Gimenes|Sun Nov 3 21:45:20 2024 -0300|netbird: update to 0.31.0
+df52ee590|Sandro Jäckel|Fri Nov 8 17:57:49 2024 +0100|tailscale: update to 1.76.6
 </details>

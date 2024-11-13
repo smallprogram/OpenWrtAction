@@ -2,10 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-be3e7a84bd|Daniel Golle|Sun Nov 10 00:32:05 2024 +0100|include: meson.mk: honor CONFIG_DEBUG
-fc9ec5bd3d|Daniel Golle|Sun Nov 10 00:31:18 2024 +0100|include: cmake.mk: honor CONFIG_DEBUG
-3e42526404|Rosen Penev|Mon Nov 11 12:23:01 2024 -0800|ramips: mt7621: fix typo
-1f3d5858b4|Rosen Penev|Sat Nov 9 15:46:26 2024 -0800|mdadm: backport musl patch
-44598c233d|Felix Fietkau|Mon Nov 11 19:52:14 2024 +0100|build: remove broken dependency of metadata on toplevel .config variables
-cdfe413d26|Mieczyslaw Nalewaj|Mon Nov 11 09:14:28 2024 +0100|spidev_test: fix version for APK
+f84187035e|Eric Fahlgren|Tue Nov 12 09:10:02 2024 -0800|build: create package index.json
+a72c8c7705|Sergey Matsievskiy|Fri Nov 8 14:43:52 2024 +0300|build: add comments to makefiles
+dbe01f7d99|Til Kaiser|Tue Nov 12 16:33:56 2024 +0100|perf: fix version for APK
+8729d2a64d|Robert Marko|Wed Nov 6 20:13:06 2024 +0100|qualcommax: ipq60xx: add NSS reserved memory
+ce0b843ac7|Paul Donald|Sun Nov 10 19:47:34 2024 +0100|cryptodev-linux: change home-page URL
+3df5966f94|Paul Donald|Sun Nov 10 19:53:07 2024 +0100|cryptodev-linux: give a coherent description
+64fbc96595|Christian Marangi|Tue Nov 12 13:55:30 2024 +0100|airoha: an7581: backport upstream ethernet fixes
+1125ed408c|Rosen Penev|Sun Nov 10 15:54:14 2024 -0800|realtek: rtl83xx: use devm for mutex_init
 </details>

@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dd5c39cba|asushugo|Mon Nov 11 05:22:04 2024 +0000|qualcommax: ipq60xx: add support for JDCloud RE-CS-07
+ec78ad954|Til Kaiser|Sat Aug 3 10:48:34 2024 +0200|kernel: netdevices: adjust mlxsw network drivers
+55afdb73c|Til Kaiser|Sun Sep 29 16:54:54 2024 +0200|kernel: modules: add boot flag to igc, mlx4/5 drivers
 </details>

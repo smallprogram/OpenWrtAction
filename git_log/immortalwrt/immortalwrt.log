@@ -2,28 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4cdd1104c5|Tianling Shen|Mon Nov 11 23:03:29 2024 +0800|libnftnl: fixup fullcone patch
-d9458710a2|Tianling Shen|Mon Nov 11 22:49:43 2024 +0800|openwrt-keyring: update to Git HEAD (2024-11-11)
-8e8882a231|Tianling Shen|Mon Nov 11 17:51:14 2024 +0800|Merge Official Source
-40b8fbaa97|Paul Spooren|Wed Nov 6 16:08:32 2024 +0100|config: Use APK as package manager by default
-c11a18be0d|Hauke Mehrtens|Thu Oct 24 00:09:22 2024 +0200|nftables: update to 1.1.1
-d9ed0d438b|Hauke Mehrtens|Thu Oct 24 00:06:09 2024 +0200|libnftnl: update to 1.2.8
-fccff963c0|Rosen Penev|Thu Oct 31 12:22:04 2024 -0700|lantiq: use devm for mutex_init
-44824f0b78|Rosen Penev|Fri Oct 18 19:08:02 2024 -0700|lantiq: use more devm for i2c
-adb921c34f|Hannu Nyman|Sun Nov 10 17:16:51 2024 +0200|gdb: Fix description for apk, remove backtick
-be952e98bc|Hannu Nyman|Sun Nov 10 15:57:01 2024 +0200|wolfssl: Adjust version for apk
-0ce237a20c|Hauke Mehrtens|Thu Nov 7 22:49:21 2024 +0100|base-files: Remove pkg_check when using apk
-85844cfc5c|John Audia|Fri Nov 8 14:57:44 2024 -0500|kernel: bump 6.6 to 6.6.60
-999ef8270f|Paul Spooren|Sun Nov 10 04:26:43 2024 +0100|imagebuilder: fix OPKG package inclusion
-cc98cfafd7|Rosen Penev|Thu Oct 31 12:22:04 2024 -0700|treewide: remove THIS_MODULE assignment
-8b6d5874b8|Leon M. Busch-George|Mon Feb 19 12:49:28 2024 +0100|hostapd: split long lines
-cbf7be9fb3|Marius Dinu|Sat Nov 9 19:20:47 2024 +0200|menuconfig: add help description for Stack Smashing Protection options
-79f06827ff|Christian Marangi|Wed Oct 23 01:13:15 2024 +0200|apk: Implement apk list --full patch
-b18ed663a5|Christian Marangi|Sun Nov 10 02:09:43 2024 +0100|apk: Bump to version 2024-11-08
-a7bc6bf7db|Rosen Penev|Wed Nov 6 13:23:35 2024 -0800|ramips: mt7621: add missing regulator-boot-on
-12a7307869|Paul Spooren|Fri Nov 8 10:37:16 2024 +0100|imagebuilder: init APK dirs every time
-15b7994c01|Paul Spooren|Wed Nov 6 16:34:32 2024 +0100|imagebuilder: cleanup package inclusion
-451e2ce006|Paul Spooren|Wed Nov 6 16:32:03 2024 +0100|imagebuilder: fix package inclusion and APK index
-ad1c1b7047|Paul Spooren|Fri Nov 1 12:33:49 2024 +0100|imagebuilder: fix APK for packages dir and cache
-15de218a56|Daniel Golle|Sat Nov 9 13:06:02 2024 +0000|Revert "build: set PATH for post-install scripts"
+4dc1ec4751|zxl hhyccc|Tue Nov 12 20:51:53 2024 +0800|libnftnl: adapt upstream update
+8c87fe1a41|Tianling Shen|Tue Nov 12 19:39:24 2024 +0800|nftables: drop useless patch file
+4fa04343dd|Tianling Shen|Tue Nov 12 12:29:27 2024 +0800|Merge Official Source
+be3e7a84bd|Daniel Golle|Sun Nov 10 00:32:05 2024 +0100|include: meson.mk: honor CONFIG_DEBUG
+fc9ec5bd3d|Daniel Golle|Sun Nov 10 00:31:18 2024 +0100|include: cmake.mk: honor CONFIG_DEBUG
+3e42526404|Rosen Penev|Mon Nov 11 12:23:01 2024 -0800|ramips: mt7621: fix typo
+1f3d5858b4|Rosen Penev|Sat Nov 9 15:46:26 2024 -0800|mdadm: backport musl patch
+44598c233d|Felix Fietkau|Mon Nov 11 19:52:14 2024 +0100|build: remove broken dependency of metadata on toplevel .config variables
+cdfe413d26|Mieczyslaw Nalewaj|Mon Nov 11 09:14:28 2024 +0100|spidev_test: fix version for APK
 </details>
