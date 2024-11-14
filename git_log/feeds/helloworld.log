@@ -1,8 +1,0 @@
-<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-620f316|coolsnowwolf|Tue Nov 12 23:27:51 2024 +0800|luci-app-ssr-plus: fix auto-update setting
-b05f239|coolsnowwolf|Tue Nov 12 22:34:38 2024 +0800|Merge pull request #1587 from zxlhhyccc/patch-2
-5e2d859|zxl hhyccc|Sun Nov 10 00:34:13 2024 +0800|luci-app-ssr-plus: update.lua: fix typo erro.
-</details>

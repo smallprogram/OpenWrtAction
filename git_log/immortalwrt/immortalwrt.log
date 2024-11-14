@@ -2,13 +2,28 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4dc1ec4751|zxl hhyccc|Tue Nov 12 20:51:53 2024 +0800|libnftnl: adapt upstream update
-8c87fe1a41|Tianling Shen|Tue Nov 12 19:39:24 2024 +0800|nftables: drop useless patch file
-4fa04343dd|Tianling Shen|Tue Nov 12 12:29:27 2024 +0800|Merge Official Source
-be3e7a84bd|Daniel Golle|Sun Nov 10 00:32:05 2024 +0100|include: meson.mk: honor CONFIG_DEBUG
-fc9ec5bd3d|Daniel Golle|Sun Nov 10 00:31:18 2024 +0100|include: cmake.mk: honor CONFIG_DEBUG
-3e42526404|Rosen Penev|Mon Nov 11 12:23:01 2024 -0800|ramips: mt7621: fix typo
-1f3d5858b4|Rosen Penev|Sat Nov 9 15:46:26 2024 -0800|mdadm: backport musl patch
-44598c233d|Felix Fietkau|Mon Nov 11 19:52:14 2024 +0100|build: remove broken dependency of metadata on toplevel .config variables
-cdfe413d26|Mieczyslaw Nalewaj|Mon Nov 11 09:14:28 2024 +0100|spidev_test: fix version for APK
+2546d5098f|Tianling Shen|Thu Nov 14 12:05:10 2024 +0800|automount: fix dependencies
+0cf27f810f|Tianling Shen|Thu Nov 14 11:55:26 2024 +0800|ath79: disable build for zyxel nwa1123-ac by default
+4e4c43b15a|Tianling Shen|Thu Nov 14 11:43:56 2024 +0800|Merge Official Source
+27c2c140b1|Petr Štetiar|Wed Nov 6 10:40:37 2024 +0000|scripts: download-check-artifact.sh: fix shellcheck and improve
+4c9031fda2|David S. H. Rosenthal|Wed Nov 6 10:19:17 2024 +0000|scripts: add download-check-artifact.sh script
+c6a3a11c07|Petr Štetiar|Wed Nov 13 08:11:38 2024 +0000|apk: update to Git 417a93ceae540444fdbd3f76d1dadf0e15621fdc (2024-11-13)
+93d005e6bc|Kuan-Yi Li|Thu Nov 14 00:29:21 2024 +0800|imagebuilder: fix APK keys dir creation
+c0c480daa7|Tianling Shen|Wed Nov 13 23:13:17 2024 +0800|ramips: fix mac for jdcloud re-sp-01b 128g emmc version
+f32cd19e9d|Tianling Shen|Wed Nov 13 21:14:00 2024 +0800|mac80211: add more USB vid pid to rtw8812au/rtw8821au driver
+af9acb87aa|Tianling Shen|Wed Nov 13 20:26:08 2024 +0800|rtl8812au-ac: drop package
+1ef0d0e422|Tianling Shen|Wed Nov 13 20:24:42 2024 +0800|mac80211: backport RTL8812AU/RTL8821AU support
+10da84b588|Tianling Shen|Wed Nov 13 20:04:25 2024 +0800|linux-firmware: add firmware for Realtek RTL8812AU/RTL8821AU
+264c5725f2|Tianling Shen|Wed Nov 13 19:13:34 2024 +0800|linux-firmware: Update to 20241110
+b902284290|John Crispin|Tue Nov 12 07:49:22 2024 +0100|base-files: improve default root-passwd script
+1c8d86eb3a|Tianling Shen|Wed Nov 13 14:24:28 2024 +0800|Merge Official Source
+4c65359af4|Felix Fietkau|Wed Nov 13 07:04:31 2024 +0100|build: fix including busybox, procd and apk/opkg in imagebuilder
+f84187035e|Eric Fahlgren|Tue Nov 12 09:10:02 2024 -0800|build: create package index.json
+a72c8c7705|Sergey Matsievskiy|Fri Nov 8 14:43:52 2024 +0300|build: add comments to makefiles
+dbe01f7d99|Til Kaiser|Tue Nov 12 16:33:56 2024 +0100|perf: fix version for APK
+8729d2a64d|Robert Marko|Wed Nov 6 20:13:06 2024 +0100|qualcommax: ipq60xx: add NSS reserved memory
+ce0b843ac7|Paul Donald|Sun Nov 10 19:47:34 2024 +0100|cryptodev-linux: change home-page URL
+3df5966f94|Paul Donald|Sun Nov 10 19:53:07 2024 +0100|cryptodev-linux: give a coherent description
+64fbc96595|Christian Marangi|Tue Nov 12 13:55:30 2024 +0100|airoha: an7581: backport upstream ethernet fixes
+1125ed408c|Rosen Penev|Sun Nov 10 15:54:14 2024 -0800|realtek: rtl83xx: use devm for mutex_init
 </details>

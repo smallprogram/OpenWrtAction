@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6f3f2ac|lwb1978|Tue Nov 12 13:39:22 2024 +0800|luci: optimize shunt logic
+bf5d7e0|lwb1978|Wed Nov 13 21:39:40 2024 +0800|luci: app_update add mips64el architecture
 </details>

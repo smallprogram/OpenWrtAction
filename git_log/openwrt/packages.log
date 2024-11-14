@@ -2,18 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5313dd9be|Daniel Golle|Tue Nov 12 03:48:41 2024 +0100|libpng: add symlink to debug library
-ae6fc627c|Vladimir Ermakov|Tue Nov 12 14:46:26 2024 +0000|go2rtc: update to 1.9.7
-85e959c69|Moritz Warning|Tue Nov 12 17:55:05 2024 +0100|dhtd: update to version 1.0.4
-223d7e299|Daniel Golle|Mon Nov 11 19:36:35 2024 +0000|glib-networking: add package
-f9b8abf84|Daniel Golle|Thu Nov 7 20:24:40 2024 +0000|wavpack: add wavpack library for audio compression
-c266ed2d0|Daniel Golle|Thu Nov 7 20:21:31 2024 +0000|libxmp: package XMP sound module renderer
-b734716f1|Daniel Golle|Thu Nov 7 20:20:50 2024 +0000|fluidsynth: add package
-b5f4681fb|Daniel Golle|Tue Nov 12 03:50:24 2024 +0100|libdrm: update to 2.4.123
-0b2bd76ed|Daniel Golle|Tue Nov 5 03:18:16 2024 +0000|shared-mime-info: fix post-install behaviour
-49ef6ff30|Robert Marko|Tue Nov 12 17:29:47 2024 +0100|uspot: make EXTRA_DEPENDS APK compatible
-d6ad08828|Nick Hainke|Tue Nov 12 05:34:53 2024 +0100|snowflake: update to 2.10.1
-88c7b1b53|Vladimir Ermakov|Tue Nov 5 13:29:27 2024 +0000|go2rtc: update to 1.9.6
-28545bc22|Wesley Gimenes|Sun Nov 3 21:45:20 2024 -0300|netbird: update to 0.31.0
-df52ee590|Sandro Jäckel|Fri Nov 8 17:57:49 2024 +0100|tailscale: update to 1.76.6
+de9f4eb32|Hirokazu MORIKAWA|Wed Nov 13 09:54:16 2024 +0900|ntpd: Supports apk version semantics
+c667ae2ef|Daniel Golle|Sat Nov 9 23:21:50 2024 +0000|ruby: include JSON modules in host build
+1038f194f|Daniel Golle|Tue Nov 5 03:20:57 2024 +0000|gst1-plugins-bad: package play and player libraries
+b854cb5f0|Daniel Golle|Tue Nov 5 03:30:01 2024 +0000|gst1-plugins-base: build OpenGL library and plugin
+422c06e32|Daniel Golle|Sat Nov 9 03:42:06 2024 +0000|libgudev: add package
+e56d19245|Daniel Golle|Sat Nov 9 00:37:56 2024 +0000|hwdata: package pnp.ids and add InstallDev section
+91fa5b424|Rosen Penev|Sun Nov 10 16:46:38 2024 -0800|ipmitool: update to 1.8.19
+fc130a0d3|John Audia|Wed Nov 13 08:04:52 2024 -0500|luajit: fix built for apk naming requirements
+414ef7a52|xiao bo|Wed Nov 13 12:39:32 2024 +0800|privoxy: adjust version for apk
+ea5536c14|Ryan Keane|Wed Nov 13 04:31:44 2024 -0800|nginx: Support APK versioning
+1137da20e|Robert Marko|Tue Nov 12 18:09:17 2024 +0100|isc-dhcp: Use apk-compatible versioning
 </details>

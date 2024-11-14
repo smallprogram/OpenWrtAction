@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5d19558|xiaorouji|Wed Nov 13 23:40:27 2024 +0800|luci: use date as version
+7ff6ffb|lwb1978|Mon Oct 28 23:54:22 2024 +0800|luci: modify the ECH configuration of sing-box to a PEM format array
+d453b14|lwb1978|Wed Nov 13 21:39:40 2024 +0800|luci: app_update add mips64el architecture
+3689864|lwb1978|Sun Oct 27 14:07:10 2024 +0800|luci: adapt to openwrt official dnsmasq modifiy
+</details>

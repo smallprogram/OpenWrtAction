@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ec78ad954|Til Kaiser|Sat Aug 3 10:48:34 2024 +0200|kernel: netdevices: adjust mlxsw network drivers
-55afdb73c|Til Kaiser|Sun Sep 29 16:54:54 2024 +0200|kernel: modules: add boot flag to igc, mlx4/5 drivers
+0404234ac|coolsnowwolf|Thu Nov 14 11:31:21 2024 +0800|ubnt-ledbar: fix compilation error
+cb33d17db|coolsnowwolf|Mon Nov 11 23:26:06 2024 +0800|Revert "rkbin: update to latest git HEAD"
+128d3289d|coolsnowwolf|Sat Sep 7 23:30:15 2024 +0800|kernel: remove obsolete rtl8812au driver
 </details>

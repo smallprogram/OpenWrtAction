@@ -1,0 +1,11 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+42edea4a2|ImmortalWrt AutoUpdate Bot|Wed Nov 13 08:53:12 2024 +0000|rustdesk-server: Update to 1.1.12
+e0c076ba8|ImmortalWrt AutoUpdate Bot|Wed Nov 13 08:43:33 2024 +0000|dnsproxy: Update to 0.73.3
+86c84f08b|ImmortalWrt AutoUpdate Bot|Wed Nov 13 08:42:42 2024 +0000|cloudflared: Update to 2024.11.0
+d28a38c95|ImmortalWrt AutoUpdate Bot|Wed Nov 13 08:43:56 2024 +0000|xray-core: Update to 24.11.11
+d46f3dbb5|Tianling Shen|Wed Nov 13 17:05:45 2024 +0800|golang: Update to 1.23.3
+001736d83|Tianling Shen|Wed Nov 13 16:39:47 2024 +0800|vlmcsd: switch to git tarball
+</details>

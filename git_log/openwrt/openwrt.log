@@ -2,12 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f84187035e|Eric Fahlgren|Tue Nov 12 09:10:02 2024 -0800|build: create package index.json
-a72c8c7705|Sergey Matsievskiy|Fri Nov 8 14:43:52 2024 +0300|build: add comments to makefiles
-dbe01f7d99|Til Kaiser|Tue Nov 12 16:33:56 2024 +0100|perf: fix version for APK
-8729d2a64d|Robert Marko|Wed Nov 6 20:13:06 2024 +0100|qualcommax: ipq60xx: add NSS reserved memory
-ce0b843ac7|Paul Donald|Sun Nov 10 19:47:34 2024 +0100|cryptodev-linux: change home-page URL
-3df5966f94|Paul Donald|Sun Nov 10 19:53:07 2024 +0100|cryptodev-linux: give a coherent description
-64fbc96595|Christian Marangi|Tue Nov 12 13:55:30 2024 +0100|airoha: an7581: backport upstream ethernet fixes
-1125ed408c|Rosen Penev|Sun Nov 10 15:54:14 2024 -0800|realtek: rtl83xx: use devm for mutex_init
+27c2c140b1|Petr Štetiar|Wed Nov 6 10:40:37 2024 +0000|scripts: download-check-artifact.sh: fix shellcheck and improve
+4c9031fda2|David S. H. Rosenthal|Wed Nov 6 10:19:17 2024 +0000|scripts: add download-check-artifact.sh script
+c6a3a11c07|Petr Štetiar|Wed Nov 13 08:11:38 2024 +0000|apk: update to Git 417a93ceae540444fdbd3f76d1dadf0e15621fdc (2024-11-13)
+93d005e6bc|Kuan-Yi Li|Thu Nov 14 00:29:21 2024 +0800|imagebuilder: fix APK keys dir creation
+b902284290|John Crispin|Tue Nov 12 07:49:22 2024 +0100|base-files: improve default root-passwd script
+4c65359af4|Felix Fietkau|Wed Nov 13 07:04:31 2024 +0100|build: fix including busybox, procd and apk/opkg in imagebuilder
 </details>

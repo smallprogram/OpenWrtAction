@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1c38018e|coolsnowwolf|Tue Nov 12 23:16:41 2024 +0800|uugamebooster: update version
+cf62b548|coolsnowwolf|Thu Nov 14 11:18:55 2024 +0800|libpfring: bump version
+7b5a8f41|coolsnowwolf|Thu Nov 14 11:03:50 2024 +0800|jool: add hotplug script to disable fraglist GRO
 </details>
