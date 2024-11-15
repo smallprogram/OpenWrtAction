@@ -1,0 +1,8 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+9fe1e347f5|Paul Donald|Thu Nov 14 21:01:08 2024 +0100|luci-base: i18n refresh
+53e66da926|Paul Donald|Fri Nov 8 16:39:19 2024 +0100|luci-mod-network: dhcp; implement ignore_hosts_dir dnsmasq setting
+a9e1685f64|Paul Donald|Thu Nov 14 20:42:41 2024 +0100|luci-mod-network: improve route setting descriptions
+</details>

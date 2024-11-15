@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0404234ac|coolsnowwolf|Thu Nov 14 11:31:21 2024 +0800|ubnt-ledbar: fix compilation error
-cb33d17db|coolsnowwolf|Mon Nov 11 23:26:06 2024 +0800|Revert "rkbin: update to latest git HEAD"
-128d3289d|coolsnowwolf|Sat Sep 7 23:30:15 2024 +0800|kernel: remove obsolete rtl8812au driver
+8ca126c6c|coolsnowwolf|Fri Nov 15 11:07:42 2024 +0800|mediatek: flogic: add KONKA KOMI A31 support
+9b5d129be|coolsnowwolf|Thu Nov 14 14:14:42 2024 +0800|Version update to R24.11.11
+1063641e6|coolsnowwolf|Thu Nov 14 13:14:47 2024 +0800|branding: add LEDE branding
+5cd761710|coolsnowwolf|Thu Nov 14 12:53:29 2024 +0800|ath10k-ct: fix build with some target
 </details>

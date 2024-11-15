@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bf5d7e0|lwb1978|Wed Nov 13 21:39:40 2024 +0800|luci: app_update add mips64el architecture
+ac166eb|lwb1978|Fri Nov 15 11:49:55 2024 +0800|luci: update the code to retrieve the passwall version
+c14a054|lwb1978|Thu Nov 14 23:14:11 2024 +0800|luci: iptables/nftables optimize and fix
+84ae1c0|lwb1978|Thu Nov 14 22:00:38 2024 +0800|luci: update the depends check code
 </details>

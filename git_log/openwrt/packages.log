@@ -2,15 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-de9f4eb32|Hirokazu MORIKAWA|Wed Nov 13 09:54:16 2024 +0900|ntpd: Supports apk version semantics
-c667ae2ef|Daniel Golle|Sat Nov 9 23:21:50 2024 +0000|ruby: include JSON modules in host build
-1038f194f|Daniel Golle|Tue Nov 5 03:20:57 2024 +0000|gst1-plugins-bad: package play and player libraries
-b854cb5f0|Daniel Golle|Tue Nov 5 03:30:01 2024 +0000|gst1-plugins-base: build OpenGL library and plugin
-422c06e32|Daniel Golle|Sat Nov 9 03:42:06 2024 +0000|libgudev: add package
-e56d19245|Daniel Golle|Sat Nov 9 00:37:56 2024 +0000|hwdata: package pnp.ids and add InstallDev section
-91fa5b424|Rosen Penev|Sun Nov 10 16:46:38 2024 -0800|ipmitool: update to 1.8.19
-fc130a0d3|John Audia|Wed Nov 13 08:04:52 2024 -0500|luajit: fix built for apk naming requirements
-414ef7a52|xiao bo|Wed Nov 13 12:39:32 2024 +0800|privoxy: adjust version for apk
-ea5536c14|Ryan Keane|Wed Nov 13 04:31:44 2024 -0800|nginx: Support APK versioning
-1137da20e|Robert Marko|Tue Nov 12 18:09:17 2024 +0100|isc-dhcp: Use apk-compatible versioning
+d551f2182|Rosen Penev|Thu Nov 14 15:49:22 2024 -0800|dmapd: update to 0.0.96
+bd828e390|Rosen Penev|Thu Nov 14 14:27:19 2024 -0800|mdnsresponder: add missing header
+0b67c0009|Rosen Penev|Tue Oct 29 22:07:11 2024 -0700|avrdude: fix compilation with full NLS
+9781f208c|Rosen Penev|Thu Nov 14 14:15:44 2024 -0800|libgudev: fix compilation with full NLS
+1521ef3b2|Othmar Truniger|Thu Nov 14 19:08:55 2024 +0100|knxd: bump to new version 0.14.67
+b7889b657|W. Michael Petullo|Thu Nov 14 03:07:35 2024 -0600|lcdgrilo: update to 0.0.13
+afcf845b0|Marius Dinu|Sun Apr 17 13:23:51 2022 +0300|btrfs-progs: add "btrfs device scan" before overlay/extroot
+19d40c8d7|Ryan Keane|Thu Nov 14 02:12:06 2024 -0800|ocserv: Use default value for log-level in conf
+56685c1fa|Christian Lachner|Mon Nov 11 08:51:09 2024 +0100|haproxy: update to v3.0.6
+78ccd862a|Tianling Shen|Thu Nov 14 17:00:30 2024 +0800|cloudflared: Update to 2024.11.0
+d76d51a4b|Tianling Shen|Thu Nov 14 16:59:55 2024 +0800|v2ray-geodata: Update to latest version
+41457908b|Tianling Shen|Thu Nov 14 16:59:29 2024 +0800|xray-core: Update to 24.11.11
 </details>
