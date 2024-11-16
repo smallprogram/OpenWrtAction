@@ -1,0 +1,17 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5e65af3a|coolsnowwolf|Fri Nov 15 23:41:18 2024 +0800|luci-app-msd_lite: rename msd_lite.conf.sample
+0c5f6b4e|coolsnowwolf|Fri Nov 15 23:21:34 2024 +0800|luci-app-msd_lite: fix init and config
+ea197625|coolsnowwolf|Fri Nov 15 22:48:43 2024 +0800|luci-lib-fs: add package
+41aebf21|coolsnowwolf|Fri Nov 15 22:43:11 2024 +0800|luci-app-music-remote-center: add package
+665d9ae3|coolsnowwolf|Fri Nov 15 22:39:23 2024 +0800|luci-app-socat: add package
+32475542|coolsnowwolf|Fri Nov 15 22:38:35 2024 +0800|luci-app-filetransfer: add package
+81684379|coolsnowwolf|Fri Nov 15 22:36:53 2024 +0800|luci-app-kodexplorer: add package
+b62bfdc7|coolsnowwolf|Fri Nov 15 22:36:20 2024 +0800|luci-app-nfs: add package
+61076bf8|coolsnowwolf|Fri Nov 15 22:29:13 2024 +0800|luci-app-udpxy: change to js version
+afe07e32|coolsnowwolf|Fri Nov 15 22:26:57 2024 +0800|luci-app-strongswan-swanctl: add package
+46bcfe34|liwenjie119|Fri Nov 15 22:24:31 2024 +0800|luci-app-v2ray-server: add package (#306)
+581647df|coolsnowwolf|Fri Nov 15 15:54:40 2024 +0800|luci-app-turboacc: add NSS ECM status display support
+</details>

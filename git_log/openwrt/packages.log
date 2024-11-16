@@ -2,16 +2,23 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d551f2182|Rosen Penev|Thu Nov 14 15:49:22 2024 -0800|dmapd: update to 0.0.96
-bd828e390|Rosen Penev|Thu Nov 14 14:27:19 2024 -0800|mdnsresponder: add missing header
-0b67c0009|Rosen Penev|Tue Oct 29 22:07:11 2024 -0700|avrdude: fix compilation with full NLS
-9781f208c|Rosen Penev|Thu Nov 14 14:15:44 2024 -0800|libgudev: fix compilation with full NLS
-1521ef3b2|Othmar Truniger|Thu Nov 14 19:08:55 2024 +0100|knxd: bump to new version 0.14.67
-b7889b657|W. Michael Petullo|Thu Nov 14 03:07:35 2024 -0600|lcdgrilo: update to 0.0.13
-afcf845b0|Marius Dinu|Sun Apr 17 13:23:51 2022 +0300|btrfs-progs: add "btrfs device scan" before overlay/extroot
-19d40c8d7|Ryan Keane|Thu Nov 14 02:12:06 2024 -0800|ocserv: Use default value for log-level in conf
-56685c1fa|Christian Lachner|Mon Nov 11 08:51:09 2024 +0100|haproxy: update to v3.0.6
-78ccd862a|Tianling Shen|Thu Nov 14 17:00:30 2024 +0800|cloudflared: Update to 2024.11.0
-d76d51a4b|Tianling Shen|Thu Nov 14 16:59:55 2024 +0800|v2ray-geodata: Update to latest version
-41457908b|Tianling Shen|Thu Nov 14 16:59:29 2024 +0800|xray-core: Update to 24.11.11
+bea58eea0|Daniel Golle|Thu Nov 14 03:45:57 2024 +0000|xdg-dbus-proxy: add package
+a51ba5aae|Daniel Golle|Thu Nov 14 03:45:26 2024 +0000|bubblewrap: add package
+cae9a5ee6|Daniel Golle|Thu Nov 14 03:44:11 2024 +0000|libmanette: add package
+2697c6e62|Daniel Golle|Thu Nov 14 03:42:48 2024 +0000|unifdef: add package
+e5edda8a8|Rosen Penev|Mon Nov 11 16:12:15 2024 -0800|lpac: fix compilation with GCC14
+a4723a98e|Rosen Penev|Mon Nov 11 16:24:35 2024 -0800|libdbi-drivers: fix compilation with GCC14
+3d6cfc732|Robert Marko|Fri Nov 15 14:01:27 2024 +0100|tinc: support apk version semantics
+16fcf54e5|Rosen Penev|Mon Nov 11 17:01:54 2024 -0800|openocd: fix version for APK compatibility
+2ecfcce32|Florian Eckert|Fri Nov 8 08:41:23 2024 +0100|modemmanager: bump PKG_RELEASE
+24d2ba0ba|Florian Eckert|Wed Nov 6 14:28:57 2024 +0100|modemmanager: check during SIM unlocking whether initialization has been completed
+fa6198e36|Florian Eckert|Tue Nov 5 08:55:40 2024 +0100|modemmanager: reset to 'no' plmn if nothing is configured
+3a5aa8a38|Florian Eckert|Tue Nov 5 08:37:02 2024 +0100|modemmanager: swap plmn and technology set command in the proto
+8682084e3|Florian Eckert|Fri Oct 18 12:45:21 2024 +0200|modemmanager: move plmn registration into own function
+5ab483aa4|Florian Eckert|Wed Oct 16 14:23:58 2024 +0200|modemmanager: rename function modemmanager_check_state to modemmanager_check_sim_state
+9f3517363|Florian Eckert|Wed Oct 16 16:47:43 2024 +0200|modemmanager: move initial eps settings after modem enable
+b6664ae93|Florian Eckert|Tue Jul 16 08:08:26 2024 +0200|modemmanager: add log file if syslog is set to DEBUG
+e07693749|Eric Fahlgren|Thu Nov 14 16:41:41 2024 -0800|owut: update to 2024.11.14
+db1552fc2|Rosen Penev|Thu Nov 14 14:16:54 2024 -0800|libesmtp: fix compilation with GCC14
+a3f35d79b|Rosen Penev|Thu Nov 14 14:07:38 2024 -0800|hplip: update to 3.24.4
 </details>

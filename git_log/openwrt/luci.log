@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9fe1e347f5|Paul Donald|Thu Nov 14 21:01:08 2024 +0100|luci-base: i18n refresh
-53e66da926|Paul Donald|Fri Nov 8 16:39:19 2024 +0100|luci-mod-network: dhcp; implement ignore_hosts_dir dnsmasq setting
-a9e1685f64|Paul Donald|Thu Nov 14 20:42:41 2024 +0100|luci-mod-network: improve route setting descriptions
+1a4b6adf72|Hosted Weblate|Fri Nov 15 17:04:53 2024 +0100|Translated using Weblate (Filipino)
 </details>

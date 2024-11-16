@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ac166eb|lwb1978|Fri Nov 15 11:49:55 2024 +0800|luci: update the code to retrieve the passwall version
-c14a054|lwb1978|Thu Nov 14 23:14:11 2024 +0800|luci: iptables/nftables optimize and fix
-84ae1c0|lwb1978|Thu Nov 14 22:00:38 2024 +0800|luci: update the depends check code
+aac189c|lwb1978|Fri Nov 15 23:40:30 2024 +0800|luci: add shuntlist based on the usage of shunt nodes
 </details>

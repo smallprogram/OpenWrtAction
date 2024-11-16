@@ -2,8 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8ca126c6c|coolsnowwolf|Fri Nov 15 11:07:42 2024 +0800|mediatek: flogic: add KONKA KOMI A31 support
-9b5d129be|coolsnowwolf|Thu Nov 14 14:14:42 2024 +0800|Version update to R24.11.11
-1063641e6|coolsnowwolf|Thu Nov 14 13:14:47 2024 +0800|branding: add LEDE branding
-5cd761710|coolsnowwolf|Thu Nov 14 12:53:29 2024 +0800|ath10k-ct: fix build with some target
+d1129c83f|coolsnowwolf|Fri Nov 15 20:48:47 2024 +0800|mediatek: mt7622: add a second u-boot for redmi-ax6s
+71ff1c0e5|coolsnowwolf|Fri Nov 15 20:23:04 2024 +0800|ubnt-ledbar: adapt for kernel v6.1
+9526ee318|coolsnowwolf|Fri Nov 15 19:53:35 2024 +0800|toolchain: binutils: add support for 2.43.1
+f43ae1934|coolsnowwolf|Fri Nov 15 15:57:32 2024 +0800|qualcommax: ipq60xx: rename JDCloud Series model to friendly name
+5ab723718|coolsnowwolf|Fri Nov 15 15:00:57 2024 +0800|mediatek: filogic: add BananaPi BPi-R3 mini
+a444a1b18|coolsnowwolf|Fri Nov 15 12:48:19 2024 +0800|toolchain: binutils: switch to version 2.42 by default
 </details>

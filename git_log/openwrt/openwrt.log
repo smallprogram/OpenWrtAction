@@ -2,14 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1e8505ac4e|Daniel Golle|Wed Nov 13 21:58:38 2024 +0000|procd: update to git HEAD
-6720c4ccba|Felix Fietkau|Thu Nov 14 13:03:23 2024 +0100|mt76: update to Git HEAD (2024-10-28)
-b67db1b0fc|Jonas Gorski|Thu Nov 14 12:03:44 2024 +0100|apk: explicitly enable help
-954d2ad81b|Jonas Gorski|Thu Nov 14 12:01:40 2024 +0100|apk: move common meson args to its own variable
-deeb29e6fe|Jonas Gorski|Thu Nov 14 11:21:41 2024 +0100|apk: host: set lua version to 5.1 to fix help
-dab5ca818e|Petr Štetiar|Thu Nov 14 09:02:13 2024 +0000|Revert "apk: update to Git 417a93ceae540444fdbd3f76d1dadf0e15621fdc (2024-11-13)"
-0e59eaa796|Rodrigo Balerdi|Wed Nov 13 17:23:52 2024 -0300|ipq806x: tr4400v2: revert nesting of MTD partitions that bricks device
-b43194e041|Enrico Mioso|Sat Nov 9 22:14:33 2024 +0100|mediatek: filogic: add support for GatoNetworks GDSP
-785ebf2baf|Enrico Mioso|Sat Nov 9 22:14:32 2024 +0100|uboot-envtools: add support for GatoNetworks GDSP
-7f2c7b3238|Enrico Mioso|Sat Nov 9 22:14:31 2024 +0100|uboot-mediatek: add support for GatoNetworks GDSP
+487ca61f91|John Audia|Thu Nov 14 15:16:32 2024 -0500|kernel: bump 6.6 to 6.6.61
+77cfe8fd15|Joe Zheng|Sun Aug 25 00:53:01 2024 +0000|x86: make i915 as a kmod with required firmware
+ca00bafd7e|Joe Zheng|Fri Sep 20 05:57:34 2024 +0000|linux-firmware: rename packages for i915 firmware
+749a43325b|Marek Behún|Fri Nov 15 10:01:35 2024 +0100|utils: Add the omnia-eeprom utility
+8c018dcb56|Christian Marangi|Fri Nov 15 12:27:44 2024 +0100|package: use /dev/null for apk --repositories-file
+a6c248e8ad|Petr Štetiar|Thu Nov 14 09:07:20 2024 +0000|apk: fix long package description handling
 </details>
