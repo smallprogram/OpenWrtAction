@@ -2,10 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d1129c83f|coolsnowwolf|Fri Nov 15 20:48:47 2024 +0800|mediatek: mt7622: add a second u-boot for redmi-ax6s
-71ff1c0e5|coolsnowwolf|Fri Nov 15 20:23:04 2024 +0800|ubnt-ledbar: adapt for kernel v6.1
-9526ee318|coolsnowwolf|Fri Nov 15 19:53:35 2024 +0800|toolchain: binutils: add support for 2.43.1
-f43ae1934|coolsnowwolf|Fri Nov 15 15:57:32 2024 +0800|qualcommax: ipq60xx: rename JDCloud Series model to friendly name
-5ab723718|coolsnowwolf|Fri Nov 15 15:00:57 2024 +0800|mediatek: filogic: add BananaPi BPi-R3 mini
-a444a1b18|coolsnowwolf|Fri Nov 15 12:48:19 2024 +0800|toolchain: binutils: switch to version 2.42 by default
+f25dd1042|coolsnowwolf|Sun Nov 17 11:43:45 2024 +0800|LEDE v24.10: set branch defaults
+0f3741b7b|coolsnowwolf|Sat Nov 16 15:06:01 2024 +0800|target.mk: reduce default image size
 </details>

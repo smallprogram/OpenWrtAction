@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ed8665d04b|Tianling Shen|Sat Nov 16 16:46:42 2024 +0800|luci-app-openclash: make version alpine compatible
+dfe0ff8b65|Tianling Shen|Sat Nov 16 16:46:00 2024 +0800|luci-app-rclone: make version alpine compatible
+</details>

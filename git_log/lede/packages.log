@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3c2b3bd8|coolsnowwolf|Fri Nov 15 22:53:02 2024 +0800|forked-daapd: add package
-5d263760|coolsnowwolf|Fri Nov 15 22:33:01 2024 +0800|davici: add package
-3c01d865|coolsnowwolf|Fri Nov 15 22:31:43 2024 +0800|swanmon: add package
-d58e68ac|coolsnowwolf|Fri Nov 15 20:05:37 2024 +0800|ddns-scripts: fix cloudflare.com-v4 for lua luci
+0ad6c23c|coolsnowwolf|Sun Nov 17 11:10:17 2024 +0800|ffmpeg: update to 5.1.4
+4832dc4c|coolsnowwolf|Sat Nov 16 15:13:37 2024 +0800|oscam: add package
 </details>

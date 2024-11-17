@@ -2,23 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bea58eea0|Daniel Golle|Thu Nov 14 03:45:57 2024 +0000|xdg-dbus-proxy: add package
-a51ba5aae|Daniel Golle|Thu Nov 14 03:45:26 2024 +0000|bubblewrap: add package
-cae9a5ee6|Daniel Golle|Thu Nov 14 03:44:11 2024 +0000|libmanette: add package
-2697c6e62|Daniel Golle|Thu Nov 14 03:42:48 2024 +0000|unifdef: add package
-e5edda8a8|Rosen Penev|Mon Nov 11 16:12:15 2024 -0800|lpac: fix compilation with GCC14
-a4723a98e|Rosen Penev|Mon Nov 11 16:24:35 2024 -0800|libdbi-drivers: fix compilation with GCC14
-3d6cfc732|Robert Marko|Fri Nov 15 14:01:27 2024 +0100|tinc: support apk version semantics
-16fcf54e5|Rosen Penev|Mon Nov 11 17:01:54 2024 -0800|openocd: fix version for APK compatibility
-2ecfcce32|Florian Eckert|Fri Nov 8 08:41:23 2024 +0100|modemmanager: bump PKG_RELEASE
-24d2ba0ba|Florian Eckert|Wed Nov 6 14:28:57 2024 +0100|modemmanager: check during SIM unlocking whether initialization has been completed
-fa6198e36|Florian Eckert|Tue Nov 5 08:55:40 2024 +0100|modemmanager: reset to 'no' plmn if nothing is configured
-3a5aa8a38|Florian Eckert|Tue Nov 5 08:37:02 2024 +0100|modemmanager: swap plmn and technology set command in the proto
-8682084e3|Florian Eckert|Fri Oct 18 12:45:21 2024 +0200|modemmanager: move plmn registration into own function
-5ab483aa4|Florian Eckert|Wed Oct 16 14:23:58 2024 +0200|modemmanager: rename function modemmanager_check_state to modemmanager_check_sim_state
-9f3517363|Florian Eckert|Wed Oct 16 16:47:43 2024 +0200|modemmanager: move initial eps settings after modem enable
-b6664ae93|Florian Eckert|Tue Jul 16 08:08:26 2024 +0200|modemmanager: add log file if syslog is set to DEBUG
-e07693749|Eric Fahlgren|Thu Nov 14 16:41:41 2024 -0800|owut: update to 2024.11.14
-db1552fc2|Rosen Penev|Thu Nov 14 14:16:54 2024 -0800|libesmtp: fix compilation with GCC14
-a3f35d79b|Rosen Penev|Thu Nov 14 14:07:38 2024 -0800|hplip: update to 3.24.4
+2a139f844|Rosen Penev|Thu Nov 14 14:41:19 2024 -0800|gphoto2: fix compilation with GCC14
+35a6aab7b|Peter van Dijk|Tue Nov 5 13:25:21 2024 +0000|pdns-recursor: update to 5.1.3
+4f00d8f0e|Dirk Brenken|Sat Nov 16 12:45:12 2024 +0100|banIP: update to 1.0.0-10
+8a0f28c78|Rosen Penev|Tue Oct 29 21:56:53 2024 -0700|atop: fix compilation with full NLS
+eb829eebc|Christian Marangi|Tue Nov 12 14:04:13 2024 +0100|openvpn-easy-rsa: Bump to 3.2.1 release
+9dc0ee812|Tianling Shen|Tue Nov 12 12:47:15 2024 +0800|perl: perlmod: make version apk compatible
+ba445acd7|Hirokazu MORIKAWA|Thu Nov 14 08:49:10 2024 +0900|git: use symbolic link
+98b10bda7|Tianling Shen|Sat Nov 16 17:28:34 2024 +0800|dnsproxy: Update to 0.73.3
+b9dc86034|Tianling Shen|Wed Nov 13 17:05:45 2024 +0800|golang: Update to 1.23.3
+8124f1891|Rosen Penev|Thu Nov 14 13:19:39 2024 -0800|vala: update to 0.56.17
+8b6d61294|Ted Hess|Fri Nov 15 17:51:57 2024 -0500|ntfs-3g: APK version compliance.          Remove libfuse/int hint from name.          Remove myself as maintainer
 </details>

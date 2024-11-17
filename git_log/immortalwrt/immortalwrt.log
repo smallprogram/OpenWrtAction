@@ -2,6 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-251fca13e8|Tianling Shen|Fri Nov 15 18:05:13 2024 +0800|linux-firmware: update firmware for wcn6750
-da43e8ebdf|Tianling Shen|Fri Nov 15 16:58:30 2024 +0800|ramips: disable build for zyxel keenetic-omni(-ii)
+2c7c8d1619|Tianling Shen|Sat Nov 16 17:20:27 2024 +0800|ipq806x: fix typo error for xiaomi r3d device packages
+cd053d0ae7|Tianling Shen|Sat Nov 16 16:12:40 2024 +0800|Merge Official Source
+487ca61f91|John Audia|Thu Nov 14 15:16:32 2024 -0500|kernel: bump 6.6 to 6.6.61
+77cfe8fd15|Joe Zheng|Sun Aug 25 00:53:01 2024 +0000|x86: make i915 as a kmod with required firmware
+ca00bafd7e|Joe Zheng|Fri Sep 20 05:57:34 2024 +0000|linux-firmware: rename packages for i915 firmware
+749a43325b|Marek Behún|Fri Nov 15 10:01:35 2024 +0100|utils: Add the omnia-eeprom utility
+8c018dcb56|Christian Marangi|Fri Nov 15 12:27:44 2024 +0100|package: use /dev/null for apk --repositories-file
+a6c248e8ad|Petr Štetiar|Thu Nov 14 09:07:20 2024 +0000|apk: fix long package description handling
+1e8505ac4e|Daniel Golle|Wed Nov 13 21:58:38 2024 +0000|procd: update to git HEAD
+6720c4ccba|Felix Fietkau|Thu Nov 14 13:03:23 2024 +0100|mt76: update to Git HEAD (2024-10-28)
 </details>

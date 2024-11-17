@@ -2,10 +2,17 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-487ca61f91|John Audia|Thu Nov 14 15:16:32 2024 -0500|kernel: bump 6.6 to 6.6.61
-77cfe8fd15|Joe Zheng|Sun Aug 25 00:53:01 2024 +0000|x86: make i915 as a kmod with required firmware
-ca00bafd7e|Joe Zheng|Fri Sep 20 05:57:34 2024 +0000|linux-firmware: rename packages for i915 firmware
-749a43325b|Marek Behún|Fri Nov 15 10:01:35 2024 +0100|utils: Add the omnia-eeprom utility
-8c018dcb56|Christian Marangi|Fri Nov 15 12:27:44 2024 +0100|package: use /dev/null for apk --repositories-file
-a6c248e8ad|Petr Štetiar|Thu Nov 14 09:07:20 2024 +0000|apk: fix long package description handling
+afffcd09e5|Ryan Keane|Thu Nov 7 22:36:23 2024 -0800|elfutils: Backport some patches to fix errors
+63caa2b168|Ryan Keane|Wed Nov 13 11:46:38 2024 -0800|elfutils: Add mirrors.kernel.org as mirrror
+f5132df69d|Ryan Keane|Thu Nov 7 21:50:58 2024 -0800|elfutils: Update to 0.192
+65964c42f8|Markus Stockhausen|Fri Nov 15 01:32:47 2024 -0500|realtek: align kernel config with upstream
+a6e98a810d|Jonas Gorski|Wed Nov 13 14:27:16 2024 +0100|apk: add a customfeeds.list configuration file
+e031dab93e|Jonas Gorski|Wed Nov 13 14:25:26 2024 +0100|base-files: move apk distfeeds into directory
+8f6972df36|Rosen Penev|Wed Nov 13 12:33:12 2024 -0800|apk: remove HOST_LDFLAGS hack
+0000ba6ab8|Jeronimo Pellegrini|Sat Sep 21 15:46:36 2024 -0300|libreadlne: create symlinks for .so
+31111680f6|John Audia|Mon Sep 2 19:53:47 2024 -0400|x86: switch config to a tickless kernel
+3dbe730080|Shiji Yang|Sun Oct 13 21:15:59 2024 +0800|ppp: remove more unnecessary kernel checks
+b88d51898d|Hauke Mehrtens|Thu Nov 14 21:46:36 2024 +0100|base-files: Mount debugfs and pstore with nosuid,nodev,noexec
+3b710375dd|Hauke Mehrtens|Thu Nov 14 21:47:47 2024 +0100|base-files: Create /run and /run/lock folder
+71c14cbee5|Hauke Mehrtens|Thu Nov 14 22:57:02 2024 +0100|build: apk: Remove /run/apk/db.lock
 </details>
