@@ -1,0 +1,11 @@
+<details> <summary> <b>telephony new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a99df6e|Jiri Slachta|Sun Nov 17 20:18:00 2024 +0100|Merge pull request #888 from dddaniel/master
+ada4939|Christian Marangi|Sun Nov 17 19:12:59 2024 +0100|pcapsipdump: sanitize package description for APK support
+819fec7|Daniel Danzberger|Fri Nov 8 11:40:59 2024 +0100|baresip: Bump to version 3.16.0
+e578742|Daniel Danzberger|Tue Nov 12 17:20:11 2024 +0100|baresip-apps: New Package
+0218f1e|Daniel Danzberger|Fri Nov 8 11:48:15 2024 +0100|rem: Remove library package
+5578908|Daniel Danzberger|Fri Nov 8 11:36:42 2024 +0100|re: Bump to version 3.16.0
+</details>

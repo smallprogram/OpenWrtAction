@@ -2,15 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2a139f844|Rosen Penev|Thu Nov 14 14:41:19 2024 -0800|gphoto2: fix compilation with GCC14
-35a6aab7b|Peter van Dijk|Tue Nov 5 13:25:21 2024 +0000|pdns-recursor: update to 5.1.3
-4f00d8f0e|Dirk Brenken|Sat Nov 16 12:45:12 2024 +0100|banIP: update to 1.0.0-10
-8a0f28c78|Rosen Penev|Tue Oct 29 21:56:53 2024 -0700|atop: fix compilation with full NLS
-eb829eebc|Christian Marangi|Tue Nov 12 14:04:13 2024 +0100|openvpn-easy-rsa: Bump to 3.2.1 release
-9dc0ee812|Tianling Shen|Tue Nov 12 12:47:15 2024 +0800|perl: perlmod: make version apk compatible
-ba445acd7|Hirokazu MORIKAWA|Thu Nov 14 08:49:10 2024 +0900|git: use symbolic link
-98b10bda7|Tianling Shen|Sat Nov 16 17:28:34 2024 +0800|dnsproxy: Update to 0.73.3
-b9dc86034|Tianling Shen|Wed Nov 13 17:05:45 2024 +0800|golang: Update to 1.23.3
-8124f1891|Rosen Penev|Thu Nov 14 13:19:39 2024 -0800|vala: update to 0.56.17
-8b6d61294|Ted Hess|Fri Nov 15 17:51:57 2024 -0500|ntfs-3g: APK version compliance.          Remove libfuse/int hint from name.          Remove myself as maintainer
+76d5db585|Ted Hess|Sun Nov 17 15:53:33 2024 -0500|sox: Remove wavpack (explicitly) from build      Remove myself as maintainer
+03f9a53ca|Hannu Nyman|Sun Nov 17 19:01:23 2024 +0200|netdiscover: Make version apk compatible
+abef31cac|Hannu Nyman|Sun Nov 17 18:32:17 2024 +0200|lua-curl-v3: Make version apk compatible
+46e1b60f5|Daniel Golle|Sat Nov 16 17:36:04 2024 +0000|mptcpd: update to version 0.13
+11b3b811b|Daniel Golle|Sat Nov 16 17:33:18 2024 +0000|ell: update to version 0.70
+b665256d6|Hannu Nyman|Sun Nov 17 12:49:31 2024 +0200|svox: Make version apk compatible
+252efdc34|Hannu Nyman|Sun Nov 17 13:04:14 2024 +0200|owfs: Make version apk compatible
+c8a46db23|Hannu Nyman|Sat Nov 16 21:09:20 2024 +0200|lua-openssl: Make version apk compatible
+69f5605e5|Hannu Nyman|Sat Nov 16 21:16:20 2024 +0200|pagekitec: Make version apk compatible
+f95f1ba47|Hannu Nyman|Sat Nov 16 13:56:22 2024 +0200|luv: Make version apk compatible
+454e232e5|Hannu Nyman|Sat Nov 16 13:35:54 2024 +0200|rtklib: Make version apk compatible
 </details>

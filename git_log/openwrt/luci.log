@@ -2,5 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-09e8d5108e|Hannu Nyman|Sat Nov 16 12:17:34 2024 +0200|treewide: Sync i18n translations
+a403707b57|Anari Jalakas|Mon Nov 11 21:06:08 2024 +0200|luci-lua-runtime: fix build error with LTO
+44fbd008fb|Anari Jalakas|Mon Nov 11 21:05:06 2024 +0200|luci-lib-nixio: fix build error with LTO
+5de203082f|Anari Jalakas|Mon Nov 11 21:03:50 2024 +0200|luci-lib-jsonc: fix build error with LTO
+82bde8c42d|Anari Jalakas|Mon Nov 11 21:00:46 2024 +0200|luci-lib-ip: fix build error with LTO
+42e2e404cf|Paul Donald|Sun Nov 17 23:08:28 2024 +0100|luci-proto-vxlan: fix format in i18n strings
+ea8b7aa5ee|Christian Marangi|Sat Nov 16 18:16:20 2024 +0100|luci-app-package-manager: support new APK repositories.d configs
+cfa774ee72|Hannu Nyman|Sun Nov 17 10:24:03 2024 +0200|luci-mod-network: Fix for a9e1685 to enable translation
+22518fa15f|Daniel Nilsson|Fri Nov 15 22:38:41 2024 +0100|ci: account for APK as default on main branch
+69d379af9a|Daniel Nilsson|Fri Nov 15 20:20:55 2024 +0100|ci: upgrade openwrt/gh-action-sdk workflow to v7
 </details>
