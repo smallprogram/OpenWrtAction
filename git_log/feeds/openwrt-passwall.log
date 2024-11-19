@@ -2,10 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e88791d|lwb1978|Mon Nov 18 10:59:50 2024 +0800|luci: use date as version
-a62f838|lwb1978|Sun Nov 17 23:29:51 2024 +0800|luci: Adjust the priority of the ChinaDNS-NG list
-bda60d2|lwb1978|Sun Nov 17 18:38:40 2024 +0800|luci: Fix raw flow unavailability (#3504)
-68c1dfb|mashkouk|Sun Nov 17 12:05:16 2024 +0330|luci: add `1-1` option to Xray fragment packet
-b994d42|xiaorouji|Sun Nov 17 16:32:25 2024 +0800|luci: fixed known bugs
-e08f81f|lwb1978|Sun Nov 17 14:40:30 2024 +0800|luci: SplitHTTP to XHTTP & TCP to RAW
+05fe13f|lwb1978|Tue Nov 19 10:55:12 2024 +0800|luci: fix the code for retrieving version number in APK mode
+241693d|xiaorouji|Tue Nov 19 00:16:28 2024 +0800|luci: fix Xray Load Balancing Fallback node
+8127c25|lwb1978|Mon Nov 18 21:58:08 2024 +0800|luci: fix subscribe bugs
+4eb9b4c|xiaorouji|Mon Nov 18 16:15:47 2024 +0800|luci: fixed know bugs
 </details>

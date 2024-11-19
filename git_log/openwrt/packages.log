@@ -2,15 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-76d5db585|Ted Hess|Sun Nov 17 15:53:33 2024 -0500|sox: Remove wavpack (explicitly) from build      Remove myself as maintainer
-03f9a53ca|Hannu Nyman|Sun Nov 17 19:01:23 2024 +0200|netdiscover: Make version apk compatible
-abef31cac|Hannu Nyman|Sun Nov 17 18:32:17 2024 +0200|lua-curl-v3: Make version apk compatible
-46e1b60f5|Daniel Golle|Sat Nov 16 17:36:04 2024 +0000|mptcpd: update to version 0.13
-11b3b811b|Daniel Golle|Sat Nov 16 17:33:18 2024 +0000|ell: update to version 0.70
-b665256d6|Hannu Nyman|Sun Nov 17 12:49:31 2024 +0200|svox: Make version apk compatible
-252efdc34|Hannu Nyman|Sun Nov 17 13:04:14 2024 +0200|owfs: Make version apk compatible
-c8a46db23|Hannu Nyman|Sat Nov 16 21:09:20 2024 +0200|lua-openssl: Make version apk compatible
-69f5605e5|Hannu Nyman|Sat Nov 16 21:16:20 2024 +0200|pagekitec: Make version apk compatible
-f95f1ba47|Hannu Nyman|Sat Nov 16 13:56:22 2024 +0200|luv: Make version apk compatible
-454e232e5|Hannu Nyman|Sat Nov 16 13:35:54 2024 +0200|rtklib: Make version apk compatible
+a2cae1fac|Hannu Nyman|Mon Nov 18 20:08:50 2024 +0200|kafs-client: Make version apk compatible
+9fc92eab2|Ryan Keane|Sun Nov 17 06:10:30 2024 -0800|v2ray-core: Bump to 5.22.0
+8ec794998|Glenn Strauss|Sun Nov 17 23:56:46 2024 -0500|micropython-lib: update to 1.24.0
+4c751e454|Glenn Strauss|Thu Jul 25 02:44:12 2024 -0400|micropython-lib: update to 1.23.0 and fix compile on external mbedtls3
 </details>

@@ -2,23 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-efc0c4666b|Petr Štetiar|Sun Nov 17 19:19:36 2024 +0000|imagebuilder: fix DEFAULT_PACKAGES handling
-90f0be8521|Petr Štetiar|Sun Nov 17 05:15:13 2024 +0000|linux: fix missing default packages in profiles.json
-40be892a02|Petr Štetiar|Sun Nov 17 05:13:27 2024 +0000|imagebuilder: move handling of DEFAULT_PACKAGES into shareable place
-ac640718aa|Petr Štetiar|Sun Nov 17 04:12:23 2024 +0000|target,base-files: unify handling of procd-ujail
-57daea682e|Robert Marko|Sun Nov 17 19:22:25 2024 +0100|generic: add CONFIG_FB_INTEL
-43455f1075|Christian Marangi|Sun Nov 17 19:09:31 2024 +0100|include/package-pack: escape package description for APK mkpkg
-4511fa4b30|Sergey Ponomarev|Tue May 28 02:50:09 2024 +0300|dropbear: use config_get_bool enable
-98f26346cb|Shiji Yang|Sun Nov 17 19:30:35 2024 +0800|ath79: lzma-loader: fix syntax error
-cd92cbddf8|Rosen Penev|Wed Oct 2 15:25:35 2024 -0700|kernel: filter out compiler opts from config
-da8abd4a1e|Rosen Penev|Sat Nov 16 11:01:15 2024 -0800|kernel: remove GCC11_NO_ARRAY_BOUNDS
-84665993d6|Mieczyslaw Nalewaj|Sat Nov 16 17:26:52 2024 +0100|kernel: move CONFIG_INTEL_MEI settings to target generic
-371e7bef40|Hauke Mehrtens|Sat Nov 16 18:38:42 2024 +0100|omnia-eeprom: Mark it nonshared
-febe1db43d|Hauke Mehrtens|Sat Nov 16 18:36:45 2024 +0100|debugcc: Mark it nonshared
-226f74badd|Mieczyslaw Nalewaj|Sun Nov 17 08:40:44 2024 +0100|kernel: disable drm-i915 module for x86/geode
-491121288e|Rodrigo Balerdi|Fri Nov 8 17:40:29 2024 -0300|ipq807x: delete unused legacy eMMC sysupgrade code
-17f84bba44|Rodrigo Balerdi|Fri Nov 8 17:45:12 2024 -0300|ipq807x: order devices alphabetically
-fe481c9c47|Rodrigo Balerdi|Fri Nov 8 17:40:03 2024 -0300|ipq807x: prpl haze & qnap 301w: use the standard eMMC sysupgrade code
-5583d23189|Rodrigo Balerdi|Tue Sep 24 17:43:49 2024 -0300|ipq807x: nbg7815: use the standard eMMC sysupgrade code
-bdfae5a166|Petr Štetiar|Sun Nov 17 06:50:05 2024 +0000|image: apk: remove explicit distfeeds handling
+e6d483cd52|David Bauer|Sun Nov 17 13:23:09 2024 +0100|net: phy: broadcom: update dependency condition
+90de3b277b|Robert Marko|Mon Nov 18 17:15:54 2024 +0100|omnia-eeprom: depend only on subtarget
+7e287b563a|Daniel Golle|Sat Nov 16 15:29:24 2024 +0000|mtd-utils: add ubihealthd to nand-utils
+a5d23e3aee|Christian Marangi|Mon Nov 18 15:01:07 2024 +0100|airoha: an7581: sync patch with upstream version and tag them
+53eab6198b|Felix Fietkau|Mon Nov 18 11:21:02 2024 +0100|mac80211: backport some upstream fixes
 </details>

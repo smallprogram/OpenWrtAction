@@ -2,24 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bdc94f7fd|coolsnowwolf|Mon Nov 18 00:31:56 2024 +0800|kernel: bump 6.1 to 6.1.117
-20b3f20e5|coolsnowwolf|Sun Nov 17 23:23:59 2024 +0800|kernel: bump 6.6 to 6.6.61
-29c13455d|coolsnowwolf|Sun Nov 17 23:09:09 2024 +0800|kernel: Split kmod-video-dma into two kmods
-d17b0026c|coolsnowwolf|Sun Nov 17 23:02:41 2024 +0800|LEDE v24.10: set branch defaults
-4a7dd142f|Patryk Kowalczyk|Sat Sep 16 03:02:35 2023 +0200|filogic: add support for ASUS TUF AX6000
-8a28dd39d|coolsnowwolf|Fri Oct 25 23:16:03 2024 +0800|ipq60xx: add alt name to JDCloud routers
-94c4c1331|=?UTF-8?q?=C3=81lvaro=20Fern=C3=A1ndez=20Rojas?=|Tue Jun 18 22:04:57 2024 +0200|bcm27xx: switch default kernel to 6.6
-f25dd1042|coolsnowwolf|Sun Nov 17 11:43:45 2024 +0800|LEDE v24.10: set branch defaults
-0c5fee5ec|coolsnowwolf|Thu Aug 8 23:08:16 2024 +0800|mediatek: add BananaPi BPi-R3 mini
-7b605254b|coolsnowwolf|Thu Oct 24 23:20:04 2024 +0800|ubnt-ledbar: adapt for kernel v6.1
-0f3741b7b|coolsnowwolf|Sat Nov 16 15:06:01 2024 +0800|target.mk: reduce default image size
-d1129c83f|coolsnowwolf|Fri Nov 15 20:48:47 2024 +0800|mediatek: mt7622: add a second u-boot for redmi-ax6s
-71ff1c0e5|coolsnowwolf|Fri Nov 15 20:23:04 2024 +0800|ubnt-ledbar: adapt for kernel v6.1
-9526ee318|coolsnowwolf|Fri Nov 15 19:53:35 2024 +0800|toolchain: binutils: add support for 2.43.1
-44a23972e|John Audia|Fri Nov 8 14:57:45 2024 -0500|kernel: bump 6.6 to 6.6.60
-eba03073a|Beginner|Sun Nov 3 20:01:01 2024 +0800|kernel: bump 6.6 to 6.6.59
-f43ae1934|coolsnowwolf|Fri Nov 15 15:57:32 2024 +0800|qualcommax: ipq60xx: rename JDCloud Series model to friendly name
-5ab723718|coolsnowwolf|Fri Nov 15 15:00:57 2024 +0800|mediatek: filogic: add BananaPi BPi-R3 mini
-a444a1b18|coolsnowwolf|Fri Nov 15 12:48:19 2024 +0800|toolchain: binutils: switch to version 2.42 by default
-8ca126c6c|coolsnowwolf|Fri Nov 15 11:07:42 2024 +0800|mediatek: flogic: add KONKA KOMI A31 support
+d72ea8c7b|coolsnowwolf|Tue Nov 19 11:10:10 2024 +0800|ramips: mt7621: fix Huasifei MT7621 DTU led status
+54aae0729|coolsnowwolf|Mon Nov 18 22:09:35 2024 +0800|rockchip: Add support for FriendlyElec NanoPi R2S Plus
+655367c48|coolsnowwolf|Mon Nov 18 21:56:45 2024 +0800|rockchip: add Radxa ROCK 5A support
+4db4344ca|coolsnowwolf|Mon Nov 18 15:24:26 2024 +0800|kernel: bump 6.1 to 6.1.118
+b743ccd20|coolsnowwolf|Mon Nov 18 15:13:42 2024 +0800|kernel: bump 5.15 to 5.15.173
+0004a5c57|coolsnowwolf|Mon Nov 18 14:52:26 2024 +0800|kernel: bump 6.6 to 6.6.62
 </details>
