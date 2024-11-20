@@ -2,10 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d72ea8c7b|coolsnowwolf|Tue Nov 19 11:10:10 2024 +0800|ramips: mt7621: fix Huasifei MT7621 DTU led status
-54aae0729|coolsnowwolf|Mon Nov 18 22:09:35 2024 +0800|rockchip: Add support for FriendlyElec NanoPi R2S Plus
-655367c48|coolsnowwolf|Mon Nov 18 21:56:45 2024 +0800|rockchip: add Radxa ROCK 5A support
-4db4344ca|coolsnowwolf|Mon Nov 18 15:24:26 2024 +0800|kernel: bump 6.1 to 6.1.118
-b743ccd20|coolsnowwolf|Mon Nov 18 15:13:42 2024 +0800|kernel: bump 5.15 to 5.15.173
-0004a5c57|coolsnowwolf|Mon Nov 18 14:52:26 2024 +0800|kernel: bump 6.6 to 6.6.62
+44ac9994f|coolsnowwolf|Tue Nov 19 12:30:32 2024 +0800|rockchip: add NanoPi R2C Plus support
+bafb6af95|coolsnowwolf|Tue Nov 19 12:14:25 2024 +0800|rockchip: move nanopi r2s plus dts to common dts files
 </details>
