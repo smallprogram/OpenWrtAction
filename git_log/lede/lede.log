@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-44ac9994f|coolsnowwolf|Tue Nov 19 12:30:32 2024 +0800|rockchip: add NanoPi R2C Plus support
-bafb6af95|coolsnowwolf|Tue Nov 19 12:14:25 2024 +0800|rockchip: move nanopi r2s plus dts to common dts files
+71196b272|aiamadeus|Sun Jul 28 23:02:37 2024 +0800|kernel: video: add ST7789V LCD driver
+c74ed3282|aiamadeus|Wed Nov 20 22:26:09 2024 +0800|rockchip: add HINLINK H29K CPE Board
 </details>

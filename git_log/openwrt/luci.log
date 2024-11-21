@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b9496f2023|Paul Donald|Tue Nov 19 02:30:42 2024 +0100|luci-app-p910nd: update to package-manager
+53e36e3293|Paul Donald|Thu Nov 21 00:49:57 2024 +0100|luci-base: ui: extend addNotification to handle a user-provided timeout
 </details>

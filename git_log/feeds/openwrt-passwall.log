@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dce76d3|lwb1978|Wed Nov 20 00:40:32 2024 +0800|action: support new version numbers for smartdns branches
-f4118a6|lwb1978|Tue Nov 19 21:54:52 2024 +0800|luci: up release
-b866a5c|lwb1978|Tue Nov 19 20:29:01 2024 +0800|luci: compatibility modify
+d0e38a8|lwb1978|Wed Nov 20 23:41:29 2024 +0800|luci: optimize chinadns-ng configuration code
+f0ef262|lwb1978|Wed Nov 20 21:07:19 2024 +0800|luci: Fix dnsmasq startup failure in some systems
+0a5c58a|xiaorouji|Wed Nov 20 12:53:54 2024 +0800|luci: add SmartDNS support
 </details>

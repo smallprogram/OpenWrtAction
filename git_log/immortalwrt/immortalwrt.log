@@ -2,5 +2,20 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4611eb82bb|Tianling Shen|Tue Nov 19 16:58:34 2024 +0800|mac80211: mark upstreamed rtl patches
+9b92dc63c2|Tianling Shen|Wed Nov 20 15:07:34 2024 +0800|Merge Official Source
+22664498eb|Rosen Penev|Thu Oct 17 16:14:07 2024 -0700|mpc85xx: p2020: add missing symbols
+bec8edb6d6|Rosen Penev|Thu Oct 17 16:09:17 2024 -0700|mpc85xx: p1020: add missing symbols
+e9dd6da916|Rosen Penev|Wed Oct 16 15:42:56 2024 -0700|mpc85xx: p1010: add missing symbols
+890d47b60a|Rosen Penev|Wed Oct 16 15:17:14 2024 -0700|mpc85xx: run make kernel_oldconfig
+6756929b75|Robert Marko|Tue Nov 19 13:48:06 2024 +0100|apk: update to git e3464d096708b270138653ef93db59134bb24813 (2024-11-13)
+1c308bad54|Robert Marko|Tue Nov 19 14:36:17 2024 +0100|imagebuilder: fix APK architecture setting
+0d0a5eb4b5|Robert Marko|Tue Nov 19 13:12:28 2024 +0100|include/package-pack: translate PKGARCH for APK
+8ec35a2a15|Rodrigo Balerdi|Thu Nov 14 17:37:32 2024 -0300|ipq806x: tr4400v2: fix dtc warnings by deleting stock partitions
+dea839773c|Robert Marko|Mon Nov 18 19:55:57 2024 +0100|include/package-pack: add default 'provider_priority' for APK packages
+b0312c1081|He Ping|Tue Nov 19 10:41:42 2024 +0800|odhcp6c: update to Git HEAD (2024-09-25)
+e6d483cd52|David Bauer|Sun Nov 17 13:23:09 2024 +0100|net: phy: broadcom: update dependency condition
+90de3b277b|Robert Marko|Mon Nov 18 17:15:54 2024 +0100|omnia-eeprom: depend only on subtarget
+7e287b563a|Daniel Golle|Sat Nov 16 15:29:24 2024 +0000|mtd-utils: add ubihealthd to nand-utils
+a5d23e3aee|Christian Marangi|Mon Nov 18 15:01:07 2024 +0100|airoha: an7581: sync patch with upstream version and tag them
+53eab6198b|Felix Fietkau|Mon Nov 18 11:21:02 2024 +0100|mac80211: backport some upstream fixes
 </details>

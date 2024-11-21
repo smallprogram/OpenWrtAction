@@ -1,0 +1,14 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a0bb4d81c2|Tianling Shen|Wed Nov 20 15:09:26 2024 +0800|Merge Official Source
+b9496f2023|Paul Donald|Tue Nov 19 02:30:42 2024 +0100|luci-app-p910nd: update to package-manager
+a403707b57|Anari Jalakas|Mon Nov 11 21:06:08 2024 +0200|luci-lua-runtime: fix build error with LTO
+44fbd008fb|Anari Jalakas|Mon Nov 11 21:05:06 2024 +0200|luci-lib-nixio: fix build error with LTO
+5de203082f|Anari Jalakas|Mon Nov 11 21:03:50 2024 +0200|luci-lib-jsonc: fix build error with LTO
+82bde8c42d|Anari Jalakas|Mon Nov 11 21:00:46 2024 +0200|luci-lib-ip: fix build error with LTO
+42e2e404cf|Paul Donald|Sun Nov 17 23:08:28 2024 +0100|luci-proto-vxlan: fix format in i18n strings
+ea8b7aa5ee|Christian Marangi|Sat Nov 16 18:16:20 2024 +0100|luci-app-package-manager: support new APK repositories.d configs
+cfa774ee72|Hannu Nyman|Sun Nov 17 10:24:03 2024 +0200|luci-mod-network: Fix for a9e1685 to enable translation
+</details>

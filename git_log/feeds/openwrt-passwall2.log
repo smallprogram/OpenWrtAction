@@ -2,14 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-731102c|lwb1978|Tue Nov 19 20:29:01 2024 +0800|luci: compatibility modify
-38f2342|lwb1978|Mon Nov 18 21:58:08 2024 +0800|luci: fix subscribe bugs
-a4c02a7|xiaorouji|Tue Nov 19 13:17:56 2024 +0800|luci: bump version
-8ccd5ef|lwb1978|Sun Nov 17 14:40:30 2024 +0800|luci: SplitHTTP to XHTTP & TCP to RAW
-d46dbce|lwb1978|Tue Nov 19 10:55:12 2024 +0800|luci: update the code to retrieve the passwall2 version
-97d951f|Tianhe Y|Sat Apr 1 17:56:33 2023 +0800|luci: optimize passwall2 check update tips
-a3418f2|nftbty|Wed Mar 22 09:12:24 2023 +0800|luci: app_update add passwall2 version check
-31f5fd0|lwb1978|Thu Jun 27 10:41:57 2024 +0800|luci: subscribe add sing-box domain strategy options
-395803b|lwb1978|Fri Jun 28 09:29:39 2024 +0800|luci: optimize subscription user-agent
-751e920|xiaorouji|Tue Nov 19 12:34:03 2024 +0800|action: update
+78ffd4a|xiaorouji|Wed Nov 20 16:45:16 2024 +0800|luci: bump version
+f3e855c|xiaorouji|Wed Nov 20 16:42:26 2024 +0800|action: update
 </details>

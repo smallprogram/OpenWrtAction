@@ -2,12 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-10fcc5d39|Jon Henrik Bjørnstad|Tue Nov 19 15:36:34 2024 +0100|qbee-agent: bump version to 2024.45
-c342279eb|Ryan Keane|Mon Nov 18 05:56:10 2024 -0800|rclone: Bump to 1.68.2
-102ce164e|Ray Wang|Tue Nov 19 22:12:37 2024 +0800|hev-socks5-tunnel: update to 2.7.5
-a813c3a26|Ray Wang|Tue Nov 19 22:08:59 2024 +0800|hev-socks5-tproxy: update to 2.5.8
-30db86cc9|Ray Wang|Tue Nov 19 22:04:59 2024 +0800|hev-socks5-server: update to 2.6.9
-88d1876f3|Martin Pecka|Mon Jan 8 01:24:07 2024 +0100|strongswan: Add support for EAP-MSCHAPv2 authentication
-6b824ee7d|Martin Pecka|Sun Jan 7 23:23:57 2024 +0100|strongswan: Fix pools to be only generated once
-4b9453b9a|Martin Pecka|Sun Jan 7 23:00:07 2024 +0100|strongswan: Add support for send_cert option
+9c9f4dd08|Rosen Penev|Wed Nov 20 15:21:43 2024 -0800|iperf3: fix crashing with musl
+440a6e7fd|Eric Fahlgren|Wed Nov 20 10:22:37 2024 -0800|owut: update to 2024.11.20
+6945c7bb6|Tianling Shen|Wed Nov 20 21:18:50 2024 +0800|yq: Update to 4.44.5
+bf07d331b|Ryan Keane|Tue Nov 19 07:50:30 2024 -0800|alist: Bump to 3.39.2
 </details>
