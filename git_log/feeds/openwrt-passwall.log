@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d0e38a8|lwb1978|Wed Nov 20 23:41:29 2024 +0800|luci: optimize chinadns-ng configuration code
-f0ef262|lwb1978|Wed Nov 20 21:07:19 2024 +0800|luci: Fix dnsmasq startup failure in some systems
-0a5c58a|xiaorouji|Wed Nov 20 12:53:54 2024 +0800|luci: add SmartDNS support
+849a638|lwb1978|Fri Nov 22 01:25:58 2024 +0800|luci: optimize smartdns code (test)
+ea1a5b6|lwb1978|Fri Nov 22 01:24:08 2024 +0800|luci: optimize chinadns-ng code
+7e403fb|xiaorouji|Thu Nov 21 18:23:24 2024 +0800|luci: Adjust AC List source interface logic
 </details>

@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-78ffd4a|xiaorouji|Wed Nov 20 16:45:16 2024 +0800|luci: bump version
-f3e855c|xiaorouji|Wed Nov 20 16:42:26 2024 +0800|action: update
+fc6923d|xiaorouji|Thu Nov 21 18:23:24 2024 +0800|luci: Adjust AC List source interface logic
 </details>

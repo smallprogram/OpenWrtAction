@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a74e2a6|github-actions[bot]|Thu Nov 21 08:24:18 2024 +0800|v2ray-geoip: update to 202411140052 (#318)
-7656557|github-actions[bot]|Thu Nov 21 08:24:00 2024 +0800|v2ray-geosite: update to 20241112092643 (#317)
-1659197|lwb1978|Wed Nov 20 15:49:58 2024 +0800|chinadns-ng: optimize makefile
+8a5bae1|github-actions[bot]|Thu Nov 21 15:29:12 2024 +0800|xray-core: update to 24.11.21 (#320)
 </details>

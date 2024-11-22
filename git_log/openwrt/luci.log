@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-53e36e3293|Paul Donald|Thu Nov 21 00:49:57 2024 +0100|luci-base: ui: extend addNotification to handle a user-provided timeout
+3f907abad4|Weblate (bot)|Thu Nov 21 20:12:41 2024 +0100|Translations update from Hosted Weblate (#7402)
+b4a07a23c1|Paul Donald|Thu Nov 21 17:57:00 2024 +0100|luci-app-p910nd: excise luci-compat
+22fcc720ec|Paul Donald|Thu Nov 21 18:34:45 2024 +0100|luci-app-ddns: Convert to JS
 </details>
