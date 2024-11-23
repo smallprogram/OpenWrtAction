@@ -1,7 +1,0 @@
-<details> <summary> <b>telephony new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-2933d00|Jiri Slachta|Thu Nov 21 20:52:32 2024 +0100|Merge pull request #890 from hnyman/gsm
-a7e3d78|Hannu Nyman|Thu Nov 21 20:58:04 2024 +0200|gsmlib: Make version apk compatible
-</details>

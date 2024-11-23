@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-849a638|lwb1978|Fri Nov 22 01:25:58 2024 +0800|luci: optimize smartdns code (test)
-ea1a5b6|lwb1978|Fri Nov 22 01:24:08 2024 +0800|luci: optimize chinadns-ng code
-7e403fb|xiaorouji|Thu Nov 21 18:23:24 2024 +0800|luci: Adjust AC List source interface logic
+cdb29ea|lwb1978|Sat Nov 23 00:43:16 2024 +0800|luci: optimize smartdns code
 </details>

@@ -2,17 +2,18 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+468d14896|coolsnowwolf|Sat Nov 23 11:25:46 2024 +0800|kernel: disable kmod-fs-ntfs for Linux 6.12
+3346bf1ee|coolsnowwolf|Sat Nov 23 01:35:01 2024 +0800|kernel: bump 6.12 to 6.12.1
+0a6ea7cfb|coolsnowwolf|Sat Nov 23 01:02:34 2024 +0800|rockchip: add support for MMBOX ANAS3035
+27a261c8d|coolsnowwolf|Sat Nov 23 01:01:23 2024 +0800|r8125: support devname configuration from OF
+030f6f6ec|coolsnowwolf|Sat Nov 23 01:00:37 2024 +0800|rockchip: enable support for disk led trigger
+f031685a8|coolsnowwolf|Sat Nov 23 00:58:43 2024 +0800|kmod-sound-hda-core: fix build with linux 6.12
+fd656efbc|coolsnowwolf|Sat Nov 23 00:31:00 2024 +0800|kernel: bump 6.6 to 6.6.63
+85d99596b|coolsnowwolf|Fri Nov 22 23:57:01 2024 +0800|generic: fix netfilter xtables NFLOG and MARK not load on IPv4 on linux 6.6
+26cc6f2a4|coolsnowwolf|Fri Nov 22 21:59:04 2024 +0800|ipq807x: add Arcadyan AW1000 support
+f09fb1ac1|coolsnowwolf|Fri Nov 22 21:05:17 2024 +0800|ksmbd: move to in tree kernel buidin module
+676db0201|coolsnowwolf|Fri Nov 22 16:32:44 2024 +0800|modules: kmod-fs-cifs fix build with kernel 6.12
+af207e5f6|coolsnowwolf|Sat Nov 23 17:05:35 2024 +0800|uboot-rockchip: update rkbin and add rk3576 support
+0c80cdd18|coolsnowwolf|Sat Oct 26 23:05:16 2024 +0800|rockchip: add ArmSoM Sige5 (RK3576, 8 Cores) board support
 8fcfe76f3|coolsnowwolf|Fri Nov 22 11:05:16 2024 +0800|rockchip: add ArmSoM Sige5 (RK3576, 8 Cores) board support
-ab8cac351|coolsnowwolf|Fri Nov 22 10:57:43 2024 +0800|rockchip: backport upstream rk3576 support for kernel 6.6
-8decff2d8|coolsnowwolf|Fri Nov 22 10:43:46 2024 +0800|toolchain: fix gcc 11 build error with host gcc-14
-32dc417ef|coolsnowwolf|Fri Nov 22 10:37:04 2024 +0800|ksmbd: fix build with kernel 6.12
-af098a176|coolsnowwolf|Thu Nov 21 23:02:51 2024 +0800|kmod-tpm: fix linux 6.12 support
-6b5e1a552|coolsnowwolf|Thu Nov 21 14:25:25 2024 +0800|x86: add kconfig for linux 6.12
-a6567a241|coolsnowwolf|Thu Nov 21 13:17:45 2024 +0800|autocore: fix kernel 6.12 x86 board name display
-53e61ac52|coolsnowwolf|Thu Nov 21 13:16:25 2024 +0800|kernel: add linux kernel 6.12 support
-be8fee09f|coolsnowwolf|Thu Nov 21 12:27:34 2024 +0800|mac80211: add kernel build with 6.11+ support
-28f226a03|coolsnowwolf|Thu Nov 21 12:20:47 2024 +0800|r8125: fix build with linux 6.9+
-a816cede4|coolsnowwolf|Thu Nov 21 12:14:51 2024 +0800|r8168: fix build with linux 6.9+
-826816c20|coolsnowwolf|Thu Nov 21 12:13:54 2024 +0800|r8126: fix build with linux 6.9+
-418c88745|coolsnowwolf|Thu Nov 21 12:10:10 2024 +0800|generic: sync genlmsg_mcast patch with upstream with kernel 6.6.59+
 </details>
