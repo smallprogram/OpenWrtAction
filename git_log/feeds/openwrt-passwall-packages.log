@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-5610d6f|lwb1978|Sat Nov 23 08:37:47 2024 +0800|naiveproxy: update to 131.0.6778.86-r1
-b1fe873|zhusir|Sat Nov 23 01:15:17 2024 +0800|gn: Update to git HEAD Co-authored-by: zxlhhyccc
-30c7126|lwb1978|Fri Nov 22 21:34:09 2024 +0800|naiveproxy: update to 131.0.6778.86-1
-cc1a239|github-actions[bot]|Fri Nov 22 20:30:03 2024 +0800|sing-box: update to 1.10.2 (#321)
-</details>

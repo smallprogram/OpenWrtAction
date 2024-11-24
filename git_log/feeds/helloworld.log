@@ -2,15 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-28c207b|coolsnowwolf|Sat Nov 23 01:26:52 2024 +0800|Merge pull request #1609 from zxlhhyccc/patch-3
-129a0ed|coolsnowwolf|Sat Nov 23 01:21:02 2024 +0800|Merge pull request #1607 from zxlhhyccc/patch-1
-879d6df|coolsnowwolf|Sat Nov 23 01:20:31 2024 +0800|Merge pull request #1610 from zxlhhyccc/patch-4
-c66beea|coolsnowwolf|Sat Nov 23 01:20:20 2024 +0800|Merge pull request #1611 from zxlhhyccc/patch-5
-2e5bdc8|zxl hhyccc|Fri Nov 22 23:50:26 2024 +0800|chinadns-ng: Fix typo
-5e1952b|zxl hhyccc|Fri Nov 22 23:39:19 2024 +0800|chinadns-ng: update to 2024.11.17
-b0e66e6|zxl hhyccc|Fri Nov 22 23:37:32 2024 +0800|chinadns-ng: update to 2024.11.17
-5f06b35|zxl hhyccc|Fri Nov 22 23:22:53 2024 +0800|v2ray-core: Bump to 5.22.0
-d798b3e|zxl hhyccc|Fri Nov 22 23:19:37 2024 +0800|xray-core: update to 24.11.21
-43d6f9a|zxl hhyccc|Fri Nov 22 23:07:14 2024 +0800|gn: Update to git HEAD
-d2254d6|zxl hhyccc|Fri Nov 22 23:06:26 2024 +0800|gn: Update to git HEAD
+20b3e95|coolsnowwolf|Sat Nov 23 23:30:42 2024 +0800|Merge pull request #1612 from zxlhhyccc/patch-6
+35f82ef|zxl hhyccc|Sat Nov 23 16:57:53 2024 +0800|luci-app-ssr-plus: Fix tcp protocol imported to the Vmess node. Do not select TLS.
 </details>

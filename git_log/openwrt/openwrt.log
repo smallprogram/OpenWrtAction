@@ -1,0 +1,40 @@
+<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+faf4b3e0f7|David Ignjic|Wed Nov 13 11:20:27 2024 +0100|mediatek: filogic: add support for Cudy WR3000S v1
+b8b658bc0d|David Bauer|Sat Nov 23 20:00:57 2024 +0100|mediatek: fix Cudy AP3000 Outdoor label-mac
+2898d1d126|George Oldfort|Mon Nov 11 11:18:19 2024 +0100|mediatek: add support for Acer Predator W6d and Acer Vero W6m
+d42075dcef|George Oldfort|Mon Nov 11 10:40:45 2024 +0100|mediatek: improve device tree for Acer Predator Connect W6
+e7aaba2587|George Oldfort|Mon Nov 11 10:14:55 2024 +0100|mediatek: make use of Acer Predator Connect W6's u-boot environment
+ce3b36b3d5|George Oldfort|Mon Nov 11 09:25:56 2024 +0100|mediatek: split Acer/W6 dts into W6 common dtsi and device specific dts
+c89ed7acc8|Joerg Bayer|Sat Apr 13 16:05:24 2024 +0200|linux-firmware: Add support for Intel AX411
+5572e0196a|Tim Noack|Mon Oct 21 12:21:59 2024 +0000|ath79: add support for TP-Link CPE710-v2
+832cc8ce04|Tim Noack|Mon Oct 21 12:21:41 2024 +0000|ath79: refactor dts of TP-Link CPE710-v1
+3a9752ea02|Vaclav Svoboda|Mon Nov 11 22:34:00 2024 +0100|ramips: mt76x8: Add support for Zbtlink ZBT-WE2426-B
+6280b4abfb|Rosen Penev|Fri Oct 18 19:19:50 2024 -0700|mvebu: devm for mutex_init
+55644397cd|Rosen Penev|Tue Oct 22 17:07:44 2024 -0700|mxs: run kernel_oldconfig
+5eb25dddb1|Antonio Pastor|Sat Nov 16 15:09:49 2024 -0500|kernel: modules: appletalk: add for Netatalk v4
+851e7f77e4|Thomas Richard|Thu Sep 26 16:55:22 2024 +0200|stm32: add new stm32 target
+e109831e07|Thomas Richard|Tue Nov 5 11:13:34 2024 +0100|kernel: package v4l2-async and v4l2-fwnode drivers
+1095925246|Thomas Richard|Tue Nov 5 11:23:36 2024 +0100|kernel: add kmod-media-controller dependency for kmod-usb-audio
+bb3418f21f|Thomas Richard|Tue Nov 5 11:10:44 2024 +0100|kernel: package media controller driver
+b0adf5e0fd|Thomas Richard|Tue Nov 5 10:39:47 2024 +0100|kernel: package industrialio-buffer-cb driver
+7bcc68ede3|Thomas Richard|Tue Nov 5 10:38:49 2024 +0100|kernel: package crypto_engine driver
+6b9df468f0|Thomas Richard|Fri Oct 25 15:23:26 2024 +0200|kernel: unset CONFIG_DEVFREQ_THERMAL in kmod-thermal package
+e606366a2e|Thomas Richard|Fri Oct 25 15:21:57 2024 +0200|kernel: package snd-soc-dmic driver
+ff96bd84ce|Thomas Richard|Fri Oct 25 15:20:38 2024 +0200|kernel: package industrialio-hw-consumer driver
+be937952fd|Thomas Richard|Thu Oct 10 17:21:16 2024 +0200|murata-nvram: add new package
+960f5f94d7|Thomas Richard|Thu Oct 10 17:19:38 2024 +0200|murata-firmware: add new package
+456e0aad97|Thomas Richard|Tue Sep 24 18:06:28 2024 +0200|mac80211: enable CONFIG_BRCMFMAC_SDIO for stm32
+08dcb73c8d|Thomas Richard|Thu Sep 26 16:29:41 2024 +0200|arm-trusted-firmware-stm32: add ATF for stm32 boards
+ac79ad0757|Thomas Richard|Thu Sep 26 16:24:26 2024 +0200|uboot-stm32: add U-Boot for stm32 boards
+fae25d4001|Thomas Richard|Thu Sep 26 16:19:35 2024 +0200|optee-os-stm32: add OP-TEE for stm32 boards
+dedb90e8f8|Thomas Richard|Thu Sep 26 16:10:26 2024 +0200|build: add generic build template for optee-os packages
+d8a9669093|Romanov Danila|Mon Oct 21 21:34:34 2024 +0300|mediatek: change Routerich AX3000 ubi size All new routers are shipped with ubi size 112MB since early September. Bootloader update required (ask vendor , see wiki)
+75af6a0d73|Til Kaiser|Fri Nov 15 16:49:14 2024 +0100|x86: add all ports to the Gowin 1U default network config
+7bb99bca3d|Shiji Yang|Fri Nov 22 18:12:12 2024 +0800|ramips: sync upstream Ralink clock patches
+eb395585ae|John Audia|Fri Nov 22 10:53:37 2024 -0500|kernel: bump 6.6 to 6.6.63
+611bfa4d72|John Audia|Sun Nov 17 14:33:47 2024 -0500|kernel: bump 6.6 to 6.6.62
+adf958c919|Hauke Mehrtens|Sat Nov 23 00:34:30 2024 +0100|wifi-scripts: Fix parsing of Capabilities
+</details>

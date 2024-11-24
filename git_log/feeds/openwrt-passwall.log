@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cdb29ea|lwb1978|Sat Nov 23 00:43:16 2024 +0800|luci: optimize smartdns code
+7dae480|lwb1978|Sat Nov 23 23:56:27 2024 +0800|luci: bump version 24.11.23-r1
+ad76831|lwb1978|Sat Nov 23 14:57:43 2024 +0800|luci: some optimizations
 </details>
