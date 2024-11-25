@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2048ab452|Tianling Shen|Sat Nov 23 22:39:48 2024 +0800|qBittorrent-Enhanced-Edition: Update to 5.0.2.10
+dad7a8450|Christian Marangi|Fri Nov 8 18:03:00 2024 +0100|CI: multi-arch-test-build: fix error in detecting changed packages
+6a96f9afb|Peter van Dijk|Fri Nov 15 08:48:26 2024 +0100|CI: multi-arch-test-build: support apk in artifacts
+a51030c90|Peter van Dijk|Fri Nov 15 08:48:06 2024 +0100|CI: multi-arch-test-build: print what packages are actually built
 </details>

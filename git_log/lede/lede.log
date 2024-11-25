@@ -1,0 +1,7 @@
+<details> <summary> <b>lede new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+3d32cf175|aiamadeus|Thu Nov 21 22:28:06 2024 +0800|rockchip: fixes rk3588 usb3 init issue
+9bfa3a936|coolsnowwolf|Sat Jul 27 22:25:15 2024 +0800|r8125/r8126: improve transmit performance
+</details>

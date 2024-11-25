@@ -1,7 +1,0 @@
-<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-20b3e95|coolsnowwolf|Sat Nov 23 23:30:42 2024 +0800|Merge pull request #1612 from zxlhhyccc/patch-6
-35f82ef|zxl hhyccc|Sat Nov 23 16:57:53 2024 +0800|luci-app-ssr-plus: Fix tcp protocol imported to the Vmess node. Do not select TLS.
-</details>

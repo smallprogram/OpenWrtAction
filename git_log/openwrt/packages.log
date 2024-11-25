@@ -2,10 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8afc26faf|Dirk Brenken|Sat Nov 23 22:15:00 2024 +0100|adblock: release 4.2.3-1
-87edf8cb1|Stan Grishin|Mon Nov 18 21:10:48 2024 +0000|adblock-fast: bugfixes
-6ed915b06|Hannu Nyman|Sat Nov 23 10:05:29 2024 +0200|qcsuper: Make version apk compatible
-af7183fc3|Hirokazu MORIKAWA|Sat Nov 23 14:51:28 2024 +0900|node: upgrade to 22.11.0 LTS
-7ce6b6866|Hannu Nyman|Sat Nov 23 09:55:04 2024 +0200|netifyd: Make version apk compatible
-42026ab23|Hannu Nyman|Fri Nov 22 21:40:25 2024 +0200|oci-runtime-tools: Make version apk compatible
+0b0415685|Michael Heimpold|Sat Nov 23 12:18:50 2024 +0100|php8: update to 8.3.14
+8609a5bbe|Dirk Brenken|Sun Nov 24 15:44:20 2024 +0100|banIP: release 1.0.1-1
+641ec2b64|Sergey Ponomarev|Sat Mar 2 21:30:41 2024 +0200|syslog-ng: alternative for logread
 </details>

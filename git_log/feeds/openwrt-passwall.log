@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7dae480|lwb1978|Sat Nov 23 23:56:27 2024 +0800|luci: bump version 24.11.23-r1
-ad76831|lwb1978|Sat Nov 23 14:57:43 2024 +0800|luci: some optimizations
+7838cb3|lwb1978|Sun Nov 24 22:44:08 2024 +0800|luci: optimize local group argument for smartdns - 2
+1aed4a6|lwb1978|Sun Nov 24 19:58:24 2024 +0800|luci: optimize local group argument for smartdns
 </details>
