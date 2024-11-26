@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3d32cf175|aiamadeus|Thu Nov 21 22:28:06 2024 +0800|rockchip: fixes rk3588 usb3 init issue
-9bfa3a936|coolsnowwolf|Sat Jul 27 22:25:15 2024 +0800|r8125/r8126: improve transmit performance
+a87916d4c|coolsnowwolf|Sat Feb 17 23:03:08 2024 +0800|README: add llvm as build dependency
+4d0b9caf5|John Audia|Fri Nov 22 10:53:37 2024 -0500|kernel: bump 6.6 to 6.6.63 (#16997)
 </details>

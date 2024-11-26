@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0b0415685|Michael Heimpold|Sat Nov 23 12:18:50 2024 +0100|php8: update to 8.3.14
-8609a5bbe|Dirk Brenken|Sun Nov 24 15:44:20 2024 +0100|banIP: release 1.0.1-1
-641ec2b64|Sergey Ponomarev|Sat Mar 2 21:30:41 2024 +0200|syslog-ng: alternative for logread
+99e70c829|Daniel Golle|Mon Nov 25 01:00:33 2024 +0100|gst1-plugins-bad: fix building GL libraries
+4535470a1|Daniel Golle|Mon Nov 25 00:59:08 2024 +0100|libinput: update to 1.26.2 and add support for libwacom
+a7be2662b|Daniel Golle|Mon Nov 25 00:58:54 2024 +0100|libwacom: add package
+c72af1e21|Itay Shoshani|Sun Nov 10 00:30:40 2024 +0200|openthread-br: bump source version to 2024-11-20 and add missing dependencies
 </details>

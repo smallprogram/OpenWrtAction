@@ -2,16 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-eed39d45c2|John Audia|Sun Oct 29 04:32:21 2023 -0400|kernel: enable pressure interface
-d413163832|Mikhail Zhilkin|Sat Oct 26 09:37:14 2024 +0000|mediatek: Routerich AX3000: add OpenWrt U-Boot layout
-c0581520b1|Mikhail Zhilkin|Sat Oct 26 09:34:43 2024 +0000|uboot-mediatek: add Routerich AX3000 support
-ec839c786c|Mauri Sandberg|Mon Oct 28 22:13:04 2024 +0200|ramips: dna_valokuitu-plus-ex400: clean-up image creation
-0c57510ced|Shiji Yang|Sun Nov 3 12:30:21 2024 +0800|ramips: mt76x8: disable unused Ralink systick driver
-b7dd70a0d7|Hauke Mehrtens|Sun Nov 24 14:57:19 2024 +0100|kernel: usb: kmod-usb-audio: Fix dependency
-ea2c860225|Hauke Mehrtens|Sun Nov 24 14:53:47 2024 +0100|stm32: Remove unnecessary kernel options
-eb7aa07a0e|Hauke Mehrtens|Sun Nov 24 14:52:22 2024 +0100|CI: labeler: Add stm32 target
-a9d3c5b4c9|Hauke Mehrtens|Sat Nov 23 22:32:03 2024 +0100|dropbear: bump to 2024.86
-ed52345445|Hauke Mehrtens|Sun Nov 24 14:39:57 2024 +0100|x86: Deactivate kernel options with extra overhead
-a4bd42b790|Robert Marko|Sat Nov 23 14:46:29 2024 +0100|config: dont select procd-seccomp via USE_SECCOMP
-a48ec449cc|Robert Marko|Sat Nov 23 14:29:49 2024 +0100|config: rename SECCOMP to USE_SECCOMP
+5695267847|Robert Marko|Sun Nov 24 21:15:08 2024 +0100|ramips: mt7621: support openwrt,netdev-name for renaming interfaces
+72dec105fb|Petr Štetiar|Mon Nov 4 09:04:04 2024 +0000|openwrt-keyring: apk: use just snapshot key explicitly
+118c657bd1|Petr Štetiar|Mon Nov 4 09:02:19 2024 +0000|Revert "openwrt-keyring: fix missing 24.10 usign key by installing it"
+1f53b7fb75|Robert Marko|Sun Nov 24 23:50:22 2024 +0100|qualcommax: ipq60xx: remove source-only flag
 </details>

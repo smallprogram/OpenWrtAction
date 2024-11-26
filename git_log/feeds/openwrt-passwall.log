@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7838cb3|lwb1978|Sun Nov 24 22:44:08 2024 +0800|luci: optimize local group argument for smartdns - 2
-1aed4a6|lwb1978|Sun Nov 24 19:58:24 2024 +0800|luci: optimize local group argument for smartdns
+0162dd2|yk271|Mon Nov 25 19:31:37 2024 +0800|luci: add apple intelligence rule (#3528)
 </details>
