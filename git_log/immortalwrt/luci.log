@@ -2,22 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0691b3ea22|Tianling Shen|Mon Nov 25 21:10:04 2024 +0800|Merge Official Source
-2ce85291bd|Paul Donald|Sun Nov 24 04:18:27 2024 +0100|Merge branch 'master' into openwrt-24.10
-2670fc48dc|Dirk Brenken|Sat Nov 23 22:57:39 2024 +0100|luci-app-adblock: sync with adblock-4.2.3-1
-cb767dc51b|Dirk Brenken|Sat Nov 23 22:57:39 2024 +0100|luci-app-adblock: sync with adblock-4.2.3-1
-ac1043cdc6|Stan Grishin|Sat Nov 23 10:05:22 2024 -0800|Merge pull request #7408 from stangri/master-luci-app-adblock-fast
-9e70c9aed8|Robert Marko|Thu Nov 21 22:17:04 2024 +0100|collections: select package manager for SSL collections
-03f37cff4c|Christian Korber|Fri Nov 15 09:18:17 2024 +0100|luci-app-keepalived: add notification tab
-a4a5cf6af7|Paul Donald|Sat Nov 23 00:24:10 2024 +0100|luci-app-libreswan: small refactor
-2bf802d844|Paul Donald|Fri Nov 22 23:47:19 2024 +0100|luci-app-libreswan: prevent proposals and tunnels overwriting each other
-ae8bbb814f|Mustafa Can Elmacı|Sun Nov 17 15:52:45 2024 +0300|treewide: HTML Cleanup
-aa955d6465|Paul Donald|Fri Nov 22 19:50:43 2024 +0100|luci-proto-openconnect: convert helper to ucode
-0060e43174|Paul Donald|Fri Nov 22 20:10:50 2024 +0100|luci-proto-openfortivpn: convert helper to ucode
-891e2d803e|Paul Donald|Thu Nov 21 18:55:02 2024 +0100|luci-app-ddns: excise luci-lua-runtime depends
-3f907abad4|Weblate (bot)|Thu Nov 21 20:12:41 2024 +0100|Translations update from Hosted Weblate (#7402)
-b4a07a23c1|Paul Donald|Thu Nov 21 17:57:00 2024 +0100|luci-app-p910nd: excise luci-compat
-22fcc720ec|Paul Donald|Thu Nov 21 18:34:45 2024 +0100|luci-app-ddns: Convert to JS
-53e36e3293|Paul Donald|Thu Nov 21 00:49:57 2024 +0100|luci-base: ui: extend addNotification to handle a user-provided timeout
-206e5fbbcc|Stan Grishin|Mon Nov 18 21:13:56 2024 +0000|luci-app-adblock-fast: sync with principal
+b4b8665b83|Interesting Gang|Tue Nov 26 15:29:40 2024 +0800|luci-app-passwall: bump version to 24.11.23
 </details>

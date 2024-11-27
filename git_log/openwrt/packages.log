@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-99e70c829|Daniel Golle|Mon Nov 25 01:00:33 2024 +0100|gst1-plugins-bad: fix building GL libraries
-4535470a1|Daniel Golle|Mon Nov 25 00:59:08 2024 +0100|libinput: update to 1.26.2 and add support for libwacom
-a7be2662b|Daniel Golle|Mon Nov 25 00:58:54 2024 +0100|libwacom: add package
-c72af1e21|Itay Shoshani|Sun Nov 10 00:30:40 2024 +0200|openthread-br: bump source version to 2024-11-20 and add missing dependencies
+3140259fc|Dirk Brenken|Tue Nov 26 07:05:24 2024 +0100|banIP: update 1.0.1-2
+823633c0e|Dirk Brenken|Tue Nov 26 07:00:22 2024 +0100|adblock: update 4.2.3-2
 </details>

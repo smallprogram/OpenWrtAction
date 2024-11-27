@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a87916d4c|coolsnowwolf|Sat Feb 17 23:03:08 2024 +0800|README: add llvm as build dependency
-4d0b9caf5|John Audia|Fri Nov 22 10:53:37 2024 -0500|kernel: bump 6.6 to 6.6.63 (#16997)
+c6de673aa|Marty Jones|Mon Nov 11 16:52:43 2024 -0500|linux-firmware: update to 20241110
+61b26c92f|aiamadeus|Fri Nov 22 20:02:03 2024 +0800|uboot-rockchip: disable optee client
 </details>
