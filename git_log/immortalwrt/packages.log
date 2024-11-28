@@ -2,5 +2,37 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-64412463a|FunnyGeekette|Tue Nov 26 12:14:25 2024 +0800|shadowsocks-rust: Update to 1.21.2
+be3695c26|Saxon|Thu Nov 28 11:23:53 2024 +0800|filebrowser: Update to 2.31.2
+dfea4d078|Tianling Shen|Wed Nov 27 22:02:32 2024 +0800|Node.js: sync with upstream source
+a36f680e9|Tianling Shen|Wed Nov 27 22:03:45 2024 +0800|Merge Official Source
+3140259fc|Dirk Brenken|Tue Nov 26 07:05:24 2024 +0100|banIP: update 1.0.1-2
+823633c0e|Dirk Brenken|Tue Nov 26 07:00:22 2024 +0100|adblock: update 4.2.3-2
+99e70c829|Daniel Golle|Mon Nov 25 01:00:33 2024 +0100|gst1-plugins-bad: fix building GL libraries
+4535470a1|Daniel Golle|Mon Nov 25 00:59:08 2024 +0100|libinput: update to 1.26.2 and add support for libwacom
+a7be2662b|Daniel Golle|Mon Nov 25 00:58:54 2024 +0100|libwacom: add package
+c72af1e21|Itay Shoshani|Sun Nov 10 00:30:40 2024 +0200|openthread-br: bump source version to 2024-11-20 and add missing dependencies
+0b0415685|Michael Heimpold|Sat Nov 23 12:18:50 2024 +0100|php8: update to 8.3.14
+8609a5bbe|Dirk Brenken|Sun Nov 24 15:44:20 2024 +0100|banIP: release 1.0.1-1
+641ec2b64|Sergey Ponomarev|Sat Mar 2 21:30:41 2024 +0200|syslog-ng: alternative for logread
+8afc26faf|Dirk Brenken|Sat Nov 23 22:15:00 2024 +0100|adblock: release 4.2.3-1
+87edf8cb1|Stan Grishin|Mon Nov 18 21:10:48 2024 +0000|adblock-fast: bugfixes
+6ed915b06|Hannu Nyman|Sat Nov 23 10:05:29 2024 +0200|qcsuper: Make version apk compatible
+af7183fc3|Hirokazu MORIKAWA|Sat Nov 23 14:51:28 2024 +0900|node: upgrade to 22.11.0 LTS
+7ce6b6866|Hannu Nyman|Sat Nov 23 09:55:04 2024 +0200|netifyd: Make version apk compatible
+42026ab23|Hannu Nyman|Fri Nov 22 21:40:25 2024 +0200|oci-runtime-tools: Make version apk compatible
+adb05b464|Daniel Golle|Fri Nov 22 17:56:57 2024 +0000|gst1-libav: remove obsolete configuration options
+863be39f2|Hannu Nyman|Fri Nov 22 22:02:42 2024 +0200|debootstrap: Make version apk compatible
+a0f153e9a|Ryan Keane|Sun Nov 17 04:54:26 2024 -0800|network: Add SUBMENU variable for some packages
+e3bbd7078|Rosen Penev|Thu Nov 14 14:44:37 2024 -0800|nbd: fix compilation with GCC14
+97f0eb94a|Hannu Nyman|Fri Nov 22 21:54:29 2024 +0200|hfsprogs: Make version apk compatible
+3e0d1c213|John Audia|Fri Nov 22 10:59:59 2024 -0500|ncdu: update to 1.21
+9fff76af3|TeleostNaCl Dai|Fri Nov 22 15:53:05 2024 +0800|speedtest-go: update to 1.7.9
+e63935b86|Jianhui Zhao|Fri Nov 22 16:04:22 2024 +0800|rtty: update to 8.1.3
+c565bbadf|Finn Landweber|Wed Nov 20 09:55:12 2024 +0100|borgbackup: update to 1.4.0
+db51a6426|Rosen Penev|Mon Nov 11 16:30:48 2024 -0800|tayga: fix compilation with GCC14
+824b2c09a|Rosen Penev|Thu Nov 14 14:23:50 2024 -0800|httping: fix compilation with full NLS
+c6989438c|Finn Landweber|Wed Nov 20 14:39:59 2024 +0100|python-setuptools-scm: update to 8.1.0
+a525be276|Gagan Deep|Fri Nov 22 00:10:07 2024 +0530|openwisp-monitoring: update to 0.2.1
+9c9f4dd08|Rosen Penev|Wed Nov 20 15:21:43 2024 -0800|iperf3: fix crashing with musl
+440a6e7fd|Eric Fahlgren|Wed Nov 20 10:22:37 2024 -0800|owut: update to 2024.11.20
 </details>

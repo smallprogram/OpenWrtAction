@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3140259fc|Dirk Brenken|Tue Nov 26 07:05:24 2024 +0100|banIP: update 1.0.1-2
-823633c0e|Dirk Brenken|Tue Nov 26 07:00:22 2024 +0100|adblock: update 4.2.3-2
+d7e86e79d|Mohd Husaam Mehdi|Wed Mar 27 21:37:48 2024 +0530|nginx: update init script to publish services over mdns
+40cfff8fe|Alexandru Ardelean|Wed Nov 27 16:41:18 2024 +0200|python-dateutil: "downgrade" to version 2.9.0
+9ad17512a|Daniel Golle|Tue Nov 26 23:04:37 2024 +0000|gst1-plugins-bad: build videoparsersbad plugin
 </details>

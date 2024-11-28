@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+22ea96b6d8|Hosted Weblate|Wed Nov 27 13:00:39 2024 +0100|Translated using Weblate (Chinese (Traditional Han script))
+80f18df48f|Ramon Van Gorkom|Thu Nov 21 21:34:14 2024 +0100|luci-base: make items of UIDynamicList drag-sortable
+</details>

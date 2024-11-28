@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c857145e03|Eric Fahlgren|Fri Nov 22 09:00:25 2024 -0800|build: profiles.json: add kernel version information
-1bdb6d8404|George Oldfort|Tue Nov 26 06:42:25 2024 +0100|mediatek: remove ktd-202x driver filogic image (Aer Vero W6m)
-341cc047b9|Petr Štetiar|Mon Nov 25 21:23:54 2024 +0000|Revert "target,base-files: unify handling of procd-ujail"
+f4492b6b1c|Paul Donald|Mon Nov 25 15:24:54 2024 +0100|netifd: update to Git 768027c5a7640137857f412f554227abd6160cdd (2024-11-27)
+3929ef4c21|Christian Marangi|Wed Nov 27 22:20:54 2024 +0100|uci: update to Git HEAD (2024-11-26)
+c19c31f7aa|Paul Spooren|Wed Nov 27 17:09:30 2024 +0100|base-files: add migration information for APK
 </details>

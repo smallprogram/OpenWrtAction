@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c6de673aa|Marty Jones|Mon Nov 11 16:52:43 2024 -0500|linux-firmware: update to 20241110
-61b26c92f|aiamadeus|Fri Nov 22 20:02:03 2024 +0800|uboot-rockchip: disable optee client
+efce6b639|Daniel Golle|Fri Jun 28 03:39:36 2024 +0100|generic: 6.6: update block nvmem patchset
+446d07189|Álvaro Fernández Rojas|Wed Oct 2 19:01:57 2024 +0200|generic: backport upstream r8169 patches
 </details>

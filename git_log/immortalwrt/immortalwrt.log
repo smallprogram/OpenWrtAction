@@ -1,0 +1,12 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6f07609c65|Tianling Shen|Wed Nov 27 21:59:45 2024 +0800|Merge Official Source
+c857145e03|Eric Fahlgren|Fri Nov 22 09:00:25 2024 -0800|build: profiles.json: add kernel version information
+1bdb6d8404|George Oldfort|Tue Nov 26 06:42:25 2024 +0100|mediatek: remove ktd-202x driver filogic image (Aer Vero W6m)
+341cc047b9|Petr Štetiar|Mon Nov 25 21:23:54 2024 +0000|Revert "target,base-files: unify handling of procd-ujail"
+5695267847|Robert Marko|Sun Nov 24 21:15:08 2024 +0100|ramips: mt7621: support openwrt,netdev-name for renaming interfaces
+72dec105fb|Petr Štetiar|Mon Nov 4 09:04:04 2024 +0000|openwrt-keyring: apk: use just snapshot key explicitly
+118c657bd1|Petr Štetiar|Mon Nov 4 09:02:19 2024 +0000|Revert "openwrt-keyring: fix missing 24.10 usign key by installing it"
+</details>

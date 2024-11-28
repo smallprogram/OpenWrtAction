@@ -2,5 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b4b8665b83|Interesting Gang|Tue Nov 26 15:29:40 2024 +0800|luci-app-passwall: bump version to 24.11.23
+9398910c85|Tianling Shen|Wed Nov 27 22:12:20 2024 +0800|Merge Official Source
+b3d86ec269|Tianling Shen|Wed Nov 27 22:11:53 2024 +0800|formal: check commit subject only
+fefb9acf57|Paul Donald|Mon Nov 25 21:32:39 2024 +0100|luci-base: form: fix sort order bug triggered by integer types
+7b2d7ba2a5|Paul Donald|Mon Nov 25 21:26:35 2024 +0100|luci-base: uci: fixed reorder bug where missed deletes caused off-by-one
+9a6dc74ab8|Paul Donald|Sun Nov 24 02:11:03 2024 +0100|luci-mod-network: routes: implement cloneable for all tabs
+03c028cb7f|Paul Donald|Sun Nov 24 00:31:08 2024 +0100|luci-app-firewall: implement cloneable for all tabs (except zones)
+22cccf7b04|Paul Donald|Sun Nov 24 01:50:40 2024 +0100|luci-base: add clone action for tables
 </details>
