@@ -2,7 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d7e86e79d|Mohd Husaam Mehdi|Wed Mar 27 21:37:48 2024 +0530|nginx: update init script to publish services over mdns
-40cfff8fe|Alexandru Ardelean|Wed Nov 27 16:41:18 2024 +0200|python-dateutil: "downgrade" to version 2.9.0
-9ad17512a|Daniel Golle|Tue Nov 26 23:04:37 2024 +0000|gst1-plugins-bad: build videoparsersbad plugin
+3f35e9c06|Daniel Golle|Mon Nov 25 00:41:02 2024 +0100|libdrm: split into sub-packages
+4695e2c10|Mohd Husaam Mehdi|Fri Mar 29 22:49:37 2024 +0530|atftpd: update init script to publish tftp service
+6afd740a8|Mohd Husaam Mehdi|Wed Mar 27 21:32:00 2024 +0530|atftpd: update init script to use procd
+3d05b2c1a|Tianling Shen|Thu Nov 28 15:02:17 2024 +0800|xray-core: Update to 24.11.21
+5604c651b|Tianling Shen|Thu Nov 28 15:02:11 2024 +0800|geoipupdate: Update to 7.1.0
+b0303ca16|Tianling Shen|Thu Nov 28 15:02:00 2024 +0800|cloudflared: Update to 2024.11.1
+4ee4b22e4|George Iv|Sun Nov 24 15:49:27 2024 -0500|yggdrasil: bump to 0.5.10
+7edb3c511|Jianhui Zhao|Wed Nov 27 15:47:06 2024 +0800|lua-eco: update to 3.6.2
+bc94125b2|Alexandru Ardelean|Mon Oct 7 11:06:57 2024 +0300|numpy: bump to version 2.1.3
+4f5b8f905|Alexandru Ardelean|Mon Oct 7 11:06:00 2024 +0300|python-pytz: bump to version 2024.2
+9968ff798|Alexandru Ardelean|Mon Oct 7 11:05:07 2024 +0300|django: bump to 5.1.3
 </details>

@@ -1,7 +1,0 @@
-<details> <summary> <b>lede new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-efce6b639|Daniel Golle|Fri Jun 28 03:39:36 2024 +0100|generic: 6.6: update block nvmem patchset
-446d07189|Álvaro Fernández Rojas|Wed Oct 2 19:01:57 2024 +0200|generic: backport upstream r8169 patches
-</details>

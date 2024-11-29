@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0001dd7|A-BO|Thu Nov 28 21:02:21 2024 +0800|luci: add geoip/geosite database parsing (test)
+</details>

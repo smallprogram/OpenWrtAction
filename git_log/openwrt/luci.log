@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-22ea96b6d8|Hosted Weblate|Wed Nov 27 13:00:39 2024 +0100|Translated using Weblate (Chinese (Traditional Han script))
-80f18df48f|Ramon Van Gorkom|Thu Nov 21 21:34:14 2024 +0100|luci-base: make items of UIDynamicList drag-sortable
+98662b0834|Paul Donald|Fri Nov 29 01:09:56 2024 +0100|luci-app-firewall: fix some strings
+0a6a2f1fc5|Aleksey Kolosov|Fri Nov 15 10:42:55 2024 +0300|luci-app-statistics: fix prepare values from list vlaues
+bbc4a90925|Paul Donald|Thu Nov 28 19:30:01 2024 +0100|luci-mod-network: fix DHCP ip constraint (masks generate "bad address")
 </details>

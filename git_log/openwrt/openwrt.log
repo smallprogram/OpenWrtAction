@@ -2,7 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f4492b6b1c|Paul Donald|Mon Nov 25 15:24:54 2024 +0100|netifd: update to Git 768027c5a7640137857f412f554227abd6160cdd (2024-11-27)
-3929ef4c21|Christian Marangi|Wed Nov 27 22:20:54 2024 +0100|uci: update to Git HEAD (2024-11-26)
-c19c31f7aa|Paul Spooren|Wed Nov 27 17:09:30 2024 +0100|base-files: add migration information for APK
+5a4eb56a7b|Maxim Anisimov|Thu Oct 31 10:30:08 2024 +0300|mediatek/filogic: add Keenetic KN-3911 support
+0d651dd302|Maxim Anisimov|Thu Oct 31 12:27:54 2024 +0300|mediatek/filogic: enable mtd virtual concat support
+79db5d65ca|Maxim Anisimov|Mon Jun 3 18:52:49 2024 +0300|ramips: move zyimage creation to include/image-commands.mk
+30ae0b3f1e|Petr Štetiar|Wed Nov 27 08:39:46 2024 +0000|mediatek: filogic: Cudy WR3000S v1: fix CRLF line endings
+e44180d45c|George Oldfort|Tue Nov 26 15:14:56 2024 +0100|mediatek: filogic: add KTD2026/7 driver to Acer Connect Vero W6m
+56d97fff55|George Oldfort|Tue Nov 26 15:04:45 2024 +0100|generic: backport support for KTD2026/7 rgb(w) led controller
+620a7ef47f|Petr Štetiar|Thu Nov 28 18:36:06 2024 +0000|config: build: remove experimental warning from USE_APK option
+08f12283c7|Petr Štetiar|Thu Nov 28 16:30:07 2024 +0000|tools: ccache update to 4.10.2
+e48903a9ff|Daniel Golle|Wed Nov 27 21:37:57 2024 +0100|meson: honor MESON_ARGS and MESON_HOST_ARGS when calling ninja
+ee9eb91e0a|Daniel Golle|Wed Nov 27 21:43:26 2024 +0100|gmp: use same source tarball for tools/gmp and package/libs/gmp
+6f9384f4a4|Petr Štetiar|Thu Nov 28 08:10:44 2024 +0000|base-files: fix manger->manager typo
 </details>
