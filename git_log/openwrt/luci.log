@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-98662b0834|Paul Donald|Fri Nov 29 01:09:56 2024 +0100|luci-app-firewall: fix some strings
-0a6a2f1fc5|Aleksey Kolosov|Fri Nov 15 10:42:55 2024 +0300|luci-app-statistics: fix prepare values from list vlaues
-bbc4a90925|Paul Donald|Thu Nov 28 19:30:01 2024 +0100|luci-mod-network: fix DHCP ip constraint (masks generate "bad address")
+a30ae19006|Milad Mohtashamirad|Mon Nov 18 14:09:53 2024 +1100|luci-app-openvpn: Handle missing openvpn config file.
+63b7e637c9|Paul Donald|Sat Nov 30 04:47:52 2024 +0100|luci-mod-status: NOTRACK action for nftables rule rendering
 </details>

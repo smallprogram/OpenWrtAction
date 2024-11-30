@@ -1,0 +1,7 @@
+<details> <summary> <b>lede new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+007d406ef|coolsnowwolf|Fri Nov 29 18:31:31 2024 +0800|rockchip: refine fan speed for mmbox anas3035
+160990303|coolsnowwolf|Fri Nov 29 17:20:57 2024 +0800|mt76: add kernel 6.12 support
+</details>
