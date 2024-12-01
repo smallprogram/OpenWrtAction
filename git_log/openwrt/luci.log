@@ -2,6 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a30ae19006|Milad Mohtashamirad|Mon Nov 18 14:09:53 2024 +1100|luci-app-openvpn: Handle missing openvpn config file.
-63b7e637c9|Paul Donald|Sat Nov 30 04:47:52 2024 +0100|luci-mod-status: NOTRACK action for nftables rule rendering
+dfd802abdc|Paul Donald|Sat Nov 30 23:46:07 2024 +0100|luci-mod-dashboard: partially invert the black SVG in dark mode
+523fcf4815|Paul Donald|Sat Nov 30 23:46:45 2024 +0100|luci-mod-dashboard: tab indent CSS
+ccfa972239|Griffen Edge|Tue Nov 12 21:40:28 2024 +1100|luci-mod-dashboard: custom.css: Add color variables
+2e46cfc47d|Sergey Ponomarev|Sat Nov 30 23:44:54 2024 +0200|luci-app-upnp: restore translations: ACL, intro
+d56caf8ab5|Paul Donald|Sat Nov 30 21:48:11 2024 +0100|Merge remote-tracking branch 'weblate/master'
+9c403f5c37|Sergey Ponomarev|Sat Nov 30 15:04:20 2024 +0200|luci-app-upnp: restore translations
+7a7f9ec0b7|Sergey Ponomarev|Sat Nov 30 14:53:50 2024 +0200|luci-app-upnp: remove dangling lines and split translations
+98c04137b4|Paul Donald|Sat Nov 30 15:49:08 2024 +0100|luci-proto-ipv6: set recommended default for norelease
+eadd59fc34|Paul Donald|Tue Nov 19 16:29:14 2024 +0100|luci-proto-ipv6: augment reqprefix description to include prefix also
+f3d26a2a56|Preport|Thu Nov 14 23:07:05 2024 +0300|luci-proto-3g/ppp/pppossh: fix being unable to set keepalive to 0
+4024dfa302|Self-Hosting-Group|Fri Nov 29 00:00:00 2024 +0000|luci-app-upnp: Finalise changes for OpenWrt 24.10 release
+428a43b365|Hosted Weblate|Fri Nov 29 20:50:41 2024 +0100|Translated using Weblate (Chinese (Traditional Han script))
 </details>

@@ -2,6 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-007d406ef|coolsnowwolf|Fri Nov 29 18:31:31 2024 +0800|rockchip: refine fan speed for mmbox anas3035
-160990303|coolsnowwolf|Fri Nov 29 17:20:57 2024 +0800|mt76: add kernel 6.12 support
+e63b43e03|coolsnowwolf|Sun Dec 1 02:42:26 2024 +0800|toolchain: gcc 11: backport inline subword atomic support for riscv
+665a261af|Felix Fietkau|Tue May 7 12:18:08 2024 +0200|tools: add more linux include files to fix x86 build on macos
+a7dc2d2fe|Felix Fietkau|Wed Jan 11 18:39:02 2023 +0100|tools/include: add more endian macros
+dcd5ca038|Georgi Valkov|Sat Mar 30 22:10:27 2024 +0200|toolchain/gcc: fix build errors on macOS with Xcode 15.3
+8c3743afc|coolsnowwolf|Sat Nov 30 21:16:27 2024 +0800|prereq-build: limit python distutils check to <v3.12
 </details>

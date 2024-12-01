@@ -1,0 +1,12 @@
+<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+9d61093|coolsnowwolf|Sat Nov 30 14:58:37 2024 +0800|Merge pull request #1620 from zxlhhyccc/apple
+88a1fd6|coolsnowwolf|Sat Nov 30 14:57:40 2024 +0800|Merge pull request #1618 from zxlhhyccc/patch-8
+5a89220|coolsnowwolf|Sat Nov 30 14:57:24 2024 +0800|Merge pull request #1614 from zxlhhyccc/patch-7
+4e5edc8|coolsnowwolf|Sat Nov 30 14:56:29 2024 +0800|xray-core: update to 24.11.30
+9da6d6a|zxlhhyccc|Fri Nov 29 23:56:55 2024 +0800|luci-app-ssr-plus: Add apple domains data update settings and replace apple DNS support.
+c9e31f5|zxl hhyccc|Sun Nov 24 00:25:33 2024 +0800|luci-app-ssr-plus: Fix `Xray` old configuration does not run. Signed-off-by: Zxl hhyccc <zxlhhy@gmail.com>
+499a7c1|zxl hhyccc|Mon Nov 25 21:33:39 2024 +0800|luci-app-ssr-plus: Fix Importing configuration cannot import fingerprint.
+</details>
