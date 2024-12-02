@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-a61a1fc|lwb1978|Sun Dec 1 10:01:07 2024 +0800|luci: bump version 24.12.1-r1
-7fb833f|lwb1978|Sun Dec 1 09:54:37 2024 +0800|luci: dnsmasq shunt optimize
-c421540|lwb1978|Sun Dec 1 09:19:57 2024 +0800|luci: update default rules
-0d03e83|A-BO|Sat Nov 30 19:47:45 2024 +0800|luci: adapted with xray version 24.11.30 (#3542)
-</details>

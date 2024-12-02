@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+28e46bb61|Internet1235|Sun Dec 1 22:23:53 2024 +0800|openssl: make compatible with v1.1 pkg (#13143)
 e63b43e03|coolsnowwolf|Sun Dec 1 02:42:26 2024 +0800|toolchain: gcc 11: backport inline subword atomic support for riscv
 665a261af|Felix Fietkau|Tue May 7 12:18:08 2024 +0200|tools: add more linux include files to fix x86 build on macos
 a7dc2d2fe|Felix Fietkau|Wed Jan 11 18:39:02 2023 +0100|tools/include: add more endian macros

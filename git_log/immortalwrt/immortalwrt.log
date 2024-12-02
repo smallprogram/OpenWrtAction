@@ -1,7 +1,8 @@
-<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
 
 SHA|Author|Date|Message
 -|-|-|-
+524af8a23c|Tianling Shen|Sun Dec 1 15:33:27 2024 +0800|Merge Official Source
 207bfee855|Andris PE|Tue Mar 26 21:53:06 2024 +0200|netifd: check if /sbin/wifi exists before calling it
 86f489c02f|Rosen Penev|Sun Jun 23 12:25:34 2024 -0700|ath79: remove wmac mac address defaults
 dde510cf97|Andreas Böhler|Sun Nov 24 19:49:20 2024 +0100|ath79: add support for KuWFi N650 CPE

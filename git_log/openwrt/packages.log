@@ -1,8 +1,0 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-55a6cd43c|Norman Dankert|Fri Nov 22 22:21:18 2024 +0100|stubby: ensure appdata directory is present on service start
-9f507623e|Stan Grishin|Wed Nov 27 22:45:28 2024 +0000|sunwait: initial commit
-86e0e8349|Christian Marangi|Sat Nov 30 12:42:33 2024 +0100|net-mtools: bump to release 3.1
-</details>

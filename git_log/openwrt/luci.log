@@ -2,16 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dfd802abdc|Paul Donald|Sat Nov 30 23:46:07 2024 +0100|luci-mod-dashboard: partially invert the black SVG in dark mode
-523fcf4815|Paul Donald|Sat Nov 30 23:46:45 2024 +0100|luci-mod-dashboard: tab indent CSS
-ccfa972239|Griffen Edge|Tue Nov 12 21:40:28 2024 +1100|luci-mod-dashboard: custom.css: Add color variables
-2e46cfc47d|Sergey Ponomarev|Sat Nov 30 23:44:54 2024 +0200|luci-app-upnp: restore translations: ACL, intro
-d56caf8ab5|Paul Donald|Sat Nov 30 21:48:11 2024 +0100|Merge remote-tracking branch 'weblate/master'
-9c403f5c37|Sergey Ponomarev|Sat Nov 30 15:04:20 2024 +0200|luci-app-upnp: restore translations
-7a7f9ec0b7|Sergey Ponomarev|Sat Nov 30 14:53:50 2024 +0200|luci-app-upnp: remove dangling lines and split translations
-98c04137b4|Paul Donald|Sat Nov 30 15:49:08 2024 +0100|luci-proto-ipv6: set recommended default for norelease
-eadd59fc34|Paul Donald|Tue Nov 19 16:29:14 2024 +0100|luci-proto-ipv6: augment reqprefix description to include prefix also
-f3d26a2a56|Preport|Thu Nov 14 23:07:05 2024 +0300|luci-proto-3g/ppp/pppossh: fix being unable to set keepalive to 0
-4024dfa302|Self-Hosting-Group|Fri Nov 29 00:00:00 2024 +0000|luci-app-upnp: Finalise changes for OpenWrt 24.10 release
-428a43b365|Hosted Weblate|Fri Nov 29 20:50:41 2024 +0100|Translated using Weblate (Chinese (Traditional Han script))
+094507c193|Hannu Nyman|Sun Dec 1 19:48:09 2024 +0200|luci-app-adblock-fast: Sync translations
+05a0236137|Hannu Nyman|Sun Dec 1 19:47:41 2024 +0200|luci-app-adblock: Sync translations
+4cb87bf576|Hannu Nyman|Sun Dec 1 19:45:43 2024 +0200|luci-base: Sync translations
+019e29f20e|Hannu Nyman|Sun Dec 1 19:26:31 2024 +0200|luci-app-wifischedule: Remove unnecessary dependency
+48196f0aae|try496|Sun Dec 1 14:51:02 2024 +0000|Translated using Weblate (Chinese (Simplified Han script))
+7bd6f8d1aa|Paul Donald|Sun Dec 1 15:31:08 2024 +0100|Merge remote-tracking branch 'weblate/master'
+ef167782ff|Hannu Nyman|Sun Dec 1 15:37:48 2024 +0200|luci-mod-system: Add 'disabled' as cron log level
+1e7ce8de99|Hannu Nyman|Sun Dec 1 12:57:20 2024 +0200|luci-mod-system: Fix cron log level settings
+e6ef2b3a7b|Paul Dee|Sat Nov 30 20:59:20 2024 +0000|Translated using Weblate (Swedish)
+af2fe15d36|Matthaiks|Sat Nov 30 21:21:22 2024 +0000|Translated using Weblate (Polish)
 </details>
