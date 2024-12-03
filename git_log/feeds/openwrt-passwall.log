@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0185f47|lwb1978|Mon Dec 2 22:49:27 2024 +0800|luci: add sniff override function prompt
+0d03e8e|lwb1978|Mon Dec 2 22:05:36 2024 +0800|luci: adjust the priority of ipset/nftset for shunt nodes
+</details>

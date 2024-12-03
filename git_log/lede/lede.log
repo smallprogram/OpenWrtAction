@@ -2,10 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-28e46bb61|Internet1235|Sun Dec 1 22:23:53 2024 +0800|openssl: make compatible with v1.1 pkg (#13143)
-e63b43e03|coolsnowwolf|Sun Dec 1 02:42:26 2024 +0800|toolchain: gcc 11: backport inline subword atomic support for riscv
-665a261af|Felix Fietkau|Tue May 7 12:18:08 2024 +0200|tools: add more linux include files to fix x86 build on macos
-a7dc2d2fe|Felix Fietkau|Wed Jan 11 18:39:02 2023 +0100|tools/include: add more endian macros
-dcd5ca038|Georgi Valkov|Sat Mar 30 22:10:27 2024 +0200|toolchain/gcc: fix build errors on macOS with Xcode 15.3
-8c3743afc|coolsnowwolf|Sat Nov 30 21:16:27 2024 +0800|prereq-build: limit python distutils check to <v3.12
+003a08490|Michael Pratt|Thu Jun 20 00:55:58 2024 -0400|build: add default host build recipes for gnulib
+70c103fda|Christian Marangi|Wed May 22 11:38:49 2024 +0200|host-build: always define Host/Prepare/Default
+fbc286546|coolsnowwolf|Mon Dec 2 19:28:12 2024 +0800|Release: v24.10.0-rc1: adjust config defaults
+7f19e32c4|coolsnowwolf|Mon Dec 2 19:22:30 2024 +0800|Version update to R24.12.12
+72bab93bc|Georgi Valkov|Sat Mar 30 22:10:27 2024 +0200|toolchain/gcc: fix build errors on macOS with Xcode 15.3
+ff5046fa7|coolsnowwolf|Mon Dec 2 18:53:09 2024 +0800|tools: update versions and sync with upstream v24.10
+17731641e|Michael Pratt|Wed Mar 22 18:29:24 2023 -0400|tools: add gnulib source
 </details>
