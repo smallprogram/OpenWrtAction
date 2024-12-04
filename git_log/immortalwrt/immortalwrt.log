@@ -1,0 +1,21 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+08e44a6900|Tianling Shen|Tue Dec 3 14:27:52 2024 +0800|Merge Official Source
+41f7322853|Daniel Golle|Mon Dec 2 01:05:01 2024 +0000|meson: allow using staging python
+8349196571|John Crispin|Tue Nov 5 09:40:24 2024 +0100|fstools: update to latest HEAD
+5c12fe45b9|John Crispin|Fri Nov 29 09:13:52 2024 +0100|target/metadata: set OpenWrt One as the default menuconfig target/profile
+f342255025|John Crispin|Mon Dec 2 12:37:52 2024 +0100|mediatek: filogic: enable CONFIG_LEDS_TRIGGER_PATTERN
+218f3884d2|John Crispin|Thu Oct 17 15:12:55 2024 +0200|wifi-scripts: add ucode based scripts
+0210279888|John Crispin|Tue Oct 22 09:58:48 2024 +0200|wifi-scripts: add ucode based iwinfo
+ba9cdbeea8|John Crispin|Fri Nov 1 09:26:15 2024 +0100|ucode: update to latest HEAD
+304fd40592|John Crispin|Tue Nov 5 09:41:20 2024 +0100|hostapd: expose owe_transition_ifname inside bss_info method
+6365316fab|John Crispin|Mon Oct 14 13:11:38 2024 +0200|hostapd: add ubus support for wired driver
+461d9dca89|John Crispin|Fri Nov 29 08:40:08 2024 +0100|hostapd: add radius WISPr rate control AVPs
+90d0065f51|John Crispin|Mon Dec 2 10:33:55 2024 +0100|hostapd: enable CONFIG_EAP_PSK
+5af4d4f6b6|John Crispin|Fri Nov 29 10:58:06 2024 +0100|uboot-mediatek: increase USB probe delay on OpenWrt One
+1af15e8a2b|John Crispin|Fri Feb 9 18:10:12 2024 +0100|base-files: allow forcing all LEDs to on/off/blink state
+3b661cfcf9|Felix Fietkau|Mon Dec 2 12:27:35 2024 +0100|build: remove targetinfo invalidation based on .config
+044d2fea81|Robert Marko|Mon Dec 2 11:26:32 2024 +0100|rpcd: update to Git HEAD (2024-12-02)
+</details>

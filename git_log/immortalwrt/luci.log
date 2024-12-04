@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+c2e9f14a3b|Tianling Shen|Tue Dec 3 16:09:22 2024 +0800|luci-app-unblockneteasemusic: work with latest dnsmasq confdir
+ac77bcb9ae|Interesting Gang|Tue Dec 3 14:33:08 2024 +0800|luci-app-passwall: update to 24.12.1
+</details>

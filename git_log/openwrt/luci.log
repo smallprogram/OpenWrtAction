@@ -2,45 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8d26279bab|Paul Donald|Fri Nov 29 03:02:36 2024 +0100|luci-app-ddns: diverse fixes, i18n corrections, and code improvements
-96afb61faa|L. VLO|Mon Dec 2 16:13:28 2024 +0000|Translated using Weblate (French)
-0c73f502b3|L. VLO|Mon Dec 2 16:12:22 2024 +0000|Translated using Weblate (French)
-cfaddb6e68|L. VLO|Mon Dec 2 16:12:16 2024 +0000|Translated using Weblate (French)
-e635848d2f|L. VLO|Mon Dec 2 16:12:03 2024 +0000|Translated using Weblate (French)
-6eaaac2818|L. VLO|Mon Dec 2 16:11:20 2024 +0000|Translated using Weblate (French)
-cb38d82dbf|L. VLO|Mon Dec 2 16:10:32 2024 +0000|Translated using Weblate (French)
-4cb724ecb9|L. VLO|Mon Dec 2 16:10:28 2024 +0000|Translated using Weblate (French)
-f4200d3a6c|L. VLO|Mon Dec 2 16:10:15 2024 +0000|Translated using Weblate (French)
-56a8e1e5d5|L. VLO|Mon Dec 2 16:19:18 2024 +0000|Translated using Weblate (French)
-97f73699af|L. VLO|Mon Dec 2 16:10:03 2024 +0000|Translated using Weblate (French)
-9c9e310b33|L. VLO|Mon Dec 2 16:09:58 2024 +0000|Translated using Weblate (French)
-9cb7cfabf2|L. VLO|Mon Dec 2 16:09:52 2024 +0000|Translated using Weblate (French)
-f597dd884e|L. VLO|Mon Dec 2 16:09:05 2024 +0000|Translated using Weblate (French)
-124ef9740e|L. VLO|Mon Dec 2 16:17:20 2024 +0000|Translated using Weblate (French)
-528a85e583|L. VLO|Mon Dec 2 16:08:12 2024 +0000|Translated using Weblate (French)
-b1ca4f3efa|L. VLO|Mon Dec 2 16:07:27 2024 +0000|Translated using Weblate (French)
-ff7e3b3a4b|L. VLO|Mon Dec 2 16:15:21 2024 +0000|Translated using Weblate (French)
-25b1dba292|L. VLO|Mon Dec 2 16:14:53 2024 +0000|Translated using Weblate (French)
-1791f1d087|L. VLO|Mon Dec 2 16:15:06 2024 +0000|Translated using Weblate (French)
-92a370f37a|L. VLO|Mon Dec 2 16:12:31 2024 +0000|Translated using Weblate (French)
-4250e6db1b|L. VLO|Mon Dec 2 16:04:20 2024 +0000|Translated using Weblate (French)
-5142090a1d|L. VLO|Mon Dec 2 16:22:05 2024 +0000|Translated using Weblate (French)
-fc9da5a2f6|L. VLO|Mon Dec 2 16:12:51 2024 +0000|Translated using Weblate (French)
-64b3ac1765|L. VLO|Mon Dec 2 16:14:36 2024 +0000|Translated using Weblate (French)
-71cf158c2d|L. VLO|Mon Dec 2 16:13:10 2024 +0000|Translated using Weblate (French)
-47a41b55fe|L. VLO|Mon Dec 2 16:11:40 2024 +0000|Translated using Weblate (French)
-787552e42a|L. VLO|Mon Dec 2 16:11:55 2024 +0000|Translated using Weblate (French)
-db626fa864|Self-Hosting-Group|Mon Dec 2 00:00:00 2024 +0000|luci-app-upnp: Fix old translations
-5b1253c41f|Paul Donald|Mon Dec 2 20:56:05 2024 +0100|luci-app-upnp: Critical hotfix revert 7a7f9ec
-3447700b38|dima|Wed Oct 2 06:53:21 2024 -0400|luci-app-filemanager: Full featured File Manager application for LuCI
-5c97a89684|Tom Haley|Mon Dec 2 18:40:32 2024 +0300|luci-proto-wireguard: Fix incorrect peer detection for IP v6
-0ca52ebe27|Paul Donald|Mon Dec 2 01:48:10 2024 +0100|i18n: drop 'en' English folders.
-f9f17fab94|Hosted Weblate|Mon Dec 2 15:55:36 2024 +0100|Translated using Weblate (Irish)
-c7bc6fbb7a|Paul Donald|Sun Dec 1 17:40:44 2024 +0100|git: ignore eslint configs
-b1968d9cdd|Florian Eckert|Mon Dec 2 08:35:39 2024 +0100|Merge pull request #7115 from TDT-AG/pr/20240510-luci-base
-b4d61a367a|Florian Eckert|Mon Dec 2 08:31:35 2024 +0100|Merge pull request #7437 from stokito/luci-app-uhttpd_vars
-6df635d8bc|Sergey Ponomarev|Sun May 26 23:42:36 2024 +0300|luci-app-uhttpd: rename all non-reused vars to m, s, o
-611ff53c73|Florian Eckert|Thu Apr 18 12:39:20 2024 +0200|luci-base: add missing PKG_LICENSE_FILES info
-fb279a0a25|Florian Eckert|Thu Apr 18 13:46:24 2024 +0200|luci-base: add additional prepare handling for the licenses files
-f17fa682d1|Florian Eckert|Thu Apr 18 13:39:33 2024 +0200|luci-base: Extending packages prepare handling
+e76155d094|Paul Donald|Tue Dec 3 17:19:21 2024 +0100|docs: amend links for real this time
+9a5a5ec578|Paul Donald|Tue Dec 3 16:41:55 2024 +0100|luci-app-package-manager: Correct Size display string + i18n sync
+db2aa74276|Yuan Lau|Tue Dec 3 07:38:13 2024 +0000|Translated using Weblate (Chinese (Traditional Han script))
+6ff821a2a4|Yuan Lau|Tue Dec 3 11:11:11 2024 +0000|Translated using Weblate (Chinese (Traditional Han script))
+6b169be589|Matthaiks|Tue Dec 3 06:15:24 2024 +0000|Translated using Weblate (Polish)
+73d552c277|Hosted Weblate|Tue Dec 3 07:15:23 2024 +0100|Translated using Weblate (Chinese (Traditional Han script))
+22d48305af|Sergey Ponomarev|Sun Dec 1 13:36:19 2024 +0200|treewide: replace "var m, s, o" with "let m, s, o"
+e1d8f0e6f9|Sergey Ponomarev|Sun Dec 1 02:03:42 2024 +0200|treewide: declare rpc calls with const
+2ffaab3fca|Paul Donald|Tue Dec 3 16:25:20 2024 +0100|treewide: explicitly declare rpc calls with const
+1ee9d0c8fa|Paul Donald|Tue Dec 3 16:12:01 2024 +0100|docs: amend links
 </details>

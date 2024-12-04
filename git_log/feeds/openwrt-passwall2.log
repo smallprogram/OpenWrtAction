@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6d43af3|xiaorouji|Tue Dec 3 18:11:10 2024 +0800|Merge pull request #704 from Pacalini/xhttp-extra
+dc31c05|Pacalini|Sat Nov 30 20:47:52 2024 +0800|luci: XHTTP stream-one & ws heartbeatPeriod
+cae0c0a|Pacalini|Tue Nov 26 19:53:41 2024 +0800|luci: config & rules for XHTTP extra
+67974ac|Pacalini|Sun Nov 24 15:47:00 2024 +0800|luci: Xray XHTTP extra
+</details>
