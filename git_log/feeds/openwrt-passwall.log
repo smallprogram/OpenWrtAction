@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-e49143d|lwb1978|Wed Dec 4 01:49:21 2024 +0800|luci: optimize subscribe url access method
-61c3fd1|lwb1978|Wed Dec 4 01:22:28 2024 +0800|luci: add subscribe url access method
-</details>

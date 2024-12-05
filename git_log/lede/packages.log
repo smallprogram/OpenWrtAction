@@ -2,5 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-33b43c29|coolsnowwolf|Tue Dec 3 14:30:31 2024 +0800|libs/glib2: update to 2.82.0
+fa0c2be9|coolsnowwolf|Wed Dec 4 21:36:59 2024 +0800|liburing: update to 2.7
+eac3fc6c|coolsnowwolf|Wed Dec 4 21:24:13 2024 +0800|php7: drop package
+d2dcd551|coolsnowwolf|Wed Dec 4 21:22:54 2024 +0800|libtins: update to 4.5
+d2a80288|coolsnowwolf|Wed Dec 4 19:27:14 2024 +0800|xupnpd: ignore init script install
+45df3bee|coolsnowwolf|Wed Dec 4 18:07:14 2024 +0800|Revert "libs/glib2: update to 2.82.0"
+5c4514c6|coolsnowwolf|Wed Dec 4 14:05:11 2024 +0800|zmq: update to 4.3.5
 </details>

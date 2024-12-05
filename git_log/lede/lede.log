@@ -2,15 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2ce0dfdc4|coolsnowwolf|Tue Dec 3 22:27:16 2024 +0800|elfutils: fix build with gcc 8
-0c725fe51|coolsnowwolf|Tue Dec 3 20:42:54 2024 +0800|ubus: update to Git HEAD (2024-10-20)
-e59c30afb|coolsnowwolf|Tue Dec 3 20:05:32 2024 +0800|libubox: update to Git HEAD (2024-03-29)
-3409218cf|coolsnowwolf|Tue Dec 3 18:08:22 2024 +0800|README.md: update host apt install package
-0e2c0a340|coolsnowwolf|Tue Dec 3 14:27:03 2024 +0800|meson: allow using staging python
-e67c75518|coolsnowwolf|Tue Dec 3 14:26:15 2024 +0800|autosamba: allow select samba server type
-841d08282|coolsnowwolf|Tue Dec 3 13:55:08 2024 +0800|target.mk: improve ipv6 support package
-3022abc26|coolsnowwolf|Tue Dec 3 13:28:24 2024 +0800|procd: use standard POSIX header for basename()
-4ebc73897|coolsnowwolf|Tue Dec 3 13:14:16 2024 +0800|elfutils: Update to 0.192
-6c2883702|coolsnowwolf|Tue Dec 3 12:58:46 2024 +0800|toolchain/musl: Update to 1.2.5
-326599e3d|coolsnowwolf|Tue Dec 3 12:31:48 2024 +0800|toolchain: gcc: switch default to 13
+d06838b44|coolsnowwolf|Wed Nov 27 23:15:02 2024 +0800|libreadlne: create symlinks for .so
+0ab7c18f4|coolsnowwolf|Wed Dec 4 13:55:27 2024 +0800|ksmbd: update to Git HEAD (2024-12-02)
+228c3c440|coolsnowwolf|Wed Dec 4 13:01:29 2024 +0800|Revert "ksmbd: move to in tree kernel buidin module"
 </details>

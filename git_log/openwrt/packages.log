@@ -2,10 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2b999558d|Luiz Angelo Daros de Luca|Sun Dec 1 15:44:07 2024 -0300|ruby: update to 3.3.6
-46bb0d187|Jonas Jelonek|Sun Dec 1 23:43:00 2024 +0000|eza: update to 0.20.10
-4519666fb|Jonas Jelonek|Sun Dec 1 23:46:28 2024 +0000|croc: update to 10.1.1
-c3dcb6c15|Jonas Jelonek|Sun Dec 1 23:50:20 2024 +0000|gping: update to 1.18.0
-cc41737f8|Stijn Tintel|Tue Dec 3 18:13:40 2024 +0200|openthread-br: fix indentation
-808834b96|Martin Schiller|Tue Dec 3 11:56:52 2024 +0100|keepalived: fix name of globals section in default config
+56a2f619d|Daniel Golle|Wed Dec 4 17:08:54 2024 +0000|libdrm: fix architecture dependencies of sub-packages
+f32e77cfe|Fabian Lipken|Tue Dec 3 10:25:32 2024 +0100|python-pycares: bump to 4.5.0
+7605ef0ed|Eric Fahlgren|Wed Dec 4 07:10:22 2024 -0800|owut: update to 2024.11.29
+57394d53a|Paul Spooren|Wed Dec 4 12:16:59 2024 +0100|ci: drop APK version checking
 </details>
