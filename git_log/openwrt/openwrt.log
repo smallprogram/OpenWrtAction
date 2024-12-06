@@ -2,10 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b4cc5743d9|Daniel Golle|Thu Dec 5 01:32:00 2024 +0000|feeds.conf.default: enable video feed by default
-d92d14c64c|Robert Marko|Wed Dec 4 15:09:23 2024 +0100|hostapd: enable EAP-pwd support only for the SSL variants
-a9ff3ba24b|Felix Fietkau|Wed Dec 4 11:59:14 2024 +0100|wifi-scripts: add option to set per-device ifname prefix
-d127539291|Felix Fietkau|Tue Nov 19 14:08:38 2024 +0100|wifi-scripts: remove leftover legacy (non-netifd) wifi script support
-557a7ca70d|Felix Fietkau|Wed Dec 4 13:31:24 2024 +0100|build: add locking around dtc call after running mkits.sh
-ce663856fb|Robert Marko|Mon Dec 2 19:54:36 2024 +0100|apk: update to Git HEAD (2024-11-30)
+1c274227b0|Ivan Davydov|Mon Dec 2 15:47:08 2024 +0300|ramips: mt76x8: add support for Keenetic KN-3211
+c268ae674d|Eric Fahlgren|Thu Dec 5 07:06:46 2024 -0800|apk: add dependency on wget provider
+fc0c518a88|Hannu Nyman|Sun Dec 1 13:07:05 2024 +0200|busybox: Fix cron log level to match previous behavior
+89bb4050f7|Rui Salvaterra|Thu Nov 28 20:41:37 2024 +0200|busybox: update to 1.37.0
+1aa2695620|Felix Fietkau|Thu Dec 5 14:17:32 2024 +0100|wifi-scripts: fix roaming setup with ucode scripts
 </details>

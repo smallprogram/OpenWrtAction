@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d06838b44|coolsnowwolf|Wed Nov 27 23:15:02 2024 +0800|libreadlne: create symlinks for .so
-0ab7c18f4|coolsnowwolf|Wed Dec 4 13:55:27 2024 +0800|ksmbd: update to Git HEAD (2024-12-02)
-228c3c440|coolsnowwolf|Wed Dec 4 13:01:29 2024 +0800|Revert "ksmbd: move to in tree kernel buidin module"
+2778ccf7a|coolsnowwolf|Sat Dec 7 23:35:19 2024 +0800|Revert "tools: update versions"
+06366c30e|coolsnowwolf|Sun Sep 15 23:19:40 2024 +0800|uqmi: update to latest HEAD
+ef272b46c|coolsnowwolf|Thu Dec 5 19:32:39 2024 +0800|noddos: fix gcc 13 building
 </details>

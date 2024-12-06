@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+1d01f16|lwb1978|Fri Dec 6 10:54:51 2024 +0800|luci: optimize homepage status code
+4614c48|lwb1978|Thu Dec 5 20:38:50 2024 +0800|luci: adapt to the latest version of geoview
+443ab2c|xiaorouji|Thu Dec 5 13:44:29 2024 +0800|luci: optimize firewall rule code
+</details>

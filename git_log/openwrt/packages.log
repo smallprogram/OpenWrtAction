@@ -1,9 +1,0 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-56a2f619d|Daniel Golle|Wed Dec 4 17:08:54 2024 +0000|libdrm: fix architecture dependencies of sub-packages
-f32e77cfe|Fabian Lipken|Tue Dec 3 10:25:32 2024 +0100|python-pycares: bump to 4.5.0
-7605ef0ed|Eric Fahlgren|Wed Dec 4 07:10:22 2024 -0800|owut: update to 2024.11.29
-57394d53a|Paul Spooren|Wed Dec 4 12:16:59 2024 +0100|ci: drop APK version checking
-</details>
