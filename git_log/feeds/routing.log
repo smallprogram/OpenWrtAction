@@ -1,0 +1,6 @@
+<details> <summary> <b>routing new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0209a1f|Toke Høiland-Jørgensen|Fri Dec 6 10:39:42 2024 +0100|bird2: Prevent unaligned access on ARM
+</details>

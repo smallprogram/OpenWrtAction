@@ -2,10 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-276fef82e0|Paul Donald|Fri Dec 6 01:39:13 2024 +0100|luci-app-package-manager: Swap ternary outputs
-df3a77e49c|Feng Cheng|Tue Jul 23 09:58:58 2024 +0800|luci-app-dawn: Add configuration page
-f76fc97176|Tsanie Lily|Mon Dec 2 17:14:07 2024 +0800|luci-app-acme: `cfgvalue` does not receive the `set_value` parameter when it is called in `CBIValue.render`.
-461d632d5c|Tom Haley|Thu Dec 5 10:54:19 2024 +0300|luci-proto-wireguard: fixed incorrect peer detection for ipv6 and default port
-27ecfdaafe|Tom Haley|Thu Dec 5 10:27:38 2024 +0300|luci-proto-wireguard: fixed incorrect peer detection if port is not set
-101ea169c6|Tom Haley|Wed Dec 4 22:19:25 2024 +0300|luci-proto-wireguard: fixed a vulnerability in the checkPeerHost method
+c14ac759be|Stan Grishin|Fri Dec 6 18:12:24 2024 -0800|Merge pull request #7460 from stangri/master-luci-app-adblock-fast
+35e89dd554|Paul Donald|Sat Dec 7 02:31:54 2024 +0100|luci-app-ddns: fix fileUpload
+778602b64a|Hosted Weblate|Fri Dec 6 09:54:46 2024 +0100|Translated using Weblate (Russian)
+84dbabe0ab|Stan Grishin|Fri Dec 6 03:21:01 2024 +0000|luci-app-adblock-fast: catch up to snapshots version
 </details>

@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2778ccf7a|coolsnowwolf|Sat Dec 7 23:35:19 2024 +0800|Revert "tools: update versions"
-06366c30e|coolsnowwolf|Sun Sep 15 23:19:40 2024 +0800|uqmi: update to latest HEAD
-ef272b46c|coolsnowwolf|Thu Dec 5 19:32:39 2024 +0800|noddos: fix gcc 13 building
+d83ce75e3|Beginner|Sat Dec 7 10:56:20 2024 +0800|kernel: refresh `6.12` patches (#13178)
+cb4244db5|coolsnowwolf|Fri Dec 6 18:13:53 2024 +0800|ksmbd: add SMB v1 support
+9e010ff34|coolsnowwolf|Fri Dec 6 16:45:13 2024 +0800|kernel: bump 6.12 to 6.12.3
 </details>
