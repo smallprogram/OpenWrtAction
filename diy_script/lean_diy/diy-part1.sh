@@ -45,9 +45,9 @@ git clone https://github.com/sbwml/luci-app-mosdns -b v5 ./package/custom_packag
 # git clone https://github.com/jerrykuku/luci-app-vssr.git
 
 # docker
-rm -rf ./feeds/luci/applications/luci-app-dockerman
-rm -rf ./feeds/luci/applications/luci-app-docker
-git clone https://github.com/lisaac/luci-app-dockerman.git ./package/custom_packages/luci-app-dockerman
+# rm -rf ./feeds/luci/applications/luci-app-dockerman
+# rm -rf ./feeds/luci/applications/luci-app-docker
+# git clone https://github.com/lisaac/luci-app-dockerman.git ./package/custom_packages/luci-app-dockerman
 
 # Open App Filter
 git clone https://github.com/destan19/OpenAppFilter.git ./package/custom_packages/luci-app-openappfilter
