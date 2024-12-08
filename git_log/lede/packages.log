@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-69a0490c|coolsnowwolf|Fri Dec 6 19:30:41 2024 +0800|ksmbd-tools: bump version
+833fc954|coolsnowwolf|Sat Dec 7 16:35:54 2024 +0800|node: add v22.x openssl dependence
+b35738ef|coolsnowwolf|Sat Dec 7 16:05:13 2024 +0800|node: bump to v22.x
+5cc31928|coolsnowwolf|Sat Dec 7 15:31:29 2024 +0800|xfrpc: bump to 3.05.661
 </details>

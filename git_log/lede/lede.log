@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d83ce75e3|Beginner|Sat Dec 7 10:56:20 2024 +0800|kernel: refresh `6.12` patches (#13178)
-cb4244db5|coolsnowwolf|Fri Dec 6 18:13:53 2024 +0800|ksmbd: add SMB v1 support
-9e010ff34|coolsnowwolf|Fri Dec 6 16:45:13 2024 +0800|kernel: bump 6.12 to 6.12.3
+fd9b9cc78|Beginner|Sat Dec 7 15:13:57 2024 +0800|kernel: refresh `6.6` patches (#13179)
 </details>

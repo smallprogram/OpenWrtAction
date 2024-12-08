@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+aa42199|A-BO|Sat Dec 7 14:51:16 2024 +0800|luci: rule list support geoip/geosite rules
+cd0ff46|lwb1978|Sat Dec 7 14:47:52 2024 +0800|luci: optimized acquire `dnsmasq` configuration file path code
+</details>

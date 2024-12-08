@@ -1,8 +1,0 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-ad1b32bc6|Stan Grishin|Sat Dec 7 02:01:14 2024 +0000|pbr: 1.1.7-65 bugfixes and improvements
-beebdba29|Stan Grishin|Fri Dec 6 03:10:17 2024 +0000|adblock-fast: bugfix: dnsmasq instances confdir hack
-c487146f1|Antonio Pastor|Thu Dec 5 19:05:46 2024 -0500|netatalk: Update to 4.0.7
-</details>

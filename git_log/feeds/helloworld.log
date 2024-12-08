@@ -1,7 +1,0 @@
-<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-4af6d72|coolsnowwolf|Fri Dec 6 20:47:02 2024 +0800|Merge pull request #1625 from zxlhhyccc/ssrp
-3e5405e|zxlhhyccc|Thu Dec 5 23:07:02 2024 +0800|luci-app-ssr-plus: Optimized acquire `dnsmasq` configuration file path code.
-</details>

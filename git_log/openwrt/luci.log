@@ -2,8 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c14ac759be|Stan Grishin|Fri Dec 6 18:12:24 2024 -0800|Merge pull request #7460 from stangri/master-luci-app-adblock-fast
-35e89dd554|Paul Donald|Sat Dec 7 02:31:54 2024 +0100|luci-app-ddns: fix fileUpload
-778602b64a|Hosted Weblate|Fri Dec 6 09:54:46 2024 +0100|Translated using Weblate (Russian)
-84dbabe0ab|Stan Grishin|Fri Dec 6 03:21:01 2024 +0000|luci-app-adblock-fast: catch up to snapshots version
+679d3b8e85|Dmitry R|Fri Dec 6 07:10:27 2024 -0500|luci-app-filemanager: fixed negative time zone parsing
+46f84389ed|Paul Donald|Sat Dec 7 05:25:05 2024 +0100|Merge branch 'master' into openwrt-24.10
+49ae99ed7e|Stan Grishin|Fri Dec 6 18:12:20 2024 -0800|Merge pull request #7459 from stangri/24.10-luci-app-adblock-fast
+66c0c58bbc|Stan Grishin|Fri Dec 6 03:20:55 2024 +0000|luci-app-adblock-fast: catch up to snapshots version
 </details>
