@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-833fc954|coolsnowwolf|Sat Dec 7 16:35:54 2024 +0800|node: add v22.x openssl dependence
-b35738ef|coolsnowwolf|Sat Dec 7 16:05:13 2024 +0800|node: bump to v22.x
-5cc31928|coolsnowwolf|Sat Dec 7 15:31:29 2024 +0800|xfrpc: bump to 3.05.661
+a8ec879c|aiamadeus|Sat Nov 30 23:06:39 2024 +0800|vlmcsd: fixes build with gcc 13
 </details>

@@ -1,6 +1,0 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-e30fd9fad|Tianling Shen|Sat Dec 7 15:29:50 2024 +0800|qt6base: disable xkbcommon support by default
-</details>

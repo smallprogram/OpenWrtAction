@@ -1,0 +1,16 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+59ac244b6d|Tianling Shen|Sun Dec 8 14:16:21 2024 +0800|Merge Official Source
+9c55866fad|Vladyslav Andreichykov|Thu Mar 7 11:47:04 2024 +0200|qualcommax: ipq60xx: add Linksys MR7350 support
+2e4a0ebdde|Robert Marko|Sun Nov 17 20:41:11 2024 +0100|qualcommax: enable userspace regulator for ipq60xx as well
+3fbc740008|Robert Marko|Sun Nov 17 20:40:48 2024 +0100|qualcommax: refresh config
+af6f1a90bb|Robert Marko|Fri Dec 6 18:21:20 2024 +0100|ucode: update to Git HEAD (2024-12-06)
+1269a836ed|Bohdan Chubuk|Fri Dec 6 00:17:56 2024 +0200|generic: mtd: spinand: add support for FORESEE F35SQA001G
+5348e2e81a|Bohdan Chubuk|Mon Nov 11 01:57:31 2024 +0200|generic: mtd: spinand: add support for FORESEE F35SQA002G
+025dbeb70c|Chukun Pan|Fri Jun 21 23:18:21 2024 +0800|qualcommax: ipq60xx: add Qihoo 360V6 support
+7e18e27e2f|Chukun Pan|Wed Jul 10 23:18:15 2024 +0800|qualcommax: image: cleanup whitespace
+14ff787f2c|Chukun Pan|Thu Nov 28 22:26:10 2024 +0800|ipq-wifi: update to version 2024-11-28
+9ab03a1e3e|Rosen Penev|Mon Nov 25 15:09:28 2024 -0800|ipq40xx: remove default MAC assignments
+</details>

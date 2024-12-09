@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4dda05e|lwb1978|Sat Dec 7 14:02:58 2024 +0800|geoview update to 0.0.9
+cbd28a9|lwb1978|Mon Dec 9 12:04:57 2024 +0800|geoview: fix recursive dependency
+5766ea0|lwb1978|Mon Dec 9 11:43:32 2024 +0800|geoview: optimize makefile
+d96ed0b|github-actions[bot]|Sun Dec 8 13:15:27 2024 +0800|v2ray-geoip: update to 202412050058
 </details>
