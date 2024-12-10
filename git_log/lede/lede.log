@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e66ffaf37|Beginner|Sun Dec 8 16:01:09 2024 +0800|kernel: bump 6.1 to 6.1.119 (#13185)
+da0bc37b1|Beginner|Tue Dec 10 10:10:12 2024 +0800|kernel: bump 6.6 to 6.6.64 (#13195)
+e87df11ac|mars-m9|Mon Dec 9 23:10:07 2024 +0800|intel-microcode: update to 20241112 (#13193)
+eb1279987|coolsnowwolf|Mon Dec 9 23:05:16 2024 +0800|uboot-rk35xx: fixes build with gcc13
 </details>

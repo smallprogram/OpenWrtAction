@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a8ec879c|aiamadeus|Sat Nov 30 23:06:39 2024 +0800|vlmcsd: fixes build with gcc 13
+9c970545|Miko-5|Tue Dec 10 10:10:05 2024 +0800|screen: update to 4.9.1 (#874)
+ab98ad35|Internet1235|Tue Dec 10 10:00:06 2024 +0800|ddns-go: update to 6.7.7 (#872)
 </details>

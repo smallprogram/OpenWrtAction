@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cbd28a9|lwb1978|Mon Dec 9 12:04:57 2024 +0800|geoview: fix recursive dependency
-5766ea0|lwb1978|Mon Dec 9 11:43:32 2024 +0800|geoview: optimize makefile
-d96ed0b|github-actions[bot]|Sun Dec 8 13:15:27 2024 +0800|v2ray-geoip: update to 202412050058
+0d16b37|github-actions[bot]|Tue Dec 10 05:01:26 2024 +0800|v2ray-core: update to 5.23.0 (#329)
+bd2735a|moetayuko|Mon Dec 9 19:50:41 2024 +0800|pdnsd-alt: fix version for apk (#327)
+1e383ee|lwb1978|Mon Dec 9 17:21:19 2024 +0800|geoview: update to 0.1.0
 </details>
