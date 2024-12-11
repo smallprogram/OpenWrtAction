@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9c970545|Miko-5|Tue Dec 10 10:10:05 2024 +0800|screen: update to 4.9.1 (#874)
-ab98ad35|Internet1235|Tue Dec 10 10:00:06 2024 +0800|ddns-go: update to 6.7.7 (#872)
+06c4e87f|Miko-5|Wed Dec 11 12:00:17 2024 +0800|bind: bump to 9.20.0 (#873)
+7af03ce8|Internet1235|Wed Dec 11 10:30:21 2024 +0800|alist: update to 3.39.2 (#875)
+e24ff4d5|Miko-5|Tue Dec 10 19:39:11 2024 +0800|screen: remove outdate patch (#877)
 </details>

@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-da0bc37b1|Beginner|Tue Dec 10 10:10:12 2024 +0800|kernel: bump 6.6 to 6.6.64 (#13195)
-e87df11ac|mars-m9|Mon Dec 9 23:10:07 2024 +0800|intel-microcode: update to 20241112 (#13193)
-eb1279987|coolsnowwolf|Mon Dec 9 23:05:16 2024 +0800|uboot-rk35xx: fixes build with gcc13
+41e0c30d8|Luis Mita|Tue May 7 11:48:37 2024 -0400|mediatek: add Cudy TR3000 v1 support
 </details>

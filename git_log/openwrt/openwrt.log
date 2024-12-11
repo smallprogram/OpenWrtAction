@@ -2,8 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f8b93e2d12|Hauke Mehrtens|Sun Dec 8 16:18:52 2024 +0100|mediatek: filogic: Migrate wifi configuration device paths
-a498a84393|Ondřej Niesner|Sat Dec 7 17:55:29 2024 +0100|mediatek: filogic: prevent faulty mac address assignment
-59dd9cddf9|Felix Fietkau|Mon Dec 9 19:19:46 2024 +0100|hostapd: fix processing mbssid config option
-3d8d81883f|Eric Long|Mon Nov 25 21:26:47 2024 +0800|bpftool: turn off libbfd feature in host build
+0d21cc8a92|Isaac de Wolff|Sun Dec 8 13:52:40 2024 +0100|lantiq: grow kernel partition Zyxel P-2812HNU-F1
+4234d5ec45|Jack Sun|Mon Dec 9 16:43:49 2024 +0800|tools/cmake: update to 3.31.2 Release notes: https://cmake.org/cmake/help/latest/release/3.31.html
+ff5f77ecdd|Robert Marko|Sat Dec 7 17:32:21 2024 +0100|iproute2: update to 6.12.0
 </details>
