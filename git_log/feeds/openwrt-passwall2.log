@@ -1,0 +1,12 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+3c945a0|xiaorouji|Thu Dec 12 03:27:18 2024 +0800|luci: optimize and improve
+b73f483|xiaorouji|Thu Dec 12 03:38:21 2024 +0800|luci: optimize and fix
+5867ddd|xiaorouji|Thu Dec 12 01:03:16 2024 +0800|luci: add ChinaDNS-NG
+4e3932b|xiaorouji|Wed Dec 11 22:15:03 2024 +0800|luci: bump to 24.12.11
+07ae588|lwb1978|Wed Dec 11 21:25:15 2024 +0800|luci: Fix incomplete import Trojan URL
+b01fc85|xiaorouji|Wed Dec 11 21:06:41 2024 +0800|luci: optimize and fix
+98757ba|Pacalini|Wed Dec 11 18:10:15 2024 +0800|luci: fix xray SniffingObject generate (#724)
+</details>

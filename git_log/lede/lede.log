@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-41e0c30d8|Luis Mita|Tue May 7 11:48:37 2024 -0400|mediatek: add Cudy TR3000 v1 support
+d242992f6|coolsnowwolf|Wed Dec 11 19:28:11 2024 +0800|base-files: allow override model name from uboot env
 </details>

@@ -1,0 +1,6 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d2f034caf|Timothy M. Ace|Tue Dec 10 19:19:17 2024 -0500|python-orjson: update to version 3.10.12 Relevant changes since previous 3.10.0: - FIXED: Serializing numpy.ndarray with non-native endianness raises orjson.JSONEncodeError. - FIXED: Fix int serialization on 32-bit Python 3.8, 3.9, 3.10. This was introduced in 3.10.8. - Improve performance of serializing. - Drop support for arm7. - int serialization no longer chains OverflowError to the the __cause__ attribute of orjson.JSONEncodeError when range exceeded.
+</details>

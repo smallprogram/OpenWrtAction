@@ -1,0 +1,22 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+4df64a9b9b|Tianling Shen|Wed Dec 11 14:17:20 2024 +0800|Merge Official Source
+0d21cc8a92|Isaac de Wolff|Sun Dec 8 13:52:40 2024 +0100|lantiq: grow kernel partition Zyxel P-2812HNU-F1
+4234d5ec45|Jack Sun|Mon Dec 9 16:43:49 2024 +0800|tools/cmake: update to 3.31.2 Release notes: https://cmake.org/cmake/help/latest/release/3.31.html
+ff5f77ecdd|Robert Marko|Sat Dec 7 17:32:21 2024 +0100|iproute2: update to 6.12.0
+f8b93e2d12|Hauke Mehrtens|Sun Dec 8 16:18:52 2024 +0100|mediatek: filogic: Migrate wifi configuration device paths
+a498a84393|Ondřej Niesner|Sat Dec 7 17:55:29 2024 +0100|mediatek: filogic: prevent faulty mac address assignment
+59dd9cddf9|Felix Fietkau|Mon Dec 9 19:19:46 2024 +0100|hostapd: fix processing mbssid config option
+3d8d81883f|Eric Long|Mon Nov 25 21:26:47 2024 +0800|bpftool: turn off libbfd feature in host build
+477c8a5101|Rosen Penev|Sun Jun 16 12:48:40 2024 -0700|ath79: gl-e750: use nvmem for mac addresses
+d087a79b7b|Maxim Anisimov|Wed Nov 13 17:17:17 2024 +0300|mediatek/filogic: add Keenetic KN-3811 support
+e23b37b2d9|Hannu Nyman|Thu Dec 5 22:28:45 2024 +0200|busybox: Save shell history into /tmp
+0826b224b5|Pavel Shirov|Sat Dec 7 15:29:28 2024 +0300|kernel: packages: fix building package/devel/perf with -O3
+cf1909a024|Felix Fietkau|Sun Dec 8 15:10:51 2024 +0100|wifi-scripts: fix channels array property parsing in ucode script
+ed34e337a9|Felix Fietkau|Sun Dec 8 13:55:33 2024 +0100|wifi-scripts: fix ucode support for referencing wifi devices by phy name
+0286dfe394|Felix Fietkau|Sun Dec 8 13:36:41 2024 +0100|wifi-scripts: fix regression with ucode update
+22d2aa65e8|Mieczyslaw Nalewaj|Sun Dec 1 19:17:13 2024 +0100|kernel: fallback-sprom: create separate header files
+1b6f7ec679|Robert Marko|Sat Dec 7 22:08:18 2024 +0100|qualcommax: ipq807x: add Netgear DEVICE_VARS
+</details>

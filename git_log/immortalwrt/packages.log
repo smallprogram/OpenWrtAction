@@ -1,0 +1,28 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+667f476de|ImmortalWrt AutoUpdate Bot|Wed Dec 11 06:35:22 2024 +0000|yq: Update to 4.44.6
+bf4c4eb24|ImmortalWrt AutoUpdate Bot|Wed Dec 11 06:34:55 2024 +0000|cloudflared: Update to 2024.12.1
+b3c0a6412|ImmortalWrt-Bot|Wed Dec 11 16:44:56 2024 +0800|xray-core: Update to 24.11.30 (#1415)
+21dd2baf0|Tianling Shen|Wed Dec 11 14:25:45 2024 +0800|Merge Official Source
+cdf711b89|Interesting Gang|Wed Dec 11 14:22:32 2024 +0800|geoview: update to 0.1.0
+0ca479456|Andrea Pesaresi|Sun Dec 8 14:04:06 2024 +0100|ksmbd-tools: adjust smb2 max read/write/trans and cache
+e3681cece|Wesley Gimenes|Tue Nov 12 07:13:04 2024 -0300|netbird: update to 0.34.1
+87ecce39d|Sandro Jäckel|Mon Dec 9 17:06:09 2024 +0100|tailscale: update to 1.78.1
+1f24c07d0|Jan Hák|Mon Dec 9 10:46:16 2024 +0100|knot: update to version 3.4.3
+d6c644c5f|Austin Lane|Thu Dec 5 00:27:45 2024 -0500|python-urllib3: add hostbuild
+6df4c936d|Javier Marcet|Fri Nov 22 16:01:31 2024 +0100|luajit2: update to v2.1-20241113
+f4c508fdc|Ryan Keane|Tue Nov 26 01:38:23 2024 -0800|haproxy: Require lua 5.4
+77a7324de|Tianling Shen|Wed Dec 4 13:33:13 2024 +0800|microsocks: backport upstream fixes
+955976cee|Austin Lane|Thu Dec 5 00:41:21 2024 -0500|python-certifi: add hostbuild
+6bb68d468|Austin Lane|Thu Dec 5 00:46:48 2024 -0500|python-idna: add hostbuild
+7db7fd2ae|Austin Lane|Thu Dec 5 00:44:58 2024 -0500|python-chardet: add hostbuild
+5b058c994|Andrea Pesaresi|Sat Dec 7 10:29:09 2024 +0100|ksmbd-tools: update to version 3.5.3
+814578498|Moritz Warning|Sun Dec 8 01:50:50 2024 +0100|dhtd: update to 1.0.5
+ad1b32bc6|Stan Grishin|Sat Dec 7 02:01:14 2024 +0000|pbr: 1.1.7-65 bugfixes and improvements
+beebdba29|Stan Grishin|Fri Dec 6 03:10:17 2024 +0000|adblock-fast: bugfix: dnsmasq instances confdir hack
+c487146f1|Antonio Pastor|Thu Dec 5 19:05:46 2024 -0500|netatalk: Update to 4.0.7
+56a2f619d|Daniel Golle|Wed Dec 4 17:08:54 2024 +0000|libdrm: fix architecture dependencies of sub-packages
+f32e77cfe|Fabian Lipken|Tue Dec 3 10:25:32 2024 +0100|python-pycares: bump to 4.5.0
+</details>

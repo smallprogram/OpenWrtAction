@@ -1,8 +1,0 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-06c4e87f|Miko-5|Wed Dec 11 12:00:17 2024 +0800|bind: bump to 9.20.0 (#873)
-7af03ce8|Internet1235|Wed Dec 11 10:30:21 2024 +0800|alist: update to 3.39.2 (#875)
-e24ff4d5|Miko-5|Tue Dec 10 19:39:11 2024 +0800|screen: remove outdate patch (#877)
-</details>

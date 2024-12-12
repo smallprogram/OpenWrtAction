@@ -2,7 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0d21cc8a92|Isaac de Wolff|Sun Dec 8 13:52:40 2024 +0100|lantiq: grow kernel partition Zyxel P-2812HNU-F1
-4234d5ec45|Jack Sun|Mon Dec 9 16:43:49 2024 +0800|tools/cmake: update to 3.31.2 Release notes: https://cmake.org/cmake/help/latest/release/3.31.html
-ff5f77ecdd|Robert Marko|Sat Dec 7 17:32:21 2024 +0100|iproute2: update to 6.12.0
+8108967e27|Chukun Pan|Sun Dec 8 23:26:01 2024 +0800|qualcommax: use ath11k_patch_mac for MR7350
+d6be0a2039|Chukun Pan|Sat Dec 7 23:16:15 2024 +0800|qualcommax: ipq60xx: fixes base-files typo
+d162fd5ed4|John Crispin|Wed Dec 11 15:41:21 2024 +0100|umdns: update to latest HEAD
+2bcc49aef9|John Crispin|Wed Dec 11 12:32:37 2024 +0100|procd: update to latest HEAD
+60f9ec2b22|John Crispin|Wed Dec 11 14:42:47 2024 +0100|wifi-scripts: ucode: change default behaviour of the vlan_no_bridge option
+3dd1c476d9|John Crispin|Wed Dec 11 12:27:38 2024 +0100|wifi-scripts: ucode: remove debug code
+7e854bd943|John Crispin|Wed Dec 11 12:06:55 2024 +0100|wifi-scripts: ucode: append global options on STA interfaces
+3ab1a69339|John Crispin|Wed Dec 11 12:02:18 2024 +0100|wifi-scripts: ucode: fix parsing of legacy hwmode option
+4c60fba3d8|John Crispin|Wed Dec 11 11:55:21 2024 +0100|wifi-scripts: ucode: only set mbssid on ax and be radios
+5bc82dede0|John Crispin|Wed Dec 11 11:54:34 2024 +0100|wifi-scripts: ucode: typo fix
 </details>

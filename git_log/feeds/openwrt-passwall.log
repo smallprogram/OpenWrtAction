@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b9974c3|zhusir|Tue Dec 10 17:04:14 2024 +0800|luci: improve performance Limit the number of lines displayed by gfwlist, chnlist, and chnroutelist to improve performance fixed #3550
+c8683d4|lwb1978|Thu Dec 12 09:15:23 2024 +0800|luci: Xray ws Forbid "host" in headers, read serverName instead
+b6a87b6|lwb1978|Wed Dec 11 21:25:15 2024 +0800|Fix incomplete import Trojan URL
+755a45d|A-BO|Wed Dec 11 18:27:39 2024 +0800|luci: fix xray SniffingObject generate (#3559)
 </details>
