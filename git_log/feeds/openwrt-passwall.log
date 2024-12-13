@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c8683d4|lwb1978|Thu Dec 12 09:15:23 2024 +0800|luci: Xray ws Forbid "host" in headers, read serverName instead
-b6a87b6|lwb1978|Wed Dec 11 21:25:15 2024 +0800|Fix incomplete import Trojan URL
-755a45d|A-BO|Wed Dec 11 18:27:39 2024 +0800|luci: fix xray SniffingObject generate (#3559)
+a258272|A-BO|Fri Dec 13 01:47:27 2024 +0800|luci: dynamically read rule list (#3562)
+4353cef|xiaorouji|Thu Dec 12 03:27:18 2024 +0800|luci: optimize and improve
+aaafdc3|xiaorouji|Thu Dec 12 20:20:17 2024 +0800|luci: optimize and fix code
 </details>

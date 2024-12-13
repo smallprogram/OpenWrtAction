@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-31955d6c7d|Hosted Weblate|Wed Dec 11 15:58:11 2024 +0100|Translated using Weblate (Hebrew)
+af2175aa7a|Joseph Mory|Thu Dec 12 14:52:02 2024 +0000|luci-app-hd-idle: Check disk opt value
+e15c190508|Paul Donald|Thu Dec 12 15:56:40 2024 +0100|luci-base: jsdoc grammar fix
 </details>

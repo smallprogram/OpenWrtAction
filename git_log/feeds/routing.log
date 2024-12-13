@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cf586ee|Simon Wunderlich|Wed Dec 11 12:03:00 2024 +0100|Merge pull request #1091 from ecsv/batadv-2024.4
-8462c0b|Sven Eckelmann|Tue Dec 10 22:40:19 2024 +0100|batman-adv: update to version 2024.4
-c6857ea|Sven Eckelmann|Tue Dec 10 22:38:29 2024 +0100|batctl: update to version 2024.4
-64675fe|Sven Eckelmann|Tue Dec 10 22:37:57 2024 +0100|alfred: update to version 2024.4
+478626b|Toke Høiland-Jørgensen|Thu Dec 12 12:11:27 2024 +0100|bird2: Bump to v2.16
+0490c7f|Martin Schiller|Thu Dec 12 08:06:09 2024 +0100|bird2: use official example config file
 </details>

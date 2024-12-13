@@ -2,11 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3c945a0|xiaorouji|Thu Dec 12 03:27:18 2024 +0800|luci: optimize and improve
-b73f483|xiaorouji|Thu Dec 12 03:38:21 2024 +0800|luci: optimize and fix
-5867ddd|xiaorouji|Thu Dec 12 01:03:16 2024 +0800|luci: add ChinaDNS-NG
-4e3932b|xiaorouji|Wed Dec 11 22:15:03 2024 +0800|luci: bump to 24.12.11
-07ae588|lwb1978|Wed Dec 11 21:25:15 2024 +0800|luci: Fix incomplete import Trojan URL
-b01fc85|xiaorouji|Wed Dec 11 21:06:41 2024 +0800|luci: optimize and fix
-98757ba|Pacalini|Wed Dec 11 18:10:15 2024 +0800|luci: fix xray SniffingObject generate (#724)
+a5a9bc0|xiaorouji|Fri Dec 13 10:19:31 2024 +0800|luci: fix https://github.com/xiaorouji/openwrt-passwall2/issues/725
+2fe77d1|xiaorouji|Thu Dec 12 23:07:07 2024 +0800|luci: add and optimize missing logic
+5e2b4a6|xiaorouji|Thu Dec 12 19:30:22 2024 +0800|luci: bump to 24.12.12
+d0d8e90|xiaorouji|Thu Dec 12 19:04:24 2024 +0800|action: update
+d99056b|xiaorouji|Thu Dec 12 08:35:47 2024 +0800|luci: geoip database parse to ipset/nftset
 </details>
