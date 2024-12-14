@@ -1,7 +1,0 @@
-<details> <summary> <b>routing new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-478626b|Toke Høiland-Jørgensen|Thu Dec 12 12:11:27 2024 +0100|bird2: Bump to v2.16
-0490c7f|Martin Schiller|Thu Dec 12 08:06:09 2024 +0100|bird2: use official example config file
-</details>

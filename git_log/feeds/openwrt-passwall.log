@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a258272|A-BO|Fri Dec 13 01:47:27 2024 +0800|luci: dynamically read rule list (#3562)
-4353cef|xiaorouji|Thu Dec 12 03:27:18 2024 +0800|luci: optimize and improve
-aaafdc3|xiaorouji|Thu Dec 12 20:20:17 2024 +0800|luci: optimize and fix code
+9f53ba6|xiaorouji|Fri Dec 13 19:51:56 2024 +0800|action: update
+d7ba6d5|xiaorouji|Fri Dec 13 10:19:31 2024 +0800|luci: fix Xray TCP DNS port
 </details>

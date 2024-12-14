@@ -1,0 +1,9 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d94f364401|Tianling Shen|Fri Dec 13 19:39:36 2024 +0800|Merge Official Source
+af2175aa7a|Joseph Mory|Thu Dec 12 14:52:02 2024 +0000|luci-app-hd-idle: Check disk opt value
+e15c190508|Paul Donald|Thu Dec 12 15:56:40 2024 +0100|luci-base: jsdoc grammar fix
+31955d6c7d|Hosted Weblate|Wed Dec 11 15:58:11 2024 +0100|Translated using Weblate (Hebrew)
+</details>

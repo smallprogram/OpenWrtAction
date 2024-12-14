@@ -1,0 +1,41 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+3ec15a0993|Tianling Shen|Fri Dec 13 20:00:37 2024 +0800|Merge Official Source
+225b84d583|Felix Fietkau|Fri Dec 13 11:04:04 2024 +0100|hostapd: fix building mini variants
+b6c7d8a0d6|Felix Fietkau|Fri Dec 13 10:56:50 2024 +0100|wifi-scripts: fix mesh/sta setup with ucode scripts
+a2f0cd35ac|Andreas Gnau|Tue Feb 28 16:54:57 2023 +0530|dropbear: Name pid file by uci section name
+3bd2cee9bf|Rosen Penev|Tue Dec 3 13:37:21 2024 -0800|ipq40xx: use PHY to control USB GPIO
+4a08383339|Jiale Liu|Mon Apr 15 00:27:49 2024 +0800|base-files: fix luci TZ default show zonename
+7306ae401c|Sybil127|Thu May 23 18:49:54 2024 +0200|hostapd: add support for rxkh_file
+97c8a94ec5|Sybil127|Thu May 23 17:43:07 2024 +0200|wifi-scripts: introduce rxkh_file uci option
+00860e485b|Felix Fietkau|Mon Dec 9 20:09:15 2024 +0100|wifi-scripts: add macaddr_base wifi-device option
+1be18c6daa|David Bauer|Thu Dec 12 16:36:50 2024 +0100|wifi-scripts: fix failing mesh setup with missing wpa_supplicant
+1375a7bae0|John Crispin|Thu Dec 12 15:43:35 2024 +0100|Revert "kernel: modules: fix led-group-multi-color patch"
+1cea889c96|John Crispin|Thu Dec 12 13:52:43 2024 +0100|kernel: modules: fix led-group-multi-color patch
+5fd86d66c1|Jonathan Brophy|Tue Sep 10 21:43:23 2024 +1200|kernel: modules: add support for led-group-multicolor
+06c2d5524c|Rodrigo Balerdi|Tue Apr 30 08:25:57 2024 -0300|base-files: fix cleanup after settings restore
+d67963943b|Rouven Czerwinski|Wed Jul 17 21:28:11 2024 +0200|ipq40xx: disable SPI DMA for Fritzbox 4040
+ebf1866d09|Mark Mentovai|Fri Jul 26 23:28:36 2024 -0400|.gitattributes: ignore some whitespace "violations" in .patch files
+3859e8eeb8|Markus Gothe|Tue Feb 7 22:00:33 2023 +0100|rules.mk: Update ccache's compiler check.
+1f11912138|Markus Gothe|Wed Jan 12 17:13:43 2022 +0100|ccache: Speed up building.
+36f309af05|Chuck R|Sun Sep 8 14:28:06 2024 -0500|dnsmasq: pass environment variables to hotplug
+794291bbdf|David Bentham|Tue Oct 22 10:46:05 2024 +0100|mediatek: add Comfast CF-E395AX support by adding an alternative model name
+821ebce8c1|Leon M. Busch-George|Sat Oct 19 12:03:08 2024 +0200|mbim: sort config variables a little and fix minor bugs
+650410fca4|Leon M. Busch-George|Sat Oct 19 11:52:51 2024 +0200|ncm: sort config variables a little and fix minor bugs
+bf768867dc|Leon M. Busch-George|Sat Oct 19 11:43:23 2024 +0200|qmi: sort config variables a little and fix minor bugs
+cbdfd03e42|Paweł Owoc|Fri Dec 6 17:11:59 2024 +0100|base-files: add option to set LED brightness
+3710323a46|Liangbin Lian|Sun Dec 1 12:45:34 2024 +0800|package/firewall: fix config typo
+65a1c666f2|Rany Hany|Mon Dec 2 11:30:07 2024 +0000|hostapd: add SAE support for wifi-station and optimize PSK file creation
+8108967e27|Chukun Pan|Sun Dec 8 23:26:01 2024 +0800|qualcommax: use ath11k_patch_mac for MR7350
+d6be0a2039|Chukun Pan|Sat Dec 7 23:16:15 2024 +0800|qualcommax: ipq60xx: fixes base-files typo
+d162fd5ed4|John Crispin|Wed Dec 11 15:41:21 2024 +0100|umdns: update to latest HEAD
+2bcc49aef9|John Crispin|Wed Dec 11 12:32:37 2024 +0100|procd: update to latest HEAD
+60f9ec2b22|John Crispin|Wed Dec 11 14:42:47 2024 +0100|wifi-scripts: ucode: change default behaviour of the vlan_no_bridge option
+3dd1c476d9|John Crispin|Wed Dec 11 12:27:38 2024 +0100|wifi-scripts: ucode: remove debug code
+7e854bd943|John Crispin|Wed Dec 11 12:06:55 2024 +0100|wifi-scripts: ucode: append global options on STA interfaces
+3ab1a69339|John Crispin|Wed Dec 11 12:02:18 2024 +0100|wifi-scripts: ucode: fix parsing of legacy hwmode option
+4c60fba3d8|John Crispin|Wed Dec 11 11:55:21 2024 +0100|wifi-scripts: ucode: only set mbssid on ax and be radios
+5bc82dede0|John Crispin|Wed Dec 11 11:54:34 2024 +0100|wifi-scripts: ucode: typo fix
+</details>

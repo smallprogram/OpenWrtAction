@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-af2175aa7a|Joseph Mory|Thu Dec 12 14:52:02 2024 +0000|luci-app-hd-idle: Check disk opt value
-e15c190508|Paul Donald|Thu Dec 12 15:56:40 2024 +0100|luci-base: jsdoc grammar fix
+a6e3ea42ac|Paul Donald|Fri Nov 29 01:32:16 2024 +0100|luci-mod-network: add ipproto property to routes
 </details>
