@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-764b5a63d|aiamadeus|Thu Dec 12 23:16:03 2024 +0800|mediatek: add u-boot mod version for Cudy TR3000
-23a4c1fb9|Jianyu Zhuang|Tue Dec 10 15:38:20 2024 +0800|mediatek: filogic: add support for Tenbay WR3000K
+d6318bba0|Bohdan Chubuk|Fri Dec 6 00:17:56 2024 +0200|generic: mtd: spinand: add support for F35SQA001G
+79545017e|Bohdan Chubuk|Mon Nov 11 01:57:31 2024 +0200|generic: mtd: spinand: add support for F35SQA002G
 </details>

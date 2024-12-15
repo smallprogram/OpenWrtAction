@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9f53ba6|xiaorouji|Fri Dec 13 19:51:56 2024 +0800|action: update
-d7ba6d5|xiaorouji|Fri Dec 13 10:19:31 2024 +0800|luci: fix Xray TCP DNS port
+6982919|xiaorouji|Sun Dec 15 02:40:33 2024 +0800|luci: improve
+50d80b0|xiaorouji|Sat Dec 14 20:59:50 2024 +0800|luci: optimize and fix DNS leak
+5a96c9a|A-BO|Sat Dec 14 14:47:41 2024 +0800|luci: some page detail optimize
 </details>

@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a6e3ea42ac|Paul Donald|Fri Nov 29 01:32:16 2024 +0100|luci-mod-network: add ipproto property to routes
+7baceb068d|Stan Grishin|Sat Dec 14 09:48:07 2024 -0800|Merge pull request #7471 from stangri/master-luci-app-advanced-reboot
+09e542292a|Stan Grishin|Fri Dec 13 19:49:38 2024 +0000|luci-app-advanced-reboot: Linksys MX5300 support
 </details>

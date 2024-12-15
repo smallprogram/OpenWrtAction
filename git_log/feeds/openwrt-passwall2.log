@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6b51bb6|xiaorouji|Sun Dec 15 02:33:34 2024 +0800|luci: improve
+44e3f07|xiaorouji|Fri Dec 13 16:23:28 2024 +0800|action: update
+f2ccf6a|xiaorouji|Sat Dec 14 20:45:02 2024 +0800|luci: bump to 24.12.14
+4c06f53|xiaorouji|Sat Dec 14 20:44:37 2024 +0800|luci: optimize and fix DNS leak
+</details>

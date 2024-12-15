@@ -2,16 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-95d201c26|Javier Marcet|Fri Dec 13 16:08:37 2024 +0100|docker-compose: Update to version 2.32.0
-278b9d1f6|Javier Marcet|Fri Nov 29 08:45:45 2024 +0100|docker-compose: Update to version 2.31.0
-5220a425c|Javier Marcet|Thu Nov 7 22:22:16 2024 +0100|docker-compose: Update to version 2.30.3
-3e6125860|Petr Štetiar|Thu Dec 12 20:19:04 2024 +0000|lrzsz: fix random build failures by really disabling autofoo
-edad451a8|Erwan MAS|Fri Dec 13 10:33:13 2024 -0500|qemu: fix error on python dependency at build
-8ba3801f8|Christian Lachner|Fri Dec 13 08:29:48 2024 +0100|haproxy: update to v3.0.7
-2c171be2b|Vasily Evseenko|Sun Sep 15 12:34:25 2024 +0300|wfb-ng: Add wfb-ng package
-bcd87dd8b|Liangbin Lian|Fri Apr 12 11:43:46 2024 +0800|rclone: fix configuration saving
-4cc56eb9e|Eric Fahlgren|Tue Dec 10 15:54:21 2024 -0800|owut: update to 2024.12.10
-649ff95b1|Tianling Shen|Fri Dec 13 19:06:08 2024 +0800|yq: Update to 4.44.6
-44544ee74|Tianling Shen|Fri Dec 13 19:06:01 2024 +0800|cloudflared: Update to 2024.12.1
-9e7026ded|Tianling Shen|Fri Dec 13 19:05:43 2024 +0800|xray-core: Update to 24.11.30
+bba5282ff|Erwan MAS|Fri Dec 13 14:59:57 2024 -0500|qemu: add build for qemu-ga & virtio-console-helper on x86 target
+b8a4132d9|Stan Grishin|Wed Dec 11 20:03:43 2024 +0000|pbr: improve status_service output
 </details>
