@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6982919|xiaorouji|Sun Dec 15 02:40:33 2024 +0800|luci: improve
-50d80b0|xiaorouji|Sat Dec 14 20:59:50 2024 +0800|luci: optimize and fix DNS leak
-5a96c9a|A-BO|Sat Dec 14 14:47:41 2024 +0800|luci: some page detail optimize
+8e59741|xiaorouji|Mon Dec 16 01:46:49 2024 +0800|luci: add DNS Redirect option
+2f6a620|xiaorouji|Mon Dec 16 00:35:08 2024 +0800|luci: add missing code
+c045807|lwb1978|Sun Dec 15 23:10:30 2024 +0800|luci: Fix import error when VLESS subscribe link encryption is empty
+ab5a69a|xiaorouji|Sun Dec 15 13:33:43 2024 +0800|luci: optimize and improve
 </details>

@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5a24850de1|Shiji Yang|Sat Dec 14 12:11:24 2024 +0800|ramips: fix 2.4G wmac eeprom offset for TL-WR902AC v4
-3c7134fa32|Andre Heider|Sat Dec 14 11:27:09 2024 +0100|base-files: fix shell scope error for the default LED brightness
+f71ce1c34e|Daniel Golle|Sun Dec 15 23:58:27 2024 +0000|mediatek: add pending patches fixing video output on MT7623N
+e63326e26a|Andrew MacIntyre|Fri Nov 29 17:06:02 2024 +1100|lantiq/xrx200: move 8M flash devices to a small flash subtarget
+a3c484c3b9|John Audia|Sun Dec 15 09:30:52 2024 -0500|kernel: generic: tg3: Fix DMA allocations on 57766 devices
+96eb12e961|Shiji Yang|Thu Dec 12 22:40:08 2024 +0800|ath79: fix ath9k calibration data size for AR9132
 </details>

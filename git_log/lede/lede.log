@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d6318bba0|Bohdan Chubuk|Fri Dec 6 00:17:56 2024 +0200|generic: mtd: spinand: add support for F35SQA001G
-79545017e|Bohdan Chubuk|Mon Nov 11 01:57:31 2024 +0200|generic: mtd: spinand: add support for F35SQA002G
+0a3cb8e16|coolsnowwolf|Mon Dec 16 11:20:52 2024 +0800|ramips: add setmac and getmac scripts
+4fb48d3e6|Beginner|Mon Dec 16 10:00:16 2024 +0800|kernel: bump 6.12 to 6.12.5 (#13216)
+f449329de|aiamadeus|Fri Dec 6 23:18:39 2024 +0800|trusted-firmware-a.mk: fix release download URL
+062dc2007|aiamadeus|Sun Dec 15 18:02:28 2024 +0800|arm-trusted-firmware-rockchip: update to v2.12
 </details>
