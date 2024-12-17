@@ -2,8 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8e59741|xiaorouji|Mon Dec 16 01:46:49 2024 +0800|luci: add DNS Redirect option
-2f6a620|xiaorouji|Mon Dec 16 00:35:08 2024 +0800|luci: add missing code
-c045807|lwb1978|Sun Dec 15 23:10:30 2024 +0800|luci: Fix import error when VLESS subscribe link encryption is empty
-ab5a69a|xiaorouji|Sun Dec 15 13:33:43 2024 +0800|luci: optimize and improve
+fb456d0|lwb1978|Tue Dec 17 08:33:57 2024 +0800|luci: bump to 24.12.17
+b099b63|lwb1978|Tue Dec 17 00:59:14 2024 +0800|luci: fix nftables DNS Redirect code
+86d9ef9|xiaorouji|Mon Dec 16 22:24:20 2024 +0800|luci: optimize code
+dd8e5a5|xiaorouji|Mon Dec 16 19:08:30 2024 +0800|luci: update some configuration logic
+97421e9|xiaorouji|Mon Dec 16 15:42:26 2024 +0800|luci: add preproxy option for Xray/Sing-Box node
+5560658|xiaorouji|Mon Dec 16 15:37:31 2024 +0800|luci: optimize code
 </details>

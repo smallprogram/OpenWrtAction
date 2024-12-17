@@ -2,8 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f71ce1c34e|Daniel Golle|Sun Dec 15 23:58:27 2024 +0000|mediatek: add pending patches fixing video output on MT7623N
-e63326e26a|Andrew MacIntyre|Fri Nov 29 17:06:02 2024 +1100|lantiq/xrx200: move 8M flash devices to a small flash subtarget
-a3c484c3b9|John Audia|Sun Dec 15 09:30:52 2024 -0500|kernel: generic: tg3: Fix DMA allocations on 57766 devices
-96eb12e961|Shiji Yang|Thu Dec 12 22:40:08 2024 +0800|ath79: fix ath9k calibration data size for AR9132
+8a7239009c|Linus Walleij|Sun Nov 17 22:47:27 2024 +0100|kirkwood: Make the Marvell DSA switch a module
+af1740a28b|Felix Fietkau|Mon Dec 16 13:03:26 2024 +0100|unetd: update to Git HEAD (2024-12-16)
+0634ebed9f|Rosen Penev|Sat Dec 14 14:26:25 2024 -0800|ath79: fix tl-wa eth1 mac
 </details>

@@ -2,13 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e23f6069d6|Paul Donald|Sun Dec 15 21:08:56 2024 +0100|luci-mod-network: remove old netifd version check which needs opkg
-367b67faa7|Paul Donald|Sun Dec 15 20:34:15 2024 +0100|luci-compat: opkg_package -> package_name
-0459c378b7|Paul Donald|Sun Dec 15 20:29:36 2024 +0100|themes: update package-manager style to match page name
-a0f66ab65f|Paul Donald|Sun Dec 15 20:22:27 2024 +0100|luci-app-p910nd: update package-manager handling
-8d13ea410d|Paul Donald|Sun Dec 15 20:11:23 2024 +0100|luci-base, luci-proto-*: rename getOpkgPackage -> getPackageName
-500ce17e7a|Paul Donald|Sun Dec 15 20:13:50 2024 +0100|luci-app-nut: update package-manager link
-4bc20a2bfb|Paul Donald|Sun Dec 15 19:59:52 2024 +0100|luci-mod-network: update package-manager link
-391e115c55|Eric Fahlgren|Sun Nov 17 08:33:56 2024 -0800|luci-app-attendedsysupgrade: make image selection consistent across all EFI targets
-d992d6f105|Arayuki Mago|Fri Dec 13 04:14:45 2024 +0900|luci-proto-ipv6: add missing extendprefix option for DHCPv6 client
+8b3c13f7b3|Lyall Beveridge|Fri Dec 6 10:30:36 2024 +1100|luci-mod-network: validate DHCP leasetime input
+dd2c7f90b8|Paul Donald|Mon Dec 16 21:52:20 2024 +0100|luci-mod-dashboard: code spelling
 </details>
