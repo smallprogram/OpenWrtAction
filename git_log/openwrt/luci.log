@@ -1,7 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-8b3c13f7b3|Lyall Beveridge|Fri Dec 6 10:30:36 2024 +1100|luci-mod-network: validate DHCP leasetime input
-dd2c7f90b8|Paul Donald|Mon Dec 16 21:52:20 2024 +0100|luci-mod-dashboard: code spelling
-</details>

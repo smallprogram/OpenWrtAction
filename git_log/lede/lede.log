@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-23d466fba|Beginner|Mon Dec 16 20:30:22 2024 +0800|kernel: bump 6.6 to 6.6.66 (#13214)
-b7305e23e|Beginner|Mon Dec 16 16:00:10 2024 +0800|kernel: bump 6.1 to 6.1.120 (#13215)
+af0a4aa4a|coolsnowwolf|Fri Dec 13 21:21:18 2024 +0800|rockchip: update rk3399 soc support
+927e1b695|coolsnowwolf|Sun Dec 15 21:30:26 2024 +0800|generic: 6.12: fixes broken patches
 </details>

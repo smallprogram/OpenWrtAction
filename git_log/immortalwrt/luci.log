@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+16843969db|JohnsonRan|Tue Dec 17 21:52:10 2024 +0800|luci-app-cifs-mount: fix CIFS mount from Synology
+882b4ca2f5|Interesting Gang|Tue Dec 17 22:21:10 2024 +0800|luci-app-passwall: bump to 24.12.17
+</details>

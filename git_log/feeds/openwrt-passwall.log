@@ -2,10 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fb456d0|lwb1978|Tue Dec 17 08:33:57 2024 +0800|luci: bump to 24.12.17
-b099b63|lwb1978|Tue Dec 17 00:59:14 2024 +0800|luci: fix nftables DNS Redirect code
-86d9ef9|xiaorouji|Mon Dec 16 22:24:20 2024 +0800|luci: optimize code
-dd8e5a5|xiaorouji|Mon Dec 16 19:08:30 2024 +0800|luci: update some configuration logic
-97421e9|xiaorouji|Mon Dec 16 15:42:26 2024 +0800|luci: add preproxy option for Xray/Sing-Box node
-5560658|xiaorouji|Mon Dec 16 15:37:31 2024 +0800|luci: optimize code
+582e13a|xiaorouji|Tue Dec 17 14:22:55 2024 +0800|luci: 24.12.17 2 release
+b73b424|xiaorouji|Tue Dec 17 14:20:44 2024 +0800|action: don't trigger on push commit
+92704cd|xiaorouji|Tue Dec 17 14:17:31 2024 +0800|luci: fix variable error
 </details>

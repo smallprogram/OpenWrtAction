@@ -2,7 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8a7239009c|Linus Walleij|Sun Nov 17 22:47:27 2024 +0100|kirkwood: Make the Marvell DSA switch a module
-af1740a28b|Felix Fietkau|Mon Dec 16 13:03:26 2024 +0100|unetd: update to Git HEAD (2024-12-16)
-0634ebed9f|Rosen Penev|Sat Dec 14 14:26:25 2024 -0800|ath79: fix tl-wa eth1 mac
+f077e058fd|Felix Fietkau|Tue Dec 17 21:57:44 2024 +0100|unetd: update to Git HEAD (2024-12-17)
+49d92d3e93|Felix Fietkau|Tue Dec 17 21:54:14 2024 +0100|procd: add support for reload triggers on data change
+8c5826b140|Felix Fietkau|Tue Dec 17 21:21:37 2024 +0100|procd: do not overwrite service data by default
+3d900bd055|Felix Fietkau|Tue Dec 17 21:53:36 2024 +0100|procd: update to Git HEAD (2024-12-17)
+53e312e193|Felix Fietkau|Tue Dec 17 20:01:13 2024 +0100|netifd: update to Git HEAD (2024-12-17)
+f8a16524c4|Felix Fietkau|Tue Dec 17 14:51:18 2024 +0100|unetd: add firewall input rule for global port
 </details>
