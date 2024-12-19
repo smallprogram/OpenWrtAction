@@ -2,9 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6f9bd7df6|Jon Henrik Bjørnstad|Tue Dec 17 12:21:54 2024 +0100|qbee-agent: bump version to 2024.50
-128875aa6|Dirk Brenken|Tue Dec 17 21:13:32 2024 +0100|travelmate: update to 2.1.3-3
-ea7243366|Tianling Shen|Tue Dec 17 23:01:16 2024 +0800|dnsproxy: Update to 0.73.4
-de758f96d|Javier Marcet|Tue Dec 17 09:47:48 2024 +0100|docker-compose: Update to version 2.32.1
-768b995f9|Austin Lane|Mon Dec 9 11:42:28 2024 -0500|liborcania: Install library on target
+422655e0c|Tianling Shen|Wed Dec 18 21:47:30 2024 +0800|alist: Update to 3.41.0
+0c97b1a42|Tianling Shen|Wed Dec 18 17:05:39 2024 +0800|v2ray-geodata: Update to latest version
+dc79b54b5|Austin Lane|Thu Dec 5 01:50:48 2024 -0500|python-pyelftools: add package / hostbuild
+ac212e0c4|Austin Lane|Wed Dec 4 23:38:33 2024 -0500|python-pyserial: add hostbuild
 </details>

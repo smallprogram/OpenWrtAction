@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2d683f7|xiaorouji|Tue Dec 17 14:07:01 2024 +0800|luci: fix detail
-c01221a|xiaorouji|Tue Dec 17 13:56:26 2024 +0800|luci: fix variable error
+7432321|xiaorouji|Wed Dec 18 21:01:39 2024 +0800|luci: rework auto stop/start/restart option
+9ba71bf|xiaorouji|Wed Dec 18 20:49:31 2024 +0800|luci: refresh default configuration
+6153075|xiaorouji|Wed Dec 18 17:08:50 2024 +0800|luci: optimize and improve
 </details>

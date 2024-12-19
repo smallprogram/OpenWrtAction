@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-582e13a|xiaorouji|Tue Dec 17 14:22:55 2024 +0800|luci: 24.12.17 2 release
-b73b424|xiaorouji|Tue Dec 17 14:20:44 2024 +0800|action: don't trigger on push commit
-92704cd|xiaorouji|Tue Dec 17 14:17:31 2024 +0800|luci: fix variable error
-</details>

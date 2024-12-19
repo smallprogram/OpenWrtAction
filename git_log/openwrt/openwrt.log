@@ -2,10 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f077e058fd|Felix Fietkau|Tue Dec 17 21:57:44 2024 +0100|unetd: update to Git HEAD (2024-12-17)
-49d92d3e93|Felix Fietkau|Tue Dec 17 21:54:14 2024 +0100|procd: add support for reload triggers on data change
-8c5826b140|Felix Fietkau|Tue Dec 17 21:21:37 2024 +0100|procd: do not overwrite service data by default
-3d900bd055|Felix Fietkau|Tue Dec 17 21:53:36 2024 +0100|procd: update to Git HEAD (2024-12-17)
-53e312e193|Felix Fietkau|Tue Dec 17 20:01:13 2024 +0100|netifd: update to Git HEAD (2024-12-17)
-f8a16524c4|Felix Fietkau|Tue Dec 17 14:51:18 2024 +0100|unetd: add firewall input rule for global port
+28f534d953|John Audia|Sat Dec 14 15:02:19 2024 -0500|kernel: bump 6.6 to 6.6.66
+eec6ec4755|Rosen Penev|Sun Jun 16 12:40:53 2024 -0700|ath79: tplink,deco-s4-v2: use nvmem for cal
+47c75a25cd|Felix Fietkau|Wed Dec 18 10:35:21 2024 +0100|firewall4: update to Git HEAD (2024-12-18)
+f02df14a99|Robert Marko|Wed Dec 18 10:55:01 2024 +0100|apk: disable tests
+2417770b13|Chukun Pan|Tue Dec 10 23:02:09 2024 +0800|linux-firmware: ath11k: add QCA2066 firmware
+03560d470c|Chukun Pan|Mon Dec 16 23:09:26 2024 +0800|qualcommax: fix usb regulator supply for RT-AX89X
 </details>
