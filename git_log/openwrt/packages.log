@@ -2,8 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-422655e0c|Tianling Shen|Wed Dec 18 21:47:30 2024 +0800|alist: Update to 3.41.0
-0c97b1a42|Tianling Shen|Wed Dec 18 17:05:39 2024 +0800|v2ray-geodata: Update to latest version
-dc79b54b5|Austin Lane|Thu Dec 5 01:50:48 2024 -0500|python-pyelftools: add package / hostbuild
-ac212e0c4|Austin Lane|Wed Dec 4 23:38:33 2024 -0500|python-pyserial: add hostbuild
+bbc02fa86|Austin Lane|Mon Dec 16 12:29:12 2024 -0500|abseil-cpp: Add Package
+65b7c24db|Austin Lane|Thu Dec 5 01:31:12 2024 -0500|python-tabulate: add package / hostbuild
+117a3a2b1|Austin Lane|Wed Dec 4 20:33:33 2024 -0500|python-click: add hostbuild
+6c62e0fcf|Austin Lane|Mon Dec 9 12:46:03 2024 -0500|libulfius: Install library on target
 </details>

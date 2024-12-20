@@ -2,9 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d5fc5fc43|coolsnowwolf|Wed Dec 18 22:11:53 2024 +0800|kernel: bump 5.15 to 5.15.174
-33e376de9|coolsnowwolf|Wed Dec 18 21:56:26 2024 +0800|kernel: bump 5.4 to 5.4.287
-c1846ee3f|coolsnowwolf|Wed Dec 18 21:11:33 2024 +0800|mac80211: fix build with kernel 5.10.230+
-ea8c0bcaa|coolsnowwolf|Wed Dec 18 21:05:45 2024 +0800|ksmbd: fix build with kernel 5.10
-cab2ab7d5|coolsnowwolf|Wed Dec 18 13:06:41 2024 +0800|kernel: bump 5.10 to 5.10.231
+a2bb05d31|coolsnowwolf|Fri Dec 20 12:04:30 2024 +0800|rockchip: set 6.12 kernel as testing
+0de0129a6|coolsnowwolf|Fri Dec 20 11:19:31 2024 +0800|rockchip: enable testing kernel version with 6.12 version
+f0424787f|coolsnowwolf|Sun Dec 8 23:16:25 2024 +0800|rockchip: kernel 6.12: add rk3576 soc support
+37330800b|coolsnowwolf|Thu Dec 19 15:45:57 2024 +0800|rockchip: add ondemand cpu freq gov as default
 </details>
