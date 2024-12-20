@@ -55,7 +55,7 @@ git clone https://github.com/sirpdboy/netspeedtest.git ./package/custom_packages
 
 
 # delete packages
-rm -rf ./packages/net/geoview
+rm -rf ./feeds/packages/net/geoview
 
 
 # smartdns
