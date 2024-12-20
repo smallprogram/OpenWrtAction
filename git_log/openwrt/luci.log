@@ -2,8 +2,21 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c14ac759be|Stan Grishin|Fri Dec 6 18:12:24 2024 -0800|Merge pull request #7460 from stangri/master-luci-app-adblock-fast
-35e89dd554|Paul Donald|Sat Dec 7 02:31:54 2024 +0100|luci-app-ddns: fix fileUpload
-778602b64a|Hosted Weblate|Fri Dec 6 09:54:46 2024 +0100|Translated using Weblate (Russian)
-84dbabe0ab|Stan Grishin|Fri Dec 6 03:21:01 2024 +0000|luci-app-adblock-fast: catch up to snapshots version
+f92e07253f|Paul Donald|Fri Dec 20 00:09:47 2024 +0000|luci-base: drop promise polyfill
+844c45076f|Paul Donald|Sat Dec 7 03:13:42 2024 +0100|luci-base: convert JavaScript code to ES6 style
+1c3d22b7cb|Paul Donald|Sat Dec 7 04:23:50 2024 +0100|luci-base: convert JavaScript code to ES6 style
+adf87a2581|Paul Donald|Sat Dec 7 04:31:00 2024 +0100|luci-base: convert JavaScript code to ES6 style
+ecd6cee5f6|Paul Donald|Sat Dec 7 04:14:37 2024 +0100|luci-base: convert JavaScript code to ES6 style
+c2fc96cc4c|Paul Donald|Sat Dec 7 04:30:06 2024 +0100|luci-base: convert JavaScript code to ES6 style
+1750968879|Paul Donald|Fri Dec 6 22:23:59 2024 +0100|luci-base: convert JavaScript code to ES6 style
+234e131507|Paul Donald|Fri Dec 6 22:21:11 2024 +0100|luci-base: convert JavaScript code to ES6 style
+7fe0218bcf|Paul Donald|Thu Dec 19 22:38:23 2024 +0000|luci-base: rename mii-tool object property to mii_tool
+24edaa2889|Hosted Weblate|Wed Dec 18 11:05:17 2024 +0100|Translated using Weblate (Portuguese (Brazil))
+bd36a83c5b|Paul Donald|Thu Dec 19 17:50:49 2024 +0000|luci-proto-bonding: remove (in favour of netifd bonding in luci)
+ab15b5e379|Paul Donald|Thu Dec 19 18:41:25 2024 +0000|luci-mod-network: gate bonding behind kmod presence
+fb4cf432d2|hitech95|Fri Apr 26 21:46:28 2024 +0200|luci-mod-network: add support for bonding device in netifd
+7cd6b385e0|hitech95|Fri Apr 26 21:40:40 2024 +0200|luci-mod-network: ifname_multi -> ifname_multi-bridge
+88a3148f51|Paul Donald|Thu Dec 19 17:41:08 2024 +0000|luci-base: jsdoc fixes
+7c2cde52db|Paul Donald|Thu Dec 19 17:43:10 2024 +0000|luci-base: modify path function to allow URI parameters
+b4e1052331|Paul Donald|Wed Dec 18 15:03:54 2024 +0000|luci-proto-wireguard: disambiguate fwmark description
 </details>

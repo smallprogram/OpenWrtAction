@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d83ce75e3|Beginner|Sat Dec 7 10:56:20 2024 +0800|kernel: refresh `6.12` patches (#13178)
-cb4244db5|coolsnowwolf|Fri Dec 6 18:13:53 2024 +0800|ksmbd: add SMB v1 support
-9e010ff34|coolsnowwolf|Fri Dec 6 16:45:13 2024 +0800|kernel: bump 6.12 to 6.12.3
+a2bb05d31|coolsnowwolf|Fri Dec 20 12:04:30 2024 +0800|rockchip: set 6.12 kernel as testing
+0de0129a6|coolsnowwolf|Fri Dec 20 11:19:31 2024 +0800|rockchip: enable testing kernel version with 6.12 version
+f0424787f|coolsnowwolf|Sun Dec 8 23:16:25 2024 +0800|rockchip: kernel 6.12: add rk3576 soc support
+37330800b|coolsnowwolf|Thu Dec 19 15:45:57 2024 +0800|rockchip: add ondemand cpu freq gov as default
 </details>

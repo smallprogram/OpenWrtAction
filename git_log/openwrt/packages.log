@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ad1b32bc6|Stan Grishin|Sat Dec 7 02:01:14 2024 +0000|pbr: 1.1.7-65 bugfixes and improvements
-beebdba29|Stan Grishin|Fri Dec 6 03:10:17 2024 +0000|adblock-fast: bugfix: dnsmasq instances confdir hack
-c487146f1|Antonio Pastor|Thu Dec 5 19:05:46 2024 -0500|netatalk: Update to 4.0.7
+bbc02fa86|Austin Lane|Mon Dec 16 12:29:12 2024 -0500|abseil-cpp: Add Package
+65b7c24db|Austin Lane|Thu Dec 5 01:31:12 2024 -0500|python-tabulate: add package / hostbuild
+117a3a2b1|Austin Lane|Wed Dec 4 20:33:33 2024 -0500|python-click: add hostbuild
+6c62e0fcf|Austin Lane|Mon Dec 9 12:46:03 2024 -0500|libulfius: Install library on target
 </details>

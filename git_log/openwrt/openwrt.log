@@ -2,11 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-af6f1a90bb|Robert Marko|Fri Dec 6 18:21:20 2024 +0100|ucode: update to Git HEAD (2024-12-06)
-1269a836ed|Bohdan Chubuk|Fri Dec 6 00:17:56 2024 +0200|generic: mtd: spinand: add support for FORESEE F35SQA001G
-5348e2e81a|Bohdan Chubuk|Mon Nov 11 01:57:31 2024 +0200|generic: mtd: spinand: add support for FORESEE F35SQA002G
-025dbeb70c|Chukun Pan|Fri Jun 21 23:18:21 2024 +0800|qualcommax: ipq60xx: add Qihoo 360V6 support
-7e18e27e2f|Chukun Pan|Wed Jul 10 23:18:15 2024 +0800|qualcommax: image: cleanup whitespace
-14ff787f2c|Chukun Pan|Thu Nov 28 22:26:10 2024 +0800|ipq-wifi: update to version 2024-11-28
-9ab03a1e3e|Rosen Penev|Mon Nov 25 15:09:28 2024 -0800|ipq40xx: remove default MAC assignments
+31e45f62ca|Florian Maurer|Sat Dec 14 12:38:28 2024 +0100|hostapd: fix call to hostapd reload
+2e03c7d53e|Felix Fietkau|Thu Dec 19 06:44:30 2024 +0100|wifi-scripts: fix phy index lookup in device_capabilities
+8943430b9f|Felix Fietkau|Thu Dec 19 06:26:59 2024 +0100|hostapd: fix passing radio parameter in wpa_supplicant calls
 </details>

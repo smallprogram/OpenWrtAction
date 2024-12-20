@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0209a1f|Toke Høiland-Jørgensen|Fri Dec 6 10:39:42 2024 +0100|bird2: Prevent unaligned access on ARM
+5998119|Nick Hainke|Wed Dec 18 19:03:30 2024 +0100|bird3: add new bird3 package
 </details>

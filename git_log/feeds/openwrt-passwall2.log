@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0f50b7c|xiaorouji|Thu Dec 19 23:31:49 2024 +0800|luci: refresh default configuration
+cf379ed|xiaorouji|Thu Dec 19 16:14:59 2024 +0800|luci: bump to 24.12.19
+044bb0e|xiaorouji|Thu Dec 19 16:14:16 2024 +0800|luci: optimize and improve
+</details>
