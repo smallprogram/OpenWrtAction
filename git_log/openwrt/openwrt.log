@@ -2,7 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-31e45f62ca|Florian Maurer|Sat Dec 14 12:38:28 2024 +0100|hostapd: fix call to hostapd reload
-2e03c7d53e|Felix Fietkau|Thu Dec 19 06:44:30 2024 +0100|wifi-scripts: fix phy index lookup in device_capabilities
-8943430b9f|Felix Fietkau|Thu Dec 19 06:26:59 2024 +0100|hostapd: fix passing radio parameter in wpa_supplicant calls
+69582e71fa|Hannu Nyman|Thu Dec 19 20:45:40 2024 +0200|busybox: Fix hexdump applet
+efe9fb0846|John Audia|Thu Dec 19 14:01:20 2024 -0500|kernel: bump 6.6 to 6.6.67
+d7f638bc69|Marco von Rosenberg|Wed Dec 18 23:32:42 2024 +0100|generic: fix BCM54612E suspend/resume backport patch
+cd8dcfef37|Jonas Jelonek|Wed Nov 13 22:25:09 2024 +0000|mediatek: filogic: bpi-r4: set netdev-name for sfp ports
+84fc59c0d5|Jonas Jelonek|Sun Nov 10 00:43:23 2024 +0000|mediatek: filogic: bpi-r3: set netdev-name for sfp1 port
+d4d6c48b6e|Jonas Jelonek|Mon Nov 25 23:04:15 2024 +0000|mediatek: filogic: support openwrt,netdev-name for renaming interfaces
 </details>

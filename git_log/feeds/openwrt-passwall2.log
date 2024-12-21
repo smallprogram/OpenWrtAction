@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0f50b7c|xiaorouji|Thu Dec 19 23:31:49 2024 +0800|luci: refresh default configuration
-cf379ed|xiaorouji|Thu Dec 19 16:14:59 2024 +0800|luci: bump to 24.12.19
-044bb0e|xiaorouji|Thu Dec 19 16:14:16 2024 +0800|luci: optimize and improve
+49227a5|xiaorouji|Sat Dec 21 03:26:00 2024 +0800|luci: fix
+e6ca8e9|xiaorouji|Sat Dec 21 01:23:39 2024 +0800|luci: bump to 24.12.21
+90522f5|xiaorouji|Sat Dec 21 00:50:00 2024 +0800|luci: optimize and improve
 </details>

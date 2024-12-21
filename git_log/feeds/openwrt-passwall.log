@@ -2,10 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-26d6a62|lwb1978|Fri Dec 20 01:12:56 2024 +0800|luci: optimize apk version retrieval
-0b4fe98|xiaorouji|Thu Dec 19 20:58:10 2024 +0800|luci: optimize and improve
-469d747|xiaorouji|Thu Dec 19 14:27:21 2024 +0800|luci: copy dnsmasq instance not filter custom rules.
-7e8dcdd|xiaorouji|Wed Dec 18 21:01:39 2024 +0800|luci: rework auto stop/start/restart option
-caf736e|xiaorouji|Thu Dec 19 01:52:44 2024 +0800|luci: refresh default configuration
-1dfef37|xiaorouji|Wed Dec 18 17:08:50 2024 +0800|luci: optimize and improve
+f85dae3|xiaorouji|Sat Dec 21 01:41:18 2024 +0800|luci: adjust and fix
+e0c5ff2|xiaorouji|Fri Dec 20 21:52:12 2024 +0800|luci: optimize and improve
 </details>
