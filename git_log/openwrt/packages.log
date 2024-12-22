@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-89f8c4528|Peter van Dijk|Thu Dec 19 14:54:08 2024 +0100|pdns: update to 4.9.3
-972dab959|Stan Grishin|Wed Dec 18 05:14:16 2024 +0000|pbr: update to 1.1.8
-bbf481227|Austin Lane|Wed Dec 18 17:20:49 2024 -0500|python-pypubsub: Add package
+7cfc21dc1|Peter van Dijk|Thu Dec 19 14:55:50 2024 +0100|dnsdist: update to 1.9.8
+a182d7c50|Olivier Poitrey|Fri Dec 20 00:29:45 2024 +0000|nextdns: Update to version 1.44.0
 </details>

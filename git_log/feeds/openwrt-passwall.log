@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f85dae3|xiaorouji|Sat Dec 21 01:41:18 2024 +0800|luci: adjust and fix
-e0c5ff2|xiaorouji|Fri Dec 20 21:52:12 2024 +0800|luci: optimize and improve
+ab73650|lwb1978|Sun Dec 22 11:51:55 2024 +0800|luci: optimize and improve
+828938b|xiaorouji|Sat Dec 21 22:45:34 2024 +0800|luci: optimize and improve
+957622d|A-BO|Sat Dec 21 17:10:29 2024 +0800|luci: Add Backup and Restore Functionality
+44689ec|xiaorouji|Sat Dec 21 15:29:34 2024 +0800|luci: adjust
 </details>

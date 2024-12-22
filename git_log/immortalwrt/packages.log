@@ -1,0 +1,9 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+24a713272|Tianling Shen|Sat Dec 21 14:58:38 2024 +0800|Merge Official Source
+89f8c4528|Peter van Dijk|Thu Dec 19 14:54:08 2024 +0100|pdns: update to 4.9.3
+972dab959|Stan Grishin|Wed Dec 18 05:14:16 2024 +0000|pbr: update to 1.1.8
+bbf481227|Austin Lane|Wed Dec 18 17:20:49 2024 -0500|python-pypubsub: Add package
+</details>

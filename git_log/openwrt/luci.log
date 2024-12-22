@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b174d53e66|Oleksandr Nychyporuk|Fri Dec 20 20:38:40 2024 +0000|Translated using Weblate (Ukrainian)
-2dabe7cd82|Hosted Weblate|Fri Dec 20 21:38:39 2024 +0100|Translated using Weblate (Ukrainian)
-762cab8286|Stan Grishin|Fri Dec 20 10:54:03 2024 -0800|Merge pull request #7480 from stangri/master-luci-app-pbr
-f41478a9b8|Stan Grishin|Wed Dec 18 05:18:11 2024 +0000|luci-app-pbr: update to 1.1.8
+b43aea743e|Paul Donald|Sat Dec 21 16:27:25 2024 +0000|luci-mod-status: fix i variable absence for graph drawing
+8a422af6a0|Paul Donald|Sat Dec 21 13:26:42 2024 +0000|luci-base: follow-up fix for ES6 changes
 </details>
