@@ -2,8 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ab73650|lwb1978|Sun Dec 22 11:51:55 2024 +0800|luci: optimize and improve
-828938b|xiaorouji|Sat Dec 21 22:45:34 2024 +0800|luci: optimize and improve
-957622d|A-BO|Sat Dec 21 17:10:29 2024 +0800|luci: Add Backup and Restore Functionality
-44689ec|xiaorouji|Sat Dec 21 15:29:34 2024 +0800|luci: adjust
+f5183c4|xiaorouji|Sun Dec 22 18:32:08 2024 +0800|luci: add Sing-Box DNS `client_subnet` option
+4f0e3d4|xiaorouji|Mon Dec 23 00:54:29 2024 +0800|luci: Sing-Box cache path change
+33b4e56|xiaorouji|Sun Dec 22 16:31:55 2024 +0800|luci: fix and compat
+4a08ac2|lwb1978|Sun Dec 22 14:46:20 2024 +0800|luci: chinadns-ng support sing-box fakedns
 </details>

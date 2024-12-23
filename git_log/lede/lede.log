@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-47cfbf7d9|aiamadeus|Thu Dec 19 23:06:02 2024 +0800|generic: add missing kconfig for kernel 6.x
+3790f4f13|aiamadeus|Sun Dec 22 19:20:29 2024 +0800|kernel: fixes some modules build on 6.12
 </details>

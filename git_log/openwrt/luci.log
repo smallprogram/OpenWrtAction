@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b43aea743e|Paul Donald|Sat Dec 21 16:27:25 2024 +0000|luci-mod-status: fix i variable absence for graph drawing
-8a422af6a0|Paul Donald|Sat Dec 21 13:26:42 2024 +0000|luci-base: follow-up fix for ES6 changes
+779ca14125|Paul Donald|Sun Dec 22 00:36:28 2024 +0000|css: remove unsupported properties
+06461e07b5|Paul Donald|Sun Dec 22 00:13:26 2024 +0000|luci-mod-status: prevent trace-back loading wireless on non-WiFi devices
+41cbd31c90|Paul Donald|Sun Dec 22 00:38:32 2024 +0000|luci-base: prevent trace-back loading wireless on non-WiFi devices
+def988495a|Paul Donald|Sun Dec 22 00:39:36 2024 +0000|luci-base: detect WiFi availability - useful for non-WiFi devices
 </details>

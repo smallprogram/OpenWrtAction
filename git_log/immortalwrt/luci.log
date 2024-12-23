@@ -2,40 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3aea9c43e9|Tianling Shen|Sat Dec 21 14:57:46 2024 +0800|Merge Official Source
-b174d53e66|Oleksandr Nychyporuk|Fri Dec 20 20:38:40 2024 +0000|Translated using Weblate (Ukrainian)
-2dabe7cd82|Hosted Weblate|Fri Dec 20 21:38:39 2024 +0100|Translated using Weblate (Ukrainian)
-762cab8286|Stan Grishin|Fri Dec 20 10:54:03 2024 -0800|Merge pull request #7480 from stangri/master-luci-app-pbr
-f92e07253f|Paul Donald|Fri Dec 20 00:09:47 2024 +0000|luci-base: drop promise polyfill
-844c45076f|Paul Donald|Sat Dec 7 03:13:42 2024 +0100|luci-base: convert JavaScript code to ES6 style
-1c3d22b7cb|Paul Donald|Sat Dec 7 04:23:50 2024 +0100|luci-base: convert JavaScript code to ES6 style
-adf87a2581|Paul Donald|Sat Dec 7 04:31:00 2024 +0100|luci-base: convert JavaScript code to ES6 style
-ecd6cee5f6|Paul Donald|Sat Dec 7 04:14:37 2024 +0100|luci-base: convert JavaScript code to ES6 style
-c2fc96cc4c|Paul Donald|Sat Dec 7 04:30:06 2024 +0100|luci-base: convert JavaScript code to ES6 style
-1750968879|Paul Donald|Fri Dec 6 22:23:59 2024 +0100|luci-base: convert JavaScript code to ES6 style
-234e131507|Paul Donald|Fri Dec 6 22:21:11 2024 +0100|luci-base: convert JavaScript code to ES6 style
-7fe0218bcf|Paul Donald|Thu Dec 19 22:38:23 2024 +0000|luci-base: rename mii-tool object property to mii_tool
-24edaa2889|Hosted Weblate|Wed Dec 18 11:05:17 2024 +0100|Translated using Weblate (Portuguese (Brazil))
-bd36a83c5b|Paul Donald|Thu Dec 19 17:50:49 2024 +0000|luci-proto-bonding: remove (in favour of netifd bonding in luci)
-ab15b5e379|Paul Donald|Thu Dec 19 18:41:25 2024 +0000|luci-mod-network: gate bonding behind kmod presence
-fb4cf432d2|hitech95|Fri Apr 26 21:46:28 2024 +0200|luci-mod-network: add support for bonding device in netifd
-7cd6b385e0|hitech95|Fri Apr 26 21:40:40 2024 +0200|luci-mod-network: ifname_multi -> ifname_multi-bridge
-88a3148f51|Paul Donald|Thu Dec 19 17:41:08 2024 +0000|luci-base: jsdoc fixes
-7c2cde52db|Paul Donald|Thu Dec 19 17:43:10 2024 +0000|luci-base: modify path function to allow URI parameters
-b4e1052331|Paul Donald|Wed Dec 18 15:03:54 2024 +0000|luci-proto-wireguard: disambiguate fwmark description
-f41478a9b8|Stan Grishin|Wed Dec 18 05:18:11 2024 +0000|luci-app-pbr: update to 1.1.8
-8b3c13f7b3|Lyall Beveridge|Fri Dec 6 10:30:36 2024 +1100|luci-mod-network: validate DHCP leasetime input
-dd2c7f90b8|Paul Donald|Mon Dec 16 21:52:20 2024 +0100|luci-mod-dashboard: code spelling
-e23f6069d6|Paul Donald|Sun Dec 15 21:08:56 2024 +0100|luci-mod-network: remove old netifd version check which needs opkg
-367b67faa7|Paul Donald|Sun Dec 15 20:34:15 2024 +0100|luci-compat: opkg_package -> package_name
-0459c378b7|Paul Donald|Sun Dec 15 20:29:36 2024 +0100|themes: update package-manager style to match page name
-a0f66ab65f|Paul Donald|Sun Dec 15 20:22:27 2024 +0100|luci-app-p910nd: update package-manager handling
-8d13ea410d|Paul Donald|Sun Dec 15 20:11:23 2024 +0100|luci-base, luci-proto-*: rename getOpkgPackage -> getPackageName
-500ce17e7a|Paul Donald|Sun Dec 15 20:13:50 2024 +0100|luci-app-nut: update package-manager link
-4bc20a2bfb|Paul Donald|Sun Dec 15 19:59:52 2024 +0100|luci-mod-network: update package-manager link
-391e115c55|Eric Fahlgren|Sun Nov 17 08:33:56 2024 -0800|luci-app-attendedsysupgrade: make image selection consistent across all EFI targets
-d992d6f105|Arayuki Mago|Fri Dec 13 04:14:45 2024 +0900|luci-proto-ipv6: add missing extendprefix option for DHCPv6 client
-7baceb068d|Stan Grishin|Sat Dec 14 09:48:07 2024 -0800|Merge pull request #7471 from stangri/master-luci-app-advanced-reboot
-09e542292a|Stan Grishin|Fri Dec 13 19:49:38 2024 +0000|luci-app-advanced-reboot: Linksys MX5300 support
-a6e3ea42ac|Paul Donald|Fri Nov 29 01:32:16 2024 +0100|luci-mod-network: add ipproto property to routes
+b8adf54002|Tianling Shen|Sun Dec 22 13:41:20 2024 +0800|Merge Official Source
+b43aea743e|Paul Donald|Sat Dec 21 16:27:25 2024 +0000|luci-mod-status: fix i variable absence for graph drawing
+8a422af6a0|Paul Donald|Sat Dec 21 13:26:42 2024 +0000|luci-base: follow-up fix for ES6 changes
 </details>

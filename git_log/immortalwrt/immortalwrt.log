@@ -1,0 +1,17 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+cd5f08f266|Tianling Shen|Sun Dec 22 18:22:58 2024 +0800|Merge Official Source
+35acdbe909|Sander Vanheule|Sat Sep 21 15:09:34 2024 +0200|realtek: merge Zyxel GS1900 firmware partitions
+2ada95ccdf|Sander Vanheule|Sun Feb 20 19:50:38 2022 +0100|realtek: ZyXEL GS1900-48: drop gpio-restart
+f10ee1e209|Rosen Penev|Sat Jun 22 11:43:03 2024 -0700|ath79: ap5030dn: use label-mac-device property
+16c47c23df|Fabian Bläse|Fri Dec 20 10:38:31 2024 +0100|mvebu: rb5009: add label-mac-device
+4892ea9a74|Lorenz Brun|Fri Dec 20 23:37:01 2024 +0100|octeon: enable AT803x PHY driver
+69582e71fa|Hannu Nyman|Thu Dec 19 20:45:40 2024 +0200|busybox: Fix hexdump applet
+efe9fb0846|John Audia|Thu Dec 19 14:01:20 2024 -0500|kernel: bump 6.6 to 6.6.67
+d7f638bc69|Marco von Rosenberg|Wed Dec 18 23:32:42 2024 +0100|generic: fix BCM54612E suspend/resume backport patch
+cd8dcfef37|Jonas Jelonek|Wed Nov 13 22:25:09 2024 +0000|mediatek: filogic: bpi-r4: set netdev-name for sfp ports
+84fc59c0d5|Jonas Jelonek|Sun Nov 10 00:43:23 2024 +0000|mediatek: filogic: bpi-r3: set netdev-name for sfp1 port
+d4d6c48b6e|Jonas Jelonek|Mon Nov 25 23:04:15 2024 +0000|mediatek: filogic: support openwrt,netdev-name for renaming interfaces
+</details>

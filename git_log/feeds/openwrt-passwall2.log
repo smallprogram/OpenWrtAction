@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-78013e5|xiaorouji|Sun Dec 22 01:13:08 2024 +0800|luci: bump to 24.12.22
-318597a|xiaorouji|Sun Dec 22 01:10:06 2024 +0800|luci: optimize code
-ee48f9e|xiaorouji|Sat Dec 21 22:45:34 2024 +0800|luci: optimize and improve
-e7963d6|xiaorouji|Sat Dec 21 15:44:45 2024 +0800|luci: adjust
+c1c796f|xiaorouji|Sun Dec 22 18:32:08 2024 +0800|luci: add Sing-Box DNS `client_subnet` option
+d384845|xiaorouji|Sun Dec 22 16:31:55 2024 +0800|luci: fix and compat
 </details>
