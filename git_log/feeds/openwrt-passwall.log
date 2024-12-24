@@ -2,8 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f5183c4|xiaorouji|Sun Dec 22 18:32:08 2024 +0800|luci: add Sing-Box DNS `client_subnet` option
-4f0e3d4|xiaorouji|Mon Dec 23 00:54:29 2024 +0800|luci: Sing-Box cache path change
-33b4e56|xiaorouji|Sun Dec 22 16:31:55 2024 +0800|luci: fix and compat
-4a08ac2|lwb1978|Sun Dec 22 14:46:20 2024 +0800|luci: chinadns-ng support sing-box fakedns
+236dc2d|lwb1978|Tue Dec 24 11:35:50 2024 +0800|luci: optimize backup file download code
+52ab893|A-BO|Tue Dec 24 01:21:08 2024 +0800|luci: Xray Transport: Remove HTTP
+c6bfee0|xiaorouji|Mon Dec 23 22:44:36 2024 +0800|luci: fix acl rule when source address is empty
+d220761|A-BO|Mon Dec 23 22:29:53 2024 +0800|luci: optimize backup code
+e0c360b|xiaorouji|Sun Dec 22 00:43:06 2024 +0800|luci: optimize code
+9b4d2b8|xiaorouji|Mon Dec 23 20:14:25 2024 +0800|luci: optimize code
+4a21776|xiaorouji|Mon Dec 23 19:31:31 2024 +0800|luci: re-add Xray FakeDNS logic
+26668ed|xiaorouji|Mon Dec 23 16:30:17 2024 +0800|luci: fix dnsmasq with procd-ujail
 </details>

@@ -1,0 +1,6 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0860b028|coolsnowwolf|Mon Dec 23 14:03:11 2024 +0800|xr_usb_serial_common: fix build with linux 6.12
+</details>

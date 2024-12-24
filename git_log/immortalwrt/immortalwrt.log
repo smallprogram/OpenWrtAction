@@ -2,16 +2,24 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cd5f08f266|Tianling Shen|Sun Dec 22 18:22:58 2024 +0800|Merge Official Source
-35acdbe909|Sander Vanheule|Sat Sep 21 15:09:34 2024 +0200|realtek: merge Zyxel GS1900 firmware partitions
-2ada95ccdf|Sander Vanheule|Sun Feb 20 19:50:38 2022 +0100|realtek: ZyXEL GS1900-48: drop gpio-restart
-f10ee1e209|Rosen Penev|Sat Jun 22 11:43:03 2024 -0700|ath79: ap5030dn: use label-mac-device property
-16c47c23df|Fabian Bläse|Fri Dec 20 10:38:31 2024 +0100|mvebu: rb5009: add label-mac-device
-4892ea9a74|Lorenz Brun|Fri Dec 20 23:37:01 2024 +0100|octeon: enable AT803x PHY driver
-69582e71fa|Hannu Nyman|Thu Dec 19 20:45:40 2024 +0200|busybox: Fix hexdump applet
-efe9fb0846|John Audia|Thu Dec 19 14:01:20 2024 -0500|kernel: bump 6.6 to 6.6.67
-d7f638bc69|Marco von Rosenberg|Wed Dec 18 23:32:42 2024 +0100|generic: fix BCM54612E suspend/resume backport patch
-cd8dcfef37|Jonas Jelonek|Wed Nov 13 22:25:09 2024 +0000|mediatek: filogic: bpi-r4: set netdev-name for sfp ports
-84fc59c0d5|Jonas Jelonek|Sun Nov 10 00:43:23 2024 +0000|mediatek: filogic: bpi-r3: set netdev-name for sfp1 port
-d4d6c48b6e|Jonas Jelonek|Mon Nov 25 23:04:15 2024 +0000|mediatek: filogic: support openwrt,netdev-name for renaming interfaces
+934bf398be|Tianling Shen|Thu Oct 24 16:28:35 2024 +0800|rockchip: add MMBOX ANAS3035 support
+5736376f46|Tianling Shen|Thu Oct 24 16:28:29 2024 +0800|rockchip: enable support for disk led trigger
+f50afe025e|Tianling Shen|Mon Dec 23 18:33:37 2024 +0800|Merge Official Source
+af6c1f9497|Hauke Mehrtens|Mon Dec 23 01:49:04 2024 +0100|uboot-d1: Adapt BUILD_DEVICES to renamed boards
+73da0f6334|Thomas Richard|Fri Nov 29 11:53:14 2024 +0100|arm-trusted-firmware-stm32: bump to v2.12
+c117d7a37a|Thomas Richard|Fri Nov 29 11:36:46 2024 +0100|include/trusted-firmware-a.mk: remove the no-warn-rwx-segments hack
+5292a2de26|Thomas Richard|Thu Nov 28 18:05:29 2024 +0100|uboot-stm32: bump to 2024.10
+2398cad2b5|Thomas Richard|Thu Nov 28 17:28:47 2024 +0100|optee-os-stm32: bump to 4.4.0
+91966bee33|Rosen Penev|Sat Jun 15 14:23:02 2024 -0700|ath79: nbg6x16: use nvmem
+4585d5abd9|Hauke Mehrtens|Sun Dec 22 16:41:11 2024 +0100|kernel: generic: netfilter: nft_set_hash: unaligned atomic read on struct  nft_set_ext
+e0813dc071|Jianyu Zhuang|Tue Dec 10 15:38:20 2024 +0800|mediatek: filogic: add support for Tenbay WR3000K
+6992d6e51a|Maxim Anisimov|Tue Dec 10 16:37:02 2024 +0300|mediatek/filogic: add support for Cudy AP3000 v1
+dc655dcfca|Rani Hod|Sun Dec 22 02:53:51 2024 +0200|linux-firmware: package MediaTek MT7925 Bluetooth firmware
+5a7fb834c7|Tianling Shen|Wed Oct 16 16:05:40 2024 +0800|mediatek: update openembed som7981 support
+9d434a8abf|Tianling Shen|Wed Oct 16 16:05:40 2024 +0800|kernel: crypto: add atmel i2c hw accelerator support
+a7f4155f54|Jonas Jelonek|Wed Dec 18 21:57:22 2024 +0100|kernel: netdevices: add driver for Broadcom NetXtreme-C/E
+33e23e8922|Eric Fahlgren|Tue Dec 3 15:17:05 2024 -0800|build: d1: add SUPPORTED_DEVICES
+b651e3223c|Shymon Samsel|Thu Dec 19 12:28:43 2024 -0500|ipq-wifi: update to Git HEAD (2024-12-18)
+4b6e7da0f7|Shymon Samsel|Fri Dec 13 05:59:04 2024 -0500|ipq807x: add support for TP-Link EAP620 HD v1 Specifications:   * SoC: Qualcomm IPQ8072A (64-bit Quad-core Arm Cortex-A53 @ 1.4 GHz)   * Memory: 2x ESMT M15T4G16256A-DEBG2G (1 GiB DDR3-1866 13-13-13)   * Serial Port: 3v3 TTL 115200n8   * Wi-Fi: QCA5054 (4x4 5 GHz 802.11ax)   * Wi-Fi: QCN5024 (2x2 2.4 GHz 802.11b/g/n/ax)   * Ethernet: AR8031 (10/100/1000BASE-T)   * Flash: Winbond W29N01HZSINF (128 MiB)   * LEDs: 1x Blue Status (GPIO 42 Active High)   * Buttons: 1x Reset (GPIO 50 Active Low)
+21b3fff01c|Rosen Penev|Mon Dec 2 16:50:22 2024 -0800|ramips: rt3050: fix wrong compatible
 </details>

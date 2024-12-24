@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3790f4f13|aiamadeus|Sun Dec 22 19:20:29 2024 +0800|kernel: fixes some modules build on 6.12
+f21df9733|cn-shell|Mon Dec 23 22:30:09 2024 +0800|uboot-rockchip: fix NanoPi-R3S defconfig (#13232)
+7953c94b3|coolsnowwolf|Mon Dec 23 13:39:14 2024 +0800|kernel: kstrtox: revert strtobool() in linux 6.12
+651cc8547|coolsnowwolf|Mon Dec 23 13:02:09 2024 +0800|openwrt-ci.yml : update profile
 </details>

@@ -1,8 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-b8adf54002|Tianling Shen|Sun Dec 22 13:41:20 2024 +0800|Merge Official Source
-b43aea743e|Paul Donald|Sat Dec 21 16:27:25 2024 +0000|luci-mod-status: fix i variable absence for graph drawing
-8a422af6a0|Paul Donald|Sat Dec 21 13:26:42 2024 +0000|luci-base: follow-up fix for ES6 changes
-</details>

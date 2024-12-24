@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b6176b668|Hannu Nyman|Sun Dec 22 21:11:50 2024 +0200|nano: Update to 8.3
-f8587b9ec|John Audia|Fri Dec 20 11:22:54 2024 -0500|lxc: update to 6.0.3
+665bac8e1|Wei-Ting Yang|Thu Dec 19 11:41:42 2024 +0800|net-snmp: support compilation with GCC 11 permissively
+0c0d897b4|Tianling Shen|Mon Dec 23 22:16:07 2024 +0800|ack: Update to 3.8.0
+37f076cb1|Olivier Poitrey|Mon Dec 23 00:49:14 2024 +0000|nextdns: Update to version 1.44.3
 </details>
