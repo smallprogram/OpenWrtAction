@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7cb2f6584b|Paul Donald|Mon Dec 23 18:04:11 2024 +0000|treewide: correct L.resource usage syntax
-bc79691d84|Paul Donald|Mon Dec 23 17:55:51 2024 +0000|luci-base: jsdoc fixes
-0826411de7|Paul Donald|Mon Dec 23 17:14:40 2024 +0000|luci-base: amend path() to handle arrays better
+527acd59a8|Sergey Ponomarev|Sun Dec 22 21:42:57 2024 +0200|treewide: Add a link to Weblate
+075b59fbac|Self-Hosting-Group|Mon Dec 23 00:00:00 2024 +0000|luci-app-upnp: Add `Expires` to port map listing
 </details>

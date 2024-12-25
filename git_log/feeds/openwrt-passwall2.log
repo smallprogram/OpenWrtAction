@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-17bbfc5|xiaorouji|Mon Dec 23 22:53:51 2024 +0800|luci: fix acl rule when source address is empty
-0778f16|xiaorouji|Mon Dec 23 16:35:19 2024 +0800|luci: fix dnsmasq with procd-ujail
+5e8b7e9|xiaorouji|Wed Dec 25 00:00:00 2024 +0800|luci: bump to 24.12.25 Merry Chrismas!
+ab6005e|xiaorouji|Tue Dec 24 23:48:54 2024 +0800|luci: optimize and improve
+1d31516|lwb1978|Fri Dec 20 01:12:56 2024 +0800|luci: optimize apk version retrieval
+95f6a8d|A-BO|Tue Dec 24 01:21:08 2024 +0800|luci: Xray Transport: Remove HTTP
 </details>

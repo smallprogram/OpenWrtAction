@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f21df9733|cn-shell|Mon Dec 23 22:30:09 2024 +0800|uboot-rockchip: fix NanoPi-R3S defconfig (#13232)
-7953c94b3|coolsnowwolf|Mon Dec 23 13:39:14 2024 +0800|kernel: kstrtox: revert strtobool() in linux 6.12
-651cc8547|coolsnowwolf|Mon Dec 23 13:02:09 2024 +0800|openwrt-ci.yml : update profile
+b20c1bceb|Marco von Rosenberg|Wed Dec 18 23:32:42 2024 +0100|generic: fix BCM54612E ethernet backport patch
 </details>
