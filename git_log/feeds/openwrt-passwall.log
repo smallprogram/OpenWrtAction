@@ -2,8 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d6a79ec|A-BO|Wed Dec 25 01:45:56 2024 +0800|luci: add forward mode for SmartDNS
-d4e6f31|xiaorouji|Wed Dec 25 00:00:11 2024 +0800|luci: bump to 24.12.25 Merry Chrismas!
-4d85e3a|xiaorouji|Tue Dec 24 23:37:18 2024 +0800|luci: optimize and improve
-addf5bb|xiaorouji|Tue Dec 24 23:24:35 2024 +0800|luci: acl ipv6 dns query strategy
+f7fa741|xiaorouji|Thu Dec 26 04:20:41 2024 +0800|luci: bump to 24.12.26
+272bb73|xiaorouji|Thu Dec 26 03:52:09 2024 +0800|luci: update call uci api
+1b6b76d|xiaorouji|Thu Dec 26 03:51:11 2024 +0800|luci: add some func to api
+ef2ec49|xiaorouji|Thu Dec 26 03:18:20 2024 +0800|luci: fix dnsmasq shunt chnroute ipv6
+de08593|lwb1978|Wed Dec 25 21:03:45 2024 +0800|luci: optimize curl download logic
+e702367|xiaorouji|Wed Dec 25 13:45:41 2024 +0800|luci: Adjust rule update nftset name
 </details>

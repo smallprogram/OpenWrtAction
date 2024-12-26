@@ -2,8 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5e8b7e9|xiaorouji|Wed Dec 25 00:00:00 2024 +0800|luci: bump to 24.12.25 Merry Chrismas!
-ab6005e|xiaorouji|Tue Dec 24 23:48:54 2024 +0800|luci: optimize and improve
-1d31516|lwb1978|Fri Dec 20 01:12:56 2024 +0800|luci: optimize apk version retrieval
-95f6a8d|A-BO|Tue Dec 24 01:21:08 2024 +0800|luci: Xray Transport: Remove HTTP
+d6f428d|xiaorouji|Thu Dec 26 04:31:32 2024 +0800|luci: bump to 24.12.26
+b95e9fd|xiaorouji|Thu Dec 26 03:52:09 2024 +0800|luci: update call uci api
+2c45658|xiaorouji|Thu Dec 26 03:51:11 2024 +0800|luci: add some func to api
 </details>

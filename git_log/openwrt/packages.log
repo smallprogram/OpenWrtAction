@@ -2,9 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b67342562|Austin Lane|Thu Dec 5 17:35:57 2024 -0500|libyder: add package
-e1d1a2ce0|Austin Lane|Mon Dec 9 21:16:25 2024 -0500|python-platformio: Add package (build system)
-9e70d3c5b|Austin Lane|Thu Dec 19 16:15:13 2024 -0500|node: Do not use shared `abseil-cpp`
-34c79e8d8|Tianling Shen|Tue Dec 24 16:09:22 2024 +0800|cloudflared: Update to 2024.12.2
-bd0fb6d3e|Tianling Shen|Tue Dec 24 16:09:03 2024 +0800|xray-core: Update to 24.12.18
+4da4138da|Alexandru Ardelean|Wed Dec 25 09:26:21 2024 +0200|stress-ng: bump to version 0.18.07
+9060de91b|Alexandru Ardelean|Fri Aug 23 16:15:42 2024 +0300|python-lxml: bump to version 5.3.0
+b24a5876d|Alexandru Ardelean|Tue Dec 24 14:27:09 2024 +0200|python-et_xmlfile: bump to 2.0.0
+75b419e96|Alexandru Ardelean|Tue Dec 24 14:25:47 2024 +0200|django: bump to 5.1.4
+190b99b1b|Alexandru Ardelean|Wed Dec 25 09:22:35 2024 +0200|sudo: bump to version 1.9.16p2
+68a0a8d6a|Othmar Truniger|Sun Dec 22 09:03:23 2024 +0100|knxd: bump to new version 0.14.71
 </details>

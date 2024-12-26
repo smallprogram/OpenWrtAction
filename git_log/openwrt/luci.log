@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-527acd59a8|Sergey Ponomarev|Sun Dec 22 21:42:57 2024 +0200|treewide: Add a link to Weblate
-075b59fbac|Self-Hosting-Group|Mon Dec 23 00:00:00 2024 +0000|luci-app-upnp: Add `Expires` to port map listing
+2da1efba38|Tianling Shen|Wed Dec 25 13:44:57 2024 +0800|luci-base: follow-up fix for ES6 changes
 </details>

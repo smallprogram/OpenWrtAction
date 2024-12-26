@@ -2,5 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b20c1bceb|Marco von Rosenberg|Wed Dec 18 23:32:42 2024 +0100|generic: fix BCM54612E ethernet backport patch
+ae997a86d|coolsnowwolf|Thu Dec 26 11:44:22 2024 +0800|kernel: bump 5.10 to 5.10.232
+27cc9c746|coolsnowwolf|Thu Dec 26 11:33:30 2024 +0800|kernel: bump 5.15 to 5.15.175
+8289e89f9|coolsnowwolf|Thu Dec 26 11:32:37 2024 +0800|kernel: bump 5.4 to 5.4.288
+1776f07f5|coolsnowwolf|Thu Dec 26 11:31:23 2024 +0800|kernel: bump 6.1 to 6.1.121
+f3bb85182|coolsnowwolf|Thu Dec 26 11:30:08 2024 +0800|kernel: bump 6.12 to 6.12.6
+55be1d688|Joe Zheng|Sun Aug 25 00:53:01 2024 +0000|x86: make i915 as a kmod with required firmware
+aeac24fb6|David Bauer|Sun Nov 17 13:23:09 2024 +0100|net: phy: broadcom: update dependency condition
 </details>
