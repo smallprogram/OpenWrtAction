@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a85059438f|Felix Fietkau|Thu Dec 26 09:41:22 2024 +0100|mac80211: update to version 6.12.6
+de0c143742|Shiji Yang|Wed Dec 25 20:33:23 2024 +0800|ramips: mt762{0,8}: reduce default MMC clock to 24 MHz
+df222e57be|Joan Moreau|Sat Sep 28 13:53:02 2024 +0000|ath79: add support for KuWfi CPE830(D) / YunCore CPE830(D)
+d275bcc4bb|Hauke Mehrtens|Wed Dec 25 23:59:46 2024 +0100|yafut: Mark as nonshared
+</details>

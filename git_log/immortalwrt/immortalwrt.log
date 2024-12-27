@@ -1,0 +1,8 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+7fb1a72f49|Tianling Shen|Thu Dec 26 18:06:59 2024 +0800|Merge Official Source
+d1e9c50d06|Kyle Hendry|Sat Nov 16 18:16:31 2024 -0800|bmips: dts: fix pinctrl error
+a25809a474|Sander Vanheule|Tue Dec 24 09:56:11 2024 +0100|realtek: generate compat_version 2.0 for GS1900
+</details>

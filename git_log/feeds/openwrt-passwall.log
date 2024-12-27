@@ -2,10 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f7fa741|xiaorouji|Thu Dec 26 04:20:41 2024 +0800|luci: bump to 24.12.26
-272bb73|xiaorouji|Thu Dec 26 03:52:09 2024 +0800|luci: update call uci api
-1b6b76d|xiaorouji|Thu Dec 26 03:51:11 2024 +0800|luci: add some func to api
-ef2ec49|xiaorouji|Thu Dec 26 03:18:20 2024 +0800|luci: fix dnsmasq shunt chnroute ipv6
-de08593|lwb1978|Wed Dec 25 21:03:45 2024 +0800|luci: optimize curl download logic
-e702367|xiaorouji|Wed Dec 25 13:45:41 2024 +0800|luci: Adjust rule update nftset name
+dc00d84|lwb1978|Fri Dec 27 00:17:43 2024 +0800|luci: optimize code
+e069ab2|xiaorouji|Thu Dec 26 17:29:47 2024 +0800|luci: remove dns2tcp depends
+79944dc|xiaorouji|Thu Dec 26 17:29:11 2024 +0800|luci: use ChinaDNS-NG instead of dns2tcp
+ee44e92|xiaorouji|Thu Dec 26 16:40:19 2024 +0800|luci: adjust remote DoT ChinaDNS-NG with filter IPv6
+fb95bb9|xiaorouji|Thu Dec 26 15:37:36 2024 +0800|luci: optimize code
+5c8ccfb|lwb1978|Thu Dec 26 16:48:33 2024 +0800|luci: fix block_list enable code
 </details>

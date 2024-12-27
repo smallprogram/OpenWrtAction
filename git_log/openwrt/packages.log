@@ -2,10 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4da4138da|Alexandru Ardelean|Wed Dec 25 09:26:21 2024 +0200|stress-ng: bump to version 0.18.07
-9060de91b|Alexandru Ardelean|Fri Aug 23 16:15:42 2024 +0300|python-lxml: bump to version 5.3.0
-b24a5876d|Alexandru Ardelean|Tue Dec 24 14:27:09 2024 +0200|python-et_xmlfile: bump to 2.0.0
-75b419e96|Alexandru Ardelean|Tue Dec 24 14:25:47 2024 +0200|django: bump to 5.1.4
-190b99b1b|Alexandru Ardelean|Wed Dec 25 09:22:35 2024 +0200|sudo: bump to version 1.9.16p2
-68a0a8d6a|Othmar Truniger|Sun Dec 22 09:03:23 2024 +0100|knxd: bump to new version 0.14.71
+031bf6f35|Alexandru Ardelean|Thu Dec 26 10:24:40 2024 +0200|Revert "node: Do not use shared `abseil-cpp`"
+db853b5d5|Aleksey Kolosov|Thu Dec 26 10:36:48 2024 +0300|delve: update to 1.24.0
+3a8f49d4e|Jianhui Zhao|Thu Dec 26 12:21:06 2024 +0800|lua-eco: update to 3.7.0
 </details>

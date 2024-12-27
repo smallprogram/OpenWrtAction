@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-d6f428d|xiaorouji|Thu Dec 26 04:31:32 2024 +0800|luci: bump to 24.12.26
-b95e9fd|xiaorouji|Thu Dec 26 03:52:09 2024 +0800|luci: update call uci api
-2c45658|xiaorouji|Thu Dec 26 03:51:11 2024 +0800|luci: add some func to api
-</details>
