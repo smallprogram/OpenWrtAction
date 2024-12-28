@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-031bf6f35|Alexandru Ardelean|Thu Dec 26 10:24:40 2024 +0200|Revert "node: Do not use shared `abseil-cpp`"
-db853b5d5|Aleksey Kolosov|Thu Dec 26 10:36:48 2024 +0300|delve: update to 1.24.0
-3a8f49d4e|Jianhui Zhao|Thu Dec 26 12:21:06 2024 +0800|lua-eco: update to 3.7.0
+ca9c3d1ba|Michael Heimpold|Mon Dec 23 21:41:05 2024 +0100|php8: add patch for loongarch64 support
 </details>

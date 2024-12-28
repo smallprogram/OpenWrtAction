@@ -1,0 +1,8 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6404f3a300|Miguel Angel Mulero Martinez|Mon Dec 23 16:17:29 2024 +0100|luci-mod-status: add simple filtering for connections
+235ec08a6a|Daniel Nilsson|Fri Dec 27 19:37:18 2024 +0100|luci-app-squid: remove variable redeclaration
+a8f09c0ee0|Hosted Weblate|Fri Dec 27 08:41:59 2024 +0100|Translated using Weblate (Russian)
+</details>

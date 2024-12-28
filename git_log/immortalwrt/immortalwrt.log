@@ -2,7 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7fb1a72f49|Tianling Shen|Thu Dec 26 18:06:59 2024 +0800|Merge Official Source
-d1e9c50d06|Kyle Hendry|Sat Nov 16 18:16:31 2024 -0800|bmips: dts: fix pinctrl error
-a25809a474|Sander Vanheule|Tue Dec 24 09:56:11 2024 +0100|realtek: generate compat_version 2.0 for GS1900
+ed5459dada|Tianling Shen|Fri Dec 27 13:29:57 2024 +0800|Merge Official Source
+a85059438f|Felix Fietkau|Thu Dec 26 09:41:22 2024 +0100|mac80211: update to version 6.12.6
+de0c143742|Shiji Yang|Wed Dec 25 20:33:23 2024 +0800|ramips: mt762{0,8}: reduce default MMC clock to 24 MHz
+df222e57be|Joan Moreau|Sat Sep 28 13:53:02 2024 +0000|ath79: add support for KuWfi CPE830(D) / YunCore CPE830(D)
+d275bcc4bb|Hauke Mehrtens|Wed Dec 25 23:59:46 2024 +0100|yafut: Mark as nonshared
 </details>

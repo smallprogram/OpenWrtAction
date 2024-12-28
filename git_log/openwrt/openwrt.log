@@ -2,8 +2,20 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a85059438f|Felix Fietkau|Thu Dec 26 09:41:22 2024 +0100|mac80211: update to version 6.12.6
-de0c143742|Shiji Yang|Wed Dec 25 20:33:23 2024 +0800|ramips: mt762{0,8}: reduce default MMC clock to 24 MHz
-df222e57be|Joan Moreau|Sat Sep 28 13:53:02 2024 +0000|ath79: add support for KuWfi CPE830(D) / YunCore CPE830(D)
-d275bcc4bb|Hauke Mehrtens|Wed Dec 25 23:59:46 2024 +0100|yafut: Mark as nonshared
+2af552372d|Rosen Penev|Sun Oct 20 16:12:30 2024 -0700|mac80211: ath9k: clean up gpiochip
+ad2e55e02b|Rosen Penev|Tue Oct 8 12:55:07 2024 -0700|mac80211: ath9k: remove platform leds
+da0016b274|Rosen Penev|Mon Oct 7 15:50:37 2024 -0700|kernel: remove custom ath9k_platform.h
+fdc2c6ab99|Rosen Penev|Mon Oct 7 14:45:50 2024 -0700|mac80211: remove ath9k_platform_data
+c846f48f6a|Álvaro Fernández Rojas|Fri Dec 27 17:34:39 2024 +0100|generic: add missing CONFIG_LEDS_KTD202X symbol
+74354fb463|Joel Low|Fri Dec 27 08:13:26 2024 +0800|netfilter: fix bogus reference to `kmod-nf-conntrack-timeout`
+f491001f0c|Richard Schneidt|Fri Dec 27 12:57:34 2024 +0100|mvebu: fix Linksys power LED
+fe17cc1bfd|Rosen Penev|Sat Oct 5 15:06:13 2024 -0700|linux: replace u-boot,env with nvmem,layout
+648d070c76|Rosen Penev|Tue Aug 6 12:29:58 2024 -0700|linux: replace nvmem-cells with nvmem-layout
+d6c5805db3|John Audia|Wed Dec 11 15:06:30 2024 -0500|bcm27xx/bcm2712: add RP1 drivers via kmods
+87309edba4|John Audia|Mon Dec 16 13:44:32 2024 -0500|kernel: bcm27xx/bcm2712: add RP1 functionality
+613dd79d5e|John Audia|Thu Dec 12 15:33:15 2024 -0500|bcm27xx: patches: cherry-pick for RP1 kmods
+c71a27f4d6|Mustafa Can Elmacı|Thu Dec 26 12:50:55 2024 +0300|lantiq: Remove legacy LED migration script
+90ecd826c5|Rosen Penev|Mon Sep 30 16:38:22 2024 -0700|lantiq: fritz7430: fix PCI ID
+4348ed93c6|Rosen Penev|Mon Dec 16 15:19:35 2024 -0800|lantiq: use nvmem for tplink tdw89x0
+54cb64c7c1|Jack Sun|Sat Dec 21 22:07:43 2024 +0800|tools/cmake: update to 3.31.3
 </details>
