@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ca9c3d1ba|Michael Heimpold|Mon Dec 23 21:41:05 2024 +0100|php8: add patch for loongarch64 support
+86d774edd|Alexandru Ardelean|Fri Dec 27 22:32:54 2024 +0200|libwebp: bump to version 1.5.0
+7b4ee2dab|Alexandru Ardelean|Tue Dec 24 14:28:02 2024 +0200|numpy: bump to version 2.2.1
+dc273bfa4|Álvaro Fernández Rojas|Sat Dec 28 09:54:35 2024 +0100|bcm27xx-eeprom: update to v2024.11.12-2712
 </details>
