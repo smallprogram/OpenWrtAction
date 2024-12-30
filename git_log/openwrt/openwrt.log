@@ -2,20 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e6ce868c3a|Felix Fietkau|Sat Dec 28 22:46:19 2024 +0100|busybox: fix LTO compiler flags
-80189a0350|Álvaro Fernández Rojas|Sat Dec 28 09:44:36 2024 +0100|bcm27xx-utils: update to latest version
-5bc2d3267d|Álvaro Fernández Rojas|Sat Dec 28 09:15:50 2024 +0100|bcm27xx-gpu-fw: update to v1.20241126
-d6f2dc4a74|Robert Marko|Sat Dec 28 18:30:18 2024 +0100|qualcommax: ipq60xx: mr7350: remove leftover commented-out LED-s
-e44daa4fa5|Kyle Hendry|Sun Nov 24 11:29:33 2024 -0800|bmips: pinctrl-bcm63268: add gpio function
-84ca1c28f7|Álvaro Fernández Rojas|Sat Dec 28 16:01:34 2024 +0100|Revert "bmips: drop macronix nand block protection patch"
-45187cbad0|Tony Ambardar|Sat Dec 7 20:00:43 2024 -0800|tools/dwarves: update to v1.28
-5bcad34154|Tony Ambardar|Sat Dec 7 19:49:49 2024 -0800|bpftool: Update to v7.5.0
-6a6ae41d4b|Tony Ambardar|Sat Dec 7 19:39:11 2024 -0800|libbpf: Update to v1.5.0
-15b21c474e|Álvaro Fernández Rojas|Sat Dec 28 12:18:02 2024 +0100|bmips: drop macronix nand block protection patch
-4b6eb631e1|Chukun Pan|Fri Dec 20 22:30:01 2024 +0800|trusted-firmware-a.mk: fix release download URL
-cee18af704|Robert Marko|Sat Nov 30 13:05:39 2024 +0100|base-files: sysupgrade: add saving list of installed packages for APK
-da7ab64f1f|Antonio Pastor|Fri Dec 20 11:28:45 2024 -0500|kernel: generic: patch: 802.2+LLC - set transport_header offset
-0cba20f082|Fabian Groffen|Fri Dec 27 15:52:32 2024 +0100|octeon: add kmod-usb-dwc3-octeon to DEFAULT_PACKAGES
-9adcf61abb|Fabian Groffen|Fri Dec 27 15:48:19 2024 +0100|kernel: add kmod-usb-dwc3-octeon
-692205305d|Álvaro Fernández Rojas|Fri Dec 27 17:14:40 2024 +0100|bcm27xx: pull 6.6 patches from RPi repo
+1aae1dfaf2|John Audia|Fri Dec 27 08:57:52 2024 -0500|kernel: bump 6.6 to 6.6.68
+9ea174c7bf|Robert Marko|Sat Dec 28 20:53:12 2024 +0100|ipq40xx: orbi: add ethernet0 alias
 </details>

@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f2815ef00|coolsnowwolf|Tue Nov 26 23:17:06 2024 +0800|ramips: add support for Huasifei WHF283
-817dfb538|coolsnowwolf|Mon Nov 25 23:21:50 2024 +0800|filogic: add support for HUASIFEI WH3000
-8cb77cb18|coolsnowwolf|Fri Dec 27 22:31:50 2024 +0800|mediatek: filogic: add support for HUASIFEI WH3000 (aka Fudy)
+e14a7bfec|Rani Hod|Sun Dec 22 02:53:51 2024 +0200|linux-firmware: package MT7925 firmware
 </details>
