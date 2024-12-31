@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1aae1dfaf2|John Audia|Fri Dec 27 08:57:52 2024 -0500|kernel: bump 6.6 to 6.6.68
-9ea174c7bf|Robert Marko|Sat Dec 28 20:53:12 2024 +0100|ipq40xx: orbi: add ethernet0 alias
+bff5260d7b|Felix Fietkau|Mon Dec 30 21:27:46 2024 +0100|mt76: update to Git HEAD (2024-12-30)
+12b8d5c83c|Felix Fietkau|Mon Dec 30 18:38:42 2024 +0100|wifi-scripts: ucode: iwinfo: skip uninitialized PHYs
+874e0accae|Mieczyslaw Nalewaj|Sun Dec 29 14:24:32 2024 +0100|loongarch64: remove redundant CONFIG_LIST_HARDENED
+3c5809699d|Rosen Penev|Tue Dec 17 12:07:20 2024 -0800|ath79: add missing compatible for ath9k
 </details>

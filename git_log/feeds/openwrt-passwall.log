@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dadc686|lwb1978|Sun Dec 29 21:45:39 2024 +0800|luci: Fix Import alpn and fp parameter issues
-814261e|lwb1978|Sun Dec 29 15:51:21 2024 +0800|luci: optimize node link import
-4f3e3bc|lwb1978|Sun Dec 29 12:55:59 2024 +0800|luci: add default values when importing trojan link
+830a60c|lwb1978|Tue Dec 31 10:13:20 2024 +0800|luci: optimize and fix `link_share_man.htm`
+1c637cb|A-BO|Mon Dec 30 20:26:03 2024 +0800|luci: optimize the compatibility of Xray SS node method
+bed4bc1|xiaorouji|Mon Dec 30 15:21:07 2024 +0800|luci: optimize code
 </details>

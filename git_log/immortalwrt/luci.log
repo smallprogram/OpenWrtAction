@@ -1,0 +1,14 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+e90df6dc8d|Tianling Shen|Mon Dec 30 15:28:03 2024 +0800|Merge Official Source
+06abe0b770|Tianling Shen|Mon Dec 30 15:27:29 2024 +0800|luci-theme-argon: sync with upstream source
+f843014f24|Sergey Ponomarev|Fri Dec 27 01:08:48 2024 +0200|luci-app-acme: DNS API store all params
+f8fae9fe83|Hannu Nyman|Sun Dec 29 21:46:36 2024 +0200|treewide: Sync translations
+4d292ad495|Anya Lin|Sun Dec 29 13:02:21 2024 +0800|luci-app-filemanager: update chinese translations
+6664e34315|Paul Donald|Sat Dec 28 00:46:32 2024 +0000|luci-app-firewall: grammar
+6404f3a300|Miguel Angel Mulero Martinez|Mon Dec 23 16:17:29 2024 +0100|luci-mod-status: add simple filtering for connections
+235ec08a6a|Daniel Nilsson|Fri Dec 27 19:37:18 2024 +0100|luci-app-squid: remove variable redeclaration
+a8f09c0ee0|Hosted Weblate|Fri Dec 27 08:41:59 2024 +0100|Translated using Weblate (Russian)
+</details>

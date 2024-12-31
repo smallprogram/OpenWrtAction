@@ -2,9 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2516d2bdc|Wesley Gimenes|Sat Dec 28 02:31:26 2024 -0300|netbird: update to 0.35.1
-2dadcaa11|Wesley Gimenes|Tue Dec 24 15:57:16 2024 -0300|netbird: update to 0.35.0
-851386dc6|Wesley Gimenes|Sun Dec 22 19:21:31 2024 -0300|netbird: revert fix to build with musl >1.2.4
-e6178717d|Hirokazu MORIKAWA|Sat Dec 28 07:40:50 2024 +0900|node: remake - do not use shared abseil-cpp
-edab60b0f|Tianling Shen|Tue Dec 24 20:14:33 2024 +0800|golang: Update to 1.23.4
+52eab207e|Othmar Truniger|Thu Dec 26 19:50:34 2024 +0100|knxd: add dependency for inih
+22e61c19a|Othmar Truniger|Mon Dec 30 10:11:04 2024 +0100|libfmt: bump to version 11.1.1
+88396b6c4|Michael Heimpold|Sat Dec 21 15:46:08 2024 +0100|imx-uuc: add package 'sdimage' and 'ufb'
+7dd3cd9ab|Tianling Shen|Tue Dec 31 00:38:10 2024 +0800|dnsproxy: Update to 0.74.1
 </details>

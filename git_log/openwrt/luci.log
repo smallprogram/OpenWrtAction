@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f843014f24|Sergey Ponomarev|Fri Dec 27 01:08:48 2024 +0200|luci-app-acme: DNS API store all params
-f8fae9fe83|Hannu Nyman|Sun Dec 29 21:46:36 2024 +0200|treewide: Sync translations
-4d292ad495|Anya Lin|Sun Dec 29 13:02:21 2024 +0800|luci-app-filemanager: update chinese translations
-6664e34315|Paul Donald|Sat Dec 28 00:46:32 2024 +0000|luci-app-firewall: grammar
+d9ce4fb46a|Hosted Weblate|Mon Dec 30 16:20:23 2024 +0100|Translated using Weblate (Persian)
 </details>

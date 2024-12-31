@@ -1,0 +1,11 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5a6e8ec|A-BO|Mon Dec 30 20:26:03 2024 +0800|luci: optimize the compatibility of Xray SS node method
+c9b476b|xiaorouji|Tue Dec 31 00:45:02 2024 +0800|luci: optimize code
+431682e|xiaorouji|Mon Dec 30 16:03:27 2024 +0800|luci: optimize code
+f7f671c|lwb1978|Sun Dec 29 21:45:39 2024 +0800|luci: Fix Import alpn and fp parameter issues
+871664e|lwb1978|Sun Dec 29 15:51:21 2024 +0800|luci: optimize node link import
+30f9bfb|lwb1978|Sun Dec 29 12:55:59 2024 +0800|luci: add default values when importing trojan link
+</details>
