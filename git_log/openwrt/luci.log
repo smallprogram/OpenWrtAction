@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d9ce4fb46a|Hosted Weblate|Mon Dec 30 16:20:23 2024 +0100|Translated using Weblate (Persian)
+891635090c|Georgios Kontaxis|Mon Dec 30 20:32:30 2024 -0500|luci-app-ddns: Update global cacert path doc to reflect it is a file not a dir
+37db0aab91|Stan Grishin|Mon Dec 30 20:24:23 2024 -0800|Merge pull request #7516 from stangri/master-luci-app-https-dns-proxy
+e1887f25fe|Stan Grishin|Mon Dec 30 03:29:04 2024 +0000|luci-app-https-dns-proxy: bugfixes and resolvers update
 </details>

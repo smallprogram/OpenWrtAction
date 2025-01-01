@@ -2,21 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b794c53|coolsnowwolf|Tue Dec 31 03:36:01 2024 +0800|Merge pull request #1649 from zxlhhyccc/patch-1
-a064079|zxl hhyccc|Tue Dec 31 00:14:50 2024 +0800|xray-core: update to 24.12.28
-5f81c10|coolsnowwolf|Mon Dec 30 21:59:12 2024 +0800|Merge pull request #1643 from zxlhhyccc/log
-ec4dfb0|coolsnowwolf|Mon Dec 30 21:57:43 2024 +0800|Merge pull request #1646 from zxlhhyccc/patch-2
-0228a7a|coolsnowwolf|Mon Dec 30 21:57:24 2024 +0800|Merge pull request #1638 from zxlhhyccc/tj
-fffe5b1|coolsnowwolf|Mon Dec 30 21:56:58 2024 +0800|Merge pull request #1642 from zxlhhyccc/patch-1
-e2ed51b|coolsnowwolf|Mon Dec 30 21:56:20 2024 +0800|Merge pull request #1648 from zxlhhyccc/patch-4
-2129d80|coolsnowwolf|Mon Dec 30 21:55:29 2024 +0800|Merge pull request #1645 from zxlhhyccc/ssr
-33d0623|coolsnowwolf|Mon Dec 30 21:54:35 2024 +0800|Merge pull request #1647 from zxlhhyccc/patch-3
-01e053c|zxl hhyccc|Sat Dec 28 21:55:32 2024 +0800|v2raya: Update to 2.2.6.3
-aa28d09|zxl hhyccc|Sat Dec 28 21:51:14 2024 +0800|xray-core: Update to 24.12.18
-945dd5a|zxl hhyccc|Sat Dec 28 21:43:32 2024 +0800|chinadns-ng: update to 2024.12.22
-0c3c269|zxlhhyccc|Sat Dec 28 16:38:45 2024 +0800|luci-app-ssr-plus: Add backup and restore and reset functions
-cc4db89|zxlhhyccc|Sat Dec 28 17:20:25 2024 +0800|shadowsocksr-libev: Fix openssl 3.0.x version run failure problem.
-94d9b24|zxl hhyccc|Mon Dec 23 22:45:04 2024 +0800|luci-app-ssr-plus: status.lua: Add `restart Service` button.
-bf3c0aa|zxl hhyccc|Mon Dec 23 22:42:44 2024 +0800|luci-app-ssr-plus: status.lua: Add `restart Service` button.
-d2a276c|zxlhhyccc|Sun Dec 22 21:54:39 2024 +0800|luci-app-ssr-plus: ssrurl.htm: Fix Xray's and Trojan's trojan protocol configuration import and subscribe issue.
+aef448b|coolsnowwolf|Tue Dec 31 14:14:19 2024 +0800|Merge pull request #1651 from zxlhhyccc/patch-2
+af5de07|zxl hhyccc|Tue Dec 31 12:57:16 2024 +0800|luci-app-ssr-plus: shadowsocksr.lua: Repair code.
 </details>

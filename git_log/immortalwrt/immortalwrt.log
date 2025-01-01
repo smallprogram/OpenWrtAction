@@ -1,8 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-f67f4d7ebb|Tianling Shen|Mon Dec 30 15:34:41 2024 +0800|Merge Official Source
-1aae1dfaf2|John Audia|Fri Dec 27 08:57:52 2024 -0500|kernel: bump 6.6 to 6.6.68
-9ea174c7bf|Robert Marko|Sat Dec 28 20:53:12 2024 +0100|ipq40xx: orbi: add ethernet0 alias
-</details>

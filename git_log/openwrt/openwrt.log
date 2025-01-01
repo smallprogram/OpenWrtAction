@@ -2,8 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bff5260d7b|Felix Fietkau|Mon Dec 30 21:27:46 2024 +0100|mt76: update to Git HEAD (2024-12-30)
-12b8d5c83c|Felix Fietkau|Mon Dec 30 18:38:42 2024 +0100|wifi-scripts: ucode: iwinfo: skip uninitialized PHYs
-874e0accae|Mieczyslaw Nalewaj|Sun Dec 29 14:24:32 2024 +0100|loongarch64: remove redundant CONFIG_LIST_HARDENED
-3c5809699d|Rosen Penev|Tue Dec 17 12:07:20 2024 -0800|ath79: add missing compatible for ath9k
+adfb1b7696|Paweł Owoc|Fri Jul 26 19:00:57 2024 +0200|qualcommax: ipq807x: add support for Linksys MX4300 (LN1301)
+d6459091fd|Qiyuan Zhang|Mon Aug 5 06:47:21 2024 -0400|mtd: check the return value of malloc and pread
+f7ee30120f|Qiyuan Zhang|Thu Aug 1 18:24:55 2024 -0400|qualcommax: add kernel cmdline replacement hack
+5b3044e8e3|Qiyuan Zhang|Fri Aug 2 10:57:51 2024 -0400|mtd: fix resetbc on nand w/ min I/O size > 2048
+f96b3383d5|Paweł Owoc|Thu Aug 1 08:53:14 2024 +0200|qualcommax: ipq807x: fix mac setup for Linksys MX4200v2
+dbafc95cc5|Paweł Owoc|Sat Jul 27 23:25:14 2024 +0200|qualcommax: ipq807x: define configuration for Linksys MX4x00 devices
+c9b324d3ac|Paweł Owoc|Fri Jul 26 22:21:02 2024 +0200|qualcommax: ipq807x: create generic Linksys MX4x00 dts
+738eb514c6|Paweł Owoc|Sun Aug 4 01:06:39 2024 +0200|qualcommax: ipq807x: remove unnecessary bootargs-append for MX4200
+e0eca57b6e|Rosen Penev|Mon Dec 23 14:00:02 2024 -0800|iproute2: fix GCC14 compilation
+c8ea1aa970|Evan Jobling|Sat Sep 14 02:43:35 2024 +0000|realtek: add support for HPE 1920-24G-PoE-370w
+41b49a157a|Evan Jobling|Sat Sep 14 02:31:09 2024 +0000|realtek: rtl838x: refactor hpe_1920-24g dts
 </details>
