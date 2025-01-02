@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f3e56a87e|Jonas Jelonek|Wed Dec 18 21:57:22 2024 +0100|kernel: add Broadcom NetXtreme-C/E driver
+d379cee20|aiamadeus|Sat Dec 21 23:36:39 2024 +0800|aic8800: update to version 20240327
 </details>

@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-d87f504|xiaorouji|Wed Jan 1 02:45:21 2025 +0800|luci: bump to 2025.1.1 New Year!
-234bdce|xiaorouji|Tue Dec 31 17:20:03 2024 +0800|luci: fix https://github.com/xiaorouji/openwrt-passwall2/issues/750
-6152412|xiaorouji|Tue Dec 31 17:25:05 2024 +0800|luci: fix Xray FakeDNS
-</details>

@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7c2a684|xiaorouji|Wed Jan 1 02:46:37 2025 +0800|luci: bump to 2025.1.1 New Year!
-deaf534|xiaorouji|Tue Dec 31 17:34:06 2024 +0800|luci: optimize code
-811d702|xiaorouji|Tue Dec 31 17:00:15 2024 +0800|luci: fix Xray FakeDNS
+9a6ec6b|xiaorouji|Thu Jan 2 00:48:14 2025 +0800|luci: optimize code
+b3e5727|lwb1978|Wed Jan 1 18:31:47 2025 +0800|luci: optimize subscribe code
+3fd9b41|A-BO|Wed Jan 1 12:09:41 2025 +0800|luci: add chinadns-ng log related functions
 </details>
