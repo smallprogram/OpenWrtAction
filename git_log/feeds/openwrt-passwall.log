@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9a6ec6b|xiaorouji|Thu Jan 2 00:48:14 2025 +0800|luci: optimize code
-b3e5727|lwb1978|Wed Jan 1 18:31:47 2025 +0800|luci: optimize subscribe code
-3fd9b41|A-BO|Wed Jan 1 12:09:41 2025 +0800|luci: add chinadns-ng log related functions
+cfe2b87|A-BO|Fri Jan 3 00:37:22 2025 +0800|luci: optimize url test code
+ea4b6d4|xiaorouji|Thu Jan 2 23:43:59 2025 +0800|luci: optimize and fix
+5ccfd03|xiaorouji|Thu Jan 2 19:33:16 2025 +0800|luci: adjust socks config page button
+1c71d16|xiaorouji|Thu Jan 2 18:27:34 2025 +0800|luci: optimize code and adjust
 </details>

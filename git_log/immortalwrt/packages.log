@@ -1,0 +1,12 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+308263fac|Integral|Wed Jan 1 15:53:01 2025 +0800|upx: update to 4.2.4
+c69fa0059|Tianling Shen|Thu Jan 2 18:29:17 2025 +0800|Merge Official Source
+99a4a0fe8|Nick Liu|Sat Dec 28 20:50:05 2024 +0800|wget: update alternative priority
+52eab207e|Othmar Truniger|Thu Dec 26 19:50:34 2024 +0100|knxd: add dependency for inih
+22e61c19a|Othmar Truniger|Mon Dec 30 10:11:04 2024 +0100|libfmt: bump to version 11.1.1
+88396b6c4|Michael Heimpold|Sat Dec 21 15:46:08 2024 +0100|imx-uuc: add package 'sdimage' and 'ufb'
+7dd3cd9ab|Tianling Shen|Tue Dec 31 00:38:10 2024 +0800|dnsproxy: Update to 0.74.1
+</details>
