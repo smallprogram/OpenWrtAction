@@ -2,5 +2,27 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2cb77be2fa|Tianling Shen|Thu Jan 2 16:55:35 2025 +0800|mac80211: add missing brcm43752 patches back
+1ceaac207b|Tianling Shen|Fri Jan 3 20:22:24 2025 +0800|rockchip: refresh patches
+ae5a4ecbe1|Tianling Shen|Fri Jan 3 17:10:45 2025 +0800|Merge Official Source
+89b2356b8c|John Audia|Thu Jan 2 06:34:15 2025 -0500|kernel: bump 6.6 to 6.6.69
+389dd8dcf6|Tony Ambardar|Thu Jan 2 00:47:14 2025 -0800|strace: Update to version 6.12
+f0df6e3a4a|Felix Fietkau|Thu Jan 2 14:08:36 2025 +0100|ubus: update to Git HEAD (2025-01-02)
+a3391d871d|Sander Vanheule|Thu Jan 2 09:31:44 2025 +0100|realtek: drop extraneous ')' in 02_network
+2456a2fd7f|Linus Walleij|Sat Dec 28 00:13:37 2024 +0100|ixp4xx: Break out mv88e6060 DSA switch to package
+804bc79ed0|Linus Walleij|Wed Dec 25 01:11:00 2024 +0100|ixp4xx: Add LEDs to supported devices
+d15da125eb|Linus Walleij|Sat Dec 21 00:59:27 2024 +0100|ixp4xx: Support single zcom_npe_esa hw address
+6e2a842d62|Linus Walleij|Fri Dec 20 19:50:26 2024 +0100|ixp4xx: Support sysupgrade on WG302 v1
+0fda3b14c7|Linus Walleij|Fri Dec 20 00:59:50 2024 +0100|ixp4xx: Add back support for Netgear WG302 v1
+b948c1e39b|James Sweeney|Wed Jan 1 08:47:28 2025 -0500|realtek: add support for HPE 1920-24G PoE-180W (JG925A)
+f8a8a2c5c7|Jonathan Sturges|Thu Dec 26 21:47:40 2024 -0500|ramips: mt7621: enable lzma-loader for Amped Wireless ALLY
+777c6106ed|Sander Vanheule|Wed Jan 1 20:05:20 2025 +0100|realtek: move debounce-interval to correct node
+ae0fd92699|John Audia|Sat Dec 28 11:59:51 2024 -0500|bcm27xx/bcm2712: add RP1 camera front-end
+616621120b|Roland Reinl|Mon Dec 30 08:54:56 2024 +0100|mediatek: Fix primary MAC of D-Link M60
+6881b48dc6|Tianling Shen|Mon Dec 23 21:13:24 2024 +0800|rockchip: enable USB3 port on NanoPC T6
+8ad02ca2f8|Tianling Shen|Mon Dec 23 19:07:13 2024 +0800|rockchip: backport recent rk3588 clk updates
+72b5935956|Robert Marko|Wed Jan 1 11:22:40 2025 +0100|Revert "mac80211: remove ath9k_platform_data"
+be3bc3df90|Robert Marko|Wed Jan 1 11:22:39 2025 +0100|Revert "kernel: remove custom ath9k_platform.h"
+caee153f8d|Robert Marko|Wed Jan 1 11:22:37 2025 +0100|Revert "mac80211: ath9k: remove platform leds"
+04601004be|Robert Marko|Wed Jan 1 11:22:30 2025 +0100|Revert "mac80211: ath9k: clean up gpiochip"
+4357f32d41|Sander Vanheule|Wed Jan 1 11:01:48 2025 +0100|realtek: debounce reset key for Zyxel GS1900
 </details>

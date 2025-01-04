@@ -1,7 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-f001a35ad1|Paul Donald|Thu Jan 2 16:41:22 2025 +0000|github: change bug reports to search closed issues too
-41f1c3c439|Paul Donald|Thu Jan 2 16:38:28 2025 +0000|github: change bug reports to recommend `ubus call system board`
-</details>

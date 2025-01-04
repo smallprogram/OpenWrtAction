@@ -2,9 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fe32dc0|xiaorouji|Thu Jan 2 22:50:14 2025 +0800|luci: adjust
-250ef34|xiaorouji|Thu Jan 2 21:56:09 2025 +0800|luci: optimize code
-17c63b4|xiaorouji|Thu Jan 2 21:42:33 2025 +0800|luci: adjust socks config page button
-a37063f|xiaorouji|Thu Jan 2 21:38:59 2025 +0800|luci: optimize code and adjust
-efa2a58|xiaorouji|Thu Jan 2 21:18:08 2025 +0800|luci: update copyright date
+2e9ff90|xiaorouji|Fri Jan 3 17:09:47 2025 +0800|luci: fix https://github.com/xiaorouji/openwrt-passwall2/issues/754
+1cdf6f4|xiaorouji|Fri Jan 3 16:52:27 2025 +0800|luci: optimize and fix
 </details>

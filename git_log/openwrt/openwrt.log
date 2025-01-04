@@ -2,8 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-89b2356b8c|John Audia|Thu Jan 2 06:34:15 2025 -0500|kernel: bump 6.6 to 6.6.69
-389dd8dcf6|Tony Ambardar|Thu Jan 2 00:47:14 2025 -0800|strace: Update to version 6.12
-f0df6e3a4a|Felix Fietkau|Thu Jan 2 14:08:36 2025 +0100|ubus: update to Git HEAD (2025-01-02)
-a3391d871d|Sander Vanheule|Thu Jan 2 09:31:44 2025 +0100|realtek: drop extraneous ')' in 02_network
+484f670ed3|Álvaro Fernández Rojas|Sat Jan 4 00:46:00 2025 +0100|rockchip: refresh patch
+0eeba04a16|Álvaro Fernández Rojas|Mon Dec 30 01:01:33 2024 +0100|generic: 6.6: backport upstream r8169 patches
+fedb1f86b5|Álvaro Fernández Rojas|Mon Dec 30 01:01:33 2024 +0100|generic: 6.6: backport upstream Realtek PHY patches
+2b70b32aef|Felix Fietkau|Fri Jan 3 20:22:13 2025 +0100|kernel: add workaround for page_pool_release warnings
+8a477bafb4|Tianling Shen|Fri Jan 3 20:37:41 2025 +0800|rockchip: fix phy reset on rk356x
+b2b6955f80|Florian Maurer|Fri Jan 3 13:28:42 2025 +0100|ipq40xx: fix label MAC address for FritzBox 7520/7530
+65aff89f64|Felix Fietkau|Fri Jan 3 11:06:08 2025 +0100|mt76: update to Git HEAD (2025-01-03)
+0b54029a6e|James Sweeney|Thu Jan 2 08:06:09 2025 -0500|realtek: add 1920-24g-poe-180w to mac address
 </details>
