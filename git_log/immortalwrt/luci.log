@@ -1,0 +1,14 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+8b5a7c18a9|Tianling Shen|Sat Jan 4 16:43:34 2025 +0800|Merge Official Source
+7f3d7edc5b|Tianling Shen|Sat Jan 4 16:41:30 2025 +0800|luci-app-homeproxy: sync mainline
+f001a35ad1|Paul Donald|Thu Jan 2 16:41:22 2025 +0000|github: change bug reports to search closed issues too
+41f1c3c439|Paul Donald|Thu Jan 2 16:38:28 2025 +0000|github: change bug reports to recommend `ubus call system board`
+f5c18061ed|Daniel Nilsson|Wed Jan 1 10:40:19 2025 +0100|luci-base: allow sort value to be reassigned
+891635090c|Georgios Kontaxis|Mon Dec 30 20:32:30 2024 -0500|luci-app-ddns: Update global cacert path doc to reflect it is a file not a dir
+37db0aab91|Stan Grishin|Mon Dec 30 20:24:23 2024 -0800|Merge pull request #7516 from stangri/master-luci-app-https-dns-proxy
+d9ce4fb46a|Hosted Weblate|Mon Dec 30 16:20:23 2024 +0100|Translated using Weblate (Persian)
+e1887f25fe|Stan Grishin|Mon Dec 30 03:29:04 2024 +0000|luci-app-https-dns-proxy: bugfixes and resolvers update
+</details>

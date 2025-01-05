@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-2e9ff90|xiaorouji|Fri Jan 3 17:09:47 2025 +0800|luci: fix https://github.com/xiaorouji/openwrt-passwall2/issues/754
-1cdf6f4|xiaorouji|Fri Jan 3 16:52:27 2025 +0800|luci: optimize and fix
-</details>

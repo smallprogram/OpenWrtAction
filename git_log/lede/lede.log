@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ccb92beed|coolsnowwolf|Mon Sep 16 23:02:40 2024 +0800|ramips: adapted cevt-r4k irq patches
+bac0af3de|coolsnowwolf|Fri Sep 29 23:16:01 2023 +0800|uboot-rockchip: fix rk3399 boot issue
 </details>
