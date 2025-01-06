@@ -1,0 +1,9 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+65c86ed324|Paul Donald|Sun Jan 5 20:49:41 2025 +0000|luci-app-radicale: add radicale dependency
+15a8136ace|Weikai Kong|Fri Jan 3 00:31:35 2025 -0500|luci-app-dawn: Fix getChannelFromFrequency for 6GHz
+36c01dab8c|Daniel Nilsson|Sat Jan 4 23:11:08 2025 +0100|treewide: make rpcd scripts executable
+9f74f0069a|Dmitry R|Wed Jan 1 04:46:12 2025 -0500|luci-app-filemanager: Editing hex files improvements  - Now it uses fs.read_direct() to retrieve the file content  - Now it opens non-text files in hex Editor by default  - Now the 'Toggle to ASCII mode' button is disabled in hex Editor if the file is non-text.
+</details>

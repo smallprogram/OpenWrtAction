@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1ebad0430|Stan Grishin|Wed Jan 1 05:25:33 2025 +0000|pbr: Makefile bugfixes
-92a37ebdf|Stan Grishin|Wed Jan 1 05:31:14 2025 +0000|adblock-fast: Makefile bugfixes and hijack rework
-1166a2531|Tianling Shen|Sat Jan 4 16:48:23 2025 +0800|xray-core: Update to 24.12.31
+a09a838f8|Wesley Gimenes|Fri Jan 3 04:05:37 2025 -0300|netbird: update to 0.35.2
+152d5a3e4|Vladimir Ermakov|Sat Jan 4 16:28:55 2025 +0000|go2rtc: update to 1.9.8
 </details>

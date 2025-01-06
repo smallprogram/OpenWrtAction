@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9d47b79|lwb1978|Sun Jan 5 10:32:59 2025 +0800|luci: optimize code
-24f3b56|lwb1978|Sat Jan 4 16:41:30 2025 +0800|luci: optimize chinadns-ng log view code
-82e2a03|lwb1978|Sat Jan 4 15:01:02 2025 +0800|luci: adjust geoview package name
+5338989|lwb1978|Sun Jan 5 12:44:17 2025 +0800|luci: optimize the backup and restore page
+f1c4ce3|lwb1978|Sun Jan 5 12:20:18 2025 +0800|luci: fix url test code
 </details>
