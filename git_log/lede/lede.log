@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+e1204bd00|coolsnowwolf|Thu Jan 2 23:28:10 2025 +0800|Version update to 24.10.0-rc5
+330cb1ea5|aiamadeus|Sat Dec 28 23:29:26 2024 +0800|rockchip: sync upstream fixes
 f40467906|aiamadeus|Fri Dec 27 23:29:26 2024 +0800|rockchip: sync upstream fixes
-be3442766|coolsnowwolf|Sun Jan 5 20:39:19 2025 +0800|kernel: bump 6.6 to 6.6.69
-cbd8e2124|coolsnowwolf|Sun Jan 5 20:37:59 2025 +0800|kernel: bump 6.12 to 6.12.8
 </details>

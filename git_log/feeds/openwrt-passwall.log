@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5338989|lwb1978|Sun Jan 5 12:44:17 2025 +0800|luci: optimize the backup and restore page
-f1c4ce3|lwb1978|Sun Jan 5 12:20:18 2025 +0800|luci: fix url test code
+7453b9f|lwb1978|Tue Jan 7 12:00:27 2025 +0800|luci: prohibit `del_firewall_rule` from running repeatedly within 10 seconds
 </details>

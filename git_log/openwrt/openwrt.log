@@ -2,9 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-381f6624cf|Shiji Yang|Sat Jan 4 15:59:57 2025 +0800|ppp: update to 2.5.2
-916af73fc3|David Bauer|Fri Jan 3 21:46:13 2025 +0100|ath79: reset ETH switch for AR9344
-39b61ee36f|Robert Marko|Sun Jan 5 12:32:32 2025 +0100|Revert "qualcommax: ipq807x: mx4200v2:  fix LED controller"
-7ce4ed4829|Manuel Fombuena|Thu Jan 2 18:28:16 2025 +0000|qualcommax: ipq807x: mx4200v2:  fix LED controller
-8925c469f4|Manuel Fombuena|Wed Jan 1 20:42:37 2025 +0000|generic: add STMicroelectronics LED1202 driver
+285bdd29cb|Robert Marko|Mon Jan 6 19:12:18 2025 +0100|uboot-envtools: ipq60xx: remove number of blocks
+d09dd75fbd|Matthias Schiffer|Tue Dec 31 12:23:53 2024 +0100|ipq40xx: dts: add ethernet0 alias for all devices
+3ec7f3a512|David Bauer|Sun Dec 22 02:56:12 2024 +0100|mac80211: set basic-rate for mesh interfaces
 </details>
