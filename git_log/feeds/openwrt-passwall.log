@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7453b9f|lwb1978|Tue Jan 7 12:00:27 2025 +0800|luci: prohibit `del_firewall_rule` from running repeatedly within 10 seconds
+03c7910|lwb1978|Wed Jan 8 09:32:40 2025 +0800|ac: golang update to 1.23.x
+4625c67|xiaorouji|Wed Jan 8 01:05:56 2025 +0800|luci: bump to 25.1.8
+69fb2d4|xiaorouji|Tue Jan 7 22:52:55 2025 +0800|luci: optimize code
 </details>
