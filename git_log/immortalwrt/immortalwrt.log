@@ -2,6 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+8607c28361|Tianling Shen|Wed Jan 8 15:17:32 2025 +0800|Merge Official Source
+3deeb7805f|David Bauer|Tue Jan 7 11:43:36 2025 +0100|wifi-scripts: allow per-IF mesh basic rate selection
+5141e2d861|Sander Vanheule|Thu Dec 26 22:26:33 2024 +0100|realtek: rtl838x: Switch GS1900 rtl8231 driver
+6ef6014887|Sander Vanheule|Thu Dec 26 20:55:16 2024 +0100|realtek: Add pinctrl support for RTL8231
+92ae8cb16c|Sander Vanheule|Fri Dec 27 15:56:44 2024 +0100|realtek: rtl838x: Instantiate auxiliary MDIO bus
+ae833c01b3|Sander Vanheule|Fri Dec 27 15:53:23 2024 +0100|realtek: Add driver for auxiliary MDIO busses
+c2240a75d5|Sander Vanheule|Sun Dec 29 14:37:50 2024 +0100|realtek: rtl931x: Refresh kernel config
+e1777c95d3|Sander Vanheule|Sun Dec 29 14:33:12 2024 +0100|realtek: rtl930x: Refresh kernel config
+d3b62ba3ed|Sander Vanheule|Sun Dec 29 14:29:10 2024 +0100|realtek: rtl839x: Refresh kernel config
+a6edcb4cb0|Sander Vanheule|Fri Dec 27 17:53:57 2024 +0100|realtek: rtl838x: Refresh kernel config
 482b69f47e|Tianling Shen|Tue Jan 7 21:27:09 2025 +0800|Merge Official Source
 285bdd29cb|Robert Marko|Mon Jan 6 19:12:18 2025 +0100|uboot-envtools: ipq60xx: remove number of blocks
 d09dd75fbd|Matthias Schiffer|Tue Dec 31 12:23:53 2024 +0100|ipq40xx: dts: add ethernet0 alias for all devices
