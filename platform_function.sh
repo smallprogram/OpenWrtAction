@@ -111,7 +111,7 @@ function Func_Compile_Firmware() {
     folder_name=log_Compile_${config_name}_$(date "+%Y-%m-%d-%H-%M-%S")
     Func_LogMessage "是否启用Clean编译，如果不输入任何值默认否，输入任意值启用Clean编译，Clean操作适用于大版本更新" "Whether to enable Clean compilation, if you do not enter any value, the default is No, enter any value to enable Clean compilation, Clean operation is suitable for major version updates"
     Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
-    read -t $timer is_single_compile
+    read -t $timer is_clean_compile
     if [ ! -n "$is_clean_compile" ]; then
         Func_LogMessage "不执行make clean && make dirclean " "OK, do not execute make clean && make dirclean "
     else
