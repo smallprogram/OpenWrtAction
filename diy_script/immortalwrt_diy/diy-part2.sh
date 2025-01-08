@@ -80,7 +80,7 @@ git clone https://github.com/sbwml/luci-app-mosdns -b v5 ./package/custom_packag
 
 
 # Open App Filter
-git clone https://github.com/destan19/OpenAppFilter.git ./package/custom_packages/luci-app-openappfilter
+# git clone https://github.com/destan19/OpenAppFilter.git ./package/custom_packages/luci-app-openappfilter
 
 # Speedtest
 git clone https://github.com/sirpdboy/netspeedtest.git ./package/custom_packages/netspeedtest

@@ -1,7 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-4ea36db8c9|Tianling Shen|Mon Jan 6 14:52:51 2025 +0800|luci-app-homeproxy: sync mainline
-e0bfed8ce7|Tianling Shen|Mon Jan 6 13:04:01 2025 +0800|luci-app-homeproxy: fix permission for cache.db
-</details>

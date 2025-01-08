@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c9cc773449|Daniel Nilsson|Mon Jan 6 17:37:45 2025 +0100|luci-mod-network: handle missing dnsrr hexdata as empty string
-7c582f150e|Paul Donald|Mon Jan 6 17:01:34 2025 +0000|luci-app-vnstat: drop lua app (prefer luci-app-vnstat2)
+ab1bf13c6e|Sergey Ponomarev|Sun Dec 29 12:58:23 2024 +0200|luci-app-acme: fix _handleCheckService() signature
+baff3053bb|Sergey Ponomarev|Sun Dec 29 12:49:43 2024 +0200|luci-app-acme: Migrate to ES6 syntax.
 </details>

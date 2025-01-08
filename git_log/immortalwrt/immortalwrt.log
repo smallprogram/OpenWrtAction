@@ -1,0 +1,59 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+8607c28361|Tianling Shen|Wed Jan 8 15:17:32 2025 +0800|Merge Official Source
+3deeb7805f|David Bauer|Tue Jan 7 11:43:36 2025 +0100|wifi-scripts: allow per-IF mesh basic rate selection
+5141e2d861|Sander Vanheule|Thu Dec 26 22:26:33 2024 +0100|realtek: rtl838x: Switch GS1900 rtl8231 driver
+6ef6014887|Sander Vanheule|Thu Dec 26 20:55:16 2024 +0100|realtek: Add pinctrl support for RTL8231
+92ae8cb16c|Sander Vanheule|Fri Dec 27 15:56:44 2024 +0100|realtek: rtl838x: Instantiate auxiliary MDIO bus
+ae833c01b3|Sander Vanheule|Fri Dec 27 15:53:23 2024 +0100|realtek: Add driver for auxiliary MDIO busses
+c2240a75d5|Sander Vanheule|Sun Dec 29 14:37:50 2024 +0100|realtek: rtl931x: Refresh kernel config
+e1777c95d3|Sander Vanheule|Sun Dec 29 14:33:12 2024 +0100|realtek: rtl930x: Refresh kernel config
+d3b62ba3ed|Sander Vanheule|Sun Dec 29 14:29:10 2024 +0100|realtek: rtl839x: Refresh kernel config
+a6edcb4cb0|Sander Vanheule|Fri Dec 27 17:53:57 2024 +0100|realtek: rtl838x: Refresh kernel config
+482b69f47e|Tianling Shen|Tue Jan 7 21:27:09 2025 +0800|Merge Official Source
+285bdd29cb|Robert Marko|Mon Jan 6 19:12:18 2025 +0100|uboot-envtools: ipq60xx: remove number of blocks
+d09dd75fbd|Matthias Schiffer|Tue Dec 31 12:23:53 2024 +0100|ipq40xx: dts: add ethernet0 alias for all devices
+3ec7f3a512|David Bauer|Sun Dec 22 02:56:12 2024 +0100|mac80211: set basic-rate for mesh interfaces
+381f6624cf|Shiji Yang|Sat Jan 4 15:59:57 2025 +0800|ppp: update to 2.5.2
+916af73fc3|David Bauer|Fri Jan 3 21:46:13 2025 +0100|ath79: reset ETH switch for AR9344
+39b61ee36f|Robert Marko|Sun Jan 5 12:32:32 2025 +0100|Revert "qualcommax: ipq807x: mx4200v2:  fix LED controller"
+7ce4ed4829|Manuel Fombuena|Thu Jan 2 18:28:16 2025 +0000|qualcommax: ipq807x: mx4200v2:  fix LED controller
+8925c469f4|Manuel Fombuena|Wed Jan 1 20:42:37 2025 +0000|generic: add STMicroelectronics LED1202 driver
+70610a5240|Roland Reinl|Wed Dec 18 15:45:37 2024 +0100|mediatek: Fix U-Boot variables handling for D-Link M30 A1
+59557ca19a|Shiji Yang|Wed Dec 25 19:39:29 2024 +0800|mac80211: rt2x00: some improvements for rt5592
+5d58390165|Shiji Yang|Wed Dec 25 19:39:29 2024 +0800|mac80211: rt2x00: some improvements for mt7620
+70733c6093|Shiji Yang|Wed Dec 25 19:39:29 2024 +0800|mac80211: rt2x00: some improvements for rt2800 generic
+c9ae39b2d1|Sander Vanheule|Wed Jan 1 22:18:05 2025 +0100|realtek: trim default package selection
+e7419381fd|Linus Walleij|Thu Jan 2 15:44:45 2025 +0100|ath79: Push MV88E6060 DSA switch into package
+d5669c040b|John Audia|Sat Jan 4 16:36:20 2025 +0100|bcm27xx: remove duplicated kmod-rp1-pio package
+a06a2ef89d|INAGAKI Hiroshi|Sat Dec 28 19:07:09 2024 +0900|mediatek: append metadata to factory-uboot.bin for WSR devices
+376d8f96b1|INAGAKI Hiroshi|Sat Dec 28 17:48:02 2024 +0900|mediatek: mt7622: sync buffalo.sh with ramips/mt7621
+5d0f61e957|INAGAKI Hiroshi|Sat Dec 28 17:38:11 2024 +0900|mediatek: mt7622: improve fixup of trx for Buffalo devices
+d5545a9595|Anton Yu. Ivanusev|Thu Dec 26 09:42:53 2024 +0500|ramips: mt76x8: add support for Keenetic Extra (KN-1713)
+4baa20ec66|Thomas Richard|Fri Jan 3 10:19:05 2025 +0100|include/trusted-firmware-a.mk: unset CC before compiling
+551e04f3c9|Shiji Yang|Mon Dec 16 15:09:50 2024 +0800|base-files: strip space and tab characters from ASCII mac address
+3410ad2f40|Shiji Yang|Fri Dec 13 13:30:38 2024 +0800|base-files: enable get_mac_ascii() to handle redundant strings
+58056df84f|Rosen Penev|Sun Nov 24 12:43:07 2024 -0800|bcm53xx: backport nvmem mac for meraki mr26
+14be320291|Aleksander Jan Bajkowski|Fri Jan 3 19:59:22 2025 +0100|lantiq: xrx200: add support for lan3 and lan4 on AVM 5490/5491
+b4a9f85c13|Shiji Yang|Wed Jan 1 16:17:53 2025 +0800|ramips: mtk-mmc: remove nt76x8 pinctrl hack
+0764e30082|Shiji Yang|Wed Jan 1 16:17:08 2025 +0800|ramips: make package kmod-sdhci-mt7620 conflict with kmod-mmc-mtk
+f5996ae947|Shiji Yang|Wed Jan 1 16:16:29 2025 +0800|ramips: fix SDXC function for mt76x8 one eth port devices
+cea4aae0a9|Shiji Yang|Wed Jan 1 16:06:38 2025 +0800|ramips: add back SDXC card reader support for HiWiFi HC5x61A
+05ec3b50a8|Shiji Yang|Wed Jan 1 16:06:10 2025 +0800|ramips: pinctrl: allow mux SDXC pins for mt76x8
+f70cdfd682|Shiji Yang|Sat Jul 13 11:32:45 2024 +0800|ramips: mmc-mtk: add more vendor driver register init values
+5ef71eaafd|Shiji Yang|Sun Dec 22 00:31:06 2024 +0800|uboot-mediatek: add missing LED command for OpenWrt One
+9f97e39a93|Shiji Yang|Sun Dec 22 00:30:43 2024 +0800|uboot-mediatek: fix Routerich AX3000 support patch
+f105d1a9a9|John Audia|Thu Jan 2 07:50:26 2025 -0500|bcm27xx/bcm2712: Fix-up RP1 modules
+b795e5cbcf|Felix Fietkau|Sat Jan 4 11:52:50 2025 +0100|wifi-scripts: fix setting tx power on some drivers
+f11bc4f201|Felix Fietkau|Sat Jan 4 11:54:22 2025 +0100|mt76: update to Git HEAD (2025-01-04)
+484f670ed3|Álvaro Fernández Rojas|Sat Jan 4 00:46:00 2025 +0100|rockchip: refresh patch
+0eeba04a16|Álvaro Fernández Rojas|Mon Dec 30 01:01:33 2024 +0100|generic: 6.6: backport upstream r8169 patches
+fedb1f86b5|Álvaro Fernández Rojas|Mon Dec 30 01:01:33 2024 +0100|generic: 6.6: backport upstream Realtek PHY patches
+2b70b32aef|Felix Fietkau|Fri Jan 3 20:22:13 2025 +0100|kernel: add workaround for page_pool_release warnings
+8a477bafb4|Tianling Shen|Fri Jan 3 20:37:41 2025 +0800|rockchip: fix phy reset on rk356x
+b2b6955f80|Florian Maurer|Fri Jan 3 13:28:42 2025 +0100|ipq40xx: fix label MAC address for FritzBox 7520/7530
+65aff89f64|Felix Fietkau|Fri Jan 3 11:06:08 2025 +0100|mt76: update to Git HEAD (2025-01-03)
+0b54029a6e|James Sweeney|Thu Jan 2 08:06:09 2025 -0500|realtek: add 1920-24g-poe-180w to mac address
+</details>
