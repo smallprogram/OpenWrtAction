@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ee0a3d1|lwb1978|Wed Jan 8 11:28:21 2025 +0800|Revert "xray-core: update to 25.1.1 (#343)"
+343206d|github-actions[bot]|Thu Jan 9 10:17:05 2025 +0800|v2ray-core: update to 5.24.0 (#350)
+a12c79e|github-actions[bot]|Wed Jan 8 21:53:27 2025 +0800|xray-core: update to 25.1.1 (#349)
+a1919dd|github-actions[bot]|Wed Jan 8 21:53:14 2025 +0800|v2ray-geoip: update to 202501020052 (#348)
 </details>

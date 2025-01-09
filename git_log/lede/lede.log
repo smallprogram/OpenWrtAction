@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e59a6368c|Robert Marko|Sun Oct 6 22:02:37 2024 +0200|ath10k-ct: select mac80211 debugfs support
+d3002da4e|Daniel Golle|Tue Oct 8 19:33:49 2024 +0100|mediatek: update MediaTek PHY patchset
+77c3d7408|Daniel Golle|Thu Sep 12 15:43:05 2024 +0200|mediatek: apply pending PHY driver fixes
 </details>

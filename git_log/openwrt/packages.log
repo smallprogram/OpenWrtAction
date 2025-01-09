@@ -1,0 +1,10 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+2b48c6d34|Noah Meyerhans|Wed Jan 8 11:29:52 2025 -0500|bind: bump to 9.20.4
+4b29db3ca|Mohd Husaam Mehdi|Fri Mar 29 23:10:07 2024 +0530|vsftpd: update init script to process UCI
+1f884c960|Mohd Husaam Mehdi|Wed Mar 27 21:35:14 2024 +0530|vsftpd: update init script to use procd
+ce4b32ede|Benjamin Frank|Wed Dec 18 18:02:42 2024 +0100|ddns-scripts: support IPv6 for joker.com
+d750bb318|Tianling Shen|Wed Jan 8 16:59:42 2025 +0800|v2ray-geodata: Update to latest version
+</details>

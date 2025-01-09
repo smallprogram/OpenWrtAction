@@ -1,7 +1,0 @@
-<details> <summary> <b>telephony new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-c8a8d62|Jiri Slachta|Tue Jan 7 09:56:21 2025 +0100|Merge pull request #889 from dddaniel/master
-2676410|Daniel Danzberger|Mon Nov 18 12:50:00 2024 +0100|baresip: Use UCI for basic service configuration
-</details>
