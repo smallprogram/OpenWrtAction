@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d34697c7e5|Tianling Shen|Wed Jan 8 16:55:33 2025 +0800|uboot-rockchip: bump to 2025.01
+d3f097a70e|Tianling Shen|Thu Jan 9 17:33:27 2025 +0800|uboot-rockchip: refresh u-boot dtsi
+1b1527dc11|Tianling Shen|Thu Jan 9 14:35:46 2025 +0800|uboot-rockchip: disable video output to reduce size
 </details>

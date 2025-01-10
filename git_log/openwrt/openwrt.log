@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f5b1d340be|Álvaro Fernández Rojas|Wed Jan 8 17:56:16 2025 +0100|generic: move gpio-regmap request/free ops patch from realtek
-4abd819683|Rosen Penev|Sat Jan 4 18:49:14 2025 -0800|ath79: remove dr_mode and vbus-supply
+c113982706|Florian Maurer|Thu Jan 9 00:46:18 2025 +0100|ipq40xx: fix label MAC address for Linksys WHW03 v2
 </details>

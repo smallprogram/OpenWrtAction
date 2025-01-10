@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d3002da4e|Daniel Golle|Tue Oct 8 19:33:49 2024 +0100|mediatek: update MediaTek PHY patchset
-77c3d7408|Daniel Golle|Thu Sep 12 15:43:05 2024 +0200|mediatek: apply pending PHY driver fixes
+343d81496|Daniel Golle|Sat Nov 16 15:29:24 2024 +0000|mtd-utils: add ubihealthd to nand-utils
 </details>

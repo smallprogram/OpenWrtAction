@@ -2,9 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2b48c6d34|Noah Meyerhans|Wed Jan 8 11:29:52 2025 -0500|bind: bump to 9.20.4
-4b29db3ca|Mohd Husaam Mehdi|Fri Mar 29 23:10:07 2024 +0530|vsftpd: update init script to process UCI
-1f884c960|Mohd Husaam Mehdi|Wed Mar 27 21:35:14 2024 +0530|vsftpd: update init script to use procd
-ce4b32ede|Benjamin Frank|Wed Dec 18 18:02:42 2024 +0100|ddns-scripts: support IPv6 for joker.com
-d750bb318|Tianling Shen|Wed Jan 8 16:59:42 2025 +0800|v2ray-geodata: Update to latest version
+7d752193e|Rany Hany|Thu Jan 2 13:38:48 2025 +0000|muninlite: add some patches to address old issues
+4f0758ba3|Rany Hany|Wed Jan 1 17:21:37 2025 +0000|muninlite: add /etc/munin to conffiles and install muninlite.conf
+b7974fb6d|Javier Marcet|Wed Jan 8 18:22:03 2025 +0100|docker-compose: Update to version 2.32.2
 </details>

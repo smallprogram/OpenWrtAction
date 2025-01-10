@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-343206d|github-actions[bot]|Thu Jan 9 10:17:05 2025 +0800|v2ray-core: update to 5.24.0 (#350)
-a12c79e|github-actions[bot]|Wed Jan 8 21:53:27 2025 +0800|xray-core: update to 25.1.1 (#349)
-a1919dd|github-actions[bot]|Wed Jan 8 21:53:14 2025 +0800|v2ray-geoip: update to 202501020052 (#348)
+870ee4c|lwb1978|Thu Jan 9 16:24:43 2025 +0800|action: golang update to 1.23.x
 </details>

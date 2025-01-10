@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-761cc35|A-BO|Wed Jan 8 20:49:08 2025 +0800|luci: optimize url test code
-055691a|A-BO|Wed Jan 8 19:01:10 2025 +0800|luci: adjust the smartdns config file path
-</details>

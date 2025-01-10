@@ -1,0 +1,12 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a88d4af4e9|Erik Karlsson|Thu Jan 9 16:57:57 2025 +0100|luci-proto-3g/ppp/pppossh: fix setting of keepalive
+7f6c7271b2|Paul Donald|Thu Jan 9 19:11:07 2025 +0100|luci-app-nut: fix wrong nut_server option
+20bf9a4b17|Jonas Jelonek|Thu Jan 9 12:52:27 2025 +0100|luci-mod-status: 29_ports.js: improve speed formatting
+b0f8155296|Ramon Van Gorkom|Mon Jan 6 21:20:10 2025 +0100|luci-base: Generate cbi-dynlist-change event after drag/touch end
+53c2e06b40|Hosted Weblate|Thu Jan 9 09:44:34 2025 +0100|Added translation using Weblate (German)
+a75c904500|Florian Eckert|Thu Jan 9 08:06:09 2025 +0100|Merge pull request #7540 from dannil/keepalived-declare-var
+d7a4b1cea6|Daniel Nilsson|Wed Jan 8 20:11:28 2025 +0100|luci-app-keepalived: add missing variable declarations
+</details>
