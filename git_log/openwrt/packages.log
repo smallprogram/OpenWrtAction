@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7d752193e|Rany Hany|Thu Jan 2 13:38:48 2025 +0000|muninlite: add some patches to address old issues
-4f0758ba3|Rany Hany|Wed Jan 1 17:21:37 2025 +0000|muninlite: add /etc/munin to conffiles and install muninlite.conf
-b7974fb6d|Javier Marcet|Wed Jan 8 18:22:03 2025 +0100|docker-compose: Update to version 2.32.2
+e5ceb5955|Mohd Husaam Mehdi|Fri Jan 10 15:42:46 2025 +0530|vsftpd: handle migration and fix secure_chroot_dir error
+c1f247d5c|FriesI23 Qin|Thu Dec 26 16:13:51 2024 +0800|ddns-scripts: Add dnspod.cn-v3
+da4e27063|Hui Zhui|Fri Jan 10 05:12:51 2025 +0300|ddns-scripts: add support for ipv64.net
 </details>

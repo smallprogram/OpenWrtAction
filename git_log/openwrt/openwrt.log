@@ -2,5 +2,21 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c113982706|Florian Maurer|Thu Jan 9 00:46:18 2025 +0100|ipq40xx: fix label MAC address for Linksys WHW03 v2
+17b0d1379a|Christian Marangi|Fri Jan 10 14:53:49 2025 +0100|airoha: an7581: refresh DTS with changes for cpufreq, MTD and MMC
+5069557350|Christian Marangi|Fri Jan 10 14:53:04 2025 +0100|airoha: an7581: replace cpufreq patch with new version
+53bc763331|Christian Marangi|Fri Jan 10 14:29:02 2025 +0100|airoha: an7581: add pending patch for ETS qdisc on ethernet driver
+77329b7d8d|Christian Marangi|Fri Jan 10 14:28:20 2025 +0100|airoha: an7581: add pending patch to fix PCI
+be5a9ff24b|Christian Marangi|Fri Jan 10 14:27:07 2025 +0100|airoha: an7581: add patch fixing support for MMC
+7e237f1902|Lorenzo Bianconi|Sat Jan 4 15:46:57 2025 +0100|kernel: modules: Add ETS Qdisc scheduler to sched KernelPackage
+3ec3ea5316|Christian Marangi|Fri Jan 10 14:22:31 2025 +0100|airoha: an7581: backport patch to support ETS and HTB sched
+b4ae5378d4|Christian Marangi|Fri Jan 10 14:16:46 2025 +0100|airoha: an7581: backport 2 fix for airoha ethernet driver
+07b49ce876|Christian Marangi|Fri Jan 10 14:15:31 2025 +0100|airoha: an7581: replace BUS clock patch with upstream version
+73d368868c|Christian Marangi|Fri Jan 10 14:14:45 2025 +0100|airoha: an7581: enable MMC and PCI and refresh config
+ead1b45c76|Shiji Yang|Mon Jan 6 08:53:28 2025 +0800|Revert "kernel: Fix alloc_node_mem_map with ARCH_PFN_OFFSET"
+c23e177080|FUKAUMI Naoki|Wed Jan 8 21:59:23 2025 +0000|uboot-rockchip: Fix product name for Radxa ROCK Pi 4
+efafd7d47f|John Audia|Thu Jan 9 08:54:54 2025 -0500|kernel: bump 6.6 to 6.6.70
+219ee4d4d7|Brian Norris|Fri Aug 18 18:58:48 2023 -0700|ipq806x: chromium: Support Chromium "crossystem" GPIO tooling
+992afd2cab|Brian Norris|Fri Aug 18 18:53:58 2023 -0700|ipq40xx: chromium: Support Chromium "crossystem" GPIO tooling
+16373d80df|Brian Norris|Thu Dec 15 01:49:20 2022 -0800|ipq806x: mtd: spi-nor: micron-st: Add n25q064a WP support
+b52e897296|Eric Fahlgren|Mon Dec 30 15:54:55 2024 -0800|include/package-pack: remove leading whitespace from install scripts
 </details>

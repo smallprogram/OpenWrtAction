@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-343d81496|Daniel Golle|Sat Nov 16 15:29:24 2024 +0000|mtd-utils: add ubihealthd to nand-utils
+eda8bc839|Christian Marangi|Fri Oct 11 14:05:40 2024 +0200|generic: backport BLOCK OF support patch
 </details>
