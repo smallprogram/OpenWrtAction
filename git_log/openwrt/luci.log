@@ -1,9 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-2520588d00|Paul Donald|Sat Jan 11 02:47:30 2025 +0100|luci-base: fix createChoiceElement regex to catch closing tags with !
-abaa26aa57|Jan Pazdziora|Fri Jan 10 23:02:40 2025 +0100|luci-base: addressing this.vstack[0] is undefined.
-a67d68353b|Paul Donald|Fri Jan 10 18:32:00 2025 +0100|luci-base: Enforce maximal firewall zone name length with fw3 only
-a075566dbb|Jan Pazdziora|Thu Jan 9 21:00:55 2025 +0100|luci-base: Enforce maximal firewall zone length in the Create / Assign scenario as well.
-</details>

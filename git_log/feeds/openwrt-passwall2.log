@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-9f83400|xiaorouji|Fri Jan 10 17:27:46 2025 +0800|luci: optimize and fix subscribe
-e181422|xiaorouji|Fri Jan 10 14:21:28 2025 +0800|luci: subscribe save md5 hash
-</details>

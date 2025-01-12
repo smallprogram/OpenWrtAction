@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bc2cf33|xiaorouji|Fri Jan 10 17:27:46 2025 +0800|luci: optimize and fix subscribe
-1021c8b|xiaorouji|Fri Jan 10 14:21:28 2025 +0800|luci: subscribe save md5 hash
+6924065|lwb1978|Sat Jan 11 21:32:30 2025 +0800|luci: add haproxy console login auth
+04f1a33|lwb1978|Sat Jan 11 15:18:45 2025 +0800|luci: optimize and fix subscribe
+8873467|lwb1978|Sat Jan 11 12:41:21 2025 +0800|luci: optimize subscribe
 </details>
