@@ -1,0 +1,6 @@
+<details> <summary> <b>lede new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+80ccee5b7|Kien Truong|Sat Jan 11 12:20:12 2025 +0700|rockchip: disable all kernel preemption
+</details>

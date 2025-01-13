@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6924065|lwb1978|Sat Jan 11 21:32:30 2025 +0800|luci: add haproxy console login auth
-04f1a33|lwb1978|Sat Jan 11 15:18:45 2025 +0800|luci: optimize and fix subscribe
-8873467|lwb1978|Sat Jan 11 12:41:21 2025 +0800|luci: optimize subscribe
+a7173ee|lwb1978|Sun Jan 12 16:48:14 2025 +0800|luci: optimize the display of the xhttp_extra
+7866380|lwb1978|Sun Jan 12 14:30:03 2025 +0800|luci: optimize xhttp_extra remove code
 </details>

@@ -1,0 +1,11 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+dbd20310a8|Tianling Shen|Sun Jan 12 18:43:12 2025 +0800|Merge Official Source
+e9415be4ad|Christian Lamparter|Sat Jan 4 19:51:48 2025 +0100|apm821xx: fixes WNDAP620 + WNDAP660 sysupgrade failures
+277642c035|Linus Walleij|Fri Jan 10 09:29:31 2025 +0100|kernel: netdevices: fold mv88e6xxx into one package
+40e2710dfa|John Audia|Fri Jan 10 15:26:29 2025 -0500|tools/e2fsprogs: update to 1.47.2
+7a888afa40|John Audia|Mon Jan 6 05:40:38 2025 -0500|e2fsprogs: update to 1.47.2
+9c8ac97e70|Damien Zammit|Sun May 26 16:40:51 2024 +1000|ramips: Add support for TP-Link Archer MR200 v6
+</details>

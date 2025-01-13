@@ -2,8 +2,33 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-277642c035|Linus Walleij|Fri Jan 10 09:29:31 2025 +0100|kernel: netdevices: fold mv88e6xxx into one package
-40e2710dfa|John Audia|Fri Jan 10 15:26:29 2025 -0500|tools/e2fsprogs: update to 1.47.2
-7a888afa40|John Audia|Mon Jan 6 05:40:38 2025 -0500|e2fsprogs: update to 1.47.2
-9c8ac97e70|Damien Zammit|Sun May 26 16:40:51 2024 +1000|ramips: Add support for TP-Link Archer MR200 v6
+62af69f9e4|Lech Perczak|Sat Dec 7 04:36:52 2024 +0100|ath79: teltonika-rut230: add RUT240 model alias
+11ad73f97d|Lech Perczak|Sat Dec 7 04:39:13 2024 +0100|ath79: teltonika-rut230: include kmod-usb-serial-option in image
+f39115632c|Lech Perczak|Sun Dec 8 04:31:36 2024 +0100|ath79: teltonika-rut230: include kmod-usb2 in image
+852911a85d|Lech Perczak|Sat Dec 7 04:34:00 2024 +0100|ath79: teltonika-rut230: fully support digital output lines
+46a6f49685|Lech Perczak|Sat Jan 4 02:12:42 2025 +0100|ath79: teltonika-rut230: drop reg_usb_vbus
+f28010a79c|Lech Perczak|Sat Dec 7 04:27:18 2024 +0100|ath79: teltonika-rut230: add 4G LED
+7b9ca01109|Lech Perczak|Mon Jan 6 17:31:44 2025 +0100|ath79: teltonika-rut230: fix failsafe boot without SIM tray
+d04f41e092|Lech Perczak|Sun Dec 8 04:08:38 2024 +0100|ath79: teltonika-rut230: fix typo in "green:signal-strength4" LED
+0d1568246f|Roland Reinl|Mon Jan 6 08:33:36 2025 +0100|mediatek: D-Link AQUILA PRO AI M60 A1: Fixed phy6 DTS settings
+9a0f0611d2|Shiji Yang|Wed Jan 8 22:57:36 2025 +0800|mkimage: update to v2025.01
+433be50c94|Shiji Yang|Wed Jan 8 22:57:10 2025 +0800|uboot-envtools: update to v2025.01
+8973c48515|Anton Yu. Ivanusev|Tue Jan 7 20:38:09 2025 +0500|ramips: mt76x8: add support for Keenetic Extra (KN-1711)
+8fb805aa1f|Robert Senderek|Fri Nov 22 00:05:39 2024 +0100|mvebu: Add support for WD Cloud Mirror Gen2
+6c1ad2830e|Rosen Penev|Mon Dec 23 13:35:01 2024 -0800|ath79: phy: remove named gpio exports
+90e86a8713|Rosen Penev|Mon Dec 23 13:20:49 2024 -0800|ath79: gl-ar150: fix USB GPIO usage
+5aa996b06d|Rosen Penev|Mon Dec 23 13:28:25 2024 -0800|ath79: pineapple-nano: use regulator for USB GPIO
+517b9c1cdc|Aleksander Jan Bajkowski|Sat Jan 11 16:37:47 2025 +0100|lantiq: xrx200_legacy: disable unused phy drivers
+524e22b4c7|Aleksander Jan Bajkowski|Sat Jan 11 16:34:46 2025 +0100|lantiq: xway_legacy: refresh config
+1b045a7c13|Aleksander Jan Bajkowski|Sat Jan 11 17:10:42 2025 +0100|lantiq: xrx200: add alternative names for Plusnet Hub One and BT Business Hub 5A
+b2b4ce1532|Aleksander Jan Bajkowski|Sat Jan 11 17:04:33 2025 +0100|lantiq: xrx200_legacy: add alternative names for TP-Link TD-W9980(B)
+191ed4e803|Anton Yu. Ivanusev|Wed Jan 8 01:14:10 2025 +0500|ramips: mt76x8: fixs for Keenetic Air (KN-1613) and Extra (KN-1713)
+96850585e5|Sander Vanheule|Tue Jan 7 14:59:20 2025 +0100|realtek: switch RTL8231 driver for HPE 1920-16/24G
+e5d1a501cb|Sander Vanheule|Tue Jan 7 14:55:24 2025 +0100|realtek: switch RTL8231 driver for HPE 1920-8G
+9d66b8b312|Juan Pedro Paredes Caballero|Sat Dec 7 14:20:31 2024 +0100|mediatek: filogic: Add support for cudy wr3000h
+a00ff9f6d1|Alexandru Gagniuc|Sun Aug 7 10:15:35 2022 -0500|qualcommax: ipq60xx: add TP-Link EAP610-Outdoor support
+3f87c5ac42|John Audia|Fri Jan 10 16:01:56 2025 -0500|kernel: bump 6.6 to 6.6.71
+5f54e17bae|Jack Sun|Sun Jan 12 14:14:16 2025 +0800|tools/cmake: update to 3.31.4
+1c178f3644|Kien Truong|Sat Jan 11 12:20:12 2025 +0700|rockchip: disable kernel preemption
+e9415be4ad|Christian Lamparter|Sat Jan 4 19:51:48 2025 +0100|apm821xx: fixes WNDAP620 + WNDAP660 sysupgrade failures
 </details>
