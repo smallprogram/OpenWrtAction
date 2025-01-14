@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a7173ee|lwb1978|Sun Jan 12 16:48:14 2025 +0800|luci: optimize the display of the xhttp_extra
-7866380|lwb1978|Sun Jan 12 14:30:03 2025 +0800|luci: optimize xhttp_extra remove code
+b265ecb|lwb1978|Tue Jan 14 11:54:41 2025 +0800|luci: adjust backup time format
+2a398f5|lwb1978|Mon Jan 13 23:08:10 2025 +0800|luci: eliminate some page JS LuCI behavior
+c626d88|xiaorouji|Mon Jan 13 19:30:16 2025 +0800|luci: optimize and close https://github.com/xiaorouji/openwrt-passwall/issues/3666
 </details>

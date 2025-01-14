@@ -2,8 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f640d92aa|Rosen Penev|Wed Jan 1 13:02:51 2025 -0800|mariadb: update to 11.4.4
-cd4c0ac81|Glenn Strauss|Fri Jan 10 19:35:23 2025 -0500|lighttpd: update to lighttpd 1.4.77 release hash
-5564f0d60|Glenn Strauss|Fri Jan 10 23:04:13 2025 -0500|lighttpd: lighttpd.init add trigger on acme.renew
-e8f4f3773|Luca Barbato|Sun Jan 12 08:37:35 2025 +0000|cargo-c: Version bump
+3921a981d|Sander|Mon Jan 13 12:13:42 2025 +0000|iperf: package update to v3.18
+9b847a4e1|Jan Hák|Mon Jan 13 11:21:48 2025 +0100|libedit: update to version 20250104-3.1
+5445ad8c3|Jan Hák|Mon Jan 13 10:49:07 2025 +0100|liburcu: update to version 0.15.0
+c942cd087|Toke Høiland-Jørgensen|Mon Jan 13 11:58:00 2025 +0100|acme-acmesh: Bump to v3.1.0
 </details>
