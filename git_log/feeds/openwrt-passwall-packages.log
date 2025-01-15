@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b37bd17|zhusir|Wed Jan 15 11:11:18 2025 +0800|action: fixed install package error
+1a52276|lwb1978|Wed Jan 15 08:43:13 2025 +0800|naiveproxy: update to 132.0.6834.79-r1
+ed323de|zhusir|Tue Jan 14 14:26:51 2025 +0800|action: install packages update code
+2ba440c|github-actions[bot]|Tue Jan 14 14:13:32 2025 +0800|sing-box: update to 1.10.7 (#353)
+</details>

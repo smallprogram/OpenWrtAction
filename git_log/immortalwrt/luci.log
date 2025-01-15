@@ -1,0 +1,6 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+06e258eff6|Tianling Shen|Tue Jan 14 17:27:05 2025 +0800|luci-app-passwall: disable trojan-plus by default
+</details>

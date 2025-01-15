@@ -2,12 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-717f62d256|Hauke Mehrtens|Mon Jan 13 23:56:09 2025 +0100|mvebu: WD Cloud Mirror Gen2: Remove stty dependency
-f65b533e41|Anton Yu. Ivanusev|Thu Dec 26 09:34:39 2024 +0500|ramips: mt7621: add support for Keenetic Viva (KN-1910)
-8a17bae722|Raylynn Knight|Sat Jan 11 00:19:59 2025 -0500|d1: Use correct module for devices with wifi
-97681b4fbd|Jack Sun|Fri Jan 10 18:30:12 2025 +0800|tools/meson: update to 1.6.1
-54463f1e2e|David Bauer|Mon Jan 13 15:18:51 2025 +0100|ipq40xx: enable WiFi LED for Teltonika RUTX50
-08c93512fe|David Bauer|Mon Jan 13 15:18:31 2025 +0100|ipq40xx: use correct wired MAC-addresses for RUTX50
-ac1ad1a7ad|David Bauer|Mon Jan 13 15:12:38 2025 +0100|ipq40xx: turn on Teltonika RUTX50 modem by default
-5ce1af9539|Rany Hany|Sun Jan 12 22:41:48 2025 +0000|hostapd: backport upstream patch to fix setting BSS color
+c9ebd4fb30|Mathew McBride|Thu Jun 22 23:36:28 2023 +0000|armsr: change image names to 'combined-efi'
+1c5ca24da6|Luis Mita|Wed Jan 8 18:10:04 2025 -0400|ramips: mt7621: add support for Confiabits MT7621 v1
+2c22d7c3a4|Sebastian Pflieger|Thu Jan 9 18:10:38 2025 +0100|lldpd: fix config for build without LLDP-MED
+dac8021297|Felix Fietkau|Tue Jan 14 14:02:16 2025 +0100|build: use lazy evaluation for NPROC to speed up metadata dump
+3963dab030|Felix Fietkau|Tue Jan 14 13:48:23 2025 +0100|mt76: update to Git HEAD (2025-01-14)
+e516871515|Felix Fietkau|Tue Jan 14 13:29:40 2025 +0100|wifi-scripts: sync enable_background_radar in ucode with old version
+7bf3bc871a|Felix Fietkau|Tue Jan 14 11:55:08 2025 +0100|mac80211: fix issues with including linux/acpi_amd_wbrf.h on newer kernels
+abbec429b4|Robert Marko|Tue Jan 14 09:37:33 2025 +0100|lldpd: reset PKG_RELEASE
+a18385041e|Sebastian Pflieger|Thu Jan 9 18:16:04 2025 +0100|lldpd: bump version to 1.0.18
 </details>

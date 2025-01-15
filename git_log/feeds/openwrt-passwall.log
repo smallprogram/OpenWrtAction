@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b265ecb|lwb1978|Tue Jan 14 11:54:41 2025 +0800|luci: adjust backup time format
-2a398f5|lwb1978|Mon Jan 13 23:08:10 2025 +0800|luci: eliminate some page JS LuCI behavior
-c626d88|xiaorouji|Mon Jan 13 19:30:16 2025 +0800|luci: optimize and close https://github.com/xiaorouji/openwrt-passwall/issues/3666
+dce13de|zhusir|Wed Jan 15 11:11:10 2025 +0800|action: fixed install package error
+cc2d8e3|lwb1978|Tue Jan 14 23:17:14 2025 +0800|luci: eliminate JS LuCI behavior
+0500f08|lwb1978|Tue Jan 14 22:04:36 2025 +0800|luci: add save and apply notification
+841ef21|zhusir|Tue Jan 14 14:26:13 2025 +0800|action: install packages update code
 </details>

@@ -2,39 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2ac86e2d6b|Tianling Shen|Tue Jan 14 00:59:20 2025 +0800|Merge Official Source
-54463f1e2e|David Bauer|Mon Jan 13 15:18:51 2025 +0100|ipq40xx: enable WiFi LED for Teltonika RUTX50
-08c93512fe|David Bauer|Mon Jan 13 15:18:31 2025 +0100|ipq40xx: use correct wired MAC-addresses for RUTX50
-ac1ad1a7ad|David Bauer|Mon Jan 13 15:12:38 2025 +0100|ipq40xx: turn on Teltonika RUTX50 modem by default
-bc79a29f8a|Tianling Shen|Mon Jan 13 20:41:23 2025 +0800|mediatek: add missing dependency to huasifei wh3000 emmc
-f310b8c74e|coolsnowwolf|Mon Jan 13 16:00:05 2025 +0800|mediatek: filogic: add support for Huasifei WH3000
-5ce1af9539|Rany Hany|Sun Jan 12 22:41:48 2025 +0000|hostapd: backport upstream patch to fix setting BSS color
-62af69f9e4|Lech Perczak|Sat Dec 7 04:36:52 2024 +0100|ath79: teltonika-rut230: add RUT240 model alias
-11ad73f97d|Lech Perczak|Sat Dec 7 04:39:13 2024 +0100|ath79: teltonika-rut230: include kmod-usb-serial-option in image
-f39115632c|Lech Perczak|Sun Dec 8 04:31:36 2024 +0100|ath79: teltonika-rut230: include kmod-usb2 in image
-852911a85d|Lech Perczak|Sat Dec 7 04:34:00 2024 +0100|ath79: teltonika-rut230: fully support digital output lines
-46a6f49685|Lech Perczak|Sat Jan 4 02:12:42 2025 +0100|ath79: teltonika-rut230: drop reg_usb_vbus
-f28010a79c|Lech Perczak|Sat Dec 7 04:27:18 2024 +0100|ath79: teltonika-rut230: add 4G LED
-7b9ca01109|Lech Perczak|Mon Jan 6 17:31:44 2025 +0100|ath79: teltonika-rut230: fix failsafe boot without SIM tray
-d04f41e092|Lech Perczak|Sun Dec 8 04:08:38 2024 +0100|ath79: teltonika-rut230: fix typo in "green:signal-strength4" LED
-0d1568246f|Roland Reinl|Mon Jan 6 08:33:36 2025 +0100|mediatek: D-Link AQUILA PRO AI M60 A1: Fixed phy6 DTS settings
-9a0f0611d2|Shiji Yang|Wed Jan 8 22:57:36 2025 +0800|mkimage: update to v2025.01
-433be50c94|Shiji Yang|Wed Jan 8 22:57:10 2025 +0800|uboot-envtools: update to v2025.01
-8973c48515|Anton Yu. Ivanusev|Tue Jan 7 20:38:09 2025 +0500|ramips: mt76x8: add support for Keenetic Extra (KN-1711)
-8fb805aa1f|Robert Senderek|Fri Nov 22 00:05:39 2024 +0100|mvebu: Add support for WD Cloud Mirror Gen2
-6c1ad2830e|Rosen Penev|Mon Dec 23 13:35:01 2024 -0800|ath79: phy: remove named gpio exports
-90e86a8713|Rosen Penev|Mon Dec 23 13:20:49 2024 -0800|ath79: gl-ar150: fix USB GPIO usage
-5aa996b06d|Rosen Penev|Mon Dec 23 13:28:25 2024 -0800|ath79: pineapple-nano: use regulator for USB GPIO
-517b9c1cdc|Aleksander Jan Bajkowski|Sat Jan 11 16:37:47 2025 +0100|lantiq: xrx200_legacy: disable unused phy drivers
-524e22b4c7|Aleksander Jan Bajkowski|Sat Jan 11 16:34:46 2025 +0100|lantiq: xway_legacy: refresh config
-1b045a7c13|Aleksander Jan Bajkowski|Sat Jan 11 17:10:42 2025 +0100|lantiq: xrx200: add alternative names for Plusnet Hub One and BT Business Hub 5A
-b2b4ce1532|Aleksander Jan Bajkowski|Sat Jan 11 17:04:33 2025 +0100|lantiq: xrx200_legacy: add alternative names for TP-Link TD-W9980(B)
-191ed4e803|Anton Yu. Ivanusev|Wed Jan 8 01:14:10 2025 +0500|ramips: mt76x8: fixs for Keenetic Air (KN-1613) and Extra (KN-1713)
-96850585e5|Sander Vanheule|Tue Jan 7 14:59:20 2025 +0100|realtek: switch RTL8231 driver for HPE 1920-16/24G
-e5d1a501cb|Sander Vanheule|Tue Jan 7 14:55:24 2025 +0100|realtek: switch RTL8231 driver for HPE 1920-8G
-9d66b8b312|Juan Pedro Paredes Caballero|Sat Dec 7 14:20:31 2024 +0100|mediatek: filogic: Add support for cudy wr3000h
-a00ff9f6d1|Alexandru Gagniuc|Sun Aug 7 10:15:35 2022 -0500|qualcommax: ipq60xx: add TP-Link EAP610-Outdoor support
-3f87c5ac42|John Audia|Fri Jan 10 16:01:56 2025 -0500|kernel: bump 6.6 to 6.6.71
-5f54e17bae|Jack Sun|Sun Jan 12 14:14:16 2025 +0800|tools/cmake: update to 3.31.4
-1c178f3644|Kien Truong|Sat Jan 11 12:20:12 2025 +0700|rockchip: disable kernel preemption
+73b7d39c80|Tianling Shen|Tue Jan 14 22:12:49 2025 +0800|Merge Official Source
+dac8021297|Felix Fietkau|Tue Jan 14 14:02:16 2025 +0100|build: use lazy evaluation for NPROC to speed up metadata dump
+3963dab030|Felix Fietkau|Tue Jan 14 13:48:23 2025 +0100|mt76: update to Git HEAD (2025-01-14)
+e516871515|Felix Fietkau|Tue Jan 14 13:29:40 2025 +0100|wifi-scripts: sync enable_background_radar in ucode with old version
+7bf3bc871a|Felix Fietkau|Tue Jan 14 11:55:08 2025 +0100|mac80211: fix issues with including linux/acpi_amd_wbrf.h on newer kernels
+abbec429b4|Robert Marko|Tue Jan 14 09:37:33 2025 +0100|lldpd: reset PKG_RELEASE
+a18385041e|Sebastian Pflieger|Thu Jan 9 18:16:04 2025 +0100|lldpd: bump version to 1.0.18
+717f62d256|Hauke Mehrtens|Mon Jan 13 23:56:09 2025 +0100|mvebu: WD Cloud Mirror Gen2: Remove stty dependency
+f65b533e41|Anton Yu. Ivanusev|Thu Dec 26 09:34:39 2024 +0500|ramips: mt7621: add support for Keenetic Viva (KN-1910)
+8a17bae722|Raylynn Knight|Sat Jan 11 00:19:59 2025 -0500|d1: Use correct module for devices with wifi
+97681b4fbd|Jack Sun|Fri Jan 10 18:30:12 2025 +0800|tools/meson: update to 1.6.1
+51272fcd00|Tianling Shen|Mon Jan 13 21:52:19 2025 +0800|mediatek: add ubootmod layout for cudy tr3000 v1
 </details>
