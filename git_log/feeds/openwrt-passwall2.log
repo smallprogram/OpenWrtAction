@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-b7c2b3b|zhusir|Wed Jan 15 11:11:24 2025 +0800|action: fixed install package error
-2dd83e2|zhusir|Tue Jan 14 14:25:47 2025 +0800|action: install packages update code
-</details>

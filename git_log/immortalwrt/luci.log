@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-06e258eff6|Tianling Shen|Tue Jan 14 17:27:05 2025 +0800|luci-app-passwall: disable trojan-plus by default
+6ebf8e9ebf|SakuraFallingMad|Fri Jan 10 19:10:47 2025 +0800|luci-app-passwall: bump to 25.1.15
 </details>

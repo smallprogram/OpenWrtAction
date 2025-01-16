@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dce13de|zhusir|Wed Jan 15 11:11:10 2025 +0800|action: fixed install package error
-cc2d8e3|lwb1978|Tue Jan 14 23:17:14 2025 +0800|luci: eliminate JS LuCI behavior
-0500f08|lwb1978|Tue Jan 14 22:04:36 2025 +0800|luci: add save and apply notification
-841ef21|zhusir|Tue Jan 14 14:26:13 2025 +0800|action: install packages update code
+0165683|lwb1978|Wed Jan 15 22:02:37 2025 +0800|luci: deduplication function for vpslist
+0eed372|lwb1978|Wed Jan 15 16:11:19 2025 +0800|luci: bump to 25.1.15
 </details>

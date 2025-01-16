@@ -2,13 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c9ebd4fb30|Mathew McBride|Thu Jun 22 23:36:28 2023 +0000|armsr: change image names to 'combined-efi'
-1c5ca24da6|Luis Mita|Wed Jan 8 18:10:04 2025 -0400|ramips: mt7621: add support for Confiabits MT7621 v1
-2c22d7c3a4|Sebastian Pflieger|Thu Jan 9 18:10:38 2025 +0100|lldpd: fix config for build without LLDP-MED
-dac8021297|Felix Fietkau|Tue Jan 14 14:02:16 2025 +0100|build: use lazy evaluation for NPROC to speed up metadata dump
-3963dab030|Felix Fietkau|Tue Jan 14 13:48:23 2025 +0100|mt76: update to Git HEAD (2025-01-14)
-e516871515|Felix Fietkau|Tue Jan 14 13:29:40 2025 +0100|wifi-scripts: sync enable_background_radar in ucode with old version
-7bf3bc871a|Felix Fietkau|Tue Jan 14 11:55:08 2025 +0100|mac80211: fix issues with including linux/acpi_amd_wbrf.h on newer kernels
-abbec429b4|Robert Marko|Tue Jan 14 09:37:33 2025 +0100|lldpd: reset PKG_RELEASE
-a18385041e|Sebastian Pflieger|Thu Jan 9 18:16:04 2025 +0100|lldpd: bump version to 1.0.18
+67a4aeef6c|Felix Fietkau|Wed Jan 15 21:46:53 2025 +0100|netifd: fix napi process name matching in packet steering script
+9decfc82dc|Paweł Owoc|Fri Jan 10 21:16:57 2025 +0100|uboot-envtools: ipq807x: remove number of blocks and code simplification
+07f8319d2d|Paweł Owoc|Sat Aug 17 16:59:58 2024 +0200|qualcommax: ipq807x: add support for Linksys HomeWRK
+f64541db02|Evan Jobling|Tue Jan 14 12:13:21 2025 +0000|realtek: HPE 1920 8G PoE+ 180W move fans to hwmon
 </details>

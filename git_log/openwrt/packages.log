@@ -2,5 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a06829b0a|Serhii Ivanov|Thu Jan 9 14:01:56 2025 +0200|transmissision: remove build dependency on nodejs
+d91b06208|John Audia|Tue Jan 14 20:27:47 2025 -0500|rsync: update to 3.4.0
+8c9dc115e|Tianling Shen|Tue Jan 14 17:30:05 2025 +0800|trojan-go: drop package
+3cf15f4ac|Gedalya Nie|Sat Jan 11 03:07:01 2025 +0800|ddns-scripts: correct name for ipv64.net
+0a98b6d0e|Gedalya Nie|Thu Jan 9 05:58:02 2025 +0800|ddns-scripts: cloudflare: use PATCH method, minimize changes
+35eb372aa|Tianling Shen|Wed Jan 15 14:54:46 2025 +0800|yq: Update to 4.45.1
+a4f19ba6b|Tianling Shen|Wed Jan 15 14:54:23 2025 +0800|v2ray-core: Update to 5.24.0
+0c547b9eb|Tianling Shen|Wed Jan 15 13:38:09 2025 +0800|cloudflared: Update to 2025.1.0
 </details>
