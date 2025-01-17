@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0165683|lwb1978|Wed Jan 15 22:02:37 2025 +0800|luci: deduplication function for vpslist
-0eed372|lwb1978|Wed Jan 15 16:11:19 2025 +0800|luci: bump to 25.1.15
+2eb98b8|zhusir|Fri Jan 17 11:20:55 2025 +0800|action: update compile code
+c89f1a2|lwb1978|Thu Jan 16 21:49:37 2025 +0800|luci: optimize and fix
+f6b3cff|lwb1978|Thu Jan 16 17:39:51 2025 +0800|luci: optimize code
 </details>

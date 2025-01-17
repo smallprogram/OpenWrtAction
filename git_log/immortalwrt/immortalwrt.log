@@ -2,6 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-112b21d616|Tianling Shen|Wed Jan 15 21:38:54 2025 +0800|rockchip: backport latest gate link patches
-272391c84f|Tianling Shen|Wed Jan 15 13:05:52 2025 +0800|mediatek: add missing network setup for cudy tr3000-v1 ubootmod
+264ea4a5f6|Tianling Shen|Thu Jan 16 15:46:02 2025 +0800|Merge Official Source
+0a7c8ed9d9|Fabian Groffen|Wed Jan 15 20:12:02 2025 +0100|realtek: HPE 1920 24G PoE+ 180W/370W move fans to hwmon
+67a4aeef6c|Felix Fietkau|Wed Jan 15 21:46:53 2025 +0100|netifd: fix napi process name matching in packet steering script
+9decfc82dc|Paweł Owoc|Fri Jan 10 21:16:57 2025 +0100|uboot-envtools: ipq807x: remove number of blocks and code simplification
+07f8319d2d|Paweł Owoc|Sat Aug 17 16:59:58 2024 +0200|qualcommax: ipq807x: add support for Linksys HomeWRK
+f64541db02|Evan Jobling|Tue Jan 14 12:13:21 2025 +0000|realtek: HPE 1920 8G PoE+ 180W move fans to hwmon
+c9ebd4fb30|Mathew McBride|Thu Jun 22 23:36:28 2023 +0000|armsr: change image names to 'combined-efi'
+1c5ca24da6|Luis Mita|Wed Jan 8 18:10:04 2025 -0400|ramips: mt7621: add support for Confiabits MT7621 v1
+2c22d7c3a4|Sebastian Pflieger|Thu Jan 9 18:10:38 2025 +0100|lldpd: fix config for build without LLDP-MED
 </details>

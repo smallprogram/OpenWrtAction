@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0a43a52|zhusir|Fri Jan 17 11:22:48 2025 +0800|action: update compile code
+55b33d8|lwb1978|Fri Jan 17 08:38:32 2025 +0800|trojan-plus: fix boost1.87.0 build
+</details>

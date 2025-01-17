@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-67a4aeef6c|Felix Fietkau|Wed Jan 15 21:46:53 2025 +0100|netifd: fix napi process name matching in packet steering script
-9decfc82dc|Paweł Owoc|Fri Jan 10 21:16:57 2025 +0100|uboot-envtools: ipq807x: remove number of blocks and code simplification
-07f8319d2d|Paweł Owoc|Sat Aug 17 16:59:58 2024 +0200|qualcommax: ipq807x: add support for Linksys HomeWRK
-f64541db02|Evan Jobling|Tue Jan 14 12:13:21 2025 +0000|realtek: HPE 1920 8G PoE+ 180W move fans to hwmon
+693c1ea81a|Sander Vanheule|Thu Jan 16 13:23:54 2025 +0100|realtek: Use atomic poll for aux-mdio commands
+0a7c8ed9d9|Fabian Groffen|Wed Jan 15 20:12:02 2025 +0100|realtek: HPE 1920 24G PoE+ 180W/370W move fans to hwmon
 </details>
