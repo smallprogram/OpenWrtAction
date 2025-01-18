@@ -2,6 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-693c1ea81a|Sander Vanheule|Thu Jan 16 13:23:54 2025 +0100|realtek: Use atomic poll for aux-mdio commands
-0a7c8ed9d9|Fabian Groffen|Wed Jan 15 20:12:02 2025 +0100|realtek: HPE 1920 24G PoE+ 180W/370W move fans to hwmon
+f22febae1a|Christian Marangi|Fri Jan 17 22:09:05 2025 +0100|airoha: an7581: add pending PCI patch
+67635578fd|Christian Marangi|Fri Jan 17 22:04:19 2025 +0100|airoha: an7581: backport ETS patch for Airoha ethernet
+7924acdd63|Álvaro Fernández Rojas|Fri Jan 17 13:45:11 2025 +0100|generic: backport pending Realtek PHY patches
+41c164d32b|Daniel Golle|Thu Jan 16 20:11:43 2025 +0000|generic: add pending patches for RealTek Ethernet PHYs
+d7e82c78d7|Álvaro Fernández Rojas|Fri Jan 17 09:56:34 2025 +0100|generic: backport Realtek PHY patches from upstream
+0de9999a78|Álvaro Fernández Rojas|Fri Jan 17 09:38:30 2025 +0100|generic: r8169: remove reverted temperature sensor patch
+2c78e9d7bd|Felix Fietkau|Fri Mar 22 16:21:18 2024 +0100|ucode-mod-pkgen: add ucode module for generating crypto keys/certificates
+44c877f197|Felix Fietkau|Fri Jan 17 11:26:09 2025 +0100|uci: update to Git HEAD (2025-01-17)
+48e1427ffa|Felix Fietkau|Thu Jan 16 19:32:51 2025 +0100|mediatek: remove obsolete base-files scripts
+acce25b789|Felix Fietkau|Thu Jan 16 12:35:47 2025 +0100|netifd: improve packet steering on ipq40xx (and possibly others)
 </details>

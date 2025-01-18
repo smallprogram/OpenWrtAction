@@ -1,0 +1,60 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+8eb3a5fbc|Tianling Shen|Fri Jan 17 15:26:00 2025 +0800|ddns-go: fix permission for directory
+fdc23d5f3|Tianling Shen|Fri Jan 17 14:57:59 2025 +0800|Merge Official Source
+3e72b22c2|Tianling Shen|Fri Jan 17 14:52:58 2025 +0800|trojan-plus: drop package
+64f1a2835|Khachatryan Karen|Tue Jan 7 05:01:59 2025 +0300|antiblock: Add AntiBlock package
+80768dfda|Dirk Brenken|Thu Jan 16 20:08:36 2025 +0100|banIP: release 1.5.0-1
+def5214e2|Ivan Pavlov|Thu Jan 16 09:47:45 2025 +0300|openvpn: update to 2.6.13
+bc1106022|John Audia|Wed Jan 15 16:35:10 2025 -0500|rsync: update to 3.4.1
+996c1819e|Milinda Brantini|Wed Jan 15 14:06:04 2025 +0800|sing-box: Update to 1.10.7
+f074d300f|Olivier Poitrey|Thu Jan 16 01:54:46 2025 +0000|nextdns: Update to version 1.44.4
+b6fae9631|Jianhui Zhao|Thu Jan 16 21:37:27 2025 +0800|lua-ffi: update to 1.1.0
+b939b3e79|John Audia|Wed Jan 15 16:38:06 2025 -0500|tree: bump to 2.2.1
+d91b06208|John Audia|Tue Jan 14 20:27:47 2025 -0500|rsync: update to 3.4.0
+8c9dc115e|Tianling Shen|Tue Jan 14 17:30:05 2025 +0800|trojan-go: drop package
+3cf15f4ac|Gedalya Nie|Sat Jan 11 03:07:01 2025 +0800|ddns-scripts: correct name for ipv64.net
+0a98b6d0e|Gedalya Nie|Thu Jan 9 05:58:02 2025 +0800|ddns-scripts: cloudflare: use PATCH method, minimize changes
+35eb372aa|Tianling Shen|Wed Jan 15 14:54:46 2025 +0800|yq: Update to 4.45.1
+a4f19ba6b|Tianling Shen|Wed Jan 15 14:54:23 2025 +0800|v2ray-core: Update to 5.24.0
+0c547b9eb|Tianling Shen|Wed Jan 15 13:38:09 2025 +0800|cloudflared: Update to 2025.1.0
+a06829b0a|Serhii Ivanov|Thu Jan 9 14:01:56 2025 +0200|transmissision: remove build dependency on nodejs
+3921a981d|Sander|Mon Jan 13 12:13:42 2025 +0000|iperf: package update to v3.18
+9b847a4e1|Jan Hák|Mon Jan 13 11:21:48 2025 +0100|libedit: update to version 20250104-3.1
+5445ad8c3|Jan Hák|Mon Jan 13 10:49:07 2025 +0100|liburcu: update to version 0.15.0
+c942cd087|Toke Høiland-Jørgensen|Mon Jan 13 11:58:00 2025 +0100|acme-acmesh: Bump to v3.1.0
+f640d92aa|Rosen Penev|Wed Jan 1 13:02:51 2025 -0800|mariadb: update to 11.4.4
+cd4c0ac81|Glenn Strauss|Fri Jan 10 19:35:23 2025 -0500|lighttpd: update to lighttpd 1.4.77 release hash
+5564f0d60|Glenn Strauss|Fri Jan 10 23:04:13 2025 -0500|lighttpd: lighttpd.init add trigger on acme.renew
+e8f4f3773|Luca Barbato|Sun Jan 12 08:37:35 2025 +0000|cargo-c: Version bump
+aff8367c7|hingbong lo|Fri Jan 10 00:50:53 2025 +0000|rust: update to 1.84.0
+e5ceb5955|Mohd Husaam Mehdi|Fri Jan 10 15:42:46 2025 +0530|vsftpd: handle migration and fix secure_chroot_dir error
+c1f247d5c|FriesI23 Qin|Thu Dec 26 16:13:51 2024 +0800|ddns-scripts: Add dnspod.cn-v3
+da4e27063|Hui Zhui|Fri Jan 10 05:12:51 2025 +0300|ddns-scripts: add support for ipv64.net
+7d752193e|Rany Hany|Thu Jan 2 13:38:48 2025 +0000|muninlite: add some patches to address old issues
+4f0758ba3|Rany Hany|Wed Jan 1 17:21:37 2025 +0000|muninlite: add /etc/munin to conffiles and install muninlite.conf
+b7974fb6d|Javier Marcet|Wed Jan 8 18:22:03 2025 +0100|docker-compose: Update to version 2.32.2
+2b48c6d34|Noah Meyerhans|Wed Jan 8 11:29:52 2025 -0500|bind: bump to 9.20.4
+4b29db3ca|Mohd Husaam Mehdi|Fri Mar 29 23:10:07 2024 +0530|vsftpd: update init script to process UCI
+1f884c960|Mohd Husaam Mehdi|Wed Mar 27 21:35:14 2024 +0530|vsftpd: update init script to use procd
+ce4b32ede|Benjamin Frank|Wed Dec 18 18:02:42 2024 +0100|ddns-scripts: support IPv6 for joker.com
+d750bb318|Tianling Shen|Wed Jan 8 16:59:42 2025 +0800|v2ray-geodata: Update to latest version
+1457c5edc|Rosen Penev|Mon Jan 6 19:05:05 2025 -0800|i2pd: update to 2.55.0
+ee5f5d85e|Rosen Penev|Wed Jan 1 19:27:46 2025 -0800|open-iscsi: update to 2.1.10
+fbcfd96e1|Ray Wang|Wed Jan 1 20:39:32 2025 +0800|fsh: add new package
+a33e08ec6|Peter van Dijk|Wed Jan 1 20:15:07 2025 +0100|curl: add LIBCURL_WEBSOCKETS flag
+0ea0a5f70|Michael Heimpold|Mon Jan 6 19:54:32 2025 +0100|cpupower: fix category 'utils' -> 'utilities'
+0374ea98b|Jonas Jelonek|Mon Jan 6 12:18:23 2025 +0100|eza: update to 0.20.15
+997dfd314|Jonas Jelonek|Mon Jan 6 12:15:08 2025 +0100|croc: update to 10.2.1
+6ee7a479b|Vladimir Ermakov|Tue Nov 12 15:43:33 2024 +0000|qemu: update to 9.1.2
+c83362fc6|Tianling Shen|Tue Nov 19 10:56:31 2024 +0800|libtorrent-rasterbar: Update to 2.0.10
+2318b700e|Eric Fahlgren|Mon Jan 6 12:49:40 2025 -0800|owut: update to 2025.01.06
+27fb5f59b|Moritz Warning|Tue Jan 7 00:45:13 2025 +0100|kadnode: update to version 2.4.1
+81b26a154|Rosen Penev|Mon Jan 6 18:27:05 2025 -0800|tmate: fix compilation with GCC14
+900f94425|Rosen Penev|Mon Jan 6 18:31:18 2025 -0800|opendkim: fix compilation with GCC14
+4b0f742e2|Rosen Penev|Mon Jan 6 18:02:46 2025 -0800|mpd: update to 0.23.16
+c25ee5ab2|Rosen Penev|Mon Jan 6 18:18:48 2025 -0800|uanytun: fix compilation with GCC14
+0a5786e15|Rosen Penev|Mon Jan 6 16:18:33 2025 -0800|dante: update to 1.4.4
+</details>

@@ -2,11 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-80768dfda|Dirk Brenken|Thu Jan 16 20:08:36 2025 +0100|banIP: release 1.5.0-1
-def5214e2|Ivan Pavlov|Thu Jan 16 09:47:45 2025 +0300|openvpn: update to 2.6.13
-bc1106022|John Audia|Wed Jan 15 16:35:10 2025 -0500|rsync: update to 3.4.1
-996c1819e|Milinda Brantini|Wed Jan 15 14:06:04 2025 +0800|sing-box: Update to 1.10.7
-f074d300f|Olivier Poitrey|Thu Jan 16 01:54:46 2025 +0000|nextdns: Update to version 1.44.4
-b6fae9631|Jianhui Zhao|Thu Jan 16 21:37:27 2025 +0800|lua-ffi: update to 1.1.0
-b939b3e79|John Audia|Wed Jan 15 16:38:06 2025 -0500|tree: bump to 2.2.1
+cd89956c1|Dirk Brenken|Fri Jan 17 16:51:15 2025 +0100|adblock: update 4.2.3-3
+64f1a2835|Khachatryan Karen|Tue Jan 7 05:01:59 2025 +0300|antiblock: Add AntiBlock package
 </details>

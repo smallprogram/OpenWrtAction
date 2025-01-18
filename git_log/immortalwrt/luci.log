@@ -1,0 +1,31 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5f41ff8d04|Tianling Shen|Fri Jan 17 14:50:48 2025 +0800|luci-app-passwall: remove reference to trojan-plus
+69ae9efb16|Tianling Shen|Fri Jan 17 14:46:48 2025 +0800|Merge Official Source
+0b4a3ff8a0|Tianling Shen|Fri Jan 17 14:45:56 2025 +0800|luci-app-homeproxy: bump to latest git HEAD
+abb3d9e862|Dirk Brenken|Thu Jan 16 20:17:38 2025 +0100|luci-app-banip: sync with banIP 1.5
+370e2479a7|Weblate (bot)|Thu Jan 16 09:10:55 2025 +0100|Translations update from Hosted Weblate (#7562)
+7046a1cac1|Paul Donald|Tue Jan 14 16:16:56 2025 +0100|luci-base: widgets; remove maximal firewall zone name length datatype
+b85628e16c|Paul Donald|Tue Jan 14 03:10:15 2025 +0100|luci-mod-network: i18n fix
+bd39c63945|Paul Donald|Tue Jan 14 02:54:45 2025 +0100|luci-app-firewall: i18n fix
+e91e147714|Jan Pazdziora|Sat Jan 11 16:11:23 2025 +0100|luci-app-nlbwmon: the default of database_compress is 1, match that behaviour in UI.
+c50ff5e2a3|Jan Pazdziora|Thu Jan 9 22:57:23 2025 +0100|luci-mod-dashboard: make the DHCP Devices and Wireless proper tables with headers.
+edeb9de9e0|Paul Donald|Mon Jan 13 17:52:34 2025 +0100|treewide: i18n-sync -b
+920795afc7|Paul Donald|Mon Jan 13 17:33:38 2025 +0100|luci-base, luci-proto-yggdrasil: grammar fix
+96d6781b12|Paul Donald|Mon Jan 13 17:23:16 2025 +0100|luci-mod-network: comment grammar fix
+e7949bd9a5|Paul Donald|Mon Jan 13 17:19:31 2025 +0100|luci-base: grammar fix
+6cdd8a3aab|Paul Donald|Mon Jan 13 17:14:04 2025 +0100|luci-app-wol: grammar fix
+20edefc8a0|Paul Donald|Mon Jan 13 17:11:32 2025 +0100|luci-app-travelmate: grammar fix
+a5ea5469bd|Paul Donald|Mon Jan 13 17:06:04 2025 +0100|luci-app-tinyproxy: grammar fix
+801948422d|Paul Donald|Mon Jan 13 17:01:37 2025 +0100|luci-app-sqm: grammar fix
+4a4da5b690|Paul Donald|Mon Jan 13 16:56:55 2025 +0100|luci-app-rp-pppoe-server: grammar fix
+94b39737d0|Paul Donald|Mon Jan 13 16:53:55 2025 +0100|luci-app-minidlna: grammar fix
+c4d6d02899|Paul Donald|Mon Jan 13 16:50:03 2025 +0100|luci-app-bcp38: grammar fix
+fec079db36|Paul Donald|Mon Jan 13 16:43:49 2025 +0100|luci-base, luci-proto-wireguard: grammar fix
+e98eab06a2|Paul Donald|Mon Jan 13 16:41:39 2025 +0100|luci-base, luci-proto-vxlan: grammar fix
+c4cee48b71|Paul Donald|Mon Jan 13 16:39:16 2025 +0100|luci-app-attendedsysupgrade: grammar fix
+db98bb5442|Paul Donald|Mon Jan 13 17:57:40 2025 +0100|luci-base: jsdoc grammar fix
+de100ba929|Hosted Weblate|Mon Jan 13 16:26:04 2025 +0100|Translated using Weblate (Chinese (Traditional Han script))
+</details>
