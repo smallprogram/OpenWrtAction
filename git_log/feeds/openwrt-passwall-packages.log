@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+cc68253|github-actions[bot]|Sat Jan 18 21:57:54 2025 +0800|v2ray-core: update to 5.25.0 (#359)
+2c6a5c3|github-actions[bot]|Sat Jan 18 21:57:42 2025 +0800|v2ray-plugin: update to 5.25.0 (#358)
+62f4ac5|github-actions[bot]|Sat Jan 18 21:57:31 2025 +0800|v2ray-geoip: update to 202501160051 (#357)
+</details>
