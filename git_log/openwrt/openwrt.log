@@ -2,15 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-99431e3150|Florian Maurer|Thu Jan 16 09:29:55 2025 +0100|mediatek-filogic: fix wax220 wifi leds
-0f8a5a5fd6|Hauke Mehrtens|Fri Jan 17 23:23:10 2025 +0100|mediatek: filogic: Cudy WR3000H: Fix SUPPORTED_DEVICES
-676dcb1b2c|Christian Marangi|Tue May 7 20:44:27 2024 +0200|ipq4019: patch initialization of Lantiq DSL on FritzBox 7530.
-144af32b47|David Bauer|Fri Jan 3 21:46:13 2025 +0100|ath79: add extended AR9344 reset sequence
-937b5a3e00|David Bauer|Fri Jan 17 20:51:38 2025 +0100|Revert "ath79: reset ETH switch for AR9344"
-2d077913cd|Robert Marko|Sat Jan 18 12:25:01 2025 +0100|qualcommax: dl-wrx36: fix 2.5G port LED-s
-45aafe67f3|Sander Vanheule|Sat Jan 18 13:39:01 2025 +0100|realtek: Switch RTL8231 driver on Zyxel GS1900-48
-fd5797b7ce|Sander Vanheule|Sat Jan 18 13:48:17 2025 +0100|realtek: rtl839x: Enable RTL8231 MFD driver
-cddcc69ddf|Sander Vanheule|Sat Jan 18 13:45:55 2025 +0100|realtek: rtl839x: Enable AUX MDIO controller
-52ffef6471|Sander Vanheule|Sat Jan 18 13:28:44 2025 +0100|realtek: Update aux-mdio driver
-7482296ebf|Felix Fietkau|Sat Jan 18 10:06:44 2025 +0100|wifi-scripts: add a few missing auth_type checks in ucode
+f80f52163a|Anton Yu. Ivanusev|Thu Jan 16 21:05:38 2025 +0500|ramips: fixes for Keenetic KN-1711,1713,1910
+3d63a41ffa|Aleksander Jan Bajkowski|Wed Jan 15 19:21:24 2025 +0100|mediatek: EX5601-T0 add Zyxel EX5601-T1 and T-56 alias
+32c6b9064a|Lech Perczak|Wed Nov 20 03:45:46 2024 +0100|ath79: zte-mf28x-common: fix initramfs execution
+6720958659|Lech Perczak|Wed Nov 20 03:45:21 2024 +0100|ath79: lzma-loader: expose LZMA_TEXT_ADDRESS configuration again
+9454331b7f|Andrea Pesaresi|Wed Jan 15 01:15:20 2025 +0100|ethtool: update to 6.11
+9096f996ba|Tony Ambardar|Wed Jan 1 04:48:56 2025 -0800|mac80211: Fix tracing backport
+ec8a128cbb|Manuel Fombuena|Tue Jan 14 12:37:20 2025 +0000|generic: add leds_st1202 patch to fix NULL pointer access
 </details>

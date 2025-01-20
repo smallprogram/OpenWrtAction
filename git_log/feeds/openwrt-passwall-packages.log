@@ -2,7 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cc68253|github-actions[bot]|Sat Jan 18 21:57:54 2025 +0800|v2ray-core: update to 5.25.0 (#359)
-2c6a5c3|github-actions[bot]|Sat Jan 18 21:57:42 2025 +0800|v2ray-plugin: update to 5.25.0 (#358)
-62f4ac5|github-actions[bot]|Sat Jan 18 21:57:31 2025 +0800|v2ray-geoip: update to 202501160051 (#357)
+36e076d|github-actions[bot]|Mon Jan 20 02:53:15 2025 +0800|v2ray-plugin: update to 5.25.0 (#362)
+95a1180|Lu jicong|Sun Jan 19 19:20:47 2025 +0800|shadowsocks-libev: backport not merged fix
+cb99c5a|Lu jicong|Sun Jan 19 19:19:26 2025 +0800|shadowsocks-libev: bump to the latest commit
+ff4dace|Lu jicong|Sun Jan 19 18:36:10 2025 +0800|shadowsocks-libev: update mbedtls 3.6 build fixing patch
+bcda966|A-BO|Sun Jan 19 21:39:02 2025 +0800|naiveproxy: update to 132.0.6834.79-r2
+f513197|zhusir|Sun Jan 19 14:22:39 2025 +0800|Revert "v2ray-plugin: update to 5.25.0 (#358)" (#361)
 </details>

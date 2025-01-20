@@ -2,17 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fa9ca4d5cb|Tianling Shen|Sat Jan 18 18:48:49 2025 +0800|Merge Official Source
-7482296ebf|Felix Fietkau|Sat Jan 18 10:06:44 2025 +0100|wifi-scripts: add a few missing auth_type checks in ucode
-f22febae1a|Christian Marangi|Fri Jan 17 22:09:05 2025 +0100|airoha: an7581: add pending PCI patch
-67635578fd|Christian Marangi|Fri Jan 17 22:04:19 2025 +0100|airoha: an7581: backport ETS patch for Airoha ethernet
-7924acdd63|Álvaro Fernández Rojas|Fri Jan 17 13:45:11 2025 +0100|generic: backport pending Realtek PHY patches
-41c164d32b|Daniel Golle|Thu Jan 16 20:11:43 2025 +0000|generic: add pending patches for RealTek Ethernet PHYs
-d7e82c78d7|Álvaro Fernández Rojas|Fri Jan 17 09:56:34 2025 +0100|generic: backport Realtek PHY patches from upstream
-0de9999a78|Álvaro Fernández Rojas|Fri Jan 17 09:38:30 2025 +0100|generic: r8169: remove reverted temperature sensor patch
-2c78e9d7bd|Felix Fietkau|Fri Mar 22 16:21:18 2024 +0100|ucode-mod-pkgen: add ucode module for generating crypto keys/certificates
-44c877f197|Felix Fietkau|Fri Jan 17 11:26:09 2025 +0100|uci: update to Git HEAD (2025-01-17)
-48e1427ffa|Felix Fietkau|Thu Jan 16 19:32:51 2025 +0100|mediatek: remove obsolete base-files scripts
-acce25b789|Felix Fietkau|Thu Jan 16 12:35:47 2025 +0100|netifd: improve packet steering on ipq40xx (and possibly others)
-693c1ea81a|Sander Vanheule|Thu Jan 16 13:23:54 2025 +0100|realtek: Use atomic poll for aux-mdio commands
+0511e98b81|Tianling Shen|Sun Jan 19 16:19:59 2025 +0800|rockchip: backport gmac clk fixes for rk3588
+42afc4e64e|Tianling Shen|Sun Jan 19 16:01:46 2025 +0800|Merge Official Source
+99431e3150|Florian Maurer|Thu Jan 16 09:29:55 2025 +0100|mediatek-filogic: fix wax220 wifi leds
+0f8a5a5fd6|Hauke Mehrtens|Fri Jan 17 23:23:10 2025 +0100|mediatek: filogic: Cudy WR3000H: Fix SUPPORTED_DEVICES
+676dcb1b2c|Christian Marangi|Tue May 7 20:44:27 2024 +0200|ipq4019: patch initialization of Lantiq DSL on FritzBox 7530.
+144af32b47|David Bauer|Fri Jan 3 21:46:13 2025 +0100|ath79: add extended AR9344 reset sequence
+937b5a3e00|David Bauer|Fri Jan 17 20:51:38 2025 +0100|Revert "ath79: reset ETH switch for AR9344"
+2d077913cd|Robert Marko|Sat Jan 18 12:25:01 2025 +0100|qualcommax: dl-wrx36: fix 2.5G port LED-s
+45aafe67f3|Sander Vanheule|Sat Jan 18 13:39:01 2025 +0100|realtek: Switch RTL8231 driver on Zyxel GS1900-48
+fd5797b7ce|Sander Vanheule|Sat Jan 18 13:48:17 2025 +0100|realtek: rtl839x: Enable RTL8231 MFD driver
+cddcc69ddf|Sander Vanheule|Sat Jan 18 13:45:55 2025 +0100|realtek: rtl839x: Enable AUX MDIO controller
+52ffef6471|Sander Vanheule|Sat Jan 18 13:28:44 2025 +0100|realtek: Update aux-mdio driver
 </details>

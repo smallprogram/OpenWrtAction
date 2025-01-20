@@ -1,0 +1,9 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+c4f95cb0f|Dirk Brenken|Sun Jan 19 21:08:28 2025 +0100|banIP: update 1.5.0-2
+a10ed14f1|Dominik Borghorst|Thu Jan 16 20:02:42 2025 +0100|lpac: update to 2.2.1, add support for custom ISD-R AID
+8628bd16b|Wesley Gimenes|Sat Jan 18 00:04:24 2025 -0300|netbird: update to 0.36.3
+4055a2b0a|Javier Marcet|Sat Jan 18 12:04:21 2025 +0100|docker-compose: Update to version 2.32.4
+</details>
