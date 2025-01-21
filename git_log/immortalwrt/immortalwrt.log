@@ -2,16 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0511e98b81|Tianling Shen|Sun Jan 19 16:19:59 2025 +0800|rockchip: backport gmac clk fixes for rk3588
-42afc4e64e|Tianling Shen|Sun Jan 19 16:01:46 2025 +0800|Merge Official Source
-99431e3150|Florian Maurer|Thu Jan 16 09:29:55 2025 +0100|mediatek-filogic: fix wax220 wifi leds
-0f8a5a5fd6|Hauke Mehrtens|Fri Jan 17 23:23:10 2025 +0100|mediatek: filogic: Cudy WR3000H: Fix SUPPORTED_DEVICES
-676dcb1b2c|Christian Marangi|Tue May 7 20:44:27 2024 +0200|ipq4019: patch initialization of Lantiq DSL on FritzBox 7530.
-144af32b47|David Bauer|Fri Jan 3 21:46:13 2025 +0100|ath79: add extended AR9344 reset sequence
-937b5a3e00|David Bauer|Fri Jan 17 20:51:38 2025 +0100|Revert "ath79: reset ETH switch for AR9344"
-2d077913cd|Robert Marko|Sat Jan 18 12:25:01 2025 +0100|qualcommax: dl-wrx36: fix 2.5G port LED-s
-45aafe67f3|Sander Vanheule|Sat Jan 18 13:39:01 2025 +0100|realtek: Switch RTL8231 driver on Zyxel GS1900-48
-fd5797b7ce|Sander Vanheule|Sat Jan 18 13:48:17 2025 +0100|realtek: rtl839x: Enable RTL8231 MFD driver
-cddcc69ddf|Sander Vanheule|Sat Jan 18 13:45:55 2025 +0100|realtek: rtl839x: Enable AUX MDIO controller
-52ffef6471|Sander Vanheule|Sat Jan 18 13:28:44 2025 +0100|realtek: Update aux-mdio driver
+eb658d5020|Tianling Shen|Sun Jan 19 17:04:17 2025 +0800|rockchip: change eth phy mode to rgmii-id for orangepi r1 plus lts
 </details>

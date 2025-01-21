@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b2cdb3a10|kcro227|Sun Jan 19 23:20:10 2025 +0800|mediatek: add for cmcc xr30 support
+6488a0805|aiamadeus|Wed Dec 18 23:08:21 2024 +0800|mac80211: backport QCA2066 support
 </details>
