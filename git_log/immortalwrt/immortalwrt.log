@@ -1,6 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-eb658d5020|Tianling Shen|Sun Jan 19 17:04:17 2025 +0800|rockchip: change eth phy mode to rgmii-id for orangepi r1 plus lts
-</details>

@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-645faa7661|Hosted Weblate|Mon Jan 20 11:53:40 2025 +0100|Translated using Weblate (Dutch)
+d889c27b4b|Felix Fietkau|Tue Jan 21 09:30:32 2025 +0100|luci-mod-network: fix disabling packet steering
 </details>
