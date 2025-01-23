@@ -1,0 +1,34 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d0b812c1ff|Tianling Shen|Wed Jan 22 17:15:59 2025 +0800|Merge Official Source
+15887235c1|Danila Romanov|Mon Jan 20 18:40:20 2025 +0300|generic: mtk_eth_soc: reduce driver memory usage
+761b244964|John Audia|Tue Jan 21 15:07:46 2025 -0500|kernel: bump 6.6 to 6.6.73
+0dc0b98295|INAGAKI Hiroshi|Fri May 24 13:38:02 2024 +0900|realtek: add support for XikeStor SKS8300-8X
+9fc80b684c|INAGAKI Hiroshi|Mon Dec 23 21:00:26 2024 +0900|realtek: suppress debug messages of RTL930x SerDes in PHY driver
+09fbc5d343|INAGAKI Hiroshi|Mon Dec 23 20:58:30 2024 +0900|realtek: add 10GBASER to supported interfaces in DSA driver
+d45890f6cd|INAGAKI Hiroshi|Sun Jan 19 19:01:28 2025 +0900|realtek: add aux-mdio and pinctrl nodes to rtl930x.dtsi
+70198cac36|INAGAKI Hiroshi|Sun Jan 19 18:56:15 2025 +0900|realtek: rtl930x: enable rtl8231-related drivers
+ad8bc8900d|INAGAKI Hiroshi|Sun May 26 02:25:13 2024 +0900|realtek: rtl930x: enable HIGHMEM for large memory (>256M)
+5410d1299e|INAGAKI Hiroshi|Mon Jan 13 17:30:26 2025 +0900|build: add additional parameter support to Build/jffs2
+db0fcc0c8d|INAGAKI Hiroshi|Mon Jan 13 19:46:10 2025 +0900|tools: firmware-utils: update to Git HEAD (2024-01-14)
+7423e67e1b|Lech Perczak|Tue Jan 21 00:10:50 2025 +0100|ath79: meraki-mr18: fix initramfs build
+42a253c7e8|Mikhail Zhilkin|Sat Jan 11 14:55:17 2025 +0000|mediatek: Xiaomi AX3000t: fix soft brick for the rd23 model
+a6b0abf466|Mikhail Zhilkin|Sat Jan 11 14:46:05 2025 +0000|mediatek: replace multiple fw_setenv calls by the bulk one
+1d021458fd|John Audia|Fri Jan 17 08:25:17 2025 -0500|kernel: bump 6.6 to 6.6.72
+f9813f41b2|Florian Maurer|Wed Jan 15 21:31:47 2025 +0100|lantiq: xrx200: fb7430 set correct label-mac
+65de1e0f78|John Audia|Thu Jan 9 21:22:48 2025 -0500|kernel: add missing symbols for lxc
+ca7324134d|Lech Perczak|Thu Jan 9 21:40:03 2025 +0100|ath79: add support for Ruckus R500
+e046f8c318|Felix Fietkau|Mon Jan 20 22:16:37 2025 +0100|uci: update to Git HEAD (2025-01-20)
+334c649a8d|Christian Marangi|Mon Jan 20 17:14:47 2025 +0100|kernel: fix rootfs initramfs not updating on subsequent single build
+4a8717b5e7|Robert Marko|Mon Jan 20 13:08:38 2025 +0100|fritz-tools: increase PKG_RELEASE
+b2cac2a978|Dustin Gathmann|Wed Jan 15 15:55:29 2025 +0100|lantiq: fritz_cal_extract with reverse option for AVM FritzBox 7430
+f80f52163a|Anton Yu. Ivanusev|Thu Jan 16 21:05:38 2025 +0500|ramips: fixes for Keenetic KN-1711,1713,1910
+3d63a41ffa|Aleksander Jan Bajkowski|Wed Jan 15 19:21:24 2025 +0100|mediatek: EX5601-T0 add Zyxel EX5601-T1 and T-56 alias
+32c6b9064a|Lech Perczak|Wed Nov 20 03:45:46 2024 +0100|ath79: zte-mf28x-common: fix initramfs execution
+6720958659|Lech Perczak|Wed Nov 20 03:45:21 2024 +0100|ath79: lzma-loader: expose LZMA_TEXT_ADDRESS configuration again
+9454331b7f|Andrea Pesaresi|Wed Jan 15 01:15:20 2025 +0100|ethtool: update to 6.11
+9096f996ba|Tony Ambardar|Wed Jan 1 04:48:56 2025 -0800|mac80211: Fix tracing backport
+ec8a128cbb|Manuel Fombuena|Tue Jan 14 12:37:20 2025 +0000|generic: add leds_st1202 patch to fix NULL pointer access
+</details>

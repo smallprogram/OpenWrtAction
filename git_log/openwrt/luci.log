@@ -2,5 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d889c27b4b|Felix Fietkau|Tue Jan 21 09:30:32 2025 +0100|luci-mod-network: fix disabling packet steering
+31fec23cdd|Jan Pazdziora|Fri Jan 10 14:53:47 2025 +0100|luci-base: allow query params with POST.
+070b2e57c6|Erik Karlsson|Wed Jan 8 13:00:57 2025 +0100|luci-mod-network: handle default protocol for UCI interfaces
+ba1fb8ee42|Erik Karlsson|Wed Jan 8 12:22:44 2025 +0100|luci-base: handle default protocol for UCI interfaces
+ff52c0e358|Jan Pazdziora|Tue Jan 14 18:07:33 2025 +0100|luci-base: Enforce maximal firewall zone length in the Create / Assign scenario as well.
+9e10f25c18|Jan Pazdziora|Fri Jan 10 15:06:19 2025 +0100|luci-app-ddns: avoid Absent Interface: "wan" when it does not exist and the Alias Interface is likely what we want for the default.
+cb8f54a1b5|Jan Pazdziora|Sat Jan 11 11:39:10 2025 +0100|luci-app-ddns: show the URL which will be used.
+9d9a7f42d8|Anya Lin|Sat Jan 11 17:34:19 2025 +0800|luci-base: add member `allowduplicates` to `DynamicList`
+822822f7d4|Hosted Weblate|Wed Jan 22 07:38:36 2025 +0100|Translated using Weblate (Chinese (Traditional Han script))
 </details>

@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d1d67be52|ImmortalWrt AutoUpdate Bot|Sun Jan 19 09:24:11 2025 +0000|v2ray-plugin: Update to 5.25.0
+045c3e1c|coolsnowwolf|Thu Jan 23 04:10:20 2025 +0800|dockerd: use device config for luci js
 </details>

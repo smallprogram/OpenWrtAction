@@ -2,10 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b7bbd4259|Ryan Keane|Wed Nov 13 03:14:03 2024 -0800|git: Set PKG_FORTIFY_SOURCE to 0 when lto enabled
-59db14703|Vladimir Ulrich|Mon Jan 20 08:20:20 2025 +0300|zoneinfo: Updated to 2025a release.
-6f7562dee|Brian J. Murrell|Fri Jan 3 15:54:13 2025 -0500|mwan3: Add support for nslookup track method
-c44289297|Brian J. Murrell|Thu Jan 9 13:57:07 2025 +0000|mwan3: Bug fixes with nping usage
-473ea34a9|Mohd Husaam Mehdi|Wed Jan 15 19:45:11 2025 +0530|vsftpd: fix bug related to option conf_file
-85fa8cfe0|Yun Wang|Mon Jan 20 16:58:32 2025 +0800|syncthing: Update to 1.29.2 and Change logfile path
+0dceb9d0f|FriesI23 Qin|Thu Jan 16 08:27:20 2025 +0800|ddns-scripts: Fixup dnspod.cn-v3
+9d5da216c|FriesI23 Qin|Tue Jan 14 14:20:10 2025 +0800|ddns-scripts: Fixup dnspod.cn-v3
 </details>

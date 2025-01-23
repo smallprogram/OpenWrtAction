@@ -2,14 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-761b244964|John Audia|Tue Jan 21 15:07:46 2025 -0500|kernel: bump 6.6 to 6.6.73
-0dc0b98295|INAGAKI Hiroshi|Fri May 24 13:38:02 2024 +0900|realtek: add support for XikeStor SKS8300-8X
-9fc80b684c|INAGAKI Hiroshi|Mon Dec 23 21:00:26 2024 +0900|realtek: suppress debug messages of RTL930x SerDes in PHY driver
-09fbc5d343|INAGAKI Hiroshi|Mon Dec 23 20:58:30 2024 +0900|realtek: add 10GBASER to supported interfaces in DSA driver
-d45890f6cd|INAGAKI Hiroshi|Sun Jan 19 19:01:28 2025 +0900|realtek: add aux-mdio and pinctrl nodes to rtl930x.dtsi
-70198cac36|INAGAKI Hiroshi|Sun Jan 19 18:56:15 2025 +0900|realtek: rtl930x: enable rtl8231-related drivers
-ad8bc8900d|INAGAKI Hiroshi|Sun May 26 02:25:13 2024 +0900|realtek: rtl930x: enable HIGHMEM for large memory (>256M)
-5410d1299e|INAGAKI Hiroshi|Mon Jan 13 17:30:26 2025 +0900|build: add additional parameter support to Build/jffs2
-db0fcc0c8d|INAGAKI Hiroshi|Mon Jan 13 19:46:10 2025 +0900|tools: firmware-utils: update to Git HEAD (2024-01-14)
-7423e67e1b|Lech Perczak|Tue Jan 21 00:10:50 2025 +0100|ath79: meraki-mr18: fix initramfs build
+4c380d0f25|Chukun Pan|Wed Jan 15 23:10:26 2025 +0800|mediatek: use standard PHY reset bindings for Cudy WR3000H
+64d1b1089c|Chukun Pan|Thu Dec 5 23:26:18 2024 +0800|mediatek: cleanup device tree for cudy devices
+87632219d4|Chukun Pan|Wed Dec 4 23:26:28 2024 +0800|mediatek: update status led for Cudy TR3000
+82b69dfaf6|Chukun Pan|Mon Dec 9 23:17:06 2024 +0800|mediatek: cudy: fixes 2.5G PHY interrupt support
+ab375a3484|Chukun Pan|Tue Dec 3 23:02:15 2024 +0800|mediatek: cudy: fixes typo for spi and mtd properties
+2f2e21a52b|Álvaro Fernández Rojas|Wed Jan 22 20:42:49 2025 +0100|generic: backport pending gpio-regmap ops patch
+12a07e934c|Álvaro Fernández Rojas|Wed Jan 22 20:34:26 2025 +0100|generic: fix version number on realtek phy patches
+3a189e3831|Daniel Golle|Fri Jan 17 20:53:03 2025 +0000|generic: net: phy: realtek: expose temperature sensors
+ee730a66e9|Mieczyslaw Nalewaj|Wed Jan 22 17:05:30 2025 +0100|generic: refresh hack patches
+478041997f|Felix Fietkau|Wed Jan 22 12:40:57 2025 +0100|kernel: add missing version number to the page pool backport patch
+9508ca44eb|Felix Fietkau|Wed Jan 22 12:11:56 2025 +0100|kernel: backport improvement to page pool fragment handling from 6.7
+15887235c1|Danila Romanov|Mon Jan 20 18:40:20 2025 +0300|generic: mtk_eth_soc: reduce driver memory usage
 </details>
