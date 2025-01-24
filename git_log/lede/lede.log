@@ -1,9 +1,0 @@
-<details> <summary> <b>lede new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-c15d43eae|coolsnowwolf|Thu Jan 23 04:23:52 2025 +0800|kernel: bump 6.6 to 6.6.73
-08296f25e|coolsnowwolf|Thu Jan 23 04:20:57 2025 +0800|gpio-button-hotplug: fix for linux 6.12
-89624f51b|coolsnowwolf|Thu Jan 23 02:43:23 2025 +0800|kernel: bump 6.12 to 6.12.10
-1999fa3f2|Internet1235|Wed Jan 22 21:46:55 2025 +0800|apk: bump to Git HEAD 2024-10-28 (#13304)
-</details>

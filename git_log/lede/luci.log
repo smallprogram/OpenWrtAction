@@ -1,9 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-ca8e38b2|coolsnowwolf|Thu Jan 23 03:49:59 2025 +0800|luci-app-dockerman: Use apk compatible versioning
-f6a7813b|coolsnowwolf|Thu Jan 23 02:20:08 2025 +0800|luci-theme-design: add modem menu icon
-240f4c44|coolsnowwolf|Thu Jan 23 00:48:48 2025 +0800|luci-theme-design: add design theme
-c76d2823|coolsnowwolf|Thu Jan 23 00:46:29 2025 +0800|luci-mod-network: fix 6Ghz wireless luci display error
-</details>
