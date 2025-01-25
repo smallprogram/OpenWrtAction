@@ -2,5 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-481215bab|Dirk Brenken|Thu Jan 23 20:11:11 2025 +0100|banIP: update 1.5.0-3
+bf3333594|Federico Capoano|Thu Jan 23 17:58:34 2025 -0300|coova-chilli: Fix WolfSSL support
+eaf00f62d|Jan Klos|Fri Jan 24 18:11:54 2025 +0100|nut: add --without-nut_monitor to configure args nut_monitor is not used anyway and is needlessly built & does not work with python 3.13
+9cd00fb19|Coia Prant|Wed Jan 15 16:21:53 2025 +0000|ddns-scripts: get l3 device for bind network using curl
+a36979c69|Othmar Truniger|Thu Jan 23 19:32:27 2025 +0100|libfmt: bump to version 11.1.2
+ca9f2f4b5|Lucian CRISTIAN|Thu Jan 23 21:47:21 2025 +0200|frr: update to 10.2.1
+8fcb4bc86|Lucian CRISTIAN|Thu Jan 23 21:46:11 2025 +0200|libyang: update to 2.1.128
+643afd897|Hirokazu MORIKAWA|Thu Jan 23 14:27:18 2025 +0900|node: January 21, 2025 Security Releases
+d0d67ded9|Ray Wang|Thu Jan 23 14:43:06 2025 +0800|hev-socks5-server: update to 2.7.0
+d31598167|Ray Wang|Thu Jan 23 14:51:51 2025 +0800|hev-socks5-tproxy: update to 2.6.0
+2466aaccc|Thibaut VARÈNE|Thu Jan 23 11:48:44 2025 +0100|uspot: update to Git HEAD (2025-01-20)
 </details>

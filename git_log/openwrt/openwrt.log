@@ -2,10 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-78f908407e|Sergey Ryazanov|Thu Jan 23 00:26:54 2025 +0200|kernel: vrx518_tc: bump PKG_RELEASE
-6d6dc3a3c9|Sergey Ryazanov|Thu Jan 23 00:26:53 2025 +0200|ipq40xx: fix compatibility with linux-atm tools
-470335450e|Sergey Ryazanov|Thu Jan 23 00:26:52 2025 +0200|kernel: vrx518_tc: fix ADSL/ATM operation
-7bd579689d|Sergey Ryazanov|Thu Jan 23 00:26:51 2025 +0200|kernel: vrx518_tc: fix RX desc phys to virt mapping
-0fd9d00cd6|Dim Fish|Fri Oct 11 19:25:29 2024 +0300|mediatek: add Airoha AN8855 gigabit switch driver
-17dc0797d0|Felix Fietkau|Thu Jan 23 11:36:59 2025 +0100|mt76: update to Git HEAD (2025-01-22)
+9ada8578fd|Florian Maurer|Wed Jan 22 19:59:12 2025 +0100|mediatek-mt7622: netgear-wax206 fix wifi leds
+075571b023|Mathew McBride|Fri Jan 17 16:58:05 2025 +1100|armsr: add Hyper-V on Arm64 support
+6a7fa68569|Sander Vanheule|Fri Jan 24 17:07:21 2025 +0100|realtek: Fix old compatible for HPE 1920-8G PoE
+8e78bc39a3|Ivan Deng|Thu Jan 16 00:53:36 2025 -0800|qualcommax: add missing WAN LED support to Spectrum SAX1V1K routers
 </details>

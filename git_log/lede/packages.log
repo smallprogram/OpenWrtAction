@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-045c3e1c|coolsnowwolf|Thu Jan 23 04:10:20 2025 +0800|dockerd: use device config for luci js
+ac5ec89f|coolsnowwolf|Fri Jan 24 19:42:33 2025 +0800|Merge pull request #890 from Internet1235/rust
+c31d6965|Internet1235|Fri Jan 24 17:03:55 2025 +0800|rust: update to 1.84.0
 </details>

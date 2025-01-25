@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8ae0008909|Jan Pazdziora|Fri Jan 10 15:02:03 2025 +0100|luci-base: expose static IPv6 configuration even if IPv6-PD is enabled.
+2c7b18b0f6|Eric Fahlgren|Thu Jan 23 15:15:23 2025 -0800|luci-app-attendedsysupgrade: sort latest version array
 </details>

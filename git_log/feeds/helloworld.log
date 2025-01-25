@@ -2,15 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-547daf5|coolsnowwolf|Thu Jan 23 16:44:45 2025 +0800|Merge pull request #1669 from zxlhhyccc/patch-2
-daf193b|coolsnowwolf|Thu Jan 23 16:44:35 2025 +0800|Merge pull request #1668 from zxlhhyccc/patch-1
-2d2c0a7|coolsnowwolf|Thu Jan 23 16:44:21 2025 +0800|Merge pull request #1670 from msdos03/ss-libev
-e38bbfb|coolsnowwolf|Thu Jan 23 16:43:12 2025 +0800|Merge pull request #1672 from zxlhhyccc/xhttp
-2ec0bb8|zxlhhyccc|Mon Jan 20 22:18:18 2025 +0800|luci-app-ssr-plus: Add separate Xudp mux for XHTTP and fixed vmess import sni issues.
-ca0b5be|Lu jicong|Sun Jan 19 20:19:26 2025 +0800|shadowsocks-libev: avoid downloading from openwrt mirror
-6faf687|Lu jicong|Sun Jan 19 19:50:32 2025 +0800|shadowsocks-libev: backport not merged fix
-49cf304|Lu jicong|Sun Jan 19 19:36:15 2025 +0800|shadowsocks-libev: update mbedtls 3.6 build fixing patch
-cee47e8|zxl hhyccc|Sun Jan 19 00:12:45 2025 +0800|v2ray-plugin: Fix `GO_PKG` module path.
-d68788d|zxl hhyccc|Sat Jan 18 23:24:08 2025 +0800|v2ray-plugin: update to 5.25.0
-4382dba|zxl hhyccc|Sat Jan 18 23:22:55 2025 +0800|v2ray-core: update to 5.25.0
+fa8760f|coolsnowwolf|Fri Jan 24 19:29:22 2025 +0800|Merge pull request #1675 from zxlhhyccc/v4
+2055c88|zxlhhyccc|Thu Jan 23 22:25:32 2025 +0800|luci-app-ssr-plus: Fix Netflix's shunt domain list cannot proxy access.
 </details>

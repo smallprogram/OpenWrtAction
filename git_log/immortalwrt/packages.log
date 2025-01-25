@@ -1,0 +1,26 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ebd7b0ee3|Tianling Shen|Fri Jan 24 15:57:01 2025 +0800|Merge Official Source
+49860bb40|Tianling Shen|Fri Jan 24 15:56:43 2025 +0800|Node.js: sync with upstream source
+643afd897|Hirokazu MORIKAWA|Thu Jan 23 14:27:18 2025 +0900|node: January 21, 2025 Security Releases
+d0d67ded9|Ray Wang|Thu Jan 23 14:43:06 2025 +0800|hev-socks5-server: update to 2.7.0
+d31598167|Ray Wang|Thu Jan 23 14:51:51 2025 +0800|hev-socks5-tproxy: update to 2.6.0
+2466aaccc|Thibaut VARÈNE|Thu Jan 23 11:48:44 2025 +0100|uspot: update to Git HEAD (2025-01-20)
+481215bab|Dirk Brenken|Thu Jan 23 20:11:11 2025 +0100|banIP: update 1.5.0-3
+0dceb9d0f|FriesI23 Qin|Thu Jan 16 08:27:20 2025 +0800|ddns-scripts: Fixup dnspod.cn-v3
+9d5da216c|FriesI23 Qin|Tue Jan 14 14:20:10 2025 +0800|ddns-scripts: Fixup dnspod.cn-v3
+b7bbd4259|Ryan Keane|Wed Nov 13 03:14:03 2024 -0800|git: Set PKG_FORTIFY_SOURCE to 0 when lto enabled
+59db14703|Vladimir Ulrich|Mon Jan 20 08:20:20 2025 +0300|zoneinfo: Updated to 2025a release.
+6f7562dee|Brian J. Murrell|Fri Jan 3 15:54:13 2025 -0500|mwan3: Add support for nslookup track method
+c44289297|Brian J. Murrell|Thu Jan 9 13:57:07 2025 +0000|mwan3: Bug fixes with nping usage
+473ea34a9|Mohd Husaam Mehdi|Wed Jan 15 19:45:11 2025 +0530|vsftpd: fix bug related to option conf_file
+85fa8cfe0|Yun Wang|Mon Jan 20 16:58:32 2025 +0800|syncthing: Update to 1.29.2 and Change logfile path
+9ea813a30|Peter van Dijk|Tue Jan 14 10:45:50 2025 +0100|pdns-recursor: update to 5.2.0
+c4f95cb0f|Dirk Brenken|Sun Jan 19 21:08:28 2025 +0100|banIP: update 1.5.0-2
+a10ed14f1|Dominik Borghorst|Thu Jan 16 20:02:42 2025 +0100|lpac: update to 2.2.1, add support for custom ISD-R AID
+8628bd16b|Wesley Gimenes|Sat Jan 18 00:04:24 2025 -0300|netbird: update to 0.36.3
+4055a2b0a|Javier Marcet|Sat Jan 18 12:04:21 2025 +0100|docker-compose: Update to version 2.32.4
+cd89956c1|Dirk Brenken|Fri Jan 17 16:51:15 2025 +0100|adblock: update 4.2.3-3
+</details>

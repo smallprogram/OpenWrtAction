@@ -1,0 +1,24 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+72b5177643|Tianling Shen|Fri Jan 24 16:47:57 2025 +0800|uboot-mediatek: reorder patches
+1ea5ae7ce9|Tianling Shen|Fri Jan 24 16:07:47 2025 +0800|Merge Official Source
+78f908407e|Sergey Ryazanov|Thu Jan 23 00:26:54 2025 +0200|kernel: vrx518_tc: bump PKG_RELEASE
+6d6dc3a3c9|Sergey Ryazanov|Thu Jan 23 00:26:53 2025 +0200|ipq40xx: fix compatibility with linux-atm tools
+470335450e|Sergey Ryazanov|Thu Jan 23 00:26:52 2025 +0200|kernel: vrx518_tc: fix ADSL/ATM operation
+7bd579689d|Sergey Ryazanov|Thu Jan 23 00:26:51 2025 +0200|kernel: vrx518_tc: fix RX desc phys to virt mapping
+0fd9d00cd6|Dim Fish|Fri Oct 11 19:25:29 2024 +0300|mediatek: add Airoha AN8855 gigabit switch driver
+17dc0797d0|Felix Fietkau|Thu Jan 23 11:36:59 2025 +0100|mt76: update to Git HEAD (2025-01-22)
+4c380d0f25|Chukun Pan|Wed Jan 15 23:10:26 2025 +0800|mediatek: use standard PHY reset bindings for Cudy WR3000H
+64d1b1089c|Chukun Pan|Thu Dec 5 23:26:18 2024 +0800|mediatek: cleanup device tree for cudy devices
+87632219d4|Chukun Pan|Wed Dec 4 23:26:28 2024 +0800|mediatek: update status led for Cudy TR3000
+82b69dfaf6|Chukun Pan|Mon Dec 9 23:17:06 2024 +0800|mediatek: cudy: fixes 2.5G PHY interrupt support
+ab375a3484|Chukun Pan|Tue Dec 3 23:02:15 2024 +0800|mediatek: cudy: fixes typo for spi and mtd properties
+2f2e21a52b|Álvaro Fernández Rojas|Wed Jan 22 20:42:49 2025 +0100|generic: backport pending gpio-regmap ops patch
+12a07e934c|Álvaro Fernández Rojas|Wed Jan 22 20:34:26 2025 +0100|generic: fix version number on realtek phy patches
+3a189e3831|Daniel Golle|Fri Jan 17 20:53:03 2025 +0000|generic: net: phy: realtek: expose temperature sensors
+ee730a66e9|Mieczyslaw Nalewaj|Wed Jan 22 17:05:30 2025 +0100|generic: refresh hack patches
+478041997f|Felix Fietkau|Wed Jan 22 12:40:57 2025 +0100|kernel: add missing version number to the page pool backport patch
+9508ca44eb|Felix Fietkau|Wed Jan 22 12:11:56 2025 +0100|kernel: backport improvement to page pool fragment handling from 6.7
+</details>
