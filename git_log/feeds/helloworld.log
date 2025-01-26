@@ -1,7 +1,0 @@
-<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-fa8760f|coolsnowwolf|Fri Jan 24 19:29:22 2025 +0800|Merge pull request #1675 from zxlhhyccc/v4
-2055c88|zxlhhyccc|Thu Jan 23 22:25:32 2025 +0800|luci-app-ssr-plus: Fix Netflix's shunt domain list cannot proxy access.
-</details>

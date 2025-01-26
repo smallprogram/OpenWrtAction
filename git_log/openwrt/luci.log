@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2c7b18b0f6|Eric Fahlgren|Thu Jan 23 15:15:23 2025 -0800|luci-app-attendedsysupgrade: sort latest version array
+a86c3ad6f1|Hannu Nyman|Sat Jan 25 17:54:27 2025 +0200|build: enable packaging of Yucatec Maya translations
+ea4e57877b|Hannu Nyman|Sat Jan 25 17:48:47 2025 +0200|build: enable packaging of Filipino and Persian translations
+be25137852|Hosted Weblate|Sat Jan 25 05:21:17 2025 +0100|Added translation using Weblate (Tamil)
 </details>
