@@ -1,0 +1,9 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+9ccc290b8|Tianling Shen|Sun Jan 26 15:57:11 2025 +0800|rustdesk-server: run as unprivileged user
+e59f154df|Tianling Shen|Sun Jan 26 15:24:47 2025 +0800|rustdesk-server: rename service files to rustdesk-server
+d2f507afd|Yun Wang|Sun Jan 26 13:43:07 2025 +0800|rustdesk-server: add the init.d and uci file for rustdesk-server - Added an init.d file to enable automatic startup of rustdesk-server on boot. - Added a uci configuration file to uniformly control the behavior of the   rustdesk-server program and support integration with the luci application. - Since the program itself does not support custom working directories,   and OpenWRT's init.d does not have parameters to set the working   directory, using `cd` in the init script seems to be the best solution   without patching the source code. This approach will not impact   performance under the current requirements.
+2b11522ea|ImmortalWrt AutoUpdate Bot|Sat Jan 25 16:11:17 2025 +0000|ddns-go: Update to 6.8.1
+</details>

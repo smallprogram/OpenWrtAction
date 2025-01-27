@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7c4b66e|lwb1978|Sat Jan 25 22:21:21 2025 +0800|luci: optimize node_list page
+f26bb6f|lwb1978|Mon Jan 27 11:30:17 2025 +0800|luci: checking geo files when using shunt nodes
 </details>

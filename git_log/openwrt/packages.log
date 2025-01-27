@@ -2,14 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f80fbec40|Juan Orti Alcaine|Sat Jan 25 16:58:35 2025 +0100|banip: Block UDP ports for HTTP/3
-533b1b987|Christian Marangi|Thu Jan 23 16:39:04 2025 +0100|net-mtools: bump to release 3.2
-d1614ac07|Ivan Chashkin|Mon Jan 20 17:22:35 2025 +0300|yggdrasil: update to 0.5.12
-69c29a5b2|Markus Gothe|Wed Jan 15 18:54:29 2025 +0100|openssh: Validate keys and regenerate if needed.
-3ac8092a3|Erik Karlsson|Wed Jan 15 14:15:31 2025 +0100|openssh: fix killing of active sessions on shutdown
-19e9dde02|Michael Heimpold|Thu Jan 23 06:58:55 2025 +0100|php8-pecl-dio: update to 0.3.0
-aadb3bccb|Michael Heimpold|Thu Jan 23 07:00:17 2025 +0100|php8-pecl-http: update to 4.2.6
-30dc14de6|Michael Heimpold|Thu Jan 23 07:02:21 2025 +0100|php8-pecl-xdebug: update to 3.4.1
-fa0328232|Michael Heimpold|Thu Jan 23 07:01:43 2025 +0100|php8-pecl-redis: update to 6.1.0
-8214c2002|Michael Heimpold|Thu Jan 23 07:00:57 2025 +0100|php8-pecl-krb5: update to 1.2.2
+737c0601c|Dirk Brenken|Sun Jan 26 19:58:03 2025 +0100|banip: update 1.5.0-5
+243480662|Matthias Schiffer|Sun Jan 26 15:13:19 2025 +0100|fastd: update to v23
+73fb1c4b3|Eric Fahlgren|Sat Jan 25 15:25:02 2025 -0800|owut: update to 2025.01.25
+9ef2d15c2|Michael Heimpold|Sat Jan 25 12:15:16 2025 +0100|openssh: fix recursive key file removal
+359a615d6|Tianling Shen|Sun Jan 26 13:01:26 2025 +0800|v2ray-core: Update to 5.25.1
 </details>
