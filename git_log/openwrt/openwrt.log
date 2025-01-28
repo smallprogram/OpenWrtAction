@@ -2,13 +2,18 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7165937c3b|Eric Fahlgren|Sun Jan 26 09:25:13 2025 -0800|octeon: ubnt-usg: add board name to supported devices
-3295f6f1c2|Paweł Owoc|Sun Jan 26 19:53:31 2025 +0100|ramips: mt7620: fix patching mac address in caldata
-335252c977|Linus Walleij|Sun Jan 12 00:00:01 2025 +0100|qoriq: Switch to use a module for mv88e6xxx
-eaa82118ea|Linus Walleij|Sat Jan 11 23:46:34 2025 +0100|mvebu: Switch to use a module for mv88e6xxx
-b7af54d5c1|Sander Vanheule|Sat Jan 18 21:40:06 2025 +0100|realtek: Simple conversions to RTL8231 MFD driver
-c0f06cb6ac|Felix Fietkau|Sun Jan 26 21:20:00 2025 +0100|unetd: update to Git HEAD (2025-01-26)
-a3154cfeb6|Felix Fietkau|Sun Jan 26 21:18:27 2025 +0100|netifd: remove leftover wifi reload_legacy call
-80ba0d958d|Felix Fietkau|Sun Jan 26 21:10:53 2025 +0100|unetd: fix interface teardown
-22d1e6cd26|Tony Ambardar|Tue Jan 21 23:00:35 2025 -0800|tools/dwarves: update to v1.29
+6dc0f0c50c|Uwe Kleine-König|Mon Jan 27 16:12:23 2025 +0100|dnsmasq: add fix related to DNSSEC verification from upstream
+dab52c00d7|Hauke Mehrtens|Mon Jan 27 01:09:33 2025 +0100|apm821xx: NETGEAR WNDR4700: Fix compat version
+0a7e92c244|Hauke Mehrtens|Mon Jan 27 01:37:39 2025 +0100|wolfssl: Update to version 5.7.6
+d981f28f76|Thomas Richard|Mon Jan 27 14:02:28 2025 +0100|stm32: enable CONFIG_SMSC_PHY
+8ffeeaee67|Robert Marko|Mon Jan 27 14:25:09 2025 +0100|generic: add missing CONFIG_LEDS_ST1202 symbol
+c34eee5f39|Felix Fietkau|Mon Jan 27 12:43:13 2025 +0100|unetd: update to Git HEAD (2025-01-27)
+a9b408a97f|Christian Marangi|Mon Jan 27 12:14:28 2025 +0100|airoha: an7581: replace clock patch with upstream version
+b7edf88b0f|Christian Marangi|Mon Jan 27 12:02:24 2025 +0100|airoha: an7581: replace eMMC support with upstream version
+fbbfcbf150|Christian Marangi|Mon Jan 27 11:07:13 2025 +0100|airoha: an7581: refresh and fix cpufreq patch
+62872f8bfd|Anders Melchiorsen|Wed Jan 22 21:54:57 2025 +0100|ramips: restore full switch performance for USW-Flex
+d2eaaa90d5|Tim Harvey|Thu Jan 23 10:29:55 2025 -0800|imx: coretexa53: add network configuration for gw82xx-2x
+23a18a57cf|Tim Harvey|Tue Dec 17 14:52:48 2024 -0800|imx: 6.6: add a patch to work around a PCI init hang on IMX8M{M,P}
+1ce87cf25c|Tim Harvey|Tue Dec 17 14:50:51 2024 -0800|imx: 6.6: add some backported kernel patches for Gateworks Venice
+c9f11523dd|Tim Harvey|Tue Dec 17 14:51:57 2024 -0800|generic: 6.6: add backported btsdio patch for cyw437
 </details>

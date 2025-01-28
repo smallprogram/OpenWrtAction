@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-97a7f5c314|Hosted Weblate|Sun Jan 26 05:33:46 2025 +0100|Added translation using Weblate (Tamil)
+48a351432c|Dirk Brenken|Mon Jan 27 23:49:18 2025 +0100|luci-app-adblock: sync with adblock-4.2.4-1
+b9e3d799c4|Stan Grishin|Mon Jan 27 10:46:56 2025 -0800|Merge pull request #7585 from stangri/master-luci-app-pbr
+f3bdf59c00|Stan Grishin|Mon Jan 27 04:42:29 2025 +0000|luci-app-pbr: version bump to sync with principal package
 </details>

@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-41c64f9153|Tianling Shen|Sun Jan 26 16:47:20 2025 +0800|luci-app-rustdesk-server: add new package
+8a84f776|coolsnowwolf|Tue Jan 7 23:15:01 2025 +0800|luci-app-upnp: revert "use ucode backend"
 </details>

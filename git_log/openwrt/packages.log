@@ -2,9 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-737c0601c|Dirk Brenken|Sun Jan 26 19:58:03 2025 +0100|banip: update 1.5.0-5
-243480662|Matthias Schiffer|Sun Jan 26 15:13:19 2025 +0100|fastd: update to v23
-73fb1c4b3|Eric Fahlgren|Sat Jan 25 15:25:02 2025 -0800|owut: update to 2025.01.25
-9ef2d15c2|Michael Heimpold|Sat Jan 25 12:15:16 2025 +0100|openssh: fix recursive key file removal
-359a615d6|Tianling Shen|Sun Jan 26 13:01:26 2025 +0800|v2ray-core: Update to 5.25.1
+f9effa495|Dirk Brenken|Mon Jan 27 23:28:04 2025 +0100|adblock: update 4.2.4-1
+cfd35b6bf|Stan Grishin|Mon Jan 27 04:36:07 2025 +0000|pbr: bugfixes: boot-up and negative dest_addr
 </details>
