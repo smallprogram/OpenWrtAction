@@ -1,7 +1,0 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-f9effa495|Dirk Brenken|Mon Jan 27 23:28:04 2025 +0100|adblock: update 4.2.4-1
-cfd35b6bf|Stan Grishin|Mon Jan 27 04:36:07 2025 +0000|pbr: bugfixes: boot-up and negative dest_addr
-</details>
