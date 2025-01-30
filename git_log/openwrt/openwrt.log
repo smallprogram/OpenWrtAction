@@ -2,11 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-807074309d|Sander Vanheule|Mon Jan 27 22:17:57 2025 +0100|realtek: add PoE enable line to Netgear GS110TPP
-f31c9bb237|Sander Vanheule|Sat Jan 18 21:41:53 2025 +0100|realtek: Switch ApresiaLightGS120GT-SS RTL8231 driver
-734331e4e6|Ivan Deng|Mon Jan 27 22:02:07 2025 -0800|ipq60xx: fix uboot-envtools file syntax error in uci-defaults
-fbe0bd5f64|Álvaro Fernández Rojas|Tue Jan 28 08:28:01 2025 +0100|bmips: shg2500: add missing led controller cells
-3d6a1a7874|Sander Vanheule|Sun Jan 12 17:57:33 2025 +0100|realtek: switch RTL8231 driver for D-Link DGS-1210
-7c0d1c1eb1|Sander Vanheule|Sun Jan 12 17:53:34 2025 +0100|realtek: Switch DGS-1210-10P DTS to gpio.dtsi
-022b7d80bf|Sander Vanheule|Sat Jan 18 16:51:59 2025 +0100|realtek: Drop unused property on DGS-1210 gpio0
+087c5abdf5|Felix Fietkau|Wed Jan 29 21:51:45 2025 +0100|unetd: update to Git HEAD (2025-01-29)
+3e6e9b2116|Felix Baumann|Tue Jan 28 05:12:19 2025 +0100|kexec-tools: update URL
+df1f6e1e18|Paweł Owoc|Thu Jan 2 22:31:33 2025 +0100|qualcommax: ipq807x: Remove OEM UBI volume before upgrade for Linksys MX devices
+2fc99e4f18|Paweł Owoc|Thu Dec 12 19:51:27 2024 +0100|qualcommax: ipq807x: Update u-boot env only when changes for Linksys MX devices
+f1f1b08db5|Paweł Owoc|Sat Feb 24 20:47:58 2024 +0100|qualcommax: ipq807x: Add ability to perform upgrade on current partition for Linksys MX devices
+389ecee729|Paweł Owoc|Sat Feb 24 20:25:43 2024 +0100|base-files: sysupgrade: Add new option -s to perform upgrade on current partition
 </details>

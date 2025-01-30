@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f882f2eee7|Hosted Weblate|Tue Jan 28 06:38:18 2025 +0100|Translated using Weblate (Chinese (Traditional Han script))
+300d746edc|Stan Grishin|Wed Jan 29 11:07:55 2025 -0800|Merge pull request #7588 from stangri/master-luci-app-https-dns-proxy
+f3212f62da|Stan Grishin|Wed Jan 29 11:07:25 2025 -0800|Merge pull request #7587 from stangri/master-luci-app-adblock-fast
+71b40a6287|Stan Grishin|Tue Jan 28 00:51:58 2025 +0000|luci-app-https-dns-proxy: version bump
+f3219bcfff|Stan Grishin|Mon Jan 27 19:17:08 2025 +0000|luci-app-adblock-fast: version bump
 </details>

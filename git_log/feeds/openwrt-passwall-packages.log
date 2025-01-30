@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-08d7f2d|A-BO|Tue Jan 28 16:09:23 2025 +0800|naiveproxy: fix arm_cortex-a5_vfpv4 hash
-</details>
