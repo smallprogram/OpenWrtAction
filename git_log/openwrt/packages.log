@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bee722787|Stan Grishin|Tue Jan 28 00:23:59 2025 +0000|https-dns-proxy: bugfixes and improvements
-2e764368c|Stan Grishin|Mon Jan 27 19:14:28 2025 +0000|adblock-fast: bugfixes: boot-up, StevenBlack list, new CERT.pl source
+089f77e61|Jan Hák|Tue Jan 28 10:51:58 2025 +0100|knot: update to version 3.4.4
+21c63a67e|John Audia|Tue Jan 28 18:38:28 2025 -0500|snort3: update to 3.6.2.0
+3e42bc8bc|John Audia|Tue Jan 28 18:47:29 2025 -0500|libdaq3: update to 3.0.18
+445e40c3c|Eric Fahlgren|Wed Jan 29 10:49:47 2025 -0800|owut: update to 2025.01.29
 </details>

@@ -2,10 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-087c5abdf5|Felix Fietkau|Wed Jan 29 21:51:45 2025 +0100|unetd: update to Git HEAD (2025-01-29)
-3e6e9b2116|Felix Baumann|Tue Jan 28 05:12:19 2025 +0100|kexec-tools: update URL
-df1f6e1e18|Paweł Owoc|Thu Jan 2 22:31:33 2025 +0100|qualcommax: ipq807x: Remove OEM UBI volume before upgrade for Linksys MX devices
-2fc99e4f18|Paweł Owoc|Thu Dec 12 19:51:27 2024 +0100|qualcommax: ipq807x: Update u-boot env only when changes for Linksys MX devices
-f1f1b08db5|Paweł Owoc|Sat Feb 24 20:47:58 2024 +0100|qualcommax: ipq807x: Add ability to perform upgrade on current partition for Linksys MX devices
-389ecee729|Paweł Owoc|Sat Feb 24 20:25:43 2024 +0100|base-files: sysupgrade: Add new option -s to perform upgrade on current partition
+c87a767801|Daniel Golle|Thu Jan 30 05:49:43 2025 +0000|generic: net: phy: realtek: work-around hang on SerDes setup
+17f8a197f3|Paul Spooren|Wed Jan 29 19:09:54 2025 +0000|config: add VERSION_FIRMWARE_URL
+51b7df9913|Christian Marangi|Thu Jan 30 18:10:10 2025 +0100|procd: update to Git HEAD (2025-01-30)
+85c41253d9|Jan Hoffmann|Thu Jan 30 10:40:25 2025 +0100|mediatek: fix TUF-AX4200 WAN LED
+8390599c9a|Hauke Mehrtens|Wed Jan 29 23:37:34 2025 +0100|x86: Add kmod-drm-i915 as default package
 </details>
