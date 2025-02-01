@@ -2,9 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c87a767801|Daniel Golle|Thu Jan 30 05:49:43 2025 +0000|generic: net: phy: realtek: work-around hang on SerDes setup
-17f8a197f3|Paul Spooren|Wed Jan 29 19:09:54 2025 +0000|config: add VERSION_FIRMWARE_URL
-51b7df9913|Christian Marangi|Thu Jan 30 18:10:10 2025 +0100|procd: update to Git HEAD (2025-01-30)
-85c41253d9|Jan Hoffmann|Thu Jan 30 10:40:25 2025 +0100|mediatek: fix TUF-AX4200 WAN LED
-8390599c9a|Hauke Mehrtens|Wed Jan 29 23:37:34 2025 +0100|x86: Add kmod-drm-i915 as default package
+eb5f98fdf9|Kabuli Chana|Thu Jan 30 17:10:08 2025 -0700|mvebu: fix kmod for switch on wrt32x / venom
+084618f8db|Álvaro Fernández Rojas|Fri Jan 31 08:57:11 2025 +0100|generic: 6.6: backport upstream r8169 patches
+dcc5587374|Juan Pedro Paredes Caballero|Sun Jan 26 20:23:09 2025 +0100|mediatek: filogic: fix 2.5G phy compatible for WR3000H
 </details>

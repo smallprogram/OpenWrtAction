@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-089f77e61|Jan Hák|Tue Jan 28 10:51:58 2025 +0100|knot: update to version 3.4.4
-21c63a67e|John Audia|Tue Jan 28 18:38:28 2025 -0500|snort3: update to 3.6.2.0
-3e42bc8bc|John Audia|Tue Jan 28 18:47:29 2025 -0500|libdaq3: update to 3.0.18
-445e40c3c|Eric Fahlgren|Wed Jan 29 10:49:47 2025 -0800|owut: update to 2025.01.29
+55c559347|Noah Meyerhans|Wed Jan 29 17:23:13 2025 -0500|bind: bump to 9.20.5
 </details>

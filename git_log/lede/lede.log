@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f4a80a4ce|coolsnowwolf|Tue Jan 7 23:36:28 2025 +0800|filogic: fixes huasifei wh3000 led
+62329a55f|coolsnowwolf|Sat Jan 25 22:01:02 2025 +0800|qualcommax: ipq807x: improve support for Aliyun AP8220
+c14fe3928|coolsnowwolf|Fri Jan 31 16:17:05 2025 +0800|qualcommbe: ipq95xx: add qualcomm wifi7 be target support
+d49a28094|coolsnowwolf|Fri Jan 31 15:55:16 2025 +0800|kernel: bump 5.x to latest HEAD
+fac8d770b|coolsnowwolf|Fri Jan 31 15:51:42 2025 +0800|kernel: bump 6.x to latest HEAD
 </details>
