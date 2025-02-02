@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-eb5f98fdf9|Kabuli Chana|Thu Jan 30 17:10:08 2025 -0700|mvebu: fix kmod for switch on wrt32x / venom
-084618f8db|Álvaro Fernández Rojas|Fri Jan 31 08:57:11 2025 +0100|generic: 6.6: backport upstream r8169 patches
-dcc5587374|Juan Pedro Paredes Caballero|Sun Jan 26 20:23:09 2025 +0100|mediatek: filogic: fix 2.5G phy compatible for WR3000H
+69890e16b3|Daniel Golle|Sat Feb 1 05:03:50 2025 +0000|mediatek: mt7622: fix SATA on BPi-R64
 </details>
