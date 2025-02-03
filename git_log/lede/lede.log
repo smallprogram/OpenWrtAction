@@ -1,0 +1,6 @@
+<details> <summary> <b>lede new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+82a54c317|Daniel Golle|Wed Oct 9 00:23:53 2024 +0100|generic: net: phy: use all SerDes MAC interface modes
+</details>

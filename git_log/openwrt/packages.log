@@ -2,6 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-befdf8a5b|Daniel Golle|Thu Jan 30 03:01:27 2025 +0000|cryptsetup: update to version 2.7.5
-6623eadfa|Lucian CRISTIAN|Sat Feb 1 04:54:39 2025 +0200|frr: 10.2.1 fixes
+bf2fb994f|Dirk Brenken|Sun Feb 2 22:15:41 2025 +0100|banIP: update 1.5.0-6
+900e71b60|Antonio Pastor|Thu Jan 30 18:58:58 2025 -0500|netatalk: add uci support
+0bd99d1cb|Antonio Pastor|Sun Jan 26 15:45:59 2025 -0500|netatalk: create small and full variants
+960fde3ac|Antonio Pastor|Sun Jan 26 15:40:21 2025 -0500|netatalk: update to 4.1.1
+7c8295dc2|Sandro Jäckel|Fri Jan 31 15:52:11 2025 +0100|tailscale: update to 1.80.0
 </details>

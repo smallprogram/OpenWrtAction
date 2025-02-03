@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-69890e16b3|Daniel Golle|Sat Feb 1 05:03:50 2025 +0000|mediatek: mt7622: fix SATA on BPi-R64
+c4fe3e9502|Christian Marangi|Mon Feb 3 01:11:37 2025 +0100|ipq806x: make use of ASCII env NVMEM driver for Linksys EAX devices
+73a6cb983c|Christian Marangi|Mon Feb 3 01:08:35 2025 +0100|generic: add pending support for NVMEM ASCII ENV layout driver
+eba2fbf638|Christian Marangi|Mon Feb 3 01:48:39 2025 +0100|ipq806x: fix broken WAN on Linksys EAX and Asrock G10
+cfca9d6894|Shiji Yang|Sun Feb 2 16:00:54 2025 +0800|ramips: fix xtal clock registration issue on RT3883
 </details>

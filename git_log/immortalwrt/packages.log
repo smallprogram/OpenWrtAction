@@ -1,0 +1,42 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a0e048d18|Tianling Shen|Sun Feb 2 20:01:11 2025 +0800|Merge Official Source
+900e71b60|Antonio Pastor|Thu Jan 30 18:58:58 2025 -0500|netatalk: add uci support
+0bd99d1cb|Antonio Pastor|Sun Jan 26 15:45:59 2025 -0500|netatalk: create small and full variants
+960fde3ac|Antonio Pastor|Sun Jan 26 15:40:21 2025 -0500|netatalk: update to 4.1.1
+7c8295dc2|Sandro Jäckel|Fri Jan 31 15:52:11 2025 +0100|tailscale: update to 1.80.0
+befdf8a5b|Daniel Golle|Thu Jan 30 03:01:27 2025 +0000|cryptsetup: update to version 2.7.5
+6623eadfa|Lucian CRISTIAN|Sat Feb 1 04:54:39 2025 +0200|frr: 10.2.1 fixes
+55c559347|Noah Meyerhans|Wed Jan 29 17:23:13 2025 -0500|bind: bump to 9.20.5
+089f77e61|Jan Hák|Tue Jan 28 10:51:58 2025 +0100|knot: update to version 3.4.4
+21c63a67e|John Audia|Tue Jan 28 18:38:28 2025 -0500|snort3: update to 3.6.2.0
+3e42bc8bc|John Audia|Tue Jan 28 18:47:29 2025 -0500|libdaq3: update to 3.0.18
+445e40c3c|Eric Fahlgren|Wed Jan 29 10:49:47 2025 -0800|owut: update to 2025.01.29
+bee722787|Stan Grishin|Tue Jan 28 00:23:59 2025 +0000|https-dns-proxy: bugfixes and improvements
+2e764368c|Stan Grishin|Mon Jan 27 19:14:28 2025 +0000|adblock-fast: bugfixes: boot-up, StevenBlack list, new CERT.pl source
+f9effa495|Dirk Brenken|Mon Jan 27 23:28:04 2025 +0100|adblock: update 4.2.4-1
+cfd35b6bf|Stan Grishin|Mon Jan 27 04:36:07 2025 +0000|pbr: bugfixes: boot-up and negative dest_addr
+737c0601c|Dirk Brenken|Sun Jan 26 19:58:03 2025 +0100|banip: update 1.5.0-5
+243480662|Matthias Schiffer|Sun Jan 26 15:13:19 2025 +0100|fastd: update to v23
+73fb1c4b3|Eric Fahlgren|Sat Jan 25 15:25:02 2025 -0800|owut: update to 2025.01.25
+9ef2d15c2|Michael Heimpold|Sat Jan 25 12:15:16 2025 +0100|openssh: fix recursive key file removal
+359a615d6|Tianling Shen|Sun Jan 26 13:01:26 2025 +0800|v2ray-core: Update to 5.25.1
+f80fbec40|Juan Orti Alcaine|Sat Jan 25 16:58:35 2025 +0100|banip: Block UDP ports for HTTP/3
+533b1b987|Christian Marangi|Thu Jan 23 16:39:04 2025 +0100|net-mtools: bump to release 3.2
+d1614ac07|Ivan Chashkin|Mon Jan 20 17:22:35 2025 +0300|yggdrasil: update to 0.5.12
+69c29a5b2|Markus Gothe|Wed Jan 15 18:54:29 2025 +0100|openssh: Validate keys and regenerate if needed.
+3ac8092a3|Erik Karlsson|Wed Jan 15 14:15:31 2025 +0100|openssh: fix killing of active sessions on shutdown
+19e9dde02|Michael Heimpold|Thu Jan 23 06:58:55 2025 +0100|php8-pecl-dio: update to 0.3.0
+aadb3bccb|Michael Heimpold|Thu Jan 23 07:00:17 2025 +0100|php8-pecl-http: update to 4.2.6
+30dc14de6|Michael Heimpold|Thu Jan 23 07:02:21 2025 +0100|php8-pecl-xdebug: update to 3.4.1
+fa0328232|Michael Heimpold|Thu Jan 23 07:01:43 2025 +0100|php8-pecl-redis: update to 6.1.0
+8214c2002|Michael Heimpold|Thu Jan 23 07:00:57 2025 +0100|php8-pecl-krb5: update to 1.2.2
+bf3333594|Federico Capoano|Thu Jan 23 17:58:34 2025 -0300|coova-chilli: Fix WolfSSL support
+eaf00f62d|Jan Klos|Fri Jan 24 18:11:54 2025 +0100|nut: add --without-nut_monitor to configure args nut_monitor is not used anyway and is needlessly built & does not work with python 3.13
+9cd00fb19|Coia Prant|Wed Jan 15 16:21:53 2025 +0000|ddns-scripts: get l3 device for bind network using curl
+a36979c69|Othmar Truniger|Thu Jan 23 19:32:27 2025 +0100|libfmt: bump to version 11.1.2
+ca9f2f4b5|Lucian CRISTIAN|Thu Jan 23 21:47:21 2025 +0200|frr: update to 10.2.1
+8fcb4bc86|Lucian CRISTIAN|Thu Jan 23 21:46:11 2025 +0200|libyang: update to 2.1.128
+</details>

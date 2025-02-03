@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+605daed|lwb1978|Mon Feb 3 00:35:41 2025 +0800|luci: simplify the preset dot links
+7c4c119|lwb1978|Sun Feb 2 23:33:39 2025 +0800|luci: optimize health check code
+7144bc8|moetayuko|Sun Feb 2 13:23:38 2025 +0800|luci: fix pattern matching when deduplicate balancing nodes (#3697)
+</details>
