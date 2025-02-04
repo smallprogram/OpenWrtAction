@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c4fe3e9502|Christian Marangi|Mon Feb 3 01:11:37 2025 +0100|ipq806x: make use of ASCII env NVMEM driver for Linksys EAX devices
-73a6cb983c|Christian Marangi|Mon Feb 3 01:08:35 2025 +0100|generic: add pending support for NVMEM ASCII ENV layout driver
-eba2fbf638|Christian Marangi|Mon Feb 3 01:48:39 2025 +0100|ipq806x: fix broken WAN on Linksys EAX and Asrock G10
-cfca9d6894|Shiji Yang|Sun Feb 2 16:00:54 2025 +0800|ramips: fix xtal clock registration issue on RT3883
+f628467dfd|Hauke Mehrtens|Tue Feb 4 00:07:25 2025 +0100|Revert "ramips: mt7620: fix patching mac address in caldata"
+fb566abab9|Chuanhong Guo|Mon Feb 3 18:00:25 2025 +0800|mediatek: refresh adtran nvmem patch
 </details>

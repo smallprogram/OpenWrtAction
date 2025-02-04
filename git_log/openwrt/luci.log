@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0f743ad0f2|Khachatryan Karen|Thu Jan 30 00:17:14 2025 +0300|luci-app-antiblock: Add luci-app-antiblock package
-2fb2bd36c7|Jan Froch|Sat Feb 1 16:58:48 2025 +0100|luci-mod-network: add bridge_isolate option Adds the 'bridge_isolate' option to wireless interfaces.
+f32d9204a7|George Sapkin|Mon Feb 3 15:55:55 2025 +0200|luci-app-example: rewrite RPC side using ucode
 </details>

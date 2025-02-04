@@ -2,35 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2d97143148|Tianling Shen|Sun Feb 2 19:45:33 2025 +0800|Merge Official Source
-69890e16b3|Daniel Golle|Sat Feb 1 05:03:50 2025 +0000|mediatek: mt7622: fix SATA on BPi-R64
-eb5f98fdf9|Kabuli Chana|Thu Jan 30 17:10:08 2025 -0700|mvebu: fix kmod for switch on wrt32x / venom
-084618f8db|Álvaro Fernández Rojas|Fri Jan 31 08:57:11 2025 +0100|generic: 6.6: backport upstream r8169 patches
-dcc5587374|Juan Pedro Paredes Caballero|Sun Jan 26 20:23:09 2025 +0100|mediatek: filogic: fix 2.5G phy compatible for WR3000H
-c87a767801|Daniel Golle|Thu Jan 30 05:49:43 2025 +0000|generic: net: phy: realtek: work-around hang on SerDes setup
-17f8a197f3|Paul Spooren|Wed Jan 29 19:09:54 2025 +0000|config: add VERSION_FIRMWARE_URL
-51b7df9913|Christian Marangi|Thu Jan 30 18:10:10 2025 +0100|procd: update to Git HEAD (2025-01-30)
-85c41253d9|Jan Hoffmann|Thu Jan 30 10:40:25 2025 +0100|mediatek: fix TUF-AX4200 WAN LED
-8390599c9a|Hauke Mehrtens|Wed Jan 29 23:37:34 2025 +0100|x86: Add kmod-drm-i915 as default package
-087c5abdf5|Felix Fietkau|Wed Jan 29 21:51:45 2025 +0100|unetd: update to Git HEAD (2025-01-29)
-3e6e9b2116|Felix Baumann|Tue Jan 28 05:12:19 2025 +0100|kexec-tools: update URL
-df1f6e1e18|Paweł Owoc|Thu Jan 2 22:31:33 2025 +0100|qualcommax: ipq807x: Remove OEM UBI volume before upgrade for Linksys MX devices
-2fc99e4f18|Paweł Owoc|Thu Dec 12 19:51:27 2024 +0100|qualcommax: ipq807x: Update u-boot env only when changes for Linksys MX devices
-f1f1b08db5|Paweł Owoc|Sat Feb 24 20:47:58 2024 +0100|qualcommax: ipq807x: Add ability to perform upgrade on current partition for Linksys MX devices
-389ecee729|Paweł Owoc|Sat Feb 24 20:25:43 2024 +0100|base-files: sysupgrade: Add new option -s to perform upgrade on current partition
-807074309d|Sander Vanheule|Mon Jan 27 22:17:57 2025 +0100|realtek: add PoE enable line to Netgear GS110TPP
-f31c9bb237|Sander Vanheule|Sat Jan 18 21:41:53 2025 +0100|realtek: Switch ApresiaLightGS120GT-SS RTL8231 driver
-734331e4e6|Ivan Deng|Mon Jan 27 22:02:07 2025 -0800|ipq60xx: fix uboot-envtools file syntax error in uci-defaults
-fbe0bd5f64|Álvaro Fernández Rojas|Tue Jan 28 08:28:01 2025 +0100|bmips: shg2500: add missing led controller cells
-3d6a1a7874|Sander Vanheule|Sun Jan 12 17:57:33 2025 +0100|realtek: switch RTL8231 driver for D-Link DGS-1210
-7c0d1c1eb1|Sander Vanheule|Sun Jan 12 17:53:34 2025 +0100|realtek: Switch DGS-1210-10P DTS to gpio.dtsi
-022b7d80bf|Sander Vanheule|Sat Jan 18 16:51:59 2025 +0100|realtek: Drop unused property on DGS-1210 gpio0
-6dc0f0c50c|Uwe Kleine-König|Mon Jan 27 16:12:23 2025 +0100|dnsmasq: add fix related to DNSSEC verification from upstream
-dab52c00d7|Hauke Mehrtens|Mon Jan 27 01:09:33 2025 +0100|apm821xx: NETGEAR WNDR4700: Fix compat version
-0a7e92c244|Hauke Mehrtens|Mon Jan 27 01:37:39 2025 +0100|wolfssl: Update to version 5.7.6
-d981f28f76|Thomas Richard|Mon Jan 27 14:02:28 2025 +0100|stm32: enable CONFIG_SMSC_PHY
-8ffeeaee67|Robert Marko|Mon Jan 27 14:25:09 2025 +0100|generic: add missing CONFIG_LEDS_ST1202 symbol
-c34eee5f39|Felix Fietkau|Mon Jan 27 12:43:13 2025 +0100|unetd: update to Git HEAD (2025-01-27)
-a9b408a97f|Christian Marangi|Mon Jan 27 12:14:28 2025 +0100|airoha: an7581: replace clock patch with upstream version
-b7edf88b0f|Christian Marangi|Mon Jan 27 12:02:24 2025 +0100|airoha: an7581: replace eMMC support with upstream version
+ef51053445|Tianling Shen|Mon Feb 3 20:41:15 2025 +0800|Merge Official Source
+fb566abab9|Chuanhong Guo|Mon Feb 3 18:00:25 2025 +0800|mediatek: refresh adtran nvmem patch
+c4fe3e9502|Christian Marangi|Mon Feb 3 01:11:37 2025 +0100|ipq806x: make use of ASCII env NVMEM driver for Linksys EAX devices
+73a6cb983c|Christian Marangi|Mon Feb 3 01:08:35 2025 +0100|generic: add pending support for NVMEM ASCII ENV layout driver
+eba2fbf638|Christian Marangi|Mon Feb 3 01:48:39 2025 +0100|ipq806x: fix broken WAN on Linksys EAX and Asrock G10
+cfca9d6894|Shiji Yang|Sun Feb 2 16:00:54 2025 +0800|ramips: fix xtal clock registration issue on RT3883
 </details>

@@ -1,0 +1,10 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+c5079c0|xiaorouji|Mon Feb 3 16:05:58 2025 +0800|luci: sing-box 1.11.0 Migrate logic
+f548564|xiaorouji|Mon Feb 3 15:13:54 2025 +0800|luci: rework sing-box with v1.11.0
+a8a9d5c|lwb1978|Sun Feb 2 23:33:39 2025 +0800|luci: optimize health check code
+9050e59|moetayuko|Sun Feb 2 13:23:38 2025 +0800|luci: fix pattern matching when deduplicate balancing nodes
+afb8014|xiaorouji|Tue Feb 4 00:57:00 2025 +0800|luci: remove unused code
+</details>
