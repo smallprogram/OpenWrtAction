@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-db08417|xiaorouji|Mon Feb 3 16:05:58 2025 +0800|luci: sing-box 1.11.0 Migrate logic
-6fe86f9|xiaorouji|Mon Feb 3 15:13:54 2025 +0800|luci: rework sing-box with v1.11.0
-103893f|lwb1978|Tue Feb 4 01:27:31 2025 +0800|luci: subscribe code fault tolerance optimize
+f39fa46|lwb1978|Tue Feb 4 15:32:30 2025 +0800|luci: optimize smartdns code
 </details>

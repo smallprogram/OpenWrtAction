@@ -2,11 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1cc7069c6|Matt Eaton|Sat Feb 1 22:39:16 2025 +0100|strongswan: fix compilation against wolfssl
-2c7b8ef5a|Milinda Brantini|Mon Feb 3 13:43:08 2025 +0800|sing-box: Update to 1.11.0
-155fe0111|Tianling Shen|Mon Feb 3 20:37:39 2025 +0800|alist: Update to 3.42.0
-2d83d187a|Tianling Shen|Mon Feb 3 20:22:18 2025 +0800|cloudflared: Update to 2025.1.1
-cec4103bb|Tianling Shen|Mon Feb 3 20:22:01 2025 +0800|v2ray-geodata: Update to latest version
-c1b0143a7|Tianling Shen|Mon Feb 3 20:21:53 2025 +0800|v2ray-core: Update to 5.26.0
-e9a86e180|Tianling Shen|Mon Feb 3 20:21:37 2025 +0800|xray-core: Update to 25.1.30
+1302e503a|Adam Beck|Tue Feb 4 14:17:29 2025 +0000|ddns-scripts: add type field for digitalocean API
+25b156a71|Florian Eckert|Tue Jul 30 07:53:22 2024 +0200|keepalived: add ubus status
+35b614c43|Tianling Shen|Tue Feb 4 15:25:08 2025 +0800|rclone: Update to 1.69.0
 </details>

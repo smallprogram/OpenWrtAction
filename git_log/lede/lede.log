@@ -1,7 +1,0 @@
-<details> <summary> <b>lede new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-3b3ed936e|Daniel Golle|Wed Oct 2 00:35:07 2024 +0100|generic: net: phy: mxl-gpy: add support for PHY LEDs
-5c7361ebd|Daniel Golle|Sat Oct 5 22:21:17 2024 +0100|generic: net: phy: intel-way: add support for PHY LEDs
-</details>

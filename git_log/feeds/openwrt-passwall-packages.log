@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+519257a|github-actions[bot]|Wed Feb 5 11:32:20 2025 +0800|sing-box: update to 1.11.1 (#376)
+ba30e99|github-actions[bot]|Wed Feb 5 11:32:02 2025 +0800|v2ray-geoip: update to 202502050123 (#375)
+1a17245|lwb1978|Tue Feb 4 16:04:59 2025 +0800|shadowsocks-libev: deprecate load16_be() function in favor to ntohs() function
+2abe78e|github-actions[bot]|Tue Feb 4 15:40:11 2025 +0800|hysteria: update to 2.6.1 (#374)
+</details>

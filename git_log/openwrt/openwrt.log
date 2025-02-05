@@ -2,6 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f628467dfd|Hauke Mehrtens|Tue Feb 4 00:07:25 2025 +0100|Revert "ramips: mt7620: fix patching mac address in caldata"
-fb566abab9|Chuanhong Guo|Mon Feb 3 18:00:25 2025 +0800|mediatek: refresh adtran nvmem patch
+2e5e022c30|Chuanhong Guo|Wed Feb 5 11:10:54 2025 +0800|siflower: move soruce-only flag to sf19a2890 subtarget
+704c9d0d1a|Chuanhong Guo|Fri Nov 29 18:03:46 2024 +0800|siflower: sf19a2890: refresh kconfig
+b8a8bf53e9|Chuanhong Guo|Tue Jan 14 14:36:36 2025 +0800|siflower: sf21: add support for Bananapi BPI-RV2
+c057db94f8|Chuanhong Guo|Tue Oct 8 14:18:27 2024 +0800|siflower: sf21: new subtarget for sf21a6826/sf21h8898
+274df8eedb|Chuanhong Guo|Tue Oct 8 14:16:15 2024 +0800|siflower: add ngpios property to gpio-siflower
+bbde170ec6|Chuanhong Guo|Sat Sep 14 11:28:52 2024 +0800|siflower: add per-subtarget image makefile
+63e178f067|Paul Spooren|Sat Feb 1 23:01:58 2025 +0000|build: lock versions for special APK packages
 </details>
