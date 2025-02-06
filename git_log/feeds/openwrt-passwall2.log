@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+2a133b0|lwb1978|Wed Feb 5 17:46:45 2025 +0800|luci: fix md5 fetching error in subscribe code under certain conditions
+</details>

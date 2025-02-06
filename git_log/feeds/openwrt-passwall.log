@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f39fa46|lwb1978|Tue Feb 4 15:32:30 2025 +0800|luci: optimize smartdns code
+1ec1db4|lwb1978|Wed Feb 5 17:46:45 2025 +0800|luci: fix md5 fetching error in subscribe code under certain conditions
 </details>

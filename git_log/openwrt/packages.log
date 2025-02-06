@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1302e503a|Adam Beck|Tue Feb 4 14:17:29 2025 +0000|ddns-scripts: add type field for digitalocean API
-25b156a71|Florian Eckert|Tue Jul 30 07:53:22 2024 +0200|keepalived: add ubus status
-35b614c43|Tianling Shen|Tue Feb 4 15:25:08 2025 +0800|rclone: Update to 1.69.0
+7c58cd667|Francesco Benini|Sat Feb 1 23:13:22 2025 +0100|keepalived: add support for directory sync
+8eecd2e5a|Milinda Brantini|Wed Feb 5 12:47:26 2025 +0800|sing-box: Update to 1.11.1
+92953c1d7|Jianhui Zhao|Sun Jan 12 20:07:48 2025 +0800|lua-cjson: add build VARIANT for Lua5.3
 </details>
