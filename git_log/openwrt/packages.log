@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7c58cd667|Francesco Benini|Sat Feb 1 23:13:22 2025 +0100|keepalived: add support for directory sync
-8eecd2e5a|Milinda Brantini|Wed Feb 5 12:47:26 2025 +0800|sing-box: Update to 1.11.1
-92953c1d7|Jianhui Zhao|Sun Jan 12 20:07:48 2025 +0800|lua-cjson: add build VARIANT for Lua5.3
+1c1125a47|ACI0419|Thu Feb 6 16:46:42 2025 +0800|ddns-scripts: add ydns.io provider
 </details>

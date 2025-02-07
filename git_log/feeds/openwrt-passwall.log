@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1ec1db4|lwb1978|Wed Feb 5 17:46:45 2025 +0800|luci: fix md5 fetching error in subscribe code under certain conditions
+5a73f2c|lwb1978|Thu Feb 6 18:04:16 2025 +0800|luci: fix failure to delete all subscribe nodes
+17e39c9|lwb1978|Thu Feb 6 17:56:28 2025 +0800|Revert "luci: fix failure to delete all subscribe nodes"
+18e477f|lwb1978|Thu Feb 6 17:31:53 2025 +0800|luci: fix failure to delete all subscribe nodes
 </details>

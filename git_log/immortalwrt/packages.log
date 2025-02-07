@@ -2,6 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-469d48b52|Tianling Shen|Wed Feb 5 16:25:54 2025 +0800|pcap-dnsproxy: drop package
-da7a75639|Tianling Shen|Wed Feb 5 16:25:27 2025 +0800|antileech: fix mirror hash
+25b7a9991|Tianling Shen|Thu Feb 6 22:09:16 2025 +0800|oscam: fix mirror hash
+013def165|Tianling Shen|Thu Feb 6 22:09:07 2025 +0800|ngrokc: fix mirror hash
+cda5ec00a|Tianling Shen|Thu Feb 6 22:08:53 2025 +0800|mentohust: fix mirror hash
+31eaea8e1|Tianling Shen|Thu Feb 6 16:51:58 2025 +0800|Merge Official Source
+7c58cd667|Francesco Benini|Sat Feb 1 23:13:22 2025 +0100|keepalived: add support for directory sync
+8eecd2e5a|Milinda Brantini|Wed Feb 5 12:47:26 2025 +0800|sing-box: Update to 1.11.1
+92953c1d7|Jianhui Zhao|Sun Jan 12 20:07:48 2025 +0800|lua-cjson: add build VARIANT for Lua5.3
+1302e503a|Adam Beck|Tue Feb 4 14:17:29 2025 +0000|ddns-scripts: add type field for digitalocean API
+25b156a71|Florian Eckert|Tue Jul 30 07:53:22 2024 +0200|keepalived: add ubus status
 </details>
