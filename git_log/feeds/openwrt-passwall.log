@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-5a73f2c|lwb1978|Thu Feb 6 18:04:16 2025 +0800|luci: fix failure to delete all subscribe nodes
-17e39c9|lwb1978|Thu Feb 6 17:56:28 2025 +0800|Revert "luci: fix failure to delete all subscribe nodes"
-18e477f|lwb1978|Thu Feb 6 17:31:53 2025 +0800|luci: fix failure to delete all subscribe nodes
-</details>

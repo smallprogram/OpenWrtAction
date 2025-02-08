@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+69abe84|github-actions[bot]|Fri Feb 7 15:53:25 2025 +0800|v2ray-core: update to 5.27.0 (#381)
+a92f3ec|github-actions[bot]|Fri Feb 7 15:53:12 2025 +0800|v2ray-geosite: update to 20250206143205 (#380)
+55c2502|github-actions[bot]|Fri Feb 7 12:54:19 2025 +0800|microsocks: update to 1.0.5 (#378)
+</details>

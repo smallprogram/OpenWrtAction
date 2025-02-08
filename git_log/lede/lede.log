@@ -2,10 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-922b9fd73|coolsnowwolf|Fri Feb 7 12:04:28 2025 +0800|qualcommax: sync ipq50xx with upstream
-a0dbcae1d|=?UTF-8?q?=C3=81lvaro=20Fern=C3=A1ndez=20Rojas?=|Wed Feb 5 08:49:20 2025 +0100|kernel: r8168: update to v8.055.00
-111e93f75|coolsnowwolf|Wed Feb 5 23:19:38 2025 +0800|kernel: bump 6.x to latest HEAD
-e905fdb16|coolsnowwolf|Tue Feb 4 23:30:15 2025 +0800|OpenWrt v24.10.0: adjust config defaults
-be22644b6|coolsnowwolf|Wed Jan 29 23:20:12 2025 +0800|kernel: add option to disable legacy cgroup v1
-cadb05400|守望|Thu Feb 6 12:30:04 2025 +0800|dnsmasq: add option to expose additional paths
+bb936f707|coolsnowwolf|Sat Feb 8 11:18:57 2025 +0800|qualcommax: ipq807x: swap Aliyun AP8220 LAN/WAN port as lable
 </details>

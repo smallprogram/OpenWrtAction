@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+722029f|lwb1978|Thu Feb 6 18:04:16 2025 +0800|luci: fix failure to delete all subscribe nodes
+</details>
