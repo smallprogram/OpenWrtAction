@@ -2,5 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bb936f707|coolsnowwolf|Sat Feb 8 11:18:57 2025 +0800|qualcommax: ipq807x: swap Aliyun AP8220 LAN/WAN port as lable
+812109cfd|coolsnowwolf|Sat Feb 8 22:53:02 2025 +0800|x86: add support for Intel NPU device AI accelerator (Meteor Lake/Lunar Lake/Arrow Lake)
+2f8001fa5|coolsnowwolf|Sat Feb 8 22:40:44 2025 +0800|qualcommax: ipq50xx: SPI NAND update
+ad2df9a9d|Christian Marangi|Fri Feb 7 21:12:07 2025 +0100|generic: fix Qcom SNAND driver and move to backports directory
+867f51acb|coolsnowwolf|Sat Feb 8 22:31:19 2025 +0800|qualcommax: ipq50xx: fix builid with linux kernel 6.6
+0261a4ac0|coolsnowwolf|Sat Feb 8 15:31:28 2025 +0800|qualcommax: add qca-nss-ecm kernel support for linux 6.6
 </details>

@@ -1,0 +1,9 @@
+<details> <summary> <b>routing new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+dbf46e7|Simon Wunderlich|Sat Feb 8 13:25:36 2025 +0100|Merge pull request #1103 from ecsv/batadv-2025.0
+eb01d8f|Sven Eckelmann|Fri Feb 7 21:56:20 2025 +0100|batman-adv: update to version 2025.0
+3f2e78e|Sven Eckelmann|Fri Feb 7 21:56:20 2025 +0100|batctl: update to version 2025.0
+7cc3d6d|Sven Eckelmann|Fri Feb 7 21:56:20 2025 +0100|alfred: update to version 2025.0
+</details>

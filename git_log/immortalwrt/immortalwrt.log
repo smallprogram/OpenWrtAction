@@ -1,0 +1,20 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+e28f54fa17|Tianling Shen|Sat Feb 8 22:13:52 2025 +0800|uboot-mediatek: cmcc rax3000m: fix work with old firmware
+9c0be8242e|Tianling Shen|Sat Feb 8 19:37:35 2025 +0800|target: switch to full feature wpad for devices with big flash sizes
+53e96e3041|Tianling Shen|Sat Feb 8 19:23:55 2025 +0800|target: switch to full feature wpad for devices with big flash sizes
+ab378a63c0|Tianling Shen|Sat Feb 8 19:09:06 2025 +0800|target: align wpad crypto lib
+08471108f6|Tianling Shen|Sat Feb 8 16:13:57 2025 +0800|Merge Official Source
+76c4deb991|Tianling Shen|Sat Feb 8 15:39:55 2025 +0800|odhcpd: fix setting default ra mode
+6605e45676|Felix Fietkau|Fri Feb 7 11:11:42 2025 +0100|build: conditionally build llvm bpf toolchain by default
+411df8fbc4|Robert Marko|Fri Feb 7 10:12:25 2025 +0100|qualcommax: ipq50xx: refresh kernel config
+3299d19c01|Mikhail Zhilkin|Tue Feb 4 16:08:53 2025 +0000|mediatek: fix nmbm configuration mismatch (Xiaomi AX3000t)
+e585ae70d4|Mikhail Zhilkin|Tue Feb 4 15:55:08 2025 +0000|kernel: nmbm: add mediatek,bmt-mtd-overridden-oobsize property
+98d7f4202f|Robert Marko|Thu Feb 6 20:29:03 2025 +0100|qualcommax: disable IPQ5018 specific symbols
+b61c192e75|Robert Marko|Thu Feb 6 12:39:26 2025 +0100|libiwinfo: update to Git HEAD (2025-02-06)
+47d605410e|Robert Marko|Thu Feb 6 12:37:48 2025 +0100|ipq-wifi: update to Git HEAD (2025-02-06)
+08ebb9e914|Chukun Pan|Tue Jan 21 23:10:28 2025 +0800|tools: ccache: disable build testing
+e1451a53e1|Chukun Pan|Mon Jan 20 23:10:36 2025 +0800|tools: add xxhash package for ccache
+</details>

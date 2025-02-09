@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-69abe84|github-actions[bot]|Fri Feb 7 15:53:25 2025 +0800|v2ray-core: update to 5.27.0 (#381)
-a92f3ec|github-actions[bot]|Fri Feb 7 15:53:12 2025 +0800|v2ray-geosite: update to 20250206143205 (#380)
-55c2502|github-actions[bot]|Fri Feb 7 12:54:19 2025 +0800|microsocks: update to 1.0.5 (#378)
+65d04a5|A-BO|Sun Feb 9 00:46:59 2025 +0800|naiveproxy: update to 133.0.6943.49-r1
+eab8674|github-actions[bot]|Sat Feb 8 23:29:43 2025 +0800|xray-core: update to 25.2.8 (#384)
+42dd643|github-actions[bot]|Sat Feb 8 23:29:29 2025 +0800|v2ray-geosite: update to 20250207120917 (#383)
 </details>

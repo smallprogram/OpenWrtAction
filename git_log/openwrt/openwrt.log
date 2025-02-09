@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6605e45676|Felix Fietkau|Fri Feb 7 11:11:42 2025 +0100|build: conditionally build llvm bpf toolchain by default
-411df8fbc4|Robert Marko|Fri Feb 7 10:12:25 2025 +0100|qualcommax: ipq50xx: refresh kernel config
-3299d19c01|Mikhail Zhilkin|Tue Feb 4 16:08:53 2025 +0000|mediatek: fix nmbm configuration mismatch (Xiaomi AX3000t)
-e585ae70d4|Mikhail Zhilkin|Tue Feb 4 15:55:08 2025 +0000|kernel: nmbm: add mediatek,bmt-mtd-overridden-oobsize property
+05138fe898|Felix Fietkau|Sat Feb 8 22:27:27 2025 +0100|umdns: add firewall rule for configured interfaces
+4b6886d9fd|Christian Marangi|Fri Feb 7 21:12:07 2025 +0100|generic: fix Qcom SNAND driver and move to backports directory
 </details>

@@ -1,0 +1,13 @@
+<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+546355e|zxl hhyccc|Sun Feb 9 00:28:36 2025 +0800|Merge pull request #1680 from zxlhhyccc/ss
+0f169db|zxl hhyccc|Sun Feb 9 00:27:21 2025 +0800|Merge pull request #1681 from zxlhhyccc/ssr
+5164f1b|zxl hhyccc|Sat Feb 8 21:40:49 2025 +0800|microsocks: update to 1.0.5
+d1a6118|zxlhhyccc|Wed Feb 5 23:59:06 2025 +0800|shadowsocks-libev: refresh patch
+6bb2d4e|zxlhhyccc|Wed Feb 5 23:45:23 2025 +0800|shadowsocks-libev: Fix HASH
+641cb20|zxlhhyccc|Wed Feb 5 23:38:33 2025 +0800|shadowsocksr-libev: add PKG_SOURCE fix compilation errors caused by pulling up old code.
+27464db|zxlhhyccc|Wed Feb 5 23:29:29 2025 +0800|shadowsocks-libev: deprecate load16_be() function in favor to ntohs() function
+caddd97|zxlhhyccc|Wed Feb 5 23:27:35 2025 +0800|shadowsocks-libev: Update to the commit as of 2025-1-20
+</details>
