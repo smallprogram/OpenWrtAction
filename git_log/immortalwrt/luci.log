@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+2b0d4faf8f|Tianling Shen|Sun Feb 9 18:03:22 2025 +0800|Merge Official Source
 5a79a578aa|Eric Fahlgren|Fri Feb 7 13:02:24 2025 -0800|luci-app-attendedsysupgrade: apply changes to package list
 432dbf82d3|Hosted Weblate|Sat Feb 8 01:32:05 2025 +0100|Translated using Weblate (German)
+edc352e110|Hannu Nyman|Thu Feb 6 20:54:34 2025 +0200|luci-base: update timezone data to 2025a
 </details>

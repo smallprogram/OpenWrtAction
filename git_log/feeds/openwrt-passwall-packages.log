@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-65d04a5|A-BO|Sun Feb 9 00:46:59 2025 +0800|naiveproxy: update to 133.0.6943.49-r1
-eab8674|github-actions[bot]|Sat Feb 8 23:29:43 2025 +0800|xray-core: update to 25.2.8 (#384)
-42dd643|github-actions[bot]|Sat Feb 8 23:29:29 2025 +0800|v2ray-geosite: update to 20250207120917 (#383)
+c22b993|lwb1978|Mon Feb 10 12:03:29 2025 +0800|geoview: update to 0.1.2
+34369e8|lwb1978|Mon Feb 10 09:41:08 2025 +0800|shadowsocks-libev: fix hash & refresh patch
+1f765fd|zcluo|Sun Feb 9 16:30:43 2025 +0800|xray-core revert to v25.1.30 (#386)
 </details>

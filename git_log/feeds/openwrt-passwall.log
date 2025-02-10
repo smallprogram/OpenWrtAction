@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0f29cb0|lwb1978|Sun Feb 9 19:30:50 2025 +0800|luci: fix detection of old uci on some systems
+</details>

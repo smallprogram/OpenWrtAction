@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-da8a3b6f|coolsnowwolf|Sat Feb 8 16:04:25 2025 +0800|Merge pull request #901 from unifreq/master
-6a69eb1b|coolsnowwolf|Sat Feb 8 16:03:54 2025 +0800|Revert "In kernel version 6.8 and above, nfsd has deprecated the CONFIG_NFSD_LEGACY_CLIENT_TRACKING option, and in kernel 6.12, if CONFIG_NFSD_LEGACY_CLIENT_TRACKING is still enabled, the following kernel panic may occur:"
-778fe739|uniqfreq|Fri Feb 7 16:11:49 2025 +0800|libgpiod: update to 1.6.5
-74abe2d0|uniqfreq|Fri Feb 7 10:48:01 2025 +0800|openssh: update to 9.9p1
+db36de0b|coolsnowwolf|Sun Feb 9 14:49:19 2025 +0800|geoview: add package
 </details>

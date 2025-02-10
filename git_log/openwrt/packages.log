@@ -2,5 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-39002e38a|Peter van Dijk|Fri Feb 7 13:34:38 2025 +0100|pdns: update to 4.9.4
+939dea162|Tianling Shen|Sun Feb 9 21:52:37 2025 +0800|dnsproxy: Update to 0.75.0
+efe5c7cd2|John Audia|Wed Feb 5 16:26:01 2025 -0500|snort3: update to 3.6.3.0
+f53f96d37|Khachatryan Karen|Sun Feb 9 13:35:46 2025 +0300|antiblock: Update to 2.0.1
+86b014421|Tianling Shen|Wed Feb 5 16:05:43 2025 +0800|golang: Update to 1.23.6
+d4a4de830|Anirudh Srinivasan|Sun Feb 2 17:31:10 2025 -0600|prometheus-node-exporter-ucode: fix missing .so mounts in jail
 </details>
