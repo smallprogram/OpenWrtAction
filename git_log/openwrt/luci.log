@@ -1,0 +1,6 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+2e9ffc6628|Eric Fahlgren|Sat Feb 8 06:10:05 2025 -0800|luci-app-attendedsysupgrade: supply proper version to package changes
+</details>

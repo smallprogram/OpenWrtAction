@@ -2,9 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-939dea162|Tianling Shen|Sun Feb 9 21:52:37 2025 +0800|dnsproxy: Update to 0.75.0
-efe5c7cd2|John Audia|Wed Feb 5 16:26:01 2025 -0500|snort3: update to 3.6.3.0
-f53f96d37|Khachatryan Karen|Sun Feb 9 13:35:46 2025 +0300|antiblock: Update to 2.0.1
-86b014421|Tianling Shen|Wed Feb 5 16:05:43 2025 +0800|golang: Update to 1.23.6
-d4a4de830|Anirudh Srinivasan|Sun Feb 2 17:31:10 2025 -0600|prometheus-node-exporter-ucode: fix missing .so mounts in jail
+826a3a993|Keith T. Garner|Thu Feb 6 17:03:15 2025 -0600|lsd: update to latest stable/1.1.5
+71c8e53a5|Kel Modderman|Fri Jan 31 23:43:47 2025 +1000|shairport-sync: update to 4.3.6
+5891453aa|Daniel Golle|Fri Sep 27 15:25:07 2024 +0100|oci-runtime-tools: update to GIT HEAD of 2024-11-08
+579d4f299|Daniel Golle|Mon Feb 10 05:56:42 2025 +0000|gnunet-fuse: update to 0.23.0
+699d8b003|Daniel Golle|Fri Oct 11 04:41:22 2024 +0100|gnunet: update to v0.23.1
+9ec157ee9|Daniel Golle|Mon Feb 10 05:14:13 2025 +0000|postgresql: update to version 17.2
+4b43dc2d3|Daniel Golle|Mon Feb 10 03:24:27 2025 +0000|ell: update to version 0.71
 </details>

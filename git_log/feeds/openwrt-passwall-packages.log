@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-c22b993|lwb1978|Mon Feb 10 12:03:29 2025 +0800|geoview: update to 0.1.2
-34369e8|lwb1978|Mon Feb 10 09:41:08 2025 +0800|shadowsocks-libev: fix hash & refresh patch
-1f765fd|zcluo|Sun Feb 9 16:30:43 2025 +0800|xray-core revert to v25.1.30 (#386)
-</details>
