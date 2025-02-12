@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-406950e3b|ImmortalWrt AutoUpdate Bot|Sun Feb 9 13:58:08 2025 +0000|adguardhome: Update to 0.107.56
-0195395ea|Yun Wang|Mon Feb 10 21:46:11 2025 +0800|vlmcsd: add UCI support for vlmcsd
-9f9f872fa|SakuraFallingMad|Mon Feb 10 15:59:54 2025 +0800|geoview: update to 0.1.2
+c77c6a76d|Tianling Shen|Tue Feb 11 20:51:56 2025 +0800|rustdesk-server: override default HOME path
 </details>

@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-64ed83cc0|aiamadeus|Fri Jan 24 23:28:03 2025 +0800|mac80211/ath11k: temporarily disable DBS mode
+84c08cc0c|aiamadeus|Tue Feb 11 22:09:01 2025 +0800|ipq60xx: replace cpufreq with latest series
 </details>

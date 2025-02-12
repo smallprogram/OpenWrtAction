@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-04570f5ee2|Felix Fietkau|Mon Feb 10 22:09:26 2025 +0100|build: fix building llvm tarball
-dd5c598de0|Felix Fietkau|Mon Feb 10 21:40:59 2025 +0100|umdns: update to Git HEAD (2025-02-10)
-0e672e9806|Felix Fietkau|Mon Feb 10 17:02:20 2025 +0100|ucode: update to Git HEAD (2025-02-10)
+1ee44825ad|Felix Fietkau|Tue Feb 11 18:28:40 2025 +0100|wifi-scripts: fix mac address allocation with macaddr_base set
 </details>

@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-d6276f8|lwb1978|Tue Feb 11 10:37:52 2025 +0800|luci: add source port in shunt rules
-9681bd3|lwb1978|Mon Feb 10 23:18:05 2025 +0800|luci: optimize geo data parsing logs
-</details>
