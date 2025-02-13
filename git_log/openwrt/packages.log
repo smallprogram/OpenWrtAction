@@ -2,9 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2d51880e4|Mosney Strange|Tue Feb 11 20:24:52 2025 +0800|sing-box: Update to 1.11.3
-3618236a0|Christian Lachner|Tue Feb 11 13:55:17 2025 +0100|haproxy: update to v3.0.8
-edf836529|Jonas Jelonek|Mon Feb 10 15:49:03 2025 +0100|eza: update to 0.20.20
-91bcb4a3d|Olivier Poitrey|Mon Feb 10 20:13:26 2025 +0000|nextdns: Update to version 1.44.5
-9f4928f1e|Khachatryan Karen|Tue Feb 11 00:04:56 2025 +0300|antiblock: Update to 2.0.2
+571d9e96a|Stan Grishin|Wed Feb 12 03:57:26 2025 +0000|pbr: update to 1.1.8-10
+4337232f5|Stan Grishin|Mon Feb 10 21:18:24 2025 +0000|https-dns-proxy: bugfix: start on boot
+434c353e6|Florian Eckert|Tue Feb 4 12:36:51 2025 +0100|modemmanager: do not disable modem on reconnect
+f9dbeea92|Koen Vandeputte|Fri Nov 15 09:23:31 2024 +0100|libs/srt: bump to 1.5.4
 </details>

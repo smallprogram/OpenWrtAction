@@ -1,0 +1,16 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+033986cdd0|Stan Grishin|Wed Feb 12 16:22:30 2025 -0800|Merge pull request #7622 from stangri/master-luci-app-pbr
+457ada8651|Stan Grishin|Wed Feb 12 16:21:44 2025 -0800|Merge pull request #7617 from stangri/master-luci-app-https-dns-proxy
+44b4d34d8d|Stan Grishin|Wed Feb 12 16:21:02 2025 -0800|Merge pull request #7614 from stangri/master-luci-app-advanced-reboot
+299cc6148f|Hosted Weblate|Wed Feb 12 21:26:48 2025 +0100|Translated using Weblate (Spanish)
+b54b1a2530|Florian Eckert|Wed Feb 12 13:10:17 2025 +0100|Merge pull request #7619 from Chris1189/pr/keepalived_state
+6c562f3a08|Christian Korber|Wed Feb 12 12:05:00 2025 +0100|luci-app-keepalived: split state into separate columns
+532228d071|Florian Eckert|Wed Feb 12 11:43:07 2025 +0100|luci-app-keepalived: add i18n
+8843810954|Christian Korber|Mon Feb 10 09:15:19 2025 +0100|luci-app-keepalived: include FAULT state to state
+a318e6d13d|Stan Grishin|Wed Feb 12 04:06:59 2025 +0000|luci-app-pbr: update to 1.1.8-10
+4d5067b919|Stan Grishin|Mon Feb 10 21:11:14 2025 +0000|luci-app-https-dns-proxy: bugfix and version bump
+3b426d919f|Stan Grishin|Sun Feb 9 19:26:35 2025 +0000|luci-app-advanced-reboot: add support for more Linksys devices
+</details>

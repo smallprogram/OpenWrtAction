@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-150bcdd|zhusir|Tue Feb 11 21:24:53 2025 +0800|sing-box: update pkg hash value (#391)
-93247f3|github-actions[bot]|Tue Feb 11 17:53:06 2025 +0800|sing-box: update to 1.11.3 (#389)
-c21fc52|github-actions[bot]|Tue Feb 11 14:13:47 2025 +0800|sing-box: update to 1.11.2 (#388)
-</details>

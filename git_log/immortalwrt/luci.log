@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-92f9cad242|Tianling Shen|Wed Feb 12 00:09:08 2025 +0800|luci-app-homeproxy: bump to latest git HEAD
+73c98329e5|SakuraFallingMad|Tue Feb 11 08:16:57 2025 +0800|luci-app-passwall: bump to 25.2.12
+c1cac9c126|Tianling Shen|Wed Feb 12 17:30:57 2025 +0800|luci-theme-argon: Update to 2.3.2
 </details>
