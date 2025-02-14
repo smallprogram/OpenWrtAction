@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-108da88ba|coolsnowwolf|Tue Feb 11 23:15:40 2025 +0800|kernel: netfilter: fix ipt-ipopt depends
-36fac63d8|coolsnowwolf|Wed Feb 12 16:26:00 2025 +0800|qualcommax: 6.6: add ipq60xx pwm support
+bf665a29b|coolsnowwolf|Thu Feb 13 18:17:57 2025 +0800|qualcommax: ipq50xx: add CMCC RAX3000Q support
+9dc66796d|coolsnowwolf|Thu Feb 13 16:48:41 2025 +0800|qualcommax: ipq50xx : temporarily disable tcsr_q6_block
 </details>

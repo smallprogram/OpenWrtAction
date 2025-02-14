@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-d5ce45c|A-BO|Wed Feb 12 22:19:43 2025 +0800|luci: bump to 25.2.12
-2d52c77|lwb1978|Wed Feb 12 17:58:34 2025 +0800|luci: fix #3719
-</details>
