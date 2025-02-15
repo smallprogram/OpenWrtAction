@@ -2,19 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-75857fe17b|Rye Sears|Thu Feb 13 20:59:45 2025 +0800|rockchip: remove upstreamed patches
-6557260f49|Tianling Shen|Thu Feb 13 16:47:28 2025 +0800|Merge Official Source
-b6415e9fa9|Daniel Golle|Mon Feb 10 02:28:54 2025 +0000|arm-trusted-firmware-tools: update to version 2.12
-43bc5e6e12|Shiji Yang|Sat Feb 8 15:39:13 2025 +0800|Revert "Revert "ramips: mt7620: fix patching mac address in caldata""
-094b6f593f|Shiji Yang|Sat Feb 8 15:36:24 2025 +0800|base-files: fix offset conversion on caldata_patch_data()
-3aa9b70836|Shiji Yang|Sat Feb 8 09:21:15 2025 +0800|ramips: mt7620: add missing PA/LNA pinctrl for Linksys E1700
-693108a318|Shiji Yang|Fri Feb 7 21:00:22 2025 +0800|mac80211: rt2x00: fix eeprom load from PCI eFuse
-40fc6bd5cc|Lech Perczak|Wed Feb 12 02:25:53 2025 +0100|ath79: mikrotik: fix reference clock of Routerboard 911G
-16924e55f0|John Audia|Tue Feb 11 14:42:45 2025 -0500|kernel: bump 6.6 to 6.6.77
-84e370f16c|John Audia|Sun Feb 9 07:49:50 2025 -0500|kernel: bump 6.6 to 6.6.76
-9790417109|John Audia|Sun Feb 9 10:10:31 2025 -0500|kernel: bump 6.6 to 6.6.75
-11f1f67a3e|John Audia|Sun Feb 9 09:55:56 2025 -0500|qualcommb/ipq95xx: refresh patches ahead of 6.6.75
-71a966c480|Klaas Demter|Sun Feb 9 11:10:42 2025 +0100|uboot-envtools: add support for ZyXEL GS-1900-24EP
-8118b2dace|Felix Fietkau|Wed Feb 12 11:54:59 2025 +0100|hostapd: fix sta psk index for dynamic psk auth
-4779b731d4|Rany Hany|Mon Feb 10 10:25:41 2025 +0000|hostapd: update to version 2025-02-09
+d04b0cbe39|Tianling Shen|Sat Feb 15 00:51:15 2025 +0800|rockchip: drop broken drm backports from kernel 6.6
+7c55524ec8|Tianling Shen|Sat Feb 15 00:47:22 2025 +0800|Merge Official Source
+57b7e35f55|Tianling Shen|Sat Feb 15 00:46:55 2025 +0800|rockchip: refresh patches
+9fb44638ba|George Moussalem|Fri Feb 14 13:46:53 2025 +0400|nss-dp: switchdev: apply flag dependency directives
+3dfd1f69a7|Felix Fietkau|Fri Feb 14 11:21:29 2025 +0100|mt76: update to Git HEAD (2025-02-14)
+78b78a4268|Linus Walleij|Sun Jan 12 01:08:17 2025 +0100|gemini: Convert to use module for Realtek switch
+562ced3d8f|Felix Fietkau|Wed Feb 12 20:04:10 2025 +0100|umdns: add cli module
+f7c5a2b7d4|Felix Fietkau|Wed Feb 12 20:01:09 2025 +0100|unetd: add cli module
+248b66b44f|Felix Fietkau|Mon Jan 13 22:46:05 2025 +0100|cli: add OpenWrt CLI
+be31d44bd9|Felix Fietkau|Mon Jan 13 12:28:30 2025 +0100|ucode-mod-uline: add package for ucode terminal line editing
 </details>

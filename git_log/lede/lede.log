@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bf665a29b|coolsnowwolf|Thu Feb 13 18:17:57 2025 +0800|qualcommax: ipq50xx: add CMCC RAX3000Q support
-9dc66796d|coolsnowwolf|Thu Feb 13 16:48:41 2025 +0800|qualcommax: ipq50xx : temporarily disable tcsr_q6_block
+dbd654f22|George Moussalem|Fri Feb 14 13:46:53 2025 +0400|nss-dp: switchdev: apply flag dependency directives
+8730dc18a|Mieczyslaw Nalewaj|Sat Jul 27 15:41:14 2024 +0200|kernel: rtl8367: detect rtl8367d chip family
+0263cb383|Luiz Angelo Daros de Luca|Tue Oct 24 15:56:03 2023 -0300|kernel: netdevices: add realtek DSA modules
 </details>

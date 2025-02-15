@@ -2,12 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4e3d7845f|Dirk Brenken|Thu Feb 13 21:47:39 2025 +0100|banIP: release 1.5.1-1
-ae038d077|Florian Eckert|Tue Feb 4 13:01:53 2025 +0100|keepalived: add new uci section config interface_up_down_delays
-f02a1df12|FriesI23 Qin|Sun Feb 9 18:22:23 2025 +0800|ddns-script: add retry_max_count's upgrade script
-6e80b3ac6|FriesI23 Qin|Tue Jan 28 10:40:01 2025 +0800|ddns-script: fix retry_max_count for luadns-v1
-37cf5f0ce|FriesI23 Qin|Tue Jan 28 10:37:20 2025 +0800|ddns-script: fix retry_max_count for godaddy-v1
-46b6f3dec|FriesI23 Qin|Tue Jan 28 10:36:32 2025 +0800|ddns-script: fix retry_max_count for dnspod
-e10ddcfa0|FriesI23 Qin|Tue Jan 28 10:32:38 2025 +0800|ddns-script: fix retry_max_count for cloudflare-v4
-62e94d48f|FriesI23 Qin|Tue Jan 28 10:22:27 2025 +0800|ddns-script: fix retry_max_count at sample config
+7699651f6|Dirk Brenken|Fri Feb 14 07:26:14 2025 +0100|adblock: update 4.2.4-2
 </details>
