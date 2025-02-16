@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dbd654f22|George Moussalem|Fri Feb 14 13:46:53 2025 +0400|nss-dp: switchdev: apply flag dependency directives
-8730dc18a|Mieczyslaw Nalewaj|Sat Jul 27 15:41:14 2024 +0200|kernel: rtl8367: detect rtl8367d chip family
-0263cb383|Luiz Angelo Daros de Luca|Tue Oct 24 15:56:03 2023 -0300|kernel: netdevices: add realtek DSA modules
+0631178b1|coolsnowwolf|Sun Feb 16 11:33:57 2025 +0800|ipq-wifi: rename jdcloud ax6600 to re-cs-02
+58b8d3234|coolsnowwolf|Sun Feb 2 23:02:21 2025 +0800|qualcommax: ipq807x: add support for Zbtlink Z800AX
 </details>

@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9fb44638ba|George Moussalem|Fri Feb 14 13:46:53 2025 +0400|nss-dp: switchdev: apply flag dependency directives
-3dfd1f69a7|Felix Fietkau|Fri Feb 14 11:21:29 2025 +0100|mt76: update to Git HEAD (2025-02-14)
+4387de9445|Daniel Golle|Mon Feb 10 23:18:46 2025 +0000|mediatek: apply bootloader work-around for affected ASUS devices
+c48afca32c|Daniel Golle|Thu Feb 6 05:17:54 2025 +0000|mediatek: add work-around for ASUS bootloader MTD behavior
+054bdc7877|Zoltan HERPAI|Thu Feb 13 22:21:32 2025 +0100|opensbi: bump to 1.6
 </details>

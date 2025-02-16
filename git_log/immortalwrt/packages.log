@@ -1,0 +1,26 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+571350b5e|Tianling Shen|Sat Feb 15 16:58:18 2025 +0800|Merge Official Source
+56139cc52|Til Kaiser|Sat Feb 8 12:01:32 2025 +0100|mstflint: update to 4.31.0
+430a79bb8|Espen Jürgensen|Thu Feb 13 00:38:44 2025 +0100|owntone: update to 28.11
+e6e4e885d|Kel Modderman|Sat Feb 1 00:22:20 2025 +1000|squeezelite: update to 2.0.0.1518
+ea4972597|Othmar Truniger|Wed Feb 5 13:56:20 2025 +0100|libfmt: bump to new release 11.1.3
+cc2a5a5c3|Jan Hoffmann|Tue Feb 11 20:07:46 2025 +0100|vnstat2: update to version 2.13
+840b638fc|Olivier Poitrey|Thu Feb 13 02:32:32 2025 +0000|nextdns: Update to version 1.44.6
+e97cffc32|Rudy Andram|Thu Feb 13 08:41:22 2025 +0000|curl: bump to 8.12.1
+7699651f6|Dirk Brenken|Fri Feb 14 07:26:14 2025 +0100|adblock: update 4.2.4-2
+4e3d7845f|Dirk Brenken|Thu Feb 13 21:47:39 2025 +0100|banIP: release 1.5.1-1
+ae038d077|Florian Eckert|Tue Feb 4 13:01:53 2025 +0100|keepalived: add new uci section config interface_up_down_delays
+f02a1df12|FriesI23 Qin|Sun Feb 9 18:22:23 2025 +0800|ddns-script: add retry_max_count's upgrade script
+6e80b3ac6|FriesI23 Qin|Tue Jan 28 10:40:01 2025 +0800|ddns-script: fix retry_max_count for luadns-v1
+37cf5f0ce|FriesI23 Qin|Tue Jan 28 10:37:20 2025 +0800|ddns-script: fix retry_max_count for godaddy-v1
+46b6f3dec|FriesI23 Qin|Tue Jan 28 10:36:32 2025 +0800|ddns-script: fix retry_max_count for dnspod
+e10ddcfa0|FriesI23 Qin|Tue Jan 28 10:32:38 2025 +0800|ddns-script: fix retry_max_count for cloudflare-v4
+62e94d48f|FriesI23 Qin|Tue Jan 28 10:22:27 2025 +0800|ddns-script: fix retry_max_count at sample config
+571d9e96a|Stan Grishin|Wed Feb 12 03:57:26 2025 +0000|pbr: update to 1.1.8-10
+4337232f5|Stan Grishin|Mon Feb 10 21:18:24 2025 +0000|https-dns-proxy: bugfix: start on boot
+434c353e6|Florian Eckert|Tue Feb 4 12:36:51 2025 +0100|modemmanager: do not disable modem on reconnect
+f9dbeea92|Koen Vandeputte|Fri Nov 15 09:23:31 2024 +0100|libs/srt: bump to 1.5.4
+</details>

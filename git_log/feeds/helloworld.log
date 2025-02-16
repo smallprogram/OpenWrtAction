@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dc8a87a|zxl hhyccc|Fri Feb 14 22:15:56 2025 +0800|Merge pull request #1685 from zxlhhyccc/socks
-9d0589a|zxlhhyccc|Thu Feb 13 23:56:09 2025 +0800|luci-app-ssr-plus: Fix when `SOCKS5` is global server node cannot disabled issue.
-b0bd48e|zxlhhyccc|Thu Feb 13 23:51:24 2025 +0800|luci-app-ssr-plus: Fix when `SOCKS5` is initial disabled `Netflix` shunt faild issue.
+c5c7244|zxl hhyccc|Sun Feb 16 01:22:35 2025 +0800|Merge pull request #1686 from zxlhhyccc/socks
+43f566d|zxlhhyccc|Fri Feb 14 23:35:57 2025 +0800|luci-app-ssr-plus: optimize `Netflix` shunt value code.
 </details>
