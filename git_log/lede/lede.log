@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0631178b1|coolsnowwolf|Sun Feb 16 11:33:57 2025 +0800|ipq-wifi: rename jdcloud ax6600 to re-cs-02
-58b8d3234|coolsnowwolf|Sun Feb 2 23:02:21 2025 +0800|qualcommax: ipq807x: add support for Zbtlink Z800AX
+6c30ff683|tabudz|Mon Feb 17 10:57:45 2025 +0800|mt7615d: fix possible infinite loop in BN_mod_sqrt() (#13346)
+b00deea1b|coolsnowwolf|Sun Feb 16 16:28:26 2025 +0800|mac80211: ath: add qcom-qmi-helpers as package
+81419528c|Felix Fietkau|Tue Sep 24 14:35:31 2024 +0200|kernel: backport MHI patch required by an upcoming mac80211 update
 </details>

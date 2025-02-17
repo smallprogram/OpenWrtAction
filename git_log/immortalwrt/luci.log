@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f44f614bee|Tianling Shen|Sat Feb 15 16:59:17 2025 +0800|Merge Official Source
-375c701001|Hosted Weblate|Sat Feb 15 07:36:06 2025 +0100|Translated using Weblate (Chinese (Simplified Han script))
-9c3be817ad|Florian Eckert|Thu Feb 13 13:49:35 2025 +0100|luci-proto-modemmanager: change string for 'Own Numbers' to 'Mobile Number'
-3b0fc3c5b9|Florian Eckert|Thu Feb 13 14:08:50 2025 +0100|Merge pull request #7626 from weblate/weblate-openwrt-luci
-ed10064223|Hosted Weblate|Thu Feb 13 12:38:15 2025 +0100|Translated using Weblate (Chinese (Simplified Han script))
+fe5d9a330f|Tianling Shen|Sun Feb 16 17:35:29 2025 +0800|luci-app-3ginfo-lite: Update to 1.0.74-20241111
 </details>

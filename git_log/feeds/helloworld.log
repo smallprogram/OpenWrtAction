@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c5c7244|zxl hhyccc|Sun Feb 16 01:22:35 2025 +0800|Merge pull request #1686 from zxlhhyccc/socks
-43f566d|zxlhhyccc|Fri Feb 14 23:35:57 2025 +0800|luci-app-ssr-plus: optimize `Netflix` shunt value code.
+5e6a248|coolsnowwolf|Sun Feb 16 20:23:34 2025 +0800|luci-app-ssr-plus: add subscribe option allows insecure connection as TLS client (insecure)
 </details>

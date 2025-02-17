@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-203c7a2|lwb1978|Sat Feb 15 12:28:26 2025 +0800|luci: optimize PW version number retrieval
-</details>
