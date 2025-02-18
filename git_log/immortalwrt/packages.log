@@ -2,5 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f4d6cdd87|Tianling Shen|Sun Feb 16 17:40:36 2025 +0800|modemband: Update to 20241111
+5324dcab3|Tianling Shen|Tue Feb 18 00:41:22 2025 +0800|Merge Official Source
+02354d3a9|Tianling Shen|Tue Feb 18 00:40:18 2025 +0800|Merge Official Source
+bdb126874|Tianling Shen|Tue Feb 18 00:24:22 2025 +0800|vlmcsd: run as unprivileged user
+7ff04e9e3|Wesley Gimenes|Sat Feb 15 20:44:30 2025 -0300|netbird: update to 0.36.7
+0f9bcfa8d|Javier Marcet|Wed Feb 12 22:10:42 2025 +0100|docker-compose: Update to version 2.33.0
+21200cd08|Hirokazu MORIKAWA|Mon Feb 17 13:06:16 2025 +0900|node: bump to 22.14.0
+c3a33e10a|Ryan Keane|Sun Dec 22 06:12:04 2024 -0800|adguardhome: Update init files
+62c758123|Ryan Keane|Sun Dec 22 06:08:43 2024 -0800|adguardhome: Bump to 0.107.56
+d4cf04643|Bartosz Cieślik|Mon Feb 10 19:11:15 2025 +0100|acme-common: Resolve problem with webroot symlink
 </details>

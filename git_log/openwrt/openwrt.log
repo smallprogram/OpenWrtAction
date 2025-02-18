@@ -2,12 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-74f0c95154|Pietro Ameruoso|Fri Feb 14 16:50:40 2025 +0100|mediatek: filogic: fix sysupgrade for ex5601-t0-stock
-144e8199d0|Anton Yu. Ivanusev|Wed Feb 12 10:59:50 2025 +0500|ramips: fixes for Keenetic KN-1613,1711,1713,1910
-de0e6a9501|Raylynn Knight|Sat Jan 25 23:19:09 2025 -0500|ramips: Add alternate support for TP-Link FR205
-5a124ff167|Tim Harvey|Thu Feb 13 10:37:50 2025 -0800|imx: cortexa53: fix sysupgrade image device support for venice
-ee73d35fbe|Tim Harvey|Thu Feb 13 10:36:09 2025 -0800|imx: cortexa53: add 'gateworks,imx8m*' to sysupgrade board checks
-9772ca190e|Aleksander Jan Bajkowski|Mon Feb 10 00:17:30 2025 +0100|mediatek: filogic: upstream LEDs control on 2.5G ports on EX5601
-26d43b039d|Fabian Groffen|Sat Jan 25 09:30:59 2025 +0100|octeon/generic: ubnt,erlite: define profile
-b4e6fd7b76|John Audia|Wed Feb 12 08:56:47 2025 -0500|openssl: update to 3.0.16
+f93367227e|Robert Senderek|Fri Feb 14 09:01:39 2025 +0100|ramips: Add support for Mercusys MR1800X as alt name of MR70X
+1437ff840b|Robert Senderek|Mon Feb 17 08:15:20 2025 +0100|tools: firmware-utils: update to Git HEAD (2024-02-16)
+bb84c256e7|Mieczyslaw Nalewaj|Sun Feb 16 21:23:32 2025 +0100|ramips: improve MT7621S core detection
+38c21271d2|Felix Fietkau|Mon Feb 17 12:29:27 2025 +0100|kernel: receive all bridged multicast packets if IFF_ALLMULTI is set
+51d485ef31|Chukun Pan|Mon Feb 10 23:18:15 2025 +0800|qualcommax: add support for Aliyun AP8220
+b6fa124bdf|Chukun Pan|Wed Feb 12 23:02:08 2025 +0800|qualcommax: cleanup network script indent
+f138507683|Chukun Pan|Sun Feb 16 20:20:08 2025 +0800|ipq-wifi: update to version 2025-02-16
 </details>

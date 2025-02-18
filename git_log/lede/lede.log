@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6c30ff683|tabudz|Mon Feb 17 10:57:45 2025 +0800|mt7615d: fix possible infinite loop in BN_mod_sqrt() (#13346)
-b00deea1b|coolsnowwolf|Sun Feb 16 16:28:26 2025 +0800|mac80211: ath: add qcom-qmi-helpers as package
-81419528c|Felix Fietkau|Tue Sep 24 14:35:31 2024 +0200|kernel: backport MHI patch required by an upcoming mac80211 update
+36c00a420|coolsnowwolf|Tue Feb 18 11:25:00 2025 +0800|ipq-wifi: update to version 2025-02-16
+d989a3256|John Audia|Sun Feb 9 09:55:56 2025 -0500|qualcommb/ipq95xx: refresh patches ahead of 6.6.75
+8311a3f31|coolsnowwolf|Mon Feb 17 16:59:22 2025 +0800|generic: add more switch port link speed nested attributes
 </details>

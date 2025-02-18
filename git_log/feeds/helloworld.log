@@ -1,6 +1,0 @@
-<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-5e6a248|coolsnowwolf|Sun Feb 16 20:23:34 2025 +0800|luci-app-ssr-plus: add subscribe option allows insecure connection as TLS client (insecure)
-</details>
