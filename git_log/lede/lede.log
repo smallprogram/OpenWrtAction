@@ -1,8 +1,0 @@
-<details> <summary> <b>lede new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-36c00a420|coolsnowwolf|Tue Feb 18 11:25:00 2025 +0800|ipq-wifi: update to version 2025-02-16
-d989a3256|John Audia|Sun Feb 9 09:55:56 2025 -0500|qualcommb/ipq95xx: refresh patches ahead of 6.6.75
-8311a3f31|coolsnowwolf|Mon Feb 17 16:59:22 2025 +0800|generic: add more switch port link speed nested attributes
-</details>

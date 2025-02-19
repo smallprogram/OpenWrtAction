@@ -2,11 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f93367227e|Robert Senderek|Fri Feb 14 09:01:39 2025 +0100|ramips: Add support for Mercusys MR1800X as alt name of MR70X
-1437ff840b|Robert Senderek|Mon Feb 17 08:15:20 2025 +0100|tools: firmware-utils: update to Git HEAD (2024-02-16)
-bb84c256e7|Mieczyslaw Nalewaj|Sun Feb 16 21:23:32 2025 +0100|ramips: improve MT7621S core detection
-38c21271d2|Felix Fietkau|Mon Feb 17 12:29:27 2025 +0100|kernel: receive all bridged multicast packets if IFF_ALLMULTI is set
-51d485ef31|Chukun Pan|Mon Feb 10 23:18:15 2025 +0800|qualcommax: add support for Aliyun AP8220
-b6fa124bdf|Chukun Pan|Wed Feb 12 23:02:08 2025 +0800|qualcommax: cleanup network script indent
-f138507683|Chukun Pan|Sun Feb 16 20:20:08 2025 +0800|ipq-wifi: update to version 2025-02-16
+1152af3490|Zoltan HERPAI|Tue Feb 18 18:57:53 2025 +0100|sunxi: add support for Merrii Hummingbird A31
+e60729c720|Zoltan HERPAI|Sat Feb 15 16:48:20 2025 +0100|uboot-sifiveu: bump to 2023.10
+ef22d4af1f|Daniel Golle|Tue Feb 18 19:31:48 2025 +0000|kernel: add missing patch description
+2aba2b32ce|Zoltan HERPAI|Sun Feb 16 21:18:13 2025 +0000|uboot-sunxi: bump to 2025.01
+3a1c19fd6b|Christian Marangi|Sun Feb 9 18:40:56 2025 +0100|apk: disable python module
+83d2d21904|Christian Marangi|Sun Feb 9 16:04:56 2025 +0100|apk: update to Git HEAD (2025-02-08)
+92132bb9cc|George Moussalem|Fri Feb 14 18:58:16 2025 +0400|qualcommax: ipq50xx: sysupgrade: fix OEM UBI volume name for Linksys MX devices
+fe379eb1c1|George Moussalem|Wed Jan 8 10:21:30 2025 +0400|qualcommax: ipq50xx: add support for Linksys SPNMX56
+31dc43daf5|Daniel Golle|Tue Feb 18 04:31:05 2025 +0000|generic: mtk_eth_soc: dump registers on forced reset
 </details>

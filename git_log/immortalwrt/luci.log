@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+9e60a47c0d|Tianling Shen|Tue Feb 18 19:51:49 2025 +0800|luci-app-vlmcsd: use load to render configuration file
+334d08830a|Tianling Shen|Tue Feb 18 19:25:30 2025 +0800|luci-app-openclash: Update to 0.46.075
+</details>
