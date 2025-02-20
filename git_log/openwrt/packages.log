@@ -2,10 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-706cad572|Stan Grishin|Tue Feb 18 00:13:29 2025 +0000|https-dns-proxy: bugfixes
-0f91e1b9c|Olivier Poitrey|Mon Feb 17 21:25:09 2025 +0000|nextdns: Update to version 1.45.0
-39c5d7f85|Tianling Shen|Tue Feb 18 19:57:49 2025 +0800|v2raya: Update to 2.2.6.6
-ff191e50e|Tianling Shen|Tue Feb 18 19:57:22 2025 +0800|v2ray-core: Update to 5.28.0
-944d48241|Tianling Shen|Tue Feb 18 19:56:37 2025 +0800|rclone: Update to 1.69.1
-66906b867|Tianling Shen|Tue Feb 18 19:55:55 2025 +0800|cloudflared: Update to 2025.2.0
+0a2746c6d|Bei Lin|Tue Feb 18 21:28:44 2025 +0800|ddns-scripts: Accept 'good|nochg' for IPv4/IPv6 in ydns.io.json
+6b8567145|Eric Fahlgren|Tue Feb 18 10:21:55 2025 -0800|owut: update to 2025.02.18
 </details>

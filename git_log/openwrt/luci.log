@@ -1,7 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-7fb534c11d|Stan Grishin|Tue Feb 18 10:25:40 2025 -0800|Merge pull request #7632 from stangri/master-luci-app-advanced-reboot
-4551e0bd2e|Stan Grishin|Sat Feb 15 17:56:58 2025 +0000|luci-app-advanced-reboot: add MR5500 and SPNMX56
-</details>

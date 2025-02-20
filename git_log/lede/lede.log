@@ -1,0 +1,7 @@
+<details> <summary> <b>lede new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+55c1cfedc|aiamadeus|Tue Feb 18 22:26:02 2025 +0800|aic8800: add support for usb cards
+4a126e07b|aiamadeus|Mon Feb 17 22:18:06 2025 +0800|usb-modeswitch: add aic8800 support
+</details>
