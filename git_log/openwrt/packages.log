@@ -2,6 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0a2746c6d|Bei Lin|Tue Feb 18 21:28:44 2025 +0800|ddns-scripts: Accept 'good|nochg' for IPv4/IPv6 in ydns.io.json
-6b8567145|Eric Fahlgren|Tue Feb 18 10:21:55 2025 -0800|owut: update to 2025.02.18
+c8949c84a|Robert Marko|Thu Feb 20 11:45:39 2025 +0100|libffi: drop autoreconf
+adce35070|Gerard Ryan|Thu Feb 13 19:19:17 2025 +1000|containerd: Added reverse dependency version check
+023f3046f|Gerard Ryan|Thu Feb 13 19:18:53 2025 +1000|runc: Added reverse dependency version check
+0c571ef50|Gerard Ryan|Thu Feb 13 19:18:30 2025 +1000|tini: Added reverse dependency version check
+30355832f|Gerard Ryan|Thu Feb 13 19:17:07 2025 +1000|docker: Added reverse dependency version check
+5e2e9b7e9|Gerard Ryan|Thu Feb 13 19:14:14 2025 +1000|dockerd: Improved error msg for rev ver dep check
+3f7c3ee7f|Philipp Schmitt|Tue Feb 18 17:41:22 2025 +0100|mwan3: write `mwan3 use` error/debug messages to stderr instead of stdout
+00f28b828|John Audia|Wed Feb 19 14:29:29 2025 -0500|libffi: update to 3.4.7
+a57913d54|Sandro Jäckel|Tue Feb 18 00:03:03 2025 +0100|tailscale: update to 1.80.2
+67784bf4d|John Audia|Tue Feb 18 12:57:33 2025 -0500|openssh: bump to 9.9p2
+0c9f4a841|Philipp Schmitt|Tue Feb 18 17:16:45 2025 +0100|mwan3: propagate mwan3 use command exit code
 </details>

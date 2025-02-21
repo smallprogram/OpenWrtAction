@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7bce1d8|lwb1978|Thu Feb 20 11:57:12 2025 +0800|luci: app_update add chinadns-ng riscv64 arch
-7a77eb5|lwb1978|Thu Feb 20 09:42:36 2025 +0800|luci: optimize connect test
+212e354|zhusir|Thu Feb 20 13:08:02 2025 +0800|action: disable delete workflow
 </details>

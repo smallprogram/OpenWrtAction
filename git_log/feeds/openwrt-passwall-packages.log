@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5857ba2|lwb1978|Thu Feb 20 15:24:13 2025 +0800|chinadns-ng: add riscv64 arch
+5855afb|zhusir|Thu Feb 20 13:06:50 2025 +0800|action: disable delete workflow
+</details>

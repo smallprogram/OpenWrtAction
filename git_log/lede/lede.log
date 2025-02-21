@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-55c1cfedc|aiamadeus|Tue Feb 18 22:26:02 2025 +0800|aic8800: add support for usb cards
-4a126e07b|aiamadeus|Mon Feb 17 22:18:06 2025 +0800|usb-modeswitch: add aic8800 support
+3f0086932|aiamadeus|Thu Jan 16 23:08:19 2025 +0800|tools: add xxhash package for ccache
 </details>
