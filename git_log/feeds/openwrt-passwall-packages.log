@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5857ba2|lwb1978|Thu Feb 20 15:24:13 2025 +0800|chinadns-ng: add riscv64 arch
-5855afb|zhusir|Thu Feb 20 13:06:50 2025 +0800|action: disable delete workflow
+0eed799|github-actions[bot]|Fri Feb 21 17:05:56 2025 +0800|xray-core: update to 25.2.21 (#401)
+e62bc07|github-actions[bot]|Fri Feb 21 13:11:16 2025 +0800|v2ray-core: update to 5.29.1 (#399)
+eb24c19|github-actions[bot]|Fri Feb 21 13:10:49 2025 +0800|v2ray-geosite: update to 20250219031756 (#400)
 </details>

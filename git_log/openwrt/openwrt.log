@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-70586f574d|Nick Hainke|Sun Dec 29 22:55:04 2024 +0100|ipq40xx: convert GL.iNet GL-S1300 to DSA
-2b0c973895|Shiji Yang|Mon Feb 3 10:20:41 2025 +0800|tools: fakeroot: update to 1.37
-57b0304ce9|John Audia|Mon Feb 17 05:12:48 2025 -0500|kernel: bump 6.6 to 6.6.78
-b790989dff|George Moussalem|Wed Feb 19 13:08:49 2025 +0400|qualcommax: ipq50xx: Linksys MX remove superfluous properties and fix indentation
-eacc4d8c9b|George Moussalem|Thu Feb 6 12:14:27 2025 +0400|qualcommax: ipq50xx: use ascii-env driver to set mac address for Linksys MX devices
+6936deac67|Kuan-Yi Li|Fri Feb 21 05:26:15 2025 +0800|imagebuilder: fix addition of local packages
 </details>
