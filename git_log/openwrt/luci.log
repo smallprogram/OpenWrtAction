@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dbf2c4272a|Dirk Brenken|Fri Feb 21 22:00:16 2025 +0100|luci-app-banIP: sync with release 1.5.2-1
+d8d03b7a77|Hannu Nyman|Sat Feb 22 09:41:21 2025 +0200|treewide: Sync i18n translations
+4ee8da2eb1|Dirk Brenken|Sat Feb 22 07:06:29 2025 +0100|luci-app-adblock: sync with release 4.2.6-1
 </details>

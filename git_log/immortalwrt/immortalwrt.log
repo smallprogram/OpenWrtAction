@@ -2,12 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0fadcf53ed|Tianling Shen|Fri Feb 21 21:46:13 2025 +0800|Merge Official Source
-6936deac67|Kuan-Yi Li|Fri Feb 21 05:26:15 2025 +0800|imagebuilder: fix addition of local packages
-70586f574d|Nick Hainke|Sun Dec 29 22:55:04 2024 +0100|ipq40xx: convert GL.iNet GL-S1300 to DSA
-2b0c973895|Shiji Yang|Mon Feb 3 10:20:41 2025 +0800|tools: fakeroot: update to 1.37
-57b0304ce9|John Audia|Mon Feb 17 05:12:48 2025 -0500|kernel: bump 6.6 to 6.6.78
-b790989dff|George Moussalem|Wed Feb 19 13:08:49 2025 +0400|qualcommax: ipq50xx: Linksys MX remove superfluous properties and fix indentation
-eacc4d8c9b|George Moussalem|Thu Feb 6 12:14:27 2025 +0400|qualcommax: ipq50xx: use ascii-env driver to set mac address for Linksys MX devices
-ab80e6c684|Daniel Golle|Wed Feb 12 17:57:02 2025 +0000|arm-trusted-firmware-mediatek: update to upstream release 2025-02-12
+3e4c72dc09|Tianling Shen|Sat Feb 22 14:50:50 2025 +0800|ramips: disable build for dlink dir-806a-b1 by default
+e6e4c03868|Tianling Shen|Sat Feb 22 14:46:00 2025 +0800|mediatek: fix sysupgrade for cudy tr3000 v1 ubootmod
 </details>

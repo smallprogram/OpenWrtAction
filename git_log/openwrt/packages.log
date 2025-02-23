@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-884876c7e|Dirk Brenken|Fri Feb 21 22:08:45 2025 +0100|banIP: release 1.5.2-1
-a56ae2d91|Chris Swan|Thu Feb 20 10:45:25 2025 +0000|arp-scan-database: Relocate mac-vendor.txt to /etc/arp-scan
-65cbccfde|Dimitri Souza|Thu Feb 20 12:31:27 2025 -0300|ddns-scripts: Add option 'myip=no' to Dynu IPv6 update URL
+fc35c4e9c|Dirk Brenken|Sat Feb 22 06:55:26 2025 +0100|adblock: release 4.2.6-1
 </details>
