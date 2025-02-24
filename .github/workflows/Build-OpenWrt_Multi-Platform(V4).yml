@@ -301,6 +301,13 @@ jobs:
     name: Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}
 
     steps:
+      - name: Server Info
+        run: |
+            echo "---------------------CPU Info--------------------"
+            lscpu
+            echo "---------------------RAM Info--------------------"
+            free -h
+
       - name: Initialization Environment
         run: |
           sudo timedatectl set-timezone "$TZ"
@@ -474,6 +481,13 @@ jobs:
     name: Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}
 
     steps:
+      - name: Server Info
+        run: |
+            echo "---------------------CPU Info--------------------"
+            lscpu
+            echo "---------------------RAM Info--------------------"
+            free -h
+
       - name: Initialization Environment
         run: |
           sudo timedatectl set-timezone "$TZ"
