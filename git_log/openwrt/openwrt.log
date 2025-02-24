@@ -2,13 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ce67f08449|Shiji Yang|Fri Feb 21 21:12:23 2025 +0800|tools: zstd: update to 1.5.7
-cb5fb841a5|Robert Marko|Fri Feb 21 18:20:20 2025 +0100|iproute2: update to 6.13
-aba52e092c|Dominick Grift|Thu Jan 16 10:23:12 2025 +0100|selinux-policy: update to version v2.1
-4baf162d83|Jan Hoffmann|Thu Jan 30 11:19:30 2025 +0100|ltq-vdsl-vr11-app: exit more quickly if orderly shutdown fails
-03bbd36e67|Jan Hoffmann|Thu Jan 30 11:19:29 2025 +0100|ltq-vdsl-vr11: add option for L3 request without retry on failure
-a9b4d1f4b9|Jan Hoffmann|Thu Feb 6 23:54:25 2025 +0100|ltq-vdsl-vr9-mei: avoid unnecessary usage of unsafe_memcpy
-6df4e4663b|Jan Hoffmann|Thu Feb 6 23:54:24 2025 +0100|ltq-vdsl-vr11-mei: fix field-spanning write warning
-9df4a88e60|Chukun Pan|Fri Feb 21 22:01:05 2025 +0800|sunxi: enable usbgadget feature
-890293c13c|Sander Vanheule|Sat Feb 22 12:06:10 2025 +0100|realtek: add PoE enable line to Netgear GS310TP
+da2cc98458|Rudy Andram|Wed Feb 12 19:28:49 2025 +0000|wireless-regdb: Update to version 2025.02.20
+4aea0689e7|Andre Heider|Tue Aug 29 15:48:56 2023 +0200|ltq-vdsl-vr11-mei: remove static linking
+d787839afa|Andre Heider|Sat May 25 08:13:21 2024 +0200|ltq-vdsl-vr11-mei: remove support for older kernel versions
+3b7a92754e|Paweł Owoc|Sun Jan 5 11:35:18 2025 +0100|linux: use packages kmod-hci-uart and kmod-btusb instead of kmod-bluetooth
+1c42a0be36|Paweł Owoc|Sat Jan 4 22:48:01 2025 +0100|kernel: modules: bluetooth: separating UART and USB drivers
+f4f0a847a4|Paweł Owoc|Tue Apr 9 18:57:58 2024 +0200|kernel: modules: bluetooth: creating a new Bluetooth menu
+8b3c845835|Bjørn Mork|Sat Feb 22 11:11:20 2025 +0100|realtek: ONTi ONT-S508CL-8S is a relabeled XikeStor SKS8300-8X
+3ffe54a1e1|Shiji Yang|Fri Feb 21 21:18:22 2025 +0800|tools: xz: update to 5.6.4
+d664d74669|John Audia|Fri Feb 21 09:14:57 2025 -0500|kernel: bump 6.6 to 6.6.79
 </details>

@@ -1,7 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-3e4c72dc09|Tianling Shen|Sat Feb 22 14:50:50 2025 +0800|ramips: disable build for dlink dir-806a-b1 by default
-e6e4c03868|Tianling Shen|Sat Feb 22 14:46:00 2025 +0800|mediatek: fix sysupgrade for cudy tr3000 v1 ubootmod
-</details>

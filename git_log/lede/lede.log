@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8b14c2784|Christian Marangi|Thu Oct 17 15:54:52 2024 +0200|airoha: Introduce 7581 SoC support
+a050110bb|77160860|Mon Feb 24 11:49:25 2025 +0800|armbian-firmware: add BCM43430B0 FullMac SDIO firmware
+6bfda9d7d|Chuanhong Guo|Sun Nov 19 20:56:52 2023 +0800|Add new package for usb gadget setup
 </details>
