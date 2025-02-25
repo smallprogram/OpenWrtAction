@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a050110bb|77160860|Mon Feb 24 11:49:25 2025 +0800|armbian-firmware: add BCM43430B0 FullMac SDIO firmware
-6bfda9d7d|Chuanhong Guo|Sun Nov 19 20:56:52 2023 +0800|Add new package for usb gadget setup
+b32c0de79|coolsnowwolf|Mon Feb 24 17:42:56 2025 +0800|linux: add module package crypto-lib-aescfb for 6.12
+dedff78f0|coolsnowwolf|Mon Feb 24 17:41:11 2025 +0800|uboot-rk35xx: fix MangoPi M28C support
 </details>

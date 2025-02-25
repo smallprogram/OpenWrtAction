@@ -2,6 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2db5fca2d|Ray Wang|Sat Feb 22 11:56:36 2025 +0800|natmap: update to 20250221
-1f423f462|Wesley Gimenes|Fri Feb 21 17:57:29 2025 -0300|netbird: update to 0.37.0
+96c96fe04|John Audia|Tue Jul 16 15:23:36 2024 -0400|lxc: fix decompression of rootfs tarballs
+b74dc8a11|John Audia|Fri Jul 12 13:57:10 2024 -0400|lxc: add gnu-tar as a depends to fix lxc-create
+51ba51011|Thomas Richard|Fri Feb 7 18:34:47 2025 +0100|phytool: add phytool package
+ba7e4dcce|John Audia|Thu Jan 9 17:35:33 2025 -0500|lxc: add missing deps
+57434a290|John Audia|Thu Jan 9 21:48:25 2025 -0500|lxc: remove check for options we do not package
 </details>

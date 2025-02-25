@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-29fe3f5fda|Tobias Waldvogel|Sun Jan 5 18:14:06 2025 +0100|luci: show wifi vlan in the associated wireless stations list
-33d41d469b|Jan Froch|Sat Feb 22 02:19:49 2025 +0100|luci-app-firewall: add log_limit This adds the 'log_limit' option to rules in Port Forwards and Traffic Rules. For NAT Rules this is not supported.
-cecb1e5227|Jan Froch|Sat Feb 22 01:13:01 2025 +0100|luci-app-firewall: add log option This adds the 'log' option to rules in Port Forwards, Traffic Rules and NAT Rules.
-cbd37919ae|Sergey Ponomarev|Sun Feb 23 00:17:19 2025 +0200|luci-proto-vxlan: fix option name: vxlan_peers to vxlan_peer
+cda84c77e3|Sergey Ponomarev|Mon Feb 24 21:06:21 2025 +0200|luci-app-shadowsocks-libev: delete translations
+89b9dc32f9|Hosted Weblate|Mon Feb 24 15:29:40 2025 +0100|Translated using Weblate (Marathi)
 </details>

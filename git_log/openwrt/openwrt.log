@@ -2,13 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-da2cc98458|Rudy Andram|Wed Feb 12 19:28:49 2025 +0000|wireless-regdb: Update to version 2025.02.20
-4aea0689e7|Andre Heider|Tue Aug 29 15:48:56 2023 +0200|ltq-vdsl-vr11-mei: remove static linking
-d787839afa|Andre Heider|Sat May 25 08:13:21 2024 +0200|ltq-vdsl-vr11-mei: remove support for older kernel versions
-3b7a92754e|Paweł Owoc|Sun Jan 5 11:35:18 2025 +0100|linux: use packages kmod-hci-uart and kmod-btusb instead of kmod-bluetooth
-1c42a0be36|Paweł Owoc|Sat Jan 4 22:48:01 2025 +0100|kernel: modules: bluetooth: separating UART and USB drivers
-f4f0a847a4|Paweł Owoc|Tue Apr 9 18:57:58 2024 +0200|kernel: modules: bluetooth: creating a new Bluetooth menu
-8b3c845835|Bjørn Mork|Sat Feb 22 11:11:20 2025 +0100|realtek: ONTi ONT-S508CL-8S is a relabeled XikeStor SKS8300-8X
-3ffe54a1e1|Shiji Yang|Fri Feb 21 21:18:22 2025 +0800|tools: xz: update to 5.6.4
-d664d74669|John Audia|Fri Feb 21 09:14:57 2025 -0500|kernel: bump 6.6 to 6.6.79
+7b401a9d95|Paweł Owoc|Mon Feb 24 13:18:46 2025 +0100|qualcommax: fix upgrade function for Linksys MX dual boot devices
+7a9a646c72|Daniel Golle|Thu Feb 20 17:00:56 2025 +0000|linux-firmware: update to 20250211
+e03676a9ba|Hannu Nyman|Sat Feb 22 18:47:52 2025 +0200|tools/autoconf: Fix relocatable patch
+15c27ce9f0|Felix Fietkau|Mon Feb 24 13:30:36 2025 +0100|ucode-mod-uline: fix prompt after set_hint with string bigger than the window size
+06c6481e7f|Shiji Yang|Fri Feb 21 19:52:01 2025 +0800|tools: zlib: switch to git source
+c43c816afc|Shiji Yang|Fri Feb 21 19:52:01 2025 +0800|zlib: switch to git source
+87f3365d90|Robert Marko|Mon Feb 24 12:27:47 2025 +0100|Revert "tools/automake: bump to 1.17"
+00e4b23e27|Felix Fietkau|Mon Feb 24 12:26:01 2025 +0100|kernel: fix IPv6 TCP GSO segmentation with NAT
+3a7467ffde|Daniel Golle|Wed Feb 12 04:21:22 2025 +0000|ethtool: work-around ETHTOOL_GRSSH/ETHTOOL_SRSSH ABI breakage
 </details>
