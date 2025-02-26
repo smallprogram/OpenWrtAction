@@ -1,7 +1,0 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-150982a16|Tianling Shen|Tue Feb 25 01:03:35 2025 +0800|quectel-cm: add ECM support for EC200D-EU/EC200G/EC600/EG915Q-NA
-d67c20df1|Tianling Shen|Tue Feb 25 00:13:13 2025 +0800|quectel-qmi-wwan: Update to 1.2.9
-</details>

@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cda84c77e3|Sergey Ponomarev|Mon Feb 24 21:06:21 2025 +0200|luci-app-shadowsocks-libev: delete translations
-89b9dc32f9|Hosted Weblate|Mon Feb 24 15:29:40 2025 +0100|Translated using Weblate (Marathi)
+3e45fc644f|Aleksander Jan Bajkowski|Sat Feb 15 22:47:13 2025 +0100|luci-mod-system: add speed and duplex triggers
+3bac133986|ducloc464|Fri Feb 14 18:00:16 2025 +0700|fix: configure lxc container POST request
+ca9761370a|Ivan Chashkin|Fri Feb 21 22:20:54 2025 +0300|luci-proto-yggdrasil: update yggdrasil.js for 0.5.7+ version
+e8a2e458bf|Jan Froch|Sun Feb 23 19:39:49 2025 +0100|luci-app-firewall: fix zone log option Changes the zone log checkbox to a multivalue selection as the underlying uci option is a bitfield.
 </details>

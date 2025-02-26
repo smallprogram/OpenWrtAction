@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b32c0de79|coolsnowwolf|Mon Feb 24 17:42:56 2025 +0800|linux: add module package crypto-lib-aescfb for 6.12
-dedff78f0|coolsnowwolf|Mon Feb 24 17:41:11 2025 +0800|uboot-rk35xx: fix MangoPi M28C support
+84884dd63|Internet1235|Tue Feb 25 18:23:25 2025 +0800|openssl: update to 3.0.16 (#13363)
+c44f45dfe|coolsnowwolf|Tue Feb 25 14:43:53 2025 +0800|aic8800: rename usb module to avoild conflicts
+6fbd06a3a|coolsnowwolf|Tue Feb 25 14:12:02 2025 +0800|kernel: bump 6.12 to 6.12.16
 </details>
