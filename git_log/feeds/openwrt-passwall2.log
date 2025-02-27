@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+2dfd990|zhusir|Wed Feb 26 16:44:40 2025 +0800|luci: update the steam game platform diversion rules implement proxy traffic except for game downloads
+</details>

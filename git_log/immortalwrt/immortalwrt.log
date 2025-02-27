@@ -1,0 +1,20 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b6b0fd72f1|Tianling Shen|Thu Feb 27 02:19:40 2025 +0800|kernel: bluetooth: split btbcm package from btusb
+f7d8bc3854|Tianling Shen|Wed Feb 26 23:53:10 2025 +0800|Merge Official Source
+4b000293b2|Tianling Shen|Wed Feb 26 22:47:12 2025 +0800|mediatek: add compat version to cmcc a10 ubootmod
+4e9240e733|Tianling Shen|Wed Feb 26 21:52:53 2025 +0800|mediatek: add stock layout for CMCC A10
+d6977ab33a|Bjørn Mork|Wed Feb 12 08:56:48 2025 +0100|realtek: rtl930x: sgmii support
+1fc19bc06e|Bjørn Mork|Thu Feb 6 18:30:06 2025 +0100|realtek: rtl93xx: mdio-smbus support for clause 45 and Rollball SFPs
+4457c1eee4|Bjørn Mork|Thu Feb 6 17:51:48 2025 +0100|realtek: rtl93xx: support SFPs with phys
+ccf54ca673|Bjørn Mork|Wed Feb 5 08:37:51 2025 +0100|realtek: sfp: add mdio bus only for sfps with a phy
+736229ba99|Bjørn Mork|Tue Feb 4 09:05:40 2025 +0100|realtek: sfp: prevent duplicate hwmon devices when re-probing on interface up
+ef4b022150|Bjørn Mork|Wed Feb 5 07:19:10 2025 +0100|realtek: i2c-rtl9300: fix crash on block transfers
+d5dcb88906|Bjørn Mork|Tue Feb 4 08:43:58 2025 +0100|realtek: dsa: silence debug log noise
+024e9dbace|Bjørn Mork|Wed Feb 5 07:27:02 2025 +0100|realtek: dsa: silence log noise on route offload
+e1acc7a67b|Robert Marko|Tue Feb 25 17:22:01 2025 +0100|Revert "tools/autoconf-archive: bump to 2024.10.16"
+a76651a24a|Kristian Skramstad|Sun Jan 26 09:50:23 2025 +0100|kernel: qca-nss-dp: update to 12.5.5
+7b401a9d95|Paweł Owoc|Mon Feb 24 13:18:46 2025 +0100|qualcommax: fix upgrade function for Linksys MX dual boot devices
+</details>

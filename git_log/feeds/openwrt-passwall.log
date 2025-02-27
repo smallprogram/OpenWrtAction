@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+8d36e30|lwb1978|Wed Feb 26 20:03:21 2025 +0800|luci: support sing-box urltest
+533a18e|zhusir|Wed Feb 26 16:32:56 2025 +0800|luci: update the steam game platform diversion rules to implement proxy traffic except for game downloads
+</details>

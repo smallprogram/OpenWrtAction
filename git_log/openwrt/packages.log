@@ -1,0 +1,9 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5cb12d479|Gilles Lenaerts|Tue Feb 11 13:58:57 2025 +0100|modemmanager: add config optional netifd integration
+03f8663b8|Espen Jürgensen|Sat Feb 15 17:15:57 2025 +0100|mxml: Remove
+034505d96|Javier Marcet|Sat Feb 22 13:24:28 2025 +0100|docker-compose: Update to version 2.33.1
+c67502852|Jonathan McCrohan|Mon Feb 24 20:35:17 2025 +0000|rust: update to 1.85.0
+</details>
