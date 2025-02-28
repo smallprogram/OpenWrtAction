@@ -1,8 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-eb422f5733|kiddin9|Wed Feb 26 17:16:25 2025 +0200|luci-app-package-manager: Update package-manager-call
-218dde4bad|Sergey Ponomarev|Tue Feb 25 22:00:28 2025 +0200|luci-app-wifischedule: fix menu item name
-926c3ba605|Sergey Ponomarev|Tue Feb 25 23:31:15 2025 +0200|luci-base: forms.js safe call on this.map.data.remove()
-</details>
