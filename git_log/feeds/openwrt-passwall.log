@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-832b0b5|A-BO|Thu Feb 27 21:09:56 2025 +0800|luci: optimize rule_update (#3750)
+96d0edb|lwb1978|Fri Feb 28 08:48:08 2025 +0800|action: update golang to 1.24.x
 </details>

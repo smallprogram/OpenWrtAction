@@ -2,11 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-be181cb3b3|Bjørn Mork|Fri Feb 14 10:59:36 2025 +0100|realtek: add thermal zones for SFP sensors on SKS8300-8X
-f29b57dc68|Bjørn Mork|Fri Feb 14 10:58:39 2025 +0100|realtek: add thermal zones for SFP sensors on GS1900-10HP
-864d6743ee|Bjørn Mork|Wed Feb 12 20:45:51 2025 +0100|realtek: thermal driver for rtl838x and rtl930x SoCs
-fe37574be6|Robert Marko|Thu Feb 27 11:05:26 2025 +0100|libpcap: add missing PKG_CONFIG_DEPENDS entries
-3d3328bf5f|Álvaro Fernández Rojas|Thu Feb 27 08:06:27 2025 +0100|kernel: r8126: update to v10.015.00
-a8dea562aa|Álvaro Fernández Rojas|Thu Feb 27 08:04:50 2025 +0100|kernel: r8125: update to v9.015.00
-23fdbd4e71|Álvaro Fernández Rojas|Thu Feb 27 08:31:12 2025 +0100|omcproxy: update to latest version
+ce68f61cb6|Felix Fietkau|Fri Feb 28 16:27:36 2025 +0100|unetd: update to Git HEAD (2025-02-28)
+8835ecf29b|Felix Fietkau|Thu Feb 27 11:21:22 2025 +0100|ucode-mod-uline: add support for querying window size from terminal if ioctl fails
+7953376400|Felix Fietkau|Wed Feb 26 10:35:02 2025 +0100|cli: use model scope for hook calls
+bc078b833a|Felix Fietkau|Tue Feb 25 16:25:16 2025 +0100|cli: add support for create/destroy object editor with single type
+895b4e7caf|Felix Fietkau|Mon Feb 24 21:22:52 2025 +0100|cli: add support for partial completion with separator character
+04ecccf3e9|Sander Vanheule|Fri Feb 28 16:29:20 2025 +0100|realtek: Drop redundant LED labels
+13a5e02e28|Sander Vanheule|Fri Feb 28 14:15:17 2025 +0100|realtek: Add status LED for Netgear GS310TP
 </details>

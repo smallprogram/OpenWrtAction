@@ -2,11 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1aea98f3c8|Tianling Shen|Thu Feb 27 21:50:23 2025 +0800|Merge Official Source
-922f41506e|Tianling Shen|Thu Feb 27 21:42:53 2025 +0800|kernel: bluetooth: fix btbcm depdendency
-fe37574be6|Robert Marko|Thu Feb 27 11:05:26 2025 +0100|libpcap: add missing PKG_CONFIG_DEPENDS entries
-3d3328bf5f|Álvaro Fernández Rojas|Thu Feb 27 08:06:27 2025 +0100|kernel: r8126: update to v10.015.00
-a8dea562aa|Álvaro Fernández Rojas|Thu Feb 27 08:04:50 2025 +0100|kernel: r8125: update to v9.015.00
-23fdbd4e71|Álvaro Fernández Rojas|Thu Feb 27 08:31:12 2025 +0100|omcproxy: update to latest version
-2389793edf|Hauke Mehrtens|Tue Feb 25 21:15:19 2025 +0100|kernel: kmod-btmtk: Extract btmtk.ko into own package
+14d906a33a|Tianling Shen|Fri Feb 28 21:05:45 2025 +0800|Merge Official Source
+be181cb3b3|Bjørn Mork|Fri Feb 14 10:59:36 2025 +0100|realtek: add thermal zones for SFP sensors on SKS8300-8X
+f29b57dc68|Bjørn Mork|Fri Feb 14 10:58:39 2025 +0100|realtek: add thermal zones for SFP sensors on GS1900-10HP
+864d6743ee|Bjørn Mork|Wed Feb 12 20:45:51 2025 +0100|realtek: thermal driver for rtl838x and rtl930x SoCs
 </details>

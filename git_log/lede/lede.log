@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b55bb8004|coolsnowwolf|Thu Jan 30 22:08:40 2025 +0800|quectel-cm: update to version 1.6.7
-04b8d9bdd|coolsnowwolf|Sun Feb 23 21:09:15 2025 +0800|package/wwan: remove outdated packages
+0146ee196|tuzhis|Fri Feb 28 20:10:03 2025 +0800|mediatek: add support for netcore n60 pro
 </details>

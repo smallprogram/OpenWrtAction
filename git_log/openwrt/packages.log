@@ -2,5 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7fdb92b59|Robert Marko|Thu Feb 27 12:35:12 2025 +0100|nginx-mod-njs: fix endianess patch
+d5cd6f3cf|Dirk Brenken|Fri Feb 28 16:49:39 2025 +0100|banIP: release 1.5.3-1
+ace9f160c|Florian Eckert|Wed Feb 19 09:31:02 2025 +0100|gpsd: migrate option device to a list devices
+e377d07af|Florian Eckert|Fri Feb 14 13:10:06 2025 +0100|gpsd: add readonly option to uci
+c954b960c|Florian Eckert|Fri Feb 14 13:00:57 2025 +0100|gpsd: only add device to procd start call if device option is configured
+d7fae1403|Florian Eckert|Thu Jan 30 11:55:19 2025 +0100|gpsd: add hotplug handling
+7ca3ffebf|Florian Eckert|Tue Jan 28 10:48:19 2025 +0100|gpsd: add the possibility to start the gpsd with a different log level
+f420a7bb3|Florian Eckert|Tue Jan 28 10:47:21 2025 +0100|gpsd: add control socket '/var/run/gpsd.sock' on startup
+8f0ab168c|Wesley Gimenes|Mon Feb 24 20:11:17 2025 -0300|netbird: update to 0.37.1
 </details>
