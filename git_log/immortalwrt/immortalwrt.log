@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-14d906a33a|Tianling Shen|Fri Feb 28 21:05:45 2025 +0800|Merge Official Source
-be181cb3b3|Bjørn Mork|Fri Feb 14 10:59:36 2025 +0100|realtek: add thermal zones for SFP sensors on SKS8300-8X
-f29b57dc68|Bjørn Mork|Fri Feb 14 10:58:39 2025 +0100|realtek: add thermal zones for SFP sensors on GS1900-10HP
-864d6743ee|Bjørn Mork|Wed Feb 12 20:45:51 2025 +0100|realtek: thermal driver for rtl838x and rtl930x SoCs
+3c5ff02eae|Tianling Shen|Sat Mar 1 20:48:52 2025 +0800|rockchip: switch to r8169 driver for nanopi r4s series
 </details>

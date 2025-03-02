@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-93c56de8a1|Hosted Weblate|Thu Feb 27 20:02:19 2025 +0100|Translated using Weblate (Irish)
-5bc1d40ba0|Dirk Brenken|Fri Feb 28 16:59:02 2025 +0100|luci-app-banIP: sync with release 1.5.3-1
+3522a424f8|Aleksander Jan Bajkowski|Fri Feb 28 21:46:54 2025 +0100|luci-mod-status: channel_analysis: fix 802.11be local interface channel width
+e4bfd608bd|junjie zhang|Fri Feb 28 19:05:28 2025 +0800|luci-app-filemanager: fixed time parsing
+56e086756d|Patrick Li|Sat Mar 1 14:12:23 2025 +1300|luci-app-squid: Fix wrong `ssldb` option
 </details>
