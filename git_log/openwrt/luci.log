@@ -1,8 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-3522a424f8|Aleksander Jan Bajkowski|Fri Feb 28 21:46:54 2025 +0100|luci-mod-status: channel_analysis: fix 802.11be local interface channel width
-e4bfd608bd|junjie zhang|Fri Feb 28 19:05:28 2025 +0800|luci-app-filemanager: fixed time parsing
-56e086756d|Patrick Li|Sat Mar 1 14:12:23 2025 +1300|luci-app-squid: Fix wrong `ssldb` option
-</details>

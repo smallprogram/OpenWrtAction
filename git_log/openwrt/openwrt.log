@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7560af7647|Aleksander Jan Bajkowski|Wed Feb 12 22:12:28 2025 +0100|mediatek: filogic: migrate ASUS TUF AX6000 to upstream PHY LED control
-25ea7ff393|Aleksander Jan Bajkowski|Sun Feb 16 23:23:17 2025 +0100|mediatek: filogic: migrate Acer W6/W6d to upstream PHY LED control
-d50d51d74e|Aleksander Jan Bajkowski|Mon Feb 17 19:25:02 2025 +0100|mediatek: filogic: migrate Zyxel NWA50AX Pro to upstream PHY LED control
+9a7192c08e|George Moussalem|Thu Feb 13 09:54:44 2025 +0400|qualcommax: ipq50xx: Add support for Linksys MR5500
+86fd00b0fb|John Audia|Thu Feb 27 15:06:51 2025 -0500|kernel: bump 6.6 to 6.6.80
 </details>

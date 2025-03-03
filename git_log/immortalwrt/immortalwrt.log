@@ -2,5 +2,17 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3c5ff02eae|Tianling Shen|Sat Mar 1 20:48:52 2025 +0800|rockchip: switch to r8169 driver for nanopi r4s series
+95e5892265|Tianling Shen|Sun Mar 2 18:55:54 2025 +0800|Merge Official Source
+9a7192c08e|George Moussalem|Thu Feb 13 09:54:44 2025 +0400|qualcommax: ipq50xx: Add support for Linksys MR5500
+86fd00b0fb|John Audia|Thu Feb 27 15:06:51 2025 -0500|kernel: bump 6.6 to 6.6.80
+7560af7647|Aleksander Jan Bajkowski|Wed Feb 12 22:12:28 2025 +0100|mediatek: filogic: migrate ASUS TUF AX6000 to upstream PHY LED control
+25ea7ff393|Aleksander Jan Bajkowski|Sun Feb 16 23:23:17 2025 +0100|mediatek: filogic: migrate Acer W6/W6d to upstream PHY LED control
+d50d51d74e|Aleksander Jan Bajkowski|Mon Feb 17 19:25:02 2025 +0100|mediatek: filogic: migrate Zyxel NWA50AX Pro to upstream PHY LED control
+ce68f61cb6|Felix Fietkau|Fri Feb 28 16:27:36 2025 +0100|unetd: update to Git HEAD (2025-02-28)
+8835ecf29b|Felix Fietkau|Thu Feb 27 11:21:22 2025 +0100|ucode-mod-uline: add support for querying window size from terminal if ioctl fails
+7953376400|Felix Fietkau|Wed Feb 26 10:35:02 2025 +0100|cli: use model scope for hook calls
+bc078b833a|Felix Fietkau|Tue Feb 25 16:25:16 2025 +0100|cli: add support for create/destroy object editor with single type
+895b4e7caf|Felix Fietkau|Mon Feb 24 21:22:52 2025 +0100|cli: add support for partial completion with separator character
+04ecccf3e9|Sander Vanheule|Fri Feb 28 16:29:20 2025 +0100|realtek: Drop redundant LED labels
+13a5e02e28|Sander Vanheule|Fri Feb 28 14:15:17 2025 +0100|realtek: Add status LED for Netgear GS310TP
 </details>

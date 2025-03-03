@@ -1,0 +1,11 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+1de410f|zhusir|Mon Mar 3 01:04:30 2025 +0800|action: update code (#780)
+9cdd5c3|zhusir|Sun Mar 2 22:17:09 2025 +0800|action: update sdk to 24.10 (#779)
+9b09b0d|xiaorouji|Sun Mar 2 18:54:31 2025 +0800|luci: bump to 25.3.2
+ec88b83|lwb1978|Fri Feb 28 08:48:08 2025 +0800|action: update golang to 1.24.x
+2f644f7|lwb1978|Wed Feb 26 20:03:21 2025 +0800|luci: support sing-box urltest
+b382f12|lwb1978|Sat Feb 15 12:28:26 2025 +0800|luci: optimize PW2 version number retrieval
+</details>

@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-461364a4f|libriunk|Fri Feb 21 23:10:08 2025 +0800|mediatek: fixes gpio for netcore n60 pro
+c89ba5d26|coolsnowwolf|Sun Mar 2 22:06:14 2025 +0800|rockchip: enable pwn-fan kconfig for linux 6.x
+2dc0ff4f6|coolsnowwolf|Sun Mar 2 15:28:19 2025 +0800|quectel_MHI: fix complie with ipq807x
 </details>
