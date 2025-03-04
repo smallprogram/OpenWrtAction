@@ -79,6 +79,10 @@ git clone https://github.com/sbwml/luci-app-mosdns -b v5 ./package/custom_packag
 # Speedtest
 git clone https://github.com/sirpdboy/netspeedtest.git ./package/custom_packages/netspeedtest
 
+# golang update
+rm -rf ./feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 24.x ./feeds/packages/lang/golang
+
 
 # smartdns
 # 由lean package维护版本

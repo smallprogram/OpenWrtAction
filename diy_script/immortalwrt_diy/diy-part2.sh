@@ -110,6 +110,10 @@ rm -rf ./feeds/packages/net/v2ray-plugin
 rm -rf ./feeds/packages/net/xray-core
 rm -rf ./feeds/packages/net/xray-plugin
 
+# golang update
+rm -rf ./feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 24.x ./feeds/packages/lang/golang
+
 
 # smartdns
 # git clone https://github.com/pymumu/smartdns.git ./package/custom_packages/smartdns
