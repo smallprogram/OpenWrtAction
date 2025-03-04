@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+36b2cd19d|aiamadeus|Tue Feb 25 23:05:36 2025 +0800|uboot-rockchip: add pending rk3528 support
+324daf1e8|aiamadeus|Mon Feb 24 23:30:06 2025 +0800|rockchip: improve rk3528/rk3568 support
 c89ba5d26|coolsnowwolf|Sun Mar 2 22:06:14 2025 +0800|rockchip: enable pwn-fan kconfig for linux 6.x
-2dc0ff4f6|coolsnowwolf|Sun Mar 2 15:28:19 2025 +0800|quectel_MHI: fix complie with ipq807x
 </details>

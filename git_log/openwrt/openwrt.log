@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9a7192c08e|George Moussalem|Thu Feb 13 09:54:44 2025 +0400|qualcommax: ipq50xx: Add support for Linksys MR5500
-86fd00b0fb|John Audia|Thu Feb 27 15:06:51 2025 -0500|kernel: bump 6.6 to 6.6.80
+47fed9b61b|Christian Marangi|Tue Mar 4 01:03:10 2025 +0100|apk: backport patch fixing broken apk update with wget fetch
 </details>

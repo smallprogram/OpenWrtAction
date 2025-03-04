@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-028c3a87c|TeleostNaCl Dai|Sun Mar 2 16:58:50 2025 +0800|speedtest-go: update to 1.7.10
+bf87a6dce|Dirk Brenken|Mon Mar 3 21:50:01 2025 +0100|adblock: release 4.2.7-1
+62a4633e7|Dirk Brenken|Mon Mar 3 19:44:37 2025 +0100|banIP: update 1.5.3-2
+7ce67fb7d|Hannu Nyman|Mon Mar 3 17:15:11 2025 +0200|lang/node-* : Disable parallel builds for node packages
+d798ccce9|Felix Fietkau|Mon Mar 3 12:18:13 2025 +0100|python3-host.mk: disable pip --no-binary on macOS
 </details>
