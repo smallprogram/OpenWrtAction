@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+4c692b88df|Christian Korber|Wed Feb 26 21:19:13 2025 +0100|themes/luci-theme-material: change dropdown text to black
+29df6ff70f|Christian Korber|Wed Feb 26 12:47:57 2025 +0100|luci-base: change Save Button textcolor to white
 96cecf83ba|Dirk Brenken|Mon Mar 3 19:48:40 2025 +0100|luci-app-banIP: sync with update 1.5.3-2
 </details>
