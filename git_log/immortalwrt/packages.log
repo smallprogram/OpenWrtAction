@@ -1,0 +1,35 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a61e5082d|SakuraFallingMad|Tue Mar 4 23:09:09 2025 +0800|smartdns: update to 46.1
+ab3ca3bde|Tianling Shen|Tue Mar 4 22:07:43 2025 +0800|Node.js: sync with upstream source
+0de6cc787|Tianling Shen|Tue Mar 4 22:07:08 2025 +0800|Merge Official Source
+bb4861efb|Lehua Zhang|Wed Feb 26 17:16:58 2025 +0800|ddns-scripts: Fixup huaweicloud
+bf87a6dce|Dirk Brenken|Mon Mar 3 21:50:01 2025 +0100|adblock: release 4.2.7-1
+62a4633e7|Dirk Brenken|Mon Mar 3 19:44:37 2025 +0100|banIP: update 1.5.3-2
+7ce67fb7d|Hannu Nyman|Mon Mar 3 17:15:11 2025 +0200|lang/node-* : Disable parallel builds for node packages
+d798ccce9|Felix Fietkau|Mon Mar 3 12:18:13 2025 +0100|python3-host.mk: disable pip --no-binary on macOS
+028c3a87c|TeleostNaCl Dai|Sun Mar 2 16:58:50 2025 +0800|speedtest-go: update to 1.7.10
+f19bf22b3|Stan Grishin|Sun Feb 23 23:33:31 2025 +0000|adblock-fast: bugfix: detect_file_type()
+d5cd6f3cf|Dirk Brenken|Fri Feb 28 16:49:39 2025 +0100|banIP: release 1.5.3-1
+ace9f160c|Florian Eckert|Wed Feb 19 09:31:02 2025 +0100|gpsd: migrate option device to a list devices
+e377d07af|Florian Eckert|Fri Feb 14 13:10:06 2025 +0100|gpsd: add readonly option to uci
+c954b960c|Florian Eckert|Fri Feb 14 13:00:57 2025 +0100|gpsd: only add device to procd start call if device option is configured
+d7fae1403|Florian Eckert|Thu Jan 30 11:55:19 2025 +0100|gpsd: add hotplug handling
+7ca3ffebf|Florian Eckert|Tue Jan 28 10:48:19 2025 +0100|gpsd: add the possibility to start the gpsd with a different log level
+f420a7bb3|Florian Eckert|Tue Jan 28 10:47:21 2025 +0100|gpsd: add control socket '/var/run/gpsd.sock' on startup
+8f0ab168c|Wesley Gimenes|Mon Feb 24 20:11:17 2025 -0300|netbird: update to 0.37.1
+7fdb92b59|Robert Marko|Thu Feb 27 12:35:12 2025 +0100|nginx-mod-njs: fix endianess patch
+5cb12d479|Gilles Lenaerts|Tue Feb 11 13:58:57 2025 +0100|modemmanager: add config optional netifd integration
+03f8663b8|Espen Jürgensen|Sat Feb 15 17:15:57 2025 +0100|mxml: Remove
+034505d96|Javier Marcet|Sat Feb 22 13:24:28 2025 +0100|docker-compose: Update to version 2.33.1
+c67502852|Jonathan McCrohan|Mon Feb 24 20:35:17 2025 +0000|rust: update to 1.85.0
+96c96fe04|John Audia|Tue Jul 16 15:23:36 2024 -0400|lxc: fix decompression of rootfs tarballs
+b74dc8a11|John Audia|Fri Jul 12 13:57:10 2024 -0400|lxc: add gnu-tar as a depends to fix lxc-create
+51ba51011|Thomas Richard|Fri Feb 7 18:34:47 2025 +0100|phytool: add phytool package
+ba7e4dcce|John Audia|Thu Jan 9 17:35:33 2025 -0500|lxc: add missing deps
+57434a290|John Audia|Thu Jan 9 21:48:25 2025 -0500|lxc: remove check for options we do not package
+2db5fca2d|Ray Wang|Sat Feb 22 11:56:36 2025 +0800|natmap: update to 20250221
+1f423f462|Wesley Gimenes|Fri Feb 21 17:57:29 2025 -0300|netbird: update to 0.37.0
+</details>

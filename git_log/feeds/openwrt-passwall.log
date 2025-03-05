@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e6ae6ac|A-BO|Tue Mar 4 02:02:57 2025 +0800|luci: sing-box route migration to rule_set (#3759)
+56bbffe|lwb1978|Tue Mar 4 22:16:13 2025 +0800|luci: optimize geofile related code
+2446f0c|lwb1978|Tue Mar 4 21:53:07 2025 +0800|action: update code
 </details>
