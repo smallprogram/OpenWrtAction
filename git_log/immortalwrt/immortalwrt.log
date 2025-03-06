@@ -1,9 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-64314728ba|Tianling Shen|Tue Mar 4 22:04:23 2025 +0800|Merge Official Source
-9ec32cfb27|Cedric CHEDALEUX|Mon Feb 17 10:44:36 2025 +0100|scripts/feeds: shallow clone submodules
-32d0a57dc1|Cedric CHEDALEUX|Mon Feb 17 10:41:32 2025 +0100|scripts/feeds: shallow clone for specific commit update
-47fed9b61b|Christian Marangi|Tue Mar 4 01:03:10 2025 +0100|apk: backport patch fixing broken apk update with wget fetch
-</details>

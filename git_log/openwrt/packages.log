@@ -2,6 +2,19 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d16b8ca78|Nick Hainke|Mon Mar 3 21:50:27 2025 +0100|dawn: update to 2025-03-03
-bb4861efb|Lehua Zhang|Wed Feb 26 17:16:58 2025 +0800|ddns-scripts: Fixup huaweicloud
+66fdb5a90|Chad Monroe|Wed Mar 5 09:25:59 2025 -0800|wget: update to 1.25.0
+69890a808|Bjørn Mork|Mon Feb 5 21:41:52 2024 +0100|conserver: add runtime test
+50876c8c4|Bjørn Mork|Mon Feb 5 21:31:56 2024 +0100|conserver: fix crash on early exit
+86a2b342d|Bjørn Mork|Thu Sep 21 19:47:07 2023 +0200|conserver: update to version 8.2.7
+b8a04addb|Bjørn Mork|Thu Sep 21 16:01:31 2023 +0200|conserver: add IPMI support
+771bb86f2|Bjørn Mork|Thu Sep 21 08:56:56 2023 +0200|freeipmi: The GNU IPMI library
+4f2aba1c3|Jan Hák|Fri Feb 28 12:48:08 2025 +0100|liburcu: update to version 0.15.1
+eb64a29e8|Ray Wang|Wed Mar 5 12:44:35 2025 +0800|hev-socks5-tunnel: update to 2.9.1
+a10e197ae|Ray Wang|Wed Mar 5 12:44:08 2025 +0800|hev-socks5-tproxy: update to 2.7.0
+fea75c353|Ray Wang|Wed Mar 5 12:43:22 2025 +0800|hev-socks5-server: update to 2.8.0
+14f8a4554|Yu Fang|Mon Mar 3 23:37:35 2025 +0800|gateway-go: update to 0.3.16
+332d58b3f|Maxim Storchak|Sun Mar 2 17:34:47 2025 +0200|luaposix: update to 36.3
+baba458d5|Hannu Nyman|Wed Mar 5 16:49:25 2025 +0200|node: mark BROKEN (to test impact on buildbot timeouts)
+3d5bc4c9c|Robert Marko|Wed Mar 5 13:59:21 2025 +0100|Revert "nginx-mod-njs: fix endianess patch"
+ea29db6da|Robert Marko|Wed Mar 5 14:03:40 2025 +0100|nginx: actually download the specified git commit hash
 </details>

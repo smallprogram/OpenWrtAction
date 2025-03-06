@@ -2,8 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-90dee1ab30|Christian Marangi|Tue Feb 18 20:35:00 2025 +0100|airoha: drop MTD Airoha parser patch
-7805100e15|Christian Marangi|Tue Feb 18 20:29:26 2025 +0100|airoha: an7581: cleanup kernel config
-9ec32cfb27|Cedric CHEDALEUX|Mon Feb 17 10:44:36 2025 +0100|scripts/feeds: shallow clone submodules
-32d0a57dc1|Cedric CHEDALEUX|Mon Feb 17 10:41:32 2025 +0100|scripts/feeds: shallow clone for specific commit update
+fad94e8cda|Daniel Golle|Mon Mar 3 13:27:15 2025 +0000|libpcap: backport support for various DSA tags
+46c17c22cd|Felix Fietkau|Wed Mar 5 09:19:12 2025 +0100|hostapd: add missing #ifdef to fix compile error when 802.11be support is disabled
+4d4e631267|Felix Fietkau|Wed Mar 5 08:24:01 2025 +0100|ucode-mod-pkgen: fix refcounting issue
+12298ca7c4|Felix Fietkau|Wed Mar 5 08:13:23 2025 +0100|ucode-mod-uline: fix refcounting errors
+d65d546bce|Felix Fietkau|Wed Mar 5 08:00:43 2025 +0100|hostapd: add missing ctrl socket initialization on bss add
+6a10da2934|Matthew Cather|Mon Mar 3 15:46:03 2025 -0600|hostapd: get reference to object before removal
+7729f96093|Matthew Cather|Mon Mar 3 14:00:35 2025 -0600|hostapd: consistent reference counting for registry
+22eaf18647|Matthew Cather|Mon Mar 3 13:40:39 2025 -0600|hostapd: clean-up references to local variables
+f79968ee0f|Matthew Cather|Mon Mar 3 13:22:11 2025 -0600|hostapd: fix ucode memory leak with strings
 </details>

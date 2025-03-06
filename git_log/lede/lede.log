@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2fe48cd61|aiamadeus|Wed Feb 26 23:19:35 2025 +0800|rockchip: remove dwcmshc hack for rk3528
+ae9e8d4c8|=?UTF-8?q?=C3=81lvaro=20Fern=C3=A1ndez=20Rojas?=|Thu Feb 27 08:04:50 2025 +0100|kernel: r8125: update to v9.015.00
+d0fa42a6b|Álvaro Fernández Rojas|Thu Feb 27 08:06:27 2025 +0100|kernel: r8126: update to v10.015.00
 </details>
