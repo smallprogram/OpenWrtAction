@@ -1,9 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-acec9c08f7|Tianling Shen|Wed Mar 5 22:31:32 2025 +0800|luci-app-openclash: Update to 0.46.079
-9eda3e15f0|Interesting Gang|Wed Mar 5 17:43:13 2025 +0800|luci-app-passwall: update to 23.3.2
-fefcb0a75d|Tianling Shen|Wed Mar 5 17:41:51 2025 +0800|luci-app-appfilter: bump to latest git HEAD
-1a0514b16b|SakuraFallingMad|Tue Mar 4 23:36:39 2025 +0800|luci-app-smartdns: sync upstream
-</details>
