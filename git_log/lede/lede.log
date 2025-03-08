@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-36b2cd19d|aiamadeus|Tue Feb 25 23:05:36 2025 +0800|uboot-rockchip: add pending rk3528 support
-324daf1e8|aiamadeus|Mon Feb 24 23:30:06 2025 +0800|rockchip: improve rk3528/rk3568 support
-c89ba5d26|coolsnowwolf|Sun Mar 2 22:06:14 2025 +0800|rockchip: enable pwn-fan kconfig for linux 6.x
+543621f9d|coolsnowwolf|Fri Mar 7 12:29:18 2025 +0800|luci-app-fogvdn: add fogvdn new package
+fe71259e6|coolsnowwolf|Sat Jan 11 23:40:36 2025 +0800|uboot-rockchip: update rk3528 support
 </details>
