@@ -2,11 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-12809f7380|Florian Eckert|Thu Mar 6 10:33:16 2025 +0100|luci-base: shorten button text to Apply checked
-959fd44795|Florian Eckert|Thu Mar 6 10:32:56 2025 +0100|luci-base: replace css right class with button-row
-046a121087|Florian Eckert|Thu Mar 6 10:32:18 2025 +0100|treewide: set css tag flex-wrap to wrap buttons in modal view
-47d26bcb62|Florian Eckert|Thu Mar 6 10:31:37 2025 +0100|luci-theme-material: update cascade.css to use first-of-type instead of last/first-child
-193f802e5a|Florian Eckert|Tue Dec 3 14:18:20 2024 +0100|luci-app-keepalived: set acl dependency
-20bd9d223f|Florian Eckert|Tue Dec 3 15:19:25 2024 +0100|luci-app-acl: also grand read access to luci-mod-status-index
-0a3b60d050|Paul Donald|Wed Mar 5 23:21:33 2025 -0600|luci-mod-network: correct dnsrr field name to rrname
+09590480c4|Florian Eckert|Fri Mar 7 14:24:07 2025 +0100|Merge pull request #7671 from TDT-AG/pr/20250307-luci-base
+3f832f2512|Florian Eckert|Fri Mar 7 13:49:04 2025 +0100|luci-base: revert timeout function argument for addNotification
+1c4b8dc494|Dirk Brenken|Fri Mar 7 13:28:54 2025 +0100|luci-app-banIP: sync with release 1.5.3-3
 </details>

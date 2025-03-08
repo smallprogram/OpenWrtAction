@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c65c2ad5b|Ahmed Naseef|Tue Jan 28 11:28:31 2025 +0400|kernel: usbnet: Restore usb%d naming
+543621f9d|coolsnowwolf|Fri Mar 7 12:29:18 2025 +0800|luci-app-fogvdn: add fogvdn new package
+fe71259e6|coolsnowwolf|Sat Jan 11 23:40:36 2025 +0800|uboot-rockchip: update rk3528 support
 </details>

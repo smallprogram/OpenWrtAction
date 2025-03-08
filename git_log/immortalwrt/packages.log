@@ -1,0 +1,6 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+1762baf6e|Yun Wang|Fri Mar 7 19:20:16 2025 +0800|rustdesk-server: remove shell wrapper for init - Hardcode the log file path to /var/run/rustdesk-server - Hardcode the key generation path to /etc/rustdesk-server - Hardcode the database file path to /var/run/rustdesk-server - Hardcode the configuration file path to /var/run/rustdesk-server - Add fallback mechanism for MAC address cannot be obtained
+</details>

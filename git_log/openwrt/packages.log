@@ -2,9 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d362ae9d5|Robert Marko|Wed Mar 5 21:51:03 2025 +0100|psqlodbc: update to 17.00.0004
-d6461746c|Zephyr Lykos|Wed Mar 5 03:05:56 2025 +0800|tailscale: Update to 1.80.3
-e28a0846d|Tianling Shen|Thu Mar 6 19:01:53 2025 +0800|golang: Update to 1.24.1
-b21194652|Tianling Shen|Tue Feb 18 20:19:12 2025 +0800|golang: Update to 1.24.0
-a93f0f475|Maxim Storchak|Sun Mar 2 22:16:21 2025 +0200|tgt: update to 1.0.95
+764a77acf|Dirk Brenken|Fri Mar 7 13:25:54 2025 +0100|banIP: update 1.5.3-3
+dd4e3e336|Dirk Brenken|Fri Mar 7 11:31:37 2025 +0100|adblock: update 4.2.7-2
 </details>
