@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-293477b|lwb1978|Fri Mar 7 23:23:16 2025 +0800|luci: optimize node list page load
-41996c9|lwb1978|Fri Mar 7 22:18:28 2025 +0800|luci: restrict sing-box shunt usage conditions
-e0435c7|lwb1978|Fri Mar 7 15:47:12 2025 +0800|luci: optimize SS2022 subscribe parsing
+338d2ec|lwb1978|Sun Mar 9 00:12:08 2025 +0800|luci: bump to 25.3.9
+9235370|lwb1978|Sat Mar 8 11:37:39 2025 +0800|Revert "luci: optimize SS2022 subscribe parsing"
 </details>

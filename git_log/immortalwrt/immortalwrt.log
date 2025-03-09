@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-823b6deac5|Willem Lee|Fri Mar 7 19:55:52 2025 +0800|ath79: add support for ZTE E8820
+57f31cd5b1|Tianling Shen|Sun Mar 9 02:13:33 2025 +0800|mediatek: add CMCC RAX3000Me support
+25ade3560e|Tianling Shen|Sun Mar 9 02:13:27 2025 +0800|mediatek: import dosilicon/fmsh/gsto spi nand support
+df588a6827|Tianling Shen|Sun Mar 9 02:13:23 2025 +0800|uboot-mediatek: import dosilicon/fmsh/gsto spi nand support
 </details>

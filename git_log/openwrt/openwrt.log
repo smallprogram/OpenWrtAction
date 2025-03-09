@@ -2,7 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-213799e33e|Weikai Kong|Thu Mar 6 18:58:40 2025 -0500|qualcommax: fap650: fix dtc warnings on partitions
-2f9ef8a256|Jiri Kastner|Fri Mar 7 09:08:47 2025 +0100|mvebu/image/cortexa53.mk: add kmod-dsa-mv88e6xxx
-edddbaf79c|Qingfang Deng|Fri Mar 7 20:33:06 2025 +0800|kernel: Mediatek: set default EEE Tx LPI timer
+a2fd837e2e|Aleksander Jan Bajkowski|Sun Mar 2 21:13:47 2025 +0100|lantiq: xrx200_legacy: migrate ECI V-2FUb/R to upstream PHY LED control
+2091c29578|Tianling Shen|Sun Mar 2 20:06:49 2025 +0800|ramips: fix reading mac address for hiwifi hc5962
+a0449f8cf3|Mieczyslaw Nalewaj|Sat Mar 1 17:41:50 2025 +0100|ramips: mt7621: 02_network optimization
+96c6608346|Tianling Shen|Wed Feb 26 21:52:53 2025 +0800|mediatek: add support for CMCC A10
+ea6f3e49d6|Christian Marangi|Thu Mar 6 12:19:40 2025 +0100|generic: globally enable CONFIG_PCPU_DEV_REFCNT
 </details>

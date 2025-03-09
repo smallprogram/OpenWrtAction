@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-543621f9d|coolsnowwolf|Fri Mar 7 12:29:18 2025 +0800|luci-app-fogvdn: add fogvdn new package
-fe71259e6|coolsnowwolf|Sat Jan 11 23:40:36 2025 +0800|uboot-rockchip: update rk3528 support
+46e972784|coolsnowwolf|Sat Mar 8 17:08:17 2025 +0800|luci-app-fogvdn: fix wrong typo
+2f337aa48|Willem Lee|Sat Mar 8 17:06:18 2025 +0800|ipq40xx:add support for Alibaba AP4220 (#13385)
+ec108ac50|sfwtw|Mon Mar 3 16:10:01 2025 +0800|rockchip: improve support for fine3399
 </details>

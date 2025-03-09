@@ -1,8 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-09590480c4|Florian Eckert|Fri Mar 7 14:24:07 2025 +0100|Merge pull request #7671 from TDT-AG/pr/20250307-luci-base
-3f832f2512|Florian Eckert|Fri Mar 7 13:49:04 2025 +0100|luci-base: revert timeout function argument for addNotification
-1c4b8dc494|Dirk Brenken|Fri Mar 7 13:28:54 2025 +0100|luci-app-banIP: sync with release 1.5.3-3
-</details>
