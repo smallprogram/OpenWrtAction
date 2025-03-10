@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-338d2ec|lwb1978|Sun Mar 9 00:12:08 2025 +0800|luci: bump to 25.3.9
-9235370|lwb1978|Sat Mar 8 11:37:39 2025 +0800|Revert "luci: optimize SS2022 subscribe parsing"
-</details>

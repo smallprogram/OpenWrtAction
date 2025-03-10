@@ -2,7 +2,30 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-57f31cd5b1|Tianling Shen|Sun Mar 9 02:13:33 2025 +0800|mediatek: add CMCC RAX3000Me support
-25ade3560e|Tianling Shen|Sun Mar 9 02:13:27 2025 +0800|mediatek: import dosilicon/fmsh/gsto spi nand support
-df588a6827|Tianling Shen|Sun Mar 9 02:13:23 2025 +0800|uboot-mediatek: import dosilicon/fmsh/gsto spi nand support
+e78047d56f|Tianling Shen|Sun Mar 9 19:58:41 2025 +0800|Merge Official Source
+f6a9cce09a|Felix Fietkau|Sun Mar 9 10:51:46 2025 +0100|cli: fix spurious error when exiting the cli
+7f0913d7b1|Felix Fietkau|Sun Mar 9 10:49:52 2025 +0100|cli: improve error handling on editor select call
+a2fd837e2e|Aleksander Jan Bajkowski|Sun Mar 2 21:13:47 2025 +0100|lantiq: xrx200_legacy: migrate ECI V-2FUb/R to upstream PHY LED control
+2091c29578|Tianling Shen|Sun Mar 2 20:06:49 2025 +0800|ramips: fix reading mac address for hiwifi hc5962
+a0449f8cf3|Mieczyslaw Nalewaj|Sat Mar 1 17:41:50 2025 +0100|ramips: mt7621: 02_network optimization
+96c6608346|Tianling Shen|Wed Feb 26 21:52:53 2025 +0800|mediatek: add support for CMCC A10
+ea6f3e49d6|Christian Marangi|Thu Mar 6 12:19:40 2025 +0100|generic: globally enable CONFIG_PCPU_DEV_REFCNT
+213799e33e|Weikai Kong|Thu Mar 6 18:58:40 2025 -0500|qualcommax: fap650: fix dtc warnings on partitions
+2f9ef8a256|Jiri Kastner|Fri Mar 7 09:08:47 2025 +0100|mvebu/image/cortexa53.mk: add kmod-dsa-mv88e6xxx
+edddbaf79c|Qingfang Deng|Fri Mar 7 20:33:06 2025 +0800|kernel: Mediatek: set default EEE Tx LPI timer
+6af46a6984|Martin Schiller|Thu Mar 6 09:52:27 2025 +0100|mediatek: filogic: enable CONFIG_MITIGATE_SPECTRE_BRANCH_HISTORY
+5013efc4f9|Martin Schiller|Thu Mar 6 09:38:12 2025 +0100|mediatek: Refresh kernel configuration
+ecd609f509|Ahmed Naseef|Tue Jan 28 11:28:31 2025 +0400|kernel: usbnet: Restore usb%d naming for cdc-ethernet devices with local MAC
+d8315d5358|Qingfang Deng|Wed Mar 5 23:23:09 2025 +0800|kernel: backport Mediatek SoC EEE support
+fad94e8cda|Daniel Golle|Mon Mar 3 13:27:15 2025 +0000|libpcap: backport support for various DSA tags
+46c17c22cd|Felix Fietkau|Wed Mar 5 09:19:12 2025 +0100|hostapd: add missing #ifdef to fix compile error when 802.11be support is disabled
+4d4e631267|Felix Fietkau|Wed Mar 5 08:24:01 2025 +0100|ucode-mod-pkgen: fix refcounting issue
+12298ca7c4|Felix Fietkau|Wed Mar 5 08:13:23 2025 +0100|ucode-mod-uline: fix refcounting errors
+d65d546bce|Felix Fietkau|Wed Mar 5 08:00:43 2025 +0100|hostapd: add missing ctrl socket initialization on bss add
+6a10da2934|Matthew Cather|Mon Mar 3 15:46:03 2025 -0600|hostapd: get reference to object before removal
+7729f96093|Matthew Cather|Mon Mar 3 14:00:35 2025 -0600|hostapd: consistent reference counting for registry
+22eaf18647|Matthew Cather|Mon Mar 3 13:40:39 2025 -0600|hostapd: clean-up references to local variables
+f79968ee0f|Matthew Cather|Mon Mar 3 13:22:11 2025 -0600|hostapd: fix ucode memory leak with strings
+90dee1ab30|Christian Marangi|Tue Feb 18 20:35:00 2025 +0100|airoha: drop MTD Airoha parser patch
+7805100e15|Christian Marangi|Tue Feb 18 20:29:26 2025 +0100|airoha: an7581: cleanup kernel config
 </details>

@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-46e972784|coolsnowwolf|Sat Mar 8 17:08:17 2025 +0800|luci-app-fogvdn: fix wrong typo
-2f337aa48|Willem Lee|Sat Mar 8 17:06:18 2025 +0800|ipq40xx:add support for Alibaba AP4220 (#13385)
-ec108ac50|sfwtw|Mon Mar 3 16:10:01 2025 +0800|rockchip: improve support for fine3399
+00eb50030|aiamadeus|Sat Mar 8 20:18:28 2025 +0800|rockchip: sync rk3528 with upstream
 </details>

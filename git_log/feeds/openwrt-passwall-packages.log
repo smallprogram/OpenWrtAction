@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ca3d1dc|A-BO|Sat Mar 8 17:15:40 2025 +0800|naiveproxy: update to 134.0.6998.39-r1
+18e0fe4|msdos03|Sun Mar 9 13:19:25 2025 +0800|tuic-client: hide for armv6 and armv5 targets (#413)
+a650625|A-BO|Sun Mar 9 09:22:31 2025 +0800|naiveproxy: update to 134.0.6998.39-r1
 </details>

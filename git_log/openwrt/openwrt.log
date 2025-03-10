@@ -2,9 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a2fd837e2e|Aleksander Jan Bajkowski|Sun Mar 2 21:13:47 2025 +0100|lantiq: xrx200_legacy: migrate ECI V-2FUb/R to upstream PHY LED control
-2091c29578|Tianling Shen|Sun Mar 2 20:06:49 2025 +0800|ramips: fix reading mac address for hiwifi hc5962
-a0449f8cf3|Mieczyslaw Nalewaj|Sat Mar 1 17:41:50 2025 +0100|ramips: mt7621: 02_network optimization
-96c6608346|Tianling Shen|Wed Feb 26 21:52:53 2025 +0800|mediatek: add support for CMCC A10
-ea6f3e49d6|Christian Marangi|Thu Mar 6 12:19:40 2025 +0100|generic: globally enable CONFIG_PCPU_DEV_REFCNT
+6a1bdcf545|Coia Prant|Sat Jan 4 02:43:17 2025 +0800|ramips: add support for Hongdian H8922 v30
+5d266b55ed|Coia Prant|Mon Feb 17 14:22:59 2025 +0800|mac80211: rt2x00: load the eeprom data from devicetree embedded data on Ralink SoCs
+6da7352ebe|Bernardus Jansen|Sat Mar 8 14:57:42 2025 +0100|ath79: add support for Fortinet FAP-221-C
+d136c24f7c|Eric ZHANG|Sun Mar 2 15:54:37 2025 +0800|dnsmasq: fix handlers for options `filter_rr` and `cache_rr`
+40f1db9cb1|Hauke Mehrtens|Sun Jan 19 19:49:38 2025 +0100|kernel: Add KERNEL_DCB (Data Center Bridging)
+8a78637670|Roland Reinl|Fri Feb 28 06:11:01 2025 +0100|ramips: Add support for Cudy M1300 v2
+84909c62c8|Felix Fietkau|Sun Mar 9 16:43:58 2025 +0100|unetd: update to Git HEAD (2025-03-09)
+f6a9cce09a|Felix Fietkau|Sun Mar 9 10:51:46 2025 +0100|cli: fix spurious error when exiting the cli
+7f0913d7b1|Felix Fietkau|Sun Mar 9 10:49:52 2025 +0100|cli: improve error handling on editor select call
 </details>
