@@ -2,9 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fc58f1f|coolsnowwolf|Mon Mar 10 00:36:52 2025 +0800|hysteria: update to 2.6.1
-0ef643c|zxl hhyccc|Sun Mar 9 21:06:01 2025 +0800|luci-app-ssr-plus: Add `Netflix` shunt mode annotation.
-39cd52c|zxl hhyccc|Sun Mar 9 21:04:10 2025 +0800|luci-app-ssr-plus: Add `Netflix` shunt mode annotation.
-75fd5c8|zxl hhyccc|Sun Mar 9 19:21:06 2025 +0800|Merge pull request #1690 from zxlhhyccc/custom
-6929073|zxlhhyccc|Sun Mar 9 00:30:08 2025 +0800|luci-app-ssr-plus: Resolve `ss` and `ss-rust` overlay display issues.
+5d1380f|zxl hhyccc|Mon Mar 10 23:48:14 2025 +0800|Merge pull request #1692 from zxlhhyccc/custom
+06e07cd|zxlhhyccc|Mon Mar 10 22:10:25 2025 +0800|luci-app-ssr-plus: Fix disable shunt mode `Netflix` list domain name unavailable.
 </details>

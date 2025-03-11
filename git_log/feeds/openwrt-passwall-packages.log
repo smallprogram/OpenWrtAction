@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-18e0fe4|msdos03|Sun Mar 9 13:19:25 2025 +0800|tuic-client: hide for armv6 and armv5 targets (#413)
-a650625|A-BO|Sun Mar 9 09:22:31 2025 +0800|naiveproxy: update to 134.0.6998.39-r1
-</details>
