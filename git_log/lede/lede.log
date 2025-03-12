@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fd54fed45|coolsnowwolf|Mon Mar 10 16:01:28 2025 +0800|kernel: bump 6.12 to 6.12.18
+0fae2aafd|Willem Lee|Tue Mar 11 21:01:03 2025 +0800|ipq40xx: fixes Alibaba AP4220 support
 </details>

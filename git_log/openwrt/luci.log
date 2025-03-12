@@ -1,0 +1,6 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+dea8d79888|Eric Fahlgren|Sat Feb 8 08:41:56 2025 -0800|luci-base: add uci.get_bool to allow cleanup of app code
+</details>

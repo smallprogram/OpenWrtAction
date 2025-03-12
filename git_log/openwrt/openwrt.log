@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-371cad4f28|Rui Salvaterra|Sat Feb 1 18:51:42 2025 +0000|kernel: usb: simplify r8152 dependencies
-979938b99f|Rui Salvaterra|Sat Feb 1 18:48:29 2025 +0000|kernel: usb: simplify usb-net kconfig
-17cfcaa754|Rui Salvaterra|Sat Feb 1 18:38:37 2025 +0000|generic: enable CONFIG_USB_NET_DRIVERS
-0cdcba238f|Rosen Penev|Mon Dec 23 14:20:29 2024 -0800|ramips: use regulator for USB
+79aae6ff42|Nick Hainke|Sat Mar 8 20:17:19 2025 +0100|libnl: update to 3.11.0
+fe47089878|Nick Hainke|Sat Mar 8 20:39:28 2025 +0100|libxml2: update to 2.13.6
 </details>
