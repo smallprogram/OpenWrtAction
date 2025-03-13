@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ed73ea5|lwb1978|Tue Mar 11 21:47:05 2025 +0800|luci: remove chinadns-ng cache configuration
+dc9a016|lwb1978|Wed Mar 12 23:27:42 2025 +0800|luci: optimize subscribe code
 </details>

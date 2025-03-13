@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0fae2aafd|Willem Lee|Tue Mar 11 21:01:03 2025 +0800|ipq40xx: fixes Alibaba AP4220 support
+f352df1dc|Christian Marangi|Tue Feb 18 20:29:26 2025 +0100|airoha: an7581: cleanup kernel config
 </details>

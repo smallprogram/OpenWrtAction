@@ -1,0 +1,15 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+214a8c47d|Koen Vandeputte|Mon Feb 24 11:56:19 2025 +0100|gst1-libav: bump to 1.24.12
+3b147d746|Koen Vandeputte|Mon Feb 24 11:55:57 2025 +0100|gst1-plugins-ugly: bump to 1.24.12
+8b7260e25|Koen Vandeputte|Mon Feb 24 11:55:51 2025 +0100|gst1-plugins-bad: bump to 1.24.12
+4d08ac9c8|Koen Vandeputte|Mon Feb 24 11:55:45 2025 +0100|gst1-plugins-base: bump to 1.24.12
+3593f2984|Koen Vandeputte|Mon Feb 24 11:55:36 2025 +0100|gst1-plugins-good: bump to 1.24.12
+d9bf16e5f|Koen Vandeputte|Mon Feb 24 11:55:17 2025 +0100|gstreamer1: bump to 1.24.12
+a08950d5b|Jan Klos|Sun Mar 9 14:42:19 2025 +0100|nginx: update to 1.26.3
+23aeff234|John Audia|Mon Mar 10 10:56:41 2025 -0400|htop: update to 3.4.0
+71c635047|Tianling Shen|Wed Mar 12 17:21:38 2025 +0800|xray-core: Update to 25.3.6
+dfa0ec2d5|Tianling Shen|Wed Mar 12 17:21:30 2025 +0800|cloudflared: Update to 2025.2.1
+</details>

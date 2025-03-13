@@ -2,6 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-79aae6ff42|Nick Hainke|Sat Mar 8 20:17:19 2025 +0100|libnl: update to 3.11.0
-fe47089878|Nick Hainke|Sat Mar 8 20:39:28 2025 +0100|libxml2: update to 2.13.6
+7cf8f61eb2|John Audia|Sun Mar 9 06:18:32 2025 -0400|kernel: bump 6.6 to 6.6.82
+aabc61d93f|John Audia|Fri Mar 7 15:17:22 2025 -0500|kernel: bump 6.6 to 6.6.81
+8d69613125|Hauke Mehrtens|Wed Mar 12 23:54:38 2025 +0100|armsr: Fix kmod-fsl-dpaa2-net build
+939628f6b8|Dávid Benko|Mon Feb 24 11:01:19 2025 +0100|hostapd/RADIUS_server: enhance logging
+dbdd84725d|Dávid Benko|Mon Feb 24 10:43:10 2025 +0100|hostapd/RADIUS_server: add config option for IPv6
+843e50f4fa|Martin Schiller|Wed Oct 23 13:07:27 2024 +0200|mediatek: bpi-r4: create additional emmc gpt artifact
+bbe58f9830|Martin Schiller|Mon Mar 10 08:42:18 2025 +0100|generic: net: phy: sfp: backport some FS copper SFP fixes
 </details>
