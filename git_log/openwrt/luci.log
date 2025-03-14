@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b0dc1e3913|Paul Donald|Thu Mar 13 23:05:45 2025 +0100|luci-app-filemanager: amend pop() and add popTimeout()
+0329854049|Paul Donald|Thu Mar 13 22:50:11 2025 +0100|luci-base: ui: implement addTimeLimitedNotification
+</details>
