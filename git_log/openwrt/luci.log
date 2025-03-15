@@ -2,6 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b0dc1e3913|Paul Donald|Thu Mar 13 23:05:45 2025 +0100|luci-app-filemanager: amend pop() and add popTimeout()
-0329854049|Paul Donald|Thu Mar 13 22:50:11 2025 +0100|luci-base: ui: implement addTimeLimitedNotification
+96c3654331|Florian Eckert|Fri Mar 14 12:39:09 2025 +0100|luci-app-keepalived: rebase i18n
+c2cf0839e6|Florian Eckert|Fri Mar 14 12:38:23 2025 +0100|luci-app-keepalived: clean up translation
+4748f08d44|Florian Eckert|Fri Mar 14 12:35:55 2025 +0100|Merge pull request #7678 from weblate/weblate-openwrt-luci
+f50b68764f|Hosted Weblate|Fri Mar 14 10:11:29 2025 +0100|Translated using Weblate (Norwegian Bokmål)
+f5fdfacc3f|Hosted Weblate|Fri Mar 14 05:41:54 2025 +0100|Translated using Weblate (Chinese (Traditional Han script))
 </details>

@@ -1,7 +1,0 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-c01643e78|Robert Marko|Wed Mar 12 12:34:03 2025 +0100|ipmitool: disable FreeIPMI support
-f2aa53cde|Keith T. Garner|Wed Mar 12 14:57:48 2025 -0500|dockerd: add docker-storage to init
-</details>

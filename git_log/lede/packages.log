@@ -1,0 +1,12 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d9408f8a|coolsnowwolf|Sat Mar 15 07:51:44 2025 +0800|Merge remote-tracking branch 'refs/remotes/origin/master'
+c4bd113e|coolsnowwolf|Sat Mar 15 07:50:57 2025 +0800|netdata: add coreutils dependency
+bb1f1567|coolsnowwolf|Fri Mar 14 16:08:19 2025 +0800|Merge pull request #908 from Bintel/patch-1
+63f13d48|coolsnowwolf|Fri Mar 14 16:07:58 2025 +0800|Merge pull request #909 from Internet1235/nextdns
+5bc118af|parkycai|Fri Mar 14 16:00:11 2025 +0800|softethervpn5: remove region restriction (#907)
+e01e50b3|Internet1235|Sat Mar 8 17:48:57 2025 +0800|nextdns: bump to 1.45.0
+55bcdae2|Bintel|Fri Mar 7 20:53:12 2025 +0800|xray-core: update to 25.3.6
+</details>

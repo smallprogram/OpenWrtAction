@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e005f3b62|coolsnowwolf|Thu Mar 13 13:00:19 2025 +0800|kernel: bump 5.x to latest HEAD
-74aa05a40|coolsnowwolf|Thu Mar 13 12:57:08 2025 +0800|kernel: bump 6.1 to 6.1.130
-0c58045b0|coolsnowwolf|Thu Mar 13 12:41:46 2025 +0800|Version update to R25.3.15
-75f99ed4f|coolsnowwolf|Thu Mar 13 12:39:59 2025 +0800|kernel: bump 6.6 to 6.6.82
+3f938d01a|coolsnowwolf|Fri Mar 14 15:15:25 2025 +0800|kernel: bump all to latest HEAD
 </details>
