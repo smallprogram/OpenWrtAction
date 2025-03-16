@@ -1,0 +1,54 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+60990ba523|Tianling Shen|Sat Mar 15 21:21:22 2025 +0800|uboot-rockchip: fix for sdram more than 4GB
+ccdc65238a|Tianling Shen|Sat Mar 15 21:05:58 2025 +0800|Merge Official Source
+abd0418684|Hauke Mehrtens|Sun Jan 19 19:47:23 2025 +0100|kernel: Activate CONFIG_NET_SWITCHDEV in generic config
+a18d95f35b|Aleksander Jan Bajkowski|Sun May 31 21:57:08 2020 +0200|lantiq-gphy-firmware: add package
+62bf028732|Aleksander Jan Bajkowski|Fri Jul 10 23:18:45 2020 +0200|lantiq: xrx200: convert switch driver to package
+f4ba980f15|Boyang Sun|Sun Feb 23 00:27:50 2025 +0800|mediatek: Update mt7622-reyee-ax3200-e5.dts
+8c3a43be27|Thomas Richard|Mon Feb 24 11:15:51 2025 +0100|optee-os.mk: override default PATH to not use hostpkg python
+f3eca7cbc1|Eric Schäfer|Mon Mar 10 22:36:18 2025 +0100|ramips: add support for Zyxel LTE7490-M904
+3961b71776|Roy H|Tue Mar 11 11:35:34 2025 +0700|ath79: add support for Longdata APS256
+35ccd61a6a|Tianling Shen|Sat Mar 15 20:29:50 2025 +0800|Merge Official Source
+a178d8966f|Robert Marko|Sat Mar 15 13:07:33 2025 +0100|Revert "tools/coreutils: update to 9.6"
+e41247ca21|Robert Marko|Sat Mar 15 13:07:29 2025 +0100|Revert "tools/coreutils: fix wrong PKG_HASH after update to version 9.6"
+3d8d807373|Shiji Yang|Thu Feb 20 20:03:26 2025 +0800|uboot-mediatek: move custom uart config symbol to board defconfigs
+c13a050d5a|Roland Reinl|Wed Mar 12 19:11:08 2025 +0100|ramips: Add support for Cudy M1200 v1
+4efb4a26d2|Shiji Yang|Fri Mar 14 19:19:11 2025 +0800|stm32: modules: fix stm32-hash package build
+effcb6e4c3|Michel Lespinasse|Thu Jan 16 00:54:06 2025 -0800|kernel: load r8169 network module at boot time
+59215154a0|Michel Lespinasse|Thu Jan 16 00:50:58 2025 -0800|rockchip: set network IRQ affinity to fast CPU cores
+2e7d060fd1|Michel Lespinasse|Thu Jan 16 00:50:23 2025 -0800|rockchip: configure reset button on nanopi R6
+de9ad11dac|Michel Lespinasse|Thu Jan 16 00:50:01 2025 -0800|rockchip: show boot stages on nanopi R6 system LED
+748682e855|John Audia|Thu Mar 13 16:47:09 2025 -0400|kernel: bump 6.6 to 6.6.83
+bdd5587b6b|Mieczyslaw Nalewaj|Thu Mar 13 19:26:01 2025 +0100|generic: rename backport patch 852
+c2a58fe875|Petr Štetiar|Sat Mar 15 09:15:22 2025 +0000|tools/coreutils: fix wrong PKG_HASH after update to version 9.6
+a53417cc30|Mauri Sandberg|Thu Jan 30 18:08:25 2025 +0200|ramips: Cleanup Genexis EX400 upgrade script
+f4801cffc3|John Audia|Sat Mar 8 16:33:32 2025 -0500|firmware: intel-microcode: update to 20250211
+6c8cc86295|Daniel Golle|Fri Mar 14 11:21:55 2025 +0000|mediatek: filogic: openwrt-one: drop kmod-nvme
+6ef0f08664|Felix Fietkau|Fri Mar 14 10:01:33 2025 +0100|umdns: set triggers and firewall rules on reload
+160e0b7ad8|John Audia|Sat Mar 8 10:29:51 2025 -0500|tools/coreutils: update to 9.6
+4e3342f5f1|Andreas Gnau|Fri Jan 10 22:42:03 2025 +0100|ramips: mt7621: Reduce hardcoded metadata for Inteno Y3 imgs
+3e7337feea|Andreas Gnau|Tue Jan 7 23:55:12 2025 +0100|ramips: Add support for Genexis / Inteno Pulse EX400
+e8603f3b5a|Andreas Gnau|Tue Jan 7 23:04:30 2025 +0100|ramips: mt7621: Move common DNA EX400 defs to dtsi
+a21ae5cc61|John Audia|Wed Mar 12 17:14:01 2025 -0400|linux-firmware: update to 20250311
+9a79cdc7ee|Felix Fietkau|Thu Mar 13 10:11:56 2025 +0100|package: use service_running instead of service_started for ubus config
+3b65496654|Felix Fietkau|Thu Mar 13 11:22:50 2025 +0100|procd: update to Git HEAD (2025-03-13)
+a46a55b407|Felix Fietkau|Tue Mar 11 13:37:33 2025 +0100|cli: fix showing empty lists
+ae31c0ddd7|Felix Fietkau|Tue Mar 11 13:33:45 2025 +0100|cli: fix removing values when attribute has .get_object set
+228eb7f62a|Felix Fietkau|Tue Mar 11 12:46:25 2025 +0100|unetd: cli: fix editing service config attributes
+7cf8f61eb2|John Audia|Sun Mar 9 06:18:32 2025 -0400|kernel: bump 6.6 to 6.6.82
+aabc61d93f|John Audia|Fri Mar 7 15:17:22 2025 -0500|kernel: bump 6.6 to 6.6.81
+8d69613125|Hauke Mehrtens|Wed Mar 12 23:54:38 2025 +0100|armsr: Fix kmod-fsl-dpaa2-net build
+939628f6b8|Dávid Benko|Mon Feb 24 11:01:19 2025 +0100|hostapd/RADIUS_server: enhance logging
+dbdd84725d|Dávid Benko|Mon Feb 24 10:43:10 2025 +0100|hostapd/RADIUS_server: add config option for IPv6
+843e50f4fa|Martin Schiller|Wed Oct 23 13:07:27 2024 +0200|mediatek: bpi-r4: create additional emmc gpt artifact
+bbe58f9830|Martin Schiller|Mon Mar 10 08:42:18 2025 +0100|generic: net: phy: sfp: backport some FS copper SFP fixes
+79aae6ff42|Nick Hainke|Sat Mar 8 20:17:19 2025 +0100|libnl: update to 3.11.0
+fe47089878|Nick Hainke|Sat Mar 8 20:39:28 2025 +0100|libxml2: update to 2.13.6
+371cad4f28|Rui Salvaterra|Sat Feb 1 18:51:42 2025 +0000|kernel: usb: simplify r8152 dependencies
+979938b99f|Rui Salvaterra|Sat Feb 1 18:48:29 2025 +0000|kernel: usb: simplify usb-net kconfig
+17cfcaa754|Rui Salvaterra|Sat Feb 1 18:38:37 2025 +0000|generic: enable CONFIG_USB_NET_DRIVERS
+0cdcba238f|Rosen Penev|Mon Dec 23 14:20:29 2024 -0800|ramips: use regulator for USB
+</details>

@@ -2,6 +2,26 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6c8cc86295|Daniel Golle|Fri Mar 14 11:21:55 2025 +0000|mediatek: filogic: openwrt-one: drop kmod-nvme
-6ef0f08664|Felix Fietkau|Fri Mar 14 10:01:33 2025 +0100|umdns: set triggers and firewall rules on reload
+0aaabffdea|Dominick Grift|Sat Mar 15 15:30:17 2025 +0100|selinux-policy: update to version v2.6
+abd0418684|Hauke Mehrtens|Sun Jan 19 19:47:23 2025 +0100|kernel: Activate CONFIG_NET_SWITCHDEV in generic config
+a18d95f35b|Aleksander Jan Bajkowski|Sun May 31 21:57:08 2020 +0200|lantiq-gphy-firmware: add package
+62bf028732|Aleksander Jan Bajkowski|Fri Jul 10 23:18:45 2020 +0200|lantiq: xrx200: convert switch driver to package
+f4ba980f15|Boyang Sun|Sun Feb 23 00:27:50 2025 +0800|mediatek: Update mt7622-reyee-ax3200-e5.dts
+8c3a43be27|Thomas Richard|Mon Feb 24 11:15:51 2025 +0100|optee-os.mk: override default PATH to not use hostpkg python
+f3eca7cbc1|Eric Schäfer|Mon Mar 10 22:36:18 2025 +0100|ramips: add support for Zyxel LTE7490-M904
+3961b71776|Roy H|Tue Mar 11 11:35:34 2025 +0700|ath79: add support for Longdata APS256
+a178d8966f|Robert Marko|Sat Mar 15 13:07:33 2025 +0100|Revert "tools/coreutils: update to 9.6"
+e41247ca21|Robert Marko|Sat Mar 15 13:07:29 2025 +0100|Revert "tools/coreutils: fix wrong PKG_HASH after update to version 9.6"
+3d8d807373|Shiji Yang|Thu Feb 20 20:03:26 2025 +0800|uboot-mediatek: move custom uart config symbol to board defconfigs
+c13a050d5a|Roland Reinl|Wed Mar 12 19:11:08 2025 +0100|ramips: Add support for Cudy M1200 v1
+4efb4a26d2|Shiji Yang|Fri Mar 14 19:19:11 2025 +0800|stm32: modules: fix stm32-hash package build
+effcb6e4c3|Michel Lespinasse|Thu Jan 16 00:54:06 2025 -0800|kernel: load r8169 network module at boot time
+59215154a0|Michel Lespinasse|Thu Jan 16 00:50:58 2025 -0800|rockchip: set network IRQ affinity to fast CPU cores
+2e7d060fd1|Michel Lespinasse|Thu Jan 16 00:50:23 2025 -0800|rockchip: configure reset button on nanopi R6
+de9ad11dac|Michel Lespinasse|Thu Jan 16 00:50:01 2025 -0800|rockchip: show boot stages on nanopi R6 system LED
+748682e855|John Audia|Thu Mar 13 16:47:09 2025 -0400|kernel: bump 6.6 to 6.6.83
+bdd5587b6b|Mieczyslaw Nalewaj|Thu Mar 13 19:26:01 2025 +0100|generic: rename backport patch 852
+c2a58fe875|Petr Štetiar|Sat Mar 15 09:15:22 2025 +0000|tools/coreutils: fix wrong PKG_HASH after update to version 9.6
+a53417cc30|Mauri Sandberg|Thu Jan 30 18:08:25 2025 +0200|ramips: Cleanup Genexis EX400 upgrade script
+f4801cffc3|John Audia|Sat Mar 8 16:33:32 2025 -0500|firmware: intel-microcode: update to 20250211
 </details>
