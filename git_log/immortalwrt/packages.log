@@ -2,5 +2,29 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5e828d86c|Tianling Shen|Sat Mar 15 20:47:26 2025 +0800|v2ray-geodata: Update to latest version
+651f1c595|Tianling Shen|Sun Mar 16 16:30:20 2025 +0800|Node.js: sync with upstream source
+f72794cd3|Tianling Shen|Sun Mar 16 16:27:16 2025 +0800|Merge Official Source
+e591fa62f|Wesley Gimenes|Tue Mar 11 12:30:57 2025 -0300|netbird: update to 0.38.0
+047ac7118|Yury V. Zaytsev|Sat Mar 15 16:57:23 2025 +0100|mc: update project URLs
+3141672ce|Álvaro Fernández Rojas|Sat Mar 15 12:57:19 2025 +0100|bcm27xx-eeprom: update to v2025-02-12-2712
+6fe80f558|John Audia|Fri Mar 14 17:54:47 2025 -0400|lxc: add two files to default backup list
+f32083fa2|John Audia|Sun Mar 9 14:34:35 2025 -0400|lxc: lxc-checkconfig fix typo
+a0c4010b0|Eric Fahlgren|Fri Mar 14 09:54:54 2025 -0700|owut: update to 2025.03.14
+853ea061b|Hirokazu MORIKAWA|Mon Mar 10 09:29:09 2025 +0900|node: make hostpkg only
+7c496ceed|Alexandru Ardelean|Wed Mar 12 14:55:13 2025 +0200|numpy: bump to version 2.2.3
+4224cf151|Alexandru Ardelean|Wed Mar 12 14:54:01 2025 +0200|pytz: bump to version 2025.1
+020425061|Alexandru Ardelean|Wed Mar 12 14:52:54 2025 +0200|python-evdev: bump to version 1.9.1
+5b6fc86fe|Alexandru Ardelean|Wed Mar 12 14:51:41 2025 +0200|django: bump to version 5.1.7
+c01643e78|Robert Marko|Wed Mar 12 12:34:03 2025 +0100|ipmitool: disable FreeIPMI support
+f2aa53cde|Keith T. Garner|Wed Mar 12 14:57:48 2025 -0500|dockerd: add docker-storage to init
+214a8c47d|Koen Vandeputte|Mon Feb 24 11:56:19 2025 +0100|gst1-libav: bump to 1.24.12
+3b147d746|Koen Vandeputte|Mon Feb 24 11:55:57 2025 +0100|gst1-plugins-ugly: bump to 1.24.12
+8b7260e25|Koen Vandeputte|Mon Feb 24 11:55:51 2025 +0100|gst1-plugins-bad: bump to 1.24.12
+4d08ac9c8|Koen Vandeputte|Mon Feb 24 11:55:45 2025 +0100|gst1-plugins-base: bump to 1.24.12
+3593f2984|Koen Vandeputte|Mon Feb 24 11:55:36 2025 +0100|gst1-plugins-good: bump to 1.24.12
+d9bf16e5f|Koen Vandeputte|Mon Feb 24 11:55:17 2025 +0100|gstreamer1: bump to 1.24.12
+a08950d5b|Jan Klos|Sun Mar 9 14:42:19 2025 +0100|nginx: update to 1.26.3
+23aeff234|John Audia|Mon Mar 10 10:56:41 2025 -0400|htop: update to 3.4.0
+71c635047|Tianling Shen|Wed Mar 12 17:21:38 2025 +0800|xray-core: Update to 25.3.6
+dfa0ec2d5|Tianling Shen|Wed Mar 12 17:21:30 2025 +0800|cloudflared: Update to 2025.2.1
 </details>

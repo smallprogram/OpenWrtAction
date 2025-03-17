@@ -1,6 +1,0 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-a856ae0a|coolsnowwolf|Sat Mar 15 08:30:31 2025 +0800|softethervpn5: using OpeSSL to use AES-NI enabled by default as long as processor supports it (at least x86 and ARM)
-</details>
