@@ -2,26 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-16b58c278f|Rosen Penev|Mon Dec 16 14:15:08 2024 -0800|ath79: om2p-v1: fix compatible string
-612bedaf5b|Coia Prant|Mon Mar 17 18:19:24 2025 +0800|ramips: Fix Hongdian H8922 v30 pinctrl default state
-ffad196537|Lech Perczak|Tue Feb 28 02:26:40 2023 +0100|ath79: support switch LEDs on TL-WR1043ND v2/v3
-af64c180b3|Lech Perczak|Tue Feb 4 21:15:21 2025 +0100|ath79: TP-link TL-WR1043ND v2/v3: use fixed-link for AR8327 switch connection
-a6bde79c91|Lech Perczak|Tue Sep 14 23:48:51 2021 +0200|ath79: support switch LEDs on Archer C7 family
-c61a6efdf5|Lech Perczak|Tue Feb 4 21:15:16 2025 +0100|ath79: TP-link Archer C7v2: use fixed-link for AR8327 switch connection
-b5367180b9|Lech Perczak|Tue Sep 14 23:47:02 2021 +0200|ath79: support switch LEDs on TL-WDR4300 family
-acd6f48e87|Lech Perczak|Tue Feb 4 21:14:52 2025 +0100|ath79: TP-link TL-WDR4300: use fixed-link for AR8327 switch connection
-3ba4a4e32c|Lech Perczak|Tue Sep 14 23:39:41 2021 +0200|kernel: ar8327: support LED device tree bindings
-5a4f8b26f0|Lech Perczak|Tue Feb 4 21:14:45 2025 +0100|kernel: ar8327: fix active-low LED initialization
-9f1f918aed|Simonas Tamošaitis|Wed Mar 12 11:49:10 2025 +0200|ath79: fix chipidea usb controller detection
-929b3d0e52|Henrik Ginstmark|Sun Feb 9 20:22:43 2025 +0100|ramips: add missing LEDs and modem control for ASUS 4G-AX56
-63f45b8ab4|Stephen Howell|Fri Jan 10 16:44:04 2025 +0000|kernel: modules: add Intel ICE support
-743aaaf2ad|Stephen Howell|Fri Jan 10 16:42:33 2025 +0000|linux-firmware: Add support for Intel ICE
-77f8a70f65|Felix Fietkau|Fri Mar 7 18:20:23 2025 +0100|unetmsg: add unet pub/sub message broker based on ubus
-5d40123818|Felix Fietkau|Fri Mar 14 14:05:06 2025 +0100|provision: add script for managing device provisioning data
-5f0f8d23a1|Felix Fietkau|Thu Mar 13 13:33:54 2025 +0100|base-files: add support for creating a provisioning partition on sysupgrade
-1be7036f69|Felix Fietkau|Sat Mar 15 21:55:10 2025 +0100|unetd: cli: add support for changing network password
-2055b73ba4|Felix Fietkau|Wed Feb 26 10:41:48 2025 +0100|unetd: cli: add unet_create/update/delete hook calls
-7c04fa0328|Felix Fietkau|Sat Mar 15 21:54:47 2025 +0100|unetd: update to Git HEAD (2025-03-15)
-5f54aa602e|Felix Fietkau|Fri Feb 28 17:21:10 2025 +0100|unetd: cli: bypass override directory
-960e1c4c24|Felix Fietkau|Mon Mar 17 10:25:04 2025 +0100|ucode: update to Git HEAD (2025-03-17)
+7a303d861a|Daniel Golle|Tue Mar 18 14:20:52 2025 +0000|kernel: move accepted patch from pending-6.6 to backport-6.6
+26e7a11836|Álvaro Fernández Rojas|Tue Mar 18 07:59:56 2025 +0100|ipq-wifi: fix PKG_MIRROR_HASH after update to 2024-02-17
+f86476b18b|Tomas Lara|Mon Mar 17 14:59:23 2025 +0000|rockchip: fix missing ".patch" file extension
+5ff9ce11f0|Nayab Sayed|Thu Feb 27 14:40:11 2025 +0530|at91bootstrap: update at91bootstrap v4 targets to v4.0.10
 </details>

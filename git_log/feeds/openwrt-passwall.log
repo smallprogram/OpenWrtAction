@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-10e2bfa|lwb1978|Mon Mar 17 23:49:46 2025 +0800|luci: optimize log reading
-148d945|lwb1978|Mon Mar 17 23:13:34 2025 +0800|luci: sing-box hy2 add port hopping
-</details>
