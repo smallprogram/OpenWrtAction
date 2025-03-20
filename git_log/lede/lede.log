@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e43d4db7c|coolsnowwolf|Sun Mar 16 23:02:40 2025 +0800|rockchip: fix RK3399 PCIE reboot issues
-d4831d96b|coolsnowwolf|Sun Mar 16 23:18:07 2025 +0800|mediatek: add support for CMCC A10
+c638a07da|coolsnowwolf|Wed Mar 19 16:46:54 2025 +0800|busybox: update to 1.36.1
 </details>

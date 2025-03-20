@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7a303d861a|Daniel Golle|Tue Mar 18 14:20:52 2025 +0000|kernel: move accepted patch from pending-6.6 to backport-6.6
-26e7a11836|Álvaro Fernández Rojas|Tue Mar 18 07:59:56 2025 +0100|ipq-wifi: fix PKG_MIRROR_HASH after update to 2024-02-17
-f86476b18b|Tomas Lara|Mon Mar 17 14:59:23 2025 +0000|rockchip: fix missing ".patch" file extension
-5ff9ce11f0|Nayab Sayed|Thu Feb 27 14:40:11 2025 +0530|at91bootstrap: update at91bootstrap v4 targets to v4.0.10
+4f5f56b702|Felix Fietkau|Wed Mar 19 13:18:59 2025 +0100|libnl-tiny: update to Git HEAD (2025-03-19)
 </details>

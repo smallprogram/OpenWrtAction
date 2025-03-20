@@ -2,5 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dc0b480a7|Maxim Storchak|Tue Mar 18 18:03:46 2025 +0200|htop: tell which variant of ncurses to look for
+9aeff5f5e|Alexandru Ardelean|Mon Mar 17 09:19:53 2025 +0200|stress-ng: bump to version 0.18.11
+90d8d4619|Martin Schiller|Mon Mar 17 07:56:02 2025 +0100|net/arp-scan: Disable promiscuous mode
+da4d3e9ab|hingbong lo|Thu Feb 13 01:30:46 2025 +0000|Unbound: Fixed: local-data except IPv6 GA addresses with odhcpd
+9cdb46725|Ray Wang|Tue Mar 18 22:38:09 2025 +0800|hev-socks5-tproxy: update to 2.8.0
+0c5bda44d|Ray Wang|Tue Mar 18 22:36:10 2025 +0800|natmap: update to 20250318
+07bce030f|Thiago Pereira Ricciardi|Mon Mar 17 22:49:25 2025 -0300|pptpd: Fix secrets update
 </details>
