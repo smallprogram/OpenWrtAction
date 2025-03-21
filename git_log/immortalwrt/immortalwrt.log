@@ -1,0 +1,26 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+e4d7d1c24a|Tianling Shen|Thu Mar 20 13:53:53 2025 +0800|kernel: netdevices: fix merge conflict
+f41698d515|Tianling Shen|Thu Mar 20 13:10:36 2025 +0800|Merge Official Source
+4f5f56b702|Felix Fietkau|Wed Mar 19 13:18:59 2025 +0100|libnl-tiny: update to Git HEAD (2025-03-19)
+7a303d861a|Daniel Golle|Tue Mar 18 14:20:52 2025 +0000|kernel: move accepted patch from pending-6.6 to backport-6.6
+26e7a11836|Álvaro Fernández Rojas|Tue Mar 18 07:59:56 2025 +0100|ipq-wifi: fix PKG_MIRROR_HASH after update to 2024-02-17
+f86476b18b|Tomas Lara|Mon Mar 17 14:59:23 2025 +0000|rockchip: fix missing ".patch" file extension
+5ff9ce11f0|Nayab Sayed|Thu Feb 27 14:40:11 2025 +0530|at91bootstrap: update at91bootstrap v4 targets to v4.0.10
+16b58c278f|Rosen Penev|Mon Dec 16 14:15:08 2024 -0800|ath79: om2p-v1: fix compatible string
+612bedaf5b|Coia Prant|Mon Mar 17 18:19:24 2025 +0800|ramips: Fix Hongdian H8922 v30 pinctrl default state
+ffad196537|Lech Perczak|Tue Feb 28 02:26:40 2023 +0100|ath79: support switch LEDs on TL-WR1043ND v2/v3
+af64c180b3|Lech Perczak|Tue Feb 4 21:15:21 2025 +0100|ath79: TP-link TL-WR1043ND v2/v3: use fixed-link for AR8327 switch connection
+a6bde79c91|Lech Perczak|Tue Sep 14 23:48:51 2021 +0200|ath79: support switch LEDs on Archer C7 family
+c61a6efdf5|Lech Perczak|Tue Feb 4 21:15:16 2025 +0100|ath79: TP-link Archer C7v2: use fixed-link for AR8327 switch connection
+b5367180b9|Lech Perczak|Tue Sep 14 23:47:02 2021 +0200|ath79: support switch LEDs on TL-WDR4300 family
+acd6f48e87|Lech Perczak|Tue Feb 4 21:14:52 2025 +0100|ath79: TP-link TL-WDR4300: use fixed-link for AR8327 switch connection
+3ba4a4e32c|Lech Perczak|Tue Sep 14 23:39:41 2021 +0200|kernel: ar8327: support LED device tree bindings
+5a4f8b26f0|Lech Perczak|Tue Feb 4 21:14:45 2025 +0100|kernel: ar8327: fix active-low LED initialization
+9f1f918aed|Simonas Tamošaitis|Wed Mar 12 11:49:10 2025 +0200|ath79: fix chipidea usb controller detection
+929b3d0e52|Henrik Ginstmark|Sun Feb 9 20:22:43 2025 +0100|ramips: add missing LEDs and modem control for ASUS 4G-AX56
+63f45b8ab4|Stephen Howell|Fri Jan 10 16:44:04 2025 +0000|kernel: modules: add Intel ICE support
+743aaaf2ad|Stephen Howell|Fri Jan 10 16:42:33 2025 +0000|linux-firmware: Add support for Intel ICE
+</details>

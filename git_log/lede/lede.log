@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c638a07da|coolsnowwolf|Wed Mar 19 16:46:54 2025 +0800|busybox: update to 1.36.1
+97d3d1c6a|coolsnowwolf|Thu Mar 20 12:54:19 2025 +0800|mt76: fix mt7916 160Mhz support in kernel 5.4
+4d0cc6c14|Willem Lee|Thu Mar 20 11:30:05 2025 +0800|filogic: add support for KANKA KOMI A31
 </details>

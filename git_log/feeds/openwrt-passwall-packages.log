@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6d4bc0f|lwb1978|Thu Mar 20 23:51:32 2025 +0800|remove packages that are no longer needed for passwall
+06ab538|github-actions[bot]|Thu Mar 20 10:51:53 2025 +0800|shadowsocks-rust: update to 1.23.0 (#415)
+</details>

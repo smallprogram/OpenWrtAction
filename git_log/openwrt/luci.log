@@ -2,9 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6d7397eb86|Florian Eckert|Wed Mar 19 15:30:31 2025 +0100|Merge pull request #7689 from TDT-AG/pr/20250319-luci-app-xinetd
-4ab7e52732|Florian Eckert|Wed Mar 19 15:29:52 2025 +0100|Merge pull request #7688 from TDT-AG/pr/20250319-luci-app-keepalived
-da878da409|Florian Eckert|Wed Mar 19 13:00:24 2025 +0100|luci-app-xinetd: do not show description on table overview
-790302ce85|Florian Eckert|Wed Mar 19 12:50:29 2025 +0100|luci-app-xinetd: make the server configuration option mandatory
-af1064e927|Florian Eckert|Wed Mar 19 10:20:25 2025 +0100|luci-app-keepalived: do not restart keepalived on user notification change
+5e39cf04c4|Paul Donald|Thu Mar 20 17:20:08 2025 +0100|luci-base: ui: fix path handling in UIFileUpload
+70aa0bea68|Stan Grishin|Wed Mar 19 18:42:19 2025 -0700|Merge pull request #7668 from stangri/master-luci-app-advanced-reboot
+476b64626d|Stan Grishin|Thu Mar 6 19:04:27 2025 +0000|luci-app-advanced-reboot: update to 1.0.1-21
 </details>
