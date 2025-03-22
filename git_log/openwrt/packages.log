@@ -2,14 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-aa89d293d|John Audia|Sun Mar 16 06:58:36 2025 -0400|snort3: update to 3.7.1.0
-fd37ae1a0|John Audia|Sun Mar 16 07:07:25 2025 -0400|libdaq3: update to 3.0.19
-fc29fe2a7|Christian Lachner|Thu Mar 20 16:43:52 2025 +0100|haproxy: update to v3.0.9
-c8dca36e8|Jan Hák|Thu Mar 20 10:48:51 2025 +0100|knot: update to version 3.4.5
-fbfb671a1|Ray Wang|Tue Mar 18 22:34:19 2025 +0800|fsh: update to 4.9.0
-c0b93b630|Hirokazu MORIKAWA|Sun Mar 16 09:03:01 2025 +0900|treewide: drop node module packages
-43b9a37a6|Florian Eckert|Tue Mar 18 09:48:24 2025 +0100|curl: add new option HTTP AUTH
-2f80944c2|Vladimir Oltean|Tue Mar 11 20:34:49 2025 +0200|dockerd: fix build issue with custom core.abbrev value in .gitconfig
-0129618ea|Javier Marcet|Sat Mar 15 19:48:45 2025 +0100|docker-compose: Update to version 2.34.0
-b2c01054d|Ray Wang|Tue Mar 18 22:39:22 2025 +0800|hev-socks5-tunnel: update to 2.10.0
+7edaf4995|Khachatryan Karen|Fri Mar 21 13:43:13 2025 +0300|antiblock: Update to 2.1.0
 </details>

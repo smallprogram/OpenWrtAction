@@ -1,0 +1,21 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+4543fe08d7|Tianling Shen|Fri Mar 21 12:46:35 2025 +0800|Merge Official Source
+5e39cf04c4|Paul Donald|Thu Mar 20 17:20:08 2025 +0100|luci-base: ui: fix path handling in UIFileUpload
+70aa0bea68|Stan Grishin|Wed Mar 19 18:42:19 2025 -0700|Merge pull request #7668 from stangri/master-luci-app-advanced-reboot
+6d7397eb86|Florian Eckert|Wed Mar 19 15:30:31 2025 +0100|Merge pull request #7689 from TDT-AG/pr/20250319-luci-app-xinetd
+4ab7e52732|Florian Eckert|Wed Mar 19 15:29:52 2025 +0100|Merge pull request #7688 from TDT-AG/pr/20250319-luci-app-keepalived
+da878da409|Florian Eckert|Wed Mar 19 13:00:24 2025 +0100|luci-app-xinetd: do not show description on table overview
+790302ce85|Florian Eckert|Wed Mar 19 12:50:29 2025 +0100|luci-app-xinetd: make the server configuration option mandatory
+af1064e927|Florian Eckert|Wed Mar 19 10:20:25 2025 +0100|luci-app-keepalived: do not restart keepalived on user notification change
+ac3cbd6106|Stan Grishin|Mon Mar 17 13:11:55 2025 -0700|Merge pull request #7674 from T0biii/patch-1
+62c401ca24|Aleksander Jan Bajkowski|Sat Mar 15 17:29:02 2025 +0100|luci-mod-status: channel_analysis: fix 6 GHz support
+29187d4e2b|Tobias|Mon Mar 10 13:24:09 2025 +0100|luci-app-https-dns-proxy: Update: ffmuc bootstrap_dns servers
+f1d57d83e4|Florian Eckert|Mon Mar 17 13:34:00 2025 +0100|luci-app-keepalived: fix i18n syntax error
+94a8cca9fa|Florian Eckert|Fri Mar 14 15:28:35 2025 +0100|_BACKPORT_ luci-app-keepalived: update i18n de
+008ee947f1|Florian Eckert|Mon Mar 17 12:54:15 2025 +0100|Merge pull request #7680 from weblate/weblate-openwrt-luci
+d09118999d|Hosted Weblate|Sun Mar 16 15:48:13 2025 +0100|Translated using Weblate (Polish)
+476b64626d|Stan Grishin|Thu Mar 6 19:04:27 2025 +0000|luci-app-advanced-reboot: update to 1.0.1-21
+</details>

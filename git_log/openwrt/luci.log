@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5e39cf04c4|Paul Donald|Thu Mar 20 17:20:08 2025 +0100|luci-base: ui: fix path handling in UIFileUpload
-70aa0bea68|Stan Grishin|Wed Mar 19 18:42:19 2025 -0700|Merge pull request #7668 from stangri/master-luci-app-advanced-reboot
-476b64626d|Stan Grishin|Thu Mar 6 19:04:27 2025 +0000|luci-app-advanced-reboot: update to 1.0.1-21
+fc8ad20bbb|Andrew Dodd|Tue Dec 17 12:37:35 2024 +1100|luci: Make password reveal work with passsword managers
+51a8f8cd22|Eric Fahlgren|Wed Mar 19 14:15:04 2025 -0700|luci-app-attendedsysupgrade: add more robust handling of downloads
 </details>

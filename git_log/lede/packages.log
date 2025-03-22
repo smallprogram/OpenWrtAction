@@ -1,0 +1,8 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+9d517688|coolsnowwolf|Fri Mar 21 17:37:14 2025 +0800|ddns-scripts: fix ddns-scripts-dnspod in legacy lua luci
+004b2616|coolsnowwolf|Fri Mar 21 17:24:59 2025 +0800|Merge pull request #912 from xiaotan8/patch-2
+9e5de66b|xiaotan8|Thu Mar 20 22:03:25 2025 +0800|sing-box: update to 1.11.5
+</details>

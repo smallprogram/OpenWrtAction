@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-97d3d1c6a|coolsnowwolf|Thu Mar 20 12:54:19 2025 +0800|mt76: fix mt7916 160Mhz support in kernel 5.4
-4d0cc6c14|Willem Lee|Thu Mar 20 11:30:05 2025 +0800|filogic: add support for KANKA KOMI A31
+786683887|Rui Salvaterra|Sat Mar 8 19:41:16 2025 +0000|kernel: igc: enable HW vlan tag by default
 </details>
