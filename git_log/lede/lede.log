@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-786683887|Rui Salvaterra|Sat Mar 8 19:41:16 2025 +0000|kernel: igc: enable HW vlan tag by default
+d7d4bcc86|IDeLoveYou|Sat Mar 22 22:00:03 2025 +0800|toolchain: glibc: Fix build with autoconf 2.71
 </details>

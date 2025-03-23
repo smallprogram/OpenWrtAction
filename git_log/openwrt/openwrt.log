@@ -2,13 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-696ad7b1aa|Daniel Golle|Fri Mar 21 11:39:07 2025 +0000|mediatek: filogic: fix case statement in 01_leds
-6fa39900b6|Rui Salvaterra|Sat Mar 8 19:41:16 2025 +0000|kernel: igc: enable HW vlan tag insertion/stripping by default
-a51fd20e0d|Daniel Golle|Fri Mar 21 01:04:39 2025 +0000|mediatek: filogic: PHY LEDs do have an address, gpio-leds don't
-c1d5b9a26a|Daniel Golle|Fri Mar 21 00:52:39 2025 +0000|Revert "mediatek: rename PHY LEDs to match upstream bindings"
-7103a1554a|Aleksander Jan Bajkowski|Sun Mar 2 19:11:28 2025 +0100|mediatek: rename PHY LEDs to match upstream bindings
-5016c960bc|Aleksander Jan Bajkowski|Sat Mar 1 15:41:07 2025 +0100|kernel: drop Maxlinear PHY LED control hack
-fd76a38190|Aleksander Jan Bajkowski|Sat Mar 1 15:57:05 2025 +0100|mediatek: filogic: migrate SmartRG Bonanza to upstream PHY LED control
-63d56af6c6|Aleksander Jan Bajkowski|Sat Mar 1 15:14:33 2025 +0100|mediatek: filogic: migrate Netgate N60 to upstream PHY LED control
-b88de5d507|Aleksander Jan Bajkowski|Sat Mar 1 15:28:33 2025 +0100|mediatek: filogic: migrate Zyxel EX5700 to upstream PHY LED control
+8d1fe32c2c|Paul Donald|Mon Apr 22 00:08:48 2024 +0200|lldpd: add `custom-tlv` handling
+a015f59880|Paul Donald|Sun Apr 21 23:18:36 2024 +0200|lldpd: get_config_cid_ifaces() -> get_interface_csv()
+635be2a329|Scott Mercer|Sun Mar 16 23:57:29 2025 -0400|uboot-tools: create dumpimage package
+46e376c935|Scott Mercer|Sun Mar 16 23:50:33 2025 -0400|uboot-tools: migrate uboot-envtools to uboot-tools
+96cb1c8840|Scott Mercer|Sun Mar 16 23:40:13 2025 -0400|uboot-tools: add stub package skeleton
+6ef0a35bb1|Daniel F. Dickinson|Tue Feb 18 23:58:06 2025 -0500|ubox: fix logging to external filesystem
 </details>

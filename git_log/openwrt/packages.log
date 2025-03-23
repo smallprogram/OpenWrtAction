@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7edaf4995|Khachatryan Karen|Fri Mar 21 13:43:13 2025 +0300|antiblock: Update to 2.1.0
+2d66b6c8f|Pascal Ernster|Sat Mar 22 04:08:31 2025 +0100|bind: bump to 9.20.7
+716cb3dea|John Audia|Sat Mar 22 13:08:29 2025 -0400|coreutils: apply PKG_FIXUP conditionally
+ed57afa39|Dirk Brenken|Sat Mar 22 08:53:45 2025 +0100|adblock: update 4.2.7-3
+b1a648e1f|Pascal Ernster|Sat Mar 22 03:15:39 2025 +0100|coreutils: Add PKG_FIXUP:=autoreconf and bump PKG_RELEASE
 </details>
