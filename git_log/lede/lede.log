@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d7d4bcc86|IDeLoveYou|Sat Mar 22 22:00:03 2025 +0800|toolchain: glibc: Fix build with autoconf 2.71
+6e84aeb58|Willem Lee|Sun Mar 23 22:10:28 2025 +0800|ath79: add support for Alibaba AP121-DB (#13417)
 </details>

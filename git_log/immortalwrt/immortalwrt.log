@@ -1,11 +1,14 @@
-<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
 
 SHA|Author|Date|Message
 -|-|-|-
+dabe9870f7|Tianling Shen|Sun Mar 23 22:19:01 2025 +0800|Merge Official Source
 8d1fe32c2c|Paul Donald|Mon Apr 22 00:08:48 2024 +0200|lldpd: add `custom-tlv` handling
 a015f59880|Paul Donald|Sun Apr 21 23:18:36 2024 +0200|lldpd: get_config_cid_ifaces() -> get_interface_csv()
 635be2a329|Scott Mercer|Sun Mar 16 23:57:29 2025 -0400|uboot-tools: create dumpimage package
 46e376c935|Scott Mercer|Sun Mar 16 23:50:33 2025 -0400|uboot-tools: migrate uboot-envtools to uboot-tools
 96cb1c8840|Scott Mercer|Sun Mar 16 23:40:13 2025 -0400|uboot-tools: add stub package skeleton
 6ef0a35bb1|Daniel F. Dickinson|Tue Feb 18 23:58:06 2025 -0500|ubox: fix logging to external filesystem
+696ad7b1aa|Daniel Golle|Fri Mar 21 11:39:07 2025 +0000|mediatek: filogic: fix case statement in 01_leds
+6fa39900b6|Rui Salvaterra|Sat Mar 8 19:41:16 2025 +0000|kernel: igc: enable HW vlan tag insertion/stripping by default
 </details>
