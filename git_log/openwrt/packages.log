@@ -2,12 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-860e1a40c|Wesley Gimenes|Sun Mar 23 16:21:42 2025 -0300|netbird: update to 0.38.2
-01ecebe3a|Nick Hainke|Sun Mar 23 18:25:12 2025 +0100|snowflake: update to 2.11.0
-0b4e8e1c2|George Sapkin|Fri Mar 21 13:37:12 2025 +0200|adguardhome: bump to 0.107.59
-55d3a42aa|George Sapkin|Wed Mar 19 18:37:03 2025 +0200|adguardhome: bump to 0.107.58
-fd52fb6e3|George Sapkin|Tue Mar 18 00:38:47 2025 +0200|adguardhome: assign PKG_CPE_ID
-8ccace5af|George Sapkin|Sun Mar 16 17:08:36 2025 +0200|adguardhome: add CI version check
-0a50c5741|Glenn Strauss|Sun Mar 23 00:15:07 2025 -0400|lighttpd: update to lighttpd 1.4.78 release hash
-7699915b8|Pascal Ernster|Sat Mar 22 03:51:03 2025 +0100|gnutls: Update to version 3.8.9
+47425ce25|Khachatryan Karen|Mon Mar 24 13:50:41 2025 +0300|antiblock: Update to 2.1.1
+08084d48a|Tianling Shen|Mon Mar 24 21:29:25 2025 +0800|alist: Update to 3.43.0
+4e77b1d2d|Tianling Shen|Mon Mar 24 21:29:16 2025 +0800|dnsproxy: Update to 0.75.2
 </details>

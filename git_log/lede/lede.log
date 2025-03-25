@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6e84aeb58|Willem Lee|Sun Mar 23 22:10:28 2025 +0800|ath79: add support for Alibaba AP121-DB (#13417)
+840b07613|coolsnowwolf|Tue Mar 25 01:45:26 2025 +0800|kernel: bump 6.12 to 6.12.20
+f03f0f54b|coolsnowwolf|Tue Mar 25 01:40:34 2025 +0800|mac80211: fix build on linux kernel 5.4.291+
+391830f91|coolsnowwolf|Tue Mar 25 01:04:12 2025 +0800|kernel: bump 6.6 to 6.6.84
+43473ebd4|coolsnowwolf|Sun Mar 23 22:19:08 2025 +0800|Revert "rockchip: fix RK3399 PCIE reboot issues"
 </details>
