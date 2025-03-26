@@ -2,13 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-293d5f1366|Robert Marko|Sun Mar 23 10:29:28 2025 +0100|uboot-tools: dont build tools unconditionally
-755108ef43|Robert Marko|Sun Mar 23 10:19:18 2025 +0100|uboot-tools: remove uboot-tools definition
-f482f6d98e|Felix Fietkau|Mon Mar 24 12:05:10 2025 +0100|uboot-tools: disable python build to fix build error
-c3f2bb7afc|Chukun Pan|Wed Mar 20 23:05:07 2024 +0800|qualcommax: ipq60xx: add GL.iNet GL-AX1800/AXT1800 support
-0b33bbc0e6|Chukun Pan|Tue Mar 5 22:30:20 2024 +0800|qualcommax: backport cpufreq patch for ipq60xx
-af6cf5d8c0|Chukun Pan|Mon Mar 4 23:02:16 2024 +0800|qualcommax: backport sdhci patches for ipq60xx
-eb9e0f2cff|Chukun Pan|Fri Nov 15 23:10:39 2024 +0800|qualcommax: backport some upstream dts changes
-227222f357|Chukun Pan|Sun Mar 3 23:09:36 2024 +0800|qualcommax: backport unmerged ipq60xx pwm support
-ddc4f216c6|Chukun Pan|Wed Nov 6 23:10:05 2024 +0800|filogic: move append-gl-metadata to image-commands.mk
+2345d40c43|Nick Hainke|Tue Mar 25 20:34:36 2025 +0100|strace: update to 6.14
+96a30d08d0|Nick Hainke|Tue Mar 25 17:31:24 2025 +0100|libtracefs: update to 1.8.1
+f9698d7144|Nick Hainke|Tue Mar 25 17:27:01 2025 +0100|libtraceevent: update to 1.8.4
+2ced0e59a4|Felix Fietkau|Tue Mar 25 11:07:24 2025 +0100|ucode: update to Git HEAD (2025-03-24)
+1bb9592fc7|Martin Schiller|Tue Mar 25 07:46:42 2025 +0100|mediatek: filogic: bpi-r3-mini: add kmod-eeprom-at24
 </details>

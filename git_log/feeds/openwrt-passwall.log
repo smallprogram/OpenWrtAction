@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-d18bbd00|lwb1978|Mon Mar 24 20:13:04 2025 +0800|luci: optimize the sing-box srs convert logic
-f4fef36e|lwb1978|Mon Mar 24 20:06:20 2025 +0800|luci: optimize
-5fce93a2|lwb1978|Sun Mar 23 12:03:50 2025 +0800|luci: optimize
-</details>

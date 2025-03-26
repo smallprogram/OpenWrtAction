@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e54c91fd0b|Tianling Shen|Mon Mar 24 21:14:55 2025 +0800|luci-app-upnp: add force_forwarding option
+195ee009ef|Tianling Shen|Tue Mar 25 14:38:52 2025 +0800|Merge Official Source
+bf48c560a7|Hosted Weblate|Thu Mar 20 11:59:35 2025 +0100|Translated using Weblate (Swedish)
+fc8ad20bbb|Andrew Dodd|Tue Dec 17 12:37:35 2024 +1100|luci: Make password reveal work with passsword managers
+51a8f8cd22|Eric Fahlgren|Wed Mar 19 14:15:04 2025 -0700|luci-app-attendedsysupgrade: add more robust handling of downloads
 </details>
