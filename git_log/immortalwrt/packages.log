@@ -2,10 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ab4afd352|Tianling Shen|Tue Mar 25 14:38:06 2025 +0800|Merge Official Source
-47425ce25|Khachatryan Karen|Mon Mar 24 13:50:41 2025 +0300|antiblock: Update to 2.1.1
-08084d48a|Tianling Shen|Mon Mar 24 21:29:25 2025 +0800|alist: Update to 3.43.0
-4e77b1d2d|Tianling Shen|Mon Mar 24 21:29:16 2025 +0800|dnsproxy: Update to 0.75.2
-860e1a40c|Wesley Gimenes|Sun Mar 23 16:21:42 2025 -0300|netbird: update to 0.38.2
-01ecebe3a|Nick Hainke|Sun Mar 23 18:25:12 2025 +0100|snowflake: update to 2.11.0
+15a0e2aa3|Interesting Gang|Wed Mar 26 14:58:11 2025 +0800|shadowsocks-rust: update to 1.23.0
 </details>

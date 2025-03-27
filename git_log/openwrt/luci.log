@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9c94c7dc93|Hosted Weblate|Tue Mar 25 16:45:39 2025 +0100|Translated using Weblate (Chinese (Traditional Han script))
+4207c2c5d5|Paul Donald|Wed Mar 26 22:40:01 2025 +0100|luci-proto-wireguard: add extra checks for hostname when building qr
 </details>

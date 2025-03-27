@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-60908b5b9|Rui Salvaterra|Fri Jun 7 12:47:17 2024 +0100|tor: update to 0.4.8.16 stable
-df9015f9d|Vladimir Ulrich|Tue Mar 25 00:51:20 2025 +0300|zoneinfo: Updated to 2025b release.
-ded6ab53a|John Audia|Sat Mar 15 07:19:41 2025 -0400|nvme-cli: update to 2.11
-d5d0be8ec|John Audia|Sat Mar 15 07:17:58 2025 -0400|libnvme: update to 1.11.1
-483c2fef8|Stijn Tintel|Mon Mar 24 10:29:51 2025 +0200|keepalived: bump to 2.3.2
+f6c787146|George Sapkin|Tue Mar 25 17:56:19 2025 +0200|tailscale: assign PKG_CPE_ID
 </details>

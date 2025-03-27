@@ -2,9 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2345d40c43|Nick Hainke|Tue Mar 25 20:34:36 2025 +0100|strace: update to 6.14
-96a30d08d0|Nick Hainke|Tue Mar 25 17:31:24 2025 +0100|libtracefs: update to 1.8.1
-f9698d7144|Nick Hainke|Tue Mar 25 17:27:01 2025 +0100|libtraceevent: update to 1.8.4
-2ced0e59a4|Felix Fietkau|Tue Mar 25 11:07:24 2025 +0100|ucode: update to Git HEAD (2025-03-24)
-1bb9592fc7|Martin Schiller|Tue Mar 25 07:46:42 2025 +0100|mediatek: filogic: bpi-r3-mini: add kmod-eeprom-at24
+7aa3dfdbda|Marius Durbaca|Wed Mar 19 09:41:35 2025 +0200|rampis: fix tplink_mr200v1 wan interface
+314ca03877|John Audia|Sat Mar 22 17:35:16 2025 -0400|kernel: bump 6.6 to 6.6.84
+c5e86c3195|Weikai Kong|Thu Mar 6 16:48:47 2025 -0500|qualcommax: mr7350: switch to ascii-eq-delim-env
+cf04dbcf4a|Aleksander Jan Bajkowski|Fri Feb 28 22:07:54 2025 +0100|iw: backport he operation scan support
+66f38834d6|Christoph Krapp|Sun Mar 23 15:13:31 2025 +0100|mediatek: filogic: fix device sorting
+2758eebc76|Erik Servili|Mon Mar 24 23:12:54 2025 +0100|qualcommax: ipq807x: Create working factory tar for WAX620 and WAX630.
+8940cc3919|Shiji Yang|Thu Mar 20 01:26:35 2025 +0800|ramips: dts: remove redundant console bootargs
 </details>
