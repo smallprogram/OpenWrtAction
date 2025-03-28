@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f6c787146|George Sapkin|Tue Mar 25 17:56:19 2025 +0200|tailscale: assign PKG_CPE_ID
+473e48fc|coolsnowwolf|Thu Mar 27 15:53:21 2025 +0800|php8: add patch for loongarch64 support
 </details>

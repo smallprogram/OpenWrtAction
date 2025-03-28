@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a998426|lwb1978|Thu Mar 27 23:09:55 2025 +0800|luci: fix update sing-box does not auto restart
+37e02e0|bcseputetto|Thu Mar 27 08:47:15 2025 +0800|luci: fix geosite rule file name
+</details>

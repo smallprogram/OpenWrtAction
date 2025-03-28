@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ebe6852c1|Stephen Howell|Fri Jan 10 16:40:04 2025 +0000|kernel: modules: add Intel ICE support
+ece23788a|aiamadeus|Sat Mar 15 21:21:16 2025 +0800|mediatek: add FM25S01BI3 flash support
 </details>

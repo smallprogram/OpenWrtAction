@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-05c7844389|Hannu Nyman|Thu Mar 27 21:02:14 2025 +0200|luci-base: update timezone data to 2025b
+e275056f|coolsnowwolf|Thu Mar 27 15:37:19 2025 +0800|luci-app-dockerman: add acl menu
 </details>

@@ -1,0 +1,8 @@
+<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5b71568|coolsnowwolf|Thu Mar 27 14:22:37 2025 +0800|Merge pull request #1698 from zxlhhyccc/custom
+b48774f|zxlhhyccc|Thu Mar 27 00:05:46 2025 +0800|luci-app-ssr-plus: Add subscribe link complet check and parse.
+e1242a7|zxlhhyccc|Wed Mar 26 22:42:26 2025 +0800|luci-app-ssr-plus: Fix `Hysteria2` subscribe.
+</details>

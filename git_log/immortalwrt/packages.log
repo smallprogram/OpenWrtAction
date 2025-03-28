@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-15a0e2aa3|Interesting Gang|Wed Mar 26 14:58:11 2025 +0800|shadowsocks-rust: update to 1.23.0
+c285dde4e|Yun Wang|Thu Mar 27 09:04:08 2025 +0800|rustdesk-server: add locked to cargo for lock deps
 </details>

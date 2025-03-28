@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b073af3|github-actions[bot]|Thu Mar 27 20:45:01 2025 +0800|sing-box: update to 1.11.6 (#419)
+12175f6|lwb1978|Thu Mar 27 20:44:15 2025 +0800|chinadns-ng: update to 2025.03.27
+f04c0f3|github-actions[bot]|Thu Mar 27 08:55:24 2025 +0800|v2ray-geosite: update to 20250326132209 (#417)
+caa966a|github-actions[bot]|Thu Mar 27 08:54:31 2025 +0800|v2ray-geoip: update to 202503050126 (#418)
+</details>

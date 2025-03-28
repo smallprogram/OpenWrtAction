@@ -1,0 +1,10 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+c555e822cc|Tianling Shen|Thu Mar 27 17:56:17 2025 +0800|luci-app-ipsec-vpnd: update service triggers
+ea490c16df|Tianling Shen|Thu Mar 27 17:43:53 2025 +0800|luci-app-ipsec-vpnd: rename daemon files to ipsec-vpnd
+3ada588bb3|Tianling Shen|Thu Mar 27 17:33:41 2025 +0800|luci-app-openvpn-server: rename easy-rsa vars file to avoid conflict
+f5c0e2e342|Tianling Shen|Thu Mar 27 17:23:33 2025 +0800|luci-app-ipsec-vpnserver-manyusers: drop package
+2f55b6f3bb|Tianling Shen|Thu Mar 27 17:18:17 2025 +0800|luci-app-socat: drop package
+</details>
