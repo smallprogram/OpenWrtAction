@@ -2,9 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c555e822cc|Tianling Shen|Thu Mar 27 17:56:17 2025 +0800|luci-app-ipsec-vpnd: update service triggers
-ea490c16df|Tianling Shen|Thu Mar 27 17:43:53 2025 +0800|luci-app-ipsec-vpnd: rename daemon files to ipsec-vpnd
-3ada588bb3|Tianling Shen|Thu Mar 27 17:33:41 2025 +0800|luci-app-openvpn-server: rename easy-rsa vars file to avoid conflict
-f5c0e2e342|Tianling Shen|Thu Mar 27 17:23:33 2025 +0800|luci-app-ipsec-vpnserver-manyusers: drop package
-2f55b6f3bb|Tianling Shen|Thu Mar 27 17:18:17 2025 +0800|luci-app-socat: drop package
+673d8dccda|Tianling Shen|Fri Mar 28 13:26:24 2025 +0800|Merge Official Source
+05c7844389|Hannu Nyman|Thu Mar 27 21:02:14 2025 +0200|luci-base: update timezone data to 2025b
+4207c2c5d5|Paul Donald|Wed Mar 26 22:40:01 2025 +0100|luci-proto-wireguard: add extra checks for hostname when building qr
+9c94c7dc93|Hosted Weblate|Tue Mar 25 16:45:39 2025 +0100|Translated using Weblate (Chinese (Traditional Han script))
 </details>

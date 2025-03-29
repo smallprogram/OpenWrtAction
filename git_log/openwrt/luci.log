@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-05c7844389|Hannu Nyman|Thu Mar 27 21:02:14 2025 +0200|luci-base: update timezone data to 2025b
+26f8620362|Hosted Weblate|Fri Mar 28 21:33:24 2025 +0100|Translated using Weblate (Chinese (Traditional Han script))
+328282d3ee|Dirk Brenken|Fri Mar 28 08:00:58 2025 +0100|luci-app-banIP: sync with release 1.5.5-1
 </details>

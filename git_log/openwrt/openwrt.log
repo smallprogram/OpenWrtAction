@@ -2,9 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b242731987|Mieczyslaw Nalewaj|Fri Mar 14 22:47:24 2025 +0100|tools/isl: update to 0.27
-8a15a75e94|Shymon Samsel|Mon Mar 24 13:24:02 2025 -0400|qualcommax: ipq807x: Create working factory images for EAP620 HD v1 and EAP660 HD v1
-2b5fea0e16|Mieczyslaw Nalewaj|Mon Mar 24 07:18:37 2025 +0100|generic: reorder settings
-b180ed413f|Paul Donald|Tue Mar 25 01:40:06 2025 +0100|lldpd: bump to 1.0.19
-1732d81d80|Magnus Kroken|Wed Mar 26 21:42:51 2025 +0100|mbedtls: update to 3.6.3
+4d48690cd7|Rui Salvaterra|Fri Mar 28 16:00:39 2025 +0000|kernel: move accepted patch from pending-6.6 to backport-6.6
+2b9c81d1cb|Daniel Golle|Fri Mar 28 15:40:28 2025 +0000|generic: fitblk: close block device if mapping image failed
+21cece29e9|Rosen Penev|Thu Nov 7 15:04:28 2024 -0800|tools/libressl: update to 4.0.0
+a1bf306bb7|Weikai Kong|Sat Dec 21 18:49:15 2024 -0500|qualcommax: ipq60xx: add Linksys MR7500 support
+2adc6293f4|Weikai Kong|Sat Mar 15 13:09:54 2025 -0400|target.mk: Fix features detection for PWM
+284f37ed80|Weikai Kong|Sat Dec 28 23:54:27 2024 -0500|ipq60xx: define common Linksys MR devices configuration
+8e6c49766d|Weikai Kong|Sat Dec 28 16:41:08 2024 -0500|ipq6018-ess: Add dp5-syn node
+499ec1d150|Weikai Kong|Mon Dec 30 01:09:07 2024 -0500|qca-ssdk: enable AQR for ipq60xx targets
 </details>
