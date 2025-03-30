@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bd20de0|yk271|Fri Mar 28 23:34:39 2025 +0800|ci: update issue template (#3807)
-9b34771|lwb1978|Fri Mar 28 08:43:30 2025 +0800|luci: optimize subscribe code
+dae13c8|lwb1978|Sat Mar 29 12:44:14 2025 +0800|luci: adapt to Xray balancer `leastLoad` type
 </details>
