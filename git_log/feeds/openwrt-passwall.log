@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-dae13c8|lwb1978|Sat Mar 29 12:44:14 2025 +0800|luci: adapt to Xray balancer `leastLoad` type
-</details>

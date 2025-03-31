@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-129f2e50f|Martin Schiller|Mon Mar 10 08:42:18 2025 +0100|generic: backport some copper SFP fixes
+8808906a7|Rui Salvaterra|Sat Feb 1 18:51:42 2025 +0000|kernel: usb: simplify r8152 dependencies
 </details>

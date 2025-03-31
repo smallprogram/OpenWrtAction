@@ -2,13 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-901823ec44|Tianling Shen|Sun Mar 30 00:43:08 2025 +0800|Merge Official Source
-4d48690cd7|Rui Salvaterra|Fri Mar 28 16:00:39 2025 +0000|kernel: move accepted patch from pending-6.6 to backport-6.6
-2b9c81d1cb|Daniel Golle|Fri Mar 28 15:40:28 2025 +0000|generic: fitblk: close block device if mapping image failed
-21cece29e9|Rosen Penev|Thu Nov 7 15:04:28 2024 -0800|tools/libressl: update to 4.0.0
-a1bf306bb7|Weikai Kong|Sat Dec 21 18:49:15 2024 -0500|qualcommax: ipq60xx: add Linksys MR7500 support
-2adc6293f4|Weikai Kong|Sat Mar 15 13:09:54 2025 -0400|target.mk: Fix features detection for PWM
-284f37ed80|Weikai Kong|Sat Dec 28 23:54:27 2024 -0500|ipq60xx: define common Linksys MR devices configuration
-8e6c49766d|Weikai Kong|Sat Dec 28 16:41:08 2024 -0500|ipq6018-ess: Add dp5-syn node
-499ec1d150|Weikai Kong|Mon Dec 30 01:09:07 2024 -0500|qca-ssdk: enable AQR for ipq60xx targets
+60977e6ca3|Tianling Shen|Sun Mar 30 16:00:53 2025 +0800|Merge Official Source
+8b27e60c58|Daniel Golle|Thu Mar 13 22:22:39 2025 +0000|mediatek: filogic: add build for ASUS ZenWiFi BT8 with OpenWrt's U-Boot
+52bea8702c|Daniel Golle|Thu Feb 20 02:40:56 2025 +0000|uboot-envtools: add support for ASUS ZenWiFi BT8 (ubootmod)
+6bfde1f0e6|John Crispin|Fri Jan 17 11:25:52 2025 +0100|uboot-mediatek: add ASUS ZenWiFi BT8 support
+e17856c9ef|John Crispin|Fri Jan 17 11:25:18 2025 +0100|arm-trusted-firmware-mediatek: add MT7988 BL2 DDR4 images
+6f59e969e2|Daniel Golle|Thu Mar 13 22:10:40 2025 +0000|mediatek: filogic: prepare for ubootmod build of ASUS ZenWiFi BT8
+2cd79733cc|John Crispin|Fri Jan 17 11:36:17 2025 +0100|mediatek: filogic: add Asus ZenWiFi BT8
+6ac09b940f|Robert Marko|Sat Mar 29 19:23:15 2025 +0100|Revert "tools/libressl: update to 4.0.0"
 </details>

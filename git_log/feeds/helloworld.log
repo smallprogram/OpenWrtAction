@@ -1,0 +1,8 @@
+<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+f92f566|zxl hhyccc|Sun Mar 30 10:26:36 2025 +0800|Merge pull request #1699 from zxlhhyccc/custom
+2fe8035|zxlhhyccc|Sat Mar 29 16:46:52 2025 +0800|luci-app-ssr-plus: Add `hy2://` format subscribe and configuration import.
+9b14197|zxlhhyccc|Fri Mar 28 21:25:17 2025 +0800|luci-app-ssr-plus: Optimize subscribe code.
+</details>
