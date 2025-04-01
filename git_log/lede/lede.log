@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8808906a7|Rui Salvaterra|Sat Feb 1 18:51:42 2025 +0000|kernel: usb: simplify r8152 dependencies
+ae810b9dd|Mieczyslaw Nalewaj|Tue Mar 18 17:40:19 2025 +0100|kernel: remove unused settings and depends
 </details>

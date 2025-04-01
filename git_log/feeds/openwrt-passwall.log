@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0799261|A-BO|Tue Apr 1 00:04:25 2025 +0800|luci: bump to 25.4.1
+0c8f946|lwb1978|Mon Mar 31 16:26:25 2025 +0800|luci: optimize
+ee7b949|lwb1978|Mon Mar 31 12:35:41 2025 +0800|luci: add geo query function
+</details>

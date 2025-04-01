@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-05f82abaa|Daniel Golle|Sun Feb 23 16:45:04 2025 +0000|exim: update to 4.98.2
+85b4f08c9|Vasily Evseenko|Sat Mar 29 15:46:16 2025 +0300|wfb-ng: Update to release 25.01
+a6441f647|Sandro Jäckel|Sat Mar 29 18:45:23 2025 +0100|tailscale: update to 1.82.0
 </details>

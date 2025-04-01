@@ -2,20 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cba55fade8|Daniel Golle|Sun Mar 30 18:11:39 2025 +0100|mediatek: restrict compat_version override for BPi-R3
-b6ff3d9afa|Mieczyslaw Nalewaj|Tue Mar 18 17:40:19 2025 +0100|kernel: modules: ixgbe,ixgbevf,i40e: remove unused settings and depends
-9fb06f2c3c|Mieczyslaw Nalewaj|Mon Mar 17 21:37:04 2025 +0100|firewall4: update to Git HEAD (2025-03-17)
-27e25d3401|Mieczyslaw Nalewaj|Mon Mar 17 08:33:33 2025 +0100|generic: move backport patches 751-03 and 751-04 to pending
-a81099bca2|Mieczyslaw Nalewaj|Sun Mar 16 17:30:37 2025 +0100|generic: rename backport patch 752-03 to name with correct version
-0991d2f06d|Mieczyslaw Nalewaj|Sat Mar 15 12:14:12 2025 +0100|generic: rename backport patches to names containing version
-390e00355e|Daniel Golle|Sat Mar 29 03:52:42 2025 +0000|uboot-tools: add fit-check-sign package
-51b0abae52|Daniel Golle|Sat Mar 29 03:53:58 2025 +0000|uboot-tools: dumpimage: get rid of libopenssl dependency
-a3b2689e88|Daniel Golle|Sat Mar 29 03:16:53 2025 +0000|uboot-tools: rename patches
-4039388149|Christian Marangi|Sat Mar 29 13:12:44 2025 +0100|mac80211: fix compilation error for old stable kernel version
-8b27e60c58|Daniel Golle|Thu Mar 13 22:22:39 2025 +0000|mediatek: filogic: add build for ASUS ZenWiFi BT8 with OpenWrt's U-Boot
-52bea8702c|Daniel Golle|Thu Feb 20 02:40:56 2025 +0000|uboot-envtools: add support for ASUS ZenWiFi BT8 (ubootmod)
-6bfde1f0e6|John Crispin|Fri Jan 17 11:25:52 2025 +0100|uboot-mediatek: add ASUS ZenWiFi BT8 support
-e17856c9ef|John Crispin|Fri Jan 17 11:25:18 2025 +0100|arm-trusted-firmware-mediatek: add MT7988 BL2 DDR4 images
-6f59e969e2|Daniel Golle|Thu Mar 13 22:10:40 2025 +0000|mediatek: filogic: prepare for ubootmod build of ASUS ZenWiFi BT8
-2cd79733cc|John Crispin|Fri Jan 17 11:36:17 2025 +0100|mediatek: filogic: add Asus ZenWiFi BT8
+f169c57242|jonathan brophy|Sun Dec 15 13:36:29 2024 +1300|kernel: modules: reenable led-group-multi-color patch
+f7638eb00a|jonathan brophy|Thu Dec 26 23:01:33 2024 +1300|stm32: add default kernel config option CONFIG_LEDS_CLASS_MULTICOLOR
+65b6f1c1b2|Ivan Diaz|Sun Mar 9 22:17:12 2025 -0500|ath79: move TP-Link RE450 v1 & v2 and RE355 v1 to tiny target
+ef20327e33|Ivan Davydov|Tue Mar 4 23:54:13 2025 +0300|ramips: mt76x8: add support for Keenetic Launcher (KN-1221)
+2e71e41ce6|John Audia|Sun Mar 30 08:40:06 2025 -0400|kernel: bump 6.6 to 6.6.85
+7728f66606|Shiji Yang|Sat Feb 22 14:15:12 2025 +0800|ath10k-ct-firmware: remove QCA9888 board file symbolic link
+324f234966|Qingfang Deng|Sun Mar 9 02:00:14 2025 +0800|kernel: Mediatek: fix EEE registers init
+88234a03bc|Shiji Yang|Sat Mar 29 00:00:50 2025 +0800|ath10k-ct: silence some harmless noisy logs
+b47cf6e2db|Shiji Yang|Sat Mar 29 00:00:50 2025 +0800|ath10k-ct: update to version 6.14
+77be7175ae|Marius Durbaca|Mon Mar 31 06:12:23 2025 +0000|rampis: revert fix tplink_mr200v1 wan interface
 </details>
