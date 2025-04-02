@@ -2,6 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-85b4f08c9|Vasily Evseenko|Sat Mar 29 15:46:16 2025 +0300|wfb-ng: Update to release 25.01
-a6441f647|Sandro Jäckel|Sat Mar 29 18:45:23 2025 +0100|tailscale: update to 1.82.0
+97dc4cf82|Florian Eckert|Tue Apr 1 09:23:26 2025 +0200|acme-common: update PKG_RELEASE
+692f3afe4|Florian Eckert|Fri Mar 21 10:41:01 2025 +0100|acme: remove crontab entry if service is stopped
+e73688d17|Florian Eckert|Fri Mar 21 10:30:17 2025 +0100|acme: remove lock handling
+420210b31|Florian Eckert|Fri Mar 21 10:20:21 2025 +0100|acme: fix service_triggers on config change
+ea285eb46|Florian Eckert|Tue Apr 1 09:06:49 2025 +0200|ddns-scripts: always use the 'ps' output from busybox
+83b0c8e27|Robert Marko|Tue Apr 1 10:59:44 2025 +0200|ddns-scripts: fix ddns-scripts-scaleway description
+6c8ad9f02|Florian Eckert|Tue Mar 4 10:22:41 2025 +0100|modemmanager: fix pending mmcli calls for ModemManager-monitor script
+5c203c36d|Florian Eckert|Tue Feb 25 09:09:07 2025 +0100|modemmanager: add missing mmcli timeout option during ubus call
+4e41a1c8f|Lars Kaiser|Wed Mar 19 23:46:02 2025 +0100|ddns-scripts: fix typo in package name
+a7867016c|Lars Kaiser|Wed Mar 19 02:20:12 2025 +0100|ddns-scripts: add support for Scaleway DNS
 </details>

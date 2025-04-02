@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ae810b9dd|Mieczyslaw Nalewaj|Tue Mar 18 17:40:19 2025 +0100|kernel: remove unused settings and depends
+60824ec6a|Daniel Golle|Sat Feb 1 05:03:50 2025 +0000|mediatek: mt7622: fix SATA on BPi-R64
 </details>

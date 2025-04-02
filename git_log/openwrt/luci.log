@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d356e30ac1|Paul Donald|Mon Mar 31 21:41:11 2025 +0200|luci-app-firewall: repair handleAdd for rules.js
+601a69f2fe|Khachatryan Karen|Fri Mar 21 14:29:32 2025 +0300|luci-app-antiblock: Update luci-app-antiblock package
+6c061b644c|Paul Donald|Tue Apr 1 14:28:03 2025 +0200|luci-mod-network: fix handleAdd in wireless.js
+cdce600aae|Paul Donald|Tue Apr 1 16:43:05 2025 +0200|luci-mod-network: give wireless.js ES2016 treatment and refactor
 </details>

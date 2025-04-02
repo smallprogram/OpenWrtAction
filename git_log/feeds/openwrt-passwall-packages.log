@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-cd668cd|github-actions[bot]|Tue Apr 1 02:07:14 2025 +0800|xray-core: update to 25.3.31 (#424)
-7e79692|github-actions[bot]|Mon Mar 31 22:32:42 2025 +0800|v2ray-geosite: update to 20250329145339 (#422)
-52beb02|github-actions[bot]|Mon Mar 31 22:32:07 2025 +0800|v2ray-geoip: update to 202503281421 (#421)
-</details>

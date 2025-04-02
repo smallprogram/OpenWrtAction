@@ -2,14 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f169c57242|jonathan brophy|Sun Dec 15 13:36:29 2024 +1300|kernel: modules: reenable led-group-multi-color patch
-f7638eb00a|jonathan brophy|Thu Dec 26 23:01:33 2024 +1300|stm32: add default kernel config option CONFIG_LEDS_CLASS_MULTICOLOR
-65b6f1c1b2|Ivan Diaz|Sun Mar 9 22:17:12 2025 -0500|ath79: move TP-Link RE450 v1 & v2 and RE355 v1 to tiny target
-ef20327e33|Ivan Davydov|Tue Mar 4 23:54:13 2025 +0300|ramips: mt76x8: add support for Keenetic Launcher (KN-1221)
-2e71e41ce6|John Audia|Sun Mar 30 08:40:06 2025 -0400|kernel: bump 6.6 to 6.6.85
-7728f66606|Shiji Yang|Sat Feb 22 14:15:12 2025 +0800|ath10k-ct-firmware: remove QCA9888 board file symbolic link
-324f234966|Qingfang Deng|Sun Mar 9 02:00:14 2025 +0800|kernel: Mediatek: fix EEE registers init
-88234a03bc|Shiji Yang|Sat Mar 29 00:00:50 2025 +0800|ath10k-ct: silence some harmless noisy logs
-b47cf6e2db|Shiji Yang|Sat Mar 29 00:00:50 2025 +0800|ath10k-ct: update to version 6.14
-77be7175ae|Marius Durbaca|Mon Mar 31 06:12:23 2025 +0000|rampis: revert fix tplink_mr200v1 wan interface
+e37ad78539|Shiji Yang|Sat Mar 29 00:10:25 2025 +0800|tools/xz: update to 5.8.0
+a7e1e13817|Jan Hoffmann|Thu Feb 27 20:43:26 2025 +0100|realtek: refactor RTL930x MAC config to fix PHY ports
+fa50e53aa9|Tim Harvey|Mon Jan 27 14:44:27 2025 -0800|mac80211: ath11k: Fix DMA buffer allocation to resolve SWIOTLB issues
 </details>
