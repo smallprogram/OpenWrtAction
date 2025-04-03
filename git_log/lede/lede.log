@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-60824ec6a|Daniel Golle|Sat Feb 1 05:03:50 2025 +0000|mediatek: mt7622: fix SATA on BPi-R64
+efbab1938|Álvaro Fernández Rojas|Wed Jan 22 20:42:49 2025 +0100|generic: backport gpio-regmap ops patch
 </details>

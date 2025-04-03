@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-44e2952|lwb1978|Wed Apr 2 00:44:24 2025 +0800|luci: add xray server fallback xver settings
-b318bec|A-BO|Tue Apr 1 16:47:21 2025 +0800|luci: update AIGC rules
-7057585|xiaorouji|Tue Apr 1 01:09:34 2025 +0800|luci: Xray shunt DNS improve and optimize
-830805a|lwb1978|Tue Apr 1 12:58:00 2025 +0800|action: update code
+a031359|xiaorouji|Wed Apr 2 16:32:15 2025 +0800|luci: Xray DNS improve and fix
 </details>

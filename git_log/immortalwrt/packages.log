@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f96dabfc1|Interesting Gang|Tue Apr 1 12:12:17 2025 +0800|chinadns-ng: update to 2025.03.27
+2486303b1|Tianling Shen|Wed Apr 2 21:51:36 2025 +0800|Node.js: sync with upstream source
+8d850997c|Integral|Wed Feb 19 10:41:45 2025 +0800|filebrowser: update to 2.32.0
+e003b47c2|Tianling Shen|Tue Jun 13 15:34:39 2023 +0800|node-pnpm: add new package
 </details>

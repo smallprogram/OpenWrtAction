@@ -2,7 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e37ad78539|Shiji Yang|Sat Mar 29 00:10:25 2025 +0800|tools/xz: update to 5.8.0
-a7e1e13817|Jan Hoffmann|Thu Feb 27 20:43:26 2025 +0100|realtek: refactor RTL930x MAC config to fix PHY ports
-fa50e53aa9|Tim Harvey|Mon Jan 27 14:44:27 2025 -0800|mac80211: ath11k: Fix DMA buffer allocation to resolve SWIOTLB issues
+65b8a978de|Kyle Hendry|Sat Jan 11 11:33:22 2025 -0800|bmips: add support for Actiontec T1200H
+c01859e4f3|Álvaro Fernández Rojas|Wed Apr 2 18:59:59 2025 +0200|bcm63xx-cfe: update to latest version
+3526dbabdc|Shiji Yang|Wed Apr 2 08:10:29 2025 +0800|ipq40xx: dts: fix "qcom,coexist-support" property type
+da13174aa1|Shiji Yang|Wed Apr 2 08:10:29 2025 +0800|ath10k-ct: remove "qcom,coexist-support" property type hack
+ce1991cd64|Andrew LaMarche|Mon Mar 31 17:00:28 2025 +0000|octeon: force pcs reset to fix qca833x traffic
 </details>

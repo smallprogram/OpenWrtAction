@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+3c2d195|xiaorouji|Wed Apr 2 17:09:50 2025 +0800|luci: Xray DNS improve and fix
+83e2f6e|lwb1978|Wed Apr 2 00:44:24 2025 +0800|luci: add xray server fallback xver settings
+a60c031|xiaorouji|Wed Apr 2 15:30:39 2025 +0800|luci: fix bug
+832f026|xcf13363175|Wed Apr 2 14:51:28 2025 +0800|luci: Fix clear ipset display issue
+</details>
