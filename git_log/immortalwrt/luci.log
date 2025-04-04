@@ -1,0 +1,15 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+36b9b387e8|Tianling Shen|Thu Apr 3 18:06:31 2025 +0800|Merge Official Source
+d8f26500d4|Tianling Shen|Thu Apr 3 17:21:03 2025 +0800|luci-app-homeproxy: bump to latest git HEAD
+4921920821|Hosted Weblate|Wed Apr 2 06:55:53 2025 +0200|Translated using Weblate (Chinese (Traditional Han script))
+601a69f2fe|Khachatryan Karen|Fri Mar 21 14:29:32 2025 +0300|luci-app-antiblock: Update luci-app-antiblock package
+6c061b644c|Paul Donald|Tue Apr 1 14:28:03 2025 +0200|luci-mod-network: fix handleAdd in wireless.js
+cdce600aae|Paul Donald|Tue Apr 1 16:43:05 2025 +0200|luci-mod-network: give wireless.js ES2016 treatment and refactor
+d356e30ac1|Paul Donald|Mon Mar 31 21:41:11 2025 +0200|luci-app-firewall: repair handleAdd for rules.js
+a36ef776a6|Hannu Nyman|Sat Mar 29 08:48:27 2025 +0200|treewide: Sync translations - i18n
+26f8620362|Hosted Weblate|Fri Mar 28 21:33:24 2025 +0100|Translated using Weblate (Chinese (Traditional Han script))
+328282d3ee|Dirk Brenken|Fri Mar 28 08:00:58 2025 +0100|luci-app-banIP: sync with release 1.5.5-1
+</details>

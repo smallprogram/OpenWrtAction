@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-efbab1938|Álvaro Fernández Rojas|Wed Jan 22 20:42:49 2025 +0100|generic: backport gpio-regmap ops patch
+d0efae101|coolsnowwolf|Sat Mar 22 23:19:17 2025 +0800|rockchip: sync rk3588 dts with upstream
 </details>

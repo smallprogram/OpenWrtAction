@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8efe42d86|Wesley Gimenes|Tue Apr 1 10:28:13 2025 -0300|netbird: update to 0.39.2
-fbef16c1c|Jonas Jelonek|Wed Apr 2 10:53:19 2025 +0200|croc: update to 10.2.2
-914fdcec9|Jonas Jelonek|Wed Apr 2 10:55:01 2025 +0200|eza: update to 0.21.0
+c9220e58b|Ryan Press|Mon Mar 31 13:57:23 2025 -0700|lpac: Refresh 0001-driver-add-uqmi-backend.patch
+864d80aae|Ryan Press|Mon Mar 31 06:59:54 2025 -0700|lpac: Add support for MBIM backend
+f17c283cd|Russell Senior|Wed Apr 2 05:57:34 2025 -0700|patch: update to v2.8
 </details>

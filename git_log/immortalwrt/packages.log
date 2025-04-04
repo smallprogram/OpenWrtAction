@@ -2,7 +2,32 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2486303b1|Tianling Shen|Wed Apr 2 21:51:36 2025 +0800|Node.js: sync with upstream source
-8d850997c|Integral|Wed Feb 19 10:41:45 2025 +0800|filebrowser: update to 2.32.0
-e003b47c2|Tianling Shen|Tue Jun 13 15:34:39 2023 +0800|node-pnpm: add new package
+90f913aa1|Tianling Shen|Thu Apr 3 18:03:55 2025 +0800|Merge Official Source
+8efe42d86|Wesley Gimenes|Tue Apr 1 10:28:13 2025 -0300|netbird: update to 0.39.2
+fbef16c1c|Jonas Jelonek|Wed Apr 2 10:53:19 2025 +0200|croc: update to 10.2.2
+914fdcec9|Jonas Jelonek|Wed Apr 2 10:55:01 2025 +0200|eza: update to 0.21.0
+97dc4cf82|Florian Eckert|Tue Apr 1 09:23:26 2025 +0200|acme-common: update PKG_RELEASE
+692f3afe4|Florian Eckert|Fri Mar 21 10:41:01 2025 +0100|acme: remove crontab entry if service is stopped
+e73688d17|Florian Eckert|Fri Mar 21 10:30:17 2025 +0100|acme: remove lock handling
+420210b31|Florian Eckert|Fri Mar 21 10:20:21 2025 +0100|acme: fix service_triggers on config change
+ea285eb46|Florian Eckert|Tue Apr 1 09:06:49 2025 +0200|ddns-scripts: always use the 'ps' output from busybox
+83b0c8e27|Robert Marko|Tue Apr 1 10:59:44 2025 +0200|ddns-scripts: fix ddns-scripts-scaleway description
+6c8ad9f02|Florian Eckert|Tue Mar 4 10:22:41 2025 +0100|modemmanager: fix pending mmcli calls for ModemManager-monitor script
+5c203c36d|Florian Eckert|Tue Feb 25 09:09:07 2025 +0100|modemmanager: add missing mmcli timeout option during ubus call
+4e41a1c8f|Lars Kaiser|Wed Mar 19 23:46:02 2025 +0100|ddns-scripts: fix typo in package name
+a7867016c|Lars Kaiser|Wed Mar 19 02:20:12 2025 +0100|ddns-scripts: add support for Scaleway DNS
+85b4f08c9|Vasily Evseenko|Sat Mar 29 15:46:16 2025 +0300|wfb-ng: Update to release 25.01
+a6441f647|Sandro Jäckel|Sat Mar 29 18:45:23 2025 +0100|tailscale: update to 1.82.0
+05f82abaa|Daniel Golle|Sun Feb 23 16:45:04 2025 +0000|exim: update to 4.98.2
+251f58d51|Dirk Brenken|Sat Mar 29 17:06:49 2025 +0100|banIP: update 1.5.5-2
+48b943bec|Khachatryan Karen|Sat Mar 29 14:17:44 2025 +0300|antiblock: Update to 2.1.2
+716e73da5|Dirk Brenken|Fri Mar 28 07:57:16 2025 +0100|banIP: release 1.5.5-1
+bbfaf738f|Hirokazu MORIKAWA|Thu Mar 27 11:24:58 2025 +0900|icu: bump to 77.1
+f3d563ef6|Wesley Gimenes|Tue Mar 25 21:45:41 2025 -0300|netbird: update to 0.39.1
+f6c787146|George Sapkin|Tue Mar 25 17:56:19 2025 +0200|tailscale: assign PKG_CPE_ID
+60908b5b9|Rui Salvaterra|Fri Jun 7 12:47:17 2024 +0100|tor: update to 0.4.8.16 stable
+df9015f9d|Vladimir Ulrich|Tue Mar 25 00:51:20 2025 +0300|zoneinfo: Updated to 2025b release.
+ded6ab53a|John Audia|Sat Mar 15 07:19:41 2025 -0400|nvme-cli: update to 2.11
+d5d0be8ec|John Audia|Sat Mar 15 07:17:58 2025 -0400|libnvme: update to 1.11.1
+483c2fef8|Stijn Tintel|Mon Mar 24 10:29:51 2025 +0200|keepalived: bump to 2.3.2
 </details>
