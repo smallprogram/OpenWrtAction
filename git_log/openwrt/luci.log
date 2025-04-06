@@ -1,6 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-e6556e97fb|Khachatryan Karen|Fri Apr 4 18:10:10 2025 +0300|luci-app-antiblock: Gateway selection bug fixed 1) Changed from "widgets.NetworkSelect" to "widgets.DeviceSelect"
-</details>

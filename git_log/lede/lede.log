@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7eb42a361|coolsnowwolf|Fri Jan 10 22:36:10 2025 +0800|rockchip: add support for Radxa ROCK 5B
+8c11125e5|Michel Lespinasse|Thu Jan 16 00:50:01 2025 -0800|rockchip: show boot stages on nanopi r6
 </details>

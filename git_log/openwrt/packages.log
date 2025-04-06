@@ -2,8 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a920f9ec9|George Sapkin|Wed Mar 26 04:29:13 2025 +0200|adguardhome: increase UDP send/receive buffers
-73c903116|George Sapkin|Wed Apr 2 18:40:39 2025 +0300|golang: bump to 1.24.2
-74a66189f|Ivan Pavlov|Fri Apr 4 08:51:00 2025 +0300|openvpn: update to 2.6.14
-e800fc7e8|Glenn Strauss|Fri Apr 4 03:15:13 2025 -0400|lighttpd: update to lighttpd 1.4.79 release hash
+3b68d2b60|John Audia|Thu Apr 3 07:45:56 2025 -0400|nvme-cli: update to 1.12
+6acc8a865|John Audia|Thu Apr 3 07:43:58 2025 -0400|libnvme: update to 1.12
+399e3257a|Jonas Jelonek|Wed Apr 2 11:02:17 2025 +0200|gping: drop package
 </details>

@@ -1,0 +1,11 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d62bc5e586|Tianling Shen|Sat Apr 5 14:54:45 2025 +0800|Merge Official Source
+a947be41b7|Robert Marko|Fri Apr 4 12:25:21 2025 +0200|at91bootstrap: put at91bootstrap images into image staging directory
+4724331d70|Robert Marko|Fri Apr 4 11:55:08 2025 +0200|at91: put u-boot images into image staging directory
+a0c1c9df97|Erik Servili|Wed Apr 2 23:01:16 2025 +0200|qualcommax: ipq60xx: add support for Netgear WAX610 and WAX610Y
+40851dae6a|Shiji Yang|Wed Apr 2 08:03:20 2025 +0800|ath79: dts: disable redundant built-in watchdog
+02d3aa72bb|Robert Marko|Fri Apr 4 11:04:01 2025 +0200|at91: add USB kmods only for subtargets that support USB
+</details>
