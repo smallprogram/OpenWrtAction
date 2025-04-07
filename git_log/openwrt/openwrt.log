@@ -2,5 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9ec997b850|Russell Senior|Tue Apr 1 05:07:01 2025 -0700|iproute2: update to v6.14.0
+84e0900867|Matthias Franck|Fri Jan 31 10:00:46 2025 +0100|busybox: use external libtirpc when using glibc
+86eb1c0b5a|Ming Kuang|Fri Mar 21 23:21:05 2025 +0800|wifi-scripts: mac80211.sh: add EHT and HE160 support to iw_htmode
+f76185c3f3|INAGAKI Hiroshi|Fri Jan 3 17:41:46 2025 +0900|ath79: add support for NEC Aterm WG2200HP
+76e0338247|INAGAKI Hiroshi|Fri Jan 3 17:37:29 2025 +0900|ath79: update dtsi/dts for NEC Aterm devices based on QCA9558
+367e5c00bd|INAGAKI Hiroshi|Sun Jan 12 01:40:19 2025 +0900|uboot-ath79: build U-Boot/qca9558_nec_aterm for NEC Aterm WG2200HP
+d8002cb627|Mikhail Zhilkin|Sat Mar 22 17:33:39 2025 +0000|mediatek: add support for netis NX31
+14a88ba520|George Sapkin|Sat Apr 5 01:37:32 2025 +0300|tools/expat: bump to 2.7.1 to fix several CVEs
+99ea96c297|Fil Dunsky|Tue Mar 11 06:57:43 2025 +0700|mediatek: filogic: add support for Huasifei WH3000
+c891ad99f8|Stijn Tintel|Tue Mar 18 10:56:25 2025 +0200|arm-trusted-firmware-rockchip: support rk3588
+b1a2ebbd43|Stijn Tintel|Tue Mar 18 10:53:46 2025 +0200|arm-trusted-firmware-rockchip: bump to 2.12.1 LTS
+06c4e8a262|Stijn Tintel|Tue Mar 25 00:20:32 2025 +0200|include/trusted-firmware-a.mk: support LTS releases
+aedd5b9278|Stijn Tintel|Mon Mar 24 22:58:49 2025 +0200|rkbin: drop TFA_MAKE_FLAGS
 </details>

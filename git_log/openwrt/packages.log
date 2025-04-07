@@ -2,7 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3b68d2b60|John Audia|Thu Apr 3 07:45:56 2025 -0400|nvme-cli: update to 1.12
-6acc8a865|John Audia|Thu Apr 3 07:43:58 2025 -0400|libnvme: update to 1.12
-399e3257a|Jonas Jelonek|Wed Apr 2 11:02:17 2025 +0200|gping: drop package
+c591f69b9|George Sapkin|Fri Apr 4 19:30:59 2025 +0300|expat: bump to 2.7.1 to fix several CVEs
+3d055f8df|Hannu Nyman|Sun Apr 6 19:57:10 2025 +0300|nano: Update to 8.4
+f4a942614|Moritz Warning|Mon Mar 3 23:29:54 2025 +0100|zerotier: add patch to support miniupnpc 2.2.8
+7dee8c47f|Christian Marangi|Wed Mar 5 15:25:58 2025 +0100|znc: update to use SOURCE_VERSION for submodule download
+47fcb8018|Christian Marangi|Wed Mar 5 15:18:46 2025 +0100|crun: update to use SOURCE_VERSION for submodule download
 </details>
