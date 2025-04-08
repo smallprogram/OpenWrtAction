@@ -2,9 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c591f69b9|George Sapkin|Fri Apr 4 19:30:59 2025 +0300|expat: bump to 2.7.1 to fix several CVEs
-3d055f8df|Hannu Nyman|Sun Apr 6 19:57:10 2025 +0300|nano: Update to 8.4
-f4a942614|Moritz Warning|Mon Mar 3 23:29:54 2025 +0100|zerotier: add patch to support miniupnpc 2.2.8
-7dee8c47f|Christian Marangi|Wed Mar 5 15:25:58 2025 +0100|znc: update to use SOURCE_VERSION for submodule download
-47fcb8018|Christian Marangi|Wed Mar 5 15:18:46 2025 +0100|crun: update to use SOURCE_VERSION for submodule download
+aad793b6f|Tianling Shen|Mon Apr 7 20:37:42 2025 +0800|v2raya: Update to 2.2.6.7
+72591f182|Tianling Shen|Mon Apr 7 20:37:20 2025 +0800|alist: Update to 3.44.0
+9e3887d8d|Tianling Shen|Sun Apr 6 14:06:46 2025 +0800|inih: Update to r59
+eb91f914b|Joel Low|Fri Jan 31 22:31:54 2025 +0800|strongswan: DHCP on lo fixes backport
 </details>

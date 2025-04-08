@@ -1,0 +1,26 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+e449c37d5|Tianling Shen|Mon Apr 7 20:39:30 2025 +0800|Merge Official Source
+b832150fe|Tianling Shen|Mon Apr 7 20:39:28 2025 +0800|Node.js: sync with upstream source
+aad793b6f|Tianling Shen|Mon Apr 7 20:37:42 2025 +0800|v2raya: Update to 2.2.6.7
+72591f182|Tianling Shen|Mon Apr 7 20:37:20 2025 +0800|alist: Update to 3.44.0
+9e3887d8d|Tianling Shen|Sun Apr 6 14:06:46 2025 +0800|inih: Update to r59
+eb91f914b|Joel Low|Fri Jan 31 22:31:54 2025 +0800|strongswan: DHCP on lo fixes backport
+c591f69b9|George Sapkin|Fri Apr 4 19:30:59 2025 +0300|expat: bump to 2.7.1 to fix several CVEs
+3d055f8df|Hannu Nyman|Sun Apr 6 19:57:10 2025 +0300|nano: Update to 8.4
+f4a942614|Moritz Warning|Mon Mar 3 23:29:54 2025 +0100|zerotier: add patch to support miniupnpc 2.2.8
+7dee8c47f|Christian Marangi|Wed Mar 5 15:25:58 2025 +0100|znc: update to use SOURCE_VERSION for submodule download
+47fcb8018|Christian Marangi|Wed Mar 5 15:18:46 2025 +0100|crun: update to use SOURCE_VERSION for submodule download
+3b68d2b60|John Audia|Thu Apr 3 07:45:56 2025 -0400|nvme-cli: update to 1.12
+6acc8a865|John Audia|Thu Apr 3 07:43:58 2025 -0400|libnvme: update to 1.12
+399e3257a|Jonas Jelonek|Wed Apr 2 11:02:17 2025 +0200|gping: drop package
+a920f9ec9|George Sapkin|Wed Mar 26 04:29:13 2025 +0200|adguardhome: increase UDP send/receive buffers
+73c903116|George Sapkin|Wed Apr 2 18:40:39 2025 +0300|golang: bump to 1.24.2
+74a66189f|Ivan Pavlov|Fri Apr 4 08:51:00 2025 +0300|openvpn: update to 2.6.14
+e800fc7e8|Glenn Strauss|Fri Apr 4 03:15:13 2025 -0400|lighttpd: update to lighttpd 1.4.79 release hash
+c9220e58b|Ryan Press|Mon Mar 31 13:57:23 2025 -0700|lpac: Refresh 0001-driver-add-uqmi-backend.patch
+864d80aae|Ryan Press|Mon Mar 31 06:59:54 2025 -0700|lpac: Add support for MBIM backend
+f17c283cd|Russell Senior|Wed Apr 2 05:57:34 2025 -0700|patch: update to v2.8
+</details>

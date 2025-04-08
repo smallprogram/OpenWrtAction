@@ -2,5 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f2bd0ed4a7|Hosted Weblate|Sun Apr 6 17:40:55 2025 +0200|Translated using Weblate (Chinese (Traditional Han script))
+1f1abfd4d6|Paul Donald|Mon Apr 7 20:58:27 2025 +0200|luci-app-lldpd: custom TLV handling i18n sync
+279720fef7|Paul Donald|Tue Apr 1 18:12:39 2025 +0200|luci-app-lldpd: custom TLV handling
+65a80284cf|Paul Donald|Sat Apr 5 16:04:37 2025 +0200|luci-mod-network: wireless: add LDPC capability flags (X-Box compat)
+9acbd00155|Paul Donald|Mon Apr 7 20:16:04 2025 +0200|luci-app-ttyd: enable includeips for interface selection
+5be4cd129c|Paul Donald|Mon Apr 7 20:15:28 2025 +0200|luci-base: CBIDeviceSelect includes each device IP when includeips=true
+27ebe8b662|Paul Donald|Sun Apr 6 22:22:59 2025 +0200|luci-mod-network: give wireless.js ES2016 treatment and refactor
 </details>
