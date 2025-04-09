@@ -1,9 +1,0 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-aad793b6f|Tianling Shen|Mon Apr 7 20:37:42 2025 +0800|v2raya: Update to 2.2.6.7
-72591f182|Tianling Shen|Mon Apr 7 20:37:20 2025 +0800|alist: Update to 3.44.0
-9e3887d8d|Tianling Shen|Sun Apr 6 14:06:46 2025 +0800|inih: Update to r59
-eb91f914b|Joel Low|Fri Jan 31 22:31:54 2025 +0800|strongswan: DHCP on lo fixes backport
-</details>

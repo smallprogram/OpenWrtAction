@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f44984f19c|Andrew LaMarche|Fri Mar 28 01:06:03 2025 +0000|an7581: fix phy2 led1 function
-af93874f4e|Matthias Schiffer|Sat Mar 29 21:32:08 2025 +0100|ipq40xx: qca8k: hook up IPQ4019 bridge flag offloading
-5d1dedd9f7|Matthias Schiffer|Sat Mar 29 21:31:49 2025 +0100|generic: qca8k: backport bridge port isolation support
-d9f30b64ad|Christian Steiner|Sun Mar 30 13:19:04 2025 +0200|realtek: add support for D-Link DGS-1210-26
+1cb5297ac3|Robert Marko|Tue Apr 8 17:39:47 2025 +0200|ipq-wifi: update to Git HEAD (2025-04-08)
 </details>
