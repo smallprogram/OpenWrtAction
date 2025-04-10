@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-842c107|lwb1978|Wed Apr 9 01:49:02 2025 +0800|luci: import/export and subscribe support hy2 port hopping
+4686e43|lwb1978|Wed Apr 9 20:31:06 2025 +0800|luci: optimize `add the node via the link`
+d0bb09a|lwb1978|Wed Apr 9 10:03:28 2025 +0800|luci: improve hy2 port hopping
 </details>
