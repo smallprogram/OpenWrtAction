@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ba6609675|Florian Maurer|Wed Jan 22 19:59:12 2025 +0100|mediatek: netgear-wax206 fix wifi leds
+e61334eee|coolsnowwolf|Thu Apr 10 12:08:43 2025 +0800|ipq-wifi: update to Git HEAD (2025-04-08)
+71813b0d0|Shiji Yang|Wed Apr 2 23:36:28 2025 +0800|generic: crypto: fix jitterentropy initialization failed issue
+7495ac1b6|coolsnowwolf|Thu Apr 10 11:57:12 2025 +0800|kernel: bump 6.x to latest HEAD
 </details>
