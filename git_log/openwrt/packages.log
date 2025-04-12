@@ -2,20 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4857db8e2|Dirk Brenken|Thu Apr 10 23:39:08 2025 +0200|adblock: release 4.4.0-1
-3764639ca|Jan Hák|Thu Apr 10 12:13:42 2025 +0200|knot: update to version 3.4.6
-8a5d1a151|Jan Hák|Wed Mar 19 15:25:23 2025 +0100|knot: fix patch for configuration sample
-32de15820|Paul Donald|Tue Apr 8 20:56:42 2025 +0200|ddns-scripts: bump PKG_RELEASE
-5b277eb85|Paul Donald|Thu Nov 28 03:43:33 2024 +0100|ddns-scripts: refactor get_uptime() and avoid cat in sub-shell
-2bf1916a3|Paul Donald|Sat Nov 30 16:46:08 2024 +0100|ddns-scripts: refactor load_all_config_options()
-77933a45e|Paul Donald|Sat Nov 30 16:19:12 2024 +0100|ddns-scripts: add stop action for individual sections
-a36167288|Paul Donald|Sat Nov 30 16:47:06 2024 +0100|ddns-scripts: refactor start_daemon_for_all_ddns_sections()
-99da7eded|Paul Donald|Sat Nov 30 16:46:39 2024 +0100|ddns-scripts: refactor stop_daemon_for_all_ddns_sections()
-2ab29cc06|Paul Donald|Sat Nov 30 16:26:27 2024 +0100|ddns-scripts: refactor stop_section_processes()
-91954f4b6|Paul Donald|Wed Nov 27 20:39:00 2024 +0100|ddns-scripts: refactor update_url checks to avoid echo|grep sub-shells
-6706a5bd7|Paul Donald|Sat Nov 30 19:16:11 2024 +0100|ddns-scripts: variable quoting
-6b9b6fdac|Florian Eckert|Thu Mar 27 16:19:45 2025 +0100|modemmanager: add missing any option to allowedmode
-9ebb45737|Michael Heimpold|Tue Jan 21 21:28:00 2025 +0100|php8: update to 8.4.5
-4434c5f25|Michael Heimpold|Sat Apr 5 21:24:25 2025 +0200|php8-pecl-imagick: update to 3.8.0RC2
-1a0c8b722|Michael Heimpold|Sun Feb 16 12:54:55 2025 +0100|php8-pecl-mcrypt: drop package - unmaintained upstream
+7383b4817|Dirk Brenken|Fri Apr 11 21:57:37 2025 +0200|banIP: release 1.5.6-1
+15014f93e|Paul Donald|Fri Apr 11 00:31:21 2025 +0200|ddns-scripts: correct bump release
 </details>

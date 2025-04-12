@@ -2,25 +2,20 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b8eba75146|Sergii Shcherbakov|Sat Feb 1 02:24:28 2025 +0100|ramips: mt76x8: add support for MERCUSYS MB130-4G v1
-851ea69d8e|Álvaro Fernández Rojas|Thu Apr 10 14:01:33 2025 +0200|package: add kmod-r8127 ethernet driver
-db3eff1022|Yujie Zhu|Tue Apr 8 22:51:55 2025 +0800|mediatek: filogic: add Netcore N60 Pro support
-779f730914|Christian Marangi|Thu Apr 10 12:23:34 2025 +0200|qualcommbe: disable CONFIG_QCOM_IPA kernel config
-692459dd4e|Christian Marangi|Thu Jan 30 16:55:57 2025 +0100|qualcommbe: ipq95xx: Make RPM partition read-only
-9c6180e5f1|Christian Marangi|Thu Jan 30 16:54:02 2025 +0100|qualcommbe: ipq95xx: Add pending patch fixing NSSCC boot stall
-1d88859cd3|Christian Marangi|Thu Jan 30 16:47:04 2025 +0100|qualcommbe: ipq95xx: Drop redundant comment in NSSCC clock patch
-0a9dc5a6f4|Christian Marangi|Thu Jan 30 16:45:16 2025 +0100|qualcommbe: ipq95xx: Define default partition table for RFB SPI-NAND
-7fb8b48120|Christian Marangi|Thu Jan 30 16:41:51 2025 +0100|qualcommbe: ipq95xx: Refresh dts SPI-NAND patch to v14
-46fcb0056e|Christian Marangi|Thu Jan 30 16:49:03 2025 +0100|qualcommbe: ipq95xx: Refresh the NSSCC and PORT patch for new PCIe patches
-8d081f48a6|Christian Marangi|Thu Jan 30 16:39:12 2025 +0100|qualcommbe: ipq95xx: Add PCIe upstream patch and related nodes
-e272eb4dbf|Christian Marangi|Wed Jan 29 21:34:41 2025 +0100|qualcommbe: ipq95xx: Add USB3 kmods and drop NSS-DP unneeded package
-c21aaa7ec6|Christian Marangi|Wed Jan 29 21:33:07 2025 +0100|kernel: usb: add qualcommbe to the supported target of dwc3-qcom
-80244360ae|Christian Marangi|Wed Apr 9 19:41:37 2025 +0200|generic: move QCOM SPI NAND driver to generic backports
-f7c0331c50|Mieczyslaw Nalewaj|Tue Apr 8 17:37:59 2025 +0200|kernel: bump 6.6 to 6.6.86
-4618d09587|Álvaro Fernández Rojas|Thu Apr 10 10:32:56 2025 +0200|bcm27xx: pull 6.6 patches from RPi repo
-719f378bfb|Linus Walleij|Mon Jun 12 00:15:18 2023 +0200|gemini: Activate serial USB console on the DNS-313
-cb650214ba|Linus Walleij|Thu Apr 3 08:30:29 2025 +0200|package: usbgadget: Fix subpackage dependencies
-a57bce987a|Linus Walleij|Tue Apr 1 10:53:12 2025 +0200|package: usbgadget: Define conffile
-f0de73f912|Linus Walleij|Tue Apr 1 09:52:19 2025 +0200|package: usbgadget: Require kmod-fs-configfs
-3edb06546b|Linus Walleij|Wed Apr 2 23:10:39 2025 +0200|kernel: modules: Fix RTL8366RB title
+412c850f07|Paul Donald|Wed Mar 26 18:43:45 2025 +0100|lldpd: enable hardware inventory information (TLV) management
+b68173500a|Christian Marangi|Fri Apr 11 21:40:31 2025 +0200|ath10k-ct: partially revert removal of 003 patch
+473cfb4ff5|Christian Marangi|Fri Apr 11 11:45:13 2025 +0200|generic: fix kernel warning no previous prototype for ...
+0b5650f767|Christian Marangi|Fri Apr 11 11:38:55 2025 +0200|generic: add missing of.h header to ar8327
+f8ed36f0d7|Felix Fietkau|Fri Apr 11 13:02:19 2025 +0200|unetmsg: allow communication between hosts if no service is defined
+f212e8b39f|Christian Marangi|Thu Apr 10 21:35:25 2025 +0200|ubootenv-nvram: convert driver to .remove_new
+83286b911e|Christian Marangi|Thu Apr 10 21:34:41 2025 +0200|ltq-ptm: convert driver to .remove_new
+0432866d1f|Christian Marangi|Thu Apr 10 21:33:53 2025 +0200|ltq-deu: convert driver to .remove_new
+fac3d99732|Christian Marangi|Thu Apr 10 21:33:05 2025 +0200|ltq-atm: convert driver to .remove_new
+bd532bd48e|Christian Marangi|Thu Apr 10 21:32:19 2025 +0200|ltq-adsl-mei: convert driver to .remove_new
+6651efa4ff|Christian Marangi|Thu Apr 10 21:31:02 2025 +0200|gpio-button-hotplug: convert to .remove_new
+31139fcdfb|Christian Marangi|Thu Apr 10 21:29:11 2025 +0200|generic: convert driver to .remove_new
+372c2ea656|Felix Fietkau|Fri Apr 11 11:09:33 2025 +0200|mt76: update to Git HEAD (2025-04-11)
+bfb106e8ae|Felix Fietkau|Wed Mar 19 12:40:50 2025 +0100|mac80211: backport API change for sta rate control update
+37c80e61ee|Felix Fietkau|Thu Apr 3 11:51:41 2025 +0200|cli: extend remove call to allow passing values directly
+c166cb9661|Yang Xiwen|Thu Apr 10 19:09:42 2025 +0800|qualcommax: eap623od-hd-v1: fix phy node and LED config
 </details>

@@ -1,0 +1,11 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+e22af70|Soffio di vento|Fri Apr 11 23:45:33 2025 +0800|luci: add XUDP Mux option for shadowsocks node (#797)
+7dec240|xiaorouji|Fri Apr 11 23:33:37 2025 +0800|luci: 25.4.11
+8999da1|lwb1978|Wed Apr 9 20:31:06 2025 +0800|luci: optimize `add the node via the link`
+fa44392|lwb1978|Wed Apr 9 10:03:28 2025 +0800|luci: improve hy2 port hopping
+e1d2155|lwb1978|Wed Apr 9 01:49:02 2025 +0800|luci: import/export and subscribe support hy2 port hopping
+4ebac71|xiaorouji|Fri Apr 11 23:41:25 2025 +0800|luci: adjust default node type
+</details>
