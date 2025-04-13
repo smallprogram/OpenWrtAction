@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0e0d730|lwb1978|Sun Apr 13 01:57:40 2025 +0800|luci: optimize node list automatic detection delay
+</details>

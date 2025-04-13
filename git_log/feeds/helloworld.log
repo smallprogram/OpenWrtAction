@@ -2,10 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1c5963f|zxl hhyccc|Fri Apr 11 20:51:07 2025 +0800|Merge pull request #1703 from zxlhhyccc/custom
-77cd2ef|zxlhhyccc|Wed Apr 9 23:43:03 2025 +0800|luci-app-ssr-plus: Add `dnsproxy` disable `IPv6` resolved.
-92f1ef8|zxlhhyccc|Sun Apr 6 00:08:29 2025 +0800|luci-app-ssr-plus: Add dnsproxy parse.
-918c07d|zxlhhyccc|Sun Apr 6 00:08:02 2025 +0800|dnsproxy: Add new package
-b85a122|zxlhhyccc|Sat Apr 5 23:39:15 2025 +0800|luci-app-ssr-plus: Add dns2socks `Rust version` parse.
-cecdab7|zxlhhyccc|Sat Apr 5 23:38:49 2025 +0800|dns2socks-rust: Add new package
+b1b191c|zxl hhyccc|Sat Apr 12 20:20:42 2025 +0800|Merge pull request #1705 from zxlhhyccc/custom
+2db5a24|zxlhhyccc|Sat Apr 12 20:19:19 2025 +0800|luci-app-ssr-plus: Optimize `SS` configuration code.
 </details>

@@ -1,0 +1,9 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+018a186da|Tianling Shen|Sat Apr 12 17:48:16 2025 +0800|v2ray-geodata: Update to latest version
+9231f9191|Integral|Thu Apr 10 20:57:39 2025 +0800|qt6tools: update to 6.9.0
+3d4b26a05|Integral|Thu Apr 10 20:55:10 2025 +0800|qt6base: update to 6.9.0
+8c517c591|Yun Wang|Sat Apr 12 16:26:06 2025 +0800|rustdesk-server: enhanced environment variable support
+</details>

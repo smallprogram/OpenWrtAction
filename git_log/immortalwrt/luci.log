@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-04f2d129d7|Paul Donald|Sat Apr 12 22:04:32 2025 +0200|luci-base: fix UTF handling in super fast hash function
+e06cebd9e4|SakuraFallingMad|Tue Apr 1 19:06:46 2025 +0800|luci-app-passwall: update to 25.4.10
 </details>
