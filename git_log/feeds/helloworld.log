@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b1b191c|zxl hhyccc|Sat Apr 12 20:20:42 2025 +0800|Merge pull request #1705 from zxlhhyccc/custom
-2db5a24|zxlhhyccc|Sat Apr 12 20:19:19 2025 +0800|luci-app-ssr-plus: Optimize `SS` configuration code.
+305a5a7|zxl hhyccc|Sun Apr 13 12:42:24 2025 +0800|Merge pull request #1706 from zxlhhyccc/custom
+dff1dfa|zxlhhyccc|Sat Apr 12 21:19:07 2025 +0800|luci-app-ssr-plus: Add 'hy2 port hopping' Configure imports and subscribe.
 </details>

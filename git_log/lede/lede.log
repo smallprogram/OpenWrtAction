@@ -2,5 +2,26 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+91d0fd154|Andre Heider|Thu Jul 6 08:16:50 2023 +0200|hostapd: update to 2023-06-22
+c61ceffdd|Felix Fietkau|Wed Oct 2 19:56:52 2024 +0200|iwinfo: add multi-radio support
+25ebc3de2|Christian Marangi|Fri Apr 11 11:45:13 2025 +0200|generic: fix no previous prototype
+1d300215e|coolsnowwolf|Wed Apr 9 23:15:27 2025 +0800|mac80211: backport EHT API support
+4a21ec3e4|coolsnowwolf|Thu Apr 3 23:01:27 2025 +0800|mt76: update to Git HEAD (2024-05-17)
+55e46bb63|Robert Marko|Thu Feb 6 12:39:26 2025 +0100|iwinfo: update to Git HEAD (2025-02-06)
+3750142bb|Felix Fietkau|Wed Dec 6 16:17:21 2023 +0100|udebug: update to Git HEAD (2023-12-06)
+8ce3d7e91|Felix Fietkau|Tue Mar 25 11:07:24 2025 +0100|ucode: update to Git HEAD (2025-03-24)
+9da01c6b7|Robert Marko|Mon Dec 2 11:26:32 2024 +0100|rpcd: update to Git HEAD (2024-12-02)
 49f8f2ce1|coolsnowwolf|Sat Apr 12 11:20:54 2025 +0800|kernel: refresh 6.12 patches
+44bee8c7b|coolsnowwolf|Sat Apr 12 04:36:56 2025 +0800|hostapd: add CONFIG_DRIVER_11BE_SUPPORT
+27e1815ce|coolsnowwolf|Sat Apr 12 03:30:05 2025 +0800|Version update to R25.4.145 (Trump's China Tariffs)
+93b55f9d1|coolsnowwolf|Sat Apr 12 03:26:51 2025 +0800|mac80211: add WIFI7 EHT and HE160 support to iw_htmode
+949e9f7bf|coolsnowwolf|Sat Apr 12 03:22:17 2025 +0800|kernel: bump 6.x to latest HEAD
+5aeb11d16|coolsnowwolf|Sat Apr 12 02:47:29 2025 +0800|rpcd: update to Git HEAD (2024-12-02)
+c7d89e3c8|coolsnowwolf|Sat Apr 12 02:42:28 2025 +0800|iwinfo: add basic IEEE 802.11be and multi-radio support
+a4176bacd|coolsnowwolf|Sat Apr 12 02:27:13 2025 +0800|udebug: add new package
+de74afdd3|coolsnowwolf|Sat Apr 12 02:22:54 2025 +0800|ucode: update to Git HEAD (2025-03-24)
+6008d24ba|coolsnowwolf|Sat Apr 12 01:27:10 2025 +0800|mt76: update 6.x to Git HEAD (2024-05-17)
+752fce8a6|coolsnowwolf|Sat Apr 12 01:06:34 2025 +0800|mac80211: backport new EHT TLV definition for 11be standard
+f4a3d6163|coolsnowwolf|Fri Apr 11 23:21:37 2025 +0800|kernel: b53: fix compilation with kernels 6.12+
+449aa7834|coolsnowwolf|Fri Apr 11 23:15:03 2025 +0800|rockchip: phy: rockchip-snps-pcie3: rk3568: update fw when init
 </details>

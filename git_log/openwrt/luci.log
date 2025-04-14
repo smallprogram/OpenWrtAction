@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-04f2d129d7|Paul Donald|Sat Apr 12 22:04:32 2025 +0200|luci-base: fix UTF handling in super fast hash function
+0f119d57f2|Hosted Weblate|Sun Apr 13 16:26:57 2025 +0200|Translated using Weblate (Czech)
+8bff54dc47|this-username-has-been-taken|Sun Apr 13 16:38:46 2025 +0300|luci-proto-wireguard: fixed incorrect peer name detection
 </details>
