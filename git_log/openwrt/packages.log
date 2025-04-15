@@ -2,10 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e67e30d0e|Stan Grishin|Tue Apr 1 04:00:44 2025 +0000|https-dns-proxy: update to 2025.03.13 upstream
-d10813d62|Dirk Brenken|Sun Apr 13 21:41:36 2025 +0200|adblock: update 4.4.0-2
-2bd00ef78|Mikael Magnusson|Wed Mar 26 18:57:52 2025 +0100|openssh: add FIDO U2F and FIDO2 hardware token support
-0a3ef8cbf|Mikael Magnusson|Thu Mar 27 00:15:26 2025 +0100|Revert "openssh: Add FIDO2 hardware token support"
-daa316170|Javier Marcet|Thu Apr 10 21:27:18 2025 +0200|docker-compose: Update to version 2.35.0
-39b1179bd|Matthias Franck|Mon Mar 17 10:08:10 2025 +0100|libarchive: bump to 3.7.7 fixing a lot of security issues
+151156c9c|John Audia|Fri Apr 11 14:44:07 2025 -0400|htop: update to 3.4.1
+1fc56e79d|Tianling Shen|Mon Apr 14 15:19:44 2025 +0800|libcbor: disable sanitize by default
+4803944c5|Petr Štetiar|Mon Apr 14 04:20:36 2025 +0000|libarchive: bump to 3.7.9 fixing CVE-2025-25724, CVE-2025-1632, CVE-2024-57970
 </details>

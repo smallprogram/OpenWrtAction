@@ -1,0 +1,40 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+33a8f7666|Integral|Tue Apr 15 01:10:19 2025 +0800|qt6tools: update patch for 6.9.0
+f0dde1dc3|Tianling Shen|Mon Apr 14 14:56:46 2025 +0800|Merge Official Source
+02cff33fa|Tianling Shen|Mon Apr 14 14:50:38 2025 +0800|ua2f: Update to 4.10.2
+e67e30d0e|Stan Grishin|Tue Apr 1 04:00:44 2025 +0000|https-dns-proxy: update to 2025.03.13 upstream
+d10813d62|Dirk Brenken|Sun Apr 13 21:41:36 2025 +0200|adblock: update 4.4.0-2
+2bd00ef78|Mikael Magnusson|Wed Mar 26 18:57:52 2025 +0100|openssh: add FIDO U2F and FIDO2 hardware token support
+0a3ef8cbf|Mikael Magnusson|Thu Mar 27 00:15:26 2025 +0100|Revert "openssh: Add FIDO2 hardware token support"
+daa316170|Javier Marcet|Thu Apr 10 21:27:18 2025 +0200|docker-compose: Update to version 2.35.0
+39b1179bd|Matthias Franck|Mon Mar 17 10:08:10 2025 +0100|libarchive: bump to 3.7.7 fixing a lot of security issues
+c5576299a|Wesley Gimenes|Thu Apr 10 11:28:47 2025 -0300|netbird: update to 0.40.1
+3a81db1f1|Maxim Storchak|Sat Apr 12 11:58:37 2025 +0300|tgt: update to 1.0.96
+7383b4817|Dirk Brenken|Fri Apr 11 21:57:37 2025 +0200|banIP: release 1.5.6-1
+15014f93e|Paul Donald|Fri Apr 11 00:31:21 2025 +0200|ddns-scripts: correct bump release
+4857db8e2|Dirk Brenken|Thu Apr 10 23:39:08 2025 +0200|adblock: release 4.4.0-1
+3764639ca|Jan Hák|Thu Apr 10 12:13:42 2025 +0200|knot: update to version 3.4.6
+8a5d1a151|Jan Hák|Wed Mar 19 15:25:23 2025 +0100|knot: fix patch for configuration sample
+32de15820|Paul Donald|Tue Apr 8 20:56:42 2025 +0200|ddns-scripts: bump PKG_RELEASE
+5b277eb85|Paul Donald|Thu Nov 28 03:43:33 2024 +0100|ddns-scripts: refactor get_uptime() and avoid cat in sub-shell
+2bf1916a3|Paul Donald|Sat Nov 30 16:46:08 2024 +0100|ddns-scripts: refactor load_all_config_options()
+77933a45e|Paul Donald|Sat Nov 30 16:19:12 2024 +0100|ddns-scripts: add stop action for individual sections
+a36167288|Paul Donald|Sat Nov 30 16:47:06 2024 +0100|ddns-scripts: refactor start_daemon_for_all_ddns_sections()
+99da7eded|Paul Donald|Sat Nov 30 16:46:39 2024 +0100|ddns-scripts: refactor stop_daemon_for_all_ddns_sections()
+2ab29cc06|Paul Donald|Sat Nov 30 16:26:27 2024 +0100|ddns-scripts: refactor stop_section_processes()
+91954f4b6|Paul Donald|Wed Nov 27 20:39:00 2024 +0100|ddns-scripts: refactor update_url checks to avoid echo|grep sub-shells
+6706a5bd7|Paul Donald|Sat Nov 30 19:16:11 2024 +0100|ddns-scripts: variable quoting
+6b9b6fdac|Florian Eckert|Thu Mar 27 16:19:45 2025 +0100|modemmanager: add missing any option to allowedmode
+9ebb45737|Michael Heimpold|Tue Jan 21 21:28:00 2025 +0100|php8: update to 8.4.5
+4434c5f25|Michael Heimpold|Sat Apr 5 21:24:25 2025 +0200|php8-pecl-imagick: update to 3.8.0RC2
+1a0c8b722|Michael Heimpold|Sun Feb 16 12:54:55 2025 +0100|php8-pecl-mcrypt: drop package - unmaintained upstream
+f40137487|Oliver Sedlbauer|Mon Apr 7 09:19:30 2025 +0200|utils: add new package enterprise-numbers
+742c5bb94|Oliver Sedlbauer|Thu Apr 3 17:31:36 2025 +0200|ipmitool: disable download of PEN list in Makefile
+96da0a11c|Oliver Sedlbauer|Thu Apr 3 17:28:46 2025 +0200|ipmitool: add option to disable registry download
+8e8101438|Oliver Sedlbauer|Thu Apr 3 17:27:42 2025 +0200|ipmitool: do not require IANA PEN registry
+733425e1d|Jianhui Zhao|Wed Apr 9 14:08:39 2025 +0800|lua-eco: update to 3.8.0
+d520931ef|Wesley Gimenes|Tue Apr 8 13:25:15 2025 -0300|netbird: update to 0.40.0
+</details>

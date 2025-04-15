@@ -2,17 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b0d43be2f3|Rudy Andram|Thu Mar 27 10:55:59 2025 +0000|dnsmasq: bump release to 2.91
-c79572210f|Hannu Nyman|Sat Apr 12 19:47:28 2025 +0300|ca-certificates: Update to 20241223
-10a674d277|INAGAKI Hiroshi|Sun Apr 13 19:41:19 2025 +0900|ath79: fix initramfs execution for NEC Aterm devices
-143569c2ed|Zoltan HERPAI|Mon Feb 24 12:18:01 2025 +0000|include: move generic riscv64 ISA to rv64gc
-8cb7919a13|Robert Marko|Sat Apr 12 00:07:16 2025 +0200|layerscape: armv7: drop skipped packages
-598a0556b7|Robert Marko|Sat Apr 12 00:06:02 2025 +0200|ls-rcw: select by default for layerscape/armv7
-c04eaad12a|Robert Marko|Fri Apr 11 21:06:18 2025 +0200|layerscape: armv8_64b: drop skipped packages
-8a28ddafe7|Robert Marko|Fri Apr 11 23:33:57 2025 +0200|ls-ddr-phy: select by default for layerscape/armv8_64b
-84437eeec0|Robert Marko|Fri Apr 11 23:33:24 2025 +0200|ls-dpl: select by default for layerscape/armv8_64b
-2fb3efda0a|Robert Marko|Fri Apr 11 23:32:41 2025 +0200|ls-mc: select by default for layerscape/armv8_64b
-22f02beaab|Robert Marko|Fri Apr 11 23:18:30 2025 +0200|fman-ucode: select by default for layerscape/armv8_64b
-03ab770da5|Robert Marko|Fri Apr 11 22:57:27 2025 +0200|tfa-layerscape: set BUILD_DEVICES
-4a7de50769|Robert Marko|Sat Apr 12 00:32:23 2025 +0200|bcm63xx-cfe: install into image staging dir
+e086bb951c|Chukun Pan|Tue Mar 4 23:18:38 2025 +0800|kernel: add missing submenu for diag modules
+bed637d9d3|Christian Marangi|Sat Apr 12 10:52:04 2025 +0200|armsr: drop GC sections ARMv7 patch
+7843f21c51|Christian Marangi|Sat Apr 12 01:01:43 2025 +0200|generic: replace ARM gc sections patch with upstream version
+ff802ccc44|Christian Marangi|Sat Apr 12 00:58:19 2025 +0200|generic: replace SFP ignore TX FAULT with upstream version
+f63d64ede0|Christian Marangi|Sat Apr 12 00:31:58 2025 +0200|generic: move patch from pending to backport
 </details>
