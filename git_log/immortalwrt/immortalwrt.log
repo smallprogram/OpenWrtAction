@@ -2,71 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-57c24aaa31|Tianling Shen|Mon Apr 14 17:39:23 2025 +0800|r8152: remove unnecessary dependency
-637cb5d990|Tianling Shen|Mon Apr 14 17:30:35 2025 +0800|r8127: enable rss support by default
-bec5211deb|Tianling Shen|Mon Apr 14 14:41:22 2025 +0800|Merge Official Source
-b0d43be2f3|Rudy Andram|Thu Mar 27 10:55:59 2025 +0000|dnsmasq: bump release to 2.91
-c79572210f|Hannu Nyman|Sat Apr 12 19:47:28 2025 +0300|ca-certificates: Update to 20241223
-10a674d277|INAGAKI Hiroshi|Sun Apr 13 19:41:19 2025 +0900|ath79: fix initramfs execution for NEC Aterm devices
-143569c2ed|Zoltan HERPAI|Mon Feb 24 12:18:01 2025 +0000|include: move generic riscv64 ISA to rv64gc
-8cb7919a13|Robert Marko|Sat Apr 12 00:07:16 2025 +0200|layerscape: armv7: drop skipped packages
-598a0556b7|Robert Marko|Sat Apr 12 00:06:02 2025 +0200|ls-rcw: select by default for layerscape/armv7
-c04eaad12a|Robert Marko|Fri Apr 11 21:06:18 2025 +0200|layerscape: armv8_64b: drop skipped packages
-8a28ddafe7|Robert Marko|Fri Apr 11 23:33:57 2025 +0200|ls-ddr-phy: select by default for layerscape/armv8_64b
-84437eeec0|Robert Marko|Fri Apr 11 23:33:24 2025 +0200|ls-dpl: select by default for layerscape/armv8_64b
-2fb3efda0a|Robert Marko|Fri Apr 11 23:32:41 2025 +0200|ls-mc: select by default for layerscape/armv8_64b
-22f02beaab|Robert Marko|Fri Apr 11 23:18:30 2025 +0200|fman-ucode: select by default for layerscape/armv8_64b
-03ab770da5|Robert Marko|Fri Apr 11 22:57:27 2025 +0200|tfa-layerscape: set BUILD_DEVICES
-4a7de50769|Robert Marko|Sat Apr 12 00:32:23 2025 +0200|bcm63xx-cfe: install into image staging dir
-6690f551c8|FUKAUMI Naoki|Wed Jan 29 07:35:43 2025 +0000|rockchip: Add support for Radxa ROCK 4SE
-18925614c0|FUKAUMI Naoki|Wed Jan 29 07:33:59 2025 +0000|rockchip: Add support for Radxa ROCK 4C+
-7921e48d43|Schneider Azima|Sun Mar 9 18:42:51 2025 -0700|mediatek: add support for Mercusys MR80X v3
-66b5ed7a4e|John Audia|Fri Apr 11 09:52:08 2025 -0400|kernel: bump 6.6 to 6.6.87
-6bbf4a540d|Mantas Pucka|Fri Apr 4 12:46:58 2025 +0300|wifi-scripts: add hotplug handler for slow-to-initialize ath12k radios
-de205366a2|Mantas Pucka|Thu Mar 27 17:20:07 2025 +0200|linux-firmware: ath12k: package firmware for QCN9274
-9e3a2466f6|Mantas Pucka|Fri Apr 4 15:02:17 2025 +0300|mac80211: ath12k: add patches for 160MHz support
-49e6e1daf4|Mantas Pucka|Tue Apr 1 15:04:35 2025 +0300|mac80211: ath12k: fix wideband operation on QCN9274
-c1acef2e0c|Mantas Pucka|Thu Mar 27 17:28:46 2025 +0200|mac80211: ath12k: support fetching regdb from board-2.bin
-2de5564f7d|Mantas Pucka|Wed Apr 9 11:24:23 2025 +0300|qualcommbe: ipq95xx: pcs: fix USXGMII link-up failure
-cd1acb9db5|Mantas Pucka|Fri Mar 28 10:42:00 2025 +0200|qualcommbe: ipq95xx: pcs: support 2.5G PHY
-e46bc86df7|Mantas Pucka|Fri Mar 28 10:40:44 2025 +0200|qualcommbe: ipq95xx: nsscc: fix port5 clock parent
-baf7be6705|Mantas Pucka|Fri Apr 11 17:38:28 2025 +0300|qualcommbe: ipq95xx: add bus clock for NSSCC
-7450f993e8|Mantas Pucka|Thu Mar 27 12:02:51 2025 +0200|qualcommbe: ipq95xx: fix PCIe operation
-412c850f07|Paul Donald|Wed Mar 26 18:43:45 2025 +0100|lldpd: enable hardware inventory information (TLV) management
-b68173500a|Christian Marangi|Fri Apr 11 21:40:31 2025 +0200|ath10k-ct: partially revert removal of 003 patch
-473cfb4ff5|Christian Marangi|Fri Apr 11 11:45:13 2025 +0200|generic: fix kernel warning no previous prototype for ...
-0b5650f767|Christian Marangi|Fri Apr 11 11:38:55 2025 +0200|generic: add missing of.h header to ar8327
-f8ed36f0d7|Felix Fietkau|Fri Apr 11 13:02:19 2025 +0200|unetmsg: allow communication between hosts if no service is defined
-f212e8b39f|Christian Marangi|Thu Apr 10 21:35:25 2025 +0200|ubootenv-nvram: convert driver to .remove_new
-83286b911e|Christian Marangi|Thu Apr 10 21:34:41 2025 +0200|ltq-ptm: convert driver to .remove_new
-0432866d1f|Christian Marangi|Thu Apr 10 21:33:53 2025 +0200|ltq-deu: convert driver to .remove_new
-fac3d99732|Christian Marangi|Thu Apr 10 21:33:05 2025 +0200|ltq-atm: convert driver to .remove_new
-bd532bd48e|Christian Marangi|Thu Apr 10 21:32:19 2025 +0200|ltq-adsl-mei: convert driver to .remove_new
-6651efa4ff|Christian Marangi|Thu Apr 10 21:31:02 2025 +0200|gpio-button-hotplug: convert to .remove_new
-31139fcdfb|Christian Marangi|Thu Apr 10 21:29:11 2025 +0200|generic: convert driver to .remove_new
-372c2ea656|Felix Fietkau|Fri Apr 11 11:09:33 2025 +0200|mt76: update to Git HEAD (2025-04-11)
-bfb106e8ae|Felix Fietkau|Wed Mar 19 12:40:50 2025 +0100|mac80211: backport API change for sta rate control update
-37c80e61ee|Felix Fietkau|Thu Apr 3 11:51:41 2025 +0200|cli: extend remove call to allow passing values directly
-c166cb9661|Yang Xiwen|Thu Apr 10 19:09:42 2025 +0800|qualcommax: eap623od-hd-v1: fix phy node and LED config
-b8eba75146|Sergii Shcherbakov|Sat Feb 1 02:24:28 2025 +0100|ramips: mt76x8: add support for MERCUSYS MB130-4G v1
-851ea69d8e|Álvaro Fernández Rojas|Thu Apr 10 14:01:33 2025 +0200|package: add kmod-r8127 ethernet driver
-db3eff1022|Yujie Zhu|Tue Apr 8 22:51:55 2025 +0800|mediatek: filogic: add Netcore N60 Pro support
-779f730914|Christian Marangi|Thu Apr 10 12:23:34 2025 +0200|qualcommbe: disable CONFIG_QCOM_IPA kernel config
-692459dd4e|Christian Marangi|Thu Jan 30 16:55:57 2025 +0100|qualcommbe: ipq95xx: Make RPM partition read-only
-9c6180e5f1|Christian Marangi|Thu Jan 30 16:54:02 2025 +0100|qualcommbe: ipq95xx: Add pending patch fixing NSSCC boot stall
-1d88859cd3|Christian Marangi|Thu Jan 30 16:47:04 2025 +0100|qualcommbe: ipq95xx: Drop redundant comment in NSSCC clock patch
-0a9dc5a6f4|Christian Marangi|Thu Jan 30 16:45:16 2025 +0100|qualcommbe: ipq95xx: Define default partition table for RFB SPI-NAND
-7fb8b48120|Christian Marangi|Thu Jan 30 16:41:51 2025 +0100|qualcommbe: ipq95xx: Refresh dts SPI-NAND patch to v14
-46fcb0056e|Christian Marangi|Thu Jan 30 16:49:03 2025 +0100|qualcommbe: ipq95xx: Refresh the NSSCC and PORT patch for new PCIe patches
-8d081f48a6|Christian Marangi|Thu Jan 30 16:39:12 2025 +0100|qualcommbe: ipq95xx: Add PCIe upstream patch and related nodes
-e272eb4dbf|Christian Marangi|Wed Jan 29 21:34:41 2025 +0100|qualcommbe: ipq95xx: Add USB3 kmods and drop NSS-DP unneeded package
-c21aaa7ec6|Christian Marangi|Wed Jan 29 21:33:07 2025 +0100|kernel: usb: add qualcommbe to the supported target of dwc3-qcom
-80244360ae|Christian Marangi|Wed Apr 9 19:41:37 2025 +0200|generic: move QCOM SPI NAND driver to generic backports
-f7c0331c50|Mieczyslaw Nalewaj|Tue Apr 8 17:37:59 2025 +0200|kernel: bump 6.6 to 6.6.86
-4618d09587|Álvaro Fernández Rojas|Thu Apr 10 10:32:56 2025 +0200|bcm27xx: pull 6.6 patches from RPi repo
-719f378bfb|Linus Walleij|Mon Jun 12 00:15:18 2023 +0200|gemini: Activate serial USB console on the DNS-313
-cb650214ba|Linus Walleij|Thu Apr 3 08:30:29 2025 +0200|package: usbgadget: Fix subpackage dependencies
-a57bce987a|Linus Walleij|Tue Apr 1 10:53:12 2025 +0200|package: usbgadget: Define conffile
-f0de73f912|Linus Walleij|Tue Apr 1 09:52:19 2025 +0200|package: usbgadget: Require kmod-fs-configfs
-3edb06546b|Linus Walleij|Wed Apr 2 23:10:39 2025 +0200|kernel: modules: Fix RTL8366RB title
+55f9aa693a|Tianling Shen|Tue Apr 15 16:30:21 2025 +0800|rockchip: add phy leds setup script
+fd2b54a16b|Tianling Shen|Tue Apr 15 13:40:15 2025 +0800|Merge Official Source
+d36e763056|Tianling Shen|Tue Apr 15 13:34:10 2025 +0800|rockchip: change to use upstream driver for rtl8111
+e086bb951c|Chukun Pan|Tue Mar 4 23:18:38 2025 +0800|kernel: add missing submenu for diag modules
+bed637d9d3|Christian Marangi|Sat Apr 12 10:52:04 2025 +0200|armsr: drop GC sections ARMv7 patch
+7843f21c51|Christian Marangi|Sat Apr 12 01:01:43 2025 +0200|generic: replace ARM gc sections patch with upstream version
+ff802ccc44|Christian Marangi|Sat Apr 12 00:58:19 2025 +0200|generic: replace SFP ignore TX FAULT with upstream version
+f63d64ede0|Christian Marangi|Sat Apr 12 00:31:58 2025 +0200|generic: move patch from pending to backport
 </details>

@@ -2,7 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-151156c9c|John Audia|Fri Apr 11 14:44:07 2025 -0400|htop: update to 3.4.1
-1fc56e79d|Tianling Shen|Mon Apr 14 15:19:44 2025 +0800|libcbor: disable sanitize by default
-4803944c5|Petr Štetiar|Mon Apr 14 04:20:36 2025 +0000|libarchive: bump to 3.7.9 fixing CVE-2025-25724, CVE-2025-1632, CVE-2024-57970
+9c557d206|Wesley Gimenes|Tue Apr 15 13:15:50 2025 -0300|netbird: update to 0.41.2
+4dee0fc39|Wesley Gimenes|Tue Apr 15 09:56:28 2025 -0300|netbird: update to 0.41.1
+87ed50984|Tianling Shen|Tue Apr 15 19:42:45 2025 +0800|cloudflared: Update to 2025.4.0
+1d73b25ed|Tianling Shen|Tue Apr 15 19:42:31 2025 +0800|v2ray-geodata: Update to latest version
+6f869c6ce|Tianling Shen|Tue Apr 15 19:41:59 2025 +0800|v2ray-core: Update to 5.29.3
 </details>

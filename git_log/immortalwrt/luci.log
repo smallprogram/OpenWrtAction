@@ -2,23 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-25601b0b2b|Tianling Shen|Mon Apr 14 17:21:08 2025 +0800|Merge Official Source
-0f119d57f2|Hosted Weblate|Sun Apr 13 16:26:57 2025 +0200|Translated using Weblate (Czech)
-8bff54dc47|this-username-has-been-taken|Sun Apr 13 16:38:46 2025 +0300|luci-proto-wireguard: fixed incorrect peer name detection
-04f2d129d7|Paul Donald|Sat Apr 12 22:04:32 2025 +0200|luci-base: fix UTF handling in super fast hash function
-5ca9b36a38|Dirk Brenken|Fri Apr 11 22:06:20 2025 +0200|luci-app-banip: sync with release 1.5.6-1
-f746a52979|Paul Spooren|Thu Jan 30 23:36:34 2025 +0000|luci-app-attendedsysupgrade: add firmware upgrade check status include
-ffbce6fed7|Paul Spooren|Thu Jan 30 23:33:46 2025 +0000|luci-mod-status: add `oneshot` handling
-2967f2ccd8|Dirk Brenken|Thu Apr 10 23:43:46 2025 +0200|luci-app-adblock: sync with release 4.4.0-1
-d192c9e7d4|Hosted Weblate|Thu Apr 10 14:31:23 2025 +0200|Translated using Weblate (Lithuanian)
-e79e7022e5|Stefan Kleeschulte|Fri Jan 17 13:42:34 2025 +0100|luci-mod-status: consider family when rendering chains and rules
-0d610e7466|Paul Donald|Tue Apr 8 03:46:28 2025 +0200|luci-mod-network: give wireless.js ES2016 treatment and refactor
-1f1abfd4d6|Paul Donald|Mon Apr 7 20:58:27 2025 +0200|luci-app-lldpd: custom TLV handling i18n sync
-279720fef7|Paul Donald|Tue Apr 1 18:12:39 2025 +0200|luci-app-lldpd: custom TLV handling
-65a80284cf|Paul Donald|Sat Apr 5 16:04:37 2025 +0200|luci-mod-network: wireless: add LDPC capability flags (X-Box compat)
-9acbd00155|Paul Donald|Mon Apr 7 20:16:04 2025 +0200|luci-app-ttyd: enable includeips for interface selection
-5be4cd129c|Paul Donald|Mon Apr 7 20:15:28 2025 +0200|luci-base: CBIDeviceSelect includes each device IP when includeips=true
-27ebe8b662|Paul Donald|Sun Apr 6 22:22:59 2025 +0200|luci-mod-network: give wireless.js ES2016 treatment and refactor
-f2bd0ed4a7|Hosted Weblate|Sun Apr 6 17:40:55 2025 +0200|Translated using Weblate (Chinese (Traditional Han script))
-e6556e97fb|Khachatryan Karen|Fri Apr 4 18:10:10 2025 +0300|luci-app-antiblock: Gateway selection bug fixed 1) Changed from "widgets.NetworkSelect" to "widgets.DeviceSelect"
+2e79bb11f5|Tianling Shen|Tue Apr 15 19:47:57 2025 +0800|Merge Official Source
+f822d31221|Hosted Weblate|Tue Apr 15 05:25:44 2025 +0200|Translated using Weblate (Chinese (Traditional Han script))
+97d6b5c5ee|Jyn|Mon Apr 14 14:43:51 2025 +0700|luci-theme-openwrt: zone-forwards wrap
+d23bbd896b|Jyn|Mon Apr 14 14:43:13 2025 +0700|luci-theme-openwrt-2020: zone-forwards wrap
+50677f9de5|Jyn|Mon Apr 14 14:41:59 2025 +0700|luci-theme-material: zone-forwards wrap
+8f61f1616a|Jyn|Mon Apr 14 14:40:40 2025 +0700|luci-theme-bootstrap: zone-forwards wrap
+f6f82b52eb|Oleg S|Mon Apr 14 16:08:45 2025 +0300|luci-base: package update based cache-busting string
 </details>
