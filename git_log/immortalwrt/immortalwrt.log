@@ -2,12 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-55f9aa693a|Tianling Shen|Tue Apr 15 16:30:21 2025 +0800|rockchip: add phy leds setup script
-fd2b54a16b|Tianling Shen|Tue Apr 15 13:40:15 2025 +0800|Merge Official Source
-d36e763056|Tianling Shen|Tue Apr 15 13:34:10 2025 +0800|rockchip: change to use upstream driver for rtl8111
-e086bb951c|Chukun Pan|Tue Mar 4 23:18:38 2025 +0800|kernel: add missing submenu for diag modules
-bed637d9d3|Christian Marangi|Sat Apr 12 10:52:04 2025 +0200|armsr: drop GC sections ARMv7 patch
-7843f21c51|Christian Marangi|Sat Apr 12 01:01:43 2025 +0200|generic: replace ARM gc sections patch with upstream version
-ff802ccc44|Christian Marangi|Sat Apr 12 00:58:19 2025 +0200|generic: replace SFP ignore TX FAULT with upstream version
-f63d64ede0|Christian Marangi|Sat Apr 12 00:31:58 2025 +0200|generic: move patch from pending to backport
+c25b909304|Tianling Shen|Wed Apr 16 11:53:43 2025 +0800|Merge Official Source
+71446d8052|Christian Marangi|Tue Apr 15 23:21:19 2025 +0200|generic: fix broken ARM gc sections patch
+87cb0446b7|Christian Marangi|Tue Apr 15 20:04:35 2025 +0200|generic: fix broken TCP fraglist GRO patch
+f98ee3bbab|Christian Marangi|Mon Apr 14 15:30:05 2025 +0200|generic: drop redundant ATS SFP GT-T quirk patch
+e17cbd0488|Robert Marko|Tue Apr 15 13:50:12 2025 +0200|ipq-wifi: update to Git HEAD (2025-04-15)
 </details>

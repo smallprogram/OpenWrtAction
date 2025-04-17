@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+857ea0e|lwb1978|Thu Apr 17 02:54:59 2025 +0800|luci: fix iptables port rule limit (>15) & optimize
+</details>

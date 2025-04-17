@@ -2,8 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-71446d8052|Christian Marangi|Tue Apr 15 23:21:19 2025 +0200|generic: fix broken ARM gc sections patch
-87cb0446b7|Christian Marangi|Tue Apr 15 20:04:35 2025 +0200|generic: fix broken TCP fraglist GRO patch
-f98ee3bbab|Christian Marangi|Mon Apr 14 15:30:05 2025 +0200|generic: drop redundant ATS SFP GT-T quirk patch
-e17cbd0488|Robert Marko|Tue Apr 15 13:50:12 2025 +0200|ipq-wifi: update to Git HEAD (2025-04-15)
+d3bb23946e|Georgi Valkov|Mon Apr 14 16:07:25 2025 +0300|toolchain: gcc: fix build error with Xcode 16.3
+dfb8115d0c|Georgi Valkov|Mon Apr 14 15:28:23 2025 +0300|toolchain: gdb: fix build error with Xcode 16.3
+8c141e53d7|Robert Marko|Wed Apr 16 11:42:54 2025 +0200|tools: m4: set -std=gnu17
 </details>

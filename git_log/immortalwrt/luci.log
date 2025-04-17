@@ -2,11 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2e79bb11f5|Tianling Shen|Tue Apr 15 19:47:57 2025 +0800|Merge Official Source
-f822d31221|Hosted Weblate|Tue Apr 15 05:25:44 2025 +0200|Translated using Weblate (Chinese (Traditional Han script))
-97d6b5c5ee|Jyn|Mon Apr 14 14:43:51 2025 +0700|luci-theme-openwrt: zone-forwards wrap
-d23bbd896b|Jyn|Mon Apr 14 14:43:13 2025 +0700|luci-theme-openwrt-2020: zone-forwards wrap
-50677f9de5|Jyn|Mon Apr 14 14:41:59 2025 +0700|luci-theme-material: zone-forwards wrap
-8f61f1616a|Jyn|Mon Apr 14 14:40:40 2025 +0700|luci-theme-bootstrap: zone-forwards wrap
-f6f82b52eb|Oleg S|Mon Apr 14 16:08:45 2025 +0300|luci-base: package update based cache-busting string
+c4344d487c|Tianling Shen|Wed Apr 16 19:22:23 2025 +0800|luci-app-rustdesk-server: adapt latest config
 </details>

@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ebbde708c|aiamadeus|Tue Apr 15 19:18:16 2025 +0800|uboot-rockchip: bump to 2025.04
+f9b122225|Linus Walleij|Wed Apr 2 23:10:39 2025 +0200|kernel: modules: Fix RTL8366RB title
+0bc87353e|coolsnowwolf|Wed Apr 16 12:11:08 2025 +0800|Version update to R25.4.145
 </details>

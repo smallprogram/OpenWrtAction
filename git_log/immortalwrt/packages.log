@@ -2,12 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-80777b689|Tianling Shen|Wed Apr 16 01:09:49 2025 +0800|qBittorrent-Enhanced-Edition: fix build with Qt 6.9
-309678410|Tianling Shen|Tue Apr 15 19:45:47 2025 +0800|Merge Official Source
-87ed50984|Tianling Shen|Tue Apr 15 19:42:45 2025 +0800|cloudflared: Update to 2025.4.0
-1d73b25ed|Tianling Shen|Tue Apr 15 19:42:31 2025 +0800|v2ray-geodata: Update to latest version
-6f869c6ce|Tianling Shen|Tue Apr 15 19:41:59 2025 +0800|v2ray-core: Update to 5.29.3
-151156c9c|John Audia|Fri Apr 11 14:44:07 2025 -0400|htop: update to 3.4.1
-1fc56e79d|Tianling Shen|Mon Apr 14 15:19:44 2025 +0800|libcbor: disable sanitize by default
-4803944c5|Petr Štetiar|Mon Apr 14 04:20:36 2025 +0000|libarchive: bump to 3.7.9 fixing CVE-2025-25724, CVE-2025-1632, CVE-2024-57970
+90d066c96|MkQtS|Mon Apr 14 22:11:13 2025 +0800|sing-box: update to 1.11.7
 </details>

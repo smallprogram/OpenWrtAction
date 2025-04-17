@@ -2,9 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9c557d206|Wesley Gimenes|Tue Apr 15 13:15:50 2025 -0300|netbird: update to 0.41.2
-4dee0fc39|Wesley Gimenes|Tue Apr 15 09:56:28 2025 -0300|netbird: update to 0.41.1
-87ed50984|Tianling Shen|Tue Apr 15 19:42:45 2025 +0800|cloudflared: Update to 2025.4.0
-1d73b25ed|Tianling Shen|Tue Apr 15 19:42:31 2025 +0800|v2ray-geodata: Update to latest version
-6f869c6ce|Tianling Shen|Tue Apr 15 19:41:59 2025 +0800|v2ray-core: Update to 5.29.3
+3e9999106|Dirk Brenken|Wed Apr 16 21:36:47 2025 +0200|adblock: update 4.4.0-3
+7b2daf0f0|George Sapkin|Sun Apr 13 06:25:27 2025 +0300|external-protocol: add missing ip dependency
+e076de270|George Sapkin|Mon Apr 14 19:25:18 2025 +0300|syncthing: bump to 1.29.5
+e23dceaf4|George Sapkin|Tue Apr 1 11:45:00 2025 +0300|syncthing: bump to 1.29.4
+d7525fca4|George Sapkin|Wed Mar 12 13:56:00 2025 +0200|syncthing: bump to 1.29.3
+343f1151f|John Audia|Fri Apr 11 10:25:58 2025 -0400|lxc: update to 6.0.4
+0ec5c1e1a|John Audia|Sat Apr 12 15:38:46 2025 -0400|openssh: bump to 10.0p1
+8c49ed8ad|George Sapkin|Mon Apr 14 18:11:23 2025 +0300|yt-dlp: bump to 2025.03.31
+303f7973f|George Sapkin|Mon Apr 14 23:17:08 2025 +0300|yt-dlp: assign PKG_CPE_ID
+afe9935ff|George Sapkin|Mon Apr 14 23:09:38 2025 +0300|yt-dlp: add CI version check
+df9ba1857|Tianling Shen|Wed Apr 16 17:25:00 2025 +0800|librespeed-go: add missing conffiles
+71f596840|Stan Grishin|Mon Apr 14 23:50:38 2025 +0000|adblock-fast: bugfixes: empty allow-lists, support for swap
 </details>
