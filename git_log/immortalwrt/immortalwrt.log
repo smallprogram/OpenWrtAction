@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c25b909304|Tianling Shen|Wed Apr 16 11:53:43 2025 +0800|Merge Official Source
-71446d8052|Christian Marangi|Tue Apr 15 23:21:19 2025 +0200|generic: fix broken ARM gc sections patch
-87cb0446b7|Christian Marangi|Tue Apr 15 20:04:35 2025 +0200|generic: fix broken TCP fraglist GRO patch
-f98ee3bbab|Christian Marangi|Mon Apr 14 15:30:05 2025 +0200|generic: drop redundant ATS SFP GT-T quirk patch
-e17cbd0488|Robert Marko|Tue Apr 15 13:50:12 2025 +0200|ipq-wifi: update to Git HEAD (2025-04-15)
+6a921f15b8|Tianling Shen|Thu Apr 17 17:30:01 2025 +0800|ramips: add support for Huasifei WHF283
 </details>

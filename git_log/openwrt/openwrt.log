@@ -2,7 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d3bb23946e|Georgi Valkov|Mon Apr 14 16:07:25 2025 +0300|toolchain: gcc: fix build error with Xcode 16.3
-dfb8115d0c|Georgi Valkov|Mon Apr 14 15:28:23 2025 +0300|toolchain: gdb: fix build error with Xcode 16.3
-8c141e53d7|Robert Marko|Wed Apr 16 11:42:54 2025 +0200|tools: m4: set -std=gnu17
+a06ed856bb|Robert Marko|Wed Apr 16 15:37:59 2025 +0200|gdb: update to 16.2
+2eb7e4bf61|Jakub Łabuz|Fri Apr 11 18:33:49 2025 +0200|comgt-ncm: fix modem manufacturer detection
+5d26507a73|INAGAKI Hiroshi|Thu Jan 9 22:36:36 2025 +0900|uboot-ath79: update to v2025.04
+31800db91d|Robert Marko|Wed Apr 16 14:04:26 2025 +0200|tools: gmp: fix compilation with GCC15
+f165dd2f78|Robert Marko|Wed Apr 16 13:59:14 2025 +0200|tools: elfutils: set -std=gnu17
+c5041094ba|Robert Marko|Wed Apr 16 13:56:22 2025 +0200|tools: cpio: fix compilation with GCC15
 </details>

@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f9b122225|Linus Walleij|Wed Apr 2 23:10:39 2025 +0200|kernel: modules: Fix RTL8366RB title
-0bc87353e|coolsnowwolf|Wed Apr 16 12:11:08 2025 +0800|Version update to R25.4.145
+90e32a97a|coolsnowwolf|Fri Apr 4 23:15:26 2025 +0800|uboot-rockchip: fixes rk3399 support
 </details>
