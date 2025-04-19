@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-589debf53|Ryan Press|Wed Apr 16 17:06:59 2025 -0700|libmbim: bump to 1.32.0
-bd8d110e5|Ryan Press|Wed Apr 16 17:09:05 2025 -0700|libqmi: bump to 1.36.0
-3e2576c54|Eric Fahlgren|Wed Apr 16 18:55:56 2025 -0700|owut: update to 2025.04.08
+bed8c8ae3|Paul Donald|Fri Apr 11 15:46:21 2025 +0200|ddns-scripts: bump package release
+9f3d6fed2|Paul Donald|Fri Apr 11 16:27:14 2025 +0200|ddns-scripts: fix daemon to reload instead of kill
+081f1856a|Paul Donald|Fri Apr 11 16:18:59 2025 +0200|ddns-scripts: fix daemon start - background the script
+939939bce|Ryan Press|Wed Apr 16 11:52:24 2025 -0700|modemmanager: bump to 1.24.0
 </details>
