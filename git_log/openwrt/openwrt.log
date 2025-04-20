@@ -2,16 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8ffb3b2829|Mantas Pucka|Wed Apr 16 16:47:30 2025 +0300|mac80211: ath12k: fix regdb parsing for 6GHz
-903566c2d6|Mantas Pucka|Wed Apr 16 17:05:23 2025 +0300|mac80211: refresh patches
-891c8244f2|Robert Marko|Fri Apr 18 12:40:50 2025 +0200|jsonfilter: update to Git HEAD (2025-04-18)
-447cd674b9|Thomas Weißschuh|Mon Apr 14 23:39:43 2025 +0200|util-linux: update to v2.41
-7bbb78c622|Thomas Weißschuh|Mon Apr 14 22:34:53 2025 +0200|tools: util-linux: update to v2.41
-907cb88e10|Sebastian Schaper|Sat Nov 2 19:28:18 2024 +0100|mediatek: filogic: add support for WAVLINK WL-WN573HX3
-1227e5f54f|Simonas Tamošaitis|Mon Mar 31 18:30:07 2025 +0300|ramips: mt76x8: add support for Teltonika RUT200
-11189ee7fb|Simonas Tamošaitis|Fri Mar 14 15:42:07 2025 +0200|ramips: mt76x8: add support for Teltonika RUT241
-0ee1ede25a|David Bauer|Mon Dec 11 14:46:12 2023 +0100|build: include size-limits to device-metadata
-775523f628|Rick Mac Gillis|Wed Mar 19 19:38:09 2025 -0700|ramips: add support for Mofi 5500
-ffaaae4320|Robert Marko|Thu Apr 17 13:20:06 2025 +0200|uboot-tools: remove uneeded syncconfig
-e6c6351976|Robert Marko|Thu Apr 17 13:12:17 2025 +0200|uboot-tools: Honor the global verbose flag
+963d320086|Thomas Richard|Wed Feb 26 10:46:30 2025 +0100|stm32: Add kmod-stm32-thermal
+7ad335e56e|Thomas Richard|Wed Feb 26 10:33:58 2025 +0100|stm32: sort kernel module packages in alphabetical order
+ef38ea7e34|Thomas Richard|Tue Jan 14 19:51:05 2025 +0100|stm32: add missing SUBMENU for kmod-phy-stm32-usbphyc and kmod-stm32-timers
+19d5619479|Thomas Richard|Wed Jan 15 08:28:47 2025 +0100|stm32: add STM32MP157C-DK2 support
+2076f44134|Thomas Richard|Tue Jan 14 19:58:46 2025 +0100|murata-nvram: add symlink for STM32MP157C-DK2
+af585cfcfe|Thomas Richard|Wed Jan 15 08:28:07 2025 +0100|arm-trusted-firmware-stm32: add STM32MP157C-DK2 support
+01fc5fadab|Thomas Richard|Wed Jan 15 08:27:53 2025 +0100|uboot-stm32: add STM32MP157C-DK2 support
+755e35f5bd|Thomas Richard|Wed Jan 15 08:27:44 2025 +0100|optee-os-stm32: add STM32MP157C-DK2 support
+355866fc11|Mieczyslaw Nalewaj|Fri Apr 18 12:24:54 2025 +0200|generic: move TCP fraglist GRO patch to separate file in pending
+b77e6cd627|Georgi Valkov|Fri Apr 18 16:37:33 2025 +0300|generic: fix PATH_MAX macro redefined in exec-cmd.c on macOS 15.4
 </details>
