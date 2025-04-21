@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-519c7fcf9|Dirk Brenken|Sat Apr 19 20:00:34 2025 +0200|adblock: update 4.4.1-1
+1de23c1c1|Rikki Vizcarra|Tue Mar 25 05:41:25 2025 +0800|ddns-script: Change CURL call and redirect output in update_porkbun_v3
+b093eea60|Mieczyslaw Nalewaj|Sun Apr 20 18:29:30 2025 +0200|xtables-addons: bump to 3.27
+6ade11fc3|Stephen Howell|Thu Apr 17 18:11:50 2025 +0100|realtek-poe: Build for all targets
 </details>

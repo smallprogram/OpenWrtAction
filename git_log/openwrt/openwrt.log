@@ -2,14 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-963d320086|Thomas Richard|Wed Feb 26 10:46:30 2025 +0100|stm32: Add kmod-stm32-thermal
-7ad335e56e|Thomas Richard|Wed Feb 26 10:33:58 2025 +0100|stm32: sort kernel module packages in alphabetical order
-ef38ea7e34|Thomas Richard|Tue Jan 14 19:51:05 2025 +0100|stm32: add missing SUBMENU for kmod-phy-stm32-usbphyc and kmod-stm32-timers
-19d5619479|Thomas Richard|Wed Jan 15 08:28:47 2025 +0100|stm32: add STM32MP157C-DK2 support
-2076f44134|Thomas Richard|Tue Jan 14 19:58:46 2025 +0100|murata-nvram: add symlink for STM32MP157C-DK2
-af585cfcfe|Thomas Richard|Wed Jan 15 08:28:07 2025 +0100|arm-trusted-firmware-stm32: add STM32MP157C-DK2 support
-01fc5fadab|Thomas Richard|Wed Jan 15 08:27:53 2025 +0100|uboot-stm32: add STM32MP157C-DK2 support
-755e35f5bd|Thomas Richard|Wed Jan 15 08:27:44 2025 +0100|optee-os-stm32: add STM32MP157C-DK2 support
-355866fc11|Mieczyslaw Nalewaj|Fri Apr 18 12:24:54 2025 +0200|generic: move TCP fraglist GRO patch to separate file in pending
-b77e6cd627|Georgi Valkov|Fri Apr 18 16:37:33 2025 +0300|generic: fix PATH_MAX macro redefined in exec-cmd.c on macOS 15.4
+c3b8108a2b|Olgun Demir|Sun Apr 20 07:04:33 2025 +0200|ramips: Add support for Xiaomi MiWiFi 3A
+b96e790419|Mieczyslaw Nalewaj|Sat Apr 19 23:37:57 2025 +0200|util-linux: add include linux/unistd.h patch
+9099721fb4|David Bauer|Sun Apr 20 16:48:51 2025 +0200|uqmi: update to latest HEAD
+387b49d89a|David Bauer|Sat Apr 19 14:41:37 2025 +0200|netifd dhcp: send DHCP client ID by default
+3307fe8ee4|Scott Mercer|Sat Mar 22 12:46:18 2025 -0400|qualcommax: ipq50xx: add support for GL.iNET GL-B3000 Add support for GL.iNET (AX3000) B3000.
 </details>

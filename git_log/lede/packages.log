@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2c7bdeb2|小尨|Sat Apr 19 16:00:06 2025 +0800|docker: update all packages to 28.0.4 (#925)
+05c98833|coolsnowwolf|Mon Apr 21 03:06:15 2025 +0800|Merge pull request #926 from xiaotan8/master
+6d7dccb5|coolsnowwolf|Mon Apr 21 02:54:37 2025 +0800|clouddrive2: add clouddrive2 package
+7561b0aa|xiaotan8|Sun Apr 20 13:05:49 2025 +0800|Update Makefile
 </details>

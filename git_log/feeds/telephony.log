@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2a1b0e1|Jiri Slachta|Sat Apr 19 19:04:39 2025 +0200|Merge pull request #893 from systemcrash/kamailio
-40ddf03|Paul Donald|Wed Apr 2 23:09:47 2025 +0200|kamailio: Kamailio 6.0.1
+27c3664|Jiri Slachta|Sun Apr 20 18:39:30 2025 +0200|Merge pull request #894 from systemcrash/kamupd
+6c9fae7|Paul Donald|Sun Apr 20 03:56:56 2025 +0200|kamailio: Kamailio 6.0.1 uci config and init script fixes
 </details>
