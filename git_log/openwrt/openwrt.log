@@ -2,9 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c3b8108a2b|Olgun Demir|Sun Apr 20 07:04:33 2025 +0200|ramips: Add support for Xiaomi MiWiFi 3A
-b96e790419|Mieczyslaw Nalewaj|Sat Apr 19 23:37:57 2025 +0200|util-linux: add include linux/unistd.h patch
-9099721fb4|David Bauer|Sun Apr 20 16:48:51 2025 +0200|uqmi: update to latest HEAD
-387b49d89a|David Bauer|Sat Apr 19 14:41:37 2025 +0200|netifd dhcp: send DHCP client ID by default
-3307fe8ee4|Scott Mercer|Sat Mar 22 12:46:18 2025 -0400|qualcommax: ipq50xx: add support for GL.iNET GL-B3000 Add support for GL.iNET (AX3000) B3000.
+320cdff263|Scott Mercer|Mon Apr 21 13:12:37 2025 -0400|qualcommax: ipq5018: gl-b3000: fix rootfs_size in bootscript
+f45df2167b|Russell Senior|Wed Apr 2 05:47:29 2025 -0700|tools/patch: bump version to v2.8
+493b0cd817|Daniel Golle|Mon Apr 21 19:04:45 2025 +0100|mediatek: mt7623: validate uImage.FIT
+7ea0f647b9|Daniel Golle|Mon Apr 21 19:03:58 2025 +0100|mediatek: mt7622: validate uImage.FIT
+29ec74b8c7|Daniel Golle|Sat Mar 29 05:09:09 2025 +0000|treewide: validate unified uImage.FIT images before flashing
+5175d0a623|Daniel Golle|Mon Mar 31 00:32:50 2025 +0100|base-files: allow platform_check_image to prevent --force
+370a9d5586|Daniel Golle|Sat Apr 19 03:02:12 2025 +0100|mediatek: filogic: add missing boards to platform_check_image
+e567f7b617|Robert Marko|Mon Apr 21 12:33:56 2025 +0200|apk: backport fix for GCC15 with LTO
+c592afed4d|Sam Hegarty|Sun Apr 20 21:16:37 2025 +1200|rockchip: explicitly specify pine64_rockpro64 supported devices
+6782d0e66f|George Moussalem|Sun Apr 20 15:22:09 2025 +0400|arm64: dts: qcom: ipq5018: add #clock-cells to GE Phy
+97f09fa25e|Scott Mercer|Mon Apr 21 05:38:14 2025 -0400|qualcommax: ipq5018: gl-b3000: fix uboot support
 </details>
