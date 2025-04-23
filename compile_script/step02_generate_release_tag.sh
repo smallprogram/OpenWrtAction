@@ -48,8 +48,13 @@ for platform in "${selected_platforms[@]}"; do
     # Extract the KERNEL_PATCHVER value from the Makefile
     kernel=$(grep -oP 'KERNEL_PATCHVER:=\K[^ ]+' "$GITHUB_WORKSPACE/openwrt/target/linux/$target_board/Makefile")
 
+
     # Get the kernel version from the corresponding kernel file
-    kernel_version=$(sed -n '2p' "$GITHUB_WORKSPACE/openwrt/include/kernel-$kernel" | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')
+    if [[ "$source_code_platform" == "openwrt" ]]; then
+      kernel_version=$(sed -n '2p' "$GITHUB_WORKSPACE/openwrt/target/linux/generic/kernel-$kernel" | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')
+    else
+      kernel_version=$(sed -n '2p' "$GITHUB_WORKSPACE/openwrt/include/kernel-$kernel" | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')
+    fi
 
 
     echo "  <tr>">>release_$source_code_platform.txt
