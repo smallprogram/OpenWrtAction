@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-56dc673f7|Seo Suchan|Sun Feb 18 08:58:54 2024 +0900|ca-certificates: update to version 20240203
+2d7485be8|coolsnowwolf|Wed Apr 23 00:18:52 2025 +0800|kernel: bump 6.12 to 6.12.24
+e0568c7fc|coolsnowwolf|Wed Apr 23 00:17:23 2025 +0800|ca-certificates: update to version 20250419
+0fce46e74|Zoltan HERPAI|Mon Feb 24 12:18:01 2025 +0000|include: move generic riscv64 ISA to rv64gc
 </details>

@@ -1,6 +1,0 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-d82729754|Liangbin Lian|Mon Apr 21 14:19:19 2025 +0800|transmission: add syscalls to seccomp filter
-</details>

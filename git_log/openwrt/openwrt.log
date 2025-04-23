@@ -2,15 +2,24 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-320cdff263|Scott Mercer|Mon Apr 21 13:12:37 2025 -0400|qualcommax: ipq5018: gl-b3000: fix rootfs_size in bootscript
-f45df2167b|Russell Senior|Wed Apr 2 05:47:29 2025 -0700|tools/patch: bump version to v2.8
-493b0cd817|Daniel Golle|Mon Apr 21 19:04:45 2025 +0100|mediatek: mt7623: validate uImage.FIT
-7ea0f647b9|Daniel Golle|Mon Apr 21 19:03:58 2025 +0100|mediatek: mt7622: validate uImage.FIT
-29ec74b8c7|Daniel Golle|Sat Mar 29 05:09:09 2025 +0000|treewide: validate unified uImage.FIT images before flashing
-5175d0a623|Daniel Golle|Mon Mar 31 00:32:50 2025 +0100|base-files: allow platform_check_image to prevent --force
-370a9d5586|Daniel Golle|Sat Apr 19 03:02:12 2025 +0100|mediatek: filogic: add missing boards to platform_check_image
-e567f7b617|Robert Marko|Mon Apr 21 12:33:56 2025 +0200|apk: backport fix for GCC15 with LTO
-c592afed4d|Sam Hegarty|Sun Apr 20 21:16:37 2025 +1200|rockchip: explicitly specify pine64_rockpro64 supported devices
-6782d0e66f|George Moussalem|Sun Apr 20 15:22:09 2025 +0400|arm64: dts: qcom: ipq5018: add #clock-cells to GE Phy
-97f09fa25e|Scott Mercer|Mon Apr 21 05:38:14 2025 -0400|qualcommax: ipq5018: gl-b3000: fix uboot support
+d89f5f3ab0|Hugo Monteiro|Wed Mar 20 23:11:47 2024 +0000|ramips: mt7620: Add support for the devolo WiFi Repeater ac (MT 2767, 2779)
+5a3b9d88f1|Robert Senderek|Wed Feb 19 23:24:11 2025 +0100|lantiq: Improve support for LED's fritz736x
+3b7d72bc2e|INAGAKI Hiroshi|Tue Feb 11 00:34:29 2025 +0900|qualcommax: add support for ELECOM WRC-X3000GS2
+fc3ff2af0c|INAGAKI Hiroshi|Fri Feb 14 18:19:58 2025 +0900|qualcommax: allow overriding ECC strength for qpic-snand
+70b5252265|INAGAKI Hiroshi|Sat Feb 15 09:16:49 2025 +0900|uboot-envtools: ipq50xx: add support for ELECOM WRC-X3000GS2
+c35b109c52|Robert Marko|Tue Apr 22 20:56:25 2025 +0200|ipq-wifi: update to Git HEAD (2025-04-22)
+8865dadea7|Christian Marangi|Sat Apr 19 14:54:23 2025 +0200|kernel: move kernel version files to linux/generic directory
+45743a3637|Mieczyslaw Nalewaj|Sat Apr 19 12:23:14 2025 +0200|ath79: convert driver to .remove_new
+559ca4eaa5|Mieczyslaw Nalewaj|Sat Apr 19 12:17:41 2025 +0200|bmips: convert driver to .remove_new
+0adbac6c17|Mieczyslaw Nalewaj|Sat Apr 19 12:14:24 2025 +0200|mediatek: convert driver to .remove_new
+8de9174816|Mieczyslaw Nalewaj|Sun Apr 13 23:58:40 2025 +0200|ramips: convert driver to .remove_new
+5fcc57cca6|Coia Prant|Sat Apr 19 14:17:38 2025 +0800|kernel: modules: add HiNIC support
+cc94c95bad|Stijn Tintel|Mon Apr 14 20:19:21 2025 +0300|uboot-rockchip: bump to 2025.04
+7673a165a9|Álvaro Fernández Rojas|Tue Apr 22 14:39:05 2025 +0200|generic: 6.6: backport upstream v6.15 Realtek PHY patches
+36623119b3|Álvaro Fernández Rojas|Tue Apr 22 14:36:49 2025 +0200|generic: 6.6: backport upstream v6.15 r8169 patches
+f65c44f67f|Álvaro Fernández Rojas|Tue Apr 22 12:54:16 2025 +0200|generic: backport pmdomain dummy release patch
+8da24b1109|jonathan brophy|Wed Apr 2 23:43:43 2025 +1300|Qualcommax: IPQ807x: Add support for TP-Link Deco X80-5G
+6180724737|jonathan brophy|Wed Apr 2 23:36:50 2025 +1300|Qualcommax: IPQ807x: update preinit factory partition mount script
+269f251ba6|Robert Marko|Mon Apr 21 13:23:20 2025 +0200|tools: xz: update to 5.8.1
+5c83301107|Antonio Flores|Mon Apr 21 10:14:54 2025 -0400|rockchip: fix the SD card detection on NanoPi R6C/R6S
 </details>

@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e05852d9cf|Paul Donald|Mon Apr 21 23:31:51 2025 +0200|luci-app-lldpd: fix 'redeclaration of s' error
-68082d24e6|Paul Donald|Mon Apr 21 21:29:12 2025 +0200|luci-base: spell fix
-16beffda15|Paul Donald|Sat Apr 19 20:45:11 2025 +0200|luci-mod-status: add log filtering to syslog tab
-b0b22de571|Hannu Nyman|Mon Apr 21 22:11:19 2025 +0300|treewide: Fix weblate conflicts
-71c33ad953|Hosted Weblate|Sat Apr 19 13:06:43 2025 +0200|Translated using Weblate (Czech)
+d40c03ad8d|Eric Fahlgren|Sun Apr 20 16:12:00 2025 -0700|luci-app-attendedsysupgrade: change error reporting url
 </details>

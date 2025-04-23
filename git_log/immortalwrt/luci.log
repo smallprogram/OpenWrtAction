@@ -1,0 +1,9 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+17197bbfc9|Tianling Shen|Tue Apr 22 20:55:15 2025 +0800|luci-app-dufs: change datatype of hidden to DynamicList
+3a543db042|Tianling Shen|Tue Apr 22 18:39:13 2025 +0800|luci-app-ua2f: add disable_connmark option
+ac81e692ab|SakuraFallingMad|Sun Apr 13 09:24:15 2025 +0800|luci-app-passwall: bump to 25.4.20
+eb6b7efa5f|Tianling Shen|Tue Apr 22 15:39:34 2025 +0800|luci-app-ipsec-vpnd: bug fixes
+</details>

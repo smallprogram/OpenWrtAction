@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+1fba605|xiaorouji|Tue Apr 22 13:12:47 2025 +0800|luci: bump 25.4.22
+4ab06d3|xiaorouji|Tue Apr 22 13:10:49 2025 +0800|luci: fix Xray remote DNS detour
+</details>
