@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-61fc5c8f8|Tianling Shen|Tue Apr 22 23:02:34 2025 +0800|naiveproxy: Update to 135.0.7049.38-2
-ca1519ff9|Tianling Shen|Tue Apr 22 22:44:47 2025 +0800|gn: update to Git HEAD (2025-04-16)
-9e39f2d99|Tianling Shen|Tue Apr 22 22:44:16 2025 +0800|lua-neturl: Update to 1.2-1
-33f633693|Tianling Shen|Tue Apr 22 20:53:42 2025 +0800|dufs: convert hidden to list
-138c6d77d|FunnyGeekette|Mon Apr 21 23:31:59 2025 +0800|shadowsocks-rust: update to 1.23.1
+2e9644157|MkQtS|Tue Apr 22 22:51:00 2025 +0800|sing-box: update to 1.11.8
 </details>

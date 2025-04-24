@@ -2,15 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-65e4d16|zxl hhyccc|Tue Apr 22 21:18:47 2025 +0800|ipt2socks： Update to 1.1.4
-78bf5eb|zxl hhyccc|Tue Apr 22 21:13:39 2025 +0800|lua-neturl: Update to 1.2-1
-a0928f3|coolsnowwolf|Tue Apr 22 21:04:07 2025 +0800|Merge pull request #1711 from zxlhhyccc/custom
-7e0356e|coolsnowwolf|Tue Apr 22 21:02:50 2025 +0800|luci-app-ssr-plus: always including dns2tcp by default
-b52b2d4|zxlhhyccc|Tue Apr 22 20:57:29 2025 +0800|gn: Update to git HEAD
-31b1943|zxlhhyccc|Tue Apr 22 20:35:22 2025 +0800|chinadns-ng: update to 2025.03.27
-b7f38bc|zxlhhyccc|Tue Apr 22 20:30:04 2025 +0800|naiveproxy: Update to 135.0.7049.38-2
-996294d|zxl hhyccc|Tue Apr 22 20:24:14 2025 +0800|v2raya: Update to 2.2.6.7
-aa171cb|zxl hhyccc|Tue Apr 22 20:22:58 2025 +0800|shadowsocks-rust: update to 1.23.1
-678b15e|zxl hhyccc|Tue Apr 22 19:35:16 2025 +0800|Merge pull request #1710 from zxlhhyccc/custom
-533ae0b|zxlhhyccc|Sat Apr 19 23:35:37 2025 +0800|luci-app-ssr-plus: Add `chinadns-ng` proxy parse.
+9cfadfe|zxl hhyccc|Wed Apr 23 22:06:45 2025 +0800|Merge pull request #1713 from binge8/patch-3
+5a6eaeb|binge8|Wed Apr 23 13:22:08 2025 +0800|fix the hash
 </details>
