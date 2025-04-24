@@ -1,0 +1,11 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+711a19c4b|Maximilian Trüpschuch|Tue Apr 22 22:04:46 2025 +0200|jq: provide regex support in additional package jq-full
+5ab824b7f|Rye Sears|Thu Apr 10 15:36:31 2025 +0800|coremark: fix error when it was built in the second run
+29a6674cb|Daniel Golle|Sat Apr 19 19:36:54 2025 +0100|modemmanager: backport commit fixing crash with Fibocom mtk-7xx modems
+97b7ee181|Dobroslaw Kijowski|Fri Apr 18 08:55:11 2025 +0200|adguardhome: Add George Sapkin as maintainer
+babc163fe|Wei-Ting Yang|Tue Apr 22 15:45:08 2025 +0800|net-snmp: fix PRIdPTR macro undefined error
+533d32fac|David Bauer|Sun Jan 19 19:18:56 2025 +0100|poemgr: update to latest HEAD
+</details>

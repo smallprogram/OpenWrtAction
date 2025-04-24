@@ -2,24 +2,24 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d89f5f3ab0|Hugo Monteiro|Wed Mar 20 23:11:47 2024 +0000|ramips: mt7620: Add support for the devolo WiFi Repeater ac (MT 2767, 2779)
-5a3b9d88f1|Robert Senderek|Wed Feb 19 23:24:11 2025 +0100|lantiq: Improve support for LED's fritz736x
-3b7d72bc2e|INAGAKI Hiroshi|Tue Feb 11 00:34:29 2025 +0900|qualcommax: add support for ELECOM WRC-X3000GS2
-fc3ff2af0c|INAGAKI Hiroshi|Fri Feb 14 18:19:58 2025 +0900|qualcommax: allow overriding ECC strength for qpic-snand
-70b5252265|INAGAKI Hiroshi|Sat Feb 15 09:16:49 2025 +0900|uboot-envtools: ipq50xx: add support for ELECOM WRC-X3000GS2
-c35b109c52|Robert Marko|Tue Apr 22 20:56:25 2025 +0200|ipq-wifi: update to Git HEAD (2025-04-22)
-8865dadea7|Christian Marangi|Sat Apr 19 14:54:23 2025 +0200|kernel: move kernel version files to linux/generic directory
-45743a3637|Mieczyslaw Nalewaj|Sat Apr 19 12:23:14 2025 +0200|ath79: convert driver to .remove_new
-559ca4eaa5|Mieczyslaw Nalewaj|Sat Apr 19 12:17:41 2025 +0200|bmips: convert driver to .remove_new
-0adbac6c17|Mieczyslaw Nalewaj|Sat Apr 19 12:14:24 2025 +0200|mediatek: convert driver to .remove_new
-8de9174816|Mieczyslaw Nalewaj|Sun Apr 13 23:58:40 2025 +0200|ramips: convert driver to .remove_new
-5fcc57cca6|Coia Prant|Sat Apr 19 14:17:38 2025 +0800|kernel: modules: add HiNIC support
-cc94c95bad|Stijn Tintel|Mon Apr 14 20:19:21 2025 +0300|uboot-rockchip: bump to 2025.04
-7673a165a9|Álvaro Fernández Rojas|Tue Apr 22 14:39:05 2025 +0200|generic: 6.6: backport upstream v6.15 Realtek PHY patches
-36623119b3|Álvaro Fernández Rojas|Tue Apr 22 14:36:49 2025 +0200|generic: 6.6: backport upstream v6.15 r8169 patches
-f65c44f67f|Álvaro Fernández Rojas|Tue Apr 22 12:54:16 2025 +0200|generic: backport pmdomain dummy release patch
-8da24b1109|jonathan brophy|Wed Apr 2 23:43:43 2025 +1300|Qualcommax: IPQ807x: Add support for TP-Link Deco X80-5G
-6180724737|jonathan brophy|Wed Apr 2 23:36:50 2025 +1300|Qualcommax: IPQ807x: update preinit factory partition mount script
-269f251ba6|Robert Marko|Mon Apr 21 13:23:20 2025 +0200|tools: xz: update to 5.8.1
-5c83301107|Antonio Flores|Mon Apr 21 10:14:54 2025 -0400|rockchip: fix the SD card detection on NanoPi R6C/R6S
+3c65dc3678|Robert Marko|Wed Apr 23 14:18:48 2025 +0200|mold: dont allow on MacOS
+181909078f|Robert Marko|Wed Apr 23 13:07:13 2025 +0200|config: allow using mold on riscv64
+2f0f25fccf|Robert Marko|Wed Apr 23 12:46:30 2025 +0200|config: allow using mold on loongarch64
+fdb2531eb9|Robert Marko|Wed Apr 23 12:45:04 2025 +0200|mold: update to 2.37.1
+b9cb07eced|Weijie Gao|Wed Apr 23 02:15:09 2025 +0800|toolchain: mold: add PKG_NAME to Makefile
+410111a8da|Rosen Penev|Tue Apr 22 15:56:01 2025 -0700|mac80211: ath9k: remove wrong devm for request_irq
+d5c6452516|Rosen Penev|Tue Apr 22 19:09:56 2025 -0700|tools/squashfs3-lzma: fix compilation with GCC15
+0e05cd6a15|Mieczyslaw Nalewaj|Wed Apr 23 07:28:26 2025 +0200|bpf-headers: fix kernel-$(PKG_PATCHVER) location
+2c8fb6fa9f|Mieczyslaw Nalewaj|Tue Apr 22 22:59:58 2025 +0200|kernel: Fix patch folders setting for test kernel
+eea1d86482|Felix Fietkau|Wed Apr 23 10:04:22 2025 +0200|util-linux: change include order to fix build error
+cb3fc1aef9|Álvaro Fernández Rojas|Wed Apr 23 09:39:24 2025 +0200|kernel: r8168: add RSS variant
+7615de6ef0|Álvaro Fernández Rojas|Wed Apr 23 09:38:04 2025 +0200|kernel: r8127: rss: enable ENABLE_MULTIPLE_TX_QUEUE
+a3e51a3956|Álvaro Fernández Rojas|Wed Apr 23 09:37:43 2025 +0200|kernel: r8126: rss: enable ENABLE_MULTIPLE_TX_QUEUE
+d127963a46|Pavel Kubelun|Wed Apr 16 21:07:32 2025 +0300|kernel: r8125: rss: enable ENABLE_MULTIPLE_TX_QUEUE
+f99b39fd0c|Pavel Kubelun|Wed Apr 16 21:07:32 2025 +0300|kernel: r8125: disable ASPM
+b5680bd113|Álvaro Fernández Rojas|Wed Apr 23 09:20:43 2025 +0200|kernel: r8127: load module at boot time
+9bb151d0c6|Álvaro Fernández Rojas|Wed Apr 23 09:20:18 2025 +0200|kernel: r8126: load module at boot time
+ce9f539672|Álvaro Fernández Rojas|Wed Apr 23 09:18:22 2025 +0200|kernel: r8125: load module at boot time
+617961403c|Álvaro Fernández Rojas|Wed Apr 23 09:17:21 2025 +0200|kernel: r8168: load module at boot time
+7aeb837bf4|Álvaro Fernández Rojas|Wed Apr 23 09:11:51 2025 +0200|kernel: r8101: load module at boot time
 </details>

@@ -2,5 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d40c03ad8d|Eric Fahlgren|Sun Apr 20 16:12:00 2025 -0700|luci-app-attendedsysupgrade: change error reporting url
+f17ae7fd96|Paul Donald|Thu Apr 24 00:13:26 2025 +0200|luci-mod-network: widgets shall show devices that are online as online
+1f50dea160|Hosted Weblate|Wed Apr 23 23:04:05 2025 +0200|Translated using Weblate (Czech)
+e7ce4d2a1c|Paul Donald|Wed Apr 23 17:30:40 2025 +0200|luci-theme-openwrt: fix a few CSS errors
+91eed03a43|Dirk Brenken|Wed Apr 23 16:21:58 2025 +0200|Merge pull request #7741 from GithPK/patch-1
+1e3aa83b44|Paul Donald|Wed Apr 23 14:04:19 2025 +0200|luci-mod-network: wireless.js fixes
+aa6924cd4c|Paul Donald|Wed Apr 23 14:04:12 2025 +0200|luci-base: prevent tools.widgets.ZoneSelect tracebacks
+9180f2a762|Paul Donald|Wed Apr 23 14:21:40 2025 +0200|luci-theme-*: ES6 refactor
+9157254059|Paul Donald|Wed Apr 23 14:03:57 2025 +0200|luci-theme: fix some dynamic layout issues
+54192d3b36|Paul Donald|Wed Apr 23 14:03:50 2025 +0200|luci-app-ddns: Fix multiple IP display bug
+a288354e78|Paul Donald|Wed Apr 23 14:03:39 2025 +0200|luci-mod-network: widgets shall show devices that are online as online
+832680bb84|Paul Donald|Wed Apr 23 14:03:28 2025 +0200|luci-base: widgets shall show devices that are online as online
+05b8d9b1ee|PeterK|Wed Apr 23 12:14:38 2025 +0200|luci-app-banip: Trim() error fix.
 </details>
