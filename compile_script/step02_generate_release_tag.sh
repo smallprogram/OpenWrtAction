@@ -50,10 +50,10 @@ for platform in "${selected_platforms[@]}"; do
 
 
     # Get the kernel version from the corresponding kernel file
-    if [[ "$source_code_platform" == "openwrt" ]]; then
-      kernel_version=$(sed -n '2p' "$GITHUB_WORKSPACE/openwrt/target/linux/generic/kernel-$kernel" | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')
-    else
+    if [[ "$source_code_platform" == "lede" ]]; then
       kernel_version=$(sed -n '2p' "$GITHUB_WORKSPACE/openwrt/include/kernel-$kernel" | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')
+    else
+      kernel_version=$(sed -n '2p' "$GITHUB_WORKSPACE/openwrt/target/linux/generic/kernel-$kernel" | awk -F '-' '{print $2}' | awk -F ' =' '{print $1}')  
     fi
 
 
