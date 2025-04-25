@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-a3f4f1a|lwb1978|Wed Apr 23 17:11:41 2025 +0800|Revert "luci: optimize node list automatic detection delay"
-95bd09b|lwb1978|Wed Apr 23 17:11:03 2025 +0800|Revert "luci: optimize node list"
-</details>

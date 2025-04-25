@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f3c4b950a|coolsnowwolf|Tue Apr 22 23:18:02 2025 +0800|kernel: bump 6.12 to 6.12.24
-2d7485be8|coolsnowwolf|Wed Apr 23 00:18:52 2025 +0800|kernel: bump 6.12 to 6.12.24
+9e6f393b3|Shiji Yang|Fri Feb 21 21:12:23 2025 +0800|tools: zstd: update to 1.5.7
+88938fea9|Coia Prant|Sat Apr 19 14:17:38 2025 +0800|kernel: modules: add HiNIC support
+66d882cdb|=?UTF-8?q?=C3=81lvaro=20Fern=C3=A1ndez=20Rojas?=|Wed Apr 23 09:11:51 2025 +0200|kernel: load module at boot time
 </details>

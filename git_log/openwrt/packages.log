@@ -2,10 +2,25 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-711a19c4b|Maximilian Trüpschuch|Tue Apr 22 22:04:46 2025 +0200|jq: provide regex support in additional package jq-full
-5ab824b7f|Rye Sears|Thu Apr 10 15:36:31 2025 +0800|coremark: fix error when it was built in the second run
-29a6674cb|Daniel Golle|Sat Apr 19 19:36:54 2025 +0100|modemmanager: backport commit fixing crash with Fibocom mtk-7xx modems
-97b7ee181|Dobroslaw Kijowski|Fri Apr 18 08:55:11 2025 +0200|adguardhome: Add George Sapkin as maintainer
-babc163fe|Wei-Ting Yang|Tue Apr 22 15:45:08 2025 +0800|net-snmp: fix PRIdPTR macro undefined error
-533d32fac|David Bauer|Sun Jan 19 19:18:56 2025 +0100|poemgr: update to latest HEAD
+c6daef227|Will Mortensen|Sun Feb 9 09:20:16 2025 +0000|shairport-sync: add drift and ALSA mixer config options
+72b20db97|Vladimir Ermakov|Sat Feb 15 12:52:07 2025 +0000|qemu: update to 9.1.3
+1268618b4|Vladimir Ermakov|Fri Jan 17 18:44:02 2025 +0000|qemu: fix guest agent patch
+c1c47695a|Fabrice Fontaine|Wed Feb 26 18:40:02 2025 +0100|net/aria2: fix PKG_CPE_ID
+4faf09cfb|Fabrice Fontaine|Wed Feb 26 22:16:59 2025 +0100|net/openssh: fix PKG_CPE_ID
+769e8f9d2|Jianhui Zhao|Fri Apr 11 09:01:20 2025 +0800|lua: lua5.4 update to 5.4.7
+e4d8a0707|Jan Hák|Thu Apr 24 12:18:23 2025 +0200|liburcu: update to version 0.15.2
+800924c43|Tianling Shen|Tue Apr 22 21:52:38 2025 +0800|libtorrent-rasterbar: enable python package
+d6a058775|Tianling Shen|Tue Apr 22 21:05:37 2025 +0800|libtorrent-rasterbar: Update to 2.0.11
+da58fa1e0|George Sapkin|Wed Apr 23 14:53:46 2025 +0300|adguardhome: bump to 0.107.61
+7e9fa36cf|George Sapkin|Mon Apr 14 15:46:14 2025 +0300|adguardhome: bump to 0.107.60
+3d5ea7f92|George Sapkin|Fri Apr 11 18:18:25 2025 +0300|adguardhome: use committime instead of buildtime
+6746398cb|George Sapkin|Wed Apr 16 22:42:54 2025 +0300|yt-dlp: run CI test for the main package only
+7f0772c1a|Paul Donald|Mon Apr 7 16:01:46 2025 +0200|ttyd: update to 1.7.7
+79f86ceeb|Sandro Jäckel|Wed Apr 23 13:22:12 2025 +0200|tailscale: update to 1.82.5
+e1c57dc2c|Peter van Dijk|Mon Apr 7 14:14:59 2025 +0200|pdns-recursor: update to 5.2.2
+db051c6ad|Paul Donald|Sun Apr 20 14:22:44 2025 +0200|sqlite3: bump to 3.47.2
+5af23930d|Javier Marcet|Thu Apr 17 20:42:00 2025 +0200|docker-compose: Update to version 2.35.1
+2ac31acc5|Wesley Gimenes|Wed Apr 23 20:46:28 2025 -0300|netbird: update to 0.42.0
+2da44915c|Wesley Gimenes|Sat Apr 19 16:52:50 2025 -0300|netbird: update to 0.41.3
+83345c51f|Christian Lachner|Tue Apr 22 15:18:39 2025 +0200|haproxy: update to v3.0.10
 </details>

@@ -2,24 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3c65dc3678|Robert Marko|Wed Apr 23 14:18:48 2025 +0200|mold: dont allow on MacOS
-181909078f|Robert Marko|Wed Apr 23 13:07:13 2025 +0200|config: allow using mold on riscv64
-2f0f25fccf|Robert Marko|Wed Apr 23 12:46:30 2025 +0200|config: allow using mold on loongarch64
-fdb2531eb9|Robert Marko|Wed Apr 23 12:45:04 2025 +0200|mold: update to 2.37.1
-b9cb07eced|Weijie Gao|Wed Apr 23 02:15:09 2025 +0800|toolchain: mold: add PKG_NAME to Makefile
-410111a8da|Rosen Penev|Tue Apr 22 15:56:01 2025 -0700|mac80211: ath9k: remove wrong devm for request_irq
-d5c6452516|Rosen Penev|Tue Apr 22 19:09:56 2025 -0700|tools/squashfs3-lzma: fix compilation with GCC15
-0e05cd6a15|Mieczyslaw Nalewaj|Wed Apr 23 07:28:26 2025 +0200|bpf-headers: fix kernel-$(PKG_PATCHVER) location
-2c8fb6fa9f|Mieczyslaw Nalewaj|Tue Apr 22 22:59:58 2025 +0200|kernel: Fix patch folders setting for test kernel
-eea1d86482|Felix Fietkau|Wed Apr 23 10:04:22 2025 +0200|util-linux: change include order to fix build error
-cb3fc1aef9|Álvaro Fernández Rojas|Wed Apr 23 09:39:24 2025 +0200|kernel: r8168: add RSS variant
-7615de6ef0|Álvaro Fernández Rojas|Wed Apr 23 09:38:04 2025 +0200|kernel: r8127: rss: enable ENABLE_MULTIPLE_TX_QUEUE
-a3e51a3956|Álvaro Fernández Rojas|Wed Apr 23 09:37:43 2025 +0200|kernel: r8126: rss: enable ENABLE_MULTIPLE_TX_QUEUE
-d127963a46|Pavel Kubelun|Wed Apr 16 21:07:32 2025 +0300|kernel: r8125: rss: enable ENABLE_MULTIPLE_TX_QUEUE
-f99b39fd0c|Pavel Kubelun|Wed Apr 16 21:07:32 2025 +0300|kernel: r8125: disable ASPM
-b5680bd113|Álvaro Fernández Rojas|Wed Apr 23 09:20:43 2025 +0200|kernel: r8127: load module at boot time
-9bb151d0c6|Álvaro Fernández Rojas|Wed Apr 23 09:20:18 2025 +0200|kernel: r8126: load module at boot time
-ce9f539672|Álvaro Fernández Rojas|Wed Apr 23 09:18:22 2025 +0200|kernel: r8125: load module at boot time
-617961403c|Álvaro Fernández Rojas|Wed Apr 23 09:17:21 2025 +0200|kernel: r8168: load module at boot time
-7aeb837bf4|Álvaro Fernández Rojas|Wed Apr 23 09:11:51 2025 +0200|kernel: r8101: load module at boot time
+b0710e964d|Felix Fietkau|Thu Apr 24 14:22:34 2025 +0200|udebug: add missing dependencies
+27adf03f70|Daniel Golle|Thu Apr 24 06:43:59 2025 +0100|uboot-tools: validate all uImage.FIT sub-images
 </details>
