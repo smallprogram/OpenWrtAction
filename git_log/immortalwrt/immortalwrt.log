@@ -1,0 +1,18 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+3195a5c93a|Tianling Shen|Fri Apr 25 21:31:41 2025 +0800|Merge Official Source
+38b14a8308|Tianling Shen|Fri Apr 25 18:00:25 2025 +0800|lantiq: fix syntax error for fritz736x
+fc946b63a8|Tianling Shen|Fri Apr 25 19:12:17 2025 +0800|rockchip: enable hwRNG for rk3588 by default
+adad424e7f|Liangbin Lian|Fri Apr 25 19:08:07 2025 +0800|rockchip: hwrng: fix -EPROBE_DEFER not propagating upwards
+b61d5356a5|Tianling Shen|Fri Apr 25 19:01:29 2025 +0800|kernel: add missing Kconfig
+8f6f4cd764|Tianling Shen|Fri Apr 25 18:29:58 2025 +0800|uboot-rockchip: update include dtsi for guangmiao g4c
+aa6d245e39|INAGAKI Hiroshi|Fri Apr 25 19:00:42 2025 +0900|qualcommax: fix ECC strength of SPI-NAND flash on GL-iNet GL-B3000
+b0710e964d|Felix Fietkau|Thu Apr 24 14:22:34 2025 +0200|udebug: add missing dependencies
+27adf03f70|Daniel Golle|Thu Apr 24 06:43:59 2025 +0100|uboot-tools: validate all uImage.FIT sub-images
+3c65dc3678|Robert Marko|Wed Apr 23 14:18:48 2025 +0200|mold: dont allow on MacOS
+181909078f|Robert Marko|Wed Apr 23 13:07:13 2025 +0200|config: allow using mold on riscv64
+2f0f25fccf|Robert Marko|Wed Apr 23 12:46:30 2025 +0200|config: allow using mold on loongarch64
+fdb2531eb9|Robert Marko|Wed Apr 23 12:45:04 2025 +0200|mold: update to 2.37.1
+</details>

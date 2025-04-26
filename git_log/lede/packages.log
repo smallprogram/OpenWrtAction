@@ -1,8 +1,0 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-c7720add|coolsnowwolf|Thu Apr 24 20:19:26 2025 +0800|Merge pull request #928 from Internet1235/tailscale
-82ecbffa|Internet1235|Thu Apr 24 16:25:29 2025 +0800|clouddrive2: Fix PKG_HASH for armv7 (#930)
-03a28958|Internet1235|Tue Apr 22 12:30:35 2025 +0800|tailscale: Bump to 1.82.0
-</details>

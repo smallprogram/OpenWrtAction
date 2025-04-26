@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-815fbc019c|Hannu Nyman|Thu Apr 24 18:38:38 2025 +0300|treewide: Sync translations
-6c10900299|Hosted Weblate|Thu Apr 24 15:25:15 2025 +0200|Translated using Weblate (Persian)
+5af703ea01|Hosted Weblate|Fri Apr 25 19:47:34 2025 +0200|Translated using Weblate (Malay)
+1355a6fa25|Paul Donald|Fri Apr 25 17:17:51 2025 +0200|luci-base: override the load() function to return boolean for FlagValue
 </details>

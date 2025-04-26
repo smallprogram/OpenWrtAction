@@ -2,6 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b0710e964d|Felix Fietkau|Thu Apr 24 14:22:34 2025 +0200|udebug: add missing dependencies
-27adf03f70|Daniel Golle|Thu Apr 24 06:43:59 2025 +0100|uboot-tools: validate all uImage.FIT sub-images
+6b1d0ce88c|David Bauer|Fri Apr 25 21:40:39 2025 +0200|mediatek: add missing pipe
+30618d4239|David Bauer|Wed Apr 23 21:06:54 2025 +0200|mediatek: fix GL.iNet GL-MT2500 preinit interface
+50d9ca6e5a|Christoph Krapp|Mon Apr 14 20:47:56 2025 +0200|mediatek: filogic: add support for ASUS RT-AX52
+fdb6962f20|Mikhail Zhilkin|Sun Apr 13 07:02:53 2025 +0000|mediatek: add support for Routerich AX3000 v1
+f733442c02|Mikhail Zhilkin|Sun Apr 13 17:39:34 2025 +0000|mediatek: filogic: fix mistaken executable bit on dts file
+4710a1f125|Robert Marko|Fri Apr 25 15:45:23 2025 +0200|uboot-mvebu: rb5009: disable YAFFS
+38b14a8308|Tianling Shen|Fri Apr 25 18:00:25 2025 +0800|lantiq: fix syntax error for fritz736x
+aa6d245e39|INAGAKI Hiroshi|Fri Apr 25 19:00:42 2025 +0900|qualcommax: fix ECC strength of SPI-NAND flash on GL-iNet GL-B3000
 </details>

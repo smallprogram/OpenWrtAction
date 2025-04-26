@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9e6f393b3|Shiji Yang|Fri Feb 21 21:12:23 2025 +0800|tools: zstd: update to 1.5.7
-88938fea9|Coia Prant|Sat Apr 19 14:17:38 2025 +0800|kernel: modules: add HiNIC support
-66d882cdb|=?UTF-8?q?=C3=81lvaro=20Fern=C3=A1ndez=20Rojas?=|Wed Apr 23 09:11:51 2025 +0200|kernel: load module at boot time
+10874577a|coolsnowwolf|Fri Apr 25 22:01:26 2025 +0800|qualcommbe: sync with upstream
 </details>
