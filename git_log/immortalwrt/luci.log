@@ -1,0 +1,9 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0cc170de21|Tianling Shen|Sun Apr 27 01:19:41 2025 +0800|luci-app-zerotier: drop left-over config
+d243afd1aa|Tianling Shen|Sat Apr 26 22:56:01 2025 +0800|luci-app-zerotier: add default config path
+c1a3e0c61d|Tianling Shen|Sat Apr 26 21:54:17 2025 +0800|luci-theme-argon: Update to 2.4.2
+0edc2e3fb4|Tianling Shen|Sat Apr 26 21:47:20 2025 +0800|luci-app-zerotier: refactor code
+</details>
