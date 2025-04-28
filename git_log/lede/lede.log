@@ -1,7 +1,0 @@
-<details> <summary> <b>lede new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-c5bf506e2|coolsnowwolf|Sun Apr 27 04:49:12 2025 +0800|kernel: bump 6.x to latest HEAD
-923677a74|Christian Marangi|Wed Apr 9 19:41:37 2025 +0200|generic: move QCOM SPI NAND driver
-</details>

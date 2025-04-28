@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9073b48e96|Christian Marangi|Sat Apr 26 20:04:31 2025 +0200|generic: convert MTK PCS patch to .remove_new
-5501a502e4|Felix Fietkau|Sat Apr 26 19:10:54 2025 +0200|kernel: fix UDPv6 GSO segmentation with NAT
+f22d872c65|INAGAKI Hiroshi|Wed Apr 23 16:48:13 2025 +0900|qualcommax: ipq50xx: drop unused factory.ubi for ELECOM WRC-X3000GS2
 </details>
