@@ -1,0 +1,11 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5f22498d69|Tianling Shen|Mon Apr 28 18:40:36 2025 +0800|Merge Official Source
+f09c23fbc9|Rosen Penev|Sat Apr 26 15:54:02 2025 -0700|bcm47xx: old gpio wdt: use remove_new
+7ec83557d4|Rosen Penev|Sat Apr 26 16:16:46 2025 -0700|ltq-adsl: use remove_new for platform_device
+f22d872c65|INAGAKI Hiroshi|Wed Apr 23 16:48:13 2025 +0900|qualcommax: ipq50xx: drop unused factory.ubi for ELECOM WRC-X3000GS2
+9073b48e96|Christian Marangi|Sat Apr 26 20:04:31 2025 +0200|generic: convert MTK PCS patch to .remove_new
+5501a502e4|Felix Fietkau|Sat Apr 26 19:10:54 2025 +0200|kernel: fix UDPv6 GSO segmentation with NAT
+</details>

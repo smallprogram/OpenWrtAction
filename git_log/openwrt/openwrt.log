@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f22d872c65|INAGAKI Hiroshi|Wed Apr 23 16:48:13 2025 +0900|qualcommax: ipq50xx: drop unused factory.ubi for ELECOM WRC-X3000GS2
+f09c23fbc9|Rosen Penev|Sat Apr 26 15:54:02 2025 -0700|bcm47xx: old gpio wdt: use remove_new
+7ec83557d4|Rosen Penev|Sat Apr 26 16:16:46 2025 -0700|ltq-adsl: use remove_new for platform_device
 </details>

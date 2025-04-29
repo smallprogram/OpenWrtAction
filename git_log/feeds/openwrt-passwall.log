@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+fe45c9c|lwb1978|Mon Apr 28 16:27:15 2025 +0800|luci: fix some issues with adapt sing-box 1.12 dns
+a3a8977|lwb1978|Mon Apr 28 12:10:49 2025 +0800|luci: adapt sing-box 1.12 dns server formats
+</details>

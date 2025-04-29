@@ -2,12 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e7aa0272d|Kevin Locke|Sat Nov 30 14:28:31 2024 -0700|strongswan: swanctl: make overtime local
-62032567d|Kevin Locke|Sat Nov 30 14:23:08 2024 -0700|strongswan: swanctl: make send_cert local
-c1cfb36e5|Kevin Locke|Sat Nov 30 14:30:54 2024 -0700|strongswan: swanctl: Add support for encap
-adbf8ed9d|Daniel Golle|Sat Apr 26 04:30:53 2025 +0100|libp11: update to version 0.4.13
-33f9b3ab6|Daniel Golle|Sat Apr 26 04:20:24 2025 +0100|opensc: update to version 0.26.1
-6d2d552b1|Daniel Golle|Sat Apr 26 04:24:41 2025 +0100|ccid: update to version 1.6.2.
-ae8a28cf9|Daniel Golle|Sat Apr 26 04:18:25 2025 +0100|pcsc-tools: update to version 1.7.3
-0b824a864|Daniel Golle|Sat Apr 26 04:15:10 2025 +0100|pcsc-lite: update to version 2.3.3
+3585ddfc4|Carlos Miguel Ferreira|Fri Apr 25 15:49:34 2025 +0100|boost: Updates package to version 1.88.0 This commit updates boost to version 1.88.0
+b2d2ba8ae|George Sapkin|Thu Apr 24 16:40:38 2025 +0300|sqlite3: add CI version check
+7be9ae1b7|George Sapkin|Thu Apr 24 16:36:08 2025 +0300|sqlite3: use the upstream version as PKG_VERSION
+aebfd4979|George Sapkin|Wed Apr 23 14:20:58 2025 +0300|sqlite3: bump to 3.49.1
+c3692c601|Wesley Gimenes|Fri Apr 25 17:34:47 2025 -0300|netbird: update to 0.43.0
+a25bfb468|Jianhui Zhao|Sun Apr 27 15:51:35 2025 +0800|lua-eco: update to 3.9.0
+d60028116|Liangbin Lian|Mon Apr 21 16:17:00 2025 +0800|aria2: fix openssl legacy load failed
 </details>
