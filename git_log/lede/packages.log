@@ -1,0 +1,13 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+8423a020|coolsnowwolf|Tue Apr 29 18:02:58 2025 +0800|yaml: update to 0.2.5
+a0c9d78b|coolsnowwolf|Tue Apr 29 17:44:24 2025 +0800|Merge pull request #934 from Internet1235/adguardhome
+4d455109|coolsnowwolf|Tue Apr 29 17:44:08 2025 +0800|Merge pull request #933 from xiaotan8/master
+346ea3e3|coolsnowwolf|Tue Apr 29 17:43:48 2025 +0800|Merge pull request #932 from Internet1235/golang
+586bf1ba|Internet1235|Sun Apr 6 17:52:37 2025 +0800|golang: Update to 1.24.2
+bd1ee952|xiaotan8|Mon Apr 28 21:38:39 2025 +0800|sing-box: update to 1.11.9
+9b8d9b3d|xiaotan8|Mon Apr 28 21:36:26 2025 +0800|geoview: update to 0.1.9
+b7f3b583|Internet1235|Sun Apr 27 22:56:27 2025 +0800|adguardhome: Bump to 0.107.61
+</details>

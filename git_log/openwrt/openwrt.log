@@ -2,6 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f09c23fbc9|Rosen Penev|Sat Apr 26 15:54:02 2025 -0700|bcm47xx: old gpio wdt: use remove_new
-7ec83557d4|Rosen Penev|Sat Apr 26 16:16:46 2025 -0700|ltq-adsl: use remove_new for platform_device
+0f9af6dcd9|Christian Marangi|Tue Apr 29 18:55:19 2025 +0200|generic: drop extra-old-deprecated pending fix patch for sch codel
+31e56f0340|George Moussalem|Tue Apr 29 14:32:20 2025 +0400|qualcommax: ipq50xx: fix ipq5018 GE PHY and tidy up mdio nodes
+f84cac4654|Erik Servili|Mon Apr 28 03:39:23 2025 +0200|qualcommax: ipq60xx: LED mapping update for Netgear WAX610 and WAX610Y
+5c8301e800|Robert Marko|Fri Apr 25 15:02:24 2025 +0200|toolchain: gcc: switch default to 14
+ddae97e4d8|Shiji Yang|Tue Apr 29 18:16:29 2025 +0800|ramips: correct wifi driver packages for TP-Link MR200 v6
 </details>
