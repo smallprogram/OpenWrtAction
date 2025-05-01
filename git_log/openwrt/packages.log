@@ -2,11 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3585ddfc4|Carlos Miguel Ferreira|Fri Apr 25 15:49:34 2025 +0100|boost: Updates package to version 1.88.0 This commit updates boost to version 1.88.0
-b2d2ba8ae|George Sapkin|Thu Apr 24 16:40:38 2025 +0300|sqlite3: add CI version check
-7be9ae1b7|George Sapkin|Thu Apr 24 16:36:08 2025 +0300|sqlite3: use the upstream version as PKG_VERSION
-aebfd4979|George Sapkin|Wed Apr 23 14:20:58 2025 +0300|sqlite3: bump to 3.49.1
-c3692c601|Wesley Gimenes|Fri Apr 25 17:34:47 2025 -0300|netbird: update to 0.43.0
-a25bfb468|Jianhui Zhao|Sun Apr 27 15:51:35 2025 +0800|lua-eco: update to 3.9.0
-d60028116|Liangbin Lian|Mon Apr 21 16:17:00 2025 +0800|aria2: fix openssl legacy load failed
+a21eb339b|Stijn Tintel|Wed Apr 30 17:14:02 2025 +0300|keepalived: bump to 2.3.3
+abec21420|Tianling Shen|Wed Apr 30 18:34:53 2025 +0800|v2ray-core: Update to 5.30.0
+0e5cc7de5|Tianling Shen|Wed Apr 30 18:34:23 2025 +0800|btop: Update to 1.4.1
+9a3aef6f2|Tianling Shen|Wed Apr 30 18:34:12 2025 +0800|dnsproxy: Update to 0.75.3
+dcad31d88|Christian Korber|Wed Apr 30 11:28:16 2025 +0200|net-snmp: add system to trigger
+288836fe8|Rosen Penev|Tue Apr 29 15:37:55 2025 -0700|kea: update to 2.6.2
+9d12a9618|Rosen Penev|Tue Apr 29 15:21:32 2025 -0700|mariadb: fix liburing dependency
+8518af47e|Rosen Penev|Tue Apr 29 16:44:19 2025 -0700|pthsem: fix compilation with autoconf >= 2.71
+02c134e2b|Hannu Nyman|Wed Apr 30 08:18:21 2025 +0300|coreutils: Fix gcc14 compilation via std=c17
 </details>

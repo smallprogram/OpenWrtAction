@@ -2,39 +2,22 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5a6301e7a|Tianling Shen|Mon Apr 28 17:12:30 2025 +0800|Merge Official Source
-082498eb7|Interesting Gang|Mon Apr 28 14:10:44 2025 +0800|sing-box: Update to 1.11.9
-a25bfb468|Jianhui Zhao|Sun Apr 27 15:51:35 2025 +0800|lua-eco: update to 3.9.0
-d60028116|Liangbin Lian|Mon Apr 21 16:17:00 2025 +0800|aria2: fix openssl legacy load failed
-69d8f30fc|QiuSimons|Mon Apr 28 12:33:32 2025 +0800|zerotier: fix hotplug handling
-e7aa0272d|Kevin Locke|Sat Nov 30 14:28:31 2024 -0700|strongswan: swanctl: make overtime local
-62032567d|Kevin Locke|Sat Nov 30 14:23:08 2024 -0700|strongswan: swanctl: make send_cert local
-c1cfb36e5|Kevin Locke|Sat Nov 30 14:30:54 2024 -0700|strongswan: swanctl: Add support for encap
-adbf8ed9d|Daniel Golle|Sat Apr 26 04:30:53 2025 +0100|libp11: update to version 0.4.13
-33f9b3ab6|Daniel Golle|Sat Apr 26 04:20:24 2025 +0100|opensc: update to version 0.26.1
-6d2d552b1|Daniel Golle|Sat Apr 26 04:24:41 2025 +0100|ccid: update to version 1.6.2.
-ae8a28cf9|Daniel Golle|Sat Apr 26 04:18:25 2025 +0100|pcsc-tools: update to version 1.7.3
-0b824a864|Daniel Golle|Sat Apr 26 04:15:10 2025 +0100|pcsc-lite: update to version 2.3.3
-4c4d71dcb|Daniel Golle|Sat Apr 26 04:09:49 2025 +0100|gpgme: update to version 1.24.2
-a52e843d8|Daniel Golle|Sat Apr 26 04:01:28 2025 +0100|gnupg2: update to version 2.4.7
-296304822|Daniel Golle|Sat Apr 26 03:45:23 2025 +0100|npth: update to version 1.8
-028a33919|Daniel Golle|Sat Apr 26 04:34:57 2025 +0100|libksba: update to version 1.6.7
-9495c2262|Daniel Golle|Thu Apr 24 04:18:09 2025 +0100|libassuan: update to version 3.0.2
-93a466adb|Daniel Golle|Sat Apr 26 04:51:15 2025 +0100|libinput: update to 1.28.1
-9ddaa7ba6|Daniel Golle|Sat Apr 26 04:49:56 2025 +0100|libwacom: update to version 2.15.0
-1e08c79d5|Daniel Golle|Sat Apr 26 04:42:37 2025 +0100|libmanette: update to version 0.2.12
-734585e93|Daniel Golle|Sat Apr 26 04:39:56 2025 +0100|lvm2: update to version 2.03.31 and libdm version 1.02.205
-dd8780e25|Daniel Golle|Sat Apr 26 05:07:26 2025 +0100|fluidsynth: update to version 2.4.5
-1b753fedf|Daniel Golle|Sat Apr 26 05:04:42 2025 +0100|libxmp: update to version 4.6.2
-ab6dcf82d|Daniel Golle|Sat Apr 26 05:00:42 2025 +0100|wavpack: update to version 5.8.1
-87e552e4e|Daniel Golle|Sat Apr 26 05:21:29 2025 +0100|perl-mail-spamassassin: update to version 4.0.1
-e2c3ada47|Daniel Golle|Sat Apr 26 05:19:08 2025 +0100|perl-net-dns: update to version 1.50
-48a1bbd07|Daniel Golle|Sat Apr 26 05:13:52 2025 +0100|postgresql: update to version 17.4
-5e89a9536|Daniel Golle|Sat Apr 26 04:58:42 2025 +0100|exfatprogs: update to version 1.2.8
-b49f4cc0a|Daniel Golle|Sat Apr 26 04:29:59 2025 +0100|glib-networking: update to version 2.80.1
-e989bbe8d|Daniel Golle|Sat Apr 26 04:28:03 2025 +0100|i2c-tools: update to version 4.4
-cd8797798|Daniel Golle|Sat Apr 26 04:26:26 2025 +0100|gawk: update to version 5.3.2
-9b31532f5|Daniel Golle|Thu Apr 24 01:51:10 2025 +0100|libowfat: update to version 0.34
-8aa1f7716|Daniel Golle|Sat Apr 26 04:12:28 2025 +0100|ell: update to version 0.76
-cfb0de859|Ignas Poklad|Sun Apr 20 11:00:35 2025 +0200|openfortivpn: upgrade to 1.23.1
+3acafc69a|Tianling Shen|Wed Apr 30 18:31:19 2025 +0800|Merge Offcial Source
+dcad31d88|Christian Korber|Wed Apr 30 11:28:16 2025 +0200|net-snmp: add system to trigger
+288836fe8|Rosen Penev|Tue Apr 29 15:37:55 2025 -0700|kea: update to 2.6.2
+9d12a9618|Rosen Penev|Tue Apr 29 15:21:32 2025 -0700|mariadb: fix liburing dependency
+8518af47e|Rosen Penev|Tue Apr 29 16:44:19 2025 -0700|pthsem: fix compilation with autoconf >= 2.71
+02c134e2b|Hannu Nyman|Wed Apr 30 08:18:21 2025 +0300|coreutils: Fix gcc14 compilation via std=c17
+5402f8eea|Dirk Brenken|Tue Apr 29 21:55:30 2025 +0200|banIP: update 1.5.6-2
+b635f8ab9|Kazuhiro Ito|Sun Apr 27 01:24:42 2025 +0900|grep: fix that egrep and fgrep workaround doesn't work
+911d890b1|Fabrice Fontaine|Wed Feb 26 19:12:14 2025 +0100|libs/libupnp: fix PKG_CPE_ID
+21744903b|Daniel Golle|Sat Apr 26 05:22:57 2025 +0100|gnunet-fuse: update to 0.24.0
+bbef797cd|Daniel Golle|Sat Mar 29 00:40:10 2025 +0000|gnunet: update to 0.24.1
+7f99ff45c|John Audia|Mon Apr 28 10:11:38 2025 -0400|lvm2: add missing dependency
+ffd21c876|Fabrice Fontaine|Wed Feb 26 23:04:19 2025 +0100|sound/wavpack: assign PKG_CPE_ID
+3585ddfc4|Carlos Miguel Ferreira|Fri Apr 25 15:49:34 2025 +0100|boost: Updates package to version 1.88.0 This commit updates boost to version 1.88.0
+b2d2ba8ae|George Sapkin|Thu Apr 24 16:40:38 2025 +0300|sqlite3: add CI version check
+7be9ae1b7|George Sapkin|Thu Apr 24 16:36:08 2025 +0300|sqlite3: use the upstream version as PKG_VERSION
+aebfd4979|George Sapkin|Wed Apr 23 14:20:58 2025 +0300|sqlite3: bump to 3.49.1
+c3692c601|Wesley Gimenes|Fri Apr 25 17:34:47 2025 -0300|netbird: update to 0.43.0
 </details>

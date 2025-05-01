@@ -1,0 +1,34 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5c89466b3f|Tianling Shen|Wed Apr 30 18:26:31 2025 +0800|Merge Official Source
+5f9ff73b60|Dirk Brenken|Tue Apr 29 21:47:21 2025 +0200|luci-app-banip: sync with update 1.5.6-2
+8806ea0cef|Hosted Weblate|Tue Apr 29 02:01:00 2025 +0200|Translated using Weblate (Russian)
+99591345bc|Hosted Weblate|Sun Apr 27 21:57:20 2025 +0200|Translated using Weblate (Portuguese)
+5af703ea01|Hosted Weblate|Fri Apr 25 19:47:34 2025 +0200|Translated using Weblate (Malay)
+1355a6fa25|Paul Donald|Fri Apr 25 17:17:51 2025 +0200|luci-base: override the load() function to return boolean for FlagValue
+815fbc019c|Hannu Nyman|Thu Apr 24 18:38:38 2025 +0300|treewide: Sync translations
+6c10900299|Hosted Weblate|Thu Apr 24 15:25:15 2025 +0200|Translated using Weblate (Persian)
+f17ae7fd96|Paul Donald|Thu Apr 24 00:13:26 2025 +0200|luci-mod-network: widgets shall show devices that are online as online
+1f50dea160|Hosted Weblate|Wed Apr 23 23:04:05 2025 +0200|Translated using Weblate (Czech)
+e7ce4d2a1c|Paul Donald|Wed Apr 23 17:30:40 2025 +0200|luci-theme-openwrt: fix a few CSS errors
+91eed03a43|Dirk Brenken|Wed Apr 23 16:21:58 2025 +0200|Merge pull request #7741 from GithPK/patch-1
+1e3aa83b44|Paul Donald|Wed Apr 23 14:04:19 2025 +0200|luci-mod-network: wireless.js fixes
+aa6924cd4c|Paul Donald|Wed Apr 23 14:04:12 2025 +0200|luci-base: prevent tools.widgets.ZoneSelect tracebacks
+9180f2a762|Paul Donald|Wed Apr 23 14:21:40 2025 +0200|luci-theme-*: ES6 refactor
+9157254059|Paul Donald|Wed Apr 23 14:03:57 2025 +0200|luci-theme: fix some dynamic layout issues
+54192d3b36|Paul Donald|Wed Apr 23 14:03:50 2025 +0200|luci-app-ddns: Fix multiple IP display bug
+a288354e78|Paul Donald|Wed Apr 23 14:03:39 2025 +0200|luci-mod-network: widgets shall show devices that are online as online
+832680bb84|Paul Donald|Wed Apr 23 14:03:28 2025 +0200|luci-base: widgets shall show devices that are online as online
+05b8d9b1ee|PeterK|Wed Apr 23 12:14:38 2025 +0200|luci-app-banip: Trim() error fix.
+d40c03ad8d|Eric Fahlgren|Sun Apr 20 16:12:00 2025 -0700|luci-app-attendedsysupgrade: change error reporting url
+e05852d9cf|Paul Donald|Mon Apr 21 23:31:51 2025 +0200|luci-app-lldpd: fix 'redeclaration of s' error
+68082d24e6|Paul Donald|Mon Apr 21 21:29:12 2025 +0200|luci-base: spell fix
+16beffda15|Paul Donald|Sat Apr 19 20:45:11 2025 +0200|luci-mod-status: add log filtering to syslog tab
+b0b22de571|Hannu Nyman|Mon Apr 21 22:11:19 2025 +0300|treewide: Fix weblate conflicts
+71c33ad953|Hosted Weblate|Sat Apr 19 13:06:43 2025 +0200|Translated using Weblate (Czech)
+4461b12743|Hosted Weblate|Sat Apr 19 10:08:57 2025 +0200|Translated using Weblate (Czech)
+852fc23b12|Andrew Robbins|Tue Apr 15 02:13:06 2025 -0400|luci-lua-runtime: specify c17 standard
+7e6741fbae|Andrew Robbins|Tue Apr 15 01:38:35 2025 -0400|luci-base: specify c17 standard
+</details>

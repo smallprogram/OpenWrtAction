@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fe45c9c|lwb1978|Mon Apr 28 16:27:15 2025 +0800|luci: fix some issues with adapt sing-box 1.12 dns
-a3a8977|lwb1978|Mon Apr 28 12:10:49 2025 +0800|luci: adapt sing-box 1.12 dns server formats
+47a0ad2|A-BO|Thu May 1 00:09:59 2025 +0800|luci: bump to 25.5.1
+c1fdacd|lwb1978|Wed Apr 30 15:02:53 2025 +0800|luci: xray subscribe adapt to ss obfs-local
 </details>

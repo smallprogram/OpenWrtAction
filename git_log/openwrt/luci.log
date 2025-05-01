@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-99591345bc|Hosted Weblate|Sun Apr 27 21:57:20 2025 +0200|Translated using Weblate (Portuguese)
+089903105f|Paul Donald|Wed Apr 30 22:21:01 2025 +0200|Revert "luci-base: override the load() function to return boolean for FlagValue"
+4f47035bcd|Hosted Weblate|Wed Apr 30 14:20:20 2025 +0200|Translated using Weblate (Czech)
 </details>
