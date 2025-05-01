@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5f9ff73b60|Dirk Brenken|Tue Apr 29 21:47:21 2025 +0200|luci-app-banip: sync with update 1.5.6-2
-8806ea0cef|Hosted Weblate|Tue Apr 29 02:01:00 2025 +0200|Translated using Weblate (Russian)
+089903105f|Paul Donald|Wed Apr 30 22:21:01 2025 +0200|Revert "luci-base: override the load() function to return boolean for FlagValue"
+4f47035bcd|Hosted Weblate|Wed Apr 30 14:20:20 2025 +0200|Translated using Weblate (Czech)
 </details>

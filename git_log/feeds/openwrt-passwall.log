@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d5623d0|lwb1978|Tue Apr 29 12:11:32 2025 +0800|luci: fix and optimize some subscribe issues
-59f1af6|lwb1978|Tue Apr 29 08:26:16 2025 +0800|luci: adapt to anytls protocol
+47a0ad2|A-BO|Thu May 1 00:09:59 2025 +0800|luci: bump to 25.5.1
+c1fdacd|lwb1978|Wed Apr 30 15:02:53 2025 +0800|luci: xray subscribe adapt to ss obfs-local
 </details>

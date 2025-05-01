@@ -2,11 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5402f8eea|Dirk Brenken|Tue Apr 29 21:55:30 2025 +0200|banIP: update 1.5.6-2
-b635f8ab9|Kazuhiro Ito|Sun Apr 27 01:24:42 2025 +0900|grep: fix that egrep and fgrep workaround doesn't work
-911d890b1|Fabrice Fontaine|Wed Feb 26 19:12:14 2025 +0100|libs/libupnp: fix PKG_CPE_ID
-21744903b|Daniel Golle|Sat Apr 26 05:22:57 2025 +0100|gnunet-fuse: update to 0.24.0
-bbef797cd|Daniel Golle|Sat Mar 29 00:40:10 2025 +0000|gnunet: update to 0.24.1
-7f99ff45c|John Audia|Mon Apr 28 10:11:38 2025 -0400|lvm2: add missing dependency
-ffd21c876|Fabrice Fontaine|Wed Feb 26 23:04:19 2025 +0100|sound/wavpack: assign PKG_CPE_ID
+a21eb339b|Stijn Tintel|Wed Apr 30 17:14:02 2025 +0300|keepalived: bump to 2.3.3
+abec21420|Tianling Shen|Wed Apr 30 18:34:53 2025 +0800|v2ray-core: Update to 5.30.0
+0e5cc7de5|Tianling Shen|Wed Apr 30 18:34:23 2025 +0800|btop: Update to 1.4.1
+9a3aef6f2|Tianling Shen|Wed Apr 30 18:34:12 2025 +0800|dnsproxy: Update to 0.75.3
+dcad31d88|Christian Korber|Wed Apr 30 11:28:16 2025 +0200|net-snmp: add system to trigger
+288836fe8|Rosen Penev|Tue Apr 29 15:37:55 2025 -0700|kea: update to 2.6.2
+9d12a9618|Rosen Penev|Tue Apr 29 15:21:32 2025 -0700|mariadb: fix liburing dependency
+8518af47e|Rosen Penev|Tue Apr 29 16:44:19 2025 -0700|pthsem: fix compilation with autoconf >= 2.71
+02c134e2b|Hannu Nyman|Wed Apr 30 08:18:21 2025 +0300|coreutils: Fix gcc14 compilation via std=c17
 </details>

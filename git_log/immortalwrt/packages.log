@@ -1,0 +1,23 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+3acafc69a|Tianling Shen|Wed Apr 30 18:31:19 2025 +0800|Merge Offcial Source
+dcad31d88|Christian Korber|Wed Apr 30 11:28:16 2025 +0200|net-snmp: add system to trigger
+288836fe8|Rosen Penev|Tue Apr 29 15:37:55 2025 -0700|kea: update to 2.6.2
+9d12a9618|Rosen Penev|Tue Apr 29 15:21:32 2025 -0700|mariadb: fix liburing dependency
+8518af47e|Rosen Penev|Tue Apr 29 16:44:19 2025 -0700|pthsem: fix compilation with autoconf >= 2.71
+02c134e2b|Hannu Nyman|Wed Apr 30 08:18:21 2025 +0300|coreutils: Fix gcc14 compilation via std=c17
+5402f8eea|Dirk Brenken|Tue Apr 29 21:55:30 2025 +0200|banIP: update 1.5.6-2
+b635f8ab9|Kazuhiro Ito|Sun Apr 27 01:24:42 2025 +0900|grep: fix that egrep and fgrep workaround doesn't work
+911d890b1|Fabrice Fontaine|Wed Feb 26 19:12:14 2025 +0100|libs/libupnp: fix PKG_CPE_ID
+21744903b|Daniel Golle|Sat Apr 26 05:22:57 2025 +0100|gnunet-fuse: update to 0.24.0
+bbef797cd|Daniel Golle|Sat Mar 29 00:40:10 2025 +0000|gnunet: update to 0.24.1
+7f99ff45c|John Audia|Mon Apr 28 10:11:38 2025 -0400|lvm2: add missing dependency
+ffd21c876|Fabrice Fontaine|Wed Feb 26 23:04:19 2025 +0100|sound/wavpack: assign PKG_CPE_ID
+3585ddfc4|Carlos Miguel Ferreira|Fri Apr 25 15:49:34 2025 +0100|boost: Updates package to version 1.88.0 This commit updates boost to version 1.88.0
+b2d2ba8ae|George Sapkin|Thu Apr 24 16:40:38 2025 +0300|sqlite3: add CI version check
+7be9ae1b7|George Sapkin|Thu Apr 24 16:36:08 2025 +0300|sqlite3: use the upstream version as PKG_VERSION
+aebfd4979|George Sapkin|Wed Apr 23 14:20:58 2025 +0300|sqlite3: bump to 3.49.1
+c3692c601|Wesley Gimenes|Fri Apr 25 17:34:47 2025 -0300|netbird: update to 0.43.0
+</details>
