@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-47a0ad2|A-BO|Thu May 1 00:09:59 2025 +0800|luci: bump to 25.5.1
-c1fdacd|lwb1978|Wed Apr 30 15:02:53 2025 +0800|luci: xray subscribe adapt to ss obfs-local
+37d3e7a|lwb1978|Thu May 1 17:07:53 2025 +0800|luci: add sing-box disable_sni option
+0317b87|lwb1978|Thu May 1 12:49:57 2025 +0800|luci: update 25.5.1 release to 2
+b0f9182|lwb1978|Thu May 1 12:40:47 2025 +0800|luci: fix XHR.post undefined error (openwrt 18.06)
 </details>

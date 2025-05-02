@@ -2,17 +2,54 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1b3d84a03e|Tianling Shen|Wed Apr 30 20:17:09 2025 +0800|autocore: avoid override packet_steering value
-6e86d98e36|Tianling Shen|Wed Apr 30 18:36:51 2025 +0800|Merge Official Source
-f92ac3d10d|Mieczyslaw Nalewaj|Tue Apr 29 23:59:58 2025 +0200|generic: refresh patches
-028d8d4275|George Moussalem|Tue Apr 29 17:24:46 2025 +0400|qualcommax: ipq50xx: fix GE_PHY and Uniphy resets
-1b7c63beaf|Felix Fietkau|Wed Apr 30 11:03:39 2025 +0200|unetd: cli: allow skipping pretty printing of status data
-1735da8e4c|Felix Fietkau|Wed Apr 30 11:02:22 2025 +0200|cli: add explicit option for pretty printing command result data
-d07c48fa09|Felix Fietkau|Wed Apr 30 10:40:38 2025 +0200|ucode-mod-uline: fix crash on cleanup
-b9685dcf3d|Felix Fietkau|Wed Apr 30 10:32:55 2025 +0200|ucode-mod-uline: fix build warnings
-0f9af6dcd9|Christian Marangi|Tue Apr 29 18:55:19 2025 +0200|generic: drop extra-old-deprecated pending fix patch for sch codel
-31e56f0340|George Moussalem|Tue Apr 29 14:32:20 2025 +0400|qualcommax: ipq50xx: fix ipq5018 GE PHY and tidy up mdio nodes
-f84cac4654|Erik Servili|Mon Apr 28 03:39:23 2025 +0200|qualcommax: ipq60xx: LED mapping update for Netgear WAX610 and WAX610Y
-5c8301e800|Robert Marko|Fri Apr 25 15:02:24 2025 +0200|toolchain: gcc: switch default to 14
-ddae97e4d8|Shiji Yang|Tue Apr 29 18:16:29 2025 +0800|ramips: correct wifi driver packages for TP-Link MR200 v6
+09241815a1|Tianling Shen|Thu May 1 22:33:10 2025 +0800|Merge Official Source
+668b27e191|Tianling Shen|Thu May 1 21:04:25 2025 +0800|uboot-rockchip: drop deprecated regulators_enable_boot_on func
+4e83d5ec26|David Bauer|Tue Apr 29 19:31:09 2025 +0200|ramips: make Genexis EX400 factory image dependent on initramfs
+7f9c88b607|Shiji Yang|Thu May 1 00:55:36 2025 +0800|generic: add more missing Kconfig symbols for 6.12 kernel
+2037ca2955|Mieczyslaw Nalewaj|Sat Apr 5 18:44:36 2025 +0200|kernel/drm-ttm-helper: 6.12: fix missing dependency
+be83adbf1f|Mieczyslaw Nalewaj|Sat Apr 5 18:33:30 2025 +0200|kernel/backlight: 6.12: fix missing dependency
+7f0dc74091|Mieczyslaw Nalewaj|Wed Apr 16 07:53:51 2025 +0200|kernel: filter out compiler RUSTC opts from config
+7e5bccd011|Mieczyslaw Nalewaj|Tue Apr 1 12:41:55 2025 +0200|kernel: fortify: Hide run-time copy size from value range tracking
+aa69e02002|Mieczyslaw Nalewaj|Sun Apr 27 19:01:49 2025 +0200|kernel/hwmon-sch5627: 6.12: fix missing dependency
+0e8b03f80c|Mieczyslaw Nalewaj|Sun Apr 27 19:01:02 2025 +0200|kernel/hwmon-lm92: 6.12: fix missing dependency
+6f19be7691|Mieczyslaw Nalewaj|Sun Apr 27 18:59:18 2025 +0200|kernel/hwmon-core: 6.12: fix missing dependency
+ef590451a3|Mieczyslaw Nalewaj|Tue Apr 15 20:03:04 2025 +0200|generic: mtdsplit: include appropriate header for kernel 6.12
+dfe93dddfd|Mieczyslaw Nalewaj|Tue Nov 19 01:06:28 2024 +0100|x86: enable 6.12 testing kernel
+04d1756561|Mieczyslaw Nalewaj|Tue Apr 15 23:49:02 2025 +0200|kernel/x86: update config for kernel 6.12
+5c41fdbad4|Mieczyslaw Nalewaj|Sun Apr 27 18:51:57 2025 +0200|kernel: update fb-sys-fops package for kernel 6.12
+87c0839402|Mieczyslaw Nalewaj|Sun Apr 27 18:49:13 2025 +0200|kernel: update fb package on x86 for kernel 6.12
+bbbd587ce4|John Audia|Sun Nov 17 10:28:56 2024 -0500|x86: 6.12: manually rebuilding patches
+a8cb1dd898|Mieczyslaw Nalewaj|Fri Mar 21 16:11:29 2025 +0100|kernel/x86: Restore kernel files for v6.6
+3bd010ff54|Mieczyslaw Nalewaj|Fri Mar 21 16:11:27 2025 +0100|kernel/x86: Create kernel files for v6.12 (from v6.6)
+4708057e27|Mieczyslaw Nalewaj|Sun Apr 27 18:46:31 2025 +0200|package/zram: update for kernel 6.12
+da6d0f9341|Mieczyslaw Nalewaj|Sun Apr 27 18:45:23 2025 +0200|package/fs-fscache: update for kernel 6.12
+c16e3753ac|Mieczyslaw Nalewaj|Sun Apr 27 18:44:18 2025 +0200|kernel: 6.12: add snd hda scodec component module
+5c51a7ac8f|Mieczyslaw Nalewaj|Sun Apr 27 18:43:10 2025 +0200|package/fs-ntfs: disable for kernel 6.12
+c621fce0a5|Mieczyslaw Nalewaj|Sun Apr 27 18:42:10 2025 +0200|kernel/lan743x: 6.12: fix missing dependency
+4de308428c|Mieczyslaw Nalewaj|Wed Apr 30 09:21:01 2025 +0200|kernel: modules: i40e,ice,iavf: support for kernel 6.12
+ddcb01cf31|Mieczyslaw Nalewaj|Sun Apr 27 18:39:12 2025 +0200|kernel/iio-bmp280: 6.12: fix missing dependency
+74d630f87e|Mieczyslaw Nalewaj|Sun Apr 27 18:37:52 2025 +0200|kernel/i2c-i801: 6.12: fix missing dependency
+8c9e624421|Mieczyslaw Nalewaj|Sun Apr 27 18:33:55 2025 +0200|kernel/hwmon-max6697: 6.12: fix missing dependency
+bb94b90fc0|Mieczyslaw Nalewaj|Sun Apr 27 18:32:41 2025 +0200|kernel/9pnet: 6.12: fix missing dependency
+4c69147a90|Mantas Pucka|Fri Nov 22 10:07:43 2024 +0200|kernel: adjust kmod-phy-aquantia dependencies for v6.12 kernel
+d234afa72a|Mantas Pucka|Mon Dec 9 14:38:22 2024 +0200|config: add new options for 6.12 kernel
+4bce1ebcd8|Mieczyslaw Nalewaj|Tue Apr 15 23:41:44 2025 +0200|generic: 6.12: remove outdated kernel symbols
+bcfd1b8d14|Mieczyslaw Nalewaj|Tue Apr 15 23:40:44 2025 +0200|generic: 6.12: add missing symbols
+0caa30b66a|Mieczyslaw Nalewaj|Sun Apr 27 18:29:01 2025 +0200|kernel: add new kmod and update kmod-tpm
+ff493d4a9b|John Audia|Wed Nov 20 14:32:09 2024 -0500|kernel: update dependency of kmod-i2c-piix4
+d12962a6fa|Mieczyslaw Nalewaj|Sun Apr 27 18:25:49 2025 +0200|pcs-xpcs: 6.12: fix missing dependency
+a2063ec986|Mieczyslaw Nalewaj|Wed Apr 30 11:38:37 2025 +0200|generic: 6.12: refresh hack patches
+a4cfd32917|Mieczyslaw Nalewaj|Wed Apr 30 11:52:08 2025 +0200|generic: 6.12: manually rebuild hack patches
+5a7de563e0|Mieczyslaw Nalewaj|Sat Apr 26 21:56:27 2025 +0200|generic: 6.12: refresh pending patches
+a9c0f28951|Christian Marangi|Mon Apr 14 18:34:10 2025 +0200|generic: 6.12: move MIPS reloc patch from pending to hack and rework
+be6753dda0|Mieczyslaw Nalewaj|Wed Apr 30 00:12:20 2025 +0200|generic: 6.12: manually rebuild pending patches
+5d23eff6af|Mieczyslaw Nalewaj|Sat Apr 12 13:26:23 2025 +0200|generic: 6.12: remove obsolete pending patches
+dfc3e24bdd|Mieczyslaw Nalewaj|Fri Apr 25 16:32:54 2025 +0200|generic: 6.12: refresh backport patches
+07d1d3d8f8|Mieczyslaw Nalewaj|Fri Apr 25 16:31:08 2025 +0200|generic: 6.12: manually rebuild backport patches
+601ebb372f|Mieczyslaw Nalewaj|Tue Apr 22 17:57:00 2025 +0200|generic: 6.12: remove obsolete backport patches
+456b7a5d48|Mieczyslaw Nalewaj|Wed Apr 30 00:02:32 2025 +0200|kernel/generic: Restore kernel files for v6.6
+480537ed36|Mieczyslaw Nalewaj|Wed Apr 30 00:02:28 2025 +0200|kernel/generic: Create kernel files for v6.12 (from v6.6)
+1bb32e2274|Mieczyslaw Nalewaj|Fri Apr 25 16:26:52 2025 +0200|kernel: add define for kernel 6.12
+9acd6e5e98|Robert Marko|Wed Apr 30 11:53:45 2025 +0200|ead: fix compilation with GCC14
+8266ff6591|Scott Mercer|Mon Apr 21 11:23:07 2025 -0400|package: basefiles: add oem image dectection to fwtool.sh
 </details>

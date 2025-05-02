@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-33db83f99|aiamadeus|Mon Apr 28 22:05:16 2025 +0800|uboot-rockchip: bump to 2025.07rc1
+2a0cb7cb2|Thomas Richard|Tue Nov 5 11:13:34 2024 +0100|kernel: package v4l2-async drivers
 </details>
