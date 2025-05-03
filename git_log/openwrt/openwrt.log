@@ -2,24 +2,21 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-576278a507|Rosen Penev|Sat Apr 26 15:34:51 2025 -0700|realtek: use remove_new
-aa4c96b925|Rosen Penev|Sat Apr 26 16:48:12 2025 -0700|airoha: pwm: use devm
-aec2de120f|Rosen Penev|Sat Apr 26 15:52:57 2025 -0700|qualcommax: remoteproc: use remove_new
-538bbb0b71|Rosen Penev|Sat Apr 26 15:51:18 2025 -0700|ipq40xx: ipqess: use remove_new
-672caaf203|Rosen Penev|Sat Apr 26 15:49:32 2025 -0700|ipq40xx: qca8k: use remove_new
-745b720c6b|Rosen Penev|Sat Apr 26 15:48:16 2025 -0700|layerscape: ppfe: use remove_new
-d183da890b|Rosen Penev|Sat Apr 26 15:46:00 2025 -0700|qualcommax: pwm: use remove_new
-24d7b20cf5|Rosen Penev|Sat Apr 26 15:44:00 2025 -0700|ramips: pwm: use remove_new
-8316a3013f|Rosen Penev|Sat Apr 26 15:42:11 2025 -0700|ramips: mt7621-i2c: use remove_new
-8df633b49c|Rosen Penev|Sat Apr 26 15:39:30 2025 -0700|ramips: eip93: use remove_new
-8650a9ee85|Stijn Tintel|Thu May 1 23:09:49 2025 +0300|kernel: add KERNEL_STACKDEPOT_MAX_FRAMES
-a8c04725f0|Stijn Tintel|Thu May 1 23:02:54 2025 +0300|kernel: fix KERNEL_PROBE_EVENTS_BTF_ARGS
-d879e59823|George Moussalem|Thu May 1 22:01:20 2025 +0400|qualcommax: ipq50xx: fix DTB warning in USB node of Linksys MR5500
-a0fa3ed36f|George Moussalem|Thu May 1 14:55:07 2025 +0400|qualcommax: ipq50xx: fix ECC strength for Linksys MR5500
-84f433dfeb|Mieczyslaw Nalewaj|Thu May 1 07:48:59 2025 +0200|config: add new TRANSPARENT_HUGEPAGE choice for 6.12 kernel
-2259807d81|George Moussalem|Thu May 1 20:04:32 2025 +0400|Revert "qualcommax: ipq50xx: fix GE_PHY and Uniphy resets"
-6d4ded04ac|Scott Mercer|Wed Apr 30 14:46:51 2025 -0400|qualcommax: ipq5018: glinet_gl-b3000: fix kernel alignment fixes the following warning seen in bootlog
-c1cbcd35e7|Konstantin Demin|Thu May 1 19:07:10 2025 +0300|toolchain: glibc: Update glibc 2.38 to recent HEAD
-4e83d5ec26|David Bauer|Tue Apr 29 19:31:09 2025 +0200|ramips: make Genexis EX400 factory image dependent on initramfs
-7f9c88b607|Shiji Yang|Thu May 1 00:55:36 2025 +0800|generic: add more missing Kconfig symbols for 6.12 kernel
+a0f45a4f3f|Zoltan HERPAI|Fri May 2 22:46:53 2025 +0200|uboot-sifiveu: drop PWM-related patches
+bf91381451|Robert Marko|Fri May 2 19:30:47 2025 +0200|Revert "toolchain: gcc: make config consistent with glibc/musl"
+c8839fa6f4|Robert Marko|Fri May 2 19:18:38 2025 +0200|Revert "kernel: netdevices: Create Vitesse DSA switch packages"
+4cfefc2f76|Robert Marko|Fri May 2 19:17:53 2025 +0200|Revert "gemini: Add module for VSC73xx switches"
+e5da961ac4|Robert Marko|Thu May 1 21:26:27 2025 +0200|policycoreutils: update to 3.8.1 and fix build with GCC14
+7c6a3e2dde|Robert Marko|Thu May 1 21:25:14 2025 +0200|libsemanage: update to 3.8.1 and fix build with GCC14
+ba27d15f7b|Robert Marko|Thu May 1 21:24:46 2025 +0200|secilc: update to 3.8.1
+cad4447a36|Robert Marko|Thu May 1 21:24:26 2025 +0200|checkpolicy: update to 3.8.1
+211aaca1f1|Robert Marko|Thu May 1 21:23:59 2025 +0200|libsepol: update to 3.8.1
+cf4161746d|Robert Marko|Thu May 1 21:23:33 2025 +0200|libselinux: update to 3.8.1
+d3216173ab|Robert Marko|Fri May 2 11:07:54 2025 +0200|toolchain: binutils: fix compilation with GCC15
+57841c83d9|Konstantin Demin|Fri May 2 13:42:42 2025 +0300|toolchain: gcc: make config consistent with glibc/musl
+89ee79b77c|Konstantin Demin|Fri May 2 13:47:43 2025 +0300|make_ext4fs: Update to version 2025-05-02
+15178d1c0f|Carsten Schuette|Fri May 2 08:22:38 2025 +0200|mold: update to 2.38.1
+1c993da8ff|Linus Walleij|Sun Jan 12 01:37:20 2025 +0100|gemini: Add module for VSC73xx switches
+5687f448a4|Linus Walleij|Sun Jan 12 01:32:35 2025 +0100|kernel: netdevices: Create Vitesse DSA switch packages
+241343a2f2|Markus Stockhausen|Thu May 1 13:19:01 2025 -0400|realtek: fix RTL8214FC probing on RTL839x
 </details>

@@ -2,21 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-067a5c341|Robert Marko|Thu May 1 22:17:15 2025 +0200|lrzsz: fix compilation with GCC14
-ffe0cea2f|Rosen Penev|Wed Apr 30 16:38:11 2025 -0700|ntpd: update to 4.2.8p18
-4471b94ae|Rosen Penev|Wed Apr 30 16:59:56 2025 -0700|mailsend: fix compilation with GCC14
-4014c0207|Rosen Penev|Wed Apr 30 16:29:07 2025 -0700|xfrpc: update to 4.04.856
-10e8e2bbe|Miroslav Lichvar|Sat Mar 8 09:29:33 2025 +0100|chrony: enable support for non-MD5 keys in nts variant
-b08329194|Rosen Penev|Wed Apr 30 17:18:17 2025 -0700|tang: update to 15
-7bc802219|Peter van Dijk|Tue Apr 29 14:59:38 2025 +0200|dnsdist: update to 1.9.9
-b523439c9|Michael Heimpold|Sun Apr 27 16:18:02 2025 +0200|php8: pass configure hints for snmp extension
-3e34edcf3|Michael Heimpold|Sun Apr 27 11:13:09 2025 +0200|php8: update to 8.4.6
-c0a996ddd|Anton P.|Thu May 1 11:11:18 2025 +0300|sing-box: Update to 1.11.9
-b6b9cd38f|Tianling Shen|Mon Apr 28 17:24:31 2025 +0800|perl-ack: Update to 3.8.2
-1f9afbf80|Paul Donald|Tue Apr 29 12:56:29 2025 +0200|chrony: add configuration parameters
-7cd8b345e|Antonio Pastor|Tue Apr 29 19:45:59 2025 -0400|netatalk: update to 4.2.2
-456d8ff5d|Antonio Pastor|Tue Apr 29 18:51:27 2025 -0400|iniparser: library for parsing of ini files in C
-fa2eb8bf7|Antonio Pastor|Tue Apr 29 18:47:48 2025 -0400|netatalk: fix small issues with sample config and config generation
-af32ef43f|Wesley Gimenes|Wed Apr 30 10:54:47 2025 -0300|netbird: update to 0.43.1
-ac258c05e|Rosen Penev|Wed Apr 30 16:21:04 2025 -0700|ffmpeg: fix compilation with GCC14
+97722ed05|Rosen Penev|Thu Nov 14 14:46:08 2024 -0800|libgee: update to 0.20.8
+aef483bad|Rosen Penev|Thu May 1 12:44:54 2025 -0700|icecast: fix compilation with GCC14
+a2601e963|Robert Marko|Thu May 1 21:49:02 2025 +0200|freeipmi: update to 1.6.15
+8102674b6|Paul Donald|Sat Apr 19 21:24:41 2025 +0200|freeradius3: bump to 3.2.7
+d3efd5918|George Sapkin|Thu May 1 21:48:13 2025 +0300|yt-dlp: bump to 2025.04.30
+fdbd1bc97|George Sapkin|Thu May 1 21:54:25 2025 +0300|yt-dlp: update package description
 </details>

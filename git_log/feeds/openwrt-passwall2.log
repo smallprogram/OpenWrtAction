@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-71cc1f3|xiaorouji|Thu May 1 16:13:32 2025 +0800|luci: add sing-box `disable_sni` option
-</details>
