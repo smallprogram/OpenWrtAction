@@ -778,7 +778,7 @@ jobs:
 
       - name: Update Release Tag
         uses: softprops/action-gh-release@v2
-        if: steps.organize_tags.outputs.status == 'success'
+        # if: steps.organize_tags.outputs.status == 'success'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
