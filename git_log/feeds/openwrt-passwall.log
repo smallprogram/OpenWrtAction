@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9ddbcd7|lwb1978|Fri May 2 12:30:12 2025 +0800|luci: bump to 25.5.2
-15d5c4e|lwb1978|Fri May 2 12:24:24 2025 +0800|luci: fix wrong type saved for table subscribe field
+10a420f|lwb1978|Sun May 4 00:43:37 2025 +0800|luci: add chinadns-ng/smartdns force_https_soa option
+b2bd36e|lwb1978|Sat May 3 16:05:01 2025 +0800|luci: adjust chinadns-ng to dual-stack mode
+2b0eb75|lwb1978|Sat May 3 15:22:01 2025 +0800|luci: optimize
 </details>

@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8a9f989410|Tianling Shen|Fri May 2 17:59:02 2025 +0800|Merge Official Source
-089903105f|Paul Donald|Wed Apr 30 22:21:01 2025 +0200|Revert "luci-base: override the load() function to return boolean for FlagValue"
-4f47035bcd|Hosted Weblate|Wed Apr 30 14:20:20 2025 +0200|Translated using Weblate (Czech)
+6f5cddaed5|SakuraFallingMad|Wed Apr 23 20:54:15 2025 +0800|luci-app-passwall: bump to 25.5.2
 </details>

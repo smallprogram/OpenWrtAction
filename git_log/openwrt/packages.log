@@ -2,10 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-97722ed05|Rosen Penev|Thu Nov 14 14:46:08 2024 -0800|libgee: update to 0.20.8
-aef483bad|Rosen Penev|Thu May 1 12:44:54 2025 -0700|icecast: fix compilation with GCC14
-a2601e963|Robert Marko|Thu May 1 21:49:02 2025 +0200|freeipmi: update to 1.6.15
-8102674b6|Paul Donald|Sat Apr 19 21:24:41 2025 +0200|freeradius3: bump to 3.2.7
-d3efd5918|George Sapkin|Thu May 1 21:48:13 2025 +0300|yt-dlp: bump to 2025.04.30
-fdbd1bc97|George Sapkin|Thu May 1 21:54:25 2025 +0300|yt-dlp: update package description
+53f8aa5c5|George Sapkin|Sat May 3 10:41:10 2025 +0300|sqlite3: add legacy SONAME
+2a1b4a203|Lunatic Kochiya|Sat May 3 16:47:52 2025 +0800|aria2: fix aira2-openssl install failed
+52b51e30f|Dirk Brenken|Sat May 3 14:37:13 2025 +0200|adblock: update 4.4.1-2
+8df8700a1|Tianling Shen|Sat May 3 16:03:58 2025 +0800|btop: Update to 1.4.2
+e324013a7|Philip Prindeville|Fri May 2 09:50:24 2025 -0600|clixon: Update to 7.4.0
+ac50dd0b2|Philip Prindeville|Fri May 2 09:45:35 2025 -0600|cligen: Update to 7.4.0
+8908998cc|Daniel Golle|Sat May 3 01:47:09 2025 +0100|lvm2: build without libnvme
 </details>
