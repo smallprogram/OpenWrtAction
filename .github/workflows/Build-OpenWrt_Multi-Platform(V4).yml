@@ -745,6 +745,8 @@ jobs:
     if: ${{ always() }}
     runs-on: ubuntu-24.04
     name: Organize-Release-Tags
+    outputs:
+      output_tag_status: ${{ steps.organize_tags.outputs.status }}
         
     steps:
       - name: Checkout
@@ -788,7 +790,7 @@ jobs:
   rerun-failed-jobs:
     runs-on: ubuntu-24.04
     needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain, job_build, job_upload_release, job_organize_tags]
-    if: failure() && fromJSON(github.run_attempt) < 3  && !cancelled()
+    if: failure() && fromJSON(github.run_attempt) < 3  && !cancelled() && needs.job_organize_tags.outputs.output_tag_status == 'success'
     steps:
       - name: Rerun failed jobs in the current workflow
         env:
