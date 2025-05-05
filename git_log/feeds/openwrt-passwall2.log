@@ -1,0 +1,12 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d53e5fe|lwb1978|Fri May 2 12:24:24 2025 +0800|luci: fix wrong type saved for table subscribe field
+d7e2260|lwb1978|Wed Apr 30 15:02:53 2025 +0800|luci: xray subscribe adapt to ss obfs-local
+fa9d273|lwb1978|Tue Apr 29 12:11:32 2025 +0800|luci: fix and optimize some subscribe issues
+1132590|lwb1978|Tue Apr 29 08:26:16 2025 +0800|luci: adapt to anytls protocol
+9b1eda7|Winter|Thu Apr 17 20:38:29 2025 +0800|luci: cleaned up redundant classes in FAQ page elements
+9169b53|xiaorouji|Sun May 4 15:34:05 2025 +0800|luci: fix iptables port rule limit (>15) & optimize
+54fd0a3|lwb1978|Mon Apr 14 21:06:04 2025 +0800|luci: app update support riscv64 arch
+</details>

@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c3bfa0c62|Mieczyslaw Nalewaj|Sun Apr 27 18:29:01 2025 +0200|kernel: add new kmod and update tpm
+b59bdbc23|coolsnowwolf|Mon May 5 04:28:32 2025 +0800|qca-nss-ecm: disable ipsec nss crypto temporary
+5e736c93e|coolsnowwolf|Mon May 5 04:15:34 2025 +0800|generic: linux 6.1 patches rebased
+5602da66c|coolsnowwolf|Sun May 4 11:52:12 2025 +0800|Version update to R25.5.25
+58087a19e|coolsnowwolf|Sun May 4 11:45:11 2025 +0800|kernel: bump all to latest HEAD
 </details>

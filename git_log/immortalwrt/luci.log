@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6f5cddaed5|SakuraFallingMad|Wed Apr 23 20:54:15 2025 +0800|luci-app-passwall: bump to 25.5.2
+b7d6cc6078|Tianling Shen|Sun May 4 14:49:35 2025 +0800|luci-mod-network: wireless: remove MU-MIMO option
 </details>

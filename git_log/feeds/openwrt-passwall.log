@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-10a420f|lwb1978|Sun May 4 00:43:37 2025 +0800|luci: add chinadns-ng/smartdns force_https_soa option
-b2bd36e|lwb1978|Sat May 3 16:05:01 2025 +0800|luci: adjust chinadns-ng to dual-stack mode
-2b0eb75|lwb1978|Sat May 3 15:22:01 2025 +0800|luci: optimize
+cc35777|lwb1978|Sun May 4 12:37:27 2025 +0800|luci: fix iptables
 </details>

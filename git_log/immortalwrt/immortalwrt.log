@@ -2,33 +2,17 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ff3ecd55f2|Tianling Shen|Sun May 4 02:53:17 2025 +0800|Merge Official Source
-6deb2a03ba|Shiji Yang|Thu May 1 03:20:55 2025 +0800|mac80211: ath9k: fix missing prototypes warnings
-2260afa381|Shiji Yang|Tue Apr 29 00:01:42 2025 +0800|rtl8812au-ct: fix build issue on 6.12 kernel
-bb192c4766|Shiji Yang|Mon Apr 28 23:48:12 2025 +0800|ath10k-ct: fix build warnings on 6.12 kernel
-5652c91a3f|Shiji Yang|Mon Apr 28 22:24:45 2025 +0800|mt76: fix build error on 6.12 kernel
-9aea4c9280|Shiji Yang|Mon Apr 28 22:15:51 2025 +0800|mac80211: fix unaligned.h header location for 6.12 kernel
-bad441ae4e|Shiji Yang|Mon Apr 28 21:16:08 2025 +0800|mac80211: rt2x00: fix build warnings on 6.12 kernel
-8e90c5cfc2|Shiji Yang|Mon Apr 28 18:14:09 2025 +0800|kernel: trelay: fix build warning on 6.12 kernel
-d0d9b7b612|Thomas Richard|Mon Apr 28 14:52:26 2025 +0200|arm-trusted-firmware-stm32: rework patch for the RTC configuration
-802828a394|Thomas Richard|Mon Apr 28 14:50:00 2025 +0200|optee-os-stm32: bump to 4.6.0
-09889831d4|Thomas Richard|Mon Apr 28 14:48:27 2025 +0200|uboot-stm32: bump to 2025.04
-fbcd547a44|John Audia|Fri May 2 12:44:01 2025 -0400|kernel: bump 6.6 to 6.6.89
-a72a2fd7e0|Mieczyslaw Nalewaj|Wed Apr 30 13:22:33 2025 +0200|kernel: bump 6.6 to 6.6.88
-a0f45a4f3f|Zoltan HERPAI|Fri May 2 22:46:53 2025 +0200|uboot-sifiveu: drop PWM-related patches
-bf91381451|Robert Marko|Fri May 2 19:30:47 2025 +0200|Revert "toolchain: gcc: make config consistent with glibc/musl"
-c8839fa6f4|Robert Marko|Fri May 2 19:18:38 2025 +0200|Revert "kernel: netdevices: Create Vitesse DSA switch packages"
-4cfefc2f76|Robert Marko|Fri May 2 19:17:53 2025 +0200|Revert "gemini: Add module for VSC73xx switches"
-e5da961ac4|Robert Marko|Thu May 1 21:26:27 2025 +0200|policycoreutils: update to 3.8.1 and fix build with GCC14
-7c6a3e2dde|Robert Marko|Thu May 1 21:25:14 2025 +0200|libsemanage: update to 3.8.1 and fix build with GCC14
-ba27d15f7b|Robert Marko|Thu May 1 21:24:46 2025 +0200|secilc: update to 3.8.1
-cad4447a36|Robert Marko|Thu May 1 21:24:26 2025 +0200|checkpolicy: update to 3.8.1
-211aaca1f1|Robert Marko|Thu May 1 21:23:59 2025 +0200|libsepol: update to 3.8.1
-cf4161746d|Robert Marko|Thu May 1 21:23:33 2025 +0200|libselinux: update to 3.8.1
-d3216173ab|Robert Marko|Fri May 2 11:07:54 2025 +0200|toolchain: binutils: fix compilation with GCC15
-57841c83d9|Konstantin Demin|Fri May 2 13:42:42 2025 +0300|toolchain: gcc: make config consistent with glibc/musl
-89ee79b77c|Konstantin Demin|Fri May 2 13:47:43 2025 +0300|make_ext4fs: Update to version 2025-05-02
-15178d1c0f|Carsten Schuette|Fri May 2 08:22:38 2025 +0200|mold: update to 2.38.1
-1c993da8ff|Linus Walleij|Sun Jan 12 01:37:20 2025 +0100|gemini: Add module for VSC73xx switches
-5687f448a4|Linus Walleij|Sun Jan 12 01:32:35 2025 +0100|kernel: netdevices: Create Vitesse DSA switch packages
+ac2048c578|Tianling Shen|Sun May 4 14:45:10 2025 +0800|mt76: add workaround for corrupted e2p on mt7996
+9ba39e1bbd|Tianling Shen|Sun May 4 14:43:30 2025 +0800|mt76: drop buggy vht patch
+5bcbaee6e1|Tianling Shen|Sun May 4 13:09:32 2025 +0800|Merge Official Source
+faef19c22c|Zoltan HERPAI|Sat May 3 20:51:18 2025 +0000|dns320l-mcu: fix compilation with GCC14
+5070dc2f75|Robert Marko|Wed Apr 30 20:40:44 2025 +0200|tools: libtool: update to 2.5.4
+ab87087672|Stijn Tintel|Fri May 2 01:46:25 2025 +0300|realtek: add missing symbol
+0744d77779|Hauke Mehrtens|Sat May 3 00:38:31 2025 +0200|toolchain: gcc: Backport patch to fix mips16 linking
+e184be34ab|Hauke Mehrtens|Sat May 3 00:45:51 2025 +0200|toolchain: gcc: Refresh patches
+b77684d2c1|Hauke Mehrtens|Sat May 3 01:12:59 2025 +0200|dns320l-mcu: Fix compilation with GCC 14
+e8cfa339fe|Hauke Mehrtens|Sat May 3 00:29:39 2025 +0200|boot-lantiq: Fix compilation with GCC 14
+09b89c96ce|Hauke Mehrtens|Fri May 2 23:42:29 2025 +0200|ltq-adsl-app: Fix compilation with GCC 14
+8ffd3dfb10|Rosen Penev|Wed Apr 30 18:12:48 2025 -0700|ramips: i2s: use devm for debugfs seqfile
+724248799e|Rosen Penev|Thu May 1 13:10:54 2025 -0700|ramips: i2s: replace spaces with tabs
 </details>
