@@ -790,7 +790,7 @@ jobs:
   rerun-failed-jobs:
     runs-on: ubuntu-24.04
     needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain, job_build, job_upload_release, job_organize_tags]
-    if: failure() && fromJSON(github.run_attempt) < 3  && !cancelled() && ${{ needs.job_organize_tags.outputs.output_tag_status == 'success' }}
+    if: failure() && fromJSON(github.run_attempt) < 3  && !cancelled()
     steps:
       - name: Rerun failed jobs in the current workflow
         env:
@@ -806,7 +806,7 @@ jobs:
     if: ${{ always() }}
     steps:
       - name: Trigger build
-        if: ${{ needs.rerun-failed-jobs.result == 'skipped' }} && ${{ needs.job_organize_tags.outputs.output_tag_status == 'success' }}
+        if: ${{ needs.rerun-failed-jobs.result == 'skipped' }}
         uses: peter-evans/repository-dispatch@v3
         with:
           token: ${{ secrets.MY_SECRET_PAT }}
