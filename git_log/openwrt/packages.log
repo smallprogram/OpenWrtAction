@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9a62f9e28|John Audia|Fri May 2 16:16:48 2025 -0400|libtirpc: fix host build via std=c99
+b98fb6063|Matthias Schiffer|Sat Apr 26 22:37:16 2025 +0200|perl: fix parallel build race condition in target build
+e7b5a35e5|Matthias Schiffer|Fri Apr 25 12:35:23 2025 +0200|perl: drop 110-always_use_miniperl.patch
+2a7dc1540|Matthias Schiffer|Fri Apr 25 02:06:17 2025 +0200|perl: replace 910-miniperl-needs-inc-dot.patch with smaller scope fix
+434eaba41|Nikolay Manev|Sun May 4 11:48:19 2025 +0300|zstd: update to v1.5.7
 </details>

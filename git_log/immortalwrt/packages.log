@@ -2,47 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-800bb4810|Tianling Shen|Sun May 4 19:34:23 2025 +0800|tang: refresh patch
-caeddce6c|Tianling Shen|Sun May 4 19:28:59 2025 +0800|Merge Official Source
-25f9108c2|Interesting Gang|Sun May 4 18:34:08 2025 +0800|shadowsocks-rust: Update to 1.23.2
-bf31c6946|Tianling Shen|Sun May 4 19:11:44 2025 +0800|quectel-cm: fix build with gcc14
-9c59f52bb|Tianling Shen|Sun May 4 18:59:24 2025 +0800|mentohust: fix build with gcc14
-fad218784|Tianling Shen|Sun May 4 17:59:03 2025 +0800|cups-bjnp: fix build with gcc14
-3eb6f9a3d|Tianling Shen|Sun May 4 17:31:33 2025 +0800|cpulimit: fix build with gcc14
-48609280b|Tianling Shen|Sun May 4 17:21:30 2025 +0800|antiblock: disable clang-format explicitly
-522589bff|Tianling Shen|Sun May 4 16:32:47 2025 +0800|zerotier: optimize reading listen port
-53f8aa5c5|George Sapkin|Sat May 3 10:41:10 2025 +0300|sqlite3: add legacy SONAME
-2a1b4a203|Lunatic Kochiya|Sat May 3 16:47:52 2025 +0800|aria2: fix aira2-openssl install failed
-52b51e30f|Dirk Brenken|Sat May 3 14:37:13 2025 +0200|adblock: update 4.4.1-2
-8df8700a1|Tianling Shen|Sat May 3 16:03:58 2025 +0800|btop: Update to 1.4.2
-e324013a7|Philip Prindeville|Fri May 2 09:50:24 2025 -0600|clixon: Update to 7.4.0
-ac50dd0b2|Philip Prindeville|Fri May 2 09:45:35 2025 -0600|cligen: Update to 7.4.0
-8908998cc|Daniel Golle|Sat May 3 01:47:09 2025 +0100|lvm2: build without libnvme
-97722ed05|Rosen Penev|Thu Nov 14 14:46:08 2024 -0800|libgee: update to 0.20.8
-aef483bad|Rosen Penev|Thu May 1 12:44:54 2025 -0700|icecast: fix compilation with GCC14
-a2601e963|Robert Marko|Thu May 1 21:49:02 2025 +0200|freeipmi: update to 1.6.15
-8102674b6|Paul Donald|Sat Apr 19 21:24:41 2025 +0200|freeradius3: bump to 3.2.7
-d3efd5918|George Sapkin|Thu May 1 21:48:13 2025 +0300|yt-dlp: bump to 2025.04.30
-fdbd1bc97|George Sapkin|Thu May 1 21:54:25 2025 +0300|yt-dlp: update package description
-067a5c341|Robert Marko|Thu May 1 22:17:15 2025 +0200|lrzsz: fix compilation with GCC14
-ffe0cea2f|Rosen Penev|Wed Apr 30 16:38:11 2025 -0700|ntpd: update to 4.2.8p18
-4471b94ae|Rosen Penev|Wed Apr 30 16:59:56 2025 -0700|mailsend: fix compilation with GCC14
-4014c0207|Rosen Penev|Wed Apr 30 16:29:07 2025 -0700|xfrpc: update to 4.04.856
-10e8e2bbe|Miroslav Lichvar|Sat Mar 8 09:29:33 2025 +0100|chrony: enable support for non-MD5 keys in nts variant
-b08329194|Rosen Penev|Wed Apr 30 17:18:17 2025 -0700|tang: update to 15
-7bc802219|Peter van Dijk|Tue Apr 29 14:59:38 2025 +0200|dnsdist: update to 1.9.9
-b523439c9|Michael Heimpold|Sun Apr 27 16:18:02 2025 +0200|php8: pass configure hints for snmp extension
-3e34edcf3|Michael Heimpold|Sun Apr 27 11:13:09 2025 +0200|php8: update to 8.4.6
-c0a996ddd|Anton P.|Thu May 1 11:11:18 2025 +0300|sing-box: Update to 1.11.9
-b6b9cd38f|Tianling Shen|Mon Apr 28 17:24:31 2025 +0800|perl-ack: Update to 3.8.2
-1f9afbf80|Paul Donald|Tue Apr 29 12:56:29 2025 +0200|chrony: add configuration parameters
-7cd8b345e|Antonio Pastor|Tue Apr 29 19:45:59 2025 -0400|netatalk: update to 4.2.2
-456d8ff5d|Antonio Pastor|Tue Apr 29 18:51:27 2025 -0400|iniparser: library for parsing of ini files in C
-fa2eb8bf7|Antonio Pastor|Tue Apr 29 18:47:48 2025 -0400|netatalk: fix small issues with sample config and config generation
-af32ef43f|Wesley Gimenes|Wed Apr 30 10:54:47 2025 -0300|netbird: update to 0.43.1
-ac258c05e|Rosen Penev|Wed Apr 30 16:21:04 2025 -0700|ffmpeg: fix compilation with GCC14
-a21eb339b|Stijn Tintel|Wed Apr 30 17:14:02 2025 +0300|keepalived: bump to 2.3.3
-abec21420|Tianling Shen|Wed Apr 30 18:34:53 2025 +0800|v2ray-core: Update to 5.30.0
-0e5cc7de5|Tianling Shen|Wed Apr 30 18:34:23 2025 +0800|btop: Update to 1.4.1
-9a3aef6f2|Tianling Shen|Wed Apr 30 18:34:12 2025 +0800|dnsproxy: Update to 0.75.3
+1ab31fa4f|Tianling Shen|Mon May 5 20:51:10 2025 +0800|sing-box: update default configuration
+a5b384bc7|Interesting Gang|Mon May 5 17:13:47 2025 +0800|sing-box: Update to 1.11.10
 </details>

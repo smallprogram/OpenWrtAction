@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cc35777|lwb1978|Sun May 4 12:37:27 2025 +0800|luci: fix iptables
+099ed58|lwb1978|Mon May 5 13:18:20 2025 +0800|luci: optimize some theme compatibility
 </details>

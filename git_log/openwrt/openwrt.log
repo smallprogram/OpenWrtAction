@@ -2,8 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ecc0f549c4|Mieczyslaw Nalewaj|Sat May 3 13:44:04 2025 +0200|kernel: bump 6.12 to 6.12.26
-b0aa7b3da6|Robert Marko|Sun May 4 00:06:28 2025 +0200|libiconv-full: update to 1.18
-c018a1cd58|Robert Marko|Sat May 3 23:56:04 2025 +0200|libiconv-full: drop patch-libtool fixup
-e8b470139c|Konstantin Demin|Fri May 2 23:47:01 2025 +0300|tools: add options to optimize host binaries
+06f44f69b6|Felix Fietkau|Mon May 5 13:55:42 2025 +0200|unetmsg: add subscriber update callback to notify about publish events
+6fcaf3d589|Felix Fietkau|Mon May 5 11:38:59 2025 +0200|unetmsg: fix issuing requests without previously subscribing
+55cff42121|Felix Fietkau|Mon May 5 11:37:39 2025 +0200|gdb: update to version 16.2
+edd997a9ee|Felix Fietkau|Mon May 5 11:37:14 2025 +0200|musl: add pending patch to fix CFI annotations
+6f8f404113|Felix Fietkau|Mon May 5 09:58:01 2025 +0200|libubox: update to Git HEAD (2024-12-19)
+3f7f6079fc|Jonas Gorski|Sun May 4 16:40:11 2025 +0200|kernel: iio: iio-core: update dependencies for 6.12
+de980e67b6|Jonas Gorski|Sun May 4 16:32:38 2025 +0200|kernel: bluetooth: btmtk: update dependencies for 6.12
+f8da45e25d|Nick Hainke|Sun May 4 22:38:10 2025 +0200|tools/b43-tools: update to latest version, fix C23 build
 </details>

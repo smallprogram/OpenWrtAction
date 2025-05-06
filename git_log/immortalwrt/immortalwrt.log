@@ -2,17 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ac2048c578|Tianling Shen|Sun May 4 14:45:10 2025 +0800|mt76: add workaround for corrupted e2p on mt7996
-9ba39e1bbd|Tianling Shen|Sun May 4 14:43:30 2025 +0800|mt76: drop buggy vht patch
-5bcbaee6e1|Tianling Shen|Sun May 4 13:09:32 2025 +0800|Merge Official Source
-faef19c22c|Zoltan HERPAI|Sat May 3 20:51:18 2025 +0000|dns320l-mcu: fix compilation with GCC14
-5070dc2f75|Robert Marko|Wed Apr 30 20:40:44 2025 +0200|tools: libtool: update to 2.5.4
-ab87087672|Stijn Tintel|Fri May 2 01:46:25 2025 +0300|realtek: add missing symbol
-0744d77779|Hauke Mehrtens|Sat May 3 00:38:31 2025 +0200|toolchain: gcc: Backport patch to fix mips16 linking
-e184be34ab|Hauke Mehrtens|Sat May 3 00:45:51 2025 +0200|toolchain: gcc: Refresh patches
-b77684d2c1|Hauke Mehrtens|Sat May 3 01:12:59 2025 +0200|dns320l-mcu: Fix compilation with GCC 14
-e8cfa339fe|Hauke Mehrtens|Sat May 3 00:29:39 2025 +0200|boot-lantiq: Fix compilation with GCC 14
-09b89c96ce|Hauke Mehrtens|Fri May 2 23:42:29 2025 +0200|ltq-adsl-app: Fix compilation with GCC 14
-8ffd3dfb10|Rosen Penev|Wed Apr 30 18:12:48 2025 -0700|ramips: i2s: use devm for debugfs seqfile
-724248799e|Rosen Penev|Thu May 1 13:10:54 2025 -0700|ramips: i2s: replace spaces with tabs
+3d643fcd04|Tianling Shen|Mon May 5 20:40:25 2025 +0800|dnsmasq: change priority of dns hihack rule
 </details>
