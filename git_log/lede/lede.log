@@ -1,0 +1,6 @@
+<details> <summary> <b>lede new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+1f367969b|Rosen Penev|Wed Oct 2 15:25:35 2024 -0700|kernel: filter out compiler options from config
+</details>

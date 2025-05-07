@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-099ed58|lwb1978|Mon May 5 13:18:20 2025 +0800|luci: optimize some theme compatibility
+5da35cf|lwb1978|Tue May 6 18:01:48 2025 +0800|luci: fix smartdns `force-qtype-SOA` arg
 </details>
