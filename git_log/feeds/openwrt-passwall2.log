@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+49c4271|xiaorouji|Wed May 7 16:46:40 2025 +0800|luci: 25.5.7
+dbe25bd|xiaorouji|Wed May 7 16:43:47 2025 +0800|luci: server: support custom config
+4c0ec7f|xiaorouji|Wed May 7 00:50:40 2025 +0800|luci: optimize
+b7eac83|xiaorouji|Wed May 7 00:17:03 2025 +0800|luci: add export node config feature
+</details>

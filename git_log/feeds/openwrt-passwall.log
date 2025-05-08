@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5da35cf|lwb1978|Tue May 6 18:01:48 2025 +0800|luci: fix smartdns `force-qtype-SOA` arg
+69a688d|lwb1978|Thu May 8 02:18:33 2025 +0800|luci: fix `server_app` lost type
+6416b68|lwb1978|Thu May 8 01:58:20 2025 +0800|luci: server: support custom config
+0297722|lwb1978|Thu May 8 01:09:45 2025 +0800|luci: optimize
+0796912|A-BO|Thu May 8 00:38:33 2025 +0800|luci: dns support parsing dhcp hostname
 </details>

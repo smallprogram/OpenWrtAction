@@ -2,16 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-044c7d55b3|Mieczyslaw Nalewaj|Fri Apr 25 16:59:55 2025 +0200|ramips: update drivers to be compatible with kernel 6.12
-6b0f414aff|Mieczyslaw Nalewaj|Tue May 6 00:40:56 2025 +0200|mac80211: rt2x00: use remove_new
-b1215758e1|Aleksander Jan Bajkowski|Sat Mar 29 23:39:19 2025 +0100|iw: fix WiFi 6 (HE) Scan on big endian platforms
-169dc6270a|Dave Marquard|Sat Apr 26 17:39:33 2025 -0700|bcm27xx: bcm2712: support all devices
-8774dd7761|Dave Marquard|Tue May 6 02:33:59 2025 +0000|linux-firmware: add Raspberry Pi 5 CM NVRAM
-0b1e1943d5|Felix Fietkau|Tue May 6 14:28:51 2025 +0200|toolchain/musl: fix build regression on x86_64
-be7ab6893a|Shiji Yang|Thu May 1 10:18:52 2025 +0800|generic: fix MIPS -mno-long-calls patchset for 6.12 kernel
-2d6f0275f8|Tim Harvey|Mon Apr 14 10:34:31 2025 -0700|imx: coretexa53: add network config for single-port Gateworks Venice boards
-1308b4fb1c|Markus Stockhausen|Sat May 3 02:35:41 2025 -0400|realtek: fix cpu port link type
-81e46d2a23|Álvaro Fernández Rojas|Mon May 5 13:01:55 2025 +0200|generic: 6.12: sync Realtek PHY patches with upstream
-732d6e9332|Álvaro Fernández Rojas|Mon May 5 13:35:59 2025 +0200|generic: 6.12: backport hwmon_ops static visibility
-94dbbe3496|Álvaro Fernández Rojas|Mon May 5 12:54:01 2025 +0200|generic: 6.12: sync r8169 patches with upstream
+1b7fd8464c|Linus Lüssing|Wed May 7 02:50:11 2025 +0200|realtek: rtl838x: fix broadcast flooding with many multicast entries
+0b4ddeed5e|Felix Fietkau|Wed May 7 17:21:38 2025 +0200|ucode-mod-uline: re-introduce polling loop to fix prompt after line end
+840c1fda83|Paweł Owoc|Tue May 6 22:53:49 2025 +0200|ath10k-ct: update to latest version 6.14 from 2025-04-30
+3f75f7d04e|Mieczyslaw Nalewaj|Tue May 6 19:47:47 2025 +0200|kernel: bump 6.12 to 6.12.27
+e31738e83d|Scott Mercer|Wed Apr 30 14:46:51 2025 -0400|qualcommax: ipq50xx: gl-b3000: add 03_set_oem_name
+fa0f130764|Daniel Golle|Wed May 7 03:58:17 2025 +0100|generic: 6.12: update block NVMEM driver
+2ce11c911d|Daniel Golle|Wed May 7 03:29:42 2025 +0100|generic: 6.12: update fitblk driver for Linux 6.12
 </details>

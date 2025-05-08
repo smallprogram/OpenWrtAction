@@ -2,18 +2,19 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-974b885c08|Tianling Shen|Tue May 6 14:25:45 2025 +0800|Merge Official Source
-3277a38e14|Tianling Shen|Tue May 6 14:24:51 2025 +0800|dnsmasq: bump PKG_RELEASE
-06f44f69b6|Felix Fietkau|Mon May 5 13:55:42 2025 +0200|unetmsg: add subscriber update callback to notify about publish events
-6fcaf3d589|Felix Fietkau|Mon May 5 11:38:59 2025 +0200|unetmsg: fix issuing requests without previously subscribing
-55cff42121|Felix Fietkau|Mon May 5 11:37:39 2025 +0200|gdb: update to version 16.2
-edd997a9ee|Felix Fietkau|Mon May 5 11:37:14 2025 +0200|musl: add pending patch to fix CFI annotations
-6f8f404113|Felix Fietkau|Mon May 5 09:58:01 2025 +0200|libubox: update to Git HEAD (2024-12-19)
-3f7f6079fc|Jonas Gorski|Sun May 4 16:40:11 2025 +0200|kernel: iio: iio-core: update dependencies for 6.12
-de980e67b6|Jonas Gorski|Sun May 4 16:32:38 2025 +0200|kernel: bluetooth: btmtk: update dependencies for 6.12
-f8da45e25d|Nick Hainke|Sun May 4 22:38:10 2025 +0200|tools/b43-tools: update to latest version, fix C23 build
-ecc0f549c4|Mieczyslaw Nalewaj|Sat May 3 13:44:04 2025 +0200|kernel: bump 6.12 to 6.12.26
-b0aa7b3da6|Robert Marko|Sun May 4 00:06:28 2025 +0200|libiconv-full: update to 1.18
-c018a1cd58|Robert Marko|Sat May 3 23:56:04 2025 +0200|libiconv-full: drop patch-libtool fixup
-e8b470139c|Konstantin Demin|Fri May 2 23:47:01 2025 +0300|tools: add options to optimize host binaries
+6a7afd408a|Tianling Shen|Wed May 7 14:23:51 2025 +0800|Merge Official Source
+fa0f130764|Daniel Golle|Wed May 7 03:58:17 2025 +0100|generic: 6.12: update block NVMEM driver
+2ce11c911d|Daniel Golle|Wed May 7 03:29:42 2025 +0100|generic: 6.12: update fitblk driver for Linux 6.12
+044c7d55b3|Mieczyslaw Nalewaj|Fri Apr 25 16:59:55 2025 +0200|ramips: update drivers to be compatible with kernel 6.12
+6b0f414aff|Mieczyslaw Nalewaj|Tue May 6 00:40:56 2025 +0200|mac80211: rt2x00: use remove_new
+b1215758e1|Aleksander Jan Bajkowski|Sat Mar 29 23:39:19 2025 +0100|iw: fix WiFi 6 (HE) Scan on big endian platforms
+169dc6270a|Dave Marquard|Sat Apr 26 17:39:33 2025 -0700|bcm27xx: bcm2712: support all devices
+8774dd7761|Dave Marquard|Tue May 6 02:33:59 2025 +0000|linux-firmware: add Raspberry Pi 5 CM NVRAM
+0b1e1943d5|Felix Fietkau|Tue May 6 14:28:51 2025 +0200|toolchain/musl: fix build regression on x86_64
+be7ab6893a|Shiji Yang|Thu May 1 10:18:52 2025 +0800|generic: fix MIPS -mno-long-calls patchset for 6.12 kernel
+2d6f0275f8|Tim Harvey|Mon Apr 14 10:34:31 2025 -0700|imx: coretexa53: add network config for single-port Gateworks Venice boards
+1308b4fb1c|Markus Stockhausen|Sat May 3 02:35:41 2025 -0400|realtek: fix cpu port link type
+81e46d2a23|Álvaro Fernández Rojas|Mon May 5 13:01:55 2025 +0200|generic: 6.12: sync Realtek PHY patches with upstream
+732d6e9332|Álvaro Fernández Rojas|Mon May 5 13:35:59 2025 +0200|generic: 6.12: backport hwmon_ops static visibility
+94dbbe3496|Álvaro Fernández Rojas|Mon May 5 12:54:01 2025 +0200|generic: 6.12: sync r8169 patches with upstream
 </details>
