@@ -2,8 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-69a688d|lwb1978|Thu May 8 02:18:33 2025 +0800|luci: fix `server_app` lost type
-6416b68|lwb1978|Thu May 8 01:58:20 2025 +0800|luci: server: support custom config
-0297722|lwb1978|Thu May 8 01:09:45 2025 +0800|luci: optimize
-0796912|A-BO|Thu May 8 00:38:33 2025 +0800|luci: dns support parsing dhcp hostname
+419af45|lwb1978|Thu May 8 21:58:19 2025 +0800|luci: bump to 25.5.8
+d1ed872|lwb1978|Thu May 8 21:52:08 2025 +0800|luci: fix haproxy remark name conflict
+475c93c|lwb1978|Thu May 8 19:45:39 2025 +0800|luci: haproxy auto set node port values
+023a96f|lwb1978|Thu May 8 11:37:17 2025 +0800|luci: add export node config feature
 </details>

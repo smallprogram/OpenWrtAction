@@ -2,11 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+3f1acf068|coolsnowwolf|Thu May 8 20:29:49 2025 +0800|kernel: bump 6.12 to 6.12.27
+6256c5982|coolsnowwolf|Thu May 8 20:20:57 2025 +0800|wwan: fix wwan drivers build with kernel 6.12
+dc780ad83|coolsnowwolf|Mon Apr 28 23:40:02 2025 +0800|armsr: add new target from armvirt
+d124925fa|coolsnowwolf|Thu Jan 9 23:34:35 2025 +0800|x86: interpolate GRUB_SERIAL into /etc/inittab
+c3e37b59e|coolsnowwolf|Wed Jan 8 23:17:09 2025 +0800|target: Make TARGET_SERIAL independent of GRUB
 a60fee8de|coolsnowwolf|Thu May 8 04:50:45 2025 +0800|armsr: Move kmod-stmmac-core to common place
 ccb412b4f|coolsnowwolf|Thu May 8 03:44:42 2025 +0800|armsr: add new target from armvirt
 157fd0a8f|coolsnowwolf|Thu May 8 03:34:35 2025 +0800|x86: interpolate GRUB_SERIAL into /etc/inittab
 53bab4621|coolsnowwolf|Thu May 8 03:17:49 2025 +0800|target: Make TARGET_SERIAL independent of GRUB configuration
 9d1795db8|coolsnowwolf|Thu May 8 02:44:57 2025 +0800|rockchip: using kmod-usb-net-rtl8152-vendor for better network performance
-4f5a34e80|coolsnowwolf|Thu May 8 02:33:22 2025 +0800|kernel: bump 6.1 to 6.1.137
-b80ba6f8b|Mantas Pucka|Fri Nov 22 10:07:43 2024 +0200|kernel: adjust kmod-phy-aquantia dependencies
 </details>
