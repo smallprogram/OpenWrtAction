@@ -2,21 +2,21 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a1da2f8465|Aleksander Jan Bajkowski|Mon Jan 27 21:23:50 2025 +0100|mediatek: filogic: increase spi flash memory speed on ZyXEL EX5601
-7db0748b7b|Shiji Yang|Thu May 1 11:35:36 2025 +0800|kernel: modules: split package fs-fscache
-ef2310b031|Shiji Yang|Thu May 1 11:35:36 2025 +0800|kernel: modules: update dependency for kmod-tpm
-5048c9d501|Shiji Yang|Thu May 1 11:35:36 2025 +0800|kernel: modules: adjust the object files of kmod-fb
-b2fa7e4b9d|Robert Marko|Thu May 8 21:02:44 2025 +0200|qualcommax: use upstreamed IPQ5018 PCI support
-d932d884b2|Lech Perczak|Sun Nov 12 23:55:39 2023 +0100|ath79: support Mikrotik RouterBOARD 2011-UiAS-2HnD
-3b309e41cf|Álvaro Fernández Rojas|Thu May 8 08:15:48 2025 +0200|generic: 6.12: add new config symbols
-5337627ca4|Robert Marko|Thu May 8 18:09:16 2025 +0200|qualcommax: use upstream QMP pipe patch
-e9f1024779|Robert Marko|Thu May 8 18:06:38 2025 +0200|generic: 6.12: add Qualcomm PBS symbol
-bdad7c1aba|Robert Marko|Thu May 8 17:35:09 2025 +0200|generic: 6.12: add Qualcomm PM8916 symbols
-0b07da92f5|Robert Marko|Thu May 8 17:50:24 2025 +0200|qualcommax: renumber upstreamed patches
-01b72ce61e|George Moussalem|Tue May 6 10:18:09 2025 +0400|qualcommax: ipq50xx: remove ECC user config from board files
-c5e359a236|George Moussalem|Tue May 6 10:02:27 2025 +0400|spi: spi-qpic-snand: update driver with latest patches from upstream
-cc50cac8a0|Robert Marko|Thu May 8 13:27:08 2025 +0200|qualcommax: use upstreamed multiple conf clock patches
-d6ba1c99fd|Robert Marko|Thu May 8 13:19:34 2025 +0200|ath11k-firmware: fix legacy FW tarball hash
-d0234d4a29|Robert Marko|Thu May 8 12:14:42 2025 +0200|qualcommax: update kernel version for MP5496 patches
-94e04a4513|Henry Tung|Sun May 4 11:29:54 2025 -0700|mac80211: ath11k: fix broadcast failures during GTK rekeying
+ffde9a9fe9|Shiji Yang|Fri May 9 22:12:11 2025 +0800|realtek rtl931x: mark subtarget as source-only
+56d818afd6|Robert Marko|Fri May 9 16:17:25 2025 +0200|qca-nss-dp: use OpenWrt GIT repo as upstream
+1c4339180a|Robert Marko|Fri May 9 16:14:16 2025 +0200|qca-ssdk: use OpenWrt GIT repo as upstream
+9a3c6df21b|Robert Marko|Fri May 9 14:10:41 2025 +0200|generic: config-filter: filter out CONFIG_RUSTC_SUPPORTS_* symbols
+538efe5d6b|Álvaro Fernández Rojas|Fri May 9 07:23:00 2025 +0200|bmips: sercomm-msp430: fix duplicated definition
+59764a7079|Álvaro Fernández Rojas|Fri May 9 11:46:46 2025 +0200|bmips: add missing PCI drivers include
+eaab68be92|Felix Fietkau|Fri May 9 12:04:28 2025 +0200|ucode: add fix for double registry clear on channel disconnect
+9daca55916|Shiji Yang|Thu May 8 19:23:30 2025 +0800|ramips: rt288x: remove default build barriers
+0144df6ca2|Shiji Yang|Thu May 8 19:23:14 2025 +0800|ramips: rt288x: mark subtarget as source-only
+551497f823|Shiji Yang|Thu May 8 19:23:07 2025 +0800|lantig: xway_legacy: remove default build barriers
+37ce497e5b|Shiji Yang|Thu May 8 19:22:48 2025 +0800|lantig: xway_legacy: mark subtarget as source-only
+9952345a0a|Shiji Yang|Thu May 8 19:22:33 2025 +0800|lantig: ase: remove default build barriers
+447c62588a|Shiji Yang|Thu May 8 19:22:16 2025 +0800|lantig: ase: mark subtarget as source-only
+b88f3ebb33|Eric Fahlgren|Thu May 8 15:28:52 2025 -0700|imagebuilder: exclude metadata for profiles that have no kernel
+4cfd1c4501|Markus Stockhausen|Tue May 6 02:44:43 2025 -0400|realtek: proper RTL8214FC fibre/copper detection
+41728acc77|Felix Fietkau|Fri May 9 10:11:26 2025 +0200|unetmsg: fix reconnecting outgoing socket
+76a18ddad8|Daniel Golle|Fri May 9 03:46:29 2025 +0100|kernel: modules: fs: add missing backslash
 </details>

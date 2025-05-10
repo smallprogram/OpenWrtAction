@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-419af45|lwb1978|Thu May 8 21:58:19 2025 +0800|luci: bump to 25.5.8
-d1ed872|lwb1978|Thu May 8 21:52:08 2025 +0800|luci: fix haproxy remark name conflict
-475c93c|lwb1978|Thu May 8 19:45:39 2025 +0800|luci: haproxy auto set node port values
-023a96f|lwb1978|Thu May 8 11:37:17 2025 +0800|luci: add export node config feature
-</details>
