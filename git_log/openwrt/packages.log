@@ -2,15 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a0df926a0|Eric Luehrsen|Thu May 1 23:39:37 2025 -0400|unbound: update to 1.23.0
-a7f229fce|George Sapkin|Thu May 8 15:24:18 2025 +0300|syncthing: add discovery and relay descriptions
-9f78bed3f|George Sapkin|Tue May 6 19:23:01 2025 +0300|syncthing: bump to 1.29.6
-b36612de6|Tianling Shen|Fri May 9 16:29:31 2025 +0800|yq: Update to 4.45.3
-12b3f6291|Tianling Shen|Fri May 9 16:17:27 2025 +0800|cloudflared: Update to 2025.4.2
-a91d27880|Tianling Shen|Fri May 9 16:17:19 2025 +0800|v2ray-geodata: Update to latest version
-051fdf7ca|Tianling Shen|Fri May 9 16:14:36 2025 +0800|v2ray-core: Update to 5.31.0
-72fafd38e|Tianling Shen|Fri May 9 16:13:45 2025 +0800|xray-core: Update to 25.4.30
-d2c2a47ff|Tianling Shen|Fri May 9 16:12:12 2025 +0800|rclone: Update to 1.69.2
-cef2fb9d8|Wesley Gimenes|Tue May 6 15:36:55 2025 -0300|netbird: update to 0.43.2
-650fe4d62|Stan Grishin|Thu May 8 21:39:27 2025 +0000|pbr: bugfix: no errors on negated values
+c851cf35c|John Audia|Fri Apr 11 09:57:51 2025 -0400|nfs-kernel-server: update to v2.8.3
+f2030e625|John Audia|Sun Mar 2 05:15:55 2025 -0500|nfs-kernel-server: update to v2.8.2
 </details>

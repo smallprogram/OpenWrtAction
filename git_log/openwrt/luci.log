@@ -1,0 +1,9 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+50bee13aeb|Hannu Nyman|Sat May 10 14:51:32 2025 +0300|treewide: Prune old unused translations strings - part 2
+5d02ccd2fd|Hannu Nyman|Sat May 10 14:43:01 2025 +0300|treewide: Prune old unused translations strings
+bd76fb9193|Hannu Nyman|Sat May 10 13:37:03 2025 +0300|treewide: Sync translations
+3ae5de97fe|Hosted Weblate|Fri May 9 23:47:03 2025 +0200|Translated using Weblate (Hungarian)
+</details>

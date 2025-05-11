@@ -2,21 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ffde9a9fe9|Shiji Yang|Fri May 9 22:12:11 2025 +0800|realtek rtl931x: mark subtarget as source-only
-56d818afd6|Robert Marko|Fri May 9 16:17:25 2025 +0200|qca-nss-dp: use OpenWrt GIT repo as upstream
-1c4339180a|Robert Marko|Fri May 9 16:14:16 2025 +0200|qca-ssdk: use OpenWrt GIT repo as upstream
-9a3c6df21b|Robert Marko|Fri May 9 14:10:41 2025 +0200|generic: config-filter: filter out CONFIG_RUSTC_SUPPORTS_* symbols
-538efe5d6b|Álvaro Fernández Rojas|Fri May 9 07:23:00 2025 +0200|bmips: sercomm-msp430: fix duplicated definition
-59764a7079|Álvaro Fernández Rojas|Fri May 9 11:46:46 2025 +0200|bmips: add missing PCI drivers include
-eaab68be92|Felix Fietkau|Fri May 9 12:04:28 2025 +0200|ucode: add fix for double registry clear on channel disconnect
-9daca55916|Shiji Yang|Thu May 8 19:23:30 2025 +0800|ramips: rt288x: remove default build barriers
-0144df6ca2|Shiji Yang|Thu May 8 19:23:14 2025 +0800|ramips: rt288x: mark subtarget as source-only
-551497f823|Shiji Yang|Thu May 8 19:23:07 2025 +0800|lantig: xway_legacy: remove default build barriers
-37ce497e5b|Shiji Yang|Thu May 8 19:22:48 2025 +0800|lantig: xway_legacy: mark subtarget as source-only
-9952345a0a|Shiji Yang|Thu May 8 19:22:33 2025 +0800|lantig: ase: remove default build barriers
-447c62588a|Shiji Yang|Thu May 8 19:22:16 2025 +0800|lantig: ase: mark subtarget as source-only
-b88f3ebb33|Eric Fahlgren|Thu May 8 15:28:52 2025 -0700|imagebuilder: exclude metadata for profiles that have no kernel
-4cfd1c4501|Markus Stockhausen|Tue May 6 02:44:43 2025 -0400|realtek: proper RTL8214FC fibre/copper detection
-41728acc77|Felix Fietkau|Fri May 9 10:11:26 2025 +0200|unetmsg: fix reconnecting outgoing socket
-76a18ddad8|Daniel Golle|Fri May 9 03:46:29 2025 +0100|kernel: modules: fs: add missing backslash
+b5fba20351|Rosen Penev|Thu May 1 14:11:56 2025 -0700|linux: remove of_match_ptr from OF only drivers
+703e7d2d5b|Nathaniel Wesley Filardo|Sun May 4 21:40:13 2025 +0100|cmake: use RelWithDebInfo, not Debug, with CONFIG_DEBUG
+53054fead5|Henry Tung|Fri May 9 16:45:34 2025 -0700|tools/llvm-bpf: fix compilation with GCC15
+8fb46725cf|INAGAKI Hiroshi|Sat May 10 16:33:04 2025 +0900|qualcommax: ipq50xx: fix NAND ECC for ELECOM WRC-X3000GS2
+5017ecac84|Álvaro Fernández Rojas|Sat May 10 09:00:45 2025 +0200|bmips: sercomm-msp430: fix include
+9ffbef7e19|Álvaro Fernández Rojas|Fri May 9 08:46:18 2025 +0200|bcm27xx: fix kmod-drm-rp1 modules dependencies
+22c02e6629|Álvaro Fernández Rojas|Fri May 9 09:39:40 2025 +0200|kernel: modules: video: package DRM VRAM helper
+e9799d2dd4|Álvaro Fernández Rojas|Fri May 9 08:59:41 2025 +0200|kernel: add KERNEL_ARM64_CONTPTE
 </details>
