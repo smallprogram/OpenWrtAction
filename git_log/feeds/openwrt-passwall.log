@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-442ad6f|lwb1978|Sat May 10 23:00:20 2025 +0800|luci: xray skip rawSettings if tcp_guise is none
-</details>

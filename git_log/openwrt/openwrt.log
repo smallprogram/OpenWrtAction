@@ -2,12 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b5fba20351|Rosen Penev|Thu May 1 14:11:56 2025 -0700|linux: remove of_match_ptr from OF only drivers
-703e7d2d5b|Nathaniel Wesley Filardo|Sun May 4 21:40:13 2025 +0100|cmake: use RelWithDebInfo, not Debug, with CONFIG_DEBUG
-53054fead5|Henry Tung|Fri May 9 16:45:34 2025 -0700|tools/llvm-bpf: fix compilation with GCC15
-8fb46725cf|INAGAKI Hiroshi|Sat May 10 16:33:04 2025 +0900|qualcommax: ipq50xx: fix NAND ECC for ELECOM WRC-X3000GS2
-5017ecac84|Álvaro Fernández Rojas|Sat May 10 09:00:45 2025 +0200|bmips: sercomm-msp430: fix include
-9ffbef7e19|Álvaro Fernández Rojas|Fri May 9 08:46:18 2025 +0200|bcm27xx: fix kmod-drm-rp1 modules dependencies
-22c02e6629|Álvaro Fernández Rojas|Fri May 9 09:39:40 2025 +0200|kernel: modules: video: package DRM VRAM helper
-e9799d2dd4|Álvaro Fernández Rojas|Fri May 9 08:59:41 2025 +0200|kernel: add KERNEL_ARM64_CONTPTE
+2a9316fbfb|Felix Fietkau|Sun May 11 15:25:54 2025 +0200|ucode: update to Git HEAD (2025-05-11)
+4044ce7109|Tianling Shen|Fri May 2 21:01:48 2025 +0800|kernel: add missing Kconfig symbols
+3d9236d451|Aleksander Jan Bajkowski|Sat Mar 29 23:39:19 2025 +0100|iw: backport WiFi 7 (EHT) scan support
+ba6aacd2b8|Gustavo Bertoli|Wed Mar 12 18:22:12 2025 +0100|hostapd: Enable DPPv2 support for OpenSSL and mbedtls
+7398204683|Shiji Yang|Tue Apr 29 20:52:59 2025 +0800|nat46: bump to latest git HEAD 2025-04-23
+a3da25c62b|Aleksander Jan Bajkowski|Sun Mar 30 19:34:57 2025 +0200|lantiq: xrx200_legacy: rename TP-LINK to TP-Link
+e4b8279b7e|Aleksander Jan Bajkowski|Sun Mar 30 19:33:31 2025 +0200|lantiq: xrx200_legacy: rename PHY LEDs
+75403dd1d0|David DeGraw|Fri Apr 18 11:55:34 2025 -0600|ramips: add support for Cudy R700
+f828be4d10|David Bauer|Tue May 6 18:23:50 2025 +0200|ramips: use i2c-gpio driver for EX400
+49a1781d74|David Bauer|Sun May 4 04:45:03 2025 +0200|ramips: support Genexis EX400 touch controller
+0842e79338|David Bauer|Sun May 4 04:47:32 2025 +0200|ramips: add Semtech SX9512 touch input driver
+ff55daf1eb|David Bauer|Sun May 4 04:49:50 2025 +0200|ramips: drop ALT0 name from Pulse EX400 dts model
 </details>
