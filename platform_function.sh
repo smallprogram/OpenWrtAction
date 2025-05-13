@@ -139,7 +139,7 @@ function Func_Compile_Firmware() {
     Func_LogMessage "开始将OpenwrtAction中的自定义feeds注入源码中...." "Started injecting custom feeds in OpenwrtAction into source code..."
     sleep 2s
     echo
-    cat /home/${user_name}/OpenWrtAction/$feeds_dir >/home/${user_name}/${openwrt_dir}/feeds.conf.default
+    cp /home/${user_name}/OpenWrtAction/$feeds_dir /home/${user_name}/${openwrt_dir}/feeds.conf.default
 
     Func_DIY1_Script
 
@@ -169,9 +169,9 @@ function Func_Compile_Firmware() {
     Func_LogMessage "开始将OpenwrtAction中config文件夹下的${config_name}注入源码中,准备make toolchain...." "Start to inject ${config_name} under the config folder in OpenwrtAction into source code..."
     sleep 2s
     echo
-    cat /home/${user_name}/OpenWrtAction/$config_dir/${config_name} >/home/${user_name}/${openwrt_dir}/.config
+    cp /home/${user_name}/OpenWrtAction/$config_dir/${config_name} /home/${user_name}/${openwrt_dir}/.config
 
-    cat /home/${user_name}/${openwrt_dir}/.config >/home/${user_name}/${log_folder_name}/${folder_name}/.config_old
+    cp /home/${user_name}/${openwrt_dir}/.config /home/${user_name}/${log_folder_name}/${folder_name}/.config_old
     # echo -e "\nCONFIG_ALL=y" >> .config
     # echo -e "\nCONFIG_ALL_NONSHARED=y" >> .config
 
@@ -179,7 +179,7 @@ function Func_Compile_Firmware() {
     sleep 1s
     make defconfig | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main3_make_defconfig-git_log.log
 
-    cat /home/${user_name}/${openwrt_dir}/.config >/home/${user_name}/${log_folder_name}/${folder_name}/.config_new
+    cp /home/${user_name}/${openwrt_dir}/.config /home/${user_name}/${log_folder_name}/${folder_name}/.config_new
     diff /home/${user_name}/${log_folder_name}/${folder_name}/.config_old /home/${user_name}/${log_folder_name}/${folder_name}/.config_new -y -W 200 >/home/${user_name}/${log_folder_name}/${folder_name}/.config_diff
 
     Func_LogMessage "开始执行make download!" "Start to execute make download!"
@@ -572,7 +572,7 @@ function Func_Main() {
         Func_LogMessage "开始将OpenwrtAction中的自定义feeds注入源码中...." "Started injecting custom feeds in OpenwrtAction into source code..."
         sleep 2s
         echo
-        cat /home/${user_name}/OpenWrtAction/$feeds_dir >/home/${user_name}/${openwrt_dir}/feeds.conf.default
+        cp /home/${user_name}/OpenWrtAction/$feeds_dir /home/${user_name}/${openwrt_dir}/feeds.conf.default
         cd /home/${user_name}/${openwrt_dir}
 
         Func_LogMessage "创建编译日志文件夹/home/${user_name}/${log_folder_name}/${folder_name}" "Create compilation log folder /home/${user_name}/${log_folder_name}/${folder_name}"
@@ -609,12 +609,12 @@ function Func_Main() {
             Func_LogMessage "开始将OpenwrtAction中config文件夹下的${config_name}注入源码中...." "Start to inject ${config_name} under the config folder in OpenwrtAction into source code..."
             sleep 2s
             echo
-            cat /home/${user_name}/OpenWrtAction/$config_dir/${config_name} >/home/${user_name}/${openwrt_dir}/.config
+            cp /home/${user_name}/OpenWrtAction/$config_dir/${config_name} /home/${user_name}/${openwrt_dir}/.config
         fi
 
         cd /home/${user_name}/${openwrt_dir}
         make menuconfig
-        cat /home/${user_name}/${openwrt_dir}/.config >/home/${user_name}/OpenWrtAction/$config_dir/${config_name}
+        cp /home/${user_name}/${openwrt_dir}/.config /home/${user_name}/OpenWrtAction/$config_dir/${config_name}
         cd /home/${user_name}/OpenWrtAction
 
         if [ ! -n "$(git config --global user.email)" ]; then
