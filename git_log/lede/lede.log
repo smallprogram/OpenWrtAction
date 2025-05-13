@@ -2,24 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b3f63c794|coolsnowwolf|Sat May 10 23:15:21 2025 +0800|kernel: bump all to latest HEAD
-31ddab04e|coolsnowwolf|Sat May 10 20:03:15 2025 +0800|ath79: add TP-Link TL-R473G support
-6dae534e4|coolsnowwolf|Sat May 10 23:30:03 2025 +0800|treewide: switch default kernel to 6.6
-ef5639350|coolsnowwolf|Thu May 1 23:38:10 2025 +0800|loongarch64: sync with upstream source
-96f3d3781|coolsnowwolf|Wed Jan 1 20:05:36 2025 +0800|r8152: fix missing dependency for 6.12
-70bdba280|coolsnowwolf|Sat Apr 5 23:30:40 2025 +0800|iw: backport he operation scan support
-2d413d552|coolsnowwolf|Fri May 9 19:28:12 2025 +0800|qualcommax: add autocore-arm by default
-9cafbd215|coolsnowwolf|Fri May 9 19:22:33 2025 +0800|kernel: bump 5.15 to 5.15.182
-ca65a2c53|coolsnowwolf|Fri May 9 19:20:25 2025 +0800|kernel: bump 6.1 to 6.1.138
-6e19ad5db|coolsnowwolf|Fri May 9 19:18:26 2025 +0800|kernel: bump 6.6 to 6.6.90
-b34be3430|coolsnowwolf|Fri May 9 18:58:14 2025 +0800|kernel: bump 6.12 to 6.12.28
-865395a78|coolsnowwolf|Fri May 9 18:35:29 2025 +0800|kernel: usb: add kmod-usb-net-cdc-ncm for r8152 dependencies
-bfc0af21e|coolsnowwolf|Fri May 9 18:24:43 2025 +0800|sifiveu: switch default to 6.6
-1e2f71576|coolsnowwolf|Fri May 9 18:00:54 2025 +0800|uml: switch to 6.6 kernel
-978d096e4|coolsnowwolf|Fri May 9 15:08:11 2025 +0800|qualcommax: default to kernel 6.6
-88a2de3b3|coolsnowwolf|Fri May 9 14:46:44 2025 +0800|ath79: switch default kernel to 6.6
-385576dab|coolsnowwolf|Fri May 9 14:15:37 2025 +0800|bcm53xx: use kernel 6.6 by default
-3140d3e10|coolsnowwolf|Fri May 9 13:47:47 2025 +0800|mvebu: switch to kernel 6.6
-41feac499|coolsnowwolf|Fri May 9 13:38:11 2025 +0800|loongarch64: sync with upstream
-c5437ecdd|coolsnowwolf|Fri May 9 13:13:40 2025 +0800|iw: backport WiFi 7 (EHT) scan support
+0ebb4c0b0|coolsnowwolf|Mon May 12 15:49:48 2025 +0800|bcm27xx: Remove upstreamed patches
 </details>

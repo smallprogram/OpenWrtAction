@@ -2,53 +2,22 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5177c5f873|Tianling Shen|Sun May 11 13:18:07 2025 +0800|Merge Official Source
-677510188b|Tianling Shen|Sun May 11 13:15:15 2025 +0800|r8152: add kmod-libphy to dependencies for kernel 6.12
-b5fba20351|Rosen Penev|Thu May 1 14:11:56 2025 -0700|linux: remove of_match_ptr from OF only drivers
-703e7d2d5b|Nathaniel Wesley Filardo|Sun May 4 21:40:13 2025 +0100|cmake: use RelWithDebInfo, not Debug, with CONFIG_DEBUG
-53054fead5|Henry Tung|Fri May 9 16:45:34 2025 -0700|tools/llvm-bpf: fix compilation with GCC15
-8fb46725cf|INAGAKI Hiroshi|Sat May 10 16:33:04 2025 +0900|qualcommax: ipq50xx: fix NAND ECC for ELECOM WRC-X3000GS2
-5017ecac84|Álvaro Fernández Rojas|Sat May 10 09:00:45 2025 +0200|bmips: sercomm-msp430: fix include
-9ffbef7e19|Álvaro Fernández Rojas|Fri May 9 08:46:18 2025 +0200|bcm27xx: fix kmod-drm-rp1 modules dependencies
-22c02e6629|Álvaro Fernández Rojas|Fri May 9 09:39:40 2025 +0200|kernel: modules: video: package DRM VRAM helper
-e9799d2dd4|Álvaro Fernández Rojas|Fri May 9 08:59:41 2025 +0200|kernel: add KERNEL_ARM64_CONTPTE
-ffde9a9fe9|Shiji Yang|Fri May 9 22:12:11 2025 +0800|realtek rtl931x: mark subtarget as source-only
-56d818afd6|Robert Marko|Fri May 9 16:17:25 2025 +0200|qca-nss-dp: use OpenWrt GIT repo as upstream
-1c4339180a|Robert Marko|Fri May 9 16:14:16 2025 +0200|qca-ssdk: use OpenWrt GIT repo as upstream
-9a3c6df21b|Robert Marko|Fri May 9 14:10:41 2025 +0200|generic: config-filter: filter out CONFIG_RUSTC_SUPPORTS_* symbols
-538efe5d6b|Álvaro Fernández Rojas|Fri May 9 07:23:00 2025 +0200|bmips: sercomm-msp430: fix duplicated definition
-59764a7079|Álvaro Fernández Rojas|Fri May 9 11:46:46 2025 +0200|bmips: add missing PCI drivers include
-eaab68be92|Felix Fietkau|Fri May 9 12:04:28 2025 +0200|ucode: add fix for double registry clear on channel disconnect
-9daca55916|Shiji Yang|Thu May 8 19:23:30 2025 +0800|ramips: rt288x: remove default build barriers
-0144df6ca2|Shiji Yang|Thu May 8 19:23:14 2025 +0800|ramips: rt288x: mark subtarget as source-only
-551497f823|Shiji Yang|Thu May 8 19:23:07 2025 +0800|lantig: xway_legacy: remove default build barriers
-37ce497e5b|Shiji Yang|Thu May 8 19:22:48 2025 +0800|lantig: xway_legacy: mark subtarget as source-only
-9952345a0a|Shiji Yang|Thu May 8 19:22:33 2025 +0800|lantig: ase: remove default build barriers
-447c62588a|Shiji Yang|Thu May 8 19:22:16 2025 +0800|lantig: ase: mark subtarget as source-only
-b88f3ebb33|Eric Fahlgren|Thu May 8 15:28:52 2025 -0700|imagebuilder: exclude metadata for profiles that have no kernel
-4cfd1c4501|Markus Stockhausen|Tue May 6 02:44:43 2025 -0400|realtek: proper RTL8214FC fibre/copper detection
-41728acc77|Felix Fietkau|Fri May 9 10:11:26 2025 +0200|unetmsg: fix reconnecting outgoing socket
-76a18ddad8|Daniel Golle|Fri May 9 03:46:29 2025 +0100|kernel: modules: fs: add missing backslash
-a1da2f8465|Aleksander Jan Bajkowski|Mon Jan 27 21:23:50 2025 +0100|mediatek: filogic: increase spi flash memory speed on ZyXEL EX5601
-7db0748b7b|Shiji Yang|Thu May 1 11:35:36 2025 +0800|kernel: modules: split package fs-fscache
-ef2310b031|Shiji Yang|Thu May 1 11:35:36 2025 +0800|kernel: modules: update dependency for kmod-tpm
-5048c9d501|Shiji Yang|Thu May 1 11:35:36 2025 +0800|kernel: modules: adjust the object files of kmod-fb
-b2fa7e4b9d|Robert Marko|Thu May 8 21:02:44 2025 +0200|qualcommax: use upstreamed IPQ5018 PCI support
-d932d884b2|Lech Perczak|Sun Nov 12 23:55:39 2023 +0100|ath79: support Mikrotik RouterBOARD 2011-UiAS-2HnD
-3b309e41cf|Álvaro Fernández Rojas|Thu May 8 08:15:48 2025 +0200|generic: 6.12: add new config symbols
-5337627ca4|Robert Marko|Thu May 8 18:09:16 2025 +0200|qualcommax: use upstream QMP pipe patch
-e9f1024779|Robert Marko|Thu May 8 18:06:38 2025 +0200|generic: 6.12: add Qualcomm PBS symbol
-bdad7c1aba|Robert Marko|Thu May 8 17:35:09 2025 +0200|generic: 6.12: add Qualcomm PM8916 symbols
-0b07da92f5|Robert Marko|Thu May 8 17:50:24 2025 +0200|qualcommax: renumber upstreamed patches
-01b72ce61e|George Moussalem|Tue May 6 10:18:09 2025 +0400|qualcommax: ipq50xx: remove ECC user config from board files
-c5e359a236|George Moussalem|Tue May 6 10:02:27 2025 +0400|spi: spi-qpic-snand: update driver with latest patches from upstream
-cc50cac8a0|Robert Marko|Thu May 8 13:27:08 2025 +0200|qualcommax: use upstreamed multiple conf clock patches
-d6ba1c99fd|Robert Marko|Thu May 8 13:19:34 2025 +0200|ath11k-firmware: fix legacy FW tarball hash
-d0234d4a29|Robert Marko|Thu May 8 12:14:42 2025 +0200|qualcommax: update kernel version for MP5496 patches
-94e04a4513|Henry Tung|Sun May 4 11:29:54 2025 -0700|mac80211: ath11k: fix broadcast failures during GTK rekeying
-1b7fd8464c|Linus Lüssing|Wed May 7 02:50:11 2025 +0200|realtek: rtl838x: fix broadcast flooding with many multicast entries
-0b4ddeed5e|Felix Fietkau|Wed May 7 17:21:38 2025 +0200|ucode-mod-uline: re-introduce polling loop to fix prompt after line end
-840c1fda83|Paweł Owoc|Tue May 6 22:53:49 2025 +0200|ath10k-ct: update to latest version 6.14 from 2025-04-30
-3f75f7d04e|Mieczyslaw Nalewaj|Tue May 6 19:47:47 2025 +0200|kernel: bump 6.12 to 6.12.27
-e31738e83d|Scott Mercer|Wed Apr 30 14:46:51 2025 -0400|qualcommax: ipq50xx: gl-b3000: add 03_set_oem_name
+c2b634f5e9|Tianling Shen|Mon May 12 19:54:59 2025 +0800|Merge Official Source
+87bfde67f2|Felix Fietkau|Mon May 12 12:46:12 2025 +0200|ucode: ubus: fix use-after-free on deferred request reply() method
+6e60ce007b|Felix Fietkau|Mon May 12 11:15:09 2025 +0200|unetmsg: clean up remote data when replacing the incoming connection
+9bdbe24176|Felix Fietkau|Mon May 12 11:13:44 2025 +0200|unetmsg: ping on tx channel after new incoming connection
+929702fdc5|Felix Fietkau|Mon May 12 11:00:34 2025 +0200|unetmsg: reconnect on loss of tx connection
+44ef343500|Konstantin Demin|Mon May 12 09:25:58 2025 +0300|toolchain: gcc: fix build error with glibc for aarch64 targets
+2a9316fbfb|Felix Fietkau|Sun May 11 15:25:54 2025 +0200|ucode: update to Git HEAD (2025-05-11)
+4044ce7109|Tianling Shen|Fri May 2 21:01:48 2025 +0800|kernel: add missing Kconfig symbols
+3d9236d451|Aleksander Jan Bajkowski|Sat Mar 29 23:39:19 2025 +0100|iw: backport WiFi 7 (EHT) scan support
+ba6aacd2b8|Gustavo Bertoli|Wed Mar 12 18:22:12 2025 +0100|hostapd: Enable DPPv2 support for OpenSSL and mbedtls
+7398204683|Shiji Yang|Tue Apr 29 20:52:59 2025 +0800|nat46: bump to latest git HEAD 2025-04-23
+a3da25c62b|Aleksander Jan Bajkowski|Sun Mar 30 19:34:57 2025 +0200|lantiq: xrx200_legacy: rename TP-LINK to TP-Link
+e4b8279b7e|Aleksander Jan Bajkowski|Sun Mar 30 19:33:31 2025 +0200|lantiq: xrx200_legacy: rename PHY LEDs
+75403dd1d0|David DeGraw|Fri Apr 18 11:55:34 2025 -0600|ramips: add support for Cudy R700
+f828be4d10|David Bauer|Tue May 6 18:23:50 2025 +0200|ramips: use i2c-gpio driver for EX400
+49a1781d74|David Bauer|Sun May 4 04:45:03 2025 +0200|ramips: support Genexis EX400 touch controller
+0842e79338|David Bauer|Sun May 4 04:47:32 2025 +0200|ramips: add Semtech SX9512 touch input driver
+ff55daf1eb|David Bauer|Sun May 4 04:49:50 2025 +0200|ramips: drop ALT0 name from Pulse EX400 dts model
 </details>

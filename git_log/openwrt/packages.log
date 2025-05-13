@@ -2,16 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-177487147|Fabrice Fontaine|Wed Feb 26 22:26:44 2025 +0100|libs/libuv: fix PKG_CPE_ID
-6de9eebf5|Fabrice Fontaine|Wed Feb 26 19:40:36 2025 +0100|lang/tcl: fix PKG_CPE_ID
-996f0b81c|Fabrice Fontaine|Wed Feb 26 21:19:30 2025 +0100|utils/logrotate: fix PKG_CPE_ID
-1292d304c|Sander Schutten|Mon Jan 13 19:40:36 2025 +0000|wiki: openwrt naming fixes and contribution improvement
-03088536d|Joel Low|Sat Feb 8 16:23:01 2025 +0800|strongswan: preserve changed configuration files
-061270cce|Maxim Storchak|Wed May 7 13:55:01 2025 +0300|smartmontools: update to 7.5
-4ba4a69f8|Peter van Dijk|Wed May 7 14:23:30 2025 +0200|pdns: update to 4.9.5
-3c566fb06|Tan Zien|Fri May 2 06:34:30 2025 +0800|open-vm-tools: update to 12.5.0
-471960be9|Marius Dinu|Sun May 11 16:19:01 2025 +0300|tvheadend: update to 2024-11-12, new options, patch for bug #26422
-3d9eb08f8|Nikolay Manev|Tue Apr 29 23:34:11 2025 +0300|adblock-fast: Fixed non-printable characters and bump PKG_VERSION
-a5c182c36|Hannu Nyman|Sun May 11 09:52:57 2025 +0300|libpng: Update to 1.6.48
-01b5fcc9e|Hannu Nyman|Sun May 11 09:26:03 2025 +0300|libpng: Revert "libpng: add symlink to debug library" as unnecessary
+aafff5ff9|Stan Grishin|Mon May 12 01:55:03 2025 +0000|https-dns-proxy: update to 2025.05.11
+e64ca4a0d|Rosen Penev|Fri May 2 16:04:46 2025 -0700|ffmpeg: add libatomic dependency
+b3b67527c|Toke Høiland-Jørgensen|Mon May 12 15:32:13 2025 +0200|acme-acmesh: Bump to v3.1.1
+929c515c1|Alexandru Ardelean|Sat May 10 22:34:27 2025 +0300|stress-ng: bump to version 0.19.00
+c8b52088c|Tianling Shen|Mon May 12 19:58:42 2025 +0800|yq: Update to 4.45.4
+6e579e1a4|Tianling Shen|Mon May 12 19:57:52 2025 +0800|dnsproxy: Update to 0.75.4
+5082f9479|Tianling Shen|Mon May 12 19:57:26 2025 +0800|btop: Update to 1.4.3
 </details>

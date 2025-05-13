@@ -1,0 +1,8 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+eff350191a|Stan Grishin|Mon May 12 15:53:44 2025 -0700|Merge pull request #7771 from stangri/master-luci-app-https-dns-proxy
+881c79bbb7|Hosted Weblate|Mon May 12 09:35:46 2025 +0200|Translated using Weblate (Czech)
+bd5cb1dd66|Stan Grishin|Mon May 12 02:08:33 2025 +0000|luci-app-https-dns-proxy: update to 2025.05.11
+</details>
