@@ -19,9 +19,9 @@ make -j$(($(nproc)+1)) \
   package/feeds/packages/libwebp/compile \
   package/feeds/packages/coremark/compile \
   package/feeds/packages/libmspack/compile \
-  package/feeds/packages/glib2/compile \
+  package/feeds/packages/glib2/host/compile \
   package/libs/libubox/compile \
-  package/libs/gettext-full/compile \
+  package/libs/gettext-full/host/compile \
   package/feeds/packages/libvorbis/compile \
   package/network/ipv6/odhcp6c/compile \
   package/feeds/packages/htop/compile \
@@ -52,7 +52,7 @@ make -j$(($(nproc)+1)) \
   package/feeds/passwall_packages/shadowsocks-rust/compile \
   package/feeds/packages/rustdesk-server/compile \
   package/feeds/packages/gnutls/compile \
-  package/feeds/packages/rpcsvc-proto/compile \
+  package/feeds/packages/rpcsvc-proto/host/compile \
   package/feeds/packages/open-vm-tools/compile \
   package/feeds/OpenClash/luci-app-openclash/compile \
   package/feeds/luci/luci-app-rustdesk-server/compile \
