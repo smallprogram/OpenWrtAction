@@ -577,11 +577,13 @@ jobs:
           else
             if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
                 echo "1 threads compile frimware"
-                make -j1
+                # make -j1
+                stdbuf -oL  make -j1 | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now'
                 is_complie_error=${PIPESTATUS[0]}
             else
                 echo "$(nproc) threads compile frimware"
-                make -j$(nproc)
+                # make -j$(nproc)
+                stdbuf -oL  make -j$(nproc) | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now'
                 is_complie_error=${PIPESTATUS[0]}
             fi
           fi
