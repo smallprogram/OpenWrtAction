@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-840ffcf|lwb1978|Tue May 13 17:44:14 2025 +0800|luci: Supplement subscribe parameters for tuic
-e2f2dc5|lwb1978|Tue May 13 11:58:54 2025 +0800|luci: sing-box hy1 add port hopping
-cc38728|lwb1978|Tue May 13 11:27:08 2025 +0800|luci: add the `max-time` parameter to `haproxy_check`
+b25f9a3|lwb1978|Thu May 15 01:18:11 2025 +0800|luci: fix bugs
+43fed89|lwb1978|Thu May 15 00:12:13 2025 +0800|luci: optimize lease2hosts
+7def594|lwb1978|Wed May 14 18:02:11 2025 +0800|luci: optimize haproxy
 </details>
