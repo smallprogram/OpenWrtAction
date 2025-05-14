@@ -430,7 +430,10 @@ jobs:
                 make toolchain/compile -j$(nproc)
                 make package/cleanup -j$(nproc)
                 make target/compile -j$(nproc)
+
+                cd ..
                 chmod +x ${{ matrix.value.DIY_P3_SH }}
+                cd openwrt
                 $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }}
                 is_complie_error=${PIPESTATUS[0]}
             fi
