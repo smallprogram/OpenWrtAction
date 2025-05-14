@@ -2,22 +2,18 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c2b634f5e9|Tianling Shen|Mon May 12 19:54:59 2025 +0800|Merge Official Source
-87bfde67f2|Felix Fietkau|Mon May 12 12:46:12 2025 +0200|ucode: ubus: fix use-after-free on deferred request reply() method
-6e60ce007b|Felix Fietkau|Mon May 12 11:15:09 2025 +0200|unetmsg: clean up remote data when replacing the incoming connection
-9bdbe24176|Felix Fietkau|Mon May 12 11:13:44 2025 +0200|unetmsg: ping on tx channel after new incoming connection
-929702fdc5|Felix Fietkau|Mon May 12 11:00:34 2025 +0200|unetmsg: reconnect on loss of tx connection
-44ef343500|Konstantin Demin|Mon May 12 09:25:58 2025 +0300|toolchain: gcc: fix build error with glibc for aarch64 targets
-2a9316fbfb|Felix Fietkau|Sun May 11 15:25:54 2025 +0200|ucode: update to Git HEAD (2025-05-11)
-4044ce7109|Tianling Shen|Fri May 2 21:01:48 2025 +0800|kernel: add missing Kconfig symbols
-3d9236d451|Aleksander Jan Bajkowski|Sat Mar 29 23:39:19 2025 +0100|iw: backport WiFi 7 (EHT) scan support
-ba6aacd2b8|Gustavo Bertoli|Wed Mar 12 18:22:12 2025 +0100|hostapd: Enable DPPv2 support for OpenSSL and mbedtls
-7398204683|Shiji Yang|Tue Apr 29 20:52:59 2025 +0800|nat46: bump to latest git HEAD 2025-04-23
-a3da25c62b|Aleksander Jan Bajkowski|Sun Mar 30 19:34:57 2025 +0200|lantiq: xrx200_legacy: rename TP-LINK to TP-Link
-e4b8279b7e|Aleksander Jan Bajkowski|Sun Mar 30 19:33:31 2025 +0200|lantiq: xrx200_legacy: rename PHY LEDs
-75403dd1d0|David DeGraw|Fri Apr 18 11:55:34 2025 -0600|ramips: add support for Cudy R700
-f828be4d10|David Bauer|Tue May 6 18:23:50 2025 +0200|ramips: use i2c-gpio driver for EX400
-49a1781d74|David Bauer|Sun May 4 04:45:03 2025 +0200|ramips: support Genexis EX400 touch controller
-0842e79338|David Bauer|Sun May 4 04:47:32 2025 +0200|ramips: add Semtech SX9512 touch input driver
-ff55daf1eb|David Bauer|Sun May 4 04:49:50 2025 +0200|ramips: drop ALT0 name from Pulse EX400 dts model
+fb74eb547c|MapleCool|Wed May 14 00:40:27 2025 +0800|autocore: cpuinfo: add support for AMD Zen CPU temperature sensor
+fc1db38532|Tianling Shen|Tue May 13 14:12:59 2025 +0800|Merge Official Source
+26e64260e9|Benjamin Berg|Wed Apr 30 21:15:18 2025 +0200|mac80211: add patch to suppress PREP when mesh forwarding is disabled
+0d6ba33181|Christoph Krapp|Mon May 12 21:19:27 2025 +0200|mediatek: filogic: fix wifi on ASUS RT-AX52
+11a2e2eb69|John Audia|Sat May 10 13:58:00 2025 -0400|linux-firmware: update to 20250509
+269a62b217|Mieczyslaw Nalewaj|Fri May 9 12:56:32 2025 +0200|kernel: bump 6.12 to 6.12.28
+1c1026eeac|Robert Marko|Mon May 12 17:04:35 2025 +0200|generic: 6.12: add CONFIG_EC_LENOVO_YOGA_C630
+55287c9fbe|Markus Stockhausen|Fri May 2 14:51:38 2025 -0400|realtek: decouple MDIO and ethernet devices
+47de87eb23|Markus Stockhausen|Fri May 2 13:44:29 2025 -0400|realtek: harden MDIO driver
+96ce4855bc|Markus Stockhausen|Fri May 2 10:33:34 2025 -0400|realtek: resize mdio bus private arrays
+0c9e91a60c|Markus Stockhausen|Fri May 2 10:17:11 2025 -0400|realtek: move private bus structure closer to the bus
+10519db579|Markus Stockhausen|Fri May 2 08:47:22 2025 -0400|realtek: reuse RTMDIO_MAX_SMI_BUS define
+7f16a379f6|Markus Stockhausen|Fri May 2 04:53:10 2025 -0400|realtek: add mdio prefix to defines
+bd808cf3ca|Alexandru Gagniuc|Sat May 10 15:09:40 2025 -0500|qualcommbe: ipq95xx: fix ipq-uniphy crash on IPQ9554
 </details>

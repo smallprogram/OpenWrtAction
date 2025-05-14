@@ -2,25 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c857e5579|Tianling Shen|Mon May 12 20:27:23 2025 +0800|Merge Official Source
-c8b52088c|Tianling Shen|Mon May 12 19:58:42 2025 +0800|yq: Update to 4.45.4
-6e579e1a4|Tianling Shen|Mon May 12 19:57:52 2025 +0800|dnsproxy: Update to 0.75.4
-5082f9479|Tianling Shen|Mon May 12 19:57:26 2025 +0800|btop: Update to 1.4.3
-177487147|Fabrice Fontaine|Wed Feb 26 22:26:44 2025 +0100|libs/libuv: fix PKG_CPE_ID
-6de9eebf5|Fabrice Fontaine|Wed Feb 26 19:40:36 2025 +0100|lang/tcl: fix PKG_CPE_ID
-996f0b81c|Fabrice Fontaine|Wed Feb 26 21:19:30 2025 +0100|utils/logrotate: fix PKG_CPE_ID
-1292d304c|Sander Schutten|Mon Jan 13 19:40:36 2025 +0000|wiki: openwrt naming fixes and contribution improvement
-03088536d|Joel Low|Sat Feb 8 16:23:01 2025 +0800|strongswan: preserve changed configuration files
-061270cce|Maxim Storchak|Wed May 7 13:55:01 2025 +0300|smartmontools: update to 7.5
-4ba4a69f8|Peter van Dijk|Wed May 7 14:23:30 2025 +0200|pdns: update to 4.9.5
-3c566fb06|Tan Zien|Fri May 2 06:34:30 2025 +0800|open-vm-tools: update to 12.5.0
-471960be9|Marius Dinu|Sun May 11 16:19:01 2025 +0300|tvheadend: update to 2024-11-12, new options, patch for bug #26422
-3d9eb08f8|Nikolay Manev|Tue Apr 29 23:34:11 2025 +0300|adblock-fast: Fixed non-printable characters and bump PKG_VERSION
-a5c182c36|Hannu Nyman|Sun May 11 09:52:57 2025 +0300|libpng: Update to 1.6.48
-01b5fcc9e|Hannu Nyman|Sun May 11 09:26:03 2025 +0300|libpng: Revert "libpng: add symlink to debug library" as unnecessary
-c851cf35c|John Audia|Fri Apr 11 09:57:51 2025 -0400|nfs-kernel-server: update to v2.8.3
-f2030e625|John Audia|Sun Mar 2 05:15:55 2025 -0500|nfs-kernel-server: update to v2.8.2
-a0df926a0|Eric Luehrsen|Thu May 1 23:39:37 2025 -0400|unbound: update to 1.23.0
-a7f229fce|George Sapkin|Thu May 8 15:24:18 2025 +0300|syncthing: add discovery and relay descriptions
-9f78bed3f|George Sapkin|Tue May 6 19:23:01 2025 +0300|syncthing: bump to 1.29.6
+4c5e426bb|Tianling Shen|Tue May 13 23:54:44 2025 +0800|zerotier: fw4: fixup compatibility with gawk
+b107c7e56|Tianling Shen|Tue May 13 23:43:34 2025 +0800|zerotier: fw4: fix compatibility with gawk
+533277720|Interesting Gang|Tue May 13 21:25:52 2025 +0800|shadowsocks-rust: update to 1.23.4
+d97d902a2|Tianling Shen|Tue May 13 14:10:24 2025 +0800|naiveproxy: Update to 136.0.7103.44-1
+160e43119|Tianling Shen|Tue May 13 14:09:08 2025 +0800|gn: update to Git HEAD (2025-04-29)
 </details>

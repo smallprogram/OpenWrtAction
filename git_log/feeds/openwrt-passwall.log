@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+840ffcf|lwb1978|Tue May 13 17:44:14 2025 +0800|luci: Supplement subscribe parameters for tuic
+e2f2dc5|lwb1978|Tue May 13 11:58:54 2025 +0800|luci: sing-box hy1 add port hopping
+cc38728|lwb1978|Tue May 13 11:27:08 2025 +0800|luci: add the `max-time` parameter to `haproxy_check`
+</details>

@@ -2,11 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-aafff5ff9|Stan Grishin|Mon May 12 01:55:03 2025 +0000|https-dns-proxy: update to 2025.05.11
-e64ca4a0d|Rosen Penev|Fri May 2 16:04:46 2025 -0700|ffmpeg: add libatomic dependency
-b3b67527c|Toke Høiland-Jørgensen|Mon May 12 15:32:13 2025 +0200|acme-acmesh: Bump to v3.1.1
-929c515c1|Alexandru Ardelean|Sat May 10 22:34:27 2025 +0300|stress-ng: bump to version 0.19.00
-c8b52088c|Tianling Shen|Mon May 12 19:58:42 2025 +0800|yq: Update to 4.45.4
-6e579e1a4|Tianling Shen|Mon May 12 19:57:52 2025 +0800|dnsproxy: Update to 0.75.4
-5082f9479|Tianling Shen|Mon May 12 19:57:26 2025 +0800|btop: Update to 1.4.3
+34c02108c|Nikolay Manev|Sun May 11 23:12:30 2025 +0300|adblock-fast: improve the processing of combined list
 </details>
