@@ -91,7 +91,9 @@ jobs:
           sudo mkdir -p output
           sudo mkdir -p openwrt
           sudo chown -R $USER:$GROUPS /workdir/output
+          sudo chown -R $USER:$GROUPS /workdir/openwrt
           ln -sf /workdir/output $GITHUB_WORKSPACE/output
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
           df -hT
 
       - name: Checkout
