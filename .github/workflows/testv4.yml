@@ -284,8 +284,22 @@ jobs:
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
           ln -sf /workdir/download $GITHUB_WORKSPACE/download
 
+          is_complie_error=0
+
+          if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
+              is_complie_error=1
+          fi
+          
+          echo "complie result： $is_complie_error"
+          if [ "$is_complie_error" -eq 0 ]; then
+            echo "status=success" >> $GITHUB_OUTPUT
+          else
+            echo "status=failure" >> $GITHUB_OUTPUT
+          fi
+
       - name: Download Source From Artifacts
         id : download
+        if: steps.init_directory.outputs.status == 'success'
         uses: actions/download-artifact@v4
         with:
           name: Source_${{ matrix.source_code_platform }}_${{ matrix.platform }}
@@ -293,6 +307,7 @@ jobs:
 
       - name: Organize Files
         id: organize
+        if: steps.init_directory.outputs.status == 'success'
         run: |
 
           cd $GITHUB_WORKSPACE/download
@@ -303,6 +318,7 @@ jobs:
 
       - name: Upload Firmware Directory To Artifact
         uses: actions/upload-artifact@v4
+        if: steps.init_directory.outputs.status == 'success'
         with:
           name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
           path: ${{ steps.organize.outputs.FIRMWARE }}
