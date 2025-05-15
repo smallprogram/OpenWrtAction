@@ -151,17 +151,10 @@ jobs:
     name: Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}
 
     steps:
-      - name: Matrix Status
-        id: matrix_status
-        # env:
-        #   GH_TOKEN: ${{ github.token }}
-        run: |
-            chmod +x $MATRIX_STATUS_SH
-            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
+
 
 
       - name: Server Info
-        if: steps.matrix_status.outputs.status != 'success'
         run: |
             echo "---------------------CPU Info--------------------"
             lscpu
@@ -169,7 +162,6 @@ jobs:
             free -h
 
       - name: Initialization Environment
-        if: steps.matrix_status.outputs.status != 'success'
         run: |
           sudo timedatectl set-timezone "$TZ"
           sudo mkdir -p /workdir
@@ -178,7 +170,6 @@ jobs:
       - name: Initialization Directory
         working-directory: /workdir
         id: init_directory
-        if: steps.matrix_status.outputs.status != 'success'
         run: |
           sudo mkdir -p openwrt
           sudo mkdir -p download
@@ -190,9 +181,16 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v4
-        if: steps.matrix_status.outputs.status != 'success'
         with:
           fetch-depth: 0
+
+      - name: Matrix Status
+        id: matrix_status
+        # env:
+        #   GH_TOKEN: ${{ github.token }}
+        run: |
+            chmod +x $MATRIX_STATUS_SH
+            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
 
       - name: Download Source From Artifacts
         id : download
@@ -276,16 +274,9 @@ jobs:
 
     steps:
 
-      - name: Matrix Status
-        id: matrix_status
-        # env:
-        #   GH_TOKEN: ${{ github.token }}
-        run: |
-            chmod +x $MATRIX_STATUS_SH
-            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
+      
 
       - name: Server Info
-        if: steps.matrix_status.outputs.status != 'success'
         run: |
             echo "---------------------CPU Info--------------------"
             lscpu
@@ -293,12 +284,22 @@ jobs:
             free -h
 
       - name: Initialization Environment
-        if: steps.matrix_status.outputs.status != 'success'
         run: |
           sudo timedatectl set-timezone "$TZ"
           sudo mkdir -p /workdir
           sudo chown -R $USER:$GROUPS /workdir
           df -hT
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Matrix Status
+        id: matrix_status
+        # env:
+        #   GH_TOKEN: ${{ github.token }}
+        run: |
+            chmod +x $MATRIX_STATUS_SH
+            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}"    
       
       - name: Initialization Directory
         working-directory: /workdir
@@ -364,6 +365,10 @@ jobs:
     name: Upload-${{ matrix.source_code_platform }}-${{ matrix.platform }}
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Matrix Status
         id: matrix_status
         # env:
@@ -371,11 +376,7 @@ jobs:
         run: |
             chmod +x $MATRIX_STATUS_SH
             $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Upload-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
-      - name: Checkout
-        uses: actions/checkout@v4
-        if: steps.matrix_status.outputs.status != 'success'
-        with:
-          fetch-depth: 0
+
 
       - name: Initialization Environment
         id: init
