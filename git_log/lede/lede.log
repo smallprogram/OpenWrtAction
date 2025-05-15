@@ -1,6 +1,0 @@
-<details> <summary> <b>lede new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-2b23abbb6|Álvaro Fernández Rojas|Fri May 9 08:46:18 2025 +0200|bcm27xx: fixes drm-rp1 dependencies
-</details>
