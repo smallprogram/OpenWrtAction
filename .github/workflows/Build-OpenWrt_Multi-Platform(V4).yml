@@ -27,6 +27,10 @@ on:
         description: 'Whether single-threaded compilation'
         required: false
         default: 'false'
+      is_show_compile_timestamp:
+        description: 'Whether show compile timestamp'
+        required: false
+        default: 'false'
   # schedule:
   #   - cron: 0 */8 * * *
 
@@ -583,14 +587,22 @@ jobs:
           else
             if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
                 echo "1 threads compile frimware"
-                # make -j1
-                stdbuf -oL  make -j1 | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now'
-                is_complie_error=${PIPESTATUS[0]}
+                if [[ "${{ github.event.inputs.is_show_compile_timestamp }}" == "true" ]]; then
+                    stdbuf -oL  make -j1 | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now'
+                    is_complie_error=${PIPESTATUS[0]}
+                else
+                    make -j1
+                    is_complie_error=${PIPESTATUS[0]}
+                fi
             else
                 echo "$(nproc) threads compile frimware"
-                # make -j$(nproc)
-                stdbuf -oL  make -j$(nproc) | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now'
-                is_complie_error=${PIPESTATUS[0]}
+                if [[ "${{ github.event.inputs.is_show_compile_timestamp }}" == "true" ]]; then
+                    stdbuf -oL  make -j$(nproc) | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now'
+                    is_complie_error=${PIPESTATUS[0]}
+                else
+                    make -j$(nproc)
+                    is_complie_error=${PIPESTATUS[0]}
+                fi
             fi
           fi
 
