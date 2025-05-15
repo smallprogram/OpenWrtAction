@@ -216,6 +216,7 @@ jobs:
             echo "status=success" >> $GITHUB_OUTPUT
           else
             echo "status=failure" >> $GITHUB_OUTPUT
+            exit 222
           fi
           
           echo "complie result： $is_complie_error"
@@ -325,6 +326,7 @@ jobs:
             echo "status=success" >> $GITHUB_OUTPUT
           else
             echo "status=failure" >> $GITHUB_OUTPUT
+            exit 222
           fi
 
       - name: Download Source From Artifacts

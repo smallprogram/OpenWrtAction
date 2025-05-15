@@ -15,6 +15,8 @@ if [ $attempts -eq 1 ]; then
 fi
 attempts=$(( $attempts - 1 ))
 
+echo $attempts
+
 while true; do
     json_data=$(curl -s -H "Authorization: Bearer $token" "https://api.github.com/repos/$repository/actions/runs/$run_id/attempts/$attempts/jobs?page=$page")
 
