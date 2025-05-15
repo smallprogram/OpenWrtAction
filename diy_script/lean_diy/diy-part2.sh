@@ -52,7 +52,7 @@ rm -rf ./feeds/luci/applications/luci-app-argon-config
 git clone https://github.com/jerrykuku/luci-app-argon-config.git ./package/custom_packages/luci-app-argon-config
 
 # adguardhome
-# rm -rf ./package/lean/luci-app-adguardhome
+rm -rf ./feeds/luci/applications/luci-app-adguardhome
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/custom_packages/luci-app-adguardhome
 
 # mosdns
