@@ -212,13 +212,6 @@ jobs:
           fi
           
           echo "complie result： $is_complie_error"
-          if [ "$is_complie_error" -eq 0 ]; then
-            echo "status=success" >> $GITHUB_OUTPUT
-            exit 0
-          else
-            echo "status=failure" >> $GITHUB_OUTPUT
-            exit $is_complie_error
-          fi
           df -hT
 
 

@@ -13,7 +13,7 @@ if [ $attempts -eq 1 ]; then
     echo "status=1" >> $GITHUB_OUTPUT
     exit 0
 fi
-$attempts=$attempts-1
+attempts=$attempts-1
 
 while true; do
     json_data=$(curl -s -H "Authorization: Bearer $token" "https://api.github.com/repos/$repository/actions/runs/$run_id/attempts/$attempts/jobs?page=$page")
