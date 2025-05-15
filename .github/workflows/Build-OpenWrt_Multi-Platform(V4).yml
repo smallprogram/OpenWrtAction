@@ -435,6 +435,7 @@ jobs:
                 chmod +x ${{ matrix.value.DIY_P3_SH }}
                 cd openwrt
                 $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }}
+
                 is_complie_error=${PIPESTATUS[0]}
             fi
           fi
