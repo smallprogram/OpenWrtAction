@@ -10,7 +10,7 @@ page=1
 jobs_data_file=$(mktemp)  # 创建一个临时文件
 
 if [ $attempts -eq 1 ]; then
-    echo "status=success" >> $GITHUB_OUTPUT
+    echo "status=1" >> $GITHUB_OUTPUT
     exit 0
 fi
 $attempts=$attempts-1
