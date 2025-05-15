@@ -1,0 +1,49 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ffcb57435c|Tianling Shen|Wed May 14 15:20:33 2025 +0800|Merge Official Source
+4d18c41a6c|Mieczyslaw Nalewaj|Sun May 4 11:32:57 2025 +0200|kernel: mtk_bmt: counteracting calloc-transposed-args compiler warning
+8cf0c810fb|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-adsl-mei: fix missing-prototypes warnings
+335a88df64|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-adsl-mei: fix 'inline' declaration warning
+fb4aa6248f|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-adsl: silence missing-prototypes warnings
+29987d44bb|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-adsl: add missing header platform_device.h
+58e9780f4c|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-vdsl-vr9-mei: fix missing prototypes warnings
+bcf3f96c02|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-vdsl-vr9-mei: fix ignored-qualifiers build warnings
+7d6ee4e415|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-vdsl-vr9-mei: convert platform driver .remove to .remove_new
+262917ef34|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-vdsl-vr9: fix missing-prototypes warnings
+86e5b77788|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-vmmc: fix 'inline' declaration warning
+1f909e9f6d|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-vmmc: fix unknown type name errors
+18aa58f200|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-vmmc: fix macro definition conflicts
+144228d618|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-vmmc: silence missing-prototypes warnings
+ac8e876a6e|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-vmmc: fix ignored-qualifiers warning
+2e00140e63|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-ptm: adsl: fix 6.12 kernel build errors on lantiq/xway
+b48ed6d19c|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-ptm: vdsl: fix 6.12 kernel build errors on lantiq/xrx200
+621a1c9b56|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-ptm: fix missing-prototypes warning
+fdc2d8d07b|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-deu: fix 6.12 kernel build warnings on lantiq/xway
+d81f8e159a|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-deu: fix 6.12 kernel build warnings on lantiq/xrx200
+e839da1911|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-atm: fix missing-prototypes warnings for lantiq/ase
+ac18f03bd9|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-atm: fix build warnings on lantiq/xway
+02e9f3be51|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-atm: add missing header mod_devicetable.h
+491764f0f0|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-atm: apply local patch to the source files
+e130308299|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-tapi: fix missing-prototypes build warnings
+f6e7225039|Shiji Yang|Sat May 10 17:19:18 2025 +0800|vrx518_tc: fix missing-prototypes build warnings
+b219c749b7|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-vdsl-vr11: fix missing-prototypes build warnings
+c3cb6a8725|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-vdsl-vr11-mei: fix ignored-qualifiers build warnings
+0d045a287a|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-vdsl-vr11-mei: improve compatibility with the 6.12 kernel.
+eb18b602da|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-vdsl-vr11-mei: fix missing-prototypes build warnings
+e9d3e0f1da|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-ifxos: fix missing-prototypes build warning
+8f80acfac0|Shiji Yang|Sat May 10 17:19:18 2025 +0800|vrx518_ep: fix macro redefined build error on 6.12 kernel
+e80dfdb6c5|Andre Heider|Sat May 10 17:19:18 2025 +0800|vrx518_ep: fix compilation error with kernel 6.12
+dcc440c7c9|INAGAKI Hiroshi|Sun May 11 23:48:18 2025 +0900|ramips: mt7621: relocate kernel for ELECOM WRC-X1800GS
+70f10e2210|Markus Stockhausen|Sun May 11 14:44:26 2025 -0400|realtek: phy: remove unneeded usage of genphy_loopback()
+01d5026239|Shiji Yang|Sat May 10 23:52:16 2025 +0800|kernel: bump 6.6 to 6.6.90
+9d15c1a020|Robert Marko|Tue May 13 13:19:22 2025 +0200|qualcommax: ipq50xx: add PCI path migration script
+cfbfdd9ca6|Robert Marko|Tue May 13 12:24:12 2025 +0200|qualcommax: ipq50xx: update PCI path for caldata
+1e20f7b6c6|Robert Marko|Mon May 12 20:14:52 2025 +0200|qualcommax: fix PCIe card wifi node address
+487fc2ec96|Robert Marko|Mon May 12 20:11:22 2025 +0200|qualcommax: remove PCIe bridge nodes
+5e0bbd3670|Robert Marko|Tue May 13 12:12:39 2025 +0200|qualcommax: ipq50xx: add missing bus-range to PCIe bridges
+8aad4cd43d|Robert Marko|Tue May 13 11:44:27 2025 +0200|qualcommax: ipq50xx: use latest v9 PCIe DTS patch
+2c2808a71a|Robert Marko|Mon May 12 19:57:41 2025 +0200|qualcommax: ipq807x, ipq60xx: backport DTS PCIe bridge node
+19de58edaa|Nick Hainke|Sun May 11 21:06:50 2025 +0200|libtracefs: update to 1.8.2
+</details>

@@ -7,4 +7,10 @@ SHA|Author|Date|Message
 c75223338f|Alexandru Gagniuc|Tue May 13 15:59:00 2025 -0500|qualcommax: ipq60xx: eap6xx-outdoor: add PHY reset pinctrl
 7be36c20f1|Alexandru Gagniuc|Wed Apr 23 19:27:24 2025 -0500|qualcommax: ipq60xx: split eap610-outdoor devicetree
 12913c3c56|Rosen Penev|Fri May 9 15:20:08 2025 -0700|mac80211: move OF stuff to ath9k_of_init
+eea4689654|David Bauer|Wed May 14 01:49:44 2025 +0200|ramips: pad EX400 kernel partition to retain web recovery
+d97c01a11f|David Bauer|Wed May 14 01:32:34 2025 +0200|ramips: clean UBI tempdir before image creation
+61da745817|Álvaro Fernández Rojas|Wed May 14 09:45:24 2025 +0200|bmips: add missing NAND config symbol
+d02071c24f|Robert Marko|Wed May 14 11:05:55 2025 +0200|generic: config-filter: filter out CONFIG_PAHOLE_HAS_LANG_EXCLUDE
+18de64d87b|Matthias Schiffer|Tue May 13 21:58:56 2025 +0200|toolchain: gcc: backport patch to fix ICE with PowerPC targets
+7f1b9a4209|Felix Fietkau|Wed May 14 11:21:56 2025 +0200|unetd: cli: add hook calls for invite/join status changes
 </details>
