@@ -41,6 +41,7 @@ env:
   UPDATE_GIT_LOG_SH:  compile_script/step06_update_git_log.sh
   ORGANIZE_TAG_SH: compile_script/step07_organize_tag.sh
   PLATFORMS_SH: compile_script/platforms.sh
+  MATRIX_STATUS_SH: compile_script/matrix_job_status.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_ARTIFACT: true
@@ -150,7 +151,17 @@ jobs:
     name: Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}
 
     steps:
+      - name: Matrix Status
+        id: matrix_status
+        # env:
+        #   GH_TOKEN: ${{ github.token }}
+        run: |
+            chmod +x $MATRIX_STATUS_SH
+            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
+
+
       - name: Server Info
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
             echo "---------------------CPU Info--------------------"
             lscpu
@@ -158,6 +169,7 @@ jobs:
             free -h
 
       - name: Initialization Environment
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
           sudo timedatectl set-timezone "$TZ"
           sudo mkdir -p /workdir
@@ -166,6 +178,7 @@ jobs:
       - name: Initialization Directory
         working-directory: /workdir
         id: init_directory
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
           sudo mkdir -p openwrt
           sudo mkdir -p download
@@ -177,11 +190,13 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v4
+        if: steps.matrix_status.outputs.status != 'success'
         with:
           fetch-depth: 0
 
       - name: Download Source From Artifacts
         id : download
+        if: steps.matrix_status.outputs.status != 'success'
         uses: actions/download-artifact@v4
         with:
           name: Source_${{ matrix.source_code_platform }}
@@ -190,6 +205,7 @@ jobs:
 
       - name: Compile Toolchain
         id: compile_toolchain
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
           is_complie_error=0
 
@@ -211,6 +227,7 @@ jobs:
       - name: Generate Source Packages
         working-directory: /workdir
         id: generate_image
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
           cd openwrt
           dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.txt bs=1M count=10
@@ -233,7 +250,7 @@ jobs:
   
       - name: Upload Source To Artifact
         uses: actions/upload-artifact@v4
-        if: steps.generate_image.outputs.status == 'success'
+        if: steps.generate_image.outputs.status == 'success' && steps.matrix_status.outputs.status != 'success'
         with:
           name: Source_${{ matrix.source_code_platform }}_${{ matrix.platform }}
           path: ${{ steps.generate_image.outputs.SOURCE_TOOLCHAIN_PATH }}/output_toolchain.tar.gz
@@ -258,7 +275,17 @@ jobs:
     name: Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}
 
     steps:
+
+      - name: Matrix Status
+        id: matrix_status
+        # env:
+        #   GH_TOKEN: ${{ github.token }}
+        run: |
+            chmod +x $MATRIX_STATUS_SH
+            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
+
       - name: Server Info
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
             echo "---------------------CPU Info--------------------"
             lscpu
@@ -266,6 +293,7 @@ jobs:
             free -h
 
       - name: Initialization Environment
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
           sudo timedatectl set-timezone "$TZ"
           sudo mkdir -p /workdir
@@ -275,6 +303,7 @@ jobs:
       - name: Initialization Directory
         working-directory: /workdir
         id: init_directory
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
           sudo mkdir -p openwrt
           sudo mkdir -p download
@@ -299,7 +328,7 @@ jobs:
 
       - name: Download Source From Artifacts
         id : download
-        if: steps.init_directory.outputs.status == 'success'
+        if: steps.init_directory.outputs.status == 'success' && steps.matrix_status.outputs.status != 'success'
         uses: actions/download-artifact@v4
         with:
           name: Source_${{ matrix.source_code_platform }}_${{ matrix.platform }}
@@ -307,7 +336,7 @@ jobs:
 
       - name: Organize Files
         id: organize
-        if: steps.init_directory.outputs.status == 'success'
+        if: steps.init_directory.outputs.status == 'success' &&  steps.matrix_status.outputs.status != 'success'
         run: |
 
           cd $GITHUB_WORKSPACE/download
@@ -318,7 +347,7 @@ jobs:
 
       - name: Upload Firmware Directory To Artifact
         uses: actions/upload-artifact@v4
-        if: steps.init_directory.outputs.status == 'success'
+        if: steps.init_directory.outputs.status == 'success' && steps.matrix_status.outputs.status != 'success'
         with:
           name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
           path: ${{ steps.organize.outputs.FIRMWARE }}
@@ -335,13 +364,22 @@ jobs:
     name: Upload-${{ matrix.source_code_platform }}-${{ matrix.platform }}
 
     steps:
+      - name: Matrix Status
+        id: matrix_status
+        # env:
+        #   GH_TOKEN: ${{ github.token }}
+        run: |
+            chmod +x $MATRIX_STATUS_SH
+            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
       - name: Checkout
         uses: actions/checkout@v4
+        if: steps.matrix_status.outputs.status != 'success'
         with:
           fetch-depth: 0
 
       - name: Initialization Environment
         id: init
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
           sudo timedatectl set-timezone "$TZ"
           df -hT
@@ -358,6 +396,7 @@ jobs:
 
       - name: Download Release From Artifacts
         id : download
+        if: steps.matrix_status.outputs.status != 'success'
         uses: actions/download-artifact@v4
         with:
           name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
