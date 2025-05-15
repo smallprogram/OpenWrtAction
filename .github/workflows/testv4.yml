@@ -282,7 +282,7 @@ jobs:
         #   GH_TOKEN: ${{ github.token }}
         run: |
             chmod +x $MATRIX_STATUS_SH
-            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
+            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
 
       - name: Server Info
         if: steps.matrix_status.outputs.status != 'success'
@@ -370,7 +370,7 @@ jobs:
         #   GH_TOKEN: ${{ github.token }}
         run: |
             chmod +x $MATRIX_STATUS_SH
-            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
+            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Upload-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
       - name: Checkout
         uses: actions/checkout@v4
         if: steps.matrix_status.outputs.status != 'success'
