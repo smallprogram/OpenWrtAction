@@ -38,7 +38,7 @@ while true; do
 
     # 过滤以 Upload- 开头的 jobs，并将结果添加到 jobs_data_file 中
     # echo "$jobs" | jq -c '.[] | select(.name | startswith("$jobname"))' >> "$jobs_data_file"
-    matched_jobs=$(echo "$jobs" | jq -c --arg jobname "$jobname" '.[] | select(.name | startswith($jobname))')
+    matched_jobs=$(echo "$jobs" | jq -c --arg jobname "$jobname" '.[] | select(.name == $jobname)')
     if [[ -n "$matched_jobs" ]]; then
         echo "$matched_jobs" >> "$jobs_data_file"
         echo "Found matching job(s), exiting loop..."
