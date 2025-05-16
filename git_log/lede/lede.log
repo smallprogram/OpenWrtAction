@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2b23abbb6|Álvaro Fernández Rojas|Fri May 9 08:46:18 2025 +0200|bcm27xx: fixes drm-rp1 dependencies
+fc02b412f|Joe Zheng|Sat Feb 8 01:18:03 2025 +0000|firmware: add Intel VPU/NPU firmware
+12749793a|Daniel Golle|Sat Nov 2 20:22:35 2024 +0000|kernel: modules: MIPI DBI TFT panels
 </details>

@@ -69,6 +69,8 @@ clean_day=3
 is_complie_error=0
 # 编译是否展示详细信息
 is_VS='V=s'
+# 是否展示编译时间戳
+is_showTime=''
 #Git参数
 git_email=smallprogram@foxmail.com
 git_user=smallprogram
@@ -131,6 +133,19 @@ if [ -n "$isVS" ]; then
 else
     Func_LogMessage "默认不显示详细编译信息" "Do not display detailed compilation information by default"
     is_VS=''
+    sleep 1s
+fi
+echo
+Func_LogMessage "是否展示编译时间戳，默认不显示，如果显示可能会造成编译日志卡顿，但不会影响正常编译速度。" "Whether to display the compilation timestamp. It is not displayed by default. If it is displayed, it may cause compilation log jams, but it will not affect the normal compilation speed."
+Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
+read -t $timer isShowTime
+if [ -n "$isShowTime" ]; then
+    Func_LogMessage "显示编译时间戳 " "Show compile timestamp"
+    is_showTime='true'
+    sleep 1s
+else
+    Func_LogMessage "默认不显示编译时间戳" "Do not Show compile timestamp"
+    is_showTime=''
     sleep 1s
 fi
 echo

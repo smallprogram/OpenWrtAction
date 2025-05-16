@@ -291,8 +291,13 @@ function Func_Compile_Firmware() {
             sleep 1s
             # echo "PATH=$wsl_path"
             if [ ! -n "$is_VS" ]; then
-                PATH=$wsl_path stdbuf -oL  make -j$(nproc) | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now' | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
-                is_complie_error=${PIPESTATUS[0]}
+                if [ ! -n "$is_showTime" ]; then
+                    PATH=$wsl_path make -j$(nproc) | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
+                    is_complie_error=${PIPESTATUS[0]}
+                else
+                    PATH=$wsl_path stdbuf -oL  make -j$(nproc) | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now' | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
+                    is_complie_error=${PIPESTATUS[0]}
+                fi
             else
                 PATH=$wsl_path make -j$(nproc) $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
                 is_complie_error=${PIPESTATUS[0]}
@@ -302,8 +307,13 @@ function Func_Compile_Firmware() {
             Func_LogMessage "准备开始编译" "Ready to compile"
             sleep 1s
             if [ ! -n "$is_VS" ]; then
-                PATH=$wsl_path stdbuf -oL  make -j1 | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now' | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
-                is_complie_error=${PIPESTATUS[0]}
+                if [ ! -n "$is_showTime" ]; then
+                    PATH=$wsl_path make -j1 | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
+                    is_complie_error=${PIPESTATUS[0]}
+                else
+                    PATH=$wsl_path stdbuf -oL  make -j1 | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now' | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
+                    is_complie_error=${PIPESTATUS[0]}
+                fi               
             else
                 PATH=$wsl_path make -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
                 is_complie_error=${PIPESTATUS[0]}
@@ -318,8 +328,13 @@ function Func_Compile_Firmware() {
             Func_LogSuccess "OK，不执行单线程编译 " "OK, do not perform single-threaded compilation "
             sleep 1s
             if [ ! -n "$is_VS" ]; then
-                stdbuf -oL  make -j$(nproc) | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now' | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
-                is_complie_error=${PIPESTATUS[0]}
+                if [ ! -n "$is_showTime" ]; then
+                    make -j$(nproc) | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
+                    is_complie_error=${PIPESTATUS[0]}
+                else
+                    stdbuf -oL  make -j$(nproc) | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now' | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
+                    is_complie_error=${PIPESTATUS[0]}
+                fi
             else
                 make -j$(nproc) $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
                 is_complie_error=${PIPESTATUS[0]}
@@ -329,8 +344,14 @@ function Func_Compile_Firmware() {
             Func_LogMessage "准备开始编译" "Ready to compile"
             sleep 1s
             if [ ! -n "$is_VS" ]; then
-                stdbuf -oL  make -j1 | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now' | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
-                is_complie_error=${PIPESTATUS[0]}
+                if [ ! -n "$is_showTime" ]; then
+                    make -j1 | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
+                    is_complie_error=${PIPESTATUS[0]}
+                else
+                    stdbuf -oL  make -j1 | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now' | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
+                    is_complie_error=${PIPESTATUS[0]}
+                fi
+                
             else
                 make -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile6_Generate_Frimware.log
                 is_complie_error=${PIPESTATUS[0]}

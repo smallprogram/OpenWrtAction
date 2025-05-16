@@ -2,15 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-95341cc9c5|Zoltan HERPAI|Thu May 1 13:31:26 2025 +0000|generic: 6.12: add missing symbols
-51c1ea08d0|Alexandru Gagniuc|Wed Apr 23 19:37:01 2025 -0500|qualcommax: ipq60xx: add TP-Link EAP625-Outdoor HD v1 support
-c75223338f|Alexandru Gagniuc|Tue May 13 15:59:00 2025 -0500|qualcommax: ipq60xx: eap6xx-outdoor: add PHY reset pinctrl
-7be36c20f1|Alexandru Gagniuc|Wed Apr 23 19:27:24 2025 -0500|qualcommax: ipq60xx: split eap610-outdoor devicetree
-12913c3c56|Rosen Penev|Fri May 9 15:20:08 2025 -0700|mac80211: move OF stuff to ath9k_of_init
-eea4689654|David Bauer|Wed May 14 01:49:44 2025 +0200|ramips: pad EX400 kernel partition to retain web recovery
-d97c01a11f|David Bauer|Wed May 14 01:32:34 2025 +0200|ramips: clean UBI tempdir before image creation
-61da745817|Álvaro Fernández Rojas|Wed May 14 09:45:24 2025 +0200|bmips: add missing NAND config symbol
-d02071c24f|Robert Marko|Wed May 14 11:05:55 2025 +0200|generic: config-filter: filter out CONFIG_PAHOLE_HAS_LANG_EXCLUDE
-18de64d87b|Matthias Schiffer|Tue May 13 21:58:56 2025 +0200|toolchain: gcc: backport patch to fix ICE with PowerPC targets
-7f1b9a4209|Felix Fietkau|Wed May 14 11:21:56 2025 +0200|unetd: cli: add hook calls for invite/join status changes
+08179b367b|Piotr Kubik|Tue Apr 8 12:41:52 2025 +0200|ethtool: update to 6.14
+0d4eda6237|Robert Marko|Thu May 15 19:35:31 2025 +0200|generic: 6.12: add CONFIG_IDPF
+1e46a391df|Robert Marko|Thu May 15 19:28:20 2025 +0200|generic: 6.12: add CONFIG_HISILICON_ERRATUM_162100801
+f160a017ac|Robert Marko|Thu May 15 19:20:28 2025 +0200|x86: add missing DRM_ACCEL symbols
+64ad16993d|Linus Lüssing|Sat May 10 05:22:22 2025 +0200|realtek: fix flooding of unsnoopable multicast addresses
+86a6c550b9|Paweł Owoc|Mon May 12 15:41:09 2025 +0200|qualcommax: dts: fix missing or empty reg property warning
+af021c1285|Paweł Owoc|Mon May 12 11:30:51 2025 +0200|qualcommax: dts: fix property has invalid length warning
+610dd871aa|Felix Fietkau|Thu May 15 15:41:37 2025 +0200|kernel: fix warning on retrying page pool release
+ca51f7aaf5|Robert Marko|Thu May 15 14:51:53 2025 +0200|qualcommax: ipq60xx: fix EAP625-Outdoor HD BDF package name
+51b78aaaae|Joe Zheng|Sat Feb 8 01:38:36 2025 +0000|kernel: package intel_vpu driver
+bcda3b66fa|Joe Zheng|Sat Feb 8 01:18:03 2025 +0000|firmware: add package for Intel VPU/NPU firmware
 </details>

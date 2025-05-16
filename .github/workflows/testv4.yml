@@ -8,9 +8,11 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: test(V4)
+name: Test(V4)
 
 on:
+  repository_dispatch:
+    types: [openwrt_source_update]
   workflow_dispatch:
     inputs:
       ssh:
@@ -25,6 +27,10 @@ on:
         description: 'Whether single-threaded compilation'
         required: false
         default: 'false'
+      is_show_compile_timestamp:
+        description: 'Whether show compile timestamp'
+        required: false
+        default: 'false'
   # schedule:
   #   - cron: 0 */8 * * *
 
@@ -35,6 +41,7 @@ env:
   UPDATE_GIT_LOG_SH:  compile_script/step06_update_git_log.sh
   ORGANIZE_TAG_SH: compile_script/step07_organize_tag.sh
   PLATFORMS_SH: compile_script/platforms.sh
+  MATRIX_STATUS_SH: compile_script/matrix_job_status.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_ARTIFACT: true
@@ -65,8 +72,77 @@ jobs:
         run: |
           bash $PLATFORMS_SH
 
+  
+  job_source_init:
+    needs: job_init
+    runs-on: ${{ matrix.value.OS }}
+    name: Source-Init-${{ matrix.source_code_platform }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.job_init.outputs.platforms_source) }}
+    steps:
+      - name: Init System
+        id: init
+        run: |
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown -R $USER:$GROUPS /workdir
+          cd /workdir
+          sudo mkdir -p output
+          sudo mkdir -p openwrt
+          sudo chown -R $USER:$GROUPS /workdir/output
+          sudo chown -R $USER:$GROUPS /workdir/openwrt
+          ln -sf /workdir/output $GITHUB_WORKSPACE/output
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+          df -hT
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+
+      - name: Generate Source Packages
+        working-directory: /workdir
+        id: generate_image
+        run: |
+          cd openwrt
+          dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.txt bs=1M count=10
+          cd ..
+          echo "source folder size:"
+          du -hs openwrt/
+          echo
+          tar -czf output/output.tar.gz openwrt/
+
+          echo "source code size:"
+          cd output
+          ls -lh output.tar.gz
+          echo "SOURCE_PATH=$PWD" >> $GITHUB_OUTPUT
+          echo "status=success" >> $GITHUB_OUTPUT
+
+      - name: Upload Source To Artifact
+        uses: actions/upload-artifact@v4
+        if: steps.generate_image.outputs.status == 'success'
+        with:
+          name: Source_${{ matrix.source_code_platform }}
+          path: ${{ steps.generate_image.outputs.SOURCE_PATH }}/output.tar.gz
+          retention-days: 5
+
+  job_generate_release_tag: 
+    needs: [job_init, job_source_init]
+    runs-on: ubuntu-24.04
+    name: Generate-Release-Tag-And-Git-Log
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+
   job_build_toolchain:
-    needs: [job_init]
+    needs: [job_init, job_source_init, job_generate_release_tag]
     runs-on: ${{ matrix.value.OS }}
     strategy:
       fail-fast: false
@@ -75,6 +151,9 @@ jobs:
     name: Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}
 
     steps:
+
+
+
       - name: Server Info
         run: |
             echo "---------------------CPU Info--------------------"
@@ -87,26 +166,6 @@ jobs:
           sudo timedatectl set-timezone "$TZ"
           sudo mkdir -p /workdir
           sudo chown -R $USER:$GROUPS /workdir
- 
-      - name: Maximize Build Space
-        uses: easimon/maximize-build-space@master
-        with:
-          root-reserve-mb: 6144
-          swap-size-mb: 10240
-          remove-dotnet: 'true'
-          remove-android: 'true'
-          remove-haskell: 'true'
-          remove-codeql: 'true'
-          remove-docker-images: 'true'
-          build-mount-path: '/workdir'
-
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Pull the latest changes
-        run: git pull origin ${{ github.ref_name }}
 
       - name: Initialization Directory
         working-directory: /workdir
@@ -120,12 +179,277 @@ jobs:
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
           ln -sf /workdir/download $GITHUB_WORKSPACE/download
 
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Matrix Status
+        id: matrix_status
+        # env:
+        #   GH_TOKEN: ${{ github.token }}
+        run: |
+            chmod +x $MATRIX_STATUS_SH
+            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
+
+      - name: Download Source From Artifacts
+        id : download
+        if: steps.matrix_status.outputs.status != 'success'
+        uses: actions/download-artifact@v4
+        with:
+          name: Source_${{ matrix.source_code_platform }}
+          path: download
+
+
       - name: Compile Toolchain
         id: compile_toolchain
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          is_complie_error=0
+
+          if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
+              is_complie_error=1
+          fi
+          
+          echo "complie result： $is_complie_error"
+          if [ "$is_complie_error" -eq 0 ]; then
+            echo "status=success" >> $GITHUB_OUTPUT
+          else
+            echo "status=failure" >> $GITHUB_OUTPUT
+            exit 222
+          fi
+          
+          echo "complie result： $is_complie_error"
+          df -hT
+
+
+      - name: Generate Source Packages
+        working-directory: /workdir
+        id: generate_image
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
           cd openwrt
+          dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.txt bs=1M count=10
           cd ..
-          chmod +x ${{ matrix.value.DIY_P3_SH }}
-          cd openwrt
-          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }}
+          echo "source toolchain folder size:"
+          du -hs openwrt/
+
+          sudo mkdir -p output
+          sudo chown -R $USER:$GROUPS /workdir/output
+          ln -sf /workdir/output $GITHUB_WORKSPACE/output
+
+          echo
+          tar -czf output/output_toolchain.tar.gz openwrt/
+
+          echo "source toolchain file size:"
+          cd output
+          ls -lh output_toolchain.tar.gz
+          echo "SOURCE_TOOLCHAIN_PATH=$PWD" >> $GITHUB_OUTPUT
+          echo "status=success" >> $GITHUB_OUTPUT
   
+      - name: Upload Source To Artifact
+        uses: actions/upload-artifact@v4
+        if: steps.generate_image.outputs.status == 'success' && steps.matrix_status.outputs.status != 'success'
+        with:
+          name: Source_${{ matrix.source_code_platform }}_${{ matrix.platform }}
+          path: ${{ steps.generate_image.outputs.SOURCE_TOOLCHAIN_PATH }}/output_toolchain.tar.gz
+          retention-days: 5
+
+
+      - name: TTTT
+        id: ttt
+        run:
+          echo "dddddd"
+
+
+
+  job_build:
+    needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain]
+    runs-on: ${{ matrix.value.OS }}
+    if: ${{ always() }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.job_init.outputs.platforms) }}
+    name: Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}
+
+    steps:
+
+      
+
+      - name: Server Info
+        run: |
+            echo "---------------------CPU Info--------------------"
+            lscpu
+            echo "---------------------RAM Info--------------------"
+            free -h
+
+      - name: Initialization Environment
+        run: |
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown -R $USER:$GROUPS /workdir
+          df -hT
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Matrix Status
+        id: matrix_status
+        # env:
+        #   GH_TOKEN: ${{ github.token }}
+        run: |
+            chmod +x $MATRIX_STATUS_SH
+            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}"    
+      
+      - name: Initialization Directory
+        working-directory: /workdir
+        id: init_directory
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          sudo mkdir -p openwrt
+          sudo mkdir -p download
+          sudo chown -R $USER:$GROUPS /workdir/openwrt
+          sudo chown -R $USER:$GROUPS /workdir/download
+
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+          ln -sf /workdir/download $GITHUB_WORKSPACE/download
+
+          is_complie_error=0
+
+          if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
+              is_complie_error=1
+          fi
+          
+          echo "complie result： $is_complie_error"
+          if [ "$is_complie_error" -eq 0 ]; then
+            echo "status=success" >> $GITHUB_OUTPUT
+          else
+            echo "status=failure" >> $GITHUB_OUTPUT
+            exit 222
+          fi
+
+      - name: Download Source From Artifacts
+        id : download
+        if: steps.init_directory.outputs.status == 'success' && steps.matrix_status.outputs.status != 'success'
+        uses: actions/download-artifact@v4
+        with:
+          name: Source_${{ matrix.source_code_platform }}_${{ matrix.platform }}
+          path: download  
+
+      - name: Organize Files
+        id: organize
+        if: steps.init_directory.outputs.status == 'success' &&  steps.matrix_status.outputs.status != 'success'
+        run: |
+
+          cd $GITHUB_WORKSPACE/download
+          dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.txt bs=1M count=10
+          firmware_path=$PWD
+          echo "FIRMWARE=$firmware_path" >> $GITHUB_OUTPUT
+          echo "status=success" >> $GITHUB_OUTPUT
+
+      - name: Upload Firmware Directory To Artifact
+        uses: actions/upload-artifact@v4
+        if: steps.init_directory.outputs.status == 'success' && steps.matrix_status.outputs.status != 'success'
+        with:
+          name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
+          path: ${{ steps.organize.outputs.FIRMWARE }}
+
+
+  job_upload_release:
+    needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain, job_build]
+    runs-on: ${{ matrix.value.OS }}
+    if: ${{ always() }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.job_init.outputs.platforms) }}
+    name: Upload-${{ matrix.source_code_platform }}-${{ matrix.platform }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Matrix Status
+        id: matrix_status
+        # env:
+        #   GH_TOKEN: ${{ github.token }}
+        run: |
+            chmod +x $MATRIX_STATUS_SH
+            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Upload-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
+
+
+      - name: Initialization Environment
+        id: init
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          sudo timedatectl set-timezone "$TZ"
+          df -hT
+          cd $GITHUB_WORKSPACE
+          sudo mkdir -p release_download
+          sudo mkdir -p release_tag_download
+          sudo chown -R $USER:$GROUPS $GITHUB_WORKSPACE/release_download
+          sudo chown -R $USER:$GROUPS $GITHUB_WORKSPACE/release_tag_download
+          cd release_download
+          echo "release_dir=$PWD" >> $GITHUB_OUTPUT
+          cd ..
+          cd release_tag_download
+          echo "release_tag_dir=$PWD" >> $GITHUB_OUTPUT
+
+      - name: Download Release From Artifacts
+        id : download
+        if: steps.matrix_status.outputs.status != 'success'
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
+          path: ${{ steps.init.outputs.release_dir }}
+
+
+
+  job_organize_tags:
+    needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain, job_build, job_upload_release]
+    if: ${{ always() }}
+    runs-on: ubuntu-24.04
+    name: Organize-Release-Tags
+        
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Initialization Environment
+        id: init
+        run: |
+          sudo timedatectl set-timezone "$TZ"
+          df -hT
+          cd $GITHUB_WORKSPACE
+          sudo mkdir -p release_download
+          sudo mkdir -p release_tag_download
+          sudo chown -R $USER:$GROUPS $GITHUB_WORKSPACE/release_download
+          sudo chown -R $USER:$GROUPS $GITHUB_WORKSPACE/release_tag_download
+          cd release_download
+          echo "release_dir=$PWD" >> $GITHUB_OUTPUT
+          cd ..
+          cd release_tag_download
+          echo "release_tag_dir=$PWD" >> $GITHUB_OUTPUT
+
+
+
+
+  rerun-failed-jobs:
+    runs-on: ubuntu-24.04
+    needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain, job_build, job_upload_release, job_organize_tags]
+    if: failure() && fromJSON(github.run_attempt) < 3  && !cancelled()
+    steps:
+      - name: Rerun failed jobs in the current workflow
+        env:
+          GH_REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "Retry failed jobs for the ${{ fromJSON(github.run_attempt) }} time, Retry 3 times in total"
+          gh workflow run Retry_Failure_Jobs.yml -F run_id=${{ github.run_id }}
+
+
+      

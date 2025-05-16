@@ -27,6 +27,10 @@ on:
         description: 'Whether single-threaded compilation'
         required: false
         default: 'false'
+      is_show_compile_timestamp:
+        description: 'Whether show compile timestamp'
+        required: false
+        default: 'false'
   # schedule:
   #   - cron: 0 */8 * * *
 
@@ -37,6 +41,7 @@ env:
   UPDATE_GIT_LOG_SH:  compile_script/step06_update_git_log.sh
   ORGANIZE_TAG_SH: compile_script/step07_organize_tag.sh
   PLATFORMS_SH: compile_script/platforms.sh
+  MATRIX_STATUS_SH: compile_script/matrix_job_status.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_ARTIFACT: true
@@ -330,11 +335,21 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      
+      - name: Matrix Status
+        id: matrix_status
+        # env:
+        #   GH_TOKEN: ${{ github.token }}
+        run: |
+            chmod +x $MATRIX_STATUS_SH
+            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
 
       - name: Pull the latest changes
+        if: steps.matrix_status.outputs.status != 'success'
         run: git pull origin ${{ github.ref_name }}
 
       - name: Install Packages
+        if: steps.matrix_status.outputs.status != 'success'
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
@@ -348,6 +363,7 @@ jobs:
       - name: Initialization Directory
         working-directory: /workdir
         id: init_directory
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
           sudo mkdir -p openwrt
           sudo mkdir -p download
@@ -359,12 +375,14 @@ jobs:
 
       - name: Download Source From Artifacts
         id : download
+        if: steps.matrix_status.outputs.status != 'success'
         uses: actions/download-artifact@v4
         with:
           name: Source_${{ matrix.source_code_platform }}
           path: download
 
       - name: File Extraction
+        if: steps.matrix_status.outputs.status != 'success'
         working-directory: /workdir
         run: |
           echo "source packages size:"
@@ -374,6 +392,7 @@ jobs:
           sudo chown -R $USER:$GROUPS /workdir/openwrt
 
       - name: Load Configuration
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
           # chmod +x $COPY_BACKGROUNDFILES_SH
           [ -e ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config ] && cp -r ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config openwrt/.config
@@ -382,6 +401,7 @@ jobs:
           # $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platform }}"
 
       - name: Download Package
+        if: steps.matrix_status.outputs.status != 'success'
         id: package
         run: |
           df -hT
@@ -397,6 +417,7 @@ jobs:
 
       - name: Compile Toolchain
         id: compile_toolchain
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
           cd openwrt
           is_complie_error=0
@@ -451,6 +472,7 @@ jobs:
       - name: Generate Source Packages
         working-directory: /workdir
         id: generate_image
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
           echo "source toolchain folder size:"
           du -hs openwrt/
@@ -470,7 +492,7 @@ jobs:
   
       - name: Upload Source To Artifact
         uses: actions/upload-artifact@v4
-        if: steps.generate_image.outputs.status == 'success'
+        if: steps.generate_image.outputs.status == 'success' && steps.matrix_status.outputs.status != 'success'
         with:
           name: Source_${{ matrix.source_code_platform }}_${{ matrix.platform }}
           path: ${{ steps.generate_image.outputs.SOURCE_TOOLCHAIN_PATH }}/output_toolchain.tar.gz
@@ -518,10 +540,20 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Matrix Status
+        id: matrix_status
+        # env:
+        #   GH_TOKEN: ${{ github.token }}
+        run: |
+            chmod +x $MATRIX_STATUS_SH
+            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}"    
+
       - name: Pull the latest changes
+        if: steps.matrix_status.outputs.status != 'success'
         run: git pull origin ${{ github.ref_name }}
 
       - name: Install Packages
+        if: steps.matrix_status.outputs.status != 'success'
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
@@ -535,6 +567,7 @@ jobs:
       - name: Initialization Directory
         working-directory: /workdir
         id: init_directory
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
           sudo mkdir -p openwrt
           sudo mkdir -p download
@@ -546,12 +579,14 @@ jobs:
 
       - name: Download Source From Artifacts
         id : download
+        if: steps.matrix_status.outputs.status != 'success'
         uses: actions/download-artifact@v4
         with:
           name: Source_${{ matrix.source_code_platform }}_${{ matrix.platform }}
           path: download
 
       - name: File Extraction
+        if: steps.matrix_status.outputs.status != 'success'
         working-directory: /workdir
         run: |
           echo "source packages size:"
@@ -566,6 +601,7 @@ jobs:
 
       - name: Generate Frimware
         id: compile
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
           cd openwrt
           is_complie_error=0
@@ -583,14 +619,22 @@ jobs:
           else
             if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
                 echo "1 threads compile frimware"
-                # make -j1
-                stdbuf -oL  make -j1 | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now'
-                is_complie_error=${PIPESTATUS[0]}
+                if [[ "${{ github.event.inputs.is_show_compile_timestamp }}" == "true" ]]; then
+                    stdbuf -oL  make -j1 | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now'
+                    is_complie_error=${PIPESTATUS[0]}
+                else
+                    make -j1
+                    is_complie_error=${PIPESTATUS[0]}
+                fi
             else
                 echo "$(nproc) threads compile frimware"
-                # make -j$(nproc)
-                stdbuf -oL  make -j$(nproc) | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now'
-                is_complie_error=${PIPESTATUS[0]}
+                if [[ "${{ github.event.inputs.is_show_compile_timestamp }}" == "true" ]]; then
+                    stdbuf -oL  make -j$(nproc) | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now'
+                    is_complie_error=${PIPESTATUS[0]}
+                else
+                    make -j$(nproc)
+                    is_complie_error=${PIPESTATUS[0]}
+                fi
             fi
           fi
 
@@ -608,19 +652,19 @@ jobs:
           df -hT
 
       - name: Check Space Usage
-        if: (!cancelled())
+        if: steps.matrix_status.outputs.status != 'success' && !cancelled()
         run: df -hT
 
       - name: Upload Bin Directory To Artifact
         uses: actions/upload-artifact@v4
-        if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
+        if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true' && steps.matrix_status.outputs.status != 'success'
         with:
           name: OpenWrt_bin_${{ matrix.source_code_platform }}_${{ matrix.platform }}
           path: openwrt/bin
 
       - name: Organize Files
         id: organize
-        if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && !cancelled()
+        if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && steps.matrix_status.outputs.status != 'success' && !cancelled() 
         run: |
           # rm -rf $GITHUB_WORKSPACE/openwrt/bin
           # mkdir -p $GITHUB_WORKSPACE/openwrt/bin
@@ -665,7 +709,7 @@ jobs:
 
       - name: Upload Firmware Directory To Artifact
         uses: actions/upload-artifact@v4
-        if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && !cancelled()
+        if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && steps.matrix_status.outputs.status != 'success' && !cancelled()
         with:
           name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
           path: ${{ steps.organize.outputs.FIRMWARE }}
@@ -687,8 +731,17 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Matrix Status
+        id: matrix_status
+        # env:
+        #   GH_TOKEN: ${{ github.token }}
+        run: |
+            chmod +x $MATRIX_STATUS_SH
+            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Upload-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
+
       - name: Initialization Environment
         id: init
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
           sudo timedatectl set-timezone "$TZ"
           df -hT
@@ -706,18 +759,21 @@ jobs:
 
       - name: Download Release From Artifacts
         id : download
+        if: steps.matrix_status.outputs.status != 'success'
         uses: actions/download-artifact@v4
         with:
           name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
           path: ${{ steps.init.outputs.release_dir }}
 
       - name: Download Tags
+        if: steps.matrix_status.outputs.status != 'success'
         uses: actions/download-artifact@v4
         with:
           name: release_tag
           path: ${{ steps.init.outputs.release_tag_dir }}
 
       - name: File Show
+        if: steps.matrix_status.outputs.status != 'success'
         run: |
           echo "release files:"
           echo "---------------------------------------------"
@@ -737,6 +793,7 @@ jobs:
 
 
       - name: Upload Firmware To Release
+        if: steps.matrix_status.outputs.status != 'success'
         uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
