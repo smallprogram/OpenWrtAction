@@ -2,8 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0a64a60|lwb1978|Thu May 15 01:20:41 2025 +0800|luci: bump to 25.5.15
-b25f9a3|lwb1978|Thu May 15 01:18:11 2025 +0800|luci: fix bugs
-43fed89|lwb1978|Thu May 15 00:12:13 2025 +0800|luci: optimize lease2hosts
-7def594|lwb1978|Wed May 14 18:02:11 2025 +0800|luci: optimize haproxy
+7b4fe5f|lwb1978|Fri May 16 01:15:06 2025 +0800|luci: bump to 25.5.16
+11db439|lwb1978|Fri May 16 01:10:13 2025 +0800|luci: fix bug
+3795626|lwb1978|Thu May 15 22:42:16 2025 +0800|luci: optimize the sing-box anytls parameter
 </details>
