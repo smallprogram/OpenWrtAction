@@ -17,4 +17,4 @@ git clone https://github.com/jerrykuku/luci-theme-argon.git ./package/custom_pac
 git clone https://github.com/jerrykuku/luci-app-argon-config.git ./package/custom_packages/luci-app-argon-config
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/custom_packages/luci-app-adguardhome
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 ./package/custom_packages/mosdns
-git clone https://github.com/sirpdboy/netspeedtest.git ./package/custom_packages/netspeedtest
+git clone https://github.com/sirpdboy/luci-app-netspeedtest ./package/custom_packages/netspeedtest
