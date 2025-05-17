@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fc02b412f|Joe Zheng|Sat Feb 8 01:18:03 2025 +0000|firmware: add Intel VPU/NPU firmware
-12749793a|Daniel Golle|Sat Nov 2 20:22:35 2024 +0000|kernel: modules: MIPI DBI TFT panels
+8439450f8|aiamadeus|Thu May 15 20:15:30 2025 +0800|aic8800: fixes build with mac80211 6.1
+45a37319a|Hauke Mehrtens|Wed Sep 11 23:37:15 2024 +0200|mac80211: Update to version 6.1.110-1
 </details>

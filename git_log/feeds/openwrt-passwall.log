@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7b4fe5f|lwb1978|Fri May 16 01:15:06 2025 +0800|luci: bump to 25.5.16
-11db439|lwb1978|Fri May 16 01:10:13 2025 +0800|luci: fix bug
-3795626|lwb1978|Thu May 15 22:42:16 2025 +0800|luci: optimize the sing-box anytls parameter
+019e8e5|lwb1978|Fri May 16 23:28:47 2025 +0800|luci: add dns filter mode prompt
+09013e4|lwb1978|Fri May 16 16:30:00 2025 +0800|luci: disallow private ip in smartdns remote dns settings
+bfb8e16|lwb1978|Fri May 16 11:22:50 2025 +0800|luci: fix two fp issues in the export link
 </details>

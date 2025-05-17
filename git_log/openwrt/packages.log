@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0d18846da|Florian Eckert|Wed Apr 23 12:42:18 2025 +0200|xtables-addons: remove not needed iptables install dependency for RTSP helpers
-d22130963|Florian Eckert|Thu Apr 24 08:56:19 2025 +0200|modemmanager: backport fixes for version 1.24.0
-c91e9322c|Wesley Gimenes|Tue May 13 11:23:02 2025 -0300|netbird: update to 0.43.3
+87175e4ca|Clair-Loup Sergent|Wed May 14 22:08:11 2025 +0200|wifi-presence: fix reading mqttID from config
+676693989|Matthias Schiffer|Mon May 12 18:42:41 2025 +0200|perl: do not set LD_LIBRARY_PATH for cross compile
+d8a233f90|Fabian Lipken|Tue May 13 10:22:02 2025 +0200|fx: update to 36.0.1
 </details>
