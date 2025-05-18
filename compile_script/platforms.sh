@@ -9,7 +9,7 @@ openwrt_value='{"REPO_URL": "https://github.com/openwrt/openwrt.git","REPO_BRANC
 lede_value='{"REPO_URL": "https://github.com/coolsnowwolf/lede","REPO_BRANCH": "master","FEEDS_CONF": "feeds_config/lean.feeds.conf.default","CONFIGS": "config/leanlede_config","DIY_P1_SH": "diy_script/lean_diy/diy-part1.sh","DIY_P2_SH": "diy_script/lean_diy/diy-part2.sh","DIY_P3_SH": "diy_script/lean_diy/diy-part3.sh","OS": "ubuntu-24.04"}'
 
 
-immortalwrt_platforms=(X86 R2C R2CPLUS R2S R4S R4SE R4SENT R5C R5S R6C R6S R66S R68S)
+immortalwrt_platforms=(X86 R2C R2CPLUS R2S R3S R4S R4SE R4SENT R5C R5S R6C R6S R66S R68S)
 # AW1000
 
 
