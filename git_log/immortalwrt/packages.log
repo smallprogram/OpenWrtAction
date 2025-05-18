@@ -1,0 +1,27 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5159536ec|Tianling Shen|Sat May 17 21:47:57 2025 +0800|Merge Official Source
+5704219bd|Tianling Shen|Sat May 17 21:47:36 2025 +0800|qBittorrent-Enhanced-Edition: Update to 5.1.0.10
+c26204d36|Tianling Shen|Sat May 17 21:41:34 2025 +0800|cloudflared: Update to 2025.5.0
+bd4e40fb0|Tianling Shen|Sat May 17 21:39:00 2025 +0800|dnsproxy: Update to 0.75.5
+87175e4ca|Clair-Loup Sergent|Wed May 14 22:08:11 2025 +0200|wifi-presence: fix reading mqttID from config
+676693989|Matthias Schiffer|Mon May 12 18:42:41 2025 +0200|perl: do not set LD_LIBRARY_PATH for cross compile
+d8a233f90|Fabian Lipken|Tue May 13 10:22:02 2025 +0200|fx: update to 36.0.1
+0d18846da|Florian Eckert|Wed Apr 23 12:42:18 2025 +0200|xtables-addons: remove not needed iptables install dependency for RTSP helpers
+d22130963|Florian Eckert|Thu Apr 24 08:56:19 2025 +0200|modemmanager: backport fixes for version 1.24.0
+c91e9322c|Wesley Gimenes|Tue May 13 11:23:02 2025 -0300|netbird: update to 0.43.3
+d63d5c202|Andris PE|Tue May 13 17:46:15 2025 +0000|net/bcp38: Add cgnat shared space to bcp38 list
+536e1ff8d|Til Kaiser|Fri May 9 10:43:30 2025 +0200|mstflint: update to 4.32.0
+48a24c73f|Alexandru Ardelean|Sun May 11 07:45:00 2025 +0300|numpy: bump to version 2.2.5
+224a35ee4|Alexandru Ardelean|Sun May 11 07:44:27 2025 +0300|django-restframework: bump to version 3.16.0
+362d15d04|Alexandru Ardelean|Sun May 11 07:42:48 2025 +0300|python-evdev: bump to version 1.9.2
+eeacf8474|Alexandru Ardelean|Sun May 11 07:40:14 2025 +0300|python-lxml: bump to version 5.4.0
+f3c0c9722|Alexandru Ardelean|Sun May 11 07:39:15 2025 +0300|pytz: bump to version 2025.2
+34c02108c|Nikolay Manev|Sun May 11 23:12:30 2025 +0300|adblock-fast: improve the processing of combined list
+aafff5ff9|Stan Grishin|Mon May 12 01:55:03 2025 +0000|https-dns-proxy: update to 2025.05.11
+e64ca4a0d|Rosen Penev|Fri May 2 16:04:46 2025 -0700|ffmpeg: add libatomic dependency
+b3b67527c|Toke Høiland-Jørgensen|Mon May 12 15:32:13 2025 +0200|acme-acmesh: Bump to v3.1.1
+929c515c1|Alexandru Ardelean|Sat May 10 22:34:27 2025 +0300|stress-ng: bump to version 0.19.00
+</details>

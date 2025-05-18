@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-87175e4ca|Clair-Loup Sergent|Wed May 14 22:08:11 2025 +0200|wifi-presence: fix reading mqttID from config
-676693989|Matthias Schiffer|Mon May 12 18:42:41 2025 +0200|perl: do not set LD_LIBRARY_PATH for cross compile
-d8a233f90|Fabian Lipken|Tue May 13 10:22:02 2025 +0200|fx: update to 36.0.1
+f21bc7f17|Michael Heimpold|Tue May 13 07:33:11 2025 +0200|php8: adapt test.sh for upcoming opkg -> apk transition
+8d999cfc5|Michael Heimpold|Fri May 9 19:15:07 2025 +0200|php8: update to 8.4.7
+c26204d36|Tianling Shen|Sat May 17 21:41:34 2025 +0800|cloudflared: Update to 2025.5.0
+bd4e40fb0|Tianling Shen|Sat May 17 21:39:00 2025 +0800|dnsproxy: Update to 0.75.5
 </details>

@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8439450f8|aiamadeus|Thu May 15 20:15:30 2025 +0800|aic8800: fixes build with mac80211 6.1
-45a37319a|Hauke Mehrtens|Wed Sep 11 23:37:15 2024 +0200|mac80211: Update to version 6.1.110-1
+aa846c933|aiamadeus|Sun Mar 9 22:00:08 2025 +0800|rockchip: sync MSI patch with upstream
 </details>

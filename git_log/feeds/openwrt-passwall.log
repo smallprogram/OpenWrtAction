@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-019e8e5|lwb1978|Fri May 16 23:28:47 2025 +0800|luci: add dns filter mode prompt
-09013e4|lwb1978|Fri May 16 16:30:00 2025 +0800|luci: disallow private ip in smartdns remote dns settings
-bfb8e16|lwb1978|Fri May 16 11:22:50 2025 +0800|luci: fix two fp issues in the export link
-</details>
