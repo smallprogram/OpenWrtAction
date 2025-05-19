@@ -40,6 +40,20 @@
 # make json_overview_image_info -j$(nproc)
 # make checksum -j$(nproc)
 
+# WSL导入导出
+# wsl --shutdown
+# wsl -l -v
+# wsl --export Ubuntu-24.04 F:\WSL\ubuntu24.04.tar
+# wsl --unregister Ubuntu-24.04
+# # wsl --import Ubuntu-24.04 F:\WSL\Ubuntu-24.04 F:\WSL\ubuntu24.04.tar --version 2
+# 进入Ubuntu，
+# sudo nano /etc/wsl.conf
+
+# [user]
+# default=你的用户名
+
+# wsl --shutdown
+
 #--------------------⬇⬇⬇⬇环境变量⬇⬇⬇⬇--------------------
 
 source ./platform_function.sh
