@@ -95,7 +95,7 @@ jobs:
       - name: Clone Source Code
         working-directory: /workdir
         run: |
-          git clone ${{ matrix.value.REPO_URL }} -b ${{matrix.value.REPO_BRANCH}} openwrt
+          git clone -b ${{matrix.value.REPO_BRANCH}} --single-branch ${{ matrix.value.REPO_URL }} openwrt
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
       - name: Load Custom Feeds
