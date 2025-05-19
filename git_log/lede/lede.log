@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-aa846c933|aiamadeus|Sun Mar 9 22:00:08 2025 +0800|rockchip: sync MSI patch with upstream
+7eb28c91f|Mieczyslaw Nalewaj|Wed Apr 16 07:53:51 2025 +0200|kernel: filter out compiler RUSTC opts
 </details>

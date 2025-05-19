@@ -2,8 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f21bc7f17|Michael Heimpold|Tue May 13 07:33:11 2025 +0200|php8: adapt test.sh for upcoming opkg -> apk transition
-8d999cfc5|Michael Heimpold|Fri May 9 19:15:07 2025 +0200|php8: update to 8.4.7
-c26204d36|Tianling Shen|Sat May 17 21:41:34 2025 +0800|cloudflared: Update to 2025.5.0
-bd4e40fb0|Tianling Shen|Sat May 17 21:39:00 2025 +0800|dnsproxy: Update to 0.75.5
+77de6687d|Philip Prindeville|Sun May 18 15:04:44 2025 -0600|bind: bump to 9.20.8
+d5bf5358d|Robert Marko|Sun May 18 17:08:47 2025 +0200|lua-openssl: bump to 0.10.0-0
+5be8d8593|Kevin Locke|Sat Nov 30 14:36:49 2024 -0700|strongswan: swanctl: Add support for send_certreq
+7c268c3ac|Thlv Alivs|Sun May 18 12:40:32 2025 +0800|zabbix: update to 7.0.12 also fix build error
+a8c89a0c7|Robert Marko|Sun May 18 13:44:33 2025 +0200|strongswan: mark UCI plugin as broken
+8419c5c53|Matthew Cather|Tue May 13 13:07:16 2025 -0500|tcp_wrappers: update patches for gcc14
+444353f7c|Eric Fahlgren|Mon May 12 11:37:23 2025 -0700|owut: update to 2025.05.12
 </details>

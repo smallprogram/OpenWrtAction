@@ -1,0 +1,60 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+fb9e5f78b5|Tianling Shen|Sun May 18 15:39:37 2025 +0800|Merge Official Source
+800ea46bd5|Liangbin Lian|Wed May 14 14:09:31 2025 +0800|rtl8812au-ct: fix netdevice notifier call warning
+a6822d5980|Shiji Yang|Sat May 10 11:19:35 2025 +0800|mvebu: replace kmod-usb3 with kmod-usb-xhci-pci-renesas
+b2d356909d|Shiji Yang|Sat May 10 11:19:25 2025 +0800|lantiq: replace kmod-usb3 with kmod-usb-xhci-pci-renesas
+c1780adbf2|Shiji Yang|Sat May 10 11:19:19 2025 +0800|apm821xx: replace kmod-usb3 with kmod-usb-xhci-pci-renesas
+81be36aaa3|Shiji Yang|Sat May 10 10:59:33 2025 +0800|kernel: modules: update dependency for kmod-usb-xhci-pci-renesas
+fbd31da840|Shiji Yang|Sat May 10 10:59:17 2025 +0800|generic: make xhci-pci-renesas a proper modular driver
+803070e07f|Shiji Yang|Thu May 1 13:51:13 2025 +0800|generic: fix disable common USB quirks patch
+4dc10ec711|Robert Marko|Fri May 16 22:10:20 2025 +0200|tools: m4: update to 1.4.20
+2809d9502f|Robert Marko|Sat May 17 11:38:02 2025 +0200|x86: generic: add missing CONFIG_DRM_ACCEL_QAIC
+6b99c5d21e|Chukun Pan|Sat May 10 21:06:20 2025 +0800|rockchip: backport PCIe MSI fixes for RK356x SoC
+cca80986b5|Chukun Pan|Fri May 9 20:10:28 2025 +0800|rockchip: replace RK356x RNG patch with upstream
+e66437a1ea|Chukun Pan|Thu May 8 20:10:02 2025 +0800|rockchip: armv8: Refresh kernel config
+17eeb6c3fa|Shiji Yang|Fri May 16 19:30:30 2025 +0800|rules.mk: respect the empty CONFIG_HOST_FLAGS_OPT
+f060615a78|Robert Marko|Fri May 16 13:18:46 2025 +0200|image: respect DEFAULT and BROKEN when Default profile is selected
+fb90296c32|Robert Marko|Thu May 15 23:15:28 2025 +0200|qualcommax: ipq50xx: spi-qpic-snand: default to 4-bit ECC
+91e9a1d221|Robert Marko|Wed May 7 18:22:07 2025 +0200|qualcommax: add 6.12 as testing kernel
+491d91d2ff|Robert Marko|Mon May 12 11:16:14 2025 +0200|qca-ssdk: update for 6.12 compatibility
+8ef70b775d|Robert Marko|Sun May 11 11:59:37 2025 +0200|qca-nss-dp: update for 6.12 compatibility
+fc4eaa34f8|Robert Marko|Mon May 12 15:56:50 2025 +0200|qualcommax: 6.12: MPD: add missing <linux/of_platform.h>
+2018a61211|Robert Marko|Mon May 12 12:56:58 2025 +0200|qualcommax: 6.12: pwm: use devm_clk_get_enabled()
+93697be03c|Robert Marko|Mon May 12 12:36:42 2025 +0200|qualcommax: 6.12: pwm: fixup for 6.12
+427522d1de|Robert Marko|Fri May 9 14:07:20 2025 +0200|qualcommax: 6.12: cpr: update for 6.12
+b152f7ba22|Robert Marko|Fri May 9 14:06:37 2025 +0200|qualcommax: 6.12: apm: change remove to void
+d2774a55c3|Robert Marko|Fri May 9 14:11:39 2025 +0200|qualcommax: 6.12: refresh config
+a2de324e14|Robert Marko|Fri May 9 13:20:19 2025 +0200|qualcommax: 6.12: refresh patches
+dbf9c83e7a|Robert Marko|Fri May 9 11:55:27 2025 +0200|qualcommax: 6.12: drop upstreamed patches
+6d1f4b2077|Robert Marko|Fri May 9 11:53:46 2025 +0200|kernel/qualcommax: Restore kernel files for v6.6
+e40daa5b99|Robert Marko|Fri May 9 11:53:46 2025 +0200|kernel/qualcommax: Create kernel files for v6.12 (from v6.6)
+e3bec5692c|Shiji Yang|Fri May 16 18:56:36 2025 +0800|rules.mk: set default host tools GCC optimization level to -O2
+f60bbfa23f|Felix Fietkau|Fri May 16 12:58:19 2025 +0200|unetmsg: list remotely published ids via ubus call
+707a89bc26|Felix Fietkau|Fri May 16 12:42:00 2025 +0200|ubus: update to Git HEAD (2025-05-16)
+a242cfb4e1|Felix Fietkau|Fri May 16 11:15:27 2025 +0200|unetmsg: return the request data when issuing async requests
+08179b367b|Piotr Kubik|Tue Apr 8 12:41:52 2025 +0200|ethtool: update to 6.14
+0d4eda6237|Robert Marko|Thu May 15 19:35:31 2025 +0200|generic: 6.12: add CONFIG_IDPF
+1e46a391df|Robert Marko|Thu May 15 19:28:20 2025 +0200|generic: 6.12: add CONFIG_HISILICON_ERRATUM_162100801
+f160a017ac|Robert Marko|Thu May 15 19:20:28 2025 +0200|x86: add missing DRM_ACCEL symbols
+64ad16993d|Linus Lüssing|Sat May 10 05:22:22 2025 +0200|realtek: fix flooding of unsnoopable multicast addresses
+86a6c550b9|Paweł Owoc|Mon May 12 15:41:09 2025 +0200|qualcommax: dts: fix missing or empty reg property warning
+af021c1285|Paweł Owoc|Mon May 12 11:30:51 2025 +0200|qualcommax: dts: fix property has invalid length warning
+610dd871aa|Felix Fietkau|Thu May 15 15:41:37 2025 +0200|kernel: fix warning on retrying page pool release
+ca51f7aaf5|Robert Marko|Thu May 15 14:51:53 2025 +0200|qualcommax: ipq60xx: fix EAP625-Outdoor HD BDF package name
+51b78aaaae|Joe Zheng|Sat Feb 8 01:38:36 2025 +0000|kernel: package intel_vpu driver
+bcda3b66fa|Joe Zheng|Sat Feb 8 01:18:03 2025 +0000|firmware: add package for Intel VPU/NPU firmware
+95341cc9c5|Zoltan HERPAI|Thu May 1 13:31:26 2025 +0000|generic: 6.12: add missing symbols
+51c1ea08d0|Alexandru Gagniuc|Wed Apr 23 19:37:01 2025 -0500|qualcommax: ipq60xx: add TP-Link EAP625-Outdoor HD v1 support
+c75223338f|Alexandru Gagniuc|Tue May 13 15:59:00 2025 -0500|qualcommax: ipq60xx: eap6xx-outdoor: add PHY reset pinctrl
+7be36c20f1|Alexandru Gagniuc|Wed Apr 23 19:27:24 2025 -0500|qualcommax: ipq60xx: split eap610-outdoor devicetree
+12913c3c56|Rosen Penev|Fri May 9 15:20:08 2025 -0700|mac80211: move OF stuff to ath9k_of_init
+eea4689654|David Bauer|Wed May 14 01:49:44 2025 +0200|ramips: pad EX400 kernel partition to retain web recovery
+d97c01a11f|David Bauer|Wed May 14 01:32:34 2025 +0200|ramips: clean UBI tempdir before image creation
+61da745817|Álvaro Fernández Rojas|Wed May 14 09:45:24 2025 +0200|bmips: add missing NAND config symbol
+d02071c24f|Robert Marko|Wed May 14 11:05:55 2025 +0200|generic: config-filter: filter out CONFIG_PAHOLE_HAS_LANG_EXCLUDE
+18de64d87b|Matthias Schiffer|Tue May 13 21:58:56 2025 +0200|toolchain: gcc: backport patch to fix ICE with PowerPC targets
+7f1b9a4209|Felix Fietkau|Wed May 14 11:21:56 2025 +0200|unetd: cli: add hook calls for invite/join status changes
+</details>

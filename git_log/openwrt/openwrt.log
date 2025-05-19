@@ -2,16 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-800ea46bd5|Liangbin Lian|Wed May 14 14:09:31 2025 +0800|rtl8812au-ct: fix netdevice notifier call warning
-a6822d5980|Shiji Yang|Sat May 10 11:19:35 2025 +0800|mvebu: replace kmod-usb3 with kmod-usb-xhci-pci-renesas
-b2d356909d|Shiji Yang|Sat May 10 11:19:25 2025 +0800|lantiq: replace kmod-usb3 with kmod-usb-xhci-pci-renesas
-c1780adbf2|Shiji Yang|Sat May 10 11:19:19 2025 +0800|apm821xx: replace kmod-usb3 with kmod-usb-xhci-pci-renesas
-81be36aaa3|Shiji Yang|Sat May 10 10:59:33 2025 +0800|kernel: modules: update dependency for kmod-usb-xhci-pci-renesas
-fbd31da840|Shiji Yang|Sat May 10 10:59:17 2025 +0800|generic: make xhci-pci-renesas a proper modular driver
-803070e07f|Shiji Yang|Thu May 1 13:51:13 2025 +0800|generic: fix disable common USB quirks patch
-4dc10ec711|Robert Marko|Fri May 16 22:10:20 2025 +0200|tools: m4: update to 1.4.20
-2809d9502f|Robert Marko|Sat May 17 11:38:02 2025 +0200|x86: generic: add missing CONFIG_DRM_ACCEL_QAIC
-6b99c5d21e|Chukun Pan|Sat May 10 21:06:20 2025 +0800|rockchip: backport PCIe MSI fixes for RK356x SoC
-cca80986b5|Chukun Pan|Fri May 9 20:10:28 2025 +0800|rockchip: replace RK356x RNG patch with upstream
-e66437a1ea|Chukun Pan|Thu May 8 20:10:02 2025 +0800|rockchip: armv8: Refresh kernel config
+7193539c98|Shiji Yang|Sun Mar 30 10:06:06 2025 +0800|treewide: dts: trim "#size-cells" from "gpio-export" node
+75c69935fd|Alex Thompson|Sun May 18 22:10:04 2025 +1000|qualcommax: TP-Link EAP620HD fix factory data
+3cd2ff3150|Ryan Keane|Thu May 15 02:08:17 2025 -0700|openssl: Update to 3.5.0
+dcc21427f1|Mieczyslaw Nalewaj|Sun May 18 01:18:57 2025 +0200|generic: refresh patches
 </details>
