@@ -306,6 +306,19 @@ jobs:
     name: Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Matrix Status
+        id: matrix_status
+        # env:
+        #   GH_TOKEN: ${{ github.token }}
+        run: |
+            chmod +x $MATRIX_STATUS_SH
+            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
+
       - name: Server Info
         run: |
             echo "---------------------CPU Info--------------------"
@@ -330,19 +343,6 @@ jobs:
           remove-codeql: 'true'
           remove-docker-images: 'true'
           build-mount-path: '/workdir'
-
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      
-      - name: Matrix Status
-        id: matrix_status
-        # env:
-        #   GH_TOKEN: ${{ github.token }}
-        run: |
-            chmod +x $MATRIX_STATUS_SH
-            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
 
       - name: Pull the latest changes
         if: steps.matrix_status.outputs.status != 'success'
@@ -509,6 +509,19 @@ jobs:
     name: Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}
 
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Matrix Status
+        id: matrix_status
+        # env:
+        #   GH_TOKEN: ${{ github.token }}
+        run: |
+            chmod +x $MATRIX_STATUS_SH
+            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
+
       - name: Server Info
         run: |
             echo "---------------------CPU Info--------------------"
@@ -534,20 +547,7 @@ jobs:
           remove-codeql: 'true'
           remove-docker-images: 'true'
           build-mount-path: '/workdir'
-
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Matrix Status
-        id: matrix_status
-        # env:
-        #   GH_TOKEN: ${{ github.token }}
-        run: |
-            chmod +x $MATRIX_STATUS_SH
-            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}"    
-
+          
       - name: Pull the latest changes
         if: steps.matrix_status.outputs.status != 'success'
         run: git pull origin ${{ github.ref_name }}
