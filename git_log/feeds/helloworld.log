@@ -1,9 +1,0 @@
-<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-9d0c705|zxl hhyccc|Sun May 18 15:19:15 2025 +0800|v2ray-core: Update to 5.31.0
-10ea77e|zxl hhyccc|Sun May 18 15:17:05 2025 +0800|xray-core: update to 25.5.16
-f1132e8|zxl hhyccc|Sun May 18 15:15:34 2025 +0800|shadowsocks-rust: update to 1.23.4
-8b19dab|zxl hhyccc|Sun May 18 15:12:38 2025 +0800|dnsproxy: Update to 0.75.5
-</details>

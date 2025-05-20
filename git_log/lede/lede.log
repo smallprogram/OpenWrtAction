@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7eb28c91f|Mieczyslaw Nalewaj|Wed Apr 16 07:53:51 2025 +0200|kernel: filter out compiler RUSTC opts
+59ef9ef11|Boos4721|Mon May 19 20:01:20 2025 +0800|kernel: bump 6.12 to 6.12.29 (#13490)
 </details>

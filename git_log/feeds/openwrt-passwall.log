@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-37933be|lwb1978|Sun May 18 23:11:10 2025 +0800|luci: fix #3879
+60428e8|lwb1978|Mon May 19 09:43:57 2025 +0800|luci: xray ss method add `none` & `plain`
 </details>

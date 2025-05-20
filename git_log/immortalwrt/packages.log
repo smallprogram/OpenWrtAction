@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a2affbc1d|Interesting Gang|Sun May 18 21:43:57 2025 +0800|sing-box: Update to 1.11.11
+7e424129e|Integral|Mon May 19 12:57:04 2025 +0800|wxbase: update to 3.2.8
+8bdf17333|Integral|Mon May 19 12:48:13 2025 +0800|upx: update to 5.0.1
+11bb1af3c|Integral|Mon May 19 12:44:26 2025 +0800|nps: update to 0.26.24 & fix license
 </details>
