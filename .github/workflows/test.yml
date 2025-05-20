@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Test(V4)
+name: Test
 
 on:
   workflow_dispatch:
@@ -51,6 +51,11 @@ jobs:
     runs-on: ubuntu-24.04
     name: Init
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
       - name: Maximize Build Space
         uses: easimon/maximize-build-space@master
         with:
@@ -62,11 +67,6 @@ jobs:
           remove-codeql: 'true'
           remove-docker-images: 'true'
           build-mount-path: '/workdir'
-
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: SSH connection to Actions
         uses: mxschmitt/action-tmate@v3.16
