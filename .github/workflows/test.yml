@@ -51,11 +51,17 @@ jobs:
     runs-on: ubuntu-24.04
     name: Init
     steps:
+      - name: Initialization Environment
+        run: |
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown -R $USER:$GROUPS /workdir
+          df -hT
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          
+
       - name: Maximize Build Space
         uses: easimon/maximize-build-space@master
         with:
