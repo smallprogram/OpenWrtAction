@@ -2,22 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a238170e57|Mieczyslaw Nalewaj|Mon May 19 14:27:36 2025 +0200|treewide: strip trailing whitespace
-6b43a52171|Shiji Yang|Mon May 19 08:50:10 2025 +0800|mediatek: mt7622: add the missing phy interrupt-parent for WAX206
-6854b19202|Shiji Yang|Mon May 19 08:26:37 2025 +0800|mediatek: mt7622: various dtc warning fixes for D-Link EAGLE PRO AI
-5bead4a0b2|Shiji Yang|Mon May 19 08:20:52 2025 +0800|mediatek: mt7622: fix mmc dtc warnings
-7cc089950d|Shiji Yang|Mon May 19 08:20:06 2025 +0800|mediatek: mt7623: fix mmc dtc warnings
-d1482e5e2d|Shiji Yang|Mon May 19 08:15:21 2025 +0800|mediatek: filogic: fix mxl phy node dtc warnings
-96adba2768|Shiji Yang|Mon May 19 08:12:56 2025 +0800|mediatek: filogic: fix SPI node reg size dtc warnings
-f2de919658|Shiji Yang|Mon May 19 08:10:52 2025 +0800|mediatek: filogic: fix bpi-r4 eeprom dtc warnings
-a851bbeec6|Shiji Yang|Mon May 19 08:09:47 2025 +0800|mediatek: filogic: fix PCIe node dtc warnings
-a16b44ac43|Shiji Yang|Mon May 19 07:58:02 2025 +0800|mediatek: filogic: fix wm8960 dtc warnings
-49d5fc505f|Shiji Yang|Mon May 19 07:46:59 2025 +0800|mediatek: filogic: fix WiFi MAC address invalid length dtc warnings
-2d9697293b|Shiji Yang|Mon May 19 07:43:29 2025 +0800|mediatek: filogic: fix "unknown,gca230718" dtc warnings
-a7df41412b|Shiji Yang|Mon May 19 07:36:51 2025 +0800|mediatek: filogic: fix memory node invalid length dtc warnings
-ac5561906e|Shiji Yang|Mon May 19 07:30:58 2025 +0800|mediatek: filogic: fix unit name leading 0s dtc warnings
-bc0be15e8d|Shiji Yang|Mon May 19 07:25:27 2025 +0800|mediatek: filogic: fix flash node name dtc warnings
-1adb0a8928|Shiji Yang|Mon May 19 07:18:13 2025 +0800|mediatek: filogic: fix mmc dtc warnings
-13a02c9832|Shiji Yang|Mon May 19 06:53:31 2025 +0800|mediatek: filogic: fix "srg,sysled" dtc warnings
-12c93f2295|Mieczyslaw Nalewaj|Sun May 18 12:17:30 2025 +0200|kernel: modules: define fb-io-fops module
+dfacae3049|Robert Marko|Tue May 20 11:25:17 2025 +0200|mvebu: armada37xx: add pending PXA I2C recovery fix
+831994e258|Robert Marko|Tue May 20 11:23:52 2025 +0200|mvebu: armada37xx: backport pinctrl fixes
+82cc7f56e3|Felix Fietkau|Tue May 20 14:32:02 2025 +0200|unetmsg: fix host name in response messages
+12f4814c41|Felix Fietkau|Fri May 16 13:44:38 2025 +0200|unetmsg: add support for sending requests/messages to specific hosts
+d95e8a59bb|INAGAKI Hiroshi|Sat May 17 20:22:57 2025 +0900|ramips: mt7621: fix broken hexdump expression in iodata.sh
+4c9f277c9a|Mieczyslaw Nalewaj|Mon May 19 23:03:43 2025 +0200|kernel/i2c: x86: remove kernel 6.12 conditions checking
+6a85ce75af|Mieczyslaw Nalewaj|Mon May 19 22:27:57 2025 +0200|x86: drop 6.6 support
+c1d7d0e5a4|Mieczyslaw Nalewaj|Mon May 19 22:21:59 2025 +0200|x86: use kernel 6.12 by default
+45889aecf8|Konstantin Demin|Tue May 20 10:04:14 2025 +0300|toolchain: glibc: set min kernel version to 6.6
+ba923ee5ae|Robert Marko|Mon May 19 12:16:32 2025 +0200|qualcommax: default to 6.12
 </details>

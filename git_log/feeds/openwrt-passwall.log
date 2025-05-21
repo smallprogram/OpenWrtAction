@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-60428e8|lwb1978|Mon May 19 09:43:57 2025 +0800|luci: xray ss method add `none` & `plain`
-</details>

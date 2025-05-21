@@ -1,0 +1,6 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+f274d8aa1c|Alvaro Ollero|Thu May 15 18:42:15 2025 +0200|luci-app-wol: Show powered off hosts in dropdown menu
+</details>

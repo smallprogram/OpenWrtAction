@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-59ef9ef11|Boos4721|Mon May 19 20:01:20 2025 +0800|kernel: bump 6.12 to 6.12.29 (#13490)
+914bd7122|Ryan Keane|Thu May 15 02:08:17 2025 -0700|openssl: Update to 3.5.0
+6620a5e83|coolsnowwolf|Tue May 20 13:30:52 2025 +0800|kernel: bump all to latest HEAD
 </details>

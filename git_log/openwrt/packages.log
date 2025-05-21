@@ -2,15 +2,22 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cffbe8b32|Wesley Gimenes|Sun May 18 18:19:40 2025 -0300|netbird: update to 0.44.0
-b0c4fe0b9|Robert Marko|Sun May 18 18:07:23 2025 +0200|semodule-utils: update to 3.8.1
-f62a91c78|Robert Marko|Sun May 18 18:06:32 2025 +0200|selinux-python: update to 3.8.1
-f8bb47257|Robert Marko|Sun May 18 18:05:03 2025 +0200|python-semanage: update to 3.8.1
-b6d9fcd1c|Robert Marko|Sun May 18 18:04:03 2025 +0200|python-selinux: update to 3.8.1
-fec25ff6f|John Audia|Sat May 17 12:12:43 2025 -0400|lm-sensors: update to v3.6.2
-e1d8da187|Dane Murphy|Sat May 17 09:01:10 2025 -0700|iperf3: update to 3.19
-4632f4553|Fabian Lipken|Fri May 16 18:10:39 2025 +0200|fx: update to 36.0.2
-a2f30ef12|Rosen Penev|Wed Apr 30 16:00:48 2025 -0700|alpine: fix compilation with GCC14
-6d9d87166|Rosen Penev|Sun May 4 18:18:49 2025 -0700|rtorrent: update to 0.15.3
-13a058bed|Rosen Penev|Sun May 4 15:21:06 2025 -0700|libtorrent: update to 0.15.3
+3c236fa28|Peter van Dijk|Tue May 20 13:05:41 2025 +0200|dnsdist: update to 1.9.10
+66b7e522c|Sergey Ponomarev|Sun Jul 23 22:07:30 2023 +0300|tor-hs: bump version to 0.1.0
+0c0536b2b|Sergey Ponomarev|Thu Feb 8 00:03:43 2024 +0200|tor-hs: keep /etc/tor config folder
+94de72970|Sergey Ponomarev|Thu Feb 8 00:01:07 2024 +0200|tor-hs: put torrc_generated into in-memory folder /var/run/
+2f505ed7d|Sergey Ponomarev|Wed Feb 7 20:59:33 2024 +0200|tor-hs: create hs folder only if not exists
+07f37d9dc|Sergey Ponomarev|Wed Feb 7 00:15:52 2024 +0200|tor-hs: add validation
+4f3c7711a|Sergey Ponomarev|Sun Feb 4 22:58:32 2024 +0200|tor-hs: Use config_get_bool for enable_hs
+a97989f0c|Sergey Ponomarev|Sun Feb 4 22:54:08 2024 +0200|tor-hs: reformat and cleanup
+783b92d5b|Sergey Ponomarev|Sun Jul 23 12:14:45 2023 +0300|tor-hs: cleanup tor-hs.conf
+eee8f9e1e|Sergey Ponomarev|Fri Aug 4 17:19:30 2023 +0300|tor-hs: tor-hs.init skip onion service when Name empty
+1f591bcc1|Sergey Ponomarev|Fri Aug 4 11:23:44 2023 +0300|tor-hs: tor-hs.init remove unused clean_hs()
+c709e7a09|Sergey Ponomarev|Sat Jul 15 17:27:39 2023 +0300|tor-hs: tor-hs.init handle_hs_ports_conf split ports
+910041d39|Sergey Ponomarev|Sat Jul 15 17:16:38 2023 +0300|tor-hs: tor-hs.init handle_hs_ports_conf: remove unused name var
+3d32c6244|Fabrice Fontaine|Wed Feb 26 21:31:06 2025 +0100|admin/syslog-ng: fix PKG_CPE_ID
+f5089fc6c|John Audia|Wed Jan 8 09:44:33 2025 -0500|fscrypt: add new package
+ae56deff2|Wei-Ting Yang|Thu Apr 24 19:45:39 2025 +0800|treewide: assign some PKG_CPE_IDs
+d66e7cbad|Goetz Goerisch|Sat May 17 09:20:43 2025 +0200|jool: update to 4.1.14
+4917148a1|Jonathan Smith|Fri Apr 18 01:24:14 2025 +0800|smartdns: Update to version 46.1
 </details>
