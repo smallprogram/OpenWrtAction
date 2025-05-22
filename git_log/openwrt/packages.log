@@ -2,22 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3c236fa28|Peter van Dijk|Tue May 20 13:05:41 2025 +0200|dnsdist: update to 1.9.10
-66b7e522c|Sergey Ponomarev|Sun Jul 23 22:07:30 2023 +0300|tor-hs: bump version to 0.1.0
-0c0536b2b|Sergey Ponomarev|Thu Feb 8 00:03:43 2024 +0200|tor-hs: keep /etc/tor config folder
-94de72970|Sergey Ponomarev|Thu Feb 8 00:01:07 2024 +0200|tor-hs: put torrc_generated into in-memory folder /var/run/
-2f505ed7d|Sergey Ponomarev|Wed Feb 7 20:59:33 2024 +0200|tor-hs: create hs folder only if not exists
-07f37d9dc|Sergey Ponomarev|Wed Feb 7 00:15:52 2024 +0200|tor-hs: add validation
-4f3c7711a|Sergey Ponomarev|Sun Feb 4 22:58:32 2024 +0200|tor-hs: Use config_get_bool for enable_hs
-a97989f0c|Sergey Ponomarev|Sun Feb 4 22:54:08 2024 +0200|tor-hs: reformat and cleanup
-783b92d5b|Sergey Ponomarev|Sun Jul 23 12:14:45 2023 +0300|tor-hs: cleanup tor-hs.conf
-eee8f9e1e|Sergey Ponomarev|Fri Aug 4 17:19:30 2023 +0300|tor-hs: tor-hs.init skip onion service when Name empty
-1f591bcc1|Sergey Ponomarev|Fri Aug 4 11:23:44 2023 +0300|tor-hs: tor-hs.init remove unused clean_hs()
-c709e7a09|Sergey Ponomarev|Sat Jul 15 17:27:39 2023 +0300|tor-hs: tor-hs.init handle_hs_ports_conf split ports
-910041d39|Sergey Ponomarev|Sat Jul 15 17:16:38 2023 +0300|tor-hs: tor-hs.init handle_hs_ports_conf: remove unused name var
-3d32c6244|Fabrice Fontaine|Wed Feb 26 21:31:06 2025 +0100|admin/syslog-ng: fix PKG_CPE_ID
-f5089fc6c|John Audia|Wed Jan 8 09:44:33 2025 -0500|fscrypt: add new package
-ae56deff2|Wei-Ting Yang|Thu Apr 24 19:45:39 2025 +0800|treewide: assign some PKG_CPE_IDs
-d66e7cbad|Goetz Goerisch|Sat May 17 09:20:43 2025 +0200|jool: update to 4.1.14
-4917148a1|Jonathan Smith|Fri Apr 18 01:24:14 2025 +0800|smartdns: Update to version 46.1
+1fe414612|Noah Meyerhans|Wed May 21 15:06:57 2025 -0400|bind: bump to 9.20.9
+0e413008c|Sergey Ponomarev|Mon Jan 1 17:33:16 2024 +0200|emailrelay: Add support of build with MbedTLS
+0d5659690|Sergey Ponomarev|Mon Jan 1 17:31:05 2024 +0200|emailrelay: move config options to Config.in
+d5e4a8a7e|Sergey Ponomarev|Wed Aug 30 23:14:31 2023 +0300|emailrelay: update to v2.6
+c5604731c|Sergey Ponomarev|Sun Jul 31 18:09:41 2022 +0300|emailrelay: fix reference link
+0cba893a3|Sergey Ponomarev|Wed Aug 30 21:56:27 2023 +0300|emailrelay: more options
+7383eb093|Sergey Ponomarev|Wed Aug 30 20:00:45 2023 +0300|emailrelay: conf: TLS split cert and private key
+ccd014b24|Sergey Ponomarev|Sat Jul 23 23:17:10 2022 +0300|emailrelay: conf: TLS options
+996b2ec67|Sergey Ponomarev|Sun May 15 12:17:39 2022 +0300|emailrelay: fix server_tls
+caa4f7f8f|Sergey Ponomarev|Mon May 16 15:34:09 2022 +0300|emailrelay: early return if not enabled
+63f505841|Ivan Pavlov|Wed May 21 00:22:40 2025 +0300|ovpn-dco: update to version 0.2.20241216
 </details>

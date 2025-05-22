@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-914bd7122|Ryan Keane|Thu May 15 02:08:17 2025 -0700|openssl: Update to 3.5.0
-6620a5e83|coolsnowwolf|Tue May 20 13:30:52 2025 +0800|kernel: bump all to latest HEAD
+c943d243b|Felix Fietkau|Fri Jul 12 15:04:12 2024 +0200|kernel: backport mhi download to 6.1
+a92867827|John Audia|Sun May 18 05:28:28 2025 -0400|x86: add new defualt config option
 </details>
