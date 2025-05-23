@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c943d243b|Felix Fietkau|Fri Jul 12 15:04:12 2024 +0200|kernel: backport mhi download to 6.1
-a92867827|John Audia|Sun May 18 05:28:28 2025 -0400|x86: add new defualt config option
+7ffccd127|coolsnowwolf|Mon May 19 23:10:28 2025 +0800|x86: enable RETHUNK for buggy Intel
+92377544b|John Audia|Wed May 21 09:32:50 2025 -0400|intel-microcode: update to 20250512
 </details>
