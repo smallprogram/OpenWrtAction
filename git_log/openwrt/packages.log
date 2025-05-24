@@ -2,19 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-27513c12a|Jan Kardell|Thu May 22 14:05:55 2025 +0200|gammu: Fix misspelled licence variable
-af3b95002|Jan Kardell|Tue May 20 15:41:18 2025 +0200|luaexpat: Add license
-f7603cbf2|Jan Kardell|Tue May 20 15:35:31 2025 +0200|luasql: Fix license file
-a0e74a031|Jan Kardell|Tue May 20 14:58:11 2025 +0200|freetype: Fix license file
-c71217b57|Jan Kardell|Tue May 20 14:44:13 2025 +0200|libudev-zero: Fix license
-93a9f0d7a|Jan Kardell|Tue May 20 14:31:13 2025 +0200|tcp_wrappers: Fix license file
-ed9613e5c|Jan Kardell|Tue May 20 11:48:53 2025 +0200|canutils: Fix license file
-4461086d5|Jan Kardell|Tue May 20 11:43:48 2025 +0200|fuse3: Fix license file
-dd7906d97|Jan Kardell|Tue May 20 11:36:04 2025 +0200|picocom: Fix license file
-e7f47d09e|Josef Schlehofer|Thu May 22 14:23:10 2025 +0200|wifi-presence: bump PKG_RELEASE
-8bb5a41cd|George Sapkin|Fri May 2 00:55:00 2025 +0300|python-netifaces: drop package
-5c26a8717|Mieczyslaw Nalewaj|Sat May 10 23:06:11 2025 +0200|xtables-addons: nf_conntrack_rtsp: change strlcpy to strscpy
-7f0b4e4bf|Javier Marcet|Thu May 8 18:48:30 2025 +0200|docker-compose: Update to version 2.36.0
-ae118bed1|Jianhui Zhao|Mon May 5 21:32:12 2025 +0800|lua-cjson: add build VARIANT for Lua5.4
-afcd6ac42|Andy Jackson|Fri Mar 1 13:38:07 2024 +0000|static-neighbor-reports: Update README.md
+cb930147b|Nikolay Manev|Wed May 14 22:10:27 2025 +0300|pv: update to 1.9.31
+269af99ab|Russell Senior|Thu May 22 03:49:37 2025 -0700|xtables-addons: fix build for kernel 6.12
+91b4032de|Sandro Jäckel|Thu May 22 18:14:31 2025 +0200|tailscale: update to 1.84.0
 </details>

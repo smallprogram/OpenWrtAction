@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7ffccd127|coolsnowwolf|Mon May 19 23:10:28 2025 +0800|x86: enable RETHUNK for buggy Intel
-92377544b|John Audia|Wed May 21 09:32:50 2025 -0400|intel-microcode: update to 20250512
+ca9b1c268|Rosen Penev|Tue May 20 14:52:18 2025 -0700|tools: add cmake dependency to bzip2
 </details>

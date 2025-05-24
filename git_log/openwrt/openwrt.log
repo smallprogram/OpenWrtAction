@@ -2,26 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d8e3213929|Rosen Penev|Tue May 20 18:17:32 2025 -0700|tools/elftosb: fix compilation with C++17
-6229a19d0f|Shiji Yang|Sun May 18 19:29:30 2025 +0800|uboot-bcm4908: fix build with GCC14
-499a59c234|Mieczyslaw Nalewaj|Thu May 22 16:29:22 2025 +0200|kernel: bump 6.12 to 6.12.30
-e77a25de0b|Stefan Kalscheuer|Thu Apr 10 18:00:37 2025 +0200|uboot-mvebu: update to version 2025.04
-461fc06f9d|Markus Stockhausen|Sat May 17 02:22:09 2025 -0400|realtek: fix mdio parent/child locking issues
-4e7387cebd|Rosen Penev|Tue May 20 15:53:26 2025 -0700|tools/quilt: update to 0.69
-cde7e37f80|Mathew McBride|Tue May 20 13:40:07 2025 +1000|boot: uboot-armsr: update to U-Boot 2025.04
-e247b7ab66|Shiji Yang|Sun May 18 20:42:19 2025 +0800|ramips: fix wrg-header image recipe
-b3c76f1821|Zoltan HERPAI|Mon May 5 23:24:15 2025 +0200|d1: add 6.12 kernel as testing
-e9b5737dd3|Zoltan HERPAI|Mon May 5 23:23:55 2025 +0200|d1: 6.12: refresh kernel config
-f8f9a45ccd|Zoltan HERPAI|Mon May 5 22:14:18 2025 +0200|d1: 6.12: remove upstreamed patches and refresh remaining ones
-a68467f307|Zoltan HERPAI|Sun May 4 00:29:54 2025 +0200|kernel/d1: Restore kernel files for v6.6
-7c9b09d854|Zoltan HERPAI|Sun May 4 00:29:54 2025 +0200|kernel/d1: Create kernel files for v6.12 (from v6.6)
-d8375034b8|Álvaro Fernández Rojas|Thu May 22 10:43:00 2025 +0200|generic: backport upstream v6.16 Realtek PHY patches
-91ce7f606a|Álvaro Fernández Rojas|Thu May 22 10:39:47 2025 +0200|generic: backport upstream v6.16 r8169 patches
-15078ecb68|Rosen Penev|Sat May 17 18:44:05 2025 -0700|ath79: remove platform_device_id from drivers
-769e9efd67|Zoltan HERPAI|Fri May 2 15:16:59 2025 +0200|mxs: add 6.12 kernel as testing
-0aa9c795b5|Zoltan HERPAI|Fri May 2 15:16:18 2025 +0200|mxs: refresh config for 6.12
-cf19095322|Zoltan HERPAI|Wed Apr 30 14:05:42 2025 +0000|kernel/mxs: Restore kernel files for v6.6
-8d9435f7cc|Zoltan HERPAI|Wed Apr 30 14:05:42 2025 +0000|kernel/mxs: Create kernel files for v6.12 (from v6.6)
-aaf89c2c2b|Zoltan HERPAI|Sat May 3 21:14:38 2025 +0000|generic: 6.12: add missing symbols
-d8ca43ccf1|Markus Stockhausen|Sun May 4 15:40:00 2025 -0400|realtek: harmonize power functions for RTL8214FC
+f23ad96e47|Álvaro Fernández Rojas|Fri May 23 11:22:37 2025 +0200|mac80211: brcm: update RPi brcmfmac patches
+8dbbca029d|Robert Marko|Fri May 23 14:14:29 2025 +0200|qualcommax: 6.6: remove completely
+4803d9a057|Robert Marko|Fri May 23 14:10:50 2025 +0200|qualcommax: import pending fix for multiple conf
+a526f80af8|Markus Stockhausen|Wed May 21 02:17:13 2025 -0400|realtek: fix MAC_FORCE_MODE_CTRL register for RTL931x
+9deb8fad2f|Rosen Penev|Tue May 20 14:52:18 2025 -0700|tools: add cmake dependency to bzip2
+60b5cfdf5a|Zoltan HERPAI|Fri May 2 15:31:58 2025 +0200|sifiveu: add 6.12 kernel as testing
+00ca340c40|Zoltan HERPAI|Sat May 3 21:48:21 2025 +0200|sifiveu: 6.12: drop upstreamed patches and refresh remaining ones
+07e701357d|Zoltan HERPAI|Fri May 2 15:31:30 2025 +0200|sifiveu: refresh 6.12 kernel config
+41860ade91|Zoltan HERPAI|Wed Apr 30 20:36:54 2025 +0000|kernel/sifiveu: Restore kernel files for v6.6
+875f3c9275|Zoltan HERPAI|Wed Apr 30 20:36:54 2025 +0000|kernel/sifiveu: Create kernel files for v6.12 (from v6.6)
+9b6cb81b24|Álvaro Fernández Rojas|Fri May 23 10:36:21 2025 +0200|bcm27xx: drop README patches
 </details>

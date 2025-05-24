@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-63a6fe1|zxl hhyccc|Thu May 22 22:01:54 2025 +0800|Merge pull request #1722 from zxlhhyccc/custom
-635d699|zxlhhyccc|Wed May 21 23:40:00 2025 +0800|luci-app-ssr-plus: Fix `sip008` and `ssd` subscribe.
+9f6cf05|zxl hhyccc|Fri May 23 22:32:27 2025 +0800|Merge pull request #1726 from zxlhhyccc/custom
+ebe37f4|zxlhhyccc|Fri May 23 21:13:09 2025 +0800|luci-app-ssr-plus: Add `SS` version options for `sip008` and `ssd`.
+7cc5928|coolsnowwolf|Fri May 23 13:02:26 2025 +0800|Merge pull request #1723 from zxlhhyccc/custom
+ad6a228|zxlhhyccc|Thu May 22 22:09:06 2025 +0800|luci-app-ssr-plus: Use 'wget-ssl' - > 'curl' to solve the compatibility issue between the old and new versions of wget.
 </details>

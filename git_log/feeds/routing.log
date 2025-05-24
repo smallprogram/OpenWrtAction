@@ -1,0 +1,7 @@
+<details> <summary> <b>routing new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ee32e9b|Elektra|Fri May 23 16:42:54 2025 +0200|The build failed because various string functions couldn't be found. This happened because the indirect include of string.h is now gone.
+d08b144|Sven Eckelmann|Fri May 23 11:22:03 2025 +0200|batmand: Fix FTBFS with recent musl
+</details>

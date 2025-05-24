@@ -1,0 +1,7 @@
+<details> <summary> <b>telephony new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+84f0d1f|Jiri Slachta|Fri May 23 18:09:12 2025 +0200|Merge pull request #892 from dddaniel/master
+70d6a02|Daniel Danzberger|Fri Jan 17 01:14:41 2025 +0100|baresip: add uci config section for accounts
+</details>
