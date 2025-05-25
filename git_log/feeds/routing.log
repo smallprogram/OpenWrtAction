@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ee32e9b|Elektra|Fri May 23 16:42:54 2025 +0200|The build failed because various string functions couldn't be found. This happened because the indirect include of string.h is now gone.
-d08b144|Sven Eckelmann|Fri May 23 11:22:03 2025 +0200|batmand: Fix FTBFS with recent musl
+1f77871|Rob White|Fri May 23 18:41:56 2025 +0100|mesh11sd: update to version 5.1.2
 </details>

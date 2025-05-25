@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ca9b1c268|Rosen Penev|Tue May 20 14:52:18 2025 -0700|tools: add cmake dependency to bzip2
+e0faf71ce|Mieczyslaw Nalewaj|Sun May 4 11:32:57 2025 +0200|kernel: mtk_bmt: fix compile warning
 </details>

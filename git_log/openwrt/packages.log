@@ -1,8 +1,0 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-cb930147b|Nikolay Manev|Wed May 14 22:10:27 2025 +0300|pv: update to 1.9.31
-269af99ab|Russell Senior|Thu May 22 03:49:37 2025 -0700|xtables-addons: fix build for kernel 6.12
-91b4032de|Sandro Jäckel|Thu May 22 18:14:31 2025 +0200|tailscale: update to 1.84.0
-</details>
