@@ -2,28 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3d6e1a3c9d|Rosen Penev|Wed May 14 12:59:33 2025 -0700|mac80211: ath9k: replace qca,led-sources
-c70f842da3|Antti Seppälä|Fri May 16 20:18:54 2025 +0300|adb: Switch to mbedtls
-cd808d9997|Markus Stockhausen|Fri May 23 13:21:28 2025 -0400|realtek: relocate mips cpc probing
-897abbfc4a|Markus Stockhausen|Tue May 20 11:11:24 2025 -0400|realtek: take over boot command line patch into driver
-ec4afc4c1b|Shiji Yang|Fri May 23 21:09:01 2025 +0800|toolchain: gcc: update GCC14 to 14.3
-086426a64e|Zoltan HERPAI|Sat May 24 12:40:05 2025 +0200|mxs: drop 6.6 support
-3ad65da7d6|Zoltan HERPAI|Sat May 24 12:39:19 2025 +0200|mxs: use kernel 6.12 by default
-df465b6513|Shiji Yang|Thu May 1 00:39:34 2025 +0800|ath79: enable 6.12 testing kernel
-2c7c0773b2|Shiji Yang|Thu May 1 02:36:47 2025 +0800|ath79: irqchip/ath79-misc: fix missing prototypes warnings
-54b23f2163|Shiji Yang|Thu May 1 00:39:19 2025 +0800|ath79: refresh 6.12 kernel config files
-fe42a75b03|Shiji Yang|Thu May 1 00:38:19 2025 +0800|ath79: refresh 6.12 kernel patches
-c0c8c7cbe8|Shiji Yang|Thu May 1 00:37:21 2025 +0800|ath79: restore kernel 6.6 config files and patches
-9b6ea812ec|Shiji Yang|Thu May 1 00:35:20 2025 +0800|ath79: rename patchset and kernel configs to 6.12
-87d2593177|Shiji Yang|Thu May 1 00:33:41 2025 +0800|ath79: refresh kernel symbol configs
-515130e8f7|Zoltan HERPAI|Sat May 24 10:44:01 2025 +0000|d1: drop 6.6 support
-f5b3e71cc5|Zoltan HERPAI|Sat May 24 10:43:39 2025 +0000|d1: use kernel 6.12 by default
-d0d1f19068|Robert Marko|Sat May 24 12:20:54 2025 +0200|image: only filter out images when ImageBuilder is used
-b648fda020|Markus Stockhausen|Fri May 23 13:46:09 2025 -0400|realtek: prepare RTL931x for full SMP support
-4cd3c6d79d|John Audia|Wed May 21 09:32:50 2025 -0400|intel-microcode: update to 20250512
-b5f0cba751|George Moussalem|Fri May 23 14:13:21 2025 +0400|qualcommax: ipq50xx: backport upstreamed patches for IPQ5018 tsens support
-37d434238b|George Moussalem|Fri May 23 12:23:57 2025 +0400|qualcommax: ipq50xx: backport upstreamed patches for IPQ5018 TCSR support
-08ff2807cf|George Moussalem|Fri May 23 11:30:35 2025 +0400|qualcommax: ipq50xx: backport upstreamed patches for IPQ5018 PCIe support
-54c7538476|Rosen Penev|Tue May 20 15:06:33 2025 -0700|tools/mold: remove static only dependencies
-08a5add864|Rosen Penev|Tue May 20 15:49:55 2025 -0700|tools/mpfr: update to 4.22
+1df56d02cf|Shiji Yang|Sun May 25 14:46:17 2025 +0800|ath79: refresh 6.12 kernel patches
+726bb8e0e2|Nikolay March|Sun May 4 08:15:12 2025 +0300|mediatek: filogic: add support for SNR-CPE-AX2
+3306a163cf|John Audia|Sat May 24 07:03:49 2025 -0400|x86: legacy: config: alphabetize config-6.12
+83ff9600dc|John Audia|Fri May 23 20:14:52 2025 -0400|stm32: add missing config option
+763339207b|John Audia|Fri May 23 20:09:49 2025 -0400|rockchip: armv8: add missing config option
+2a7cfbbbef|John Audia|Thu May 22 16:07:50 2025 -0400|kernel: bump 6.6 to 6.6.92
+ecac1d8abd|John Audia|Wed May 21 09:37:23 2025 -0400|kernel: bump 6.6 to 6.6.91
 </details>

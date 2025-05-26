@@ -2,5 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e0faf71ce|Mieczyslaw Nalewaj|Sun May 4 11:32:57 2025 +0200|kernel: mtk_bmt: fix compile warning
+cd5512c2b|coolsnowwolf|Mon May 26 04:22:51 2025 +0800|x86: use kernel 6.12 by default
+c3782626b|coolsnowwolf|Mon May 26 04:19:16 2025 +0800|kernel/qualcommax: Create kernel files for v6.12 (from v6.6)
+dc697e0bf|coolsnowwolf|Mon May 26 03:55:34 2025 +0800|generic: sync base with upstream kernel 6.12
+a655a9c5a|coolsnowwolf|Mon May 26 03:03:20 2025 +0800|toolchain: gcc: add support for GCC 14.3
+6a5bb9d21|coolsnowwolf|Mon May 26 02:21:39 2025 +0800|kernel: bump all to latest HEAD
+69ea00d8f|Linus Walleij|Tue Apr 1 10:53:12 2025 +0200|package: usbgadget: define conffile
 </details>
