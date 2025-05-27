@@ -1,0 +1,47 @@
+<details> <summary> <b>OpenClash new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+30418228|vernesong|Mon May 26 08:30:07 2025 +0800|Merge branch 'dev'
+c10be330|vernesong|Mon May 26 08:16:43 2025 +0800|workflow: update sdk url
+c9ce0761|vernesong|Mon May 26 08:06:23 2025 +0800|0.46.086
+8a74d01a|airwish|Tue May 20 14:33:53 2025 +0800|update game rules (#4465)
+d3674a3a|vernesong|Mon May 12 10:42:45 2025 +0800|chore: lhie1 rules
+c354d282|vernesong|Thu May 8 11:39:48 2025 +0800|chore: better log smoothly display
+a96c9dd2|vernesong|Wed May 7 23:37:19 2025 +0800|0.46.085
+c282a038|vernesong|Tue May 6 04:09:37 2025 +0800|chore: refine log refresh
+3147de92|vernesong|Mon May 5 20:28:53 2025 +0800|chore: respawn value
+a6318340|vernesong|Mon May 5 19:01:00 2025 +0800|chore: smoothly log refresh
+6e66c39a|Joseph Mory|Sun May 4 15:16:06 2025 +0800|fix: set procd env correctly (#4450)
+3aa4f3f8|vernesong|Fri May 2 13:42:40 2025 +0800|chore: adjust announcement speed
+894e958a|vernesong|Fri May 2 03:26:44 2025 +0800|0.46.084
+5b9c3d6d|vernesong|Fri May 2 03:15:39 2025 +0800|fix external-ui-name
+e20fb79e|vernesong|Fri May 2 03:04:51 2025 +0800|chore: announcement
+a9dcd8fb|vernesong|Fri May 2 00:29:36 2025 +0800|0.46.083
+ccdc3f70|vernesong|Fri May 2 00:28:48 2025 +0800|chore: set ui value for preventing remove all ui files after download
+526078a6|vernesong|Thu May 1 23:43:39 2025 +0800|chore: add SAFE_PATHS env
+e94f9e70|LovinYarn|Thu May 1 23:27:02 2025 +0800|workflow: fix error sdk address (#4446)
+c065bd1b|vernesong|Thu May 1 02:27:47 2025 +0800|0.46.082
+28e1b1df|vernesong|Sun Apr 27 18:34:43 2025 +0800|workflow: Update Third-Party Resources
+363fc317|vernesong|Sun Apr 27 18:20:20 2025 +0800|chore: refine
+0ed8d5d2|vernesong|Sun Apr 27 11:52:29 2025 +0800|#4439
+fdab4256|vernesong|Sun Apr 27 11:35:21 2025 +0800|#4437
+6fe521cc|vernesong|Thu Apr 24 15:19:31 2025 +0800|chore: update announcement
+ee760af3|vernesong|Wed Apr 23 11:22:39 2025 +0800|chore: check announcement mtime
+5d8e4e4c|vernesong|Sun Apr 20 22:41:28 2025 +0800|0.46.081
+651a650a|vernesong|Sun Apr 20 22:04:46 2025 +0800|chore: add announcement
+ddf49c54|vernesong|Thu Apr 17 22:01:17 2025 +0800|chore: asn database update
+ef3b0bbd|vernesong|Tue Apr 15 18:02:12 2025 +0800|chore: lhie1 rules
+74ce817f|vernesong|Sat Mar 29 18:54:47 2025 +0800|chore: refine update check
+7bea963a|vernesong|Fri Mar 28 18:14:29 2025 +0800|chore: refine streaming_unlock.lua
+efd65af6|vernesong|Mon Mar 24 14:20:52 2025 +0800|chore: change unlock test cache format
+ba65dbfc|vernesong|Wed Mar 19 10:36:21 2025 +0800|chore: refine
+5ac9facf|vernesong|Mon Mar 17 18:06:17 2025 +0800|fix typo
+6cc220e1|vernesong|Mon Mar 17 17:55:03 2025 +0800|chore: log formalt
+0374213c|vernesong|Thu Mar 13 11:45:11 2025 +0800|0.46.080
+5e277545|vernesong|Thu Mar 13 11:39:02 2025 +0800|chore: sub info style
+39b4daf4|vernesong|Thu Mar 13 11:00:11 2025 +0800|fix #4375
+4315d1ff|vernesong|Wed Mar 12 19:08:16 2025 +0800|chore: AnyTLS
+1d964927|vernesong|Wed Mar 12 18:27:38 2025 +0800|#4372
+8259e2d0|vernesong|Wed Mar 12 02:15:05 2025 +0800|fix #4371
+</details>

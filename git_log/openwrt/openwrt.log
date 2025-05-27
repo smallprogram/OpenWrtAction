@@ -2,11 +2,37 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1df56d02cf|Shiji Yang|Sun May 25 14:46:17 2025 +0800|ath79: refresh 6.12 kernel patches
-726bb8e0e2|Nikolay March|Sun May 4 08:15:12 2025 +0300|mediatek: filogic: add support for SNR-CPE-AX2
-3306a163cf|John Audia|Sat May 24 07:03:49 2025 -0400|x86: legacy: config: alphabetize config-6.12
-83ff9600dc|John Audia|Fri May 23 20:14:52 2025 -0400|stm32: add missing config option
-763339207b|John Audia|Fri May 23 20:09:49 2025 -0400|rockchip: armv8: add missing config option
-2a7cfbbbef|John Audia|Thu May 22 16:07:50 2025 -0400|kernel: bump 6.6 to 6.6.92
-ecac1d8abd|John Audia|Wed May 21 09:37:23 2025 -0400|kernel: bump 6.6 to 6.6.91
+b69e6c35c5|Zoltan HERPAI|Mon May 26 17:16:46 2025 +0000|d1: improve Nezha D1 support
+de2d34cf7a|Zoltan HERPAI|Mon May 26 13:18:25 2025 +0000|d1: enable crypto offload engine
+fb2c59b942|Robert Marko|Mon May 26 19:17:34 2025 +0200|toolchain: gcc: drop GCC11
+200a31b6f5|Robert Marko|Mon May 26 15:46:32 2025 +0200|ramips: mt7621: sercomm_na502s: use upstream XR USB serial driver
+d39d626b23|Robert Marko|Mon May 26 15:39:58 2025 +0200|kernel: usb: package MaxLinear/Exar USB serial driver
+fa236de37d|Daniel Golle|Thu May 8 17:56:37 2025 +0100|mediatek: enable testing kernel 6.12
+16b5a77716|Daniel Golle|Fri May 9 00:29:34 2025 +0100|mediatek: mt7629: update config-6.12
+0a0f5f94ec|Daniel Golle|Fri May 9 00:00:51 2025 +0100|mediatek: mt7623: update config-6.12
+029b7ed9c4|Daniel Golle|Thu May 8 20:17:55 2025 +0100|mediatek: mt7622: update config-6.12
+3e95a2f6e1|Daniel Golle|Thu May 8 03:16:41 2025 +0100|mediatek: filogic: update config-6.12
+166d9d5ea2|Daniel Golle|Thu May 8 03:11:52 2025 +0100|kernel/mediatek: 6.12: fix and refresh patches
+25bb907937|Daniel Golle|Sat May 17 14:03:10 2025 +0100|kernel/mediatek: 6.12: adapt for changed MMC card binding
+b09c0d2680|Daniel Golle|Sat May 17 14:07:29 2025 +0100|kernel/mediatek: 6.12: allow setting OF node for MSDOS partitions
+25ee5081fa|Daniel Golle|Sat May 17 22:15:28 2025 +0100|kernel/mediatek: 6.12: adapt SPI calibration
+f9206d1111|Daniel Golle|Sat May 17 13:59:59 2025 +0100|kernel/mediatek: 6.12: replace downstream files by patches
+a9822e8bd6|Daniel Golle|Sat May 17 13:57:05 2025 +0100|kernel/mediatek: 6.12: drop patches which have been applied upstream
+72994b5e5a|Daniel Golle|Sat May 17 14:05:17 2025 +0100|kernel/mediatek: 6.12: drop patches which are now part of generic
+ca3a3a7cc4|Daniel Golle|Mon May 19 14:01:49 2025 +0100|kernel/mediatek: Restore kernel files for v6.6
+16c1e1b9ba|Daniel Golle|Mon May 19 14:01:49 2025 +0100|kernel/mediatek: Create kernel files for v6.12 (from v6.6)
+465249f2b3|Daniel Golle|Thu May 8 17:51:44 2025 +0100|mediatek: filogic: adapt BananaPi-R4 for use with upstream DT
+b992aa119c|Daniel Golle|Thu May 8 17:48:27 2025 +0100|mediatek: dts: bring mt7988a.dtsi closer to upstream
+a387c62114|Daniel Golle|Thu May 8 03:13:55 2025 +0100|mediatek: dts: rename mt7981.dtsi to mt7981b.dtsi
+78db7780d0|Daniel Golle|Thu May 8 20:16:39 2025 +0100|mediatek: mt7622: prepare legacy rtl8367c driver for Linux 6.12
+438ed53577|Daniel Golle|Thu May 8 03:01:07 2025 +0100|generic: 6.12: backport MediaTek Ethernet PHY changes
+34b176b565|Daniel Golle|Sat May 10 02:54:09 2025 +0100|generic: 6.12: mtk_eth_soc: adapt downstream SerDes patch
+d092e7af40|Daniel Golle|Thu May 8 02:59:19 2025 +0100|generic: 6.12: fix patch adding EEE-support to mtk_eth_soc
+bc0b14c8ea|Daniel Golle|Thu May 8 02:57:33 2025 +0100|generic: net: phy: rtl8261n: fix build with Linux 6.12
+47cfb09e45|Daniel Golle|Fri May 9 03:36:07 2025 +0100|generic: 6.12: add hack patch for transition to new partition bindings
+9b3ad5b151|Daniel Golle|Fri May 9 14:37:47 2025 +0100|generic: 6.12: add missing Kconfig symbol
+32f408c955|Markus Stockhausen|Mon May 19 14:34:54 2025 -0400|realtek: refactor RTL838x mdio serdes read/write functions
+1bef83bb23|Markus Stockhausen|Fri May 16 03:31:07 2025 -0400|realtek: simplify RTL8214FC patches for ethtool copper/fiber switching
+bff179de73|Mathew McBride|Thu Jan 16 12:27:58 2025 +1100|armsr: remove 'console=tty1' from kernel command line
+3697022ce3|Mathew McBride|Thu Jan 16 12:20:56 2025 +1100|armsr: add patch (hack) to enable all "default" consoles
 </details>

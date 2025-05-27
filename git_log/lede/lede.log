@@ -2,10 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cd5512c2b|coolsnowwolf|Mon May 26 04:22:51 2025 +0800|x86: use kernel 6.12 by default
-c3782626b|coolsnowwolf|Mon May 26 04:19:16 2025 +0800|kernel/qualcommax: Create kernel files for v6.12 (from v6.6)
-dc697e0bf|coolsnowwolf|Mon May 26 03:55:34 2025 +0800|generic: sync base with upstream kernel 6.12
-a655a9c5a|coolsnowwolf|Mon May 26 03:03:20 2025 +0800|toolchain: gcc: add support for GCC 14.3
-6a5bb9d21|coolsnowwolf|Mon May 26 02:21:39 2025 +0800|kernel: bump all to latest HEAD
-69ea00d8f|Linus Walleij|Tue Apr 1 10:53:12 2025 +0200|package: usbgadget: define conffile
+73a697f58|coolsnowwolf|Tue May 27 04:11:36 2025 +0800|qualcommax: ipq807x: alt method to fix aliyun ap8220 mac address
+d15f5b9ca|coolsnowwolf|Tue May 27 03:19:46 2025 +0800|qualcommax: ipq807x: fix cpu labels to lower-case build with kernel 6.12
+940b03781|coolsnowwolf|Tue May 27 02:02:42 2025 +0800|kmod-phy-realtek: fix missing symbol for linux 6.x
+a87372b08|coolsnowwolf|Mon May 26 22:34:17 2025 +0800|generic: add spinand W25N01GWZEIG support
+98e811773|coolsnowwolf|Mon May 26 22:26:41 2025 +0800|qualcommax: add 6.12 as testing kernel
+18174f3cc|Mieczyslaw Nalewaj|Sun Dec 1 19:17:13 2024 +0100|kernel: fallback-sprom: create separate header files
+dc545b63c|coolsnowwolf|Mon May 26 21:49:21 2025 +0800|qca-nss-ecm: update for 6.12 compatibility
+045c267e9|coolsnowwolf|Mon May 26 20:45:04 2025 +0800|qualcommax: add nss support for linux 6.12
+b51f82d21|coolsnowwolf|Mon May 26 18:15:31 2025 +0800|qca-nss-drv: update for 6.12 compatibility
+39c1fd38b|coolsnowwolf|Mon May 26 17:04:46 2025 +0800|qca-ssdk: update for 6.12 compatibility
+ffb1a1916|coolsnowwolf|Mon May 26 16:40:57 2025 +0800|mac80211: add ath11k kernel 6.12 support
 </details>
