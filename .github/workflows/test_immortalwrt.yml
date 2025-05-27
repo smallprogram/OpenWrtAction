@@ -78,142 +78,16 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           sudo -E apt-get -qq update
-          # sudo -E apt-get -qq install ack antlr3 asciidoc autoconf automake autopoint binutils bison build-essential \
-          #   bzip2 ccache clang cmake cpio curl device-tree-compiler ecj fastjar flex gawk gettext gcc-multilib \
-          #   g++-multilib git gnutls-dev gperf haveged help2man intltool lib32gcc-s1 libc6-dev-i386 libelf-dev \
-          #   libglib2.0-dev libgmp3-dev libltdl-dev libmpc-dev libmpfr-dev libncurses5-dev libncursesw5 \
-          #   libncursesw5-dev libpython3-dev libreadline-dev libssl-dev libtool lld llvm lrzsz mkisofs msmtp \
-          #   nano ninja-build p7zip p7zip-full patch pkgconf python2.7 python3 python3-pip python3-ply \
-          #   python3-docutils python3-pyelftools qemu-utils re2c rsync scons squashfs-tools subversion swig \
-          #   texinfo uglifyjs upx-ucl unzip vim wget xmlto xxd zlib1g-dev zstd
-
-
-          # sudo -E apt-get -qq install ack adduser adwaita-icon-theme alsa-topology-conf alsa-ucm-conf antlr3 apparmor apport-symptoms \
-          #   apport apt-transport-https apt-utils apt asciidoc-base asciidoc-common asciidoc-dblatex asciidoc \
-          #   at-spi2-core autoconf automake autopoint autotools-dev base-files base-passwd bash-completion \
-          #   bash bind9-dnsutils bind9-host bind9-libs binfmt-support binutils-common binutils-x86-64-linux-gnu \
-          #   binutils bison bsdextrautils bsdutils build-essential busybox-static byobu bzip2 ca-certificates-java \
-          #   ca-certificates ccache clang cmake-data cmake command-not-found console-setup-linux \
-          #   console-setup coreutils cpio cpp-11 cpp-9 cpp cron curl dash dblatex-doc dblatex dbus-x11 dbus \
-          #   dconf-gsettings-backend dconf-service debconf-i18n debconf debianutils default-jre-headless device-tree-compiler \
-          #   dh-elpa-helper diffstat diffutils dirmngr distro-info-data distro-info dmidecode dmsetup docbook-dsssl \
-          #   docbook-utils docbook-xml docbook-xsl docutils-common dos2unix dosfstools dpkg-dev dpkg dvisvgm e2fsprogs \
-          #   ecj ed eject emacsen-common fakeroot fastjar file findutils flex fontconfig-config fontconfig fonts-dejavu-core \
-          #   fonts-droid-fallback fonts-gfs-baskerville fonts-gfs-porson fonts-lato fonts-lmodern fonts-noto-mono fonts-texgyre \
-          #   fonts-ubuntu fonts-urw-base35 friendly-recovery ftp fuse3 g++-11-multilib g++-11 g++-9-multilib g++-9 g++-multilib \
-          #   g++ gawk gcc-11-base gcc-11-multilib gcc-11 gcc-12-base gcc-9-base gcc-9-multilib gcc-9 gcc-multilib gcc \
-          #   genisoimage gettext-base gettext ghostscript gir1.2-glib-2.0 gir1.2-packagekitglib-1.0 git-man git gnupg-l10n \
-          #   gnupg-utils gnupg2 gnupg golang-1.22-go golang-1.22-src gperf gpg-agent gpg-wks-client gpg-wks-server gpg gpgconf \
-          #   gpgsm gpgv grep groff-base gsasl-common gsettings-desktop-schemas gtk-update-icon-cache gzip haveged hdparm help2man \
-          #   hicolor-icon-theme hostname htop humanity-icon-theme ibverbs-providers icu-devtools info init-system-helpers init \
-          #   install-info intltool iproute2 iptables iputils-ping iputils-tracepath irqbalance isc-dhcp-client isc-dhcp-common \
-          #   iso-codes java-common javascript-common jq kbd keyboard-configuration kmod less lib32asan5 lib32asan6 lib32atomic1 \
-          #   lib32gcc-11-dev lib32gcc-9-dev lib32gcc-s1 lib32gomp1 lib32itm1 lib32quadmath0 lib32stdc++-11-dev lib32stdc++-9-dev \
-          #   lib32stdc++6 lib32ubsan1 libacl1 libaio1 libalgorithm-c3-perl libalgorithm-diff-perl libalgorithm-diff-xs-perl \
-          #   libalgorithm-merge-perl libantlr-java libantlr3-runtime-java libapache-pom-java libapparmor1 libappstream4 \
-          #   libapr1 libaprutil1 libapt-pkg6.0 libarchive13 libargon2-1 libasan5 libasan6 libasound2-data libasound2 \
-          #   libassuan0 libatk-bridge2.0-0 libatk1.0-0 libatk1.0-data libatm1 libatomic1 libatspi2.0-0 libattr1 libaudit-common \
-          #   libaudit1 libauthen-sasl-perl libavahi-client3 libavahi-common-data libavahi-common3 libb-hooks-endofscope-perl \
-          #   libb-hooks-op-check-perl libbinutils libblkid-dev libblkid1 libboost-iostreams1.74.0 libboost-thread1.74.0 libbpf0 \
-          #   libbrotli1 libbsd0 libbz2-1.0 libc-bin libc-dev-bin libc-devtools libc6-dev-i386 libc6-dev-x32 libc6-dev libc6-i386 \
-          #   libc6-x32 libc6 libcairo-gobject2 libcairo2 libcap-ng0 libcap2-bin libcap2 libcbor0.8 libcc1-0 \
-          #   libclang-common-14-dev libclang-cpp14 libclang1-14 \
-          #   libclass-c3-perl libclass-c3-xs-perl libclass-data-inheritable-perl libclass-method-modifiers-perl \
-          #   libclass-xsaccessor-perl libclone-perl libcolord2 libcom-err2 libcommon-sense-perl libcommons-logging-java \
-          #   libcommons-parent-java libcrypt-dev libcrypt1 libcryptsetup12 libctf-nobfd0 libctf0 libcups2 libcurl3-gnutls \
-          #   libcurl4 libdata-dump-perl libdata-optlist-perl libdatrie1 libdaxctl1 libdb5.3 libdbus-1-3 libdconf1 libdebconfclient0 \
-          #   libdeflate0 libdevel-callchecker-perl libdevel-caller-perl libdevel-globaldestruction-perl libdevel-lexalias-perl \
-          #   libdevel-stacktrace-perl libdevmapper1.02.1 libdist-checkconflicts-perl libdns-export1110 libdpkg-perl libdrm-amdgpu1 \
-          #   libdrm-common libdrm-intel1 libdrm-nouveau2 libdrm-radeon1 libdrm2 libdw1 libdynaloader-functions-perl libecj-java libedit2 \
-          #   libelf-dev libelf1 libemail-date-format-perl libencode-locale-perl libepoxy0 liberror-perl libestr0 libeval-closure-perl \
-          #   libevent-2.1-7 libevent-core-2.1-7 libexception-class-perl libexpat1-dev libexpat1 libext2fs2 libfakeroot libfastjson4 \
-          #   libfdt1 libffi-dev libffi8 libfido2-1 libfile-basedir-perl libfile-desktopentry-perl libfile-fcntllock-perl libfile-homedir-perl \
-          #   libfile-listing-perl libfile-mimeinfo-perl libfile-next-perl libfile-which-perl libfl-dev libfl2 libfont-afm-perl libfontbox-java \
-          #   libfontconfig1 libfontenc1 libfreetype6 libfribidi0 libfuse-dev libfuse2 libfuse3-3 libgc1 libgcc-11-dev libgcc-9-dev libgcc-s1 libgcrypt20 \
-          #   libgd3 libgdbm-compat4 libgdbm6 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-bin libgdk-pixbuf2.0-common libgfapi0 libgfrpc0 libgfxdr0 \
-          #   libgirepository-1.0-1 libgl1-amber-dri libgl1-mesa-dri libgl1 libglapi-mesa libglib2.0-0 libglib2.0-bin libglib2.0-data \
-          #   libglib2.0-dev-bin libglib2.0-dev libglusterfs0 libglvnd0 libglx-mesa0 libglx0 libgmp-dev libgmp10 libgmp3-dev libgmpxx4ldbl \
-          #   libgnutls-dane0 libgnutls-openssl27 libgnutls28-dev libgnutls30 libgnutlsxx28 libgomp1 libgpg-error0 libgpm2 libgraphite2-3 \
-          #   libgs9-common libgs9 libgsasl7 libgssapi-krb5-2 libgstreamer1.0-0 libgtk-3-0 libgtk-3-bin libgtk-3-common libgtkd-3-0 libharfbuzz0b \
-          #   libhavege2 libhiredis0.14 libhogweed6 libhtml-form-perl libhtml-format-perl libhtml-parser-perl libhtml-tagset-perl libhtml-tree-perl \
-          #   libhttp-cookies-perl libhttp-daemon-perl libhttp-date-perl libhttp-message-perl libhttp-negotiate-perl libibverbs1 libice6 libicu-dev \
-          #   libicu70 libidn12 libidn2-0 libidn2-dev libijs-0.35 libimagequant0 libio-html-perl libio-socket-ssl-perl libio-stringy-perl libip4tc2 \
-          #   libip6tc2 libipc-shareable-perl libipc-system-simple-perl libisc-export1105 libiscsi7 libisl23 libitm1 libjansson4 libjbig0 libjbig2dec0 \
-          #   libjpeg-turbo8 libjpeg8 libjq1 libjs-jquery libjs-sphinxdoc libjs-underscore libjson-c5 libjson-perl libjson-xs-perl libjsoncpp25 \
-          #   libk5crypto3 libkeyutils1 libkmod2 libkpathsea6 libkrb5-3 libkrb5support0 libksba8 liblcms2-2 libldap-2.5-0 libldap-common \
-          #   libllvm11 libllvm14 libllvm15 liblmdb0 liblocale-gettext-perl liblog-dispatch-perl liblog-log4perl-perl liblsan0 \
-          #   libltdl-dev libltdl7 liblwp-mediatypes-perl liblwp-protocol-https-perl liblz4-1 liblzma5 liblzo2-2 libmagic-mgc libmagic1 libmail-sendmail-perl \
-          #   libmailtools-perl libmaxminddb0 libmd0 libmime-charset-perl libmime-lite-perl libmime-types-perl libmnl0 libmodule-implementation-perl \
-          #   libmodule-runtime-perl libmount-dev libmount1 libmpc-dev libmpc3 libmpdec3 libmpfr-dev libmpfr6 libmro-compat-perl libnamespace-autoclean-perl \
-          #   libnamespace-clean-perl libncurses-dev libncurses5-dev libncurses6 libncursesw5-dev libncursesw5 libncursesw6 libndctl6 libnet-dbus-perl \
-          #   libnet-http-perl libnet-smtp-ssl-perl libnet-ssleay-perl libnetfilter-conntrack3 libnetplan0 libnettle8 libnewt0.52 libnfnetlink0 \
-          #   libnftables1 libnftnl11 libnghttp2-14 libnl-3-200 libnl-genl-3-200 libnl-route-3-200 libnpth0 libnsl-dev libnsl2 libnspr4 \
-          #   libnss-systemd libnss3 libntfs-3g89 libntlm0 libnuma1 libobjc-11-dev libobjc4 libonig5 libopenjp2-7 libosp5 libostyle1c2 libp11-kit-dev \
-          #   libp11-kit0 libpackage-stash-perl libpackage-stash-xs-perl libpackagekit-glib2-18 libpadwalker-perl libpam-cap libpam-modules-bin \
-          #   libpam-modules libpam-runtime libpam-systemd libpam0g libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpaper-utils libpaper1 \
-          #   libparams-classify-perl libparams-util-perl libparams-validationcompiler-perl libparted2 libpcap0.8 libpci3 libpciaccess0 libpcre16-3 \
-          #   libpcre2-16-0 libpcre2-32-0 libpcre2-8-0 libpcre2-dev libpcre2-posix3 libpcre3-dev libpcre32-3 libpcre3 libpcrecpp0v5 libpcsclite1 \
-          #   libpdfbox-java libperl5.34 libpfm4 libphobos2-ldc-shared98 libpipeline1 libpixman-1-0 libpkgconf3 libplymouth5 libpmem1 libpmemobj1 \
-          #   libpng16-16 libpolkit-agent-1-0 libpolkit-gobject-1-0 libpopt0 libprocps8 libpsl5 libptexenc1 libpython2-stdlib libpython2.7-minimal \
-          #   libpython2.7-stdlib libpython3-dev libpython3-stdlib libpython3.10-dev libpython3.10-minimal libpython3.10-stdlib libpython3.10 \
-          #   libquadmath0 librados2 libraqm0 librbd1 librdmacm1 libreadline-dev libreadline8 libreadonly-perl libref-util-perl libref-util-xs-perl \
-          #   librhash0 librole-tiny-perl librsvg2-2 librsvg2-common librtmp1 libruby3.0 libsasl2-2 libsasl2-modules-db libsasl2-modules libseccomp2 \
-          #   libsecret-1-0 libsecret-common libselinux1-dev libselinux1 libsemanage-common libsemanage2 libsensors-config libsensors5 libsepol-dev \
-          #   libsepol2 libserf-1-1 libsgmls-perl libsigsegv2 libslang2 libsm6 libsmartcols1 libsodium23 libsombok3 libspecio-perl libsqlite3-0 libss2 \
-          #   libssh-4 libssl-dev libssl3 libstdc++-11-dev libstdc++-9-dev libstdc++6 libstemmer0d libstring-crc32-perl libstringtemplate-java \
-          #   libstringtemplate4-java libsub-exporter-perl libsub-exporter-progressive-perl libsub-identify-perl libsub-install-perl libsub-name-perl \
-          #   libsub-quote-perl libsvn1 libsynctex2 libsys-hostname-long-perl libsystemd0 libtasn1-6-dev libtasn1-6 libtasn1-doc libtcl8.6 libteckit0 \
-          #   libtexlua53 libtexluajit2 libtext-charwidth-perl libtext-iconv-perl libtext-unidecode-perl libtext-wrapi18n-perl libthai-data libthai0 \
-          #   libtie-ixhash-perl libtiff5 libtimedate-perl libtinfo5 libtinfo6 libtirpc-common libtirpc-dev libtirpc3 libtk8.6 libtool libtry-tiny-perl \
-          #   libtsan0 libtypes-serialiser-perl libubsan1 libuchardet0 libucl1 libudev1 libunbound8 libunicode-linebreak-perl libunistring2 libunwind8 liburi-perl \
-          #   liburing2 libusb-1.0-0 libutempter0 libutf8proc2 libuuid1 libuv1 libvariable-magic-perl libvte-2.91-0 libvte-2.91-common libvted-3-0 \
-          #   libwayland-client0 libwayland-cursor0 libwayland-egl1 libwebp7 libwebpdemux2 libwebpmux3 libwoff1 libwww-perl libwww-robotrules-perl \
-          #   libx11-6 libx11-data libx11-protocol-perl libx11-xcb1 libx32asan5 libx32asan6 libx32atomic1 libx32gcc-11-dev libx32gcc-9-dev libx32gcc-s1 \
-          #   libx32gomp1 libx32itm1 libx32quadmath0 libx32stdc++-11-dev libx32stdc++-9-dev libx32stdc++6 libx32ubsan1 libxau6 libxaw7 libxcb-dri2-0 \
-          #   libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-randr0 libxcb-render0 libxcb-shape0 libxcb-shm0 libxcb-sync1 libxcb-xfixes0 libxcb1 \
-          #   libxcomposite1 libxcursor1 libxdamage1 libxdmcp6 libxext6 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0 libxkbfile1 libxml-libxml-perl \
-          #   libxml-namespacesupport-perl libxml-parser-perl libxml-sax-base-perl libxml-sax-expat-perl libxml-sax-perl libxml-twig-perl libxml-xpathengine-perl \
-          #   libxml2-dev libxml2-utils libxml2 libxmlb2 libxmu6 libxmuu1 libxpm4 libxrandr2 libxrender1 libxshmfence1 libxslt1.1 libxss1 libxstring-perl \
-          #   libxt6 libxtables12 libxtst6 libxv1 libxxf86dga1 libxxf86vm1 libxxhash0 libyaml-0-2 libyaml-dev libyaml-tiny-perl libz3-4 libz3-dev libzstd-dev \
-          #   libzstd1 libzzip-0-13 linux-libc-dev lld-14 lld llvm-14-dev llvm-14-linker-tools llvm-14-runtime llvm-14-tools llvm-14 \
-          #   llvm-runtime llvm lmodern locales login logrotate logsave lrzsz lsb-base \
-          #   lsb-release lshw lsof lto-disabled-list lynx-common lynx m4 mailcap make man-db manpages-dev manpages mawk media-types mime-support \
-          #   motd-news-config mount msmtp mtr-tiny nano ncurses-base ncurses-bin netbase netcat-openbsd netplan.io nettle-dev networkd-dispatcher \
-          #   nftables ninja-build node-uglify-js nodejs ntfs-3g openjade openjdk-11-jre-headless opensp openssh-client openssl p7zip-full p7zip \
-          #   packagekit-tools packagekit parted passwd pastebinit patch pci.ids pciutils perl-base perl-modules-5.34 perl-openssl-defaults perl \
-          #   pinentry-curses pkexec pkgconf plymouth-theme-ubuntu-text plymouth policykit-1 polkitd poppler-data powermgmt-base preview-latex-style \
-          #   procps psmisc publicsuffix python-apt-common python2-minimal python2.7-minimal python2.7 python2 python3-apport python3-apt python3-blinker \
-          #   python3-cffi-backend python3-commandnotfound python3-cryptography python3-dbus python3-dev python3-distro-info python3-distro python3-distupgrade \
-          #   python3-distutils python3-docutils python3-gdbm python3-gi python3-httplib2 python3-importlib-metadata python3-jeepney python3-jwt python3-keyring \
-          #   python3-launchpadlib python3-lazr.restfulclient python3-lazr.uri python3-lib2to3 python3-minimal python3-more-itertools python3-netifaces \
-          #   python3-newt python3-oauthlib python3-olefile python3-pil python3-pip python3-pkg-resources python3-ply python3-problem-report python3-pyelftools \
-          #   python3-pygments python3-pyparsing python3-roman python3-secretstorage python3-setuptools python3-six python3-software-properties \
-          #   python3-systemd python3-update-manager python3-wadllib python3-wheel python3-yaml python3-zipp python3.10-dev python3.10-minimal \
-          #   python3.10 python3 qemu-block-extra qemu-utils quilt rake re2c readline-common rpcsvc-proto rsync rsyslog ruby-net-telnet ruby-rubygems \
-          #   ruby-webrick ruby-xmlrpc ruby3.0 ruby rubygems-integration run-one scons screen sed sensible-utils session-migration sgml-base sgml-data \
-          #   sgmlspl shared-mime-info show-motd snapd software-properties-common squashfs-tools strace subversion sudo swig4.0 swig systemd-hwe-hwdb \
-          #   systemd-sysv systemd-timesyncd systemd sysvinit-utils t1utils tar tcl8.6 tcl tcpdump teckit telnet tex-common tex-gyre texinfo texlive-base \
-          #   texlive-bibtex-extra texlive-binaries texlive-extra-utils texlive-fonts-recommended texlive-formats-extra texlive-lang-greek texlive-latex-base \
-          #   texlive-latex-extra texlive-latex-recommended texlive-luatex texlive-pictures texlive-plain-generic texlive-science texlive-xetex texlive \
-          #   tilix-common tilix time tipa tk8.6 tk tmux tnftp tzdata ubuntu-advantage-tools ubuntu-keyring ubuntu-minimal ubuntu-mono ubuntu-pro-client-l10n \
-          #   ubuntu-pro-client ubuntu-release-upgrader-core ubuntu-standard ubuntu-wsl ucf udev ufw uglifyjs unattended-upgrades unzip update-manager-core \
-          #   update-motd upx-ucl usb.ids usbutils usrmerge util-linux uuid-dev uuid-runtime vim-common vim-runtime vim-tiny vim wget whiptail wsl-setup \
-          #   x11-common x11-utils x11-xserver-utils xauth xdg-user-dirs xdg-utils xfonts-encodings xfonts-utils xkb-data xml-core xmlto xsltproc xxd xz-utils \
-          #   yarn zip zlib1g-dev zlib1g zstd
-
-
           sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/immortalwrt_dependence)
-          # sudo bash -c 'bash <(curl -s https://build-scripts.immortalwrt.org/init_build_environment.sh)'
           # sudo -E apt-get -qq autoremove --purge
           # sudo -E apt-get -qq clean
           sudo timedatectl set-timezone "$TZ"
-          df -hT
 
 
       - name: Clone Source Code
         working-directory: /workdir
         run: |
-          git clone https://github.com/immortalwrt/immortalwrt.git openwrt
+          git clone -b master --single-branch https://github.com/immortalwrt/immortalwrt.git openwrt
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
       - name: Load Custom Feeds
@@ -255,45 +129,10 @@ jobs:
           cd $GITHUB_WORKSPACE/openwrt
           make tools/compile -j$(nproc)
           make toolchain/compile -j$(nproc)    
+          
 
-      - name: Generate Frimware ruby
-        id: compile_ruby
+      - name: compile test package
+        id: compile_package
         run: |
           cd $GITHUB_WORKSPACE/openwrt
-          make package/feeds/packages/ruby/{clean,compile} V=s
-
-          echo "----------------------------------------------------------------"
-          make package/feeds/packages/ruby/{clean,compile}
-          cd $GITHUB_WORKSPACE
-      - name: Generate Frimware
-        id: compile
-        run: |
-          cd openwrt
-
-          make package/feeds/packages/ruby/{clean,compile} V=s
-
-
-          is_complie_error=0
-          
-          if [[ "${{ github.event.inputs.is_display_detailed }}" == "true" ]]; then
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile frimware"
-                make -j1 V=s
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile frimware"
-                make -j$(nproc) V=s
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          else
-            if [[ "${{ github.event.inputs.is_single_threaded }}" == "true" ]]; then
-                echo "1 threads compile frimware"
-                make -j1
-                is_complie_error=${PIPESTATUS[0]}
-            else
-                echo "$(nproc) threads compile frimware"
-                make -j$(nproc)
-                is_complie_error=${PIPESTATUS[0]}
-            fi
-          fi
-          exit $is_complie_error
+          make package/feeds/passwall_packages/naiveproxy/{clean,compile} V=s -j$(nproc)
