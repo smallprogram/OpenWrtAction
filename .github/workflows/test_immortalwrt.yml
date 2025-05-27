@@ -135,4 +135,7 @@ jobs:
         id: compile_package
         run: |
           cd $GITHUB_WORKSPACE/openwrt
-          make package/feeds/passwall_packages/naiveproxy/{clean,compile} V=s -j$(nproc)
+          make -j$(nproc) V=s \
+            package/feeds/passwall/luci-app-passwall/compile \
+            package/feeds/passwall2/luci-app-passwall2/compile \
+            package/feeds/helloworld/luci-app-ssr-plus/compile 
