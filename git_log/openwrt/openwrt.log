@@ -2,37 +2,25 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b69e6c35c5|Zoltan HERPAI|Mon May 26 17:16:46 2025 +0000|d1: improve Nezha D1 support
-de2d34cf7a|Zoltan HERPAI|Mon May 26 13:18:25 2025 +0000|d1: enable crypto offload engine
-fb2c59b942|Robert Marko|Mon May 26 19:17:34 2025 +0200|toolchain: gcc: drop GCC11
-200a31b6f5|Robert Marko|Mon May 26 15:46:32 2025 +0200|ramips: mt7621: sercomm_na502s: use upstream XR USB serial driver
-d39d626b23|Robert Marko|Mon May 26 15:39:58 2025 +0200|kernel: usb: package MaxLinear/Exar USB serial driver
-fa236de37d|Daniel Golle|Thu May 8 17:56:37 2025 +0100|mediatek: enable testing kernel 6.12
-16b5a77716|Daniel Golle|Fri May 9 00:29:34 2025 +0100|mediatek: mt7629: update config-6.12
-0a0f5f94ec|Daniel Golle|Fri May 9 00:00:51 2025 +0100|mediatek: mt7623: update config-6.12
-029b7ed9c4|Daniel Golle|Thu May 8 20:17:55 2025 +0100|mediatek: mt7622: update config-6.12
-3e95a2f6e1|Daniel Golle|Thu May 8 03:16:41 2025 +0100|mediatek: filogic: update config-6.12
-166d9d5ea2|Daniel Golle|Thu May 8 03:11:52 2025 +0100|kernel/mediatek: 6.12: fix and refresh patches
-25bb907937|Daniel Golle|Sat May 17 14:03:10 2025 +0100|kernel/mediatek: 6.12: adapt for changed MMC card binding
-b09c0d2680|Daniel Golle|Sat May 17 14:07:29 2025 +0100|kernel/mediatek: 6.12: allow setting OF node for MSDOS partitions
-25ee5081fa|Daniel Golle|Sat May 17 22:15:28 2025 +0100|kernel/mediatek: 6.12: adapt SPI calibration
-f9206d1111|Daniel Golle|Sat May 17 13:59:59 2025 +0100|kernel/mediatek: 6.12: replace downstream files by patches
-a9822e8bd6|Daniel Golle|Sat May 17 13:57:05 2025 +0100|kernel/mediatek: 6.12: drop patches which have been applied upstream
-72994b5e5a|Daniel Golle|Sat May 17 14:05:17 2025 +0100|kernel/mediatek: 6.12: drop patches which are now part of generic
-ca3a3a7cc4|Daniel Golle|Mon May 19 14:01:49 2025 +0100|kernel/mediatek: Restore kernel files for v6.6
-16c1e1b9ba|Daniel Golle|Mon May 19 14:01:49 2025 +0100|kernel/mediatek: Create kernel files for v6.12 (from v6.6)
-465249f2b3|Daniel Golle|Thu May 8 17:51:44 2025 +0100|mediatek: filogic: adapt BananaPi-R4 for use with upstream DT
-b992aa119c|Daniel Golle|Thu May 8 17:48:27 2025 +0100|mediatek: dts: bring mt7988a.dtsi closer to upstream
-a387c62114|Daniel Golle|Thu May 8 03:13:55 2025 +0100|mediatek: dts: rename mt7981.dtsi to mt7981b.dtsi
-78db7780d0|Daniel Golle|Thu May 8 20:16:39 2025 +0100|mediatek: mt7622: prepare legacy rtl8367c driver for Linux 6.12
-438ed53577|Daniel Golle|Thu May 8 03:01:07 2025 +0100|generic: 6.12: backport MediaTek Ethernet PHY changes
-34b176b565|Daniel Golle|Sat May 10 02:54:09 2025 +0100|generic: 6.12: mtk_eth_soc: adapt downstream SerDes patch
-d092e7af40|Daniel Golle|Thu May 8 02:59:19 2025 +0100|generic: 6.12: fix patch adding EEE-support to mtk_eth_soc
-bc0b14c8ea|Daniel Golle|Thu May 8 02:57:33 2025 +0100|generic: net: phy: rtl8261n: fix build with Linux 6.12
-47cfb09e45|Daniel Golle|Fri May 9 03:36:07 2025 +0100|generic: 6.12: add hack patch for transition to new partition bindings
-9b3ad5b151|Daniel Golle|Fri May 9 14:37:47 2025 +0100|generic: 6.12: add missing Kconfig symbol
-32f408c955|Markus Stockhausen|Mon May 19 14:34:54 2025 -0400|realtek: refactor RTL838x mdio serdes read/write functions
-1bef83bb23|Markus Stockhausen|Fri May 16 03:31:07 2025 -0400|realtek: simplify RTL8214FC patches for ethtool copper/fiber switching
-bff179de73|Mathew McBride|Thu Jan 16 12:27:58 2025 +1100|armsr: remove 'console=tty1' from kernel command line
-3697022ce3|Mathew McBride|Thu Jan 16 12:20:56 2025 +1100|armsr: add patch (hack) to enable all "default" consoles
+35c828c168|Piotr Dymacz|Fri Apr 4 22:42:57 2025 +0200|ipq60xx: add support for ALFA Network AP120C-AX
+658aaf192b|Linus Walleij|Sun May 25 18:59:19 2025 +0200|gemini: Switch to kernel v6.12 only
+390567b363|Linus Walleij|Fri May 2 10:12:56 2025 +0200|gemini: Kernel v6.12
+aa8ca6ed4f|Christian Marangi|Sun May 25 23:56:14 2025 +0200|uboot-mediatek: replace bootmenu shortkey patch with better version
+0c6f9665f2|Zoltan HERPAI|Tue May 27 13:29:23 2025 +0000|sifiveu: drop upstreamed patch from 6.12
+199925f29a|Zoltan HERPAI|Tue May 27 13:24:56 2025 +0000|sifiveu: drop 6.6 support
+eda23e04e7|Zoltan HERPAI|Tue May 27 13:23:59 2025 +0000|sifiveu: use kernel 6.12 by default
+057a0a075e|Linus Walleij|Fri May 2 11:07:36 2025 +0200|generic: Fix up the v6.12 config for ARM
+6f8c58bfd8|Tianling Shen|Fri Jan 24 16:15:22 2025 +0800|mediatek: add ubootmod layout for cudy tr3000 v1
+9f76070e2d|Antti Seppälä|Tue May 27 11:20:09 2025 +0300|umbim: add support for wwan device class
+53c723246a|Álvaro Fernández Rojas|Fri May 23 08:15:42 2025 +0200|generic: 6.12: backport upstream v6.16 brcmnand patches
+36b9a699a2|Sean Khan|Wed Feb 19 21:09:26 2025 -0500|wifi-scripts: use consistent names for Qualcomm devices
+f26bdea981|Sean Khan|Wed Feb 19 20:01:29 2025 -0500|wifi-scripts: ucode: iwinfo: fix 'unknown' typo
+0088a5a179|Sean Khan|Wed Feb 19 19:34:30 2025 -0500|wifi-scripts: iwinfo: show units for signal and noise
+9bcc287414|Sean Khan|Wed Feb 19 17:22:29 2025 -0500|wifi-scripts: iwinfo: don't show bitrate unit when unknown
+144ac2e29e|Álvaro Fernández Rojas|Tue May 27 11:22:27 2025 +0200|bcm27xx: refresh 6.12 patches
+cddf860c53|Markus Stockhausen|Mon May 26 08:14:42 2025 -0400|realtek: align declaration/static/extern function definitions for dsa driver
+f64864fa53|Markus Stockhausen|Mon May 26 08:14:13 2025 -0400|realtek: align declaration/static/extern function definitions for eth driver
+db3037830b|Markus Stockhausen|Mon May 26 08:13:53 2025 -0400|realtek: align declaration/static/extern function definitions for phy driver
+31e2567164|Markus Stockhausen|Mon May 26 08:13:29 2025 -0400|realtek: align declaration/static/extern function definitions for clock driver
+7b65949bc4|Markus Stockhausen|Mon May 26 08:11:28 2025 -0400|realtek: align declaration/static/extern function definitions for startup code
 </details>

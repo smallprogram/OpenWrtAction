@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6df80be|lwb1978|Tue May 27 16:42:46 2025 +0800|luci: optimize `link_share_man.htm`
+67f52f7|A-BO|Tue May 27 16:15:13 2025 +0800|luci: sing-box transport simulate xray raw(tcp)
+</details>

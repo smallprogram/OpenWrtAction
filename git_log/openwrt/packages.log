@@ -2,11 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2c7893553|Robert Marko|Mon May 26 19:06:33 2025 +0200|usb-serial-xr_usb_serial_common: remove package
-a5473150f|Mieczyslaw Nalewaj|Thu May 15 15:03:09 2025 +0200|xtables-addons: update call BuildTemplate description
-51b65ec78|Mieczyslaw Nalewaj|Sun May 18 18:14:06 2025 +0200|xtables-addons: set ipp2p depends on kmod-lib-textsearch
-937e2a5b8|Tianling Shen|Sun May 25 18:41:17 2025 +0800|openthread-br: fix build on GCC 14
-8fff19135|Fabian Lipken|Mon May 26 07:36:43 2025 +0200|fx: update to 36.0.3
-ba10392cb|Jianhui Zhao|Mon May 26 09:24:40 2025 +0800|rtty: update to 8.1.5
-37ff02b71|Wesley Gimenes|Thu May 22 09:45:02 2025 -0300|netbird: update to 0.45.1
+b82574b31|Philip Prindeville|Sun May 25 21:20:25 2025 -0600|named: /var/run/named isn't being created with correct permissions
+e74e9710b|Jens Wagner|Tue May 20 09:45:43 2025 +0200|perl-io-async: Perl Module IO::Async
+62e5e1f82|Jens Wagner|Tue May 20 09:45:17 2025 +0200|perl-future-asyncawait: Perl Module Future::AsyncAwait
+8a235d67b|Jens Wagner|Tue May 20 09:44:49 2025 +0200|perl-future: Perl Module Future
+c10d0d2c6|Jens Wagner|Tue May 20 09:44:23 2025 +0200|perl-io-socket-ssl: Perl Module IO::Socket::SSL
+e35fe955d|Jens Wagner|Tue May 20 09:43:54 2025 +0200|perl-net-ssleay: Perl Module Net::SSLeay
+71581bf94|Jens Wagner|Tue May 20 09:42:53 2025 +0200|perl-file-sharedir: Perl Module File::ShareDir
+1bc3bf261|Jens Wagner|Tue May 20 09:42:09 2025 +0200|perl-class-inspector: Perl Module Class::Inspector
+d824ce313|Jens Wagner|Tue May 20 09:41:06 2025 +0200|perl-struct-dumb: Perl Module Struct::Dumb
+9cab02e71|Jens Wagner|Tue May 20 09:27:23 2025 +0200|perl-xs-parse-sublike: Perl Module XS::Parse::Sublike
+c46536d76|Jens Wagner|Tue May 20 09:26:33 2025 +0200|perl-xs-parse-keyword: Perl Module XS::Parse::Keyword
+8c55d089c|Liangbin Lian|Tue Apr 16 11:24:31 2024 +0800|ddns-scripts: fix parsing of parameters for cloudflare.com
 </details>
