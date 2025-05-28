@@ -90,21 +90,18 @@ git_email=smallprogram@foxmail.com
 git_user=smallprogram
 
 
-# 拉取远程信息但不修改本地
+# 获取最新远程信息
 Func_LogMessage "正在从远程获取最新代码..." "Fetching the latest code from remote..."
 git fetch origin
 
-# 检查当前脚本是否被远程版本更新
-CURRENT_SCRIPT="$(basename "$0")"
-if [[ $(git diff HEAD origin/${owa_branch} -- "$CURRENT_SCRIPT") ]]; then
-    Func_LogMessage "脚本已更新，重新启动..." "Script has been updated, restarting..."
+# 检查当前分支与远程分支是否一致（即是否有更新）
+if ! git diff --quiet HEAD origin/${owa_branch}; then
+    Func_LogMessage "检测到远程更新，正在重置并重启..." "Remote updates detected. Resetting and restarting..."
 
-    # 重置并重启
     git reset --hard origin/${owa_branch}
     exec "$0" "$@"
 else
-    Func_LogMessage "脚本未更新，继续执行..." "Script not changed, continuing..."
-    git reset --hard origin/${owa_branch}
+    Func_LogMessage "远程无更新，继续执行..." "No remote changes, continuing..."
 fi
 
 
