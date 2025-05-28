@@ -100,7 +100,7 @@ if ! git diff --quiet HEAD origin/${owa_branch}; then
     Func_LogMessage "检测到远程更新，正在重置并重启..." "Remote updates detected. Resetting and restarting..."
 
     git reset --hard origin/${owa_branch}
-    exec "$SCRIPT_PATH" "$@"
+    exec bash "$SCRIPT_PATH" "$@"
 else
     Func_LogMessage "远程无更新，继续执行..." "No remote changes, continuing..."
 fi
