@@ -90,18 +90,21 @@ git_email=smallprogram@foxmail.com
 git_user=smallprogram
 
 
-# 拉取最新代码
+# 拉取远程信息但不修改本地
 Func_LogMessage "正在从远程获取最新代码..." "Fetching the latest code from remote..."
 git fetch origin
 
-Func_LogMessage "正在重置到最新的远程分支 ${owa_branch}..." "Resetting to the latest remote branch ${owa_branch}..."
-git reset --hard origin/${owa_branch}
-
-# 检查当前脚本是否被更新
+# 检查当前脚本是否被远程版本更新
 CURRENT_SCRIPT="$(basename "$0")"
-if [[ $(git diff origin/${owa_branch} -- "$CURRENT_SCRIPT") ]]; then
+if [[ $(git diff HEAD origin/${owa_branch} -- "$CURRENT_SCRIPT") ]]; then
     Func_LogMessage "脚本已更新，重新启动..." "Script has been updated, restarting..."
+
+    # 重置并重启
+    git reset --hard origin/${owa_branch}
     exec "$0" "$@"
+else
+    Func_LogMessage "脚本未更新，继续执行..." "Script not changed, continuing..."
+    git reset --hard origin/${owa_branch}
 fi
 
 
