@@ -90,6 +90,7 @@ git_email=smallprogram@foxmail.com
 git_user=smallprogram
 
 
+SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
 # 获取最新远程信息
 Func_LogMessage "正在从远程获取最新代码..." "Fetching the latest code from remote..."
 git fetch origin
@@ -99,7 +100,7 @@ if ! git diff --quiet HEAD origin/${owa_branch}; then
     Func_LogMessage "检测到远程更新，正在重置并重启..." "Remote updates detected. Resetting and restarting..."
 
     git reset --hard origin/${owa_branch}
-    exec "$0" "$@"
+    exec "$SCRIPT_PATH" "$@"
 else
     Func_LogMessage "远程无更新，继续执行..." "No remote changes, continuing..."
 fi
