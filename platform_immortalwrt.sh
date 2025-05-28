@@ -6,7 +6,7 @@ config_dir=config/immortalwrt_config
 # config列表
 config_list=($(ls /home/$user_name/OpenWrtAction/$config_dir))
 # feeds目录
-feeds_dir=feeds_config/immortalwrt.feeds.conf.default
+# feeds_dir=feeds_config/immortalwrt.feeds.conf.default
 # oepnwrt主源码
 openwrt_source=https://github.com/immortalwrt/immortalwrt.git
 openwrt_branch=master

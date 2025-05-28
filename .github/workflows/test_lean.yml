@@ -94,7 +94,7 @@ jobs:
 
       - name: Load Custom Feeds
         run: |
-          cp -r feeds_config/lean.feeds.conf.default openwrt/feeds.conf.default
+          # cp -r feeds_config/lean.feeds.conf.default openwrt/feeds.conf.default
           chmod +x diy_script/lean_diy/diy-part1.sh
           cd openwrt
           $GITHUB_WORKSPACE/diy_script/lean_diy/diy-part1.sh

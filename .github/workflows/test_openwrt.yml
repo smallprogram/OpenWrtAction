@@ -97,7 +97,7 @@ jobs:
 
       - name: Load Custom Feeds
         run: |
-          cp -r feeds_config/openwrt.feeds.conf.default openwrt/feeds.conf.default
+          # cp -r feeds_config/openwrt.feeds.conf.default openwrt/feeds.conf.default
           chmod +x diy_script/openwrt_diy/diy-part1.sh
           cd openwrt
           $GITHUB_WORKSPACE/diy_script/openwrt_diy/diy-part1.sh

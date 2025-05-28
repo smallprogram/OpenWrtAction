@@ -6,7 +6,7 @@ config_dir=config/openwrt_config
 # config列表
 config_list=($(ls /home/$user_name/OpenWrtAction/$config_dir))
 # feeds目录
-feeds_dir=feeds_config/openwrt.feeds.conf.default
+# feeds_dir=feeds_config/openwrt.feeds.conf.default
 # oepnwrt主源码
 openwrt_source=https://github.com/openwrt/openwrt.git
 openwrt_branch=main

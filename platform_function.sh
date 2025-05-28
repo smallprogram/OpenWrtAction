@@ -136,10 +136,10 @@ function Func_Compile_Firmware() {
     Func_LogMessage "开始编译！！" "Start compiling! !"
     sleep 1s
 
-    Func_LogMessage "开始将OpenwrtAction中的自定义feeds注入源码中...." "Started injecting custom feeds in OpenwrtAction into source code..."
-    sleep 2s
-    echo
-    cp /home/${user_name}/OpenWrtAction/$feeds_dir /home/${user_name}/${openwrt_dir}/feeds.conf.default
+    # Func_LogMessage "开始将OpenwrtAction中的自定义feeds注入源码中...." "Started injecting custom feeds in OpenwrtAction into source code..."
+    # sleep 2s
+    # echo
+    # cp /home/${user_name}/OpenWrtAction/$feeds_dir /home/${user_name}/${openwrt_dir}/feeds.conf.default
 
     Func_DIY1_Script
 
@@ -609,10 +609,10 @@ function Func_Main() {
 
     if [[ $num == 2 ]]; then
         echo
-        Func_LogMessage "开始将OpenwrtAction中的自定义feeds注入源码中...." "Started injecting custom feeds in OpenwrtAction into source code..."
-        sleep 2s
-        echo
-        cp /home/${user_name}/OpenWrtAction/$feeds_dir /home/${user_name}/${openwrt_dir}/feeds.conf.default
+        # Func_LogMessage "开始将OpenwrtAction中的自定义feeds注入源码中...." "Started injecting custom feeds in OpenwrtAction into source code..."
+        # sleep 2s
+        # echo
+        # cp /home/${user_name}/OpenWrtAction/$feeds_dir /home/${user_name}/${openwrt_dir}/feeds.conf.default
         cd /home/${user_name}/${openwrt_dir}
 
         Func_LogMessage "创建编译日志文件夹/home/${user_name}/${log_folder_name}/${folder_name}" "Create compilation log folder /home/${user_name}/${log_folder_name}/${folder_name}"

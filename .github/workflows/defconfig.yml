@@ -100,7 +100,7 @@ jobs:
 
       - name: Load Custom Feeds
         run: |
-          [ -e $FEEDS_CONF ] && cp -r ${{ matrix.value.FEEDS_CONF }} openwrt/feeds.conf.default
+          # [ -e $FEEDS_CONF ] && cp -r ${{ matrix.value.FEEDS_CONF }} openwrt/feeds.conf.default
           chmod +x ${{ matrix.value.DIY_P1_SH }}
           cd openwrt
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P1_SH }}
