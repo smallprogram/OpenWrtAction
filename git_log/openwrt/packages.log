@@ -2,16 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b82574b31|Philip Prindeville|Sun May 25 21:20:25 2025 -0600|named: /var/run/named isn't being created with correct permissions
-e74e9710b|Jens Wagner|Tue May 20 09:45:43 2025 +0200|perl-io-async: Perl Module IO::Async
-62e5e1f82|Jens Wagner|Tue May 20 09:45:17 2025 +0200|perl-future-asyncawait: Perl Module Future::AsyncAwait
-8a235d67b|Jens Wagner|Tue May 20 09:44:49 2025 +0200|perl-future: Perl Module Future
-c10d0d2c6|Jens Wagner|Tue May 20 09:44:23 2025 +0200|perl-io-socket-ssl: Perl Module IO::Socket::SSL
-e35fe955d|Jens Wagner|Tue May 20 09:43:54 2025 +0200|perl-net-ssleay: Perl Module Net::SSLeay
-71581bf94|Jens Wagner|Tue May 20 09:42:53 2025 +0200|perl-file-sharedir: Perl Module File::ShareDir
-1bc3bf261|Jens Wagner|Tue May 20 09:42:09 2025 +0200|perl-class-inspector: Perl Module Class::Inspector
-d824ce313|Jens Wagner|Tue May 20 09:41:06 2025 +0200|perl-struct-dumb: Perl Module Struct::Dumb
-9cab02e71|Jens Wagner|Tue May 20 09:27:23 2025 +0200|perl-xs-parse-sublike: Perl Module XS::Parse::Sublike
-c46536d76|Jens Wagner|Tue May 20 09:26:33 2025 +0200|perl-xs-parse-keyword: Perl Module XS::Parse::Keyword
-8c55d089c|Liangbin Lian|Tue Apr 16 11:24:31 2024 +0800|ddns-scripts: fix parsing of parameters for cloudflare.com
+7a16d926e|Tianling Shen|Wed May 28 17:18:50 2025 +0800|alist: Update to 3.45.0
+e38edaea0|Tianling Shen|Wed May 28 17:18:41 2025 +0800|rclone: Update to 1.69.3
+4c3999dd4|Tianling Shen|Wed May 28 17:18:22 2025 +0800|v2ray-core: Update to 5.32.0
+ed12bfe13|Tianling Shen|Wed May 28 17:18:16 2025 +0800|v2ray-geodata: Update to latest version
+7efed7ff9|Ryan Press|Tue May 20 08:04:02 2025 -0700|modemmanager: add sourcefilter option support This make source based IPv6 routing option available for modemmanager when using modem SLAAC.
 </details>

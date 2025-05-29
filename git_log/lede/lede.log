@@ -2,8 +2,20 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c2486c96e|coolsnowwolf|Tue May 27 18:04:06 2025 +0800|generic: silence using UBI block devices instead warnings for 6.6
-68aeaffef|coolsnowwolf|Tue May 27 17:58:31 2025 +0800|qualcommax: ipq6018-ess: Add dp5-syn node
-ccbeeff25|coolsnowwolf|Tue May 27 17:55:15 2025 +0800|qualcommax: ipq8074-ess: move switch to ess-instance node
-d1f3b9a85|coolsnowwolf|Tue May 27 17:21:27 2025 +0800|qualcommax: default to kernel 6.6
+ea1897537|coolsnowwolf|Thu May 29 04:05:02 2025 +0800|mvebu: cortexa9: set DTS dir for 6.6
+00459042c|coolsnowwolf|Thu May 29 03:55:48 2025 +0800|mwlwifi: update to version 10.4.10-20231120
+a36f88e35|coolsnowwolf|Thu May 29 03:27:03 2025 +0800|simulated-driver: drop outdated package
+c740590f3|coolsnowwolf|Thu May 29 03:20:25 2025 +0800|mac80211: fix SBL state callback in MHI core in 6.x
+f319c5a32|coolsnowwolf|Thu May 29 02:59:57 2025 +0800|dnsmasq: bump release to 2.91
+c9d80213e|coolsnowwolf|Thu May 29 02:51:54 2025 +0800|mac80211: rtw88: fix compilation error with kernel 6.12
+7c1fe43bc|coolsnowwolf|Wed May 28 17:06:53 2025 +0800|feeds.conf.default: change luci version to openwrt-24.10
+9f11bc9d8|coolsnowwolf|Wed May 28 16:50:27 2025 +0800|mediatek: filogic: add support for HUASIFEI WS3006
+89bb622a4|coolsnowwolf|Wed May 28 14:41:26 2025 +0800|mediatek: add 256MB u-boot mod version for Cudy TR3000 v2 support
+e2600d932|coolsnowwolf|Wed May 28 14:27:44 2025 +0800|mt76: fix build error on 6.12 kernel
+cd7c4fd15|coolsnowwolf|Wed May 28 14:26:28 2025 +0800|mediatek: enable testing kernel 6.12
+9ac7c9dbf|Daniel Golle|Thu May 8 02:59:19 2025 +0100|generic: 6.12: fix patch adding EEE-support to mtk_eth_soc
+b776caf08|Daniel Golle|Thu May 8 02:57:33 2025 +0100|generic: net: phy: rtl8261n: fix build with Linux 6.12
+d926f4d75|Daniel Golle|Thu May 8 03:01:07 2025 +0100|generic: 6.12: backport MediaTek Ethernet PHY changes
+36a8ec8e8|coolsnowwolf|Wed May 28 12:52:23 2025 +0800|kmod-phy-realtek: fix build with linux 6.6
+5d024512e|Internet1235|Wed May 28 10:10:05 2025 +0800|kmod-ice: fix dependency on 6.12 (#13510)
 </details>
