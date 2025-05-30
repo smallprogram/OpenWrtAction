@@ -127,5 +127,4 @@ jobs:
         id: compile
         run: |
           cd $GITHUB_WORKSPACE/openwrt
-          unset CI
-          make -j$(nproc)
+          env -u CI make -j$(nproc)
