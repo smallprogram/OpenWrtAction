@@ -48,7 +48,7 @@ env:
 
 jobs:
   job_init: 
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     name: Init
     steps:
       - name: Initialization Environment

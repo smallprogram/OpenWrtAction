@@ -46,7 +46,7 @@ env:
 
 jobs:
  job_build:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     name: build
     steps:
       - name: Initialization Environment
@@ -128,14 +128,25 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/openwrt
           make tools/compile -j$(nproc)
-          make toolchain/compile -j$(nproc)   
-          make -j$(nproc) \
-            package/feeds/passwall/luci-app-passwall/compile \
-            package/feeds/passwall2/luci-app-passwall2/compile
+          make toolchain/compile -j$(nproc)
+          make package/cleanup -j$(nproc)
+          make target/compile -j$(nproc)
           
 
       - name: compile test package
-        id: compile_package
+        id: compile_package1
+        run: |
+          cd $GITHUB_WORKSPACE/openwrt
+          make package/feeds/passwall/luci-app-passwall/compile -j$(nproc) V=s
+
+      - name: compile test package
+        id: compile_package2
+        run: |
+          cd $GITHUB_WORKSPACE/openwrt
+          make package/feeds/passwall2/luci-app-passwall2/compile -j$(nproc) V=s
+
+      - name: compile test package
+        id: compile_package3
         run: |
           cd $GITHUB_WORKSPACE/openwrt
           make package/feeds/helloworld/luci-app-ssr-plus/compile -j$(nproc) V=s
