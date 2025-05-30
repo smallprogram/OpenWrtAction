@@ -54,3 +54,7 @@ jobs:
       - name: Initialization Environment
         run: |
           echo "$CI"
+          
+          echo "before unset CI"
+          unset CI
+          echo "$CI"
