@@ -128,14 +128,14 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/openwrt
           make tools/compile -j$(nproc)
-          make toolchain/compile -j$(nproc)    
+          make toolchain/compile -j$(nproc)   
+          make -j$(nproc) \
+            package/feeds/passwall/luci-app-passwall/compile \
+            package/feeds/passwall2/luci-app-passwall2/compile
           
 
       - name: compile test package
         id: compile_package
         run: |
           cd $GITHUB_WORKSPACE/openwrt
-          make -j$(nproc) V=s \
-            package/feeds/passwall/luci-app-passwall/compile \
-            package/feeds/passwall2/luci-app-passwall2/compile \
-            package/feeds/helloworld/luci-app-ssr-plus/compile 
+          make package/feeds/helloworld/luci-app-ssr-plus/compile -j$(nproc) V=s
