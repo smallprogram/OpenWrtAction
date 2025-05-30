@@ -1,8 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-0a09ae1805|Khachatryan Karen|Tue May 27 21:53:04 2025 +0300|luci-app-antiblock: Disable routes without deleting
-42d32dff7f|Eric Fahlgren|Wed May 28 09:09:33 2025 -0700|luci-app-attendedsysupgrade: maintain value of owut.rootfs_size in LuCI app
-09d3add964|Hosted Weblate|Wed May 28 09:53:03 2025 +0200|Translated using Weblate (Russian)
-</details>

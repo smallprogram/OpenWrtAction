@@ -2,18 +2,35 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-45fbf6228e|Zoltan HERPAI|Sat May 3 19:58:45 2025 +0000|sunxi: add 6.12 as testing kernel
-7d840809c6|Zoltan HERPAI|Tue May 6 22:55:40 2025 +0000|sunxi: refresh config for 6.12
-d97197d7e4|Zoltan HERPAI|Sat May 3 19:57:40 2025 +0000|sunxi: remove upstreamed patches from 6.12
-69c599c775|Zoltan HERPAI|Thu May 1 13:32:14 2025 +0000|kernel/sunxi: Restore kernel files for v6.6
-697370ab9b|Zoltan HERPAI|Thu May 1 13:32:14 2025 +0000|kernel/sunxi: Create kernel files for v6.12 (from v6.6)
-f025af1280|Christian Lamparter|Sat Apr 26 11:48:34 2025 +0200|uml: restore 6.6 config+patches
-67e41d8a34|Christian Lamparter|Sat Apr 26 10:02:53 2025 +0200|uml: disable kmod-8250-serial
-8970559351|Christian Lamparter|Sat Apr 26 04:23:21 2025 +0200|uml: add 6.12 testing kernel
-62adc4bcbb|Christian Lamparter|Sat Apr 26 12:05:11 2025 +0200|uml: remove left-overs from previous kernel bumps
-de5e537705|Christian Lamparter|Sat Apr 26 04:25:27 2025 +0200|generic: 6.12: add missing symbol
-268c352e44|Álvaro Fernández Rojas|Wed May 28 09:10:29 2025 +0200|generic: 6.6: backport devm_clk_get_optional_enabled_with_rate
-f40250781d|Álvaro Fernández Rojas|Wed May 28 09:14:19 2025 +0200|generic: backport secs_to_jiffies
-11c936e141|Christian Marangi|Tue May 27 18:57:06 2025 +0200|mediatek: filogic: provide custom GPT table for Arcadyan Mozart
-22c557bf9e|Christian Marangi|Thu May 22 00:17:02 2025 +0200|uboot-mediatek: Add GPT table write command for Arcadyan Mozart
+d63663601d|Antti Seppälä|Sat May 10 13:54:56 2025 +0300|qmi: increase SIM power-cycle timeouts
+32ed3db1a0|Florian Eckert|Wed Apr 30 12:25:01 2025 +0200|base-files: treat 'ipaddr is inside range' as warning again
+ae198c6ba0|Florian Eckert|Tue Apr 29 15:26:36 2025 +0200|dnsmasq: fix start if dhcp-range is not correct
+b90feed6ba|Sean Khan|Wed May 28 04:48:14 2025 -0400|wifi-scripts: add missing 'network' property to wifi-iface schema
+7d064eef52|Jonas Jelonek|Wed May 28 11:36:31 2025 +0000|generic: power: backport v6.15 patch to fix build with GCC15
+a5e6deb867|Jonas Jelonek|Wed May 28 11:33:03 2025 +0000|generic: net: add pending wireguard patch to fix build with GCC15
+d2764bfd7e|Shiji Yang|Wed May 28 19:06:00 2025 +0800|mediatek: mt7629: add the missing symbol CONFIG_LEDS_SMARTRG_LED
+0f8091334c|Shiji Yang|Wed May 28 19:06:00 2025 +0800|kernel: reorder kernel symbol configs
+668704f781|Kyle Hendry|Sun May 4 17:22:22 2025 -0700|sunxi: add support for Beelink X2
+c96db6c013|Tony Ambardar|Sun Dec 29 01:39:03 2024 -0800|malta: 6.12: enable kernel for testing
+4dae54f004|Tony Ambardar|Thu May 22 15:37:20 2025 -0700|malta: 6.12: update config after kernel refresh
+63cffd48a4|Tony Ambardar|Sun Dec 29 17:12:54 2024 -0800|kernel/malta: Restore kernel files for v6.6
+b84523eed6|Tony Ambardar|Sun Dec 29 17:12:53 2024 -0800|kernel/malta: Create kernel files for v6.12 (from v6.6)
+3cdc88e664|Tony Ambardar|Tue Jan 14 16:35:38 2025 -0800|kselftests-bpf: add support for kernel 6.12
+c40840da3a|Tony Ambardar|Mon Jan 27 06:20:36 2025 -0800|package/zram: fix up Kconfig behaviour for kernel 6.12
+4cf1316573|Álvaro Fernández Rojas|Thu May 29 13:50:19 2025 +0200|bmips: drop 6.6 support
+416b2a808b|Álvaro Fernández Rojas|Thu May 29 13:49:13 2025 +0200|bmips: use kernel 6.12 by default
+c8fb72eafa|Linus Walleij|Thu May 29 08:55:16 2025 +0200|gemini: Add missing PHY packages
+98341edd58|Álvaro Fernández Rojas|Thu May 8 17:51:25 2025 +0200|bmips: enable 6.12 kernel testing
+49451bdf95|Álvaro Fernández Rojas|Thu May 8 17:49:39 2025 +0200|bmips: update files for kernel 6.12
+4fff07ae93|Álvaro Fernández Rojas|Thu May 8 17:25:29 2025 +0200|bmips: restore kernel files for v6.6
+7d907dcdc5|Álvaro Fernández Rojas|Thu May 8 17:24:11 2025 +0200|bmips: create kernel files for v6.12 (from v6.6)
+0937098512|Felix Fietkau|Thu May 29 13:28:03 2025 +0200|umdns: update to Git HEAD (2025-05-29)
+3174182366|Felix Fietkau|Wed May 28 17:01:48 2025 +0200|umdns: fix udebug with jail
+8585354f28|Felix Fietkau|Wed May 28 16:55:58 2025 +0200|procd: update to Git HEAD (2025-05-28)
+93e944648b|Agustin Lorenzo|Tue Apr 22 22:28:51 2025 +0200|hostapd: revert "ACS: Validate 6 GHz AP criteria before ACS"
+70505e0e51|Agustin Lorenzo|Sun Apr 6 21:44:21 2025 +0200|hostapd: update to version 2025-05-23
+48135ddd44|Álvaro Fernández Rojas|Thu May 29 08:13:00 2025 +0200|generic: 6.12: backport upstream v6.16 b53 patch
+228203f4e3|Álvaro Fernández Rojas|Thu May 29 08:04:15 2025 +0200|uml: move config and patches to target dir
+cf1721cb7b|Álvaro Fernández Rojas|Wed May 28 21:46:40 2025 +0200|generic: 6.12: backport b53 upstream patches
+0cec046987|Álvaro Fernández Rojas|Wed May 28 21:43:51 2025 +0200|generic: 6.12: backport dsa support_eee patches
 </details>

@@ -2,43 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6afda3bbc|Tianling Shen|Wed May 28 18:12:39 2025 +0800|Merge Official Source
-4721da9ea|Tianling Shen|Wed May 28 17:43:32 2025 +0800|dufs: convert render-index to options
-7a16d926e|Tianling Shen|Wed May 28 17:18:50 2025 +0800|alist: Update to 3.45.0
-e38edaea0|Tianling Shen|Wed May 28 17:18:41 2025 +0800|rclone: Update to 1.69.3
-4c3999dd4|Tianling Shen|Wed May 28 17:18:22 2025 +0800|v2ray-core: Update to 5.32.0
-ed12bfe13|Tianling Shen|Wed May 28 17:18:16 2025 +0800|v2ray-geodata: Update to latest version
-53cc0a424|Tianling Shen|Wed May 28 17:11:28 2025 +0800|CI: update riscv64 arch
-c217023d8|Tianling Shen|Wed May 28 17:01:50 2025 +0800|fibocom-qmi-wwan: fix build with kernel 6.12
-a6bc73ea3|Tianling Shen|Wed May 28 16:27:51 2025 +0800|naiveproxy: Update to 137.0.7151.44-1
-655294b28|Tianling Shen|Wed May 28 16:17:29 2025 +0800|gn: update to Git HEAD (2025-05-27)
-7efed7ff9|Ryan Press|Tue May 20 08:04:02 2025 -0700|modemmanager: add sourcefilter option support This make source based IPv6 routing option available for modemmanager when using modem SLAAC.
-b82574b31|Philip Prindeville|Sun May 25 21:20:25 2025 -0600|named: /var/run/named isn't being created with correct permissions
-e74e9710b|Jens Wagner|Tue May 20 09:45:43 2025 +0200|perl-io-async: Perl Module IO::Async
-62e5e1f82|Jens Wagner|Tue May 20 09:45:17 2025 +0200|perl-future-asyncawait: Perl Module Future::AsyncAwait
-8a235d67b|Jens Wagner|Tue May 20 09:44:49 2025 +0200|perl-future: Perl Module Future
-c10d0d2c6|Jens Wagner|Tue May 20 09:44:23 2025 +0200|perl-io-socket-ssl: Perl Module IO::Socket::SSL
-e35fe955d|Jens Wagner|Tue May 20 09:43:54 2025 +0200|perl-net-ssleay: Perl Module Net::SSLeay
-71581bf94|Jens Wagner|Tue May 20 09:42:53 2025 +0200|perl-file-sharedir: Perl Module File::ShareDir
-1bc3bf261|Jens Wagner|Tue May 20 09:42:09 2025 +0200|perl-class-inspector: Perl Module Class::Inspector
-d824ce313|Jens Wagner|Tue May 20 09:41:06 2025 +0200|perl-struct-dumb: Perl Module Struct::Dumb
-9cab02e71|Jens Wagner|Tue May 20 09:27:23 2025 +0200|perl-xs-parse-sublike: Perl Module XS::Parse::Sublike
-c46536d76|Jens Wagner|Tue May 20 09:26:33 2025 +0200|perl-xs-parse-keyword: Perl Module XS::Parse::Keyword
-8c55d089c|Liangbin Lian|Tue Apr 16 11:24:31 2024 +0800|ddns-scripts: fix parsing of parameters for cloudflare.com
-2c7893553|Robert Marko|Mon May 26 19:06:33 2025 +0200|usb-serial-xr_usb_serial_common: remove package
-a5473150f|Mieczyslaw Nalewaj|Thu May 15 15:03:09 2025 +0200|xtables-addons: update call BuildTemplate description
-51b65ec78|Mieczyslaw Nalewaj|Sun May 18 18:14:06 2025 +0200|xtables-addons: set ipp2p depends on kmod-lib-textsearch
-937e2a5b8|Tianling Shen|Sun May 25 18:41:17 2025 +0800|openthread-br: fix build on GCC 14
-8fff19135|Fabian Lipken|Mon May 26 07:36:43 2025 +0200|fx: update to 36.0.3
-ba10392cb|Jianhui Zhao|Mon May 26 09:24:40 2025 +0800|rtty: update to 8.1.5
-37ff02b71|Wesley Gimenes|Thu May 22 09:45:02 2025 -0300|netbird: update to 0.45.1
-5f76e1c0a|Timothy M. Ace|Mon Dec 11 20:53:32 2023 -0500|perlbase-extutils: Adding required perlbase-version dependency
-91a366e87|Josef Schlehofer|Sun May 25 12:49:40 2025 +0200|CI: move script into separate directory
-3621fded1|Josef Schlehofer|Sun May 25 12:39:58 2025 +0200|CI: formal check: use shared workflow in actions-shared-workflows
-d1f986289|Jianhui Zhao|Thu May 22 21:42:02 2025 +0800|lua-eco: update to 3.10.0
-e344fcc36|Javier Marcet|Fri May 23 19:24:14 2025 +0200|docker-compose: Update to version 2.36.2
-4ac47971d|Javier Marcet|Thu May 22 18:24:02 2025 +0200|docker-compose: Update to version 2.36.1
-3b98387df|Chris Swan|Thu May 22 11:50:55 2025 +0100|cjson: update to 1.7.18
-a9a55b403|Luca Barbato|Sat May 24 18:31:54 2025 +0000|cargo-c: update to 0.10.13
-95eef0fd5|Luca Barbato|Sat May 24 18:10:25 2025 +0000|rust: update to 1.87.0
+eca0e4728|Tianling Shen|Thu May 29 14:41:33 2025 +0800|zerotier: create config_path if not exist
 </details>

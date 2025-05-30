@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7a16d926e|Tianling Shen|Wed May 28 17:18:50 2025 +0800|alist: Update to 3.45.0
-e38edaea0|Tianling Shen|Wed May 28 17:18:41 2025 +0800|rclone: Update to 1.69.3
-4c3999dd4|Tianling Shen|Wed May 28 17:18:22 2025 +0800|v2ray-core: Update to 5.32.0
-ed12bfe13|Tianling Shen|Wed May 28 17:18:16 2025 +0800|v2ray-geodata: Update to latest version
-7efed7ff9|Ryan Press|Tue May 20 08:04:02 2025 -0700|modemmanager: add sourcefilter option support This make source based IPv6 routing option available for modemmanager when using modem SLAAC.
+a6b068923|Packet Please|Wed May 28 17:50:17 2025 +0200|poemgr: update to latest Git HEAD
 </details>

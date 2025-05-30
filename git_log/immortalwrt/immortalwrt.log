@@ -2,17 +2,25 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e9bf39fb48|Tianling Shen|Wed May 28 23:21:25 2025 +0800|ramips: disable build for linksys e1700 and zyxel keenetic-lite-iii-a by default
-3aaf9daed1|Tianling Shen|Wed May 28 21:28:14 2025 +0800|ath79: disable build for meraki mr18 by default
-360c06beca|Tianling Shen|Wed May 28 16:54:25 2025 +0800|kernel: modules: update dependencies for drm-gem-shmem-helper
-da4ead0518|Tianling Shen|Wed May 28 16:34:47 2025 +0800|rockchip: add missing Kconfig symbol
-8ca39ae67e|Tianling Shen|Wed May 28 16:32:45 2025 +0800|ath79: disable build for dlink dap-13xx by default
-125298adce|Tianling Shen|Wed May 28 16:31:11 2025 +0800|Merge Official Source
-35c828c168|Piotr Dymacz|Fri Apr 4 22:42:57 2025 +0200|ipq60xx: add support for ALFA Network AP120C-AX
-658aaf192b|Linus Walleij|Sun May 25 18:59:19 2025 +0200|gemini: Switch to kernel v6.12 only
-390567b363|Linus Walleij|Fri May 2 10:12:56 2025 +0200|gemini: Kernel v6.12
-aa8ca6ed4f|Christian Marangi|Sun May 25 23:56:14 2025 +0200|uboot-mediatek: replace bootmenu shortkey patch with better version
-0c6f9665f2|Zoltan HERPAI|Tue May 27 13:29:23 2025 +0000|sifiveu: drop upstreamed patch from 6.12
-199925f29a|Zoltan HERPAI|Tue May 27 13:24:56 2025 +0000|sifiveu: drop 6.6 support
-eda23e04e7|Zoltan HERPAI|Tue May 27 13:23:59 2025 +0000|sifiveu: use kernel 6.12 by default
+57f8e83584|Tianling Shen|Thu Nov 28 15:08:36 2024 +0800|ramips: disable build for rostelecom sercomm series by default
+109e73f64f|Tianling Shen|Thu May 29 15:36:30 2025 +0800|ramips: disable build for netgear wn3100rp-v2 by default
+4fa3f3a113|Tianling Shen|Thu May 29 15:30:41 2025 +0800|Merge Official Source
+48135ddd44|Álvaro Fernández Rojas|Thu May 29 08:13:00 2025 +0200|generic: 6.12: backport upstream v6.16 b53 patch
+228203f4e3|Álvaro Fernández Rojas|Thu May 29 08:04:15 2025 +0200|uml: move config and patches to target dir
+cf1721cb7b|Álvaro Fernández Rojas|Wed May 28 21:46:40 2025 +0200|generic: 6.12: backport b53 upstream patches
+0cec046987|Álvaro Fernández Rojas|Wed May 28 21:43:51 2025 +0200|generic: 6.12: backport dsa support_eee patches
+45fbf6228e|Zoltan HERPAI|Sat May 3 19:58:45 2025 +0000|sunxi: add 6.12 as testing kernel
+7d840809c6|Zoltan HERPAI|Tue May 6 22:55:40 2025 +0000|sunxi: refresh config for 6.12
+d97197d7e4|Zoltan HERPAI|Sat May 3 19:57:40 2025 +0000|sunxi: remove upstreamed patches from 6.12
+69c599c775|Zoltan HERPAI|Thu May 1 13:32:14 2025 +0000|kernel/sunxi: Restore kernel files for v6.6
+697370ab9b|Zoltan HERPAI|Thu May 1 13:32:14 2025 +0000|kernel/sunxi: Create kernel files for v6.12 (from v6.6)
+f025af1280|Christian Lamparter|Sat Apr 26 11:48:34 2025 +0200|uml: restore 6.6 config+patches
+67e41d8a34|Christian Lamparter|Sat Apr 26 10:02:53 2025 +0200|uml: disable kmod-8250-serial
+8970559351|Christian Lamparter|Sat Apr 26 04:23:21 2025 +0200|uml: add 6.12 testing kernel
+62adc4bcbb|Christian Lamparter|Sat Apr 26 12:05:11 2025 +0200|uml: remove left-overs from previous kernel bumps
+de5e537705|Christian Lamparter|Sat Apr 26 04:25:27 2025 +0200|generic: 6.12: add missing symbol
+268c352e44|Álvaro Fernández Rojas|Wed May 28 09:10:29 2025 +0200|generic: 6.6: backport devm_clk_get_optional_enabled_with_rate
+f40250781d|Álvaro Fernández Rojas|Wed May 28 09:14:19 2025 +0200|generic: backport secs_to_jiffies
+11c936e141|Christian Marangi|Tue May 27 18:57:06 2025 +0200|mediatek: filogic: provide custom GPT table for Arcadyan Mozart
+22c557bf9e|Christian Marangi|Thu May 22 00:17:02 2025 +0200|uboot-mediatek: Add GPT table write command for Arcadyan Mozart
 </details>
