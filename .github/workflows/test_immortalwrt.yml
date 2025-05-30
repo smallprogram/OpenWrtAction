@@ -114,7 +114,7 @@ jobs:
           cd openwrt
           $GITHUB_WORKSPACE/diy_script/immortalwrt_diy/diy-part2.sh
 
-          sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=if-unchanged/' feeds/packages/lang/rust/Makefile
+          sed -i '/--set=llvm\.download-ci-llvm/d' feeds/packages/lang/rust/Makefile
 
           make defconfig
 
