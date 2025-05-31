@@ -1,0 +1,13 @@
+<details> <summary> <b>lede new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+045b5eb8b|coolsnowwolf|Sat May 31 05:20:06 2025 +0800|mediatek: filogic: add support for HUASIFEI WH3000 PRO (aka Fudy Pro)
+423165d48|coolsnowwolf|Sat May 31 03:36:04 2025 +0800|generic: fix probe issues with RealTek RTL8221B PHYs with kernel 6.6
+bf229f567|coolsnowwolf|Sat May 31 02:53:42 2025 +0800|qca-nss-clients: fix build with qualcommax ipq50xx
+18236cb2b|coolsnowwolf|Sat May 31 02:20:16 2025 +0800|rockchip: fix build with kernel 6.12
+38b7954ea|coolsnowwolf|Sat May 31 01:59:11 2025 +0800|x86: add i915-firmware for kmod-drm-i915
+a12e98ee2|coolsnowwolf|Sat May 31 01:46:19 2025 +0800|mt76: replace strlcpy with strscpy
+221e694c1|coolsnowwolf|Fri May 30 18:06:52 2025 +0800|mac80211: Fix tracing backport with kernel 6.12
+9c3d2ef1b|coolsnowwolf|Fri May 30 17:38:51 2025 +0800|kernel: bump 6.12 to 6.12.31
+</details>

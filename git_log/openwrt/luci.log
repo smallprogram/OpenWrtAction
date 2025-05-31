@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+04d22e68a1|Dirk Brenken|Fri May 30 22:28:31 2025 +0200|luci-app-adblock: fix the report initialization
+d971e88a0f|Dirk Brenken|Fri May 30 18:42:18 2025 +0200|luci-app-adblock: sync with update 4.4.2-1
+</details>

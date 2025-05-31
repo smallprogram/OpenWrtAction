@@ -2,35 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d63663601d|Antti Seppälä|Sat May 10 13:54:56 2025 +0300|qmi: increase SIM power-cycle timeouts
-32ed3db1a0|Florian Eckert|Wed Apr 30 12:25:01 2025 +0200|base-files: treat 'ipaddr is inside range' as warning again
-ae198c6ba0|Florian Eckert|Tue Apr 29 15:26:36 2025 +0200|dnsmasq: fix start if dhcp-range is not correct
-b90feed6ba|Sean Khan|Wed May 28 04:48:14 2025 -0400|wifi-scripts: add missing 'network' property to wifi-iface schema
-7d064eef52|Jonas Jelonek|Wed May 28 11:36:31 2025 +0000|generic: power: backport v6.15 patch to fix build with GCC15
-a5e6deb867|Jonas Jelonek|Wed May 28 11:33:03 2025 +0000|generic: net: add pending wireguard patch to fix build with GCC15
-d2764bfd7e|Shiji Yang|Wed May 28 19:06:00 2025 +0800|mediatek: mt7629: add the missing symbol CONFIG_LEDS_SMARTRG_LED
-0f8091334c|Shiji Yang|Wed May 28 19:06:00 2025 +0800|kernel: reorder kernel symbol configs
-668704f781|Kyle Hendry|Sun May 4 17:22:22 2025 -0700|sunxi: add support for Beelink X2
-c96db6c013|Tony Ambardar|Sun Dec 29 01:39:03 2024 -0800|malta: 6.12: enable kernel for testing
-4dae54f004|Tony Ambardar|Thu May 22 15:37:20 2025 -0700|malta: 6.12: update config after kernel refresh
-63cffd48a4|Tony Ambardar|Sun Dec 29 17:12:54 2024 -0800|kernel/malta: Restore kernel files for v6.6
-b84523eed6|Tony Ambardar|Sun Dec 29 17:12:53 2024 -0800|kernel/malta: Create kernel files for v6.12 (from v6.6)
-3cdc88e664|Tony Ambardar|Tue Jan 14 16:35:38 2025 -0800|kselftests-bpf: add support for kernel 6.12
-c40840da3a|Tony Ambardar|Mon Jan 27 06:20:36 2025 -0800|package/zram: fix up Kconfig behaviour for kernel 6.12
-4cf1316573|Álvaro Fernández Rojas|Thu May 29 13:50:19 2025 +0200|bmips: drop 6.6 support
-416b2a808b|Álvaro Fernández Rojas|Thu May 29 13:49:13 2025 +0200|bmips: use kernel 6.12 by default
-c8fb72eafa|Linus Walleij|Thu May 29 08:55:16 2025 +0200|gemini: Add missing PHY packages
-98341edd58|Álvaro Fernández Rojas|Thu May 8 17:51:25 2025 +0200|bmips: enable 6.12 kernel testing
-49451bdf95|Álvaro Fernández Rojas|Thu May 8 17:49:39 2025 +0200|bmips: update files for kernel 6.12
-4fff07ae93|Álvaro Fernández Rojas|Thu May 8 17:25:29 2025 +0200|bmips: restore kernel files for v6.6
-7d907dcdc5|Álvaro Fernández Rojas|Thu May 8 17:24:11 2025 +0200|bmips: create kernel files for v6.12 (from v6.6)
-0937098512|Felix Fietkau|Thu May 29 13:28:03 2025 +0200|umdns: update to Git HEAD (2025-05-29)
-3174182366|Felix Fietkau|Wed May 28 17:01:48 2025 +0200|umdns: fix udebug with jail
-8585354f28|Felix Fietkau|Wed May 28 16:55:58 2025 +0200|procd: update to Git HEAD (2025-05-28)
-93e944648b|Agustin Lorenzo|Tue Apr 22 22:28:51 2025 +0200|hostapd: revert "ACS: Validate 6 GHz AP criteria before ACS"
-70505e0e51|Agustin Lorenzo|Sun Apr 6 21:44:21 2025 +0200|hostapd: update to version 2025-05-23
-48135ddd44|Álvaro Fernández Rojas|Thu May 29 08:13:00 2025 +0200|generic: 6.12: backport upstream v6.16 b53 patch
-228203f4e3|Álvaro Fernández Rojas|Thu May 29 08:04:15 2025 +0200|uml: move config and patches to target dir
-cf1721cb7b|Álvaro Fernández Rojas|Wed May 28 21:46:40 2025 +0200|generic: 6.12: backport b53 upstream patches
-0cec046987|Álvaro Fernández Rojas|Wed May 28 21:43:51 2025 +0200|generic: 6.12: backport dsa support_eee patches
+d989d9a8ec|Vladislav Grigoryev|Tue Oct 24 20:33:09 2023 +0300|base-files: use cidr for config_generate
+427c4aa266|Christian Marangi|Fri May 30 21:21:09 2025 +0200|ath79: add calibtation variant for TP-Link Archer C6 v2
+c88515dd86|Christian Marangi|Fri May 30 21:33:44 2025 +0200|ipq-wifi: Add entry for TP-Link Archer C6 v2
+8dd0020d1a|Christian Marangi|Fri May 30 21:25:38 2025 +0200|ipq-wifi: update to Git HEAD (2025-05-30)
+e05426aaf8|Zoltan HERPAI|Wed May 28 17:10:27 2025 +0000|sunxi: enable crypto offload engine
+ab6ffa7e16|Zoltan HERPAI|Wed May 28 21:03:14 2025 +0000|sunxi: cortexa53: enable rtc drivers
+393047e47a|Zoltan HERPAI|Thu May 29 22:58:28 2025 +0200|sunxi: drop 6.6 support
+01bc7a4fe7|Zoltan HERPAI|Thu May 29 22:57:53 2025 +0200|sunxi: use kernel 6.12 by default
+faf6ca0348|Zoltan HERPAI|Thu May 29 12:35:31 2025 +0000|pistachio: add 6.12 testing kernel
+d6b57d4722|Zoltan HERPAI|Thu May 29 12:35:12 2025 +0000|pistachio: 6.12: refresh patches and kernel config
+e757dfaf4c|Zoltan HERPAI|Thu May 29 12:05:09 2025 +0000|kernel/pistachio: Restore kernel files for v6.6
+6f4ea1e219|Zoltan HERPAI|Thu May 29 12:05:09 2025 +0000|kernel/pistachio: Create kernel files for v6.12 (from v6.6)
 </details>

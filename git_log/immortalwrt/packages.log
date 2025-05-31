@@ -1,6 +1,0 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-eca0e4728|Tianling Shen|Thu May 29 14:41:33 2025 +0800|zerotier: create config_path if not exist
-</details>
