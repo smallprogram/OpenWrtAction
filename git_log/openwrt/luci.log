@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-04d22e68a1|Dirk Brenken|Fri May 30 22:28:31 2025 +0200|luci-app-adblock: fix the report initialization
-d971e88a0f|Dirk Brenken|Fri May 30 18:42:18 2025 +0200|luci-app-adblock: sync with update 4.4.2-1
+740452bf1a|Dirk Brenken|Sat May 31 23:10:04 2025 +0200|luci-app-adblock: sync with update 4.4.2-2
+242768d42c|Dirk Brenken|Sat May 31 22:14:41 2025 +0200|luci-app-banip: sync with update 1.5.6-3
+acdffc3d1d|Paul Donald|Tue May 27 17:11:25 2025 +0200|luci-mod-system: Add repo key management
 </details>

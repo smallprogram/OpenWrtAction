@@ -2,16 +2,30 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d989d9a8ec|Vladislav Grigoryev|Tue Oct 24 20:33:09 2023 +0300|base-files: use cidr for config_generate
-427c4aa266|Christian Marangi|Fri May 30 21:21:09 2025 +0200|ath79: add calibtation variant for TP-Link Archer C6 v2
-c88515dd86|Christian Marangi|Fri May 30 21:33:44 2025 +0200|ipq-wifi: Add entry for TP-Link Archer C6 v2
-8dd0020d1a|Christian Marangi|Fri May 30 21:25:38 2025 +0200|ipq-wifi: update to Git HEAD (2025-05-30)
-e05426aaf8|Zoltan HERPAI|Wed May 28 17:10:27 2025 +0000|sunxi: enable crypto offload engine
-ab6ffa7e16|Zoltan HERPAI|Wed May 28 21:03:14 2025 +0000|sunxi: cortexa53: enable rtc drivers
-393047e47a|Zoltan HERPAI|Thu May 29 22:58:28 2025 +0200|sunxi: drop 6.6 support
-01bc7a4fe7|Zoltan HERPAI|Thu May 29 22:57:53 2025 +0200|sunxi: use kernel 6.12 by default
-faf6ca0348|Zoltan HERPAI|Thu May 29 12:35:31 2025 +0000|pistachio: add 6.12 testing kernel
-d6b57d4722|Zoltan HERPAI|Thu May 29 12:35:12 2025 +0000|pistachio: 6.12: refresh patches and kernel config
-e757dfaf4c|Zoltan HERPAI|Thu May 29 12:05:09 2025 +0000|kernel/pistachio: Restore kernel files for v6.6
-6f4ea1e219|Zoltan HERPAI|Thu May 29 12:05:09 2025 +0000|kernel/pistachio: Create kernel files for v6.12 (from v6.6)
+ba674fea40|Alexandru Gagniuc|Tue Apr 16 21:49:28 2024 -0500|realtek: support EnGenius EWS2910P v3
+e5625fb448|Alexandru Gagniuc|Tue Apr 16 21:28:23 2024 -0500|realtek: engenius_ews2910p: support multiple hardware versions
+2a32d215ba|Enrico Mioso|Wed May 21 17:21:08 2025 +0200|uboot-mediatek: bump to v2025.04
+c6c29d7b38|Philip Prindeville|Sun Aug 11 15:28:01 2024 -0600|sysupgrade: create 10_disable_services w/ fixed modified time
+30cdc48360|Shiji Yang|Thu May 29 18:25:21 2025 +0800|kernel: bump 6.12 to 6.12.31
+6296c17026|Felix Fietkau|Tue May 20 20:52:01 2025 +0200|cli: return the correct data type for enum attributes
+91d33d1563|Felix Fietkau|Thu May 22 09:47:04 2025 +0200|mac80211: allow scanning operating on DFS channels
+ed26185bf6|Felix Fietkau|Thu May 22 10:09:41 2025 +0200|hostapd: tweak ACS retry behavior
+71bec727c8|Felix Fietkau|Fri May 30 21:27:52 2025 +0200|cli: fix dealing with enum types with object value lists
+e29669dae1|Felix Fietkau|Fri May 30 21:38:31 2025 +0200|unetmsg: set TCP timeout for outgoing connections
+784dca7e3a|Felix Fietkau|Sat May 31 16:21:18 2025 +0200|procd: update to Git HEAD (2025-05-31)
+84eefb493b|Álvaro Fernández Rojas|Sat May 31 09:16:21 2025 +0200|generic: backport brcm legacy dsa tag fix
+ba1017bf74|Álvaro Fernández Rojas|Sat May 31 09:00:21 2025 +0200|generic: backport bcm63xx SPI reset fix
+9716f89df6|Markus Stockhausen|Mon May 19 10:41:50 2025 -0400|realtek: enhance & harmonize dsa/phy max port patches
+22dc34e8c1|Alexandru Gagniuc|Sun May 25 17:42:20 2025 -0500|qualcommbe: v6.12: enable 2.5G and 10G phylink modes in pcs-qcom-ipq9574
+3d6c36e327|Alexandru Gagniuc|Sat May 3 08:57:10 2025 -0500|qualcommbe: enable v6.12 testing kernel
+1fc5e2ec90|Alexandru Gagniuc|Fri May 16 17:39:33 2025 -0500|qualcommbe: add v6.12 config from v6.6
+627daef0cf|Alexandru Gagniuc|Tue May 13 22:13:55 2025 -0500|qualcommbe: v6.12: add NSSCC clock and reset fixes
+26ea222e21|Alexandru Gagniuc|Tue May 13 22:08:55 2025 -0500|qualcommbe: v6.12: enable ethernet for RDP433
+f3fc278fcb|Alexandru Gagniuc|Tue May 13 22:03:38 2025 -0500|qualcommbe: v6.12: add PPE driver (part 2)
+cd9f3b8d33|Alexandru Gagniuc|Tue May 13 21:55:12 2025 -0500|qualcommbe: v6.12: add pending PPE driver (part 1)
+3744b73602|Alexandru Gagniuc|Tue May 13 21:45:35 2025 -0500|qualcommbe: v6.12: add ethernet PCS driver for IPQ9574
+390e516a3b|Alexandru Gagniuc|Tue May 13 21:38:58 2025 -0500|qualcommbe: v6.12: add QCA8084 ethernet PHY driver
+8f4100ac3b|Alexandru Gagniuc|Tue May 13 21:35:25 2025 -0500|qualcommbe: v6.12: add various DTS updates for IPQ9574 and RDP433
+01f3624960|Alexandru Gagniuc|Tue May 13 21:31:48 2025 -0500|qualcommbe: v6.12: add pending patches
+e3478dbd69|Alexandru Gagniuc|Tue May 13 18:45:56 2025 -0500|qualcommbe: v6.12: add upstreamed patches
 </details>
