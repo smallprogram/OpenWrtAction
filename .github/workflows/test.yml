@@ -84,4 +84,4 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           echo "Retry failed jobs for the ${{ fromJSON(github.run_attempt) }} time, Retry 3 times in total"
-          gh workflow run Retry_Failure_Jobs.yml -F run_id=${{ github.run_id }}
+          gh workflow run Retry_All_Jobs.yml -F run_id=${{ github.run_id }}
