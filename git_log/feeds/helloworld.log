@@ -1,8 +1,0 @@
-<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-2b64d65|zxl hhyccc|Sat May 31 22:27:21 2025 +0800|Merge pull request #1729 from zxlhhyccc/custom
-3aa0272|zxlhhyccc|Sat May 31 20:01:29 2025 +0800|luci-app-ssr-plus: Fix subscribe code.
-9bce32b|zxlhhyccc|Sat May 31 17:13:44 2025 +0800|luci-app-ssr-plus: Add parsing methods to adapt to different airport subscribe.
-</details>

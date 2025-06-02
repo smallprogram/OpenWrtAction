@@ -2,12 +2,18 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1410fcc5f|George Sapkin|Mon May 26 14:42:16 2025 +0300|yt-dlp: bump to 2025.05.22
-3c5512369|Jens Wagner|Tue May 27 13:48:37 2025 +0200|mbpoll: Modbus command line interface
-9044134aa|Brian 'redbeard' Harrington|Wed Apr 9 15:00:42 2025 -0700|net/radius-mac: add new package
-40c6ef694|Tomasz Maciej Nowak|Wed May 28 15:38:12 2025 +0200|python-bcrypt: bump version to 4.1.3
-7825affaf|Dirk Brenken|Sat May 31 23:06:33 2025 +0200|adblock: update 4.4.2-2
-5607728fe|Dirk Brenken|Sat May 31 22:09:28 2025 +0200|banIP: update 1.5.6-3
-250d8d7f1|Jonas Jelonek|Fri May 30 20:43:13 2025 +0000|eza: update to 0.21.4
-36a03ba4e|S. Brusch|Sun Apr 13 09:28:38 2025 +0000|crowdsec-firewall-bouncer: update to 0.0.33
+a47f0830d|Jan Hák|Fri May 23 13:59:06 2025 +0200|liburcu: update to version 0.15.3
+f54850c3f|W. Michael Petullo|Fri May 30 21:13:57 2025 -0500|libsoup3: update to 3.6.5
+1bba5b93f|Wesley Gimenes|Sat May 31 17:17:19 2025 -0300|netbird: update to 0.45.2
+f05476f16|W. Michael Petullo|Sat May 31 07:42:38 2025 -0500|php8-pecl-krb5: update to 1.2.4
+2a4fa2091|W. Michael Petullo|Fri May 30 22:04:12 2025 -0500|libgpg-error: update to 1.55
+021c0ebba|W. Michael Petullo|Sat May 31 08:16:44 2025 -0500|vala: update to 0.56.18
+f80126e87|W. Michael Petullo|Sat May 31 07:39:31 2025 -0500|quota: update to 4.10
+b76849573|W. Michael Petullo|Fri May 30 21:16:35 2025 -0500|openldap: update to 2.6.10
+b4cfc18db|W. Michael Petullo|Fri May 30 08:42:52 2025 -0500|fuse-overlayfs: update to 1.15
+b70fc8ebf|W. Michael Petullo|Fri May 30 22:01:42 2025 -0500|libexif: update 0.6.25
+1c28a6a91|W. Michael Petullo|Fri May 30 21:12:36 2025 -0500|hwloc: update to 2.12.1
+c2cfb0585|W. Michael Petullo|Fri May 30 22:02:53 2025 -0500|libgcrypt: update to 1.11.1
+fedc2f8f9|W. Michael Petullo|Sat May 31 08:04:55 2025 -0500|vips: update to 8.16.1
+d2a6cbf10|Khachatryan Karen|Tue May 27 21:38:09 2025 +0300|antiblock: Update to 2.1.2r2
 </details>

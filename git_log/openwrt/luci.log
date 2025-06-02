@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-740452bf1a|Dirk Brenken|Sat May 31 23:10:04 2025 +0200|luci-app-adblock: sync with update 4.4.2-2
-242768d42c|Dirk Brenken|Sat May 31 22:14:41 2025 +0200|luci-app-banip: sync with update 1.5.6-3
-acdffc3d1d|Paul Donald|Tue May 27 17:11:25 2025 +0200|luci-mod-system: Add repo key management
+bf2e082643|Hosted Weblate|Sun Jun 1 12:03:29 2025 +0200|Translated using Weblate (Portuguese)
+723de2a7f2|Dirk Brenken|Sun Jun 1 07:05:10 2025 +0200|Merge pull request #7746 from dwfreed/patch-1
+c71dbb61ca|Doug Freed|Wed Apr 23 16:43:14 2025 -0500|luci-base: remove bad Unicode on clone button
 </details>

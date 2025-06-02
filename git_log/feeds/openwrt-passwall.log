@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-20e3fbd|lwb1978|Sat May 31 20:27:38 2025 +0800|luci: bump to 25.6.1
-3be60dc|lwb1978|Sat May 31 20:17:41 2025 +0800|luci: update geodata
-83d3806|lwb1978|Sat May 31 20:03:03 2025 +0800|action: update sdk to 24.10.1 & add aarch64_cortex-a53_neon-vfpv4
-2bf8544|lwb1978|Sat May 31 14:06:48 2025 +0800|luci: `add the node via the link` support sending more nodes
-</details>
