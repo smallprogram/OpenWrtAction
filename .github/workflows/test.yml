@@ -76,7 +76,7 @@ jobs:
   rerun-failed-jobs:
     runs-on: ubuntu-latest
     needs: [job_init]
-    if: failure() && fromJSON(github.run_attempt) < 3  && !cancelled()
+    if: fromJSON(github.run_attempt) < 3  && !cancelled()
     steps:
       - name: Rerun failed jobs in the current workflow
         env:
