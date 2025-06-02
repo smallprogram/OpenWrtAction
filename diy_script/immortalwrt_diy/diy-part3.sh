@@ -13,16 +13,16 @@
 
 attempts=$1
 
-is_test=$2
+# is_test=$2
 
-if [ $is_test -eq 100 ]; then
-  if [ $attempts -eq 3 ]; then
-    echo "attempts = 3 is true";
-  else
-    echo "attempts = $attempts ,not eq 3";
-  fi
-  exit
-fi
+# if [ $is_test -eq 100 ]; then
+#   if [ $attempts -eq 3 ]; then
+#     echo "attempts = 3 is true";
+#   else
+#     echo "attempts = $attempts ,not eq 3";
+#   fi
+#   exit
+# fi
 
 set -e
 if [ $attempts -eq 3 ]; then
