@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bf2e082643|Hosted Weblate|Sun Jun 1 12:03:29 2025 +0200|Translated using Weblate (Portuguese)
-723de2a7f2|Dirk Brenken|Sun Jun 1 07:05:10 2025 +0200|Merge pull request #7746 from dwfreed/patch-1
-c71dbb61ca|Doug Freed|Wed Apr 23 16:43:14 2025 -0500|luci-base: remove bad Unicode on clone button
+55c93e60b4|Joseph Mory|Fri May 30 20:32:47 2025 +0800|luci-base: fix table option does not show in non-Bootstrap themes when it has depends
+d03f135529|Felix Fietkau|Mon Jun 2 10:24:14 2025 +0200|luci-mod-network: fix default for vlan_naming
 </details>

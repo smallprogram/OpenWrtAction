@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d195817|lwb1978|Mon Jun 2 23:58:28 2025 +0800|action: remove the erroneous `aarch64_comtex-a53_neon-vfpv4` arch
+</details>

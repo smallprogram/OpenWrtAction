@@ -1,0 +1,71 @@
+<details> <summary> <b>lede new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+74397af9b|coolsnowwolf|Mon Jun 2 23:58:10 2025 +0800|x86: add i915-firmware package by default
+4f66ecc3a|aiamadeus|Thu May 22 23:20:06 2025 +0800|kernel: fixes build with mac80211 6.6
+7224072e6|George Moussalem|Mon Oct 7 15:53:48 2024 +0400|mac80211: add support for QCN6122 wifi
+13dcba04e|Robert Marko|Sun Feb 4 13:24:29 2024 +0100|mac80211: update to version 6.6.15
+8a7860ca5|aiamadeus|Sat May 24 20:19:29 2025 +0800|kernel: netdevices: fix build for 6.12
+fc630cf25|Álvaro Fernández Rojas|Wed May 28 09:14:19 2025 +0200|generic: backport for mac80211 v6.14.5
+949d0bd77|coolsnowwolf|Wed Apr 16 23:09:40 2025 +0800|mediatek: add HUASIFEI WH3000 Pro support
+13eefbfa3|coolsnowwolf|Fri May 17 22:01:26 2024 +0800|qca-nss-clients: fix build for ipq50xx
+045b5eb8b|coolsnowwolf|Sat May 31 05:20:06 2025 +0800|mediatek: filogic: add support for HUASIFEI WH3000 PRO (aka Fudy Pro)
+423165d48|coolsnowwolf|Sat May 31 03:36:04 2025 +0800|generic: fix probe issues with RealTek RTL8221B PHYs with kernel 6.6
+bf229f567|coolsnowwolf|Sat May 31 02:53:42 2025 +0800|qca-nss-clients: fix build with qualcommax ipq50xx
+18236cb2b|coolsnowwolf|Sat May 31 02:20:16 2025 +0800|rockchip: fix build with kernel 6.12
+38b7954ea|coolsnowwolf|Sat May 31 01:59:11 2025 +0800|x86: add i915-firmware for kmod-drm-i915
+a12e98ee2|coolsnowwolf|Sat May 31 01:46:19 2025 +0800|mt76: replace strlcpy with strscpy
+25ddf03bf|coolsnowwolf|Fri May 30 23:30:30 2025 +0800|mvebu: sync linux 6.6 with upstream
+e8969a8fa|coolsnowwolf|Fri May 2 18:04:06 2025 +0800|generic: silence NAND UBI block warnings
+99d0ef6e9|coolsnowwolf|Sat May 17 22:01:26 2025 +0800|mac80211: fix build error on kernel 6.12
+221e694c1|coolsnowwolf|Fri May 30 18:06:52 2025 +0800|mac80211: Fix tracing backport with kernel 6.12
+9c3d2ef1b|coolsnowwolf|Fri May 30 17:38:51 2025 +0800|kernel: bump 6.12 to 6.12.31
+1e375505f|coolsnowwolf|Fri Feb 16 23:19:40 2024 +0800|mediatek: add support for HUASIFEI WS3006
+c2f6a5695|Daniel Golle|Thu May 8 17:56:37 2025 +0100|mediatek: add testing kernel 6.12 support
+684807843|Daniel Golle|Thu May 8 17:51:40 2025 +0100|mediatek: adapt BananaPi-R4 with upstream DT
+859dd3ddb|Daniel Golle|Thu May 8 03:01:07 2025 +0100|generic: backport MediaTek Ethernet PHY changes
+ea1897537|coolsnowwolf|Thu May 29 04:05:02 2025 +0800|mvebu: cortexa9: set DTS dir for 6.6
+00459042c|coolsnowwolf|Thu May 29 03:55:48 2025 +0800|mwlwifi: update to version 10.4.10-20231120
+a36f88e35|coolsnowwolf|Thu May 29 03:27:03 2025 +0800|simulated-driver: drop outdated package
+c740590f3|coolsnowwolf|Thu May 29 03:20:25 2025 +0800|mac80211: fix SBL state callback in MHI core in 6.x
+f319c5a32|coolsnowwolf|Thu May 29 02:59:57 2025 +0800|dnsmasq: bump release to 2.91
+c9d80213e|coolsnowwolf|Thu May 29 02:51:54 2025 +0800|mac80211: rtw88: fix compilation error with kernel 6.12
+8add87ed6|coolsnowwolf|Sat May 24 23:08:40 2025 +0800|package: qca-nss: add kernel 6.12 support
+97e79b09f|coolsnowwolf|Mon May 19 22:16:30 2025 +0800|qualcommax: refresh ipq5018 kernel config
+faa31ccbe|coolsnowwolf|Sat May 24 21:00:38 2025 +0800|qualcommax: add nss support to linux 6.12
+f6c1f4cb2|coolsnowwolf|Wed May 21 23:30:07 2025 +0800|qualcommax: add basic kernel 6.12 support
+7c1fe43bc|coolsnowwolf|Wed May 28 17:06:53 2025 +0800|feeds.conf.default: change luci version to openwrt-24.10
+9f11bc9d8|coolsnowwolf|Wed May 28 16:50:27 2025 +0800|mediatek: filogic: add support for HUASIFEI WS3006
+89bb622a4|coolsnowwolf|Wed May 28 14:41:26 2025 +0800|mediatek: add 256MB u-boot mod version for Cudy TR3000 v2 support
+e2600d932|coolsnowwolf|Wed May 28 14:27:44 2025 +0800|mt76: fix build error on 6.12 kernel
+cd7c4fd15|coolsnowwolf|Wed May 28 14:26:28 2025 +0800|mediatek: enable testing kernel 6.12
+9ac7c9dbf|Daniel Golle|Thu May 8 02:59:19 2025 +0100|generic: 6.12: fix patch adding EEE-support to mtk_eth_soc
+b776caf08|Daniel Golle|Thu May 8 02:57:33 2025 +0100|generic: net: phy: rtl8261n: fix build with Linux 6.12
+d926f4d75|Daniel Golle|Thu May 8 03:01:07 2025 +0100|generic: 6.12: backport MediaTek Ethernet PHY changes
+36a8ec8e8|coolsnowwolf|Wed May 28 12:52:23 2025 +0800|kmod-phy-realtek: fix build with linux 6.6
+5d024512e|Internet1235|Wed May 28 10:10:05 2025 +0800|kmod-ice: fix dependency on 6.12 (#13510)
+5f0b29e6b|coolsnowwolf|Sun May 18 23:20:15 2025 +0800|qualcommax: sync 6.6 with upstream code
+8a383a318|coolsnowwolf|Sun May 18 23:16:01 2025 +0800|qualcommax: sync upstream label changes
+6c60a311f|George Moussalem|Tue May 6 10:02:27 2025 +0400|spi-qpic-snand: sync patch from upstream
+c2486c96e|coolsnowwolf|Tue May 27 18:04:06 2025 +0800|generic: silence using UBI block devices instead warnings for 6.6
+68aeaffef|coolsnowwolf|Tue May 27 17:58:31 2025 +0800|qualcommax: ipq6018-ess: Add dp5-syn node
+ccbeeff25|coolsnowwolf|Tue May 27 17:55:15 2025 +0800|qualcommax: ipq8074-ess: move switch to ess-instance node
+d1f3b9a85|coolsnowwolf|Tue May 27 17:21:27 2025 +0800|qualcommax: default to kernel 6.6
+73a697f58|coolsnowwolf|Tue May 27 04:11:36 2025 +0800|qualcommax: ipq807x: alt method to fix aliyun ap8220 mac address
+d15f5b9ca|coolsnowwolf|Tue May 27 03:19:46 2025 +0800|qualcommax: ipq807x: fix cpu labels to lower-case build with kernel 6.12
+940b03781|coolsnowwolf|Tue May 27 02:02:42 2025 +0800|kmod-phy-realtek: fix missing symbol for linux 6.x
+a87372b08|coolsnowwolf|Mon May 26 22:34:17 2025 +0800|generic: add spinand W25N01GWZEIG support
+54e0bf3b1|coolsnowwolf|Wed May 21 23:16:40 2025 +0800|mac80211: add ath11k kernel 6.12 support
+98e811773|coolsnowwolf|Mon May 26 22:26:41 2025 +0800|qualcommax: add 6.12 as testing kernel
+33e95a793|coolsnowwolf|Sat May 3 23:15:34 2025 +0800|generic: sync kernel v6.12 with upstream
+18174f3cc|Mieczyslaw Nalewaj|Sun Dec 1 19:17:13 2024 +0100|kernel: fallback-sprom: create separate header files
+dc545b63c|coolsnowwolf|Mon May 26 21:49:21 2025 +0800|qca-nss-ecm: update for 6.12 compatibility
+045c267e9|coolsnowwolf|Mon May 26 20:45:04 2025 +0800|qualcommax: add nss support for linux 6.12
+b51f82d21|coolsnowwolf|Mon May 26 18:15:31 2025 +0800|qca-nss-drv: update for 6.12 compatibility
+39c1fd38b|coolsnowwolf|Mon May 26 17:04:46 2025 +0800|qca-ssdk: update for 6.12 compatibility
+ffb1a1916|coolsnowwolf|Mon May 26 16:40:57 2025 +0800|mac80211: add ath11k kernel 6.12 support
+cd5512c2b|coolsnowwolf|Mon May 26 04:22:51 2025 +0800|x86: use kernel 6.12 by default
+c3782626b|coolsnowwolf|Mon May 26 04:19:16 2025 +0800|kernel/qualcommax: Create kernel files for v6.12 (from v6.6)
+dc697e0bf|coolsnowwolf|Mon May 26 03:55:34 2025 +0800|generic: sync base with upstream kernel 6.12
+</details>

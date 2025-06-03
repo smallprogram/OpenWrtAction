@@ -2,18 +2,32 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a47f0830d|Jan Hák|Fri May 23 13:59:06 2025 +0200|liburcu: update to version 0.15.3
-f54850c3f|W. Michael Petullo|Fri May 30 21:13:57 2025 -0500|libsoup3: update to 3.6.5
-1bba5b93f|Wesley Gimenes|Sat May 31 17:17:19 2025 -0300|netbird: update to 0.45.2
-f05476f16|W. Michael Petullo|Sat May 31 07:42:38 2025 -0500|php8-pecl-krb5: update to 1.2.4
-2a4fa2091|W. Michael Petullo|Fri May 30 22:04:12 2025 -0500|libgpg-error: update to 1.55
-021c0ebba|W. Michael Petullo|Sat May 31 08:16:44 2025 -0500|vala: update to 0.56.18
-f80126e87|W. Michael Petullo|Sat May 31 07:39:31 2025 -0500|quota: update to 4.10
-b76849573|W. Michael Petullo|Fri May 30 21:16:35 2025 -0500|openldap: update to 2.6.10
-b4cfc18db|W. Michael Petullo|Fri May 30 08:42:52 2025 -0500|fuse-overlayfs: update to 1.15
-b70fc8ebf|W. Michael Petullo|Fri May 30 22:01:42 2025 -0500|libexif: update 0.6.25
-1c28a6a91|W. Michael Petullo|Fri May 30 21:12:36 2025 -0500|hwloc: update to 2.12.1
-c2cfb0585|W. Michael Petullo|Fri May 30 22:02:53 2025 -0500|libgcrypt: update to 1.11.1
-fedc2f8f9|W. Michael Petullo|Sat May 31 08:04:55 2025 -0500|vips: update to 8.16.1
-d2a6cbf10|Khachatryan Karen|Tue May 27 21:38:09 2025 +0300|antiblock: Update to 2.1.2r2
+ea0ccd5d1|W. Michael Petullo|Thu May 29 22:42:35 2025 -0500|bogofilter: update to 1.3.0.rc1
+c623dbf30|Josef Schlehofer|Mon Jun 2 13:17:12 2025 +0200|github: Use Markdown and slight changes to PR template
+fa6c3dbe3|Jens Wagner|Mon Jun 2 00:21:33 2025 +0200|perl-io-socket-ssl: Added description
+594657b14|Jens Wagner|Mon Jun 2 00:19:41 2025 +0200|perl-io-async: Added description
+79725e5c6|Jens Wagner|Tue May 27 13:11:56 2025 +0200|perl-xs-parse-sublike: Shorter TITLE in Makefile
+d09299c2b|Jens Wagner|Tue May 27 13:11:39 2025 +0200|perl-xs-parse-keyword: Shorter TITLE in Makefile
+ec90c9fe9|Jens Wagner|Tue May 27 13:10:55 2025 +0200|perl-struct-dumb: Shorter TITLE in Makefile
+e168d9fdf|Jens Wagner|Tue May 27 13:10:29 2025 +0200|perl-net-ssleay: Removed PKG_BUILD_DEPENDS
+3ea60604f|Jens Wagner|Tue May 27 13:09:11 2025 +0200|perl-future: Shorter TITLE in Makefile
+3a2ce3480|Jens Wagner|Tue May 27 13:08:15 2025 +0200|perl-future-asyncawait: Removed PKG_BUILD_DEPENDS
+3dd505239|Jens Wagner|Tue May 27 13:07:41 2025 +0200|perl-file-sharedir: Shorter TITLE in Makefile
+bf5002488|Jens Wagner|Tue May 27 13:05:36 2025 +0200|perl-class-inspector: Shorter TITLE in Makefile
+3a53cf82b|W. Michael Petullo|Fri May 30 21:34:17 2025 -0500|luaexpat: update to 1.5.2
+097a97dae|John Audia|Wed Feb 19 12:51:23 2025 -0500|snort3: update to 3.8.1.0
+70f8dd8aa|Jens Wagner|Mon Jun 2 11:44:35 2025 +0200|perl-net-async-http: Perl Module Net::Async::HTTP
+c30cec814|Jens Wagner|Mon Jun 2 11:42:49 2025 +0200|perl-io-async-ssl: Perl Module IO::Async::SSL
+c4136bbc1|Jens Wagner|Mon Jun 2 11:40:17 2025 +0200|perl-net-dns-sec: Perl Module Net::DNS::SEC
+f9aada2b2|Jens Wagner|Mon Jun 2 11:38:03 2025 +0200|perl-metrics-any: Perl Module Metrics::Any
+bd7aa2ac4|Josef Schlehofer|Mon Jun 2 13:24:39 2025 +0200|snort3: drop upstreamed patch
+1b6d5d9f2|John Audia|Sun Jun 1 13:59:24 2025 -0400|ncdu: bump to v1.22
+9a273c3e7|Josef Schlehofer|Fri May 24 00:39:30 2024 +0200|github: Improve Pull Request template
+badcbe040|John Audia|Sun Jun 1 11:15:54 2025 -0400|samba4: fix building with GCC 15.1
+ac839af47|W. Michael Petullo|Sat May 31 07:44:02 2025 -0500|python-networkx: update to 3.5
+c2fdbe2d1|W. Michael Petullo|Fri May 30 10:24:35 2025 -0500|libtheora: update to 1.2.0
+defe99eef|John Audia|Sun Jun 1 08:25:09 2025 -0400|libtirpc: bump to 1.3.6 and fix for GCC 15.1
+ff04ea8b4|John Audia|Sun Jun 1 08:44:16 2025 -0400|tcp_wrappers: fix building with GCC 15.1
+dab90ec21|Ariel Xiong|Sun May 25 22:19:54 2025 +0800|bash: add CFLAGS_FOR_BUILD="-std=gnu17" flag
+ca2b5ea51|Ariel Xiong|Sun May 25 22:18:26 2025 +0800|bash: bump to 5.2.37
 </details>

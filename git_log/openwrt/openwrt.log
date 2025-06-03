@@ -2,7 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dbffeebea4|Álvaro Fernández Rojas|Tue May 24 11:14:21 2022 +0200|bmips: huawei,hg556a-b: enable external switch
-a3cd610b28|Zoltan HERPAI|Sun Jun 1 13:52:26 2025 +0000|pistachio: drop 6.6 support
-56b9ceef64|Zoltan HERPAI|Sun Jun 1 12:04:18 2025 +0000|pistachio: use kernel 6.12 by default
+e50c8f959d|Linus Walleij|Tue May 27 21:36:10 2025 +0200|ixp4xx: Switch to kernel v6.12
+480268596f|George Moussalem|Fri May 30 09:19:29 2025 +0400|qualcommax: ipq50xx: fix uniphy soft reset issue
+c3b1c780ad|George Moussalem|Sat May 31 14:41:44 2025 +0400|qca-ssdk: update to Git HEAD (2025-05-30)
+273bd3463c|George Moussalem|Sat May 10 15:33:12 2025 +0400|qualcommax: ipq50xx: prepare for UNIPHY reset fix
+e53592d0f6|George Moussalem|Fri May 30 12:00:20 2025 +0400|qualcommax: ipq50xx: remove named clock references for GE PHY
+13bd352c37|George Moussalem|Sat May 31 14:27:24 2025 +0400|qca-ssdk: update to Git HEAD (2025-05-30)
+da2c83327f|George Moussalem|Wed May 28 09:24:49 2025 +0400|qualcommax: ipq50xx: update patches for IPQ5018 GE PHY
+050a308820|Shiji Yang|Thu May 29 19:32:52 2025 +0800|gemini: switch default NTFS driver package to kmod-fs-ntfs3
+57c104ef7f|Alexandru Gagniuc|Sat May 31 10:56:28 2025 -0500|qualcommbe: drop kernel v6.6 support
+c7e1fc54ee|Alexandru Gagniuc|Sat May 31 10:37:10 2025 -0500|qualcommbe: use kernel 6.12 by default
 </details>
