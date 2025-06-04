@@ -1,7 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-55c93e60b4|Joseph Mory|Fri May 30 20:32:47 2025 +0800|luci-base: fix table option does not show in non-Bootstrap themes when it has depends
-d03f135529|Felix Fietkau|Mon Jun 2 10:24:14 2025 +0200|luci-mod-network: fix default for vlan_naming
-</details>

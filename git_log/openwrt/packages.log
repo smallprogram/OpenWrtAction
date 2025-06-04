@@ -2,32 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ea0ccd5d1|W. Michael Petullo|Thu May 29 22:42:35 2025 -0500|bogofilter: update to 1.3.0.rc1
-c623dbf30|Josef Schlehofer|Mon Jun 2 13:17:12 2025 +0200|github: Use Markdown and slight changes to PR template
-fa6c3dbe3|Jens Wagner|Mon Jun 2 00:21:33 2025 +0200|perl-io-socket-ssl: Added description
-594657b14|Jens Wagner|Mon Jun 2 00:19:41 2025 +0200|perl-io-async: Added description
-79725e5c6|Jens Wagner|Tue May 27 13:11:56 2025 +0200|perl-xs-parse-sublike: Shorter TITLE in Makefile
-d09299c2b|Jens Wagner|Tue May 27 13:11:39 2025 +0200|perl-xs-parse-keyword: Shorter TITLE in Makefile
-ec90c9fe9|Jens Wagner|Tue May 27 13:10:55 2025 +0200|perl-struct-dumb: Shorter TITLE in Makefile
-e168d9fdf|Jens Wagner|Tue May 27 13:10:29 2025 +0200|perl-net-ssleay: Removed PKG_BUILD_DEPENDS
-3ea60604f|Jens Wagner|Tue May 27 13:09:11 2025 +0200|perl-future: Shorter TITLE in Makefile
-3a2ce3480|Jens Wagner|Tue May 27 13:08:15 2025 +0200|perl-future-asyncawait: Removed PKG_BUILD_DEPENDS
-3dd505239|Jens Wagner|Tue May 27 13:07:41 2025 +0200|perl-file-sharedir: Shorter TITLE in Makefile
-bf5002488|Jens Wagner|Tue May 27 13:05:36 2025 +0200|perl-class-inspector: Shorter TITLE in Makefile
-3a53cf82b|W. Michael Petullo|Fri May 30 21:34:17 2025 -0500|luaexpat: update to 1.5.2
-097a97dae|John Audia|Wed Feb 19 12:51:23 2025 -0500|snort3: update to 3.8.1.0
-70f8dd8aa|Jens Wagner|Mon Jun 2 11:44:35 2025 +0200|perl-net-async-http: Perl Module Net::Async::HTTP
-c30cec814|Jens Wagner|Mon Jun 2 11:42:49 2025 +0200|perl-io-async-ssl: Perl Module IO::Async::SSL
-c4136bbc1|Jens Wagner|Mon Jun 2 11:40:17 2025 +0200|perl-net-dns-sec: Perl Module Net::DNS::SEC
-f9aada2b2|Jens Wagner|Mon Jun 2 11:38:03 2025 +0200|perl-metrics-any: Perl Module Metrics::Any
-bd7aa2ac4|Josef Schlehofer|Mon Jun 2 13:24:39 2025 +0200|snort3: drop upstreamed patch
-1b6d5d9f2|John Audia|Sun Jun 1 13:59:24 2025 -0400|ncdu: bump to v1.22
-9a273c3e7|Josef Schlehofer|Fri May 24 00:39:30 2024 +0200|github: Improve Pull Request template
-badcbe040|John Audia|Sun Jun 1 11:15:54 2025 -0400|samba4: fix building with GCC 15.1
-ac839af47|W. Michael Petullo|Sat May 31 07:44:02 2025 -0500|python-networkx: update to 3.5
-c2fdbe2d1|W. Michael Petullo|Fri May 30 10:24:35 2025 -0500|libtheora: update to 1.2.0
-defe99eef|John Audia|Sun Jun 1 08:25:09 2025 -0400|libtirpc: bump to 1.3.6 and fix for GCC 15.1
-ff04ea8b4|John Audia|Sun Jun 1 08:44:16 2025 -0400|tcp_wrappers: fix building with GCC 15.1
-dab90ec21|Ariel Xiong|Sun May 25 22:19:54 2025 +0800|bash: add CFLAGS_FOR_BUILD="-std=gnu17" flag
-ca2b5ea51|Ariel Xiong|Sun May 25 22:18:26 2025 +0800|bash: bump to 5.2.37
+38b89da40|Wesley Gimenes|Tue Jun 3 03:19:29 2025 -0300|github: Add fields to help users in the bug report
+c323222c6|Wesley Gimenes|Tue Jun 3 03:08:08 2025 -0300|github: require user to check all bug report fields
+1f189894d|Josef Schlehofer|Mon Jun 2 12:03:09 2025 +0200|github: Creating issue: Add external links
+67dc75f94|Josef Schlehofer|Mon Jun 2 12:38:18 2025 +0200|github: Use GitHub Issue Forms with yaml
+e36b727d9|Xiao Yu|Wed May 21 23:48:44 2025 +0000|collectd: Add `write_prometheus` uci config
+db53e3b16|W. Michael Petullo|Sat May 31 08:15:02 2025 -0500|scapy: update to 2.6.1
+05957c2de|W. Michael Petullo|Fri May 30 21:26:24 2025 -0500|nfdump: update to 1.7.6
+73821b26e|Stan Grishin|Thu May 29 17:57:30 2025 +0000|adblock-fast: update to 1.1.3-13
 </details>
