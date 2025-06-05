@@ -440,6 +440,25 @@ function Func_CleanLogFolder() {
 
 }
 
+function Func_SyncGitSource(){
+    echo
+    Func_LogMessage "开始同步源码...." "Start to synchronize source code..."
+    sleep 2s
+
+    cd /home/${user_name}
+    if [ ! -d "/home/${user_name}/${openwrt_dir}" ]; then
+        git clone -b ${openwrt_branch} --single-branch $openwrt_source  ${openwrt_dir}
+        cd /home/${user_name}
+        is_first_compile=1
+    else
+        cd ${openwrt_dir}
+        git fetch origin
+        git reset --hard origin/${openwrt_branch}
+        cd /home/${user_name}
+        is_first_compile=0
+    fi
+}
+
 #主函数
 function Func_Main() {
     # GitSetting
@@ -523,22 +542,7 @@ function Func_Main() {
         config_name=$newConfigName
     fi
 
-    echo
-    Func_LogMessage "开始同步源码...." "Start to synchronize source code..."
-    sleep 2s
-
-    cd /home/${user_name}
-    if [ ! -d "/home/${user_name}/${openwrt_dir}" ]; then
-        git clone -b ${openwrt_branch} --single-branch $openwrt_source  ${openwrt_dir}
-        cd /home/${user_name}
-        is_first_compile=1
-    else
-        cd ${openwrt_dir}
-        git fetch origin
-        git reset --hard origin/${openwrt_branch}
-        cd /home/${user_name}
-        is_first_compile=0
-    fi
+    Func_SyncGitSource
 
     # if [ ! -f "/home/${user_name}/${openwrt_dir}/.config" ]; then
     #     is_first_compile=1
@@ -707,6 +711,7 @@ function Func_Main() {
         done
 
         if [[ $num_continue == 1 ]]; then
+            Func_SyncGitSource
             Func_Compile_Firmware
         else
             exit
