@@ -625,6 +625,13 @@ function Func_Main() {
         mkdir -p /home/${user_name}/${log_folder_name}
         mkdir /home/${user_name}/${log_folder_name}/${folder_name}
 
+        echo -e $begin_date >/home/${user_name}/${log_folder_name}/${folder_name}/Func_Main6_Compile_Time-git_log.log
+
+        Func_LogSuccess "编译日志文件夹创建成功" "The compilation log folder was created successfully"
+        sleep 1s
+        Func_LogMessage "开始编译！！" "Start compiling! !"
+        sleep 1s
+
         Func_DIY1_Script
 
         Func_LogMessage "是否清理feeds，如果不输入任何值默认否，输入任意值清理feeds" "Whether to clean up feeds. If no value is entered, the default is "no". If any value is entered, the feeds are cleaned up."
