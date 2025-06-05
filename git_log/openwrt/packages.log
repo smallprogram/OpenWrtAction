@@ -2,12 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-38b89da40|Wesley Gimenes|Tue Jun 3 03:19:29 2025 -0300|github: Add fields to help users in the bug report
-c323222c6|Wesley Gimenes|Tue Jun 3 03:08:08 2025 -0300|github: require user to check all bug report fields
-1f189894d|Josef Schlehofer|Mon Jun 2 12:03:09 2025 +0200|github: Creating issue: Add external links
-67dc75f94|Josef Schlehofer|Mon Jun 2 12:38:18 2025 +0200|github: Use GitHub Issue Forms with yaml
-e36b727d9|Xiao Yu|Wed May 21 23:48:44 2025 +0000|collectd: Add `write_prometheus` uci config
-db53e3b16|W. Michael Petullo|Sat May 31 08:15:02 2025 -0500|scapy: update to 2.6.1
-05957c2de|W. Michael Petullo|Fri May 30 21:26:24 2025 -0500|nfdump: update to 1.7.6
-73821b26e|Stan Grishin|Thu May 29 17:57:30 2025 +0000|adblock-fast: update to 1.1.3-13
+08b4fcd5e|Nikolay Manev|Fri May 23 15:20:15 2025 +0300|fping: update to version 5.3
+150d88585|Liangbin Lian|Wed Jun 4 17:22:03 2025 +0800|ddns-scripts: fix parsing of parameters for cloudflare.com
+f71550540|Wesley Gimenes|Tue Jun 3 00:03:08 2025 -0300|netbird: update to 0.45.3
 </details>

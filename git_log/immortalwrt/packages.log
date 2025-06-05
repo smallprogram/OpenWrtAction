@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fb12fedac|Tianling Shen|Tue Jun 3 22:15:35 2025 +0800|mwol: update PKG_MIRROR_HASH
+d7424652f|Rye Sears|Wed Jun 4 19:18:38 2025 +0800|quectel-qmi-wwan: fix build error "missing-prototypes"
+c8997f186|Rye Sears|Wed Jun 4 14:48:53 2025 +0800|fibocom-qmi-wwan: fix build error "missing-prototypes"
 </details>

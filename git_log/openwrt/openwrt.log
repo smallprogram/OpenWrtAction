@@ -2,13 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-53b87d660b|Tianling Shen|Sun Jun 1 16:01:52 2025 +0800|uboot-mediatek: update patch for Cudy TR3000-v1 and SNR SNR-CPE-AX2
-8d30e07180|Matthew Bilker|Wed May 14 00:12:53 2025 -0400|mediatek: filogic: fix for new GL.iNet GL-MT2500/GL-MT2500A hardware revision
-b6b24a5de9|Linus Walleij|Tue Jun 3 01:19:27 2025 +0200|gemini: Move back to using statically compiled PHYs
-822bceb1d1|Stefan Kalscheuer|Sat May 31 17:07:40 2025 +0200|mwlwifi: add pending patch to fix compilation with kernel 6.12
-4bd7daced1|Shengyu Qu|Thu May 15 11:38:46 2025 +0800|odhcp6c: Conditionally request S46 OROs
-9c405cb725|Shengyu Qu|Thu May 15 13:04:41 2025 +0800|odhcp6c: update to Git HEAD (2025-02-06)
-cc5421128e|Stephen Howell|Sat May 17 12:06:10 2025 +0100|realtek: extend simple thermal driver to support rtl839x
-079db0ab81|Rosen Penev|Fri Nov 15 15:22:42 2024 -0800|ramips: mt7621: use regulators for USB GPIO
-9ccabb3f42|Álvaro Fernández Rojas|Mon Jun 2 17:45:44 2025 +0200|bmips: huawei,hg556a-b: configure LAN LEDs
+1304d8b064|Mathew McBride|Tue Mar 18 15:42:13 2025 +1100|armsr: enable 6.12 as a testing kernel version
+fb6a28815e|Mathew McBride|Tue Jun 3 13:23:57 2025 +1000|config: remove kernel version restriction for ARM_PMUV3
+08c4948ac6|Mathew McBride|Tue Jun 3 13:33:51 2025 +1000|armsr: 6.12: add new KConfigs and refresh
+46cf1dacd3|Mathew McBride|Mon May 26 12:24:48 2025 +1000|armsr: patches: refresh printk console patch for 6.12
+1218717c05|Mathew McBride|Mon May 26 12:19:48 2025 +1000|kernel/armsr: Restore kernel files for v6.6
+386f1a1a1e|Mathew McBride|Mon May 26 12:19:48 2025 +1000|kernel/armsr: Create kernel files for v6.12 (from v6.6)
+ce9c7b05a4|Shiji Yang|Wed Jun 4 20:23:03 2025 +0800|tools/7z: update to 24.09
+c374deca7e|John Audia|Wed Jun 4 09:22:04 2025 -0400|wireguard-tools: update to v1.0.20250521
+1f758ece92|Shiji Yang|Wed Jun 4 22:20:38 2025 +0800|tools/ccache: update to 4.11.3
+c78765213e|Markus Stockhausen|Wed Jun 4 03:19:40 2025 -0400|kernel: mtdsplit_uimage: return 0 if not fatal
 </details>

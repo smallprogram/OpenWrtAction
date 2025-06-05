@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dd7b87ae9|coolsnowwolf|Mon Jun 2 20:17:38 2025 +0800|kernel: bump 6.12 to 6.12.31
-8ba3cb910|Mieczyslaw Nalewaj|Sun Nov 17 08:40:40 2024 +0100|kernel: disable drm-i915 module for x86
+a12f94c7f|coolsnowwolf|Wed Jun 4 12:26:47 2025 +0800|dnsmasq: bump release to 2.91
 </details>
