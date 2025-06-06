@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-08b4fcd5e|Nikolay Manev|Fri May 23 15:20:15 2025 +0300|fping: update to version 5.3
-150d88585|Liangbin Lian|Wed Jun 4 17:22:03 2025 +0800|ddns-scripts: fix parsing of parameters for cloudflare.com
-f71550540|Wesley Gimenes|Tue Jun 3 00:03:08 2025 -0300|netbird: update to 0.45.3
+bb9dca28b|Vladimir Ermakov|Sat Mar 22 15:49:22 2025 +0100|go2rtc: update to 1.9.9
+f7d2ebfe3|Jeffery To|Thu Jun 5 21:37:53 2025 +0800|golang: Fix host build compatibility with GCC 15
 </details>
