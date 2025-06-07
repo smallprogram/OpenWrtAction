@@ -2,18 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8b24289a52|Sergey Shlukov|Tue Jun 3 12:08:46 2025 +0000|mediatek: add support for TP-Link Archer AX80v1(US/RU/CA)
-92ad1ea245|Sergey Shlukov|Mon Feb 17 23:12:50 2025 +0000|kernel: add kmod-leds-lp5523
-a9972ae53e|Shiji Yang|Wed Jun 4 18:16:12 2025 +0800|build: image: support specifying mksquashfs4 parallel threads
-dbfe3551d9|Shiji Yang|Wed Jun 4 18:15:17 2025 +0800|tools/squashfs4: update to 4.7.0
-54febbc55b|Roland Reinl|Sun Apr 27 13:43:40 2025 +0200|mediatek: Create common DTSI for WR3000H and WR3000S
-ebfd69a3e3|Shiji Yang|Thu Jun 5 07:29:20 2025 +0800|kernel: bump 6.12 to 6.12.32
-ee129da777|Zoltan HERPAI|Sun Jun 1 12:12:40 2025 +0000|starfive: add 6.12 as testing kernel
-f97609a10f|Zoltan HERPAI|Sun Jun 1 21:30:42 2025 +0000|starfive: jh7110: update bootscript to use addresses in bootloader
-8f0f02d297|Zoltan HERPAI|Sun Jun 1 12:08:08 2025 +0000|starfive: 6.12: refresh patches and drop upstreamed ones
-91ee157b9d|Zoltan HERPAI|Thu May 29 20:34:47 2025 +0000|kernel/starfive: Restore kernel files for v6.6
-ec54e841b9|Zoltan HERPAI|Thu May 29 20:34:47 2025 +0000|kernel/starfive: Create kernel files for v6.12 (from v6.6)
-0ccc336c56|Rosen Penev|Wed Jun 4 14:57:11 2025 -0700|mac80211: ath9k: avoid a double reset
-6f607c69dc|Rosen Penev|Wed Jun 4 14:54:21 2025 -0700|mac80211: ath9k: fix refclock typo
-df9ffedb75|Robert Marko|Mon Jun 2 18:30:53 2025 +0200|archs38: drop target
+79f097faae|Álvaro Fernández Rojas|Thu Jun 5 20:37:49 2025 +0200|bcm27xx-gpu-fw: update to v1.20250430
+a2eaadeed2|John Audia|Thu Jun 5 14:36:32 2025 -0400|ipq806x: config-6.6: add new option
+45e53284e6|John Audia|Wed Jun 4 13:18:26 2025 -0400|ipq40xx: config-6.6: add new option
+a878dd24e7|John Audia|Wed Jun 4 10:42:35 2025 -0400|kernel: bump 6.6 to 6.6.93
+1f7304a0cc|Zheng Zhang|Thu Jun 5 17:13:26 2025 +0800|ramips: mt7621: fix file permissions in source tree
+c947e37e61|Shiji Yang|Fri Jun 6 06:36:16 2025 +0800|starfive: fix 6.12 kernel patch conflict
 </details>

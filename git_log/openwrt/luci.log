@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6f735a8211|Hosted Weblate|Thu Jun 5 02:38:50 2025 +0200|Translated using Weblate (Lithuanian)
+8bab10f820|Paul Donald|Fri Jun 6 13:38:35 2025 +0200|luci-mod-network: wireless.js fixes follow-up to cdce600
+b39bfe7522|Dirk Brenken|Fri Jun 6 07:03:36 2025 +0200|luci-app-adblock: optimizations & fixes
 </details>

@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bb9dca28b|Vladimir Ermakov|Sat Mar 22 15:49:22 2025 +0100|go2rtc: update to 1.9.9
-f7d2ebfe3|Jeffery To|Thu Jun 5 21:37:53 2025 +0800|golang: Fix host build compatibility with GCC 15
+12a1ede20|W. Michael Petullo|Fri Jun 6 08:58:44 2025 -0500|bogofilter: replace no-docs patch with backport of upstream commit
+bfb96a859|Álvaro Fernández Rojas|Thu Jun 5 20:24:44 2025 +0200|bcm27xx-eeprom: update to v2025-05-08-2712
 </details>

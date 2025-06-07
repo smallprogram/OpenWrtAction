@@ -2,12 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3d1de3a40|coolsnowwolf|Thu Jun 5 14:32:58 2025 +0800|rockchip: add support for Ariaboard Photonicat 2 (RK3576)
-eef271a97|Mantas Pucka|Tue Apr 1 15:04:35 2025 +0300|mac80211: ath12k: fix wideband operation on QCN9274
-90773b94c|coolsnowwolf|Thu Jun 5 14:09:06 2025 +0800|mac80211: add ath12k PCI support
-ea83216de|coolsnowwolf|Thu Jun 5 13:42:45 2025 +0800|kernel: bump all to latest HEAD
-c2d6b1cc6|coolsnowwolf|Thu Jun 5 13:23:39 2025 +0800|ramips: mt7621: using mt76 instead of mtwifi
-ec104e953|Free Here|Thu Jun 5 13:18:23 2025 +0800|ramips: add support for FCJ G-AX1800-F (#13535)
-9b78d2969|coolsnowwolf|Thu Jun 5 13:12:24 2025 +0800|kernel: bump 5.10 to 5.10.238
-0632c2773|coolsnowwolf|Thu Jun 5 13:07:22 2025 +0800|generic: net: skb: introduce kfree_skb_reason() for kernel 5.10
+7da7a4543|coolsnowwolf|Fri Jun 6 23:10:02 2025 +0800|rockchip: improve support for rk3576
+51d898d4d|Miles Poupart|Fri Jun 6 16:52:10 2025 +0800|mac80211: fix rtw89 compile error (#13542)
 </details>
