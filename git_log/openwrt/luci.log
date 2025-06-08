@@ -2,6 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8bab10f820|Paul Donald|Fri Jun 6 13:38:35 2025 +0200|luci-mod-network: wireless.js fixes follow-up to cdce600
-b39bfe7522|Dirk Brenken|Fri Jun 6 07:03:36 2025 +0200|luci-app-adblock: optimizations & fixes
+3d74ba9ba8|Hosted Weblate|Sat Jun 7 00:00:22 2025 +0200|Added translation using Weblate (Portuguese)
+06ee40a21e|Hannu Nyman|Sat Jun 7 18:47:10 2025 +0300|treewide: Sync translations
+b98b525e16|Eric Fahlgren|Thu May 29 08:51:14 2025 -0700|luci-app-attendedsysupgrade: avoid redirects, handle redirect errors
+e6b26d1e07|Guoxin Pu|Thu Jun 5 18:40:00 2025 +0800|luci-app-ddns: no implicit interface when ip_source=interface
+cf1e61f10d|Paul Donald|Sat Jun 7 16:05:56 2025 +0200|luci-mod-system: Add repo key management
 </details>

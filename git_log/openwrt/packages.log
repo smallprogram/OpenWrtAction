@@ -2,6 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-12a1ede20|W. Michael Petullo|Fri Jun 6 08:58:44 2025 -0500|bogofilter: replace no-docs patch with backport of upstream commit
-bfb96a859|Álvaro Fernández Rojas|Thu Jun 5 20:24:44 2025 +0200|bcm27xx-eeprom: update to v2025-05-08-2712
+023b7bf21|Philip Prindeville|Sat Jun 7 12:16:34 2025 -0600|openssh: wrong permissions on /etc/ssh
+5c7ac5c46|Oleg Derevenetz|Mon Jun 2 21:17:53 2025 +0300|bwping: update to 2.6
+ea07162ee|Marius Dinu|Wed Jun 4 16:02:46 2025 +0300|tvheadend: cut subnet from lan IP reported by uci, fix bug #26681
+df98d72e4|Marius Dinu|Wed Jun 4 16:42:53 2025 +0300|tvheadend: update to git master 2025-06-04
+d40b6c9c1|John Audia|Fri Jun 6 16:42:32 2025 -0400|coreutils: bump to 9.7
+d77931df5|John Audia|Fri Jun 6 19:31:54 2025 -0400|libarchive: bump to 3.8.1
+04008a460|John Audia|Wed Jun 4 11:37:06 2025 -0400|procps-ng: bump to 4.0.5
 </details>

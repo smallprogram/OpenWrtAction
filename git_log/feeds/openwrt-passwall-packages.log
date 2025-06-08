@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9a6878b|binge8|Fri Jun 6 16:10:24 2025 +0800|naiveproxy: upgraded to v137.0.7151.44-r2
+6b9b9ed|github-actions[bot]|Sat Jun 7 22:45:36 2025 +0800|xray-core: update to 25.6.7 (#451)
+6dedf1f|github-actions[bot]|Sat Jun 7 22:45:21 2025 +0800|v2ray-geosite: update to 20250605152911 (#452)
+654155f|github-actions[bot]|Sat Jun 7 22:45:09 2025 +0800|v2ray-geoip: update to 202506050146 (#454)
 </details>

@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7da7a4543|coolsnowwolf|Fri Jun 6 23:10:02 2025 +0800|rockchip: improve support for rk3576
-51d898d4d|Miles Poupart|Fri Jun 6 16:52:10 2025 +0800|mac80211: fix rtw89 compile error (#13542)
+6a15c0601|Zoltan HERPAI|Sat May 3 19:58:45 2025 +0000|sunxi: add 6.12 as testing kernel
 </details>
