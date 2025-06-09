@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6b9b9ed|github-actions[bot]|Sat Jun 7 22:45:36 2025 +0800|xray-core: update to 25.6.7 (#451)
-6dedf1f|github-actions[bot]|Sat Jun 7 22:45:21 2025 +0800|v2ray-geosite: update to 20250605152911 (#452)
-654155f|github-actions[bot]|Sat Jun 7 22:45:09 2025 +0800|v2ray-geoip: update to 202506050146 (#454)
+9dd5068|github-actions[bot]|Sun Jun 8 22:36:04 2025 +0800|xray-core: update to 25.6.8 (#457)
+673bb1e|github-actions[bot]|Sun Jun 8 22:35:44 2025 +0800|v2ray-geosite: update to 20250608120644 (#458)
+e656847|github-actions[bot]|Sun Jun 8 15:13:31 2025 +0800|hysteria: update to 2.6.2 (#455)
 </details>

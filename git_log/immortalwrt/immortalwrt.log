@@ -1,0 +1,28 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+2ab15ff3e3|Tianling Shen|Sun Jun 8 16:11:52 2025 +0800|Merge Official Source
+5ab72cfc40|Álvaro Fernández Rojas|Sat Jun 7 12:01:54 2025 +0200|bmips: bcm6358: add support for Huawei HG556a ver A
+975f4de1c8|Álvaro Fernández Rojas|Sat Jun 7 21:13:23 2025 +0200|bmips: fix LAN LEDs configuration
+49843b31bc|Andreas Gnau|Fri May 30 17:47:57 2025 +0200|uboot-mk: Enable specifying defconfig fragments
+b6a07dd091|Sander van Deijck|Sat Feb 15 23:06:08 2025 +0100|ramips: mt7621: add support for Arcadyan WE410443
+afdf88b9a1|Shiji Yang|Tue May 20 07:50:56 2025 +0800|ramips: dts: adjust the power regulators of MMC controller
+a617ab6639|Shiji Yang|Tue May 20 07:50:56 2025 +0800|ramips: dts: mt7621: reuse the default USB dummy regulators
+548d993a04|Shiji Yang|Tue May 20 07:50:56 2025 +0800|ramips: dts: mt7621: remove redundant USB regulators
+51b77a3298|Shiji Yang|Tue May 20 07:50:56 2025 +0800|ramips: dts: mt7621: add the missing XHCI power regulators
+300335f1ff|Roland Reinl|Fri Apr 25 21:33:47 2025 +0200|mediatek: filogic: add support for Cudy WR3000E v1
+b0c8780604|Álvaro Fernández Rojas|Tue Jun 3 19:57:15 2025 +0200|bmips: add RFC v2 bcm5325 patches
+2f741ab8b1|Jan Pazdziora|Fri Jun 6 19:13:29 2025 +0200|prereq-build: fix typo on the IPC::Cmd module message
+7d617804cf|Álvaro Fernández Rojas|Sat Jun 7 13:18:11 2025 +0200|bmips: bcm6358: revert use wan ports as standalone ports
+168de5cafe|Benjamin Berg|Wed Jun 4 21:00:03 2025 +0200|wifi-scripts: add missing entries for mesh_nolearn
+15c2ca0a83|Robert Marko|Sat Jun 7 11:53:48 2025 +0200|netifd: update to Git HEAD (2025-05-23)
+bb17f5756a|Mantas Pucka|Mon Jun 2 11:14:10 2025 +0300|wifi-scripts: fix calculation for eht_oper_centr_freq_seg0_idx
+15430a1348|Jonas Gorski|Wed Jun 4 10:32:29 2025 +0200|bmips: use wan ports as standalone ports
+1a97278ee1|Álvaro Fernández Rojas|Wed Jun 4 09:30:34 2025 +0200|generic: 6.12: backport b53 RGMII port patches
+c70e987f05|Tim Harvey|Fri May 30 09:29:19 2025 -0700|imx: add 6.12 kernel as testing
+d6bd09f7cc|Tim Harvey|Wed Jun 4 10:01:53 2025 -0700|kernel: modules: video: fix video-coda for 6.12
+b0d2b33e3c|Tim Harvey|Fri Jun 6 09:04:39 2025 -0700|imx: 6-12: refresh patches and kernel configs
+a8feb51e71|Tim Harvey|Thu Jun 5 08:16:57 2025 -0700|kernel/imx: Restore kernel files for v6.6
+a882f0fc60|Tim Harvey|Thu Jun 5 08:16:57 2025 -0700|kernel/imx: Create kernel files for v6.12 (from v6.6)
+</details>

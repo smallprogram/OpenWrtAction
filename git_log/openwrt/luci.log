@@ -2,9 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3d74ba9ba8|Hosted Weblate|Sat Jun 7 00:00:22 2025 +0200|Added translation using Weblate (Portuguese)
-06ee40a21e|Hannu Nyman|Sat Jun 7 18:47:10 2025 +0300|treewide: Sync translations
-b98b525e16|Eric Fahlgren|Thu May 29 08:51:14 2025 -0700|luci-app-attendedsysupgrade: avoid redirects, handle redirect errors
-e6b26d1e07|Guoxin Pu|Thu Jun 5 18:40:00 2025 +0800|luci-app-ddns: no implicit interface when ip_source=interface
-cf1e61f10d|Paul Donald|Sat Jun 7 16:05:56 2025 +0200|luci-mod-system: Add repo key management
+1be1deb9ec|Paul Donald|Sun Jun 8 22:59:41 2025 +0200|luci-theme-*: layout improvements
+f1fefe958c|Paul Donald|Sun Apr 20 15:35:12 2025 +0200|luci-theme-*: layout improvements
+76fa3036a2|Paul Donald|Wed Apr 23 21:21:29 2025 +0200|luci-theme-*: wrap span tags, fixes badge text
+65bdfc61db|Paul Donald|Sun Jun 8 17:24:50 2025 +0200|luci-mod-system: repo key management
+1896723055|Yanase Yuki|Tue Jun 3 19:07:30 2025 +0900|crowdsec-firewall-bouncer: fix json file
+98e71acd06|Yanase Yuki|Tue Jun 3 19:04:56 2025 +0900|ci: lint JSON files using ESLint
+a6d5ffd6df|Erik Conijn|Thu May 29 12:21:00 2025 +0200|luci-mod-network: add gui options for netifd source and destination port
 </details>

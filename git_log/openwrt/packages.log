@@ -2,11 +2,28 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-023b7bf21|Philip Prindeville|Sat Jun 7 12:16:34 2025 -0600|openssh: wrong permissions on /etc/ssh
-5c7ac5c46|Oleg Derevenetz|Mon Jun 2 21:17:53 2025 +0300|bwping: update to 2.6
-ea07162ee|Marius Dinu|Wed Jun 4 16:02:46 2025 +0300|tvheadend: cut subnet from lan IP reported by uci, fix bug #26681
-df98d72e4|Marius Dinu|Wed Jun 4 16:42:53 2025 +0300|tvheadend: update to git master 2025-06-04
-d40b6c9c1|John Audia|Fri Jun 6 16:42:32 2025 -0400|coreutils: bump to 9.7
-d77931df5|John Audia|Fri Jun 6 19:31:54 2025 -0400|libarchive: bump to 3.8.1
-04008a460|John Audia|Wed Jun 4 11:37:06 2025 -0400|procps-ng: bump to 4.0.5
+317598bed|Daniel Golle|Fri May 16 01:52:53 2025 +0100|uvol: fix autopart on devices using fitblk
+9f94448b7|Kevin Jilissen|Thu May 9 01:51:32 2024 +0200|prometheus-node-exporter-lua: Add ethtool exporter
+054ba0ce9|Kevin Jilissen|Wed May 8 19:56:16 2024 +0200|ethtool-lua: Initial packaging
+b4cd95e20|Philip Prindeville|Sun May 25 11:48:11 2025 -0600|strongswan: bump to 6.0.1
+cfdcddece|Philip Prindeville|Tue Jun 3 19:36:45 2025 -0600|strongswan: drop mod-uci as part of version bump
+4b2137505|Keith T. Garner|Mon Jun 2 15:05:11 2025 -0500|rtl_433: bump version to 25.02
+1f6308810|George Sapkin|Sun Jun 8 13:12:13 2025 +0300|syncthing: bump to 1.29.7
+aca8d8d08|John Audia|Fri Feb 28 15:23:07 2025 -0500|iotop: add new package
+d34609c27|John Audia|Wed Jun 4 08:06:17 2025 -0400|iputils: bump to 20250605
+e11893b20|Donald Hoskins|Sat Apr 6 02:34:41 2024 -0400|libopenldap: Add missing Config.in hook
+9ff3655f9|John Audia|Sun Jun 1 07:49:23 2025 -0400|gdbm: bump to 1.25 and include fix for GCC 15.1
+6f4db16a9|Nikolay Manev|Fri May 23 19:05:23 2025 +0300|rng-tools: update to version 6.17
+83737ed9e|Sergey Ponomarev|Sun Jun 8 13:37:26 2025 +0300|tor: add /etc/torrc.d/ to conffiles
+8d9352bf9|Konstantin Demin|Wed Jun 4 00:28:59 2025 +0300|libxcrypt: remove package, moved into main OpenWrt repo
+732a8405e|Dirk Brenken|Sun Jun 1 08:01:34 2025 +0200|unbound: bring back the service to the startup menu
+a73fbd347|Bjørn Mork|Sat Mar 1 13:33:41 2025 +0100|net: mini_snmpd: Enable ethtool statistics
+21ffe88c5|Bjørn Mork|Fri Feb 28 19:20:03 2025 +0100|net: mini_snmpd: Support more than 8 ports
+adeaf14c2|Henning Schild|Sun May 25 12:49:56 2025 +0200|socat: drop old patch
+535ce8ea3|Henning Schild|Sun May 25 12:01:42 2025 +0200|socat: update to 1.8.0.3
+6eb598106|John Audia|Sun Jun 1 08:34:33 2025 -0400|oniguruma: bump to 6.9.10
+0f281ad57|John Audia|Sun Jun 1 09:05:19 2025 -0400|jq: bump to v1.8.0
+1e1feadea|John Audia|Sun Jun 1 09:38:23 2025 -0400|db: fix building with GCC 15.1
+586607cef|John Audia|Sun Jun 1 09:42:05 2025 -0400|bc: fix building with GCC 15.1
+24e3f2a4c|Anton P.|Sun Jun 8 00:27:29 2025 +0300|sing-box: Update to 1.11.13
 </details>

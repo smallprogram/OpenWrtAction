@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+cf16f05|A-BO|Sun Jun 8 12:10:35 2025 +0800|luci: fix variable typo in app.sh
+</details>

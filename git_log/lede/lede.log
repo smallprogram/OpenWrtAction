@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6a15c0601|Zoltan HERPAI|Sat May 3 19:58:45 2025 +0000|sunxi: add 6.12 as testing kernel
+94a1d4948|Sergey Shlukov|Mon Feb 17 23:12:50 2025 +0000|kernel: add module for leds-lp5523
 </details>
