@@ -1,7 +1,0 @@
-<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-d466cc9|zxl hhyccc|Mon Jun 9 00:03:09 2025 +0800|Merge pull request #1730 from zxlhhyccc/custom
-947f617|zxlhhyccc|Sun Jun 1 22:27:41 2025 +0800|luci-app-ssr-plus: Fix `netflix shunt` tcp global resolution issue of dns.
-</details>

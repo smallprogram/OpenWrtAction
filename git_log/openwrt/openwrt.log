@@ -2,25 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6dffaf9316|Mario Andrés Pérez|Wed Jun 4 00:21:34 2025 +0200|ramips: mt7621: include uboot-envtools in some missed devices
-bf05b83305|John Audia|Sat Jun 7 08:47:27 2025 -0400|kernel: add backport to fix build with GCC 15.1
-dd0476aca0|Shiji Yang|Sat Mar 15 10:00:10 2025 +0800|ramips: some minor FDT improvements for HiWiFi devices
-9e08350b10|Shiji Yang|Sat Mar 15 10:00:10 2025 +0800|ramips: convert HiWiFi devices MAC address to NVMEM format
-b44a97a9f5|Olcay Korkmaz|Sat Apr 26 23:46:26 2025 +0300|toolchain: binutils: add support for 2.44
-7264a913a3|Simonas Tamošaitis|Wed Jun 4 21:39:18 2025 +0300|ramips: mt76x8: add Teltonika RUT951/RUT901 support
-85e300c93d|Simonas Tamošaitis|Wed Mar 19 16:13:32 2025 +0200|ramips: mt76x8: add Teltonika RUT956/RUT906 support
-7dd9cf82cd|Marty Jones|Fri Jun 6 20:12:36 2025 -0400|mac80211: realtek: add support for RTL8814AE/RTL8814AU
-ffc28359a1|Marty Jones|Fri Jun 6 19:59:32 2025 -0400|linux-firmware: realtek: add firmware for RTL8814AE/RTL8814AU
-4a1aca5376|Marty Jones|Sat Jun 7 19:02:25 2025 -0400|mac80211: realtek: rtw88: sync with v6.16
-b44f85f51c|Mieczyslaw Nalewaj|Sun Jun 1 08:49:28 2025 +0200|kernel: remove duplicate PREEMPT settings
-628b3ff2c3|John Audia|Sun Jun 1 07:23:02 2025 -0400|gmp: fix compilation with GCC 15.1
-f831b9d967|John Audia|Sun Jun 1 07:16:04 2025 -0400|f2fs-tools: fix building with GCC 15.1
-090add1e87|Rui Salvaterra|Sat May 3 12:12:12 2025 +0100|mtd: fix building with GCC 15.1
-a6ab705ab8|Rui Salvaterra|Sat Apr 26 11:44:08 2025 +0100|linux-atm: fix building with GCC 15.1
-cc80fbb0aa|Rui Salvaterra|Sat Apr 26 11:43:21 2025 +0100|ppp: fix building with GCC 15.1
-e595214030|Rui Salvaterra|Sat Apr 26 11:42:05 2025 +0100|mbedtls: fix building with GCC 15.1
-68cb84183e|Rui Salvaterra|Fri Apr 25 18:17:56 2025 +0100|toolchain: add support for GCC 15.1
-a461f53bfd|Konstantin Demin|Sat Jun 7 16:12:59 2025 +0300|libxcrypt: update to 4.4.38
-f544392fc3|Konstantin Demin|Sat Jun 7 16:12:59 2025 +0300|libxcrypt: import from packages feed
-5ab72cfc40|Álvaro Fernández Rojas|Sat Jun 7 12:01:54 2025 +0200|bmips: bcm6358: add support for Huawei HG556a ver A
+82d20a0fbd|Albrecht Lohofener|Sun Jun 8 09:23:42 2025 +0200|kernel: add support for DesignWare SPI MMIO controller
+eab2b27699|Christian Lamparter|Sat May 31 13:40:21 2025 +0200|uml: fix CONFIG_ALL_KMODS
+11c2326b2a|Christian Lamparter|Fri May 30 22:47:07 2025 +0200|uml: drop 6.6 config+patches
+6f59a2e6b0|Christian Lamparter|Fri May 30 22:44:35 2025 +0200|uml: use kernel 6.12 by default
+60606fa980|Álvaro Fernández Rojas|Sun Jun 8 12:58:37 2025 +0200|kernel: r8125: update to v9.016.00
 </details>

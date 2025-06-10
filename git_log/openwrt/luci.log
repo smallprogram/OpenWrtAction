@@ -2,11 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1be1deb9ec|Paul Donald|Sun Jun 8 22:59:41 2025 +0200|luci-theme-*: layout improvements
-f1fefe958c|Paul Donald|Sun Apr 20 15:35:12 2025 +0200|luci-theme-*: layout improvements
-76fa3036a2|Paul Donald|Wed Apr 23 21:21:29 2025 +0200|luci-theme-*: wrap span tags, fixes badge text
-65bdfc61db|Paul Donald|Sun Jun 8 17:24:50 2025 +0200|luci-mod-system: repo key management
-1896723055|Yanase Yuki|Tue Jun 3 19:07:30 2025 +0900|crowdsec-firewall-bouncer: fix json file
-98e71acd06|Yanase Yuki|Tue Jun 3 19:04:56 2025 +0900|ci: lint JSON files using ESLint
-a6d5ffd6df|Erik Conijn|Thu May 29 12:21:00 2025 +0200|luci-mod-network: add gui options for netifd source and destination port
+fabaa87666|Paul Donald|Mon Jun 9 13:10:57 2025 +0200|luci-base: fix jsdoc errors in form.js
+63bd859e17|Paul Donald|Mon Jun 9 13:36:44 2025 +0200|luci-base: set output elements to use output element type
+b27425edad|Dirk Brenken|Mon Jun 9 07:04:15 2025 +0200|luci-app-banip: sync with update 1.5.6-4
 </details>
