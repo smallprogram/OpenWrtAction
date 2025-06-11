@@ -2,9 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-82d20a0fbd|Albrecht Lohofener|Sun Jun 8 09:23:42 2025 +0200|kernel: add support for DesignWare SPI MMIO controller
-eab2b27699|Christian Lamparter|Sat May 31 13:40:21 2025 +0200|uml: fix CONFIG_ALL_KMODS
-11c2326b2a|Christian Lamparter|Fri May 30 22:47:07 2025 +0200|uml: drop 6.6 config+patches
-6f59a2e6b0|Christian Lamparter|Fri May 30 22:44:35 2025 +0200|uml: use kernel 6.12 by default
-60606fa980|Álvaro Fernández Rojas|Sun Jun 8 12:58:37 2025 +0200|kernel: r8125: update to v9.016.00
+84922a1e34|Álvaro Fernández Rojas|Sun Jun 8 17:03:30 2025 +0200|kernel: add support for DesignWare I2C Platform controller
+4987239913|Albrecht Lohofener|Mon Jun 9 07:48:32 2025 +0200|kernel: add Microchip ENC28J60 SPI Ethernet controller module
 </details>
