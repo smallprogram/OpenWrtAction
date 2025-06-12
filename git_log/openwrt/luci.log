@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1719a4dd4c|Paul Donald|Tue Jun 10 18:32:36 2025 +0200|luci-app-rp-pppoe-server: remove uci menu requirement
-1cb4c8b976|Paul Donald|Tue Jun 10 18:31:12 2025 +0200|luci-app-rp-pppoe-server: change interface handler to NetworkSelect
-46c27a05c5|Paul Donald|Tue Jun 10 16:34:48 2025 +0200|luci-theme-*: layout improvements
-610ccdbcfe|Paul Donald|Tue Jun 10 15:02:25 2025 +0200|luci-proto-openfortivpn: make PEM key+CA optional
-37262790c1|Paul Donald|Tue Jun 10 14:57:10 2025 +0200|luci-theme-*: layout improvements
+7e4d41e9ab|Hosted Weblate|Wed Jun 11 17:05:33 2025 +0200|Translated using Weblate (Portuguese)
 </details>

@@ -1,0 +1,14 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+21f6d356|coolsnowwolf|Wed Jun 11 18:44:39 2025 +0800|alist: revert to v3.40.0 and fix build with GCC15
+207690ae|coolsnowwolf|Wed Jun 11 18:22:52 2025 +0800|vim: fix build with libsodium
+c6ddf9af|coolsnowwolf|Wed Jun 11 18:18:01 2025 +0800|Merge pull request #944 from Internet1235/golang
+12935deb|coolsnowwolf|Wed Jun 11 18:17:45 2025 +0800|Merge pull request #943 from xiaotan8/master
+fbf6c17e|coolsnowwolf|Wed Jun 11 18:15:35 2025 +0800|snort3: update to 3.1.82.0
+81fd4325|xiaotan8|Tue Jun 10 08:22:37 2025 +0800|v2ray-geosite: update to 20250608120644
+9e4d7454|xiaotan8|Tue Jun 10 08:18:08 2025 +0800|xray-core: update to 25.6.8
+444a0e17|xiaotan8|Sat Jun 7 00:27:25 2025 +0800|sing-box: update to 1.11.13
+6a16696c|Internet1235|Fri Jun 6 21:36:18 2025 +0800|golang: Update to 1.24.4
+</details>

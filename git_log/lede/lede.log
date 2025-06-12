@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-587519af2|aiamadeus|Thu Jun 5 22:09:01 2025 +0800|cryptodev-linux: update to 1.14
+3fb4c3a7a|coolsnowwolf|Thu Jun 12 00:40:35 2025 +0800|kernel: rtl8152-vendor: add Realtek RTL8159 USB 10G Gigabit Ethernet support
+9dfcb64b3|coolsnowwolf|Thu Jun 12 00:31:20 2025 +0800|ramips: mt7621: fix Huasifei  MT7621 DTU GPIO switches
+a82c89a02|Mathew McBride|Wed Mar 19 10:00:52 2025 +1100|kernel: rtl8366: enabling LEDs
 </details>
