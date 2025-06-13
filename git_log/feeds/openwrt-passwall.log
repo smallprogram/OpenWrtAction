@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+f3d10af|A-BO|Fri Jun 13 00:51:10 2025 +0800|luci: add confirmation before deleting subscribed nodes
+</details>

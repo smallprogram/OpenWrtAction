@@ -1,7 +1,0 @@
-<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-bb7a93c|zxl hhyccc|Thu Jun 12 08:01:37 2025 +0800|Merge pull request #1737 from xepher/xray-core-25.6.8
-b3edeb3|Shaojun|Wed Jun 11 15:58:41 2025 +0800|upgrade xray-core version in Makefile
-</details>

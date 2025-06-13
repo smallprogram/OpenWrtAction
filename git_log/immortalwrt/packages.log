@@ -1,0 +1,19 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+e50352316|Tianling Shen|Thu Jun 12 19:00:16 2025 +0800|Merge Official Source
+57d860a6a|Josef Schlehofer|Wed Jun 11 20:25:10 2025 +0200|sunwait: drop manual Build/Compile step to respect flags
+1724aeda5|Philip Prindeville|Sun May 25 13:04:08 2025 -0600|bind: enable building against jemalloc library
+a276d5db4|Philip Prindeville|Sun Jun 8 14:27:10 2025 -0600|jemalloc: add package
+beb0de663|Hannu Nyman|Wed Jun 11 18:53:52 2025 +0300|collectd: Adjust .json names to match plugin names
+6fe289daf|Nikolay Manev|Sat May 31 12:34:05 2025 +0300|tio: update to version 3.9
+d1b5a6d68|Liangbin Lian|Tue Jun 10 11:03:13 2025 +0800|zerotier: fix system include path
+8dc916e88|Fabian Lipken|Tue May 20 14:57:26 2025 +0200|python-pycares: bump to 4.8.0
+e2f306d32|George Sapkin|Mon Jun 2 15:03:03 2025 +0300|adguardhome: bump to 0.107.62
+104fa7a6f|W. Michael Petullo|Tue Jun 3 09:28:14 2025 -0500|nfdump: adjust patches
+7e7c8837a|Robert Marko|Tue Jun 10 21:43:07 2025 +0200|gcc: update to 14.3
+af419864e|Robert Marko|Tue Jun 10 19:22:12 2025 +0200|libarchive: pass CMAKE_INSTALL_LIBDIR
+c0a839e5a|Martin Kennedy|Fri Dec 13 16:41:41 2024 -0500|realtek-poe: build default config from board.json
+a987403f9|John Audia|Wed Mar 26 07:52:49 2025 -0400|lm-sensors: use standard location for custom conf
+</details>
