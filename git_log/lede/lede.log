@@ -1,0 +1,7 @@
+<details> <summary> <b>lede new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+665e376e7|George Moussalem|Fri Jun 13 11:36:16 2025 +0400|wifi: ath11k: increase max ATH11K_QMI_CALDB_SIZE macro
+d4adc9952|George Moussalem|Tue Jun 10 14:41:54 2025 +0400|wifi: ath11k: disable coldboot calibration for ipq5018 and qcn6122
+</details>

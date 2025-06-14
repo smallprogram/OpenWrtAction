@@ -2,16 +2,18 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e67b70b8f4|Joe Holden|Sun May 25 12:01:19 2025 +0000|realtek: align port names
-98ead2c70f|John Audia|Tue Jun 10 08:05:48 2025 -0400|kernel: bump 6.12 to 6.12.33
-fd3e1f0c4d|Álvaro Fernández Rojas|Wed Jun 11 20:25:07 2025 +0200|bmips: bcm6358: add support for Huawei HG553
-2492ca3fdd|Chukun Pan|Wed Jun 4 21:06:05 2025 +0800|cryptodev-linux: fix sysctl warning for kernel 6.12
-ed4101f7e6|Chukun Pan|Tue Jun 3 21:05:30 2025 +0800|cryptodev-linux: update to 1.14
-0cbdab5038|INAGAKI Hiroshi|Wed Jun 4 00:08:06 2025 +0900|qualcommax: add support for I-O DATA WN-DAX3000GR
-2186f4aa75|INAGAKI Hiroshi|Tue Jun 3 23:56:13 2025 +0900|qualcommax: make header length configurable on Build/mstc-header
-c07b552470|INAGAKI Hiroshi|Thu Jun 5 05:14:24 2025 +0900|uboot-tools: uboot-envtools: add support for I-O DATA WN-DAX3000GR
-12fd5e8f84|Robert Marko|Thu Jun 12 10:53:36 2025 +0200|ipq-wifi: update to Git HEAD (2025-06-11)
-b9704413c4|George Moussalem|Tue Jun 10 14:45:55 2025 +0400|qualcommax: ipq50xx: correct fw memory mode for ipq5018 and qcn6122 wifi
-cf715a2305|George Moussalem|Tue Jun 10 14:41:54 2025 +0400|wifi: ath11k: disable coldboot calibration for ipq5018 and qcn6122
-9117ff7b39|Álvaro Fernández Rojas|Tue Jun 10 15:12:50 2025 +0200|bcm27xx: select I2C/SPI packages by default
+7f2d7fbc23|Zoltan HERPAI|Thu Jun 12 16:15:13 2025 +0000|starfive: drop 6.6 support
+e2e4dcfe75|Zoltan HERPAI|Sun Jun 1 14:09:52 2025 +0000|starfive: usb3 and pcie support is compiled into kernel now
+4801c5bec3|Zoltan HERPAI|Thu Jun 12 16:14:39 2025 +0000|starfive: use kernel 6.12 by default
+86abc4640e|Chukun Pan|Fri Jun 6 23:26:39 2025 +0800|starfive: remove useless aic8800 driver
+d7f9e240c2|George Moussalem|Tue Jun 3 09:15:04 2025 +0400|qualcommax: ipq50xx: Add support for Xiaomi AX6000
+f2221a0903|George Moussalem|Wed May 28 12:53:00 2025 +0400|mtd: spinand: esmt: fix id code for F50D1G41LB
+a23f841289|George Moussalem|Fri Apr 25 11:07:55 2025 +0400|net: dsa: qca8k: fix led devicename when using external mdio bus
+323bbce600|Chukun Pan|Tue Jun 10 23:15:02 2025 +0800|generic: 6.12: disable cont read for MX35LFxGE4AD
+f60207a2d3|Chukun Pan|Mon Jun 9 23:10:30 2025 +0800|mediatek: cleanup device tree for mt7988 devices
+17d7e0bf90|Robert Marko|Fri Jun 13 10:57:04 2025 +0200|ipq-wifi: update to Git HEAD (2025-06-13)
+03880e2551|George Sapkin|Fri Apr 18 21:38:17 2025 +0300|include/package-pack: add missing apk package lifecycle events
+aefdbf0edc|George Moussalem|Fri Jun 13 11:36:16 2025 +0400|wifi: ath11k: increase max ATH11K_QMI_CALDB_SIZE macro
+e4c3c236b8|Felix Fietkau|Thu Jun 12 11:41:03 2025 +0200|ucode-mod-bpf: switch to ucv_resource_create_ex
+64570766cb|Felix Fietkau|Thu Jun 12 13:28:47 2025 +0200|ucode: update to Git HEAD (2025-06-09)
 </details>

@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ae5d91da90|Paul Donald|Fri Apr 25 23:39:26 2025 +0200|treewide: vectorise iconography
+1e3ebebad9|Paul Donald|Sat Jun 14 00:22:57 2025 +0200|treewide: vectorise iconography
+fa6ca8a618|Paul Donald|Sat Jun 14 00:11:38 2025 +0200|treewide: vectorise iconography
+fd0038d183|Paul Donald|Sat Jun 14 00:11:04 2025 +0200|modules: fix device widgets for tunnel devices
+85fde70cd2|Paul Donald|Fri Jun 13 15:31:07 2025 +0200|treewide: vectorise iconography
 </details>

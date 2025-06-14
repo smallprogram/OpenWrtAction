@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a1d04258e|Jan Hák|Tue Jun 10 15:20:36 2025 +0200|knot: update to version 3.4.7
+1084caf4|coolsnowwolf|Fri Jun 13 09:41:17 2025 +0800|vim: fix compilation with macOS
 </details>
