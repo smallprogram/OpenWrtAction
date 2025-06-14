@@ -245,7 +245,7 @@ jobs:
           retention-days: 5
 
       - name: Create Release Tag
-        uses: softprops/action-gh-release@v2.2.2
+        uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -746,7 +746,7 @@ jobs:
 
       - name: Upload Firmware To Release
         if: steps.matrix_status.outputs.status != 'success'
-        uses: softprops/action-gh-release@v2.2.2
+        uses: softprops/action-gh-release@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -796,7 +796,7 @@ jobs:
           retention-days: 5
 
       - name: Update Release Tag
-        uses: softprops/action-gh-release@v2.2.2
+        uses: softprops/action-gh-release@v2
         # if: steps.organize_tags.outputs.status == 'success'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
