@@ -1,0 +1,8 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+e35c0a649|Tianling Shen|Sat Jun 14 21:38:41 2025 +0800|3proxy: add description for TrafficPlugin library
+4008c6932|Tianling Shen|Sat Jun 14 21:27:32 2025 +0800|3proxy: add a simple daemon script
+fcc3138aa|Tianling Shen|Sat Jun 14 17:20:32 2025 +0800|3proxy: add new package
+</details>

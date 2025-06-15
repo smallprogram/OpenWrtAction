@@ -1,0 +1,62 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+52a9a7d6a1|Tianling Shen|Sat Jun 14 21:43:22 2025 +0800|Merge Official Source
+2fcc26e876|Tianling Shen|Sat Jun 14 21:02:33 2025 +0800|luci-app-3cat: add new package
+1e3ebebad9|Paul Donald|Sat Jun 14 00:22:57 2025 +0200|treewide: vectorise iconography
+fa6ca8a618|Paul Donald|Sat Jun 14 00:11:38 2025 +0200|treewide: vectorise iconography
+fd0038d183|Paul Donald|Sat Jun 14 00:11:04 2025 +0200|modules: fix device widgets for tunnel devices
+85fde70cd2|Paul Donald|Fri Jun 13 15:31:07 2025 +0200|treewide: vectorise iconography
+ae5d91da90|Paul Donald|Fri Apr 25 23:39:26 2025 +0200|treewide: vectorise iconography
+7e4d41e9ab|Hosted Weblate|Wed Jun 11 17:05:33 2025 +0200|Translated using Weblate (Portuguese)
+1719a4dd4c|Paul Donald|Tue Jun 10 18:32:36 2025 +0200|luci-app-rp-pppoe-server: remove uci menu requirement
+1cb4c8b976|Paul Donald|Tue Jun 10 18:31:12 2025 +0200|luci-app-rp-pppoe-server: change interface handler to NetworkSelect
+46c27a05c5|Paul Donald|Tue Jun 10 16:34:48 2025 +0200|luci-theme-*: layout improvements
+610ccdbcfe|Paul Donald|Tue Jun 10 15:02:25 2025 +0200|luci-proto-openfortivpn: make PEM key+CA optional
+37262790c1|Paul Donald|Tue Jun 10 14:57:10 2025 +0200|luci-theme-*: layout improvements
+fabaa87666|Paul Donald|Mon Jun 9 13:10:57 2025 +0200|luci-base: fix jsdoc errors in form.js
+63bd859e17|Paul Donald|Mon Jun 9 13:36:44 2025 +0200|luci-base: set output elements to use output element type
+b27425edad|Dirk Brenken|Mon Jun 9 07:04:15 2025 +0200|luci-app-banip: sync with update 1.5.6-4
+1be1deb9ec|Paul Donald|Sun Jun 8 22:59:41 2025 +0200|luci-theme-*: layout improvements
+f1fefe958c|Paul Donald|Sun Apr 20 15:35:12 2025 +0200|luci-theme-*: layout improvements
+76fa3036a2|Paul Donald|Wed Apr 23 21:21:29 2025 +0200|luci-theme-*: wrap span tags, fixes badge text
+65bdfc61db|Paul Donald|Sun Jun 8 17:24:50 2025 +0200|luci-mod-system: repo key management
+1896723055|Yanase Yuki|Tue Jun 3 19:07:30 2025 +0900|crowdsec-firewall-bouncer: fix json file
+98e71acd06|Yanase Yuki|Tue Jun 3 19:04:56 2025 +0900|ci: lint JSON files using ESLint
+a6d5ffd6df|Erik Conijn|Thu May 29 12:21:00 2025 +0200|luci-mod-network: add gui options for netifd source and destination port
+3d74ba9ba8|Hosted Weblate|Sat Jun 7 00:00:22 2025 +0200|Added translation using Weblate (Portuguese)
+06ee40a21e|Hannu Nyman|Sat Jun 7 18:47:10 2025 +0300|treewide: Sync translations
+b98b525e16|Eric Fahlgren|Thu May 29 08:51:14 2025 -0700|luci-app-attendedsysupgrade: avoid redirects, handle redirect errors
+e6b26d1e07|Guoxin Pu|Thu Jun 5 18:40:00 2025 +0800|luci-app-ddns: no implicit interface when ip_source=interface
+cf1e61f10d|Paul Donald|Sat Jun 7 16:05:56 2025 +0200|luci-mod-system: Add repo key management
+8bab10f820|Paul Donald|Fri Jun 6 13:38:35 2025 +0200|luci-mod-network: wireless.js fixes follow-up to cdce600
+b39bfe7522|Dirk Brenken|Fri Jun 6 07:03:36 2025 +0200|luci-app-adblock: optimizations & fixes
+6f735a8211|Hosted Weblate|Thu Jun 5 02:38:50 2025 +0200|Translated using Weblate (Lithuanian)
+55c93e60b4|Joseph Mory|Fri May 30 20:32:47 2025 +0800|luci-base: fix table option does not show in non-Bootstrap themes when it has depends
+d03f135529|Felix Fietkau|Mon Jun 2 10:24:14 2025 +0200|luci-mod-network: fix default for vlan_naming
+bf2e082643|Hosted Weblate|Sun Jun 1 12:03:29 2025 +0200|Translated using Weblate (Portuguese)
+723de2a7f2|Dirk Brenken|Sun Jun 1 07:05:10 2025 +0200|Merge pull request #7746 from dwfreed/patch-1
+740452bf1a|Dirk Brenken|Sat May 31 23:10:04 2025 +0200|luci-app-adblock: sync with update 4.4.2-2
+242768d42c|Dirk Brenken|Sat May 31 22:14:41 2025 +0200|luci-app-banip: sync with update 1.5.6-3
+acdffc3d1d|Paul Donald|Tue May 27 17:11:25 2025 +0200|luci-mod-system: Add repo key management
+04d22e68a1|Dirk Brenken|Fri May 30 22:28:31 2025 +0200|luci-app-adblock: fix the report initialization
+d971e88a0f|Dirk Brenken|Fri May 30 18:42:18 2025 +0200|luci-app-adblock: sync with update 4.4.2-1
+0a09ae1805|Khachatryan Karen|Tue May 27 21:53:04 2025 +0300|luci-app-antiblock: Disable routes without deleting
+42d32dff7f|Eric Fahlgren|Wed May 28 09:09:33 2025 -0700|luci-app-attendedsysupgrade: maintain value of owut.rootfs_size in LuCI app
+09d3add964|Hosted Weblate|Wed May 28 09:53:03 2025 +0200|Translated using Weblate (Russian)
+03367675bf|Hosted Weblate|Thu May 22 15:32:43 2025 +0200|Translated using Weblate (Lithuanian)
+f274d8aa1c|Alvaro Ollero|Thu May 15 18:42:15 2025 +0200|luci-app-wol: Show powered off hosts in dropdown menu
+9a99cfc69e|Hosted Weblate|Sun May 18 20:02:56 2025 +0200|Translated using Weblate (Russian)
+c996de5a82|Nicolò Veronese|Sun May 4 18:13:50 2025 +0200|luci-mod-network: fix default policy for bondig device
+74eef5c7d9|Hosted Weblate|Wed May 14 16:18:38 2025 +0200|Translated using Weblate (Russian)
+eff350191a|Stan Grishin|Mon May 12 15:53:44 2025 -0700|Merge pull request #7771 from stangri/master-luci-app-https-dns-proxy
+881c79bbb7|Hosted Weblate|Mon May 12 09:35:46 2025 +0200|Translated using Weblate (Czech)
+bd5cb1dd66|Stan Grishin|Mon May 12 02:08:33 2025 +0000|luci-app-https-dns-proxy: update to 2025.05.11
+50bee13aeb|Hannu Nyman|Sat May 10 14:51:32 2025 +0300|treewide: Prune old unused translations strings - part 2
+5d02ccd2fd|Hannu Nyman|Sat May 10 14:43:01 2025 +0300|treewide: Prune old unused translations strings
+bd76fb9193|Hannu Nyman|Sat May 10 13:37:03 2025 +0300|treewide: Sync translations
+3ae5de97fe|Hosted Weblate|Fri May 9 23:47:03 2025 +0200|Translated using Weblate (Hungarian)
+c399e8c575|Hosted Weblate|Thu May 8 17:15:35 2025 +0200|Translated using Weblate (Russian)
+c71dbb61ca|Doug Freed|Wed Apr 23 16:43:14 2025 -0500|luci-base: remove bad Unicode on clone button
+</details>

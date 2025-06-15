@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-4569e33|lwb1978|Fri Jun 13 10:38:53 2025 +0800|luci: replace outdated dns ip
-1baab30|lwb1978|Fri Jun 13 10:27:25 2025 +0800|luci: optimize `add confirmation before deleting subscribed nodes`
-</details>
