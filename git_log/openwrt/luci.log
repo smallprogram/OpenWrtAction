@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-74580723a3|Dirk Brenken|Sat Jun 14 21:05:27 2025 +0200|luci-app-adblock: sync with adblock 4.4.2-3
-2ac7444d33|Dirk Brenken|Sat Jun 14 19:50:04 2025 +0200|luci-app-banip: sync with update 1.5.6-5
+750aa9e25b|Paul Donald|Sun Jun 15 22:15:53 2025 +0200|treewide: vectorise iconography
+130e082a11|Hosted Weblate|Sun Jun 15 19:48:11 2025 +0200|Translated using Weblate (Chinese (Traditional Han script))
+22bcf11db7|Paul Donald|Sat Jun 14 01:40:44 2025 +0200|treewide: vectorise iconography
 </details>

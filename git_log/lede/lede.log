@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4e383e10f|Álvaro Fernández Rojas|Mon Dec 30 01:01:33 2024 +0100|generic: 6.6: backport upstream r8169 patches
-d4803621d|Álvaro Fernández Rojas|Mon Dec 30 01:01:33 2024 +0100|generic: 6.6: backport upstream Realtek PHY patches
-7ede74048|Daniel Golle|Thu Oct 17 13:33:18 2024 +0100|generic: import and move accepted RealTek PHY patches
+2cf339694|coolsnowwolf|Mon Jun 16 00:12:52 2025 +0800|mac80211: brcm: fix build with kernel 6.12 support
+e572946c9|Álvaro Fernández Rojas|Fri Jan 17 13:45:11 2025 +0100|generic: backport pending Realtek PHY patches
+b23ec99f3|Daniel Golle|Thu Jan 16 20:11:43 2025 +0000|generic: add pending patch for RealTek Ethernet PHY
+e4f70ceb1|Álvaro Fernández Rojas|Fri Jan 17 09:56:34 2025 +0100|generic: backport Realtek PHY patches from upstream
 </details>

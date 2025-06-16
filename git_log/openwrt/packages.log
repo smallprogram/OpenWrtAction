@@ -2,8 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f7505326d|Dirk Brenken|Sat Jun 14 20:58:01 2025 +0200|adblock: update 4.4.2-3
-645b0ab13|Dirk Brenken|Sat Jun 14 19:47:19 2025 +0200|banIP: update 1.5.6-5
-ae33358c4|Tianling Shen|Thu Jun 12 19:09:49 2025 +0800|btop: add migration for alias command
-fa01e8adf|Josef Schlehofer|Fri Jun 13 15:41:01 2025 +0200|mc: drop patches to handle newer terminfo
+f9ea6b5ee|Michael Heimpold|Thu Jun 12 22:30:42 2025 +0200|php8: add missing dependency for soap module
+8ba99fd70|Michael Heimpold|Sun Jun 8 23:33:37 2025 +0200|php8: update to 8.4.8
+74aaf9c13|Josef Schlehofer|Sun Jun 15 09:11:27 2025 +0200|stress: drop old unmaintained project
+8a6a3d6f5|Daniel Cousens|Sun Feb 18 22:46:51 2024 +1100|treewide: use https for some PKG_SOURCE_URLs
+18fc4e61e|Jens Wagner|Tue Jun 10 21:04:34 2025 +0200|perl-authen-sasl-xs: fix issues with gcc-14
+d8f2960e1|Til Kaiser|Sat Jun 14 20:13:17 2025 +0200|mstflint: add missing nls.mk include
+72a7e5805|Andrey Butirsky|Sat Sep 23 21:56:11 2023 +0000|meta: create devcontainer.json
 </details>

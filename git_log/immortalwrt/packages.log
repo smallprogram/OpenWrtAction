@@ -2,7 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e35c0a649|Tianling Shen|Sat Jun 14 21:38:41 2025 +0800|3proxy: add description for TrafficPlugin library
-4008c6932|Tianling Shen|Sat Jun 14 21:27:32 2025 +0800|3proxy: add a simple daemon script
-fcc3138aa|Tianling Shen|Sat Jun 14 17:20:32 2025 +0800|3proxy: add new package
+d099d49b9|Tianling Shen|Sun Jun 15 18:37:26 2025 +0800|Merge Official Source
+4b5a37d20|Tianling Shen|Sun Jun 15 17:09:04 2025 +0800|3proxy: add missing CPE ID
+33fe2554a|Tianling Shen|Sun Jun 15 12:31:45 2025 +0800|3proxy: use built-in pcre library
+f7505326d|Dirk Brenken|Sat Jun 14 20:58:01 2025 +0200|adblock: update 4.4.2-3
+645b0ab13|Dirk Brenken|Sat Jun 14 19:47:19 2025 +0200|banIP: update 1.5.6-5
+ae33358c4|Tianling Shen|Thu Jun 12 19:09:49 2025 +0800|btop: add migration for alias command
+fa01e8adf|Josef Schlehofer|Fri Jun 13 15:41:01 2025 +0200|mc: drop patches to handle newer terminfo
+a1d04258e|Jan Hák|Tue Jun 10 15:20:36 2025 +0200|knot: update to version 3.4.7
+7d6535737|Tianling Shen|Thu Jun 12 19:16:50 2025 +0800|v2ray-geodata: Update to latest version
+aba50f205|Tianling Shen|Thu Jun 12 19:16:38 2025 +0800|xray-core: Update to 25.6.8
 </details>
