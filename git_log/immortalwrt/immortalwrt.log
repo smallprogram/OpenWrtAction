@@ -1,7 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-90e406f2ea|Tianling Shen|Sun Jun 15 19:15:34 2025 +0800|r8125: use led reg definitions from r8125.h
-24156cb2a1|jinkela air|Sun Jun 15 09:42:04 2025 +0800|mediatek: Ruijie RG-X60 Pro: Fix WAN port status LED
-</details>

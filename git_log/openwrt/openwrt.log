@@ -1,0 +1,15 @@
+<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+764576eb5b|Josef Schlehofer|Fri Jun 13 16:32:45 2025 +0200|perf: disable slang support
+326c634829|Zoltan HERPAI|Wed Apr 2 10:12:50 2025 +0000|sunxi: add support for OrangePi Zero 2W
+c908fc7d95|Marius Durbaca|Tue Oct 22 16:15:57 2024 +0300|mediatek: add support for Zbtlink ZBT-Z8102AX v2
+143cfd6113|Shiji Yang|Sat May 24 16:32:26 2025 +0800|ramips: dts: increase maximum MMC clock frequency
+3f78e5c918|Shiji Yang|Fri Jun 13 21:36:16 2025 +0800|ramips: mtk-sd: stability improvements for MIPS mt762x SoCs
+db76fe6a02|Shiji Yang|Fri Jun 13 21:05:31 2025 +0800|ramips: mtk-sd: backport Host Software Queue support
+e69c867cdf|Shiji Yang|Sat May 24 16:31:07 2025 +0800|ramips: mtk-mmc: fix data timeout value
+ca866328d5|Anton Yu. Ivanusev|Wed Jun 11 08:53:20 2025 +0500|ramips: mt76x8: add support for Keenetic Start (KN-1112)
+6af9476b8a|Nicolas BERTRAND|Tue Jun 10 11:09:06 2025 +0200|realtek: Add support for Zyxel XGS1210-12 Switch
+39b9b491bb|Jonas Jelonek|Fri May 2 21:39:14 2025 +0000|realtek: add support for TP-Link TL-ST1008F v2.0
+</details>

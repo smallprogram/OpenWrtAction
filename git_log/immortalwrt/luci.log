@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4c8f8a9f6e|Tianling Shen|Sun Jun 15 17:05:41 2025 +0800|CI: remove unused eslint
+0367f83acf|Tianling Shen|Mon Jun 16 17:34:34 2025 +0800|luci-app-3cat: fix typo error
+57aa13fe33|Tianling Shen|Mon Jun 16 17:32:02 2025 +0800|Revert "luci-base: add wifi_big.png"
 </details>
