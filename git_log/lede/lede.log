@@ -2,6 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-771e27b03|coolsnowwolf|Tue Jun 17 03:25:10 2025 +0800|firewall4: add fullconenat-nf NAT1 support
-acc2592fe|coolsnowwolf|Sun Jun 15 22:03:36 2025 +0800|qualcommax: sync ipq50xx with upstream source
+da5e8650f|Nick Hainke|Wed Feb 7 12:27:55 2024 +0100|toolchain: binutils: switch to version 2.42 by default
+d44acf037|Christian Marangi|Tue Apr 2 21:41:59 2024 +0200|toolchain: binutils: backport patch to fix mipsel_24kc_24kf
+67ba3b9c2|Nick Hainke|Tue Feb 6 12:26:33 2024 +0100|toolchain: binutils: add support for version 2.42
+70f39feb7|coolsnowwolf|Wed Jun 18 04:48:14 2025 +0800|binutils: update to 2.42
+a8e75535d|Christian Marangi|Mon Mar 25 11:00:38 2024 +0100|scripts/dl_github_archive: add support for packing zstd archive
 </details>

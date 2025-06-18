@@ -2,10 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cfdf5fffe|Hannu Nyman|Mon Jun 16 19:42:36 2025 +0300|nano: update to 8.5
-92c56952b|Sandro Jäckel|Tue Jun 10 18:45:03 2025 +0200|tailscale: update to 1.84.2
-09f434056|George Sapkin|Thu Jun 12 14:55:37 2025 +0300|golang: bump to 1.24.4
-18557c854|Javier Marcet|Sat Jun 14 10:52:37 2025 +0200|docker-compose: Update to version 2.37.1
-ed1f82405|Josef Schlehofer|Fri Jun 13 15:06:17 2025 +0200|treewide: drop nanosleep patches related to uClibc-ng
-edd8543be|Josef Schlehofer|Sun Jun 15 08:55:08 2025 +0200|addrwatch: add patch header from upstreamed commit
+bae138d39|Ted Hess|Tue Jun 17 16:04:27 2025 -0400|sox: Remove unmaintained package. See sox_ng replacement
+88b086fe4|Ted Hess|Mon Jun 16 12:22:21 2025 -0400|sox_ng: Adding new package sox_ng v14.5.1.1
+4b5b4f12a|W. Michael Petullo|Mon Jun 16 15:51:53 2025 -0500|libmcrypt: drop package, as it is unmaintained upstream
 </details>

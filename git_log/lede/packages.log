@@ -2,12 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-eb846e39|coolsnowwolf|Tue Jun 17 03:26:32 2025 +0800|nikki: bump version
-365f3423|coolsnowwolf|Mon Jun 16 17:31:17 2025 +0800|nikki: add package
-64972611|coolsnowwolf|Mon Jun 16 16:09:01 2025 +0800|jemalloc: add package
-59847ad6|coolsnowwolf|Mon Jun 16 16:02:09 2025 +0800|Merge pull request #949 from Internet1235/bind
-97365244|coolsnowwolf|Mon Jun 16 16:01:58 2025 +0800|Merge pull request #950 from Internet1235/rust
-e94ec9e4|Internet1235|Mon Jun 16 11:00:55 2025 +0800|golang: update to 1.24.4 (#947)
-c63b5d89|Internet1235|Sun Jun 15 21:28:30 2025 +0800|rust: Bump to 1.87.0
-b82128f7|Internet1235|Fri Jun 13 21:11:03 2025 +0800|bind: Bump to 9.20.9
+f76656ab|coolsnowwolf|Wed Jun 18 04:02:54 2025 +0800|rust: stop relying on rustc's LLVM caches
 </details>

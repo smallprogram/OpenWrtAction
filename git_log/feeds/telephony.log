@@ -1,0 +1,7 @@
+<details> <summary> <b>telephony new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+62390ce|Josef Schlehofer|Sun May 25 12:49:40 2025 +0200|CI: move script into separate directory
+509ce77|Josef Schlehofer|Sun May 25 12:39:58 2025 +0200|CI: formal check: use shared workflow in actions-shared-workflows
+</details>

@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+094b797|lwb1978|Tue Jun 17 13:02:45 2025 +0800|luci: smartdns shunt supports ecs
+4fdf898|lwb1978|Tue Jun 17 10:41:27 2025 +0800|luci: adapt to the latest version of smartdns
+2891b4c|lwb1978|Tue Jun 17 09:00:08 2025 +0800|Revert "luci: disallow private ip in smartdns remote dns settings"
+</details>

@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0367f83acf|Tianling Shen|Mon Jun 16 17:34:34 2025 +0800|luci-app-3cat: fix typo error
-57aa13fe33|Tianling Shen|Mon Jun 16 17:32:02 2025 +0800|Revert "luci-base: add wifi_big.png"
+e54b90ef3e|yuchuan|Tue Jun 17 16:35:30 2025 +0800|luci-theme-argon: replace 1080p with 4k in bing wallpaper
 </details>

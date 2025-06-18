@@ -2,46 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1349056112|Paul Donald|Thu Nov 7 21:21:07 2024 +0100|luci-mod-network: implement Virtual Routing and Forwarding (VRF) options
-f5da7a6016|Paul Donald|Thu Nov 7 21:22:34 2024 +0100|luci-base: implement Virtual Routing and Forwarding (VRF) options
-b44f141e37|Hannu Nyman|Mon Jun 16 23:50:55 2025 +0300|treewide: Fix weblate conflict and merge 'weblate/master'
-fad6b8767c|Paul Donald|Mon Jun 16 20:08:29 2025 +0200|luci-app-ltqtapi: drop LUA app
-9442cd51ea|Paul Donald|Mon Jun 16 19:54:54 2025 +0200|luci-app-cshark: drop LUA app
-1173f245fd|Paul Donald|Mon Jun 16 19:48:52 2025 +0200|luci-app-radicale: drop LUA app
-dfcd69dd54|Paul Donald|Mon Jun 16 19:45:22 2025 +0200|luci-app-siitwizard: drop LUA app
-5130e2270d|Paul Donald|Mon Jun 16 19:42:48 2025 +0200|luci-app-dynapoint: drop LUA app
-5622bbaaa1|தமிழ்நேரம்|Mon Jun 16 13:49:21 2025 +0200|Translated using Weblate (Tamil)
-b00f101a3e|Hiep Nguyen|Mon Jun 16 14:21:41 2025 +0200|Translated using Weblate (Vietnamese)
-3d0b500db6|தமிழ்நேரம்|Mon Jun 16 14:17:37 2025 +0200|Translated using Weblate (Tamil)
-db981638c6|தமிழ்நேரம்|Mon Jun 16 13:54:29 2025 +0200|Translated using Weblate (Tamil)
-da9b9ab706|தமிழ்நேரம்|Mon Jun 16 13:49:21 2025 +0200|Translated using Weblate (Tamil)
-ec627dea95|தமிழ்நேரம்|Mon Jun 16 13:48:31 2025 +0200|Translated using Weblate (Tamil)
-afee915965|தமிழ்நேரம்|Mon Jun 16 14:17:37 2025 +0200|Translated using Weblate (Tamil)
-f8f1063c43|தமிழ்நேரம்|Mon Jun 16 13:54:01 2025 +0200|Translated using Weblate (Tamil)
-87dc5c988e|தமிழ்நேரம்|Mon Jun 16 14:04:13 2025 +0200|Translated using Weblate (Tamil)
-eadabeb5ca|தமிழ்நேரம்|Mon Jun 16 14:17:37 2025 +0200|Translated using Weblate (Tamil)
-f0fa04a258|தமிழ்நேரம்|Mon Jun 16 13:50:15 2025 +0200|Translated using Weblate (Tamil)
-8e5fa63454|தமிழ்நேரம்|Mon Jun 16 13:54:03 2025 +0200|Translated using Weblate (Tamil)
-a7fead72ca|தமிழ்நேரம்|Mon Jun 16 14:17:37 2025 +0200|Translated using Weblate (Tamil)
-ab206ee4db|Hiep Nguyen|Mon Jun 16 14:21:27 2025 +0200|Translated using Weblate (Vietnamese)
-7dffe8d20f|Hiep Nguyen|Mon Jun 16 14:20:52 2025 +0200|Translated using Weblate (Vietnamese)
-6bb3119e28|Hiep Nguyen|Mon Jun 16 14:19:02 2025 +0200|Translated using Weblate (Vietnamese)
-1400c6663c|Hiep Nguyen|Mon Jun 16 14:18:53 2025 +0200|Translated using Weblate (Vietnamese)
-8681bdbaaa|Hiep Nguyen|Mon Jun 16 14:18:29 2025 +0200|Translated using Weblate (Vietnamese)
-532ccd7b7a|Hiep Nguyen|Mon Jun 16 14:18:23 2025 +0200|Translated using Weblate (Vietnamese)
-d356309f6c|Hiep Nguyen|Mon Jun 16 14:17:48 2025 +0200|Translated using Weblate (Vietnamese)
-88bb3011c9|Hiep Nguyen|Mon Jun 16 14:17:40 2025 +0200|Translated using Weblate (Vietnamese)
-b4b8a33e3e|Hiep Nguyen|Mon Jun 16 14:17:30 2025 +0200|Translated using Weblate (Vietnamese)
-c7bdf7e34d|Hiep Nguyen|Mon Jun 16 14:17:15 2025 +0200|Translated using Weblate (Vietnamese)
-504441174b|Hiep Nguyen|Mon Jun 16 14:21:07 2025 +0200|Translated using Weblate (Vietnamese)
-3057cf4de6|Hiep Nguyen|Mon Jun 16 14:17:30 2025 +0200|Translated using Weblate (Vietnamese)
-14b42dac88|Hiep Nguyen|Mon Jun 16 14:23:16 2025 +0200|Translated using Weblate (Vietnamese)
-abedb4b289|Hiep Nguyen|Mon Jun 16 14:22:53 2025 +0200|Translated using Weblate (Vietnamese)
-367566c499|Hiep Nguyen|Mon Jun 16 14:23:29 2025 +0200|Translated using Weblate (Vietnamese)
-c9c126ef03|Hiep Nguyen|Mon Jun 16 14:17:58 2025 +0200|Translated using Weblate (Vietnamese)
-10cbdbee7e|Hiep Nguyen|Mon Jun 16 14:18:17 2025 +0200|Translated using Weblate (Vietnamese)
-955368009e|Janderson Vieira Santos|Mon Jun 16 17:19:22 2025 +0200|Translated using Weblate (Portuguese (Brazil))
-93dad92afb|Paul Donald|Sat Apr 26 03:59:29 2025 +0200|luci-app-privoxy: convert to JS
-b7ea72a16a|Hosted Weblate|Mon Jun 16 13:46:59 2025 +0200|Added translation using Weblate (Tamil)
-2604b5532f|Jan Pazdziora|Thu Jan 9 19:49:51 2025 +0100|luci-proto-wireguard: Add the option for setting ip6prefix.
+6915742633|Paul Donald|Tue Jun 17 15:59:35 2025 +0200|luci-mod-status: remove unused uci in syslog view
 </details>
