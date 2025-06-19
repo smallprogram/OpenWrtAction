@@ -2,9 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-da5e8650f|Nick Hainke|Wed Feb 7 12:27:55 2024 +0100|toolchain: binutils: switch to version 2.42 by default
-d44acf037|Christian Marangi|Tue Apr 2 21:41:59 2024 +0200|toolchain: binutils: backport patch to fix mipsel_24kc_24kf
-67ba3b9c2|Nick Hainke|Tue Feb 6 12:26:33 2024 +0100|toolchain: binutils: add support for version 2.42
-70f39feb7|coolsnowwolf|Wed Jun 18 04:48:14 2025 +0800|binutils: update to 2.42
-a8e75535d|Christian Marangi|Mon Mar 25 11:00:38 2024 +0100|scripts/dl_github_archive: add support for packing zstd archive
+8185ba94e|5aaee9|Thu Jun 19 01:01:06 2025 +0800|package/zram: fix build for kernel 6.12 (#13564)
+e2d2635a2|Xiaok|Wed Jun 18 15:31:54 2025 +0800|uboot-armsr: add support for QEMU armv7/armv8 (#13563)
 </details>

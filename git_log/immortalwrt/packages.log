@@ -1,0 +1,6 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b59bd072a|Luca Barbato|Sat May 31 14:55:41 2025 +0000|rust: Make sure bootstrap does not try to guess it is in the upstream CI environment
+</details>

@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-094b797|lwb1978|Tue Jun 17 13:02:45 2025 +0800|luci: smartdns shunt supports ecs
-4fdf898|lwb1978|Tue Jun 17 10:41:27 2025 +0800|luci: adapt to the latest version of smartdns
-2891b4c|lwb1978|Tue Jun 17 09:00:08 2025 +0800|Revert "luci: disallow private ip in smartdns remote dns settings"
+543ce3c|A-BO|Thu Jun 19 00:45:41 2025 +0800|luci: optimize the code for updating geofiles
 </details>

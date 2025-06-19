@@ -2,9 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0bca24493e|Josef Schlehofer|Sun Jun 15 11:46:33 2025 +0200|tools: libdeflate: update to 1.24
-c131870c34|Markus Stockhausen|Fri Jun 13 04:34:34 2025 -0400|realtek: switch LGS310C devicetree to new i2s-gpio-shared driver
-5b8155d434|Markus Stockhausen|Fri Jun 13 04:33:16 2025 -0400|realtek: activate i2c-gpio-shared driver
-acd7ecc9ed|Markus Stockhausen|Fri Jun 13 04:29:52 2025 -0400|realtek: add new i2c-gpio-shared driver for shared SCL lines
-2f85dc277b|Jack Sun|Sat Feb 1 21:09:26 2025 +0800|tools/cmake: update to 3.31.5
+9b777547be|Shiji Yang|Tue Mar 18 00:42:19 2025 +0800|ramips: PCIe driver improvements for mt7620 and mt7628
+8e1d58a596|Shiji Yang|Thu May 8 21:20:22 2025 +0800|generic: net: phy: psb6970: fix missing-prototypes warnings
+042afe1f3d|Felix Fietkau|Wed Jun 18 17:03:27 2025 +0200|mt76: update to Git HEAD (2025-06-18)
+3f69fe3907|Álvaro Fernández Rojas|Wed Jun 11 09:46:44 2025 +0200|bmips: update BCM531x5 RGMII delays patch
+0bd694ea22|Álvaro Fernández Rojas|Wed Jun 11 09:46:44 2025 +0200|generic: 6.12: backport accepted BCM5325 patches
+d015a39dd3|Jonas Gorski|Wed Jun 18 10:46:35 2025 +0200|iproute2: point KERNEL_INCLUDE to toolchain headers
 </details>

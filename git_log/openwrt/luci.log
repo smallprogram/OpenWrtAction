@@ -1,6 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-6915742633|Paul Donald|Tue Jun 17 15:59:35 2025 +0200|luci-mod-status: remove unused uci in syslog view
-</details>
