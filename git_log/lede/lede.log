@@ -2,6 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8185ba94e|5aaee9|Thu Jun 19 01:01:06 2025 +0800|package/zram: fix build for kernel 6.12 (#13564)
-e2d2635a2|Xiaok|Wed Jun 18 15:31:54 2025 +0800|uboot-armsr: add support for QEMU armv7/armv8 (#13563)
+75c0525c0|coolsnowwolf|Thu Jun 19 17:31:19 2025 +0800|stm32: add new stm32 target
+5814ca707|coolsnowwolf|Thu Jun 19 16:55:24 2025 +0800|starfive: add new target for StarFive JH7100/7110 SoC
+00c35a6e8|coolsnowwolf|Thu Jun 19 16:37:07 2025 +0800|d1: add new target (MangoPi MQ Pro) AllWinner D1 RISC-V SoC support
+bd0e4e507|coolsnowwolf|Thu Jun 19 16:19:04 2025 +0800|ath79: enable 6.12 testing kernel
+e255e5215|coolsnowwolf|Thu Jun 19 16:16:46 2025 +0800|armsr: enable 6.12 as a testing kernel version
+27cb571e4|coolsnowwolf|Thu Jun 19 16:15:10 2025 +0800|bcm27xx: enable 6.12 kernel testing
+593942c7b|coolsnowwolf|Thu Jun 19 16:12:50 2025 +0800|bcm27xx: fix build with kernel 6.6.93+
+cb18a760f|Hauke Mehrtens|Sat Jun 29 17:54:49 2024 +0200|kernel: Fix kmod-lib-lz4 packaging
+ba80c413a|Xiaok|Thu Jun 19 15:30:01 2025 +0800|u-boot.mk: add support for config customization
 </details>

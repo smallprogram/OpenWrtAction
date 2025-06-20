@@ -2,11 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-30c498a40|Lucian CRISTIAN|Sun Jun 8 20:05:59 2025 +0300|nspr: update to 4.36
-192ca00bc|John Audia|Mon Jun 2 15:19:14 2025 -0400|samba4: bump to 4.22.2
-01fafd69e|Dennis Camera|Sat Jan 11 18:59:42 2025 +0100|openvpn: remove kmod-ovpn-dco-v2 dependency
-11e17a3ed|Dennis Camera|Sat Jan 11 18:59:24 2025 +0100|openvpn: enable DCO by default
-4e80b8dbb|Ariel Xiong|Sun May 25 22:14:43 2025 +0800|ariang: bump to 1.3.10
-3e6c11de7|Shin Rag|Fri Jun 13 23:42:50 2025 +0800|fish: update to 3.7.1
-9acb36ef4|Josef Schlehofer|Sun Jun 15 08:16:44 2025 +0200|treewide: drop patches related to uClibc-ng
+2521e8cf8|Ted Hess|Wed Jun 18 19:57:30 2025 -0400|sox_ng: Remove (lib)speex un-expected inclusion by discovery
 </details>
