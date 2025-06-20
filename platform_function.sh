@@ -153,9 +153,18 @@ function Func_Compile_Firmware() {
         ./scripts/feeds clean
     fi
     echo
+    Func_LogMessage "准备update feeds...." "Prepare update feeds...."
+    for d in feeds/*; do
+        if [ -d "$d/.git" ]; then
+            echo "Resetting $d ..."
+            git -C "$d" reset --hard HEAD
+            git -C "$d" clean -fd
+        fi
+    done
+
     Func_LogMessage "开始update feeds...." "begin update feeds...."
     sleep 1s
-    ./scripts/feeds update -f | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main1_feeds_update-git_log.log
+    ./scripts/feeds update -a | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main1_feeds_update-git_log.log
     echo
     Func_LogMessage "开始install feeds...." "begin install feeds...."
     sleep 1s
