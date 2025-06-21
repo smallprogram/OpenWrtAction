@@ -1,0 +1,23 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+aa5e94a|xiaorouji|Sat Jun 21 06:58:26 2025 +0800|luci: 25.6.21
+d92ae65|lwb1978|Fri Jun 20 16:56:58 2025 +0800|luci: adapt to the new build tag for sing-box
+8984019|xiaorouji|Sat Jun 21 06:37:06 2025 +0800|luci: replace outdated dns ip
+b01b936|lwb1978|Fri Jun 13 10:27:25 2025 +0800|luci: optimize `add confirmation before deleting subscribed nodes`
+63e2ecc|A-BO|Fri Jun 13 00:51:10 2025 +0800|luci: add confirmation before deleting subscribed nodes
+59f6826|lwb1978|Tue Jun 10 08:22:28 2025 +0800|luci: optimize
+f99a115|lwb1978|Sat May 31 14:06:48 2025 +0800|luci: `add the node via the link` support sending more nodes
+1b70bda|lwb1978|Thu May 29 18:04:47 2025 +0800|luci: optimize
+5d5809d|lwb1978|Wed May 28 10:46:46 2025 +0800|luci: some optimize
+2ddadfe|lwb1978|Tue May 27 16:42:46 2025 +0800|luci: optimize `link_share_man.htm`
+c9cc977|A-BO|Tue May 27 16:15:13 2025 +0800|luci: sing-box transport simulate xray raw(tcp)
+50f5ede|lwb1978|Wed May 21 20:33:05 2025 +0800|luci: processing rule list special characters
+e85bfcb|lwb1978|Mon May 19 09:43:57 2025 +0800|luci: xray ss method add `none` & `plain`
+fc3f687|lwb1978|Fri May 16 11:22:50 2025 +0800|luci: fix two fp issues in the export link
+183a13a|lwb1978|Fri May 16 01:10:13 2025 +0800|luci: fix bug
+eef1ae7|lwb1978|Thu May 15 22:42:16 2025 +0800|luci: optimize the sing-box anytls parameter
+1b93347|A-BO|Thu May 8 00:38:33 2025 +0800|luci: dns support parsing dhcp hostname
+ff05d13|xiaorouji|Sat Jun 21 06:53:46 2025 +0800|luci: fix cherry-pick typo
+</details>

@@ -2,22 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7e014bbe0b|Stefan Kalscheuer|Sat May 31 12:40:11 2025 +0200|mvebu: add 6.12 testing kernel
-819f78463c|Stefan Kalscheuer|Sat May 31 12:23:13 2025 +0200|mvebu: 6.12: refresh kernel config
-1738e87632|Stefan Kalscheuer|Sat May 31 12:09:38 2025 +0200|mvebu: 6.12: refresh patches
-6354ac76a4|Stefan Kalscheuer|Sat May 31 09:30:51 2025 +0200|kernel/mvebu: Restore kernel files for v6.6
-1e1e91a213|Stefan Kalscheuer|Sat May 31 09:30:51 2025 +0200|kernel/mvebu: Create kernel files for v6.12 (from v6.6)
-782afec6c1|Chukun Pan|Mon Jun 16 23:06:38 2025 +0800|mediatek: 6.12: fix cci driver probe for mt7988d
-9817c9186a|Shiji Yang|Tue Apr 29 20:09:09 2025 +0800|x86: move common kconfig symbols into target shared config
-805b5d893c|Shiji Yang|Tue Apr 29 20:09:09 2025 +0800|x86: refresh kernel symbol configs
-6348047e50|Hauke Mehrtens|Thu Jun 19 22:27:02 2025 +0200|procd: update to Git HEAD (2025-06-19)
-db9ba9a943|Josef Schlehofer|Sun Jun 15 11:39:33 2025 +0200|tools/bash: update to version 5.2.37
-225622e0f9|Mieczyslaw Nalewaj|Tue May 27 08:19:29 2025 +0200|mt76: replace strlcpy with strscpy
-23faf4c485|Markus Stockhausen|Thu Jun 12 09:20:12 2025 -0400|realtek: activate MIPS power cluster controller for RTL931x
-a51359aafd|Markus Stockhausen|Tue Jun 17 05:21:40 2025 -0400|kernel: mtdsplit_uimage: return 0 if not fatal
-f7dba4ebbc|Valeriy Manzhos|Sun Jun 15 13:08:29 2025 +0300|ath79: enable USB by default on hAP ac
-c35f2a23c8|Yijie Jin|Sat Dec 28 15:00:28 2024 +0800|ramips: mt7621: add support for JDCloud RE-SP-01B
-22854586c6|Markus Stockhausen|Wed Apr 30 04:24:27 2025 -0400|realtek: fix/add switchcore syscon nodes for RTL838x/RTL839x/RTL931x
-0bd5d5f748|Jonas Jelonek|Mon Jun 16 19:57:27 2025 +0000|realtek: rtl931x: fix I2C sda pin
-24d9fdff2e|Jonas Jelonek|Wed Jun 18 09:52:02 2025 +0000|realtek: rtl931x: add missing function reference for l2_hash_seed
+bbd95c0523|Felix Fietkau|Fri Jun 20 22:54:12 2025 +0200|ucode: add ubus refcounting fix
+9850052190|Felix Fietkau|Fri Jun 20 14:26:27 2025 +0200|hostapd: fix generating own neighbor report for dynamically added/changed interfaces
+3ebf110711|Felix Fietkau|Fri Jun 20 14:20:36 2025 +0200|hostapd: fix dealing with mac address changes for the primary BSS
 </details>

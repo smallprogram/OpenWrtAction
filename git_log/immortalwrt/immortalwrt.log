@@ -2,13 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-40a2d2ebaa|Tianling Shen|Thu Jun 19 22:09:29 2025 +0800|Merge Official Source
-da3f070010|Tianling Shen|Thu Jun 19 14:43:51 2025 +0800|sunxi: increase default boot partition to 32 MiB
-f4e1608464|Tianling Shen|Thu Jun 19 14:39:31 2025 +0800|make-index-json: fix compatibility with python3 < 3.9
-9b777547be|Shiji Yang|Tue Mar 18 00:42:19 2025 +0800|ramips: PCIe driver improvements for mt7620 and mt7628
-8e1d58a596|Shiji Yang|Thu May 8 21:20:22 2025 +0800|generic: net: phy: psb6970: fix missing-prototypes warnings
-042afe1f3d|Felix Fietkau|Wed Jun 18 17:03:27 2025 +0200|mt76: update to Git HEAD (2025-06-18)
-3f69fe3907|Álvaro Fernández Rojas|Wed Jun 11 09:46:44 2025 +0200|bmips: update BCM531x5 RGMII delays patch
-0bd694ea22|Álvaro Fernández Rojas|Wed Jun 11 09:46:44 2025 +0200|generic: 6.12: backport accepted BCM5325 patches
-d015a39dd3|Jonas Gorski|Wed Jun 18 10:46:35 2025 +0200|iproute2: point KERNEL_INCLUDE to toolchain headers
+465535d75b|Tianling Shen|Fri Jun 20 21:48:38 2025 +0800|base-files: fix apple ntp domain
 </details>

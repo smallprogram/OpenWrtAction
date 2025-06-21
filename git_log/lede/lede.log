@@ -2,13 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-75c0525c0|coolsnowwolf|Thu Jun 19 17:31:19 2025 +0800|stm32: add new stm32 target
-5814ca707|coolsnowwolf|Thu Jun 19 16:55:24 2025 +0800|starfive: add new target for StarFive JH7100/7110 SoC
-00c35a6e8|coolsnowwolf|Thu Jun 19 16:37:07 2025 +0800|d1: add new target (MangoPi MQ Pro) AllWinner D1 RISC-V SoC support
-bd0e4e507|coolsnowwolf|Thu Jun 19 16:19:04 2025 +0800|ath79: enable 6.12 testing kernel
-e255e5215|coolsnowwolf|Thu Jun 19 16:16:46 2025 +0800|armsr: enable 6.12 as a testing kernel version
-27cb571e4|coolsnowwolf|Thu Jun 19 16:15:10 2025 +0800|bcm27xx: enable 6.12 kernel testing
-593942c7b|coolsnowwolf|Thu Jun 19 16:12:50 2025 +0800|bcm27xx: fix build with kernel 6.6.93+
-cb18a760f|Hauke Mehrtens|Sat Jun 29 17:54:49 2024 +0200|kernel: Fix kmod-lib-lz4 packaging
-ba80c413a|Xiaok|Thu Jun 19 15:30:01 2025 +0800|u-boot.mk: add support for config customization
+54b7bd069|coolsnowwolf|Fri Jun 20 13:08:03 2025 +0800|kernel: bump 6.6 to 6.6.94
+67893e190|coolsnowwolf|Fri Jun 20 13:01:08 2025 +0800|kernel: bump 6.12 to 6.12.34
+93c7a0783|coolsnowwolf|Fri Jun 20 12:25:27 2025 +0800|mvebu: add 6.12 testing kernel and improver QNAP 321/322 support
+6c050704b|coolsnowwolf|Fri Jun 20 11:18:56 2025 +0800|qualcommbe: use kernel 6.12 by default
+c78b3044f|coolsnowwolf|Fri Jun 20 10:49:30 2025 +0800|realtek: fix build with kernel 6.12
+61f7d7d11|coolsnowwolf|Fri Jun 20 10:30:57 2025 +0800|realtek: 6.12: activate testing kernel
 </details>

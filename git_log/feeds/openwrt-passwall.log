@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cc2b43e|lwb1978|Thu Jun 19 10:46:40 2025 +0800|luci: optimize the code for updating chnroute
+89fbe70|lwb1978|Fri Jun 20 16:56:58 2025 +0800|luci: adapt to the new build tag for sing-box
 </details>
