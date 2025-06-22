@@ -2,7 +2,22 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bbd95c0523|Felix Fietkau|Fri Jun 20 22:54:12 2025 +0200|ucode: add ubus refcounting fix
-9850052190|Felix Fietkau|Fri Jun 20 14:26:27 2025 +0200|hostapd: fix generating own neighbor report for dynamically added/changed interfaces
-3ebf110711|Felix Fietkau|Fri Jun 20 14:20:36 2025 +0200|hostapd: fix dealing with mac address changes for the primary BSS
+583f81ef0e|Felix Fietkau|Wed Jun 11 11:34:16 2025 +0200|wifi-scripts: enforce management frame protection on 6 GHz
+254dd7d7d9|Felix Fietkau|Wed Jun 11 11:28:12 2025 +0200|wifi-scripts: enable GCMP-256 by default on WPA3/OWE configurations with HE or EHT
+a17c3be409|Felix Fietkau|Wed Jun 11 11:05:04 2025 +0200|wifi-scripts: on psk-sae configurations, disable PSK support on 6 GHz
+91a50b27bc|Felix Fietkau|Sat Jun 21 17:12:05 2025 +0200|unetmsg: make remote connection TCP timeout more aggressive
+dd57c070e9|Thomas Richard|Mon May 12 14:17:43 2025 +0200|stm32: modules: add missing dependency for stm32-dfsdm-adc
+74011c5c1c|Thomas Richard|Mon May 12 14:15:37 2025 +0200|kernel: modules: iio: package industrialio-backend module
+774a22e00e|Thomas Richard|Wed May 7 20:02:29 2025 +0200|stm32: modules: add kmod-stm32-dcmipp package
+b1e93ee54f|Thomas Richard|Mon May 5 10:30:35 2025 +0200|stm32: enable 6.12 testing kernel
+db05331f38|Thomas Richard|Wed May 7 17:53:59 2025 +0200|stm32: 6.12: update kernel 6.12 config
+1cdbddae6e|Thomas Richard|Wed May 7 17:53:47 2025 +0200|stm32: 6.12: refresh kernel patches
+234eadd07e|Thomas Richard|Mon May 5 10:28:59 2025 +0200|kernel/stm32: Restore kernel files for v6.6
+9e57133944|Thomas Richard|Mon May 5 10:28:59 2025 +0200|kernel/stm32: Create kernel files for v6.12 (from v6.6)
+8ef981698e|Wei-Ting Yang|Fri Jun 6 19:18:33 2025 +0800|util-linux: add wdctl
+695548128f|Wei-Ting Yang|Fri Jun 6 19:58:35 2025 +0800|util-linux: remove redundant slashes
+3e5a70482b|Mathew McBride|Thu Jun 12 12:17:47 2025 +1000|kernel: enable memory mapped TPM interface on armsr
+0ef4c3dfa0|Shiji Yang|Mon May 5 21:56:15 2025 +0800|uboot-envtools: cns3xxx: remove config file
+836a4cc6d3|John Audia|Thu Jun 19 10:59:11 2025 -0400|kernel: bump 6.6 to 6.6.94
+cb1b656027|Shiji Yang|Fri Jun 20 00:01:11 2025 +0800|kernel: bump 6.12 to 6.12.34
 </details>

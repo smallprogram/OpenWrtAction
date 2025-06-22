@@ -2,10 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-54b7bd069|coolsnowwolf|Fri Jun 20 13:08:03 2025 +0800|kernel: bump 6.6 to 6.6.94
-67893e190|coolsnowwolf|Fri Jun 20 13:01:08 2025 +0800|kernel: bump 6.12 to 6.12.34
-93c7a0783|coolsnowwolf|Fri Jun 20 12:25:27 2025 +0800|mvebu: add 6.12 testing kernel and improver QNAP 321/322 support
-6c050704b|coolsnowwolf|Fri Jun 20 11:18:56 2025 +0800|qualcommbe: use kernel 6.12 by default
-c78b3044f|coolsnowwolf|Fri Jun 20 10:49:30 2025 +0800|realtek: fix build with kernel 6.12
-61f7d7d11|coolsnowwolf|Fri Jun 20 10:30:57 2025 +0800|realtek: 6.12: activate testing kernel
+df65abcc8|Markus Stockhausen|Tue Jun 17 05:21:40 2025 -0400|kernel: mtdsplit_uimage: return 0 if not fatal
+f5a582a82|coolsnowwolf|Sat Jun 21 18:47:06 2025 +0800|rockchip: remove upstreamed patches for kernel 6.12
 </details>

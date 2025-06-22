@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-569fc3dc55|Tianling Shen|Fri Jun 20 14:35:12 2025 +0800|luci-base: rpcd: fix typo error
+31ce429f7a|Tianling Shen|Sat Jun 21 20:44:00 2025 +0800|luci-app-homeproxy: bump to latest git HEAD
 </details>
