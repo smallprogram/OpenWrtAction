@@ -1,7 +1,0 @@
-<details> <summary> <b>lede new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-df65abcc8|Markus Stockhausen|Tue Jun 17 05:21:40 2025 -0400|kernel: mtdsplit_uimage: return 0 if not fatal
-f5a582a82|coolsnowwolf|Sat Jun 21 18:47:06 2025 +0800|rockchip: remove upstreamed patches for kernel 6.12
-</details>

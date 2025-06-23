@@ -1,0 +1,57 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+9a39a449eb|Tianling Shen|Sun Jun 22 21:34:15 2025 +0800|Merge Official Source
+662eeb4e10|Tianling Shen|Sun Jun 22 21:20:40 2025 +0800|mediatek: disable x2 read mode for dosilicon spi-nand flash
+9177e65822|Tianling Shen|Sun Jun 22 20:59:33 2025 +0800|mediatek: disable unsupported dualio/quadio mode for dosilicon spi-nand flash
+19a75c41d4|Tianling Shen|Sun Jun 22 20:53:13 2025 +0800|mediatek: remove duplicated Fidelix SPI-NAND driver
+f62c33bc4a|Hauke Mehrtens|Sat Jun 21 19:17:46 2025 +0200|kernel: Fix IPv6 UDP fragmentation regression
+a61a2a9291|Eric Fahlgren|Mon Jun 9 16:59:13 2025 -0700|package: include abiversion tag in package metadata
+a944a6d6b1|Hauke Mehrtens|Sat Jun 21 19:21:51 2025 +0200|kernel: Add missing config option
+c695cf6109|Hauke Mehrtens|Sat Jun 21 19:23:47 2025 +0200|kernel: Refresh kernel configs
+502b2f4ee5|Joe Holden|Sun May 25 12:13:30 2025 +0000|realtek: switch HP-1920-48G to new shared gpio driver
+a37b47a512|Joe Holden|Sat May 3 15:04:56 2025 +0000|rtl839x: fix sfp ports on HPE 1920-48G PoE
+f1584bc733|Zheng Zhang|Sat Jun 14 22:56:04 2025 +0800|qualcommbe: enable CONFIG_THERMAL and CONFIG_THERMAL_HWMON
+7c22fce0f5|Zheng Zhang|Sun Jun 15 08:34:26 2025 +0800|qualcommax: enable CONFIG_THERMAL and CONFIG_THERMAL_HWMON
+bc6806d31f|xiao bo|Sun Jun 22 09:29:15 2025 +0800|kernel: remove expired i40evf drivers
+583f81ef0e|Felix Fietkau|Wed Jun 11 11:34:16 2025 +0200|wifi-scripts: enforce management frame protection on 6 GHz
+254dd7d7d9|Felix Fietkau|Wed Jun 11 11:28:12 2025 +0200|wifi-scripts: enable GCMP-256 by default on WPA3/OWE configurations with HE or EHT
+a17c3be409|Felix Fietkau|Wed Jun 11 11:05:04 2025 +0200|wifi-scripts: on psk-sae configurations, disable PSK support on 6 GHz
+91a50b27bc|Felix Fietkau|Sat Jun 21 17:12:05 2025 +0200|unetmsg: make remote connection TCP timeout more aggressive
+dd57c070e9|Thomas Richard|Mon May 12 14:17:43 2025 +0200|stm32: modules: add missing dependency for stm32-dfsdm-adc
+74011c5c1c|Thomas Richard|Mon May 12 14:15:37 2025 +0200|kernel: modules: iio: package industrialio-backend module
+774a22e00e|Thomas Richard|Wed May 7 20:02:29 2025 +0200|stm32: modules: add kmod-stm32-dcmipp package
+b1e93ee54f|Thomas Richard|Mon May 5 10:30:35 2025 +0200|stm32: enable 6.12 testing kernel
+db05331f38|Thomas Richard|Wed May 7 17:53:59 2025 +0200|stm32: 6.12: update kernel 6.12 config
+1cdbddae6e|Thomas Richard|Wed May 7 17:53:47 2025 +0200|stm32: 6.12: refresh kernel patches
+234eadd07e|Thomas Richard|Mon May 5 10:28:59 2025 +0200|kernel/stm32: Restore kernel files for v6.6
+9e57133944|Thomas Richard|Mon May 5 10:28:59 2025 +0200|kernel/stm32: Create kernel files for v6.12 (from v6.6)
+8ef981698e|Wei-Ting Yang|Fri Jun 6 19:18:33 2025 +0800|util-linux: add wdctl
+695548128f|Wei-Ting Yang|Fri Jun 6 19:58:35 2025 +0800|util-linux: remove redundant slashes
+3e5a70482b|Mathew McBride|Thu Jun 12 12:17:47 2025 +1000|kernel: enable memory mapped TPM interface on armsr
+0ef4c3dfa0|Shiji Yang|Mon May 5 21:56:15 2025 +0800|uboot-envtools: cns3xxx: remove config file
+836a4cc6d3|John Audia|Thu Jun 19 10:59:11 2025 -0400|kernel: bump 6.6 to 6.6.94
+cb1b656027|Shiji Yang|Fri Jun 20 00:01:11 2025 +0800|kernel: bump 6.12 to 6.12.34
+bbd95c0523|Felix Fietkau|Fri Jun 20 22:54:12 2025 +0200|ucode: add ubus refcounting fix
+9850052190|Felix Fietkau|Fri Jun 20 14:26:27 2025 +0200|hostapd: fix generating own neighbor report for dynamically added/changed interfaces
+3ebf110711|Felix Fietkau|Fri Jun 20 14:20:36 2025 +0200|hostapd: fix dealing with mac address changes for the primary BSS
+7e014bbe0b|Stefan Kalscheuer|Sat May 31 12:40:11 2025 +0200|mvebu: add 6.12 testing kernel
+819f78463c|Stefan Kalscheuer|Sat May 31 12:23:13 2025 +0200|mvebu: 6.12: refresh kernel config
+1738e87632|Stefan Kalscheuer|Sat May 31 12:09:38 2025 +0200|mvebu: 6.12: refresh patches
+6354ac76a4|Stefan Kalscheuer|Sat May 31 09:30:51 2025 +0200|kernel/mvebu: Restore kernel files for v6.6
+1e1e91a213|Stefan Kalscheuer|Sat May 31 09:30:51 2025 +0200|kernel/mvebu: Create kernel files for v6.12 (from v6.6)
+782afec6c1|Chukun Pan|Mon Jun 16 23:06:38 2025 +0800|mediatek: 6.12: fix cci driver probe for mt7988d
+9817c9186a|Shiji Yang|Tue Apr 29 20:09:09 2025 +0800|x86: move common kconfig symbols into target shared config
+805b5d893c|Shiji Yang|Tue Apr 29 20:09:09 2025 +0800|x86: refresh kernel symbol configs
+6348047e50|Hauke Mehrtens|Thu Jun 19 22:27:02 2025 +0200|procd: update to Git HEAD (2025-06-19)
+db9ba9a943|Josef Schlehofer|Sun Jun 15 11:39:33 2025 +0200|tools/bash: update to version 5.2.37
+225622e0f9|Mieczyslaw Nalewaj|Tue May 27 08:19:29 2025 +0200|mt76: replace strlcpy with strscpy
+23faf4c485|Markus Stockhausen|Thu Jun 12 09:20:12 2025 -0400|realtek: activate MIPS power cluster controller for RTL931x
+a51359aafd|Markus Stockhausen|Tue Jun 17 05:21:40 2025 -0400|kernel: mtdsplit_uimage: return 0 if not fatal
+f7dba4ebbc|Valeriy Manzhos|Sun Jun 15 13:08:29 2025 +0300|ath79: enable USB by default on hAP ac
+c35f2a23c8|Yijie Jin|Sat Dec 28 15:00:28 2024 +0800|ramips: mt7621: add support for JDCloud RE-SP-01B
+22854586c6|Markus Stockhausen|Wed Apr 30 04:24:27 2025 -0400|realtek: fix/add switchcore syscon nodes for RTL838x/RTL839x/RTL931x
+0bd5d5f748|Jonas Jelonek|Mon Jun 16 19:57:27 2025 +0000|realtek: rtl931x: fix I2C sda pin
+24d9fdff2e|Jonas Jelonek|Wed Jun 18 09:52:02 2025 +0000|realtek: rtl931x: add missing function reference for l2_hash_seed
+</details>

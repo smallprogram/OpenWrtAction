@@ -2,22 +2,51 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-583f81ef0e|Felix Fietkau|Wed Jun 11 11:34:16 2025 +0200|wifi-scripts: enforce management frame protection on 6 GHz
-254dd7d7d9|Felix Fietkau|Wed Jun 11 11:28:12 2025 +0200|wifi-scripts: enable GCMP-256 by default on WPA3/OWE configurations with HE or EHT
-a17c3be409|Felix Fietkau|Wed Jun 11 11:05:04 2025 +0200|wifi-scripts: on psk-sae configurations, disable PSK support on 6 GHz
-91a50b27bc|Felix Fietkau|Sat Jun 21 17:12:05 2025 +0200|unetmsg: make remote connection TCP timeout more aggressive
-dd57c070e9|Thomas Richard|Mon May 12 14:17:43 2025 +0200|stm32: modules: add missing dependency for stm32-dfsdm-adc
-74011c5c1c|Thomas Richard|Mon May 12 14:15:37 2025 +0200|kernel: modules: iio: package industrialio-backend module
-774a22e00e|Thomas Richard|Wed May 7 20:02:29 2025 +0200|stm32: modules: add kmod-stm32-dcmipp package
-b1e93ee54f|Thomas Richard|Mon May 5 10:30:35 2025 +0200|stm32: enable 6.12 testing kernel
-db05331f38|Thomas Richard|Wed May 7 17:53:59 2025 +0200|stm32: 6.12: update kernel 6.12 config
-1cdbddae6e|Thomas Richard|Wed May 7 17:53:47 2025 +0200|stm32: 6.12: refresh kernel patches
-234eadd07e|Thomas Richard|Mon May 5 10:28:59 2025 +0200|kernel/stm32: Restore kernel files for v6.6
-9e57133944|Thomas Richard|Mon May 5 10:28:59 2025 +0200|kernel/stm32: Create kernel files for v6.12 (from v6.6)
-8ef981698e|Wei-Ting Yang|Fri Jun 6 19:18:33 2025 +0800|util-linux: add wdctl
-695548128f|Wei-Ting Yang|Fri Jun 6 19:58:35 2025 +0800|util-linux: remove redundant slashes
-3e5a70482b|Mathew McBride|Thu Jun 12 12:17:47 2025 +1000|kernel: enable memory mapped TPM interface on armsr
-0ef4c3dfa0|Shiji Yang|Mon May 5 21:56:15 2025 +0800|uboot-envtools: cns3xxx: remove config file
-836a4cc6d3|John Audia|Thu Jun 19 10:59:11 2025 -0400|kernel: bump 6.6 to 6.6.94
-cb1b656027|Shiji Yang|Fri Jun 20 00:01:11 2025 +0800|kernel: bump 6.12 to 6.12.34
+7aecbefb52|Anton Yu. Ivanusev|Tue Jun 17 03:23:40 2025 +0500|ramips: mt76x8: add support for Keenetic 4G (KN-1212)
+83880cd01e|Markus Stockhausen|Sun Jun 22 03:53:08 2025 -0400|realtek: Use Otto timer on RTL931x
+ee46517a63|Markus Stockhausen|Sun Jun 22 03:51:51 2025 -0400|realtek: build Otto timer for RTL931x
+f1257b1ca3|Markus Stockhausen|Sun Jun 22 03:49:29 2025 -0400|realtek: backport MIPS GIC patch
+dc95180540|Mieczyslaw Nalewaj|Thu Jun 19 22:26:45 2025 +0200|mt76: Change CRLF to LF in patch 002
+97af506edf|INAGAKI Hiroshi|Sun Apr 7 11:53:17 2024 +0900|mvebu: add support for Check Point V-81
+2a3cb0e32d|INAGAKI Hiroshi|Mon Apr 8 13:46:03 2024 +0900|uboot-envtools: add support for Check Point V-81
+35c851b813|INAGAKI Hiroshi|Sun Apr 7 11:53:17 2024 +0900|mvebu: add support for Check Point V-80
+92a5a4935e|INAGAKI Hiroshi|Mon Apr 8 13:46:03 2024 +0900|uboot-envtools: add support for Check Point V-80
+2c379af543|INAGAKI Hiroshi|Sun Apr 7 09:38:35 2024 +0900|mvebu: add specific signature support to Build/boot-scr
+61f3e2d132|INAGAKI Hiroshi|Mon Apr 8 23:21:44 2024 +0900|mvebu: cortexa72: enable emmc feature
+e10a811408|INAGAKI Hiroshi|Sun Apr 7 18:52:39 2024 +0900|mvebu: cortexa72: enable CONFIG_CMDLINE_PARTITION for blkdevparts
+4392d1a92b|INAGAKI Hiroshi|Mon Apr 8 15:25:15 2024 +0900|build: add dtb support for sysupgrade-tar
+f9743c5190|INAGAKI Hiroshi|Mon Apr 8 20:24:47 2024 +0900|base-files: add dtb support to emmc_upgrade_tar()
+21347caf7e|INAGAKI Hiroshi|Sun Aug 4 18:14:43 2024 +0900|base-files: add gzip-compressed tar support to emmc_upgrade_tar()
+07dfb9b710|Niall McGee|Fri May 30 22:55:35 2025 +0100|base-files: ignore initscript output in sysupgrade
+515db1e069|John Audia|Sat Mar 15 10:54:53 2025 -0400|x86: config-6.12: enable RAPL interface
+1e00b92597|jinkela air|Sun Jun 22 10:13:56 2025 +0800|mediatek: Ruijie RG-X60 Pro: Fix LAN port status light
+594da824a4|cheng wang|Sun Jun 22 08:44:30 2025 +0800|mediatek: add support for Cudy TR3000  256MB  v1 flash version
+e7044dce96|Josef Schlehofer|Wed Jun 11 22:56:54 2025 +0200|omnia-eeprom: simplify Makefile
+12f13b227c|Jonas Jelonek|Sun Jun 22 09:48:01 2025 +0000|realtek: remove patches, files and config for 6.6
+1cd68e915d|Jonas Jelonek|Sat Jun 14 21:49:22 2025 +0000|realtek: switch to 6.12 as default
+cbf0d662c2|Markus Stockhausen|Tue Jun 17 01:43:55 2025 -0400|realtek: make use of serdes helper for Zyxel XGS1210-12
+eea6c5b3ea|Markus Stockhausen|Tue Jun 17 01:42:16 2025 -0400|realtek: make use of serdes helper for Zyxel XGS1250-12
+761b5d3906|Markus Stockhausen|Tue Jun 17 01:38:27 2025 -0400|realtek: make use of serdes helper for TP-Link TL-ST1008F v2.0
+44df763825|Markus Stockhausen|Tue May 20 04:10:17 2025 -0400|realtek: make use of serdes helper for XIKESTOR SKS8300-8X
+880565956d|Markus Stockhausen|Tue May 20 04:09:19 2025 -0400|realtek: make use of serdes helper for Zyxel GS1900-24(HP) v1/v2
+13a6e0620f|Markus Stockhausen|Tue May 20 04:07:05 2025 -0400|realtek: make use of serdes helper for D-Link DGS-1210-26
+cfd2db41a4|Markus Stockhausen|Tue May 20 04:06:32 2025 -0400|realtek: make use of serdes helper for D-Link DGS-1210-10P
+5fd72e7518|Markus Stockhausen|Tue May 20 04:06:10 2025 -0400|realtek: make use of serdes helper for Zyxel GS1900-10HP
+8b04cddd2e|Markus Stockhausen|Tue May 20 04:05:43 2025 -0400|realtek: make use of serdes helper for TP-Link SG2xxx
+7b2b095cc9|Markus Stockhausen|Tue May 20 04:04:44 2025 -0400|realtek: make use of serdes helper for Panasonic M8EG PN28080K
+0cf2db1fa1|Markus Stockhausen|Tue May 20 03:55:52 2025 -0400|realtek: make use of serdes helper for Netgear GS310TP v1
+d3dbd97043|Markus Stockhausen|Tue May 20 03:55:12 2025 -0400|realtek: make use of serdes helper for HPE 1920 8G
+4b72463f3c|Markus Stockhausen|Tue May 20 03:54:26 2025 -0400|realtek: make use of serdes helper for Engenius EWS2910P
+b172a2473b|Markus Stockhausen|Tue May 20 03:51:44 2025 -0400|realtek: make use of serdes helper for D-Link DGS-1210-10MP
+9512db4362|Markus Stockhausen|Tue May 20 03:46:04 2025 -0400|realtek: make use of serdes helper for Linksys LGS310C
+5703ca465c|Markus Stockhausen|Tue May 20 03:37:10 2025 -0400|realtek: add dts helper for internal phy with serdes
+f62c33bc4a|Hauke Mehrtens|Sat Jun 21 19:17:46 2025 +0200|kernel: Fix IPv6 UDP fragmentation regression
+a61a2a9291|Eric Fahlgren|Mon Jun 9 16:59:13 2025 -0700|package: include abiversion tag in package metadata
+a944a6d6b1|Hauke Mehrtens|Sat Jun 21 19:21:51 2025 +0200|kernel: Add missing config option
+c695cf6109|Hauke Mehrtens|Sat Jun 21 19:23:47 2025 +0200|kernel: Refresh kernel configs
+502b2f4ee5|Joe Holden|Sun May 25 12:13:30 2025 +0000|realtek: switch HP-1920-48G to new shared gpio driver
+a37b47a512|Joe Holden|Sat May 3 15:04:56 2025 +0000|rtl839x: fix sfp ports on HPE 1920-48G PoE
+f1584bc733|Zheng Zhang|Sat Jun 14 22:56:04 2025 +0800|qualcommbe: enable CONFIG_THERMAL and CONFIG_THERMAL_HWMON
+7c22fce0f5|Zheng Zhang|Sun Jun 15 08:34:26 2025 +0800|qualcommax: enable CONFIG_THERMAL and CONFIG_THERMAL_HWMON
+bc6806d31f|xiao bo|Sun Jun 22 09:29:15 2025 +0800|kernel: remove expired i40evf drivers
 </details>

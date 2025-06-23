@@ -2,5 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ceb3349f3|Tomasz Maciej Nowak|Fri Jun 20 16:54:25 2025 +0200|lttng-ust: bump version to 2.13.9
+e0d761e79|Etienne Champetier|Sun Jun 22 08:06:36 2025 -0400|simple-captive-portal: add new package
+6f9b86754|Daniel Golle|Sun Jun 22 18:15:05 2025 +0100|libtheora: use CONFIGURE_ARGS, fix build on armeb
+54d5ff160|Til Kaiser|Sat Jun 21 21:22:53 2025 +0200|iftop: update to latest Git HEAD
+a7253139c|John Audia|Thu Jun 19 13:17:14 2025 -0400|samba4: add conditional depends
+05d32f021|Tianling Shen|Sun Jun 22 21:46:03 2025 +0800|rclone: Update to 1.70.1
+aa8bb87ad|Tianling Shen|Sun Jun 22 21:44:38 2025 +0800|dnsproxy: Update to 0.75.6
+93bd9fc3e|Tianling Shen|Sun Jun 22 21:44:19 2025 +0800|cloudflared: Update to 2025.6.1
+2fdc4601c|Vladimir Ermakov|Fri May 30 10:54:15 2025 +0200|qemu: update to 10.0.2
+8ff1f5579|Vladimir Ermakov|Tue May 27 09:59:16 2025 +0200|qemu: refresh patches to include git headers
+40a439bfa|Vladimir Ermakov|Thu May 22 12:53:33 2025 +0200|qemu: update to 10.0.0
 </details>

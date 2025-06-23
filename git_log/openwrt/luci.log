@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+59a1910b14|Ramon Van Gorkom|Sun Jun 22 16:20:56 2025 +0200|luci-app-usteer: Extra error checking
+9c0f071bbd|Paul Donald|Sun Jun 22 22:35:46 2025 +0200|luci-base: check for wifi system feature before Promise.all
+</details>

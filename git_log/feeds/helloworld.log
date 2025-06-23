@@ -1,7 +1,0 @@
-<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-a128b66|zxl hhyccc|Sat Jun 21 23:12:13 2025 +0800|Merge pull request #1738 from zxlhhyccc/custom
-ec6df96|zxlhhyccc|Tue Jun 17 21:47:33 2025 +0800|luci-app-ssr-plus: Add subscribe link detection. Without update do not restart service.
-</details>
