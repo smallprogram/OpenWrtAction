@@ -1,0 +1,36 @@
+<details> <summary> <b>lede new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+264661a70|Mathew McBride|Thu Jun 12 12:17:47 2025 +1000|kernel: enable memory mapped TPM interface on armsr
+e908e5a46|coolsnowwolf|Tue Jun 24 00:43:20 2025 +0800|x86: add ERYING i7-13850HX WM790 NAS vPRO 10G-LAN D5 MB support
+795eca393|coolsnowwolf|Sat Jun 7 23:02:29 2025 +0800|bcm53xx: sync with upstream
+48162fa0e|coolsnowwolf|Sun Jun 22 23:06:38 2025 +0800|iwlwifi: fix build with kernel 6.12
+4537439d3|coolsnowwolf|Sat Jun 14 23:20:18 2025 +0800|kernel: bump all to latest HEAD
+4b4353bfb|coolsnowwolf|Sun Jan 22 23:19:50 2023 +0800|mvebu: add QNAP 321/322 support
+92c0ca751|Thomas Richard|Thu Sep 26 16:55:22 2024 +0200|stm32: add new stm32mp1 target
+120803979|Markus Stockhausen|Mon Sep 9 08:25:16 2024 -0400|realtek: 6.6: enable testing kernel
+aa295c35d|Zoltan HERPAI|Wed May 24 23:51:14 2023 +0200|d1: add new target for Allwinner D1
+8ee17765d|Zoltan HERPAI|Fri May 2 15:31:58 2025 +0200|sifiveu: add 6.12 kernel as testing
+dbf85c424|Zoltan HERPAI|Sun May 28 15:14:02 2023 +0200|starfive: add new target for StarFive
+55e3f4d50|Mathew McBride|Tue Mar 18 15:42:13 2025 +1100|armsr: enable 6.12 as a testing kernel
+1906f83c4|Alexandru Gagniuc|Sat May 3 08:57:10 2025 -0500|qualcommbe: enable 6.12 testing kernel
+df65abcc8|Markus Stockhausen|Tue Jun 17 05:21:40 2025 -0400|kernel: mtdsplit_uimage: return 0 if not fatal
+f5a582a82|coolsnowwolf|Sat Jun 21 18:47:06 2025 +0800|rockchip: remove upstreamed patches for kernel 6.12
+702e10500|Stefan Kalscheuer|Sat May 31 12:40:11 2025 +0200|mvebu: add 6.12 testing kernel support
+5b01033aa|Shiji Yang|Thu May 1 00:39:34 2025 +0800|ath79: add 6.12 testing kernel support
+04ed2f02d|=?UTF-8?q?=C3=81lvaro=20Fern=C3=A1ndez=20Rojas?=|Sun Jun 8 17:03:30 2025 +0200|modules: add DW I2C Platform controller
+d81c03f05|=?UTF-8?q?=C3=81lvaro=20Fern=C3=A1ndez=20Rojas?=|Wed May 7 12:08:00 2025 +0200|bcm27xx: add 6.12 patches from RPi repo
+54b7bd069|coolsnowwolf|Fri Jun 20 13:08:03 2025 +0800|kernel: bump 6.6 to 6.6.94
+67893e190|coolsnowwolf|Fri Jun 20 13:01:08 2025 +0800|kernel: bump 6.12 to 6.12.34
+93c7a0783|coolsnowwolf|Fri Jun 20 12:25:27 2025 +0800|mvebu: add 6.12 testing kernel and improver QNAP 321/322 support
+6c050704b|coolsnowwolf|Fri Jun 20 11:18:56 2025 +0800|qualcommbe: use kernel 6.12 by default
+c78b3044f|coolsnowwolf|Fri Jun 20 10:49:30 2025 +0800|realtek: fix build with kernel 6.12
+61f7d7d11|coolsnowwolf|Fri Jun 20 10:30:57 2025 +0800|realtek: 6.12: activate testing kernel
+75c0525c0|coolsnowwolf|Thu Jun 19 17:31:19 2025 +0800|stm32: add new stm32 target
+5814ca707|coolsnowwolf|Thu Jun 19 16:55:24 2025 +0800|starfive: add new target for StarFive JH7100/7110 SoC
+00c35a6e8|coolsnowwolf|Thu Jun 19 16:37:07 2025 +0800|d1: add new target (MangoPi MQ Pro) AllWinner D1 RISC-V SoC support
+bd0e4e507|coolsnowwolf|Thu Jun 19 16:19:04 2025 +0800|ath79: enable 6.12 testing kernel
+e255e5215|coolsnowwolf|Thu Jun 19 16:16:46 2025 +0800|armsr: enable 6.12 as a testing kernel version
+27cb571e4|coolsnowwolf|Thu Jun 19 16:15:10 2025 +0800|bcm27xx: enable 6.12 kernel testing
+</details>

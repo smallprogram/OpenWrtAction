@@ -2,51 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7aecbefb52|Anton Yu. Ivanusev|Tue Jun 17 03:23:40 2025 +0500|ramips: mt76x8: add support for Keenetic 4G (KN-1212)
-83880cd01e|Markus Stockhausen|Sun Jun 22 03:53:08 2025 -0400|realtek: Use Otto timer on RTL931x
-ee46517a63|Markus Stockhausen|Sun Jun 22 03:51:51 2025 -0400|realtek: build Otto timer for RTL931x
-f1257b1ca3|Markus Stockhausen|Sun Jun 22 03:49:29 2025 -0400|realtek: backport MIPS GIC patch
-dc95180540|Mieczyslaw Nalewaj|Thu Jun 19 22:26:45 2025 +0200|mt76: Change CRLF to LF in patch 002
-97af506edf|INAGAKI Hiroshi|Sun Apr 7 11:53:17 2024 +0900|mvebu: add support for Check Point V-81
-2a3cb0e32d|INAGAKI Hiroshi|Mon Apr 8 13:46:03 2024 +0900|uboot-envtools: add support for Check Point V-81
-35c851b813|INAGAKI Hiroshi|Sun Apr 7 11:53:17 2024 +0900|mvebu: add support for Check Point V-80
-92a5a4935e|INAGAKI Hiroshi|Mon Apr 8 13:46:03 2024 +0900|uboot-envtools: add support for Check Point V-80
-2c379af543|INAGAKI Hiroshi|Sun Apr 7 09:38:35 2024 +0900|mvebu: add specific signature support to Build/boot-scr
-61f3e2d132|INAGAKI Hiroshi|Mon Apr 8 23:21:44 2024 +0900|mvebu: cortexa72: enable emmc feature
-e10a811408|INAGAKI Hiroshi|Sun Apr 7 18:52:39 2024 +0900|mvebu: cortexa72: enable CONFIG_CMDLINE_PARTITION for blkdevparts
-4392d1a92b|INAGAKI Hiroshi|Mon Apr 8 15:25:15 2024 +0900|build: add dtb support for sysupgrade-tar
-f9743c5190|INAGAKI Hiroshi|Mon Apr 8 20:24:47 2024 +0900|base-files: add dtb support to emmc_upgrade_tar()
-21347caf7e|INAGAKI Hiroshi|Sun Aug 4 18:14:43 2024 +0900|base-files: add gzip-compressed tar support to emmc_upgrade_tar()
-07dfb9b710|Niall McGee|Fri May 30 22:55:35 2025 +0100|base-files: ignore initscript output in sysupgrade
-515db1e069|John Audia|Sat Mar 15 10:54:53 2025 -0400|x86: config-6.12: enable RAPL interface
-1e00b92597|jinkela air|Sun Jun 22 10:13:56 2025 +0800|mediatek: Ruijie RG-X60 Pro: Fix LAN port status light
-594da824a4|cheng wang|Sun Jun 22 08:44:30 2025 +0800|mediatek: add support for Cudy TR3000  256MB  v1 flash version
-e7044dce96|Josef Schlehofer|Wed Jun 11 22:56:54 2025 +0200|omnia-eeprom: simplify Makefile
-12f13b227c|Jonas Jelonek|Sun Jun 22 09:48:01 2025 +0000|realtek: remove patches, files and config for 6.6
-1cd68e915d|Jonas Jelonek|Sat Jun 14 21:49:22 2025 +0000|realtek: switch to 6.12 as default
-cbf0d662c2|Markus Stockhausen|Tue Jun 17 01:43:55 2025 -0400|realtek: make use of serdes helper for Zyxel XGS1210-12
-eea6c5b3ea|Markus Stockhausen|Tue Jun 17 01:42:16 2025 -0400|realtek: make use of serdes helper for Zyxel XGS1250-12
-761b5d3906|Markus Stockhausen|Tue Jun 17 01:38:27 2025 -0400|realtek: make use of serdes helper for TP-Link TL-ST1008F v2.0
-44df763825|Markus Stockhausen|Tue May 20 04:10:17 2025 -0400|realtek: make use of serdes helper for XIKESTOR SKS8300-8X
-880565956d|Markus Stockhausen|Tue May 20 04:09:19 2025 -0400|realtek: make use of serdes helper for Zyxel GS1900-24(HP) v1/v2
-13a6e0620f|Markus Stockhausen|Tue May 20 04:07:05 2025 -0400|realtek: make use of serdes helper for D-Link DGS-1210-26
-cfd2db41a4|Markus Stockhausen|Tue May 20 04:06:32 2025 -0400|realtek: make use of serdes helper for D-Link DGS-1210-10P
-5fd72e7518|Markus Stockhausen|Tue May 20 04:06:10 2025 -0400|realtek: make use of serdes helper for Zyxel GS1900-10HP
-8b04cddd2e|Markus Stockhausen|Tue May 20 04:05:43 2025 -0400|realtek: make use of serdes helper for TP-Link SG2xxx
-7b2b095cc9|Markus Stockhausen|Tue May 20 04:04:44 2025 -0400|realtek: make use of serdes helper for Panasonic M8EG PN28080K
-0cf2db1fa1|Markus Stockhausen|Tue May 20 03:55:52 2025 -0400|realtek: make use of serdes helper for Netgear GS310TP v1
-d3dbd97043|Markus Stockhausen|Tue May 20 03:55:12 2025 -0400|realtek: make use of serdes helper for HPE 1920 8G
-4b72463f3c|Markus Stockhausen|Tue May 20 03:54:26 2025 -0400|realtek: make use of serdes helper for Engenius EWS2910P
-b172a2473b|Markus Stockhausen|Tue May 20 03:51:44 2025 -0400|realtek: make use of serdes helper for D-Link DGS-1210-10MP
-9512db4362|Markus Stockhausen|Tue May 20 03:46:04 2025 -0400|realtek: make use of serdes helper for Linksys LGS310C
-5703ca465c|Markus Stockhausen|Tue May 20 03:37:10 2025 -0400|realtek: add dts helper for internal phy with serdes
-f62c33bc4a|Hauke Mehrtens|Sat Jun 21 19:17:46 2025 +0200|kernel: Fix IPv6 UDP fragmentation regression
-a61a2a9291|Eric Fahlgren|Mon Jun 9 16:59:13 2025 -0700|package: include abiversion tag in package metadata
-a944a6d6b1|Hauke Mehrtens|Sat Jun 21 19:21:51 2025 +0200|kernel: Add missing config option
-c695cf6109|Hauke Mehrtens|Sat Jun 21 19:23:47 2025 +0200|kernel: Refresh kernel configs
-502b2f4ee5|Joe Holden|Sun May 25 12:13:30 2025 +0000|realtek: switch HP-1920-48G to new shared gpio driver
-a37b47a512|Joe Holden|Sat May 3 15:04:56 2025 +0000|rtl839x: fix sfp ports on HPE 1920-48G PoE
-f1584bc733|Zheng Zhang|Sat Jun 14 22:56:04 2025 +0800|qualcommbe: enable CONFIG_THERMAL and CONFIG_THERMAL_HWMON
-7c22fce0f5|Zheng Zhang|Sun Jun 15 08:34:26 2025 +0800|qualcommax: enable CONFIG_THERMAL and CONFIG_THERMAL_HWMON
-bc6806d31f|xiao bo|Sun Jun 22 09:29:15 2025 +0800|kernel: remove expired i40evf drivers
+1ce0eb5bf2|Ondrej Cierny|Fri Jun 20 14:43:00 2025 -0700|toolchain/wrapper: add missing qstrip to info.mk export
+2b0b353104|Tim Harvey|Thu Jun 19 14:34:34 2025 -0700|imx: venice: disable PCI AER
+6bb42ddf0e|Tim Harvey|Thu Jun 19 14:32:11 2025 -0700|imx: venice: add dt overlay support
+5c9460a4da|Tim Harvey|Thu Jun 19 16:11:44 2025 -0700|imx: 6-12: add additional patches
+f940f7c1ac|Felix Fietkau|Mon Jun 23 11:21:48 2025 +0200|hostapd: preserve vif radio mask for extra bss interfaces
+e3cf7088f1|Konstantin Demin|Tue Jun 17 02:51:20 2025 +0300|libcrypt-compat: introduce package
+47b6b9de1a|Mario Andrés Pérez|Thu Jun 12 15:49:59 2025 +0200|base-files: handle packages alternatives when apk removes packages
+fccd1dd0ae|Eric Fahlgren|Sun Jun 22 07:02:35 2025 -0700|rpcd: update to Git HEAD (2025-06-22)
 </details>
