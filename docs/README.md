@@ -177,5 +177,36 @@ bash wsl2op.sh
 cd OpenWrtAction
 bash wsl2op.sh
 ```
+---
+## ❤️ Acknowledgements
+
+Thanks to everyone who used, contributed to, and contributed to this project!
+
+Special thanks to the following projects/communities for providing inspiration and support for this project:
+
+- [immortalwrt](https://github.com/immortalwrt/immortalwrt.git)
+- [openwrt](https://github.com/openwrt/openwrt.git)
+- [lede](https://github.com/coolsnowwolf/lede)
+- And every enthusiastic user in the community ❤️
+
+<p align="center">
+  <a href="https://github.com/1715173329"><img src="https://github.com/1715173329.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/coolsnowwolf"><img src="https://github.com/coolsnowwolf.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/Beginner-Go"><img src="https://github.com/Beginner-Go.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/graysky2"><img src="https://github.com/graysky2.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/QiuSimons"><img src="https://github.com/QiuSimons.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/Ansuel"><img src="https://github.com/Ansuel.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/Mattraks"><img src="https://github.com/Mattraks.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/nbd168"><img src="https://github.com/nbd168.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/kaloz"><img src="https://github.com/kaloz.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/neheb"><img src="https://github.com/neheb.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/Noltari"><img src="https://github.com/Noltari.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+</p>
+
+
+---
+<p align="center">
+    <img src="pic/logo/asus.png" width="90"/> <img src="pic/logo/jdcloud.png" width="90"/> <img src="pic/logo/phicomm.png" width="90"/> <img src="pic/logo/RaspberryPi.png" width="90"/> <img src="pic/logo/rockship.png" width="90"/> <img src="pic/logo/xiaomi.png" width="90"/> <img src="pic/logo/x86.png" width="90"/> <img src="pic/logo/xunlei.png" width="90"/>
+</p >
 
 

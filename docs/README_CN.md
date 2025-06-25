@@ -181,4 +181,37 @@ cd OpenWrtAction
 bash wsl2op.sh
 ```
 
+---
+## ❤️ 致谢
+
+感谢所有使用、反馈和贡献本项目的朋友们！
+
+特别鸣谢以下项目/社区为本项目提供了灵感与支持：
+
+- [immortalwrt](https://github.com/immortalwrt/immortalwrt.git)
+- [openwrt](https://github.com/openwrt/openwrt.git)
+- [lede](https://github.com/coolsnowwolf/lede)
+- 以及社区中的每一位热心用户 ❤️
+  
+
+<p align="center">
+  <a href="https://github.com/1715173329"><img src="https://github.com/1715173329.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/coolsnowwolf"><img src="https://github.com/coolsnowwolf.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/Beginner-Go"><img src="https://github.com/Beginner-Go.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/graysky2"><img src="https://github.com/graysky2.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/QiuSimons"><img src="https://github.com/QiuSimons.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/Ansuel"><img src="https://github.com/Ansuel.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/Mattraks"><img src="https://github.com/Mattraks.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/nbd168"><img src="https://github.com/nbd168.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/kaloz"><img src="https://github.com/kaloz.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/neheb"><img src="https://github.com/neheb.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/Noltari"><img src="https://github.com/Noltari.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+</p>
+
+
+---
+<p align="center">
+    <img src="pic/logo/asus.png" width="90"/> <img src="pic/logo/jdcloud.png" width="90"/> <img src="pic/logo/phicomm.png" width="90"/> <img src="pic/logo/RaspberryPi.png" width="90"/> <img src="pic/logo/rockship.png" width="90"/> <img src="pic/logo/xiaomi.png" width="90"/> <img src="pic/logo/x86.png" width="90"/> <img src="pic/logo/xunlei.png" width="90"/>
+</p >
+
 
