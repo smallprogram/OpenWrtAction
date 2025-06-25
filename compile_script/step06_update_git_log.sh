@@ -28,6 +28,7 @@ feeds_REPO_URLS=(
     "https://github.com/xiaorouji/openwrt-passwall"
     "https://github.com/xiaorouji/openwrt-passwall2"
     "https://github.com/vernesong/OpenClash"
+    "https://github.com/nikkinikki-org/OpenWrt-nikki"
 )
 
 

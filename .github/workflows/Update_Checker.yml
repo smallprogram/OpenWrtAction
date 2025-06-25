@@ -61,6 +61,7 @@ jobs:
         $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/xiaorouji/openwrt-passwall2" "14"
         $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/fw876/helloworld" "15"
         $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/vernesong/OpenClash" "16"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/nikkinikki-org/OpenWrt-nikki" "17"
              
     - name: Show Commit Head and Combination Heads
       id: combHeader
@@ -81,7 +82,8 @@ jobs:
         ${{steps.getHash.outputs.SHA_13}}\
         ${{steps.getHash.outputs.SHA_14}}\
         ${{steps.getHash.outputs.SHA_15}}\
-        ${{steps.getHash.outputs.SHA_16}}" >> $GITHUB_OUTPUT
+        ${{steps.getHash.outputs.SHA_16}}\
+        ${{steps.getHash.outputs.SHA_17}}" >> $GITHUB_OUTPUT
 
     - name: Compare Commit Hash
       id: cacheHash
