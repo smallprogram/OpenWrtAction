@@ -2,8 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-46c0a10|coolsnowwolf|Tue Jun 24 01:04:49 2025 +0800|Merge pull request #1743 from fw876/revert-1737-xray-core-25.6.8
-2419e52|coolsnowwolf|Tue Jun 24 01:04:30 2025 +0800|Revert "xray-core: update to 25.6.8"
-75f7f11|zxl hhyccc|Mon Jun 23 20:13:51 2025 +0800|Merge pull request #1741 from zxlhhyccc/custom
-88421a7|zxlhhyccc|Sat Jun 21 23:32:40 2025 +0800|luci-app-ssr-plus: Fix and add `ss+shadow-tls` subscribe.
+6ada368|zxl hhyccc|Wed Jun 25 00:20:30 2025 +0800|Merge pull request #1744 from zxlhhyccc/custom
+1115cdd|zxlhhyccc|Tue Jun 24 22:25:17 2025 +0800|luci-app-ssr-plus: Optimize hysteria2 config code.
+ea54765|zxl hhyccc|Tue Jun 24 13:01:11 2025 +0800|Merge pull request #1742 from zxlhhyccc/custom
+0be32df|zxlhhyccc|Tue Jun 24 00:16:54 2025 +0800|luci-app-ssr-plus: Fix hysteria2 config code.
 </details>

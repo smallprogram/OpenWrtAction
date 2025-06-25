@@ -2,12 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1ce0eb5bf2|Ondrej Cierny|Fri Jun 20 14:43:00 2025 -0700|toolchain/wrapper: add missing qstrip to info.mk export
-2b0b353104|Tim Harvey|Thu Jun 19 14:34:34 2025 -0700|imx: venice: disable PCI AER
-6bb42ddf0e|Tim Harvey|Thu Jun 19 14:32:11 2025 -0700|imx: venice: add dt overlay support
-5c9460a4da|Tim Harvey|Thu Jun 19 16:11:44 2025 -0700|imx: 6-12: add additional patches
-f940f7c1ac|Felix Fietkau|Mon Jun 23 11:21:48 2025 +0200|hostapd: preserve vif radio mask for extra bss interfaces
-e3cf7088f1|Konstantin Demin|Tue Jun 17 02:51:20 2025 +0300|libcrypt-compat: introduce package
-47b6b9de1a|Mario Andrés Pérez|Thu Jun 12 15:49:59 2025 +0200|base-files: handle packages alternatives when apk removes packages
-fccd1dd0ae|Eric Fahlgren|Sun Jun 22 07:02:35 2025 -0700|rpcd: update to Git HEAD (2025-06-22)
+0c7d564b1d|Eric Fahlgren|Mon Jun 23 15:50:23 2025 -0700|scripts: make-index-json: rework for old Python versions
+d3324aa208|Paul Spooren|Tue Jun 24 16:29:05 2025 +0200|ci: add missing permission to add comments
+8186e5e5a4|Paul Spooren|Tue Jun 24 10:28:38 2025 +0200|ci: add bot to build on comment
+b48925fd9c|Felix Fietkau|Tue Jun 24 15:04:17 2025 +0200|wifi-scripts: add support for RSN overide and use it for improved WPA3 compat
+9df3d6b21c|Erik Servili|Mon Jun 23 19:18:31 2025 +0200|qualcommax: ipq60xx: WAX610 remove unmountable oem partitions on upgrade
 </details>

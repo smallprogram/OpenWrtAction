@@ -2,20 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-73f9b9ab7|Etienne Champetier|Mon Jun 23 10:19:03 2025 -0400|prometheus-node-exporter-lua: add HTTPS support
-377f537aa|Etienne Champetier|Mon Jun 23 08:05:41 2025 -0400|prometheus-node-exporter-lua: remove '#!' / exec bit
-bd43da7ce|Chris Swan|Wed May 21 10:46:40 2025 +0100|csshnpd: add new package
-28c085f7c|Michael Payne|Mon Mar 31 09:30:49 2025 +0000|prometheus-node-exporter-lua: fix hostapd_ubus_stations & hostapd_stations
-51137e588|Sergey Shatunov|Tue Apr 15 21:19:56 2025 +0800|prometheus-node-exporter-lua: add nftables named counters collector
-f6cb2a6b0|Kym Eden|Mon Mar 3 11:39:30 2025 +0000|prometheus-node-exporter-lua: netclass: Ignore non numbers
-1408f86bd|Georgi Valkov|Fri Jun 13 10:35:28 2025 +0300|fuse3: mount_util.c: restore symlink check
-9ef176aae|Georgi Valkov|Thu Jun 12 08:28:04 2025 +0300|fuse3: fix build warning in fuse_signals.c
-992b62589|Georgi Valkov|Thu Jun 12 07:12:50 2025 +0300|fuse3: update to version 3.17.2
-2c811dd76|Til Kaiser|Fri Jun 20 13:02:51 2025 +0200|rrdtool1: fix compilation with GCC 15
-9672ccaf5|hingbong lo|Thu Jun 19 02:32:03 2025 +0000|bash: fix build failed with GCC 15 #26784
-bb43d5f28|Amos Shapira|Wed Jun 4 18:54:11 2025 +1000|prometheus-node-exporter-lua: add newline to error messages
-3b2a63dae|Javier Marcet|Fri Jun 20 20:51:41 2025 +0200|docker-compose: Update to version 2.37.2
-5ffca82f5|Thibaut VARÈNE|Fri Jun 13 14:44:46 2025 +0200|libradcli: fix build options
-4e62e45ab|Jonas Jelonek|Fri Jun 20 16:35:37 2025 +0200|nlbwmon: update to Git HEAD (2025-06-02)
-ffec24dfc|Til Kaiser|Fri Jun 20 13:03:21 2025 +0200|libical: update to 3.0.20
+caeb4c183|Etienne Champetier|Tue Jun 24 16:10:41 2025 -0400|prometheus-node-exporter-lua: mwan3: speed up
 </details>
