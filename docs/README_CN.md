@@ -1,7 +1,7 @@
 <div align="center">
 
 ![](pic/openwrt-logo.jpg)
-<h1>OpenWrt — Multi-Platform Firmware Cloud Compilation</h1>
+<h1>OpenWrt — 多平台多设备固件云编译</h1>
 </div>
 
 
@@ -23,7 +23,7 @@
 
 ---
 
-## 💻 Source Code Platform
+## 💻 代码源
 <!-- <div align="center">
 
 [![](https://img.shields.io/badge/source-immortalwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt) [![](https://img.shields.io/badge/source-lean-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede) [![](https://img.shields.io/badge/source-openwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)
@@ -72,22 +72,24 @@
 
 ---
 
-## ⚙️ WorkFlow
+## ⚙️ 工作流
 |ActionStatus|Network Support|Latest Release|Latest Download|
 |-|-|-|-|
 |[![Build-OpenWrt_Multi-Platform(V4)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_Multi-Platform(V4).yml/badge.svg?branch=main)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_Multi-Platform(V4).yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|![GitHub release (with filter)](https://img.shields.io/github/v/release/smallprogram/OpenWrtAction)|[![GitHub release (latest by date)](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/latest/total?style=flat-square)](https://github.com/smallprogram/OpenWrtAction/releases/latest)|
 
 
-> Each Release contains multiple source platform firmwares. Please select the corresponding firmware download according to your platform.
-> Sometimes a Release may not have the firmware you need, for example, the X86 firmware cannot be found. It may be that the compilation in the Action failed. Please wait patiently for the next compiled and uploaded Release.
-> Each Release contains the package compression package of each platform. The name format is buildinfo_[source platform]_[platform name]. For example, `buildinfo_immortalwrt_X86`. If you do not want to upgrade the firmware, but only want to upgrade a certain ipk, you can download the compressed package and select the ipk to upload to the soft router for installation.
-> For more information, please refer to the instructions in the release
+> 每一个Release包含多个源码平台固件，请根据自己的平台选择对应的固件下载
+> 有时候可能某个Release没有你需要的固件，例如找不到X86固件，那有可能是Action中编译失败了，请耐心等待下次编译上传的Release
+> 每个Release包含各个平台的packages压缩包，名称格式为buildinfo_[源码平台]_[平台名称]，例如，`buildinfo_immortalwrt_X86`,如果你不想升级固件，只想升级某个ipk可以下载压缩包选择ipk上传至软路由安装即可。
+> 详细信息请参考release中的说明
 ---
-## 🌟 Featured Plugins
+## 🌟 特色插件
 
-Selected plug-in configuration, covering common functions such as network acceleration, theme beautification, system management, etc.
+精选插件配置，涵盖网络加速、主题美化、系统管理等常用功能。
 
-### 📡 Network and Agent
+
+
+### 📡 网络与代理
 ```
 CONFIG_PACKAGE_luci-app-adguardhome=y
 CONFIG_PACKAGE_luci-app-ddns-go=y
@@ -102,7 +104,7 @@ CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-udp2raw=y
 CONFIG_PACKAGE_luci-app-udpxy=y
 ```
-### ⚙️ System Management and Tools
+### ⚙️ 系统管理与工具
 ```
 CONFIG_PACKAGE_luci-app-commands=y
 CONFIG_PACKAGE_luci-app-ramfree=y
@@ -118,7 +120,7 @@ CONFIG_PACKAGE_luci-app-wol=y
 CONFIG_PACKAGE_luci-app-wechatpush=y
 ```
 
-### 📊 Flow control and monitoring
+### 📊 流控与监控
 ```
 CONFIG_PACKAGE_luci-app-eqos=y
 CONFIG_PACKAGE_luci-app-sqm=y
@@ -127,12 +129,12 @@ CONFIG_PACKAGE_luci-app-firewall=y
 CONFIG_PACKAGE_luci-app-statistics=y
 CONFIG_PACKAGE_luci-app-vnstat2=y
 ```
-### 🛡️ Security and Authentication
+### 🛡️ 安全与认证
 ```
 CONFIG_PACKAGE_luci-app-acme=y
 CONFIG_PACKAGE_luci-app-arpbind=y
 ```
-### 🎨 UI Themes and Interfaces
+### 🎨 UI 主题与界面
 ```
 CONFIG_PACKAGE_luci-theme-argon=y
 CONFIG_PACKAGE_luci-theme-bootstrap=y
@@ -147,32 +149,33 @@ CONFIG_PACKAGE_luci-app-argon-config=y
 
 ---
 
-## 🔗 Quick Jump
-#### [🧭 Latest firmware list, click to get it](https://github.com/smallprogram/OpenWrtAction/tags)
-#### [🧭 R1 Soft Router Installation ESXi 8.0 Tutorial](R1_ESXI8.md)
+## 🔗 快速跳转
+
+#### [🧭 最新固件列表，点击自取](https://github.com/smallprogram/OpenWrtAction/tags)
+#### [🧭 R1软路由安装ESXi 8.0教程](R1_ESXI8.md)
 ---
-## 📚 Related parameters
+## 📚 相关参数
 ```
-1. Default address:`10.10.0.253`
-2. Default account:`root`
-3. Default password:`None`
+1. 默认地址:`10.10.0.253`
+2. 默认账户:`root`
+3. 默认密码:`无`
 ```
 
 ---
-## 🤖 Automation script
-### wsl2op.sh local automatic compilation shell script description
+## 🤖 自动化脚本
+### wsl2op.sh本地自动编译shell脚本说明
 
-Before running, please make sure that your compilation environment has installed the required compilation environment and use a non-root user to execute.
+运行前请确保你的编译环境已经安装要求的编译环境，并且使用非root用户执行。
 
-### Execution compilation method (non-root user)
+### 执行编译方式(非Root用户)
 
-#### First execution
+#### 首次执行
 ```shell
 git clone https://github.com/smallprogram/OpenWrtAction
 cd OpenWrtAction
 bash wsl2op.sh
 ```
-#### Second execution
+#### 二次执行
 ```shell
 cd OpenWrtAction
 bash wsl2op.sh
