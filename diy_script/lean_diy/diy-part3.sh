@@ -33,6 +33,7 @@ if [ $attempts -eq 3 ]; then
     package/feeds/passwall2/luci-app-passwall2/compile \
     package/feeds/helloworld/luci-app-ssr-plus/compile \
     package/feeds/OpenClash/luci-app-openclash/compile \
+    package/feeds/nikki/luci-app-nikki/compile \
     package/custom_packages/luci-theme-argon/compile \
     package/custom_packages/luci-app-argon-config/compile \
     package/custom_packages/luci-app-adguardhome/compile \
