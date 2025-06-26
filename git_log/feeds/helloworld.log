@@ -1,9 +1,0 @@
-<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-6ada368|zxl hhyccc|Wed Jun 25 00:20:30 2025 +0800|Merge pull request #1744 from zxlhhyccc/custom
-1115cdd|zxlhhyccc|Tue Jun 24 22:25:17 2025 +0800|luci-app-ssr-plus: Optimize hysteria2 config code.
-ea54765|zxl hhyccc|Tue Jun 24 13:01:11 2025 +0800|Merge pull request #1742 from zxlhhyccc/custom
-0be32df|zxlhhyccc|Tue Jun 24 00:16:54 2025 +0800|luci-app-ssr-plus: Fix hysteria2 config code.
-</details>

@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-855e38245e|Ramon Van Gorkom|Sun Jun 22 13:47:39 2025 +0200|luci-app-uhttpd: bugfix
+2e5de8d0d4|Hosted Weblate|Wed Jun 25 16:53:43 2025 +0200|Translated using Weblate (Portuguese (Brazil))
+df28a18166|Paul Donald|Fri Apr 25 04:21:38 2025 +0200|luci-app-chrony: Add chrony
+3c16c59007|Paul Donald|Fri Apr 25 20:24:17 2025 +0200|luci-base: implement a range slider input/control
 </details>

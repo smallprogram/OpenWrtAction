@@ -2,5 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-caeb4c183|Etienne Champetier|Tue Jun 24 16:10:41 2025 -0400|prometheus-node-exporter-lua: mwan3: speed up
+3f7daf566|Paul Donald|Mon Jun 23 15:13:53 2025 +0200|ddns-scripts: bump package release
+88dc8e8b8|Paul Donald|Fri Apr 11 15:08:54 2025 +0200|ddns-scripts: refactor verify_proxy()
+38e02fbd5|Paul Donald|Fri Apr 11 15:02:28 2025 +0200|ddns-scripts: drop split_FQDN()
+9cdd1a166|Paul Donald|Mon Apr 14 17:12:36 2025 +0200|ddns-scripts: refactor get_current_ip()
+727cdeff6|Paul Donald|Fri Apr 11 15:38:43 2025 +0200|ddns-scripts: refactor verify_dns()
+b953ed23f|Paul Donald|Fri Apr 11 15:32:47 2025 +0200|ddns-scripts: refactor verify_host_port()
+5745ffb54|Wesley Gimenes|Fri Jun 20 18:13:59 2025 -0300|netbird: update to 0.49.0
 </details>

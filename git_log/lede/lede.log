@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4345acfd4|Markus Stockhausen|Wed Jun 4 03:19:40 2025 -0400|kernel: mtdsplit_uimage: return 0 if not fatal
+acbd4120e|Álvaro Fernández Rojas|Fri Jan 31 08:57:11 2025 +0100|generic: 6.6: backport upstream r8169 patches
+0866dba04|Daniel Golle|Thu Jan 23 03:36:10 2025 +0000|generic: fix probe issues with RealTek RTL8221B PHY
+7c6a43a26|Daniel Golle|Fri Jan 17 20:53:03 2025 +0000|generic: net: phy: realtek: expose temperature sensors
 </details>
