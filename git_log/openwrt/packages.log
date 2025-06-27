@@ -2,11 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3f7daf566|Paul Donald|Mon Jun 23 15:13:53 2025 +0200|ddns-scripts: bump package release
-88dc8e8b8|Paul Donald|Fri Apr 11 15:08:54 2025 +0200|ddns-scripts: refactor verify_proxy()
-38e02fbd5|Paul Donald|Fri Apr 11 15:02:28 2025 +0200|ddns-scripts: drop split_FQDN()
-9cdd1a166|Paul Donald|Mon Apr 14 17:12:36 2025 +0200|ddns-scripts: refactor get_current_ip()
-727cdeff6|Paul Donald|Fri Apr 11 15:38:43 2025 +0200|ddns-scripts: refactor verify_dns()
-b953ed23f|Paul Donald|Fri Apr 11 15:32:47 2025 +0200|ddns-scripts: refactor verify_host_port()
-5745ffb54|Wesley Gimenes|Fri Jun 20 18:13:59 2025 -0300|netbird: update to 0.49.0
+e9c1321e8|Shin Rag|Fri Jun 13 23:43:36 2025 +0800|ddns-scripts: add aliyun.com
+3fe8c1b4a|Maxim Storchak|Mon Jun 2 19:50:30 2025 +0300|luabitop: update to 1.0.3
 </details>

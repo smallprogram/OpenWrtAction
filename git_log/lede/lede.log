@@ -2,7 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-acbd4120e|Álvaro Fernández Rojas|Fri Jan 31 08:57:11 2025 +0100|generic: 6.6: backport upstream r8169 patches
-0866dba04|Daniel Golle|Thu Jan 23 03:36:10 2025 +0000|generic: fix probe issues with RealTek RTL8221B PHY
-7c6a43a26|Daniel Golle|Fri Jan 17 20:53:03 2025 +0000|generic: net: phy: realtek: expose temperature sensors
+1982d31fb|coolsnowwolf|Fri Jun 27 12:49:06 2025 +0800|qualcommax: ipq50xx: Add support for Xiaomi AX6000
+3d00eb9e5|George Moussalem|Fri May 30 12:00:20 2025 +0400|qualcommax: ipq50xx: remove named clock references for GE PHY
+1b3b59f2f|George Moussalem|Wed May 28 09:24:49 2025 +0400|qualcommax: ipq50xx: update patches for IPQ5018 GE PHY
+41a9ef2e8|George Moussalem|Wed May 28 12:53:00 2025 +0400|mtd: spinand: esmt: fix id code for F50D1G41LB
+ec68ded8c|Daniel Golle|Thu Jun 26 00:53:57 2025 +0100|mediatek: move dtsi changes to dedicated patch
 </details>

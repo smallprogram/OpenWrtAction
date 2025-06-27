@@ -2,21 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e310d7187e|Daniel Golle|Thu Jun 26 00:53:57 2025 +0100|mediatek: mt7988a: 6.12: move SoC dtsi changes to dedicated patch
-e46eeb89d7|Daniel Golle|Thu Jun 26 00:44:38 2025 +0100|mediatek: 6.12: mt7988a-rfb: complete conversion to all-UBI fitblk
-5d266b49ac|Daniel Golle|Thu Jun 26 00:22:42 2025 +0100|mediatek: 6.12: fix wrong SoC compatible of MT7988A RFB
-dc80e69801|Mario Andrés Pérez|Sun Jun 22 19:13:27 2025 +0200|uboot-envtools: set nonshared flag correctly per-subpackage
-6a1d7bf52b|Markus Stockhausen|Tue Jun 17 03:43:36 2025 -0400|realtek: overwrite c22 polling unconditionally on RTL930x
-126dc7ddb9|Felix Fietkau|Wed Jun 25 13:25:57 2025 +0200|wifi-scripts: fix another regression in the ucode auth_type changes
-8ad5416d99|Felix Fietkau|Wed Jun 25 10:48:34 2025 +0200|wifi-scripts: fix corner case in RSN override support
-d324d6f07e|Mantas Pucka|Tue Mar 18 10:23:55 2025 +0200|qualcommbe: ipq95xx: add 8devices Kiwi-DVK support
-10055976ec|Mantas Pucka|Tue Jun 3 15:20:39 2025 +0300|qualcommbe: package PPE and PCS drivers as kmods
-597fc65a04|Alexandru Gagniuc|Wed May 14 23:51:59 2025 -0500|kernel: modules: support Maxlinear GPHY
-c88c2d40d0|Mantas Pucka|Thu Jun 5 10:41:20 2025 +0300|qualcommbe: add PCS driver fixes
-8c14f33bb4|Alexandru Gagniuc|Wed Jun 4 12:51:18 2025 -0500|qualcommbe: v6.12: update PCS patches to use .pcs_validate()
-2c6a830c3d|Mantas Pucka|Wed Jun 25 10:49:47 2025 +0300|qualcommbe: v6.12: drop upstreamed patch
-3fb1605931|Daniel Golle|Tue Jun 10 18:51:32 2025 +0200|ipq806x: add support for IgniteNet SunSpot AC Wave2
-72b895b631|Daniel Golle|Tue Jun 10 23:56:47 2025 +0200|uboot-tools: envtools: ipq806x: add env for IgniteNet SS-W2-AC2600
-2ce1ca11b0|Daniel Golle|Wed Jun 11 12:14:41 2025 +0200|uboot-tools: envtools: ipq806x: ignore case of partition name
-d8303b4721|Daniel Golle|Tue Jun 10 18:51:14 2025 +0200|ipq-wifi: add BDF for IgniteNet SS-W2-AC2600
+165ca3f375|Paweł Owoc|Fri May 16 16:22:54 2025 +0200|uboot-tools: move ubootenv_add_ubi_default to common functions
+8aae84757d|Paweł Owoc|Fri May 16 16:19:05 2025 +0200|uboot-tools: use ubootenv_add_* functions
+40e4dd5d31|Paweł Owoc|Fri May 16 16:06:57 2025 +0200|uboot-tools: update ubootenv_add_* functions
+68527d87cc|Paweł Owoc|Fri May 16 15:58:28 2025 +0200|uboot-tools: move ubootenv_add_* functions to common functions
+35a4608a30|Felix Fietkau|Thu Jun 26 19:44:43 2025 +0200|wifi-scripts: iwinfo(ucode): add missing null checks
+fdcb0e0b24|Felix Fietkau|Thu Jun 26 19:18:49 2025 +0200|wifi-scripts: fix validation of require_mode
+945d168dbe|Felix Fietkau|Thu Jun 26 19:16:21 2025 +0200|wifi-scripts: fix missing variables for setting frag/rts
+e56845fae3|Eric Fahlgren|Sat Feb 1 08:12:07 2025 -0800|scripts: getver.sh: approximate version from date
 </details>
