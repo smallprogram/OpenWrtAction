@@ -15,6 +15,5 @@ echo "openwrt-passwall:$(git -C openwrt/feeds/passwall log -n 1 --format="%H")" 
 echo "openwrt-passwall2:$(git -C openwrt/feeds/passwall2 log -n 1 --format="%H")" >>git_log_${source_code_platform}.txt
 echo "helloworld:$(git -C openwrt/feeds/helloworld log -n 1 --format="%H")" >>git_log_${source_code_platform}.txt
 echo "OpenClash:$(git -C openwrt/feeds/OpenClash log -n 1 --format="%H")" >>git_log_${source_code_platform}.txt
-echo "nikki:$(git -C openwrt/feeds/nikki log -n 1 --format="%H")" >>git_log_${source_code_platform}.txt
-
+echo "OpenWrt-nikki:$(git -C openwrt/feeds/nikki log -n 1 --format="%H")" >>git_log_${source_code_platform}.txt
 echo "status=success" >>$GITHUB_OUTPUT
