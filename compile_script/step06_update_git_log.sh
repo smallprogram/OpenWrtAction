@@ -136,6 +136,11 @@ for git_folder in "${git_folders[@]}"; do
             echo "no file $OUTPUT_FILE.log 404"
         fi  
         echo "$git_folder-$OUTPUT_FILE complate git log update-----------------------------------------------------------"
+
+        echo "==========================================================================================================="
+        echo ""
+        echo ""
+        echo ""
     done
     if [ "$UPDATE_COUNT" -eq 0 ]; then
         echo "No source code updates......">>release.txt
