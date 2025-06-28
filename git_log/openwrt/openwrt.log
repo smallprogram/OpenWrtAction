@@ -2,12 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-165ca3f375|Paweł Owoc|Fri May 16 16:22:54 2025 +0200|uboot-tools: move ubootenv_add_ubi_default to common functions
-8aae84757d|Paweł Owoc|Fri May 16 16:19:05 2025 +0200|uboot-tools: use ubootenv_add_* functions
-40e4dd5d31|Paweł Owoc|Fri May 16 16:06:57 2025 +0200|uboot-tools: update ubootenv_add_* functions
-68527d87cc|Paweł Owoc|Fri May 16 15:58:28 2025 +0200|uboot-tools: move ubootenv_add_* functions to common functions
-35a4608a30|Felix Fietkau|Thu Jun 26 19:44:43 2025 +0200|wifi-scripts: iwinfo(ucode): add missing null checks
-fdcb0e0b24|Felix Fietkau|Thu Jun 26 19:18:49 2025 +0200|wifi-scripts: fix validation of require_mode
-945d168dbe|Felix Fietkau|Thu Jun 26 19:16:21 2025 +0200|wifi-scripts: fix missing variables for setting frag/rts
-e56845fae3|Eric Fahlgren|Sat Feb 1 08:12:07 2025 -0800|scripts: getver.sh: approximate version from date
+ba2ae60a00|Felix Fietkau|Fri Jun 27 13:08:32 2025 +0200|wifi-scripts: ucode: fix invalid generated MAC address
 </details>

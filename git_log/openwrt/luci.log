@@ -1,6 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-9aeb34549f|Paul Donald|Mon Jun 23 02:43:17 2025 +0200|luci-mod-network: Add HTTPS SVCB record en/decoding to DHCP
-</details>
