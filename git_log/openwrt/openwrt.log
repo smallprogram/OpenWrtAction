@@ -2,5 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ba2ae60a00|Felix Fietkau|Fri Jun 27 13:08:32 2025 +0200|wifi-scripts: ucode: fix invalid generated MAC address
+1831966406|John Audia|Fri Jun 27 07:04:12 2025 -0400|kernel: bump 6.6 to 6.6.95
+9ddeb30499|Shiji Yang|Fri Jun 27 22:30:02 2025 +0800|kernel: bump 6.12 to 6.12.35
+e32977f7ac|Markus Stockhausen|Sun Jun 8 12:43:56 2025 -0400|realtek: Convert LGS310C to compressed kernel
+ae0a1f5b08|Markus Stockhausen|Sun Jun 8 12:42:10 2025 -0400|realtek: add rt-loader recipe
+ccbff8bbdd|Markus Stockhausen|Sun Jun 8 12:11:37 2025 -0400|realtek: add rt-loader (runtime loader)
 </details>

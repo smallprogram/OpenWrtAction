@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-494426884|coolsnowwolf|Fri Jun 27 16:30:27 2025 +0800|qualcommax: ipq50xx: add kmod-ath10k for Xiaomi AX6000
-44e621a1a|coolsnowwolf|Fri Jun 27 16:06:39 2025 +0800|mac80211: only build ath10k with smallbuffers
-a66567c8a|Eneas U de Queiroz|Tue Oct 10 15:58:01 2023 -0300|mac80211: build each variant in its own dir
+eb2fcf114|Álvaro Fernández Rojas|Tue Apr 22 14:39:05 2025 +0200|generic: 6.6: backport upstream Realtek PHY patches
+60c2e012b|Álvaro Fernández Rojas|Tue Apr 22 14:36:49 2025 +0200|generic: 6.6: backport upstream v6.15 r8169 patches
 </details>

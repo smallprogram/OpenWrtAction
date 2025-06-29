@@ -1,0 +1,44 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+c4b397b10|Tianling Shen|Sun Jun 29 00:08:43 2025 +0800|shadow-tls: add new package
+8342be7dd|Tianling Shen|Sat Jun 28 23:37:47 2025 +0800|naiveproxy: Update to 138.0.7204.35-1
+a5dd70f74|Tianling Shen|Sat Jun 28 23:35:45 2025 +0800|gn: update to Git HEAD (2025-06-19)
+3a55be06e|Tianling Shen|Sat Jun 28 23:23:47 2025 +0800|verysync: drop package
+2c9da1e15|Tianling Shen|Sat Jun 28 23:03:10 2025 +0800|Merge Official Source
+19860a292|zhusir|Thu Jun 26 15:45:34 2025 +0800|ddns-go: update version to 6.11.0
+011acd9ec|John Audia|Tue Jun 24 12:24:38 2025 -0400|pciutils: update to 3.14.0
+da96f26a5|Stephen Howell|Tue Jun 17 10:42:23 2025 +0100|realtek-poe: increase version
+d931d74cf|Aleksander Jan Bajkowski|Mon Jun 23 00:06:36 2025 +0200|coremark: bump to 2025-05-01
+e9c1321e8|Shin Rag|Fri Jun 13 23:43:36 2025 +0800|ddns-scripts: add aliyun.com
+3fe8c1b4a|Maxim Storchak|Mon Jun 2 19:50:30 2025 +0300|luabitop: update to 1.0.3
+3f7daf566|Paul Donald|Mon Jun 23 15:13:53 2025 +0200|ddns-scripts: bump package release
+88dc8e8b8|Paul Donald|Fri Apr 11 15:08:54 2025 +0200|ddns-scripts: refactor verify_proxy()
+38e02fbd5|Paul Donald|Fri Apr 11 15:02:28 2025 +0200|ddns-scripts: drop split_FQDN()
+9cdd1a166|Paul Donald|Mon Apr 14 17:12:36 2025 +0200|ddns-scripts: refactor get_current_ip()
+727cdeff6|Paul Donald|Fri Apr 11 15:38:43 2025 +0200|ddns-scripts: refactor verify_dns()
+b953ed23f|Paul Donald|Fri Apr 11 15:32:47 2025 +0200|ddns-scripts: refactor verify_host_port()
+5745ffb54|Wesley Gimenes|Fri Jun 20 18:13:59 2025 -0300|netbird: update to 0.49.0
+caeb4c183|Etienne Champetier|Tue Jun 24 16:10:41 2025 -0400|prometheus-node-exporter-lua: mwan3: speed up
+73f9b9ab7|Etienne Champetier|Mon Jun 23 10:19:03 2025 -0400|prometheus-node-exporter-lua: add HTTPS support
+377f537aa|Etienne Champetier|Mon Jun 23 08:05:41 2025 -0400|prometheus-node-exporter-lua: remove '#!' / exec bit
+bd43da7ce|Chris Swan|Wed May 21 10:46:40 2025 +0100|csshnpd: add new package
+28c085f7c|Michael Payne|Mon Mar 31 09:30:49 2025 +0000|prometheus-node-exporter-lua: fix hostapd_ubus_stations & hostapd_stations
+51137e588|Sergey Shatunov|Tue Apr 15 21:19:56 2025 +0800|prometheus-node-exporter-lua: add nftables named counters collector
+f6cb2a6b0|Kym Eden|Mon Mar 3 11:39:30 2025 +0000|prometheus-node-exporter-lua: netclass: Ignore non numbers
+1408f86bd|Georgi Valkov|Fri Jun 13 10:35:28 2025 +0300|fuse3: mount_util.c: restore symlink check
+9ef176aae|Georgi Valkov|Thu Jun 12 08:28:04 2025 +0300|fuse3: fix build warning in fuse_signals.c
+992b62589|Georgi Valkov|Thu Jun 12 07:12:50 2025 +0300|fuse3: update to version 3.17.2
+2c811dd76|Til Kaiser|Fri Jun 20 13:02:51 2025 +0200|rrdtool1: fix compilation with GCC 15
+9672ccaf5|hingbong lo|Thu Jun 19 02:32:03 2025 +0000|bash: fix build failed with GCC 15 #26784
+bb43d5f28|Amos Shapira|Wed Jun 4 18:54:11 2025 +1000|prometheus-node-exporter-lua: add newline to error messages
+3b2a63dae|Javier Marcet|Fri Jun 20 20:51:41 2025 +0200|docker-compose: Update to version 2.37.2
+5ffca82f5|Thibaut VARÈNE|Fri Jun 13 14:44:46 2025 +0200|libradcli: fix build options
+4e62e45ab|Jonas Jelonek|Fri Jun 20 16:35:37 2025 +0200|nlbwmon: update to Git HEAD (2025-06-02)
+ffec24dfc|Til Kaiser|Fri Jun 20 13:03:21 2025 +0200|libical: update to 3.0.20
+e0d761e79|Etienne Champetier|Sun Jun 22 08:06:36 2025 -0400|simple-captive-portal: add new package
+6f9b86754|Daniel Golle|Sun Jun 22 18:15:05 2025 +0100|libtheora: use CONFIGURE_ARGS, fix build on armeb
+54d5ff160|Til Kaiser|Sat Jun 21 21:22:53 2025 +0200|iftop: update to latest Git HEAD
+a7253139c|John Audia|Thu Jun 19 13:17:14 2025 -0400|samba4: add conditional depends
+</details>

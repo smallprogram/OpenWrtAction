@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-011acd9ec|John Audia|Tue Jun 24 12:24:38 2025 -0400|pciutils: update to 3.14.0
-da96f26a5|Stephen Howell|Tue Jun 17 10:42:23 2025 +0100|realtek-poe: increase version
-d931d74cf|Aleksander Jan Bajkowski|Mon Jun 23 00:06:36 2025 +0200|coremark: bump to 2025-05-01
+d2599fb6b|Dirk Brenken|Sat Jun 28 22:10:34 2025 +0200|banIP: update 1.5.6-6
 </details>

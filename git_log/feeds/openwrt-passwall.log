@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0bf5f7f|lwb1978|Fri Jun 27 20:54:35 2025 +0800|luci: bump to 25.6.28
-179a7a7|lwb1978|Fri Jun 27 20:51:42 2025 +0800|luci: fix #3942
+d8c30e1|lwb1978|Sun Jun 29 01:12:06 2025 +0800|luci: kill ss plugin when optimizer stops
+6f8ed9b|A-BO|Sat Jun 28 09:18:55 2025 +0800|action: golang update to 1.25.x
 </details>
