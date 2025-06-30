@@ -2,5 +2,17 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fd4cce9b61|Dirk Brenken|Sat Jun 28 22:15:44 2025 +0200|luci-app-banip: sync with update 1.5.6-6
+75a612ae63|Marko Mäkelä|Sun Jun 29 22:55:41 2025 +0300|luci-theme-bootstrap: global darkmode graphs
+b7ebe96541|Paul Donald|Mon Jun 30 02:13:25 2025 +0200|luci-mod-status: add .blur() action for kernel log scroll buttons
+6aea0aa440|Paul Donald|Mon Jun 30 01:49:05 2025 +0200|luci-mod-network: EHT rate display shall depend on EHT properties
+d115c41d6e|Paul Donald|Mon Jun 30 01:38:11 2025 +0200|luci-mod-status: refactor to ES6
+7783f0ea8a|Paul Donald|Sun Jun 29 22:52:51 2025 +0200|luci-mod-dashboard: ES6 conversion
+64b3469501|Paul Donald|Sun Jun 29 20:03:16 2025 +0200|luci-app-unbound: fix background colour override for themes
+472ac31208|Panagiotis "Ivory" Vasilopoulos|Mon Jun 9 19:20:12 2025 +0200|luci-app-firewall: replace 'Masquerading' with 'IPv4 Masquerading'
+a8f886f6bd|Meow|Thu Jun 19 09:45:48 2025 +0200|luci-mod-network: aligned column names
+3e66e8b7a8|Ramon Van Gorkom|Fri Jun 27 21:51:47 2025 +0200|luci-mod-status: Cleanup and fix syslog.js bug
+3fc2644ac1|Eric Fahlgren|Sun Jun 29 10:26:32 2025 -0700|modules: dhcp: improve wording for DHCP reservations
+8b5dfabdf3|Liangbin Lian|Thu Jun 26 17:09:01 2025 +0800|luci-app-package-manager: fix 'autoremove' checkbox uneditable
+f458c39c74|Paul Donald|Sun Jun 29 19:31:49 2025 +0200|luci-mod-status: add .blur() action for kernel log scroll buttons
+f62f31ca70|Paul Donald|Sun Jun 29 15:38:40 2025 +0200|luci-mod-status: give kernel log view filtering capability
 </details>

@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d8c30e1|lwb1978|Sun Jun 29 01:12:06 2025 +0800|luci: kill ss plugin when optimizer stops
-6f8ed9b|A-BO|Sat Jun 28 09:18:55 2025 +0800|action: golang update to 1.25.x
+c09463f|A-BO|Sun Jun 29 23:52:47 2025 +0800|luci: ss-rust supports custom sip003 plugins
+54101e7|lwb1978|Sun Jun 29 15:34:11 2025 +0800|luci: optimize
+79d6a5c|lwb1978|Sun Jun 29 15:00:48 2025 +0800|luci: optimize the calling method of ss plugin
 </details>

@@ -2,9 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1831966406|John Audia|Fri Jun 27 07:04:12 2025 -0400|kernel: bump 6.6 to 6.6.95
-9ddeb30499|Shiji Yang|Fri Jun 27 22:30:02 2025 +0800|kernel: bump 6.12 to 6.12.35
-e32977f7ac|Markus Stockhausen|Sun Jun 8 12:43:56 2025 -0400|realtek: Convert LGS310C to compressed kernel
-ae0a1f5b08|Markus Stockhausen|Sun Jun 8 12:42:10 2025 -0400|realtek: add rt-loader recipe
-ccbff8bbdd|Markus Stockhausen|Sun Jun 8 12:11:37 2025 -0400|realtek: add rt-loader (runtime loader)
+978d24ce40|Markus Stockhausen|Sat Jun 28 11:39:27 2025 -0400|realtek: rt-loader bootbase device enhancement
+5d0a07c90f|Kazuhiro Ito|Sun Jun 29 16:47:31 2025 +0900|x86: 64: Enable PCI MMCONFIG
+fbfca67aee|xiao bo|Sun Jun 29 10:20:50 2025 +0800|kernel: allow seamless migration from I40EVF
 </details>

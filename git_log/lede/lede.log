@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-eb2fcf114|Álvaro Fernández Rojas|Tue Apr 22 14:39:05 2025 +0200|generic: 6.6: backport upstream Realtek PHY patches
-60c2e012b|Álvaro Fernández Rojas|Tue Apr 22 14:36:49 2025 +0200|generic: 6.6: backport upstream v6.15 r8169 patches
+a0abbf426|Rosen Penev|Tue Dec 31 13:20:06 2024 -0800|kernel/mac80211: ath9k: clean up gpiochip
+9f4f194b3|aiamadeus|Sun Jun 15 23:09:20 2025 +0800|kernel/modules: refresh kernel limit judgment
 </details>
