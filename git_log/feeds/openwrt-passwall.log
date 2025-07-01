@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-c09463f|A-BO|Sun Jun 29 23:52:47 2025 +0800|luci: ss-rust supports custom sip003 plugins
-54101e7|lwb1978|Sun Jun 29 15:34:11 2025 +0800|luci: optimize
-79d6a5c|lwb1978|Sun Jun 29 15:00:48 2025 +0800|luci: optimize the calling method of ss plugin
-</details>

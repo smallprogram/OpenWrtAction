@@ -2,6 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-00d420e80|Etienne Champetier|Sun Jun 29 12:21:54 2025 -0400|prometheus-node-exporter-lua: use buffered io, remove concat
-f18594a00|Tianling Shen|Sat Jun 28 22:21:39 2025 +0800|shadow: update build dependencies
+7ee547b44|Lukas Voegl|Fri Jun 27 12:36:57 2025 +0200|treewide: include `nls.mk` when depending on glib2
+b13bdcbac|Tianling Shen|Sun Jun 29 16:48:11 2025 +0800|openlist: move from alist and update to 4.0.5
+5872070ad|Aleks Mariusz|Wed Jun 11 12:03:00 2025 +0100|gpsd: update to 3.26.1
+1c8886169|Lucian CRISTIAN|Mon Jun 16 15:44:38 2025 +0300|nss: update to 3.112
+cd1439a6c|Lucian CRISTIAN|Sun Jun 8 17:59:17 2025 +0300|frr: update to 10.3.1
+04493a8a8|Javier Marcet|Tue Jun 24 18:56:53 2025 +0200|docker-compose: Update to version 2.37.3
+127b11dc2|George Sapkin|Fri Jun 13 13:40:34 2025 +0300|adguardhome: don't hide error messages in CI test
+0e524bdaf|George Sapkin|Sun Jun 29 14:58:55 2025 +0300|adguardhome: bump to 0.107.63
+fa8425028|George Sapkin|Sun Jun 29 19:08:34 2025 +0300|yt-dlp: don't hide error messages in CI test
+731bddc3e|George Sapkin|Sun Jun 29 17:03:36 2025 +0300|yt-dlp: bump to 2025.06.25
+92625ef0a|George Sapkin|Tue Jun 10 14:41:00 2025 +0300|yt-dlp: bump to 2025.06.09
 </details>

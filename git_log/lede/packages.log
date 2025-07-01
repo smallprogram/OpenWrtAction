@@ -1,0 +1,9 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+f616bf54|coolsnowwolf|Mon Jun 30 20:07:02 2025 +0800|Merge pull request #956 from Internet1235/ddns-go
+9dd2d7c3|coolsnowwolf|Mon Jun 30 20:06:53 2025 +0800|Merge pull request #957 from Internet1235/openlist
+95d51f86|Internet1235|Sun Jun 29 17:39:24 2025 +0800|openlist: Update to 4.0.5
+1e3c9886|Internet1235|Wed Jun 25 21:37:41 2025 +0800|ddns-go: Bump to 6.11.0
+</details>

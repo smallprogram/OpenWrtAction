@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a0abbf426|Rosen Penev|Tue Dec 31 13:20:06 2024 -0800|kernel/mac80211: ath9k: clean up gpiochip
-9f4f194b3|aiamadeus|Sun Jun 15 23:09:20 2025 +0800|kernel/modules: refresh kernel limit judgment
+84ae4ea5d|coolsnowwolf|Wed Jun 25 23:05:20 2025 +0800|kernel: bump 6.x to latest HEAD
+9cb964377|aiamadeus|Wed Jun 11 23:09:15 2025 +0800|ksmbd: update to latest git HEAD
 </details>
