@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+21410f61b|Wei-Ting Yang|Fri Jun 6 19:58:35 2025 +0800|util-linux: remove redundant slashes
+c75a66b77|coolsnowwolf|Wed Jun 25 23:05:20 2025 +0800|kernel: bump 6.x to latest HEAD
 84ae4ea5d|coolsnowwolf|Wed Jun 25 23:05:20 2025 +0800|kernel: bump 6.x to latest HEAD
-9cb964377|aiamadeus|Wed Jun 11 23:09:15 2025 +0800|ksmbd: update to latest git HEAD
 </details>
