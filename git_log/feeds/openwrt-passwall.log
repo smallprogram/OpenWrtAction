@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d71b255|lwb1978|Wed Jul 2 10:33:02 2025 +0800|luci: add kill ss plugin in socks switch
+</details>

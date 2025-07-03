@@ -2,6 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0ea85424b|Javier Marcet|Mon Jun 30 22:14:52 2025 +0200|docker-compose: Update to version 2.38.1
-ce5dfd527|Javier Marcet|Mon Jun 30 21:56:26 2025 +0200|docker-compose: Update to version 2.38.0
+3b2b5c73a|George Sapkin|Wed Jul 2 12:46:06 2025 +0300|yt-dlp: bump to 2025.06.30
+3a056cbf0|Tianling Shen|Wed Jul 2 19:02:08 2025 +0800|dnsproxy: Update to 0.76.1
+69afdca87|Tianling Shen|Wed Jul 2 19:01:15 2025 +0800|rclone: Update to 1.70.2
+544d44ada|Tianling Shen|Wed Jul 2 19:00:11 2025 +0800|v2ray-core: Update to 5.34.0
+083f4ce61|Tianling Shen|Wed Jul 2 18:59:38 2025 +0800|v2ray-geodata: Update to latest version
+2829cd72e|Rosen Penev|Tue Jul 1 12:13:55 2025 -0700|rtorrent: update to 0.15.5
+5a2058525|Rosen Penev|Tue Jul 1 12:13:33 2025 -0700|libtorrent: update to 0.15.5
+3fdab16a6|Jonas Jelonek|Tue Jul 1 14:55:17 2025 +0000|eza: update to 0.21.6
+cd142a1ba|George Sapkin|Sun Jun 29 14:13:55 2025 +0300|syncthing: fix relay and discovery args and permissions
 </details>

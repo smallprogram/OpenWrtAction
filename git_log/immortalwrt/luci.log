@@ -1,0 +1,28 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+9fa5fe0689|Tianling Shen|Wed Jul 2 18:56:09 2025 +0800|Merge Official Source
+f0806cc672|Tianling Shen|Sun Jun 29 18:00:42 2025 +0800|luci-app-openlist: rescan translations
+0b8611666f|Tianling Shen|Sun Jun 29 17:57:02 2025 +0800|luci-app-openlist: rename from luci-app-alist
+06abd9ca12|Tianling Shen|Wed Jul 2 18:54:28 2025 +0800|luci-app-homeproxy: bump to latest git HEAD
+b9aea97b99|Tianling Shen|Wed Jul 2 18:17:15 2025 +0800|luci-app-zerotier: remove editable attr for nwid
+75a612ae63|Marko Mäkelä|Sun Jun 29 22:55:41 2025 +0300|luci-theme-bootstrap: global darkmode graphs
+b7ebe96541|Paul Donald|Mon Jun 30 02:13:25 2025 +0200|luci-mod-status: add .blur() action for kernel log scroll buttons
+6aea0aa440|Paul Donald|Mon Jun 30 01:49:05 2025 +0200|luci-mod-network: EHT rate display shall depend on EHT properties
+d115c41d6e|Paul Donald|Mon Jun 30 01:38:11 2025 +0200|luci-mod-status: refactor to ES6
+7783f0ea8a|Paul Donald|Sun Jun 29 22:52:51 2025 +0200|luci-mod-dashboard: ES6 conversion
+64b3469501|Paul Donald|Sun Jun 29 20:03:16 2025 +0200|luci-app-unbound: fix background colour override for themes
+472ac31208|Panagiotis "Ivory" Vasilopoulos|Mon Jun 9 19:20:12 2025 +0200|luci-app-firewall: replace 'Masquerading' with 'IPv4 Masquerading'
+a8f886f6bd|Meow|Thu Jun 19 09:45:48 2025 +0200|luci-mod-network: aligned column names
+3e66e8b7a8|Ramon Van Gorkom|Fri Jun 27 21:51:47 2025 +0200|luci-mod-status: Cleanup and fix syslog.js bug
+3fc2644ac1|Eric Fahlgren|Sun Jun 29 10:26:32 2025 -0700|modules: dhcp: improve wording for DHCP reservations
+8b5dfabdf3|Liangbin Lian|Thu Jun 26 17:09:01 2025 +0800|luci-app-package-manager: fix 'autoremove' checkbox uneditable
+f458c39c74|Paul Donald|Sun Jun 29 19:31:49 2025 +0200|luci-mod-status: add .blur() action for kernel log scroll buttons
+f62f31ca70|Paul Donald|Sun Jun 29 15:38:40 2025 +0200|luci-mod-status: give kernel log view filtering capability
+fd4cce9b61|Dirk Brenken|Sat Jun 28 22:15:44 2025 +0200|luci-app-banip: sync with update 1.5.6-6
+9aeb34549f|Paul Donald|Mon Jun 23 02:43:17 2025 +0200|luci-mod-network: Add HTTPS SVCB record en/decoding to DHCP
+2e5de8d0d4|Hosted Weblate|Wed Jun 25 16:53:43 2025 +0200|Translated using Weblate (Portuguese (Brazil))
+df28a18166|Paul Donald|Fri Apr 25 04:21:38 2025 +0200|luci-app-chrony: Add chrony
+3c16c59007|Paul Donald|Fri Apr 25 20:24:17 2025 +0200|luci-base: implement a range slider input/control
+</details>

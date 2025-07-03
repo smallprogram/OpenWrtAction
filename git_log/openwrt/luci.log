@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+94f42c6b9e|Tianling Shen|Sun Jun 29 18:00:42 2025 +0800|luci-app-openlist: rescan translations
+682a2b9525|Tianling Shen|Sun Jun 29 17:57:02 2025 +0800|luci-app-openlist: rename from luci-app-alist
+</details>

@@ -1,0 +1,32 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+060a3fa93|Dee.H.Y|Tue Jul 1 21:39:10 2025 +0800|fan2go: add new package
+48274371c|Tianling Shen|Wed Jul 2 19:09:10 2025 +0800|Merge Official Source
+3a056cbf0|Tianling Shen|Wed Jul 2 19:02:08 2025 +0800|dnsproxy: Update to 0.76.1
+69afdca87|Tianling Shen|Wed Jul 2 19:01:15 2025 +0800|rclone: Update to 1.70.2
+544d44ada|Tianling Shen|Wed Jul 2 19:00:11 2025 +0800|v2ray-core: Update to 5.34.0
+083f4ce61|Tianling Shen|Wed Jul 2 18:59:38 2025 +0800|v2ray-geodata: Update to latest version
+2829cd72e|Rosen Penev|Tue Jul 1 12:13:55 2025 -0700|rtorrent: update to 0.15.5
+5a2058525|Rosen Penev|Tue Jul 1 12:13:33 2025 -0700|libtorrent: update to 0.15.5
+e41975a7e|Milinda Brantini|Wed Jul 2 13:37:46 2025 +0800|nexttrace: Update to 1.4.0
+3fdab16a6|Jonas Jelonek|Tue Jul 1 14:55:17 2025 +0000|eza: update to 0.21.6
+cd142a1ba|George Sapkin|Sun Jun 29 14:13:55 2025 +0300|syncthing: fix relay and discovery args and permissions
+0ea85424b|Javier Marcet|Mon Jun 30 22:14:52 2025 +0200|docker-compose: Update to version 2.38.1
+ce5dfd527|Javier Marcet|Mon Jun 30 21:56:26 2025 +0200|docker-compose: Update to version 2.38.0
+7ee547b44|Lukas Voegl|Fri Jun 27 12:36:57 2025 +0200|treewide: include `nls.mk` when depending on glib2
+b13bdcbac|Tianling Shen|Sun Jun 29 16:48:11 2025 +0800|openlist: move from alist and update to 4.0.5
+5872070ad|Aleks Mariusz|Wed Jun 11 12:03:00 2025 +0100|gpsd: update to 3.26.1
+1c8886169|Lucian CRISTIAN|Mon Jun 16 15:44:38 2025 +0300|nss: update to 3.112
+cd1439a6c|Lucian CRISTIAN|Sun Jun 8 17:59:17 2025 +0300|frr: update to 10.3.1
+04493a8a8|Javier Marcet|Tue Jun 24 18:56:53 2025 +0200|docker-compose: Update to version 2.37.3
+127b11dc2|George Sapkin|Fri Jun 13 13:40:34 2025 +0300|adguardhome: don't hide error messages in CI test
+0e524bdaf|George Sapkin|Sun Jun 29 14:58:55 2025 +0300|adguardhome: bump to 0.107.63
+fa8425028|George Sapkin|Sun Jun 29 19:08:34 2025 +0300|yt-dlp: don't hide error messages in CI test
+731bddc3e|George Sapkin|Sun Jun 29 17:03:36 2025 +0300|yt-dlp: bump to 2025.06.25
+92625ef0a|George Sapkin|Tue Jun 10 14:41:00 2025 +0300|yt-dlp: bump to 2025.06.09
+00d420e80|Etienne Champetier|Sun Jun 29 12:21:54 2025 -0400|prometheus-node-exporter-lua: use buffered io, remove concat
+f18594a00|Tianling Shen|Sat Jun 28 22:21:39 2025 +0800|shadow: update build dependencies
+d2599fb6b|Dirk Brenken|Sat Jun 28 22:10:34 2025 +0200|banIP: update 1.5.6-6
+</details>
