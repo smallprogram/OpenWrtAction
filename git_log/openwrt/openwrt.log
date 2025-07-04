@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d9cd67b542|Felix Fietkau|Wed Jul 2 19:10:19 2025 +0200|ubus: update to Git HEAD (2025-07-02)
+e2cdcf8e46|John Audia|Wed Jul 2 11:38:03 2025 -0400|openssl: update to 3.5.1
+23dc466969|Eric Fahlgren|Tue Jul 1 14:02:41 2025 -0700|imagebuilder: implement STRIP_ABI option for manifest target
+9d31db2833|Markus Stockhausen|Wed Jul 2 12:35:27 2025 -0400|realtek: add RTL931x support to rt-loader
+7f939d99e7|Rany Hany|Wed Jul 2 16:53:39 2025 +0000|tools/squashfs4: fix compile on Alpine Linux
 </details>

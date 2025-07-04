@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-94f42c6b9e|Tianling Shen|Sun Jun 29 18:00:42 2025 +0800|luci-app-openlist: rescan translations
-682a2b9525|Tianling Shen|Sun Jun 29 17:57:02 2025 +0800|luci-app-openlist: rename from luci-app-alist
+b9145754d2|Paul Donald|Thu Jul 3 17:11:27 2025 +0200|luci-base: give TextValue form elements separate readonly and disabled
+01201eefe7|Hosted Weblate|Thu Jul 3 09:21:14 2025 +0200|Translated using Weblate (Chinese (Simplified Han script))
 </details>

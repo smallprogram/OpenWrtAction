@@ -1,0 +1,19 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+e81af1cc95|Tianling Shen|Thu Jul 3 19:59:20 2025 +0800|Merge Official Source
+e2cdcf8e46|John Audia|Wed Jul 2 11:38:03 2025 -0400|openssl: update to 3.5.1
+94a754ac7c|Tianling Shen|Tue Jul 1 21:40:01 2025 +0800|mediatek: add support for TP-Link TL-7DR7250
+e44074d272|xu6ao2|Thu Jul 3 03:49:18 2025 -0700|ramips: add C-Life XG1 support (#1952)
+23dc466969|Eric Fahlgren|Tue Jul 1 14:02:41 2025 -0700|imagebuilder: implement STRIP_ABI option for manifest target
+b7f8c181f3|Tianling Shen|Thu Jul 3 18:24:32 2025 +0800|arm-trusted-firmware-mediatek: improve support for dosilicon spi-nand flash
+9d31db2833|Markus Stockhausen|Wed Jul 2 12:35:27 2025 -0400|realtek: add RTL931x support to rt-loader
+7f939d99e7|Rany Hany|Wed Jul 2 16:53:39 2025 +0000|tools/squashfs4: fix compile on Alpine Linux
+d9cd67b542|Felix Fietkau|Wed Jul 2 19:10:19 2025 +0200|ubus: update to Git HEAD (2025-07-02)
+7b954b4901|Thomas Weißschuh|Thu Jun 26 12:54:51 2025 +0200|util-linux: update to v2.41.1
+c2520c1910|Thomas Weißschuh|Thu Jun 26 12:54:40 2025 +0200|tools: util-linux: update to v2.41.1
+9add155a20|Tianling Shen|Sun Jun 29 20:09:52 2025 +0800|rockchip: switch to kernel 6.12
+90cd8640bd|Felix Fietkau|Tue Jul 1 20:48:14 2025 +0200|ubus: update to Git HEAD (2025-07-01)
+9105c2d568|Stijn Tintel|Tue Jul 1 20:06:52 2025 +0300|u-boot.mk: support Python 3.12 and 3.13
+</details>

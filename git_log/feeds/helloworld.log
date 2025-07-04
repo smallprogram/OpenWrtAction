@@ -1,0 +1,6 @@
+<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+10442ff|zxl hhyccc|Thu Jul 3 21:46:13 2025 +0800|luci-app-ssr-plus: Fix dns2socks can't work,dns request can't redirect to tunnel
+</details>

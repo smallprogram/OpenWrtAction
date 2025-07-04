@@ -1,0 +1,84 @@
+<details> <summary> <b>OpenClash new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+aee85be1|vernesong|Thu Jul 3 13:21:30 2025 +0800|Merge branch 'dev'
+f23bc972|vernesong|Thu Jul 3 13:15:46 2025 +0800|0.46.110
+684b2d71|vernesong|Thu Jul 3 13:05:39 2025 +0800|Merge branch 'dev'
+cefe5f73|vernesong|Thu Jul 3 12:50:27 2025 +0800|0.46.109
+4669a293|vernesong|Thu Jul 3 12:15:54 2025 +0800|chore: refine
+df1daaf0|vernesong|Thu Jul 3 05:07:46 2025 +0800|chore: refine
+73884a53|vernesong|Tue Jul 1 13:28:44 2025 +0800|0.46.108
+0b995b3e|vernesong|Tue Jul 1 09:20:48 2025 +0800|0.46.107
+86bfbb0c|github-actions[bot]|Tue Jul 1 00:46:56 2025 +0000|Chore: update third-party resources
+003c4721|vernesong|Tue Jul 1 05:50:12 2025 +0800|0.46.106
+e4c62752|vernesong|Tue Jul 1 04:37:36 2025 +0800|0.46.105
+68f77912|vernesong|Mon Jun 30 13:21:34 2025 +0800|0.46.104
+8703ce37|vernesong|Mon Jun 30 12:42:45 2025 +0800|chore: width adapt
+337607c7|vernesong|Mon Jun 30 08:41:09 2025 +0800|fix typo
+ac6b8154|vernesong|Mon Jun 30 06:53:57 2025 +0800|0.46.103
+469eb0f2|vernesong|Mon Jun 30 06:36:16 2025 +0800|0.46.102
+34d6924d|github-actions[bot]|Sat Jun 28 00:46:01 2025 +0000|Chore: update third-party resources
+6c973aa3|vernesong|Wed Jun 25 21:40:53 2025 +0800|chore: add pac file restore
+7a1e4ecd|vernesong|Wed Jun 25 20:55:18 2025 +0800|0.46.101
+e2b31ee5|vernesong|Wed Jun 25 19:44:23 2025 +0800|chore: log refresh speed
+d4c3bd99|vernesong|Wed Jun 25 14:10:27 2025 +0800|chore: retry after update failed
+b16bf5e3|vernesong|Wed Jun 25 11:57:14 2025 +0800|chore: some translations
+fc043a45|vernesong|Wed Jun 25 09:17:34 2025 +0800|0.46.100
+e2082aea|vernesong|Wed Jun 25 09:16:30 2025 +0800|chore: adjust sub progress bar height
+46868a56|github-actions[bot]|Wed Jun 25 00:45:54 2025 +0000|Chore: update third-party resources
+de8e30a0|vernesong|Tue Jun 24 23:33:03 2025 +0800|chore: add title for dler panel
+73014277|vernesong|Tue Jun 24 23:04:26 2025 +0800|chore: refine
+9a054cf3|vernesong|Tue Jun 24 17:30:11 2025 +0800|chore: access check use time_appconnect when router mode
+152f87f8|vernesong|Tue Jun 24 16:43:48 2025 +0800|chore: clipboard fallback
+dc0d88a0|vernesong|Tue Jun 24 05:17:37 2025 +0800|chore: safari copy
+82095fee|vernesong|Tue Jun 24 04:40:51 2025 +0800|0.46.099
+a59ca879|vernesong|Tue Jun 24 04:40:23 2025 +0800|chore: check cidr format before add custom rules
+0e5cacd1|vernesong|Tue Jun 24 04:16:09 2025 +0800|chore: sub info width
+d1cffcbc|vernesong|Tue Jun 24 02:56:32 2025 +0800|chore: refine
+e94c2d45|vernesong|Mon Jun 23 12:53:32 2025 +0800|chore: refine
+23b2d73b|vernesong|Mon Jun 23 09:56:45 2025 +0800|0.46.098
+89f4a050|vernesong|Mon Jun 23 09:55:05 2025 +0800|fix img missing
+d47c582b|vernesong|Mon Jun 23 02:21:18 2025 +0800|0.46.097
+951e91dd|vernesong|Mon Jun 23 02:19:03 2025 +0800|chore: refine
+ba179a06|vernesong|Sun Jun 22 17:53:19 2025 +0800|chore: ssr parse
+95743e60|github-actions[bot]|Sun Jun 22 00:46:05 2025 +0000|Chore: update third-party resources
+3cbbf9db|vernesong|Sun Jun 22 02:07:48 2025 +0800|chore: announcement
+2a758246|vernesong|Sun Jun 22 02:02:50 2025 +0800|0.46.096
+148fae0e|vernesong|Sun Jun 22 02:01:02 2025 +0800|chore: refine update codes
+b661c3a7|vernesong|Sat Jun 21 23:41:28 2025 +0800|chore: group option value sort
+a80a39dc|vernesong|Sat Jun 21 22:49:14 2025 +0800|chore: remove SKIP_SAFE_PATH_CHECK option
+dcba0b24|vernesong|Sat Jun 21 22:45:33 2025 +0800|chore: add router-self ip & access check support
+302be433|vernesong|Sat Jun 21 22:42:13 2025 +0800|chore: add button for switching router's ip & access check #4510
+b1d6355d|vernesong|Sat Jun 21 11:00:01 2025 +0800|chore: add more url  type support for skip proxy address
+98786523|vernesong|Sat Jun 21 10:39:21 2025 +0800|chore: select style
+8a88233d|vernesong|Fri Jun 20 22:22:51 2025 +0800|0.46.095
+3a57f960|vernesong|Fri Jun 20 22:19:51 2025 +0800|chore: refine file upload
+b35205f0|vernesong|Fri Jun 20 21:41:55 2025 +0800|chore: add more url decode support for nodes add
+b497a467|vernesong|Fri Jun 20 19:12:31 2025 +0800|chore: skip proxies address support base64
+c7e55f4b|vernesong|Fri Jun 20 19:11:21 2025 +0800|fix typo
+4fa1c799|vernesong|Thu Jun 19 23:29:20 2025 +0800|chore: refine
+e938cfea|github-actions[bot]|Thu Jun 19 00:45:58 2025 +0000|Chore: update third-party resources
+559a8dd5|vernesong|Wed Jun 18 12:59:53 2025 +0800|0.46.094
+a1bbd6b5|vernesong|Wed Jun 18 12:58:44 2025 +0800|chore: add help url for smart core switch option
+4b8fc205|vernesong|Wed Jun 18 12:45:57 2025 +0800|fix: err oc download url
+af87c4e7|vernesong|Wed Jun 18 11:39:00 2025 +0800|0.46.093
+55896ba9|vernesong|Wed Jun 18 11:38:29 2025 +0800|fix typo
+cda76ea3|LovinYarn|Wed Jun 18 11:06:13 2025 +0800|Compatible with OpenWrt SNAPSHOT loading icon (#4508)
+5c470dd3|vernesong|Wed Jun 18 10:06:01 2025 +0800|0.46.092
+6e0cbbf9|vernesong|Wed Jun 18 10:04:58 2025 +0800|chore: reduce dler api error log
+9c82f86e|vernesong|Wed Jun 18 09:41:25 2025 +0800|chore: smart group options
+c5e6a4d2|vernesong|Tue Jun 17 12:19:53 2025 +0800|0.46.091
+9572363e|vernesong|Tue Jun 17 12:19:31 2025 +0800|chore: refine
+ebaf5f92|vernesong|Tue Jun 17 11:50:21 2025 +0800|chore: refine
+4a443488|vernesong|Tue Jun 17 00:55:14 2025 +0800|chore: add firewall reload maximum
+41c689d6|vernesong|Mon Jun 16 18:15:57 2025 +0800|0.46.090
+b48b76d1|vernesong|Mon Jun 16 18:13:49 2025 +0800|chore: add allow-origins for dashboard if optioned
+be842921|vernesong|Mon Jun 16 12:55:49 2025 +0800|fix: log download
+a2067ae4|vernesong|Mon Jun 16 12:47:42 2025 +0800|0.46.089
+3ab132dd|vernesong|Mon Jun 16 12:47:10 2025 +0800|chore: update page style
+76e30208|vernesong|Mon Jun 16 12:31:07 2025 +0800|chore: refine update logic
+262b4ef2|vernesong|Mon Jun 16 09:21:09 2025 +0800|0.46.088
+145a6c03|github-actions[bot]|Mon Jun 16 00:45:57 2025 +0000|Chore: update third-party resources
+144e2124|vernesong|Mon Jun 16 04:20:58 2025 +0800|chore: reduce retry for dler login
+</details>
