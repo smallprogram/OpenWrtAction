@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b9145754d2|Paul Donald|Thu Jul 3 17:11:27 2025 +0200|luci-base: give TextValue form elements separate readonly and disabled
-01201eefe7|Hosted Weblate|Thu Jul 3 09:21:14 2025 +0200|Translated using Weblate (Chinese (Simplified Han script))
+5780be0beb|Paul Donald|Mon Jun 30 17:55:44 2025 +0200|luci-app-unbound: convert to JS
 </details>

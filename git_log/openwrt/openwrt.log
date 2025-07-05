@@ -2,8 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e2cdcf8e46|John Audia|Wed Jul 2 11:38:03 2025 -0400|openssl: update to 3.5.1
-23dc466969|Eric Fahlgren|Tue Jul 1 14:02:41 2025 -0700|imagebuilder: implement STRIP_ABI option for manifest target
-9d31db2833|Markus Stockhausen|Wed Jul 2 12:35:27 2025 -0400|realtek: add RTL931x support to rt-loader
-7f939d99e7|Rany Hany|Wed Jul 2 16:53:39 2025 +0000|tools/squashfs4: fix compile on Alpine Linux
+f955716341|Rosen Penev|Sat Jun 7 16:46:07 2025 -0700|ramips: fix wifi nodes to upstream standards
+6f9ff392dc|Harrison Boyd|Tue Jul 1 22:59:05 2025 +0000|config: drop kernel config symbols removed before v6.6
+3a41c63eb5|Ian Ladd|Wed Jul 2 10:54:47 2025 -0400|libnetfilter-conntrack: bump to 1.1.0
+94f043bf87|Dim Fish|Fri Jul 4 11:50:35 2025 +0300|uboot-mediatek: force update_cache_variants to use reset for Foresee NAND
+edc7cb9104|Dim Fish|Thu Jul 3 18:06:18 2025 +0300|mediatek: spinand: force update_cache_variants to use reset for Foresee NAND
+b5c90ed1bd|Chuanhong Guo|Fri Jul 4 17:33:18 2025 +0800|usbgadget: bump PKG_RELEASE for os descriptors support
+2c8a433cd2|Antony Kolitsos|Thu Jul 3 17:17:00 2025 -0700|mbedtls: update to 3.6.4
+c5c894f7ff|Thomas Richard|Thu Jun 26 11:26:00 2025 +0200|usbgadget: add OS descriptors support
 </details>

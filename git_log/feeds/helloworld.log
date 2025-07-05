@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-10442ff|zxl hhyccc|Thu Jul 3 21:46:13 2025 +0800|luci-app-ssr-plus: Fix dns2socks can't work,dns request can't redirect to tunnel
+0c3efbc|zxl hhyccc|Fri Jul 4 23:33:12 2025 +0800|dnsproxy: Update to 0.76.1
+0d9a4d9|zxl hhyccc|Fri Jul 4 22:41:47 2025 +0800|Merge pull request #1756 from zxlhhyccc/custom
+3c2ff24|zxlhhyccc|Fri Jul 4 21:22:51 2025 +0800|shadow-tls: Update to code compile Signed-off-by: Zxl hhy <zxlhhyccc@gmail.com> Signed-off-by: Tianling Shen <cnsztl@immortalwrt.org>
+abc620e|zxl hhyccc|Fri Jul 4 21:13:55 2025 +0800|luci-app-ssr-plus: Add Delete all subscribe nodes and md5 value at the same time.
 </details>

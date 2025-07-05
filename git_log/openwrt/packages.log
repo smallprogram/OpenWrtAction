@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-45a54f5a3|Chris Swan|Wed Jul 2 11:54:06 2025 +0100|csshnpd: bump to 1.0.13
+3211b6295|Thibaut VARÈNE|Sat Jun 7 15:19:09 2025 +0200|ratelimit: add package
+82be09387|John Audia|Fri Jul 4 06:16:07 2025 -0400|zsh: fix shell not sourcing /etc/profile
+ad3c42c40|Miroslav Lichvar|Thu Jul 3 20:00:29 2025 +0200|chrony: update to 4.7
 </details>
