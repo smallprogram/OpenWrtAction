@@ -2,15 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dcacd23dad|Tianling Shen|Fri Jul 4 21:31:29 2025 +0800|Merge Official Source
-6f9ff392dc|Harrison Boyd|Tue Jul 1 22:59:05 2025 +0000|config: drop kernel config symbols removed before v6.6
-3a41c63eb5|Ian Ladd|Wed Jul 2 10:54:47 2025 -0400|libnetfilter-conntrack: bump to 1.1.0
-efdecd63a6|Tianling Shen|Fri Jul 4 20:32:12 2025 +0800|arm-trusted-firmware-mediatek: print error if failed to read spi-nand ID
-90b61d5a50|Tianling Shen|Fri Jul 4 19:54:37 2025 +0800|mediatek: add TP-Link TL-7DR7230 v1/v2 support
-94f043bf87|Dim Fish|Fri Jul 4 11:50:35 2025 +0300|uboot-mediatek: force update_cache_variants to use reset for Foresee NAND
-edc7cb9104|Dim Fish|Thu Jul 3 18:06:18 2025 +0300|mediatek: spinand: force update_cache_variants to use reset for Foresee NAND
-b5c90ed1bd|Chuanhong Guo|Fri Jul 4 17:33:18 2025 +0800|usbgadget: bump PKG_RELEASE for os descriptors support
-2c8a433cd2|Antony Kolitsos|Thu Jul 3 17:17:00 2025 -0700|mbedtls: update to 3.6.4
-c284059be1|Tianling Shen|Fri Jul 4 14:50:32 2025 +0800|mediatek: remove left-over comments
-c5c894f7ff|Thomas Richard|Thu Jun 26 11:26:00 2025 +0200|usbgadget: add OS descriptors support
+ec27c0797d|Tianling Shen|Sat Jul 5 17:01:35 2025 +0800|arm-trusted-firmware-mediatek: improve use of is_dosilicon
 </details>

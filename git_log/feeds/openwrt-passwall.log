@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e688433|lwb1978|Fri Jul 4 17:33:27 2025 +0800|luci: bump to 25.7.4
-4923be8|lwb1978|Fri Jul 4 16:54:10 2025 +0800|luci: optimize geo files update url
+58ee3d2|A-BO|Sun Jul 6 02:01:09 2025 +0800|luci: bump to 25.7.6
+3a60893|A-BO|Sun Jul 6 01:49:52 2025 +0800|luci: fix some node export errors
+98930b0|A-BO|Sat Jul 5 14:04:02 2025 +0800|luci: optimize node deletion
 </details>

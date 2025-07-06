@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-06bca3249|John Audia|Wed Jul 2 11:38:03 2025 -0400|openssl: update to 3.5.1
+e11335de8|=?UTF-8?q?Thomas=20Wei=C3=9Fschuh?=|Thu Jun 26 12:54:40 2025 +0200|tools: util-linux: update to v2.41.1
+66a69c9dd|Gao Xiang|Thu Jun 26 01:14:32 2025 +0800|tools: add erofs-utils
 </details>
