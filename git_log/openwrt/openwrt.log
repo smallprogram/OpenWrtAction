@@ -2,22 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-604355e8c4|Felix Fietkau|Sat Jul 5 13:51:14 2025 +0200|kernel: fix fraglist GRO on linux 6.12
-f7fa414d3b|Gao Xiang|Thu Jun 26 01:45:22 2025 +0800|image: add support for EROFS rootfs image generation
-9ece943540|Gao Xiang|Thu Jun 26 01:14:32 2025 +0800|tools: add erofs-utils
-df1bf35858|Christian Marangi|Sat Jul 5 15:20:28 2025 +0200|fstools: update to Git HEAD (2025-07-05)
-9738853b73|Agustin Lorenzo|Tue Jul 1 15:49:05 2025 +0200|hostapd: removed OSU support from configuration files, it was removed in the last hostapd update.
-e618ad06b3|Felix Fietkau|Sat Jul 5 13:50:17 2025 +0200|mediatek: fix switch mdio id on mt7622-rfb1 on linux 6.12
-88f4c32060|Mieczyslaw Nalewaj|Sat May 24 14:58:18 2025 +0200|mac80211: update to version 6.14.11
-2ac791e87d|Agustin Lorenzo|Tue Jul 1 22:54:56 2025 +0200|hostapd: update to version 2025-06-27
-39580b1d7b|Felix Fietkau|Wed Jul 2 18:43:09 2025 +0200|hostapd: disable 802.11be support in the mini variant
-6e1d4afa86|Felix Fietkau|Sat Jun 28 21:20:44 2025 +0200|hostapd: fix potential double free in ubus code
-14b686247a|Felix Fietkau|Mon Jun 30 13:13:03 2025 +0200|wifi-scripts: ucode: fix iwinfo crash on untracked interfaces
-185b48e330|Felix Fietkau|Fri Jun 13 12:19:38 2025 +0200|ucode: add patches to improve exception handling for ubus/uloop
-87f130a6ae|Felix Fietkau|Wed Dec 4 11:58:39 2024 +0100|mac80211: add WIFI_SCRIPTS_UCODE to PKG_CONFIG_DEPENDS
-f827d231fb|Christian Marangi|Sat Jul 5 10:39:24 2025 +0200|generic: 6.6: drop netdev backported patch for netdev_tx_reset_subqueue
-ad2077165b|Christian Marangi|Tue Mar 4 23:54:31 2025 +0100|airoha: backport upstream patch for Flow Offload support for AN7581
-afea8bda0d|Christian Marangi|Tue Mar 4 23:53:39 2025 +0100|airoha: backport minor fixes for ethernet driver
-34ba7e8a8a|Christian Marangi|Wed Feb 5 22:23:21 2025 +0100|generic: backport some flow offload helper patch
-921d438564|Christian Marangi|Tue Mar 4 22:59:45 2025 +0100|airoha: replace PCIe patch with upstream version
+77b9393d2f|Felix Fietkau|Sun Jul 6 22:05:03 2025 +0200|ucode: fix an issue in exception handling improvement for ubus/uloop
+d2b2670937|Felix Fietkau|Sun Jul 6 19:23:59 2025 +0200|ath9k: add back previous DT compatible strings for ahb
+bb279e1a69|Felix Fietkau|Sun Jul 6 18:47:14 2025 +0200|hostapd: revert a broken upstream patch that was breaking multi-band operation
+e1d39bdbdb|Felix Fietkau|Sun Jul 6 11:22:33 2025 +0200|mac80211: fix rt2x00 build error on 6.12
+5adc663af6|Felix Fietkau|Sun Jul 6 10:32:41 2025 +0200|image: only calculate EROFS_PCLUSTERSIZE when needed
 </details>

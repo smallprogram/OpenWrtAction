@@ -1,7 +1,0 @@
-<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-35db64c|zxl hhyccc|Sun Jul 6 00:20:17 2025 +0800|Merge pull request #1757 from zxlhhyccc/custom
-2fa0edd|zxlhhyccc|Sat Jul 5 14:57:24 2025 +0800|luci-app-ssr-plus: Add save and apply after successful, jump to the node list
-</details>

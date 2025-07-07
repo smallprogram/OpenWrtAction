@@ -1,9 +1,0 @@
-<details> <summary> <b>OpenWrt-nikki new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-b210c4b|Joseph Mory|Sun Jul 6 00:12:15 2025 +0800|chore: code style
-109e35e|Joseph Mory|Sat Jul 5 22:09:10 2025 +0800|fix: update script's conditional syntax for compatibility and clarity
-1d7bb28|Joseph Mory|Sat Jul 5 20:55:31 2025 +0800|chore: detect language in install/uninstall script
-a163825|startgo|Sat Jul 5 18:50:53 2025 +0800|feat: add translations for zh_Hant
-</details>

@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-58ee3d2|A-BO|Sun Jul 6 02:01:09 2025 +0800|luci: bump to 25.7.6
-3a60893|A-BO|Sun Jul 6 01:49:52 2025 +0800|luci: fix some node export errors
-98930b0|A-BO|Sat Jul 5 14:04:02 2025 +0800|luci: optimize node deletion
-</details>

@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e11335de8|=?UTF-8?q?Thomas=20Wei=C3=9Fschuh?=|Thu Jun 26 12:54:40 2025 +0200|tools: util-linux: update to v2.41.1
-66a69c9dd|Gao Xiang|Thu Jun 26 01:14:32 2025 +0800|tools: add erofs-utils
+dfe0b8011|Rosen Penev|Thu Sep 26 16:29:43 2024 -0700|cmake.mk: disable shared libs for host build
+1a75fbe43|Gao Xiang|Thu Jun 26 01:45:22 2025 +0800|image: add support for EROFS rootfs image
+70265ac2c|Robert Marko|Tue Jun 25 17:53:11 2024 +0200|tools: use libuuid provided by util-linux
 </details>

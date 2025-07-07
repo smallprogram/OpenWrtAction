@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5507b8d13|FunnyGeekette|Sat Jul 5 01:15:24 2025 +0800|shadowsocks-rust: update to 1.23.5
+87611afb4|zhusir|Sun Jul 6 21:10:07 2025 +0800|ddns-go: update version to 6.11.2
+36fc5ca01|Tianling Shen|Mon Jul 7 01:20:30 2025 +0800|ddns-scripts_aliyun: drop package
+bd797811a|ImmortalWrt AutoUpdate Bot|Sun Jul 6 12:07:53 2025 +0000|cdnspeedtest: Update to 2.3.0
 </details>
