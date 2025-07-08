@@ -2,25 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f2c93e0e2|Rui Salvaterra|Sun Jul 6 11:25:03 2025 +0100|tor: update to 0.4.8.17 stable
-0ac2c7416|Jens Wagner|Fri Jun 20 11:47:53 2025 +0200|perl-clone: new module Clone, version 0.47
-1d33c0ed9|Jens Wagner|Tue Jun 17 03:18:02 2025 +0200|perl-www: restructure and update to 6.78
-f48ef299a|Jens Wagner|Mon Jun 16 12:25:21 2025 +0200|perl-uri: restructure and update to 5.32
-6d59aa05b|Jens Wagner|Tue Jun 17 03:20:08 2025 +0200|perl-www-robotrules: restructure 6.02
-d028183d5|Jens Wagner|Tue Jun 17 03:19:04 2025 +0200|perl-www-mechanize: restructure and update to 2.19
-694f5d6ec|Jens Wagner|Tue Jun 17 03:16:55 2025 +0200|perl-net-http: restructure and update to 6.23
-796634f1f|Jens Wagner|Tue Jun 17 03:13:42 2025 +0200|perl-http-message: restructure and update to 7.00
-877494f0f|Jens Wagner|Tue Jun 17 03:15:25 2025 +0200|perl-lwp-mediatypes: restructure 6.04
-6fce183e7|Jens Wagner|Tue Jun 17 03:12:42 2025 +0200|perl-http-date: restructure and update to 6.06
-52a06e892|Jens Wagner|Tue Jun 17 03:10:52 2025 +0200|perl-http-daemon: restructure and update to 6.16
-4279d8dcb|Jens Wagner|Tue Jun 17 03:08:10 2025 +0200|perl-html-tree: restructure and update to 5.07
-a9fa6dfdd|Jens Wagner|Tue Jun 17 03:09:34 2025 +0200|perl-http-cookies: restructure and update to 6.11
-bb518503a|Jens Wagner|Tue Jun 17 03:06:23 2025 +0200|perl-html-tagset: restructure and update to 3.24
-ebfb47aa7|Jens Wagner|Tue Jun 17 03:03:22 2025 +0200|perl-html-parser: restructure and update to 3.83
-f5a22bae5|Jens Wagner|Tue Jun 17 02:50:56 2025 +0200|perl-html-form: restructure and update to 6.12
-e9f4aa38e|Josef Schlehofer|Tue Jun 17 22:43:38 2025 +0200|treewide: move all perl packages into its own folder
-04b7b67e7|Jens Wagner|Sun Jun 15 17:34:59 2025 +0200|perl: add metacpan.mk download helper
-2f38de7ff|Jonas Gorski|Sun Jul 6 13:21:25 2025 +0200|znc: update to 1.10.1
-b8d95d83a|George Sapkin|Wed Jul 2 02:27:21 2025 +0300|syncthing: bump to 1.30.0
-793a3e196|George Sapkin|Wed Jul 2 12:23:06 2025 +0300|syncthing: add George Sapkin as a maintainer
+062287375|Tianling Shen|Mon Jul 7 21:04:03 2025 +0800|btop: Update to 1.4.4
+4df4bf369|Tianling Shen|Mon Jul 7 21:03:39 2025 +0800|cloudflared: Update to 2025.7.0
+f020276eb|Tianling Shen|Mon Jul 7 21:03:15 2025 +0800|v2ray-core: Update to 5.35.0
+27d1a4bf3|Tianling Shen|Mon Jul 7 21:02:39 2025 +0800|openlist: Update to 4.0.8
+8ddf8ac20|John Audia|Tue Jul 1 14:34:19 2025 -0400|snort3: update to 3.9.1.0
+babd333c6|John Audia|Tue Jul 1 14:24:02 2025 -0400|libdaq3: update to 3.0.20
+9a917dcc5|Oldřich Jedlička|Sun Jul 6 22:23:28 2025 +0200|libssh2: update to 1.11.1
+5d19259d3|Jens Wagner|Mon Jul 7 00:46:08 2025 +0200|perl-io-socket-ssl: bump to 2.094
+00b8146be|Chris Swan|Fri Jul 4 15:49:16 2025 +0100|csshnpd: Preserve .atsign directory
 </details>

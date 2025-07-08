@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dfe0b8011|Rosen Penev|Thu Sep 26 16:29:43 2024 -0700|cmake.mk: disable shared libs for host build
-1a75fbe43|Gao Xiang|Thu Jun 26 01:45:22 2025 +0800|image: add support for EROFS rootfs image
-70265ac2c|Robert Marko|Tue Jun 25 17:53:11 2024 +0200|tools: use libuuid provided by util-linux
+0730f0357|Mantas Pucka|Wed Jun 25 10:49:47 2025 +0300|qualcommbe: v6.12: drop upstreamed patch
+b8e5d38d3|Felix Fietkau|Sat Jul 5 13:50:17 2025 +0200|mediatek: fix switch mdio id on mt7622-rfb1
 </details>

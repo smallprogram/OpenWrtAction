@@ -1,0 +1,9 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+c5736a30da|Paul Donald|Tue Jul 8 01:32:39 2025 +0200|luci-app-chrony: allow non NTS variant also
+834b5d06e3|Chris Swan|Mon Jun 23 13:34:50 2025 +0100|luci-app-csshnpd: Add new package
+1322ad9018|Paul Donald|Tue Jul 8 00:07:44 2025 +0200|luci-mod-dashboard: display bugfix
+d0aad147e6|Hosted Weblate|Mon Jul 7 18:21:49 2025 +0200|Translated using Weblate (Russian)
+</details>
