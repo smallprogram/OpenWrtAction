@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0730f0357|Mantas Pucka|Wed Jun 25 10:49:47 2025 +0300|qualcommbe: v6.12: drop upstreamed patch
-b8e5d38d3|Felix Fietkau|Sat Jul 5 13:50:17 2025 +0200|mediatek: fix switch mdio id on mt7622-rfb1
+8f51e256b|coolsnowwolf|Tue Jul 8 19:34:02 2025 +0800|Version update to R25.7.7
+532c6d1f4|coolsnowwolf|Tue Jul 8 19:24:12 2025 +0800|OpenWrt v24.10.2: adjust config defaults
+ffb11e022|coolsnowwolf|Tue Jul 8 18:40:51 2025 +0800|qualcommax: add autocore-arm package by default
+b73315032|coolsnowwolf|Tue Jul 8 18:39:17 2025 +0800|qualcommax: ipq807x: fix mac-address for Aliyun AP8220 v1.1
 </details>

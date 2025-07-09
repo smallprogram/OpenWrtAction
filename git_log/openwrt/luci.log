@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c5736a30da|Paul Donald|Tue Jul 8 01:32:39 2025 +0200|luci-app-chrony: allow non NTS variant also
-834b5d06e3|Chris Swan|Mon Jun 23 13:34:50 2025 +0100|luci-app-csshnpd: Add new package
-1322ad9018|Paul Donald|Tue Jul 8 00:07:44 2025 +0200|luci-mod-dashboard: display bugfix
-d0aad147e6|Hosted Weblate|Mon Jul 7 18:21:49 2025 +0200|Translated using Weblate (Russian)
+2869946de4|Florian Eckert|Tue Jul 8 08:05:57 2025 +0200|Merge pull request #7844 from champtar/mwan3-section-interfaces
+c358b34a53|Etienne Champetier|Mon Jun 30 12:46:31 2025 -0400|luci-app-mwan3: only request interfaces status
 </details>

@@ -2,14 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bce0ad5563|Antony Kolitsos|Wed Jul 2 21:17:13 2025 -0700|libnftnl: update to 1.2.9
-1052ecf659|Antony Kolitsos|Wed Jul 2 21:11:18 2025 -0700|nftables: update to 1.1.3
-6f09f8ca31|Mieczyslaw Nalewaj|Sun Jul 6 14:50:59 2025 +0200|ramips: update drivers to be compatible with kernel 6.12 and above
-ce97258300|Mieczyslaw Nalewaj|Sun Jul 6 14:43:06 2025 +0200|ramips: drop 6.6 support
-3402384f17|Mieczyslaw Nalewaj|Sun Jul 6 14:37:27 2025 +0200|ramips: use kernel 6.12 by default
-405ff49edc|Felix Fietkau|Mon Jul 7 19:38:53 2025 +0200|mt76: update to Git HEAD (2025-07-07)
-7e09959efd|Rosen Penev|Sun Jul 6 12:07:23 2025 -0700|mac80211: fix wmac node names
-65c539be80|Rosen Penev|Sat Jul 5 18:06:19 2025 -0700|kernel: backport GCC15 fix for powerpc
-a7ab0d5bff|Felix Fietkau|Mon Jul 7 17:15:54 2025 +0200|hostapd: enable CONFIG_OCV when 802.11be support is enabled
-7c8d73e374|Rosen Penev|Sat Jul 5 20:30:19 2025 -0700|readline: update to 8.3
+1f8391346e|Robert Marko|Tue Jul 8 14:17:16 2025 +0200|toolchain: gcc: 15: fix build error with glibc for aarch64 targets
+7caf88b63e|Carsten Schuette|Mon Jul 7 20:12:04 2025 +0200|mold: Update to 2.40.1
+ae7d6c851a|Shiji Yang|Tue Jul 8 05:59:22 2025 +0800|tools/mkimage: update to v2025.07
 </details>
