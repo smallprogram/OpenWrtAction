@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8f51e256b|coolsnowwolf|Tue Jul 8 19:34:02 2025 +0800|Version update to R25.7.7
-532c6d1f4|coolsnowwolf|Tue Jul 8 19:24:12 2025 +0800|OpenWrt v24.10.2: adjust config defaults
-ffb11e022|coolsnowwolf|Tue Jul 8 18:40:51 2025 +0800|qualcommax: add autocore-arm package by default
-b73315032|coolsnowwolf|Tue Jul 8 18:39:17 2025 +0800|qualcommax: ipq807x: fix mac-address for Aliyun AP8220 v1.1
+007577fb9|aiamadeus|Fri Mar 14 22:02:30 2025 +0800|qualcommax: simplify mac script
+5baa614d3|coolsnowwolf|Sat Jul 5 23:09:35 2025 +0800|base-files: sync with upstream
 </details>

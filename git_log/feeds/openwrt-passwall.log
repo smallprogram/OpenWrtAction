@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e5e4346|A-BO|Tue Jul 8 23:56:20 2025 +0800|luci: adjust backup and restore functions
+bfe3b25|A-BO|Wed Jul 9 19:44:33 2025 +0800|luci: fix and optimize
 </details>

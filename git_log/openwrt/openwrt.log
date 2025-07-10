@@ -2,7 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1f8391346e|Robert Marko|Tue Jul 8 14:17:16 2025 +0200|toolchain: gcc: 15: fix build error with glibc for aarch64 targets
-7caf88b63e|Carsten Schuette|Mon Jul 7 20:12:04 2025 +0200|mold: Update to 2.40.1
-ae7d6c851a|Shiji Yang|Tue Jul 8 05:59:22 2025 +0800|tools/mkimage: update to v2025.07
+6048ad905a|John Audia|Tue Jul 8 15:55:35 2025 -0400|linux-firmware: update to 20250708
+118d8ee981|Felix Fietkau|Wed Jul 9 17:16:27 2025 +0200|ath79: revert wmac node names
+b77fa45d12|Andrew LaMarche|Mon Jun 9 18:49:28 2025 +0000|kernel: fix rtl8261n driver for realtek
+d2f9846760|Andrew LaMarche|Mon Jun 9 18:38:03 2025 +0000|kernel: support RTL8264 in rtl8261n driver
+db763342af|Felix Fietkau|Wed Jul 9 12:12:40 2025 +0200|hostapd: ignore comment lines for hash comparison
+097700771c|Robert Marko|Wed Jul 9 11:51:01 2025 +0200|Revert "ncurses: update to 6.5"
+6e58e64501|Jakob Haufe|Wed Jun 18 12:34:20 2025 +0200|octeon: ubnt-*: Add device specific DTS pruning
+8876192bff|John Audia|Tue Jul 8 15:46:02 2025 -0400|ncurses: update to 6.5
+3d776d31a4|John Audia|Tue Jul 8 15:43:12 2025 -0400|ncurses: Add -std=gnu17 to CFLAGS to avoid a GCC15 error when building with glibc
+99054fcb6a|Daniel Golle|Wed Jul 9 02:55:35 2025 +0100|xcrypt: work-around broken use of VARIANT with BUILDONLY
 </details>

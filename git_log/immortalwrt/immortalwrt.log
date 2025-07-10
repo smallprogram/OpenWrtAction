@@ -2,19 +2,17 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-504a8203ed|Tianling Shen|Tue Jul 8 16:32:06 2025 +0800|Merge Official Source
-ae7d6c851a|Shiji Yang|Tue Jul 8 05:59:22 2025 +0800|tools/mkimage: update to v2025.07
-bce0ad5563|Antony Kolitsos|Wed Jul 2 21:17:13 2025 -0700|libnftnl: update to 1.2.9
-1052ecf659|Antony Kolitsos|Wed Jul 2 21:11:18 2025 -0700|nftables: update to 1.1.3
-6f09f8ca31|Mieczyslaw Nalewaj|Sun Jul 6 14:50:59 2025 +0200|ramips: update drivers to be compatible with kernel 6.12 and above
-ce97258300|Mieczyslaw Nalewaj|Sun Jul 6 14:43:06 2025 +0200|ramips: drop 6.6 support
-3402384f17|Mieczyslaw Nalewaj|Sun Jul 6 14:37:27 2025 +0200|ramips: use kernel 6.12 by default
-405ff49edc|Felix Fietkau|Mon Jul 7 19:38:53 2025 +0200|mt76: update to Git HEAD (2025-07-07)
-7e09959efd|Rosen Penev|Sun Jul 6 12:07:23 2025 -0700|mac80211: fix wmac node names
-65c539be80|Rosen Penev|Sat Jul 5 18:06:19 2025 -0700|kernel: backport GCC15 fix for powerpc
-a7ab0d5bff|Felix Fietkau|Mon Jul 7 17:15:54 2025 +0200|hostapd: enable CONFIG_OCV when 802.11be support is enabled
-7c8d73e374|Rosen Penev|Sat Jul 5 20:30:19 2025 -0700|readline: update to 8.3
-77b9393d2f|Felix Fietkau|Sun Jul 6 22:05:03 2025 +0200|ucode: fix an issue in exception handling improvement for ubus/uloop
-d2b2670937|Felix Fietkau|Sun Jul 6 19:23:59 2025 +0200|ath9k: add back previous DT compatible strings for ahb
-bb279e1a69|Felix Fietkau|Sun Jul 6 18:47:14 2025 +0200|hostapd: revert a broken upstream patch that was breaking multi-band operation
+0c9e21c7fe|Tianling Shen|Wed Jul 9 20:59:45 2025 +0800|Merge Official Source
+b77fa45d12|Andrew LaMarche|Mon Jun 9 18:49:28 2025 +0000|kernel: fix rtl8261n driver for realtek
+d2f9846760|Andrew LaMarche|Mon Jun 9 18:38:03 2025 +0000|kernel: support RTL8264 in rtl8261n driver
+6e2422eb9d|Tianling Shen|Wed Jul 9 18:46:24 2025 +0800|odhcpd: clear default ra flags
+db763342af|Felix Fietkau|Wed Jul 9 12:12:40 2025 +0200|hostapd: ignore comment lines for hash comparison
+097700771c|Robert Marko|Wed Jul 9 11:51:01 2025 +0200|Revert "ncurses: update to 6.5"
+6e58e64501|Jakob Haufe|Wed Jun 18 12:34:20 2025 +0200|octeon: ubnt-*: Add device specific DTS pruning
+8876192bff|John Audia|Tue Jul 8 15:46:02 2025 -0400|ncurses: update to 6.5
+3d776d31a4|John Audia|Tue Jul 8 15:43:12 2025 -0400|ncurses: Add -std=gnu17 to CFLAGS to avoid a GCC15 error when building with glibc
+99054fcb6a|Daniel Golle|Wed Jul 9 02:55:35 2025 +0100|xcrypt: work-around broken use of VARIANT with BUILDONLY
+16821b2e4a|Tianling Shen|Wed Jul 9 14:44:01 2025 +0800|ath79: disable build for zyxel nwa11xx by default
+1f8391346e|Robert Marko|Tue Jul 8 14:17:16 2025 +0200|toolchain: gcc: 15: fix build error with glibc for aarch64 targets
+7caf88b63e|Carsten Schuette|Mon Jul 7 20:12:04 2025 +0200|mold: Update to 2.40.1
 </details>
