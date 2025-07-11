@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4678d6a82c|Paul Donald|Wed Jul 9 18:17:45 2025 +0200|luci-app-ddns: remove unused imports
-81692c6c38|Paul Donald|Tue Jul 8 14:27:05 2025 +0200|luci-base: tweak dispatcher logging to post under correct facility
-0f69aa9f1b|Paul Donald|Tue Jul 8 01:36:36 2025 +0200|luci-app-unbound: remove unnecessary permissions
+4715c6aa1a|Paul Donald|Fri Jul 11 02:16:28 2025 +0200|luci-app-ddns: fix ddns uc script for apk
 </details>

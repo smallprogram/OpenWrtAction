@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-007577fb9|aiamadeus|Fri Mar 14 22:02:30 2025 +0800|qualcommax: simplify mac script
-5baa614d3|coolsnowwolf|Sat Jul 5 23:09:35 2025 +0800|base-files: sync with upstream
+068e16705|aiamadeus|Wed Jul 9 20:26:19 2025 +0800|uboot-rockchip: bump to 2025.07
 </details>

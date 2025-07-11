@@ -2,14 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6048ad905a|John Audia|Tue Jul 8 15:55:35 2025 -0400|linux-firmware: update to 20250708
-118d8ee981|Felix Fietkau|Wed Jul 9 17:16:27 2025 +0200|ath79: revert wmac node names
-b77fa45d12|Andrew LaMarche|Mon Jun 9 18:49:28 2025 +0000|kernel: fix rtl8261n driver for realtek
-d2f9846760|Andrew LaMarche|Mon Jun 9 18:38:03 2025 +0000|kernel: support RTL8264 in rtl8261n driver
-db763342af|Felix Fietkau|Wed Jul 9 12:12:40 2025 +0200|hostapd: ignore comment lines for hash comparison
-097700771c|Robert Marko|Wed Jul 9 11:51:01 2025 +0200|Revert "ncurses: update to 6.5"
-6e58e64501|Jakob Haufe|Wed Jun 18 12:34:20 2025 +0200|octeon: ubnt-*: Add device specific DTS pruning
-8876192bff|John Audia|Tue Jul 8 15:46:02 2025 -0400|ncurses: update to 6.5
-3d776d31a4|John Audia|Tue Jul 8 15:43:12 2025 -0400|ncurses: Add -std=gnu17 to CFLAGS to avoid a GCC15 error when building with glibc
-99054fcb6a|Daniel Golle|Wed Jul 9 02:55:35 2025 +0100|xcrypt: work-around broken use of VARIANT with BUILDONLY
+9d47c15227|Robert Marko|Thu Jul 10 15:08:19 2025 +0200|perf: disable shellcheck
+ed23b44e55|Robert Marko|Thu Jul 10 15:05:39 2025 +0200|perf: disable BUILD_BPF_SKEL
+bcf51747a2|Felix Fietkau|Thu Jul 10 10:47:51 2025 +0200|unetd: update to Git HEAD (2025-07-05)
+14d5a51822|Felix Fietkau|Thu Jul 10 10:46:53 2025 +0200|cli: add json data type
 </details>

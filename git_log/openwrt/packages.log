@@ -2,12 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7c9c48d5d|Peter van Dijk|Mon Jul 7 11:10:03 2025 +0200|pdns: update to 4.9.7
-0858d257e|Jianhui Zhao|Tue Jul 8 23:47:51 2025 +0800|rtty: update to 9.0.0
-d3a2fb39a|Tan Zien|Sun Jul 6 08:11:40 2025 +0800|unzip: fix build GCC 15.1
-ab6ebc5c0|Daniel Golle|Wed Jul 9 03:39:53 2025 +0100|unifdef: fix build with GCC 15
-362b8cda7|Javier Marcet|Tue Jul 8 18:41:02 2025 +0200|docker-compose: Update to version 2.38.2
-b965e893b|Daniel Golle|Wed Jul 9 03:39:31 2025 +0100|cryptsetup: update to 2.8.0
-3d1003956|Robert Marko|Wed Jul 9 10:34:58 2025 +0200|shadow: restore PKG_BUILD_DEPENDS to libxcrypt
-dadafe3ac|Eric Leung|Tue Jul 8 18:01:44 2025 +0800|ddns-scripts: (cloudflare) add support for custom zone ID and DNS record ID
+109b1ff89|Chris Swan|Thu Jul 10 15:57:44 2025 +0100|csshnpd: Bump to c1.0.14 release
+366629b11|Paulo Neves|Wed Jul 9 20:15:41 2025 +0200|afraid.org-v2-token.json: Fix 404 on update
+99c111e39|Richard Muzik|Thu Jul 10 11:03:20 2025 +0200|git: update to 2.46.4
+d0932ad76|George Sapkin|Tue Jul 8 22:05:33 2025 +0300|golang: bump to 1.24.5
+9d0a14ed4|Wesley Gimenes|Mon Jul 7 05:00:50 2025 -0300|netbird: update to 0.50.1
+29c9bf31c|Tianling Shen|Wed Jul 9 17:14:55 2025 +0800|cloudflared: change default protocol back to 'auto'
 </details>
