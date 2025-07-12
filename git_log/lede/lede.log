@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-068e16705|aiamadeus|Wed Jul 9 20:26:19 2025 +0800|uboot-rockchip: bump to 2025.07
+095279374|coolsnowwolf|Sat Jul 12 04:03:23 2025 +0800|qca-nss-dp: update for 6.12 compatibility
+ea0466de5|coolsnowwolf|Sat Jul 12 03:50:52 2025 +0800|ubus: update to Git HEAD (2025-05-16)
 </details>

@@ -2,8 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9d47c15227|Robert Marko|Thu Jul 10 15:08:19 2025 +0200|perf: disable shellcheck
-ed23b44e55|Robert Marko|Thu Jul 10 15:05:39 2025 +0200|perf: disable BUILD_BPF_SKEL
-bcf51747a2|Felix Fietkau|Thu Jul 10 10:47:51 2025 +0200|unetd: update to Git HEAD (2025-07-05)
-14d5a51822|Felix Fietkau|Thu Jul 10 10:46:53 2025 +0200|cli: add json data type
+5e0fbca9b9|Konstantin Demin|Tue Jul 8 19:12:26 2025 +0300|dropbear: disable RSA-SHA1 by default
+3dc05213e0|Konstantin Demin|Tue Jul 8 19:12:26 2025 +0300|dropbear: simplify rebuild on config changes
+d8ff2d8cba|Konstantin Demin|Tue Jul 8 19:12:26 2025 +0300|dropbear: refactor configuration
+bbe4d6ddb2|Konstantin Demin|Tue Jul 8 19:12:25 2025 +0300|dropbear: bump to 2025.88
+d2108c2c58|Markus Stockhausen|Mon Jun 23 14:12:05 2025 -0400|realtek: enhance RTL930x SerDes/PLL/CMU interoperability
+a854d833ea|David Bauer|Wed Jul 9 15:24:29 2025 +0200|wifi-scripts: correctly set basic-rates with wpa_supplicant
 </details>

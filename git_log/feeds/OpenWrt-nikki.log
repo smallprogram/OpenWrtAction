@@ -1,0 +1,7 @@
+<details> <summary> <b>OpenWrt-nikki new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+619ce9c|Joseph Mory|Fri Jul 11 10:55:44 2025 +0800|chore: limit the time of subscription download
+397b08c|Joseph Mory|Fri Jul 11 09:20:15 2025 +0800|chore: code style
+</details>

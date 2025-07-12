@@ -1,6 +1,0 @@
-<details> <summary> <b>luci new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-4715c6aa1a|Paul Donald|Fri Jul 11 02:16:28 2025 +0200|luci-app-ddns: fix ddns uc script for apk
-</details>

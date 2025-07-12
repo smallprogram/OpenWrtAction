@@ -1,0 +1,15 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+fb83c1e|xiaorouji|Sat Jul 12 02:07:34 2025 +0800|luci: bump to 25.7.11
+956fd64|xiaorouji|Sat Jul 12 02:02:21 2025 +0800|luci: add geoview
+f65b90d|lwb1978|Fri Jul 11 11:10:05 2025 +0800|luci: fix some systems unable to write logs
+2b3beba|lwb1978|Fri Jun 27 20:51:42 2025 +0800|luci: optimize and fix
+c648437|A-BO|Tue Jul 8 23:56:20 2025 +0800|luci: adjust backup and restore functions
+c18c9d5|A-BO|Sun Jul 6 01:49:52 2025 +0800|luci: fix some node export errors
+0ba25d2|A-BO|Sat Jul 5 14:04:02 2025 +0800|luci: optimize node deletion
+4c6a727|lwb1978|Sun Jun 29 01:12:06 2025 +0800|luci: kill ss plugin when optimizer stops
+afef5de|lwb1978|Wed Jun 25 11:53:40 2025 +0800|luci: optimize ss link subscribe
+2b70737|lwb1978|Mon Jun 23 17:22:17 2025 +0800|luci: add `ss + shadow-tls` new format subscribe
+</details>

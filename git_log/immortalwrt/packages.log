@@ -1,0 +1,45 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+e3ff8ef44|Tianling Shen|Fri Jul 11 19:59:59 2025 +0800|Merge Official Source
+bb310d519|Tianling Shen|Fri Jul 11 19:31:58 2025 +0800|yq: Update to 4.46.1
+9b158a7ef|Tianling Shen|Fri Jul 11 19:31:20 2025 +0800|geoipupdate: Update to 7.1.1
+e565e93ed|Tianling Shen|Fri Jul 11 19:30:33 2025 +0800|rclone: Update to 1.70.3
+68ddb7923|Tianling Shen|Fri Jul 11 19:14:35 2025 +0800|v2ray-core: Update to 5.37.0
+bcb6992f4|Wesley Gimenes|Thu Jul 10 20:51:12 2025 -0300|netbird: update to 0.50.2
+109b1ff89|Chris Swan|Thu Jul 10 15:57:44 2025 +0100|csshnpd: Bump to c1.0.14 release
+366629b11|Paulo Neves|Wed Jul 9 20:15:41 2025 +0200|afraid.org-v2-token.json: Fix 404 on update
+99c111e39|Richard Muzik|Thu Jul 10 11:03:20 2025 +0200|git: update to 2.46.4
+d0932ad76|George Sapkin|Tue Jul 8 22:05:33 2025 +0300|golang: bump to 1.24.5
+9d0a14ed4|Wesley Gimenes|Mon Jul 7 05:00:50 2025 -0300|netbird: update to 0.50.1
+29c9bf31c|Tianling Shen|Wed Jul 9 17:14:55 2025 +0800|cloudflared: change default protocol back to 'auto'
+7c9c48d5d|Peter van Dijk|Mon Jul 7 11:10:03 2025 +0200|pdns: update to 4.9.7
+0858d257e|Jianhui Zhao|Tue Jul 8 23:47:51 2025 +0800|rtty: update to 9.0.0
+d3a2fb39a|Tan Zien|Sun Jul 6 08:11:40 2025 +0800|unzip: fix build GCC 15.1
+ab6ebc5c0|Daniel Golle|Wed Jul 9 03:39:53 2025 +0100|unifdef: fix build with GCC 15
+362b8cda7|Javier Marcet|Tue Jul 8 18:41:02 2025 +0200|docker-compose: Update to version 2.38.2
+b965e893b|Daniel Golle|Wed Jul 9 03:39:31 2025 +0100|cryptsetup: update to 2.8.0
+3d1003956|Robert Marko|Wed Jul 9 10:34:58 2025 +0200|shadow: restore PKG_BUILD_DEPENDS to libxcrypt
+dadafe3ac|Eric Leung|Tue Jul 8 18:01:44 2025 +0800|ddns-scripts: (cloudflare) add support for custom zone ID and DNS record ID
+763f09e19|Daniel Golle|Fri Jul 4 22:24:20 2025 +0100|gnunet: update to 0.24.3
+301733294|Daniel Golle|Fri Jul 4 22:25:33 2025 +0100|gnupg2: update to 2.4.8
+177a676bf|Daniel Golle|Fri Jul 4 22:25:12 2025 +0100|libcurl-gnutls: update to cURL release 8.14.1
+95a5d3211|Daniel Golle|Fri Jul 4 22:24:47 2025 +0100|libpbc: update to 1.0.0
+9f5262118|Daniel Golle|Fri Jul 4 18:56:34 2025 +0100|libp11: update to 0.4.16
+ee2c22004|Daniel Golle|Fri Jul 4 19:12:47 2025 +0100|opentracker: update to git HEAD of 2025-04-25
+b9575aa51|Daniel Golle|Fri Jul 4 16:27:13 2025 +0100|libxmp: update to 4.6.3
+f2b49654e|Daniel Golle|Fri Jul 4 16:25:39 2025 +0100|lvm2: update to 2.03.33 and libdm to 1.02.207
+573b0f7d9|Daniel Golle|Fri Jul 4 16:25:19 2025 +0100|exfatprogs: update to 1.2.9
+64a71ca1c|Daniel Golle|Fri Jul 4 16:24:51 2025 +0100|postgresql: update to 17.5
+3265ec312|Daniel Golle|Fri Jul 4 16:24:35 2025 +0100|libwacom: update to 2.16.1
+d4fe5d3a9|Daniel Golle|Fri Jul 4 16:24:04 2025 +0100|libevdev: update to 1.13.4
+fba37516d|Daniel Golle|Fri Jul 4 16:23:45 2025 +0100|libdeflate: update to 1.24
+413f70d9c|Daniel Golle|Fri Jul 4 16:23:28 2025 +0100|hiredis: update to 1.3.0
+821a5a0b8|Daniel Golle|Fri Jul 4 16:23:12 2025 +0100|ell: update to 0.78
+383fba198|John Audia|Wed Jul 2 16:29:20 2025 -0400|jq: bump to v1.8.1
+b7d4d32d8|Konstantin Demin|Mon Jul 7 11:04:07 2025 +0300|quota: fix setproject binary
+3413d5bd9|Noah Meyerhans|Fri Jul 4 12:23:16 2025 -0400|knot-resolver: disable jemalloc support
+a6b332f4e|Christian Korber|Fri Jun 27 08:48:55 2025 +0200|modemmanager: change to configuration option disable_modem
+8f0b5561e|Yuxi Yang|Fri Jul 4 13:50:14 2025 +0800|nebula: bump to 1.9.5
+</details>

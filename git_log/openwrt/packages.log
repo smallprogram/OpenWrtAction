@@ -2,10 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-109b1ff89|Chris Swan|Thu Jul 10 15:57:44 2025 +0100|csshnpd: Bump to c1.0.14 release
-366629b11|Paulo Neves|Wed Jul 9 20:15:41 2025 +0200|afraid.org-v2-token.json: Fix 404 on update
-99c111e39|Richard Muzik|Thu Jul 10 11:03:20 2025 +0200|git: update to 2.46.4
-d0932ad76|George Sapkin|Tue Jul 8 22:05:33 2025 +0300|golang: bump to 1.24.5
-9d0a14ed4|Wesley Gimenes|Mon Jul 7 05:00:50 2025 -0300|netbird: update to 0.50.1
-29c9bf31c|Tianling Shen|Wed Jul 9 17:14:55 2025 +0800|cloudflared: change default protocol back to 'auto'
+54e24f2fe|John Audia|Thu Jul 10 14:43:13 2025 -0400|samba4: update to 4.22.3
+ea07bdb59|Eric Fahlgren|Fri Jul 11 11:15:15 2025 -0700|owut: update to 2025.07.11
+b153b6a03|Jan Kardell|Thu Jul 10 15:35:25 2025 +0200|sudo: bump to version 1.9.17p1
+bb310d519|Tianling Shen|Fri Jul 11 19:31:58 2025 +0800|yq: Update to 4.46.1
+9b158a7ef|Tianling Shen|Fri Jul 11 19:31:20 2025 +0800|geoipupdate: Update to 7.1.1
+e565e93ed|Tianling Shen|Fri Jul 11 19:30:33 2025 +0800|rclone: Update to 1.70.3
+68ddb7923|Tianling Shen|Fri Jul 11 19:14:35 2025 +0800|v2ray-core: Update to 5.37.0
+bcb6992f4|Wesley Gimenes|Thu Jul 10 20:51:12 2025 -0300|netbird: update to 0.50.2
 </details>
