@@ -2,10 +2,46 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5e0fbca9b9|Konstantin Demin|Tue Jul 8 19:12:26 2025 +0300|dropbear: disable RSA-SHA1 by default
-3dc05213e0|Konstantin Demin|Tue Jul 8 19:12:26 2025 +0300|dropbear: simplify rebuild on config changes
-d8ff2d8cba|Konstantin Demin|Tue Jul 8 19:12:26 2025 +0300|dropbear: refactor configuration
-bbe4d6ddb2|Konstantin Demin|Tue Jul 8 19:12:25 2025 +0300|dropbear: bump to 2025.88
-d2108c2c58|Markus Stockhausen|Mon Jun 23 14:12:05 2025 -0400|realtek: enhance RTL930x SerDes/PLL/CMU interoperability
-a854d833ea|David Bauer|Wed Jul 9 15:24:29 2025 +0200|wifi-scripts: correctly set basic-rates with wpa_supplicant
+a89eced3ab|Tomasz Maciej Nowak|Thu May 29 22:15:16 2025 +0200|ath79: add support for Dell SonicPoint ACi APL27-0B1
+e73570a113|Tomasz Maciej Nowak|Thu May 29 22:15:15 2025 +0200|kernel: modules: package userspace consumer regulator
+1d3cfe8eb0|Tomasz Maciej Nowak|Wed Jun 18 18:59:35 2025 +0200|tegra: add 6.12 as testing kernel
+5aae86b39d|Tomasz Maciej Nowak|Wed Jun 18 18:59:34 2025 +0200|tegra: 6.12: refresh config and drop upstreamed patch
+9e30462287|Tomasz Maciej Nowak|Wed Jun 18 18:59:33 2025 +0200|kernel/tegra: Restore kernel files for v6.6
+c89f3d3864|Tomasz Maciej Nowak|Wed Jun 18 18:59:32 2025 +0200|kernel/tegra: Create kernel files for v6.12 (from v6.6)
+2073f2e16b|Tomasz Maciej Nowak|Wed Jun 18 18:59:31 2025 +0200|generic: 6.12: add few DRM symbols
+92cd360aac|Tomasz Maciej Nowak|Wed Jun 18 18:59:30 2025 +0200|uboot-tegra: bump version to 2025.04
+b8dea6056d|Tomasz Maciej Nowak|Wed Jun 18 18:59:29 2025 +0200|tegra: bring back workaround for spurious interrupts
+6cac528f72|Konstantin Demin|Fri Jul 4 11:03:15 2025 +0300|policycoreutils: adjust with glibc and libcrypt-compat
+f0e7868b7e|Konstantin Demin|Fri Jul 4 11:03:15 2025 +0300|busybox: adjust with glibc and libcrypt-compat
+3a18848819|Konstantin Demin|Fri Jul 4 11:03:15 2025 +0300|rpcd: adjust with glibc and libcrypt-compat
+ec62e87c0c|Konstantin Demin|Fri Jul 4 11:03:14 2025 +0300|uhttpd: adjust with glibc and libcrypt-compat
+ea6bcebc41|Konstantin Demin|Fri Jul 4 11:03:14 2025 +0300|ppp: adjust with glibc and libcrypt-compat
+eecc53cbe5|Konstantin Demin|Fri Jul 4 11:03:14 2025 +0300|dropbear: adjust with glibc and libcrypt-compat
+34c2e7701a|Konstantin Demin|Fri Jul 4 11:03:14 2025 +0300|libpcap: adjust with glibc and libcrypt-compat
+ddd49e82f6|Konstantin Demin|Fri Jul 4 11:03:14 2025 +0300|scripts/ext-toolchain: adjust with recent glibc
+c571ac4bdf|Konstantin Demin|Fri Jul 4 11:03:14 2025 +0300|toolchain: adjust with recent glibc
+8a40ccac37|Konstantin Demin|Fri Jul 4 11:03:14 2025 +0300|toolchain: glibc: Update glibc 2.41 to recent HEAD
+39c1ca3332|Konstantin Demin|Fri Jul 4 11:03:14 2025 +0300|toolchain: glibc: update to 2.41
+c78c386568|Jan Kardell|Tue Jul 1 15:05:06 2025 +0200|util-linux: Update licenses
+2722ba02c1|Jan Kardell|Tue Jul 1 15:05:05 2025 +0200|nettle: Fix PKG_LICENSE_FILES
+7a83949520|Jan Kardell|Tue Jul 1 15:05:04 2025 +0200|kexec-tools: Add license
+315398be58|Jan Kardell|Tue Jul 1 15:05:03 2025 +0200|spidev-test: Add license
+c5330bdf7e|Hauke Mehrtens|Sat Jul 12 00:55:38 2025 +0200|kernel: Fix boot of amrsr target in qemu
+01a9a27dfa|Weijie Gao|Fri Jun 20 19:30:49 2025 +0800|loongarch64: add 6.12 as testing kernel
+492cb20976|Weijie Gao|Fri Jun 20 19:25:20 2025 +0800|loongarch64: Restore kernel files for v6.6
+9454095e1a|Weijie Gao|Fri Jun 20 19:25:20 2025 +0800|loongarch64: Create kernel files for v6.12 (from v6.6)
+e34e874a11|Antonino Orlando|Sun Jun 29 12:58:18 2025 +0200|mediatek: add support for Zyxel NWA90AX PRO
+79b5151d7f|Jonathan Sturges|Fri May 30 14:58:15 2025 -0400|ramips: add support for Wavlink WL-WN570HA2
+80a9da93f6|Russ Innes|Sat Jul 5 12:12:39 2025 -0600|ath79: ubnt-amplifi-hd: Add 2nd USB bus (integrated ath3k bluetooth)
+dd15117dab|Gustavo Curi|Fri Jun 6 17:13:08 2025 -0300|ramips: add support for TP-Link EX220 v2
+29f7c0ef97|Tim Harvey|Fri Jun 20 12:49:51 2025 -0700|uboot-envtools: add support for Gateworks venice
+e507398b88|Yonghyu Ban|Wed Mar 19 17:29:04 2025 +0900|mediatek: filogic: add support for TP-Link Festa FR365
+d8754f3866|Yonghyu Ban|Wed Mar 19 17:11:54 2025 +0900|mediatek: allow mounting ubifs by its device and partition name
+db1de8d21f|Fil Dunsky|Sun Jul 6 12:08:27 2025 +0300|mediatek: add Huasifei WH3000 Pro support
+57aa05e8e5|Shiji Yang|Thu Jul 10 23:59:49 2025 +0800|kernel: bump 6.12 to 6.12.37
+04d764576b|Shiji Yang|Thu Jul 10 23:59:14 2025 +0800|kernel: bump 6.6 to 6.6.97
+be3ce63822|Shiji Yang|Sun Jul 6 19:00:53 2025 +0800|kernel: bump 6.12 to 6.12.36
+2d8d11a42c|Shiji Yang|Sun Jul 6 18:50:50 2025 +0800|kernel: bump 6.6 to 6.6.96
+9dc4128e03|Shiji Yang|Tue Jul 8 05:59:43 2025 +0800|uboot-tools: update to v2025.07
+01654bc2ad|Shiji Yang|Thu Jul 10 20:02:24 2025 +0800|tools/7z: update to 25.00
 </details>

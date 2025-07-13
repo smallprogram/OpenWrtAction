@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7f1c62d|lwb1978|Fri Jul 11 11:10:05 2025 +0800|luci: fix some systems unable to write passwall logs
+ebacd4e|lwb1978|Sat Jul 12 12:19:37 2025 +0800|luci: optimize
 </details>

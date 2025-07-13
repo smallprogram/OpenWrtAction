@@ -2,12 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-54e24f2fe|John Audia|Thu Jul 10 14:43:13 2025 -0400|samba4: update to 4.22.3
-ea07bdb59|Eric Fahlgren|Fri Jul 11 11:15:15 2025 -0700|owut: update to 2025.07.11
-b153b6a03|Jan Kardell|Thu Jul 10 15:35:25 2025 +0200|sudo: bump to version 1.9.17p1
-bb310d519|Tianling Shen|Fri Jul 11 19:31:58 2025 +0800|yq: Update to 4.46.1
-9b158a7ef|Tianling Shen|Fri Jul 11 19:31:20 2025 +0800|geoipupdate: Update to 7.1.1
-e565e93ed|Tianling Shen|Fri Jul 11 19:30:33 2025 +0800|rclone: Update to 1.70.3
-68ddb7923|Tianling Shen|Fri Jul 11 19:14:35 2025 +0800|v2ray-core: Update to 5.37.0
-bcb6992f4|Wesley Gimenes|Thu Jul 10 20:51:12 2025 -0300|netbird: update to 0.50.2
+48f3c800a|Rosen Penev|Tue Jul 8 18:14:34 2025 -0700|vim: update to 9.1
+441c14717|Daniel Golle|Sat Jul 12 03:01:08 2025 +0100|libudev-zero: import upstream patches
 </details>
