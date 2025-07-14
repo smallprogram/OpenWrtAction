@@ -2,6 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-48f3c800a|Rosen Penev|Tue Jul 8 18:14:34 2025 -0700|vim: update to 9.1
-441c14717|Daniel Golle|Sat Jul 12 03:01:08 2025 +0100|libudev-zero: import upstream patches
+b9ac3c5e7|Gregory Gullin|Sat Jul 12 16:23:00 2025 +0300|sing-box: Update to 1.11.15
+30d847d63|John Audia|Sun Jul 13 07:44:31 2025 -0400|libpam: update to 1.7.1
+4ab21b1f5|Rosen Penev|Fri Jul 11 20:23:36 2025 -0700|cligen: fix compilation with GCC 15
+aa97547d1|Maxim Storchak|Fri Jul 4 19:59:06 2025 +0300|lsof: update to 4.99.5
+7b39f0c1b|John Audia|Sat Jul 12 04:24:09 2025 -0400|gnutls: Update to version 3.8.10
+d17f18c47|Daniel Golle|Tue Jul 8 02:26:34 2025 +0100|mjpg-streamer: adapt dependency to changed package name
+932700708|Daniel Golle|Fri Jul 4 16:20:37 2025 +0100|v4l-utils: merge with edid-decode
+31910e74d|Daniel Golle|Sun Jul 13 02:23:32 2025 +0100|openal-soft: add package
+0aacef136|Jens Wagner|Mon Jul 7 01:45:57 2025 +0200|perl-lwp-protocol-https: new module LWP::Protocol::https, version 6.14
+ff7e8debf|Rosen Penev|Tue Jul 8 17:26:28 2025 -0700|bluez: update to 5.83
 </details>

@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+93a7d1f869|Tianling Shen|Sun Jul 13 19:58:05 2025 +0800|luci-app-appfilter: bump to 6.1.2
+3db8b0f2c5|Tianling Shen|Sun Jul 13 19:35:14 2025 +0800|luci-app-homeproxy: bump to latest git HEAD
+</details>
