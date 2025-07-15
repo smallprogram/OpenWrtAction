@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-000742a|A-BO|Sun Jul 13 12:47:04 2025 +0800|Revert "shadowsocks-libev: update hash"
-</details>

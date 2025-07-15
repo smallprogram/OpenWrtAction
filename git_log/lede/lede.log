@@ -2,15 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-46c49ff36|coolsnowwolf|Sun Jul 13 18:21:00 2025 +0800|x86: use kernel 6.12 by default
-832b2e871|Hauke Mehrtens|Sat Jul 12 00:55:38 2025 +0200|kernel: Fix boot of amrsr target in qemu
-f8a4a5398|coolsnowwolf|Sun Jul 13 18:13:39 2025 +0800|kernel: bump 6.x to latest HEAD
-f25fd50ac|Felix Fietkau|Sat Jul 5 13:51:14 2025 +0200|kernel: fix fraglist GRO on linux 6.12
-f2c9ca9aa|coolsnowwolf|Sun Jul 6 23:08:10 2025 +0800|qca-nss: update for 6.12 compatibility
-faf775a76|coolsnowwolf|Sun Jun 1 23:15:22 2025 +0800|netifd: refactor packet steering init
-7f48e6850|coolsnowwolf|Sat Jul 12 15:22:54 2025 +0800|netifd: refactor packet steering init
-497478dcb|coolsnowwolf|Sat Jul 12 15:20:19 2025 +0800|qca-ssdk: update for 6.12 compatibility
-d5f64b329|Zhang Zhe|Sat Jul 12 14:07:03 2025 +0800|rockchip: add support for NLnet XiGuaPi Board V3 (#13589)
-095279374|coolsnowwolf|Sat Jul 12 04:03:23 2025 +0800|qca-nss-dp: update for 6.12 compatibility
-ea0466de5|coolsnowwolf|Sat Jul 12 03:50:52 2025 +0800|ubus: update to Git HEAD (2025-05-16)
+d0d82a4fc|LeoHLee|Mon Jul 14 22:10:27 2025 +0800|mediatek: support CMCC XR30 eMMC
+3374cace8|Internet1235|Mon Jul 14 20:00:14 2025 +0800|bcm53xx: refresh linux 6.6 patch
 </details>

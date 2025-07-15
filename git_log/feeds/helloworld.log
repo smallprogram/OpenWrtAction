@@ -1,8 +1,0 @@
-<details> <summary> <b>helloworld new commit log :new: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-1006f38|coolsnowwolf|Mon Jul 14 04:20:18 2025 +0800|luci-app-ssr-plus: depends on luci-lua-runtime on luci 24.10+
-f34a237|coolsnowwolf|Sun Jul 13 18:56:33 2025 +0800|luci-app-ssr-plus: make compatible with openwrt snapshot lmo
-ae0fe04|zxl hhyccc|Sun Jul 13 15:30:46 2025 +0800|Revert "shadowsocks-libev: update hash"
-</details>

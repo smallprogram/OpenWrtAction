@@ -2,17 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6615c8cfc8|Mateusz Krzak|Thu May 22 18:36:38 2025 +0200|mediatek: filogic: D-Link M30/M60: include initramfs in recovery
-b93bb3dc62|Florian Eckert|Tue Mar 7 12:02:26 2023 +0100|kernel: make tty count for 8250 configurable
-1c6cb6d5be|Donghyun Ko|Sat May 3 09:24:10 2025 +0900|mediatek: add support for ipTIME AX3000SM
-3669874b4e|Tomasz Maciej Nowak|Sun Jul 13 14:51:26 2025 +0200|uboot-tegra: disable mkeficapsule build
-058bd6c9d3|Sky Huang|Fri May 16 18:45:02 2025 +0800|mediatek: filogic: mt7986: fix SPI driving for NAND and increase to 52MHz on ZyXEL EX5601
-de1f47cd9f|Paweł Owoc|Wed May 28 17:18:24 2025 +0200|uboot-mediatek: add USB bootmenu for Zyxel EX5601
-6432b41180|Jonas Jelonek|Wed Jun 18 21:40:03 2025 +0000|realtek: rtl931x: fix setting number of leds per port
-655eb05699|Paweł Owoc|Mon Jun 30 20:35:59 2025 +0200|uboot-tools: envtools: ipq95xx: use common function
-2aff9ba76e|Shiji Yang|Sun Jul 6 20:36:27 2025 +0800|opensbi: update tarball hash compressed by the zstd 1.5.7
-b002cdd6a3|Jan Hoffmann|Thu Jul 10 17:37:02 2025 +0200|ltq-*-app: correctly report downstream band borders
-bad9ec3322|Chukun Pan|Mon Jul 7 23:01:30 2025 +0800|qualcommbe: remove useless cpu erratum
-c70de5277d|Chukun Pan|Sun Jul 6 23:05:16 2025 +0800|qualcommax: remove useless cpu erratum
-0ceedec6fa|Chukun Pan|Sat Jul 5 23:28:10 2025 +0800|generic: 6.12: add new config symbols
+06267823a3|Daniel Golle|Sat Jul 12 03:39:43 2025 +0100|x86: enable built-in driver for MMC/SDHCI
+e02c7a2014|Marty Jones|Sun Jun 15 21:07:46 2025 -0400|rockchip: add RK3588 Hardware Random Number Generator
+2f944ecd3e|Shiji Yang|Wed Jun 18 07:39:57 2025 +0800|treewide: simplify kernel version number comparisons
+a0fe3cfb62|Shiji Yang|Tue Jun 17 22:06:38 2025 +0800|base-files: introduce a function to get kernel version number
+b626262226|Felix Fietkau|Mon Jul 14 12:15:59 2025 +0200|ucode: update ubus/uloop exception handling patches
 </details>
