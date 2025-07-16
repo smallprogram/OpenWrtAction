@@ -1,0 +1,24 @@
+<details> <summary> <b>luci new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+f3b6ef0d8d|Tianling Shen|Tue Jul 15 16:12:25 2025 +0800|Merge Official Source
+ed46c5acc8|Tianling Shen|Tue Jul 15 16:05:52 2025 +0800|luci-app-openclash: Update to 0.46.133
+0ff4a4f4f9|Tianling Shen|Tue Jul 15 16:04:39 2025 +0800|luci-app-homeproxy: bump to latest git HEAD
+49b75783f9|Hosted Weblate|Mon Jul 14 21:05:10 2025 +0200|Translated using Weblate (Tamil)
+4715c6aa1a|Paul Donald|Fri Jul 11 02:16:28 2025 +0200|luci-app-ddns: fix ddns uc script for apk
+4678d6a82c|Paul Donald|Wed Jul 9 18:17:45 2025 +0200|luci-app-ddns: remove unused imports
+81692c6c38|Paul Donald|Tue Jul 8 14:27:05 2025 +0200|luci-base: tweak dispatcher logging to post under correct facility
+0f69aa9f1b|Paul Donald|Tue Jul 8 01:36:36 2025 +0200|luci-app-unbound: remove unnecessary permissions
+2869946de4|Florian Eckert|Tue Jul 8 08:05:57 2025 +0200|Merge pull request #7844 from champtar/mwan3-section-interfaces
+c5736a30da|Paul Donald|Tue Jul 8 01:32:39 2025 +0200|luci-app-chrony: allow non NTS variant also
+834b5d06e3|Chris Swan|Mon Jun 23 13:34:50 2025 +0100|luci-app-csshnpd: Add new package
+1322ad9018|Paul Donald|Tue Jul 8 00:07:44 2025 +0200|luci-mod-dashboard: display bugfix
+d0aad147e6|Hosted Weblate|Mon Jul 7 18:21:49 2025 +0200|Translated using Weblate (Russian)
+5780be0beb|Paul Donald|Mon Jun 30 17:55:44 2025 +0200|luci-app-unbound: convert to JS
+b9145754d2|Paul Donald|Thu Jul 3 17:11:27 2025 +0200|luci-base: give TextValue form elements separate readonly and disabled
+01201eefe7|Hosted Weblate|Thu Jul 3 09:21:14 2025 +0200|Translated using Weblate (Chinese (Simplified Han script))
+94f42c6b9e|Tianling Shen|Sun Jun 29 18:00:42 2025 +0800|luci-app-openlist: rescan translations
+682a2b9525|Tianling Shen|Sun Jun 29 17:57:02 2025 +0800|luci-app-openlist: rename from luci-app-alist
+c358b34a53|Etienne Champetier|Mon Jun 30 12:46:31 2025 -0400|luci-app-mwan3: only request interfaces status
+</details>

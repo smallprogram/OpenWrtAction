@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7e5cbd7|A-BO|Mon Jul 14 19:57:48 2025 +0800|luci: add dns disguised type for mkcp
-760b66f|A-BO|Mon Jul 14 17:54:11 2025 +0800|luci: add `mkcp seed` export/Import
-0857eaa|A-BO|Mon Jul 14 17:04:51 2025 +0800|luci: optimize `haproxy auto set node port values`
+1241432|A-BO|Tue Jul 15 16:33:05 2025 +0800|luci: bump to 25.7.15
+32ac94f|A-BO|Tue Jul 15 16:32:08 2025 +0800|uci: update default rules
+bd5a14c|A-BO|Tue Jul 15 16:24:36 2025 +0800|luci: optimize and fix
 </details>

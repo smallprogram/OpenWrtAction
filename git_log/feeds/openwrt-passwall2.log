@@ -1,0 +1,11 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+75064be|xiaorouji|Wed Jul 16 00:21:13 2025 +0800|luci: bump to 25.7.15
+272957c|A-BO|Mon Jul 14 19:57:48 2025 +0800|luci: add dns disguised type for mkcp
+545f405|A-BO|Mon Jul 14 17:54:11 2025 +0800|luci: add `mkcp seed` export/Import
+20d961d|A-BO|Sun Jul 13 12:44:42 2025 +0800|luci: optimize curl automatic mode logic
+ac3ec2c|lwb1978|Sat Jul 12 12:19:37 2025 +0800|luci: optimize
+b5b961a|xiaorouji|Wed Jul 16 00:12:39 2025 +0800|luci: Adjust FakeDNS logic
+</details>

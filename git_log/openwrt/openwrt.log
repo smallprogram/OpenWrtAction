@@ -2,9 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-06267823a3|Daniel Golle|Sat Jul 12 03:39:43 2025 +0100|x86: enable built-in driver for MMC/SDHCI
-e02c7a2014|Marty Jones|Sun Jun 15 21:07:46 2025 -0400|rockchip: add RK3588 Hardware Random Number Generator
-2f944ecd3e|Shiji Yang|Wed Jun 18 07:39:57 2025 +0800|treewide: simplify kernel version number comparisons
-a0fe3cfb62|Shiji Yang|Tue Jun 17 22:06:38 2025 +0800|base-files: introduce a function to get kernel version number
-b626262226|Felix Fietkau|Mon Jul 14 12:15:59 2025 +0200|ucode: update ubus/uloop exception handling patches
+6fa9cff052|Shubham Vishwakarma|Tue Jul 15 12:42:12 2025 +0530|qualcommax: ipq50xx: update qcn6122 caldata offset of yuncore ax830
+efb4200ba5|Hauke Mehrtens|Thu Jul 3 21:37:39 2025 +0200|uhttpd: update to Git HEAD (2025-07-06)
+53acaf1f3f|Pawel Dembicki|Sun Jun 8 10:21:48 2025 +0200|kirkwood: add 6.12 as testing kernel
+66f4530c72|Pawel Dembicki|Sun Jul 13 08:35:04 2025 +0200|kirkwood: 6.12: refresh kernel config
+52d9f37e54|Pawel Dembicki|Sun Jun 8 08:22:00 2025 +0200|kirkwood: kernel: 6.12: refresh patches
+fa862776a3|Pawel Dembicki|Sat Jun 7 13:30:49 2025 +0200|kernel/kirkwood: Restore kernel files for v6.6
+5066e10e69|Pawel Dembicki|Sat Jun 7 13:30:49 2025 +0200|kernel/kirkwood: Create kernel files for v6.12 (from v6.6)
+9881f4a164|Pawel Dembicki|Sat Jun 7 13:29:53 2025 +0200|kirkwood: move files-6.6 to files
+642d568b0f|Felix Fietkau|Tue Jul 15 20:47:31 2025 +0200|build: fix ipkg-remove: add support for removing apk files
+471fd0a502|Felix Fietkau|Tue Jul 15 15:26:16 2025 +0200|build: ipkg-remove: fix source name / package confusion, optimize
 </details>

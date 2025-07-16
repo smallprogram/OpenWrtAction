@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-49b75783f9|Hosted Weblate|Mon Jul 14 21:05:10 2025 +0200|Translated using Weblate (Tamil)
+a3cae27ab4|Konstantin Demin|Fri Jul 4 11:06:13 2025 +0300|luci-lib-nixio: adjust with glibc and libcrypt-compat
 </details>

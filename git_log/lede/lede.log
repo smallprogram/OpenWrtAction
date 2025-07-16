@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d0d82a4fc|LeoHLee|Mon Jul 14 22:10:27 2025 +0800|mediatek: support CMCC XR30 eMMC
-3374cace8|Internet1235|Mon Jul 14 20:00:14 2025 +0800|bcm53xx: refresh linux 6.6 patch
+6ebb377dd|Shiji Yang|Tue Apr 29 20:52:59 2025 +0800|nat46: update to latest git HEAD
+218cfcd6b|coolsnowwolf|Sat Jun 28 21:10:40 2025 +0800|mediatek: refresh mt7981 support
 </details>

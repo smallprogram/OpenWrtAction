@@ -1,0 +1,43 @@
+<details> <summary> <b>packages new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+f4d2f4c9d|Tianling Shen|Tue Jul 15 16:13:53 2025 +0800|Merge Official Source
+6d4685af4|John Audia|Sun Jul 13 12:50:16 2025 -0400|stress-ng: update to 0.19.02
+74794b0ef|John Audia|Sun Jul 13 12:48:14 2025 -0400|stress-ng: adjust against glibc 2.41
+975023619|Konstantin Demin|Fri Jul 4 10:51:41 2025 +0300|tcsh: adjust with glibc and libcrypt-compat
+e1ebbcb24|Konstantin Demin|Fri Jul 4 10:51:40 2025 +0300|screen: adjust with glibc and libcrypt-compat
+bba9323b2|Konstantin Demin|Wed Jul 9 18:12:23 2025 +0300|rtty: adjust with glibc and libcrypt-compat
+98b7d426f|Konstantin Demin|Fri Jul 4 10:51:40 2025 +0300|opendoas: adjust with glibc and libcrypt-compat
+8fc26989f|Konstantin Demin|Fri Jul 4 10:51:40 2025 +0300|ccrypt: adjust with glibc and libcrypt-compat
+df47b40ee|Konstantin Demin|Fri Jul 4 10:51:40 2025 +0300|xinetd: adjust with glibc and libcrypt-compat
+ddd4d610d|Konstantin Demin|Fri Jul 4 10:51:40 2025 +0300|tac_plus: adjust with glibc and libcrypt-compat
+62b8d8929|Konstantin Demin|Wed Jul 9 18:35:08 2025 +0300|squid: adjust with glibc and libcrypt-compat
+39f93ca4e|Konstantin Demin|Sun Jul 6 09:02:13 2025 +0300|samba4: adjust with glibc and libcrypt-compat
+6ff10c3ab|Konstantin Demin|Wed Jul 9 19:26:59 2025 +0300|openssh: adjust with glibc and libcrypt-compat
+874c65e7e|Konstantin Demin|Wed Jul 9 18:08:35 2025 +0300|ocserv: adjust with glibc and libcrypt-compat
+2af886742|Konstantin Demin|Sun Jul 6 09:01:50 2025 +0300|nginx: adjust with glibc and libcrypt-compat
+cc4d6911e|Konstantin Demin|Wed Jul 9 19:35:40 2025 +0300|libreswan: adjust with glibc and libcrypt-compat
+7b80a0730|Konstantin Demin|Wed Jul 9 18:23:33 2025 +0300|haproxy: adjust with glibc and libcrypt-compat
+de02961c0|Konstantin Demin|Sun Jul 6 09:02:25 2025 +0300|freeradius3: adjust with glibc and libcrypt-compat
+e57d80b51|Konstantin Demin|Fri Jul 4 10:51:40 2025 +0300|dante: adjust with glibc and libcrypt-compat
+cf30eaf8d|Konstantin Demin|Thu Jul 10 16:53:57 2025 +0300|xupnpd: adjust with glibc and libcrypt-compat
+14aed6a41|Konstantin Demin|Sun Jul 6 09:02:37 2025 +0300|exim: adjust with glibc and libcrypt-compat
+1fdedadcc|Konstantin Demin|Sun Jul 6 09:02:47 2025 +0300|alpine: adjust with glibc and libcrypt-compat
+fb6eee6f0|Konstantin Demin|Sun Jul 6 09:03:00 2025 +0300|uw-imap: adjust with glibc and libcrypt-compat
+f4a19ebec|Konstantin Demin|Fri Jul 4 10:51:40 2025 +0300|libpam: adjust with glibc and libcrypt-compat
+b81dac762|Konstantin Demin|Fri Jul 4 10:51:40 2025 +0300|libdht: adjust with glibc and libcrypt-compat
+2928b161d|Konstantin Demin|Fri Jul 4 10:51:40 2025 +0300|libcli: adjust with glibc and libcrypt-compat
+c6473474e|Konstantin Demin|Fri Jul 4 10:51:41 2025 +0300|libapr: adjust with glibc and libcrypt-compat
+443ce3174|Konstantin Demin|Fri Jul 4 10:51:41 2025 +0300|perl: adjust with glibc and libcrypt-compat
+92c5dc80c|Konstantin Demin|Fri Jul 4 10:51:40 2025 +0300|luaposix: adjust with glibc and libcrypt-compat
+579ddaf99|Konstantin Demin|Fri Jul 4 10:51:39 2025 +0300|sudo: adjust with glibc and libcrypt-compat
+b9ac3c5e7|Gregory Gullin|Sat Jul 12 16:23:00 2025 +0300|sing-box: Update to 1.11.15
+30d847d63|John Audia|Sun Jul 13 07:44:31 2025 -0400|libpam: update to 1.7.1
+4ab21b1f5|Rosen Penev|Fri Jul 11 20:23:36 2025 -0700|cligen: fix compilation with GCC 15
+aa97547d1|Maxim Storchak|Fri Jul 4 19:59:06 2025 +0300|lsof: update to 4.99.5
+7b39f0c1b|John Audia|Sat Jul 12 04:24:09 2025 -0400|gnutls: Update to version 3.8.10
+d17f18c47|Daniel Golle|Tue Jul 8 02:26:34 2025 +0100|mjpg-streamer: adapt dependency to changed package name
+932700708|Daniel Golle|Fri Jul 4 16:20:37 2025 +0100|v4l-utils: merge with edid-decode
+31910e74d|Daniel Golle|Sun Jul 13 02:23:32 2025 +0100|openal-soft: add package
+</details>
