@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6ebb377dd|Shiji Yang|Tue Apr 29 20:52:59 2025 +0800|nat46: update to latest git HEAD
-218cfcd6b|coolsnowwolf|Sat Jun 28 21:10:40 2025 +0800|mediatek: refresh mt7981 support
+3fda82b52|coolsnowwolf|Wed Jul 16 22:10:03 2025 +0800|kernel: bump all to latest HEAD
+340b85f3b|aiamadeus|Fri Jul 11 20:36:01 2025 +0800|image: add EROFS to GRUB images
 </details>

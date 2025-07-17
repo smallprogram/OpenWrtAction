@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a3cae27ab4|Konstantin Demin|Fri Jul 4 11:06:13 2025 +0300|luci-lib-nixio: adjust with glibc and libcrypt-compat
+1352d75f1a|Paul Donald|Wed Jul 16 16:08:57 2025 +0200|luci-proto-vxlan: peers -> peer spelling fix
 </details>

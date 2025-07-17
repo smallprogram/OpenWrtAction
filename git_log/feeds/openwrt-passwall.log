@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1241432|A-BO|Tue Jul 15 16:33:05 2025 +0800|luci: bump to 25.7.15
-32ac94f|A-BO|Tue Jul 15 16:32:08 2025 +0800|uci: update default rules
-bd5a14c|A-BO|Tue Jul 15 16:24:36 2025 +0800|luci: optimize and fix
+ddafc95|A-BO|Thu Jul 17 02:19:29 2025 +0800|luci: improve the speed of dnsmasq rule generation
+6128719|A-BO|Wed Jul 16 13:44:03 2025 +0800|luci: adjust sing-box fakedns parameter
 </details>

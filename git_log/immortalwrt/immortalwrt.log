@@ -1,0 +1,7 @@
+<details> <summary> <b>immortalwrt new commit log :new: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+909f12093a|Tianling Shen|Thu Jul 17 00:15:44 2025 +0800|mediatek: add missing uart pinctrl to tplink 7dr72x0
+cab5d5f70f|Tianling Shen|Wed Jul 16 22:06:44 2025 +0800|mediatek: make use of gsw_port props for tplink 7dr72x0
+</details>

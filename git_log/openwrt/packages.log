@@ -2,6 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2b7ca411e|W. Michael Petullo|Sat May 31 08:27:41 2025 -0500|setools: update to 4.5.1
-8bf0acfa3|Rosen Penev|Fri Jul 11 20:25:26 2025 -0700|atheepmgr: update to 2.2.1
+8457a9fec|Philip Prindeville|Sun Jul 13 15:12:30 2025 -0600|strongswan: Update to 6.0.2
+86e20d37a|Rob Hoelz|Mon Jul 14 21:23:35 2025 -0500|prometheus-node-exporter-lua: Fix broken textfile collector
+81e9bbd6a|W. Michael Petullo|Sun Jun 22 16:21:58 2025 -0500|grilo-plugins: update to 0.3.17
+8c182aa38|W. Michael Petullo|Sun Jun 22 16:13:57 2025 -0500|grilo: update to 0.3.19
+871198504|Tiago Gaspar|Tue May 6 01:12:40 2025 +0100|abseil-cpp: fix build and add package install
 </details>
