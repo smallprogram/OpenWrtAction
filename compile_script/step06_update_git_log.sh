@@ -115,7 +115,7 @@ for git_folder in "${git_folders[@]}"; do
         if [ -z "$SHA_Begin" ]; then
             sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" git_log/$git_folder/log
         elif [ "$SHA_Begin" != "$SHA_End" ]; then
-            echo "<details> <summary> <b>$TITLE_MESSAGE :new: </b>  </summary>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            echo "<details> <summary> <b>$TITLE_MESSAGE :rocket: </b>  </summary>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "SHA|Author|Date|Message" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "-|-|-|-" >>"git_log/$git_folder/$OUTPUT_FILE.log"
@@ -143,7 +143,7 @@ for git_folder in "${git_folders[@]}"; do
         echo ""
     done
     if [ "$UPDATE_COUNT" -eq 0 ]; then
-        echo "No source code updates......">>release.txt
+        echo "No source code updates...... :zzz:">>release.txt
     fi
   
 done
