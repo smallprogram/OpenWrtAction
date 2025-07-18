@@ -1,10 +1,6 @@
-<details> <summary> <b>packages new commit log :new: </b>  </summary>
+<details> <summary> <b>packages new commit log :rocket: </b>  </summary>
 
 SHA|Author|Date|Message
 -|-|-|-
-8457a9fec|Philip Prindeville|Sun Jul 13 15:12:30 2025 -0600|strongswan: Update to 6.0.2
-86e20d37a|Rob Hoelz|Mon Jul 14 21:23:35 2025 -0500|prometheus-node-exporter-lua: Fix broken textfile collector
-81e9bbd6a|W. Michael Petullo|Sun Jun 22 16:21:58 2025 -0500|grilo-plugins: update to 0.3.17
-8c182aa38|W. Michael Petullo|Sun Jun 22 16:13:57 2025 -0500|grilo: update to 0.3.19
-871198504|Tiago Gaspar|Tue May 6 01:12:40 2025 +0100|abseil-cpp: fix build and add package install
+89fa8033b|Philip Prindeville|Wed Jul 16 22:33:22 2025 -0600|strongswan: fix build issues around PARSE_ERROR
 </details>

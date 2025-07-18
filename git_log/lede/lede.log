@@ -1,7 +1,6 @@
-<details> <summary> <b>lede new commit log :new: </b>  </summary>
+<details> <summary> <b>lede new commit log :rocket: </b>  </summary>
 
 SHA|Author|Date|Message
 -|-|-|-
-3fda82b52|coolsnowwolf|Wed Jul 16 22:10:03 2025 +0800|kernel: bump all to latest HEAD
-340b85f3b|aiamadeus|Fri Jul 11 20:36:01 2025 +0800|image: add EROFS to GRUB images
+ed9bd44df|=?UTF-8?q?=C3=81lvaro=20Fern=C3=A1ndez=20Rojas?=|Thu Oct 31 00:25:41 2024 +0100|bcm27xx-gpu-fw: update to latest
 </details>

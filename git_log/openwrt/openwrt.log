@@ -1,10 +1,9 @@
-<details> <summary> <b>openwrt new commit log :new: </b>  </summary>
+<details> <summary> <b>openwrt new commit log :rocket: </b>  </summary>
 
 SHA|Author|Date|Message
 -|-|-|-
-93a48afe96|Daniel Golle|Sat Jul 12 15:23:24 2025 +0100|kernel: package hid-alps module
-c83e275c9b|Daniel Golle|Sat Jul 12 05:26:50 2025 +0100|kernel: package modules for I2C HID devices
-f780a72293|Daniel Golle|Tue Jul 15 15:56:15 2025 +0100|x86: modules: add packages for Intel LPSS drivers
-cd1c8f9ea2|Leo Barsky|Mon Jul 14 10:44:57 2025 -0400|kernel: bump 6.12 to 6.12.38
-cc932c1ea6|Leo Barsky|Mon Jul 14 10:53:33 2025 -0400|kernel: bump 6.6 to 6.6.98
+8a5ed24de6|Mieczyslaw Nalewaj|Sat Jul 12 20:39:50 2025 +0200|generic: dsa: backport upstream realtek patches
+6889ea7b9a|Jan Hoffmann|Fri Jul 11 20:31:29 2025 +0200|ltq-adsl-mei: check status register before reading mailbox messages
+f6a1e444bc|Tony Ambardar|Mon Jul 14 22:43:17 2025 -0700|perf: fix build on mips
+5b8c385f90|Daniel Golle|Thu Jul 17 11:44:15 2025 +0100|x86: modules: fix wrong Kconfig symbol
 </details>
