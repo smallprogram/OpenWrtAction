@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ed9bd44df|=?UTF-8?q?=C3=81lvaro=20Fern=C3=A1ndez=20Rojas?=|Thu Oct 31 00:25:41 2024 +0100|bcm27xx-gpu-fw: update to latest
+d2ececf7c|Dee|Fri Jul 18 20:20:01 2025 +0800|tools: elfutils: set -std=gnu17
+e13e7235f|Dee|Fri Jul 18 20:10:29 2025 +0800|gmp: fix compilation with GCC15
+d9d4136f4|Internet1235|Fri Jul 18 18:08:02 2025 +0800|tools: fix compilation with GCC15
 </details>

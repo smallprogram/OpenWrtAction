@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3466fbc|lwb1978|Thu Jul 17 21:07:29 2025 +0800|luci: optimize and fix vless url export
-0b129ba|lwb1978|Thu Jul 17 18:58:16 2025 +0800|luci: remove outdated ssr code from sing-box
-82ef47d|lwb1978|Thu Jul 17 18:45:48 2025 +0800|luci: optimize acl default options
+b41e733|lwb1978|Fri Jul 18 15:23:53 2025 +0800|luci: correct the names of the up/down buttons
 </details>
