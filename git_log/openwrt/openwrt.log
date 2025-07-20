@@ -2,35 +2,35 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ce81918d4b|Yanase Yuki|Mon Jul 14 18:52:05 2025 +0900|projectsmirrors: drop ftp.kddilabs.jp
-b0df4795b1|Rosen Penev|Mon May 12 17:36:05 2025 -0700|apm821xx: enable kernel 6.12
-4a30ded7e6|Rosen Penev|Mon May 12 17:37:46 2025 -0700|apm821xx: refresh 6.12 kernel config
-38fd269993|Rosen Penev|Mon May 12 17:34:35 2025 -0700|apm821xx: refresh 6.12 patches
-623a200bfc|Rosen Penev|Mon May 12 17:25:21 2025 -0700|apm821xx: restore 6.6 kernel config/patches
-d15ed1614d|Rosen Penev|Mon May 12 17:24:21 2025 -0700|apm821xx: rename kernel config/patches to 6.12
-963ee6ac3f|Markus Stockhausen|Thu Jul 10 16:00:46 2025 -0400|realtek: avoid interrupt storm on mass packet receive
-926ffa10b4|Markus Stockhausen|Fri Jul 11 06:58:59 2025 -0400|realtek: simplify RTL8218B/RTL8214Fx detection
-4ff02b46b9|Enrico Mioso|Fri Jul 18 14:56:33 2025 +0200|uboot-mediatek: add support for GL.iNet GL-MT2500
-6cd92ed8d8|Enrico Mioso|Fri Jul 11 13:22:57 2025 +0200|uboot-mediatek: GatoNetworks GDSP support fixes and updates
-072ae5a76b|Enrico Mioso|Fri Jul 11 13:22:56 2025 +0200|mediatek: filogic: add SD card support to GatoNetworks GDSP
-5e0f06d558|Shiji Yang|Thu May 8 23:59:36 2025 +0800|lantiq: enable 6.12 testing kernel
-53aa30402c|Shiji Yang|Thu May 8 23:36:39 2025 +0800|lantiq: refresh 6.12 kernel config files
-8d45c6d9d2|Shiji Yang|Tue May 27 22:23:39 2025 +0800|lantiq: add the missing function pointer ltq_pci_plat_dev_init
-a86c319267|Shiji Yang|Fri May 9 21:55:07 2025 +0800|lantiq: fix i2c driver compatibility issue on 6.12 kernel
-9208ba286d|Shiji Yang|Thu May 8 23:19:14 2025 +0800|lantiq: lantiq-flash: platform driver .remove_new conversion
-dbb9c55611|Shiji Yang|Thu May 8 23:11:06 2025 +0800|lantiq: refresh 6.12 kernel patches
-925f8492dd|Shiji Yang|Thu May 8 23:08:42 2025 +0800|lantiq: remove upstreamed patches from 6.12 kernel patchset
-c17b19f18e|Shiji Yang|Thu May 8 22:38:36 2025 +0800|lantiq: restore kernel 6.6 config files and patches
-544f0fd5e7|Shiji Yang|Thu May 8 22:36:03 2025 +0800|lantiq: rename patchset and kernel configs to 6.12
-5b7637911e|Shiji Yang|Thu May 8 22:32:03 2025 +0800|lantiq: refresh kernel symbol configs
-dd0c83575f|Shiji Yang|Thu May 8 21:44:19 2025 +0800|lantiq: fix vmmc driver build warnings
-988133846d|Shiji Yang|Thu May 8 21:43:02 2025 +0800|lantiq: fix pcie driver build warnings
-b87c88efee|Shiji Yang|Thu May 8 21:41:17 2025 +0800|lantiq: fix eeprom driver build warnings:
-671638d8fc|Shiji Yang|Thu May 8 21:39:10 2025 +0800|lantiq: fix timer driver build warnings
-69b38ed670|Shiji Yang|Thu May 8 21:37:18 2025 +0800|lantiq: misc build warning fixes for upstream codes
-7fe6921fe6|Daniel Golle|Sat Jun 14 12:54:56 2025 +0200|mediatek: remove files, patches and config for Linux 6.6
-4e7d58ebef|Daniel Golle|Sat Jun 14 12:52:42 2025 +0200|mediatek: switch to Linux 6.12 by default
-119aa00a78|Felix Fietkau|Wed Jul 16 13:09:03 2025 +0200|wifi-scripts: ucode: add support for iwinfo nl80211 phyname
-c39a09686e|Felix Fietkau|Fri Jul 18 12:22:10 2025 +0200|ucode: update to Git HEAD (2025-07-18)
-4dd35ca674|Lorenzo Bianconi|Thu Jul 17 18:45:48 2025 +0200|target: mediatek: Enable WED for MT7988 devices running 6.12.x kernels
+da4342c6db|Daniel Golle|Sat Jul 19 20:35:26 2025 +0100|uboot-mediatek: restore Ethernet PHY drivers
+bd073e5cd9|Felix Fietkau|Sat Jul 19 21:22:09 2025 +0200|cli: fix editor remove call validation
+215f7a2ec5|Konstantin Demin|Tue Jul 15 12:49:28 2025 +0300|tools/llvm: update to 20.1.8
+36337da8d2|Konstantin Demin|Mon Jul 14 11:08:31 2025 +0300|policycoreutils: bump PKG_RELEASE
+b0c2aa4594|Konstantin Demin|Mon Jul 14 11:04:39 2025 +0300|rpcd: bump PKG_RELEASE
+a308d3b2fd|Konstantin Demin|Mon Jul 14 11:03:04 2025 +0300|libpcap: bump PKG_RELEASE
+467b7c0dc6|Konstantin Demin|Mon Jul 14 11:08:09 2025 +0300|uhttpd: bump PKG_RELEASE
+d03f65a8f2|Konstantin Demin|Mon Jul 14 11:06:57 2025 +0300|ppp: bump PKG_RELEASE
+c4064c55bd|Konstantin Demin|Mon Jul 14 11:06:10 2025 +0300|dropbear: bump PKG_RELEASE
+33daed47df|Konstantin Demin|Mon Jul 14 11:05:41 2025 +0300|busybox: bump PKG_RELEASE
+e034b99e04|Konstantin Demin|Mon Jul 14 11:01:54 2025 +0300|toolchain: bump PKG_RELEASE
+6213bb69f7|Hauke Mehrtens|Mon Jul 14 23:26:18 2025 +0200|armsr: drop 6.6 support
+3196fca3a7|Hauke Mehrtens|Mon Jul 14 23:24:31 2025 +0200|armsr: use kernel 6.12 by default
+e3389e2783|Hauke Mehrtens|Tue Jul 15 21:59:25 2025 +0200|mvebu: Use common files folder
+5303f6330b|Sander van Deijck|Wed Jul 16 17:12:42 2025 +0200|kirkwood: add kmod-ata-ahci as default to ix4-200d
+5359639c2b|Karsten Sperling|Tue Jul 8 13:25:39 2025 +1200|mbedtls: Apply configuration in Configure instead of Prepare
+0ac2d64d92|Daniel Golle|Fri Jul 18 01:01:30 2025 +0100|kernel: modules: i2c: package i2c-mux-pinctrl
+801529f725|Daniel Golle|Thu Jul 17 19:25:38 2025 +0100|targets: add PINCTRL_SUPPORT auto-feature
+58f0f87786|Daniel Golle|Sat Jul 19 13:52:46 2025 +0100|uboot-mediatek: refresh patches
+324d13dc35|Shiji Yang|Sat Jul 19 20:09:35 2025 +0800|uboot-mediatek: backport filogic clk driver fix
+813470d04c|Leo Barsky|Thu Jul 17 18:50:13 2025 +0000|kernel: bump 6.12 to 6.12.39
+3148a57758|Leo Barsky|Thu Jul 17 18:50:47 2025 +0000|kernel: bump 6.6 to 6.6.99
+7b4ee9b17d|Shiji Yang|Sat Jul 12 11:52:05 2025 +0800|arm-trusted-firmware-mediatek: update to new release 20250711
+332645a610|Shiji Yang|Sat Jul 12 09:25:59 2025 +0800|uboot-mediatek: sync with mtk-openwrt/u-boot 20250711
+bbd3db4c57|Shiji Yang|Thu Jul 10 19:12:22 2025 +0800|uboot-mediatek: drop build without OpenSSL fix
+bc62080529|Shiji Yang|Thu Jul 10 00:35:29 2025 +0800|uboot-mediatek: support getting legacy uImage size
+f8c0da8525|Shiji Yang|Wed Jul 9 20:19:36 2025 +0800|mediatek: stage mt7622/mt7629 rfb u-boot images to bin folder
+ce659cba14|Shiji Yang|Tue Jul 8 20:33:11 2025 +0800|uboot-mediatek: fix mt7622 rfb1 build
+41a9c9de66|Shiji Yang|Tue Jun 10 23:59:39 2025 +0800|uboot-mediatek: update to v2025.07
+c5a6dc31d2|Daniel Golle|Sat Jul 12 03:41:19 2025 +0100|kernel: modules: input: add modules for PS/2 mouse support
+719c9059b2|Daniel Golle|Sat Jul 19 02:53:22 2025 +0100|kernel: add missing dependency on kmod-drm to kmod-i2c-hid
 </details>

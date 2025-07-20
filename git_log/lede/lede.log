@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d2ececf7c|Dee|Fri Jul 18 20:20:01 2025 +0800|tools: elfutils: set -std=gnu17
-e13e7235f|Dee|Fri Jul 18 20:10:29 2025 +0800|gmp: fix compilation with GCC15
-d9d4136f4|Internet1235|Fri Jul 18 18:08:02 2025 +0800|tools: fix compilation with GCC15
+bcf4529a6|Dee HY|Sat Jul 19 21:00:01 2025 +0800|readline: update to 8.3
+3a9ecb5f3|Dee HY|Sat Jul 19 20:20:08 2025 +0800|gdb: update to version 16.2
+7c7de9858|Dee HY|Sat Jul 19 17:20:00 2025 +0800|jsonfilter: update to latest
+64724a335|Dee HY|Sat Jul 19 17:10:09 2025 +0800|scripts: remove outdated mirror
 </details>

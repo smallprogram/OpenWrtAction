@@ -1,0 +1,10 @@
+<details> <summary> <b>routing new commit log :rocket: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d539071|Fabrice Fontaine|Mon Jun 16 15:29:02 2025 +0200|opennds: Add PKG_CPE_ID
+74abcc7|Fabrice Fontaine|Mon Jun 16 15:33:35 2025 +0200|bird2: Add PKG_CPE_ID
+d1a60e8|Josef Schlehofer|Sun May 25 12:49:40 2025 +0200|CI: move script into separate directory
+e8504be|Josef Schlehofer|Sun May 25 12:39:58 2025 +0200|CI: formal check: use shared workflow in actions-shared-workflows
+5911e00|Nick Hainke|Sun Jun 22 19:11:06 2025 +0200|bird3: update to 3.1.2
+</details>

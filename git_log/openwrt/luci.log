@@ -1,0 +1,6 @@
+<details> <summary> <b>luci new commit log :rocket: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+eb66bdccf8|Paul Donald|Sat Jul 19 19:15:11 2025 +0200|luci-app-strongswan-swanctl: prevent section name collisions
+</details>

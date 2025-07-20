@@ -2,23 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7841c6709|Jan Kardell|Mon Jul 14 11:47:19 2025 +0200|sudo: Fix license file
-299cf36de|Rosen Penev|Tue Jul 8 17:27:11 2025 -0700|white: update to 2.23
-6faa016fb|Rosen Penev|Tue Jul 8 17:57:04 2025 -0700|dump1090: update to 10.2
-5aff25eba|Rosen Penev|Sat Jul 12 19:57:55 2025 -0700|libwebsockets: fix compilation with GCC 15
-d61e91016|Rosen Penev|Sat Jul 12 21:12:38 2025 -0700|libnpupnp: update to 6.2.1
-616325ad1|Rosen Penev|Sat Jul 12 21:36:37 2025 -0700|xmlrpc-c: update to 1.60.5
-ac5377e03|Rosen Penev|Sat Jul 12 21:05:56 2025 -0700|libmariadb: update to 3.4.5
-d3c5050e3|Rosen Penev|Sat Jul 12 19:07:29 2025 -0700|libyaml-cpp: update to 0.8.0
-43681b542|Liu Yu|Wed Jul 16 16:23:47 2025 +0900|bind: bump to 9.20.10
-d71e6ac14|John Crispin|Mon May 26 14:41:40 2025 +0200|ufp: add a device fingerprinting daemon
-9bdefa022|John Crispin|Mon May 26 14:38:47 2025 +0200|udhcpsnoop: add new version of the dhcp snooping daemon
-7a7665ec5|John Crispin|Mon May 26 14:38:05 2025 +0200|udhcpsnoop: remove outdated version of the package
-ebb0ed3ba|Felix Fietkau|Wed May 7 13:46:17 2025 +0200|scapy: fix build by including pip requirements
-e57cc9898|John Audia|Thu Jul 17 18:11:16 2025 -0400|snort3: remove gperftools dep for mips* and powerpc
-b83303e73|Alexander Koenig|Thu Jun 26 21:32:48 2025 +0200|mdns-repeater: Update to latest upstream version
-d457c26c0|Josef Schlehofer|Tue Jul 15 10:38:47 2025 +0200|python-uci: update to version 0.10.3 + two patches
-19e62d09c|John Audia|Tue Jul 15 04:11:51 2025 -0400|libpam: fix build with mold linker
-157d881e6|Javier Marcet|Fri Jun 20 21:07:52 2025 +0200|luajit2: update to v2.1-20250529
-1a0591047|Javier Marcet|Sat Jan 25 13:34:00 2025 +0100|luajit2: update to v2.1-20250117
+7e19f2b33|Josef Schlehofer|Sat Jul 19 14:38:41 2025 +0200|perl-html-parser: add perl/host to HOST_BUILD_DEPENDS
+0715dff91|Nate Robinson|Fri Jul 18 00:42:08 2025 -0400|lf: update to r36
+96ff9f434|Thibaut VARÈNE|Sat Jul 19 09:47:15 2025 +0200|ratelimit: update to Git HEAD (2025-06-15)
 </details>
