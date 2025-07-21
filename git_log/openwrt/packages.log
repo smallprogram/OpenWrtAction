@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7e19f2b33|Josef Schlehofer|Sat Jul 19 14:38:41 2025 +0200|perl-html-parser: add perl/host to HOST_BUILD_DEPENDS
-0715dff91|Nate Robinson|Fri Jul 18 00:42:08 2025 -0400|lf: update to r36
-96ff9f434|Thibaut VARÈNE|Sat Jul 19 09:47:15 2025 +0200|ratelimit: update to Git HEAD (2025-06-15)
+8f13ebc66|Josef Schlehofer|Sun Jul 20 22:25:01 2025 +0200|Revert "scapy: fix build by including pip requirements"
+2efa9c7b3|Philip Prindeville|Thu Jul 17 22:03:52 2025 -0600|Revert "strongswan: fix build issues around PARSE_ERROR"
+283702c29|Liu Yu|Sat Jul 19 10:50:17 2025 +0900|bind: bump to 9.20.11
 </details>

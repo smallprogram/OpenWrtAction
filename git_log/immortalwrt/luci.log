@@ -1,0 +1,9 @@
+<details> <summary> <b>luci new commit log :rocket: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b1966b3086|Tianling Shen|Sun Jul 20 17:11:36 2025 +0800|Merge Official Source
+eb66bdccf8|Paul Donald|Sat Jul 19 19:15:11 2025 +0200|luci-app-strongswan-swanctl: prevent section name collisions
+1352d75f1a|Paul Donald|Wed Jul 16 16:08:57 2025 +0200|luci-proto-vxlan: peers -> peer spelling fix
+a3cae27ab4|Konstantin Demin|Fri Jul 4 11:06:13 2025 +0300|luci-lib-nixio: adjust with glibc and libcrypt-compat
+</details>

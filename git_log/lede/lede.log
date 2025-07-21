@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bcf4529a6|Dee HY|Sat Jul 19 21:00:01 2025 +0800|readline: update to 8.3
-3a9ecb5f3|Dee HY|Sat Jul 19 20:20:08 2025 +0800|gdb: update to version 16.2
-7c7de9858|Dee HY|Sat Jul 19 17:20:00 2025 +0800|jsonfilter: update to latest
-64724a335|Dee HY|Sat Jul 19 17:10:09 2025 +0800|scripts: remove outdated mirror
+b69da3b2a|Dee HY|Sun Jul 20 16:00:02 2025 +0800|mpfr: import from feeds
 </details>

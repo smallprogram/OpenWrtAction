@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0b90add|Daniel Golle|Sun Jun 22 23:16:04 2025 +0100|dahdi-linux: fix build with Linux 6.12
+44d6355|Daniel Golle|Mon Jun 23 01:40:45 2025 +0100|libpri: update to version 1.6.1
 </details>

@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :rocket: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-b6f634e1|lwb1978|Sun Jul 20 00:54:49 2025 +0800|luci: optimize the ui of luci-compat
-b41e733c|lwb1978|Fri Jul 18 15:23:53 2025 +0800|luci: correct the names of the up/down buttons
-</details>
