@@ -1,8 +1,0 @@
-<details> <summary> <b>helloworld new commit log :rocket: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-b8813ab|coolsnowwolf|Mon Jul 21 03:07:02 2025 +0800|luci-app-ssr-plus: add clean subscribe cache fuction
-43dc434|coolsnowwolf|Mon Jul 21 02:59:56 2025 +0800|luci-app-ssr-plus: avoid subscribe error when program not installed
-d44932b|coolsnowwolf|Mon Jul 21 01:45:04 2025 +0800|luci-app-ssr-plus: add PKG_NAME
-</details>
