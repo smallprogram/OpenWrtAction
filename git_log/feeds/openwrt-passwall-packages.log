@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-b50c786|A-BO|Mon Jul 21 22:37:51 2025 +0800|ci: use github mirror for routing feed to avoid 503 errors
-e08c8df|lwb1978|Mon Jul 21 17:07:13 2025 +0800|tcping: adjust install dir
-</details>

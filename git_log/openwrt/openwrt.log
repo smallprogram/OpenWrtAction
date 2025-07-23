@@ -2,13 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e53c53b7d5|Hauke Mehrtens|Sun Jul 20 17:36:32 2025 +0200|mediatek: Remove modules.builtin file
-28a88ff7e6|Marcin FM|Wed Jul 16 12:43:12 2025 +0200|ramips: EAP615-Wall v1: fix bootloop by reducing LZMA dictionary
-aea6d1bf5e|Donghyun Ko|Thu Jul 10 21:24:18 2025 +0900|mediatek: filogic: add support for ipTIME AX3000Q
-8bf023da76|Fengyu Wu|Sat Jul 19 18:57:05 2025 +0800|ca-certificates: Update to 20250419
-c4586ceae8|Grzegorz Sterniczuk|Sun Jul 13 17:22:33 2025 +0200|rockchip: fix eMMC corruption on NanoPC-T6 with A3A444 chips
-7fe06b7f56|Hauke Mehrtens|Sun Jul 20 17:46:05 2025 +0200|wireless-regdb: Update to version 2025.07.10
-7b6dcaf37c|Aleksander Jan Bajkowski|Mon Jul 14 23:21:51 2025 +0200|mediatek: filogic: increase nand flash speed on Redmi AX6000
-d8e738e5c4|Bradley M. Kuhn|Fri Jul 11 13:13:36 2025 -0700|Note inspiration for this script to give credit where it's due
-8097cbc14a|Daniel Golle|Mon Jul 21 14:22:20 2025 +0100|mediatek: disable MediaTek SoC Information (mtk-socinfo) driver
+c1c1112006|Felix Fietkau|Tue Jul 22 11:58:15 2025 +0200|toolchain/gcc: prevent the use of LDRD/STRD on ARMv5TE
 </details>

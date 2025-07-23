@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-35cd4d6|A-BO|Mon Jul 21 22:46:42 2025 +0800|ci: use github mirror for routing feed to avoid 503 errors
-c1b72ab|A-BO|Mon Jul 21 16:55:14 2025 +0800|luci: Update README.md
-11831f8|lwb1978|Mon Jul 21 16:10:37 2025 +0800|luci: Add License GPL-3.0-only
-202b380|lwb1978|Mon Jul 21 15:53:05 2025 +0800|luci: avoid subscribe error when program not installed
-41a7504|lwb1978|Mon Jul 21 14:34:31 2025 +0800|luci: subscribe manually without md5 check
+3200e32|A-BO|Tue Jul 22 17:54:08 2025 +0800|luci: optimize
 </details>

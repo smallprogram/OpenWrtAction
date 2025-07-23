@@ -1,0 +1,18 @@
+<details> <summary> <b>packages new commit log :rocket: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+18dc2acaf|Tianling Shen|Tue Jul 22 21:06:31 2025 +0800|Merge Official Source
+ae7cb49d6|Michael Heimpold|Thu Jul 10 23:53:19 2025 +0200|php8: update to 8.4.10
+6c8197705|Yuxi Yang|Mon Jul 21 12:10:38 2025 +0800|nebula: bump version to 1.9.6
+251497c14|Daniel Golle|Mon Jul 21 01:09:32 2025 +0100|fluidsynth: update to 2.4.7
+7b70414d2|W. Michael Petullo|Thu Jul 17 19:04:57 2025 -0500|gst1-libav: update to 1.26.2
+fa44d99f4|W. Michael Petullo|Thu Jul 17 19:04:23 2025 -0500|gst1-plugins-ugly: update to 1.26.2
+e7f535c3f|W. Michael Petullo|Thu Jul 17 19:03:58 2025 -0500|gst1-plugins-bad: update to 1.26.2
+45b5ad262|W. Michael Petullo|Thu Jul 17 19:03:34 2025 -0500|gst1-plugins-good: update to 1.26.2
+28da73210|W. Michael Petullo|Thu Jul 17 19:03:03 2025 -0500|gst1-plugins-base: update to 1.26.2
+c029c3fc3|W. Michael Petullo|Thu Jul 17 19:02:26 2025 -0500|gstreamer1: update to 1.26.2
+8f13ebc66|Josef Schlehofer|Sun Jul 20 22:25:01 2025 +0200|Revert "scapy: fix build by including pip requirements"
+2efa9c7b3|Philip Prindeville|Thu Jul 17 22:03:52 2025 -0600|Revert "strongswan: fix build issues around PARSE_ERROR"
+283702c29|Liu Yu|Sat Jul 19 10:50:17 2025 +0900|bind: bump to 9.20.11
+</details>

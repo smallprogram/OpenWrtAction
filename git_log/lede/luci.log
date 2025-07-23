@@ -1,0 +1,6 @@
+<details> <summary> <b>luci new commit log :rocket: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+58c2fca9|Internet1235|Tue Jul 22 18:30:19 2025 +0800|luci-app-ddns-go: add config and init (#352)
+</details>
