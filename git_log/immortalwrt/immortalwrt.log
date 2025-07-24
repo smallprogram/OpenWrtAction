@@ -2,46 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5b512356c3|Tianling Shen|Wed Jul 23 00:58:48 2025 +0800|rockchip: remove patch merged by mistake
-9e3c8c9d94|Tianling Shen|Tue Jul 22 21:56:28 2025 +0800|mediatek: drop broken en8811h phy led node for tplink 7dr7250
-978f853779|Tianling Shen|Tue Jul 22 21:39:13 2025 +0800|Merge Official Source
-c1c1112006|Felix Fietkau|Tue Jul 22 11:58:15 2025 +0200|toolchain/gcc: prevent the use of LDRD/STRD on ARMv5TE
-e53c53b7d5|Hauke Mehrtens|Sun Jul 20 17:36:32 2025 +0200|mediatek: Remove modules.builtin file
-28a88ff7e6|Marcin FM|Wed Jul 16 12:43:12 2025 +0200|ramips: EAP615-Wall v1: fix bootloop by reducing LZMA dictionary
-aea6d1bf5e|Donghyun Ko|Thu Jul 10 21:24:18 2025 +0900|mediatek: filogic: add support for ipTIME AX3000Q
-8bf023da76|Fengyu Wu|Sat Jul 19 18:57:05 2025 +0800|ca-certificates: Update to 20250419
-c4586ceae8|Grzegorz Sterniczuk|Sun Jul 13 17:22:33 2025 +0200|rockchip: fix eMMC corruption on NanoPC-T6 with A3A444 chips
-7fe06b7f56|Hauke Mehrtens|Sun Jul 20 17:46:05 2025 +0200|wireless-regdb: Update to version 2025.07.10
-7b6dcaf37c|Aleksander Jan Bajkowski|Mon Jul 14 23:21:51 2025 +0200|mediatek: filogic: increase nand flash speed on Redmi AX6000
-d8e738e5c4|Bradley M. Kuhn|Fri Jul 11 13:13:36 2025 -0700|Note inspiration for this script to give credit where it's due
-8097cbc14a|Daniel Golle|Mon Jul 21 14:22:20 2025 +0100|mediatek: disable MediaTek SoC Information (mtk-socinfo) driver
-66c34c6f4a|Hauke Mehrtens|Mon Jul 14 23:36:50 2025 +0200|malta: drop 6.6 support
-472ae5d826|Hauke Mehrtens|Mon Jul 14 23:35:44 2025 +0200|malta: use kernel 6.12 by default
-ccaa4933b1|INAGAKI Hiroshi|Sun Apr 27 20:46:02 2025 +0900|mediatek: add support for ELECOM WRC-X3000GS3
-76143aec09|INAGAKI Hiroshi|Mon Apr 28 18:45:36 2025 +0900|mediatek: filogic: enable mstc-boot mtdsplit parser
-ddf7d63e94|INAGAKI Hiroshi|Mon Apr 28 18:44:29 2025 +0900|generic: add mstc-boot mtdsplit parser
-c08c2d6eb3|John Audia|Sat Jul 12 08:43:39 2025 -0400|libxml2: update to 2.14.5
-e0d3c307f9|Shiji Yang|Tue May 6 19:30:52 2025 +0800|ipq40xx: enable 6.12 testing kernel
-ac69d0510a|Shiji Yang|Wed Jun 18 19:50:39 2025 +0800|ipq40xx: migrate wifi configuration device paths for 6.12 kernel
-8d2744dfe5|Shiji Yang|Sun Jun 1 13:56:30 2025 +0800|ipq40xx: dts: fix incorrect PCIe bus number
-cfb15d7f83|Shiji Yang|Sun Jun 1 13:53:39 2025 +0800|ipq40xx: dts: correct PCIe device node name
-08e2fdc17d|Shiji Yang|Sat May 31 14:56:55 2025 +0800|ipq40xx: dts: compatibility changes for 6.12 kernel
-fb94b01f7f|Shiji Yang|Tue May 6 19:30:52 2025 +0800|ipq40xx: add PCIe bridge node reference label for ipq4019.dtsi
-334a4322dd|Shiji Yang|Tue May 6 19:30:52 2025 +0800|ipq40xx: tag_oob/ipqess: update DSA APIs
-cdf2e21e82|Shiji Yang|Tue May 6 19:30:52 2025 +0800|ipq40xx: refresh 6.12 kernel config files
-230c6f44ab|Shiji Yang|Tue May 6 19:30:52 2025 +0800|ipq40xx: refresh 6.12 kernel patches
-b040c74542|Shiji Yang|Tue May 6 19:30:52 2025 +0800|ipq40xx: restore kernel 6.6 arch files
-de4ec9a733|Shiji Yang|Tue May 6 19:30:52 2025 +0800|ipq40xx: restore kernel 6.6 config files and patches
-6f23dd9336|Shiji Yang|Tue May 6 19:30:52 2025 +0800|ipq40xx: move arch files to 6.12 directory
-2c97a041c4|Shiji Yang|Tue May 6 19:30:52 2025 +0800|ipq40xx: rename patchset and kernel configs to 6.12
-054ab50935|Shiji Yang|Tue May 6 19:30:52 2025 +0800|ipq40xx: refresh kernel symbol configs
-855a8942e6|Shiji Yang|Tue May 6 19:30:52 2025 +0800|ipq40xx: qca8k-ipq4019: add missing header platform_device.h
-2a31e006d6|Shiji Yang|Tue May 6 19:30:52 2025 +0800|ipq40xx: ipqess: remove explicit phylink_generic_validate() references
-1f7514bb92|Shiji Yang|Tue May 6 19:30:52 2025 +0800|ipq40xx: gcc-ipq4019: mark qcom_find_freq_close() function as static
-875c3ba079|Shiji Yang|Mon May 19 21:56:58 2025 +0800|ipq40xx: dts: fix dtc warnings for MikroTik hAP ac3 LTE6
-ddbd360fcc|Shiji Yang|Mon May 19 21:56:58 2025 +0800|ipq40xx: dts: fix led-controller node name for Netgear LBR20
-07a7281ebd|Daniel Golle|Fri Jul 18 01:06:11 2025 +0100|bcm27xx: package modules for official 7" touchscreen TFT display
-d1446144f1|Daniel Golle|Fri Jul 18 01:04:37 2025 +0100|kernel: modules: video: package driver for TC358762
-51dc3ab7f8|Daniel Golle|Fri Jul 18 01:02:43 2025 +0100|kernel: modules: video: individually package simple-panel.ko
-85f27367ea|Daniel Golle|Thu Jul 17 21:00:00 2025 +0100|targets: add USES_PM auto-feature
+06a9f13a1a|Tianling Shen|Wed Jul 23 20:07:03 2025 +0800|bzip2: opt out of lto build
 </details>

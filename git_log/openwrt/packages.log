@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5bfd9558f|Tianling Shen|Tue Jul 22 21:22:55 2025 +0800|cloudreve: Update to 4.3.0
-9689b7103|Daniel Golle|Mon Jul 21 02:47:14 2025 +0100|gstreamer: update to 1.26.4
+a45c1a4fe|Alexander Couzens|Sat Jul 19 13:29:19 2025 +0200|libmicrohttpd: update to 1.0.2
+5711c0f97|Jonas Jelonek|Wed Jul 23 08:32:55 2025 +0000|eza: update to 0.23.0
+c57bb325e|Jianhui Zhao|Tue Jul 22 21:41:20 2025 +0800|rtty: update to 9.0.1
+171641501|Tianling Shen|Wed Jul 23 14:45:56 2025 +0800|dufs: lock cargo dependencies
 </details>

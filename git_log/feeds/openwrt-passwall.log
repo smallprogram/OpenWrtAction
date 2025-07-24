@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3200e32|A-BO|Tue Jul 22 17:54:08 2025 +0800|luci: optimize
+f0a8685|A-BO|Thu Jul 24 00:36:14 2025 +0800|luci: allow immediate manual subscription after url change
 </details>
