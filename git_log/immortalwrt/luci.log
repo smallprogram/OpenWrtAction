@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bf65ac0d73|Tianling Shen|Wed Jul 23 23:02:05 2025 +0800|luci-app-homeproxy: bump to latest git HEAD
-c12d5d3987|Tianling Shen|Wed Jul 23 13:29:30 2025 +0800|luci-app-3cat: fix setup firewall port
+1fdf477351|Tianling Shen|Thu Jul 24 16:38:06 2025 +0800|luci-app-unblockneteasemusic: update music source
 </details>

@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f0a8685|A-BO|Thu Jul 24 00:36:14 2025 +0800|luci: allow immediate manual subscription after url change
+223032e|A-BO|Fri Jul 25 01:28:34 2025 +0800|luci: optimize
+a19529b|A-BO|Fri Jul 25 01:27:27 2025 +0800|luci: fix subscription url input id retrieval issue on lede
 </details>

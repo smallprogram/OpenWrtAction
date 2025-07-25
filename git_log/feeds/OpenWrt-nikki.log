@@ -1,0 +1,9 @@
+<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+df887be|Joseph Mory|Thu Jul 24 23:16:53 2025 +0800|chore: bump version to 1.23.3
+3cdb206|Joseph Mory|Thu Jul 24 23:16:39 2025 +0800|chore: rescan i18n
+b4d0d69|Joseph Mory|Thu Jul 24 23:16:26 2025 +0800|feat: add `dns` option in access control
+87a2f15|Joseph Mory|Thu Jul 24 23:15:41 2025 +0800|feat: support `DOMAIN-WILDCARD` in append rule
+</details>
