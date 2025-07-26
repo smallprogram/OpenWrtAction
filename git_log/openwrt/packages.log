@@ -2,16 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7f3fd08a3|Liu Yu|Tue Jul 15 11:47:50 2025 +0900|kea: update to 2.6.3
-2a7364534|John Audia|Sun Jul 20 11:54:49 2025 -0400|rsync: run as regular user rather than as root
-e4ec9e371|Othmar Truniger|Wed Jul 23 10:46:17 2025 +0200|linknx: bump to new upstream 0.0.1.39
-30e1d245a|Ray Wang|Thu Jul 24 21:27:17 2025 +0800|natmap: update to 20250721
-c7fb6e96f|Ray Wang|Thu Jul 24 21:54:01 2025 +0800|fsh: update to 4.10.0
-d5329b6fa|Daniel Golle|Wed Jul 23 13:57:05 2025 +0100|gst1-plugins-bad: fix duplicate codecparsers library package
-96a194299|Goetz Goerisch|Wed Jul 23 17:46:38 2025 +0200|tayga: move to net
-a09c2777a|Goetz Goerisch|Tue Jul 22 20:01:44 2025 +0200|tayga: refresh patch
-39d9a5fd0|Goetz Goerisch|Tue Jul 22 18:52:31 2025 +0200|tayga: drop 010-gcc14.patch
-40c7b91b0|Goetz Goerisch|Tue Jul 22 18:49:41 2025 +0200|tayga: drop patch 003-RFC8215.patch
-fd0a459b4|Goetz Goerisch|Tue Jul 22 18:48:32 2025 +0200|tayga: drop patch 001-configure_unset_CFLAGS.patch
-f093382e4|Goetz Goerisch|Tue Jul 22 19:53:32 2025 +0200|tayga: update to 0.9.5
+f931ddb99|Jianhui Zhao|Fri Jul 25 14:07:22 2025 +0800|lua-eco: update to 3.11.0
+e1d6d65f3|Alejandro Ojeda Gutiérrez|Thu Jul 24 20:54:53 2025 +0200|ddns-scripts: add dondominio.com
+eb3165b80|Wesley Gimenes|Tue Jul 22 09:17:43 2025 -0300|netbird: update to 0.51.2
 </details>

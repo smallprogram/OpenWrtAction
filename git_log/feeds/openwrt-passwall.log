@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :rocket: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-223032e|A-BO|Fri Jul 25 01:28:34 2025 +0800|luci: optimize
-a19529b|A-BO|Fri Jul 25 01:27:27 2025 +0800|luci: fix subscription url input id retrieval issue on lede
-</details>

@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-de8682f|github-actions[bot]|Thu Jul 24 12:44:03 2025 +0800|xray-core: update to 25.7.24 (#472)
+65a532a|github-actions[bot]|Sat Jul 26 00:10:19 2025 +0800|xray-core: update to 25.7.25 (#476)
+df41194|zhusir|Sat Jul 26 00:05:01 2025 +0800|Revert "xray-core: update to 25.7.25 (#473)" (#475)
+c1c5ce7|github-actions[bot]|Fri Jul 25 21:12:11 2025 +0800|xray-core: update to 25.7.25 (#473)
 </details>

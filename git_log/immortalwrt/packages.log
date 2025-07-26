@@ -2,7 +2,17 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e08f8b42e|Tianling Shen|Thu Jul 24 15:20:22 2025 +0800|gmediarender: Update to 0.3
-7187535c4|Tianling Shen|Thu Jul 24 15:16:48 2025 +0800|qt6base: Update to 6.9.1
-38a8859f6|Tianling Shen|Thu Jul 24 15:16:38 2025 +0800|qt6tools: Update to 6.9.1
+f87b293b1|Tianling Shen|Fri Jul 25 13:19:30 2025 +0800|Merge Official Source
+7f3fd08a3|Liu Yu|Tue Jul 15 11:47:50 2025 +0900|kea: update to 2.6.3
+2a7364534|John Audia|Sun Jul 20 11:54:49 2025 -0400|rsync: run as regular user rather than as root
+e4ec9e371|Othmar Truniger|Wed Jul 23 10:46:17 2025 +0200|linknx: bump to new upstream 0.0.1.39
+30e1d245a|Ray Wang|Thu Jul 24 21:27:17 2025 +0800|natmap: update to 20250721
+c7fb6e96f|Ray Wang|Thu Jul 24 21:54:01 2025 +0800|fsh: update to 4.10.0
+d5329b6fa|Daniel Golle|Wed Jul 23 13:57:05 2025 +0100|gst1-plugins-bad: fix duplicate codecparsers library package
+96a194299|Goetz Goerisch|Wed Jul 23 17:46:38 2025 +0200|tayga: move to net
+a09c2777a|Goetz Goerisch|Tue Jul 22 20:01:44 2025 +0200|tayga: refresh patch
+39d9a5fd0|Goetz Goerisch|Tue Jul 22 18:52:31 2025 +0200|tayga: drop 010-gcc14.patch
+40c7b91b0|Goetz Goerisch|Tue Jul 22 18:49:41 2025 +0200|tayga: drop patch 003-RFC8215.patch
+fd0a459b4|Goetz Goerisch|Tue Jul 22 18:48:32 2025 +0200|tayga: drop patch 001-configure_unset_CFLAGS.patch
+f093382e4|Goetz Goerisch|Tue Jul 22 19:53:32 2025 +0200|tayga: update to 0.9.5
 </details>

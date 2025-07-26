@@ -2,5 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f9f120e4d|coolsnowwolf|Thu Jul 17 20:09:15 2025 +0800|qca-ssdk: ignore phy warnings
+3adae9530|Jonas Gorski|Thu Jul 6 21:01:06 2023 +0200|kernel-headers: install isa-rev.h on mips to fix lzma-lader on linux 6.1
+445689ad3|coolsnowwolf|Sat Jul 26 04:28:18 2025 +0800|tools/elfutils: add missing MIPS reloc support
+3b3715694|Mieczyslaw Nalewaj|Tue Apr 15 20:03:04 2025 +0200|generic: mtdsplit: include appropriate header for kernel 6.12
+874fee50e|coolsnowwolf|Sat Jul 26 04:04:56 2025 +0800|kernel: bump all to latest HEAD
+f2f51b561|coolsnowwolf|Sat Jul 26 03:24:06 2025 +0800|rockchip: add FriendlyElec NanoPi R76S (RK3576) support
+0dad298ca|coolsnowwolf|Sat Jul 26 02:35:53 2025 +0800|uboot-rk35xx: try to fallback legacy image boot
+66fa875a7|coolsnowwolf|Fri Jul 25 16:55:35 2025 +0800|iptables: improve kernel 6.12 compatibility
 </details>

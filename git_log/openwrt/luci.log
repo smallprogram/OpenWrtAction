@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9cd1573d96|Hosted Weblate|Thu Jul 24 17:21:12 2025 +0200|Translated using Weblate (Portuguese (Brazil))
+58575727e5|Paul Donald|Fri Jul 25 20:55:49 2025 +0200|luci-proto-openconnect: bug fixes for cert read and write methods
 </details>
