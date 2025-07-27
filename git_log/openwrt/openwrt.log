@@ -2,37 +2,55 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-88c7803197|Hauke Mehrtens|Mon Jul 21 00:27:25 2025 +0200|kernel: Reorder kernel configuration
-3c246f6d03|Hauke Mehrtens|Mon Jul 21 00:25:43 2025 +0200|x86: Activate CONFIG_DRM_ACCEL
-27643ebfa9|Hauke Mehrtens|Mon Jul 21 00:23:56 2025 +0200|bcm27xx: Make kernel modules depend on target
-da0736c16f|Hauke Mehrtens|Sun Jul 20 22:01:14 2025 +0200|armsr: Make kernel modules depend on target
-e9ae1f678c|Hauke Mehrtens|Sun Jul 20 21:59:58 2025 +0200|apm821xx: kmod-ata-dwc: Make kernel module depend on target
-6ff85791c5|Hauke Mehrtens|Sun Jul 20 19:58:50 2025 +0200|kernel: kmod-fs-nfs-v4: Package nfs_layout*.ko files
-75f090ef96|Hauke Mehrtens|Sun Jul 20 19:53:36 2025 +0200|kernel: kmod-dsa-notag: Add driver
-5a04f17857|Hauke Mehrtens|Sun Jul 20 19:44:42 2025 +0200|kernel: kmod-phy-bcm7xxx: Add driver
-1ba25858ff|Hauke Mehrtens|Sun Jul 20 19:27:16 2025 +0200|kernel: kmod-lib-parman: Mark hidden
-2aea616d11|Hauke Mehrtens|Sun Jul 20 19:26:44 2025 +0200|kernel: kmod-lib-objagg: Mark hidden
-8bcc6d1894|Hauke Mehrtens|Sun Jul 20 19:24:37 2025 +0200|kernel: kmod-drm-display-helper: Mark hidden
-666d43eafb|Hauke Mehrtens|Sun Jul 20 19:23:45 2025 +0200|kernel: kmod-drm-buddy: Mark hidden
-dd8c498a20|Hauke Mehrtens|Sun Jul 20 19:21:48 2025 +0200|kernel: kmod-video-async: Mark hidden
-b43ef49cf2|Hauke Mehrtens|Sun Jul 20 19:20:56 2025 +0200|kernel: kmod-video-fwnode: Mark hidden
-aa51a1c13a|Hauke Mehrtens|Sun Jul 20 18:48:38 2025 +0200|kernel: kmod-crypto-lib-aescfb: Mark hidden
-476902afa6|Hauke Mehrtens|Sun Jul 20 18:45:19 2025 +0200|kernel: kmod-crypto-engine: Mark hidden
-858ce9ad1e|Hauke Mehrtens|Sun Jul 20 18:38:49 2025 +0200|kernel: kmod-industrialio-backend: Mark hidden
-9f6a7bf3ea|Hauke Mehrtens|Sun Jul 20 21:48:36 2025 +0200|kernel: kmod-pinctrl-mcp23s08: Depend on PINCTRL
-810b86fb7d|Hauke Mehrtens|Sun Jul 20 18:24:45 2025 +0200|kernel: kmod-backlight-pwm/kmod-hwmon-pwmfan: Depend on PWM_SUPPORT
-7b3e9b7bab|Hauke Mehrtens|Sun Jul 20 18:34:59 2025 +0200|kernel: kmod-ag71xx: Depend on ath79 only
-aa04a5366c|Hauke Mehrtens|Sun Jul 20 19:18:45 2025 +0200|kernel: kmod-video-cpia2: Remove driver
-33e8f316fd|Hauke Mehrtens|Sun Jul 20 18:52:28 2025 +0200|kernel: kmod-ledtrig-audio: Depend on kernel 6.6
-5ad165e490|Hauke Mehrtens|Sun Jul 20 18:28:53 2025 +0200|kernel: kmod-sched-act-ipt: Depend on kernel 6.6
-b1968034c2|Hauke Mehrtens|Sun Jul 20 18:20:16 2025 +0200|kernel: kmod-hwmon-max6642: Depend on kernel 6.6
-d12a603de5|Hauke Mehrtens|Sun Jul 20 18:16:17 2025 +0200|kernel: kmod-md-multipath: Depend on kernel 6.6
-71fa099ef7|Shiji Yang|Thu Jul 24 18:50:50 2025 +0800|projectsmirrors: remove kernel mirror ftp.riken.jp
-f696a18743|Shiji Yang|Thu Jul 24 18:50:50 2025 +0800|projectsmirrors: update Apache mirror apache.cs.utah.edu
-4b3b16be70|Shiji Yang|Thu Jul 24 18:50:50 2025 +0800|projectsmirrors: remove some GNOME mirrors
-b6276e33eb|Leo Barsky|Thu Jul 24 11:58:13 2025 +0000|kernel: bump 6.12 to 6.12.40
-05d344cb2c|Leo Barsky|Thu Jul 24 12:12:33 2025 +0000|kernel: bump 6.6 to 6.6.100
-15a4d621d8|Jan Hoffmann|Thu Jul 24 19:29:23 2025 +0200|realtek: actually enable 2500Base-X
-b087961ccb|Hauke Mehrtens|Thu Jul 24 23:41:49 2025 +0200|tools: firmware-utils: update to Git HEAD (2025-07-24)
-ac9a97e49b|Eric Fahlgren|Thu Jul 24 10:09:04 2025 -0700|build: call ipkg-remove using xargs if #args>=512
+c2066fcb95|Hauke Mehrtens|Sat Jul 26 13:19:34 2025 +0200|gemini: Remove kmod-md-multipath dependency
+4e49710211|Hauke Mehrtens|Sat Jul 26 13:17:23 2025 +0200|kernel: kmod-drm-imx-hdmi: Fix kmod-drm-display-helper dependency
+e8a27c4196|Hauke Mehrtens|Sat Jul 26 13:12:48 2025 +0200|kernel: kmod-crypto-lib-aescfb: Remove package
+098e98dd4d|Dominick Grift|Sun Jun 1 13:12:38 2025 +0200|selinux-policy: update version to v2.8.2
+5809bfaaac|Petr Štetiar|Mon Jun 9 15:44:44 2025 +0000|busybox: fix login applet on selinux
+e805d8bac9|Til Kaiser|Wed Jul 23 10:08:38 2025 +0200|image: also show GRUB options for EROFS
+aeaa61517b|Robert Marko|Sat Jul 26 17:06:16 2025 +0200|tools: automake: update to 1.18.1
+21d3722c40|Markus Stockhausen|Wed Jul 23 01:37:02 2025 -0400|realtek: don't disable MIPS counter on secondary VPEs
+a3bfb67072|Markus Stockhausen|Mon Jul 21 08:34:54 2025 -0400|realtek: mdio: RTL838x: move functions over to bus
+6e8042ed97|INAGAKI Hiroshi|Sat Jul 26 14:12:47 2025 +0900|mediatek: add missing #address/size-cells for ELECOM WRC-X3000GS3
+d7d0205940|Michael Pratt|Sun Jun 1 19:08:12 2025 -0400|tools/automake: update to 1.18
+da541f7acd|Michael Pratt|Sat May 31 16:16:10 2025 -0400|gettext-full: update to 0.24.1
+246eba7528|Michael Pratt|Sat May 31 14:08:53 2025 -0400|gnulib-l10n: add package
+1a253a2bb5|Michael Pratt|Sat May 31 02:47:11 2025 -0400|tools/gnulib: backport patches for gettext
+d19f8bc199|Michael Pratt|Sat Jun 7 00:48:20 2025 -0400|tools/gnulib: update to branch stable-202501
+92d10e2cdf|Michael Pratt|Fri May 16 18:37:01 2025 -0400|nftables: remove usage of autoreconf
+0b4ebe5dd3|Michael Pratt|Wed Sep 25 04:28:41 2024 -0400|tools/elfutils: enable parallel building
+abf243eae8|Michael Pratt|Mon Oct 21 15:31:29 2024 -0400|tools/elfutils: update to 0.192
+5bb84fb53b|Michael Pratt|Mon Oct 21 09:47:25 2024 -0400|tools/elfutils: update MIPS support patches
+c83941d288|Michael Pratt|Tue Sep 24 18:50:15 2024 -0400|tools/elfutils: add maintainer-clean to clean target
+c16ed51e06|Michael Pratt|Sun Oct 20 08:33:21 2024 -0400|tools/elfutils: backport version 0.192 portability patches
+8f920d2f94|Michael Pratt|Sun Oct 20 07:49:50 2024 -0400|tools/elfutils: replace dependency hack with upstream include path fix
+30105c77ef|Michael Pratt|Sun Oct 6 04:23:10 2024 -0400|tools/automake: do not delete libtool in clean targets
+7a8fd73548|Michael Pratt|Fri Sep 27 00:20:38 2024 -0400|tools: require coreutils to build util-linux
+405652469f|Michael Pratt|Fri Sep 27 01:18:03 2024 -0400|tools: require coreutils to build findutils
+e776c9fe4e|Michael Pratt|Thu Sep 26 23:20:38 2024 -0400|tools: require coreutils to build elfutils
+f7fd8303be|Michael Pratt|Thu Oct 3 01:06:04 2024 -0400|tools: build coreutils for development targets
+f197b5827a|Michael Pratt|Thu Oct 3 00:57:29 2024 -0400|prereq: prefer existing built coreutils as symlink target
+660e398f92|Michael Pratt|Thu Oct 3 00:49:10 2024 -0400|prereq: add support for creating relative symlinks
+90262c6f6e|Michael Pratt|Thu Sep 26 23:17:41 2024 -0400|tools/coreutils: provide the rmdir utility
+b8c0ed4692|Michael Pratt|Mon Sep 30 03:55:14 2024 -0400|tools/coreutils: replace symlinks to build prerequisites
+5c832d7833|Michael Pratt|Mon Sep 30 15:59:06 2024 -0400|tools/coreutils: disable uninstall target
+6a3cfeb4a6|Michael Pratt|Thu Sep 26 23:30:51 2024 -0400|tools/coreutils: add maintainer-clean to clean target
+26f8a3874b|Michael Pratt|Sun Oct 6 04:13:16 2024 -0400|tools/coreutils: use automake during bootstrap
+199afe9ef7|Michael Pratt|Tue May 6 14:54:55 2025 -0400|tools/coreutils: update to 9.6
+40c241d857|Michael Pratt|Thu May 15 14:02:02 2025 -0400|tools/coreutils: do not require gettext or gperf
+6d2bfe50d3|Michael Pratt|Tue Oct 8 06:55:47 2024 -0400|tools/automake: control all cleaning with clean variables
+fddac9af6f|Michael Pratt|Tue Sep 24 18:17:09 2024 -0400|tools/libtool: remove parallel building
+c7554019dd|Michael Pratt|Sun Sep 22 23:38:21 2024 -0400|tools/libtool: add maintainer-clean to clean target
+9ea963e471|Michael Pratt|Fri Oct 4 01:25:13 2024 -0400|tools/automake: do not delete Makefile in clean targets
+222a1bed79|Michael Pratt|Tue Jul 8 14:57:58 2025 -0400|tools/gnulib: use git archive as download source
+685fc753a7|Michael Pratt|Sat May 31 14:00:45 2025 -0400|download: add support for gitweb snapshots
+774ce21c66|Michael Pratt|Sat May 31 14:07:05 2025 -0400|tools/gnulib: use exact directory copy for install
+b07b8c8b43|Michael Pratt|Tue May 6 13:57:24 2025 -0400|tools/gnulib: update to branch stable-202407
+03b9b7e894|Michael Pratt|Sun May 11 03:06:41 2025 -0400|tools/automake: update to 1.17
+793be94a3a|Michael Pratt|Sun May 11 12:23:17 2025 -0400|tools/automake: hardcode portable location for Perl
+89056bd7b1|Michael Pratt|Thu Jul 3 15:09:25 2025 -0400|tools/util-linux: include macOS system uuid header
+346872e720|Michael Pratt|Tue Jun 24 15:35:33 2025 -0400|tools/bc: let getopt() prototype be defined normally
+46506776e6|Michael Pratt|Tue Jun 24 15:32:09 2025 -0400|tools/bc: override SUBDIRS variable with Makefile
+3e95b955fc|Michael Pratt|Tue Jun 24 14:23:49 2025 -0400|tools/bc: remove useless patch
+ded18a3683|Markus Stockhausen|Fri Jul 25 02:31:11 2025 -0400|realtek: dsa: enhance pcs_get_state() for RTL83xx
 </details>

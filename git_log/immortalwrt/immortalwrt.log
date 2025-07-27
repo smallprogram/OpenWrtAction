@@ -2,7 +2,38 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2fe0c5fa5f|Tianling Shen|Fri Jul 25 19:45:10 2025 +0800|uboot-mediatek: move tplink tl-7dr72x0 env file to defenvs directory
-cdb869bc78|Tianling Shen|Fri Jul 25 14:20:02 2025 +0800|rtl8189es: bump to latest git HEAD
-0abe29b5af|Tianling Shen|Fri Jul 25 14:18:48 2025 +0800|rtl8188eu: bump to latest git HEAD
+bbc4309254|Tianling Shen|Sat Jul 26 19:22:24 2025 +0800|Merge Official Source
+88c7803197|Hauke Mehrtens|Mon Jul 21 00:27:25 2025 +0200|kernel: Reorder kernel configuration
+3c246f6d03|Hauke Mehrtens|Mon Jul 21 00:25:43 2025 +0200|x86: Activate CONFIG_DRM_ACCEL
+27643ebfa9|Hauke Mehrtens|Mon Jul 21 00:23:56 2025 +0200|bcm27xx: Make kernel modules depend on target
+da0736c16f|Hauke Mehrtens|Sun Jul 20 22:01:14 2025 +0200|armsr: Make kernel modules depend on target
+e9ae1f678c|Hauke Mehrtens|Sun Jul 20 21:59:58 2025 +0200|apm821xx: kmod-ata-dwc: Make kernel module depend on target
+6ff85791c5|Hauke Mehrtens|Sun Jul 20 19:58:50 2025 +0200|kernel: kmod-fs-nfs-v4: Package nfs_layout*.ko files
+75f090ef96|Hauke Mehrtens|Sun Jul 20 19:53:36 2025 +0200|kernel: kmod-dsa-notag: Add driver
+5a04f17857|Hauke Mehrtens|Sun Jul 20 19:44:42 2025 +0200|kernel: kmod-phy-bcm7xxx: Add driver
+1ba25858ff|Hauke Mehrtens|Sun Jul 20 19:27:16 2025 +0200|kernel: kmod-lib-parman: Mark hidden
+2aea616d11|Hauke Mehrtens|Sun Jul 20 19:26:44 2025 +0200|kernel: kmod-lib-objagg: Mark hidden
+8bcc6d1894|Hauke Mehrtens|Sun Jul 20 19:24:37 2025 +0200|kernel: kmod-drm-display-helper: Mark hidden
+666d43eafb|Hauke Mehrtens|Sun Jul 20 19:23:45 2025 +0200|kernel: kmod-drm-buddy: Mark hidden
+dd8c498a20|Hauke Mehrtens|Sun Jul 20 19:21:48 2025 +0200|kernel: kmod-video-async: Mark hidden
+b43ef49cf2|Hauke Mehrtens|Sun Jul 20 19:20:56 2025 +0200|kernel: kmod-video-fwnode: Mark hidden
+aa51a1c13a|Hauke Mehrtens|Sun Jul 20 18:48:38 2025 +0200|kernel: kmod-crypto-lib-aescfb: Mark hidden
+476902afa6|Hauke Mehrtens|Sun Jul 20 18:45:19 2025 +0200|kernel: kmod-crypto-engine: Mark hidden
+858ce9ad1e|Hauke Mehrtens|Sun Jul 20 18:38:49 2025 +0200|kernel: kmod-industrialio-backend: Mark hidden
+9f6a7bf3ea|Hauke Mehrtens|Sun Jul 20 21:48:36 2025 +0200|kernel: kmod-pinctrl-mcp23s08: Depend on PINCTRL
+810b86fb7d|Hauke Mehrtens|Sun Jul 20 18:24:45 2025 +0200|kernel: kmod-backlight-pwm/kmod-hwmon-pwmfan: Depend on PWM_SUPPORT
+7b3e9b7bab|Hauke Mehrtens|Sun Jul 20 18:34:59 2025 +0200|kernel: kmod-ag71xx: Depend on ath79 only
+aa04a5366c|Hauke Mehrtens|Sun Jul 20 19:18:45 2025 +0200|kernel: kmod-video-cpia2: Remove driver
+33e8f316fd|Hauke Mehrtens|Sun Jul 20 18:52:28 2025 +0200|kernel: kmod-ledtrig-audio: Depend on kernel 6.6
+5ad165e490|Hauke Mehrtens|Sun Jul 20 18:28:53 2025 +0200|kernel: kmod-sched-act-ipt: Depend on kernel 6.6
+b1968034c2|Hauke Mehrtens|Sun Jul 20 18:20:16 2025 +0200|kernel: kmod-hwmon-max6642: Depend on kernel 6.6
+d12a603de5|Hauke Mehrtens|Sun Jul 20 18:16:17 2025 +0200|kernel: kmod-md-multipath: Depend on kernel 6.6
+71fa099ef7|Shiji Yang|Thu Jul 24 18:50:50 2025 +0800|projectsmirrors: remove kernel mirror ftp.riken.jp
+f696a18743|Shiji Yang|Thu Jul 24 18:50:50 2025 +0800|projectsmirrors: update Apache mirror apache.cs.utah.edu
+4b3b16be70|Shiji Yang|Thu Jul 24 18:50:50 2025 +0800|projectsmirrors: remove some GNOME mirrors
+b6276e33eb|Leo Barsky|Thu Jul 24 11:58:13 2025 +0000|kernel: bump 6.12 to 6.12.40
+05d344cb2c|Leo Barsky|Thu Jul 24 12:12:33 2025 +0000|kernel: bump 6.6 to 6.6.100
+15a4d621d8|Jan Hoffmann|Thu Jul 24 19:29:23 2025 +0200|realtek: actually enable 2500Base-X
+b087961ccb|Hauke Mehrtens|Thu Jul 24 23:41:49 2025 +0200|tools: firmware-utils: update to Git HEAD (2025-07-24)
+ac9a97e49b|Eric Fahlgren|Thu Jul 24 10:09:04 2025 -0700|build: call ipkg-remove using xargs if #args>=512
 </details>

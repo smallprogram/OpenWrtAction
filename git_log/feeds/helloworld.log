@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b6a39c9|zxl hhyccc|Sat Jul 26 00:11:31 2025 +0800|tuic-client: Update to code compile
-c580cef|zxl hhyccc|Sat Jul 26 00:04:46 2025 +0800|xray-core: update to 25.7.25
+179cf4a|zxl hhyccc|Sat Jul 26 21:59:31 2025 +0800|xray-core: update to 25.7.26
+5dae763|zxl hhyccc|Sat Jul 26 21:48:59 2025 +0800|Merge pull request #1761 from zxlhhyccc/custom
+1509046|zxlhhyccc|Sat Jul 26 17:01:02 2025 +0800|luci-app-ssr-plus: Add resistant quantum `ML-DSA-65` signature verify mechanism. See: https://github.com/XTLS/Xray-core/pull/4915
 </details>

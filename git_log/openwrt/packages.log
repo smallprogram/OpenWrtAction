@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f931ddb99|Jianhui Zhao|Fri Jul 25 14:07:22 2025 +0800|lua-eco: update to 3.11.0
-e1d6d65f3|Alejandro Ojeda Gutiérrez|Thu Jul 24 20:54:53 2025 +0200|ddns-scripts: add dondominio.com
-eb3165b80|Wesley Gimenes|Tue Jul 22 09:17:43 2025 -0300|netbird: update to 0.51.2
+ab4b29959|Tianling Shen|Tue Jul 22 21:25:51 2025 +0800|microsocks: Update to 1.0.5
+513e8c598|John Audia|Tue Jul 15 15:39:57 2025 -0400|rngd-tools: run as unprivileged user
 </details>

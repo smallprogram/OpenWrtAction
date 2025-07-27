@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-65a532a|github-actions[bot]|Sat Jul 26 00:10:19 2025 +0800|xray-core: update to 25.7.25 (#476)
-df41194|zhusir|Sat Jul 26 00:05:01 2025 +0800|Revert "xray-core: update to 25.7.25 (#473)" (#475)
-c1c5ce7|github-actions[bot]|Fri Jul 25 21:12:11 2025 +0800|xray-core: update to 25.7.25 (#473)
+950c9a2|A-BO|Sat Jul 26 22:12:54 2025 +0800|action: update code
+be30ceb|github-actions[bot]|Sat Jul 26 21:46:29 2025 +0800|xray-core: update to 25.7.26 (#477)
+6451e30|A-BO|Sat Jul 26 14:00:39 2025 +0800|ci: add `auto cache software release jsons`
 </details>

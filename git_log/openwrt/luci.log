@@ -1,6 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-58575727e5|Paul Donald|Fri Jul 25 20:55:49 2025 +0200|luci-proto-openconnect: bug fixes for cert read and write methods
-</details>
