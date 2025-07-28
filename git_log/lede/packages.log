@@ -1,7 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-65976bc8|coolsnowwolf|Sat Jul 26 13:15:05 2025 +0800|strongswan: trigger reload when interfaces are specified
-9e4f500b|coolsnowwolf|Sat Jul 26 13:01:27 2025 +0800|dufs: lock cargo dependencies
-</details>

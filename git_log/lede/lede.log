@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-07d0c1621|coolsnowwolf|Sat Jul 26 16:08:47 2025 +0800|rockchip: support RK3576 SoC in the thermal driver
-7cb06a0e7|coolsnowwolf|Sat Jul 26 13:51:49 2025 +0800|uboot-rk35xx: add support for Ariaboard Photonicat 2
-ba0dc246a|coolsnowwolf|Sat Jul 26 12:57:36 2025 +0800|tools/elfutils: remove portability patch
+d339d73f0|aiamadeus|Tue Jul 15 23:09:26 2025 +0800|rockchip: sync rk3528 support with upstream
 </details>

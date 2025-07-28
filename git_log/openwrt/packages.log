@@ -2,6 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ab4b29959|Tianling Shen|Tue Jul 22 21:25:51 2025 +0800|microsocks: Update to 1.0.5
-513e8c598|John Audia|Tue Jul 15 15:39:57 2025 -0400|rngd-tools: run as unprivileged user
+90dfd41b5|Robert Marko|Sun Jul 27 19:56:29 2025 +0200|atop: update to 2.12.0
+e3395ec43|Javier Marcet|Fri Jul 25 15:37:09 2025 +0200|docker-compose: Update to version 2.39.1
+17998bb7b|Ray Wang|Fri Jul 25 23:17:33 2025 +0800|hev-socks5-tunnel: update to 2.12.0
+dba6e9b94|Ray Wang|Fri Jul 25 23:15:49 2025 +0800|hev-socks5-tproxy: update to 2.9.0
+a835b3afc|Ray Wang|Fri Jul 25 23:13:26 2025 +0800|hev-socks5-server: update to 2.9.0
+119c6efc6|Tianling Shen|Sun Jul 27 15:22:37 2025 +0800|xray-core: Update to 25.7.26
+cacb8b683|Wesley Gimenes|Fri Jul 11 22:45:38 2025 -0300|CONTRIBUTING.md: fix commit subject example format
 </details>

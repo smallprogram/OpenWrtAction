@@ -2,55 +2,20 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c2066fcb95|Hauke Mehrtens|Sat Jul 26 13:19:34 2025 +0200|gemini: Remove kmod-md-multipath dependency
-4e49710211|Hauke Mehrtens|Sat Jul 26 13:17:23 2025 +0200|kernel: kmod-drm-imx-hdmi: Fix kmod-drm-display-helper dependency
-e8a27c4196|Hauke Mehrtens|Sat Jul 26 13:12:48 2025 +0200|kernel: kmod-crypto-lib-aescfb: Remove package
-098e98dd4d|Dominick Grift|Sun Jun 1 13:12:38 2025 +0200|selinux-policy: update version to v2.8.2
-5809bfaaac|Petr Štetiar|Mon Jun 9 15:44:44 2025 +0000|busybox: fix login applet on selinux
-e805d8bac9|Til Kaiser|Wed Jul 23 10:08:38 2025 +0200|image: also show GRUB options for EROFS
-aeaa61517b|Robert Marko|Sat Jul 26 17:06:16 2025 +0200|tools: automake: update to 1.18.1
-21d3722c40|Markus Stockhausen|Wed Jul 23 01:37:02 2025 -0400|realtek: don't disable MIPS counter on secondary VPEs
-a3bfb67072|Markus Stockhausen|Mon Jul 21 08:34:54 2025 -0400|realtek: mdio: RTL838x: move functions over to bus
-6e8042ed97|INAGAKI Hiroshi|Sat Jul 26 14:12:47 2025 +0900|mediatek: add missing #address/size-cells for ELECOM WRC-X3000GS3
-d7d0205940|Michael Pratt|Sun Jun 1 19:08:12 2025 -0400|tools/automake: update to 1.18
-da541f7acd|Michael Pratt|Sat May 31 16:16:10 2025 -0400|gettext-full: update to 0.24.1
-246eba7528|Michael Pratt|Sat May 31 14:08:53 2025 -0400|gnulib-l10n: add package
-1a253a2bb5|Michael Pratt|Sat May 31 02:47:11 2025 -0400|tools/gnulib: backport patches for gettext
-d19f8bc199|Michael Pratt|Sat Jun 7 00:48:20 2025 -0400|tools/gnulib: update to branch stable-202501
-92d10e2cdf|Michael Pratt|Fri May 16 18:37:01 2025 -0400|nftables: remove usage of autoreconf
-0b4ebe5dd3|Michael Pratt|Wed Sep 25 04:28:41 2024 -0400|tools/elfutils: enable parallel building
-abf243eae8|Michael Pratt|Mon Oct 21 15:31:29 2024 -0400|tools/elfutils: update to 0.192
-5bb84fb53b|Michael Pratt|Mon Oct 21 09:47:25 2024 -0400|tools/elfutils: update MIPS support patches
-c83941d288|Michael Pratt|Tue Sep 24 18:50:15 2024 -0400|tools/elfutils: add maintainer-clean to clean target
-c16ed51e06|Michael Pratt|Sun Oct 20 08:33:21 2024 -0400|tools/elfutils: backport version 0.192 portability patches
-8f920d2f94|Michael Pratt|Sun Oct 20 07:49:50 2024 -0400|tools/elfutils: replace dependency hack with upstream include path fix
-30105c77ef|Michael Pratt|Sun Oct 6 04:23:10 2024 -0400|tools/automake: do not delete libtool in clean targets
-7a8fd73548|Michael Pratt|Fri Sep 27 00:20:38 2024 -0400|tools: require coreutils to build util-linux
-405652469f|Michael Pratt|Fri Sep 27 01:18:03 2024 -0400|tools: require coreutils to build findutils
-e776c9fe4e|Michael Pratt|Thu Sep 26 23:20:38 2024 -0400|tools: require coreutils to build elfutils
-f7fd8303be|Michael Pratt|Thu Oct 3 01:06:04 2024 -0400|tools: build coreutils for development targets
-f197b5827a|Michael Pratt|Thu Oct 3 00:57:29 2024 -0400|prereq: prefer existing built coreutils as symlink target
-660e398f92|Michael Pratt|Thu Oct 3 00:49:10 2024 -0400|prereq: add support for creating relative symlinks
-90262c6f6e|Michael Pratt|Thu Sep 26 23:17:41 2024 -0400|tools/coreutils: provide the rmdir utility
-b8c0ed4692|Michael Pratt|Mon Sep 30 03:55:14 2024 -0400|tools/coreutils: replace symlinks to build prerequisites
-5c832d7833|Michael Pratt|Mon Sep 30 15:59:06 2024 -0400|tools/coreutils: disable uninstall target
-6a3cfeb4a6|Michael Pratt|Thu Sep 26 23:30:51 2024 -0400|tools/coreutils: add maintainer-clean to clean target
-26f8a3874b|Michael Pratt|Sun Oct 6 04:13:16 2024 -0400|tools/coreutils: use automake during bootstrap
-199afe9ef7|Michael Pratt|Tue May 6 14:54:55 2025 -0400|tools/coreutils: update to 9.6
-40c241d857|Michael Pratt|Thu May 15 14:02:02 2025 -0400|tools/coreutils: do not require gettext or gperf
-6d2bfe50d3|Michael Pratt|Tue Oct 8 06:55:47 2024 -0400|tools/automake: control all cleaning with clean variables
-fddac9af6f|Michael Pratt|Tue Sep 24 18:17:09 2024 -0400|tools/libtool: remove parallel building
-c7554019dd|Michael Pratt|Sun Sep 22 23:38:21 2024 -0400|tools/libtool: add maintainer-clean to clean target
-9ea963e471|Michael Pratt|Fri Oct 4 01:25:13 2024 -0400|tools/automake: do not delete Makefile in clean targets
-222a1bed79|Michael Pratt|Tue Jul 8 14:57:58 2025 -0400|tools/gnulib: use git archive as download source
-685fc753a7|Michael Pratt|Sat May 31 14:00:45 2025 -0400|download: add support for gitweb snapshots
-774ce21c66|Michael Pratt|Sat May 31 14:07:05 2025 -0400|tools/gnulib: use exact directory copy for install
-b07b8c8b43|Michael Pratt|Tue May 6 13:57:24 2025 -0400|tools/gnulib: update to branch stable-202407
-03b9b7e894|Michael Pratt|Sun May 11 03:06:41 2025 -0400|tools/automake: update to 1.17
-793be94a3a|Michael Pratt|Sun May 11 12:23:17 2025 -0400|tools/automake: hardcode portable location for Perl
-89056bd7b1|Michael Pratt|Thu Jul 3 15:09:25 2025 -0400|tools/util-linux: include macOS system uuid header
-346872e720|Michael Pratt|Tue Jun 24 15:35:33 2025 -0400|tools/bc: let getopt() prototype be defined normally
-46506776e6|Michael Pratt|Tue Jun 24 15:32:09 2025 -0400|tools/bc: override SUBDIRS variable with Makefile
-3e95b955fc|Michael Pratt|Tue Jun 24 14:23:49 2025 -0400|tools/bc: remove useless patch
-ded18a3683|Markus Stockhausen|Fri Jul 25 02:31:11 2025 -0400|realtek: dsa: enhance pcs_get_state() for RTL83xx
+ebd0052f45|Nick Hainke|Sun Jul 27 18:22:59 2025 +0200|tools: pkgconf: update to 2.5.1
+df3164f205|Nick Hainke|Sun Jul 27 18:57:15 2025 +0200|tools: mtools: update to 4.0.49
+ed7d62caf2|Andrew LaMarche|Sun Dec 1 15:29:48 2024 +0000|realtek: add support for Hasivo S1100W-8XGT-SE switch
+6fa1775348|Jan Hoffmann|Sun Jul 20 19:07:29 2025 +0200|kernel: mtdsplit_h3c_vfs: return 0 for non-fatal errors
+4f716eb43a|Rosen Penev|Sun Jul 20 16:45:48 2025 -0700|apm821xx: sata: refresh config
+4e92e34244|Rosen Penev|Sun Jul 20 16:38:02 2025 -0700|apm821xx: run through kernel_oldconfig
+3d8a13413f|Rosen Penev|Sun Jul 20 16:36:01 2025 -0700|apm821xx: fix sata config
+423ed9fc5a|Nick Hainke|Sun Jul 27 12:29:28 2025 +0200|tools: bash: update to 5.3
+11aa0fc6fb|Andreas Gnau|Tue Jul 22 11:12:08 2025 +0200|base-files: find_mmc_part: Silence error when no MMC exists
+fbf991544f|Nick Hainke|Sun Jul 27 12:17:17 2025 +0200|tools: fakeroot: update to 1.37.1.2
+97dc9f8dbf|Karsten Sperling|Mon Jul 21 16:25:03 2025 +1200|mbedtls: Expose MBEDTLS_KEY_EXCHANGE_ECJPAKE_ENABLED config option
+0e4a69e340|Donghyun Ko|Wed Jul 23 02:20:27 2025 +0900|mediatek: add factory image for ipTIME AX3000SM
+ec69736270|Jan Hoffmann|Wed Apr 30 00:02:00 2025 +0200|realtek: implement polling for hardware counters
+fa63a5365e|Jan Hoffmann|Fri Apr 25 20:18:52 2025 +0200|realtek: implement get_stats64
+e27e695978|Jan Hoffmann|Fri Apr 25 20:10:36 2025 +0200|realtek: use more specific APIs for ethtool stats where possible
+831c1cd864|Jan Hoffmann|Fri Apr 4 13:24:29 2025 +0200|realtek: fix ethtool stats for RTL839x and RTL930x
 </details>

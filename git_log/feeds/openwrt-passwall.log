@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ead400d|A-BO|Sun Jul 27 00:31:02 2025 +0800|luci: xray add ML-DSA-65 signature verify mechanism
-46e9263|A-BO|Sat Jul 26 22:24:44 2025 +0800|luci: fix typo
-8fc0982|A-BO|Sat Jul 26 14:36:15 2025 +0800|luci: bypass github api rate limit in component updates
+8d459be|lwb1978|Sun Jul 27 15:19:31 2025 +0800|luci: remove the deprecated options in sing-box ech
+d500df6|lwb1978|Sun Jul 27 14:58:49 2025 +0800|luci: support xray ech
+953ba80|A-BO|Sun Jul 27 11:37:03 2025 +0800|luci: fix typo
+9f39b6a|A-BO|Sun Jul 27 11:35:20 2025 +0800|luci: optimize xray ML-DSA-65 option
 </details>

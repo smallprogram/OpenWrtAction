@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-950c9a2|A-BO|Sat Jul 26 22:12:54 2025 +0800|action: update code
-be30ceb|github-actions[bot]|Sat Jul 26 21:46:29 2025 +0800|xray-core: update to 25.7.26 (#477)
-6451e30|A-BO|Sat Jul 26 14:00:39 2025 +0800|ci: add `auto cache software release jsons`
+ebd6a11|A-BO|Sun Jul 27 11:00:28 2025 +0800|action: update code
 </details>
