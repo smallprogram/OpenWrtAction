@@ -2,12 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cedc674974|Tianling Shen|Sun Jul 27 17:37:20 2025 +0800|luci-theme-argon: bump to 2.4.3
-1cd810b44f|Tianling Shen|Sun Jul 27 15:27:28 2025 +0800|Merge Official Source
-2e973040b4|Tianling Shen|Sun Jul 27 15:26:58 2025 +0800|luci-app-homeproxy: bump to latest git HEAD
-58575727e5|Paul Donald|Fri Jul 25 20:55:49 2025 +0200|luci-proto-openconnect: bug fixes for cert read and write methods
-9cd1573d96|Hosted Weblate|Thu Jul 24 17:21:12 2025 +0200|Translated using Weblate (Portuguese (Brazil))
-476348a6a8|Hannu Nyman|Wed Jul 23 15:45:06 2025 +0300|treewide: Sync translations
-03b3df6373|Paul Donald|Wed Jul 23 13:50:07 2025 +0200|luci-app-ddns: fix cacert param write for all cases
-c3f86fbf38|Hosted Weblate|Tue Jul 22 19:32:35 2025 +0200|Translated using Weblate (Ukrainian)
+af19bef941|DreamAlone666|Mon Jul 28 22:45:40 2025 +0800|luci-app-minieap: Remove deprecated package
 </details>

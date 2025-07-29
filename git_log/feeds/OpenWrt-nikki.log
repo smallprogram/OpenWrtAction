@@ -1,7 +1,0 @@
-<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-dabd731|Joseph Mory|Mon Jul 28 00:31:30 2025 +0800|fix: add missing `dns` option in lan access control
-59eb863|Joseph Mory|Sun Jul 27 22:23:36 2025 +0800|chore: update mihomo to 1.19.12
-</details>

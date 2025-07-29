@@ -1,0 +1,10 @@
+<details> <summary> <b>packages new commit log :rocket: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ee518f2a|coolsnowwolf|Tue Jul 29 02:38:18 2025 +0800|Merge pull request #978 from xiaotan8/master
+eade5d38|coolsnowwolf|Tue Jul 29 02:38:07 2025 +0800|Merge pull request #979 from ilyfairy/fix-wsdd2-ksmbd-path
+627b7737|ilyfairy|Sun Jul 27 22:32:24 2025 +0800|wsdd2: fix ksmbd path
+cf014318|xiaotan8|Sun Jul 27 00:22:52 2025 +0800|xray-core: update to 25.7.26
+45ef7628|xiaotan8|Sat Jul 26 14:19:12 2025 +0800|xray-core: update to 25.7.25
+</details>

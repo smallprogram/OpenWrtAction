@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d339d73f0|aiamadeus|Tue Jul 15 23:09:26 2025 +0800|rockchip: sync rk3528 support with upstream
+d5f1d95bf|coolsnowwolf|Tue Jul 29 02:18:24 2025 +0800|tools/elfutils: update to 0.192
+798d563de|coolsnowwolf|Tue Jul 29 01:58:50 2025 +0800|tools/mtd-utils: fix build with ubuntu 18.04 LTS
+dbbec549a|coolsnowwolf|Sun Jul 20 23:16:08 2025 +0800|rockchip: sync rk3576 source with upstream
 </details>
