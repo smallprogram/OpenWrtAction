@@ -1,6 +1,12 @@
 #!/bin/bash
 release_tag=$1
-git_folders=(immortalwrt lede openwrt feeds)
+git_folders=(openwrt immortalwrt lede feeds)
+
+openwrt_REPO_URLS=(
+    "https://github.com/openwrt/openwrt"
+    "https://github.com/openwrt/packages"
+    "https://github.com/openwrt/luci"
+)
 
 immortalwrt_REPO_URLS=(
     "https://github.com/immortalwrt/immortalwrt"
@@ -12,12 +18,6 @@ lede_REPO_URLS=(
     "https://github.com/coolsnowwolf/lede"
     "https://github.com/coolsnowwolf/packages"
     "https://github.com/coolsnowwolf/luci"
-)
-
-openwrt_REPO_URLS=(
-    "https://github.com/openwrt/openwrt"
-    "https://github.com/openwrt/packages"
-    "https://github.com/openwrt/luci"
 )
 
 feeds_REPO_URLS=(
