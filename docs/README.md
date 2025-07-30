@@ -84,11 +84,6 @@
 > For more information, please refer to the instructions in the release
 ---
 
-## :warning: Upstream issue submission
-
-openwrt/packages#27122
-
-
 ## 🌟 Featured Plugins
 
 Selected plug-in configuration, covering common functions such as network acceleration, theme beautification, system management, etc.
