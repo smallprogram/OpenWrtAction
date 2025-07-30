@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a167e91|A-BO|Tue Jul 29 20:47:37 2025 +0800|luci: optimize the socks test logic
+5843169|lwb1978|Tue Jul 29 12:03:15 2025 +0800|luci: fix ipv4 rules mistakenly applied to ipv6 firewall in acl
+</details>

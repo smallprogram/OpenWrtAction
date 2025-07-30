@@ -2,10 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9c26d14489|Colton Pawielski|Wed May 14 20:07:15 2025 -0500|realtek: add support for Vimin VM-S100-0800MS
-6b981c5464|Shiji Yang|Tue Jul 22 07:52:21 2025 +0800|uboot-mediatek: fix FORESEE Flash build warning
-8a63382018|Shiji Yang|Mon Jul 21 21:53:33 2025 +0800|uboot-mediatek: fix various environment errors on u-boot v2025.07
-6f13425f3f|Shiji Yang|Sun Jul 20 22:56:26 2025 +0800|uboot-mediatek: convert env in mtd to upstream implementation
-4ba116c55f|Shiji Yang|Sun Jul 20 22:56:05 2025 +0800|uboot-mediatek: move Asus ZenWiFi BT8 env file to defenvs directory
-c78320c732|Shubham Vishwakarma|Mon Jul 28 09:42:00 2025 +0530|qualcommax: ipq50xx: fix tsens node status to enable thermal sensor
+d6200f2502|Konstantin Demin|Sun Jul 27 11:36:39 2025 +0300|toolchain: glibc: Update glibc 2.41 to recent HEAD
+4fd6117129|Rosen Penev|Tue Jul 29 12:46:00 2025 -0700|tools/util-linux: fix libuuid linking
+b0650c50c8|Rosen Penev|Sun Jul 27 11:37:27 2025 -0700|tools/expat: fix compilation with ccache
+dddf7b05cd|Michael Pratt|Tue Jul 29 13:56:10 2025 -0400|tools: automake: fix MAINTAINERCLEANFILES warnings
 </details>

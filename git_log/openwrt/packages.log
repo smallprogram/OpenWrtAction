@@ -2,7 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-93d3840f1|Wesley Gimenes|Sat Jul 26 17:07:33 2025 -0300|mstflint: fix SECTION variable typo
-59628aace|Wesley Gimenes|Sat Jul 26 17:05:33 2025 -0300|bluez-tools: fix SECTION variable typo
-317798178|Fengyu Wu|Sun Jul 27 15:47:03 2025 +0800|xz: update to 5.8.1
+80e343dd4|Tianling Shen|Tue Jul 29 17:19:49 2025 +0800|rclone: backport ftp insecure TLS ciphers fix
+223d62e02|Rosen Penev|Fri Jul 11 20:19:09 2025 -0700|crun: fix compilation with GCC 15
+f6e404e96|Bruce Chen|Mon Jul 21 20:51:27 2025 +0800|aliyun-cli: add new package
+17c6423e8|George Sapkin|Tue Jul 29 15:03:43 2025 +0300|yt-dlp: bump to 2025.07.21
+69f985969|John Audia|Sat Jul 26 08:58:30 2025 -0400|nvme-cli: update to 2.15
+f991b1ed1|John Audia|Sat Jul 26 08:59:06 2025 -0400|libmvme: bump to 1.15
+f6f3f4c5f|Tianling Shen|Tue Jul 29 17:45:25 2025 +0800|inih: Update to r61
+3e73c9562|George Sapkin|Tue Jul 29 14:50:15 2025 +0300|adguardhome: bump to 0.107.64
+4a022613b|Rosen Penev|Tue Jul 8 17:45:58 2025 -0700|sumo: update to 1.23.1
+832b3a4e4|Rosen Penev|Sun Jul 27 21:32:02 2025 -0700|softethervpn5: fix compilation without OS ncurses
+4d9ca34f6|W. Michael Petullo|Sun Jul 27 20:01:04 2025 -0500|cyrus-sasl: fix build with GCC 15.1
 </details>

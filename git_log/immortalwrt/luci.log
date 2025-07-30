@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-af19bef941|DreamAlone666|Mon Jul 28 22:45:40 2025 +0800|luci-app-minieap: Remove deprecated package
+6d97098cda|Tianling Shen|Tue Jul 29 17:48:45 2025 +0800|Merge Official Source
+5cb2eb619e|Ramon Van Gorkom|Fri Jul 25 21:32:52 2025 +0200|luci-base: allow submitting new value in android chromium
+3c5b780479|Hosted Weblate|Mon Jul 28 12:25:13 2025 +0200|Translated using Weblate (Serbian)
 </details>
