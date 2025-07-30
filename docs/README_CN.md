@@ -83,6 +83,11 @@
 > 每个Release包含各个平台的packages压缩包，名称格式为buildinfo_[源码平台]_[平台名称]，例如，`buildinfo_immortalwrt_X86`,如果你不想升级固件，只想升级某个ipk可以下载压缩包选择ipk上传至软路由安装即可。
 > 详细信息请参考release中的说明
 ---
+
+## :warning: 上游Bug
+
+openwrt/packages#27122
+
 ## 🌟 特色插件
 
 精选插件配置，涵盖网络加速、主题美化、系统管理等常用功能。

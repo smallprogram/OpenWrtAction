@@ -83,6 +83,12 @@
 > Each Release contains the package compression package of each platform. The name format is buildinfo_[source platform]_[platform name]. For example, `buildinfo_immortalwrt_X86`. If you do not want to upgrade the firmware, but only want to upgrade a certain ipk, you can download the compressed package and select the ipk to upload to the soft router for installation.
 > For more information, please refer to the instructions in the release
 ---
+
+## :warning: Upstream issue submission
+
+openwrt/packages#27122
+
+
 ## 🌟 Featured Plugins
 
 Selected plug-in configuration, covering common functions such as network acceleration, theme beautification, system management, etc.
