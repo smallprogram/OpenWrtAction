@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6d97098cda|Tianling Shen|Tue Jul 29 17:48:45 2025 +0800|Merge Official Source
-5cb2eb619e|Ramon Van Gorkom|Fri Jul 25 21:32:52 2025 +0200|luci-base: allow submitting new value in android chromium
-3c5b780479|Hosted Weblate|Mon Jul 28 12:25:13 2025 +0200|Translated using Weblate (Serbian)
+3903a00be6|Tianling Shen|Wed Jul 30 18:04:35 2025 +0800|luci-app-k3usb: drop useless package
+e52d6964b4|Tianling Shen|Wed Jul 30 17:59:39 2025 +0800|luci-app-usb3disable: drop useless package
+041b2cf10c|Tianling Shen|Wed Jul 30 17:46:51 2025 +0800|luci-app-ramfree: rewrite into ucode
 </details>

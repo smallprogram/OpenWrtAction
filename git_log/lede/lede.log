@@ -1,6 +1,0 @@
-<details> <summary> <b>lede new commit log :rocket: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-665b35eee|Xiaok|Wed Jul 30 01:19:09 2025 +0800|upx: fix PKG_BUILD_DIR (#13648)
-</details>

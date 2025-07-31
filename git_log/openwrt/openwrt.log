@@ -2,8 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d6200f2502|Konstantin Demin|Sun Jul 27 11:36:39 2025 +0300|toolchain: glibc: Update glibc 2.41 to recent HEAD
-4fd6117129|Rosen Penev|Tue Jul 29 12:46:00 2025 -0700|tools/util-linux: fix libuuid linking
-b0650c50c8|Rosen Penev|Sun Jul 27 11:37:27 2025 -0700|tools/expat: fix compilation with ccache
-dddf7b05cd|Michael Pratt|Tue Jul 29 13:56:10 2025 -0400|tools: automake: fix MAINTAINERCLEANFILES warnings
+fd123d6d13|Coia Prant|Sat Jul 5 07:53:09 2025 +0000|qualcommax: ipq6018: remove unused reserved memory
+2684fe31d0|Sven Wegener|Sun Jul 6 19:28:36 2025 +0200|build: use --no-print-directory for dumping subtargets
+b5acf84635|Chukun Pan|Tue Jul 8 22:20:19 2025 +0800|qualcommax: cleanup device tree for GL-B3000
+9b5d055076|Markus Stockhausen|Mon Jul 28 10:16:24 2025 -0400|realtek: add NAND hardware description to RTL93xx
+41b0340ff0|Markus Stockhausen|Mon Jul 28 10:13:26 2025 -0400|realtek: backport NAND driver for RTL93xx
+66916096f3|Michael Pratt|Wed Jul 30 14:44:16 2025 -0400|tools: bison: do not install or uninstall macros
+d802e6310a|Harshal Gohel|Tue Jun 17 13:03:47 2025 +0000|realtek: rtl931x: Support enable/disable SMI Polling for SerDes ports
+848887b491|Harshal Gohel|Mon Jul 14 11:35:00 2025 +0200|realtek: rtl931x: Fix SDS field modifications
+c20f4d6637|Robert Marko|Wed Jul 30 10:56:57 2025 +0200|tools: util-linux: refresh patches
+b1597c9ad4|Markus Stockhausen|Fri Jun 13 02:42:39 2025 -0400|realtek: convert RTL838x toolchain to 24kc
 </details>
