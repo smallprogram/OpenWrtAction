@@ -21,4 +21,16 @@ sed -i 's/--set=llvm\.download-ci-llvm=false/--set=llvm.download-ci-llvm=true/' 
 grep -q -- '--ci false \\' feeds/packages/lang/rust/Makefile || sed -i '/x\.py \\/a \        --ci false \\' feeds/packages/lang/rust/Makefile
 
 
+# Add patches
+if [ "$GITHUB_ACTIONS" = "true" ] && [ -n "$GITHUB_RUN_ID" ] && [ -n "$GITHUB_WORKFLOW" ]; then
+    # https://github.com/openwrt/packages/pull/27133
+    # rpcsvc-proto: fix build with autotools gettext macros 0.22
+    cp -r $GITHUB_WORKSPACE/patches/rpcsvc-proto/* ./feeds/packages/libs/rpcsvc-proto
+else
+    # https://github.com/openwrt/packages/pull/27133
+    # rpcsvc-proto: fix build with autotools gettext macros 0.22
+    cp -r ../OpenWrtAction/patches/rpcsvc-proto/* ./feeds/packages/libs/rpcsvc-proto
+fi
+
+
 echo "DIY2 is complate!"
