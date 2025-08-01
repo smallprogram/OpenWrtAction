@@ -19,3 +19,8 @@ Signed-off-by: Vladimir Ermakov <vooon341@gmail.com>
  # without any warranty.
  #
  # Origin: gettext-0.20.2
+-GETTEXT_MACRO_VERSION = 0.20
++GETTEXT_MACRO_VERSION = 0.22
+ 
+ PACKAGE = @PACKAGE@
+ VERSION = @VERSION@
