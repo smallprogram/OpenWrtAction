@@ -1,8 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-3903a00be6|Tianling Shen|Wed Jul 30 18:04:35 2025 +0800|luci-app-k3usb: drop useless package
-e52d6964b4|Tianling Shen|Wed Jul 30 17:59:39 2025 +0800|luci-app-usb3disable: drop useless package
-041b2cf10c|Tianling Shen|Wed Jul 30 17:46:51 2025 +0800|luci-app-ramfree: rewrite into ucode
-</details>

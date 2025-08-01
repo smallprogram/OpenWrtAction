@@ -1,7 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-b7c08475e7|Paul Donald|Thu Jul 31 00:31:38 2025 +0200|luci-base: jsdoc Slider -> RangeSlider and fixes for RangeSlider
-4d5ac5b3e9|Paul Donald|Wed Jul 30 14:49:54 2025 +0200|themes: remove -moz selectors
-</details>

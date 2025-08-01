@@ -2,14 +2,18 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-11a3e85fb|Georgi Valkov|Tue Jul 29 17:30:09 2025 +0300|fuse3: update to version 3.17.3
-c6b21821a|John Audia|Wed Jul 23 07:47:00 2025 -0400|dbus: update to 1.16.2
-6b4d3b054|Georgi Valkov|Wed Jul 30 10:12:42 2025 +0300|libsodium: update to 1.0.20
-7c289ead1|Vladimir Ermakov|Sun Jul 20 11:21:25 2025 +0200|python: adjust with glibc and libcrypt-compat
-7814960a7|Lovin Yarn|Wed Jul 30 19:56:13 2025 +0800|libsodium: fix building with GCC 15.1
-49eafacec|Josef Schlehofer|Wed Jul 30 11:52:03 2025 +0200|mqttled: remove package
-63b3e1011|Richard Muzik|Mon Jul 21 15:57:32 2025 +0200|python-incremental: Update to 24.7.2
-102b5b548|Florian Eckert|Tue Jul 22 14:59:55 2025 +0200|ufp: remove not needed bpf-headers in PKG_BUILD_DEPENDS
-ee64ba24d|John Audia|Sun Jul 20 04:02:32 2025 -0400|openappid: update to 20230609
-806ee4b49|John Audia|Tue Jul 29 14:55:25 2025 -0400|iperf3: update to 3.19.1
+9318a696f|Georgi Valkov|Tue Jul 29 19:53:32 2025 +0300|idevicerestore: update to the latest git version
+95d2515ce|Georgi Valkov|Tue Jul 29 19:40:23 2025 +0300|ideviceinstaller: update to the latest git version
+45cb4f904|Georgi Valkov|Wed Jun 11 15:11:17 2025 +0300|ifuse: update to the latest git version
+494e9f7da|Georgi Valkov|Tue Jul 29 18:39:59 2025 +0300|libideviceactivation: update to the latest git version
+3741cb920|Georgi Valkov|Tue Jul 29 18:32:21 2025 +0300|usbmuxd: update to the latest git version
+d7c2ed9c5|Georgi Valkov|Tue Jul 29 18:22:36 2025 +0300|libimobiledevice: update to the latest git version
+2485fa479|Georgi Valkov|Wed Jun 11 13:05:09 2025 +0300|libusbmuxd: update to 2.1.1
+4bfc1b881|Georgi Valkov|Wed Jun 11 12:59:34 2025 +0300|libimobiledevice-glue: update to 1.3.2
+a85d43c0a|Georgi Valkov|Wed Jun 11 13:54:51 2025 +0300|libtatsu: update to 1.0.5
+8c3676cf6|Georgi Valkov|Wed Jun 11 12:49:52 2025 +0300|libplist: update to 2.7.0
+f238d6dd0|John Audia|Tue Jul 22 20:05:48 2025 -0400|dbus: run as regular user rather than as root
+ca8cbaa30|Sandro Jäckel|Wed Jul 30 18:39:46 2025 +0200|tailscale: update to 1.86.2
+7319072d1|Tianling Shen|Thu Jul 31 13:59:39 2025 +0800|yq: Update to 4.47.1
+dd6e44068|Tianling Shen|Thu Jul 31 13:59:21 2025 +0800|openlist: Update to 4.0.9
 </details>
