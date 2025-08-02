@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-06cef86|A-BO|Thu Jul 31 20:46:43 2025 +0800|luci: optimize rule update
+f0cc846|zhusir|Sat Aug 2 00:38:17 2025 +0800|action: fixed build error
+01ea85e|A-BO|Fri Aug 1 13:04:56 2025 +0800|luci: bump to 25.8.1
+feb1ba0|lwb1978|Fri Aug 1 11:55:47 2025 +0800|luci: update readme
 </details>

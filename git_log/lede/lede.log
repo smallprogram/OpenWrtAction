@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d6864e852|FUKAUMI Naoki|Thu Aug 15 06:49:13 2024 +0900|rockchip: add more Radxa boards
+d26e71663|Álvaro Fernández Rojas|Fri May 9 08:59:41 2025 +0200|kernel: add KERNEL_ARM64_CONTPTE
 </details>

@@ -1,0 +1,11 @@
+<details> <summary> <b>luci new commit log :rocket: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+4fcd05f8c0|Paul Donald|Fri Aug 1 23:12:48 2025 +0200|github: update TOH links
+a1649fa335|Stan Grishin|Fri Aug 1 13:32:12 2025 -0500|Merge pull request #7880 from stangri/master-luci-app-adblock-fast
+e405ab0bf9|Stan Grishin|Fri Aug 1 13:31:46 2025 -0500|Merge pull request #7879 from stangri/master-luci-app-pbr
+3ec92523dc|Paul Donald|Fri Aug 1 15:33:40 2025 +0200|luci-base: jsdoc RangeSlider
+c26b8f28fe|Stan Grishin|Fri Aug 1 01:42:12 2025 +0000|luci-app-adblock-fast: sync with principal package
+6b4d69723c|Stan Grishin|Fri Aug 1 01:40:51 2025 +0000|luci-app-pbr: sync with principal package
+</details>

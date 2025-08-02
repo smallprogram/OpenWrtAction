@@ -2,14 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-40ad990ebf|Nick Hainke|Thu Jul 31 18:05:07 2025 +0200|gettext-full: fix m4 path after gettextize update
-40d70c9c81|Markus Stockhausen|Sun Jul 27 07:31:11 2025 -0400|realtek: dsa: do not open code PHY access
-960ad676c1|Harshal Gohel|Tue Jul 15 19:05:12 2025 +0200|realtek: rtl931x: Fix printing of port matrix
-b61fda1035|Harshal Gohel|Mon Jul 14 10:56:33 2025 +0200|realtek: rtl931x: Update irq mask to cover all ports
-f51b54bc95|Harshal Gohel|Wed Jun 18 11:35:15 2025 +0000|realtek: rtl931x: Fix traffic on upper ports
-656312f9b7|Harshal Gohel|Fri Jul 25 13:50:36 2025 +0200|realtek: rtl930x: Fix bringup of SFP modules
-1de1df1bea|Daniel Golle|Thu Jul 31 19:48:32 2025 +0100|kernel: add backport to fix broken PHY LEDs
-8873e26c68|Felix Fietkau|Thu Jul 31 17:31:13 2025 +0200|ucode-mod-bpf: add support for passing classid for tc attached programs
-9ec4060962|Felix Fietkau|Thu Jul 31 17:30:58 2025 +0200|libbpf: add support for passing classid for tc attached programs
-e15d5cf752|Rosen Penev|Tue Jul 29 13:46:18 2025 -0700|tools/util-linux: build with meson
+3544a06766|Stefan Kalscheuer|Fri Aug 1 14:57:27 2025 +0200|uboot-mvebu: update to version 2025.07
+682de550a0|Christian Korber|Wed May 21 14:36:00 2025 +0200|hostapd: fix logging of configuration content
+765d6429e1|John Audia|Mon Jul 28 15:18:01 2025 -0400|util-linux: add last util
+f13ddfb0cf|FUKAUMI Naoki|Fri Aug 1 07:43:33 2025 +0000|rockchip: Add Realtek RTL8821CU support for the Radxa ROCK Pi E v3
+e3637b202d|Michael Pratt|Fri Aug 1 00:20:48 2025 -0400|tools: util-linux: allow building with 32-bit time
 </details>
