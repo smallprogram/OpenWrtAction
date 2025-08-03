@@ -2,9 +2,18 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3544a06766|Stefan Kalscheuer|Fri Aug 1 14:57:27 2025 +0200|uboot-mvebu: update to version 2025.07
-682de550a0|Christian Korber|Wed May 21 14:36:00 2025 +0200|hostapd: fix logging of configuration content
-765d6429e1|John Audia|Mon Jul 28 15:18:01 2025 -0400|util-linux: add last util
-f13ddfb0cf|FUKAUMI Naoki|Fri Aug 1 07:43:33 2025 +0000|rockchip: Add Realtek RTL8821CU support for the Radxa ROCK Pi E v3
-e3637b202d|Michael Pratt|Fri Aug 1 00:20:48 2025 -0400|tools: util-linux: allow building with 32-bit time
+a2c361c520|Felix Fietkau|Sun Aug 3 06:50:23 2025 +0200|hostapd: add missing MLO check on ucode bss stop
+da370c7b96|Felix Fietkau|Sun Aug 3 06:20:41 2025 +0200|netifd: update to Git HEAD (2025-08-03)
+991dd403d3|Felix Fietkau|Tue Jul 15 12:56:57 2025 +0200|kernel: improve pppoe performance
+f0746741f8|Hauke Mehrtens|Sun Aug 3 01:07:33 2025 +0200|tools: firmware-utils: update to Git HEAD (2025-08-03)
+ba76da4fe9|Michael Pratt|Sat Aug 2 04:12:17 2025 -0400|tools: gnulib: do not cache C standard option test results
+287f1ea3dd|Felix Fietkau|Sat Aug 2 17:43:26 2025 +0200|wifi-scripts: ucode: fix ssid handling
+3786d15561|Felix Fietkau|Sat Jul 5 20:45:48 2025 +0200|hostapd: fix bss config reload while in DFS state
+217c315423|Felix Fietkau|Fri Jun 27 22:42:30 2025 +0200|wifi-scripts: ucode: add MLO interface support
+816c2d86e7|Felix Fietkau|Sun Jul 6 18:50:00 2025 +0200|hostapd: add support for MLO interfaces in ucode
+be2916b1d4|Felix Fietkau|Thu Jun 26 14:36:10 2025 +0200|hostapd: remove unnecessary ucv_gc calls
+bcd3d62834|Felix Fietkau|Thu Jun 26 12:54:36 2025 +0200|hostapd: maintain ucode hostapd.bss list per interface
+96fa769937|Felix Fietkau|Sat Aug 2 16:45:39 2025 +0200|netifd: update to Git HEAD (2025-08-02)
+042996b46b|Felix Fietkau|Mon Jul 21 18:32:50 2025 +0200|build: stricter hash validation on download
+9dddc0bed0|Markus Stockhausen|Wed Jul 30 06:41:28 2025 -0400|realtek: mdio: RTL838x: create new SerDes phy register layout
 </details>

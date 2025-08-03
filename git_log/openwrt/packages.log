@@ -2,16 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-78bdf21e7|John Audia|Fri Aug 1 10:12:05 2025 -0400|dbus: use pid file owned by dbus
-a94c5fac4|Stan Grishin|Fri Aug 1 01:20:52 2025 +0000|adblock-fast: update to 1.1.4-4
-f5381d849|Stan Grishin|Fri Aug 1 01:04:35 2025 +0000|pbr: update to 1.1.8-32
-642378125|Etienne Champetier|Fri Jun 27 19:18:55 2025 -0400|mwan3: reimplement rpcd plugin using ucode
-bfdbacca5|Etienne Champetier|Fri Jun 27 19:18:54 2025 -0400|mwan3: remove call to network_is_up
-a6a7f0b21|Etienne Champetier|Fri Jun 27 19:18:52 2025 -0400|mwan3: return via variable
-ecd2470dd|Etienne Champetier|Fri Jun 27 19:18:51 2025 -0400|mwan3: replace $(cat ..) with readfile
-de98fdebe|Etienne Champetier|Fri Jun 27 19:18:49 2025 -0400|mwan3: remove pgrep usage
-f93b00fa6|Etienne Champetier|Fri Jul 11 17:23:28 2025 -0400|mwan3: add new readfile function to speedup variable read from file
-50be11c61|Etienne Champetier|Fri Jun 27 19:18:47 2025 -0400|mwan3: simplify how we kill subprocs
-68c60fdc5|Liangbin Lian|Fri Aug 1 11:40:20 2025 +0800|openlist: Remove dependency on fuse
-b606b58ac|John Audia|Tue Jul 15 10:05:43 2025 -0400|nfs-kernel-server: fix build
+de9092585|Tianling Shen|Sat Aug 2 17:28:27 2025 +0800|rpcsvc-proto: Update to 1.4.4
+35209ac24|John Audia|Fri Aug 1 16:05:50 2025 -0400|modemmanager: change permissions on dbus file
+125bee220|Rosen Penev|Sun Jul 27 11:09:18 2025 -0700|screen: update to 5.0.1
 </details>

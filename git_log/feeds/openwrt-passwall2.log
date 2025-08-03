@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dc83928|zhusir|Sat Aug 2 00:39:54 2025 +0800|action: fixed build error (#853)
+afb99c6|Jarao|Sat Aug 2 14:44:32 2025 +0800|luci: fix: IPv6 firewall set IPv4 rules (#849)
 </details>

@@ -1,9 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b>  </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-622d0d52d2|Tianling Shen|Fri Aug 1 20:39:20 2025 +0800|luci-app-cifs-mount: improve migrate mount options
-5f6498d0ee|Tianling Shen|Fri Aug 1 19:35:51 2025 +0800|luci-app-cifs-mount: rewrite into JS
-3b277e7dd6|Tianling Shen|Fri Aug 1 16:23:15 2025 +0800|luci-app-cifs: drop duplicated package
-7d23156c76|SakuraFallingMad|Thu Jul 17 08:42:21 2025 +0800|luci-app-passwall: bump to 25.8.1
-</details>
