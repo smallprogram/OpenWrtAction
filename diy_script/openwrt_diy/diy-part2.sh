@@ -25,10 +25,11 @@ if [ "$GITHUB_ACTIONS" = "true" ] && [ -n "$GITHUB_RUN_ID" ] && [ -n "$GITHUB_WO
     # https://github.com/openwrt/packages/pull/27133
     # rpcsvc-proto: fix build with autotools gettext macros 0.22
     # cp -r $GITHUB_WORKSPACE/patches/rpcsvc-proto/* ./feeds/packages/libs/rpcsvc-proto
+    echo "Patches applied from GitHub Actions workspace."
 else
     # https://github.com/openwrt/packages/pull/27133
     # rpcsvc-proto: fix build with autotools gettext macros 0.22
     # cp -r ../OpenWrtAction/patches/rpcsvc-proto/* ./feeds/packages/libs/rpcsvc-proto
+    echo "Patches applied from local OpenWrtAction repository."
 fi
-
 echo "DIY2 is complate!"
