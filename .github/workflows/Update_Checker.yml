@@ -45,23 +45,25 @@ jobs:
       id: getHash
       run: |
         chmod +x $UPDATE_CHECKER
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/immortalwrt/immortalwrt" "01"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/immortalwrt/packages" "02"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/immortalwrt/luci" "03"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/coolsnowwolf/lede" "04"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/coolsnowwolf/packages" "05"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/coolsnowwolf/luci" "06"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/openwrt" "07"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/packages" "08"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/luci" "09"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/routing" "10"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/telephony" "11"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/xiaorouji/openwrt-passwall-packages" "12"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/xiaorouji/openwrt-passwall" "13"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/xiaorouji/openwrt-passwall2" "14"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/fw876/helloworld" "15"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/vernesong/OpenClash" "16"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/nikkinikki-org/OpenWrt-nikki" "17"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/openwrt" "openwrt-24.10" "01"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/packages" "openwrt-24.10" "02"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/luci" "openwrt-24.10" "03"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/routing" "openwrt-24.10" "04"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/telephony" "openwrt-24.10" "05"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/immortalwrt/immortalwrt" "openwrt-24.10" "06"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/immortalwrt/packages" "openwrt-24.10" "07"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/immortalwrt/luci" "openwrt-24.10" "08"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/coolsnowwolf/lede" "" "09"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/coolsnowwolf/packages" "" "10"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/coolsnowwolf/luci" "openwrt-23.05" "11"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/coolsnowwolf/routing" "" "12"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/coolsnowwolf/telephony" "" "13"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/xiaorouji/openwrt-passwall-packages" "" "14"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/xiaorouji/openwrt-passwall" "" "15"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/xiaorouji/openwrt-passwall2" "" "16"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/fw876/helloworld" "" "17"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/vernesong/OpenClash" "" "18"
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/nikkinikki-org/OpenWrt-nikki" "" "19"
              
     - name: Show Commit Head and Combination Heads
       id: combHeader
@@ -83,7 +85,9 @@ jobs:
         ${{steps.getHash.outputs.SHA_14}}\
         ${{steps.getHash.outputs.SHA_15}}\
         ${{steps.getHash.outputs.SHA_16}}\
-        ${{steps.getHash.outputs.SHA_17}}" >> $GITHUB_OUTPUT
+        ${{steps.getHash.outputs.SHA_17}}\
+        ${{steps.getHash.outputs.SHA_18}}\
+        ${{steps.getHash.outputs.SHA_19}}" >> $GITHUB_OUTPUT
 
     - name: Compare Commit Hash
       id: cacheHash

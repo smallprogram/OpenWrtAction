@@ -3,26 +3,28 @@ release_tag=$1
 git_folders=(openwrt immortalwrt lede feeds)
 
 openwrt_REPO_URLS=(
-    "https://github.com/openwrt/openwrt"
-    "https://github.com/openwrt/packages"
-    "https://github.com/openwrt/luci"
+    "https://github.com/openwrt/openwrt -b openwrt-24.10"
+    "https://github.com/openwrt/packages -b openwrt-24.10"
+    "https://github.com/openwrt/luci -b openwrt-24.10"
+    "https://github.com/openwrt/routing -b openwrt-24.10"
+    "https://github.com/openwrt/telephony -b openwrt-24.10"
 )
 
 immortalwrt_REPO_URLS=(
-    "https://github.com/immortalwrt/immortalwrt"
-    "https://github.com/immortalwrt/packages"
-    "https://github.com/immortalwrt/luci"
+    "https://github.com/immortalwrt/immortalwrt -b openwrt-24.10"
+    "https://github.com/immortalwrt/packages -b openwrt-24.10"
+    "https://github.com/immortalwrt/luci -b openwrt-24.10"
 )
 
 lede_REPO_URLS=(
     "https://github.com/coolsnowwolf/lede"
     "https://github.com/coolsnowwolf/packages"
-    "https://github.com/coolsnowwolf/luci"
+    "https://github.com/coolsnowwolf/luci -b openwrt-24.10"
+    "https://github.com/coolsnowwolf/routing"
+    "https://github.com/coolsnowwolf/telephony"
 )
 
 feeds_REPO_URLS=(
-    "https://github.com/openwrt/routing"
-    "https://github.com/openwrt/telephony"
     "https://github.com/fw876/helloworld"
     "https://github.com/xiaorouji/openwrt-passwall-packages"
     "https://github.com/xiaorouji/openwrt-passwall"
@@ -37,7 +39,7 @@ cd $GITHUB_WORKSPACE
 echo "[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/$release_tag/total?style=flat-square)](https://github.com/smallprogram/MyAction)"> release.txt
 echo "">> release.txt
 echo "## Source Code Information">> release.txt
-echo "[![](https://img.shields.io/badge/source-immortalwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt) [![](https://img.shields.io/badge/source-lean-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede) [![](https://img.shields.io/badge/source-openwrt-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)">> release.txt
+echo "[![](https://img.shields.io/badge/source-openwrt_24.10-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt) [![](https://img.shields.io/badge/source-immortalwrt_24.10-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt) [![](https://img.shields.io/badge/source-lean_SNAPSHOT-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede)">> release.txt
 echo "">>release.txt
 echo "## Build Information">>release.txt
 

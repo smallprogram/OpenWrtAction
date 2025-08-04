@@ -30,7 +30,7 @@
 
 </div> -->
 
-[![](https://img.shields.io/badge/source-openwrt-blue?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)
+[![](https://img.shields.io/badge/source-openwrt_24.10-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)
  ```
 
   _______                     ________        __
@@ -44,7 +44,7 @@
 
 ```
 
-[![](https://img.shields.io/badge/source-immortalwrt-blue?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt)
+[![](https://img.shields.io/badge/source-immortalwrt_24.10-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt)
 ```
 .___                               __         .__
 |   | _____   _____   ____________/  |______  |  |
@@ -57,7 +57,7 @@
  -------------------------------------------------------------------------
 ```
 
- [![](https://img.shields.io/badge/source-lean-blue?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede)
+[![](https://img.shields.io/badge/source-lean_SNAPSHOT-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede)
 
 ```
      _________
