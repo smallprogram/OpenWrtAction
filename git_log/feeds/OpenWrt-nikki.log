@@ -1,0 +1,7 @@
+<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b>  </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+72f7333|Joseph Mory|Sun Aug 3 14:47:05 2025 +0800|chore: code style
+5f098bd|Joseph Mory|Sun Aug 3 14:45:17 2025 +0800|fix: accept tun traffic should depends on `core only` and `proxy enabled`
+</details>

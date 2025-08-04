@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f59fb5f|A-BO|Sun Aug 3 12:20:47 2025 +0800|luci: update readme
-1680b52|A-BO|Sat Aug 2 18:20:22 2025 +0800|luci: rule update support generating rules from geo files
+0f4a5d2|A-BO|Sun Aug 3 21:53:50 2025 +0800|luci: improve the logic for deleting nodes
+104ead7|A-BO|Sun Aug 3 14:08:38 2025 +0800|luci: add sing-box fragmentation support (1.12 or later)
+6657449|A-BO|Sun Aug 3 14:02:04 2025 +0800|luci: fix `util_xray` variable errors
 </details>
