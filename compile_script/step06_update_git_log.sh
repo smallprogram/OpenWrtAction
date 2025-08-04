@@ -140,9 +140,9 @@ for git_folder in "${git_folders[@]}"; do
             echo "     |-----------------------------------|"
             sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" "git_log/$git_folder/log"
             UPDATE_COUNT=$((UPDATE_COUNT + 1))
-        else
-            # 没有更新的情况，生成默认日志
-            echo "<b>No new commits for $OUTPUT_FILE.  :zzz: </b>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+        # else
+        #     # 没有更新的情况，生成默认日志
+        #     echo "<b>No new commits for $OUTPUT_FILE.  :zzz: </b>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
         fi
 
         # 将生成的 .log 文件追加到 release.txt
