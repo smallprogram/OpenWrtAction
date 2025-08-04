@@ -1,0 +1,3 @@
+immortalwrt -b openwrt-24.10:
+packages -b openwrt-24.10:
+luci -b openwrt-24.10:
