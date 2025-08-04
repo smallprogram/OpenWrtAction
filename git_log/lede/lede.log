@@ -1,0 +1,8 @@
+<details> <summary> <b>lede new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b1a32ae53|coolsnowwolf|Mon Aug 4 15:26:47 2025 +0800|Version update to R25.8.8
+c63f4459a|coolsnowwolf|Mon Aug 4 15:23:53 2025 +0800|kernel: bump 6.x to latest HEAD
+99acf0dbd|coolsnowwolf|Sun Aug 3 18:30:20 2025 +0800|qualcommax: update nss configuration
+</details>

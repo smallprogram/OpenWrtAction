@@ -1,0 +1,13 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+155eea44e7|jinkela air|Sun Jun 22 10:13:56 2025 +0800|mediatek: Ruijie RG-X60 Pro: Fix LAN port status light
+4941509f57|Hauke Mehrtens|Thu Jul 3 21:37:39 2025 +0200|uhttpd: update to Git HEAD (2025-07-06)
+4c1a6ecb44|Hauke Mehrtens|Sat Jul 12 00:55:38 2025 +0200|kernel: Fix boot of amrsr target in qemu
+8ee468ff68|Tomasz Maciej Nowak|Wed Jun 18 18:59:29 2025 +0200|tegra: bring back workaround for spurious interrupts
+ecb35b36fa|Jan Hoffmann|Thu Jul 10 17:37:02 2025 +0200|ltq-*-app: correctly report downstream band borders
+05a1a71530|Hauke Mehrtens|Sun Jul 27 14:19:19 2025 +0200|toolchain: glibc: Update glibc 2.38 to recent HEAD
+7230ddb06b|Hauke Mehrtens|Sun Jul 20 17:46:05 2025 +0200|wireless-regdb: Update to version 2025.07.10
+bfed41cc6a|Petr Štetiar|Mon Jun 9 15:44:44 2025 +0000|busybox: fix login applet on selinux
+</details>
