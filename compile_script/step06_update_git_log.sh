@@ -83,62 +83,69 @@ for git_folder in "${git_folders[@]}"; do
 
     UPDATE_COUNT=0
     for url in "${repo_urls[@]}"; do
-        
         OUTPUT_FILE="${url##*/}"
         TITLE_MESSAGE="${url##*/} new commit log"
 
-        SHA_Begin=$(grep "^${OUTPUT_FILE}:" git_log/${git_folder}/log | cut -d: -f2)
-        echo ""
+        # 获取最新的 SHA
+        git clone $url --filter=blob:none git_repositories/$git_folder/$OUTPUT_FILE
+        SHA_End=$(git -C git_repositories/$git_folder/$OUTPUT_FILE rev-parse HEAD)
         echo "$git_folder-$OUTPUT_FILE Begin git log update-----------------------------------------------------------"
-        echo "SHABegin:$SHA_Begin"
-
-        if [[ "$git_folder" == "feeds" ]]; then
-            SHA_End=$(grep "^${OUTPUT_FILE}:" git_log_immortalwrt.txt | cut -d: -f2)
-        else
-            SHA_End=$(grep "^${OUTPUT_FILE}:" git_log_${git_folder}.txt | cut -d: -f2)
-        fi
         echo "SHAEnd:$SHA_End"
 
-        git clone $url --filter=blob:none git_repositories/$git_folder/$OUTPUT_FILE
+        # 检查 log 文件是否存在且是否包含 OUTPUT_FILE 条目
+        SHA_Begin=$(grep "^${OUTPUT_FILE}:" git_log/${git_folder}/log | cut -d: -f2)
+        echo "SHABegin:$SHA_Begin"
 
-        if ! git -C git_repositories/$git_folder/$OUTPUT_FILE cat-file -t "$SHA_Begin" >/dev/null 2>&1 ||
-            ! git -C git_repositories/$git_folder/$OUTPUT_FILE cat-file -t "$SHA_End" >/dev/null 2>&1; then
-            sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" git_log/$git_folder/log
+        # 如果 log 文件不存在或为空，或者没有 OUTPUT_FILE 条目，初始化 log 文件
+        if [ ! -f "git_log/$git_folder/log" ] || ! grep -q "^${OUTPUT_FILE}:" "git_log/$git_folder/log"; then
+            echo "${OUTPUT_FILE}:${SHA_End}" >> "git_log/$git_folder/log"
+            SHA_Begin=""
+        fi
 
+        # 检查 SHA 是否有效
+        if ! git -C git_repositories/$git_folder/$OUTPUT_FILE cat-file -t "$SHA_Begin" >/dev/null 2>&1 && [ -n "$SHA_Begin" ]; then
             echo "     :x: Invalid SHA detected (Begin: $SHA_Begin, End: $SHA_End) for $OUTPUT_FILE"
-            echo "<details> <summary> <b>$TITLE_MESSAGE :x: </b>  </summary>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            echo "<details> <summary> <b>$TITLE_MESSAGE :x: </b> </summary>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "<b> It is detected that $OUTPUT_FILE has an illegal SHA value. It is possible that $OUTPUT_FILE has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "</details>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
-            continue
-        fi
-
-        if [ -z "$SHA_Begin" ]; then
             sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" git_log/$git_folder/log
-        elif [ "$SHA_Begin" != "$SHA_End" ]; then
-            echo "<details> <summary> <b>$TITLE_MESSAGE :rocket: </b>  </summary>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            UPDATE_COUNT=$((UPDATE_COUNT + 1))
+        elif [ -z "$SHA_Begin" ] || [ "$SHA_Begin" != "$SHA_End" ]; then
+            echo "<details> <summary> <b>$TITLE_MESSAGE :rocket: </b> </summary>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
-            echo "SHA|Author|Date|Message" >>"git_log/$git_folder/$OUTPUT_FILE.log"
-            echo "-|-|-|-" >>"git_log/$git_folder/$OUTPUT_FILE.log"
-            git -C git_repositories/$git_folder/$OUTPUT_FILE log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            if [ -z "$SHA_Begin" ]; then
+                echo "<b>Initial commit log for $OUTPUT_FILE, no previous SHA.</b>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            else
+                echo "SHA|Author|Date|Message" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+                echo "-|-|-|-" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+                git -C git_repositories/$git_folder/$OUTPUT_FILE log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            fi
             echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "</details>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "     |-----------------------------------|"
             echo "     $OUTPUT_FILE has update log"
             echo "     |-----------------------------------|"
             sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" git_log/$git_folder/log
+            UPDATE_COUNT=$((UPDATE_COUNT + 1))
+        else
+            # 没有更新的情况，生成默认日志
+            echo "<details> <summary> <b>$TITLE_MESSAGE :zzz: </b> </summary>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            echo "<b>No new commits for $OUTPUT_FILE.</b>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            echo "</details>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
         fi
 
+        # 将生成的 .log 文件追加到 release.txt
         if [ -f "git_log/$git_folder/$OUTPUT_FILE.log" ]; then
             echo "found file $OUTPUT_FILE.log!"
             cat "git_log/$git_folder/$OUTPUT_FILE.log" >>release.txt
-            UPDATE_COUNT=$((UPDATE_COUNT + 1))
         else
             echo "no file $OUTPUT_FILE.log 404"
-        fi  
-        echo "$git_folder-$OUTPUT_FILE complate git log update-----------------------------------------------------------"
-
+        fi
+        echo "$git_folder-$OUTPUT_FILE complete git log update-----------------------------------------------------------"
         echo "==========================================================================================================="
         echo ""
         echo ""
