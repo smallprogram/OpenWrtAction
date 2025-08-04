@@ -19,7 +19,7 @@ immortalwrt_REPO_URLS=(
 lede_REPO_URLS=(
     "https://github.com/coolsnowwolf/lede"
     "https://github.com/coolsnowwolf/packages"
-    "https://github.com/coolsnowwolf/luci -b openwrt-24.10"
+    "https://github.com/coolsnowwolf/luci -b openwrt-23.05"
     "https://github.com/coolsnowwolf/routing"
     "https://github.com/coolsnowwolf/telephony"
 )
