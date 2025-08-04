@@ -142,11 +142,7 @@ for git_folder in "${git_folders[@]}"; do
             UPDATE_COUNT=$((UPDATE_COUNT + 1))
         else
             # 没有更新的情况，生成默认日志
-            echo "<details> <summary> <b>$TITLE_MESSAGE :zzz: </b> </summary>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
-            echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
-            echo "<b>No new commits for $OUTPUT_FILE.</b>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
-            echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
-            echo "</details>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+            echo "<b>No new commits for $OUTPUT_FILE.  :zzz: </b>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
         fi
 
         # 将生成的 .log 文件追加到 release.txt
