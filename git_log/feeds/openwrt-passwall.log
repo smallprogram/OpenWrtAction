@@ -1,9 +1,1 @@
-<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-3ce0762|A-BO|Mon Aug 4 22:13:44 2025 +0800|luci: bump to 25.8.5
-0f4a5d2|A-BO|Sun Aug 3 21:53:50 2025 +0800|luci: improve the logic for deleting nodes
-104ead7|A-BO|Sun Aug 3 14:08:38 2025 +0800|luci: add sing-box fragmentation support (1.12 or later)
-6657449|A-BO|Sun Aug 3 14:02:04 2025 +0800|luci: fix `util_xray` variable errors
-</details>
+<b>No new commits for openwrt-passwall.  :zzz: </b>
