@@ -3,23 +3,23 @@ release_tag=$1
 git_folders=(openwrt immortalwrt lede feeds)
 
 openwrt_REPO_URLS=(
-    "https://github.com/openwrt/openwrt -b openwrt-24.10"
-    "https://github.com/openwrt/packages -b openwrt-24.10"
-    "https://github.com/openwrt/luci -b openwrt-24.10"
-    "https://github.com/openwrt/routing -b openwrt-24.10"
-    "https://github.com/openwrt/telephony -b openwrt-24.10"
+    "https://github.com/openwrt/openwrt openwrt-24.10"
+    "https://github.com/openwrt/packages openwrt-24.10"
+    "https://github.com/openwrt/luci openwrt-24.10"
+    "https://github.com/openwrt/routing openwrt-24.10"
+    "https://github.com/openwrt/telephony openwrt-24.10"
 )
 
 immortalwrt_REPO_URLS=(
-    "https://github.com/immortalwrt/immortalwrt -b openwrt-24.10"
-    "https://github.com/immortalwrt/packages -b openwrt-24.10"
-    "https://github.com/immortalwrt/luci -b openwrt-24.10"
+    "https://github.com/immortalwrt/immortalwrt openwrt-24.10"
+    "https://github.com/immortalwrt/packages openwrt-24.10"
+    "https://github.com/immortalwrt/luci openwrt-24.10"
 )
 
 lede_REPO_URLS=(
     "https://github.com/coolsnowwolf/lede"
     "https://github.com/coolsnowwolf/packages"
-    "https://github.com/coolsnowwolf/luci -b openwrt-23.05"
+    "https://github.com/coolsnowwolf/luci openwrt-23.05"
     "https://github.com/coolsnowwolf/routing"
     "https://github.com/coolsnowwolf/telephony"
 )
@@ -33,15 +33,16 @@ feeds_REPO_URLS=(
     "https://github.com/nikkinikki-org/OpenWrt-nikki"
 )
 
-
 cd $GITHUB_WORKSPACE
 
+# 初始化 release.txt
 echo "[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/$release_tag/total?style=flat-square)](https://github.com/smallprogram/MyAction)"> release.txt
+
 echo "">> release.txt
 echo "## Source Code Information">> release.txt
 echo "[![](https://img.shields.io/badge/source-openwrt_24.10-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt) [![](https://img.shields.io/badge/source-immortalwrt_24.10-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt) [![](https://img.shields.io/badge/source-lean_SNAPSHOT-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede)">> release.txt
 echo "">>release.txt
-echo "## Build Information">>release.txt
+echo "## Build Information">> release.txt
 
 echo "<table>">>release.txt
 echo "  <tr>">>release.txt
@@ -63,7 +64,8 @@ echo "</table>">>release.txt
 echo "">>release.txt
 echo "## What's Changed" >>release.txt
 echo "">>release.txt
-# 删掉git_log目录和子目录中的除了log文件以外的所有文件
+
+# 清理 git_log 目录中的非 log 文件
 find git_log -type f ! -name 'log' -exec rm {} +
 mkdir -p git_repositories
 
@@ -83,17 +85,26 @@ for git_folder in "${git_folders[@]}"; do
 
     UPDATE_COUNT=0
     for url in "${repo_urls[@]}"; do
-        OUTPUT_FILE="${url##*/}"
-        TITLE_MESSAGE="${url##*/} new commit log"
+        # 分离 URL 和分支
+        REPO_URL=$(echo "$url" | awk '{print $1}')
+        BRANCH=$(echo "$url" | awk '{print $2}')
+        OUTPUT_FILE="${REPO_URL##*/}"
+        TITLE_MESSAGE="${OUTPUT_FILE} new commit log"
 
-        # 获取最新的 SHA
-        git clone $url --filter=blob:none git_repositories/$git_folder/$OUTPUT_FILE
-        SHA_End=$(git -C git_repositories/$git_folder/$OUTPUT_FILE rev-parse HEAD)
+        # 克隆仓库
+        if [ -n "$BRANCH" ]; then
+            git clone "$REPO_URL" --filter=blob:none --branch "$BRANCH" "git_repositories/$git_folder/$OUTPUT_FILE"
+        else
+            git clone "$REPO_URL" --filter=blob:none "git_repositories/$git_folder/$OUTPUT_FILE"
+        fi
+
+        # 获取最新 SHA
+        SHA_End=$(git -C "git_repositories/$git_folder/$OUTPUT_FILE" rev-parse HEAD)
         echo "$git_folder-$OUTPUT_FILE Begin git log update-----------------------------------------------------------"
         echo "SHAEnd:$SHA_End"
 
         # 检查 log 文件是否存在且是否包含 OUTPUT_FILE 条目
-        SHA_Begin=$(grep "^${OUTPUT_FILE}:" git_log/${git_folder}/log | cut -d: -f2)
+        SHA_Begin=$(grep "^${OUTPUT_FILE}:" "git_log/${git_folder}/log" | cut -d: -f2)
         echo "SHABegin:$SHA_Begin"
 
         # 如果 log 文件不存在或为空，或者没有 OUTPUT_FILE 条目，初始化 log 文件
@@ -103,14 +114,14 @@ for git_folder in "${git_folders[@]}"; do
         fi
 
         # 检查 SHA 是否有效
-        if ! git -C git_repositories/$git_folder/$OUTPUT_FILE cat-file -t "$SHA_Begin" >/dev/null 2>&1 && [ -n "$SHA_Begin" ]; then
+        if ! git -C "git_repositories/$git_folder/$OUTPUT_FILE" cat-file -t "$SHA_Begin" >/dev/null 2>&1 && [ -n "$SHA_Begin" ]; then
             echo "     :x: Invalid SHA detected (Begin: $SHA_Begin, End: $SHA_End) for $OUTPUT_FILE"
             echo "<details> <summary> <b>$TITLE_MESSAGE :x: </b> </summary>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "<b> It is detected that $OUTPUT_FILE has an illegal SHA value. It is possible that $OUTPUT_FILE has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "</details>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
-            sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" git_log/$git_folder/log
+            sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" "git_log/$git_folder/log"
             UPDATE_COUNT=$((UPDATE_COUNT + 1))
         elif [ -z "$SHA_Begin" ] || [ "$SHA_Begin" != "$SHA_End" ]; then
             echo "<details> <summary> <b>$TITLE_MESSAGE :rocket: </b> </summary>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
@@ -120,14 +131,14 @@ for git_folder in "${git_folders[@]}"; do
             else
                 echo "SHA|Author|Date|Message" >>"git_log/$git_folder/$OUTPUT_FILE.log"
                 echo "-|-|-|-" >>"git_log/$git_folder/$OUTPUT_FILE.log"
-                git -C git_repositories/$git_folder/$OUTPUT_FILE log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+                git -C "git_repositories/$git_folder/$OUTPUT_FILE" log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             fi
             echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "</details>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "     |-----------------------------------|"
             echo "     $OUTPUT_FILE has update log"
             echo "     |-----------------------------------|"
-            sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" git_log/$git_folder/log
+            sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" "git_log/$git_folder/log"
             UPDATE_COUNT=$((UPDATE_COUNT + 1))
         else
             # 没有更新的情况，生成默认日志
@@ -154,9 +165,7 @@ for git_folder in "${git_folders[@]}"; do
     if [ "$UPDATE_COUNT" -eq 0 ]; then
         echo "No source code updates...... :zzz:">>release.txt
     fi
-  
 done
-
 
 cd $GITHUB_WORKSPACE
 find . -type f -name "*.txt" ! -name "release.txt" -exec rm {} +
