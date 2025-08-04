@@ -1,5 +1,0 @@
-openwrt -b openwrt-24.10:
-packages -b openwrt-24.10:
-luci -b openwrt-24.10:
-routing -b openwrt-24.10:
-telephony -b openwrt-24.10:
