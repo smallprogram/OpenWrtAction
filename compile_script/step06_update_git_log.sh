@@ -1,5 +1,5 @@
 #!/bin/bash
-source $GITHUB_WORKSPACE/compile_script/main_add_feeds_url.sh
+source $GITHUB_WORKSPACE/compile_script/main_and_feeds_url.sh
 release_tag=$1
 git_folders=(openwrt immortalwrt lede feeds)
 

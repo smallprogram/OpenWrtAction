@@ -1,5 +1,5 @@
 #!/bin/bash
-source $GITHUB_WORKSPACE/compile_script/main_add_feeds_url.sh
+source $GITHUB_WORKSPACE/compile_script/main_and_feeds_url.sh
 
 # 定义一个字符串变量用于累加 hash 值
 HASH_STRING=""
