@@ -21,6 +21,7 @@ process_repo() {
     local repo_url="$1"
     local repo_branch="$2"
     local platform="$3"
+    repo_url="${repo_url%.git}" # 移除.git后缀
     echo "platform $platform: clone $repo_url（branch: $repo_branch）"
     local temp_dir="temp_clone_$platform"
     mkdir -p "$temp_dir"
@@ -64,6 +65,7 @@ process_repo() {
         # 3. 解析 src-git 行
         if [[ "$line" =~ ^src-git[[:space:]]+[^[:space:]]+[[:space:]]+(https?://[^[:space:];]+)(;[^[:space:]]+)?$ ]]; then
             url="${BASH_REMATCH[1]}"
+            url="${url%.git}" # 移除.git后缀
             echo "url:$url"
             branch="${BASH_REMATCH[2]#;}" # 移除分号，空则保持空
             echo "branch:$branch"
