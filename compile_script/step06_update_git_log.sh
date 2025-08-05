@@ -59,6 +59,7 @@ for git_folder in "${git_folders[@]}"; do
         REPO_URL=$(echo "$url" | awk '{print $1}')
         BRANCH=$(echo "$url" | awk '{print $2}')
         OUTPUT_FILE="${REPO_URL##*/}"
+        OUTPUT_FILE="${OUTPUT_FILE%.git}"  # 移除.git后缀
         TITLE_MESSAGE="${OUTPUT_FILE} new commit log"
 
         # 克隆仓库
