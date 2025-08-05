@@ -14,9 +14,9 @@ for url in "${all_REPO_URLS[@]}"; do
     resp="${REPO_URL##*/}"
     # 克隆仓库
     if [ -n "$BRANCH" ]; then
-        git clone "$REPO_URL" --filter=blob:none --branch "$BRANCH" "git_repositories/$git_folder/$OUTPUT_FILE"
+        git clone "$REPO_URL" --filter=blob:none --branch "$BRANCH"
     else
-        git clone "$REPO_URL" --filter=blob:none "git_repositories/$git_folder/$OUTPUT_FILE"
+        git clone "$REPO_URL" --filter=blob:none
     fi
     cd $resp
     # 获取当前仓库的短 hash 并追加到 HASH_STRING，无空格
