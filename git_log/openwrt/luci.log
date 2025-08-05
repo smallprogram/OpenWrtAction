@@ -1,1 +1,7 @@
-<b>No new commits for luci.  :zzz: </b>
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+34a6b92f7e|Stan Grishin|Mon Aug 4 19:59:57 2025 -0700|Merge pull request #7883 from stangri/openwrt-24.10-luci-app-pbr
+213d982a70|Stan Grishin|Fri Aug 1 01:40:51 2025 +0000|luci-app-pbr: sync with principal package
+</details>

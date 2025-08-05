@@ -1,1 +1,7 @@
-<b>No new commits for OpenWrt-nikki.  :zzz: </b>
+<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ffc8f9a|Joseph Mory|Tue Aug 5 17:50:58 2025 +0800|feat: support append proxies by mixin file
+beeeddf|Joseph Mory|Tue Aug 5 13:56:25 2025 +0800|fix: update `PKG_MIRROR_HASH `
+</details>

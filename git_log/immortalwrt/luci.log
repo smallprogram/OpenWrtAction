@@ -1,1 +1,8 @@
-<b>No new commits for luci.  :zzz: </b>
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+586b886c0a|Tianling Shen|Tue Aug 5 16:15:14 2025 +0800|luci-app-homeproxy: bump to latest git HEAD
+fcdfb7463a|SakuraFallingMad|Sat Aug 2 20:55:33 2025 +0800|luci-app-passwall: bump to 25.8.5
+d41503a646|SakuraFallingMad|Thu Jul 17 08:42:21 2025 +0800|luci-app-passwall: bump to 25.8.1
+</details>

@@ -1,1 +1,6 @@
-<b>No new commits for openwrt-passwall-packages.  :zzz: </b>
+<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+7684dd2|georgekart|Tue Aug 5 07:57:00 2025 +0400|sing-box: Remove with_reality_server flag (#484)
+</details>

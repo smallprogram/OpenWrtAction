@@ -1,1 +1,6 @@
-<b>No new commits for lede.  :zzz: </b>
+<details> <summary> <b>lede new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+834e62ff2|coolsnowwolf|Tue Aug 5 16:45:42 2025 +0800|bpftools: update, split off bpftool and libbpf packages
+</details>

@@ -1,1 +1,6 @@
-<b>No new commits for packages.  :zzz: </b>
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d1971a702|Tianling Shen|Tue Aug 5 14:44:24 2025 +0800|vlmcsd: fix mirror hash
+</details>
