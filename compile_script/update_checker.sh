@@ -1,21 +1,32 @@
 #!/bin/bash
+source $GITHUB_WORKSPACE/compile_script/main_add_feeds_url.sh
 
-url=$1
-branch=$2
-num=$3
+# 定义一个字符串变量用于累加 hash 值
+HASH_STRING=""
 
-resp="${url##*/}"
+for url in "${all_REPO_URLS[@]}"; do
+    cd $GITHUB_WORKSPACE
+    mkdir -p TMP_SHA_RESP
+    cd $GITHUB_WORKSPACE/TMP_SHA_RESP
+    # 分离 URL 和分支
+    REPO_URL=$(echo "$url" | awk '{print $1}')
+    BRANCH=$(echo "$url" | awk '{print $2}')
+    resp="${REPO_URL##*/}"
+    # 克隆仓库
+    if [ -n "$BRANCH" ]; then
+        git clone "$REPO_URL" --filter=blob:none --branch "$BRANCH" "git_repositories/$git_folder/$OUTPUT_FILE"
+    else
+        git clone "$REPO_URL" --filter=blob:none "git_repositories/$git_folder/$OUTPUT_FILE"
+    fi
+    cd $resp
+    # 获取当前仓库的短 hash 并追加到 HASH_STRING，无空格
+    CURRENT_HASH=$(git rev-parse --short HEAD)
+    HASH_STRING="${HASH_STRING}${CURRENT_HASH}"
+    
+    cd $GITHUB_WORKSPACE
+    rm -rf TMP_SHA_RESP
+done
 
-cd $GITHUB_WORKSPACE
-mkdir -p TMP_SHA_RESP
-cd $GITHUB_WORKSPACE/TMP_SHA_RESP
-if [ -n "$branch" ]; then
-    git clone $url -b $branch --filter=blob:none
-else
-    git clone $url --filter=blob:none
-fi
-ls
-cd $resp
-echo "SHA_$num=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-cd $GITHUB_WORKSPACE
-rm -rf TMP_SHA_RESP
+# 输出最终的 hash 字符串
+echo "All hashes: $HASH_STRING"
+echo "HASH_STRING=$HASH_STRING" >> $GITHUB_OUTPUT

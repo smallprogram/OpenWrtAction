@@ -45,62 +45,20 @@ jobs:
       id: getHash
       run: |
         chmod +x $UPDATE_CHECKER
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/openwrt" "openwrt-24.10" "01"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/packages" "openwrt-24.10" "02"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/luci" "openwrt-24.10" "03"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/routing" "openwrt-24.10" "04"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/openwrt/telephony" "openwrt-24.10" "05"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/immortalwrt/immortalwrt" "openwrt-24.10" "06"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/immortalwrt/packages" "openwrt-24.10" "07"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/immortalwrt/luci" "openwrt-24.10" "08"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/coolsnowwolf/lede" "" "09"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/coolsnowwolf/packages" "" "10"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/coolsnowwolf/luci" "openwrt-23.05" "11"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/coolsnowwolf/routing" "" "12"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/coolsnowwolf/telephony" "" "13"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/xiaorouji/openwrt-passwall-packages" "" "14"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/xiaorouji/openwrt-passwall" "" "15"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/xiaorouji/openwrt-passwall2" "" "16"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/fw876/helloworld" "" "17"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/vernesong/OpenClash" "" "18"
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER "https://github.com/nikkinikki-org/OpenWrt-nikki" "" "19"
-             
-    - name: Show Commit Head and Combination Heads
-      id: combHeader
-      run: |
-        echo "commitHash_All=\
-        ${{steps.getHash.outputs.SHA_01}}\
-        ${{steps.getHash.outputs.SHA_02}}\
-        ${{steps.getHash.outputs.SHA_03}}\
-        ${{steps.getHash.outputs.SHA_04}}\
-        ${{steps.getHash.outputs.SHA_05}}\
-        ${{steps.getHash.outputs.SHA_06}}\
-        ${{steps.getHash.outputs.SHA_07}}\
-        ${{steps.getHash.outputs.SHA_08}}\
-        ${{steps.getHash.outputs.SHA_09}}\
-        ${{steps.getHash.outputs.SHA_10}}\
-        ${{steps.getHash.outputs.SHA_11}}\
-        ${{steps.getHash.outputs.SHA_12}}\
-        ${{steps.getHash.outputs.SHA_13}}\
-        ${{steps.getHash.outputs.SHA_14}}\
-        ${{steps.getHash.outputs.SHA_15}}\
-        ${{steps.getHash.outputs.SHA_16}}\
-        ${{steps.getHash.outputs.SHA_17}}\
-        ${{steps.getHash.outputs.SHA_18}}\
-        ${{steps.getHash.outputs.SHA_19}}" >> $GITHUB_OUTPUT
+        $GITHUB_WORKSPACE/$UPDATE_CHECKER
 
     - name: Compare Commit Hash
       id: cacheHash
       uses: actions/cache@v4
       with:
         path: .commitHash_All
-        key: HEAD-${{ steps.combHeader.outputs.commitHash_All }}
+        key: HEAD-${{ steps.getHash.outputs.HASH_STRING }}
    
 
     - name: Save New Commit Hash
       if: steps.cacheHash.outputs.cache-hit != 'true'
       run: |
-        echo ${{ steps.combHeader.outputs.commitHash_All }} | tee .commitHash_All
+        echo ${{ steps.getHash.outputs.HASH_STRING }} | tee .commitHash_All
         
     - name: Delete workflow runs
       uses: Mattraks/delete-workflow-runs@main

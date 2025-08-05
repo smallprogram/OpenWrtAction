@@ -1,37 +1,7 @@
 #!/bin/bash
+source $GITHUB_WORKSPACE/compile_script/main_add_feeds_url.sh
 release_tag=$1
 git_folders=(openwrt immortalwrt lede feeds)
-
-openwrt_REPO_URLS=(
-    "https://github.com/openwrt/openwrt openwrt-24.10"
-    "https://github.com/openwrt/packages openwrt-24.10"
-    "https://github.com/openwrt/luci openwrt-24.10"
-    "https://github.com/openwrt/routing openwrt-24.10"
-    "https://github.com/openwrt/telephony openwrt-24.10"
-)
-
-immortalwrt_REPO_URLS=(
-    "https://github.com/immortalwrt/immortalwrt openwrt-24.10"
-    "https://github.com/immortalwrt/packages openwrt-24.10"
-    "https://github.com/immortalwrt/luci openwrt-24.10"
-)
-
-lede_REPO_URLS=(
-    "https://github.com/coolsnowwolf/lede"
-    "https://github.com/coolsnowwolf/packages"
-    "https://github.com/coolsnowwolf/luci openwrt-23.05"
-    "https://github.com/coolsnowwolf/routing"
-    "https://github.com/coolsnowwolf/telephony"
-)
-
-feeds_REPO_URLS=(
-    "https://github.com/fw876/helloworld"
-    "https://github.com/xiaorouji/openwrt-passwall-packages"
-    "https://github.com/xiaorouji/openwrt-passwall"
-    "https://github.com/xiaorouji/openwrt-passwall2"
-    "https://github.com/vernesong/OpenClash"
-    "https://github.com/nikkinikki-org/OpenWrt-nikki"
-)
 
 cd $GITHUB_WORKSPACE
 
