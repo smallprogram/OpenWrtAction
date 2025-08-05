@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# 加载平台配置
+source $GITHUB_WORKSPACE/compile_script/platforms.sh
 # 声明全局数组
 declare -a openwrt_REPO_URLS=()
 declare -a immortalwrt_REPO_URLS=()
@@ -13,10 +15,6 @@ declare -a feeds_REPO_URLS=(
     "https://github.com/vernesong/OpenClash"
     "https://github.com/nikkinikki-org/OpenWrt-nikki"
 )
-
-
-# 加载平台配置
-source platforms.sh
 
 # 处理仓库函数
 process_repo() {
