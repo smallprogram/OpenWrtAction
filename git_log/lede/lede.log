@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-834e62ff2|coolsnowwolf|Tue Aug 5 16:45:42 2025 +0800|bpftools: update, split off bpftool and libbpf packages
+e0d5990cc|coolsnowwolf|Wed Aug 6 03:19:13 2025 +0800|rockchip: fix NanoPi R76S eth port order
 </details>

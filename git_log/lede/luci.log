@@ -1,0 +1,11 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+130096a4|coolsnowwolf|Wed Aug 6 05:00:13 2025 +0800|luci-theme-design: fix login page height
+3bbd3792|coolsnowwolf|Wed Aug 6 04:39:12 2025 +0800|luci-theme-design: fix navi bar color and bg
+296ef702|coolsnowwolf|Wed Aug 6 04:12:40 2025 +0800|luci-theme-design: fix processbar font color and bg
+136b0f14|coolsnowwolf|Wed Aug 6 03:27:49 2025 +0800|luci-theme-design: use defaul fonts for brand
+61515ed6|coolsnowwolf|Wed Aug 6 03:16:12 2025 +0800|luci-theme-design: fix login page style
+c9095857|coolsnowwolf|Wed Aug 6 01:54:53 2025 +0800|luci-theme-design: change to argon mod version
+</details>

@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-74f7fa3|A-BO|Tue Aug 5 12:42:27 2025 +0800|luci: bump to 25.8.5-2
-cfdbd7c|A-BO|Tue Aug 5 12:39:30 2025 +0800|luci: fix typo
+cf197c4|A-BO|Wed Aug 6 00:49:24 2025 +0800|luci: optimize anytls subscribe
+3169369|A-BO|Wed Aug 6 00:15:09 2025 +0800|luci: optimize subscribe log
 </details>
