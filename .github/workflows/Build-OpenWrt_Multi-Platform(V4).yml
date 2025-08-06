@@ -128,7 +128,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git config user.name "smallprogram"
             git config user.email "smallprogram@foxmail.com"
-            git commit -m "Auto update for ${{ matrix.source_code_platform }} configuration"
+            git commit -m "Configuration: update code for ${{ matrix.source_code_platform }}"
 
             git checkout ${{ github.ref_name }}
             git fetch origin
@@ -262,7 +262,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git config user.name "smallprogram"
             git config user.email "smallprogram@foxmail.com"
-            git commit -m "Auto update git log"
+            git commit -m "Git Log: update code"
 
             git checkout ${{ github.ref_name }}
             git fetch origin
