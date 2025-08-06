@@ -1,1 +1,7 @@
-<b>No new commits for packages.  :zzz: </b>
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+033ac85a2|Tianling Shen|Tue Aug 5 22:30:23 2025 +0800|sysuh3c: rewrite daemon file
+a873ba133|Tianling Shen|Tue Aug 5 20:36:02 2025 +0800|gost: Update to 3.2.0
+</details>

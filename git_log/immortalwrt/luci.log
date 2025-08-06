@@ -1,1 +1,7 @@
-<b>No new commits for luci.  :zzz: </b>
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ab56fb4e71|Tianling Shen|Tue Aug 5 21:39:34 2025 +0800|luci-app-gost: rewrite into JS
+2505c0e764|Tianling Shen|Tue Aug 5 19:06:58 2025 +0800|luci-app-arpbind: rewrite into JS
+</details>
