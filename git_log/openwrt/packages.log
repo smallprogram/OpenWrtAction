@@ -2,5 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5f6bacdbd|Stan Grishin|Fri Aug 1 01:20:52 2025 +0000|adblock-fast: update to 1.1.4-4
+0c0a0c821|Bruce Chen|Mon Jul 21 20:51:27 2025 +0800|aliyun-cli: add new package
+b723d5fa9|Petr Štetiar|Wed Aug 6 09:30:40 2025 +0000|kmod: fix build failure in install step over dirty build dir
+771e021d1|Tianling Shen|Tue Jul 29 17:45:25 2025 +0800|inih: Update to r61
+32e0429e5|Tianling Shen|Tue Aug 5 14:50:04 2025 +0800|openlist: Update to 4.1.0
+09dba4e71|Tianling Shen|Thu Jul 31 13:59:21 2025 +0800|openlist: Update to 4.0.9
+352aa6890|Tianling Shen|Tue Jul 29 17:19:49 2025 +0800|rclone: backport ftp insecure TLS ciphers fix
+fee8f2446|Tianling Shen|Fri Jul 18 22:06:41 2025 +0800|golang: disable build for powerpc64
 </details>

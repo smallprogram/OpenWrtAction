@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cf197c4|A-BO|Wed Aug 6 00:49:24 2025 +0800|luci: optimize anytls subscribe
-3169369|A-BO|Wed Aug 6 00:15:09 2025 +0800|luci: optimize subscribe log
+86ce67a|A-BO|Wed Aug 6 22:37:34 2025 +0800|luci: update makefile
 </details>

@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ab56fb4e71|Tianling Shen|Tue Aug 5 21:39:34 2025 +0800|luci-app-gost: rewrite into JS
-2505c0e764|Tianling Shen|Tue Aug 5 19:06:58 2025 +0800|luci-app-arpbind: rewrite into JS
+0ae6a7912d|Tianling Shen|Wed Aug 6 21:28:08 2025 +0800|luci-app-mwol: drop legacy package
+67d5b6b4c5|Tianling Shen|Wed Aug 6 18:46:58 2025 +0800|treewide: replace var with let
+fefb7c74c2|Tianling Shen|Tue Aug 5 22:31:12 2025 +0800|luci-app-sysuh3c: rewrite into JS
+377a8428d4|Tianling Shen|Tue Apr 22 18:39:13 2025 +0800|luci-app-ua2f: add disable_connmark option
 </details>

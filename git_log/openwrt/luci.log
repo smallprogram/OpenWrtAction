@@ -1,7 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-00c4c120dd|Stan Grishin|Tue Aug 5 09:16:06 2025 -0700|Merge pull request #7882 from stangri/openwrt-24.10-luci-app-adblock-fast
-564ca886de|Stan Grishin|Fri Aug 1 01:42:12 2025 +0000|luci-app-adblock-fast: sync with principal package
-</details>
