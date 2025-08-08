@@ -2,8 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0ae6a7912d|Tianling Shen|Wed Aug 6 21:28:08 2025 +0800|luci-app-mwol: drop legacy package
-67d5b6b4c5|Tianling Shen|Wed Aug 6 18:46:58 2025 +0800|treewide: replace var with let
-fefb7c74c2|Tianling Shen|Tue Aug 5 22:31:12 2025 +0800|luci-app-sysuh3c: rewrite into JS
-377a8428d4|Tianling Shen|Tue Apr 22 18:39:13 2025 +0800|luci-app-ua2f: add disable_connmark option
+ffcc0a5f15|Tianling Shen|Thu Aug 7 16:32:11 2025 +0800|luci-app-udp2raw: drop legacy package
+40e08d4f67|Tianling Shen|Thu Aug 7 16:31:29 2025 +0800|luci-app-speederv2: drop legacy package
+762171e73e|Tianling Shen|Thu Aug 7 16:31:01 2025 +0800|luci-app-kcptun: drop legacy package
 </details>

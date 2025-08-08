@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-13e7a494f|coolsnowwolf|Thu Aug 7 04:15:40 2025 +0800|base-files: generalize ucidef_set_network_device
-e38accc82|Sander Vanheule|Wed Jan 24 11:20:08 2024 +0100|base-files: move uci_set_poe() to uci-defaults.sh
-df97a588c|Christian Marangi|Thu Nov 9 15:18:39 2023 +0100|base-files: add additional uci-defaults function for GRO and conduit
+4e51311f2|coolsnowwolf|Fri Aug 8 05:13:38 2025 +0800|ramips: re-enable mtwifi for Phicomm K2P
 </details>

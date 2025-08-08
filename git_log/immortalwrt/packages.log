@@ -2,25 +2,42 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4b407461f|Tianling Shen|Wed Aug 6 21:30:49 2025 +0800|lua-periphery: update mirror hash
-973775ee9|Tianling Shen|Wed Aug 6 21:18:26 2025 +0800|njit8021xclient: update mirror hash
-46a9c0cac|Tianling Shen|Wed Aug 6 21:16:06 2025 +0800|scutclient: switch to codeload
-0701696ea|Tianling Shen|Wed Aug 6 21:12:49 2025 +0800|mentohust: fix mirror hash
-e03a0a2c4|Tianling Shen|Wed Aug 6 21:27:15 2025 +0800|mwol: drop legacy package
-1d3d191fa|Tianling Shen|Wed Aug 6 21:22:30 2025 +0800|dns-forwarder: update mirror hash
-4cccb4dde|Tianling Shen|Wed Aug 6 20:58:38 2025 +0800|antileech: bump to latest git HEAD
-34f83ce7c|Tianling Shen|Wed Aug 6 20:49:16 2025 +0800|rapidjson: bump to latest git HEAD
-c6f031155|Tianling Shen|Wed Aug 6 20:46:55 2025 +0800|oscam: bump to latest git HEAD
-d5aff83d5|Tianling Shen|Wed Aug 6 20:40:32 2025 +0800|quickjspp: refresh patches
-2ead738dc|Tianling Shen|Wed Aug 6 20:39:23 2025 +0800|redsocks2: Update to 0.71
-4dad41bd9|Tianling Shen|Wed Aug 6 20:29:42 2025 +0800|tcpping: drop legacy package
-c63498e40|Tianling Shen|Wed Aug 6 20:27:18 2025 +0800|go-nats: update mirror hash
-3be1ed0eb|Tianling Shen|Wed Aug 6 20:14:28 2025 +0800|tinyfecvpn: Update to 20230206.0
-6e676ac43|Tianling Shen|Wed Aug 6 19:53:14 2025 +0800|libcron: update mirror hash
-1716d9394|Tianling Shen|Wed Aug 6 19:51:50 2025 +0800|quickjspp: update mirror hash
-4e1d6bb14|Tianling Shen|Wed Aug 6 19:46:41 2025 +0800|ngrokc: update mirror hash
-a3204baaa|Tianling Shen|Wed Aug 6 20:24:28 2025 +0800|tcping-simple: update mirror hash
-dece5d59e|Tianling Shen|Wed Aug 6 19:40:37 2025 +0800|sub-web: bump to latest git HEAD
-c1a7cd5a3|mitsukileung|Wed Aug 6 14:07:43 2025 +0800|alac: fix mirror hash
-64b8d1110|Tianling Shen|Wed Aug 6 19:23:48 2025 +0800|fan2go: allow create /etc/sensors3.conf in buildroot
+0bf092bf0|Tianling Shen|Thu Aug 7 22:26:32 2025 +0800|Merge Official Source
+f5490d55c|Tianling Shen|Thu Aug 7 01:54:35 2025 +0800|Node.js: sync with upstream source
+0c0a0c821|Bruce Chen|Mon Jul 21 20:51:27 2025 +0800|aliyun-cli: add new package
+b723d5fa9|Petr Štetiar|Wed Aug 6 09:30:40 2025 +0000|kmod: fix build failure in install step over dirty build dir
+771e021d1|Tianling Shen|Tue Jul 29 17:45:25 2025 +0800|inih: Update to r61
+32e0429e5|Tianling Shen|Tue Aug 5 14:50:04 2025 +0800|openlist: Update to 4.1.0
+09dba4e71|Tianling Shen|Thu Jul 31 13:59:21 2025 +0800|openlist: Update to 4.0.9
+352aa6890|Tianling Shen|Tue Jul 29 17:19:49 2025 +0800|rclone: backport ftp insecure TLS ciphers fix
+fee8f2446|Tianling Shen|Fri Jul 18 22:06:41 2025 +0800|golang: disable build for powerpc64
+5f6bacdbd|Stan Grishin|Fri Aug 1 01:20:52 2025 +0000|adblock-fast: update to 1.1.4-4
+f0486d997|Ray Wang|Sun Aug 3 11:00:31 2025 +0800|hev-socks5-tunnel: update to 2.13.0
+208ccde35|Stan Grishin|Fri Aug 1 01:04:35 2025 +0000|pbr: update to 1.1.8-32
+ff3c02aaf|Dirk Brenken|Mon Aug 4 20:53:01 2025 +0200|banIP: update 1.5.6-7
+3ae8b6f40|Michael Heimpold|Fri Aug 1 08:14:43 2025 +0200|php8: update to 8.3.24
+3fff86f48|Liangbin Lian|Fri Aug 1 11:40:20 2025 +0800|openlist: Remove dependency on fuse
+63664fb2f|Javier Marcet|Fri Jul 25 15:37:09 2025 +0200|docker-compose: Update to version 2.39.1
+11c91874c|Javier Marcet|Tue Jul 8 18:41:02 2025 +0200|docker-compose: Update to version 2.38.2
+ee8e02fe3|Javier Marcet|Mon Jun 30 22:14:52 2025 +0200|docker-compose: Update to version 2.38.1
+22debca00|Javier Marcet|Mon Jun 30 21:56:26 2025 +0200|docker-compose: Update to version 2.38.0
+c94a1c8fb|Javier Marcet|Tue Jun 24 18:56:53 2025 +0200|docker-compose: Update to version 2.37.3
+0d0b1ecfc|Javier Marcet|Fri Jun 20 20:51:41 2025 +0200|docker-compose: Update to version 2.37.2
+f69cadae2|Javier Marcet|Sat Jun 14 10:52:37 2025 +0200|docker-compose: Update to version 2.37.1
+4baa0bda0|Javier Marcet|Sat Jun 7 10:54:21 2025 +0200|docker-compose: Update to version 2.37.0
+9f7c289d4|Javier Marcet|Fri May 23 19:24:14 2025 +0200|docker-compose: Update to version 2.36.2
+50f5b54c0|Javier Marcet|Thu May 22 18:24:02 2025 +0200|docker-compose: Update to version 2.36.1
+2378b3cf2|Javier Marcet|Thu May 8 18:48:30 2025 +0200|docker-compose: Update to version 2.36.0
+c969fece7|Javier Marcet|Thu Apr 17 20:42:00 2025 +0200|docker-compose: Update to version 2.35.1
+b96a03a41|Javier Marcet|Thu Apr 10 21:27:18 2025 +0200|docker-compose: Update to version 2.35.0
+f7fb09aa3|Javier Marcet|Sat Mar 15 19:48:45 2025 +0100|docker-compose: Update to version 2.34.0
+fbb475992|Javier Marcet|Sat Feb 22 13:24:28 2025 +0100|docker-compose: Update to version 2.33.1
+afc344b54|Javier Marcet|Wed Feb 12 22:10:42 2025 +0100|docker-compose: Update to version 2.33.0
+664f0f843|Javier Marcet|Sat Jan 18 12:04:21 2025 +0100|docker-compose: Update to version 2.32.4
+c50bfe1ac|Javier Marcet|Wed Jan 8 18:22:03 2025 +0100|docker-compose: Update to version 2.32.2
+4e560a183|Javier Marcet|Tue Dec 17 09:47:48 2024 +0100|docker-compose: Update to version 2.32.1
+b5217db7f|Javier Marcet|Fri Dec 13 16:08:37 2024 +0100|docker-compose: Update to version 2.32.0
+a833196c2|Javier Marcet|Fri Nov 29 08:45:45 2024 +0100|docker-compose: Update to version 2.31.0
+5feb39aef|Javier Marcet|Thu Nov 7 22:22:16 2024 +0100|docker-compose: Update to version 2.30.3
+1886d8565|Javier Marcet|Tue Nov 5 23:07:42 2024 +0100|docker-compose: Update to version 2.30.2
 </details>

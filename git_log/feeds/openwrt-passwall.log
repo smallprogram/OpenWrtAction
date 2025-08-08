@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-86ce67a|A-BO|Wed Aug 6 22:37:34 2025 +0800|luci: update makefile
+81ae355|A-BO|Thu Aug 7 19:13:57 2025 +0800|luci: replace syntax that is not supported by ash
 </details>
