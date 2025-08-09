@@ -1,0 +1,11 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5df9042|A-BO|Sat Aug 9 07:55:46 2025 +0800|shadowsocksr-libev: update mirror hash
+b90e171|A-BO|Sat Aug 9 01:04:23 2025 +0800|trojan-plus: update mirror hash
+28e06e2|A-BO|Sat Aug 9 01:03:18 2025 +0800|shadowsocksr-libev: update mirror hash
+e272564|A-BO|Sat Aug 9 01:02:14 2025 +0800|shadowsocks-libev: update mirror hash
+a1dc7fd|A-BO|Sat Aug 9 01:00:38 2025 +0800|tcping: update from immortalwrt
+84d2db8|A-BO|Wed Aug 6 22:30:25 2025 +0800|shadowsocksr-libev: update mirror hash
+</details>
