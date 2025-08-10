@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b2116dbce4|Felix Fietkau|Sat Aug 9 16:01:33 2025 +0200|rpcd: backport ucode fix
+</details>

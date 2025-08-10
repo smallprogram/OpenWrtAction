@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fba861b38|George Sapkin|Thu May 8 16:42:42 2025 +0300|sqlite3: bump to 3.50.4
-699dda7ff|George Sapkin|Sat May 10 22:23:39 2025 +0300|sqlite3: require matching lib version in shell
-e13158a30|Thibaut VARÈNE|Thu Aug 7 10:37:21 2025 +0200|uspot: update to Git HEAD (2025-08-07)
+8098a4ad6|Rosen Penev|Sat May 3 18:19:50 2025 -0700|mariadb: update to 11.4.7
+ee210e7a0|Rosen Penev|Tue Apr 29 15:21:32 2025 -0700|mariadb: fix liburing dependency
+cf68efad8|Rosen Penev|Wed Jan 1 13:02:51 2025 -0800|mariadb: update to 11.4.4
 </details>

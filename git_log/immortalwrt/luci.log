@@ -1,8 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-78fb33463e|Tianling Shen|Fri Aug 8 19:14:20 2025 +0800|luci-app-homeproxy: update geodata
-393c18f651|Tianling Shen|Fri Aug 8 16:27:22 2025 +0800|luci-app-argon-config: support set api key for unsplash and wallhaven
-60a895a58f|Tianling Shen|Fri Aug 8 16:02:06 2025 +0800|luci-theme-argon: online_wallpaper: merge upstream changes
-</details>

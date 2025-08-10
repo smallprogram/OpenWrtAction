@@ -1,0 +1,6 @@
+<details> <summary> <b>lede new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+43012444e|Daniel Golle|Thu Jul 31 19:48:32 2025 +0100|kernel: backport to fix broken PHY LEDs
+</details>

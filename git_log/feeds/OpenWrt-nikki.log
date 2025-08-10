@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fc292e6|Joseph Mory|Sat Aug 9 02:07:07 2025 +0800|fix: add missing dns option in default access control config
-ab69c41|Joseph Mory|Fri Aug 8 14:46:45 2025 +0800|fix: typo
+399cb23|Joseph Mory|Sat Aug 9 16:29:32 2025 +0800|fix: add missing comment header in uninstall script
 </details>

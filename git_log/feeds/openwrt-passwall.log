@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-88acbe2|A-BO|Fri Aug 8 23:27:12 2025 +0800|luci: remove the package named `simple-obfs` from the makefile
-f27f8bb|A-BO|Fri Aug 8 23:05:32 2025 +0800|luci: optimize socks auto switch logic
-663b029|A-BO|Fri Aug 8 22:57:23 2025 +0800|luci: add display for current socks node
-</details>
