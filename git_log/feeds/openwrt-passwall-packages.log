@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-0b2fdaf|lwb1978|Sat Aug 9 18:07:50 2025 +0800|tcping: update mirror hash
-15a0472|A-BO|Sat Aug 9 08:59:17 2025 +0800|tcping: add PKG_VERSION
-</details>

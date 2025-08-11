@@ -1,8 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-8098a4ad6|Rosen Penev|Sat May 3 18:19:50 2025 -0700|mariadb: update to 11.4.7
-ee210e7a0|Rosen Penev|Tue Apr 29 15:21:32 2025 -0700|mariadb: fix liburing dependency
-cf68efad8|Rosen Penev|Wed Jan 1 13:02:51 2025 -0800|mariadb: update to 11.4.4
-</details>

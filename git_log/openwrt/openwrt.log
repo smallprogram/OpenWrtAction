@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b2116dbce4|Felix Fietkau|Sat Aug 9 16:01:33 2025 +0200|rpcd: backport ucode fix
+33728aa96c|Christian Korber|Wed May 21 14:36:00 2025 +0200|hostapd: fix logging of configuration content
 </details>

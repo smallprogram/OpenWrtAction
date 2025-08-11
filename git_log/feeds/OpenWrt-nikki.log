@@ -1,6 +1,0 @@
-<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-399cb23|Joseph Mory|Sat Aug 9 16:29:32 2025 +0800|fix: add missing comment header in uninstall script
-</details>

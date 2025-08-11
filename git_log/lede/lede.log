@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-43012444e|Daniel Golle|Thu Jul 31 19:48:32 2025 +0100|kernel: backport to fix broken PHY LEDs
+2395baba3|Steve Wavler|Sun Aug 3 09:02:55 2025 -0400|kernel: Add Solarflare SFN5000/6000 NICs
 </details>

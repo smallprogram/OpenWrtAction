@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+4a7188d|lwb1978|Sun Aug 10 12:20:13 2025 +0800|luci: xray ech add `echForceQuery` config
+</details>
