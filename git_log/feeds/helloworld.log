@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d1f7872|zxl hhyccc|Mon Aug 11 00:05:58 2025 +0800|Merge pull request #1769 from zxlhhyccc/custom
-f5a12e0|zxlhhyccc|Sun Aug 10 20:06:36 2025 +0800|luci-app-ssr-plus: support xray ech See: https://xtls.github.io/config/transport.html#tlsobject
-612c959|zxl hhyccc|Sun Aug 10 19:04:38 2025 +0800|luci-app-ssr-plus: Fix `ss` configuration import
+cb16d0d|zxl hhyccc|Tue Aug 12 01:00:47 2025 +0800|shadowsocks-libev: update mirror hash
 </details>

@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2395baba3|Steve Wavler|Sun Aug 3 09:02:55 2025 -0400|kernel: Add Solarflare SFN5000/6000 NICs
+2c7790d9a|Weijie Gao|Fri Jun 20 19:30:49 2025 +0800|loongarch64: add 6.12 as testing kernel
 </details>

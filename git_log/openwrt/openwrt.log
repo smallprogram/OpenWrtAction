@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-33728aa96c|Christian Korber|Wed May 21 14:36:00 2025 +0200|hostapd: fix logging of configuration content
-</details>
