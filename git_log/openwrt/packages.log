@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0118fb489|Tianling Shen|Mon Aug 11 19:55:50 2025 +0800|gping: lock cargo dependencies
-c108b34de|Jonas Jelonek|Sun Dec 1 23:50:20 2024 +0000|gping: update to 1.18.0
-60d8f1e53|Gregory Gullin|Mon Aug 4 18:26:32 2025 +0300|sing-box: update to 1.12.0
+1ddc0b1c8|Stan Grishin|Sun Aug 10 01:41:34 2025 +0000|pbr: update to 1.1.8-34
 </details>

@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2c7790d9a|Weijie Gao|Fri Jun 20 19:30:49 2025 +0800|loongarch64: add 6.12 as testing kernel
+00d008348|wukongdaily|Tue Aug 12 16:00:04 2025 +0800|image: allow to specific ROOTFS_PARTSIZE
 </details>

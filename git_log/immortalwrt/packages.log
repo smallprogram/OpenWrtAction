@@ -1,7 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-d80b3eb99|Tianling Shen|Mon Aug 11 15:19:37 2025 +0800|7z: Update to 25.01
-b618b15e9|Tianling Shen|Mon Aug 11 15:33:31 2025 +0800|libffi: fix install fficonfig.h
-</details>

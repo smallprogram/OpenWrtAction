@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cb16d0d|zxl hhyccc|Tue Aug 12 01:00:47 2025 +0800|shadowsocks-libev: update mirror hash
+026b0cf|zxl hhyccc|Tue Aug 12 23:25:13 2025 +0800|luci-app-ssr-plus: Optimize the tag value of the shard
+83e4546|zxl hhyccc|Tue Aug 12 21:03:40 2025 +0800|chinadns-ng: update to 2025.08.09
 </details>
