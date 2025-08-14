@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+faf168ffc9|Felix Fietkau|Wed Aug 13 17:25:17 2025 +0200|mt76: update to Git HEAD (2025-08-13)
+9d193d9b65|Rosen Penev|Tue Aug 12 11:22:27 2025 -0700|mpc85xx: tl-wdr4900: add back 5ghz LED
+</details>

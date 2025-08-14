@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-00d008348|wukongdaily|Tue Aug 12 16:00:04 2025 +0800|image: allow to specific ROOTFS_PARTSIZE
+8547db9c2|Zhang Zhe|Wed Aug 13 23:30:09 2025 +0800|rockchip: add support for NLnet XiGuaPi
 </details>
