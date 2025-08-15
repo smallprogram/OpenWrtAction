@@ -1,0 +1,15 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5c346755ab|Tianling Shen|Thu Aug 14 19:50:24 2025 +0800|Merge Official Source
+4d26a4d804|Hannu Nyman|Sun Aug 10 23:43:42 2025 +0300|treewide: backport translations - i18n
+822db9aa3e|Stan Grishin|Sat Aug 9 10:23:23 2025 -0700|Merge pull request #7894 from stangri/openwrt-24.10-luci-app-https-dns-proxy
+1e31aa4ac1|Stan Grishin|Sat Aug 9 10:23:16 2025 -0700|Merge pull request #7892 from stangri/openwrt-24.10-luci-app-adblock-fast
+207164e26c|Stan Grishin|Fri Aug 8 20:38:28 2025 +0000|luci-app-https-dns-proxy: update to 2025.05.11-4
+3834711a3a|Stan Grishin|Fri Aug 8 08:57:49 2025 +0000|luci-app-adblock-fast: update to 1.1.4-6
+00c4c120dd|Stan Grishin|Tue Aug 5 09:16:06 2025 -0700|Merge pull request #7882 from stangri/openwrt-24.10-luci-app-adblock-fast
+34a6b92f7e|Stan Grishin|Mon Aug 4 19:59:57 2025 -0700|Merge pull request #7883 from stangri/openwrt-24.10-luci-app-pbr
+564ca886de|Stan Grishin|Fri Aug 1 01:42:12 2025 +0000|luci-app-adblock-fast: sync with principal package
+213d982a70|Stan Grishin|Fri Aug 1 01:40:51 2025 +0000|luci-app-pbr: sync with principal package
+</details>

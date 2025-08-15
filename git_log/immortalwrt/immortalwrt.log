@@ -1,0 +1,13 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d7427746a4|Tianling Shen|Thu Aug 14 20:31:16 2025 +0800|uboot-mediatek: update build target for cmcc rax3000me
+0b604e75e8|Tianling Shen|Thu Aug 14 20:18:01 2025 +0800|mediatek: add bl2 and fip for cmcc rax3000me WS EC version
+0d85e7d3be|Tianling Shen|Thu Aug 14 20:11:51 2025 +0800|Revert "mediatek: rename uboot for cmcc rax3000me"
+a206f7c041|Tianling Shen|Thu Aug 14 19:51:30 2025 +0800|Merge Official Source
+faf168ffc9|Felix Fietkau|Wed Aug 13 17:25:17 2025 +0200|mt76: update to Git HEAD (2025-08-13)
+9d193d9b65|Rosen Penev|Tue Aug 12 11:22:27 2025 -0700|mpc85xx: tl-wdr4900: add back 5ghz LED
+33728aa96c|Christian Korber|Wed May 21 14:36:00 2025 +0200|hostapd: fix logging of configuration content
+b2116dbce4|Felix Fietkau|Sat Aug 9 16:01:33 2025 +0200|rpcd: backport ucode fix
+</details>

@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8547db9c2|Zhang Zhe|Wed Aug 13 23:30:09 2025 +0800|rockchip: add support for NLnet XiGuaPi
+ebacfda9d|coolsnowwolf|Fri Aug 15 05:12:48 2025 +0800|rockchip: add FriendlyElec NanoPi M5 (RK3576) support
+9f0ebafc1|Marko Mäkelä|Mon Aug 11 16:23:03 2025 +0300|qualcommax: rework clock to multiple conf
 </details>

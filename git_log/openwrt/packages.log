@@ -1,0 +1,6 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+afe46160c|Tianling Shen|Mon Aug 11 20:23:18 2025 +0800|lttng-tools: fix build with libxml 2.14
+</details>
