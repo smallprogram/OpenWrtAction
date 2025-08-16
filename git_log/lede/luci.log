@@ -1,8 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-44b4855f|coolsnowwolf|Thu Aug 14 23:03:19 2025 +0800|luci-app-firewall : fix NAT1 option typo
-571784e2|coolsnowwolf|Thu Aug 14 22:59:01 2025 +0800|luci-newapi: update wireless freq display for mtwifi
-3e858ba3|Internet1235|Thu Aug 14 22:50:34 2025 +0800|[openwrt-23.05]luci-app-qiyougamebooster: correct the file name (#361)
-</details>

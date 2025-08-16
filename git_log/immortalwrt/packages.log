@@ -1,0 +1,10 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+7372b7d17|Tianling Shen|Fri Aug 15 17:18:39 2025 +0800|naiveproxy: Update to 139.0.7258.62-1
+0bfccc9ed|Tianling Shen|Fri Aug 15 17:14:19 2025 +0800|gn: update to Git HEAD (2025-08-12)
+f70b89142|SakuraFallingMad|Fri Aug 15 13:14:00 2025 +0800|chinadns-ng: Update to 2025.08.09
+43303623f|Tianling Shen|Mon Aug 11 19:55:50 2025 +0800|gping: lock cargo dependencies
+4fc32bed2|Jonas Jelonek|Sun Dec 1 23:50:20 2024 +0000|gping: update to 1.18.0
+</details>
