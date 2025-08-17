@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7d40004|lwb1978|Fri Aug 15 16:13:24 2025 +0800|luci: add sing-box hysteria(2) `hop_interval` option
-498257e|lwb1978|Fri Aug 15 15:25:00 2025 +0800|luci: fix hysteria subscribe bug
-9e61680|lwb1978|Fri Aug 15 10:20:36 2025 +0800|luci: optimize `flow` parameter subscription
+ec8a4e9|lwb1978|Sat Aug 16 23:30:38 2025 +0800|luci: optimize and fix `acl_app`
 </details>

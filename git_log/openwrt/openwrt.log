@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-92d4f59709|Stefan Dösinger|Thu Aug 14 13:40:09 2025 +0300|kernel: fix Mediatek queue size patch
-</details>

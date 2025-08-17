@@ -1,0 +1,7 @@
+<details> <summary> <b>lede new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+04df3b1d7|aiamadeus|Mon Aug 4 22:16:38 2025 +0800|rockchip: improve support for H68K/H69K V2
+15546b31e|aiamadeus|Sun Aug 3 22:16:30 2025 +0800|rockchip: enable hwrng by default for rk3568
+</details>

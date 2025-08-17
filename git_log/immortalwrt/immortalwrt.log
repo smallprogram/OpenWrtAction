@@ -1,7 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-a5a4e92e43|Tianling Shen|Fri Aug 15 17:20:41 2025 +0800|Merge Official Source
-92d4f59709|Stefan Dösinger|Thu Aug 14 13:40:09 2025 +0300|kernel: fix Mediatek queue size patch
-</details>
