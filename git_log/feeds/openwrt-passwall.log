@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ec8a4e9|lwb1978|Sat Aug 16 23:30:38 2025 +0800|luci: optimize and fix `acl_app`
+98d583e|lwb1978|Sun Aug 17 12:53:05 2025 +0800|luci: optimize acl related
 </details>

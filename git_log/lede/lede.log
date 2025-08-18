@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-04df3b1d7|aiamadeus|Mon Aug 4 22:16:38 2025 +0800|rockchip: improve support for H68K/H69K V2
-15546b31e|aiamadeus|Sun Aug 3 22:16:30 2025 +0800|rockchip: enable hwrng by default for rk3568
+6631052ac|aiamadeus|Fri Aug 15 22:10:06 2025 +0800|rockchip: add some stmmac / dsa workaround
+cecb43680|aiamadeus|Sun Aug 10 22:20:10 2025 +0800|uboot-rockchip: add pending rk3582 support
 </details>
