@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6631052ac|aiamadeus|Fri Aug 15 22:10:06 2025 +0800|rockchip: add some stmmac / dsa workaround
-cecb43680|aiamadeus|Sun Aug 10 22:20:10 2025 +0800|uboot-rockchip: add pending rk3582 support
+77e40af08|Felix Fietkau|Tue Jul 15 12:56:57 2025 +0200|kernel: improve pppoe performance
+4afbc322b|Internet1235|Mon Aug 18 12:17:44 2025 +0800|openssl: update to 3.5.2 (#13662)
 </details>
