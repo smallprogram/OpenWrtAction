@@ -1,0 +1,49 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+2d080277|coolsnowwolf|Thu Aug 21 04:08:05 2025 +0800|luci-app-samba: add acl.d json
+0563ebaa|coolsnowwolf|Thu Aug 21 03:49:21 2025 +0800|luci-mod-status: improver display info status
+e8f85142|coolsnowwolf|Thu Aug 21 03:04:55 2025 +0800|luci-app-mosdns: add package
+49c6846b|coolsnowwolf|Thu Aug 21 02:54:45 2025 +0800|luci-app-openvpn-server: move crt and keys to pki folder
+6141fa1c|coolsnowwolf|Thu Aug 21 02:52:26 2025 +0800|luci-app-openvpn-server: add pre demo 2048-bit crt and keys
+01c0be91|coolsnowwolf|Thu Aug 21 02:02:27 2025 +0800|luci-base: add usage cpu info support
+02119454|coolsnowwolf|Thu Aug 21 01:32:35 2025 +0800|luci-newapi: fix v24.10 svg icon
+ab68191c|coolsnowwolf|Wed Aug 20 19:28:30 2025 +0800|luci-app-qbittorrent: switch to normal version qbittorrent
+2f3b95f3|coolsnowwolf|Wed Aug 20 19:14:51 2025 +0800|luci-newapi: add package for v23.05
+c2f8c8e4|coolsnowwolf|Wed Aug 20 17:35:47 2025 +0800|luci-mod-status: add rev version display
+cbb0374a|coolsnowwolf|Wed Aug 20 16:50:27 2025 +0800|luci-app-samba: add package
+9ece2ef1|coolsnowwolf|Wed Aug 20 16:47:53 2025 +0800|luci-app-unblockneteasemusic: always select openssl backend
+752aafc3|Internet1235|Wed Aug 20 16:33:18 2025 +0800|luci-app-qiyougamebooster: add new package (#357)
+2c37368f|coolsnowwolf|Wed Aug 20 16:30:33 2025 +0800|Merge Official Source
+44b4855f|coolsnowwolf|Thu Aug 14 23:03:19 2025 +0800|luci-app-firewall : fix NAT1 option typo
+571784e2|coolsnowwolf|Thu Aug 14 22:59:01 2025 +0800|luci-newapi: update wireless freq display for mtwifi
+3e858ba3|Internet1235|Thu Aug 14 22:50:34 2025 +0800|[openwrt-23.05]luci-app-qiyougamebooster: correct the file name (#361)
+58eb4fb0|coolsnowwolf|Fri Aug 8 05:51:06 2025 +0800|luci-newapi: add wireless tx power to general setting
+4ce7726d|coolsnowwolf|Fri Aug 8 05:31:15 2025 +0800|luci-newapi: remove uptime display
+8170bc1b|coolsnowwolf|Fri Aug 8 05:14:19 2025 +0800|luci-newapi: add suppport for miwifi
+5c4e0762|chen-wilde|Fri Aug 8 02:33:33 2025 +0800|luci-app-tailscale: bump to 1.2.6 (#360)
+f7c1d025|Internet1235|Fri Aug 8 02:32:51 2025 +0800|luci-app-qiyougamebooster: add new package (#356)
+130096a4|coolsnowwolf|Wed Aug 6 05:00:13 2025 +0800|luci-theme-design: fix login page height
+3bbd3792|coolsnowwolf|Wed Aug 6 04:39:12 2025 +0800|luci-theme-design: fix navi bar color and bg
+296ef702|coolsnowwolf|Wed Aug 6 04:12:40 2025 +0800|luci-theme-design: fix processbar font color and bg
+136b0f14|coolsnowwolf|Wed Aug 6 03:27:49 2025 +0800|luci-theme-design: use defaul fonts for brand
+61515ed6|coolsnowwolf|Wed Aug 6 03:16:12 2025 +0800|luci-theme-design: fix login page style
+c9095857|coolsnowwolf|Wed Aug 6 01:54:53 2025 +0800|luci-theme-design: change to argon mod version
+0dd9c8a8|Internet1235|Sat Aug 2 13:40:28 2025 +0800|luci-app-uugamebooster: bump to luci2 (#359)
+02ae9d2f|Internet1235|Sat Aug 2 13:40:15 2025 +0800|luci-app-uugamebooster: bump to luci2 (#358)
+757a1dfb|Internet1235|Fri Jul 25 16:06:32 2025 +0800|luci-app-openlist: Add multi-languages (#349)
+5e91298e|Internet1235|Fri Jul 25 16:06:21 2025 +0800|luci-app-openlist: Add multi-languages (#348)
+1951c35b|Dee HY|Fri Jul 25 16:06:06 2025 +0800|specify c17 standard (#350)
+f650ff6a|Internet1235|Tue Jul 22 18:30:20 2025 +0800|luci-app-ddns-go: add config and init (#353)
+58c2fca9|Internet1235|Tue Jul 22 18:30:19 2025 +0800|luci-app-ddns-go: add config and init (#352)
+d79dc180|Internet1235|Mon Jun 23 22:09:44 2025 +0800|luci-app-openlist: add new package (#343)
+d7e9cc33|Internet1235|Mon Jun 23 22:09:25 2025 +0800|luci-app-openlist: add new package (#344)
+7cd82b02|coolsnowwolf|Tue Jun 17 04:08:09 2025 +0800|luci-app-firewall: add NFT fullcone NAT1 support
+07b71942|coolsnowwolf|Tue Jun 17 03:49:36 2025 +0800|sync from Openwrt 23.05 (#341)
+c7ce5873|coolsnowwolf|Tue Jun 17 03:48:38 2025 +0800|luci-app-turboacc: add NFT fullcone NAT1 support
+9de22657|coolsnowwolf|Mon Jun 16 17:30:51 2025 +0800|luci-app-nikki: add package
+b0a88518|coolsnowwolf|Mon Jun 16 17:15:23 2025 +0800|luci-app-turboacc: adapt firewall4
+ca077afa|coolsnowwolf|Mon Jun 16 17:11:51 2025 +0800|luci-app-homeproxy: add package
+b4e9e3d1|coolsnowwolf|Wed May 28 18:57:14 2025 +0800|luci-theme-design: change to Argon Design Mod
+</details>

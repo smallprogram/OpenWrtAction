@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e068a2854|aiamadeus|Sat Aug 16 21:08:25 2025 +0800|rockchip: add radxa router series
+08923d0c9|coolsnowwolf|Wed Aug 20 18:48:04 2025 +0800|feeds.conf.default: switch luci to openwrt-24.10
+02e01b92d|coolsnowwolf|Wed Aug 20 13:08:23 2025 +0800|default-settings: adjust version indicator for luci v24.10+
+c196f534c|coolsnowwolf|Wed Aug 20 13:02:20 2025 +0800|mac80211: backport genlmsg_multicast_allns-upstream for kernel 5.10
+2e16c97cf|coolsnowwolf|Wed Aug 20 12:50:22 2025 +0800|kernel: bump 6.x to latest HEAD
 </details>

@@ -1,7 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-b47fce0d32|Stan Grishin|Tue Aug 19 10:05:34 2025 -0700|Merge pull request #7911 from stangri/openwrt-24.10-luci-app-advanced-reboot
-71c2121938|Stan Grishin|Tue Aug 12 08:31:10 2025 +0000|luci-app-advanced-reboot: update to 1.1.0-1
-</details>

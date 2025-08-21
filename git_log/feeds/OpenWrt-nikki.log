@@ -2,15 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3f23e99|Joseph Mory|Tue Aug 19 23:32:03 2025 +0800|chore: remove reserved ip files in editor
-ef9e3b0|Joseph Mory|Tue Aug 19 23:15:53 2025 +0800|chore: delete .gitignore
-71c5f6a|Joseph Mory|Tue Aug 19 22:47:13 2025 +0800|chore: remove useless variable in include script
-98542c3|Joseph Mory|Tue Aug 19 22:39:26 2025 +0800|chore: bump version to 1.24.0
-d665779|Joseph Mory|Tue Aug 19 22:38:38 2025 +0800|chore: add reserved ip options in migrate script
-485ffe7|Joseph Mory|Tue Aug 19 22:11:20 2025 +0800|fix: should read tun device from profile
-5f58ebd|Joseph Mory|Tue Aug 19 22:07:37 2025 +0800|chore: remove reserved ip files from conffiles in Makefile
-9dec990|Joseph Mory|Tue Aug 19 22:04:37 2025 +0800|feat: no necessary mixin options anymore
-cfa59c0|Joseph Mory|Tue Aug 19 20:23:00 2025 +0800|chore: set data type for lan access control options
-a5d23d1|Joseph Mory|Tue Aug 19 20:16:01 2025 +0800|refactor: move reserved ip to uci config
-d943cd5|Joseph Mory|Tue Aug 19 19:59:11 2025 +0800|chore: code style
+615d26f|Joseph Mory|Wed Aug 20 22:24:59 2025 +0800|fix: hijack failed when dns hijack disabled
 </details>

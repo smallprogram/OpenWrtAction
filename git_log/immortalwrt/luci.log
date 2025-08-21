@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ccc8ce0361|Tianling Shen|Wed Aug 20 19:48:38 2025 +0800|luci-app-sms-tool-js: Update to 2.0.29-20250609
+fed3412264|Tianling Shen|Wed Aug 20 19:47:10 2025 +0800|luci-app-3ginfo-lite: Update to 1.0.76-20250609
+</details>

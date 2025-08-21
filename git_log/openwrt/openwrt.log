@@ -1,0 +1,10 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d12f30f760|Christian Marangi|Tue Mar 4 23:54:31 2025 +0100|airoha: backport upstream patch for Flow Offload support for AN7581
+62cee22812|Christian Marangi|Tue Mar 4 23:53:39 2025 +0100|airoha: backport minor fixes for ethernet driver
+30bd948a1c|Christian Marangi|Tue Mar 4 22:59:45 2025 +0100|airoha: replace PCIe patch with upstream version
+1c81724718|Rosen Penev|Sat Apr 26 16:48:12 2025 -0700|airoha: pwm: use devm
+1fef2116ac|Christian Marangi|Tue Feb 18 20:35:00 2025 +0100|airoha: drop MTD Airoha parser patch
+</details>

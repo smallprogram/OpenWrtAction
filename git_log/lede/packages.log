@@ -1,0 +1,33 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a6443195|coolsnowwolf|Wed Aug 20 19:28:59 2025 +0800|qBittorrent-Enhanced-Edition: remove package
+e1f72c63|coolsnowwolf|Wed Aug 20 17:01:12 2025 +0800|Merge Official Source
+c5fac0bd|coolsnowwolf|Wed Aug 20 16:34:25 2025 +0800|Merge pull request #981 from xiaotan8/master
+ab023fd1|coolsnowwolf|Wed Aug 20 16:34:15 2025 +0800|Merge pull request #982 from Internet1235/rust
+242305da|coolsnowwolf|Wed Aug 20 16:34:05 2025 +0800|Merge pull request #983 from Internet1235/golang
+2cb3cfcb|coolsnowwolf|Wed Aug 20 16:33:55 2025 +0800|Merge pull request #984 from Internet1235/openlist
+033c7db7|coolsnowwolf|Wed Aug 20 16:33:45 2025 +0800|Merge pull request #986 from Internet1235/cloudflared
+e5e7746b|coolsnowwolf|Wed Aug 20 16:33:37 2025 +0800|Merge pull request #987 from Internet1235/clouddrive2
+3ac1a2a2|coolsnowwolf|Wed Aug 20 16:19:42 2025 +0800|Merge pull request #985 from Internet1235/ddns-go
+9ed4400e|coolsnowwolf|Wed Aug 20 16:19:31 2025 +0800|Merge pull request #988 from Internet1235/iperf3
+f24a1f07|coolsnowwolf|Wed Aug 20 16:19:20 2025 +0800|Merge pull request #989 from Internet1235/adguardhome
+9eb21a5f|coolsnowwolf|Wed Aug 20 16:18:50 2025 +0800|Merge pull request #993 from Internet1235/verysync
+17ec2cfa|coolsnowwolf|Wed Aug 20 16:18:33 2025 +0800|Merge pull request #991 from Internet1235/qiyou
+9b39e15c|coolsnowwolf|Wed Aug 20 16:18:18 2025 +0800|Merge pull request #990 from Internet1235/uu
+e564bb68|Internet1235|Mon Aug 18 18:47:41 2025 +0800|openlist: update to 4.1.1
+a218c45d|Internet1235|Sun Aug 17 14:04:52 2025 +0800|verysync: update to 2.21.3
+d06ddc88|Internet1235|Sat Aug 16 19:08:44 2025 +0800|qiyougamebooster: add architectural constraints
+ef389c3e|Internet1235|Sat Aug 16 17:28:08 2025 +0800|uugamebooster: update to 9.8.0
+4dbae138|Internet1235|Fri Aug 15 22:34:19 2025 +0800|adguardhome: update to 0.107.64
+57979c00|Internet1235|Fri Aug 15 19:13:39 2025 +0800|golang: bump to 1.25.0
+0836d166|Internet1235|Fri Aug 15 19:55:03 2025 +0800|clouddrive2: update to 0.9.5
+841c879c|Internet1235|Fri Aug 15 19:49:18 2025 +0800|openlist: update to 4.1.0
+02d696ce|Internet1235|Fri Aug 15 19:44:48 2025 +0800|iperf3: bump to 3.19.1
+69c85bea|Internet1235|Fri Aug 15 19:25:34 2025 +0800|ddns-go: update to 6.12.2
+fb1fd5dd|Internet1235|Fri Aug 15 19:23:54 2025 +0800|cloudflared: bump to 2025.8.0
+11d9b542|xiaotan8|Fri Aug 8 08:13:03 2025 +0800|xray-core: update to 25.8.3
+6d8d178c|xiaotan8|Fri Aug 8 08:11:07 2025 +0800|sing-box: update to 1.12.0
+2a01611c|Internet1235|Thu Aug 7 23:28:40 2025 +0800|rust: update to 1.89.0
+</details>
