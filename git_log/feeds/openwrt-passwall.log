@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6161f61|lwb1978|Wed Aug 20 10:03:54 2025 +0800|luci: adjust subscribe `ua` options
+bf1ebb6|lwb1978|Thu Aug 21 18:33:39 2025 +0800|luci: limit chain proxy only supports one layer proxy
 </details>

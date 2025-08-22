@@ -2,9 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d12f30f760|Christian Marangi|Tue Mar 4 23:54:31 2025 +0100|airoha: backport upstream patch for Flow Offload support for AN7581
-62cee22812|Christian Marangi|Tue Mar 4 23:53:39 2025 +0100|airoha: backport minor fixes for ethernet driver
-30bd948a1c|Christian Marangi|Tue Mar 4 22:59:45 2025 +0100|airoha: replace PCIe patch with upstream version
-1c81724718|Rosen Penev|Sat Apr 26 16:48:12 2025 -0700|airoha: pwm: use devm
-1fef2116ac|Christian Marangi|Tue Feb 18 20:35:00 2025 +0100|airoha: drop MTD Airoha parser patch
+e627539601|Shiji Yang|Mon Aug 11 18:52:30 2025 +0800|ipq40xx: dts: reduce the maximum SPI clock frequency to 24MHz
+191d738469|Jiasheng Zhu|Sun Jul 27 00:55:08 2025 +0800|mediatek: add support for OpenFi 6C
+124f61eddb|Mateusz Krzak|Thu May 22 18:36:38 2025 +0200|mediatek: filogic: D-Link M30/M60: include initramfs in recovery
+05db6b3c5a|Coia Prant|Sat Aug 9 01:35:57 2025 +0800|ramips: add support for Hongdian H7920 v40
+97a75a72e3|Christian Marangi|Wed Feb 5 22:23:21 2025 +0100|generic: backport some flow offload helper patch
 </details>

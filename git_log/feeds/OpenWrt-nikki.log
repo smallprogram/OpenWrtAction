@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-615d26f|Joseph Mory|Wed Aug 20 22:24:59 2025 +0800|fix: hijack failed when dns hijack disabled
+240c087|Joseph Mory|Thu Aug 21 20:32:48 2025 +0800|chore: check if api listen option is configured
+cee7e13|Joseph Mory|Thu Aug 21 09:41:35 2025 +0800|chore: enable dns and tun by default in mixin options
 </details>
