@@ -2,10 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-baced58|Fu Jianrong|Fri Aug 22 03:13:31 2025 +0800|feat: add PushDeer support for SMS forwarding and update related conf… (#100)
-8c22b3c|fujr|Fri Aug 22 01:32:27 2025 +0800|version: update QMODEM_VERSION to 2.8.8
-9dbec2d|Fu Jianrong|Fri Aug 22 01:30:38 2025 +0800|cl: merge auto-tag to main workflow and add sms-forwarder package (#99)
-3c861fd|fujr|Fri Aug 22 01:20:50 2025 +0800|fix: correct dependency name for sms-forwarder in Makefile
-c30ba29|Fu Jianrong|Thu Aug 21 20:38:41 2025 +0800|feat(sms_forwarder): introduce sms forwarder (#97)
-39f6185|Fu Jianrong|Thu Aug 21 20:36:40 2025 +0800|feat: add auto-tagging workflow for version changes in version.mk (#96)
+93322e1|Fu Jianrong|Fri Aug 22 15:58:01 2025 +0800|fix: only handler first message and reduce useless log output (#102)
+1120588|fujr|Fri Aug 22 13:22:23 2025 +0800|ci: correct build configuration
+05d3444|fujr|Fri Aug 22 12:12:45 2025 +0800|version: update PKG_RELEASE to use AUTORELEASE
+68ad920|fujr|Fri Aug 22 12:06:48 2025 +0800|ci: fix dependences
+543426a|Fu Jianrong|Fri Aug 22 10:12:20 2025 +0800|feat: add support for delete after forward for SMS forwarder (#101)
 </details>

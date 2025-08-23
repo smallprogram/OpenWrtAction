@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bf1ebb6|lwb1978|Thu Aug 21 18:33:39 2025 +0800|luci: limit chain proxy only supports one layer proxy
+dafd286|lwb1978|Sat Aug 23 03:08:19 2025 +0800|luci: add a chain proxy for the subscribe group
+195d339|lwb1978|Fri Aug 22 17:22:37 2025 +0800|luci: fix the error of restoring backups in certain situations
 </details>
