@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4dc556542|John Crispin|Tue Nov 5 09:40:24 2024 +0100|fstools: move jffs2reset to factoryreset
-7836788a4|coolsnowwolf|Fri Aug 22 13:07:44 2025 +0800|fstools: update to Git HEAD (2025-07-05)
+c1916a3c2|coolsnowwolf|Sun Aug 24 06:49:41 2025 +0800|rockchip: add Xunlong Orange Pi 5 Max and Ultra support
+24e773f8c|coolsnowwolf|Sat Aug 23 18:38:11 2025 +0800|kernel: bump 6.12 to 6.12.43
 </details>

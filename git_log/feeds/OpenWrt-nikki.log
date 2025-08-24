@@ -1,6 +1,0 @@
-<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-bc0f57e|Joseph Mory|Fri Aug 22 10:09:03 2025 +0800|fix: get reserved ip from right config
-</details>

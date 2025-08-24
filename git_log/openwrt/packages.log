@@ -2,10 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e7c2f839b|Eric Fahlgren|Fri Aug 15 18:31:27 2025 -0700|owut: update to 2025.08.15
-091d10162|Wei-Ting Yang|Thu Aug 14 16:23:53 2025 +0800|python-urllib3: update to 2.0.7
-3c8d6669a|Tianling Shen|Fri Aug 22 17:10:57 2025 +0800|Revert "gping: lock cargo dependencies"
-98f3ce412|Tianling Shen|Wed Aug 20 18:04:36 2025 +0800|dufs: remove `--locked` flag
-c21161cc5|Tianling Shen|Wed Aug 20 17:44:57 2025 +0800|rust: read build path from `{HOST_}MAKE_PATH`
-3ac4d7b69|Tianling Shen|Wed Aug 20 17:28:22 2025 +0800|rust: introduce `RUST_{HOST,PKG}_LOCKED` flag
+6356527dd|Gregory Gullin|Thu Aug 21 15:40:38 2025 +0300|sing-box: update to 1.12.3
+89d3808d1|Hannu Nyman|Sat Aug 23 10:05:23 2025 +0300|nano: Update to 8.6
 </details>

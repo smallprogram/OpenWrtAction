@@ -1,0 +1,21 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d6a9f4bce|Tianling Shen|Sat Aug 23 20:51:04 2025 +0800|Merge Official Source
+89d3808d1|Hannu Nyman|Sat Aug 23 10:05:23 2025 +0300|nano: Update to 8.6
+e7c2f839b|Eric Fahlgren|Fri Aug 15 18:31:27 2025 -0700|owut: update to 2025.08.15
+091d10162|Wei-Ting Yang|Thu Aug 14 16:23:53 2025 +0800|python-urllib3: update to 2.0.7
+3c8d6669a|Tianling Shen|Fri Aug 22 17:10:57 2025 +0800|Revert "gping: lock cargo dependencies"
+98f3ce412|Tianling Shen|Wed Aug 20 18:04:36 2025 +0800|dufs: remove `--locked` flag
+c21161cc5|Tianling Shen|Wed Aug 20 17:44:57 2025 +0800|rust: read build path from `{HOST_}MAKE_PATH`
+3ac4d7b69|Tianling Shen|Wed Aug 20 17:28:22 2025 +0800|rust: introduce `RUST_{HOST,PKG}_LOCKED` flag
+13b041489|Stan Grishin|Mon Aug 18 16:34:28 2025 +0000|pbr: 1.1.8-36 bugfixes
+499d01f14|George Sapkin|Thu Aug 14 22:08:00 2025 +0300|yt-dlp: bump to 2025.08.11
+d7ce96f2d|George Sapkin|Thu Aug 14 23:08:11 2025 +0300|golang: bump to 1.23.12
+afe46160c|Tianling Shen|Mon Aug 11 20:23:18 2025 +0800|lttng-tools: fix build with libxml 2.14
+1ddc0b1c8|Stan Grishin|Sun Aug 10 01:41:34 2025 +0000|pbr: update to 1.1.8-34
+0118fb489|Tianling Shen|Mon Aug 11 19:55:50 2025 +0800|gping: lock cargo dependencies
+c108b34de|Jonas Jelonek|Sun Dec 1 23:50:20 2024 +0000|gping: update to 1.18.0
+60d8f1e53|Gregory Gullin|Mon Aug 4 18:26:32 2025 +0300|sing-box: update to 1.12.0
+</details>
