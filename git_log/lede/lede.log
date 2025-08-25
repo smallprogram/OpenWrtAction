@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c1916a3c2|coolsnowwolf|Sun Aug 24 06:49:41 2025 +0800|rockchip: add Xunlong Orange Pi 5 Max and Ultra support
-24e773f8c|coolsnowwolf|Sat Aug 23 18:38:11 2025 +0800|kernel: bump 6.12 to 6.12.43
+4537386a4|coolsnowwolf|Mon Aug 25 04:41:15 2025 +0800|qualcommax: fix build with linux 6.12.43+
 </details>
