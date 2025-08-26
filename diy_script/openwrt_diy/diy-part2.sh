@@ -16,10 +16,6 @@ sed -i 's/192.168.1.1/10.10.0.253/g' package/base-files/files/bin/config_generat
 # Modify default passwd
 # sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' package/lean/default-settings/files/zzz-default-settings
 
-# fixed rust host build download llvm in ci error
-sed -i 's/--set=llvm\.download-ci-llvm=false/--set=llvm.download-ci-llvm=true/' feeds/packages/lang/rust/Makefile
-grep -q -- '--ci false \\' feeds/packages/lang/rust/Makefile || sed -i '/x\.py \\/a \        --ci false \\' feeds/packages/lang/rust/Makefile
-
 # update golang version
 rm -rf temp_resp
 git clone -b master --single-branch https://github.com/openwrt/packages.git temp_resp
@@ -28,6 +24,12 @@ cp -r temp_resp/lang/golang feeds/packages/lang
 rm -rf feeds/packages/lang/rust
 cp -r temp_resp/lang/rust feeds/packages/lang
 rm -rf temp_resp
+
+# fixed rust host build download llvm in ci error
+sed -i 's/--set=llvm\.download-ci-llvm=false/--set=llvm.download-ci-llvm=true/' feeds/packages/lang/rust/Makefile
+grep -q -- '--ci false \\' feeds/packages/lang/rust/Makefile || sed -i '/x\.py \\/a \        --ci false \\' feeds/packages/lang/rust/Makefile
+
+
 
 # Add patches
 if [ "$GITHUB_ACTIONS" = "true" ] && [ -n "$GITHUB_RUN_ID" ] && [ -n "$GITHUB_WORKFLOW" ]; then
