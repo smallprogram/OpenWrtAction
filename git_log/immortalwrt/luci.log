@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d1233f618f|Tianling Shen|Sun Aug 24 21:50:21 2025 +0800|luci-app-diskman: bump to 0.2.13
-a3232b7456|Tianling Shen|Sun Aug 24 17:12:58 2025 +0800|luci-app-spotifyd: update auth option
+329a9d355f|Tianling Shen|Mon Aug 25 19:32:22 2025 +0800|luci-app-diskman: remove ntfs-3g dependencies
 </details>

@@ -1,7 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-15458664|coolsnowwolf|Mon Aug 25 04:49:22 2025 +0800|sing-box: update to 1.12.3
-9758cb78|coolsnowwolf|Mon Aug 25 04:03:11 2025 +0800|golang: simplify build on darwin/arm64 host
-</details>

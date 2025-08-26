@@ -1,0 +1,10 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b810829|xiaorouji|Mon Aug 25 18:40:06 2025 +0800|luci: 25.8.25
+b3b418b|A-BO|Sun Aug 24 19:45:18 2025 +0800|luci: add sing-box ssh outbounds
+c192692|lwb1978|Sat Aug 23 03:08:19 2025 +0800|luci: add a chain proxy for the subscribe group
+e872b52|lwb1978|Fri Aug 22 17:22:37 2025 +0800|luci: fix the error of restoring backups in certain situations
+379f7d4|xiaorouji|Mon Aug 25 18:38:22 2025 +0800|luci: fixup ccd216da0b38859f1d7541a235fc38d88b9dd4d9
+</details>

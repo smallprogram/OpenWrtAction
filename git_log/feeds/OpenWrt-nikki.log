@@ -1,0 +1,6 @@
+<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+92be5b2|Joseph Mory|Mon Aug 25 23:14:39 2025 +0800|chore: call mihomo api via ubus rpc
+</details>

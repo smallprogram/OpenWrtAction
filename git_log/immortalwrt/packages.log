@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1ea5994a0|Tianling Shen|Sun Aug 24 20:47:02 2025 +0800|spotifyd: disable build for x86
-ad08a4bd3|Tianling Shen|Sun Aug 24 17:11:39 2025 +0800|spotifyd: Update to 0.4.1
-cfb3fee8a|Tianling Shen|Sun Aug 24 19:46:48 2025 +0800|shadowsocks-rust: disable build for x86
+091fcdfdf|Tianling Shen|Mon Aug 25 13:58:33 2025 +0800|Revert "ntfs-3g: fix automount"
 </details>

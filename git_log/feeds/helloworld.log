@@ -1,7 +1,0 @@
-<details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-be514fd|coolsnowwolf|Mon Aug 25 05:28:24 2025 +0800|tcping: use local SRC
-0b4e61c|coolsnowwolf|Mon Aug 25 05:19:51 2025 +0800|dns2socks-rust: switch to release version build
-</details>

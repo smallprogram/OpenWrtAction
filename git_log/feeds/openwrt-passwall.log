@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-64d1c29|A-BO|Sun Aug 24 19:45:18 2025 +0800|luci: add sing-box ssh outbounds
+53c1631|lwb1978|Mon Aug 25 23:22:34 2025 +0800|luci: fixup https://github.com/xiaorouji/openwrt-passwall/commit/241693dedf9f2949d008d7a4f0e0e875fe6d9476
 </details>
