@@ -24,9 +24,9 @@ grep -q -- '--ci false \\' feeds/packages/lang/rust/Makefile || sed -i '/x\.py \
 rm -rf temp_resp
 git clone -b master --single-branch https://github.com/openwrt/packages.git temp_resp
 rm -rf feeds/packages/lang/golang
-cp -r temp_resp/lang/golang feeds/packages
+cp -r temp_resp/lang/golang feeds/packages/lang
 rm -rf feeds/packages/lang/rust
-cp -r temp_resp/lang/rust feeds/packages
+cp -r temp_resp/lang/rust feeds/packages/lang
 rm -rf temp_resp
 
 # Add patches
