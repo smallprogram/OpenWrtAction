@@ -21,6 +21,7 @@ sed -i 's/--set=llvm\.download-ci-llvm=false/--set=llvm.download-ci-llvm=true/' 
 grep -q -- '--ci false \\' feeds/packages/lang/rust/Makefile || sed -i '/x\.py \\/a \        --ci false \\' feeds/packages/lang/rust/Makefile
 
 # update packages version
+rm -rf temp_resp
 git clone -b master --single-branch https://github.com/openwrt/packages.git temp_resp
 rm -rf feeds/packages/lang/golang
 cp -r temp_resp/lang/golang feeds/packages
