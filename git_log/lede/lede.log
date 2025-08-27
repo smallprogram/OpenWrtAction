@@ -1,0 +1,6 @@
+<details> <summary> <b>lede new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+2bf633f92|Daniel Golle|Sat Jul 12 03:39:43 2025 +0100|x86: enable built-in driver for MMC/SDHCI
+</details>

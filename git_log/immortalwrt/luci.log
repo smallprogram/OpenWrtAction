@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-329a9d355f|Tianling Shen|Mon Aug 25 19:32:22 2025 +0800|luci-app-diskman: remove ntfs-3g dependencies
+488a62f231|Tianling Shen|Tue Aug 26 20:04:12 2025 +0800|luci-app-mentohust: drop legacy package
 </details>

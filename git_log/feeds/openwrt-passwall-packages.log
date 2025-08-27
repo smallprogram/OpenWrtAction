@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+3aebc56|github-actions[bot]|Tue Aug 26 13:19:08 2025 +0800|v2ray-geosite: update to 202508252213 (#493)
+971e52a|zhusir|Tue Aug 26 13:12:23 2025 +0800|ci: update lang package from openwrt packages master branch
+</details>

@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-92be5b2|Joseph Mory|Mon Aug 25 23:14:39 2025 +0800|chore: call mihomo api via ubus rpc
+704ffc8|Joseph Mory|Tue Aug 26 19:52:37 2025 +0800|chore: `if` syntax in shell script
+3024f76|Joseph Mory|Tue Aug 26 19:51:36 2025 +0800|fix: profile check failed problem
 </details>

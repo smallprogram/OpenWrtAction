@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-53c1631|lwb1978|Mon Aug 25 23:22:34 2025 +0800|luci: fixup https://github.com/xiaorouji/openwrt-passwall/commit/241693dedf9f2949d008d7a4f0e0e875fe6d9476
+b3972c7|zhusir|Tue Aug 26 13:09:00 2025 +0800|ci: update lang package from openwrt packages master branch
+368371e|lwb1978|Tue Aug 26 11:28:33 2025 +0800|luci: bump to 25.8.26
 </details>

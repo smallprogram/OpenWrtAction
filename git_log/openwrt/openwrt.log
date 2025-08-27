@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+76eb96c875|Felix Fietkau|Mon Aug 25 20:31:02 2025 +0200|wifi-scripts: fix reload handling with random macaddr
+</details>

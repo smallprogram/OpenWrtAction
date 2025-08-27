@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-091fcdfdf|Tianling Shen|Mon Aug 25 13:58:33 2025 +0800|Revert "ntfs-3g: fix automount"
+cb6cad990|Tianling Shen|Tue Aug 26 20:03:35 2025 +0800|mentohust: drop legacy package
 </details>
