@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3aebc56|github-actions[bot]|Tue Aug 26 13:19:08 2025 +0800|v2ray-geosite: update to 202508252213 (#493)
-971e52a|zhusir|Tue Aug 26 13:12:23 2025 +0800|ci: update lang package from openwrt packages master branch
+3c53404|zxl hhyccc|Thu Aug 28 07:25:51 2025 +0800|trojan-plus: Optimize whether to automatically configure `boost-system` based on the `boost version` (#497)
+e8628f1|zxl hhyccc|Wed Aug 27 23:59:29 2025 +0800|trojan-plus: Fix `boost 1.89 ver` build. (#495)
 </details>

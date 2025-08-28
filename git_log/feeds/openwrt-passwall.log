@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b3972c7|zhusir|Tue Aug 26 13:09:00 2025 +0800|ci: update lang package from openwrt packages master branch
-368371e|lwb1978|Tue Aug 26 11:28:33 2025 +0800|luci: bump to 25.8.26
+b665906|A-BO|Wed Aug 27 20:38:35 2025 +0800|luci: optimize core selection logic in subscription code
 </details>

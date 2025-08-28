@@ -2,5 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-76eb96c875|Felix Fietkau|Mon Aug 25 20:31:02 2025 +0200|wifi-scripts: fix reload handling with random macaddr
+03fe596699|Felix Fietkau|Wed Aug 27 15:24:29 2025 +0200|mac80211: extend connection monitoring for MLO
+64bbe71219|Felix Fietkau|Thu Aug 14 18:43:48 2025 +0200|mt76: update to Git HEAD (2025-08-27)
+5c37d1b9a7|Felix Fietkau|Sun Aug 24 07:18:43 2025 +0200|udebug: update to Git HEAD (2025-08-24)
+3e0bcf3af7|Felix Fietkau|Sun Aug 17 11:11:42 2025 +0200|udebug: update to Git HEAD (2025-08-17)
+c1a8e48f3b|Felix Fietkau|Fri Aug 15 17:32:56 2025 +0200|udebug: update to Git HEAD (2025-08-15)
 </details>

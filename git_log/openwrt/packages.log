@@ -1,5 +1,6 @@
-<details> <summary> <b>packages new commit log :x: </b> </summary>
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-<b> It is detected that packages has an illegal SHA value. It is possible that packages has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
-
+SHA|Author|Date|Message
+-|-|-|-
+d84d73c16|Hannu Nyman|Wed Aug 27 22:29:33 2025 +0300|sing-box: Revert "sing-box: update to 1.12.3"
 </details>

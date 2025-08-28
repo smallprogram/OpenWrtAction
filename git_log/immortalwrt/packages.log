@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cb6cad990|Tianling Shen|Tue Aug 26 20:03:35 2025 +0800|mentohust: drop legacy package
+a65cf0767|Tianling Shen|Wed Aug 27 21:28:31 2025 +0800|webui-aria2: fix mirror hash
+d4bf4c30a|Tianling Shen|Wed Aug 27 21:27:30 2025 +0800|lua-maxminddb: fix mirror hash
 </details>

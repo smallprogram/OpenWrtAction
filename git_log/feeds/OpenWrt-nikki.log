@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-704ffc8|Joseph Mory|Tue Aug 26 19:52:37 2025 +0800|chore: `if` syntax in shell script
-3024f76|Joseph Mory|Tue Aug 26 19:51:36 2025 +0800|fix: profile check failed problem
+54004ae|Joseph Mory|Wed Aug 27 19:33:44 2025 +0800|chore: bump version to 1.24.1
+d95e9fb|Joseph Mory|Wed Aug 27 19:26:26 2025 +0800|chore: update mihomo to 1.19.13
 </details>

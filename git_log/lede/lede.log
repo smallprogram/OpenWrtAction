@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2bf633f92|Daniel Golle|Sat Jul 12 03:39:43 2025 +0100|x86: enable built-in driver for MMC/SDHCI
+8c95ec791|coolsnowwolf|Thu Aug 28 02:42:30 2025 +0800|mediatek: filogic: fix mt76-caldata for CMCC RAX3000M (eMMC version)
+12eec53e6|coolsnowwolf|Sun Aug 17 22:02:40 2025 +0800|kernel: bump 6.x to latest HEAD
 </details>
