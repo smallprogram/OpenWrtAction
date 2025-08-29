@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b665906|A-BO|Wed Aug 27 20:38:35 2025 +0800|luci: optimize core selection logic in subscription code
+eccb22a|A-BO|Thu Aug 28 23:23:03 2025 +0800|luci: optimize rule update logic
 </details>

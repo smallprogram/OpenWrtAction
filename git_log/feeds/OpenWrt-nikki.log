@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-54004ae|Joseph Mory|Wed Aug 27 19:33:44 2025 +0800|chore: bump version to 1.24.1
-d95e9fb|Joseph Mory|Wed Aug 27 19:26:26 2025 +0800|chore: update mihomo to 1.19.13
+f897a67|Joseph Mory|Thu Aug 28 14:18:45 2025 +0800|chore: rescan i18n
+aea0d33|Joseph Mory|Thu Aug 28 14:17:35 2025 +0800|fix: hijack failed when dns/tun not configured in profile
+e727c32|Joseph Mory|Thu Aug 28 10:34:50 2025 +0800|chore: drop `Endpoint Independent NAT` mixin option
 </details>

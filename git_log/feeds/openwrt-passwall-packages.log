@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3c53404|zxl hhyccc|Thu Aug 28 07:25:51 2025 +0800|trojan-plus: Optimize whether to automatically configure `boost-system` based on the `boost version` (#497)
-e8628f1|zxl hhyccc|Wed Aug 27 23:59:29 2025 +0800|trojan-plus: Fix `boost 1.89 ver` build. (#495)
+0e4b2c7|zxl hhyccc|Thu Aug 28 23:26:04 2025 +0800|trojan-plus: optimize `boost version` check. (#499)
+dfdc4bd|github-actions[bot]|Thu Aug 28 19:13:57 2025 +0800|sing-box: update to 1.12.4 (#498)
 </details>

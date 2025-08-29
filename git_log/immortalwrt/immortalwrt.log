@@ -1,8 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-4d760a9f6f|Tianling Shen|Wed Aug 27 20:05:54 2025 +0800|r8152: Update to 2.20.1
-49a0ca84a9|ZiMing Mo|Sun Sep 29 21:41:31 2024 +0800|ppp: fix: get IPv6-PD fail while pppoe re-connect
-9a7e138293|Tianling Shen|Wed Aug 27 13:22:37 2025 +0800|uhttpd: disable listen https by default
-</details>

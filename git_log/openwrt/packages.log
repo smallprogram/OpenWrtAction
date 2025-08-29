@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d84d73c16|Hannu Nyman|Wed Aug 27 22:29:33 2025 +0300|sing-box: Revert "sing-box: update to 1.12.3"
+f4a0ee01e|Thibaut VARÈNE|Fri Jun 13 14:44:46 2025 +0200|libradcli: fix build options
 </details>

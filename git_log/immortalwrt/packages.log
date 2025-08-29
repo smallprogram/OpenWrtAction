@@ -1,7 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-a65cf0767|Tianling Shen|Wed Aug 27 21:28:31 2025 +0800|webui-aria2: fix mirror hash
-d4bf4c30a|Tianling Shen|Wed Aug 27 21:27:30 2025 +0800|lua-maxminddb: fix mirror hash
-</details>
