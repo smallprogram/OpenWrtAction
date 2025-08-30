@@ -1,0 +1,82 @@
+<details> <summary> <b>OpenClash new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+11c718fa|vernesong|Sat Aug 30 00:51:30 2025 +0800|Merge branch 'dev'
+eaf479cc|vernesong|Sat Aug 30 00:42:47 2025 +0800|0.47.001
+15acf3fb|vernesong|Fri Aug 29 19:53:57 2025 +0800|0.46.159
+ce6cded4|vernesong|Fri Aug 29 19:52:38 2025 +0800|chore: overwrite conf use properties mode
+2ad1037d|vernesong|Fri Aug 29 19:36:45 2025 +0800|chore: update default config dns
+bdba99c8|vernesong|Fri Aug 29 19:30:58 2025 +0800|0.46.158
+f7039e3e|vernesong|Fri Aug 29 19:30:36 2025 +0800|chore: update overwrite default conf
+07f2d782|vernesong|Fri Aug 29 08:56:48 2025 +0800|chore: repetitive translation
+c8d5a1b0|vernesong|Fri Aug 29 08:05:28 2025 +0800|workflow: delete artifact
+a936e4d6|vernesong|Fri Aug 29 07:51:49 2025 +0800|0.46.157
+6c748f0e|Zhong Lufan (钟路帆)|Fri Aug 29 07:38:13 2025 +0800|feat: restart only when dnsmasq is enabled (#4674)
+a55f2193|vernesong|Fri Aug 29 07:36:29 2025 +0800|chore: add core privilege check if smart type
+85c3c86e|vernesong|Fri Aug 29 06:56:25 2025 +0800|workflow: compile use matrix
+cecc53e6|github-actions[bot]|Thu Aug 28 00:45:39 2025 +0000|Chore: update third-party resources
+ea9808e5|vernesong|Wed Aug 27 20:14:20 2025 +0800|0.46.156
+0d0d1cfa|vernesong|Wed Aug 27 11:30:52 2025 +0800|chore: log out overwrite script
+69ff8860|vernesong|Tue Aug 26 18:00:17 2025 +0800|chore: refine
+679f8300|vernesong|Tue Aug 26 13:21:57 2025 +0800|0.46.155
+8f378a1e|Aethersailor|Tue Aug 26 09:39:46 2025 +0800|chore: add more subscription conversion templates (#4670)
+03905554|vernesong|Tue Aug 26 00:40:46 2025 +0800|0.46.154
+bd72dec5|vernesong|Mon Aug 25 22:08:38 2025 +0800|0.46.153
+6d6e04b3|vernesong|Mon Aug 25 22:08:18 2025 +0800|fix: module not pollution master uci settings
+17beb1b6|vernesong|Mon Aug 25 17:49:53 2025 +0800|0.46.152
+12b30095|vernesong|Mon Aug 25 13:06:02 2025 +0800|0.46.151
+ad44d7aa|vernesong|Mon Aug 25 12:36:49 2025 +0800|fix typo
+450ff319|vernesong|Mon Aug 25 11:12:40 2025 +0800|chore: add restart option for module
+87883bbe|github-actions[bot]|Mon Aug 25 00:45:39 2025 +0000|Chore: update third-party resources
+9448d1d1|vernesong|Sun Aug 24 10:41:09 2025 +0800|0.46.150
+87852e5c|vernesong|Sun Aug 24 10:25:06 2025 +0800|feat: add overwrite module subscription
+7a942460|github-actions[bot]|Fri Aug 22 00:45:53 2025 +0000|Chore: update third-party resources
+64fbb925|github-actions[bot]|Tue Aug 19 00:45:48 2025 +0000|Chore: update third-party resources
+b25e1db3|vernesong|Mon Aug 18 08:43:12 2025 +0800|fix #4657
+42467d1c|github-actions[bot]|Sat Aug 16 00:45:48 2025 +0000|Chore: update third-party resources
+4a51ed41|github-actions[bot]|Wed Aug 13 00:45:45 2025 +0000|Chore: update third-party resources
+656c7e63|vernesong|Mon Aug 11 23:55:53 2025 +0800|chore: refine
+597a8cb1|vernesong|Mon Aug 11 18:27:58 2025 +0800|0.46.149
+811afaf0|vernesong|Mon Aug 11 11:40:14 2025 +0800|chore: refine
+b03ddc33|github-actions[bot]|Sun Aug 10 00:47:29 2025 +0000|Chore: update third-party resources
+1b0831c9|vernesong|Sun Aug 10 03:03:46 2025 +0800|chore: refine
+ac7ded26|vernesong|Sat Aug 9 23:37:43 2025 +0800|0.46.148
+813b8501|vernesong|Sat Aug 9 22:00:53 2025 +0800|chore: separate collector option in smart tab
+cd34df38|vernesong|Fri Aug 8 15:15:36 2025 +0800|#4637
+9ac1f162|github-actions[bot]|Thu Aug 7 00:45:57 2025 +0000|Chore: update third-party resources
+1452d3c8|vernesong|Wed Aug 6 23:50:37 2025 +0800|0.46.147
+700b0a6f|vernesong|Wed Aug 6 20:57:18 2025 +0800|chore: model path
+84e3016f|vernesong|Wed Aug 6 18:07:58 2025 +0800|chore: latency on upgrade window use router self results
+b15a0c9b|vernesong|Wed Aug 6 09:03:13 2025 +0800|chore: refine translation
+ee941511|vernesong|Wed Aug 6 04:02:17 2025 +0800|0.46.146
+4c54649f|vernesong|Wed Aug 6 03:48:37 2025 +0800|0.46.145
+933fdd60|vernesong|Wed Aug 6 01:23:57 2025 +0800|0.46.144
+c82a1126|vernesong|Wed Aug 6 00:27:54 2025 +0800|0.46.143
+2edbafa3|vernesong|Wed Aug 6 00:27:32 2025 +0800|chore: overwrite add smart settings tab
+c86d0c46|vernesong|Tue Aug 5 18:33:38 2025 +0800|chore: refine
+84e7d5f6|github-actions[bot]|Mon Aug 4 00:48:42 2025 +0000|Chore: update third-party resources
+28df06b4|github-actions[bot]|Fri Aug 1 00:49:32 2025 +0000|Chore: update third-party resources
+d0b6aca8|vernesong|Thu Jul 31 11:24:51 2025 +0800|chore: duplicate copy file when upgrade
+3fd5b676|github-actions[bot]|Thu Jul 31 00:45:53 2025 +0000|Chore: update third-party resources
+55d2a241|vernesong|Thu Jul 31 02:30:04 2025 +0800|0.46.142
+c17b20c3|vernesong|Wed Jul 30 21:40:52 2025 +0800|chore: add timeout for ruby read #4600
+2e35ed46|vernesong|Tue Jul 29 16:07:32 2025 +0800|0.46.141
+a63a8f0a|vernesong|Tue Jul 29 12:31:20 2025 +0800|fix: iptables icmp reject
+004b435d|vernesong|Tue Jul 29 08:19:23 2025 +0800|0.46.140
+7b49eded|Ljcbaby|Tue Jul 29 08:10:50 2025 +0800|feat(fw): add icmp icmp-admin-prohibited (#4525)
+ad2d12e8|Mimi|Tue Jul 29 08:02:13 2025 +0800|fix: remove duplicate keys in openclash.zh-cn.po (#4614)
+d9cffffe|vernesong|Tue Jul 29 08:00:28 2025 +0800|fix: dec not work
+19178ff6|vernesong|Mon Jul 28 23:00:09 2025 +0800|chore: update amd64 version
+babc4be8|github-actions[bot]|Mon Jul 28 00:48:03 2025 +0000|Chore: update third-party resources
+a1101db5|vernesong|Sun Jul 27 20:27:25 2025 +0800|0.46.139
+640dc1d0|vernesong|Sun Jul 27 20:06:15 2025 +0800|chore: refine
+997ae76e|vernesong|Fri Jul 25 12:05:22 2025 +0800|chore: add icon for current config
+cfa2262f|github-actions[bot]|Fri Jul 25 00:46:40 2025 +0000|Chore: update third-party resources
+8a13ff84|vernesong|Thu Jul 24 19:38:20 2025 +0800|chore: refine
+a63929f8|vernesong|Wed Jul 23 13:29:49 2025 +0800|0.46.138
+15a1e07d|vernesong|Tue Jul 22 13:21:02 2025 +0800|chore: refine
+38ff54b0|github-actions[bot]|Tue Jul 22 00:47:11 2025 +0000|Chore: update third-party resources
+0cb8cfd4|vernesong|Sun Jul 20 04:40:48 2025 +0800|chore: refine cdn select window
+8ca72801|vernesong|Sun Jul 20 01:30:19 2025 +0800|chore: saveBtn disabled
+</details>

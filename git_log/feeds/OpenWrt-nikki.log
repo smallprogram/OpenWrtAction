@@ -1,8 +1,0 @@
-<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-f897a67|Joseph Mory|Thu Aug 28 14:18:45 2025 +0800|chore: rescan i18n
-aea0d33|Joseph Mory|Thu Aug 28 14:17:35 2025 +0800|fix: hijack failed when dns/tun not configured in profile
-e727c32|Joseph Mory|Thu Aug 28 10:34:50 2025 +0800|chore: drop `Endpoint Independent NAT` mixin option
-</details>

@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-a65ca44cb7|Hauke Mehrtens|Sun Aug 24 17:21:54 2025 +0000|kernel: bump 6.6 to 6.6.102
-406489fd83|Hauke Mehrtens|Sun Aug 24 14:48:46 2025 +0000|kernel: bump 6.6 to 6.6.101
-</details>

@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-eccb22a|A-BO|Thu Aug 28 23:23:03 2025 +0800|luci: optimize rule update logic
+2c9b53e|lwb1978|Fri Aug 29 18:48:19 2025 +0800|luci: fix hy(2) node filtered when port is missing
+338d84b|lwb1978|Fri Aug 29 15:10:37 2025 +0800|luci: fixup https://github.com/xiaorouji/openwrt-passwall/commit/b66590626555a4f7bb33ff592e50eae30f6c5a3d
 </details>

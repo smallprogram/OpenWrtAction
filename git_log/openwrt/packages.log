@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f4a0ee01e|Thibaut VARÈNE|Fri Jun 13 14:44:46 2025 +0200|libradcli: fix build options
+db7e54807|George Sapkin|Tue Aug 26 20:30:43 2025 +0300|yt-dlp: bump to 2025.08.22
+ca56e5c2d|Stan Grishin|Tue Aug 26 03:46:56 2025 +0000|adblock-fast: update to 1.1.4-r12
 </details>

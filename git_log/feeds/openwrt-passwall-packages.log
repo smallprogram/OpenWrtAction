@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-0e4b2c7|zxl hhyccc|Thu Aug 28 23:26:04 2025 +0800|trojan-plus: optimize `boost version` check. (#499)
-dfdc4bd|github-actions[bot]|Thu Aug 28 19:13:57 2025 +0800|sing-box: update to 1.12.4 (#498)
-</details>

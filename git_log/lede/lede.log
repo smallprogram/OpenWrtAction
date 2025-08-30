@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6df2631c5|zhusir|Thu Sep 12 17:20:19 2024 +0800|Revert "switch luci to openwrt-24.10"
-583ba0cbe|coolsnowwolf|Sat Aug 16 22:10:09 2025 +0800|mediatek: fix wifi on cmcc devices
-8c95ec791|coolsnowwolf|Thu Aug 28 02:42:30 2025 +0800|mediatek: filogic: fix mt76-caldata for CMCC RAX3000M (eMMC version)
+4d3dcbf7c|Internet1235|Fri Aug 29 15:52:03 2025 +0800|libselinux: update to 3.8.1 (#13679)
 </details>
