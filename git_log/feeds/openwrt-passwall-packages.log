@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6f115e2|zxl hhyccc|Sat Aug 30 22:13:05 2025 +0800|trojan-plus: update `boost1.89` build patch. (#501)
+9d0068c|georgekart|Sat Aug 30 14:58:29 2025 +0400|xray-core: update to 25.8.29 (#500)
+</details>
