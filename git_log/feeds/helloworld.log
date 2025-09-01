@@ -1,7 +1,0 @@
-<details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-c341a4f|zxl hhyccc|Sat Aug 30 23:21:24 2025 +0800|Update 002-Fix-boost1.89-build.patch
-334f00f|zxl hhyccc|Sat Aug 30 17:25:55 2025 +0800|trojan: update `boost1.89` build patch.
-</details>

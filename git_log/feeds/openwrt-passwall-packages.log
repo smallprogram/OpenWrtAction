@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6f115e2|zxl hhyccc|Sat Aug 30 22:13:05 2025 +0800|trojan-plus: update `boost1.89` build patch. (#501)
-9d0068c|georgekart|Sat Aug 30 14:58:29 2025 +0400|xray-core: update to 25.8.29 (#500)
+f002d6d|github-actions[bot]|Sun Aug 31 22:35:19 2025 +0800|xray-core: update to 25.8.31 (#503)
+180a522|github-actions[bot]|Sun Aug 31 22:34:53 2025 +0800|v2ray-geosite: update to 202508302212 (#502)
+3140dca|github-actions[bot]|Sun Aug 31 22:34:27 2025 +0800|v2ray-geoip: update to 202508280020 (#504)
 </details>

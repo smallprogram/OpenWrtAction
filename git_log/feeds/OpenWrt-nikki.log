@@ -1,7 +1,0 @@
-<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-7327550|Joseph Mory|Sat Aug 30 15:59:30 2025 +0800|chore: code style
-a790fea|moetayuko|Sat Aug 30 15:43:30 2025 +0800|fix: start delay in background (#695)
-</details>

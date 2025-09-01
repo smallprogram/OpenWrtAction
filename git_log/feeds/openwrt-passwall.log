@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d13c49d|A-BO|Sun Aug 31 23:15:54 2025 +0800|luci: xray: add `maxSplit` fragment option; add `applyTo` noises option
+402d318|A-BO|Sun Aug 31 20:50:40 2025 +0800|luci: optimize
+b38704f|A-BO|Sun Aug 31 20:46:12 2025 +0800|luci: bypass proxy for local ip in xray/sing-box remote dns
+</details>
