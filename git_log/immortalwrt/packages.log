@@ -1,8 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-5a38374a4|Tianling Shen|Sun Aug 31 22:47:22 2025 +0800|pcat-mgr: add new package
-ee216bbcb|Tianling Shen|Sat Aug 30 22:20:56 2025 +0800|sendat: update to Git HEAD (2024-01-22)
-9a4327b6b|Tianling Shen|Sat Aug 30 22:16:07 2025 +0800|tinymembench: update mirror hash
-</details>

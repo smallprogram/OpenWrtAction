@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4597fa46|chen-wilde|Mon Sep 1 03:03:56 2025 +0800|luci-app-keepalived: sync translations (#372)
+20cbaa6899|Tianling Shen|Tue Aug 5 17:17:05 2025 +0800|luci-app-airwhu: drop legacy package
 </details>

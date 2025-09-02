@@ -1,0 +1,8 @@
+<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+9fd79af|Joseph Mory|Mon Sep 1 23:17:29 2025 +0800|feat: add subscription info url
+3db5170|Joseph Mory|Mon Sep 1 22:23:18 2025 +0800|chore: code style
+cea339f|Joseph Mory|Mon Sep 1 19:23:13 2025 +0800|feat: support prepend proxy group
+</details>
