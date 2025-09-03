@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c77f2b442e|Grzegorz Sterniczuk|Sun Jul 13 17:22:33 2025 +0200|rockchip: fix eMMC corruption on NanoPC-T6 with A3A444 chips
-2a2f1573a7|Hauke Mehrtens|Mon Sep 1 01:52:47 2025 +0200|rpcd: update to git openwrt-24.10 branch HEAD
+b4b9288f2a|Hauke Mehrtens|Sun Aug 31 21:43:06 2025 +0200|mac80211: Update to 6.12.44
+faf4f1e49e|Donghyun Ko|Wed Jul 23 02:20:27 2025 +0900|mediatek: add factory image for ipTIME AX3000SM
+8b0eb9c91d|Hauke Mehrtens|Mon Sep 1 23:11:02 2025 +0200|kernel: Fix kernel regression in local-broadcast routes
+c676281e7e|Goetz Goerisch|Fri Aug 29 11:03:10 2025 +0200|kernel: bump 6.6 to 6.6.103
 </details>

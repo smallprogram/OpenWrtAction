@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-11c629f|A-BO|Mon Sep 1 22:50:07 2025 +0800|luci: improve https://github.com/xiaorouji/openwrt-passwall/commit/42e722b16f8ea9ffc082046b1368a82d3c0ceef8
-42e722b|OrzLee|Mon Sep 1 21:44:14 2025 +0800|luci: xray settings support xhttp selection flow (#4050)
-9421a19|lwb1978|Mon Sep 1 11:56:49 2025 +0800|luci: optimize control titles and translations
+793e860|A-BO|Wed Sep 3 00:55:10 2025 +0800|luci: bump to 25.9.3
+57dce7c|A-BO|Wed Sep 3 00:53:01 2025 +0800|luci: update default rules
 </details>

@@ -2,23 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5b02ab553a|Dim Fish|Fri Jul 4 11:50:35 2025 +0300|uboot-mediatek: force update_cache_variants to use reset for Foresee NAND
-911ba0fddf|Shiji Yang|Sat Jan 25 19:16:48 2025 +0800|uboot-mediatek: enable auto switch chip detect for Xiaomi AX3000T
-4a8b0505b0|Shiji Yang|Thu Jan 9 18:10:28 2025 +0800|uboot-mediatek: backport mtk_eth fixes from u-boot next
-b7711fb575|Tianling Shen|Mon Sep 1 14:54:04 2025 +0800|Merge Official Source
-9de2da13bf|Felix Fietkau|Sun Aug 31 20:28:52 2025 +0200|kernel: mtk_eth_soc: fix tx vlan tag for llc packets
-af3a18db95|Hauke Mehrtens|Sun Aug 3 01:07:33 2025 +0200|tools: firmware-utils: update to Git HEAD (2025-08-03)
-d9179345ea|Hauke Mehrtens|Thu Jul 24 23:41:49 2025 +0200|tools: firmware-utils: update to Git HEAD (2025-07-24)
-4576d311f8|Markus Stockhausen|Sat Jul 19 16:14:28 2025 -0400|realtek: fix stall after restart of otto timer
-203c9f063b|Markus Stockhausen|Thu Jul 10 16:00:46 2025 -0400|realtek: avoid interrupt storm on mass packet receive
-3db4d8f23a|Igor Dyatlov|Sun Aug 3 17:20:00 2025 +0300|ath79: add calibtation variant for Xiaomi AIoT AC2350
-3180294897|Igor Dyatlov|Sun Aug 3 17:02:33 2025 +0300|ipq-wifi: add entry for Xiaomi AIoT AC2350
-e6bb072af5|Robert Marko|Mon Aug 25 10:51:03 2025 +0200|ipq-wifi: update to Git HEAD (2025-08-25)
-d247904482|Robert Marko|Tue Aug 12 11:11:47 2025 +0200|ipq-wifi: update to Git HEAD (2025-08-12)
-8e5c83ca85|Robert Marko|Sun Jun 29 18:03:53 2025 +0200|ipq-wifi: update to Git HEAD (2025-06-23)
-c4ea5c0732|Daniel Golle|Tue Jun 10 18:51:14 2025 +0200|ipq-wifi: add BDF for IgniteNet SS-W2-AC2600
-777d90a935|Robert Marko|Fri Jun 13 10:57:04 2025 +0200|ipq-wifi: update to Git HEAD (2025-06-13)
-bd7ab1e9ce|Robert Marko|Thu Jun 12 10:53:36 2025 +0200|ipq-wifi: update to Git HEAD (2025-06-11)
-6ae235bcd0|Mathew McBride|Thu Jan 16 12:27:58 2025 +1100|armsr: remove 'console=tty1' from kernel command line
-20271bf505|Mathew McBride|Thu Jan 16 12:20:56 2025 +1100|armsr: add patch (hack) to enable all "default" consoles
+24b641b811|Tianling Shen|Tue Sep 2 15:04:29 2025 +0800|mediatek: update led gpio for tplink tl-7dr7230 v2
+48a28170e6|gns|Mon Sep 1 18:15:13 2025 +0800|arm-trusted-firmware-mediatek: add MT7988 BL2 DDR3 RAM image
+c80255d28d|John Crispin|Fri Jan 17 11:25:18 2025 +0100|arm-trusted-firmware-mediatek: add MT7988 BL2 DDR4 images
 </details>
