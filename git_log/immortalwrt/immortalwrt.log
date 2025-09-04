@@ -1,8 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-24b641b811|Tianling Shen|Tue Sep 2 15:04:29 2025 +0800|mediatek: update led gpio for tplink tl-7dr7230 v2
-48a28170e6|gns|Mon Sep 1 18:15:13 2025 +0800|arm-trusted-firmware-mediatek: add MT7988 BL2 DDR3 RAM image
-c80255d28d|John Crispin|Fri Jan 17 11:25:18 2025 +0100|arm-trusted-firmware-mediatek: add MT7988 BL2 DDR4 images
-</details>

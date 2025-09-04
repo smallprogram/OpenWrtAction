@@ -1,6 +1,0 @@
-<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-dbf286a|Joseph Mory|Tue Sep 2 19:34:07 2025 +0800|ci: exclude mips_4kec arch for SNAPSHOT branch in workflows
-</details>

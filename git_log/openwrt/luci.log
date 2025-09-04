@@ -1,7 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-b8bc15bef6|Joseph Mory|Fri May 30 20:32:47 2025 +0800|luci-base: fix table option does not show in non-Bootstrap themes when it has depends
-d968d20a7d|Paul Donald|Tue Sep 2 15:14:58 2025 +0200|luci-mod-network: Change cache placeholder to internal default 150
-</details>
