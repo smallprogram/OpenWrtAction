@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-25f55a3a5|coolsnowwolf|Sun Aug 10 22:24:20 2025 +0800|kernel: refresh ipq 6.12 patches
+6e98a86bb|coolsnowwolf|Fri Sep 5 12:34:42 2025 +0800|bcm53xx: add Tenda AC9 switch workaround
 </details>
