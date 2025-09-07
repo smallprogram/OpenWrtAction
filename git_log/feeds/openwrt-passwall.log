@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+be406f7|A-BO|Sat Sep 6 12:29:25 2025 +0800|luci: adjust not to start new processes when xray nodes enable flow
+dbf8146|A-BO|Sat Sep 6 12:19:45 2025 +0800|luci: optimize update_app download arg
+f6dfb2d|A-BO|Sat Sep 6 12:00:23 2025 +0800|luci: optimize and remove redundant code
+</details>

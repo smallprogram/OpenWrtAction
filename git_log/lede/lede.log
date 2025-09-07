@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6e98a86bb|coolsnowwolf|Fri Sep 5 12:34:42 2025 +0800|bcm53xx: add Tenda AC9 switch workaround
+7363df546|coolsnowwolf|Sat Sep 6 17:36:14 2025 +0800|generic: fix linux kernel 5.4 with mt76 build
+df34fd611|coolsnowwolf|Sat Sep 6 17:08:52 2025 +0800|kernel: bump all to latest HEAD
 </details>
