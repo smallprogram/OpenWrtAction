@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f70b4a4c6|Anton P.|Sat Aug 30 18:36:40 2025 +0300|sing-box: Update to 1.12.4
+27d9a579a|Hannu Nyman|Wed Sep 3 19:36:19 2025 +0300|sing-box: Properly set only the full variant as default
+4f1cade7b|Van Waholtz|Mon Sep 1 01:22:20 2025 +0800|sing-box: add variant tiny
 </details>
