@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5974396ac|Aleksander Jan Bajkowski|Sun Aug 31 21:54:34 2025 +0200|kernel: add quirk for two SFP+ transceivers
+8348c7fab|Internet1235|Mon Sep 8 14:35:10 2025 +0800|mdadm: update to 4.4 (#13694)
 </details>

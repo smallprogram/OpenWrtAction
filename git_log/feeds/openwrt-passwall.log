@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+c6bc49d|ZqinKing|Mon Sep 8 22:25:43 2025 +0800|luci: remove `tcpNoDelay` option from xray client configuration (#4055)
+d29dda7|A-BO|Mon Sep 8 22:14:20 2025 +0800|luci: optimize the input logic of the balancing and urltest node lists
+</details>

@@ -1,0 +1,8 @@
+<details> <summary> <b>routing new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+bdbd09d|Simon Wunderlich|Mon Sep 8 08:07:20 2025 +0200|Merge pull request #1139 from ecsv/batadv-for-24.10
+30c8f55|Sven Eckelmann|Fri Sep 5 16:19:21 2025 +0200|batctl: Merge bugfixes from 2025.3
+5a23f88|Sven Eckelmann|Fri Sep 5 16:19:21 2025 +0200|batman-adv: Merge bugfixes from 2025.3
+</details>
