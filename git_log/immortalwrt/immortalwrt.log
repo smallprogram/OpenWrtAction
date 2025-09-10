@@ -1,0 +1,12 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+2af012e860|Tianling Shen|Tue Sep 9 21:33:04 2025 +0800|Merge Official Source
+49ec0695ca|Aviana Cruz|Tue Sep 9 05:57:22 2025 +0000|odhcpd: improve RFC 9096 compliance for lifetimes
+bc9f1cab83|Jan Kardell|Mon Sep 8 08:52:40 2025 +0200|libxml2: Add abi version
+cd0b1a209f|Donghyun Ko|Thu Jul 10 21:24:18 2025 +0900|mediatek: filogic: add support for ipTIME AX3000Q
+99bae668a2|Marty Jones|Sun Jun 15 21:07:46 2025 -0400|rockchip: add RK3588 Hardware Random Number Generator
+e64f54cc15|Fil Dunsky|Wed Aug 20 16:15:55 2025 +0300|mediatek: Huasifei WH3000 Pro wifi fix
+fe3d783d1e|Goetz Goerisch|Thu Sep 4 18:07:03 2025 +0200|kernel: bump 6.6 to 6.6.104
+</details>

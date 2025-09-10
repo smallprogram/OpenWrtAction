@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c6bc49d|ZqinKing|Mon Sep 8 22:25:43 2025 +0800|luci: remove `tcpNoDelay` option from xray client configuration (#4055)
-d29dda7|A-BO|Mon Sep 8 22:14:20 2025 +0800|luci: optimize the input logic of the balancing and urltest node lists
+62f0046|ZqinKing|Tue Sep 9 21:37:14 2025 +0800|luci: adjust xray xhttp to only support xudp (#4058)
+faad0d3|A-BO|Tue Sep 9 21:21:20 2025 +0800|luci: move `qrcode.min.js` to private path to avoid conflicts
+37da26b|lwb1978|Tue Sep 9 17:21:55 2025 +0800|luci: optimize the xray balancing configuration code
 </details>
