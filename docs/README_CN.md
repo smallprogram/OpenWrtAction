@@ -128,7 +128,6 @@ CONFIG_PACKAGE_luci-app-wechatpush=y
 ```
 CONFIG_PACKAGE_luci-app-eqos=y
 CONFIG_PACKAGE_luci-app-sqm=y
-CONFIG_PACKAGE_luci-app-nft-qos=y
 CONFIG_PACKAGE_luci-app-firewall=y
 CONFIG_PACKAGE_luci-app-statistics=y
 CONFIG_PACKAGE_luci-app-vnstat2=y
