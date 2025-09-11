@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b7d24cbad|Zoltan HERPAI|Sun Feb 16 21:18:13 2025 +0000|uboot-sunxi: bump to 2025.01
+d141ed276|Andres Heinloo|Wed Aug 6 16:40:29 2025 +0200|kernel: add w1 ds2438 module
 </details>

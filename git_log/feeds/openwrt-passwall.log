@@ -2,7 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-62f0046|ZqinKing|Tue Sep 9 21:37:14 2025 +0800|luci: adjust xray xhttp to only support xudp (#4058)
-faad0d3|A-BO|Tue Sep 9 21:21:20 2025 +0800|luci: move `qrcode.min.js` to private path to avoid conflicts
-37da26b|lwb1978|Tue Sep 9 17:21:55 2025 +0800|luci: optimize the xray balancing configuration code
+9e66cf0|A-BO|Thu Sep 11 00:52:11 2025 +0800|luci: optimize the saving logic of the rule update checkbox in rule management
+084ee38|ZqinKing|Wed Sep 10 23:47:59 2025 +0800|luci: xhttp does not require separate settings for xmux (#4061)
+9f22c6c|lwb1978|Wed Sep 10 11:17:28 2025 +0800|luci: update package dependencies
+deee690|lwb1978|Wed Sep 10 09:44:38 2025 +0800|luci: remove the alias `splithttp` for `xhttp`
+1458e1e|lwb1978|Wed Sep 10 09:17:54 2025 +0800|luci: remove the `quic` and `domainsocket` transport for xray
 </details>

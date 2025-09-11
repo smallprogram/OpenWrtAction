@@ -1,0 +1,8 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0ee9f68370|Tianling Shen|Wed Sep 10 16:34:07 2025 +0800|Merge Official Source
+3696cb8b47|Coia Prant|Tue Sep 2 05:38:37 2025 +0000|luci-mod-battstatus: Add photonicat support
+923f8d991a|Hannu Nyman|Sun Sep 7 19:57:19 2025 +0300|treewide: backport translations - i18n
+</details>
