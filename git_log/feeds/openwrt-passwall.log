@@ -2,9 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9e66cf0|A-BO|Thu Sep 11 00:52:11 2025 +0800|luci: optimize the saving logic of the rule update checkbox in rule management
-084ee38|ZqinKing|Wed Sep 10 23:47:59 2025 +0800|luci: xhttp does not require separate settings for xmux (#4061)
-9f22c6c|lwb1978|Wed Sep 10 11:17:28 2025 +0800|luci: update package dependencies
-deee690|lwb1978|Wed Sep 10 09:44:38 2025 +0800|luci: remove the alias `splithttp` for `xhttp`
-1458e1e|lwb1978|Wed Sep 10 09:17:54 2025 +0800|luci: remove the `quic` and `domainsocket` transport for xray
+615ed73|lwb1978|Thu Sep 11 10:21:14 2025 +0800|luci: optimize subscribe and import
+ad4750b|ZqinKing|Thu Sep 11 09:20:40 2025 +0800|luci: remove `xmux` configuration not compatible with xray, improve `mux.cool` (#4064)
 </details>
