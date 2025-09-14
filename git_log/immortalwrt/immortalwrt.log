@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c93c3ff058|Tianling Shen|Fri Sep 12 16:54:52 2025 +0800|r8152: switch to official tarball
+902a66eabf|Tianling Shen|Sat Sep 13 20:49:15 2025 +0800|cpufreq: do not specify cpufreq for rk3588
 </details>
