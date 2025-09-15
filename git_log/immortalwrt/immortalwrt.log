@@ -2,5 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-902a66eabf|Tianling Shen|Sat Sep 13 20:49:15 2025 +0800|cpufreq: do not specify cpufreq for rk3588
+1be1f3caa5|Tianling Shen|Sun Sep 14 21:46:55 2025 +0800|rockchip: include luci-mod-battstatus for ariaboard photonicat by default
+71403635fc|Tianling Shen|Sun Sep 14 19:16:14 2025 +0800|Merge Official Source
+f3a27d09e2|Álvaro Fernández Rojas|Thu Sep 11 13:15:16 2025 +0200|kernel: r8127: update to v11.015.00
+4d6cb65ee0|Álvaro Fernández Rojas|Thu Sep 11 13:11:59 2025 +0200|kernel: r8126: update to v10.016.00
+03497e6feb|Álvaro Fernández Rojas|Thu Sep 11 13:11:11 2025 +0200|kernel: r8125: update to v9.016.01
+05e6fe692b|Felix Fietkau|Fri Sep 12 14:39:48 2025 +0200|kernel: mtk_eth_soc: zero-initialize PPE flow tables
+c60b94a195|Andy Chiang|Wed Sep 10 01:23:47 2025 +0700|kernel: r8168: add missing flags
 </details>

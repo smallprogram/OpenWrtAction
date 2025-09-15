@@ -2,11 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e1c314797|Lukas Voegl|Fri Jun 27 12:36:57 2025 +0200|treewide: include `nls.mk` when depending on glib2
-858713567|Daniel Golle|Sat Apr 26 05:07:26 2025 +0100|fluidsynth: update to version 2.4.5
-3a68aa2ae|Daniel Golle|Thu Nov 7 20:20:50 2024 +0000|fluidsynth: add package
-8f71395fc|Daniel Golle|Sat Apr 26 04:29:59 2025 +0100|glib-networking: update to version 2.80.1
-055f36362|Daniel Golle|Mon Nov 11 19:36:35 2024 +0000|glib-networking: add package
-5613127a8|Daniel Golle|Tue Nov 5 03:18:16 2024 +0000|shared-mime-info: fix post-install behaviour
-a94519e64|Tianling Shen|Fri Sep 5 22:03:15 2025 +0800|rust: add loongarch64 and powerpc to supported targets
+d1aea2b0f|Dan Srebnick|Mon Sep 1 11:45:15 2025 -0400|ampr-ripd: script improvements and add QA script
+3abbc29a9|Dan Srebnick|Thu Apr 3 16:15:33 2025 -0400|ampr-ripd: Initial package release
 </details>
