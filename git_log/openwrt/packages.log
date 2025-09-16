@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d1aea2b0f|Dan Srebnick|Mon Sep 1 11:45:15 2025 -0400|ampr-ripd: script improvements and add QA script
-3abbc29a9|Dan Srebnick|Thu Apr 3 16:15:33 2025 -0400|ampr-ripd: Initial package release
+c1b9770ad|John Audia|Fri Jul 18 09:46:45 2025 -0400|snort3: fix logic in gpertools-runtime depends
+017695353|John Audia|Tue Aug 12 03:52:32 2025 -0400|snort3: update to 3.9.3.0
 </details>
