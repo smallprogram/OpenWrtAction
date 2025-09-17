@@ -1,7 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-fc8265090f|Tianling Shen|Sun Sep 14 20:56:12 2025 +0800|luci-app-filebrowser-go: add login tips
-3700ee08e9|Tianling Shen|Sun Sep 14 16:20:52 2025 +0800|luci-app-homeproxy: bump to latest git HEAD
-</details>

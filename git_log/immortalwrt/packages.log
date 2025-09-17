@@ -1,0 +1,48 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+21a907642|Tianling Shen|Tue Sep 16 21:38:27 2025 +0800|Merge Official Source
+245cf57b0|Gregory Gullin|Sat Aug 16 15:05:14 2025 +0300|nnn: update to version 5.1
+43b2aff8f|Glenn Strauss|Fri Sep 12 18:05:57 2025 -0400|lighttpd: update to lighttpd 1.4.82 release hash
+76abdbe65|Glenn Strauss|Sun Aug 17 03:45:36 2025 -0400|lighttpd: update to lighttpd 1.4.81 release hash
+c1b9770ad|John Audia|Fri Jul 18 09:46:45 2025 -0400|snort3: fix logic in gpertools-runtime depends
+017695353|John Audia|Tue Aug 12 03:52:32 2025 -0400|snort3: update to 3.9.3.0
+d1aea2b0f|Dan Srebnick|Mon Sep 1 11:45:15 2025 -0400|ampr-ripd: script improvements and add QA script
+3abbc29a9|Dan Srebnick|Thu Apr 3 16:15:33 2025 -0400|ampr-ripd: Initial package release
+e1c314797|Lukas Voegl|Fri Jun 27 12:36:57 2025 +0200|treewide: include `nls.mk` when depending on glib2
+858713567|Daniel Golle|Sat Apr 26 05:07:26 2025 +0100|fluidsynth: update to version 2.4.5
+3a68aa2ae|Daniel Golle|Thu Nov 7 20:20:50 2024 +0000|fluidsynth: add package
+8f71395fc|Daniel Golle|Sat Apr 26 04:29:59 2025 +0100|glib-networking: update to version 2.80.1
+055f36362|Daniel Golle|Mon Nov 11 19:36:35 2024 +0000|glib-networking: add package
+5613127a8|Daniel Golle|Tue Nov 5 03:18:16 2024 +0000|shared-mime-info: fix post-install behaviour
+a94519e64|Tianling Shen|Fri Sep 5 22:03:15 2025 +0800|rust: add loongarch64 and powerpc to supported targets
+db8013426|Roman Azarenko|Wed Aug 13 13:28:33 2025 +0200|nginx: update CPE ID
+1ad8b179e|Robert Marko|Wed Mar 5 14:03:40 2025 +0100|nginx: actually download the specified git commit hash
+bbc286bc3|Vladimír Čunát|Thu Jul 31 08:53:26 2025 +0200|knot-resolver: update to version 5.7.6
+e63cfba6f|Vladimír Čunát|Thu Jul 31 08:55:46 2025 +0200|knot-resolver: update DNSSEC root trust anchors
+c221d6a8a|Wesley Gimenes|Tue Aug 5 14:14:55 2025 -0300|CONTRIBUTING.md: accept only real names in the SoB
+7e010914b|Richard Muzik|Fri Jul 18 13:30:08 2025 +0200|python-twisted: Update to 25.5.0
+420f953f4|Richard Muzik|Mon Jul 21 09:47:37 2025 +0200|git: update to 2.50.1
+55dd83fb3|Alexandru Ardelean|Thu Aug 7 12:05:16 2025 +0300|sudo: bump to version 1.9.17p2
+bf4c309d1|John Audia|Sun Aug 17 18:51:05 2025 -0400|lxc: update to 6.0.5
+9b738cc3f|John Audia|Fri Apr 11 10:25:58 2025 -0400|lxc: update to 6.0.4
+7dacd6b60|John Audia|Fri Mar 14 17:54:47 2025 -0400|lxc: add two files to default backup list
+82448b1e3|John Audia|Sun Mar 9 14:34:35 2025 -0400|lxc: lxc-checkconfig fix typo
+98e504403|John Audia|Tue Jul 16 15:23:36 2024 -0400|lxc: fix decompression of rootfs tarballs
+f4f7100fb|John Audia|Fri Jul 12 13:57:10 2024 -0400|lxc: add gnu-tar as a depends to fix lxc-create
+356f36a5d|John Audia|Thu Jan 9 17:35:33 2025 -0500|lxc: add missing deps
+d833f4747|John Audia|Thu Jan 9 21:48:25 2025 -0500|lxc: remove check for options we do not package
+00c126a07|John Audia|Fri Dec 20 11:22:54 2024 -0500|lxc: update to 6.0.3
+23ea85eb9|Aleksey Vasilenko|Sat Aug 23 00:16:47 2025 +0300|subversion: update to 1.14.5
+df3f6d045|Aleksey Vasilenko|Sat Aug 23 01:59:21 2025 +0300|ffmpeg: update to 6.1.3
+64ccc5e74|Rosen Penev|Fri May 2 16:04:46 2025 -0700|ffmpeg: add libatomic dependency
+923a24b60|Rosen Penev|Wed Apr 30 16:21:04 2025 -0700|ffmpeg: fix compilation with GCC14
+0feef6890|Sebastian Hamann|Tue Aug 19 13:53:33 2025 +0200|nut: switch to https:// download URL
+014c5ffa1|Luiz Angelo Daros de Luca|Sun Aug 31 18:46:36 2025 -0300|ruby: update to 3.3.9
+b5fffec05|Luiz Angelo Daros de Luca|Sun Dec 1 15:44:07 2024 -0300|ruby: update to 3.3.6
+c0e97f89b|Daniel Golle|Sat Nov 9 23:21:50 2024 +0000|ruby: include JSON modules in host build
+99318bd1b|Wesley Gimenes|Tue Jun 3 23:36:52 2025 -0300|gihub: fix PR template broken URL
+4df349df1|Carl-Daniel Hailfinger|Wed Sep 3 09:55:02 2025 +0200|realtek-poe: increase version to 1.3
+2f6357377|Josef Schlehofer|Thu Aug 14 13:59:52 2025 +0200|python3: update to version 3.11.13
+</details>

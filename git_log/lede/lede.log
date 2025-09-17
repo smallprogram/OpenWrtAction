@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-289f49d11|John Audia|Wed Sep 10 03:53:23 2025 -0400|kernel: bump 6.12 to 6.12.47
-ef9c10391|coolsnowwolf|Fri Aug 1 15:00:22 2025 +0800|rockchip: fix Photonicat 2 support
-7d417c514|coolsnowwolf|Mon Sep 15 06:09:57 2025 +0800|rockchip: add workaround for aic8800 usb soft-reboot fw load race condition
-1bcef0efe|coolsnowwolf|Mon Sep 15 05:42:59 2025 +0800|rockchip: improve Ariaboard Photonicat 2 support
+d114fd9f8|coolsnowwolf|Sat Apr 26 23:10:08 2025 +0800|atf-rockchip: update to 2.13
 </details>

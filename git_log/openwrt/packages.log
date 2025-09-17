@@ -2,6 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c1b9770ad|John Audia|Fri Jul 18 09:46:45 2025 -0400|snort3: fix logic in gpertools-runtime depends
-017695353|John Audia|Tue Aug 12 03:52:32 2025 -0400|snort3: update to 3.9.3.0
+fb6aee4b9|Nate Robinson|Thu Aug 28 23:15:02 2025 -0400|lf: update to r37
+8ed1e2230|Tianling Shen|Sat Sep 6 16:35:40 2025 +0800|arp-whisper: do not lock deps
+5f82019f1|Tianling Shen|Sun Sep 7 20:07:22 2025 +0800|v2raya: Update to 2.2.7.1
+370d4d07b|Tianling Shen|Mon Aug 25 15:31:33 2025 +0800|v2raya: Update to 2.2.7
+245cf57b0|Gregory Gullin|Sat Aug 16 15:05:14 2025 +0300|nnn: update to version 5.1
+43b2aff8f|Glenn Strauss|Fri Sep 12 18:05:57 2025 -0400|lighttpd: update to lighttpd 1.4.82 release hash
+76abdbe65|Glenn Strauss|Sun Aug 17 03:45:36 2025 -0400|lighttpd: update to lighttpd 1.4.81 release hash
 </details>

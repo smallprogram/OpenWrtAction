@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a1a48df|A-BO|Wed Sep 17 00:10:04 2025 +0800|luci: optimize the window for restoring backup files
+</details>
