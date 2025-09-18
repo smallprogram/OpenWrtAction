@@ -2,11 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fb6aee4b9|Nate Robinson|Thu Aug 28 23:15:02 2025 -0400|lf: update to r37
-8ed1e2230|Tianling Shen|Sat Sep 6 16:35:40 2025 +0800|arp-whisper: do not lock deps
-5f82019f1|Tianling Shen|Sun Sep 7 20:07:22 2025 +0800|v2raya: Update to 2.2.7.1
-370d4d07b|Tianling Shen|Mon Aug 25 15:31:33 2025 +0800|v2raya: Update to 2.2.7
-245cf57b0|Gregory Gullin|Sat Aug 16 15:05:14 2025 +0300|nnn: update to version 5.1
-43b2aff8f|Glenn Strauss|Fri Sep 12 18:05:57 2025 -0400|lighttpd: update to lighttpd 1.4.82 release hash
-76abdbe65|Glenn Strauss|Sun Aug 17 03:45:36 2025 -0400|lighttpd: update to lighttpd 1.4.81 release hash
+31532024d|Stan Grishin|Tue Sep 16 00:32:49 2025 +0000|adblock-fast: bugfix: dl command
+dd6e009bd|Michael Heimpold|Mon Sep 8 07:37:26 2025 +0200|php8: update to 8.3.25
 </details>

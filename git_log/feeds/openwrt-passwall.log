@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a1a48df|A-BO|Wed Sep 17 00:10:04 2025 +0800|luci: optimize the window for restoring backup files
+ca6dca2|A-BO|Thu Sep 18 00:09:05 2025 +0800|luci: remove the ipv6 brackets when importing links
+09058e1|ZqinKing|Wed Sep 17 20:35:02 2025 +0800|luci: adjust xray alpn dependency for reality (#4075)
 </details>
