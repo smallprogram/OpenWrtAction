@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dc5b9b3d8|Marcos Alano|Sun Sep 14 22:32:12 2025 -0300|mediatek: add trng on mt7988a
+df6ca0a0c|Hauke Mehrtens|Sun Jul 20 17:36:32 2025 +0200|mediatek: remove modules.builtin
 </details>

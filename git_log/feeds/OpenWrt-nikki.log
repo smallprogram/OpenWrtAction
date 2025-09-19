@@ -1,8 +1,0 @@
-<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-7f70e2f|Joseph Mory|Wed Sep 17 20:41:32 2025 +0800|chore: bump version to 1.24.2
-713f503|Joseph Mory|Wed Sep 17 20:38:24 2025 +0800|fix: subscription update time should not depend on subscription info success or not
-0147302|Joseph Mory|Wed Sep 17 14:02:02 2025 +0800|chore: rescan i18n
-</details>
