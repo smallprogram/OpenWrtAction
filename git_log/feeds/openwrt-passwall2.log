@@ -1,0 +1,25 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b2dcafc|xiaorouji|Sat Sep 20 00:44:12 2025 +0800|luci: 25.9.20
+0e09058|attacco|Fri Sep 19 19:43:45 2025 +0300|luci: Add strict-order to ipset dnsmasq config
+b596559|A-BO|Thu Sep 18 20:57:44 2025 +0800|luci: optimize the compatibility of "add the node via the link"
+4c5acf9|A-BO|Thu Sep 18 19:19:01 2025 +0800|luci: remove the ipv6 brackets when importing links
+502beee|ZqinKing|Wed Sep 17 20:35:02 2025 +0800|luci: adjust xray alpn dependency for reality
+6445f89|A-BO|Wed Sep 17 00:10:04 2025 +0800|luci: optimize the window for restoring backup files
+4561b81|lwb1978|Thu Sep 11 10:21:14 2025 +0800|luci: optimize subscribe and import
+ddbf8eb|ZqinKing|Thu Sep 11 09:20:40 2025 +0800|luci: remove `xmux` configuration not compatible with xray, improve `mux.cool`
+c75f659|ZqinKing|Wed Sep 10 23:47:59 2025 +0800|luci: xhttp does not require separate settings for xmux
+dbba450|lwb1978|Wed Sep 10 11:17:28 2025 +0800|luci: update package dependencies
+3315dfc|lwb1978|Wed Sep 10 09:44:38 2025 +0800|luci: remove the alias `splithttp` for `xhttp`
+e012c7a|lwb1978|Wed Sep 10 09:17:54 2025 +0800|luci: remove the `quic` and `domainsocket` transport for xray
+ea5f601|ZqinKing|Tue Sep 9 21:37:14 2025 +0800|luci: adjust xray xhttp to only support xudp
+d3390de|A-BO|Tue Sep 9 21:21:20 2025 +0800|luci: move `qrcode.min.js` to private path to avoid conflicts
+8abdc35|lwb1978|Tue Sep 9 17:21:55 2025 +0800|luci: optimize the xray balancing configuration code
+4ed8155|ZqinKing|Mon Sep 8 22:25:43 2025 +0800|luci: remove `tcpNoDelay` option from xray client configuration
+b18a333|A-BO|Mon Sep 8 22:14:20 2025 +0800|luci: optimize the input logic of the balancing and urltest node lists
+e8e50d2|A-BO|Sat Sep 6 12:29:25 2025 +0800|luci: adjust not to start new processes when xray nodes enable flow
+b4eb605|A-BO|Sat Sep 6 12:19:45 2025 +0800|luci: optimize update_app download arg
+248d5f1|A-BO|Sat Sep 6 12:00:23 2025 +0800|luci: optimize and remove redundant code
+</details>

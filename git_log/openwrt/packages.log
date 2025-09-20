@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b910bc123|Dirk Brenken|Tue Sep 16 18:29:45 2025 +0200|travelmate: release 2.1.4
-c66c74fac|George Sapkin|Wed Aug 6 23:11:34 2025 +0300|syncthing: improve relay argument parsing
-73a2afc9e|George Sapkin|Wed Aug 6 22:41:53 2025 +0300|syncthing: improve discovery argument parsing
-eda931370|George Sapkin|Wed Jul 30 16:54:03 2025 +0300|syncthing: fix discovery and relay extra args
+f24b2a693|Ray Wang|Thu Sep 18 08:41:00 2025 +0800|hev-socks5-server: update to 2.10.0
+98d7b31c8|Aleksey Vasilenko|Sat Aug 23 01:11:33 2025 +0300|rust: update to 1.89.0
 </details>
