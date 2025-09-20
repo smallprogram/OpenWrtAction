@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5a66ca94|A-BO|Thu Sep 18 20:57:44 2025 +0800|luci: optimize the compatibility of "add the node via the link"
-6af728dc|A-BO|Thu Sep 18 19:19:01 2025 +0800|luci: remove the ipv6 brackets when importing links
-ca6dca22|A-BO|Thu Sep 18 00:09:05 2025 +0800|luci: remove the ipv6 brackets when importing links
+2ffd187|zhusir|Sat Sep 20 14:58:51 2025 +0800|ci: update code
+c86ea99|lwb1978|Fri Sep 19 11:48:05 2025 +0800|luci: bump to 25.9.19
 </details>
