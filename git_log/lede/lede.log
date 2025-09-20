@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2029a1123|Hauke Mehrtens|Wed Sep 17 19:55:50 2025 +0200|openssl: backport fix regression
+df6ca0a0c|Hauke Mehrtens|Sun Jul 20 17:36:32 2025 +0200|mediatek: remove modules.builtin
 </details>

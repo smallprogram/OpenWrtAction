@@ -1,0 +1,37 @@
+<details> <summary> <b>OpenClash new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+adbdbf1a|vernesong|Thu Sep 18 12:28:12 2025 +0800|Merge branch 'dev'
+40e37473|vernesong|Thu Sep 18 12:21:36 2025 +0800|0.47.006
+bc7896a4|vernesong|Thu Sep 18 12:21:03 2025 +0800|fix: conflicting uci_get
+3f9d8d03|vernesong|Thu Sep 18 02:11:47 2025 +0800|chore: refine
+82555b33|vernesong|Thu Sep 18 01:58:41 2025 +0800|#4723
+9faad7d5|vernesong|Thu Sep 18 01:57:30 2025 +0800|#4717
+07791684|vernesong|Wed Sep 17 21:05:19 2025 +0800|0.47.005
+7210f87a|vernesong|Wed Sep 17 21:04:31 2025 +0800|fix: some config overwrite not work
+ac4bce8b|vernesong|Wed Sep 17 20:48:15 2025 +0800|0.47.004
+501341b4|vernesong|Wed Sep 17 01:42:13 2025 +0800|chore: load avg percent
+7d2c4a79|github-actions[bot]|Tue Sep 16 00:47:07 2025 +0000|Chore: update third-party resources
+dc56e173|zxl hhyccc|Sun Sep 14 12:46:07 2025 +0800|luci-app-openclash: Make sure to always display Move up and Move down. (#4718)
+4043f072|vernesong|Sun Sep 14 11:13:28 2025 +0800|chore: general support environment variable
+512347c8|github-actions[bot]|Sat Sep 13 00:45:51 2025 +0000|Chore: update third-party resources
+98af9262|vernesong|Wed Sep 10 22:21:31 2025 +0800|fix: quick start
+ef963d42|github-actions[bot]|Wed Sep 10 00:46:06 2025 +0000|Chore: update third-party resources
+09d13838|vernesong|Wed Sep 10 01:46:16 2025 +0800|chore: oc version
+578179cf|github-actions[bot]|Sun Sep 7 00:45:53 2025 +0000|Chore: update third-party resources
+7befeb06|vernesong|Sat Sep 6 03:21:28 2025 +0800|0.47.003
+4c724835|Aethersailor|Sat Sep 6 03:21:04 2025 +0800|chore: fix spacing in zh-CN translations (#4699)
+9208add7|vernesong|Sat Sep 6 03:18:47 2025 +0800|chore: refine
+809e5d98|vernesong|Fri Sep 5 23:46:49 2025 +0800|chore: refine
+640c0de0|github-actions[bot]|Thu Sep 4 00:45:39 2025 +0000|Chore: update third-party resources
+d182171c|vernesong|Wed Sep 3 22:01:41 2025 +0800|chore: add check for value type in overwrite conf
+e2ecb795|github-actions[bot]|Mon Sep 1 00:46:45 2025 +0000|Chore: update third-party resources
+6a14cdb2|vernesong|Sun Aug 31 21:02:31 2025 +0800|chore: better overwrite load log
+5152ce1c|Aethersailor|Sun Aug 31 20:43:53 2025 +0800|Fix Chinese translation spacing and duplicate translation key (#4685)
+60d304c1|vernesong|Sun Aug 31 11:45:37 2025 +0800|0.47.002
+c9edd56e|github-actions[bot]|Sun Aug 31 00:45:48 2025 +0000|Chore: update third-party resources
+377362ec|vernesong|Sat Aug 30 22:26:51 2025 +0800|chore: remove unsupported options for overwrite
+ea253130|vernesong|Sat Aug 30 20:08:07 2025 +0800|chore: add user-agent option for file download in overwrite module
+2504f599|Aethersailor|Sat Aug 30 15:00:39 2025 +0800|chore: fix typo in default configuration file (#4679)
+</details>
