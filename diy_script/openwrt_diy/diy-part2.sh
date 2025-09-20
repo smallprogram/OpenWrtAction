@@ -19,6 +19,9 @@ sed -i 's/192.168.1.1/10.10.0.253/g' package/base-files/files/bin/config_generat
 # update golang version
 rm -rf temp_resp
 git clone -b master --single-branch https://github.com/openwrt/packages.git temp_resp
+cd temp_resp
+git checkout 2b99cd7d7637da0f152da378994f699aaf0dd44d
+cd ..
 rm -rf feeds/packages/lang/golang
 cp -r temp_resp/lang/golang feeds/packages/lang
 rm -rf feeds/packages/lang/rust
