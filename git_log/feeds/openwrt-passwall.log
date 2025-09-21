@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-2ffd187|zhusir|Sat Sep 20 14:58:51 2025 +0800|ci: update code
-c86ea99|lwb1978|Fri Sep 19 11:48:05 2025 +0800|luci: bump to 25.9.19
-</details>

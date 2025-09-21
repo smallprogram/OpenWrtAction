@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2029a1123|Hauke Mehrtens|Wed Sep 17 19:55:50 2025 +0200|openssl: backport fix regression
+d46de3cb7|coolsnowwolf|Sun Sep 21 02:27:38 2025 +0800|dnsmasq: Support nftables nftsets
+afee19fac|coolsnowwolf|Sun Sep 21 02:18:56 2025 +0800|base-files: add ipcalc() function
+6a853dc56|Internet1235|Sun Sep 21 01:42:30 2025 +0800|openssl: update to 3.5.3 (#13711)
+722560eef|FUKAUMI Naoki|Mon Aug 25 15:31:50 2025 +0000|generic: backport gated-fixed-clk
 </details>

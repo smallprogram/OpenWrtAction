@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e9ec9ca11c|Tianling Shen|Fri Sep 19 15:06:14 2025 +0800|Merge Official Source
-de44a34908|Hauke Mehrtens|Fri Sep 19 01:54:13 2025 +0200|uqmi: Increase PKG_RELEASE
-9d83c1b1a9|David Bauer|Sun Sep 14 11:07:38 2025 +0200|uqmi: fix data-format parsing
-640e364ec0|Hauke Mehrtens|Wed Sep 17 11:16:20 2025 +0200|openssl: Backport fix for OpenSSL 3.5.2 and 3.0.17 regression
-bf3bc6a384|Paweł Owoc|Sat Aug 17 16:59:58 2024 +0200|qualcommax: ipq807x: add support for Linksys HomeWRK
+6557181ee6|coolsnowwolf|Fri Sep 19 16:40:44 2025 +0800|photonicat-firmware: add ariaboard photonicat specific ath10-sdio fw
 </details>

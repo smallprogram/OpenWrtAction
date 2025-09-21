@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f24b2a693|Ray Wang|Thu Sep 18 08:41:00 2025 +0800|hev-socks5-server: update to 2.10.0
-98d7b31c8|Aleksey Vasilenko|Sat Aug 23 01:11:33 2025 +0300|rust: update to 1.89.0
+44cff7199|Wei-Ting Yang|Fri Aug 15 10:58:25 2025 +0800|python-certifi: update to 2025.8.3
+d490217d8|Wei-Ting Yang|Fri Aug 15 11:11:42 2025 +0800|python-certifi: assign PKG_CPE_ID
 </details>

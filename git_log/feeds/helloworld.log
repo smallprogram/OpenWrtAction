@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d08227d|zxl hhyccc|Sat Sep 20 01:19:50 2025 +0800|Merge pull request #1796 from zxlhhyccc/tmp
-dda13bf|zxlhhyccc|Fri Sep 19 23:39:38 2025 +0800|simple-obfs: update mirror hash
-0ec475e|zxlhhyccc|Wed Sep 17 22:52:29 2025 +0800|luci-app-ssr-plus: Add `Xray: shadowsocks` import and subscribe. 说明：因暂无 Xray shadowsocks 的 `reality` 协议节点，故暂保留可以导入和订阅 reality 传输协议功能。
+d43f502|zxl hhyccc|Sat Sep 20 20:52:06 2025 +0800|Merge pull request #1797 from zxlhhyccc/tmp
+7cbed67|zxlhhyccc|Sat Sep 20 18:21:19 2025 +0800|gn: update to Git HEAD (2025-09-18)
+c22b0a5|zxlhhyccc|Sat Sep 20 18:15:00 2025 +0800|naiveproxy: Update to 140.0.7339.123-1
 </details>
