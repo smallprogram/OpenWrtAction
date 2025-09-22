@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d43f502|zxl hhyccc|Sat Sep 20 20:52:06 2025 +0800|Merge pull request #1797 from zxlhhyccc/tmp
-7cbed67|zxlhhyccc|Sat Sep 20 18:21:19 2025 +0800|gn: update to Git HEAD (2025-09-18)
-c22b0a5|zxlhhyccc|Sat Sep 20 18:15:00 2025 +0800|naiveproxy: Update to 140.0.7339.123-1
+5468299|zxl hhyccc|Sun Sep 21 13:13:27 2025 +0800|dns2socks-rust: update to 0.2.3
 </details>

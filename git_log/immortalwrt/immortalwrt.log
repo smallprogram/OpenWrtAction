@@ -2,5 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6557181ee6|coolsnowwolf|Fri Sep 19 16:40:44 2025 +0800|photonicat-firmware: add ariaboard photonicat specific ath10-sdio fw
+5531f6bc76|Tianling Shen|Sun Sep 21 22:45:27 2025 +0800|Merge Official Source
+ef40cc6a42|Hauke Mehrtens|Sat Sep 20 22:35:26 2025 +0200|OpenWrt v24.10.3: revert to branch defaults
+dbd975a3b6|Hauke Mehrtens|Sat Sep 20 22:35:21 2025 +0200|OpenWrt v24.10.3: adjust config defaults
+daca7c049b|Linus Kardell|Tue Sep 9 16:24:55 2025 +0200|openssl: correct PKG_LICENSE_FILES
+36d93ba2bd|Linus Kardell|Tue Sep 9 16:24:26 2025 +0200|libxml2: correct PKG_LICENSE_FILES
+efcdbe1087|Oliver Sedlbauer|Fri Sep 19 12:42:15 2025 +0200|mac80211: backport EHT 1024 MPDU TX aggregation
 </details>

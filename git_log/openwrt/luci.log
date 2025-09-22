@@ -1,0 +1,8 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+3974d8ae73|Aindriú Mac Giolla Eoin|Sun Sep 21 22:48:21 2025 +0300|Changed Irish lang name
+1937799fe7|Hannu Nyman|Sun Sep 21 22:48:04 2025 +0300|build: enable packaging of Gaelic (Irish) and Tamil translations
+db1fd06bb8|Hannu Nyman|Sun Sep 21 22:44:40 2025 +0300|treewide: Backport and sync translations
+</details>
