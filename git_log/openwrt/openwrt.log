@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-1dc947ac69|Goetz Goerisch|Fri Sep 12 06:09:17 2025 +0200|kernel: bump 6.6 to 6.6.106
-6af8e20b45|John Audia|Thu Sep 11 15:37:51 2025 -0400|x86: config: add CONFIG_MITIGATION_VMSCAPE=y
-b46655aaa0|Goetz Goerisch|Thu Sep 11 07:18:34 2025 +0200|kernel: bump 6.6 to 6.6.105
-</details>

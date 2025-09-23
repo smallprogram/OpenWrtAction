@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cbd12814ca|Tianling Shen|Sun Sep 21 22:48:39 2025 +0800|luci-app-homeproxy: bump to latest git HEAD
+5ff7e613f8|Tianling Shen|Mon Sep 22 18:03:08 2025 +0800|Merge Official Source
+3974d8ae73|Aindriú Mac Giolla Eoin|Sun Sep 21 22:48:21 2025 +0300|Changed Irish lang name
+1937799fe7|Hannu Nyman|Sun Sep 21 22:48:04 2025 +0300|build: enable packaging of Gaelic (Irish) and Tamil translations
+db1fd06bb8|Hannu Nyman|Sun Sep 21 22:44:40 2025 +0300|treewide: Backport and sync translations
 </details>

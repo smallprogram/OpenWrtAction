@@ -1,0 +1,24 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+9bff73b69|Tianling Shen|Mon Sep 22 22:12:32 2025 +0800|Node.js: sync with upstream source
+1ce1de212|Tianling Shen|Sat Aug 30 20:48:11 2025 +0800|Node.js: sync with upstream source
+d0ef6c86a|Tianling Shen|Mon Sep 22 18:05:29 2025 +0800|Merge Official Source
+942c24366|George Sapkin|Wed Sep 17 14:49:13 2025 +0300|yt-dlp: bump to 2025.09.05
+0e7a7d037|Niklas Thorild|Sun Sep 21 16:02:24 2025 +0200|dnscrypt-proxy2: update to version 2.1.14
+44cff7199|Wei-Ting Yang|Fri Aug 15 10:58:25 2025 +0800|python-certifi: update to 2025.8.3
+d490217d8|Wei-Ting Yang|Fri Aug 15 11:11:42 2025 +0800|python-certifi: assign PKG_CPE_ID
+f24b2a693|Ray Wang|Thu Sep 18 08:41:00 2025 +0800|hev-socks5-server: update to 2.10.0
+98d7b31c8|Aleksey Vasilenko|Sat Aug 23 01:11:33 2025 +0300|rust: update to 1.89.0
+b910bc123|Dirk Brenken|Tue Sep 16 18:29:45 2025 +0200|travelmate: release 2.1.4
+c66c74fac|George Sapkin|Wed Aug 6 23:11:34 2025 +0300|syncthing: improve relay argument parsing
+73a2afc9e|George Sapkin|Wed Aug 6 22:41:53 2025 +0300|syncthing: improve discovery argument parsing
+eda931370|George Sapkin|Wed Jul 30 16:54:03 2025 +0300|syncthing: fix discovery and relay extra args
+31532024d|Stan Grishin|Tue Sep 16 00:32:49 2025 +0000|adblock-fast: bugfix: dl command
+dd6e009bd|Michael Heimpold|Mon Sep 8 07:37:26 2025 +0200|php8: update to 8.3.25
+fb6aee4b9|Nate Robinson|Thu Aug 28 23:15:02 2025 -0400|lf: update to r37
+8ed1e2230|Tianling Shen|Sat Sep 6 16:35:40 2025 +0800|arp-whisper: do not lock deps
+5f82019f1|Tianling Shen|Sun Sep 7 20:07:22 2025 +0800|v2raya: Update to 2.2.7.1
+370d4d07b|Tianling Shen|Mon Aug 25 15:31:33 2025 +0800|v2raya: Update to 2.2.7
+</details>
