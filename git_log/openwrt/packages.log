@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-942c24366|George Sapkin|Wed Sep 17 14:49:13 2025 +0300|yt-dlp: bump to 2025.09.05
-0e7a7d037|Niklas Thorild|Sun Sep 21 16:02:24 2025 +0200|dnscrypt-proxy2: update to version 2.1.14
+700b15230|John Audia|Tue Sep 2 06:58:47 2025 -0400|gperftools: update to 2.17.2
+db82803f6|John Audia|Wed Aug 6 04:44:53 2025 -0400|gperftools:  bump to version 2.17
+793ae0e87|Aleksey Vasilenko|Sat Aug 23 01:29:58 2025 +0300|bottom: update to 0.11.1
 </details>

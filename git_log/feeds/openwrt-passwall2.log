@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+1a12c42|xiaorouji|Wed Sep 24 00:04:38 2025 +0800|luci: 25.9.24
+ef38d45|lwb1978|Tue Sep 23 11:28:32 2025 +0800|luci: optimize
+2dc6ae6|A-BO|Tue Sep 23 01:09:27 2025 +0800|luci: fixup
+f52fe5b|A-BO|Tue Sep 23 00:36:23 2025 +0800|luci: optimize the import logic of ss links
+</details>

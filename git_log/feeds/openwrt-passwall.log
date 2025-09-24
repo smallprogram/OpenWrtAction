@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-00f1759|A-BO|Tue Sep 23 01:09:27 2025 +0800|luci: fixup https://github.com/xiaorouji/openwrt-passwall/commit/d29dda74ecf74ec0a0a87d2142d154f3f4413870
-6d1b732|A-BO|Tue Sep 23 00:36:23 2025 +0800|luci: optimize the import logic of ss links
+a1726c3|A-BO|Tue Sep 23 21:27:50 2025 +0800|luci: bump to 25.9.23
+15f9bb2|A-BO|Tue Sep 23 21:25:25 2025 +0800|luci: update default rules
+22c6b38|A-BO|Tue Sep 23 21:21:52 2025 +0800|luci: optimize the extraction of system dns
+7582d16|lwb1978|Tue Sep 23 11:28:32 2025 +0800|luci: optimize
 </details>
