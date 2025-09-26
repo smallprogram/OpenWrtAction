@@ -62,3 +62,5 @@ git clone https://github.com/jerrykuku/luci-app-argon-config.git ./package/custo
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/custom_packages/luci-app-adguardhome
 git clone https://github.com/sbwml/luci-app-mosdns -b v5 ./package/custom_packages/mosdns
 git clone https://github.com/sirpdboy/luci-app-netspeedtest ./package/custom_packages/netspeedtest
+git clone https://github.com/timsaya/openwrt-bandix.git ./package/custom_packages/openwrt-bandix
+git clone https://github.com/timsaya/luci-app-bandix.git ./package/custom_packages/luci-app-bandix

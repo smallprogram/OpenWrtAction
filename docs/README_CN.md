@@ -126,6 +126,7 @@ CONFIG_PACKAGE_luci-app-wechatpush=y
 
 ### 📊 流控与监控
 ```
+CONFIG_PACKAGE_luci-app-bandix=y
 CONFIG_PACKAGE_luci-app-eqos=y
 CONFIG_PACKAGE_luci-app-sqm=y
 CONFIG_PACKAGE_luci-app-firewall=y
