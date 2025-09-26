@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dc8d5cc35|lean|Wed Sep 24 01:41:20 2025 +0800|loongarch64: switch to kernel 6.12
-5a4353758|lean|Wed Sep 24 00:19:06 2025 +0800|yt6801: add Motorcomm YT6801 PCI Gigabit Ethernet kernel module
+800933e0b|Aleksander Jan Bajkowski|Mon Sep 22 19:53:29 2025 +0200|treewide: dts: fix typo "disabled"
 </details>

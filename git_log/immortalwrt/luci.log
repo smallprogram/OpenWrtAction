@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-08006f29f1|Tianling Shen|Tue Sep 23 18:11:59 2025 +0800|luci-app-unblockneteasemusic: bump to latest git HEAD
+f2e50e2b38|Tianling Shen|Wed Sep 24 14:27:35 2025 +0800|luci-app-unblockneteasemusic: fix reload firewall
 </details>
