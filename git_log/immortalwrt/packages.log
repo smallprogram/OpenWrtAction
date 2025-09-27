@@ -1,0 +1,8 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+bcf4e4c98|Tianling Shen|Fri Sep 26 17:13:15 2025 +0800|ddns-scripts_dnspod: fix the use of retry max count
+e7cf225a7|Tianling Shen|Fri Sep 26 16:28:13 2025 +0800|ddns-scripts: add migration for aliyun provider
+ebf2481dd|Tianling Shen|Fri Sep 26 16:12:25 2025 +0800|zerotier: remove unneeded reload event
+</details>

@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-800933e0b|Aleksander Jan Bajkowski|Mon Sep 22 19:53:29 2025 +0200|treewide: dts: fix typo "disabled"
+3552c587c|Hauke Mehrtens|Sun Jul 20 19:53:36 2025 +0200|kernel: kmod-dsa-notag: add driver
 </details>
