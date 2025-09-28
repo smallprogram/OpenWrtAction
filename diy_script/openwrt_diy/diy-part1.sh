@@ -64,3 +64,4 @@ git clone https://github.com/sbwml/luci-app-mosdns -b v5 ./package/custom_packag
 git clone https://github.com/sirpdboy/luci-app-netspeedtest ./package/custom_packages/netspeedtest
 git clone https://github.com/timsaya/openwrt-bandix.git ./package/custom_packages/openwrt-bandix
 git clone https://github.com/timsaya/luci-app-bandix.git ./package/custom_packages/luci-app-bandix
+git clone https://github.com/destan19/OpenAppFilter.git ./package/custom_packages/OpenAppFilter

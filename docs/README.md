@@ -129,6 +129,7 @@ CONFIG_PACKAGE_luci-app-bandix=y
 CONFIG_PACKAGE_luci-app-eqos=y
 CONFIG_PACKAGE_luci-app-sqm=y
 CONFIG_PACKAGE_luci-app-firewall=y
+CONFIG_PACKAGE_luci-app-oaf=y
 CONFIG_PACKAGE_luci-app-statistics=y
 CONFIG_PACKAGE_luci-app-vnstat2=y
 ```
