@@ -28,6 +28,9 @@ rm -rf feeds/packages/lang/rust
 cp -r temp_resp/lang/rust feeds/packages/lang
 rm -rf temp_resp
 
+# rm appfilter
+rm -rf ./feeds/packages/net/open-app-filter
+
 
 # fixed rust host build download llvm in ci error
 sed -i 's/--set=llvm\.download-ci-llvm=false/--set=llvm.download-ci-llvm=true/' feeds/packages/lang/rust/Makefile
@@ -46,6 +49,8 @@ fi
 # https://github.com/openwrt/packages/pull/27133
 # rpcsvc-proto: fix build with autotools gettext macros 0.22
 # cp -r "$PATCHES_SRC_DIR/patches/rpcsvc-proto/*" ./feeds/packages/libs/rpcsvc-proto
+
+
 
 
 echo "DIY2 is complate!"
