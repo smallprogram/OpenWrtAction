@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-301b96818|Jan Hák|Thu Sep 25 14:09:21 2025 +0200|knot: backport patch to fix linking with libhiredis
-bf326757d|Jan Hák|Thu Sep 25 14:09:21 2025 +0200|knot: disable redis as it was enabled since 3.5.0 by default
+748f2b825|John Audia|Wed Jul 2 16:29:20 2025 -0400|jq: bump to v1.8.1
+b51e3eb49|John Audia|Sun Jun 1 09:05:19 2025 -0400|jq: bump to v1.8.0
+5c7aa7fa0|Maximilian Trüpschuch|Tue Apr 22 22:04:46 2025 +0200|jq: provide regex support in additional package jq-full
 </details>
