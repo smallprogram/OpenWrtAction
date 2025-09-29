@@ -1,9 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-0cb76aad2c|Tianling Shen|Sat Sep 27 18:30:46 2025 +0800|luci-app-unblockneteasemusic: bump to 3.4-1
-93117cfda0|SakuraFallingMad|Fri Sep 26 20:49:28 2025 +0800|luci-app-wechatpush: bump to 3.6.10
-65fa739f4b|SakuraFallingMad|Tue Sep 23 08:23:20 2025 +0800|luci-app-passwall: bump to 25.9.23
-a241e75e91|Tianling Shen|Thu Sep 25 20:29:21 2025 +0800|luci-app-unblockneteasemusic: sync with upstream source
-</details>
