@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5e3ea2911|coolsnowwolf|Sun Sep 28 09:33:26 2025 +0800|libcrypt-compat: introduce package
+a7806d65f|coolsnowwolf|Mon Sep 29 18:51:34 2025 +0800|Update README.md
+86255ea91|coolsnowwolf|Mon Sep 29 17:58:00 2025 +0800|Revert "dnsmasq: Support nftables nftsets"
 </details>

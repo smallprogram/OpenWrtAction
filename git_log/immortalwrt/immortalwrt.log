@@ -1,7 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-ff5d1e97da|Jonas Jelonek|Mon Nov 25 23:04:15 2024 +0000|mediatek: filogic: support openwrt,netdev-name for renaming interfaces
-4e0e264e27|Tianling Shen|Sun Sep 28 16:21:31 2025 +0800|uboot-mediatek: update ddrtype for rax3000me ddr3 rev
-</details>

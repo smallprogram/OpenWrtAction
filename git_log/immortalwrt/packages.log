@@ -2,28 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cb6e843bd|Tianling Shen|Sun Sep 28 16:37:32 2025 +0800|Merge Official Source
-4fd730544|Antonio Pastor|Mon Sep 15 18:38:09 2025 -0400|netatalk: update to 4.3.2
-748f2b825|John Audia|Wed Jul 2 16:29:20 2025 -0400|jq: bump to v1.8.1
-b51e3eb49|John Audia|Sun Jun 1 09:05:19 2025 -0400|jq: bump to v1.8.0
-5c7aa7fa0|Maximilian Trüpschuch|Tue Apr 22 22:04:46 2025 +0200|jq: provide regex support in additional package jq-full
-301b96818|Jan Hák|Thu Sep 25 14:09:21 2025 +0200|knot: backport patch to fix linking with libhiredis
-bf326757d|Jan Hák|Thu Sep 25 14:09:21 2025 +0200|knot: disable redis as it was enabled since 3.5.0 by default
-29a122d80|Josef Schlehofer|Sun Jun 15 08:37:32 2025 +0200|treewide: drop anything related to uClibc
-0632797c8|Josef Schlehofer|Mon Jun 16 11:49:34 2025 +0200|syslog-ng: update to version 4.10.0
-9da18e322|Josef Schlehofer|Thu Sep 25 23:46:44 2025 +0200|syslog-ng: add runtime test
-5912f5511|Jan Hák|Mon Sep 22 15:21:21 2025 +0200|knot: update to version 3.5.0
-d5b7b5b2f|Jan Hák|Mon Aug 4 15:28:11 2025 +0200|knot: update to version 3.4.8
-bd96a7bbc|Dirk Brenken|Sun Jun 1 08:01:34 2025 +0200|unbound: bring back the service to the startup menu
-cd4ded7aa|Eric Luehrsen|Thu May 1 23:39:37 2025 -0400|unbound: update to 1.23.0
-86bbce8ec|hingbong lo|Thu Feb 13 01:30:46 2025 +0000|Unbound: Fixed: local-data except IPv6 GA addresses with odhcpd
-3bdb38573|Jan Klos|Sun Nov 10 21:24:52 2024 +0200|unbound: update to 1.22.0
-0bad40323|Ted Hess|Sat Nov 2 11:31:05 2024 -0400|Unbound: fix file lock race in odhcpd.sh
-b0c81b768|Jeffery To|Thu Jun 5 21:37:53 2025 +0800|golang: Fix host build compatibility with GCC 15
-ac5b94a25|hingbong lo|Thu Jun 19 02:32:03 2025 +0000|bash: fix build failed with GCC 15 #26784
-3a911f6ce|Ariel Xiong|Sun May 25 22:19:54 2025 +0800|bash: add CFLAGS_FOR_BUILD="-std=gnu17" flag
-bbcfa5f64|Ariel Xiong|Sun May 25 22:18:26 2025 +0800|bash: bump to 5.2.37
-700b15230|John Audia|Tue Sep 2 06:58:47 2025 -0400|gperftools: update to 2.17.2
-db82803f6|John Audia|Wed Aug 6 04:44:53 2025 -0400|gperftools:  bump to version 2.17
-793ae0e87|Aleksey Vasilenko|Sat Aug 23 01:29:58 2025 +0300|bottom: update to 0.11.1
+8c3e4f60b|Tianling Shen|Mon Sep 29 22:03:19 2025 +0800|smartdns: add rust-bindgen as build dependency
+d94a396c1|Tianling Shen|Mon Sep 29 22:03:03 2025 +0800|rust-bindgen: add new package
+ac1535c19|Tianling Shen|Mon Sep 29 19:15:22 2025 +0800|smartdns: add webui support
+9ece0645f|Tianling Shen|Mon Sep 29 15:51:15 2025 +0800|smartdns: add missing libatomic dependency for i386
+8f78ac086|Tianling Shen|Mon Sep 29 15:13:42 2025 +0800|smartdns: Update to 47
 </details>
