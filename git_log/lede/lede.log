@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a7806d65f|coolsnowwolf|Mon Sep 29 18:51:34 2025 +0800|Update README.md
-86255ea91|coolsnowwolf|Mon Sep 29 17:58:00 2025 +0800|Revert "dnsmasq: Support nftables nftsets"
+37e8122d2|coolsnowwolf|Tue Sep 23 23:02:17 2025 +0800|rockchip: rk3399: add PCIe bus scan delay
 </details>

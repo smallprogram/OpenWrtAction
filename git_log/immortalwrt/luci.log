@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8f0f617ba3|Tianling Shen|Mon Sep 29 15:24:03 2025 +0800|luci-app-smartdns: Update to 1.2025.47.2
+4eaafb819a|Tianling Shen|Tue Sep 30 19:19:13 2025 +0800|luci-app-homeproxy: fix use of china-dns tag
+b00d33e29d|Tianling Shen|Tue Sep 30 19:15:57 2025 +0800|luci-app-homeproxy: bump to latest git HEAD
 </details>

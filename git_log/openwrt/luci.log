@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e76972a720|Anya Lin|Fri Sep 26 00:59:01 2025 +0800|luci-mod-network: Correctly encode/decode ech field in HTTPS record
-0aae54fc7c|Paul Donald|Sun Jun 29 15:38:40 2025 +0200|luci-mod-status: give kernel log view filtering capability
-49471228fe|Ray Wang|Sat Aug 23 12:01:56 2025 +0800|luci-app-natmap: sync with natmap package
-af8e625312|Paul Donald|Mon Sep 29 16:00:57 2025 +0200|luci-mod-status: fix syslog warning (4) log level filter
+395e73daf9|Paul Donald|Tue Sep 30 19:43:08 2025 +0200|luci-mod-network: add RFC details for NAT64 option
+e0287b0902|Paul Donald|Tue Sep 30 19:29:31 2025 +0200|luci-mod-network: expose IPv6 RA reachability and retransmission timers
 </details>

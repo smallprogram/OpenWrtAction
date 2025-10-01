@@ -2,6 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-777d483db|Eric Fahlgren|Sat Sep 27 15:37:54 2025 -0700|owut: update to 2025.09.27
-47898a8ef|Ray Wang|Sat Aug 23 11:33:16 2025 +0800|natmap: update to 20250924
+bf9b96456|Josef Schlehofer|Fri Sep 26 20:21:36 2025 +0200|gperftools: make libunwind dependency conditional
+9f5d22e99|Josef Schlehofer|Fri Sep 26 20:32:43 2025 +0200|gperftools: enable it for mips*
+a578285a4|Andrey Zotikov|Thu Jul 24 01:58:31 2025 +0300|fail2ban: bump to 1.1.0
+c8077ec8b|Eric Luehrsen|Mon Sep 29 00:04:12 2025 -0400|unbound: update to 1.24.0
+76c033817|Rui Salvaterra|Sun Jul 6 11:25:03 2025 +0100|tor: update to 0.4.8.17 stable
+c1712bbb8|Sergey Ponomarev|Sun Jun 8 13:37:26 2025 +0300|tor: add /etc/torrc.d/ to conffiles
+8d1dc048e|Rui Salvaterra|Fri Jun 7 12:47:17 2024 +0100|tor: update to 0.4.8.16 stable
 </details>
