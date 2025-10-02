@@ -1,7 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-395e73daf9|Paul Donald|Tue Sep 30 19:43:08 2025 +0200|luci-mod-network: add RFC details for NAT64 option
-e0287b0902|Paul Donald|Tue Sep 30 19:29:31 2025 +0200|luci-mod-network: expose IPv6 RA reachability and retransmission timers
-</details>

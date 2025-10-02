@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-37e8122d2|coolsnowwolf|Tue Sep 23 23:02:17 2025 +0800|rockchip: rk3399: add PCIe bus scan delay
+0a2de777b|aiamadeus|Mon Sep 15 22:20:27 2025 +0800|generic: backport some compile definition
 </details>

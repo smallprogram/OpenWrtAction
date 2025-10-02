@@ -1,0 +1,9 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+8af8b8b5d3|Tianling Shen|Thu Oct 2 02:29:09 2025 +0800|qualcommax: fix extract caldata for xiaomi ax9000 stock layout
+7fab5119d4|Tianling Shen|Fri Apr 25 19:12:17 2025 +0800|rockchip: enable hwRNG for rk3588 by default
+d7f0c06fdd|Liangbin Lian|Fri Apr 25 19:08:07 2025 +0800|rockchip: hwrng: fix -EPROBE_DEFER not propagating upwards
+91c5261ffc|Tianling Shen|Wed Oct 1 17:27:53 2025 +0800|Revert "rockchip: backport Samsung HDMI/eDP Combo PHY driver"
+</details>

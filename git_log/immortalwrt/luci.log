@@ -1,7 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-4eaafb819a|Tianling Shen|Tue Sep 30 19:19:13 2025 +0800|luci-app-homeproxy: fix use of china-dns tag
-b00d33e29d|Tianling Shen|Tue Sep 30 19:15:57 2025 +0800|luci-app-homeproxy: bump to latest git HEAD
-</details>
