@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0a2de777b|aiamadeus|Mon Sep 15 22:20:27 2025 +0800|generic: backport some compile definition
+5ea304007|Christian Marangi|Sat Jul 5 12:51:49 2025 +0200|firmware: Add support for Aeonsemi AS21xxx
+870e65cae|Christian Marangi|Mon Sep 1 18:03:35 2025 +0200|firmware: Add support for Airoha 7581 NPU
 </details>

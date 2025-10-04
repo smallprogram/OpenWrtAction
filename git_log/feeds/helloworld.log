@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3770270|coolsnowwolf|Wed Oct 1 11:45:49 2025 +0800|Merge branch 'master' of https://github.com/fw876/helloworld
-596ab4d|coolsnowwolf|Wed Oct 1 11:44:44 2025 +0800|luci-app-ssr-plus: add nftables fw4 support
-2ca4821|coolsnowwolf|Wed Sep 24 13:37:20 2025 +0800|luci-app-ssr-plus: add udp ping test node feature
+2bfc32a|zxl hhyccc|Fri Oct 3 21:09:37 2025 +0800|luci-app-ssr-plus: Optimize the import.
 </details>

@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-1c53038|A-BO|Wed Oct 1 10:11:32 2025 +0800|luci: append common tcp proxy ports
-</details>

@@ -1,0 +1,28 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0e1110815|Tianling Shen|Fri Oct 3 20:23:21 2025 +0800|Merge Official Source
+b446c2e9e|Wesley Gimenes|Mon Sep 29 04:36:11 2025 -0300|openvpn: bump `PKG_RELEASE`
+00623806b|Dennis Camera|Sat Jan 11 18:59:42 2025 +0100|openvpn: remove kmod-ovpn-dco-v2 dependency
+4e52a8f26|Dennis Camera|Sat Jan 11 18:59:24 2025 +0100|openvpn: enable DCO by default
+0af825465|Austin Lane|Sun Aug 17 18:27:02 2025 -0400|python-pyelftools: Update to v0.32
+28ff64bed|Austin Lane|Thu Dec 5 01:50:48 2024 -0500|python-pyelftools: add package / hostbuild
+3f75acf66|Florian Maurer|Mon Sep 15 21:22:49 2025 +0200|tunneldigger: add broker_selection option to expose load balancing capabilities
+9d839fe5a|Michael Heimpold|Sat Sep 27 12:26:03 2025 +0200|php8: update to 8.3.26
+41823138b|Josef Schlehofer|Wed Oct 1 10:19:53 2025 +0200|apache: update to version 2.4.65
+db7179548|Josef Schlehofer|Tue Sep 30 17:12:26 2025 +0200|syslog-ng: update to version 4.10.1
+d30b8d15e|Josef Schlehofer|Tue Sep 30 08:45:04 2025 +0200|umurmur: update to version 0.3.1
+d470781c9|Josef Schlehofer|Wed Oct 1 00:22:08 2025 +0200|msmtp: update to version 1.8.31
+4164c25a6|Josef Schlehofer|Wed Oct 1 01:04:50 2025 +0200|mariadb: update to version 11.4.8
+bf9b96456|Josef Schlehofer|Fri Sep 26 20:21:36 2025 +0200|gperftools: make libunwind dependency conditional
+9f5d22e99|Josef Schlehofer|Fri Sep 26 20:32:43 2025 +0200|gperftools: enable it for mips*
+a578285a4|Andrey Zotikov|Thu Jul 24 01:58:31 2025 +0300|fail2ban: bump to 1.1.0
+c8077ec8b|Eric Luehrsen|Mon Sep 29 00:04:12 2025 -0400|unbound: update to 1.24.0
+76c033817|Rui Salvaterra|Sun Jul 6 11:25:03 2025 +0100|tor: update to 0.4.8.17 stable
+c1712bbb8|Sergey Ponomarev|Sun Jun 8 13:37:26 2025 +0300|tor: add /etc/torrc.d/ to conffiles
+8d1dc048e|Rui Salvaterra|Fri Jun 7 12:47:17 2024 +0100|tor: update to 0.4.8.16 stable
+777d483db|Eric Fahlgren|Sat Sep 27 15:37:54 2025 -0700|owut: update to 2025.09.27
+47898a8ef|Ray Wang|Sat Aug 23 11:33:16 2025 +0800|natmap: update to 20250924
+7fa3bd1be|Stan Grishin|Tue Sep 23 22:40:30 2025 +0000|adblock-fast: update to 1.2.0
+</details>

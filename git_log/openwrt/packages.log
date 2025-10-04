@@ -2,11 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3f75acf66|Florian Maurer|Mon Sep 15 21:22:49 2025 +0200|tunneldigger: add broker_selection option to expose load balancing capabilities
-9d839fe5a|Michael Heimpold|Sat Sep 27 12:26:03 2025 +0200|php8: update to 8.3.26
-41823138b|Josef Schlehofer|Wed Oct 1 10:19:53 2025 +0200|apache: update to version 2.4.65
-db7179548|Josef Schlehofer|Tue Sep 30 17:12:26 2025 +0200|syslog-ng: update to version 4.10.1
-d30b8d15e|Josef Schlehofer|Tue Sep 30 08:45:04 2025 +0200|umurmur: update to version 0.3.1
-d470781c9|Josef Schlehofer|Wed Oct 1 00:22:08 2025 +0200|msmtp: update to version 1.8.31
-4164c25a6|Josef Schlehofer|Wed Oct 1 01:04:50 2025 +0200|mariadb: update to version 11.4.8
+b446c2e9e|Wesley Gimenes|Mon Sep 29 04:36:11 2025 -0300|openvpn: bump `PKG_RELEASE`
+00623806b|Dennis Camera|Sat Jan 11 18:59:42 2025 +0100|openvpn: remove kmod-ovpn-dco-v2 dependency
+4e52a8f26|Dennis Camera|Sat Jan 11 18:59:24 2025 +0100|openvpn: enable DCO by default
+0af825465|Austin Lane|Sun Aug 17 18:27:02 2025 -0400|python-pyelftools: Update to v0.32
+28ff64bed|Austin Lane|Thu Dec 5 01:50:48 2024 -0500|python-pyelftools: add package / hostbuild
 </details>
