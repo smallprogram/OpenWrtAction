@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-c1d14f2734|Florian Maurer|Mon Sep 29 00:38:03 2025 +0200|mac80211: ath: improve ath10k "failed to flush transmit queue" errors
-</details>
