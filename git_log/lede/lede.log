@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0ac149ffc|Christian Marangi|Sat Jul 5 13:01:21 2025 +0200|generic: backport support for Aeonsemi PHY
+6e93906a4|Christian Marangi|Wed Feb 5 22:23:21 2025 +0100|generic: backport some flow offload helper
 </details>

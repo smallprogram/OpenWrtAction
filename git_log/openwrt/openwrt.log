@@ -1,0 +1,13 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+e8df99cf7c|Coia Prant|Sat Sep 20 17:54:10 2025 +0800|ramips: Add factory image for Qding QC202
+b9382cb733|Coia Prant|Tue Dec 10 23:18:13 2024 +0800|ramips: add support for Qding QC202
+39d87fd2fe|Nickolay Goppen|Sat Sep 6 16:40:31 2025 +0300|ramips: add support for Zbtlink ZBT-WG108
+7632dfa843|Coia Prant|Wed Oct 1 17:09:32 2025 +0800|ramips: Fix Hongdian H7920 v40 mac address
+0f095274fc|Coia Prant|Wed Oct 1 15:55:57 2025 +0800|ramips: Fix Hongdian H7920 v40 pinctrl default state
+28bb6f73e6|Goetz Goerisch|Thu Oct 2 14:47:12 2025 +0200|kernel: bump 6.6 to 6.6.109
+10363b5e26|Matthew Bilker|Wed May 14 00:12:53 2025 -0400|mediatek: filogic: fix for new GL.iNet GL-MT2500/GL-MT2500A hardware revision
+3c04d09336|Ondrej Cierny|Thu Jun 26 19:39:37 2025 -0700|download: improve rawgit tar reliability
+</details>
