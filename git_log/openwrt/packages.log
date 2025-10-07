@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0382e4fb4|Tianling Shen|Sat Sep 20 16:22:59 2025 +0800|microsocks: run as unprivileged user
+ed702ba59|Michal Hrusecky|Thu Oct 2 09:08:42 2025 +0200|mariadb: add unconditional dependency on libaio
+25238f157|John Audia|Sun Sep 7 07:05:52 2025 -0400|snort3: clean-up Makefile
+6a1ef4be7|John Audia|Sun Sep 7 06:57:17 2025 -0400|snort3: switch from git proto to tarballs
+d8fd46fde|John Audia|Sat Sep 6 07:42:29 2025 -0400|snort3: update to 3.9.5.0
 </details>

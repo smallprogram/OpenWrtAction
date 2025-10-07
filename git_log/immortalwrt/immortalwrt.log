@@ -1,7 +1,8 @@
-<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
 
 SHA|Author|Date|Message
 -|-|-|-
+258c930590|Tianling Shen|Mon Oct 6 17:18:06 2025 +0800|Merge Official Source
 e8df99cf7c|Coia Prant|Sat Sep 20 17:54:10 2025 +0800|ramips: Add factory image for Qding QC202
 b9382cb733|Coia Prant|Tue Dec 10 23:18:13 2024 +0800|ramips: add support for Qding QC202
 39d87fd2fe|Nickolay Goppen|Sat Sep 6 16:40:31 2025 +0300|ramips: add support for Zbtlink ZBT-WG108

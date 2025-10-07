@@ -2,8 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-19640e2cc|Tianling Shen|Sun Oct 5 20:15:03 2025 +0800|sing-box: backport tproxy ipv6 fix
-9f3fe7972|Tianling Shen|Sun Oct 5 20:08:10 2025 +0800|sing-box: rollback to 1.12.4
-79b5900e1|Tianling Shen|Sun Oct 5 19:00:04 2025 +0800|sing-box: Update to 1.12.9
-89e3f5b34|Interesting Gang|Sun Oct 5 12:07:15 2025 +0800|hysteria: update to 2.6.4
+494aa621b|Tianling Shen|Mon Oct 6 16:47:20 2025 +0800|smartdns: remove redundant dependencies
+d5b7d7ae3|Tianling Shen|Sun Oct 5 19:17:12 2025 +0800|msd_lite: comment out default uci options
+b1d494892|Tianling Shen|Sun Oct 5 19:09:23 2025 +0800|msd_lite: increase default ringBufSize to 4096 for 4K channels
 </details>

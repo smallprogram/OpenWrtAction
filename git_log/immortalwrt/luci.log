@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1ed8590768|Tianling Shen|Sun Oct 5 17:48:02 2025 +0800|luci-app-homeproxy: bump to latest git HEAD
+f69fa3581e|Tianling Shen|Sun Oct 5 19:36:35 2025 +0800|luci-app-msd_lite: add loglevel option
+288a1a44ff|Tianling Shen|Sun Oct 5 19:13:02 2025 +0800|luci-app-msd_lite: increase default ringBufSize to 4096 for 4K channels
 </details>

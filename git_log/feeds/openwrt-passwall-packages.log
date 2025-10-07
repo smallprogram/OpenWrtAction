@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-2c4e93d|A-BO|Sun Oct 5 23:06:45 2025 +0800|naiveproxy: update to 140.0.7339.123-3
-09e9364|github-actions[bot]|Sun Oct 5 20:49:44 2025 +0800|sing-box: update to 1.12.9 (#522)
-</details>

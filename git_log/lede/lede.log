@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6e93906a4|Christian Marangi|Wed Feb 5 22:23:21 2025 +0100|generic: backport some flow offload helper
+7e07a4fb3|Christian Marangi|Mon Sep 1 18:30:27 2025 +0200|airoha: add NPU and memory node for AN7581
 </details>
