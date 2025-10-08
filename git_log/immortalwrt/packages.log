@@ -1,8 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-494aa621b|Tianling Shen|Mon Oct 6 16:47:20 2025 +0800|smartdns: remove redundant dependencies
-d5b7d7ae3|Tianling Shen|Sun Oct 5 19:17:12 2025 +0800|msd_lite: comment out default uci options
-b1d494892|Tianling Shen|Sun Oct 5 19:09:23 2025 +0800|msd_lite: increase default ringBufSize to 4096 for 4K channels
-</details>

@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f69fa3581e|Tianling Shen|Sun Oct 5 19:36:35 2025 +0800|luci-app-msd_lite: add loglevel option
-288a1a44ff|Tianling Shen|Sun Oct 5 19:13:02 2025 +0800|luci-app-msd_lite: increase default ringBufSize to 4096 for 4K channels
+689192a6f9|Tianling Shen|Tue Oct 7 22:24:04 2025 +0800|Merge Official Source
+257ca434b8|Hannu Nyman|Sun Oct 5 19:32:52 2025 +0300|treewide: Backport i18n translations
 </details>

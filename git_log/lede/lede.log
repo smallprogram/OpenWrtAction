@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7e07a4fb3|Christian Marangi|Mon Sep 1 18:30:27 2025 +0200|airoha: add NPU and memory node for AN7581
+bf1b47515|Christian Marangi|Tue Mar 4 22:59:45 2025 +0100|airoha: replace PCIe patches with upstream
 </details>
