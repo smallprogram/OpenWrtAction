@@ -1,0 +1,8 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+7a30a574b|Josef Schlehofer|Wed Sep 24 10:03:13 2025 +0200|snort3: refactor architecture-specific dependencies and CMake options
+eb39acf95|Stan Grishin|Sat Oct 4 03:46:51 2025 +0000|adblock-fast: update to 1.2.0-r20
+0723d0f62|John Audia|Tue Aug 12 03:49:11 2025 -0400|libdaq3: update to 3.0.21
+</details>

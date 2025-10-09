@@ -1,8 +1,0 @@
-<details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-99cf8fb|zxl hhyccc|Tue Oct 7 22:16:34 2025 +0800|naiveproxy: update to 140.0.7339.123-3
-ebb2468|zxl hhyccc|Tue Oct 7 21:53:00 2025 +0800|luci-app-ssr-plus: Fix the trojan of Xray and optimize the shadowsocks subscribe of Xray.
-56ef2e9|zxl hhyccc|Tue Oct 7 21:50:44 2025 +0800|luci-app-ssr-plus: Add common trojan configuration import and optimize the shadowsocks import code for Xray.
-</details>

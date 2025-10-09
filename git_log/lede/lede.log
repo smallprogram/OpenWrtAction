@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bf1b47515|Christian Marangi|Tue Mar 4 22:59:45 2025 +0100|airoha: replace PCIe patches with upstream
+b987df788|Zoltan HERPAI|Fri May 30 21:30:38 2025 +0000|sunxi: add F1C100 (arm926ej-s) support
 </details>
