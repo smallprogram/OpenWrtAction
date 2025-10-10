@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b987df788|Zoltan HERPAI|Fri May 30 21:30:38 2025 +0000|sunxi: add F1C100 (arm926ej-s) support
+76eef3104|coolsnowwolf|Thu Oct 9 18:23:18 2025 +0800|qca-ssdk: fix build with linux kernel 6.12.48+
+a7ecc6bae|coolsnowwolf|Thu Oct 9 18:10:55 2025 +0800|kernel: bump all to latest HEAD
+114ee0232|Internet1235|Thu Oct 9 09:20:37 2025 +0800|openssl: update to 3.5.4 (#13735)
 </details>

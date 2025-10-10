@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b03c1ba2f1|Stan Grishin|Wed Oct 8 12:10:16 2025 -0700|Merge pull request #7990 from stangri/openwrt-24.10-luci-app-adblock-fast
-afe7dcebe6|Stan Grishin|Tue Oct 7 22:37:15 2025 +0000|luci-app-adblock-fast: update to 1.2.0-r20
+388248e366|Stan Grishin|Thu Oct 9 11:26:48 2025 -0700|Merge pull request #7994 from stangri/openwrt-24.10-luci-app-https-dns-proxy
+32f6880205|Stan Grishin|Tue Oct 7 22:42:40 2025 +0000|luci-app-https-dns-proxy: update to 2025.10.07-r1
 </details>
