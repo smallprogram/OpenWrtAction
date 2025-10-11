@@ -2,5 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-436c73d45|Stan Grishin|Tue Oct 7 16:38:50 2025 +0000|https-dns-proxy: update to 2025.10.07-r1
+4a1fbf06e|Stan Grishin|Tue Oct 7 22:31:41 2025 +0000|pbr: update to 1.2.0-r2
+0178450e4|Antonio Pastor|Wed Oct 8 21:21:33 2025 -0400|netatalk: fix config/uci files handling in all variants
+4542296db|John Audia|Sun Oct 5 07:34:07 2025 -0400|snort3: depend on libtirpc only for musl builds
+830809718|Josef Schlehofer|Thu Oct 9 08:54:51 2025 +0200|gperftools: include headers in the staging_dir
+5f8bd04c1|Josef Schlehofer|Wed Oct 8 21:47:02 2025 +0200|snort3: enable/disable options based on package availability
 </details>

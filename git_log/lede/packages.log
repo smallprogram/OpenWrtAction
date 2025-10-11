@@ -2,13 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bb45f548|coolsnowwolf|Thu Oct 9 19:18:53 2025 +0800|setools: update to 4.5.1
-1aa4fb98|coolsnowwolf|Thu Oct 9 19:12:01 2025 +0800|selinux-python: update to 3.8.1
-4a901f8e|coolsnowwolf|Thu Oct 9 19:07:33 2025 +0800|python3: update to version 3.11.13
-75426ff9|coolsnowwolf|Thu Oct 9 09:49:30 2025 +0800|Merge pull request #1011 from Internet1235/geoview
-0542cdfd|coolsnowwolf|Thu Oct 9 09:49:20 2025 +0800|Merge pull request #1012 from Internet1235/golang
-edc167e9|coolsnowwolf|Thu Oct 9 09:49:08 2025 +0800|Merge pull request #1010 from Internet1235/openlist
-c36d5e4d|Internet1235|Wed Oct 8 14:49:58 2025 +0800|golang: update to 1.25.2
-290c978c|Internet1235|Tue Oct 7 13:52:57 2025 +0800|geoview: update to 0.1.11
-5c9dddb0|Internet1235|Thu Oct 2 21:56:20 2025 +0800|openlist: update to 4.1.4
+69ee9061|coolsnowwolf|Fri Oct 10 17:49:26 2025 +0800|nmap: update to version 7.95
+50541d82|coolsnowwolf|Fri Oct 10 16:03:36 2025 +0800|mwan3: fix mwan3 flush conntrack table call
 </details>
