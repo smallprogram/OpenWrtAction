@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-bc3e351|A-BO|Fri Oct 10 23:03:45 2025 +0800|luci: optimize httpheader path default value
-</details>

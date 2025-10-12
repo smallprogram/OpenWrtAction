@@ -2,7 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cf27e6dd7|coolsnowwolf|Fri Oct 10 18:01:51 2025 +0800|ncurses: enable pc files in the host build
-bee33b4ab|coolsnowwolf|Fri Oct 10 16:56:26 2025 +0800|Version update to R25.10.10
-173d7adf1|ZeaKyX|Fri Oct 10 13:12:18 2025 +0800|libudev: remove qat and eudev (#13737)
+162d64fcc|coolsnowwolf|Sat Oct 11 21:09:56 2025 +0800|mediatek: filogic: add kmod-mt7996-233-firmware for BPi-R4
+28bad0e75|coolsnowwolf|Sat Oct 11 13:50:19 2025 +0800|openssl: update to 3.6.0
+2b69a8385|coolsnowwolf|Sat Oct 11 11:14:51 2025 +0800|mt76: fix api_update for AX targets
+8a80fb181|coolsnowwolf|Sat Oct 11 10:06:31 2025 +0800|mt76: add tx_power check during eeprom loading for BE14
+d18c6ac68|coolsnowwolf|Sat Oct 11 10:02:21 2025 +0800|mt76: add missing eeprom for mt7992 firmware
 </details>

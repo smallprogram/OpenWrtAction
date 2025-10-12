@@ -1,0 +1,7 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+aae6b605ea|Tianling Shen|Sun Oct 12 02:02:51 2025 +0800|uboot-mediatek: backport a fix for AN8855 port isolation
+876ce0a8ae|Tianling Shen|Sat Oct 11 15:31:39 2025 +0800|r8168: disable rss by default
+</details>

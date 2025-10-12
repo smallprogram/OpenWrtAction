@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-18148d5e3c|Stan Grishin|Fri Oct 10 16:35:18 2025 -0700|Merge pull request #7992 from stangri/openwrt-24.10-luci-app-pbr
-8354f130b9|Stan Grishin|Tue Oct 7 22:40:15 2025 +0000|luci-app-pbr: update to 1.2.0-r2
+de7651ffef|Andy Chiang|Sun Oct 12 00:18:46 2025 +0700|build: fix Traditional Chinese name
 </details>
