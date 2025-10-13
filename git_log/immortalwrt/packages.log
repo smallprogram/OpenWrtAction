@@ -1,0 +1,24 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+3c98d8d1b|Tianling Shen|Sun Oct 12 12:29:12 2025 +0800|Merge Official Source
+cd7ecaafb|Tianling Shen|Sun Oct 12 02:06:56 2025 +0800|rustdesk-server: update mirror hash
+98bdc9d8b|Michal Hrusecky|Wed Oct 8 12:27:44 2025 +0200|samba4: update to version 4.18.11
+88be1c248|Stan Grishin|Fri Oct 10 23:27:06 2025 +0000|adblock-fast: bugfixes
+63203845b|Stan Grishin|Fri Oct 10 23:30:41 2025 +0000|https-dns-proxy: bugfix: remove IPKG_INSTROOT check
+4a1fbf06e|Stan Grishin|Tue Oct 7 22:31:41 2025 +0000|pbr: update to 1.2.0-r2
+0178450e4|Antonio Pastor|Wed Oct 8 21:21:33 2025 -0400|netatalk: fix config/uci files handling in all variants
+4542296db|John Audia|Sun Oct 5 07:34:07 2025 -0400|snort3: depend on libtirpc only for musl builds
+830809718|Josef Schlehofer|Thu Oct 9 08:54:51 2025 +0200|gperftools: include headers in the staging_dir
+5f8bd04c1|Josef Schlehofer|Wed Oct 8 21:47:02 2025 +0200|snort3: enable/disable options based on package availability
+436c73d45|Stan Grishin|Tue Oct 7 16:38:50 2025 +0000|https-dns-proxy: update to 2025.10.07-r1
+7a30a574b|Josef Schlehofer|Wed Sep 24 10:03:13 2025 +0200|snort3: refactor architecture-specific dependencies and CMake options
+eb39acf95|Stan Grishin|Sat Oct 4 03:46:51 2025 +0000|adblock-fast: update to 1.2.0-r20
+0723d0f62|John Audia|Tue Aug 12 03:49:11 2025 -0400|libdaq3: update to 3.0.21
+ed702ba59|Michal Hrusecky|Thu Oct 2 09:08:42 2025 +0200|mariadb: add unconditional dependency on libaio
+25238f157|John Audia|Sun Sep 7 07:05:52 2025 -0400|snort3: clean-up Makefile
+6a1ef4be7|John Audia|Sun Sep 7 06:57:17 2025 -0400|snort3: switch from git proto to tarballs
+d8fd46fde|John Audia|Sat Sep 6 07:42:29 2025 -0400|snort3: update to 3.9.5.0
+0382e4fb4|Tianling Shen|Sat Sep 20 16:22:59 2025 +0800|microsocks: run as unprivileged user
+</details>

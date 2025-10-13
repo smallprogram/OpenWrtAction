@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+f604972|lwb1978|Sun Oct 12 18:41:19 2025 +0800|luci: direct dns supports ipv6
+</details>

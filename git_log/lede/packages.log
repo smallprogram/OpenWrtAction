@@ -1,8 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-47165314|coolsnowwolf|Sat Oct 11 13:24:07 2025 +0800|Merge pull request #1013 from Internet1235/ddns-go
-0e030af0|coolsnowwolf|Sat Oct 11 13:24:43 2025 +0800|Revert "mwan3: fix mwan3 flush conntrack table call"
-b14ea525|Internet1235|Mon Oct 6 22:58:27 2025 +0800|ddns-go: update to 6.12.5
-</details>

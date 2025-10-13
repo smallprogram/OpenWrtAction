@@ -1,8 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-98bdc9d8b|Michal Hrusecky|Wed Oct 8 12:27:44 2025 +0200|samba4: update to version 4.18.11
-88be1c248|Stan Grishin|Fri Oct 10 23:27:06 2025 +0000|adblock-fast: bugfixes
-63203845b|Stan Grishin|Fri Oct 10 23:30:41 2025 +0000|https-dns-proxy: bugfix: remove IPKG_INSTROOT check
-</details>

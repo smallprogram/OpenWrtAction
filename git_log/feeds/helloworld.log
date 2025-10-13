@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-861cf21|zxl hhyccc|Sun Oct 12 01:31:27 2025 +0800|luci-app-ssr-plus: Optimize subscribe code.
-f4df419|zxl hhyccc|Sat Oct 11 23:57:17 2025 +0800|luci-app-ssr-plus: Optimize subscribe code to ensure all parse of node.
+6d0f276|zxl hhyccc|Sun Oct 12 15:21:47 2025 +0800|luci-app-ssr-plus: Fix subscribe code.
 </details>
