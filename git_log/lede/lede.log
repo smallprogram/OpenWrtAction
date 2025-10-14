@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bed9a10a1|Daniel Golle|Wed Oct 23 13:38:55 2024 +0100|mediatek: add wireless offload firmware to MT7988 boards
+8803f8638|Daniel Golle|Sun Oct 5 00:34:42 2025 +0100|generic: mtdsplit: improve detecting external-data FIT
 </details>

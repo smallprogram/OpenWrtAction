@@ -1,0 +1,6 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+2b783f23e8|Paul Donald|Mon Oct 13 14:33:23 2025 +0200|luci-mod-system: minor code fixes for repokeys and sshkeys
+</details>

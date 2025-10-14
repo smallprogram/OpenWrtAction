@@ -1,0 +1,1123 @@
+<details> <summary> <b>OpenClash new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+9e078d41|vernesong|Tue Oct 7 05:34:59 2025 +0800|Merge branch 'dev'
+3e230f09|vernesong|Tue Oct 7 05:34:59 2025 +0800|Merge branch 'dev'
+c67566ad|vernesong|Tue Oct 7 05:19:18 2025 +0800|0.47.015
+a7764ec8|vernesong|Tue Oct 7 05:19:18 2025 +0800|0.47.015
+52665451|vernesong|Sun Oct 5 18:09:23 2025 +0800|chore: tblsection model
+44930403|vernesong|Sun Oct 5 18:09:23 2025 +0800|chore: tblsection model
+deebc09e|vernesong|Sun Oct 5 12:08:10 2025 +0800|fix: option not work
+d684af05|vernesong|Sun Oct 5 12:08:10 2025 +0800|fix: option not work
+3eb8a404|vernesong|Sun Oct 5 11:44:50 2025 +0800|0.47.013
+1b1a0167|vernesong|Sun Oct 5 11:44:50 2025 +0800|0.47.013
+ad9a7ac3|github-actions[bot]|Sat Oct 4 00:45:42 2025 +0000|Chore: update third-party resources
+b2da6539|github-actions[bot]|Sat Oct 4 00:45:42 2025 +0000|Chore: update third-party resources
+cfaa9930|vernesong|Sat Oct 4 00:09:46 2025 +0800|0.47.012
+a037588d|vernesong|Sat Oct 4 00:09:46 2025 +0800|0.47.012
+0bc5684a|vernesong|Sat Oct 4 00:09:29 2025 +0800|#4757
+761b84d9|vernesong|Sat Oct 4 00:09:29 2025 +0800|#4757
+5c005f9c|vernesong|Fri Oct 3 23:39:32 2025 +0800|0.47.011
+59dd62f3|vernesong|Fri Oct 3 23:39:32 2025 +0800|0.47.011
+16547449|vernesong|Fri Oct 3 23:38:41 2025 +0800|chore: adjust dler api services
+022267ab|vernesong|Fri Oct 3 23:38:41 2025 +0800|chore: adjust dler api services
+df98d10c|vernesong|Fri Oct 3 23:07:38 2025 +0800|chore: dler checkin multiple
+8b2276b5|vernesong|Fri Oct 3 23:07:38 2025 +0800|chore: dler checkin multiple
+0c24d456|vernesong|Fri Oct 3 18:48:55 2025 +0800|chore: upgrade check luci-compat
+e9328e01|vernesong|Fri Oct 3 18:48:55 2025 +0800|chore: upgrade check luci-compat
+00e590e9|vernesong|Fri Oct 3 00:46:06 2025 +0800|chore: tblsection style
+652ad8a4|vernesong|Fri Oct 3 00:46:06 2025 +0800|chore: tblsection style
+b0c7b60e|zxl hhyccc|Thu Oct 2 23:57:31 2025 +0800|Fix build `openclash_ps.sh: line 2: /usr/share/openclash/uci.sh: No such file`  issue. (#4756)
+954886f5|zxl hhyccc|Thu Oct 2 23:57:31 2025 +0800|Fix build `openclash_ps.sh: line 2: /usr/share/openclash/uci.sh: No such file`  issue. (#4756)
+4c8d5e8d|vernesong|Wed Oct 1 19:54:21 2025 +0800|Merge branch 'dev'
+6760caba|vernesong|Wed Oct 1 19:54:21 2025 +0800|Merge branch 'dev'
+15bacbf2|vernesong|Wed Oct 1 19:20:56 2025 +0800|workflow: add backup sdk url
+954bd4de|vernesong|Wed Oct 1 19:20:56 2025 +0800|workflow: add backup sdk url
+b8742163|vernesong|Wed Oct 1 18:44:36 2025 +0800|0.47.010
+591b73eb|vernesong|Wed Oct 1 18:44:36 2025 +0800|0.47.010
+b27613a5|vernesong|Wed Oct 1 18:42:37 2025 +0800|Merge branch 'dev'
+492509cd|vernesong|Wed Oct 1 18:42:37 2025 +0800|Merge branch 'dev'
+2a639a07|github-actions[bot]|Wed Oct 1 00:46:10 2025 +0000|Chore: update third-party resources
+37a34806|github-actions[bot]|Wed Oct 1 00:46:10 2025 +0000|Chore: update third-party resources
+ad49d26e|vernesong|Tue Sep 30 23:37:35 2025 +0800|chore: lan ac traffic support dscp
+f741bb93|vernesong|Tue Sep 30 23:37:35 2025 +0800|chore: lan ac traffic support dscp
+bb5969cd|vernesong|Tue Sep 30 22:44:56 2025 +0800|Update Makefile
+f8341e07|vernesong|Tue Sep 30 22:44:56 2025 +0800|Update Makefile
+b213620f|vernesong|Tue Sep 30 22:43:23 2025 +0800|fix: authentication overwrite
+81d4c81d|vernesong|Tue Sep 30 22:43:23 2025 +0800|fix: authentication overwrite
+2cc6e5fb|vernesong|Mon Sep 29 20:58:35 2025 +0800|0.47.008
+1da32a7a|vernesong|Mon Sep 29 20:58:35 2025 +0800|0.47.008
+e297e98d|vernesong|Mon Sep 29 14:08:23 2025 +0800|fix: uselightgbm option not work
+1e6303ad|vernesong|Mon Sep 29 14:08:23 2025 +0800|fix: uselightgbm option not work
+3246e369|vernesong|Mon Sep 29 05:09:54 2025 +0800|chore: sleep for avoiding system unready when firewall reload
+ae71cc50|vernesong|Mon Sep 29 05:09:54 2025 +0800|chore: sleep for avoiding system unready when firewall reload
+b03ab312|github-actions[bot]|Sun Sep 28 00:46:18 2025 +0000|Chore: update third-party resources
+1b885d4a|github-actions[bot]|Sun Sep 28 00:46:18 2025 +0000|Chore: update third-party resources
+ecf20400|vernesong|Thu Sep 25 10:50:18 2025 +0800|chore: Zashboard update use gh-pages-cdn-fonts
+a4373f78|vernesong|Thu Sep 25 10:50:18 2025 +0800|chore: Zashboard update use gh-pages-cdn-fonts
+595d03a5|github-actions[bot]|Thu Sep 25 00:48:14 2025 +0000|Chore: update third-party resources
+536723b1|github-actions[bot]|Thu Sep 25 00:48:14 2025 +0000|Chore: update third-party resources
+3c43f241|vernesong|Wed Sep 24 13:08:06 2025 +0800|0.47.007
+858acdd7|vernesong|Wed Sep 24 13:08:06 2025 +0800|0.47.007
+167c6d81|vernesong|Wed Sep 24 12:43:58 2025 +0800|chore: fix typo
+3bd3a97c|vernesong|Wed Sep 24 12:43:58 2025 +0800|chore: fix typo
+2b2b3798|vernesong|Wed Sep 24 10:26:16 2025 +0800|chore: decrease dark mode load latency
+a2e32be0|vernesong|Wed Sep 24 10:26:16 2025 +0800|chore: decrease dark mode load latency
+43d9bd80|github-actions[bot]|Mon Sep 22 00:46:20 2025 +0000|Chore: update third-party resources
+f49168c0|github-actions[bot]|Mon Sep 22 00:46:20 2025 +0000|Chore: update third-party resources
+32125e1d|github-actions[bot]|Fri Sep 19 00:46:05 2025 +0000|Chore: update third-party resources
+91fdb776|github-actions[bot]|Fri Sep 19 00:46:05 2025 +0000|Chore: update third-party resources
+adbdbf1a|vernesong|Thu Sep 18 12:28:12 2025 +0800|Merge branch 'dev'
+d1fd7884|vernesong|Thu Sep 18 12:28:12 2025 +0800|Merge branch 'dev'
+40e37473|vernesong|Thu Sep 18 12:21:36 2025 +0800|0.47.006
+37883c28|vernesong|Thu Sep 18 12:21:36 2025 +0800|0.47.006
+bc7896a4|vernesong|Thu Sep 18 12:21:03 2025 +0800|fix: conflicting uci_get
+6d4250f8|vernesong|Thu Sep 18 12:21:03 2025 +0800|fix: conflicting uci_get
+3f9d8d03|vernesong|Thu Sep 18 02:11:47 2025 +0800|chore: refine
+4315c6a0|vernesong|Thu Sep 18 02:11:47 2025 +0800|chore: refine
+82555b33|vernesong|Thu Sep 18 01:58:41 2025 +0800|#4723
+0568f2a3|vernesong|Thu Sep 18 01:58:41 2025 +0800|#4723
+9faad7d5|vernesong|Thu Sep 18 01:57:30 2025 +0800|#4717
+6caaa675|vernesong|Thu Sep 18 01:57:30 2025 +0800|#4717
+07791684|vernesong|Wed Sep 17 21:05:19 2025 +0800|0.47.005
+a5766f75|vernesong|Wed Sep 17 21:05:19 2025 +0800|0.47.005
+7210f87a|vernesong|Wed Sep 17 21:04:31 2025 +0800|fix: some config overwrite not work
+269711ec|vernesong|Wed Sep 17 21:04:31 2025 +0800|fix: some config overwrite not work
+ac4bce8b|vernesong|Wed Sep 17 20:48:15 2025 +0800|0.47.004
+a3a85f21|vernesong|Wed Sep 17 20:48:15 2025 +0800|0.47.004
+501341b4|vernesong|Wed Sep 17 01:42:13 2025 +0800|chore: load avg percent
+02185e8b|vernesong|Wed Sep 17 01:42:13 2025 +0800|chore: load avg percent
+7d2c4a79|github-actions[bot]|Tue Sep 16 00:47:07 2025 +0000|Chore: update third-party resources
+82f774f0|github-actions[bot]|Tue Sep 16 00:47:07 2025 +0000|Chore: update third-party resources
+dc56e173|zxl hhyccc|Sun Sep 14 12:46:07 2025 +0800|luci-app-openclash: Make sure to always display Move up and Move down. (#4718)
+efde305c|zxl hhyccc|Sun Sep 14 12:46:07 2025 +0800|luci-app-openclash: Make sure to always display Move up and Move down. (#4718)
+4043f072|vernesong|Sun Sep 14 11:13:28 2025 +0800|chore: general support environment variable
+381cba09|vernesong|Sun Sep 14 11:13:28 2025 +0800|chore: general support environment variable
+512347c8|github-actions[bot]|Sat Sep 13 00:45:51 2025 +0000|Chore: update third-party resources
+ddd72205|github-actions[bot]|Sat Sep 13 00:45:51 2025 +0000|Chore: update third-party resources
+98af9262|vernesong|Wed Sep 10 22:21:31 2025 +0800|fix: quick start
+ad8681dc|vernesong|Wed Sep 10 22:21:31 2025 +0800|fix: quick start
+ef963d42|github-actions[bot]|Wed Sep 10 00:46:06 2025 +0000|Chore: update third-party resources
+c5655396|github-actions[bot]|Wed Sep 10 00:46:06 2025 +0000|Chore: update third-party resources
+09d13838|vernesong|Wed Sep 10 01:46:16 2025 +0800|chore: oc version
+0f2c4405|vernesong|Wed Sep 10 01:46:16 2025 +0800|chore: oc version
+578179cf|github-actions[bot]|Sun Sep 7 00:45:53 2025 +0000|Chore: update third-party resources
+c297888e|github-actions[bot]|Sun Sep 7 00:45:53 2025 +0000|Chore: update third-party resources
+7befeb06|vernesong|Sat Sep 6 03:21:28 2025 +0800|0.47.003
+9de5bb8e|vernesong|Sat Sep 6 03:21:28 2025 +0800|0.47.003
+4c724835|Aethersailor|Sat Sep 6 03:21:04 2025 +0800|chore: fix spacing in zh-CN translations (#4699)
+ad5d1755|Aethersailor|Sat Sep 6 03:21:04 2025 +0800|chore: fix spacing in zh-CN translations (#4699)
+9208add7|vernesong|Sat Sep 6 03:18:47 2025 +0800|chore: refine
+f0ee4a8f|vernesong|Sat Sep 6 03:18:47 2025 +0800|chore: refine
+809e5d98|vernesong|Fri Sep 5 23:46:49 2025 +0800|chore: refine
+06ef410b|vernesong|Fri Sep 5 23:46:49 2025 +0800|chore: refine
+640c0de0|github-actions[bot]|Thu Sep 4 00:45:39 2025 +0000|Chore: update third-party resources
+188092ad|github-actions[bot]|Thu Sep 4 00:45:39 2025 +0000|Chore: update third-party resources
+d182171c|vernesong|Wed Sep 3 22:01:41 2025 +0800|chore: add check for value type in overwrite conf
+59816d81|vernesong|Wed Sep 3 22:01:41 2025 +0800|chore: add check for value type in overwrite conf
+e2ecb795|github-actions[bot]|Mon Sep 1 00:46:45 2025 +0000|Chore: update third-party resources
+27b4028d|github-actions[bot]|Mon Sep 1 00:46:45 2025 +0000|Chore: update third-party resources
+6a14cdb2|vernesong|Sun Aug 31 21:02:31 2025 +0800|chore: better overwrite load log
+991beca2|vernesong|Sun Aug 31 21:02:31 2025 +0800|chore: better overwrite load log
+5152ce1c|Aethersailor|Sun Aug 31 20:43:53 2025 +0800|Fix Chinese translation spacing and duplicate translation key (#4685)
+b586d51f|Aethersailor|Sun Aug 31 20:43:53 2025 +0800|Fix Chinese translation spacing and duplicate translation key (#4685)
+60d304c1|vernesong|Sun Aug 31 11:45:37 2025 +0800|0.47.002
+79846793|vernesong|Sun Aug 31 11:45:37 2025 +0800|0.47.002
+c9edd56e|github-actions[bot]|Sun Aug 31 00:45:48 2025 +0000|Chore: update third-party resources
+4946dd6d|github-actions[bot]|Sun Aug 31 00:45:48 2025 +0000|Chore: update third-party resources
+377362ec|vernesong|Sat Aug 30 22:26:51 2025 +0800|chore: remove unsupported options for overwrite
+a00fa2d5|vernesong|Sat Aug 30 22:26:51 2025 +0800|chore: remove unsupported options for overwrite
+ea253130|vernesong|Sat Aug 30 20:08:07 2025 +0800|chore: add user-agent option for file download in overwrite module
+d0d8ae04|vernesong|Sat Aug 30 20:08:07 2025 +0800|chore: add user-agent option for file download in overwrite module
+2504f599|Aethersailor|Sat Aug 30 15:00:39 2025 +0800|chore: fix typo in default configuration file (#4679)
+69fbaa2c|Aethersailor|Sat Aug 30 15:00:39 2025 +0800|chore: fix typo in default configuration file (#4679)
+11c718fa|vernesong|Sat Aug 30 00:51:30 2025 +0800|Merge branch 'dev'
+95035c81|vernesong|Sat Aug 30 00:51:30 2025 +0800|Merge branch 'dev'
+eaf479cc|vernesong|Sat Aug 30 00:42:47 2025 +0800|0.47.001
+bbe4ba58|vernesong|Sat Aug 30 00:42:47 2025 +0800|0.47.001
+15acf3fb|vernesong|Fri Aug 29 19:53:57 2025 +0800|0.46.159
+0120b2f7|vernesong|Fri Aug 29 19:53:57 2025 +0800|0.46.159
+ce6cded4|vernesong|Fri Aug 29 19:52:38 2025 +0800|chore: overwrite conf use properties mode
+5b74e666|vernesong|Fri Aug 29 19:52:38 2025 +0800|chore: overwrite conf use properties mode
+2ad1037d|vernesong|Fri Aug 29 19:36:45 2025 +0800|chore: update default config dns
+33a33696|vernesong|Fri Aug 29 19:36:45 2025 +0800|chore: update default config dns
+bdba99c8|vernesong|Fri Aug 29 19:30:58 2025 +0800|0.46.158
+28db9b5d|vernesong|Fri Aug 29 19:30:58 2025 +0800|0.46.158
+f7039e3e|vernesong|Fri Aug 29 19:30:36 2025 +0800|chore: update overwrite default conf
+677b6632|vernesong|Fri Aug 29 19:30:36 2025 +0800|chore: update overwrite default conf
+07f2d782|vernesong|Fri Aug 29 08:56:48 2025 +0800|chore: repetitive translation
+da29a7a9|vernesong|Fri Aug 29 08:56:48 2025 +0800|chore: repetitive translation
+c8d5a1b0|vernesong|Fri Aug 29 08:05:28 2025 +0800|workflow: delete artifact
+061f9277|vernesong|Fri Aug 29 08:05:28 2025 +0800|workflow: delete artifact
+a936e4d6|vernesong|Fri Aug 29 07:51:49 2025 +0800|0.46.157
+9210a7a3|vernesong|Fri Aug 29 07:51:49 2025 +0800|0.46.157
+6c748f0e|Zhong Lufan (钟路帆)|Fri Aug 29 07:38:13 2025 +0800|feat: restart only when dnsmasq is enabled (#4674)
+2a0f2c34|Zhong Lufan (钟路帆)|Fri Aug 29 07:38:13 2025 +0800|feat: restart only when dnsmasq is enabled (#4674)
+a55f2193|vernesong|Fri Aug 29 07:36:29 2025 +0800|chore: add core privilege check if smart type
+0d955249|vernesong|Fri Aug 29 07:36:29 2025 +0800|chore: add core privilege check if smart type
+85c3c86e|vernesong|Fri Aug 29 06:56:25 2025 +0800|workflow: compile use matrix
+6ed0304d|vernesong|Fri Aug 29 06:56:25 2025 +0800|workflow: compile use matrix
+cecc53e6|github-actions[bot]|Thu Aug 28 00:45:39 2025 +0000|Chore: update third-party resources
+7c399b5b|github-actions[bot]|Thu Aug 28 00:45:39 2025 +0000|Chore: update third-party resources
+ea9808e5|vernesong|Wed Aug 27 20:14:20 2025 +0800|0.46.156
+b30ade59|vernesong|Wed Aug 27 20:14:20 2025 +0800|0.46.156
+0d0d1cfa|vernesong|Wed Aug 27 11:30:52 2025 +0800|chore: log out overwrite script
+22e5fcd3|vernesong|Wed Aug 27 11:30:52 2025 +0800|chore: log out overwrite script
+69ff8860|vernesong|Tue Aug 26 18:00:17 2025 +0800|chore: refine
+950bf9ed|vernesong|Tue Aug 26 18:00:17 2025 +0800|chore: refine
+679f8300|vernesong|Tue Aug 26 13:21:57 2025 +0800|0.46.155
+a443db81|vernesong|Tue Aug 26 13:21:57 2025 +0800|0.46.155
+8f378a1e|Aethersailor|Tue Aug 26 09:39:46 2025 +0800|chore: add more subscription conversion templates (#4670)
+370b3367|Aethersailor|Tue Aug 26 09:39:46 2025 +0800|chore: add more subscription conversion templates (#4670)
+03905554|vernesong|Tue Aug 26 00:40:46 2025 +0800|0.46.154
+1ca604b2|vernesong|Tue Aug 26 00:40:46 2025 +0800|0.46.154
+bd72dec5|vernesong|Mon Aug 25 22:08:38 2025 +0800|0.46.153
+84e1e7b7|vernesong|Mon Aug 25 22:08:38 2025 +0800|0.46.153
+6d6e04b3|vernesong|Mon Aug 25 22:08:18 2025 +0800|fix: module not pollution master uci settings
+749fd963|vernesong|Mon Aug 25 22:08:18 2025 +0800|fix: module not pollution master uci settings
+17beb1b6|vernesong|Mon Aug 25 17:49:53 2025 +0800|0.46.152
+4632df09|vernesong|Mon Aug 25 17:49:53 2025 +0800|0.46.152
+12b30095|vernesong|Mon Aug 25 13:06:02 2025 +0800|0.46.151
+fc5baf49|vernesong|Mon Aug 25 13:06:02 2025 +0800|0.46.151
+ad44d7aa|vernesong|Mon Aug 25 12:36:49 2025 +0800|fix typo
+02a4bd86|vernesong|Mon Aug 25 12:36:49 2025 +0800|fix typo
+450ff319|vernesong|Mon Aug 25 11:12:40 2025 +0800|chore: add restart option for module
+bcaab28b|vernesong|Mon Aug 25 11:12:40 2025 +0800|chore: add restart option for module
+87883bbe|github-actions[bot]|Mon Aug 25 00:45:39 2025 +0000|Chore: update third-party resources
+1e93bdb6|github-actions[bot]|Mon Aug 25 00:45:39 2025 +0000|Chore: update third-party resources
+9448d1d1|vernesong|Sun Aug 24 10:41:09 2025 +0800|0.46.150
+5714eac2|vernesong|Sun Aug 24 10:41:09 2025 +0800|0.46.150
+87852e5c|vernesong|Sun Aug 24 10:25:06 2025 +0800|feat: add overwrite module subscription
+6c36f08d|vernesong|Sun Aug 24 10:25:06 2025 +0800|feat: add overwrite module subscription
+7a942460|github-actions[bot]|Fri Aug 22 00:45:53 2025 +0000|Chore: update third-party resources
+a1c2c6eb|github-actions[bot]|Fri Aug 22 00:45:53 2025 +0000|Chore: update third-party resources
+64fbb925|github-actions[bot]|Tue Aug 19 00:45:48 2025 +0000|Chore: update third-party resources
+d8672c60|github-actions[bot]|Tue Aug 19 00:45:48 2025 +0000|Chore: update third-party resources
+b25e1db3|vernesong|Mon Aug 18 08:43:12 2025 +0800|fix #4657
+432f607f|vernesong|Mon Aug 18 08:43:12 2025 +0800|fix #4657
+42467d1c|github-actions[bot]|Sat Aug 16 00:45:48 2025 +0000|Chore: update third-party resources
+dfe34f51|github-actions[bot]|Sat Aug 16 00:45:48 2025 +0000|Chore: update third-party resources
+4a51ed41|github-actions[bot]|Wed Aug 13 00:45:45 2025 +0000|Chore: update third-party resources
+0ad43a73|github-actions[bot]|Wed Aug 13 00:45:45 2025 +0000|Chore: update third-party resources
+656c7e63|vernesong|Mon Aug 11 23:55:53 2025 +0800|chore: refine
+62caf188|vernesong|Mon Aug 11 23:55:53 2025 +0800|chore: refine
+597a8cb1|vernesong|Mon Aug 11 18:27:58 2025 +0800|0.46.149
+37cdc4d4|vernesong|Mon Aug 11 18:27:58 2025 +0800|0.46.149
+811afaf0|vernesong|Mon Aug 11 11:40:14 2025 +0800|chore: refine
+49465d0c|vernesong|Mon Aug 11 11:40:14 2025 +0800|chore: refine
+b03ddc33|github-actions[bot]|Sun Aug 10 00:47:29 2025 +0000|Chore: update third-party resources
+4a25d061|github-actions[bot]|Sun Aug 10 00:47:29 2025 +0000|Chore: update third-party resources
+1b0831c9|vernesong|Sun Aug 10 03:03:46 2025 +0800|chore: refine
+33ed357a|vernesong|Sun Aug 10 03:03:46 2025 +0800|chore: refine
+ac7ded26|vernesong|Sat Aug 9 23:37:43 2025 +0800|0.46.148
+f383c71b|vernesong|Sat Aug 9 23:37:43 2025 +0800|0.46.148
+813b8501|vernesong|Sat Aug 9 22:00:53 2025 +0800|chore: separate collector option in smart tab
+65748cbe|vernesong|Sat Aug 9 22:00:53 2025 +0800|chore: separate collector option in smart tab
+cd34df38|vernesong|Fri Aug 8 15:15:36 2025 +0800|#4637
+ff5672f3|vernesong|Fri Aug 8 15:15:36 2025 +0800|#4637
+9ac1f162|github-actions[bot]|Thu Aug 7 00:45:57 2025 +0000|Chore: update third-party resources
+a0668430|github-actions[bot]|Thu Aug 7 00:45:57 2025 +0000|Chore: update third-party resources
+1452d3c8|vernesong|Wed Aug 6 23:50:37 2025 +0800|0.46.147
+7dccd7fa|vernesong|Wed Aug 6 23:50:37 2025 +0800|0.46.147
+700b0a6f|vernesong|Wed Aug 6 20:57:18 2025 +0800|chore: model path
+772b7d95|vernesong|Wed Aug 6 20:57:18 2025 +0800|chore: model path
+84e3016f|vernesong|Wed Aug 6 18:07:58 2025 +0800|chore: latency on upgrade window use router self results
+a78bed16|vernesong|Wed Aug 6 18:07:58 2025 +0800|chore: latency on upgrade window use router self results
+b15a0c9b|vernesong|Wed Aug 6 09:03:13 2025 +0800|chore: refine translation
+ef59d707|vernesong|Wed Aug 6 09:03:13 2025 +0800|chore: refine translation
+ee941511|vernesong|Wed Aug 6 04:02:17 2025 +0800|0.46.146
+515f0607|vernesong|Wed Aug 6 04:02:17 2025 +0800|0.46.146
+4c54649f|vernesong|Wed Aug 6 03:48:37 2025 +0800|0.46.145
+78c9ea4d|vernesong|Wed Aug 6 03:48:37 2025 +0800|0.46.145
+933fdd60|vernesong|Wed Aug 6 01:23:57 2025 +0800|0.46.144
+fb89e8dd|vernesong|Wed Aug 6 01:23:57 2025 +0800|0.46.144
+c82a1126|vernesong|Wed Aug 6 00:27:54 2025 +0800|0.46.143
+e571d5b3|vernesong|Wed Aug 6 00:27:54 2025 +0800|0.46.143
+2edbafa3|vernesong|Wed Aug 6 00:27:32 2025 +0800|chore: overwrite add smart settings tab
+6ab759ce|vernesong|Wed Aug 6 00:27:32 2025 +0800|chore: overwrite add smart settings tab
+c86d0c46|vernesong|Tue Aug 5 18:33:38 2025 +0800|chore: refine
+d422d7db|vernesong|Tue Aug 5 18:33:38 2025 +0800|chore: refine
+84e7d5f6|github-actions[bot]|Mon Aug 4 00:48:42 2025 +0000|Chore: update third-party resources
+34326e93|github-actions[bot]|Mon Aug 4 00:48:42 2025 +0000|Chore: update third-party resources
+28df06b4|github-actions[bot]|Fri Aug 1 00:49:32 2025 +0000|Chore: update third-party resources
+fa1cc072|github-actions[bot]|Fri Aug 1 00:49:32 2025 +0000|Chore: update third-party resources
+d0b6aca8|vernesong|Thu Jul 31 11:24:51 2025 +0800|chore: duplicate copy file when upgrade
+84abe72e|vernesong|Thu Jul 31 11:24:51 2025 +0800|chore: duplicate copy file when upgrade
+3fd5b676|github-actions[bot]|Thu Jul 31 00:45:53 2025 +0000|Chore: update third-party resources
+24e115e6|github-actions[bot]|Thu Jul 31 00:45:53 2025 +0000|Chore: update third-party resources
+55d2a241|vernesong|Thu Jul 31 02:30:04 2025 +0800|0.46.142
+97d6fe7b|vernesong|Thu Jul 31 02:30:04 2025 +0800|0.46.142
+c17b20c3|vernesong|Wed Jul 30 21:40:52 2025 +0800|chore: add timeout for ruby read #4600
+8b658223|vernesong|Wed Jul 30 21:40:52 2025 +0800|chore: add timeout for ruby read #4600
+2e35ed46|vernesong|Tue Jul 29 16:07:32 2025 +0800|0.46.141
+ff08e1e5|vernesong|Tue Jul 29 16:07:32 2025 +0800|0.46.141
+a63a8f0a|vernesong|Tue Jul 29 12:31:20 2025 +0800|fix: iptables icmp reject
+5a927265|vernesong|Tue Jul 29 12:31:20 2025 +0800|fix: iptables icmp reject
+004b435d|vernesong|Tue Jul 29 08:19:23 2025 +0800|0.46.140
+ef72e28c|vernesong|Tue Jul 29 08:19:23 2025 +0800|0.46.140
+7b49eded|Ljcbaby|Tue Jul 29 08:10:50 2025 +0800|feat(fw): add icmp icmp-admin-prohibited (#4525)
+86ae1eb1|Ljcbaby|Tue Jul 29 08:10:50 2025 +0800|feat(fw): add icmp icmp-admin-prohibited (#4525)
+ad2d12e8|Mimi|Tue Jul 29 08:02:13 2025 +0800|fix: remove duplicate keys in openclash.zh-cn.po (#4614)
+d2c8bd9f|Mimi|Tue Jul 29 08:02:13 2025 +0800|fix: remove duplicate keys in openclash.zh-cn.po (#4614)
+d9cffffe|vernesong|Tue Jul 29 08:00:28 2025 +0800|fix: dec not work
+e9c75538|vernesong|Tue Jul 29 08:00:28 2025 +0800|fix: dec not work
+19178ff6|vernesong|Mon Jul 28 23:00:09 2025 +0800|chore: update amd64 version
+0ab20c43|vernesong|Mon Jul 28 23:00:09 2025 +0800|chore: update amd64 version
+babc4be8|github-actions[bot]|Mon Jul 28 00:48:03 2025 +0000|Chore: update third-party resources
+36399dd9|github-actions[bot]|Mon Jul 28 00:48:03 2025 +0000|Chore: update third-party resources
+a1101db5|vernesong|Sun Jul 27 20:27:25 2025 +0800|0.46.139
+360eeaab|vernesong|Sun Jul 27 20:27:25 2025 +0800|0.46.139
+640dc1d0|vernesong|Sun Jul 27 20:06:15 2025 +0800|chore: refine
+0fa3da01|vernesong|Sun Jul 27 20:06:15 2025 +0800|chore: refine
+997ae76e|vernesong|Fri Jul 25 12:05:22 2025 +0800|chore: add icon for current config
+88b48699|vernesong|Fri Jul 25 12:05:22 2025 +0800|chore: add icon for current config
+cfa2262f|github-actions[bot]|Fri Jul 25 00:46:40 2025 +0000|Chore: update third-party resources
+416437cd|github-actions[bot]|Fri Jul 25 00:46:40 2025 +0000|Chore: update third-party resources
+8a13ff84|vernesong|Thu Jul 24 19:38:20 2025 +0800|chore: refine
+ec1ec6c4|vernesong|Thu Jul 24 19:38:20 2025 +0800|chore: refine
+a63929f8|vernesong|Wed Jul 23 13:29:49 2025 +0800|0.46.138
+4a688910|vernesong|Wed Jul 23 13:29:49 2025 +0800|0.46.138
+15a1e07d|vernesong|Tue Jul 22 13:21:02 2025 +0800|chore: refine
+cd4693ca|vernesong|Tue Jul 22 13:21:02 2025 +0800|chore: refine
+38ff54b0|github-actions[bot]|Tue Jul 22 00:47:11 2025 +0000|Chore: update third-party resources
+42f06da9|github-actions[bot]|Tue Jul 22 00:47:11 2025 +0000|Chore: update third-party resources
+0cb8cfd4|vernesong|Sun Jul 20 04:40:48 2025 +0800|chore: refine cdn select window
+1f715574|vernesong|Sun Jul 20 04:40:48 2025 +0800|chore: refine cdn select window
+8ca72801|vernesong|Sun Jul 20 01:30:19 2025 +0800|chore: saveBtn disabled
+67e0ffa1|vernesong|Sun Jul 20 01:30:19 2025 +0800|chore: saveBtn disabled
+492d6b0c|vernesong|Sat Jul 19 22:21:41 2025 +0800|Merge branch 'dev'
+33d8586f|vernesong|Sat Jul 19 22:21:41 2025 +0800|Merge branch 'dev'
+d1693b68|vernesong|Sat Jul 19 22:16:30 2025 +0800|0.46.137
+8b768e79|vernesong|Sat Jul 19 22:16:30 2025 +0800|0.46.137
+e916b986|github-actions[bot]|Sat Jul 19 00:45:46 2025 +0000|Chore: update third-party resources
+87a4b9a7|github-actions[bot]|Sat Jul 19 00:45:46 2025 +0000|Chore: update third-party resources
+6079954f|vernesong|Fri Jul 18 22:44:30 2025 +0800|#4591
+1e5c2d85|vernesong|Fri Jul 18 22:44:30 2025 +0800|#4591
+1aae05e2|vernesong|Fri Jul 18 21:53:16 2025 +0800|0.46.135
+d94c3829|vernesong|Fri Jul 18 21:53:16 2025 +0800|0.46.135
+8c77098b|vernesong|Fri Jul 18 21:11:16 2025 +0800|0.46.134
+39221cab|vernesong|Fri Jul 18 21:11:16 2025 +0800|0.46.134
+dc500c83|vernesong|Fri Jul 18 18:36:19 2025 +0800|chore: refine
+a75ef8a5|vernesong|Fri Jul 18 18:36:19 2025 +0800|chore: refine
+d344fbcf|vernesong|Thu Jul 17 06:18:41 2025 +0800|chore: disable checked after switch
+443fbf9d|vernesong|Thu Jul 17 06:18:41 2025 +0800|chore: disable checked after switch
+13470c12|vernesong|Wed Jul 16 19:31:55 2025 +0800|chore: add title for version display
+6936c90d|vernesong|Wed Jul 16 19:31:55 2025 +0800|chore: add title for version display
+d7925e3a|github-actions[bot]|Wed Jul 16 00:45:57 2025 +0000|Chore: update third-party resources
+59c21e04|github-actions[bot]|Wed Jul 16 00:45:57 2025 +0000|Chore: update third-party resources
+770b474a|vernesong|Tue Jul 15 01:14:53 2025 +0800|Merge branch 'dev'
+93d96be5|vernesong|Tue Jul 15 01:14:53 2025 +0800|Merge branch 'dev'
+91488ac5|vernesong|Tue Jul 15 01:07:38 2025 +0800|0.46.133
+9fbc8fef|vernesong|Tue Jul 15 01:07:38 2025 +0800|0.46.133
+93a34526|vernesong|Tue Jul 15 01:02:45 2025 +0800|fix: merge view mode switch to original
+2cc1e2f7|vernesong|Tue Jul 15 01:02:45 2025 +0800|fix: merge view mode switch to original
+0d99ffe7|vernesong|Tue Jul 15 00:36:04 2025 +0800|0.46.132
+37a70af4|vernesong|Tue Jul 15 00:36:04 2025 +0800|0.46.132
+e3e248a6|vernesong|Mon Jul 14 23:20:14 2025 +0800|chore: add merge view for config
+8e071fdb|vernesong|Mon Jul 14 23:20:14 2025 +0800|chore: add merge view for config
+217cc55d|vernesong|Mon Jul 14 18:12:51 2025 +0800|0.46.131
+b36529c8|vernesong|Mon Jul 14 18:12:51 2025 +0800|0.46.131
+6e0852c5|vernesong|Mon Jul 14 02:22:48 2025 +0800|0.46.130
+144f6a55|vernesong|Mon Jul 14 02:22:48 2025 +0800|0.46.130
+26588c10|vernesong|Mon Jul 14 02:14:39 2025 +0800|chore: refine
+35b51f3a|vernesong|Mon Jul 14 02:14:39 2025 +0800|chore: refine
+d743f5fb|vernesong|Mon Jul 14 02:00:10 2025 +0800|chore: netflix us region
+a4ce27ac|vernesong|Mon Jul 14 02:00:10 2025 +0800|chore: netflix us region
+3c9ea8f7|vernesong|Sun Jul 13 16:54:15 2025 +0800|chore: add warning banner for overwrite
+587d4c4e|vernesong|Sun Jul 13 16:54:15 2025 +0800|chore: add warning banner for overwrite
+8d430905|vernesong|Sun Jul 13 16:29:29 2025 +0800|#4579
+70d2cc81|vernesong|Sun Jul 13 16:29:29 2025 +0800|#4579
+b75ed737|vernesong|Sun Jul 13 13:12:25 2025 +0800|chore: icon stroke
+7c7aabaf|vernesong|Sun Jul 13 13:12:25 2025 +0800|chore: icon stroke
+9b047429|vernesong|Sun Jul 13 12:36:33 2025 +0800|0.46.129
+04bbb8d2|vernesong|Sun Jul 13 12:36:33 2025 +0800|0.46.129
+50c0ea9b|github-actions[bot]|Sun Jul 13 00:47:10 2025 +0000|Chore: update third-party resources
+90fd09a6|github-actions[bot]|Sun Jul 13 00:47:10 2025 +0000|Chore: update third-party resources
+275bd5f5|vernesong|Sat Jul 12 15:25:15 2025 +0800|chore: force firewall reload once in 5 minutes
+62deabb6|vernesong|Sat Jul 12 15:25:15 2025 +0800|chore: force firewall reload once in 5 minutes
+1c3df476|github-actions[bot]|Sat Jul 12 06:55:31 2025 +0000|Chore: update third-party resources
+0b6c3aaf|github-actions[bot]|Sat Jul 12 06:55:31 2025 +0000|Chore: update third-party resources
+e196cc99|vernesong|Sat Jul 12 14:54:30 2025 +0800|workflow: use diff for dashboard
+00ef582c|vernesong|Sat Jul 12 14:54:30 2025 +0800|workflow: use diff for dashboard
+372ac251|vernesong|Sat Jul 12 14:35:00 2025 +0800|0.46.128
+4f717b7d|vernesong|Sat Jul 12 14:35:00 2025 +0800|0.46.128
+d26a1596|vernesong|Sat Jul 12 11:08:45 2025 +0800|chore: clean file
+cb82819d|vernesong|Sat Jul 12 11:08:45 2025 +0800|chore: clean file
+9f6a942d|vernesong|Sat Jul 12 11:01:31 2025 +0800|chore: refine
+954c71e8|vernesong|Sat Jul 12 11:01:31 2025 +0800|chore: refine
+87acf8d6|vernesong|Sat Jul 12 00:03:49 2025 +0800|#4554
+cedff0c2|vernesong|Sat Jul 12 00:03:49 2025 +0800|#4554
+7488240e|vernesong|Thu Jul 10 22:36:13 2025 +0800|0.46.127
+62042755|vernesong|Thu Jul 10 22:36:13 2025 +0800|0.46.127
+14bfcd95|vernesong|Thu Jul 10 11:23:32 2025 +0800|0.46.126
+905bc473|vernesong|Thu Jul 10 11:23:32 2025 +0800|0.46.126
+dccf38c1|github-actions[bot]|Thu Jul 10 00:45:51 2025 +0000|Chore: update third-party resources
+022b973e|github-actions[bot]|Thu Jul 10 00:45:51 2025 +0000|Chore: update third-party resources
+36fde930|vernesong|Wed Jul 9 23:16:58 2025 +0800|0.46.125
+54303acb|vernesong|Wed Jul 9 23:16:58 2025 +0800|0.46.125
+dc383546|vernesong|Wed Jul 9 17:39:03 2025 +0800|0.46.124
+223a7718|vernesong|Wed Jul 9 17:39:03 2025 +0800|0.46.124
+e491b518|vernesong|Wed Jul 9 12:29:10 2025 +0800|chore: check current config file before display subscription info
+fa0279c4|vernesong|Wed Jul 9 12:29:10 2025 +0800|chore: check current config file before display subscription info
+8b106a72|vernesong|Wed Jul 9 11:34:00 2025 +0800|chore: CodeMirror word break
+5f2538ca|vernesong|Wed Jul 9 11:34:00 2025 +0800|chore: CodeMirror word break
+8bad99e9|vernesong|Wed Jul 9 02:46:47 2025 +0800|0.46.123
+2fac7110|vernesong|Wed Jul 9 02:46:47 2025 +0800|0.46.123
+a3ed7485|vernesong|Wed Jul 9 01:55:32 2025 +0800|0.46.122
+26f654be|vernesong|Wed Jul 9 01:55:32 2025 +0800|0.46.122
+965798ff|vernesong|Wed Jul 9 01:10:49 2025 +0800|0.46.121
+41978f31|vernesong|Wed Jul 9 01:10:49 2025 +0800|0.46.121
+00395ad9|vernesong|Tue Jul 8 22:13:11 2025 +0800|chore: add no file action for config card
+d604af93|vernesong|Tue Jul 8 22:13:11 2025 +0800|chore: add no file action for config card
+3e0f74ef|vernesong|Tue Jul 8 20:32:41 2025 +0800|chore: stream unlock card
+c73e7591|vernesong|Tue Jul 8 20:32:41 2025 +0800|chore: stream unlock card
+bcede79f|vernesong|Tue Jul 8 19:36:59 2025 +0800|chore: copy full panel address when click
+e5e29d7c|vernesong|Tue Jul 8 19:36:59 2025 +0800|chore: copy full panel address when click
+4ff69d82|vernesong|Mon Jul 7 23:14:11 2025 +0800|Merge branch 'dev'
+844a9973|vernesong|Mon Jul 7 23:14:11 2025 +0800|Merge branch 'dev'
+ba3f0b68|vernesong|Mon Jul 7 22:50:36 2025 +0800|0.46.120
+33b3598f|vernesong|Mon Jul 7 22:50:36 2025 +0800|0.46.120
+eae16d5e|vernesong|Mon Jul 7 21:17:44 2025 +0800|chore: fix core file upload
+79b9e520|vernesong|Mon Jul 7 21:17:44 2025 +0800|chore: fix core file upload
+c8935a15|vernesong|Mon Jul 7 17:26:34 2025 +0800|Merge branch 'dev'
+851de75f|vernesong|Mon Jul 7 17:26:34 2025 +0800|Merge branch 'dev'
+8125b3d7|vernesong|Mon Jul 7 17:17:23 2025 +0800|0.46.119
+fd242226|vernesong|Mon Jul 7 17:17:23 2025 +0800|0.46.119
+b80a48ad|vernesong|Mon Jul 7 09:24:41 2025 +0800|0.46.118
+843d5174|vernesong|Mon Jul 7 09:24:41 2025 +0800|0.46.118
+5504a79d|vernesong|Mon Jul 7 08:59:13 2025 +0800|#4553
+fcc8922d|vernesong|Mon Jul 7 08:59:13 2025 +0800|#4553
+c73894a8|github-actions[bot]|Mon Jul 7 00:46:03 2025 +0000|Chore: update third-party resources
+19f7ff99|github-actions[bot]|Mon Jul 7 00:46:03 2025 +0000|Chore: update third-party resources
+c965ba76|vernesong|Mon Jul 7 08:32:40 2025 +0800|chore: use duration #4552
+05686a69|vernesong|Mon Jul 7 08:32:40 2025 +0800|chore: use duration #4552
+789d124c|vernesong|Sun Jul 6 23:30:52 2025 +0800|chore: allow scroll bar #4542
+f931696e|vernesong|Sun Jul 6 23:30:52 2025 +0800|chore: allow scroll bar #4542
+6f90c4cc|vernesong|Sun Jul 6 23:27:11 2025 +0800|chore: refine
+64a98dce|vernesong|Sun Jul 6 23:27:11 2025 +0800|chore: refine
+32e74e64|vernesong|Sun Jul 6 23:26:52 2025 +0800|#4552
+5e471731|vernesong|Sun Jul 6 23:26:52 2025 +0800|#4552
+673dfaa4|vernesong|Sat Jul 5 18:42:16 2025 +0800|0.46.117
+c3f02041|vernesong|Sat Jul 5 18:42:16 2025 +0800|0.46.117
+cc2db4de|vernesong|Sat Jul 5 18:10:51 2025 +0800|0.46.116
+291c9400|vernesong|Sat Jul 5 18:10:51 2025 +0800|0.46.116
+52aa2c89|vernesong|Sat Jul 5 08:50:25 2025 +0800|0.46.115
+1ce69de1|vernesong|Sat Jul 5 08:50:25 2025 +0800|0.46.115
+fc7b2eb5|vernesong|Fri Jul 4 13:10:33 2025 +0800|chore: ws message
+5691ab63|vernesong|Fri Jul 4 13:10:33 2025 +0800|chore: ws message
+d03be35a|vernesong|Fri Jul 4 12:34:38 2025 +0800|chore: refine
+8c757454|vernesong|Fri Jul 4 12:34:38 2025 +0800|chore: refine
+da182ba8|github-actions[bot]|Fri Jul 4 00:45:49 2025 +0000|Chore: update third-party resources
+5409a0df|github-actions[bot]|Fri Jul 4 00:45:49 2025 +0000|Chore: update third-party resources
+2bfa3caa|vernesong|Fri Jul 4 06:37:42 2025 +0800|0.46.114
+8a303e76|vernesong|Fri Jul 4 06:37:42 2025 +0800|0.46.114
+33c2e51b|vernesong|Fri Jul 4 06:26:48 2025 +0800|0.46.113
+ee0ad419|vernesong|Fri Jul 4 06:26:48 2025 +0800|0.46.113
+496027e9|vernesong|Fri Jul 4 04:22:38 2025 +0800|0.46.112
+0a60c1fe|vernesong|Fri Jul 4 04:22:38 2025 +0800|0.46.112
+ad6937af|vernesong|Fri Jul 4 03:57:27 2025 +0800|0.46.111
+c643b3f4|vernesong|Fri Jul 4 03:57:27 2025 +0800|0.46.111
+b243f7f2|vernesong|Fri Jul 4 02:15:28 2025 +0800|chore: support more file name upload
+91bc92bc|vernesong|Fri Jul 4 02:15:28 2025 +0800|chore: support more file name upload
+1d4b52b7|vernesong|Thu Jul 3 15:23:44 2025 +0800|chore: refine
+8e0fa457|vernesong|Thu Jul 3 15:23:44 2025 +0800|chore: refine
+aee85be1|vernesong|Thu Jul 3 13:21:30 2025 +0800|Merge branch 'dev'
+0350fb4d|vernesong|Thu Jul 3 13:21:30 2025 +0800|Merge branch 'dev'
+f23bc972|vernesong|Thu Jul 3 13:15:46 2025 +0800|0.46.110
+f6b26773|vernesong|Thu Jul 3 13:15:46 2025 +0800|0.46.110
+684b2d71|vernesong|Thu Jul 3 13:05:39 2025 +0800|Merge branch 'dev'
+0eeff2f1|vernesong|Thu Jul 3 13:05:39 2025 +0800|Merge branch 'dev'
+cefe5f73|vernesong|Thu Jul 3 12:50:27 2025 +0800|0.46.109
+dc3c8edb|vernesong|Thu Jul 3 12:50:27 2025 +0800|0.46.109
+4669a293|vernesong|Thu Jul 3 12:15:54 2025 +0800|chore: refine
+41c5e5e9|vernesong|Thu Jul 3 12:15:54 2025 +0800|chore: refine
+df1daaf0|vernesong|Thu Jul 3 05:07:46 2025 +0800|chore: refine
+cccab0b3|vernesong|Thu Jul 3 05:07:46 2025 +0800|chore: refine
+73884a53|vernesong|Tue Jul 1 13:28:44 2025 +0800|0.46.108
+5ac69fcf|vernesong|Tue Jul 1 13:28:44 2025 +0800|0.46.108
+0b995b3e|vernesong|Tue Jul 1 09:20:48 2025 +0800|0.46.107
+8581aab4|vernesong|Tue Jul 1 09:20:48 2025 +0800|0.46.107
+86bfbb0c|github-actions[bot]|Tue Jul 1 00:46:56 2025 +0000|Chore: update third-party resources
+e496a1c4|github-actions[bot]|Tue Jul 1 00:46:56 2025 +0000|Chore: update third-party resources
+003c4721|vernesong|Tue Jul 1 05:50:12 2025 +0800|0.46.106
+5404fe49|vernesong|Tue Jul 1 05:50:12 2025 +0800|0.46.106
+e4c62752|vernesong|Tue Jul 1 04:37:36 2025 +0800|0.46.105
+019bce15|vernesong|Tue Jul 1 04:37:36 2025 +0800|0.46.105
+68f77912|vernesong|Mon Jun 30 13:21:34 2025 +0800|0.46.104
+22f5801e|vernesong|Mon Jun 30 13:21:34 2025 +0800|0.46.104
+8703ce37|vernesong|Mon Jun 30 12:42:45 2025 +0800|chore: width adapt
+6e2bc7bb|vernesong|Mon Jun 30 12:42:45 2025 +0800|chore: width adapt
+337607c7|vernesong|Mon Jun 30 08:41:09 2025 +0800|fix typo
+faa71a2a|vernesong|Mon Jun 30 08:41:09 2025 +0800|fix typo
+ac6b8154|vernesong|Mon Jun 30 06:53:57 2025 +0800|0.46.103
+57b70ef8|vernesong|Mon Jun 30 06:53:57 2025 +0800|0.46.103
+469eb0f2|vernesong|Mon Jun 30 06:36:16 2025 +0800|0.46.102
+e0a3212c|vernesong|Mon Jun 30 06:36:16 2025 +0800|0.46.102
+34d6924d|github-actions[bot]|Sat Jun 28 00:46:01 2025 +0000|Chore: update third-party resources
+ae66278c|github-actions[bot]|Sat Jun 28 00:46:01 2025 +0000|Chore: update third-party resources
+6c973aa3|vernesong|Wed Jun 25 21:40:53 2025 +0800|chore: add pac file restore
+26a8d67c|vernesong|Wed Jun 25 21:40:53 2025 +0800|chore: add pac file restore
+7a1e4ecd|vernesong|Wed Jun 25 20:55:18 2025 +0800|0.46.101
+22bfc604|vernesong|Wed Jun 25 20:55:18 2025 +0800|0.46.101
+e2b31ee5|vernesong|Wed Jun 25 19:44:23 2025 +0800|chore: log refresh speed
+e7d53028|vernesong|Wed Jun 25 19:44:23 2025 +0800|chore: log refresh speed
+d4c3bd99|vernesong|Wed Jun 25 14:10:27 2025 +0800|chore: retry after update failed
+861149c7|vernesong|Wed Jun 25 14:10:27 2025 +0800|chore: retry after update failed
+b16bf5e3|vernesong|Wed Jun 25 11:57:14 2025 +0800|chore: some translations
+1607196d|vernesong|Wed Jun 25 11:57:14 2025 +0800|chore: some translations
+fc043a45|vernesong|Wed Jun 25 09:17:34 2025 +0800|0.46.100
+2b173319|vernesong|Wed Jun 25 09:17:34 2025 +0800|0.46.100
+e2082aea|vernesong|Wed Jun 25 09:16:30 2025 +0800|chore: adjust sub progress bar height
+7b8305b2|vernesong|Wed Jun 25 09:16:30 2025 +0800|chore: adjust sub progress bar height
+46868a56|github-actions[bot]|Wed Jun 25 00:45:54 2025 +0000|Chore: update third-party resources
+334b85d6|github-actions[bot]|Wed Jun 25 00:45:54 2025 +0000|Chore: update third-party resources
+de8e30a0|vernesong|Tue Jun 24 23:33:03 2025 +0800|chore: add title for dler panel
+6d76eb10|vernesong|Tue Jun 24 23:33:03 2025 +0800|chore: add title for dler panel
+73014277|vernesong|Tue Jun 24 23:04:26 2025 +0800|chore: refine
+e50352a9|vernesong|Tue Jun 24 23:04:26 2025 +0800|chore: refine
+9a054cf3|vernesong|Tue Jun 24 17:30:11 2025 +0800|chore: access check use time_appconnect when router mode
+e85c7428|vernesong|Tue Jun 24 17:30:11 2025 +0800|chore: access check use time_appconnect when router mode
+152f87f8|vernesong|Tue Jun 24 16:43:48 2025 +0800|chore: clipboard fallback
+14c6f542|vernesong|Tue Jun 24 16:43:48 2025 +0800|chore: clipboard fallback
+dc0d88a0|vernesong|Tue Jun 24 05:17:37 2025 +0800|chore: safari copy
+389095f0|vernesong|Tue Jun 24 05:17:37 2025 +0800|chore: safari copy
+82095fee|vernesong|Tue Jun 24 04:40:51 2025 +0800|0.46.099
+0fc5fad4|vernesong|Tue Jun 24 04:40:51 2025 +0800|0.46.099
+a59ca879|vernesong|Tue Jun 24 04:40:23 2025 +0800|chore: check cidr format before add custom rules
+2edf0564|vernesong|Tue Jun 24 04:40:23 2025 +0800|chore: check cidr format before add custom rules
+0e5cacd1|vernesong|Tue Jun 24 04:16:09 2025 +0800|chore: sub info width
+0057cb72|vernesong|Tue Jun 24 04:16:09 2025 +0800|chore: sub info width
+d1cffcbc|vernesong|Tue Jun 24 02:56:32 2025 +0800|chore: refine
+f3262fc1|vernesong|Tue Jun 24 02:56:32 2025 +0800|chore: refine
+e94c2d45|vernesong|Mon Jun 23 12:53:32 2025 +0800|chore: refine
+cea1363d|vernesong|Mon Jun 23 12:53:32 2025 +0800|chore: refine
+23b2d73b|vernesong|Mon Jun 23 09:56:45 2025 +0800|0.46.098
+65e2dfd0|vernesong|Mon Jun 23 09:56:45 2025 +0800|0.46.098
+89f4a050|vernesong|Mon Jun 23 09:55:05 2025 +0800|fix img missing
+8b9a84be|vernesong|Mon Jun 23 09:55:05 2025 +0800|fix img missing
+d47c582b|vernesong|Mon Jun 23 02:21:18 2025 +0800|0.46.097
+3a752ad7|vernesong|Mon Jun 23 02:21:18 2025 +0800|0.46.097
+951e91dd|vernesong|Mon Jun 23 02:19:03 2025 +0800|chore: refine
+c2df8c3d|vernesong|Mon Jun 23 02:19:03 2025 +0800|chore: refine
+ba179a06|vernesong|Sun Jun 22 17:53:19 2025 +0800|chore: ssr parse
+a49c0db4|vernesong|Sun Jun 22 17:53:19 2025 +0800|chore: ssr parse
+95743e60|github-actions[bot]|Sun Jun 22 00:46:05 2025 +0000|Chore: update third-party resources
+ec288bd7|github-actions[bot]|Sun Jun 22 00:46:05 2025 +0000|Chore: update third-party resources
+3cbbf9db|vernesong|Sun Jun 22 02:07:48 2025 +0800|chore: announcement
+58ca5d14|vernesong|Sun Jun 22 02:07:48 2025 +0800|chore: announcement
+2a758246|vernesong|Sun Jun 22 02:02:50 2025 +0800|0.46.096
+0f4f2ee3|vernesong|Sun Jun 22 02:02:50 2025 +0800|0.46.096
+148fae0e|vernesong|Sun Jun 22 02:01:02 2025 +0800|chore: refine update codes
+46d6a60a|vernesong|Sun Jun 22 02:01:02 2025 +0800|chore: refine update codes
+b661c3a7|vernesong|Sat Jun 21 23:41:28 2025 +0800|chore: group option value sort
+d9441f0d|vernesong|Sat Jun 21 23:41:28 2025 +0800|chore: group option value sort
+a80a39dc|vernesong|Sat Jun 21 22:49:14 2025 +0800|chore: remove SKIP_SAFE_PATH_CHECK option
+7e1e5392|vernesong|Sat Jun 21 22:49:14 2025 +0800|chore: remove SKIP_SAFE_PATH_CHECK option
+dcba0b24|vernesong|Sat Jun 21 22:45:33 2025 +0800|chore: add router-self ip & access check support
+651ad5cf|vernesong|Sat Jun 21 22:45:33 2025 +0800|chore: add router-self ip & access check support
+302be433|vernesong|Sat Jun 21 22:42:13 2025 +0800|chore: add button for switching router's ip & access check #4510
+22c31f58|vernesong|Sat Jun 21 22:42:13 2025 +0800|chore: add button for switching router's ip & access check #4510
+b1d6355d|vernesong|Sat Jun 21 11:00:01 2025 +0800|chore: add more url  type support for skip proxy address
+175c8f66|vernesong|Sat Jun 21 11:00:01 2025 +0800|chore: add more url  type support for skip proxy address
+98786523|vernesong|Sat Jun 21 10:39:21 2025 +0800|chore: select style
+4365098e|vernesong|Sat Jun 21 10:39:21 2025 +0800|chore: select style
+8a88233d|vernesong|Fri Jun 20 22:22:51 2025 +0800|0.46.095
+3127e958|vernesong|Fri Jun 20 22:22:51 2025 +0800|0.46.095
+3a57f960|vernesong|Fri Jun 20 22:19:51 2025 +0800|chore: refine file upload
+7896b0a0|vernesong|Fri Jun 20 22:19:51 2025 +0800|chore: refine file upload
+b35205f0|vernesong|Fri Jun 20 21:41:55 2025 +0800|chore: add more url decode support for nodes add
+eddde7ee|vernesong|Fri Jun 20 21:41:55 2025 +0800|chore: add more url decode support for nodes add
+b497a467|vernesong|Fri Jun 20 19:12:31 2025 +0800|chore: skip proxies address support base64
+aa9a2a69|vernesong|Fri Jun 20 19:12:31 2025 +0800|chore: skip proxies address support base64
+c7e55f4b|vernesong|Fri Jun 20 19:11:21 2025 +0800|fix typo
+7e543668|vernesong|Fri Jun 20 19:11:21 2025 +0800|fix typo
+4fa1c799|vernesong|Thu Jun 19 23:29:20 2025 +0800|chore: refine
+63069b18|vernesong|Thu Jun 19 23:29:20 2025 +0800|chore: refine
+e938cfea|github-actions[bot]|Thu Jun 19 00:45:58 2025 +0000|Chore: update third-party resources
+5636eb1c|github-actions[bot]|Thu Jun 19 00:45:58 2025 +0000|Chore: update third-party resources
+559a8dd5|vernesong|Wed Jun 18 12:59:53 2025 +0800|0.46.094
+add392d9|vernesong|Wed Jun 18 12:59:53 2025 +0800|0.46.094
+a1bbd6b5|vernesong|Wed Jun 18 12:58:44 2025 +0800|chore: add help url for smart core switch option
+02379a62|vernesong|Wed Jun 18 12:58:44 2025 +0800|chore: add help url for smart core switch option
+4b8fc205|vernesong|Wed Jun 18 12:45:57 2025 +0800|fix: err oc download url
+36569be0|vernesong|Wed Jun 18 12:45:57 2025 +0800|fix: err oc download url
+af87c4e7|vernesong|Wed Jun 18 11:39:00 2025 +0800|0.46.093
+46e4d5fc|vernesong|Wed Jun 18 11:39:00 2025 +0800|0.46.093
+55896ba9|vernesong|Wed Jun 18 11:38:29 2025 +0800|fix typo
+90f851c4|vernesong|Wed Jun 18 11:38:29 2025 +0800|fix typo
+cda76ea3|LovinYarn|Wed Jun 18 11:06:13 2025 +0800|Compatible with OpenWrt SNAPSHOT loading icon (#4508)
+5385d8dc|LovinYarn|Wed Jun 18 11:06:13 2025 +0800|Compatible with OpenWrt SNAPSHOT loading icon (#4508)
+5c470dd3|vernesong|Wed Jun 18 10:06:01 2025 +0800|0.46.092
+78a1a266|vernesong|Wed Jun 18 10:06:01 2025 +0800|0.46.092
+6e0cbbf9|vernesong|Wed Jun 18 10:04:58 2025 +0800|chore: reduce dler api error log
+c66bc885|vernesong|Wed Jun 18 10:04:58 2025 +0800|chore: reduce dler api error log
+9c82f86e|vernesong|Wed Jun 18 09:41:25 2025 +0800|chore: smart group options
+6688f4c5|vernesong|Wed Jun 18 09:41:25 2025 +0800|chore: smart group options
+c5e6a4d2|vernesong|Tue Jun 17 12:19:53 2025 +0800|0.46.091
+92211e18|vernesong|Tue Jun 17 12:19:53 2025 +0800|0.46.091
+9572363e|vernesong|Tue Jun 17 12:19:31 2025 +0800|chore: refine
+c6e84fa1|vernesong|Tue Jun 17 12:19:31 2025 +0800|chore: refine
+ebaf5f92|vernesong|Tue Jun 17 11:50:21 2025 +0800|chore: refine
+dc920cce|vernesong|Tue Jun 17 11:50:21 2025 +0800|chore: refine
+4a443488|vernesong|Tue Jun 17 00:55:14 2025 +0800|chore: add firewall reload maximum
+277809cd|vernesong|Tue Jun 17 00:55:14 2025 +0800|chore: add firewall reload maximum
+41c689d6|vernesong|Mon Jun 16 18:15:57 2025 +0800|0.46.090
+acd740c5|vernesong|Mon Jun 16 18:15:57 2025 +0800|0.46.090
+b48b76d1|vernesong|Mon Jun 16 18:13:49 2025 +0800|chore: add allow-origins for dashboard if optioned
+dd1edcd2|vernesong|Mon Jun 16 18:13:49 2025 +0800|chore: add allow-origins for dashboard if optioned
+be842921|vernesong|Mon Jun 16 12:55:49 2025 +0800|fix: log download
+06ee9e3e|vernesong|Mon Jun 16 12:55:49 2025 +0800|fix: log download
+a2067ae4|vernesong|Mon Jun 16 12:47:42 2025 +0800|0.46.089
+48b8c818|vernesong|Mon Jun 16 12:47:42 2025 +0800|0.46.089
+3ab132dd|vernesong|Mon Jun 16 12:47:10 2025 +0800|chore: update page style
+1a2dd687|vernesong|Mon Jun 16 12:47:10 2025 +0800|chore: update page style
+76e30208|vernesong|Mon Jun 16 12:31:07 2025 +0800|chore: refine update logic
+1fb81777|vernesong|Mon Jun 16 12:31:07 2025 +0800|chore: refine update logic
+262b4ef2|vernesong|Mon Jun 16 09:21:09 2025 +0800|0.46.088
+bdbe1170|vernesong|Mon Jun 16 09:21:09 2025 +0800|0.46.088
+145a6c03|github-actions[bot]|Mon Jun 16 00:45:57 2025 +0000|Chore: update third-party resources
+d6684a05|github-actions[bot]|Mon Jun 16 00:45:57 2025 +0000|Chore: update third-party resources
+144e2124|vernesong|Mon Jun 16 04:20:58 2025 +0800|chore: reduce retry for dler login
+83b0d16c|vernesong|Mon Jun 16 04:20:58 2025 +0800|chore: reduce retry for dler login
+6608a4cd|vernesong|Mon Jun 16 04:00:49 2025 +0800|Merge branch 'dev'
+6c0e86a5|vernesong|Mon Jun 16 04:00:49 2025 +0800|Merge branch 'dev'
+8b2b5dd2|vernesong|Mon Jun 16 03:57:55 2025 +0800|fix typo
+b3ffdcf3|vernesong|Mon Jun 16 03:57:55 2025 +0800|fix typo
+c7f8351d|vernesong|Mon Jun 16 03:34:08 2025 +0800|workflow: fix error path
+a6446fa6|vernesong|Mon Jun 16 03:34:08 2025 +0800|workflow: fix error path
+f5b42d79|vernesong|Mon Jun 16 03:15:18 2025 +0800|workflow: add smart core sync
+e8cdd64c|vernesong|Mon Jun 16 03:15:18 2025 +0800|workflow: add smart core sync
+2be602a9|vernesong|Mon Jun 16 03:10:10 2025 +0800|chore: add core update for smart group
+97f02f7b|vernesong|Mon Jun 16 03:10:10 2025 +0800|chore: add core update for smart group
+c4589f13|vernesong|Sun Jun 15 18:14:09 2025 +0800|Merge branch 'dev'
+3f1cebdd|vernesong|Sun Jun 15 18:14:09 2025 +0800|Merge branch 'dev'
+ce71bab4|vernesong|Sun Jun 15 18:13:32 2025 +0800|workflow: remove geoip.dat auto update
+420d4ec1|vernesong|Sun Jun 15 18:13:32 2025 +0800|workflow: remove geoip.dat auto update
+da63674e|vernesong|Sun Jun 15 17:15:11 2025 +0800|chore: ac option show v4&v6 infos and lists sort
+751300bc|vernesong|Sun Jun 15 17:15:11 2025 +0800|chore: ac option show v4&v6 infos and lists sort
+811f54bf|vernesong|Sat Jun 14 19:17:21 2025 +0800|#4503
+9741c8a9|vernesong|Sat Jun 14 19:17:21 2025 +0800|#4503
+cfa63caf|github-actions[bot]|Fri Jun 13 00:45:47 2025 +0000|Chore: update third-party resources
+db6f3116|github-actions[bot]|Fri Jun 13 00:45:47 2025 +0000|Chore: update third-party resources
+fe91aeb0|vernesong|Wed Jun 11 20:48:59 2025 +0800|chore: add disable-ipv4 and disable-ipv6 dns option
+187b7e29|vernesong|Wed Jun 11 20:48:59 2025 +0800|chore: add disable-ipv4 and disable-ipv6 dns option
+7ae5979f|github-actions[bot]|Tue Jun 10 00:45:42 2025 +0000|Chore: update third-party resources
+e9ba578c|github-actions[bot]|Tue Jun 10 00:45:42 2025 +0000|Chore: update third-party resources
+01e05689|vernesong|Sat Jun 7 09:14:36 2025 +0800|0.46.087
+25854632|vernesong|Sat Jun 7 09:14:36 2025 +0800|0.46.087
+c3c75654|vernesong|Sat Jun 7 09:12:11 2025 +0800|fix #4496
+bab65123|vernesong|Sat Jun 7 09:12:11 2025 +0800|fix #4496
+ad34273a|github-actions[bot]|Sat Jun 7 00:45:45 2025 +0000|Chore: update third-party resources
+9206b4b9|github-actions[bot]|Sat Jun 7 00:45:45 2025 +0000|Chore: update third-party resources
+59cdfc20|github-actions[bot]|Wed Jun 4 00:45:49 2025 +0000|Chore: update third-party resources
+5f986155|github-actions[bot]|Wed Jun 4 00:45:49 2025 +0000|Chore: update third-party resources
+99ec39a2|github-actions[bot]|Sun Jun 1 00:49:29 2025 +0000|Chore: update third-party resources
+aa4da927|github-actions[bot]|Sun Jun 1 00:49:29 2025 +0000|Chore: update third-party resources
+fdfd0320|vernesong|Sat May 31 18:26:00 2025 +0800|Merge branch 'dev'
+0173b9af|vernesong|Sat May 31 18:26:00 2025 +0800|Merge branch 'dev'
+70c4f14f|vernesong|Sat May 31 18:24:36 2025 +0800|chore: refine
+249eb292|vernesong|Sat May 31 18:24:36 2025 +0800|chore: refine
+51a7ee4b|vernesong|Sat May 31 18:06:11 2025 +0800|fix #4487
+8ccf3008|vernesong|Sat May 31 18:06:11 2025 +0800|fix #4487
+7c28cd35|vernesong|Wed May 28 04:17:52 2025 +0800|fix dist
+6bb77d46|vernesong|Wed May 28 04:17:52 2025 +0800|fix dist
+1414316c|vernesong|Tue May 27 21:30:25 2025 +0800|workflow: use rsync
+3ff9bbe5|vernesong|Tue May 27 21:30:25 2025 +0800|workflow: use rsync
+0217f987|vernesong|Tue May 27 21:00:03 2025 +0800|workflow: check before commit
+98e93d94|vernesong|Tue May 27 21:00:03 2025 +0800|workflow: check before commit
+7c9f32b2|vernesong|Tue May 27 20:39:32 2025 +0800|workflow: MetaCubeXD & Yacd
+618dbcd9|vernesong|Tue May 27 20:39:32 2025 +0800|workflow: MetaCubeXD & Yacd
+7617bc6d|github-actions[bot]|Tue May 27 12:26:52 2025 +0000|Chore: update resources: MetaCubeXD Yacd Zashboard
+163b8298|github-actions[bot]|Tue May 27 12:26:52 2025 +0000|Chore: update resources: MetaCubeXD Yacd Zashboard
+b44c4887|vernesong|Tue May 27 20:24:08 2025 +0800|workflow: zashboard path
+0d88e378|vernesong|Tue May 27 20:24:08 2025 +0800|workflow: zashboard path
+0825afd8|github-actions[bot]|Tue May 27 12:18:56 2025 +0000|Chore: update resources: MetaCubeXD Yacd Zashboard
+b096af50|github-actions[bot]|Tue May 27 12:18:56 2025 +0000|Chore: update resources: MetaCubeXD Yacd Zashboard
+93825a05|vernesong|Tue May 27 20:12:12 2025 +0800|chore: light zashboard
+9fc897f0|vernesong|Tue May 27 20:12:12 2025 +0800|chore: light zashboard
+3b90a852|vernesong|Tue May 27 13:46:54 2025 +0800|#4482
+3de91cc8|vernesong|Tue May 27 13:46:54 2025 +0800|#4482
+d88caa3a|vernesong|Tue May 27 12:09:18 2025 +0800|workflow: delete tmp
+b4865d24|vernesong|Tue May 27 12:09:18 2025 +0800|workflow: delete tmp
+f71da7f8|github-actions[bot]|Tue May 27 03:59:52 2025 +0000|Chore: update resources: china_ip_route.ipset china_ip6_route.ipset GeoIP.dat GeoSite.dat Country.mmdb MetaCubeXD Yacd Zashboard
+3c428c28|github-actions[bot]|Tue May 27 03:59:52 2025 +0000|Chore: update resources: china_ip_route.ipset china_ip6_route.ipset GeoIP.dat GeoSite.dat Country.mmdb MetaCubeXD Yacd Zashboard
+210a9802|vernesong|Tue May 27 11:58:45 2025 +0800|workflow: fix error url
+aee41d77|vernesong|Tue May 27 11:58:45 2025 +0800|workflow: fix error url
+4fb1dcfe|vernesong|Tue May 27 11:53:12 2025 +0800|workflow: fetch-depth 1
+c8de2fec|vernesong|Tue May 27 11:53:12 2025 +0800|workflow: fetch-depth 1
+30418228|vernesong|Mon May 26 08:30:07 2025 +0800|Merge branch 'dev'
+44c40bf6|vernesong|Mon May 26 08:30:07 2025 +0800|Merge branch 'dev'
+c10be330|vernesong|Mon May 26 08:16:43 2025 +0800|workflow: update sdk url
+21e41211|vernesong|Mon May 26 08:16:43 2025 +0800|workflow: update sdk url
+c9ce0761|vernesong|Mon May 26 08:06:23 2025 +0800|0.46.086
+643ac3bc|vernesong|Mon May 26 08:06:23 2025 +0800|0.46.086
+8a74d01a|airwish|Tue May 20 14:33:53 2025 +0800|update game rules (#4465)
+f5685428|airwish|Tue May 20 14:33:53 2025 +0800|update game rules (#4465)
+d3674a3a|vernesong|Mon May 12 10:42:45 2025 +0800|chore: lhie1 rules
+7a01a1ea|vernesong|Mon May 12 10:42:45 2025 +0800|chore: lhie1 rules
+c354d282|vernesong|Thu May 8 11:39:48 2025 +0800|chore: better log smoothly display
+5494bcdd|vernesong|Thu May 8 11:39:48 2025 +0800|chore: better log smoothly display
+a96c9dd2|vernesong|Wed May 7 23:37:19 2025 +0800|0.46.085
+774c2ec9|vernesong|Wed May 7 23:37:19 2025 +0800|0.46.085
+c282a038|vernesong|Tue May 6 04:09:37 2025 +0800|chore: refine log refresh
+37919cbf|vernesong|Tue May 6 04:09:37 2025 +0800|chore: refine log refresh
+3147de92|vernesong|Mon May 5 20:28:53 2025 +0800|chore: respawn value
+d183c8a3|vernesong|Mon May 5 20:28:53 2025 +0800|chore: respawn value
+a6318340|vernesong|Mon May 5 19:01:00 2025 +0800|chore: smoothly log refresh
+80cef3ee|vernesong|Mon May 5 19:01:00 2025 +0800|chore: smoothly log refresh
+6e66c39a|Joseph Mory|Sun May 4 15:16:06 2025 +0800|fix: set procd env correctly (#4450)
+3ce6c3db|Joseph Mory|Sun May 4 15:16:06 2025 +0800|fix: set procd env correctly (#4450)
+3aa4f3f8|vernesong|Fri May 2 13:42:40 2025 +0800|chore: adjust announcement speed
+c42fc7db|vernesong|Fri May 2 13:42:40 2025 +0800|chore: adjust announcement speed
+894e958a|vernesong|Fri May 2 03:26:44 2025 +0800|0.46.084
+de65ecdc|vernesong|Fri May 2 03:26:44 2025 +0800|0.46.084
+5b9c3d6d|vernesong|Fri May 2 03:15:39 2025 +0800|fix external-ui-name
+906b3f78|vernesong|Fri May 2 03:15:39 2025 +0800|fix external-ui-name
+e20fb79e|vernesong|Fri May 2 03:04:51 2025 +0800|chore: announcement
+e3a996c0|vernesong|Fri May 2 03:04:51 2025 +0800|chore: announcement
+a9dcd8fb|vernesong|Fri May 2 00:29:36 2025 +0800|0.46.083
+6c6d3066|vernesong|Fri May 2 00:29:36 2025 +0800|0.46.083
+ccdc3f70|vernesong|Fri May 2 00:28:48 2025 +0800|chore: set ui value for preventing remove all ui files after download
+440980a0|vernesong|Fri May 2 00:28:48 2025 +0800|chore: set ui value for preventing remove all ui files after download
+526078a6|vernesong|Thu May 1 23:43:39 2025 +0800|chore: add SAFE_PATHS env
+c2cd867e|vernesong|Thu May 1 23:43:39 2025 +0800|chore: add SAFE_PATHS env
+e94f9e70|LovinYarn|Thu May 1 23:27:02 2025 +0800|workflow: fix error sdk address (#4446)
+64df64df|LovinYarn|Thu May 1 23:27:02 2025 +0800|workflow: fix error sdk address (#4446)
+c065bd1b|vernesong|Thu May 1 02:27:47 2025 +0800|0.46.082
+014a290b|vernesong|Thu May 1 02:27:47 2025 +0800|0.46.082
+28e1b1df|vernesong|Sun Apr 27 18:34:43 2025 +0800|workflow: Update Third-Party Resources
+2668b628|vernesong|Sun Apr 27 18:34:43 2025 +0800|workflow: Update Third-Party Resources
+363fc317|vernesong|Sun Apr 27 18:20:20 2025 +0800|chore: refine
+72382f2e|vernesong|Sun Apr 27 18:20:20 2025 +0800|chore: refine
+0ed8d5d2|vernesong|Sun Apr 27 11:52:29 2025 +0800|#4439
+b75ef7a2|vernesong|Sun Apr 27 11:52:29 2025 +0800|#4439
+fdab4256|vernesong|Sun Apr 27 11:35:21 2025 +0800|#4437
+6f784330|vernesong|Sun Apr 27 11:35:21 2025 +0800|#4437
+6fe521cc|vernesong|Thu Apr 24 15:19:31 2025 +0800|chore: update announcement
+2a222362|vernesong|Thu Apr 24 15:19:31 2025 +0800|chore: update announcement
+ee760af3|vernesong|Wed Apr 23 11:22:39 2025 +0800|chore: check announcement mtime
+445f6576|vernesong|Wed Apr 23 11:22:39 2025 +0800|chore: check announcement mtime
+5d8e4e4c|vernesong|Sun Apr 20 22:41:28 2025 +0800|0.46.081
+9098bb42|vernesong|Sun Apr 20 22:41:28 2025 +0800|0.46.081
+651a650a|vernesong|Sun Apr 20 22:04:46 2025 +0800|chore: add announcement
+863bbf4c|vernesong|Sun Apr 20 22:04:46 2025 +0800|chore: add announcement
+ddf49c54|vernesong|Thu Apr 17 22:01:17 2025 +0800|chore: asn database update
+e690d431|vernesong|Thu Apr 17 22:01:17 2025 +0800|chore: asn database update
+ef3b0bbd|vernesong|Tue Apr 15 18:02:12 2025 +0800|chore: lhie1 rules
+ea71ecad|vernesong|Tue Apr 15 18:02:12 2025 +0800|chore: lhie1 rules
+74ce817f|vernesong|Sat Mar 29 18:54:47 2025 +0800|chore: refine update check
+bf02bd9a|vernesong|Sat Mar 29 18:54:47 2025 +0800|chore: refine update check
+7bea963a|vernesong|Fri Mar 28 18:14:29 2025 +0800|chore: refine streaming_unlock.lua
+265152cd|vernesong|Fri Mar 28 18:14:29 2025 +0800|chore: refine streaming_unlock.lua
+efd65af6|vernesong|Mon Mar 24 14:20:52 2025 +0800|chore: change unlock test cache format
+84571d09|vernesong|Mon Mar 24 14:20:52 2025 +0800|chore: change unlock test cache format
+ba65dbfc|vernesong|Wed Mar 19 10:36:21 2025 +0800|chore: refine
+e256bfb5|vernesong|Wed Mar 19 10:36:21 2025 +0800|chore: refine
+5ac9facf|vernesong|Mon Mar 17 18:06:17 2025 +0800|fix typo
+713069f6|vernesong|Mon Mar 17 18:06:17 2025 +0800|fix typo
+6cc220e1|vernesong|Mon Mar 17 17:55:03 2025 +0800|chore: log formalt
+7e7411d1|vernesong|Mon Mar 17 17:55:03 2025 +0800|chore: log formalt
+0374213c|vernesong|Thu Mar 13 11:45:11 2025 +0800|0.46.080
+23ebfa5c|vernesong|Thu Mar 13 11:45:11 2025 +0800|0.46.080
+5e277545|vernesong|Thu Mar 13 11:39:02 2025 +0800|chore: sub info style
+554423c9|vernesong|Thu Mar 13 11:39:02 2025 +0800|chore: sub info style
+39b4daf4|vernesong|Thu Mar 13 11:00:11 2025 +0800|fix #4375
+74a4ffe6|vernesong|Thu Mar 13 11:00:11 2025 +0800|fix #4375
+4315d1ff|vernesong|Wed Mar 12 19:08:16 2025 +0800|chore: AnyTLS
+0a116420|vernesong|Wed Mar 12 19:08:16 2025 +0800|chore: AnyTLS
+1d964927|vernesong|Wed Mar 12 18:27:38 2025 +0800|#4372
+a44aae58|vernesong|Wed Mar 12 18:27:38 2025 +0800|#4372
+8259e2d0|vernesong|Wed Mar 12 02:15:05 2025 +0800|fix #4371
+72af1756|vernesong|Wed Mar 12 02:15:05 2025 +0800|fix #4371
+14961798|vernesong|Wed Mar 5 21:43:01 2025 +0800|Merge branch 'dev'
+72a2e9e9|vernesong|Wed Mar 5 21:43:01 2025 +0800|Merge branch 'dev'
+a7fb5a45|vernesong|Wed Mar 5 21:36:11 2025 +0800|0.46.079
+4254c775|vernesong|Wed Mar 5 21:36:11 2025 +0800|0.46.079
+7283dd48|vernesong|Wed Mar 5 18:20:04 2025 +0800|0.46.078
+13e1be49|vernesong|Wed Mar 5 18:20:04 2025 +0800|0.46.078
+d5b712cc|vernesong|Wed Mar 5 18:19:40 2025 +0800|chore: refine
+c0c71c37|vernesong|Wed Mar 5 18:19:40 2025 +0800|chore: refine
+c25374ab|vernesong|Sat Mar 1 12:11:52 2025 +0800|0.46.077
+460e59e7|vernesong|Sat Mar 1 12:11:52 2025 +0800|0.46.077
+ab6fc933|vernesong|Sat Mar 1 12:11:23 2025 +0800|#4343
+92a68efb|vernesong|Sat Mar 1 12:11:23 2025 +0800|#4343
+eae4107c|vernesong|Sat Mar 1 11:37:43 2025 +0800|chore: refine
+98c2fd5a|vernesong|Sat Mar 1 11:37:43 2025 +0800|chore: refine
+498e3f1b|vernesong|Sat Mar 1 10:44:09 2025 +0800|chore: refine
+b5e74ca4|vernesong|Sat Mar 1 10:44:09 2025 +0800|chore: refine
+c984c449|vernesong|Sat Mar 1 09:54:27 2025 +0800|chore: refine
+8582aebe|vernesong|Sat Mar 1 09:54:27 2025 +0800|chore: refine
+4b694d72|vernesong|Sat Feb 22 20:48:26 2025 +0800|chore: refine
+c205dbb2|vernesong|Sat Feb 22 20:48:26 2025 +0800|chore: refine
+8cb70789|vernesong|Wed Feb 19 01:35:10 2025 +0800|0.46.076
+4adfd2c0|vernesong|Wed Feb 19 01:35:10 2025 +0800|0.46.076
+600dc488|vernesong|Wed Feb 19 01:34:47 2025 +0800|#4324
+6b4ea3ff|vernesong|Wed Feb 19 01:34:47 2025 +0800|#4324
+4333c671|vernesong|Tue Feb 18 18:11:17 2025 +0800|fix #4334
+3b0344ac|vernesong|Tue Feb 18 18:11:17 2025 +0800|fix #4334
+ebab3ae8|vernesong|Tue Feb 18 01:48:36 2025 +0800|chore: refine
+9ddb6a2e|vernesong|Tue Feb 18 01:48:36 2025 +0800|chore: refine
+3feb6599|vernesong|Mon Feb 17 15:24:23 2025 +0800|fix typo
+87a999ec|vernesong|Mon Feb 17 15:24:23 2025 +0800|fix typo
+fe8dd5a5|vernesong|Mon Feb 17 01:35:48 2025 +0800|chore: refine
+1e1a6252|vernesong|Mon Feb 17 01:35:48 2025 +0800|chore: refine
+39a3dbb7|vernesong|Sat Feb 15 10:20:35 2025 +0800|Merge branch 'dev'
+8a4613c3|vernesong|Sat Feb 15 10:20:35 2025 +0800|Merge branch 'dev'
+582e294a|vernesong|Sat Feb 15 09:53:52 2025 +0800|0.46.075
+d8dddb04|vernesong|Sat Feb 15 09:53:52 2025 +0800|0.46.075
+2dae30f2|vernesong|Thu Feb 13 19:43:10 2025 +0800|chore: refine
+9e0b5fcb|vernesong|Thu Feb 13 19:43:10 2025 +0800|chore: refine
+2e455a57|vernesong|Thu Feb 13 18:25:30 2025 +0800|workflow: clear_cache
+bdc74ebc|vernesong|Thu Feb 13 18:25:30 2025 +0800|workflow: clear_cache
+c45feef8|vernesong|Thu Feb 13 18:21:14 2025 +0800|fix typo
+b8bc4492|vernesong|Thu Feb 13 18:21:14 2025 +0800|fix typo
+fef525e7|vernesong|Thu Feb 13 18:13:37 2025 +0800|workflow: update clear_cache
+fcf71fe6|vernesong|Thu Feb 13 18:13:37 2025 +0800|workflow: update clear_cache
+ab74bb61|vernesong|Thu Feb 13 17:59:31 2025 +0800|workflow: go version 1.24
+29e88061|vernesong|Thu Feb 13 17:59:31 2025 +0800|workflow: go version 1.24
+9b25f50a|vernesong|Tue Feb 11 17:24:03 2025 +0800|0.46.074
+bbbba312|vernesong|Tue Feb 11 17:24:03 2025 +0800|0.46.074
+ec811259|vernesong|Tue Feb 11 14:23:55 2025 +0800|#4321
+3c14fbab|vernesong|Tue Feb 11 14:23:55 2025 +0800|#4321
+c00f1245|vernesong|Tue Feb 11 08:14:16 2025 +0800|0.46.073
+7ebe25c2|vernesong|Tue Feb 11 08:14:16 2025 +0800|0.46.073
+c359be20|vernesong|Tue Feb 11 08:13:22 2025 +0800|chore: fix bug
+ac93f33e|vernesong|Tue Feb 11 08:13:22 2025 +0800|chore: fix bug
+21c14234|vernesong|Mon Feb 10 18:55:43 2025 +0800|fix watchdog restart bug
+1fae5683|vernesong|Mon Feb 10 18:55:43 2025 +0800|fix watchdog restart bug
+d8accb56|vernesong|Sun Feb 9 16:16:13 2025 +0800|fix typo
+6bb227b9|vernesong|Sun Feb 9 16:16:13 2025 +0800|fix typo
+6fa9277a|vernesong|Sun Feb 9 15:16:38 2025 +0800|0.46.072
+bbeb4a9f|vernesong|Sun Feb 9 15:16:38 2025 +0800|0.46.072
+63fd811e|vernesong|Sun Feb 9 15:16:11 2025 +0800|fix typo
+0f20f7a1|vernesong|Sun Feb 9 15:16:11 2025 +0800|fix typo
+4766b363|vernesong|Sun Feb 9 12:27:23 2025 +0800|chore: refine
+3cd28f0c|vernesong|Sun Feb 9 12:27:23 2025 +0800|chore: refine
+cb60a18a|vernesong|Sat Feb 8 11:04:28 2025 +0800|chore: check the custom rules group before added
+339b8219|vernesong|Sat Feb 8 11:04:28 2025 +0800|chore: check the custom rules group before added
+36fe22bd|zxl hhyccc|Fri Feb 7 04:34:49 2025 +0800|Add receive window config for hy2 (#4316)
+7f91039e|zxl hhyccc|Fri Feb 7 04:34:49 2025 +0800|Add receive window config for hy2 (#4316)
+37cb7656|vernesong|Thu Feb 6 13:06:42 2025 +0800|chore: refine
+c8c35407|vernesong|Thu Feb 6 13:06:42 2025 +0800|chore: refine
+427cdeb0|vernesong|Thu Feb 6 10:19:37 2025 +0800|0.46.071
+6620394e|vernesong|Thu Feb 6 10:19:37 2025 +0800|0.46.071
+c032dde3|vernesong|Thu Feb 6 09:49:58 2025 +0800|#4311
+bfa841a1|vernesong|Thu Feb 6 09:49:58 2025 +0800|#4311
+c2c17a7f|vernesong|Tue Feb 4 06:16:19 2025 +0800|chore: refine
+bb638f89|vernesong|Tue Feb 4 06:16:19 2025 +0800|chore: refine
+63c9ab27|vernesong|Mon Feb 3 12:16:42 2025 +0800|0.46.070
+da88b597|vernesong|Mon Feb 3 12:16:42 2025 +0800|0.46.070
+3056771c|vernesong|Mon Feb 3 09:31:47 2025 +0800|chore: ca-bundle
+2cce937c|vernesong|Mon Feb 3 09:31:47 2025 +0800|chore: ca-bundle
+d5b21679|vernesong|Mon Feb 3 00:25:28 2025 +0800|0.46.069
+51283fcd|vernesong|Mon Feb 3 00:25:28 2025 +0800|0.46.069
+8bbc83d8|vernesong|Mon Feb 3 00:18:09 2025 +0800|chore: refine
+41a73843|vernesong|Mon Feb 3 00:18:09 2025 +0800|chore: refine
+be698a10|vernesong|Tue Jan 28 22:05:42 2025 +0800|fix error
+7bd42f85|vernesong|Tue Jan 28 22:05:42 2025 +0800|fix error
+5196d4b3|vernesong|Tue Jan 28 17:12:50 2025 +0800|chore: remove coreutils coreutils-nohup libcap libcap-bin depends
+ef8de9cd|vernesong|Tue Jan 28 17:12:50 2025 +0800|chore: remove coreutils coreutils-nohup libcap libcap-bin depends
+f4e21354|vernesong|Mon Jan 27 04:57:18 2025 +0800|chore: refine Chnroute format
+8f754171|vernesong|Mon Jan 27 04:57:18 2025 +0800|chore: refine Chnroute format
+d88a7b43|vernesong|Sun Jan 26 11:19:52 2025 +0800|0.46.068
+ae5ea9d0|vernesong|Sun Jan 26 11:19:52 2025 +0800|0.46.068
+121f6b55|vernesong|Sun Jan 26 11:18:18 2025 +0800|chore: refine firewall
+caf3b1b0|vernesong|Sun Jan 26 11:18:18 2025 +0800|chore: refine firewall
+c173c545|vernesong|Sun Jan 26 03:59:10 2025 +0800|fix typo
+69e067e1|vernesong|Sun Jan 26 03:59:10 2025 +0800|fix typo
+844fc327|vernesong|Sat Jan 25 04:58:59 2025 +0800|0.46.067
+f4f27536|vernesong|Sat Jan 25 04:58:59 2025 +0800|0.46.067
+d7a59be8|vernesong|Sat Jan 25 04:58:26 2025 +0800|chore: refine
+2c2e62b0|vernesong|Sat Jan 25 04:58:26 2025 +0800|chore: refine
+74964226|vernesong|Sat Jan 25 01:43:32 2025 +0800|chore: mieru
+c66dd566|vernesong|Sat Jan 25 01:43:32 2025 +0800|chore: mieru
+c3d85e35|vernesong|Sat Jan 25 00:09:35 2025 +0800|chore: refine
+0645dcc4|vernesong|Sat Jan 25 00:09:35 2025 +0800|chore: refine
+2207fb79|vernesong|Fri Jan 24 18:58:41 2025 +0800|fix typo
+be013852|vernesong|Fri Jan 24 18:58:41 2025 +0800|fix typo
+87df91e6|vernesong|Tue Jan 21 10:52:30 2025 +0800|chore: refine
+1114b705|vernesong|Tue Jan 21 10:52:30 2025 +0800|chore: refine
+f5bc4142|vernesong|Sat Jan 18 18:58:20 2025 +0800|chore: dark mode for log
+bb86b4d4|vernesong|Sat Jan 18 18:58:20 2025 +0800|chore: dark mode for log
+b7869db6|vernesong|Sat Jan 18 16:21:57 2025 +0800|chore: tcp dns hijack
+8e205254|vernesong|Sat Jan 18 16:21:57 2025 +0800|chore: tcp dns hijack
+95c4b6da|vernesong|Tue Jan 14 20:57:01 2025 +0800|#4286
+c7cf8b9f|vernesong|Tue Jan 14 20:57:01 2025 +0800|#4286
+18aad1ed|vernesong|Sun Jan 12 11:03:11 2025 +0800|0.46.066
+8d0d6cfe|vernesong|Sun Jan 12 11:03:11 2025 +0800|0.46.066
+9019aff7|LovinYarn|Sun Jan 12 10:57:59 2025 +0800|feat: Add Zashboard (#4276)
+bbb9797b|LovinYarn|Sun Jan 12 10:57:59 2025 +0800|feat: Add Zashboard (#4276)
+3c809690|vernesong|Sun Jan 12 10:53:22 2025 +0800|chore: refine
+7fae5e71|vernesong|Sun Jan 12 10:53:22 2025 +0800|chore: refine
+81edfa04|vernesong|Sun Jan 12 10:13:23 2025 +0800|#4281
+90be5a34|vernesong|Sun Jan 12 10:13:23 2025 +0800|#4281
+9d697ab6|vernesong|Wed Jan 8 00:30:24 2025 +0800|chore: inline type
+a0e154ae|vernesong|Wed Jan 8 00:30:24 2025 +0800|chore: inline type
+a0b14544|vernesong|Tue Jan 7 12:02:40 2025 +0800|0.46.065
+1842045a|vernesong|Tue Jan 7 12:02:40 2025 +0800|0.46.065
+0ed67d66|vernesong|Tue Jan 7 11:55:00 2025 +0800|chore: hide update button if not subscribe info
+7f42771a|vernesong|Tue Jan 7 11:55:00 2025 +0800|chore: hide update button if not subscribe info
+29bf0b8d|vernesong|Mon Jan 6 21:30:58 2025 +0800|chore: refine
+d9c8e65f|vernesong|Mon Jan 6 21:30:58 2025 +0800|chore: refine
+66768ad3|vernesong|Mon Jan 6 17:04:14 2025 +0800|chore: add single config update btn
+6cccba64|vernesong|Mon Jan 6 17:04:14 2025 +0800|chore: add single config update btn
+21d0be61|vernesong|Mon Jan 6 02:12:01 2025 +0800|#4270
+ea4ba890|vernesong|Mon Jan 6 02:12:01 2025 +0800|#4270
+f4c76705|vernesong|Sat Jan 4 08:14:45 2025 +0800|chore: refine
+c9004bff|vernesong|Sat Jan 4 08:14:45 2025 +0800|chore: refine
+802a8690|vernesong|Thu Jan 2 13:34:07 2025 +0800|chore: darkmode style
+56740996|vernesong|Thu Jan 2 13:34:07 2025 +0800|chore: darkmode style
+2cb62f3f|vernesong|Tue Dec 31 18:04:28 2024 +0800|Merge branch 'dev'
+39b82d7f|vernesong|Tue Dec 31 18:04:28 2024 +0800|Merge branch 'dev'
+c86951ae|vernesong|Tue Dec 31 17:58:00 2024 +0800|Merge branch 'dev' of https://github.com/vernesong/OpenClash into dev
+3e1992c0|vernesong|Tue Dec 31 17:58:00 2024 +0800|Merge branch 'dev' of https://github.com/vernesong/OpenClash into dev
+cfbf9570|vernesong|Tue Dec 31 17:57:19 2024 +0800|0.46.064
+2fb2aaa8|vernesong|Tue Dec 31 17:57:19 2024 +0800|0.46.064
+d36e0eba|LovinYarn|Tue Dec 31 17:56:33 2024 +0800|chore: update metacubexd v1.176.0 (#4253)
+5b325f40|LovinYarn|Tue Dec 31 17:56:33 2024 +0800|chore: update metacubexd v1.176.0 (#4253)
+dcb127c2|vernesong|Tue Dec 31 17:22:28 2024 +0800|chore: refine
+0c8dcfa8|vernesong|Tue Dec 31 17:22:28 2024 +0800|chore: refine
+f4e58fe5|vernesong|Mon Dec 30 08:57:22 2024 +0800|#4257
+bfa78db9|vernesong|Mon Dec 30 08:57:22 2024 +0800|#4257
+8af662bb|vernesong|Fri Dec 27 02:02:45 2024 +0800|0.46.063
+f68c0eb9|vernesong|Fri Dec 27 02:02:45 2024 +0800|0.46.063
+5a73c087|vernesong|Thu Dec 26 19:11:30 2024 +0800|0.46.062
+48e28cf9|vernesong|Thu Dec 26 19:11:30 2024 +0800|0.46.062
+1d2cac51|vernesong|Thu Dec 26 18:44:04 2024 +0800|chore: refine
+c3c2b157|vernesong|Thu Dec 26 18:44:04 2024 +0800|chore: refine
+f2b4e828|vernesong|Tue Dec 24 08:49:25 2024 +0800|chore: refine
+93bf0eb5|vernesong|Tue Dec 24 08:49:25 2024 +0800|chore: refine
+175eca83|vernesong|Wed Dec 18 17:46:08 2024 +0800|0.46.061
+7b250526|vernesong|Wed Dec 18 17:46:08 2024 +0800|0.46.061
+956b2ecb|vernesong|Sun Dec 15 14:00:04 2024 +0800|0.46.060
+b8b0d856|vernesong|Sun Dec 15 14:00:04 2024 +0800|0.46.060
+1f33400c|vernesong|Sun Dec 15 13:58:50 2024 +0800|chore: refine traffic ac
+e72bdbbf|vernesong|Sun Dec 15 13:58:50 2024 +0800|chore: refine traffic ac
+56830957|LovinYarn|Thu Dec 12 22:18:00 2024 +0800|chore: update metacubexd v1.173.3 (#4218)
+6370a084|LovinYarn|Thu Dec 12 22:18:00 2024 +0800|chore: update metacubexd v1.173.3 (#4218)
+3b2567e2|jelly21fish|Thu Dec 12 22:17:27 2024 +0800|Enhance nft firewall rules; add support for IPv6 suffix matching (#4219)
+7494a626|jelly21fish|Thu Dec 12 22:17:27 2024 +0800|Enhance nft firewall rules; add support for IPv6 suffix matching (#4219)
+4379563e|why654123|Thu Dec 12 22:09:30 2024 +0800|Update openclash.lua (#4224)
+89d144a6|why654123|Thu Dec 12 22:09:30 2024 +0800|Update openclash.lua (#4224)
+bbbcde48|zxl hhyccc|Mon Dec 9 09:37:55 2024 +0800|luci-app-openclash: Fix `$` sign not escaping correctly. (#4217)
+90a5f40f|zxl hhyccc|Mon Dec 9 09:37:55 2024 +0800|luci-app-openclash: Fix `$` sign not escaping correctly. (#4217)
+72847ccc|vernesong|Sun Dec 8 16:54:39 2024 +0800|chore: refine
+217308a0|vernesong|Sun Dec 8 16:54:39 2024 +0800|chore: refine
+d30d285b|zxl hhyccc|Sun Dec 8 14:00:19 2024 +0800|luci-app-openclash: Optimized acquire `dnsmasq` configuration file path code. (#4215)
+14a1a84f|zxl hhyccc|Sun Dec 8 14:00:19 2024 +0800|luci-app-openclash: Optimized acquire `dnsmasq` configuration file path code. (#4215)
+d49f3b38|vernesong|Sun Dec 8 12:10:01 2024 +0800|chore: refine
+3dea5d01|vernesong|Sun Dec 8 12:10:01 2024 +0800|chore: refine
+28de0ade|vernesong|Sun Dec 8 09:21:41 2024 +0800|#4214
+ceab16e7|vernesong|Sun Dec 8 09:21:41 2024 +0800|#4214
+0fff4975|vernesong|Sat Dec 7 14:22:13 2024 +0800|0.46.059
+dbfe96f6|vernesong|Sat Dec 7 14:22:13 2024 +0800|0.46.059
+eb716c12|vernesong|Sat Dec 7 14:21:32 2024 +0800|chore: refine apk upgrade codes
+347da44c|vernesong|Sat Dec 7 14:21:32 2024 +0800|chore: refine apk upgrade codes
+9764e5b5|vernesong|Sat Dec 7 00:10:08 2024 +0800|0.46.058
+0f2f5eee|vernesong|Sat Dec 7 00:10:08 2024 +0800|0.46.058
+4adeb273|vernesong|Fri Dec 6 08:24:30 2024 +0800|chore: update lhie1 rule
+57ff5dd6|vernesong|Fri Dec 6 08:24:30 2024 +0800|chore: update lhie1 rule
+200707ff|vernesong|Wed Dec 4 16:26:55 2024 +0800|chore: delete old geosite database before installed restoring
+97be6de6|vernesong|Wed Dec 4 16:26:55 2024 +0800|chore: delete old geosite database before installed restoring
+8194e7c4|vernesong|Tue Dec 3 13:19:01 2024 +0800|0.46.057
+962e6fee|vernesong|Tue Dec 3 13:19:01 2024 +0800|0.46.057
+35d6593f|vernesong|Tue Dec 3 12:39:47 2024 +0800|0.46.056
+9dfa0e0d|vernesong|Tue Dec 3 12:39:47 2024 +0800|0.46.056
+20000349|vernesong|Sun Dec 1 01:54:10 2024 +0800|chore: refine
+30c44d71|vernesong|Sun Dec 1 01:54:10 2024 +0800|chore: refine
+5c7bd73d|vernesong|Sun Dec 1 01:33:17 2024 +0800|fix error
+61544080|vernesong|Sun Dec 1 01:33:17 2024 +0800|fix error
+7a0a5ce6|vernesong|Sat Nov 30 17:03:57 2024 +0800|chore: refine
+5a1f7b37|vernesong|Sat Nov 30 17:03:57 2024 +0800|chore: refine
+02180f38|vernesong|Sat Nov 30 16:55:43 2024 +0800|#4200
+9f63e9f0|vernesong|Sat Nov 30 16:55:43 2024 +0800|#4200
+46395938|vernesong|Thu Nov 28 12:32:54 2024 +0800|chore: refine
+7d0f24a2|vernesong|Thu Nov 28 12:32:54 2024 +0800|chore: refine
+5a232b86|vernesong|Thu Nov 28 12:19:38 2024 +0800|0.46.055
+9d3900f4|vernesong|Thu Nov 28 12:19:38 2024 +0800|0.46.055
+892c7bdb|vernesong|Thu Nov 28 12:18:45 2024 +0800|chore: refine
+bf612aa8|vernesong|Thu Nov 28 12:18:45 2024 +0800|chore: refine
+2a1e398d|pillarcoin|Mon Nov 25 15:35:08 2024 +0800|fix: save file after ruby_delete() (#4196)
+64c372cd|pillarcoin|Mon Nov 25 15:35:08 2024 +0800|fix: save file after ruby_delete() (#4196)
+c7211536|vernesong|Sat Nov 23 08:32:55 2024 +0800|0.46.054
+8fa63c85|vernesong|Sat Nov 23 08:32:55 2024 +0800|0.46.054
+4ed6c4af|vernesong|Sat Nov 23 07:57:03 2024 +0800|chore: refine
+42953e6a|vernesong|Sat Nov 23 07:57:03 2024 +0800|chore: refine
+33f97468|vernesong|Thu Nov 21 22:51:25 2024 +0800|fix #4187
+7138574b|vernesong|Thu Nov 21 22:51:25 2024 +0800|fix #4187
+28ad7827|vernesong|Thu Nov 21 21:42:28 2024 +0800|chore: remove HBO Now and HBO GO Asia
+0618db29|vernesong|Thu Nov 21 21:42:28 2024 +0800|chore: remove HBO Now and HBO GO Asia
+741cb437|vernesong|Thu Nov 21 11:51:06 2024 +0800|0.46.053
+4e808e41|vernesong|Thu Nov 21 11:51:06 2024 +0800|0.46.053
+5408326b|vernesong|Thu Nov 21 10:26:56 2024 +0800|chore: update lhie1 rules
+ebf8c9b0|vernesong|Thu Nov 21 10:26:56 2024 +0800|chore: update lhie1 rules
+a94a9013|vernesong|Thu Nov 21 09:27:22 2024 +0800|chore: add some demo for overwrite
+af5b9ea3|vernesong|Thu Nov 21 09:27:22 2024 +0800|chore: add some demo for overwrite
+ce0ef71d|vernesong|Wed Nov 20 21:37:31 2024 +0800|chore: refine
+a6002cf0|vernesong|Wed Nov 20 21:37:31 2024 +0800|chore: refine
+74079f61|vernesong|Wed Nov 20 15:50:13 2024 +0800|0.46.052
+495e84ef|vernesong|Wed Nov 20 15:50:13 2024 +0800|0.46.052
+0f6313f9|vernesong|Wed Nov 20 15:48:36 2024 +0800|fix typo
+c5725aed|vernesong|Wed Nov 20 15:48:36 2024 +0800|fix typo
+bb799406|vernesong|Wed Nov 20 14:37:29 2024 +0800|0.46.051
+f5b30d37|vernesong|Wed Nov 20 14:37:29 2024 +0800|0.46.051
+9b9f3518|vernesong|Wed Nov 20 13:51:46 2024 +0800|chore: refine
+9b1b7a4e|vernesong|Wed Nov 20 13:51:46 2024 +0800|chore: refine
+e75180cc|vernesong|Wed Nov 20 05:46:10 2024 +0800|chore: apk compatiable
+7c59e37d|vernesong|Wed Nov 20 05:46:10 2024 +0800|chore: apk compatiable
+d16c6d0e|vernesong|Fri Nov 15 10:59:57 2024 +0800|chore: refine
+8871e863|vernesong|Fri Nov 15 10:59:57 2024 +0800|chore: refine
+23744bad|zxl hhyccc|Fri Nov 15 08:52:57 2024 +0800|luci-app-openclash: adapt to openwrt official dnsmasq modifiy. (#4140)
+8280a7ef|zxl hhyccc|Fri Nov 15 08:52:57 2024 +0800|luci-app-openclash: adapt to openwrt official dnsmasq modifiy. (#4140)
+6d0fb713|vernesong|Fri Nov 15 08:44:44 2024 +0800|fix #4179
+a75d961e|vernesong|Fri Nov 15 08:44:44 2024 +0800|fix #4179
+4078fa0c|vernesong|Wed Nov 13 18:11:03 2024 +0800|fix typo
+ff8481d2|vernesong|Wed Nov 13 18:11:03 2024 +0800|fix typo
+7b91dce9|vernesong|Wed Nov 13 15:46:20 2024 +0800|fix typo
+76d03a8f|vernesong|Wed Nov 13 15:46:20 2024 +0800|fix typo
+32bf0c33|vernesong|Mon Nov 11 15:15:33 2024 +0800|#4168
+28f18e93|vernesong|Mon Nov 11 15:15:33 2024 +0800|#4168
+1d0e7442|vernesong|Sat Nov 9 19:23:23 2024 +0800|Merge branch 'dev'
+792fe901|vernesong|Sat Nov 9 19:23:23 2024 +0800|Merge branch 'dev'
+870478ac|vernesong|Sat Nov 9 19:19:16 2024 +0800|0.46.050
+d9ac45c4|vernesong|Sat Nov 9 19:19:16 2024 +0800|0.46.050
+9bd23f65|vernesong|Sat Nov 9 16:44:19 2024 +0800|#4165
+7103da19|vernesong|Sat Nov 9 16:44:19 2024 +0800|#4165
+59825685|vernesong|Fri Nov 8 16:59:47 2024 +0800|chore: refine
+ab753ac2|vernesong|Fri Nov 8 16:59:47 2024 +0800|chore: refine
+6c1f40e5|vernesong|Fri Nov 8 16:28:56 2024 +0800|chore: refine
+a41a94a2|vernesong|Fri Nov 8 16:28:56 2024 +0800|chore: refine
+4a31252e|vernesong|Fri Nov 8 10:01:59 2024 +0800|#4164
+e3ed14a1|vernesong|Fri Nov 8 10:01:59 2024 +0800|#4164
+9bd8366a|vernesong|Fri Nov 8 00:24:38 2024 +0800|0.46.049
+02732235|vernesong|Fri Nov 8 00:24:38 2024 +0800|0.46.049
+fc2eb25c|vernesong|Fri Nov 8 00:23:38 2024 +0800|chore: refine
+00013891|vernesong|Fri Nov 8 00:23:38 2024 +0800|chore: refine
+48e6b725|vernesong|Mon Nov 4 16:20:37 2024 +0800|chore: refine ruby code
+447a7616|vernesong|Mon Nov 4 16:20:37 2024 +0800|chore: refine ruby code
+1095b244|vernesong|Sun Nov 3 17:36:37 2024 +0800|workflow: go 1.23
+ef98fd98|vernesong|Sun Nov 3 17:36:37 2024 +0800|workflow: go 1.23
+3dcfe93e|vernesong|Fri Nov 1 02:13:59 2024 +0800|0.46.048
+f76334ba|vernesong|Fri Nov 1 02:13:59 2024 +0800|0.46.048
+8cd67b6a|vernesong|Fri Nov 1 02:10:58 2024 +0800|#4114 #4145
+dd93d995|vernesong|Fri Nov 1 02:10:58 2024 +0800|#4114 #4145
+18045850|vernesong|Thu Oct 31 18:03:18 2024 +0800|#4144
+a69f812c|vernesong|Thu Oct 31 18:03:18 2024 +0800|#4144
+179245f8|vernesong|Thu Oct 31 15:09:15 2024 +0800|#4143
+388b4642|vernesong|Thu Oct 31 15:09:15 2024 +0800|#4143
+04b268da|vernesong|Sun Oct 27 17:28:59 2024 +0800|0.46.047
+a8e1d2e1|vernesong|Sun Oct 27 17:28:59 2024 +0800|0.46.047
+8fb9048f|vernesong|Sun Oct 27 17:14:12 2024 +0800|chore: lhie1
+60052ea4|vernesong|Sun Oct 27 17:14:12 2024 +0800|chore: lhie1
+1138c527|vernesong|Fri Oct 25 13:32:32 2024 +0800|#4125
+09604ace|vernesong|Fri Oct 25 13:32:32 2024 +0800|#4125
+78e2f9fb|vernesong|Sun Oct 20 22:17:50 2024 +0800|fix bug
+1f44a698|vernesong|Sun Oct 20 22:17:50 2024 +0800|fix bug
+d1d95e39|Ekko|Sat Oct 19 18:41:42 2024 +0800|feat: support port range in common_ports (#4130)
+1f42b07a|Ekko|Sat Oct 19 18:41:42 2024 +0800|feat: support port range in common_ports (#4130)
+77910b27|vernesong|Fri Oct 18 08:17:07 2024 +0800|chore: refine
+cc633999|vernesong|Fri Oct 18 08:17:07 2024 +0800|chore: refine
+54a9d876|vernesong|Fri Oct 18 07:16:55 2024 +0800|chore: ipset depend only fw3 and default y for dnsmasq sets support #4124
+7e48cb74|vernesong|Fri Oct 18 07:16:55 2024 +0800|chore: ipset depend only fw3 and default y for dnsmasq sets support #4124
+0aa1c59e|vernesong|Thu Oct 17 12:47:17 2024 +0800|0.46.046
+b937e1bb|vernesong|Thu Oct 17 12:47:17 2024 +0800|0.46.046
+a6eb22ed|vernesong|Thu Oct 17 11:59:15 2024 +0800|0.46.045
+a2a91768|vernesong|Thu Oct 17 11:59:15 2024 +0800|0.46.045
+8084c01d|vernesong|Thu Oct 17 11:58:47 2024 +0800|#4121
+7de32b84|vernesong|Thu Oct 17 11:58:47 2024 +0800|#4121
+1b28334f|Ekko|Wed Oct 16 10:10:27 2024 +0800|add more invalid IP to openclash_custom_fallback_filter.yaml (#4120)
+fa5d7cb4|Ekko|Wed Oct 16 10:10:27 2024 +0800|add more invalid IP to openclash_custom_fallback_filter.yaml (#4120)
+4c301282|vernesong|Mon Oct 14 00:39:18 2024 +0800|0.46.044
+c8a34013|vernesong|Mon Oct 14 00:39:18 2024 +0800|0.46.044
+9620a3a7|vernesong|Sun Oct 13 23:53:42 2024 +0800|fix ip rule for tun mode
+0165a6b8|vernesong|Sun Oct 13 23:53:42 2024 +0800|fix ip rule for tun mode
+94e7b31b|vernesong|Sat Oct 12 12:04:55 2024 +0800|0.46.043
+d80ee856|vernesong|Sat Oct 12 12:04:55 2024 +0800|0.46.043
+064915dd|vernesong|Sat Oct 12 12:04:27 2024 +0800|chore: refine
+05d952fd|vernesong|Sat Oct 12 12:04:27 2024 +0800|chore: refine
+4ba8002c|vernesong|Wed Oct 9 18:40:30 2024 +0800|chore: add ipv6 mix mode
+7b00d640|vernesong|Wed Oct 9 18:40:30 2024 +0800|chore: add ipv6 mix mode
+bc3a12a2|vernesong|Wed Oct 9 03:42:37 2024 +0800|0.46.042
+28c2e6a2|vernesong|Wed Oct 9 03:42:37 2024 +0800|0.46.042
+e3e898ed|vernesong|Wed Oct 9 02:08:03 2024 +0800|0.46.041
+bfc9aeae|vernesong|Wed Oct 9 02:08:03 2024 +0800|0.46.041
+96aa8491|vernesong|Tue Oct 8 00:31:09 2024 +0800|chore: use Yacd-meta defaut
+ca6ad522|vernesong|Tue Oct 8 00:31:09 2024 +0800|chore: use Yacd-meta defaut
+1d486a7a|vernesong|Tue Oct 8 00:05:55 2024 +0800|chore: less file check
+06a6c462|vernesong|Tue Oct 8 00:05:55 2024 +0800|chore: less file check
+012403b0|vernesong|Mon Oct 7 23:38:21 2024 +0800|chore: quick start logic
+0004155a|vernesong|Mon Oct 7 23:38:21 2024 +0800|chore: quick start logic
+f29d38ee|TJT-JTJ|Mon Oct 7 22:06:54 2024 +0800|Update client.lua (#4097)
+22eee93c|TJT-JTJ|Mon Oct 7 22:06:54 2024 +0800|Update client.lua (#4097)
+1dc6674f|vernesong|Mon Oct 7 22:06:03 2024 +0800|chore: sniffer custom option
+5775e295|vernesong|Mon Oct 7 22:06:03 2024 +0800|chore: sniffer custom option
+1d1f98bd|vernesong|Mon Oct 7 15:33:52 2024 +0800|fix log format
+ca48492e|vernesong|Mon Oct 7 15:33:52 2024 +0800|fix log format
+92909d77|vernesong|Mon Oct 7 14:28:37 2024 +0800|#4096
+db741940|vernesong|Mon Oct 7 14:28:37 2024 +0800|#4096
+3f735123|vernesong|Mon Oct 7 01:42:00 2024 +0800|0.46.040
+a3911313|vernesong|Mon Oct 7 01:42:00 2024 +0800|0.46.040
+c0016909|vernesong|Mon Oct 7 01:40:44 2024 +0800|chore: refine
+f21db588|vernesong|Mon Oct 7 01:40:44 2024 +0800|chore: refine
+2dc0e884|vernesong|Sat Oct 5 17:10:20 2024 +0800|fix: tun not work after firewall reload
+6c4ebcde|vernesong|Sat Oct 5 17:10:20 2024 +0800|fix: tun not work after firewall reload
+2de10fdf|vernesong|Sat Oct 5 10:15:24 2024 +0800|chore: refine
+bff2b7df|vernesong|Sat Oct 5 10:15:24 2024 +0800|chore: refine
+dd2a8b75|vernesong|Sat Oct 5 07:18:02 2024 +0800|0.46.039
+ff5d298f|vernesong|Sat Oct 5 07:18:02 2024 +0800|0.46.039
+5cbb2320|vernesong|Sat Oct 5 03:04:19 2024 +0800|fix tun error
+ac1c6ae4|vernesong|Sat Oct 5 03:04:19 2024 +0800|fix tun error
+0646db3b|LovinYarn|Sat Oct 5 00:50:33 2024 +0800|chore: update metacubexd v1.151.0 (#4079)
+980c245f|LovinYarn|Sat Oct 5 00:50:33 2024 +0800|chore: update metacubexd v1.151.0 (#4079)
+f206d19f|vernesong|Sat Oct 5 00:46:12 2024 +0800|chore: refine
+fb7ae594|vernesong|Sat Oct 5 00:46:12 2024 +0800|chore: refine
+bce5f032|vernesong|Fri Oct 4 01:03:31 2024 +0800|0.46.038
+9e2acf1d|vernesong|Fri Oct 4 01:03:31 2024 +0800|0.46.038
+38937912|vernesong|Fri Oct 4 00:37:04 2024 +0800|0.46.037
+30c987a7|vernesong|Fri Oct 4 00:37:04 2024 +0800|0.46.037
+15c5ec94|vernesong|Thu Oct 3 20:04:22 2024 +0800|chore: refine
+9018f34f|vernesong|Thu Oct 3 20:04:22 2024 +0800|chore: refine
+82e8c213|vernesong|Thu Oct 3 17:52:33 2024 +0800|chore: refine
+422e28c8|vernesong|Thu Oct 3 17:52:33 2024 +0800|chore: refine
+49a88cf6|vernesong|Thu Oct 3 10:21:04 2024 +0800|0.46.036
+747217fa|vernesong|Thu Oct 3 10:21:04 2024 +0800|0.46.036
+2efae526|vernesong|Thu Oct 3 10:19:48 2024 +0800|chore: refine ruby codes
+026a61ab|vernesong|Thu Oct 3 10:19:48 2024 +0800|chore: refine ruby codes
+b78df147|vernesong|Wed Oct 2 18:11:56 2024 +0800|chore: ruby code refine
+e4d28bb9|vernesong|Wed Oct 2 18:11:56 2024 +0800|chore: ruby code refine
+97a35897|vernesong|Wed Oct 2 16:47:28 2024 +0800|#4077
+4d37ada8|vernesong|Wed Oct 2 16:47:28 2024 +0800|#4077
+1188652b|vernesong|Wed Oct 2 02:39:39 2024 +0800|0.46.035
+14fb3b86|vernesong|Wed Oct 2 02:39:39 2024 +0800|0.46.035
+50bc2f9d|vernesong|Wed Oct 2 02:20:47 2024 +0800|chore: refine
+af09c3cc|vernesong|Wed Oct 2 02:20:47 2024 +0800|chore: refine
+5416ba7d|vernesong|Tue Oct 1 08:01:38 2024 +0800|chore: refine
+5703736c|vernesong|Tue Oct 1 08:01:38 2024 +0800|chore: refine
+61c94beb|vernesong|Sun Sep 29 17:28:47 2024 +0800|chore: refine
+f7662cfe|vernesong|Sun Sep 29 17:28:47 2024 +0800|chore: refine
+03b2b597|vernesong|Sun Sep 29 17:16:44 2024 +0800|0.46.034
+d3ba9307|vernesong|Sun Sep 29 17:16:44 2024 +0800|0.46.034
+8d1a9ba8|vernesong|Sun Sep 29 16:56:02 2024 +0800|#4065
+a38d7497|vernesong|Sun Sep 29 16:56:02 2024 +0800|#4065
+d7456e4e|vernesong|Sat Sep 28 09:58:50 2024 +0800|chore: show subscribe url infos in logs
+051193b4|vernesong|Sat Sep 28 09:58:50 2024 +0800|chore: show subscribe url infos in logs
+4df90ee5|LovinYarn|Fri Sep 27 17:58:51 2024 +0800|chore: update metacubexd v1.150.0 (#4059)
+36e8cfea|LovinYarn|Fri Sep 27 17:58:51 2024 +0800|chore: update metacubexd v1.150.0 (#4059)
+b21ef156|vernesong|Fri Sep 27 17:56:53 2024 +0800|Update GeoSite.dat
+2e9906a8|vernesong|Fri Sep 27 17:56:53 2024 +0800|Update GeoSite.dat
+50e3dae1|vernesong|Thu Sep 26 14:08:36 2024 +0800|#4052
+95833c2a|vernesong|Thu Sep 26 14:08:36 2024 +0800|#4052
+5e7930c0|vernesong|Thu Sep 26 14:07:56 2024 +0800|fix typo
+2a690063|vernesong|Thu Sep 26 14:07:56 2024 +0800|fix typo
+54418915|vernesong|Thu Sep 26 11:51:00 2024 +0800|fix bug
+5a33ea91|vernesong|Thu Sep 26 11:51:00 2024 +0800|fix bug
+fc741a80|vernesong|Tue Sep 24 00:20:48 2024 +0800|Merge branch 'dev'
+61b87af0|vernesong|Tue Sep 24 00:20:48 2024 +0800|Merge branch 'dev'
+c2efe953|vernesong|Tue Sep 24 00:20:29 2024 +0800|0.46.033
+c52a81b9|vernesong|Tue Sep 24 00:20:29 2024 +0800|0.46.033
+607c7c50|vernesong|Tue Sep 24 00:20:14 2024 +0800|chore: ip geo
+dc021f63|vernesong|Tue Sep 24 00:20:14 2024 +0800|chore: ip geo
+e3b53dad|LovinYarn|Mon Sep 23 20:52:32 2024 +0800|chore: update metacubexd v1.149.0 (#4046)
+b7f7fa9f|LovinYarn|Mon Sep 23 20:52:32 2024 +0800|chore: update metacubexd v1.149.0 (#4046)
+</details>
