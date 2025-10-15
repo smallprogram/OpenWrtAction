@@ -1,0 +1,11 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+15822104|coolsnowwolf|Tue Oct 14 09:48:39 2025 +0800|Merge pull request #1016 from Internet1235/xray-core
+88e563b7|coolsnowwolf|Tue Oct 14 09:48:25 2025 +0800|Merge pull request #1015 from Internet1235/aliyundrive-webdav
+829c7621|coolsnowwolf|Tue Oct 14 09:48:12 2025 +0800|Merge pull request #1017 from Internet1235/rustdesk
+bd9eafe3|Internet1235|Mon Oct 13 18:20:21 2025 +0800|rustdesk-server: drop Build/Compile step
+8aad7f9a|Internet1235|Sun Oct 12 22:36:12 2025 +0800|xray-core: update to 25.9.11
+d8b32902|Internet1235|Sat Oct 11 20:19:31 2025 +0800|aliyundrive-webdav: update to 2.3.3
+</details>

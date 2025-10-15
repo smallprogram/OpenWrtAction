@@ -1,8 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-43130a2f47|Tianling Shen|Mon Oct 13 17:56:29 2025 +0800|target/sdk: change fallback repo url to immortalwrt git
-f7e033f590|Tianling Shen|Mon Oct 13 17:55:31 2025 +0800|Merge Official Source
-ade81ff85a|Goetz Goerisch|Wed Oct 8 19:32:20 2025 +0200|kernel: bump 6.6 to 6.6.110
-</details>
