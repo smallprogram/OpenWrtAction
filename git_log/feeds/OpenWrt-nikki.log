@@ -1,0 +1,11 @@
+<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+12a190b|Joseph Mory|Wed Oct 15 23:27:54 2025 +0800|feat: add procd config
+ef438b7|Joseph Mory|Wed Oct 15 23:19:09 2025 +0800|chore: ignore output when wating for tun device online
+b8dc820|Joseph Mory|Wed Oct 15 21:16:22 2025 +0800|feat: add executable check for core
+3e0ffc3|Joseph Mory|Wed Oct 15 18:45:18 2025 +0800|chore: ignore errors when wating for tun device online
+d7f0c46|Joseph Mory|Wed Oct 15 18:32:50 2025 +0800|feat: optimize proxy
+fa2c725|Joseph Mory|Wed Oct 15 15:25:51 2025 +0800|chore: update mihomo to 1.19.15
+</details>

@@ -1,10 +1,12 @@
-<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
 
 SHA|Author|Date|Message
 -|-|-|-
+ecee9e9564|Tianling Shen|Wed Oct 15 13:35:54 2025 +0800|Merge Official Source
 8554e22ace|Hauke Mehrtens|Sun Oct 5 19:31:09 2025 +0200|mac80211: Update to version 6.12.52
 0c1ff934ec|Christoph Krapp|Thu Sep 25 09:30:27 2025 +0200|ath79: add calibtation variant for TP-Link Archer C59 v1
 467924878b|Christoph Krapp|Thu Sep 25 09:29:22 2025 +0200|ipq-wifi: Add entry for TP-Link Archer C59 v1
 db4efd2e2d|Robert Marko|Tue Oct 14 13:17:43 2025 +0200|ipq-wifi: update to Git HEAD (2025-10-14)
 07c7dae498|Robert Marko|Sun Oct 12 11:49:16 2025 +0200|ipq-wifi: update to Git HEAD (2025-10-09)
+6e068b7052|Hauke Mehrtens|Sun Oct 5 19:43:22 2025 +0200|openssl: Update to version 3.0.18
 </details>

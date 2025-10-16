@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-712c887fa|Álvaro Fernández Rojas|Thu May 22 10:43:00 2025 +0200|generic: backport upstream v6.16 Realtek PHY patches
+aadec2c75|coolsnowwolf|Wed Oct 15 11:19:56 2025 +0800|kernel: bump 6.x to latest HEAD
+40942d2f3|coolsnowwolf|Wed Oct 15 11:12:19 2025 +0800|rockchip: phy: rockchip-pcie: Enable all four lanes if required
 </details>
