@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-aadec2c75|coolsnowwolf|Wed Oct 15 11:19:56 2025 +0800|kernel: bump 6.x to latest HEAD
-40942d2f3|coolsnowwolf|Wed Oct 15 11:12:19 2025 +0800|rockchip: phy: rockchip-pcie: Enable all four lanes if required
+13156ccb5|aiamadeus|Wed Oct 15 22:06:40 2025 +0800|uboot-rockchip: bump to 2025.10
 </details>
