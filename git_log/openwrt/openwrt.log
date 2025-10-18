@@ -2,11 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d8f764ce81|Timothy Feierabend|Tue Oct 14 20:44:32 2025 -0500|rockchip: backport pcie fix for rk3399
-a8afcd8fc2|Stefan Kalscheuer|Sat May 31 17:07:40 2025 +0200|mwlwifi: add pending patch to fix compilation with kernel 6.6.109+
-0c4f3b1246|Paweł Owoc|Mon Feb 24 13:18:46 2025 +0100|qualcommax: fix upgrade function for Linksys MX dual boot devices
-e301921ae3|Paweł Owoc|Thu Jan 2 22:31:33 2025 +0100|qualcommax: ipq807x: Remove OEM UBI volume before upgrade for Linksys MX devices
-d63824f78f|Paweł Owoc|Thu Dec 12 19:51:27 2024 +0100|qualcommax: ipq807x: Update u-boot env only when changes for Linksys MX devices
-f84fde7fb9|Paweł Owoc|Sat Feb 24 20:47:58 2024 +0100|qualcommax: ipq807x: Add ability to perform upgrade on current partition for Linksys MX devices
-e0478edeed|Paweł Owoc|Sat Feb 24 20:25:43 2024 +0100|base-files: sysupgrade: Add new option -s to perform upgrade on current partition
+9687d14c07|Robert Marko|Fri Oct 17 12:09:40 2025 +0200|ipq-wifi: update to Git HEAD (2025-10-17)
+4e81893953|Christoph Krapp|Tue Oct 14 20:22:29 2025 +0200|mediatek: filogic: add ASUS RT-AX52 factory-initramfs image generation
+8a0b30db51|Pawel Dembicki|Tue Oct 14 11:36:01 2025 +0200|mpc85xx: p1010: kernel: add missing symbol
 </details>

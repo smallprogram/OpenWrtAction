@@ -1,0 +1,8 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+8c99dc09d2|Liangbin Lian|Wed Aug 6 12:13:06 2025 +0800|luci-app-ddns: fix toggle button not working
+3c4bfa8fd9|Tianling Shen|Fri Oct 17 16:55:59 2025 +0800|Merge Official Source
+2b783f23e8|Paul Donald|Mon Oct 13 14:33:23 2025 +0200|luci-mod-system: minor code fixes for repokeys and sshkeys
+</details>
