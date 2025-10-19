@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ce0e60507d|Dirk Brenken|Sat Oct 18 22:02:58 2025 +0200|luci-app-travelmate: sync with release 2.2.1
+4ab5da8e51|Dirk Brenken|Tue Oct 14 22:14:47 2025 +0200|luci-app-travelmate: sync with release 2.2.0
+</details>

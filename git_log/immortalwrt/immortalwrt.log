@@ -1,7 +1,8 @@
-<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
 
 SHA|Author|Date|Message
 -|-|-|-
+5c8675f195|Tianling Shen|Sun Oct 19 02:48:38 2025 +0800|Merge Official Source
 a790196993|Felix Fietkau|Fri Oct 17 13:28:52 2025 +0200|ubus: update to Git HEAD (2025-10-17)
 c8ccf4c6a7|Hauke Mehrtens|Sat Oct 4 12:12:52 2025 +0200|ubus: update to Git HEAD (2025-10-04)
 a46d2efad2|Christian Marangi|Sat Oct 4 00:08:56 2025 +0200|ubus: update to Git HEAD (2025-10-04)
@@ -41,4 +42,7 @@ e59f6aff55|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-vdsl-vr11-mei: improve 
 e8639f57c5|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-ifxos: fix missing-prototypes build warning
 f2fa99a452|Shiji Yang|Sat May 10 17:19:18 2025 +0800|vrx518_ep: fix macro redefined build error on 6.12 kernel
 1ba8af8c1c|Andre Heider|Sat May 10 17:19:18 2025 +0800|vrx518_ep: fix compilation error with kernel 6.12
+9687d14c07|Robert Marko|Fri Oct 17 12:09:40 2025 +0200|ipq-wifi: update to Git HEAD (2025-10-17)
+4e81893953|Christoph Krapp|Tue Oct 14 20:22:29 2025 +0200|mediatek: filogic: add ASUS RT-AX52 factory-initramfs image generation
+8a0b30db51|Pawel Dembicki|Tue Oct 14 11:36:01 2025 +0200|mpc85xx: p1010: kernel: add missing symbol
 </details>

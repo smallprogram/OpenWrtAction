@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9b5389888|coolsnowwolf|Fri Oct 17 15:18:26 2025 +0800|mt76: fix build mt7925u with linux 6.x
-d5d61ae2f|coolsnowwolf|Fri Oct 17 14:29:46 2025 +0800|rockchip: refresh 6.x patches
-9aeb81bb9|coolsnowwolf|Fri Oct 17 14:04:27 2025 +0800|kernel: bump 6.x to latest HEAD
-b06a5cbe4|coolsnowwolf|Fri Oct 17 14:01:31 2025 +0800|linux-firmware: update to 20251011
+7bff0e416|aiamadeus|Thu Oct 16 22:20:26 2025 +0800|uboot-rockchip: fix python 3.8 support
 </details>
