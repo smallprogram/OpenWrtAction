@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7bff0e416|aiamadeus|Thu Oct 16 22:20:26 2025 +0800|uboot-rockchip: fix python 3.8 support
+ccd9ae0c8|coolsnowwolf|Sun Oct 12 22:05:20 2025 +0800|rockchip: sync upstream rk3576 source
 </details>

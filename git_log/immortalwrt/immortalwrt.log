@@ -2,47 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5c8675f195|Tianling Shen|Sun Oct 19 02:48:38 2025 +0800|Merge Official Source
-a790196993|Felix Fietkau|Fri Oct 17 13:28:52 2025 +0200|ubus: update to Git HEAD (2025-10-17)
-c8ccf4c6a7|Hauke Mehrtens|Sat Oct 4 12:12:52 2025 +0200|ubus: update to Git HEAD (2025-10-04)
-a46d2efad2|Christian Marangi|Sat Oct 4 00:08:56 2025 +0200|ubus: update to Git HEAD (2025-10-04)
-0d3076aa19|Petr Štetiar|Mon Oct 6 19:41:03 2025 +0000|ebtables: fix PKG_MIRROR_HASH
-d6f72e0cbb|Andrea Pesaresi|Sat Oct 11 10:10:29 2025 +0200|kernel: ksmbd: add max ip connection parameter
-225b6724cd|Andrea Pesaresi|Sat Oct 11 10:07:42 2025 +0200|kernel: ksmbd: browse-interfaces-list-on-FSCTL_QUERY_INTERFACE_INFO
-1a8d3ea89c|Magnus Kroken|Thu Oct 16 16:11:11 2025 +0200|mbedtls: update to 3.6.5
-e001b31163|Hauke Mehrtens|Tue Oct 14 00:32:26 2025 +0200|ltq-ptm: Fix unprivileged local user memory read and write
-fe50cfded0|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-adsl-mei: fix missing-prototypes warnings
-6a54d623f2|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-adsl-mei: fix 'inline' declaration warning
-5e196ba548|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-adsl: silence missing-prototypes warnings
-c9f2a60797|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-adsl: add missing header platform_device.h
-a9fde24cbc|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-vdsl-vr9-mei: fix missing prototypes warnings
-045f0bf2e6|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-vdsl-vr9-mei: fix ignored-qualifiers build warnings
-fc58c9481e|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-vdsl-vr9-mei: convert platform driver .remove to .remove_new
-13b81e124c|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-vdsl-vr9: fix missing-prototypes warnings
-116c26120e|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-vmmc: fix 'inline' declaration warning
-e52c85ee5d|Shiji Yang|Sat May 10 17:19:19 2025 +0800|ltq-vmmc: fix unknown type name errors
-3fd6351335|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-vmmc: fix macro definition conflicts
-b35acddeb4|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-vmmc: silence missing-prototypes warnings
-5e095c87e2|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-vmmc: fix ignored-qualifiers warning
-0d02cf9e34|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-ptm: adsl: fix 6.12 kernel build errors on lantiq/xway
-67d7504660|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-ptm: vdsl: fix 6.12 kernel build errors on lantiq/xrx200
-3f9c57b813|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-ptm: fix missing-prototypes warning
-7f3088e82d|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-deu: fix 6.12 kernel build warnings on lantiq/xway
-b73d6d4b8a|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-deu: fix 6.12 kernel build warnings on lantiq/xrx200
-95edff3cc3|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-atm: fix missing-prototypes warnings for lantiq/ase
-b5884358b0|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-atm: fix build warnings on lantiq/xway
-37af07700a|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-atm: add missing header mod_devicetable.h
-af8fc7ceab|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-atm: apply local patch to the source files
-7d9670039d|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-tapi: fix missing-prototypes build warnings
-d136e3ca07|Shiji Yang|Sat May 10 17:19:18 2025 +0800|vrx518_tc: fix missing-prototypes build warnings
-406efebc5a|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-vdsl-vr11: fix missing-prototypes build warnings
-7ddd410a9c|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-vdsl-vr11-mei: fix ignored-qualifiers build warnings
-e59f6aff55|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-vdsl-vr11-mei: improve compatibility with the 6.12 kernel.
-73571ef4f4|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-vdsl-vr11-mei: fix missing-prototypes build warnings
-e8639f57c5|Shiji Yang|Sat May 10 17:19:18 2025 +0800|ltq-ifxos: fix missing-prototypes build warning
-f2fa99a452|Shiji Yang|Sat May 10 17:19:18 2025 +0800|vrx518_ep: fix macro redefined build error on 6.12 kernel
-1ba8af8c1c|Andre Heider|Sat May 10 17:19:18 2025 +0800|vrx518_ep: fix compilation error with kernel 6.12
-9687d14c07|Robert Marko|Fri Oct 17 12:09:40 2025 +0200|ipq-wifi: update to Git HEAD (2025-10-17)
-4e81893953|Christoph Krapp|Tue Oct 14 20:22:29 2025 +0200|mediatek: filogic: add ASUS RT-AX52 factory-initramfs image generation
-8a0b30db51|Pawel Dembicki|Tue Oct 14 11:36:01 2025 +0200|mpc85xx: p1010: kernel: add missing symbol
+3f3aa33531|Tianling Shen|Mon Oct 20 01:55:01 2025 +0800|Merge Official Source
+29397011cc|Eric Fahlgren|Wed Oct 8 09:42:21 2025 -0700|targetwide: imagebuilder: add explicit guards around initramfs rules
+c5892fe8c5|Christoph Krapp|Sat Oct 18 00:58:37 2025 +0200|ipq40xx: fix Linksys WHW0x sorting
+b2119bbaa2|Christoph Krapp|Sat Oct 18 00:43:10 2025 +0200|ipq40xx: add led aliases for Linksys WHW01
+c416b8c44c|Christoph Krapp|Sat Oct 18 00:23:35 2025 +0200|ipq40xx: add label-mac-device alias for Linksys WHW01
+50f98c5335|Florian Eckert|Tue Sep 30 14:48:36 2025 +0200|kernel: add missing cpe id for linux
+efd444537d|Goetz Goerisch|Fri Oct 10 07:32:41 2025 +0200|bcm53xx: modify 180-usb-xhci-add-support-for-performing-fake-doorbell.patch
+180646ce4b|Álvaro Fernández Rojas|Sat Oct 18 19:27:27 2025 +0200|odhcpd: backport fixes from Git HEAD (2025-10-10)
+be32ab85cf|Álvaro Fernández Rojas|Thu Oct 2 15:53:39 2025 +0200|odhcpd: update to Git HEAD (2025-10-02)
+82d31a02b7|Ted Hess|Sat Sep 27 21:49:12 2025 -0400|odhcpd: update to Git HEAD (2025-09-27)
+81dfcefb41|Ted Hess|Thu Sep 18 13:01:14 2025 -0400|odhcpd: update to Git HEAD (2025-09-16)
+39510c21a0|David Härdeman|Thu Sep 11 23:38:11 2025 +0200|odhcpd: update to Git HEAD (2025-08-26)
 </details>

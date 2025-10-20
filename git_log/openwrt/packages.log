@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-613f7d217|Dirk Brenken|Sat Oct 18 22:00:49 2025 +0200|travelmate: release 2.2.1
-f07a573a6|Dirk Brenken|Tue Oct 14 22:12:33 2025 +0200|travelmate: release 2.2.0
+60606d6f6|Dirk Brenken|Sun Oct 19 20:20:02 2025 +0200|travelmate: update 2.2.1-2
+ea6950a07|Ralph Siemsen|Fri Oct 17 16:09:21 2025 -0400|znc: do not watch znc.conf for changes
 </details>
