@@ -2,5 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ccd9ae0c8|coolsnowwolf|Sun Oct 12 22:05:20 2025 +0800|rockchip: sync upstream rk3576 source
+15c509a2b|coolsnowwolf|Mon Oct 20 18:04:45 2025 +0800|ubus: update to Git HEAD (2025-10-17)
+416dab38c|coolsnowwolf|Mon Oct 20 18:00:35 2025 +0800|ubox: update to Git HEAD (2025-10-03)
+019c66b16|coolsnowwolf|Mon Oct 20 17:53:31 2025 +0800|libnl: update to 3.11.0
+b2a9125fb|coolsnowwolf|Mon Oct 20 17:47:34 2025 +0800|libnl-tiny: update to Git HEAD (2025-10-03)
+275624e4b|coolsnowwolf|Mon Oct 20 17:35:08 2025 +0800|ucode: update to Git HEAD (2025-09-29)
+5ca965517|Fu Jianrong|Mon Oct 20 15:17:18 2025 +0800|fix syntax error in ws3006/3009 case (#13759)
+4e5d6e3dd|coolsnowwolf|Mon Oct 20 11:03:19 2025 +0800|wolfssl: Update to version 5.7.6
+16450c8df|coolsnowwolf|Mon Oct 20 10:46:40 2025 +0800|mt76: refresh linux 6.x support patches
+71517523d|Fu Jianrong|Mon Oct 20 09:57:08 2025 +0800|mediatek: add support for Huasifei WS3009 device (#13758)
 </details>

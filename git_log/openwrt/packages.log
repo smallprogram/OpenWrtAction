@@ -1,7 +1,5 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+<details> <summary> <b>packages new commit log :x: </b> </summary>
 
-SHA|Author|Date|Message
--|-|-|-
-60606d6f6|Dirk Brenken|Sun Oct 19 20:20:02 2025 +0200|travelmate: update 2.2.1-2
-ea6950a07|Ralph Siemsen|Fri Oct 17 16:09:21 2025 -0400|znc: do not watch znc.conf for changes
+<b> It is detected that packages has an illegal SHA value. It is possible that packages has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>
+
 </details>
