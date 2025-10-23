@@ -1,0 +1,9 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+edb01ab812|Tianling Shen|Tue Oct 21 17:53:18 2025 +0800|Merge Official Source
+4ead11296a|Eric Fahlgren|Sun Oct 19 16:33:26 2025 -0700|targetwide: imagebuilder: add explicit guards around initramfs rules
+859ff7a978|Hauke Mehrtens|Tue Oct 21 00:00:26 2025 +0200|OpenWrt v24.10.4: revert to branch defaults
+78b23a26c4|Hauke Mehrtens|Tue Oct 21 00:00:21 2025 +0200|OpenWrt v24.10.4: adjust config defaults
+</details>
