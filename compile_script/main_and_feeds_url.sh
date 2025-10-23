@@ -39,6 +39,7 @@ process_repo() {
     echo "find feeds.conf file: $feeds_file"
     case "$platform" in
         openwrt)
+            sed -i -e 's|git.openwrt.org/feed|github.com/openwrt|g' -e 's|git.openwrt.org/project|github.com/openwrt|g' "$feeds_file"
             openwrt_REPO_URLS+=("$repo_url $repo_branch")
             echo "current openwrt_REPO_URLS: ${openwrt_REPO_URLS[*]}"
             ;;
