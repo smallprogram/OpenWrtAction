@@ -2,11 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2104002f0|coolsnowwolf|Thu Oct 23 16:31:28 2025 +0800|amlogic: add linux 6.1 support for Phicomm N1
-a8ed0af2f|coolsnowwolf|Wed Oct 22 12:26:52 2025 +0800|kernel: bump 6.x to latest HEAD
-59d183d29|coolsnowwolf|Wed Oct 22 12:07:57 2025 +0800|mt76: mark mt7925e/mt7996e 11BE capable
-33a6e7786|coolsnowwolf|Tue Oct 21 11:42:54 2025 +0800|wifi-scripts: add new package, move wifi scripts to a single place
-87b5c15bb|coolsnowwolf|Tue Oct 21 10:49:07 2025 +0800|base-files: sync source with upstream
-8fa17753d|coolsnowwolf|Tue Oct 21 10:06:24 2025 +0800|feeds.mk: add APK package build capabilities
-8de0ea84b|coolsnowwolf|Tue Oct 21 09:40:29 2025 +0800|rpcd: update to Git HEAD (2025-10-03)
+1afbdb86f|Internet1235|Thu Oct 23 15:13:50 2025 +0800|opkg: Bump to Git HEAD 2024-10-16 (#13766)
+da7fa8c3b|Internet1235|Thu Oct 23 15:13:37 2025 +0800|apk: bump to Git HEAD 2025-10-18 (#13767)
 </details>

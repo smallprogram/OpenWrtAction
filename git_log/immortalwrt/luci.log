@@ -1,7 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-5a0e3fb33f|Tianling Shen|Tue Oct 21 16:39:51 2025 +0800|luci-app-homeproxy: bump to latest git HEAD
-96e1303e04|Tianling Shen|Mon Oct 20 21:06:14 2025 +0800|luci-app-netdata: rewrite into JS
-</details>

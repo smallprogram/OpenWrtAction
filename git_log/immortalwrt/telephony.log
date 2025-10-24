@@ -1,6 +1,0 @@
-<details> <summary> <b>telephony new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-11e9c73|Liangbin Lian|Wed Oct 22 14:49:11 2025 +0800|dahdi-inux: Rename MAX definition to avoid macro naming conflict
-</details>

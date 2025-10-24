@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-03daea2b|coolsnowwolf|Tue Oct 21 09:12:02 2025 +0800|Merge pull request #1018 from Internet1235/git
-bba296cd|Internet1235|Thu Oct 16 12:39:16 2025 +0800|git: update to 2.51.1
+30ba9748|coolsnowwolf|Thu Oct 23 22:29:31 2025 +0800|samba4: improve extra tuning
+256eb619|coolsnowwolf|Thu Oct 23 22:10:30 2025 +0800|samba4: improve auto share hotplug
+e300e757|coolsnowwolf|Thu Oct 23 21:07:44 2025 +0800|samba4: update to 4.17.2
 </details>
