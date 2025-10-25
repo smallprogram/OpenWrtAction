@@ -2,19 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-387a0aabab|Robert Marko|Tue Oct 21 14:25:38 2025 +0200|mhz: update to latest version
-26b4cc330a|Tianling Shen|Thu Oct 23 15:19:16 2025 +0800|Merge Official Source
-78814b5fbe|KCrO|Mon Oct 20 21:52:45 2025 +0800|rockchip: add support for NLnet xiguapi v3
-debc420622|Robert Marko|Fri Apr 4 12:25:21 2025 +0200|at91bootstrap: put at91bootstrap images into image staging directory
-c5d7ef41f8|Robert Marko|Fri Apr 4 11:55:08 2025 +0200|at91: put u-boot images into image staging directory
-be73a7f033|Robert Marko|Fri Apr 4 11:04:01 2025 +0200|at91: add USB kmods only for subtargets that support USB
-d4eb33990b|Robert Marko|Sat Apr 12 00:07:16 2025 +0200|layerscape: armv7: drop skipped packages
-fa3632f332|Robert Marko|Sat Apr 12 00:06:02 2025 +0200|ls-rcw: select by default for layerscape/armv7
-5c6e95c5b4|Robert Marko|Fri Apr 11 21:06:18 2025 +0200|layerscape: armv8_64b: drop skipped packages
-c39bc0375f|Robert Marko|Fri Apr 11 23:33:57 2025 +0200|ls-ddr-phy: select by default for layerscape/armv8_64b
-9f630a4141|Robert Marko|Fri Apr 11 23:33:24 2025 +0200|ls-dpl: select by default for layerscape/armv8_64b
-ebcda1d7da|Robert Marko|Fri Apr 11 23:32:41 2025 +0200|ls-mc: select by default for layerscape/armv8_64b
-975552ea14|Robert Marko|Fri Apr 11 23:18:30 2025 +0200|fman-ucode: select by default for layerscape/armv8_64b
-4108db2bd8|Robert Marko|Fri Apr 11 22:57:27 2025 +0200|tfa-layerscape: set BUILD_DEVICES
-4b7728ba8b|Robert Marko|Sat Apr 12 00:32:23 2025 +0200|bcm63xx-cfe: install into image staging dir
+e57de7080f|Tianling Shen|Sat Oct 25 02:15:38 2025 +0800|Merge Official Source
+2d758300e3|Christoph Krapp|Thu Sep 25 12:26:45 2025 +0200|ath79: add calibration variant for TP-Link Archer C60 v2
+dbf2c101ed|Christoph Krapp|Thu Sep 25 12:26:15 2025 +0200|ipq-wifi: Add entry for TP-Link Archer C60 v2
+ef3b14e06c|Robert Marko|Wed Oct 22 11:36:14 2025 +0200|ipq-wifi: update to Git HEAD (2025-10-22)
+bdb89ee6df|Christian Marangi|Wed Oct 22 02:17:25 2025 +0200|image: fix race between mkits.sh and mkimage in .itb squashfs generation
 </details>

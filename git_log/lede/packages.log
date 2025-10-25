@@ -1,8 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-30ba9748|coolsnowwolf|Thu Oct 23 22:29:31 2025 +0800|samba4: improve extra tuning
-256eb619|coolsnowwolf|Thu Oct 23 22:10:30 2025 +0800|samba4: improve auto share hotplug
-e300e757|coolsnowwolf|Thu Oct 23 21:07:44 2025 +0800|samba4: update to 4.17.2
-</details>

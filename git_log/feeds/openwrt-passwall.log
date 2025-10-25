@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+de663dc|lwb1978|Fri Oct 24 22:16:47 2025 +0800|luci: optimize xray encryption/decryption
+</details>
