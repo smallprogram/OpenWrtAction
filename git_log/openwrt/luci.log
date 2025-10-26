@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6ce6ec4333|Hannu Nyman|Fri Oct 24 22:37:44 2025 +0300|treewide: Backport translations from master
+3111992bea|Lili González|Fri Oct 24 18:23:49 2025 -0600|luci-app-attendedsysupgrade: use the same logic as the main build when requesting rebuilds
 </details>

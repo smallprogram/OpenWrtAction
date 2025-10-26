@@ -2,31 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3bcd42c14|coolsnowwolf|Fri Oct 24 12:26:02 2025 +0800|kernel: bump 6.x to latest HEAD
-f19009ba6|aiamadeus|Thu Oct 23 23:08:30 2025 +0800|base-files: compatible with old luci
-dace6c0b7|coolsnowwolf|Wed Oct 8 18:16:28 2025 +0800|amlogic: s905x: add linux 6.1 support
-1afbdb86f|Internet1235|Thu Oct 23 15:13:50 2025 +0800|opkg: Bump to Git HEAD 2024-10-16 (#13766)
-da7fa8c3b|Internet1235|Thu Oct 23 15:13:37 2025 +0800|apk: bump to Git HEAD 2025-10-18 (#13767)
-2104002f0|coolsnowwolf|Thu Oct 23 16:31:28 2025 +0800|amlogic: add linux 6.1 support for Phicomm N1
-aebdcd786|Janusz Dziedzic|Sun Sep 1 10:56:15 2024 +0200|scripts: mac80211.sh: allow EHT* sets
-5a56db4f4|coolsnowwolf|Sun Oct 5 22:10:40 2025 +0800|base-files: sync source with upstream
-a8ed0af2f|coolsnowwolf|Wed Oct 22 12:26:52 2025 +0800|kernel: bump 6.x to latest HEAD
-59d183d29|coolsnowwolf|Wed Oct 22 12:07:57 2025 +0800|mt76: mark mt7925e/mt7996e 11BE capable
-0226adfb3|coolsnowwolf|Tue Oct 7 23:00:16 2025 +0800|feeds: add APK package build support
-81818f9b1|coolsnowwolf|Sat Oct 4 22:28:09 2025 +0800|package: sync libs with openwrt-24.10
-33a6e7786|coolsnowwolf|Tue Oct 21 11:42:54 2025 +0800|wifi-scripts: add new package, move wifi scripts to a single place
-87b5c15bb|coolsnowwolf|Tue Oct 21 10:49:07 2025 +0800|base-files: sync source with upstream
-8fa17753d|coolsnowwolf|Tue Oct 21 10:06:24 2025 +0800|feeds.mk: add APK package build capabilities
-8de0ea84b|coolsnowwolf|Tue Oct 21 09:40:29 2025 +0800|rpcd: update to Git HEAD (2025-10-03)
-80467ccd0|coolsnowwolf|Sun Oct 19 20:10:40 2025 +0800|mt76: refresh linux 6.x support patches
-0d02ca3d2|Fu Jianrong|Sun Oct 19 09:05:08 2025 +0800|mediatek: add Huasifei WS3009 support
-15c509a2b|coolsnowwolf|Mon Oct 20 18:04:45 2025 +0800|ubus: update to Git HEAD (2025-10-17)
-416dab38c|coolsnowwolf|Mon Oct 20 18:00:35 2025 +0800|ubox: update to Git HEAD (2025-10-03)
-019c66b16|coolsnowwolf|Mon Oct 20 17:53:31 2025 +0800|libnl: update to 3.11.0
-b2a9125fb|coolsnowwolf|Mon Oct 20 17:47:34 2025 +0800|libnl-tiny: update to Git HEAD (2025-10-03)
-275624e4b|coolsnowwolf|Mon Oct 20 17:35:08 2025 +0800|ucode: update to Git HEAD (2025-09-29)
-5ca965517|Fu Jianrong|Mon Oct 20 15:17:18 2025 +0800|fix syntax error in ws3006/3009 case (#13759)
-4e5d6e3dd|coolsnowwolf|Mon Oct 20 11:03:19 2025 +0800|wolfssl: Update to version 5.7.6
-16450c8df|coolsnowwolf|Mon Oct 20 10:46:40 2025 +0800|mt76: refresh linux 6.x support patches
-71517523d|Fu Jianrong|Mon Oct 20 09:57:08 2025 +0800|mediatek: add support for Huasifei WS3009 device (#13758)
+1285a74c0|Internet1235|Sat Oct 18 11:52:03 2025 +0800|opkg: bump to Git HEAD 2024-10-16
 </details>

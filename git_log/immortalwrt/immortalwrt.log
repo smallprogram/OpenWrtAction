@@ -2,9 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e57de7080f|Tianling Shen|Sat Oct 25 02:15:38 2025 +0800|Merge Official Source
-2d758300e3|Christoph Krapp|Thu Sep 25 12:26:45 2025 +0200|ath79: add calibration variant for TP-Link Archer C60 v2
-dbf2c101ed|Christoph Krapp|Thu Sep 25 12:26:15 2025 +0200|ipq-wifi: Add entry for TP-Link Archer C60 v2
-ef3b14e06c|Robert Marko|Wed Oct 22 11:36:14 2025 +0200|ipq-wifi: update to Git HEAD (2025-10-22)
-bdb89ee6df|Christian Marangi|Wed Oct 22 02:17:25 2025 +0200|image: fix race between mkits.sh and mkimage in .itb squashfs generation
+b5662a3055|Tianling Shen|Sat Oct 25 20:01:55 2025 +0800|uboot-rockchip: rename uboot dtsi for NLnet xiguapi v3
+51a4e6ad6c|Tianling Shen|Sat Oct 25 19:38:52 2025 +0800|uboot-rockchip: backport motorcomm yt8521s support
+24d935a13b|Tianling Shen|Sat Oct 25 19:41:45 2025 +0800|rockchip: minor fix for NineTripod X3568 v4
+2933450167|Coia Prant|Fri Oct 24 02:50:17 2025 +0800|rockchip: Add NineTripod X3568 v4 support
+e7d3dbc1b3|Coia Prant|Fri Oct 24 23:45:45 2025 +0800|kernel: input: add adc-keys driver
 </details>

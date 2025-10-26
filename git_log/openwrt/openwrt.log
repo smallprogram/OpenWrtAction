@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-2d758300e3|Christoph Krapp|Thu Sep 25 12:26:45 2025 +0200|ath79: add calibration variant for TP-Link Archer C60 v2
-dbf2c101ed|Christoph Krapp|Thu Sep 25 12:26:15 2025 +0200|ipq-wifi: Add entry for TP-Link Archer C60 v2
-ef3b14e06c|Robert Marko|Wed Oct 22 11:36:14 2025 +0200|ipq-wifi: update to Git HEAD (2025-10-22)
-</details>
