@@ -102,7 +102,11 @@ for git_folder in "${git_folders[@]}"; do
             else
                 echo "SHA|Author|Date|Message" >>"git_log/$git_folder/$OUTPUT_FILE.log"
                 echo "-|-|-|-" >>"git_log/$git_folder/$OUTPUT_FILE.log"
-                git -C "git_repositories/$git_folder/$OUTPUT_FILE" log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+                git -C "git_repositories/$git_folder/$OUTPUT_FILE" log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" | head -n 15 >>"git_log/$git_folder/$OUTPUT_FILE.log"
+                if [ $(git -C "git_repositories/$git_folder/$OUTPUT_FILE" log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" | wc -l) -gt 15 ]; then 
+                    echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
+                    echo "....................." >>"git_log/$git_folder/$OUTPUT_FILE.log"; 
+                fi
             fi
             echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "</details>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
