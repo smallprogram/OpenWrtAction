@@ -2,9 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b5662a3055|Tianling Shen|Sat Oct 25 20:01:55 2025 +0800|uboot-rockchip: rename uboot dtsi for NLnet xiguapi v3
-51a4e6ad6c|Tianling Shen|Sat Oct 25 19:38:52 2025 +0800|uboot-rockchip: backport motorcomm yt8521s support
-24d935a13b|Tianling Shen|Sat Oct 25 19:41:45 2025 +0800|rockchip: minor fix for NineTripod X3568 v4
-2933450167|Coia Prant|Fri Oct 24 02:50:17 2025 +0800|rockchip: Add NineTripod X3568 v4 support
-e7d3dbc1b3|Coia Prant|Fri Oct 24 23:45:45 2025 +0800|kernel: input: add adc-keys driver
+160f32284b|Tianling Shen|Sun Oct 26 22:32:37 2025 +0800|armbian-firmware: add nvram link for ninetripod x3568-v4
+e906244b34|Tianling Shen|Mon Aug 11 15:22:28 2025 +0800|tools/7z: update to 25.01
+aa4a9279fb|Shiji Yang|Thu Jul 10 20:02:24 2025 +0800|tools/7z: update to 25.00
+47cf38cde3|Shiji Yang|Wed Jun 4 20:23:03 2025 +0800|tools/7z: update to 24.09
+1a01e01b6e|Shiji Yang|Sat May 24 16:32:26 2025 +0800|ramips: dts: increase maximum MMC clock frequency
+3163a046dc|Shiji Yang|Fri Jun 13 21:36:16 2025 +0800|ramips: mtk-sd: stability improvements for MIPS mt762x SoCs
+08404b3510|Shiji Yang|Fri Jun 13 21:05:31 2025 +0800|ramips: mtk-sd: backport Host Software Queue support
+6c5e81e53a|Shiji Yang|Sat May 24 16:31:07 2025 +0800|ramips: mtk-mmc: fix data timeout value
+a70f766f20|Shiji Yang|Tue May 20 07:50:56 2025 +0800|ramips: dts: adjust the power regulators of MMC controller
 </details>

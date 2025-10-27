@@ -2,5 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3111992bea|Lili González|Fri Oct 24 18:23:49 2025 -0600|luci-app-attendedsysupgrade: use the same logic as the main build when requesting rebuilds
+85db8333ee|Dirk Brenken|Sun Oct 26 20:46:42 2025 +0100|luci-app-banip: use separate log viewer template
+7f9af5cb50|Dirk Brenken|Sun Oct 26 19:59:53 2025 +0100|luci-app-adblock: use separate log viewer template
+9f31756598|Hannu Nyman|Sun Oct 26 15:31:59 2025 +0200|build: Fix variable usage in i18n-update.pl
+c7c5947d71|Hannu Nyman|Sun Oct 26 10:07:15 2025 +0200|luci-app-keepalived: backport fixed translation
+c8e5518bfc|Hannu Nyman|Sun Oct 26 09:51:06 2025 +0200|luci-base: backport translations from master
+8a93b11eb0|Hannu Nyman|Sun Oct 26 09:36:05 2025 +0200|build: set i18n-update.pl to break at .po error
 </details>
