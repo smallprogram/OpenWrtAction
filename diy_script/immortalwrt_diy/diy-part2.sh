@@ -19,14 +19,20 @@ sed -i 's/192.168.1.1/10.10.0.253/g' package/base-files/files/bin/config_generat
 # update packages version
 rm -rf temp_resp
 git clone -b master --single-branch https://github.com/openwrt/packages.git temp_resp
-cd temp_resp
-git checkout 2b99cd7d7637da0f152da378994f699aaf0dd44d
-cd ..
+# cd temp_resp
+# git checkout 2b99cd7d7637da0f152da378994f699aaf0dd44d
+# cd ..
 rm -rf feeds/packages/lang/golang
 cp -r temp_resp/lang/golang feeds/packages/lang
 rm -rf feeds/packages/lang/rust
 cp -r temp_resp/lang/rust feeds/packages/lang
 rm -rf temp_resp
+
+rm -rf temp_resp
+git clone -b main --single-branch https://github.com/openwrt/openwrt.git temp_resp
+cp -f temp_resp/scripts/patch-kernel.sh scripts/
+rm -rf temp_resp
+
 
 # rm appfilter
 rm -rf ./feeds/packages/net/open-app-filter
