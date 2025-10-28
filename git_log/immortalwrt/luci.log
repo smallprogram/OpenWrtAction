@@ -1,0 +1,17 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0418b5448b|Tianling Shen|Tue Oct 28 04:01:46 2025 +0800|Merge Official Source
+797ab63aed|Tianling Shen|Mon Oct 27 22:12:17 2025 +0800|luci-app-openclash: Update to 0.47.024
+0e09220958|Tianling Shen|Mon Oct 27 20:33:26 2025 +0800|luci-app-openclash: Update to 0.47.023
+1fb4fd66e5|Tianling Shen|Wed Oct 15 20:29:39 2025 +0800|luci-app-openclash: Update to 0.47.015
+85db8333ee|Dirk Brenken|Sun Oct 26 20:46:42 2025 +0100|luci-app-banip: use separate log viewer template
+7f9af5cb50|Dirk Brenken|Sun Oct 26 19:59:53 2025 +0100|luci-app-adblock: use separate log viewer template
+9f31756598|Hannu Nyman|Sun Oct 26 15:31:59 2025 +0200|build: Fix variable usage in i18n-update.pl
+c7c5947d71|Hannu Nyman|Sun Oct 26 10:07:15 2025 +0200|luci-app-keepalived: backport fixed translation
+c8e5518bfc|Hannu Nyman|Sun Oct 26 09:51:06 2025 +0200|luci-base: backport translations from master
+8a93b11eb0|Hannu Nyman|Sun Oct 26 09:36:05 2025 +0200|build: set i18n-update.pl to break at .po error
+3111992bea|Lili González|Fri Oct 24 18:23:49 2025 -0600|luci-app-attendedsysupgrade: use the same logic as the main build when requesting rebuilds
+6ce6ec4333|Hannu Nyman|Fri Oct 24 22:37:44 2025 +0300|treewide: Backport translations from master
+</details>

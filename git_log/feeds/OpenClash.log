@@ -2,22 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-73a697cb|vernesong|Mon Oct 27 03:10:56 2025 +0800|workflow: delete resources update
-d1872d4c|vernesong|Mon Oct 27 02:57:04 2025 +0800|0.47.023
-88403082|vernesong|Mon Oct 27 02:55:48 2025 +0800|#4807
-5fa0895f|vernesong|Sun Oct 26 19:48:41 2025 +0800|Merge branch 'dev'
-0ff1027a|vernesong|Sun Oct 26 11:19:32 2025 +0800|0.47.022
-f26810c4|vernesong|Sat Oct 25 00:52:32 2025 +0800|chore: tblsection min-width
-122d865b|vernesong|Fri Oct 24 22:13:34 2025 +0800|0.47.021
-2bf46e5a|vernesong|Thu Oct 23 16:14:21 2025 +0800|0.47.020
-ef1460d8|vernesong|Thu Oct 23 12:25:55 2025 +0800|0.47.019
-d3a432a6|vernesong|Wed Oct 22 11:21:12 2025 +0800|chore: refine
-00f9577b|vernesong|Wed Oct 22 11:15:41 2025 +0800|chore: refine
-21a0987e|vernesong|Wed Oct 22 03:18:32 2025 +0800|0.47.018
-ba2d705c|vernesong|Wed Oct 22 03:18:17 2025 +0800|chore: add prefer-asn option for smart
-300bec59|vernesong|Wed Oct 22 03:06:05 2025 +0800|chore: depends check and change dns redirect time for core download
-f49ad807|vernesong|Thu Oct 16 11:27:17 2025 +0800|#4784
-
-.....................
-
+651bfc56|vernesong|Mon Oct 27 12:15:11 2025 +0800|0.47.024
 </details>
