@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-27effca|github-actions[bot]|Mon Oct 27 23:45:58 2025 +0800|sing-box: update to 1.12.12 (#532)
-4a47915|zhusir|Mon Oct 27 18:11:08 2025 +0800|action: update patches code
-</details>

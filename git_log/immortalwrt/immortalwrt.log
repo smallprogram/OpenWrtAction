@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e717d133ed|Tianling Shen|Mon Oct 27 22:09:50 2025 +0800|ramips: switch to kmod-mmc-mtk for jdcloud re-sp-01b
+205e4f07bf|Tianling Shen|Tue Oct 28 16:39:20 2025 +0800|ImmortalWrt v24.10.4: revert to branch defaults
+6eaea72a2c|Tianling Shen|Tue Oct 28 16:39:19 2025 +0800|ImmortalWrt v24.10.4: adjust config defaults
 </details>
