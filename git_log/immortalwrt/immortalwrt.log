@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-205e4f07bf|Tianling Shen|Tue Oct 28 16:39:20 2025 +0800|ImmortalWrt v24.10.4: revert to branch defaults
-6eaea72a2c|Tianling Shen|Tue Oct 28 16:39:19 2025 +0800|ImmortalWrt v24.10.4: adjust config defaults
+8748e38bd7|Tianling Shen|Wed Oct 29 18:50:18 2025 +0800|rockchip: add wifi reload workaround for ninetripod x3568-v4
 </details>

@@ -1,0 +1,9 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+607aa2a4b|Josef Schlehofer|Tue Oct 28 11:42:28 2025 +0100|syslog-ng: add dependency for ivykis
+74c7b5523|Josef Schlehofer|Thu Oct 2 09:54:42 2025 +0200|ivykis: add new package
+9110dd9e2|Josef Schlehofer|Wed Oct 22 02:05:19 2025 +0200|python-build: update to version 1.3.0
+abf944ce4|Josef Schlehofer|Wed Oct 22 02:02:40 2025 +0200|python-flit-core: update to version 3.12.0
+</details>
