@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+77992b8|A-BO|Thu Oct 30 23:13:58 2025 +0800|luci: optimize the shunt_rules multivalue checkboxes layout
+01de999|A-BO|Thu Oct 30 22:42:40 2025 +0800|luci: optimize the shunt_rules page redirect
+c7fa8ee|lwb1978|Thu Oct 30 17:27:16 2025 +0800|luci: add the po version number to the makefile
+9354d21|lwb1978|Thu Oct 30 17:20:35 2025 +0800|luci: optimize the ipv6-related judgment function
+</details>
