@@ -1,0 +1,13 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+c8941adc2|Josef Schlehofer|Wed Oct 22 00:05:35 2025 +0200|python-cython: update to version 3.1.5
+4da621cb2|Josef Schlehofer|Wed Oct 22 02:49:54 2025 +0200|bigclown-gateway: backport pending patch to fix JSON dumps
+f2f149b56|Josef Schlehofer|Wed Oct 22 02:48:47 2025 +0200|bigclown-gateway: update to version 1.17.0
+7113624af|Josef Schlehofer|Wed Oct 22 00:40:38 2025 +0200|python-markupsafe: update to version 3.0.3
+7877590b8|Josef Schlehofer|Tue Oct 21 23:42:45 2025 +0200|python-uci: drop patches due to newer setuptools
+5ea20ec4f|Josef Schlehofer|Tue Oct 21 23:30:19 2025 +0200|python3: update to version 3.11.4
+5b9624dc6|Josef Schlehofer|Thu Oct 30 10:04:23 2025 +0100|umurmur: Use example config and add own init script
+ecb4600c6|Josef Schlehofer|Wed Oct 29 07:48:02 2025 +0100|umurmur: move config file to its default location
+</details>

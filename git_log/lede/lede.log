@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e5fe8fc3d|aiamadeus|Mon Sep 8 22:05:10 2025 +0800|rockchip: refresh kernel kconfig
-c8987bead|aiamadeus|Sun Sep 7 22:08:30 2025 +0800|generic: sync kernel 6.x symbols
+7b2e74e9d|coolsnowwolf|Fri Oct 31 18:08:36 2025 +0800|qualcommbe: ipq95xx: add Xiaomi BE7000 support
+3b83d61dd|coolsnowwolf|Fri Oct 31 18:00:29 2025 +0800|kernel: bump all to latest HEAD
 </details>

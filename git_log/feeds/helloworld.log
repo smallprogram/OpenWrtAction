@@ -1,0 +1,10 @@
+<details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+9c37482|zxl hhyccc|Sat Nov 1 01:57:08 2025 +0800|Merge pull request #1816 from zxlhhyccc/tuic
+d4d2f01|zxlhhyccc|Fri Oct 31 22:43:23 2025 +0800|luci-app-ssr-plus: Add missing `nft` support and optimize code
+bff8233|zxl hhyccc|Fri Oct 31 22:39:58 2025 +0800|Merge pull request #1815 from zxlhhyccc/tuic
+43162b9|zxlhhyccc|Fri Oct 31 20:30:33 2025 +0800|luci-app-ssr-plus: Optimize `vless` subscribe code.
+e438128|zxlhhyccc|Fri Oct 31 20:26:05 2025 +0800|luci-app-ssr-plus: Add `ipt` `nft` build options.
+</details>

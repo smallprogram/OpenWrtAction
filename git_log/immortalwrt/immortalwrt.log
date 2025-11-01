@@ -2,9 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-85479b71a0|Tianling Shen|Mon Oct 27 16:20:35 2025 +0800|rockchip: add PHY LED configuration for ninetripod x3568-v4
-81a9d40ed3|Tianling Shen|Sun Oct 26 20:07:35 2025 +0800|sunxi: switch to use upstream phy led binding for yt85xx
-39810a4b38|Tianling Shen|Sun Oct 26 19:49:13 2025 +0800|rockchip: switch to use upstream phy led binding for yt85xx
-3b35599397|Tianling Shen|Sun Oct 26 18:52:25 2025 +0800|kernel: backport PHY LEDs support for motorcomm PHY
-652f430238|Tianling Shen|Tue Oct 21 16:19:30 2025 +0800|rockchip: switch to use upstream dts for ariaboard photonicat
+b44e94aee4|Tianling Shen|Fri Oct 31 22:08:20 2025 +0800|Merge Official Source
+984a219781|Zxl hhyccc|Fri Oct 24 23:56:59 2025 +0800|kernel: bump 6.6 to 6.6.114
+8d90e178b1|Zxl hhyccc|Mon Oct 20 22:57:35 2025 +0800|kernel: bump 6.6 to 6.6.113
+5902917588|Zxl hhyccc|Sat Oct 18 01:55:10 2025 +0800|kernel: bump 6.6 to 6.6.112
+630354031a|Zxl hhyccc|Sat Oct 18 00:24:09 2025 +0800|kernel: bump 6.6 to 6.6.111
 </details>

@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bbe08cd2|Yousong Zhou|Fri Jul 5 05:03:32 2024 +0000|shadowsocks-libev: drop package
+f72b597a|coolsnowwolf|Fri Oct 31 13:30:26 2025 +0800|Merge pull request #1023 from Internet1235/adguardhome
+a5a1c5df|Internet1235|Thu Oct 30 22:35:02 2025 +0800|adguardhome: update to 0.107.69
 </details>
