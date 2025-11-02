@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-04bce28|lwb1978|Sat Nov 1 00:46:56 2025 +0800|luci: update default rules
+88f1746|lwb1978|Sat Nov 1 09:37:25 2025 +0800|action: update code
+3b52e97|A-BO|Sat Nov 1 09:11:34 2025 +0800|luci: bump to 25.11.1
 </details>

@@ -1,6 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-1e0bf04a99|Paul Donald|Sat Oct 25 22:46:20 2025 +0200|luci-mod-system: give repokeys the ability to fetch keys from a remote URL
-</details>

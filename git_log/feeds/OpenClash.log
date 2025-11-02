@@ -1,0 +1,17 @@
+<details> <summary> <b>OpenClash new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+58c05477|vernesong|Sat Nov 1 20:05:51 2025 +0800|0.47.028
+17a1551a|Patrick Gu|Sat Nov 1 17:48:11 2025 +0800|fix(ui): remove default checked state for mode selectors (#4823)
+85dec7b1|vernesong|Sat Nov 1 17:46:18 2025 +0800|#4810
+60624cf5|vernesong|Fri Oct 31 14:49:43 2025 +0800|chore: dler login reset address
+ffb0b2f7|Patrick Gu|Fri Oct 31 06:44:27 2025 +0800|Fix shell syntax compatibility issue in check_mod function (#4821)
+e2cf030f|vernesong|Thu Oct 30 13:59:17 2025 +0800|0.47.027
+96a641b2|vernesong|Thu Oct 30 13:59:00 2025 +0800|chore: do not stop if depend checks failed
+f1ea0b54|vernesong|Thu Oct 30 13:56:52 2025 +0800|#4817
+733e62f0|vernesong|Wed Oct 29 18:04:16 2025 +0800|0.47.026
+4c27ceab|vernesong|Wed Oct 29 15:15:58 2025 +0800|chore: add theme switch toggle
+3ee014c4|vernesong|Wed Oct 29 12:29:36 2025 +0800|0.47.025
+ed708764|vernesong|Wed Oct 29 12:29:14 2025 +0800|chore: add fake-ip-range6
+</details>
