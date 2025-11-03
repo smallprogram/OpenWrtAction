@@ -1,0 +1,7 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+8f02d6d999|Tianling Shen|Sun Nov 2 22:40:27 2025 +0800|rockchip: move eMMC HS200 flag to device tree
+12a23b5bf0|Tianling Shen|Sun Nov 2 17:14:44 2025 +0800|fullconenat-nft: fix build with kernel 6.6.113
+</details>

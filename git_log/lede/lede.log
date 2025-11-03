@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-389a26dc6|coolsnowwolf|Mon Oct 6 18:08:36 2025 +0800|qualcommbe: syncing with upstream
-7b2e74e9d|coolsnowwolf|Fri Oct 31 18:08:36 2025 +0800|qualcommbe: ipq95xx: add Xiaomi BE7000 support
+2100e56f8|aiamadeus|Wed Oct 22 20:08:06 2025 +0800|ipq60xx: update BDF for JDC devices
+a129e80a6|coolsnowwolf|Sun Oct 26 20:25:10 2025 +0800|ipq-wifi: update to HEAD 2025-10-22
 </details>

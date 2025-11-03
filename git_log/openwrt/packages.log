@@ -1,0 +1,9 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+1b990e991|Josef Schlehofer|Tue Oct 21 23:46:28 2025 +0200|python-setuptools: update to version 80.9.0
+45bfa5f87|Josef Schlehofer|Wed Oct 22 00:24:03 2025 +0200|python-wheel: update to 0.45.1
+5c58c629c|Josef Schlehofer|Fri Oct 31 13:01:26 2025 +0100|strongswan: add build dependency for python and explicitly use python3
+1c13afebe|Josef Schlehofer|Wed Oct 22 01:50:30 2025 +0200|python-calver: update to version 2025.10.20
+</details>
