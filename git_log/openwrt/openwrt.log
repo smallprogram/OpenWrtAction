@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+99e62c21c6|Robert Marko|Wed Apr 23 14:18:48 2025 +0200|mold: dont allow on MacOS
+</details>
