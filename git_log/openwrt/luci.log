@@ -1,9 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-d3100e2389|Paul Donald|Mon Nov 3 22:44:40 2025 +0100|luci-mod-network: hint that property belongs to mesh
-b9f0ea06a9|Paul Donald|Mon Nov 3 22:34:08 2025 +0100|luci-mod-network: dynamically find mode and bssid positions
-bc4f7913c2|Paul Donald|Mon Nov 3 22:32:33 2025 +0100|luci-mod-network: implement checks for mesh capabilities
-9e83f2404d|Paul Donald|Mon Nov 3 22:38:52 2025 +0100|luci-base: extend luci WiFi features checks
-</details>

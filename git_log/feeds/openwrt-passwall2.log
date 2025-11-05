@@ -1,0 +1,10 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+432e190|xiaorouji|Wed Nov 5 02:27:55 2025 +0800|luci: optimize and refactoring the node list
+b943b8a|xiaorouji|Tue Nov 4 21:40:15 2025 +0800|luci: optimize and reduce duplicate code
+f9a6379|xiaorouji|Tue Nov 4 20:27:40 2025 +0800|luci: node add `group` option
+74dc550|xiaorouji|Tue Nov 4 20:22:29 2025 +0800|luci: node `add_from` option name -> `group`
+fb6126a|xiaorouji|Wed Nov 5 03:14:08 2025 +0800|luci: fix bug
+</details>

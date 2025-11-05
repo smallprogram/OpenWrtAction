@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0894d10e7|Fu Jianrong|Mon Nov 3 18:00:06 2025 +0800|mediatek: fix Huasifei WS3006 support
+0e0ce6036|coolsnowwolf|Mon Sep 22 20:10:22 2025 +0800|amlogic: s905x: enable SCSI support
 </details>

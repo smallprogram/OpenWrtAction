@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-99e62c21c6|Robert Marko|Wed Apr 23 14:18:48 2025 +0200|mold: dont allow on MacOS
+a38b0c94dd|Andreas Gnau|Fri Oct 3 10:59:42 2025 +0200|tools/ccache: same behaviour for local and CI builds
 </details>
