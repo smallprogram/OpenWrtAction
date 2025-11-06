@@ -1,0 +1,6 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+fb899148bf|Paul Donald|Wed Nov 5 22:10:48 2025 +0100|luci-base: shell quote package name variable to prevent command injection
+</details>

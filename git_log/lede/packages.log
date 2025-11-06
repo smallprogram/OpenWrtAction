@@ -2,8 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e7ac58e2|coolsnowwolf|Tue Nov 4 16:27:54 2025 +0800|Merge pull request #1024 from Internet1235/cloudflared
-1ae680ce|coolsnowwolf|Tue Nov 4 16:27:43 2025 +0800|Merge pull request #1028 from Internet1235/rust
-5b9116df|Internet1235|Tue Nov 4 12:36:15 2025 +0800|rust: update to 1.91.0
-3cfc3d9d|Internet1235|Fri Oct 31 12:43:13 2025 +0800|cloudflared: update to 2025.10.1
+2e95228d|coolsnowwolf|Wed Nov 5 09:53:40 2025 +0800|Merge pull request #1022 from Internet1235/ddns-go
+d46d7899|coolsnowwolf|Wed Nov 5 09:53:32 2025 +0800|Merge pull request #1025 from Internet1235/git
+4e5b0f8d|coolsnowwolf|Wed Nov 5 09:53:23 2025 +0800|Merge pull request #1026 from Internet1235/git-lfs
+d51b1afd|coolsnowwolf|Wed Nov 5 09:53:15 2025 +0800|Merge pull request #1027 from Internet1235/sing-box
+6aa2660b|coolsnowwolf|Wed Nov 5 09:53:06 2025 +0800|Merge pull request #1019 from Internet1235/bind
+435f2dbf|Internet1235|Sat Nov 1 15:55:01 2025 +0800|sing-box: update to 1.12.12
+1bf05006|Internet1235|Fri Oct 31 12:38:02 2025 +0800|git-lfs: update to 3.7.1
+f63fbdaf|Internet1235|Fri Oct 31 12:35:00 2025 +0800|git: update to 2.51.2
+11d3bb17|Internet1235|Sun Oct 26 21:44:23 2025 +0800|ddns-go: update to 6.13.0
+8d7115d9|Internet1235|Thu Oct 23 12:38:57 2025 +0800|bind: update to 9.20.15
 </details>

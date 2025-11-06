@@ -1,6 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-df010ea69f|Tianling Shen|Tue Nov 4 16:11:58 2025 +0800|kernel: remove QE bit on unsupported chips for FudanMicro flash
-</details>

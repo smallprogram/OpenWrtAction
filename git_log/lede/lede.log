@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0e0ce6036|coolsnowwolf|Mon Sep 22 20:10:22 2025 +0800|amlogic: s905x: enable SCSI support
+3c3f691df|John Audia|Sun Oct 19 15:49:48 2025 -0400|bcm27xx: refresh kernel 6.12 patches
 </details>
