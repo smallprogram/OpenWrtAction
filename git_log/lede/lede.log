@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3c3f691df|John Audia|Sun Oct 19 15:49:48 2025 -0400|bcm27xx: refresh kernel 6.12 patches
+e8980cd67|coolsnowwolf|Thu Nov 6 18:22:42 2025 +0800|x86: introduce new Intel Xe DRM driver for DG/XE1/XE2/Lunar Lake+ GPU
+ea6ed2801|coolsnowwolf|Thu Nov 6 14:40:03 2025 +0800|loongarch64: add squashfs image support
+96e8d60f7|coolsnowwolf|Thu Nov 6 13:50:23 2025 +0800|autocore: add loongarch64 target support
 </details>

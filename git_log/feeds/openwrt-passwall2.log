@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-4c950ab|xiaorouji|Wed Nov 5 21:13:46 2025 +0800|luci: node list recover show node address and port logic
-4aaec7c|xiaorouji|Wed Nov 5 17:14:26 2025 +0800|luci: optimize and fix
-f5ec175|xiaorouji|Wed Nov 5 17:10:35 2025 +0800|luci: optimize node list auto ping
-</details>

@@ -1,0 +1,10 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+fab57696d|Dirk Brenken|Thu Nov 6 23:43:17 2025 +0100|travelmate: update 2.2.1-4
+bb17d880b|Peter van Dijk|Mon Aug 18 12:30:55 2025 +0200|pdns-recursor: security update to 5.1.8
+56ebb23ce|Anton P.|Sat Nov 1 23:15:27 2025 +0300|sing-box: update to 1.12.12
+89871b5db|Gagan Deep|Tue Nov 4 12:36:24 2025 +0000|openwisp-config: upgrade to 1.2.0
+ae100b215|Gagan Deep|Tue Nov 4 15:42:26 2025 +0000|openwisp-monitoring: upgrade to 0.3.0
+</details>

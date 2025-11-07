@@ -2,7 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-983d222|A-BO|Thu Nov 6 00:45:31 2025 +0800|luci: fix
-27a78e4|A-BO|Thu Nov 6 00:18:27 2025 +0800|luci: optimize and fix
-87486ac|A-BO|Wed Nov 5 23:21:12 2025 +0800|luci: optimize and refactoring the node list
+d1adb2a3|A-BO|Fri Nov 7 02:22:48 2025 +0800|luci: support selecting a group when importing node link
+3392d2a2|A-BO|Thu Nov 6 19:50:31 2025 +0800|luci: optimize node `group` option
+9d3fc7fc|lwb1978|Thu Nov 6 10:57:21 2025 +0800|luci: optimize node list select-all for current tab only
+2a7b2303|lwb1978|Thu Nov 6 08:39:27 2025 +0800|luci: fix
+983d222b|A-BO|Thu Nov 6 00:45:31 2025 +0800|luci: fix
 </details>

@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fb899148bf|Paul Donald|Wed Nov 5 22:10:48 2025 +0100|luci-base: shell quote package name variable to prevent command injection
+0563a36acc|Dirk Brenken|Thu Nov 6 23:51:56 2025 +0100|luci-app-travelmate: sync with update 2.2.1-4
+20c4a4b21f|Dirk Brenken|Thu Nov 6 06:22:01 2025 +0100|luci-app-travelmate: fixes in station.js
 </details>
