@@ -1,0 +1,10 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+fc0a3d9051|Tianling Shen|Fri Nov 7 22:31:59 2025 +0800|Merge Official Source
+6f9e182236|kcro227|Wed Nov 5 16:17:37 2025 +0000|rockchip: mod NLnet XiGuaPi V3 DEVICE_PACKAGES
+aa03dfeb96|Hang Zhou|Fri Oct 24 07:21:21 2025 +1100|bmips: fix leds on f@st3864op
+a38b0c94dd|Andreas Gnau|Fri Oct 3 10:59:42 2025 +0200|tools/ccache: same behaviour for local and CI builds
+99e62c21c6|Robert Marko|Wed Apr 23 14:18:48 2025 +0200|mold: dont allow on MacOS
+</details>

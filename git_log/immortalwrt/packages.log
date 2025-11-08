@@ -1,0 +1,23 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+79cee3305|Tianling Shen|Fri Nov 7 21:32:33 2025 +0800|Merge Official Source
+fab57696d|Dirk Brenken|Thu Nov 6 23:43:17 2025 +0100|travelmate: update 2.2.1-4
+bb17d880b|Peter van Dijk|Mon Aug 18 12:30:55 2025 +0200|pdns-recursor: security update to 5.1.8
+56ebb23ce|Anton P.|Sat Nov 1 23:15:27 2025 +0300|sing-box: update to 1.12.12
+89871b5db|Gagan Deep|Tue Nov 4 12:36:24 2025 +0000|openwisp-config: upgrade to 1.2.0
+ae100b215|Gagan Deep|Tue Nov 4 15:42:26 2025 +0000|openwisp-monitoring: upgrade to 0.3.0
+f8c3a1fd9|Michael Heimpold|Sat Oct 25 13:45:22 2025 +0200|php8: update to 8.3.27
+1b990e991|Josef Schlehofer|Tue Oct 21 23:46:28 2025 +0200|python-setuptools: update to version 80.9.0
+45bfa5f87|Josef Schlehofer|Wed Oct 22 00:24:03 2025 +0200|python-wheel: update to 0.45.1
+5c58c629c|Josef Schlehofer|Fri Oct 31 13:01:26 2025 +0100|strongswan: add build dependency for python and explicitly use python3
+1c13afebe|Josef Schlehofer|Wed Oct 22 01:50:30 2025 +0200|python-calver: update to version 2025.10.20
+c8941adc2|Josef Schlehofer|Wed Oct 22 00:05:35 2025 +0200|python-cython: update to version 3.1.5
+4da621cb2|Josef Schlehofer|Wed Oct 22 02:49:54 2025 +0200|bigclown-gateway: backport pending patch to fix JSON dumps
+f2f149b56|Josef Schlehofer|Wed Oct 22 02:48:47 2025 +0200|bigclown-gateway: update to version 1.17.0
+7113624af|Josef Schlehofer|Wed Oct 22 00:40:38 2025 +0200|python-markupsafe: update to version 3.0.3
+
+.....................
+
+</details>
