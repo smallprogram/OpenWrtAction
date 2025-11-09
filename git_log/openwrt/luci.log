@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-90493e08cd|James Haggerty|Mon Apr 8 02:37:42 2024 +0000|luci-base: don't render until luci-loaded is done
+94d538c01e|Hannu Nyman|Sat Nov 8 17:29:31 2025 +0200|treewide: Backport translations - i18n
 </details>

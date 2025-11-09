@@ -2,8 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-438a589|A-BO|Fri Nov 7 22:34:11 2025 +0800|luci: update log message for dns filtering mode change
-9da08a1|lwb1978|Fri Nov 7 17:45:46 2025 +0800|luci: force dns filtering mode to match the shunt node type
-9bc1cc4|lwb1978|Fri Nov 7 11:54:31 2025 +0800|luci: fix and optimize firewall code
-9cab2cd|lwb1978|Fri Nov 7 09:17:51 2025 +0800|luci: optimize group selection dropdown on the import link page
+5c870d7|A-BO|Sun Nov 9 01:39:49 2025 +0800|luci: hide dns filter mode when using shunt node
+5546edc|A-BO|Sun Nov 9 01:08:59 2025 +0800|Revert "luci: force dns filtering mode to match the shunt node type"
+c883fa1|A-BO|Sun Nov 9 01:08:29 2025 +0800|Revert "luci: update log message for dns filtering mode change"
+dfc6fa1|A-BO|Sat Nov 8 14:54:35 2025 +0800|luci: optimize the layout of the import link window
 </details>

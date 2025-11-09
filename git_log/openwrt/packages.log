@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a2b8a064c|George Sapkin|Thu Nov 6 01:13:18 2025 +0200|sqlite3: bump to 3.51.0
-414afefa1|Dirk Brenken|Fri Nov 7 17:29:02 2025 +0100|travelmate: update 2.2.1-5
-f1248cf64|Tianling Shen|Mon Sep 22 17:17:09 2025 +0800|btop: Update to 1.4.5
+1f50c3f9a|George Sapkin|Sat Nov 8 15:59:34 2025 +0200|check-autorelease-deprecation: drop workflow
+6e96733db|Ray Wang|Wed Nov 5 21:06:26 2025 +0800|hev-socks5-server: update to 2.11.0
+eac899695|Ray Wang|Wed Nov 5 21:08:33 2025 +0800|hev-socks5-tproxy: update to 2.10.0
+84f89d13d|Ray Wang|Wed Nov 5 21:10:15 2025 +0800|hev-socks5-tunnel: update to 2.14.0
 </details>
