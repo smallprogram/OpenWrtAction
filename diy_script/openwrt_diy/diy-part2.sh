@@ -50,5 +50,9 @@ fi
 # rpcsvc-proto: fix build with autotools gettext macros 0.22
 # cp -r "$PATCHES_SRC_DIR/patches/rpcsvc-proto/*" ./feeds/packages/libs/rpcsvc-proto
 
+# inject download package
+mkdir -p dl
+cp -r $PATCHES_SRC_DIR/library/* ./dl/
+
 
 echo "DIY2 is complate!"
