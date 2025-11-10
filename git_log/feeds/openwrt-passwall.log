@@ -2,8 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5c870d7|A-BO|Sun Nov 9 01:39:49 2025 +0800|luci: hide dns filter mode when using shunt node
-5546edc|A-BO|Sun Nov 9 01:08:59 2025 +0800|Revert "luci: force dns filtering mode to match the shunt node type"
-c883fa1|A-BO|Sun Nov 9 01:08:29 2025 +0800|Revert "luci: update log message for dns filtering mode change"
-dfc6fa1|A-BO|Sat Nov 8 14:54:35 2025 +0800|luci: optimize the layout of the import link window
+23afed8|A-BO|Sun Nov 9 15:36:14 2025 +0800|Revert "luci: optimize and fix"
+5c66de4|A-BO|Sun Nov 9 15:24:53 2025 +0800|Revert "luci: restore save&apply behavior in js luci"
+401e08d|yk271|Sun Nov 9 11:35:49 2025 +0800|luci: optimize xray dns routing (#4131)
+0718775|A-BO|Sun Nov 9 11:34:47 2025 +0800|luci: restore save&apply behavior in js luci
 </details>

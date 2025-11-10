@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1625095f3|coolsnowwolf|Sat Nov 8 17:20:35 2025 +0800|uhttpd: update to Git HEAD (2025-10-03)
+3ccd9de35|Thomas Richard|Fri Nov 29 11:36:46 2024 +0100|trusted-firmware-a.mk: remove the hack
 </details>
