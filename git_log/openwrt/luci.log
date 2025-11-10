@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-94d538c01e|Hannu Nyman|Sat Nov 8 17:29:31 2025 +0200|treewide: Backport translations - i18n
+ae2aec8b25|Paul Donald|Sun Nov 9 15:04:14 2025 +0100|luci-mod-status: ES6 treatment, hide disabled radios and SSIDs
 </details>

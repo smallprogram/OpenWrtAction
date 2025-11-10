@@ -2,8 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1f50c3f9a|George Sapkin|Sat Nov 8 15:59:34 2025 +0200|check-autorelease-deprecation: drop workflow
-6e96733db|Ray Wang|Wed Nov 5 21:06:26 2025 +0800|hev-socks5-server: update to 2.11.0
-eac899695|Ray Wang|Wed Nov 5 21:08:33 2025 +0800|hev-socks5-tproxy: update to 2.10.0
-84f89d13d|Ray Wang|Wed Nov 5 21:10:15 2025 +0800|hev-socks5-tunnel: update to 2.14.0
+17114bb32|John Audia|Sun Nov 9 12:16:57 2025 +0200|tree: bump to 2.2.1
+b087edcd7|Hannu Nyman|Sun Nov 9 12:15:32 2025 +0200|nano: set nano as default EDITOR for nano-plus/full
+48f1c95d9|Russell Senior|Sun Nov 9 12:09:11 2025 +0200|patch: update to v2.8
 </details>

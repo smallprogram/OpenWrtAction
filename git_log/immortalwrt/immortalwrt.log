@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2134f087eb|Tianling Shen|Sat Nov 8 20:55:04 2025 +0800|rockchip: drop wpad-openssl for xiguapi v3
+bbe14eba18|Tianling Shen|Wed Oct 29 20:10:09 2025 +0800|kernel: drop motorcomm phy LED hack
+d6da24db8a|Tianling Shen|Sun Nov 9 21:23:56 2025 +0800|Merge Official Source
+9837ae4002|Goetz Goerisch|Wed Nov 5 12:17:27 2025 +0100|kernel: bump 6.6 to 6.6.116
+597598baa9|Goetz Goerisch|Thu Oct 30 12:42:23 2025 +0100|kernel: bump 6.6 to 6.6.115
 </details>
