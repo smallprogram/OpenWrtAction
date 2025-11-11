@@ -2,8 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bbe14eba18|Tianling Shen|Wed Oct 29 20:10:09 2025 +0800|kernel: drop motorcomm phy LED hack
-d6da24db8a|Tianling Shen|Sun Nov 9 21:23:56 2025 +0800|Merge Official Source
-9837ae4002|Goetz Goerisch|Wed Nov 5 12:17:27 2025 +0100|kernel: bump 6.6 to 6.6.116
-597598baa9|Goetz Goerisch|Thu Oct 30 12:42:23 2025 +0100|kernel: bump 6.6 to 6.6.115
+73b47a0db5|Tianling Shen|Mon Nov 10 17:32:23 2025 +0800|Merge Official Source
+a167e68c76|Tianling Shen|Thu Oct 9 21:31:22 2025 +0800|mediatek: add Konka KOMI A31 support
+d414ed185e|Luis Mita|Sat Oct 11 10:48:46 2025 -0400|ramips: mt76x8: add support for Cudy RE1200 Outdoor v1
+c3b4e8e531|Tianling Shen|Mon Sep 8 21:54:55 2025 +0800|rockchip: add Lunzn FastRhino R66S support
+32a2193a48|Tianling Shen|Mon Sep 8 21:50:33 2025 +0800|uboot-rockchip: add Fastrhino R66S support
+a902c0d020|Shiji Yang|Sat May 24 16:32:26 2025 +0800|ramips: dts: increase maximum MMC clock frequency
+43c1a0440f|Shiji Yang|Fri Jun 13 21:36:16 2025 +0800|ramips: mtk-sd: stability improvements for MIPS mt762x SoCs
+0be05cdf72|Shiji Yang|Fri Jun 13 21:05:31 2025 +0800|ramips: mtk-sd: backport Host Software Queue support
+0ed371472c|Shiji Yang|Sat May 24 16:31:07 2025 +0800|ramips: mtk-mmc: fix data timeout value
+550fa37533|Shiji Yang|Tue May 20 07:50:56 2025 +0800|ramips: dts: adjust the power regulators of MMC controller
 </details>

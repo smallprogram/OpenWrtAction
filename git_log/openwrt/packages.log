@@ -1,8 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-17114bb32|John Audia|Sun Nov 9 12:16:57 2025 +0200|tree: bump to 2.2.1
-b087edcd7|Hannu Nyman|Sun Nov 9 12:15:32 2025 +0200|nano: set nano as default EDITOR for nano-plus/full
-48f1c95d9|Russell Senior|Sun Nov 9 12:09:11 2025 +0200|patch: update to v2.8
-</details>

@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3ccd9de35|Thomas Richard|Fri Nov 29 11:36:46 2024 +0100|trusted-firmware-a.mk: remove the hack
+5ac3610aa|Daniel Golle|Sun Oct 5 03:40:27 2025 +0100|mediatek: port MT7987 thermal support
 </details>
