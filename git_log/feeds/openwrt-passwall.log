@@ -2,8 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fe9bdb2|A-BO|Tue Nov 11 02:05:17 2025 +0800|luci: fix error reading passwall remote version number
-4028f0f|A-BO|Tue Nov 11 01:26:32 2025 +0800|luci: synchronize to nodes when modifying subscription remarks (case-insensitive)
-28740dc|A-BO|Mon Nov 10 23:28:00 2025 +0800|luci: optimize and fix
-775ca57|A-BO|Mon Nov 10 20:04:04 2025 +0800|luci: optimize clear ipset/nftset logic
+973e949|zhusir|Wed Nov 12 00:56:13 2025 +0800|ci: optimize code (#4138)
+353439f|zhusir|Tue Nov 11 22:14:56 2025 +0800|ci: update code (#4137)
+a25dc67|A-BO|Tue Nov 11 21:31:25 2025 +0800|luci: optimize the code related to `group`
+b18f88d|A-BO|Tue Nov 11 20:06:26 2025 +0800|luci: fix bug in 5c870d7
 </details>

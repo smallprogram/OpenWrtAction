@@ -1,0 +1,10 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a179cd08c|Peter van Dijk|Thu Nov 6 13:13:05 2025 +0100|CI: free up some diskspace
+226682625|Tianling Shen|Sun Nov 9 21:30:01 2025 +0800|CI: speed up dependencies setup
+3787c59c8|Tianling Shen|Tue Nov 11 15:33:11 2025 +0800|Node.js: sync with upstream source
+2185f12d8|Fanx|Mon Nov 10 09:58:51 2025 +0800|smartdns: bump to Release47.1
+07cc7c7c7|Tianling Shen|Sat Oct 25 21:01:19 2025 +0800|smartdns: bump smartdns-webui to latest git HEAD
+</details>

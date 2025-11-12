@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5ac3610aa|Daniel Golle|Sun Oct 5 03:40:27 2025 +0100|mediatek: port MT7987 thermal support
+e9fd6ec3f|coolsnowwolf|Tue Nov 11 11:12:41 2025 +0800|rockchip: backport RK3576/RK3588 drm/vop2 support for 6.12
+2cac64c0b|coolsnowwolf|Tue Nov 11 11:02:16 2025 +0800|rockchip: backport pending PWMv4 support for 6.12
 </details>

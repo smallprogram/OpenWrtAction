@@ -2,22 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ae51d0098e|Christian Marangi|Mon Nov 10 18:29:44 2025 +0100|airoha: refresh kernel patches
-2d05923d2e|Christian Marangi|Mon Nov 10 18:24:16 2025 +0100|airona: an7583: fix typo for CONFIG_PHY_AIROHA_USB
-81929a31af|Christian Marangi|Tue Nov 4 20:40:15 2025 +0100|airoha: replace PWM patch with upstream version
-b3e90139ce|Christian Marangi|Wed Oct 29 15:15:53 2025 +0100|airoha: backport minor fixes for NPU handling
-dcced671e2|Lorenzo Bianconi|Sun Oct 26 17:46:42 2025 +0100|airoha: Add missing board files for EN7581
-9d218f0853|Ziyang Huang|Mon Oct 20 23:10:19 2025 +0800|airoha: adjust and default the loadaddr
-e905c45b05|Christian Marangi|Tue Oct 28 13:19:24 2025 +0100|airoha: an7581: enable USB node on eMMC RFB board
-b5a66740c2|Christian Marangi|Tue Oct 28 13:17:38 2025 +0100|airoha: an7581: correctly attach the USB2 PHY for 3rd PCIe line
-64ad16e3ed|Christian Marangi|Tue Oct 28 13:16:18 2025 +0100|airoha: an7581: add USB nodes
-9aeda89c05|Christian Marangi|Tue Oct 28 13:14:56 2025 +0100|airoha: add pending patch for USB support on AN7581
-9097d73cbb|Christian Marangi|Mon Oct 27 11:08:46 2025 +0100|airoha: add nodes for 3rd PCIe line for AN7581
-7af48fdcd3|Christian Marangi|Fri Oct 24 12:16:11 2025 +0200|airoha: backport fix for Airoha offload support with airoha_hw_init fail
-518f3c6171|Christian Marangi|Fri Oct 24 12:15:27 2025 +0200|airoha: backport cleanup patch for Airoha Ethernet driver
-9babe16bd2|Christian Marangi|Fri Oct 24 11:48:13 2025 +0200|airoha: an7581: add Aeonsemi AS21xxx PHY to RFB eMMC board
-fda425adf4|Christian Marangi|Fri Oct 24 09:49:57 2025 +0200|airoha: an7581: add BL2 and BL31+U-Boot Artifacts for RFB board
-
-.....................
-
+b01c68ddbd|Shiji Yang|Tue Nov 11 23:03:43 2025 +0200|ipq806x: migrate wifi configuration device paths for 6.12 kernel
+42ca1612a2|Shiji Yang|Tue Nov 11 23:02:22 2025 +0200|base-files: introduce a function to get kernel version number
 </details>

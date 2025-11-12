@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+eb2410f|zhusir|Wed Nov 12 01:00:12 2025 +0800|ci: update code (#902)
+b037f72|expendable-unit|Wed Nov 12 00:53:46 2025 +0800|luci: fix ssd link
+2b0a800|xiaobaishu1|Wed Nov 12 00:53:15 2025 +0800|luci: Correct the deletion translation of the node list
+cc35558|A-BO|Sat Nov 8 14:54:35 2025 +0800|luci: optimize the layout of the import link window
+</details>
