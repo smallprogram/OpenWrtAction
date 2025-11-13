@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e9fd6ec3f|coolsnowwolf|Tue Nov 11 11:12:41 2025 +0800|rockchip: backport RK3576/RK3588 drm/vop2 support for 6.12
-2cac64c0b|coolsnowwolf|Tue Nov 11 11:02:16 2025 +0800|rockchip: backport pending PWMv4 support for 6.12
+2ee2fa556|coolsnowwolf|Wed Nov 12 15:26:58 2025 +0800|airoha: add support for Bell XG-040G-MD
+ea270a1e9|coolsnowwolf|Wed Nov 12 14:34:18 2025 +0800|airoha: add support for kernel 6.12
 </details>
