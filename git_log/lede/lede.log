@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+43d8e623b|coolsnowwolf|Sun Nov 9 10:22:21 2025 +0800|kernel: add support for brcm fullcone NAT1 in fw4 ntfables
+bd72295d9|Daniel Golle|Sun Oct 5 03:39:52 2025 +0100|mediatek: import patch from SDK to support mt7987 ethernet
 2ee2fa556|coolsnowwolf|Wed Nov 12 15:26:58 2025 +0800|airoha: add support for Bell XG-040G-MD
 ea270a1e9|coolsnowwolf|Wed Nov 12 14:34:18 2025 +0800|airoha: add support for kernel 6.12
 </details>

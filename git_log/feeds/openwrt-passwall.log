@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5217e89|A-BO|Thu Nov 13 00:18:59 2025 +0800|luci: fix node list generating duplicate html elements
-0c38d21|A-BO|Wed Nov 12 22:12:45 2025 +0800|luci: node list clear expire cache data
-1d61eff|A-BO|Wed Nov 12 21:29:22 2025 +0800|luci: fix reset config
-d2e1c69|A-BO|Wed Nov 12 20:59:41 2025 +0800|luci: fix ssd link
+c67da86|xunkutech|Thu Nov 13 17:41:55 2025 +0800|luci: allow unlimited china-dns upstream servers in chinadns-ng (#4144)
+6e12d69|A-BO|Thu Nov 13 17:24:16 2025 +0800|luci: fix fakedns configuration error when smartdns is not installed
 </details>

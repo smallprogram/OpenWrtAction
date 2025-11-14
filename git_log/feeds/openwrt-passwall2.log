@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b2567a4|xiaorouji|Wed Nov 12 21:29:46 2025 +0800|luci: node list clear expire cache data
-1d73b02|xiaorouji|Wed Nov 12 20:54:02 2025 +0800|luci: fix reset config
+6fc5d72|xiaorouji|Fri Nov 14 01:08:03 2025 +0800|luci: 25.11.14
+ac5ff30|xiaorouji|Fri Nov 14 00:53:22 2025 +0800|luci: i18n: add zh-tw (zh_Hant)
+c9ff003|xiaorouji|Wed Nov 12 23:37:12 2025 +0800|luci: i18n
+8927969|A-BO|Thu Nov 13 00:18:59 2025 +0800|luci: fix node list generating duplicate html elements
 </details>

@@ -1,0 +1,6 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b692039a|coolsnowwolf|Thu Nov 13 10:34:24 2025 +0800|luci-app-firewall: enable nat1 option High Performing Mode in fw4
+</details>

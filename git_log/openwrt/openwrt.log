@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-58cde9ec22|George Tsiamasiotis|Tue Sep 23 23:11:19 2025 +0300|scripts/patch-kernel.sh: do not try to check files after patch
-dddeea5e7f|Ernestas Kulik|Wed Nov 12 10:16:30 2025 +0200|scripts: feeds: Don’t hardcode IS_TTY
-d804c3110b|Christian Marangi|Mon Nov 10 19:27:11 2025 +0100|airoha: backport patch fixing out of order DMA for ethernet driver
-</details>
