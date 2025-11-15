@@ -2,8 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6fc5d72|xiaorouji|Fri Nov 14 01:08:03 2025 +0800|luci: 25.11.14
-ac5ff30|xiaorouji|Fri Nov 14 00:53:22 2025 +0800|luci: i18n: add zh-tw (zh_Hant)
-c9ff003|xiaorouji|Wed Nov 12 23:37:12 2025 +0800|luci: i18n
-8927969|A-BO|Thu Nov 13 00:18:59 2025 +0800|luci: fix node list generating duplicate html elements
+39e2bd1|A-BO|Tue Nov 11 21:31:25 2025 +0800|luci: optimize the code related to `group`
+4f544b3|A-BO|Tue Nov 11 02:05:17 2025 +0800|luci: fix error reading luci remote version number
+27b4e7c|A-BO|Tue Nov 11 01:26:32 2025 +0800|luci: synchronize to nodes when modifying subscription remarks (case-insensitive)
+8e9c46f|xiaorouji|Fri Nov 14 14:45:56 2025 +0800|luci: optimize
+eede134|zhusir|Fri Nov 14 16:24:52 2025 +0800|ci: optimize code  Update feeds to github source  Fixed the timeout issue in the official OP feeds
 </details>

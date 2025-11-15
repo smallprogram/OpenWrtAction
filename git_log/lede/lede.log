@@ -2,8 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-43d8e623b|coolsnowwolf|Sun Nov 9 10:22:21 2025 +0800|kernel: add support for brcm fullcone NAT1 in fw4 ntfables
-bd72295d9|Daniel Golle|Sun Oct 5 03:39:52 2025 +0100|mediatek: import patch from SDK to support mt7987 ethernet
-2ee2fa556|coolsnowwolf|Wed Nov 12 15:26:58 2025 +0800|airoha: add support for Bell XG-040G-MD
-ea270a1e9|coolsnowwolf|Wed Nov 12 14:34:18 2025 +0800|airoha: add support for kernel 6.12
+1c332d926|coolsnowwolf|Fri Nov 14 19:04:08 2025 +0800|uboot-rk35xx: disabe optee build for rk35xx by default
+4f1774d9f|coolsnowwolf|Fri Nov 14 17:02:57 2025 +0800|kernel: bump 6.x to latest HEAD
+3bd4d058c|coolsnowwolf|Fri Nov 14 16:51:34 2025 +0800|rockchip: add support for Radxa ROCK 5C/5C Lite
+78cb88425|coolsnowwolf|Fri Nov 14 16:33:22 2025 +0800|rockchip: add support for Radxa ZERO 3E and 3W
+1272fcdf5|coolsnowwolf|Fri Nov 14 16:07:14 2025 +0800|ustream-ssl: update to Git HEAD (2025-10-03)
+de2ce72a8|coolsnowwolf|Fri Nov 14 15:52:41 2025 +0800|generic: fix bcm fullconenat for nft support in linux 5.x
+b6184adf7|Xiaok|Fri Nov 14 15:29:16 2025 +0800|hostapd: fix compile against mbedtsl 3.6 (#13804)
 </details>

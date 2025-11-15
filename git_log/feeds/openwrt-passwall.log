@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c67da86|xunkutech|Thu Nov 13 17:41:55 2025 +0800|luci: allow unlimited china-dns upstream servers in chinadns-ng (#4144)
-6e12d69|A-BO|Thu Nov 13 17:24:16 2025 +0800|luci: fix fakedns configuration error when smartdns is not installed
+7a6e877|A-BO|Fri Nov 14 17:19:52 2025 +0800|luci: optimize `rule update` domain matching
+c8b6389|zhusir|Fri Nov 14 16:23:17 2025 +0800|ci: optimize code  Update feeds to github source  Fixed the timeout issue in the official OP feeds
+ec04123|A-BO|Fri Nov 14 11:44:41 2025 +0800|luci: bump to 25.11.14
 </details>
