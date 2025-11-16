@@ -1,7 +1,6 @@
-<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
 SHA|Author|Date|Message
 -|-|-|-
-8a7196a858|Tianling Shen|Sat Nov 15 22:23:54 2025 +0800|Merge Official Source
 4d1c1d7754|Álvaro Fernández Rojas|Fri Nov 14 23:02:27 2025 +0100|odhcpd: backport memleak fix from Git HEAD
 </details>

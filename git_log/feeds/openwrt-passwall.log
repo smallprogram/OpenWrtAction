@@ -2,7 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7a6e877|A-BO|Fri Nov 14 17:19:52 2025 +0800|luci: optimize `rule update` domain matching
-c8b6389|zhusir|Fri Nov 14 16:23:17 2025 +0800|ci: optimize code  Update feeds to github source  Fixed the timeout issue in the official OP feeds
-ec04123|A-BO|Fri Nov 14 11:44:41 2025 +0800|luci: bump to 25.11.14
+919a5db|A-BO|Sun Nov 16 02:00:00 2025 +0800|luci: add "select all" reset on tab switch for non-js luci node list
+2a90d92|A-BO|Sun Nov 16 01:08:26 2025 +0800|luci: update dns mode when shunt node is set
+97d69ab|A-BO|Sat Nov 15 21:04:36 2025 +0800|luci: bump to 25.11.15
+4a81514|A-BO|Sat Nov 15 20:58:39 2025 +0800|luci: fix the depends logic between nodes and dns mode
+62fa30b|A-BO|Sat Nov 15 12:44:44 2025 +0800|luci: fix some issues with `app update`
+5b393d6|A-BO|Sat Nov 15 11:33:25 2025 +0800|luci: optimize the logic when editing subscription remark
 </details>
