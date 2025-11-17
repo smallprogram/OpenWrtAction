@@ -1,9 +1,0 @@
-<details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-537c9e8|zxl hhyccc|Sun Nov 16 23:39:43 2025 +0800|Merge pull request #1824 from zxlhhyccc/tuic
-27a1ac6|zxlhhyccc|Sun Nov 16 21:47:33 2025 +0800|luci-app-ssr-plus: Fix nftables fw4 support typo erro and optimized code.
-3ccd511|zxl hhyccc|Sun Nov 16 10:52:00 2025 +0800|Merge pull request #1822 from zxlhhyccc/tuic
-e7385f6|zxlhhyccc|Wed Nov 12 13:16:38 2025 +0800|luci-app-ssr-plus: Full fix nftables fw4 support.
-</details>

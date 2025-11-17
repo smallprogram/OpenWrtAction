@@ -1,6 +1,0 @@
-<details> <summary> <b>lede new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-e4878919b|Daniel Golle|Sun Oct 5 01:10:54 2025 +0100|mediatek: add basic support for MT7987 SoC
-</details>
