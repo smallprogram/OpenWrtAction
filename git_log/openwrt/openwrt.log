@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-4d1c1d7754|Álvaro Fernández Rojas|Fri Nov 14 23:02:27 2025 +0100|odhcpd: backport memleak fix from Git HEAD
-</details>

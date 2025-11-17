@@ -2,10 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-919a5db|A-BO|Sun Nov 16 02:00:00 2025 +0800|luci: add "select all" reset on tab switch for non-js luci node list
-2a90d92|A-BO|Sun Nov 16 01:08:26 2025 +0800|luci: update dns mode when shunt node is set
-97d69ab|A-BO|Sat Nov 15 21:04:36 2025 +0800|luci: bump to 25.11.15
-4a81514|A-BO|Sat Nov 15 20:58:39 2025 +0800|luci: fix the depends logic between nodes and dns mode
-62fa30b|A-BO|Sat Nov 15 12:44:44 2025 +0800|luci: fix some issues with `app update`
-5b393d6|A-BO|Sat Nov 15 11:33:25 2025 +0800|luci: optimize the logic when editing subscription remark
+17eb46d|A-BO|Sun Nov 16 22:33:31 2025 +0800|luci: update default rules
+fb2c736|A-BO|Sun Nov 16 20:47:35 2025 +0800|luci: fix haproxy status
+8ed3e90|A-BO|Sun Nov 16 20:30:38 2025 +0800|luci: optimize
+646cddf|A-BO|Sun Nov 16 19:50:04 2025 +0800|luci: improve node list ui and toolbar styling
 </details>

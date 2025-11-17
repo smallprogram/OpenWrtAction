@@ -2,10 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b04f450f2|FUKAUMI Naoki|Tue Sep 9 02:02:46 2025 +0000|rockchip: add support for Radxa ROCK 5C/Lite
-08b4a9993|FUKAUMI Naoki|Tue Aug 27 10:09:21 2024 +0900|rockchip: add support for Radxa ZERO 3E / 3W
-1c332d926|coolsnowwolf|Fri Nov 14 19:04:08 2025 +0800|uboot-rk35xx: disabe optee build for rk35xx by default
-4f1774d9f|coolsnowwolf|Fri Nov 14 17:02:57 2025 +0800|kernel: bump 6.x to latest HEAD
-3bd4d058c|coolsnowwolf|Fri Nov 14 16:51:34 2025 +0800|rockchip: add support for Radxa ROCK 5C/5C Lite
-78cb88425|coolsnowwolf|Fri Nov 14 16:33:22 2025 +0800|rockchip: add support for Radxa ZERO 3E and 3W
+e4878919b|Daniel Golle|Sun Oct 5 01:10:54 2025 +0100|mediatek: add basic support for MT7987 SoC
 </details>

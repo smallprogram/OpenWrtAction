@@ -1,0 +1,13 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a29cdf2|A-BO|Sun Nov 16 19:50:04 2025 +0800|luci: improve node list ui and toolbar styling
+072374b|lwb1978|Mon Nov 10 10:19:31 2025 +0800|luci: optimize clear ipset/nftset logic
+aa2bd51|xiaorouji|Sun Nov 16 19:38:49 2025 +0800|luci: shunt rule add `invert` option for Sing-Box
+146d7cc|A-BO|Sun Nov 16 02:00:00 2025 +0800|luci: add "select all" reset on tab switch for non-js luci node list
+9173657|A-BO|Sat Nov 15 12:44:44 2025 +0800|luci: fix some issues with `app update`
+ce991e1|A-BO|Sat Nov 15 11:33:25 2025 +0800|luci: optimize the logic when editing subscription remark
+875d2de|xiaorouji|Sun Nov 16 18:35:13 2025 +0800|luci: fix haproxy status
+83be68b|xiaorouji|Sun Nov 16 19:09:45 2025 +0800|luci: optimize
+</details>
