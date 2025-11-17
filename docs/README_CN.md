@@ -142,11 +142,14 @@ CONFIG_PACKAGE_luci-app-arpbind=y
 ### 🎨 UI 主题与界面
 ```
 CONFIG_PACKAGE_luci-theme-argon=y
+CONFIG_PACKAGE_luci-app-argon-config=y
+CONFIG_PACKAGE_luci-theme-kucat=y
+CONFIG_PACKAGE_luci-app-kucat-config=y
+CONFIG_PACKAGE_luci-theme-aurora=y
 CONFIG_PACKAGE_luci-theme-bootstrap=y
 CONFIG_PACKAGE_luci-theme-material=y
 CONFIG_PACKAGE_luci-theme-openwrt=y
 CONFIG_PACKAGE_luci-theme-openwrt-2020=y
-CONFIG_PACKAGE_luci-app-argon-config=y
 ```
 ---
 

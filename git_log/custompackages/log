@@ -1,5 +1,8 @@
 luci-theme-argon:64d83a1f69300c4644334020a80f864d2a63c9dc
 luci-app-argon-config:e043d863574e8f2e77f2b4d8a0d92698e05f77c5
+luci-theme-kucat:e97cc5c67b42a70f9394b3bb980b44dc867948d1
+luci-app-kucat-config:ffea60e0f7e09d943b2b38f58406b711e7df3759
+luci-theme-aurora:ffc0b7f7687f59b969f682701a9b185590d1585c
 luci-app-adguardhome:37fdf502b99328b37c9ef4c4387f069f67253f85
 luci-app-mosdns:71df20dacdb3092dcfca75904d6b9642368896a3
 luci-app-netspeedtest:80e8e30aa6e79be5518fb2c9da4e0ea684062588

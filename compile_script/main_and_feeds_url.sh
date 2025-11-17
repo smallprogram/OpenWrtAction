@@ -19,6 +19,9 @@ declare -a feeds_REPO_URLS=(
 declare -a custompackages_REPO_URLS=(
     https://github.com/jerrykuku/luci-theme-argon
     https://github.com/jerrykuku/luci-app-argon-config
+    https://github.com/sirpdboy/luci-theme-kucat
+    https://github.com/sirpdboy/luci-app-kucat-config
+    https://github.com/eamonxg/luci-theme-aurora
     https://github.com/rufengsuixing/luci-app-adguardhome
     https://github.com/sbwml/luci-app-mosdns
     https://github.com/sirpdboy/luci-app-netspeedtest
