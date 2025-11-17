@@ -1,7 +1,7 @@
 #!/bin/bash
 source $GITHUB_WORKSPACE/compile_script/main_and_feeds_url.sh
 release_tag=$1
-git_folders=(openwrt immortalwrt lede feeds)
+git_folders=(openwrt immortalwrt lede feeds custompackages)
 
 cd $GITHUB_WORKSPACE
 
@@ -47,7 +47,13 @@ for git_folder in "${git_folders[@]}"; do
         echo "">>release.txt
         echo "### common $git_folder" >>release.txt
         echo "">>release.txt
-    else
+    fi
+    if [[ "$git_folder" == "custompackages" ]]; then
+        echo "">>release.txt
+        echo "### custom packages" >>release.txt
+        echo "">>release.txt
+    fi
+    if [[ "$git_folder" == "openwrt" || "$git_folder" == "immortalwrt" || "$git_folder" == "lede" ]]; then
         echo "">>release.txt
         echo "### $git_folder" >>release.txt
         echo "">>release.txt

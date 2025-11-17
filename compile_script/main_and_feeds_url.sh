@@ -6,7 +6,7 @@ source $GITHUB_WORKSPACE/compile_script/platforms.sh
 declare -a openwrt_REPO_URLS=()
 declare -a immortalwrt_REPO_URLS=()
 declare -a lede_REPO_URLS=()
-declare -a all_REPO_URLS=()
+declare -a all_REPO_URLS=()  # 汇总所有仓库URL,用于updatecheacker.sh
 declare -a feeds_REPO_URLS=(
     "https://github.com/fw876/helloworld"
     "https://github.com/xiaorouji/openwrt-passwall-packages"
@@ -14,6 +14,17 @@ declare -a feeds_REPO_URLS=(
     "https://github.com/xiaorouji/openwrt-passwall2"
     "https://github.com/vernesong/OpenClash"
     "https://github.com/nikkinikki-org/OpenWrt-nikki"
+)
+
+declare -a custompackages_REPO_URLS=(
+    https://github.com/jerrykuku/luci-theme-argon
+    https://github.com/jerrykuku/luci-app-argon-config
+    https://github.com/rufengsuixing/luci-app-adguardhome
+    https://github.com/sbwml/luci-app-mosdns
+    https://github.com/sirpdboy/luci-app-netspeedtest
+    https://github.com/timsaya/openwrt-bandix
+    https://github.com/timsaya/luci-app-bandix
+    https://github.com/destan19/OpenAppFilter
 )
 
 # 处理仓库函数
