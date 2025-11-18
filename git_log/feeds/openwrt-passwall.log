@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+e4da6b4|A-BO|Mon Nov 17 22:47:43 2025 +0800|luci: add udp remote dns support for xray/sing-box
+</details>
