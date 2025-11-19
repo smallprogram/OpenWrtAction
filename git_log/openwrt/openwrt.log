@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+dbc2b142ce|Pawel Dembicki|Wed Nov 12 22:33:24 2025 +0100|mac80211: mwl8k: inject DSSS Parameter Set element into beacons if missing
+</details>

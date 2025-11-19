@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5a049a4|Eamon|Sun Nov 16 12:53:02 2025 +0800|fix: refine layout and visual adjustments
+4a40805|Eamon|Wed Nov 19 00:26:40 2025 +0800|fix: correct background colors in dark mode
+93620cb|Eamon|Tue Nov 18 21:27:47 2025 +0800|fix: elevate overlay and refine menu hover background
 </details>

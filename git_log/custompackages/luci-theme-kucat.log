@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-de2173b|Pdboy Sir|Mon Nov 17 22:06:03 2025 +0800|Enhance README_CN with installation and project info
-034da83|Pdboy Sir|Mon Nov 17 21:18:40 2025 +0800|Update README with LuCI 18.06 installation steps
-57bb32b|Pdboy Sir|Mon Nov 17 21:17:10 2025 +0800|Update README with installation instructions
-a6d51df|Pdboy Sir|Mon Nov 17 21:07:52 2025 +0800|Update README with build instructions for OpenWrt
-2b54c0d|Pdboy Sir|Mon Nov 17 20:47:41 2025 +0800|Enhance README with KuCat Theme information
+48af156|Pdboy Sir|Wed Nov 19 01:28:06 2025 +0800|Fix CSS causing no menu bar on the phone
 </details>
