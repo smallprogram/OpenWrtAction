@@ -1,0 +1,6 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+641a93064e|Paul Donald|Wed Nov 12 16:59:39 2025 +0100|luci-mod-status: hide disabled interfaces and show SSIDs
+</details>

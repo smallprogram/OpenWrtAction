@@ -2,5 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dbc2b142ce|Pawel Dembicki|Wed Nov 12 22:33:24 2025 +0100|mac80211: mwl8k: inject DSSS Parameter Set element into beacons if missing
+444299d70c|Felix Fietkau|Mon Oct 13 13:03:48 2025 +0200|kernel: backport mediatek WED DMA mask fixes
+6c5c8598ab|Lorenzo Bianconi|Sun Nov 16 15:17:32 2025 +0100|mt76: Enable NPU support for Airoha AN7581 SoC
+59b4c9e114|Felix Fietkau|Thu Nov 6 11:36:14 2025 +0000|mt76: update to Git HEAD (2025-11-06)
+2b3f8c0d4c|Felix Fietkau|Mon Oct 20 16:10:08 2025 +0200|mt76: update to Git HEAD (2025-10-20)
+84927ebac6|Christian Marangi|Fri Oct 3 23:59:44 2025 +0200|mt76: update to Git HEAD (2025-10-03)
 </details>

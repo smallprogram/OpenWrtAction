@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4a40805|Eamon|Wed Nov 19 00:26:40 2025 +0800|fix: correct background colors in dark mode
-93620cb|Eamon|Tue Nov 18 21:27:47 2025 +0800|fix: elevate overlay and refine menu hover background
+1e1aa57|Eamon|Thu Nov 20 00:00:12 2025 +0800|fix: vertically center alert-message modal
+1c20480|Eamon|Wed Nov 19 11:55:36 2025 +0800|fix: resolve jitter issue on top menu hover (#23)
 </details>
