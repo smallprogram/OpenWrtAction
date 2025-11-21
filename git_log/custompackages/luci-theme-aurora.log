@@ -1,7 +1,0 @@
-<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-1e1aa57|Eamon|Thu Nov 20 00:00:12 2025 +0800|fix: vertically center alert-message modal
-1c20480|Eamon|Wed Nov 19 11:55:36 2025 +0800|fix: resolve jitter issue on top menu hover (#23)
-</details>

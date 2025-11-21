@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-174ada1|A-BO|Wed Nov 19 10:43:34 2025 +0800|luci: synchronize the passwall2 `uci_get_type` function
+03d0be5|A-BO|Thu Nov 20 23:19:04 2025 +0800|luci: add the `pinnedPeerCertificateChainSha256` configuration for xray
 </details>
