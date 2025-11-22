@@ -1,0 +1,23 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+4239dc05c|Tianling Shen|Fri Nov 21 18:33:33 2025 +0800|Merge Official Source
+ea7cdeb0b|Eric Fahlgren|Sun Nov 16 20:15:55 2025 -0800|owut: update to 2025.11.16
+e61d672e7|Dirk Brenken|Fri Nov 14 22:00:14 2025 +0100|travelmate: update 2.2.1-6
+89c5d7ac7|Hannu Nyman|Thu Nov 13 18:01:20 2025 +0200|nano: update to version 8.7
+07ffd2963|Wesley Gimenes|Wed Nov 5 16:36:58 2025 -0300|netbird: update to 0.59.12
+c124a7b3e|Wesley Gimenes|Fri Sep 26 13:29:25 2025 -0300|netbird: update to 0.58.2
+6da91701c|Wesley Gimenes|Mon Sep 15 21:48:12 2025 -0300|netbird: update to 0.57.1
+ec5eaa46e|Wesley Gimenes|Sun Aug 10 22:19:57 2025 -0300|netbird: update to 0.55.1
+391931477|Wesley Gimenes|Wed Aug 6 16:51:56 2025 -0300|netbird: update to 0.53.0 with config fix
+7f9af2c24|Wesley Gimenes|Tue Aug 5 10:10:21 2025 -0300|netbird: update to 0.52.2
+8abcf5b20|Wesley Gimenes|Tue Jul 22 09:17:43 2025 -0300|netbird: update to 0.51.2
+17114bb32|John Audia|Sun Nov 9 12:16:57 2025 +0200|tree: bump to 2.2.1
+b087edcd7|Hannu Nyman|Sun Nov 9 12:15:32 2025 +0200|nano: set nano as default EDITOR for nano-plus/full
+48f1c95d9|Russell Senior|Sun Nov 9 12:09:11 2025 +0200|patch: update to v2.8
+1f50c3f9a|George Sapkin|Sat Nov 8 15:59:34 2025 +0200|check-autorelease-deprecation: drop workflow
+
+.....................
+
+</details>

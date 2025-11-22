@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-03d0be5|A-BO|Thu Nov 20 23:19:04 2025 +0800|luci: add the `pinnedPeerCertificateChainSha256` configuration for xray
-</details>
