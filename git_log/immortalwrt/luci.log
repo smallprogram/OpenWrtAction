@@ -1,9 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-e55a026de0|Tianling Shen|Fri Nov 21 18:49:11 2025 +0800|Merge Official Source
-641a93064e|Paul Donald|Wed Nov 12 16:59:39 2025 +0100|luci-mod-status: hide disabled interfaces and show SSIDs
-76ce5ef526|Eric Fahlgren|Sat Nov 15 14:08:11 2025 -0800|luci-app-attendedsysupgrade: rework logic in check-for-new-firmware
-531020c8c4|Dirk Brenken|Fri Nov 14 22:03:43 2025 +0100|luci-app-travelmate: sync with travelmate update 2.2.1-6
-</details>

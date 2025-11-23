@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+7eeb2eb|A-BO|Sun Nov 23 00:18:10 2025 +0800|luci: optimize `rule_update` (test)
+702e436|xunkutech|Sat Nov 22 20:49:35 2025 +0800|luci: add `rr_ttl_reply_max` configuration to helper_smartdns (#4162)
+</details>
