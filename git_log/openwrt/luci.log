@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-461e369164|Hannu Nyman|Sat Nov 22 08:44:41 2025 +0200|treewide: Backport and sync translations
+2aa9bb3794|Dirk Brenken|Sun Nov 23 23:10:17 2025 +0100|luci-app-travelmate: ACL fix
 </details>

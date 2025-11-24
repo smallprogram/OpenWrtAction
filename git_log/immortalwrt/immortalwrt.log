@@ -1,0 +1,9 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+152f1fa92f|Tianling Shen|Sun Nov 23 23:20:55 2025 +0800|rockchip: remove unsupported CAN for 9Tripod X3568 v4
+fa35a3586e|Tianling Shen|Sun Nov 23 23:02:39 2025 +0800|rockchip: reload-sdio-wifi: delay 120s for 9tripod x3568-v4
+079cb07bad|Tianling Shen|Sun Nov 23 20:14:02 2025 +0800|rockchip: refresh upstreamed patches
+1ab1673689|Tianling Shen|Sat Nov 15 20:42:34 2025 +0800|rockchip: backport upstreamed dts for 9Tripod X3568 v4
+</details>

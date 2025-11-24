@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+443fc11576|Christian Marangi|Sat Nov 22 10:01:55 2025 +0100|package: drop creating spurious tmp directory in feed directory
+</details>
