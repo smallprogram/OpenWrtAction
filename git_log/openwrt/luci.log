@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2aa9bb3794|Dirk Brenken|Sun Nov 23 23:10:17 2025 +0100|luci-app-travelmate: ACL fix
+28816ce134|Sergey Ponomarev|Sun Feb 23 00:17:19 2025 +0200|luci-proto-vxlan: fix option name: vxlan_peers to vxlan_peer
 </details>

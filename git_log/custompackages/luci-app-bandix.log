@@ -1,8 +1,0 @@
-<details> <summary> <b>luci-app-bandix new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-3e6a9d1|stefanlei|Sun Nov 23 21:11:37 2025 +0800|Release v0.8.3
-27f6731|stefanlei|Sun Nov 23 21:10:34 2025 +0800|feat: Add mobile-responsive card layouts and refresh button loading states
-32b02f4|stefanlei|Sun Nov 23 16:56:00 2025 +0800|feat: Add query type filter to DNS monitoring page
-</details>

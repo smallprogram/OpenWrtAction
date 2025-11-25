@@ -1,9 +1,0 @@
-<details> <summary> <b>luci-theme-kucat new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-87d81ec|Pdboy Sir|Sun Nov 23 18:57:02 2025 +0800|Merge pull request #46 from ntbowen/master
-618cb59|ntbowen|Sun Nov 23 14:49:08 2025 +0800|增强多WAN场景壁纸和每日一言下载
-0004bb2|ntbowen|Sun Nov 23 14:48:35 2025 +0800|增强多WAN场景壁纸和每日一言下载
-24f340c|Pdboy Sir|Sun Nov 23 10:58:42 2025 +0800|up kucat v3.1.3 fix network and other view
-</details>
