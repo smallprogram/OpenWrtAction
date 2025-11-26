@@ -1,6 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-28816ce134|Sergey Ponomarev|Sun Feb 23 00:17:19 2025 +0200|luci-proto-vxlan: fix option name: vxlan_peers to vxlan_peer
-</details>

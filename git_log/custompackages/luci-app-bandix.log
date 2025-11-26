@@ -1,0 +1,8 @@
+<details> <summary> <b>luci-app-bandix new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+35042bd|stefanlei|Tue Nov 25 19:41:50 2025 +0800|chore: bump version to 0.9.0
+3936785|stefanlei|Tue Nov 25 19:25:57 2025 +0800|perf: increase polling frequency for real-time data updates
+8eacd1a|stefanlei|Tue Nov 25 19:20:51 2025 +0800|feat: add scheduled rate limit rules feature
+</details>

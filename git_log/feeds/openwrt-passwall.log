@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+3372502|A-BO|Wed Nov 26 02:13:53 2025 +0800|luci: restore node list reordering function
+</details>
