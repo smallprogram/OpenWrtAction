@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3372502|A-BO|Wed Nov 26 02:13:53 2025 +0800|luci: restore node list reordering function
+ee22772|A-BO|Thu Nov 27 02:11:39 2025 +0800|luci: fix the conflict between ssr node configuration items and group
+5dfe5c7|A-BO|Thu Nov 27 01:16:18 2025 +0800|luci: add drag to reorder functionality to the node list
 </details>

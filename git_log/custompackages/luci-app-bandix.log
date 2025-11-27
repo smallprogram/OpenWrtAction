@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-35042bd|stefanlei|Tue Nov 25 19:41:50 2025 +0800|chore: bump version to 0.9.0
-3936785|stefanlei|Tue Nov 25 19:25:57 2025 +0800|perf: increase polling frequency for real-time data updates
-8eacd1a|stefanlei|Tue Nov 25 19:20:51 2025 +0800|feat: add scheduled rate limit rules feature
+bfe8cb9|stefanlei|Wed Nov 26 08:38:44 2025 +0800|Bump version to 0.9.1
+7d8bf27|stefanlei|Wed Nov 26 08:37:59 2025 +0800|优化 Schedule Rules 字段显示和交互
 </details>
