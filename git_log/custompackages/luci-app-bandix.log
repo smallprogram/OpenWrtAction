@@ -1,7 +1,0 @@
-<details> <summary> <b>luci-app-bandix new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-bfe8cb9|stefanlei|Wed Nov 26 08:38:44 2025 +0800|Bump version to 0.9.1
-7d8bf27|stefanlei|Wed Nov 26 08:37:59 2025 +0800|优化 Schedule Rules 字段显示和交互
-</details>

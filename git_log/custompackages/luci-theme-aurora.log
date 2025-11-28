@@ -1,0 +1,7 @@
+<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d276fd3|Eamon|Fri Nov 28 03:21:11 2025 +0800|fix: resolve table overflow in Mount Points (#24)
+bd6a7cf|Eamon Xiong|Fri Nov 28 02:58:45 2025 +0800|feat: introduce abstract custom variables for theme palette
+</details>

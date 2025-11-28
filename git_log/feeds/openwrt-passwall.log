@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ee22772|A-BO|Thu Nov 27 02:11:39 2025 +0800|luci: fix the conflict between ssr node configuration items and group
-5dfe5c7|A-BO|Thu Nov 27 01:16:18 2025 +0800|luci: add drag to reorder functionality to the node list
+fcec583|A-BO|Thu Nov 27 18:32:48 2025 +0800|luci: optimize node list ui styling
+a871703|A-BO|Thu Nov 27 17:21:08 2025 +0800|luci: optimize the save logic for xray xhttp extra
+8fd8f9d|A-BO|Thu Nov 27 12:43:47 2025 +0800|luci: bump version to 25.11.27
 </details>

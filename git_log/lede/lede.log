@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-67e6fda28|Scott Mercer|Wed Nov 5 11:21:32 2025 -0500|gl-b3000: fix dts macs
+21d3d4b83|Patrick Oppenlander|Thu Oct 9 13:35:21 2025 +1100|x86/64: enable 8250_DW
 </details>
