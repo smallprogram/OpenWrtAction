@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fcec583|A-BO|Thu Nov 27 18:32:48 2025 +0800|luci: optimize node list ui styling
-a871703|A-BO|Thu Nov 27 17:21:08 2025 +0800|luci: optimize the save logic for xray xhttp extra
-8fd8f9d|A-BO|Thu Nov 27 12:43:47 2025 +0800|luci: bump version to 25.11.27
+31e8be3|lwb1978|Fri Nov 28 20:24:33 2025 +0800|luci: optimize the log display logic
+c9e6151|A-BO|Fri Nov 28 09:28:22 2025 +0800|luci: optimize and fix subscribe
 </details>

@@ -2,5 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-648fa1b6d3|Goetz Goerisch|Tue Nov 25 07:53:40 2025 +0100|kernel: bump 6.6 to 6.6.117
+913e26b20f|Qing W.|Sun Nov 23 01:33:52 2025 -0500|mediatek: add support for WAVLINK WL-WN536AX6 Rev a
+c6e59d06af|Luis Mita|Wed Oct 1 18:42:58 2025 -0400|ramips: mt7621: add support for Cudy AP1300 Outdoor v1
+9f8c60c2c8|Donghyun Ko|Sun Nov 23 19:01:21 2025 +0900|mediatek: use dt-bindings drive strength macros for ipTIME AX7800M-6E
+ea96f50747|Donghyun Ko|Fri Aug 1 15:01:07 2025 +0900|mediatek: add support for ipTIME AX7800M-6E
+51108508f1|Michal Halva|Sat Aug 2 20:46:14 2025 +0200|mediatek: filogic: add support for Cudy WR3000P v1
+414f196a96|Liangbin Lian|Thu Nov 13 15:26:03 2025 +0800|rockchip: LinkEase EasePi R1 use dedicated uboot
+9c25d39d3e|Liangbin Lian|Thu Nov 13 15:17:57 2025 +0800|uboot-rockchip: add dedicated uboot for LinkEase EasePi R1
+fbaf5271d2|Liangbin Lian|Fri Nov 14 14:06:10 2025 +0800|rockchip: make NIC name predictable for LinkEase EasePi R1
+c795a91579|Liangbin Lian|Wed Sep 24 20:08:13 2025 +0800|rockchip: Add support for RK3568 LinkEase EasePi R1
+e35f37791f|Liangbin Lian|Wed Sep 24 19:49:26 2025 +0800|uboot-rockchip: add support for LinkEase EasePi R1
+804a2e6c51|Hauke Mehrtens|Thu Nov 27 22:27:55 2025 +0100|uboot-mediatek: mtd: spinand: esmt: add support for F50L1G41LC
+6ff763e78c|Hauke Mehrtens|Thu Nov 27 21:13:04 2025 +0100|kernel: mtd: spinand: esmt: add support for F50L1G41LC
 </details>
