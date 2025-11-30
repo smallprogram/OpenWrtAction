@@ -1,6 +1,0 @@
-<details> <summary> <b>luci-app-bandix new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-d7073cd|stefanlei|Fri Nov 28 21:32:52 2025 +0800|feat: display total rule count even when no active rules
-</details>

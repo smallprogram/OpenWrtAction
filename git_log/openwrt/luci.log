@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+f8d85b4b89|Stan Grishin|Sat Nov 29 15:28:01 2025 -0800|Merge pull request #8125 from stangri/openwrt-24.10-luci-app-https-dns-proxy
+6001263842|Stan Grishin|Fri Nov 28 23:40:07 2025 +0000|luci-app-https-dns-proxy: bugfix: rename options in luci app
+</details>

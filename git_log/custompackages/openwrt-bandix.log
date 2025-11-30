@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-bandix new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-a4c8d9e|stefanlei|Fri Nov 28 23:12:13 2025 +0800|Improve config file handling to preserve user modifications
-</details>

@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-31e8be3|lwb1978|Fri Nov 28 20:24:33 2025 +0800|luci: optimize the log display logic
-c9e6151|A-BO|Fri Nov 28 09:28:22 2025 +0800|luci: optimize and fix subscribe
+f52968e|A-BO|Sat Nov 29 16:04:46 2025 +0800|luci: optimize
+eb7d210|A-BO|Sat Nov 29 14:43:29 2025 +0800|luci: optimize the server log display logic
 </details>

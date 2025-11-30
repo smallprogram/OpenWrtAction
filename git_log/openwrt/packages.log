@@ -1,0 +1,6 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0f24c4daf|Rosen Penev|Thu Nov 14 14:23:50 2024 -0800|httping: fix compilation with full NLS
+</details>
