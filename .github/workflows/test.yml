@@ -455,15 +455,31 @@ jobs:
               if [ -f "$GITHUB_WORKSPACE/toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}/toolchain_cache.tar.gz" ]; then
                 echo "Extracting cached toolchain..."
                 
-                # Remove old directories to avoid conflicts
-                echo "Removing old staging_dir and build_dir..."
-                rm -rf /workdir/openwrt/staging_dir /workdir/openwrt/build_dir
+                cache_file="$GITHUB_WORKSPACE/toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}/toolchain_cache.tar.gz"
+                echo "Cache file size: $(du -h "$cache_file" | cut -f1)"
                 
-                # Extract cache
-                cd /workdir/openwrt
-                tar -xzf "$GITHUB_WORKSPACE/toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}/toolchain_cache.tar.gz"
-                echo "Cached toolchain extracted successfully"
-                ls -lh staging_dir/ build_dir/ 2>/dev/null || echo "Directories extracted"
+                # Test archive integrity
+                echo "Testing archive integrity..."
+                if gzip -t "$cache_file" 2>/dev/null; then
+                  echo "✓ Archive integrity verified"
+                  
+                  # Remove old directories to avoid conflicts
+                  echo "Removing old staging_dir and build_dir..."
+                  rm -rf /workdir/openwrt/staging_dir /workdir/openwrt/build_dir
+                  
+                  # Extract cache
+                  cd /workdir/openwrt
+                  if tar -xzf "$cache_file"; then
+                    echo "Cached toolchain extracted successfully"
+                    ls -lh staging_dir/ build_dir/ 2>/dev/null || echo "Directories extracted"
+                  else
+                    echo "✗ Failed to extract cache, will compile from scratch"
+                    cache_valid="false"
+                  fi
+                else
+                  echo "✗ Cache file is corrupted, will compile from scratch"
+                  cache_valid="false"
+                fi
               else
                 echo "⚠ Cache metadata exists but toolchain archive not found"
                 cache_valid="false"
@@ -535,10 +551,25 @@ jobs:
           # Package toolchain directories
           cd openwrt
           echo "Packaging staging_dir and build_dir..."
-          tar -czf $GITHUB_WORKSPACE/toolchain_upload/toolchain_cache.tar.gz staging_dir/ build_dir/
           
-          echo "Toolchain cache size:"
-          ls -lh $GITHUB_WORKSPACE/toolchain_upload/toolchain_cache.tar.gz
+          if tar -czf $GITHUB_WORKSPACE/toolchain_upload/toolchain_cache.tar.gz staging_dir/ build_dir/; then
+            echo "✓ Packaging successful"
+            
+            echo "Toolchain cache size:"
+            ls -lh $GITHUB_WORKSPACE/toolchain_upload/toolchain_cache.tar.gz
+            
+            # Verify archive integrity
+            echo "Verifying archive integrity..."
+            if gzip -t $GITHUB_WORKSPACE/toolchain_upload/toolchain_cache.tar.gz; then
+              echo "✓ Archive integrity verified"
+            else
+              echo "✗ Archive verification failed"
+              exit 1
+            fi
+          else
+            echo "✗ Packaging failed"
+            exit 1
+          fi
           
           # Save current hash
           if [ -n "${{ steps.check_toolchain_cache.outputs.current_hash }}" ]; then
