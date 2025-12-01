@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build-OpenWrt_Multi-Platform(V4)
+name: Build-OpenWrt_Multi-Platform(V5)
 
 on:
   repository_dispatch:
@@ -346,8 +346,8 @@ jobs:
         run: |
           sudo -E apt-get -qq update
           sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
-          # sudo -E apt-get -qq autoremove --purge
-          # sudo -E apt-get -qq clean
+          sudo -E apt-get -qq autoremove --purge
+          sudo -E apt-get -qq clean
           sudo timedatectl set-timezone "$TZ"
           df -hT
 
@@ -413,7 +413,7 @@ jobs:
         uses: dawidd6/action-download-artifact@v6
         with:
           name: ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}
-          workflow: ${{ github.workflow }}
+          workflow: Build-OpenWrt_Multi-Platform(V5).yml
           path: toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}
           if_no_artifact_found: ignore
 
@@ -424,29 +424,27 @@ jobs:
         uses: dawidd6/action-download-artifact@v6
         with:
           name: ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}
-          workflow: ${{ github.workflow }}
+          workflow: Build-OpenWrt_Multi-Platform(V5).yml
           path: toolchain_cache/ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}
           if_no_artifact_found: ignore
 
       - name: Check Toolchain Cache
         id: check_toolchain_cache
         if: steps.matrix_status.outputs.status != 'success'
-        working-directory: ${{ github.workspace }}
         run: |
           echo "Checking toolchain cache..."
           
           # Get current toolchain git hash
-          cd openwrt
+          cd /workdir/openwrt
           current_hash=$(git log --pretty=tformat:"%H" -n1 tools toolchain)
           echo "Current toolchain hash: $current_hash"
-          cd ..
           
           # Initialize cache status
           cache_valid="false"
           
           # Check if cache exists
-          if [ -f "toolchain_cache/ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}/ToolChainLog.txt" ]; then
-            cached_hash=$(cat "toolchain_cache/ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}/ToolChainLog.txt")
+          if [ -f "$GITHUB_WORKSPACE/toolchain_cache/ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}/ToolChainLog.txt" ]; then
+            cached_hash=$(cat "$GITHUB_WORKSPACE/toolchain_cache/ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}/ToolChainLog.txt")
             echo "Cached toolchain hash: $cached_hash"
             
             if [ "$current_hash" == "$cached_hash" ]; then
@@ -454,13 +452,35 @@ jobs:
               cache_valid="true"
               
               # Extract cached toolchain directories
-              if [ -f "toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}/toolchain_cache.tar.gz" ]; then
+              if [ -f "$GITHUB_WORKSPACE/toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}/toolchain_cache.tar.gz" ]; then
                 echo "Extracting cached toolchain..."
-                cd openwrt
-                tar -xzf ../toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}/toolchain_cache.tar.gz
-                echo "Cached toolchain extracted successfully"
-                ls -lh staging_dir/ build_dir/ 2>/dev/null || echo "Directories extracted"
-                cd ..
+                
+                cache_file="$GITHUB_WORKSPACE/toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}/toolchain_cache.tar.gz"
+                echo "Cache file size: $(du -h "$cache_file" | cut -f1)"
+                
+                # Test archive integrity
+                echo "Testing archive integrity..."
+                if gzip -t "$cache_file" 2>/dev/null; then
+                  echo "✓ Archive integrity verified"
+                  
+                  # Remove old directories to avoid conflicts
+                  echo "Removing old staging_dir and build_dir..."
+                  rm -rf /workdir/openwrt/staging_dir /workdir/openwrt/build_dir
+                  
+                  # Extract cache
+                  cd /workdir/openwrt
+                  if tar -xzf "$cache_file"; then
+                    echo "Cached toolchain extracted successfully"
+                    ls -lh staging_dir/ build_dir/ 2>/dev/null || echo "Directories extracted"
+                  else
+                    echo "✗ Failed to extract cache, will compile from scratch"
+                    cache_valid="false"
+                  fi
+                else
+                  echo "✗ Cache file is corrupted, will compile from scratch"
+                  cache_valid="false"
+                fi
+                ls
               else
                 echo "⚠ Cache metadata exists but toolchain archive not found"
                 cache_valid="false"
@@ -473,7 +493,7 @@ jobs:
           fi
           
           # Cleanup cache directory
-          rm -rf toolchain_cache
+          rm -rf "$GITHUB_WORKSPACE/toolchain_cache"
           
           echo "cache_valid=$cache_valid" >> $GITHUB_OUTPUT
           echo "current_hash=$current_hash" >> $GITHUB_OUTPUT
@@ -523,10 +543,25 @@ jobs:
           # Package toolchain directories
           cd openwrt
           echo "Packaging staging_dir and build_dir..."
-          tar -czf $GITHUB_WORKSPACE/toolchain_upload/toolchain_cache.tar.gz staging_dir/ build_dir/
           
-          echo "Toolchain cache size:"
-          ls -lh $GITHUB_WORKSPACE/toolchain_upload/toolchain_cache.tar.gz
+          if tar -czf $GITHUB_WORKSPACE/toolchain_upload/toolchain_cache.tar.gz staging_dir/ build_dir/; then
+            echo "✓ Packaging successful"
+            
+            echo "Toolchain cache size:"
+            ls -lh $GITHUB_WORKSPACE/toolchain_upload/toolchain_cache.tar.gz
+            
+            # Verify archive integrity
+            echo "Verifying archive integrity..."
+            if gzip -t $GITHUB_WORKSPACE/toolchain_upload/toolchain_cache.tar.gz; then
+              echo "✓ Archive integrity verified"
+            else
+              echo "✗ Archive verification failed"
+              exit 1
+            fi
+          else
+            echo "✗ Packaging failed"
+            exit 1
+          fi
           
           # Save current hash
           if [ -n "${{ steps.check_toolchain_cache.outputs.current_hash }}" ]; then
