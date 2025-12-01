@@ -406,9 +406,81 @@ jobs:
         uses: mxschmitt/action-tmate@v3.16
         if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
+      - name: Download Cached Toolchain
+        id: download_toolchain_cache
+        if: steps.matrix_status.outputs.status != 'success'
+        continue-on-error: true
+        uses: dawidd6/action-download-artifact@v6
+        with:
+          name: ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}
+          workflow: ${{ github.workflow }}
+          path: toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}
+          if_no_artifact_found: ignore
+
+      - name: Download Cached Toolchain Log
+        id: download_toolchain_log
+        if: steps.matrix_status.outputs.status != 'success'
+        continue-on-error: true
+        uses: dawidd6/action-download-artifact@v6
+        with:
+          name: ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}
+          workflow: ${{ github.workflow }}
+          path: toolchain_cache/ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}
+          if_no_artifact_found: ignore
+
+      - name: Check Toolchain Cache
+        id: check_toolchain_cache
+        if: steps.matrix_status.outputs.status != 'success'
+        working-directory: ${{ github.workspace }}
+        run: |
+          echo "Checking toolchain cache..."
+          
+          # Get current toolchain git hash
+          cd openwrt
+          current_hash=$(git log --pretty=tformat:"%H" -n1 tools toolchain)
+          echo "Current toolchain hash: $current_hash"
+          cd ..
+          
+          # Initialize cache status
+          cache_valid="false"
+          
+          # Check if cache exists
+          if [ -f "toolchain_cache/ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}/ToolChainLog.txt" ]; then
+            cached_hash=$(cat "toolchain_cache/ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}/ToolChainLog.txt")
+            echo "Cached toolchain hash: $cached_hash"
+            
+            if [ "$current_hash" == "$cached_hash" ]; then
+              echo "✓ Toolchain cache is valid, will restore from cache"
+              cache_valid="true"
+              
+              # Extract cached toolchain directories
+              if [ -f "toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}/toolchain_cache.tar.gz" ]; then
+                echo "Extracting cached toolchain..."
+                cd openwrt
+                tar -xzf ../toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}/toolchain_cache.tar.gz
+                echo "Cached toolchain extracted successfully"
+                ls -lh staging_dir/ build_dir/ 2>/dev/null || echo "Directories extracted"
+                cd ..
+              else
+                echo "⚠ Cache metadata exists but toolchain archive not found"
+                cache_valid="false"
+              fi
+            else
+              echo "✗ Toolchain hash mismatch, cache invalid"
+            fi
+          else
+            echo "ℹ No cached toolchain found, will compile from scratch"
+          fi
+          
+          # Cleanup cache directory
+          rm -rf toolchain_cache
+          
+          echo "cache_valid=$cache_valid" >> $GITHUB_OUTPUT
+          echo "current_hash=$current_hash" >> $GITHUB_OUTPUT
+
       - name: Compile Toolchain
         id: compile_toolchain
-        if: steps.matrix_status.outputs.status != 'success'
+        if: steps.matrix_status.outputs.status != 'success' && steps.check_toolchain_cache.outputs.cache_valid != 'true'
         run: |
           chmod +x ${{ matrix.value.DIY_P3_SH }}
           cd openwrt
@@ -439,6 +511,48 @@ jobs:
             exit $is_complie_error
           fi
           df -hT
+
+      - name: Upload Toolchain Cache
+        if: (steps.compile_toolchain.outputs.status == 'success' || steps.check_toolchain_cache.outputs.cache_valid == 'true') && steps.matrix_status.outputs.status != 'success'
+        run: |
+          echo "Preparing toolchain cache for upload..."
+          
+          cd $GITHUB_WORKSPACE
+          mkdir -p toolchain_upload
+          
+          # Package toolchain directories
+          cd openwrt
+          echo "Packaging staging_dir and build_dir..."
+          tar -czf $GITHUB_WORKSPACE/toolchain_upload/toolchain_cache.tar.gz staging_dir/ build_dir/
+          
+          echo "Toolchain cache size:"
+          ls -lh $GITHUB_WORKSPACE/toolchain_upload/toolchain_cache.tar.gz
+          
+          # Save current hash
+          if [ -n "${{ steps.check_toolchain_cache.outputs.current_hash }}" ]; then
+            echo "${{ steps.check_toolchain_cache.outputs.current_hash }}" > $GITHUB_WORKSPACE/toolchain_upload/ToolChainLog.txt
+          else
+            git log --pretty=tformat:"%H" -n1 tools toolchain > $GITHUB_WORKSPACE/toolchain_upload/ToolChainLog.txt
+          fi
+          
+          echo "Toolchain hash saved:"
+          cat $GITHUB_WORKSPACE/toolchain_upload/ToolChainLog.txt
+
+      - name: Upload Toolchain To Artifact
+        uses: actions/upload-artifact@v4
+        if: (steps.compile_toolchain.outputs.status == 'success' || steps.check_toolchain_cache.outputs.cache_valid == 'true') && steps.matrix_status.outputs.status != 'success'
+        with:
+          name: ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}
+          path: toolchain_upload/toolchain_cache.tar.gz
+          retention-days: 14
+
+      - name: Upload Toolchain Log To Artifact
+        uses: actions/upload-artifact@v4
+        if: (steps.compile_toolchain.outputs.status == 'success' || steps.check_toolchain_cache.outputs.cache_valid == 'true') && steps.matrix_status.outputs.status != 'success'
+        with:
+          name: ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}
+          path: toolchain_upload/ToolChainLog.txt
+          retention-days: 14
 
       - name: Generate Source Packages
         working-directory: /workdir
