@@ -1,7 +1,0 @@
-<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-c2f2b28|Eamon Xiong|Mon Dec 1 01:41:59 2025 +0800|fix: light mode background color
-aef9eb3|Eamon Xiong|Sun Nov 30 22:52:01 2025 +0800|refactor: replace aurora tokens with primary
-</details>
