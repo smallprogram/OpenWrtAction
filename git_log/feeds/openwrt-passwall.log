@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f52968e|A-BO|Sat Nov 29 16:04:46 2025 +0800|luci: optimize
-eb7d210|A-BO|Sat Nov 29 14:43:29 2025 +0800|luci: optimize the server log display logic
+5f63d7b|A-BO|Mon Dec 1 00:07:51 2025 +0800|luci: bump version to 25.12.1
+b7b11f3|A-BO|Sun Nov 30 19:24:03 2025 +0800|luci: optimize the ui layout of the node list to adapt to mobile devices
 </details>

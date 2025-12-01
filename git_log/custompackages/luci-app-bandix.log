@@ -1,0 +1,12 @@
+<details> <summary> <b>luci-app-bandix new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+3363248|timsaya|Sun Nov 30 14:46:05 2025 +0800|Merge pull request #75 from timsaya/dev
+c864ea5|stefanlei|Sun Nov 30 14:43:12 2025 +0800|chore: bump version to 0.10.0
+215de77|stefanlei|Sun Nov 30 14:41:46 2025 +0800|feat: add clear traffic data and restart service buttons in settings
+52267ce|stefanlei|Sun Nov 30 13:46:43 2025 +0800|docs: add real-time/daily/weekly/monthly monitoring feature and update screenshots
+08af49a|stefanlei|Sun Nov 30 13:12:02 2025 +0800|feat: add traffic metrics aggregation with day/week/month views
+e2cf150|stefanlei|Sun Nov 30 11:29:35 2025 +0800|Simplify traffic retention period options
+d164fa3|stefanlei|Sun Nov 30 07:55:31 2025 +0800|Add 1 hour option to traffic retention period
+</details>
