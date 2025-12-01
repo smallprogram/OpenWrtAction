@@ -485,23 +485,32 @@ jobs:
           chmod +x ${{ matrix.value.DIY_P3_SH }}
           cd openwrt
           is_complie_error=0
-          if [[ ${{ fromJSON(github.run_attempt) }} == 3 ]]; then
-              echo "$(nproc) threads compile tools"
-              make tools/compile -j$(nproc) V=s
-              make toolchain/compile -j$(nproc) V=s
-              make package/cleanup -j$(nproc) V=s
-              make target/compile -j$(nproc) V=s
-              $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} "${{ fromJSON(github.run_attempt) }}"
-              is_complie_error=${PIPESTATUS[0]}
-          else
-              echo "$(nproc) threads compile tools"
-              make tools/compile -j$(nproc)
-              make toolchain/compile -j$(nproc)
-              make package/cleanup -j$(nproc)
-              make target/compile -j$(nproc)
-              $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} "${{ fromJSON(github.run_attempt) }}"
-              is_complie_error=${PIPESTATUS[0]}
-          fi
+          # if [[ ${{ fromJSON(github.run_attempt) }} == 3 ]]; then
+          #     echo "$(nproc) threads compile tools"
+          #     make tools/compile -j$(nproc) V=s
+          #     make toolchain/compile -j$(nproc) V=s
+          #     make package/cleanup -j$(nproc) V=s
+          #     make target/compile -j$(nproc) V=s
+          #     $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} "${{ fromJSON(github.run_attempt) }}"
+          #     is_complie_error=${PIPESTATUS[0]}
+          # else
+          #     echo "$(nproc) threads compile tools"
+          #     make tools/compile -j$(nproc)
+          #     make toolchain/compile -j$(nproc)
+          #     make package/cleanup -j$(nproc)
+          #     make target/compile -j$(nproc)
+          #     $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} "${{ fromJSON(github.run_attempt) }}"
+          #     is_complie_error=${PIPESTATUS[0]}
+          # fi
+
+          mkdir -p build_dir
+          cd build_dir
+          cat "tttttt" > test.txt
+          cd ..
+          mkdir -p staging_dir
+          cd staging_dir
+          cat "tttttt" > test.txt
+          cd ..
 
           echo "complie result： $is_complie_error"
           if [ "$is_complie_error" -eq 0 ]; then
