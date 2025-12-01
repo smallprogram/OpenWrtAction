@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: test(V4)
+name: test(V5)
 
 on:
   repository_dispatch:
@@ -244,13 +244,13 @@ jobs:
           path: release.txt
           retention-days: 5
 
-      - name: Create Release Tag
-        uses: softprops/action-gh-release@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
-          body_path: release.txt
+      # - name: Create Release Tag
+      #   uses: softprops/action-gh-release@v2
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+      #     body_path: release.txt
 
       - name: Merge and push changes with "theirs" strategy
         run: |
@@ -514,32 +514,29 @@ jobs:
 
       - name: Upload Toolchain Cache
         if: (steps.compile_toolchain.outputs.status == 'success' || steps.check_toolchain_cache.outputs.cache_valid == 'true') && steps.matrix_status.outputs.status != 'success'
-        working-directory: ${{ github.workspace }}
         run: |
           echo "Preparing toolchain cache for upload..."
           
+          cd $GITHUB_WORKSPACE
           mkdir -p toolchain_upload
           
           # Package toolchain directories
           cd openwrt
           echo "Packaging staging_dir and build_dir..."
-          tar -czf ../toolchain_upload/toolchain_cache.tar.gz staging_dir/ build_dir/
-          cd ..
+          tar -czf $GITHUB_WORKSPACE/toolchain_upload/toolchain_cache.tar.gz staging_dir/ build_dir/
           
           echo "Toolchain cache size:"
-          ls -lh toolchain_upload/toolchain_cache.tar.gz
+          ls -lh $GITHUB_WORKSPACE/toolchain_upload/toolchain_cache.tar.gz
           
           # Save current hash
           if [ -n "${{ steps.check_toolchain_cache.outputs.current_hash }}" ]; then
-            echo "${{ steps.check_toolchain_cache.outputs.current_hash }}" > toolchain_upload/ToolChainLog.txt
+            echo "${{ steps.check_toolchain_cache.outputs.current_hash }}" > $GITHUB_WORKSPACE/toolchain_upload/ToolChainLog.txt
           else
-            cd openwrt
-            git log --pretty=tformat:"%H" -n1 tools toolchain > ../toolchain_upload/ToolChainLog.txt
-            cd ..
+            git log --pretty=tformat:"%H" -n1 tools toolchain > $GITHUB_WORKSPACE/toolchain_upload/ToolChainLog.txt
           fi
           
           echo "Toolchain hash saved:"
-          cat toolchain_upload/ToolChainLog.txt
+          cat $GITHUB_WORKSPACE/toolchain_upload/ToolChainLog.txt
 
       - name: Upload Toolchain To Artifact
         uses: actions/upload-artifact@v4
