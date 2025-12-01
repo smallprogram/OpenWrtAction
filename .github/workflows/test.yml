@@ -413,7 +413,7 @@ jobs:
         uses: dawidd6/action-download-artifact@v6
         with:
           name: ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}
-          workflow: ${{ github.workflow }}
+          workflow: test.yml
           path: toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}
           if_no_artifact_found: ignore
 
@@ -424,7 +424,7 @@ jobs:
         uses: dawidd6/action-download-artifact@v6
         with:
           name: ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}
-          workflow: ${{ github.workflow }}
+          workflow: test.yml
           path: toolchain_cache/ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}
           if_no_artifact_found: ignore
 
@@ -457,6 +457,12 @@ jobs:
               if [ -f "toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}/toolchain_cache.tar.gz" ]; then
                 echo "Extracting cached toolchain..."
                 cd openwrt
+                
+                # Remove old directories to avoid conflicts
+                echo "Removing old staging_dir and build_dir..."
+                rm -rf staging_dir build_dir
+                
+                # Extract cache
                 tar -xzf ../toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}/toolchain_cache.tar.gz
                 echo "Cached toolchain extracted successfully"
                 ls -lh staging_dir/ build_dir/ 2>/dev/null || echo "Directories extracted"
