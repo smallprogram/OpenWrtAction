@@ -431,22 +431,20 @@ jobs:
       - name: Check Toolchain Cache
         id: check_toolchain_cache
         if: steps.matrix_status.outputs.status != 'success'
-        working-directory: ${{ github.workspace }}
         run: |
           echo "Checking toolchain cache..."
           
           # Get current toolchain git hash
-          cd openwrt
+          cd /workdir/openwrt
           current_hash=$(git log --pretty=tformat:"%H" -n1 tools toolchain)
           echo "Current toolchain hash: $current_hash"
-          cd ..
           
           # Initialize cache status
           cache_valid="false"
           
           # Check if cache exists
-          if [ -f "toolchain_cache/ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}/ToolChainLog.txt" ]; then
-            cached_hash=$(cat "toolchain_cache/ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}/ToolChainLog.txt")
+          if [ -f "$GITHUB_WORKSPACE/toolchain_cache/ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}/ToolChainLog.txt" ]; then
+            cached_hash=$(cat "$GITHUB_WORKSPACE/toolchain_cache/ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}/ToolChainLog.txt")
             echo "Cached toolchain hash: $cached_hash"
             
             if [ "$current_hash" == "$cached_hash" ]; then
@@ -454,19 +452,18 @@ jobs:
               cache_valid="true"
               
               # Extract cached toolchain directories
-              if [ -f "toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}/toolchain_cache.tar.gz" ]; then
+              if [ -f "$GITHUB_WORKSPACE/toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}/toolchain_cache.tar.gz" ]; then
                 echo "Extracting cached toolchain..."
-                cd openwrt
                 
                 # Remove old directories to avoid conflicts
                 echo "Removing old staging_dir and build_dir..."
-                rm -rf staging_dir build_dir
+                rm -rf /workdir/openwrt/staging_dir /workdir/openwrt/build_dir
                 
                 # Extract cache
-                tar -xzf ../toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}/toolchain_cache.tar.gz
+                cd /workdir/openwrt
+                tar -xzf "$GITHUB_WORKSPACE/toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}/toolchain_cache.tar.gz"
                 echo "Cached toolchain extracted successfully"
                 ls -lh staging_dir/ build_dir/ 2>/dev/null || echo "Directories extracted"
-                cd ..
               else
                 echo "⚠ Cache metadata exists but toolchain archive not found"
                 cache_valid="false"
@@ -479,7 +476,7 @@ jobs:
           fi
           
           # Cleanup cache directory
-          rm -rf toolchain_cache
+          rm -rf "$GITHUB_WORKSPACE/toolchain_cache"
           
           echo "cache_valid=$cache_valid" >> $GITHUB_OUTPUT
           echo "current_hash=$current_hash" >> $GITHUB_OUTPUT
