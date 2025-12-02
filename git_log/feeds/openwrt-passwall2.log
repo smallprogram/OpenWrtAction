@@ -1,0 +1,21 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+4584a89|xiaorouji|Tue Dec 2 02:01:36 2025 +0800|luci: 25.12.2
+4c6cd75|xiaorouji|Tue Dec 2 01:57:33 2025 +0800|luci: optimize node list drag save button
+31aab3f|xiaorouji|Mon Dec 1 23:58:43 2025 +0800|luci: optimize
+f790af5|A-BO|Mon Dec 1 17:15:17 2025 +0800|luci: default group nodes always stay at the top
+58c700a|A-BO|Sun Nov 30 19:24:03 2025 +0800|luci: optimize the ui layout of the node list to adapt to mobile devices
+f70180f|A-BO|Sat Nov 29 14:43:29 2025 +0800|luci: optimize the server log display logic
+5877216|lwb1978|Fri Nov 28 20:24:33 2025 +0800|luci: optimize the log display logic
+875fdf5|A-BO|Fri Nov 28 09:28:22 2025 +0800|luci: optimize and fix subscribe
+a552267|A-BO|Thu Nov 27 17:21:08 2025 +0800|luci: optimize the save logic for xray xhttp extra
+bf305fa|A-BO|Thu Nov 27 02:11:39 2025 +0800|luci: fix the conflict between ssr node configuration items and group
+5da33b1|A-BO|Thu Nov 27 18:32:48 2025 +0800|luci: optimize node list ui styling
+1f5557c|A-BO|Thu Nov 27 01:16:18 2025 +0800|luci: add drag to reorder functionality to the node list
+7134356|A-BO|Wed Nov 26 02:13:53 2025 +0800|luci: restore node list reordering function
+fa6a812|xiaorouji|Wed Nov 26 18:02:00 2025 +0800|luci: i18n: update zh-tw
+e1f6b82|A-BO|Sun Nov 23 15:24:39 2025 +0800|luci: optimize
+
+</details>

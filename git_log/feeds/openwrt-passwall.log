@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0ad698d|A-BO|Mon Dec 1 20:27:39 2025 +0800|luci: remove omitted extra code
+744c076|A-BO|Mon Dec 1 17:15:17 2025 +0800|luci: default group nodes always stay at the top
+</details>
