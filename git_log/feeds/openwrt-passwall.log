@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-bf2d61a|A-BO|Tue Dec 2 13:13:26 2025 +0800|luci: when using "to top", optimize node list drag save button
-fd05e76|A-BO|Tue Dec 2 12:51:10 2025 +0800|luci: optimize node list drag save button
-</details>

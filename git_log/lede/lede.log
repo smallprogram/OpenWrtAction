@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-41c716d2b|Vincent Li|Fri Nov 28 09:56:04 2025 -0800|loongarch64: built-in PCI DWMAC
+d6a876849|Internet1235|Wed Dec 3 11:16:56 2025 +0800|kernel: package kmod-drm-shmem-helper (#13825)
 </details>
