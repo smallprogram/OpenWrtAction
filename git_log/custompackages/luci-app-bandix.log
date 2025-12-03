@@ -2,11 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5819a41|stefanlei|Tue Dec 2 08:30:43 2025 +0800|Merge branch 'main' into dev
-72f90fe|stefanlei|Tue Dec 2 08:30:03 2025 +0800|feat: add browser cache warning in update dialog
-e1d6346|stefanlei|Tue Dec 2 01:03:19 2025 +0800|Fix luci-app-bandix installation timeout issue
-d12272f|timsaya|Tue Dec 2 00:30:17 2025 +0800|Merge pull request #79 from timsaya/dev
-6ec22af|stefanlei|Tue Dec 2 00:29:28 2025 +0800|Merge branch 'main' into dev
-0623c44|stefanlei|Tue Dec 2 00:27:35 2025 +0800|Add check update
-77daeb4|stefanlei|Mon Dec 1 21:59:34 2025 +0800|Rename traffic history period to realtime traffic period and add i18n for time range labels
+7757746|stefanlei|Tue Dec 2 23:22:27 2025 +0800|feat: add version display and update check, improve mobile card styling
 </details>

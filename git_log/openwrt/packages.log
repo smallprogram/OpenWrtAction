@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-960dfa2df|Daniel Golle|Tue Oct 28 18:04:59 2025 +0000|exim: update to version 4.99
-80c90e904|Konstantin Demin|Sun Jul 6 09:02:37 2025 +0300|exim: adjust with glibc and libcrypt-compat
-2dcc84370|Noah Meyerhans|Mon Nov 24 16:26:47 2025 -0500|kea: bump to 2.6.4
+07ed6152f|Josef Schlehofer|Tue Dec 2 14:04:18 2025 +0100|django: update to version 5.1.14
 </details>

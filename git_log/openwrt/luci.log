@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+f4c9919f85|mdevolde|Sun Nov 30 12:49:53 2025 +0100|luci-app-filemanager: fix regex, manage broken symlinks, support all file types
+2ae5a3e871|junjie zhang|Fri Feb 28 19:05:28 2025 +0800|luci-app-filemanager: fixed time parsing
+</details>

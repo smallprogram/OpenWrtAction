@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0ad698d|A-BO|Mon Dec 1 20:27:39 2025 +0800|luci: remove omitted extra code
-744c076|A-BO|Mon Dec 1 17:15:17 2025 +0800|luci: default group nodes always stay at the top
+bf2d61a|A-BO|Tue Dec 2 13:13:26 2025 +0800|luci: when using "to top", optimize node list drag save button
+fd05e76|A-BO|Tue Dec 2 12:51:10 2025 +0800|luci: optimize node list drag save button
 </details>
