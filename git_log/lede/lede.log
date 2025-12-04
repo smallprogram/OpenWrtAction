@@ -1,6 +1,0 @@
-<details> <summary> <b>lede new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-d6a876849|Internet1235|Wed Dec 3 11:16:56 2025 +0800|kernel: package kmod-drm-shmem-helper (#13825)
-</details>

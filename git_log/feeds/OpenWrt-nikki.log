@@ -1,0 +1,6 @@
+<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+712807d|Joseph Mory|Wed Dec 3 16:41:07 2025 +0800|chore: add missing default value of dns hijack option in router access control
+</details>

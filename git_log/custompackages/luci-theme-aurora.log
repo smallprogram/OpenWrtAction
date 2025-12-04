@@ -1,0 +1,7 @@
+<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+736412e|Eamon Xiong|Wed Dec 3 23:55:05 2025 +0800|refactor: remove unused theme tokens
+ac405ac|Eamon Xiong|Wed Dec 3 22:06:55 2025 +0800|refactor: adapt to etc/config/aurora variable structure
+</details>
