@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-736412e|Eamon Xiong|Wed Dec 3 23:55:05 2025 +0800|refactor: remove unused theme tokens
-ac405ac|Eamon Xiong|Wed Dec 3 22:06:55 2025 +0800|refactor: adapt to etc/config/aurora variable structure
+4364ed2|Eamon Xiong|Thu Dec 4 23:01:24 2025 +0800|fix: cbi-button common styles
+413dd64|Eamon Xiong|Thu Dec 4 22:59:04 2025 +0800|refactor: adapt aurora config structure
 </details>

@@ -1,0 +1,6 @@
+<details> <summary> <b>lede new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+dc762900b|Weikai Kong|Sat Mar 15 13:09:54 2025 -0400|target.mk: Fix features detection for PWM
+</details>

@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b6bc6d2|A-BO|Fri Dec 5 00:41:10 2025 +0800|luci: add reassign group function to node list
+</details>

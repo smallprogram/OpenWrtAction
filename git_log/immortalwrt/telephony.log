@@ -1,9 +1,0 @@
-<details> <summary> <b>telephony new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-92892fa|George Sapkin|Wed Nov 26 16:23:58 2025 +0200|check-autorelease-deprecation: drop workflow
-eb85be3|George Sapkin|Wed Nov 26 15:34:57 2025 +0200|formal: fix workflow permissions
-fdce0ac|Josef Schlehofer|Sun May 25 12:49:40 2025 +0200|CI: move script into separate directory
-7038ce4|Josef Schlehofer|Sun May 25 12:39:58 2025 +0200|CI: formal check: use shared workflow in actions-shared-workflows
-</details>

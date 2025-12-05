@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-96a67d2f2e|Mikhail Zhilkin|Sat Nov 22 19:18:36 2025 +0300|kernel: add support for Fudan Micro FM25S01BI3 SPI-NAND
-15601a545e|Mikhail Zhilkin|Sat Nov 22 19:05:52 2025 +0300|kernel: fix QE bit for Fudan Micro FM25S01A SPI-NAND
-b1528735da|Goetz Goerisch|Tue Dec 2 17:10:46 2025 +0100|kernel: bump 6.6 to 6.6.118
-13226471ef|Andy Chiang|Tue Sep 9 07:37:09 2025 +0700|ppp: add reqprefix norelease ac_mac
+d0c2c30e50|Christian Marangi|Thu Dec 4 19:11:17 2025 +0100|sdk: invert logic for GIT_BRANCH and GIT_TAGNAME
+9c23ecf31c|Christian Marangi|Thu Dec 4 19:08:08 2025 +0100|sdk: filter out main on GIT_BRANCH parsing
 </details>
