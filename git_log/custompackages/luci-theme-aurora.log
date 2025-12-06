@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4364ed2|Eamon Xiong|Thu Dec 4 23:01:24 2025 +0800|fix: cbi-button common styles
-413dd64|Eamon Xiong|Thu Dec 4 22:59:04 2025 +0800|refactor: adapt aurora config structure
+cdcc680|Eamon Xiong|Fri Dec 5 23:49:27 2025 +0800|fix: progress text clipping on package page
+bfcfa98|Eamon Xiong|Fri Dec 5 23:25:35 2025 +0800|fix: mega-menu items disappearing
+80b3d1c|Eamon Xiong|Fri Dec 5 23:02:10 2025 +0800|feat: support mega menu and boxed dropdown for submenus
 </details>

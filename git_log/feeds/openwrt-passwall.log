@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b6bc6d2|A-BO|Fri Dec 5 00:41:10 2025 +0800|luci: add reassign group function to node list
+f2fa886|A-BO|Sat Dec 6 00:44:26 2025 +0800|luci: optimize the logic for saving node list options
 </details>

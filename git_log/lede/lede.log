@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dc762900b|Weikai Kong|Sat Mar 15 13:09:54 2025 -0400|target.mk: Fix features detection for PWM
+4cd4eb78f|coolsnowwolf|Fri Dec 5 15:20:30 2025 +0800|rockchip: add Radxa ROCK 2A/F support Signed-off-by: coolsnowwolf@gmail.com
 </details>

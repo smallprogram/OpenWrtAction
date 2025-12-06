@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-d0c2c30e50|Christian Marangi|Thu Dec 4 19:11:17 2025 +0100|sdk: invert logic for GIT_BRANCH and GIT_TAGNAME
-9c23ecf31c|Christian Marangi|Thu Dec 4 19:08:08 2025 +0100|sdk: filter out main on GIT_BRANCH parsing
-</details>

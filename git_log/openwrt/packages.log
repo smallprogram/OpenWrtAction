@@ -1,7 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-2ab7c24e2|Alexandru Ardelean|Sun Nov 9 19:19:09 2025 +0200|python-automat: bump to version 25.4.16
-ca47b6ce1|Josef Schlehofer|Wed Dec 3 20:08:41 2025 +0100|python-unidecode: drop unmaintained package
-</details>
