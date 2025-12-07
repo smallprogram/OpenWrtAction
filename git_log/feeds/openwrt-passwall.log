@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f2fa886|A-BO|Sat Dec 6 00:44:26 2025 +0800|luci: optimize the logic for saving node list options
+696b84c|A-BO|Sun Dec 7 02:35:42 2025 +0800|luci: optimize multi-node selection method
+a3b8d27|A-BO|Sun Dec 7 01:59:10 2025 +0800|luci: optimize
 </details>

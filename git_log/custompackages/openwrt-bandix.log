@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-bandix new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+980bfe6|stefanlei|Sat Dec 6 23:23:12 2025 +0800|Simplify config installation by installing directly to /etc/config/bandix
+</details>
