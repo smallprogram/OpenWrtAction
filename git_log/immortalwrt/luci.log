@@ -1,0 +1,10 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+997341277e|Tianling Shen|Sun Dec 7 10:27:41 2025 +0800|Merge Official Source
+d88390be4e|Hannu Nyman|Sat Dec 6 09:25:05 2025 +0200|treewide: backport translations
+daf821a4a4|Andy Chiang|Mon Oct 20 00:52:53 2025 +0700|luci-proto-ppp: add ac_mac and IPv6-PD options
+f4c9919f85|mdevolde|Sun Nov 30 12:49:53 2025 +0100|luci-app-filemanager: fix regex, manage broken symlinks, support all file types
+2ae5a3e871|junjie zhang|Fri Feb 28 19:05:28 2025 +0800|luci-app-filemanager: fixed time parsing
+</details>

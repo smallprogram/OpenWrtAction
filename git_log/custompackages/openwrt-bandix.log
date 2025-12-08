@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-980bfe6|stefanlei|Sat Dec 6 23:23:12 2025 +0800|Simplify config installation by installing directly to /etc/config/bandix
+3701a81|stefanlei|Sun Dec 7 22:32:29 2025 +0800|Update bandix version to 0.11.0
 </details>

@@ -1,0 +1,10 @@
+<details> <summary> <b>luci-app-bandix new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+85d6780|stefanlei|Mon Dec 8 07:37:53 2025 +0800|Fix Traffic Timeline Query button stuck in loading state when API returns no data
+99801c6|stefanlei|Mon Dec 8 06:55:16 2025 +0800|Fix Traffic Timeline Query button showing loading state on page load
+a93049d|stefanlei|Sun Dec 7 22:34:04 2025 +0800|chore: bump version to 0.11.0
+fb2e683|stefanlei|Sun Dec 7 22:18:56 2025 +0800|docs: reorganize README structure and update screenshots
+dfcede3|stefanlei|Sun Dec 7 22:07:39 2025 +0800|Add translations for Traffic Statistics section
+</details>
