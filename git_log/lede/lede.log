@@ -1,7 +1,0 @@
-<details> <summary> <b>lede new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-de89956f3|coolsnowwolf|Mon Dec 8 06:22:09 2025 +0800|kernel: bump all to latest HEAD
-863a6bd9f|Daniel Golle|Thu Jul 17 19:25:38 2025 +0100|targets: add PINCTRL_SUPPORT feature
-</details>

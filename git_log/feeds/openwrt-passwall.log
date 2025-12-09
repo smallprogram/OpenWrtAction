@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-56c18c1|lwb1978|Mon Dec 8 02:09:18 2025 +0800|luci: optimize `multivalue` template
-a64df2b|A-BO|Sun Dec 7 11:09:23 2025 +0800|luci: optimize code
-014443a|A-BO|Sun Dec 7 10:48:36 2025 +0800|luci: restore the display of the save button
+de46e75|lwb1978|Mon Dec 8 23:19:53 2025 +0800|luci: optimize `multivalue` template styling
+35cc34a|lwb1978|Mon Dec 8 10:24:06 2025 +0800|luci: add custom user-agent for xray/sing-box transport
 </details>
