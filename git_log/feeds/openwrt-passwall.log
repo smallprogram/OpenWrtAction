@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-de46e75|lwb1978|Mon Dec 8 23:19:53 2025 +0800|luci: optimize `multivalue` template styling
-35cc34a|lwb1978|Mon Dec 8 10:24:06 2025 +0800|luci: add custom user-agent for xray/sing-box transport
+83488bd|lwb1978|Wed Dec 10 03:02:43 2025 +0800|luci: fixup
 </details>

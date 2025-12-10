@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-da0627f|github-actions[bot]|Mon Dec 8 22:50:07 2025 +0800|xray-core: update to 25.12.8 (#541)
-af03baa|github-actions[bot]|Mon Dec 8 22:49:53 2025 +0800|v2ray-geosite: update to 202512072213 (#542)
-0e981dc|github-actions[bot]|Mon Dec 8 22:49:37 2025 +0800|v2ray-geoip: update to 202512040022 (#540)
+5656b81|A-BO|Tue Dec 9 10:54:43 2025 +0800|ci: optimize code (#543)
 </details>
