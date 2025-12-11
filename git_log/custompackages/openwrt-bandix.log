@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-bandix new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-0367381|stefanlei|Tue Dec 9 21:30:32 2025 +0800|Remove conffiles definition from Makefile
-</details>

@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+c0b10f7442|Andreas Gnau|Wed Dec 10 18:21:45 2025 +0100|build: depend on tools/zstd for download
+</details>
