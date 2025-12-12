@@ -1,6 +1,6 @@
 # 默认lean源码文件夹名
-openwrt_dir_front=openwrt_
-openwrt_dir=${openwrt_dir_front}${config_name}
+openwrt_dir_front=openwrt
+openwrt_dir=${openwrt_dir_front}_${openwrt_branch}_${config_name}
 # 默认的config目录
 config_dir=config/openwrt_config
 # config列表
