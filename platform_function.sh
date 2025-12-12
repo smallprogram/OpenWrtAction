@@ -424,7 +424,7 @@ function Func_ConfigList() {
     else
         if [[ $configNameInp -ge 1 && $configNameInp -le $key ]]; then
             config_name=${config_list[$(($configNameInp - 1))]}
-            openwrt_dir=${openwrt_dir_front}${config_name}
+            openwrt_dir=${openwrt_dir_front}_${openwrt_branch}_${config_name}
             # echo $configNameInp
             # echo $configName
         fi
@@ -503,7 +503,7 @@ function Func_Main() {
     read -t $timer isCreateNewConfig
     if [ ! -n "$isCreateNewConfig" ]; then
         Func_LogSuccess "OK，不创建新的编译配置" "OK, do not create a new compilation configuration"
-        openwrt_dir=${openwrt_dir_front}${config_name}
+        openwrt_dir=${openwrt_dir_front}_${openwrt_branch}_${config_name}
     else
         Func_LogMessage "请输入新的Config文件名，请以xxx.config命名，例如xiaomi3.config" "Please enter the new Config file name, please name it after xxx.config, for example xiaomi3.config"
         read newConfigName
@@ -522,7 +522,7 @@ function Func_Main() {
             done
         done
         config_name=$newConfigName
-        openwrt_dir=${openwrt_dir_front}${config_name}
+        openwrt_dir=${openwrt_dir_front}_${openwrt_branch}_${config_name}
     fi
 
     if [ ! -n "$isCreateNewConfig" ]; then
@@ -542,9 +542,9 @@ function Func_Main() {
         if [ ! -n "$openwrt_dirInp" ]; then
             Func_LogSuccess "OK，使用默认值$openwrt_dir" "OK, use the default value $openwrt_dir"
         else
-            Func_LogMessage "使用 ${openwrt_dir_front}${config_name} 作为源码文件夹名。" "Use ${openwrt_dir_front}${config_name} as the source folder name."
+            Func_LogMessage "使用 ${openwrt_dir_front}_${openwrt_branch}_${config_name} 作为源码文件夹名。" "Use ${openwrt_dir_front}${config_name} as the source folder name."
             echo -e
-            openwrt_dir=${openwrt_dir_front}${config_name}
+            openwrt_dir=${openwrt_dir_front}_${openwrt_branch}_${config_name}
         fi
 
     else
