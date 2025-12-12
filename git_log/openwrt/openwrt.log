@@ -2,5 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c0b10f7442|Andreas Gnau|Wed Dec 10 18:21:45 2025 +0100|build: depend on tools/zstd for download
+9123a0c358|Shine|Thu Dec 11 00:21:48 2025 +0100|mpc85xx: p1010: Use zImage loader for Watchguard Firebox T10
+22391baf99|Marcin Leksmark|Wed Nov 12 21:39:56 2025 +0100|ramips: fix support for Cudy r700
+4a3409f628|David DeGraw|Fri Apr 18 11:55:34 2025 -0600|ramips: add support for Cudy R700
+a9858a9632|Marcin Leksmark|Sat Dec 6 14:43:22 2025 +0100|ramips: add support for Cudy C200P
+61408bb99a|Coia Prant|Wed Oct 1 18:04:26 2025 +0800|ramips: add support for Hongdian H8850 v20
+ce660d934f|Mikhail Zadorozhnyi|Sat Oct 11 12:00:06 2025 +0300|mvebu: gl-mv1000: fix sdhci1 controller
+237b1c29e1|Brian Lee|Thu Dec 4 18:09:49 2025 +0900|mediatek: filogic: add support for ASUS TUF-AX4200Q
+8498118893|Oliver Sedlbauer|Mon Dec 8 10:29:33 2025 +0100|mac80211: ath12k: backport correctly handle mcast packets
+6a92e68c51|Marcin Leksmark|Thu Sep 11 16:40:20 2025 +0200|ramips: add support for D-Link DIR-2660 A2
+581050ce4e|Goetz Goerisch|Sun Dec 7 08:48:11 2025 +0100|kernel: bump 6.6 to 6.6.119
 </details>

@@ -1,0 +1,7 @@
+<details> <summary> <b>luci-app-bandix new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+f897445|stefanlei|Thu Dec 11 22:30:19 2025 +0800|Bump version to 0.11.1
+3f291a0|stefanlei|Thu Dec 11 21:52:24 2025 +0800|Fix time range initialization to include full day (23:59:59)
+</details>

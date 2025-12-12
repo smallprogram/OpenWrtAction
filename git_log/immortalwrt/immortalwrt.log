@@ -1,8 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-43bf271e2b|Tianling Shen|Wed Dec 10 09:20:14 2025 +0800|Merge Official Source
-9fa8e7e9a3|Tianling Shen|Thu Nov 13 21:41:30 2025 +0800|mediatek: fix ubi size for zbtlink zbt z8102ax v2
-0ed59099ee|Shine|Tue Nov 11 19:49:16 2025 +0100|mpc85xx: p1010: Fix Sophos RED 15w NAND partitions
-</details>

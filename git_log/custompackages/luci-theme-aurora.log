@@ -1,0 +1,7 @@
+<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6530f60|Eamon Xiong|Fri Dec 12 01:12:43 2025 +0800|docs: Add DEVELOPMENT.md for quick setup
+80be54c|Eamon Xiong|Fri Dec 12 00:02:45 2025 +0800|fix: overflow in DHCP > Leases table from DUID/IAID columns
+</details>
