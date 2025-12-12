@@ -9,7 +9,7 @@ config_list=($(ls /home/$user_name/OpenWrtAction/$config_dir))
 # feeds_dir=feeds_config/immortalwrt.feeds.conf.default
 # oepnwrt主源码
 openwrt_source=https://github.com/immortalwrt/immortalwrt.git
-openwrt_branch=openwrt-24.10
+openwrt_branch=openwrt-25.12
 # 编译openwrt的log日志文件夹名称
 log_folder_name=immortalwrt_openwrt_log
 # diy script
