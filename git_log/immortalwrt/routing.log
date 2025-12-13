@@ -1,0 +1,23 @@
+<details> <summary> <b>routing new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+178a40d|George Sapkin|Wed Nov 26 16:22:18 2025 +0200|check-autorelease-deprecation: drop workflow
+b43e4ac|George Sapkin|Wed Nov 26 16:22:18 2025 +0200|check-autorelease-deprecation: drop workflow
+55cacd4|George Sapkin|Wed Nov 26 15:38:12 2025 +0200|formal: fix workflow permissions
+0bf1ec3|Christian Marangi|Sun Nov 16 20:27:29 2025 +0100|cjdns: disable error for calloc-transposed-args for GCC14 support
+a700d52|Christian Marangi|Thu Nov 13 16:14:25 2025 +0100|ohybridproxy: add pending patch for CMake >= 4.0 support
+11fc6a2|Christian Marangi|Thu Nov 13 16:00:29 2025 +0100|pimbd: add pending patch for warning and CMake >= 4.0
+2dbcc5b|Josef Schlehofer|Mon Nov 10 13:52:56 2025 +0100|minimalist-pcproxy: remove this package
+0f3cd1e|Josef Schlehofer|Mon Nov 10 20:24:03 2025 +0100|luci-app-olsrd2: remove it as oonf-olsrd2 was dropped
+03a1371|Josef Schlehofer|Mon Jun 16 22:40:05 2025 +0200|treewide: install configs with INSTALL_CONF (0600)
+58070aa|Josef Schlehofer|Mon Nov 10 09:17:42 2025 +0100|oonf-*: remove oonf packages such as init scripts, proxy, radio, olsrd2
+149ea45|Simon Wunderlich|Sun Oct 26 10:44:37 2025 +0100|Merge pull request #1143 from ecsv/batadv-2025.4
+4305594|Sven Eckelmann|Sat Oct 25 09:50:58 2025 +0200|batctl: update to version 2025.4
+9d8bf2a|Sven Eckelmann|Sat Oct 25 09:49:51 2025 +0200|alfred: update to version 2025.4
+bbc3aab|Sven Eckelmann|Sat Oct 25 09:48:35 2025 +0200|batman-adv: update to version 2025.4
+3eb59e9|Rob White|Thu Mar 6 09:32:08 2025 +0000|opennds: update to version 10.3.1
+
+.....................
+
+</details>

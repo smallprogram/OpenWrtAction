@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6530f60|Eamon Xiong|Fri Dec 12 01:12:43 2025 +0800|docs: Add DEVELOPMENT.md for quick setup
-80be54c|Eamon Xiong|Fri Dec 12 00:02:45 2025 +0800|fix: overflow in DHCP > Leases table from DUID/IAID columns
+56db425|Eamon Xiong|Sat Dec 13 00:28:45 2025 +0800|fix: set cbi-tooltip-container in ifacebox-body to inline-flex
+ed5876d|Eamon Xiong|Sat Dec 13 00:08:27 2025 +0800|fix: scope ifacebox-body span flex styles to network interfaces
 </details>

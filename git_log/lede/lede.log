@@ -1,7 +1,0 @@
-<details> <summary> <b>lede new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-2999e8b78|coolsnowwolf|Thu Dec 11 23:36:29 2025 +0800|OpenWrt v25.12: set branch defaults
-b60e980b8|Daniel Golle|Fri Jul 18 01:01:30 2025 +0100|kernel: package i2c-mux-pinctrl
-</details>

@@ -1,0 +1,23 @@
+<details> <summary> <b>telephony new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+40dcae6|Christian Marangi|Thu Dec 4 16:47:44 2025 +0100|freeswitch: backport mod_av patch for FFmpeg 6.0+ support
+b4f1c7a|Christian Marangi|Thu Dec 4 15:08:18 2025 +0100|freetdm: disable broken pritap module
+e8e8979|Paul Donald|Wed Dec 3 23:53:48 2025 +0100|pjproject: bump to match asterisk 23.1.0
+6a075d6|Paul Donald|Wed Dec 3 20:52:20 2025 +0100|asterisk: minor config fixup for 23.1.0
+00f56ba|Paul Donald|Wed Dec 3 04:28:05 2025 +0100|asterisk: bump to 23.1.0
+73fd665|Paul Donald|Wed Dec 3 23:43:36 2025 +0100|asterisk: bump to 22.7.0
+92892fa|George Sapkin|Wed Nov 26 16:23:58 2025 +0200|check-autorelease-deprecation: drop workflow
+eb85be3|George Sapkin|Wed Nov 26 15:34:57 2025 +0200|formal: fix workflow permissions
+fdce0ac|Josef Schlehofer|Sun May 25 12:49:40 2025 +0200|CI: move script into separate directory
+7038ce4|Josef Schlehofer|Sun May 25 12:39:58 2025 +0200|CI: formal check: use shared workflow in actions-shared-workflows
+37ec321|George Sapkin|Wed Nov 26 16:23:58 2025 +0200|check-autorelease-deprecation: drop workflow
+08e2bd1|George Sapkin|Wed Nov 26 15:34:57 2025 +0200|formal: fix workflow permissions
+6e2a8b3|Christian Marangi|Sat Nov 22 19:44:29 2025 +0100|freeswitch: add missing depoendency for conference module
+efee987|Christian Marangi|Sat Nov 22 19:43:56 2025 +0100|freeswitch: backport patch fixing compilation error for perl module
+cb6a45e|Daniel Golle|Mon Jun 23 02:01:32 2025 +0100|asterisk: update to version 20.14.1
+
+.....................
+
+</details>

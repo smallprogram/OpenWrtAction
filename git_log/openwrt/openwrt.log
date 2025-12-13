@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+74c8435ebd|David Woodhouse|Sat Nov 29 16:18:26 2025 +0000|image: add CONFIG_EXTRA_IMAGE_NAME
+25f32651f8|Paul Donald|Thu Dec 11 00:51:15 2025 +0100|apk: bump to 3.0.2
 9123a0c358|Shine|Thu Dec 11 00:21:48 2025 +0100|mpc85xx: p1010: Use zImage loader for Watchguard Firebox T10
 22391baf99|Marcin Leksmark|Wed Nov 12 21:39:56 2025 +0100|ramips: fix support for Cudy r700
 4a3409f628|David DeGraw|Fri Apr 18 11:55:34 2025 -0600|ramips: add support for Cudy R700
@@ -12,4 +14,10 @@ ce660d934f|Mikhail Zadorozhnyi|Sat Oct 11 12:00:06 2025 +0300|mvebu: gl-mv1000: 
 8498118893|Oliver Sedlbauer|Mon Dec 8 10:29:33 2025 +0100|mac80211: ath12k: backport correctly handle mcast packets
 6a92e68c51|Marcin Leksmark|Thu Sep 11 16:40:20 2025 +0200|ramips: add support for D-Link DIR-2660 A2
 581050ce4e|Goetz Goerisch|Sun Dec 7 08:48:11 2025 +0100|kernel: bump 6.6 to 6.6.119
+4444f314ac|David Härdeman|Tue Dec 9 23:49:48 2025 +0100|base-files: always generate default DUID
+65a60d2fa7|Shiji Yang|Sat Nov 29 00:21:04 2025 +0800|bcm27xx: fix patch wrong CRLF line-ending
+8117f30f6f|Chukun Pan|Tue Nov 11 21:10:36 2025 +0800|arm-trusted-firmware-mediatek: remove DDR combo for MT7987
+
+.....................
+
 </details>

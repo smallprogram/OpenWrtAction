@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+bbc64ec9|lwb1978|Fri Dec 12 12:48:06 2025 +0800|luci: optimize and refactoring the multivalue template
 0ff6b60c|lwb1978|Thu Dec 11 10:54:26 2025 +0800|luci: optimize `multivalue` template
-49237527|lwb1978|Thu Dec 11 01:18:46 2025 +0800|luci: optimize `multivalue` template
 </details>
