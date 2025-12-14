@@ -147,6 +147,7 @@ CONFIG_PACKAGE_luci-app-kucat-config=y
 CONFIG_PACKAGE_luci-theme-aurora=y
 CONFIG_PACKAGE_luci-theme-material3=y
 CONFIG_PACKAGE_luci-theme-alpha=y
+CONFIG_PACKAGE_luci-app-alpha-config=y
 CONFIG_PACKAGE_luci-theme-bootstrap=y
 CONFIG_PACKAGE_luci-theme-material=y
 CONFIG_PACKAGE_luci-theme-openwrt=y

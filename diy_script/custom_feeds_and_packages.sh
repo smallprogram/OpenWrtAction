@@ -19,6 +19,7 @@ clone_custom_packages () {
     git clone https://github.com/sirpdboy/luci-app-kucat-config.git ./package/custom_packages/luci-app-kucat-config
     git clone https://github.com/eamonxg/luci-theme-aurora.git ./package/custom_packages/luci-theme-aurora
     git clone https://github.com/derisamedia/luci-theme-alpha.git ./package/custom_packages/luci-theme-alpha
+    git clone https://github.com/animegasan/luci-app-alpha-config.git ./package/custom_packages/luci-app-alpha-config
     git clone https://github.com/AngelaCooljx/luci-theme-material3.git ./package/custom_packages/luci-theme-material3
     git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/custom_packages/luci-app-adguardhome
     git clone https://github.com/sbwml/luci-app-mosdns -b v5 ./package/custom_packages/mosdns
@@ -26,4 +27,7 @@ clone_custom_packages () {
     git clone https://github.com/timsaya/openwrt-bandix.git ./package/custom_packages/openwrt-bandix
     git clone https://github.com/timsaya/luci-app-bandix.git ./package/custom_packages/luci-app-bandix
     git clone https://github.com/destan19/OpenAppFilter.git ./package/custom_packages/OpenAppFilter
+
+
+    sed -i '/^[\t ]*PKG_VERSION:=/ s/\(PKG_VERSION:= *\)[^0-9.]*\([0-9.]*\)[^0-9.]*/\1\2/' "./package/custom_packages/luci-theme-alpha/Makefile"
 }
