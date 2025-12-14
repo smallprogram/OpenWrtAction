@@ -2,6 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bbc64ec9|lwb1978|Fri Dec 12 12:48:06 2025 +0800|luci: optimize and refactoring the multivalue template
-0ff6b60c|lwb1978|Thu Dec 11 10:54:26 2025 +0800|luci: optimize `multivalue` template
+c0ec7ec|A-BO|Sat Dec 13 19:09:53 2025 +0800|luci: bump version to 25.12.13
+39b66b9|A-BO|Sat Dec 13 19:08:12 2025 +0800|luci: optimize `multivalue` saving logic
+0b46581|A-BO|Sat Dec 13 14:37:56 2025 +0800|luci: optimize and fix `multivalue` template
+47872dc|A-BO|Sat Dec 13 13:30:28 2025 +0800|luci: add custom template for single-node option (>19.07)
+f8a9bc4|A-BO|Sat Dec 13 12:55:26 2025 +0800|luci: add reload action to init script
 </details>

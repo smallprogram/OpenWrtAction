@@ -1,7 +1,0 @@
-<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-56db425|Eamon Xiong|Sat Dec 13 00:28:45 2025 +0800|fix: set cbi-tooltip-container in ifacebox-body to inline-flex
-ed5876d|Eamon Xiong|Sat Dec 13 00:08:27 2025 +0800|fix: scope ifacebox-body span flex styles to network interfaces
-</details>

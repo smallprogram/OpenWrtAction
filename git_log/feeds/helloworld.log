@@ -1,8 +1,0 @@
-<details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-a0e8aea|zxl hhyccc|Sat Dec 13 00:24:37 2025 +0800|Merge pull request #1842 from zxlhhyccc/tuic
-56bb89b|zxl hhyccc|Fri Dec 12 23:33:33 2025 +0800|xray-core: update to 25.12.8
-5ffe90d|zxlhhyccc|Fri Dec 12 23:04:03 2025 +0800|luci-app-ssr-plus: Adjust the configuration file used for nftables.
-</details>
