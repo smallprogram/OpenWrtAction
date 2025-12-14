@@ -18,6 +18,8 @@ clone_custom_packages () {
     git clone https://github.com/sirpdboy/luci-theme-kucat.git ./package/custom_packages/luci-theme-kucat
     git clone https://github.com/sirpdboy/luci-app-kucat-config.git ./package/custom_packages/luci-app-kucat-config
     git clone https://github.com/eamonxg/luci-theme-aurora.git ./package/custom_packages/luci-theme-aurora
+    git clone https://github.com/derisamedia/luci-theme-alpha.git ./package/custom_packages/luci-theme-alpha
+    git clone https://github.com/AngelaCooljx/luci-theme-material3.git ./package/custom_packages/luci-theme-material3
     git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ./package/custom_packages/luci-app-adguardhome
     git clone https://github.com/sbwml/luci-app-mosdns -b v5 ./package/custom_packages/mosdns
     git clone https://github.com/sirpdboy/luci-app-netspeedtest ./package/custom_packages/netspeedtest
