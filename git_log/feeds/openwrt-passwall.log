@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c0ec7ec|A-BO|Sat Dec 13 19:09:53 2025 +0800|luci: bump version to 25.12.13
-39b66b9|A-BO|Sat Dec 13 19:08:12 2025 +0800|luci: optimize `multivalue` saving logic
-0b46581|A-BO|Sat Dec 13 14:37:56 2025 +0800|luci: optimize and fix `multivalue` template
-47872dc|A-BO|Sat Dec 13 13:30:28 2025 +0800|luci: add custom template for single-node option (>19.07)
-f8a9bc4|A-BO|Sat Dec 13 12:55:26 2025 +0800|luci: add reload action to init script
+01e815c|A-BO|Sun Dec 14 22:23:09 2025 +0800|luci: optimize `listvalue` template
 </details>

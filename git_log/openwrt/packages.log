@@ -2,5 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b83918c81|Vladimir Ulrich|Sat Dec 13 07:20:09 2025 +0300|zoneinfo: updated to 2025c release
+0bc63a934|Stan Grishin|Thu Dec 11 20:00:03 2025 +0000|pbr: update to 1.2.1-r41
+fa51b84bf|George Sapkin|Mon Dec 8 16:48:29 2025 +0200|adguardhome: bump to 0.107.71
+cbdadd2f9|Hannu Nyman|Sun Dec 14 19:52:45 2025 +0200|irqbalance: update to 1.9.5
+384d7387d|Eric Fahlgren|Thu Dec 11 14:22:19 2025 -0800|owut: update to 2025.12.01
+22401ba34|Dirk Brenken|Sun Dec 14 07:06:52 2025 +0100|adblock: release 4.4.5-1
 </details>

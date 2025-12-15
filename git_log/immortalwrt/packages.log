@@ -1,0 +1,11 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+fe67f7fe8|FunnyGeekette|Thu Dec 11 15:16:38 2025 +0800|shadowsocks-rust: update to 1.24.0
+7b7edbe14|Tianling Shen|Sun Dec 14 17:44:03 2025 +0800|Merge Official Source
+22401ba34|Dirk Brenken|Sun Dec 14 07:06:52 2025 +0100|adblock: release 4.4.5-1
+b83918c81|Vladimir Ulrich|Sat Dec 13 07:20:09 2025 +0300|zoneinfo: updated to 2025c release
+f01028feb|Dirk Brenken|Thu Dec 11 22:43:31 2025 +0100|travelmate: release 2.3.0-1
+c2cb59c1a|George Sapkin|Thu Dec 11 01:32:26 2025 +0200|multi-arch-test-build: disable comments and labels
+</details>

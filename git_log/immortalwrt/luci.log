@@ -1,0 +1,10 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+14fd52c078|Tianling Shen|Sun Dec 14 17:41:58 2025 +0800|Merge Official Source
+0fb6d482b7|Dirk Brenken|Sun Dec 14 07:11:19 2025 +0100|luci-app-adblock: sync with adblock 4.4.5-1
+e058c9f0bc|Hannu Nyman|Sat Dec 13 19:46:09 2025 +0200|treewide: backport translations and clean up old strings
+6da11f8743|SakuraFallingMad|Fri Nov 14 19:55:15 2025 +0800|luci-app-passwall: bump to 25.12.13
+a1d310c1aa|Dirk Brenken|Thu Dec 11 22:48:08 2025 +0100|luci-app-travelmate: sync with travelmate 2.3.0-1
+</details>

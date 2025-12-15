@@ -1,0 +1,10 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+24c1aff8d0|Jason Zou|Thu Dec 11 17:37:11 2025 +0800|rockchip: add support for Ariaboard Photonicat2
+3e1a9c313f|Tianling Shen|Sun Dec 14 19:34:16 2025 +0800|Merge Official Source
+5db1b65d3e|Álvaro Fernández Rojas|Sat Dec 13 12:24:49 2025 +0100|odhcpd: update to 25.12 Git HEAD (2025-12-13)
+74c8435ebd|David Woodhouse|Sat Nov 29 16:18:26 2025 +0000|image: add CONFIG_EXTRA_IMAGE_NAME
+25f32651f8|Paul Donald|Thu Dec 11 00:51:15 2025 +0100|apk: bump to 3.0.2
+</details>

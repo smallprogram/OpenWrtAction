@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e058c9f0bc|Hannu Nyman|Sat Dec 13 19:46:09 2025 +0200|treewide: backport translations and clean up old strings
+d3b061dc66|Dirk Brenken|Sun Dec 14 23:10:08 2025 +0100|luci-app-travelmate: update 2.3.0-2
+0fb6d482b7|Dirk Brenken|Sun Dec 14 07:11:19 2025 +0100|luci-app-adblock: sync with adblock 4.4.5-1
 </details>
