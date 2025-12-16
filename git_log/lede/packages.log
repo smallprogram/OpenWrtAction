@@ -1,0 +1,15 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+e89a08d1|coolsnowwolf|Mon Dec 15 10:03:35 2025 +0800|Merge pull request #1046 from zero-rp/master
+659f6f18|coolsnowwolf|Mon Dec 15 10:03:23 2025 +0800|Merge pull request #1049 from Internet1235/libffi
+b9062a83|coolsnowwolf|Mon Dec 15 10:03:10 2025 +0800|Merge pull request #1050 from Internet1235/adguardhome
+c533b897|coolsnowwolf|Mon Dec 15 10:02:58 2025 +0800|Merge pull request #1047 from Internet1235/make
+43691e1a|coolsnowwolf|Mon Dec 15 10:02:49 2025 +0800|Merge pull request #1051 from Internet1235/rust
+afe551c8|Internet1235|Sat Dec 13 20:27:53 2025 +0800|rust: update to 1.92.0
+efa518b0|Internet1235|Sat Dec 13 20:21:21 2025 +0800|adguardhome: update to 0.107.71
+222b296b|Internet1235|Thu Dec 11 12:39:02 2025 +0800|libffi: update to 3.5.2
+25830be6|Internet1235|Thu Dec 11 12:32:06 2025 +0800|make: update to 4.4.1
+bd2185db|z|Wed Dec 10 07:27:52 2025 +0800|update gcc to 14.3.0
+</details>
