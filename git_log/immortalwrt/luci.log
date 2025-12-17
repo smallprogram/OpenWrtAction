@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+3006da6f51|Tianling Shen|Tue Dec 16 12:14:42 2025 +0800|Merge Official Source
+f443858614|SakuraFallingMad|Mon Dec 15 14:54:18 2025 +0800|luci-app-passwall: bump to 25.12.16
 946f77ac26|mdevolde|Fri Dec 12 16:35:15 2025 +0100|luci-app-wol: Enables persistent configuration of hosts to wake up
 71d1d0cafe|Paul Donald|Sat Dec 13 18:58:45 2025 +0100|luci-base: propagate the multiple flag for RichListValue
 a09603a210|Paul Donald|Sat Dec 13 18:57:21 2025 +0100|luci-mod-network: reveal ra_preference as router priority
@@ -11,4 +13,5 @@ a09603a210|Paul Donald|Sat Dec 13 18:57:21 2025 +0100|luci-mod-network: reveal r
 ea45563c05|Paul Donald|Fri Dec 12 16:35:54 2025 +0100|luci-mod-network: ES6 refactor for diagnostics
 851a32f010|Richard Yu|Mon Sep 1 22:43:16 2025 +0800|luci-mod-network: diagnostics: add realtime command output
 2106f0952f|Richard Yu|Mon Sep 1 22:39:47 2025 +0800|luci-base: add `responseProgress` callback and `stderr` option for LuCI.request and `fs.exec_direct()`.
+d3b061dc66|Dirk Brenken|Sun Dec 14 23:10:08 2025 +0100|luci-app-travelmate: update 2.3.0-2
 </details>

@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f091f3a55|Chuanhong Guo|Tue Feb 4 14:18:27 2025 +0800|siflower: add support for kernel 6.12
+fc9c67482|coolsnowwolf|Tue Dec 16 10:47:00 2025 +0800|Revert "OpenWrt v25.12: set branch defaults"
 </details>

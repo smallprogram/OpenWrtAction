@@ -2,9 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7679ef6|A-BO|Tue Dec 16 01:43:58 2025 +0800|luci: bump version to 25.12.16
-557a385|A-BO|Tue Dec 16 01:40:56 2025 +0800|luci: fix QR code generation for certain nodes
-3fe2f9c|A-BO|Tue Dec 16 00:54:29 2025 +0800|luci: optimize some page display effects
-3797501|A-BO|Mon Dec 15 20:39:29 2025 +0800|luci: server outbound nodes use the `listvalue` template
-b4183da|A-BO|Mon Dec 15 20:36:57 2025 +0800|luci: optimize `listvalue` template and support 18.06
+e522f6d|A-BO|Tue Dec 16 22:49:31 2025 +0800|luci: separate `host` from `headers` in xray ws
+d7bad76|A-BO|Tue Dec 16 22:27:20 2025 +0800|luci: optimize `listvalue` template
+64c5a93|A-BO|Tue Dec 16 17:44:32 2025 +0800|luci: optimize node selection and dns depends logic
 </details>

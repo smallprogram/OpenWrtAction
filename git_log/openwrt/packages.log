@@ -1,8 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-11068c4ab|Dirk Brenken|Mon Dec 15 22:58:34 2025 +0100|adblock: update 4.4.5-2
-f3a0387ac|Hirokazu MORIKAWA|Mon Dec 15 17:42:33 2025 +0900|c-ares: bump to 1.34.6
-49cfc2a32|Paul Donald|Thu Dec 11 15:04:15 2025 +0100|cgi-io: update to Git 658b14bda (2025-12-11)
-</details>

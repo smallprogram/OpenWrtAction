@@ -2,14 +2,22 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7f4272dc18|Hauke Mehrtens|Tue Dec 16 01:22:26 2025 +0100|libcap: Revert "libcap: update to 2.77"
-81d7d379c7|Martin Nadvornik|Mon Dec 15 16:54:52 2025 +0100|mediatek: fix IPv4 address missing on interface in failsafe mode for cudy ap3000-v1
-7c4da36cf2|Rany Hany|Mon Oct 27 16:14:22 2025 +0000|wifi-scripts: ucode: improve formatting of expected throughput
-c743099fe1|Rany Hany|Sat Nov 29 00:04:09 2025 +0000|wifi-scripts: add support for using list for iface in wifi-station/vlan
-b13c6a732a|Rany Hany|Sat Nov 29 12:37:22 2025 +0200|wifi-scripts: fix broken match all case for wifi-vlan
-87fd61bd02|Robert Marko|Mon Dec 15 09:54:23 2025 +0100|ipq-wifi: update to Git HEAD (2025-12-15)
-ec22ac9401|Shiji Yang|Fri Dec 12 08:32:56 2025 +0800|kernel: rtl836x: remove legacy platform_data support
-bcbf4bd8ac|Markus Stockhausen|Sun Dec 14 10:07:38 2025 +0100|realtek: use devm_kzalloc() for serdes debugfs setup
-77b47f33e5|Markus Stockhausen|Sun Dec 14 10:03:47 2025 +0100|realtek: cleanup debugfs creation in serdes driver
-a53655ed14|Markus Stockhausen|Sun Dec 14 09:53:49 2025 +0100|realtek: simplify backing serdes calculation
+fe1b06f725|Hauke Mehrtens|Mon Dec 15 02:02:35 2025 +0100|kernel: Fix boot of realtek rtl838x
+0669972095|John Audia|Wed Dec 10 15:19:42 2025 -0500|kernel: bump 6.12 to 6.12.62
+74247287ad|Hauke Mehrtens|Wed Dec 17 00:06:24 2025 +0100|uboot-sunxi: fix u-boot build
+c432647d18|Rany Hany|Mon Dec 15 19:11:24 2025 +0200|wifi-scripts: update phys after rename_phy_by_name call
+88ab3205fe|Jonas Jelonek|Tue Dec 16 12:06:57 2025 +0000|realtek: mdio-serdes: use correct device table identifier
+c870f16350|Jonas Jelonek|Thu Dec 11 23:33:59 2025 +0000|realtek: pcs: move polarity into SerDes struct
+4d86ac6401|Jonas Jelonek|Sat Dec 13 10:48:52 2025 +0000|realtek: pcs: drop unneeded SerDes number range checks
+d2a34744fe|Jonas Jelonek|Sat Dec 13 20:12:13 2025 +0000|realtek: pcs: make use of SerDes struct in set_autoneg
+cf03520c71|Jonas Jelonek|Thu Dec 11 21:42:38 2025 +0000|realtek: pcs: make use of SerDes struct in SerDes setup
+0fe7f97896|Jonas Jelonek|Sat Dec 13 20:01:03 2025 +0000|realtek: pcs: switch to id from SerDes struct
+6f98353eec|Jonas Jelonek|Sat Dec 13 10:29:56 2025 +0000|realtek: pcs: assign SerDes reference upon PCS creation
+01cfdb1610|Jonas Jelonek|Sat Dec 13 10:16:21 2025 +0000|realtek: pcs: add helpers for even, odd, neighbor SerDes
+40201e7f73|Jonas Jelonek|Sat Dec 13 10:12:35 2025 +0000|realtek: pcs: add separate SerDes struct
+b9e5803d04|Jonas Jelonek|Sat Dec 13 09:10:55 2025 +0000|realtek: pcs: use per-variant SerDes count
+d8b1a54c78|Jonas Jelonek|Thu Dec 11 19:17:26 2025 +0000|realtek: pcs: add dedicated enum for SerDes modes
+
+.....................
+
 </details>
