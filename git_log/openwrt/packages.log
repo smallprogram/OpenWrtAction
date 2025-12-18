@@ -1,0 +1,7 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+4b32460e3|Hannu Nyman|Wed Dec 17 21:30:30 2025 +0200|irqbalance: Revert "irqbalance: update to 1.9.5"
+0e0c1f263|Daniel F. Dickinson|Sat Dec 13 01:29:36 2025 -0500|postgresql: fix missing symbols at runtime
+</details>

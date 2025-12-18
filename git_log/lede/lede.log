@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fc9c67482|coolsnowwolf|Tue Dec 16 10:47:00 2025 +0800|Revert "OpenWrt v25.12: set branch defaults"
+f9f6f5507|Paul Spooren|Tue May 14 12:36:59 2024 +0200|build: add APK package build capabilities
 </details>

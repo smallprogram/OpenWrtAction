@@ -2,22 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fe1b06f725|Hauke Mehrtens|Mon Dec 15 02:02:35 2025 +0100|kernel: Fix boot of realtek rtl838x
-0669972095|John Audia|Wed Dec 10 15:19:42 2025 -0500|kernel: bump 6.12 to 6.12.62
-74247287ad|Hauke Mehrtens|Wed Dec 17 00:06:24 2025 +0100|uboot-sunxi: fix u-boot build
-c432647d18|Rany Hany|Mon Dec 15 19:11:24 2025 +0200|wifi-scripts: update phys after rename_phy_by_name call
-88ab3205fe|Jonas Jelonek|Tue Dec 16 12:06:57 2025 +0000|realtek: mdio-serdes: use correct device table identifier
-c870f16350|Jonas Jelonek|Thu Dec 11 23:33:59 2025 +0000|realtek: pcs: move polarity into SerDes struct
-4d86ac6401|Jonas Jelonek|Sat Dec 13 10:48:52 2025 +0000|realtek: pcs: drop unneeded SerDes number range checks
-d2a34744fe|Jonas Jelonek|Sat Dec 13 20:12:13 2025 +0000|realtek: pcs: make use of SerDes struct in set_autoneg
-cf03520c71|Jonas Jelonek|Thu Dec 11 21:42:38 2025 +0000|realtek: pcs: make use of SerDes struct in SerDes setup
-0fe7f97896|Jonas Jelonek|Sat Dec 13 20:01:03 2025 +0000|realtek: pcs: switch to id from SerDes struct
-6f98353eec|Jonas Jelonek|Sat Dec 13 10:29:56 2025 +0000|realtek: pcs: assign SerDes reference upon PCS creation
-01cfdb1610|Jonas Jelonek|Sat Dec 13 10:16:21 2025 +0000|realtek: pcs: add helpers for even, odd, neighbor SerDes
-40201e7f73|Jonas Jelonek|Sat Dec 13 10:12:35 2025 +0000|realtek: pcs: add separate SerDes struct
-b9e5803d04|Jonas Jelonek|Sat Dec 13 09:10:55 2025 +0000|realtek: pcs: use per-variant SerDes count
-d8b1a54c78|Jonas Jelonek|Thu Dec 11 19:17:26 2025 +0000|realtek: pcs: add dedicated enum for SerDes modes
-
-.....................
-
+f1984e2e5a|Álvaro Fernández Rojas|Wed Dec 17 15:47:16 2025 +0100|odhcpd: update to 25.12 Git HEAD (2025-12-14)
+68e2095a8b|Álvaro Fernández Rojas|Wed Dec 17 15:28:40 2025 +0100|odhcp6c: update to 25.12 Git HEAD (2025-12-17)
+da669004ef|Markus Petri|Thu Dec 4 21:28:51 2025 +0100|vrx518_tc: fix rx_len_adj
+131071cd26|Janusz Dziedzic|Tue Dec 16 17:15:03 2025 +0000|linux-firmware: intel: bump BE200 wifi firmware
+fe635c56ac|Petr Štetiar|Tue Dec 16 16:42:19 2025 +0000|dropbear: bump to 2025.89 (CVE-2025-14282, CVE-2019-6111)
 </details>

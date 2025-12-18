@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e522f6d|A-BO|Tue Dec 16 22:49:31 2025 +0800|luci: separate `host` from `headers` in xray ws
-d7bad76|A-BO|Tue Dec 16 22:27:20 2025 +0800|luci: optimize `listvalue` template
-64c5a93|A-BO|Tue Dec 16 17:44:32 2025 +0800|luci: optimize node selection and dns depends logic
+a4237f7|A-BO|Wed Dec 17 21:00:25 2025 +0800|luci: optimize the logic of the node list modal window code
 </details>
