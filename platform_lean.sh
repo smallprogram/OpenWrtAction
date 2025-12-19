@@ -1,5 +1,5 @@
 # 默认源码文件夹名
-openwrt_dir_front=lean
+openwrt_dir_front=leanlede
 openwrt_dir=${openwrt_dir_front}_${openwrt_branch}_${config_name}
 # 默认的config目录
 config_dir=config/leanlede_config
