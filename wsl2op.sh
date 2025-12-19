@@ -91,15 +91,22 @@ git_user=smallprogram
 
 
 SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
-# 获取最新远程信息
+
 Func_LogMessage "正在从远程获取最新代码..." "Fetching the latest code from remote..."
-git fetch origin
 
-# 检查当前分支与远程分支是否一致（即是否有更新）
-if ! git diff --quiet HEAD origin/${owa_branch}; then
+# 关键改进：加上 --prune 并强制更新所有远程跟踪分支
+git fetch --prune origin "+refs/heads/*:refs/remotes/origin/*"
+
+# 可选：如果仍然担心引用损坏，再加一次强制更新指定分支（对 force push 更鲁棒）
+git fetch origin ${owa_branch}:refs/remotes/origin/${owa_branch} --force
+
+# 检查本地 HEAD 与远程最新是否一致
+if ! git diff --quiet HEAD origin/${owa_branch} 2>/dev/null; then
     Func_LogMessage "检测到远程更新，正在重置并重启..." "Remote updates detected. Resetting and restarting..."
-
+    
     git reset --hard origin/${owa_branch}
+    
+    # 重启脚本，保留所有参数
     exec bash "$SCRIPT_PATH" "$@"
 else
     Func_LogMessage "远程无更新，继续执行..." "No remote changes, continuing..."
