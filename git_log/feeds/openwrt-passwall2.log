@@ -1,0 +1,20 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+34577de|xiaorouji|Thu Dec 18 15:31:15 2025 +0800|luci: 25.12.18
+5d31c4b|A-BO|Wed Dec 17 21:00:25 2025 +0800|luci: optimize the logic of the node list modal window code
+678b26a|A-BO|Tue Dec 16 22:49:31 2025 +0800|luci: separate `host` from `headers` in xray ws
+0abc5be|A-BO|Tue Dec 16 01:40:56 2025 +0800|luci: fix QR code generation for certain nodes
+17c8364|A-BO|Tue Dec 16 00:54:29 2025 +0800|luci: optimize some page display effects
+0b38cff|A-BO|Mon Dec 15 20:39:29 2025 +0800|luci: server outbound nodes use the `listvalue` template
+1b3ddb5|A-BO|Sat Dec 13 13:30:28 2025 +0800|luci: add custom template for node listvalue option
+b7066a3|A-BO|Sat Dec 13 19:08:12 2025 +0800|luci: optimize `multivalue` saving logic
+b3338c6|A-BO|Sat Dec 13 14:37:56 2025 +0800|luci: optimize and fix `multivalue` template
+e72fd84|A-BO|Sat Dec 13 12:55:26 2025 +0800|luci: add reload action to init script
+31b5fea|A-BO|Sun Dec 7 02:35:42 2025 +0800|luci: optimize and refactoring the multivalue template
+8a7aee1|lwb1978|Mon Dec 8 10:24:06 2025 +0800|luci: add custom user-agent for xray/sing-box transport
+a65202a|A-BO|Sat Dec 6 00:44:26 2025 +0800|luci: optimize the logic for saving node list options
+b6afbe5|A-BO|Fri Dec 5 00:41:10 2025 +0800|luci: add reassign group function to node list
+77bb644|A-BO|Tue Dec 2 13:13:26 2025 +0800|luci: when using "to top", optimize node list drag save button
+</details>

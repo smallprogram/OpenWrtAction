@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4b32460e3|Hannu Nyman|Wed Dec 17 21:30:30 2025 +0200|irqbalance: Revert "irqbalance: update to 1.9.5"
-0e0c1f263|Daniel F. Dickinson|Sat Dec 13 01:29:36 2025 -0500|postgresql: fix missing symbols at runtime
+15884df50|Luiz Angelo Daros de Luca|Wed Dec 17 23:23:17 2025 -0300|ruby: update to 3.4.8
+c205a2c59|Luiz Angelo Daros de Luca|Tue Dec 16 16:33:02 2025 -0300|ruby: update to 3.4.7
+1f5c734bc|Jonas Jelonek|Tue Dec 16 21:29:48 2025 +0000|eza: update to 0.23.4
+265c3f421|Jonas Jelonek|Tue Dec 16 21:17:02 2025 +0000|croc: update to 10.3.1
 </details>

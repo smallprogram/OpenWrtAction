@@ -2,9 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f1984e2e5a|Álvaro Fernández Rojas|Wed Dec 17 15:47:16 2025 +0100|odhcpd: update to 25.12 Git HEAD (2025-12-14)
-68e2095a8b|Álvaro Fernández Rojas|Wed Dec 17 15:28:40 2025 +0100|odhcp6c: update to 25.12 Git HEAD (2025-12-17)
-da669004ef|Markus Petri|Thu Dec 4 21:28:51 2025 +0100|vrx518_tc: fix rx_len_adj
-131071cd26|Janusz Dziedzic|Tue Dec 16 17:15:03 2025 +0000|linux-firmware: intel: bump BE200 wifi firmware
-fe635c56ac|Petr Štetiar|Tue Dec 16 16:42:19 2025 +0000|dropbear: bump to 2025.89 (CVE-2025-14282, CVE-2019-6111)
+9e9b05130c|Álvaro Fernández Rojas|Thu Dec 18 18:34:27 2025 +0100|odhcpd: update to 25.12 Git HEAD (2025-12-18)
+988902fa9a|Álvaro Fernández Rojas|Thu Dec 18 18:56:35 2025 +0100|odhcp6c: update to 25.12 Git HEAD (2025-12-18)
 </details>
