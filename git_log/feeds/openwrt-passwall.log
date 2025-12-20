@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a5d8aa4|A-BO|Fri Dec 19 01:43:16 2025 +0800|luci: remove redundant variables
-c023733|A-BO|Fri Dec 19 00:01:17 2025 +0800|luci: fix bug
+89c82a5|lwb1978|Fri Dec 19 21:29:19 2025 +0800|luci: 25.12.19
+d60d402|lwb1978|Fri Dec 19 21:21:26 2025 +0800|luci: balancing/urltest can directly utilize the socks configuration
+d316bfc|A-BO|Fri Dec 19 13:36:58 2025 +0800|luci: tcp/udp nodes can directly utilize the socks configuration
 </details>

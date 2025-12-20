@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cc923d69e|coolsnowwolf|Thu Dec 18 10:18:55 2025 +0800|rockchip: Add ArmSoM W3 board support
+bf32b0d9b|Robert Marko|Thu Sep 25 11:18:56 2025 +0200|kernel: modules: add PWM GPIO module
 </details>
