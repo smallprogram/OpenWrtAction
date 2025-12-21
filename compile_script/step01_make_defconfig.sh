@@ -16,7 +16,7 @@ for i in "${selected_platforms[@]}"; do
     echo $i
     [ -e $CONFIGS/$i.config ] && cp -r $CONFIGS/$i.config openwrt/.config
     cd openwrt
-    cat ../config/seed/${source_code_platform}_seed.config >> .config
+    cat $GITHUB_WORKSPACE/config/seed/${source_code_platform}_seed.config >> .config
     echo ""
     echo "make defconfig for $i platform....."
     echo "result:"

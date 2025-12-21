@@ -50,29 +50,3 @@ echo "Updated feeds.conf.default"
 # ---------------------------------------------------------------end feeds update---------------------------------------------------------------
 
 clone_custom_packages
-
-
-# add some package from immortalwrt
-rm -rf temp_resp
-git clone -b master --single-branch  https://github.com/immortalwrt/immortalwrt.git temp_resp/immortalwrt
-git clone -b master --single-branch  https://github.com/immortalwrt/luci.git temp_resp/luci
-git clone -b master --single-branch  https://github.com/immortalwrt/packages.git temp_resp/packages
-
-cp -rf temp_resp/packages/utils/coremark ./feeds/packages
-cp -rf temp_resp/immortalwrt/package/emortal/autocore ./package/emortal
-
-cp -rf temp_resp/luci/applications/luci-app-cifs-mount ./feeds/luci/applications
-cp -rf temp_resp/luci/applications/luci-app-ddns-go ./feeds/luci/applications
-cp -rf temp_resp/packages/net/ddns-go ./feeds/packages/net
-cp -rf temp_resp/luci/applications/luci-app-diskman ./feeds/luci/applications
-cp -rf temp_resp/luci/applications/luci-app-eqos ./feeds/luci/applications
-cp -rf temp_resp/luci/applications/luci-app-homeproxy ./feeds/luci/applications
-cp -rf temp_resp/luci/applications/luci-app-netdata ./feeds/luci/applications
-cp -rf temp_resp/luci/applications/luci-app-ramfree ./feeds/luci/applications
-cp -rf temp_resp/luci/applications/luci-app-vlmcsd ./feeds/luci/applications
-cp -rf temp_resp/packages/net/vlmcsd ./feeds/packages/net
-cp -rf temp_resp/luci/applications/luci-app-wechatpush ./feeds/luci/applications
-
-rm -rf temp_resp
-
-
