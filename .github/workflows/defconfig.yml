@@ -17,12 +17,8 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-      is_display_detailed:
-        description: 'Whether to display detailed information about compilation'
-        required: false
-        default: 'false'
-      is_single_threaded:
-        description: 'Whether single-threaded compilation'
+      is_copy_seeds:
+        description: 'Do you want to copy the seed?'
         required: false
         default: 'false'
   # schedule:
@@ -123,7 +119,7 @@ jobs:
           chmod +x $MAKE_DEFCONFIG_SH
           cd openwrt
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
-          $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
+          $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}" "${{ github.event.inputs.ssh }}"
 
       - name: Merge and push changes with "theirs" strategy
         run: |

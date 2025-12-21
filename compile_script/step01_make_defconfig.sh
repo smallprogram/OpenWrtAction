@@ -2,6 +2,7 @@
 source $GITHUB_WORKSPACE/compile_script/platforms.sh
 source_code_platform=$1
 CONFIGS=$2
+Is_Copy_Seeds=$3
 
 if [[ "$source_code_platform" == "openwrt" ]]; then
   selected_platforms=("${openwrt_platforms[@]}")
@@ -16,7 +17,12 @@ for i in "${selected_platforms[@]}"; do
     echo $i
     [ -e $CONFIGS/$i.config ] && cp -r $CONFIGS/$i.config openwrt/.config
     cd openwrt
-    cat $GITHUB_WORKSPACE/config/seed/${source_code_platform}_seed.config >> .config
+    if [[ "$Is_Copy_Seeds" == "true" ]]; then
+      echo ""
+      echo "copy seed for $i platform....."
+      cat $GITHUB_WORKSPACE/config/seed/${source_code_platform}_seed.config >> .config
+      echo ""
+    fi
     echo ""
     echo "make defconfig for $i platform....."
     echo "result:"
