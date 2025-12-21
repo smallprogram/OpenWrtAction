@@ -119,7 +119,7 @@ jobs:
           chmod +x $MAKE_DEFCONFIG_SH
           cd openwrt
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
-          $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}" "${{ github.event.inputs.ssh }}"
+          $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}" "${{ github.event.inputs.is_copy_seeds }}"
 
       - name: Merge and push changes with "theirs" strategy
         run: |
