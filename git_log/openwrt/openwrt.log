@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-02f9e71dd2|Hauke Mehrtens|Sat Dec 20 00:20:16 2025 +0100|OpenWrt v25.12.0-rc1: revert to branch defaults
-b1a74b1cde|Hauke Mehrtens|Sat Dec 20 00:20:13 2025 +0100|OpenWrt v25.12.0-rc1: adjust config defaults
-</details>
