@@ -11,7 +11,7 @@
 #
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-source "$SCRIPT_DIR/../custom_feeds_and_packages.sh"
+source "$SCRIPT_DIR/immortalwrt_custom_feeds_and_packages.sh"
 
 # ---------------------------------------------------------------feeds update---------------------------------------------------------------
 # 备份原始 feeds.conf.default
