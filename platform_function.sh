@@ -145,8 +145,12 @@ function Func_SyncGitSource(){
         is_first_compile=1
     else
         cd ${openwrt_dir}
-        git fetch origin
+        
+        git fetch --prune origin
+
         git reset --hard origin/${openwrt_branch}
+
+
         cd /home/${user_name}
         is_first_compile=0
     fi
