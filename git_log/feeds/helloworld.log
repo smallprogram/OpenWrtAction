@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2b01d98|zxl hhyccc|Sat Dec 20 00:01:32 2025 +0800|Merge pull request #1844 from zxlhhyccc/tuic
-d4a21b4|zxlhhyccc|Mon Dec 15 23:31:12 2025 +0800|luci-app-ssr-plus: Fix the issue where Xray nodes with download IP cannot proxie.
+60286e6|zxl hhyccc|Sun Dec 21 00:17:32 2025 +0800|Merge pull request #1847 from zxlhhyccc/tuic
+43535dc|zxlhhyccc|Sat Dec 20 20:57:47 2025 +0800|luci-app-ssr-plus: Fix `TUIC` configuration and subscribe.
 </details>

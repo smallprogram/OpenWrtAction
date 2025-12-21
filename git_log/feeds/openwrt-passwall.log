@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-89c82a5|lwb1978|Fri Dec 19 21:29:19 2025 +0800|luci: 25.12.19
-d60d402|lwb1978|Fri Dec 19 21:21:26 2025 +0800|luci: balancing/urltest can directly utilize the socks configuration
-d316bfc|A-BO|Fri Dec 19 13:36:58 2025 +0800|luci: tcp/udp nodes can directly utilize the socks configuration
+3569af7|A-BO|Sat Dec 20 14:18:30 2025 +0800|luci: remove the outdated `sniff_override_destination` option from sing-box
 </details>
