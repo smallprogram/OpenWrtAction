@@ -175,7 +175,7 @@ function Func_CleanCompile(){
     sleep 1s
 
     mkdir -p /home/${user_name}/${log_folder_name}
-    mkdir /home/${user_name}/${log_folder_name}/${folder_name}
+    mkdir -p /home/${user_name}/${log_folder_name}/${folder_name}
 
     echo -e $begin_date >/home/${user_name}/${log_folder_name}/${folder_name}/Func_Main6_Compile_Time-git_log.log
 
@@ -584,20 +584,28 @@ function Func_Main() {
             sleep 1s
 
             mkdir -p /home/${user_name}/${log_folder_name}
-            mkdir /home/${user_name}/${log_folder_name}/${folder_name}
+            mkdir -p /home/${user_name}/${log_folder_name}/${folder_name}
 
             echo -e $begin_date >/home/${user_name}/${log_folder_name}/${folder_name}/Func_Main6_Compile_Time-git_log.log
 
             Func_LogSuccess "编译日志文件夹创建成功" "The compilation log folder was created successfully"
             sleep 1s
-            Func_LogMessage "开始编译！！" "Start compiling! !"
-            sleep 1s
+
+
+            Func_SyncGitSource
+            cd /home/${user_name}/${openwrt_dir}
+            Func_DIY1_Script
+            Func_FeedsUpdate
+            Func_DIY2_Script
+            Func_Copy_Backgroundfiles "1" "${config_name}"
 
             echo
             Func_LogMessage "开始将OpenwrtAction中config文件夹下的${config_name}注入源码中...." "Start to inject ${config_name} under the config folder in OpenwrtAction into source code..."
             sleep 2s
             echo
             cp /home/${user_name}/OpenWrtAction/$config_dir/${config_name} /home/${user_name}/${openwrt_dir}/.config
+
+            
 
 
             cd /home/${user_name}/${openwrt_dir}
