@@ -699,8 +699,34 @@ function Func_Main() {
         Func_DIY2_Script
         rm -rf .config
         make menuconfig
-        cat ../OpenWrtAction/config/seed/${openwrt_dir_front}_seed.config >> .config
-        make defconfig
+
+        Func_LogMessage "是否加载seed" "Is it add seed?"
+        Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
+        Func_LogMessage "1. 是(默认值)" "1.Yes(Default)"
+        Func_LogMessage "2. 不加载seed" "2.NO"
+        read -t $timer is_add_seed
+        if [ ! -n "$is_add_seed" ]; then
+            is_add_seed=1
+        fi
+        until [[ $is_add_seed -ge 1 && $is_add_seed -le 2 ]]; do
+            Func_LogMessage "你输入的 ${is_add_seed} 是啥玩应啊，看好了序号，输入数值就行了。" "What's the answer for the ${is_add_seed} you entered? Just enter the number after you are optimistic about the serial number."
+            Func_LogMessage "是否加载seed" "Is it add seed?"
+            Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
+            Func_LogMessage "1. 是(默认值)" "1.Yes(Default)"
+            Func_LogMessage "2. 不加载seed" "2.NO"
+            read -t $timer is_add_seed
+            if [ ! -n "$is_add_seed" ]; then
+                is_add_seed=1
+                Func_LogSuccess "使用默认值" "Use default"
+            fi
+        done
+        if [[ $is_add_seed == 1 ]]; then
+            cat ../OpenWrtAction/config/seed/${openwrt_dir_front}_seed.config >> .config
+            make defconfig
+        fi
+        
+
+
         cp -f .config ../OpenWrtAction/config/${openwrt_dir_front}_config/${config_name}
         if [ -n "$(git status -s)" ]; then
             git add .
