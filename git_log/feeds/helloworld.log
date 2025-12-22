@@ -1,7 +1,0 @@
-<details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-60286e6|zxl hhyccc|Sun Dec 21 00:17:32 2025 +0800|Merge pull request #1847 from zxlhhyccc/tuic
-43535dc|zxlhhyccc|Sat Dec 20 20:57:47 2025 +0800|luci-app-ssr-plus: Fix `TUIC` configuration and subscribe.
-</details>

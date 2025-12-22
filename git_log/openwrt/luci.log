@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6ce15520fc|Hannu Nyman|Sat Dec 20 16:58:43 2025 +0200|treewide: backport translations
+0bd044b9cf|Paul Donald|Mon Dec 22 02:07:08 2025 +0100|luci-mod-status: fix case error
 </details>
