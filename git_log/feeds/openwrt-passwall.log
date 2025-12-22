@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-3569af7|A-BO|Sat Dec 20 14:18:30 2025 +0800|luci: remove the outdated `sniff_override_destination` option from sing-box
-</details>

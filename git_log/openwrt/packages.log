@@ -2,9 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-24dad746a|George Sapkin|Fri Dec 19 15:02:28 2025 +0200|uw-imap: drop package
-43d222b7c|Sandro Jäckel|Sat Dec 20 03:25:59 2025 +0100|tailscale: update to 1.92.3
-d3c786091|Sandro Jäckel|Tue Dec 16 02:08:28 2025 +0100|tailscale: update to 1.92.2
-95edc0183|George Sapkin|Wed Dec 17 16:13:01 2025 +0200|vim: add SPDX license identifier
-24fd3dadd|George Sapkin|Sat Dec 13 18:19:44 2025 +0200|vim: fix config and runtime
+0db8f2138|Daniel F. Dickinson|Sun Dec 14 11:17:35 2025 -0500|zabbix: transfer maintenance to myself
+fdc246b0c|Daniel F. Dickinson|Mon Dec 15 02:49:33 2025 -0500|zabbix: update to 7.0.21 (lts)
 </details>
