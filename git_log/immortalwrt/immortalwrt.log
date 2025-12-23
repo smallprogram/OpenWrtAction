@@ -1,0 +1,10 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+45dca08157|Tianling Shen|Mon Dec 22 14:39:15 2025 +0800|Merge Official Source
+02f9e71dd2|Hauke Mehrtens|Sat Dec 20 00:20:16 2025 +0100|OpenWrt v25.12.0-rc1: revert to branch defaults
+b1a74b1cde|Hauke Mehrtens|Sat Dec 20 00:20:13 2025 +0100|OpenWrt v25.12.0-rc1: adjust config defaults
+9e9b05130c|Álvaro Fernández Rojas|Thu Dec 18 18:34:27 2025 +0100|odhcpd: update to 25.12 Git HEAD (2025-12-18)
+988902fa9a|Álvaro Fernández Rojas|Thu Dec 18 18:56:35 2025 +0100|odhcp6c: update to 25.12 Git HEAD (2025-12-18)
+</details>
