@@ -1,0 +1,13 @@
+<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+8be7080|Joseph Mory|Mon Dec 22 17:12:29 2025 +0800|feat: add tun timeout/interval options
+8f0b1ec|Joseph Mory|Mon Dec 22 16:16:25 2025 +0800|ci: add support for openwrt 25.12
+2fa054b|Joseph Mory|Mon Dec 22 15:43:10 2025 +0800|chore: bump version to 1.25.0
+87b383c|Joseph Mory|Mon Dec 22 15:41:08 2025 +0800|feat: bring back reserved ip options
+6a0452b|Joseph Mory|Mon Dec 22 14:56:14 2025 +0800|feat: bypass fwmark
+780af34|Joseph Mory|Mon Dec 22 12:40:38 2025 +0800|fix: `RLIMIT_NOFILE` doesn't support `unlimited`
+4021486|Joseph Mory|Mon Dec 22 10:53:07 2025 +0800|chore: update mihomo to 1.19.18
+67b3ea4|Joseph Mory|Mon Dec 22 10:18:53 2025 +0800|feat: add dns mixin options
+</details>

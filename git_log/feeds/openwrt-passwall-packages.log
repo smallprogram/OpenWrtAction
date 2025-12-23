@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9feb8ca|github-actions[bot]|Sun Dec 21 20:02:02 2025 +0800|v2ray-geosite: update to 202512202213 (#551)
-aa5df69|zhusir|Sun Dec 21 15:49:56 2025 +0800|v2ray-geodata: update PKG_RELEASE
+bda4246|A-BO|Mon Dec 22 20:55:40 2025 +0800|microsocks: add socks5 forwarding rules support (#552)
 </details>

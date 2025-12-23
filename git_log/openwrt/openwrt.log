@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+c3cf33f98b|Radek Dostál|Sun Dec 14 10:37:06 2025 +0100|ath79: fix build of big images for TP RE355v1, RE450v1 & v2
+623e329a52|Mikhail Kshevetskiy|Fri Nov 22 01:29:06 2024 +0300|mediatek: fix pwn fan settings for sinovoip bpi-r3 (v3)
+</details>

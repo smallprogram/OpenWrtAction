@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0db8f2138|Daniel F. Dickinson|Sun Dec 14 11:17:35 2025 -0500|zabbix: transfer maintenance to myself
-fdc246b0c|Daniel F. Dickinson|Mon Dec 15 02:49:33 2025 -0500|zabbix: update to 7.0.21 (lts)
+d166d5677|Wesley Gimenes|Thu Dec 18 09:59:41 2025 -0300|netbird: update to 0.60.8 (breaking change)
+c9c8ecce3|Wesley Gimenes|Thu Dec 18 09:59:02 2025 -0300|netbird: update to 0.59.13
 </details>

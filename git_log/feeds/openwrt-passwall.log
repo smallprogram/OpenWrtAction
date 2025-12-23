@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+33784fd|A-BO|Tue Dec 23 03:45:53 2025 +0800|luci: add modified version of microsocks for socks node forwarding
+9e26596|A-BO|Tue Dec 23 03:44:50 2025 +0800|luci: optimize the app.sh `first_type` function
+</details>
