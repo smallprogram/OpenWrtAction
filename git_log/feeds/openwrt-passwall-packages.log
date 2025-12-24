@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+ee78424|A-BO|Tue Dec 23 16:13:43 2025 +0800|microsocks: add socks5 forwarding rules support (#553)
 bda4246|A-BO|Mon Dec 22 20:55:40 2025 +0800|microsocks: add socks5 forwarding rules support (#552)
 </details>

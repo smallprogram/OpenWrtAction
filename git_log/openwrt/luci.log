@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0bd044b9cf|Paul Donald|Mon Dec 22 02:07:08 2025 +0100|luci-mod-status: fix case error
+214ea72a68|Liangbin Lian|Tue Dec 23 15:14:46 2025 +0800|luci-mod-network: show "dhcpv4" option for dnsmasq
+55b3c43eb1|David Härdeman|Sun Dec 14 19:43:45 2025 +0100|luci-mod-network: update dhcpv6_pd_min_len values
 </details>
