@@ -1,0 +1,10 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+116083dd91|George Sapkin|Wed Dec 24 04:32:01 2025 +0200|toolchain: fix libgcc ABI for libc
+eaeae068cc|George Sapkin|Wed Dec 24 04:28:49 2025 +0200|build: fix missing PKG_INFO_DIR
+e0ea3d73d2|George Sapkin|Thu Nov 20 01:50:03 2025 +0200|build: fix apk packaging and ABI-versioning
+2da39423ed|George Moussalem|Fri Dec 19 11:18:04 2025 +0400|qualcommax: ipq50xx: fix reo2host-status interrupt vector
+a4a2638590|Robert Marko|Tue Dec 23 14:08:26 2025 +0100|microchipsw: sync with DTS sent upstream
+</details>

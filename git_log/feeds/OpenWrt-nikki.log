@@ -1,6 +1,0 @@
-<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-4721dd2|Joseph Mory|Tue Dec 23 10:52:06 2025 +0800|ci: skip build for openwrt-25.12 on mips_4kec
-</details>

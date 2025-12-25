@@ -2,5 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8a1fff39c|Wesley Gimenes|Sat Dec 20 21:35:54 2025 -0300|2to3: remove package
+f7f50a869|Michael Heimpold|Fri Dec 19 16:56:16 2025 +0100|php8: update to 8.4.16
+da88909f8|Michael Heimpold|Sat Dec 20 14:47:57 2025 +0100|php8: fix dependency of php8-mod-xmlreader to php8-mod-dom
+62b9d577c|Daniel F. Dickinson|Sun Dec 14 20:29:19 2025 -0500|php8: bump PKG_RELEASE
+d3e8dd288|Daniel F. Dickinson|Sun Dec 14 02:24:05 2025 -0500|php8: xml modules affect others
+48f0206f0|Daniel F. Dickinson|Sun Dec 14 01:26:04 2025 -0500|php8: module selection affects other sub-packages
 </details>
