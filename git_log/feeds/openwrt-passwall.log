@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e280826|A-BO|Wed Dec 24 00:36:56 2025 +0800|luci: optimize footer node actions rendering logic
-940779e|A-BO|Tue Dec 23 22:29:32 2025 +0800|luci: optimize socks config file naming logic in xray/sing-box
-7dec0fd|LGA1150|Tue Dec 23 16:27:09 2025 +0800|luci: add Xray TCP fast open (#4205)
+745cb57|A-BO|Thu Dec 25 00:32:51 2025 +0800|luci: perform simple fault-tolerant processing for xray `xhttp extra`
+5a26c29|A-BO|Wed Dec 24 22:38:10 2025 +0800|luci: improve the timing of adding node function buttons
 </details>

@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-841540fc1|John Audia|Thu Dec 18 10:10:55 2025 -0500|kernel: bump 6.12 to latest HEAD
+8db09d2ea|Hauke Mehrtens|Sun Jun 25 21:46:45 2023 +0200|procd: update to latest git HEAD
 </details>
