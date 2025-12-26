@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+53f05ba|xiaorouji|Thu Dec 25 19:46:38 2025 +0800|luci: bump to 25.12.25 Merry Chrismas~!
+a2162e2|A-BO|Thu Dec 25 11:04:55 2025 +0800|luci: optimize xray/sing-box user-agent settings
+487b04b|A-BO|Thu Dec 25 00:32:51 2025 +0800|luci: perform simple fault-tolerant processing for xray `xhttp extra`
+</details>
