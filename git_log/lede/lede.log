@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-240bb5de3|Rany Hany|Mon May 13 20:38:12 2024 +0300|iproute2: fix build on GCC 14
+d27bc7d04|aiamadeus|Mon Dec 22 21:10:18 2025 +0800|d1: fix usb and enable overlay
 </details>
