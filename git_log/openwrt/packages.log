@@ -2,10 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9550e2df7|Wei-Ting Yang|Wed Dec 17 22:54:05 2025 +0800|grep: update to 3.12
-ead6ede97|George Sapkin|Tue Dec 23 22:14:06 2025 +0200|etebase: switch to nginx
-4ea929b96|George Sapkin|Tue Dec 23 22:11:13 2025 +0200|nginx: fix provides
-6900f82da|George Sapkin|Mon Dec 22 03:28:07 2025 +0200|tar: fix circular dependency on xz
-1a6219d97|George Sapkin|Fri Dec 19 15:20:41 2025 +0200|chicken-scheme: fix EXTRA_DEPENDS
-d6cb12f56|George Sapkin|Fri Dec 19 15:13:39 2025 +0200|tar: fix EXTRA_DEPENDS
+801be7011|Daniel F. Dickinson|Tue Dec 9 00:24:07 2025 -0500|zabbix: tweak frontend dependencies
+7c582d0d4|TeleostNaCl Dai|Wed Dec 24 22:59:36 2025 +0800|vim: fix depends configuration
 </details>

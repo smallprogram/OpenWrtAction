@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2acfd9f8ab|Nick Hainke|Thu Dec 25 20:32:28 2025 +0100|wifi-scripts: ucode: fix wpa_supplicant mesh
-8bf13dcb36|Dominic Germain|Fri Dec 19 09:46:57 2025 -0500|kernel: add option for USB FunctionFS gadget
-c8b98eab98|Alexander Patrakov|Sun Sep 28 03:59:41 2025 +0800|comgt-ncm: fix setting ip[46]table and MTU
+d23f614451|Dmitry Mostovoy|Thu Dec 25 11:18:57 2025 +0300|mediatek: add kmod-usb3 to default package set of WR3000P
+e7d89ac0ea|Nick French|Thu Dec 25 09:53:37 2025 -0600|ath79: Fix syntax error in 10_fix_wifi_mac
+51aa6d184a|Elwin Huang|Wed Dec 24 14:01:32 2025 +0800|wifi-scripts: add missing 802.11be type in hwmodelist
+400c1c5ea8|Robert Senderek|Tue Dec 16 14:49:40 2025 +0100|qualcommax: ipq50xx: remove cpufreq scaling
 </details>

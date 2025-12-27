@@ -1,0 +1,6 @@
+<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+8ea63e5|Joseph Mory|Fri Dec 26 09:47:52 2025 +0800|fix: format random string for api secret and authentication password
+</details>
