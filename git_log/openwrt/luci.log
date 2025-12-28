@@ -1,7 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-78a62f261b|zhusir|Mon Dec 15 20:03:02 2025 +0800|luci-app-acme: fixed the issue where certificates were not displaying (#8151)
-99766c2634|Liangbin Lian|Thu Dec 25 12:58:32 2025 +0800|luci.mk: fix the rpcd reload command
-</details>

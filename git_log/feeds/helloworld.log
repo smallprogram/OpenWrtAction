@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-466df47|zxl hhyccc|Fri Dec 26 13:06:47 2025 +0800|Merge pull request #1853 from zxlhhyccc/tuic
-3eec970|zxlhhyccc|Thu Dec 25 23:27:47 2025 +0800|luci-app-ssr-plus: Fix configuration issue of vmess protocol.
+f71e4f6|zxl hhyccc|Sun Dec 28 00:19:13 2025 +0800|Merge pull request #1854 from zxlhhyccc/tuic
+16765d9|zxlhhyccc|Sat Dec 27 22:58:33 2025 +0800|luci-app-ssr-plus: Update scheduling configuration for periodic update.
+dc8015b|zxlhhyccc|Sat Dec 27 20:46:29 2025 +0800|luci-app-ssr-plus: Fix up/down and add top/bottom.
+f3afb82|zxl hhyccc|Sat Dec 27 09:50:43 2025 +0800|luci-app-ssr-plus: fix clearing luci cache.
 </details>
