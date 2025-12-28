@@ -1,7 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-b9e24259e9|cvb011|Tue Dec 23 09:48:21 2025 +0800|rockchip: adjust photonicat2 default image config
-61d4084e40|Jason Zou|Tue Dec 23 08:11:30 2025 +0800|kernel: add phtotnicat2 power management driver
-</details>

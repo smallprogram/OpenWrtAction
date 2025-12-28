@@ -1,7 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-801be7011|Daniel F. Dickinson|Tue Dec 9 00:24:07 2025 -0500|zabbix: tweak frontend dependencies
-7c582d0d4|TeleostNaCl Dai|Wed Dec 24 22:59:36 2025 +0800|vim: fix depends configuration
-</details>
