@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8371a40|lwb1978|Sat Dec 27 23:45:36 2025 +0800|luci: optimize `listvalue` templates to adapt to some themes
-44526aa|zxl hhyccc|Sat Dec 27 14:11:09 2025 +0800|luci: fix clearing luci cache. (#4208)
-2991ae1|lwb1978|Sat Dec 27 13:43:10 2025 +0800|luci: optimize the experience of `listvalue` and `multivalue` templates on mobile devices
+2b8c0ca5|lwb1978|Sun Dec 28 18:38:10 2025 +0800|luci: optimize `listvalue` templates to adapt to some themes
+8371a403|lwb1978|Sat Dec 27 23:45:36 2025 +0800|luci: optimize `listvalue` templates to adapt to some themes
 </details>

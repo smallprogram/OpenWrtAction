@@ -1,0 +1,11 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+fe83fcfc9|Tianling Shen|Sun Dec 14 19:30:25 2025 +0800|yq: Update to 4.50.1
+de17f0613|Tianling Shen|Sun Dec 14 19:30:01 2025 +0800|xray-core: Update to 25.12.8
+2185858eb|Tianling Shen|Sun Dec 14 19:29:41 2025 +0800|dnsproxy: Update to 0.78.2
+0042543b0|Tianling Shen|Sun Dec 14 19:29:09 2025 +0800|rclone: Update to 1.72.1
+66d589c26|Daniel F. Dickinson|Fri Dec 26 00:30:21 2025 -0500|curl: enable wrongly disabled HTTP_AUTH
+976f67e8c|Self-Hosting-Group|Thu Dec 18 00:00:00 2025 +0000|miniupnpd: update to 2.3.9 to fix issues, refresh building
+</details>
