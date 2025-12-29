@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d713ff9|stefanlei|Sat Dec 27 22:28:15 2025 +0800|Add apk package manager support and architecture doc link
+b364295|stefanlei|Sun Dec 28 10:49:14 2025 +0800|docs: add warning about disabling hardware flow offloading
 </details>

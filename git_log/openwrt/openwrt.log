@@ -2,9 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a9bc5059c2|Florian Maurer|Tue Dec 16 16:12:08 2025 +0100|ath79: cf-ew71-v2: set label-mac-device to eth1
-571d716e69|Nick Hainke|Sat Dec 27 13:43:47 2025 +0100|wifi-scripts: fix race in wireless interface creation
-380e5ea1f2|Markus Stockhausen|Tue Dec 23 21:29:46 2025 +0100|realtek: fix Linksys LGS328C dts memory definition
-a06553be26|Nick Hainke|Fri Dec 26 18:35:01 2025 +0100|wifi-scripts: fix mcast_rate type (number, not array)
-a32c5c69dc|Nick Hainke|Thu Dec 25 18:41:10 2025 +0100|wifi-scripts: fix wdev fallback for mesh interfaces
+d819a05a8e|Mikhail Kshevetskiy|Sat Dec 27 08:28:09 2025 +0300|airoha: spi: update airoha-snfi patches and en7523 dts
+ffd0e5c9f0|Qingfang Deng|Fri Dec 12 10:53:11 2025 +0800|mvebu: enable tickless idle
 </details>

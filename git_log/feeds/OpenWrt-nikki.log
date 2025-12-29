@@ -1,0 +1,6 @@
+<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0ea8cdb|myannnascar|Mon Dec 29 09:40:21 2025 +0800|chore: remove `nikki` from `PROVIDES` in `nikki/Makefile`
+</details>
