@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2b8c0ca5|lwb1978|Sun Dec 28 18:38:10 2025 +0800|luci: optimize `listvalue` templates to adapt to some themes
-8371a403|lwb1978|Sat Dec 27 23:45:36 2025 +0800|luci: optimize `listvalue` templates to adapt to some themes
+414806b|LGA1150|Tue Dec 30 09:29:38 2025 +0800|luci: add Xray pre-connect (testpre) (#4210)
+9dabbb6|A-BO|Tue Dec 30 01:09:52 2025 +0800|luci: add `value` template to the node selector of haproxy
 </details>

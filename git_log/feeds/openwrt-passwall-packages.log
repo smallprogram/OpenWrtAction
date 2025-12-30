@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b13eaea|A-BO|Mon Dec 29 20:20:13 2025 +0800|geoview: update to 0.2.0
+b039058|A-BO|Mon Dec 29 20:14:45 2025 +0800|microsocks: fix C90 compliance
+</details>

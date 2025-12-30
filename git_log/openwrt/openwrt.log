@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-d819a05a8e|Mikhail Kshevetskiy|Sat Dec 27 08:28:09 2025 +0300|airoha: spi: update airoha-snfi patches and en7523 dts
-ffd0e5c9f0|Qingfang Deng|Fri Dec 12 10:53:11 2025 +0800|mvebu: enable tickless idle
-</details>

@@ -1,6 +1,0 @@
-<details> <summary> <b>luci-app-bandix new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-b364295|stefanlei|Sun Dec 28 10:49:14 2025 +0800|docs: add warning about disabling hardware flow offloading
-</details>

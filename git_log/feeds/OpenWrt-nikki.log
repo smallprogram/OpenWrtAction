@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0ea8cdb|myannnascar|Mon Dec 29 09:40:21 2025 +0800|chore: remove `nikki` from `PROVIDES` in `nikki/Makefile`
+952ab1e|Joseph Mory|Mon Dec 29 15:31:41 2025 +0800|chore: cleanup code
 </details>
