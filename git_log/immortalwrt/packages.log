@@ -2,22 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4a6b918a7|ImmortalWrt AutoUpdate Bot|Sun Dec 28 18:37:40 2025 +0800|sing-box: Update to 1.12.14
-f9e5b3134|ImmortalWrt AutoUpdate Bot|Sun Dec 28 18:38:14 2025 +0800|ddns-go: Update to 6.14.1
-c58a4c161|Tianling Shen|Sun Dec 28 18:40:24 2025 +0800|Merge Official Source
-fe83fcfc9|Tianling Shen|Sun Dec 14 19:30:25 2025 +0800|yq: Update to 4.50.1
-de17f0613|Tianling Shen|Sun Dec 14 19:30:01 2025 +0800|xray-core: Update to 25.12.8
-2185858eb|Tianling Shen|Sun Dec 14 19:29:41 2025 +0800|dnsproxy: Update to 0.78.2
-0042543b0|Tianling Shen|Sun Dec 14 19:29:09 2025 +0800|rclone: Update to 1.72.1
-66d589c26|Daniel F. Dickinson|Fri Dec 26 00:30:21 2025 -0500|curl: enable wrongly disabled HTTP_AUTH
-976f67e8c|Self-Hosting-Group|Thu Dec 18 00:00:00 2025 +0000|miniupnpd: update to 2.3.9 to fix issues, refresh building
-801be7011|Daniel F. Dickinson|Tue Dec 9 00:24:07 2025 -0500|zabbix: tweak frontend dependencies
-7c582d0d4|TeleostNaCl Dai|Wed Dec 24 22:59:36 2025 +0800|vim: fix depends configuration
-9550e2df7|Wei-Ting Yang|Wed Dec 17 22:54:05 2025 +0800|grep: update to 3.12
-ead6ede97|George Sapkin|Tue Dec 23 22:14:06 2025 +0200|etebase: switch to nginx
-4ea929b96|George Sapkin|Tue Dec 23 22:11:13 2025 +0200|nginx: fix provides
-6900f82da|George Sapkin|Mon Dec 22 03:28:07 2025 +0200|tar: fix circular dependency on xz
-
-.....................
-
+140e5b371|Tianling Shen|Mon Dec 29 17:13:26 2025 +0800|Merge Official Source
+9d33f54be|Ivan Belokobylskiy|Fri Dec 26 14:46:58 2025 +0400|python-aio-mqtt-mod: update to 0.4.0
+ac735c8e2|Paul Donald|Fri Dec 26 18:21:26 2025 +0100|freeradius3: bump to 3.2.8
+db6d28bcc|zhusir|Mon Dec 29 12:21:52 2025 +0800|miniupnpd: remove upstreamed patches
 </details>

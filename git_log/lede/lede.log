@@ -1,0 +1,6 @@
+<details> <summary> <b>lede new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+7919c21fc|aiamadeus|Sun Dec 28 21:09:30 2025 +0800|kernel: fix drm module depends
+</details>
