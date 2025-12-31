@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1c6be57|zxl hhyccc|Mon Dec 29 23:45:36 2025 +0800|Merge pull request #1858 from zxlhhyccc/tuic
-0a29059|zxlhhyccc|Mon Dec 29 21:59:56 2025 +0800|luci-app-ssr-plus: Optimize server list code.
+02485f1|zxl hhyccc|Tue Dec 30 23:34:37 2025 +0800|Merge pull request #1860 from zxlhhyccc/tuic
+5f30e98|zxlhhyccc|Tue Dec 30 21:23:20 2025 +0800|luci-app-ssr-plus: add Xray pre-connect (testpre).
 </details>

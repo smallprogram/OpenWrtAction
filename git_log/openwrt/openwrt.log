@@ -1,0 +1,10 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0d3e93e7ba|Eric Fahlgren|Mon Nov 3 12:34:37 2025 -0800|mediatek: filogic: fix supported_devices list for gl-mt2500
+234b367b10|Andrii Kuiukoff|Wed Dec 24 19:50:40 2025 +0200|uboot-mediatek: comfast,cf-wr632ax: fix missing escape sequence
+1818f4fbce|Hauke Mehrtens|Sun Dec 28 23:03:32 2025 +0100|wifi-scripts: use OWE + country for 6GHz
+ff713d3d9e|Leon M. Busch-George|Thu Dec 18 22:24:51 2025 +0100|wifi-scripts: don't set wpa_pairwise for wpa=0
+948b1b564d|Álvaro Fernández Rojas|Mon Dec 29 18:25:47 2025 +0100|odhcp6c: update to 25.12 Git HEAD (2025-12-29)
+</details>
