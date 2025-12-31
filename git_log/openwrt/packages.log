@@ -2,15 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d37583274|Josef Schlehofer|Mon Dec 29 13:11:18 2025 +0100|jq: refactor variants and fix PROVIDES
-a6a63bd11|Daniel F. Dickinson|Sun Dec 28 20:26:51 2025 -0500|tree-wide: remove obsolete SDK in conditionals
-8134bfb8a|Ivan Diaz|Tue Dec 23 08:30:29 2025 -0500|luci-app-watchcat: revert unnecessary quoting in init script
-abb72cef7|Vasileios Anagnostopoulos|Wed Nov 26 14:50:07 2025 +0100|watchcat: passing the interface in the ping_reboot
-c3b54c1b1|Josef Schlehofer|Mon Dec 29 13:31:24 2025 +0100|python-bcrypt: update to version 5.0.0
-3cf3edf45|Josef Schlehofer|Mon Dec 29 11:50:49 2025 +0100|python3-bottle: update to version 0.13.4
-216dae127|Jordan Ngako|Thu Dec 25 20:04:47 2025 +0100|libopen62541: preserve symlinks on install
-11edcde65|Wei-Ting Yang|Fri Dec 26 20:41:41 2025 +0800|tree: add LICENSE and LICENSE files
-1963efd55|Josef Schlehofer|Mon Dec 29 09:37:02 2025 +0100|luajit2: add riscv64 support
-9d33f54be|Ivan Belokobylskiy|Fri Dec 26 14:46:58 2025 +0400|python-aio-mqtt-mod: update to 0.4.0
-ac735c8e2|Paul Donald|Fri Dec 26 18:21:26 2025 +0100|freeradius3: bump to 3.2.8
+6ae5a7a51|Josef Schlehofer|Tue Dec 30 01:15:11 2025 +0100|uspot: move and format EXTRA_DEPENDS
 </details>

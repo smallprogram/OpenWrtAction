@@ -1,9 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-140e5b371|Tianling Shen|Mon Dec 29 17:13:26 2025 +0800|Merge Official Source
-9d33f54be|Ivan Belokobylskiy|Fri Dec 26 14:46:58 2025 +0400|python-aio-mqtt-mod: update to 0.4.0
-ac735c8e2|Paul Donald|Fri Dec 26 18:21:26 2025 +0100|freeradius3: bump to 3.2.8
-db6d28bcc|zhusir|Mon Dec 29 12:21:52 2025 +0800|miniupnpd: remove upstreamed patches
-</details>

@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9dabbb6|A-BO|Tue Dec 30 01:09:52 2025 +0800|luci: add `value` template to the node selector of haproxy
+5ff9ed3|A-BO|Tue Dec 30 22:12:16 2025 +0800|luci: optimize the geo query page
+6afb07a|morinoyuki|Tue Dec 30 19:58:24 2025 +0800|luci: adjust xray 'nonIPQuery' to 'reject' non A/AAAA queries (#4212)
+414806b|LGA1150|Tue Dec 30 09:29:38 2025 +0800|luci: add Xray pre-connect (testpre) (#4210)
 </details>
