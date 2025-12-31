@@ -139,6 +139,10 @@ function Func_SyncGitSource(){
     sleep 2s
 
     cd /home/${user_name}
+
+
+
+
     if [ ! -d "/home/${user_name}/${openwrt_dir}" ]; then
         git clone -b ${openwrt_branch} --single-branch $openwrt_source  ${openwrt_dir}
         cd /home/${user_name}
@@ -494,6 +498,44 @@ function Func_Wsl2Check(){
     echo
 }
 
+# 获取远程分支列表并选择分支函数
+function Func_SelectBranch(){
+    # 先从远程获取最新分支列表（不克隆整个仓库）
+    Func_LogMessage "正在从远程仓库获取分支列表..." "Fetching branch list from remote repository..."
+
+    branches=$(git ls-remote --heads --sort=-version:refname "$openwrt_source" | awk '{print $2}' | sed 's|^refs/heads/||' | grep -v '^HEAD$')
+
+    if [ -z "$branches" ]; then
+        Func_LogMessage "错误：无法获取远程分支列表，请检查网络或仓库 URL。将使用默认分支。" \
+                        "Error: Failed to fetch remote branch list. Check network or repository URL. Falling back to default branch."
+    else
+        # 将分支转为数组
+        mapfile -t branch_array <<< "$branches"
+
+        Func_LogMessage "远程仓库可用分支：" "Available branches in remote repository:"
+        for i in "${!branch_array[@]}"; do
+            Func_LogMessage "$((i+1))) ${branch_array[i]}" "$((i+1))) ${branch_array[i]}"
+        done
+
+        Func_LogMessage "" ""  # 空行分隔
+        Func_LogMessage "请输入分支编号使用该分支，或直接回车使用默认分支（$openwrt_branch" \
+                        "Enter the branch number to use it, or press Enter directly to use the default branch ($openwrt_branch):"
+
+        read -r choice
+
+        if [ -z "$choice" ]; then
+            # 用户直接回车，使用默认
+            Func_LogMessage "使用默认分支: $openwrt_branch" "Using default branch: $openwrt_branch"
+        elif [[ "$choice" =~ ^[0-9]+$ ]] && [ "$choice" -ge 1 ] && [ "$choice" -le "${#branch_array[@]}" ]; then
+            # 用户输入有效编号
+            openwrt_branch="${branch_array[$((choice-1))]}"
+            Func_LogMessage "选择分支: $openwrt_branch" "Selected branch: $openwrt_branch"
+        else
+            Func_LogMessage "输入无效，使用默认分支: $openwrt_branch" "Invalid input, using default branch: $openwrt_branch"
+        fi
+    fi
+}
+
 #主函数
 function Func_Main() {
     # GitSetting
@@ -524,6 +566,11 @@ function Func_Main() {
     Func_Wsl2Check
     Func_CleanLogFolder
     sleep 2s
+
+
+    Func_SelectBranch
+    
+
 
     Func_LogMessage "是否创建新的编译配置，默认否，输入任意字符将创建新的配置" "Whether to create a new compilation configuration, the default is no, input any character will create a new configuration"
     Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
