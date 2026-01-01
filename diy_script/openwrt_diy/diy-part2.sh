@@ -17,7 +17,7 @@ sed -i 's/192.168.1.1/10.10.0.253/g' package/base-files/files/bin/config_generat
 # sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' package/lean/default-settings/files/zzz-default-settings
 
 
-# rm -rf temp_resp
+rm -rf temp_resp
 
 # git clone -b master --single-branch https://github.com/openwrt/packages.git temp_resp/openwrt_packages
 # git clone -b main --single-branch https://github.com/openwrt/openwrt.git temp_resp/openwrt_source
@@ -30,29 +30,29 @@ sed -i 's/192.168.1.1/10.10.0.253/g' package/base-files/files/bin/config_generat
 # cp -rf temp_resp/openwrt_source/scripts/patch-kernel.sh scripts/
 
     
-# git clone -b master --single-branch  https://github.com/immortalwrt/immortalwrt.git temp_resp/immortalwrt_source
-# git clone -b master --single-branch  https://github.com/immortalwrt/luci.git temp_resp/immortalwrt_luci
-# git clone -b master --single-branch  https://github.com/immortalwrt/packages.git temp_resp/immortalwrt_packages
+git clone -b master --single-branch  https://github.com/immortalwrt/immortalwrt.git temp_resp/immortalwrt_source
+git clone -b master --single-branch  https://github.com/immortalwrt/luci.git temp_resp/immortalwrt_luci
+git clone -b master --single-branch  https://github.com/immortalwrt/packages.git temp_resp/immortalwrt_packages
 
-# add some package from immortalwrt
+add some package from immortalwrt
 # cp -rf temp_resp/immortalwrt_packages/utils/coremark ./feeds/packages
 # cp -rf temp_resp/immortalwrt_source/package/emortal/autocore ./package/emortal
-# cp -rf temp_resp/immortalwrt_luci/applications/luci-app-cifs-mount ./feeds/luci/applications
-# cp -rf temp_resp/immortalwrt_luci/applications/luci-app-ddns-go ./feeds/luci/applications
-# cp -rf temp_resp/immortalwrt_packages/net/ddns-go ./feeds/packages/net
-# cp -rf temp_resp/immortalwrt_luci/applications/luci-app-diskman ./feeds/luci/applications
-# cp -rf temp_resp/immortalwrt_luci/applications/luci-app-eqos ./feeds/luci/applications
-# cp -rf temp_resp/immortalwrt_luci/applications/luci-app-homeproxy ./feeds/luci/applications
-# cp -rf temp_resp/immortalwrt_luci/applications/luci-app-netdata ./feeds/luci/applications
-# cp -rf temp_resp/immortalwrt_luci/applications/luci-app-ramfree ./feeds/luci/applications
-# cp -rf temp_resp/immortalwrt_luci/applications/luci-app-vlmcsd ./feeds/luci/applications
-# cp -rf temp_resp/immortalwrt_packages/net/vlmcsd ./feeds/packages/net
-# cp -rf temp_resp/immortalwrt_luci/applications/luci-app-wechatpush ./feeds/luci/applications
+cp -rf temp_resp/immortalwrt_luci/applications/luci-app-cifs-mount ./feeds/luci/applications
+cp -rf temp_resp/immortalwrt_luci/applications/luci-app-ddns-go ./feeds/luci/applications
+cp -rf temp_resp/immortalwrt_packages/net/ddns-go ./feeds/packages/net
+cp -rf temp_resp/immortalwrt_luci/applications/luci-app-diskman ./feeds/luci/applications
+cp -rf temp_resp/immortalwrt_luci/applications/luci-app-eqos ./feeds/luci/applications
+cp -rf temp_resp/immortalwrt_luci/applications/luci-app-homeproxy ./feeds/luci/applications
+cp -rf temp_resp/immortalwrt_luci/applications/luci-app-netdata ./feeds/luci/applications
+cp -rf temp_resp/immortalwrt_luci/applications/luci-app-ramfree ./feeds/luci/applications
+cp -rf temp_resp/immortalwrt_luci/applications/luci-app-vlmcsd ./feeds/luci/applications
+cp -rf temp_resp/immortalwrt_packages/net/vlmcsd ./feeds/packages/net
+cp -rf temp_resp/immortalwrt_luci/applications/luci-app-wechatpush ./feeds/luci/applications
 
-# rm -rf temp_resp
+rm -rf temp_resp
 
-# ./scripts/feeds update -a
-# ./scripts/feeds install -a
+./scripts/feeds update -a
+./scripts/feeds install -a
 
 # fixed rust host build download llvm in ci error
 # sed -i 's/--set=llvm\.download-ci-llvm=false/--set=llvm.download-ci-llvm=true/' feeds/packages/lang/rust/Makefile
