@@ -34,7 +34,7 @@ git clone -b master --single-branch  https://github.com/immortalwrt/immortalwrt.
 git clone -b master --single-branch  https://github.com/immortalwrt/luci.git temp_resp/immortalwrt_luci
 git clone -b master --single-branch  https://github.com/immortalwrt/packages.git temp_resp/immortalwrt_packages
 
-add some package from immortalwrt
+# add some package from immortalwrt
 # cp -rf temp_resp/immortalwrt_packages/utils/coremark ./feeds/packages
 # cp -rf temp_resp/immortalwrt_source/package/emortal/autocore ./package/emortal
 cp -rf temp_resp/immortalwrt_luci/applications/luci-app-cifs-mount ./feeds/luci/applications
