@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5ff9ed3|A-BO|Tue Dec 30 22:12:16 2025 +0800|luci: optimize the geo query page
-6afb07a|morinoyuki|Tue Dec 30 19:58:24 2025 +0800|luci: adjust xray 'nonIPQuery' to 'reject' non A/AAAA queries (#4212)
+d743aee|A-BO|Wed Dec 31 23:19:51 2025 +0800|luci: fix api `trim` function
+83b3ea1|A-BO|Wed Dec 31 11:04:08 2025 +0800|luci: optimize the toolbar of the node editing page
 </details>
