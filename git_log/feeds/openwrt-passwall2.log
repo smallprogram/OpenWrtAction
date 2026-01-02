@@ -1,0 +1,19 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+4dfe421|xiaorouji|Thu Jan 1 23:09:48 2026 +0800|luci: bump to 26.1.1
+72e27dd|A-BO|Thu Jan 1 12:28:20 2026 +0800|luci: add depends to xray `tcpFastOpen` configuration
+9968671|A-BO|Thu Jan 1 11:35:20 2026 +0800|luci: optimize connection monitoring logic for xray balancing
+98190cc|A-BO|Wed Dec 31 23:19:51 2025 +0800|luci: fix api `trim` function
+6a31f32|A-BO|Wed Dec 31 11:04:08 2025 +0800|luci: optimize the toolbar of the node editing page
+142bff0|A-BO|Tue Dec 30 22:12:16 2025 +0800|luci: optimize the geo query page
+2e8d67b|morinoyuki|Tue Dec 30 19:58:24 2025 +0800|luci: adjust xray 'nonIPQuery' to 'reject' non A/AAAA queries
+f965184|LGA1150|Tue Dec 30 09:29:38 2025 +0800|luci: add Xray pre-connect (testpre)
+4bb3284|A-BO|Tue Dec 30 01:09:52 2025 +0800|luci: add `value` template to the node selector of haproxy
+a55ec62|lwb1978|Sun Dec 28 18:38:10 2025 +0800|luci: optimize `listvalue` templates to adapt to some themes
+035114d|zxl hhyccc|Sat Dec 27 14:11:09 2025 +0800|luci: fix clearing luci cache.
+21fc95a|lwb1978|Sat Dec 27 13:43:10 2025 +0800|luci: optimize the experience of `listvalue` and `multivalue` templates on mobile devices
+adf1325|A-BO|Fri Dec 26 00:19:23 2025 +0800|luci: escape html in group names for node_list
+58b2117|A-BO|Thu Dec 25 23:55:49 2025 +0800|luci: sanitize group id in `listvalue` and `multivalue` template
+</details>

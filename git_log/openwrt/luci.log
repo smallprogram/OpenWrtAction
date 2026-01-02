@@ -1,8 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-ffa2c130f9|Paul Donald|Wed Dec 31 18:33:33 2025 +0100|luci-mod-network: add tags tab
-fe4202cef2|Paul Donald|Wed Dec 31 15:28:27 2025 +0100|luci-mod-system: extend dropbear listen options
-a277b796ca|David Härdeman|Tue Dec 30 18:31:17 2025 +0100|luci-mod-network: show leases first in DHCP tab
-</details>

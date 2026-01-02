@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d743aee|A-BO|Wed Dec 31 23:19:51 2025 +0800|luci: fix api `trim` function
-83b3ea1|A-BO|Wed Dec 31 11:04:08 2025 +0800|luci: optimize the toolbar of the node editing page
+0d24d8f|A-BO|Thu Jan 1 12:40:19 2026 +0800|luci: bump to 26.1.1
+17a543a|A-BO|Thu Jan 1 12:38:26 2026 +0800|luci: update default rules
+7900a2b|A-BO|Thu Jan 1 12:28:20 2026 +0800|luci: add depends to xray `tcpFastOpen` configuration
+64a3586|A-BO|Thu Jan 1 11:35:20 2026 +0800|luci: optimize connection monitoring logic for xray balancing
 </details>
