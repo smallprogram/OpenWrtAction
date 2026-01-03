@@ -1,0 +1,23 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ec16f2532d|Felix Fietkau|Fri Jan 2 18:59:49 2026 +0000|unetmsg: fix variable shadowing bug in network_rx_cleanup_state()
+8004708f2d|Fil Dunsky|Fri Dec 12 18:51:39 2025 +0300|mediatek: add ubootmod layout for Cudy WBR3000UAX v1
+2a78fc851c|Fil Dunsky|Fri Dec 12 16:16:50 2025 +0300|mediatek: add support for Cudy WBR3000UAX v1
+ea9cf72722|Fil Dunsky|Sat Dec 20 00:28:16 2025 +0300|arm-trusted-firmware-mediatek: add Cudy DDR3 target
+482d5e5c41|Jacob Potter|Wed Dec 31 14:45:31 2025 -0500|realtek: rtl838x: fix lan9 and lan10 on Netgear GS110TUP
+107ac00404|Eric Fahlgren|Fri Jan 2 08:20:15 2026 -0800|package: ethtool: specify just one default variant
+c80bae3c18|Eric Fahlgren|Thu Jan 1 18:02:30 2026 -0800|treewide: add explicit default variant
+038546e2e5|George Sapkin|Sun Dec 28 17:37:08 2025 +0200|kernel/rtl8812au-ct: provide a virtual kmod
+f1520c2871|George Sapkin|Sun Dec 28 17:34:48 2025 +0200|kernel/ath10k: provide a virtual kmod
+90dfdc78fe|George Sapkin|Sun Dec 28 17:30:12 2025 +0200|kernel/r8169: provide a virtual kmod
+832d373272|George Sapkin|Thu Dec 25 17:16:18 2025 +0200|ca-certificates: provide a virtual package
+d1b08c2d82|George Sapkin|Sun Dec 28 17:22:41 2025 +0200|build: provide virtual self in kmods
+40baf2f82c|George Sapkin|Thu Dec 25 15:32:29 2025 +0200|build: add support for virtual provides
+3abc02c2eb|George Sapkin|Thu Dec 25 14:09:53 2025 +0200|build: refactor provides logic
+5d017aeeeb|Daniel Golle|Tue Dec 23 14:49:48 2025 +0000|mediatek: filogic: asus,rt-ax57m: remove unused pinctrl groups
+
+.....................
+
+</details>
