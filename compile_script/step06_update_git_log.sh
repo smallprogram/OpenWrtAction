@@ -55,7 +55,7 @@ for git_folder in "${git_folders[@]}"; do
         echo "### custom packages" >>release.txt
         echo "">>release.txt
     fi
-    if [[ "$git_folder" == "openwrt" || "$git_folder" == "immortalwrt"]]; then
+    if [[ "$git_folder" == "openwrt" || "$git_folder" == "immortalwrt" ]]; then
         echo "">>release.txt
         echo "### $git_folder" >>release.txt
         echo "">>release.txt
