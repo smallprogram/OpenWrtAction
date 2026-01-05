@@ -1,6 +1,0 @@
-<details> <summary> <b>lede new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-bc5e24c18|Internet1235|Sat Jan 3 18:00:02 2026 +0800|linux-atm: fix build with GCC 14
-</details>

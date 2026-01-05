@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d9a13f2|A-BO|Sat Jan 3 11:45:50 2026 +0800|luci: fix bug in 64a35869
+139ce24|A-BO|Sun Jan 4 22:40:33 2026 +0800|luci: restore default routing rule for xray shunt
 </details>
