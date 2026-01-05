@@ -55,7 +55,7 @@ luci_apps=(
     # https://github.com/jerrykuku/lua-maxminddb.git
     # https://github.com/jerrykuku/luci-app-vssr.git
     # https://github.com/lisaac/luci-app-dockerman.git
-    # https://github.com/xiaorouji/openwrt-passwall.git
+    # https://github.com/Openwrt-Passwall/openwrt-passwall.git
     https://github.com/rufengsuixing/luci-app-adguardhome.git
 )
 # 编译结果变量
@@ -164,7 +164,7 @@ function Func_Get_luci_apps() {
         #     continue
         # fi
 
-        # if [[ $luci_app == https://github.com/xiaorouji/openwrt-passwall.git ]]; then
+        # if [[ $luci_app == https://github.com/Openwrt-Passwall/openwrt-passwall.git ]]; then
         #     cd /home/${userName}/${ledeDir}/package/lean/
         #     rm -rf passwall
         #     rm -rf passwall_package

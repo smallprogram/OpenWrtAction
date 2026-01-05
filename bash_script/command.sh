@@ -4,9 +4,9 @@ git pull
 # cp -r ../OpenWrtAction/feeds_config/custom.feeds.conf.default ./feeds.conf.default
 
 cat << 'EOF' | cat - feeds.conf.default > temp && mv temp feeds.conf.default
-src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main
-src-git passwall https://github.com/xiaorouji/openwrt-passwall.git;main
-src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main
+src-git passwall_packages https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git;main
+src-git passwall https://github.com/Openwrt-Passwall/openwrt-passwall.git;main
+src-git passwall2 https://github.com/Openwrt-Passwall/openwrt-passwall2.git;main
 src-git helloworld https://github.com/fw876/helloworld;master
 src-git OpenClash https://github.com/vernesong/OpenClash;master
 EOF
