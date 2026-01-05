@@ -27,7 +27,9 @@ for git_folder in "${git_folders[@]}"; do
     if [[ "$git_folder" == "feeds" ]]; then
         echo "jump $git_folder"
     else
-        cat release_$git_folder.txt >> release.txt
+        if [ -f "release_$git_folder.txt" ]; then
+            cat "release_$git_folder.txt" >> "release.txt"
+        fi
     fi
 done
 echo "</table>">>release.txt
