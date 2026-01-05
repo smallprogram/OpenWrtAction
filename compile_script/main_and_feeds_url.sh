@@ -5,7 +5,7 @@ source $GITHUB_WORKSPACE/compile_script/platforms.sh
 # 声明全局数组
 declare -a openwrt_REPO_URLS=()
 declare -a immortalwrt_REPO_URLS=()
-declare -a lede_REPO_URLS=()
+# declare -a lede_REPO_URLS=()
 declare -a all_REPO_URLS=()  # 汇总所有仓库URL,用于updatecheacker.sh
 declare -a feeds_REPO_URLS=(
     "https://github.com/fw876/helloworld"
@@ -64,10 +64,10 @@ process_repo() {
             immortalwrt_REPO_URLS+=("$repo_url $repo_branch")
             echo "current immortalwrt_REPO_URLS: ${immortalwrt_REPO_URLS[*]}"
             ;;
-        lede)
-            lede_REPO_URLS+=("$repo_url $repo_branch")
-            echo "current lede_REPO_URLS: ${lede_REPO_URLS[*]}"
-            ;;
+        # lede)
+        #     lede_REPO_URLS+=("$repo_url $repo_branch")
+        #     echo "current lede_REPO_URLS: ${lede_REPO_URLS[*]}"
+        #     ;;
     esac
     echo "Add main repos: $repo_url $repo_branch"
     while IFS= read -r line; do
@@ -101,10 +101,10 @@ process_repo() {
                         immortalwrt_REPO_URLS+=("$entry")
                         echo "current immortalwrt_REPO_URLS: ${immortalwrt_REPO_URLS[*]}"
                         ;;
-                    lede)
-                        lede_REPO_URLS+=("$entry")
-                        echo "current lede_REPO_URLS: ${lede_REPO_URLS[*]}"
-                        ;;
+                    # lede)
+                    #     lede_REPO_URLS+=("$entry")
+                    #     echo "current lede_REPO_URLS: ${lede_REPO_URLS[*]}"
+                    #     ;;
                 esac
                 echo "Add: $entry"
             fi

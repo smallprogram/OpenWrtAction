@@ -8,8 +8,8 @@ if [[ "$source_code_platform" == "openwrt" ]]; then
   selected_platforms=("${openwrt_platforms[@]}")
 elif [[ "$source_code_platform" == "immortalwrt" ]]; then
   selected_platforms=("${immortalwrt_platforms[@]}")
-elif [[ "$source_code_platform" == "lede" ]]; then
-  selected_platforms=("${lede_platforms[@]}")
+# elif [[ "$source_code_platform" == "lede" ]]; then
+#   selected_platforms=("${lede_platforms[@]}")
 fi
 
 cd ..

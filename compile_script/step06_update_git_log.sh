@@ -10,7 +10,7 @@ echo "[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/$r
 
 echo "">> release.txt
 echo "## Source Code Information">> release.txt
-echo "[![](https://img.shields.io/badge/source-openwrt_25.12-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt) [![](https://img.shields.io/badge/source-immortalwrt_25.12-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt) [![](https://img.shields.io/badge/source-lean_SNAPSHOT-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede)">> release.txt
+echo "[![](https://img.shields.io/badge/source-openwrt_SNAPSHOT-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt) [![](https://img.shields.io/badge/source-immortalwrt_SNAPSHOT-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt)">> release.txt
 echo "">>release.txt
 echo "## Build Information">> release.txt
 
@@ -53,7 +53,7 @@ for git_folder in "${git_folders[@]}"; do
         echo "### custom packages" >>release.txt
         echo "">>release.txt
     fi
-    if [[ "$git_folder" == "openwrt" || "$git_folder" == "immortalwrt" || "$git_folder" == "lede" ]]; then
+    if [[ "$git_folder" == "openwrt" || "$git_folder" == "immortalwrt"]]; then
         echo "">>release.txt
         echo "### $git_folder" >>release.txt
         echo "">>release.txt
