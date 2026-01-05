@@ -19,18 +19,18 @@ sed -i 's/192.168.1.1/10.10.0.253/g' package/base-files/files/bin/config_generat
 rm -rf ./feeds/packages/net/open-app-filter
 
 
-# rm -rf temp_resp
-# git clone -b master --single-branch https://github.com/openwrt/packages.git temp_resp/openwrt_packages
-# git clone -b main --single-branch https://github.com/openwrt/openwrt.git temp_resp/openwrt_source
+rm -rf temp_resp
+git clone -b master --single-branch https://github.com/openwrt/packages.git temp_resp/openwrt_packages
+git clone -b main --single-branch https://github.com/openwrt/openwrt.git temp_resp/openwrt_source
 
 # # update golang version
-# rm -rf feeds/packages/lang/golang
-# cp -rf temp_resp/openwrt_packages/lang/golang feeds/packages/lang
-# rm -rf feeds/packages/lang/rust
-# cp -rf temp_resp/openwrt_packages/lang/rust feeds/packages/lang
+rm -rf feeds/packages/lang/golang
+cp -rf temp_resp/openwrt_packages/lang/golang feeds/packages/lang
+rm -rf feeds/packages/lang/rust
+cp -rf temp_resp/openwrt_packages/lang/rust feeds/packages/lang
 # cp -rf temp_resp/openwrt_source/scripts/patch-kernel.sh scripts/
 
-# rm -rf temp_resp
+rm -rf temp_resp
 
 # fixed rust host build download llvm in ci error
 # sed -i 's/--set=llvm\.download-ci-llvm=false/--set=llvm.download-ci-llvm=true/' feeds/packages/lang/rust/Makefile
