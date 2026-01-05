@@ -6,7 +6,7 @@ git_folders=(openwrt immortalwrt feeds custompackages)
 cd $GITHUB_WORKSPACE
 
 # 初始化 release.txt
-echo "[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/$release_tag/total?style=flat-square)](https://github.com/smallprogram/MyAction)"> release.txt
+echo "[![](https://img.shields.io/github/downloads/0x533512/OpenWrtAction-snapshot/$release_tag/total?style=flat-square)](https://github.com/0x533512/OpenWrtAction-snapshot)"> release.txt
 
 echo "">> release.txt
 echo "## Source Code Information">> release.txt
