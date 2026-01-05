@@ -3,20 +3,20 @@
 SHA|Author|Date|Message
 -|-|-|-
 65c2bf9654|Tianling Shen|Sun Jan 4 19:55:14 2026 +0800|Merge Official Source
-ec16f2532d|Felix Fietkau|Fri Jan 2 18:59:49 2026 +0000|unetmsg: fix variable shadowing bug in network_rx_cleanup_state()
-8004708f2d|Fil Dunsky|Fri Dec 12 18:51:39 2025 +0300|mediatek: add ubootmod layout for Cudy WBR3000UAX v1
-2a78fc851c|Fil Dunsky|Fri Dec 12 16:16:50 2025 +0300|mediatek: add support for Cudy WBR3000UAX v1
-ea9cf72722|Fil Dunsky|Sat Dec 20 00:28:16 2025 +0300|arm-trusted-firmware-mediatek: add Cudy DDR3 target
-482d5e5c41|Jacob Potter|Wed Dec 31 14:45:31 2025 -0500|realtek: rtl838x: fix lan9 and lan10 on Netgear GS110TUP
-107ac00404|Eric Fahlgren|Fri Jan 2 08:20:15 2026 -0800|package: ethtool: specify just one default variant
-c80bae3c18|Eric Fahlgren|Thu Jan 1 18:02:30 2026 -0800|treewide: add explicit default variant
-038546e2e5|George Sapkin|Sun Dec 28 17:37:08 2025 +0200|kernel/rtl8812au-ct: provide a virtual kmod
-f1520c2871|George Sapkin|Sun Dec 28 17:34:48 2025 +0200|kernel/ath10k: provide a virtual kmod
-90dfdc78fe|George Sapkin|Sun Dec 28 17:30:12 2025 +0200|kernel/r8169: provide a virtual kmod
-832d373272|George Sapkin|Thu Dec 25 17:16:18 2025 +0200|ca-certificates: provide a virtual package
-d1b08c2d82|George Sapkin|Sun Dec 28 17:22:41 2025 +0200|build: provide virtual self in kmods
-40baf2f82c|George Sapkin|Thu Dec 25 15:32:29 2025 +0200|build: add support for virtual provides
-3abc02c2eb|George Sapkin|Thu Dec 25 14:09:53 2025 +0200|build: refactor provides logic
+9833aaab28|Tianling Shen|Sun Jan 4 19:48:14 2026 +0800|Merge Official Source
+ded99c2984|Eric Fahlgren|Sat Jan 3 16:04:51 2026 -0800|treewide: add explicit default variant part 2
+a10d10edd7|Felix Fietkau|Sun Jan 4 10:59:14 2026 +0100|cli: fix typo in error reporting
+6e48b1b7af|fujr|Wed Nov 26 21:19:47 2025 +0800|rockchip: add support for Widora MangoPi M28C
+9934c716ed|Rosen Penev|Fri Dec 19 15:33:50 2025 -0800|treewide: replace remove_new with remove
+79ff31104c|Aleksander Jan Bajkowski|Sat Nov 29 18:58:17 2025 +0100|airoha: an7583: fix scuclk unit-address
+914fe44647|Aleksander Jan Bajkowski|Sat Nov 29 18:56:50 2025 +0100|airoha: en7583: dts: fix typo disable
+2055a4df78|Jonas Jelonek|Fri Jan 2 17:49:02 2026 +0000|realtek: pcs: rtl931x: soften early exit for USXGMII
+b63f68e409|Jonas Jelonek|Fri Jan 2 18:50:10 2026 +0000|realtek: pcs: select OFF mode with no links on SerDes
+7cd3407fde|Jonas Jelonek|Fri Jan 2 16:30:16 2026 +0000|realtek: pcs: cover number of links per SerDes for USXGMII
+76f392194b|Jonas Jelonek|Wed Dec 24 10:28:36 2025 +0000|realtek: pcs: keep track of number of links per SerDes
+dfd6a4212f|Jonas Jelonek|Wed Dec 24 10:36:03 2025 +0000|realtek: pcs: add missing SerDes modes
+93e9e67ee9|Hannu Nyman|Sat Jan 3 12:51:29 2026 +0200|mediatek: remove erroneous pipe action from BE7200 recipe
+5f68bfe992|Tianling Shen|Sat Jan 3 16:23:33 2026 +0800|rockchip: reduce eMMC speed to 100 MHz for photonicat2
 
 .....................
 

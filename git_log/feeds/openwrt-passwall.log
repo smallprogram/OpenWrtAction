@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-139ce24|A-BO|Sun Jan 4 22:40:33 2026 +0800|luci: restore default routing rule for xray shunt
+0d4461e|A-BO|Mon Jan 5 10:40:20 2026 +0800|luci: adjust the order of default node for xray shunt
 </details>
