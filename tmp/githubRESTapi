@@ -1,10 +1,10 @@
-curl -s "https://api.github.com/repos/xiaorouji/openwrt-passwall/commits?per_page=100"  | jq -r '.[] | "\(.sha) | \(.commit.author.name) | \(.commit.author.date) | \(.commit.message | gsub("\r\n"; "\n") | gsub("\n\n"; "\n") | split("\n") | map(select(. != "")) | join("<br>"))"' > aaa.txt
+curl -s "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall/commits?per_page=100"  | jq -r '.[] | "\(.sha) | \(.commit.author.name) | \(.commit.author.date) | \(.commit.message | gsub("\r\n"; "\n") | gsub("\n\n"; "\n") | split("\n") | map(select(. != "")) | join("<br>"))"' > aaa.txt
 
 
-curl -s "https://api.github.com/repos/xiaorouji/openwrt-passwall/compare/85508e2e73af960b7b26926d02169221fde7000b...master" | jq -r '.commits | .[] | "\(.sha) | \(.commit.author.name) | \(.commit.author.date) | \(.commit.message | gsub("\r\n"; "\n") | gsub("\n\n"; "\n") | split("\n") | map(select(. != "")) | join("<br>"))"' > bbb.txt
+curl -s "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall/compare/85508e2e73af960b7b26926d02169221fde7000b...master" | jq -r '.commits | .[] | "\(.sha) | \(.commit.author.name) | \(.commit.author.date) | \(.commit.message | gsub("\r\n"; "\n") | gsub("\n\n"; "\n") | split("\n") | map(select(. != "")) | join("<br>"))"' > bbb.txt
 
 
-curl -s "https://api.github.com/repos/xiaorouji/openwrt-passwall/compare/85508e2e73af960b7b26926d02169221fde7000b...main" | jq -r '.commits | reverse| .[] | "\(.sha) | \(.commit.author.name) | \(.commit.author.date) | \(.commit.message | gsub("\r\n"; "\n") | gsub("\n\n"; "\n") | split("\n") | map(select(. != "")) | join("<br>"))"' > bbb.txt
+curl -s "https://api.github.com/repos/Openwrt-Passwall/openwrt-passwall/compare/85508e2e73af960b7b26926d02169221fde7000b...main" | jq -r '.commits | reverse| .[] | "\(.sha) | \(.commit.author.name) | \(.commit.author.date) | \(.commit.message | gsub("\r\n"; "\n") | gsub("\n\n"; "\n") | split("\n") | map(select(. != "")) | join("<br>"))"' > bbb.txt
 
 
 

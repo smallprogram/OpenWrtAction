@@ -9,9 +9,9 @@ declare -a lede_REPO_URLS=()
 declare -a all_REPO_URLS=()  # 汇总所有仓库URL,用于updatecheacker.sh
 declare -a feeds_REPO_URLS=(
     "https://github.com/fw876/helloworld"
-    "https://github.com/xiaorouji/openwrt-passwall-packages"
-    "https://github.com/xiaorouji/openwrt-passwall"
-    "https://github.com/xiaorouji/openwrt-passwall2"
+    "https://github.com/Openwrt-Passwall/openwrt-passwall-packages"
+    "https://github.com/Openwrt-Passwall/openwrt-passwall"
+    "https://github.com/Openwrt-Passwall/openwrt-passwall2"
     "https://github.com/vernesong/OpenClash"
     "https://github.com/nikkinikki-org/OpenWrt-nikki"
 )
