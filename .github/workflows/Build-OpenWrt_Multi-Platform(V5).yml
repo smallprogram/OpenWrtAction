@@ -966,17 +966,4 @@ jobs:
         run: |
           echo "Retry failed jobs for the ${{ fromJSON(github.run_attempt) }} time, Retry 3 times in total"
           gh workflow run Retry_Failure_Jobs.yml -F run_id=${{ github.run_id }}
-
-  final-execution-jobs:
-    runs-on: ubuntu-latest
-    needs: [rerun-failed-jobs, job_organize_tags]
-    if: ${{ always() }}
-    steps:
-      - name: Trigger build
-        if: ${{ needs.rerun-failed-jobs.result == 'skipped' }}
-        uses: peter-evans/repository-dispatch@v3
-        with:
-          token: ${{ secrets.MY_SECRET_PAT }}
-          repository: smallprogram/MyAction
-          event-type: openwrt_compilation_completed
       
