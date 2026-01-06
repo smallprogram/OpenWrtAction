@@ -1,8 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-0bed9866d0|Tianling Shen|Sun Jan 4 20:07:25 2026 +0800|Merge Official Source
-dfe45f118a|Paul Donald|Sat Jan 3 17:51:59 2026 +0100|luci-theme-openwrt: fix CSS error
-541ff495df|Hannu Nyman|Sat Jan 3 13:08:29 2026 +0200|treewide: backport translations
-</details>

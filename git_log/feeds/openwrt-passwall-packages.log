@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dbe36a7|github-actions[bot]|Sun Jan 4 20:28:14 2026 +0800|v2ray-plugin: update to 5.43.0 (#561)
+c068b71|A-BO|Mon Jan 5 23:39:53 2026 +0800|ci: add write permission
+68bb19a|A-BO|Mon Jan 5 22:42:19 2026 +0800|ci: add write permission
+af88e90|A-BO|Mon Jan 5 22:33:46 2026 +0800|ci: add write permission
 </details>

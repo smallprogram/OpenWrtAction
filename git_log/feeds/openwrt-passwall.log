@@ -2,5 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-139ce24|A-BO|Sun Jan 4 22:40:33 2026 +0800|luci: restore default routing rule for xray shunt
+5cb19bc|A-BO|Tue Jan 6 01:29:26 2026 +0800|luci: add URL `Test Address` option
+a39ab73|A-BO|Mon Jan 5 23:45:22 2026 +0800|ci: add write permission
+51f5761|A-BO|Mon Jan 5 22:18:37 2026 +0800|luci: update `app_update` remote url
+9ff2b3e|A-BO|Mon Jan 5 22:08:14 2026 +0800|luci: allow ws/hu/grpc transport with flow
+6cf5909|zhusir|Mon Jan 5 22:02:31 2026 +0800|docs: Update repository URLs in README.md
+920b570|zhusir|Mon Jan 5 21:42:37 2026 +0800|ci: update the passwall package to organization
+71ea936|A-BO|Mon Jan 5 11:54:17 2026 +0800|luci: prevent errors when the subscription link is empty
+0d4461e|A-BO|Mon Jan 5 10:40:20 2026 +0800|luci: adjust the order of default node for xray shunt
 </details>
