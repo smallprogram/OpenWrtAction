@@ -2,21 +2,21 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-65c2bf9654|Tianling Shen|Sun Jan 4 19:55:14 2026 +0800|Merge Official Source
-ec16f2532d|Felix Fietkau|Fri Jan 2 18:59:49 2026 +0000|unetmsg: fix variable shadowing bug in network_rx_cleanup_state()
-8004708f2d|Fil Dunsky|Fri Dec 12 18:51:39 2025 +0300|mediatek: add ubootmod layout for Cudy WBR3000UAX v1
-2a78fc851c|Fil Dunsky|Fri Dec 12 16:16:50 2025 +0300|mediatek: add support for Cudy WBR3000UAX v1
-ea9cf72722|Fil Dunsky|Sat Dec 20 00:28:16 2025 +0300|arm-trusted-firmware-mediatek: add Cudy DDR3 target
-482d5e5c41|Jacob Potter|Wed Dec 31 14:45:31 2025 -0500|realtek: rtl838x: fix lan9 and lan10 on Netgear GS110TUP
-107ac00404|Eric Fahlgren|Fri Jan 2 08:20:15 2026 -0800|package: ethtool: specify just one default variant
-c80bae3c18|Eric Fahlgren|Thu Jan 1 18:02:30 2026 -0800|treewide: add explicit default variant
-038546e2e5|George Sapkin|Sun Dec 28 17:37:08 2025 +0200|kernel/rtl8812au-ct: provide a virtual kmod
-f1520c2871|George Sapkin|Sun Dec 28 17:34:48 2025 +0200|kernel/ath10k: provide a virtual kmod
-90dfdc78fe|George Sapkin|Sun Dec 28 17:30:12 2025 +0200|kernel/r8169: provide a virtual kmod
-832d373272|George Sapkin|Thu Dec 25 17:16:18 2025 +0200|ca-certificates: provide a virtual package
-d1b08c2d82|George Sapkin|Sun Dec 28 17:22:41 2025 +0200|build: provide virtual self in kmods
-40baf2f82c|George Sapkin|Thu Dec 25 15:32:29 2025 +0200|build: add support for virtual provides
-3abc02c2eb|George Sapkin|Thu Dec 25 14:09:53 2025 +0200|build: refactor provides logic
+6ee5dfd2d8|Tianling Shen|Mon Jan 5 14:08:10 2026 +0800|Merge Official Source
+cee63ac83b|Tianling Shen|Mon Jan 5 12:16:50 2026 +0800|uboot-rockchip: fix enter download mode (MaskROM) for RK356x/RK3588
+987214c9f8|Hannu Nyman|Sat Jan 3 12:51:29 2026 +0200|mediatek: remove erroneous pipe action from BE7200 recipe
+d1ff5681b4|Mikhail Zhilkin|Sat Dec 20 18:43:45 2025 +0300|mediatek: add support for Routerich BE7200
+a21680586c|Mikhail Zhilkin|Sat Dec 20 18:40:22 2025 +0300|arm-trusted-firmware-mediatek: add mt7987-spim-nand0 build
+a1bb2cbb9d|Robert Senderek|Wed Nov 12 10:08:37 2025 +0100|mvebu: Add support for WD MyCloud EX2 Ultra
+a78f0078c4|Hauke Mehrtens|Thu Jan 1 19:40:06 2026 +0100|kernel: QCOM SPI NAND: backport multiple fixes
+236149c306|Hauke Mehrtens|Thu Jan 1 19:31:48 2026 +0100|kernel: phylink: disable autoneg for interfaces that have no inband
+a725b439e9|Hauke Mehrtens|Thu Jan 1 19:27:26 2026 +0100|kernel: RTL8211FVD: restore disabling of PHY-mode EEE
+fafe124d8e|Hauke Mehrtens|Thu Jan 1 19:21:08 2026 +0100|kernel: mv88e6xxx: backport fixes
+f575392914|Hauke Mehrtens|Thu Jan 1 19:17:00 2026 +0100|kernel: reserved_mem: add missing IORESOURCE_MEM flag on resources
+22d30efdc8|Hauke Mehrtens|Thu Jan 1 17:41:31 2026 +0100|kernel: as21xxx: backport patch improve PHY HW reset
+15eb5f05ef|Hauke Mehrtens|Thu Jan 1 17:38:07 2026 +0100|kernel: pcs-mtk-lynxi: backport fix for in-band status capabilities
+301515ab7d|Hauke Mehrtens|Thu Jan 1 17:34:05 2026 +0100|kernel: PHY: backport led fixes commit
+952ec239af|Hauke Mehrtens|Thu Jan 1 17:28:56 2026 +0100|kernel: r8169: backport upstream fix
 
 .....................
 
