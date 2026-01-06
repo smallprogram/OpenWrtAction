@@ -2,22 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f5bf8c2b94|Ziyang Huang|Sun Oct 19 17:45:48 2025 +0800|airoha: an7581: correct led nodename
-077120fb64|Ziyang Huang|Sun Oct 19 17:51:28 2025 +0800|airoha: an7581: correct phy nodename
-ea54b6a478|Ziyang Huang|Sun Oct 19 17:41:43 2025 +0800|airoha: an7581: move the switch led label from soc-level to board-level
-e2f7ad08c7|Ziyang Huang|Sun Oct 19 17:37:39 2025 +0800|airoha: an7581: move the switch port label from soc-level to board-level
-007aa5a51c|Ziyang Huang|Sun Oct 19 17:45:24 2025 +0800|airoha: an7581: disable all switch port and phy by default
-65aed6aa12|Ziyang Huang|Sun Oct 19 17:34:53 2025 +0800|airoha: an7581: correct the pinctrl-name of phy leds
-987214c9f8|Hannu Nyman|Sat Jan 3 12:51:29 2026 +0200|mediatek: remove erroneous pipe action from BE7200 recipe
-d1ff5681b4|Mikhail Zhilkin|Sat Dec 20 18:43:45 2025 +0300|mediatek: add support for Routerich BE7200
-a21680586c|Mikhail Zhilkin|Sat Dec 20 18:40:22 2025 +0300|arm-trusted-firmware-mediatek: add mt7987-spim-nand0 build
-a1bb2cbb9d|Robert Senderek|Wed Nov 12 10:08:37 2025 +0100|mvebu: Add support for WD MyCloud EX2 Ultra
-a78f0078c4|Hauke Mehrtens|Thu Jan 1 19:40:06 2026 +0100|kernel: QCOM SPI NAND: backport multiple fixes
-236149c306|Hauke Mehrtens|Thu Jan 1 19:31:48 2026 +0100|kernel: phylink: disable autoneg for interfaces that have no inband
-a725b439e9|Hauke Mehrtens|Thu Jan 1 19:27:26 2026 +0100|kernel: RTL8211FVD: restore disabling of PHY-mode EEE
-fafe124d8e|Hauke Mehrtens|Thu Jan 1 19:21:08 2026 +0100|kernel: mv88e6xxx: backport fixes
-f575392914|Hauke Mehrtens|Thu Jan 1 19:17:00 2026 +0100|kernel: reserved_mem: add missing IORESOURCE_MEM flag on resources
-
-.....................
-
+12d47550e6|Linus Walleij|Sat Jan 3 21:44:13 2026 +0100|uboot-bcm53xx: bump U-Boot to 2025.10
+838a9ff1ca|George Sapkin|Mon Jan 5 16:26:47 2026 +0200|build: restore opkg-related provides logic
+bf46d119a2|Felix Fietkau|Sun Jan 4 18:21:41 2026 +0000|ucode-mod-ubus: complete pending requests when disconnecting locally
+bdc3c1a820|Felix Fietkau|Sun Jan 4 12:17:39 2026 +0000|unetmsg: remove redundant socket close
+8a304d051f|Felix Fietkau|Sun Jan 4 10:07:33 2026 +0000|unetmsg: add timeout for outgoing auth requests
+f631d1576d|Felix Fietkau|Sun Jan 4 10:04:58 2026 +0000|unetmsg: add null check in TX disconnect callback
 </details>

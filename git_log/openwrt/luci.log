@@ -2,22 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dfe45f118a|Paul Donald|Sat Jan 3 17:51:59 2026 +0100|luci-theme-openwrt: fix CSS error
-0d55a89cb2|Paul Donald|Sat Jan 3 17:51:59 2026 +0100|luci-theme-openwrt: fix CSS error
-541ff495df|Hannu Nyman|Sat Jan 3 13:08:29 2026 +0200|treewide: backport translations
-4499d25b59|Hannu Nyman|Fri Jan 2 20:09:42 2026 +0200|luci-base: sync translations
-eedc2614cf|Hosted Weblate|Fri Jan 2 19:05:02 2026 +0100|Translated using Weblate (Lithuanian)
-c38063cd60|Hosted Weblate|Thu Jan 1 16:28:31 2026 +0100|Translated using Weblate (Korean)
-ffa2c130f9|Paul Donald|Wed Dec 31 18:33:33 2025 +0100|luci-mod-network: add tags tab
-3c8ff55120|Paul Donald|Wed Dec 31 18:33:33 2025 +0100|luci-mod-network: add tags tab
-fe4202cef2|Paul Donald|Wed Dec 31 15:28:27 2025 +0100|luci-mod-system: extend dropbear listen options
-37aa2807ea|Paul Donald|Wed Dec 31 15:28:27 2025 +0100|luci-mod-system: extend dropbear listen options
-a277b796ca|David Härdeman|Tue Dec 30 18:31:17 2025 +0100|luci-mod-network: show leases first in DHCP tab
-7a18a0ef42|David Härdeman|Tue Dec 30 18:31:17 2025 +0100|luci-mod-network: show leases first in DHCP tab
-c1c29d2ecd|Hosted Weblate|Mon Dec 29 17:35:38 2025 +0100|Translated using Weblate (Korean)
-26ec03caa6|Hosted Weblate|Sat Dec 27 07:33:39 2025 +0100|Translated using Weblate (Korean)
-78a62f261b|zhusir|Mon Dec 15 20:03:02 2025 +0800|luci-app-acme: fixed the issue where certificates were not displaying (#8151)
-
-.....................
-
+5a5506931b|Stan Grishin|Mon Jan 5 11:03:32 2026 -0800|Merge pull request #8192 from stangri/master-luci-app-adblock-fast
+6efab6839b|Hosted Weblate|Mon Jan 5 06:35:50 2026 +0100|Translated using Weblate (Spanish)
+63113daa5a|Stan Grishin|Sun Jan 4 19:29:18 2026 +0000|luci-app-adblock-fast: update to 1.2.0-26
 </details>

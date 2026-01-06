@@ -2,21 +2,21 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-65c2bf9654|Tianling Shen|Sun Jan 4 19:55:14 2026 +0800|Merge Official Source
-9833aaab28|Tianling Shen|Sun Jan 4 19:48:14 2026 +0800|Merge Official Source
-ded99c2984|Eric Fahlgren|Sat Jan 3 16:04:51 2026 -0800|treewide: add explicit default variant part 2
-a10d10edd7|Felix Fietkau|Sun Jan 4 10:59:14 2026 +0100|cli: fix typo in error reporting
-6e48b1b7af|fujr|Wed Nov 26 21:19:47 2025 +0800|rockchip: add support for Widora MangoPi M28C
-9934c716ed|Rosen Penev|Fri Dec 19 15:33:50 2025 -0800|treewide: replace remove_new with remove
-79ff31104c|Aleksander Jan Bajkowski|Sat Nov 29 18:58:17 2025 +0100|airoha: an7583: fix scuclk unit-address
-914fe44647|Aleksander Jan Bajkowski|Sat Nov 29 18:56:50 2025 +0100|airoha: en7583: dts: fix typo disable
-2055a4df78|Jonas Jelonek|Fri Jan 2 17:49:02 2026 +0000|realtek: pcs: rtl931x: soften early exit for USXGMII
-b63f68e409|Jonas Jelonek|Fri Jan 2 18:50:10 2026 +0000|realtek: pcs: select OFF mode with no links on SerDes
-7cd3407fde|Jonas Jelonek|Fri Jan 2 16:30:16 2026 +0000|realtek: pcs: cover number of links per SerDes for USXGMII
-76f392194b|Jonas Jelonek|Wed Dec 24 10:28:36 2025 +0000|realtek: pcs: keep track of number of links per SerDes
-dfd6a4212f|Jonas Jelonek|Wed Dec 24 10:36:03 2025 +0000|realtek: pcs: add missing SerDes modes
-93e9e67ee9|Hannu Nyman|Sat Jan 3 12:51:29 2026 +0200|mediatek: remove erroneous pipe action from BE7200 recipe
-5f68bfe992|Tianling Shen|Sat Jan 3 16:23:33 2026 +0800|rockchip: reduce eMMC speed to 100 MHz for photonicat2
+6a996d985e|Tianling Shen|Mon Jan 5 13:25:31 2026 +0800|Merge Official Source
+8b63a55fe2|Tianling Shen|Mon Jan 5 12:16:50 2026 +0800|uboot-rockchip: fix enter download mode (MaskROM) for RK356x/RK3588
+f5bf8c2b94|Ziyang Huang|Sun Oct 19 17:45:48 2025 +0800|airoha: an7581: correct led nodename
+077120fb64|Ziyang Huang|Sun Oct 19 17:51:28 2025 +0800|airoha: an7581: correct phy nodename
+ea54b6a478|Ziyang Huang|Sun Oct 19 17:41:43 2025 +0800|airoha: an7581: move the switch led label from soc-level to board-level
+e2f7ad08c7|Ziyang Huang|Sun Oct 19 17:37:39 2025 +0800|airoha: an7581: move the switch port label from soc-level to board-level
+007aa5a51c|Ziyang Huang|Sun Oct 19 17:45:24 2025 +0800|airoha: an7581: disable all switch port and phy by default
+65aed6aa12|Ziyang Huang|Sun Oct 19 17:34:53 2025 +0800|airoha: an7581: correct the pinctrl-name of phy leds
+17b90c59fa|Markus Stockhausen|Wed Dec 31 15:04:46 2025 +0100|realtek: eth: adapt prefix of ops structures
+f14fed9a92|Markus Stockhausen|Wed Dec 31 14:49:05 2025 +0100|realtek: eth: move netdev_ops to config structure
+2d8212e8a4|Markus Stockhausen|Wed Dec 31 14:31:42 2025 +0100|realtek: eth: reorder configuration data
+b8c6713ce4|Markus Stockhausen|Wed Dec 31 14:20:38 2025 +0100|realtek: eth: move cpu_port to config structure
+e6d282eee7|Markus Stockhausen|Wed Dec 31 14:09:58 2025 +0100|realtek: eth: Rename configuration structure
+8630fa09c7|Eric Fahlgren|Sun Jan 4 09:35:11 2026 -0800|packages: ethtool: restore CONFLICTS
+6c9c641777|John Audia|Thu Dec 25 08:31:13 2025 -0500|nat46: fix reproducible-build failure and use latest git
 
 .....................
 
