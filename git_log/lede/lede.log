@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7a274073f|Robert Marko|Sat May 3 00:06:28 2025 +0200|libiconv-full: drop patch-libtool
+addecfda2|Robert Marko|Wed Apr 30 11:53:45 2025 +0200|ead: fix compilation with GCC14
 </details>
