@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5a5506931b|Stan Grishin|Mon Jan 5 11:03:32 2026 -0800|Merge pull request #8192 from stangri/master-luci-app-adblock-fast
-6efab6839b|Hosted Weblate|Mon Jan 5 06:35:50 2026 +0100|Translated using Weblate (Spanish)
-63113daa5a|Stan Grishin|Sun Jan 4 19:29:18 2026 +0000|luci-app-adblock-fast: update to 1.2.0-26
+6ebcfe66ec|novenary enneagon|Mon Jan 5 15:11:46 2026 +0200|luci-base: clean overlooked files
+64e8a43cc3|qianxu|Tue Jan 6 18:48:15 2026 +0800|luci-mod-status: fix incorrect unit for port speed
+44c934efec|Paul Donald|Tue Jan 6 04:08:55 2026 +0100|luci-mod-network: fill set tag fields with available tags
 </details>

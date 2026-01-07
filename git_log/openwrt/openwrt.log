@@ -2,10 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-12d47550e6|Linus Walleij|Sat Jan 3 21:44:13 2026 +0100|uboot-bcm53xx: bump U-Boot to 2025.10
-838a9ff1ca|George Sapkin|Mon Jan 5 16:26:47 2026 +0200|build: restore opkg-related provides logic
-bf46d119a2|Felix Fietkau|Sun Jan 4 18:21:41 2026 +0000|ucode-mod-ubus: complete pending requests when disconnecting locally
-bdc3c1a820|Felix Fietkau|Sun Jan 4 12:17:39 2026 +0000|unetmsg: remove redundant socket close
-8a304d051f|Felix Fietkau|Sun Jan 4 10:07:33 2026 +0000|unetmsg: add timeout for outgoing auth requests
-f631d1576d|Felix Fietkau|Sun Jan 4 10:04:58 2026 +0000|unetmsg: add null check in TX disconnect callback
+6aaffddf27|Daniel Golle|Mon Jan 5 18:12:40 2026 +0000|kernel: net: phy: realtek: fix C22-only mode on 2.5GE PHYs
+96ff31b94a|Daniel Golle|Sat Jan 3 21:05:35 2026 +0000|kernel: net: phy: c45: check validity of 10GbE LPA
+dfce21df96|Daniel Golle|Sat Jan 3 15:41:17 2026 +0000|kernel: net: phy: realtek: replace in-band AN hack
+5652b98952|Daniel Golle|Sat Jan 3 18:43:33 2026 +0000|kernel: net: phy: realtek: replace hack with proper fix
+e06c4125fd|Felix Fietkau|Tue Jan 6 19:09:01 2026 +0000|ucode: remove the fs.read_nb patch
+ed2587c73d|Felix Fietkau|Tue Jan 6 19:08:41 2026 +0000|ucode: add package for ucode-mod-io
+79a0aebd81|Felix Fietkau|Tue Jan 6 18:46:46 2026 +0100|wifi-scripts: move the "disabled" option to the wifi-iface section
 </details>

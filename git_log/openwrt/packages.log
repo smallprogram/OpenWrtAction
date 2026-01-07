@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e367c1d73|Stan Grishin|Sun Jan 4 19:21:54 2026 +0000|adblock-fast: update to 1.2.0-26
-b1bd9b18e|Wei-Ting Yang|Sun Jan 4 23:06:13 2026 +0800|python-certifi: update to 2026.1.4
-a69761a22|TeleostNaCl Dai|Thu Jan 1 15:49:14 2026 +0800|v2ray-geodata: provide a virtual package
+698cca3a4|Philip Prindeville|Mon Jan 5 16:20:55 2026 -0700|kea: fix build issue with boost-1.90 static assert
 </details>
