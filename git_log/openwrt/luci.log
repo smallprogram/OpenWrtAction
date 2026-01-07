@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6984d4d2a2|Stan Grishin|Mon Jan 5 11:03:43 2026 -0800|Merge pull request #8193 from stangri/openwrt-25.12-luci-app-adblock-fast
-58971e5a8f|Stan Grishin|Sun Jan 4 19:29:18 2026 +0000|luci-app-adblock-fast: update to 1.2.0-26
+6e7ed7653c|Paul Donald|Tue Jan 6 04:08:55 2026 +0100|luci-mod-network: fill set tag fields with available tags
 </details>
