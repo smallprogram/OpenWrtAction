@@ -13,7 +13,7 @@
 
 <div align="center">
 
-[![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Fsmallprogram%2FOpenWrtAction&countColor=%2344cc11&style=flat-square)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fsmallprogram%2FOpenWrtAction) ![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/total?style=flat-square) ![](https://img.shields.io/github/repo-size/smallprogram/OpenWrtAction?style=flat-square) ![](https://img.shields.io/github/release-date/smallprogram/OpenWrtAction?style=flat-square) ![](https://img.shields.io/github/last-commit/smallprogram/OpenWrtAction?style=flat-square) [![](https://img.shields.io/github/license/smallprogram/OpenWrtAction?style=flat-square)](https://github.com/smallprogram/OpenWrtAction/blob/main/LICENSE?style=flat-square)
+[![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2F0x533512%2FOpenWrtAction-snapshot&countColor=%2344cc11&style=flat-square)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2F0x533512%2FOpenWrtAction-snapshot) ![](https://img.shields.io/github/downloads/0x533512/OpenWrtAction-snapshot/total?style=flat-square) ![](https://img.shields.io/github/repo-size/0x533512/OpenWrtAction-snapshot?style=flat-square) ![](https://img.shields.io/github/release-date/0x533512/OpenWrtAction-snapshot?style=flat-square) ![](https://img.shields.io/github/last-commit/0x533512/OpenWrtAction-snapshot?style=flat-square) [![](https://img.shields.io/github/license/0x533512/OpenWrtAction-snapshot?style=flat-square)](https://github.com/0x533512/OpenWrtAction-snapshot/blob/main/LICENSE?style=flat-square)
 
 
 </div>
@@ -78,7 +78,7 @@
 ## ⚙️ WorkFlow
 |ActionStatus|Network Support|Latest Release|Latest Download|
 |-|-|-|-|
-|[![Build-OpenWrt_Multi-Platform(V4)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_Multi-Platform(V5).yml/badge.svg?branch=main)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_Multi-Platform(V4).yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|![GitHub release (with filter)](https://img.shields.io/github/v/release/smallprogram/OpenWrtAction)|[![GitHub release (latest by date)](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/latest/total?style=flat-square)](https://github.com/smallprogram/OpenWrtAction/releases/latest)|
+|[![Build-OpenWrt_Multi-Platform(V4)](https://github.com/0x533512/OpenWrtAction-snapshot/actions/workflows/Build-OpenWrt_Multi-Platform(V5).yml/badge.svg?branch=main)](https://github.com/0x533512/OpenWrtAction-snapshot/actions/workflows/Build-OpenWrt_Multi-Platform(V4).yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|![GitHub release (with filter)](https://img.shields.io/github/v/release/0x533512/OpenWrtAction-snapshot)|[![GitHub release (latest by date)](https://img.shields.io/github/downloads/0x533512/OpenWrtAction-snapshot/latest/total?style=flat-square)](https://github.com/0x533512/OpenWrtAction-snapshot/releases/latest)|
 
 
 > Each Release contains multiple source platform firmwares. Please select the corresponding firmware download according to your platform.
@@ -155,12 +155,12 @@ CONFIG_PACKAGE_luci-theme-openwrt-2020=y
 ```
 ---
 
-[![Star History Chart](https://api.star-history.com/svg?repos=smallprogram/OpenWrtAction&type=Date)](https://star-history.com/#smallprogram/OpenWrtAction&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=0x533512/OpenWrtAction-snapshot&type=Date)](https://star-history.com/#0x533512/OpenWrtAction-snapshot&Date)
 
 ---
 
 ## 🔗 Quick Jump
-#### [🧭 Latest firmware list, click to get it](https://github.com/smallprogram/OpenWrtAction/tags)
+#### [🧭 Latest firmware list, click to get it](https://github.com/0x533512/OpenWrtAction-snapshot/tags)
 #### [🧭 R1 Soft Router Installation ESXi 8.0 Tutorial](R1_ESXI8.md)
 ---
 ## 📚 Related parameters
@@ -180,13 +180,13 @@ Before running, please make sure that your compilation environment has installed
 
 #### First execution
 ```shell
-git clone https://github.com/smallprogram/OpenWrtAction
-cd OpenWrtAction
+git clone https://github.com/0x533512/OpenWrtAction-snapshot
+cd OpenWrtAction-snapshot
 bash wsl2op.sh
 ```
 #### Second execution
 ```shell
-cd OpenWrtAction
+cd OpenWrtAction-snapshot
 bash wsl2op.sh
 ```
 ---

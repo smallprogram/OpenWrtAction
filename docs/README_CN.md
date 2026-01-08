@@ -13,7 +13,7 @@
 
 <div align="center">
 
-[![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Fsmallprogram%2FOpenWrtAction&countColor=%2344cc11&style=flat-square)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fsmallprogram%2FOpenWrtAction) ![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/total?style=flat-square) ![](https://img.shields.io/github/repo-size/smallprogram/OpenWrtAction?style=flat-square) ![](https://img.shields.io/github/release-date/smallprogram/OpenWrtAction?style=flat-square) ![](https://img.shields.io/github/last-commit/smallprogram/OpenWrtAction?style=flat-square) [![](https://img.shields.io/github/license/smallprogram/OpenWrtAction?style=flat-square)](https://github.com/smallprogram/OpenWrtAction/blob/main/LICENSE?style=flat-square)
+[![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2F0x533512%2FOpenWrtAction-snapshot&countColor=%2344cc11&style=flat-square)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2F0x533512%2FOpenWrtAction-snapshot) ![](https://img.shields.io/github/downloads/0x533512/OpenWrtAction-snapshot/total?style=flat-square) ![](https://img.shields.io/github/repo-size/0x533512/OpenWrtAction-snapshot?style=flat-square) ![](https://img.shields.io/github/release-date/0x533512/OpenWrtAction-snapshot?style=flat-square) ![](https://img.shields.io/github/last-commit/0x533512/OpenWrtAction-snapshot?style=flat-square) [![](https://img.shields.io/github/license/0x533512/OpenWrtAction-snapshot?style=flat-square)](https://github.com/0x533512/OpenWrtAction-snapshot/blob/main/LICENSE?style=flat-square)
 
 
 </div>
@@ -77,7 +77,7 @@
 ## ⚙️ 工作流
 |ActionStatus|Network Support|Latest Release|Latest Download|
 |-|-|-|-|
-|[![Build-OpenWrt_Multi-Platform(V4)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_Multi-Platform(V5).yml/badge.svg?branch=main)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build-OpenWrt_Multi-Platform(V4).yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|![GitHub release (with filter)](https://img.shields.io/github/v/release/smallprogram/OpenWrtAction)|[![GitHub release (latest by date)](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/latest/total?style=flat-square)](https://github.com/smallprogram/OpenWrtAction/releases/latest)|
+|[![Build-OpenWrt_Multi-Platform(V5)](https://github.com/0x533512/OpenWrtAction-snapshot/actions/workflows/Build-OpenWrt_Multi-Platform(V5).yml/badge.svg?branch=main)](https://github.com/0x533512/OpenWrtAction-snapshot/actions/workflows/Build-OpenWrt_Multi-Platform(V4).yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|![GitHub release (with filter)](https://img.shields.io/github/v/release/0x533512/OpenWrtAction-snapshot)|[![GitHub release (latest by date)](https://img.shields.io/github/downloads/0x533512/OpenWrtAction-snapshot/latest/total?style=flat-square)](https://github.com/0x533512/OpenWrtAction-snapshot/releases/latest)|
 
 
 > 每一个Release包含多个源码平台固件，请根据自己的平台选择对应的固件下载
@@ -156,13 +156,13 @@ CONFIG_PACKAGE_luci-theme-openwrt-2020=y
 ```
 ---
 
-[![Star History Chart](https://api.star-history.com/svg?repos=smallprogram/OpenWrtAction&type=Date)](https://star-history.com/#smallprogram/OpenWrtAction&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=0x533512/OpenWrtAction-snapshot&type=Date)](https://star-history.com/#0x533512/OpenWrtAction-snapshot&Date)
 
 ---
 
 ## 🔗 快速跳转
 
-#### [🧭 最新固件列表，点击自取](https://github.com/smallprogram/OpenWrtAction/tags)
+#### [🧭 最新固件列表，点击自取](https://github.com/0x533512/OpenWrtAction-snapshot/tags)
 #### [🧭 R1软路由安装ESXi 8.0教程](R1_ESXI8.md)
 ---
 ## 📚 相关参数
@@ -182,13 +182,13 @@ CONFIG_PACKAGE_luci-theme-openwrt-2020=y
 
 #### 首次执行
 ```shell
-git clone https://github.com/smallprogram/OpenWrtAction
-cd OpenWrtAction
+git clone https://github.com/0x533512/OpenWrtAction-snapshot
+cd OpenWrtAction-snapshot
 bash wsl2op.sh
 ```
 #### 二次执行
 ```shell
-cd OpenWrtAction
+cd OpenWrtAction-snapshot
 bash wsl2op.sh
 ```
 
