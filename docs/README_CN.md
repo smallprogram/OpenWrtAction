@@ -20,6 +20,7 @@
 
 ---
 [![中文文档](https://img.shields.io/badge/语言-简体中文-blue?style=for-the-badge)](README_CN.md)  [![English Docs](https://img.shields.io/badge/Language-English-green?style=for-the-badge)](README.md)
+  [![SNAPSHOT](https://img.shields.io/badge/Openwrt_Immortalwrt-Snapshot_release_link-green?style=for-the-badge)](https://github.com/0x533512/OpenWrtAction-snapshot/releases)
 
 ---
 
