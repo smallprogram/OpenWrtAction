@@ -1,8 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-6ebcfe66ec|novenary enneagon|Mon Jan 5 15:11:46 2026 +0200|luci-base: clean overlooked files
-64e8a43cc3|qianxu|Tue Jan 6 18:48:15 2026 +0800|luci-mod-status: fix incorrect unit for port speed
-44c934efec|Paul Donald|Tue Jan 6 04:08:55 2026 +0100|luci-mod-network: fill set tag fields with available tags
-</details>

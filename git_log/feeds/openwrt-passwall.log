@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-aaa47f2|A-BO|Tue Jan 6 22:46:50 2026 +0800|luci: support import/export `ss-xhttp` node links
-6359019|A-BO|Tue Jan 6 20:49:48 2026 +0800|luci: ipt/nft supports multiple wan ips
+346da7e|zhusir|Wed Jan 7 23:50:54 2026 +0800|luci: force regenerated rule from geofile (#4226)
+ee95d00|A-BO|Wed Jan 7 22:35:10 2026 +0800|luci: optimize the display effect of the bottom button in socks config
 </details>

@@ -2,11 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6aaffddf27|Daniel Golle|Mon Jan 5 18:12:40 2026 +0000|kernel: net: phy: realtek: fix C22-only mode on 2.5GE PHYs
-96ff31b94a|Daniel Golle|Sat Jan 3 21:05:35 2026 +0000|kernel: net: phy: c45: check validity of 10GbE LPA
-dfce21df96|Daniel Golle|Sat Jan 3 15:41:17 2026 +0000|kernel: net: phy: realtek: replace in-band AN hack
-5652b98952|Daniel Golle|Sat Jan 3 18:43:33 2026 +0000|kernel: net: phy: realtek: replace hack with proper fix
-e06c4125fd|Felix Fietkau|Tue Jan 6 19:09:01 2026 +0000|ucode: remove the fs.read_nb patch
-ed2587c73d|Felix Fietkau|Tue Jan 6 19:08:41 2026 +0000|ucode: add package for ucode-mod-io
-79a0aebd81|Felix Fietkau|Tue Jan 6 18:46:46 2026 +0100|wifi-scripts: move the "disabled" option to the wifi-iface section
+f948f71300|Robert Senderek|Fri Oct 10 14:40:21 2025 +0200|qualcommax: ipq50xx: Add support for Zyxel SCR50AXE
+95a3dc83f1|Robert Marko|Wed Jan 7 11:03:54 2026 +0100|ipq-wifi: update to Git HEAD (2026-01-07)
+b94c3ba0ff|Jonas Jelonek|Sun Jan 4 17:22:29 2026 +0000|realtek: pcs: rtl931x: improve port media handling
+7971386514|Jonas Jelonek|Sun Dec 21 13:45:36 2025 +0000|realtek: pcs: rtl931x: add port media handling
+b4bd85d504|Jonas Jelonek|Sun Dec 21 13:14:04 2025 +0000|realtek: pcs: add enum for port media
+b435b5bc61|Jonas Jelonek|Mon Jan 5 15:07:59 2026 +0000|realtek: pcs: drop some unneeded unused attributes
+84f2ecba4d|Jonas Jelonek|Mon Jan 5 14:52:38 2026 +0000|realtek: pcs: fix naming of RTL931X sds config data
+3753805b2a|Jonas Jelonek|Mon Jan 5 14:44:41 2026 +0000|realtek: pcs: use ARRAY_SIZE kernel macro
+7aa7e97e53|Jonas Jelonek|Mon Jan 5 14:07:48 2026 +0000|realtek: pcs: fix sds_config struct definition
+fe0f6f82c1|Jonas Jelonek|Mon Jan 5 13:04:34 2026 +0000|realtek: pcs: add myself as module author
+c79fa27cbf|Tianling Shen|Tue Jan 6 12:02:40 2026 +0800|rockchip: fix kernel tag for backported patches
 </details>

@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-698cca3a4|Philip Prindeville|Mon Jan 5 16:20:55 2026 -0700|kea: fix build issue with boost-1.90 static assert
+01ac2966f|Daniel F. Dickinson|Fri Dec 26 01:03:27 2025 -0500|ddns-scripts: remove rework of OVH provider
 </details>
