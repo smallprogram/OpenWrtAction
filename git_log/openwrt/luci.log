@@ -1,6 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-6e7ed7653c|Paul Donald|Tue Jan 6 04:08:55 2026 +0100|luci-mod-network: fill set tag fields with available tags
-</details>

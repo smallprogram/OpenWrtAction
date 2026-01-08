@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-addecfda2|Robert Marko|Wed Apr 30 11:53:45 2025 +0200|ead: fix compilation with GCC14
+b69327e20|Georgi Valkov|Mon May 27 23:23:20 2024 +0300|ebtables: fixes build with GCC14
 </details>
