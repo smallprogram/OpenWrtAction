@@ -19,7 +19,7 @@
 </div>
 
 ---
-[![中文文档](https://img.shields.io/badge/语言-简体中文-blue?style=for-the-badge)](README_CN.md)  [![English Docs](https://img.shields.io/badge/Language-English-green?style=for-the-badge)](README.md)
+[![中文文档](https://img.shields.io/badge/语言-简体中文-blue?style=for-the-badge)](README_CN.md)  [![English Docs](https://img.shields.io/badge/Language-English-green?style=for-the-badge)](README.md) [![25.12](https://img.shields.io/badge/Openwrt_Immortalwrt-25.12_release_link-green?style=for-the-badge)](https://github.com/smallprogram/OpenWrtAction/releases)
 
 ---
 
@@ -31,7 +31,7 @@
 </div> -->
 
 
-[![](https://img.shields.io/badge/source-openwrt_25.12-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)
+[![](https://img.shields.io/badge/source-openwrt_snapshot-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/openwrt/openwrt)
  ```
 
   _______                     ________        __
@@ -45,7 +45,7 @@
 
 ```
 
-[![](https://img.shields.io/badge/source-immortalwrt_25.12-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt)
+[![](https://img.shields.io/badge/source-immortalwrt_snapshot-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/immortalwrt/immortalwrt)
 ```
 .___                               __         .__
 |   | _____   _____   ____________/  |______  |  |
@@ -58,27 +58,12 @@
  -------------------------------------------------------------------------
 ```
 
-[![](https://img.shields.io/badge/source-lean_SNAPSHOT-green?logo=openwrt&logoColor=green&style=flat-square)](https://github.com/coolsnowwolf/lede)
-
-```
-     _________
-    /        /\        _    ___ ___  ___
-   /  LE    /  \      | |  | __|   \| __|
-  /    DE  /    \     | |__| _|| |) | _|
- /________/  LE  \    |____|___|___/|___|
- \        \   DE /
-  \    LE  \    /  -------------------------------------------------------
-   \  DE    \  /    OpenWrt SNAPSHOT, https://github.com/coolsnowwolf/lede
-    \________\/    -------------------------------------------------------
-```
-
-
 ---
 
 ## ⚙️ WorkFlow
 |ActionStatus|Network Support|Latest Release|Latest Download|
 |-|-|-|-|
-|[![Build-OpenWrt_Multi-Platform(V4)](https://github.com/0x533512/OpenWrtAction-snapshot/actions/workflows/Build-OpenWrt_Multi-Platform(V5).yml/badge.svg?branch=main)](https://github.com/0x533512/OpenWrtAction-snapshot/actions/workflows/Build-OpenWrt_Multi-Platform(V4).yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|![GitHub release (with filter)](https://img.shields.io/github/v/release/0x533512/OpenWrtAction-snapshot)|[![GitHub release (latest by date)](https://img.shields.io/github/downloads/0x533512/OpenWrtAction-snapshot/latest/total?style=flat-square)](https://github.com/0x533512/OpenWrtAction-snapshot/releases/latest)|
+|[![Build-OpenWrt_Multi-Platform(V5)](https://github.com/0x533512/OpenWrtAction-snapshot/actions/workflows/Build-OpenWrt_Multi-Platform(V5).yml/badge.svg?branch=main)](https://github.com/0x533512/OpenWrtAction-snapshot/actions/workflows/Build-OpenWrt_Multi-Platform(V4).yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|![GitHub release (with filter)](https://img.shields.io/github/v/release/0x533512/OpenWrtAction-snapshot)|[![GitHub release (latest by date)](https://img.shields.io/github/downloads/0x533512/OpenWrtAction-snapshot/latest/total?style=flat-square)](https://github.com/0x533512/OpenWrtAction-snapshot/releases/latest)|
 
 
 > Each Release contains multiple source platform firmwares. Please select the corresponding firmware download according to your platform.
