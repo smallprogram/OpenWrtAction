@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6e47354e|Internet1235|Tue Jan 6 21:00:06 2026 +0800|rrdtool1: fix build with GCC 14
+eb73f7af|Internet1235|Wed Jan 7 21:00:01 2026 +0800|git: update to version 2.52.0
 </details>
