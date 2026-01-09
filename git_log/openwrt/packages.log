@@ -1,0 +1,8 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+787811f8c|Daniel F. Dickinson|Fri Dec 26 01:03:27 2025 -0500|ddns-scripts: remove rework of OVH provider
+f86eddd4d|Vladimir Tkachev|Wed Dec 17 19:37:08 2025 +0400|ddns-scripts: add beget.com api support
+6d476c1f9|Brian J. Murrell|Thu Feb 23 15:01:46 2023 -0500|ddns-scripts: remove minimum 5 minute wait
+</details>

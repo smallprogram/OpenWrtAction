@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b69327e20|Georgi Valkov|Mon May 27 23:23:20 2024 +0300|ebtables: fixes build with GCC14
+2186cbfdc|John Audia|Tue Dec 16 16:42:12 2025 -0500|cryptodev-linux: fixes 6.18 build
 </details>

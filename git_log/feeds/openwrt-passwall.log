@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-346da7e|zhusir|Wed Jan 7 23:50:54 2026 +0800|luci: force regenerated rule from geofile (#4226)
-ee95d00|A-BO|Wed Jan 7 22:35:10 2026 +0800|luci: optimize the display effect of the bottom button in socks config
+3322a34|A-BO|Thu Jan 8 21:05:01 2026 +0800|luci: fix the highlighting logic for the current node in the node list
+5d739ad|A-BO|Thu Jan 8 19:09:53 2026 +0800|luci: optimize the display effect of some pages and controls in dark mode
 </details>
