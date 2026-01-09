@@ -1,0 +1,12 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b258d7a248|Stan Grishin|Thu Jan 8 18:04:43 2026 -0800|Merge pull request #8186 from stangri/master-luci-app-pbr
+f468773cce|Stan Grishin|Thu Jan 8 18:04:15 2026 -0800|Merge pull request #8201 from stangri/master-luci-app-https-dns-proxy
+3a5fde8815|Stan Grishin|Thu Jan 8 18:03:17 2026 -0800|Merge pull request #7919 from stangri/master-luci-app-advanced-reboot
+e5ff2bad84|Hosted Weblate|Thu Jan 8 10:07:11 2026 +0100|Translated using Weblate (Korean)
+4979338bbb|Stan Grishin|Thu Jan 8 03:30:01 2026 +0000|luci-app-https-dns-proxy: update to 2025-12-29-1
+93b92f944a|Stan Grishin|Sun Aug 24 02:11:28 2025 +0000|luci-app-advanced-reboot: update to 1.1.1
+1ce137b6ca|Stan Grishin|Sat Jan 3 01:26:09 2026 +0000|luci-app-pbr: upgrade to 1.2.1-45
+</details>

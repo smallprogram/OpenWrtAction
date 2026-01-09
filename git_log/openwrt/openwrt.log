@@ -2,15 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f948f71300|Robert Senderek|Fri Oct 10 14:40:21 2025 +0200|qualcommax: ipq50xx: Add support for Zyxel SCR50AXE
-95a3dc83f1|Robert Marko|Wed Jan 7 11:03:54 2026 +0100|ipq-wifi: update to Git HEAD (2026-01-07)
-b94c3ba0ff|Jonas Jelonek|Sun Jan 4 17:22:29 2026 +0000|realtek: pcs: rtl931x: improve port media handling
-7971386514|Jonas Jelonek|Sun Dec 21 13:45:36 2025 +0000|realtek: pcs: rtl931x: add port media handling
-b4bd85d504|Jonas Jelonek|Sun Dec 21 13:14:04 2025 +0000|realtek: pcs: add enum for port media
-b435b5bc61|Jonas Jelonek|Mon Jan 5 15:07:59 2026 +0000|realtek: pcs: drop some unneeded unused attributes
-84f2ecba4d|Jonas Jelonek|Mon Jan 5 14:52:38 2026 +0000|realtek: pcs: fix naming of RTL931X sds config data
-3753805b2a|Jonas Jelonek|Mon Jan 5 14:44:41 2026 +0000|realtek: pcs: use ARRAY_SIZE kernel macro
-7aa7e97e53|Jonas Jelonek|Mon Jan 5 14:07:48 2026 +0000|realtek: pcs: fix sds_config struct definition
-fe0f6f82c1|Jonas Jelonek|Mon Jan 5 13:04:34 2026 +0000|realtek: pcs: add myself as module author
-c79fa27cbf|Tianling Shen|Tue Jan 6 12:02:40 2026 +0800|rockchip: fix kernel tag for backported patches
+e1a9636959|George Moussalem|Thu Jan 8 13:22:33 2026 +0400|qualcommax: ipq50xx: Correct USB DWC3 wrapper interrupts
+0ff1553bd7|Robert Marko|Thu Jan 8 11:16:46 2026 +0100|ipq-wifi: rename BDF for EAP623-Outdoor HD v1
+d6ab889e45|George Moussalem|Wed Jan 7 18:31:15 2026 +0400|qualcommax: ipq50xx: correct assigned cmn pll clock rate
+fdce6f99be|George Moussalem|Wed Jan 7 17:44:44 2026 +0400|qualcommax: ipq50xx: enable ipq-cmn-pll driver compilation
 </details>

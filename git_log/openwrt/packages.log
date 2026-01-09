@@ -2,5 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-01ac2966f|Daniel F. Dickinson|Fri Dec 26 01:03:27 2025 -0500|ddns-scripts: remove rework of OVH provider
+89ef3e28e|Stan Grishin|Mon Dec 29 00:55:22 2025 +0000|pbr: update to 1.2.1-45
+c46fe559b|Stan Grishin|Thu Jan 8 03:22:38 2026 +0000|https-dns-proxy: update to 2025-12-29-1
+4d0b2071c|Maxim Storchak|Thu Jan 8 18:18:50 2026 +0200|linenoise: update to 2026-01-08 (dc83cc3)
+13585fdec|Stijn Tintel|Sat Jan 3 16:15:27 2026 +0200|openthread-br: fix luci-app-openthread
+ae922c2f3|Stijn Tintel|Sat Jan 3 16:14:30 2026 +0200|openthread-br: fix LuCI icons
+0f233bdc1|Qingfang Deng|Sun Jan 4 11:15:23 2026 +0800|libteam: add new package
+47a54ba42|Jonas Lochmann|Mon Dec 22 01:00:00 2025 +0100|xinetd: update to 2.3.15.4
+793f1353c|Tianling Shen|Thu Jan 8 11:58:57 2026 +0800|v2ray-core: Update to 5.42.0
+11e0bc794|Tianling Shen|Thu Jan 8 11:45:51 2026 +0800|btop: Update to 1.4.6
 </details>
