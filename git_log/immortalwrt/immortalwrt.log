@@ -1,0 +1,7 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+21a2c44c7a|Tianling Shen|Thu Jan 8 11:09:45 2026 +0800|qualcommax: disable initramfs-factory generation for asus ax89x by default
+567df82bc5|Tianling Shen|Thu Jan 8 11:00:15 2026 +0800|lantiq: disable build for netgear dm200 by default
+</details>
