@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-addecfda2|Robert Marko|Wed Apr 30 11:53:45 2025 +0200|ead: fix compilation with GCC14
+e5cb4be12|aiamadeus|Sun Dec 21 22:20:30 2025 +0800|atf-rockchip: update to tag v2.14
 </details>

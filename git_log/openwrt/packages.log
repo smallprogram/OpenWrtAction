@@ -1,0 +1,9 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d555ca7c0|Wei-Ting Yang|Sun Jan 4 23:06:13 2026 +0800|python-certifi: update to 2026.1.4
+7b9ef8dfa|Josef Schlehofer|Mon Dec 29 23:52:20 2025 +0100|python-pyfuse3: update to version 3.4.1
+96b3725ce|Stan Grishin|Mon Dec 29 00:55:22 2025 +0000|pbr: update to 1.2.1-45
+5708c9c3e|Stan Grishin|Thu Jan 8 03:22:38 2026 +0000|https-dns-proxy: update to 2025-12-29-1
+</details>

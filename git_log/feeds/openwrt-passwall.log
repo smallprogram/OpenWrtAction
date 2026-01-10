@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-aaa47f2|A-BO|Tue Jan 6 22:46:50 2026 +0800|luci: support import/export `ss-xhttp` node links
-6359019|A-BO|Tue Jan 6 20:49:48 2026 +0800|luci: ipt/nft supports multiple wan ips
-b6addbe|A-BO|Tue Jan 6 09:32:21 2026 +0800|luci: simplify some code
+9481d3c|lwb1978|Sat Jan 10 01:18:33 2026 +0800|luci: add drag-and-drop sorting to the rule list and haproxy list
+f133348|lwb1978|Sat Jan 10 00:49:06 2026 +0800|Revert "luci: add modified version of microsocks for socks node forwarding"
+5f10ddd|A-BO|Fri Jan 9 08:55:20 2026 +0800|luci: bump to 26.1.9
 </details>

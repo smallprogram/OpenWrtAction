@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5fd1ad2|zxl hhyccc|Tue Jan 6 21:37:19 2026 +0800|v2ray-core: Update to 5.43.0
-3a9d2cc|zxl hhyccc|Tue Jan 6 21:35:22 2026 +0800|v2ray-plugin: update to 5.43.0
-e29faa8|zxl hhyccc|Tue Jan 6 21:33:12 2026 +0800|tuic-client: Update to 1.6.7
+cb8f7d7|zxl hhyccc|Fri Jan 9 12:52:44 2026 +0800|Merge pull request #1865 from zxlhhyccc/tuic
+cf098b9|zxlhhyccc|Thu Jan 8 23:33:30 2026 +0800|luci-app-ssr-plus: Optimize the startup speed.
 </details>
