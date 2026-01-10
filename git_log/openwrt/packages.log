@@ -2,8 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5708c9c3e|Stan Grishin|Thu Jan 8 03:22:38 2026 +0000|https-dns-proxy: update to 2025-12-29-1
-787811f8c|Daniel F. Dickinson|Fri Dec 26 01:03:27 2025 -0500|ddns-scripts: remove rework of OVH provider
-f86eddd4d|Vladimir Tkachev|Wed Dec 17 19:37:08 2025 +0400|ddns-scripts: add beget.com api support
-6d476c1f9|Brian J. Murrell|Thu Feb 23 15:01:46 2023 -0500|ddns-scripts: remove minimum 5 minute wait
+d555ca7c0|Wei-Ting Yang|Sun Jan 4 23:06:13 2026 +0800|python-certifi: update to 2026.1.4
+7b9ef8dfa|Josef Schlehofer|Mon Dec 29 23:52:20 2025 +0100|python-pyfuse3: update to version 3.4.1
+96b3725ce|Stan Grishin|Mon Dec 29 00:55:22 2025 +0000|pbr: update to 1.2.1-45
 </details>
