@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9481d3c|lwb1978|Sat Jan 10 01:18:33 2026 +0800|luci: add drag-and-drop sorting to the rule list and haproxy list
-f133348|lwb1978|Sat Jan 10 00:49:06 2026 +0800|Revert "luci: add modified version of microsocks for socks node forwarding"
-5f10ddd|A-BO|Fri Jan 9 08:55:20 2026 +0800|luci: bump to 26.1.9
+aa47e03|lwb1978|Sat Jan 10 13:08:36 2026 +0800|luci: optimize
 </details>

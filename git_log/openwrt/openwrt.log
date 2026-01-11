@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-858bde06b5|Robert Marko|Sun Nov 2 15:15:35 2025 +0100|microchipsw: lan969x: add Novarq Tactical 1000
-122fcb21da|Robert Marko|Fri Jan 9 18:27:33 2026 +0100|microchipsw: use upstreamed patches
-1d474646aa|Robert Marko|Fri Jan 9 18:10:35 2026 +0100|boot: arm-trusted-firmware-microchipsw: update to latest
-7d9602e527|Robert Marko|Fri Jan 9 16:50:34 2026 +0100|microchipsw: use latest DTS
-d925dd4887|Shiji Yang|Thu Jan 8 21:10:56 2026 +0800|tools/squashfs4: fix rare data corruption issue
+46e4aa3283|JINLIANG GU|Sat Jan 10 09:45:58 2026 +0800|netifd: dhcp: suppress udhcpc default vendor class if specified in sendopts
 </details>
