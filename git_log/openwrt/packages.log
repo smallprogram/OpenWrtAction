@@ -2,7 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d555ca7c0|Wei-Ting Yang|Sun Jan 4 23:06:13 2026 +0800|python-certifi: update to 2026.1.4
-7b9ef8dfa|Josef Schlehofer|Mon Dec 29 23:52:20 2025 +0100|python-pyfuse3: update to version 3.4.1
-96b3725ce|Stan Grishin|Mon Dec 29 00:55:22 2025 +0000|pbr: update to 1.2.1-45
+8ca4b6844|Josef Schlehofer|Fri Jan 9 10:36:10 2026 +0100|radicale2: drop package as we do have radicale3
+c3453a462|Josef Schlehofer|Mon Dec 29 10:01:57 2025 +0100|python-pika: add new package for radicale3
+8707214a9|Josef Schlehofer|Mon Dec 29 10:04:15 2025 +0100|radicale3: new package
 </details>
