@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+06f51a75a1|Paul Donald|Sun Jan 11 23:35:42 2026 +0100|luci-mod-network: add PIO flag management
+532dc97201|Liangbin Lian|Fri Jan 9 02:25:11 2026 +0800|luci-base: rpc: fix luci/getMountPoints crash
+</details>

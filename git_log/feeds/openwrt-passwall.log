@@ -2,5 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-aa47e03|lwb1978|Sat Jan 10 13:08:36 2026 +0800|luci: optimize
+e98bfe2a|lwb1978|Sun Jan 11 23:41:23 2026 +0800|luci: add drag-and-drop sorting to the subscribe list
+4c2bc226|lwb1978|Sun Jan 11 22:58:27 2026 +0800|luci: optimize
+471fb79a|lwb1978|Sun Jan 11 13:25:23 2026 +0800|luci: disable upstream proxy for local-address nodes in shunt rules
+59cf1148|lwb1978|Sun Jan 11 13:15:57 2026 +0800|luci: optimize
+aa47e031|lwb1978|Sat Jan 10 13:08:36 2026 +0800|luci: optimize
 </details>

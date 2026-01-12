@@ -2,5 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-46e4aa3283|JINLIANG GU|Sat Jan 10 09:45:58 2026 +0800|netifd: dhcp: suppress udhcpc default vendor class if specified in sendopts
+31daacadd4|Rany Hany|Mon Jan 5 15:43:43 2026 +0000|wifi-scripts: move no_probe_resp_if_max_sta to wifi-iface
+2c7bce7202|Eric Fahlgren|Fri Jan 9 17:32:37 2026 -0800|base-files: uci-defaults: migrate time zonename on upgrade
+09bdb71acc|Leo Barsky|Sun Jan 11 01:55:50 2026 -0300|econet: refresh patches 6.12
+49f9248ec9|Rany Hany|Tue Jan 6 14:35:05 2026 +0000|wifi-scripts: ucode: fix RRM defaults
+51fab879a7|Thomas Perale|Wed Jan 7 14:03:22 2026 +0100|ppp: update deprecated cpe
+f9e60e980c|Tianling Shen|Tue Jan 6 12:02:40 2026 +0800|rockchip: fix kernel tag for backported patches
+1bff8d0210|Robert Marko|Fri Jan 9 20:37:01 2026 +0100|linux: crypto: fix dependencies for curve25519 and poly1305
 </details>
