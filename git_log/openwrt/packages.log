@@ -1,8 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-8ca4b6844|Josef Schlehofer|Fri Jan 9 10:36:10 2026 +0100|radicale2: drop package as we do have radicale3
-c3453a462|Josef Schlehofer|Mon Dec 29 10:01:57 2025 +0100|python-pika: add new package for radicale3
-8707214a9|Josef Schlehofer|Mon Dec 29 10:04:15 2025 +0100|radicale3: new package
-</details>
