@@ -29,6 +29,6 @@ clone_custom_packages () {
     git clone https://github.com/timsaya/luci-app-bandix.git ./package/custom_packages/luci-app-bandix
     git clone https://github.com/destan19/OpenAppFilter.git ./package/custom_packages/OpenAppFilter
 
-    sed -i '/^[\t ]*PKG_VERSION:=/ s/\(PKG_VERSION:= *\)[^0-9.]*\([0-9.]*\)[^0-9.]*/\1\2/' "./package/custom_packages/luci-theme-alpha-reborn/Makefile"
+    # sed -i '/^[\t ]*PKG_VERSION:=/ s/\(PKG_VERSION:= *\)[^0-9.]*\([0-9.]*\)[^0-9.]*/\1\2/' "./package/custom_packages/luci-theme-alpha-reborn/Makefile"
     sed -i '/^[\t ]*PKG_VERSION:=/ s/\(PKG_VERSION:= *\)[^0-9.]*\([0-9.]*\)[^0-9.]*/\1\2/' "./package/custom_packages/luci-theme-alpha/Makefile"
 }
