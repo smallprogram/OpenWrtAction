@@ -2,9 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e98bfe2a|lwb1978|Sun Jan 11 23:41:23 2026 +0800|luci: add drag-and-drop sorting to the subscribe list
-4c2bc226|lwb1978|Sun Jan 11 22:58:27 2026 +0800|luci: optimize
-471fb79a|lwb1978|Sun Jan 11 13:25:23 2026 +0800|luci: disable upstream proxy for local-address nodes in shunt rules
-59cf1148|lwb1978|Sun Jan 11 13:15:57 2026 +0800|luci: optimize
-aa47e031|lwb1978|Sat Jan 10 13:08:36 2026 +0800|luci: optimize
+1f58952|A-BO|Tue Jan 13 00:40:57 2026 +0800|luci: bump to 26.1.13
+467c8ad|A-BO|Mon Jan 12 21:52:50 2026 +0800|luci: fix sing-box server access lan issue
+17cda1a|A-BO|Mon Jan 12 21:43:11 2026 +0800|luci: Restore default CBI save & apply behavior
 </details>
