@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-39ea386|Eamon Xiong|Sun Jan 11 23:36:46 2026 +0800|feat: support custom configuration for floating shortcut button
-07ae5dd|Eamon Xiong|Sun Jan 11 17:40:37 2026 +0800|feat: add floating button for quick navigation
+69c06cf|Eamon Xiong|Mon Jan 12 21:28:44 2026 +0800|refactor(tokens): simplify design tokens and improve dark mode colors
 </details>
