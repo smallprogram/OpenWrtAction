@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e28d72f32b|Paul Donald|Mon Jan 12 01:36:35 2026 +0100|luci-base: amend ZoneSelect widget datatype
+23c239b1a2|Dirk Brenken|Mon Jan 12 23:04:39 2026 +0100|luci-app-banip: sync with banIP-1.8.0-1
 </details>

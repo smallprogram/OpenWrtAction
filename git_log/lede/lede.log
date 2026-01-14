@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9eb24d0f1|coolsnowwolf|Mon Jan 12 14:18:53 2026 +0800|rockchip: add Radxa ROCK 4D support Hardware -------- RockChip RK3576 ARM64 (8 cores) 2/4/8/16GB LPDDR5 RAM 1x 1000 Base-T (with optional PoE support) 2x LEDs (POWER / USER) eMMC/UFS connector Micro-SD Slot HDMI OUT PCIe FPC connector 2x USB 2.0 Port 2x USB 3.0 Port USB Type-C PD Power
+a3da3d451|coolsnowwolf|Wed Jan 7 20:26:27 2026 +0800|autocore-x86: update status display
 </details>

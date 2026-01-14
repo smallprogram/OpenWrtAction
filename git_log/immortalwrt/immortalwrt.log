@@ -1,0 +1,23 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+cb13d9932e|Tianling Shen|Tue Jan 13 16:07:35 2026 +0800|Merge Official Source
+cf7b6e7be2|Zhang Zhe|Mon Jan 12 15:23:41 2026 +0800|rockchip: mod NLnet XiGuaPi V3 DEVICE_PACKAGES
+265d143e01|fujr|Wed Nov 26 21:19:47 2025 +0800|rockchip: add support for Widora MangoPi M28C
+d01aa41d40|Carl-Daniel Hailfinger|Mon Jan 12 12:02:24 2026 +0100|realtek: ethernet: avoid using unitialized memory
+4542656411|Til Kaiser|Thu Oct 2 15:30:07 2025 +0200|kernel: modules: add kmod-pmbus-sensors package
+33ef80f2c6|Anari Jalakas|Thu Jan 8 12:11:47 2026 +0200|readline: add $(FPIC) to LDFLAGS
+b413363b47|Jakub Vaněk|Mon Jan 5 00:10:46 2026 +0100|mediatek: fix PHY autodetection on Cudy WR3000H
+7dbacdaa80|Andrew MacIntyre|Tue Dec 30 12:22:41 2025 +1100|mediatek: add Motorcomm PHY driver to Cudy WR3000H
+8d407de491|Andrew MacIntyre|Mon Dec 29 23:38:10 2025 +1100|kernel: add kmod-phy-motorcomm
+31daacadd4|Rany Hany|Mon Jan 5 15:43:43 2026 +0000|wifi-scripts: move no_probe_resp_if_max_sta to wifi-iface
+2c7bce7202|Eric Fahlgren|Fri Jan 9 17:32:37 2026 -0800|base-files: uci-defaults: migrate time zonename on upgrade
+09bdb71acc|Leo Barsky|Sun Jan 11 01:55:50 2026 -0300|econet: refresh patches 6.12
+49f9248ec9|Rany Hany|Tue Jan 6 14:35:05 2026 +0000|wifi-scripts: ucode: fix RRM defaults
+51fab879a7|Thomas Perale|Wed Jan 7 14:03:22 2026 +0100|ppp: update deprecated cpe
+f9e60e980c|Tianling Shen|Tue Jan 6 12:02:40 2026 +0800|rockchip: fix kernel tag for backported patches
+
+.....................
+
+</details>
