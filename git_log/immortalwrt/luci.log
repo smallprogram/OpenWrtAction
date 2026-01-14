@@ -1,0 +1,23 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a450e976b1|SakuraFallingMad|Sat Jan 3 20:23:50 2026 +0800|luci-app-passwall: bump to 26.1.13
+2f59e234b2|SakuraFallingMad|Fri Dec 26 07:18:19 2025 +0800|luci-app-passwall: bump to 26.1.1
+470144cf09|SakuraFallingMad|Tue Dec 16 18:24:09 2025 +0800|luci-app-passwall: bump to 25.12.25
+36a63957d0|pover0k|Fri Dec 26 15:08:04 2025 +0800|luci-app-passwall: bump to 25.12.19
+4c3acb654d|Tianling Shen|Tue Jan 13 16:09:14 2026 +0800|Merge Official Source
+e28d72f32b|Paul Donald|Mon Jan 12 01:36:35 2026 +0100|luci-base: amend ZoneSelect widget datatype
+06f51a75a1|Paul Donald|Sun Jan 11 23:35:42 2026 +0100|luci-mod-network: add PIO flag management
+532dc97201|Liangbin Lian|Fri Jan 9 02:25:11 2026 +0800|luci-base: rpc: fix luci/getMountPoints crash
+a4e8af9652|Stan Grishin|Thu Jan 8 20:29:11 2026 -0800|Merge pull request #8197 from stangri/openwrt-25.12-luci-app-pbr
+c423700a44|Stan Grishin|Thu Jan 8 18:12:48 2026 -0800|Merge pull request #8205 from stangri/openwrt-25.12-luci-app-https-dns-proxy
+e37ddee1d2|Stan Grishin|Thu Jan 8 18:03:22 2026 -0800|Merge pull request #8207 from stangri/openwrt-25.12-luci-app-advanced-reboot
+d391a44b59|Stan Grishin|Sun Aug 24 02:11:28 2025 +0000|luci-app-advanced-reboot: update to 1.1.1
+5bb93b2e52|Stan Grishin|Thu Jan 8 03:30:01 2026 +0000|luci-app-https-dns-proxy: update to 2025-12-29-1
+6e7ed7653c|Paul Donald|Tue Jan 6 04:08:55 2026 +0100|luci-mod-network: fill set tag fields with available tags
+fe08dbdd29|Stan Grishin|Sat Jan 3 01:26:09 2026 +0000|luci-app-pbr: upgrade to 1.2.1-45
+
+.....................
+
+</details>

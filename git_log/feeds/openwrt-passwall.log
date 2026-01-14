@@ -2,7 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1f58952|A-BO|Tue Jan 13 00:40:57 2026 +0800|luci: bump to 26.1.13
-467c8ad|A-BO|Mon Jan 12 21:52:50 2026 +0800|luci: fix sing-box server access lan issue
-17cda1a|A-BO|Mon Jan 12 21:43:11 2026 +0800|luci: Restore default CBI save & apply behavior
+60fe7c8|A-BO|Wed Jan 14 08:40:27 2026 +0800|luci: optimize log messages for WAN IP set additions
+c9064e6|A-BO|Tue Jan 13 22:37:45 2026 +0800|luci: optimize
+9f09d80|A-BO|Tue Jan 13 20:30:19 2026 +0800|luci: fix iptables
+98bacb7|ShanStone|Tue Jan 13 17:13:04 2026 +0800|luci: optimise non_file_check function
+fad4aba|ShanStone|Tue Jan 13 11:52:27 2026 +0800|luci: update uci-default option
+2e106bc|ShanStone|Tue Jan 13 00:31:47 2026 +0800|luci: fix multiple wan ips bypass
+7bb2f86|ShanStone|Mon Jan 12 23:11:25 2026 +0800|luci: optimise gen_cache function
+9e5862d|ShanStone|Mon Jan 12 22:39:59 2026 +0800|luci: optimize insert nftset by using pipes
+f97e4ca|ShanStone|Mon Jan 12 19:52:03 2026 +0800|luci: optimise insert_nftset function
+37b47d6|A-BO|Wed Jan 14 02:03:53 2026 +0800|luci: optimize component detection for transparent proxy
+20d53ef|A-BO|Wed Jan 14 01:49:37 2026 +0800|luci: Restore curl v8.6 compatibility
 </details>

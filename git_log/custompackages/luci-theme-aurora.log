@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-69c06cf|Eamon Xiong|Mon Jan 12 21:28:44 2026 +0800|refactor(tokens): simplify design tokens and improve dark mode colors
+dcca3ad|Eamon Xiong|Tue Jan 13 23:31:29 2026 +0800|style: unify control buttons and shortcut icon styles
+bdcd98c|Eamon Xiong|Tue Jan 13 22:29:03 2026 +0800|style: simplify floating button styles
+964da41|Eamon Xiong|Tue Jan 13 18:28:23 2026 +0800|feat: persist floating toolbar collapsed state
+cbe5ad4|Eamon Xiong|Tue Jan 13 17:52:14 2026 +0800|chore(icons): update network icon SVG
 </details>

@@ -2,17 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0ceda1a|xiaorouji|Sun Jan 11 22:11:47 2026 +0800|luci: remove sing-box outdated GeoIP Geosite logic
-171b254|xiaorouji|Thu Dec 18 20:38:28 2025 +0800|luci: add GFW shunt rule to default config
-a22e5fb|xiaorouji|Mon Jan 12 00:33:58 2026 +0800|luci: update and fix rules update
-26bc4d0|xiaorouji|Sun Jan 11 23:14:36 2026 +0800|luci: V2ray/Xray Geo convert to Sing-Box rule-set
-c6f54f3|xiaorouji|Sun Jan 11 23:16:51 2026 +0800|luci: add geoview to component
-80a345b|xiaorouji|Sun Jan 11 22:38:07 2026 +0800|luci: fix sing-box server access lan issue
-36da9b4|lwb1978|Sun Jan 11 23:41:23 2026 +0800|luci: add drag-and-drop sorting to the subscribe list
-ddf3c9d|lwb1978|Sat Jan 10 01:18:33 2026 +0800|luci: add drag-and-drop sorting to the rule list and haproxy list
-698699c|A-BO|Thu Jan 8 21:05:01 2026 +0800|luci: fix the highlighting logic for the current node in the node list
-911cb04|A-BO|Thu Jan 8 19:09:53 2026 +0800|luci: optimize the display effect of some pages and controls in dark mode
-521d649|A-BO|Wed Jan 7 22:35:10 2026 +0800|luci: optimize the display effect of the bottom button in socks config
-3cba638|A-BO|Tue Jan 6 22:46:50 2026 +0800|luci: support import/export `ss-xhttp` node links
-8034313|A-BO|Tue Jan 6 20:49:48 2026 +0800|luci: ipt/nft supports multiple wan ips
+f28e864|A-BO|Tue Jan 13 16:30:27 2026 +0800|luci: optimize js cbi save & apply behavior
 </details>
