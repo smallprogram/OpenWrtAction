@@ -106,6 +106,10 @@ CONFIG_PACKAGE_luci-app-ssr-plus=y
 CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-udp2raw=y
 CONFIG_PACKAGE_luci-app-udpxy=y
+CONFIG_PACKAGE_luci-app-cloudflared=y
+CONFIG_PACKAGE_luci-app-frpc=y
+CONFIG_PACKAGE_luci-app-frps=y
+CONFIG_PACKAGE_luci-app-zerotier=y
 ```
 ### ⚙️ System Management and Tools
 ```
@@ -127,7 +131,6 @@ CONFIG_PACKAGE_luci-app-wechatpush=y
 ```
 CONFIG_PACKAGE_luci-app-bandix=y
 CONFIG_PACKAGE_luci-app-eqos=y
-CONFIG_PACKAGE_luci-app-sqm=y
 CONFIG_PACKAGE_luci-app-firewall=y
 CONFIG_PACKAGE_luci-app-oaf=y
 CONFIG_PACKAGE_luci-app-statistics=y
