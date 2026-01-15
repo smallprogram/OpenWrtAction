@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+c9e2d8191b|FUKAUMI Naoki|Wed Jan 14 01:52:55 2026 +0000|rockchip: add `"compat_version": "1.1"` for Radxa E52C
+</details>

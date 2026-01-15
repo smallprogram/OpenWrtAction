@@ -2,8 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dcca3ad|Eamon Xiong|Tue Jan 13 23:31:29 2026 +0800|style: unify control buttons and shortcut icon styles
-bdcd98c|Eamon Xiong|Tue Jan 13 22:29:03 2026 +0800|style: simplify floating button styles
-964da41|Eamon Xiong|Tue Jan 13 18:28:23 2026 +0800|feat: persist floating toolbar collapsed state
-cbe5ad4|Eamon Xiong|Tue Jan 13 17:52:14 2026 +0800|chore(icons): update network icon SVG
+acc3358|Eamon Xiong|Wed Jan 14 23:12:22 2026 +0800|style: standardize arrow icons
+755180b|Eamon Xiong|Wed Jan 14 23:09:33 2026 +0800|docs: update Discord invite link
+3f64b15|Eamon Xiong|Wed Jan 14 21:37:55 2026 +0800|style: center mega-menu content layout
 </details>
