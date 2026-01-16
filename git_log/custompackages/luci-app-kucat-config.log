@@ -1,8 +1,0 @@
-<details> <summary> <b>luci-app-kucat-config new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-2c14f87|Pdboy Sir|Wed Jan 14 11:34:52 2026 +0800|up kucat view pic
-23c0ec0|Pdboy Sir|Wed Jan 14 11:23:07 2026 +0800|全新开发重制js for oepnwrt 19.07-25.12。
-59c764c|Pdboy Sir|Wed Jan 14 11:21:02 2026 +0800|JS supports official website 19.07-25.12 branch latest version: 2026.1.14 version: 2.1.5 compatible with OPENWRT 25.12 branch.
-</details>

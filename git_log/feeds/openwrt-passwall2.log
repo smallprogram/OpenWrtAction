@@ -2,11 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5e3e681|A-BO|Wed Jan 14 20:12:45 2026 +0800|luci: add hwid support to subscription
-7cc7831|ShanStone|Tue Jan 13 17:13:04 2026 +0800|luci: optimise non_file_check function
-ec7e01a|ShanStone|Tue Jan 13 11:52:27 2026 +0800|luci: update uci-default option
-c5cdb02|ShanStone|Tue Jan 13 00:31:47 2026 +0800|luci: fix multiple wan ips bypass
-d500595|ShanStone|Mon Jan 12 22:39:59 2026 +0800|luci: optimize insert nftset by using pipes
-50c0a36|ShanStone|Mon Jan 12 19:52:03 2026 +0800|luci: optimise insert_nftset function
-b77901c|A-BO|Wed Jan 14 02:03:53 2026 +0800|luci: optimize component detection for transparent proxy
+5d3482a|A-BO|Thu Jan 15 18:39:49 2026 +0800|luci: optimize the display effect of drag handle on lede
+599cfca|ShanStone|Wed Jan 14 23:32:40 2026 +0800|luci: correct some nftset timeout parameters
+5ae4219|ShanStone|Wed Jan 14 19:00:01 2026 +0800|luci: reduce temporary file I/O when upgrading rules
+c5cab9d|ShanStone|Wed Jan 14 17:28:56 2026 +0800|luci: Optimize run environment check
+ae4641a|A-BO|Thu Jan 15 10:14:35 2026 +0800|luci: Refactor drag handle insertion logic
+75d5a61|A-BO|Thu Jan 15 01:35:34 2026 +0800|luci: Add support for Xray Hysteria2 protocol
 </details>

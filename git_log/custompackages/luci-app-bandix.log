@@ -2,15 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-396d943|timsaya|Thu Jan 15 06:49:19 2026 +0800|Merge pull request #126 from timsaya/dev
-b88ee2a|stefanlei|Thu Jan 15 06:48:11 2026 +0800|Update README files
-02f7ff3|stefanlei|Thu Jan 15 06:44:16 2026 +0800|Merge branch 'main' into dev
-83c9203|stefanlei|Thu Jan 15 06:43:09 2026 +0800|Fix duplicate translation in zh_Hans po file
-8d77707|stefanlei|Thu Jan 15 06:38:03 2026 +0800|Add theme detection and wide theme support for alerts
-51706a3|stefanlei|Thu Jan 15 06:27:33 2026 +0800|Bump version to 0.12.1
-468f99b|stefanlei|Thu Jan 15 06:27:06 2026 +0800|Refactor theme detection: replace CSS media queries with JavaScript-based detection
-36f3f05|stefanlei|Wed Jan 14 16:47:18 2026 +0800|feat: add theme detection and code formatting improvements
-0c4b79f|stefanlei|Wed Jan 14 12:15:24 2026 +0800|feat: clean up CSS and improve theme compatibility
-6b8331d|stefanlei|Wed Jan 14 09:00:17 2026 +0800|Clean up theme-related code
-0ab26c2|stefanlei|Tue Jan 13 18:59:08 2026 +0800|Add missing translations for Bandix traffic monitor
+ba78f7b|timsaya|Fri Jan 16 06:10:08 2026 +0800|Merge pull request #134 from timsaya/dev
+d97d675|stefanlei|Fri Jan 16 05:52:24 2026 +0800|Fix Device Usage Ranking 'Show All' button click not working
+46d6cc7|timsaya|Thu Jan 15 22:09:01 2026 +0800|Merge pull request #132 from timsaya/dev
+b633d09|stefanlei|Thu Jan 15 22:08:12 2026 +0800|Merge branch 'main' into dev
+5f68a76|stefanlei|Thu Jan 15 22:03:57 2026 +0800|Improve update check with apk support and longer timeouts
 </details>

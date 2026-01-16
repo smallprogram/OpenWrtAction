@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6b773f6d2f|Josef Schlehofer|Fri Jan 9 17:11:16 2026 +0100|luci-app-radicale2, rpcd-mod-rad2-enc: drop packages
+38f5e600bd|Paul Donald|Thu Jan 15 17:48:26 2026 +0100|luci-theme-openwrt: prevent minify errors
+</details>

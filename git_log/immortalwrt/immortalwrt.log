@@ -1,0 +1,10 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+00692305ba|Tianling Shen|Thu Jan 15 10:16:59 2026 +0800|Merge Official Source
+073a8d07e9|Hauke Mehrtens|Wed Jan 14 00:34:45 2026 +0100|libiwinfo: update to Git HEAD (2026-01-14)
+7f6d739fd7|Pawel Dembicki|Mon Jan 12 15:44:05 2026 +0100|mpc85xx: fix failsafe iface selection for mpc85xx boards
+85a4358432|Pawel Dembicki|Sun Nov 30 23:50:48 2025 +0100|mpc85xx: p2020: add support for WatchGuard XTM330 (NC5AE7)
+c9e2d8191b|FUKAUMI Naoki|Wed Jan 14 01:52:55 2026 +0000|rockchip: add `"compat_version": "1.1"` for Radxa E52C
+</details>
