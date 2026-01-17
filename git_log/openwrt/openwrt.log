@@ -2,14 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e753ed9cec|Steffen Förster|Wed Jan 14 20:45:01 2026 +0100|ramips: fix gmac definition for cudy ap1300 outdoor
-8bf63c2289|Jörg Seitz|Sun Dec 21 11:55:34 2025 +0100|mediatek: add support for device zbt-z8103ax-c
-5067807ba8|Jörg Seitz|Sun Dec 21 10:59:06 2025 +0100|mediatek: extract DTS include for zbt z8103ax
-f138ad9112|Val Kulkov|Mon Jan 12 17:21:52 2026 +0000|wifi-scripts: fix wifi failure on specifying value of DAE client
-e4264e0a22|John Audia|Sun Jan 11 10:43:45 2026 -0500|kernel: bump 6.12 to 6.12.65
-31b1c6541e|John Audia|Tue Jan 6 17:43:30 2026 -0500|kernel: bump 6.12 to 6.12.64
-6656ce2f47|Hauke Mehrtens|Mon Jan 12 23:05:57 2026 +0100|bcm27xx: refresh kernel patches
-c8eacec725|John Audia|Thu Jan 8 07:13:08 2026 -0500|mac80211: fix build for 6.12.64 bump
-88f97a9649|Álvaro Fernández Rojas|Sat Jan 10 15:44:48 2026 +0100|netifd: use stable IAID for DHCPv4
-b5d0946351|Álvaro Fernández Rojas|Tue Jan 13 18:19:48 2026 +0100|base-files: introduce a function to generate IAID
+43057c5c16|George Sapkin|Thu Jan 8 05:00:26 2026 +0200|imagebuilder: add ABI suffix to packages when using apk
+d943ebf5b3|George Sapkin|Tue Jan 6 03:50:37 2026 +0200|build: add default priority to ABI-versioned packages
+f74790057f|George Sapkin|Tue Jan 6 00:56:06 2026 +0200|build: remove redundant shebang from apk lifecycle scripts
+46244b6b0b|George Sapkin|Mon Jan 5 04:03:00 2026 +0200|build: fix implicit self-provides
+2f644e7cad|George Sapkin|Sun Jan 4 23:02:21 2026 +0200|elfutils: drop libelf1 provide
+6543c6800b|George Sapkin|Fri Jan 2 16:26:40 2026 +0200|uclient: provide virtual wget-any
+953ef12689|George Sapkin|Sun Jan 4 19:50:52 2026 +0200|build: fix provides logic when ABI version is set
+b4e537e9cd|George Sapkin|Sun Jan 4 03:46:38 2026 +0200|build: refactor dependency formatting
+5976c47b9f|George Sapkin|Fri Jan 2 17:10:00 2026 +0200|build: don't auto mark all provides as virtual
+9a0045bbbf|George Sapkin|Fri Jan 2 17:07:52 2026 +0200|build: remove default provider priority
 </details>

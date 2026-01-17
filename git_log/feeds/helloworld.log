@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b688e23|zxl hhyccc|Thu Jan 15 22:15:35 2026 +0800|Merge pull request #1869 from zxlhhyccc/tuic
-4e29e5d|zxlhhyccc|Thu Jan 15 20:34:00 2026 +0800|luci-app-ssr-plus: Fix access control issue caused by game mode.
-e9efccf|zxl hhyccc|Thu Jan 15 19:58:27 2026 +0800|xray-core: update to 26.1.13
+f1c7741|zxl hhyccc|Sat Jan 17 00:09:16 2026 +0800|Merge pull request #1872 from zxlhhyccc/tuic
+a773331|zxlhhyccc|Fri Jan 16 21:47:22 2026 +0800|luci-app-ssr-plus: Restore enforce tcp and optimize ipt game rules.
 </details>

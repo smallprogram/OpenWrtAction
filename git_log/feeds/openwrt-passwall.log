@@ -2,10 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c09820c|A-BO|Thu Jan 15 18:39:49 2026 +0800|luci: optimize the display effect of drag handle on lede
-5031f1e|A-BO|Thu Jan 15 15:20:20 2026 +0800|luci: fix and optimize
-0ceeea0|ShanStone|Thu Jan 15 12:42:48 2026 +0800|luci: remove useless variable in rule update
-af25be2|ShanStone|Wed Jan 14 23:32:40 2026 +0800|luci: correct some nftset timeout parameters
-decab03|ShanStone|Wed Jan 14 19:00:01 2026 +0800|luci: reduce temporary file I/O when upgrading rules
-8957151|ShanStone|Wed Jan 14 17:28:56 2026 +0800|luci: Optimize run environment check
+afed1f8|lwb1978|Sat Jan 17 00:14:34 2026 +0800|luci: optimize the insertion timing of drag handles
+be4efde|lwb1978|Fri Jan 16 23:52:23 2026 +0800|luci: revise permission access for
+3e03449|lwb1978|Fri Jan 16 23:16:25 2026 +0800|luci: optimize
+f832bc7|A-BO|Fri Jan 16 15:46:12 2026 +0800|luci: add keywords for airport subscription info
 </details>
