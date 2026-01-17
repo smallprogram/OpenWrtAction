@@ -2,10 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5d3482a|A-BO|Thu Jan 15 18:39:49 2026 +0800|luci: optimize the display effect of drag handle on lede
-599cfca|ShanStone|Wed Jan 14 23:32:40 2026 +0800|luci: correct some nftset timeout parameters
-5ae4219|ShanStone|Wed Jan 14 19:00:01 2026 +0800|luci: reduce temporary file I/O when upgrading rules
-c5cab9d|ShanStone|Wed Jan 14 17:28:56 2026 +0800|luci: Optimize run environment check
-ae4641a|A-BO|Thu Jan 15 10:14:35 2026 +0800|luci: Refactor drag handle insertion logic
-75d5a61|A-BO|Thu Jan 15 01:35:34 2026 +0800|luci: Add support for Xray Hysteria2 protocol
+9878bd1|xiaorouji|Sat Jan 17 01:57:54 2026 +0800|luci: 26.1.16
+7663f4b|lwb1978|Sat Jan 17 00:14:34 2026 +0800|luci: optimize the insertion timing of drag handles
+893efd1|lwb1978|Sat Jan 17 00:20:01 2026 +0800|luci: fixup
+1a64969|xiaorouji|Fri Jan 16 16:50:07 2026 +0800|luci: optimize
+449d667|A-BO|Fri Jan 16 15:46:12 2026 +0800|luci: add keywords for airport subscription info
 </details>
