@@ -1,6 +1,0 @@
-<details> <summary> <b>lede new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-0fc5dc0ac|Hauke Mehrtens|Thu Jan 1 17:28:56 2026 +0100|kernel: r8169: backport upstream fix
-</details>

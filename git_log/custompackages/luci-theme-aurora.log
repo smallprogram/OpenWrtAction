@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ccd03e8|Eamon Xiong|Sat Jan 17 00:43:20 2026 +0800|feat: add software shortcut to toolbar
-10526bc|Eamon Xiong|Sat Jan 17 00:17:51 2026 +0800|style: increase arrow icon size
+b759a28|Eamon Xiong|Sun Jan 18 00:18:28 2026 +0800|fix: correct floating toolbar enable and render logic
+ce95b21|Eamon Xiong|Sat Jan 17 23:51:32 2026 +0800|feat(luci): add configurable toggle for floating toolbar
 </details>
