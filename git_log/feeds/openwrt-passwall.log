@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-afed1f8|lwb1978|Sat Jan 17 00:14:34 2026 +0800|luci: optimize the insertion timing of drag handles
-be4efde|lwb1978|Fri Jan 16 23:52:23 2026 +0800|luci: revise permission access for
-3e03449|lwb1978|Fri Jan 16 23:16:25 2026 +0800|luci: optimize
-f832bc7|A-BO|Fri Jan 16 15:46:12 2026 +0800|luci: add keywords for airport subscription info
+32c1d8b|A-BO|Sat Jan 17 19:51:32 2026 +0800|luci: bump to 26.1.17
+0c40a4d|A-BO|Sat Jan 17 19:49:39 2026 +0800|luci: fix the error where socks cannot auto switch
 </details>

@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9878bd1|xiaorouji|Sat Jan 17 01:57:54 2026 +0800|luci: 26.1.16
-7663f4b|lwb1978|Sat Jan 17 00:14:34 2026 +0800|luci: optimize the insertion timing of drag handles
-893efd1|lwb1978|Sat Jan 17 00:20:01 2026 +0800|luci: fixup
-1a64969|xiaorouji|Fri Jan 16 16:50:07 2026 +0800|luci: optimize
-449d667|A-BO|Fri Jan 16 15:46:12 2026 +0800|luci: add keywords for airport subscription info
+87dc174|A-BO|Sat Jan 17 16:42:31 2026 +0800|luci: fix node group assignment for acl config
 </details>

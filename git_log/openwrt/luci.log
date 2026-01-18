@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+2830149e0e|Daniel F. Dickinson|Mon Jan 5 07:41:26 2026 -0500|luci-app-radicale3: initial add of applications
+facd03f89f|Daniel F. Dickinson|Fri Jan 9 19:07:34 2026 -0500|rpcd-mod-rad3-enc: add radicale3 password hasher
+</details>
