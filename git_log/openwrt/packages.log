@@ -1,0 +1,12 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+97939f6c3|Niklas Thorild|Sun Jan 18 11:12:04 2026 +0100|telegraf: update to 1.37.1
+01f1bd378|George Sapkin|Fri Jan 2 19:24:52 2026 +0200|wget: provide virtual wget-any
+95cedbcdb|Tianling Shen|Thu Jan 8 11:58:57 2026 +0800|v2ray-core: Update to 5.42.0
+bcdc1ed92|Tianling Shen|Thu Jan 8 11:45:51 2026 +0800|btop: Update to 1.4.6
+d464d0087|Tianling Shen|Mon Dec 29 17:14:37 2025 +0800|openlist: Update to 4.1.8
+b4f441ed6|Tianling Shen|Sun Dec 28 19:19:37 2025 +0800|dnslookup: Update to 1.11.2
+1e0e7e8d3|Hirokazu MORIKAWA|Tue Jan 13 11:07:14 2026 +0900|icu: bump to 78.2
+</details>

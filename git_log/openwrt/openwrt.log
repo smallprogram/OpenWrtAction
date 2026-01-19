@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b590b79a77|Maximilian Baumgartner|Thu Jan 15 23:46:46 2026 +0100|mediatek: fix gmac definition for cudy m3000
+528bee9e39|Robert Marko|Sun Jan 18 11:33:44 2026 +0100|microchipsw: drop source-only
+2210c6e632|Robert Marko|Mon Jan 12 17:33:02 2026 +0100|boot: arm-trusted-firmware-microchipsw: depend on host Ruby
+111151379d|Robert Marko|Mon Jan 12 17:28:06 2026 +0100|boot: arm-trusted-firmware-microchipsw: fix compilation against LibreSSL
+</details>
