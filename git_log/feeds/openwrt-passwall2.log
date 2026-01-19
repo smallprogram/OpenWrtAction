@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-87dc174|A-BO|Sat Jan 17 16:42:31 2026 +0800|luci: fix node group assignment for acl config
+b148a12|xiaorouji|Mon Jan 19 00:49:58 2026 +0800|luci: 26.1.18
+c2b222c|xiaorouji|Sun Jan 18 03:17:25 2026 +0800|luci: optimize
+c125a7e|ShanStone|Sun Jan 18 11:54:07 2026 +0800|luci: optimise dnsmasq detect
+ca951ee|xiaobaishu1|Sun Jan 18 21:33:59 2026 +0800|luci: Fix xray hy2 udphop interval to integer (#967)
 </details>

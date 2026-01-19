@@ -2,6 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-32c1d8b|A-BO|Sat Jan 17 19:51:32 2026 +0800|luci: bump to 26.1.17
-0c40a4d|A-BO|Sat Jan 17 19:49:39 2026 +0800|luci: fix the error where socks cannot auto switch
+a393e65|lwb1978|Sun Jan 18 22:12:18 2026 +0800|luci: optimize
+7afc15f|lwb1978|Sun Jan 18 21:36:01 2026 +0800|luci: Fix xray hy2 udphop interval to integer
+eba0f32|bcseputetto|Sun Jan 18 18:58:16 2026 +0800|fix typo
+17a285a|A-BO|Sun Jan 18 16:32:13 2026 +0800|luci: optimize the logic when dns shunt uses smartdns
+65a5946|ShanStone|Sun Jan 18 11:54:07 2026 +0800|luci: optimise dnsmasq detect
+42dc592|A-BO|Sun Jan 18 12:21:50 2026 +0800|luci: fix `utils.sh` sourcing and `echolog` usage in init script
 </details>

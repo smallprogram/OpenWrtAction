@@ -2,6 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2830149e0e|Daniel F. Dickinson|Mon Jan 5 07:41:26 2026 -0500|luci-app-radicale3: initial add of applications
-facd03f89f|Daniel F. Dickinson|Fri Jan 9 19:07:34 2026 -0500|rpcd-mod-rad3-enc: add radicale3 password hasher
+fbeef69a5a|Paul Donald|Sat Jan 17 16:58:26 2026 +0100|luci-base: fix null error
+cc594d0656|Paul Donald|Wed Jan 14 21:21:46 2026 +0100|luci-base: document delbtntitle clonebtntitle
+4f86a4951e|Paul Donald|Wed Jan 14 01:43:48 2026 +0100|luci-theme: alignment fixes
+2bd4e34cea|Paul Donald|Sun Jul 6 04:04:28 2025 +0200|luci-base: extend FileUpload; create DirectoryPicker
+8269c6f5de|Hannu Nyman|Sun Jan 18 08:21:59 2026 +0200|treewide: Backport translations
 </details>

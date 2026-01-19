@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6913a32|zcluo|Sat Jan 17 21:26:01 2026 +0800|fix: PKG_MIRROR_HASH in Makefile
-9b63dab|Anya Lin|Sat Jan 17 10:33:48 2026 +0800|chore: update apk compatibility and provides alternative options
-925c16e|Fil Dunsky|Sat Jan 17 05:10:16 2026 +0300|chore: add translations for ru
+d337741|Joseph Mory|Sun Jan 18 14:37:03 2026 +0800|chore: rescan i18n
+3c5df37|Joseph Mory|Sun Jan 18 14:19:10 2026 +0800|chore: adapt upstream changes
 </details>

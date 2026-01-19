@@ -1,0 +1,8 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+db9e49d4bc|Tianling Shen|Sun Jan 18 12:49:14 2026 +0800|luci-app-openclash: Update to 0.47.047
+ca8cb7221a|SakuraFallingMad|Wed Jan 14 09:04:00 2026 +0800|luci-app-passwall: bump to 26.1.17
+de5bae0ac4|Jason Zou|Tue Dec 23 21:53:04 2025 +0800|luci-mod-battstatus: Add photonicat2 support
+</details>

@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b759a28|Eamon Xiong|Sun Jan 18 00:18:28 2026 +0800|fix: correct floating toolbar enable and render logic
-ce95b21|Eamon Xiong|Sat Jan 17 23:51:32 2026 +0800|feat(luci): add configurable toggle for floating toolbar
+8d222c7|Eamon Xiong|Sun Jan 18 22:05:46 2026 +0800|feat: support custom theme logo
+891ee11|Eamon Xiong|Sun Jan 18 16:19:56 2026 +0800|fix: resolve browser cache issue for removed icons
 </details>
