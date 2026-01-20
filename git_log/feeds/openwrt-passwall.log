@@ -2,10 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a393e65|lwb1978|Sun Jan 18 22:12:18 2026 +0800|luci: optimize
-7afc15f|lwb1978|Sun Jan 18 21:36:01 2026 +0800|luci: Fix xray hy2 udphop interval to integer
-eba0f32|bcseputetto|Sun Jan 18 18:58:16 2026 +0800|fix typo
-17a285a|A-BO|Sun Jan 18 16:32:13 2026 +0800|luci: optimize the logic when dns shunt uses smartdns
-65a5946|ShanStone|Sun Jan 18 11:54:07 2026 +0800|luci: optimise dnsmasq detect
-42dc592|A-BO|Sun Jan 18 12:21:50 2026 +0800|luci: fix `utils.sh` sourcing and `echolog` usage in init script
+e5ebe68|A-BO|Mon Jan 19 23:03:36 2026 +0800|luci: optimize the processing logic of direct subscribe url
+db0b9d0|A-BO|Mon Jan 19 17:06:38 2026 +0800|luci: optimize
 </details>

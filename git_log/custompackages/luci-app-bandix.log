@@ -1,9 +1,0 @@
-<details> <summary> <b>luci-app-bandix new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-8f62a69|timsaya|Sun Jan 18 11:46:54 2026 +0800|Merge pull request #136 from timsaya/dev
-0102c17|stefanlei|Sun Jan 18 11:45:51 2026 +0800|Merge branch 'main' into dev
-1938c31|stefanlei|Sun Jan 18 11:44:44 2026 +0800|Hide LAN Traffic tooltip on mouse wheel scroll
-c50dd68|stefanlei|Sun Jan 18 11:37:10 2026 +0800|Add tooltip for LAN Traffic card with explanation about subnet perspective and hardware switching limitations
-</details>

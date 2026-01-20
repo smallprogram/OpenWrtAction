@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8d222c7|Eamon Xiong|Sun Jan 18 22:05:46 2026 +0800|feat: support custom theme logo
-891ee11|Eamon Xiong|Sun Jan 18 16:19:56 2026 +0800|fix: resolve browser cache issue for removed icons
+057221c|Eamon Xiong|Mon Jan 19 14:26:17 2026 +0000|release: v0.10.0
+4e31ada|Eamon Xiong|Mon Jan 19 15:45:33 2026 +0800|fix: disable software shortcut by default for OpenWrt 23.05 compatibility
+95e935d|Eamon Xiong|Mon Jan 19 14:12:53 2026 +0800|perf: optimize floating toolbar toggle animation
 </details>

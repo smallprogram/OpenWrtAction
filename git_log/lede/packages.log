@@ -1,0 +1,16 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0481c393|coolsnowwolf|Mon Jan 19 21:29:14 2026 +0800|Merge pull request #1065 from Internet1235/geoview
+8c0d0528|coolsnowwolf|Mon Jan 19 21:29:02 2026 +0800|Merge pull request #1060 from Internet1235/zerotier
+2bec43de|coolsnowwolf|Mon Jan 19 21:28:51 2026 +0800|Merge pull request #1058 from Internet1235/clouddrive2
+a95355ea|coolsnowwolf|Mon Jan 19 21:28:41 2026 +0800|Merge pull request #1057 from Internet1235/sing-box
+af16325a|coolsnowwolf|Mon Jan 19 21:28:29 2026 +0800|Merge pull request #1052 from Internet1235/msd_lite
+8295fe7d|Internet1235|Mon Jan 19 20:10:21 2026 +0800|golang: update to 1.25.6
+b7850bc0|Internet1235|Fri Jan 9 21:33:59 2026 +0800|geoview: update to 0.2.2
+a30816ef|Internet1235|Sat Dec 27 14:48:40 2025 +0800|zerotier: bump to 1.16.0
+bc3b6c3e|Internet1235|Sun Dec 21 15:14:57 2025 +0800|clouddrive2: update to 0.9.17
+6e8ef713|Internet1235|Fri Dec 19 21:58:23 2025 +0800|sing-box: update to 1.12.13
+ff4c6b2f|Internet1235|Sat Dec 13 22:42:52 2025 +0800|msd_lite: bump to Git HEAD (2025-05-02)
+</details>
