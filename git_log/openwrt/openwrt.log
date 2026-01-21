@@ -2,5 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-067178b7fd|Pierre-Emmanuel Frot|Sun Jan 18 21:13:28 2026 +0100|x86: cs5535audio: add support for subtarget legacy
+30527a4c34|Hauke Mehrtens|Wed Jan 21 01:07:38 2026 +0100|Revert "kernel: pcs-mtk-lynxi: backport fix for in-band status capabilities"
+cb206004ea|Paul Donald|Tue Jan 6 01:53:25 2026 +0100|ucode: enable ucode-mod-zlib
+d88e3573a7|Felix Fietkau|Tue Jan 6 19:08:41 2026 +0000|ucode: add package for ucode-mod-io
+df2d060dbd|John Audia|Sun Jan 18 05:13:53 2026 -0500|kernel: bump 6.12 to 6.12.66
+aafcf04d0d|Emre Yavuzalp|Sun Nov 30 18:53:51 2025 +0300|mediatek: filogic: TP-Link Archer AX80 v1 (EU) support
+db694b40c9|Fil Dunsky|Sun Jan 4 01:00:14 2026 +0300|mediatek: add support for Airpi AP3000M
 </details>

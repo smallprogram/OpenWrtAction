@@ -2,6 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e5ebe68|A-BO|Mon Jan 19 23:03:36 2026 +0800|luci: optimize the processing logic of direct subscribe url
-db0b9d0|A-BO|Mon Jan 19 17:06:38 2026 +0800|luci: optimize
+1c01e45|A-BO|Tue Jan 20 17:48:25 2026 +0800|luci: FakeDNS can be enabled on the each shunt rules
+330f079|Tianhe Yun|Tue Jan 20 15:14:35 2026 +0800|ci: add compile support for luci 22.03 and below
+e3da5d6|Yale T.|Tue Jan 20 12:55:11 2026 +0800|ci: use env for packages repo
+ed8322e|Yale T.|Tue Jan 20 12:47:23 2026 +0800|ci: remove packages compile
+97921a9|A-BO|Tue Jan 20 09:42:22 2026 +0800|luci: format subscribe expired date
+b70a33a|A-BO|Tue Jan 20 09:21:21 2026 +0800|luci: optimize the access logic of subscribe url
 </details>

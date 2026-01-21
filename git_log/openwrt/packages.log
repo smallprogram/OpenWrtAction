@@ -1,9 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-594c3c8c8|Wei-Ting Yang|Thu Jan 8 12:50:46 2026 +0800|bash: update to 5.3 patch level 9
-23d55b722|Wei-Ting Yang|Mon Jan 5 21:35:21 2026 +0800|bash: refactor Makefile
-937ff8b35|Wei-Ting Yang|Fri Jan 2 21:07:27 2026 +0800|bash: update to 5.3
-53c8c52c9|Dirk Brenken|Sun Jan 18 23:34:19 2026 +0100|adblock: release 4.5.0-1
-</details>
