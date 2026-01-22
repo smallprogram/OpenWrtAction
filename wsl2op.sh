@@ -86,8 +86,8 @@ is_VS='V=s'
 # 是否展示编译时间戳
 is_showTime=''
 #Git参数
-git_email=smallprogram@foxmail.com
-git_user=smallprogram
+git_email="smallprogramzhusir@gmail.com"
+git_user="David Mandy"
 
 
 SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
