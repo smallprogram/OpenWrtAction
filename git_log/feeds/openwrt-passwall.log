@@ -2,8 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-afed1f8|lwb1978|Sat Jan 17 00:14:34 2026 +0800|luci: optimize the insertion timing of drag handles
-be4efde|lwb1978|Fri Jan 16 23:52:23 2026 +0800|luci: revise permission access for
-3e03449|lwb1978|Fri Jan 16 23:16:25 2026 +0800|luci: optimize
-f832bc7|A-BO|Fri Jan 16 15:46:12 2026 +0800|luci: add keywords for airport subscription info
+2569cfb|Tianhe Yun|Thu Jan 22 00:49:01 2026 +0800|luci: bump to 26.1.21
+9f6d281|handsomeji|Wed Jan 21 22:02:19 2026 +0800|luci: fixup 1c01e459
+617d4d7|handsomeji|Wed Jan 21 21:26:20 2026 +0800|luci: fix Access Control TCP proxy way
 </details>

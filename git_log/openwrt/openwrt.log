@@ -2,14 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-43057c5c16|George Sapkin|Thu Jan 8 05:00:26 2026 +0200|imagebuilder: add ABI suffix to packages when using apk
-d943ebf5b3|George Sapkin|Tue Jan 6 03:50:37 2026 +0200|build: add default priority to ABI-versioned packages
-f74790057f|George Sapkin|Tue Jan 6 00:56:06 2026 +0200|build: remove redundant shebang from apk lifecycle scripts
-46244b6b0b|George Sapkin|Mon Jan 5 04:03:00 2026 +0200|build: fix implicit self-provides
-2f644e7cad|George Sapkin|Sun Jan 4 23:02:21 2026 +0200|elfutils: drop libelf1 provide
-6543c6800b|George Sapkin|Fri Jan 2 16:26:40 2026 +0200|uclient: provide virtual wget-any
-953ef12689|George Sapkin|Sun Jan 4 19:50:52 2026 +0200|build: fix provides logic when ABI version is set
-b4e537e9cd|George Sapkin|Sun Jan 4 03:46:38 2026 +0200|build: refactor dependency formatting
-5976c47b9f|George Sapkin|Fri Jan 2 17:10:00 2026 +0200|build: don't auto mark all provides as virtual
-9a0045bbbf|George Sapkin|Fri Jan 2 17:07:52 2026 +0200|build: remove default provider priority
+f70c393d62|Ryan Chen|Sat Jan 17 20:51:14 2026 -0600|wifi-scripts: fix WiFi 6E discovery for 6GHz 320MHz operation
+687ece117b|Robert Marko|Wed Jan 21 15:27:45 2026 +0100|microchipsw: lan969x: use network driver as a module
+5a3c5ec351|Robert Marko|Wed Jan 21 15:26:53 2026 +0100|kernel: modules: package Microchip SparX-5 switchdev driver as a module
+704d999d5a|Hauke Mehrtens|Wed Jan 21 01:24:27 2026 +0100|OpenWrt v25.12.0-rc3: revert to branch defaults
+8fca489a02|Hauke Mehrtens|Wed Jan 21 01:24:24 2026 +0100|OpenWrt v25.12.0-rc3: adjust config defaults
 </details>

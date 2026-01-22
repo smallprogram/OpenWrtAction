@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f1c7741|zxl hhyccc|Sat Jan 17 00:09:16 2026 +0800|Merge pull request #1872 from zxlhhyccc/tuic
-a773331|zxlhhyccc|Fri Jan 16 21:47:22 2026 +0800|luci-app-ssr-plus: Restore enforce tcp and optimize ipt game rules.
+3bc8494|zxl hhyccc|Thu Jan 22 00:41:31 2026 +0800|hysteria: update to 2.7.0
+299dd2e|zxl hhyccc|Thu Jan 22 00:39:58 2026 +0800|Merge pull request #1875 from zxlhhyccc/tuic
+b50cc11|zxlhhyccc|Wed Jan 21 22:37:10 2026 +0800|luci-app-ssr-plus: Add Xray Hysteria2 protocol configuration import and subscribe.
 </details>

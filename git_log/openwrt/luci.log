@@ -1,0 +1,12 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+766b3b0ba8|Eric Fahlgren|Wed Jan 21 13:56:51 2026 -0800|luci-theme-openwrt-2020: add missing selector
+5a9a5a6dfe|Paul Donald|Wed Jan 21 22:39:04 2026 +0100|luci-theme: fix theme header title
+3fdd24d09a|Eric Fahlgren|Wed Jan 21 10:34:18 2026 -0800|luci-mod-status: improve hide/show button placement and size
+4be7835900|Stan Grishin|Wed Jan 21 13:26:51 2026 -0800|Merge pull request #8242 from stangri/openwrt-25.12-luci-app-advanced-reboot
+669c7ad8aa|Stan Grishin|Wed Jan 21 03:31:28 2026 +0000|luci-app-advanced-reboot: bugfix: actual partition switch
+e48f2ced4f|Stan Grishin|Wed Jan 21 10:31:43 2026 -0800|Merge pull request #8237 from stangri/openwrt-25.12-luci-app-https-dns-proxy
+5d21579299|Stan Grishin|Mon Jan 19 23:54:50 2026 +0000|luci-app-https-dns-proxy: update to 2025.12.29-3
+</details>
