@@ -2,8 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ccb494c|deri sahertian|Wed Jan 21 12:45:07 2026 +0700|Rearrange Ko-fi support button in README
-58a58f3|deri sahertian|Wed Jan 21 12:44:34 2026 +0700|Update README.md
-9ef4921|deri sahertian|Wed Jan 21 12:42:41 2026 +0700|Update README.md
-6972934|deri sahertian|Wed Jan 21 12:42:19 2026 +0700|Update README.md
+1178b83|deri sahertian|Thu Jan 22 15:34:16 2026 +0700|update
+984fc6d|deri sahertian|Thu Jan 22 14:50:14 2026 +0700|fix popup on MultiWAN LuCI Errors
 </details>

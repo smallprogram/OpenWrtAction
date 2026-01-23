@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4f551e461|Daniel Golle|Sun Oct 5 03:42:19 2025 +0100|mediatek: update mt7988 cpufreq and support mt7987
+8b33f8ab9|Daniel Golle|Tue Jan 6 18:33:33 2026 +0000|kernel: net: phy: realtek: replace hack with proper fix
 </details>

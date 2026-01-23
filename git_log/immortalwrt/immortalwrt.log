@@ -2,22 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9a368bb4e4|Abramk|Mon Jan 19 16:45:56 2026 +0800|kernel: add support for FudanMicro FM25G02B
-ac81553015|Tianling Shen|Wed Jan 21 16:47:30 2026 +0800|Merge Official Source
-704d999d5a|Hauke Mehrtens|Wed Jan 21 01:24:27 2026 +0100|OpenWrt v25.12.0-rc3: revert to branch defaults
-8fca489a02|Hauke Mehrtens|Wed Jan 21 01:24:24 2026 +0100|OpenWrt v25.12.0-rc3: adjust config defaults
-30527a4c34|Hauke Mehrtens|Wed Jan 21 01:07:38 2026 +0100|Revert "kernel: pcs-mtk-lynxi: backport fix for in-band status capabilities"
-cb206004ea|Paul Donald|Tue Jan 6 01:53:25 2026 +0100|ucode: enable ucode-mod-zlib
-d88e3573a7|Felix Fietkau|Tue Jan 6 19:08:41 2026 +0000|ucode: add package for ucode-mod-io
-df2d060dbd|John Audia|Sun Jan 18 05:13:53 2026 -0500|kernel: bump 6.12 to 6.12.66
-aafcf04d0d|Emre Yavuzalp|Sun Nov 30 18:53:51 2025 +0300|mediatek: filogic: TP-Link Archer AX80 v1 (EU) support
-db694b40c9|Fil Dunsky|Sun Jan 4 01:00:14 2026 +0300|mediatek: add support for Airpi AP3000M
-067178b7fd|Pierre-Emmanuel Frot|Sun Jan 18 21:13:28 2026 +0100|x86: cs5535audio: add support for subtarget legacy
-b590b79a77|Maximilian Baumgartner|Thu Jan 15 23:46:46 2026 +0100|mediatek: fix gmac definition for cudy m3000
-528bee9e39|Robert Marko|Sun Jan 18 11:33:44 2026 +0100|microchipsw: drop source-only
-2210c6e632|Robert Marko|Mon Jan 12 17:33:02 2026 +0100|boot: arm-trusted-firmware-microchipsw: depend on host Ruby
-111151379d|Robert Marko|Mon Jan 12 17:28:06 2026 +0100|boot: arm-trusted-firmware-microchipsw: fix compilation against LibreSSL
-
-.....................
-
+02d7fe0a15|Tianling Shen|Thu Jan 22 12:15:10 2026 +0800|rtl8188eu: fix build with mac80211 6.18
+a4a89672d3|Tianling Shen|Thu Jan 22 12:05:51 2026 +0800|rtl8189es: bump to latest git HEAD
 </details>

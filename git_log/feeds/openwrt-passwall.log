@@ -1,8 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-2569cfb|Tianhe Yun|Thu Jan 22 00:49:01 2026 +0800|luci: bump to 26.1.21
-9f6d281|handsomeji|Wed Jan 21 22:02:19 2026 +0800|luci: fixup 1c01e459
-617d4d7|handsomeji|Wed Jan 21 21:26:20 2026 +0800|luci: fix Access Control TCP proxy way
-</details>

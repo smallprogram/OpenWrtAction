@@ -1,8 +1,0 @@
-<details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-3bc8494|zxl hhyccc|Thu Jan 22 00:41:31 2026 +0800|hysteria: update to 2.7.0
-299dd2e|zxl hhyccc|Thu Jan 22 00:39:58 2026 +0800|Merge pull request #1875 from zxlhhyccc/tuic
-b50cc11|zxlhhyccc|Wed Jan 21 22:37:10 2026 +0800|luci-app-ssr-plus: Add Xray Hysteria2 protocol configuration import and subscribe.
-</details>

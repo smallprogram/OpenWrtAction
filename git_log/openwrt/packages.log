@@ -1,0 +1,8 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ebf297763|Wei-Ting Yang|Thu Jan 8 12:35:42 2026 +0800|python-urllib3: update to 2.6.3
+28bca99ba|Wei-Ting Yang|Mon Dec 8 21:33:02 2025 +0800|python-urllib3: update to 2.6.1
+c805c3ad7|Ray Wang|Mon Jan 19 20:02:35 2026 +0800|hev-socks5-tunnel: update to 2.14.3
+</details>
