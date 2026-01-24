@@ -2,6 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b2b40d09eb|Paul Donald|Sun Jan 18 00:28:44 2026 +0100|ucode: update to Git 85922056ef7 (2026-01-16)
-7aeb44935b|Felix Fietkau|Tue Jan 6 19:09:01 2026 +0000|ucode: remove the fs.read_nb patch
+4303066fb8|Tianling Shen|Tue Jan 20 10:12:12 2026 +0800|rockchip: fix set default serial_{addr,port} in boot script
+f618048052|Chukun Pan|Wed Dec 10 18:10:29 2025 +0800|rockchip: add HINLINK H28K support
+dcc6ffb354|Chukun Pan|Tue Dec 16 21:27:02 2025 +0800|rockchip: correct MAC address for Radxa E20C
+ee7acbc0ed|Chukun Pan|Mon Dec 15 21:08:05 2025 +0800|rockchip: configure WAN port LED of Radxa E20C
+1b107a3c33|Chester A. Unal|Thu Sep 11 10:45:32 2025 +0100|packages: nvram: add set_bcm43602_variables quirk for ASUS RT-AC3200
+6e55dbc260|Chester A. Unal|Mon Apr 8 11:36:58 2024 +0300|packages: nvram: add asus,rt-ac{3200,5300} to set_wireless_led_behaviour
+630c404e8c|Chester A. Unal|Sun Apr 7 12:24:57 2024 +0200|bcm53xx: add support for ASUS RT-AC3200 and ASUS RT-AC5300
 </details>

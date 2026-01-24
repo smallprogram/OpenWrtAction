@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+fcc5a8d|xiaobaishu1|Fri Jan 23 11:09:36 2026 +0800|luci: Fix nil values in tonumber function (#977)
+</details>

@@ -1,7 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-02d7fe0a15|Tianling Shen|Thu Jan 22 12:15:10 2026 +0800|rtl8188eu: fix build with mac80211 6.18
-a4a89672d3|Tianling Shen|Thu Jan 22 12:05:51 2026 +0800|rtl8189es: bump to latest git HEAD
-</details>

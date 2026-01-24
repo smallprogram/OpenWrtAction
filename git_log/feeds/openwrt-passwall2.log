@@ -1,0 +1,10 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+d4acda7|handsomeji|Sat Jan 24 03:37:54 2026 +0800|luci: update the description of the shunt node
+49e55c6|handsomeji|Sat Jan 24 03:11:54 2026 +0800|luci: geo url can custom
+275eaf0|handsomeji|Sat Jan 24 02:45:24 2026 +0800|luci: node config page optimized and improved
+c0041ef|handsomeji|Thu Jan 22 04:16:08 2026 +0800|luci: optimize
+efacd0f|xiaobaishu1|Fri Jan 23 11:09:36 2026 +0800|luci: Fix nil values in tonumber function (#977)
+</details>

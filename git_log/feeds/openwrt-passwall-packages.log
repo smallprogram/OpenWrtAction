@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+20c8018|David Mandy|Sat Jan 24 03:58:43 2026 +0800|ci: update code golang: bump to 1.25.6
+cbc9eb5|github-actions[bot]|Sat Jan 24 00:38:13 2026 +0800|xray-core: update to 26.1.23 (#576)
+3c92055|Tianhe Yun|Fri Jan 23 17:08:51 2026 +0800|geoview: update to 0.2.5
+</details>

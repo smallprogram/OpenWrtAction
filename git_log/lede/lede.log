@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8b33f8ab9|Daniel Golle|Tue Jan 6 18:33:33 2026 +0000|kernel: net: phy: realtek: replace hack with proper fix
+703c337b4|Martin Kennedy|Sun Aug 21 20:37:18 2022 -0400|base-files: rename ethernet devs on known boards
 </details>
