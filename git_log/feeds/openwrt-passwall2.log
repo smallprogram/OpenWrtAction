@@ -2,9 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d4acda7|handsomeji|Sat Jan 24 03:37:54 2026 +0800|luci: update the description of the shunt node
-49e55c6|handsomeji|Sat Jan 24 03:11:54 2026 +0800|luci: geo url can custom
-275eaf0|handsomeji|Sat Jan 24 02:45:24 2026 +0800|luci: node config page optimized and improved
-c0041ef|handsomeji|Thu Jan 22 04:16:08 2026 +0800|luci: optimize
-efacd0f|xiaobaishu1|Fri Jan 23 11:09:36 2026 +0800|luci: Fix nil values in tonumber function (#977)
+29a1d5d|handsomeji|Sun Jan 25 02:30:48 2026 +0800|luci: rework import function in the node config page
+553b5a6|handsomeji|Sun Jan 25 01:27:56 2026 +0800|luci: optimize node list page
+102152e|handsomeji|Sat Jan 24 17:58:44 2026 +0800|luci: 26.1.24
+ba8d9cb|handsomeji|Sat Jan 24 17:50:37 2026 +0800|luci: index page optimized
+6013804|handsomeji|Sat Jan 24 17:58:16 2026 +0800|luci: optimize
+22e94a3|handsomeji|Sat Jan 24 15:40:08 2026 +0800|luci: node config page continue optimized
+e487704|handsomeji|Sat Jan 24 14:49:30 2026 +0800|luci: optimize 275eaf0c
+0028c8a|handsomeji|Sat Jan 24 13:22:06 2026 +0800|luci: Fix node list show if add new node were not saved
 </details>

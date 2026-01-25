@@ -2,17 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e67cfe8971|Paul Donald|Fri Jan 23 20:53:21 2026 +0100|luci-base: add validator array support
-8ddef1a791|Paul Donald|Fri Jan 23 19:46:58 2026 +0100|luci-base: add IPv6 LL and ULA validation
-b1dfd1d899|NaOH Lin|Sat Jan 24 01:22:17 2026 +0800|luci-app-attendedsysupgrade: fix syntax error
-987137f4fd|Norman Gehrsitz|Sat Jan 3 18:09:48 2026 +0100|luci-app-acme: support --cert-profile option
-1509d5c1c5|Paul Donald|Fri Jan 23 07:01:08 2026 +0100|luci-app-ocserv: convert to JS
-01801c0a78|Paul Donald|Sat Jan 17 20:18:37 2026 +0100|luci-base: dispatcher; improve wildcard routing
-d4e45b4084|Paul Donald|Thu Jan 8 18:12:40 2026 +0100|luci-base: amend rpc to handle objects in param
-78cb406864|Eric Fahlgren|Wed Jan 21 15:53:35 2026 -0800|luci-mod-status: clean up presentation of dhcp section
-5e524e8e0f|LASER-Yi|Wed Jan 21 01:25:27 2026 +0800|luci-base: fix JSDoc errors in form.Flag and form.Button
-4a7c587a2c|Eric Fahlgren|Thu Jan 22 16:12:33 2026 -0800|luci-app-attendedsysupgrade: rework check-for-new-firmware
-28d3454703|Tokisaki Galaxy|Sun Nov 16 00:05:13 2025 +0800|luci-app-tailscale-community: add new application
-11a338bb01|Konstantin Glukhov|Thu Jan 22 11:13:35 2026 +0900|luci-mod-status: resolve service names for ports
-b96b91fe23|Ramon Van Gorkom|Sun Jan 4 18:48:47 2026 +0100|luci-base: make some tables better searchable
+e4209fc268|Paul Donald|Sat Jan 24 15:30:04 2026 +0100|luci-app-attendedsysupgrade: spell fix
+c592cc2452|Dirk Brenken|Sat Jan 24 14:39:03 2026 +0100|luci-app-adblock: sync with adblock 4.5.0-2
+5221e21662|Brian White|Fri Jan 23 21:09:33 2026 -0300|luci-theme-material: fix unreadable text
 </details>

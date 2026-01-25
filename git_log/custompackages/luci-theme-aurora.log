@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-29aa405|Eamon Xiong|Fri Jan 23 15:56:48 2026 +0800|feat: support custom component colors
+63dddf0|Eamon Xiong|Sun Jan 25 00:21:28 2026 +0800|docs: clarify development instructions
+c742f39|Eamon Xiong|Sat Jan 24 20:45:01 2026 +0800|feat: support i18n for tab page titles
+d74f3e6|Eamon Xiong|Sat Jan 24 20:11:27 2026 +0800|feat: support configurable max width for main content container
 </details>

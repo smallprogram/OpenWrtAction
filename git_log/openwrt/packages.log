@@ -2,14 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-80780af0b|xiao bo|Wed Jan 21 19:35:37 2026 +0800|sing-box: update to 1.12.17
-64ced5989|Daniel F. Dickinson|Tue Jan 20 17:39:21 2026 -0500|python-passlib: remove unmaintained package
-2d17fa969|Daniel F. Dickinson|Tue Jan 20 00:51:08 2026 -0500|radicale3: bump to version 3.6.0
-ee333daef|Daniel F. Dickinson|Mon Jan 5 22:24:05 2026 -0500|python-libpass: add replacement for passlib
-8bf08a94a|Daniel F. Dickinson|Wed Jan 14 23:32:05 2026 -0500|radicale3: make the empty uci config consistent
-12ef889fd|Daniel F. Dickinson|Wed Jan 14 23:29:20 2026 -0500|radicale3: add better reload handling
-c4701db83|Daniel F. Dickinson|Wed Jan 14 23:24:48 2026 -0500|radicale3: update initial uci config
-0148a8c12|Daniel F. Dickinson|Sun Jan 11 19:14:35 2026 -0500|radicale3: fix permissions on ssl cert/key
-75a5ca0f4|Daniel F. Dickinson|Sat Jan 10 21:19:37 2026 -0500|radicale3: updates due to radicale 3 vs 2 changes
-b6e4383ca|Daniel F. Dickinson|Fri Jan 9 00:12:23 2026 -0500|radicale3: tweak Makefile and initscript
+a6449c72c|Dirk Brenken|Sat Jan 24 14:33:24 2026 +0100|adblock: update 4.5.0-2
+fa41bc8e4|Hirokazu MORIKAWA|Tue Jan 20 13:22:04 2026 +0900|node: january 13, 2026 Security Releases
 </details>

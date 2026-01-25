@@ -2,5 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fcc5a8d|xiaobaishu1|Fri Jan 23 11:09:36 2026 +0800|luci: Fix nil values in tonumber function (#977)
+c790acd|handsomeji|Sun Jan 25 02:37:41 2026 +0800|luci: 26.1.25
+d1169b4|handsomeji|Sun Jan 25 02:30:48 2026 +0800|luci: rework import function in the node config page
+3e9381e|handsomeji|Sun Jan 25 01:27:56 2026 +0800|luci: optimize node list page
+6826441|handsomeji|Sat Jan 24 13:22:06 2026 +0800|luci: Fix node list show if add new node were not saved
+2512718|handsomeji|Sat Jan 24 17:50:37 2026 +0800|luci: index page optimized
+9bd560e|handsomeji|Sat Jan 24 14:49:30 2026 +0800|luci: node config page continue optimized
+595b76b|Tianhe Yun|Sat Jan 24 18:20:24 2026 +0800|luci: node config page optimized and improved (#4255)
 </details>
