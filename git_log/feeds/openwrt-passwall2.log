@@ -2,12 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-29a1d5d|handsomeji|Sun Jan 25 02:30:48 2026 +0800|luci: rework import function in the node config page
-553b5a6|handsomeji|Sun Jan 25 01:27:56 2026 +0800|luci: optimize node list page
-102152e|handsomeji|Sat Jan 24 17:58:44 2026 +0800|luci: 26.1.24
-ba8d9cb|handsomeji|Sat Jan 24 17:50:37 2026 +0800|luci: index page optimized
-6013804|handsomeji|Sat Jan 24 17:58:16 2026 +0800|luci: optimize
-22e94a3|handsomeji|Sat Jan 24 15:40:08 2026 +0800|luci: node config page continue optimized
-e487704|handsomeji|Sat Jan 24 14:49:30 2026 +0800|luci: optimize 275eaf0c
-0028c8a|handsomeji|Sat Jan 24 13:22:06 2026 +0800|luci: Fix node list show if add new node were not saved
+ab95eb6|comer-zhou|Mon Jan 26 06:23:18 2026 +0800|fix(luci):  Cannot assign option to not existing tab "Proxy" (#987)
+0f8f257|handsomeji|Sun Jan 25 17:49:10 2026 +0800|luci: optimize
+2842979|handsomeji|Sun Jan 25 14:34:41 2026 +0800|luci: fix index page tips
+026ddde|Jackie264|Sun Jan 25 14:58:19 2026 +0800|luci: Fix "sh: missing ]"
+a70e1ac|lwb1978|Sun Jan 25 13:13:58 2026 +0800|luci: optimize node selection list mouse scroll event
 </details>

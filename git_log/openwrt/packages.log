@@ -2,6 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a6449c72c|Dirk Brenken|Sat Jan 24 14:33:24 2026 +0100|adblock: update 4.5.0-2
-fa41bc8e4|Hirokazu MORIKAWA|Tue Jan 20 13:22:04 2026 +0900|node: january 13, 2026 Security Releases
+2f14570b8|George Sapkin|Fri Jan 23 01:42:40 2026 +0200|boringssl: drop package
+333a5f150|Jens Wagner|Fri Jan 2 14:39:23 2026 +0100|perl-www: added dependency on perlbase-module
+12336f128|Dirk Brenken|Sun Jan 25 15:57:35 2026 +0100|adblock: update 4.5.0-3
+82149672b|Wei-Ting Yang|Fri Jan 9 20:14:24 2026 +0800|coreutils: patch possible infinite loop with SEEK_HOLE
+c9c431d26|Wei-Ting Yang|Tue Dec 23 20:36:53 2025 +0800|coreutils: update to 9.9
+a5f2712a8|Wei-Ting Yang|Tue Dec 23 20:01:31 2025 +0800|coreutils: clean up Makefile
 </details>

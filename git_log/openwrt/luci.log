@@ -1,8 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-e4209fc268|Paul Donald|Sat Jan 24 15:30:04 2026 +0100|luci-app-attendedsysupgrade: spell fix
-c592cc2452|Dirk Brenken|Sat Jan 24 14:39:03 2026 +0100|luci-app-adblock: sync with adblock 4.5.0-2
-5221e21662|Brian White|Fri Jan 23 21:09:33 2026 -0300|luci-theme-material: fix unreadable text
-</details>

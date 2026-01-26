@@ -2,6 +2,20 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-27b48d0002|Robert Senderek|Fri Oct 10 14:40:21 2025 +0200|qualcommax: ipq50xx: Add support for Zyxel SCR50AXE
-ebf9f13938|Hauke Mehrtens|Thu Jan 22 23:14:21 2026 +0100|lantiq: AVM Fritz 736x: fix PCIe reset GPIO
+7c732c8a47|Hauke Mehrtens|Fri Jan 23 00:13:46 2026 +0100|mt76: mt7996: fix crash when using mesh
+a71aef647b|Maxim Anisimov|Thu Jan 22 11:17:49 2026 +0300|mediatek: enable wan led for Keenetic KN-(3711/3811)
+593b7d924e|Maxim Anisimov|Thu Jan 22 11:09:26 2026 +0300|mediatek: simplify nvmem mac for Keenetic KN-(3811/3911)
+fdf2a1bf00|Maxim Anisimov|Thu Jan 22 11:04:44 2026 +0300|mediatek: drop spi cal for Keenetic KN-(3711/3811/3911)
+4d444dabba|Maxim Anisimov|Thu Jan 22 11:00:35 2026 +0300|mediatek: fix label mac for Keenetic KN-(3711/3811/3911)
+1a810b5fa4|David Yang|Tue Jan 20 01:51:02 2026 +0800|iproute2: add dcb utility
+3d167c6b81|Hauke Mehrtens|Thu Jan 22 23:54:33 2026 +0100|firewall: change synflood_protect option name
+1d87d1f5aa|Zeyu Dong|Sat Jan 24 13:51:50 2026 -0500|ipq40xx: fix image pipeline for MR6350
+fc40e08c5b|Robert Marko|Sun Jan 25 14:44:45 2026 +0100|microchipsw: lan969x: include ip-bridge and dcb tools
+24077b9885|Robert Marko|Sun Jan 25 12:04:04 2026 +0100|microchipsw: enable DCB by default
+53a525f346|John Audia|Fri Jan 23 16:22:18 2026 -0500|kernel: bump 6.12 to 6.12.67
+5af01636ef|Robert Marko|Fri Jan 23 11:07:23 2026 +0100|uboot-microchipsw: add FIP update flashing shortcut
+b6389043f0|Robert Marko|Fri Jan 23 10:54:19 2026 +0100|microchipsw: update DTS with the latest pending upstream
+9e99b5b652|George Moussalem|Thu Jan 8 13:22:33 2026 +0400|qualcommax: ipq50xx: Correct USB DWC3 wrapper interrupts
+404b81e0f7|George Moussalem|Wed Jan 7 18:31:15 2026 +0400|qualcommax: ipq50xx: correct assigned cmn pll clock rate
+
 </details>
