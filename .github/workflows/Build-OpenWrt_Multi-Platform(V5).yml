@@ -326,8 +326,8 @@ jobs:
         uses: easimon/maximize-build-space@master
         if: steps.matrix_status.outputs.status != 'success'
         with:
-          root-reserve-mb: 6144
-          swap-size-mb: 10240
+          root-reserve-mb: 3072
+          swap-size-mb: 4096
           remove-dotnet: 'true'
           remove-android: 'true'
           remove-haskell: 'true'
@@ -662,8 +662,8 @@ jobs:
         uses: easimon/maximize-build-space@master
         if: steps.matrix_status.outputs.status != 'success'
         with:
-          root-reserve-mb: 6144
-          swap-size-mb: 10240
+          root-reserve-mb: 3072
+          swap-size-mb: 4096
           remove-dotnet: 'true'
           remove-android: 'true'
           remove-haskell: 'true'
