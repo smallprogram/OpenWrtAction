@@ -115,7 +115,7 @@ jobs:
         df -hT
 
     - name: Maximize build space
-      uses: easimon/maximize-build-space@master
+      uses: smallprogram/maximize-build-diskspace@main
       with:
         root-reserve-mb: 4096
         swap-size-mb: 1024

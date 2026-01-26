@@ -321,7 +321,7 @@ jobs:
           sudo chown -R $USER:$GROUPS /workdir
  
       - name: Maximize Build Space
-        uses: easimon/maximize-build-space@master
+        uses: smallprogram/maximize-build-diskspace@main
         if: steps.matrix_status.outputs.status != 'success'
         with:
           root-reserve-mb: 6144
