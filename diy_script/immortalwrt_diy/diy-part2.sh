@@ -60,6 +60,7 @@ fi
 mkdir -p dl
 cp -r $PATCHES_SRC_DIR/library/* ./dl/
 
-
+./scripts/feeds update -a
+./scripts/feeds install -a
 
 echo "DIY2 is complate!"

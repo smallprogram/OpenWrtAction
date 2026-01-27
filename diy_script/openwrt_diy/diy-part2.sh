@@ -51,8 +51,7 @@ cp -rf temp_resp/immortalwrt_luci/applications/luci-app-wechatpush ./feeds/luci/
 
 rm -rf temp_resp
 
-./scripts/feeds update -a
-./scripts/feeds install -a
+
 
 
 # golnag update version to 1.25.6
@@ -82,5 +81,7 @@ fi
 mkdir -p dl
 cp -r $PATCHES_SRC_DIR/library/* ./dl/
 
+./scripts/feeds update -a
+./scripts/feeds install -a
 
 echo "DIY2 is complate!"
