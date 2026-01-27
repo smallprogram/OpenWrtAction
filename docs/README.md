@@ -107,8 +107,6 @@ CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-udp2raw=y
 CONFIG_PACKAGE_luci-app-udpxy=y
 CONFIG_PACKAGE_luci-app-cloudflared=y
-CONFIG_PACKAGE_luci-app-frpc=y
-CONFIG_PACKAGE_luci-app-frps=y
 CONFIG_PACKAGE_luci-app-zerotier=y
 ```
 ### ⚙️ System Management and Tools
@@ -140,6 +138,7 @@ CONFIG_PACKAGE_luci-app-vnstat2=y
 ```
 CONFIG_PACKAGE_luci-app-acme=y
 CONFIG_PACKAGE_luci-app-arpbind=y
+CONFIG_PACKAGE_luci-app-banip=y
 ```
 ### 🎨 UI Themes and Interfaces
 ```
