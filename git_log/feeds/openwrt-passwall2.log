@@ -2,9 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ab95eb6|comer-zhou|Mon Jan 26 06:23:18 2026 +0800|fix(luci):  Cannot assign option to not existing tab "Proxy" (#987)
-0f8f257|handsomeji|Sun Jan 25 17:49:10 2026 +0800|luci: optimize
-2842979|handsomeji|Sun Jan 25 14:34:41 2026 +0800|luci: fix index page tips
-026ddde|Jackie264|Sun Jan 25 14:58:19 2026 +0800|luci: Fix "sh: missing ]"
-a70e1ac|lwb1978|Sun Jan 25 13:13:58 2026 +0800|luci: optimize node selection list mouse scroll event
+b2e79b6|handsomeji|Mon Jan 26 20:53:40 2026 +0800|luci: shunt urltest/balancers node fakedns option
+5493b5c|LGA1150|Mon Jan 26 10:34:00 2026 +0800|luci: allow xray ECH regardless of flow
 </details>

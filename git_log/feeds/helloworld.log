@@ -2,10 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dc2e290|zxl hhyccc|Mon Jan 26 00:41:14 2026 +0800|Merge pull request #1878 from zxlhhyccc/tuic
-e554c10|zxlhhyccc|Sun Jan 25 23:53:05 2026 +0800|luci-app-ssr-plus: Add support for selecting firewall tools when iptables and nftables coexist.
-66e034a|zxl hhyccc|Mon Jan 26 00:23:14 2026 +0800|Merge pull request #1877 from zxlhhyccc/tuic
-26cc514|zxl hhyccc|Sun Jan 25 23:48:05 2026 +0800|Merge pull request #1876 from zxlhhyccc/tuic
-3ee3224|zxlhhyccc|Sun Jan 25 23:05:14 2026 +0800|luci-app-ssr-plus: Fix config error.
-bf72025|zxlhhyccc|Sun Jan 25 22:55:35 2026 +0800|luci-app-ssr-plus: Do not generate gfw list when mode is not gfw.
+f92176d|zxl hhyccc|Mon Jan 26 19:39:48 2026 +0800|luci-app-ssr-plus: fix type erro.
 </details>

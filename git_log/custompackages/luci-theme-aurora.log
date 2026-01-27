@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-db2dfe3|Eamon Xiong|Mon Jan 26 02:45:28 2026 +0800|fix(channel-analysis): charts only rendered in one tab (#29)
+5fd920b|Eamon Xiong|Tue Jan 27 04:36:49 2026 +0800|ui: add info icon to form field descriptions
+f64e035|Eamon Xiong|Mon Jan 26 23:10:08 2026 +0800|fix: prevent overlap between loader icon and text in table placeholder row
 </details>

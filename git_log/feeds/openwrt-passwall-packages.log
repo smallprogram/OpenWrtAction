@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-093dfdf|David Mandy|Sun Jan 25 22:28:01 2026 +0800|According to https://github.com/openwrt/packages/pull/28378, the hardcoded golang upgrade removed. Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
-</details>
