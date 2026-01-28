@@ -1,0 +1,23 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+7851d11e3f|Tianling Shen|Tue Jan 27 21:56:28 2026 +0800|uboot-mediatek: add FM25G02B spi-nand flash support
+d95666cdef|Tianling Shen|Tue Jan 27 18:18:11 2026 +0800|Merge Official Source
+d86abb19c2|Tianling Shen|Tue Jan 27 16:31:58 2026 +0800|rockchip: fix set PHY LEDs for MangoPi M28C
+5c72cd46db|Álvaro Fernández Rojas|Mon Jan 26 18:54:14 2026 +0100|odhcp6c: update to 25.12 Git HEAD (2026-01-25)
+692150ee1f|Hauke Mehrtens|Mon Jan 26 01:32:23 2026 +0100|kernel: add missing kernel config option
+890a1d31fd|Hauke Mehrtens|Mon Jan 26 01:32:35 2026 +0100|kernel: reorder configuration options
+31f65ffef5|Álvaro Fernández Rojas|Sun Jan 25 19:34:57 2026 +0100|odhcpd: update to 25.12 Git HEAD (2026-01-19)
+7c732c8a47|Hauke Mehrtens|Fri Jan 23 00:13:46 2026 +0100|mt76: mt7996: fix crash when using mesh
+a71aef647b|Maxim Anisimov|Thu Jan 22 11:17:49 2026 +0300|mediatek: enable wan led for Keenetic KN-(3711/3811)
+593b7d924e|Maxim Anisimov|Thu Jan 22 11:09:26 2026 +0300|mediatek: simplify nvmem mac for Keenetic KN-(3811/3911)
+fdf2a1bf00|Maxim Anisimov|Thu Jan 22 11:04:44 2026 +0300|mediatek: drop spi cal for Keenetic KN-(3711/3811/3911)
+4d444dabba|Maxim Anisimov|Thu Jan 22 11:00:35 2026 +0300|mediatek: fix label mac for Keenetic KN-(3711/3811/3911)
+1a810b5fa4|David Yang|Tue Jan 20 01:51:02 2026 +0800|iproute2: add dcb utility
+3d167c6b81|Hauke Mehrtens|Thu Jan 22 23:54:33 2026 +0100|firewall: change synflood_protect option name
+1d87d1f5aa|Zeyu Dong|Sat Jan 24 13:51:50 2026 -0500|ipq40xx: fix image pipeline for MR6350
+
+.....................
+
+</details>

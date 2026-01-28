@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-bandix new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+e91f495|stefanlei|Wed Jan 28 07:00:18 2026 +0800|Bump version to 0.12.2 and adjust init respawn settings
+</details>

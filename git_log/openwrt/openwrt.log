@@ -2,7 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-692150ee1f|Hauke Mehrtens|Mon Jan 26 01:32:23 2026 +0100|kernel: add missing kernel config option
-890a1d31fd|Hauke Mehrtens|Mon Jan 26 01:32:35 2026 +0100|kernel: reorder configuration options
-31f65ffef5|Álvaro Fernández Rojas|Sun Jan 25 19:34:57 2026 +0100|odhcpd: update to 25.12 Git HEAD (2026-01-19)
+b1dc2736db|Youfu Zhang|Tue Jan 27 15:11:15 2026 +0800|wifi-scripts: fix ucode mobility_domain default value
+a8e32d208a|Hauke Mehrtens|Mon Jan 26 01:17:54 2026 +0100|mac80211: update to version 6.18.7
+3cb84dcbe9|Chukun Pan|Tue Oct 21 19:30:09 2025 +0800|d1: refresh kernel config
+79d8e14497|Chukun Pan|Mon Oct 20 22:16:21 2025 +0800|d1: enable overlay support
+947bcc95f8|Chukun Pan|Sun Oct 19 22:01:25 2025 +0800|d1: enable usbgadget feature
+5c72cd46db|Álvaro Fernández Rojas|Mon Jan 26 18:54:14 2026 +0100|odhcp6c: update to 25.12 Git HEAD (2026-01-25)
 </details>

@@ -2,5 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-21d78cf|LGA1150|Mon Jan 26 10:34:00 2026 +0800|luci: allow xray ECH regardless of flow (#4262)
+e46663f|A-BO|Tue Jan 27 18:36:25 2026 +0800|luci: show related shunt rules in `Geo View` lookup results
+6549f0f|A-BO|Mon Jan 26 20:57:17 2026 +0800|luci: optimize
+a4e4f31|A-BO|Mon Jan 26 20:40:42 2026 +0800|luci: xray add `pinnedPeerCertSha256` Remove `pinnedPeerCertificateChainSha256`
+ca84ae6|A-BO|Mon Jan 26 15:34:59 2026 +0800|luci: geo url can custom
+1720ffd|handsomeji|Mon Jan 26 20:53:40 2026 +0800|luci: shunt urltest/balancers node fakedns option
 </details>
