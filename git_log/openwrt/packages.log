@@ -2,13 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-46b173869|Michael Heimpold|Sat Jan 17 22:15:22 2026 +0100|php8: small maintainance cleanups
-158855005|Daniel F. Dickinson|Thu Jan 1 01:17:32 2026 -0500|php8: fix gettext and intl dependencies and build
-a73f1416c|Daniel F. Dickinson|Thu Jan 1 01:33:10 2026 -0500|php8: add more help text and tweak whitespace
-72b19db6c|Daniel F. Dickinson|Thu Jan 1 01:24:17 2026 -0500|php8: fix xmlreader dom circular dependency
-029b0bc80|Daniel F. Dickinson|Thu Jan 1 01:01:34 2026 -0500|php8: reformat CONFIG_DEPENDS
-1ab0b9917|Florian Eckert|Thu Dec 18 13:11:23 2025 +0100|php8: add php8 depends and move compile option to Config.in
-fa0d2a6cd|Tianling Shen|Sun Jan 18 14:51:32 2026 +0800|v2ray-geodata: Update to latest version
-19a0fcddc|TeleostNaCl Dai|Thu Jan 1 15:49:14 2026 +0800|v2ray-geodata: provide a virtual package
-faa9a172a|Zhu Yujie|Wed Dec 31 13:59:12 2025 +0800|v2ray-geodata: update to latest version
+520c61d9e|Dirk Brenken|Wed Jan 28 20:12:59 2026 +0100|adblock: update 4.5.0-4
+1237669c0|Yanase Yuki|Wed Jan 14 17:12:34 2026 +0900|liboil: remove package
+983e83e2a|Yanase Yuki|Wed Jan 14 17:16:33 2026 +0900|ostiary: remove package
+0b22d4576|Yanase Yuki|Sun Jan 4 15:40:50 2026 +0900|lpc21isp: remove package
+3365f4a8f|Yanase Yuki|Thu Jan 15 16:06:11 2026 +0900|banhostlist: remove package
+ba6b5493a|Yanase Yuki|Sun Jan 4 15:42:52 2026 +0900|lua-lzlib: remove package
+b32bac646|Yanase Yuki|Wed Dec 10 17:41:33 2025 +0900|netwhere: remove package
+fddc57cf9|Yanase Yuki|Fri Nov 28 19:21:17 2025 +0900|oor: remove package
+a6442c569|Yanase Yuki|Wed Dec 10 17:49:40 2025 +0900|python3-speedtest-cli: remove package
 </details>

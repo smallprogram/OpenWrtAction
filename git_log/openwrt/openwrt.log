@@ -2,10 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b1dc2736db|Youfu Zhang|Tue Jan 27 15:11:15 2026 +0800|wifi-scripts: fix ucode mobility_domain default value
-a8e32d208a|Hauke Mehrtens|Mon Jan 26 01:17:54 2026 +0100|mac80211: update to version 6.18.7
-3cb84dcbe9|Chukun Pan|Tue Oct 21 19:30:09 2025 +0800|d1: refresh kernel config
-79d8e14497|Chukun Pan|Mon Oct 20 22:16:21 2025 +0800|d1: enable overlay support
-947bcc95f8|Chukun Pan|Sun Oct 19 22:01:25 2025 +0800|d1: enable usbgadget feature
-5c72cd46db|Álvaro Fernández Rojas|Mon Jan 26 18:54:14 2026 +0100|odhcp6c: update to 25.12 Git HEAD (2026-01-25)
+dece3bf36b|Felix Fietkau|Wed Jan 28 17:56:30 2026 +0000|wifi-scripts: iwinfo.uc: fix null reference in info()
+b0c75adcc5|Felix Fietkau|Mon Jan 26 17:46:04 2026 +0000|tcpdump: add PROVIDES=tcpdump to tcpdump-tiny
+90b8ed725a|Ivan Pavlov|Wed Jan 28 17:01:36 2026 +0300|openssl: update to 3.5.5
+63060b0155|Robert Marko|Tue Jan 27 13:53:37 2026 +0100|mvebu: cortex-a53: fix Methode eDPU migration to upstream DTS
 </details>

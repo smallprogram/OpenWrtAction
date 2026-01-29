@@ -2,11 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dd9a5de|timsaya|Wed Jan 28 07:08:49 2026 +0800|Merge pull request #150 from timsaya/dev
-53de48a|stefanlei|Wed Jan 28 01:05:19 2026 +0800|Fix spacing in issue templates
-7bc6a5f|stefanlei|Wed Jan 28 01:04:31 2026 +0800|Merge branch 'main' into dev
-b3859ce|stefanlei|Wed Jan 28 01:03:52 2026 +0800|Add SRV DNS query type filter and bump version to 0.12.2
-bb55844|stefanlei|Wed Jan 28 00:54:36 2026 +0800|Add schedule rule edit feature and improve settings UI
-92583d6|stefanlei|Sat Jan 24 13:45:25 2026 +0800|Add router connection type support and improve icon theme adaptation
-d08e877|stefanlei|Sat Jan 24 11:55:47 2026 +0800|Improve connection statistics display and device icons
+ef44d8c|timsaya|Wed Jan 28 11:41:27 2026 +0800|Merge pull request #153 from timsaya/dev
+66cd77c|stefanlei|Wed Jan 28 11:40:07 2026 +0800|Merge branch 'main' into dev
+b786508|stefanlei|Wed Jan 28 11:39:44 2026 +0800|Optimize automatic update logic
 </details>

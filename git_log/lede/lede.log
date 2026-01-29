@@ -1,0 +1,7 @@
+<details> <summary> <b>lede new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+aac24d362|coolsnowwolf|Wed Jan 28 15:59:00 2026 +0800|uboot-rockchip: use prebuild IDB for NanoPi R76S (3GB) and NanoPi M5
+972418b07|aiamadeus|Tue Jan 27 18:20:22 2026 +0800|uboot-rockchip: update loading address of atf
+</details>

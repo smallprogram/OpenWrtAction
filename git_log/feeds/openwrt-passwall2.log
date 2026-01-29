@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b0b271c|handsomeji|Tue Jan 27 23:03:50 2026 +0800|luci: 26.1.27
-564ef58|A-BO|Tue Jan 27 18:36:25 2026 +0800|luci: show related shunt rules in `Geo View` lookup results
-831b55d|A-BO|Mon Jan 26 20:40:42 2026 +0800|luci: xray add `pinnedPeerCertSha256` Remove `pinnedPeerCertificateChainSha256`
+26362bf|handsomeji|Wed Jan 28 13:14:58 2026 +0800|ci: update
 </details>

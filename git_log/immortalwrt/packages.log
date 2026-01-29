@@ -2,22 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d997bd42b|Tianling Shen|Tue Jan 27 18:26:09 2026 +0800|Node.js: sync with upstream source
-ca83e8f46|Tianling Shen|Tue Jan 27 18:27:22 2026 +0800|Merge Official Source
-fa0d2a6cd|Tianling Shen|Sun Jan 18 14:51:32 2026 +0800|v2ray-geodata: Update to latest version
-19a0fcddc|TeleostNaCl Dai|Thu Jan 1 15:49:14 2026 +0800|v2ray-geodata: provide a virtual package
-faa9a172a|Zhu Yujie|Wed Dec 31 13:59:12 2025 +0800|v2ray-geodata: update to latest version
-1b2b65370|Noah Meyerhans|Thu Jan 22 16:20:11 2026 -0500|bind: bump to 9.20.18
-2f14570b8|George Sapkin|Fri Jan 23 01:42:40 2026 +0200|boringssl: drop package
-333a5f150|Jens Wagner|Fri Jan 2 14:39:23 2026 +0100|perl-www: added dependency on perlbase-module
-12336f128|Dirk Brenken|Sun Jan 25 15:57:35 2026 +0100|adblock: update 4.5.0-3
-82149672b|Wei-Ting Yang|Fri Jan 9 20:14:24 2026 +0800|coreutils: patch possible infinite loop with SEEK_HOLE
-c9c431d26|Wei-Ting Yang|Tue Dec 23 20:36:53 2025 +0800|coreutils: update to 9.9
-a5f2712a8|Wei-Ting Yang|Tue Dec 23 20:01:31 2025 +0800|coreutils: clean up Makefile
-a6449c72c|Dirk Brenken|Sat Jan 24 14:33:24 2026 +0100|adblock: update 4.5.0-2
-fa41bc8e4|Hirokazu MORIKAWA|Tue Jan 20 13:22:04 2026 +0900|node: january 13, 2026 Security Releases
-80780af0b|xiao bo|Wed Jan 21 19:35:37 2026 +0800|sing-box: update to 1.12.17
-
-.....................
-
+1c245d008|Tianling Shen|Wed Jan 28 17:12:40 2026 +0800|Merge Official Source
+46b173869|Michael Heimpold|Sat Jan 17 22:15:22 2026 +0100|php8: small maintainance cleanups
+158855005|Daniel F. Dickinson|Thu Jan 1 01:17:32 2026 -0500|php8: fix gettext and intl dependencies and build
+a73f1416c|Daniel F. Dickinson|Thu Jan 1 01:33:10 2026 -0500|php8: add more help text and tweak whitespace
+72b19db6c|Daniel F. Dickinson|Thu Jan 1 01:24:17 2026 -0500|php8: fix xmlreader dom circular dependency
+029b0bc80|Daniel F. Dickinson|Thu Jan 1 01:01:34 2026 -0500|php8: reformat CONFIG_DEPENDS
+1ab0b9917|Florian Eckert|Thu Dec 18 13:11:23 2025 +0100|php8: add php8 depends and move compile option to Config.in
 </details>
