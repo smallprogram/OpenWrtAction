@@ -2,8 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dece3bf36b|Felix Fietkau|Wed Jan 28 17:56:30 2026 +0000|wifi-scripts: iwinfo.uc: fix null reference in info()
-b0c75adcc5|Felix Fietkau|Mon Jan 26 17:46:04 2026 +0000|tcpdump: add PROVIDES=tcpdump to tcpdump-tiny
-90b8ed725a|Ivan Pavlov|Wed Jan 28 17:01:36 2026 +0300|openssl: update to 3.5.5
-63060b0155|Robert Marko|Tue Jan 27 13:53:37 2026 +0100|mvebu: cortex-a53: fix Methode eDPU migration to upstream DTS
+d43bd94600|Hauke Mehrtens|Thu Jan 29 23:52:16 2026 +0100|OpenWrt v25.12.0-rc4: revert to branch defaults
+925519daf1|Hauke Mehrtens|Thu Jan 29 23:52:13 2026 +0100|OpenWrt v25.12.0-rc4: adjust config defaults
+12374d88b9|Hauke Mehrtens|Thu Jan 29 23:36:11 2026 +0100|Revert "kernel: bump 6.12 to 6.12.67"
+b98323c0e1|Ivan Pavlov|Tue Jan 27 17:41:05 2026 +0300|tcpdump: update to 4.99.6
+fd04f9240f|Ivan Pavlov|Tue Jan 27 17:40:18 2026 +0300|libpcap: update to 1.10.6
 </details>

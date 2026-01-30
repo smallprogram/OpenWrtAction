@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-926629a|stefanlei|Thu Jan 29 07:11:29 2026 +0800|Bump version to 0.12.3 and update hashes
+00c1d5d|timsaya|Fri Jan 30 04:39:35 2026 +0800|Merge pull request #10 from bbaa-bbaa/main
+588509c|bbaa|Thu Jan 29 23:05:04 2026 +0800|Refactor config preservation to use standard mechanisms
+c462dd4|bbaa|Thu Jan 29 23:01:11 2026 +0800|Revert "Remove conffiles definition from Makefile"
 </details>

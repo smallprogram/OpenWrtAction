@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-26362bf|handsomeji|Wed Jan 28 13:14:58 2026 +0800|ci: update
+9d028d0|handsomeji|Fri Jan 30 01:19:53 2026 +0800|luci: add rollback geo resource button
+d3c4bd2|handsomeji|Fri Jan 30 01:37:36 2026 +0800|luci: optimize and adjust
+62cf384|A-BO|Thu Jan 29 18:54:12 2026 +0800|luci: optimize geo file SHA content replacement logic
 </details>

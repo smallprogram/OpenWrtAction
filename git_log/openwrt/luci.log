@@ -2,5 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-996a73ba9a|Dirk Brenken|Wed Jan 28 20:15:55 2026 +0100|luci-app-adblock: sync with adblock 4.5.0-4
+81517f546a|Stan Grishin|Wed Jan 28 00:23:53 2026 +0000|luci-app-adblock-fast: update to 1.2.1-r3
+7a3f5e3015|Paul Donald|Thu Jan 29 19:12:10 2026 +0100|luci-mod-system: make repokeys more future proof
+140075ee51|Paul Donald|Thu Jan 29 19:02:12 2026 +0100|luci-base: fix tab handling in modal dialogues
+8574bb6f18|Paul Donald|Thu Jan 29 06:09:01 2026 +0100|luci-app-splash: drop old Lua app
+5ece50479a|Paul Donald|Wed Jan 28 06:04:27 2026 +0100|luci-base: fix click and drag handling
 </details>

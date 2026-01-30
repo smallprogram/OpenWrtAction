@@ -2,13 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-520c61d9e|Dirk Brenken|Wed Jan 28 20:12:59 2026 +0100|adblock: update 4.5.0-4
-1237669c0|Yanase Yuki|Wed Jan 14 17:12:34 2026 +0900|liboil: remove package
-983e83e2a|Yanase Yuki|Wed Jan 14 17:16:33 2026 +0900|ostiary: remove package
-0b22d4576|Yanase Yuki|Sun Jan 4 15:40:50 2026 +0900|lpc21isp: remove package
-3365f4a8f|Yanase Yuki|Thu Jan 15 16:06:11 2026 +0900|banhostlist: remove package
-ba6b5493a|Yanase Yuki|Sun Jan 4 15:42:52 2026 +0900|lua-lzlib: remove package
-b32bac646|Yanase Yuki|Wed Dec 10 17:41:33 2025 +0900|netwhere: remove package
-fddc57cf9|Yanase Yuki|Fri Nov 28 19:21:17 2025 +0900|oor: remove package
-a6442c569|Yanase Yuki|Wed Dec 10 17:49:40 2025 +0900|python3-speedtest-cli: remove package
+80d500412|Stan Grishin|Wed Jan 28 00:19:37 2026 +0000|adblock-fast: update to 1.2.1-3
+3d9a66b93|Georgi Valkov|Wed Jan 28 20:21:28 2026 +0200|libimobiledevice: fix dependency on libtatsu
+c9b3dc2d9|George Sapkin|Wed Jan 21 02:53:04 2026 +0200|golang: add generic package definition
+576993a4e|George Sapkin|Thu Jan 22 02:55:19 2026 +0200|golang: add versioned package for 1.25
+8afdb7c10|George Sapkin|Thu Jan 1 16:19:55 2026 +0200|golang: split bootstrap into a separate package
+3aaef3132|George Sapkin|Thu Jan 1 16:02:01 2026 +0200|golang: add SPDX license identifiers
+60e11ad76|David Mandy|Sun Jan 18 16:12:26 2026 +0800|golang: bump to 1.25.6
 </details>

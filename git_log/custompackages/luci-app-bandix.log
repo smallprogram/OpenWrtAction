@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ef44d8c|timsaya|Wed Jan 28 11:41:27 2026 +0800|Merge pull request #153 from timsaya/dev
-66cd77c|stefanlei|Wed Jan 28 11:40:07 2026 +0800|Merge branch 'main' into dev
-b786508|stefanlei|Wed Jan 28 11:39:44 2026 +0800|Optimize automatic update logic
+73c111b|timsaya|Fri Jan 30 04:58:32 2026 +0800|Merge pull request #157 from timsaya/dev
+fc732b5|stefanlei|Fri Jan 30 04:56:56 2026 +0800|Simplify bandix package update: remove manual service stop/start
 </details>
