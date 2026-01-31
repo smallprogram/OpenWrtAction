@@ -615,7 +615,7 @@ function Func_Main() {
             Func_LogMessage "你接下来要干啥？？？" "What are you going to do next? ? ?"
             Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
             Func_LogMessage "1. 根据config自动编译固件。(默认)" "1.Automatically compile the firmware according to config. (default)"
-            Func_LogMessage "2. 我要配置config，配置完毕后自动同步回OpenwrtAction。" "2.I want to configure config, and automatically synchronize back to OpenwrtAction after configuration."
+            Func_LogMessage "2. 我要配置config。" "2.I want to configure config"
             read -t $timer num
             if [ ! -n "$num" ]; then
                 num=1
