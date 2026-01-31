@@ -661,8 +661,7 @@ function Func_Main() {
 
             cd /home/${user_name}/${openwrt_dir}
             make menuconfig
-            cp /home/${user_name}/${openwrt_dir}/.config /home/${user_name}/OpenWrtAction/$config_dir/${config_name}
-            cd /home/${user_name}/OpenWrtAction
+            
 
             if [ ! -n "$(git config --global user.email)" ]; then
                 Func_LogSuccess "请输入git Global user.email:" "Please enter git Global user.email:"
@@ -684,12 +683,37 @@ function Func_Main() {
                 git config --global user.email "$gitUserName"
             fi
 
-            if [ -n "$(git status -s)" ]; then
-                git add .
-                git commit -m "update $config_name from local bash"
-                git push origin
-                Func_LogSuccess "已将新配置的config同步回OpenwrtAction" "The newly configured config has been synchronized back to OpenwrtAction"
-                sleep 2s
+            Func_LogMessage "是否将新配置的config提交并同步回OpenwrtAction远程仓库？" "Do you want to commit and push the new config to OpenwrtAction remote repository?"
+            Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
+            Func_LogMessage "1. 是(默认值)" "1. Yes(Default)"
+            Func_LogMessage "2. 不提交" "2. No"
+            read -t $timer is_push_config
+            if [ ! -n "$is_push_config" ]; then
+                is_push_config=1
+            fi
+            until [[ $is_push_config -ge 1 && $is_push_config -le 2 ]]; do
+                Func_LogError "输入无效，请重新输入" "Invalid input, please re-enter"
+                Func_LogMessage "是否将新配置的config提交并同步回OpenwrtAction远程仓库？" "Do you want to commit and push the new config to OpenwrtAction remote repository?"
+                Func_LogMessage "1. 是(默认值)" "1. Yes(Default)"
+                Func_LogMessage "2. 不提交" "2. No"
+                read -t $timer is_push_config
+                if [ ! -n "$is_push_config" ]; then
+                    is_push_config=1
+                fi
+            done
+
+            if [[ $is_push_config == 1 ]]; then
+                cp /home/${user_name}/${openwrt_dir}/.config /home/${user_name}/OpenWrtAction/$config_dir/${config_name}
+                cd /home/${user_name}/OpenWrtAction
+                if [ -n "$(git status -s)" ]; then
+                    git add .
+                    git commit -m "update $config_name from local bash"
+                    git push origin
+                    Func_LogSuccess "已将新配置的config同步回OpenwrtAction" "The newly configured config has been synchronized back to OpenwrtAction"
+                    sleep 2s
+                fi
+            else
+                Func_LogSuccess "跳过git提交操作" "Skipped git commit operation"
             fi
 
             Func_LogMessage "是否根据新的config编译？" "Is it compiled according to the new config?"
