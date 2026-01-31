@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c93891550|coolsnowwolf|Thu Jan 29 10:30:24 2026 +0800|rockchip: Add support for Radxa ROCK 4C+
-145e31768|coolsnowwolf|Sat Jan 24 23:09:40 2026 +0800|uboot-rockchip: workaround for buggy rk3576
-aac24d362|coolsnowwolf|Wed Jan 28 15:59:00 2026 +0800|uboot-rockchip: use prebuild IDB for NanoPi R76S (3GB) and NanoPi M5
+06d0bcdb6|Shiji Yang|Fri Jan 30 22:14:01 2026 +0800|mediatek: dts: mt7981: remove useless node
 </details>

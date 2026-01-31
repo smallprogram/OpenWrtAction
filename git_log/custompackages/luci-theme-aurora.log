@@ -1,8 +1,0 @@
-<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-178365c|Eamon Xiong|Thu Jan 29 16:11:26 2026 +0800|refactor: optimize floating toolbar collapse animation
-f193f3f|Eamon Xiong|Thu Jan 29 14:53:04 2026 +0800|fix(overview): adapt hide/show button to upstream DOM changes
-eba6b77|Eamon Xiong|Thu Jan 29 13:52:32 2026 +0800|style: disable redundant ::before column on first-field elements
-</details>
