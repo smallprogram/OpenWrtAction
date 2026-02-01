@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f6473d7|handsomeji|Sat Jan 31 03:08:07 2026 +0800|luci: 26.1.31
-b105afb|handsomeji|Sat Jan 31 01:48:35 2026 +0800|luci: improve and optimize
+7d7dd9b|handsomeji|Sun Feb 1 01:23:17 2026 +0800|luci: node config page hide some button when special node
+2c28d87|handsomeji|Sun Feb 1 00:28:09 2026 +0800|luci: code reuse and optimize
 </details>

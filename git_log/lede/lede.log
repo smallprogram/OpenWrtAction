@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-06d0bcdb6|Shiji Yang|Fri Jan 30 22:14:01 2026 +0800|mediatek: dts: mt7981: remove useless node
+3fbeb8af3|Daniel Golle|Sun Oct 5 03:40:03 2025 +0100|mediatek: 6.12: build image for MT7987 RFB
 </details>

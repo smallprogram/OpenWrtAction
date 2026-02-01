@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c81658889|George Sapkin|Tue Jan 27 04:55:51 2026 +0200|samba4: fix compiling bundled Kerberos
-af4302dcf|George Sapkin|Tue Jan 27 08:09:10 2026 +0200|samba4: remove pthread dependency
-53f21597d|George Sapkin|Tue Jan 27 04:55:03 2026 +0200|samba4: sort arguments and dependencies
-b55e9bca1|Javier Marcet|Thu Jan 1 20:44:17 2026 +0100|samba4: bump to 4.22.7
+ae0108fa7|Hannu Nyman|Sat Jan 31 10:44:29 2026 +0200|irqbalance: update to version 1.9.5
 </details>

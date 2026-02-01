@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-cc3c976621|Hannu Nyman|Fri Jan 30 21:55:36 2026 +0200|treewide: backport translations
+77f5c60546|Paul Donald|Sat Jan 31 16:09:17 2026 +0100|luci-app-nut: fix value misspelling
 </details>

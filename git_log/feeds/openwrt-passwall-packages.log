@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-90e2a24|github-actions[bot]|Fri Jan 30 23:18:24 2026 +0800|sing-box: update to 1.12.18 (#578)
+28f5702|David Mandy|Sun Feb 1 03:16:55 2026 +0800|ci: sdk bump to 24.10.5 update patch code apply openwrt snapshot package code
+b662e1f|github-actions[bot]|Sun Feb 1 03:02:16 2026 +0800|xray-core: update to 26.1.31 (#579)
 </details>
