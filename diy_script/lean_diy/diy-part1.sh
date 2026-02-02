@@ -10,8 +10,10 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-source "$SCRIPT_DIR/lean_custom_feeds_and_packages.sh"
+CURRENT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PARENT_DIR="$(dirname "$CURRENT_DIR")"
+source "$PARENT_DIR/custom_feeds_and_packages.sh"
+
 
 # ---------------------------------------------------------------feeds update---------------------------------------------------------------
 # 备份原始 feeds.conf.default
