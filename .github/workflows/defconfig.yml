@@ -52,7 +52,7 @@ jobs:
           echo "release_tag=multi-platform_$(date +"%Y.%m.%d_%H.%M.%S")" >> $GITHUB_OUTPUT
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
@@ -84,7 +84,7 @@ jobs:
           df -hT
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
