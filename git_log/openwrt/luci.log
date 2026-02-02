@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-77f5c60546|Paul Donald|Sat Jan 31 16:09:17 2026 +0100|luci-app-nut: fix value misspelling
+6bfda7c192|Paul Donald|Sun Feb 1 19:44:11 2026 +0100|luci-base: render button for drag handle
+0a62819fe2|Paul Donald|Sat Jan 31 23:49:13 2026 +0100|luci-base: do not coerce objects to strings
 </details>
