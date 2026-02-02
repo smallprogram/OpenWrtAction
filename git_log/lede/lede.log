@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-06d0bcdb6|Shiji Yang|Fri Jan 30 22:14:01 2026 +0800|mediatek: dts: mt7981: remove useless node
+ddcb36aaf|Daniel Golle|Sat Oct 4 04:23:29 2025 +0100|mediatek: add BananaPi BPi-R4 Lite support
 </details>

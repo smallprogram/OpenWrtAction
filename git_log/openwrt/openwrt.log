@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6afff2039b|Chukun Pan|Tue Dec 9 18:06:25 2025 +0800|uboot-rockchip: add HINLINK H28K support
+beb134292d|Andrew LaMarche|Thu Jan 29 14:39:05 2026 +0000|kernel: fix rtl8261n driver for non-realtek chips
+b99c19835c|Felix Fietkau|Sat Jan 31 16:56:53 2026 +0000|wifi-scripts: fix ieee80211w override for psk-sae/sae-mixed
+ba7cb3771b|Burak Aydos|Thu Jan 29 22:25:04 2026 +0300|lantiq: xrx200: add env-size for P-2812HNU-F1 u-boot-env
+cca2f56023|Tim Harvey|Mon Jan 26 17:17:26 2026 -0800|kernel: modules: Add tpm-tis-spi
 </details>

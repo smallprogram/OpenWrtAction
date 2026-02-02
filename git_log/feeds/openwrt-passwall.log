@@ -2,22 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8c9eb9d8|A-BO|Sat Jan 31 03:11:53 2026 +0800|luci: optimize the homepage status page
-3f448d63|David Mandy|Fri Jan 30 23:12:49 2026 +0800|luci: optimize the `get_wan_ips` code.
-80b96ad2|A-BO|Fri Jan 30 22:08:55 2026 +0800|ci: add download badge to release notes
-c5c6a5d9|A-BO|Fri Jan 30 21:47:20 2026 +0800|luci: bump to 26.1.30
-31dc2562|A-BO|Fri Jan 30 21:39:52 2026 +0800|luci: optimize rollback geo resource logic
-d6c2fef1|A-BO|Fri Jan 30 12:26:05 2026 +0800|luci: add rollback geo resource button
-b279eac4|A-BO|Fri Jan 30 12:21:26 2026 +0800|luci: fixup
-6746cd72|A-BO|Fri Jan 30 10:51:40 2026 +0800|luci: optimize and adjust
-1bc07498|A-BO|Thu Jan 29 18:52:38 2026 +0800|luci: optimize geo file SHA content replacement logic
-8ecdf8e8|A-BO|Thu Jan 29 17:42:04 2026 +0800|luci: optimize
-64e893bf|A-BO|Thu Jan 29 00:58:47 2026 +0800|luci: 26.1.29
-2501cc18|A-BO|Thu Jan 29 00:51:38 2026 +0800|luci: Refactor node run argument handling to use JSON
-ae40d440|A-BO|Thu Jan 29 00:23:58 2026 +0800|luci: fix udp node settings cannot save
-e46663f2|A-BO|Tue Jan 27 18:36:25 2026 +0800|luci: show related shunt rules in `Geo View` lookup results
-c35a506c|A-BO|Tue Jan 27 18:36:25 2026 +0800|luci: show related shunt rules in `Geo View` lookup results
-
-.....................
-
+21d80ce|A-BO|Mon Feb 2 00:26:19 2026 +0800|luci: adopting PSW2 shunt node configuration method
+d58c9a4|lwb1978|Sun Feb 1 15:35:44 2026 +0800|luci: optimize the display width of text in custom templates
+e33d57c|lwb1978|Sun Feb 1 12:05:31 2026 +0800|luci: node config page hide some button when special node
+e7910d0|lwb1978|Sun Feb 1 11:50:56 2026 +0800|luci: remove `allowInsecure` in xray 26.1.31
 </details>

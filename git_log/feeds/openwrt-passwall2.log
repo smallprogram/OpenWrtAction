@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f6473d7|handsomeji|Sat Jan 31 03:08:07 2026 +0800|luci: 26.1.31
-b105afb|handsomeji|Sat Jan 31 01:48:35 2026 +0800|luci: improve and optimize
+d8527a4|A-BO|Mon Feb 2 00:41:21 2026 +0800|luci: Hide Shunt tab using new CSS class
+d559dbc|lwb1978|Sun Feb 1 15:44:10 2026 +0800|luci: optimize the display width of text in custom templates
+f9f2bdd|lwb1978|Sun Feb 1 11:57:33 2026 +0800|luci: remove `allowInsecure` in xray 26.1.31
 </details>

@@ -1,9 +1,0 @@
-<details> <summary> <b>routing new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-5a276c7|Packet Please|Sun Jan 11 21:01:41 2026 +0100|bird3: update to 3.2.0
-edfe6a9|Packet Please|Sun Jan 11 21:00:20 2026 +0100|bird2: update to 2.18
-67c8e45|Toke Høiland-Jørgensen|Wed Nov 26 14:52:27 2025 +0100|bird3: add patch to move birdc's history file
-5f863cc|Toke Høiland-Jørgensen|Wed Nov 26 14:44:35 2025 +0100|bird2: add patch to move birdc's history file
-</details>
