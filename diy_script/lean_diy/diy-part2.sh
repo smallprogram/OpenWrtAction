@@ -46,4 +46,59 @@ fi
 mkdir -p dl
 cp -r $PATCHES_SRC_DIR/library/* ./dl/
 
+# --- Modify SSH Configuration (Dropbear -> 2222, OpenSSH -> 22) ---
+
+# 1. 确保 files 目录存在 (在 OpenWrt 源码根目录下)
+mkdir -p files/etc/uci-defaults
+
+# 2. 生成首次启动脚本
+cat << 'EOF' > files/etc/uci-defaults/99-custom-ssh-config
+#!/bin/sh
+
+# --- 1. 停止服务 ---
+# 先停掉 Dropbear，确保它彻底释放 22 端口
+# (在首次启动脚本中执行这步是安全的，不会导致用户掉线，因为此时还没人登录)
+/etc/init.d/dropbear stop
+/etc/init.d/sshd stop 2>/dev/null  # 加上这句以防万一 sshd 已经尝试自启
+
+# --- 2. 配置 Dropbear (UCI) ---
+# 将 Dropbear 端口移至 2222
+uci set dropbear.@dropbear[0].Port='2222'
+uci commit dropbear
+
+# --- 3. 配置 OpenSSH (sshd_config) ---
+SSHD_CONFIG="/etc/ssh/sshd_config"
+if [ -f "$SSHD_CONFIG" ]; then
+    # 允许 Root 登录
+    sed -i 's/^#*PermitRootLogin.*/PermitRootLogin yes/' "$SSHD_CONFIG"
+    # 显式指定端口 22
+    sed -i 's/^#*Port.*/Port 22/' "$SSHD_CONFIG"
+fi
+
+# --- 4. 同步密钥 (可选) ---
+# mkdir -p /root/.ssh
+# if [ ! -L /root/.ssh/authorized_keys ]; then
+#     [ -f /root/.ssh/authorized_keys ] && mv /root/.ssh/authorized_keys /root/.ssh/authorized_keys.bak
+#     ln -s /etc/dropbear/authorized_keys /root/.ssh/authorized_keys
+# fi
+
+# --- 5. 按顺序启动服务 ---
+
+# 第一步：启动 Dropbear
+# 此时配置已生效，它会乖乖去占 2222，绝对不会碰 22
+/etc/init.d/dropbear start
+
+# 第二步：启动 OpenSSH
+# 此时 22 端口绝对是空闲的，OpenSSH 可以顺利接管
+/etc/init.d/sshd enable
+/etc/init.d/sshd start
+
+exit 0
+EOF
+
+# 3. 赋予脚本执行权限
+chmod +x files/etc/uci-defaults/99-custom-ssh-config
+
+# --- End Modify SSH Configuration ---
+
 echo "DIY2 is complate!"
