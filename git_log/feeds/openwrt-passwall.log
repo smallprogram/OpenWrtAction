@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-21d80ce|A-BO|Mon Feb 2 00:26:19 2026 +0800|luci: adopting PSW2 shunt node configuration method
-d58c9a4|lwb1978|Sun Feb 1 15:35:44 2026 +0800|luci: optimize the display width of text in custom templates
-e33d57c|lwb1978|Sun Feb 1 12:05:31 2026 +0800|luci: node config page hide some button when special node
-e7910d0|lwb1978|Sun Feb 1 11:50:56 2026 +0800|luci: remove `allowInsecure` in xray 26.1.31
+41ff345|A-BO|Mon Feb 2 12:21:57 2026 +0800|luci: allow custom `geoview` paths
 </details>

@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ddcb36aaf|Daniel Golle|Sat Oct 4 04:23:29 2025 +0100|mediatek: add BananaPi BPi-R4 Lite support
+bdcb4905a|Daniel Golle|Fri Jan 30 14:31:36 2026 +0000|kernel: mtk_eth_soc: patch fix memory leak
 </details>

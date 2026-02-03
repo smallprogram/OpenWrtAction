@@ -1,0 +1,9 @@
+<details> <summary> <b>luci-theme-argon new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5d9b6ea|老竭力|Mon Feb 2 18:15:08 2026 +0800|Merge pull request #651 from feckert/pr/20263001-luci-theme-argon
+9b57c12|老竭力|Mon Feb 2 18:14:48 2026 +0800|Merge pull request #650 from sydnkj/master
+9209a1e|Florian Eckert|Fri Nov 14 14:59:52 2025 +0100|luci-static/menu-argon: add missing ModeMenu handling
+461d675|WenisOK|Fri Jan 30 21:25:12 2026 +0800|fix: smartdns: fix padding loss in layout style
+</details>
