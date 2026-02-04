@@ -1,0 +1,15 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+99d687e2a|Roc Lai|Sun Jan 4 19:33:01 2026 +0800|frp: bump to 0.66.0
+9a499ad1e|Daniel F. Dickinson|Sun Jan 25 22:56:08 2026 -0500|zabbix: drop unwanted file and wrong BUILD_VARIANT
+189f5948a|Daniel F. Dickinson|Wed Jan 21 05:52:13 2026 -0500|zabbix: fix agentd default user and minor issues
+8badd700a|Daniel F. Dickinson|Fri Jan 16 01:55:41 2026 -0500|zabbix: avoid unnecessary configure/compile
+33bb9b482|Daniel F. Dickinson|Fri Jan 16 01:47:28 2026 -0500|zabbix: deduplicate zabbix-agentd Makefile parts
+bb9c6aadc|Daniel F. Dickinson|Thu Jan 15 07:41:05 2026 -0500|zabbix: use separate users for agent and server
+85365c1e3|Daniel F. Dickinson|Thu Jan 1 08:42:13 2026 -0500|zabbix: bump to 7.0.22 LTS
+eadd8ab92|Daniel F. Dickinson|Tue Dec 9 00:21:18 2025 -0500|zabbix: add initscript for server
+3e671da78|Daniel F. Dickinson|Thu Dec 25 15:04:47 2025 -0500|zabbix: fix agentd PidFile creation
+e8610b2fa|Florian Eckert|Thu Dec 18 14:12:49 2025 +0100|zabbix: zabbix-server-frontend: update dependency
+</details>

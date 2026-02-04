@@ -1,0 +1,16 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5a27324104|Paul Donald|Tue Feb 3 20:30:37 2026 +0100|luci-base: load luci preferences early
+a3ae785d33|Carlo Szelinsky|Sun Jan 25 12:40:49 2026 +0100|luci-base: poe and PSE details & configuration
+cba8b2e524|Paul Donald|Tue Feb 3 06:59:25 2026 +0100|luci-proto-wireguard: fix i18n compile error
+bcb1ca4a9e|Paul Donald|Tue Feb 3 06:48:37 2026 +0100|luci-mod-system: refresh repokeys
+a393db3ac8|Paul Donald|Mon Feb 2 20:51:30 2026 +0100|luci-mod-network: enable row filtering for interfaces overview
+94e9bd9ad5|Paul Donald|Mon Feb 2 22:40:20 2026 +0100|luci-app-firewall: enable row filtering for firewall rules
+be36775e60|Paul Donald|Mon Feb 2 22:22:01 2026 +0100|luci-mod-system: expose table filters via flag
+e98c79c9b9|Paul Donald|Mon Feb 2 22:49:04 2026 +0100|luci-base: enable table filtering via .filterrow
+7b0d6ebf13|Paul Donald|Tue Feb 3 06:42:15 2026 +0100|luci-base: refresh table generation
+451549a018|Paul Donald|Mon Feb 2 18:40:26 2026 +0100|luci-base: actions title for actions buttons group
+bf530b3b19|Paul Donald|Mon Feb 2 17:11:24 2026 +0100|luci-base: restore titles class
+</details>

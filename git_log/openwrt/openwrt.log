@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a62b5fe71c|Paweł Owoc|Fri Jan 16 11:10:35 2026 +0100|mac80211: ath11k: fix for unsupported 11ax EDCA
+9bf33c02d5|John Audia|Fri Jan 30 15:37:22 2026 -0500|kernel: bump 6.12 to 6.12.68
+db44ad28b6|Hirokazu MORIKAWA|Fri Jan 30 10:14:53 2026 +0900|kernel: revert ip6_tunnel use skb_vlan_inet_prepare() in __ip6_tnl_rcv()
+8dbd00d4cd|John Audia|Fri Jan 23 16:22:18 2026 -0500|kernel: bump 6.12 to 6.12.67
+</details>

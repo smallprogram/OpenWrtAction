@@ -1,0 +1,8 @@
+<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+938ce03|Eamon Xiong|Tue Feb 3 22:43:22 2026 +0800|chore: update copyright year
+2528a2d|github-actions[bot]|Tue Feb 3 13:45:39 2026 +0000|build: update frontend assets
+3baa7a0|Eamon Xiong|Tue Feb 3 21:35:02 2026 +0800|feat: display brand on login page
+</details>

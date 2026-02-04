@@ -1,6 +1,0 @@
-<details> <summary> <b>lede new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-bdcb4905a|Daniel Golle|Fri Jan 30 14:31:36 2026 +0000|kernel: mtk_eth_soc: patch fix memory leak
-</details>

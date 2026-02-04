@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2e31806|zxl hhyccc|Tue Feb 3 00:25:11 2026 +0800|Merge pull request #1885 from zxlhhyccc/tuic
-f499809|zxlhhyccc|Mon Feb 2 23:05:29 2026 +0800|luci-app-ssr-plus: remove allowInsecure in xray 26.1.31 or later.
-bd3f0b1|zxl hhyccc|Mon Feb 2 20:53:49 2026 +0800|xray-core: update to 26.2.2
+862bc91|zxl hhyccc|Wed Feb 4 00:24:01 2026 +0800|Merge pull request #1886 from zxlhhyccc/tuic
+8ea2450|zxlhhyccc|Tue Feb 3 22:36:46 2026 +0800|luci-app-ssr-plus: adjust and optimize.
 </details>

@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-41ff345|A-BO|Mon Feb 2 12:21:57 2026 +0800|luci: allow custom `geoview` paths
+53f62f7|A-BO|Tue Feb 3 16:23:34 2026 +0800|luci: optimize
+06de2f6|A-BO|Tue Feb 3 11:33:33 2026 +0800|luci: adapt to xray `verifiyPeerCertByName`
+e959b75|A-BO|Tue Feb 3 09:12:35 2026 +0800|luci: adjust and optimize
+108a1fe|A-BO|Tue Feb 3 08:45:41 2026 +0800|luci: optimize xray `PinnedPeerCertSha256` configuration and add `pcs` subscribe
 </details>
