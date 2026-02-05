@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-52e1b5a|stefanlei|Tue Feb 3 00:07:20 2026 +0800|Bump version to 0.12.4 and update hashes
+30b7558|stefanlei|Wed Feb 4 23:45:56 2026 +0800|Add --tc-priority parameter support
 </details>

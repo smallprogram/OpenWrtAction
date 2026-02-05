@@ -1,0 +1,9 @@
+<details> <summary> <b>lede new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+517fd68d6|coolsnowwolf|Wed Feb 4 13:58:58 2026 +0800|Version Update to R26.02.02
+0fe96e43a|coolsnowwolf|Wed Feb 4 13:57:01 2026 +0800|kernel: bump all to latest HEAD
+b304cee41|coolsnowwolf|Wed Feb 4 13:21:10 2026 +0800|arm64: dts: rockchip: Move dsi address+size-cells from SoC to rk3399 boards The #address-cells and #size-cells properties are not useful on the DSI controller node; they are only useful/required on ports and panel(s). So remove them from the controller node and add them where actually needed on the various rk3399 based boards.
+2c3b987a6|Álvaro Fernández Rojas|Tue Dec 30 14:45:15 2025 +0100|kernel: r8168: fix CFLAGS with linux 6.15+
+</details>

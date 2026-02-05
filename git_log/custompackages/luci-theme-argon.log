@@ -1,7 +1,0 @@
-<details> <summary> <b>luci-theme-argon new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-7aba78c|老竭力|Tue Feb 3 18:10:28 2026 +0800|Merge pull request #652 from sfwwslm/master
-f812ea5|sfwwslm|Tue Feb 3 10:34:02 2026 +0800|fix(nftables): 修复`检测到旧版规则` `alert-message` 弹窗点击关闭按钮无效的问题
-</details>

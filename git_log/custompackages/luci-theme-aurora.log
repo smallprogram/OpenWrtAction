@@ -2,7 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-938ce03|Eamon Xiong|Tue Feb 3 22:43:22 2026 +0800|chore: update copyright year
-2528a2d|github-actions[bot]|Tue Feb 3 13:45:39 2026 +0000|build: update frontend assets
-3baa7a0|Eamon Xiong|Tue Feb 3 21:35:02 2026 +0800|feat: display brand on login page
+5b527c4|github-actions[bot]|Wed Feb 4 21:22:00 2026 +0000|build: update frontend assets
+d32d7fd|Eamon Xiong|Thu Feb 5 05:21:13 2026 +0800|ci: add manual trigger for frontend build pipeline
+6502478|Eamon Xiong|Wed Feb 4 17:54:26 2026 +0800|fix: adjust error message spacing
+cceae71|github-actions[bot]|Wed Feb 4 08:45:57 2026 +0000|build: update frontend assets
+3389465|Eamon Xiong|Wed Feb 4 16:45:35 2026 +0800|feat: enhance login page styling and layout
 </details>

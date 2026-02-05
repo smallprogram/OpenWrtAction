@@ -2,8 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-53f62f7|A-BO|Tue Feb 3 16:23:34 2026 +0800|luci: optimize
-06de2f6|A-BO|Tue Feb 3 11:33:33 2026 +0800|luci: adapt to xray `verifiyPeerCertByName`
-e959b75|A-BO|Tue Feb 3 09:12:35 2026 +0800|luci: adjust and optimize
-108a1fe|A-BO|Tue Feb 3 08:45:41 2026 +0800|luci: optimize xray `PinnedPeerCertSha256` configuration and add `pcs` subscribe
+dce5bae|A-BO|Wed Feb 4 19:39:07 2026 +0800|luci: replace the xray hysteria2 obfuscation from `udpmasks` to `finalmask.udp`
+744a4a6|A-BO|Wed Feb 4 13:56:39 2026 +0800|luci: allow the use of xray `allowInsecure` before 2026.6.1
+7c1066b|A-BO|Wed Feb 4 11:31:31 2026 +0800|luci: improve and optimize
 </details>
