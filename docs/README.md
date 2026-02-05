@@ -94,7 +94,7 @@
 
 Selected plug-in configuration, covering common functions such as network acceleration, theme beautification, system management, etc.
 
-![](https://img.shields.io/badge/Visual_Studio_Code_SSH-Suppert-green)
+![](https://img.shields.io/badge/Visual_Studio_Code_SSH-Support-green)
 
 
 
