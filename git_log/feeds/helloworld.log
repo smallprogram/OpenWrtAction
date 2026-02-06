@@ -1,0 +1,8 @@
+<details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+cb1b483|zxl hhyccc|Thu Feb 5 21:12:40 2026 +0800|redsocks2: Fix IPv6 bind() error in bound_udp_get()
+dcdf4c6|zxl hhyccc|Thu Feb 5 20:58:54 2026 +0800|v2ray-plugin: update to 5.44.1
+bcd4849|zxl hhyccc|Thu Feb 5 20:56:57 2026 +0800|xray-core: update to 26.2.4
+</details>

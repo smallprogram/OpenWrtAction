@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-15e7a8c|Joseph Mory|Wed Feb 4 10:31:07 2026 +0800|chore: bump version to 1.25.1
-b5e0a57|Joseph Mory|Wed Feb 4 10:30:22 2026 +0800|fix: fake-ip6 not work on router
-1d33286|Joseph Mory|Fri Jan 30 11:59:11 2026 +0800|chore: set default values for `rlimit_nofile`
+9db25a5|Joseph Mory|Wed Feb 4 11:04:42 2026 +0800|ci: drop support for openwrt 23.05
 </details>

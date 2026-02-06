@@ -2,8 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-341dc20|handsomeji|Thu Feb 5 02:13:24 2026 +0800|luci: fixup
-f83c99c|handsomeji|Thu Feb 5 01:06:01 2026 +0800|luci: optimize
-d823997|A-BO|Wed Feb 4 19:40:55 2026 +0800|luci: replace the xray hysteria2 obfuscation from `udpmasks` to `finalmask.udp`
-ad0aec1|A-BO|Wed Feb 4 14:00:34 2026 +0800|luci: allow the use of xray `allowInsecure` before 2026.6.1
+bc61220|handsomeji|Fri Feb 6 01:29:02 2026 +0800|luci: 26.2.5
+5fdac03|handsomeji|Fri Feb 6 01:05:04 2026 +0800|luci: node chain proxy can be cross core
+695904c|A-BO|Thu Feb 5 22:51:18 2026 +0800|luci: optimize the css for the drag handle
+1dbb49e|A-BO|Thu Feb 5 21:55:40 2026 +0800|luci: migrate xray kcp `header/security` to `finalmask/udp`
+3d67e95|handsomeji|Thu Feb 5 23:41:06 2026 +0800|ci: update
 </details>

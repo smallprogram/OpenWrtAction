@@ -1,8 +1,0 @@
-<details> <summary> <b>luci-app-kucat-config new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-959e718|Pdboy Sir|Wed Feb 4 15:17:07 2026 +0800|up luci-app-kucat-config v2.1.7 fix acl and set
-60e5166|Pdboy Sir|Wed Feb 4 15:16:43 2026 +0800|Delete root directory
-28768c1|Pdboy Sir|Wed Feb 4 15:16:27 2026 +0800|up luci-app-kucat-config v2.1.7 fix acl and set
-</details>

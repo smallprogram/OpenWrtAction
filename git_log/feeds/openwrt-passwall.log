@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dce5bae|A-BO|Wed Feb 4 19:39:07 2026 +0800|luci: replace the xray hysteria2 obfuscation from `udpmasks` to `finalmask.udp`
-744a4a6|A-BO|Wed Feb 4 13:56:39 2026 +0800|luci: allow the use of xray `allowInsecure` before 2026.6.1
-7c1066b|A-BO|Wed Feb 4 11:31:31 2026 +0800|luci: improve and optimize
+65cd018|A-BO|Thu Feb 5 22:51:18 2026 +0800|luci: optimize the css for the drag handle
+908a94e|A-BO|Thu Feb 5 21:55:40 2026 +0800|luci: migrate xray kcp `header/security` to `finalmask/udp`
+ca2dbeb|A-BO|Thu Feb 5 13:05:45 2026 +0800|luci: optimize
+ea70bd6|A-BO|Thu Feb 5 09:12:42 2026 +0800|luci: fixup
 </details>

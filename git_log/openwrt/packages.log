@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-db598729d|Sandro Jäckel|Fri Jan 30 18:03:17 2026 +0100|tailscale: update to 1.94.1
+60594bc74|Stan Grishin|Fri Jan 30 20:22:03 2026 +0000|pbr: update to 1.2.1-r87
+0fdd6072c|Stan Grishin|Tue Feb 3 01:30:12 2026 +0000|jq: add host build
+760719346|Dirk Brenken|Thu Feb 5 16:13:37 2026 +0100|adblock: update 4.5.0-5
+979f35a32|Stan Grishin|Wed Feb 4 23:25:40 2026 +0000|adblock-fast: update to 1.2.1-r7
 </details>
