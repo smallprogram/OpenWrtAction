@@ -2,8 +2,19 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-60594bc74|Stan Grishin|Fri Jan 30 20:22:03 2026 +0000|pbr: update to 1.2.1-r87
-0fdd6072c|Stan Grishin|Tue Feb 3 01:30:12 2026 +0000|jq: add host build
-760719346|Dirk Brenken|Thu Feb 5 16:13:37 2026 +0100|adblock: update 4.5.0-5
-979f35a32|Stan Grishin|Wed Feb 4 23:25:40 2026 +0000|adblock-fast: update to 1.2.1-r7
+66991a3d9|George Sapkin|Thu Feb 5 07:47:44 2026 +0200|syncthing: bump to 2.0.14
+d150d09f3|George Sapkin|Thu Feb 5 06:21:10 2026 +0200|yt-dlp: bump to 2026.02.04
+8505689cc|George Sapkin|Sun Feb 1 02:35:47 2026 +0200|yt-dlp: bump to 2026.01.31
+041557a99|George Sapkin|Sat Jan 31 22:58:46 2026 +0200|yt-dlp: bump to 2026.01.29
+0131eaa8a|George Sapkin|Thu Feb 5 06:38:12 2026 +0200|golang: bump 1.25 to 1.25.7
+6eb055fe5|George Sapkin|Fri Jan 30 05:40:16 2026 +0200|golang: add support for release candidates
+cdcdb31c0|George Sapkin|Tue Feb 3 13:42:02 2026 +0200|golang: add missing 386 and arm64 suffixes
+84d5390c5|George Sapkin|Fri Jan 30 04:52:59 2026 +0200|golang: use upstream OS/arch format
+93c020850|George Sapkin|Mon Feb 2 03:11:01 2026 +0200|golang: add option to skip building bootstrap
+8172a03cb|George Sapkin|Thu Jan 29 02:17:26 2026 +0200|golang: split src into separate packages
+a6a29cacc|George Sapkin|Sat Jan 31 02:44:52 2026 +0200|golang: install into lib instead of share
+7fdf8a401|George Sapkin|Fri Jan 30 22:58:49 2026 +0200|golang: fix missing dependency check
+30f1da5c9|George Sapkin|Fri Jan 30 08:04:42 2026 +0200|golang: fix generating zbootstrap
+5b7e7da92|George Sapkin|Fri Jan 30 07:36:02 2026 +0200|golang: don't set GO_LDSO
+679eb8229|George Sapkin|Thu Jan 29 02:09:06 2026 +0200|golang: avoid expanding Makefile variables
 </details>

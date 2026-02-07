@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ec14734|github-actions[bot]|Thu Feb 5 23:33:38 2026 +0800|sing-box: update to 1.12.20 (#587)
-d48a8fd|github-actions[bot]|Thu Feb 5 23:33:24 2026 +0800|v2ray-geoip: update to 202602050029 (#588)
-dd395fd|github-actions[bot]|Thu Feb 5 23:33:06 2026 +0800|v2ray-geosite: update to 202602042220 (#586)
+15177ab|github-actions[bot]|Fri Feb 6 18:14:40 2026 +0800|xray-core: update to 26.2.6 (#590)
+651837d|github-actions[bot]|Fri Feb 6 18:14:27 2026 +0800|v2ray-geosite: update to 202602052221 (#589)
 </details>

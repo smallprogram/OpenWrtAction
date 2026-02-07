@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-2151b98144|Matt Merhar|Wed Feb 4 23:45:13 2026 -0500|apk: backport upstream fix for invalid fetch timestamps
-a3821c7798|Daniel Golle|Fri Jan 30 14:31:36 2026 +0000|kernel: mtk_eth_soc: fix memory leak in downstream patch
-</details>

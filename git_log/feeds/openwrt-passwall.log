@@ -2,8 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-65cd018|A-BO|Thu Feb 5 22:51:18 2026 +0800|luci: optimize the css for the drag handle
-908a94e|A-BO|Thu Feb 5 21:55:40 2026 +0800|luci: migrate xray kcp `header/security` to `finalmask/udp`
-ca2dbeb|A-BO|Thu Feb 5 13:05:45 2026 +0800|luci: optimize
-ea70bd6|A-BO|Thu Feb 5 09:12:42 2026 +0800|luci: fixup
+ea0b9c4|A-BO|Fri Feb 6 15:55:41 2026 +0800|luci: 26.2.6
+311be7c|A-BO|Fri Feb 6 15:37:22 2026 +0800|luci: optimize the backgroundColor in custom templates
+68b2ee4|A-BO|Fri Feb 6 13:56:19 2026 +0800|luci: when subscribing, node chain proxy can be cross core
+0febe59|A-BO|Fri Feb 6 13:15:45 2026 +0800|luci: optimize the panel backgroundColor in custom templates
+ded989d|A-BO|Fri Feb 6 10:33:21 2026 +0800|luci: node chain proxy can be cross core
+c4c452c|A-BO|Fri Feb 6 09:58:49 2026 +0800|luci: optimize
 </details>

@@ -2,12 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c580d7c21d|Tianling Shen|Thu Feb 5 18:24:34 2026 +0800|Merge Official Source
-a3821c7798|Daniel Golle|Fri Jan 30 14:31:36 2026 +0000|kernel: mtk_eth_soc: fix memory leak in downstream patch
-06b5e42277|Aryaman Srivastava|Thu Jan 15 23:13:47 2026 +0530|ramips: add support for D-Link DIR-1360 A1
-0f9056c2bd|Anton Danilov|Thu Jan 29 14:43:17 2026 +0300|mediatek: add Motorcomm PHY support to Cudy AP3000 v1
-a62b5fe71c|Paweł Owoc|Fri Jan 16 11:10:35 2026 +0100|mac80211: ath11k: fix for unsupported 11ax EDCA
-9bf33c02d5|John Audia|Fri Jan 30 15:37:22 2026 -0500|kernel: bump 6.12 to 6.12.68
-db44ad28b6|Hirokazu MORIKAWA|Fri Jan 30 10:14:53 2026 +0900|kernel: revert ip6_tunnel use skb_vlan_inet_prepare() in __ip6_tnl_rcv()
-8dbd00d4cd|John Audia|Fri Jan 23 16:22:18 2026 -0500|kernel: bump 6.12 to 6.12.67
+a9ef25e785|Tianling Shen|Fri Feb 6 09:42:15 2026 +0800|uboot-rockchip: add SD card boot workaround for RK3576
 </details>
