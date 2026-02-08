@@ -2,10 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ea0b9c4|A-BO|Fri Feb 6 15:55:41 2026 +0800|luci: 26.2.6
-311be7c|A-BO|Fri Feb 6 15:37:22 2026 +0800|luci: optimize the backgroundColor in custom templates
-68b2ee4|A-BO|Fri Feb 6 13:56:19 2026 +0800|luci: when subscribing, node chain proxy can be cross core
-0febe59|A-BO|Fri Feb 6 13:15:45 2026 +0800|luci: optimize the panel backgroundColor in custom templates
-ded989d|A-BO|Fri Feb 6 10:33:21 2026 +0800|luci: node chain proxy can be cross core
-c4c452c|A-BO|Fri Feb 6 09:58:49 2026 +0800|luci: optimize
+509458a|lwb1978|Sun Feb 8 01:22:06 2026 +0800|luci: optimize
+5d06d21|lwb1978|Sun Feb 8 00:56:46 2026 +0800|luci: optimize
 </details>

@@ -1,7 +1,0 @@
-<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-9f2612e|github-actions[bot]|Fri Feb 6 15:19:37 2026 +0000|build: update frontend assets
-a3a0bb0|eamonxg|Fri Feb 6 23:19:21 2026 +0800|refactor: extract color variables and redesign design tokens
-</details>

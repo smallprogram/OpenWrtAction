@@ -1,6 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-967cd0e5df|Kuan-Yi Li|Wed Feb 4 19:36:34 2026 +0800|luci-app-tailscale-community: fix default state file path
-</details>

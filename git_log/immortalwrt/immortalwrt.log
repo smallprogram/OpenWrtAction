@@ -1,6 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-a9ef25e785|Tianling Shen|Fri Feb 6 09:42:15 2026 +0800|uboot-rockchip: add SD card boot workaround for RK3576
-</details>

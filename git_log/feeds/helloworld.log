@@ -2,14 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7bc544c|zxl hhyccc|Sat Feb 7 00:30:52 2026 +0800|Merge pull request #1891 from zxlhhyccc/tuic
-727ddca|zxlhhyccc|Fri Feb 6 23:13:22 2026 +0800|luci-app-ssr-plus: Fix Xray hysteria2 alias cannot be import issue.
-d021a30|zxl hhyccc|Fri Feb 6 22:50:54 2026 +0800|Merge pull request #1890 from zxlhhyccc/tuic
-1d2e795|zxlhhyccc|Fri Feb 6 22:48:59 2026 +0800|luci-app-ssr-plus: Fix the issue of reading restrictions for the IP list file of nft.
-ea46098|zxl hhyccc|Fri Feb 6 22:44:57 2026 +0800|Merge pull request #1889 from zxlhhyccc/tuic
-e59321c|zxlhhyccc|Fri Feb 6 22:42:59 2026 +0800|luci-app-ssr-plus: replace the xray hysteria2 obfuscation from udpmasks to finalmask.udp
-522a3fd|zxlhhyccc|Fri Feb 6 22:41:19 2026 +0800|luci-app-ssr-plus: Fix the issue where fw4 does not support reload.
-1b8e38a|zxl hhyccc|Fri Feb 6 22:05:36 2026 +0800|xray-core: update to 26.2.6
-21b15c9|zxl hhyccc|Fri Feb 6 22:04:27 2026 +0800|Merge pull request #1887 from zxlhhyccc/tuic
-3d5433b|zxlhhyccc|Fri Feb 6 20:42:05 2026 +0800|luci-app-ssr-plus: Revert "luci-app-ssr-plus: Do not generate gfw list when mode is not gfw."
+a1da22e|zxl hhyccc|Sun Feb 8 01:14:34 2026 +0800|Merge pull request #1893 from zxlhhyccc/tuic
+3e79998|zxlhhyccc|Sun Feb 8 01:05:22 2026 +0800|luci-app-ssr-plus: Fix import configuration and subscribe.
+2b6927d|zxl hhyccc|Sun Feb 8 01:04:35 2026 +0800|Merge pull request #1892 from zxlhhyccc/tuic
+9574e04|zxlhhyccc|Sun Feb 8 00:18:01 2026 +0800|luci-app-ssr-plus: migrate xray kcp header/security to finalmask/udp.
 </details>

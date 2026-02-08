@@ -1,0 +1,20 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5f1b0fbf9b|Mikhail Zhilkin|Fri Jan 30 20:23:09 2026 +0300|mediatek: routerich be7200: fix usb issue
+cb209ad0d4|Gustavo Henrique Nihei|Fri Jan 23 18:04:59 2026 -0300|ext-toolchain: fix wrapper for gcc-ar, gcc-nm, gcc-ranlib
+45788a48c7|Derek Denk|Tue Dec 30 17:34:47 2025 -0700|mediatek: filogic: add support for Cudy AP3000 Wall v1
+4da230548f|Aleksander Jan Bajkowski|Mon Dec 1 23:11:17 2025 +0100|airoha: an7581: add switch ports interrups
+36caca6ce8|Ziyang Huang|Thu Jan 8 22:38:46 2026 +0800|airoha: an7581: enable USB support
+1f1d0ca74f|Aleksander Jan Bajkowski|Sat Jan 10 18:05:38 2026 +0100|airoha: show link rate and duplex
+3e87d3b9cc|Ziyang Huang|Sun Oct 19 17:45:48 2025 +0800|airoha: an7581: correct led nodename
+e567287172|Ziyang Huang|Sun Oct 19 17:51:28 2025 +0800|airoha: an7581: correct phy nodename
+045a938c05|Ziyang Huang|Sun Oct 19 17:41:43 2025 +0800|airoha: an7581: move the switch led label from soc-level to board-level
+768f427773|Ziyang Huang|Sun Oct 19 17:37:39 2025 +0800|airoha: an7581: move the switch port label from soc-level to board-level
+75332d89aa|Ziyang Huang|Sun Oct 19 17:45:24 2025 +0800|airoha: an7581: disable all switch port and phy by default
+7000e421f1|Ziyang Huang|Sun Oct 19 17:34:53 2025 +0800|airoha: an7581: correct the pinctrl-name of phy leds
+90d68d3f02|Aleksander Jan Bajkowski|Sat Nov 29 18:58:17 2025 +0100|airoha: an7583: fix scuclk unit-address
+0dc1b12154|Aleksander Jan Bajkowski|Sat Nov 29 18:56:50 2025 +0100|airoha: en7583: dts: fix typo disable
+7c201ca77b|Aleksander Jan Bajkowski|Tue Dec 16 22:02:34 2025 +0100|airoha: replace patches with upstream version
+</details>
