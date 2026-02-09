@@ -1,0 +1,7 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+32d4e48dee|Hannu Nyman|Sun Feb 8 21:03:41 2026 +0200|treewide: backport translations
+a34a065126|Dirk Brenken|Sun Feb 8 10:02:36 2026 +0100|luci-app-adblock: sync with adblock 4.5.1-1
+</details>

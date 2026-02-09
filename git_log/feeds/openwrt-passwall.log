@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-509458a|lwb1978|Sun Feb 8 01:22:06 2026 +0800|luci: optimize
-5d06d21|lwb1978|Sun Feb 8 00:56:46 2026 +0800|luci: optimize
+d54c300|A-BO|Mon Feb 9 00:37:36 2026 +0800|luci: balancing/urltest supports batch addition of nodes
+a07127d|A-BO|Sun Feb 8 18:36:47 2026 +0800|luci: fixup
 </details>

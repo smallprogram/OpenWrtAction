@@ -2,8 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a1da22e|zxl hhyccc|Sun Feb 8 01:14:34 2026 +0800|Merge pull request #1893 from zxlhhyccc/tuic
-3e79998|zxlhhyccc|Sun Feb 8 01:05:22 2026 +0800|luci-app-ssr-plus: Fix import configuration and subscribe.
-2b6927d|zxl hhyccc|Sun Feb 8 01:04:35 2026 +0800|Merge pull request #1892 from zxlhhyccc/tuic
-9574e04|zxlhhyccc|Sun Feb 8 00:18:01 2026 +0800|luci-app-ssr-plus: migrate xray kcp header/security to finalmask/udp.
+ac28c85|zxl hhyccc|Mon Feb 9 00:33:10 2026 +0800|v2raya: Update to 2.2.7.5
+532162b|zxl hhyccc|Sun Feb 8 23:12:08 2026 +0800|Merge pull request #1897 from zxlhhyccc/tuic
+e5aebe9|zxlhhyccc|Sun Feb 8 23:09:50 2026 +0800|luci-app-ssr-plus: Fix Xray kcp proto import typo erro.
+a7fb93c|zxl hhyccc|Sun Feb 8 23:04:58 2026 +0800|Merge pull request #1896 from zxlhhyccc/tuic
+8358861|zxlhhyccc|Sun Feb 8 22:05:25 2026 +0800|luci-app-ssr-plus: Fix Xray kcp proto import and subscribe.
+cc80cdf|zxl hhyccc|Sun Feb 8 21:59:13 2026 +0800|Merge pull request #1895 from zxlhhyccc/tuic
+aa3fd5d|zxlhhyccc|Sun Feb 8 16:45:43 2026 +0800|luci-app-ssr-plus: Fix Xray xhttp proto import and subscribe.
+bb72567|zxl hhyccc|Sun Feb 8 12:36:18 2026 +0800|Merge pull request #1894 from zxlhhyccc/tuic
+23c289a|zxlhhyccc|Sun Feb 8 12:06:14 2026 +0800|luci-app-ssr-plus: Fix the issue with the ALPN value of the subscription.
 </details>

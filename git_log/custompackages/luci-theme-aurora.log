@@ -1,0 +1,9 @@
+<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+53eeabb|Eamon Xiong|Sun Feb 8 20:29:27 2026 +0800|chore(release): v0.11.0
+6fc378f|github-actions[bot]|Sun Feb 8 11:32:56 2026 +0000|build: update frontend assets
+a19f668|Eamon Xiong|Sun Feb 8 19:32:33 2026 +0800|fix(table): duplicate first column and missing rounded corners
+885a65d|Eamon Xiong|Sun Feb 8 10:12:55 2026 +0800|docs: update theme showcase structure
+</details>
