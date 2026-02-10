@@ -2,7 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-db616952b|Hannu Nyman|Sun Feb 8 20:54:54 2026 +0200|nano: update to 8.7.1
-6654f5be5|Dirk Brenken|Sun Feb 8 12:55:25 2026 +0100|adblock: update 4.5.1-2
-7fea00372|Dirk Brenken|Sun Feb 8 10:25:55 2026 +0100|adblock: release 4.5.1
+800f05de2|Hauke Mehrtens|Fri Feb 6 00:06:57 2026 +0100|owut: activate by default in buildbot
+a36f07aba|Florian Eckert|Fri Feb 6 10:50:21 2026 +0100|ddns-scripts: Fix hetzner install target file name
+3e737a58c|Christopher Obbard|Tue Feb 3 12:24:08 2026 +0000|ddns-scripts: Fix Hetzner Cloud naming
+3ea52b732|Christopher Obbard|Sat Jan 31 02:47:44 2026 +0100|ddns-scripts: add Hetzner Cloud support
+633e2bab6|Lin Fan|Tue Jan 20 14:49:24 2026 +0800|ddns-scripts: add namesilo.com
+78b4729ba|Juan Antonio|Sun Dec 7 16:08:50 2025 +0100|ddns-scripts: fix luci XHR timeout when restarting ddns service
+cda706e4b|monokoo|Tue Jan 6 06:57:46 2026 +0000|ddns-scripts: add multiple DNS records support for aliyun ddns
+a6b845a72|Andrea Ferro|Mon Jan 12 15:10:01 2026 +0100|ddns-scripts: add apertodns.com-token to provider list
+557dfb8f3|Andrea Ferro|Mon Jan 12 09:22:29 2026 +0100|ddns-scripts: add apertodns.com to provider list
+dc9531a94|Andrea Ferro|Sat Jan 10 18:46:13 2026 +0100|ddns-scripts: add ApertoDNS DDNS provider
 </details>

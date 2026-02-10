@@ -2,5 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d70156b|Dany P|Sun Feb 8 20:39:29 2026 +0330|luci: i18n: add persian language
+365fb9b|handsomeji|Sun Feb 8 19:41:56 2026 +0800|luci: enhance shunt rules pre-proxy logic
+b5b1573|handsomeji|Tue Feb 10 00:38:26 2026 +0800|luci: node chain proxy improve and optimize
+50e0574|Danial Pahlavan|Sat Feb 7 19:05:27 2026 +0330|make readme more clean
+7f38e2a|A-BO|Mon Feb 9 21:43:13 2026 +0800|luci: optimize import/subscribe logic and support `udp/tfo` params
+beb6221|A-BO|Mon Feb 9 20:16:24 2026 +0800|luci: unified `tcp_fast_open` data format
+c9b0607|A-BO|Mon Feb 9 11:56:41 2026 +0800|luci: optimize xray kcp `finalmask/udp` logic
+0229c5b|A-BO|Mon Feb 9 00:37:36 2026 +0800|luci: balancing/urltest supports batch addition of nodes
 </details>

@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d54c300|A-BO|Mon Feb 9 00:37:36 2026 +0800|luci: balancing/urltest supports batch addition of nodes
-a07127d|A-BO|Sun Feb 8 18:36:47 2026 +0800|luci: fixup
+c9f2048|A-BO|Mon Feb 9 21:43:13 2026 +0800|luci: optimize import/subscribe logic and support `udp/tfo` params
+c626cc3|A-BO|Mon Feb 9 20:16:24 2026 +0800|luci: unified `tcp_fast_open` data format
+b70a30f|A-BO|Mon Feb 9 11:56:41 2026 +0800|luci: optimize xray kcp `finalmask/udp` logic
 </details>

@@ -2,22 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-238a371486|Tianling Shen|Sun Feb 8 17:45:33 2026 +0800|Merge Official Source
-f25be2e102|SakuraFallingMad|Mon Jan 26 11:23:57 2026 +0800|luci-app-passwall: bump to 26.2.6
-967cd0e5df|Kuan-Yi Li|Wed Feb 4 19:36:34 2026 +0800|luci-app-tailscale-community: fix default state file path
-3fbf5730c9|Paul Donald|Fri Feb 6 00:17:14 2026 +0100|luci-app-dockerman: enable ports display on containers
-cceb405f73|Paul Donald|Thu Feb 5 22:24:27 2026 +0100|luci-base: remove static password-input from UI element
-79e2a98fcd|Stan Grishin|Fri Jan 30 20:45:54 2026 +0000|luci-app-pbr: update to 1.2.1-r87
-841163fece|Paul Donald|Thu Feb 5 18:06:43 2026 +0100|luci-app-dockerman: jsmin workaround
-c19cab156a|Paul Donald|Thu Feb 5 17:06:59 2026 +0100|luci-app-strongswan-swanctl: fix option name
-eae876ff1b|Dirk Brenken|Thu Feb 5 16:16:17 2026 +0100|luci-app-adblock: sync with adblock 4.5.0-5
-ccdce82bd8|Paul Donald|Tue Feb 3 08:11:20 2026 +0100|luci-app-adblock: fix i18n compile warn
-0c7a64bef6|Paul Donald|Mon Jan 26 04:30:39 2026 +0100|luci-app-dockerman: i18n
-61ac48c5c4|Paul Donald|Mon Jan 26 04:29:25 2026 +0100|luci-app-dockerman: drop Lua
-eb6146ac77|Paul Donald|Thu Jan 22 04:25:49 2026 +0100|luci-app-dockerman: JS API
-320eb3a700|Paul Donald|Sun Jul 6 02:33:02 2025 +0200|luci-app-dockerman: convert to JS
-1b5a552a7a|Paul Donald|Tue Feb 3 22:39:42 2026 +0100|luci-base: load luci preferences early
-
-.....................
-
+63fffb8d15|Tianling Shen|Mon Feb 9 15:56:32 2026 +0800|luci-app-openclash: Update to 0.47.055
+e2a4b6b62f|Tianling Shen|Sun Feb 8 17:48:58 2026 +0800|luci-theme-argon: sync with upstream source
 </details>
