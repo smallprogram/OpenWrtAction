@@ -2,5 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-910eb0cc4e|Felix Fietkau|Sun Feb 8 18:46:07 2026 +0000|wifi-scripts: fix spurious teardown on config_change during setup
+1f1dd426b5|Christoph Krapp|Mon Jan 26 22:13:25 2026 +0100|ath79: add calibration variant for TP-Link TL-WA1201 v2
+667bf0b3c2|Christoph Krapp|Mon Jan 26 22:12:35 2026 +0100|ipq-wifi: Add entry for TP-Link TL-WA1201 v2
+efa6205e08|Robert Marko|Wed Jan 28 12:02:10 2026 +0100|ipq-wifi: update to Git HEAD (2026-01-28)
+1c69a82182|Robert Marko|Sun Jan 25 11:38:59 2026 +0100|ipq-wifi: update to Git HEAD (2026-01-24)
+3ebb157b2d|Mario Andrés Pérez|Thu Feb 5 01:19:08 2026 +0100|mediatek: filogic: gl-mt2500 fix compatibles PHY variants
+82fec218e1|Matt Merhar|Mon Feb 9 18:20:39 2026 -0500|apk: backport upstream fixes for unaligned access
 </details>

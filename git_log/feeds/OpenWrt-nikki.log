@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7ed50f1|Joseph Mory|Mon Feb 9 17:13:53 2026 +0800|chore: update mihomo to 1.19.20
+2dead80|Joseph Mory|Tue Feb 10 17:11:44 2026 +0800|feat: support `proxy-server-nameserver-policy` mixin option
 </details>

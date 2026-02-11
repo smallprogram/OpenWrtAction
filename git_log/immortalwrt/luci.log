@@ -1,7 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-63fffb8d15|Tianling Shen|Mon Feb 9 15:56:32 2026 +0800|luci-app-openclash: Update to 0.47.055
-e2a4b6b62f|Tianling Shen|Sun Feb 8 17:48:58 2026 +0800|luci-theme-argon: sync with upstream source
-</details>

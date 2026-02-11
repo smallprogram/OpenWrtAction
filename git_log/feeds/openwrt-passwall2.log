@@ -2,11 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-365fb9b|handsomeji|Sun Feb 8 19:41:56 2026 +0800|luci: enhance shunt rules pre-proxy logic
-b5b1573|handsomeji|Tue Feb 10 00:38:26 2026 +0800|luci: node chain proxy improve and optimize
-50e0574|Danial Pahlavan|Sat Feb 7 19:05:27 2026 +0330|make readme more clean
-7f38e2a|A-BO|Mon Feb 9 21:43:13 2026 +0800|luci: optimize import/subscribe logic and support `udp/tfo` params
-beb6221|A-BO|Mon Feb 9 20:16:24 2026 +0800|luci: unified `tcp_fast_open` data format
-c9b0607|A-BO|Mon Feb 9 11:56:41 2026 +0800|luci: optimize xray kcp `finalmask/udp` logic
-0229c5b|A-BO|Mon Feb 9 00:37:36 2026 +0800|luci: balancing/urltest supports batch addition of nodes
+6a33410|handsomeji|Wed Feb 11 02:49:18 2026 +0800|luci: optimize
+9988dad|ShanStone|Tue Feb 10 23:15:26 2026 +0800|luci: add missing include network.sh
+46f2825|ShanStone|Tue Feb 10 23:01:42 2026 +0800|luci: fix get_wan_ips funtions in firewall include scripts
+4c6e2fd|ShanStone|Tue Feb 10 22:27:52 2026 +0800|luci: remove nftset redundant filtering rules
+3769748|ShanStone|Tue Feb 10 21:31:58 2026 +0800|luci:  enhance the stability of the insert_nftset function
+414b6be|handsomeji|Tue Feb 10 23:32:16 2026 +0800|luci: shunt pre-proxy option hide when is special nodes
+07eb632|handsomeji|Tue Feb 10 23:29:36 2026 +0800|luci: Improved and fixed
 </details>

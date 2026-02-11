@@ -2,8 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d4c51d8|zxl hhyccc|Mon Feb 9 23:12:54 2026 +0800|Merge pull request #1899 from zxlhhyccc/tuic
-dfbdfb5|zxlhhyccc|Mon Feb 9 23:10:27 2026 +0800|luci-app-ssr-plus: Add import/subscribe support tfo params.
-144e0ee|zxl hhyccc|Mon Feb 9 23:04:42 2026 +0800|Merge pull request #1898 from zxlhhyccc/tuic
-b96a3fe|zxlhhyccc|Mon Feb 9 21:42:15 2026 +0800|luci-app-ssr-plus: optimize xray kcp finalmask/udp logic
+345f3c2|zxl hhyccc|Tue Feb 10 23:40:15 2026 +0800|Merge pull request #1901 from zxlhhyccc/tuic
+ca3d707|zxlhhyccc|Tue Feb 10 22:29:21 2026 +0800|luci-app-ssr-plus: update ping value displayed integer.
+c600d2b|zxl hhyccc|Tue Feb 10 21:49:58 2026 +0800|Merge pull request #1900 from zxlhhyccc/tuic
+6b8211c|zxlhhyccc|Tue Feb 10 21:35:20 2026 +0800|luci-app-ssr-plus: Do not use ipset and nftset rules in non-GFW mode.
 </details>
