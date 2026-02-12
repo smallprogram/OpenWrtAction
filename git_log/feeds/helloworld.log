@@ -1,9 +1,0 @@
-<details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-345f3c2|zxl hhyccc|Tue Feb 10 23:40:15 2026 +0800|Merge pull request #1901 from zxlhhyccc/tuic
-ca3d707|zxlhhyccc|Tue Feb 10 22:29:21 2026 +0800|luci-app-ssr-plus: update ping value displayed integer.
-c600d2b|zxl hhyccc|Tue Feb 10 21:49:58 2026 +0800|Merge pull request #1900 from zxlhhyccc/tuic
-6b8211c|zxlhhyccc|Tue Feb 10 21:35:20 2026 +0800|luci-app-ssr-plus: Do not use ipset and nftset rules in non-GFW mode.
-</details>

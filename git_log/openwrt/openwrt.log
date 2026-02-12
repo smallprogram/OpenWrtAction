@@ -2,10 +2,22 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1f1dd426b5|Christoph Krapp|Mon Jan 26 22:13:25 2026 +0100|ath79: add calibration variant for TP-Link TL-WA1201 v2
-667bf0b3c2|Christoph Krapp|Mon Jan 26 22:12:35 2026 +0100|ipq-wifi: Add entry for TP-Link TL-WA1201 v2
-efa6205e08|Robert Marko|Wed Jan 28 12:02:10 2026 +0100|ipq-wifi: update to Git HEAD (2026-01-28)
-1c69a82182|Robert Marko|Sun Jan 25 11:38:59 2026 +0100|ipq-wifi: update to Git HEAD (2026-01-24)
-3ebb157b2d|Mario Andrés Pérez|Thu Feb 5 01:19:08 2026 +0100|mediatek: filogic: gl-mt2500 fix compatibles PHY variants
-82fec218e1|Matt Merhar|Mon Feb 9 18:20:39 2026 -0500|apk: backport upstream fixes for unaligned access
+8d1601b837|Hauke Mehrtens|Thu Feb 12 00:52:30 2026 +0100|kernel: refresh patches
+8bafa45f35|Zhi-Jun You|Fri Feb 6 19:25:30 2026 +0800|mediatek: filogic: add 6G precal to Acer Vero W6m
+661ffcbf7d|Zhi-Jun You|Fri Feb 6 19:20:32 2026 +0800|mediatek: filogic: add 6G precal to Acer Predator W6
+a47290c869|Zhi-Jun You|Fri Feb 6 19:06:33 2026 +0800|mediatek: filogic: add precal to W6 common dtsi
+74bf3689ea|Qingfang Deng|Fri Feb 6 17:38:50 2026 +0800|kernel: backport pppoe improvements
+b82ef842c5|Linus Walleij|Wed Jan 28 01:22:52 2026 +0100|gemini: select the right GPIO input package
+f034005f95|Linus Walleij|Mon Jan 26 10:18:57 2026 +0100|gemini: set disk activity on orange LED
+b7cee916ed|Linus Walleij|Sun Feb 1 10:26:59 2026 +0100|gemini: sl93512r: override SL93512R partitions for firmware
+1ed4f59e13|Linus Walleij|Sun Feb 1 00:30:33 2026 +0100|gemini: sq201: override SQ201 partitions for firmware
+dd4423f298|Linus Walleij|Mon Jan 26 08:21:29 2026 +0100|gemini: override IB-4220-B partitions for firmware
+980c3ddac8|Linus Walleij|Tue Feb 3 18:20:44 2026 +0100|kernel: Add necessary CONFIG_MTD_SPLIT config option
+c9ab6ffada|Linus Walleij|Tue Jan 27 18:09:10 2026 +0100|kernel: mtdsplit: create executable prolog splitter
+40b5a83fdb|Linus Walleij|Thu Jan 29 23:40:50 2026 +0100|gemini: use tar stream to write firmware
+43547e9314|Linus Walleij|Sun Jan 25 21:01:47 2026 +0100|gemini: pad storlink reference firmware to 128kb
+26f776335a|Linus Walleij|Sun Jan 25 19:01:45 2026 +0100|gemini: Fix up sysupgrade platform.sh script
+
+.....................
+
 </details>

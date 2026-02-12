@@ -1,0 +1,6 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+8db38867a|Florian Eckert|Tue Feb 3 10:54:54 2026 +0100|ddns-scripts: remove postinst and prerm script call
+</details>
