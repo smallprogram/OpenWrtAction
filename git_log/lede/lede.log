@@ -1,8 +1,0 @@
-<details> <summary> <b>lede new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-891709bce|coolsnowwolf|Wed Feb 11 16:51:49 2026 +0800|target: add support for the HiSilicon Hi3798MV1xx
-4670b6fd7|coolsnowwolf|Wed Feb 11 15:52:58 2026 +0800|README.md: update Radxa information
-358e96dea|lonesafe|Wed Feb 11 14:34:42 2026 +0800|mediatek: filogic: add support for GL.iNet MT5000 (Brume3)
-</details>

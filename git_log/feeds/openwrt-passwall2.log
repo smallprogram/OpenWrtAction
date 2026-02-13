@@ -2,7 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-219dfd2|A-BO|Wed Feb 11 22:47:23 2026 +0800|luci: optimize balancing/urltest batch adding node related
-af2abb8|handsomeji|Thu Feb 12 02:15:03 2026 +0800|luci: optimize and fix
-3a55a11|handsomeji|Wed Feb 11 13:31:45 2026 +0800|luci: optimize and fix
+9fa347b|A-BO|Thu Feb 12 17:44:52 2026 +0800|luci: fixup
 </details>

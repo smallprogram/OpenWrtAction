@@ -2,22 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8d1601b837|Hauke Mehrtens|Thu Feb 12 00:52:30 2026 +0100|kernel: refresh patches
-8bafa45f35|Zhi-Jun You|Fri Feb 6 19:25:30 2026 +0800|mediatek: filogic: add 6G precal to Acer Vero W6m
-661ffcbf7d|Zhi-Jun You|Fri Feb 6 19:20:32 2026 +0800|mediatek: filogic: add 6G precal to Acer Predator W6
-a47290c869|Zhi-Jun You|Fri Feb 6 19:06:33 2026 +0800|mediatek: filogic: add precal to W6 common dtsi
-74bf3689ea|Qingfang Deng|Fri Feb 6 17:38:50 2026 +0800|kernel: backport pppoe improvements
-b82ef842c5|Linus Walleij|Wed Jan 28 01:22:52 2026 +0100|gemini: select the right GPIO input package
-f034005f95|Linus Walleij|Mon Jan 26 10:18:57 2026 +0100|gemini: set disk activity on orange LED
-b7cee916ed|Linus Walleij|Sun Feb 1 10:26:59 2026 +0100|gemini: sl93512r: override SL93512R partitions for firmware
-1ed4f59e13|Linus Walleij|Sun Feb 1 00:30:33 2026 +0100|gemini: sq201: override SQ201 partitions for firmware
-dd4423f298|Linus Walleij|Mon Jan 26 08:21:29 2026 +0100|gemini: override IB-4220-B partitions for firmware
-980c3ddac8|Linus Walleij|Tue Feb 3 18:20:44 2026 +0100|kernel: Add necessary CONFIG_MTD_SPLIT config option
-c9ab6ffada|Linus Walleij|Tue Jan 27 18:09:10 2026 +0100|kernel: mtdsplit: create executable prolog splitter
-40b5a83fdb|Linus Walleij|Thu Jan 29 23:40:50 2026 +0100|gemini: use tar stream to write firmware
-43547e9314|Linus Walleij|Sun Jan 25 21:01:47 2026 +0100|gemini: pad storlink reference firmware to 128kb
-26f776335a|Linus Walleij|Sun Jan 25 19:01:45 2026 +0100|gemini: Fix up sysupgrade platform.sh script
-
-.....................
-
+ca13153d10|Raylynn Knight|Sun Feb 8 04:23:08 2026 -0500|x86: base-files add support for Sophos 210r3 and 230r2
+72f5912448|Tomáš Macholda|Mon Nov 10 16:57:14 2025 +0100|mvebu: add depends for Turris MOX boards
+324e157b4b|Matt Merhar|Wed Feb 11 17:30:53 2026 -0500|apk: handle edge case when parsing .apk files
+ac7c25ee92|Robert Marko|Mon Feb 9 12:33:20 2026 +0100|mvebu: cortex-a53: respect DEVICE_packages for Methode devices
+b856372329|Robert Marko|Mon Feb 9 12:25:56 2026 +0100|image: support generating per device targz rootfs
 </details>

@@ -1,7 +1,0 @@
-<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-a76852b|Joseph Mory|Wed Feb 11 17:31:27 2026 +0800|chore: drop support for openwrt 23.05
-cf922d2|Y4er|Wed Feb 11 17:28:25 2026 +0800|docs: add kmod-dummy to dependencies in README (#764)
-</details>

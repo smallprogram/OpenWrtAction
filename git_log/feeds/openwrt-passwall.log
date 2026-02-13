@@ -2,10 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-90243b1|A-BO|Wed Feb 11 22:47:23 2026 +0800|luci: optimize balancing/urltest batch adding node related
-0169bc4|handsomeji|Wed Feb 11 13:31:45 2026 +0800|luci: optimize and fix
-146eb66|A-BO|Wed Feb 11 14:08:36 2026 +0800|luci: modify the field name of `protocol` in ssr
-7cb7658|A-BO|Wed Feb 11 14:03:59 2026 +0800|luci: fixup
-00f9f6b|A-BO|Wed Feb 11 10:51:11 2026 +0800|luci: optimize the `get_new_port` function
-7a49d76|handsomeji|Wed Feb 11 02:49:18 2026 +0800|luci: optimize
+d2a3616|A-BO|Thu Feb 12 17:33:01 2026 +0800|luci: fixup
+7d30969|handsomeji|Thu Feb 12 02:15:03 2026 +0800|luci: optimize and fix
+f9daf6f|A-BO|Thu Feb 12 08:12:17 2026 +0800|Revert "luci: modify the field name of `protocol` in ssr"
 </details>
