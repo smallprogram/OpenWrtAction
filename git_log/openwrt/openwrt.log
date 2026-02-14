@@ -2,9 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ca13153d10|Raylynn Knight|Sun Feb 8 04:23:08 2026 -0500|x86: base-files add support for Sophos 210r3 and 230r2
-72f5912448|Tomáš Macholda|Mon Nov 10 16:57:14 2025 +0100|mvebu: add depends for Turris MOX boards
-324e157b4b|Matt Merhar|Wed Feb 11 17:30:53 2026 -0500|apk: handle edge case when parsing .apk files
-ac7c25ee92|Robert Marko|Mon Feb 9 12:33:20 2026 +0100|mvebu: cortex-a53: respect DEVICE_packages for Methode devices
-b856372329|Robert Marko|Mon Feb 9 12:25:56 2026 +0100|image: support generating per device targz rootfs
+b8fe7b5c65|Fil Dunsky|Sun Dec 28 20:58:05 2025 +0300|mediatek: add support for netis NX32U
+317f893891|Fil Dunsky|Sun Feb 1 12:33:53 2026 +0300|mediatek: filogic: add support for Bazis AX3000WM
+7f9363a715|Pawel Dembicki|Mon Jan 12 09:39:16 2026 +0100|package: uboot-qoriq: fix T4240RDB u-boot selection
+2723b32ef3|Pawel Dembicki|Sat Dec 13 00:25:46 2025 +0100|qoriq: kernel: refresh config
+43784b1c56|Pawel Dembicki|Wed Nov 19 22:58:54 2025 +0100|qoriq: add support for NXP T4240RDB board
+bf7494a644|Pawel Dembicki|Fri Oct 7 14:25:20 2022 +0200|package: u-boot: initial support for qoriq arch
+2dd34796d8|Pawel Dembicki|Fri Jan 9 09:37:01 2026 +0100|kernel: move patch from mpc85xx to pending
+bffedc5784|Matt Merhar|Wed Feb 11 14:33:15 2026 -0500|build: propagate errors when generating apk indexes
 </details>

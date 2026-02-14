@@ -2,7 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d2a3616|A-BO|Thu Feb 12 17:33:01 2026 +0800|luci: fixup
-7d30969|handsomeji|Thu Feb 12 02:15:03 2026 +0800|luci: optimize and fix
-f9daf6f|A-BO|Thu Feb 12 08:12:17 2026 +0800|Revert "luci: modify the field name of `protocol` in ssr"
+09544e8|David Mandy|Fri Feb 13 21:52:13 2026 +0800|luci: optimize default config Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
+94884df|A-BO|Fri Feb 13 15:50:20 2026 +0800|luci: optimize the configuration logic of hy2 obfs
+c77824f|David Mandy|Fri Feb 13 14:20:48 2026 +0800|luci: optimize default config Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
+91256c3|David Mandy|Fri Feb 13 13:13:01 2026 +0800|luci: update default config Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
+80b4268|A-BO|Fri Feb 13 08:59:08 2026 +0800|luci: optimize export links
 </details>

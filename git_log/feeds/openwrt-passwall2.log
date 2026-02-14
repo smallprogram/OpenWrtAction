@@ -2,5 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9fa347b|A-BO|Thu Feb 12 17:44:52 2026 +0800|luci: fixup
+62b6d2e|handsomeji|Sat Feb 14 02:12:30 2026 +0800|luci: 26.2.14
+da79491|A-BO|Fri Feb 13 15:50:20 2026 +0800|luci: optimize the configuration logic of hy2 obfs
+67e921a|handsomeji|Sat Feb 14 02:05:32 2026 +0800|luci: adjust default config
+6ed55b4|handsomeji|Sat Feb 14 01:48:11 2026 +0800|luci: fixup
+6de0977|Dany P|Fri Feb 13 21:07:34 2026 +0330|fix readme + add fix github workflow
+fc0e586|David Mandy|Fri Feb 13 21:52:25 2026 +0800|luci: optimize default config Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
+05f7edc|David Mandy|Fri Feb 13 14:20:21 2026 +0800|luci: optimize default config Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
+83d1e4c|David Mandy|Fri Feb 13 13:11:55 2026 +0800|luci: update default config Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
+3e89784|A-BO|Fri Feb 13 09:07:26 2026 +0800|luci: optimize export links
 </details>
