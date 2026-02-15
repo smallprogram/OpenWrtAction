@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1a9a82b6d|George Sapkin|Wed Feb 11 00:39:22 2026 +0200|golang: replace 1.25 with to 1.26.0
+8ab35c932|Christian Lachner|Fri Jan 16 07:49:04 2026 +0100|haproxy: implement force_reload init option
+892a99bc6|Christian Lachner|Fri Feb 13 07:41:18 2026 +0100|haproxy: update to v3.2.12
 </details>

@@ -2,9 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-09544e8|David Mandy|Fri Feb 13 21:52:13 2026 +0800|luci: optimize default config Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
-94884df|A-BO|Fri Feb 13 15:50:20 2026 +0800|luci: optimize the configuration logic of hy2 obfs
-c77824f|David Mandy|Fri Feb 13 14:20:48 2026 +0800|luci: optimize default config Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
-91256c3|David Mandy|Fri Feb 13 13:13:01 2026 +0800|luci: update default config Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
-80b4268|A-BO|Fri Feb 13 08:59:08 2026 +0800|luci: optimize export links
+d530517|A-BO|Sat Feb 14 13:10:19 2026 +0800|luci: 26.2.14
+1174418|A-BO|Sat Feb 14 09:34:38 2026 +0800|luci: fixup
+f9df215|A-BO|Sat Feb 14 09:27:52 2026 +0800|luci: update and adjust default rules
 </details>

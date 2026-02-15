@@ -2,12 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b8fe7b5c65|Fil Dunsky|Sun Dec 28 20:58:05 2025 +0300|mediatek: add support for netis NX32U
-317f893891|Fil Dunsky|Sun Feb 1 12:33:53 2026 +0300|mediatek: filogic: add support for Bazis AX3000WM
-7f9363a715|Pawel Dembicki|Mon Jan 12 09:39:16 2026 +0100|package: uboot-qoriq: fix T4240RDB u-boot selection
-2723b32ef3|Pawel Dembicki|Sat Dec 13 00:25:46 2025 +0100|qoriq: kernel: refresh config
-43784b1c56|Pawel Dembicki|Wed Nov 19 22:58:54 2025 +0100|qoriq: add support for NXP T4240RDB board
-bf7494a644|Pawel Dembicki|Fri Oct 7 14:25:20 2022 +0200|package: u-boot: initial support for qoriq arch
-2dd34796d8|Pawel Dembicki|Fri Jan 9 09:37:01 2026 +0100|kernel: move patch from mpc85xx to pending
-bffedc5784|Matt Merhar|Wed Feb 11 14:33:15 2026 -0500|build: propagate errors when generating apk indexes
+b7c9051deb|Rany Hany|Sat Feb 14 17:25:34 2026 +0000|wifi-scripts: ucode: allow sae_pwe to be modified for AP mode
+80ba5e4e27|Rany Hany|Sat Feb 14 11:12:19 2026 +0200|6in4: improve HE tunnel update procedure
 </details>

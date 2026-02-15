@@ -2,22 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-535be2b37|coolsnowwolf|Tue Jan 13 15:02:08 2026 +0800|README: update Radxa information
-7027560b5|coolsnowwolf|Mon Feb 9 23:05:01 2026 +0800|kernel: bump all to latest HEAD
-a87b2735b|Internet1235|Sat Jan 31 11:18:40 2026 +0800|openssl: update to version 3.6.1
-891709bce|coolsnowwolf|Wed Feb 11 16:51:49 2026 +0800|target: add support for the HiSilicon Hi3798MV1xx
-4670b6fd7|coolsnowwolf|Wed Feb 11 15:52:58 2026 +0800|README.md: update Radxa information
-358e96dea|lonesafe|Wed Feb 11 14:34:42 2026 +0800|mediatek: filogic: add support for GL.iNet MT5000 (Brume3)
-428acc665|coolsnowwolf|Fri Feb 6 12:40:27 2026 +0800|amlogic: switch to Linux 6.6 by default
-09a5ed0bd|aiamadeus|Thu Jan 22 19:30:10 2026 +0800|rockchip: remove upstream device tree
-61a0f15aa|coolsnowwolf|Sun Feb 8 12:45:27 2026 +0800|amlogic: switch to Linux 6.6 by default
-7396006a2|coolsnowwolf|Sun Feb 8 12:30:27 2026 +0800|clk: mediatek: add clock dt-bindings for MediaTek MT7987 SoC linux 6.6 kernel
-ebe3aec7d|coolsnowwolf|Sun Feb 8 12:15:05 2026 +0800|mediatek: switch to Linux 6.12 by default
-4b42943ac|Internet1235|Sun Feb 8 11:49:36 2026 +0800|opkg: update to Git HEAD (2025-11-05) (#13876)
-41f864d0e|Internet1235|Sun Feb 8 11:49:21 2026 +0800|libubox: bump to Git HEAD (2025-12-08) (#13842)
-8ae50f87f|Internet1235|Sun Feb 8 11:49:04 2026 +0800|ustream-ssl: fix PKG_MIRROR_HASH (#13897)
-3f56ce4c5|coolsnowwolf|Sun Feb 8 11:48:07 2026 +0800|kernel: bump all to latest HEAD
-
-.....................
-
+c342d9e28|Internet1235|Sat Feb 14 20:30:00 2026 +0800|ustream-ssl: fix PKG_MIRROR_HASH
 </details>
