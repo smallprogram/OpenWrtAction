@@ -19,10 +19,10 @@ sed -i 's/192.168.1.1/10.10.0.253/g' package/base-files/files/bin/config_generat
 sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' package/lean/default-settings/files/zzz-default-settings
 
 # golnag update version to 1.25.6
-sed -i \
-  -e 's/^GO_VERSION_PATCH:=.*/GO_VERSION_PATCH:=6/' \
-  -e 's/^PKG_HASH:=.*/PKG_HASH:=58cbf771e44d76de6f56d19e33b77d745a1e489340922875e46585b975c2b059/' \
-  feeds/packages/lang/golang/golang/Makefile
+# sed -i \
+#   -e 's/^GO_VERSION_PATCH:=.*/GO_VERSION_PATCH:=6/' \
+#   -e 's/^PKG_HASH:=.*/PKG_HASH:=58cbf771e44d76de6f56d19e33b77d745a1e489340922875e46585b975c2b059/' \
+#   feeds/packages/lang/golang/golang/Makefile
 
 # fixed rust host build download llvm in ci error
 # sed -i 's/--set=llvm\.download-ci-llvm=false/--set=llvm.download-ci-llvm=true/' feeds/packages/lang/rust/Makefile
