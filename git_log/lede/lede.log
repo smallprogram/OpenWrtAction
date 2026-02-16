@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c342d9e28|Internet1235|Sat Feb 14 20:30:00 2026 +0800|ustream-ssl: fix PKG_MIRROR_HASH
+fa71a9f83|coolsnowwolf|Tue Feb 10 18:15:05 2026 +0800|mediatek: uses Linux 6.12 by default
 </details>

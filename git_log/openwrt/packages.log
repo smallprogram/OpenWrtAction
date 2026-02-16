@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8ab35c932|Christian Lachner|Fri Jan 16 07:49:04 2026 +0100|haproxy: implement force_reload init option
-892a99bc6|Christian Lachner|Fri Feb 13 07:41:18 2026 +0100|haproxy: update to v3.2.12
+b7a5497cb|Rany Hany|Thu Feb 12 16:49:32 2026 +0000|sqm-scripts: bump to v1.7.0
+18f992e90|Ray Wang|Sat Feb 14 13:14:52 2026 +0800|natmap: update to 20260214
 </details>

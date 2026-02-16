@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b7c9051deb|Rany Hany|Sat Feb 14 17:25:34 2026 +0000|wifi-scripts: ucode: allow sae_pwe to be modified for AP mode
-80ba5e4e27|Rany Hany|Sat Feb 14 11:12:19 2026 +0200|6in4: improve HE tunnel update procedure
+f27d38666c|Goetz Goerisch|Sat Feb 14 20:52:36 2026 +0100|Revert "kernel: revert ip6_tunnel use skb_vlan_inet_prepare() in __ip6_tnl_rcv()"
+29bfcadbc3|John Audia|Fri Feb 13 15:26:06 2026 -0500|kernel: bump 6.12 to 6.12.71
+47f0c12080|John Audia|Thu Feb 12 15:08:34 2026 -0500|kernel: bump 6.12 to 6.12.70
+228a89a013|John Audia|Fri Feb 6 14:54:35 2026 -0500|kernel: bump 6.12 to 6.12.69
 </details>
