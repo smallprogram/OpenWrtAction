@@ -100,6 +100,9 @@ jobs:
           cd openwrt
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P1_SH }}
 
+          echo "feeds_Conf:------------------------"
+          cat feeds.conf.default
+
       - name: Update Feeds
         run: cd openwrt && ./scripts/feeds update -a
 
