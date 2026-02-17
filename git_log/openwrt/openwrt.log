@@ -2,8 +2,22 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f27d38666c|Goetz Goerisch|Sat Feb 14 20:52:36 2026 +0100|Revert "kernel: revert ip6_tunnel use skb_vlan_inet_prepare() in __ip6_tnl_rcv()"
-29bfcadbc3|John Audia|Fri Feb 13 15:26:06 2026 -0500|kernel: bump 6.12 to 6.12.71
-47f0c12080|John Audia|Thu Feb 12 15:08:34 2026 -0500|kernel: bump 6.12 to 6.12.70
-228a89a013|John Audia|Fri Feb 6 14:54:35 2026 -0500|kernel: bump 6.12 to 6.12.69
+5c0a038ed3|Felix Fietkau|Fri Jan 16 08:53:27 2026 +0000|udebug: update to Git HEAD (2026-01-16)
+16dcfc613a|Harin Lee|Thu Dec 25 04:15:25 2025 +0900|wifi-scripts: fix macaddr check in mac80211.uc
+4ab2e3d0dd|Felix Fietkau|Fri Jan 30 18:02:35 2026 +0000|wifi-scripts: wireless.uc: add MLO support for procd service data
+4305911499|Felix Fietkau|Tue Jan 6 18:46:46 2026 +0100|wifi-scripts: move the "disabled" option to the wifi-iface section
+f867497e35|Felix Fietkau|Sun Feb 15 08:23:57 2026 +0000|wifi-scripts: netifd: fix null dereference in config_init for missing devices
+3e3f325063|Felix Fietkau|Wed Feb 4 10:34:55 2026 +0000|wifi-scripts: fix nested config accumulation in wdev_set_data
+53f88bd15b|Felix Fietkau|Thu Jan 22 11:25:49 2026 +0100|wifi-scripts: iwinfo.uc: cache survey data in iface object
+8725a4713e|John Crispin|Fri Sep 19 17:05:30 2025 +0200|wifi-scripts: refactor iwinfo.uc to support dynamic data updates
+765130cea1|Felix Fietkau|Fri Feb 13 09:09:09 2026 +0000|uclient: update to Git HEAD (2026-02-13)
+4b37510109|Felix Fietkau|Sat Jan 31 14:03:05 2026 +0000|uclient: update to Git HEAD (2026-01-31)
+84fec0d218|Felix Fietkau|Fri Feb 13 09:09:06 2026 +0000|libubox: update to Git HEAD (2026-02-13)
+29c2315b1d|Felix Fietkau|Sat Feb 7 07:47:36 2026 +0000|ucode: add ubus fixes
+130466783a|John Crispin|Fri Jan 23 09:54:11 2026 +0100|procd: reload_config: support UCI overlay directory
+3091dbcb45|John Crispin|Fri Feb 6 08:41:49 2026 +0100|unetmsg: notify subscribers when remote peer connection drops
+40a7b55d70|Felix Fietkau|Sat Feb 7 08:02:24 2026 +0000|unetmsg: only send publish notifications for remote publisher changes
+
+.....................
+
 </details>

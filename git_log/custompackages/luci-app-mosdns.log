@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-665f635|sbwml|Sun Feb 15 18:36:05 2026 +0800|mosdns: update to 5.3.4
+c9d5d16|sbwml|Mon Feb 16 19:49:04 2026 +0800|luci-app-mosdns: add support for custom listen address
 </details>
