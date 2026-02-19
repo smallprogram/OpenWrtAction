@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-92baba7|handsomeji|Wed Feb 18 02:33:59 2026 +0800|luci: Improved and optimized fixed
+3ac0530|A-BO|Wed Feb 18 23:31:13 2026 +0800|luci: fix `shunt_options.lua`
 </details>

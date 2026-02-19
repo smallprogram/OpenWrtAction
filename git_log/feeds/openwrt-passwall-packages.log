@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5aa0f9d|github-actions[bot]|Thu Feb 19 01:12:36 2026 +0800|v2ray-plugin: update to 5.45.1 (#594)
+96446ad|A-BO|Wed Feb 18 12:15:50 2026 +0800|ci: update code
+edfc68c|A-BO|Wed Feb 18 12:09:20 2026 +0800|dns2socks: update source url
+</details>
