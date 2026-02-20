@@ -1,0 +1,10 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+e2089a5d3e|Felix Fietkau|Sun Feb 1 19:17:27 2026 +0000|hostapd: fix dealing with required interface restart in AP+STA mode
+ad24a28363|Yaroslav Isakov|Sat Feb 14 19:35:06 2026 +0100|hostapd: fix EAP-PWD in experimental hostapd-radius server
+ae2fbe48d2|Chad Monroe|Fri Feb 6 09:21:44 2026 -0800|hostapd: initialize first BSS radio_mask during driver init
+9cbdc2056b|Hauke Mehrtens|Thu Feb 19 02:16:14 2026 +0100|OpenWrt v25.12.0-rc5: revert to branch defaults
+b36d5e3da0|Hauke Mehrtens|Thu Feb 19 02:16:11 2026 +0100|OpenWrt v25.12.0-rc5: adjust config defaults
+</details>

@@ -1,0 +1,23 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b0171c48e|Tianling Shen|Thu Feb 19 16:11:02 2026 +0800|Merge Official Source
+f1aecb343|Dirk Brenken|Wed Feb 18 21:18:23 2026 +0100|travelmate: release 2.4.0-1
+bb66559be|Niklas Thorild|Fri Feb 13 12:08:08 2026 +0100|telegraf: update to 1.37.2 - Update Telegraf to v1.37.2
+078ddaf82|Niklas Thorild|Tue Feb 10 23:03:14 2026 +0100|telegraf: replace prometheus plugin with http plugin
+56a452a9e|Goetz Goerisch|Mon Feb 9 17:46:49 2026 +0100|jool: update to 4.1.15
+35797006b|Wei-Ting Yang|Wed Feb 4 23:58:00 2026 +0800|django: bump to version 6.0.2
+1a250e0c4|George Sapkin|Sun Feb 15 11:52:24 2026 +0200|vim: bump to 9.2.0
+a480660bc|Daniel F. Dickinson|Mon Feb 9 22:55:57 2026 -0500|zabbix: fix unnecessary virtual provides
+3e995d0f4|Daniel F. Dickinson|Thu Feb 5 04:21:34 2026 -0500|zabbix: set PKGARCH all for non-binary packages
+e2147cefd|Michael Heimpold|Wed Feb 4 21:47:04 2026 +0100|zabbix: fix no-configure build variant
+ea801cb3f|Daniel F. Dickinson|Mon Feb 2 23:03:04 2026 -0500|zabbix: fix recursive depedency warning on build
+47273e2f3|Daniel F. Dickinson|Mon Feb 2 08:44:52 2026 -0500|zabbix: fix package rename missed database config
+c326ec74a|Daniel F. Dickinson|Mon Feb 2 08:08:06 2026 -0500|zabbix: fix compile skipped due to line continuation
+57e83b56c|Daniel F. Dickinson|Sun Jan 25 18:11:10 2026 -0500|zabbix: deduplicate and reorganize package defines
+94754edbe|Keith T. Garner|Thu Feb 12 09:27:47 2026 -0600|bluld: bump to version 1.1.3
+
+.....................
+
+</details>

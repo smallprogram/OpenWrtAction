@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-b065ef67dc|Dirk Brenken|Wed Feb 18 21:48:57 2026 +0100|luci-app-travelmate: release 2.4.0-1
+355a432ef9|Paul Donald|Thu Feb 19 02:00:14 2026 +0100|luci-app-lxc: convert to JS
+4f6a5e610f|Han Yiming|Fri Feb 13 20:21:18 2026 +0800|luci-app-tailscale-community: fix exit node conflict
 </details>

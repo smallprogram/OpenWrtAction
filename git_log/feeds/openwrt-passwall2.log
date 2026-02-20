@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-3ac0530|A-BO|Wed Feb 18 23:31:13 2026 +0800|luci: fix `shunt_options.lua`
-</details>
