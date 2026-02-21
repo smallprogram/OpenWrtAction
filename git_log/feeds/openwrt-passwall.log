@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+7e74d06|A-BO|Sat Feb 21 01:21:40 2026 +0800|luci: optimize the logic of `geo2rule` in rule update
+7ad1099|A-BO|Fri Feb 20 11:59:20 2026 +0800|luci: optimize
+5d3aa19|A-BO|Fri Feb 20 11:52:30 2026 +0800|luci: improve rule list input validation
+</details>

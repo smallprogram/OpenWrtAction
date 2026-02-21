@@ -2,6 +2,22 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-355a432ef9|Paul Donald|Thu Feb 19 02:00:14 2026 +0100|luci-app-lxc: convert to JS
-4f6a5e610f|Han Yiming|Fri Feb 13 20:21:18 2026 +0800|luci-app-tailscale-community: fix exit node conflict
+e71630c870|Dirk Brenken|Fri Feb 20 22:13:39 2026 +0100|luci-app-banip: update 1.8.0-2
+0bce36a505|Dirk Brenken|Fri Feb 20 20:25:37 2026 +0100|luci-app-adblock: sync with adblock 4.5.1-3
+db5c9d983a|Dirk Brenken|Fri Feb 20 18:09:49 2026 +0100|luci-app-travelmate: update 2.4.0-2
+f11a0bfc87|Paul Donald|Tue Feb 17 00:11:31 2026 +0100|luci-lib-chartjs: js linting fixes
+12ccfcd15d|Paul Donald|Mon Feb 16 02:49:03 2026 +0100|luci-mod-system: change regex to please jsmin
+8ae2a3507d|Paul Donald|Mon Feb 16 00:44:17 2026 +0100|luci-base: jsdoc fixes
+4f270d1060|Paul Donald|Sun Feb 15 06:52:47 2026 +0100|luci-app-package-manager: js linting fixes / ES6 treatment
+da9625a780|Paul Donald|Mon Feb 16 22:55:32 2026 +0100|luci-app-statistics: js linting fixes / ES6 treatment
+f3bf2fae0a|Paul Donald|Sun Feb 15 07:51:05 2026 +0100|luci-app-statistics: js linting fixes / ES6 treatment
+31aa66d8e3|Paul Donald|Sun Feb 15 04:50:28 2026 +0100|luci-app-olsr: js linting fixes / ES6 treatment
+ec47570fbf|Paul Donald|Sun Feb 15 06:38:26 2026 +0100|luci-app-keepalived: lint fixes
+1d5c9faf17|Paul Donald|Sat Feb 14 21:15:23 2026 +0100|luci-lib-uqr: lint fixes
+a3d8315785|Paul Donald|Sun Feb 15 07:40:56 2026 +0100|luci-app-babeld: lint fixes
+9cad955df9|Paul Donald|Mon Feb 16 01:39:36 2026 +0100|luci-app-dockerman: lint fixes
+7aff7b8ef7|Hauke Mehrtens|Mon Feb 9 01:53:18 2026 +0100|luci-app-attendedsysupgrade: activate only with LuCI
+
+.....................
+
 </details>
