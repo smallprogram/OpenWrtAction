@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-17d625c858|Mieczyslaw Nalewaj|Sun Feb 15 11:50:05 2026 +0100|ramips: remove obsolete SPI flash nodes after kernel fix
-e370701a57|Felix Fietkau|Fri Feb 20 09:07:56 2026 +0000|uclient: update to Git HEAD (2026-02-20)
+c0dd42dcc4|Rosen Penev|Wed Feb 18 17:25:38 2026 -0800|Revert "bmips: huawei-hg556a-c: use nvmem for wifi eeprom"
 </details>

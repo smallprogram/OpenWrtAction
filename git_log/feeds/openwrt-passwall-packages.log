@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+52781d4|github-actions[bot]|Sun Feb 22 01:55:23 2026 +0800|v2ray-geosite: update to 202602202219 (#597)
+80f3471|github-actions[bot]|Sun Feb 22 01:54:59 2026 +0800|v2ray-geoip: update to 202602190030 (#596)
+ce154fd|github-actions[bot]|Sat Feb 21 23:51:26 2026 +0800|v2ray-plugin: update to 5.46.0 (#595)
+</details>

@@ -1,0 +1,6 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0c0cbb7ff0|Tianling Shen|Thu Feb 19 15:55:35 2026 +0800|rockchip: increase CMA size to 64 MiB for DRM support
+</details>
