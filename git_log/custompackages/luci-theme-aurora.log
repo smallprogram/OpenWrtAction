@@ -1,0 +1,6 @@
+<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+e88d61b|Eamon Xiong|Mon Feb 23 00:24:06 2026 +0800|ci: switch build workflow to shared build-luci-package action
+</details>

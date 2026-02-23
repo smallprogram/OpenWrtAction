@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-671bb900f|Qingfang Deng|Thu Dec 11 09:28:29 2025 +0800|kernel: add network teaming modules
+6500d09f8|Qingfang Deng|Fri Feb 6 17:38:50 2026 +0800|kernel: backport pppoe improvements
 </details>
