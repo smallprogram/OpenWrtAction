@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8fd18b4|A-BO|Sun Feb 22 19:05:30 2026 +0800|luci: fix syntax errors in `iptables.sh`
-58f7054|A-BO|Sun Feb 22 15:59:34 2026 +0800|luci: add user-agent for xray grpc
+29b1051|A-BO|Mon Feb 23 16:39:58 2026 +0800|luci: optimize smartdns related
 </details>

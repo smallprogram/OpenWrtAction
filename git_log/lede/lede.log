@@ -1,6 +1,0 @@
-<details> <summary> <b>lede new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-6500d09f8|Qingfang Deng|Fri Feb 6 17:38:50 2026 +0800|kernel: backport pppoe improvements
-</details>

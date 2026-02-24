@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-dbb6f0b547|Stijn Tintel|Sat Mar 1 19:07:30 2025 +0200|mediatek: TP-Link EAP683-UR support
-07a8ae37c2|Stijn Tintel|Sat Apr 6 01:45:25 2024 +0300|mediatek: TP-Link EAP683-LR support
+ffd38ddffe|Shiji Yang|Sun Feb 22 10:52:20 2026 +0800|kernel: net: fix deadlock caused by phy led trigger
 </details>
