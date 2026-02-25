@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d6f79bdfd|Dirk Brenken|Mon Feb 23 17:05:26 2026 +0100|adblock: update 4.5.1-4
-5c7ae162b|Toke Høiland-Jørgensen|Mon Feb 23 15:40:58 2026 +0100|net/sqm-scripts: bump to v1.7.1
+2c5bfc048|Niklas Thorild|Tue Feb 24 12:26:37 2026 +0100|telegraf: update to 1.37.3 - Update Telegraf to v1.37.3
 </details>
