@@ -2,9 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+40158c3d0|coolsnowwolf|Wed Feb 25 14:47:26 2026 +0800|Revert "kernel: backport pppoe improvements"
 77c15ca39|coolsnowwolf|Tue Feb 24 11:35:58 2026 +0800|mac80211: realtek: rtw89: add Realtek RTL8852B family support
-72ad29820|coolsnowwolf|Tue Feb 24 10:10:00 2026 +0800|linux-firmware: update to 20260221
-50eccb454|coolsnowwolf|Tue Feb 24 10:06:03 2026 +0800|Version update to R26.02.20
-a98d43584|coolsnowwolf|Tue Feb 24 10:04:15 2026 +0800|OpenWrt v24.10.5: adjust config defaults
-9f754fefb|coolsnowwolf|Tue Feb 24 10:01:45 2026 +0800|kernel: bump all to latest HEAD
 </details>

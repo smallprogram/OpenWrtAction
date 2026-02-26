@@ -2,8 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-99c0c36027|Tim Harvey|Thu Feb 19 17:01:48 2026 -0800|imx: cortexa53: remove KSZ9477 static driver
-5f9f0f12a5|Tim Harvey|Thu Feb 19 16:57:29 2026 -0800|kernel: netdevices: add KSZ9477 DSA switch packages
-264720d41b|Hauke Mehrtens|Sun Feb 22 23:11:47 2026 +0100|wireless-regdb: update to version 2026.02.04
-b0ea1b6cdf|Jonas Lochmann|Mon Feb 16 01:00:00 2026 +0100|iproute2: include upstream patch for musl libc
+a5f6a7b5d4|Daniel Golle|Fri Feb 20 14:49:02 2026 +0000|Revert "package: kernel: dtc: Add DTO support"
+cdc92ce560|Sander Vanheule|Sat Feb 21 15:00:39 2026 +0100|realtek: hog the GS1900-24E external IC reset line
+82dbd32e13|Sander Vanheule|Sat Feb 21 14:44:23 2026 +0100|realtek: rtl838x: drop GS1900 MDIO reset GPIO
 </details>

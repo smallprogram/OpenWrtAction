@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+eeb5bd8|A-BO|Wed Feb 25 21:13:30 2026 +0800|luci: optimize haproxy status display
+ed83095|A-BO|Wed Feb 25 14:10:01 2026 +0800|luci: optimize
+3255e15|A-BO|Wed Feb 25 13:45:12 2026 +0800|luci: add finalmask support of xray
+</details>

@@ -1,0 +1,23 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+8e584af0d4|SakuraFallingMad|Sun Feb 8 09:35:23 2026 +0800|luci-app-passwall: bump to 26.2.14
+d281f97a63|Tianling Shen|Wed Feb 25 11:05:11 2026 +0800|Merge Official Source
+18a2fd924d|Paul Donald|Tue Feb 24 03:32:35 2026 +0100|luci-app-bmx7: convert to JS
+3a9c5b4bad|Paul Donald|Mon Feb 23 22:03:39 2026 +0100|luci-app-bmx7: convert to JS
+d8c1754d6a|Paul Donald|Sun Feb 22 16:51:25 2026 +0100|docs: favicon and hierarchy
+9fa84e5a33|Paul Donald|Thu Dec 19 21:34:22 2024 +0000|luci-mod-network: MPTCP
+263dfa435b|Paul Donald|Fri Feb 20 02:28:43 2026 +0100|luci-base: cbi improvements and loop var fix
+9b6a8fae10|Paul Donald|Fri Feb 20 00:56:43 2026 +0100|luci-base: handleSort and UITable.update fix
+a31601d196|Paul Donald|Fri Feb 20 00:47:36 2026 +0100|luci-base: filter header row CSS styling
+a579f6ce19|Paul Donald|Thu Feb 19 05:11:37 2026 +0100|luci-base: firewall fixes
+477e0b56db|Paul Donald|Thu Feb 19 01:50:37 2026 +0100|luci-base: fix refresh in initNetworkState
+7b34e5c5e6|Paul Donald|Mon Feb 16 03:22:54 2026 +0100|github: re-work github pages deploy
+aea121e05f|Paul Donald|Mon Feb 16 02:15:13 2026 +0100|luci-app-firewall: js linting fixes / ES6 treatment
+90d5914793|Paul Donald|Mon Feb 16 02:29:45 2026 +0100|luci-app: js linting fixes / ES6 treatment
+a65aeca5f8|Paul Donald|Mon Feb 16 03:41:23 2026 +0100|luci-base: fix front matter for luci-base classes
+
+.....................
+
+</details>

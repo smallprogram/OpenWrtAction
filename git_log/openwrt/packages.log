@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2c5bfc048|Niklas Thorild|Tue Feb 24 12:26:37 2026 +0100|telegraf: update to 1.37.3 - Update Telegraf to v1.37.3
+50ac74e3c|Toke Høiland-Jørgensen|Wed Feb 25 13:42:10 2026 +0100|net/sqm-scripts: bump to v1.7.2
 </details>
