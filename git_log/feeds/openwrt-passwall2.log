@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c723e15|luk2011|Wed Feb 25 14:37:04 2026 +0300|luci: i18n: Russian translation
+3b0e59e|A-BO|Wed Feb 25 14:10:01 2026 +0800|luci: optimize
+22e9bf6|A-BO|Wed Feb 25 13:45:12 2026 +0800|luci: add finalmask support of xray
+200c53a|A-BO|Sun Feb 22 15:59:34 2026 +0800|luci: add user-agent for xray grpc
+4542aa6|handsomeji|Thu Feb 26 21:28:34 2026 +0800|luci: optimize and adjust
 </details>

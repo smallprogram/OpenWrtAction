@@ -1,7 +1,0 @@
-<details> <summary> <b>lede new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-40158c3d0|coolsnowwolf|Wed Feb 25 14:47:26 2026 +0800|Revert "kernel: backport pppoe improvements"
-77c15ca39|coolsnowwolf|Tue Feb 24 11:35:58 2026 +0800|mac80211: realtek: rtw89: add Realtek RTL8852B family support
-</details>

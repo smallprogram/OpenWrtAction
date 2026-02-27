@@ -1,0 +1,8 @@
+<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+0c596ef|Eamon Xiong|Fri Feb 27 01:47:52 2026 +0800|login: update footer info
+a78129f|Eamon Xiong|Fri Feb 27 01:12:11 2026 +0800|login: consolidate footer links into single line layout
+83466c9|Eamon Xiong|Fri Feb 27 00:52:27 2026 +0800|feat(login): add upstream attribution to footer
+</details>

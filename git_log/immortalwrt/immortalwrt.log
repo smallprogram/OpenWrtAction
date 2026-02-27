@@ -1,6 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-eab2248677|Tianling Shen|Wed Feb 25 17:18:11 2026 +0800|rockchip: remove broken vdd-supply props from the usb hub for photonicat2
-</details>

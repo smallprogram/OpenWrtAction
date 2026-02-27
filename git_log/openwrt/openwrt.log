@@ -2,7 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a5f6a7b5d4|Daniel Golle|Fri Feb 20 14:49:02 2026 +0000|Revert "package: kernel: dtc: Add DTO support"
-cdc92ce560|Sander Vanheule|Sat Feb 21 15:00:39 2026 +0100|realtek: hog the GS1900-24E external IC reset line
-82dbd32e13|Sander Vanheule|Sat Feb 21 14:44:23 2026 +0100|realtek: rtl838x: drop GS1900 MDIO reset GPIO
+224c99bad7|Hauke Mehrtens|Wed Feb 25 01:26:02 2026 +0100|mac80211: activate BRCMFMAC_SDIO on x86
+aeebbead6f|Hauke Mehrtens|Thu Feb 26 00:41:11 2026 +0100|wifi-scripts: fix handling of 64 character WPA key
+be5b8605ab|Hauke Mehrtens|Wed Feb 25 22:42:56 2026 +0100|ramips: mt7621: fix network configuration
+fa0719f74d|Daniel Golle|Tue Feb 17 15:26:18 2026 +0000|procd: update to git HEAD
+9feea22706|Daniel Golle|Mon Feb 9 11:47:39 2026 +0000|procd: update to git HEAD
+8b50f6c215|Chester A. Unal|Mon Jan 5 14:54:42 2026 +0200|ramips: mt7621: enable kmod-usb3 for Mikrotik RBM33G
+2e40f4cf73|Felix Fietkau|Thu Feb 26 12:10:02 2026 +0000|netifd: update to Git openwrt-25.12 (2026-02-26)
 </details>
