@@ -2,8 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3b0e59e|A-BO|Wed Feb 25 14:10:01 2026 +0800|luci: optimize
-22e9bf6|A-BO|Wed Feb 25 13:45:12 2026 +0800|luci: add finalmask support of xray
-200c53a|A-BO|Sun Feb 22 15:59:34 2026 +0800|luci: add user-agent for xray grpc
-4542aa6|handsomeji|Thu Feb 26 21:28:34 2026 +0800|luci: optimize and adjust
+501a3ff|A-BO|Sat Feb 28 00:20:28 2026 +0800|luci: optimize the node subscribe configuration page
+281d035|A-BO|Fri Feb 27 22:04:33 2026 +0800|luci: optimize
+e9e4c02|A-BO|Fri Feb 27 20:51:25 2026 +0800|luci: fix the failure of batch node addition in urltest
+5929125|A-BO|Fri Feb 27 19:02:30 2026 +0800|luci: improve core selection logic for subscribe
+8752cfa|A-BO|Fri Feb 27 17:23:15 2026 +0800|luci: optimize some node configuration pages
+5939dd5|A-BO|Fri Feb 27 14:08:05 2026 +0800|luci: optimize and fix tuic of sing-box
+4f9a369|handsomeji|Fri Feb 27 21:38:50 2026 +0800|luci: fix server boot
 </details>

@@ -1,0 +1,23 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+791c94e81b|Tianling Shen|Fri Feb 27 11:42:47 2026 +0800|target: fix wpad variant selection
+94d4570a6d|Tianling Shen|Fri Feb 27 11:53:08 2026 +0800|ath79/ramips: switch to full feature wpad-openssl by default
+088bc324d9|Tianling Shen|Fri Feb 27 11:47:26 2026 +0800|Merge Official Source
+224c99bad7|Hauke Mehrtens|Wed Feb 25 01:26:02 2026 +0100|mac80211: activate BRCMFMAC_SDIO on x86
+aeebbead6f|Hauke Mehrtens|Thu Feb 26 00:41:11 2026 +0100|wifi-scripts: fix handling of 64 character WPA key
+be5b8605ab|Hauke Mehrtens|Wed Feb 25 22:42:56 2026 +0100|ramips: mt7621: fix network configuration
+fa0719f74d|Daniel Golle|Tue Feb 17 15:26:18 2026 +0000|procd: update to git HEAD
+9feea22706|Daniel Golle|Mon Feb 9 11:47:39 2026 +0000|procd: update to git HEAD
+8b50f6c215|Chester A. Unal|Mon Jan 5 14:54:42 2026 +0200|ramips: mt7621: enable kmod-usb3 for Mikrotik RBM33G
+2e40f4cf73|Felix Fietkau|Thu Feb 26 12:10:02 2026 +0000|netifd: update to Git openwrt-25.12 (2026-02-26)
+a5f6a7b5d4|Daniel Golle|Fri Feb 20 14:49:02 2026 +0000|Revert "package: kernel: dtc: Add DTO support"
+cdc92ce560|Sander Vanheule|Sat Feb 21 15:00:39 2026 +0100|realtek: hog the GS1900-24E external IC reset line
+82dbd32e13|Sander Vanheule|Sat Feb 21 14:44:23 2026 +0100|realtek: rtl838x: drop GS1900 MDIO reset GPIO
+99c0c36027|Tim Harvey|Thu Feb 19 17:01:48 2026 -0800|imx: cortexa53: remove KSZ9477 static driver
+5f9f0f12a5|Tim Harvey|Thu Feb 19 16:57:29 2026 -0800|kernel: netdevices: add KSZ9477 DSA switch packages
+
+.....................
+
+</details>

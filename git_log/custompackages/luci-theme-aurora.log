@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0c596ef|Eamon Xiong|Fri Feb 27 01:47:52 2026 +0800|login: update footer info
-a78129f|Eamon Xiong|Fri Feb 27 01:12:11 2026 +0800|login: consolidate footer links into single line layout
-83466c9|Eamon Xiong|Fri Feb 27 00:52:27 2026 +0800|feat(login): add upstream attribution to footer
+8b38d8d|github-actions[bot]|Fri Feb 27 01:21:16 2026 +0000|build: update frontend assets
+cf9230d|Eamon Xiong|Fri Feb 27 09:20:44 2026 +0800|fix: set width and enable wrapping for mobile login footer
 </details>

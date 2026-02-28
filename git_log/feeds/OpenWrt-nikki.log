@@ -2,9 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e42351c|Joseph Mory|Thu Feb 26 21:33:08 2026 +0800|fix: compatibility with old versions of yq
-5aa3137|Joseph Mory|Thu Feb 26 20:52:39 2026 +0800|chore: add missing default mixin options
-728f4ab|Joseph Mory|Thu Feb 26 20:38:32 2026 +0800|fix: hijack failed when both tun and tun listener were present
-44db277|Joseph Mory|Thu Feb 26 10:35:46 2026 +0800|feat: https api/dashboard
-e3feecd|Joseph Mory|Wed Feb 25 21:36:27 2026 +0800|feat: support using `listeners` as inbound
+8713fd4|Joseph Mory|Fri Feb 27 16:48:40 2026 +0800|chore: cleanup code
+e82840b|Joseph Mory|Fri Feb 27 16:25:37 2026 +0800|fix: typo
 </details>
