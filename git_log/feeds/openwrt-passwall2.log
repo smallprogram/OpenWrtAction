@@ -2,11 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-501a3ff|A-BO|Sat Feb 28 00:20:28 2026 +0800|luci: optimize the node subscribe configuration page
-281d035|A-BO|Fri Feb 27 22:04:33 2026 +0800|luci: optimize
-e9e4c02|A-BO|Fri Feb 27 20:51:25 2026 +0800|luci: fix the failure of batch node addition in urltest
-5929125|A-BO|Fri Feb 27 19:02:30 2026 +0800|luci: improve core selection logic for subscribe
-8752cfa|A-BO|Fri Feb 27 17:23:15 2026 +0800|luci: optimize some node configuration pages
-5939dd5|A-BO|Fri Feb 27 14:08:05 2026 +0800|luci: optimize and fix tuic of sing-box
-4f9a369|handsomeji|Fri Feb 27 21:38:50 2026 +0800|luci: fix server boot
+6efb1d9|A-BO|Sun Mar 1 01:38:10 2026 +0800|luci: fix default config gen error of xray grpc
+b5053d4|A-BO|Sun Mar 1 01:35:09 2026 +0800|luci: update sing-box architecture mappings
 </details>

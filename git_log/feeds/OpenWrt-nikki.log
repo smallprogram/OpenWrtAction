@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8713fd4|Joseph Mory|Fri Feb 27 16:48:40 2026 +0800|chore: cleanup code
-e82840b|Joseph Mory|Fri Feb 27 16:25:37 2026 +0800|fix: typo
+8ad0b2c|Joseph Mory|Sat Feb 28 14:21:53 2026 +0800|fix: also disable `auto-route/auto-redirect/auto-detect-interface` of `tun` `listeners`
 </details>

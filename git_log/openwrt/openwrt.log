@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0f46eefc66|Rosen Penev|Wed Feb 25 20:02:34 2026 -0800|Revert "lantiq: arv7525pw: use nvmem for eeprom"
-087504e7bd|Tim Harvey|Mon Feb 9 09:30:10 2026 -0800|imx: cortexa53: enable DMA contiguous memory allocator
+5b66b10095|Hauke Mehrtens|Thu Feb 26 20:49:17 2026 +0100|lantiq: dm200: Fix loading PHY firmware
+7d5d366404|Mieczyslaw Nalewaj|Wed Oct 29 00:23:02 2025 +0100|mt7620: workaround jal imm26 and redundant PAGE_ALIGN
 </details>

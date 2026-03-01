@@ -1,7 +1,0 @@
-<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-8b38d8d|github-actions[bot]|Fri Feb 27 01:21:16 2026 +0000|build: update frontend assets
-cf9230d|Eamon Xiong|Fri Feb 27 09:20:44 2026 +0800|fix: set width and enable wrapping for mobile login footer
-</details>

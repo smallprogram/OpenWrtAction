@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-bandix new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6ca6e6a|root|Sat Feb 28 15:37:18 2026 +0800|Use ubuntu-24.04 for CI and zoneinfo-core for smaller package size
+</details>

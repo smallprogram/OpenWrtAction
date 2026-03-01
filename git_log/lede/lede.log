@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f38b45128|Internet1235|Fri Feb 27 20:01:02 2026 +0800|libnl-tiny: update to Git HEAD (2025-12-02)
+cc7651ef0|Willem Lee|Sat Feb 28 11:42:01 2026 +0800|ipq40xx: add support for thinkplus FogPOD800 (#13910)
 </details>
