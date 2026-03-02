@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6efb1d9|A-BO|Sun Mar 1 01:38:10 2026 +0800|luci: fix default config gen error of xray grpc
-b5053d4|A-BO|Sun Mar 1 01:35:09 2026 +0800|luci: update sing-box architecture mappings
+bd9b502|handsomeji|Mon Mar 2 01:20:24 2026 +0800|luci: 26.3.1
+cbbeed5|handsomeji|Mon Mar 2 00:38:09 2026 +0800|luci: optimize
+96048df|handsomeji|Sun Mar 1 23:58:16 2026 +0800|luci: Xray blackhole DNS adjust
 </details>

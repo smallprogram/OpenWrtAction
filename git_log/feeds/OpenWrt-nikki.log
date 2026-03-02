@@ -1,6 +1,0 @@
-<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-8ad0b2c|Joseph Mory|Sat Feb 28 14:21:53 2026 +0800|fix: also disable `auto-route/auto-redirect/auto-detect-interface` of `tun` `listeners`
-</details>
