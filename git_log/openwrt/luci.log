@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-03ef03ea0b|Dirk Brenken|Sun Mar 1 06:55:22 2026 +0100|luci-app-adblock: sync with adblock 4.5.2-1
+27a9c0c942|Self-Hosting-Group|Mon Mar 2 00:00:00 2026 +0000|luci-theme: remove LuCI from title, material changes
+481586dd2d|Paul Donald|Mon Mar 2 19:11:21 2026 +0100|luci-mod-network: drop unused dnsmasq ipset option
+f5dc737d99|Ramon Van Gorkom|Sun Mar 1 14:33:22 2026 +0100|luci-app-usteer: fix bug introduced with ES6
+59e4004ca8|Paul Donald|Mon Feb 16 02:16:19 2026 +0100|luci-app-usteer: js linting fixes / ES6 treatment
 </details>

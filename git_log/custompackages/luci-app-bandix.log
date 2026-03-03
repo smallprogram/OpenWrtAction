@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a0e94cf|timsaya|Sun Mar 1 23:59:06 2026 +0800|v0.12.5: add delete device button and exclude interface device option
+86a05e6|timsaya|Mon Mar 2 14:20:32 2026 +0800|Remove Indonesian and Thai locale files
+b59a9e1|timsaya|Mon Mar 2 14:13:36 2026 +0800|Translate FR and RU locale files: replace Chinese with French and Russian
 </details>

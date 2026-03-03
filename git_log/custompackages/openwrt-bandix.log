@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-bandix new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-ac27750|timsaya|Sun Mar 1 23:40:09 2026 +0800|add traffic_exclude_iface_device option and bump to 0.12.6
-</details>

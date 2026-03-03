@@ -1,0 +1,9 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+36cafce|A-BO|Tue Mar 3 00:30:58 2026 +0800|luci: add boot-once update subscribe option
+76b1658|A-BO|Mon Mar 2 13:31:36 2026 +0800|luci: 26.3.2
+a7527a3|A-BO|Mon Mar 2 13:16:48 2026 +0800|luci: optimize
+6c10378|A-BO|Mon Mar 2 10:21:16 2026 +0800|luci: Xray blackhole DNS adjust
+</details>
