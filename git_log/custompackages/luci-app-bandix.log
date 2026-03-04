@@ -1,7 +1,0 @@
-<details> <summary> <b>luci-app-bandix new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-86a05e6|timsaya|Mon Mar 2 14:20:32 2026 +0800|Remove Indonesian and Thai locale files
-b59a9e1|timsaya|Mon Mar 2 14:13:36 2026 +0800|Translate FR and RU locale files: replace Chinese with French and Russian
-</details>
