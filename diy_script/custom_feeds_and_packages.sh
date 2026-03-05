@@ -13,6 +13,13 @@ export repos=(
 clone_custom_packages () {
     local path="./package/custom_packages/"
 
+    if [ "$GITHUB_ACTIONS" = "true" ] && [ -n "$GITHUB_RUN_ID" ] && [ -n "$GITHUB_WORKFLOW" ]; then
+        PATCHES_SRC_DIR="$GITHUB_WORKSPACE"
+    else
+        PATCHES_SRC_DIR="../OpenWrtAction"
+    fi
+
+
     rm -rf ${path}
     mkdir -p ${path}
 
@@ -27,10 +34,17 @@ clone_custom_packages () {
     git clone https://github.com/AngelaCooljx/luci-theme-material3.git ${path}luci-theme-material3
     # git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ${path}luci-app-adguardhome
     git clone https://github.com/sbwml/luci-app-mosdns -b v5 ${path}mosdns
-    git clone https://github.com/sirpdboy/luci-app-netspeedtest ${path}netspeedtest
+
+    # luci-app-netspeedtest source can't connect, use local copy instead
+    # git clone https://github.com/sirpdboy/luci-app-netspeedtest ${path}netspeedtest
+    cp -rf $PATCHES_SRC_DIR/diy_script/custom_packages/netspeedtest ${path}
+
+
     git clone https://github.com/timsaya/openwrt-bandix.git ${path}openwrt-bandix
     git clone https://github.com/timsaya/luci-app-bandix.git ${path}luci-app-bandix
     git clone https://github.com/destan19/OpenAppFilter.git ${path}OpenAppFilter
+
+    
 
     # sed -i '/^[\t ]*PKG_VERSION:=/ s/\(PKG_VERSION:= *\)[^0-9.]*\([0-9.]*\)[^0-9.]*/\1\2/' "${path}luci-theme-alpha-reborn/Makefile"
     sed -i '/^[\t ]*PKG_VERSION:=/ s/\(PKG_VERSION:= *\)[^0-9.]*\([0-9.]*\)[^0-9.]*/\1\2/' "${path}luci-theme-alpha/Makefile"
