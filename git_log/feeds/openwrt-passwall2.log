@@ -2,9 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c1e71f1|handsomeji|Wed Mar 4 03:25:43 2026 +0800|luci: optimize
-822156a|A-BO|Tue Mar 3 00:30:58 2026 +0800|luci: add boot-once update subscribe option
-866d35d|handsomeji|Wed Mar 4 02:45:53 2026 +0800|luci: update Sing-Box config, min version 1.12.0
-e1f09fb|handsomeji|Tue Mar 3 20:52:14 2026 +0800|luci: update Sing-Box config, version 1.12.0
-cb57f2c|handsomeji|Tue Mar 3 18:55:32 2026 +0800|luci: update Sing-Box config, min version 1.11.0
+b288443|handsomeji|Wed Mar 4 20:47:45 2026 +0800|luci: support Sing-Box DNS hosts
+4747b65|A-BO|Wed Mar 4 18:16:18 2026 +0800|luci: optimize
+e3f69e7|A-BO|Wed Mar 4 17:02:54 2026 +0800|luci: optimize Sing-Box config
 </details>

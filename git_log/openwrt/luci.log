@@ -2,6 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-eb9143f970|Paul Donald|Wed Mar 4 01:13:00 2026 +0100|luci-base: prevent save/traceback race for _state
-3aa6773b12|Hannu Nyman|Tue Mar 3 20:19:19 2026 +0200|treewide: backport translations from master
+971a52da29|Ramon Van Gorkom|Mon Mar 2 19:41:15 2026 +0100|luci-app-usteer: add sta info in tooltip
+80725ff7f6|Stan Grishin|Tue Mar 3 18:43:30 2026 +0000|luci-app-adblock-fast: update to 1.2.2-r8
+44534511c1|Eric Fahlgren|Tue Mar 3 15:05:45 2026 -0800|luci-layer2: create a minimal collection for layer-2 devices
+6e98b6338a|Stan Grishin|Mon Mar 2 20:17:14 2026 +0000|luci-app-https-dns-proxy: update to 2025.12.29-4
+a9ce53cbba|Stan Grishin|Mon Mar 2 20:33:19 2026 +0000|luci-app-pbr: update to 1.2.2-r8
+2365ee52d2|Paul Donald|Wed Mar 4 01:41:02 2026 +0100|luci-app-lldpd: fix 'dImg is not defined'
 </details>
