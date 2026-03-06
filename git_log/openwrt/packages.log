@@ -2,11 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2f9538d9d|Stan Grishin|Tue Mar 3 18:43:59 2026 +0000|adblock-fast: update to 1.2.2-r8
-6f610724a|Chester A. Unal|Thu Feb 26 10:48:04 2026 +0200|bsbf-bonding: add
-d66d8f63f|Chester A. Unal|Thu Feb 26 10:34:56 2026 +0200|bsbf-usb-netdev-autodhcp: add
-3590e61fa|Chester A. Unal|Thu Feb 19 12:48:25 2026 +0200|bsbf-resources: add
-3e2e9596c|Chester A. Unal|Thu Feb 19 12:48:17 2026 +0200|tcp-in-udp: add
-2b3a45c53|Stan Grishin|Mon Mar 2 20:21:48 2026 +0000|https-dns-proxy: update to 2025.12.29-4
-4d8e082d3|Stan Grishin|Mon Mar 2 20:29:26 2026 +0000|pbr: update to 1.2.2-r8
+f9c6661a7|Dirk Brenken|Thu Mar 5 21:03:45 2026 +0100|adblock: update 4.5.2‑2
+c52a949eb|Norman Gehrsitz|Wed Dec 31 03:02:10 2025 +0100|acme-acme.sh: support --cert-profile option
+8898f78be|Chester A. Unal|Tue Mar 3 12:28:56 2026 +0200|bsbf-resources: update to GIT HEAD of 2026-03-03
+a63a350e1|Chester A. Unal|Tue Mar 3 12:19:17 2026 +0200|bsbf-autoconf-cellular: add
+96ae116ff|Chester A. Unal|Mon Mar 2 12:35:25 2026 +0200|bsbf-openwrt-resources: add
 </details>

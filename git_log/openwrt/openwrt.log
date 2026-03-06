@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+360b1c8d11|Felix Fietkau|Thu Mar 5 17:12:09 2026 +0000|mac80211: fix a crash triggered by CSA with AP VLAN enabled
+</details>
