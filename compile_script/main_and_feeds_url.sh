@@ -2,11 +2,11 @@
 
 # 加载平台配置
 source $GITHUB_WORKSPACE/compile_script/platforms.sh
-# 声明全局数组
-declare -a openwrt_REPO_URLS=()
-declare -a immortalwrt_REPO_URLS=()
-declare -a lede_REPO_URLS=()
-declare -a all_REPO_URLS=()  # 汇总所有仓库URL,用于updatecheacker.sh
+# 声明全局数组,这些变量会被update_checker.sh使用,所以需要声明为全局变量，update_checker.sh会使用_REPO_URLS循环这些变量来获取所有的仓库URL和分支信息，以便进行更新检查
+declare -a openwrt_REPO_URLS=() # 存储 openwrt 仓库URL和分支
+declare -a immortalwrt_REPO_URLS=() # 存储 immortalwrt 仓库URL和分支
+declare -a lede_REPO_URLS=() # 存储 lede 仓库URL和分支
+# feeds_REPO_URLS=() # 存储 feeds 仓库URL和分支
 declare -a feeds_REPO_URLS=(
     "https://github.com/fw876/helloworld"
     "https://github.com/Openwrt-Passwall/openwrt-passwall-packages"
@@ -15,7 +15,9 @@ declare -a feeds_REPO_URLS=(
     "https://github.com/vernesong/OpenClash"
     "https://github.com/nikkinikki-org/OpenWrt-nikki"
 )
+declare -a all_REPO_URLS=()  # 汇总所有仓库URL,用于updatecheacker.sh使用,他由平台仓库URL和feeds仓库URL组成
 
+# 声明 custompackages 仓库URL数组
 declare -a custompackages_REPO_URLS=(
     https://github.com/jerrykuku/luci-theme-argon
     https://github.com/jerrykuku/luci-app-argon-config
@@ -28,7 +30,7 @@ declare -a custompackages_REPO_URLS=(
     https://github.com/AngelaCooljx/luci-theme-material3.git
     https://github.com/rufengsuixing/luci-app-adguardhome
     https://github.com/sbwml/luci-app-mosdns
-    https://github.com/sirpdboy/luci-app-netspeedtest
+    # https://github.com/sirpdboy/luci-app-netspeedtest
     https://github.com/timsaya/openwrt-bandix
     https://github.com/timsaya/luci-app-bandix
     https://github.com/destan19/OpenAppFilter
