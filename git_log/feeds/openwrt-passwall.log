@@ -2,7 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4520d0d|A-BO|Thu Mar 5 23:54:42 2026 +0800|luci: refactor the logic of node url test
-69346de|A-BO|Thu Mar 5 13:17:24 2026 +0800|luci: optimize
-f4f7f2b|A-BO|Thu Mar 5 09:47:27 2026 +0800|luci: fixup
+6c45f65|lwb1978|Fri Mar 6 20:46:12 2026 +0800|luci: 26.3.6
+4df51dd|lwb1978|Fri Mar 6 20:39:52 2026 +0800|luci: refactor the logic of node icmp/tcping test
+4947893|A-BO|Fri Mar 6 12:55:27 2026 +0800|luci: Sing-Box add DNS over HTTP3 (DoH3) support
+c426511|A-BO|Fri Mar 6 11:02:12 2026 +0800|luci: Sing-Box DoH supports configuring boot IP
 </details>

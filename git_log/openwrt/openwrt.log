@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-360b1c8d11|Felix Fietkau|Thu Mar 5 17:12:09 2026 +0000|mac80211: fix a crash triggered by CSA with AP VLAN enabled
+2eff59daf3|Valent Turkovic|Tue Mar 3 22:18:52 2026 +0100|ipq40xx: re-enable MeshPoint.One target
+274f6e5ab8|Rosen Penev|Wed Feb 18 17:57:22 2026 -0800|treewide: linksys: use nvmem MAC for hw_mac_addr
+1ec817beea|Rosen Penev|Sun Dec 7 18:11:02 2025 -0800|lantiq: add missing WAN MAC override
 </details>
