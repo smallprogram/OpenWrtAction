@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-2eff59daf3|Valent Turkovic|Tue Mar 3 22:18:52 2026 +0100|ipq40xx: re-enable MeshPoint.One target
-274f6e5ab8|Rosen Penev|Wed Feb 18 17:57:22 2026 -0800|treewide: linksys: use nvmem MAC for hw_mac_addr
-1ec817beea|Rosen Penev|Sun Dec 7 18:11:02 2025 -0800|lantiq: add missing WAN MAC override
+52f5481c3b|Jonas Gorski|Wed Jan 14 20:19:30 2026 +0100|build: use STAGING_DIR for special APK package versions
+241628ab3c|Álvaro Fernández Rojas|Thu Mar 5 14:13:55 2026 +0100|kernel: net: sfp: improve Huawei MA5671a fixup
 </details>

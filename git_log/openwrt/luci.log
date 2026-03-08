@@ -2,6 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-789365803b|Paul Donald|Fri Mar 6 18:47:49 2026 +0100|luci-app-p910nd: retain unchecked value for bidirectionality
-57ceef6489|Hannu Nyman|Fri Mar 6 18:34:21 2026 +0200|luci-base: update timezone data to 2026a
+36112eed71|Hannu Nyman|Sat Mar 7 21:28:14 2026 +0200|treewide: backport translations and sync
 </details>

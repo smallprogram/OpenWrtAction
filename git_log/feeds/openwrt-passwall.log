@@ -2,8 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6c45f65|lwb1978|Fri Mar 6 20:46:12 2026 +0800|luci: 26.3.6
-4df51dd|lwb1978|Fri Mar 6 20:39:52 2026 +0800|luci: refactor the logic of node icmp/tcping test
-4947893|A-BO|Fri Mar 6 12:55:27 2026 +0800|luci: Sing-Box add DNS over HTTP3 (DoH3) support
-c426511|A-BO|Fri Mar 6 11:02:12 2026 +0800|luci: Sing-Box DoH supports configuring boot IP
+00aa6f1|lwb1978|Sat Mar 7 12:57:33 2026 +0800|luci: adjust connection observatory of xray
 </details>
