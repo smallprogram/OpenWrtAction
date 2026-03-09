@@ -1,0 +1,13 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a373f17011|Tianling Shen|Sun Mar 8 16:19:44 2026 +0800|Merge Official Source
+65041d9860|Álvaro Fernández Rojas|Sat Mar 7 15:54:29 2026 +0100|omcproxy: update to Git HEAD (2026-03-07)
+52f5481c3b|Jonas Gorski|Wed Jan 14 20:19:30 2026 +0100|build: use STAGING_DIR for special APK package versions
+241628ab3c|Álvaro Fernández Rojas|Thu Mar 5 14:13:55 2026 +0100|kernel: net: sfp: improve Huawei MA5671a fixup
+2eff59daf3|Valent Turkovic|Tue Mar 3 22:18:52 2026 +0100|ipq40xx: re-enable MeshPoint.One target
+274f6e5ab8|Rosen Penev|Wed Feb 18 17:57:22 2026 -0800|treewide: linksys: use nvmem MAC for hw_mac_addr
+1ec817beea|Rosen Penev|Sun Dec 7 18:11:02 2025 -0800|lantiq: add missing WAN MAC override
+360b1c8d11|Felix Fietkau|Thu Mar 5 17:12:09 2026 +0000|mac80211: fix a crash triggered by CSA with AP VLAN enabled
+</details>

@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-36112eed71|Hannu Nyman|Sat Mar 7 21:28:14 2026 +0200|treewide: backport translations and sync
+7e202d60e3|Dirk Brenken|Sun Mar 8 18:59:11 2026 +0100|luci-app-adblock: sync with adblock 4.5.2-3
 </details>

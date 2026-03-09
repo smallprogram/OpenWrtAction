@@ -2,6 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-52f5481c3b|Jonas Gorski|Wed Jan 14 20:19:30 2026 +0100|build: use STAGING_DIR for special APK package versions
-241628ab3c|Álvaro Fernández Rojas|Thu Mar 5 14:13:55 2026 +0100|kernel: net: sfp: improve Huawei MA5671a fixup
+445814147f|Jonas Köppeler|Fri Mar 6 16:32:41 2026 +0000|kernel: add cake_mq fixes
+37a1070b37|Felix Fietkau|Sun Mar 8 15:32:00 2026 +0000|apk: add --force-reinstall option
+2eeab0174c|Kuan-Yi Li|Mon Mar 2 02:50:24 2026 +0800|apk: bump to 3.0.5
+3c1460a5a2|Paul Donald|Thu Mar 5 22:11:13 2026 +0100|ppp: add memmove fortify and remove MRU patch
+2c68f7b70b|John Audia|Thu Feb 19 14:58:26 2026 -0500|kernel: bump 6.12 to 6.12.74
+9fafde4a10|John Audia|Mon Feb 16 12:42:22 2026 -0500|kernel: bump 6.12 to 6.12.73
+6b31d54283|John Audia|Mon Feb 16 06:55:53 2026 -0500|kernel: bump 6.12 to 6.12.72
+65041d9860|Álvaro Fernández Rojas|Sat Mar 7 15:54:29 2026 +0100|omcproxy: update to Git HEAD (2026-03-07)
 </details>
