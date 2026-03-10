@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7e202d60e3|Dirk Brenken|Sun Mar 8 18:59:11 2026 +0100|luci-app-adblock: sync with adblock 4.5.2-3
+3a0dd448a7|Stan Grishin|Sun Mar 8 01:17:16 2026 +0000|luci-app-pbr: update to 1.2.2-r10
+275b59857a|Stan Grishin|Sat Mar 7 19:19:11 2026 +0000|luci-app-adblock-fast: update to 1.2.2-r10
 </details>

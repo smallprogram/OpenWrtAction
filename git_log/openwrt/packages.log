@@ -2,5 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ab3db0519|Dirk Brenken|Sun Mar 8 18:50:46 2026 +0100|adblock: update 4.5.2‑3
+a47a1fd5e|Chester A. Unal|Thu Mar 5 22:17:00 2026 +0200|bsbf-autoconf-dhcp: switch to wan_$DEVICENAME naming scheme
+aa151fd3b|Chester A. Unal|Thu Mar 5 18:54:20 2026 +0200|bsbf-autoconf-cellular: set device option for network
+66eb63373|Stan Grishin|Sun Mar 8 01:13:52 2026 +0000|pbr: update to 1.2.2-r10
+16ef7e4ec|Stan Grishin|Sat Mar 7 19:15:03 2026 +0000|adblock-fast: update to 1.2.2-r10
 </details>

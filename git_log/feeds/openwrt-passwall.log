@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-f4e3444|lwb1978|Mon Mar 9 00:06:02 2026 +0800|luci: optimize Geo file generation rule logic
-34622c3|A-BO|Sun Mar 8 15:42:27 2026 +0800|luci: Adapt to finalmask `quicParams` of xray
-d168362|A-BO|Sun Mar 8 15:38:58 2026 +0800|luci: fix
-82593cf|A-BO|Sun Mar 8 10:46:44 2026 +0800|luci: Fix subscription update failure with gzipped responses
-</details>
