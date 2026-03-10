@@ -30,7 +30,7 @@ declare -a custompackages_REPO_URLS=(
     https://github.com/AngelaCooljx/luci-theme-material3.git
     https://github.com/rufengsuixing/luci-app-adguardhome
     https://github.com/sbwml/luci-app-mosdns
-    # https://github.com/sirpdboy/luci-app-netspeedtest
+    https://github.com/sirpdboy/netspeedtest.git
     https://github.com/timsaya/openwrt-bandix
     https://github.com/timsaya/luci-app-bandix
     https://github.com/destan19/OpenAppFilter
