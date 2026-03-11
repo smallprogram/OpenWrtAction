@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-aaf3ef6|timsaya|Mon Mar 9 20:56:41 2026 +0800|Add all TCP states to connection flows state filter
-df69ad2|timsaya|Mon Mar 9 18:59:23 2026 +0800|Bump version to 0.12.6
-1002c41|timsaya|Mon Mar 9 18:58:25 2026 +0800|Add i18n for connection flows and neighbor flush settings
-91cc08a|timsaya|Mon Mar 9 18:11:19 2026 +0800|feat: display uplink and WiFi band badges in device info
-68d4f96|timsaya|Mon Mar 9 16:18:08 2026 +0800|Add connection flows modal and adapt to Bandix API
+fa749bb|timsaya|Tue Mar 10 11:57:02 2026 +0800|refactor: use wan_tx_rate_limit/wan_rx_rate_limit for schedule rules
 </details>

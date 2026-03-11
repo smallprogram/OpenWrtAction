@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-bandix new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-19e4f74|timsaya|Mon Mar 9 18:34:48 2026 +0800|Upgrade to bandix 0.12.7 and add traffic neighbor flush options
-</details>

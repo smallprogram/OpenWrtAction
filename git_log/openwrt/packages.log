@@ -2,8 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a47a1fd5e|Chester A. Unal|Thu Mar 5 22:17:00 2026 +0200|bsbf-autoconf-dhcp: switch to wan_$DEVICENAME naming scheme
-aa151fd3b|Chester A. Unal|Thu Mar 5 18:54:20 2026 +0200|bsbf-autoconf-cellular: set device option for network
-66eb63373|Stan Grishin|Sun Mar 8 01:13:52 2026 +0000|pbr: update to 1.2.2-r10
-16ef7e4ec|Stan Grishin|Sat Mar 7 19:15:03 2026 +0000|adblock-fast: update to 1.2.2-r10
+6f585a2b7|Wesley Gimenes|Tue Feb 17 03:21:11 2026 -0300|netbird: update to 0.66.2, patch for Go 1.26 build
+ad831e7f8|Wesley Gimenes|Tue Feb 17 02:45:20 2026 -0300|netbird: update to 0.61.2 (breaking change)
+9540cbb2c|Wesley Gimenes|Tue Feb 17 04:04:06 2026 -0300|netbird: move state file to reduce storage wear
 </details>

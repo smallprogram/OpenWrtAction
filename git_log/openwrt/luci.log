@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-3a0dd448a7|Stan Grishin|Sun Mar 8 01:17:16 2026 +0000|luci-app-pbr: update to 1.2.2-r10
-275b59857a|Stan Grishin|Sat Mar 7 19:19:11 2026 +0000|luci-app-adblock-fast: update to 1.2.2-r10
+5b394904d0|Paul Donald|Tue Mar 10 18:52:32 2026 +0100|luci-base: add lstat to fs
+7dce75a4fb|Paul Donald|Tue Mar 10 18:02:59 2026 +0100|luci-app-unbound: return 'enabled' boolean value
 </details>

@@ -1,6 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-64b0742cd2|Tianling Shen|Mon Mar 9 14:18:28 2026 +0800|ramips: disable build for genexis pulse-ex400 by default
-</details>
