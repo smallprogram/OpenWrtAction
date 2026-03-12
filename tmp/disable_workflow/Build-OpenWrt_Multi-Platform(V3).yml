@@ -160,7 +160,7 @@ jobs:
           echo "SOURCE_PATH=$PWD" >> $GITHUB_ENV
           echo "status=success" >> $GITHUB_OUTPUT
       - name: Upload Source To Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: steps.generate_image.outputs.status == 'success'
         with:
           name: Source_${{ matrix.source_code_platform }}
@@ -174,7 +174,7 @@ jobs:
           $GITHUB_WORKSPACE/$GENERATE_GIT_LOG_SH "${{ matrix.source_code_platform }}"
           
       - name: Upload Git Log To Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: steps.git_log.outputs.status == 'success'
         with:
           name: git_log_${{ matrix.source_code_platform }}
@@ -188,7 +188,7 @@ jobs:
           $GITHUB_WORKSPACE/$GENERATE_RELEASE_TAG_SH "${{ needs.job_init.outputs.output_release_tag }}" "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
       
       - name: Upload Release Tag To Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: release_${{ matrix.source_code_platform }}
           path: release_${{ matrix.source_code_platform }}.txt
@@ -212,14 +212,14 @@ jobs:
         git checkout -b temp-tag-gitlog
     - name: Download Git Log From Artifacts
       id : download_gitlog
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v8
       with:
         pattern: git_log_*
         merge-multiple: true
 
     - name: Download Release Tag From Artifacts
       id : download_releasetag
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v8
       with:
         pattern: release_*
         merge-multiple: true
@@ -230,7 +230,7 @@ jobs:
         chmod +x $UPDATE_GIT_LOG_SH
         $GITHUB_WORKSPACE/$UPDATE_GIT_LOG_SH "${{ needs.job_init.outputs.output_release_tag }}"
     - name: Upload Tags To Artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: release_tag
         path: release.txt
@@ -320,7 +320,7 @@ jobs:
           ln -sf /workdir/download $GITHUB_WORKSPACE/download
       - name: Download Source From Artifacts
         id : download
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: Source_${{ matrix.source_code_platform }}
           path: download
@@ -421,7 +421,7 @@ jobs:
           echo "status=success" >> $GITHUB_OUTPUT
   
       - name: Upload Source To Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: steps.generate_image.outputs.status == 'success'
         with:
           name: Source_${{ matrix.source_code_platform }}_${{ matrix.platform }}
@@ -488,13 +488,13 @@ jobs:
           ln -sf /workdir/download $GITHUB_WORKSPACE/download
       - name: Download Source From Artifacts
         id : download
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: Source_${{ matrix.source_code_platform }}_${{ matrix.platform }}
           path: download
 
       - name: Download Tags
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: release_tag
           path: download
@@ -556,7 +556,7 @@ jobs:
         run: df -hT
 
       - name: Upload Bin Directory To Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true'
         with:
           name: OpenWrt_bin_${{ matrix.source_code_platform }}_${{ matrix.platform }}
@@ -601,7 +601,7 @@ jobs:
           echo "FIRMWARE=$firmware_path" >> $GITHUB_ENV
           echo "status=success" >> $GITHUB_OUTPUT
       - name: Upload Firmware Directory To Artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && !cancelled()
         with:
           name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
@@ -633,7 +633,7 @@ jobs:
       run: |
         git pull origin ${{ github.ref_name }}
     - name: Download Tags
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v8
       with:
         name: release_tag
 
@@ -645,7 +645,7 @@ jobs:
           chmod +x $ORGANIZE_TAG_SH
           $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}"
     - name: Upload Tags To Artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: release_tag_final
         path: release.txt
