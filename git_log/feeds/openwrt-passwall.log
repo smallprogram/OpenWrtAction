@@ -1,6 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-1cb8e13|A-BO|Tue Mar 10 21:51:28 2026 +0800|luci: optimize xhttp_extra and finalmask for xray
-</details>

@@ -1,6 +1,0 @@
-<details> <summary> <b>luci-app-bandix new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-fa749bb|timsaya|Tue Mar 10 11:57:02 2026 +0800|refactor: use wan_tx_rate_limit/wan_rx_rate_limit for schedule rules
-</details>
