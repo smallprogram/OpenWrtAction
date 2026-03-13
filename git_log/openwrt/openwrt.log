@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-34ae6ba2d8|Felix Fietkau|Wed Mar 11 17:29:51 2026 +0000|procd: update to Git HEAD (2026-03-11)
+8aac058ef0|Hauke Mehrtens|Fri Mar 13 00:04:05 2026 +0100|libubox: update to Git HEAD (2026-03-13)
+4ae4b2d49d|Jonas Gorski|Thu Mar 12 20:27:17 2026 +0100|umdns: update to Git HEAD (2026-02-06)
+8ff0207d92|Robert Marko|Thu Mar 12 11:05:40 2026 +0100|microchipsw: lan969x: tactical-1000: fix SFP I2C buses
 </details>

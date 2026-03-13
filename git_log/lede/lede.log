@@ -1,6 +1,0 @@
-<details> <summary> <b>lede new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-80ab9ccd8|pr-hung|Wed Mar 11 13:50:25 2026 +0800|fs/ntfs3: Fix invalid free in log_replay
-</details>
