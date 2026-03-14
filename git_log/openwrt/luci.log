@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-780a7cef38|Paul Donald|Thu Mar 12 21:39:24 2026 +0100|luci-app-keepalived: add a global enabled flag
-11264f9297|Paul Donald|Thu Mar 12 06:00:11 2026 +0100|luci-app-unbound: additional fixes
+2df90499af|Christian Marangi|Thu Mar 12 16:07:49 2026 +0100|luci-mod-network: escape WiFi SSID on Scanning AP modal
+9fb61f7860|Paul Donald|Fri Mar 13 13:53:34 2026 +0100|luci-app-unbound: additional fixes
 </details>
