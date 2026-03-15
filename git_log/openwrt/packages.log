@@ -2,16 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8bed37abc|Chester A. Unal|Thu Mar 12 12:12:17 2026 +0200|bsbf-openwrt-resources: add BSBF URL to packages
-bd9defb9d|Chester A. Unal|Thu Mar 12 12:11:13 2026 +0200|bsbf-resources: add BSBF URL to packages
-1d41eae69|Chester A. Unal|Thu Mar 12 08:13:30 2026 +0200|bsbf-plpmtu: add
-d77cfe56e|Chester A. Unal|Thu Mar 12 07:54:57 2026 +0200|plp-mtu-discovery: add
-43d631e2b|Ivan Belokobylskiy|Sat Mar 7 17:52:02 2026 +0400|python-evdev: bump version to 1.9.3
-5269b6487|Ivan Belokobylskiy|Sat Mar 7 17:51:05 2026 +0400|python-evdev: add mandatory uinput.h header to builder
-16056efe4|Georgi Valkov|Sat Feb 7 18:41:58 2026 +0200|ustreamer: update to 6.52
-a06b2ac85|Georgi Valkov|Sun Feb 1 03:07:13 2026 +0200|ustreamer: add package 6.51
-77792e9b1|George Sapkin|Thu Mar 12 02:07:16 2026 +0200|adguardhome: add config reload trigger
-a80994f9c|George Sapkin|Tue Mar 10 20:02:11 2026 +0200|adguardhome: bump to 0.107.73
-351979cc9|Afiq Nazrie|Sat Mar 7 12:43:42 2026 +0700|adguardhome: add jail_mount_rw config option
-89125be70|George Sapkin|Wed Mar 4 17:11:53 2026 +0200|adguardhome: add GC and thread control variables
+6bf6e7e88|Hannu Nyman|Sat Mar 14 09:53:12 2026 +0200|nano: improve uci coloring of unterminated strings
+c37cf848d|Maxim Storchak|Thu Jan 8 18:18:50 2026 +0200|linenoise: update to 2026-01-08 (dc83cc3)
 </details>

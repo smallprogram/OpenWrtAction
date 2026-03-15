@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d8de9b068b|Daniel Golle|Fri Mar 13 23:15:18 2026 +0000|procd: update to git HEAD
-1353227ad3|Markus Stockhausen|Wed Mar 11 21:02:51 2026 +0100|realtek: rtl838x: fix non-functional reboot
+62d8101e09|Fabrice Fontaine|Fri Mar 13 20:57:11 2026 +0100|tools/expat: fix PKG_CPE_ID
+97451487cc|Semih Baskan|Wed Mar 11 18:05:57 2026 +0300|mediatek: filogic: tplink-be450: fix RTL8261N reset timing, add missing WLAN button, fix memory size
+ca04893ec7|Paul Spooren|Sat Mar 14 19:00:52 2026 +0100|package: update jsonfilter to latest HEAD 2026-03-12
+cf1c8c1f3a|Paul Spooren|Sat Mar 14 18:58:52 2026 +0100|package: bump odhcpd to latest HEAD 2026-03-12
 </details>

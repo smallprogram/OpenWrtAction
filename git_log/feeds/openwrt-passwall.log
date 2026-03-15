@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+9d9691d|A-BO|Sat Mar 14 14:02:24 2026 +0800|luci: fix syntax errors
+46e93b0|A-BO|Sat Mar 14 13:04:25 2026 +0800|luci: remove outdated fragment/noise configuration and fix typo from xray
+</details>

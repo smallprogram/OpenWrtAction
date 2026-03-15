@@ -1,0 +1,8 @@
+<details> <summary> <b>netspeedtest new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+b5d5f03|Pdboy Sir|Sun Mar 15 04:06:25 2026 +0800|add Ipfer3 and Homebox settings for port service
+a309528|Pdboy Sir|Sun Mar 15 03:56:26 2026 +0800|up release
+0c5fcc2|Pdboy Sir|Sun Mar 15 01:56:44 2026 +0800|Delete luci-app-netspeedtest/root/usr/libexec/rpcd/luci.netspeedtest
+</details>
