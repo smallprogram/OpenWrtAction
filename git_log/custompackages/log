@@ -2,7 +2,7 @@ luci-theme-argon:7aba78ccb84297496f63e1dacefe64c89d83d72e
 luci-app-argon-config:2ddae597f994f8a49358f8dfd03b7e6a732aae63
 luci-theme-kucat:68e731b8a97775cd19788e7b9b14540c7147f923
 luci-app-kucat-config:e51de5e4f9c98c234777c26948ff454a2ae3dc99
-luci-theme-aurora:8b38d8dd6b4f321c8f146a6d936772d89fc56e77
+luci-theme-aurora:e8c8d1981b34f85ebde88c0a9d250a93734b1300
 luci-app-adguardhome:37fdf502b99328b37c9ef4c4387f069f67253f85
 luci-app-mosdns:c9d5d16a93816641ab5223695b3361749dee1c06
 luci-app-netspeedtest:
@@ -12,5 +12,5 @@ OpenAppFilter:4f4ddfaf40c59be1ee4bf7227ee4942aa5364c09
 luci-theme-alpha:1ab362c3a4e9d235ba68c62c016a8073ef662a7d
 luci-app-alpha-config:e3f1dab7abf775be66846008b6aff7c62619ba35
 luci-theme-material3:9b2de0c8ff6a91baf738559a2a0044d62470a805
-luci-theme-alpha-reborn:6c9fa9a06052d2b088c872048eaa72f660d70db4
-netspeedtest:b5d5f03555fe33b56fca044a491629f7c1b34d7a
+luci-theme-alpha-reborn:99e0a0bd223e421c0b95182f715047d6c5511058
+netspeedtest:51dfa28fa782abed89cddd2369fd59f2116ae0c8

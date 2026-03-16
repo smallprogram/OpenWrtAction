@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6bf6e7e88|Hannu Nyman|Sat Mar 14 09:53:12 2026 +0200|nano: improve uci coloring of unterminated strings
-c37cf848d|Maxim Storchak|Thu Jan 8 18:18:50 2026 +0200|linenoise: update to 2026-01-08 (dc83cc3)
+83b7ce07d|Dirk Brenken|Sun Mar 15 19:16:44 2026 +0100|adblock: release 4.5.3-1
+ecf901a6b|Dirk Brenken|Sun Mar 15 18:17:04 2026 +0100|banip: release 1.8.1-1
+f3717b606|Ivan Pavlov|Sun Mar 15 12:25:34 2026 +0200|curl: update to 8.19.0
+a57d4eb78|Aleksey Vasilenko|Sun Mar 15 12:25:21 2026 +0200|krant: drop maintainership
 </details>

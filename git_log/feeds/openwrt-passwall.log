@@ -2,6 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9d9691d|A-BO|Sat Mar 14 14:02:24 2026 +0800|luci: fix syntax errors
-46e93b0|A-BO|Sat Mar 14 13:04:25 2026 +0800|luci: remove outdated fragment/noise configuration and fix typo from xray
+1288686|某只大乌龟|Sun Mar 15 23:26:20 2026 +0800|luci: allow iface node to appear in main tab dropdown when no normal node (#4302)
+dacc81c|A-BO|Sun Mar 15 21:04:41 2026 +0800|luci: optimize the config for sing-box
+aee17a9|A-BO|Sun Mar 15 13:26:30 2026 +0800|luci: Optimize TUIC settings
 </details>

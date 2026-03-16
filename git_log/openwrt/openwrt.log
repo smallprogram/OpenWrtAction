@@ -2,8 +2,14 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-62d8101e09|Fabrice Fontaine|Fri Mar 13 20:57:11 2026 +0100|tools/expat: fix PKG_CPE_ID
-97451487cc|Semih Baskan|Wed Mar 11 18:05:57 2026 +0300|mediatek: filogic: tplink-be450: fix RTL8261N reset timing, add missing WLAN button, fix memory size
-ca04893ec7|Paul Spooren|Sat Mar 14 19:00:52 2026 +0100|package: update jsonfilter to latest HEAD 2026-03-12
-cf1c8c1f3a|Paul Spooren|Sat Mar 14 18:58:52 2026 +0100|package: bump odhcpd to latest HEAD 2026-03-12
+9e685c3fa7|Julius Schwartzenberg|Thu Feb 19 19:08:59 2026 +0100|ipq40xx: enable Devolo Magic 2 WiFi next
+827b8c8920|Hauke Mehrtens|Mon Mar 16 00:51:04 2026 +0100|jsonfilter: update to Git HEAD (2026-03-16)
+b2d1e03c83|Jakub Vaněk|Tue Mar 3 22:41:28 2026 +0100|mediatek: filogic: rename Cudy M3000 v1 to v1/v2
+ca825537fb|Jakub Vaněk|Mon Mar 2 21:14:28 2026 +0100|mediatek: filogic: add support for Cudy M3000 w/ YT8821 PHY
+4d66f702c9|Jakub Vaněk|Mon Mar 2 20:36:29 2026 +0100|kernel: add patch for YT8821 address collision
+008e51950b|Mario Andrés Pérez|Sun Mar 15 17:33:14 2026 +0100|libubox: set abi version to previous bump for stable release
+e831ea1b1c|David Bauer|Sun Mar 15 17:47:15 2026 +0100|wifi: mt76: mt7915: set mt76 specific PS flag
+e024a3c912|Felix Fietkau|Thu Mar 5 18:01:25 2026 +0000|mt76: update to Git HEAD (2026-03-05)
+1e7d1aa453|Felix Fietkau|Sun Mar 1 17:15:37 2026 +0000|mt76: update to Git HEAD (2026-03-01)
+994d198b08|Felix Fietkau|Wed Jan 28 11:26:26 2026 +0000|mt76: update to Git HEAD (2026-01-28)
 </details>
