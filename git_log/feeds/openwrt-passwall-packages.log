@@ -1,7 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-4f6e47c|github-actions[bot]|Sun Mar 15 20:40:04 2026 +0800|sing-box: update to 1.13.3 (#606)
-8527701|A-BO|Sun Mar 15 12:13:16 2026 +0800|tuic-client: update to 1.7.1
-</details>

@@ -1,6 +1,0 @@
-<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-7842c2d|Joseph Mory|Sun Mar 15 13:12:57 2026 +0800|chore: remove default `api_tls_listen` mixin option
-</details>

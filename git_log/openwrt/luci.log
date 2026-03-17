@@ -2,7 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c98815eca3|Hannu Nyman|Sun Mar 15 22:41:13 2026 +0200|treewide: backport translations from master
-1bbc1044cf|Dirk Brenken|Sun Mar 15 19:42:25 2026 +0100|luci-app-adblock: release 4.5.3-1
-96a1042817|Dirk Brenken|Sun Mar 15 18:21:18 2026 +0100|luci-app-banip: release 1.8.1-1
+6efa8ae506|Ramon Van Gorkom|Sun Mar 8 14:45:19 2026 +0100|luci-mod-status: fix syslog page with syslog-ng
+acb1ac8ffc|Ramon Van Gorkom|Fri Mar 13 22:08:59 2026 +0100|luci-app-usteer: add parameters for usteer-ng
+13c96bf7eb|Paul Donald|Mon Mar 16 22:55:33 2026 +0100|luci-mod-system: add LED interval parameter
+a6d34617fb|Vishnu Verma|Sun Mar 8 20:17:11 2026 +0530|luci-mod-network: fix field names for private key file and password
+3aeb77f764|Konstantin Glukhov|Wed Mar 11 15:16:30 2026 +0900|luci-base: network.js: de-dup ifc IPv6 addresses
+032b8df6d4|Dirk Brenken|Mon Mar 16 19:16:02 2026 +0100|luci-app-banip: update 1.8.1-2
+2272b4baee|Dirk Brenken|Mon Mar 16 19:01:14 2026 +0100|luci-app-adblock: update 4.5.3-2
+6efc20a913|Paul Donald|Mon Mar 16 15:54:07 2026 +0100|luci-base: resolve symlinks for PCI hardware
 </details>
