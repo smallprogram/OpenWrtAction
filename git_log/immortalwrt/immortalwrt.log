@@ -1,0 +1,23 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+1cc0390ddf|Tianling Shen|Wed Mar 18 11:06:07 2026 +0800|Merge Official Source
+f3a9a42c33|Hauke Mehrtens|Tue Mar 17 23:31:00 2026 +0100|OpenWrt v25.12.1: revert to branch defaults
+d6115e4212|Hauke Mehrtens|Tue Mar 17 23:30:56 2026 +0100|OpenWrt v25.12.1: adjust config defaults
+b21cfa8f8c|Álvaro Fernández Rojas|Mon Mar 16 19:03:14 2026 +0100|odhcpd: update to 25.12 Git HEAD (2026-03-16)
+9e27b6927f|Eric Fahlgren|Mon Mar 16 08:26:03 2026 -0700|iptables: prefer nft variants over zz-legacy
+eb68434835|Miika Sundström|Sun Mar 15 18:40:42 2026 +0200|wifi-scripts: fix [VHT160]/[VHT160-80PLUS80] usage
+f7d91e0cf8|Esat Yiğithan GÖKTOPRAK|Mon Mar 16 20:38:00 2026 +0300|ramips: fix for Keenetic KN-1910
+837d70e179|Oliver Sedlbauer|Mon Mar 16 10:27:38 2026 +0100|ramips: mt76x8: fix bootcount init script file permissions
+940ab99796|Hauke Mehrtens|Mon Mar 16 02:40:09 2026 +0100|lantiq: adapt gpio-stp-xway node name to get clock
+412f0349e2|Hauke Mehrtens|Mon Mar 16 12:10:10 2026 +0100|Revert "package: bump odhcpd to latest HEAD 2026-03-12"
+805c8efad9|Felix Fietkau|Sat Feb 21 10:14:13 2026 +0000|mac80211: backport eMLSR/eMLMR parsing support
+9e685c3fa7|Julius Schwartzenberg|Thu Feb 19 19:08:59 2026 +0100|ipq40xx: enable Devolo Magic 2 WiFi next
+827b8c8920|Hauke Mehrtens|Mon Mar 16 00:51:04 2026 +0100|jsonfilter: update to Git HEAD (2026-03-16)
+b2d1e03c83|Jakub Vaněk|Tue Mar 3 22:41:28 2026 +0100|mediatek: filogic: rename Cudy M3000 v1 to v1/v2
+ca825537fb|Jakub Vaněk|Mon Mar 2 21:14:28 2026 +0100|mediatek: filogic: add support for Cudy M3000 w/ YT8821 PHY
+
+.....................
+
+</details>

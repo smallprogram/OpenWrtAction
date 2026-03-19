@@ -1,0 +1,8 @@
+<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+28fe893|Joseph Mory|Wed Mar 18 22:32:07 2026 +0800|chore: bump version to 1.25.3
+1ee526b|Joseph Mory|Wed Mar 18 22:18:46 2026 +0800|ci: update actions version
+841b68d|Joseph Mory|Wed Mar 18 21:27:53 2026 +0800|fix: update yq command options for improved compatibility and error handling
+</details>

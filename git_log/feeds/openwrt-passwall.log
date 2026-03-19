@@ -1,0 +1,6 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+22c489d|A-BO|Wed Mar 18 21:39:44 2026 +0800|luci: add ech `query_server_name` and fix bug for sing-box
+</details>
