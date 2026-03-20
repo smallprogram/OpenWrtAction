@@ -1,0 +1,10 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+ee3fb6f5a|George Sapkin|Fri Mar 13 19:54:12 2026 +0200|adguardhome: validate config
+cc5f6c6cd|Stan Grishin|Mon Mar 9 23:58:08 2026 +0000|pbr: update to 1.2.2-r12
+442a869c3|Sander van Deijck|Fri Mar 13 20:24:03 2026 +0100|openvpn: update to 2.6.19
+12e5db04e|Sander van Deijck|Fri Mar 13 20:18:32 2026 +0100|ovpn-dco: update to version 0.2.20251017
+a79db5d81|Daniel F. Dickinson|Sun Jan 25 11:05:43 2026 -0500|mailsend: fix ssl variant to use opensssl
+</details>
