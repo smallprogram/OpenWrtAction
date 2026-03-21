@@ -1,0 +1,19 @@
+<details> <summary> <b>OpenClash new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a4c2052d|vernesong|Fri Mar 20 11:26:15 2026 +0800|0.47.075
+1206c78e|vernesong|Fri Mar 20 02:50:03 2026 +0800|chore: sub info retry interval
+bc67d019|vernesong|Fri Mar 20 02:49:21 2026 +0800|fix: #5044
+e6c0d40c|vernesong|Thu Mar 19 08:37:09 2026 +0800|0.47.074
+e0e916ba|vernesong|Thu Mar 19 08:36:02 2026 +0800|fix: add missing func #5040
+c3227bed|vernesong|Thu Mar 19 08:17:38 2026 +0800|fix: #5035
+ea154740|vernesong|Wed Mar 18 18:37:51 2026 +0800|0.47.073
+d0e892f5|vernesong|Wed Mar 18 18:37:09 2026 +0800|chore: refine sub info retry
+7b210b23|Young|Wed Mar 18 00:23:42 2026 +0800|fix: fix_short_id_quotes breaks YAML when short-id value is empty (#5030)
+a852ed22|vernesong|Tue Mar 17 23:30:31 2026 +0800|chore: set enable when unexpected close
+fc1e8d2c|vernesong|Mon Mar 16 21:33:48 2026 +0800|fix: config sub url format
+9cbdbf21|vernesong|Mon Mar 16 06:33:19 2026 +0800|fix typo
+ab5ccf38|vernesong|Sun Mar 15 17:47:36 2026 +0800|0.47.072
+242b403b|vernesong|Sun Mar 15 17:23:30 2026 +0800|#5022
+</details>

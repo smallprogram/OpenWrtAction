@@ -2,17 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f093592467|David Bauer|Thu Mar 19 17:03:48 2026 +0100|mt76: remove incompatible patch
-c2438757b1|Felix Fietkau|Thu Mar 19 12:33:56 2026 +0000|mt76: update to Git HEAD (2026-03-19)
-60a82f13e5|Matt Merhar|Thu Mar 5 22:05:40 2026 -0500|mac80211: ath12k: backport thermal sensor support
-f5c930539a|Shine|Wed Mar 18 21:08:38 2026 +0100|wifi-scripts: fix hostapd config for 160MHz
-cf9b305a5f|Rosen Penev|Sun Jul 13 11:00:50 2025 -0700|uboot-envtools: fix meraki mx60 definition
-f4bd7df815|Rosen Penev|Sun Jul 13 11:11:28 2025 -0700|uboot-envtools: fix meraki mr24 definition
-f2d6f6940d|Edward Chow|Sat Feb 7 10:03:03 2026 +0800|apm821xx: mx60: increment compat_version
-d5d2149b04|Rosen Penev|Tue Oct 22 13:02:47 2024 -0700|apm821xx: disable NVMEM_U_BOOT_ENV
-2d930fce40|Rosen Penev|Sat Oct 5 15:33:51 2024 -0700|apm821xx: meraki-mx60: fix ubootenv definitions
-7380154d3a|Rosen Penev|Sun Jul 13 11:19:10 2025 -0700|apm821xx: meraki-mr24: fix ubootenv definitions
-32dac17999|Rosen Penev|Sun Oct 6 12:55:49 2024 -0700|apm821xx: mybooklive: fix ubootenv probe
-03605e8a3e|Rosen Penev|Sun Oct 6 12:50:02 2024 -0700|apm821xx: wndr4700: fix uboot-env
-2d6386a9cc|Edward Chow|Mon Feb 9 10:54:35 2026 +0800|Revert "apm821xx: rename pciex to pcie"
+56a4921845|Shiji Yang|Sat Mar 21 00:53:00 2026 +0800|ramips: kernel: drop ip_fast_csum() dead loop fix
+975b02a5bb|Edward Chow|Wed Mar 11 16:19:26 2026 +0800|mac80211: ath9k: patch hw.c for gpio mask from dt
+5e9be2e9d8|Edward Chow|Fri Mar 20 11:01:43 2026 +0800|ath79: untag to cpu ports on qxwlan_e558-v2
+b51443439e|Edward Chow|Thu Jul 17 19:29:10 2025 +0800|ath79: untag to cpu ports on 2-cpu-port devices by default
+4d30029d40|Andrew Sim|Fri Mar 20 06:21:26 2026 +0100|wifi-scripts: ucode: use correct antenna count for SU beamformee
 </details>

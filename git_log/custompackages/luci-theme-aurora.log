@@ -1,0 +1,7 @@
+<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+7448412|github-actions[bot]|Fri Mar 20 15:47:47 2026 +0000|build: update frontend assets
+5e8ca92|Eamon|Fri Mar 20 23:47:09 2026 +0800|fix: prevent content overflow in ModemData panel
+</details>

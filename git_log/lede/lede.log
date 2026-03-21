@@ -1,0 +1,9 @@
+<details> <summary> <b>lede new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+6c3097fb8|coolsnowwolf|Fri Mar 20 17:49:49 2026 +0800|mediatek: add GL.iNET GL-MT3600BE support
+4cbf0d490|coolsnowwolf|Fri Mar 20 17:37:39 2026 +0800|mt76: firmware: add mt7990 firmware
+15b8e2155|Lorenzo Bianconi|Sun Nov 16 15:17:32 2025 +0100|mt76: Enable NPU support for Airoha AN7581 SoC
+8f0c59681|coolsnowwolf|Fri Mar 20 17:29:11 2026 +0800|mac80211: import version 6.18.7
+</details>
