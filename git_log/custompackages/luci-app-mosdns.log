@@ -2,18 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c909c1d|sbwml|Fri Mar 20 20:12:21 2026 +0800|luci-app-mosdns: refactor geodata update with checksum pre-check
-7839b99|sbwml|Fri Mar 20 19:41:30 2026 +0800|luci-app-mosdns: init.d: improve DHCP redirect and restore handling
-8823314|sbwml|Fri Mar 20 18:17:26 2026 +0800|luci-app-mosdns: i18n: fix incorrect indentation characters
-ae6115a|sbwml|Fri Mar 20 18:12:48 2026 +0800|luci-app-mosdns: rpcd: support reading custom configuration logs
-20ff987|sbwml|Fri Mar 20 11:38:47 2026 +0800|ci: update workflow
-b52723b|sbwml|Fri Mar 20 11:37:55 2026 +0800|luci-app-mosdns: add missing i18n
-6f31050|sbwml|Fri Mar 20 10:41:54 2026 +0800|mosdns: update dependencies
-7dcc097|sbwml|Fri Mar 20 10:33:19 2026 +0800|v2day: unpack: optimize memory usage
-43071cb|sbwml|Fri Mar 20 09:26:14 2026 +0800|luci-app-mosdns: rules: call RPC to restart to avoid slow LuCI response issues
-ef4f9b2|sbwml|Fri Mar 20 09:03:30 2026 +0800|luci-app-mosdns: prevent ubus timeouts by using standalone ucode script
-96a80c9|sbwml|Thu Mar 19 20:42:39 2026 +0800|luci-app-mosdns: bumo to 1.7.0
-6ce42ef|sbwml|Thu Mar 19 20:41:36 2026 +0800|luci-app-mosdns: i18n: update zh_Hans translations
-0c1e16d|sbwml|Thu Mar 19 20:10:29 2026 +0800|luci-app-mosdns: rewrite RPC side using ucode
-737214d|sbwml|Thu Mar 19 14:03:06 2026 +0800|luci-app-mosdns: correctly handle empty rule inputs
+be55282|sbwml|Sat Mar 21 12:35:08 2026 +0800|luci-app-mosdns: fix dnsmasq reload when service is not running
 </details>

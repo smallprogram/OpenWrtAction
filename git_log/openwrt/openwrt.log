@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-56a4921845|Shiji Yang|Sat Mar 21 00:53:00 2026 +0800|ramips: kernel: drop ip_fast_csum() dead loop fix
-975b02a5bb|Edward Chow|Wed Mar 11 16:19:26 2026 +0800|mac80211: ath9k: patch hw.c for gpio mask from dt
-5e9be2e9d8|Edward Chow|Fri Mar 20 11:01:43 2026 +0800|ath79: untag to cpu ports on qxwlan_e558-v2
-b51443439e|Edward Chow|Thu Jul 17 19:29:10 2025 +0800|ath79: untag to cpu ports on 2-cpu-port devices by default
-4d30029d40|Andrew Sim|Fri Mar 20 06:21:26 2026 +0100|wifi-scripts: ucode: use correct antenna count for SU beamformee
+5337352ffc|Rosen Penev|Fri Mar 20 17:45:39 2026 -0700|ipq40xx: add CONFIG_NVMEM_BLOCK
 </details>

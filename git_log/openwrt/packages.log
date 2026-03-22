@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-edac1ddbe|Stan Grishin|Thu Mar 19 02:28:30 2026 +0000|adblock-fast: update to 1.2.2-r12
-f1da10044|Niklas Thorild|Tue Mar 17 18:08:26 2026 +0100|telegraf: update to 1.38.1 - Update Telegraf to v1.38.1
-d38b91001|George Sapkin|Thu Mar 12 19:59:23 2026 +0200|sqlite3: bump to 3.52.0
+8d9f2874d|Christian Lachner|Sat Mar 21 15:37:57 2026 +0100|haproxy: update to v3.2.15
+3ced52b73|Niklas Thorild|Thu Mar 19 20:52:30 2026 +0100|telegraf: add disk plugin to small variant
 </details>
