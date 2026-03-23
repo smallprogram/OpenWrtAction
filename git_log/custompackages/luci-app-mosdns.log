@@ -1,6 +1,0 @@
-<details> <summary> <b>luci-app-mosdns new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-be55282|sbwml|Sat Mar 21 12:35:08 2026 +0800|luci-app-mosdns: fix dnsmasq reload when service is not running
-</details>

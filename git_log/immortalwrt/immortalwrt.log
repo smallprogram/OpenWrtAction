@@ -2,5 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-d7bb9e34f9|Tianling Shen|Sat Mar 21 12:00:39 2026 +0800|mbedtls: pass -march=armv8-a to make fortify happy
+e625a07098|Tianling Shen|Sun Mar 22 14:28:13 2026 +0800|ath79: disable build for fortinet fap series by default
 </details>

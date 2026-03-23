@@ -1,0 +1,8 @@
+<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+fc17f19|A-BO|Sun Mar 22 17:04:32 2026 +0800|luci: add naiveproxy support of sing-box
+6eaac0d|A-BO|Sun Mar 22 11:29:59 2026 +0800|luci: optimize
+7e164bb|A-BO|Sun Mar 22 10:32:36 2026 +0800|luci: fix
+</details>

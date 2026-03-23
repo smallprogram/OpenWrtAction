@@ -1,0 +1,8 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+8bbf247ca3|Dirk Brenken|Sun Mar 22 20:01:12 2026 +0100|luci-app-adblock: update 4.5.3-3
+e597fc0798|Hannu Nyman|Sun Mar 22 19:40:09 2026 +0200|treewide: backport i18n translations from master
+f218c9318c|Dirk Brenken|Sun Mar 22 16:19:42 2026 +0100|luci-app-banip: update 1.8.1-3
+</details>

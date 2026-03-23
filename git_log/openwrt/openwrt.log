@@ -2,5 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-5337352ffc|Rosen Penev|Fri Mar 20 17:45:39 2026 -0700|ipq40xx: add CONFIG_NVMEM_BLOCK
+98f815cab9|Shiji Yang|Fri Mar 20 19:32:03 2026 +0800|ramips: fix kernel decompress error for ELECOM WRC-X1800GS
+12efaa10a6|Shiji Yang|Sun Mar 22 20:12:11 2026 +0800|ramips: fix initramfs kernel loadaddr for EAP615-Wall v1
+70ea59fcd9|Hauke Mehrtens|Tue Mar 17 01:06:24 2026 +0100|uboot-lantiq: fix C-style comments in AWK scripts
+d56b8a81c9|Benjamin Levine|Fri Mar 20 06:07:31 2026 +0000|lantiq: xrx200: autoload lantiq_gswip and tag_gswip to fix failsafe mode
+9da26c078c|Vladimir Palevich|Fri Mar 20 21:46:04 2026 +0100|hostapd: fix memory leak in rrm ubus interface
 </details>

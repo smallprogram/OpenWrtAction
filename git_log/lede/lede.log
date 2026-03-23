@@ -1,0 +1,10 @@
+<details> <summary> <b>lede new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+7bca7fd0f|coolsnowwolf|Sun Mar 22 22:19:56 2026 +0800|bcm27xx: sync with upsteam target
+c053d8210|coolsnowwolf|Sun Mar 22 15:25:54 2026 +0800|generic: netfilter: optional tcp window check for linux 6.12
+307110e4e|coolsnowwolf|Sun Mar 22 12:28:16 2026 +0800|mediatek: sync with upsteam target
+24600545b|coolsnowwolf|Sun Mar 22 12:04:46 2026 +0800|kernel: bump all to latest HEAD
+bff775178|coolsnowwolf|Sun Mar 22 11:59:00 2026 +0800|generic: sync kernel 6.12 with upstream
+</details>
