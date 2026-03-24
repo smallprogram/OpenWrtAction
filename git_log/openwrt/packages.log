@@ -1,9 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-3168c885b|Dirk Brenken|Sun Mar 22 19:55:08 2026 +0100|adblock: update 4.5.3-3
-6c40de0ff|Rosen Penev|Sun Mar 22 19:15:58 2026 +0200|dante: fix usaage with musl
-c27b1d95c|Dirk Brenken|Sun Mar 22 16:14:10 2026 +0100|banip: update 1.8.1-3
-6fe86fc9d|Olivier Poitrey|Sun Feb 22 06:14:28 2026 +0000|nextdns: update to version 1.47.1
-</details>

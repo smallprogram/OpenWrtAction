@@ -2,5 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-e625a07098|Tianling Shen|Sun Mar 22 14:28:13 2026 +0800|ath79: disable build for fortinet fap series by default
+ccaf8da76c|Tianling Shen|Mon Mar 23 10:12:17 2026 +0800|ImmortalWrt v25.12.0-rc1: revert to branch defaults
+8086eb4746|Tianling Shen|Mon Mar 23 10:12:13 2026 +0800|ImmortalWrt v25.12.0-rc1: adjust config defaults
 </details>

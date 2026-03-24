@@ -1,8 +1,0 @@
-<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-c43f8b4|Eamon|Sun Mar 22 18:21:42 2026 +0800|fix: table overflow on mobile
-9d1b53f|Eamon|Sun Mar 22 18:18:58 2026 +0800|template: add dom-structure field to bug report
-402ac6c|Eamon|Sun Mar 22 18:04:35 2026 +0800|ci: rename workflows and update triggers
-</details>

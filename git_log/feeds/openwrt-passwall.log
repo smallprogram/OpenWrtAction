@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fc17f19|A-BO|Sun Mar 22 17:04:32 2026 +0800|luci: add naiveproxy support of sing-box
-6eaac0d|A-BO|Sun Mar 22 11:29:59 2026 +0800|luci: optimize
-7e164bb|A-BO|Sun Mar 22 10:32:36 2026 +0800|luci: fix
+ed101ee|A-BO|Mon Mar 23 23:23:20 2026 +0800|luci: optimize subscribe
+6d2ca73|A-BO|Mon Mar 23 13:40:09 2026 +0800|luci: Add Base64 decode for node links
 </details>
