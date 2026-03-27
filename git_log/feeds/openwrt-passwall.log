@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-ed101ee|A-BO|Mon Mar 23 23:23:20 2026 +0800|luci: optimize subscribe
-6d2ca73|A-BO|Mon Mar 23 13:40:09 2026 +0800|luci: Add Base64 decode for node links
+0a816e7|A-BO|Wed Mar 25 13:22:59 2026 +0800|luci: optimize the sing-box hy2 server settings page
+872dc56|A-BO|Wed Mar 25 13:14:18 2026 +0800|luci: add xray hysteria2 inbound
+0a08863|A-BO|Tue Mar 24 22:09:29 2026 +0800|luci: support new hysteria2 config of xray
+e2310ff|A-BO|Tue Mar 24 13:17:32 2026 +0800|luci: add prompts for adding and removing nodes
 </details>

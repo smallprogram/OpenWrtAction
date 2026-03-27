@@ -2,5 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-16775c4852|Nick Hainke|Wed Feb 18 00:42:43 2026 +0100|base-files: sysupgrade: avoid cat missing conffiles_static
+211df89596|Hauke Mehrtens|Thu Mar 26 14:35:28 2026 +0100|OpenWrt v25.12.2: revert to branch defaults
+d266501ad6|Hauke Mehrtens|Thu Mar 26 14:35:15 2026 +0100|OpenWrt v25.12.2: adjust config defaults
+f505120278|Anthony Sepa|Tue Mar 24 19:06:30 2026 -0300|ipq40xx: fix art partition name WHW03 V1
+c036738b09|Kenneth Kasilag|Mon Mar 16 09:25:53 2026 +0000|airoha: rename kmod-pwm-an7581 to kmod-pwm-airoha
+13fd9a9ce0|Eicke Herbertz|Sat Feb 21 17:35:54 2026 +0100|ath79: remove kmod-ath9k and wpad from Mikrotik RB750r2
+b4013ec79a|Felix Baumann|Wed Aug 27 17:44:19 2025 +0200|mediatek: add the aquantia kmod to bpi-r4
+0142538c28|Marco von Rosenberg|Mon Mar 23 22:08:38 2026 +0100|ath79: fix initramfs boot for Huawei AP5030DN and AP6010DN
+627421d5df|Florian Maurer|Sun Mar 22 19:08:43 2026 +0100|ramips-mt7621: fix xiaomi mi ac2100 mac address
+0bfaaa65d5|Andreas Böhler|Fri Mar 20 21:24:48 2026 +0100|realtek: fix D-Link fan control script
 </details>

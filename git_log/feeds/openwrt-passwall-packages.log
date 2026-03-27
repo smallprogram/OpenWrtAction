@@ -1,0 +1,7 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+1e5d28c|github-actions[bot]|Thu Mar 26 17:02:42 2026 +0800|sing-box: update to 1.13.4 (#608)
+5aaa7eb|A-BO|Thu Mar 26 01:46:37 2026 +0800|ci: add wait step before uploading to release
+</details>

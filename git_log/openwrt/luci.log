@@ -1,8 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-067535eaf5|George Sapkin|Thu Mar 12 02:28:54 2026 +0200|luci-app-adguardhome: add new app
-4edf11869f|Eric Fahlgren|Fri Mar 20 20:54:09 2026 -0700|luci-app-attendedsysupgrade: format error details
-a708b8987d|Paul Donald|Mon Mar 23 19:10:01 2026 +0100|luci-mod-network: tighten MAC check regex
-</details>
