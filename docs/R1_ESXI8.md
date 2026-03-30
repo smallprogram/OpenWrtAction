@@ -129,7 +129,7 @@ ESXI开始引导后，屏幕出现跑码界面,注意，看到跑码界面，马
 
 ![image](pic/R1_ESXI8/esxiinsatll9.png)
 
-选择静态IP，配置为你网络环境中的内网网段IP即可，一般配置为孤僻IP，例如254，253，也可随意配置，只要你记得住就行，网关为你路由器的IP，如果将Openwrt做入ESXI中的话，就配置为Openwrt路由的IP，比如我的固件Openwrt的默认IP为10.10.0.253，那么此处Gateway网关就填入10.10.0.253.
+选择静态IP，配置为你网络环境中的内网网段IP即可，一般配置为孤僻IP，例如254，253，也可随意配置，只要你记得住就行，网关为你路由器的IP，如果将Openwrt做入ESXI中的话，就配置为Openwrt路由的IP，比如我的固件Openwrt的默认IP为192.168.8.2，那么此处Gateway网关就填入192.168.8.2.
 
 ![image](pic/R1_ESXI8/esxiinsatll10.png)
 

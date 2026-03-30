@@ -11,7 +11,7 @@
 
 #--------------------⬇⬇⬇⬇环境变量⬇⬇⬇⬇--------------------
 # 路由默认IP地址
-routeIP=10.10.0.253
+routeIP=192.168.8.2
 # 编译环境中当前账户名字
 userName=$USER
 # 默认OpenWrtAction的Config文件夹中的config文件名
@@ -80,7 +80,7 @@ function Func_DIY_Script() {
     Func_LogMessage "\033[31m 开始执行自定义设置脚本 \033[0m" "\033[31m Start executing the custom setup script \033[0m"
     sleep 1s
     # Modify default IP
-    Func_LogMessage "\033[31m 设置路由默认地址为10.10.0.253 \033[0m" "\033[31m Set the route default address to 10.10.0.253 \033[0m"
+    Func_LogMessage "\033[31m 设置路由默认地址为192.168.8.2 \033[0m" "\033[31m Set the route default address to 192.168.8.2 \033[0m"
     sed -i "s/192.168.1.1/${routeIP}/g" /home/${userName}/${ledeDir}/package/base-files/files/bin/config_generate
     sleep 1s
     # Modify default passwd

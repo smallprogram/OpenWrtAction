@@ -770,35 +770,31 @@ jobs:
         id: organize
         if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && steps.matrix_status.outputs.status != 'success' && !cancelled() 
         run: |
-          # rm -rf $GITHUB_WORKSPACE/openwrt/bin
-          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin
-          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets
-          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa
-          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa/bb
-          # cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
-          # mkdir -p feeds_packages
-          # firmware_path=$PWD
-          # dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.txt bs=1M count=10
-          # if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
-          #     exit 200
-          # fi
-
-          
           cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
-          mkdir -p feeds_packages
           firmware_path=$PWD
-          cd $GITHUB_WORKSPACE/openwrt/bin/packages/*/
-          mv * $firmware_path/feeds_packages
-          cd $firmware_path
+          
+          echo "Original files in $firmware_path:"
+          ls -lh
+          
+          echo "Filtering firmware files..."
+          mkdir -p $GITHUB_WORKSPACE/keep_firmware
+          
+          # 仅拷贝目标 6 种格式
+          cp *squashfs-combined.img.gz $GITHUB_WORKSPACE/keep_firmware/ 2>/dev/null || true
+          cp *squashfs-combined-efi.img.gz $GITHUB_WORKSPACE/keep_firmware/ 2>/dev/null || true
+          cp *ext4-combined.img.gz $GITHUB_WORKSPACE/keep_firmware/ 2>/dev/null || true
+          cp *ext4-combined-efi.img.gz $GITHUB_WORKSPACE/keep_firmware/ 2>/dev/null || true
+          cp *squashfs-sysupgrade.img.gz $GITHUB_WORKSPACE/keep_firmware/ 2>/dev/null || true
+          cp *ext4-sysupgrade.img.gz $GITHUB_WORKSPACE/keep_firmware/ 2>/dev/null || true
+          
+          # 清理当前目录所有内容（包括 buildinfo, json, manifest, packages 等）
+          rm -rf *
+          
+          # 将保留的文件移回
+          mv $GITHUB_WORKSPACE/keep_firmware/* . 2>/dev/null || true
+          rm -rf $GITHUB_WORKSPACE/keep_firmware
 
-          # zip directory
-          zip -r buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip */
-          # zip other files
-          find . -maxdepth 1 -type f ! -name '*-*-*' ! -name '*.zip' -exec zip buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip {} +
-          # remove other files
-          find . -mindepth 1 ! \( -name '*-*-*' -o -name '*.zip' \) -exec rm -rf {} +
-
-
+          # 如果是 Lean 源码，按原脚本习惯重命名
           if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
               for file in openwrt-*; do
                   if [[ -f "$file" ]]; then
@@ -807,7 +803,8 @@ jobs:
               done
           fi
 
-          ls
+          echo "Final files to be uploaded:"
+          ls -lh
 
           echo "FIRMWARE=$firmware_path" >> $GITHUB_OUTPUT
           echo "status=success" >> $GITHUB_OUTPUT

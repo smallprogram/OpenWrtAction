@@ -176,7 +176,7 @@ CONFIG_PACKAGE_luci-theme-openwrt-2020=y
 ---
 ## 📚 Related parameters
 ```
-1. Default address:`10.10.0.253`
+1. Default address:`192.168.8.2`
 2. Default account:`root`
 3. Default password:`None`
 ```
