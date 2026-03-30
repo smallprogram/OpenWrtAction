@@ -3,4 +3,21 @@
 SHA|Author|Date|Message
 -|-|-|-
 49ef9daae3|Tianling Shen|Wed Mar 25 12:12:40 2026 +0800|luci-theme-argon: fix wget dependency
+87aa1a9c29|Tianling Shen|Wed Mar 18 10:33:02 2026 +0800|Merge Official Source
+93f9f3fe7c|Tianling Shen|Wed Mar 18 10:31:58 2026 +0800|Merge Official Source
+246344368f|Tianling Shen|Wed Mar 18 10:26:10 2026 +0800|luci-app-openclash: Update to 0.47.071
+0fdcd1fe3b|Interesting Gang|Tue Mar 17 09:28:22 2026 +0800|luci-app-wechatpush: bump to 3.6.12
+1a856b7f23|Tianling Shen|Wed Mar 18 10:26:10 2026 +0800|luci-app-openclash: Update to 0.47.071
+b67429396d|Interesting Gang|Tue Mar 17 09:28:22 2026 +0800|luci-app-wechatpush: bump to 3.6.12
+6efa8ae506|Ramon Van Gorkom|Sun Mar 8 14:45:19 2026 +0100|luci-mod-status: fix syslog page with syslog-ng
+acb1ac8ffc|Ramon Van Gorkom|Fri Mar 13 22:08:59 2026 +0100|luci-app-usteer: add parameters for usteer-ng
+edc454743e|Paul Donald|Mon Mar 16 22:55:33 2026 +0100|luci-mod-system: add LED interval parameter
+13c96bf7eb|Paul Donald|Mon Mar 16 22:55:33 2026 +0100|luci-mod-system: add LED interval parameter
+a6d34617fb|Vishnu Verma|Sun Mar 8 20:17:11 2026 +0530|luci-mod-network: fix field names for private key file and password
+3aeb77f764|Konstantin Glukhov|Wed Mar 11 15:16:30 2026 +0900|luci-base: network.js: de-dup ifc IPv6 addresses
+032b8df6d4|Dirk Brenken|Mon Mar 16 19:16:02 2026 +0100|luci-app-banip: update 1.8.1-2
+2272b4baee|Dirk Brenken|Mon Mar 16 19:01:14 2026 +0100|luci-app-adblock: update 4.5.3-2
+
+.....................
+
 </details>

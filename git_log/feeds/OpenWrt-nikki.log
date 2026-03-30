@@ -1,0 +1,10 @@
+<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+f211323|Joseph Mory|Mon Mar 30 20:12:18 2026 +0800|fix: only disable `tun` `auto-route/auto-redirect/auto-detect-interface/icmp-forwarding` when exists
+ad867a4|Joseph Mory|Mon Mar 30 20:10:48 2026 +0800|fix: drop useless migration
+a20a48b|Joseph Mory|Sun Mar 29 20:19:03 2026 +0800|chore: bump release
+204f4c7|Joseph Mory|Sun Mar 29 20:13:07 2026 +0800|chore: update china ip list
+d9b8dce|Joseph Mory|Sun Mar 29 13:31:19 2026 +0800|fix: fix the behavior when DNS hijack is disabled in access control
+</details>

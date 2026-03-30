@@ -1,0 +1,23 @@
+<details> <summary> <b>routing new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+5b23ea1|Rob White|Sun Mar 8 20:39:11 2026 +0000|mesh11sd: update to version 6.2.1
+662b57d|Simon Wunderlich|Sat Feb 21 22:33:43 2026 +0100|Merge pull request #1159 from ecsv/batadv-for-25.12
+840c780|Simon Wunderlich|Sat Feb 21 22:33:27 2026 +0100|Merge pull request #1160 from ecsv/batadv-for-24.10
+847941c|Sven Eckelmann|Sat Feb 21 09:58:32 2026 +0100|batman-adv: avoid double-rtnl_lock ELP metric worker
+ef99aa0|Sven Eckelmann|Sat Feb 21 09:58:32 2026 +0100|batman-adv: avoid double-rtnl_lock ELP metric worker
+b419f34|Rob White|Sun Feb 15 15:22:23 2026 +0000|mesh11sd: update to version 6.2.0
+8cb082c|Rob White|Sun Feb 15 15:22:23 2026 +0000|mesh11sd: update to version 6.2.0
+5a276c7|Packet Please|Sun Jan 11 21:01:41 2026 +0100|bird3: update to 3.2.0
+edfe6a9|Packet Please|Sun Jan 11 21:00:20 2026 +0100|bird2: update to 2.18
+67c8e45|Toke Høiland-Jørgensen|Wed Nov 26 14:52:27 2025 +0100|bird3: add patch to move birdc's history file
+5f863cc|Toke Høiland-Jørgensen|Wed Nov 26 14:44:35 2025 +0100|bird2: add patch to move birdc's history file
+6b1a1f8|Packet Please|Sun Jan 11 21:01:41 2026 +0100|bird3: update to 3.2.0
+a605738|Packet Please|Sun Jan 11 21:00:20 2026 +0100|bird2: update to 2.18
+4b18ca3|Toke Høiland-Jørgensen|Wed Nov 26 14:52:27 2025 +0100|bird3: add patch to move birdc's history file
+10bb3de|Toke Høiland-Jørgensen|Wed Nov 26 14:44:35 2025 +0100|bird2: add patch to move birdc's history file
+
+.....................
+
+</details>

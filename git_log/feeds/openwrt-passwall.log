@@ -2,8 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0a816e7|A-BO|Wed Mar 25 13:22:59 2026 +0800|luci: optimize the sing-box hy2 server settings page
-872dc56|A-BO|Wed Mar 25 13:14:18 2026 +0800|luci: add xray hysteria2 inbound
-0a08863|A-BO|Tue Mar 24 22:09:29 2026 +0800|luci: support new hysteria2 config of xray
-e2310ff|A-BO|Tue Mar 24 13:17:32 2026 +0800|luci: add prompts for adding and removing nodes
+60f4750|A-BO|Mon Mar 30 22:57:01 2026 +0800|luci: optimize the logic of the `allowInsecure` subscribe
+8dd6182|A-BO|Mon Mar 30 08:30:28 2026 +0800|luci: optimize and fix xray noise
+f29b072|A-BO|Sun Mar 29 18:10:13 2026 +0800|luci: sing-box supports xray ech config
+ff5bc7f|A-BO|Sat Mar 28 18:28:25 2026 +0800|luci: optimize subscribe
+b67fad4|A-BO|Sat Mar 28 12:17:46 2026 +0800|luci: add hysteria2 `keepAlivePeriod` setting
+4b404c4|A-BO|Sat Mar 28 11:45:52 2026 +0800|luci: modify the default value of xray `echforcequery`
+07527d0|A-BO|Sat Mar 28 11:37:46 2026 +0800|luci: migrate xray fragment/noise to finalmask
+228c249|A-BO|Fri Mar 27 11:34:58 2026 +0800|luci: optimize copy node
 </details>

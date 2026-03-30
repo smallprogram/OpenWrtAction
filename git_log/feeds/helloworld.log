@@ -2,6 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-816d74e|zxl hhyccc|Fri Mar 27 01:11:31 2026 +0800|Merge pull request #1910 from zxlhhyccc/tuic
-a99cc00|zxlhhyccc|Sun Mar 22 17:11:01 2026 +0800|tuic-client: Update to 1.7.2
+2c438b3|zxl hhyccc|Sun Mar 29 14:29:59 2026 +0800|v2ray-core: Update to 5.47.0
+f2dee10|zxl hhyccc|Sun Mar 29 13:41:36 2026 +0800|v2ray-plugin: update to 5.48.0
+b40ca66|zxl hhyccc|Sun Mar 29 13:28:31 2026 +0800|xray-core: update to 26.3.27
+1e974c6|zxl hhyccc|Sat Mar 28 19:14:04 2026 +0800|Merge pull request #1920 from zxlhhyccc/tuic
+8e28913|zxlhhyccc|Sat Mar 28 17:30:44 2026 +0800|luci-app-ssr-plus: modify the default value of xray echforcequery.
+3983574|zxlhhyccc|Sat Mar 28 15:52:26 2026 +0800|luci-app-ssr-plus: Add node alias dialog box.
+868dfbd|zxlhhyccc|Sat Mar 28 15:51:18 2026 +0800|luci-app-ssr-plus: Add number for same alias.
+19456b0|zxl hhyccc|Sat Mar 28 00:19:10 2026 +0800|Merge pull request #1918 from zxlhhyccc/tuic
+9cdc90a|zxl hhyccc|Fri Mar 27 22:24:24 2026 +0800|luci-app-ssr-plus: set rmempty=true for uci cursor
+8f1ee17|zxlhhyccc|Fri Mar 27 22:20:04 2026 +0800|mosdns: Fix HASH and refrsh patch.
+59ac9eb|zxl hhyccc|Fri Mar 27 22:12:04 2026 +0800|Merge pull request #1917 from zxlhhyccc/tuic
+9fa6cc1|zxlhhyccc|Fri Mar 27 01:13:49 2026 +0800|luci-app-ssr-plus: support new hysteria2 config of xray.
 </details>

@@ -2,6 +2,8 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-1e5d28c|github-actions[bot]|Thu Mar 26 17:02:42 2026 +0800|sing-box: update to 1.13.4 (#608)
-5aaa7eb|A-BO|Thu Mar 26 01:46:37 2026 +0800|ci: add wait step before uploading to release
+1f05686|A-BO|Mon Mar 30 13:25:17 2026 +0800|tuic-client: update to 1.7.2
+d60cc5e|github-actions[bot]|Mon Mar 30 09:53:26 2026 +0800|hysteria: update to 2.8.0 (#611)
+d0ebdbb|github-actions[bot]|Sat Mar 28 09:28:41 2026 +0800|xray-core: update to 26.3.27 (#610)
+90c27a4|github-actions[bot]|Fri Mar 27 14:15:14 2026 +0800|v2ray-plugin: update to 5.48.0 (#609)
 </details>

@@ -2,6 +2,22 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+6f13c3ee2|Ray Wang|Mon Jan 19 20:02:35 2026 +0800|hev-socks5-tunnel: update to 2.14.3
+77701eb39|Stan Grishin|Sat Mar 21 01:12:02 2026 +0000|adblock-fast: update to 1.2.2-r14
+715386f0c|George Sapkin|Thu Mar 12 19:59:23 2026 +0200|sqlite3: bump to 3.52.0
 268d92d3d|Chester A. Unal|Fri Mar 20 09:49:09 2026 +0200|bsbf-rate-limiting: add
 7828d7c01|Chester A. Unal|Fri Mar 20 09:53:51 2026 +0200|plp-mtu-discovery: update to GIT HEAD of 2026-03-16
+3168c885b|Dirk Brenken|Sun Mar 22 19:55:08 2026 +0100|adblock: update 4.5.3-3
+6c40de0ff|Rosen Penev|Sun Mar 22 19:15:58 2026 +0200|dante: fix usaage with musl
+c27b1d95c|Dirk Brenken|Sun Mar 22 16:14:10 2026 +0100|banip: update 1.8.1-3
+6fe86fc9d|Olivier Poitrey|Sun Feb 22 06:14:28 2026 +0000|nextdns: update to version 1.47.1
+5c889a5e2|Christian Lachner|Sat Mar 21 16:08:08 2026 +0100|haproxy: update to v3.0.19
+8d9f2874d|Christian Lachner|Sat Mar 21 15:37:57 2026 +0100|haproxy: update to v3.2.15
+3ced52b73|Niklas Thorild|Thu Mar 19 20:52:30 2026 +0100|telegraf: add disk plugin to small variant
+83e987b95|Stan Grishin|Thu Mar 19 02:28:30 2026 +0000|adblock-fast: update to 1.2.2-r12
+edac1ddbe|Stan Grishin|Thu Mar 19 02:28:30 2026 +0000|adblock-fast: update to 1.2.2-r12
+f1da10044|Niklas Thorild|Tue Mar 17 18:08:26 2026 +0100|telegraf: update to 1.38.1 - Update Telegraf to v1.38.1
+
+.....................
+
 </details>
