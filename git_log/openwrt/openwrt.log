@@ -2,13 +2,22 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-211df89596|Hauke Mehrtens|Thu Mar 26 14:35:28 2026 +0100|OpenWrt v25.12.2: revert to branch defaults
-d266501ad6|Hauke Mehrtens|Thu Mar 26 14:35:15 2026 +0100|OpenWrt v25.12.2: adjust config defaults
-f505120278|Anthony Sepa|Tue Mar 24 19:06:30 2026 -0300|ipq40xx: fix art partition name WHW03 V1
-c036738b09|Kenneth Kasilag|Mon Mar 16 09:25:53 2026 +0000|airoha: rename kmod-pwm-an7581 to kmod-pwm-airoha
-13fd9a9ce0|Eicke Herbertz|Sat Feb 21 17:35:54 2026 +0100|ath79: remove kmod-ath9k and wpad from Mikrotik RB750r2
-b4013ec79a|Felix Baumann|Wed Aug 27 17:44:19 2025 +0200|mediatek: add the aquantia kmod to bpi-r4
-0142538c28|Marco von Rosenberg|Mon Mar 23 22:08:38 2026 +0100|ath79: fix initramfs boot for Huawei AP5030DN and AP6010DN
-627421d5df|Florian Maurer|Sun Mar 22 19:08:43 2026 +0100|ramips-mt7621: fix xiaomi mi ac2100 mac address
-0bfaaa65d5|Andreas Böhler|Fri Mar 20 21:24:48 2026 +0100|realtek: fix D-Link fan control script
+8a18e84a88|Chester A. Unal|Mon Feb 9 12:55:02 2026 +0200|uqmi: introduce devpath option
+fcd535c0f2|Chester A. Unal|Wed Mar 5 06:04:58 2025 +0000|umbim: introduce devpath option
+6c2304f3c6|Valerio 'ftp21' Mancini|Wed Feb 18 14:34:31 2026 +0100|mediatek: add support for Zyxel WX5600-T0
+413b237d13|Valerio 'ftp21' Mancini|Wed Feb 18 14:34:26 2026 +0100|uboot-mediatek: add support for Zyxel WX5600-T0
+b7feb32e88|John Audia|Sun Feb 22 05:11:09 2026 -0500|linux-firmware: update to 20260221
+d887320ee4|John Audia|Sun Jan 11 07:41:21 2026 -0500|linux-firmware: update to 20260110
+a25e9cf362|Robert Marko|Tue Feb 24 14:37:33 2026 +0100|ath79: mikrotik: fix DEVICE_PACKAGES
+ead6ca5fb7|Maxim Anisimov|Mon Mar 23 15:19:55 2026 +0300|mediatek: filogic: kap-630/kn-(3811/3911): fix node name
+0e618d6f99|Maxim Anisimov|Mon Feb 16 12:58:36 2026 +0300|mediatek: dts: drop wrong sgmiisys0 node override
+362d02c6fb|Maxim Anisimov|Wed Jan 21 18:09:31 2026 +0300|mediatek: add support for Keenetic/Netcraze (K/N)AP-630
+909b0b8880|Maxim Anisimov|Mon Mar 23 10:40:55 2026 +0300|mediatek: filogic: kn-1812: enable xsphy node
+c6330df396|Maxim Anisimov|Mon Mar 23 10:38:15 2026 +0300|mediatek: filogic: kn-1812: drop phy-connection-type prop
+e6c43b80e3|Maxim Anisimov|Mon Mar 23 10:26:07 2026 +0300|mediatek: filogic: kn-1812: fix partition node name
+08c91038d2|Maxim Anisimov|Mon Mar 23 09:44:43 2026 +0300|mediatek: filogic: kn-1812: set mdio drive strength to 10mA
+cb4f2f4d35|Maxim Anisimov|Mon Mar 23 09:41:22 2026 +0300|mediatek: filogic: kn-1812: change dts node name to mt7992
+
+.....................
+
 </details>

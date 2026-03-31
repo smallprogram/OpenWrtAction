@@ -2,14 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-fb2ddd192|aiamadeus|Thu Mar 19 18:20:02 2026 +0800|rockchip: add missing led patches
-899770388|coolsnowwolf|Wed Mar 11 18:19:09 2026 +0800|mediatek: add missing packages
-7df5d7026|coolsnowwolf|Thu Mar 19 12:04:06 2026 +0800|kernel: bump all to latest HEAD
-bd10e8cb2|coolsnowwolf|Wed Mar 18 12:28:16 2026 +0800|mediatek: sync with upsteam target
-aac86c3e4|coolsnowwolf|Mon Mar 9 11:22:00 2026 +0800|generic: sync kernel 6.12 with upstream
-7bca7fd0f|coolsnowwolf|Sun Mar 22 22:19:56 2026 +0800|bcm27xx: sync with upsteam target
-c053d8210|coolsnowwolf|Sun Mar 22 15:25:54 2026 +0800|generic: netfilter: optional tcp window check for linux 6.12
-307110e4e|coolsnowwolf|Sun Mar 22 12:28:16 2026 +0800|mediatek: sync with upsteam target
-24600545b|coolsnowwolf|Sun Mar 22 12:04:46 2026 +0800|kernel: bump all to latest HEAD
-bff775178|coolsnowwolf|Sun Mar 22 11:59:00 2026 +0800|generic: sync kernel 6.12 with upstream
+7b303a8dd|coolsnowwolf|Sun Mar 29 13:21:45 2026 +0800|x86: add support for 6.18 kernel version
+fee4b8a83|libriunk|Thu Mar 26 18:03:39 2026 +0800|toolchain: add support for GCC 15.2
 </details>

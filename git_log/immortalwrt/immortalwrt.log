@@ -2,16 +2,22 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-004a1665a9|Tianling Shen|Wed Mar 25 10:20:24 2026 +0800|Merge Official Source
-0142538c28|Marco von Rosenberg|Mon Mar 23 22:08:38 2026 +0100|ath79: fix initramfs boot for Huawei AP5030DN and AP6010DN
-627421d5df|Florian Maurer|Sun Mar 22 19:08:43 2026 +0100|ramips-mt7621: fix xiaomi mi ac2100 mac address
-0bfaaa65d5|Andreas Böhler|Fri Mar 20 21:24:48 2026 +0100|realtek: fix D-Link fan control script
-16775c4852|Nick Hainke|Wed Feb 18 00:42:43 2026 +0100|base-files: sysupgrade: avoid cat missing conffiles_static
-98f815cab9|Shiji Yang|Fri Mar 20 19:32:03 2026 +0800|ramips: fix kernel decompress error for ELECOM WRC-X1800GS
-12efaa10a6|Shiji Yang|Sun Mar 22 20:12:11 2026 +0800|ramips: fix initramfs kernel loadaddr for EAP615-Wall v1
-70ea59fcd9|Hauke Mehrtens|Tue Mar 17 01:06:24 2026 +0100|uboot-lantiq: fix C-style comments in AWK scripts
-d56b8a81c9|Benjamin Levine|Fri Mar 20 06:07:31 2026 +0000|lantiq: xrx200: autoload lantiq_gswip and tag_gswip to fix failsafe mode
-9da26c078c|Vladimir Palevich|Fri Mar 20 21:46:04 2026 +0100|hostapd: fix memory leak in rrm ubus interface
-5337352ffc|Rosen Penev|Fri Mar 20 17:45:39 2026 -0700|ipq40xx: add CONFIG_NVMEM_BLOCK
-56a4921845|Shiji Yang|Sat Mar 21 00:53:00 2026 +0800|ramips: kernel: drop ip_fast_csum() dead loop fix
+2b2f8a1c6f|Tianling Shen|Sun Mar 29 19:37:33 2026 +0800|Merge Official Source
+b2685cef6a|Hannu Nyman|Fri Mar 27 16:47:39 2026 +0200|apk: add help text for 'apk add --force-reinstall'
+396fe239a8|Eric Fahlgren|Fri Mar 27 16:46:56 2026 +0200|apk: point help message to openwrt wiki
+ff1ea58da2|Tianling Shen|Fri Mar 27 18:27:29 2026 +0800|loongarch64: add common pcie ethernet drivers by default
+fe94821e69|Tianling Shen|Fri Mar 27 16:50:41 2026 +0800|kernel: fix build YT6801 driver for x86
+84901786b3|Tianling Shen|Thu Mar 26 22:14:50 2026 +0800|kernel: fix typo error in YT6801 PCIe ethernet driver
+9eb60ed014|Tianling Shen|Thu Mar 26 14:05:35 2026 +0800|kernel: backport YT6801 PCIe ethernet driver support
+11d7f20ebd|Tianling Shen|Thu Mar 26 17:26:42 2026 +0800|rockchip: add cpuinfo node for RK3528
+247b2aeaa5|Tianling Shen|Thu Mar 26 16:38:46 2026 +0800|rockchip: refresh upstreamed otp patches
+ed44b82e00|Tianling Shen|Thu Mar 26 11:48:36 2026 +0800|kernel: refresh patches
+789bd3e129|Tianling Shen|Tue Dec 23 14:31:40 2025 +0800|rockchip: add HDMI support for NanoPC T6
+ffaf8f0c32|Tianling Shen|Tue Sep 2 20:14:39 2025 +0800|rockchip: backport DRM support for RK3576/RK3588
+211df89596|Hauke Mehrtens|Thu Mar 26 14:35:28 2026 +0100|OpenWrt v25.12.2: revert to branch defaults
+d266501ad6|Hauke Mehrtens|Thu Mar 26 14:35:15 2026 +0100|OpenWrt v25.12.2: adjust config defaults
+2e176572ec|司辰|Thu Mar 26 10:59:08 2026 +0800|default-settings: migrate to apk mirror
+
+.....................
+
 </details>
