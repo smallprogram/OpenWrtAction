@@ -2,17 +2,22 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a7b9be3ef|Jean Thomas|Thu Mar 26 10:12:13 2026 +0100|python-poetry-core: bump to 2.3.1
-790012bcc|Alexandru Ardelean|Thu Mar 19 15:40:49 2026 +0000|python-gmpy2: bump to 2.3.0
-01bbb91fa|Alexandru Ardelean|Fri Mar 20 16:21:13 2026 +0000|python-incremental: bump to 24.11.0
-ea62ec336|Alexandru Ardelean|Sun Mar 15 15:12:45 2026 +0200|pillow: bump to 12.1.1
-0c1d6b9d7|Alexandru Ardelean|Sun Mar 15 16:03:01 2026 +0200|python-pybind11: add new package (version 2.13.6)
-1b8dcc6ea|Jean Thomas|Wed Jan 7 11:16:33 2026 +0100|python-frozenlist: bump to version 1.8
-a4a35d259|Jean Thomas|Mon Jan 12 17:53:58 2026 +0100|python-expandvars: add new package
-fc7091eba|Josef Schlehofer|Mon Dec 29 13:28:31 2025 +0100|treewide: remove Home Assistant dependencies
-bb980b18f|Stan Grishin|Fri Mar 27 20:45:09 2026 +0000|adblock-fast: update to 1.2.2-r16
-63b643826|Alexandru Ardelean|Wed Mar 25 12:07:28 2026 +0200|python-pyopenssl: fix build with wheel naming
-0525984e9|Dirk Brenken|Fri Mar 27 10:18:38 2026 +0100|adblock: update 4.5.3-4
-fd2f7c07f|Stan Grishin|Sat Mar 21 01:12:02 2026 +0000|adblock-fast: update to 1.2.2-r14
-62613f30e|dwardor|Sun Feb 22 11:56:09 2026 +0100|fail2ban: add host build deps to fix #28520
+d0275cad5|Tim Flubshi|Wed Mar 18 21:55:29 2026 +0100|ddns-scripts: add netcup.com support
+04f0c5bcc|Florian Eckert|Fri Mar 13 11:18:46 2026 +0100|ddns-scripts: switch to procd handling
+d5b4d0754|Patrick Hemmen|Tue Feb 10 21:38:23 2026 +0100|ddns-scripts: change servercow.de to new dns api
+023b15f5c|bdk38|Mon Feb 16 04:49:45 2026 -0800|ddns-scripts: add API-based registered IP verification for Cloudflare proxied records
+fccf25a92|Lin Fan|Sat Feb 7 14:36:01 2026 +0800|ddns-script: update namesilo.com
+a9fff6dc0|Fabrice Fontaine|Sat Mar 14 14:17:53 2026 +0100|lang/rust: assign PKG_CPE_ID
+0bcc41f36|Tianling Shen|Wed Mar 11 15:37:12 2026 +0800|rust: Update to 1.94.0
+47cadedca|Orne Brocaar|Wed Mar 4 10:30:32 2026 +0000|rust: set llvm.download-ci-llvm=false
+53a6ed5cf|Tianling Shen|Fri Mar 27 11:13:09 2026 +0800|v2ray-geodata: Update to latest version
+42aa53539|Tianling Shen|Fri Mar 27 11:12:11 2026 +0800|cloudflared: Update to 2026.3.0
+314115d45|Tianling Shen|Fri Mar 27 11:10:55 2026 +0800|dnsproxy: Update to 0.81.0
+77a0bb838|Tianling Shen|Fri Mar 27 11:06:32 2026 +0800|rclone: Update to 1.73.3
+c44c87861|Tianling Shen|Fri Mar 27 11:04:15 2026 +0800|v2ray-core: Update to 5.47.0
+478270619|Tianling Shen|Fri Mar 27 11:02:04 2026 +0800|xray-core: Update to 26.2.6
+71dc8fc0f|Tianling Shen|Fri Mar 27 10:58:47 2026 +0800|cloudreve: Update to 4.15.0
+
+.....................
+
 </details>

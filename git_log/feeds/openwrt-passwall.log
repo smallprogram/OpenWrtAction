@@ -2,12 +2,16 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-60f4750|A-BO|Mon Mar 30 22:57:01 2026 +0800|luci: optimize the logic of the `allowInsecure` subscribe
-8dd6182|A-BO|Mon Mar 30 08:30:28 2026 +0800|luci: optimize and fix xray noise
-f29b072|A-BO|Sun Mar 29 18:10:13 2026 +0800|luci: sing-box supports xray ech config
-ff5bc7f|A-BO|Sat Mar 28 18:28:25 2026 +0800|luci: optimize subscribe
-b67fad4|A-BO|Sat Mar 28 12:17:46 2026 +0800|luci: add hysteria2 `keepAlivePeriod` setting
-4b404c4|A-BO|Sat Mar 28 11:45:52 2026 +0800|luci: modify the default value of xray `echforcequery`
-07527d0|A-BO|Sat Mar 28 11:37:46 2026 +0800|luci: migrate xray fragment/noise to finalmask
-228c249|A-BO|Fri Mar 27 11:34:58 2026 +0800|luci: optimize copy node
+af1fbb04|A-BO|Fri Apr 3 02:32:43 2026 +0800|luci: 26.4.3
+a3a29dd6|A-BO|Fri Apr 3 02:29:24 2026 +0800|luci: optimize firewall script
+455773ac|A-BO|Fri Apr 3 01:30:27 2026 +0800|luci: optimize node settings
+e5090d87|A-BO|Fri Apr 3 00:36:44 2026 +0800|luci: fix missing `tls` when generating sing-box naiveproxy config
+05960803|A-BO|Thu Apr 2 21:44:23 2026 +0800|luci: optimize anytls subscribe
+3113a7d7|A-BO|Thu Apr 2 13:22:21 2026 +0800|luci: fix hysteria2 native client "unsupported transport type"
+ef096243|A-BO|Thu Apr 2 13:14:30 2026 +0800|luci: Use kernel device names for ACL interfaces
+5a97c914|A-BO|Wed Apr 1 21:03:49 2026 +0800|luci: optimize observatory for xray
+87b6eccb|A-BO|Wed Apr 1 20:37:59 2026 +0800|Revert "luci: adjust connection observatory of xray"
+7560fa47|A-BO|Wed Apr 1 01:03:44 2026 +0800|luci: 26.4.1
+9128e822|A-BO|Wed Apr 1 00:50:46 2026 +0800|luci: optimize the logic of the `allowInsecure` subscribe
+60f47504|A-BO|Mon Mar 30 22:57:01 2026 +0800|luci: optimize the logic of the `allowInsecure` subscribe
 </details>

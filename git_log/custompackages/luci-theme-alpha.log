@@ -2,6 +2,13 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-74c134e|deri sahertian|Mon Mar 30 10:41:16 2026 +0700|Create FUNDING.yml
-fda4aab|deri sahertian|Sat Mar 28 02:51:27 2026 +0700|fix footer and add depedency
+aed1071|deri sahertian|Thu Apr 2 05:03:43 2026 +0700|Update Makefile
+9d896bf|deri sahertian|Thu Apr 2 04:58:56 2026 +0700|Update Makefile
+763d9d9|deri sahertian|Thu Apr 2 04:53:47 2026 +0700|Update Makefile
+5a47a40|deri sahertian|Thu Apr 2 04:48:07 2026 +0700|Update footer.ut
+1e069c4|deri sahertian|Thu Apr 2 04:18:34 2026 +0700|fix : bug on chinese language support
+cf1e92e|deri sahertian|Thu Apr 2 10:53:23 2026 +0700|Merge pull request #59 from KitanoSakurana/master
+e780fab|北野樱奈|Wed Apr 1 22:51:44 2026 +0800|fix: improve button alignment and styling for admin system package page
+500f3df|北野樱奈|Wed Apr 1 22:36:28 2026 +0800|fix Fix the errors I made changes to
+9d4a0f3|北野樱奈|Wed Apr 1 21:40:52 2026 +0800|fix: clean redundant alpha config and fix sidebar logout, layout scaling, CJK font rendering, and ifacebadge background
 </details>

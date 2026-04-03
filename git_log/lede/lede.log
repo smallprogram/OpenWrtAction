@@ -2,6 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-7b303a8dd|coolsnowwolf|Sun Mar 29 13:21:45 2026 +0800|x86: add support for 6.18 kernel version
-fee4b8a83|libriunk|Thu Mar 26 18:03:39 2026 +0800|toolchain: add support for GCC 15.2
+57f5081e4|coolsnowwolf|Wed Apr 1 23:47:15 2026 +0800|generic: lockdep: add lockdep_assert_not_held() for linux 5.4
+c1382b896|coolsnowwolf|Wed Apr 1 23:08:08 2026 +0800|kernel: bump 6.12 to 6.12.79
 </details>

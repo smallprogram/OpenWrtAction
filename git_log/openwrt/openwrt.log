@@ -2,22 +2,18 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8a18e84a88|Chester A. Unal|Mon Feb 9 12:55:02 2026 +0200|uqmi: introduce devpath option
-fcd535c0f2|Chester A. Unal|Wed Mar 5 06:04:58 2025 +0000|umbim: introduce devpath option
-6c2304f3c6|Valerio 'ftp21' Mancini|Wed Feb 18 14:34:31 2026 +0100|mediatek: add support for Zyxel WX5600-T0
-413b237d13|Valerio 'ftp21' Mancini|Wed Feb 18 14:34:26 2026 +0100|uboot-mediatek: add support for Zyxel WX5600-T0
-b7feb32e88|John Audia|Sun Feb 22 05:11:09 2026 -0500|linux-firmware: update to 20260221
-d887320ee4|John Audia|Sun Jan 11 07:41:21 2026 -0500|linux-firmware: update to 20260110
-a25e9cf362|Robert Marko|Tue Feb 24 14:37:33 2026 +0100|ath79: mikrotik: fix DEVICE_PACKAGES
-ead6ca5fb7|Maxim Anisimov|Mon Mar 23 15:19:55 2026 +0300|mediatek: filogic: kap-630/kn-(3811/3911): fix node name
-0e618d6f99|Maxim Anisimov|Mon Feb 16 12:58:36 2026 +0300|mediatek: dts: drop wrong sgmiisys0 node override
-362d02c6fb|Maxim Anisimov|Wed Jan 21 18:09:31 2026 +0300|mediatek: add support for Keenetic/Netcraze (K/N)AP-630
-909b0b8880|Maxim Anisimov|Mon Mar 23 10:40:55 2026 +0300|mediatek: filogic: kn-1812: enable xsphy node
-c6330df396|Maxim Anisimov|Mon Mar 23 10:38:15 2026 +0300|mediatek: filogic: kn-1812: drop phy-connection-type prop
-e6c43b80e3|Maxim Anisimov|Mon Mar 23 10:26:07 2026 +0300|mediatek: filogic: kn-1812: fix partition node name
-08c91038d2|Maxim Anisimov|Mon Mar 23 09:44:43 2026 +0300|mediatek: filogic: kn-1812: set mdio drive strength to 10mA
-cb4f2f4d35|Maxim Anisimov|Mon Mar 23 09:41:22 2026 +0300|mediatek: filogic: kn-1812: change dts node name to mt7992
-
-.....................
-
+57fe3e077e|Emre Yavuzalp|Mon Feb 16 14:48:42 2026 +0300|mediatek: filogic: ASUS RT-AX52 PRO support
+336c781bc6|John Audia|Fri Mar 27 15:58:47 2026 -0400|kernel: bump 6.12 to 6.12.79
+ff235f09b5|John Audia|Wed Mar 25 08:15:25 2026 -0400|kernel: bump 6.12 to 6.12.78
+5c59e2f9ff|John Audia|Fri Mar 13 20:07:03 2026 -0400|kernel: bump 6.12 to 6.12.77
+3e3c12d236|John Audia|Thu Mar 5 16:42:13 2026 -0500|kernel: bump 6.12 to 6.12.76
+3efb676eaa|John Audia|Wed Mar 4 17:10:07 2026 -0500|kernel: bump 6.12 to 6.12.75
+34f5713863|John Audia|Fri Mar 6 08:09:32 2026 -0500|generic: config-6.12: update with new symbols
+39f7577524|Shiji Yang|Fri Mar 6 08:36:01 2026 +0800|lantiq: fix mtdparsers refcount leak and memory leak
+b6a8b8a946|Rosen Penev|Wed Apr 1 16:50:21 2026 -0700|ath79: wndap360: use default 9600 baud rate
+55f5b2f3d3|Rosen Penev|Wed Apr 1 16:34:53 2026 -0700|ath79: wndap360: add owl loader
+72feb5b611|Rosen Penev|Wed Apr 1 15:29:50 2026 -0700|ath79: wndap360: fix ethernet
+00dcdd7451|Christian Marangi|Wed Mar 4 13:31:00 2026 +0100|firmware: Add support for Airoha EN7581/AN7583 NPU variant firmware
+3f98e35e98|Shiji Yang|Mon Mar 30 22:56:02 2026 +0800|ramips: fix WAN LED GPIO for Xiaomi Mi Router 4C
+c09f5e0a63|Shiji Yang|Mon Mar 30 22:52:06 2026 +0800|lantiq: fix u-boot env size for Netgear DGN3500
 </details>

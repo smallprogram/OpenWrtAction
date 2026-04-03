@@ -2,5 +2,22 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4144d2a9e|Tianling Shen|Wed Mar 18 10:45:04 2026 +0800|sing-box: Update to 1.12.25
+823b74034|Tianling Shen|Thu Apr 2 09:42:28 2026 +0800|Merge Official Source
+a9fff6dc0|Fabrice Fontaine|Sat Mar 14 14:17:53 2026 +0100|lang/rust: assign PKG_CPE_ID
+0bcc41f36|Tianling Shen|Wed Mar 11 15:37:12 2026 +0800|rust: Update to 1.94.0
+47cadedca|Orne Brocaar|Wed Mar 4 10:30:32 2026 +0000|rust: set llvm.download-ci-llvm=false
+53a6ed5cf|Tianling Shen|Fri Mar 27 11:13:09 2026 +0800|v2ray-geodata: Update to latest version
+42aa53539|Tianling Shen|Fri Mar 27 11:12:11 2026 +0800|cloudflared: Update to 2026.3.0
+314115d45|Tianling Shen|Fri Mar 27 11:10:55 2026 +0800|dnsproxy: Update to 0.81.0
+77a0bb838|Tianling Shen|Fri Mar 27 11:06:32 2026 +0800|rclone: Update to 1.73.3
+c44c87861|Tianling Shen|Fri Mar 27 11:04:15 2026 +0800|v2ray-core: Update to 5.47.0
+478270619|Tianling Shen|Fri Mar 27 11:02:04 2026 +0800|xray-core: Update to 26.2.6
+71dc8fc0f|Tianling Shen|Fri Mar 27 10:58:47 2026 +0800|cloudreve: Update to 4.15.0
+6ebed1ead|Tianling Shen|Thu Mar 12 16:33:20 2026 +0800|libtorrent-rasterbar: add boost as dependency for python package
+bf8234aac|Tianling Shen|Sun Feb 8 17:26:08 2026 +0800|v2raya: Update to 2.2.7.5
+70cf92b34|Tianling Shen|Sun Feb 8 17:25:33 2026 +0800|openlist: Update to 4.1.10
+741f84c8f|Tianling Shen|Sun Feb 8 17:25:05 2026 +0800|cloudflared: Update to 2026.1.2
+
+.....................
+
 </details>

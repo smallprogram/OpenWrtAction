@@ -1,0 +1,23 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+81e5763|A-BO|Fri Apr 3 00:39:30 2026 +0800|luci: fix missing `tls` when generating sing-box naiveproxy config
+e9c3ada|handsomeji|Thu Apr 2 22:19:59 2026 +0800|luci: 26.4.2
+4d0b410|A-BO|Thu Apr 2 21:44:23 2026 +0800|luci: optimize anytls subscribe
+211ce4e|A-BO|Wed Apr 1 21:03:49 2026 +0800|luci: optimize observatory for xray
+c865ffb|A-BO|Wed Apr 1 00:50:46 2026 +0800|luci: optimize the logic of the `allowInsecure` subscribe
+ac04b96|A-BO|Mon Mar 30 08:30:28 2026 +0800|luci: optimize and fix xray noise
+12da307|A-BO|Sun Mar 29 18:10:13 2026 +0800|luci: sing-box supports xray ech config
+b9f7bbf|A-BO|Sat Mar 28 18:28:25 2026 +0800|luci: optimize subscribe
+f9adfc3|A-BO|Sat Mar 28 12:17:46 2026 +0800|luci: add hysteria2 `keepAlivePeriod` setting
+95185b7|A-BO|Sat Mar 28 11:45:52 2026 +0800|luci: modify the default value of xray `echforcequery`
+0350c62|A-BO|Sat Mar 28 11:37:46 2026 +0800|luci: migrate xray fragment/noise to finalmask
+1efff5b|A-BO|Fri Mar 27 11:34:58 2026 +0800|luci: optimize copy node
+f41bca2|A-BO|Wed Mar 25 13:22:59 2026 +0800|luci: optimize the sing-box hy2 server settings page
+b6bffc2|A-BO|Wed Mar 25 13:14:18 2026 +0800|luci: add xray hysteria2 inbound
+b806bbc|A-BO|Tue Mar 24 22:09:29 2026 +0800|luci: support new hysteria2 config of xray
+
+.....................
+
+</details>
