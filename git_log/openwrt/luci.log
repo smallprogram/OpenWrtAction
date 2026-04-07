@@ -2,5 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-bee369c7f7|Stan Grishin|Fri Mar 27 20:49:40 2026 +0000|luci-app-adblock-fast: update to 1.2.2-r16
+a8333700b3|mdevolde|Sun Apr 5 23:46:01 2026 +0200|luci-app-lxc: add user input checks
+16167c7e11|Paul Donald|Sat Apr 4 19:12:54 2026 +0200|luci-mod-network: check kernel for mptcp to display MPTCP options
+ca72f101e8|Paul Donald|Fri Apr 3 19:01:10 2026 +0200|luci-app-dockerman: return true for net validate
 </details>

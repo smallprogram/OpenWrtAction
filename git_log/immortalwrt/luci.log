@@ -2,5 +2,22 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-6edf62f755|Interesting Gang|Sat Mar 7 21:13:59 2026 +0800|luci-app-passwall: bump to 26.4.1
+9cbbc35eb3|Tianling Shen|Fri Apr 3 11:34:06 2026 +0800|luci-app-openclash: Update to 0.47.075
+568e0c9c27|Tianling Shen|Fri Apr 3 11:29:14 2026 +0800|Merge Official Source
+bee369c7f7|Stan Grishin|Fri Mar 27 20:49:40 2026 +0000|luci-app-adblock-fast: update to 1.2.2-r16
+0b64c57010|Joshua Klinesmith|Mon Mar 30 18:09:44 2026 -0400|luci-app-ocserv: fix status page and users view bugs
+b2fc2f3646|Ramon Van Gorkom|Sat Mar 21 19:10:07 2026 +0100|luci-mod-network: show option also for sae
+63ea9e33b7|Paul Donald|Sun Mar 29 21:26:19 2026 +0200|luci-app-bcp38: string fix
+d857359cfd|Hannu Nyman|Sun Mar 29 19:52:02 2026 +0300|treewide: backport translations and sync
+b3f192d1f2|Eric Fahlgren|Tue Mar 24 11:42:33 2026 -0700|luci-app-attendedsysupgrade: efi value is a bool
+c8e95f1d9d|Stan Grishin|Wed Mar 25 00:41:29 2026 +0000|luci-app-pbr: bugfix
+9d7c568c79|Jinnah Dylan Hosein|Thu Mar 26 15:24:40 2026 -0700|luci-mod-battstatus: get RavPower RP-WD009 working again
+f85bade0ff|Dirk Brenken|Fri Mar 27 10:23:33 2026 +0100|luci-app-adblock: update 4.5.3-4
+6fc9fea1e4|Stan Grishin|Sat Mar 21 01:14:37 2026 +0000|luci-app-adblock-fast: update to 1.2.2-r14
+067535eaf5|George Sapkin|Thu Mar 12 02:28:54 2026 +0200|luci-app-adguardhome: add new app
+4edf11869f|Eric Fahlgren|Fri Mar 20 20:54:09 2026 -0700|luci-app-attendedsysupgrade: format error details
+a708b8987d|Paul Donald|Mon Mar 23 19:10:01 2026 +0100|luci-mod-network: tighten MAC check regex
+
+.....................
+
 </details>

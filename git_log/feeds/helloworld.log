@@ -2,7 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-c6963f7|zxl hhyccc|Thu Apr 2 01:41:39 2026 +0800|Merge pull request #1924 from zxlhhyccc/tuic
-ce6c167|zxlhhyccc|Wed Apr 1 20:34:35 2026 +0800|gn: update to GIT HEAD (2026-03-31)
-c7d55a7|zxl hhyccc|Wed Apr 1 00:34:15 2026 +0800|hysteria: update to 2.8.1
+168a26f|zxl hhyccc|Sat Apr 4 17:47:49 2026 +0800|Merge pull request #1926 from zxlhhyccc/tuic
+2b30e37|zxlhhyccc|Sat Apr 4 10:36:36 2026 +0800|luci-app-ssr-plus: Add noises 'Hex' Encode.
 </details>

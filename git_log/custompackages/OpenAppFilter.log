@@ -1,9 +1,0 @@
-<details> <summary> <b>OpenAppFilter new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-6c0ac2e|TT|Thu Apr 2 14:29:06 2026 +0800|Merge pull request #327 from syb999/master
-f4d2041|TT|Tue Mar 31 10:36:15 2026 +0800|Update README
-ddb2c9d|TT|Tue Mar 31 10:01:44 2026 +0800|Update README
-344b898|syb999|Mon Feb 23 12:43:22 2026 +0800|luci-app-oaf: interface name supports VLAN format, like: eth0.10
-</details>
