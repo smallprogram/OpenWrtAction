@@ -1,0 +1,10 @@
+<details> <summary> <b>routing new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+82a4286|Simon Wunderlich|Thu Apr 9 19:11:10 2026 +0200|Merge pull request #1169 from ecsv/batadv-for-25.12
+1e24252|Sven Eckelmann|Wed Apr 8 14:29:03 2026 +0200|alfred: merge bugfixes from 2026.1
+bee65c5|Sven Eckelmann|Wed Apr 8 14:29:03 2026 +0200|batctl: merge bugfixes from 2026.1
+17ef166|Bastiaan Stougie|Thu Mar 12 23:45:48 2026 +0100|batman-adv: improve batadv_vlan.sh for LuCI
+7d07475|Sven Eckelmann|Wed Apr 8 14:22:59 2026 +0200|batman-adv: merge bugfixes from 2026.1
+</details>

@@ -1,0 +1,9 @@
+<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+eea5eca|Joseph Mory|Thu Apr 9 20:43:00 2026 +0800|chore: code style
+e6d8d1c|Joseph Mory|Wed Apr 8 21:34:57 2026 +0800|feat: scheduled log clear
+014cbf7|Joseph Mory|Wed Apr 8 16:58:13 2026 +0800|chore: set default `ui_path` to mixin config
+6882d48|Joseph Mory|Wed Apr 8 09:40:32 2026 +0800|chore: update mihomo to 1.19.23
+</details>

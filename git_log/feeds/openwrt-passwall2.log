@@ -2,11 +2,19 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a44f900|handsomeji|Sun Apr 5 03:01:19 2026 +0800|luci: 26.4.5
-223dba9|handsomeji|Sat Apr 4 21:14:28 2026 +0800|luci: optimize and fix
-a7278fe|handsomeji|Sun Apr 5 02:37:59 2026 +0800|luci: add force proxy lan ip option
-8e6f2fb|handsomeji|Sat Apr 4 10:47:49 2026 +0800|luci: fix UDP
-5476c71|handsomeji|Sat Apr 4 02:31:47 2026 +0800|luci: nftables compatibility with mwan3
-399e168|ShanStone|Fri Apr 3 19:39:16 2026 +0800|luci: merge conditions into the one nft rule
-0178ee1|ShanStone|Fri Apr 3 19:16:35 2026 +0800|luci: reduce unnecessary temporary files
+4b4b84d|handsomeji|Fri Apr 10 03:16:41 2026 +0800|luci: 26.4.10
+89079f6|handsomeji|Fri Apr 10 02:54:25 2026 +0800|luci: remove outdated and unused logic
+55f451a|handsomeji|Thu Apr 9 17:05:52 2026 +0800|luci: add front DNS
+82756ac|handsomeji|Thu Apr 9 04:20:16 2026 +0800|luci: add node domain specify DNS over HTTPS option
+917f4aa|handsomeji|Thu Apr 9 03:10:14 2026 +0800|luci: add Xray node domain strategy
+fd58fae|handsomeji|Wed Apr 8 23:15:08 2026 +0800|luci: add node domain specify DNS option
+4894b85|A-BO|Tue Apr 7 22:55:03 2026 +0800|luci: update `Sortable.min.js` to 1.15.7 and fix up/ down button can not hidden
+7d1cea8|handsomeji|Wed Apr 8 18:29:43 2026 +0800|luci: fixup
+c27a06b|A-BO|Tue Apr 7 16:16:43 2026 +0800|luci: disable special node `urltest` in the node list
+026d5dd|A-BO|Tue Apr 7 13:56:17 2026 +0800|luci: hysteria2 `hopInterval` support range
+7501891|A-BO|Mon Apr 6 17:55:20 2026 +0800|luci: add xray `xtls-rprx-vision-udp443`
+4a17a8f|monokoo|Sun Apr 5 21:06:26 2026 +0800|luci: fix tag conflict & nil protocol in chained proxy (non-xray)
+10b6434|handsomeji|Tue Apr 7 16:11:12 2026 +0800|luci: server: fix outbound
+b06b0c3|handsomeji|Tue Apr 7 01:51:25 2026 +0800|luci: add `SS_SYSTEM_DNS_RESOLVER_FORCE_BUILTIN` env for ss-rust
+539d1b6|handsomeji|Mon Apr 6 21:38:48 2026 +0800|luci: adjust node doamin resolve logic
 </details>

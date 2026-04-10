@@ -2,20 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-24543ca|A-BO|Mon Apr 6 22:49:12 2026 +0800|luci: 26.4.6
-37f9755|A-BO|Mon Apr 6 18:16:05 2026 +0800|luci: optimize and fix
-4add69d|A-BO|Mon Apr 6 17:55:20 2026 +0800|luci: add xray `xtls-rprx-vision-udp443`
-9b4e5cb|A-BO|Mon Apr 6 15:50:20 2026 +0800|luci: refactor watchdog script
-720436a|A-BO|Sun Apr 5 21:20:10 2026 +0800|Revert "luci: optimize and fix"
-6f50c3f|monokoo|Sun Apr 5 21:06:26 2026 +0800|luci: fix tag conflict & nil protocol in chained proxy (non-xray) (#4321)
-59f8543|A-BO|Sun Apr 5 20:57:21 2026 +0800|luci: optimize and fix
-6ed7c3e|A-BO|Sun Apr 5 20:19:28 2026 +0800|luci: optimize
-b46a84a|A-BO|Sun Apr 5 15:20:34 2026 +0800|luci: refactor the `filter_direct_node_list` function
-aa21796|lwb1978|Sat Apr 4 20:57:31 2026 +0800|luci: fix acl remote dns logic
-b76289f|A-BO|Sat Apr 4 12:52:39 2026 +0800|luci: nftables compatibility with mwan3
-a0fca8c|A-BO|Sat Apr 4 11:59:25 2026 +0800|luci: fix UDP
-ecd1bb5|A-BO|Sat Apr 4 00:40:06 2026 +0800|luci: Add ctdir REPLY returns and adjust marking rules (#4319)
-398ef15|ShanStone|Fri Apr 3 20:15:24 2026 +0800|luci: fix
-ee3417b|ShanStone|Fri Apr 3 19:09:41 2026 +0800|luci: fix "luci: optimize firewall script" (#4318)
-
+a8366e4|A-BO|Fri Apr 10 00:58:30 2026 +0800|luci: fixup
+df85932|A-BO|Fri Apr 10 00:30:44 2026 +0800|luci: add node domain DNS in subscribe settings
+5746f61|A-BO|Thu Apr 9 23:42:38 2026 +0800|luci: fix and optimize node domain DNS for xray
+ca17473|A-BO|Thu Apr 9 15:42:52 2026 +0800|luci: add node domain specify DNS option
+6f60504|A-BO|Thu Apr 9 01:34:35 2026 +0800|luci: optimize
+0facd2a|A-BO|Wed Apr 8 21:05:35 2026 +0800|luci: optimize process monitor logic
+af83166|A-BO|Tue Apr 7 22:55:03 2026 +0800|luci: update `Sortable.min.js` to 1.15.7 and fix up/ down button can not hidden
+a25b587|A-BO|Tue Apr 7 21:11:53 2026 +0800|luci: server: fix outbound
+4fdd543|A-BO|Tue Apr 7 20:55:30 2026 +0800|luci: add `SS_SYSTEM_DNS_RESOLVER_FORCE_BUILTIN` env for ss-rust
+6275843|A-BO|Tue Apr 7 16:16:43 2026 +0800|luci: disable shunt node `urltest` in the node list
+bb2b22f|A-BO|Tue Apr 7 13:56:17 2026 +0800|luci: hysteria2 `hopInterval` support range
 </details>

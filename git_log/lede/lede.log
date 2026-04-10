@@ -2,12 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-35fc5937f|coolsnowwolf|Mon Apr 6 14:07:01 2026 +0800|mt76: pass LED define via ccflags-y
-4f5c12cd2|coolsnowwolf|Mon Apr 6 14:00:23 2026 +0800|x86: enable testing kernel 6.18 for x86
-a5c495f6f|coolsnowwolf|Mon Apr 6 13:59:43 2026 +0800|ksmbd: fix kernel 5.10 compatibility
-753e38d41|coolsnowwolf|Sat Apr 4 14:32:05 2026 +0800|mt76: update to Git HEAD (2026-03-21)
-9e0f765ee|coolsnowwolf|Sat Apr 4 14:06:02 2026 +0800|Version update to R26.04.04
-d6f59ce00|coolsnowwolf|Sat Apr 4 14:04:51 2026 +0800|aic8800: bump to V5.0_2026_0123_5f7be68d
-177b8b08d|coolsnowwolf|Sat Apr 4 13:45:26 2026 +0800|kernel: bump all to latest HEAD
-8003a797d|coolsnowwolf|Sat Apr 4 13:33:07 2026 +0800|ksmbd: fix kernel 6.9+ compat and inode permission build
+9bfad5081|coolsnowwolf|Thu Apr 9 22:09:57 2026 +0800|tools/erofs-utils: assign PKG_CPE_ID
+864bb60b1|Internet1235|Thu Apr 9 21:37:53 2026 +0800|erofs-utils: update to 1.9.1 (#13958)
+35d100e14|coolsnowwolf|Thu Apr 9 18:05:10 2026 +0800|mac80211: port from upstream ucode with BE support
+56509db02|coolsnowwolf|Thu Apr 9 01:41:14 2026 +0800|libiwinfo: update to Git HEAD (2026-01-14)
+313690298|coolsnowwolf|Thu Apr 9 01:15:51 2026 +0800|ksmbd: fix build with linux kernel 6.18
 </details>

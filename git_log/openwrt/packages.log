@@ -2,7 +2,22 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-910617e18|Hirokazu MORIKAWA|Sun Apr 5 08:04:53 2026 +0900|node: bump to 22.22.2
-cc572e64a|Alexandru Ardelean|Sun Apr 5 09:31:23 2026 +0300|python-setuptools: re-introduce patch from python3
-44d4c9b5a|Luiz Angelo Daros de Luca|Fri Apr 3 18:46:47 2026 -0300|ruby: update to 3.4.9
+31eb81961|Dirk Brenken|Thu Apr 9 23:13:32 2026 +0200|adblock: release 4.5.4-1
+7cd71426e|Alexandru Ardelean|Wed Apr 8 14:39:20 2026 +0300|python-pip: fix build; add setuptools/host as dep
+5a043e08d|Dirk Brenken|Tue Apr 7 19:31:44 2026 +0200|banip: release 1.8.5-1
+226816f18|Daniel F. Dickinson|Wed Feb 25 00:17:43 2026 -0500|zabbix: bump version to 7.0.23 (LTS)
+3c950ba59|Daniel F. Dickinson|Mon Feb 16 04:18:34 2026 -0500|zabbix: update php8 dependencies
+dc416cc9e|Nick Hainke|Sat Feb 7 09:51:49 2026 +0100|expat: update to 2.7.4
+25082fff8|Rui Salvaterra|Thu Jan 29 13:17:10 2026 +0000|tor: update to 0.4.8.22 stable
+710562839|Maxim Storchak|Fri Feb 13 14:58:43 2026 +0200|socat: update to 1.8.1.1
+9a56b685d|Yanase Yuki|Wed Jan 14 17:10:31 2026 +0900|svox: remove package
+caaa8baf6|Yanase Yuki|Wed Jan 14 17:07:43 2026 +0900|moc: remove package
+852a9b25e|Vladimir Ulrich|Mon Mar 9 07:55:37 2026 +0300|zoneinfo: updated to 2026a release
+035813194|Qin Guang|Thu Mar 26 12:45:49 2026 +0000|tar: fix typo in LDFLAGS variable name
+0881b913e|Michał Kępień|Fri Apr 3 15:02:57 2026 +0200|lmdb: update to 0.9.35
+54d83b9b8|Michał Kępień|Fri Apr 3 12:26:26 2026 +0200|knot-resolver: drop LMDB build workaround
+5091c0d9d|Michał Kępień|Thu Apr 2 16:07:11 2026 +0200|lmdb: set SONAME for liblmdb.so
+
+.....................
+
 </details>

@@ -2,10 +2,9 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-f32df37be|Tianling Shen|Fri Apr 3 11:25:32 2026 +0800|Merge Official Source
-d0275cad5|Tim Flubshi|Wed Mar 18 21:55:29 2026 +0100|ddns-scripts: add netcup.com support
-04f0c5bcc|Florian Eckert|Fri Mar 13 11:18:46 2026 +0100|ddns-scripts: switch to procd handling
-d5b4d0754|Patrick Hemmen|Tue Feb 10 21:38:23 2026 +0100|ddns-scripts: change servercow.de to new dns api
-023b15f5c|bdk38|Mon Feb 16 04:49:45 2026 -0800|ddns-scripts: add API-based registered IP verification for Cloudflare proxied records
-fccf25a92|Lin Fan|Sat Feb 7 14:36:01 2026 +0800|ddns-script: update namesilo.com
+9989be201|Tianling Shen|Tue Apr 7 10:47:25 2026 +0800|Node.js: sync with upstream source
+8ffd18cdd|Tianling Shen|Tue Apr 7 10:49:09 2026 +0800|Merge Official Source
+910617e18|Hirokazu MORIKAWA|Sun Apr 5 08:04:53 2026 +0900|node: bump to 22.22.2
+cc572e64a|Alexandru Ardelean|Sun Apr 5 09:31:23 2026 +0300|python-setuptools: re-introduce patch from python3
+44d4c9b5a|Luiz Angelo Daros de Luca|Fri Apr 3 18:46:47 2026 -0300|ruby: update to 3.4.9
 </details>

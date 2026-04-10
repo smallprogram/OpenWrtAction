@@ -1,0 +1,9 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+fbd8fef9|coolsnowwolf|Fri Apr 10 02:17:37 2026 +0800|luci-theme-design: fix LuCI 23 dropdown rendering
+5d62b3b3|coolsnowwolf|Fri Apr 10 01:19:12 2026 +0800|luci-theme-design: sync page style with legacy lua version
+614d4d37|coolsnowwolf|Thu Apr 9 19:00:02 2026 +0800|luci-theme-design: bump to v20260409
+26181dd8|coolsnowwolf|Thu Apr 9 18:06:07 2026 +0800|luci-base: port from upstream ucode with BE support
+</details>
