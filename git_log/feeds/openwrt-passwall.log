@@ -2,15 +2,17 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-a8366e4|A-BO|Fri Apr 10 00:58:30 2026 +0800|luci: fixup
-df85932|A-BO|Fri Apr 10 00:30:44 2026 +0800|luci: add node domain DNS in subscribe settings
-5746f61|A-BO|Thu Apr 9 23:42:38 2026 +0800|luci: fix and optimize node domain DNS for xray
-ca17473|A-BO|Thu Apr 9 15:42:52 2026 +0800|luci: add node domain specify DNS option
-6f60504|A-BO|Thu Apr 9 01:34:35 2026 +0800|luci: optimize
-0facd2a|A-BO|Wed Apr 8 21:05:35 2026 +0800|luci: optimize process monitor logic
-af83166|A-BO|Tue Apr 7 22:55:03 2026 +0800|luci: update `Sortable.min.js` to 1.15.7 and fix up/ down button can not hidden
-a25b587|A-BO|Tue Apr 7 21:11:53 2026 +0800|luci: server: fix outbound
-4fdd543|A-BO|Tue Apr 7 20:55:30 2026 +0800|luci: add `SS_SYSTEM_DNS_RESOLVER_FORCE_BUILTIN` env for ss-rust
-6275843|A-BO|Tue Apr 7 16:16:43 2026 +0800|luci: disable shunt node `urltest` in the node list
-bb2b22f|A-BO|Tue Apr 7 13:56:17 2026 +0800|luci: hysteria2 `hopInterval` support range
+df6d2665|A-BO|Tue Apr 14 00:44:04 2026 +0800|luci: optimize
+5033270a|A-BO|Mon Apr 13 23:09:46 2026 +0800|luci: refresh the preproxy node of the shunt node when subscribe
+a6538ac7|A-BO|Mon Apr 13 22:20:16 2026 +0800|luci: optimize the logic of adding wan_ip to ipset/nftset (#4333)
+78f4955e|lwb1978|Sun Apr 12 23:16:44 2026 +0800|luci: adjust and optimize
+b431aed7|lwb1978|Sun Apr 12 21:53:22 2026 +0800|luci: optimize hotplug logic
+d0536036|A-BO|Sat Apr 11 17:56:14 2026 +0800|luci: optimize
+3696b9dd|A-BO|Sat Apr 11 14:44:50 2026 +0800|luci: optimize the vpslist dns for xray
+ff71a187|lwb1978|Sat Apr 11 01:16:47 2026 +0800|luci: merge identical DNS servers for node domain resolver
+8d0c9e3e|A-BO|Fri Apr 10 13:32:08 2026 +0800|luci: add xray/sing-box config file verification
+06974d82|A-BO|Fri Apr 10 13:11:07 2026 +0800|luci: add node specify DNS warn
+78a445f3|A-BO|Fri Apr 10 10:08:04 2026 +0800|luci: add node domain DNS in subscribe settings
+a8366e44|A-BO|Fri Apr 10 00:58:30 2026 +0800|luci: fixup
+df859321|A-BO|Fri Apr 10 00:30:44 2026 +0800|luci: add node domain DNS in subscribe settings
 </details>

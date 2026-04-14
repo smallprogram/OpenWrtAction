@@ -2,10 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-900234b|zxl hhyccc|Fri Apr 10 00:46:40 2026 +0800|Merge pull request #1935 from zxlhhyccc/tuic
-cd8f6bf|zxlhhyccc|Thu Apr 9 22:37:45 2026 +0800|luci-app-ssr-plus: Optimize the code for generate NFT persistence rules.
-78cb6db|zxl hhyccc|Thu Apr 9 22:37:17 2026 +0800|Merge pull request #1933 from zxlhhyccc/tuic
-a27c78c|zxlhhyccc|Thu Apr 9 20:44:01 2026 +0800|luci-app-ssr-plus: hysteria2 hopInterval support range
-9581c96|zxl hhyccc|Thu Apr 9 20:11:21 2026 +0800|Merge pull request #1932 from zxlhhyccc/tuic
-43cbe97|zxlhhyccc|Wed Apr 8 21:45:36 2026 +0800|luci-app-ssr-plus: Smart core select and import/subscribe stability enhance.
+c5b5609|zxl hhyccc|Sat Apr 11 23:49:37 2026 +0800|Merge pull request #1936 from zxlhhyccc/tuic
+e831f5a|zxlhhyccc|Sat Apr 11 13:26:52 2026 +0800|luci-app-ssr-plus: Fix UDP rules.
+c4bcbef|zxl hhyccc|Sat Apr 11 14:00:53 2026 +0800|naiveproxy: update to 147.0.7727.49-1
 </details>

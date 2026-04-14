@@ -2,9 +2,7 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+0130d7ac4|Robert Marko|Mon Mar 30 18:40:08 2026 +0200|generic: filter out CONFIG_TOOLS_SUPPORT_RELR
 9bfad5081|coolsnowwolf|Thu Apr 9 22:09:57 2026 +0800|tools/erofs-utils: assign PKG_CPE_ID
 864bb60b1|Internet1235|Thu Apr 9 21:37:53 2026 +0800|erofs-utils: update to 1.9.1 (#13958)
-35d100e14|coolsnowwolf|Thu Apr 9 18:05:10 2026 +0800|mac80211: port from upstream ucode with BE support
-56509db02|coolsnowwolf|Thu Apr 9 01:41:14 2026 +0800|libiwinfo: update to Git HEAD (2026-01-14)
-313690298|coolsnowwolf|Thu Apr 9 01:15:51 2026 +0800|ksmbd: fix build with linux kernel 6.18
 </details>

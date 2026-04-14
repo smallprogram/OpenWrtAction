@@ -2,19 +2,12 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-4b4b84d|handsomeji|Fri Apr 10 03:16:41 2026 +0800|luci: 26.4.10
-89079f6|handsomeji|Fri Apr 10 02:54:25 2026 +0800|luci: remove outdated and unused logic
-55f451a|handsomeji|Thu Apr 9 17:05:52 2026 +0800|luci: add front DNS
-82756ac|handsomeji|Thu Apr 9 04:20:16 2026 +0800|luci: add node domain specify DNS over HTTPS option
-917f4aa|handsomeji|Thu Apr 9 03:10:14 2026 +0800|luci: add Xray node domain strategy
-fd58fae|handsomeji|Wed Apr 8 23:15:08 2026 +0800|luci: add node domain specify DNS option
-4894b85|A-BO|Tue Apr 7 22:55:03 2026 +0800|luci: update `Sortable.min.js` to 1.15.7 and fix up/ down button can not hidden
-7d1cea8|handsomeji|Wed Apr 8 18:29:43 2026 +0800|luci: fixup
-c27a06b|A-BO|Tue Apr 7 16:16:43 2026 +0800|luci: disable special node `urltest` in the node list
-026d5dd|A-BO|Tue Apr 7 13:56:17 2026 +0800|luci: hysteria2 `hopInterval` support range
-7501891|A-BO|Mon Apr 6 17:55:20 2026 +0800|luci: add xray `xtls-rprx-vision-udp443`
-4a17a8f|monokoo|Sun Apr 5 21:06:26 2026 +0800|luci: fix tag conflict & nil protocol in chained proxy (non-xray)
-10b6434|handsomeji|Tue Apr 7 16:11:12 2026 +0800|luci: server: fix outbound
-b06b0c3|handsomeji|Tue Apr 7 01:51:25 2026 +0800|luci: add `SS_SYSTEM_DNS_RESOLVER_FORCE_BUILTIN` env for ss-rust
-539d1b6|handsomeji|Mon Apr 6 21:38:48 2026 +0800|luci: adjust node doamin resolve logic
+77ceff0|handsomeji|Mon Apr 13 19:30:30 2026 +0800|luci: fix IPv6 direct DNS
+d79275f|handsomeji|Sat Apr 11 21:06:49 2026 +0800|luci: refresh the preproxy node of the shunt node when subscribe
+acbeab0|A-BO|Fri Apr 10 10:08:04 2026 +0800|luci: add node domain DNS in subscribe settings
+acf6203|A-BO|Thu Apr 9 23:42:38 2026 +0800|luci: fix and optimize node domain DNS for xray
+f568bba|A-BO|Wed Apr 8 21:05:35 2026 +0800|luci: optimize process monitor logic
+3c941a6|A-BO|Sat Apr 11 14:44:50 2026 +0800|luci: optimize the vpslist dns for xray
+431576e|handsomeji|Sat Apr 11 00:22:50 2026 +0800|luci: adjust and optimize
+0369d90|Eldar Timraleev|Sat Apr 11 07:23:29 2026 +0300|ci: enable RU i18n package in build (#1087)
 </details>

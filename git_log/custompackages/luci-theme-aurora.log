@@ -1,0 +1,13 @@
+<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
+
+SHA|Author|Date|Message
+-|-|-|-
+a504bf5|Eamon|Mon Apr 13 01:22:51 2026 +0800|feat: introduce AI workflows note in README
+097e61f|Eamon|Mon Apr 13 00:34:58 2026 +0800|feat(dev): enable auto-reload for .ut file changes
+e59b536|Eamon|Sun Apr 12 05:22:09 2026 +0800|feat: change PWA icon background
+43441e1|Eamon|Sun Apr 12 04:45:52 2026 +0800|perf: prune PWA assets
+9b7b3d5|Eamon|Sat Apr 11 20:37:26 2026 +0800|ci: gate branch builds behind [build] commit marker
+0545a48|Eamon|Sat Apr 11 20:15:00 2026 +0800|ci: build on master and all feat/** branches
+92e1b6d|Eamon|Sat Apr 11 12:28:43 2026 +0800|feat: update theme logo
+c72973f|Eamon|Sat Apr 11 11:51:05 2026 +0800|feat: enable PWA support
+</details>

@@ -2,9 +2,6 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-8a085e7980|Dirk Brenken|Thu Apr 9 23:19:24 2026 +0200|luci-app-adblock: release 4.5.4-1
-adace30827|Konstantin Glukhov|Thu Mar 26 01:32:21 2026 +0900|package-manager: migrate to apk-tools JSON API
-3eaa920623|mdevolde|Mon Apr 6 23:22:45 2026 +0200|luci-app-lxc: add permission to set lxc options
-9253314349|Dirk Brenken|Tue Apr 7 19:34:33 2026 +0200|luci-app-banip: release 1.8.5-1
-98acb68388|Guilherme Cardoso|Fri Mar 13 17:29:12 2026 +0000|luci-app-rustdesk-server: add keep.d file
+0c81d2dbc9|Hannu Nyman|Sat Apr 11 09:17:53 2026 +0300|treewide: backport translations from master
+3cefdb78b6|weicheng04|Fri Apr 10 16:46:05 2026 +0800|luci-mod-network: fix uci.remove() deleting entire radio section on wifi join
 </details>

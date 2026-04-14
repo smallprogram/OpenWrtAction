@@ -2,8 +2,15 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-9c6fa0c|老竭力|Wed Apr 8 16:27:17 2026 +0800|Merge pull request #659 from yhl452493373/master
-a4ff852|yhl452493373|Sun Mar 15 22:01:15 2026 +0800|修复某些弹窗loading图标位置问题
-a10361b|yhl452493373|Sun Mar 15 22:00:02 2026 +0800|Merge remote-tracking branch 'upstream/master'
-85dba34|yhl452493373|Sun Mar 15 21:57:52 2026 +0800|修复某些弹窗loading图标位置问题
+e2d32ab|老竭力|Mon Apr 13 11:48:17 2026 +0800|Merge pull request #658 from sfwwslm/master
+0fe018d|sfwwslm|Mon Apr 13 09:46:07 2026 +0800|fix(css): 修复主页dns字段布局不一致
+74ed2e6|sfwwslm|Mon Apr 13 09:45:27 2026 +0800|fix(css): 修复主页固件版本号换行
+b1035d2|老竭力|Sun Apr 12 16:34:08 2026 +0800|Merge pull request #666 from yhl452493373/master
+12f8bec|老竭力|Sun Apr 12 16:33:43 2026 +0800|Merge pull request #663 from yws112358/patch-1
+aab20f2|yhl452493373|Sat Apr 11 23:00:22 2026 +0800|去掉openclash鼠标移动到各个块上时，块向上移动2px的效果
+8115f7d|yhl452493373|Sat Apr 11 02:31:00 2026 +0800|修复 未设置密码 提示展示异常问题
+fa0fbbc|yhl452493373|Sat Apr 11 00:38:44 2026 +0800|修复 配置 / 更改 弹窗下拉按钮文字颜色不易阅读问题
+2e5cb27|yhl452493373|Sat Apr 11 00:27:33 2026 +0800|修复 深色模式下，openclash 的添加、编辑订阅弹窗背景为浅色问题
+866bcd9|yhl452493373|Sat Apr 11 00:19:46 2026 +0800|修复 软件包 - apk配置 弹窗深色模式下文本框背景为浅色问题 修复 会话已过期 弹窗内容不在弹窗中问题 修复 管理权 - 软件包仓库公钥深色模式下文本框背景为浅色问题
+43e74a1|yws112358|Thu Apr 9 14:44:43 2026 +0800|Comment out X-Frame-Options meta tag
 </details>
