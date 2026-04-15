@@ -2,15 +2,11 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-870097409|Eric Fahlgren|Thu Apr 9 08:56:28 2026 -0700|owut: update to 2026.04.09
-486784b06|Daniel F. Dickinson|Wed Apr 8 04:48:23 2026 -0400|radicale3: update to 3.7.0
-11fca23f5|Daniel F. Dickinson|Wed Feb 25 21:52:40 2026 -0500|radicale3: bump to 3.6.1
-cf67ae67f|Dirk Brenken|Sat Apr 11 18:43:09 2026 +0200|banip: update 1.8.5-2
-411ca9ef5|Dirk Brenken|Sat Apr 11 10:48:53 2026 +0200|adblock: update 4.5.4-3
-5a4a2bde4|Daniel F. Dickinson|Sat Apr 4 23:32:57 2026 -0400|zabbix: fix username for ubus acls
-2f980bda8|Daniel F. Dickinson|Sat Apr 4 23:26:41 2026 -0400|zabbix: tweak ubus acl json whitespace
-72b55de89|Hannu Nyman|Fri Apr 10 19:36:56 2026 +0300|nano: update to 9.0
-abe2fa9fa|Alexandru Ardelean|Sun Mar 29 15:58:27 2026 +0000|python-cryptography: bump to 46.0.6
-462e27f35|Alexandru Ardelean|Thu Apr 9 12:43:07 2026 +0300|python-flask-httpauth: fix build
-a1696cda0|Dirk Brenken|Fri Apr 10 08:01:05 2026 +0200|adblock: update 4.5.4-2
+722351eea|Daniel F. Dickinson|Tue Apr 7 21:12:23 2026 -0400|zabbix: update to 7.0.24
+2f73d1b85|Daniel F. Dickinson|Tue Apr 7 21:10:01 2026 -0400|zabbix: tweak server configuration
+a127b9d2e|Alexandru Ardelean|Thu Apr 9 08:32:33 2026 +0300|python3-greenlet: update to 3.4.0
+435b41ff1|Alexandru Ardelean|Fri Mar 20 16:39:24 2026 +0000|python-greenlet: bump to 3.3.2
+e263702a5|Rosen Penev|Fri Feb 6 16:37:14 2026 -0800|python-gevent: use LF for Makefile
+440baa8d0|Rosen Penev|Thu Feb 5 19:40:11 2026 -0800|python-gevent: update to 25.9.1
+3daf54dd6|Alexandru Ardelean|Fri Apr 10 18:30:15 2026 +0300|python-ubus: backport patch for newer Python
 </details>

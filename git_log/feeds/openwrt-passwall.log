@@ -2,17 +2,10 @@
 
 SHA|Author|Date|Message
 -|-|-|-
+20f7d424|A-BO|Wed Apr 15 13:45:41 2026 +0800|luci: 26.4.15
+57d56da5|A-BO|Wed Apr 15 11:10:27 2026 +0800|luci: optimize node `user-agent` config options
+49930157|A-BO|Wed Apr 15 10:07:12 2026 +0800|luci: add `cwndmultiplier` support for mkcp and remove its rarely used config options
+b902cfa1|A-BO|Tue Apr 14 23:05:11 2026 +0800|luci: adjust and fix
+3b61837d|A-BO|Tue Apr 14 00:44:04 2026 +0800|luci: optimize dns logic for redir and acl
 df6d2665|A-BO|Tue Apr 14 00:44:04 2026 +0800|luci: optimize
-5033270a|A-BO|Mon Apr 13 23:09:46 2026 +0800|luci: refresh the preproxy node of the shunt node when subscribe
-a6538ac7|A-BO|Mon Apr 13 22:20:16 2026 +0800|luci: optimize the logic of adding wan_ip to ipset/nftset (#4333)
-78f4955e|lwb1978|Sun Apr 12 23:16:44 2026 +0800|luci: adjust and optimize
-b431aed7|lwb1978|Sun Apr 12 21:53:22 2026 +0800|luci: optimize hotplug logic
-d0536036|A-BO|Sat Apr 11 17:56:14 2026 +0800|luci: optimize
-3696b9dd|A-BO|Sat Apr 11 14:44:50 2026 +0800|luci: optimize the vpslist dns for xray
-ff71a187|lwb1978|Sat Apr 11 01:16:47 2026 +0800|luci: merge identical DNS servers for node domain resolver
-8d0c9e3e|A-BO|Fri Apr 10 13:32:08 2026 +0800|luci: add xray/sing-box config file verification
-06974d82|A-BO|Fri Apr 10 13:11:07 2026 +0800|luci: add node specify DNS warn
-78a445f3|A-BO|Fri Apr 10 10:08:04 2026 +0800|luci: add node domain DNS in subscribe settings
-a8366e44|A-BO|Fri Apr 10 00:58:30 2026 +0800|luci: fixup
-df859321|A-BO|Fri Apr 10 00:30:44 2026 +0800|luci: add node domain DNS in subscribe settings
 </details>

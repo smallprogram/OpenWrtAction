@@ -2,9 +2,5 @@
 
 SHA|Author|Date|Message
 -|-|-|-
-0260a13|github-actions[bot]|Mon Apr 13 21:20:00 2026 +0800|v2ray-geoip: update to 202604090028 (#621)
-03082e8|github-actions[bot]|Mon Apr 13 21:19:47 2026 +0800|v2ray-geosite: update to 202604122227 (#620)
-3cc16b0|github-actions[bot]|Mon Apr 13 21:17:32 2026 +0800|v2ray-plugin: update to 5.49.0 (#619)
-e664d20|lwb1978|Sat Apr 11 01:31:17 2026 +0800|naiveproxy: update to 147.0.7727.49-1
-7bc7b98|github-actions[bot]|Fri Apr 10 21:43:54 2026 +0800|sing-box: update to 1.13.7 (#618)
+063ef45|github-actions[bot]|Tue Apr 14 19:43:35 2026 +0800|sing-box: update to 1.13.8 (#622)
 </details>
