@@ -108,12 +108,18 @@ for git_folder in "${git_folders[@]}"; do
             if [ -z "$SHA_Begin" ]; then
                 echo "<b>Initial commit log for $OUTPUT_FILE, no previous SHA.</b>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             else
+                # 去除链接末尾可能包含的 .git 后缀，以保证 GitHub 链接格式正确
+                CLEAN_REPO_URL="${REPO_URL%.git}"
+                # 拼接 GitHub 的 Compare 链接
+                COMPARE_URL="${CLEAN_REPO_URL}/compare/${SHA_Begin}...${SHA_End}"
+                echo "#### [:mega: Full Changelog. (${SHA_Begin}...${SHA_End})](${COMPARE_URL})  " >>"git_log/$git_folder/$OUTPUT_FILE.log";
+                echo ":heavy_exclamation_mark: The list displays only the latest 15 commit logs.  " >>"git_log/$git_folder/$OUTPUT_FILE.log"
+                echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
                 echo "SHA|Author|Date|Message" >>"git_log/$git_folder/$OUTPUT_FILE.log"
                 echo "-|-|-|-" >>"git_log/$git_folder/$OUTPUT_FILE.log"
                 git -C "git_repositories/$git_folder/$OUTPUT_FILE" log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" | head -n 15 >>"git_log/$git_folder/$OUTPUT_FILE.log"
                 if [ $(git -C "git_repositories/$git_folder/$OUTPUT_FILE" log --pretty=format:"%h|%an|%ad|%s" "$SHA_Begin...$SHA_End" | wc -l) -gt 15 ]; then 
                     echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
-                    echo "....................." >>"git_log/$git_folder/$OUTPUT_FILE.log"; 
                 fi
             fi
             echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
