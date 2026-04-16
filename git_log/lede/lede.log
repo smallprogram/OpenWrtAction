@@ -1,6 +1,9 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
+#### [:mega: Full Changelog. (b7c95ae5baf49008cd183d9d1570d497693ddaf8...ecec1ef93a8920f30ef927d989b13b674d614ca6)](https://github.com/coolsnowwolf/lede/compare/b7c95ae5baf49008cd183d9d1570d497693ddaf8...ecec1ef93a8920f30ef927d989b13b674d614ca6)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
 SHA|Author|Date|Message
 -|-|-|-
-b7c95ae5b|coolsnowwolf|Thu Mar 12 10:05:30 2026 +0800|mediatek: disable crypto by default for mt7988
+ecec1ef93|Daniel Golle|Sat Apr 11 22:59:07 2026 +0100|mediatek: don't let devfreq power-off the CPU
 </details>

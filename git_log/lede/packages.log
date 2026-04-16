@@ -1,9 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-SHA|Author|Date|Message
--|-|-|-
-744f2a81|coolsnowwolf|Tue Apr 14 21:19:54 2026 +0800|python-setuptools: add host-build
-0cfa124b|coolsnowwolf|Tue Apr 14 13:16:51 2026 +0800|python-pika: add new package for radicale3
-655b8c23|coolsnowwolf|Tue Apr 14 12:20:11 2026 +0800|jq: add host build
-2846e510|coolsnowwolf|Tue Apr 14 11:00:27 2026 +0800|libssh2: bump version
-</details>
