@@ -248,7 +248,7 @@ jobs:
           retention-days: 5
 
       - name: Create Release Tag
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -899,7 +899,7 @@ jobs:
 
       - name: Upload Firmware To Release
         if: steps.matrix_status.outputs.status != 'success'
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -949,7 +949,7 @@ jobs:
           retention-days: 5
 
       - name: Update Release Tag
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         # if: steps.organize_tags.outputs.status == 'success'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -977,7 +977,7 @@ jobs:
     steps:
       - name: Trigger build
         if: ${{ needs.rerun-failed-jobs.result == 'skipped' }}
-        uses: peter-evans/repository-dispatch@v3
+        uses: peter-evans/repository-dispatch@v4
         with:
           token: ${{ secrets.MY_SECRET_PAT }}
           repository: smallprogram/MyAction
