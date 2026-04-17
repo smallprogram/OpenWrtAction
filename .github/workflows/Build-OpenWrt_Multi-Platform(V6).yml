@@ -362,7 +362,11 @@ jobs:
           if docker pull $IMAGE_NAME; then
             echo "Cache found! Extracting entire directory..."
             docker create --name cache_container $IMAGE_NAME /bin/true
-            docker cp cache_container:/openwrt/. /workdir/openwrt/
+            # 先删掉前面初始化生成的空目录，彻底消灭“套娃”隐患
+            sudo rm -rf /workdir/openwrt
+            
+            # 直接原封不动地拷贝整个目录（保留 .git 隐藏文件夹）
+            docker cp cache_container:/openwrt /workdir/
             
             docker rm cache_container
             sudo chown -R $USER:$GROUPS /workdir/openwrt
