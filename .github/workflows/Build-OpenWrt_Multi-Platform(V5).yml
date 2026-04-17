@@ -164,7 +164,6 @@ jobs:
         if: steps.generate_image.outputs.status == 'success'
         with:
           name: Source_${{ matrix.source_code_platform }}
-          # 修复1：修正了 Artifact 上传时的文件路径
           path: ${{ steps.generate_image.outputs.SOURCE_PATH }}/output/output.tar.gz
           retention-days: 5
 
@@ -419,15 +418,16 @@ jobs:
       - name: Download Package
         if: steps.matrix_status.outputs.status != 'success'
         run: |
-          cd $GITHUB_WORKSPACE/openwrt
-          make download -j8
-          find dl -size -1024c -exec rm -f {} \;
+          echo "==== SIMULATION MODE: Skipping full download ===="
+          # cd $GITHUB_WORKSPACE/openwrt
+          # make download -j8
+          # find dl -size -1024c -exec rm -f {} \;
      
       - name: SSH connection to Actions
         uses: mxschmitt/action-tmate@v3.23
         if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
-      - name: Compile Toolchain and Firmware
+      - name: Compile Toolchain and Firmware (SIMULATION MODE)
         id: compile
         if: steps.matrix_status.outputs.status != 'success'
         run: |
@@ -435,16 +435,31 @@ jobs:
           is_complie_error=0
           chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} || true
           
-          echo "Starting full compilation pipeline..."
-          if [[ ${{ fromJSON(github.run_attempt) }} == 3 ]]; then
-              make -j$(nproc) V=s
-              $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} "${{ fromJSON(github.run_attempt) }}" || true
-              is_complie_error=${PIPESTATUS[0]}
-          else
-              make -j$(nproc)
-              $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} "${{ fromJSON(github.run_attempt) }}" || true
-              is_complie_error=${PIPESTATUS[0]}
-          fi
+          echo "==== SIMULATION MODE: Skipping actual compilation ===="
+          # 如果是真实的编译，原有代码如下：
+          # if [[ ${{ fromJSON(github.run_attempt) }} == 3 ]]; then
+          #     make -j$(nproc) V=s
+          #     $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} "${{ fromJSON(github.run_attempt) }}" || true
+          #     is_complie_error=${PIPESTATUS[0]}
+          # else
+          #     make -j$(nproc)
+          #     $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} "${{ fromJSON(github.run_attempt) }}" || true
+          #     is_complie_error=${PIPESTATUS[0]}
+          # fi
+
+          echo "1. 创建模拟的缓存目录 (测试 GHCR 缓存打包)"
+          mkdir -p staging_dir build_dir/host build_dir/toolchain-dummy .ccache
+          dd if=/dev/zero of=staging_dir/dummy_toolchain.bin bs=1M count=50
+          dd if=/dev/zero of=build_dir/host/dummy_host.bin bs=1M count=50
+
+          echo "2. 创建模拟的固件和包目录 (测试 Artifact 整理)"
+          mkdir -p bin/targets/dummy_target/dummy_subtarget
+          mkdir -p bin/packages/dummy_arch/dummy_feed
+          
+          echo "3. 生成模拟的固件和包文件"
+          dd if=/dev/zero of=bin/targets/dummy_target/dummy_subtarget/openwrt-dummy-firmware.img bs=1M count=30
+          echo "dummy buildinfo data" > bin/targets/dummy_target/dummy_subtarget/config.buildinfo
+          dd if=/dev/zero of=bin/packages/dummy_arch/dummy_feed/dummy-app.ipk bs=1M count=5
 
           if [ "$is_complie_error" -eq 0 ]; then
             echo "status=success" >> $GITHUB_OUTPUT
