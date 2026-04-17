@@ -366,7 +366,7 @@ jobs:
           
           if docker pull $IMAGE_NAME; then
             echo "Cache found! Extracting entire directory..."
-            docker create --name cache_container $IMAGE_NAME
+            docker create --name cache_container $IMAGE_NAME /bin/true
             docker cp cache_container:/openwrt /workdir/
             docker rm cache_container
             sudo chown -R $USER:$GROUPS /workdir/openwrt
@@ -483,7 +483,7 @@ jobs:
           
           # 创建基于 scratch 的空白镜像，仅放入完整目录
           cat <<EOF > Dockerfile
-          FROM scratch
+          FROM alpine:latest
           COPY openwrt /openwrt
           EOF
           
