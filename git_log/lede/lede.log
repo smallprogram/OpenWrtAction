@@ -1,9 +1,0 @@
-<details> <summary> <b>lede new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. (ecec1ef93a8920f30ef927d989b13b674d614ca6...9ab80168b34e55ed38a0f04f4e1d491a74e26bd3)](https://github.com/coolsnowwolf/lede/compare/ecec1ef93a8920f30ef927d989b13b674d614ca6...9ab80168b34e55ed38a0f04f4e1d491a74e26bd3)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-9ab80168b|coolsnowwolf|Sat Apr 18 00:15:24 2026 +0800|feeds.conf.default: switch to luci 25.12
-</details>
