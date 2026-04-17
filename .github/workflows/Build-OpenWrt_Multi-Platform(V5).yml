@@ -12,7 +12,7 @@ name: Build-OpenWrt_Multi-Platform(V5)
 
 on:
   repository_dispatch:
-    types: [openwrt_source_update]
+    types: [openwrt_source_update_v5]
   workflow_dispatch:
     inputs:
       ssh:
@@ -982,4 +982,3 @@ jobs:
           token: ${{ secrets.MY_SECRET_PAT }}
           repository: smallprogram/MyAction
           event-type: openwrt_compilation_completed
-      

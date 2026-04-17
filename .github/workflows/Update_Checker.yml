@@ -83,5 +83,5 @@ jobs:
       uses: peter-evans/repository-dispatch@main
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        event-type: openwrt_source_update
+        event-type: openwrt_source_update_v6
 
