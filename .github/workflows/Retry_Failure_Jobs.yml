@@ -5,6 +5,10 @@ on:
     inputs:
       run_id:
         required: true
+
+permissions:
+  actions: write
+
 jobs:
     rerun:
         runs-on: ubuntu-latest
@@ -14,5 +18,12 @@ jobs:
                   GH_REPO: ${{ github.repository }}
                   GH_TOKEN: ${{ github.token }}
               run: |
-                  gh run watch ${{ inputs.run_id }} > /dev/null 2>&1
+                  echo "Waiting for main workflow (Run ID: ${{ inputs.run_id }}) to completely finish..."
+
+                  gh run watch ${{ inputs.run_id }} > /dev/null 2>&1 || true
+          
+                  echo "Main workflow finished. Triggering rerun for failed jobs..."
+                  
                   gh run rerun ${{ inputs.run_id }} --failed
+                  
+                  echo "Rerun triggered successfully!"

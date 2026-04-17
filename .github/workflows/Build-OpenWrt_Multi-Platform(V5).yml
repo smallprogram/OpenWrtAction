@@ -23,6 +23,7 @@ on:
 permissions:
   contents: write
   packages: write
+  actions: write    # 允许脚本去触发重试工作流
 
 env:
   MAKE_DEFCONFIG_SH: compile_script/step01_make_defconfig.sh
