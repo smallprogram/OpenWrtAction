@@ -353,8 +353,14 @@ jobs:
         id: restore_cache
         if: steps.matrix_status.outputs.status != 'success'
         run: |
+          # 将用户名强制转小写
           REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
-          IMAGE_NAME="ghcr.io/$REPO_OWNER/openwrt-full-cache-${{ matrix.source_code_platform }}-${{ matrix.platform }}:latest"
+          
+          # 将平台名称强制转小写，防止包含 X86 这样的大写字母导致 Docker 报错
+          PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
+          
+          # 拼接最终的合法全小写镜像名
+          IMAGE_NAME="ghcr.io/$REPO_OWNER/openwrt-full-cache-$PLATFORM_NAME:latest"
           echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV
           
           if docker pull $IMAGE_NAME; then
