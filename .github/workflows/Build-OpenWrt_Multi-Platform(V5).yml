@@ -19,8 +19,10 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-  # schedule:
-  #   - cron: 0 */8 * * *
+
+permissions:
+  contents: write
+  packages: write
 
 env:
   MAKE_DEFCONFIG_SH: compile_script/step01_make_defconfig.sh
@@ -59,7 +61,6 @@ jobs:
         id: read-platforms
         run: |
           bash $PLATFORMS_SH
-
   
   job_source_init:
     needs: job_init
@@ -95,11 +96,9 @@ jobs:
 
       - name: Load Custom Feeds
         run: |
-          # [ -e $FEEDS_CONF ] && cp -r ${{ matrix.value.FEEDS_CONF }} openwrt/feeds.conf.default
           chmod +x ${{ matrix.value.DIY_P1_SH }}
           cd openwrt
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P1_SH }}
-
           echo "feeds_Conf:------------------------"
           cat feeds.conf.default
 
@@ -148,7 +147,6 @@ jobs:
             git push origin ${{ github.ref_name }} --force
             git branch -d temp-${{ matrix.source_code_platform }} || echo "Local temp-${{ matrix.source_code_platform }} not found"
             git push origin --delete temp-${{ matrix.source_code_platform }} || echo "Remote temp-${{ matrix.source_code_platform }} not found"
-
           else
             echo "No changes to commit."
           fi
@@ -157,14 +155,7 @@ jobs:
         working-directory: /workdir
         id: generate_image
         run: |
-          echo "source folder size:"
-          du -hs openwrt/
-          echo
           tar -czf output/output.tar.gz openwrt/
-
-          echo "source code size:"
-          cd output
-          ls -lh output.tar.gz
           echo "SOURCE_PATH=$PWD" >> $GITHUB_OUTPUT
           echo "status=success" >> $GITHUB_OUTPUT
 
@@ -207,7 +198,6 @@ jobs:
     needs: [job_init, job_source_init]
     runs-on: ubuntu-latest
     name: Generate-Release-Tag-And-Git-Log
-
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -257,7 +247,6 @@ jobs:
 
       - name: Merge and push changes with "theirs" strategy
         run: |
-          
           git checkout temp-tag-gitlog
           rm -rf release.txt
           git add .
@@ -266,363 +255,22 @@ jobs:
             git config user.name "smallprogram"
             git config user.email "smallprogram@foxmail.com"
             git commit -m "Git Log: update code"
-
             git checkout ${{ github.ref_name }}
             git fetch origin
             git reset --hard origin/${{ github.ref_name }}
-
             git checkout temp-tag-gitlog
-            git merge origin/${{ github.ref_name }} --no-ff --strategy-option theirs --no-edit || {
-              echo "Merge conflict in temp branch, please resolve manually."
-              exit 100
-            }
-
+            git merge origin/${{ github.ref_name }} --no-ff --strategy-option theirs --no-edit || { exit 100; }
             git checkout ${{ github.ref_name }} 
             git merge temp-tag-gitlog --strategy-option theirs --no-edit
             git push origin ${{ github.ref_name }} --force
             git branch -d temp-tag-gitlog || echo "Local temp-tag-gitlog not found"
             git push origin --delete temp-tag-gitlog || echo "Remote temp-tag-gitlog not found"
-
           else
             echo "No changes to commit."
           fi
 
-  job_build_toolchain:
-    needs: [job_init, job_source_init, job_generate_release_tag]
-    runs-on: ${{ matrix.value.OS }}
-    strategy:
-      fail-fast: false
-      matrix:
-        include: ${{ fromJson(needs.job_init.outputs.platforms) }}
-    name: Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-      
-      - name: Matrix Status
-        id: matrix_status
-        # env:
-        #   GH_TOKEN: ${{ github.token }}
-        run: |
-            chmod +x $MATRIX_STATUS_SH
-            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Toolchain-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
-
-      - name: Server Info
-        if: steps.matrix_status.outputs.status != 'success'
-        run: |
-            echo "---------------------CPU Info--------------------"
-            lscpu
-            echo "---------------------RAM Info--------------------"
-            free -h
-
-      - name: Initialization Environment
-        if: steps.matrix_status.outputs.status != 'success'
-        run: |
-          sudo timedatectl set-timezone "$TZ"
-          sudo mkdir -p /workdir
-          sudo chown -R $USER:$GROUPS /workdir
- 
-      - name: Maximize Build Space
-        uses: smallprogram/maximize-build-diskspace@main
-        if: steps.matrix_status.outputs.status != 'success'
-        with:
-          root-reserve-mb: 3072
-          swap-size-mb: 4096
-          remove-dotnet: 'true'
-          remove-android: 'true'
-          remove-haskell: 'true'
-          remove-codeql: 'true'
-          remove-docker-images: 'true'
-          build-mount-path: '/workdir'
-
-      - name: Pull the latest changes
-        if: steps.matrix_status.outputs.status != 'success'
-        run: git pull origin ${{ github.ref_name }}
-
-      - name: Install Packages
-        if: steps.matrix_status.outputs.status != 'success'
-        env:
-          DEBIAN_FRONTEND: noninteractive
-        run: |
-          sudo -E apt-get -qq update
-          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
-          sudo -E apt-get -qq autoremove --purge
-          sudo -E apt-get -qq clean
-          sudo timedatectl set-timezone "$TZ"
-          df -hT
-
-      - name: Initialization Directory
-        working-directory: /workdir
-        id: init_directory
-        if: steps.matrix_status.outputs.status != 'success'
-        run: |
-          sudo mkdir -p openwrt
-          sudo mkdir -p download
-          sudo chown -R $USER:$GROUPS /workdir/openwrt
-          sudo chown -R $USER:$GROUPS /workdir/download
-
-          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
-          ln -sf /workdir/download $GITHUB_WORKSPACE/download
-
-      - name: Download Source From Artifacts
-        id : download
-        if: steps.matrix_status.outputs.status != 'success'
-        uses: actions/download-artifact@v8
-        with:
-          name: Source_${{ matrix.source_code_platform }}
-          path: download
-
-      - name: File Extraction
-        if: steps.matrix_status.outputs.status != 'success'
-        working-directory: /workdir
-        run: |
-          echo "source packages size:"
-          ls -lh download/output.tar.gz
-          tar -xzf download/output.tar.gz
-          rm -rf download/output.tar.gz
-          sudo chown -R $USER:$GROUPS /workdir/openwrt
-
-      - name: Load Configuration
-        if: steps.matrix_status.outputs.status != 'success'
-        run: |
-          # chmod +x $COPY_BACKGROUNDFILES_SH
-          [ -e ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config ] && cp -r ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config openwrt/.config
-          cd openwrt
-          make defconfig
-          # $GITHUB_WORKSPACE/$COPY_BACKGROUNDFILES_SH "" "${{ matrix.platform }}"
-
-      - name: Download Package
-        if: steps.matrix_status.outputs.status != 'success'
-        id: package
-        run: |
-          df -hT
-          cd $GITHUB_WORKSPACE/openwrt
-          make download -j8
-          find dl -size -1024c -exec ls -l {} \;
-          find dl -size -1024c -exec rm -f {} \;
-          df -hT
-      
-      - name: SSH connection to Actions
-        uses: mxschmitt/action-tmate@v3.23
-        if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
-
-      # - name: Download Cached Toolchain
-      #   id: download_toolchain_cache
-      #   if: steps.matrix_status.outputs.status != 'success'
-      #   continue-on-error: true
-      #   uses: dawidd6/action-download-artifact@v11
-      #   with:
-      #     name: ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}
-      #     workflow: Build-OpenWrt_Multi-Platform(V5).yml
-      #     path: toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}
-      #     if_no_artifact_found: ignore
-
-      # - name: Download Cached Toolchain Log
-      #   id: download_toolchain_log
-      #   if: steps.matrix_status.outputs.status != 'success'
-      #   continue-on-error: true
-      #   uses: dawidd6/action-download-artifact@v11
-      #   with:
-      #     name: ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}
-      #     workflow: Build-OpenWrt_Multi-Platform(V5).yml
-      #     path: toolchain_cache/ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}
-      #     if_no_artifact_found: ignore
-
-      # - name: Check Toolchain Cache
-      #   id: check_toolchain_cache
-      #   if: steps.matrix_status.outputs.status != 'success'
-      #   run: |
-      #     echo "Checking toolchain cache..."
-          
-      #     # Get current toolchain git hash
-      #     cd /workdir/openwrt
-      #     current_hash=$(git log --pretty=tformat:"%H" -n1 tools toolchain)
-      #     echo "Current toolchain hash: $current_hash"
-          
-      #     # Initialize cache status
-      #     cache_valid="false"
-          
-      #     # Check if cache exists
-      #     if [ -f "$GITHUB_WORKSPACE/toolchain_cache/ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}/ToolChainLog.txt" ]; then
-      #       cached_hash=$(cat "$GITHUB_WORKSPACE/toolchain_cache/ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}/ToolChainLog.txt")
-      #       echo "Cached toolchain hash: $cached_hash"
-            
-      #       if [ "$current_hash" == "$cached_hash" ]; then
-      #         echo "✓ Toolchain cache is valid, will restore from cache"
-      #         cache_valid="true"
-              
-      #         # Extract cached toolchain directories
-      #         if [ -f "$GITHUB_WORKSPACE/toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}/toolchain_cache.tar.gz" ]; then
-      #           echo "Extracting cached toolchain..."
-                
-      #           cache_file="$GITHUB_WORKSPACE/toolchain_cache/ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}/toolchain_cache.tar.gz"
-      #           echo "Cache file size: $(du -h "$cache_file" | cut -f1)"
-                
-      #           # Test archive integrity
-      #           echo "Testing archive integrity..."
-      #           if gzip -t "$cache_file" 2>/dev/null; then
-      #             echo "✓ Archive integrity verified"
-                  
-      #             # Remove old directories to avoid conflicts
-      #             echo "Removing old staging_dir and build_dir..."
-      #             rm -rf /workdir/openwrt/staging_dir /workdir/openwrt/build_dir
-                  
-      #             # Extract cache
-      #             cd /workdir/openwrt
-      #             if tar -xzf "$cache_file"; then
-      #               echo "Cached toolchain extracted successfully"
-      #               ls -lh staging_dir/ build_dir/ 2>/dev/null || echo "Directories extracted"
-      #             else
-      #               echo "✗ Failed to extract cache, will compile from scratch"
-      #               cache_valid="false"
-      #             fi
-      #           else
-      #             echo "✗ Cache file is corrupted, will compile from scratch"
-      #             cache_valid="false"
-      #           fi
-      #           ls
-      #         else
-      #           echo "⚠ Cache metadata exists but toolchain archive not found"
-      #           cache_valid="false"
-      #         fi
-      #       else
-      #         echo "✗ Toolchain hash mismatch, cache invalid"
-      #       fi
-      #     else
-      #       echo "ℹ No cached toolchain found, will compile from scratch"
-      #     fi
-          
-      #     # Cleanup cache directory
-      #     rm -rf "$GITHUB_WORKSPACE/toolchain_cache"
-          
-      #     echo "cache_valid=$cache_valid" >> $GITHUB_OUTPUT
-      #     echo "current_hash=$current_hash" >> $GITHUB_OUTPUT
-
-      - name: Compile Toolchain
-        id: compile_toolchain
-        if: steps.matrix_status.outputs.status != 'success' # && steps.check_toolchain_cache.outputs.cache_valid != 'true'
-        run: |
-          chmod +x ${{ matrix.value.DIY_P3_SH }}
-          cd openwrt
-          is_complie_error=0
-          if [[ ${{ fromJSON(github.run_attempt) }} == 3 ]]; then
-              echo "$(nproc) threads compile tools"
-              make tools/compile -j$(nproc) V=s
-              make toolchain/compile -j$(nproc) V=s
-              make package/cleanup -j$(nproc) V=s
-              make target/compile -j$(nproc) V=s
-              $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} "${{ fromJSON(github.run_attempt) }}"
-              is_complie_error=${PIPESTATUS[0]}
-          else
-              echo "$(nproc) threads compile tools"
-              make tools/compile -j$(nproc)
-              make toolchain/compile -j$(nproc)
-              make package/cleanup -j$(nproc)
-              make target/compile -j$(nproc)
-              $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} "${{ fromJSON(github.run_attempt) }}"
-              is_complie_error=${PIPESTATUS[0]}
-          fi
-
-          echo "complie result： $is_complie_error"
-          if [ "$is_complie_error" -eq 0 ]; then
-            echo "status=success" >> $GITHUB_OUTPUT
-          else
-            echo "status=failure" >> $GITHUB_OUTPUT
-            exit $is_complie_error
-          fi
-          df -hT
-
-      # - name: Upload Toolchain Cache
-      #   if: steps.compile_toolchain.outputs.status == 'success' && (steps.compile_toolchain.outputs.status == 'success' || steps.check_toolchain_cache.outputs.cache_valid == 'true') && steps.matrix_status.outputs.status != 'success'
-      #   run: |
-      #     echo "Preparing toolchain cache for upload..."
-          
-      #     cd $GITHUB_WORKSPACE
-      #     mkdir -p toolchain_upload
-          
-      #     # Package toolchain directories
-      #     cd openwrt
-      #     echo "Packaging staging_dir and build_dir..."
-          
-      #     if tar -czf $GITHUB_WORKSPACE/toolchain_upload/toolchain_cache.tar.gz staging_dir/ build_dir/; then
-      #       echo "✓ Packaging successful"
-            
-      #       echo "Toolchain cache size:"
-      #       ls -lh $GITHUB_WORKSPACE/toolchain_upload/toolchain_cache.tar.gz
-            
-      #       # Verify archive integrity
-      #       echo "Verifying archive integrity..."
-      #       if gzip -t $GITHUB_WORKSPACE/toolchain_upload/toolchain_cache.tar.gz; then
-      #         echo "✓ Archive integrity verified"
-      #       else
-      #         echo "✗ Archive verification failed"
-      #         exit 1
-      #       fi
-      #     else
-      #       echo "✗ Packaging failed"
-      #       exit 1
-      #     fi
-          
-      #     # Save current hash
-      #     if [ -n "${{ steps.check_toolchain_cache.outputs.current_hash }}" ]; then
-      #       echo "${{ steps.check_toolchain_cache.outputs.current_hash }}" > $GITHUB_WORKSPACE/toolchain_upload/ToolChainLog.txt
-      #     else
-      #       git log --pretty=tformat:"%H" -n1 tools toolchain > $GITHUB_WORKSPACE/toolchain_upload/ToolChainLog.txt
-      #     fi
-          
-      #     echo "Toolchain hash saved:"
-      #     cat $GITHUB_WORKSPACE/toolchain_upload/ToolChainLog.txt
-
-      # - name: Upload Toolchain To Artifact
-      #   uses: actions/upload-artifact@v7
-      #   if: (steps.compile_toolchain.outputs.status == 'success' || steps.check_toolchain_cache.outputs.cache_valid == 'true') && steps.matrix_status.outputs.status != 'success'
-      #   with:
-      #     name: ToolChain_${{ matrix.source_code_platform }}_${{ matrix.platform }}
-      #     path: toolchain_upload/toolchain_cache.tar.gz
-      #     retention-days: 14
-
-      # - name: Upload Toolchain Log To Artifact
-      #   uses: actions/upload-artifact@v7
-      #   if: (steps.compile_toolchain.outputs.status == 'success' || steps.check_toolchain_cache.outputs.cache_valid == 'true') && steps.matrix_status.outputs.status != 'success'
-      #   with:
-      #     name: ToolChainLog_${{ matrix.source_code_platform }}_${{ matrix.platform }}
-      #     path: toolchain_upload/ToolChainLog.txt
-      #     retention-days: 14
-
-      - name: Generate Source Packages
-        working-directory: /workdir
-        id: generate_image
-        if: steps.matrix_status.outputs.status != 'success'
-        run: |
-          echo "source toolchain folder size:"
-          du -hs openwrt/
-
-          sudo mkdir -p output
-          sudo chown -R $USER:$GROUPS /workdir/output
-          ln -sf /workdir/output $GITHUB_WORKSPACE/output
-
-          echo
-          tar -czf output/output_toolchain.tar.gz openwrt/
-
-          echo "source toolchain file size:"
-          cd output
-          ls -lh output_toolchain.tar.gz
-          echo "SOURCE_TOOLCHAIN_PATH=$PWD" >> $GITHUB_OUTPUT
-          echo "status=success" >> $GITHUB_OUTPUT
-  
-      - name: Upload Source To Artifact
-        uses: actions/upload-artifact@v7
-        if: steps.generate_image.outputs.status == 'success' && steps.matrix_status.outputs.status != 'success'
-        with:
-          name: Source_${{ matrix.source_code_platform }}_${{ matrix.platform }}
-          path: ${{ steps.generate_image.outputs.SOURCE_TOOLCHAIN_PATH }}/output_toolchain.tar.gz
-          retention-days: 5
-
   job_build:
-    needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain]
+    needs: [job_init, job_source_init, job_generate_release_tag]
     runs-on: ${{ matrix.value.OS }}
     if: ${{ always() }}
     strategy:
@@ -639,8 +287,6 @@ jobs:
 
       - name: Matrix Status
         id: matrix_status
-        # env:
-        #   GH_TOKEN: ${{ github.token }}
         run: |
             chmod +x $MATRIX_STATUS_SH
             $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
@@ -685,10 +331,7 @@ jobs:
         run: |
           sudo -E apt-get -qq update
           sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
-          # sudo -E apt-get -qq autoremove --purge
-          # sudo -E apt-get -qq clean
           sudo timedatectl set-timezone "$TZ"
-          df -hT
 
       - name: Initialization Directory
         working-directory: /workdir
@@ -699,53 +342,96 @@ jobs:
           sudo mkdir -p download
           sudo chown -R $USER:$GROUPS /workdir/openwrt
           sudo chown -R $USER:$GROUPS /workdir/download
-
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
           ln -sf /workdir/download $GITHUB_WORKSPACE/download
 
-      - name: Download Source From Artifacts
-        id : download
+      - name: Login to GitHub Container Registry
         if: steps.matrix_status.outputs.status != 'success'
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Restore Entire OpenWrt Cache from GHCR
+        id: restore_cache
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          IMAGE_NAME="ghcr.io/$REPO_OWNER/openwrt-full-cache-${{ matrix.source_code_platform }}-${{ matrix.platform }}:latest"
+          echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV
+          
+          if docker pull $IMAGE_NAME; then
+            echo "Cache found! Extracting entire directory..."
+            docker create --name cache_container $IMAGE_NAME
+            # 将镜像内的 openwrt 目录完整提出
+            docker cp cache_container:/openwrt /workdir/
+            docker rm cache_container
+            sudo chown -R $USER:$GROUPS /workdir/openwrt
+            echo "cache_hit=true" >> $GITHUB_OUTPUT
+            
+            # 更新已恢复缓存的源码和包
+            cd /workdir/openwrt
+            git pull
+            ./scripts/feeds update -a
+            ./scripts/feeds install -a
+          else
+            echo "No cache found on GHCR. This will be a clean build."
+            echo "cache_hit=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Download Source Artifact (If Cache Miss)
+        if: steps.matrix_status.outputs.status != 'success' && steps.restore_cache.outputs.cache_hit == 'false'
         uses: actions/download-artifact@v8
         with:
-          name: Source_${{ matrix.source_code_platform }}_${{ matrix.platform }}
+          name: Source_${{ matrix.source_code_platform }}
           path: download
 
-      - name: File Extraction
-        if: steps.matrix_status.outputs.status != 'success'
+      - name: File Extraction (If Cache Miss)
+        if: steps.matrix_status.outputs.status != 'success' && steps.restore_cache.outputs.cache_hit == 'false'
         working-directory: /workdir
         run: |
-          echo "source packages size:"
-          ls -lh download/output_toolchain.tar.gz
-          tar -xzf download/output_toolchain.tar.gz
-          rm -rf download/output_toolchain.tar.gz
+          tar -xzf download/output.tar.gz
+          rm -rf download/output.tar.gz
           sudo chown -R $USER:$GROUPS /workdir/openwrt
+
+      - name: Load Configuration
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          [ -e ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config ] && cp -r ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config openwrt/.config
+          cd openwrt
+          make defconfig
+
+      - name: Download Package
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          cd $GITHUB_WORKSPACE/openwrt
+          make download -j8
+          find dl -size -1024c -exec rm -f {} \;
      
       - name: SSH connection to Actions
         uses: mxschmitt/action-tmate@v3.23
         if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
-      - name: Generate Frimware
+      - name: Compile Toolchain and Firmware
         id: compile
         if: steps.matrix_status.outputs.status != 'success'
         run: |
           cd openwrt
           is_complie_error=0
-          echo "$(nproc) threads compile frimware"
-
+          chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} || true
+          
+          echo "Starting full compilation pipeline..."
           if [[ ${{ fromJSON(github.run_attempt) }} == 3 ]]; then
               make -j$(nproc) V=s
+              $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} "${{ fromJSON(github.run_attempt) }}" || true
               is_complie_error=${PIPESTATUS[0]}
           else
               make -j$(nproc)
+              $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} "${{ fromJSON(github.run_attempt) }}" || true
               is_complie_error=${PIPESTATUS[0]}
           fi
 
-
-          # stdbuf -oL  make -j1 | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now'
-          # stdbuf -oL  make -j$(nproc) | perl -nE 'state $last = time(); $now = time(); chomp; print "[⬆" . ($now - $last) . "s] $_\n"; $last = $now'
-
-          echo "complie result： $is_complie_error"
           if [ "$is_complie_error" -eq 0 ]; then
             echo "status=success" >> $GITHUB_OUTPUT
           else
@@ -753,11 +439,22 @@ jobs:
             exit $is_complie_error
           fi
 
-          df -hT
-
-      - name: Check Space Usage
-        if: steps.matrix_status.outputs.status != 'success' && !cancelled()
-        run: df -hT
+      - name: Save Cache to GHCR
+        if: steps.matrix_status.outputs.status != 'success' && always()
+        run: |
+          echo "Packing entire openwrt directory to Docker image..."
+          cd /workdir
+          
+          # 创建基于 scratch 的空白镜像，仅放入完整目录
+          cat <<EOF > Dockerfile
+          FROM scratch
+          COPY openwrt /openwrt
+          EOF
+          
+          echo "Building cache image (This might take a while due to size)..."
+          docker build -t $IMAGE_NAME .
+          echo "Pushing cache image to GHCR..."
+          docker push $IMAGE_NAME
 
       - name: Upload Bin Directory To Artifact
         uses: actions/upload-artifact@v7
@@ -770,20 +467,6 @@ jobs:
         id: organize
         if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && steps.matrix_status.outputs.status != 'success' && !cancelled() 
         run: |
-          # rm -rf $GITHUB_WORKSPACE/openwrt/bin
-          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin
-          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets
-          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa
-          # mkdir -p $GITHUB_WORKSPACE/openwrt/bin/targets/aa/bb
-          # cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
-          # mkdir -p feeds_packages
-          # firmware_path=$PWD
-          # dd if=/dev/zero of=${{ matrix.source_code_platform }}_${{ matrix.platform }}.txt bs=1M count=10
-          # if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
-          #     exit 200
-          # fi
-
-          
           cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
           mkdir -p feeds_packages
           firmware_path=$PWD
@@ -791,13 +474,9 @@ jobs:
           mv * $firmware_path/feeds_packages
           cd $firmware_path
 
-          # zip directory
           zip -r buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip */
-          # zip other files
           find . -maxdepth 1 -type f ! -name '*-*-*' ! -name '*.zip' -exec zip buildinfo_${{ matrix.source_code_platform }}_${{ matrix.platform }}.zip {} +
-          # remove other files
           find . -mindepth 1 ! \( -name '*-*-*' -o -name '*.zip' \) -exec rm -rf {} +
-
 
           if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
               for file in openwrt-*; do
@@ -806,8 +485,6 @@ jobs:
                   fi
               done
           fi
-
-          ls
 
           echo "FIRMWARE=$firmware_path" >> $GITHUB_OUTPUT
           echo "status=success" >> $GITHUB_OUTPUT
@@ -819,9 +496,8 @@ jobs:
           name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
           path: ${{ steps.organize.outputs.FIRMWARE }}
 
-
   job_upload_release:
-    needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain, job_build]
+    needs: [job_init, job_source_init, job_generate_release_tag, job_build]
     runs-on: ${{ matrix.value.OS }}
     if: ${{ always() }}
     strategy:
@@ -829,7 +505,6 @@ jobs:
       matrix:
         include: ${{ fromJson(needs.job_init.outputs.platforms) }}
     name: Upload-${{ matrix.source_code_platform }}-${{ matrix.platform }}
-
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -838,8 +513,6 @@ jobs:
 
       - name: Matrix Status
         id: matrix_status
-        # env:
-        #   GH_TOKEN: ${{ github.token }}
         run: |
             chmod +x $MATRIX_STATUS_SH
             $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Upload-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
@@ -849,18 +522,11 @@ jobs:
         if: steps.matrix_status.outputs.status != 'success'
         run: |
           sudo timedatectl set-timezone "$TZ"
-          df -hT
           cd $GITHUB_WORKSPACE
-          sudo mkdir -p release_download
-          sudo mkdir -p release_tag_download
-          sudo chown -R $USER:$GROUPS $GITHUB_WORKSPACE/release_download
-          sudo chown -R $USER:$GROUPS $GITHUB_WORKSPACE/release_tag_download
-          cd release_download
-          echo "release_dir=$PWD" >> $GITHUB_OUTPUT
-          cd ..
-          cd release_tag_download
-          echo "release_tag_dir=$PWD" >> $GITHUB_OUTPUT
-
+          sudo mkdir -p release_download release_tag_download
+          sudo chown -R $USER:$GROUPS release_download release_tag_download
+          echo "release_dir=$PWD/release_download" >> $GITHUB_OUTPUT
+          echo "release_tag_dir=$PWD/release_tag_download" >> $GITHUB_OUTPUT
 
       - name: Download Release From Artifacts
         id : download
@@ -877,26 +543,6 @@ jobs:
           name: release_tag
           path: ${{ steps.init.outputs.release_tag_dir }}
 
-      - name: File Show
-        if: steps.matrix_status.outputs.status != 'success'
-        run: |
-          echo "release files:"
-          echo "---------------------------------------------"
-          cd ${{ steps.init.outputs.release_dir }}
-          ls
-          echo "-------------end release files---------------"
-          cd ..
-          echo "release tag:"
-          echo "---------------------------------------------"
-          cd ${{ steps.init.outputs.release_tag_dir }}
-          ls
-          echo "-------------end release tag-----------------"
-      
-      - name: SSH connection to Actions
-        uses: mxschmitt/action-tmate@v3.23
-        if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
-
-
       - name: Upload Firmware To Release
         if: steps.matrix_status.outputs.status != 'success'
         uses: softprops/action-gh-release@v3
@@ -908,10 +554,8 @@ jobs:
           files: |
             ${{ steps.init.outputs.release_dir }}/*
 
-
-
   job_organize_tags:
-    needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain, job_build, job_upload_release]
+    needs: [job_init, job_source_init, job_generate_release_tag, job_build, job_upload_release]
     if: ${{ always() }}
     runs-on: ubuntu-latest
     name: Organize-Release-Tags
@@ -925,8 +569,7 @@ jobs:
           fetch-depth: 0
 
       - name: Pull the latest changes
-        run: |
-          git pull origin ${{ github.ref_name }}
+        run: git pull origin ${{ github.ref_name }}
 
       - name: Download Tags
         uses: actions/download-artifact@v8
@@ -935,8 +578,6 @@ jobs:
 
       - name: Organize Tags
         id: organize_tags
-        # env:
-        #   GH_TOKEN: ${{ github.token }}
         run: |
             chmod +x $ORGANIZE_TAG_SH
             $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "3"
@@ -950,7 +591,6 @@ jobs:
 
       - name: Update Release Tag
         uses: softprops/action-gh-release@v3
-        # if: steps.organize_tags.outputs.status == 'success'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -959,7 +599,7 @@ jobs:
 
   rerun-failed-jobs:
     runs-on: ubuntu-latest
-    needs: [job_init, job_source_init, job_generate_release_tag, job_build_toolchain, job_build, job_upload_release, job_organize_tags]
+    needs: [job_init, job_source_init, job_generate_release_tag, job_build, job_upload_release, job_organize_tags]
     if: failure() && fromJSON(github.run_attempt) < 3  && !cancelled()
     steps:
       - name: Rerun failed jobs in the current workflow
@@ -982,4 +622,3 @@ jobs:
           token: ${{ secrets.MY_SECRET_PAT }}
           repository: smallprogram/MyAction
           event-type: openwrt_compilation_completed
-      
