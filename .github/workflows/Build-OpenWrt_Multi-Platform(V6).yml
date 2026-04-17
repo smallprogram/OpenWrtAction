@@ -344,7 +344,7 @@ jobs:
 
       - name: Login to GitHub Container Registry
         if: steps.matrix_status.outputs.status != 'success'
-        uses: docker/login-action@v3
+        uses: docker/login-action@v4
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
