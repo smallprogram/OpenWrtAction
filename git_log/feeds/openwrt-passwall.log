@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. (20f7d424cc5d7c497a133fa178eefa4e1e517d94...b231260c9a7da90ca04b4917134cc275647c1ced)](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/20f7d424cc5d7c497a133fa178eefa4e1e517d94...b231260c9a7da90ca04b4917134cc275647c1ced)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-b231260|A-BO|Fri Apr 17 03:06:05 2026 +0800|luci: socks backup nodes support adjusting order
-</details>
