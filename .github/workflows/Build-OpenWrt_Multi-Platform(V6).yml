@@ -8,11 +8,11 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build-OpenWrt_Multi-Platform(V5)
+name: Build-OpenWrt_Multi-Platform(V6)
 
 on:
   repository_dispatch:
-    types: [openwrt_source_update]
+    types: [openwrt_source_update_v6]
   workflow_dispatch:
     inputs:
       ssh:
