@@ -164,7 +164,8 @@ jobs:
         if: steps.generate_image.outputs.status == 'success'
         with:
           name: Source_${{ matrix.source_code_platform }}
-          path: ${{ steps.generate_image.outputs.SOURCE_PATH }}/output.tar.gz
+          # 修复1：修正了 Artifact 上传时的文件路径
+          path: ${{ steps.generate_image.outputs.SOURCE_PATH }}/output/output.tar.gz
           retention-days: 5
 
       - name: Generate Git Log
@@ -320,10 +321,6 @@ jobs:
           remove-docker-images: 'true'
           build-mount-path: '/workdir'
           
-      - name: Pull the latest changes
-        if: steps.matrix_status.outputs.status != 'success'
-        run: git pull origin ${{ github.ref_name }}
-
       - name: Install Packages
         if: steps.matrix_status.outputs.status != 'success'
         env:
@@ -364,21 +361,37 @@ jobs:
           if docker pull $IMAGE_NAME; then
             echo "Cache found! Extracting entire directory..."
             docker create --name cache_container $IMAGE_NAME
-            # 将镜像内的 openwrt 目录完整提出
             docker cp cache_container:/openwrt /workdir/
             docker rm cache_container
             sudo chown -R $USER:$GROUPS /workdir/openwrt
             echo "cache_hit=true" >> $GITHUB_OUTPUT
-            
-            # 更新已恢复缓存的源码和包
-            cd /workdir/openwrt
-            git pull
-            ./scripts/feeds update -a
-            ./scripts/feeds install -a
           else
             echo "No cache found on GHCR. This will be a clean build."
             echo "cache_hit=false" >> $GITHUB_OUTPUT
           fi
+
+      - name: Force Sync Source & Run DIY Scripts (If Cache Hit)
+        if: steps.matrix_status.outputs.status != 'success' && steps.restore_cache.outputs.cache_hit == 'true'
+        working-directory: /workdir/openwrt
+        run: |
+          echo "1. 强制同步主仓库源码 (覆盖本地更改，保留编译生成的缓存目录)..."
+          git fetch origin
+          git reset --hard origin/${{matrix.value.REPO_BRANCH}}
+          
+          echo "2. 清理旧的 feeds 索引和软链接，防止 DIY 脚本冲突..."
+          ./scripts/feeds clean
+          
+          echo "3. 重新运行 DIY_P1_SH (加载自定义配置/源)..."
+          chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P1_SH }}
+          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P1_SH }}
+          
+          echo "4. 更新和安装 feeds..."
+          ./scripts/feeds update -a
+          ./scripts/feeds install -a
+          
+          echo "5. 重新运行 DIY_P2_SH (修改配置/应用补丁)..."
+          chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
+          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
 
       - name: Download Source Artifact (If Cache Miss)
         if: steps.matrix_status.outputs.status != 'success' && steps.restore_cache.outputs.cache_hit == 'false'
@@ -391,6 +404,7 @@ jobs:
         if: steps.matrix_status.outputs.status != 'success' && steps.restore_cache.outputs.cache_hit == 'false'
         working-directory: /workdir
         run: |
+          # Artifacts 下载后的路径直接在 download 根目录下
           tar -xzf download/output.tar.gz
           rm -rf download/output.tar.gz
           sudo chown -R $USER:$GROUPS /workdir/openwrt
