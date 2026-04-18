@@ -538,6 +538,7 @@ jobs:
       - name: Save Cache to GHCR (Extreme Pruning & Precision Layering)
         if: steps.matrix_status.outputs.status != 'success' && always()
         run: |
+          df -H
           echo "==== 1. 准备打包缓存：执行极限瘦身 ===="
           cd /workdir
           
@@ -547,7 +548,7 @@ jobs:
           sudo rm -rf openwrt/logs 2>/dev/null || true
           sudo rm -rf openwrt/tmp 2>/dev/null || true
           sudo rm -rf openwrt/dl 2>/dev/null || true
-          
+          df -H
           echo "==== 2. 准备精细分层数据 (破解 10GB 物理死限) ===="
           # 创建独立的层级缓存目录（保持原有目录结构）
           mkdir -p layer1/build_dir layer2/build_dir layer3/build_dir layer4
