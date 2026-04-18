@@ -1,0 +1,18 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. (e7f0bdbcd37a6f8ec16cc68c5f7cb04b896b1422...9ac6022c8ccc6db7b54a87679d13035632bd016b)](https://github.com/coolsnowwolf/luci/compare/e7f0bdbcd37a6f8ec16cc68c5f7cb04b896b1422...9ac6022c8ccc6db7b54a87679d13035632bd016b)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+9ac6022c8c|coolsnowwolf|Sat Apr 18 17:03:46 2026 +0800|luci-app-turboacc: add qca nss ecm option
+4663354c53|coolsnowwolf|Sat Apr 18 16:27:20 2026 +0800|luci-app-openvpn-server: move default config to uci-defaults
+fe66c7bd52|coolsnowwolf|Sat Apr 18 16:00:24 2026 +0800|luci-app-firewall: fix recursive dependency with fw3/fw4
+cbadf3d624|coolsnowwolf|Sat Apr 18 15:58:36 2026 +0800|zram-swap: add option to set zram enable/disable
+a8f56dcca0|coolsnowwolf|Sat Apr 18 15:40:03 2026 +0800|luci-app-upnp: fix upnp status working with iptables
+12c3065628|coolsnowwolf|Sat Apr 18 15:29:17 2026 +0800|luci-app-openvpn-server: make editableList for openvpn option
+a10ad2c934|coolsnowwolf|Sat Apr 18 15:16:14 2026 +0800|luci-app-openvpn-server: switch to js 25.12 style
+bf8bdc9c2d|coolsnowwolf|Sat Apr 18 14:45:41 2026 +0800|luci-mod-network: add weak signal rejection option for qcawifi
+0aa98137e3|coolsnowwolf|Sat Apr 18 14:24:28 2026 +0800|luci-mod-status: add getCPUInfo ACL to get CPU model and frequency
+e515fe42b0|coolsnowwolf|Sat Apr 18 13:52:51 2026 +0800|luci-theme-design: switch to 25.12 ucdoe style
+</details>
