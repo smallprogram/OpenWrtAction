@@ -442,6 +442,7 @@ jobs:
         if: steps.matrix_status.outputs.status != 'success'
         run: |
           cd openwrt
+          df -h
           is_complie_error=0
           chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} || true
           
@@ -487,6 +488,8 @@ jobs:
 
           echo "==== 伪造完成！当前 openwrt 目录大小分布如下： ===="
           du -h --max-depth=2 . | sort -hr | head -n 20
+
+          df -h
 
           if [ "$is_complie_error" -eq 0 ]; then
             echo "status=success" >> $GITHUB_OUTPUT
