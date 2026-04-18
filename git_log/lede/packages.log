@@ -1,10 +1,12 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. (744f2a8111c7c9579218bccd385ce247d8a5a80b...6d7b748c1425abd54918674e914242993d357868)](https://github.com/coolsnowwolf/packages/compare/744f2a8111c7c9579218bccd385ce247d8a5a80b...6d7b748c1425abd54918674e914242993d357868)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/6d7b748c1425abd54918674e914242993d357868...bb6658c1cb1ba7c1fea2c054b695069da92bcedf)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-6d7b748c|coolsnowwolf|Sat Apr 18 20:48:15 2026 +0800|Merge pull request #1094 from Internet1235/openlist
-0f43993f|Internet1235|Mon Apr 13 22:01:49 2026 +0800|openlist: update to 4.2.1
+bb6658c1|coolsnowwolf|Sat Apr 18 22:18:11 2026 +0800|Merge pull request #1095 from BROBIRD/patch-1
+82bd334b|coolsnowwolf|Sat Apr 18 22:17:51 2026 +0800|Merge pull request #1097 from Internet1235/adguardhome
+eda31700|Internet1235|Sat Apr 18 17:59:23 2026 +0800|adguardhome: update to 0.107.74
+c925b205|BROBIRD|Wed Apr 15 09:38:01 2026 +0800|Update acme to 3.1.2
 </details>

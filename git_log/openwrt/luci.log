@@ -1,0 +1,9 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/5109d24a27c6dda630c861a97369222b4e9661f9...4c5b5ef484249f68a911a0fff3811d17e4156d24)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+4c5b5ef484|Dirk Brenken|Sat Apr 18 19:11:08 2026 +0200|luci-app-banip: update 1.8.6-2
+</details>
