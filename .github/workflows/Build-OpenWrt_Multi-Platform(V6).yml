@@ -332,7 +332,7 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           sudo -E apt-get -qq update
-          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
+          sudo -E apt-get -qq install git-restore-mtime $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
           sudo timedatectl set-timezone "$TZ"
 
       - name: Initialization Directory
@@ -454,7 +454,6 @@ jobs:
       - name: Download Package
         if: steps.matrix_status.outputs.status != 'success'
         run: |
-          echo "==== SIMULATION MODE: Skipping full download ===="
           cd $GITHUB_WORKSPACE/openwrt
           make download -j8
           find dl -size -1024c -exec rm -f {} \;
@@ -472,7 +471,8 @@ jobs:
           is_complie_error=0
           chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} || true
           
-          echo "==== SIMULATION MODE: Skipping actual compilation ===="
+          git restore-mtime
+
           # 如果是真实的编译，原有代码如下：
           if [[ ${{ fromJSON(github.run_attempt) }} == 3 ]]; then
               make -j$(nproc) V=s
