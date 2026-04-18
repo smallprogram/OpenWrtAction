@@ -19,6 +19,11 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
+      force_rebuild:
+        description: 'Build from scratch'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -368,7 +373,7 @@ jobs:
 
       - name: Restore Entire OpenWrt Cache from GHCR
         id: restore_cache
-        if: steps.matrix_status.outputs.status != 'success'
+        if: steps.matrix_status.outputs.status != 'success' && github.event.inputs.force_rebuild != 'true'
         run: |
           REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
           PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
@@ -537,30 +542,33 @@ jobs:
           
           # 坚决删除无需缓存的巨型文件
           sudo rm -rf openwrt/bin 2>/dev/null || true
-          sudo rm -rf openwrt/build_dir/target-* 2>/dev/null || true
           sudo rm -rf openwrt/logs 2>/dev/null || true
           sudo rm -rf openwrt/tmp 2>/dev/null || true
           sudo rm -rf openwrt/dl 2>/dev/null || true
+
+          sudo rm -rf openwrt/build_dir/target-* 2>/dev/null || true
+          sudo rm -rf openwrt/staging_dir/target-* 2>/dev/null || true
+          sudo rm -rf openwrt/staging_dir/packages 2>/dev/null || true
+
           df -H
           echo "==== 2. 准备精细分层数据 (破解 10GB 物理死限) ===="
-          # 创建独立的层级缓存目录（保持原有目录结构）
+          # 创建独立的层级缓存目录（缩减为 7 层即可）
           mkdir -p layer1/build_dir layer2/build_dir layer3/build_dir layer4
-          mkdir -p layer5/staging_dir layer6/staging_dir layer7
-          mkdir -p layer8
+          mkdir -p layer5/staging_dir layer6
+          mkdir -p layer7
           
-          # 切割危险的 10.4G build_dir (每一层控制在 1.5G - 5G)
+          # 切割剩余的 build_dir 核心骨架 (宿主机工具 + 交叉编译链)
           sudo mv openwrt/build_dir/hostpkg ./layer1/build_dir/ 2>/dev/null || true
           sudo mv openwrt/build_dir/toolchain-* ./layer2/build_dir/ 2>/dev/null || true
           sudo mv openwrt/build_dir/host ./layer3/build_dir/ 2>/dev/null || true
           sudo mv openwrt/build_dir ./layer4/ 2>/dev/null || true
           
-          # 切割 5G 的 staging_dir (虽然不到 10G，但分开传能防网络超时)
-          sudo mv openwrt/staging_dir/target-* ./layer5/staging_dir/ 2>/dev/null || true
-          sudo mv openwrt/staging_dir/hostpkg ./layer6/staging_dir/ 2>/dev/null || true
-          sudo mv openwrt/staging_dir ./layer7/ 2>/dev/null || true
+          # 切割剩余的 staging_dir (target-* 已删，剩下的体积非常健康)
+          sudo mv openwrt/staging_dir/hostpkg ./layer5/staging_dir/ 2>/dev/null || true
+          sudo mv openwrt/staging_dir ./layer6/ 2>/dev/null || true
           
           # 移出 .git (约 1-2GB)
-          sudo mv openwrt/.git ./layer8/ 2>/dev/null || true
+          sudo mv openwrt/.git ./layer7/ 2>/dev/null || true
           
           REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
           PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
@@ -577,7 +585,6 @@ jobs:
           COPY layer5 /openwrt
           COPY layer6 /openwrt
           COPY layer7 /openwrt
-          COPY layer8 /openwrt
           # 最后拷贝剩余极小的源码文件
           COPY openwrt /openwrt
           EOF
