@@ -23,6 +23,11 @@ on:
       # 0 4 * * 5
       # 0 4,12,20 * * *
 
+permissions:
+  contents: write
+  packages: write
+  actions: write    # 允许脚本去触发重试工作流
+
 env:
   UPDATE_CHECKER: compile_script/update_checker.sh
 
@@ -77,6 +82,11 @@ jobs:
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: ghcr.io cleanup action
+      uses: dataaxiom/ghcr-cleanup-action@v1
+      with:
+        delete-untagged: true
         
     - name: Trigger build
       if: steps.cacheHash.outputs.cache-hit != 'true'
