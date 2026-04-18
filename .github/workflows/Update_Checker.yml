@@ -89,7 +89,6 @@ jobs:
         delete-untagged: true
         packages: openwrt-full-cache*
         expand-packages: true
-        token: ${{ secrets.MY_SECRET_PAT }}
         
     - name: Trigger build
       if: steps.cacheHash.outputs.cache-hit != 'true'
