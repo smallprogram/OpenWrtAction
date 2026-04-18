@@ -664,6 +664,6 @@ jobs:
       if: steps.organize_tags.outputs.status == 'success'
       uses: peter-evans/repository-dispatch@v3
       with:
-        token: ${{ secrets.MY_SECRET_PAT }}
+        token: ${{ secrets.MY_ADMIN_PAT }}
         repository: smallprogram/MyAction
         event-type: openwrt_compilation_completed
