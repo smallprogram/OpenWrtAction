@@ -341,7 +341,7 @@ jobs:
           sudo chown -R $USER:$GROUPS /workdir/download
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
           ln -sf /workdir/download $GITHUB_WORKSPACE/download
-          
+
       - name: Relocate Docker to /workdir
         if: steps.matrix_status.outputs.status != 'success'
         run: |
