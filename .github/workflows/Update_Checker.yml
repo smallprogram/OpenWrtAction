@@ -87,6 +87,7 @@ jobs:
       uses: dataaxiom/ghcr-cleanup-action@v1
       with:
         delete-untagged: true
+        packages: openwrt-full-cache*
         
     - name: Trigger build
       if: steps.cacheHash.outputs.cache-hit != 'true'
