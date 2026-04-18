@@ -341,6 +341,22 @@ jobs:
           sudo chown -R $USER:$GROUPS /workdir/download
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
           ln -sf /workdir/download $GITHUB_WORKSPACE/download
+          
+      - name: Relocate Docker to /workdir
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          echo "==== 1. 停止 Docker 服务 ===="
+          sudo systemctl stop docker
+          
+          echo "==== 2. 迁移 Docker 数据目录到宽敞的 /workdir ===="
+          sudo mkdir -p /workdir/docker
+          echo '{"data-root": "/workdir/docker"}' | sudo tee /etc/docker/daemon.json
+          
+          echo "==== 3. 重启 Docker 服务 ===="
+          sudo systemctl start docker
+          
+          echo "==== 4. 验证迁移是否成功 ===="
+          docker info | grep "Docker Root Dir"
 
       - name: Login to GitHub Container Registry
         if: steps.matrix_status.outputs.status != 'success'
