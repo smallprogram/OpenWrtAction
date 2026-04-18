@@ -1,0 +1,9 @@
+<details> <summary> <b>lede new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. (9ab80168b34e55ed38a0f04f4e1d491a74e26bd3...195fd0ecb411639d0ad302397f43cb35132851bf)](https://github.com/coolsnowwolf/lede/compare/9ab80168b34e55ed38a0f04f4e1d491a74e26bd3...195fd0ecb411639d0ad302397f43cb35132851bf)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+195fd0ecb|coolsnowwolf|Sat Apr 18 16:02:06 2026 +0800|cmake: bump to v3.31.5
+</details>
