@@ -31,13 +31,6 @@ permissions:
   actions: write    # 允许脚本去触发重试工作流
 
 env:
-  MAKE_DEFCONFIG_SH: compile_script/step01_make_defconfig.sh
-  GENERATE_RELEASE_TAG_SH: compile_script/step02_generate_release_tag.sh
-  GENERATE_GIT_LOG_SH: compile_script/step03_generate_git_log.sh
-  UPDATE_GIT_LOG_SH:  compile_script/step06_update_git_log.sh
-  ORGANIZE_TAG_SH: compile_script/step07_organize_tag.sh
-  PLATFORMS_SH: compile_script/platforms.sh
-  MATRIX_STATUS_SH: compile_script/matrix_job_status.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_ARTIFACT: true
@@ -66,7 +59,7 @@ jobs:
       - name: Read Platforms From File
         id: read-platforms
         run: |
-          bash $PLATFORMS_SH
+          bash compile_script/platforms.sh
   
   job_source_init:
     needs: job_init
@@ -123,10 +116,10 @@ jobs:
       - name: Make Defconfig Custom Configuration
         run: |
           chmod +x ${{ matrix.value.DIY_P2_SH }}
-          chmod +x $MAKE_DEFCONFIG_SH
+          chmod +x compile_script/step01_make_defconfig.sh
           cd openwrt
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
-          $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
+          $GITHUB_WORKSPACE/compile_script/step01_make_defconfig.sh "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
 
       - name: Merge and push changes with "theirs" strategy
         run: |
@@ -176,8 +169,8 @@ jobs:
       - name: Generate Git Log
         id: git_log
         run: |
-          chmod +x $GENERATE_GIT_LOG_SH 
-          $GITHUB_WORKSPACE/$GENERATE_GIT_LOG_SH "${{ matrix.source_code_platform }}"
+          chmod +x compile_script/step03_generate_git_log.sh 
+          $GITHUB_WORKSPACE/compile_script/step03_generate_git_log.sh "${{ matrix.source_code_platform }}"
           
       - name: Upload Git Log To Artifact
         uses: actions/upload-artifact@v7
@@ -190,8 +183,8 @@ jobs:
       - name: Generate Release Tag
         id: tag
         run: |
-          chmod +x $GENERATE_RELEASE_TAG_SH
-          $GITHUB_WORKSPACE/$GENERATE_RELEASE_TAG_SH "${{ needs.job_init.outputs.output_release_tag }}" "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
+          chmod +x compile_script/step02_generate_release_tag.sh
+          $GITHUB_WORKSPACE/compile_script/step02_generate_release_tag.sh "${{ needs.job_init.outputs.output_release_tag }}" "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
       
       - name: Upload Release Tag To Artifact
         uses: actions/upload-artifact@v7
@@ -233,8 +226,8 @@ jobs:
       - name: Generate Release Tag
         id: tag
         run: |
-          chmod +x $UPDATE_GIT_LOG_SH
-          $GITHUB_WORKSPACE/$UPDATE_GIT_LOG_SH "${{ needs.job_init.outputs.output_release_tag }}"
+          chmod +x compile_script/step06_update_git_log.sh
+          $GITHUB_WORKSPACE/compile_script/step06_update_git_log.sh "${{ needs.job_init.outputs.output_release_tag }}"
 
       - name: Upload Tags To Artifact
         uses: actions/upload-artifact@v7
@@ -294,8 +287,8 @@ jobs:
       - name: Matrix Status
         id: matrix_status
         run: |
-            chmod +x $MATRIX_STATUS_SH
-            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
+            chmod +x compile_script/matrix_job_status.sh
+            $GITHUB_WORKSPACE/compile_script/matrix_job_status.sh "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
 
       - name: Server Info
         if: steps.matrix_status.outputs.status != 'success'
@@ -371,6 +364,22 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.MY_ADMIN_PAT}}
 
+      - name: Download Source From Artifacts
+        id : download
+        if: steps.matrix_status.outputs.status != 'success'
+        uses: actions/download-artifact@v8
+        with:
+          name: Source_${{ matrix.source_code_platform }}
+          path: download
+      
+      - name: Extract Pristine Source
+        if: steps.matrix_status.outputs.status != 'success'
+        working-directory: /workdir
+        run: |
+          tar -xzf download/output.tar.gz
+          rm -rf download/output.tar.gz
+          sudo chown -R $USER:$GROUPS /workdir/openwrt
+
       - name: Restore Entire OpenWrt Cache from GHCR
         id: restore_cache
         if: steps.matrix_status.outputs.status != 'success' && github.event.inputs.force_rebuild != 'true'
@@ -383,15 +392,12 @@ jobs:
           if docker pull $IMAGE_NAME; then
             echo "Cache found! Extracting entire directory..."
             docker create --name cache_container $IMAGE_NAME /bin/true
-            # 先删掉前面初始化生成的空目录，彻底消灭“套娃”隐患
-            sudo rm -rf /workdir/openwrt
             
-            # 直接原封不动地拷贝整个目录（保留 .git 隐藏文件夹）
-            docker cp cache_container:/openwrt /workdir/
+            docker cp cache_container:/openwrt/build_dir /workdir/openwrt/ 2>/dev/null || true
+            docker cp cache_container:/openwrt/staging_dir /workdir/openwrt/ 2>/dev/null || true
             
             docker rm cache_container
-            sudo chown -R $USER:$GROUPS /workdir/openwrt
-            echo "cache_hit=true" >> $GITHUB_OUTPUT
+            sudo chown -R $USER:$GROUPS /workdir/openwrt/build_dir /workdir/openwrt/staging_dir 2>/dev/null || true
 
             # 提取完成后，立刻删除本地 Docker 镜像及悬空数据，彻底释放 17GB 空间,建议留着享受 Docker 本地缓存带来的极速打包体验
             # docker rmi $IMAGE_NAME
@@ -399,50 +405,7 @@ jobs:
 
           else
             echo "No cache found on GHCR. This will be a clean build."
-            echo "cache_hit=false" >> $GITHUB_OUTPUT
           fi
-
-      - name: Force Sync Source & Run DIY Scripts (If Cache Hit)
-        if: steps.matrix_status.outputs.status != 'success' && steps.restore_cache.outputs.cache_hit == 'true'
-        working-directory: /workdir/openwrt
-        run: |
-          echo "0. 配置 Git 安全目录 (防止 Docker 还原后产生权限所有者报错)..."
-          git config --global --add safe.directory /workdir/openwrt
-          
-          echo "1. 强制同步主仓库源码 (覆盖本地更改，保留编译生成的缓存目录)..."
-          git fetch origin
-          git reset --hard origin/${{matrix.value.REPO_BRANCH}}
-          
-          echo "2. 清理旧的 feeds 索引和软链接，防止 DIY 脚本冲突..."
-          ./scripts/feeds clean
-          
-          echo "3. 重新运行 DIY_P1_SH (加载自定义配置/源)..."
-          chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P1_SH }}
-          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P1_SH }}
-          
-          echo "4. 更新和安装 feeds..."
-          ./scripts/feeds update -a
-          ./scripts/feeds install -a
-          
-          echo "5. 重新运行 DIY_P2_SH (修改配置/应用补丁)..."
-          chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
-          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
-
-      - name: Download Source Artifact (If Cache Miss)
-        if: steps.matrix_status.outputs.status != 'success' && steps.restore_cache.outputs.cache_hit == 'false'
-        uses: actions/download-artifact@v8
-        with:
-          name: Source_${{ matrix.source_code_platform }}
-          path: download
-
-      - name: File Extraction (If Cache Miss)
-        if: steps.matrix_status.outputs.status != 'success' && steps.restore_cache.outputs.cache_hit == 'false'
-        working-directory: /workdir
-        run: |
-          # Artifacts 下载后的路径直接在 download 根目录
-          tar -xzf download/output.tar.gz
-          rm -rf download/output.tar.gz
-          sudo chown -R $USER:$GROUPS /workdir/openwrt
 
       - name: Load Configuration
         if: steps.matrix_status.outputs.status != 'success'
@@ -537,63 +500,46 @@ jobs:
         if: steps.matrix_status.outputs.status != 'success' && always() && !cancelled()
         run: |
           df -H
-          echo "==== 1. 准备打包缓存：执行极限瘦身 ===="
+          echo "==== 1. 准备骨架：只保留最核心的编译链 ===="
           cd /workdir
           
-          # 坚决删除无需缓存的巨型文件
+          # 只删除核心目录里会引起报错的垃圾，其他的不用管了，因为不打包它们
           sudo rm -rf openwrt/bin 2>/dev/null || true
           sudo rm -rf openwrt/logs 2>/dev/null || true
           sudo rm -rf openwrt/tmp 2>/dev/null || true
           sudo rm -rf openwrt/dl 2>/dev/null || true
-
           sudo rm -rf openwrt/build_dir/target-* 2>/dev/null || true
           sudo rm -rf openwrt/staging_dir/target-* 2>/dev/null || true
           sudo rm -rf openwrt/staging_dir/packages 2>/dev/null || true
 
-          df -H
-          echo "==== 2. 准备精细分层数据 (破解 10GB 物理死限) ===="
-          # 创建独立的层级缓存目录（缩减为 7 层即可）
-          mkdir -p layer1/build_dir layer2/build_dir layer3/build_dir layer4
-          mkdir -p layer5/staging_dir layer6
-          mkdir -p layer7
+          echo "==== 2. 骨架分层 (极简 3 层架构) ===="
+          # 创建层级目录（你这套设计非常聪明，路径对齐得完美）
+          mkdir -p layer1/openwrt/build_dir layer2/openwrt layer3/openwrt
           
-          # 切割剩余的 build_dir 核心骨架 (宿主机工具 + 交叉编译链)
-          sudo mv openwrt/build_dir/hostpkg ./layer1/build_dir/ 2>/dev/null || true
-          sudo mv openwrt/build_dir/toolchain-* ./layer2/build_dir/ 2>/dev/null || true
-          sudo mv openwrt/build_dir/host ./layer3/build_dir/ 2>/dev/null || true
-          sudo mv openwrt/build_dir ./layer4/ 2>/dev/null || true
+          # 第 1 层：最庞大的 toolchain 交叉编译链
+          sudo mv openwrt/build_dir/toolchain-* ./layer1/openwrt/build_dir/ 2>/dev/null || true
           
-          # 切割剩余的 staging_dir (target-* 已删，剩下的体积非常健康)
-          sudo mv openwrt/staging_dir/hostpkg ./layer5/staging_dir/ 2>/dev/null || true
-          sudo mv openwrt/staging_dir ./layer6/ 2>/dev/null || true
+          # 第 2 层：剩余的 build_dir (主要是 host 和 hostpkg)
+          sudo mv openwrt/build_dir ./layer2/openwrt/ 2>/dev/null || true
           
-          # 移出 .git (约 1-2GB)
-          sudo mv openwrt/.git ./layer7/ 2>/dev/null || true
+          # 第 3 层：整个清洗过的 staging_dir
+          sudo mv openwrt/staging_dir ./layer3/openwrt/ 2>/dev/null || true
           
           REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
           PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
           IMAGE_NAME="ghcr.io/$REPO_OWNER/openwrt-full-cache-$PLATFORM_NAME:latest"
           
-          echo "==== 3. 生成精细分层 Dockerfile ===="
-          cat <<EOF > Dockerfile
-          FROM alpine:latest
-          # 逐层合并，Docker 会在镜像内部完美还原 /openwrt 目录结构
-          COPY layer1 /openwrt
-          COPY layer2 /openwrt
-          COPY layer3 /openwrt
-          COPY layer4 /openwrt
-          COPY layer5 /openwrt
-          COPY layer6 /openwrt
-          COPY layer7 /openwrt
-          # 最后拷贝剩余极小的源码文件
-          COPY openwrt /openwrt
-          EOF
+          echo "==== 3. 生成极简 Dockerfile ===="
+          # 使用 alpine 换取 100% 稳定性 (仅增加 5MB)
+          echo "FROM alpine:latest" > Dockerfile
+          echo "COPY layer1 /" >> Dockerfile
+          echo "COPY layer2 /" >> Dockerfile
+          echo "COPY layer3 /" >> Dockerfile
           
-          echo "==== 4. 开始构建 Docker 缓存镜像 ===="
+          echo "==== 4. 开始构建与推送 ===="
           docker build -t $IMAGE_NAME .
-          
-          echo "==== 5. 推送到 GHCR ===="
           docker push $IMAGE_NAME
+          df -H
 
   job_upload_release:
     needs: [job_init, job_source_init, job_generate_release_tag, job_build]
@@ -613,8 +559,8 @@ jobs:
       - name: Matrix Status
         id: matrix_status
         run: |
-            chmod +x $MATRIX_STATUS_SH
-            $GITHUB_WORKSPACE/$MATRIX_STATUS_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Upload-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
+            chmod +x compile_script/matrix_job_status.sh
+            $GITHUB_WORKSPACE/compile_script/matrix_job_status.sh "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Upload-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
 
       - name: Initialization Environment
         id: init
@@ -678,8 +624,8 @@ jobs:
       - name: Organize Tags
         id: organize_tags
         run: |
-            chmod +x $ORGANIZE_TAG_SH
-            $GITHUB_WORKSPACE/$ORGANIZE_TAG_SH "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "3"
+            chmod +x compile_script/step07_organize_tag.sh
+            $GITHUB_WORKSPACE/compile_script/step07_organize_tag.sh "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "3"
 
       - name: Upload Tags To Artifact
         uses: actions/upload-artifact@v7

@@ -77,8 +77,31 @@ for git_folder in "${git_folders[@]}"; do
             git clone "$REPO_URL" --filter=blob:none "git_repositories/$git_folder/$OUTPUT_FILE"
         fi
 
-        # 获取最新 SHA
-        SHA_End=$(git -C "git_repositories/$git_folder/$OUTPUT_FILE" rev-parse HEAD)
+        # ==========================================
+        # 👑 核心一致性改造：获取真理 SHA (SSoT 原则)
+        # 不再盲目使用远端 HEAD，强制校验 Artifact 里的历史记录
+        # ==========================================
+        SHA_End=""
+        
+        # 1. 优先尝试从对应平台的 artifact 日志中提取 (针对主源码库)
+        if [ -f "git_log_${git_folder}.txt" ]; then
+            SHA_End=$(grep "^${OUTPUT_FILE}:" "git_log_${git_folder}.txt" 2>/dev/null | cut -d: -f2)
+        fi
+        
+        # 2. 如果没找到，扫描所有下载下来的 artifact 日志匹配 (针对 feeds 和 custompackages)
+        if [ -z "$SHA_End" ]; then
+            SHA_End=$(grep -h "^${OUTPUT_FILE}:" git_log_*.txt 2>/dev/null | head -n 1 | cut -d: -f2)
+        fi
+
+        # 3. 防呆兜底：如果 step03 真的漏了，安全降级使用最新 HEAD 防止脚本崩溃
+        if [ -z "$SHA_End" ]; then
+            SHA_End=$(git -C "git_repositories/$git_folder/$OUTPUT_FILE" rev-parse HEAD)
+            echo "   ⚠️ [Fallback] 未在 Artifact 中找到 $OUTPUT_FILE 记录，使用最新 HEAD: $SHA_End"
+        else
+            echo "   ✅ [SSoT 匹配成功] 锁定真理 SHA ($OUTPUT_FILE): $SHA_End"
+        fi
+        # ==========================================
+
         echo "$git_folder-$OUTPUT_FILE Begin git log update-----------------------------------------------------------"
         echo "SHAEnd:$SHA_End"
 

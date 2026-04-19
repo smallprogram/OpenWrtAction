@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# feeds扩展内容
 export repos=(
   "src-git passwall_packages https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git;main"
   "src-git passwall https://github.com/Openwrt-Passwall/openwrt-passwall.git;main"
@@ -9,7 +10,7 @@ export repos=(
   "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main"
 )
 
-
+# 自定义软件包列表
 clone_custom_packages () {
     local path="./package/custom_packages/"
 
