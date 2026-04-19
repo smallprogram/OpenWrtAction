@@ -1,9 +1,25 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/8a288ed542302a967967e249ffe939f44c39429f...6a0df58d2917a887735c9dd16caa53d6262d1b7a)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/31eb81961258aba2c557fb666ad2eb6d9d19446c...6a0df58d2917a887735c9dd16caa53d6262d1b7a)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
 6a0df58d2|Dirk Brenken|Sat Apr 18 19:07:03 2026 +0200|banip: update 1.8.6-2
+8a288ed54|Daniel F. Dickinson|Sun Apr 12 16:20:56 2026 -0400|zabbix: update to 7.0.25 (LTS)
+b3bcc339a|Daniel F. Dickinson|Sun Apr 12 09:44:33 2026 -0400|radicale3: update to 3.7.1
+8a186f23b|Dirk Brenken|Fri Apr 17 09:56:57 2026 +0200|adblock: release 4.5.5-1
+1eb4e1ad0|Dirk Brenken|Thu Apr 16 22:13:13 2026 +0200|banip: release 1.8.6-1
+6a9044400|Alexandru Ardelean|Thu Apr 16 19:29:12 2026 +0300|python3: add no-mips16 to PKG_BUILD_FLAGS
+969f18015|Federico Capoano|Fri Apr 10 20:47:42 2026 -0300|openwisp-config: update to 1.2.1
+dfb74c299|Daniel F. Dickinson|Sun Apr 5 11:21:22 2026 -0400|watchcat: use logical network to fix restart_interface
+4fcef808a|Daniel F. Dickinson|Sun Jan 25 04:48:15 2026 -0500|watchcat: fix interface reset does not work
+f40706754|Olivier Poitrey|Mon Apr 13 02:01:07 2026 +0000|nextdns: update to version 1.47.2
+722351eea|Daniel F. Dickinson|Tue Apr 7 21:12:23 2026 -0400|zabbix: update to 7.0.24
+2f73d1b85|Daniel F. Dickinson|Tue Apr 7 21:10:01 2026 -0400|zabbix: tweak server configuration
+a127b9d2e|Alexandru Ardelean|Thu Apr 9 08:32:33 2026 +0300|python3-greenlet: update to 3.4.0
+435b41ff1|Alexandru Ardelean|Fri Mar 20 16:39:24 2026 +0000|python-greenlet: bump to 3.3.2
+e263702a5|Rosen Penev|Fri Feb 6 16:37:14 2026 -0800|python-gevent: use LF for Makefile
+
+
 </details>

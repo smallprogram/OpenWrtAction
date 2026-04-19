@@ -1,0 +1,25 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/4b4b84dc120bb37592ea51e7107ce4fe0083420f...1cef03987164a00a946e442669335077ea7a46d8)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+1cef039|handsomeji|Mon Apr 20 00:44:22 2026 +0800|luci: 26.4.20
+dd4c07a|A-BO|Sun Apr 19 03:43:39 2026 +0800|luci: optimize haproxy
+1510173|A-BO|Fri Apr 17 03:06:05 2026 +0800|luci: socks backup nodes support adjusting order
+e8bd641|A-BO|Wed Apr 15 11:10:27 2026 +0800|luci: optimize node `user-agent` config options
+1103289|A-BO|Wed Apr 15 10:07:12 2026 +0800|luci: add `cwndmultiplier` support for mkcp and remove its rarely used config options
+624a07a|A-BO|Tue Apr 14 23:05:11 2026 +0800|luci: fix
+1f569d3|A-BO|Tue Apr 14 23:05:11 2026 +0800|luci: fix #1090
+be8fff5|A-BO|Mon Apr 13 22:20:16 2026 +0800|luci: optimize the logic of adding wan_ip to ipset/nftset
+42bc637|lwb1978|Sun Apr 12 21:53:22 2026 +0800|luci: optimize hotplug logic
+f19d36a|handsomeji|Sun Apr 19 23:21:50 2026 +0800|luci: optimize
+f17cdbb|handsomeji|Thu Apr 16 21:48:01 2026 +0800|luci: optimize subscribe
+77ceff0|handsomeji|Mon Apr 13 19:30:30 2026 +0800|luci: fix IPv6 direct DNS
+d79275f|handsomeji|Sat Apr 11 21:06:49 2026 +0800|luci: refresh the preproxy node of the shunt node when subscribe
+acbeab0|A-BO|Fri Apr 10 10:08:04 2026 +0800|luci: add node domain DNS in subscribe settings
+acf6203|A-BO|Thu Apr 9 23:42:38 2026 +0800|luci: fix and optimize node domain DNS for xray
+
+
+</details>

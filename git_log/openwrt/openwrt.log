@@ -1,0 +1,25 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/865229fad90af85989bbcdd294424a6f2d2723b3...99a502bbc4faf94f10f6ee68927fd4388b7e7517)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+99a502bbc4|Rosen Penev|Fri Apr 10 12:04:04 2026 -0700|uboot-envtools: add extreme-networks,ws-ap3805i
+4bd0c98046|Rosen Penev|Fri Apr 10 11:45:00 2026 -0700|ath79: enterasys,ws-ap3805i: fix u-boot env
+b36e1168b0|Brian Norris|Wed Apr 15 18:58:59 2026 -0700|chromium: Add #{address,size}-cells to /firmware
+12e56ac8d4|Sven Friedmann|Mon Apr 13 18:36:37 2026 +0200|mvebu: fix kmod for switch on clearfog base/pro
+714240997d|Luiz Angelo Daros de Luca|Mon Feb 3 20:01:11 2025 -0300|base-files: sysupgrade: -u option was broken with apk
+8ab67441c5|Luiz Angelo Daros de Luca|Mon Feb 3 19:58:14 2025 -0300|base-files: sysupgrade: update backup exclusion list
+89a3a0d90d|Luiz Angelo Daros de Luca|Sun Jan 3 22:40:04 2021 -0300|base-files: sysupgrade: fix -f with space in bkp path
+186782648c|Fil Dunsky|Mon Feb 9 12:03:58 2026 +0300|ramips: mt76x8: add support for Cudy LT300 v3
+eb82cd3c6d|Daniel Pawlik|Mon Mar 16 14:26:51 2026 +0100|mediatek: device tree overlay for BPI-R4 with BE14 module
+37e1a96aed|Fil Dunsky|Mon Mar 30 17:07:28 2026 +0300|mediatek: add Huasifei WH3000 Pro NAND support
+0c6d004431|air jinkela|Mon Dec 15 22:24:08 2025 +0800|mediatek: rax3000m: add Airoha AN8855 switch support
+fdeb6d6a9f|Rany Hany|Mon Mar 30 13:37:03 2026 +0000|ramips: mt7621: fix reset hang
+d7fe2c7562|Lorenzo Bianconi|Fri Oct 24 17:10:08 2025 +0200|airoha: npu: Init BA memory region if provided via DTS
+84d75a3cc3|Lorenzo Bianconi|Wed Jan 7 11:46:00 2026 +0100|airoha: add the capability to read firmware names from dts
+8991565112|Hauke Mehrtens|Sat Apr 11 14:19:25 2026 +0200|scripts/ext-tools.sh: set all prebuilt tool files to same timestamp
+
+
+</details>

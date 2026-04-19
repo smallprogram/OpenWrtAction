@@ -1,0 +1,15 @@
+<details> <summary> <b>lede new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/9bfad5081decdc55847b4bd5508b22c6a8d6e5f1...195fd0ecb411639d0ad302397f43cb35132851bf)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+195fd0ecb|coolsnowwolf|Sat Apr 18 16:02:06 2026 +0800|cmake: bump to v3.31.5
+9ab80168b|coolsnowwolf|Sat Apr 18 00:15:24 2026 +0800|feeds.conf.default: switch to luci 25.12
+ecec1ef93|Daniel Golle|Sat Apr 11 22:59:07 2026 +0100|mediatek: don't let devfreq power-off the CPU
+b7c95ae5b|coolsnowwolf|Thu Mar 12 10:05:30 2026 +0800|mediatek: disable crypto by default for mt7988
+0130d7ac4|Robert Marko|Mon Mar 30 18:40:08 2026 +0200|generic: filter out CONFIG_TOOLS_SUPPORT_RELR
+9bfad5081|coolsnowwolf|Thu Apr 9 22:09:57 2026 +0800|tools/erofs-utils: assign PKG_CPE_ID
+864bb60b1|Internet1235|Thu Apr 9 21:37:53 2026 +0800|erofs-utils: update to 1.9.1 (#13958)
+</details>
