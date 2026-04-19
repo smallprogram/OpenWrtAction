@@ -35,7 +35,14 @@ done
 
 # 输出最终的 hash 字符串
 echo "------------------------------------------------------------------------"
-echo "All hashes: $HASH_STRING"
+echo "Raw combined hashes (Length: ${#HASH_STRING}): $HASH_STRING"
+
+# 👑 核心优化：对无限变长的字符串进行 SHA-256 降维打击，生成绝对唯一的固定 64 位 Hash
+FINAL_HASH=$(echo -n "$HASH_STRING" | sha256sum | awk '{print $1}')
+
+echo "Final fixed-length hash: $FINAL_HASH"
+# 将这个终极定长 Hash 传递给下个步骤
+echo "FINAL_HASH=$FINAL_HASH" >> $GITHUB_OUTPUT
 echo "HASH_STRING=$HASH_STRING" >> $GITHUB_OUTPUT
 echo "------------------------------------------------------------------------"
 echo "-------------------------End Update Checker---------------------------"

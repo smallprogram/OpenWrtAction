@@ -407,6 +407,22 @@ jobs:
             echo "No cache found on GHCR. This will be a clean build."
           fi
 
+      - name: Git Restore Mtime
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          cd $GITHUB_WORKSPACE/openwrt
+
+          # 1. 解决 Git 2.47+ 版本强制弃用 whatchanged 的 fatal 报错 [核心修复]
+          git config --global alias.whatchanged "log --raw --no-merges"
+          
+          # 2. 强制还原时间戳
+          # 使用 --force 忽略“文件已修改”的警告，确保解压后的文件能对齐历史时间
+          git restore-mtime --force
+          
+          # 3. 验证结果（可选，用于在日志中观察时间是否真的拨回去了）
+          echo "检查前 5 个文件的时间戳："
+          ls -la | head -n 5
+
       - name: Load Configuration
         if: steps.matrix_status.outputs.status != 'success'
         run: |
@@ -433,8 +449,6 @@ jobs:
           df -h
           is_complie_error=0
           chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} || true
-          
-          git restore-mtime
 
           # 如果是真实的编译，原有代码如下：
           if [[ ${{ fromJSON(github.run_attempt) }} == 3 ]]; then

@@ -52,12 +52,12 @@ jobs:
       uses: actions/cache@v4
       with:
         path: .commitHash_All
-        key: HEAD-${{ steps.getHash.outputs.HASH_STRING }}
+        key: HEAD-${{ steps.getHash.outputs.FINAL_HASH }}  # cache的key值，会在job结束后缓存
 
     - name: Save New Commit Hash
       if: steps.cacheHash.outputs.cache-hit != 'true'
       run: |
-        echo ${{ steps.getHash.outputs.HASH_STRING }} | tee .commitHash_All
+        echo ${{ steps.getHash.outputs.HASH_STRING }} | tee .commitHash_All  
         
     - name: Delete workflow runs
       uses: Mattraks/delete-workflow-runs@main
