@@ -450,6 +450,9 @@ jobs:
           is_complie_error=0
           chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} || true
 
+          # 埋下compilation_start_marker作为时间锚点！记录 make 开始的绝对时间
+          touch /workdir/compilation_start_marker
+
           # 如果是真实的编译，原有代码如下：
           if [[ ${{ fromJSON(github.run_attempt) }} == 3 ]]; then
               make -j$(nproc) V=s
@@ -514,6 +517,7 @@ jobs:
         if: steps.matrix_status.outputs.status != 'success' && always() && !cancelled()
         run: |
           df -H
+
           echo "==== 1. 准备骨架：只保留最核心的编译链 ===="
           cd /workdir
           
@@ -538,19 +542,30 @@ jobs:
           
           # 第 3 层：整个清洗过的 staging_dir
           sudo mv openwrt/staging_dir ./layer3/openwrt/ 2>/dev/null || true
+
+          # 智能变化检测 (判断是否需要浪费流量推送 Docker)
+          echo "==== 3. 智能变化检测 ===="
+          CHANGED_FILES=$(find layer1 layer2 layer3 -type f -newer /workdir/compilation_start_marker ! -name ".*" ! -path "*/stamp/*" 2>/dev/null | wc -l)
+          
+          if [ "$CHANGED_FILES" -eq 0 ]; then
+              echo "🎉 核心编译链完全没有实质性变动，跳过构建和推送 Docker 镜像！"
+              exit 0
+          fi
+          
+          echo "⚠️ 检测到有 $CHANGED_FILES 个核心文件发生更新，开始构建新缓存..."
           
           REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
           PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
           IMAGE_NAME="ghcr.io/$REPO_OWNER/openwrt-full-cache-$PLATFORM_NAME:latest"
           
-          echo "==== 3. 生成极简 Dockerfile ===="
+          echo "==== 4. 生成极简 Dockerfile ===="
           # 使用 alpine 换取 100% 稳定性 (仅增加 5MB)
           echo "FROM alpine:latest" > Dockerfile
           echo "COPY layer1 /" >> Dockerfile
           echo "COPY layer2 /" >> Dockerfile
           echo "COPY layer3 /" >> Dockerfile
           
-          echo "==== 4. 开始构建与推送 ===="
+          echo "==== 5. 开始构建与推送 ===="
           docker build -t $IMAGE_NAME .
           docker push $IMAGE_NAME
           df -H
