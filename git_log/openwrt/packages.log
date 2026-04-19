@@ -1,10 +1,11 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/31eb81961258aba2c557fb666ad2eb6d9d19446c...6a0df58d2917a887735c9dd16caa53d6262d1b7a)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/31eb81961258aba2c557fb666ad2eb6d9d19446c...a0d04dd22ffe7aac7ab187f21a5f544dcbfb3cec)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
+a0d04dd22|Dirk Brenken|Sun Apr 19 19:13:41 2026 +0200|banip: update 1.8.6-3
 6a0df58d2|Dirk Brenken|Sat Apr 18 19:07:03 2026 +0200|banip: update 1.8.6-2
 8a288ed54|Daniel F. Dickinson|Sun Apr 12 16:20:56 2026 -0400|zabbix: update to 7.0.25 (LTS)
 b3bcc339a|Daniel F. Dickinson|Sun Apr 12 09:44:33 2026 -0400|radicale3: update to 3.7.1
@@ -19,7 +20,6 @@ f40706754|Olivier Poitrey|Mon Apr 13 02:01:07 2026 +0000|nextdns: update to vers
 2f73d1b85|Daniel F. Dickinson|Tue Apr 7 21:10:01 2026 -0400|zabbix: tweak server configuration
 a127b9d2e|Alexandru Ardelean|Thu Apr 9 08:32:33 2026 +0300|python3-greenlet: update to 3.4.0
 435b41ff1|Alexandru Ardelean|Fri Mar 20 16:39:24 2026 +0000|python-greenlet: bump to 3.3.2
-e263702a5|Rosen Penev|Fri Feb 6 16:37:14 2026 -0800|python-gevent: use LF for Makefile
 
 
 </details>
