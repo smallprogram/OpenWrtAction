@@ -49,7 +49,7 @@ jobs:
 
     - name: Compare Commit Hash
       id: cacheHash
-      uses: actions/cache@v4
+      uses: actions/cache@v5
       with:
         path: .commitHash_All
         key: HEAD-${{ steps.getHash.outputs.FINAL_HASH }}  # cache的key值，会在job结束后缓存
