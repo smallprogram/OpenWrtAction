@@ -26,10 +26,7 @@ on:
 permissions:
   contents: write
   packages: write
-  actions: write    # 允许脚本去触发重试工作流
-
-env:
-  UPDATE_CHECKER: compile_script/update_checker.sh
+  actions: write
 
 jobs:
   check:
@@ -42,15 +39,13 @@ jobs:
       if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
     - name: Checkout
-      uses: actions/checkout@main
-      with:
-        fetch-depth: 0
+      uses: actions/checkout@v6 # 建议升级到 v6
 
     - name: Get Commit Hash
       id: getHash
       run: |
-        chmod +x $UPDATE_CHECKER
-        $GITHUB_WORKSPACE/$UPDATE_CHECKER
+        chmod +x compile_script/update_checker.sh
+        $GITHUB_WORKSPACE/compile_script/update_checker.sh
 
     - name: Compare Commit Hash
       id: cacheHash
@@ -58,7 +53,6 @@ jobs:
       with:
         path: .commitHash_All
         key: HEAD-${{ steps.getHash.outputs.HASH_STRING }}
-   
 
     - name: Save New Commit Hash
       if: steps.cacheHash.outputs.cache-hit != 'true'
@@ -97,4 +91,3 @@ jobs:
       with:
         token: ${{ secrets.MY_ADMIN_PAT }}
         event-type: openwrt_source_update_v6
-
