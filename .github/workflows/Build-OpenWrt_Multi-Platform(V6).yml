@@ -246,7 +246,7 @@ jobs:
       - name: Create Release Tag
         uses: softprops/action-gh-release@v3
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_ADMIN_PAT }}
         with:
           tag_name: ${{ needs.job_init.outputs.output_release_tag }}
           body_path: release.txt
@@ -369,7 +369,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.MY_ADMIN_PAT}}
 
       - name: Restore Entire OpenWrt Cache from GHCR
         id: restore_cache
@@ -646,7 +646,7 @@ jobs:
         if: steps.matrix_status.outputs.status != 'success'
         uses: softprops/action-gh-release@v3
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_ADMIN_PAT }}
         with:
           tag_name: ${{ needs.job_init.outputs.output_release_tag }}
           body_path: ${{ steps.init.outputs.release_tag_dir }}/release.txt
@@ -691,7 +691,7 @@ jobs:
       - name: Update Release Tag
         uses: softprops/action-gh-release@v3
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_ADMIN_PAT }}
         with:
           tag_name: ${{ needs.job_init.outputs.output_release_tag }}
           body_path: release.txt

@@ -95,6 +95,6 @@ jobs:
       if: steps.cacheHash.outputs.cache-hit != 'true'
       uses: peter-evans/repository-dispatch@main
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.MY_ADMIN_PAT }}
         event-type: openwrt_source_update_v6
 
