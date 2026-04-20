@@ -9,7 +9,7 @@
 # Description: Source code update checker
 #
 
-name: Update_Checker
+name: Delete All Packages
 
 on:
   workflow_dispatch:
