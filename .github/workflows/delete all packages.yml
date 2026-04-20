@@ -29,11 +29,35 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: ghcr.io cleanup action
-      uses: dataaxiom/ghcr-cleanup-action@v1
-      with:
-        delete-untagged: true
-        delete-tags: '*'
-        packages: openwrt-*
-        expand-packages: true
-        token: ${{ secrets.MY_ADMIN_PAT }}
+    - name: Delete all openwrt-* packages completely
+      env:
+        GH_TOKEN: ${{ secrets.MY_ADMIN_PAT }}
+        USERNAME: smallprogram
+      run: |
+        echo "获取所有容器包列表..."
+        
+        # 抓取用户的所有 container packages (注意 API 分页，默认最多列出 100 个)
+        PACKAGES=$(curl -s -H "Accept: application/vnd.github+json" \
+          -H "Authorization: Bearer $GH_TOKEN" \
+          "https://api.github.com/users/$USERNAME/packages?package_type=container&per_page=100")
+        
+        # 使用 jq 和 grep 筛选出所有以 openwrt- 开头的包名
+        TARGET_PACKAGES=$(echo "$PACKAGES" | jq -r '.[].name' | grep '^openwrt-')
+        
+        if [ -z "$TARGET_PACKAGES" ]; then
+          echo "没有找到以 openwrt- 开头的包。"
+          exit 0
+        fi
+        
+        echo "准备删除以下包："
+        echo "$TARGET_PACKAGES"
+        
+        # 遍历并调用 Delete Package API 直接删除整个包
+        for PKG in $TARGET_PACKAGES; do
+          echo "正在彻底删除整个包: $PKG"
+          curl -s -X DELETE \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/users/$USERNAME/packages/container/$PKG"
+          echo "已发送删除请求: $PKG"
+        done
