@@ -28,7 +28,7 @@ on:
 permissions:
   contents: write
   packages: write
-  actions: write    # 允许脚本去触发重试工作流
+  actions: write # 允许脚本去触发重试工作流
 
 env:
   UPLOAD_BIN_DIR: false
@@ -156,11 +156,10 @@ jobs:
         run: |
           tar -czf output/output.tar.gz openwrt/
           echo "SOURCE_PATH=$PWD" >> $GITHUB_OUTPUT
-          echo "status=success" >> $GITHUB_OUTPUT
 
       - name: Upload Source To Artifact
         uses: actions/upload-artifact@v7
-        if: steps.generate_image.outputs.status == 'success'
+        if: steps.generate_image.outcome == 'success'
         with:
           name: Source_${{ matrix.source_code_platform }}
           path: ${{ steps.generate_image.outputs.SOURCE_PATH }}/output/output.tar.gz
@@ -325,7 +324,7 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           sudo -E apt-get -qq update
-          sudo -E apt-get -qq install git-restore-mtime $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
+          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
           sudo timedatectl set-timezone "$TZ"
 
       - name: Initialization Directory
@@ -345,14 +344,11 @@ jobs:
         run: |
           echo "==== 1. 停止 Docker 服务 ===="
           sudo systemctl stop docker
-          
           echo "==== 2. 迁移 Docker 数据目录到宽敞的 /workdir ===="
           sudo mkdir -p /workdir/docker
           echo '{"data-root": "/workdir/docker"}' | sudo tee /etc/docker/daemon.json
-          
           echo "==== 3. 重启 Docker 服务 ===="
           sudo systemctl start docker
-          
           echo "==== 4. 验证迁移是否成功 ===="
           docker info | grep "Docker Root Dir"
 
@@ -380,48 +376,47 @@ jobs:
           rm -rf download/output.tar.gz
           sudo chown -R $USER:$GROUPS /workdir/openwrt
 
+      # 👑 True SSoT 全路径遍历还原物理时间
+      - name: Git Restore Mtime (True SSoT)
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          cd /workdir/openwrt
+          echo "==== 遍历所有 Git 仓库并精准还原真实提交时间 ===="
+          find . -name ".git" -type d | while read gitdir; do
+              repo_dir=$(dirname "$gitdir")
+              echo "-> 正在处理 Git 仓库: $repo_dir"
+              cd "/workdir/openwrt/$repo_dir"
+              git log --format=%at --name-only | perl -ane '
+                if (/^(\d+)$/) { $t = $1; }
+                elsif (/^(\S+)$/) {
+                  $f = $1;
+                  if (-e $f && !-d $f && !$seen{$f}) {
+                    utime($t, $t, $f);
+                    $seen{$f} = 1;
+                  }
+                }
+              '
+              cd /workdir/openwrt
+          done
+
       - name: Restore Entire OpenWrt Cache from GHCR
         id: restore_cache
         if: steps.matrix_status.outputs.status != 'success' && github.event.inputs.force_rebuild != 'true'
         run: |
           REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
           PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
-          IMAGE_NAME="ghcr.io/$REPO_OWNER/openwrt-full-cache-$PLATFORM_NAME:latest"
-          echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV
+          IMAGE_NAME="ghcr.io/$REPO_OWNER/openwrt-base-cache-$PLATFORM_NAME:latest"
           
           if docker pull $IMAGE_NAME; then
             echo "Cache found! Extracting entire directory..."
             docker create --name cache_container $IMAGE_NAME /bin/true
-            
             docker cp cache_container:/openwrt/build_dir /workdir/openwrt/ 2>/dev/null || true
             docker cp cache_container:/openwrt/staging_dir /workdir/openwrt/ 2>/dev/null || true
-            
             docker rm cache_container
             sudo chown -R $USER:$GROUPS /workdir/openwrt/build_dir /workdir/openwrt/staging_dir 2>/dev/null || true
-
-            # 提取完成后，立刻删除本地 Docker 镜像及悬空数据，彻底释放 17GB 空间,建议留着享受 Docker 本地缓存带来的极速打包体验
-            # docker rmi $IMAGE_NAME
-            # docker system prune -f
-
           else
             echo "No cache found on GHCR. This will be a clean build."
           fi
-
-      - name: Git Restore Mtime
-        if: steps.matrix_status.outputs.status != 'success'
-        run: |
-          cd $GITHUB_WORKSPACE/openwrt
-
-          # 1. 解决 Git 2.47+ 版本强制弃用 whatchanged 的 fatal 报错 [核心修复]
-          git config --global alias.whatchanged "log --raw --no-merges"
-          
-          # 2. 强制还原时间戳
-          # 使用 --force 忽略“文件已修改”的警告，确保解压后的文件能对齐历史时间
-          git restore-mtime --force
-          
-          # 3. 验证结果（可选，用于在日志中观察时间是否真的拨回去了）
-          echo "检查前 5 个文件的时间戳："
-          ls -la | head -n 5
 
       - name: Load Configuration
         if: steps.matrix_status.outputs.status != 'success'
@@ -441,48 +436,111 @@ jobs:
         uses: mxschmitt/action-tmate@v3.23
         if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
-      - name: Compile Toolchain and Firmware
-        id: compile
+      - name: Compile Base (Tools, Toolchain, Kernel)
+        id: compile_base
         if: steps.matrix_status.outputs.status != 'success'
         run: |
           cd openwrt
-          df -h
-          is_complie_error=0
-          chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} || true
+          touch /workdir/base_compilation_marker
+          echo "==== 1. 编译系统工具 ===="
+          make tools/compile -j$(nproc) || exit 1
+          echo "==== 2. 编译交叉工具链 ===="
+          make toolchain/compile -j$(nproc) || exit 1
+          echo "==== 3. 编译 Linux 内核 ===="
+          make target/compile -j$(nproc) || exit 1
 
-          # 埋下compilation_start_marker作为时间锚点！记录 make 开始的绝对时间
-          touch /workdir/compilation_start_marker
-
-          # 如果是真实的编译，原有代码如下：
-          if [[ ${{ fromJSON(github.run_attempt) }} == 3 ]]; then
-              make -j$(nproc) V=s
-              $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} "${{ fromJSON(github.run_attempt) }}" || true
-              is_complie_error=${PIPESTATUS[0]}
-          else
-              make -j$(nproc)
-              $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} "${{ fromJSON(github.run_attempt) }}" || true
-              is_complie_error=${PIPESTATUS[0]}
+      - name: Checkpoint Cache (Save Base to GHCR)
+        if: steps.compile_base.outcome == 'success' && github.event.inputs.force_rebuild != 'true'
+        run: |
+          echo "==== 1. 自动修剪冗余版本 (build_dir + staging_dir) ===="
+          cd /workdir
+          for linux_dir in openwrt/build_dir/target-*/linux-*/; do
+              [ -d "$linux_dir" ] && (cd "$linux_dir" && ls -dt linux-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+          done
+          [ -d "openwrt/build_dir" ] && (cd openwrt/build_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+          if [ -d "openwrt/staging_dir" ]; then
+              (cd openwrt/staging_dir && ls -dt target-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+              (cd openwrt/staging_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
           fi
 
-          df -h
+          echo "==== 2. 智能探测 Base 是否更新 ===="
+          CHANGED_BASE=$(find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker ! -path "*/stamp/*" 2>/dev/null | wc -l)
+          if [ "$CHANGED_BASE" -eq 0 ]; then
+              echo "🎉 Base 阶段命中旧缓存，跳过本次 Checkpoint 存档！"
+              exit 0
+          fi
 
-          if [ "$is_complie_error" -eq 0 ]; then
-            echo "status=success" >> $GITHUB_OUTPUT
+          echo "==== 3. 物理切片：精准构建 4 层缓存架构 ===="
+          # 创建四个切片图层目录
+          mkdir -p layer1/openwrt/build_dir layer1/openwrt/staging_dir
+          mkdir -p layer2/openwrt/build_dir layer2/openwrt/staging_dir
+          mkdir -p layer3/openwrt/build_dir layer3/openwrt/staging_dir
+          mkdir -p layer4/openwrt
+
+          # Layer 1: 最底层的工具链 (Toolchain, ~4.3G, 极少变动)
+          sudo cp -al openwrt/build_dir/toolchain-* ./layer1/openwrt/build_dir/ 2>/dev/null || true
+          sudo cp -al openwrt/staging_dir/toolchain-* ./layer1/openwrt/staging_dir/ 2>/dev/null || true
+
+          # Layer 2: 宿主机工具 (Host, ~1.9G, 偶尔变动)
+          sudo cp -al openwrt/build_dir/host ./layer2/openwrt/build_dir/ 2>/dev/null || true
+          sudo cp -al openwrt/staging_dir/host ./layer2/openwrt/staging_dir/ 2>/dev/null || true
+
+          # Layer 3: 内核与目标平台 (Target, ~2.6G, 容易变动)
+          sudo cp -al openwrt/build_dir/target-* ./layer3/openwrt/build_dir/ 2>/dev/null || true
+          sudo cp -al openwrt/staging_dir/target-* ./layer3/openwrt/staging_dir/ 2>/dev/null || true
+
+          # Layer 4: 剩余零碎的元数据与标记 (Catch-all, 体积极小)
+          sudo rsync -a --exclude="toolchain-*" --exclude="host" --exclude="target-*" openwrt/build_dir/ layer4/openwrt/build_dir/
+          sudo rsync -a --exclude="toolchain-*" --exclude="host" --exclude="target-*" openwrt/staging_dir/ layer4/openwrt/staging_dir/
+
+          echo "==== 4. 生成极简 Dockerfile ===="
+          REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
+          IMAGE_NAME="ghcr.io/$REPO_OWNER/openwrt-base-cache-$PLATFORM_NAME:latest"
+
+          # 按照变动频率，从最稳定到最不稳定依次 COPY
+          echo "FROM alpine:latest" > Dockerfile
+          echo "COPY layer1 /" >> Dockerfile
+          echo "COPY layer2 /" >> Dockerfile
+          echo "COPY layer3 /" >> Dockerfile
+          echo "COPY layer4 /" >> Dockerfile
+          
+          echo "==== 5. 开始构建与推送 ===="
+          docker build -t $IMAGE_NAME .
+          docker push $IMAGE_NAME
+          
+          # 清理临时图层目录，释放工作区空间
+          sudo rm -rf layer1 layer2 layer3 layer4 Dockerfile
+          echo "✅ Base 缓存切片并更新完毕！"
+
+      - name: Compile Packages and Firmware
+        id: compile
+        if: steps.matrix_status.outputs.status != 'success' && !cancelled()
+        run: |
+          cd openwrt
+          df -h
+          # chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} || true
+
+          if [[ ${{ fromJSON(github.run_attempt) }} == 3 ]]; then
+              make -j$(nproc) V=s
+              MAKE_EXIT_CODE=$?
+              exit $MAKE_EXIT_CODE
           else
-            echo "status=failure" >> $GITHUB_OUTPUT
-            exit $is_complie_error
+              make -j$(nproc)
+              MAKE_EXIT_CODE=$?
+              exit $MAKE_EXIT_CODE
           fi
 
       - name: Upload Bin Directory To Artifact
         uses: actions/upload-artifact@v7
-        if: steps.compile.outputs.status == 'success' && env.UPLOAD_BIN_DIR == 'true' && steps.matrix_status.outputs.status != 'success'
+        if: steps.compile.outcome == 'success' && env.UPLOAD_BIN_DIR == 'true' && steps.matrix_status.outputs.status != 'success'
         with:
           name: OpenWrt_bin_${{ matrix.source_code_platform }}_${{ matrix.platform }}
           path: openwrt/bin
 
       - name: Organize Files
         id: organize
-        if: steps.compile.outputs.status == 'success' && env.UPLOAD_FIRMWARE == 'true' && steps.matrix_status.outputs.status != 'success' && !cancelled() 
+        if: steps.compile.outcome == 'success' && env.UPLOAD_FIRMWARE == 'true' && steps.matrix_status.outputs.status != 'success' && !cancelled() 
         run: |
           cd $GITHUB_WORKSPACE/openwrt/bin/targets/*/*
           mkdir -p feeds_packages
@@ -504,71 +562,13 @@ jobs:
           fi
 
           echo "FIRMWARE=$firmware_path" >> $GITHUB_OUTPUT
-          echo "status=success" >> $GITHUB_OUTPUT
 
       - name: Upload Firmware Directory To Artifact
         uses: actions/upload-artifact@v7
-        if: steps.organize.outputs.status == 'success' && env.UPLOAD_ARTIFACT == 'true' && steps.matrix_status.outputs.status != 'success' && !cancelled()
+        if: steps.organize.outcome == 'success' && env.UPLOAD_ARTIFACT == 'true' && steps.matrix_status.outputs.status != 'success' && !cancelled()
         with:
           name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
           path: ${{ steps.organize.outputs.FIRMWARE }}
-      
-      - name: Save Cache to GHCR (Extreme Pruning & Precision Layering)
-        if: steps.matrix_status.outputs.status != 'success' && always() && !cancelled()
-        run: |
-          df -H
-
-          echo "==== 1. 准备骨架：只保留最核心的编译链 ===="
-          cd /workdir
-          
-          # 只删除核心目录里会引起报错的垃圾，其他的不用管了，因为不打包它们
-          sudo rm -rf openwrt/bin 2>/dev/null || true
-          sudo rm -rf openwrt/logs 2>/dev/null || true
-          sudo rm -rf openwrt/tmp 2>/dev/null || true
-          sudo rm -rf openwrt/dl 2>/dev/null || true
-          sudo rm -rf openwrt/build_dir/target-* 2>/dev/null || true
-          sudo rm -rf openwrt/staging_dir/target-* 2>/dev/null || true
-          sudo rm -rf openwrt/staging_dir/packages 2>/dev/null || true
-
-          echo "==== 2. 骨架分层 (极简 3 层架构) ===="
-          # 创建层级目录（你这套设计非常聪明，路径对齐得完美）
-          mkdir -p layer1/openwrt/build_dir layer2/openwrt layer3/openwrt
-          
-          # 第 1 层：最庞大的 toolchain 交叉编译链
-          sudo mv openwrt/build_dir/toolchain-* ./layer1/openwrt/build_dir/ 2>/dev/null || true
-          
-          # 第 2 层：剩余的 build_dir (主要是 host 和 hostpkg)
-          sudo mv openwrt/build_dir ./layer2/openwrt/ 2>/dev/null || true
-          
-          # 第 3 层：整个清洗过的 staging_dir
-          sudo mv openwrt/staging_dir ./layer3/openwrt/ 2>/dev/null || true
-
-          # 智能变化检测 (判断是否需要浪费流量推送 Docker)
-          echo "==== 3. 智能变化检测 ===="
-          CHANGED_FILES=$(find layer1 layer2 layer3 -type f -newer /workdir/compilation_start_marker ! -name ".*" ! -path "*/stamp/*" 2>/dev/null | wc -l)
-          
-          if [ "$CHANGED_FILES" -eq 0 ]; then
-              echo "🎉 核心编译链完全没有实质性变动，跳过构建和推送 Docker 镜像！"
-              exit 0
-          fi
-          
-          echo "⚠️ 检测到有 $CHANGED_FILES 个核心文件发生更新，开始构建新缓存..."
-          
-          REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
-          PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
-          IMAGE_NAME="ghcr.io/$REPO_OWNER/openwrt-full-cache-$PLATFORM_NAME:latest"
-          
-          echo "==== 4. 生成极简 Dockerfile ===="
-          # 使用 alpine 换取 100% 稳定性 (仅增加 5MB)
-          echo "FROM alpine:latest" > Dockerfile
-          echo "COPY layer1 /" >> Dockerfile
-          echo "COPY layer2 /" >> Dockerfile
-          echo "COPY layer3 /" >> Dockerfile
-          
-          echo "==== 5. 开始构建与推送 ===="
-          docker build -t $IMAGE_NAME .
-          docker push $IMAGE_NAME
-          df -H
 
   job_upload_release:
     needs: [job_init, job_source_init, job_generate_release_tag, job_build]

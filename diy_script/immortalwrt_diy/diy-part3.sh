@@ -23,20 +23,38 @@ attempts=$1
 #     package/feeds/helloworld/luci-app-ssr-plus/compile \
 #     package/feeds/OpenClash/luci-app-openclash/compile \
 #     package/feeds/nikki/luci-app-nikki/compile \
-#     package/custom_packages/luci-theme-argon/compile \
+#     package/custom_packages/luci-app-alpha-config/compile \
 #     package/custom_packages/luci-app-argon-config/compile \
-#     package/custom_packages/luci-app-adguardhome/compile \
+#     package/custom_packages/luci-app-bandix/luci-app-bandix/compile \
+#     package/custom_packages/openwrt-bandix/openwrt-bandix/compile \
+#     package/custom_packages/luci-app-kucat-config/compile \
+#     package/custom_packages/luci-theme-alpha/compile \
+#     package/custom_packages/luci-theme-alpha-reborn/compile \
+#     package/custom_packages/luci-theme-argon/compile \
+#     package/custom_packages/luci-theme-aurora/compile \
+#     package/custom_packages/luci-theme-kucat/compile \
+#     package/custom_packages/luci-theme-material3/compile \
 #     package/custom_packages/mosdns/luci-app-mosdns/compile \
 #     package/custom_packages/netspeedtest/luci-app-netspeedtest/compile
+    
 # else
 #   make -j$(nproc) \
 #     package/feeds/passwall/luci-app-passwall/compile \
 #     package/feeds/passwall2/luci-app-passwall2/compile \
 #     package/feeds/helloworld/luci-app-ssr-plus/compile \
 #     package/feeds/OpenClash/luci-app-openclash/compile \
-#     package/custom_packages/luci-theme-argon/compile \
+#     package/feeds/nikki/luci-app-nikki/compile \
+#     package/custom_packages/luci-app-alpha-config/compile \
 #     package/custom_packages/luci-app-argon-config/compile \
-#     package/custom_packages/luci-app-adguardhome/compile \
+#     package/custom_packages/luci-app-bandix/luci-app-bandix/compile \
+#     package/custom_packages/openwrt-bandix/openwrt-bandix/compile \
+#     package/custom_packages/luci-app-kucat-config/compile \
+#     package/custom_packages/luci-theme-alpha/compile \
+#     package/custom_packages/luci-theme-alpha-reborn/compile \
+#     package/custom_packages/luci-theme-argon/compile \
+#     package/custom_packages/luci-theme-aurora/compile \
+#     package/custom_packages/luci-theme-kucat/compile \
+#     package/custom_packages/luci-theme-material3/compile \
 #     package/custom_packages/mosdns/luci-app-mosdns/compile \
 #     package/custom_packages/netspeedtest/luci-app-netspeedtest/compile
 # fi
