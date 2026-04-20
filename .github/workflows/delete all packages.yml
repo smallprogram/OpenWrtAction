@@ -29,7 +29,7 @@ permissions:
   actions: write
 
 jobs:
-  check:
+  delete_packages:
     runs-on: ubuntu-latest
 
     steps:
