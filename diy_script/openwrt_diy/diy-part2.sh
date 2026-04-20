@@ -10,62 +10,6 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-# Modify default IP
-sed -i 's/192.168.1.1/10.10.0.253/g' package/base-files/files/bin/config_generate
-
-# Modify default passwd
-# sed -i '/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF./ d' package/lean/default-settings/files/zzz-default-settings
-
-
-rm -rf temp_resp
-
-git clone -b master --single-branch https://github.com/openwrt/packages.git temp_resp/openwrt_packages
-# git clone -b main --single-branch https://github.com/openwrt/openwrt.git temp_resp/openwrt_source
-
-# update golang version
-rm -rf feeds/packages/lang/golang
-cp -a temp_resp/openwrt_packages/lang/golang feeds/packages/lang
-rm -rf feeds/packages/lang/rust
-cp -a temp_resp/openwrt_packages/lang/rust feeds/packages/lang
-# cp -a temp_resp/openwrt_source/scripts/patch-kernel.sh scripts/
-
-    
-git clone -b master --single-branch  https://github.com/immortalwrt/immortalwrt.git temp_resp/immortalwrt_source
-git clone -b master --single-branch  https://github.com/immortalwrt/luci.git temp_resp/immortalwrt_luci
-git clone -b master --single-branch  https://github.com/immortalwrt/packages.git temp_resp/immortalwrt_packages
-
-# add some package from immortalwrt
-# cp -a temp_resp/immortalwrt_packages/utils/coremark ./feeds/packages
-# cp -a temp_resp/immortalwrt_source/package/emortal/autocore ./package/emortal
-cp -a temp_resp/immortalwrt_luci/applications/luci-app-cifs-mount ./feeds/luci/applications
-cp -a temp_resp/immortalwrt_luci/applications/luci-app-ddns-go ./feeds/luci/applications
-cp -a temp_resp/immortalwrt_packages/net/ddns-go ./feeds/packages/net
-cp -a temp_resp/immortalwrt_luci/applications/luci-app-diskman ./feeds/luci/applications
-cp -a temp_resp/immortalwrt_luci/applications/luci-app-eqos ./feeds/luci/applications
-cp -a temp_resp/immortalwrt_luci/applications/luci-app-homeproxy ./feeds/luci/applications
-cp -a temp_resp/immortalwrt_luci/applications/luci-app-netdata ./feeds/luci/applications
-cp -a temp_resp/immortalwrt_luci/applications/luci-app-ramfree ./feeds/luci/applications
-cp -a temp_resp/immortalwrt_luci/applications/luci-app-vlmcsd ./feeds/luci/applications
-cp -a temp_resp/immortalwrt_packages/net/vlmcsd ./feeds/packages/net
-cp -a temp_resp/immortalwrt_luci/applications/luci-app-wechatpush ./feeds/luci/applications
-
-rm -rf temp_resp
-
-
-
-
-# golnag update version to 1.25.6
-# sed -i \
-#   -e 's/^GO_VERSION_PATCH:=.*/GO_VERSION_PATCH:=6/' \
-#   -e 's/^PKG_HASH:=.*/PKG_HASH:=58cbf771e44d76de6f56d19e33b77d745a1e489340922875e46585b975c2b059/' \
-#   feeds/packages/lang/golang/golang/Makefile
-
-
-# fixed rust host build download llvm in ci error
-sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' feeds/packages/lang/rust/Makefile
-grep -q -- '--ci false \\' feeds/packages/lang/rust/Makefile || sed -i '/x\.py \\/a \        --ci false \\' feeds/packages/lang/rust/Makefile
-
-
 # Add patches
 if [ "$GITHUB_ACTIONS" = "true" ] && [ -n "$GITHUB_RUN_ID" ] && [ -n "$GITHUB_WORKFLOW" ]; then
     PATCHES_SRC_DIR="$GITHUB_WORKSPACE"
@@ -73,19 +17,76 @@ else
     PATCHES_SRC_DIR="../OpenWrtAction"
 fi
 
-# https://github.com/openwrt/packages/pull/27133
-# rpcsvc-proto: fix build with autotools gettext macros 0.22
-# cp -r "$PATCHES_SRC_DIR/patches/rpcsvc-proto/*" ./feeds/packages/libs/rpcsvc-proto
+
+#------------------------------------------------------移植包------------------------------------------------------------
+# --- 拉取上游仓库 ---
+rm -rf temp_resp
+git clone -b master --single-branch https://github.com/openwrt/packages.git temp_resp/openwrt_packages
+git clone -b master --single-branch https://github.com/immortalwrt/luci.git temp_resp/immortalwrt_luci
+git clone -b master --single-branch https://github.com/immortalwrt/packages.git temp_resp/immortalwrt_packages
+
+# =========================================================
+# Golang/Rust 原生覆盖 (放入 package)
+# =========================================================
+rm -rf package/custom_overrides
+mkdir -p package/custom_overrides
+cp -a temp_resp/openwrt_packages/lang/golang package/custom_overrides/
+cp -a temp_resp/openwrt_packages/lang/rust package/custom_overrides/
+
+GOLANG_TIME=$(cd temp_resp/openwrt_packages && git log -1 --format=%cd --date=unix -- lang/golang)
+RUST_TIME=$(cd temp_resp/openwrt_packages && git log -1 --format=%cd --date=unix -- lang/rust)
+find package/custom_overrides/golang -exec touch -m -d @"$GOLANG_TIME" {} +
+find package/custom_overrides/rust -exec touch -m -d @"$RUST_TIME" {} +
+
+
+# =================================================================
+# 定义极简版移植函数 (针对新增包,源仓库必须没有这个包,否则时间戳会被覆盖)
+# =================================================================
+port_package() {
+    local src_repo="$1"
+    local pkg_path="$2"
+    local target_dir="$3"
+    local pkg_name=$(basename "$pkg_path")
+    
+    # 提取上游真实时间并复制
+    local commit_time=$(cd "$src_repo" && git log -1 --format=%cd --date=unix -- "$pkg_path")
+    cp -a "$src_repo/$pkg_path" "$target_dir/"
+    
+    # 强制注入上游真实时间戳 (因为是新文件，SSoT 脚本不会碰它，这里设定的时间就是绝对权威)
+    find "$target_dir/$pkg_name" -exec touch -m -d @"$commit_time" {} +
+}
+
+# 移植 ImmortalWrt LuCI 插件与依赖
+port_package "temp_resp/immortalwrt_luci" "applications/luci-app-cifs-mount" "feeds/luci/applications"
+port_package "temp_resp/immortalwrt_luci" "applications/luci-app-ddns-go" "feeds/luci/applications"
+port_package "temp_resp/immortalwrt_luci" "applications/luci-app-diskman" "feeds/luci/applications"
+port_package "temp_resp/immortalwrt_luci" "applications/luci-app-eqos" "feeds/luci/applications"
+port_package "temp_resp/immortalwrt_luci" "applications/luci-app-homeproxy" "feeds/luci/applications"
+port_package "temp_resp/immortalwrt_luci" "applications/luci-app-netdata" "feeds/luci/applications"
+port_package "temp_resp/immortalwrt_luci" "applications/luci-app-ramfree" "feeds/luci/applications"
+port_package "temp_resp/immortalwrt_luci" "applications/luci-app-vlmcsd" "feeds/luci/applications"
+port_package "temp_resp/immortalwrt_luci" "applications/luci-app-wechatpush" "feeds/luci/applications"
+
+port_package "temp_resp/immortalwrt_packages" "net/ddns-go" "feeds/packages/net"
+port_package "temp_resp/immortalwrt_packages" "net/vlmcsd" "feeds/packages/net"
+
+rm -rf temp_resp
+#--------------------------------------------------------------end 移植包--------------------------------------------------------
+
+
+#-----------------------------------------------修改脚本------------------------------------------------------------
+# Modify default IP
+sed -i 's/192.168.1.1/10.10.0.253/g' package/base-files/files/bin/config_generate
+
+# fixed rust host build download llvm in ci error
+sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' package/custom_overrides/rust/Makefile
+grep -q -- '--ci false \\' package/custom_overrides/rust/Makefile || sed -i '/x\.py \\/a \        --ci false \\' package/custom_overrides/rust/Makefile
 
 # inject download package
 mkdir -p dl
 cp -r $PATCHES_SRC_DIR/library/* ./dl/
 
-./scripts/feeds update -a
-./scripts/feeds install -a
-
 # --- Modify SSH Configuration (Dropbear -> 2222, OpenSSH -> 22) ---
-
 # 1. 确保 files 目录存在 (在 OpenWrt 源码根目录下)
 mkdir -p files/etc/uci-defaults
 
@@ -136,7 +137,11 @@ EOF
 
 # 3. 赋予脚本执行权限
 chmod +x files/etc/uci-defaults/99-custom-ssh-config
-
 # --- End Modify SSH Configuration ---
+
+#------------------------------------------------end 修改脚本-------------------------------------------------------
+
+./scripts/feeds update -a
+./scripts/feeds install -a
 
 echo "DIY2 is complate!"

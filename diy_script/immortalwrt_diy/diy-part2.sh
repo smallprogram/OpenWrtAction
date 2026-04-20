@@ -10,41 +10,6 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-
-
-# Modify default IP
-sed -i 's/192.168.1.1/10.10.0.253/g' package/base-files/files/bin/config_generate
-
-# rm appfilter
-rm -rf ./feeds/packages/net/open-app-filter
-
-
-rm -rf temp_resp
-git clone -b master --single-branch https://github.com/openwrt/packages.git temp_resp/openwrt_packages
-# git clone -b main --single-branch https://github.com/openwrt/openwrt.git temp_resp/openwrt_source
-
-# update golang version
-rm -rf feeds/packages/lang/golang
-cp -a temp_resp/openwrt_packages/lang/golang feeds/packages/lang
-rm -rf feeds/packages/lang/rust
-cp -a temp_resp/openwrt_packages/lang/rust feeds/packages/lang
-# cp -a temp_resp/openwrt_source/scripts/patch-kernel.sh scripts/
-
-rm -rf temp_resp
-
-# golnag update version to 1.25.6
-# sed -i \
-#   -e 's/^GO_VERSION_PATCH:=.*/GO_VERSION_PATCH:=6/' \
-#   -e 's/^PKG_HASH:=.*/PKG_HASH:=58cbf771e44d76de6f56d19e33b77d745a1e489340922875e46585b975c2b059/' \
-#   feeds/packages/lang/golang/golang/Makefile
-
-# fixed rust host build download llvm in ci error
-sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' feeds/packages/lang/rust/Makefile
-grep -q -- '--ci false \\' feeds/packages/lang/rust/Makefile || sed -i '/x\.py \\/a \        --ci false \\' feeds/packages/lang/rust/Makefile
-
-
-
-
 # Add patches
 if [ "$GITHUB_ACTIONS" = "true" ] && [ -n "$GITHUB_RUN_ID" ] && [ -n "$GITHUB_WORKFLOW" ]; then
     PATCHES_SRC_DIR="$GITHUB_WORKSPACE"
@@ -52,16 +17,45 @@ else
     PATCHES_SRC_DIR="../OpenWrtAction"
 fi
 
-# https://github.com/openwrt/packages/pull/27133
-# rpcsvc-proto: fix build with autotools gettext macros 0.22
-# cp -a "$PATCHES_SRC_DIR/patches/rpcsvc-proto/*" ./feeds/packages/libs/rpcsvc-proto
+
+#------------------------------------------------------移植包------------------------------------------------------------
+rm -rf temp_resp
+git clone -b master --single-branch https://github.com/openwrt/packages.git temp_resp/openwrt_packages
+
+GOLANG_TIME=$(cd temp_resp/openwrt_packages && git log -1 --format=%cd --date=unix -- lang/golang)
+RUST_TIME=$(cd temp_resp/openwrt_packages && git log -1 --format=%cd --date=unix -- lang/rust)
+
+# 建立专门的 override 目录，不碰 feeds
+rm -rf package/custom_overrides
+mkdir -p package/custom_overrides
+
+cp -a temp_resp/openwrt_packages/lang/golang package/custom_overrides/
+cp -a temp_resp/openwrt_packages/lang/rust package/custom_overrides/
+
+# 注入真实时间戳
+find package/custom_overrides/golang -exec touch -m -d @"$GOLANG_TIME" {} +
+find package/custom_overrides/rust -exec touch -m -d @"$RUST_TIME" {} +
+
+
+rm -rf temp_resp
+#-------------------------------------------------------end 移植包--------------------------------------------------------
+
+
+#-----------------------------------------------修改脚本------------------------------------------------------------
+
+# rm appfilter
+rm -rf ./feeds/packages/net/open-app-filter
+
+# Modify default IP
+sed -i 's/192.168.1.1/10.10.0.253/g' package/base-files/files/bin/config_generate
+
+# fixed rust host build download llvm in ci error
+sed -i 's/--set=llvm\.download-ci-llvm=true/--set=llvm.download-ci-llvm=false/' package/custom_overrides/rust/Makefile
+grep -q -- '--ci false \\' package/custom_overrides/rust/Makefile || sed -i '/x\.py \\/a \        --ci false \\' package/custom_overrides/rust/Makefile
 
 # inject download package
 mkdir -p dl
-cp -a $PATCHES_SRC_DIR/library/* ./dl/
-
-./scripts/feeds update -a
-./scripts/feeds install -a
+cp -r $PATCHES_SRC_DIR/library/* ./dl/
 
 
 # --- Modify SSH Configuration (Dropbear -> 2222, OpenSSH -> 22) ---
@@ -118,5 +112,9 @@ EOF
 chmod +x files/etc/uci-defaults/99-custom-ssh-config
 
 # --- End Modify SSH Configuration ---
+#------------------------------------------------end 修改脚本-------------------------------------------------------
+
+./scripts/feeds update -a
+./scripts/feeds install -a
 
 echo "DIY2 is complate!"
