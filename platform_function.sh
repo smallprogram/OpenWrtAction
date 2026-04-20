@@ -10,7 +10,7 @@
 # File: wsl2op_function.sh
 # Description: WSL automatically compiles Openwrt script code
 
-function Func_LogMessage() {
+Func_LogMessage() {
     Begin="\033[1;96m"
     End="\033[0m"
 
@@ -21,7 +21,7 @@ function Func_LogMessage() {
     fi
 }
 
-function Func_LogSuccess() {
+Func_LogSuccess() {
     Begin="\033[1;92m"
     End="\033[0m"
 
@@ -32,7 +32,7 @@ function Func_LogSuccess() {
     fi
 }
 
-function Func_LogError() {
+Func_LogError() {
     Begin="\033[1;91m"
     End="\033[0m"
 
@@ -45,7 +45,7 @@ function Func_LogError() {
 # DIY Script函数
 
 
-function Func_Copy_Backgroundfiles() {
+Func_Copy_Backgroundfiles() {
     local is_wsl2op=$1
     local platform_config=$2
     local platform="${platform_config%%.config}"
@@ -59,19 +59,41 @@ function Func_Copy_Backgroundfiles() {
     # sleep 2s
 }
 
-# function Func_ZH_CN_Init(){
+# Func_ZH_CN_Init(){
 #     sed -i '/^# .*zh-cn.* is not set$/ { s/^# //; s/ is not set$/=y/ }' "$1"
 # }
 
 #GIT设置
-function Func_GitSetting() {
+Func_GitSetting() {
     git config --global user.email "${git_email}"
     git config --global user.name "${git_user}"
     export GIT_SSL_NO_VERIFY=1
 }
 
+#GIT源码时间同步git日志函数
+Func_SyncCodeToGitLogTime(){
+    cd /home/${user_name}/${openwrt_dir}
+    find . -name ".git" -type d | while read gitdir; do
+        repo_dir=$(dirname "$gitdir")
+        echo "-> 正在处理 Git 仓库: $repo_dir"
+        Func_LogSuccess "-> 正在处理 Git 仓库:${repo_dir}" "-> Processing Git repository:${repo_dir}"
+        cd "/home/${user_name}/${openwrt_dir}/$repo_dir"
+        git log --format=%at --name-only | perl -ane '
+        if (/^(\d+)$/) { $t = $1; }
+        elsif (/^(\S+)$/) {
+            $f = $1;
+            if (-e $f && !-d $f && !$seen{$f}) {
+            utime($t, $t, $f);
+            $seen{$f} = 1;
+            }
+        }
+        '
+        cd /home/${user_name}/${openwrt_dir}
+    done
+}
+
 # 编译报错检查函数
-check_compile_error() {
+Func_Check_Compile_Error() {
     local is_compile_error=$1
     local messages=$2
 
@@ -84,7 +106,7 @@ check_compile_error() {
 }
 
 # config文件夹的config文件列表函数
-function Func_ConfigList() {
+Func_ConfigList() {
     key=0
     for conf in ${config_list[*]}; do
         key=$((${key} + 1))
@@ -115,7 +137,7 @@ function Func_ConfigList() {
 }
 
 #清理日志文件夹函数
-function Func_CleanLogFolder() {
+Func_CleanLogFolder() {
     if [ -d "/home/${user_name}/${log_folder_name}" ]; then
         Func_LogMessage "是否清理存储超过$clean_day天的日志文件，默认删除，如果录入任意值不删除" "Whether to clean up the log files stored for more than $clean_day days, delete by default, if you enter any value, it will not be deleted"
         Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
@@ -133,7 +155,7 @@ function Func_CleanLogFolder() {
 }
 
 # 同步源码函数
-function Func_SyncGitSource(){
+Func_SyncGitSource(){
     echo
     Func_LogMessage "开始同步源码...." "Start to synchronize source code..."
     sleep 2s
@@ -161,7 +183,7 @@ function Func_SyncGitSource(){
 }
 
 # make clean函数
-function Func_CleanCompile(){
+Func_CleanCompile(){
     # CheckUpdate
     cd /home/${user_name}/${openwrt_dir}
     begin_date=开始时间$(date "+%Y-%m-%d-%H-%M-%S")
@@ -194,7 +216,7 @@ function Func_CleanCompile(){
 }
 
 # DIY1 Script函数
-function Func_DIY1_Script() {
+Func_DIY1_Script() {
     Func_LogMessage "开始执行DIY1设置脚本" "Start executing the DIY1 setup script"
     sleep 1s
 
@@ -205,7 +227,7 @@ function Func_DIY1_Script() {
 }
 
 # feeds更新函数，防止feeds force push导致feeds无法更新
-function Func_FeedsUpdate() {
+Func_FeedsUpdate() {
 
     Func_LogMessage "是否清理feeds，如果不输入任何值默认否，输入任意值清理feeds" "Whether to clean up feeds. If no value is entered, the default is "no". If any value is entered, the feeds are cleaned up."
     Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
@@ -248,7 +270,7 @@ function Func_FeedsUpdate() {
 }
 
 # DIY2 Script函数
-function Func_DIY2_Script() {
+Func_DIY2_Script() {
     Func_LogMessage "开始执行DIY2设置脚本" "Start executing the DIY2 setup script"
     sleep 1s
 
@@ -259,7 +281,7 @@ function Func_DIY2_Script() {
 }
 
 # make defconfig函数
-function Func_Defconfig(){
+Func_Defconfig(){
     # 获取第一个参数：是否从源注入配置
     local inject_from_source=$1
     echo
@@ -286,12 +308,12 @@ function Func_Defconfig(){
 }
 
 # make download函数
-function Func_MakeDownload() {
+Func_MakeDownload() {
     Func_LogMessage "开始执行make download!" "Start to execute make download!"
     sleep 1s
     make -j8 download | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main4_make_download-git_log.log
     is_complie_error=${PIPESTATUS[0]}
-    check_compile_error "$is_complie_error" "make download"
+    Func_Check_Compile_Error "$is_complie_error" "make download"
 
     Func_LogMessage "开始清理download残留!" "Start cleaning up download residue!"
     find dl -mindepth 1 -type d -exec rm -rf {} \;
@@ -300,7 +322,7 @@ function Func_MakeDownload() {
 }
 
 # make toolchain函数
-function Func_MakeToolchain() {
+Func_MakeToolchain() {
         echo
     Func_LogMessage "开始make toolchain." "Begin make toolchain"
     sleep 2s
@@ -343,11 +365,11 @@ function Func_MakeToolchain() {
         # $PATH
     fi
 
-    check_compile_error "$is_complie_error" "make toolchain"
+    Func_Check_Compile_Error "$is_complie_error" "make toolchain"
 }
 
 # make固件函数
-function Func_MakeFirmware() {
+Func_MakeFirmware() {
     Func_LogMessage "开始执行生成固件" "Start to Generate Frimware!"
     sleep 1s
     if [[ $sysenv == 1 ]]; then
@@ -428,7 +450,7 @@ function Func_MakeFirmware() {
         # $PATH
     fi
 
-    check_compile_error "$is_complie_error" "Generate Frimware"
+    Func_Check_Compile_Error "$is_complie_error" "Generate Frimware"
 
     Func_LogMessage "编译状态:${is_complie_error}" "Compile Status Code:${is_complie_error}"
 
@@ -440,7 +462,7 @@ function Func_MakeFirmware() {
 }
 
 # 编译函数
-function Func_Compile_Firmware() {
+Func_Compile_Firmware() {
     # 获取第一个参数：是否从源注入配置
     local inject_from_source=$1
 
@@ -455,6 +477,8 @@ function Func_Compile_Firmware() {
     Func_DIY2_Script
 
     Func_Copy_Backgroundfiles "1" "${config_name}"
+
+    Func_SyncCodeToGitLogTime
 
     Func_Defconfig "$inject_from_source"
     
@@ -476,7 +500,7 @@ function Func_Compile_Firmware() {
     fi
 }
 
-function Func_Wsl2Check(){
+Func_Wsl2Check(){
     echo
     Func_LogMessage "准备就绪，请按照导航选择操作...." "Ready, please follow the navigation options..."
     sleep 2s
@@ -507,7 +531,7 @@ function Func_Wsl2Check(){
 }
 
 # 获取远程分支列表并选择分支函数
-function Func_SelectBranch(){
+Func_SelectBranch(){
     # 先从远程获取最新分支列表（不克隆整个仓库）
     Func_LogMessage "正在从远程仓库获取分支列表..." "Fetching branch list from remote repository..."
 
@@ -545,7 +569,7 @@ function Func_SelectBranch(){
 }
 
 #主函数
-function Func_Main() {
+Func_Main() {
     # GitSetting
     Func_GitSetting
     # 默认语言中文，其他英文
@@ -746,6 +770,8 @@ function Func_Main() {
             done
 
             if [[ $num_continue == 1 ]]; then
+                Func_SyncCodeToGitLogTime
+
                 Func_Defconfig "false"
                 
                 Func_MakeDownload
@@ -843,6 +869,8 @@ function Func_Main() {
         done
 
         if [[ $num_continue == 1 ]]; then
+            Func_SyncCodeToGitLogTime
+            
             Func_Copy_Backgroundfiles "1" "${config_name}"
 
             Func_Defconfig "true"

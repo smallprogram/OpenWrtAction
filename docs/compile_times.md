@@ -28,3 +28,24 @@ zhusir@zhusirubuntuserver:~/immortalwrt_openwrt-25.12_X86.config$ du -sh staging
 zhusir@zhusirubuntuserver:~/immortalwrt_openwrt-25.12_X86.config$ du -sh staging_dir/toolchain-x86_64_gcc-14.3.0_musl/
 355M    staging_dir/toolchain-x86_64_gcc-14.3.0_musl/
 ```
+
+
+### 编译toolchain、target、host compile容量
+```bash
+zhusir@zhusirubuntuserver:~/immortalwrt_openwrt-25.12_X86.config$ du -sh build_dir/
+36G     build_dir/
+zhusir@zhusirubuntuserver:~/immortalwrt_openwrt-25.12_X86.config$ du -sh build_dir/host
+1.6G    build_dir/host
+zhusir@zhusirubuntuserver:~/immortalwrt_openwrt-25.12_X86.config$ du -sh build_dir/hostpkg/
+4.8G    build_dir/hostpkg/
+zhusir@zhusirubuntuserver:~/immortalwrt_openwrt-25.12_X86.config$ du -sh build_dir/target-x86_64_musl/
+25G     build_dir/target-x86_64_musl/
+zhusir@zhusirubuntuserver:~/immortalwrt_openwrt-25.12_X86.config$ du -sh build_dir/toolchain-x86_64_gcc-14.3.0_musl/
+4.0G    build_dir/toolchain-x86_64_gcc-14.3.0_musl/
+zhusir@zhusirubuntuserver:~/immortalwrt_openwrt-25.12_X86.config$ du -sh build_dir/target-x86_64_musl/host/
+23G     build_dir/target-x86_64_musl/host/
+zhusir@zhusirubuntuserver:~/immortalwrt_openwrt-25.12_X86.config$ du -sh build_dir/target-x86_64_musl/linux-x86_64/
+2.6G    build_dir/target-x86_64_musl/linux-x86_64/
+zhusir@zhusirubuntuserver:~/immortalwrt_openwrt-25.12_X86.config$ du -sh staging_dir/
+3.5G    staging_dir/
+```
