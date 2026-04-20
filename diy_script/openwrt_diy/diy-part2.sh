@@ -35,8 +35,18 @@ cp -a temp_resp/openwrt_packages/lang/rust package/custom_overrides/
 
 GOLANG_TIME=$(cd temp_resp/openwrt_packages && git log -1 --format=%cd --date=unix -- lang/golang)
 RUST_TIME=$(cd temp_resp/openwrt_packages && git log -1 --format=%cd --date=unix -- lang/rust)
-find package/custom_overrides/golang -exec touch -m -d @"$GOLANG_TIME" {} +
-find package/custom_overrides/rust -exec touch -m -d @"$RUST_TIME" {} +
+
+if [ -n "$GOLANG_TIME" ]; then
+    find package/custom_overrides/golang -exec touch -m -d @"$GOLANG_TIME" {} +
+else
+    echo "⚠️ 警告: 无法提取 Golang 的上游时间戳，将使用拷贝时的时间"
+fi
+
+if [ -n "$RUST_TIME" ]; then
+    find package/custom_overrides/rust -exec touch -m -d @"$RUST_TIME" {} +
+else
+    echo "⚠️ 警告: 无法提取 Rust 的上游时间戳，将使用拷贝时的时间"
+fi
 
 
 # =================================================================
@@ -50,10 +60,13 @@ port_package() {
     
     # 提取上游真实时间并复制
     local commit_time=$(cd "$src_repo" && git log -1 --format=%cd --date=unix -- "$pkg_path")
-    cp -a "$src_repo/$pkg_path" "$target_dir/"
-    
-    # 强制注入上游真实时间戳 (因为是新文件，SSoT 脚本不会碰它，这里设定的时间就是绝对权威)
-    find "$target_dir/$pkg_name" -exec touch -m -d @"$commit_time" {} +
+    if [ -n "$commit_time" ]; then
+        cp -a "$src_repo/$pkg_path" "$target_dir/"
+        find "$target_dir/$pkg_name" -exec touch -m -d @"$commit_time" {} +
+    else
+        echo "⚠️ 警告: 无法提取 $pkg_path 的时间戳，直接复制文件"
+        cp -a "$src_repo/$pkg_path" "$target_dir/"
+    fi
 }
 
 # 移植 ImmortalWrt LuCI 插件与依赖

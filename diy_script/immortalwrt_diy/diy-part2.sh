@@ -33,8 +33,17 @@ cp -a temp_resp/openwrt_packages/lang/golang package/custom_overrides/
 cp -a temp_resp/openwrt_packages/lang/rust package/custom_overrides/
 
 # 注入真实时间戳
-find package/custom_overrides/golang -exec touch -m -d @"$GOLANG_TIME" {} +
-find package/custom_overrides/rust -exec touch -m -d @"$RUST_TIME" {} +
+if [ -n "$GOLANG_TIME" ]; then
+    find package/custom_overrides/golang -exec touch -m -d @"$GOLANG_TIME" {} +
+else
+    echo "⚠️ 警告: 无法提取 Golang 的上游时间戳，将使用拷贝时的时间"
+fi
+
+if [ -n "$RUST_TIME" ]; then
+    find package/custom_overrides/rust -exec touch -m -d @"$RUST_TIME" {} +
+else
+    echo "⚠️ 警告: 无法提取 Rust 的上游时间戳，将使用拷贝时的时间"
+fi
 
 
 rm -rf temp_resp

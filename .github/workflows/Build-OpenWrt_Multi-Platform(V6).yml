@@ -93,7 +93,7 @@ jobs:
           git clone -b ${{matrix.value.REPO_BRANCH}} --single-branch ${{ matrix.value.REPO_URL }} openwrt
           ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
-      - name: Load Custom Feeds
+      - name: Run DIY Part 1 Script
         run: |
           chmod +x ${{ matrix.value.DIY_P1_SH }}
           cd openwrt
@@ -113,12 +113,16 @@ jobs:
           git reset --hard origin/${{ github.ref_name }}
           git checkout -b temp-${{ matrix.source_code_platform }}
 
-      - name: Make Defconfig Custom Configuration
+      - name: Run DIY Part 2 Script
         run: |
           chmod +x ${{ matrix.value.DIY_P2_SH }}
-          chmod +x compile_script/step01_make_defconfig.sh
           cd openwrt
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
+
+      - name: Make Defconfig Custom Configuration
+        run: |
+          chmod +x compile_script/step01_make_defconfig.sh
+          cd openwrt
           $GITHUB_WORKSPACE/compile_script/step01_make_defconfig.sh "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
 
       - name: Merge and push changes with "theirs" strategy
