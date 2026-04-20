@@ -289,12 +289,12 @@ Func_Defconfig(){
     if [ "$inject_from_source" = "true" ]; then
         Func_LogMessage "开始将OpenwrtAction中config文件夹下的${config_name}注入源码中..." "Start to inject ${config_name} under the config folder in OpenwrtAction into source code..."
         sleep 2s
-        cp "/home/${user_name}/OpenWrtAction/$config_dir/${config_name}" "/home/${user_name}/${openwrt_dir}/.config"
+        cp -a "/home/${user_name}/OpenWrtAction/$config_dir/${config_name}" "/home/${user_name}/${openwrt_dir}/.config"
     else
         Func_LogMessage "跳过配置注入，直接使用现有配置。" "Skipping config injection, using existing configuration."
     fi
 
-    cp /home/${user_name}/${openwrt_dir}/.config /home/${user_name}/${log_folder_name}/${folder_name}/.config_old
+    cp -a /home/${user_name}/${openwrt_dir}/.config /home/${user_name}/${log_folder_name}/${folder_name}/.config_old
     # echo -e "\nCONFIG_ALL=y" >> .config
     # echo -e "\nCONFIG_ALL_NONSHARED=y" >> .config
 
@@ -302,7 +302,7 @@ Func_Defconfig(){
     sleep 1s
     make defconfig | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main3_make_defconfig-git_log.log
 
-    cp /home/${user_name}/${openwrt_dir}/.config /home/${user_name}/${log_folder_name}/${folder_name}/.config_new
+    cp -a /home/${user_name}/${openwrt_dir}/.config /home/${user_name}/${log_folder_name}/${folder_name}/.config_new
     diff /home/${user_name}/${log_folder_name}/${folder_name}/.config_old /home/${user_name}/${log_folder_name}/${folder_name}/.config_new -y -W 200 >/home/${user_name}/${log_folder_name}/${folder_name}/.config_diff
 
 }
@@ -495,7 +495,7 @@ Func_Compile_Firmware() {
         Func_LogSuccess "OK，不拷贝" "OK, don't copy"
     else
         Func_LogMessage "开始拷贝" "Start copying"
-        cp -r /home/${user_name}/${openwrt_dir}/bin/targets /home/${user_name}/${log_folder_name}/${folder_name}
+        cp -a /home/${user_name}/${openwrt_dir}/bin/targets /home/${user_name}/${log_folder_name}/${folder_name}
         Func_LogSuccess "拷贝完成" "Copy completed"
     fi
 }
@@ -686,7 +686,7 @@ Func_Main() {
             Func_LogMessage "开始将OpenwrtAction中config文件夹下的${config_name}注入源码中...." "Start to inject ${config_name} under the config folder in OpenwrtAction into source code..."
             sleep 2s
             echo
-            cp /home/${user_name}/OpenWrtAction/$config_dir/${config_name} /home/${user_name}/${openwrt_dir}/.config
+            cp -a /home/${user_name}/OpenWrtAction/$config_dir/${config_name} /home/${user_name}/${openwrt_dir}/.config
 
             
 
@@ -735,7 +735,7 @@ Func_Main() {
             done
 
             if [[ $is_push_config == 1 ]]; then
-                cp /home/${user_name}/${openwrt_dir}/.config /home/${user_name}/OpenWrtAction/$config_dir/${config_name}
+                cp -a /home/${user_name}/${openwrt_dir}/.config /home/${user_name}/OpenWrtAction/$config_dir/${config_name}
                 cd /home/${user_name}/OpenWrtAction
                 if [ -n "$(git status -s)" ]; then
                     git add .
@@ -838,7 +838,7 @@ Func_Main() {
         
 
 
-        cp -f .config ../OpenWrtAction/config/${openwrt_dir_front}_config/${config_name}
+        cp -a .config ../OpenWrtAction/config/${openwrt_dir_front}_config/${config_name}
         if [ -n "$(git status -s)" ]; then
             git add .
             git commit -m "add $config_name from local bash"

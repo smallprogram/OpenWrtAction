@@ -25,10 +25,10 @@ git clone -b master --single-branch https://github.com/openwrt/packages.git temp
 
 # update golang version
 rm -rf feeds/packages/lang/golang
-cp -rf temp_resp/openwrt_packages/lang/golang feeds/packages/lang
+cp -a temp_resp/openwrt_packages/lang/golang feeds/packages/lang
 rm -rf feeds/packages/lang/rust
-cp -rf temp_resp/openwrt_packages/lang/rust feeds/packages/lang
-# cp -rf temp_resp/openwrt_source/scripts/patch-kernel.sh scripts/
+cp -a temp_resp/openwrt_packages/lang/rust feeds/packages/lang
+# cp -a temp_resp/openwrt_source/scripts/patch-kernel.sh scripts/
 
 rm -rf temp_resp
 
@@ -54,11 +54,11 @@ fi
 
 # https://github.com/openwrt/packages/pull/27133
 # rpcsvc-proto: fix build with autotools gettext macros 0.22
-# cp -r "$PATCHES_SRC_DIR/patches/rpcsvc-proto/*" ./feeds/packages/libs/rpcsvc-proto
+# cp -a "$PATCHES_SRC_DIR/patches/rpcsvc-proto/*" ./feeds/packages/libs/rpcsvc-proto
 
 # inject download package
 mkdir -p dl
-cp -r $PATCHES_SRC_DIR/library/* ./dl/
+cp -a $PATCHES_SRC_DIR/library/* ./dl/
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a

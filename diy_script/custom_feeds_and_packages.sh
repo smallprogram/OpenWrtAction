@@ -39,7 +39,7 @@ clone_custom_packages () {
     # luci-app-netspeedtest source can't connect, use local copy instead
     # git clone https://github.com/sirpdboy/luci-app-netspeedtest ${path}netspeedtest
     git clone https://github.com/sirpdboy/netspeedtest.git ${path}netspeedtest
-    # cp -rf $PATCHES_SRC_DIR/diy_script/custom_packages/netspeedtest ${path}
+    # cp -a $PATCHES_SRC_DIR/diy_script/custom_packages/netspeedtest ${path}
 
 
     git clone https://github.com/timsaya/openwrt-bandix.git ${path}openwrt-bandix

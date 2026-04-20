@@ -376,7 +376,6 @@ jobs:
           rm -rf download/output.tar.gz
           sudo chown -R $USER:$GROUPS /workdir/openwrt
 
-      # 👑 True SSoT 全路径遍历还原物理时间
       - name: Git Restore Mtime (True SSoT)
         if: steps.matrix_status.outputs.status != 'success'
         run: |

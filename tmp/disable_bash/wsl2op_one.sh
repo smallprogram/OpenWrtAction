@@ -99,11 +99,11 @@ function Func_DIY_Script() {
     sleep 1s
     # 注入patches
     # Func_LogMessage "\033[31m 注入patches \033[0m" "\033[31m inject patches \033[0m"
-    # cp -r /home/${userName}/OpenWrtAction/patches/651-rt2x00-driver-compile-with-kernel-5.15.patch /home/${userName}/${ledeDir}/package/kernel/mac80211/patches/rt2x00
+    # cp -a /home/${userName}/OpenWrtAction/patches/651-rt2x00-driver-compile-with-kernel-5.15.patch /home/${userName}/${ledeDir}/package/kernel/mac80211/patches/rt2x00
     # sleep 1s
     # 注入dl
     Func_LogMessage "\033[31m 注入dl \033[0m" "\033[31m inject dl \033[0m"
-    cp -r /home/${userName}/OpenWrtAction/library/* /home/${userName}/${ledeDir}/dl
+    cp -a /home/${userName}/OpenWrtAction/library/* /home/${userName}/${ledeDir}/dl
     sleep 1s
 
     Func_LogMessage "\033[31m 下载安装默认背景 \033[0m" "\033[31m download and install default background \033[0m"
@@ -170,7 +170,7 @@ function Func_Get_luci_apps() {
         #     rm -rf passwall_package
         #     git clone -b luci $luci_app passwall
         #     git clone -b packages $luci_app passwall_package
-        #     cp -rf passwall_package/* passwall
+        #     cp -a passwall_package/* passwall
         #     rm -rf passwall_package
         #     continue
         # fi
@@ -326,7 +326,7 @@ function Func_Compile_Firmware() {
 
     Func_LogMessage "\033[31m 准备拷贝编译固件到${log_folder_name}/${folder_name}下" "\033[31m Copy and compile the firmware to ${log_folder_name}/${folder_name} \033[0m"
     Func_LogMessage "\033[34m 开始拷贝 \033[0m" "\033[34m Start copying \033[0m"
-    cp -r /home/${userName}/${ledeDir}/bin/targets /home/${userName}/${log_folder_name}/${folder_name}
+    cp -a /home/${userName}/${ledeDir}/bin/targets /home/${userName}/${log_folder_name}/${folder_name}
     rm -rf /home/${userName}/${ledeDir}/bin/targets/
     Func_LogMessage "\033[34m 拷贝完成 \033[0m" "\033[34m Copy completed \033[0m"
 
@@ -337,7 +337,7 @@ function Func_Compile_Firmware() {
     #     Func_LogMessage "\033[34m OK，不拷贝 \033[0m" "\033[34m OK, don't copy \033[0m"
     # else
     #     Func_LogMessage "\033[34m 开始拷贝 \033[0m" "\033[34m Start copying \033[0m"
-    #     cp -r /home/${userName}/${ledeDir}/bin/targets /home/${userName}/${log_folder_name}/${folder_name}
+    #     cp -a /home/${userName}/${ledeDir}/bin/targets /home/${userName}/${log_folder_name}/${folder_name}
     #     rm -rf /home/${userName}/${ledeDir}/bin/targets
     #     Func_LogMessage "\033[34m 拷贝完成 \033[0m" "\033[34m Copy completed \033[0m"
     # fi

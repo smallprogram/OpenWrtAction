@@ -24,10 +24,10 @@ git clone -b master --single-branch https://github.com/openwrt/packages.git temp
 
 # update golang version
 rm -rf feeds/packages/lang/golang
-cp -rf temp_resp/openwrt_packages/lang/golang feeds/packages/lang
+cp -a temp_resp/openwrt_packages/lang/golang feeds/packages/lang
 rm -rf feeds/packages/lang/rust
-cp -rf temp_resp/openwrt_packages/lang/rust feeds/packages/lang
-# cp -rf temp_resp/openwrt_source/scripts/patch-kernel.sh scripts/
+cp -a temp_resp/openwrt_packages/lang/rust feeds/packages/lang
+# cp -a temp_resp/openwrt_source/scripts/patch-kernel.sh scripts/
 
     
 git clone -b master --single-branch  https://github.com/immortalwrt/immortalwrt.git temp_resp/immortalwrt_source
@@ -35,19 +35,19 @@ git clone -b master --single-branch  https://github.com/immortalwrt/luci.git tem
 git clone -b master --single-branch  https://github.com/immortalwrt/packages.git temp_resp/immortalwrt_packages
 
 # add some package from immortalwrt
-# cp -rf temp_resp/immortalwrt_packages/utils/coremark ./feeds/packages
-# cp -rf temp_resp/immortalwrt_source/package/emortal/autocore ./package/emortal
-cp -rf temp_resp/immortalwrt_luci/applications/luci-app-cifs-mount ./feeds/luci/applications
-cp -rf temp_resp/immortalwrt_luci/applications/luci-app-ddns-go ./feeds/luci/applications
-cp -rf temp_resp/immortalwrt_packages/net/ddns-go ./feeds/packages/net
-cp -rf temp_resp/immortalwrt_luci/applications/luci-app-diskman ./feeds/luci/applications
-cp -rf temp_resp/immortalwrt_luci/applications/luci-app-eqos ./feeds/luci/applications
-cp -rf temp_resp/immortalwrt_luci/applications/luci-app-homeproxy ./feeds/luci/applications
-cp -rf temp_resp/immortalwrt_luci/applications/luci-app-netdata ./feeds/luci/applications
-cp -rf temp_resp/immortalwrt_luci/applications/luci-app-ramfree ./feeds/luci/applications
-cp -rf temp_resp/immortalwrt_luci/applications/luci-app-vlmcsd ./feeds/luci/applications
-cp -rf temp_resp/immortalwrt_packages/net/vlmcsd ./feeds/packages/net
-cp -rf temp_resp/immortalwrt_luci/applications/luci-app-wechatpush ./feeds/luci/applications
+# cp -a temp_resp/immortalwrt_packages/utils/coremark ./feeds/packages
+# cp -a temp_resp/immortalwrt_source/package/emortal/autocore ./package/emortal
+cp -a temp_resp/immortalwrt_luci/applications/luci-app-cifs-mount ./feeds/luci/applications
+cp -a temp_resp/immortalwrt_luci/applications/luci-app-ddns-go ./feeds/luci/applications
+cp -a temp_resp/immortalwrt_packages/net/ddns-go ./feeds/packages/net
+cp -a temp_resp/immortalwrt_luci/applications/luci-app-diskman ./feeds/luci/applications
+cp -a temp_resp/immortalwrt_luci/applications/luci-app-eqos ./feeds/luci/applications
+cp -a temp_resp/immortalwrt_luci/applications/luci-app-homeproxy ./feeds/luci/applications
+cp -a temp_resp/immortalwrt_luci/applications/luci-app-netdata ./feeds/luci/applications
+cp -a temp_resp/immortalwrt_luci/applications/luci-app-ramfree ./feeds/luci/applications
+cp -a temp_resp/immortalwrt_luci/applications/luci-app-vlmcsd ./feeds/luci/applications
+cp -a temp_resp/immortalwrt_packages/net/vlmcsd ./feeds/packages/net
+cp -a temp_resp/immortalwrt_luci/applications/luci-app-wechatpush ./feeds/luci/applications
 
 rm -rf temp_resp
 

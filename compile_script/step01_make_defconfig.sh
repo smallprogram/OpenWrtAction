@@ -15,7 +15,7 @@ fi
 cd ..
 for i in "${selected_platforms[@]}"; do
     echo $i
-    [ -e $CONFIGS/$i.config ] && cp -r $CONFIGS/$i.config openwrt/.config
+    [ -e $CONFIGS/$i.config ] && cp -a $CONFIGS/$i.config openwrt/.config
     cd openwrt
     if [[ "$Is_Copy_Seeds" == "true" ]]; then
       echo ""
@@ -29,7 +29,7 @@ for i in "${selected_platforms[@]}"; do
     make defconfig
     echo ""
     cd ..
-    cp -f openwrt/.config $CONFIGS/$i.config
+    cp -a openwrt/.config $CONFIGS/$i.config
 done
 cd openwrt
 rm -rf .config

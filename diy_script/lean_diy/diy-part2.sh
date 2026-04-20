@@ -40,11 +40,11 @@ fi
 
 # https://github.com/openwrt/packages/pull/27133
 # rpcsvc-proto: fix build with autotools gettext macros 0.22
-# cp -r "$PATCHES_SRC_DIR/patches/rpcsvc-proto/*" ./feeds/packages/libs/rpcsvc-proto
+# cp -a "$PATCHES_SRC_DIR/patches/rpcsvc-proto/*" ./feeds/packages/libs/rpcsvc-proto
 
 # inject download package
 mkdir -p dl
-cp -r $PATCHES_SRC_DIR/library/* ./dl/
+cp -a $PATCHES_SRC_DIR/library/* ./dl/
 
 # --- Modify SSH Configuration (Dropbear -> 2222, OpenSSH -> 22) ---
 

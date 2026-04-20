@@ -16,7 +16,7 @@ source "$PARENT_DIR/custom_feeds_and_packages.sh"
 
 # ---------------------------------------------------------------feeds update---------------------------------------------------------------
 # 备份原始 feeds.conf.default
-cp feeds.conf.default feeds.conf.default.bak
+cp -a feeds.conf.default feeds.conf.default.bak
 
 # 删除 feeds.conf.default 中的注释行（以 # 开头）
 sed -i '/^#/d' feeds.conf.default
