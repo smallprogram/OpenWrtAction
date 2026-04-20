@@ -1,0 +1,43 @@
+#
+# Copyright (c) 2019-2026 smallprogram
+#
+# This is free software, licensed under the MIT License.
+# See /LICENSE for more information.
+#
+# https://github.com/smallprogram/OpenWrtAction
+# File: .github/workflows/Update_Checker.yml
+# Description: Source code update checker
+#
+
+name: Update_Checker
+
+on:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
+  schedule:
+    - cron: 0 0 * * 2,5
+      # 0 4 * * 5
+      # 0 4,12,20 * * *
+
+permissions:
+  contents: write
+  packages: write
+  actions: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: ghcr.io cleanup action
+      uses: dataaxiom/ghcr-cleanup-action@v1
+      with:
+        delete-untagged: true
+        delete-tags: '*'
+        packages: openwrt-*
+        expand-packages: true
+        token: ${{ secrets.MY_ADMIN_PAT }}
