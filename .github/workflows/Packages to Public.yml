@@ -1,0 +1,51 @@
+name: Packages to Public
+
+on:
+  workflow_dispatch:
+    inputs:
+      filter_name:
+        description: '输入要匹配的 Package 名字片段 (例如: openwrt-base-cache)'
+        required: true
+        default: 'openwrt-base-cache'
+
+jobs:
+  set-public:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Batch Update Package Visibility
+        run: |
+          # 定义匹配模式
+          FILTER="${{ github.event.inputs.filter_name }}"
+          echo "正在查找包含关键词 '$FILTER' 的容器镜像..."
+
+          # 1. 获取用户所有的 container 类型的 packages
+          # 注意：API 使用你定义的 MY_ADMIN_PAT
+          PACKAGES=$(curl -s -H "Authorization: Bearer ${{ secrets.MY_ADMIN_PAT }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/user/packages?package_type=container&per_page=100")
+
+          # 2. 筛选名字并循环修改
+          # 使用 jq 解析 JSON
+          MATCHED_NAMES=$(echo "$PACKAGES" | jq -r ".[] | select(.name | contains(\"$FILTER\")) | .name")
+
+          if [ -z "$MATCHED_NAMES" ]; then
+            echo "❌ 未找到匹配 '$FILTER' 的镜像。"
+            exit 0
+          fi
+
+          for NAME in $MATCHED_NAMES; do
+            echo "📦 正在处理: $NAME"
+            
+            # 执行 PATCH 请求将可见性改为 public
+            RESPONSE=$(curl -s -X PATCH \
+              -H "Authorization: Bearer ${{ secrets.MY_ADMIN_PAT }}" \
+              -H "Accept: application/vnd.github+json" \
+              -d '{"visibility":"public"}' \
+              "https://api.github.com/user/packages/container/$NAME")
+            
+            if echo "$RESPONSE" | grep -q "\"visibility\":\"public\""; then
+              echo "✅ $NAME 已成功设为 Public"
+            else
+              echo "⚠️ $NAME 修改可能失败，API 返回结果: $RESPONSE"
+            fi
+          done
