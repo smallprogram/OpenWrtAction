@@ -3,7 +3,7 @@
 # 获取所有需要host comile的目标
 # make -nw package/compile | grep -E "host-(compile|install)"
 
-build_toolchain=$1
+build_toolchain=${1:-0}
 # 定义你要编译的目标列表
 All_TARGETS=(
     "tools/compile"
