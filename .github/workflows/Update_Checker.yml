@@ -79,9 +79,10 @@ jobs:
 
     - name: ghcr.io cleanup action
       uses: dataaxiom/ghcr-cleanup-action@v1
+      continue-on-error: true
       with:
         delete-untagged: true
-        packages: openwrt-full-cache*
+        packages: openwrt-base-cache*
         expand-packages: true
         token: ${{ secrets.MY_ADMIN_PAT }}
         
