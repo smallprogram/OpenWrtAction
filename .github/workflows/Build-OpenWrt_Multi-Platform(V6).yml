@@ -592,7 +592,7 @@ jobs:
           path: openwrt/bin
 
   job_organize_tags:
-    needs: [job_init, job_source_init, job_generate_release_tag, job_build]
+    needs: [job_init, job_source_init, job_generate_release_tag, job_compile_and_upload]
     if: ${{ always() && !cancelled() }} 
     runs-on: ubuntu-latest
     name: Organize-Release-Tags
@@ -636,7 +636,7 @@ jobs:
 
   rerun-failed-jobs:
     runs-on: ubuntu-latest
-    needs: [job_init, job_source_init, job_generate_release_tag, job_build, job_organize_tags]
+    needs: [job_init, job_source_init, job_generate_release_tag, job_compile_and_upload, job_organize_tags]
     if: failure() && fromJSON(github.run_attempt) < 3  && !cancelled()
     steps:
       - name: Rerun failed jobs in the current workflow
