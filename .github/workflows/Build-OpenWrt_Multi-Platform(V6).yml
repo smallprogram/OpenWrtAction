@@ -271,7 +271,7 @@ jobs:
             echo "No changes to commit."
           fi
 
-  job_build:
+  job_compile_and_upload:
     needs: [job_init, job_source_init, job_generate_release_tag]
     runs-on: ${{ matrix.value.OS }}
     if: ${{ always() && !cancelled() }} 
@@ -566,73 +566,33 @@ jobs:
 
           echo "FIRMWARE=$firmware_path" >> $GITHUB_OUTPUT
 
-      - name: Upload Firmware Directory To Artifact
+      - name: Download Tags (For Release Body)
+        if: steps.organize.outcome == 'success' && steps.matrix_status.outputs.status != 'success'
+        uses: actions/download-artifact@v8
+        with:
+          name: release_tag
+          path: release_tag_download
+
+      - name: Upload Firmware To Release Directly
+        if: steps.organize.outcome == 'success' && steps.matrix_status.outputs.status != 'success'
+        uses: softprops/action-gh-release@v3
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
+          body_path: release_tag_download/release.txt
+          files: |
+            ${{ steps.organize.outputs.FIRMWARE }}/*
+
+      - name: Upload Firmware Directory To Artifact (Backup)
         uses: actions/upload-artifact@v7
         if: steps.organize.outcome == 'success' && env.UPLOAD_ARTIFACT == 'true' && steps.matrix_status.outputs.status != 'success' && !cancelled()
         with:
           name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
           path: ${{ steps.organize.outputs.FIRMWARE }}
 
-  job_upload_release:
-    needs: [job_init, job_source_init, job_generate_release_tag, job_build]
-    runs-on: ${{ matrix.value.OS }}
-    if: ${{ always() && !cancelled() }} 
-    strategy:
-      fail-fast: false
-      matrix:
-        include: ${{ fromJson(needs.job_init.outputs.platforms) }}
-    name: Upload-${{ matrix.source_code_platform }}-${{ matrix.platform }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-
-      - name: Matrix Status
-        id: matrix_status
-        run: |
-            chmod +x compile_script/matrix_job_status.sh
-            $GITHUB_WORKSPACE/compile_script/matrix_job_status.sh "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Upload-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
-
-      - name: Initialization Environment
-        id: init
-        if: steps.matrix_status.outputs.status != 'success'
-        run: |
-          sudo timedatectl set-timezone "$TZ"
-          cd $GITHUB_WORKSPACE
-          sudo mkdir -p release_download release_tag_download
-          sudo chown -R $USER:$GROUPS release_download release_tag_download
-          echo "release_dir=$PWD/release_download" >> $GITHUB_OUTPUT
-          echo "release_tag_dir=$PWD/release_tag_download" >> $GITHUB_OUTPUT
-
-      - name: Download Release From Artifacts
-        id : download
-        if: steps.matrix_status.outputs.status != 'success'
-        uses: actions/download-artifact@v8
-        with:
-          name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
-          path: ${{ steps.init.outputs.release_dir }}
-
-      - name: Download Tags
-        if: steps.matrix_status.outputs.status != 'success'
-        uses: actions/download-artifact@v8
-        with:
-          name: release_tag
-          path: ${{ steps.init.outputs.release_tag_dir }}
-
-      - name: Upload Firmware To Release
-        if: steps.matrix_status.outputs.status != 'success'
-        uses: softprops/action-gh-release@v3
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        with:
-          tag_name: ${{ needs.job_init.outputs.output_release_tag }}
-          body_path: ${{ steps.init.outputs.release_tag_dir }}/release.txt
-          files: |
-            ${{ steps.init.outputs.release_dir }}/*
-
   job_organize_tags:
-    needs: [job_init, job_source_init, job_generate_release_tag, job_build, job_upload_release]
+    needs: [job_init, job_source_init, job_generate_release_tag, job_build]
     if: ${{ always() && !cancelled() }} 
     runs-on: ubuntu-latest
     name: Organize-Release-Tags
@@ -676,7 +636,7 @@ jobs:
 
   rerun-failed-jobs:
     runs-on: ubuntu-latest
-    needs: [job_init, job_source_init, job_generate_release_tag, job_build, job_upload_release, job_organize_tags]
+    needs: [job_init, job_source_init, job_generate_release_tag, job_build, job_organize_tags]
     if: failure() && fromJSON(github.run_attempt) < 3  && !cancelled()
     steps:
       - name: Rerun failed jobs in the current workflow

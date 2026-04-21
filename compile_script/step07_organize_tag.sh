@@ -30,8 +30,8 @@ if [ -f "release.txt" ]; then
             break
         fi
 
-        # 过滤以 Upload- 开头的 jobs，并将结果添加到 jobs_data_file 中
-        echo "$jobs" | jq -c '.[] | select(.name | startswith("Upload-"))' >> "$jobs_data_file"
+        # 过滤以 Build- 开头的 jobs，并将结果添加到 jobs_data_file 中
+        echo "$jobs" | jq -c '.[] | select(.name | startswith("Build-"))' >> "$jobs_data_file"
 
         ((page++))  # 递增页码
         echo "Fetching page: $page"
@@ -42,7 +42,7 @@ if [ -f "release.txt" ]; then
 
     # 检查是否没有找到任何符合条件的 jobs
     if [[ ! -s "$jobs_data_file" ]]; then
-        echo "No jobs starting with 'Upload-' found."
+        echo "No jobs starting with 'Build-' found."
         echo "status=failure" >> $GITHUB_OUTPUT
     else
         all_jobs=$(jq -s '.' "$jobs_data_file")
