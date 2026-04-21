@@ -534,13 +534,6 @@ jobs:
               exit $MAKE_EXIT_CODE
           fi
 
-      - name: Upload Bin Directory To Artifact
-        uses: actions/upload-artifact@v7
-        if: steps.compile.outcome == 'success' && env.UPLOAD_BIN_DIR == 'true' && steps.matrix_status.outputs.status != 'success'
-        with:
-          name: OpenWrt_bin_${{ matrix.source_code_platform }}_${{ matrix.platform }}
-          path: openwrt/bin
-
       - name: Organize Files
         id: organize
         if: steps.compile.outcome == 'success' && env.UPLOAD_FIRMWARE == 'true' && steps.matrix_status.outputs.status != 'success' && !cancelled() 
@@ -590,6 +583,13 @@ jobs:
         with:
           name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
           path: ${{ steps.organize.outputs.FIRMWARE }}
+
+      - name: Upload Bin Directory To Artifact (Backup)
+        uses: actions/upload-artifact@v7
+        if: steps.compile.outcome == 'success' && env.UPLOAD_BIN_DIR == 'true' && steps.matrix_status.outputs.status != 'success' && !cancelled()
+        with:
+          name: OpenWrt_bin_${{ matrix.source_code_platform }}_${{ matrix.platform }}
+          path: openwrt/bin
 
   job_organize_tags:
     needs: [job_init, job_source_init, job_generate_release_tag, job_build]
