@@ -1,10 +1,11 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/88719d5a2755d1a52d3db8ed0e9c124928285f85...26ad297facc43e00c9b300758b382d570b763512)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/88719d5a2755d1a52d3db8ed0e9c124928285f85...0f99fcba6662ff840644f59782bce7d08d945916)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
+0f99fcba66|coolsnowwolf|Tue Apr 21 15:14:10 2026 +0800|luci-app-turboacc: adapt to qca nss ecm
 26ad297fac|coolsnowwolf|Tue Apr 21 09:58:35 2026 +0800|csstidy: Fix PKG_MIRROR_HASH for .xz change
 e4a0609edb|coolsnowwolf|Mon Apr 20 22:30:20 2026 +0800|luci-mod-status: add startOverviewRefresh cache
 fe397283a9|Internet1235|Mon Apr 20 21:12:26 2026 +0800|luci-app-qiyougamebooster: add package (#390)

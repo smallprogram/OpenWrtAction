@@ -1,11 +1,11 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/8a36dddc7807b6fbc1fb23a04db2524ea9a70c6b...e66abe82b62aa4376e66a8847072cca171a76591)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/8a36dddc7807b6fbc1fb23a04db2524ea9a70c6b...f35593989d7de767683b415ed6ba7ffda899b823)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-e66abe8|A-BO|Mon Apr 20 21:56:59 2026 +0800|luci: add manual fetch of `pinnedPeerCertSha256`
+f355939|A-BO|Mon Apr 20 21:56:59 2026 +0800|luci: add manual fetch of `pinnedPeerCertSha256`
 18b70e6|A-BO|Mon Apr 20 17:04:36 2026 +0800|luci: optimize the socks service startup logic
 ffbebca|handsomeji|Thu Apr 16 21:48:01 2026 +0800|luci: optimize subscribe
 </details>
