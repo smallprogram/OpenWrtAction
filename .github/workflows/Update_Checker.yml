@@ -98,4 +98,4 @@ jobs:
       with:
         token: ${{ github.token }}
         event-type: openwrt_source_update_v6
-        client-payload: '{"force_rebuild": ${{ steps.lifecycle_check.outputs.force_rebuild }} }'
+        client-payload: '{"force_rebuild": "${{ steps.lifecycle_check.outputs.force_rebuild }}"}'
