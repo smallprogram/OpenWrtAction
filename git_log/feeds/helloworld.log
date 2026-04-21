@@ -1,13 +1,10 @@
 <details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/900234b35d18d3635c55f879221d68b17b013823...14bb2b5ffccf733bfe054ca9ecbfa11e0723e52e)  
+#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/14bb2b5ffccf733bfe054ca9ecbfa11e0723e52e...ba36eb35240df90da6eb43e0c9a4f79081163194)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-14bb2b5|zxl hhyccc|Wed Apr 15 22:38:14 2026 +0800|Merge pull request #1938 from zxlhhyccc/tuic
-86fda9b|zxlhhyccc|Wed Apr 15 22:33:35 2026 +0800|luci-app-ssr-plus: optimize node user-agent config options
-c5b5609|zxl hhyccc|Sat Apr 11 23:49:37 2026 +0800|Merge pull request #1936 from zxlhhyccc/tuic
-e831f5a|zxlhhyccc|Sat Apr 11 13:26:52 2026 +0800|luci-app-ssr-plus: Fix UDP rules.
-c4bcbef|zxl hhyccc|Sat Apr 11 14:00:53 2026 +0800|naiveproxy: update to 147.0.7727.49-1
+ba36eb3|zxl hhyccc|Tue Apr 21 13:03:40 2026 +0800|Merge pull request #1939 from zxlhhyccc/tuic
+069e7a7|zxlhhyccc|Wed Apr 15 23:11:20 2026 +0800|luci-app-ssr-plus: add node domain specify DNS option
 </details>

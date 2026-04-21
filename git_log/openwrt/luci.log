@@ -1,14 +1,9 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/8a085e7980e010b888c3b1c4e3099c36d7a47f5e...66d3e55713c2649fe782ff6a8298d422d289d2cc)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/66d3e55713c2649fe782ff6a8298d422d289d2cc...3b7a68e5865f01c8e8aeead9d32f8d9911d968ea)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-66d3e55713|Daniel F. Dickinson|Sun Apr 12 09:53:21 2026 -0400|luci-app-radicale3: updates for Radicale 3.7.1
-4c5b5ef484|Dirk Brenken|Sat Apr 18 19:11:08 2026 +0200|luci-app-banip: update 1.8.6-2
-5109d24a27|Dirk Brenken|Fri Apr 17 09:59:11 2026 +0200|luci-app-adblock: release 4.5.5-1
-485787b87b|Dirk Brenken|Thu Apr 16 22:15:49 2026 +0200|luci-app-banip: release 1.8.6-1
-0c81d2dbc9|Hannu Nyman|Sat Apr 11 09:17:53 2026 +0300|treewide: backport translations from master
-3cefdb78b6|weicheng04|Fri Apr 10 16:46:05 2026 +0800|luci-mod-network: fix uci.remove() deleting entire radio section on wifi join
+3b7a68e586|Paul Donald|Mon Apr 20 14:45:56 2026 +0200|luci-mod: use built-in format for wifi hostname
 </details>
