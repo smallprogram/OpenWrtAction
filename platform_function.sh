@@ -335,12 +335,14 @@ Func_MakeToolchain() {
             Func_LogSuccess "OK，不执行单线程编译 " "OK, do not perform single-threaded compilation "
             sleep 1s
             # echo "PATH=$wsl_path"
+            PATH=$wsl_path make tools/compile -j$(nproc) $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile2_tools.log
             PATH=$wsl_path make toolchain/compile -j$(nproc) $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
             is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogSuccess "OK，执行单线程编译。" "OK, execute single-threaded compilation."
             Func_LogMessage "准备开始编译" "Ready to compile"
             sleep 1s
+            PATH=$wsl_path make tools/compile -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile2_tools.log
             PATH=$wsl_path make toolchain/compile -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
             is_complie_error=${PIPESTATUS[0]}
         fi
@@ -353,12 +355,14 @@ Func_MakeToolchain() {
             Func_LogSuccess "OK，不执行单线程编译 " "OK, do not perform single-threaded compilation "
             sleep 1s
             # echo "PATH=$wsl_path"
+            make tools/compile -j$(nproc) $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile2_tools.log
             make toolchain/compile -j$(nproc) $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
             is_complie_error=${PIPESTATUS[0]}
         else
             Func_LogSuccess "OK，执行单线程编译。" "OK, execute single-threaded compilation."
             Func_LogMessage "准备开始编译" "Ready to compile"
             sleep 1s
+            make tools/compile -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile2_tools.log
             make toolchain/compile -j1 $is_VS | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/log_Compile2_toolchain.log
             is_complie_error=${PIPESTATUS[0]}
         fi
