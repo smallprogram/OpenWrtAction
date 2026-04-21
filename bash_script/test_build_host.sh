@@ -3,7 +3,7 @@
 # 获取所有需要host comile的目标
 # make -nw package/compile | grep -E "host-(compile|install)"
 
-build_toolchain=${1:-0}
+build_toolchain=${1:-1}
 # 定义你要编译的目标列表
 All_TARGETS=(
     "tools/compile"
@@ -69,12 +69,28 @@ echo "# OpenWrt Build Time Report" > time.md
 echo "生成时间: $(date)" >> time.md
 echo "" >> time.md
 
-if [ $build_toolchain -eq 1 ]; then
-    TARGETS=("${TOOLCHAIN_TARGETS[@]}" "${LONG_TIME_TARGETS[@]}")
-
-else
-    TARGETS=("${LONG_TIME_TARGETS[@]}")
-fi
+case "$build_toolchain" in
+    1)
+        # 对应原来的 if [ $build_toolchain -eq 1 ]
+        echo "当前模式: 1 (编译 Toolchain)"
+        TARGETS=("${TOOLCHAIN_TARGETS[@]}")
+        ;;
+    2)
+        # 这里预留了选项 2 的逻辑
+        echo "当前模式: 2 (编译 耗时包)"
+        TARGETS=("${LONG_TIME_TARGETS[@]}")
+        ;;
+    3)
+        # 这里预留了选项 3 的逻辑
+        echo "当前模式: 3 (编译 Toolchain + 耗时包)"
+        TARGETS=("${TOOLCHAIN_TARGETS[@]}" "${LONG_TIME_TARGETS[@]}")
+        ;;
+    *)
+        # 对应原来的 else (当输入不是 1, 2, 3，或者是空值时的默认行为)
+        echo "1. 编译 Toolchain 2. 编译 耗时包 3. 编译 Toolchain + 耗时包 (默认)"
+        exit 0
+        ;;
+esac
 
 for target in "${TARGETS[@]}"; do
     echo "正在编译: $target ..."
