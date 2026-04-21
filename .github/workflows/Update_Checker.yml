@@ -75,7 +75,7 @@ jobs:
         delete_expired_data: 30
         delete_tags: true
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ github.token }}
 
     - name: ghcr.io cleanup action
       uses: dataaxiom/ghcr-cleanup-action@v1
@@ -90,5 +90,5 @@ jobs:
       if: steps.cacheHash.outputs.cache-hit != 'true'
       uses: peter-evans/repository-dispatch@main
       with:
-        token: ${{ secrets.MY_ADMIN_PAT }}
+        token: ${{ github.token }}
         event-type: openwrt_source_update_v6
