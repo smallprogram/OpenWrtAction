@@ -300,6 +300,7 @@ Func_Defconfig(){
 
     Func_LogMessage "开始执行make defconfig!" "Start to execute make defconfig!"
     sleep 1s
+    rm -rf tmp/
     make defconfig | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main3_make_defconfig-git_log.log
 
     cp -a /home/${user_name}/${openwrt_dir}/.config /home/${user_name}/${log_folder_name}/${folder_name}/.config_new
