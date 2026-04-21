@@ -87,10 +87,10 @@ jobs:
         token: ${{ secrets.MY_ADMIN_PAT }}
     
     - name: Stateful Lifecycle Check
-        id: lifecycle_check
-        run: |
-          chmod +x compile_script/check_lifecycle.sh
-          $GITHUB_WORKSPACE/compile_script/check_lifecycle.sh
+      id: lifecycle_check
+      run: |
+        chmod +x compile_script/check_lifecycle.sh
+        $GITHUB_WORKSPACE/compile_script/check_lifecycle.sh
         
     - name: Trigger build
       if: steps.cacheHash.outputs.cache-hit != 'true'
