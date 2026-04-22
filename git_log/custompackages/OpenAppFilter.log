@@ -1,9 +1,0 @@
-<details> <summary> <b>OpenAppFilter new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/destan19/OpenAppFilter/compare/307b69e37dee7cafa2c2ab0dd1cdf454344bb5b5...569f93bfd56afc3ae8c21f13fc973926ff6629a5)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-569f93b|destan19|Mon Apr 20 14:00:45 2026 +0800|1.Fixed an issue with the display of active user status in LuCI 2.Fixed a memory leak issue caused by remaining on the user list interface.
-</details>

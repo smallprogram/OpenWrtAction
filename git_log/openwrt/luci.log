@@ -1,9 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/66d3e55713c2649fe782ff6a8298d422d289d2cc...3b7a68e5865f01c8e8aeead9d32f8d9911d968ea)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-3b7a68e586|Paul Donald|Mon Apr 20 14:45:56 2026 +0200|luci-mod: use built-in format for wifi hostname
-</details>
