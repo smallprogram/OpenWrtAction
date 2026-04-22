@@ -501,7 +501,7 @@ jobs:
           fi
 
           echo "==== 2. 智能探测 Base 是否更新 ===="
-          CHANGED_BASE=$(find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker ! -path "*/stamp/*" 2>/dev/null | wc -l)
+          CHANGED_BASE=$(find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null | wc -l)
           if [ "$CHANGED_BASE" -eq 0 ]; then
               echo "🎉 Base 阶段命中旧缓存，跳过本次 Checkpoint 存档！"
               exit 0
