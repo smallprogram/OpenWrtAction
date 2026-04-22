@@ -478,7 +478,7 @@ jobs:
           # done
 
       - name: Checkpoint Cache (Save Base to GHCR)
-        if: steps.compile_base.outcome == 'success' && github.event.inputs.force_rebuild != 'true'
+        if: steps.matrix_status.outputs.status != 'success' && steps.compile_base.outcome == 'success'
         run: |
           echo "==== 1. 自动修剪冗余版本 ===="
           cd /workdir
