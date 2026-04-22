@@ -489,18 +489,9 @@ jobs:
       - name: Checkpoint Cache (Save Base to GHCR)
         if: steps.matrix_status.outputs.status != 'success' && steps.compile_base.outcome == 'success'
         run: |
-          echo "==== 1. 自动修剪冗余版本 ===="
+          echo "==== 1. 智能探测 Base 是否更新 ===="
           cd /workdir
-          for linux_dir in openwrt/build_dir/target-*/linux-*/; do
-              [ -d "$linux_dir" ] && (cd "$linux_dir" && ls -dt linux-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
-          done
-          [ -d "openwrt/build_dir" ] && (cd openwrt/build_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
-          if [ -d "openwrt/staging_dir" ]; then
-              (cd openwrt/staging_dir && ls -dt target-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
-              (cd openwrt/staging_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
-          fi
-
-          echo "==== 2. 智能探测 Base 是否更新 ===="
+          
           echo "--- marker mtime: $(stat -c %y /workdir/base_compilation_marker) ---"
           CHANGED_STAMP_FILES=$(find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null)
           echo "--- newer stamp files (should be empty if cache hit): ---"
@@ -511,6 +502,17 @@ jobs:
               exit 0
           fi
           echo "⚡ 检测到 $CHANGED_BASE 个新 stamp，触发缓存更新存档..."
+
+          echo "==== 2. 自动修剪冗余版本 ===="
+          
+          for linux_dir in openwrt/build_dir/target-*/linux-*/; do
+              [ -d "$linux_dir" ] && (cd "$linux_dir" && ls -dt linux-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+          done
+          [ -d "openwrt/build_dir" ] && (cd openwrt/build_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+          if [ -d "openwrt/staging_dir" ]; then
+              (cd openwrt/staging_dir && ls -dt target-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+              (cd openwrt/staging_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+          fi
 
           echo "==== 3. 高效打包与 5GB 分块 ===="
           cd /workdir/openwrt
