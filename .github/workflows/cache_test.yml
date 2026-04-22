@@ -37,7 +37,6 @@ env:
 
 jobs:
   job_source_init:
-    needs: job_init
     runs-on: ubuntu-latest
     name: Source-Init
     steps:
