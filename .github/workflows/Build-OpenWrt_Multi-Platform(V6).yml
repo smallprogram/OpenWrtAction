@@ -501,11 +501,16 @@ jobs:
           fi
 
           echo "==== 2. 智能探测 Base 是否更新 ===="
-          CHANGED_BASE=$(find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null | wc -l)
+          echo "--- marker mtime: $(stat -c %y /workdir/base_compilation_marker) ---"
+          CHANGED_STAMP_FILES=$(find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null)
+          echo "--- newer stamp files (should be empty if cache hit): ---"
+          echo "${CHANGED_STAMP_FILES:-<none>}"
+          CHANGED_BASE=$(echo "$CHANGED_STAMP_FILES" | grep -c . || true)
           if [ "$CHANGED_BASE" -eq 0 ]; then
               echo "🎉 Base 阶段命中旧缓存，跳过本次 Checkpoint 存档！"
               exit 0
           fi
+          echo "⚡ 检测到 $CHANGED_BASE 个新 stamp，触发缓存更新存档..."
 
           echo "==== 3. 高效打包与 5GB 分块 ===="
           cd /workdir/openwrt
