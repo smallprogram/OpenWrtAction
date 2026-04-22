@@ -89,8 +89,9 @@ Func_SyncCodeToGitLogTime(){
         '
         cd /home/${user_name}/${openwrt_dir}
     done
-
+    
     find /home/${user_name}/${openwrt_dir}/dl -type f | xargs -r touch -t 200001010000
+    Func_LogSuccess "-> 处理DL目录时间戳完成" "-> Git repository processing completed"
 }
 
 # 编译报错检查函数
