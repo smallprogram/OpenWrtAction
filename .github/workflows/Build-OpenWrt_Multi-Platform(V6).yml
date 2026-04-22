@@ -380,6 +380,20 @@ jobs:
           rm -rf download/output.tar.gz
           sudo chown -R $USER:$GROUPS /workdir/openwrt
 
+      - name: Load Configuration
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          [ -e ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config ] && cp -r ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config openwrt/.config
+          cd openwrt
+          make defconfig
+
+      - name: Download Package
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          cd $GITHUB_WORKSPACE/openwrt
+          make download -j8
+          find dl -size -1024c -exec rm -f {} \;
+
       - name: Git Restore Mtime (True SSoT)
         if: steps.matrix_status.outputs.status != 'success'
         run: |
@@ -411,35 +425,36 @@ jobs:
           IMAGE_NAME="ghcr.io/$REPO_OWNER/openwrt-base-cache-$PLATFORM_NAME:latest"
           
           if docker pull $IMAGE_NAME; then
-            echo "Cache found! Extracting entire directory..."
+            echo "==== 发现缓存，开始极速提取 ===="
+            cd /workdir
             docker create --name cache_container $IMAGE_NAME /bin/true
-            docker cp cache_container:/openwrt/build_dir /workdir/openwrt/ 2>/dev/null || true
-            docker cp cache_container:/openwrt/staging_dir /workdir/openwrt/ 2>/dev/null || true
+            
+            # 导出整个容器的打包文件
+            docker export cache_container > cache_exported.tar
             docker rm cache_container
-            sudo chown -R $USER:$GROUPS /workdir/openwrt/build_dir /workdir/openwrt/staging_dir 2>/dev/null || true
+            
+            # 直接提取原名分块
+            tar -xf cache_exported.tar --wildcards "op_cache_raw_*" || true
+            
+            if ls op_cache_raw_* 1> /dev/null 2>&1; then
+               echo "==== 按顺序合并分块并还原到 OpenWrt ===="
+               # 直接 cat 合并，极其清爽
+               cat op_cache_raw_* | tar -I "zstd -T0" -xf - -C /workdir/openwrt/
+               
+               rm -f /workdir/cache_exported.tar /workdir/op_cache_raw_*
+               echo "✅ 缓存合并恢复完成！"
+            else
+               echo "⚠️ 未找到有效缓存分块！"
+            fi
           else
             echo "No cache found on GHCR. This will be a clean build."
           fi
-
-      - name: Load Configuration
-        if: steps.matrix_status.outputs.status != 'success'
-        run: |
-          [ -e ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config ] && cp -r ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config openwrt/.config
-          cd openwrt
-          make defconfig
-
-      - name: Download Package
-        if: steps.matrix_status.outputs.status != 'success'
-        run: |
-          cd $GITHUB_WORKSPACE/openwrt
-          make download -j8
-          find dl -size -1024c -exec rm -f {} \;
      
       - name: SSH connection to Actions
         uses: mxschmitt/action-tmate@v3.23
         if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
-      - name: Compile Base (Tools, Toolchain, Kernel)
+      - name: Compile Base (Tools, Toolchain, Kernel, LongTime Packages)
         id: compile_base
         if: steps.matrix_status.outputs.status != 'success'
         run: |
@@ -452,10 +467,20 @@ jobs:
           echo "==== 3. 编译 Linux 内核 ===="
           make target/compile -j$(nproc) || exit 1
 
+          # echo "==== 4. 编译长期存在的包 ===="
+          # LONG_TIME_TARGETS=(
+          #     "package/feeds/packages/golang/host/compile"
+          #     "package/feeds/packages/rust/host/compile"
+          #     "package/feeds/packages/ruby/host/compile"
+          # )
+          # for target in "${LONG_TIME_TARGETS[@]}"; do
+          #     make $target -j$(nproc) || exit 1
+          # done
+
       - name: Checkpoint Cache (Save Base to GHCR)
         if: steps.compile_base.outcome == 'success' && github.event.inputs.force_rebuild != 'true'
         run: |
-          echo "==== 1. 自动修剪冗余版本 (build_dir + staging_dir) ===="
+          echo "==== 1. 自动修剪冗余版本 ===="
           cd /workdir
           for linux_dir in openwrt/build_dir/target-*/linux-*/; do
               [ -d "$linux_dir" ] && (cd "$linux_dir" && ls -dt linux-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
@@ -473,48 +498,39 @@ jobs:
               exit 0
           fi
 
-          echo "==== 3. 物理切片：精准构建 4 层缓存架构 ===="
-          # 创建四个切片图层目录
-          mkdir -p layer1/openwrt/build_dir layer1/openwrt/staging_dir
-          mkdir -p layer2/openwrt/build_dir layer2/openwrt/staging_dir
-          mkdir -p layer3/openwrt/build_dir layer3/openwrt/staging_dir
-          mkdir -p layer4/openwrt
+          echo "==== 3. 高效打包与 5GB 分块 ===="
+          cd /workdir/openwrt
+          # 使用 split 临时切片为 op_cache_raw_00, op_cache_raw_01... (每块最大 5000M)
+          tar -I "zstd -T0 -10" -cf - build_dir staging_dir | split -a 3 -d -b 5000M - /workdir/op_cache_raw_
 
-          # Layer 1: 最底层的工具链 (Toolchain, ~4.3G, 极少变动)
-          sudo cp -al openwrt/build_dir/toolchain-* ./layer1/openwrt/build_dir/ 2>/dev/null || true
-          sudo cp -al openwrt/staging_dir/toolchain-* ./layer1/openwrt/staging_dir/ 2>/dev/null || true
-
-          # Layer 2: 宿主机工具 (Host, ~1.9G, 偶尔变动)
-          sudo cp -al openwrt/build_dir/host ./layer2/openwrt/build_dir/ 2>/dev/null || true
-          sudo cp -al openwrt/staging_dir/host ./layer2/openwrt/staging_dir/ 2>/dev/null || true
-
-          # Layer 3: 内核与目标平台 (Target, ~2.6G, 容易变动)
-          sudo cp -al openwrt/build_dir/target-* ./layer3/openwrt/build_dir/ 2>/dev/null || true
-          sudo cp -al openwrt/staging_dir/target-* ./layer3/openwrt/staging_dir/ 2>/dev/null || true
-
-          # Layer 4: 剩余零碎的元数据与标记 (Catch-all, 体积极小)
-          sudo rsync -a --exclude="toolchain-*" --exclude="host" --exclude="target-*" openwrt/build_dir/ layer4/openwrt/build_dir/
-          sudo rsync -a --exclude="toolchain-*" --exclude="host" --exclude="target-*" openwrt/staging_dir/ layer4/openwrt/staging_dir/
-
-          echo "==== 4. 生成极简 Dockerfile ===="
+          echo "==== 4. 批量重命名并创建 Layer 隔离目录 ===="
+          cd /workdir
+          echo "FROM scratch" > Dockerfile
+          
+          # 遍历默认分块，并分配到独立的 layerN 文件夹中
+          count=1
+          for f in op_cache_raw_*; do
+              layer_dir="layer$count"
+              
+              mkdir -p "$layer_dir"
+              # 直接把原文件扔进 layer 文件夹，不改名！
+              mv "$f" "$layer_dir/"
+              
+              echo "COPY $layer_dir /" >> Dockerfile
+              count=$((count + 1))
+          done
+          
+          echo "==== 5. 开始构建与推送多层镜像 ===="
           REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
           PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
           IMAGE_NAME="ghcr.io/$REPO_OWNER/openwrt-base-cache-$PLATFORM_NAME:latest"
 
-          # 按照变动频率，从最稳定到最不稳定依次 COPY
-          echo "FROM alpine:latest" > Dockerfile
-          echo "COPY layer1 /" >> Dockerfile
-          echo "COPY layer2 /" >> Dockerfile
-          echo "COPY layer3 /" >> Dockerfile
-          echo "COPY layer4 /" >> Dockerfile
-          
-          echo "==== 5. 开始构建与推送 ===="
           docker build -t $IMAGE_NAME .
           docker push $IMAGE_NAME
           
-          # 清理临时图层目录，释放工作区空间
-          sudo rm -rf layer1 layer2 layer3 layer4 Dockerfile
-          echo "✅ Base 缓存切片并更新完毕！"
+          # 清理临时数据文件
+          rm -rf layer* Dockerfile
+          echo "✅ 分块多层缓存推送完毕！"
 
       - name: Compile Packages and Firmware
         id: compile
