@@ -247,20 +247,14 @@ jobs:
                rm -f /workdir/cache_exported.tar /workdir/op_cache_raw_*
                echo "✅ 缓存合并恢复完成！"
 
-               echo "==== 刷新 stamp 时间戳（防止 dl/ 源码包比 stamp 新导致重编译）===="
+               echo "==== 回拨 dl/ 时间戳===="
+               # （防止新下载的 tarball 比缓存 stamp 更新导致重编译）
                # OpenWrt stamp 依赖链：.installed→.built→.configured→.preparedXXX→dl/source.tar.gz
-               # dl/ 里的 tarball 是刚刚 make download 下载的（时间=现在），而 stamp 是旧缓存时间，
-               # make 看到 dl/ 比 stamp 新就会重编。touch 所有 stamp 文件到当前时间即可解决。
-               # 先 touch _check 文件（先决条件），再 touch 主 stamp（让主 stamp >= check），
-               # GNU make 仅在前提严格 > 目标时才重建，相等则不重建。
-               find /workdir/openwrt/build_dir -type f -name "*_check" | xargs -r touch
-               find /workdir/openwrt/build_dir -type f \( \
-                   -name ".prepared*" -o \
-                   -name ".configured*" -o \
-                   -name ".built*" -o \
-                   -name ".installed*" \
-               \) | xargs -r touch
-               echo "✅ stamp 时间戳刷新完成！"
+               # make download 每次都会重新下载 tarball，mtime = 现在，而缓存 stamp 时间是过去，
+               # make 看到 dl/ 比 stamp 新就会重编。将 dl/ 所有文件回拨到远古时间即可解决。
+               # PKG_HASH 若真的变了，stamp 文件名（含 hash）也变了，旧 stamp 不匹配，仍会正常重编。
+               find /workdir/openwrt/dl -type f | xargs -r touch -t 200001010000
+               echo "✅ dl/ 时间戳回拨完成！"
             else
                echo "⚠️ 未找到有效缓存分块！"
             fi

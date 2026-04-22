@@ -67,3 +67,40 @@ time make toolchain/compile -j$(nproc)
 time make target/compile -j$(nproc)
 
 ```
+
+
+## 本地测试缓存,编译目录执行
+
+```
+
+rm -rf ../immcache/
+
+tar -I "zstd -T0 -10" -cf - build_dir staging_dir | split -a 3 -d -b 5000M - ../immcache/op_cache_raw_
+
+if ls immcache/op_cache_raw_* 1> /dev/null 2>&1; then    
+   echo "==== 按顺序合并分块并释放到当前目 录 ====";    
+   cat immcache/op_cache_raw_* | tar -I "zstd -T0" -xf -; 
+   rm -rf immcache;    
+   echo "✅ 缓存合并恢复完成！"; 
+else    
+   echo "⚠️ 未找到有效缓存分块！";    
+   rm -rf immcache;    exit 1; 
+fi
+
+
+cat ../immcache/op_cache_raw_* | tar -I "zstd -T0" -xf -
+
+time make tools/compile -j$(nproc)
+time make toolchain/compile -j$(nproc)
+
+
+for linux_dir in build_dir/target-*/linux-*/; do
+   [ -d "$linux_dir" ] && (cd "$linux_dir" && ls -dt linux-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+done
+[ -d "build_dir" ] && (cd build_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+if [ -d "staging_dir" ]; then
+   (cd staging_dir && ls -dt target-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+   (cd staging_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+fi
+
+```
