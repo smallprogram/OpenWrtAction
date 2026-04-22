@@ -75,7 +75,6 @@ Func_SyncCodeToGitLogTime(){
     cd /home/${user_name}/${openwrt_dir}
     find . -name ".git" -type d | while read gitdir; do
         repo_dir=$(dirname "$gitdir")
-        echo "-> 正在处理 Git 仓库: $repo_dir"
         Func_LogSuccess "-> 正在处理 Git 仓库:${repo_dir}" "-> Processing Git repository:${repo_dir}"
         cd "/home/${user_name}/${openwrt_dir}/$repo_dir"
         git log --format=%at --name-only | perl -ane '
