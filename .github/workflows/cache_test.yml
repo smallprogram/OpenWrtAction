@@ -233,7 +233,7 @@ jobs:
         id: restore_cache
         run: |
           REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
-          PLATFORM_NAME=$(echo "immortalwrt-test" | tr '[:upper:]' '[:lower:]')
+          PLATFORM_NAME=$(echo "immortalwrt-x86" | tr '[:upper:]' '[:lower:]')
           IMAGE_NAME="ghcr.io/$REPO_OWNER/openwrt-base-cache-$PLATFORM_NAME:latest"
           
           if docker pull $IMAGE_NAME; then
@@ -329,7 +329,7 @@ jobs:
           
           echo "==== 5. 开始构建与推送多层镜像 ===="
           REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
-          PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
+          PLATFORM_NAME=$(echo "immortalwrt-x86" | tr '[:upper:]' '[:lower:]')
           IMAGE_NAME="ghcr.io/$REPO_OWNER/openwrt-base-cache-$PLATFORM_NAME:latest"
 
           docker build -t $IMAGE_NAME .
