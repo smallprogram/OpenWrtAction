@@ -394,7 +394,7 @@ jobs:
           make download -j8
           find dl -size -1024c -exec rm -f {} \;
 
-      - name: Git Restore Mtime (True SSoT)
+      - name: Git Restore Mtime (True SSoT) And DL Restore Time
         if: steps.matrix_status.outputs.status != 'success'
         run: |
           cd /workdir/openwrt
@@ -415,6 +415,15 @@ jobs:
               '
               cd /workdir/openwrt
           done
+
+          echo "==== 回拨 dl/ 时间戳===="
+          # （防止新下载的 tarball 比缓存 stamp 更新导致重编译）
+          # OpenWrt stamp 依赖链：.installed→.built→.configured→.preparedXXX→dl/source.tar.gz
+          # make download 每次都会重新下载 tarball，mtime = 现在，而缓存 stamp 时间是过去，
+          # make 看到 dl/ 比 stamp 新就会重编。将 dl/ 所有文件回拨到远古时间即可解决。
+          # PKG_HASH 若真的变了，stamp 文件名（含 hash）也变了，旧 stamp 不匹配，仍会正常重编。
+          find /workdir/openwrt/dl -type f | xargs -r touch -t 200001010000
+          echo "✅ dl/ 时间戳回拨到 2000-01-01 00:00 完成！"
 
       - name: Restore Entire OpenWrt Cache from GHCR
         id: restore_cache
@@ -443,15 +452,6 @@ jobs:
                
                rm -f /workdir/cache_exported.tar /workdir/op_cache_raw_*
                echo "✅ 缓存合并恢复完成！"
-
-               echo "==== 回拨 dl/ 时间戳===="
-               # （防止新下载的 tarball 比缓存 stamp 更新导致重编译）
-               # OpenWrt stamp 依赖链：.installed→.built→.configured→.preparedXXX→dl/source.tar.gz
-               # make download 每次都会重新下载 tarball，mtime = 现在，而缓存 stamp 时间是过去，
-               # make 看到 dl/ 比 stamp 新就会重编。将 dl/ 所有文件回拨到远古时间即可解决。
-               # PKG_HASH 若真的变了，stamp 文件名（含 hash）也变了，旧 stamp 不匹配，仍会正常重编。
-               find /workdir/openwrt/dl -type f | xargs -r touch -t 200001010000
-               echo "✅ dl/ 时间戳回拨到 2000-01-01 00:00 完成！"
             else
                echo "⚠️ 未找到有效缓存分块！"
             fi

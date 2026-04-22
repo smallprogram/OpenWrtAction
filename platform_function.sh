@@ -89,6 +89,8 @@ Func_SyncCodeToGitLogTime(){
         '
         cd /home/${user_name}/${openwrt_dir}
     done
+
+    find /home/${user_name}/${openwrt_dir}/dl -type f | xargs -r touch -t 200001010000
 }
 
 # 编译报错检查函数
@@ -482,11 +484,11 @@ Func_Compile_Firmware() {
 
     Func_Copy_Backgroundfiles "1" "${config_name}"
 
-    Func_SyncCodeToGitLogTime
-
     Func_Defconfig "$inject_from_source"
     
     Func_MakeDownload
+
+    Func_SyncCodeToGitLogTime
 
     Func_MakeToolchain
 
@@ -774,11 +776,12 @@ Func_Main() {
             done
 
             if [[ $num_continue == 1 ]]; then
-                Func_SyncCodeToGitLogTime
-
+                
                 Func_Defconfig "false"
                 
                 Func_MakeDownload
+
+                Func_SyncCodeToGitLogTime
 
                 Func_MakeToolchain
 
@@ -873,13 +876,13 @@ Func_Main() {
         done
 
         if [[ $num_continue == 1 ]]; then
-            Func_SyncCodeToGitLogTime
-            
             Func_Copy_Backgroundfiles "1" "${config_name}"
 
             Func_Defconfig "true"
             
             Func_MakeDownload
+
+            Func_SyncCodeToGitLogTime
 
             Func_MakeToolchain
 
