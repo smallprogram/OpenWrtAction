@@ -492,15 +492,22 @@ jobs:
           echo "==== 1. 智能探测 Base 是否更新 ===="
           cd /workdir
           
-          echo "--- marker mtime: $(stat -c %y /workdir/base_compilation_marker) ---"
-          CHANGED_STAMP_FILES=$(find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null)
-          echo "--- newer stamp files (should be empty if cache hit): ---"
-          echo "${CHANGED_STAMP_FILES:-<none>}"
-          CHANGED_BASE=$(echo "$CHANGED_STAMP_FILES" | grep -c . || true)
+          # 严谨的正则过滤：
+          # 1. 必须在 staging_dir/host/stamp/ 目录下，且以 .tools_compile_ 开头
+          # 2. 必须在 staging_dir/target-*/stamp/ 目录下，且名字严格叫 .target_prereq
+          
+          CHANGED_BASE=$(find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null | \
+                          grep -E -v "staging_dir/host/stamp/\.tools_compile_|staging_dir/target-[^/]+/stamp/\.target_prereq$" | \
+                          wc -l)
+
+          echo "--- Found $CHANGED_BASE newer stamp files ---"
+
           if [ "$CHANGED_BASE" -eq 0 ]; then
               echo "🎉 Base 阶段命中旧缓存，跳过本次 Checkpoint 存档！"
               exit 0
           fi
+
+
           echo "⚡ 检测到 $CHANGED_BASE 个新 stamp，触发缓存更新存档..."
 
           echo "==== 2. 自动修剪冗余版本 ===="
