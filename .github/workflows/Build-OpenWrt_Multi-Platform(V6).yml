@@ -561,11 +561,15 @@ jobs:
 
           docker build -t $IMAGE_NAME .
           docker push $IMAGE_NAME
-          docker rmi $IMAGE_NAME -f
-          
-          # 清理临时数据文件
-          rm -rf layer* Dockerfile
           echo "✅ 分块多层缓存推送完毕！"
+
+          # 清理临时数据文件
+          echo "==== 6. 清理临时数据文件 ===="
+          rm -rf layer* Dockerfile
+          docker rmi $IMAGE_NAME -f
+          docker builder prune -a -f
+          docker system prune -a -f
+          echo "✅ 清理临时数据文件完毕！"
           df -hT
 
       - name: Compile Packages and Firmware

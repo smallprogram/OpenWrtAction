@@ -56,7 +56,7 @@ echo "=== 5. 开始智能编译 ===="
 # 加上 V=s 可以更清晰地看到它是瞬间跳过了编译步骤
 time make tools/compile -j$(nproc)
 time make toolchain/compile -j$(nproc)
-time make target/compile -j$(nproc)
+#time make target/compile -j$(nproc)
 LONG_TIME_TARGETS=(
     "package/feeds/packages/golang/host/compile"
     "package/feeds/packages/rust/host/compile"
