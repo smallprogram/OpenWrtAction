@@ -294,6 +294,7 @@ jobs:
             # 导出整个容器的打包文件
             docker export cache_container > cache_exported.tar
             docker rm cache_container
+            docker rmi $IMAGE_NAME -f
             
             # 直接提取原名分块
             tar -xf cache_exported.tar --wildcards "op_cache_raw_*" || true
@@ -399,6 +400,7 @@ jobs:
 
           docker build -t $IMAGE_NAME .
           docker push $IMAGE_NAME
+          docker rmi $IMAGE_NAME -f
           
           # 清理临时数据文件
           rm -rf layer* Dockerfile
