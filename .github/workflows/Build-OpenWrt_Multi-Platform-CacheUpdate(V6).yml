@@ -1,0 +1,418 @@
+#
+# Copyright (c) 2022-2026 SMALLPROGRAM <https://github.com/smallprogram/OpenWrtAction>
+#
+# This is free software, licensed under the MIT License.
+# See /LICENSE for more information.
+#
+# https://github.com/smallprogram/OpenWrtAction
+# Description: Build OpenWrt using GitHub Actions
+#
+
+name: Build-OpenWrt_Multi-Platform-CacheUpdate(V6)
+
+on:
+  repository_dispatch:
+    types: [openwrt_cache_update_v6]
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
+      force_rebuild:
+        description: 'Build from scratch'
+        required: false
+        type: boolean
+        default: false
+  schedule:
+    - cron: 0 22 * * 3,6
+
+permissions:
+  contents: write
+  packages: write
+  actions: write # 允许脚本去触发重试工作流
+
+env:
+  UPLOAD_BIN_DIR: false
+  UPLOAD_FIRMWARE: true
+  UPLOAD_ARTIFACT: true
+  UPLOAD_RELEASE: true
+  TZ: Asia/Shanghai
+
+jobs:
+  job_init: 
+    runs-on: ubuntu-latest
+    name: Init
+    outputs:
+      platforms: ${{ steps.read-platforms.outputs.matrix }}
+      platforms_source: ${{ steps.read-platforms.outputs.source_matrix_json }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Read Platforms From File
+        id: read-platforms
+        run: |
+          bash compile_script/platforms.sh
+  
+  job_source_init:
+    needs: job_init
+    runs-on: ${{ matrix.value.OS }}
+    name: Source-Init-${{ matrix.source_code_platform }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.job_init.outputs.platforms_source) }}
+    steps:
+      - name: Init System
+        id: init
+        run: |
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown -R $USER:$GROUPS /workdir
+          cd /workdir
+          sudo mkdir -p output
+          sudo chown -R $USER:$GROUPS /workdir/output
+          ln -sf /workdir/output $GITHUB_WORKSPACE/output
+          df -hT
+
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Clone Source Code
+        working-directory: /workdir
+        run: |
+          git clone -b ${{matrix.value.REPO_BRANCH}} --single-branch ${{ matrix.value.REPO_URL }} openwrt
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+
+      - name: Run DIY Part 1 Script
+        run: |
+          chmod +x ${{ matrix.value.DIY_P1_SH }}
+          cd openwrt
+          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P1_SH }}
+          echo "feeds_Conf:------------------------"
+          cat feeds.conf.default
+
+      - name: Update Feeds
+        run: cd openwrt && ./scripts/feeds update -a
+
+      - name: Install Feeds
+        run: cd openwrt && ./scripts/feeds install -a
+
+      - name: Run DIY Part 2 Script
+        run: |
+          chmod +x ${{ matrix.value.DIY_P2_SH }}
+          cd openwrt
+          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
+
+      - name: Generate Source Packages
+        working-directory: /workdir
+        id: generate_image
+        run: |
+          tar -czf output/output.tar.gz openwrt/
+          echo "SOURCE_PATH=$PWD" >> $GITHUB_OUTPUT
+
+      - name: Upload Source To Artifact
+        uses: actions/upload-artifact@v7
+        if: steps.generate_image.outcome == 'success'
+        with:
+          name: Source_${{ matrix.source_code_platform }}
+          path: ${{ steps.generate_image.outputs.SOURCE_PATH }}/output/output.tar.gz
+          retention-days: 5
+
+  job_cache_compile_and_upload:
+    needs: [job_init, job_source_init]
+    runs-on: ${{ matrix.value.OS }}
+    if: ${{ always() && !cancelled() }} 
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJson(needs.job_init.outputs.platforms) }}
+    name: Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Matrix Status
+        id: matrix_status
+        run: |
+            chmod +x compile_script/matrix_job_status.sh
+            $GITHUB_WORKSPACE/compile_script/matrix_job_status.sh "${{ github.token }}" "${{ github.repository }}" "${{ github.run_id }}" "${{ fromJSON(github.run_attempt) }}" "Build-${{ matrix.source_code_platform }}-${{ matrix.platform }}"
+
+      - name: Server Info
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+            echo "---------------------CPU Info--------------------"
+            lscpu
+            echo "---------------------RAM Info--------------------"
+            free -h
+
+      - name: Initialization Environment
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          sudo timedatectl set-timezone "$TZ"
+          sudo mkdir -p /workdir
+          sudo chown -R $USER:$GROUPS /workdir
+          df -hT
+  
+      - name: Maximize Build Space
+        uses: smallprogram/maximize-build-diskspace@main
+        if: steps.matrix_status.outputs.status != 'success'
+        with:
+          root-reserve-mb: 3072
+          swap-size-mb: 4096
+          remove-dotnet: 'true'
+          remove-android: 'true'
+          remove-haskell: 'true'
+          remove-codeql: 'true'
+          remove-docker-images: 'true'
+          build-mount-path: '/workdir'
+          
+      - name: Install Packages
+        if: steps.matrix_status.outputs.status != 'success'
+        env:
+          DEBIAN_FRONTEND: noninteractive
+        run: |
+          sudo -E apt-get -qq update
+          sudo -E apt-get -qq install $(curl -fsSL https://github.com/smallprogram/OpenWrtAction/raw/main/diy_script/${{ matrix.source_code_platform }}_dependence)
+          sudo timedatectl set-timezone "$TZ"
+
+      - name: Initialization Directory
+        working-directory: /workdir
+        id: init_directory
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          sudo mkdir -p openwrt
+          sudo mkdir -p download
+          sudo chown -R $USER:$GROUPS /workdir/openwrt
+          sudo chown -R $USER:$GROUPS /workdir/download
+          ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+          ln -sf /workdir/download $GITHUB_WORKSPACE/download
+
+      - name: Relocate Docker to /workdir
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          echo "==== 1. 停止 Docker 服务 ===="
+          sudo systemctl stop docker
+          echo "==== 2. 迁移 Docker 数据目录到宽敞的 /workdir ===="
+          sudo mkdir -p /workdir/docker
+          echo '{"data-root": "/workdir/docker"}' | sudo tee /etc/docker/daemon.json
+          echo "==== 3. 重启 Docker 服务 ===="
+          sudo systemctl start docker
+          echo "==== 4. 验证迁移是否成功 ===="
+          docker info | grep "Docker Root Dir"
+
+      - name: Login to GitHub Container Registry
+        if: steps.matrix_status.outputs.status != 'success'
+        uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ github.token }}
+
+      - name: Download Source From Artifacts
+        id : download
+        if: steps.matrix_status.outputs.status != 'success'
+        uses: actions/download-artifact@v8
+        with:
+          name: Source_${{ matrix.source_code_platform }}
+          path: download
+      
+      - name: Extract Pristine Source
+        if: steps.matrix_status.outputs.status != 'success'
+        working-directory: /workdir
+        run: |
+          tar -xzf download/output.tar.gz
+          rm -rf download/output.tar.gz
+          sudo chown -R $USER:$GROUPS /workdir/openwrt
+
+      - name: Load Configuration
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          [ -e ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config ] && cp -r ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config openwrt/.config
+          cd openwrt
+          make defconfig
+
+      - name: Download Package
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          cd $GITHUB_WORKSPACE/openwrt
+          make download -j8
+          find dl -size -1024c -exec rm -f {} \;
+
+      - name: Git Restore Mtime (True SSoT) And DL Restore Time
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          cd /workdir/openwrt
+          echo "==== 遍历所有 Git 仓库并精准还原真实提交时间 ===="
+          find . -name ".git" -type d | while read gitdir; do
+              repo_dir=$(dirname "$gitdir")
+              echo "-> 正在处理 Git 仓库: $repo_dir"
+              cd "/workdir/openwrt/$repo_dir"
+              git log --format=%at --name-only | perl -ane '
+                if (/^(\d+)$/) { $t = $1; }
+                elsif (/^(\S+)$/) {
+                  $f = $1;
+                  if (-e $f && !-d $f && !$seen{$f}) {
+                    utime($t, $t, $f);
+                    $seen{$f} = 1;
+                  }
+                }
+              '
+              cd /workdir/openwrt
+          done
+
+          echo "==== 回拨 dl/ 时间戳===="
+          # （防止新下载的 tarball 比缓存 stamp 更新导致重编译）
+          # OpenWrt stamp 依赖链：.installed→.built→.configured→.preparedXXX→dl/source.tar.gz
+          # make download 每次都会重新下载 tarball，mtime = 现在，而缓存 stamp 时间是过去，
+          # make 看到 dl/ 比 stamp 新就会重编。将 dl/ 所有文件回拨到远古时间即可解决。
+          # PKG_HASH 若真的变了，stamp 文件名（含 hash）也变了，旧 stamp 不匹配，仍会正常重编。
+          find /workdir/openwrt/dl -type f | xargs -r touch -t 200001010000
+          echo "✅ dl/ 时间戳回拨到 2000-01-01 00:00 完成！"
+
+      - name: Restore Entire OpenWrt Cache from GHCR
+        id: restore_cache
+        if: steps.matrix_status.outputs.status != 'success' && github.event.inputs.force_rebuild != 'true'
+        run: |
+          REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
+          IMAGE_NAME="ghcr.io/$REPO_OWNER/openwrt-base-cache-$PLATFORM_NAME:latest"
+          
+          if docker pull $IMAGE_NAME; then
+            echo "==== 发现缓存，开始极速提取 ===="
+            cd /workdir
+            docker create --name cache_container $IMAGE_NAME /bin/true
+            
+            # 导出整个容器的打包文件
+            docker export cache_container > cache_exported.tar
+            docker rm cache_container
+            
+            # 直接提取原名分块
+            tar -xf cache_exported.tar --wildcards "op_cache_raw_*" || true
+            
+            if ls op_cache_raw_* 1> /dev/null 2>&1; then
+               echo "==== 按顺序合并分块并还原到 OpenWrt ===="
+               # 直接 cat 合并，极其清爽
+               cat op_cache_raw_* | tar -I "zstd -T0" -xf - -C /workdir/openwrt/
+               
+               rm -f /workdir/cache_exported.tar /workdir/op_cache_raw_*
+               echo "✅ 缓存合并恢复完成！"
+            else
+               echo "⚠️ 未找到有效缓存分块！"
+            fi
+          else
+            echo "No cache found on GHCR. This will be a clean build."
+          fi
+
+      - name: Compile Base (Tools, Toolchain, Kernel, LongTime Packages)
+        id: compile_base
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          cd openwrt
+          touch /workdir/base_compilation_marker
+          echo "==== 1. 编译系统工具 ===="
+          make tools/compile -j$(nproc) || exit 1
+          echo "==== 2. 编译交叉工具链 ===="
+          make toolchain/compile -j$(nproc) || exit 1
+          echo "==== 3. 编译 Linux 内核 ===="
+          make target/compile -j$(nproc) || exit 1
+
+          echo "==== 4. 编译长期存在的包 ===="
+          LONG_TIME_TARGETS=(
+              "package/feeds/packages/golang/host/compile"
+              "package/feeds/packages/rust/host/compile"
+              "package/feeds/packages/ruby/host/compile"
+          )
+          for target in "${LONG_TIME_TARGETS[@]}"; do
+              make $target -j$(nproc) || exit 1
+          done
+
+      - name: Checkpoint Cache (Save Base to GHCR)
+        if: steps.matrix_status.outputs.status != 'success' && steps.compile_base.outcome == 'success'
+        run: |
+          echo "==== 1. 智能探测 Base 是否更新 ===="
+          cd /workdir
+          
+          # 严谨的正则过滤：
+          # 1. 必须在 staging_dir/host/stamp/ 目录下，且以 .tools_compile_ 开头
+          # 2. 必须在 staging_dir/target-*/stamp/ 目录下，且名字严格叫 .target_prereq
+          
+          CHANGED_BASE=$(find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null | \
+                          grep -E -v "staging_dir/host/stamp/\.tools_compile_|staging_dir/target-[^/]+/stamp/\.target_prereq$" | \
+                          wc -l)
+
+          echo "--- Found $CHANGED_BASE newer stamp files ---"
+
+          if [ "$CHANGED_BASE" -eq 0 ]; then
+              echo "🎉 Base 阶段命中旧缓存，跳过本次 Checkpoint 存档！"
+              exit 0
+          fi
+
+
+          echo "⚡ 检测到 $CHANGED_BASE 个新 stamp，触发缓存更新存档..."
+
+          echo "==== 2. 自动修剪冗余版本 ===="
+          
+          for linux_dir in openwrt/build_dir/target-*/linux-*/; do
+              [ -d "$linux_dir" ] && (cd "$linux_dir" && ls -dt linux-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+          done
+          [ -d "openwrt/build_dir" ] && (cd openwrt/build_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+          if [ -d "openwrt/staging_dir" ]; then
+              (cd openwrt/staging_dir && ls -dt target-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+              (cd openwrt/staging_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+          fi
+
+          echo "==== 3. 高效打包与 5GB 分块 ===="
+          cd /workdir/openwrt
+          # 使用 split 临时切片为 op_cache_raw_00, op_cache_raw_01... (每块最大 5000M)
+          tar -I "zstd -T0 -10" -cf - build_dir staging_dir | split -a 3 -d -b 5000M - /workdir/op_cache_raw_
+
+          echo "==== 4. 批量重命名并创建 Layer 隔离目录 ===="
+          cd /workdir
+          echo "FROM scratch" > Dockerfile
+          
+          # 遍历默认分块，并分配到独立的 layerN 文件夹中
+          count=1
+          for f in op_cache_raw_*; do
+              layer_dir="layer$count"
+              
+              mkdir -p "$layer_dir"
+              # 直接把原文件扔进 layer 文件夹，不改名！
+              mv "$f" "$layer_dir/"
+              
+              echo "COPY $layer_dir /" >> Dockerfile
+              count=$((count + 1))
+          done
+          
+          echo "==== 5. 开始构建与推送多层镜像 ===="
+          REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
+          IMAGE_NAME="ghcr.io/$REPO_OWNER/openwrt-base-cache-$PLATFORM_NAME:latest"
+
+          docker build -t $IMAGE_NAME .
+          docker push $IMAGE_NAME
+          
+          # 清理临时数据文件
+          rm -rf layer* Dockerfile
+          echo "✅ 分块多层缓存推送完毕！"
+
+  rerun-failed-jobs:
+    runs-on: ubuntu-latest
+    needs: [job_init, job_source_init, job_cache_compile_and_upload]
+    if: failure() && fromJSON(github.run_attempt) < 3  && !cancelled()
+    steps:
+      - name: Rerun failed jobs in the current workflow
+        env:
+          GH_REPO: ${{ github.repository }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "Retry failed jobs for the ${{ fromJSON(github.run_attempt) }} time, Retry 3 times in total"
+          gh workflow run Retry_Failure_Jobs.yml -F run_id=${{ github.run_id }}
