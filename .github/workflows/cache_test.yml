@@ -107,7 +107,7 @@ jobs:
     needs: [job_source_init]
     runs-on: ubuntu-latest
     if: ${{ always() && !cancelled() }} 
-    name: Build-
+    name: Build-Cache-Test
 
     steps:
       - name: Checkout
@@ -268,9 +268,9 @@ jobs:
           cd openwrt
           touch /workdir/base_compilation_marker
           echo "==== 1. 编译系统工具 ===="
-          make tools/compile -j$(nproc) || exit 1
+          time make tools/compile -j$(nproc) || exit 1
           echo "==== 2. 编译交叉工具链 ===="
-          make toolchain/compile -j$(nproc) || exit 1
+          time make toolchain/compile -j$(nproc) || exit 1
           echo "==== 3. 编译 Linux 内核 ===="
           make target/compile -j$(nproc) || exit 1
 
@@ -281,7 +281,7 @@ jobs:
               "package/feeds/packages/ruby/host/compile"
           )
           for target in "${LONG_TIME_TARGETS[@]}"; do
-              make $target -j$(nproc) || exit 1
+              time make $target -j$(nproc) || exit 1
           done
 
       - name: Checkpoint Cache (Save Base to GHCR)

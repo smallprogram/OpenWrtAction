@@ -470,21 +470,21 @@ jobs:
           cd openwrt
           touch /workdir/base_compilation_marker
           echo "==== 1. 编译系统工具 ===="
-          make tools/compile -j$(nproc) || exit 1
+          time make tools/compile -j$(nproc) || exit 1
           echo "==== 2. 编译交叉工具链 ===="
-          make toolchain/compile -j$(nproc) || exit 1
+          time make toolchain/compile -j$(nproc) || exit 1
           echo "==== 3. 编译 Linux 内核 ===="
           make target/compile -j$(nproc) || exit 1
 
-          # echo "==== 4. 编译长期存在的包 ===="
-          # LONG_TIME_TARGETS=(
-          #     "package/feeds/packages/golang/host/compile"
-          #     "package/feeds/packages/rust/host/compile"
-          #     "package/feeds/packages/ruby/host/compile"
-          # )
-          # for target in "${LONG_TIME_TARGETS[@]}"; do
-          #     make $target -j$(nproc) || exit 1
-          # done
+          echo "==== 4. 编译长期存在的包 ===="
+          LONG_TIME_TARGETS=(
+              "package/feeds/packages/golang/host/compile"
+              "package/feeds/packages/rust/host/compile"
+              "package/feeds/packages/ruby/host/compile"
+          )
+          for target in "${LONG_TIME_TARGETS[@]}"; do
+              time make $target -j$(nproc) || exit 1
+          done
 
       - name: Checkpoint Cache (Save Base to GHCR)
         if: steps.matrix_status.outputs.status != 'success' && steps.compile_base.outcome == 'success'
