@@ -13,8 +13,6 @@ LONG_TIME_TARGETS=(
     "package/feeds/packages/golang/host/compile"
     "package/feeds/packages/rust/host/compile"
     "package/feeds/packages/ruby/host/compile"
-    "package/feeds/packages/boost/host/compile"
-    "package/libs/libunistring/host/compile"
     "package/libs/gettext-full/host/compile"
 )
 for target in "${LONG_TIME_TARGETS[@]}"; do

@@ -8,21 +8,22 @@ make defconfig
 echo "=== 2. 还原 Git 源码真实历史时间戳 ==="
 current_path=$(pwd)
 find . -name ".git" -type d | while read gitdir; do
-        repo_dir=$(dirname "$gitdir")
-        echo "-> 正在处理 Git 仓库: $repo_dir"
-        cd "$current_path/$repo_dir"
-        git log --format=%at --name-only | perl -ane '
-        if (/^(\d+)$/) { $t = $1; }
-        elsif (/^(\S+)$/) {
-            $f = $1;
-            if (-e $f && !-d $f && !$seen{$f}) {
-            utime($t, $t, $f);
-            $seen{$f} = 1;
-            }
+    repo_dir=$(dirname "$gitdir")
+    echo "-> 正在处理 Git 仓库: $repo_dir"
+    cd "$current_path/$repo_dir"
+    git log --format=%at --name-only | perl -ane '
+    if (/^(\d+)$/) { $t = $1; }
+    elsif (/^(\S+)$/) {
+        $f = $1;
+        if (-e $f && !-d $f && !$seen{$f}) {
+        utime($t, $t, $f);
+        $seen{$f} = 1;
         }
-        '
-        cd "$current_path"
-    done
+    }
+    '
+    cd "$current_path"
+done
+find "$current_path/dl" -type f | xargs -r touch -t 200001010000
 
 echo "=== 3. 清理旧数据并拉取最新缓存 ==="
 rm -rf build_dir staging_dir
@@ -31,8 +32,11 @@ docker rm -f temp_bin 2>/dev/null || true
 docker pull ghcr.io/smallprogram/openwrt-base-cache-immortalwrt-x86:latest
 docker create --name temp_bin ghcr.io/smallprogram/openwrt-base-cache-immortalwrt-x86:latest /bin/true
 docker export temp_bin > cache_exported.tar
+docker rm -f temp_bin 2>/dev/null || true
+# docker rmi -f ghcr.io/smallprogram/openwrt-base-cache-immortalwrt-x86:latest 2>/dev/null || true
 
 echo "=== 4. 解压并合并缓存分块 ==="
+rm -rf immcache
 mkdir -p immcache
 tar -xf cache_exported.tar -C immcache --wildcards "op_cache_raw_*" || true
 
@@ -48,18 +52,19 @@ else
    exit 1
 fi
 
-echo "=== 5. 解决配置文件的幽灵时间戳悖论 ===="
-# 这是最核心的一步：让配置文件回到过去，假装它们是没有被修改过的旧配置
-BUILD_TIME=$(stat -c %Y build_dir)
-TARGET_TIME=$((BUILD_TIME - 60))
-find tmp/ -exec touch -c -h -d "@$TARGET_TIME" {} + 2>/dev/null || true
-touch -c -h -d "@$TARGET_TIME" tmp/
-if [ -f ".config" ]; then
-    touch -c -h -d "@$TARGET_TIME" .config
-fi
-
-echo "=== 6. 开始智能编译 ===="
+echo "=== 5. 开始智能编译 ===="
 # 加上 V=s 可以更清晰地看到它是瞬间跳过了编译步骤
 time make tools/compile -j$(nproc)
 time make toolchain/compile -j$(nproc)
 time make target/compile -j$(nproc)
+LONG_TIME_TARGETS=(
+    "package/feeds/packages/golang/host/compile"
+    "package/feeds/packages/rust/host/compile"
+    "package/feeds/packages/ruby/host/compile"
+    "package/feeds/packages/boost/host/compile"
+    "package/libs/libunistring/host/compile"
+    "package/libs/gettext-full/host/compile"
+)
+for target in "${LONG_TIME_TARGETS[@]}"; do
+    time make $target -j$(nproc) || exit 1
+done
