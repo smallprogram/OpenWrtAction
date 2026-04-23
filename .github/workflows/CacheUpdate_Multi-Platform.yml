@@ -282,6 +282,9 @@ jobs:
         id: restore_cache
         if: steps.matrix_status.outputs.status != 'success' && github.event.inputs.force_rebuild != 'true'
         run: |
+
+          df -hT
+
           REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
           PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
           IMAGE_NAME="ghcr.io/$REPO_OWNER/openwrt-base-cache-$PLATFORM_NAME:latest"
@@ -312,6 +315,8 @@ jobs:
           else
             echo "No cache found on GHCR. This will be a clean build."
           fi
+
+          df -hT
 
       - name: Compile Base (Tools, Toolchain, Kernel, LongTime Packages)
         id: compile_base
@@ -362,7 +367,7 @@ jobs:
 
 
           echo "⚡ 检测到 $CHANGED_BASE 个新 stamp，触发缓存更新存档..."
-
+          df -hT
           echo "==== 2. 自动修剪冗余版本 ===="
           
           for linux_dir in openwrt/build_dir/target-*/linux-*/; do
@@ -397,6 +402,7 @@ jobs:
           done
           
           echo "==== 5. 开始构建与推送多层镜像 ===="
+          df -hT
           REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
           PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
           IMAGE_NAME="ghcr.io/$REPO_OWNER/openwrt-base-cache-$PLATFORM_NAME:latest"
@@ -408,6 +414,7 @@ jobs:
           # 清理临时数据文件
           rm -rf layer* Dockerfile
           echo "✅ 分块多层缓存推送完毕！"
+          df -hT
 
   rerun-failed-jobs:
     runs-on: ubuntu-latest
