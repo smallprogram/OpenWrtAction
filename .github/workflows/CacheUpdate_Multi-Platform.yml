@@ -356,6 +356,9 @@ jobs:
               exit 0
           fi
 
+          find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null | \
+                          grep -E -v "staging_dir/host/stamp/\.tools_compile_|staging_dir/target-[^/]+/stamp/\.target_prereq$"
+
           echo "==== 回拨 dl/ 时间戳===="
           
           # （防止新下载的 tarball 比缓存 stamp 更新导致重编译）
