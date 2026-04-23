@@ -60,6 +60,9 @@ LONG_TIME_TARGETS=(
     "package/feeds/packages/golang/host/compile"
     "package/feeds/packages/rust/host/compile"
     "package/feeds/packages/ruby/host/compile"
+    "package/feeds/packages/boost/host/compile"
+    "package/libs/libunistring/host/compile"
+    "package/libs/gettext-full/host/compile"
 )
 
 TARGETS=()
@@ -85,9 +88,12 @@ case "$build_toolchain" in
         echo "当前模式: 3 (编译 Toolchain + 耗时包)"
         TARGETS=("${TOOLCHAIN_TARGETS[@]}" "${LONG_TIME_TARGETS[@]}")
         ;;
-    *)
+    4)
         # 对应原来的 else (当输入不是 1, 2, 3，或者是空值时的默认行为)
-        echo "1. 编译 Toolchain 2. 编译 耗时包 3. 编译 Toolchain + 耗时包 (默认)"
+        echo "编译所有host包"
+        TARGETS=("${All_TARGETS[@]}")
+        ;;
+    *) 
         exit 0
         ;;
 esac
