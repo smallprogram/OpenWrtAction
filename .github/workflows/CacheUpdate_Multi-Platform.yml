@@ -321,8 +321,8 @@ jobs:
           time make tools/compile -j$(nproc) || exit 1
           echo "==== 2. 编译交叉工具链 ===="
           time make toolchain/compile -j$(nproc) || exit 1
-          echo "==== 3. 编译 Linux 内核 ===="
-          time make target/compile -j$(nproc) || exit 1
+          # echo "==== 3. 编译 Linux 内核 ===="
+          # time make target/compile -j$(nproc) || exit 1
 
           echo "==== 4. 编译长期存在的包 ===="
           LONG_TIME_TARGETS=(
