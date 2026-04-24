@@ -1,0 +1,40 @@
+#
+# Copyright (c) 2019-2026 smallprogram
+#
+# This is free software, licensed under the MIT License.
+# See /LICENSE for more information.
+#
+# https://github.com/smallprogram/OpenWrtAction
+# File: .github/workflows/Delete_All_Workflows.yml
+# Description: Delete all workflows
+#
+
+name: Delete_All_Workflows
+
+on:
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
+  schedule:
+    - cron: '0 20 */3 * *'
+    # 每三天的UTC 20:00触发 北京时间为每三天的凌晨4点
+
+permissions:
+  contents: write
+  packages: write
+  actions: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Delete workflow runs
+      uses: Mattraks/delete-workflow-runs@main
+      with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 0
