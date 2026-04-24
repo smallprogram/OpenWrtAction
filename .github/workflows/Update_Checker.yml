@@ -19,9 +19,8 @@ on:
         required: false
         default: 'false'
   schedule:
-    - cron: 0 0 * * 2,5
-      # 0 4 * * 5
-      # 0 4,12,20 * * *
+    - cron: '0 20 */3 * *'
+    # 每三天的UTC 20:00触发 北京时间为每三天的凌晨4点
 
 permissions:
   contents: write
@@ -86,11 +85,11 @@ jobs:
         expand-packages: true
         token: ${{ secrets.MY_ADMIN_PAT }}
     
-    - name: Stateful Lifecycle Check
-      id: lifecycle_check
-      run: |
-        chmod +x compile_script/check_lifecycle.sh
-        $GITHUB_WORKSPACE/compile_script/check_lifecycle.sh
+    # - name: Stateful Lifecycle Check
+    #   id: lifecycle_check
+    #   run: |
+    #     chmod +x compile_script/check_lifecycle.sh
+    #     $GITHUB_WORKSPACE/compile_script/check_lifecycle.sh
         
     - name: Trigger build
       if: steps.cacheHash.outputs.cache-hit != 'true'
@@ -98,4 +97,4 @@ jobs:
       with:
         token: ${{ github.token }}
         event-type: openwrt_source_update_v6
-        client-payload: '{"force_rebuild": "${{ steps.lifecycle_check.outputs.force_rebuild }}"}'
+        # client-payload: '{"force_rebuild": "${{ steps.lifecycle_check.outputs.force_rebuild }}"}'
