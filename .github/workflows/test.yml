@@ -14,12 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     name: test
     steps:
-      - name: Trigger Release Update
-        uses: peter-evans/repository-dispatch@v4
-        with:
-          token: ${{ secrets.MY_SECRET_PAT }}
-          repository: smallprogram/MyAction
-          event-type: openwrt_compilation_completed
 
       - name: ghcr.io cleanup action
         uses: dataaxiom/ghcr-cleanup-action@v1
@@ -28,4 +22,4 @@ jobs:
             delete-untagged: true
             packages: openwrt-base-cache*
             expand-packages: true
-            token: ${{ github.token }}
+            token: ${{ secrets.MY_SECRET_PAT }}
