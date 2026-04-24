@@ -5,10 +5,10 @@
 # See /LICENSE for more information.
 #
 # https://github.com/smallprogram/OpenWrtAction
-# Description: Build OpenWrt using GitHub Actions
+# Description: Build Cache OpenWrt using GitHub Actions
 #
 
-name: CacheUpdate_Multi-Platform(V6)
+name: Cache_Multi_Platform(V6)
 
 on:
   repository_dispatch:
