@@ -31,7 +31,7 @@ jobs:
     steps:
     - name: Delete all openwrt-* packages completely
       env:
-        GH_TOKEN: ${{ secrets.MY_ADMIN_PAT }}
+        GH_TOKEN: ${{ secrets.MY_SECRET_PAT }}
         USERNAME: smallprogram
       run: |
         echo "获取所有容器包列表..."
