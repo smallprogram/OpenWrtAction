@@ -496,8 +496,11 @@ jobs:
           # 1. 必须在 staging_dir/host/stamp/ 目录下，且以 .tools_compile_ 开头
           # 2. 必须在 staging_dir/target-*/stamp/ 目录下，且名字严格叫 .target_prereq
           
+          # 定义需要忽略的假阳性工具正则串 (增加 zstd, flock, libdeflate, pkgconf, xz, tar 等常犯病的工具)
+          IGNORE_PATTERN="staging_dir/host/stamp/\.tools_compile_|staging_dir/target-[^/]+/stamp/\.target_prereq$|staging_dir/host/stamp/\.(zstd|flock|libdeflate|pkgconf|xz|tar|patch|m4)_"
+
           CHANGED_BASE=$(find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null | \
-                          grep -E -v "staging_dir/host/stamp/\.tools_compile_|staging_dir/target-[^/]+/stamp/\.target_prereq$" | \
+                          grep -E -v "$IGNORE_PATTERN" | \
                           wc -l)
 
           echo "--- Found $CHANGED_BASE newer stamp files ---"
@@ -508,7 +511,7 @@ jobs:
           fi
 
           find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null | \
-                          grep -E -v "staging_dir/host/stamp/\.tools_compile_|staging_dir/target-[^/]+/stamp/\.target_prereq$"
+                          grep -E -v "$IGNORE_PATTERN"
 
           echo "==== 回拨 dl/ 时间戳===="
           # （防止新下载的 tarball 比缓存 stamp 更新导致重编译）
