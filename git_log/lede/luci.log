@@ -1,14 +1,9 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/83bbcbc71447e7c99ad3e76e6325936f7aa10a74...28190ed6720bcd958930ff811e0997635519d9a8)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/28190ed6720bcd958930ff811e0997635519d9a8...0ab227c76989a87c1bdd015983b2304ed8f4c329)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-28190ed672|coolsnowwolf|Thu Apr 23 22:32:36 2026 +0800|luci-app-vlmcsd: add running status view
-49fdae7bbe|coolsnowwolf|Thu Apr 23 15:24:25 2026 +0800|luci-app-onekeyap: add luci for one-click AP mode switching
-7a292c5b8f|coolsnowwolf|Thu Apr 23 14:43:45 2026 +0800|luci-app-repeater: luci app for Wi-Fi repeater and uplink configuration
-32d6ffba18|coolsnowwolf|Thu Apr 23 13:16:55 2026 +0800|luci-app-turboacc: add mtk wed config support
-4a3381646d|coolsnowwolf|Thu Apr 23 12:03:43 2026 +0800|luci-mod-network: add support for force 40MHz in dbdc mode
-20cb6a03cd|coolsnowwolf|Wed Apr 22 17:11:51 2026 +0800|luci-mod-network: keep auto channel available for qca radios
+0ab227c769|coolsnowwolf|Fri Apr 24 13:54:50 2026 +0800|luci-app-eqos: add nss hw qos support
 </details>

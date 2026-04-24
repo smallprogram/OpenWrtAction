@@ -1,12 +1,11 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/0f8e891962a2ae3153e21e56bfd42e81b55658af...56fa6282736c3a539ad33c11a6691495ae9c7f2b)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/56fa6282736c3a539ad33c11a6691495ae9c7f2b...cdf76cd3997623e9f448e2aeb7b24cdc08f6fb55)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-56fa628|A-BO|Thu Apr 23 22:08:13 2026 +0800|luci: update default rules
-b096ef9|A-BO|Thu Apr 23 21:45:35 2026 +0800|luci: optimize the display effect of some tables
-d24fa81|Keiron9|Thu Apr 23 08:41:58 2026 +0800|luci: optimize rule update domain matching (#4339)
-a924dd1|A-BO|Wed Apr 22 18:00:32 2026 +0800|luci: optimize `exec_call` function in api
+cdf76cd|A-BO|Sat Apr 25 01:02:11 2026 +0800|luci: optimize
+eb76230|A-BO|Sat Apr 25 00:27:54 2026 +0800|luci: restore mkcp mtu config options
+ccb14af|A-BO|Fri Apr 24 11:11:17 2026 +0800|luci: restore the xray `blackhole` logic
 </details>

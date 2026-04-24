@@ -1,0 +1,25 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/4e8d211217db8a12825fd4646917f85b9628579b...3a4742196752385253cf70992a3d180e1b355e17)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+3a4742196|Tianling Shen|Fri Apr 24 15:59:28 2026 +0800|Merge Official Source
+e9a66c00c|Stan Grishin|Tue Apr 21 19:11:41 2026 +0000|pbr: update to 1.2.2-r14
+bf5e5f5f2|Dirk Brenken|Tue Apr 21 19:28:41 2026 +0200|banip: update 1.8.6-4
+3e3bab341|George Sapkin|Fri Apr 17 01:58:48 2026 +0300|adguardhome: bump to 0.107.74
+c7b2a4eb1|George Sapkin|Sun Apr 12 01:31:35 2026 +0300|syncthing: bump to 2.0.16
+84e882b0d|George Sapkin|Fri Mar 13 23:41:13 2026 +0200|syncthing: validate syncthing config
+dddd292d8|George Sapkin|Sat Mar 14 01:32:09 2026 +0200|syncthing: validate strelaysrv config
+ed1966292|George Sapkin|Sat Mar 14 01:25:11 2026 +0200|syncthing: validate stdiscosrv config
+18de8ab65|George Sapkin|Fri Mar 13 23:24:56 2026 +0200|syncthing: add GC and thread control variables
+12327d1d1|George Sapkin|Sun Apr 12 01:21:31 2026 +0300|sqlite3: bump to 3.53.0
+4463d8619|George Sapkin|Mon Mar 23 00:02:08 2026 +0200|yt-dlp: bump to 2026.03.17
+403bb908a|George Sapkin|Sun Apr 12 01:42:53 2026 +0300|golang: bump 1.26 to 1.26.2
+a0d04dd22|Dirk Brenken|Sun Apr 19 19:13:41 2026 +0200|banip: update 1.8.6-3
+6a0df58d2|Dirk Brenken|Sat Apr 18 19:07:03 2026 +0200|banip: update 1.8.6-2
+8a288ed54|Daniel F. Dickinson|Sun Apr 12 16:20:56 2026 -0400|zabbix: update to 7.0.25 (LTS)
+
+
+</details>

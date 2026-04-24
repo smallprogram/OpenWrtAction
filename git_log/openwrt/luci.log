@@ -1,10 +1,9 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/3b7a68e5865f01c8e8aeead9d32f8d9911d968ea...8405d22670ed709c8e108db95e1b5a8906de0046)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/8405d22670ed709c8e108db95e1b5a8906de0046...e91321e001709391e81e6a652becf400400da2ba)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-8405d22670|Stan Grishin|Tue Apr 21 19:15:33 2026 +0000|luci-app-pbr: update to 1.2.2-r14
-92945206b5|Michael Pfeifroth|Wed Apr 22 15:49:58 2026 +0200|luci-app-mwan3: fix missing translation call for Weight label
+e91321e001|Paul Donald|Fri Apr 24 17:33:46 2026 +0200|luci-app-ocserv: correct JSON user data
 </details>
