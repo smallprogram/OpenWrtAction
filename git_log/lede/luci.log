@@ -1,12 +1,14 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/0f99fcba6662ff840644f59782bce7d08d945916...83bbcbc71447e7c99ad3e76e6325936f7aa10a74)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/83bbcbc71447e7c99ad3e76e6325936f7aa10a74...28190ed6720bcd958930ff811e0997635519d9a8)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-83bbcbc714|coolsnowwolf|Wed Apr 22 10:26:48 2026 +0800|luci-app-lucky: add luci package for Lucky
-4b1446184a|coolsnowwolf|Tue Apr 21 22:24:08 2026 +0800|luci-app-openvpn-server: fix renewcert and ensurecert
-982ec0121a|coolsnowwolf|Tue Apr 21 21:18:14 2026 +0800|luci-mod-network: getLegacyIwinfoProbeTargets from iwinfo instead of hardcoding them
-ac599c66f0|coolsnowwolf|Tue Apr 21 20:33:44 2026 +0800|luci-mod-system: skip_running_check by default for startup web page
+28190ed672|coolsnowwolf|Thu Apr 23 22:32:36 2026 +0800|luci-app-vlmcsd: add running status view
+49fdae7bbe|coolsnowwolf|Thu Apr 23 15:24:25 2026 +0800|luci-app-onekeyap: add luci for one-click AP mode switching
+7a292c5b8f|coolsnowwolf|Thu Apr 23 14:43:45 2026 +0800|luci-app-repeater: luci app for Wi-Fi repeater and uplink configuration
+32d6ffba18|coolsnowwolf|Thu Apr 23 13:16:55 2026 +0800|luci-app-turboacc: add mtk wed config support
+4a3381646d|coolsnowwolf|Thu Apr 23 12:03:43 2026 +0800|luci-mod-network: add support for force 40MHz in dbdc mode
+20cb6a03cd|coolsnowwolf|Wed Apr 22 17:11:51 2026 +0800|luci-mod-network: keep auto channel available for qca radios
 </details>

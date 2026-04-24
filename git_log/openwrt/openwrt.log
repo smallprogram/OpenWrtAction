@@ -1,0 +1,16 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/37326a2aa34b9a74d633295e66a941469ccc60a5...6cbb072b57e9d72d07097902d975f8a13b768e72)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+6cbb072b57|chinawrj|Wed Apr 22 20:41:59 2026 +0800|qualcommax: ipq50xx: ax6000: enable pcie1 for QCA9887
+0a0ed86b42|Christian Marangi|Thu Mar 19 17:09:49 2026 +0100|generic: backport field_prep()/get() for non-const bitmask
+659df25802|YaleiZang|Thu Apr 9 18:29:24 2026 +0800|airoha: refresh the patches
+23bcea0e21|Christian Marangi|Tue Mar 24 19:33:41 2026 +0100|airoha: rework and backport for multi-serdes prep
+c68589027b|Lorenzo Bianconi|Wed Mar 18 12:16:49 2026 +0100|airoha: backport some missing airoha_eth upstream patches
+2c8fff4a74|Christian Marangi|Thu Mar 19 16:46:40 2026 +0100|airoha: renumber ASoC and PCS patch for more backport patch
+4d9eeb8642|Aleksander Jan Bajkowski|Mon Jan 26 23:49:55 2026 +0100|airoha: reduce HWRNG quality
+3a6e94e21a|Christian Marangi|Fri Feb 20 00:57:35 2026 +0100|airoha: an7583: fix wrong clock for SPI and SLIC
+</details>

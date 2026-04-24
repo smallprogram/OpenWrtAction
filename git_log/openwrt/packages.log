@@ -1,9 +1,9 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/3e3bab341057778fc6d4778e65f8ab931032624a...bf5e5f5f2cb768b5ab2cdc1240649a9bcd41c32a)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/bf5e5f5f2cb768b5ab2cdc1240649a9bcd41c32a...e9a66c00c7622f196547141b554439998acdbaf5)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-bf5e5f5f2|Dirk Brenken|Tue Apr 21 19:28:41 2026 +0200|banip: update 1.8.6-4
+e9a66c00c|Stan Grishin|Tue Apr 21 19:11:41 2026 +0000|pbr: update to 1.2.2-r14
 </details>

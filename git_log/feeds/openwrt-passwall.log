@@ -1,15 +1,12 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/f35593989d7de767683b415ed6ba7ffda899b823...0f8e891962a2ae3153e21e56bfd42e81b55658af)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/0f8e891962a2ae3153e21e56bfd42e81b55658af...56fa6282736c3a539ad33c11a6691495ae9c7f2b)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-0f8e891|A-BO|Wed Apr 22 11:23:43 2026 +0800|luci: add `quic` protocol type for routing rules
-eac75c5|A-BO|Wed Apr 22 10:51:30 2026 +0800|luci: align `fetch_certsha256` response code
-7ed094c|A-BO|Wed Apr 22 10:39:09 2026 +0800|luci: harden add-node and rule update actions
-4f1cafd|A-BO|Wed Apr 22 10:26:49 2026 +0800|luci: optimize
-ab97272|A-BO|Wed Apr 22 02:48:22 2026 +0800|luci: optimize subscribe & rule update logic
-383ac2e|A-BO|Wed Apr 22 00:15:47 2026 +0800|luci: rule update single instance running
-d5d7708|A-BO|Tue Apr 21 23:10:04 2026 +0800|luci: optimize and fix subscribe
+56fa628|A-BO|Thu Apr 23 22:08:13 2026 +0800|luci: update default rules
+b096ef9|A-BO|Thu Apr 23 21:45:35 2026 +0800|luci: optimize the display effect of some tables
+d24fa81|Keiron9|Thu Apr 23 08:41:58 2026 +0800|luci: optimize rule update domain matching (#4339)
+a924dd1|A-BO|Wed Apr 22 18:00:32 2026 +0800|luci: optimize `exec_call` function in api
 </details>
