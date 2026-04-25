@@ -1,0 +1,10 @@
+<details> <summary> <b>luci-app-bandix new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/timsaya/luci-app-bandix/compare/fa749bbb63c7a659ffa415379f256bb7ff02b939...9156c927f0183286e5c84c97f8b1ba3563b23cf9)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+9156c92|stefanlei|Sat Apr 25 15:00:16 2026 +0800|Bump luci-app-bandix PKG_VERSION to 0.12.7
+49c1ba8|stefanlei|Sat Apr 25 14:30:46 2026 +0800|Paginate connection flows; chunk traffic increments for ubus limit
+</details>
