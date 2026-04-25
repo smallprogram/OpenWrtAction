@@ -242,7 +242,19 @@ jobs:
         if: steps.matrix_status.outputs.status != 'success'
         run: |
           cd $GITHUB_WORKSPACE/openwrt
-          make download -j$(nproc)
+          # 设置重试次数，比如 3 次
+          for i in {1..3}; do
+            echo "开始第 $i 次尝试执行 make download..."
+            
+            timeout 8m make download -j8 && break || echo "第 $i 次尝试超时或失败，准备重试..."
+            
+            # 在最后一次尝试失败后，手动抛出错误退出
+            if [ $i -eq 3 ]; then
+              echo "经过 3 次尝试后依然失败，停止执行。"
+              exit 1
+            fi
+
+          done
 
       - name: Git Restore Mtime (True SSoT) And DL Restore Time
         if: steps.matrix_status.outputs.status != 'success'
