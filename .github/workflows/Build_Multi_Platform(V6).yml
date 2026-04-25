@@ -498,97 +498,97 @@ jobs:
               time make $target -j$(nproc) || exit 1
           done
 
-      # - name: Checkpoint Cache (Save Base to GHCR)
-      #   if: steps.matrix_status.outputs.status != 'success' && steps.compile_base.outcome == 'success'
-      #   run: |
-      #     echo "==== 1. 智能探测 Base 是否更新 ===="
-      #     cd /workdir
+      - name: Checkpoint Cache (Save Base to GHCR)
+        if: steps.matrix_status.outputs.status != 'success' && steps.compile_base.outcome == 'success'
+        run: |
+          echo "==== 智能探测 Base 是否更新 ===="
+          cd /workdir
           
-      #     # 严谨的正则过滤：
-      #     # 1. 必须在 staging_dir/host/stamp/ 目录下，且以 .tools_compile_ 开头
-      #     # 2. 必须在 staging_dir/target-*/stamp/ 目录下，且名字严格叫 .target_prereq
+          # 严谨的正则过滤：
+          # 1. 必须在 staging_dir/host/stamp/ 目录下，且以 .tools_compile_ 开头
+          # 2. 必须在 staging_dir/target-*/stamp/ 目录下，且名字严格叫 .target_prereq
           
-      #     # 定义需要忽略的假阳性工具正则串 (增加 zstd, flock, libdeflate, pkgconf, xz, tar 等常犯病的工具)
-      #     IGNORE_PATTERN="staging_dir/host/stamp/\.tools_compile_|staging_dir/target-[^/]+/stamp/\.target_prereq$|staging_dir/host/stamp/\.(zstd|flock|libdeflate|pkgconf|xz|tar|patch|m4)_"
+          IGNORE_PATTERN="staging_dir/host/stamp/\.tools_compile_|staging_dir/target-[^/]+/stamp/\.target_prereq$|staging_dir/host/stamp/\.(zstd|flock|libdeflate|pkgconf|xz|tar|patch|m4)_"
 
-      #     CHANGED_BASE=$(find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null | \
-      #                     grep -E -v "$IGNORE_PATTERN" | \
-      #                     wc -l)
+          CHANGED_BASE=$(find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null | \
+                          grep -E -v "$IGNORE_PATTERN" | \
+                          wc -l)
 
-      #     echo "--- Found $CHANGED_BASE newer stamp files ---"
+          echo "--- Found $CHANGED_BASE newer stamp files ---"
 
-      #     if [ "$CHANGED_BASE" -eq 0 ]; then
-      #         echo "🎉 Base 阶段命中旧缓存，跳过本次 Checkpoint 存档！"
-      #         exit 0
-      #     fi
+          if [ "$CHANGED_BASE" -eq 0 ]; then
+              echo "🎉 Base 阶段命中旧缓存，跳过本次 Checkpoint 存档！"
+              exit 0
+          fi
 
-      #     find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null | \
-      #                     grep -E -v "$IGNORE_PATTERN"
+          find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null | \
+                          grep -E -v "$IGNORE_PATTERN"
 
-      #     echo "==== 回拨 dl/ 时间戳===="
-      #     # （防止新下载的 tarball 比缓存 stamp 更新导致重编译）
-      #     # OpenWrt stamp 依赖链：.installed→.built→.configured→.preparedXXX→dl/source.tar.gz
-      #     # make download 每次都会重新下载 tarball，mtime = 现在，而缓存 stamp 时间是过去，
-      #     # make 看到 dl/ 比 stamp 新就会重编。将 dl/ 所有文件回拨到远古时间即可解决。
-      #     # PKG_HASH 若真的变了，stamp 文件名（含 hash）也变了，旧 stamp 不匹配，仍会正常重编。
-
-      #     find /workdir/openwrt/dl -type f | xargs -r touch -t 200001010000
-      #     echo "✅ dl/ 时间戳逆转完成！"
-
-      #     echo "⚡ 检测到 $CHANGED_BASE 个新 stamp，触发缓存更新存档..."
-      #     df -hT
-
-      #     echo "==== 2. 自动修剪冗余版本 ===="
           
-      #     for linux_dir in openwrt/build_dir/target-*/linux-*/; do
-      #         [ -d "$linux_dir" ] && (cd "$linux_dir" && ls -dt linux-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
-      #     done
-      #     [ -d "openwrt/build_dir" ] && (cd openwrt/build_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
-      #     if [ -d "openwrt/staging_dir" ]; then
-      #         (cd openwrt/staging_dir && ls -dt target-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
-      #         (cd openwrt/staging_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
-      #     fi
-
-      #     echo "==== 3. 高效打包与 5GB 分块 ===="
-      #     cd /workdir/openwrt
-      #     # 使用 split 临时切片为 op_cache_raw_00, op_cache_raw_01... (每块最大 5000M)
-      #     tar -I "zstd -T0 -10" -cf - build_dir staging_dir dl | split -a 3 -d -b 5000M - /workdir/op_cache_raw_
-
-      #     echo "==== 4. 批量重命名并创建 Layer 隔离目录 ===="
-      #     cd /workdir
-      #     echo "FROM scratch" > Dockerfile
           
-      #     # 遍历默认分块，并分配到独立的 layerN 文件夹中
-      #     count=1
-      #     for f in op_cache_raw_*; do
-      #         layer_dir="layer$count"
+          # （防止新下载的 tarball 比缓存 stamp 更新导致重编译）
+          # OpenWrt stamp 依赖链：.installed→.built→.configured→.preparedXXX→dl/source.tar.gz
+          # make download 每次都会重新下载 tarball，mtime = 现在，而缓存 stamp 时间是过去，
+          # make 看到 dl/ 比 stamp 新就会重编。将 dl/ 所有文件回拨到远古时间即可解决。
+          # PKG_HASH 若真的变了，stamp 文件名（含 hash）也变了，旧 stamp 不匹配，仍会正常重编。
+
+          echo "==== 回拨 dl/ 时间戳===="
+          find /workdir/openwrt/dl -type f | xargs -r touch -t 200001010000
+          echo "✅ dl/ 时间戳逆转完成！"
+
+          echo "⚡ 检测到 $CHANGED_BASE 个新 stamp，触发缓存更新存档..."
+          df -hT
+          echo "==== 自动修剪冗余版本 ===="
+          
+          for linux_dir in openwrt/build_dir/target-*/linux-*/; do
+              [ -d "$linux_dir" ] && (cd "$linux_dir" && ls -dt linux-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+          done
+          [ -d "openwrt/build_dir" ] && (cd openwrt/build_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+          if [ -d "openwrt/staging_dir" ]; then
+              (cd openwrt/staging_dir && ls -dt target-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+              (cd openwrt/staging_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+          fi
+
+          echo "==== 打包与 5GB 分块 ===="
+          cd /workdir/openwrt
+          # 使用 split 临时切片为 op_cache_raw_00, op_cache_raw_01... (每块最大 5000M)
+          tar -I "zstd -T0 -10" -cf - build_dir staging_dir dl | split -a 3 -d -b 5000M - /workdir/op_cache_raw_
+
+          echo "==== 批量重命名并创建 Layer 隔离目录 ===="
+          cd /workdir
+          echo "FROM scratch" > Dockerfile
+          
+          # 遍历默认分块，并分配到独立的 layerN 文件夹中
+          count=1
+          for f in op_cache_raw_*; do
+              layer_dir="layer$count"
               
-      #         mkdir -p "$layer_dir"
-      #         # 直接把原文件扔进 layer 文件夹，不改名！
-      #         mv "$f" "$layer_dir/"
+              mkdir -p "$layer_dir"
+              # 直接把原文件扔进 layer 文件夹，不改名！
+              mv "$f" "$layer_dir/"
               
-      #         echo "COPY $layer_dir /" >> Dockerfile
-      #         count=$((count + 1))
-      #     done
+              echo "COPY $layer_dir /" >> Dockerfile
+              count=$((count + 1))
+          done
           
-      #     echo "==== 5. 开始构建与推送多层镜像 ===="
-      #     df -hT
-      #     REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
-      #     PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
-      #     IMAGE_NAME="ghcr.io/smallprogram/openwrt-base-cache-$PLATFORM_NAME:latest"
+          echo "==== 开始构建与推送多层镜像 ===="
+          df -hT
+          REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
+          IMAGE_NAME="ghcr.io/smallprogram/openwrt-base-cache-$PLATFORM_NAME:latest"
 
-      #     docker build -t $IMAGE_NAME .
-      #     docker push $IMAGE_NAME
-      #     echo "✅ 分块多层缓存推送完毕！"
+          docker build -t $IMAGE_NAME .
+          docker push $IMAGE_NAME
+          echo "✅ 分块多层缓存推送完毕！"
 
-      #     # 清理临时数据文件
-      #     echo "==== 6. 清理临时数据文件 ===="
-      #     rm -rf layer* Dockerfile
-      #     docker rmi $IMAGE_NAME -f
-      #     docker builder prune -a -f
-      #     docker system prune -a -f
-      #     echo "✅ 清理临时数据文件完毕！"
-      #     df -hT
+          # 清理临时数据文件
+          echo "==== 清理临时数据文件 ===="
+          rm -rf layer* Dockerfile
+          docker rmi $IMAGE_NAME -f
+          docker builder prune -a -f
+          docker system prune -a -f
+          echo "✅ 清理临时数据文件完毕！"
+          df -hT
 
       - name: Compile Packages and Firmware
         id: compile
@@ -734,16 +734,16 @@ jobs:
           repository: smallprogram/MyAction
           event-type: openwrt_compilation_completed
 
-      - name: Stateful Lifecycle Check
-        id: lifecycle_check
-        run: |
-          chmod +x compile_script/check_lifecycle.sh
-          $GITHUB_WORKSPACE/compile_script/check_lifecycle.sh
+      # - name: Stateful Lifecycle Check
+      #   id: lifecycle_check
+      #   run: |
+      #     chmod +x compile_script/check_lifecycle.sh
+      #     $GITHUB_WORKSPACE/compile_script/check_lifecycle.sh
 
-      - name: Trigger Cache Update
-        if: ${{ needs.rerun-failed-jobs.result == 'skipped' }}
-        uses: peter-evans/repository-dispatch@v4
-        with:
-          token: ${{ github.token }}
-          event-type: openwrt_cache_update_v6
-          client-payload: '{"force_rebuild": "${{ steps.lifecycle_check.outputs.force_rebuild }}"}'
+      # - name: Trigger Cache Update
+      #   if: ${{ needs.rerun-failed-jobs.result == 'skipped' }}
+      #   uses: peter-evans/repository-dispatch@v4
+      #   with:
+      #     token: ${{ github.token }}
+      #     event-type: openwrt_cache_update_v6
+      #     client-payload: '{"force_rebuild": "${{ steps.lifecycle_check.outputs.force_rebuild }}"}'
