@@ -1,10 +1,16 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/e9a66c00c7622f196547141b554439998acdbaf5...5d0fae38f89aea2b3058989f170cd7a1c8d13310)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/5d0fae38f89aea2b3058989f170cd7a1c8d13310...e929849faaaaa269e1bb95429b70e62a22ef61f1)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-5d0fae38f|Qingfang Deng|Thu Apr 2 10:42:09 2026 +0800|ovpn-dco: switch to the new source
-57f687f2c|Qingfang Deng|Thu Apr 2 10:42:16 2026 +0800|openvpn: update to 2.7.1
+e929849fa|Alexandru Ardelean|Mon Apr 13 11:08:00 2026 +0300|python-constantly: drop versioneer build dependency
+14660c583|Niklas Thorild|Wed Apr 22 19:10:45 2026 +0200|telegraf: enable static linking for arm targets
+705fe1999|Niklas Thorild|Mon Apr 20 22:04:19 2026 +0200|telegraf: update to 1.38.3 - Update Telegraf to v1.38.3
+af2a17e3c|Hannu Nyman|Sat Apr 11 10:04:30 2026 +0300|tvheadend: update to 2026-04-03 (395afb8512d0)
+aa9346049|Rosen Penev|Tue Feb 10 16:54:56 2026 -0800|python-pyodbc: update to 5.3.0
+b5d65c1d2|Josef Schlehofer|Wed Dec 31 03:38:27 2025 +0100|pigeonhole: update to version 0.5.21.1
+d1b9b69e4|Josef Schlehofer|Wed Dec 31 03:33:18 2025 +0100|pigeonhole: change package versioning
+f3cd530c2|Josef Schlehofer|Wed Dec 31 02:21:38 2025 +0100|dovecot-pigeonhole: fix Makefile syntax to match dovecot
 </details>
