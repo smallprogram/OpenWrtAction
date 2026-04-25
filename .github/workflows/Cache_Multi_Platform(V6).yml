@@ -244,70 +244,70 @@ jobs:
           cd $GITHUB_WORKSPACE/openwrt
           make download -j$(nproc)
 
-      # - name: Git Restore Mtime (True SSoT) And DL Restore Time
-      #   if: steps.matrix_status.outputs.status != 'success'
-      #   run: |
-      #     cd /workdir/openwrt
-      #     echo "==== 遍历所有 Git 仓库并精准还原真实提交时间 ===="
-      #     find . -name ".git" -type d | while read gitdir; do
-      #         repo_dir=$(dirname "$gitdir")
-      #         echo "-> 正在处理 Git 仓库: $repo_dir"
-      #         cd "/workdir/openwrt/$repo_dir"
-      #         git log --format=%at --name-only | perl -ane '
-      #           if (/^(\d+)$/) { $t = $1; }
-      #           elsif (/^(\S+)$/) {
-      #             $f = $1;
-      #             if (-e $f && !-d $f && !$seen{$f}) {
-      #               utime($t, $t, $f);
-      #               $seen{$f} = 1;
-      #             }
-      #           }
-      #         '
-      #         cd /workdir/openwrt
-      #     done
+      - name: Git Restore Mtime (True SSoT) And DL Restore Time
+        if: steps.matrix_status.outputs.status != 'success'
+        run: |
+          cd /workdir/openwrt
+          echo "==== 遍历所有 Git 仓库并精准还原真实提交时间 ===="
+          find . -name ".git" -type d | while read gitdir; do
+              repo_dir=$(dirname "$gitdir")
+              echo "-> 正在处理 Git 仓库: $repo_dir"
+              cd "/workdir/openwrt/$repo_dir"
+              git log --format=%at --name-only | perl -ane '
+                if (/^(\d+)$/) { $t = $1; }
+                elsif (/^(\S+)$/) {
+                  $f = $1;
+                  if (-e $f && !-d $f && !$seen{$f}) {
+                    utime($t, $t, $f);
+                    $seen{$f} = 1;
+                  }
+                }
+              '
+              cd /workdir/openwrt
+          done
 
-      #     find /workdir/openwrt/dl -type f | xargs -r touch -t 200001010000
-      #     echo "✅ dl/ 时间戳逆转完成！"
+          find /workdir/openwrt/dl -type f | xargs -r touch -t 200001010000
+          echo "✅ dl/ 时间戳逆转完成！"
 
-      # - name: Restore Entire OpenWrt Cache from GHCR
-      #   id: restore_cache
-      #   if: steps.matrix_status.outputs.status != 'success' && github.event.inputs.force_rebuild != 'true'
-      #   run: |
+      - name: Restore Entire OpenWrt Cache from GHCR
+        id: restore_cache
+        if: steps.matrix_status.outputs.status != 'success' && github.event.inputs.force_rebuild != 'true'
+        run: |
 
-      #     df -hT
+          df -hT
 
-      #     REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
-      #     PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
-      #     IMAGE_NAME="ghcr.io/smallprogram/openwrt-base-cache-$PLATFORM_NAME:latest"
+          REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          PLATFORM_NAME=$(echo "${{ matrix.source_code_platform }}-${{ matrix.platform }}" | tr '[:upper:]' '[:lower:]')
+          IMAGE_NAME="ghcr.io/smallprogram/openwrt-base-cache-$PLATFORM_NAME:latest"
           
-      #     if docker pull $IMAGE_NAME; then
-      #       echo "==== 发现缓存，开始极速提取 ===="
-      #       cd /workdir
-      #       docker create --name cache_container $IMAGE_NAME /bin/true
+          if docker pull $IMAGE_NAME; then
+            echo "==== 发现缓存，开始极速提取 ===="
+            cd /workdir
+            docker create --name cache_container $IMAGE_NAME /bin/true
             
-      #       # 导出整个容器的打包文件
-      #       docker export cache_container > cache_exported.tar
-      #       docker rm cache_container
-      #       docker rmi $IMAGE_NAME -f
+            # 导出整个容器的打包文件
+            docker export cache_container > cache_exported.tar
+            docker rm cache_container
+            docker rmi $IMAGE_NAME -f
             
-      #       # 直接提取原名分块
-      #       tar -xf cache_exported.tar --wildcards "op_cache_raw_*" || true
+            # 直接提取原名分块
+            tar -xf cache_exported.tar --wildcards "op_cache_raw_*" || true
             
-      #       if ls op_cache_raw_* 1> /dev/null 2>&1; then
-      #          echo "==== 按顺序合并分块并还原到 OpenWrt ===="
-      #          # 直接 cat 合并，极其清爽
-      #          cat op_cache_raw_* | tar -I "zstd -T0" -xf - -C /workdir/openwrt/
+            if ls op_cache_raw_* 1> /dev/null 2>&1; then
+               echo "==== 按顺序合并分块并还原到 OpenWrt ===="
+               # 直接 cat 合并，极其清爽
+               cat op_cache_raw_* | tar -I "zstd -T0" -xf - -C /workdir/openwrt/
                
-      #          rm -f /workdir/cache_exported.tar /workdir/op_cache_raw_*
-      #          echo "✅ 缓存合并恢复完成！"
-      #       else
-      #          echo "⚠️ 未找到有效缓存分块！"
-      #       fi
-      #     else
-      #       echo "No cache found on GHCR. This will be a clean build."
-      #     fi
+               rm -f /workdir/cache_exported.tar /workdir/op_cache_raw_*
+               echo "✅ 缓存合并恢复完成！"
+            else
+               echo "⚠️ 未找到有效缓存分块！"
+            fi
+          else
+            echo "No cache found on GHCR. This will be a clean build."
+          fi
 
-      #     df -hT
+          df -hT
 
       - name: Compile Base (Tools, Toolchain, Kernel, LongTime Packages)
         id: compile_base
@@ -336,28 +336,28 @@ jobs:
       - name: Checkpoint Cache (Save Base to GHCR)
         if: steps.matrix_status.outputs.status != 'success' && steps.compile_base.outcome == 'success'
         run: |
-          # echo "==== 1. 智能探测 Base 是否更新 ===="
+          echo "==== 智能探测 Base 是否更新 ===="
           cd /workdir
           
           # 严谨的正则过滤：
           # 1. 必须在 staging_dir/host/stamp/ 目录下，且以 .tools_compile_ 开头
           # 2. 必须在 staging_dir/target-*/stamp/ 目录下，且名字严格叫 .target_prereq
           
-          # IGNORE_PATTERN="staging_dir/host/stamp/\.tools_compile_|staging_dir/target-[^/]+/stamp/\.target_prereq$|staging_dir/host/stamp/\.(zstd|flock|libdeflate|pkgconf|xz|tar|patch|m4)_"
+          IGNORE_PATTERN="staging_dir/host/stamp/\.tools_compile_|staging_dir/target-[^/]+/stamp/\.target_prereq$|staging_dir/host/stamp/\.(zstd|flock|libdeflate|pkgconf|xz|tar|patch|m4)_"
 
-          # CHANGED_BASE=$(find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null | \
-          #                 grep -E -v "$IGNORE_PATTERN" | \
-          #                 wc -l)
+          CHANGED_BASE=$(find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null | \
+                          grep -E -v "$IGNORE_PATTERN" | \
+                          wc -l)
 
-          # echo "--- Found $CHANGED_BASE newer stamp files ---"
+          echo "--- Found $CHANGED_BASE newer stamp files ---"
 
-          # if [ "$CHANGED_BASE" -eq 0 ]; then
-          #     echo "🎉 Base 阶段命中旧缓存，跳过本次 Checkpoint 存档！"
-          #     exit 0
-          # fi
+          if [ "$CHANGED_BASE" -eq 0 ]; then
+              echo "🎉 Base 阶段命中旧缓存，跳过本次 Checkpoint 存档！"
+              exit 0
+          fi
 
-          # find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null | \
-          #                 grep -E -v "$IGNORE_PATTERN"
+          find openwrt/build_dir openwrt/staging_dir -type f -newer /workdir/base_compilation_marker -path "*/stamp/*" 2>/dev/null | \
+                          grep -E -v "$IGNORE_PATTERN"
 
           
           
@@ -371,18 +371,18 @@ jobs:
           find /workdir/openwrt/dl -type f | xargs -r touch -t 200001010000
           echo "✅ dl/ 时间戳逆转完成！"
 
-          # echo "⚡ 检测到 $CHANGED_BASE 个新 stamp，触发缓存更新存档..."
-          # df -hT
-          # echo "==== 2. 自动修剪冗余版本 ===="
+          echo "⚡ 检测到 $CHANGED_BASE 个新 stamp，触发缓存更新存档..."
+          df -hT
+          echo "==== 自动修剪冗余版本 ===="
           
-          # for linux_dir in openwrt/build_dir/target-*/linux-*/; do
-          #     [ -d "$linux_dir" ] && (cd "$linux_dir" && ls -dt linux-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
-          # done
-          # [ -d "openwrt/build_dir" ] && (cd openwrt/build_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
-          # if [ -d "openwrt/staging_dir" ]; then
-          #     (cd openwrt/staging_dir && ls -dt target-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
-          #     (cd openwrt/staging_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
-          # fi
+          for linux_dir in openwrt/build_dir/target-*/linux-*/; do
+              [ -d "$linux_dir" ] && (cd "$linux_dir" && ls -dt linux-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+          done
+          [ -d "openwrt/build_dir" ] && (cd openwrt/build_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+          if [ -d "openwrt/staging_dir" ]; then
+              (cd openwrt/staging_dir && ls -dt target-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+              (cd openwrt/staging_dir && ls -dt toolchain-* 2>/dev/null | tail -n +2 | xargs -I {} rm -rf "{}")
+          fi
 
           echo "==== 打包与 5GB 分块 ===="
           cd /workdir/openwrt
