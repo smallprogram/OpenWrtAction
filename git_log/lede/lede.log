@@ -1,0 +1,9 @@
+<details> <summary> <b>lede new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/195fd0ecb411639d0ad302397f43cb35132851bf...05513ed969da2537db9c4cebc7b90048bce7a215)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+05513ed96|Xiaok|Fri Apr 24 18:10:11 2026 +0800|mt76: fix build with linux kernel 5.10
+</details>
