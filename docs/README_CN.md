@@ -98,6 +98,7 @@
 
 ### 📡 网络与代理
 ```
+CONFIG_PACKAGE_luci-app-adguardhome=y
 CONFIG_PACKAGE_luci-app-ddns-go=y
 CONFIG_PACKAGE_luci-app-homeproxy=y
 CONFIG_PACKAGE_luci-app-mosdns=y
