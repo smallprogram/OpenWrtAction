@@ -1,9 +1,15 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/cdf76cd3997623e9f448e2aeb7b24cdc08f6fb55...4e1f213c01cff0e41ddb68a85234615a2bfd6de2)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/4e1f213c01cff0e41ddb68a85234615a2bfd6de2...3459664467d5070dcc236b81a7d13b142058adad)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-4e1f213|A-BO|Sun Apr 26 01:49:18 2026 +0800|luci: improve curl success handling in subscribe/rule_update
+3459664|A-BO|Tue Apr 28 20:25:00 2026 +0800|luci: remove `echForceQuery` of xray
+dc17b76|A-BO|Tue Apr 28 13:06:43 2026 +0800|luci: fix dns redirect exposing port 53 to wan (#4346)
+a0ab013|A-BO|Mon Apr 27 22:34:27 2026 +0800|luci: exclude special domain for nodes
+b29ee1f|A-BO|Mon Apr 27 17:22:31 2026 +0800|luci: fix urltest disable logic in node list
+4de1445|A-BO|Mon Apr 27 17:08:14 2026 +0800|luci: unify the configuration field name for `pinnedPeerCertSha256`
+4aae803|A-BO|Sun Apr 26 20:40:57 2026 +0800|luci: add fakedns enabled conditions for acl config
+34eb704|A-BO|Sun Apr 26 20:20:59 2026 +0800|luci: support xray dns outbound rules
 </details>

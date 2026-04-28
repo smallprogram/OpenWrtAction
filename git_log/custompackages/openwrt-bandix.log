@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt-bandix new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/timsaya/openwrt-bandix/compare/7670250d28c66c8b81abc6457db69597ac6cf97a...0c71350b6ed125cf5c6caa90e1e6eca004f4b827)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-0c71350|stefanlei|Sat Apr 25 14:59:18 2026 +0800|Bump Bandix package to 0.12.8
-</details>

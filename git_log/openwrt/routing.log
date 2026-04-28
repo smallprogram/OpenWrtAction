@@ -1,0 +1,9 @@
+<details> <summary> <b>routing new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/openwrt/routing/compare/82a42869933273b95a1b9295a90880ed66ecc60b...b2097c85bef85251364f59a6b2a3ed1f9f5c0c21)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+b2097c8|Packet Please|Sat Apr 25 23:07:42 2026 +0200|bird3: update to 3.2.1
+</details>

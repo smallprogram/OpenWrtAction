@@ -1,10 +1,13 @@
 <details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/ba36eb35240df90da6eb43e0c9a4f79081163194...6b57866573f78151578de987cc5159b2be383b88)  
+#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/6b57866573f78151578de987cc5159b2be383b88...820f465b9922519912e479c8161c22e122377821)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-6b57866|zxl hhyccc|Sun Apr 26 02:12:52 2026 +0800|Merge pull request #1940 from zxlhhyccc/tuic
-7299493|zxlhhyccc|Sat Apr 25 21:45:10 2026 +0800|luci-app-ssr-plus: add `cwndmultiplier` support for mkcp and remove its rarely used config options
+820f465|zxl hhyccc|Tue Apr 28 23:49:05 2026 +0800|luci-app-ssr-plus: Fix the issue with Xray generating configuration.
+09e555a|zxl hhyccc|Tue Apr 28 20:46:33 2026 +0800|Merge pull request #1941 from zxlhhyccc/tuic
+e1541f8|zxl hhyccc|Mon Apr 27 22:50:59 2026 +0800|hysteria: update to 2.8.2
+bc6fea1|zxl hhyccc|Mon Apr 27 22:50:11 2026 +0800|xray-core: update to 26.4.25
+660ee83|zxlhhyccc|Mon Apr 27 21:52:23 2026 +0800|luci-app-ssr-plus: improve curl success handling in subscribe_update.
 </details>

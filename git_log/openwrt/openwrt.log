@@ -1,0 +1,10 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/6cbb072b57e9d72d07097902d975f8a13b768e72...956a6e2c234abc565ff913fc0fcfdc43b186cf31)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+956a6e2c23|Lars Gierth|Sat Apr 25 17:33:06 2026 +0200|toolchain: gcc: fix include memory against GCC 16
+d87f1e2305|Robert Marko|Wed Apr 22 16:48:18 2026 +0200|toolchain: gcc: 14/15: fix libcody compilation with GCC16
+</details>
