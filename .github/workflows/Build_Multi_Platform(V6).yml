@@ -238,6 +238,7 @@ jobs:
           name: release_tag
           path: release.txt
           retention-days: 5
+          overwrite: true
 
       - name: Create Release Tag
         uses: softprops/action-gh-release@v3
@@ -633,12 +634,12 @@ jobs:
 
           echo "FIRMWARE=$firmware_path" >> $GITHUB_OUTPUT
 
-      - name: Download Tags (For Release Body)
-        if: steps.organize.outcome == 'success' && steps.matrix_status.outputs.status != 'success'
-        uses: actions/download-artifact@v8
-        with:
-          name: release_tag
-          path: release_tag_download
+      # - name: Download Tags (For Release Body)
+      #   if: steps.organize.outcome == 'success' && steps.matrix_status.outputs.status != 'success'
+      #   uses: actions/download-artifact@v8
+      #   with:
+      #     name: release_tag
+      #     path: release_tag_download
 
       - name: Upload Firmware To Release Directly
         if: steps.organize.outcome == 'success' && steps.matrix_status.outputs.status != 'success'
@@ -647,7 +648,7 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         with:
           tag_name: ${{ needs.job_init.outputs.output_release_tag }}
-          body_path: release_tag_download/release.txt
+          # body_path: release_tag_download/release.txt
           files: |
             ${{ steps.organize.outputs.FIRMWARE }}/*
 
@@ -696,9 +697,10 @@ jobs:
       - name: Upload Tags To Artifact
         uses: actions/upload-artifact@v7
         with:
-          name: release_tag_final_attempt_${{ fromJSON(github.run_attempt) }}
+          name: release_tag
           path: release.txt
           retention-days: 5
+          overwrite: true
 
       - name: Update Release Tag
         uses: softprops/action-gh-release@v3
