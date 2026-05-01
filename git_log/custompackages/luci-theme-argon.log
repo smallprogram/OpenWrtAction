@@ -1,0 +1,10 @@
+<details> <summary> <b>luci-theme-argon new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/jerrykuku/luci-theme-argon/compare/f075cb18cb83d0108a18f79b17888420e3d2d986...a5d2f8afd39cb41a7ac1a8791c0e128ff67042bf)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+a5d2f8a|老竭力|Wed Apr 29 17:35:48 2026 +0800|Merge pull request #670 from Nonosword/fix/safari-rendering
+82e143f|Codex|Sat Apr 25 01:41:14 2026 +0800|fix safari rendering issues
+</details>

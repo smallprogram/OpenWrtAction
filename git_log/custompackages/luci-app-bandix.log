@@ -1,0 +1,9 @@
+<details> <summary> <b>luci-app-bandix new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/timsaya/luci-app-bandix/compare/9156c927f0183286e5c84c97f8b1ba3563b23cf9...8ac5ea28f50c7b01c49b1c7be3b5273cf59c3f72)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+8ac5ea2|stefanlei|Fri May 1 11:52:53 2026 +0800|docs: clarify single-interface vs multi-interface selection
+</details>

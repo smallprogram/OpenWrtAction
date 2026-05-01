@@ -1,0 +1,13 @@
+<details> <summary> <b>luci-app-mosdns new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/sbwml/luci-app-mosdns/compare/6a781327e18d3a2dbe1ec1aacb63449633246ade...0f9683c9010e2dac324de399dff7ffc322e8cfb4)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+0f9683c|sbwml|Fri May 1 10:57:30 2026 +0800|luci-app-mosdns: switch default GeoIP database update to lite version
+f14e795|sbwml|Fri May 1 10:47:27 2026 +0800|docs: update README documentation
+6fab374|sbwml|Fri May 1 10:26:04 2026 +0800|luci-app-mosdns: optimize rule update logic to avoid ubus timeout
+20996f7|sbwml|Fri May 1 09:59:16 2026 +0800|luci-app-mosdns: block list use the `adblock_set` database plugin
+94c698b|sbwml|Fri May 1 09:45:16 2026 +0800|mosdns: add adblock_set database plugin
+</details>

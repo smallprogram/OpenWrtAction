@@ -1,0 +1,9 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/luci/compare/a58254b014961e229b645f45616c5496d69039ce...b04f6342ea38990103bb7f87c115a7704e7ea9b7)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+b04f6342ea|Tianling Shen|Tue Apr 28 11:46:33 2026 +0800|luci-app-rtp2httpd: add luci support for rtp2httpd
+</details>

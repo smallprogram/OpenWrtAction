@@ -1,10 +1,24 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/6cbb072b57e9d72d07097902d975f8a13b768e72...956a6e2c234abc565ff913fc0fcfdc43b186cf31)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/956a6e2c234abc565ff913fc0fcfdc43b186cf31...8a854377380afcb27b92e8fc74ba1ad4e4502c5a)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-956a6e2c23|Lars Gierth|Sat Apr 25 17:33:06 2026 +0200|toolchain: gcc: fix include memory against GCC 16
-d87f1e2305|Robert Marko|Wed Apr 22 16:48:18 2026 +0200|toolchain: gcc: 14/15: fix libcody compilation with GCC16
+8a85437738|John Audia|Mon Apr 27 14:44:21 2026 -0400|kernel: bump 6.12 to 6.12.84
+098ecd681b|John Audia|Wed Apr 22 15:59:11 2026 -0400|kernel: bump 6.12 to 6.12.83
+ff50ccf51f|John Audia|Sat Apr 18 11:26:10 2026 -0400|kernel: bump 6.12 to 6.12.82
+b00d26376e|John Audia|Mon Apr 13 08:27:41 2026 -0400|kernel: bump 6.12 to 6.12.81
+c3d15a6c8d|John Audia|Thu Apr 2 08:41:46 2026 -0400|kernel: bump 6.12 to 6.12.80
+50c18f8214|Fil Dunsky|Wed Apr 29 15:57:17 2026 +0300|mediatek: nmbm fix for Huasifei WH3000 Pro NAND
+a3a3dd68b8|Christoph Krapp|Mon Apr 27 21:32:29 2026 +0200|ipq50xx: add label-mac-device to Linksys MX5500
+e840fbfdf9|Rany Hany|Mon Apr 20 12:47:26 2026 +0300|wifi-scripts: ucode: add missing fields for station/vlan schema
+8bb268a116|Rany Hany|Thu Mar 26 19:16:37 2026 +0200|wifi-scripts: ucode: add bridge_isolate and network_vlan to schema
+50d801db75|Hauke Mehrtens|Sat Apr 18 19:47:01 2026 +0200|build: do not set CCACHE_COMPILERCHECK
+c2cf3abde9|Cerrone Diamant|Mon Apr 20 16:07:14 2026 +0200|uboot-at91: fix wrong BUILD_DEVICES for sama5d4_xplained_nandflash
+d2722eadf2|Christian Marangi|Wed Apr 15 14:46:25 2026 +0200|airoha: backport QDMA rx queue descriptor setup optimization
+919361fdb8|Christian Marangi|Wed Apr 15 14:38:08 2026 +0200|airoha: fix compilation error from VIP backport patch
+49d7ee7d5b|Christian Marangi|Wed Apr 15 10:13:11 2026 +0200|airoha: backport patches for memleak and multi-serdes
+d78923d05e|Christian Marangi|Wed Apr 1 09:07:38 2026 +0200|airoha: backport minor fix for Ethernet offload
+
 </details>

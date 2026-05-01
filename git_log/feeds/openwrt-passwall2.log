@@ -1,0 +1,21 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/09799c46d267a6b5839005955315b09580d7b8a2...a708e1d9d7fca257a82c4f56daf0c9b25ef230b2)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+a708e1d|handsomeji|Fri May 1 14:21:52 2026 +0800|luci: 26.5.1
+ea664b2|A-BO|Tue Apr 28 13:06:43 2026 +0800|luci: fix dns redirect exposing port 53 to wan
+eda86fa|A-BO|Mon Apr 27 17:08:14 2026 +0800|luci: unify the configuration field name for `pinnedPeerCertSha256`
+2106712|A-BO|Sun Apr 26 01:49:18 2026 +0800|luci: improve curl success handling in subscribe
+629bcfc|A-BO|Sat Apr 25 01:02:11 2026 +0800|luci: optimize
+b7470a8|A-BO|Sat Apr 25 00:27:54 2026 +0800|luci: restore mkcp mtu config options
+7acc862|A-BO|Thu Apr 23 21:45:35 2026 +0800|luci: optimize the display effect of some tables
+814fcc2|handsomeji|Mon Apr 27 18:32:04 2026 +0800|luci: optimize
+01b87b1|A-BO|Wed Apr 22 18:00:32 2026 +0800|luci: optimize `exec_call` function in api
+d54fc54|A-BO|Wed Apr 22 11:23:43 2026 +0800|luci: add `quic` protocol type for routing rules
+45d49e7|A-BO|Wed Apr 22 02:48:22 2026 +0800|luci: optimize subscribe & rule update logic
+e529fb4|A-BO|Wed Apr 22 00:15:47 2026 +0800|luci: rule update single instance running
+61cf2cf|A-BO|Tue Apr 21 23:10:04 2026 +0800|luci: optimize and fix subscribe
+</details>
