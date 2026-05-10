@@ -5,6 +5,15 @@ git_folders=(openwrt immortalwrt lede feeds custompackages)
 
 cd $GITHUB_WORKSPACE
 
+# Ensure the log file ends with a newline before appending new entries.
+# This prevents two repos from being concatenated into one line.
+ensure_log_trailing_newline() {
+    local log_file="$1"
+    if [ -f "$log_file" ] && [ -s "$log_file" ] && [ -n "$(tail -c 1 "$log_file" 2>/dev/null)" ]; then
+        echo >> "$log_file"
+    fi
+}
+
 # 初始化 release.txt
 echo "[![](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/$release_tag/total?style=flat-square)](https://github.com/smallprogram/MyAction)"> release.txt
 
@@ -105,13 +114,16 @@ for git_folder in "${git_folders[@]}"; do
         echo "$git_folder-$OUTPUT_FILE Begin git log update-----------------------------------------------------------"
         echo "SHAEnd:$SHA_End"
 
+        LOG_FILE="git_log/$git_folder/log"
+        ensure_log_trailing_newline "$LOG_FILE"
+
         # 检查 log 文件是否存在且是否包含 OUTPUT_FILE 条目
-        SHA_Begin=$(grep "^${OUTPUT_FILE}:" "git_log/${git_folder}/log" | cut -d: -f2)
+        SHA_Begin=$(grep "^${OUTPUT_FILE}:" "$LOG_FILE" | cut -d: -f2)
         echo "SHABegin:$SHA_Begin"
 
         # 如果 log 文件不存在或为空，或者没有 OUTPUT_FILE 条目，初始化 log 文件
-        if [ ! -f "git_log/$git_folder/log" ] || ! grep -q "^${OUTPUT_FILE}:" "git_log/$git_folder/log"; then
-            echo "${OUTPUT_FILE}:${SHA_End}" >> "git_log/$git_folder/log"
+        if [ ! -f "$LOG_FILE" ] || ! grep -q "^${OUTPUT_FILE}:" "$LOG_FILE"; then
+            echo "${OUTPUT_FILE}:${SHA_End}" >> "$LOG_FILE"
             SHA_Begin=""
         fi
 
@@ -123,7 +135,7 @@ for git_folder in "${git_folders[@]}"; do
             echo "<b> It is detected that $OUTPUT_FILE has an illegal SHA value. It is possible that $OUTPUT_FILE has git rebase behavior. The relevant git update log cannot be counted. Please wait for the next compilation time.</b>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "" >>"git_log/$git_folder/$OUTPUT_FILE.log"
             echo "</details>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
-            sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" "git_log/$git_folder/log"
+            sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" "$LOG_FILE"
             UPDATE_COUNT=$((UPDATE_COUNT + 1))
         elif [ -z "$SHA_Begin" ] || [ "$SHA_Begin" != "$SHA_End" ]; then
             echo "<details> <summary> <b>$TITLE_MESSAGE :rocket: </b> </summary>" >>"git_log/$git_folder/$OUTPUT_FILE.log"
@@ -150,7 +162,7 @@ for git_folder in "${git_folders[@]}"; do
             echo "     |-----------------------------------|"
             echo "     $OUTPUT_FILE has update log"
             echo "     |-----------------------------------|"
-            sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" "git_log/$git_folder/log"
+            sed -i "s/^${OUTPUT_FILE}:.*/${OUTPUT_FILE}:${SHA_End}/" "$LOG_FILE"
             UPDATE_COUNT=$((UPDATE_COUNT + 1))
         # else
         #     # 没有更新的情况，生成默认日志
