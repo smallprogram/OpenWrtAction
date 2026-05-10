@@ -1,13 +1,10 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/luci/compare/3e514b4ba7811751d7e1629a6d6d35b5bf37973e...ce96847e09fb696d62592a345716f9bf872318db)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/luci/compare/ce96847e09fb696d62592a345716f9bf872318db...7511b79446474b196cc8782ba3635cf9e823eb5d)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-ce96847e09|Tianling Shen|Wed May 6 15:57:37 2026 +0800|luci-app-homeproxy: bump to latest git HEAD
-e10900c391|Tianling Shen|Wed May 6 15:55:24 2026 +0800|Merge Official Source
-650a6ca36d|Dirk Brenken|Mon May 4 19:45:08 2026 +0200|luci-app-banip: update 1.8.8-2
-c1d16b5632|Stan Grishin|Sat May 2 01:06:37 2026 +0000|luci-app-https-dns-proxy: update to 2026.03.18-1
-a45b345311|Dirk Brenken|Sun May 3 20:06:13 2026 +0200|luci-app-adblock: update 4.5.5-2
+7511b79446|Tianling Shen|Sat May 9 11:29:41 2026 +0800|luci-app-qbittorrent: prefer official qBittorrent version
+73c4aeef10|Interesting Gang|Fri Apr 17 17:59:23 2026 +0800|luci-app-passwall: bump to 26.5.3
 </details>

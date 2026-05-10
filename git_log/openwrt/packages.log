@@ -1,16 +1,19 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/5d9fd8b891161bb64358e3a6f5db3f604251eb76...609846743b14a10e3c5cbd466544797c9f11f323)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/609846743b14a10e3c5cbd466544797c9f11f323...831e9d510837b36f176fb78dcd9cbcc216d0c174)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-609846743|Chester A. Unal|Sat May 2 18:56:47 2026 +0100|bsbf-resources: update to GIT HEAD of 2026-05-06
-51fdb917c|Chester A. Unal|Tue May 5 08:58:20 2026 +0100|bsbf-bonding: fix checking if interface is a bridge
-eb041d2fe|Alexandru Ardelean|Tue May 5 09:49:32 2026 +0300|avahi: update to 0.9-rc4
-fc6717da0|Rosen Penev|Thu Jan 29 21:26:43 2026 -0800|ffmpeg: update to 6.1.4
-8c48a7b3b|John Audia|Tue Apr 28 14:35:58 2026 -0400|rsync: update to 3.4.2
-fa03f55fc|Sander van Deijck|Sat May 2 23:31:15 2026 +0200|openvpn: disable wolfssl support
-deef5e5f0|Sander van Deijck|Sat May 2 20:22:11 2026 +0200|openvpn: update to 2.7.4
-a3bd79d5b|Dirk Brenken|Mon May 4 19:42:14 2026 +0200|banip: update 1.8.8-2
+831e9d510|Hannu Nyman|Sun May 10 15:59:04 2026 +0300|haveged: update to 1.9.20
+e85652958|Alan Feng|Tue May 5 16:17:43 2026 +0800|nebula: bump version to 1.10.3
+243c066cb|Dirk Brenken|Sat May 9 21:38:20 2026 +0200|travelmate: release 2.4.5-1
+957e9c41d|Federico Capoano|Mon May 4 18:35:29 2026 -0300|openwisp-monitoring: upgrade to 0.3.1
+445d58061|Tianling Shen|Tue Apr 14 10:42:32 2026 +0800|xray-core: Update to 26.3.27
+82e8db1b8|Tianling Shen|Tue Apr 14 10:41:35 2026 +0800|yq: Update to 4.52.5
+48a86082c|Dharmik Parmar|Wed Apr 29 19:33:54 2026 +0530|ddns-scripts: fix option name in updater messages
+4125370fe|Tim Flubshi|Sun Apr 26 18:00:44 2026 +0200|ddns-scripts: netcup.com adjust update error path
+f168b3780|Tim Flubshi|Sun Apr 26 17:52:27 2026 +0200|ddns-scripts: netcup.com use json_load_file
+9ec9a2c70|Tim Flubshi|Sun Apr 26 17:47:02 2026 +0200|ddns-scripts: fix netcup.com readonly variable
+81ebb0b3e|Stan Grishin|Mon May 4 03:01:56 2026 +0000|https-dns-proxy: update to 2026.03.18-2
 </details>

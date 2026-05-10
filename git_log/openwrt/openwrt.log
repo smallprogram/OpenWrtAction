@@ -1,13 +1,18 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/7014bb7ee2c1abc8647e9c0ec1c3c107a01def2e...8190b4edad64f8caaaaa5a80b8e7b5cde38986e1)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/8190b4edad64f8caaaaa5a80b8e7b5cde38986e1...e850a972b5ccb8c95efbad6d4de068321f567228)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-8190b4edad|Hauke Mehrtens|Tue May 5 00:48:59 2026 +0200|OpenWrt v25.12.3: revert to branch defaults
-a5652f421c|Hauke Mehrtens|Tue May 5 00:48:50 2026 +0200|OpenWrt v25.12.3: adjust config defaults
-6639b15f62|Magnus Kroken|Thu Apr 23 20:12:51 2026 +0200|mbedtls: backport upstream patches to fix TLS 1.2 client issues
-55b55c2d1a|Rosen Penev|Mon Mar 16 22:17:14 2026 -0700|ramips: wn575a3: fix eeprom size for 5ghz wifi
-051ec7f11d|Rosen Penev|Mon Mar 16 20:24:01 2026 -0700|ramips: cpe200: fix eeprom size
+e850a972b5|Hauke Mehrtens|Thu Apr 30 21:42:43 2026 +0200|mac80211: bump to version 6.18.26
+0bcdcf67d7|Dmitry Mostovoy|Mon Feb 9 11:43:41 2026 -0500|mediatek: add cudy wr3000h-v1 ubootmod
+194bd76e57|Dmitry Mostovoy|Mon Feb 9 04:52:38 2026 -0500|mediatek: add cudy wr3000e-v1 ubootmod
+8afab079a5|Dmitry Mostovoy|Mon Feb 9 04:52:03 2026 -0500|mediatek: add cudy wr3000s-v1 ubootmod
+ddba80d21c|Dmitry Mostovoy|Mon Feb 9 04:51:31 2026 -0500|mediatek: add cudy wr3000p-v1 ubootmod
+79359ffe47|Dmitry Mostovoy|Mon Feb 9 04:51:15 2026 -0500|arm-trusted-firmware-mediatek: add Cudy DDR4 target
+236bd27019|Oskari Lemmela|Fri Nov 19 07:36:22 2021 +0200|ath79: add support for MikroTik RouterBOARD 960PGS
+906a8d7f70|Chester A. Unal|Tue Feb 24 15:39:36 2026 +0200|ath79: mikrotik: compile SWCONFIG and AR8216_PHY as modules
+9e7421174c|Sander Schutten|Wed Jan 15 08:38:17 2025 +0000|intel-microcode: fix dirty build
+530366cdfd|Florian Maurer|Wed Apr 15 01:05:45 2026 +0200|wifi-scripts: fix basic_rate mapping in supplicant ucode
 </details>

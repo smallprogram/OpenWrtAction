@@ -1,25 +1,25 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/8f0487e3cd881c908634cd58d5f19825e9004165...9d21ae39588daddd6d0abc23697034da32b7675b)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/9d21ae39588daddd6d0abc23697034da32b7675b...1f4ddb95413aadf502ec27ecb503077a9f9999e8)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-9d21ae395|David Mandy|Fri May 1 13:40:28 2026 +0800|ddns-go: bump to 6.17.0
-bc089de06|Tianling Shen|Wed May 6 15:48:29 2026 +0800|Merge Official Source
-fc6717da0|Rosen Penev|Thu Jan 29 21:26:43 2026 -0800|ffmpeg: update to 6.1.4
-8c48a7b3b|John Audia|Tue Apr 28 14:35:58 2026 -0400|rsync: update to 3.4.2
-fa03f55fc|Sander van Deijck|Sat May 2 23:31:15 2026 +0200|openvpn: disable wolfssl support
-deef5e5f0|Sander van Deijck|Sat May 2 20:22:11 2026 +0200|openvpn: update to 2.7.4
-a3bd79d5b|Dirk Brenken|Mon May 4 19:42:14 2026 +0200|banip: update 1.8.8-2
-5d9fd8b89|Stan Grishin|Wed Apr 29 17:38:35 2026 +0000|https-dns-proxy: update to 2026.03.18-1
-8b7f590ba|Dirk Brenken|Sun May 3 19:59:52 2026 +0200|adblock: update 4.5.5-2
-4dc93bb79|Dmitriy Zh|Sun Apr 12 08:58:12 2026 +0000|fix: remove depends on PACKAGE_lpac from Config.in
-54ac30fa5|Zhitomirskiy Dmitriy|Tue Mar 31 07:53:51 2026 +0000|lpac: upgrade to 2.3.0 - enable uqmi and LPAC_WITH_PCSC
-16eba2e55|Vladimir Ulrich|Fri May 1 19:15:41 2026 +0300|zoneinfo: updated to 2026b release
-db3b31511|Dirk Brenken|Thu Apr 30 11:36:40 2026 +0200|banip: release 1.8.8-1
-28f4a2e87|Sandro Jäckel|Tue Apr 7 23:06:36 2026 +0200|tailscale: update to 1.96.4
-35c074cc0|Tung-Yi Chen|Fri Mar 6 02:24:22 2026 +0800|tailscale: fix fw_mode env by using append_param
+1f4ddb954|Tianling Shen|Sat May 9 10:45:45 2026 +0800|qt6base: fix build without cssparser
+b584a229f|Tianling Shen|Thu Mar 12 16:19:30 2026 +0800|qt6base: Update to 6.9.3
+c7c573d47|Tianling Shen|Thu Mar 12 16:19:04 2026 +0800|qt6tools: Update to 6.9.3
+8caafefde|Tianling Shen|Sat May 9 11:57:19 2026 +0800|Merge Official Source
+0c174ca5d|ImmortalWrt AutoUpdate Bot|Sat May 9 10:12:35 2026 +0800|v2ray-plugin: Update to 5.49.0
+462e64454|ImmortalWrt AutoUpdate Bot|Fri Mar 27 10:27:07 2026 +0800|v2ray-plugin: Update to 5.48.0
+e97dca3e8|ImmortalWrt AutoUpdate Bot|Fri Feb 6 12:24:03 2026 +0800|v2ray-plugin: Update to 5.44.1
+00707c2ae|ImmortalWrt AutoUpdate Bot|Sat May 9 10:23:48 2026 +0800|cdnspeedtest: Update to 2.3.5
+88925e1db|ImmortalWrt AutoUpdate Bot|Sat May 9 10:20:10 2026 +0800|q: Update to 0.19.12
+7d76a9b02|Interesting Gang|Sat May 9 10:15:48 2026 +0800|geoview: bump to 0.2.6
+7b53ceb07|Tianling Shen|Sat May 9 11:20:45 2026 +0800|qbittorrent: add official version of qBittorrent
+445d58061|Tianling Shen|Tue Apr 14 10:42:32 2026 +0800|xray-core: Update to 26.3.27
+82e8db1b8|Tianling Shen|Tue Apr 14 10:41:35 2026 +0800|yq: Update to 4.52.5
+48a86082c|Dharmik Parmar|Wed Apr 29 19:33:54 2026 +0530|ddns-scripts: fix option name in updater messages
+4125370fe|Tim Flubshi|Sun Apr 26 18:00:44 2026 +0200|ddns-scripts: netcup.com adjust update error path
 
 
 </details>
