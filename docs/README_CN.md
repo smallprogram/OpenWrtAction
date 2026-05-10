@@ -95,6 +95,9 @@
 精选插件配置，涵盖网络加速、主题美化、系统管理等常用功能。
 
 ![](https://img.shields.io/badge/Visual_Studio_Code_SSH-Support-green)
+![](https://img.shields.io/badge/Dropbear_SSH-port2222-green)
+![](https://img.shields.io/badge/OpenSSH-port22-green)
+
 
 ### 📡 网络与代理
 ```
@@ -116,6 +119,7 @@ CONFIG_PACKAGE_luci-app-zerotier=y
 ```
 ### ⚙️ 系统管理与工具
 ```
+CONFIG_PACKAGE_luci-app-ghfu=y
 CONFIG_PACKAGE_luci-app-commands=y
 CONFIG_PACKAGE_luci-app-ramfree=y
 CONFIG_PACKAGE_luci-app-hd-idle=y
@@ -163,6 +167,11 @@ CONFIG_PACKAGE_luci-theme-openwrt=y
 CONFIG_PACKAGE_luci-theme-openwrt-2020=y
 ```
 ---
+
+### luci-app-ghfu
+
+可通过luci直接更新该仓库的最新固件，省去手动更新的繁琐过程，详情参考 https://github.com/smallprogram/luci-app-ghfu
+
 
 [![Star History Chart](https://api.star-history.com/svg?repos=smallprogram/OpenWrtAction&type=Date)](https://star-history.com/#smallprogram/OpenWrtAction&Date)
 
