@@ -627,7 +627,7 @@ jobs:
           if [[ "${{ matrix.source_code_platform }}" == "lede" ]]; then
               for file in openwrt-*; do
                   if [[ -f "$file" ]]; then
-                      mv "$file" "${file/openwrt-/lean-}"
+                      mv "$file" "${file/openwrt-/lede-}"
                   fi
               done
           fi
