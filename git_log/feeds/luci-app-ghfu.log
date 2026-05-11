@@ -1,5 +1,15 @@
 <details> <summary> <b>luci-app-ghfu new commit log :rocket: </b> </summary>
 
-<b>Initial commit log for luci-app-ghfu, no previous SHA.</b>
+#### [:mega: Full Changelog. ](https://github.com/smallprogram/luci-app-ghfu/compare/122a629e0235023ad3c30030a9bff39a72664caf...8a4b128655b1d11bacb208d961b29228c772ca21)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
+SHA|Author|Date|Message
+-|-|-|-
+8a4b128|David Mandy|Mon May 11 22:24:22 2026 +0800|LuCI: bump version to 1.1.2 fixes some error
+e26f5b5|David Mandy|Mon May 11 22:05:25 2026 +0800|LuCI: bump version to 1.1.1 (#2)
+1adf1c8|David Mandy|Mon May 11 21:24:11 2026 +0800|Update README with project details and image
+cd5dcba|David Mandy|Mon May 11 21:06:36 2026 +0800|luci: bump version to 1.1.0 (#1)
+262c3c3|David Mandy|Mon May 11 11:12:55 2026 +0800|Update README with project details and link
+4fbbcff|David Mandy|Mon May 11 07:27:30 2026 +0800|fix: adapt dark theme via JS luminance detection
+828b77c|David Mandy|Mon May 11 03:47:21 2026 +0800|add license
 </details>

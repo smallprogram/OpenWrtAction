@@ -1,18 +1,10 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/8190b4edad64f8caaaaa5a80b8e7b5cde38986e1...e850a972b5ccb8c95efbad6d4de068321f567228)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/e850a972b5ccb8c95efbad6d4de068321f567228...80f009766f1fca1f538a99f383cc7f27eff0e41a)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-e850a972b5|Hauke Mehrtens|Thu Apr 30 21:42:43 2026 +0200|mac80211: bump to version 6.18.26
-0bcdcf67d7|Dmitry Mostovoy|Mon Feb 9 11:43:41 2026 -0500|mediatek: add cudy wr3000h-v1 ubootmod
-194bd76e57|Dmitry Mostovoy|Mon Feb 9 04:52:38 2026 -0500|mediatek: add cudy wr3000e-v1 ubootmod
-8afab079a5|Dmitry Mostovoy|Mon Feb 9 04:52:03 2026 -0500|mediatek: add cudy wr3000s-v1 ubootmod
-ddba80d21c|Dmitry Mostovoy|Mon Feb 9 04:51:31 2026 -0500|mediatek: add cudy wr3000p-v1 ubootmod
-79359ffe47|Dmitry Mostovoy|Mon Feb 9 04:51:15 2026 -0500|arm-trusted-firmware-mediatek: add Cudy DDR4 target
-236bd27019|Oskari Lemmela|Fri Nov 19 07:36:22 2021 +0200|ath79: add support for MikroTik RouterBOARD 960PGS
-906a8d7f70|Chester A. Unal|Tue Feb 24 15:39:36 2026 +0200|ath79: mikrotik: compile SWCONFIG and AR8216_PHY as modules
-9e7421174c|Sander Schutten|Wed Jan 15 08:38:17 2025 +0000|intel-microcode: fix dirty build
-530366cdfd|Florian Maurer|Wed Apr 15 01:05:45 2026 +0200|wifi-scripts: fix basic_rate mapping in supplicant ucode
+80f009766f|Robert Marko|Mon May 11 10:49:09 2026 +0200|microchipsw: fix LAN8814 QSGMII soft reset
+7044345016|Mikhail Zhilkin|Tue Apr 7 19:53:33 2026 +0300|mediatek: cudy nand: fix wrong nmbm configuration
 </details>

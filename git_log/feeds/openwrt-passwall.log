@@ -1,15 +1,10 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/1ff731bd5461d31b9fa737b3b07930146260821e...016a9416d71de45cad6026beb82be947a86ce4f9)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/016a9416d71de45cad6026beb82be947a86ce4f9...32ac46d42911453da27ced0247e70156016e0a4f)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-016a941|A-BO|Sat May 9 18:09:32 2026 +0800|luci: optimize xray balancing fallback node loop detection
-15f7c1f|A-BO|Sat May 9 13:43:01 2026 +0800|luci: optimize the logic of xray balancing fallback
-49b171e|A-BO|Sat May 9 13:02:31 2026 +0800|Revert "luci: rename xray inbounds' `clients/accounts` to `users` > 26.5.3"
-1ed88d1|A-BO|Sat May 9 12:59:51 2026 +0800|luci: optimize the logic of adding fakeip rule in the firewall
-f1bf89b|A-BO|Sat May 9 00:44:55 2026 +0800|luci: remove tuic-client
-a2ae3aa|A-BO|Fri May 8 22:37:05 2026 +0800|luci: remove trojan-plus
-20eb1a7|A-BO|Thu May 7 22:20:41 2026 +0800|luci: rename xray inbounds' `clients/accounts` to `users` > 26.5.3
+32ac46d|A-BO|Mon May 11 20:58:48 2026 +0800|luci: bump to 26.5.11
+9f70c20|A-BO|Mon May 11 20:29:37 2026 +0800|luci: optimize log related
 </details>

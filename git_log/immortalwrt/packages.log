@@ -1,25 +1,10 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/9d21ae39588daddd6d0abc23697034da32b7675b...1f4ddb95413aadf502ec27ecb503077a9f9999e8)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/1f4ddb95413aadf502ec27ecb503077a9f9999e8...3e645c565bbddc487557419a3daca296b74574e7)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-1f4ddb954|Tianling Shen|Sat May 9 10:45:45 2026 +0800|qt6base: fix build without cssparser
-b584a229f|Tianling Shen|Thu Mar 12 16:19:30 2026 +0800|qt6base: Update to 6.9.3
-c7c573d47|Tianling Shen|Thu Mar 12 16:19:04 2026 +0800|qt6tools: Update to 6.9.3
-8caafefde|Tianling Shen|Sat May 9 11:57:19 2026 +0800|Merge Official Source
-0c174ca5d|ImmortalWrt AutoUpdate Bot|Sat May 9 10:12:35 2026 +0800|v2ray-plugin: Update to 5.49.0
-462e64454|ImmortalWrt AutoUpdate Bot|Fri Mar 27 10:27:07 2026 +0800|v2ray-plugin: Update to 5.48.0
-e97dca3e8|ImmortalWrt AutoUpdate Bot|Fri Feb 6 12:24:03 2026 +0800|v2ray-plugin: Update to 5.44.1
-00707c2ae|ImmortalWrt AutoUpdate Bot|Sat May 9 10:23:48 2026 +0800|cdnspeedtest: Update to 2.3.5
-88925e1db|ImmortalWrt AutoUpdate Bot|Sat May 9 10:20:10 2026 +0800|q: Update to 0.19.12
-7d76a9b02|Interesting Gang|Sat May 9 10:15:48 2026 +0800|geoview: bump to 0.2.6
-7b53ceb07|Tianling Shen|Sat May 9 11:20:45 2026 +0800|qbittorrent: add official version of qBittorrent
-445d58061|Tianling Shen|Tue Apr 14 10:42:32 2026 +0800|xray-core: Update to 26.3.27
-82e8db1b8|Tianling Shen|Tue Apr 14 10:41:35 2026 +0800|yq: Update to 4.52.5
-48a86082c|Dharmik Parmar|Wed Apr 29 19:33:54 2026 +0530|ddns-scripts: fix option name in updater messages
-4125370fe|Tim Flubshi|Sun Apr 26 18:00:44 2026 +0200|ddns-scripts: netcup.com adjust update error path
-
-
+3e645c565|Tianling Shen|Mon May 11 11:04:35 2026 +0800|qbittorrent: update AdditionalTrackersURL option
+9110d96bf|ImmortalWrt AutoUpdate Bot|Mon May 11 09:40:34 2026 +0800|rtp2httpd: Update to 3.12.1
 </details>
