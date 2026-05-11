@@ -172,6 +172,9 @@ CONFIG_PACKAGE_luci-theme-openwrt-2020=y
 
 可通过luci直接更新该仓库的最新固件，省去手动更新的繁琐过程，详情参考 https://github.com/smallprogram/luci-app-ghfu
 
+![alt text](pic/luci-app-ghfu.png)
+
+---
 
 [![Star History Chart](https://api.star-history.com/svg?repos=smallprogram/OpenWrtAction&type=Date)](https://star-history.com/#smallprogram/OpenWrtAction&Date)
 

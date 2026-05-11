@@ -173,6 +173,8 @@ CONFIG_PACKAGE_luci-theme-openwrt-2020=y
 
 You can directly update to the latest firmware from this repository via LuCI, thereby bypassing the tedious manual update process. For more details, please refer to https://github.com/smallprogram/luci-app-ghfu.
 
+![alt text](pic/luci-app-ghfu.png)
+
 ---
 
 [![Star History Chart](https://api.star-history.com/svg?repos=smallprogram/OpenWrtAction&type=Date)](https://star-history.com/#smallprogram/OpenWrtAction&Date)
