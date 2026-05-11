@@ -167,6 +167,7 @@ jobs:
         with:
           name: Source_${{ matrix.source_code_platform }}
           path: ${{ steps.generate_image.outputs.SOURCE_PATH }}/output/output.tar.gz
+          overwrite: true
           retention-days: 5
 
       - name: Generate Git Log
@@ -181,6 +182,7 @@ jobs:
         with:
           name: git_log_${{ matrix.source_code_platform }}
           path: git_log_${{ matrix.source_code_platform }}.txt
+          overwrite: true
           retention-days: 5
 
       - name: Generate Release Tag
@@ -194,6 +196,7 @@ jobs:
         with:
           name: release_${{ matrix.source_code_platform }}
           path: release_${{ matrix.source_code_platform }}.txt
+          overwrite: true
           retention-days: 5
 
   job_generate_release_tag: 
@@ -658,6 +661,7 @@ jobs:
         with:
           name: ${{ matrix.source_code_platform }}_${{ matrix.platform }}_firmware
           path: ${{ steps.organize.outputs.FIRMWARE }}
+          overwrite: true
 
       - name: Upload Bin Directory To Artifact (Backup)
         uses: actions/upload-artifact@v7
@@ -665,6 +669,7 @@ jobs:
         with:
           name: OpenWrt_bin_${{ matrix.source_code_platform }}_${{ matrix.platform }}
           path: openwrt/bin
+          overwrite: true
 
   job_organize_tags:
     needs: [job_init, job_source_init, job_generate_release_tag, job_compile_and_upload]

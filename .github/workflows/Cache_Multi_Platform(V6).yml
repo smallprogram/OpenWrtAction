@@ -120,6 +120,7 @@ jobs:
         with:
           name: Source_${{ matrix.source_code_platform }}
           path: ${{ steps.generate_image.outputs.SOURCE_PATH }}/output/output.tar.gz
+          overwrite: true
           retention-days: 5
 
   job_cache_compile_and_upload:
