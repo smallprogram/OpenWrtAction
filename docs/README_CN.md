@@ -168,13 +168,13 @@ CONFIG_PACKAGE_luci-theme-openwrt-2020=y
 ```
 ---
 
-### luci-app-ghfu
+### 🚀 luci-app-ghfu
 
 可通过luci直接更新该仓库的最新固件，省去手动更新的繁琐过程，详情参考 https://github.com/smallprogram/luci-app-ghfu
 
 ![alt text](pic/ghfu/cn.png)
 
-![alt text](pic/ghfu/update.png)
+![alt text](pic/ghfu/cn_update.png)
 
 ---
 
