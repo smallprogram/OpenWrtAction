@@ -1,0 +1,12 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/831e9d510837b36f176fb78dcd9cbcc216d0c174...f91b06b3faff7ad3c8cbeb1ab39cef680d2f28ed)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+f91b06b3f|Chester A. Unal|Mon May 11 21:17:29 2026 +0100|bsbf-resources: update to GIT HEAD of 2026-05-11
+0f33b1683|Chester A. Unal|Mon May 11 20:10:48 2026 +0100|bsbf-openwrt-resources: add network to firewall wan zone
+6082ba79c|Dirk Brenken|Mon May 11 21:21:18 2026 +0200|adblock: update 4.5.5-3
+70d27a2af|Stan Grishin|Sat May 9 05:38:49 2026 +0000|https-dns-proxy: update to 2026.03.18-3
+</details>

@@ -1,0 +1,9 @@
+<details> <summary> <b>luci-app-bandix-plus new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/timsaya/luci-app-bandix-plus/compare/ecd465e076bd6b4ed1fc92ab21bc3d563dbca484...4b71dcf98c5741680a9cb1965397219a7bbdd4fa)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+4b71dcf|pch18|Wed May 13 01:47:44 2026 +0900|fix: replace invalid `bandix-plus` UCI references with `bandix_plus` (#12)
+</details>

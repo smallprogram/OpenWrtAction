@@ -1,9 +1,10 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/6f9c9fb497d933882f84ce09c4797cf7b582c4fd...ad7400d3368c083c010f7c08d0a3fd7381bf3d79)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/ad7400d3368c083c010f7c08d0a3fd7381bf3d79...b227398e194d8061b7fdefa9ddc71b15c70cf52b)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-ad7400d33|coolsnowwolf|Wed May 6 10:05:01 2026 +0800|generic: sync 6.18 with upstream
+b227398e1|coolsnowwolf|Tue May 12 12:28:31 2026 +0800|kernel: bump 6.18 to 6.18.29
+a5fecc2b6|coolsnowwolf|Tue May 12 12:22:12 2026 +0800|kernel: enable CONFIG_NETFILTER_XTABLES_LEGACY for kernel 6.18
 </details>

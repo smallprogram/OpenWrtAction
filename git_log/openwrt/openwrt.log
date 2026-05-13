@@ -1,10 +1,11 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/e850a972b5ccb8c95efbad6d4de068321f567228...80f009766f1fca1f538a99f383cc7f27eff0e41a)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/80f009766f1fca1f538a99f383cc7f27eff0e41a...99211b26fb3b9ed71d065a1fa35ce54a0d883944)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-80f009766f|Robert Marko|Mon May 11 10:49:09 2026 +0200|microchipsw: fix LAN8814 QSGMII soft reset
-7044345016|Mikhail Zhilkin|Tue Apr 7 19:53:33 2026 +0300|mediatek: cudy nand: fix wrong nmbm configuration
+99211b26fb|Hannu Nyman|Tue May 12 22:56:36 2026 +0300|dnsmasq: apply six CVE-fix upstream patches to 2.91
+56d87f25a2|John Audia|Fri May 8 05:06:41 2026 -0400|kernel: bump 6.12 to 6.12.87
+a9e851a0d0|John Audia|Thu May 7 07:52:08 2026 -0400|kernel: bump 6.12 to 6.12.86
 </details>

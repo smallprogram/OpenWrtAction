@@ -1,15 +1,19 @@
 <details> <summary> <b>luci-app-ghfu new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/smallprogram/luci-app-ghfu/compare/122a629e0235023ad3c30030a9bff39a72664caf...8a4b128655b1d11bacb208d961b29228c772ca21)  
+#### [:mega: Full Changelog. ](https://github.com/smallprogram/luci-app-ghfu/compare/8a4b128655b1d11bacb208d961b29228c772ca21...5b6d7c57befae55935e55bfa6ce764221390f241)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-8a4b128|David Mandy|Mon May 11 22:24:22 2026 +0800|LuCI: bump version to 1.1.2 fixes some error
-e26f5b5|David Mandy|Mon May 11 22:05:25 2026 +0800|LuCI: bump version to 1.1.1 (#2)
-1adf1c8|David Mandy|Mon May 11 21:24:11 2026 +0800|Update README with project details and image
-cd5dcba|David Mandy|Mon May 11 21:06:36 2026 +0800|luci: bump version to 1.1.0 (#1)
-262c3c3|David Mandy|Mon May 11 11:12:55 2026 +0800|Update README with project details and link
-4fbbcff|David Mandy|Mon May 11 07:27:30 2026 +0800|fix: adapt dark theme via JS luminance detection
-828b77c|David Mandy|Mon May 11 03:47:21 2026 +0800|add license
+5b6d7c5|David Mandy|Wed May 13 22:41:21 2026 +0800|LuCI: bump version to 1.3.1
+61f29f1|David Mandy|Wed May 13 21:57:37 2026 +0800|LuCI: bump version to 1.3.0
+f244ca5|David Mandy|Wed May 13 20:05:17 2026 +0800|update readme
+a08b476|David Mandy|Wed May 13 20:02:11 2026 +0800|LuCI: bump version to 1.2.1
+83216db|David Mandy|Wed May 13 19:31:16 2026 +0800|Comment out APK installation section in README
+7ace4cb|David Mandy|Wed May 13 19:01:06 2026 +0800|Fix URL formatting in README for feeds compilation
+2f9fb99|David Mandy|Wed May 13 01:42:47 2026 +0800|Revise README for improved structure and content
+ae96d37|David Mandy|Tue May 12 20:31:43 2026 +0800|LuCI: add version to page
+cda2015|David Mandy|Tue May 12 19:51:41 2026 +0800|LuCI: bump version to 1.2.0
+defe5fe|David Mandy|Tue May 12 13:26:15 2026 +0800|Revise APK installation and add feeds compilation section
+430bc1a|David Mandy|Tue May 12 13:22:49 2026 +0800|Update README with installation commands and description
 </details>

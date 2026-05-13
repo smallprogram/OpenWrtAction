@@ -1,0 +1,12 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/e1c6cf88a206fe64babc210761f9882143ec4b7f...cc69d833a8390c7ad0ef47a7cb5a298a5a012e3f)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+cc69d83|A-BO|Wed May 13 07:11:07 2026 +0800|ci: bump actions/checkout from 5 to 6
+2b9034e|David Mandy|Tue May 12 22:24:52 2026 +0800|v2ray-geosite: update to 202605112249 (#652)
+a60934e|David Mandy|Tue May 12 20:46:06 2026 +0800|ci: fixed token miss
+68f3a6c|David Mandy|Tue May 12 20:39:53 2026 +0800|ci: add github token preventing api limits
+</details>

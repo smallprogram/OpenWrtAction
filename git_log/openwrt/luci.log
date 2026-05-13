@@ -1,0 +1,9 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/61fbfe65e828d5b98f0688fd359f57ee624f10c5...e9ebca7598ce2f754b76267fd66bf2b85e6e4347)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+e9ebca7598|Dirk Brenken|Sun May 10 21:31:10 2026 +0200|luci-app-openvpn: security fix
+</details>
