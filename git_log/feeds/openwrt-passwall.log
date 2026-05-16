@@ -1,10 +1,15 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/32ac46d42911453da27ced0247e70156016e0a4f...49d1bb5a6cb7da036921846b396ec52b5b41c1d9)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/49d1bb5a6cb7da036921846b396ec52b5b41c1d9...4b225d84b72683f9309f9ead0850648c8af93b98)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-49d1bb5|A-BO|Wed May 13 17:46:53 2026 +0800|luci: optimize
-7afed0c|A-BO|Tue May 12 11:32:56 2026 +0800|luci: optimize subscribe
+4b225d8|A-BO|Sat May 16 19:17:35 2026 +0800|luci: support hysteria2 realms (hysteria core)
+f1dfc0c|A-BO|Sat May 16 17:10:21 2026 +0800|luci: skip tls `fragment` for sing-box naive
+65b9f4b|A-BO|Sat May 16 13:35:47 2026 +0800|luci: unify hy2 obfs field name and optimize ui
+76e2e42|A-BO|Sat May 16 11:54:33 2026 +0800|luci: add quic config option for sing-box hy2 (>= 1.14 effectuate)
+ce003cc|A-BO|Fri May 15 10:16:19 2026 +0800|luci: update readme.md
+2dc8555|A-BO|Thu May 14 20:41:57 2026 +0800|luci: optimize and fixup
+a1f9927|A-BO|Thu May 14 19:38:41 2026 +0800|luci: add edit button for homepage shunt rule node
 </details>
