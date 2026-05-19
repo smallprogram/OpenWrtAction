@@ -1,0 +1,25 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/54049fdc5444a9a38a796494272416625b3920a0...d988a931895a832879ff97f91f34dd2bcbcac9ee)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+d988a93|handsomeji|Tue May 19 02:06:17 2026 +0800|luci: 26.5.19
+ae5e5a7|handsomeji|Tue May 19 02:18:09 2026 +0800|luci: Sing-Box node add outbound interface option
+aedfffc|handsomeji|Tue May 19 01:01:11 2026 +0800|luci: fix
+576e9ba|handsomeji|Mon May 18 23:21:07 2026 +0800|luci: Xray shunt DNS adjust
+4997b8b|A-BO|Tue May 19 02:13:41 2026 +0800|luci: fix hy(2) hop related issues
+018de25|A-BO|Mon May 18 21:32:28 2026 +0800|luci: add `tolerance` setting for xray balancer leastload
+bd21038|A-BO|Mon May 18 09:27:48 2026 +0800|luci: optimize
+9ba17f5|A-BO|Sun May 17 17:02:17 2026 +0800|luci: support hysteria2 realms for sing-box (>= 1.14 effectuate)
+28ba42e|A-BO|Sat May 16 19:17:35 2026 +0800|luci: support hysteria2 realms (hysteria core)
+305361e|A-BO|Sat May 16 17:10:21 2026 +0800|luci: skip tls `fragment` for sing-box naive
+b8e49a5|A-BO|Sat May 16 13:35:47 2026 +0800|luci: unify hy2 obfs field name and optimize ui
+2eba099|A-BO|Sat May 16 11:54:33 2026 +0800|luci: add quic config option for sing-box hy2 (>= 1.14 effectuate)
+ecc766c|A-BO|Thu May 14 20:41:57 2026 +0800|luci: optimize and fixup
+1dbcedd|A-BO|Thu May 14 19:38:41 2026 +0800|luci: add edit button for homepage shunt rule node
+885906e|A-BO|Wed May 13 17:46:53 2026 +0800|luci: optimize
+
+
+</details>

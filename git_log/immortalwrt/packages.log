@@ -1,25 +1,9 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/3e645c565bbddc487557419a3daca296b74574e7...b1b017905a1391c809f6afb8415e11be04787bc5)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/b1b017905a1391c809f6afb8415e11be04787bc5...01066c85da4041da0df528b8d9b3d7344f5849f2)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-b1b017905|Tianling Shen|Sat May 16 16:39:33 2026 +0800|Merge Official Source
-c7a312645|Seo Suchan|Thu May 14 13:30:11 2026 +0900|acme-acmsh: bump acme.sh to 3.1.3
-1ee16b8a7|Seo Suchan|Wed May 13 21:20:51 2026 +0900|acme: make 'acme' keyword actually virtual
-ff09b404a|Chester A. Unal|Wed May 13 13:16:26 2026 +0100|bsbf-resources: update to GIT HEAD of 2026-05-14
-961f82698|Yanase Yuki|Fri May 15 16:57:04 2026 +0900|kcptun: remove package
-124faa398|Yanase Yuki|Fri May 15 16:45:14 2026 +0900|udp-broadcast-relay-redux: remove package
-db9ec8181|Tianling Shen|Thu May 14 17:43:35 2026 +0800|3proxy: add multiple instances support
-c7bcd2be9|Tianling Shen|Tue May 12 10:49:03 2026 +0800|qBittorrent-Enhanced-Edition: skip provide qbittorrent for now
-9bb8d0994|Daniel Golle|Fri May 8 18:20:23 2026 +0100|libb64: update to 2.0.0.1
-72b2296d6|Daniel Golle|Fri May 8 18:50:24 2026 +0100|transmission: update to 4.1.1
-cece7c883|Josef Schlehofer|Sun May 10 09:15:34 2026 +0200|flup: remove the package
-f91b06b3f|Chester A. Unal|Mon May 11 21:17:29 2026 +0100|bsbf-resources: update to GIT HEAD of 2026-05-11
-0f33b1683|Chester A. Unal|Mon May 11 20:10:48 2026 +0100|bsbf-openwrt-resources: add network to firewall wan zone
-6082ba79c|Dirk Brenken|Mon May 11 21:21:18 2026 +0200|adblock: update 4.5.5-3
-70d27a2af|Stan Grishin|Sat May 9 05:38:49 2026 +0000|https-dns-proxy: update to 2026.03.18-3
-
-
+01066c85d|ImmortalWrt AutoUpdate Bot|Tue May 19 10:48:03 2026 +0800|rtp2httpd: Update to 3.12.2
 </details>

@@ -1,9 +1,0 @@
-<details> <summary> <b>luci-app-bandix new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/timsaya/luci-app-bandix/compare/3ec473f87fc62beb09d8ce48eb8664ef68516606...2f5c2f1c084c48b539d94dd43702b89c5d5bc70e)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-2f5c2f1|David Mandy|Fri May 15 01:01:19 2026 +0800|ci: optimize code (#241)
-</details>
