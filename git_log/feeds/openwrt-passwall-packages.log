@@ -1,14 +1,14 @@
 <details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/cc69d833a8390c7ad0ef47a7cb5a298a5a012e3f...a3ae49798e2289c263e5058f0452dcec1764bcb3)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/a3ae49798e2289c263e5058f0452dcec1764bcb3...1688bac5023b5c426130ecf9baca1c716f265a44)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-a3ae497|David Mandy|Fri May 15 22:22:41 2026 +0800|ci: optimize code
-266d97f|David Mandy|Fri May 15 21:15:00 2026 +0800|sing-box: update to 1.13.12 (#655)
-b1caf03|David Mandy|Fri May 15 21:14:34 2026 +0800|v2ray-geoip: update to 202605140048 (#656)
-96a2f20|David Mandy|Fri May 15 21:14:06 2026 +0800|v2ray-geosite: update to 202605142252 (#654)
-87befcb|A-BO|Fri May 15 10:58:33 2026 +0800|haproxy: update to 3.2.19
-f3410c4|A-BO|Fri May 15 10:12:45 2026 +0800|haproxy: add package
+1688bac|David Mandy|Wed May 20 08:12:00 2026 +0800|tuic-client: update to 1.8.4 (#661)
+2fd17aa|David Mandy|Tue May 19 23:44:15 2026 +0800|tuic-client: update to 1.8.3 (#660)
+1fc73e7|OrbisAI Security|Tue May 19 21:08:56 2026 +0530|shadowsocksr-libev: add bounds check before memcpy in server.c (#658)
+db195eb|David Mandy|Mon May 18 21:00:09 2026 +0800|tuic-client: update to 1.8.2 (#659)
+cb8cced|A-BO|Mon May 18 15:21:10 2026 +0800|Revert "haproxy: add package"
+64bc5a6|A-BO|Mon May 18 15:21:02 2026 +0800|Revert "haproxy: update to 3.2.19"
 </details>
