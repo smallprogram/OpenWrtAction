@@ -1,21 +1,15 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/4b225d84b72683f9309f9ead0850648c8af93b98...6634ded85c3450a7ac2915b88fd1846e315a196c)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/49d1bb5a6cb7da036921846b396ec52b5b41c1d9...4b225d84b72683f9309f9ead0850648c8af93b98)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-6634ded8|A-BO|Tue May 19 22:36:55 2026 +0800|luci: shorten set names
-5cb8fd4d|A-BO|Tue May 19 20:23:47 2026 +0800|luci: optimize node outbound interface setting
-b1db1e47|A-BO|Tue May 19 17:39:40 2026 +0800|luci: Xray node add outbound interface option
-36876c36|A-BO|Tue May 19 13:31:56 2026 +0800|luci: Sing-Box node add outbound interface option
-48e35628|A-BO|Tue May 19 13:03:05 2026 +0800|luci: fix
-241c4144|A-BO|Tue May 19 02:13:41 2026 +0800|luci: fix hy(2) hop related issues
-080a7489|A-BO|Mon May 18 21:32:28 2026 +0800|luci: add `tolerance` setting for xray balancer leastload
-08bab438|A-BO|Mon May 18 15:24:57 2026 +0800|luci: update readme.md
-ef1ceaaf|A-BO|Mon May 18 09:27:48 2026 +0800|luci: optimize
-8a9b5569|A-BO|Sun May 17 18:36:31 2026 +0800|luci: remove shadowsocks-libev
-b8fbe130|A-BO|Sun May 17 17:02:17 2026 +0800|luci: support hysteria2 realms for sing-box (>= 1.14 effectuate)
-fc2bd9d4|A-BO|Sat May 16 19:17:35 2026 +0800|luci: support hysteria2 realms (hysteria core)
-4b225d84|A-BO|Sat May 16 19:17:35 2026 +0800|luci: support hysteria2 realms (hysteria core)
+4b225d8|A-BO|Sat May 16 19:17:35 2026 +0800|luci: support hysteria2 realms (hysteria core)
+f1dfc0c|A-BO|Sat May 16 17:10:21 2026 +0800|luci: skip tls `fragment` for sing-box naive
+65b9f4b|A-BO|Sat May 16 13:35:47 2026 +0800|luci: unify hy2 obfs field name and optimize ui
+76e2e42|A-BO|Sat May 16 11:54:33 2026 +0800|luci: add quic config option for sing-box hy2 (>= 1.14 effectuate)
+ce003cc|A-BO|Fri May 15 10:16:19 2026 +0800|luci: update readme.md
+2dc8555|A-BO|Thu May 14 20:41:57 2026 +0800|luci: optimize and fixup
+a1f9927|A-BO|Thu May 14 19:38:41 2026 +0800|luci: add edit button for homepage shunt rule node
 </details>

@@ -1,0 +1,10 @@
+<details> <summary> <b>openwrt-bandix new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/timsaya/openwrt-bandix/compare/1dce6f0ba55830efb1a3c4a2016dfc105026aea1...fc2ba97f5239d501b621c30c5ccc93a71f1ad47a)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+fc2ba97|David Mandy|Fri May 15 23:02:44 2026 +0800|update makefile pkg_hash value
+42d8624|David Mandy|Fri May 15 01:00:21 2026 +0800|ci: optimize code (#13)
+</details>

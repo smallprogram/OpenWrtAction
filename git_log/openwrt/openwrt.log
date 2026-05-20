@@ -1,0 +1,24 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/99211b26fb3b9ed71d065a1fa35ce54a0d883944...13ff2256e5dd9bc070f9a9c6a673bff4a9191837)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+13ff2256e5|Daniel Golle|Sat Apr 11 22:59:07 2026 +0100|mediatek: don't let devfreq power-off the CPU
+084cdacf9d|Hauke Mehrtens|Tue May 12 22:31:41 2026 +0200|toolchain: musl: backport patches with CVE fixes
+e4c15eb1a0|Dirk Buchwalder|Sun Mar 1 14:16:43 2026 +0100|airoha: an7581: add ubi nvmem driver
+feda35516c|Dirk Buchwalder|Sun Mar 1 14:13:55 2026 +0100|airoha: an7581: enable fitblk driver
+fac5a815ea|Dirk Buchwalder|Sun Mar 1 13:48:42 2026 +0100|uboot-airoha: add a label to the spi node
+aa3a9d8fa2|Kenneth Kasilag|Tue May 12 11:11:41 2026 +0000|uboot-airoha: add ethernet node for an7581 dtsi
+4729793b91|Russell Senior|Wed Apr 22 22:38:51 2026 -0700|uboot-airoha: increase the size of reserved_bmt partition
+887f21e21a|Kenneth Kasilag|Sat Feb 21 21:49:46 2026 +0000|airoha: an7581: add uboot chainloader
+8e751e953d|Kenneth Kasilag|Wed Mar 4 02:48:32 2026 +0000|uboot-airoha: rename FIP_COMPRESS to LZMA_COMPRESS
+3bd046e170|Christian Marangi|Thu May 14 22:02:00 2026 +0200|airoha: an7581: move internal PHY interrupt to specific device DTS
+2b06da1589|Hauke Mehrtens|Thu May 14 00:58:17 2026 +0200|OpenWrt v25.12.4: revert to branch defaults
+ba915c2ee7|Hauke Mehrtens|Thu May 14 00:58:13 2026 +0200|OpenWrt v25.12.4: adjust config defaults
+4ccb782af7|Tomasz Maciej Nowak|Mon May 4 19:48:41 2026 +0200|ath79: wlr-7100: move to tiny target
+955f2a74d8|Tomasz Maciej Nowak|Mon May 4 19:48:40 2026 +0200|ath79: wlr-7100: wire up 5GHz WLAN LED
+510cf47386|Tomasz Maciej Nowak|Mon May 4 19:48:39 2026 +0200|ath79: wlr-7100: fix MAC assignment
+
+</details>

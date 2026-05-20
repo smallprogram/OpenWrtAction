@@ -1,10 +1,10 @@
 <details> <summary> <b>openwrt-bandix-plus new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/timsaya/openwrt-bandix-plus/compare/b017ab4059792f3675a9afea91a45fb48038247c...5c79d55a87feac5ab6508e7523254db46176f05a)  
+#### [:mega: Full Changelog. ](https://github.com/timsaya/openwrt-bandix-plus/compare/493b377b9d0662c28358516ee30802a9d69cf45e...b017ab4059792f3675a9afea91a45fb48038247c)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-5c79d55|timsaya|Mon May 18 00:21:41 2026 +0800|Merge pull request #2 from ntbowen/main
-6096f92|ntbowen|Fri May 15 20:45:40 2026 +0800|fix: align UCI config name from bandix-plus to bandix_plus
+b017ab4|David Mandy|Fri May 15 22:57:49 2026 +0800|update makefile pkg_hash value
+b2ae7e1|David Mandy|Fri May 15 01:57:30 2026 +0800|ci: optimize code
 </details>
