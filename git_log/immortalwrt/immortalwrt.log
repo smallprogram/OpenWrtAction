@@ -1,0 +1,13 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/4695ae7bbe07d3f3f371188eeeba68cbab67a818...5273c136001eee71289e4a8b23c7eb59896cc9d4)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+5273c13600|Tianling Shen|Thu Jan 22 12:27:27 2026 +0800|aic8800: fix read cpuid
+20bd5b9c5a|Tianling Shen|Thu May 21 17:00:34 2026 +0800|valgrind: improve arm v7 detection
+28c099d34d|Tianling Shen|Thu May 21 15:23:16 2026 +0800|Merge Official Source
+42ea240132|Andrii Kuiukoff|Mon Apr 13 20:45:55 2026 +0300|uboot-mediatek: comfast cf-wr632ax: reduce ram speed to 1866 MT/s
+c01dc9c0fe|Andrii Kuiukoff|Sun May 17 13:50:06 2026 +0300|uboot-mediatek: comfast cf-wr632ax: sync with the main DTS
+</details>

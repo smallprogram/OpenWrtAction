@@ -1,0 +1,11 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/13ff2256e5dd9bc070f9a9c6a673bff4a9191837...8dff4c9a340371b1e1f10b03ac06340d15f60e86)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+8dff4c9a34|Christian Marangi|Tue Apr 28 20:09:03 2026 +0200|airoha: backport net upstream fixes
+42ea240132|Andrii Kuiukoff|Mon Apr 13 20:45:55 2026 +0300|uboot-mediatek: comfast cf-wr632ax: reduce ram speed to 1866 MT/s
+c01dc9c0fe|Andrii Kuiukoff|Sun May 17 13:50:06 2026 +0300|uboot-mediatek: comfast cf-wr632ax: sync with the main DTS
+</details>

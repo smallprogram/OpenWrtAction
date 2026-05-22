@@ -1,9 +1,11 @@
 <details> <summary> <b>luci-app-bandix-plus new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/timsaya/luci-app-bandix-plus/compare/07d0f728b0cca0f1c9eaec1ab49cc6740b1d1026...4f6eb1626d42566d30b3a9666130ba237d0fe3a4)  
+#### [:mega: Full Changelog. ](https://github.com/timsaya/luci-app-bandix-plus/compare/4f6eb1626d42566d30b3a9666130ba237d0fe3a4...22ab65de592afc77b50b89471921bd50d0829820)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-4f6eb16|David Mandy|Wed May 20 15:06:42 2026 +0800|fix(config): drop /etc/config/bandix_plus to fix RootFS overwrite error
+22ab65d|timsaya|Thu May 21 14:41:10 2026 +0800|Merge pull request #16 from Gaojianli/main
+c153495|高渐离|Thu May 21 11:32:12 2026 +0800|Merge branch 'timsaya:main' into main
+e6cf208|Gaojianli|Tue May 19 20:54:59 2026 +0800|add service status
 </details>

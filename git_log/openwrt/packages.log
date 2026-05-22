@@ -1,25 +1,19 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/c7a312645e6666176efbff0210191313c7b456b5...191f5bf9c11188f376f81814bc0098741f39ff4f)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/191f5bf9c11188f376f81814bc0098741f39ff4f...66ab3f7728dfcce93877db3d3d12f2a66fe4d682)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-191f5bf9c|Tianling Shen|Tue May 19 10:59:49 2026 +0800|v2ray-core: Update to 5.49.0
-6ea2f8cbf|Tianling Shen|Tue May 19 10:59:24 2026 +0800|v2ray-geodata: Update to latest version
-5fa8daa91|Tianling Shen|Sat May 9 11:53:05 2026 +0800|openlist: Update to 4.2.1
-e2bd03bff|Tianling Shen|Sat May 9 11:47:19 2026 +0800|btop: Update to 1.4.7
-587253b2e|Tianling Shen|Sat May 9 11:34:18 2026 +0800|dnsproxy: Update to 0.81.3
-94f18590e|Tianling Shen|Sat May 9 11:32:47 2026 +0800|v2ray-core: Update to 5.48.0
-4be4f059c|Tianling Shen|Sat May 9 11:32:23 2026 +0800|yq: Update to 4.53.2
-e68effbd4|Tianling Shen|Sat May 9 10:57:17 2026 +0800|dufs: Update to 0.46.0
-344253c73|Tianling Shen|Sat May 9 10:56:48 2026 +0800|rclone: Update to 1.74.1
-6bf3680ec|Tianling Shen|Sat May 9 10:56:09 2026 +0800|v2ray-geodata: update to latest version
-df9bfef80|Tianling Shen|Sat May 9 10:55:47 2026 +0800|dos2unix: Update to 7.5.5
-1064188e0|Dirk Brenken|Mon May 18 23:21:19 2026 +0200|banip: update 1.8.8-4
-cc37c7b04|Chester A. Unal|Sat May 16 20:33:33 2026 +0100|bsbf-openwrt-resources: improve iface type detection and DNS
-3435a8667|Chester A. Unal|Sat May 16 20:19:16 2026 +0100|bsbf-resources: update to GIT HEAD of 2026-05-16
-7f4dbf097|Dirk Brenken|Sun May 17 12:52:35 2026 +0200|travelmate: update 2.4.5-3
-
-
+66ab3f772|Alexandru Ardelean|Sun May 10 12:05:25 2026 +0300|fatresize: fix PKG_MIRROR_HASH after .gitattributes change
+decd737cf|Josef Schlehofer|Tue May 5 09:17:26 2026 +0200|gots_engine: fix PKG_MIRROR_HASH
+535f243e2|Dirk Brenken|Wed May 20 22:51:35 2026 +0200|adblock: update 4.5.5-5
+ce34a673e|Jens Wagner|Fri May 15 19:21:29 2026 +0200|mbpoll: update to 1.5.4
+d4ee8d285|Fotios Kitsantas|Sun May 10 14:22:55 2026 +0100|ddns-scripts: add blazingfast.io Anycast DNS provider
+aa81ad643|Alexandru Ardelean|Wed May 20 11:22:31 2026 +0300|perl: fix miniperl missing execute permission (CI fix)
+e252ed0f7|Jens Wagner|Fri May 15 18:00:06 2026 +0200|perl: fix missing line numbers in error messages
+d3d632540|Alexandru Ardelean|Wed May 13 09:22:24 2026 +0300|perl: add test-version.sh to skip version check
+3de0e4b1c|Jens Wagner|Fri May 15 19:48:40 2026 +0200|perl-io-socket-ssl: update to 2.098
+4e222e562|Jens Wagner|Fri Jan 2 14:56:33 2026 +0100|perlbase-encode: added dependency on perlbase-storable
+8a796bbe3|Jens Wagner|Fri May 15 18:01:35 2026 +0200|perl: fix dependency issues in archive, pod and test
 </details>

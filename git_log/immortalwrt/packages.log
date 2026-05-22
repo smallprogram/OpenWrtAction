@@ -1,25 +1,25 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/b1b017905a1391c809f6afb8415e11be04787bc5...fe0207ec43e3a40688175cafa34993ad00be8fbf)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/fe0207ec43e3a40688175cafa34993ad00be8fbf...69f474e5d5f764d0f6d4be9e0356f656cf375ba6)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-fe0207ec4|Tianling Shen|Wed May 20 10:24:17 2026 +0800|Merge Official Source
-191f5bf9c|Tianling Shen|Tue May 19 10:59:49 2026 +0800|v2ray-core: Update to 5.49.0
-6ea2f8cbf|Tianling Shen|Tue May 19 10:59:24 2026 +0800|v2ray-geodata: Update to latest version
-5fa8daa91|Tianling Shen|Sat May 9 11:53:05 2026 +0800|openlist: Update to 4.2.1
-e2bd03bff|Tianling Shen|Sat May 9 11:47:19 2026 +0800|btop: Update to 1.4.7
-587253b2e|Tianling Shen|Sat May 9 11:34:18 2026 +0800|dnsproxy: Update to 0.81.3
-94f18590e|Tianling Shen|Sat May 9 11:32:47 2026 +0800|v2ray-core: Update to 5.48.0
-4be4f059c|Tianling Shen|Sat May 9 11:32:23 2026 +0800|yq: Update to 4.53.2
-e68effbd4|Tianling Shen|Sat May 9 10:57:17 2026 +0800|dufs: Update to 0.46.0
-344253c73|Tianling Shen|Sat May 9 10:56:48 2026 +0800|rclone: Update to 1.74.1
-6bf3680ec|Tianling Shen|Sat May 9 10:56:09 2026 +0800|v2ray-geodata: update to latest version
-df9bfef80|Tianling Shen|Sat May 9 10:55:47 2026 +0800|dos2unix: Update to 7.5.5
-01066c85d|ImmortalWrt AutoUpdate Bot|Tue May 19 10:48:03 2026 +0800|rtp2httpd: Update to 3.12.2
-1064188e0|Dirk Brenken|Mon May 18 23:21:19 2026 +0200|banip: update 1.8.8-4
-cc37c7b04|Chester A. Unal|Sat May 16 20:33:33 2026 +0100|bsbf-openwrt-resources: improve iface type detection and DNS
+69f474e5d|Tianling Shen|Thu May 21 16:37:45 2026 +0800|smartdns: Update to 48
+196642ccf|Tianling Shen|Thu May 21 15:50:58 2026 +0800|srelay: drop outdated package
+973c21a87|Tianling Shen|Thu May 21 15:46:20 2026 +0800|libnetconf2: fix build with libopenssl
+0dedf9c88|Tianling Shen|Thu May 21 15:41:31 2026 +0800|dhrystone: update mirror hash
+b2af17e70|Tianling Shen|Thu May 21 15:35:48 2026 +0800|Revert "sysrepo: add cmake 4.x compatibility"
+0dc36d6cf|Tianling Shen|Thu May 21 15:34:41 2026 +0800|gst1-plugins-bad: add missing dependencies for v4l2codecs
+4e71c17ac|Tianling Shen|Thu May 21 15:31:40 2026 +0800|scutclient: fix build with cmake 4.x
+679a0da68|Tianling Shen|Wed May 20 11:46:35 2026 +0800|7z: Update to 26.01
+44f602267|Tianling Shen|Thu May 21 15:25:04 2026 +0800|Merge Official Source
+535f243e2|Dirk Brenken|Wed May 20 22:51:35 2026 +0200|adblock: update 4.5.5-5
+ce34a673e|Jens Wagner|Fri May 15 19:21:29 2026 +0200|mbpoll: update to 1.5.4
+d4ee8d285|Fotios Kitsantas|Sun May 10 14:22:55 2026 +0100|ddns-scripts: add blazingfast.io Anycast DNS provider
+aa81ad643|Alexandru Ardelean|Wed May 20 11:22:31 2026 +0300|perl: fix miniperl missing execute permission (CI fix)
+e252ed0f7|Jens Wagner|Fri May 15 18:00:06 2026 +0200|perl: fix missing line numbers in error messages
+d3d632540|Alexandru Ardelean|Wed May 13 09:22:24 2026 +0300|perl: add test-version.sh to skip version check
 
 
 </details>

@@ -1,0 +1,18 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/9632186ebd46802b875965bf6388fe002eb07adf...80b296eb369fd8c220e1c01b7001786e28dc5014)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+80b296eb|coolsnowwolf|Thu May 21 13:57:55 2026 +0800|Merge pull request #1103 from Internet1235/ddns-go
+23114e5b|coolsnowwolf|Thu May 21 13:57:45 2026 +0800|Merge pull request #1105 from Internet1235/golang
+7f1ca28d|coolsnowwolf|Thu May 21 13:57:35 2026 +0800|Merge pull request #1106 from Internet1235/git
+fdfa8d0d|coolsnowwolf|Thu May 21 11:55:34 2026 +0800|Merge pull request #1104 from Internet1235/miniupnpc
+f585588e|coolsnowwolf|Thu May 21 11:55:16 2026 +0800|Merge pull request #1108 from smallprogram/master
+07c9bb5a|David Mandy|Tue May 12 21:48:43 2026 +0800|banip: bump version to 1.8.8 Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
+051af308|Internet1235|Sun May 10 15:40:57 2026 +0800|git: update to 2.54.0
+111384b7|Internet1235|Sun May 10 15:29:43 2026 +0800|golang: update to 1.26.3
+1a8f6302|Internet1235|Wed May 6 12:53:33 2026 +0800|miniupnpc: bump to 2.3.3
+364ecdb4|Internet1235|Tue May 5 23:16:05 2026 +0800|ddns-go: update to 6.17.0
+</details>

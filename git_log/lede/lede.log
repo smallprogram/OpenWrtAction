@@ -1,12 +1,10 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/64a11b6abb922e6730e4f289415251634b1460e9...639cd5f41bdfc3153fe8a97ae0270b24a9e00e14)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/639cd5f41bdfc3153fe8a97ae0270b24a9e00e14...0753a0c36c565dd4e6439dde929d3f803e960356)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-639cd5f41|Internet1235|Sun May 17 22:27:08 2026 +0800|kernel: bump 6.x to latest
-6a3eb6461|coolsnowwolf|Sun May 17 16:08:16 2026 +0800|rpcd: backport ucode fix
-b0c655430|coolsnowwolf|Sun May 17 15:56:01 2026 +0800|Version Update to R26.05.20
-a10beb3e7|coolsnowwolf|Sun May 17 15:54:22 2026 +0800|kernel: bump all to latest HEAD
+0753a0c36|Qingfang Deng|Sat May 16 21:31:40 2026 +0800|kernel: update pppoe patch
+bfbb7bef9|Miles Poupart|Wed May 20 18:00:07 2026 +0800|kernel: bump 6.12 to 6.12.90
 </details>
