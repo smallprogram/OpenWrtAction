@@ -118,6 +118,7 @@ CONFIG_PACKAGE_luci-app-udp2raw=y
 CONFIG_PACKAGE_luci-app-udpxy=y
 CONFIG_PACKAGE_luci-app-cloudflared=y
 CONFIG_PACKAGE_luci-app-zerotier=y
+CONFIG_PACKAGE_nmap-full
 ```
 ### ⚙️ System Management and Tools
 ```
@@ -136,7 +137,6 @@ CONFIG_PACKAGE_openssh-sftp-server=y
 CONFIG_PACKAGE_luci-app-vlmcsd=y
 CONFIG_PACKAGE_luci-app-wol=y
 CONFIG_PACKAGE_luci-app-wechatpush=y
-CONFIG_PACKAGE_nmap-full
 ```
 
 ### 📊 Flow control and monitoring
