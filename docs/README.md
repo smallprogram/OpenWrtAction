@@ -136,6 +136,7 @@ CONFIG_PACKAGE_openssh-sftp-server=y
 CONFIG_PACKAGE_luci-app-vlmcsd=y
 CONFIG_PACKAGE_luci-app-wol=y
 CONFIG_PACKAGE_luci-app-wechatpush=y
+CONFIG_PACKAGE_nmap-full
 ```
 
 ### 📊 Flow control and monitoring

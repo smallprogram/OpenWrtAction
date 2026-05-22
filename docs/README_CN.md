@@ -116,6 +116,7 @@ CONFIG_PACKAGE_luci-app-udp2raw=y
 CONFIG_PACKAGE_luci-app-udpxy=y
 CONFIG_PACKAGE_luci-app-cloudflared=y
 CONFIG_PACKAGE_luci-app-zerotier=y
+CONFIG_PACKAGE_nmap-full
 ```
 ### ⚙️ 系统管理与工具
 ```
