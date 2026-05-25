@@ -1,13 +1,12 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/cf6991efc22a3fe7860749ca15c62629f30fbe2d...b09a1abc9f3e365c200a479bd25fc9077455fff9)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/0ce6d79b5104ea233a3a1592481a416b4d92a29c...cf6991efc22a3fe7860749ca15c62629f30fbe2d)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-b09a1abc|A-BO|Mon May 25 20:57:57 2026 +0800|luci: support hy2 `gecko` obfs for hysteria2 and sing-box
-74fdbf14|A-BO|Mon May 25 12:57:02 2026 +0800|luci: optimize anytls subscribe
-9b9ef3e7|A-BO|Sun May 24 22:25:05 2026 +0800|luci: parsing clash subscription userinfo
-937047d8|A-BO|Sun May 24 03:34:46 2026 +0800|luci: optimize ss subscribe
-52809fc4|handsomeji|Sat May 23 01:19:03 2026 +0800|luci: optimize
+cf6991ef|A-BO|Fri May 22 11:26:12 2026 +0800|luci: optimize smartdns status display
+fb4c198a|A-BO|Thu May 21 00:59:12 2026 +0800|luci: add hysteria(2) default bandwidth value for subscribe
+47ec87c4|A-BO|Thu May 21 00:33:40 2026 +0800|luci: exclude illegal node ip
+d9373af2|A-BO|Wed May 20 15:37:54 2026 +0800|luci: 26.5.20
 </details>
