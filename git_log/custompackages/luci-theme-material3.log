@@ -1,0 +1,11 @@
+<details> <summary> <b>luci-theme-material3 new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/AngelaCooljx/luci-theme-material3/compare/445b39aaa92dccaedfa604a27e0698725c9a66ce...18bd0e6d2ff8c88081fe39f6f25c402bce2f9d56)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+18bd0e6|cool|Sun May 24 17:37:10 2026 +0800|material3: prevent iOS double-tap zoom
+92766da|cool|Sun May 24 17:35:55 2026 +0800|material3: adjust mobile dropdown width
+808a6e5|KawaiiHachimi|Sat May 23 23:42:35 2026 +0800|material3: refine text position in cbi-tabmenu
+</details>

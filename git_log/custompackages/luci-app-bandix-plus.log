@@ -1,11 +1,12 @@
 <details> <summary> <b>luci-app-bandix-plus new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/timsaya/luci-app-bandix-plus/compare/4f6eb1626d42566d30b3a9666130ba237d0fe3a4...22ab65de592afc77b50b89471921bd50d0829820)  
+#### [:mega: Full Changelog. ](https://github.com/timsaya/luci-app-bandix-plus/compare/22ab65de592afc77b50b89471921bd50d0829820...eb78416b86cdfa1b2d1e6bf00b2e3f1503a87879)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-22ab65d|timsaya|Thu May 21 14:41:10 2026 +0800|Merge pull request #16 from Gaojianli/main
-c153495|高渐离|Thu May 21 11:32:12 2026 +0800|Merge branch 'timsaya:main' into main
-e6cf208|Gaojianli|Tue May 19 20:54:59 2026 +0800|add service status
+eb78416|David Mandy|Tue May 26 02:25:01 2026 +0800|luci: bump to 0.1.2
+2fb568a|David Mandy|Tue May 26 01:52:51 2026 +0800|fix(luci): remove invalid UCI dependency from menu definition
+971ebf7|David Mandy|Tue May 26 00:53:36 2026 +0800|fix: unify UCI config namespace and optimize service restart mechanism
+461c40f|David Mandy|Tue May 26 00:10:28 2026 +0800|fix: unify uci config file name to bandix_plus
 </details>
