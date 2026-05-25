@@ -1,9 +1,14 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/f17251c78d2c2b7060dcaf8c94fdf5c82c4ec9c6...a08b85e2494838316ea740383c671f92474c4c21)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/a08b85e2494838316ea740383c671f92474c4c21...012fc3fc3f36cc64c1dd3438e3fcfb690fa6f383)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-a08b85e249|Dirk Brenken|Wed May 20 22:54:50 2026 +0200|luci-app-adblock: update 4.5.5-5
+012fc3fc3f|Mario Andrés Pérez|Mon Apr 27 21:32:14 2026 +0200|luci-app-package-manager: handle versioned provides from apk query
+51477ec783|Christian Korber|Fri May 22 12:03:46 2026 +0200|luci-app-firewall: keep enabled on cloning
+e429d2c307|Christian Korber|Fri May 22 12:00:27 2026 +0200|luci-base: keep not yet rendered clone elements
+2f8e9fdcce|Christian Korber|Thu May 21 16:20:18 2026 +0200|luci-base: fix order of clone bug
+74927c2cea|Hannu Nyman|Sat May 23 10:06:53 2026 +0300|treewide: backport translations and sync
+854f702961|Dirk Brenken|Fri May 22 20:48:28 2026 +0200|luci-app-travelmate: update 2.4.5-3
 </details>
