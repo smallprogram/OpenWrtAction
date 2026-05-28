@@ -1,13 +1,13 @@
 <details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/5273c136001eee71289e4a8b23c7eb59896cc9d4...e8b0915940724cea2e104e4ea8c586cb80c25986)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/e8b0915940724cea2e104e4ea8c586cb80c25986...66d5a98acf4d08230b0305c965daa89d13d4614a)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-e8b0915940|Tianling Shen|Mon May 25 10:41:15 2026 +0800|ImmortalWrt v25.12.0: revert to branch defaults
-2927994b4c|Tianling Shen|Mon May 25 10:41:15 2026 +0800|ImmortalWrt v25.12.0: adjust config defaults
-4b24da3b4c|Tianling Shen|Mon May 25 10:36:00 2026 +0800|Merge Official Source
-54cced5b2f|dastarothx|Sat May 23 12:40:20 2026 -0400|wifi-scripts: ucode: fix null dereference for 6GHz-only radios
-8dff4c9a34|Christian Marangi|Tue Apr 28 20:09:03 2026 +0200|airoha: backport net upstream fixes
+66d5a98acf|Tianling Shen|Wed May 27 11:41:51 2026 +0800|uboot-sunxi: backport H616 DRAM fixes
+b08a7ebf15|Tianling Shen|Mon May 25 16:08:18 2026 +0800|aic8800: fix export symbols conflict in usb driver
+31a887c519|Tianling Shen|Fri May 22 14:33:03 2026 +0800|aic8800: fix pcie/usb driver build for mips
+eb61b4c7e9|Tianling Shen|Thu May 21 17:21:18 2026 +0800|aic8800: fix build with mips
+139026dc11|Tianling Shen|Wed Mar 18 09:56:04 2026 +0800|aic8800: Update to V5.0_2026_0123_5f7be68d
 </details>

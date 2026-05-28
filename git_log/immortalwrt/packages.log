@@ -1,25 +1,9 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/69f474e5d5f764d0f6d4be9e0356f656cf375ba6...881bc2200a61801edc8db88e7631f7e6468989a1)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/881bc2200a61801edc8db88e7631f7e6468989a1...28752320596d0b7a2e7dc8c54a9ea1f0533c2c76)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-881bc2200|Tianling Shen|Mon May 25 10:34:01 2026 +0800|Merge Official Source
-3ab1a626d|George Sapkin|Thu May 21 22:13:20 2026 +0300|adguardhome: bump to 0.107.76
-23d5f3a0f|George Sapkin|Tue May 19 14:56:29 2026 +0300|adguardhome: bump to 0.107.75
-2873d4dbe|Niklas Thorild|Tue May 12 16:23:01 2026 +0200|telegraf: update to 1.38.4
-b593e358b|Szabolcs Hubai|Sun Mar 22 12:33:24 2026 +0100|snapcast: update to v0.35.0
-36dcad3bf|George Sapkin|Sat May 9 12:57:30 2026 +0300|golang: add version check override script
-1e518eae5|George Sapkin|Thu May 7 21:24:34 2026 +0300|golang: add a simple compilation test
-b2be3a6f0|George Sapkin|Thu May 7 20:58:15 2026 +0300|golang: bump 1.26 to 1.26.3
-eebd12bb2|Javier Marcet|Tue Apr 28 16:18:41 2026 +0200|docker-compose: update to version 5.1.4
-db76568c6|Javier Marcet|Sun Jan 25 20:38:09 2026 +0100|docker-compose: Update to version 5.0.2
-0718f3121|Javier Marcet|Sun Dec 21 20:21:23 2025 +0100|docker-compose: Update to version 5.0.1
-c6db4329f|Javier Marcet|Sat Dec 6 15:31:24 2025 +0100|docker-compose: update to version 5.0.0
-7ad174866|George Sapkin|Sat May 16 00:36:23 2026 +0300|syncthing: bump to 2.1.0
-e84973201|Hannu Nyman|Wed Feb 18 20:03:45 2026 +0200|modbus: update to 3.1.12
-4f3a7a17a|Michael Heimpold|Fri Feb 13 23:47:20 2026 +0100|libmodbus: update hash for v3.1.11 tarball
-
-
+287523205|Tianling Shen|Sat May 23 17:24:22 2026 +0800|netopeer2: fix build with libopenssl
 </details>

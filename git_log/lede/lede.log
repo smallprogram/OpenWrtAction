@@ -1,11 +1,9 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/0753a0c36c565dd4e6439dde929d3f803e960356...aa71d6a91b6bb555fd47e7f23e9878f360597870)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/aa71d6a91b6bb555fd47e7f23e9878f360597870...9e52facf4d199ce99a2bdfa4061f9c5c2e6ec3a1)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-aa71d6a91|Miles Poupart|Mon May 25 18:20:01 2026 +0800|kernel: bump 6.12 to 6.12.91
-7800cc78d|Internet1235|Mon May 25 18:18:01 2026 +0800|kernel: bump 6.18 to 6.18.33
-be990eaca|Dee HY|Sun May 24 18:00:02 2026 +0800|kernel: add hwmon-corsair-cpro
+9e52facf4|aiamadeus|Wed Apr 15 18:05:01 2026 +0800|uboot-sunxi: bump to 2026.04
 </details>

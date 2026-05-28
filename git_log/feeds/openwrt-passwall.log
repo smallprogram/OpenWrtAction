@@ -1,13 +1,11 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/cf6991efc22a3fe7860749ca15c62629f30fbe2d...b09a1abc9f3e365c200a479bd25fc9077455fff9)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/b09a1abc9f3e365c200a479bd25fc9077455fff9...61a31b133b3ba28ad6bbe6f5608937e46b7baebd)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-b09a1abc|A-BO|Mon May 25 20:57:57 2026 +0800|luci: support hy2 `gecko` obfs for hysteria2 and sing-box
-74fdbf14|A-BO|Mon May 25 12:57:02 2026 +0800|luci: optimize anytls subscribe
-9b9ef3e7|A-BO|Sun May 24 22:25:05 2026 +0800|luci: parsing clash subscription userinfo
-937047d8|A-BO|Sun May 24 03:34:46 2026 +0800|luci: optimize ss subscribe
-52809fc4|handsomeji|Sat May 23 01:19:03 2026 +0800|luci: optimize
+61a31b13|A-BO|Tue May 26 18:39:53 2026 +0800|luci: optimize
+be9939c8|A-BO|Tue May 26 18:19:34 2026 +0800|luci: optimize subscribe
+99b33dfa|A-BO|Tue May 26 17:39:39 2026 +0800|luci: fix `UrlEncode/UrlDecode` function in api
 </details>
