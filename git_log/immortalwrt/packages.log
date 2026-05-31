@@ -1,9 +1,0 @@
-<details> <summary> <b>packages new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/881bc2200a61801edc8db88e7631f7e6468989a1...28752320596d0b7a2e7dc8c54a9ea1f0533c2c76)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-287523205|Tianling Shen|Sat May 23 17:24:22 2026 +0800|netopeer2: fix build with libopenssl
-</details>

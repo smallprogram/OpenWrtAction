@@ -1,25 +1,22 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/3ab1a626d9147da0983aa24af1008de8a9c1ae79...8830a574d50007217c142b24120fc3d17927cc58)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/8830a574d50007217c142b24120fc3d17927cc58...5f04084e397d103499748ca92bc6284b0ccc27f8)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-8830a574d|Alexandru Ardelean|Mon May 11 09:45:45 2026 +0300|hwdata: update to 0.407
-8769cca2c|Alexandru Ardelean|Wed Apr 22 12:16:55 2026 +0300|hwdata: update to 0.406
-8ae3fc25e|Alexandru Ardelean|Sun Mar 15 12:56:55 2026 +0200|hwdata: bump to 0.405
-c30b579df|Wei-Ting Yang|Tue Feb 10 19:03:14 2026 +0800|treewide: fix licenses
-5b44c5d67|Daniel Golle|Fri May 8 18:09:35 2026 +0100|debian-archive-keyring: update to 2025.1
-d907ba4c7|Daniel Golle|Fri May 8 18:10:15 2026 +0100|debootstrap: update to 1.0.143
-6ca04b094|Yanase Yuki|Sat May 16 16:34:59 2026 +0900|transmission-web-control: remove package
-f33e9954e|Martin Schiller|Wed Feb 18 07:49:01 2026 +0100|pciutils: use ALTERNATIVES
-9b0db7349|Alexandru Ardelean|Mon May 11 09:45:57 2026 +0300|usbutils: update to 019, switch to meson
-e0fa12385|Martin Schiller|Wed Feb 18 07:51:33 2026 +0100|usbutils: use ALTERNATIVES
-9459a7b6a|Rui Salvaterra|Tue May 12 12:16:57 2026 +0100|tor: update to 0.4.9.8 stable
-1cfb07ed3|Alexandru Ardelean|Mon May 25 19:09:14 2026 +0300|libudev-zero: update to 1.0.4
-5d048515a|Alexandru Ardelean|Wed May 13 09:49:49 2026 +0300|libudev-zero: backport hwdb USB ID lookup from upstream master
-e3c5bed28|Dee HY|Tue May 19 17:53:06 2026 +0800|lm-sensors: fix bad scaling due to use of integer type
-5c7efd611|Daniel Golle|Tue May 26 16:56:14 2026 +0100|libx264: update to git HEAD of 2025-09-10
-
-
+5f04084e3|Hannu Nyman|Sun May 31 12:57:52 2026 +0300|haveged: update to 1.9.22
+e146d1230|Alexandru Ardelean|Sun May 10 12:05:44 2026 +0300|gstreamer1: add libatomic dependency for 32-bit arm targets
+fd7489108|Hauke Mehrtens|Wed Dec 17 22:36:38 2025 +0100|gstreamer1: fix compilation on armeb
+4b080e635|Alexandru Ardelean|Sun May 10 12:05:51 2026 +0300|libtheora: disable ARM assembly on pre-ARMv7 targets only
+78c3a34fa|Alexandru Ardelean|Fri May 29 18:45:19 2026 +0300|knot: drop kru.inc.c static_assert that requires lock-free 16-bit atomics
+fdbcb0899|Jan Hák|Tue Apr 7 11:26:11 2026 +0200|knot: update to version 3.5.4
+6dd4ea40e|Jan Hák|Fri Jan 16 14:00:05 2026 +0100|knot: update to version 3.5.3
+aef786a26|Alexandru Ardelean|Thu May 28 13:28:54 2026 +0300|python3: pin host curses to the SDK's narrow ncurses
+32ac4e7db|Ray Wang|Sun May 24 12:13:13 2026 +0800|hev-socks5-tunnel: update to 2.15.0
+581361e9f|Ray Wang|Sun May 24 12:11:20 2026 +0800|hev-socks5-tproxy: update to 2.11.0
+4bdfd0e69|Ray Wang|Sun May 24 12:09:18 2026 +0800|hev-socks5-server: update to 2.12.0
+e03de685d|Ray Wang|Sat Aug 23 17:08:44 2025 +0800|fsh: update to 4.11.0
+ee294a1aa|Noah Meyerhans|Mon May 25 11:09:01 2026 -0400|bind: bump to 9.20.23
+e1b12946b|Dirk Brenken|Fri May 29 13:57:31 2026 +0200|banip: update 1.8.8-5
 </details>

@@ -1,0 +1,18 @@
+<details> <summary> <b>luci-theme-material3 new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/AngelaCooljx/luci-theme-material3/compare/18bd0e6d2ff8c88081fe39f6f25c402bce2f9d56...186b7e2864f900dd0f4845d86a3a4b4f15b55221)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+186b7e2|cool|Sun May 31 23:16:13 2026 +0800|material3: suppress touch menu hover
+de4f138|cool|Sun May 31 19:24:53 2026 +0800|material3: refine dockerman-js icon and mobile overview
+dd34385|cool|Sun May 31 18:52:35 2026 +0800|material3: fix cbi action dropdown width on tablet
+56043ec|cool|Sun May 31 18:39:17 2026 +0800|material3: favicon color follow the theme color
+138d10a|cool|Sun May 31 17:47:18 2026 +0800|Update Readme.md
+d09999b|cool|Sun May 31 17:37:37 2026 +0800|material3: refine menu button icon
+c321718|cool|Sun May 31 16:38:30 2026 +0800|material3: refine dockerman-js overview styles
+9f9ea2b|cool|Sun May 31 16:20:22 2026 +0800|material3: improve iOS menu tap response
+0725830|cool|Sun May 31 16:11:45 2026 +0800|material3: refine dashboard compatibility
+421b9da|cool|Sun May 31 15:18:26 2026 +0800|material3: refine header title hover
+</details>

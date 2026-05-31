@@ -1,9 +1,9 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/aa71d6a91b6bb555fd47e7f23e9878f360597870...9e52facf4d199ce99a2bdfa4061f9c5c2e6ec3a1)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/9e52facf4d199ce99a2bdfa4061f9c5c2e6ec3a1...fc71ece17d477b0e4f322511defebfb73931dcaa)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-9e52facf4|aiamadeus|Wed Apr 15 18:05:01 2026 +0800|uboot-sunxi: bump to 2026.04
+fc71ece17|aiamadeus|Fri May 15 18:05:10 2026 +0800|kernel/modules: sync upstream
 </details>
