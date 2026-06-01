@@ -1,0 +1,10 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/74f1ae3cecaa2346a96ce5c311232fad6e94e48d...51dc9009a90909e58c7915f1fa8d0fe9fce1a1c0)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+51dc900|David Mandy|Mon Jun 1 15:28:44 2026 +0800|tuic-client: update to 1.8.5 (#667)
+3455ceb|David Mandy|Mon Jun 1 11:56:49 2026 +0800|xray-core: update to 26.6.1 (#665)
+</details>

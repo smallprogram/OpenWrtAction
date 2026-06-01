@@ -1,22 +1,10 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/8830a574d50007217c142b24120fc3d17927cc58...5f04084e397d103499748ca92bc6284b0ccc27f8)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/5f04084e397d103499748ca92bc6284b0ccc27f8...e4885fdc3b6a06bfd4e0f144fcc43c911c424dc1)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-5f04084e3|Hannu Nyman|Sun May 31 12:57:52 2026 +0300|haveged: update to 1.9.22
-e146d1230|Alexandru Ardelean|Sun May 10 12:05:44 2026 +0300|gstreamer1: add libatomic dependency for 32-bit arm targets
-fd7489108|Hauke Mehrtens|Wed Dec 17 22:36:38 2025 +0100|gstreamer1: fix compilation on armeb
-4b080e635|Alexandru Ardelean|Sun May 10 12:05:51 2026 +0300|libtheora: disable ARM assembly on pre-ARMv7 targets only
-78c3a34fa|Alexandru Ardelean|Fri May 29 18:45:19 2026 +0300|knot: drop kru.inc.c static_assert that requires lock-free 16-bit atomics
-fdbcb0899|Jan Hák|Tue Apr 7 11:26:11 2026 +0200|knot: update to version 3.5.4
-6dd4ea40e|Jan Hák|Fri Jan 16 14:00:05 2026 +0100|knot: update to version 3.5.3
-aef786a26|Alexandru Ardelean|Thu May 28 13:28:54 2026 +0300|python3: pin host curses to the SDK's narrow ncurses
-32ac4e7db|Ray Wang|Sun May 24 12:13:13 2026 +0800|hev-socks5-tunnel: update to 2.15.0
-581361e9f|Ray Wang|Sun May 24 12:11:20 2026 +0800|hev-socks5-tproxy: update to 2.11.0
-4bdfd0e69|Ray Wang|Sun May 24 12:09:18 2026 +0800|hev-socks5-server: update to 2.12.0
-e03de685d|Ray Wang|Sat Aug 23 17:08:44 2025 +0800|fsh: update to 4.11.0
-ee294a1aa|Noah Meyerhans|Mon May 25 11:09:01 2026 -0400|bind: bump to 9.20.23
-e1b12946b|Dirk Brenken|Fri May 29 13:57:31 2026 +0200|banip: update 1.8.8-5
+e4885fdc3|Daniel Golle|Mon Jun 1 03:19:22 2026 +0100|transmission: add p{read,write}v2 syscalls to seccomp filter
+9346c1bfa|Tyrel M. McQueen|Wed May 27 13:36:00 2026 -0400|unbound: update to 1.25.1
 </details>

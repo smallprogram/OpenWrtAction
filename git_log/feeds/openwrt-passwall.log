@@ -1,12 +1,11 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/61a31b133b3ba28ad6bbe6f5608937e46b7baebd...f21372a4a5dd7cc34242967113140400b2ce45a1)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/f21372a4a5dd7cc34242967113140400b2ce45a1...6657bd2b91742da5170e77f32351c5748c8671bd)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-f21372a4|A-BO|Sun May 31 23:34:02 2026 +0800|luci: optimize
-d438deca|A-BO|Sat May 30 12:54:43 2026 +0800|luci: WG protocol supports finalmask
-b91e0b8f|A-BO|Fri May 29 21:35:39 2026 +0800|luci: support hy2 `gecko` obfs for xray
-a49f647e|A-BO|Fri May 29 20:56:49 2026 +0800|luci: support hysteria2 realms for xray (> 26.5.9 effectuate)
+6657bd2b|A-BO|Tue Jun 2 00:10:28 2026 +0800|luci: add `certificate` setting for xray and sing-box
+3eb5150d|A-BO|Mon Jun 1 17:54:41 2026 +0800|luci: exclude illegal node ip
+6d8ff6e3|A-BO|Mon Jun 1 17:17:24 2026 +0800|luci: replace `reject` with `return` of xray dns outbound
 </details>

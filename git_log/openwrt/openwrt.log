@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/3b15a2053531cafbfe74e54f55551d388fc32fb0...78c88ce188b3266757391c34948dffd805e91f78)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-78c88ce188|Guoxin Pu|Thu May 28 15:46:20 2026 +0800|image: fix per device targz rootfs wrong suffix and redundant images
-</details>
