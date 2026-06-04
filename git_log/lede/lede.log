@@ -1,9 +1,10 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/fc71ece17d477b0e4f322511defebfb73931dcaa...7fbd66d50ed37400e8200e8dc37551d0a4607438)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/7fbd66d50ed37400e8200e8dc37551d0a4607438...e66ed696624958dcef5b931292e4704d62a4b03a)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-7fbd66d50|aiamadeus|Thu May 21 18:08:10 2026 +0800|modules: sync upstream config
+e66ed6966|Zoltan HERPAI|Thu Feb 5 14:13:00 2026 +0000|sunxi: enable 6.18 testing kernel
+de1795d9d|Willem Lee|Tue Jun 2 18:01:59 2026 +0800|ipq60xx: add DPtech AP3000-2C support (#14022)
 </details>

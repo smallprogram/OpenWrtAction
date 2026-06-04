@@ -1,0 +1,12 @@
+<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/7e9048c4bba99485d3666f56399a2000e75e5ce1...69083f3ad15f465074ea400bfbad8fff4cb43208)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+69083f3|Eamon|Thu Jun 4 23:12:14 2026 +0800|ci: add Claude PR review bot workflow
+c4e7ab3|Eamon|Thu Jun 4 22:10:28 2026 +0800|fix: apply button shape styles to input[type=button/submit/reset] elements
+03d965b|Eamon|Thu Jun 4 20:09:09 2026 +0800|fix: restore transition-all animations stripped in perf refactor
+f8c0dac|Eamon|Tue Jun 2 19:42:28 2026 +0800|ci: add Claude issue bot workflow
+</details>

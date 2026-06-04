@@ -1,11 +1,15 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/f21372a4a5dd7cc34242967113140400b2ce45a1...6657bd2b91742da5170e77f32351c5748c8671bd)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/6657bd2b91742da5170e77f32351c5748c8671bd...2d81950fada8f0710e40bec8373c5180ef1876b5)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-6657bd2b|A-BO|Tue Jun 2 00:10:28 2026 +0800|luci: add `certificate` setting for xray and sing-box
-3eb5150d|A-BO|Mon Jun 1 17:54:41 2026 +0800|luci: exclude illegal node ip
-6d8ff6e3|A-BO|Mon Jun 1 17:17:24 2026 +0800|luci: replace `reject` with `return` of xray dns outbound
+2d81950f|A-BO|Thu Jun 4 11:38:54 2026 +0800|luci: bypass private IP DNS resolution loop
+d28817fa|A-BO|Wed Jun 3 21:15:36 2026 +0800|luci: optimize shunt rule
+91ad802a|A-BO|Wed Jun 3 19:53:47 2026 +0800|luci: rename xray inbounds' `clients/accounts` to `users` (> 26.5.3)
+54aee28e|A-BO|Wed Jun 3 19:47:28 2026 +0800|luci: optimize fetch `pinnedPeerCertSha256`
+3b418598|A-BO|Wed Jun 3 14:07:24 2026 +0800|luci: hide unsupported settings for socks and http
+9b480d39|A-BO|Tue Jun 2 20:18:55 2026 +0800|luci: Revise README
+2be2586f|A-BO|Tue Jun 2 17:46:49 2026 +0800|luci: 26.6.2
 </details>

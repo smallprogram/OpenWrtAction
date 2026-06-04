@@ -1,0 +1,9 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/98b62bba656bf0cd055103c8a8e68910f6cd2f9d...5fc1fd86ac012dce947a6facb5b7cc68b7ee9453)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+5fc1fd86ac|coolsnowwolf|Thu Jun 4 15:35:39 2026 +0800|luci-mod-system: add ufs sysupgrade support
+</details>

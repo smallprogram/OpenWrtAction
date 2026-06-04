@@ -1,0 +1,23 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/66d5a98acf4d08230b0305c965daa89d13d4614a...e04af5bf78280429e9dc2c8602982416bd862076)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+e04af5bf78|Tianling Shen|Wed Jun 3 10:06:16 2026 +0800|kernel: refresh patches
+0a4de156a1|Abramk|Tue Jun 2 09:41:44 2026 +0800|kernel: fix ecc support for FM25G02B
+697d67e8a4|Tianling Shen|Tue Jun 2 15:20:25 2026 +0800|Merge Official Source
+78c88ce188|Guoxin Pu|Thu May 28 15:46:20 2026 +0800|image: fix per device targz rootfs wrong suffix and redundant images
+3b15a20535|Robert Marko|Thu Mar 5 13:22:35 2026 +0100|firmware-utils: update to Git HEAD (2026-03-05)
+601e0674ae|Robert Marko|Mon May 25 21:26:14 2026 +0200|mvebu: cortexa53: uDPU/eDPU: update active bootscript as well
+fbf01b4d62|Robert Marko|Mon Feb 23 17:41:18 2026 +0100|mvebu: cortexa53: uDPU/eDPU convert to dual firmware (A/B)
+526efddf7b|Robert Marko|Sat May 23 18:19:58 2026 +0200|fstools: update to Git HEAD (2026-05-23)
+c4c164eaa6|Robert Marko|Wed May 20 16:42:28 2026 +0200|fstools: update to Git HEAD (2026-03-17)
+f5a53f3202|Robert Marko|Tue Feb 17 13:35:55 2026 +0100|mvebu: cortex-a53: uDPU/eDPU: cleanup recipe a bit
+f521e161d5|Robert Marko|Tue Feb 17 13:00:04 2026 +0100|mvebu: move FitImage recipe to generic image Makefile
+9cf794cff1|Shiji Yang|Sat May 23 20:36:07 2026 +0800|kernel: bump 6.12 to 6.12.91
+0eaee44870|Shiji Yang|Wed May 20 19:48:32 2026 +0800|kernel: bump 6.12 to 6.12.90
+ddcf755363|John Audia|Fri May 15 15:44:06 2026 -0400|kernel: bump 6.12 to 6.12.89
+797171a359|John Audia|Thu May 14 11:40:33 2026 -0400|kernel: bump 6.12 to 6.12.88
+</details>

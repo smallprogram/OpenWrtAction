@@ -1,10 +1,12 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/5f04084e397d103499748ca92bc6284b0ccc27f8...e4885fdc3b6a06bfd4e0f144fcc43c911c424dc1)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/e4885fdc3b6a06bfd4e0f144fcc43c911c424dc1...dec6c4bae7a9070b653327c00e6edb48860c096d)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-e4885fdc3|Daniel Golle|Mon Jun 1 03:19:22 2026 +0100|transmission: add p{read,write}v2 syscalls to seccomp filter
-9346c1bfa|Tyrel M. McQueen|Wed May 27 13:36:00 2026 -0400|unbound: update to 1.25.1
+dec6c4bae|Dirk Brenken|Thu Jun 4 19:13:34 2026 +0200|adblock: fix default values for ext. DNS resolver
+239877bd8|Dirk Brenken|Thu Jun 4 17:41:28 2026 +0200|adblock: release 4.5.6-1
+fddbf6b84|Olivier Poitrey|Wed Jun 3 18:48:28 2026 +0000|nextdns: update to version 1.47.3
+3d6b4bd07|Michael Heimpold|Sat May 30 09:21:14 2026 +0200|php8: update to 8.4.21
 </details>

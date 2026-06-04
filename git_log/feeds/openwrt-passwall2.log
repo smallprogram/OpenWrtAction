@@ -1,0 +1,20 @@
+<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/6eb9ad0c658dda33406b8e9744146d34fb897a42...a7613329adbb20d01903f7ef781301bc21fabe8b)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+a761332|YourLi|Thu Jun 4 11:34:09 2026 +0800|luci: bypass private IP DNS resolution loop (#1140)
+a1dfaed|YourLi|Wed Jun 3 17:56:22 2026 +0800|luci-app-passwall2: fix port-collision bug in ACL rules
+a6e8e73|handsomeji|Wed Jun 3 17:46:03 2026 +0800|luci: 26.6.3
+f43b4af|A-BO|Tue Jun 2 00:10:28 2026 +0800|luci: add `certificate` setting for xray and sing-box
+568b81e|A-BO|Sat May 30 12:54:43 2026 +0800|luci: WG protocol supports finalmask
+43654b3|A-BO|Fri May 29 21:35:39 2026 +0800|luci: support hy2 `gecko` obfs for xray
+c2bc3d0|A-BO|Fri May 29 20:56:49 2026 +0800|luci: support hysteria2 realms for xray (> 26.5.9 effectuate)
+d718486|A-BO|Tue May 26 17:39:39 2026 +0800|luci: optimize
+44ceae8|A-BO|Mon May 25 20:57:57 2026 +0800|luci: support hy2 `gecko` obfs for hysteria2 and sing-box
+22d9779|A-BO|Sun May 24 03:34:46 2026 +0800|luci: optimize subscribe
+90d7d4c|A-BO|Thu May 7 22:20:41 2026 +0800|luci: rename xray inbounds' `clients/accounts` to `users` > 26.5.3
+3183ffe|A-BO|Tue Jun 2 11:37:21 2026 +0800|luci: replace `reject` with `return` of xray dns outbound
+</details>
