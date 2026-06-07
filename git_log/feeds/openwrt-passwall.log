@@ -1,15 +1,14 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/6657bd2b91742da5170e77f32351c5748c8671bd...2d81950fada8f0710e40bec8373c5180ef1876b5)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/2d81950fada8f0710e40bec8373c5180ef1876b5...db0d4e6d050c4caaf40e8c86f7b0f22b477e53c0)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-2d81950f|A-BO|Thu Jun 4 11:38:54 2026 +0800|luci: bypass private IP DNS resolution loop
-d28817fa|A-BO|Wed Jun 3 21:15:36 2026 +0800|luci: optimize shunt rule
-91ad802a|A-BO|Wed Jun 3 19:53:47 2026 +0800|luci: rename xray inbounds' `clients/accounts` to `users` (> 26.5.3)
-54aee28e|A-BO|Wed Jun 3 19:47:28 2026 +0800|luci: optimize fetch `pinnedPeerCertSha256`
-3b418598|A-BO|Wed Jun 3 14:07:24 2026 +0800|luci: hide unsupported settings for socks and http
-9b480d39|A-BO|Tue Jun 2 20:18:55 2026 +0800|luci: Revise README
-2be2586f|A-BO|Tue Jun 2 17:46:49 2026 +0800|luci: 26.6.2
+db0d4e6d|A-BO|Sun Jun 7 13:18:58 2026 +0800|luci: replace png status icons with svg
+e29b183c|A-BO|Fri Jun 5 16:34:56 2026 +0800|luci: add server-side delayed startup on boot
+29a8199b|A-BO|Fri Jun 5 16:01:35 2026 +0800|luci: fix the problem of service startup stuck during apk upgrade
+89bb7777|A-BO|Fri Jun 5 15:40:11 2026 +0800|luci: support new mkcp config for xray
+a285b09d|A-BO|Fri Jun 5 11:52:31 2026 +0800|luci: remove the `default allowinsecure` setting from the subscribe
+5ab43434|A-BO|Fri Jun 5 10:58:46 2026 +0800|luci: no longer send hwid when subscribing to nodes
 </details>

@@ -1,9 +1,11 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/17deb6ec07ac184bddca3d861a4a105e9363733a...df164132f2492a0e0ba06a650f1b7a4ef1c690d9)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/df164132f2492a0e0ba06a650f1b7a4ef1c690d9...06be2351a54cd86599aefe788282ec39c18fbab5)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-df164132f2|Dirk Brenken|Thu Jun 4 17:47:23 2026 +0200|luci-app-adblock: release 4.5.6-1
+06be2351a5|Hannu Nyman|Thu Jun 4 21:43:27 2026 +0300|luci-base: update timezone data to 2026b
+edcd12da7e|Hannu Nyman|Thu Jun 4 21:43:14 2026 +0300|luci-lua-runtime: update timezone data to 2026b
+2f0c57563b|Hannu Nyman|Thu Jun 4 21:42:57 2026 +0300|build: modify zoneinfo2lua.pl to handle luci-lua-runtime
 </details>

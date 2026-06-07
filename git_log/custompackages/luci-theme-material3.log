@@ -1,13 +1,9 @@
 <details> <summary> <b>luci-theme-material3 new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/AngelaCooljx/luci-theme-material3/compare/e4418c0650fd99473d8740a381ff586b55af02d0...91c79606211121cd6c258ab268c9230faea950ea)  
+#### [:mega: Full Changelog. ](https://github.com/AngelaCooljx/luci-theme-material3/compare/91c79606211121cd6c258ab268c9230faea950ea...38397ed978b0f9ed2d82b73d52c9a7c6bbd023ad)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-91c7960|cool|Fri Jun 5 00:13:10 2026 +0800|material3: stabilize mobile sidebar rounding
-2436e8f|cool|Thu Jun 4 23:45:19 2026 +0800|material3: restore mouse hover on touch devices
-d84d2d5|cool|Thu Jun 4 23:43:00 2026 +0800|release: add package install notes
-3c78ec1|cool|Wed Jun 3 00:26:30 2026 +0800|material3: fix hidden mobile flag values
-9109f7b|cool|Tue Jun 2 22:13:16 2026 +0800|material3: center switch checkmark
+38397ed|cool|Fri Jun 5 12:18:19 2026 +0800|material3: align flag labels with switches
 </details>

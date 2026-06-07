@@ -1,10 +1,14 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/7fbd66d50ed37400e8200e8dc37551d0a4607438...e66ed696624958dcef5b931292e4704d62a4b03a)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/e66ed696624958dcef5b931292e4704d62a4b03a...b635e3b6b2c23a961c6c7f8811f449f689fe439c)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-e66ed6966|Zoltan HERPAI|Thu Feb 5 14:13:00 2026 +0000|sunxi: enable 6.18 testing kernel
-de1795d9d|Willem Lee|Tue Jun 2 18:01:59 2026 +0800|ipq60xx: add DPtech AP3000-2C support (#14022)
+b635e3b6b|libri unk|Sun Jun 7 21:52:45 2026 +0800|mediatek/filogic: fix network port assignment for fzs_5gcpe-p3 (#14002)
+f0fe13247|Abramk|Sun Jun 7 21:47:25 2026 +0800|airoha: add support for Xg 040g series (#14056)
+d3dd5b822|Internet1235|Sun Jun 7 21:45:53 2026 +0800|openssl: update to 3.6.2 (#14054)
+9c2c8b0d0|Internet1235|Thu Jun 4 23:29:01 2026 +0800|openssl: update to version 3.6.2
+51f3647fb|Internet1235|Fri Jun 5 15:46:42 2026 +0800|kernel: bump 6.18 to 6.18.34 (#14051)
+d20e365e5|Miles Poupart|Fri Jun 5 15:46:29 2026 +0800|kernel: bump 6.12 to 6.12.92 (#14053)
 </details>
