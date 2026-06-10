@@ -1,14 +1,13 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/e66ed696624958dcef5b931292e4704d62a4b03a...b635e3b6b2c23a961c6c7f8811f449f689fe439c)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/b635e3b6b2c23a961c6c7f8811f449f689fe439c...59d2d7d877aa0fdb712f0865f9daca1fe4533530)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
+59d2d7d87|Internet1235|Wed Jun 10 16:00:01 2026 +0800|kernel: refresh target 6.6 patches
+3dcc27fff|Christian Marangi|Fri Sep 26 04:55:19 2025 +0200|airoha: support for Airoha AN7583
 b635e3b6b|libri unk|Sun Jun 7 21:52:45 2026 +0800|mediatek/filogic: fix network port assignment for fzs_5gcpe-p3 (#14002)
 f0fe13247|Abramk|Sun Jun 7 21:47:25 2026 +0800|airoha: add support for Xg 040g series (#14056)
 d3dd5b822|Internet1235|Sun Jun 7 21:45:53 2026 +0800|openssl: update to 3.6.2 (#14054)
-9c2c8b0d0|Internet1235|Thu Jun 4 23:29:01 2026 +0800|openssl: update to version 3.6.2
-51f3647fb|Internet1235|Fri Jun 5 15:46:42 2026 +0800|kernel: bump 6.18 to 6.18.34 (#14051)
-d20e365e5|Miles Poupart|Fri Jun 5 15:46:29 2026 +0800|kernel: bump 6.12 to 6.12.92 (#14053)
 </details>

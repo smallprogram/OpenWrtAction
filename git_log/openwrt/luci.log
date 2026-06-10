@@ -1,11 +1,9 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/df164132f2492a0e0ba06a650f1b7a4ef1c690d9...06be2351a54cd86599aefe788282ec39c18fbab5)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/06be2351a54cd86599aefe788282ec39c18fbab5...e99e1326227d2d997fe157fbcf0a42025e5ba207)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-06be2351a5|Hannu Nyman|Thu Jun 4 21:43:27 2026 +0300|luci-base: update timezone data to 2026b
-edcd12da7e|Hannu Nyman|Thu Jun 4 21:43:14 2026 +0300|luci-lua-runtime: update timezone data to 2026b
-2f0c57563b|Hannu Nyman|Thu Jun 4 21:42:57 2026 +0300|build: modify zoneinfo2lua.pl to handle luci-lua-runtime
+e99e132622|Hannu Nyman|Sun Jun 7 21:38:23 2026 +0300|treewide: backport translations from master
 </details>

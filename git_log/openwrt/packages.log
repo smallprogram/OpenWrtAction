@@ -1,9 +1,15 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/dec6c4bae7a9070b653327c00e6edb48860c096d...69b9214dce33dd450383a83607cebd0fea87e4c9)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/69b9214dce33dd450383a83607cebd0fea87e4c9...1f0b48657826ece018e4b89226fcfe38a495af71)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-69b9214dc|Michael Heimpold|Sun May 31 09:43:19 2026 +0200|libzip: add version check override
+1f0b48657|Josef Schlehofer|Mon Jun 8 09:05:18 2026 +0200|python3: fix host python extension compilation on macOS
+3bab63a56|Niklas Thorild|Mon Jun 8 22:35:15 2026 +0200|telegraf: update to 1.39.0
+9907cd7eb|Wei-Ting Yang|Tue Jun 9 12:26:11 2026 +0800|bash: update to 5.3 patch level 12
+63c84107b|Georgi Valkov|Tue Jun 9 13:56:30 2026 +0300|rust: fix host build on x64 Darwin
+a4078ffcd|Alexandru Ardelean|Wed Apr 22 12:42:55 2026 +0300|shadow: update to 4.19.4
+8119f9f31|Josef Schlehofer|Mon Jun 8 23:08:10 2026 +0200|onionshare-cli: drop dependency for python3-pysocks and python3-unidecode
+6c09015df|Josef Schlehofer|Sun Jun 7 23:01:07 2026 +0200|perl: install libperl.so using $(INSTALL_BIN) to enable stripping
 </details>

@@ -1,0 +1,11 @@
+<details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/78c88ce188b3266757391c34948dffd805e91f78...2a8b27fab9c8e8bf67ff8a0c341b06a8c68453cf)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+2a8b27fab9|Florian Eckert|Mon Sep 2 15:22:41 2024 +0200|base-files: move config_generate to preinit
+949487e090|Shiji Yang|Tue Jun 2 08:50:19 2026 +0800|kernel: bump 6.12 to 6.12.92
+b49512444f|Grische|Sun May 3 16:34:46 2026 +0200|ipq806x: ap3935: disable hibernation on LAN1
+</details>

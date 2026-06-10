@@ -1,0 +1,20 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/fb217116ab8ddaa5bb7adf5006e33465f363b17a...9c93ca0dd340ff6ae31bb9d908e8933e0e46e114)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+9c93ca0d|coolsnowwolf|Mon Jun 8 09:48:42 2026 +0800|Merge pull request #1115 from Internet1235/golang
+4865a8a4|coolsnowwolf|Mon Jun 8 09:48:31 2026 +0800|Merge pull request #1114 from Internet1235/rust
+a56c1779|coolsnowwolf|Mon Jun 8 09:48:21 2026 +0800|Merge pull request #1111 from sKyissKy/mptcp-daed
+6a7211ef|coolsnowwolf|Mon Jun 8 09:48:08 2026 +0800|Merge pull request #1102 from ZeaKyX/master
+6f8a5fbe|coolsnowwolf|Mon Jun 8 09:47:55 2026 +0800|Merge pull request #1113 from zuozhehao/update-miniupnpd
+78e20eca|Internet1235|Fri Jun 5 23:53:37 2026 +0800|golang: update to 1.26.4
+5519b603|ZeaKyX|Sat May 30 11:22:25 2026 +0800|Merge branch 'master' into master
+43ee07b0|Internet1235|Fri May 29 19:38:07 2026 +0800|rust: update to 1.96.0
+1967950a|ajie|Tue May 26 15:15:28 2026 +0800|miniupnpd: update & nftables support
+0b912ef5|sKy|Sun May 24 14:38:18 2026 +0800|net/daed: update to latest version
+1596299c|sKy|Sun May 24 14:38:12 2026 +0800|package: add mptcpd
+2f88f609|ZeaKyX|Sat May 2 05:06:09 2026 +0000|vlmcsd: fix build with CCACHE on
+</details>

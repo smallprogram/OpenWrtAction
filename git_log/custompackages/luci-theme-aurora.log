@@ -1,11 +1,14 @@
 <details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/69083f3ad15f465074ea400bfbad8fff4cb43208...6e8d7192cda3a80090712a33dd4da510afe4e0a0)  
+#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/6e8d7192cda3a80090712a33dd4da510afe4e0a0...7d9f6a1ae918ea1fd07c532698f7c4f546230d15)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-6e8d719|Eamon|Sat Jun 6 10:42:02 2026 +0800|fix: ensure .hidden always hides elements regardless of specificity
-98cd7ab|Eamon|Fri Jun 5 16:29:32 2026 +0800|chore: update renovate config and remove pr-check workflow
-2b25873|Eamon|Fri Jun 5 16:01:24 2026 +0800|fix: resolve notification close button not dismissing alert messages
+7d9f6a1|Eamon|Wed Jun 10 16:46:04 2026 +0800|refactor: merge _plugins.css into _patches.css and sync dev docs
+f61edc7|Eamon|Wed Jun 10 12:44:30 2026 +0800|ci: review source-only diff, exclude generated htdocs
+9bfbc26|Eamon|Wed Jun 10 11:52:43 2026 +0800|ci: add manual workflow_dispatch trigger to PR review
+e0528dc|Eamon|Wed Jun 10 11:48:14 2026 +0800|ci: split issue bot into triage + analysis steps
+ea55cb0|Eamon|Wed Jun 10 11:43:02 2026 +0800|ci: split PR review into inline + summary steps
+90ba5b6|Eamon|Wed Jun 10 11:26:13 2026 +0800|ci: raise PR review bot max-turns 30 -> 50
 </details>

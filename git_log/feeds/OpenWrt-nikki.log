@@ -1,9 +1,19 @@
 <details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/nikkinikki-org/OpenWrt-nikki/compare/bf7fc56ad1b2971fb3eda534f879883b6ea3fcc7...60604014ce6ab3a91e7d847eb507f102f49c5f8a)  
+#### [:mega: Full Changelog. ](https://github.com/nikkinikki-org/OpenWrt-nikki/compare/60604014ce6ab3a91e7d847eb507f102f49c5f8a...95d41dd74e78486c1232bfc28cda44ec27a70edc)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-6060401|github-actions[bot]|Sun Jun 7 10:21:47 2026 +0800|chore: update mihomo-meta to v1.19.27 (#851)
+95d41dd|github-actions[bot]|Wed Jun 10 23:42:30 2026 +0800|chore: update mihomo-alpha to 1686d56 (#846)
+56d291e|Joseph Mory|Wed Jun 10 23:35:12 2026 +0800|fix: explode anchor
+5d3813f|Joseph Mory|Wed Jun 10 23:19:25 2026 +0800|chore: reorder `env` options
+0f85790|Joseph Mory|Wed Jun 10 22:06:18 2026 +0800|fix: `prefer` option of `subscription` section may disappear after save
+272db9a|Joseph Mory|Wed Jun 10 21:36:21 2026 +0800|ci: use the same alpha version format as the official version.
+6e5fb52|Joseph Mory|Wed Jun 10 21:29:20 2026 +0800|chore: bump version to 1.26.1
+ff10896|Joseph Mory|Wed Jun 10 21:28:45 2026 +0800|chore: update i18n
+62ed027|Joseph Mory|Wed Jun 10 21:28:33 2026 +0800|feat: add `clear_at_stop` option for log config
+7351160|Joseph Mory|Wed Jun 10 21:27:51 2026 +0800|feat: add environment variables for Go binaries
+d192f3e|Joseph Mory|Wed Jun 10 21:26:39 2026 +0800|fix: add conditional checks for `dns_hijack_nfproto` at DNS hijack chains
+9e28b9e|Joseph Mory|Wed Jun 10 21:26:11 2026 +0800|fix: build error
 </details>

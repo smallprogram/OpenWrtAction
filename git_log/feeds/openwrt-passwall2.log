@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/a7613329adbb20d01903f7ef781301bc21fabe8b...c1aee75b3767fbdb0b4535b6272bd851cc9c1509)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-c1aee75|Jackie264|Fri Jun 5 15:57:25 2026 +0800|luci: fix the problem of service startup stuck during apk upgrade (#1142)
-</details>
