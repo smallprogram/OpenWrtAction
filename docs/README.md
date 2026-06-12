@@ -104,6 +104,8 @@ Selected plug-in configuration, covering common functions such as network accele
 ### 📡 Network and Agent
 ```
 CONFIG_PACKAGE_luci-app-adguardhome=y
+CONFIG_PACKAGE_luci-app-dae=y (only immortalwrt)
+CONFIG_PACKAGE_luci-app-daed=y (only immortalwrt)
 CONFIG_PACKAGE_luci-app-ddns-go=y
 CONFIG_PACKAGE_luci-app-homeproxy=y
 CONFIG_PACKAGE_luci-app-mosdns=y
