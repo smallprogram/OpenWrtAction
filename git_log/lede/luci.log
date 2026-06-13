@@ -1,9 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/5fc1fd86ac012dce947a6facb5b7cc68b7ee9453...cf6109ee5eb110c83fc767febd08326cba3a6b2a)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-cf6109ee5e|David Mandy|Mon Jun 8 09:49:36 2026 +0800|luci-app-banip: bump verion to 1.8.8 (#400)
-</details>

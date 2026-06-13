@@ -1,9 +1,12 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/06be2351a54cd86599aefe788282ec39c18fbab5...e99e1326227d2d997fe157fbcf0a42025e5ba207)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/e99e1326227d2d997fe157fbcf0a42025e5ba207...44618b5b53d9bdad5cd489e82e29688b4d0862c1)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-e99e132622|Hannu Nyman|Sun Jun 7 21:38:23 2026 +0300|treewide: backport translations from master
+44618b5b53|Hannu Nyman|Sat Jun 13 18:35:10 2026 +0300|luci-app-ustreamer: backport translations
+0665be111f|Georgi Valkov|Sat Jun 13 18:31:56 2026 +0300|luci-app-ustreamer: complete rewrite
+64b81ae272|Paul Donald|Sat Jun 13 18:30:35 2026 +0300|luci-app-ustreamer: add package
+5476212278|Dirk Brenken|Fri Jun 12 22:32:47 2026 +0200|luci-app-banip: release 1.8.9-1
 </details>

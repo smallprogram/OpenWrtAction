@@ -1,14 +1,14 @@
 <details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/6e8d7192cda3a80090712a33dd4da510afe4e0a0...7d9f6a1ae918ea1fd07c532698f7c4f546230d15)  
+#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/7d9f6a1ae918ea1fd07c532698f7c4f546230d15...a0b7c0db979b94649ad064eacd98c644920681a1)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-7d9f6a1|Eamon|Wed Jun 10 16:46:04 2026 +0800|refactor: merge _plugins.css into _patches.css and sync dev docs
-f61edc7|Eamon|Wed Jun 10 12:44:30 2026 +0800|ci: review source-only diff, exclude generated htdocs
-9bfbc26|Eamon|Wed Jun 10 11:52:43 2026 +0800|ci: add manual workflow_dispatch trigger to PR review
-e0528dc|Eamon|Wed Jun 10 11:48:14 2026 +0800|ci: split issue bot into triage + analysis steps
-ea55cb0|Eamon|Wed Jun 10 11:43:02 2026 +0800|ci: split PR review into inline + summary steps
-90ba5b6|Eamon|Wed Jun 10 11:26:13 2026 +0800|ci: raise PR review bot max-turns 30 -> 50
+a0b7c0d|Eamon|Sat Jun 13 18:21:25 2026 +0800|feat: redesign mobile navigation
+f5b2bba|eamonxg|Sat Jun 13 16:10:49 2026 +0800|refactor: migrate Aurora to two-layer color tokens
+798174d|eamonxg|Fri Jun 12 17:52:51 2026 +0800|feat: constant-canvas mega menu with anchor column and device summary
+30ae6c6|eamonxg|Thu Jun 11 23:14:52 2026 +0800|perf: GPU-friendly animations & explicit transition properties (#69)
+9856c5b|eamonxg|Thu Jun 11 18:57:13 2026 +0800|Redesign sidebar as edge-attached accordion with grouped labels (#70)
+6f5a022|Eamon|Thu Jun 11 02:01:31 2026 +0800|feat: add sidebar navigation mode
 </details>
