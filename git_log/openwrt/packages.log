@@ -1,17 +1,16 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/1f0b48657826ece018e4b89226fcfe38a495af71...5f49ee49e83c45df9b51fd6dc5c500a5cd51e11e)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/5f49ee49e83c45df9b51fd6dc5c500a5cd51e11e...726c1d171cd3d08b4d027e50140197a5f6d49530)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-5f49ee49e|John Audia|Sat Jun 13 19:16:01 2026 +0300|shadow: reintroduce newgidmap and newuidmap
-6f690450a|John Audia|Sat Jun 13 19:04:10 2026 +0300|htop: update to 3.5.1
-765ae0a34|John Audia|Sat Jun 13 19:03:59 2026 +0300|htop: update to 3.5.0
-eb6f3e6b9|Dirk Brenken|Sat Jun 13 16:54:53 2026 +0200|adblock: readme update
-181d9aa2a|Dirk Brenken|Fri Jun 12 22:28:10 2026 +0200|banip: release 1.8.9-1
-f723d41e0|Jan Havelka|Mon May 18 13:53:11 2026 +0200|curl: enable zlib support by default
-34037ef62|Josef Schlehofer|Fri Jan 9 15:05:45 2026 +0100|vscode: update editor settings and commit constraints
-199253003|Tianling Shen|Thu Jun 11 14:51:21 2026 +0800|yq: backport upstream anchor fixes
-8abd70b2f|Tianling Shen|Wed Jun 10 11:55:20 2026 +0800|yq: Update to 4.53.3
+726c1d171|Stan Grishin|Mon Jun 15 01:42:31 2026 +0000|adblock-fast: update to 1.2.4-2
+6154e6246|Glenn Strauss|Sun Jun 14 22:30:43 2026 -0400|lighttpd: update to lighttpd 1.4.83 release hash
+44f3c74b0|Glenn Strauss|Sat Dec 27 01:15:42 2025 -0500|lighttpd: 1.4.82-2
+df72cbe73|Glenn Strauss|Sat Dec 27 01:14:14 2025 -0500|lighttpd: mbedtls 3.x EC certs require drbg init
+1f8b6883c|Alarcon Laurent|Wed Dec 24 09:28:19 2025 +0100|lighttpd: fix plugin malformed dependencies
+74beb0960|Antonio Pastor|Sun May 17 08:45:10 2026 -0400|netatalk: update to 4.4.3
+8644a2fc5|Hannu Nyman|Sun Jun 14 10:22:58 2026 +0300|collectd: ping - fix use-after-free when re-resolving a host
+cc461046c|Qingfang Deng|Sun Jun 14 10:22:44 2026 +0300|collectd: remove redundant liblua link flag
 </details>

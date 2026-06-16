@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/00e224e5fd8b1a582f65246dbcf40e854388e91e...ed7d31bcac2ee6268ea2182f225cd1f77ed85e07)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-ed7d31bc|A-BO|Fri Jun 12 00:16:55 2026 +0800|luci: adjust xray wireguard `kernelMode` to `noKernelTun`
-</details>

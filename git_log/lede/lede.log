@@ -1,11 +1,10 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/59d2d7d877aa0fdb712f0865f9daca1fe4533530...987913ed9e734ee89c726403c06745162bd9c1bc)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/987913ed9e734ee89c726403c06745162bd9c1bc...8dddaee18cd295078b9c0ab4f8a30695a676d353)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-987913ed9|Internet1235|Fri Jun 12 18:10:01 2026 +0800|openssl: update to version 3.6.3
-645ec1863|Miles Poupart|Thu Jun 11 18:00:08 2026 +0800|kernel: bump 6.12 to 6.12.93
-0b0f4228f|Internet1235|Thu Jun 11 16:00:01 2026 +0800|kernel: bump 6.18 to 6.18.35
+8dddaee18|coolsnowwolf|Mon Jun 15 22:59:52 2026 +0800|odhcpd: update to latest HEAD
+139afb6bd|aiamadeus|Fri May 22 18:16:08 2026 +0800|rockchip: sync dts with upstream
 </details>

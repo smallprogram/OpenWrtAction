@@ -1,10 +1,10 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/2a8b27fab9c8e8bf67ff8a0c341b06a8c68453cf...bbce1cedcc52d60b1d41ece746bc6bf77b64b7f4)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/bbce1cedcc52d60b1d41ece746bc6bf77b64b7f4...80d9abb3f7a498d31e133cad4c2e9b8da4a9494c)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-bbce1cedcc|Shine|Sun May 31 15:16:09 2026 +0200|scripts: dhcp/dhcpv6: handling of invalid client ID values
-e6c934d532|Paul Spooren|Sat May 30 11:16:08 2026 +0200|build: derive PKG_SOURCE_DATE_EPOCH from the unpacked source tree
+80d9abb3f7|John Audia|Sat Jun 13 05:59:25 2026 -0400|backport: update dnsmasq to v2.93 from master
+73079fa3f1|Sven Eckelmann|Tue May 19 21:43:16 2026 +0200|ramips: pax1800-lite: fix label-mac-device
 </details>

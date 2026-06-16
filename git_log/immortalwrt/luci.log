@@ -1,9 +1,0 @@
-<details> <summary> <b>luci new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/luci/compare/bf7abdefd3cc9036983285f839ab9f1b2ce69235...b615d75b75831b2ca0dbd97c6162800cf85124cf)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-b615d75b75|Interesting Gang|Thu May 21 08:48:57 2026 +0800|luci-app-passwall: bump to 26.6.2
-</details>

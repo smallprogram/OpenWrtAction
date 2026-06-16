@@ -1,14 +1,16 @@
 <details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/7d9f6a1ae918ea1fd07c532698f7c4f546230d15...a0b7c0db979b94649ad064eacd98c644920681a1)  
+#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/a0b7c0db979b94649ad064eacd98c644920681a1...d15d6cef972d40846fc8b70e8108d7303052e9df)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-a0b7c0d|Eamon|Sat Jun 13 18:21:25 2026 +0800|feat: redesign mobile navigation
-f5b2bba|eamonxg|Sat Jun 13 16:10:49 2026 +0800|refactor: migrate Aurora to two-layer color tokens
-798174d|eamonxg|Fri Jun 12 17:52:51 2026 +0800|feat: constant-canvas mega menu with anchor column and device summary
-30ae6c6|eamonxg|Thu Jun 11 23:14:52 2026 +0800|perf: GPU-friendly animations & explicit transition properties (#69)
-9856c5b|eamonxg|Thu Jun 11 18:57:13 2026 +0800|Redesign sidebar as edge-attached accordion with grouped labels (#70)
-6f5a022|Eamon|Thu Jun 11 02:01:31 2026 +0800|feat: add sidebar navigation mode
+d15d6ce|eamonxg|Tue Jun 16 12:42:16 2026 +0800|Polish mega-menu motion and hover behavior (#77)
+91e7954|Eamon|Tue Jun 16 11:40:53 2026 +0800|Disable automatic Claude PR review
+62fef8e|Eamon|Tue Jun 16 00:34:56 2026 +0800|fix: correct dropdown and mega-menu stacking
+1260f09|eamonxg|Tue Jun 16 00:09:52 2026 +0800|feat: three-column mega-menu with Tabler icons and unified nav pills (#76)
+ea5e561|eamonxg|Mon Jun 15 17:47:56 2026 +0800|feat: pill active state for unified sidebar navigation (#75)
+e961229|Eamon|Mon Jun 15 17:31:33 2026 +0800|ci: scope synchronize reviews to incremental diff, dedupe file-list lookup
+9852e12|Eamon|Mon Jun 15 16:12:44 2026 +0800|feat: unify sidebar navigation states
+7a106de|eamonxg|Mon Jun 15 13:06:42 2026 +0800|feat: generate Aurora design tokens from a flat OKLCH spec (#74)
 </details>

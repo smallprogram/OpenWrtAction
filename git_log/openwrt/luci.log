@@ -1,12 +1,9 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/e99e1326227d2d997fe157fbcf0a42025e5ba207...44618b5b53d9bdad5cd489e82e29688b4d0862c1)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/44618b5b53d9bdad5cd489e82e29688b4d0862c1...9ccd99b5898457e5ef39dc21aea226d7fb6e5c7e)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-44618b5b53|Hannu Nyman|Sat Jun 13 18:35:10 2026 +0300|luci-app-ustreamer: backport translations
-0665be111f|Georgi Valkov|Sat Jun 13 18:31:56 2026 +0300|luci-app-ustreamer: complete rewrite
-64b81ae272|Paul Donald|Sat Jun 13 18:30:35 2026 +0300|luci-app-ustreamer: add package
-5476212278|Dirk Brenken|Fri Jun 12 22:32:47 2026 +0200|luci-app-banip: release 1.8.9-1
+9ccd99b589|Stan Grishin|Mon Jun 15 01:45:37 2026 +0000|luci-app-adblock-fast: update to 1.2.4-2
 </details>

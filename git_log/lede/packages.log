@@ -1,0 +1,14 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/9c93ca0dd340ff6ae31bb9d908e8933e0e46e114...380439d4c9a7729bd0f04d39fdecadeda2782376)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+380439d4|coolsnowwolf|Tue Jun 16 16:13:03 2026 +0800|libseccomp: bump version
+8ba8d1fb|coolsnowwolf|Tue Jun 16 11:59:01 2026 +0800|smartmontools: fix SIGSEGV running on loongarch64
+2b66d689|coolsnowwolf|Sun Jun 14 18:20:26 2026 +0800|Merge pull request #1116 from smallprogram/master
+beb8cd40|coolsnowwolf|Sun Jun 14 18:19:01 2026 +0800|transmission: fix build with miniupnpc v21
+e3d5cda0|David Mandy|Fri Jun 12 02:17:43 2026 +0800|add line
+d9be2b9a|David Mandy|Mon Jun 8 10:10:03 2026 +0800|banip: update 1.8.8-5
+</details>
