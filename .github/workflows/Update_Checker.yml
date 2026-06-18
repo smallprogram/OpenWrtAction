@@ -19,8 +19,8 @@ on:
         required: false
         default: 'false'
   schedule:
-    - cron: '0 16 */3 * *'
-    # 每三天的UTC 16:00触发 北京时间为每三天的凌晨0点
+    - cron: '0 16 */5 * *'
+    # 每五天的UTC 16:00触发 北京时间为每五天的凌晨0点
 
 permissions:
   contents: write
@@ -70,7 +70,7 @@ jobs:
       with:
         keep_latest: 10
         keep_min_download_counts: 2
-        delete_expired_data: 30
+        delete_expired_data: 160
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ github.token }}
