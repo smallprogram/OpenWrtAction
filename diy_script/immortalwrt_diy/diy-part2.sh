@@ -22,31 +22,43 @@ fi
 # rm -rf temp_resp
 # git clone -b master --single-branch https://github.com/openwrt/packages.git temp_resp/openwrt_packages
 
+# # =========================================================
+# # Golang/Rust 强制覆盖 (直接操作 feeds 目录)
+# # 确保这段代码在 ./scripts/feeds update -a 之后执行
+# # =========================================================
+# echo "清理旧版 Golang 和 Rust..."
+# # 1. 删除 feeds 里的原生目录
+# rm -rf feeds/packages/lang/golang
+# rm -rf feeds/packages/lang/rust
+
+# # 2. 如果之前执行过 feeds install，必须清理掉残留的软链接，防止指向空目录
+# rm -rf package/feeds/packages/golang
+# rm -rf package/feeds/packages/rust
+
+# echo "注入最新版 Golang 和 Rust..."
+# # 3. 将新代码直接放入 feeds 目录，伪装成原生 feed 包
+# cp -a temp_resp/openwrt_packages/lang/golang feeds/packages/lang/
+# cp -a temp_resp/openwrt_packages/lang/rust feeds/packages/lang/
+
+# # =========================================================
+# # 恢复上游时间戳 (避免不必要的重新编译)
+# # =========================================================
 # GOLANG_TIME=$(cd temp_resp/openwrt_packages && git log -1 --format=%cd --date=unix -- lang/golang)
 # RUST_TIME=$(cd temp_resp/openwrt_packages && git log -1 --format=%cd --date=unix -- lang/rust)
 
-# # 建立专门的 override 目录，不碰 feeds
-# rm -rf package/custom_overrides
-# mkdir -p package/custom_overrides
-
-# cp -a temp_resp/openwrt_packages/lang/golang package/custom_overrides/
-# cp -a temp_resp/openwrt_packages/lang/rust package/custom_overrides/
-
-# # 注入真实时间戳
 # if [ -n "$GOLANG_TIME" ]; then
-#     find package/custom_overrides/golang -exec touch -m -d @"$GOLANG_TIME" {} +
+#     find feeds/packages/lang/golang -exec touch -m -d @"$GOLANG_TIME" {} +
 # else
 #     echo "⚠️ 警告: 无法提取 Golang 的上游时间戳，将使用拷贝时的时间"
 # fi
 
 # if [ -n "$RUST_TIME" ]; then
-#     find package/custom_overrides/rust -exec touch -m -d @"$RUST_TIME" {} +
+#     find feeds/packages/lang/rust -exec touch -m -d @"$RUST_TIME" {} +
 # else
 #     echo "⚠️ 警告: 无法提取 Rust 的上游时间戳，将使用拷贝时的时间"
 # fi
-
-
 # rm -rf temp_resp
+
 #-------------------------------------------------------end 移植包--------------------------------------------------------
 
 
