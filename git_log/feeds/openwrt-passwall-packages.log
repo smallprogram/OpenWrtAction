@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/4c2967c6511274d82a0dd099cf91d361c311fb59...403eb75f2ceb7ff50443673d1b2b0faf4b21b568)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-403eb75|David Mandy|Sun Jun 14 19:41:34 2026 +0800|naiveproxy: update to 149.0.7827.114-1 (#674)
-</details>

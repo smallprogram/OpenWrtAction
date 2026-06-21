@@ -1,10 +1,16 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/987913ed9e734ee89c726403c06745162bd9c1bc...8dddaee18cd295078b9c0ab4f8a30695a676d353)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/8dddaee18cd295078b9c0ab4f8a30695a676d353...ee31696b05dc88005b27b21133b53edfbae3a227)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-8dddaee18|coolsnowwolf|Mon Jun 15 22:59:52 2026 +0800|odhcpd: update to latest HEAD
-139afb6bd|aiamadeus|Fri May 22 18:16:08 2026 +0800|rockchip: sync dts with upstream
+ee31696b0|coolsnowwolf|Sat May 23 17:20:06 2026 +0800|autocore: enable WiFi NSS status display
+c477e3e8f|coolsnowwolf|Tue May 19 17:07:06 2026 +0800|mac80211: add nss wireless offload support
+2ee5dbe75|coolsnowwolf|Sat Jun 20 23:06:56 2026 +0800|mac80211: fix per-phy band detection
+41beda3fa|coolsnowwolf|Sat Jun 20 22:56:42 2026 +0800|ipq-wifi: update to Git HEAD (2026-05-18)
+1a839a4d1|coolsnowwolf|Sat Jun 20 22:34:01 2026 +0800|toolchain: binutils: fix compilation with GCC15
+0f14d0196|coolsnowwolf|Sat Jun 20 17:26:53 2026 +0800|qualcommax: ipq60xx: add Link NN6000v1/v2 support
+27ba2c2dd|coolsnowwolf|Thu Jun 18 02:00:17 2026 +0800|odhcpd: fix build with GCC 8
+e90e38a6c|aiamadeus|Fri Jun 12 18:06:10 2026 +0800|uboot-sunxi: drop yaml depends
 </details>

@@ -1,9 +1,0 @@
-<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/nikkinikki-org/OpenWrt-nikki/compare/a6f0b3baa1a2c656c0040ba968360ae31a503a88...f08bd6932751d215920af944caa5a07d2fc70ad7)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-f08bd69|Joseph Mory|Tue Jun 16 11:48:18 2026 +0800|fix: fail to save large profile
-</details>

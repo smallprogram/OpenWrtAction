@@ -1,14 +1,23 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/9c93ca0dd340ff6ae31bb9d908e8933e0e46e114...380439d4c9a7729bd0f04d39fdecadeda2782376)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/380439d4c9a7729bd0f04d39fdecadeda2782376...5c53b21ae79ae6bf63c457c3631720d76aecce51)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-380439d4|coolsnowwolf|Tue Jun 16 16:13:03 2026 +0800|libseccomp: bump version
-8ba8d1fb|coolsnowwolf|Tue Jun 16 11:59:01 2026 +0800|smartmontools: fix SIGSEGV running on loongarch64
-2b66d689|coolsnowwolf|Sun Jun 14 18:20:26 2026 +0800|Merge pull request #1116 from smallprogram/master
-beb8cd40|coolsnowwolf|Sun Jun 14 18:19:01 2026 +0800|transmission: fix build with miniupnpc v21
-e3d5cda0|David Mandy|Fri Jun 12 02:17:43 2026 +0800|add line
-d9be2b9a|David Mandy|Mon Jun 8 10:10:03 2026 +0800|banip: update 1.8.8-5
+5c53b21a|coolsnowwolf|Fri Jun 19 22:09:26 2026 +0800|Merge pull request #1119 from Internet1235/iperf3
+76a29a5d|coolsnowwolf|Fri Jun 19 22:02:32 2026 +0800|ffmpeg: fix empty cpu configure option
+ac472c99|coolsnowwolf|Fri Jun 19 17:38:43 2026 +0800|vim: fix build with GCC 14
+1e041fac|coolsnowwolf|Fri Jun 19 15:59:02 2026 +0800|miniupnpd: remove conflict with nftables
+18f14d8e|coolsnowwolf|Fri Jun 19 13:45:11 2026 +0800|node: add loongarch64 support for 22.x
+caabca77|coolsnowwolf|Fri Jun 19 13:41:59 2026 +0800|miniupnpd: fix fw4 detection
+4e8be129|coolsnowwolf|Fri Jun 19 13:15:31 2026 +0800|miniupnpd: change DEFAULT_VARIANT to miniupnpd-iptables
+7f9b0c7d|coolsnowwolf|Fri Jun 19 10:51:09 2026 +0800|node: fix v12 build with GCC 14
+690a3cd2|coolsnowwolf|Thu Jun 18 13:31:33 2026 +0800|miniupnpd: lower nft cache callback log level
+28f49842|coolsnowwolf|Thu Jun 18 13:31:53 2026 +0800|Merge pull request #1117 from Internet1235/ddns-go
+3aae0605|coolsnowwolf|Thu Jun 18 13:31:43 2026 +0800|Merge pull request #1118 from Internet1235/xray-core
+a02ae01b|coolsnowwolf|Thu Jun 18 00:31:36 2026 +0800|ffmpeg: update to 7.1.4
+fdb677e5|Internet1235|Wed Jun 17 12:59:54 2026 +0800|iperf3: update to 3.21
+05213bed|Internet1235|Wed Jun 17 12:56:24 2026 +0800|xray-core: update to 26.6.1
+dd903038|Internet1235|Wed Jun 17 12:51:01 2026 +0800|ddns-go: update to 6.17.1
 </details>

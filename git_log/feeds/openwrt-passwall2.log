@@ -1,18 +1,9 @@
 <details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/c1aee75b3767fbdb0b4535b6272bd851cc9c1509...426571850958db2bded801c4f23090438026a9ec)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/426571850958db2bded801c4f23090438026a9ec...9f080c65786f3838c19e21186fdc3a5f408e38ce)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-4265718|handsomeji|Tue Jun 16 19:19:41 2026 +0800|luci: 26.6.16
-148c243|A-BO|Fri Jun 12 00:16:55 2026 +0800|luci: adjust xray wireguard `kernelMode` to `noKernelTun`
-5c3569c|A-BO|Wed Jun 10 13:54:26 2026 +0800|luci: optimize shunt catch-all route
-5e06a54|A-BO|Wed Jun 10 00:23:20 2026 +0800|luci: optimize xray configuration
-612225d|A-BO|Tue Jun 9 20:03:50 2026 +0800|luci: optimize hysteria2 realm
-f89a59b|A-BO|Fri Jun 5 16:34:56 2026 +0800|luci: add server-side delayed startup on boot
-eca23ac|A-BO|Fri Jun 5 15:40:11 2026 +0800|luci: support new mkcp config for xray
-d6f0ddc|A-BO|Fri Jun 5 10:58:46 2026 +0800|luci: no longer send hwid when subscribing to nodes
-0bcd2c2|handsomeji|Tue Jun 16 18:29:52 2026 +0800|luci: adjust bypass private IP logic
-e13632c|A-BO|Mon Jun 15 20:55:22 2026 +0800|luci: fixup
+9f080c6|A-BO|Thu Jun 18 22:11:13 2026 +0800|luci: fixup
 </details>

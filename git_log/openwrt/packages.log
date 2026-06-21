@@ -1,16 +1,14 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/5f49ee49e83c45df9b51fd6dc5c500a5cd51e11e...726c1d171cd3d08b4d027e50140197a5f6d49530)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/726c1d171cd3d08b4d027e50140197a5f6d49530...c1b1d9f1f0d0d8e8192cfbb8f5b78570bc1e32e7)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-726c1d171|Stan Grishin|Mon Jun 15 01:42:31 2026 +0000|adblock-fast: update to 1.2.4-2
-6154e6246|Glenn Strauss|Sun Jun 14 22:30:43 2026 -0400|lighttpd: update to lighttpd 1.4.83 release hash
-44f3c74b0|Glenn Strauss|Sat Dec 27 01:15:42 2025 -0500|lighttpd: 1.4.82-2
-df72cbe73|Glenn Strauss|Sat Dec 27 01:14:14 2025 -0500|lighttpd: mbedtls 3.x EC certs require drbg init
-1f8b6883c|Alarcon Laurent|Wed Dec 24 09:28:19 2025 +0100|lighttpd: fix plugin malformed dependencies
-74beb0960|Antonio Pastor|Sun May 17 08:45:10 2026 -0400|netatalk: update to 4.4.3
-8644a2fc5|Hannu Nyman|Sun Jun 14 10:22:58 2026 +0300|collectd: ping - fix use-after-free when re-resolving a host
-cc461046c|Qingfang Deng|Sun Jun 14 10:22:44 2026 +0300|collectd: remove redundant liblua link flag
+c1b1d9f1f|Chester A. Unal|Sun Jun 21 09:44:20 2026 +0100|bsbf-bonding: fix final wan interface check and delete wan quietly
+747103a50|Chester A. Unal|Thu Jun 18 15:35:43 2026 +0100|bsbf-openwrt-resources: do not reload firewall
+d59f799fd|Chester A. Unal|Tue Jun 9 20:06:14 2026 +0100|bsbf-resources: update to GIT HEAD of 2026-06-19
+21a197dfe|Stan Grishin|Sat May 16 02:49:46 2026 +0000|https-dns-proxy: update to 2026.03.18-4
+d6e457a1a|Dirk Brenken|Wed Jun 17 20:58:27 2026 +0200|travelmate: update 2.4.6-2
+8e0ccf654|Dirk Brenken|Tue Jun 16 21:30:33 2026 +0200|travelmate: release 2.4.6-1
 </details>

@@ -1,12 +1,9 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/cf6109ee5eb110c83fc767febd08326cba3a6b2a...17c28ff96a3244d87845900630f2061e18e17328)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/17c28ff96a3244d87845900630f2061e18e17328...900aad8ab11cc50a6135ea3d854a55581a2fdf14)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-17c28ff96a|coolsnowwolf|Tue Jun 16 17:35:53 2026 +0800|luci-app-upnp: add firewall3 iptables support
-ed082a19b3|coolsnowwolf|Tue Jun 16 16:13:28 2026 +0800|luci-app-dockerman: bump version
-88bb18203f|coolsnowwolf|Tue Jun 16 15:03:46 2026 +0800|luci-theme-design: bump to v2026/06/16
-9b5cb860af|David Mandy|Sun Jun 14 17:23:10 2026 +0800|luci-app-banip: update 1.8.8-5 (#406)
+900aad8ab1|coolsnowwolf|Thu Jun 18 11:11:00 2026 +0800|luci-mod-system: add Docker opt mount target
 </details>

@@ -1,16 +1,12 @@
 <details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/a0b7c0db979b94649ad064eacd98c644920681a1...d15d6cef972d40846fc8b70e8108d7303052e9df)  
+#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/d15d6cef972d40846fc8b70e8108d7303052e9df...72a10dc3e865fbbc9d30bbb88c9e80439bf4b5ff)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-d15d6ce|eamonxg|Tue Jun 16 12:42:16 2026 +0800|Polish mega-menu motion and hover behavior (#77)
-91e7954|Eamon|Tue Jun 16 11:40:53 2026 +0800|Disable automatic Claude PR review
-62fef8e|Eamon|Tue Jun 16 00:34:56 2026 +0800|fix: correct dropdown and mega-menu stacking
-1260f09|eamonxg|Tue Jun 16 00:09:52 2026 +0800|feat: three-column mega-menu with Tabler icons and unified nav pills (#76)
-ea5e561|eamonxg|Mon Jun 15 17:47:56 2026 +0800|feat: pill active state for unified sidebar navigation (#75)
-e961229|Eamon|Mon Jun 15 17:31:33 2026 +0800|ci: scope synchronize reviews to incremental diff, dedupe file-list lookup
-9852e12|Eamon|Mon Jun 15 16:12:44 2026 +0800|feat: unify sidebar navigation states
-7a106de|eamonxg|Mon Jun 15 13:06:42 2026 +0800|feat: generate Aurora design tokens from a flat OKLCH spec (#74)
+72a10dc|Eamon|Fri Jun 19 10:22:56 2026 +0800|chore: bump version to 1.0.0
+4f5ef09|Eamon|Thu Jun 18 17:03:23 2026 +0800|feat: soften light-mode info accent
+d58d34e|Eamon|Wed Jun 17 22:51:25 2026 +0800|chore: compress logo.svg and update Shortcuts icon
+dd67659|Eamon|Wed Jun 17 11:56:05 2026 +0800|refactor: simplify navbar variable naming
 </details>

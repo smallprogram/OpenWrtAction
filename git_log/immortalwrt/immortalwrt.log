@@ -1,9 +1,0 @@
-<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/aa79440e448043c1a096beed3742fc8779e6dcd8...fa133f00e4e41104474ac6dae0700d855a4d2215)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-fa133f00e4|Tianling Shen|Fri Jun 12 11:54:30 2026 +0800|autocore: remove incorrect rps_cpus override
-</details>
