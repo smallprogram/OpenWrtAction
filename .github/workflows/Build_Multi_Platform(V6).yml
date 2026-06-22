@@ -520,10 +520,16 @@ jobs:
           touch /workdir/base_compilation_marker
           echo "==== 1. 编译系统工具 ===="
           time make tools/compile -j$(nproc) || exit 1
+          sleep 5
+          echo "------------------------"
           echo "==== 2. 编译交叉工具链 ===="
           time make toolchain/compile -j$(nproc) || exit 1
+          sleep 5
+          echo "------------------------"
           # echo "==== 3. 编译 Linux 内核 ===="
           # time make target/compile -j$(nproc) || exit 1
+          sleep 5
+          echo "------------------------"
 
           echo "==== 4. 编译长期存在的包 ===="
           LONG_TIME_TARGETS=(
@@ -534,6 +540,8 @@ jobs:
           )
           for target in "${LONG_TIME_TARGETS[@]}"; do
               time make $target -j$(nproc) || exit 1
+              sleep 5
+              echo "------------------------"
           done
 
       - name: Checkpoint Cache (Save Base to GHCR)
