@@ -470,7 +470,7 @@ jobs:
 
       - name: Restore Entire OpenWrt Cache from GHCR
         id: restore_cache
-        if: steps.matrix_status.outputs.status != 'success' && github.event.inputs.force_rebuild != 'true'
+        if: steps.matrix_status.outputs.status != 'success' && fromJSON(github.run_attempt) < 3  && github.event.inputs.force_rebuild != 'true'
         run: |
 
           df -hT
