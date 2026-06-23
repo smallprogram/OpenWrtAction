@@ -70,15 +70,31 @@ port_package() {
     local pkg_path="$2"
     local target_dir="$3"
     local pkg_name=$(basename "$pkg_path")
+    local dest_path="$target_dir/$pkg_name"
+
+    # 1. 安全检查：确保源目录确实存在
+    if [ ! -d "$src_repo/$pkg_path" ]; then
+        echo "❌ 错误: 源目录 $src_repo/$pkg_path 不存在，跳过！"
+        return 1
+    fi
+
+    # 2. 先删除目标目录，避免旧版本废弃文件残留（目录合并问题）
+    if [ -d "$dest_path" ]; then
+        rm -rf "$dest_path"
+    fi
+
+    # 3. 统一执行复制操作
+    cp -a "$src_repo/$pkg_path" "$target_dir/"
+
+    # 4. 提取上游真实时间并修改时间戳
+    # 加上 2>/dev/null 防止非 git 仓库报错干扰输出
+    local commit_time=$(cd "$src_repo" && git log -1 --format=%cd --date=unix -- "$pkg_path" 2>/dev/null)
     
-    # 提取上游真实时间并复制
-    local commit_time=$(cd "$src_repo" && git log -1 --format=%cd --date=unix -- "$pkg_path")
     if [ -n "$commit_time" ]; then
-        cp -a "$src_repo/$pkg_path" "$target_dir/"
-        find "$target_dir/$pkg_name" -exec touch -m -d @"$commit_time" {} +
+        find "$dest_path" -exec touch -m -d @"$commit_time" {} +
+        echo "✅ 同步成功: $pkg_name (保留了原始时间戳)"
     else
-        echo "⚠️ 警告: 无法提取 $pkg_path 的时间戳，直接复制文件"
-        cp -a "$src_repo/$pkg_path" "$target_dir/"
+        echo "⚠️ 警告: 无法提取 $pkg_path 的时间戳，已作为普通文件复制"
     fi
 }
 
@@ -92,10 +108,14 @@ port_package "temp_resp/immortalwrt_luci" "applications/luci-app-netdata" "feeds
 port_package "temp_resp/immortalwrt_luci" "applications/luci-app-ramfree" "feeds/luci/applications"
 port_package "temp_resp/immortalwrt_luci" "applications/luci-app-vlmcsd" "feeds/luci/applications"
 port_package "temp_resp/immortalwrt_luci" "applications/luci-app-wechatpush" "feeds/luci/applications"
+port_package "temp_resp/immortalwrt_luci" "applications/luci-app-smartdns" "feeds/luci/applications"
+
 
 port_package "temp_resp/immortalwrt_packages" "net/ddns-go" "feeds/packages/net"
 port_package "temp_resp/immortalwrt_packages" "net/vlmcsd" "feeds/packages/net"
+port_package "temp_resp/immortalwrt_packages" "net/smartdns" "feeds/packages/net"
 
+# 清理临时目录
 rm -rf temp_resp
 #--------------------------------------------------------------end 移植包--------------------------------------------------------
 
