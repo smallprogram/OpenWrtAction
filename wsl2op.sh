@@ -114,10 +114,10 @@ fi
 
 
 Func_LogMessage "请选择要编译的平台：" "Please choose the configuration file to import:"
-Func_LogMessage "1) immortalwrt" "1) platform_immortalwrt.sh"
-Func_LogMessage "2) lean" "2) platform_lean.sh"
-Func_LogMessage "3) openwrt" "3) platform_openwrt.sh"
-Func_LogMessage "将在15秒后默认选择 platform_immortalwrt.sh..." "The default choice will be platform_immortalwrt.sh in 15 seconds..."
+Func_LogMessage "1) openwrt" "1) platform_openwrt.sh"
+Func_LogMessage "2) immortalwrt" "2) platform_immortalwrt.sh"
+Func_LogMessage "3) lean" "3) platform_lean.sh"
+Func_LogMessage "将在15秒后默认选择 platform_openwrt.sh..." "The default choice will be platform_openwrt.sh in 15 seconds..."
 
 # 使用read命令等待用户输入，超时15秒后自动选择1
 read -t $timer -p "$(Func_LogMessage '输入对应的数字选择（默认1）: ' 'Enter the corresponding number to select (default 1): ')" choice
@@ -125,20 +125,20 @@ echo
 # 根据用户输入选择对应的配置文件
 case $choice in
     1)
-        Func_LogMessage "选择 platform_immortalwrt.sh" "Selected platform_immortalwrt.sh"
-        source ./platform_immortalwrt.sh
-        ;;
-    2)
-        Func_LogMessage "选择 platform_lean.sh" "Selected platform_lean.sh"
-        source ./platform_lean.sh
-        ;;
-    3)
         Func_LogMessage "选择 platform_openwrt.sh" "Selected platform_openwrt.sh"
         source ./platform_openwrt.sh
         ;;
-    *)
-        Func_LogMessage "超时或无效输入，默认选择 platform_immortalwrt.sh" "Timeout or invalid input, defaulting to platform_immortalwrt.sh"
+    2)
+        Func_LogMessage "选择 platform_immortalwrt.sh" "Selected platform_immortalwrt.sh"
         source ./platform_immortalwrt.sh
+        ;;
+    3)
+        Func_LogMessage "选择 platform_lean.sh" "Selected platform_lean.sh"
+        source ./platform_lean.sh
+        ;;
+    *)
+        Func_LogMessage "超时或无效输入，默认选择 platform_openwrt.sh" "Timeout or invalid input, defaulting to platform_openwrt.sh"
+        source ./platform_openwrt.sh
         ;;
 esac
 echo
