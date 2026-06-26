@@ -1,12 +1,11 @@
 <details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/d15d6cef972d40846fc8b70e8108d7303052e9df...72a10dc3e865fbbc9d30bbb88c9e80439bf4b5ff)  
+#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/72a10dc3e865fbbc9d30bbb88c9e80439bf4b5ff...4c5196b98ba3a6f078416cd6a597e2c7c50eb2f5)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-72a10dc|Eamon|Fri Jun 19 10:22:56 2026 +0800|chore: bump version to 1.0.0
-4f5ef09|Eamon|Thu Jun 18 17:03:23 2026 +0800|feat: soften light-mode info accent
-d58d34e|Eamon|Wed Jun 17 22:51:25 2026 +0800|chore: compress logo.svg and update Shortcuts icon
-dd67659|Eamon|Wed Jun 17 11:56:05 2026 +0800|refactor: simplify navbar variable naming
+4c5196b|Eamon|Thu Jun 25 23:44:12 2026 +0800|feat: redesign zone/iface badges for consistent minimal shape
+f1b86d5|Eamon|Thu Jun 25 23:05:23 2026 +0800|feat: minimal table on mobile
+a955eec|Eamon|Thu Jun 25 01:43:44 2026 +0800|docs: add build-from-source instructions (#79)
 </details>

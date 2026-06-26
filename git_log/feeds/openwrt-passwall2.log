@@ -1,9 +1,10 @@
 <details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/426571850958db2bded801c4f23090438026a9ec...9f080c65786f3838c19e21186fdc3a5f408e38ce)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/9f080c65786f3838c19e21186fdc3a5f408e38ce...20a2f311084608c14b23404c11caa13ffbbb9db0)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-9f080c6|A-BO|Thu Jun 18 22:11:13 2026 +0800|luci: fixup
+20a2f31|bcseputetto|Fri Jun 26 22:04:11 2026 +0800|HWID option (#1169)
+b8975ee|Jackie264|Thu Jun 25 20:12:55 2026 +0800|luci: Update GeoIP URLs
 </details>

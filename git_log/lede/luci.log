@@ -1,9 +1,11 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/17c28ff96a3244d87845900630f2061e18e17328...900aad8ab11cc50a6135ea3d854a55581a2fdf14)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/900aad8ab11cc50a6135ea3d854a55581a2fdf14...04529e22e7cba57ac5caa1259df8e0ac35f77a68)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-900aad8ab1|coolsnowwolf|Thu Jun 18 11:11:00 2026 +0800|luci-mod-system: add Docker opt mount target
+04529e22e7|coolsnowwolf|Mon Jun 22 17:18:32 2026 +0800|luci: support fw4 brcm fullcone nat
+760a8fcfdf|coolsnowwolf|Mon Jun 22 11:54:04 2026 +0800|luci-proto-openvpnc: support firewall4 dependency
+9be3a8a6db|coolsnowwolf|Mon Jun 22 02:44:22 2026 +0800|luci-app-airoha-npu: add Airoha NPU status plugin
 </details>

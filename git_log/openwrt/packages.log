@@ -1,14 +1,25 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/726c1d171cd3d08b4d027e50140197a5f6d49530...c1b1d9f1f0d0d8e8192cfbb8f5b78570bc1e32e7)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/c1b1d9f1f0d0d8e8192cfbb8f5b78570bc1e32e7...88e34c020e0f72467e78b42f2e09240423f1a7fd)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-c1b1d9f1f|Chester A. Unal|Sun Jun 21 09:44:20 2026 +0100|bsbf-bonding: fix final wan interface check and delete wan quietly
-747103a50|Chester A. Unal|Thu Jun 18 15:35:43 2026 +0100|bsbf-openwrt-resources: do not reload firewall
-d59f799fd|Chester A. Unal|Tue Jun 9 20:06:14 2026 +0100|bsbf-resources: update to GIT HEAD of 2026-06-19
-21a197dfe|Stan Grishin|Sat May 16 02:49:46 2026 +0000|https-dns-proxy: update to 2026.03.18-4
-d6e457a1a|Dirk Brenken|Wed Jun 17 20:58:27 2026 +0200|travelmate: update 2.4.6-2
-8e0ccf654|Dirk Brenken|Tue Jun 16 21:30:33 2026 +0200|travelmate: release 2.4.6-1
+88e34c020|Chester A. Unal|Fri Jun 26 07:56:20 2026 +0100|bsbf-resources: add conffiles for bsbf-bonding and bsbf-mptcp
+135d391b8|Erik Conijn|Thu Jun 11 14:50:58 2026 +0200|openvpn: set ENABLE-DCO default to n
+d011e9936|Qingfang Deng|Thu Apr 23 13:23:43 2026 +0800|ovpn-dco: work around EIP-197 incompatibility
+b19d06c83|Andy Chiang|Mon Apr 20 00:27:15 2026 +0700|openvpn: add kmod-ovpn-backports dependency
+10819afeb|Chester A. Unal|Wed Jun 24 19:58:37 2026 +0100|bsbf-resources: update to GIT HEAD of 2026-06-24
+f9656b220|Alexandru Ardelean|Thu Apr 16 21:15:27 2026 +0300|vobject: update to 0.9.9; add test.sh
+84a86faaf|Daniel F. Dickinson|Thu May 7 03:04:18 2026 -0400|radicale3: bump version and adjust dependencies
+376e082e3|Daniel F. Dickinson|Thu May 7 03:00:02 2026 -0400|radicale3: clean out cspell hints
+575e71df8|Hirokazu MORIKAWA|Mon Jun 22 20:36:36 2026 +0900|node: bump to 22.23.0
+1e8762925|Rui Salvaterra|Wed Jun 3 10:31:44 2026 +0100|tor: update to 0.4.9.9 stable
+1df6112ae|Wei-Ting Yang|Tue Jun 23 12:46:26 2026 +0800|expat: update to 2.8.1
+4ac1ae920|Glenn Strauss|Thu Jun 18 00:21:36 2026 -0400|lighttpd: update to lighttpd 1.4.84 release hash
+5f793a28b|Dengfeng Liu|Sun Jun 14 19:09:34 2026 +0800|xfrpc: update to 5.06.909
+7c440ca8f|Hannu Nyman|Tue Jun 23 16:47:21 2026 +0300|haveged: update to 1.9.24
+7428aa656|Dirk Brenken|Mon Jun 22 21:06:07 2026 +0200|adblock: update 4.5.6-2
+
+
 </details>

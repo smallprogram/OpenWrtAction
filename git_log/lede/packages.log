@@ -1,23 +1,10 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/380439d4c9a7729bd0f04d39fdecadeda2782376...5c53b21ae79ae6bf63c457c3631720d76aecce51)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/5c53b21ae79ae6bf63c457c3631720d76aecce51...120f782c8ec8557dcc865fd1db39f0140a9e3b9c)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-5c53b21a|coolsnowwolf|Fri Jun 19 22:09:26 2026 +0800|Merge pull request #1119 from Internet1235/iperf3
-76a29a5d|coolsnowwolf|Fri Jun 19 22:02:32 2026 +0800|ffmpeg: fix empty cpu configure option
-ac472c99|coolsnowwolf|Fri Jun 19 17:38:43 2026 +0800|vim: fix build with GCC 14
-1e041fac|coolsnowwolf|Fri Jun 19 15:59:02 2026 +0800|miniupnpd: remove conflict with nftables
-18f14d8e|coolsnowwolf|Fri Jun 19 13:45:11 2026 +0800|node: add loongarch64 support for 22.x
-caabca77|coolsnowwolf|Fri Jun 19 13:41:59 2026 +0800|miniupnpd: fix fw4 detection
-4e8be129|coolsnowwolf|Fri Jun 19 13:15:31 2026 +0800|miniupnpd: change DEFAULT_VARIANT to miniupnpd-iptables
-7f9b0c7d|coolsnowwolf|Fri Jun 19 10:51:09 2026 +0800|node: fix v12 build with GCC 14
-690a3cd2|coolsnowwolf|Thu Jun 18 13:31:33 2026 +0800|miniupnpd: lower nft cache callback log level
-28f49842|coolsnowwolf|Thu Jun 18 13:31:53 2026 +0800|Merge pull request #1117 from Internet1235/ddns-go
-3aae0605|coolsnowwolf|Thu Jun 18 13:31:43 2026 +0800|Merge pull request #1118 from Internet1235/xray-core
-a02ae01b|coolsnowwolf|Thu Jun 18 00:31:36 2026 +0800|ffmpeg: update to 7.1.4
-fdb677e5|Internet1235|Wed Jun 17 12:59:54 2026 +0800|iperf3: update to 3.21
-05213bed|Internet1235|Wed Jun 17 12:56:24 2026 +0800|xray-core: update to 26.6.1
-dd903038|Internet1235|Wed Jun 17 12:51:01 2026 +0800|ddns-go: update to 6.17.1
+120f782c|coolsnowwolf|Fri Jun 26 23:06:38 2026 +0800|ffmpeg: add v4l2 m2m support for riscv64
+fb054c87|coolsnowwolf|Mon Jun 22 17:18:32 2026 +0800|dns2tcp: add AAAA filter option
 </details>

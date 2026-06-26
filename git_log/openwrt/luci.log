@@ -1,10 +1,9 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/9ccd99b5898457e5ef39dc21aea226d7fb6e5c7e...2df00deb122093cbf429266ffef7ad06aaecb48f)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/2df00deb122093cbf429266ffef7ad06aaecb48f...93e4a9bfaf40f735d16eb6a331c8a78b29f4e520)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-2df00deb12|Stan Grishin|Mon Jun 15 19:41:25 2026 +0000|luci-app-advanced-reboot: update to 1.1.2-6
-ef9e37f140|Dirk Brenken|Tue Jun 16 21:36:15 2026 +0200|luci-app-travelmate: release 2.4.6-1
+93e4a9bfaf|Hannu Nyman|Thu Jun 25 23:42:26 2026 +0300|treewide: backport translations
 </details>

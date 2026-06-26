@@ -1,25 +1,25 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/80d9abb3f7a498d31e133cad4c2e9b8da4a9494c...7b8ce1e0951cf3f8944da4ea48ef21af76da0812)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/7b8ce1e0951cf3f8944da4ea48ef21af76da0812...eb8cd69f9121196a3c43acdf9af3c372a4a50c93)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-7b8ce1e095|Hauke Mehrtens|Fri Jun 19 00:19:51 2026 +0200|libubox: update to Git openwrt-25.12 (2026-06-19)
-13c493caba|Hauke Mehrtens|Thu Jun 18 23:38:24 2026 +0200|odhcpd: update to Git openwrt-25.12 (2026-06-18)
-d14d1946f2|Sven Eckelmann (Plasma Cloud)|Thu Jun 18 11:49:54 2026 +0200|ramips: pax1800-lite: do not attach both ubi partitions on boot
-79b008a280|Paul Spooren|Fri Jun 12 16:49:44 2026 +0200|build: fixup version.date creation for source archives
-8be3ba900e|Paul Spooren|Wed Jun 10 16:21:40 2026 +0200|package: nftables backport of reproducible builds patches
-9243f9e181|Paul Spooren|Wed Jun 10 17:18:37 2026 +0200|package: make APK embedded help gzip reproducible
-98134ee1a3|Hauke Mehrtens|Thu Jun 18 23:14:53 2026 +0200|ubus: pin ABI version to old one
-a8aef63898|Michał Kępień|Fri Jun 12 09:28:03 2026 +0200|ath79: mikrotik: also compile AG71XX_LEGACY as a module
-c957f2732e|Hauke Mehrtens|Thu Jun 18 01:44:32 2026 +0200|openssl: update to 3.5.7
-2cc8b562c1|Hauke Mehrtens|Thu Jun 4 01:40:29 2026 +0200|odhcp6c: update to Git HEAD (2026-06-04)
-8e7ae1b936|Hauke Mehrtens|Sun Apr 5 13:53:32 2026 +0200|build: set max-page-size linker flag to match target page size
-9c0c586eed|Thomas Weißschuh|Wed Jun 17 10:57:00 2026 +0200|util-linux: update to 2.41.5
-d37c4b869a|Thomas Weißschuh|Wed Jun 17 10:56:23 2026 +0200|tools: util-linux: update to 2.41.5
-4c468d22fb|Hauke Mehrtens|Sat Jun 13 01:17:23 2026 +0200|fritz-tools: fix out-of-bounds memset in TFFS segment expansion
-fda611d275|Hauke Mehrtens|Sat Jun 13 00:34:46 2026 +0200|ead: fix integer underflow in handle_send_a()
+eb8cd69f91|Andrii Kuiukoff|Thu Jun 18 13:56:23 2026 +0300|mediatek: creatlentem clt-r30b1: add all-in-UBI layout
+82d7ed7fbc|Hiroki Utsunomiya|Sat Apr 4 00:36:28 2026 +0900|ramips: add support for I-O DATA WN-AX2033GR2
+ac692d051e|David Han|Wed Apr 29 02:06:51 2026 +0900|mediatek: filogic: add support for netis MEX605
+d34a54f4db|Peter Collingbourne|Sat May 2 21:51:12 2026 -0700|kernel/mediatek: fix null dereference in dynamic calibration patch
+38ea322d7c|Jörg Seitz|Sun Aug 24 06:51:11 2025 +0200|mediatek: filogic: Add new Router model ZBT-Z8106AX-S
+ef74760e06|Fil Dunsky|Wed Apr 29 15:48:59 2026 +0300|mediatek: add Huasifei WH3000R NAND support
+12a3f9f506|Leonard Anderweit|Thu Feb 19 19:22:34 2026 +0100|mediatek: filogic: add support for TP-Link F65
+ad84313f75|Fil Dunsky|Mon May 18 09:19:51 2026 +0300|ramips: mt76x8: add support for Cudy WR300 v1
+c670f1a5b7|Ryan Leung|Sun Jun 14 20:56:16 2026 +0800|mediatek: wavlink wl-wn536ax6 rev a: remove old WLAN LED default
+5cff888ef4|Ryan Leung|Sat Jun 6 19:19:46 2026 +0800|mediatek: wavlink wl-wn536ax6 rev a: add "network" LED trigger
+bf961cdb12|Ryan Leung|Sat Jun 6 19:19:35 2026 +0800|uboot-envtools: mediatek_filogic: wavlink wl-wn536ax6 rev a: add config
+333ff2d1de|Ryan Leung|Sat Jun 6 19:19:24 2026 +0800|mediatek: wavlink wl-wn536ax6 rev a: fix WLAN 5GHz MAC address
+7ae998c4b6|Ryan Leung|Sat Jun 6 19:19:12 2026 +0800|mediatek: wavlink wl-wn536ax6 rev a: change nvmem layout for MAC addresses
+2b664d4f31|Ryan Leung|Sat Jun 6 19:18:56 2026 +0800|mediatek: wavlink wl-wn536ax6 rev a: set SPI drive strength 4mA
+bcdbfd704a|Ryan Leung|Sat Jun 6 19:18:45 2026 +0800|mediatek: wavlink wl-wn536ax6 rev a: enable nmbm bad block management
 
 
 </details>
