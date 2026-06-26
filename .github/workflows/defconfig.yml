@@ -138,24 +138,38 @@ jobs:
           if ! git diff --cached --quiet; then
             git config user.name "smallprogram"
             git config user.email "smallprogram@foxmail.com"
-            git commit -m "Auto update for ${{ matrix.source_code_platform }} configuration"
+            git commit -m "Configuration: update code for ${{ matrix.source_code_platform }}"
 
-            git checkout ${{ github.ref_name }}
-            git fetch origin
-            git reset --hard origin/${{ github.ref_name }}
-
-            git checkout temp-${{ matrix.source_code_platform }}
-            git merge origin/${{ github.ref_name }} --no-ff --strategy-option theirs --no-edit || {
-              echo "Merge conflict in temp branch, please resolve manually."
+            MAX_RETRIES=10
+            RETRY_COUNT=0
+            
+            # 循环重试机制解决矩阵并发 Push 冲突
+            while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+              git checkout ${{ github.ref_name }}
+              git fetch origin ${{ github.ref_name }}
+              git reset --hard origin/${{ github.ref_name }}
+              
+              # 合并当前的临时分支
+              git merge temp-${{ matrix.source_code_platform }} --strategy-option theirs --no-edit
+              
+              if git push origin ${{ github.ref_name }}; then
+                echo "Push successful!"
+                break
+              else
+                echo "Push failed due to concurrent update. Retrying in a few seconds..."
+                git reset --hard HEAD~1
+                RETRY_COUNT=$((RETRY_COUNT+1))
+                sleep $((RANDOM % 5 + 3)) # 随机等待 3-7 秒错开并发
+              fi
+            done
+            
+            if [ $RETRY_COUNT -eq $MAX_RETRIES ]; then
+              echo "Failed to push after $MAX_RETRIES attempts."
               exit 100
-            }
+            fi
 
-            git checkout ${{ github.ref_name }} 
-            git merge temp-${{ matrix.source_code_platform }} --strategy-option theirs --no-edit
-            git push origin ${{ github.ref_name }} --force
-            git branch -d temp-${{ matrix.source_code_platform }} || echo "Local temp-${{ matrix.source_code_platform }} not found"
-            git push origin --delete temp-${{ matrix.source_code_platform }} || echo "Remote temp-${{ matrix.source_code_platform }} not found"
-
+            # 只删除本地临时分支
+            git branch -D temp-${{ matrix.source_code_platform }} || echo "Local temp branch not found"
           else
             echo "No changes to commit."
           fi
