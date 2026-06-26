@@ -102,10 +102,21 @@ jobs:
           cat feeds.conf.default
 
       - name: Update Feeds
-        run: cd openwrt && ./scripts/feeds update -a
+        run: |
+          cd openwrt
+          ./scripts/feeds update -a
+
+      - name: Run DIY Part 2 Script
+        run: |
+          chmod +x ${{ matrix.value.DIY_P2_SH }}
+          cd openwrt
+          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
 
       - name: Install Feeds
-        run: cd openwrt && ./scripts/feeds install -a
+        run: |
+          cd openwrt
+          ./scripts/feeds update -i
+          ./scripts/feeds install -a
 
       - name: Pull the latest changes and Create temporary branch
         run: |
@@ -113,11 +124,7 @@ jobs:
           git reset --hard origin/${{ github.ref_name }}
           git checkout -b temp-${{ matrix.source_code_platform }}
 
-      - name: Run DIY Part 2 Script
-        run: |
-          chmod +x ${{ matrix.value.DIY_P2_SH }}
-          cd openwrt
-          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
+
 
       - name: Make Defconfig Custom Configuration
         run: |

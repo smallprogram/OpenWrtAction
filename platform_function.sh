@@ -90,8 +90,8 @@ Func_SyncCodeToGitLogTime(){
         cd /home/${user_name}/${openwrt_dir}
     done
     
-    find /home/${user_name}/${openwrt_dir}/dl -type f | xargs -r touch -t 200001010000
-    Func_LogSuccess "-> 处理DL目录时间戳完成" "-> Git repository processing completed"
+    # find /home/${user_name}/${openwrt_dir}/dl -type f | xargs -r touch -t 200001010000
+    # Func_LogSuccess "-> 处理DL目录时间戳完成" "-> Git repository processing completed"
 }
 
 # 编译报错检查函数
@@ -266,8 +266,17 @@ Func_FeedsUpdate() {
     sleep 1
     ./scripts/feeds update -a | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main1_feeds_update-git_log.log
     echo
+}
 
-    Func_LogMessage "开始 install feeds..." "Installing feeds..."
+Func_FeedsInstall() {
+    cd /home/${user_name}/${openwrt_dir}
+
+    Func_LogMessage "开始 update -i feeds..." "update -i feeds ..."
+    sleep 1
+    ./scripts/feeds update -i | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main1_feeds_update-i-git_log.log
+    echo
+
+    Func_LogMessage "开始安装feeds..." "Starting to install feeds..."
     sleep 1
     ./scripts/feeds install -a | tee -a /home/${user_name}/${log_folder_name}/${folder_name}/Func_Main2_feeds_install-git_log.log
     echo
@@ -490,6 +499,8 @@ Func_Compile_Firmware() {
 
     Func_DIY2_Script
 
+    Func_FeedsInstall
+
     Func_Copy_Backgroundfiles "1" "${config_name}"
 
     Func_Defconfig "$inject_from_source"
@@ -694,6 +705,7 @@ Func_Main() {
             Func_DIY1_Script
             Func_FeedsUpdate
             Func_DIY2_Script
+            Func_FeedsInstall
             Func_Copy_Backgroundfiles "1" "${config_name}"
 
             echo
@@ -823,6 +835,7 @@ Func_Main() {
         Func_DIY1_Script
         Func_FeedsUpdate
         Func_DIY2_Script
+        Func_FeedsInstall
         rm -rf .config
         make menuconfig
 
