@@ -102,10 +102,21 @@ jobs:
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P1_SH }}
 
       - name: Update Feeds
-        run: cd openwrt && ./scripts/feeds update -a
+        run: |
+          cd openwrt
+          ./scripts/feeds update -a
+
+      - name: Run DIY Part 2 Script
+        run: |
+          chmod +x ${{ matrix.value.DIY_P2_SH }}
+          cd openwrt
+          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
 
       - name: Install Feeds
-        run: cd openwrt && ./scripts/feeds install -a
+        run: |
+          cd openwrt
+          ./scripts/feeds update -i
+          ./scripts/feeds install -a
 
       - name: Pull the latest changes and Create temporary branch
         run: |
@@ -115,10 +126,8 @@ jobs:
 
       - name: Make Defconfig Custom Configuration
         run: |
-          chmod +x ${{ matrix.value.DIY_P2_SH }}
           chmod +x $MAKE_DEFCONFIG_SH
           cd openwrt
-          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
           $GITHUB_WORKSPACE/$MAKE_DEFCONFIG_SH "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}" "${{ github.event.inputs.is_copy_seeds }}"
 
       - name: Merge and push changes with "theirs" strategy

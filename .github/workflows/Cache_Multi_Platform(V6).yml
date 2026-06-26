@@ -96,16 +96,21 @@ jobs:
           cat feeds.conf.default
 
       - name: Update Feeds
-        run: cd openwrt && ./scripts/feeds update -a
-
-      - name: Install Feeds
-        run: cd openwrt && ./scripts/feeds install -a
+        run: |
+          cd openwrt
+          ./scripts/feeds update -a
 
       - name: Run DIY Part 2 Script
         run: |
           chmod +x ${{ matrix.value.DIY_P2_SH }}
           cd openwrt
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P2_SH }}
+
+      - name: Install Feeds
+        run: |
+          cd openwrt
+          ./scripts/feeds update -i
+          ./scripts/feeds install -a
 
       - name: Generate Source Packages
         working-directory: /workdir
