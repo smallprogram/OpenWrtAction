@@ -25,6 +25,7 @@ clone_custom_packages () {
     rm -rf ${path}
     mkdir -p ${path}
 
+    # 主题
     git clone https://github.com/jerrykuku/luci-theme-argon.git ${path}luci-theme-argon
     git clone https://github.com/jerrykuku/luci-app-argon-config.git ${path}luci-app-argon-config
     git clone https://github.com/sirpdboy/luci-theme-kucat.git ${path}luci-theme-kucat
@@ -34,13 +35,13 @@ clone_custom_packages () {
     git clone https://github.com/derisamedia/luci-theme-alpha.git ${path}luci-theme-alpha
     git clone https://github.com/animegasan/luci-app-alpha-config.git ${path}luci-app-alpha-config
     git clone https://github.com/AngelaCooljx/luci-theme-material3.git ${path}luci-theme-material3
-    # git clone https://github.com/rufengsuixing/luci-app-adguardhome.git ${path}luci-app-adguardhome
-    git clone https://github.com/sbwml/luci-app-mosdns -b v5 ${path}mosdns
 
-    # luci-app-netspeedtest source can't connect, use local copy instead
-    # git clone https://github.com/sirpdboy/luci-app-netspeedtest ${path}netspeedtest
+
+    git clone https://github.com/sbwml/luci-app-mosdns -b v5 ${path}mosdns
     git clone https://github.com/sirpdboy/netspeedtest.git ${path}netspeedtest
-    # cp -a $PATCHES_SRC_DIR/diy_script/custom_packages/netspeedtest ${path}
+    git clone https://github.com/sirpdboy/luci-app-ddns-go.git ${path}luci-app-ddns-go
+    git clone https://github.com/pymumu/openwrt-smartdns.git ${path}openwrt-smartdns
+    git clone https://github.com/pymumu/luci-app-smartdns.git ${path}luci-app-smartdns
 
 
     git clone https://github.com/timsaya/openwrt-bandix.git ${path}openwrt-bandix

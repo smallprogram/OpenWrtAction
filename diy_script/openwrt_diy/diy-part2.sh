@@ -25,42 +25,6 @@ git clone -b master --single-branch https://github.com/openwrt/packages.git temp
 git clone -b master --single-branch https://github.com/immortalwrt/luci.git temp_resp/immortalwrt_luci
 git clone -b master --single-branch https://github.com/immortalwrt/packages.git temp_resp/immortalwrt_packages
 
-# =========================================================
-# Golang/Rust 强制覆盖 (直接操作 feeds 目录)
-# 确保这段代码在 ./scripts/feeds update -a 之后执行
-# =========================================================
-echo "清理旧版 Golang 和 Rust..."
-# 1. 删除 feeds 里的原生目录
-rm -rf feeds/packages/lang/golang
-rm -rf feeds/packages/lang/rust
-
-# 2. 如果之前执行过 feeds install，必须清理掉残留的软链接，防止指向空目录
-rm -rf package/feeds/packages/golang
-rm -rf package/feeds/packages/rust
-
-echo "注入最新版 Golang 和 Rust..."
-# 3. 将新代码直接放入 feeds 目录，伪装成原生 feed 包
-cp -a temp_resp/openwrt_packages/lang/golang feeds/packages/lang/
-cp -a temp_resp/openwrt_packages/lang/rust feeds/packages/lang/
-
-# =========================================================
-# 恢复上游时间戳 (避免不必要的重新编译)
-# =========================================================
-GOLANG_TIME=$(cd temp_resp/openwrt_packages && git log -1 --format=%cd --date=unix -- lang/golang)
-RUST_TIME=$(cd temp_resp/openwrt_packages && git log -1 --format=%cd --date=unix -- lang/rust)
-
-if [ -n "$GOLANG_TIME" ]; then
-    find feeds/packages/lang/golang -exec touch -m -d @"$GOLANG_TIME" {} +
-else
-    echo "⚠️ 警告: 无法提取 Golang 的上游时间戳，将使用拷贝时的时间"
-fi
-
-if [ -n "$RUST_TIME" ]; then
-    find feeds/packages/lang/rust -exec touch -m -d @"$RUST_TIME" {} +
-else
-    echo "⚠️ 警告: 无法提取 Rust 的上游时间戳，将使用拷贝时的时间"
-fi
-
 
 # =================================================================
 # 定义极简版移植函数 (针对新增包,源仓库必须没有这个包,否则时间戳会被覆盖)
@@ -78,16 +42,25 @@ port_package() {
         return 1
     fi
 
-    # 2. 先删除目标目录，避免旧版本废弃文件残留（目录合并问题）
+    # 2. 删除目标目录（真实文件），避免旧版本废弃文件残留
     if [ -d "$dest_path" ]; then
         rm -rf "$dest_path"
     fi
 
-    # 3. 统一执行复制操作
+    # 3. 动态清理 OpenWrt 软链接 (模拟 ./scripts/feeds uninstall)
+    # 解析 target_dir 提取 feed 名称，例如从 feeds/packages/lang 提取出 packages
+    local feed_name=$(echo "$target_dir" | cut -d'/' -f2)
+    local symlink_path="package/feeds/$feed_name/$pkg_name"
+    
+    if [ -h "$symlink_path" ] || [ -d "$symlink_path" ]; then
+        rm -rf "$symlink_path"
+        echo "🗑️  已清理残留软链接: $symlink_path"
+    fi
+
+    # 4. 统一执行复制操作
     cp -a "$src_repo/$pkg_path" "$target_dir/"
 
-    # 4. 提取上游真实时间并修改时间戳
-    # 加上 2>/dev/null 防止非 git 仓库报错干扰输出
+    # 5. 提取上游真实时间并修改时间戳
     local commit_time=$(cd "$src_repo" && git log -1 --format=%cd --date=unix -- "$pkg_path" 2>/dev/null)
     
     if [ -n "$commit_time" ]; then
@@ -98,9 +71,10 @@ port_package() {
     fi
 }
 
-# 移植 ImmortalWrt LuCI 插件与依赖
-port_package "temp_resp/immortalwrt_luci" "applications/luci-app-cifs-mount" "feeds/luci/applications"
-port_package "temp_resp/immortalwrt_luci" "applications/luci-app-ddns-go" "feeds/luci/applications"
+# 移植 插件与依赖
+port_package "temp_resp/openwrt_packages" "lang/golang" "feeds/packages/lang"
+port_package "temp_resp/openwrt_packages" "lang/rust" "feeds/packages/lang"
+
 port_package "temp_resp/immortalwrt_luci" "applications/luci-app-diskman" "feeds/luci/applications"
 port_package "temp_resp/immortalwrt_luci" "applications/luci-app-eqos" "feeds/luci/applications"
 port_package "temp_resp/immortalwrt_luci" "applications/luci-app-homeproxy" "feeds/luci/applications"
@@ -108,12 +82,8 @@ port_package "temp_resp/immortalwrt_luci" "applications/luci-app-netdata" "feeds
 port_package "temp_resp/immortalwrt_luci" "applications/luci-app-ramfree" "feeds/luci/applications"
 port_package "temp_resp/immortalwrt_luci" "applications/luci-app-vlmcsd" "feeds/luci/applications"
 port_package "temp_resp/immortalwrt_luci" "applications/luci-app-wechatpush" "feeds/luci/applications"
-port_package "temp_resp/immortalwrt_luci" "applications/luci-app-smartdns" "feeds/luci/applications"
 
-
-port_package "temp_resp/immortalwrt_packages" "net/ddns-go" "feeds/packages/net"
 port_package "temp_resp/immortalwrt_packages" "net/vlmcsd" "feeds/packages/net"
-port_package "temp_resp/immortalwrt_packages" "net/smartdns" "feeds/packages/net"
 
 # 清理临时目录
 rm -rf temp_resp
@@ -187,7 +157,5 @@ chmod +x files/etc/uci-defaults/99-custom-ssh-config
 
 #------------------------------------------------end 修改脚本-------------------------------------------------------
 
-./scripts/feeds update -a
-./scripts/feeds install -a
 
 echo "DIY2 is complate!"

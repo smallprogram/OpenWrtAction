@@ -94,7 +94,5 @@ chmod +x files/etc/uci-defaults/99-custom-ssh-config
 
 #------------------------------------------------end 修改脚本-------------------------------------------------------
 
-# ./scripts/feeds update -a
-# ./scripts/feeds install -a
 
 echo "DIY2 is complate!"
