@@ -1,11 +1,10 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/7b8ce1e0951cf3f8944da4ea48ef21af76da0812...b830633cb82ea6c07de76395679c5db8c3bf260e)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/7b8ce1e0951cf3f8944da4ea48ef21af76da0812...eb8cd69f9121196a3c43acdf9af3c372a4a50c93)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-b830633cb8|Felix Fietkau|Fri Jun 26 19:00:36 2026 +0200|wifi-scripts: fix disabled vif tracking using wrong dictionary key
 eb8cd69f91|Andrii Kuiukoff|Thu Jun 18 13:56:23 2026 +0300|mediatek: creatlentem clt-r30b1: add all-in-UBI layout
 82d7ed7fbc|Hiroki Utsunomiya|Sat Apr 4 00:36:28 2026 +0900|ramips: add support for I-O DATA WN-AX2033GR2
 ac692d051e|David Han|Wed Apr 29 02:06:51 2026 +0900|mediatek: filogic: add support for netis MEX605
@@ -20,6 +19,7 @@ bf961cdb12|Ryan Leung|Sat Jun 6 19:19:35 2026 +0800|uboot-envtools: mediatek_fil
 333ff2d1de|Ryan Leung|Sat Jun 6 19:19:24 2026 +0800|mediatek: wavlink wl-wn536ax6 rev a: fix WLAN 5GHz MAC address
 7ae998c4b6|Ryan Leung|Sat Jun 6 19:19:12 2026 +0800|mediatek: wavlink wl-wn536ax6 rev a: change nvmem layout for MAC addresses
 2b664d4f31|Ryan Leung|Sat Jun 6 19:18:56 2026 +0800|mediatek: wavlink wl-wn536ax6 rev a: set SPI drive strength 4mA
+bcdbfd704a|Ryan Leung|Sat Jun 6 19:18:45 2026 +0800|mediatek: wavlink wl-wn536ax6 rev a: enable nmbm bad block management
 
 
 </details>
