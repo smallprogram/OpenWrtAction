@@ -1,10 +1,11 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/c1b1d9f1f0d0d8e8192cfbb8f5b78570bc1e32e7...88e34c020e0f72467e78b42f2e09240423f1a7fd)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/c1b1d9f1f0d0d8e8192cfbb8f5b78570bc1e32e7...130534e108d772758165c2cf7b02db80d43b7ea3)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
+130534e10|Thibaut VARÈNE|Mon Jun 22 20:06:01 2026 +0200|uspot: update to Git HEAD (2026-06-22)
 88e34c020|Chester A. Unal|Fri Jun 26 07:56:20 2026 +0100|bsbf-resources: add conffiles for bsbf-bonding and bsbf-mptcp
 135d391b8|Erik Conijn|Thu Jun 11 14:50:58 2026 +0200|openvpn: set ENABLE-DCO default to n
 d011e9936|Qingfang Deng|Thu Apr 23 13:23:43 2026 +0800|ovpn-dco: work around EIP-197 incompatibility
@@ -19,7 +20,6 @@ f9656b220|Alexandru Ardelean|Thu Apr 16 21:15:27 2026 +0300|vobject: update to 0
 4ac1ae920|Glenn Strauss|Thu Jun 18 00:21:36 2026 -0400|lighttpd: update to lighttpd 1.4.84 release hash
 5f793a28b|Dengfeng Liu|Sun Jun 14 19:09:34 2026 +0800|xfrpc: update to 5.06.909
 7c440ca8f|Hannu Nyman|Tue Jun 23 16:47:21 2026 +0300|haveged: update to 1.9.24
-7428aa656|Dirk Brenken|Mon Jun 22 21:06:07 2026 +0200|adblock: update 4.5.6-2
 
 
 </details>
