@@ -1,11 +1,10 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/ee31696b05dc88005b27b21133b53edfbae3a227...5fcacc977bf2da1090b5beb7081d3f2e7a61d8cf)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/ee31696b05dc88005b27b21133b53edfbae3a227...1c7c087cdbf15661f38582ac7732967a1c1dc4d6)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-5fcacc977|Daniel Golle|Fri Apr 10 21:00:29 2026 +0100|mediatek: build driver for built-in 2.5GE PHY
 1c7c087cd|Til Kaiser|Mon Jan 26 19:48:48 2026 +0100|kernel: add empty Module.symvers.tmp workaround
 aec2a6005|Luiz Angelo Daros de Luca|Sat May 16 18:32:04 2026 +0200|kernel: backport rtl8365mb driver improvements
 ea1ea5a2e|Mieczyslaw Nalewaj|Sun Dec 14 01:53:22 2025 +0100|package: gpio-button-hotplug: adapt to kernel 6.18
