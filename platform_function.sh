@@ -294,6 +294,18 @@ Func_DIY2_Script() {
     sleep 2s
 }
 
+
+Func_DIY3_Script() {
+    cd /home/${user_name}/${openwrt_dir}
+    Func_LogMessage "开始执行DIY3设置脚本" "Start executing the DIY3 setup script"
+    sleep 1s
+
+    bash ../OpenWrtAction/$diy_script_3
+
+    Func_LogSuccess "DIY3脚本执行完成" "DIY script execution completed"
+    sleep 2s
+}
+
 # make defconfig函数
 Func_Defconfig(){
     cd /home/${user_name}/${openwrt_dir}
@@ -505,6 +517,8 @@ Func_Compile_Firmware() {
 
     Func_Defconfig "$inject_from_source"
     
+    Func_DIY3_Script
+
     Func_MakeDownload
 
     Func_SyncCodeToGitLogTime
@@ -798,7 +812,9 @@ Func_Main() {
             if [[ $num_continue == 1 ]]; then
                 
                 Func_Defconfig "false"
-                
+
+                Func_DIY3_Script
+     
                 Func_MakeDownload
 
                 Func_SyncCodeToGitLogTime
@@ -901,6 +917,8 @@ Func_Main() {
 
             Func_Defconfig "true"
             
+            Func_DIY3_Script
+
             Func_MakeDownload
 
             Func_SyncCodeToGitLogTime

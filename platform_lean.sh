@@ -15,5 +15,6 @@ log_folder_name=lean_openwrt_log
 # diy script
 diy_script_1=diy_script/lean_diy/diy-part1.sh
 diy_script_2=diy_script/lean_diy/diy-part2.sh
+diy_script_3=diy_script/lean_diy/diy-part3.sh
 # 依赖列表
 my_depends=https://raw.githubusercontent.com/smallprogram/OpenWrtAction/refs/heads/main/diy_script/lede_dependence

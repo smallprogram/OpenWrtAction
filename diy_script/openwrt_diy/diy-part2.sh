@@ -21,72 +21,80 @@ fi
 #------------------------------------------------------移植包------------------------------------------------------------
 # --- 拉取上游仓库 ---
 rm -rf temp_resp
-git clone -b master --single-branch https://github.com/openwrt/packages.git temp_resp/openwrt_packages
-git clone -b master --single-branch https://github.com/immortalwrt/luci.git temp_resp/immortalwrt_luci
-git clone -b master --single-branch https://github.com/immortalwrt/packages.git temp_resp/immortalwrt_packages
-
 
 # =================================================================
-# 定义极简版移植函数 (针对新增包,源仓库必须没有这个包,否则时间戳会被覆盖)
+# 极速拉取并注入 Feeds 树的函数
 # =================================================================
-port_package() {
-    local src_repo="$1"
-    local pkg_path="$2"
-    local target_dir="$3"
-    local pkg_name=$(basename "$pkg_path")
-    local dest_path="$target_dir/$pkg_name"
+inject_feed() {
+    local repo_url="$1"
+    local feed_dir="$2"
+    shift 2
+    local paths=("$@")
 
-    # 1. 安全检查：确保源目录确实存在
-    if [ ! -d "$src_repo/$pkg_path" ]; then
-        echo "❌ 错误: 源目录 $src_repo/$pkg_path 不存在，跳过！"
-        return 1
-    fi
-
-    # 2. 删除目标目录（真实文件），避免旧版本废弃文件残留
-    if [ -d "$dest_path" ]; then
-        rm -rf "$dest_path"
-    fi
-
-    # 3. 动态清理 OpenWrt 软链接 (模拟 ./scripts/feeds uninstall)
-    # 解析 target_dir 提取 feed 名称，例如从 feeds/packages/lang 提取出 packages
-    local feed_name=$(echo "$target_dir" | cut -d'/' -f2)
-    local symlink_path="package/feeds/$feed_name/$pkg_name"
+    echo "🚀 正在从 $repo_url 极速拉取至 $feed_dir ..."
     
-    if [ -h "$symlink_path" ] || [ -d "$symlink_path" ]; then
-        rm -rf "$symlink_path"
-        echo "🗑️  已清理残留软链接: $symlink_path"
-    fi
-
-    # 4. 统一执行复制操作
-    cp -a "$src_repo/$pkg_path" "$target_dir/"
-
-    # 5. 提取上游真实时间并修改时间戳
-    local commit_time=$(cd "$src_repo" && git log -1 --format=%cd --date=unix -- "$pkg_path" 2>/dev/null)
+    # 使用稀疏检出极速下载（不会拉取无关代码）
+    git clone --filter=blob:none --sparse --depth=1 "$repo_url" temp_repo > /dev/null 2>&1
+    cd temp_repo
+    git sparse-checkout set "${paths[@]}" > /dev/null 2>&1
     
-    if [ -n "$commit_time" ]; then
-        find "$dest_path" -exec touch -m -d @"$commit_time" {} +
-        echo "✅ 同步成功: $pkg_name (保留了原始时间戳)"
-    else
-        echo "⚠️ 警告: 无法提取 $pkg_path 的时间戳，已作为普通文件复制"
-    fi
+    # 提取上游最新的 Commit 时间戳 (作为兜底时间)
+    local fallback_time=$(git log -1 --format=%cd --date=unix 2>/dev/null)
+    cd ..
+
+    for p in "${paths[@]}"; do
+        if [ -d "temp_repo/$p" ]; then
+            local pkg_name=$(basename "$p")
+            local dest_path="$feed_dir/$pkg_name"
+            
+            # 1. 动态清理 OpenWrt 软链接 (防止文件类型冲突)
+            local feed_name=$(echo "$feed_dir" | cut -d'/' -f2)
+            local symlink_path="package/feeds/$feed_name/$pkg_name"
+            if [ -h "$symlink_path" ] || [ -d "$symlink_path" ]; then
+                rm -rf "$symlink_path"
+            fi
+
+            # 2. 清理并覆盖目标目录
+            rm -rf "$dest_path"
+            cp -r "temp_repo/$p" "$dest_path"
+
+            # 3. 尝试提取文件真实时间戳，如果失败则使用整个库的 commit 时间
+            local file_time=$(cd temp_repo && git log -1 --format=%cd --date=unix -- "$p" 2>/dev/null)
+            if [ -z "$file_time" ]; then
+                file_time=$fallback_time
+            fi
+            
+            # 修改时间戳，欺骗 OpenWrt 编译缓存
+            find "$dest_path" -exec touch -m -d @"$file_time" {} +
+            
+            echo "✅ 已成功注入并伪装时间戳: $pkg_name"
+        fi
+    done
+
+    rm -rf temp_repo
 }
 
-# 移植 插件与依赖
-port_package "temp_resp/openwrt_packages" "lang/golang" "feeds/packages/lang"
-port_package "temp_resp/openwrt_packages" "lang/rust" "feeds/packages/lang"
+# =================================================================
+# 执行注入任务 (注意这里的目标目录直接是 feeds 对应的实际目录)
+# =================================================================
 
-port_package "temp_resp/immortalwrt_luci" "applications/luci-app-diskman" "feeds/luci/applications"
-port_package "temp_resp/immortalwrt_luci" "applications/luci-app-eqos" "feeds/luci/applications"
-port_package "temp_resp/immortalwrt_luci" "applications/luci-app-homeproxy" "feeds/luci/applications"
-port_package "temp_resp/immortalwrt_luci" "applications/luci-app-netdata" "feeds/luci/applications"
-port_package "temp_resp/immortalwrt_luci" "applications/luci-app-ramfree" "feeds/luci/applications"
-port_package "temp_resp/immortalwrt_luci" "applications/luci-app-vlmcsd" "feeds/luci/applications"
-port_package "temp_resp/immortalwrt_luci" "applications/luci-app-wechatpush" "feeds/luci/applications"
+# 1. 注入基础依赖包
+inject_feed "https://github.com/openwrt/packages.git" "feeds/packages/lang" \
+    "lang/golang" "lang/rust"
 
-port_package "temp_resp/immortalwrt_packages" "net/vlmcsd" "feeds/packages/net"
+inject_feed "https://github.com/immortalwrt/packages.git" "feeds/packages/net" \
+    "net/vlmcsd"
 
-# 清理临时目录
-rm -rf temp_resp
+# 2. 注入 LuCI 界面
+inject_feed "https://github.com/immortalwrt/luci.git" "feeds/luci/applications" \
+    "applications/luci-app-diskman" \
+    "applications/luci-app-eqos" \
+    "applications/luci-app-netdata" \
+    "applications/luci-app-ramfree" \
+    "applications/luci-app-vlmcsd" \
+    "applications/luci-app-wechatpush"
+
+echo "🎉 所有插件注入完毕，保持了原汁原味的 Makefile 相对路径！"
 #--------------------------------------------------------------end 移植包--------------------------------------------------------
 
 

@@ -132,6 +132,7 @@ jobs:
           cd openwrt
           $GITHUB_WORKSPACE/compile_script/step01_make_defconfig.sh "${{ matrix.source_code_platform }}" "${{ matrix.value.CONFIGS }}"
 
+
       - name: Merge and push changes with "theirs" strategy
         run: |
           git checkout temp-${{ matrix.source_code_platform }}
@@ -432,6 +433,9 @@ jobs:
           cd openwrt
           make defconfig
 
+          chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} || true
+          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }}
+
       - name: Download Package
         if: steps.matrix_status.outputs.status != 'success'
         run: |
@@ -649,7 +653,7 @@ jobs:
         run: |
           cd openwrt
           df -h
-          # chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} || true
+          
 
           if [[ ${{ fromJSON(github.run_attempt) }} == 3 ]]; then
               make -j$(nproc) V=s

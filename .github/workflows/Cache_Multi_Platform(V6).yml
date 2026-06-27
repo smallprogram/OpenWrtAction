@@ -244,6 +244,9 @@ jobs:
           cd openwrt
           make defconfig
 
+          chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} || true
+          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }}
+
       - name: Download Package
         if: steps.matrix_status.outputs.status != 'success'
         run: |
@@ -261,6 +264,7 @@ jobs:
             fi
 
           done
+
 
       - name: Git Restore Mtime (True SSoT) And DL Restore Time
         if: steps.matrix_status.outputs.status != 'success'

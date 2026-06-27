@@ -13,7 +13,7 @@ export repos=(
 
 # 自定义软件包列表
 clone_custom_packages () {
-    local path="./package/custom_packages/"
+    local path="package/custom_packages/"
 
     if [ "$GITHUB_ACTIONS" = "true" ] && [ -n "$GITHUB_RUN_ID" ] && [ -n "$GITHUB_WORKFLOW" ]; then
         PATCHES_SRC_DIR="$GITHUB_WORKSPACE"
@@ -40,9 +40,9 @@ clone_custom_packages () {
     git clone https://github.com/sbwml/luci-app-mosdns -b v5 ${path}mosdns
     git clone https://github.com/sirpdboy/netspeedtest.git ${path}netspeedtest
     git clone https://github.com/sirpdboy/luci-app-ddns-go.git ${path}luci-app-ddns-go
+
     git clone https://github.com/pymumu/openwrt-smartdns.git ${path}openwrt-smartdns
     git clone https://github.com/pymumu/luci-app-smartdns.git ${path}luci-app-smartdns
-
 
     git clone https://github.com/timsaya/openwrt-bandix.git ${path}openwrt-bandix
     git clone https://github.com/timsaya/luci-app-bandix.git ${path}luci-app-bandix
