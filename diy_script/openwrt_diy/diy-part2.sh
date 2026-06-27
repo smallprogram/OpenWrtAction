@@ -87,6 +87,7 @@ inject_feed "https://github.com/immortalwrt/packages.git" "feeds/packages/net" \
 
 # 2. 注入 LuCI 界面
 inject_feed "https://github.com/immortalwrt/luci.git" "feeds/luci/applications" \
+    "applications/luci-app-homeproxy" \
     "applications/luci-app-diskman" \
     "applications/luci-app-eqos" \
     "applications/luci-app-netdata" \
