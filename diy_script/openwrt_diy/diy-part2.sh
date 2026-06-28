@@ -80,14 +80,17 @@ inject_feed() {
 
 # 1. 注入基础依赖包
 inject_feed "https://github.com/openwrt/packages.git" "feeds/packages/lang" \
-    "lang/golang" "lang/rust"
+    "lang/golang" \
+    "lang/rust"
 
 inject_feed "https://github.com/immortalwrt/packages.git" "feeds/packages/net" \
+    "net/ddns-go" \
     "net/vlmcsd"
 
 # 2. 注入 LuCI 界面
 inject_feed "https://github.com/immortalwrt/luci.git" "feeds/luci/applications" \
     "applications/luci-app-homeproxy" \
+    "applications/luci-app-ddns-go" \
     "applications/luci-app-diskman" \
     "applications/luci-app-eqos" \
     "applications/luci-app-netdata" \

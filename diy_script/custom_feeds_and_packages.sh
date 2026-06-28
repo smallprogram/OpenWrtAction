@@ -36,20 +36,19 @@ clone_custom_packages () {
     git clone https://github.com/animegasan/luci-app-alpha-config.git ${path}luci-app-alpha-config
     git clone https://github.com/AngelaCooljx/luci-theme-material3.git ${path}luci-theme-material3
 
-
     git clone https://github.com/sbwml/luci-app-mosdns -b v5 ${path}mosdns
+
     git clone https://github.com/sirpdboy/netspeedtest.git ${path}netspeedtest
-    git clone https://github.com/sirpdboy/luci-app-ddns-go.git ${path}luci-app-ddns-go
 
     git clone https://github.com/pymumu/openwrt-smartdns.git ${path}openwrt-smartdns
     git clone https://github.com/pymumu/luci-app-smartdns.git ${path}luci-app-smartdns
 
     git clone https://github.com/timsaya/openwrt-bandix.git ${path}openwrt-bandix
     git clone https://github.com/timsaya/luci-app-bandix.git ${path}luci-app-bandix
+
     git clone https://github.com/timsaya/openwrt-bandix-plus.git ${path}openwrt-bandix-plus
     git clone https://github.com/timsaya/luci-app-bandix-plus.git ${path}luci-app-bandix-plus
     
-
     git clone https://github.com/destan19/OpenAppFilter.git ${path}OpenAppFilter
 
     
