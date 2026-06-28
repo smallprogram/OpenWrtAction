@@ -42,7 +42,62 @@ Func_LogError() {
         echo -e "${Begin}$2${End}"
     fi
 }
-# DIY Script函数
+
+
+
+# 编译时间函数 打印编译日志内容并计算输出总耗时
+# ==========================================
+# 参  数: $1 - 编译日志的绝对路径
+# ==========================================
+Func_Show_Compile_Time() {
+    # 接收传入的文件路径参数
+    local log_file="$1"
+
+    # 1. 检查文件是否存在
+    if [ ! -f "$log_file" ]; then
+        echo "错误：找不到文件 $log_file"
+        return 1 # 在函数中使用 return 而不是 exit，避免中断整个主脚本
+    fi
+
+    # 2. 打印文件内容
+    echo "================ 编译时间日志内容 ================"
+    cat "$log_file"
+    echo "=============================================="
+    echo ""
+
+    # 3. 提取时间字符串
+    local start_str=$(grep "开始时间" "$log_file" | sed 's/开始时间//')
+    local end_str=$(grep "结束时间" "$log_file" | sed 's/结束时间//')
+
+    # 异常处理：确保成功提取到了时间
+    if [ -z "$start_str" ] || [ -z "$end_str" ]; then
+        echo "错误：日志格式不匹配，未能提取到完整的开始或结束时间。"
+        return 1
+    fi
+
+    # 4. 将时间格式转换
+    local start_fmt=$(echo "$start_str" | sed -E 's/([0-9]{4}-[0-9]{2}-[0-9]{2})-([0-9]{2})-([0-9]{2})-([0-9]{2})/\1 \2:\3:\4/')
+    local end_fmt=$(echo "$end_str" | sed -E 's/([0-9]{4}-[0-9]{2}-[0-9]{2})-([0-9]{2})-([0-9]{2})-([0-9]{2})/\1 \2:\3:\4/')
+
+    # 5. 转换为 Unix 时间戳 (秒)
+    local start_ts=$(date -d "$start_fmt" +%s)
+    local end_ts=$(date -d "$end_fmt" +%s)
+
+    # 6. 计算时间差
+    local diff=$((end_ts - start_ts))
+
+    # 7. 计算小时、分钟、秒
+    local hours=$((diff / 3600))
+    local minutes=$(((diff % 3600) / 60))
+    local seconds=$((diff % 60))
+
+    # 8. 格式化输出
+    if [ "$hours" -gt 0 ]; then
+        echo ">> 编译总耗时: ${hours}小时 ${minutes}分钟 ${seconds}秒"
+    else
+        echo ">> 编译总耗时: ${minutes}分钟 ${seconds}秒"
+    fi
+}
 
 
 Func_Copy_Backgroundfiles() {
@@ -494,6 +549,8 @@ Func_MakeFirmware() {
 
     end_date=结束时间$(date "+%Y-%m-%d-%H-%M-%S")
     echo -e $end_date >>/home/${user_name}/${log_folder_name}/${folder_name}/Func_Main6_Compile_Time-git_log.log
+
+    Func_Show_Compile_Time "/home/${user_name}/${log_folder_name}/${folder_name}/Func_Main6_Compile_Time-git_log.log"
 }
 
 # 编译函数
