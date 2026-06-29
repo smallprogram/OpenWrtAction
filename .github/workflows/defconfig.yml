@@ -121,6 +121,7 @@ jobs:
       - name: Run DIY Part 3 scripts
         run: |
           chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} || true
+          cd openwrt
           $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }}
 
       - name: Pull the latest changes and Create temporary branch
