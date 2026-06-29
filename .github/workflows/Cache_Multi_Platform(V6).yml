@@ -112,6 +112,11 @@ jobs:
           ./scripts/feeds update -i
           ./scripts/feeds install -a
 
+      - name: Run DIY Part 3 scripts
+        run: |
+          chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} || true
+          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }}
+
       - name: Generate Source Packages
         working-directory: /workdir
         id: generate_image
@@ -243,9 +248,6 @@ jobs:
           [ -e ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config ] && cp -r ${{ matrix.value.CONFIGS }}/${{ matrix.platform }}.config openwrt/.config
           cd openwrt
           make defconfig
-
-          chmod +x $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }} || true
-          $GITHUB_WORKSPACE/${{ matrix.value.DIY_P3_SH }}
 
       - name: Download Package
         if: steps.matrix_status.outputs.status != 'success'

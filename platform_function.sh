@@ -570,12 +570,12 @@ Func_Compile_Firmware() {
 
     Func_FeedsInstall
 
+    Func_DIY3_Script
+
     Func_Copy_Backgroundfiles "1" "${config_name}"
 
     Func_Defconfig "$inject_from_source"
     
-    Func_DIY3_Script
-
     Func_MakeDownload
 
     Func_SyncCodeToGitLogTime
@@ -777,6 +777,7 @@ Func_Main() {
             Func_FeedsUpdate
             Func_DIY2_Script
             Func_FeedsInstall
+            Func_DIY3_Script
             Func_Copy_Backgroundfiles "1" "${config_name}"
 
             echo
@@ -867,10 +868,8 @@ Func_Main() {
             done
 
             if [[ $num_continue == 1 ]]; then
-                
-                Func_Defconfig "false"
 
-                Func_DIY3_Script
+                Func_Defconfig "false"
      
                 Func_MakeDownload
 
@@ -909,6 +908,7 @@ Func_Main() {
         Func_FeedsUpdate
         Func_DIY2_Script
         Func_FeedsInstall
+        Func_DIY3_Script
         rm -rf .config
         make menuconfig
 
@@ -973,8 +973,6 @@ Func_Main() {
             Func_Copy_Backgroundfiles "1" "${config_name}"
 
             Func_Defconfig "true"
-            
-            Func_DIY3_Script
 
             Func_MakeDownload
 
