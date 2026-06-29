@@ -18,20 +18,21 @@ echo "DiY script part 3: is Runing"
 echo "修正相关package的hash值"
 
 # -------------------------smartdns----------------------------------
-# current_path=$PWD
-# cd package/custom_packages/openwrt-smartdns
-# LATEST_SMARTDNS=$(curl -sL https://api.github.com/repos/pymumu/smartdns/commits/master | jq -r .sha)
-# LATEST_WEBUI=$(curl -sL https://api.github.com/repos/pymumu/smartdns-webui/commits/main | jq -r .sha)
-# if [ -z "$LATEST_SMARTDNS" ] || [ "$LATEST_SMARTDNS" == "null" ]; then
-#     echo "Failed to fetch SmartDNS commit"
-#     exit 1
-# fi
-# sed -i "s/^PKG_SOURCE_VERSION:=.*/PKG_SOURCE_VERSION:=$LATEST_SMARTDNS/g" Makefile
-# sed -i "s/^SMARTDNS_WEBUI_SOURCE_VERSION:=.*/SMARTDNS_WEBUI_SOURCE_VERSION:=$LATEST_WEBUI/g" Makefile
-# sed -i 's/^PKG_MIRROR_HASH:=.*/PKG_MIRROR_HASH:=/g' Makefile
-# sed -i 's/^[[:space:]]*MIRROR_HASH:=.*/\tMIRROR_HASH:=/g' Makefile
+echo "正在修正smartdns的hash值到最新版本"
+current_path=$PWD
+cd package/custom_packages/openwrt-smartdns
+LATEST_SMARTDNS=$(curl -sL https://api.github.com/repos/pymumu/smartdns/commits/master | jq -r .sha)
+LATEST_WEBUI=$(curl -sL https://api.github.com/repos/pymumu/smartdns-webui/commits/main | jq -r .sha)
+if [ -z "$LATEST_SMARTDNS" ] || [ "$LATEST_SMARTDNS" == "null" ]; then
+    echo "Failed to fetch SmartDNS commit"
+    exit 1
+fi
+sed -i "s/^PKG_SOURCE_VERSION:=.*/PKG_SOURCE_VERSION:=$LATEST_SMARTDNS/g" Makefile
+sed -i "s/^SMARTDNS_WEBUI_SOURCE_VERSION:=.*/SMARTDNS_WEBUI_SOURCE_VERSION:=$LATEST_WEBUI/g" Makefile
+sed -i 's/^PKG_MIRROR_HASH:=.*/PKG_MIRROR_HASH:=/g' Makefile
+sed -i 's/^[[:space:]]*MIRROR_HASH:=.*/\tMIRROR_HASH:=/g' Makefile
+cd $current_path
 
-# cd $current_path
 make package/custom_packages/openwrt-smartdns/download -j8
 make package/custom_packages/openwrt-smartdns/check FIXUP=1 V=s
 # -------------------------end-smartdns----------------------------------
