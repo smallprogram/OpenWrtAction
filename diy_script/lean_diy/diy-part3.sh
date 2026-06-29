@@ -42,7 +42,7 @@ sed -i "s/^SMARTDNS_WEBUI_SOURCE_VERSION:=.*/SMARTDNS_WEBUI_SOURCE_VERSION:=$LAT
 sed -i 's/^PKG_MIRROR_HASH:=.*/PKG_MIRROR_HASH:=/g' Makefile
 sed -i 's/^[[:space:]]*MIRROR_HASH:=.*/\tMIRROR_HASH:=/g' Makefile
 cd $current_path
-
+make defconfig > /dev/null
 make package/custom_packages/openwrt-smartdns/download -j8
 make package/custom_packages/openwrt-smartdns/check FIXUP=1 V=s
 # -------------------------end-smartdns----------------------------------
