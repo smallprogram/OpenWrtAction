@@ -172,7 +172,7 @@ CONFIG_PACKAGE_luci-theme-openwrt-2020=y
 
 ### 🚀 luci-app-ghfu
 
-You can directly update to the latest firmware from this repository via LuCI, thereby bypassing the tedious manual update process. For more details, please refer to https://github.com/smallprogram/luci-app-ghfu.
+You can directly update to the latest firmware from this repository via LuCI, thereby bypassing the tedious manual update process. For more details, please refer to https://github.com/smallprogram/openwrt-ghfu.
 
 ![alt text](pic/ghfu/en.png)
 
