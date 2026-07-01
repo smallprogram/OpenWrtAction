@@ -249,13 +249,13 @@ Func_CleanCompile(){
     Func_LogMessage "将会在$timer秒后自动选择默认值" "The default value will be automatically selected after $timer seconds"
     read -t $timer is_clean_compile
     if [ ! -n "$is_clean_compile" ]; then
-        Func_LogMessage "不执行make clean && make dirclean " "OK, do not execute make clean && make dirclean "
+        Func_LogMessage "不执行Clean操作 " "OK, do not execute Clean operation "
     else
-        Func_LogMessage "配置为Clean编译。执行make clean && make dirclean" "OK, configure for Clean compilation."
+        Func_LogMessage "配置为Clean编译。执行Clean操作" "OK, configure for Clean compilation."
         # make clean
         # make dirclean
         make distclean
-        Func_LogSuccess "执行make clean && make dirclean完毕，准备开始编译" "Ready to compile"
+        Func_LogSuccess "执行Clean操作完毕，准备开始编译" "Ready to compile"
         sleep 1s
     fi
     Func_LogMessage "创建编译日志文件夹/home/${user_name}/${log_folder_name}/${folder_name}" "Create compilation log folder /home/${user_name}/${log_folder_name}/${folder_name}"
@@ -389,6 +389,46 @@ Func_Defconfig(){
     diff /home/${user_name}/${log_folder_name}/${folder_name}/.config_old /home/${user_name}/${log_folder_name}/${folder_name}/.config_new -y -W 200 >/home/${user_name}/${log_folder_name}/${folder_name}/.config_diff
 
 }
+
+# make Compile Base (Tools, Toolchain, Kernel, LongTime Packages)
+# Func_MakeBase(){
+#     # cd /home/${user_name}/${openwrt_dir}
+#     Func_LogMessage "开始执行make base!" "Start to execute make base!"
+#     sleep 1s
+
+#     echo "==== 1. 下载系统工具源码 ===="
+#     time make tools/download -j8 || exit 1
+#     echo "==== 1. 编译系统工具 ===="
+#     time make tools/compile -j$(nproc) || exit 1
+
+#     echo "==== 2. 下载交叉工具链源码 ===="
+#     time make toolchain/download -j8 || exit 1
+#     echo "==== 2. 编译交叉工具链 ===="
+#     time make toolchain/compile -j$(nproc) || exit 1
+
+#     # echo "==== 3. 下载 Linux 内核源码 ===="
+#     # time make target/download -j8 || exit 1
+#     # echo "==== 3. 编译 Linux 内核 ===="
+#     # time make target/compile -j$(nproc) || exit 1
+
+#     echo "==== 4. 下载长期存在的包源码 ===="
+#     LONG_TIME_TARGETS=(
+#         "package/feeds/packages/golang/host/download"
+#         "package/feeds/packages/rust/host/download"
+#         "package/feeds/packages/ruby/host/download"
+#         "package/libs/gettext-full/host/download"
+#     )
+#     for target in "${LONG_TIME_TARGETS[@]}"; do
+#         echo "==== 4. 下载${target}包 ===="
+#         time make $target -j8 || exit 1
+#         echo "==== 4. 编译${target}包 ===="
+#         time make $target -j$(nproc) || exit 1
+#     done
+
+#     echo "==== 局部下载编译完成！ ===="
+#     is_complie_error=${PIPESTATUS[0]}
+#     Func_Check_Compile_Error "$is_complie_error" "make base"
+# }
 
 # make download函数
 Func_MakeDownload() {
