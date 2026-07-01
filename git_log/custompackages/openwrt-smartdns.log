@@ -1,5 +1,9 @@
 <details> <summary> <b>openwrt-smartdns new commit log :rocket: </b> </summary>
 
-<b>Initial commit log for openwrt-smartdns, no previous SHA.</b>
+#### [:mega: Full Changelog. ](https://github.com/pymumu/openwrt-smartdns/compare/41ef464ed74270877ac5d1b0616707cf84306408...252945109b43b4b4dc89e13084d73da2e6af0b71)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
+SHA|Author|Date|Message
+-|-|-|-
+2529451|闲人一枚|Wed Jul 1 13:01:42 2026 +0800|smartdns: bump to 2.2026.48
 </details>

@@ -1,17 +1,11 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/ee31696b05dc88005b27b21133b53edfbae3a227...5fcacc977bf2da1090b5beb7081d3f2e7a61d8cf)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/5fcacc977bf2da1090b5beb7081d3f2e7a61d8cf...771acca020019418d45a669c5d3bb0fcd55ca9a7)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-5fcacc977|Daniel Golle|Fri Apr 10 21:00:29 2026 +0100|mediatek: build driver for built-in 2.5GE PHY
-1c7c087cd|Til Kaiser|Mon Jan 26 19:48:48 2026 +0100|kernel: add empty Module.symvers.tmp workaround
-aec2a6005|Luiz Angelo Daros de Luca|Sat May 16 18:32:04 2026 +0200|kernel: backport rtl8365mb driver improvements
-ea1ea5a2e|Mieczyslaw Nalewaj|Sun Dec 14 01:53:22 2025 +0100|package: gpio-button-hotplug: adapt to kernel 6.18
-aabbe6431|coolsnowwolf|Tue Jun 23 14:32:42 2026 +0800|qualcommax: ipq60xx: improve Qihoo 360V6 support
-bbe358fd8|coolsnowwolf|Sat Mar 7 10:02:01 2026 +0800|qualcommax: add Xiaomi Redmi AX5400 support
-d055f8ba1|coolsnowwolf|Wed Mar 4 10:09:03 2026 +0800|qualcommax: ipq60xx: add AnySafe E1 support
-883fd76b9|coolsnowwolf|Tue Mar 3 19:05:39 2026 +0800|qualcommax: ipq60xx: add Philips LY1800 support
-ee31696b0|coolsnowwolf|Sat May 23 17:20:06 2026 +0800|autocore: enable WiFi NSS status display
+771acca02|Felix Fietkau|Fri May 6 15:49:58 2022 +0200|kernel: fix flow offload issues with pppoe
+c919ada1c|Mieczyslaw Nalewaj|Thu Dec 25 18:40:35 2025 +0100|mac80211: fix build failure on kernel 6.18
+19ee13283|Daniel Golle|Fri Apr 10 21:01:12 2026 +0100|mediatek: enable Linux 6.18 testing kernel
 </details>

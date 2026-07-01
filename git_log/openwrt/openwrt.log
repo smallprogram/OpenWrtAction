@@ -1,25 +1,22 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/7b8ce1e0951cf3f8944da4ea48ef21af76da0812...24151bab4fc26a5dfb676e144598598ac62d9da6)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/24151bab4fc26a5dfb676e144598598ac62d9da6...863c6159a265b3ec27d952924cc7378948d0b358)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-24151bab4f|Fil Dunsky|Wed Jun 3 21:18:20 2026 +0300|mediatek: add WD-R3000N-G2A as ALT device for Bazis AX3000WM
-daaf5bc69b|sh3ikh-faisal|Sat Feb 28 00:02:29 2026 +0530|mediatek: add support for JioRouter AX6000 JIDU6101
-0def1dd578|Roland Reinl|Thu Apr 16 21:11:46 2026 +0200|ipq40xx: add support for Linksys MR9000
-bfdfff63a4|Robert Marko|Mon May 18 21:38:46 2026 +0200|ipq-wifi: update to Git HEAD (2026-05-18)
-797f2565cf|Robert Marko|Thu May 7 11:10:49 2026 +0200|ipq-wifi: update to Git HEAD (2026-05-05)
-bbb36bbc2f|David Bauer|Sat Mar 7 18:43:39 2026 +0100|ipq-wifi: update to latest HEAD
-60e53ffdb0|Robert Marko|Tue Feb 17 20:44:31 2026 +0100|ipq-wifi: update to Git HEAD (2026-02-17)
-fcfd34dff8|Robert Marko|Fri Feb 13 21:26:31 2026 +0100|ipq-wifi: update to Git HEAD (2026-02-13)
-f191b85d2f|Mieczyslaw Nalewaj|Thu Nov 27 13:17:50 2025 +0100|leds: add "network" LED trigger (lan/wan/wlan)
-c992691136|Chukun Pan|Sat Mar 28 16:19:20 2026 +0800|airoha: disable afe by default for an7581
-b830633cb8|Felix Fietkau|Fri Jun 26 19:00:36 2026 +0200|wifi-scripts: fix disabled vif tracking using wrong dictionary key
-eb8cd69f91|Andrii Kuiukoff|Thu Jun 18 13:56:23 2026 +0300|mediatek: creatlentem clt-r30b1: add all-in-UBI layout
-82d7ed7fbc|Hiroki Utsunomiya|Sat Apr 4 00:36:28 2026 +0900|ramips: add support for I-O DATA WN-AX2033GR2
-ac692d051e|David Han|Wed Apr 29 02:06:51 2026 +0900|mediatek: filogic: add support for netis MEX605
-d34a54f4db|Peter Collingbourne|Sat May 2 21:51:12 2026 -0700|kernel/mediatek: fix null dereference in dynamic calibration patch
-
-
+863c6159a2|Grische|Wed Jun 17 14:09:18 2026 +0200|rockchip: add support for FriendlyARM NanoPi R2S Plus
+826a01ef39|Mikhail Zhilkin|Mon Feb 9 22:27:10 2026 +0300|qualcommax: ipq50xx: add support for CMCC MR3000D-CI
+c8ee844d60|Fil Dunsky|Fri Jun 5 17:53:45 2026 +0300|mediatek: add support Livinet Li320
+bb9df8541c|Hauke Mehrtens|Tue Jun 30 00:03:59 2026 +0200|OpenWrt v25.12.5: revert to branch defaults
+f0a60eee2f|Hauke Mehrtens|Tue Jun 30 00:03:42 2026 +0200|OpenWrt v25.12.5: adjust config defaults
+f5dae5ece4|Dimitri Souza|Fri Jun 26 19:59:43 2026 -0300|mediatek: acer-predator-w6x: add LED boot status support
+481e0a16f4|Shine|Mon Jun 29 09:23:45 2026 +0200|scripts: dhcpv6: don't report custom ip6class if default
+ebae538f22|Christian Marangi|Tue Mar 10 16:23:33 2026 +0100|airoha: add pending patch for additional GPIO pins for PHY LED0
+ded2716fd9|Mieczyslaw Nalewaj|Sun Jun 7 19:35:10 2026 +0200|kernel: split nf-nathelper-extra into individual packages
+11a237101e|Mieczyslaw Nalewaj|Sat Jun 27 17:13:09 2026 +0200|rtl8367b: fix RTL8367S-VB vlan mc memory handling
+6dead28692|Hauke Mehrtens|Sun Jun 28 17:42:22 2026 +0200|dropbear: Add additional fixes from 2026.91
+2218cb1949|Hauke Mehrtens|Sun Jun 28 14:15:42 2026 +0200|dropbear: backport some security fixes from 2026.90
+2d8259f7da|Hauke Mehrtens|Sun Jun 28 16:48:13 2026 +0200|ubus: update to Git HEAD (2026-06-28)
+7e84cb6c50|Hauke Mehrtens|Sun Jun 28 00:47:22 2026 +0200|odhcpd: update to Git openwrt-25.12 (2026-06-28)
 </details>

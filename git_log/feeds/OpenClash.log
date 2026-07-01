@@ -1,0 +1,25 @@
+<details> <summary> <b>OpenClash new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/vernesong/OpenClash/compare/a86fb847719815ff3ab1e94261d5b2bbeabdaef1...23896d2662a7d49fa870d37c5cda4b3247a35ae4)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+23896d26|vernesong|Mon Jun 29 02:46:21 2026 +0800|0.47.110
+90b5189c|vernesong|Sun Jun 28 23:53:02 2026 +0800|0.47.109
+0fcb0509|不系|Sun Jun 28 23:48:29 2026 +0800|fix oix downloads through github release (#5189)
+5fc49c14|vernesong|Sun Jun 28 23:39:50 2026 +0800|chore: refine
+5a82f757|vernesong|Sat Jun 27 20:25:47 2026 +0800|0.47.108
+aa6684b2|vernesong|Sat Jun 27 20:24:02 2026 +0800|chore: refine
+56e5b011|vernesong|Sat Jun 27 19:14:02 2026 +0800|0.47.107
+10957a1b|vernesong|Sat Jun 27 11:25:35 2026 +0800|chore: annoncement animation
+116b2680|vernesong|Fri Jun 26 05:10:03 2026 +0800|chore: typo
+c16cc587|vernesong|Fri Jun 26 04:50:34 2026 +0800|0.47.106
+22211037|vernesong|Fri Jun 26 02:14:48 2026 +0800|0.47.105
+c1bbcfc9|vernesong|Thu Jun 25 05:00:16 2026 +0800|0.47.104
+9fa73de1|vernesong|Thu Jun 25 04:59:26 2026 +0800|chore: adjust style
+e130f8af|vernesong|Thu Jun 25 03:00:34 2026 +0800|chore: fix translations
+01c5a2c4|vernesong|Thu Jun 25 01:29:12 2026 +0800|chore: add timeout for apk\opkg update when oc update
+
+
+</details>

@@ -1,0 +1,18 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/luci/compare/b615d75b75831b2ca0dbd97c6162800cf85124cf...54893c17c4593dca3a6e8bf6979e80d285b025ca)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+54893c17c4|Tianling Shen|Mon Jun 29 11:19:21 2026 +0800|Merge Official Source
+89e9faa5b0|Dirk Brenken|Sun Jun 28 23:27:29 2026 +0200|luci-app-banip: release 1.8.10-1
+93e4a9bfaf|Hannu Nyman|Thu Jun 25 23:42:26 2026 +0300|treewide: backport translations
+2df00deb12|Stan Grishin|Mon Jun 15 19:41:25 2026 +0000|luci-app-advanced-reboot: update to 1.1.2-6
+ef9e37f140|Dirk Brenken|Tue Jun 16 21:36:15 2026 +0200|luci-app-travelmate: release 2.4.6-1
+9ccd99b589|Stan Grishin|Mon Jun 15 01:45:37 2026 +0000|luci-app-adblock-fast: update to 1.2.4-2
+44618b5b53|Hannu Nyman|Sat Jun 13 18:35:10 2026 +0300|luci-app-ustreamer: backport translations
+0665be111f|Georgi Valkov|Sat Jun 13 18:31:56 2026 +0300|luci-app-ustreamer: complete rewrite
+64b81ae272|Paul Donald|Sat Jun 13 18:30:35 2026 +0300|luci-app-ustreamer: add package
+5476212278|Dirk Brenken|Fri Jun 12 22:32:47 2026 +0200|luci-app-banip: release 1.8.9-1
+</details>

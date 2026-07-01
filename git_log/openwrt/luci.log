@@ -1,9 +1,13 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/2df00deb122093cbf429266ffef7ad06aaecb48f...93e4a9bfaf40f735d16eb6a331c8a78b29f4e520)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/93e4a9bfaf40f735d16eb6a331c8a78b29f4e520...128a7812f4be233c5dd7f7466f534fd888785caf)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-93e4a9bfaf|Hannu Nyman|Thu Jun 25 23:42:26 2026 +0300|treewide: backport translations
+128a7812f4|Jo-Philipp Wich|Sun Jun 28 01:45:31 2026 +0200|luci-app-upnp: escape description field in output
+dcee5f1d69|Jo-Philipp Wich|Sun Jun 28 01:40:10 2026 +0200|luci-app-samba4: tighten read exec access
+ec518ef37d|Jo-Philipp Wich|Tue Jun 23 00:13:02 2026 +0200|luci-mod-status: escape hostname in DHCP lease status tables
+756692bbe8|Jo-Philipp Wich|Thu Jun 11 10:10:34 2026 +0200|luci-app-tailscale-community: fix shell code injections through login params
+89e9faa5b0|Dirk Brenken|Sun Jun 28 23:27:29 2026 +0200|luci-app-banip: release 1.8.10-1
 </details>

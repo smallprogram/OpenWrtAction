@@ -1,0 +1,11 @@
+<details> <summary> <b>routing new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/openwrt/routing/compare/b2097c85bef85251364f59a6b2a3ed1f9f5c0c21...3d7d0dc7fa43d3eb09498417407e95a6552e5312)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+3d7d0dc|Toke Høiland-Jørgensen|Mon Jun 29 12:44:57 2026 +0200|bird3: bump to v3.2.2
+75030e5|Toke Høiland-Jørgensen|Mon Jun 29 12:44:10 2026 +0200|bird2: bump to v2.18.2
+ac04ba4|Toke Høiland-Jørgensen|Mon Jun 29 12:28:06 2026 +0200|bird2/bird3: rename test.sh to test-version.sh
+</details>

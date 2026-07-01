@@ -1,15 +1,15 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/3f21d0ff3a8ee31ae1b55c56a8349846b43d2fa2...5789ea4dff27b0ded3e123317757427c850ee2e2)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/5789ea4dff27b0ded3e123317757427c850ee2e2...59024567efc118e281697be064d881433e1b9e5f)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-5789ea4d|A-BO|Fri Jun 26 13:57:47 2026 +0800|luci: add hy2 gecko packet size subscribe
-c910a6b9|A-BO|Fri Jun 26 11:36:34 2026 +0800|luci: add hy2 gecko packet size setting
-04e003df|A-BO|Wed Jun 24 20:35:57 2026 +0800|luci: add realm url format validate
-03a2bbab|A-BO|Wed Jun 24 20:22:40 2026 +0800|luci: fix `parse_realm_uri` fun in api
-bb57a136|A-BO|Tue Jun 23 14:48:33 2026 +0800|luci: update default rules
-f878c5fb|A-BO|Tue Jun 23 11:14:03 2026 +0800|luci: fix realm of xray
-aa31a6dd|A-BO|Mon Jun 22 17:51:09 2026 +0800|luci: add `vivo` connection detection url option
+59024567|David Mandy|Wed Jul 1 00:56:46 2026 +0800|ci: optimize code (#4411)
+2142d1f1|A-BO|Tue Jun 30 23:47:40 2026 +0800|luci: 26.7.1
+4633ee7b|A-BO|Tue Jun 30 23:32:12 2026 +0800|luci: Disable IPv4 rp_filter for TPROXY compatibility
+f04c2c3f|A-BO|Mon Jun 29 20:03:07 2026 +0800|luci: update fragment new lengths/delays for xray
+2ac599d5|A-BO|Mon Jun 29 12:55:28 2026 +0800|luci: optimize trojan subscribe
+165efffb|A-BO|Sun Jun 28 23:49:04 2026 +0800|luci: optimize
+c79fa367|A-BO|Sun Jun 28 19:31:45 2026 +0800|luci: add github proxy for apps update
 </details>

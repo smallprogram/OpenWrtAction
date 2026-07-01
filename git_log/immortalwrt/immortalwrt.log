@@ -1,0 +1,25 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/fa133f00e4e41104474ac6dae0700d855a4d2215...2fee31cb47dc2e2078cc7d962bcd21b49b6227db)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+2fee31cb47|Tianling Shen|Mon Jun 29 17:03:03 2026 +0800|Merge Official Source
+ebae538f22|Christian Marangi|Tue Mar 10 16:23:33 2026 +0100|airoha: add pending patch for additional GPIO pins for PHY LED0
+ded2716fd9|Mieczyslaw Nalewaj|Sun Jun 7 19:35:10 2026 +0200|kernel: split nf-nathelper-extra into individual packages
+7efb00649b|Tianling Shen|Mon Jun 29 14:19:03 2026 +0800|Merge Official Source
+11a237101e|Mieczyslaw Nalewaj|Sat Jun 27 17:13:09 2026 +0200|rtl8367b: fix RTL8367S-VB vlan mc memory handling
+6dead28692|Hauke Mehrtens|Sun Jun 28 17:42:22 2026 +0200|dropbear: Add additional fixes from 2026.91
+2218cb1949|Hauke Mehrtens|Sun Jun 28 14:15:42 2026 +0200|dropbear: backport some security fixes from 2026.90
+2d8259f7da|Hauke Mehrtens|Sun Jun 28 16:48:13 2026 +0200|ubus: update to Git HEAD (2026-06-28)
+7e84cb6c50|Hauke Mehrtens|Sun Jun 28 00:47:22 2026 +0200|odhcpd: update to Git openwrt-25.12 (2026-06-28)
+24151bab4f|Fil Dunsky|Wed Jun 3 21:18:20 2026 +0300|mediatek: add WD-R3000N-G2A as ALT device for Bazis AX3000WM
+daaf5bc69b|sh3ikh-faisal|Sat Feb 28 00:02:29 2026 +0530|mediatek: add support for JioRouter AX6000 JIDU6101
+0def1dd578|Roland Reinl|Thu Apr 16 21:11:46 2026 +0200|ipq40xx: add support for Linksys MR9000
+bfdfff63a4|Robert Marko|Mon May 18 21:38:46 2026 +0200|ipq-wifi: update to Git HEAD (2026-05-18)
+797f2565cf|Robert Marko|Thu May 7 11:10:49 2026 +0200|ipq-wifi: update to Git HEAD (2026-05-05)
+bbb36bbc2f|David Bauer|Sat Mar 7 18:43:39 2026 +0100|ipq-wifi: update to latest HEAD
+
+
+</details>

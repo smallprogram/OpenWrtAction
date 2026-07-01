@@ -1,0 +1,25 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/1b7179b4b1b862c373564527e2208a53c4bc2671...28e08e4d3b5b084e1052f23cede887d64b00ce7d)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+28e08e4d3|Tianling Shen|Mon Jun 29 14:30:42 2026 +0800|Node.js: sync with upstream source
+2d850d260|Tianling Shen|Mon Jun 29 14:27:07 2026 +0800|Merge Official Source
+f514c565a|Hauke Mehrtens|Sun Jun 28 01:02:21 2026 +0200|banip: release 1.8.10-1
+830e5276a|Hauke Mehrtens|Sun Jun 28 01:02:21 2026 +0200|cgi-io: update to Git HEAD (2026-06-28)
+ffc3606b8|Rui Salvaterra|Thu Jun 25 14:56:13 2026 +0100|tor: update to 0.4.9.10 stable
+130534e10|Thibaut VARÈNE|Mon Jun 22 20:06:01 2026 +0200|uspot: update to Git HEAD (2026-06-22)
+88e34c020|Chester A. Unal|Fri Jun 26 07:56:20 2026 +0100|bsbf-resources: add conffiles for bsbf-bonding and bsbf-mptcp
+135d391b8|Erik Conijn|Thu Jun 11 14:50:58 2026 +0200|openvpn: set ENABLE-DCO default to n
+d011e9936|Qingfang Deng|Thu Apr 23 13:23:43 2026 +0800|ovpn-dco: work around EIP-197 incompatibility
+b19d06c83|Andy Chiang|Mon Apr 20 00:27:15 2026 +0700|openvpn: add kmod-ovpn-backports dependency
+10819afeb|Chester A. Unal|Wed Jun 24 19:58:37 2026 +0100|bsbf-resources: update to GIT HEAD of 2026-06-24
+f9656b220|Alexandru Ardelean|Thu Apr 16 21:15:27 2026 +0300|vobject: update to 0.9.9; add test.sh
+84a86faaf|Daniel F. Dickinson|Thu May 7 03:04:18 2026 -0400|radicale3: bump version and adjust dependencies
+376e082e3|Daniel F. Dickinson|Thu May 7 03:00:02 2026 -0400|radicale3: clean out cspell hints
+575e71df8|Hirokazu MORIKAWA|Mon Jun 22 20:36:36 2026 +0900|node: bump to 22.23.0
+
+
+</details>

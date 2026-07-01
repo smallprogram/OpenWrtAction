@@ -1,11 +1,15 @@
 <details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/72a10dc3e865fbbc9d30bbb88c9e80439bf4b5ff...4c5196b98ba3a6f078416cd6a597e2c7c50eb2f5)  
+#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/4c5196b98ba3a6f078416cd6a597e2c7c50eb2f5...3c3afcd7d37cfd842409a33cb7fdb751036b62f9)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-4c5196b|Eamon|Thu Jun 25 23:44:12 2026 +0800|feat: redesign zone/iface badges for consistent minimal shape
-f1b86d5|Eamon|Thu Jun 25 23:05:23 2026 +0800|feat: minimal table on mobile
-a955eec|Eamon|Thu Jun 25 01:43:44 2026 +0800|docs: add build-from-source instructions (#79)
+3c3afcd|Eamon|Wed Jul 1 01:27:12 2026 +0800|fix: handle null board info in container environments
+1c924cf|eamonxg|Wed Jul 1 01:09:50 2026 +0800|feat: load third-party patches on demand per page (#82)
+a657165|github-actions[bot]|Sun Jun 28 07:56:33 2026 +0000|docs: update contributors list
+e6bb79a|Eamon|Sun Jun 28 15:56:22 2026 +0800|test: empty contributors list to verify automation
+33850ed|Eamon|Sun Jun 28 15:43:41 2026 +0800|chore: auto-generate contributors list in README via GitHub Action
+d9d672f|Eamon|Sun Jun 28 14:30:33 2026 +0800|fix: make ifacebox/ifacebadge layout robust for third-party pages
+910c85d|CJay D Acopra|Sun Jun 28 14:18:37 2026 +0800|fix: patch luci-app-modemdata ifacebox layout for Aurora theme (#80)
 </details>
