@@ -183,7 +183,7 @@ You can directly update to the latest firmware from this repository via LuCI, th
 [![Star History Chart](https://api.star-history.com/svg?repos=smallprogram/OpenWrtAction&type=Date)](https://star-history.com/#smallprogram/OpenWrtAction&Date)
 
 ---
-
+ 
 ## 🔗 Quick Jump
 #### [🧭 Latest firmware list, click to get it](https://github.com/smallprogram/OpenWrtAction/tags)
 #### [🧭 R1 Soft Router Installation ESXi 8.0 Tutorial](R1_ESXI8.md)
