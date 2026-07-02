@@ -323,11 +323,6 @@ jobs:
                # 直接 cat 合并，极其清爽
                cat op_cache_raw_* | tar -I "zstd -T0" -xf - -C /workdir/openwrt/
 
-               echo "==== 修复 hostpkg 时间戳，阻断 .config 雪崩重编 ===="
-               # 将解压出来的宿主包缓存戳强行更新到当前时间，使其比刚刚生成的 .config 还要新
-               [ -d "/workdir/openwrt/staging_dir/hostpkg/stamp" ] && find /workdir/openwrt/staging_dir/hostpkg/stamp -type f | xargs -r touch
-               [ -d "/workdir/openwrt/build_dir/hostpkg" ] && find /workdir/openwrt/build_dir/hostpkg -name ".built" -o -name ".configured" -o -name ".prepared*" | xargs -r touch
-               
                rm -f /workdir/cache_exported.tar /workdir/op_cache_raw_*
                echo "✅ 缓存合并恢复完成！"
             else
