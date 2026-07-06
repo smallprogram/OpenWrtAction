@@ -1,0 +1,10 @@
+<details> <summary> <b>luci-app-bandix-plus new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/timsaya/luci-app-bandix-plus/compare/8957a06a4c99e105d319b9893ed4d299cc0ad7b6...dbfca5c8e08a8464bc35686f208d74a411048a3c)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+dbfca5c|星冉|Thu Jul 2 18:47:45 2026 +0800|fix: refine overview grid fill behavior (#29)
+5575d82|星冉|Thu Jul 2 16:41:26 2026 +0800|fix: improve overview card layout (#27)
+</details>

@@ -1,0 +1,13 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/120f782c8ec8557dcc865fd1db39f0140a9e3b9c...360859c8a6dcb7dc294dfc68389a8eeec8c8392a)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+360859c8|coolsnowwolf|Sun Jul 5 21:30:38 2026 +0800|owntone: fix 29.2 build with updated sqlite
+acdefa83|coolsnowwolf|Sun Jul 5 18:53:17 2026 +0800|Merge pull request #1121 from Internet1235/cloudflared
+38ccf784|coolsnowwolf|Sat Jul 4 22:05:38 2026 +0800|miniupnpd: split iptables and nftables packages
+5eb34401|coolsnowwolf|Sat Jul 4 21:48:32 2026 +0800|owntone: update to 29.2
+3f2fbc1d|Internet1235|Fri Jun 26 23:32:30 2026 +0800|cloudflared: update to 2026.6.1
+</details>

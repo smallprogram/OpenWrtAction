@@ -1,15 +1,15 @@
 <details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/4c5196b98ba3a6f078416cd6a597e2c7c50eb2f5...3c3afcd7d37cfd842409a33cb7fdb751036b62f9)  
+#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/3c3afcd7d37cfd842409a33cb7fdb751036b62f9...9cb8b1dc9fdfcababfd96d68d0ba044f2becf79c)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-3c3afcd|Eamon|Wed Jul 1 01:27:12 2026 +0800|fix: handle null board info in container environments
-1c924cf|eamonxg|Wed Jul 1 01:09:50 2026 +0800|feat: load third-party patches on demand per page (#82)
-a657165|github-actions[bot]|Sun Jun 28 07:56:33 2026 +0000|docs: update contributors list
-e6bb79a|Eamon|Sun Jun 28 15:56:22 2026 +0800|test: empty contributors list to verify automation
-33850ed|Eamon|Sun Jun 28 15:43:41 2026 +0800|chore: auto-generate contributors list in README via GitHub Action
-d9d672f|Eamon|Sun Jun 28 14:30:33 2026 +0800|fix: make ifacebox/ifacebadge layout robust for third-party pages
-910c85d|CJay D Acopra|Sun Jun 28 14:18:37 2026 +0800|fix: patch luci-app-modemdata ifacebox layout for Aurora theme (#80)
+9cb8b1d|Eamon|Tue Jul 7 00:24:19 2026 +0800|build: drop the remove-layers PostCSS pass, ship native @layer structure
+ac46144|eamonxg|Mon Jul 6 05:32:41 2026 +0800|agent: add theme performance skill
+5c9fd6b|Eamon|Sun Jul 5 11:40:35 2026 +0800|fix: crisp up light-mode neutrals and saturate the brand accent
+3c07a77|Eamon|Sat Jul 4 23:55:01 2026 +0800|feat: discover patches at render time, making patches/ a drop-in extension point
+ff8ba76|eamonxg|Fri Jul 3 01:14:49 2026 +0800|feat: expand mega-menu section icon map (#84)
+aecf9fa|eamonxg|Thu Jul 2 15:54:37 2026 +0800|perf: optimize mega-menu reveal and close animations (#83)
+2de5a76|Eamon|Thu Jul 2 10:33:08 2026 +0800|build: sync .ut files over ssh stdin instead of scp
 </details>

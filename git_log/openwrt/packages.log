@@ -1,25 +1,25 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/130534e108d772758165c2cf7b02db80d43b7ea3...182d7e14bd238ddd581ea18004aa109f4dc86f57)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/182d7e14bd238ddd581ea18004aa109f4dc86f57...2ce5aea10d1aa12494e9c91f7c35c20c57aa439d)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-182d7e14b|Wei-Ting Yang|Sun Jun 28 11:19:05 2026 +0800|expat: update to 2.8.2
-c00e6f28a|Niklas Thorild|Mon Jun 29 20:35:55 2026 +0200|telegraf: update to 1.39.1
-bf2a2b39f|Josef Schlehofer|Mon Jun 29 12:54:31 2026 +0200|ci: trigger build on pull_request and wait for FormalityCheck
-ef0ef18f5|Josef Schlehofer|Mon Jun 29 12:28:55 2026 +0200|ci: update trigger to check_suite for test build
-6ba04980e|Josef Schlehofer|Sun Jun 28 21:31:48 2026 +0200|ci: replace GitHub actions (labeler, formalities) by webhook
-fef9428c8|Josef Schlehofer|Tue Jun 23 22:01:26 2026 +0200|ci: labeler: avoid checking out fork codebase
-00478e666|dependabot[bot]|Sat Jun 20 21:12:31 2026 +0000|ci: bump actions/checkout from 6 to 7
-04e1c87f3|Josef Schlehofer|Tue May 12 12:45:13 2026 +0200|Revert "ci: cancel in-progress Test and Build runs on PR update"
-ae7cbeab8|Hauke Mehrtens|Sun May 10 20:20:27 2026 +0200|ci: cancel in-progress Test and Build runs on PR update
-47693f58e|George Sapkin|Mon Nov 10 18:14:03 2025 +0200|ci: mark and close PRs with formality issues
-6a5e7a77d|George Sapkin|Fri May 1 15:28:59 2026 +0300|ci: relax subject and line length checks
-e6b256fe8|George Sapkin|Fri Jan 30 00:28:47 2026 +0200|ci: bump HyperStickler to v1-rc.1
-9b7993739|George Sapkin|Wed Jan 28 02:49:38 2026 +0200|ci: add day of the week and labels to dependabot
-fe6bd1108|dependabot[bot]|Wed Jan 28 00:05:00 2026 +0000|ci: bump actions/checkout from 5 to 6
-1734cb6f1|George Sapkin|Sun Dec 28 01:24:14 2025 +0200|ci: add dependabot
+2ce5aea10|Etienne Champetier|Sat Jul 4 16:59:16 2026 -0400|prometheus-node-exporter-lua: add test / skip test-version
+70e8b590d|Bruno Marinier|Mon Jun 8 15:25:29 2026 -0400|prometheus-node-exporter-lua: add unbound stats collector
+139222f19|Jun Ouyang|Sat Oct 11 11:19:25 2025 +0800|prometheus-node-exporter-lua: check if status is nil before processing wifi device metrics interfaces
+52e69c611|Evgeni Golov|Sun Apr 26 15:22:00 2026 +0200|prometheus-node-exporter-lua: expose node_os_info
+e86600347|Etienne Champetier|Sun May 24 18:49:15 2026 -0400|prometheus-node-exporter-lua: fixup uci_dhcp_host
+776dfd340|Will May|Wed Dec 11 12:33:37 2024 +0000|prometheus-node-exporter-lua: add filesystem metrics
+425c6e604|Jean-Laurent Girod|Wed May 6 16:32:17 2026 +0000|prometheus-node-exporter-lua: add modemmanager exporter
+b189485e1|Etienne Champetier|Sun Jul 5 09:00:01 2026 -0400|prometheus-node-exporter-lua: fix typo in description
+6eb7e52b1|Josef Schlehofer|Mon Dec 29 08:30:46 2025 +0100|prometheus-node-exporter-lua: remove bmx6 leftovers
+d03ab1fef|Etienne Champetier|Sun Jul 5 05:52:51 2026 -0400|ubnt-manager: skip ci version check
+a688f504d|Etienne Champetier|Sun Jul 5 05:43:40 2026 -0400|realtek-poe: skip ci version check
+6706e28b4|Etienne Champetier|Sun Jul 5 05:37:30 2026 -0400|mwan3: skip ci version check
+d011c4fb8|Etienne Champetier|Sun Jul 5 05:01:13 2026 -0400|modemmanager: fix dependency and ci
+1642b5875|micpf|Mon Feb 9 16:52:10 2026 +0100|modemmanager: fix netifd proto sim path
+84544ea60|Michael Heimpold|Sun Jun 28 13:17:24 2026 +0200|ser2net: filter non-printable characters from custom options
 
 
 </details>

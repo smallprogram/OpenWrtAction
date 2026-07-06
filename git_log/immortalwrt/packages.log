@@ -1,25 +1,25 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/1b7179b4b1b862c373564527e2208a53c4bc2671...28e08e4d3b5b084e1052f23cede887d64b00ce7d)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/28e08e4d3b5b084e1052f23cede887d64b00ce7d...e93a938c63124832d549c41da3157e2ec40fbe05)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-28e08e4d3|Tianling Shen|Mon Jun 29 14:30:42 2026 +0800|Node.js: sync with upstream source
-2d850d260|Tianling Shen|Mon Jun 29 14:27:07 2026 +0800|Merge Official Source
-f514c565a|Hauke Mehrtens|Sun Jun 28 01:02:21 2026 +0200|banip: release 1.8.10-1
-830e5276a|Hauke Mehrtens|Sun Jun 28 01:02:21 2026 +0200|cgi-io: update to Git HEAD (2026-06-28)
-ffc3606b8|Rui Salvaterra|Thu Jun 25 14:56:13 2026 +0100|tor: update to 0.4.9.10 stable
-130534e10|Thibaut VARÈNE|Mon Jun 22 20:06:01 2026 +0200|uspot: update to Git HEAD (2026-06-22)
-88e34c020|Chester A. Unal|Fri Jun 26 07:56:20 2026 +0100|bsbf-resources: add conffiles for bsbf-bonding and bsbf-mptcp
-135d391b8|Erik Conijn|Thu Jun 11 14:50:58 2026 +0200|openvpn: set ENABLE-DCO default to n
-d011e9936|Qingfang Deng|Thu Apr 23 13:23:43 2026 +0800|ovpn-dco: work around EIP-197 incompatibility
-b19d06c83|Andy Chiang|Mon Apr 20 00:27:15 2026 +0700|openvpn: add kmod-ovpn-backports dependency
-10819afeb|Chester A. Unal|Wed Jun 24 19:58:37 2026 +0100|bsbf-resources: update to GIT HEAD of 2026-06-24
-f9656b220|Alexandru Ardelean|Thu Apr 16 21:15:27 2026 +0300|vobject: update to 0.9.9; add test.sh
-84a86faaf|Daniel F. Dickinson|Thu May 7 03:04:18 2026 -0400|radicale3: bump version and adjust dependencies
-376e082e3|Daniel F. Dickinson|Thu May 7 03:00:02 2026 -0400|radicale3: clean out cspell hints
-575e71df8|Hirokazu MORIKAWA|Mon Jun 22 20:36:36 2026 +0900|node: bump to 22.23.0
+e93a938c6|Tianling Shen|Mon Jul 6 10:03:42 2026 +0800|Merge Official Source
+2ce5aea10|Etienne Champetier|Sat Jul 4 16:59:16 2026 -0400|prometheus-node-exporter-lua: add test / skip test-version
+70e8b590d|Bruno Marinier|Mon Jun 8 15:25:29 2026 -0400|prometheus-node-exporter-lua: add unbound stats collector
+139222f19|Jun Ouyang|Sat Oct 11 11:19:25 2025 +0800|prometheus-node-exporter-lua: check if status is nil before processing wifi device metrics interfaces
+52e69c611|Evgeni Golov|Sun Apr 26 15:22:00 2026 +0200|prometheus-node-exporter-lua: expose node_os_info
+e86600347|Etienne Champetier|Sun May 24 18:49:15 2026 -0400|prometheus-node-exporter-lua: fixup uci_dhcp_host
+776dfd340|Will May|Wed Dec 11 12:33:37 2024 +0000|prometheus-node-exporter-lua: add filesystem metrics
+425c6e604|Jean-Laurent Girod|Wed May 6 16:32:17 2026 +0000|prometheus-node-exporter-lua: add modemmanager exporter
+b189485e1|Etienne Champetier|Sun Jul 5 09:00:01 2026 -0400|prometheus-node-exporter-lua: fix typo in description
+6eb7e52b1|Josef Schlehofer|Mon Dec 29 08:30:46 2025 +0100|prometheus-node-exporter-lua: remove bmx6 leftovers
+d03ab1fef|Etienne Champetier|Sun Jul 5 05:52:51 2026 -0400|ubnt-manager: skip ci version check
+a688f504d|Etienne Champetier|Sun Jul 5 05:43:40 2026 -0400|realtek-poe: skip ci version check
+6706e28b4|Etienne Champetier|Sun Jul 5 05:37:30 2026 -0400|mwan3: skip ci version check
+d011c4fb8|Etienne Champetier|Sun Jul 5 05:01:13 2026 -0400|modemmanager: fix dependency and ci
+1642b5875|micpf|Mon Feb 9 16:52:10 2026 +0100|modemmanager: fix netifd proto sim path
 
 
 </details>

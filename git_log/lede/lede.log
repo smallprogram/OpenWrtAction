@@ -1,11 +1,10 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/5fcacc977bf2da1090b5beb7081d3f2e7a61d8cf...771acca020019418d45a669c5d3bb0fcd55ca9a7)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/771acca020019418d45a669c5d3bb0fcd55ca9a7...ad6a4eab7dbb8bb8b102ffba7a27007a969b84a6)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-771acca02|Felix Fietkau|Fri May 6 15:49:58 2022 +0200|kernel: fix flow offload issues with pppoe
-c919ada1c|Mieczyslaw Nalewaj|Thu Dec 25 18:40:35 2025 +0100|mac80211: fix build failure on kernel 6.18
-19ee13283|Daniel Golle|Fri Apr 10 21:01:12 2026 +0100|mediatek: enable Linux 6.18 testing kernel
+ad6a4eab7|Qingfang Deng|Mon Jun 1 13:32:17 2026 +0800|kernel: fix WED offloaded flow timeout
+a11e66ca7|Chen Minqiang|Fri Dec 12 10:58:16 2025 +0800|mediatek: add support for Tenda BE12 Pro
 </details>

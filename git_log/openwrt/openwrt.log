@@ -1,22 +1,11 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/24151bab4fc26a5dfb676e144598598ac62d9da6...863c6159a265b3ec27d952924cc7378948d0b358)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/863c6159a265b3ec27d952924cc7378948d0b358...056aa185d9283edc85f9b3eec033b751ccea2bc1)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-863c6159a2|Grische|Wed Jun 17 14:09:18 2026 +0200|rockchip: add support for FriendlyARM NanoPi R2S Plus
-826a01ef39|Mikhail Zhilkin|Mon Feb 9 22:27:10 2026 +0300|qualcommax: ipq50xx: add support for CMCC MR3000D-CI
-c8ee844d60|Fil Dunsky|Fri Jun 5 17:53:45 2026 +0300|mediatek: add support Livinet Li320
-bb9df8541c|Hauke Mehrtens|Tue Jun 30 00:03:59 2026 +0200|OpenWrt v25.12.5: revert to branch defaults
-f0a60eee2f|Hauke Mehrtens|Tue Jun 30 00:03:42 2026 +0200|OpenWrt v25.12.5: adjust config defaults
-f5dae5ece4|Dimitri Souza|Fri Jun 26 19:59:43 2026 -0300|mediatek: acer-predator-w6x: add LED boot status support
-481e0a16f4|Shine|Mon Jun 29 09:23:45 2026 +0200|scripts: dhcpv6: don't report custom ip6class if default
-ebae538f22|Christian Marangi|Tue Mar 10 16:23:33 2026 +0100|airoha: add pending patch for additional GPIO pins for PHY LED0
-ded2716fd9|Mieczyslaw Nalewaj|Sun Jun 7 19:35:10 2026 +0200|kernel: split nf-nathelper-extra into individual packages
-11a237101e|Mieczyslaw Nalewaj|Sat Jun 27 17:13:09 2026 +0200|rtl8367b: fix RTL8367S-VB vlan mc memory handling
-6dead28692|Hauke Mehrtens|Sun Jun 28 17:42:22 2026 +0200|dropbear: Add additional fixes from 2026.91
-2218cb1949|Hauke Mehrtens|Sun Jun 28 14:15:42 2026 +0200|dropbear: backport some security fixes from 2026.90
-2d8259f7da|Hauke Mehrtens|Sun Jun 28 16:48:13 2026 +0200|ubus: update to Git HEAD (2026-06-28)
-7e84cb6c50|Hauke Mehrtens|Sun Jun 28 00:47:22 2026 +0200|odhcpd: update to Git openwrt-25.12 (2026-06-28)
+056aa185d9|Pavlo Samko|Tue Jun 30 00:05:52 2026 +0300|nilfs-utils: update to 2.2.17
+949e61ec65|Hauke Mehrtens|Wed Jul 1 23:10:44 2026 +0200|odhcp6c: Increase PKG_RELEASE
+df8a0c1654|Hauke Mehrtens|Wed Jul 1 23:08:05 2026 +0200|ead: Increase PKG_RELEASE
 </details>
