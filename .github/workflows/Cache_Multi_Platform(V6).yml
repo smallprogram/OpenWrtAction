@@ -334,7 +334,7 @@ jobs:
           )
           for target in "${LONG_TIME_TARGETS_DOWNLOAD[@]}"; do
               echo "==== 正在执行 download $target ===="
-              make $target -j$(nproc) V=s || exit 1
+              make $target -j1 || exit 1
               sleep 5
               echo "------------------------"
           done
