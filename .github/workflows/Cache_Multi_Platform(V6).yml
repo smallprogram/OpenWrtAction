@@ -334,15 +334,9 @@ jobs:
           )
           for target in "${LONG_TIME_TARGETS_DOWNLOAD[@]}"; do
               echo "==== 正在执行 download $target ===="
-              if [[ ${{ fromJSON(github.run_attempt) }} == 3 ]]; then
-                  time make $target -j8 V=s || exit 1
-                  sleep 5
-                  echo "------------------------"
-              else
-                  time make $target -j8 || exit 1
-                  sleep 5
-                  echo "------------------------"
-              fi
+              make $target -j$(nproc) V=s || exit 1
+              sleep 5
+              echo "------------------------"
           done
 
 
