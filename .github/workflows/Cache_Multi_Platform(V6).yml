@@ -273,7 +273,12 @@ jobs:
           done
 
           find /workdir/openwrt/dl -type f | xargs -r touch -t 200001010000
-          echo "✅ dl/ 时间戳逆转完成！"
+
+          touch -t 200001010000 /workdir/openwrt/.config /workdir/openwrt/.config.old || true
+          [ -d /workdir/openwrt/tmp ] && find /workdir/openwrt/tmp -type f -exec touch -t 200001010000 {} + || true
+
+
+          echo "✅ 时间戳逆转完成！"
 
       - name: Restore Entire OpenWrt Cache from GHCR
         id: restore_cache
