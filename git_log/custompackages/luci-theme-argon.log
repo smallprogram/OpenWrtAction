@@ -1,0 +1,10 @@
+<details> <summary> <b>luci-theme-argon new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/jerrykuku/luci-theme-argon/compare/3c8dc64bca054be0c184dc1dc9847b249710a466...8344bc932f3c1e043772b4f355cc3cb23d445042)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+8344bc9|老竭力|Fri Jul 10 14:57:50 2026 +0800|Merge pull request #678 from ckorber/pr/cbi_tooltip
+fe7b105|Christian Korber|Thu Jul 9 12:53:00 2026 +0200|fix(css): remove transform on tooltip
+</details>

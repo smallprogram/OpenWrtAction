@@ -1,11 +1,13 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/59024567efc118e281697be064d881433e1b9e5f...20db1985ce894be8669ec4c7e557eed57d0853d9)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/20db1985ce894be8669ec4c7e557eed57d0853d9...adab49f79df24d759efc90c2ad3f817fa6d511bc)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-20db1985|ShanStone|Mon Jul 6 22:04:21 2026 +0800|luci: eliminate tr process in insert_nftset function
-797704c5|wybb|Mon Jul 6 01:07:20 2026 +0800|luci: fix hy2 link import bandwidth defaults (#4414)
-22450c2a|lwb1978|Sat Jul 4 19:38:53 2026 +0800|luci: fix and optimize subscribe
+adab49f7|A-BO|Sat Jul 11 15:47:46 2026 +0800|luci: xray add min version limit
+7e5c8de9|A-BO|Sat Jul 11 15:34:23 2026 +0800|luci: xray add env configuration
+d6bffb73|A-BO|Sat Jul 11 14:35:52 2026 +0800|luci: add `unsafe` fingerprint to xray settings
+225f017c|A-BO|Thu Jul 9 11:39:37 2026 +0800|luci: remove `none/zero/plain` for xray vmess/shadowsocks
+31000944|A-BO|Wed Jul 8 16:09:03 2026 +0800|luci: fix sing-box grpc/http/hy2 timeout format
 </details>

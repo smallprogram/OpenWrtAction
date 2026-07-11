@@ -1,0 +1,19 @@
+<details> <summary> <b>OpenClash new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/vernesong/OpenClash/compare/23896d2662a7d49fa870d37c5cda4b3247a35ae4...1c8e8cb8eaad0edaae11928c9b802b7d613c0f97)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+1c8e8cb8|vernesong|Tue Jul 7 12:22:38 2026 +0800|0.47.116
+3c7f9a30|vernesong|Tue Jul 7 12:22:09 2026 +0800|chore: markdown codes highlight
+bdfc458a|vernesong|Mon Jul 6 23:37:15 2026 +0800|0.47.115
+c7eaccc9|vernesong|Mon Jul 6 23:36:52 2026 +0800|chore: quic block & debug rendering
+f60da5c3|vernesong|Mon Jul 6 22:43:30 2026 +0800|0.47.114
+9fe4cc9d|vernesong|Mon Jul 6 22:25:47 2026 +0800|chore: upgrade to codemirror6
+6381b4bb|vernesong|Fri Jul 3 19:42:26 2026 +0800|chore: move debug log to log page
+c460dcfb|vernesong|Wed Jul 1 05:54:38 2026 +0800|0.47.113
+b8830d68|vernesong|Wed Jul 1 03:29:08 2026 +0800|0.47.112
+bc4d118c|vernesong|Tue Jun 30 10:20:21 2026 +0800|0.47.111
+e95fd533|vernesong|Tue Jun 30 03:07:04 2026 +0800|fix: check before decode64
+</details>

@@ -1,9 +1,0 @@
-<details> <summary> <b>routing new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/routing/compare/d6138757432b18203f4a983c2392e948fc8b8941...56d7a818b71b83b0051b85d38efa3b3b558adf75)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-56d7a81|coolsnowwolf|Sat Jul 4 22:06:11 2026 +0800|hnetd: select miniupnpd by firewall backend
-</details>

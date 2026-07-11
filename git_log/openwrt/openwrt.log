@@ -1,11 +1,14 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/863c6159a265b3ec27d952924cc7378948d0b358...056aa185d9283edc85f9b3eec033b751ccea2bc1)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/056aa185d9283edc85f9b3eec033b751ccea2bc1...ab08f6a5241d927e724d6de3f270aa2af173f13d)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-056aa185d9|Pavlo Samko|Tue Jun 30 00:05:52 2026 +0300|nilfs-utils: update to 2.2.17
-949e61ec65|Hauke Mehrtens|Wed Jul 1 23:10:44 2026 +0200|odhcp6c: Increase PKG_RELEASE
-df8a0c1654|Hauke Mehrtens|Wed Jul 1 23:08:05 2026 +0200|ead: Increase PKG_RELEASE
+ab08f6a524|Rosen Penev|Thu Jul 2 14:53:21 2026 -0700|mac80211: ath9k: call reset on init
+95e72dc918|Hauke Mehrtens|Fri Jul 3 01:46:56 2026 +0200|hostapd: fix security advisory 2026-1
+1555bd3208|Dmitry Mostovoy|Sun May 10 02:52:08 2026 -0400|mediatek: remove extra space in bootargs cudy wr3000p/s/h/e v1 ubootmod
+be51f9a895|Dmitry Mostovoy|Sat May 9 14:56:45 2026 -0400|mediatek: add cudy m3000-v2-yt8821 ubootmod
+9de7568cbd|Dmitry Mostovoy|Sat May 9 11:56:40 2026 -0400|mediatek: add cudy m3000-v1 ubootmod
+5870d7766a|Dmitry Mostovoy|Sun May 17 02:34:36 2026 -0400|arm-trusted-firmware-mediatek: cudy-ddr3: reduce ram speed to 1866 MT/s
 </details>

@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/20a2f311084608c14b23404c11caa13ffbbb9db0...ec458173608880fcc40af738761206afc7328125)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-ec45817|m3m0ry|Sat Jul 4 19:40:56 2026 +0800|luci: preserve Reality options for AnyTLS subscriptions (#1174)
-</details>

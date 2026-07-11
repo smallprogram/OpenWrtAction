@@ -1,25 +1,17 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/182d7e14bd238ddd581ea18004aa109f4dc86f57...2ce5aea10d1aa12494e9c91f7c35c20c57aa439d)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/2ce5aea10d1aa12494e9c91f7c35c20c57aa439d...2e291e7dc84113592405ecd1d4b3c6ff9b74ac44)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-2ce5aea10|Etienne Champetier|Sat Jul 4 16:59:16 2026 -0400|prometheus-node-exporter-lua: add test / skip test-version
-70e8b590d|Bruno Marinier|Mon Jun 8 15:25:29 2026 -0400|prometheus-node-exporter-lua: add unbound stats collector
-139222f19|Jun Ouyang|Sat Oct 11 11:19:25 2025 +0800|prometheus-node-exporter-lua: check if status is nil before processing wifi device metrics interfaces
-52e69c611|Evgeni Golov|Sun Apr 26 15:22:00 2026 +0200|prometheus-node-exporter-lua: expose node_os_info
-e86600347|Etienne Champetier|Sun May 24 18:49:15 2026 -0400|prometheus-node-exporter-lua: fixup uci_dhcp_host
-776dfd340|Will May|Wed Dec 11 12:33:37 2024 +0000|prometheus-node-exporter-lua: add filesystem metrics
-425c6e604|Jean-Laurent Girod|Wed May 6 16:32:17 2026 +0000|prometheus-node-exporter-lua: add modemmanager exporter
-b189485e1|Etienne Champetier|Sun Jul 5 09:00:01 2026 -0400|prometheus-node-exporter-lua: fix typo in description
-6eb7e52b1|Josef Schlehofer|Mon Dec 29 08:30:46 2025 +0100|prometheus-node-exporter-lua: remove bmx6 leftovers
-d03ab1fef|Etienne Champetier|Sun Jul 5 05:52:51 2026 -0400|ubnt-manager: skip ci version check
-a688f504d|Etienne Champetier|Sun Jul 5 05:43:40 2026 -0400|realtek-poe: skip ci version check
-6706e28b4|Etienne Champetier|Sun Jul 5 05:37:30 2026 -0400|mwan3: skip ci version check
-d011c4fb8|Etienne Champetier|Sun Jul 5 05:01:13 2026 -0400|modemmanager: fix dependency and ci
-1642b5875|micpf|Mon Feb 9 16:52:10 2026 +0100|modemmanager: fix netifd proto sim path
-84544ea60|Michael Heimpold|Sun Jun 28 13:17:24 2026 +0200|ser2net: filter non-printable characters from custom options
-
-
+2e291e7dc|Eric Fahlgren|Sat Jul 11 06:53:23 2026 -0700|owut: update to 2026.07.08
+71dc6b7bd|Alexandru Ardelean|Fri May 29 06:59:23 2026 +0300|kea: bump to 3.0.3
+7834bdc7f|Alexandru Ardelean|Thu Jul 9 16:55:35 2026 +0300|avahi: fix typo in version check override
+5c12bb506|Mario Andrés Pérez|Tue Nov 18 14:47:47 2025 +0100|avahi: define missing DEFAULT_VARIANT and add conflicts - Add DEFAULT_VARIANT to "avahi-daemon" and "libavahi" virtual packages; set to "dbus" variant because it is more compatible. When some package depends on one of these virtual packages an arbitrarily variant it is selected. This avoids that.
+70ccf20cc|Alexandru Ardelean|Fri Jul 3 16:24:41 2026 +0300|avahi: update to 0.9-rc5 / 0.9_rc5
+9d2da95d6|George Sapkin|Mon May 11 20:10:13 2026 +0300|avahi: move version checks to override
+6bb0adf14|Daniel F. Dickinson|Wed Jun 24 19:57:06 2026 -0400|radicale3: tweak description for modern clients
+a462359a7|Daniel F. Dickinson|Wed Jun 24 19:52:28 2026 -0400|radicale3: bump version to 3.7.5
+50ea41ea0|Thibaut VARÈNE|Tue Jun 30 10:44:41 2026 +0200|uspot: update to Git HEAD (2026-06-30)
 </details>

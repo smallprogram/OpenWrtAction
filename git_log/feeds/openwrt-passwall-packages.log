@@ -1,11 +1,13 @@
 <details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/3be1c8ac62561a55d6a7033a95185f8e6df4733e...26ed48c223a094a503871df413cbc450247ffce1)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/26ed48c223a094a503871df413cbc450247ffce1...b0bf84e252e795d4a78bacb42b2f9428284c73b2)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-26ed48c|David Mandy|Sat Jul 4 01:17:17 2026 +0800|naiveproxy: update to 150.0.7871.63-1 (#689)
-620cc2f|David Mandy|Sat Jul 4 01:15:51 2026 +0800|v2ray-geoip: update to 202607020237 (#688)
-048a8b3|David Mandy|Sat Jul 4 01:15:41 2026 +0800|v2ray-geosite: update to 202607022258 (#687)
+b0bf84e|David Mandy|Sun Jul 12 00:20:54 2026 +0800|xray-core: update to 26.7.11 (#691)
+eda1478|David Mandy|Sun Jul 12 00:09:08 2026 +0800|v2ray-geoip: update to 202607090040 (#690)
+7dc42d5|David Mandy|Sun Jul 12 00:08:52 2026 +0800|v2ray-geosite: update to 202607102255 (#692)
+475b99e|A-BO|Sat Jul 11 14:15:44 2026 +0800|ci: optimize code
+211ace8|A-BO|Tue Jul 7 15:14:04 2026 +0800|sing-box: update makefile
 </details>

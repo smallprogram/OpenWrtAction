@@ -1,10 +1,13 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/771acca020019418d45a669c5d3bb0fcd55ca9a7...ad6a4eab7dbb8bb8b102ffba7a27007a969b84a6)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/ad6a4eab7dbb8bb8b102ffba7a27007a969b84a6...1e5cc544f978b2d00c1d8e38bc3e018d18fe134d)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-ad6a4eab7|Qingfang Deng|Mon Jun 1 13:32:17 2026 +0800|kernel: fix WED offloaded flow timeout
-a11e66ca7|Chen Minqiang|Fri Dec 12 10:58:16 2025 +0800|mediatek: add support for Tenda BE12 Pro
+1e5cc544f|coolsnowwolf|Sat Jul 11 17:15:52 2026 +0800|qualcommbe: ipq95xx: add Xiaomi BE7000 with PPE offload support
+18ce6f116|coolsnowwolf|Sat Jul 11 16:41:14 2026 +0800|airoha: use kernel 6.18 by default
+bedbed034|coolsnowwolf|Sat Jul 11 15:34:15 2026 +0800|rockchip: switch to kernel 6.18
+03c6123bb|Felix Fietkau|Wed Jul 1 13:14:40 2026 +0200|mt76: update to Git HEAD (2026-07-01)
+a8d998876|computerqwq|Tue Jul 7 18:00:01 2026 +0800|amlogic: update dts path for OneCloud
 </details>
