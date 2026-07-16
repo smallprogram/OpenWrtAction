@@ -1,17 +1,25 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/2ce5aea10d1aa12494e9c91f7c35c20c57aa439d...2e291e7dc84113592405ecd1d4b3c6ff9b74ac44)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/2e291e7dc84113592405ecd1d4b3c6ff9b74ac44...9fd16b1c1c5288818caf4f7ecef1e3a815a2f29c)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-2e291e7dc|Eric Fahlgren|Sat Jul 11 06:53:23 2026 -0700|owut: update to 2026.07.08
-71dc6b7bd|Alexandru Ardelean|Fri May 29 06:59:23 2026 +0300|kea: bump to 3.0.3
-7834bdc7f|Alexandru Ardelean|Thu Jul 9 16:55:35 2026 +0300|avahi: fix typo in version check override
-5c12bb506|Mario Andrés Pérez|Tue Nov 18 14:47:47 2025 +0100|avahi: define missing DEFAULT_VARIANT and add conflicts - Add DEFAULT_VARIANT to "avahi-daemon" and "libavahi" virtual packages; set to "dbus" variant because it is more compatible. When some package depends on one of these virtual packages an arbitrarily variant it is selected. This avoids that.
-70ccf20cc|Alexandru Ardelean|Fri Jul 3 16:24:41 2026 +0300|avahi: update to 0.9-rc5 / 0.9_rc5
-9d2da95d6|George Sapkin|Mon May 11 20:10:13 2026 +0300|avahi: move version checks to override
-6bb0adf14|Daniel F. Dickinson|Wed Jun 24 19:57:06 2026 -0400|radicale3: tweak description for modern clients
-a462359a7|Daniel F. Dickinson|Wed Jun 24 19:52:28 2026 -0400|radicale3: bump version to 3.7.5
-50ea41ea0|Thibaut VARÈNE|Tue Jun 30 10:44:41 2026 +0200|uspot: update to Git HEAD (2026-06-30)
+9fd16b1c1|Alexandru Ardelean|Thu Apr 16 21:12:30 2026 +0300|python3-drf-nested-routers: update to 0.95.0; add test.sh
+07151fd2f|Alexandru Ardelean|Thu Apr 9 08:25:38 2026 +0300|python3-django-restframework: update to 3.17.1
+759dddafd|Alexandru Ardelean|Thu Apr 16 21:15:27 2026 +0300|python3-django-cors-headers: update to 4.9.0; add test.sh
+d5540bad1|Wei-Ting Yang|Thu Jul 9 21:18:36 2026 +0800|django: bump to version 6.0.7
+b6d250658|Wei-Ting Yang|Thu Jun 4 19:48:43 2026 +0800|django: bump to version 6.0.6
+0f41b7e9b|Wei-Ting Yang|Wed May 6 12:31:20 2026 +0800|django: bump to version 6.0.5
+fb1f91cc5|Alexandru Ardelean|Thu Apr 9 08:25:28 2026 +0300|python3-django: update to 6.0.4
+8272fcce5|Alexandru Ardelean|Sun Mar 29 12:43:53 2026 +0000|python-sqlparse: bump to 0.5.5
+5a36a775d|Wei-Ting Yang|Fri Jul 10 14:51:45 2026 +0800|python-asgiref: improve version check in test.sh
+c9981d527|Alexandru Ardelean|Sat Apr 4 20:34:52 2026 +0300|python-asgiref: bump to 3.11.1
+d3dba685e|Jack Lovell|Sun May 31 15:49:39 2026 +0100|ocserv: support custom server SSL certificate
+af3588c20|Paul Donald|Tue Apr 21 16:10:02 2026 +0200|ocserv: bump to v1.4.1
+023331deb|Dirk Brenken|Tue Jul 14 18:38:15 2026 +0200|adblock: update 4.5.6-4
+c773406dd|Glenn Strauss|Thu Jul 9 18:59:59 2026 -0400|lighttpd: update to lighttpd 1.4.85 release hash
+77e57b4d1|Daniel F. Dickinson|Fri Jul 10 02:12:21 2026 -0400|zabbix: add version check override
+
+
 </details>

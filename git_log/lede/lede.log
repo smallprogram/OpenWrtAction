@@ -1,13 +1,16 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/ad6a4eab7dbb8bb8b102ffba7a27007a969b84a6...1e5cc544f978b2d00c1d8e38bc3e018d18fe134d)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/1e5cc544f978b2d00c1d8e38bc3e018d18fe134d...21bfd88f2f0c74078e77690a266654875419c86d)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
+21bfd88f2|aiamadeus|Wed Jul 15 18:08:02 2026 +0800|rockchip: sync rk3528 upstream dts
+fcf8f15a8|John Audia|Sat Jun 27 14:17:02 2026 -0400|linux-firmware: update to 20260622
+07e112488|Miles Poupart|Thu Jun 4 08:22:11 2026 +0800|kernel: bump 6.12 to 6.12.95
+76a764d21|coolsnowwolf|Mon Jul 13 18:04:19 2026 +0800|kernel: bump all to latest HEAD
+f08c8cb6c|coolsnowwolf|Wed May 20 18:05:50 2026 +0800|mac80211: fix 6GHz and refresh patch
 1e5cc544f|coolsnowwolf|Sat Jul 11 17:15:52 2026 +0800|qualcommbe: ipq95xx: add Xiaomi BE7000 with PPE offload support
 18ce6f116|coolsnowwolf|Sat Jul 11 16:41:14 2026 +0800|airoha: use kernel 6.18 by default
 bedbed034|coolsnowwolf|Sat Jul 11 15:34:15 2026 +0800|rockchip: switch to kernel 6.18
-03c6123bb|Felix Fietkau|Wed Jul 1 13:14:40 2026 +0200|mt76: update to Git HEAD (2026-07-01)
-a8d998876|computerqwq|Tue Jul 7 18:00:01 2026 +0800|amlogic: update dts path for OneCloud
 </details>

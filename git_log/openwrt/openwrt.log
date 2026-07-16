@@ -1,14 +1,12 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/056aa185d9283edc85f9b3eec033b751ccea2bc1...ab08f6a5241d927e724d6de3f270aa2af173f13d)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/ab08f6a5241d927e724d6de3f270aa2af173f13d...42194f91881f6735b4848a741b88b66793857d48)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-ab08f6a524|Rosen Penev|Thu Jul 2 14:53:21 2026 -0700|mac80211: ath9k: call reset on init
-95e72dc918|Hauke Mehrtens|Fri Jul 3 01:46:56 2026 +0200|hostapd: fix security advisory 2026-1
-1555bd3208|Dmitry Mostovoy|Sun May 10 02:52:08 2026 -0400|mediatek: remove extra space in bootargs cudy wr3000p/s/h/e v1 ubootmod
-be51f9a895|Dmitry Mostovoy|Sat May 9 14:56:45 2026 -0400|mediatek: add cudy m3000-v2-yt8821 ubootmod
-9de7568cbd|Dmitry Mostovoy|Sat May 9 11:56:40 2026 -0400|mediatek: add cudy m3000-v1 ubootmod
-5870d7766a|Dmitry Mostovoy|Sun May 17 02:34:36 2026 -0400|arm-trusted-firmware-mediatek: cudy-ddr3: reduce ram speed to 1866 MT/s
+42194f9188|Fil Dunsky|Fri Jan 9 20:16:30 2026 +0300|mediatek: add support for Hiveton H5000M
+01de5484fc|YaleiZang|Tue Jun 30 16:13:01 2026 +0800|airoha: remove KERNEL_LOADADDR from airoha_an7583-evb device definition
+c574db4737|YaleiZang|Tue Jun 23 11:34:02 2026 +0800|airoha: align ethernet-phy node name with reg property
+26f952247d|YaleiZang|Tue Jun 23 11:02:22 2026 +0800|airoha: correct node addresses for crypto and thermal-sensor
 </details>
