@@ -328,10 +328,10 @@ jobs:
           LONG_TIME_TARGETS_DOWNLOAD=(
               "tools/download"
               "toolchain/download"
-              "package/feeds/packages/golang/host/download"
-              "package/feeds/packages/rust/host/download"
-              "package/feeds/packages/ruby/host/download"
-              "package/libs/gettext-full/host/download"
+              # "package/feeds/packages/golang/host/download"
+              # "package/feeds/packages/rust/host/download"
+              # "package/feeds/packages/ruby/host/download"
+              # "package/libs/gettext-full/host/download"
           )
           for target in "${LONG_TIME_TARGETS_DOWNLOAD[@]}"; do
               echo "==== 正在执行 download $target ===="
@@ -348,10 +348,10 @@ jobs:
           LONG_TIME_TARGETS_COMPILE=(
               "tools/compile"
               "toolchain/compile"
-              "package/feeds/packages/golang/host/compile"
-              "package/feeds/packages/rust/host/compile"
-              "package/feeds/packages/ruby/host/compile"
-              "package/libs/gettext-full/host/compile"
+              # "package/feeds/packages/golang/host/compile"
+              # "package/feeds/packages/rust/host/compile"
+              # "package/feeds/packages/ruby/host/compile"
+              # "package/libs/gettext-full/host/compile"
           )
           for target in "${LONG_TIME_TARGETS_COMPILE[@]}"; do
               echo "==== 正在执行 compile $target ===="
