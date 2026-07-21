@@ -1,0 +1,25 @@
+<details> <summary> <b>OpenClash new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/vernesong/OpenClash/compare/1c8e8cb8eaad0edaae11928c9b802b7d613c0f97...a9e5d98cd664917724dbfb0a31440e512ab45a1b)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+a9e5d98c|vernesong|Sat Jul 18 11:49:01 2026 +0800|0.47.133
+29d896ac|vernesong|Sat Jul 18 04:05:57 2026 +0800|0.47.132
+6ff98dcb|vernesong|Fri Jul 17 13:34:21 2026 +0800|0.47.131
+f53aaf52|vernesong|Fri Jul 17 02:19:41 2026 +0800|0.47.130
+088c19af|vernesong|Thu Jul 16 13:09:20 2026 +0800|0.47.129
+a88086ab|vernesong|Thu Jul 16 00:24:33 2026 +0800|0.47.128
+2c169ade|vernesong|Wed Jul 15 19:12:16 2026 +0800|0.47.127
+4a4195c1|vernesong|Tue Jul 14 07:13:51 2026 +0800|0.47.126
+bbfe9174|vernesong|Tue Jul 14 00:59:18 2026 +0800|0.47.125
+1b00ed10|vernesong|Tue Jul 14 00:31:22 2026 +0800|0.47.124
+84e4b1f0|vernesong|Tue Jul 14 00:30:30 2026 +0800|chore: refine
+a82dd2c4|Aethersailor|Mon Jul 13 20:41:11 2026 +0800|fix(i18n): sync GitHub address translation key (#5237)
+20adb1b0|vernesong|Mon Jul 13 08:53:22 2026 +0800|0.47.123
+9ab22827|vernesong|Mon Jul 13 08:52:54 2026 +0800|chore: fix translations
+bc87db68|vernesong|Mon Jul 13 07:00:21 2026 +0800|0.47.122
+
+
+</details>

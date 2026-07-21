@@ -1,0 +1,9 @@
+<details> <summary> <b>OpenWrt-nikki new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/nikkinikki-org/OpenWrt-nikki/compare/e6dfafd598e16fc8991d8cab5e69bd46f200d2b0...cce63f83cd23cab2a0ea6b9471569dde1fcf60a5)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+cce63f8|github-actions[bot]|Mon Jul 20 09:16:05 2026 +0800|chore: update mihomo-meta to v1.19.29 (#874)
+</details>

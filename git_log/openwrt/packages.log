@@ -1,25 +1,25 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/2e291e7dc84113592405ecd1d4b3c6ff9b74ac44...9fd16b1c1c5288818caf4f7ecef1e3a815a2f29c)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/9fd16b1c1c5288818caf4f7ecef1e3a815a2f29c...e84caf60033751ad7881aeda992391fdfe4b39d2)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-9fd16b1c1|Alexandru Ardelean|Thu Apr 16 21:12:30 2026 +0300|python3-drf-nested-routers: update to 0.95.0; add test.sh
-07151fd2f|Alexandru Ardelean|Thu Apr 9 08:25:38 2026 +0300|python3-django-restframework: update to 3.17.1
-759dddafd|Alexandru Ardelean|Thu Apr 16 21:15:27 2026 +0300|python3-django-cors-headers: update to 4.9.0; add test.sh
-d5540bad1|Wei-Ting Yang|Thu Jul 9 21:18:36 2026 +0800|django: bump to version 6.0.7
-b6d250658|Wei-Ting Yang|Thu Jun 4 19:48:43 2026 +0800|django: bump to version 6.0.6
-0f41b7e9b|Wei-Ting Yang|Wed May 6 12:31:20 2026 +0800|django: bump to version 6.0.5
-fb1f91cc5|Alexandru Ardelean|Thu Apr 9 08:25:28 2026 +0300|python3-django: update to 6.0.4
-8272fcce5|Alexandru Ardelean|Sun Mar 29 12:43:53 2026 +0000|python-sqlparse: bump to 0.5.5
-5a36a775d|Wei-Ting Yang|Fri Jul 10 14:51:45 2026 +0800|python-asgiref: improve version check in test.sh
-c9981d527|Alexandru Ardelean|Sat Apr 4 20:34:52 2026 +0300|python-asgiref: bump to 3.11.1
-d3dba685e|Jack Lovell|Sun May 31 15:49:39 2026 +0100|ocserv: support custom server SSL certificate
-af3588c20|Paul Donald|Tue Apr 21 16:10:02 2026 +0200|ocserv: bump to v1.4.1
-023331deb|Dirk Brenken|Tue Jul 14 18:38:15 2026 +0200|adblock: update 4.5.6-4
-c773406dd|Glenn Strauss|Thu Jul 9 18:59:59 2026 -0400|lighttpd: update to lighttpd 1.4.85 release hash
-77e57b4d1|Daniel F. Dickinson|Fri Jul 10 02:12:21 2026 -0400|zabbix: add version check override
+e84caf600|Niklas Thorild|Mon Jul 20 22:24:02 2026 +0200|telegraf: update to 1.39.2
+320310783|Dharmik Parmar|Thu Jul 2 09:01:55 2026 +0530|watchcat: update package maintainers
+c5a67ea9b|Dharmik Parmar|Thu Jul 2 09:01:19 2026 +0530|watchcat: resolve logical interface names
+62cda43de|Dharmik Parmar|Wed Jun 24 22:37:18 2026 +0530|watchcat: clarify recovery timer baseline
+1eb8198d6|Dharmik Parmar|Mon May 11 23:34:08 2026 +0530|watchcat: add optional failure timer reset
+8ecbd3404|Dharmik Parmar|Sun May 10 01:47:48 2026 +0530|watchcat: clarify restart log wording
+0b2580841|Josef Schlehofer|Wed Jul 1 23:58:46 2026 +0200|ci: add nightly LLM review workflow
+f7a86dd56|dependabot[bot]|Sat Jul 4 21:12:16 2026 +0000|ci: bump lewagon/wait-on-check-action from 1.8.0 to 1.8.1
+747627ad8|Josef Schlehofer|Sat Jul 4 14:52:06 2026 +0200|ci: migrate to webhook-based stale bot
+1a3f9de1f|Stan Grishin|Fri Jul 17 18:05:10 2026 +0000|pbr: update to 1.2.2-20
+bcf4ecc04|Stan Grishin|Fri Jul 17 18:21:04 2026 +0000|adblock-fast: update to 1.2.4-4
+af8de1438|Stan Grishin|Fri Jul 17 18:24:22 2026 +0000|https-dns-proxy: update to 2026.05.06-1
+e7dfc505b|Alexandru Ardelean|Sat Jul 18 17:54:50 2026 +0300|wget: rank wget-nossl below uclient-fetch for the wget alternative
+ef026618e|Ismail Kundakci|Sun Jul 12 22:40:21 2026 +0300|docker: update to 29.6.1
+6796ae1b9|Ismail Kundakci|Sun Jul 12 22:40:21 2026 +0300|dockerd: update to 29.6.1
 
 
 </details>

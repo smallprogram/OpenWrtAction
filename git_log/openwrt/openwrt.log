@@ -1,12 +1,25 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/ab08f6a5241d927e724d6de3f270aa2af173f13d...42194f91881f6735b4848a741b88b66793857d48)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/42194f91881f6735b4848a741b88b66793857d48...0456d3d1c209f4e7b3ccb2a7cb0cc48606da26d9)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-42194f9188|Fil Dunsky|Fri Jan 9 20:16:30 2026 +0300|mediatek: add support for Hiveton H5000M
-01de5484fc|YaleiZang|Tue Jun 30 16:13:01 2026 +0800|airoha: remove KERNEL_LOADADDR from airoha_an7583-evb device definition
-c574db4737|YaleiZang|Tue Jun 23 11:34:02 2026 +0800|airoha: align ethernet-phy node name with reg property
-26f952247d|YaleiZang|Tue Jun 23 11:02:22 2026 +0800|airoha: correct node addresses for crypto and thermal-sensor
+0456d3d1c2|rodriguezst|Sat Jun 13 14:14:17 2026 +0000|ramips: mt76x8: add support for Cudy LT500 Outdoor v1
+8b4df0b66d|Mieczyslaw Nalewaj|Wed Jul 15 18:58:21 2026 +0200|ledtrig-network: default missing family to WLAN on non-DT LEDs
+557a8e1b83|Josef Schlehofer|Thu Jul 16 23:52:35 2026 +0200|CI: remove labeler workflow and enable webhook-based labeling
+87c745fc03|Josef Schlehofer|Thu Jul 16 19:57:35 2026 +0200|CI: migrate to webhook bot and simplify labeler
+99a10e8f75|Hauke Mehrtens|Thu May 21 21:15:59 2026 +0200|github: LLM-review: run the digest twice a day
+61f9378f61|Hauke Mehrtens|Thu May 21 21:11:54 2026 +0200|github: LLM-review: stop reviewing new PRs automatically
+12de37240c|Hauke Mehrtens|Thu May 21 21:10:15 2026 +0200|github: drop the claude-code-review workflow
+9e560fd92a|Hauke Mehrtens|Sun May 10 16:34:54 2026 +0200|github: separate concurrency group per event for kernel and packages
+266450df20|Hauke Mehrtens|Sun May 10 16:27:26 2026 +0200|github: add workflow_dispatch trigger to kernel and packages
+d9a0d02ef4|Hauke Mehrtens|Fri May 1 18:02:22 2026 +0200|github: extend LLM review rules with three new categories
+27ebdec580|Hauke Mehrtens|Sun Apr 26 16:37:12 2026 +0200|github: add LLM PR review wrapper and rules
+bd0545f301|Hauke Mehrtens|Sun Apr 12 17:34:13 2026 +0200|github: labeler: Update dependencies
+d45bec0b0c|Hauke Mehrtens|Sun Apr 12 17:33:22 2026 +0200|github: github-release: update dependencies
+ff3288c78d|Hauke Mehrtens|Sat Apr 11 18:44:23 2026 +0200|github: update claude code action
+e62d8ae5f8|Hauke Mehrtens|Sat Apr 11 18:06:25 2026 +0200|github: disable fix links in Claude code review
+
+
 </details>

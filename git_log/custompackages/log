@@ -1,8 +1,8 @@
-luci-theme-argon:f92905520f8fcb60b7f0c4776e9ff8dd77a6d49f
+luci-theme-argon:5b675d93b444c209ba59b6fb9c07fa569d359cdb
 luci-app-argon-config:3e099a37c3f71d0de677f1b6b0f4bffd57d91dac
 luci-theme-kucat:9a6d6edda6a50355adc6d5f50450acb3c92c332e
 luci-app-kucat-config:e51de5e4f9c98c234777c26948ff454a2ae3dc99
-luci-theme-aurora:7cb99b5fff586d97abc1567988c24356887bcdc2
+luci-theme-aurora:76ab48a4fb518ba6e25150093fdba55b559ecda4
 luci-app-adguardhome:37fdf502b99328b37c9ef4c4387f069f67253f85
 luci-app-mosdns:e2d0877f0ce2553840d6aaf8a1f8578328910b25
 openwrt-bandix:fc2ba97f5239d501b621c30c5ccc93a71f1ad47a

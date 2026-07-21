@@ -1,16 +1,12 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/1e5cc544f978b2d00c1d8e38bc3e018d18fe134d...21bfd88f2f0c74078e77690a266654875419c86d)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/21bfd88f2f0c74078e77690a266654875419c86d...16db931ce149fad4fa40fc98aaee47bc1dd69a20)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-21bfd88f2|aiamadeus|Wed Jul 15 18:08:02 2026 +0800|rockchip: sync rk3528 upstream dts
-fcf8f15a8|John Audia|Sat Jun 27 14:17:02 2026 -0400|linux-firmware: update to 20260622
-07e112488|Miles Poupart|Thu Jun 4 08:22:11 2026 +0800|kernel: bump 6.12 to 6.12.95
-76a764d21|coolsnowwolf|Mon Jul 13 18:04:19 2026 +0800|kernel: bump all to latest HEAD
-f08c8cb6c|coolsnowwolf|Wed May 20 18:05:50 2026 +0800|mac80211: fix 6GHz and refresh patch
-1e5cc544f|coolsnowwolf|Sat Jul 11 17:15:52 2026 +0800|qualcommbe: ipq95xx: add Xiaomi BE7000 with PPE offload support
-18ce6f116|coolsnowwolf|Sat Jul 11 16:41:14 2026 +0800|airoha: use kernel 6.18 by default
-bedbed034|coolsnowwolf|Sat Jul 11 15:34:15 2026 +0800|rockchip: switch to kernel 6.18
+16db931ce|Internet1235|Mon Jul 20 18:00:01 2026 +0800|kernel: refresh linux 6.6 patches
+996729c95|coolsnowwolf|Fri Jul 17 18:06:09 2026 +0800|rockchip: add kernel 6.18 support
+c73a01145|coolsnowwolf|Tue Jul 14 16:02:02 2026 +0800|rockchip: sync with upstream patch
+e873f9acc|aiamadeus|Thu Jul 16 18:09:30 2026 +0800|rockchip: sync upstream for rk3528
 </details>

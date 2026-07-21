@@ -1,0 +1,9 @@
+<details> <summary> <b>routing new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/openwrt/routing/compare/76c933906c616a4cdf865611af0a381787bd87b8...c872ae28bb1e36a37987fb8e85ba73f71b1bb2eb)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+c872ae2|Josef Schlehofer|Thu Jul 9 21:18:12 2026 +0200|ci: use openwrt-bot-worker for formalities
+</details>

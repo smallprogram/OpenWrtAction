@@ -1,0 +1,22 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/99464ec92438c000d146db3c6702971b2a60c2e2...8291c9f52485fc336c590137a86ae44f3195d5e7)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+8291c9f524|Dirk Brenken|Tue May 12 21:28:44 2026 +0200|luci-app-lxc: fix authenticated path traversal and ACL bypass (host root)
+a03941bdd4|Liangbin Lian|Wed Jul 1 21:14:09 2026 +0800|luci-base: dispatcher.uc: escape URL path and username when logging
+2acd536063|Coia Prant|Wed May 27 10:03:15 2026 +0000|luci-mod-network: don't show Carrier on dynamic/alias interface
+237d6354ef|Daniel F. Dickinson|Fri Jul 3 21:31:20 2026 -0400|luci-app-nut: only allow admin write access and limit read access
+c155cd9945|Paul Donald|Tue May 26 17:26:02 2026 +0300|luci-app-ddns: correctness fixes
+61232153a8|Dirk Brenken|Mon Jul 20 18:15:38 2026 +0200|luci-app-banip: grant the ubus file methods used by the frontend
+7370d6b85e|Dirk Brenken|Mon Jul 20 18:05:22 2026 +0200|luci-app-adblock: grant the ubus file methods used by the frontend
+f539c17ad2|Dirk Brenken|Mon Jul 20 17:51:46 2026 +0200|luci-app-travelmate: fix status polling and uplink creation for non-root users
+61d191e37b|Stan Grishin|Fri Jul 17 18:25:43 2026 +0000|luci-app-https-dns-proxy: update to 2026.05.06-1
+a8350bc4ad|Stan Grishin|Fri Jul 17 18:25:18 2026 +0000|luci-app-adblock-fast: update to 1.2.4-4
+0465916d7a|Stan Grishin|Fri Jul 17 18:14:32 2026 +0000|luci-app-pbr: update to 1.2.2-20
+ca9f73a885|Dirk Brenken|Sun Jul 19 18:32:05 2026 +0200|luci-app-banip: fix ACL for non-root users
+e1cf240ade|Dirk Brenken|Sun Jul 19 18:20:15 2026 +0200|luci-app-adblock: fix ACL for non-root users
+48ac0e4beb|Dirk Brenken|Sun Jul 19 18:03:34 2026 +0200|luci-app-travelmate: fix WLAN scan for non-root users
+</details>

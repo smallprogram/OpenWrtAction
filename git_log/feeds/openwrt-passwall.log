@@ -1,24 +1,19 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/adab49f79df24d759efc90c2ad3f817fa6d511bc...3f7695d6b453a111d2ca9b8e9aa05d7e8a843b68)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/3f7695d6b453a111d2ca9b8e9aa05d7e8a843b68...d01124122f885f29fda4de6adcbd64a7f4a3c554)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-3f7695d6|A-BO|Thu Jul 16 21:40:01 2026 +0800|luci: 26.7.16
-20fd7808|handsomeji|Thu Jul 16 00:31:11 2026 +0800|luci: optimize code
-ef0df88c|A-BO|Thu Jul 16 17:21:59 2026 +0800|luci: adjust and optimize
-6770f11b|A-BO|Thu Jul 16 13:36:59 2026 +0800|luci: support manual fetch of xray hy2 `pinnedPeerCertSha256`
-c8ce288e|A-BO|Thu Jul 16 13:19:18 2026 +0800|luci: fixup
-cf813135|A-BO|Wed Jul 15 17:17:54 2026 +0800|luci: add ech support in trojan link sharing and subscription
-f075d6ec|A-BO|Wed Jul 15 12:59:00 2026 +0800|luci: 26.7.15
-3c107355|A-BO|Wed Jul 15 12:56:52 2026 +0800|luci: remove xray `allowInsecure`
-a44717e7|A-BO|Wed Jul 15 12:46:23 2026 +0800|luci: xray inbound reality add `minClientVer`
-7df94111|A-BO|Tue Jul 14 22:52:24 2026 +0800|luci: add batch backup node support for socks
-bf1037ce|A-BO|Mon Jul 13 16:43:17 2026 +0800|luci: add default value for xray fragment
-feb14282|A-BO|Mon Jul 13 00:47:17 2026 +0800|luci: add OR logic support to node rule matching
-6f0873c5|A-BO|Sun Jul 12 23:22:49 2026 +0800|luci: optimize and adjust
-a49686d1|ShanStone|Sun Jul 12 22:09:57 2026 +0800|luci: typo iptables.sh
-a961328b|ShanStone|Sun Jul 12 21:38:32 2026 +0800|luci; clean up shell syntax typos
-
+d0112412|A-BO|Tue Jul 21 17:23:59 2026 +0800|luci: add the `pexcn` rule list
+17906250|A-BO|Mon Jul 20 20:06:30 2026 +0800|luci: Adjust the fakedns logic of the DNS component
+9b98ad44|A-BO|Mon Jul 20 11:06:45 2026 +0800|luci: rename xray `network` to `method`
+3e3cf508|A-BO|Sun Jul 19 15:50:09 2026 +0800|luci: adjust nftables environment dependency check
+bd0b58aa|handsomeji|Sun Jul 19 15:05:01 2026 +0800|luci: adjust iptables `drop` to `reject`
+b8bb676b|A-BO|Sun Jul 19 15:01:29 2026 +0800|luci: update default rules
+d4b2a510|wybb|Sun Jul 19 00:06:48 2026 +0800|luci: add server startup delay setting (#4429)
+5d8f411a|ShanStone|Sat Jul 18 21:20:27 2026 +0800|luci: optimise nftset timeout (#4427)
+b6d5443b|A-BO|Sat Jul 18 01:20:24 2026 +0800|luci: adjust nftables `drop` to `reject`
+49175d02|A-BO|Fri Jul 17 23:28:07 2026 +0800|luci: add `HappyEyeballs` for xray
+678d4cdd|A-BO|Fri Jul 17 13:25:44 2026 +0800|luci: adjust code
 </details>
