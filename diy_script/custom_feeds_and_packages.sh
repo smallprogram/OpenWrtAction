@@ -7,7 +7,6 @@ export repos=(
   "src-git passwall2 https://github.com/Openwrt-Passwall/openwrt-passwall2.git;main"
   "src-git helloworld https://github.com/fw876/helloworld;master"
   "src-git OpenClash https://github.com/vernesong/OpenClash;master"
-  "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main"
   "src-git ghfu https://github.com/smallprogram/openwrt-ghfu.git;main"
 )
 
