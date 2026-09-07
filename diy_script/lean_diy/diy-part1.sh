@@ -52,3 +52,6 @@ echo "Updated feeds.conf.default"
 # ---------------------------------------------------------------end feeds update---------------------------------------------------------------
 
 clone_custom_packages
+
+# 修改 netspeedtest 的 Makefile 将其中的 python3-pkg-resources 替换为 python3-setuptools，防止lean源码编译报错
+find package/ -name "Makefile" -path "*/luci-app-netspeedtest/*" -exec sed -i 's/python3-pkg-resources/python3-setuptools/g' {} +
