@@ -1,10 +1,11 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/6d7dc6d5c0ef7655e53e9077076d931f13bf7ca0...15afcee6b78f3b63e7df1881887537a2230bc0be)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/06325d98456698cd450980625faeed292426c8c0...84bd86384928955b568988ca0e09e2c78c75173d)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
+84bd86384|Tianling Shen|Sun Sep 6 15:50:12 2026 +0800|Merge Official Source
 15afcee6b|Alexandru Ardelean|Sun Aug 9 12:32:47 2026 +0300|python-typing-extensions: bump to 4.16.0
 1c8a25b81|Alexandru Ardelean|Mon Aug 10 15:13:35 2026 +0300|python-typing-extensions: allow flit_core 4.x as the build backend
 3059e4412|Alexandru Ardelean|Wed Apr 1 12:37:28 2026 +0300|python-typing-extensions: bump to 4.15.0
@@ -19,4 +20,6 @@ dd034274f|Tianling Shen|Tue Sep 1 09:45:10 2026 +0800|yq: update to 4.53.6
 1bf312360|Tianling Shen|Mon Jul 27 11:26:55 2026 +0800|cloudflared: update to 2026.7.3
 d2a84b036|Tianling Shen|Mon Jul 27 11:28:43 2026 +0800|v2ray-geodata: update to latest version
 db06f4c65|Tianling Shen|Mon Jul 27 11:28:01 2026 +0800|v2ray-core: update to 5.51.2
+
+
 </details>

@@ -1,0 +1,17 @@
+<details> <summary> <b>routing new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/openwrt/routing/compare/fa7256774a99af347c67cda938db2bb4265994e5...e49d76035aafb85ddc993b59271d8c7ba56b5362)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+e49d760|Simon Wunderlich|Wed Sep 2 13:19:36 2026 +0200|Merge pull request #1200 from ecsv/batadv-for-25.12
+85fe1cf|Sven Eckelmann|Tue Sep 1 22:18:06 2026 +0200|batman-adv: merge bugfixes from 2026.3
+271a5d1|Sven Eckelmann|Tue Sep 1 22:05:08 2026 +0200|batctl: merge bugfixes from 2026.3
+8048976|Sven Eckelmann|Tue Sep 1 22:05:08 2026 +0200|alfred: merge bugfixes from 2026.3
+2153140|Sven Eckelmann|Tue Sep 1 22:48:14 2026 +0200|batman-adv: reformat patches
+e1a081a|Sven Eckelmann|Tue Sep 1 22:48:14 2026 +0200|batctl: reformat patches
+35924ea|Sven Eckelmann|Tue Sep 1 22:48:14 2026 +0200|alfred: reformat patches
+0637497|Josef Schlehofer|Tue Aug 11 13:12:56 2026 +0200|batctl: clean up the Makefile
+11e0d52|Josef Schlehofer|Tue Aug 11 13:11:31 2026 +0200|batman-adv: drop the vestigial conffiles entry and fix the migration script
+</details>

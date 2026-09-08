@@ -1,0 +1,22 @@
+<details> <summary> <b>luci-app-mosdns new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/sbwml/luci-app-mosdns/compare/908d290859746632ee52d9a25a75c8848881b0df...c73c3da8a5ea28a9343aa11faf9b6c4e30f85cdb)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+c73c3da|sbwml|Sun Sep 6 12:25:43 2026 +0800|luci-app-mosdns: hotplug.d: only reload mosdns on wan interface ifup events
+df6d67b|sbwml|Sat Sep 5 21:45:55 2026 +0800|luci-app-mosdns: bump version to 1.7.13
+cad8c33|sbwml|Sat Sep 5 21:42:55 2026 +0800|luci-app-mosdns: statistics: remove action column from query logs table
+16cb4ec|sbwml|Sat Sep 5 21:36:27 2026 +0800|luci-app-mosdns: statistics: streamline mobile query logs view and support click for details
+141c094|sbwml|Sat Sep 5 21:08:10 2026 +0800|luci-app-mosdns: rules: simplify and deduplicate rule tab configurations
+ad47d34|sbwml|Sat Sep 5 20:57:47 2026 +0800|luci-app-mosdns: update: fix localization for update in progress prompt
+814438b|sbwml|Wed Sep 2 23:54:45 2026 +0800|luci-app-mosdns: add quick permit and intercept actions for query logs
+3cb693a|sbwml|Thu Sep 3 23:55:53 2026 +0800|luci-app-mosdns: statistics: display full date and time in sparkline tooltip
+73a2273|sbwml|Wed Sep 2 23:26:13 2026 +0800|luci-app-mosdns: display real-time QPS badge in statistics view
+b661614|sbwml|Tue Sep 1 23:20:37 2026 +0800|luci-app-mosdns: statistics: support resolving client IP to hostname from DHCP leases
+e37ab59|sbwml|Sat Sep 5 18:14:51 2026 +0800|mosdns: bump pkgrel to r13
+87afbc7|sbwml|Sat Sep 5 18:12:28 2026 +0800|mosdns: fallback: preserve upstream and query context metadata from winning branch
+10b026a|sbwml|Sat Sep 5 18:11:35 2026 +0800|mosdns: stats_api: exclude hosts and arbitrary queries from cache hit percentage
+7056e1a|sbwml|Sat Sep 5 18:10:35 2026 +0800|mosdns: stats_api: support real-time QPS in stats endpoint
+</details>

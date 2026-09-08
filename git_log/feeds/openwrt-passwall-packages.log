@@ -1,0 +1,10 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/b31fecf0ab40606e35864c21c3988b9daf3c441b...a01f97d6d8c8880b56bb50fe7ad2a2a6d5ec2947)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+a01f97d|A-BO|Sun Sep 6 15:21:22 2026 +0800|add .gitattributes
+3e11c45|A-BO|Wed Sep 2 22:46:06 2026 +0800|sing-box: update makefile
+</details>

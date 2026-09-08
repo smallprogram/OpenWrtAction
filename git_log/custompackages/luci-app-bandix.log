@@ -1,0 +1,10 @@
+<details> <summary> <b>luci-app-bandix new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/timsaya/luci-app-bandix/compare/d899c02a44ba83ddf5a2384507ca3c3105e9dacc...0bd9b61740c8798ca86317eb6e0784fb32dd51f5)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+0bd9b61|stefanlei|Sun Sep 6 22:11:11 2026 +0800|release v0.12.11
+1588729|stefanlei|Sun Sep 6 21:59:34 2026 +0800|feat: add traffic quota management UI
+</details>

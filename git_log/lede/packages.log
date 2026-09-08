@@ -1,17 +1,10 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/35f36d4fb40eaf247f45fc09d776bb6866f23dd3...bfa8c7882b66f89ce0b2c02fa03d3c9df44c7fcc)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/52082da251e709d662dd51f8cf538193ca5fdb33...35f36d4fb40eaf247f45fc09d776bb6866f23dd3)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-bfa8c788|coolsnowwolf|Tue Sep 8 14:43:52 2026 +0800|softethervpn5: fix host build and update to 5.2.5188
-808d968e|coolsnowwolf|Mon Sep 7 18:31:24 2026 +0800|ovpn-dco: fix build on Linux 6.18.40+
-ef485bae|coolsnowwolf|Mon Sep 7 18:03:33 2026 +0800|node: add Node.js 24.x and 26.x support
-42c4e4a0|coolsnowwolf|Mon Sep 7 12:24:30 2026 +0800|Merge pull request #1140 from Internet1235/uu
-a6e3babc|coolsnowwolf|Fri Mar 6 13:23:25 2026 +0800|cshark: add CloudShark capture tool
-8d6d1778|coolsnowwolf|Thu Mar 5 12:38:26 2026 +0800|ddns-scripts: add Tencent Cloud DNSPod API
-b4de3597|Internet1235|Sat Sep 5 19:13:48 2026 +0800|uugamebooster: update to 14.6.24
 35f36d4f|coolsnowwolf|Sun Sep 6 13:23:25 2026 +0800|cshark: add CloudShark capture tool
 453b522f|github-actions[bot]|Sun Sep 6 05:17:21 2026 +0000|ci: sync upstream packages
 c84523ef|coolsnowwolf|Sun Sep 6 13:16:51 2026 +0800|ci: sync daed from immortalwrt packages
@@ -20,4 +13,13 @@ c84523ef|coolsnowwolf|Sun Sep 6 13:16:51 2026 +0800|ci: sync daed from immortalw
 2478e665|coolsnowwolf|Sun Sep 6 11:30:58 2026 +0800|ci: sync vmlinux btf package
 b7602550|github-actions[bot]|Sun Sep 6 03:21:06 2026 +0000|ci: sync upstream packages
 7e806128|coolsnowwolf|Sun Sep 6 11:20:35 2026 +0800|ci: sync upstream packages
+a9e08616|coolsnowwolf|Sun Sep 6 10:37:48 2026 +0800|qbittorrent: restore procd service support
+c6db233e|coolsnowwolf|Sun Sep 6 10:12:15 2026 +0800|Merge pull request #1138 from Internet1235/rust
+39bdfc63|coolsnowwolf|Sun Sep 6 07:50:26 2026 +0800|bandwidthd: use libgd-full for sqlite variant
+50d3d789|coolsnowwolf|Sun Sep 6 06:45:36 2026 +0800|transmission: use public_html web UI path
+e0786416|coolsnowwolf|Sun Sep 6 06:44:56 2026 +0800|transmission-web-control: update to 2021 snapshot
+356fc788|coolsnowwolf|Sun Sep 6 04:10:25 2026 +0800|xfrpc: update to 5.06.909
+3596a1df|coolsnowwolf|Sun Sep 6 03:05:45 2026 +0800|snort3: update to 3.12.2.0
+
+
 </details>

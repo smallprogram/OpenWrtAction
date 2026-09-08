@@ -1,0 +1,9 @@
+<details> <summary> <b>routing new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/routing/compare/a2cece4b589bb6b3015c272dfcab55ce8d873635...75994b736e2fa1d259ea4e3a6715893b501aa4ba)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+75994b7|coolsnowwolf|Sun Sep 6 06:37:57 2026 +0800|cjdns: avoid failing on dangling pointer warnings
+</details>
