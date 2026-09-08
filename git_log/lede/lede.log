@@ -1,25 +1,19 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/63fe018ab0e16a003382b684ea6ffb8445b351b5...1b3faf5ca473dff8ecd9fd4ccde945577c7eef1c)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/1b3faf5ca473dff8ecd9fd4ccde945577c7eef1c...d1ab56eb79387a07705590e6882fdaf873ecaa51)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-1b3faf5ca|coolsnowwolf|Mon Sep 7 01:14:08 2026 +0800|automount: skip devices that are already mounted
-93b0bdd74|coolsnowwolf|Sun Sep 6 23:01:01 2026 +0800|kernel: package poly1305 library on 6.18
-d35eeacbb|coolsnowwolf|Sun Sep 6 19:02:05 2026 +0800|rockchip: backport RK3588 HDMI0 device tree nodes
-5827467d5|coolsnowwolf|Sun Sep 6 14:03:10 2026 +0800|netifd: restore legacy shell wireless handling
-01e1aaed2|coolsnowwolf|Sun Sep 6 13:44:32 2026 +0800|d1: remove duplicate allwinner target
-d0f709896|coolsnowwolf|Sun Sep 6 13:33:30 2026 +0800|sunxi: sync 6.18 support from ImmortalWrt
-3dfce952e|coolsnowwolf|Sun Sep 6 12:10:07 2026 +0800|loongarch64: use kernel 6.18 by default
-f9e958b9c|coolsnowwolf|Sun Sep 6 12:09:27 2026 +0800|x86: use kernel 6.18 by default
-29e06a479|coolsnowwolf|Sun Sep 6 10:25:57 2026 +0800|qca-nss-ecm: delay acceleration for short flows
-112f745bb|coolsnowwolf|Sun Sep 6 07:38:40 2026 +0800|luci-app-mtwifi: fix VHT BW signaling dynamic value
-d1e5ffee6|coolsnowwolf|Sun Sep 6 06:03:07 2026 +0800|ipq806x: add Linksys E8350 v1 factory image support
-3a9ac9368|coolsnowwolf|Sun Sep 6 05:14:21 2026 +0800|ath10k-ct: use matching patches for 5.15 API
-9ec995375|coolsnowwolf|Sun Sep 6 04:37:59 2026 +0800|generic: disable broken threaded backlog on 6.1
-22a8f5710|coolsnowwolf|Sun Sep 6 04:25:38 2026 +0800|README: document macOS command line tools requirement
-c8c7c4b49|coolsnowwolf|Sun Sep 6 04:07:03 2026 +0800|hostapd: disable ACS for supplicant-only builds
-
-
+d1ab56eb7|coolsnowwolf|Tue Sep 8 11:09:17 2026 +0800|armsr: switch to Linux 6.18
+6e4b0d326|coolsnowwolf|Tue Sep 8 11:02:13 2026 +0800|kernel: fix UDP tunnel module selection on Linux 6.6
+eb1a9cfc4|coolsnowwolf|Tue Sep 8 10:38:46 2026 +0800|kernel: package split Realtek HDA codecs on Linux 6.18
+376d11dc9|coolsnowwolf|Tue Sep 8 10:22:21 2026 +0800|wireguard-tools: revert to 1.0.20250521
+3b2ce46ad|coolsnowwolf|Tue Sep 8 10:11:17 2026 +0800|kernel: restore crypto acceleration modules on x86 6.6
+d523e3ffe|coolsnowwolf|Tue Sep 8 00:03:34 2026 +0800|kernel: restrict accelerated crypto modules to Linux 6.12
+a2c5ab05a|coolsnowwolf|Mon Sep 7 23:31:53 2026 +0800|netifd: restore legacy wireless helper installation
+75318e581|coolsnowwolf|Mon Sep 7 14:22:06 2026 +0800|rockchip: backport missing RK3588 DTS nodes to 6.12
+9c0b39747|coolsnowwolf|Mon Sep 7 13:51:53 2026 +0800|rockchip: fix YT921x DSA patch indentation
+8680eb1e0|coolsnowwolf|Mon Sep 7 12:13:56 2026 +0800|rockchip: switch to kernel 6.18
+195e0a6a3|lean|Mon Sep 7 11:56:59 2026 +0800|build: fix mirror hashes for xz archives
 </details>

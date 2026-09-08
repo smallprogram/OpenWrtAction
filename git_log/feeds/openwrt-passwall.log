@@ -1,16 +1,14 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/56adb0e2cbcf17e419524d46841d77a79474f327...cc3c6153399ab6e1fe36d62e29cf8bdcdd3b45c6)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/cc3c6153399ab6e1fe36d62e29cf8bdcdd3b45c6...0db5c7b2865e45494cbb8457c35da6af602c9aa8)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-cc3c6153|Dev024|Sun Sep 6 15:10:48 2026 +0800|luci: fix: match self-traffic fwmark with mask to coexist with mwan3 (#4462)
-35308773|A-BO|Sun Sep 6 14:08:19 2026 +0800|luci: Fix subscription requests missing Accept header
-f927811a|A-BO|Sun Sep 6 13:22:49 2026 +0800|luci: optimize
-1fb747a2|A-BO|Wed Sep 2 21:52:52 2026 +0800|luci: add snell with Sing-Box v1.14.0
-87ec4532|A-BO|Wed Sep 2 21:20:59 2026 +0800|luci: optimize
-017dbd91|A-BO|Wed Sep 2 21:02:54 2026 +0800|luci: add `http client` in sing-box
-15de1532|A-BO|Wed Sep 2 20:36:29 2026 +0800|luci: clean up code
-7bfd1739|A-BO|Wed Sep 2 11:20:17 2026 +0800|luci: fix geo view
+0db5c7b2|lwb1978|Tue Sep 8 14:02:31 2026 +0800|luci: migrate xray dns outbound `proxySettings` to `dialerProxy`
+4237339b|lwb1978|Tue Sep 8 12:02:54 2026 +0800|luci: Cache LuCI version
+436d9d44|lwb1978|Tue Sep 8 11:13:11 2026 +0800|luci: adjust hosts dns rule for sing-box 1.14
+ac4b1e78|lwb1978|Mon Sep 7 18:18:52 2026 +0800|luci: add version marker to backup files
+883fb112|lwb1978|Mon Sep 7 17:16:32 2026 +0800|luci: optimize
+1bbd88a5|lwb1978|Mon Sep 7 14:29:34 2026 +0800|luci: Add DoT and DoQ support to sing-box DNS
 </details>

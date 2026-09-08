@@ -1,22 +1,11 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/6d7dc6d5c0ef7655e53e9077076d931f13bf7ca0...15afcee6b78f3b63e7df1881887537a2230bc0be)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/15afcee6b78f3b63e7df1881887537a2230bc0be...f24cbdf2484652525417c2f4f5064c22dfcf6ed7)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-15afcee6b|Alexandru Ardelean|Sun Aug 9 12:32:47 2026 +0300|python-typing-extensions: bump to 4.16.0
-1c8a25b81|Alexandru Ardelean|Mon Aug 10 15:13:35 2026 +0300|python-typing-extensions: allow flit_core 4.x as the build backend
-3059e4412|Alexandru Ardelean|Wed Apr 1 12:37:28 2026 +0300|python-typing-extensions: bump to 4.15.0
-53a674bf5|Dharmik Parmar|Wed Aug 19 06:32:20 2026 +0530|strongswan: fix build with wolfSSL 5.9.2
-f60a090af|George Sapkin|Wed Sep 2 16:24:24 2026 +0300|golang: bump 1.26 to 1.26.8
-10e3259ba|Ray Wang|Sun Aug 30 21:46:56 2026 +0800|hev-socks5-server: update to 2.13.1
-887504d61|Tianling Shen|Tue Sep 1 09:47:11 2026 +0800|rclone: update to 1.75.0
-f3290d146|Tianling Shen|Tue Sep 1 09:46:40 2026 +0800|openlist: update to 4.2.5
-dd034274f|Tianling Shen|Tue Sep 1 09:45:10 2026 +0800|yq: update to 4.53.6
-19dcbdf84|Tianling Shen|Tue Sep 1 09:38:53 2026 +0800|v2ray-core: update to 5.53.0
-2c0d375b7|Tianling Shen|Mon Jul 27 12:00:52 2026 +0800|geoipupdate: update to 8.0.0
-1bf312360|Tianling Shen|Mon Jul 27 11:26:55 2026 +0800|cloudflared: update to 2026.7.3
-d2a84b036|Tianling Shen|Mon Jul 27 11:28:43 2026 +0800|v2ray-geodata: update to latest version
-db06f4c65|Tianling Shen|Mon Jul 27 11:28:01 2026 +0800|v2ray-core: update to 5.51.2
+f24cbdf24|Dirk Brenken|Mon Sep 7 19:10:31 2026 +0200|travelmate: update 2.4.9-1
+bc31bd613|Sergei S.|Wed Sep 2 19:24:49 2026 +0400|sing-box: bump to 1.13.21
+569156161|Karen Khachatryan|Sun Aug 30 12:44:14 2026 +0300|c-ares: bump to 1.34.8
 </details>
