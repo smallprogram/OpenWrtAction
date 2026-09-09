@@ -19,47 +19,72 @@ fi
 
 
 #------------------------------------------------------移植包------------------------------------------------------------
-# rm -rf temp_resp
-# git clone -b master --single-branch https://github.com/openwrt/packages.git temp_resp/openwrt_packages
+# --- 拉取上游仓库 ---
+rm -rf temp_resp
 
-# # =========================================================
-# # Golang/Rust 强制覆盖 (直接操作 feeds 目录)
-# # 确保这段代码在 ./scripts/feeds update -a 之后执行
-# # =========================================================
-# echo "清理旧版 Golang 和 Rust..."
-# # 1. 删除 feeds 里的原生目录
-# rm -rf feeds/packages/lang/golang
-# rm -rf feeds/packages/lang/rust
+# =================================================================
+# 极速拉取并注入 Feeds 树的函数
+# =================================================================
+inject_feed() {
+    local repo_url="$1"
+    local feed_dir="$2"
+    shift 2
+    local paths=("$@")
 
-# # 2. 如果之前执行过 feeds install，必须清理掉残留的软链接，防止指向空目录
-# rm -rf package/feeds/packages/golang
-# rm -rf package/feeds/packages/rust
+    echo "🚀 正在从 $repo_url 极速拉取至 $feed_dir ..."
+    
+    # 使用稀疏检出极速下载（不会拉取无关代码）
+    git clone --filter=blob:none --sparse --depth=1 "$repo_url" temp_repo > /dev/null 2>&1
+    cd temp_repo
+    git sparse-checkout set "${paths[@]}" > /dev/null 2>&1
+    
+    # 提取上游最新的 Commit 时间戳 (作为兜底时间)
+    local fallback_time=$(git log -1 --format=%cd --date=unix 2>/dev/null)
+    cd ..
 
-# echo "注入最新版 Golang 和 Rust..."
-# # 3. 将新代码直接放入 feeds 目录，伪装成原生 feed 包
-# cp -a temp_resp/openwrt_packages/lang/golang feeds/packages/lang/
-# cp -a temp_resp/openwrt_packages/lang/rust feeds/packages/lang/
+    for p in "${paths[@]}"; do
+        if [ -d "temp_repo/$p" ]; then
+            local pkg_name=$(basename "$p")
+            local dest_path="$feed_dir/$pkg_name"
+            
+            # 1. 动态清理 OpenWrt 软链接 (防止文件类型冲突)
+            local feed_name=$(echo "$feed_dir" | cut -d'/' -f2)
+            local symlink_path="package/feeds/$feed_name/$pkg_name"
+            if [ -h "$symlink_path" ] || [ -d "$symlink_path" ]; then
+                rm -rf "$symlink_path"
+            fi
 
-# # =========================================================
-# # 恢复上游时间戳 (避免不必要的重新编译)
-# # =========================================================
-# GOLANG_TIME=$(cd temp_resp/openwrt_packages && git log -1 --format=%cd --date=unix -- lang/golang)
-# RUST_TIME=$(cd temp_resp/openwrt_packages && git log -1 --format=%cd --date=unix -- lang/rust)
+            # 2. 清理并覆盖目标目录
+            rm -rf "$dest_path"
+            cp -r "temp_repo/$p" "$dest_path"
 
-# if [ -n "$GOLANG_TIME" ]; then
-#     find feeds/packages/lang/golang -exec touch -m -d @"$GOLANG_TIME" {} +
-# else
-#     echo "⚠️ 警告: 无法提取 Golang 的上游时间戳，将使用拷贝时的时间"
-# fi
+            # 3. 尝试提取文件真实时间戳，如果失败则使用整个库的 commit 时间
+            local file_time=$(cd temp_repo && git log -1 --format=%cd --date=unix -- "$p" 2>/dev/null)
+            if [ -z "$file_time" ]; then
+                file_time=$fallback_time
+            fi
+            
+            # 修改时间戳，欺骗 OpenWrt 编译缓存
+            find "$dest_path" -exec touch -m -d @"$file_time" {} +
+            
+            echo "✅ 已成功注入并伪装时间戳: $pkg_name"
+        fi
+    done
 
-# if [ -n "$RUST_TIME" ]; then
-#     find feeds/packages/lang/rust -exec touch -m -d @"$RUST_TIME" {} +
-# else
-#     echo "⚠️ 警告: 无法提取 Rust 的上游时间戳，将使用拷贝时的时间"
-# fi
-# rm -rf temp_resp
+    rm -rf temp_repo
+}
 
-#-------------------------------------------------------end 移植包--------------------------------------------------------
+# =================================================================
+# 执行注入任务 (注意这里的目标目录直接是 feeds 对应的实际目录)
+# =================================================================
+
+# 1. 注入基础依赖包
+inject_feed "https://github.com/openwrt/packages.git" "feeds/packages/lang" \
+    "lang/golang" \
+    "lang/rust"
+
+echo "🎉 移植完毕"
+#--------------------------------------------------------------end 移植包--------------------------------------------------------
 
 
 #-----------------------------------------------修改脚本------------------------------------------------------------
