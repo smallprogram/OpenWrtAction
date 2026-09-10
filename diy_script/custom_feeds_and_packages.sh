@@ -48,7 +48,7 @@ clone_custom_packages () {
     git clone https://github.com/timsaya/openwrt-bandix-plus.git ${path}openwrt-bandix-plus
     git clone https://github.com/timsaya/luci-app-bandix-plus.git ${path}luci-app-bandix-plus
     
-    git clone https://github.com/destan19/OpenAppFilter.git ${path}OpenAppFilter
+    # git clone https://github.com/destan19/OpenAppFilter.git ${path}OpenAppFilter
 
     
 
