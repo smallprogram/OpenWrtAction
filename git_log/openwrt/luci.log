@@ -1,18 +1,13 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/e60322bbe30d0fe4ceb43947252b028b109fede2...4fd72fddcaa8c113907992f6d66448aaf4ed4080)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/4fd72fddcaa8c113907992f6d66448aaf4ed4080...7f05feb8df075343b32672d69802e12fd6760d09)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-4fd72fddca|Hannu Nyman|Thu Sep 3 22:39:15 2026 +0300|treewide: backport translations and sync
-198fb29174|Ivan Kvashonkin|Thu Sep 3 22:33:11 2026 +0300|luci-theme-footstrap: drop the exports nothing in the tree calls
-4bda8af8f7|Ivan Kvashonkin|Thu Sep 3 22:33:01 2026 +0300|luci-theme-footstrap: put the settings tab back after a map redraw
-7b77b1a909|Ivan Kvashonkin|Thu Sep 3 22:32:50 2026 +0300|luci-theme-footstrap: fix the login page heading and the graph labels
-4c9e25d984|Ivan Kvashonkin|Thu Sep 3 22:32:40 2026 +0300|luci-theme-footstrap: fix spacing and hiding on luci-base classes
-17b3c7daab|Ivan Kvashonkin|Thu Sep 3 22:32:21 2026 +0300|luci-theme-footstrap: keep the reader's place across a poll
-3ca5e6cefe|Ivan Kvashonkin|Thu Sep 3 22:32:10 2026 +0300|luci-theme-footstrap: pack the port status cards into their row
-df02d275f0|Ivan Kvashonkin|Thu Sep 3 22:31:59 2026 +0300|luci-theme-footstrap: add the OpenWrt 2020 colourway as a palette
-cb149be606|Ivan Kvashonkin|Thu Sep 3 22:31:20 2026 +0300|luci-theme-footstrap: simplify uci-defaults
-316b105d10|Ivan Kvashonkin|Thu Sep 3 22:30:54 2026 +0300|luci-theme-footstrap: add new theme
+7f05feb8df|Dirk Brenken|Thu Sep 10 20:03:51 2026 +0200|luci-app-banip: sync with base package 1.8.13-2
+faa0ee75c7|Dirk Brenken|Wed Sep 9 22:57:53 2026 +0200|luci-app-travelmate: sync with base package 2.4.9-2
+6502bc6d86|Dirk Brenken|Wed Sep 9 21:39:19 2026 +0200|luci-app-adblock: sync with base package 4.5.8-1
+0f38c02b5e|Dirk Brenken|Tue Sep 8 18:02:04 2026 +0200|luci-app-banip: sync with base package 1.8.13-1
+a17a6bb553|Dirk Brenken|Mon Sep 7 19:14:31 2026 +0200|luci-app-travelmate: sync with base package 2.4.9-1
 </details>

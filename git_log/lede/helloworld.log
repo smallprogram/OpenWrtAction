@@ -1,10 +1,14 @@
 <details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/9747ffd550052fc7c9237853e4666122bdba9e5b...62daa84e1d8502ba324c2bfb7cdf1dc75fecf0eb)  
+#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/62daa84e1d8502ba324c2bfb7cdf1dc75fecf0eb...37e1ad75a03ab2a30782b9612f2ec860ab92b954)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-62daa84|coolsnowwolf|Mon Sep 7 01:23:59 2026 +0800|CI: build release packages for ARM64 targets
-eb5ca84|coolsnowwolf|Sun Sep 6 01:30:57 2026 +0800|luci-app-ssr-plus: bump version to v196.8
+37e1ad7|zxl hhyccc|Thu Sep 10 23:31:49 2026 +0800|shadowsocks-rust: update to 1.25.0
+8663a89|zxl hhyccc|Thu Sep 10 23:30:20 2026 +0800|xray-core: update to 26.9.9
+4efbf62|coolsnowwolf|Wed Sep 9 21:38:36 2026 +0800|luci-app-ssr-plus: fix SOCKS5 server startup
+44553bc|coolsnowwolf|Mon Sep 7 11:17:18 2026 +0800|luci-app-ssr-plus: fix main program update check
+53b1e46|coolsnowwolf|Mon Sep 7 09:43:40 2026 +0800|luci-app-ssr-plus: bump version to v196.9
+b4d5a71|coolsnowwolf|Mon Sep 7 03:05:06 2026 +0800|luci-app-ssr-plus: update core package sources
 </details>

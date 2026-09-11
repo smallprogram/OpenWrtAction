@@ -1,25 +1,19 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/9f2b84adca16c07a32c13cf27c1614331890cef3...d28e18f0779dddf9aea9826879a5828c0a2f8c6b)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/d28e18f0779dddf9aea9826879a5828c0a2f8c6b...8b0019c73a3840ba7112ddb8163efffbb3972dd1)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
+8b0019c73a|coolsnowwolf|Fri Sep 11 21:45:22 2026 +0800|luci-app-samba: integrate automatic sharing
+ecd78a0eae|coolsnowwolf|Thu Sep 10 21:24:58 2026 +0800|luci-app-music-remote-center: avoid init script conflict
+98d8a72ea2|lean|Mon Sep 7 12:25:59 2026 +0800|luci-compat: support ucode WireGuard protocol helper
+0938265f38|trli|Sat Sep 5 10:06:28 2026 +0800|luci-app-sysctl: add new packages
+7c16855be2|tonySun|Mon Sep 7 10:11:03 2026 +0800|luci-app-timecontrol: some issues fixes
+85728422a1|coolsnowwolf|Tue Jul 21 07:01:30 2026 +0800|luci-mod-system: allow resolved proc mounts access
 d28e18f077|lean|Mon Sep 7 01:04:13 2026 +0800|luci-mod-system: allow resolved proc mounts access
 c04abe19ae|tonySun|Sun Sep 6 23:11:03 2026 +0800|luci-app-timecontrol: fix IPv6 bypass, midnight weekday shift, flow offloading and auto-reload (#415)
 a3a3682842|trli|Sun Sep 6 12:06:48 2026 +0800|add luci-app-sysctl (#412)
 620c0c5cf2|github-actions[bot]|Sun Sep 6 03:12:25 2026 +0000|ci: sync upstream luci applications
 3837295423|coolsnowwolf|Sun Sep 6 11:10:10 2026 +0800|ci: sync upstream luci applications
-3ba0ad29cb|coolsnowwolf|Sun Sep 6 10:39:10 2026 +0800|luci-app-qbittorrent: restore profile directory option
-2caa42635f|coolsnowwolf|Sun Sep 6 10:22:22 2026 +0800|luci-mod-network: fix mt_dbdc interface discovery
-6b860357f6|coolsnowwolf|Sun Sep 6 05:44:11 2026 +0800|luci-theme-bootstrap: handle missing board info
-0b2580f3ed|coolsnowwolf|Sun Sep 6 01:27:57 2026 +0800|luci-mod-network: limit QCA probes to configured radios
-85d7bedbd1|coolsnowwolf|Sat Sep 5 22:59:34 2026 +0800|luci-app-filetransfer: fix upload file iteration
-0c8d9ec798|coolsnowwolf|Sat Sep 5 20:50:53 2026 +0800|luci-app-passwall: bump to 26.9.1
-62dfeee8b0|coolsnowwolf|Sat Sep 5 19:15:46 2026 +0800|luci-app-diskman: handle missing sector sizes
-b59e8a8dfb|coolsnowwolf|Sat Sep 5 17:43:14 2026 +0800|luci-app-qbittorrent: show menu without UCI config
-8ff7e3184e|coolsnowwolf|Sat Sep 5 16:51:40 2026 +0800|luci-app-ipsec-vpnd: restart on WAN reconnect
-759c638fe2|coolsnowwolf|Sat Sep 5 16:05:35 2026 +0800|luci: fix filetransfer dependencies
-
-
 </details>

@@ -1,19 +1,25 @@
 <details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/12b33906ae89f62db5ee3a4d52c1b3294071b2c7...9f4e12b779a19ea4468172f843e0b7ba1e3058b7)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/9f4e12b779a19ea4468172f843e0b7ba1e3058b7...88338feea64049cb3e0c0ebe1739f8f95cbf15ad)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-9f4e12b|handsomeji|Sun Sep 6 15:05:35 2026 +0800|luci: fixup bb8dc2ac0b938bc68f1f3257c2ea4c0d331ea52b
-e3eb9fa|handsomeji|Sun Sep 6 02:38:47 2026 +0800|luci: optimize
-bb8dc2a|w1977-0|Sat Sep 5 22:56:31 2026 +0800|luci: fix lease2hosts reload after pid file rename in 0e0644b (#1263)
-37ca0cd|handsomeji|Sat Sep 5 21:22:46 2026 +0800|luci: optimize
-c0ea8dc|handsomeji|Fri Sep 4 20:06:44 2026 +0800|luci: fix
-4ddcc0f|SwordKing|Thu Sep 3 01:07:50 2026 +0800|luci: fix Xray blackhole when remote_dns_detour=direct
-5e5fc26|handsomeji|Wed Sep 2 19:47:35 2026 +0800|luci: 26.9.2
-b4d5f97|handsomeji|Wed Sep 2 19:25:20 2026 +0800|luci: client: add snell with Sing-Box v1.14.0
-97d770d|handsomeji|Wed Sep 2 18:33:47 2026 +0800|luci: server: add snell with Sing-Box v1.14.0
-21976cc|A-BO|Wed Sep 2 11:20:17 2026 +0800|luci: fix geo view
-91c0fd7|handsomeji|Wed Sep 2 18:35:09 2026 +0800|luci: optimize
+88338fe|handsomeji|Sat Sep 12 00:38:53 2026 +0800|luci: done #1278
+6b29647|A-BO|Fri Sep 11 22:05:38 2026 +0800|luci: fix theme compatibility for node select template
+4e1cd83|A-BO|Fri Sep 11 13:36:32 2026 +0800|luci: optimize
+4592607|ThornsW|Fri Sep 11 10:48:20 2026 +0800|luci: fix: add mwan3 exemption rule via iptables-nft instead of native nft
+bbacb39|handsomeji|Fri Sep 11 17:40:46 2026 +0800|luci: improvement and fix
+4841534|A-BO|Fri Sep 11 02:19:35 2026 +0800|luci: fix share link import
+8e9df74|handsomeji|Thu Sep 10 14:21:38 2026 +0800|luci: improvement and optimization
+bb6ea59|handsomeji|Wed Sep 9 13:43:36 2026 +0800|luci: 26.9.9-2
+006fdaa|Jackie264|Wed Sep 9 12:47:49 2026 +0800|luci: Xray Refactor proxy settings to use dialer_proxy_tag (#1273)
+594be74|handsomeji|Wed Sep 9 00:07:12 2026 +0800|luci: 26.9.9
+62db063|A-BO|Tue Sep 8 23:31:45 2026 +0800|luci: migrate xray `freedom.domainStrategy` to `sockopt.domainStrategy`
+38b4cc7|lwb1978|Tue Sep 8 14:02:31 2026 +0800|luci: migrate xray dns outbound `proxySettings` to `dialerProxy`
+4367a31|Dev024|Sun Sep 6 15:10:48 2026 +0800|luci: fix: match self-traffic fwmark with mask to coexist with mwan3
+2cd2e7a|A-BO|Sun Sep 6 14:08:19 2026 +0800|luci: Fix subscription requests missing Accept header
+ee79c33|handsomeji|Tue Sep 8 19:37:16 2026 +0800|luci: fix #1266
+
+
 </details>

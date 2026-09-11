@@ -1,22 +1,25 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/6d7dc6d5c0ef7655e53e9077076d931f13bf7ca0...15afcee6b78f3b63e7df1881887537a2230bc0be)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/15afcee6b78f3b63e7df1881887537a2230bc0be...d0a1f0bc1e287629176eaffccc50536137adb3a9)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-15afcee6b|Alexandru Ardelean|Sun Aug 9 12:32:47 2026 +0300|python-typing-extensions: bump to 4.16.0
-1c8a25b81|Alexandru Ardelean|Mon Aug 10 15:13:35 2026 +0300|python-typing-extensions: allow flit_core 4.x as the build backend
-3059e4412|Alexandru Ardelean|Wed Apr 1 12:37:28 2026 +0300|python-typing-extensions: bump to 4.15.0
-53a674bf5|Dharmik Parmar|Wed Aug 19 06:32:20 2026 +0530|strongswan: fix build with wolfSSL 5.9.2
-f60a090af|George Sapkin|Wed Sep 2 16:24:24 2026 +0300|golang: bump 1.26 to 1.26.8
-10e3259ba|Ray Wang|Sun Aug 30 21:46:56 2026 +0800|hev-socks5-server: update to 2.13.1
-887504d61|Tianling Shen|Tue Sep 1 09:47:11 2026 +0800|rclone: update to 1.75.0
-f3290d146|Tianling Shen|Tue Sep 1 09:46:40 2026 +0800|openlist: update to 4.2.5
-dd034274f|Tianling Shen|Tue Sep 1 09:45:10 2026 +0800|yq: update to 4.53.6
-19dcbdf84|Tianling Shen|Tue Sep 1 09:38:53 2026 +0800|v2ray-core: update to 5.53.0
-2c0d375b7|Tianling Shen|Mon Jul 27 12:00:52 2026 +0800|geoipupdate: update to 8.0.0
-1bf312360|Tianling Shen|Mon Jul 27 11:26:55 2026 +0800|cloudflared: update to 2026.7.3
-d2a84b036|Tianling Shen|Mon Jul 27 11:28:43 2026 +0800|v2ray-geodata: update to latest version
-db06f4c65|Tianling Shen|Mon Jul 27 11:28:01 2026 +0800|v2ray-core: update to 5.51.2
+d0a1f0bc1|Dirk Brenken|Thu Sep 10 20:32:44 2026 +0200|adblock: update 4.5.8-2
+3e7a7c523|Dirk Brenken|Thu Sep 10 20:02:03 2026 +0200|banip: update 1.8.13-2
+196fd5096|Eric Fahlgren|Sun Aug 30 19:00:54 2026 -0700|owut: update to 2026.08.30
+09037d5d6|Peter Polonec|Thu Aug 27 13:23:57 2026 +0200|vim: update to 9.2.1014
+a6ed5f135|Ivan Pavlov|Fri Jul 3 21:38:58 2026 +0300|curl: update to 8.21.0 changelog: https://curl.se/ch/8.21.0.html
+7712ef3b6|Rui Salvaterra|Tue Jun 30 15:07:52 2026 +0100|tor: update to 0.4.9.11 stable
+098d69a3d|Josef Schlehofer|Tue Aug 18 10:38:10 2026 +0200|syslog-ng: install the configuration with INSTALL_CONF
+6958f54ce|Josef Schlehofer|Tue Aug 18 09:28:03 2026 +0200|syslog-ng: do not install syslog-ng-update-virtualenv
+63fb07b24|Josef Schlehofer|Fri Aug 21 11:39:59 2026 +0200|tvheadend: drop the handwritten version override
+f23ec5e1e|Josef Schlehofer|Fri Aug 21 08:54:05 2026 +0200|tvheadend: require GNU libiconv and drop the iconv self-test patch
+2f19926d7|Josef Schlehofer|Fri Aug 21 08:53:50 2026 +0200|tvheadend: update to 2026-08-17
+85b0c8e33|Dirk Brenken|Wed Sep 9 22:54:49 2026 +0200|travelmate: update 2.4.9-2
+4a88b508f|Dirk Brenken|Wed Sep 9 21:37:11 2026 +0200|adblock: release 4.5.8-1
+2ac0d9f83|George Sapkin|Tue Aug 18 19:09:55 2026 +0300|adguardhome: bump to 0.107.79
+1a6911dc0|Dirk Brenken|Tue Sep 8 17:58:17 2026 +0200|banip: release 1.8.13
+
+
 </details>
