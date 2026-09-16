@@ -1,25 +1,25 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/cc3c6153399ab6e1fe36d62e29cf8bdcdd3b45c6...fd22472beec37d9ff1839c01a2e0eeae991cfe63)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/fd22472beec37d9ff1839c01a2e0eeae991cfe63...9ea7d79c1e3c415548bbb45f6b184e8f5574923a)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-fd22472b|A-BO|Sat Sep 12 00:17:30 2026 +0800|luci: improve IP address matching
-8b41876a|A-BO|Fri Sep 11 22:05:38 2026 +0800|luci: fix theme compatibility for node select template
-6a5074e5|A-BO|Fri Sep 11 13:36:32 2026 +0800|luci: optimize
-f512e2eb|ThornsW|Fri Sep 11 10:48:20 2026 +0800|luci: fix: add mwan3 exemption rule via iptables-nft instead of native nft (#4466)
-cbf18a69|A-BO|Fri Sep 11 02:14:35 2026 +0800|luci: fix share link import
-7bea8378|A-BO|Thu Sep 10 21:43:40 2026 +0800|luci: adjust backend logic when ACL logging is enabled
-c63adab5|A-BO|Thu Sep 10 20:03:35 2026 +0800|luci: improvement and optimization
-24f2e277|A-BO|Thu Sep 10 04:31:23 2026 +0800|luci: adjust and optimize acl
-1fa80eab|A-BO|Wed Sep 9 14:51:34 2026 +0800|luci: Xray Refactor proxy settings to use dialer_proxy_tag
-b428429b|A-BO|Wed Sep 9 14:43:46 2026 +0800|luci: optimize
-92714cdb|A-BO|Wed Sep 9 00:05:44 2026 +0800|luci: 26.9.9
-dbd89ac9|A-BO|Tue Sep 8 23:31:45 2026 +0800|luci: migrate xray `freedom.domainStrategy` to `sockopt.domainStrategy`
-0db5c7b2|lwb1978|Tue Sep 8 14:02:31 2026 +0800|luci: migrate xray dns outbound `proxySettings` to `dialerProxy`
-4237339b|lwb1978|Tue Sep 8 12:02:54 2026 +0800|luci: Cache LuCI version
-436d9d44|lwb1978|Tue Sep 8 11:13:11 2026 +0800|luci: adjust hosts dns rule for sing-box 1.14
+9ea7d79c|lwb1978|Wed Sep 16 14:42:19 2026 +0800|luci: bump 26.9.16
+312c3cf7|lwb1978|Wed Sep 16 14:33:59 2026 +0800|luci: simplify sing-box WebSocket transport settings
+7321bb79|lwb1978|Tue Sep 15 23:41:00 2026 +0800|luci: optimize dns redirect logic
+f8e8b256|lwb1978|Tue Sep 15 21:33:06 2026 +0800|luci: optimize component executable path settings
+88e6c9c1|lwb1978|Tue Sep 15 14:14:03 2026 +0800|luci: optimize
+2dcb54e2|lwb1978|Tue Sep 15 00:51:47 2026 +0800|luci: fixup
+673a1718|lwb1978|Tue Sep 15 00:33:20 2026 +0800|luci: adjust and optimize
+6455adc8|lwb1978|Mon Sep 14 22:39:55 2026 +0800|luci: demo port for special node export config
+0bfbdc72|lwb1978|Mon Sep 14 14:56:15 2026 +0800|luci: optimize NTP time adjustment handling
+1178f18f|lwb1978|Mon Sep 14 14:52:09 2026 +0800|luci: set minimum Xray version to 26.7.11
+949269b9|lwb1978|Mon Sep 14 13:54:58 2026 +0800|luci: adjust and optimize log
+3f4c9ce7|lwb1978|Mon Sep 14 01:11:02 2026 +0800|luci: improvement and optimization
+fbae2d5e|lwb1978|Mon Sep 14 00:10:02 2026 +0800|luci: optimize nftables dns redirect logic
+cdbcb721|yiyuanlu|Sun Sep 13 10:39:33 2026 +0800|luci: restrict iptables DIVERT hooks to transparent sockets (#4470)
+851669ab|A-BO|Sat Sep 12 17:07:06 2026 +0800|luci: update sing-box hysteria configuration fields
 
 
 </details>

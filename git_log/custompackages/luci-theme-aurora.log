@@ -1,0 +1,20 @@
+<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/c8e8be3a86b324e1daa44e3406b2b8561437c512...72e50cfeb0ecf04f61d1c1fe36c3dc95098d0b88)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+72e50cf|Eamon|Thu Sep 17 00:16:59 2026 +0800|feat: search a page's tabs from the command palette
+c84409c|Eamon Xiong|Wed Sep 16 19:14:57 2026 +0800|feat: paint the cached menu before first paint
+d13dd9f|Eamon Xiong|Wed Sep 16 18:33:59 2026 +0800|fix: move the content with the sidebar when it opens or closes
+b706763|Eamon Xiong|Wed Sep 16 18:07:26 2026 +0800|feat: ease page content in instead of crossfading the page
+ac4a4b5|Eamon Xiong|Wed Sep 16 18:06:58 2026 +0800|fix: keep the header and page width still while pages load
+a3b86fb|Eamon Xiong|Wed Sep 16 17:52:38 2026 +0800|perf: drop the mega-menu curtain blur
+8ecc6a9|Eamon Xiong|Wed Sep 16 17:02:14 2026 +0800|chore: add an aurora-motion skill
+8c2a603|Eamon|Sun Sep 13 22:11:45 2026 +0800|build: move to pnpm 12 and run the pinned pnpm in CI
+a9959f5|Eamon|Sun Sep 13 21:27:21 2026 +0800|chore: keep a DOM compat ledger with geometry fixtures
+dd7c64b|Eamon|Sun Sep 13 20:17:07 2026 +0800|fix: let tables set their own cell font size
+a2d110a|Eamon|Sun Sep 13 18:57:54 2026 +0800|fix: stop squeezing table labels next to long values
+07bfe6f|Eamon|Sun Sep 13 00:23:36 2026 +0800|ci: build with build-luci-package v2
+</details>

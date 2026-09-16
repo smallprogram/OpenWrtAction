@@ -1,0 +1,10 @@
+<details> <summary> <b>luci-app-bandix-plus new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/timsaya/luci-app-bandix-plus/compare/23f7b2067421273482ca27736fd35ee89d3fd982...b491618e897e8c03b9a7096dffb8c962b0b65e78)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+b491618|timsaya|Mon Sep 14 15:18:27 2026 +0800|Merge pull request #46 from johnwas/main
+5da2df4|john|Sat Sep 12 00:31:18 2026 +0800|Fix: avoid overriding the global Interfaces translation
+</details>

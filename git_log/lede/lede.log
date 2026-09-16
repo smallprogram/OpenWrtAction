@@ -1,25 +1,22 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/1b3faf5ca473dff8ecd9fd4ccde945577c7eef1c...f820e495d1617429376b72e5730dad313d0528c9)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/f820e495d1617429376b72e5730dad313d0528c9...b952adf4c88652c582f27e523c975c8470920f84)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-f820e495d|coolsnowwolf|Fri Sep 11 21:45:36 2026 +0800|samba: remove standalone autosamba package
-e32b3ab9a|coolsnowwolf|Fri Sep 11 14:12:08 2026 +0800|amlogic: add mesongx OneThing Cloud OES / OES Plus support
-8ba954349|coolsnowwolf|Fri Sep 11 10:25:45 2026 +0800|qualcommax: enable switchdev on Linux 6.18
-eac875c78|coolsnowwolf|Thu Sep 10 20:40:35 2026 +0800|qca-nss-dp: fix hardware STP state synchronization
-a3ee4faff|coolsnowwolf|Thu Sep 10 19:50:00 2026 +0800|shortcut-fe: fix IPv6 feature define
-00b1106cd|coolsnowwolf|Thu Sep 10 14:20:47 2026 +0800|rockchip: fix H68K Ethernet PHY reset
-a4d730942|coolsnowwolf|Thu Sep 10 11:52:10 2026 +0800|shortcut-fe: fix Linux 6.18 API compatibility
-b936a1293|coolsnowwolf|Thu Sep 10 03:12:40 2026 +0800|rockchip: add WXY OEC / OECT support
-c6b59cab3|coolsnowwolf|Tue Sep 8 23:54:11 2026 +0800|kernel: fix dummy netdev initialization on 6.18
-d1ab56eb7|coolsnowwolf|Tue Sep 8 11:09:17 2026 +0800|armsr: switch to Linux 6.18
-6e4b0d326|coolsnowwolf|Tue Sep 8 11:02:13 2026 +0800|kernel: fix UDP tunnel module selection on Linux 6.6
-eb1a9cfc4|coolsnowwolf|Tue Sep 8 10:38:46 2026 +0800|kernel: package split Realtek HDA codecs on Linux 6.18
-376d11dc9|coolsnowwolf|Tue Sep 8 10:22:21 2026 +0800|wireguard-tools: revert to 1.0.20250521
-3b2ce46ad|coolsnowwolf|Tue Sep 8 10:11:17 2026 +0800|kernel: restore crypto acceleration modules on x86 6.6
-d523e3ffe|coolsnowwolf|Tue Sep 8 00:03:34 2026 +0800|kernel: restrict accelerated crypto modules to Linux 6.12
-
-
+b952adf4c|coolsnowwolf|Wed Sep 16 11:17:37 2026 +0800|kernel: fix hci-uart serdev dependency
+611233e63|coolsnowwolf|Tue Sep 15 03:34:42 2026 +0800|kernel: update supported LTS kernels to latest releases
+8ea978aad|coolsnowwolf|Tue Sep 15 03:02:38 2026 +0800|qualcommax: fix Linux 6.18 patch and device tree compatibility
+cfc4a0d25|coolsnowwolf|Sun Sep 13 10:46:17 2026 +0800|ipq806x: fix Linksys E8350 switch configuration
+ce32b4141|coolsnowwolf|Sun Sep 13 01:33:33 2026 +0800|phytium: package D3000M DC GPU VPU and NPU drivers out of tree
+226ca700c|coolsnowwolf|Sun Sep 13 00:41:39 2026 +0800|phytium: add Linux 6.18 support and make it default
+b14ce3447|coolsnowwolf|Sat Sep 12 22:05:52 2026 +0800|mt7615d: limit Linux 6.18 compatibility patch
+28faac432|coolsnowwolf|Sat Sep 12 21:36:06 2026 +0800|uboot-rockchip: add HINLINK H66K and H68K support
+b13b5d800|coolsnowwolf|Sat Sep 12 21:35:42 2026 +0800|uboot-rockchip: add dedicated U-Boot for EasePi R1
+35436874a|coolsnowwolf|Sat Sep 12 17:24:13 2026 +0800|kernel: bump 6.12 to 6.12.109 and 6.18 to 6.18.51
+895d1c266|wybb|Sat Sep 12 16:22:15 2026 +0800|x86: enable Hyper-V VMBus on Linux 6.18 (#14173)
+9f26e6205|coolsnowwolf|Sat Sep 12 11:07:49 2026 +0800|build: avoid reciprocal conflict dependency cycles
+cdd1d5dab|coolsnowwolf|Sat Sep 12 10:07:02 2026 +0800|rockchip: add LinkEase EasePi R1 support
+ddab77bd4|coolsnowwolf|Sat Sep 12 09:04:49 2026 +0800|rockchip: keep PTP and GMAC built in on kernel 6.18
 </details>

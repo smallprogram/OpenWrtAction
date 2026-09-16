@@ -1,25 +1,21 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/ba3243bba0399e82b20226f3fddcc8f80a70d667...7722054025462cbc4cc6225cfe49ea0ad409b302)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/7722054025462cbc4cc6225cfe49ea0ad409b302...9facdff6fb001b7a4e8cea395b89278fd49ca92f)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-7722054025|Shiji Yang|Wed Sep 2 23:33:49 2026 +0800|kernel: bump 6.12 to 6.12.108
-77bc87827e|Shiji Yang|Thu Aug 27 21:39:12 2026 +0800|kernel: bump 6.12 to 6.12.107
-79c9abd555|Shiji Yang|Mon Aug 24 09:56:30 2026 +0800|kernel: bump 6.12 to 6.12.105
-3aa25ca731|Shiji Yang|Thu Aug 20 20:16:52 2026 +0800|kernel: bump 6.12 to 6.12.104
-13968d9b59|Rosen Penev|Sat Feb 7 15:58:32 2026 -0800|ramips: mtk_eth_soc: handle EPROBE_DEFER for MAC
-c588728777|Hauke Mehrtens|Thu Aug 27 02:26:51 2026 +0200|octeon: handle EPROBE_DEFER when reading MAC addresses
-baa9c9a137|Hauke Mehrtens|Thu Aug 27 02:26:51 2026 +0200|kernel: mvneta: handle EPROBE_DEFER when reading the MAC address
-813d0faa04|Hauke Mehrtens|Thu Aug 27 02:26:51 2026 +0200|kernel: dsa: handle EPROBE_DEFER when reading port MAC addresses
-93ddab6e2b|Hauke Mehrtens|Sat Aug 22 20:12:31 2026 +0200|bmips: enet: handle EPROBE_DEFER for the MAC address
-c2864bc780|Ahmed Naseef|Mon Apr 6 14:19:15 2026 +0400|mediatek: add support for Airtel AirFiber AAP4221ZY
-6c40bc0bb0|Vladimir Zadirei|Sat Aug 29 15:19:41 2026 +0400|adb: fix RSA authentication with mbedTLS
-6f88b325be|Andrea Pesaresi|Sat Aug 29 12:25:43 2026 +0200|mediatek: correct MT7986 system timer rate
-d966bd2e2e|David Bauer|Thu Sep 10 00:39:03 2026 +0200|ucode: fix build with GCC 15.3
-7114f29fe2|David Bauer|Mon Nov 17 01:50:08 2025 +0100|net/l2tp: reset skb control buffer
-b68374ee50|David Bauer|Sun Jul 26 18:01:51 2026 +0200|base-files: fix missing tabs
-
-
+9facdff6fb|Robert Marko|Tue Sep 1 12:00:31 2026 +0200|airoha: fix AN7583 thermal sensor reference
+bd2ac8e406|Daniel Schwierzeck|Tue Jun 30 14:56:16 2026 +0200|airoha: an7583: correct LED node names
+4a2caf5c14|Daniel Schwierzeck|Tue Jun 30 14:56:16 2026 +0200|airoha: an7583: move the switch port label from soc-level to board-level
+fa5d5eefd5|Daniel Schwierzeck|Tue Jun 30 14:56:16 2026 +0200|airoha: an7583: disable all switch ports and PHYs by default
+455071bf77|Yalei Zang|Fri Jul 24 09:32:05 2026 +0800|airoha: an7583: add BL2 and BL31+U-Boot Artifacts for EVB board
+50a3bf7aa2|Yalei Zang|Wed Jul 22 21:09:07 2026 +0800|airoha: add label for ATF reserved memory
+c3859c5b8b|Yalei Zang|Wed Jul 22 21:05:36 2026 +0800|airoha: align OPP node names for AN7581/AN7583
+90331a523a|Yalei Zang|Wed Jul 22 21:29:19 2026 +0800|airoha: raise CPU critical temperature from 110°C to 120°C
+bdec8d0fe8|Yubo Zhang|Tue Jul 21 14:51:09 2026 +0800|airoha: an7583: adjust thermal polling delays
+517c80953f|Rany Hany|Sat Jul 4 23:58:34 2026 +0000|intel-microcode: fix build error on rebuild
+57d7325964|Luiz Angelo Daros de Luca|Wed Sep 9 15:16:11 2026 -0300|realtek: fix D-Link DGS-1210-28P/MP fan controller
+67b18c1ecc|Semih Baskan|Sun Aug 2 09:54:44 2026 +0300|bcm53xx: fix sysupgrade losing config on NAND devices
+84484e5198|Gary Dotzler|Wed Sep 9 21:14:45 2026 +0000|kernel: fix mt7915e boot crash
 </details>

@@ -1,25 +1,12 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/35f36d4fb40eaf247f45fc09d776bb6866f23dd3...1e1c1aa100755bc05d72e7bd50a8233cd62dd25a)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/1e1c1aa100755bc05d72e7bd50a8233cd62dd25a...0a3c1c1d100f1234c9269f7547e5482822a0845e)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-1e1c1aa1|coolsnowwolf|Thu Sep 10 21:38:36 2026 +0800|ovpn-backports: define out-of-tree module version
-fd49ace2|coolsnowwolf|Thu Sep 10 21:24:45 2026 +0800|owntone: support LuCI UCI configuration
-a2c1bbff|coolsnowwolf|Thu Sep 10 21:24:30 2026 +0800|sqlite3: fix exact library dependency on opkg
-bc0a5c06|coolsnowwolf|Tue Sep 8 21:06:29 2026 +0800|Revert "transmission: use mbedTLS by default"
-bfa8c788|coolsnowwolf|Tue Sep 8 14:43:52 2026 +0800|softethervpn5: fix host build and update to 5.2.5188
-808d968e|coolsnowwolf|Mon Sep 7 18:31:24 2026 +0800|ovpn-dco: fix build on Linux 6.18.40+
-ef485bae|coolsnowwolf|Mon Sep 7 18:03:33 2026 +0800|node: add Node.js 24.x and 26.x support
-42c4e4a0|coolsnowwolf|Mon Sep 7 12:24:30 2026 +0800|Merge pull request #1140 from Internet1235/uu
-a6e3babc|coolsnowwolf|Fri Mar 6 13:23:25 2026 +0800|cshark: add CloudShark capture tool
-8d6d1778|coolsnowwolf|Thu Mar 5 12:38:26 2026 +0800|ddns-scripts: add Tencent Cloud DNSPod API
-b4de3597|Internet1235|Sat Sep 5 19:13:48 2026 +0800|uugamebooster: update to 14.6.24
-35f36d4f|coolsnowwolf|Sun Sep 6 13:23:25 2026 +0800|cshark: add CloudShark capture tool
-453b522f|github-actions[bot]|Sun Sep 6 05:17:21 2026 +0000|ci: sync upstream packages
-c84523ef|coolsnowwolf|Sun Sep 6 13:16:51 2026 +0800|ci: sync daed from immortalwrt packages
-3cbc5170|coolsnowwolf|Sun Sep 6 12:38:26 2026 +0800|ddns-scripts: add Tencent Cloud DNSPod API v3
-
-
+0a3c1c1d|coolsnowwolf|Mon Sep 14 22:30:22 2026 +0800|libwebsockets: fix DISABLE_WERROR CMake option
+0c960a00|coolsnowwolf|Sun Sep 13 19:41:36 2026 +0800|Merge pull request #1143 from 0x5826/easytier-next
+1e37f802|coolsnowwolf|Sun Sep 13 18:59:54 2026 +0800|yaml: regenerate autotools files before building
+55389bda|dante|Sun Sep 13 12:11:43 2026 +0800|easytier-next: add pre-built binary package
 </details>
