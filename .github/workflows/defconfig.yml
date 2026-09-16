@@ -142,7 +142,7 @@ jobs:
           if ! git diff --cached --quiet; then
             git config user.name "smallprogram"
             git config user.email "smallprogram@foxmail.com"
-            git commit -m "Configuration: update code for ${{ matrix.source_code_platform }}"
+            git commit -m "[CI] Configuration: update code for ${{ matrix.source_code_platform }}"
 
             MAX_RETRIES=10
             RETRY_COUNT=0
@@ -154,7 +154,8 @@ jobs:
               git reset --hard origin/${{ github.ref_name }}
               
               # 合并当前的临时分支
-              git merge temp-${{ matrix.source_code_platform }} --strategy-option theirs --no-edit
+              # git merge temp-${{ matrix.source_code_platform }} --strategy-option theirs --no-edit
+              git merge temp-${{ matrix.source_code_platform }} --strategy-option theirs -m "[CI] Merge: temp-${{ matrix.source_code_platform }}"
               
               if git push origin ${{ github.ref_name }}; then
                 echo "Push successful!"
