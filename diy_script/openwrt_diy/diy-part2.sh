@@ -121,6 +121,10 @@ cp -r $PATCHES_SRC_DIR/library/* ./dl/
 # 1. 确保 files 目录存在 (在 OpenWrt 源码根目录下)
 mkdir -p files/etc/uci-defaults
 
+# inject world-50m.json to banip data
+mkdir -p ./feeds/luci/applications/luci-app-banip/htdocs/luci-static/resources/view/banip/
+cp -a $PATCHES_SRC_DIR/diy_script/custom_packages/banip/world-50m.json ./feeds/luci/applications/luci-app-banip/htdocs/luci-static/resources/view/banip/
+
 # 2. 生成首次启动脚本
 cat << 'EOF' > files/etc/uci-defaults/99-custom-ssh-config
 #!/bin/sh
