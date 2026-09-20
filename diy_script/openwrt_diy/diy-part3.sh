@@ -47,6 +47,8 @@ rm -rf dl/smartdns*
 make defconfig > /dev/null
 make package/custom_packages/openwrt-smartdns/download -j8
 make package/custom_packages/openwrt-smartdns/check FIXUP=1 V=s
+# check阶段会触发Prepare解压并留下stamp文件，必须再clean一次，避免后续正式编译时被误判为已准备好而跳过重新解压/打补丁
+make package/custom_packages/openwrt-smartdns/clean
 # -------------------------end-smartdns----------------------------------
 
 # -------------------------shadowsocksr-libev----------------------------------
