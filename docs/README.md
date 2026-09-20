@@ -167,6 +167,7 @@ CONFIG_PACKAGE_luci-theme-Arwi=y
 CONFIG_PACKAGE_luci-theme-alpha=y
 CONFIG_PACKAGE_luci-app-alpha-config=y
 CONFIG_PACKAGE_luci-theme-bootstrap=y
+CONFIG_PACKAGE_luci-theme-footstrap=y
 CONFIG_PACKAGE_luci-theme-material=y
 CONFIG_PACKAGE_luci-theme-openwrt=y
 CONFIG_PACKAGE_luci-theme-openwrt-2020=y
