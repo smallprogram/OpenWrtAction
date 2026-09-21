@@ -63,7 +63,7 @@ user_name=$USER
 # 默认OpenWrtAction的Config文件夹中的config文件名
 config_name=$1
 # wsl PATH路径
-wsl_path=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+wsl_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$HOME/.nvm/versions/node/v24.21.0/bin"
 # 默认输入超时时间，单位为秒
 timer=15
 # 编译环境默认值，1为WSL2，2为非WSL2的Linux环境。不要修改这里
