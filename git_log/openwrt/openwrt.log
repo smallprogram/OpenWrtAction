@@ -1,21 +1,10 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/7722054025462cbc4cc6225cfe49ea0ad409b302...9facdff6fb001b7a4e8cea395b89278fd49ca92f)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/9facdff6fb001b7a4e8cea395b89278fd49ca92f...03be7efbab0d865bd3d8a2fbca1d936c3ba75ab0)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-9facdff6fb|Robert Marko|Tue Sep 1 12:00:31 2026 +0200|airoha: fix AN7583 thermal sensor reference
-bd2ac8e406|Daniel Schwierzeck|Tue Jun 30 14:56:16 2026 +0200|airoha: an7583: correct LED node names
-4a2caf5c14|Daniel Schwierzeck|Tue Jun 30 14:56:16 2026 +0200|airoha: an7583: move the switch port label from soc-level to board-level
-fa5d5eefd5|Daniel Schwierzeck|Tue Jun 30 14:56:16 2026 +0200|airoha: an7583: disable all switch ports and PHYs by default
-455071bf77|Yalei Zang|Fri Jul 24 09:32:05 2026 +0800|airoha: an7583: add BL2 and BL31+U-Boot Artifacts for EVB board
-50a3bf7aa2|Yalei Zang|Wed Jul 22 21:09:07 2026 +0800|airoha: add label for ATF reserved memory
-c3859c5b8b|Yalei Zang|Wed Jul 22 21:05:36 2026 +0800|airoha: align OPP node names for AN7581/AN7583
-90331a523a|Yalei Zang|Wed Jul 22 21:29:19 2026 +0800|airoha: raise CPU critical temperature from 110°C to 120°C
-bdec8d0fe8|Yubo Zhang|Tue Jul 21 14:51:09 2026 +0800|airoha: an7583: adjust thermal polling delays
-517c80953f|Rany Hany|Sat Jul 4 23:58:34 2026 +0000|intel-microcode: fix build error on rebuild
-57d7325964|Luiz Angelo Daros de Luca|Wed Sep 9 15:16:11 2026 -0300|realtek: fix D-Link DGS-1210-28P/MP fan controller
-67b18c1ecc|Semih Baskan|Sun Aug 2 09:54:44 2026 +0300|bcm53xx: fix sysupgrade losing config on NAND devices
-84484e5198|Gary Dotzler|Wed Sep 9 21:14:45 2026 +0000|kernel: fix mt7915e boot crash
+03be7efbab|John Audia|Thu Feb 26 17:24:56 2026 -0500|wireguard-tools: bump to 20260223
+419be080a8|Robert Marko|Mon Sep 21 13:28:57 2026 +0200|qualcommax: ipq807x: ax89x: use lan1 for failsafe
 </details>

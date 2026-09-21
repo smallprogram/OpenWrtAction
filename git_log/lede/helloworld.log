@@ -1,18 +1,10 @@
 <details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/37e1ad75a03ab2a30782b9612f2ec860ab92b954...4b0d7bbebeca93909b73328dfaa39b9758126721)  
+#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/4b0d7bbebeca93909b73328dfaa39b9758126721...db7e943ed311548b44b28ed00784975d3f481093)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-4b0d7bb|zxl hhyccc|Tue Sep 15 21:07:52 2026 +0800|luci-app-ssr-plus: Add default direct DNS server configuration.
-f57afa5|zxlhhyccc|Sun Sep 13 19:59:32 2026 +0800|luci-app-ssr-plus: Fix subscribe type erro.
-65bd5a4|zxlhhyccc|Sun Sep 13 19:56:31 2026 +0800|gn: update to git HEAD (2026-09-02)
-6329b39|zxlhhyccc|Sun Sep 13 19:38:42 2026 +0800|luci-app-ssr-plus: Add SOCKS5 auth and unify DNS/Sniffer handling.
-d5645f1|zxlhhyccc|Sun Sep 13 12:55:46 2026 +0800|luci-app-ssr-plus: neaten mihomo SOCKS5 authentication.
-0405684|zxl hhyccc|Sun Sep 13 00:46:14 2026 +0800|Merge pull request #2045 from zxlhhyccc/fake-ip
-e1f753f|zxlhhyccc|Sun Sep 13 00:36:32 2026 +0800|luci-app-ssr-plus: Add mihomo SOCKS5 authentication support.
-6af1631|zxlhhyccc|Sun Sep 13 00:33:46 2026 +0800|luci-app-ssr-plus: Fix YAML line processing pattern
-b96067c|zxl hhyccc|Sat Sep 12 20:53:37 2026 +0800|Merge pull request #2044 from zxlhhyccc/fake-ip
-56f56ec|zxlhhyccc|Wed Sep 9 23:50:35 2026 +0800|luci-app-ssr-plus: Add fake-ip mode and Fix Upload yaml config cannot use external DNS resolution.
+db7e943|Tianling Shen|Sun Sep 20 16:20:58 2026 +0800|shadowsocksr-libev: fix get_overhead NULL pointer for {auth,verify}_simple
+97980f2|Tianling Shen|Sun Sep 20 15:55:41 2026 +0800|shadowsocksr-libev: make ssr-libev ~4.5x faster
 </details>

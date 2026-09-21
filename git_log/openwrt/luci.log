@@ -1,20 +1,10 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/7f05feb8df075343b32672d69802e12fd6760d09...82ed8f6d0f7d8d5f4148b4448b3bea75f3687134)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/82ed8f6d0f7d8d5f4148b4448b3bea75f3687134...0834d099439e4ba788b4c33c54616d8ee9df5c6e)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-82ed8f6d0f|Andy Chiang|Wed Sep 16 19:00:15 2026 +0300|luci-lua-runtime: update timezone data to 2026d
-58530d82a2|Andy Chiang|Wed Sep 16 19:00:09 2026 +0300|luci-base: update timezone data to 2026d
-4021333372|Hannu Nyman|Wed Sep 16 18:54:41 2026 +0300|treewide: backport translations from master
-5dbade4e36|Javen Li|Fri Sep 11 10:41:08 2026 +0800|luci-app-frpc: avoid saving the same form twice
-aaad6b898e|Javen Li|Mon Sep 7 10:40:20 2026 +0800|luci-app-frps: avoid saving the same form twice
-f883d904d6|Victoria Grain|Sat Jul 4 20:30:35 2026 +0200|luci-app-olsr: re-add missing interface creation
-cf6fbb71f7|Victoria Grain|Mon Jun 22 19:39:54 2026 +0200|luci-app-olsr: handle multi-line jsoninfo response
-ff1e070c96|Victoria Grain|Thu Jun 18 20:26:58 2026 +0200|luci-app-olsr: update common_js location
-8afa846a3b|Victoria Grain|Thu Jun 18 20:04:41 2026 +0200|luci-app-olsr: support large jsoninfo responses
-6dbd6d299a|Victoria Grain|Thu Jun 18 13:08:14 2026 +0200|luci-app-olsr: fix undefined functions
-6fc5bc3545|Paul Donald|Fri May 22 14:32:21 2026 +0300|luci-app-olsr: correctness fixes
-26299643a4|Dirk Brenken|Sat Sep 12 20:37:51 2026 +0200|luci-app-travelmate: fix missing vpn color on the wireless stations page
+0834d09943|Ivan Kvashonkin|Sat Sep 19 01:06:03 2026 +0300|luci-theme-footstrap: sync with release 0.14.13
+abf63e6db9|Dirk Brenken|Sat Sep 19 19:56:54 2026 +0200|luci-app-banip: sync with base package 1.9.0
 </details>
