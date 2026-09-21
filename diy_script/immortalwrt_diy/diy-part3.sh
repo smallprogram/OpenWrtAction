@@ -42,13 +42,9 @@ sed -i "s/^SMARTDNS_WEBUI_SOURCE_VERSION:=.*/SMARTDNS_WEBUI_SOURCE_VERSION:=$LAT
 sed -i 's/^PKG_MIRROR_HASH:=.*/PKG_MIRROR_HASH:=/g' Makefile
 sed -i 's/^[[:space:]]*MIRROR_HASH:=.*/\tMIRROR_HASH:=/g' Makefile
 cd $current_path
-make package/custom_packages/openwrt-smartdns/clean
-rm -rf dl/smartdns*
 make defconfig > /dev/null
 make package/custom_packages/openwrt-smartdns/download -j8
 make package/custom_packages/openwrt-smartdns/check FIXUP=1 V=s
-# check阶段会触发Prepare解压并留下stamp文件，必须再clean一次，避免后续正式编译时被误判为已准备好而跳过重新解压/打补丁
-make package/custom_packages/openwrt-smartdns/clean
 # -------------------------end-smartdns----------------------------------
 
 # -------------------------shadowsocksr-libev----------------------------------
