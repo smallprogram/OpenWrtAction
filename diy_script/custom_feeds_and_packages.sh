@@ -35,6 +35,8 @@ clone_custom_packages () {
     git clone https://github.com/animegasan/luci-app-alpha-config.git ${path}luci-app-alpha-config
     git clone https://github.com/AngelaCooljx/luci-theme-material3.git ${path}luci-theme-material3
 
+    git clone https://github.com/smallprogram/openwrt-access-policy-controller.git ${path}openwrt-access-policy-controller
+
     git clone https://github.com/sbwml/luci-app-mosdns -b v5 ${path}mosdns
 
     git clone https://github.com/sirpdboy/netspeedtest.git ${path}netspeedtest
