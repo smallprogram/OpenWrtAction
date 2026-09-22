@@ -8,6 +8,7 @@ export repos=(
   "src-git helloworld https://github.com/fw876/helloworld;master"
   "src-git OpenClash https://github.com/vernesong/OpenClash;master"
   "src-git ghfu https://github.com/smallprogram/openwrt-ghfu.git;main"
+  "src-git accesspolicycontroller https://github.com/smallprogram/openwrt-access-policy-controller.git;main"
 )
 
 # 自定义软件包列表
@@ -34,8 +35,6 @@ clone_custom_packages () {
     git clone https://github.com/derisamedia/luci-theme-alpha.git ${path}luci-theme-alpha
     git clone https://github.com/animegasan/luci-app-alpha-config.git ${path}luci-app-alpha-config
     git clone https://github.com/AngelaCooljx/luci-theme-material3.git ${path}luci-theme-material3
-
-    git clone https://github.com/smallprogram/openwrt-access-policy-controller.git ${path}openwrt-access-policy-controller
 
     git clone https://github.com/sbwml/luci-app-mosdns -b v5 ${path}mosdns
 
