@@ -120,6 +120,7 @@ CONFIG_PACKAGE_luci-app-rustdesk-server=y
 ```
 ### ⚙️ 系统管理与工具
 ```
+CONFIG_PACKAGE_luci-app-accesspolicycontroller=y
 CONFIG_PACKAGE_luci-app-ghfu=y
 CONFIG_PACKAGE_luci-app-commands=y
 CONFIG_PACKAGE_luci-app-ramfree=y

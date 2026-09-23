@@ -122,6 +122,7 @@ CONFIG_PACKAGE_luci-app-rustdesk-server=y
 ```
 ### ⚙️ System Management and Tools
 ```
+CONFIG_PACKAGE_luci-app-accesspolicycontroller=y
 CONFIG_PACKAGE_luci-app-ghfu=y
 CONFIG_PACKAGE_luci-app-commands=y
 CONFIG_PACKAGE_luci-app-ramfree=y
