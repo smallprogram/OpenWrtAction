@@ -1,0 +1,10 @@
+<details> <summary> <b>luci-app-bandix new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/timsaya/luci-app-bandix/compare/0bd9b61740c8798ca86317eb6e0784fb32dd51f5...729eeeca0a16be24848dd215c82ad6ea9ce0ab67)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+729eeec|timsaya|Thu Sep 24 17:43:23 2026 +0800|Merge pull request #260 from MitaHill/feat/ipv6-flows-readability-pr
+0623925|MitaHill|Wed Sep 23 21:43:57 2026 +0800|fix(connection)：呼应后端，支持IPV6连接监视
+</details>

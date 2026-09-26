@@ -1,0 +1,10 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/0a3c1c1d100f1234c9269f7547e5482822a0845e...6bc2a94782a71906f4343f07f7bf4bf1b8788fd3)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+6bc2a947|coolsnowwolf|Thu Sep 24 23:46:13 2026 +0800|libwebsockets: link event loops into full variant
+6bf55720|coolsnowwolf|Tue Sep 22 15:55:55 2026 +0800|ddns-go: restore UCI and procd integration
+</details>

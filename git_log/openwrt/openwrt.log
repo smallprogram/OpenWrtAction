@@ -1,10 +1,17 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/9facdff6fb001b7a4e8cea395b89278fd49ca92f...03be7efbab0d865bd3d8a2fbca1d936c3ba75ab0)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/03be7efbab0d865bd3d8a2fbca1d936c3ba75ab0...44b73b738d18e424d86a34be3fb1d93cf3d718d6)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-03be7efbab|John Audia|Thu Feb 26 17:24:56 2026 -0500|wireguard-tools: bump to 20260223
-419be080a8|Robert Marko|Mon Sep 21 13:28:57 2026 +0200|qualcommax: ipq807x: ax89x: use lan1 for failsafe
+44b73b738d|Vitaliy Sochnev|Fri Aug 7 21:01:18 2026 +0100|airoha: an7583: add USB nodes to SoC dtsi
+cf3a79a511|Julius Bairaktaris|Fri Sep 11 12:10:38 2026 +0200|airoha: add the missing PHY_AIROHA_AN7583_PCIE config symbol
+0fdde70113|Christian Marangi|Fri Sep 11 08:20:34 2026 +0200|airoha: add support for AN7583 PCIe Gen3 PHY
+56da8deffa|Vitaliy Sochnev|Fri Aug 7 21:00:49 2026 +0100|airoha: add support for AN7583 USB PHY
+d212cd4adc|Vitaliy Sochnev|Sun Aug 9 17:28:50 2026 +0100|airoha: an7583: add DT binding for AN7583 USB PHY
+e73b5f91a3|Sheikh Faisal|Thu Sep 10 17:05:21 2026 +0530|mediatek: filogic: fix SPI-NAND write failures on JioRouter AX6000
+363256ce99|Sheikh Faisal|Mon Aug 24 13:05:39 2026 +0530|mediatek: add support for JioRouter AX6000 JIDU6J01
+1017574c7a|Sheikh Faisal|Mon Aug 24 13:04:36 2026 +0530|mediatek: filogic: drop kmod-mt7916-firmware from JIDU6101
+608b0769c6|Sheikh Faisal|Mon Aug 24 12:58:20 2026 +0530|mediatek: fix U-Boot env geometry for JioRouter AX6000 JIDU6101
 </details>

@@ -1,0 +1,11 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/0fb07d4de6db4bae39cd5c6c399dec0f0dde3cc6...3e89467745252d80fb1ecc252f88d02966582a05)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+3e89467745|coolsnowwolf|Sat Sep 26 00:50:03 2026 +0800|luci-mod-status: add system and kernel log TXT export
+00dd4ba761|coolsnowwolf|Fri Sep 25 03:24:34 2026 +0800|luci-app-oui: show phone icon for private MAC addresses
+18ddab39c7|coolsnowwolf|Fri Sep 25 03:15:00 2026 +0800|luci-app-oui: add Haier vendor recognition and icon
+</details>

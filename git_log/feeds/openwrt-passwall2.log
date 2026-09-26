@@ -1,18 +1,9 @@
 <details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/9ee2b2b7d31b4a9193e6615b83e1ca93a395676e...eb635e913f665b73dd468a812498f8a442b6a518)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/eb635e913f665b73dd468a812498f8a442b6a518...ab1e812ec57ac7be0e213532f60ef4c46e76d962)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-eb635e9|Jackie Han|Sun Sep 20 18:23:01 2026 +0800|luci: Implement retry logic for dnsmasq config file (#1296)
-0ebb2cf|A-BO|Sun Sep 20 13:28:43 2026 +0800|luci: optimize
-50fc76b|A-BO|Sun Sep 20 00:38:00 2026 +0800|luci: fix xray mkcp field typo
-3d31bbe|A-BO|Sat Sep 19 18:39:58 2026 +0800|luci: improvement and optimization
-9829635|A-BO|Sat Sep 19 01:47:26 2026 +0800|luci: server: revise certificate and private key wording
-1141f6e|lwb1978|Fri Sep 18 15:46:00 2026 +0800|luci: add snell subscribe and import/export
-4d04bbe|lwb1978|Fri Sep 18 11:47:18 2026 +0800|luci: fix the translation
-2865696|handsomeji|Sun Sep 20 00:32:47 2026 +0800|luci: adjust detail
-b3adaf6|Vitaly|Sat Sep 19 18:39:35 2026 +0300|luci: Fixed /tmp/etc/dnsmasq.conf.cfg01411c: No such file or directory (#1295)
-d4dfa3b|lwb1978|Thu Sep 17 18:59:35 2026 +0800|luci:  rule currently not support `ext`
+ab1e812|A-BO|Fri Sep 25 01:25:30 2026 +0800| ci: update code
 </details>

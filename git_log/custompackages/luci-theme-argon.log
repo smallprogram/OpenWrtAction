@@ -1,0 +1,11 @@
+<details> <summary> <b>luci-theme-argon new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/jerrykuku/luci-theme-argon/compare/182294b07f985088b40610f80ec867fe167e41db...0546f975a66796a89ff988524290c4a2e2d01855)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+0546f97|老竭力|Wed Sep 23 18:34:27 2026 +0800|fix: harden Argon theme behavior and add regression checks
+110ca1a|老竭力|Wed Sep 23 14:21:59 2026 +0800|Merge pull request #710 from FuSan21/feat/auth-plugin-login
+b92b8a4|Fuad Hasan|Sun Sep 20 21:20:13 2026 +0600|feat(sysauth): render Authentication Login plugins on the login page
+</details>

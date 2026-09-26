@@ -1,19 +1,25 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/9ea7d79c1e3c415548bbb45f6b184e8f5574923a...70761ef13d98cf08161e7d80d15737c8b76b264b)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/70761ef13d98cf08161e7d80d15737c8b76b264b...97a267802f3be8d0979b903f2ee21e20e7cdda51)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-70761ef1|A-BO|Mon Sep 21 21:29:52 2026 +0800|luci: support SS ShadowTLS SIP003 URI subscribe
-4e56af42|Jackie Han|Sun Sep 20 18:23:01 2026 +0800|luci: Implement retry logic for dnsmasq config file
-cb215ae5|A-BO|Sun Sep 20 13:25:10 2026 +0800|luci: optimize
-d074d130|A-BO|Sun Sep 20 11:15:29 2026 +0800|luci: adjust detail
-072eb196|A-BO|Sun Sep 20 00:38:00 2026 +0800|luci: fix xray mkcp field typo
-4ddbe980|A-BO|Sun Sep 20 00:31:37 2026 +0800|luci: Fixed /tmp/etc/dnsmasq.conf.cfg01411c: No such file or directory
-9c641574|A-BO|Sat Sep 19 18:39:58 2026 +0800|luci: improvement and optimization
-4dd01eb4|A-BO|Sat Sep 19 01:47:26 2026 +0800|luci: server: revise certificate and private key wording
-8bdf9c60|lwb1978|Fri Sep 18 15:46:00 2026 +0800|luci: add snell subscribe and import/export
-6226c1eb|lwb1978|Fri Sep 18 11:47:18 2026 +0800|luci: fix the translation
-611e873e|lwb1978|Thu Sep 17 19:01:12 2026 +0800|luci:  rule currently not support `ext`
+97a26780|A-BO|Sat Sep 26 21:15:18 2026 +0800|luci: Anytls and Tuic support `pinSHA256` subscribe
+453fc10a|Mita Hill|Sat Sep 26 16:22:56 2026 +0800|luci: fix LAN IPv6 list overlapping the FakeIP address pool (#4484)
+f5979266|A-BO|Sat Sep 26 12:23:24 2026 +0800|luci: bump 26.9.26
+7e46234a|A-BO|Sat Sep 26 12:21:35 2026 +0800|luci: update default proxy host list
+2d195b29|A-BO|Sat Sep 26 11:42:33 2026 +0800|luci: optimize hysteria2 `pinSHA256`
+c139608d|A-BO|Sat Sep 26 01:26:06 2026 +0800|luci: fix dns redirect
+d35badf3|A-BO|Sat Sep 26 00:56:37 2026 +0800|luci: add `certificate_sha256` for sing-box (>=1.15)
+792d9d00|Mita Hill|Fri Sep 25 22:30:17 2026 +0800|luci: fix Xray config generation crash with inbound filtering (#4483)
+a941a0cd|Mita Hill|Fri Sep 25 22:27:52 2026 +0800|luci: fix duplicate loopback tags when Xray load balancing is used as a chain proxy (#4482)
+8b4bceac|A-BO|Fri Sep 25 18:13:01 2026 +0800|luci: fix #4481
+36ee8a0a|Mita Hill|Fri Sep 25 15:47:05 2026 +0800|luci: fix URLTest pre-proxy rules skipping the outbound node (#4480)
+49fee66b|Mita Hill|Fri Sep 25 12:32:07 2026 +0800|luci: Fix : Issue:#4478 (#4479)
+db7a6f0a|A-BO|Fri Sep 25 01:22:38 2026 +0800| ci: update code
+0086f8bc|A-BO|Thu Sep 24 18:01:19 2026 +0800|luci: optimize log
+e72dc624|A-BO|Thu Sep 24 00:26:10 2026 +0800|luci: optimize firewall `update_wan_sets`
+
+
 </details>

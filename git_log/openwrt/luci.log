@@ -1,10 +1,16 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/82ed8f6d0f7d8d5f4148b4448b3bea75f3687134...0834d099439e4ba788b4c33c54616d8ee9df5c6e)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/0834d099439e4ba788b4c33c54616d8ee9df5c6e...dd3d1cbca298c11a409acb01ef644ee3c6892faf)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-0834d09943|Ivan Kvashonkin|Sat Sep 19 01:06:03 2026 +0300|luci-theme-footstrap: sync with release 0.14.13
-abf63e6db9|Dirk Brenken|Sat Sep 19 19:56:54 2026 +0200|luci-app-banip: sync with base package 1.9.0
+dd3d1cbca2|Josef Schlehofer|Sun Aug 16 12:40:24 2026 +0200|luci-app-librespeed: add new application
+5dd29213a7|Eamon Xiong|Thu Sep 24 17:53:08 2026 +0300|luci-mod-dashboard: show IP addresses for wireless clients
+ee2fe5b961|Eamon Xiong|Thu Sep 24 17:52:57 2026 +0300|luci-mod-dashboard: add live charts and a configurable layout
+984293d435|Eamon Xiong|Thu Sep 24 17:51:13 2026 +0300|luci-mod-dashboard: fix low contrast of muted elements
+960a57c847|Eamon Xiong|Thu Sep 24 17:50:59 2026 +0300|luci-mod-dashboard: rework the layout using standard LuCI markup
+a23834e0da|Eamon Xiong|Thu Sep 24 17:50:49 2026 +0300|luci-mod-dashboard: retry failed include loads on the next poll
+5ccf4bb207|Maxim Skokov|Thu Sep 24 17:50:34 2026 +0300|luci-mod-dashboard: fix word breaks
+72f32b68cc|Paul Donald|Thu Sep 24 17:50:23 2026 +0300|luci-mod-dashboard: correctness fixes
 </details>

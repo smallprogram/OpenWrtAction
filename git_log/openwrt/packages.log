@@ -1,25 +1,20 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/8db338fe2d731cd357c97de7b9857e2cb121103e...2f6bf10ac19a65d77a6973cd11a3ae0450ef6a3c)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/2f6bf10ac19a65d77a6973cd11a3ae0450ef6a3c...32dd807af85e709fb0965aae58be9f50f8bef412)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-2f6bf10ac|Wei-Ting Yang|Wed Sep 16 20:32:16 2026 +0800|bash: update to 5.3 patch level 20
-0a0450bf7|Josef Schlehofer|Wed Apr 29 00:12:20 2026 +0200|unzip: refresh patches
-8942be4f6|Dirk Brenken|Sat Sep 19 19:50:03 2026 +0200|banip: release 1.9.0
-fd6259a12|John Audia|Mon Jul 13 07:39:47 2026 -0400|zsh: update to 5.9.2
-12aa1bf71|John Audia|Tue Jun 2 10:17:47 2026 -0400|zsh: update to 5.9.1
-3fd8ff8bc|Wei-Ting Yang|Fri Sep 11 19:59:11 2026 +0800|expat: update to 2.8.4
-b963c9048|Etienne Champetier|Sat Jul 4 16:24:00 2026 -0400|ci: remove keys last used by travis CI
-e629a05d6|Jan Hák|Tue Aug 18 14:55:32 2026 +0200|knot: update to version 3.5.7
-000b6611f|Jan Hák|Wed Jul 22 12:26:03 2026 +0200|knot: update to version 3.5.6
-0ee793540|Jan Hák|Mon Jun 15 11:14:01 2026 +0200|knot: update to version 3.5.5
-fd913f626|Alexandru Ardelean|Tue Jul 28 11:43:36 2026 +0300|freeradius3: fix recursive dependency from libopenssl-legacy
-f67e9e588|Alexandru Ardelean|Wed Jun 3 01:48:03 2026 +0300|freeradius3: update to 3.2.10
-26587c89d|Michel Promonet|Sat Jul 25 17:40:32 2026 +0200|v4l2camera: update to v0.3.2 - Sync with upstream release 0.3.2 - Fix indentation in v4l2camera.init
-53c83ae1b|Josef Schlehofer|Sun Aug 9 10:56:48 2026 +0200|prosody: do not drive the service through prosodyctl
-80de2df94|Josef Schlehofer|Sun Aug 9 07:38:35 2026 +0200|prosody: add test-version.sh
-
-
+32dd807af|Dirk Brenken|Fri Sep 25 23:11:19 2026 +0200|banip: update 1.9.0-2
+4887ba99a|Josef Schlehofer|Mon Sep 21 19:40:14 2026 +0200|librespeed: fix the kconfig recursion between common and the clients
+8cf7cb510|Josef Schlehofer|Sun Aug 16 12:40:23 2026 +0200|librespeed-common: add measurement backend
+7f0f2d43a|Stijn Tintel|Thu Jan 15 20:10:10 2026 +0200|kea: create /var/lib/kea directory in init script
+1137f24e4|Stijn Tintel|Thu Jan 15 20:03:16 2026 +0200|kea: fix /var/run/kea permissions
+0ad9a3fc1|Josef Schlehofer|Wed Sep 23 00:45:56 2026 +0200|tvheadend: handle DVB device nodes on dvb hotplug events
+6bdd3fd03|Michael Pfeifroth|Tue Sep 22 10:44:22 2026 +0200|modemmanager: suppress hotplug log noise
+f5ce9895f|Peter Polonec|Sun Sep 20 07:07:58 2026 +0200|php8-pecl-http: disable TLS-SRP detection
+d8488f46b|Peter Polonec|Thu Sep 3 17:15:55 2026 +0200|curl: update to 8.22.0
+1672d664b|Florian Eckert|Wed Jun 24 17:00:01 2026 +0200|curl: add krb5 support
+acecdebae|Tyrel M. McQueen|Sun Sep 20 08:36:05 2026 -0400|unbound: update to 1.26.1
+8688f24f3|Josef Schlehofer|Mon Sep 21 17:20:28 2026 +0200|librespeed-cli-rust: update to version 1.2.0
 </details>

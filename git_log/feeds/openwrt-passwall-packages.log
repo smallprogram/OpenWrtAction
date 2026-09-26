@@ -1,10 +1,15 @@
 <details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/03c57c1255a72f09c06cb4866025e07491de7d53...8809eaf16367a7315620f1373aed3403bbc52eb0)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/8809eaf16367a7315620f1373aed3403bbc52eb0...c6d4772cea9bec6adc66261be2c3e6679a595250)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-8809eaf|Tianling Shen|Sun Sep 20 16:20:58 2026 +0800|shadowsocksr-libev: fix get_overhead NULL pointer for {auth,verify}_simple
-a1cc086|Tianling Shen|Sun Sep 20 15:55:41 2026 +0800|shadowsocksr-libev: make ssr-libev ~4.5x faster
+c6d4772|David Mandy|Fri Sep 25 14:29:26 2026 +0800|naiveproxy: update to 154.0.8037.49-2 (#734)
+89c7d9c|David Mandy|Fri Sep 25 10:37:31 2026 +0800|v2ray-geoip: update to 202609240030 (#733)
+41f3760|David Mandy|Fri Sep 25 10:37:03 2026 +0800|v2ray-geosite: update to 202609250012 (#732)
+ca43801|David Mandy|Fri Sep 25 10:32:02 2026 +0800|Revert "naiveproxy: update to 154.0.8037.49-1 (#729)" (#731)
+6d98245|David Mandy|Fri Sep 25 08:14:31 2026 +0800|naiveproxy: update to 154.0.8037.49-1 (#729)
+2ee3462|A-BO|Fri Sep 25 01:19:07 2026 +0800|ci: update code
+3b6510f|David Mandy|Thu Sep 24 21:53:11 2026 +0800|sing-box: update to 1.14.2 (#728)
 </details>

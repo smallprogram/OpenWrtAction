@@ -1,10 +1,25 @@
 <details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/4b0d7bbebeca93909b73328dfaa39b9758126721...db7e943ed311548b44b28ed00784975d3f481093)  
+#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/db7e943ed311548b44b28ed00784975d3f481093...69fd3c8eb32194ae0b76e8f30437711fccde76d0)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
+69fd3c8|coolsnowwolf|Sat Sep 26 09:50:40 2026 +0800|gn: fix converting constructors in Result fallback
+dd39509|coolsnowwolf|Sat Sep 26 09:03:39 2026 +0800|ci: use latest OpenWrt master Go toolchain for release builds
+a98ed00|coolsnowwolf|Fri Sep 25 22:05:19 2026 +0800|luci-app-ssr-plus: bump version to v196.10
+6df6fa2|Tianling Shen|Sun Sep 20 16:20:58 2026 +0800|shadowsocksr-libev: fix get_overhead NULL pointer for {auth,verify}_simple
+fc77da7|Tianling Shen|Sun Sep 20 15:55:41 2026 +0800|shadowsocksr-libev: make ssr-libev ~4.5x faster
+b2045a7|zxlhhyccc|Sun Sep 13 19:59:32 2026 +0800|luci-app-ssr-plus: Fix subscribe type erro.
+fce7e30|zxlhhyccc|Sun Sep 13 19:56:31 2026 +0800|gn: update to git HEAD (2026-09-02)
+a0879f2|zxlhhyccc|Sun Sep 13 19:38:42 2026 +0800|luci-app-ssr-plus: Add SOCKS5 auth and unify DNS/Sniffer handling.
+c49b764|zxlhhyccc|Sun Sep 13 12:55:46 2026 +0800|luci-app-ssr-plus: neaten mihomo SOCKS5 authentication.
 db7e943|Tianling Shen|Sun Sep 20 16:20:58 2026 +0800|shadowsocksr-libev: fix get_overhead NULL pointer for {auth,verify}_simple
 97980f2|Tianling Shen|Sun Sep 20 15:55:41 2026 +0800|shadowsocksr-libev: make ssr-libev ~4.5x faster
+4b0d7bb|zxl hhyccc|Tue Sep 15 21:07:52 2026 +0800|luci-app-ssr-plus: Add default direct DNS server configuration.
+f57afa5|zxlhhyccc|Sun Sep 13 19:59:32 2026 +0800|luci-app-ssr-plus: Fix subscribe type erro.
+65bd5a4|zxlhhyccc|Sun Sep 13 19:56:31 2026 +0800|gn: update to git HEAD (2026-09-02)
+6329b39|zxlhhyccc|Sun Sep 13 19:38:42 2026 +0800|luci-app-ssr-plus: Add SOCKS5 auth and unify DNS/Sniffer handling.
+
+
 </details>
