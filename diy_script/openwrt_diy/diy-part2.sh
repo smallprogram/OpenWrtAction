@@ -83,8 +83,8 @@ inject_feed "https://github.com/openwrt/packages.git" "feeds/packages/lang" \
     "lang/golang" \
     "lang/rust"
 
-inject_feed "https://github.com/openwrt/luci.git" "feeds/luci/modules" \
-    "modules/luci-mod-dashboard"
+# inject_feed "https://github.com/openwrt/luci.git" "feeds/luci/modules" \
+#     "modules/luci-mod-dashboard"
 
 inject_feed "https://github.com/immortalwrt/packages.git" "feeds/packages/net" \
     "net/ddns-go" \

@@ -83,8 +83,8 @@ inject_feed "https://github.com/openwrt/packages.git" "feeds/packages/lang" \
     "lang/golang" \
     "lang/rust"
 
-inject_feed "https://github.com/openwrt/luci.git" "feeds/luci/modules" \
-    "modules/luci-mod-dashboard"
+# inject_feed "https://github.com/openwrt/luci.git" "feeds/luci/modules" \
+#     "modules/luci-mod-dashboard"
 
 echo "🎉 移植完毕"
 #--------------------------------------------------------------end 移植包--------------------------------------------------------
