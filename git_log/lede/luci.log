@@ -1,11 +1,25 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/0fb07d4de6db4bae39cd5c6c399dec0f0dde3cc6...3e89467745252d80fb1ecc252f88d02966582a05)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/3e89467745252d80fb1ecc252f88d02966582a05...a129f2f44647a4cce88759d50d05fc4d91a79a3c)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-3e89467745|coolsnowwolf|Sat Sep 26 00:50:03 2026 +0800|luci-mod-status: add system and kernel log TXT export
-00dd4ba761|coolsnowwolf|Fri Sep 25 03:24:34 2026 +0800|luci-app-oui: show phone icon for private MAC addresses
-18ddab39c7|coolsnowwolf|Fri Sep 25 03:15:00 2026 +0800|luci-app-oui: add Haier vendor recognition and icon
+a129f2f446|coolsnowwolf|Thu Oct 1 18:47:15 2026 +0800|luci-theme-design: refresh menus without interrupting form saves
+77c487c9c1|github-actions[bot]|Thu Oct 1 08:57:37 2026 +0000|ci: sync upstream luci applications
+5a7a9f0825|github-actions[bot]|Thu Oct 1 04:46:37 2026 +0000|ci: sync upstream luci applications
+6beba4a033|coolsnowwolf|Thu Oct 1 12:45:13 2026 +0800|ci: sync HomeProxy from coolsnowwolf lean branch
+af2755e8c9|github-actions[bot]|Thu Oct 1 02:17:50 2026 +0000|ci: sync upstream luci applications
+345ecfbb8e|coolsnowwolf|Thu Oct 1 10:17:01 2026 +0800|luci-app-homeproxy: cache features and preserve fix during upstream sync
+1a17c69b06|coolsnowwolf|Thu Oct 1 09:57:18 2026 +0800|luci-app-firewall: restore custom rules for firewall4
+87bf1ce256|coolsnowwolf|Wed Sep 30 18:17:53 2026 +0800|luci-app-turboacc: enable hardware flow offload by default on Airoha
+0c42840ec3|coolsnowwolf|Wed Sep 30 17:58:31 2026 +0800|luci-app-airoha-npu: add Simplified Chinese translations
+efa192634d|github-actions[bot]|Wed Sep 30 08:35:44 2026 +0000|ci: sync upstream luci applications
+d3456aea89|coolsnowwolf|Wed Sep 30 16:26:52 2026 +0800|luci-app-airoha-npu: validate PLL overclock requests and readback
+9f30d06145|github-actions[bot]|Tue Sep 29 08:31:56 2026 +0000|ci: sync upstream luci applications
+e853b2b146|coolsnowwolf|Tue Sep 29 11:18:23 2026 +0800|luci-mod-status: split client traffic totals into upload and download
+6094963318|github-actions[bot]|Mon Sep 28 07:09:16 2026 +0000|ci: sync upstream luci applications
+ed9498374a|coolsnowwolf|Mon Sep 28 15:08:21 2026 +0800|ci: restore upstream LuCI application sync
+
+
 </details>

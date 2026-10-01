@@ -1,9 +1,21 @@
 <details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/eb635e913f665b73dd468a812498f8a442b6a518...ab1e812ec57ac7be0e213532f60ef4c46e76d962)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/ab1e812ec57ac7be0e213532f60ef4c46e76d962...05211da5bdd6b569b266f667c4666fdd63e49325)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-ab1e812|A-BO|Fri Sep 25 01:25:30 2026 +0800| ci: update code
+05211da|Jackie Han|Thu Oct 1 13:24:14 2026 +0800|luci: fix(nftables): pass timeout arg for WAN ip nftset inserts (#1305)
+39d491e|handsomeji|Thu Oct 1 00:17:05 2026 +0800|luci: bump to 26.10.1
+2ba7e69|A-BO|Tue Sep 29 10:22:04 2026 +0800|luci: support subscription cookies
+736feb1|A-BO|Mon Sep 28 00:50:35 2026 +0800|luci: Change FakeIPv6Pool to 2001:2::/48
+27081fe|A-BO|Sat Sep 26 21:15:18 2026 +0800|luci: Anytls/Tuic/Hy2 support `pinSHA256` subscribe for Sing-box
+ff2acd6|A-BO|Sat Sep 26 00:56:37 2026 +0800|luci: add `certificate_sha256` for sing-box (>=1.15)
+fd21037|Mita Hill|Fri Sep 25 22:27:52 2026 +0800|luci: fix duplicate loopback tags when Xray load balancing is used as a chain proxy
+5c2cdea|Mita Hill|Fri Sep 25 15:47:05 2026 +0800|luci: fix URLTest pre-proxy rules skipping the outbound node
+c8fd6ac|A-BO|Thu Sep 24 00:26:10 2026 +0800|luci: optimize firewall `update_wan_sets`
+55b6955|A-BO|Wed Sep 23 22:21:54 2026 +0800|luci: optimize subscribe User-Agent
+3a2d53a|A-BO|Wed Sep 23 22:09:47 2026 +0800|luci: support Shadowrocket VMess URI
+2102571|A-BO|Tue Sep 22 20:30:33 2026 +0800|luci: improve Base64 decoding
+59a78d5|A-BO|Mon Sep 21 21:29:52 2026 +0800|luci: support SS ShadowTLS SIP003 URI subscribe
 </details>

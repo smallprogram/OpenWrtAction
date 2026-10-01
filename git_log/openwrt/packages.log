@@ -1,20 +1,25 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/2f6bf10ac19a65d77a6973cd11a3ae0450ef6a3c...32dd807af85e709fb0965aae58be9f50f8bef412)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/32dd807af85e709fb0965aae58be9f50f8bef412...19fd1072a2ae1dafa3a7b703e269344c00404ecc)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-32dd807af|Dirk Brenken|Fri Sep 25 23:11:19 2026 +0200|banip: update 1.9.0-2
-4887ba99a|Josef Schlehofer|Mon Sep 21 19:40:14 2026 +0200|librespeed: fix the kconfig recursion between common and the clients
-8cf7cb510|Josef Schlehofer|Sun Aug 16 12:40:23 2026 +0200|librespeed-common: add measurement backend
-7f0f2d43a|Stijn Tintel|Thu Jan 15 20:10:10 2026 +0200|kea: create /var/lib/kea directory in init script
-1137f24e4|Stijn Tintel|Thu Jan 15 20:03:16 2026 +0200|kea: fix /var/run/kea permissions
-0ad9a3fc1|Josef Schlehofer|Wed Sep 23 00:45:56 2026 +0200|tvheadend: handle DVB device nodes on dvb hotplug events
-6bdd3fd03|Michael Pfeifroth|Tue Sep 22 10:44:22 2026 +0200|modemmanager: suppress hotplug log noise
-f5ce9895f|Peter Polonec|Sun Sep 20 07:07:58 2026 +0200|php8-pecl-http: disable TLS-SRP detection
-d8488f46b|Peter Polonec|Thu Sep 3 17:15:55 2026 +0200|curl: update to 8.22.0
-1672d664b|Florian Eckert|Wed Jun 24 17:00:01 2026 +0200|curl: add krb5 support
-acecdebae|Tyrel M. McQueen|Sun Sep 20 08:36:05 2026 -0400|unbound: update to 1.26.1
-8688f24f3|Josef Schlehofer|Mon Sep 21 17:20:28 2026 +0200|librespeed-cli-rust: update to version 1.2.0
+19fd1072a|Remi Gacogne|Tue Sep 8 10:41:57 2026 +0200|pdns: security update to 4.9.17
+dd6a9799f|George Sapkin|Sun May 10 02:59:18 2026 +0300|pdns: update config arguments
+51ad82abd|Remi Gacogne|Tue Sep 8 10:46:04 2026 +0200|pdns-recursor: security update to 5.2.13
+92bc64441|George Sapkin|Wed Sep 30 21:01:26 2026 +0300|golang: mark 1.27 as host-only
+880b3baf8|George Sapkin|Wed Sep 2 16:01:59 2026 +0300|golang: bump 1.27 to 1.27.1
+2558a94e1|George Sapkin|Wed Sep 2 15:30:14 2026 +0300|golang: add support for host-only version series
+4aba19f29|George Sapkin|Wed Aug 19 21:54:44 2026 +0300|golang: add 1.27.0
+2c3fb3263|George Sapkin|Mon Aug 10 18:31:59 2026 +0300|golang: fix target binary stripping
+05772f3b8|George Sapkin|Mon Aug 10 18:29:57 2026 +0300|golang: remove redundant quotes in extra_provides
+42cd716d5|Josef Schlehofer|Sun Sep 27 21:44:41 2026 +0200|exim: update to 4.100.1
+fb7d7b3ab|Josef Schlehofer|Sun Sep 27 21:44:40 2026 +0200|exim: add download URL for superseded releases
+9f439079f|Ivan Pavlov|Thu Sep 24 22:30:35 2026 +0300|rsync: update to 3.5.1
+a14cd3312|George Sapkin|Sun May 24 23:10:27 2026 +0300|rsync: add version check override
+a0f47dd3d|Fabrice Fontaine|Fri Mar 13 22:35:39 2026 +0100|net/rsync: fix PKG_CPE_ID
+c3d309efa|Seo Suchan|Fri May 29 00:10:15 2026 +0900|libxslt: add test-version.sh
+
+
 </details>

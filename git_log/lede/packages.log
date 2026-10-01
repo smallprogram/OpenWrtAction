@@ -1,10 +1,13 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/0a3c1c1d100f1234c9269f7547e5482822a0845e...6bc2a94782a71906f4343f07f7bf4bf1b8788fd3)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/6bc2a94782a71906f4343f07f7bf4bf1b8788fd3...60400dc2e0ee47cd9c6c3fb850a6a9049792c742)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-6bc2a947|coolsnowwolf|Thu Sep 24 23:46:13 2026 +0800|libwebsockets: link event loops into full variant
-6bf55720|coolsnowwolf|Tue Sep 22 15:55:55 2026 +0800|ddns-go: restore UCI and procd integration
+60400dc2|coolsnowwolf|Thu Oct 1 08:31:33 2026 +0800|Merge pull request #1144 from Internet1235/bind
+cd1a1900|Internet1235|Mon Sep 28 23:17:46 2026 +0800|bind: update to 9.20.29
+91498daa|github-actions[bot]|Mon Sep 28 07:19:39 2026 +0000|ci: sync upstream packages
+a110c82b|coolsnowwolf|Mon Sep 28 15:19:17 2026 +0800|ci: restore upstream package sync and track sing-box releases
+d376de0b|coolsnowwolf|Mon Sep 28 01:44:57 2026 +0800|pgyvpn: isolate bundled OpenSSL libraries
 </details>

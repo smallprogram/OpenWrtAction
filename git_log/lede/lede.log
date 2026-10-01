@@ -1,12 +1,13 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/b952adf4c88652c582f27e523c975c8470920f84...241650a12c1121c76ba6e82567f3cbd81e368d3d)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/241650a12c1121c76ba6e82567f3cbd81e368d3d...bfec801a42f344bb7566d1f4f8960fb0cdb08350)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-241650a12|coolsnowwolf|Fri Sep 25 00:54:16 2026 +0800|kernel: bump 6.12 to 6.12.111 and 6.18 to 6.18.53
-ec6173583|coolsnowwolf|Fri Sep 25 00:11:51 2026 +0800|kernel: fix xt_FLOWOFFLOAD output device lookup
-8f708e8f0|coolsnowwolf|Thu Sep 24 23:28:56 2026 +0800|mediatek: fix MT7987 clock driver on Linux 6.18
-ab2f39137|coolsnowwolf|Tue Sep 22 16:07:14 2026 +0800|mediatek: skip BL artifacts for CMCC RAX3000Me
+bfec801a4|coolsnowwolf|Thu Oct 1 09:40:07 2026 +0800|kernel: enable default support for installing daed
+6248ca158|coolsnowwolf|Sun Sep 27 17:59:30 2026 +0800|qca-nss-drv: fix frag list truesize accounting
+4947846ea|coolsnowwolf|Sun Sep 27 08:16:26 2026 +0800|default-settings: generate firmware revision from build date
+555d22155|coolsnowwolf|Sun Sep 27 08:10:44 2026 +0800|kernel: bump 6.18 to 6.18.54
+e663ca9b4|coolsnowwolf|Sun Sep 27 07:47:50 2026 +0800|qualcommax: move Device DTS to dedicated DTS directory
 </details>

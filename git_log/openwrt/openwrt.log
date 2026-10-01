@@ -1,17 +1,25 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/03be7efbab0d865bd3d8a2fbca1d936c3ba75ab0...44b73b738d18e424d86a34be3fb1d93cf3d718d6)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/44b73b738d18e424d86a34be3fb1d93cf3d718d6...6ad13aa7290135ac6e1778be95d11b3034b9a416)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-44b73b738d|Vitaliy Sochnev|Fri Aug 7 21:01:18 2026 +0100|airoha: an7583: add USB nodes to SoC dtsi
-cf3a79a511|Julius Bairaktaris|Fri Sep 11 12:10:38 2026 +0200|airoha: add the missing PHY_AIROHA_AN7583_PCIE config symbol
-0fdde70113|Christian Marangi|Fri Sep 11 08:20:34 2026 +0200|airoha: add support for AN7583 PCIe Gen3 PHY
-56da8deffa|Vitaliy Sochnev|Fri Aug 7 21:00:49 2026 +0100|airoha: add support for AN7583 USB PHY
-d212cd4adc|Vitaliy Sochnev|Sun Aug 9 17:28:50 2026 +0100|airoha: an7583: add DT binding for AN7583 USB PHY
-e73b5f91a3|Sheikh Faisal|Thu Sep 10 17:05:21 2026 +0530|mediatek: filogic: fix SPI-NAND write failures on JioRouter AX6000
-363256ce99|Sheikh Faisal|Mon Aug 24 13:05:39 2026 +0530|mediatek: add support for JioRouter AX6000 JIDU6J01
-1017574c7a|Sheikh Faisal|Mon Aug 24 13:04:36 2026 +0530|mediatek: filogic: drop kmod-mt7916-firmware from JIDU6101
-608b0769c6|Sheikh Faisal|Mon Aug 24 12:58:20 2026 +0530|mediatek: fix U-Boot env geometry for JioRouter AX6000 JIDU6101
+6ad13aa729|Christian Marangi|Wed Sep 30 09:41:29 2026 +0200|arm-trusted-firmware-airoha: update to Git HEAD (2026-08-20)
+b72d70255b|Mikhail Zhilkin|Fri Aug 14 18:49:13 2026 +0300|arm-trusted-firmware-airoha: update to Git HEAD (2026-08-14)
+e8b0f87ba3|Robert Marko|Sun Aug 9 11:21:46 2026 +0200|arm-trusted-firmware-airoha: fix BL2 packing on Debian 11
+88730313a2|Christian Marangi|Thu Jul 16 20:13:35 2026 +0200|packages/boot: add arm-trusted-firmware-airoha
+cc2716a6aa|Kenneth Kasilag|Wed Apr 1 23:24:39 2026 +0000|airoha: configure FWNODE_PCS
+07671e89b0|George Moussalem|Tue Sep 1 12:21:39 2026 +0400|generic: update to latest fwnode phylink PCS patches
+bcbf4a406a|Christian Marangi|Sun May 17 12:42:29 2026 +0200|generic: update pending PCS patch with .fill_available_pcs OP
+b08e87dd98|Christian Marangi|Wed May 13 13:38:46 2026 +0200|airoha: update ethernet node for new PCS implementation
+c8b8ee607c|Christian Marangi|Wed May 13 00:06:52 2026 +0200|airoha: update PCS node in DTSI for new PCS implementation
+e95dfc524d|Christian Marangi|Tue May 12 23:57:29 2026 +0200|airoha: migrate to PCS standalone implementation
+7bb083b6b4|Christian Marangi|Sat May 9 20:12:18 2026 +0200|generic: 6.12: backport PCS standalone feature
+67e761fe9e|Christian Marangi|Wed Jun 17 19:44:29 2026 +0200|generic: 6.12: backport netdev_from_priv() helper
+7673104ad5|Tianling Shen|Wed Sep 9 16:17:45 2026 +0800|rockchip: import pending naneng ComboPHY RTERM detection fix
+71118d6522|Fredrik Hallin|Tue Sep 1 16:23:17 2026 +0000|comgt: add ncm support for Fibocom FG621-EA modem
+c208f29307|Ivan Rainbolt|Tue Sep 22 17:21:13 2026 +0000|mediatek: filogic: light the Internet LED on Cudy WR3000S v1
+
+
 </details>
