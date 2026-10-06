@@ -1,13 +1,25 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/241650a12c1121c76ba6e82567f3cbd81e368d3d...bfec801a42f344bb7566d1f4f8960fb0cdb08350)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/bfec801a42f344bb7566d1f4f8960fb0cdb08350...88f08888bbd5804b660379f185125536d7d44ea1)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-bfec801a4|coolsnowwolf|Thu Oct 1 09:40:07 2026 +0800|kernel: enable default support for installing daed
-6248ca158|coolsnowwolf|Sun Sep 27 17:59:30 2026 +0800|qca-nss-drv: fix frag list truesize accounting
-4947846ea|coolsnowwolf|Sun Sep 27 08:16:26 2026 +0800|default-settings: generate firmware revision from build date
-555d22155|coolsnowwolf|Sun Sep 27 08:10:44 2026 +0800|kernel: bump 6.18 to 6.18.54
-e663ca9b4|coolsnowwolf|Sun Sep 27 07:47:50 2026 +0800|qualcommax: move Device DTS to dedicated DTS directory
+88f08888b|coolsnowwolf|Mon Oct 5 21:49:42 2026 +0800|mvebu: scope IEI MCU sources to Linux 6.18
+7fc382c1e|coolsnowwolf|Mon Oct 5 10:41:17 2026 +0800|rockchip: fix NanoPi R28S PCIe Ethernet
+c312460dc|coolsnowwolf|Sun Oct 4 23:33:56 2026 +0800|kernel: update supported versions to latest releases
+e4af66468|coolsnowwolf|Sat Oct 3 15:16:49 2026 +0800|firewall4: port LAN WSD discovery notrack rules
+ce6672616|coolsnowwolf|Sat Oct 3 13:14:48 2026 +0800|kernel: reserve Broadcom fullcone ports early on Linux 6.12
+d79e6d17c|coolsnowwolf|Sat Oct 3 13:10:05 2026 +0800|kernel: reserve Broadcom fullcone ports early on Linux 6.6
+93300eab0|coolsnowwolf|Sat Oct 3 13:06:14 2026 +0800|kernel: reserve Broadcom fullcone ports early on Linux 6.1
+14a864b8c|coolsnowwolf|Sat Oct 3 13:01:18 2026 +0800|kernel: reserve Broadcom fullcone ports early on Linux 5.15
+b6de0ba12|coolsnowwolf|Sat Oct 3 12:58:00 2026 +0800|kernel: reserve Broadcom fullcone ports early on Linux 5.10
+a9960d888|coolsnowwolf|Sat Oct 3 12:54:30 2026 +0800|kernel: reserve Broadcom fullcone ports early on Linux 5.4
+64315ff7b|coolsnowwolf|Sat Oct 3 12:05:59 2026 +0800|kernel: align nft Broadcom fullcone mode 2 on Linux 6.12
+e5e070330|coolsnowwolf|Sat Oct 3 12:02:52 2026 +0800|kernel: align nft Broadcom fullcone mode 2 on Linux 6.6
+25afec95c|coolsnowwolf|Sat Oct 3 12:00:01 2026 +0800|kernel: fix nft Broadcom fullcone mode 2 on Linux 6.1
+36fa0fca3|coolsnowwolf|Sat Oct 3 11:57:18 2026 +0800|kernel: fix nft Broadcom fullcone mode 2 on Linux 5.15
+f1209041e|coolsnowwolf|Sat Oct 3 11:54:23 2026 +0800|kernel: fix nft Broadcom fullcone mode 2 on Linux 5.10
+
+
 </details>

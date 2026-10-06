@@ -1,0 +1,21 @@
+<details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/69fd3c8eb32194ae0b76e8f30437711fccde76d0...c39f1e350105f5fc6445506f03363c5bfa44273b)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+c39f1e3|coolsnowwolf|Tue Oct 6 15:09:32 2026 +0800|xray-core, luci-app-ssr-plus: add AnyTLS support
+d012ba9|coolsnowwolf|Tue Oct 6 14:33:35 2026 +0800|xray-core: restore explicit allowInsecure support
+99a83b4|coolsnowwolf|Tue Oct 6 14:08:09 2026 +0800|mihomo: enable UPX best compression by default
+a7aca93|coolsnowwolf|Tue Oct 6 00:57:55 2026 +0800|luci-app-ssr-plus: separate domain whitelist into an address set
+d88e25f|coolsnowwolf|Sat Oct 3 11:40:51 2026 +0800|xray-core: enable UPX best compression by default
+23fe28d|coolsnowwolf|Sat Oct 3 11:24:37 2026 +0800|upx: add version 5.2.1 with host build support
+d23e0d6|coolsnowwolf|Fri Oct 2 17:17:45 2026 +0800|luci-app-ssr-plus: keep whitelist DNS upstream selection unchanged
+60393ff|coolsnowwolf|Fri Oct 2 10:31:29 2026 +0800|luci-app-ssr-plus: bump version to v196.11
+ae365f0|coolsnowwolf|Fri Oct 2 10:30:36 2026 +0800|mihomo: update to 1.19.32
+a12ceac|coolsnowwolf|Thu Oct 1 23:33:55 2026 +0800|luci-app-ssr-plus: drop direct coreutils dependency
+fa45bf0|coolsnowwolf|Thu Oct 1 23:33:08 2026 +0800|luci-app-ssr-plus: drop unused coreutils-base64 dependency
+4e4a620|coolsnowwolf|Thu Oct 1 23:27:11 2026 +0800|xray-core: update to 26.9.30
+6303b23|coolsnowwolf|Thu Oct 1 23:22:46 2026 +0800|luci-app-ssr-plus: upgrade Mihomo using release packages
+</details>

@@ -1,11 +1,13 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/dd3d1cbca298c11a409acb01ef644ee3c6892faf...1fcad1ef1f5f28fe2b199dba8a060f9b5c58bb46)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/1fcad1ef1f5f28fe2b199dba8a060f9b5c58bb46...6e4d9796f8ef8390fe60b56a079e1d5209ad335e)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-1fcad1ef1f|Fabiao De Gongniu|Sun Aug 9 08:51:00 2026 +0800|luci-app-natmap: allow reading status under /tmp/run
-a24d1f25c8|Dirk Brenken|Sun Sep 27 22:13:40 2026 +0200|luci-app-adblock: sync with base package
-bb2e34eeee|Hannu Nyman|Sun Sep 27 19:46:58 2026 +0300|treewide: backport and sync translations - i18n
+6e4d9796f8|Eamon Xiong|Mon Oct 5 22:01:06 2026 +0300|luci-mod-dashboard: preserve scroll position during polling
+3e70963a63|Eamon Xiong|Mon Oct 5 22:00:47 2026 +0300|luci-mod-dashboard: show wireless band in Wireless detail tab
+63a428fdb2|Hannu Nyman|Mon Oct 5 20:49:57 2026 +0300|luci-base/luci-lua-runtime: update timezone data to 2026e
+be446e365c|Josef Schlehofer|Mon Sep 28 23:38:29 2026 +0200|luci-app-weechat: add new application
+2858f8d98b|Michael Pfeifroth|Mon Jun 22 14:11:00 2026 +0200|luci-mod-network: hide incompatible encryption modes for 6 GHz
 </details>

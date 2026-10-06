@@ -1,11 +1,14 @@
 <details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/c6d4772cea9bec6adc66261be2c3e6679a595250...cadc39bc5cfc67098de4797d52b1f12673351f09)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/cadc39bc5cfc67098de4797d52b1f12673351f09...6841a0c6b65459537e1bfde7c6b68d3fc987f8f3)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
+6841a0c|David Mandy|Tue Oct 6 20:41:23 2026 +0800|naiveproxy: update to 154.0.8037.49-3 (#741)
+eb51f2b|David Mandy|Mon Oct 5 15:51:30 2026 +0800|hysteria: update to 2.13.0 (#740)
+e0d0f37|A-BO|Sun Oct 4 12:47:46 2026 +0800|ci: update code
+3ba85f8|David Mandy|Wed Sep 30 17:25:24 2026 +0800|xray-core: update to 26.9.30 (#735)
 cadc39b|David Mandy|Wed Sep 30 17:25:24 2026 +0800|xray-core: update to 26.9.30 (#735)
 1a5de47|David Mandy|Wed Sep 30 17:25:07 2026 +0800|geoview: update to 0.2.7 (#737)
-73e821b|David Mandy|Wed Sep 30 16:38:03 2026 +0800|v2ray-geosite: update to 202609292207 (#736)
 </details>

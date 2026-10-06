@@ -1,13 +1,17 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/6bc2a94782a71906f4343f07f7bf4bf1b8788fd3...60400dc2e0ee47cd9c6c3fb850a6a9049792c742)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/60400dc2e0ee47cd9c6c3fb850a6a9049792c742...51c86b499c149255c8b04821f6f6726705dc3772)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-60400dc2|coolsnowwolf|Thu Oct 1 08:31:33 2026 +0800|Merge pull request #1144 from Internet1235/bind
-cd1a1900|Internet1235|Mon Sep 28 23:17:46 2026 +0800|bind: update to 9.20.29
-91498daa|github-actions[bot]|Mon Sep 28 07:19:39 2026 +0000|ci: sync upstream packages
-a110c82b|coolsnowwolf|Mon Sep 28 15:19:17 2026 +0800|ci: restore upstream package sync and track sing-box releases
-d376de0b|coolsnowwolf|Mon Sep 28 01:44:57 2026 +0800|pgyvpn: isolate bundled OpenSSL libraries
+51c86b49|coolsnowwolf|Mon Oct 5 11:03:40 2026 +0800|uugamebooster: allow acceleration tunnel traffic through firewall4
+911bdc26|coolsnowwolf|Mon Oct 5 00:26:07 2026 +0800|ksmbd-tools: drop invalid host build dependencies
+7ebfdb35|coolsnowwolf|Sun Oct 4 16:08:00 2026 +0800|ksmbd-tools: serialize configuration and deduplicate automatic shares
+a72ef899|coolsnowwolf|Sun Oct 4 16:00:46 2026 +0800|ksmbd-tools: sync automatic shares and service defaults
+72cec443|coolsnowwolf|Sun Oct 4 11:52:19 2026 +0800|nbnsd: add a Lightweight NetBIOS name responder service (etc. for ksmbd integration)
+815e6a34|coolsnowwolf|Sun Oct 4 11:51:57 2026 +0800|ksmbd-tools: update to 3.5.7
+14b7a42a|coolsnowwolf|Sat Oct 3 21:05:46 2026 +0800|libdouble-conversion: add missing Qt6 dependency
+37a6a7b1|coolsnowwolf|Sat Oct 3 10:05:08 2026 +0800|qbittorrent: update to 5.2.4
+7c1f670b|coolsnowwolf|Sat Oct 3 10:05:08 2026 +0800|qt6: add base libraries and host tools 6.9.3
 </details>

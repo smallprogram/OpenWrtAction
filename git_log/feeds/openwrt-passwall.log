@@ -1,21 +1,25 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/97a267802f3be8d0979b903f2ee21e20e7cdda51...219fca227535f1837cc322cfe504bdd7ada3f246)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/219fca227535f1837cc322cfe504bdd7ada3f246...2d8e8c8144ff7cde3818513478cc644d56c2ecb8)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-219fca22|A-BO|Thu Oct 1 02:12:51 2026 +0800|luci: 26.10.1
-8eeaa7d9|A-BO|Thu Oct 1 02:07:11 2026 +0800|luci: optimize dns-related
-15890d37|A-BO|Wed Sep 30 18:15:43 2026 +0800|luci: adjust and optimize
-b882d8f1|A-BO|Wed Sep 30 00:53:48 2026 +0800|luci: adjusted the dnsmasq cache hash calculation logic
-44e821a2|A-BO|Tue Sep 29 10:22:04 2026 +0800|luci: support subscription cookies
-7b3d8efc|A-BO|Mon Sep 28 16:30:09 2026 +0800|luci: optimize cron
-ab8102d1|A-BO|Mon Sep 28 00:50:35 2026 +0800|luci: Change FakeIPv6Pool to 2001:2::/48
-082d37c7|A-BO|Sun Sep 27 21:31:22 2026 +0800|luci: optimize lock cleanup logic
-69679d77|A-BO|Sun Sep 27 15:15:16 2026 +0800|luci: bump 26.9.27
-1d1a6b52|A-BO|Sun Sep 27 15:05:34 2026 +0800|luci: migrate rules list to `/etc/passwall/rules`
-f835f6b7|A-BO|Sat Sep 26 21:15:18 2026 +0800|luci: Anytls/Tuic/Hy2 support `pinSHA256` subscribe for Sing-box
-97a26780|A-BO|Sat Sep 26 21:15:18 2026 +0800|luci: Anytls and Tuic support `pinSHA256` subscribe
-453fc10a|Mita Hill|Sat Sep 26 16:22:56 2026 +0800|luci: fix LAN IPv6 list overlapping the FakeIP address pool (#4484)
+2d8e8c81|A-BO|Mon Oct 5 20:10:14 2026 +0800|luci: add MASQUE support (server)
+7a6f32bd|A-BO|Mon Oct 5 15:48:48 2026 +0800|luci: add MASQUE support (client)
+4a56d800|A-BO|Mon Oct 5 14:13:10 2026 +0800|luci: optimize
+a60c49eb|A-BO|Sun Oct 4 22:18:34 2026 +0800|luci: bump 26.10.4
+8190b02a|A-BO|Sun Oct 4 22:15:51 2026 +0800|luci: add quic receive window settings for hy2
+d7584ecd|A-BO|Sun Oct 4 20:40:50 2026 +0800|luci: add LuCI main program update function
+2ccbd9a1|A-BO|Sun Oct 4 14:42:27 2026 +0800|luci: adjust LuCI get remote version number logic
+b27c3899|A-BO|Sun Oct 4 12:42:13 2026 +0800|luci: add download progress display in app updates
+e9117b8a|A-BO|Sun Oct 4 11:17:03 2026 +0800|luci: optimize github proxy in app update
+75be384b|A-BO|Sat Oct 3 21:45:47 2026 +0800|luci: bump 26.10.3
+05463b83|A-BO|Sat Oct 3 21:22:39 2026 +0800|luci: optimize dns log
+eca13dc2|A-BO|Sat Oct 3 20:42:18 2026 +0800|luci: fix the `remove` function in api
+f9383b01|A-BO|Sat Oct 3 16:05:44 2026 +0800|luci: Change FakeIPv4Pool to 198.18.0.0/16
+f8bced10|A-BO|Sat Oct 3 15:44:22 2026 +0800|luci: output geoview error messages
+d1094a6e|A-BO|Fri Oct 2 20:50:43 2026 +0800|luci: adjust smartdns start/stop logic
+
+
 </details>

@@ -1,25 +1,25 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/32dd807af85e709fb0965aae58be9f50f8bef412...19fd1072a2ae1dafa3a7b703e269344c00404ecc)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/19fd1072a2ae1dafa3a7b703e269344c00404ecc...ee3df650387c2c028937060f523d93c72c9cc38f)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-19fd1072a|Remi Gacogne|Tue Sep 8 10:41:57 2026 +0200|pdns: security update to 4.9.17
-dd6a9799f|George Sapkin|Sun May 10 02:59:18 2026 +0300|pdns: update config arguments
-51ad82abd|Remi Gacogne|Tue Sep 8 10:46:04 2026 +0200|pdns-recursor: security update to 5.2.13
-92bc64441|George Sapkin|Wed Sep 30 21:01:26 2026 +0300|golang: mark 1.27 as host-only
-880b3baf8|George Sapkin|Wed Sep 2 16:01:59 2026 +0300|golang: bump 1.27 to 1.27.1
-2558a94e1|George Sapkin|Wed Sep 2 15:30:14 2026 +0300|golang: add support for host-only version series
-4aba19f29|George Sapkin|Wed Aug 19 21:54:44 2026 +0300|golang: add 1.27.0
-2c3fb3263|George Sapkin|Mon Aug 10 18:31:59 2026 +0300|golang: fix target binary stripping
-05772f3b8|George Sapkin|Mon Aug 10 18:29:57 2026 +0300|golang: remove redundant quotes in extra_provides
-42cd716d5|Josef Schlehofer|Sun Sep 27 21:44:41 2026 +0200|exim: update to 4.100.1
-fb7d7b3ab|Josef Schlehofer|Sun Sep 27 21:44:40 2026 +0200|exim: add download URL for superseded releases
-9f439079f|Ivan Pavlov|Thu Sep 24 22:30:35 2026 +0300|rsync: update to 3.5.1
-a14cd3312|George Sapkin|Sun May 24 23:10:27 2026 +0300|rsync: add version check override
-a0f47dd3d|Fabrice Fontaine|Fri Mar 13 22:35:39 2026 +0100|net/rsync: fix PKG_CPE_ID
-c3d309efa|Seo Suchan|Fri May 29 00:10:15 2026 +0900|libxslt: add test-version.sh
+ee3df6503|Josef Schlehofer|Sat Oct 3 22:06:50 2026 +0200|python-setuptools: add python3-xml to python3-pkg-resources
+2ab9ead1f|Josef Schlehofer|Mon Oct 5 17:46:56 2026 +0200|ripe-atlas: add get_key and probeid to init script
+4f03c21a2|Tiago Gaspar|Sat May 31 21:08:47 2025 +0100|atlas-sw-probe: remove package
+0faabfce3|Tiago Gaspar|Sat May 31 21:08:47 2025 +0100|atlas-probe: remove package
+1c6c45116|Josef Schlehofer|Mon Oct 5 07:28:05 2026 +0200|ripe-atlas: take over maintainership
+25a854c9a|Josef Schlehofer|Mon Oct 5 07:28:05 2026 +0200|ripe-atlas: migrate from atlas-sw-probe
+3270c3083|Josef Schlehofer|Mon Oct 5 07:28:05 2026 +0200|ripe-atlas: clean up the Makefile
+4fc8efbc6|Josef Schlehofer|Mon Oct 5 07:28:04 2026 +0200|ripe-atlas: restart the probe on config changes
+721d21c37|Josef Schlehofer|Mon Oct 5 07:28:04 2026 +0200|ripe-atlas: run the probe as root without ujail
+83345b76c|Josef Schlehofer|Mon Oct 5 07:28:04 2026 +0200|ripe-atlas: fix the init script
+e2ec9292a|Alexandru Ardelean|Thu Sep 10 18:10:43 2026 +0300|ripe-atlas: update to 5130
+c19058026|Alexandru Ardelean|Sat Jul 18 21:17:18 2026 +0300|ripe-atlas: add test.sh
+e99411a30|Tiago Gaspar|Mon Jun 16 17:02:14 2025 +0100|ripe-atlas: add new package
+25af8cefa|Josef Schlehofer|Mon Sep 28 23:15:17 2026 +0200|weechat: add new package
+2679d6206|Remi Gacogne|Tue Sep 8 10:27:41 2026 +0200|dnsdist: update to 2.0.9
 
 
 </details>

@@ -1,9 +1,0 @@
-<details> <summary> <b>openwrt-access-policy-controller new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/smallprogram/openwrt-access-policy-controller/compare/e5a417d778690c76cb5ed2681a37d3e829035957...1b4a1402eb6d58816ff767537f38e1c5d0c572b9)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-1b4a140|David Mandy|Thu Oct 1 01:27:38 2026 +0800|luci: optimize code (#1)
-</details>

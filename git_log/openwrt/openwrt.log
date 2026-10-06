@@ -1,25 +1,25 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/44b73b738d18e424d86a34be3fb1d93cf3d718d6...6ad13aa7290135ac6e1778be95d11b3034b9a416)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/6ad13aa7290135ac6e1778be95d11b3034b9a416...0110eab5aa100fe7334bcca50398b632869aa16a)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-6ad13aa729|Christian Marangi|Wed Sep 30 09:41:29 2026 +0200|arm-trusted-firmware-airoha: update to Git HEAD (2026-08-20)
-b72d70255b|Mikhail Zhilkin|Fri Aug 14 18:49:13 2026 +0300|arm-trusted-firmware-airoha: update to Git HEAD (2026-08-14)
-e8b0f87ba3|Robert Marko|Sun Aug 9 11:21:46 2026 +0200|arm-trusted-firmware-airoha: fix BL2 packing on Debian 11
-88730313a2|Christian Marangi|Thu Jul 16 20:13:35 2026 +0200|packages/boot: add arm-trusted-firmware-airoha
-cc2716a6aa|Kenneth Kasilag|Wed Apr 1 23:24:39 2026 +0000|airoha: configure FWNODE_PCS
-07671e89b0|George Moussalem|Tue Sep 1 12:21:39 2026 +0400|generic: update to latest fwnode phylink PCS patches
-bcbf4a406a|Christian Marangi|Sun May 17 12:42:29 2026 +0200|generic: update pending PCS patch with .fill_available_pcs OP
-b08e87dd98|Christian Marangi|Wed May 13 13:38:46 2026 +0200|airoha: update ethernet node for new PCS implementation
-c8b8ee607c|Christian Marangi|Wed May 13 00:06:52 2026 +0200|airoha: update PCS node in DTSI for new PCS implementation
-e95dfc524d|Christian Marangi|Tue May 12 23:57:29 2026 +0200|airoha: migrate to PCS standalone implementation
-7bb083b6b4|Christian Marangi|Sat May 9 20:12:18 2026 +0200|generic: 6.12: backport PCS standalone feature
-67e761fe9e|Christian Marangi|Wed Jun 17 19:44:29 2026 +0200|generic: 6.12: backport netdev_from_priv() helper
-7673104ad5|Tianling Shen|Wed Sep 9 16:17:45 2026 +0800|rockchip: import pending naneng ComboPHY RTERM detection fix
-71118d6522|Fredrik Hallin|Tue Sep 1 16:23:17 2026 +0000|comgt: add ncm support for Fibocom FG621-EA modem
-c208f29307|Ivan Rainbolt|Tue Sep 22 17:21:13 2026 +0000|mediatek: filogic: light the Internet LED on Cudy WR3000S v1
+0110eab5aa|Joseph Chen|Sun Oct 4 08:46:32 2026 +0800|sunxi: enable H3 R-PIO support for H5 boards
+44e9ffcf8a|Hauke Mehrtens|Sat Jun 27 16:12:46 2026 +0200|odhcp6c: update to Git HEAD (2026-06-27)
+d9178efb38|Hauke Mehrtens|Sun Oct 4 01:55:38 2026 +0200|rpcd: update to Git HEAD (2026-10-04)
+338eea3efe|Felix Fietkau|Tue Sep 29 17:29:09 2026 +0200|rpcd: update to Git HEAD (2026-09-25)
+a5c8be7fd4|Hauke Mehrtens|Wed Sep 30 00:31:32 2026 +0200|ead: fix out-of-bounds writes in the client message handlers
+186b6c54b0|Karsten Sperling|Sat Aug 15 00:05:40 2026 +1200|hostapd: mbedtls EAP-TLS peer 3.6.3+ compatibility
+872ac2202b|Karsten Sperling|Fri Aug 14 23:52:20 2026 +1200|hostapd: fix inverted test in tls_mbedtls_set_ciphers
+d3bcd690a8|Karsten Sperling|Fri Aug 14 23:49:51 2026 +1200|hostapd: mbedtls check_cert_subject uninitialized read
+f4c7792a75|Hauke Mehrtens|Fri Sep 18 00:52:58 2026 +0200|hostapd: restore Link Measurement Report handling
+179c07baa6|Hauke Mehrtens|Fri Sep 18 00:52:48 2026 +0200|hostapd: free the APuP peer when no AID is available
+4829d41a04|Hauke Mehrtens|Fri Sep 18 00:27:24 2026 +0200|hostapd: fix NULL pointer dereference in APuP beacon handling
+bea8e7be05|Shiji Yang|Sun Oct 4 09:45:12 2026 +0800|kernel: refresh kernel configs for riscv targets
+12d27e860b|Shiji Yang|Sat Oct 3 19:53:00 2026 +0800|kernel: bump 6.12 to 6.12.112
+ebe71a07b8|Shiji Yang|Mon Sep 21 22:52:52 2026 +0800|kernel: bump 6.12 to 6.12.111
+c337f787b5|Shiji Yang|Mon Sep 14 23:09:08 2026 +0800|kernel: generic: remove kconfig symbol ARCH_HAS_PTDUMP
 
 
 </details>
