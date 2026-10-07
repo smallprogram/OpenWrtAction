@@ -406,7 +406,7 @@ jobs:
           df -hT
       
       - name: SSH connection to Actions
-        uses: mxschmitt/action-tmate@v3.23
+        uses: mxschmitt/action-tmate@v3
         if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
       # - name: Download Cached Toolchain
@@ -722,7 +722,7 @@ jobs:
           sudo chown -R $USER:$GROUPS /workdir/openwrt
      
       - name: SSH connection to Actions
-        uses: mxschmitt/action-tmate@v3.23
+        uses: mxschmitt/action-tmate@v3
         if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
       - name: Generate Frimware
@@ -893,7 +893,7 @@ jobs:
           echo "-------------end release tag-----------------"
       
       - name: SSH connection to Actions
-        uses: mxschmitt/action-tmate@v3.23
+        uses: mxschmitt/action-tmate@v3
         if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
 

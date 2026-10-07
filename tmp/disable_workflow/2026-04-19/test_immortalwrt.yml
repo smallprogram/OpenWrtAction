@@ -104,7 +104,7 @@ jobs:
         run: cd openwrt && ./scripts/feeds install -a
 
       - name: SSH connection to Actions
-        uses: mxschmitt/action-tmate@v3.16
+        uses: mxschmitt/action-tmate@v3
         if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false')
 
       - name: Load Configuration
