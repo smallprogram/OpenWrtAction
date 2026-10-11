@@ -1,25 +1,19 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/6ad13aa7290135ac6e1778be95d11b3034b9a416...0110eab5aa100fe7334bcca50398b632869aa16a)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/0110eab5aa100fe7334bcca50398b632869aa16a...58efa9917d4cc53fceed173529a286187649e827)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-0110eab5aa|Joseph Chen|Sun Oct 4 08:46:32 2026 +0800|sunxi: enable H3 R-PIO support for H5 boards
-44e9ffcf8a|Hauke Mehrtens|Sat Jun 27 16:12:46 2026 +0200|odhcp6c: update to Git HEAD (2026-06-27)
-d9178efb38|Hauke Mehrtens|Sun Oct 4 01:55:38 2026 +0200|rpcd: update to Git HEAD (2026-10-04)
-338eea3efe|Felix Fietkau|Tue Sep 29 17:29:09 2026 +0200|rpcd: update to Git HEAD (2026-09-25)
-a5c8be7fd4|Hauke Mehrtens|Wed Sep 30 00:31:32 2026 +0200|ead: fix out-of-bounds writes in the client message handlers
-186b6c54b0|Karsten Sperling|Sat Aug 15 00:05:40 2026 +1200|hostapd: mbedtls EAP-TLS peer 3.6.3+ compatibility
-872ac2202b|Karsten Sperling|Fri Aug 14 23:52:20 2026 +1200|hostapd: fix inverted test in tls_mbedtls_set_ciphers
-d3bcd690a8|Karsten Sperling|Fri Aug 14 23:49:51 2026 +1200|hostapd: mbedtls check_cert_subject uninitialized read
-f4c7792a75|Hauke Mehrtens|Fri Sep 18 00:52:58 2026 +0200|hostapd: restore Link Measurement Report handling
-179c07baa6|Hauke Mehrtens|Fri Sep 18 00:52:48 2026 +0200|hostapd: free the APuP peer when no AID is available
-4829d41a04|Hauke Mehrtens|Fri Sep 18 00:27:24 2026 +0200|hostapd: fix NULL pointer dereference in APuP beacon handling
-bea8e7be05|Shiji Yang|Sun Oct 4 09:45:12 2026 +0800|kernel: refresh kernel configs for riscv targets
-12d27e860b|Shiji Yang|Sat Oct 3 19:53:00 2026 +0800|kernel: bump 6.12 to 6.12.112
-ebe71a07b8|Shiji Yang|Mon Sep 21 22:52:52 2026 +0800|kernel: bump 6.12 to 6.12.111
-c337f787b5|Shiji Yang|Mon Sep 14 23:09:08 2026 +0800|kernel: generic: remove kconfig symbol ARCH_HAS_PTDUMP
-
-
+58efa9917d|Shiji Yang|Wed May 20 18:20:50 2026 +0800|uboot-mediatek: fix malformed patch
+66673aad8f|Sander van Deijck|Sun Sep 27 17:41:59 2026 +0200|wolfssl: update to 5.9.4
+1682d87632|Felix Fietkau|Fri Jul 10 14:45:10 2026 +0200|wifi-scripts: pass multicast_to_unicast as an integer
+c740570351|David Bauer|Wed Oct 7 15:48:17 2026 +0200|hostapd: refresh patches
+647fabb38c|David Bauer|Wed Oct 7 15:46:29 2026 +0200|hostapd: depend ubus support on base64
+7f72f1c356|John Crispin|Mon Aug 4 07:37:47 2025 +0200|hostapd: add raw beacon report data to ubus notification
+2da3e5c149|Serv Pol|Sun Oct 4 17:32:20 2026 +0300|ath79: gl-e750: fix 5 GHz calibration on V2
+6100eec644|Hauke Mehrtens|Sun Oct 4 23:09:25 2026 +0200|umdns: update to Git HEAD (2026-10-04)
+4b42bd73a2|Hauke Mehrtens|Sun Oct 4 18:34:01 2026 +0200|uhttpd: update to Git HEAD (2026-08-24)
+b97f66de32|Gilberto Conde|Sat Oct 3 23:34:04 2026 +0300|kernel: qmi_wwan: add support for Quectel EG120K-EA
+099e5bc518|Hauke Mehrtens|Sat Oct 3 19:08:23 2026 +0200|mt76: cherry pick upstream Linux patches from 6.18.55
 </details>

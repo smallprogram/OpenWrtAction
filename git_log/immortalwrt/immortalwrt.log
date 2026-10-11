@@ -1,25 +1,25 @@
 <details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/37013c8153ac6c9e11f4f9210d22832beb3bcb64...89dfac46c9f1eaeb56c6cf49eb289b4475f446f7)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/89dfac46c9f1eaeb56c6cf49eb289b4475f446f7...ce35a9e4ef1b87fbbc2146036ce6693e4242861a)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-89dfac46c9|Tianling Shen|Sun Oct 4 17:54:28 2026 +0800|Merge Official Source
-69c6eebf56|Hauke Mehrtens|Thu Oct 1 01:48:34 2026 +0200|mac80211: update to version 6.18.55
-5545740354|Tianling Shen|Thu May 21 17:00:34 2026 +0800|valgrind: fix ARMv7 detection on AArch64
-15421742a9|Michael Pfeifroth|Mon Jun 22 14:13:37 2026 +0200|wifi-scripts: enforce WPA3 for all encryption types on 6 GHz
-313718c25f|Tianling Shen|Fri Oct 2 14:54:24 2026 +0800|openssl: prefer AES GCM by default for aarch64
-6b4db17134|Tianling Shen|Fri Oct 2 14:53:04 2026 +0800|Merge Official Source
-6ad13aa729|Christian Marangi|Wed Sep 30 09:41:29 2026 +0200|arm-trusted-firmware-airoha: update to Git HEAD (2026-08-20)
-b72d70255b|Mikhail Zhilkin|Fri Aug 14 18:49:13 2026 +0300|arm-trusted-firmware-airoha: update to Git HEAD (2026-08-14)
-e8b0f87ba3|Robert Marko|Sun Aug 9 11:21:46 2026 +0200|arm-trusted-firmware-airoha: fix BL2 packing on Debian 11
-88730313a2|Christian Marangi|Thu Jul 16 20:13:35 2026 +0200|packages/boot: add arm-trusted-firmware-airoha
-cc2716a6aa|Kenneth Kasilag|Wed Apr 1 23:24:39 2026 +0000|airoha: configure FWNODE_PCS
-07671e89b0|George Moussalem|Tue Sep 1 12:21:39 2026 +0400|generic: update to latest fwnode phylink PCS patches
-bcbf4a406a|Christian Marangi|Sun May 17 12:42:29 2026 +0200|generic: update pending PCS patch with .fill_available_pcs OP
-b08e87dd98|Christian Marangi|Wed May 13 13:38:46 2026 +0200|airoha: update ethernet node for new PCS implementation
-c8b8ee607c|Christian Marangi|Wed May 13 00:06:52 2026 +0200|airoha: update PCS node in DTSI for new PCS implementation
+ce35a9e4ef|Tianling Shen|Fri Oct 9 11:20:31 2026 +0800|Merge Official Source
+4e8352ff14|Tianling Shen|Thu Oct 8 10:28:51 2026 +0800|kernel: restore conntrack notifier chains support
+66673aad8f|Sander van Deijck|Sun Sep 27 17:41:59 2026 +0200|wolfssl: update to 5.9.4
+1682d87632|Felix Fietkau|Fri Jul 10 14:45:10 2026 +0200|wifi-scripts: pass multicast_to_unicast as an integer
+c740570351|David Bauer|Wed Oct 7 15:48:17 2026 +0200|hostapd: refresh patches
+647fabb38c|David Bauer|Wed Oct 7 15:46:29 2026 +0200|hostapd: depend ubus support on base64
+7f72f1c356|John Crispin|Mon Aug 4 07:37:47 2025 +0200|hostapd: add raw beacon report data to ubus notification
+2da3e5c149|Serv Pol|Sun Oct 4 17:32:20 2026 +0300|ath79: gl-e750: fix 5 GHz calibration on V2
+6100eec644|Hauke Mehrtens|Sun Oct 4 23:09:25 2026 +0200|umdns: update to Git HEAD (2026-10-04)
+4b42bd73a2|Hauke Mehrtens|Sun Oct 4 18:34:01 2026 +0200|uhttpd: update to Git HEAD (2026-08-24)
+b97f66de32|Gilberto Conde|Sat Oct 3 23:34:04 2026 +0300|kernel: qmi_wwan: add support for Quectel EG120K-EA
+099e5bc518|Hauke Mehrtens|Sat Oct 3 19:08:23 2026 +0200|mt76: cherry pick upstream Linux patches from 6.18.55
+0110eab5aa|Joseph Chen|Sun Oct 4 08:46:32 2026 +0800|sunxi: enable H3 R-PIO support for H5 boards
+44e9ffcf8a|Hauke Mehrtens|Sat Jun 27 16:12:46 2026 +0200|odhcp6c: update to Git HEAD (2026-06-27)
+d9178efb38|Hauke Mehrtens|Sun Oct 4 01:55:38 2026 +0200|rpcd: update to Git HEAD (2026-10-04)
 
 
 </details>

@@ -1,25 +1,18 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/bfec801a42f344bb7566d1f4f8960fb0cdb08350...88f08888bbd5804b660379f185125536d7d44ea1)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/88f08888bbd5804b660379f185125536d7d44ea1...d5ccef5f796981c79811f27722596173482a35e3)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-88f08888b|coolsnowwolf|Mon Oct 5 21:49:42 2026 +0800|mvebu: scope IEI MCU sources to Linux 6.18
-7fc382c1e|coolsnowwolf|Mon Oct 5 10:41:17 2026 +0800|rockchip: fix NanoPi R28S PCIe Ethernet
-c312460dc|coolsnowwolf|Sun Oct 4 23:33:56 2026 +0800|kernel: update supported versions to latest releases
-e4af66468|coolsnowwolf|Sat Oct 3 15:16:49 2026 +0800|firewall4: port LAN WSD discovery notrack rules
-ce6672616|coolsnowwolf|Sat Oct 3 13:14:48 2026 +0800|kernel: reserve Broadcom fullcone ports early on Linux 6.12
-d79e6d17c|coolsnowwolf|Sat Oct 3 13:10:05 2026 +0800|kernel: reserve Broadcom fullcone ports early on Linux 6.6
-93300eab0|coolsnowwolf|Sat Oct 3 13:06:14 2026 +0800|kernel: reserve Broadcom fullcone ports early on Linux 6.1
-14a864b8c|coolsnowwolf|Sat Oct 3 13:01:18 2026 +0800|kernel: reserve Broadcom fullcone ports early on Linux 5.15
-b6de0ba12|coolsnowwolf|Sat Oct 3 12:58:00 2026 +0800|kernel: reserve Broadcom fullcone ports early on Linux 5.10
-a9960d888|coolsnowwolf|Sat Oct 3 12:54:30 2026 +0800|kernel: reserve Broadcom fullcone ports early on Linux 5.4
-64315ff7b|coolsnowwolf|Sat Oct 3 12:05:59 2026 +0800|kernel: align nft Broadcom fullcone mode 2 on Linux 6.12
-e5e070330|coolsnowwolf|Sat Oct 3 12:02:52 2026 +0800|kernel: align nft Broadcom fullcone mode 2 on Linux 6.6
-25afec95c|coolsnowwolf|Sat Oct 3 12:00:01 2026 +0800|kernel: fix nft Broadcom fullcone mode 2 on Linux 6.1
-36fa0fca3|coolsnowwolf|Sat Oct 3 11:57:18 2026 +0800|kernel: fix nft Broadcom fullcone mode 2 on Linux 5.15
-f1209041e|coolsnowwolf|Sat Oct 3 11:54:23 2026 +0800|kernel: fix nft Broadcom fullcone mode 2 on Linux 5.10
-
-
+d5ccef5f7|coolsnowwolf|Sun Oct 11 21:02:31 2026 +0800|tools: firmware-utils: update to Git HEAD (2026-09-30)
+27d57f45e|coolsnowwolf|Sun Oct 11 13:45:45 2026 +0800|ath10k-ct: fix fortify build error on Linux 6.6
+02629de75|coolsnowwolf|Sun Oct 11 13:45:37 2026 +0800|ath79: fix builds with shared driver sources
+73bc2d2fe|DoveKi|Sun Oct 11 13:03:25 2026 +0800|mediatek: add stock layout support for Redmi Router AX6000 (#14212)
+1d585dc90|coolsnowwolf|Fri Oct 9 03:19:17 2026 +0800|mediatek: complete TL-7DR7299 v1 Ethernet and upgrade support
+4b159f4ca|coolsnowwolf|Thu Oct 8 12:15:50 2026 +0800|kernel: fix resolve_btfids host libelf detection on 5.10
+83d271087|coolsnowwolf|Wed Oct 7 20:25:33 2026 +0800|default-settings: generate revision in Beijing time
+0bf8f083b|coolsnowwolf|Wed Oct 7 15:55:27 2026 +0800|qualcommax: refresh patches for Linux 6.12.112
+11d67efe2|coolsnowwolf|Wed Oct 7 15:44:40 2026 +0800|mediatek: add support for CLX S20L
+f9afd0ed6|coolsnowwolf|Wed Oct 7 03:52:35 2026 +0800|kernel: fix nft flow offload with unknown forward paths
 </details>

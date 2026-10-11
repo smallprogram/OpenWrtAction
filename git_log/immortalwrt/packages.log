@@ -1,0 +1,9 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/84bd86384928955b568988ca0e09e2c78c75173d...52ddbd11d66106615543af7352bf84ae20e5f1f8)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+52ddbd11d|Tianling Shen|Sat Oct 10 10:24:51 2026 +0800|postfix: fix build with kernel 7.x
+</details>

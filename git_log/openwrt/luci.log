@@ -1,13 +1,17 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/1fcad1ef1f5f28fe2b199dba8a060f9b5c58bb46...6e4d9796f8ef8390fe60b56a079e1d5209ad335e)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/6e4d9796f8ef8390fe60b56a079e1d5209ad335e...8125d1288b359f6df505d3328b712bf059843fc8)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-6e4d9796f8|Eamon Xiong|Mon Oct 5 22:01:06 2026 +0300|luci-mod-dashboard: preserve scroll position during polling
-3e70963a63|Eamon Xiong|Mon Oct 5 22:00:47 2026 +0300|luci-mod-dashboard: show wireless band in Wireless detail tab
-63a428fdb2|Hannu Nyman|Mon Oct 5 20:49:57 2026 +0300|luci-base/luci-lua-runtime: update timezone data to 2026e
-be446e365c|Josef Schlehofer|Mon Sep 28 23:38:29 2026 +0200|luci-app-weechat: add new application
-2858f8d98b|Michael Pfeifroth|Mon Jun 22 14:11:00 2026 +0200|luci-mod-network: hide incompatible encryption modes for 6 GHz
+8125d1288b|Ivan Kvashonkin|Sun Oct 11 09:12:30 2026 +0300|treewide: wrap loose view content in cbi-section
+350fc91967|Hannu Nyman|Sat Oct 10 16:55:38 2026 +0300|treewide: backport i18n translations
+d1cd725b3e|Ivan Kvashonkin|Sat Oct 10 16:50:48 2026 +0300|luci-theme-footstrap: full load after a page litters body
+4077dc76aa|Ivan Kvashonkin|Sat Oct 10 16:50:27 2026 +0300|luci-theme-footstrap: use autofocus and shared input checks
+34064ffd47|Ivan Kvashonkin|Sat Oct 10 16:50:13 2026 +0300|luci-theme-footstrap: dedupe js and drop pre-24.10 paths
+4627f3a8b6|Ivan Kvashonkin|Sat Oct 10 16:49:59 2026 +0300|luci-theme-footstrap: drop dead css rules and tokens
+8ccab69817|Ivan Kvashonkin|Sat Oct 10 16:49:39 2026 +0300|luci-theme-footstrap: remove unused plugin and search api
+afa18ed184|Ivan Kvashonkin|Sat Oct 10 16:49:22 2026 +0300|luci-theme-footstrap: fix foreign-app styling
+a450f0d67c|Julius Bairaktaris|Sat Aug 1 04:27:18 2026 +0200|luci-app-ddns: quote the date format passed to the shell
 </details>

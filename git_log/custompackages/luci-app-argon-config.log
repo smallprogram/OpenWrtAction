@@ -1,0 +1,12 @@
+<details> <summary> <b>luci-app-argon-config new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/jerrykuku/luci-app-argon-config/compare/3e099a37c3f71d0de677f1b6b0f4bffd57d91dac...3f844c467ce5075e2b0dd61ebf7271640eb08da2)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+3f844c4|老竭力|Fri Oct 9 10:50:28 2026 +0800|feat(config): support custom login logo and browser icon
+92de4fe|老竭力|Thu Oct 8 16:11:06 2026 +0800|feat: add login page style selector with previews
+9bafffa|老竭力|Thu Oct 8 11:06:49 2026 +0800|fix: initialize SDK base feed and update CI actions
+7027800|老竭力|Thu Oct 8 10:58:33 2026 +0800|fix: improve Argon config, translations and release builds
+</details>

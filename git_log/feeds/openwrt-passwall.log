@@ -1,25 +1,17 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/219fca227535f1837cc322cfe504bdd7ada3f246...2d8e8c8144ff7cde3818513478cc644d56c2ecb8)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/2d8e8c8144ff7cde3818513478cc644d56c2ecb8...b0449b1d1139cb730eef7acdf61f60897a140c9d)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-2d8e8c81|A-BO|Mon Oct 5 20:10:14 2026 +0800|luci: add MASQUE support (server)
-7a6f32bd|A-BO|Mon Oct 5 15:48:48 2026 +0800|luci: add MASQUE support (client)
-4a56d800|A-BO|Mon Oct 5 14:13:10 2026 +0800|luci: optimize
-a60c49eb|A-BO|Sun Oct 4 22:18:34 2026 +0800|luci: bump 26.10.4
-8190b02a|A-BO|Sun Oct 4 22:15:51 2026 +0800|luci: add quic receive window settings for hy2
-d7584ecd|A-BO|Sun Oct 4 20:40:50 2026 +0800|luci: add LuCI main program update function
-2ccbd9a1|A-BO|Sun Oct 4 14:42:27 2026 +0800|luci: adjust LuCI get remote version number logic
-b27c3899|A-BO|Sun Oct 4 12:42:13 2026 +0800|luci: add download progress display in app updates
-e9117b8a|A-BO|Sun Oct 4 11:17:03 2026 +0800|luci: optimize github proxy in app update
-75be384b|A-BO|Sat Oct 3 21:45:47 2026 +0800|luci: bump 26.10.3
-05463b83|A-BO|Sat Oct 3 21:22:39 2026 +0800|luci: optimize dns log
-eca13dc2|A-BO|Sat Oct 3 20:42:18 2026 +0800|luci: fix the `remove` function in api
-f9383b01|A-BO|Sat Oct 3 16:05:44 2026 +0800|luci: Change FakeIPv4Pool to 198.18.0.0/16
-f8bced10|A-BO|Sat Oct 3 15:44:22 2026 +0800|luci: output geoview error messages
-d1094a6e|A-BO|Fri Oct 2 20:50:43 2026 +0800|luci: adjust smartdns start/stop logic
-
-
+b0449b1d|A-BO|Sun Oct 11 19:01:17 2026 +0800|luci: optimize
+6410bdf1|A-BO|Sat Oct 10 22:19:04 2026 +0800|luci: reduce HAProxy URL health check overhead and optimize check scheduling
+18632b00|A-BO|Sat Oct 10 21:00:52 2026 +0800|luci: optimize urltest logic
+f0c9adae|A-BO|Fri Oct 9 23:21:22 2026 +0800|luci: refactor curl direct download logic
+701d982a|A-BO|Thu Oct 8 23:39:08 2026 +0800|luci: refactor locking for subscription and rule updates
+92916bed|A-BO|Thu Oct 8 19:00:37 2026 +0800|luci: optimize iface hotplug code
+4db1995c|A-BO|Thu Oct 8 02:07:56 2026 +0800|luci: optimize and fix
+1a15c386|A-BO|Wed Oct 7 13:10:46 2026 +0800|luci: remove `curl_direct` related logic
+2708533e|A-BO|Wed Oct 7 12:56:45 2026 +0800|luci: modify the unit for the hy2 quic receive window setting
 </details>

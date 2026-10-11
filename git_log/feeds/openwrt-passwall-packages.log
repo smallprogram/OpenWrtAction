@@ -1,14 +1,13 @@
 <details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/cadc39bc5cfc67098de4797d52b1f12673351f09...6841a0c6b65459537e1bfde7c6b68d3fc987f8f3)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/6841a0c6b65459537e1bfde7c6b68d3fc987f8f3...1af0a5c4fb3a227201683b64d32f61c65db9be72)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-6841a0c|David Mandy|Tue Oct 6 20:41:23 2026 +0800|naiveproxy: update to 154.0.8037.49-3 (#741)
-eb51f2b|David Mandy|Mon Oct 5 15:51:30 2026 +0800|hysteria: update to 2.13.0 (#740)
-e0d0f37|A-BO|Sun Oct 4 12:47:46 2026 +0800|ci: update code
-3ba85f8|David Mandy|Wed Sep 30 17:25:24 2026 +0800|xray-core: update to 26.9.30 (#735)
-cadc39b|David Mandy|Wed Sep 30 17:25:24 2026 +0800|xray-core: update to 26.9.30 (#735)
-1a5de47|David Mandy|Wed Sep 30 17:25:07 2026 +0800|geoview: update to 0.2.7 (#737)
+1af0a5c|David Mandy|Sat Oct 10 18:55:50 2026 +0800|xray-core: update to 26.10.10 (#745)
+3e311d8|David Mandy|Sat Oct 10 18:43:23 2026 +0800|v2ray-geosite: update to 202610092207 (#746)
+c1055aa|David Mandy|Sat Oct 10 18:43:09 2026 +0800|v2ray-geoip: update to 202610080033 (#744)
+9178f2e|David Mandy|Fri Oct 9 14:51:42 2026 +0800|sing-box: update to 1.14.3 (#743)
+f4d7ad4|David Mandy|Wed Oct 7 21:46:23 2026 +0800|naiveproxy: update to 154.0.8037.49-4 (#742)
 </details>

@@ -1,9 +1,9 @@
 <details> <summary> <b>routing new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/routing/compare/cc66db23430a923df3fe7941a097c5fd4040087b...b32747dca62435f1ea01b7a5320c3da15eead46f)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/routing/compare/b32747dca62435f1ea01b7a5320c3da15eead46f...23912fb99fc2fd0888466eb5f4f550651bc12aa3)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-b32747d|Rob White|Fri Oct 2 15:31:56 2026 +0100|mesh11sd: update to version 7.3.0
+23912fb|Simon Polack|Sun Oct 11 14:04:40 2026 +0200|olsrd: ubus: forget an interface that is already gone
 </details>
