@@ -17,3 +17,5 @@ sed -i "2s/\*.*/*cbad1c9/" log.txt
 line=$(sed -n '2p' log.txt)
 a=$(echo "$line" | sed -n 's/.*:\(.*\)\*.*/\1/p')
 b=$(echo "$line" | sed -n 's/.*\*\(.*\)/\1/p')
+
+test
