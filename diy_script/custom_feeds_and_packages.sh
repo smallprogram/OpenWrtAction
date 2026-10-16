@@ -27,7 +27,7 @@ clone_custom_packages () {
 
     # 主题
     git clone https://github.com/jerrykuku/luci-theme-argon.git ${path}luci-theme-argon
-    git clone https://github.com/jerrykuku/luci-app-argon-config.git ${path}luci-app-argon-config
+    # git clone https://github.com/jerrykuku/luci-app-argon-config.git ${path}luci-app-argon-config
     git clone https://github.com/sirpdboy/luci-theme-kucat.git ${path}luci-theme-kucat
     git clone https://github.com/sirpdboy/luci-app-kucat-config.git ${path}luci-app-kucat-config
     git clone https://github.com/eamonxg/luci-theme-aurora.git ${path}luci-theme-aurora
