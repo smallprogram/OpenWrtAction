@@ -1,0 +1,15 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/luci/compare/d6167ea0645cbd1327708d85f94824f42d0eb872...36e3f0d13622f5be6d59d9ba257811914d76e34d)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+36e3f0d136|Tianling Shen|Fri Oct 2 20:21:50 2026 +0800|luci-app-homeproxy: bump to latest git HEAD
+7401b13586|Interesting Gang|Mon Oct 5 21:33:54 2026 +0800|luci-app-passwall: bump to 26.10.16
+bbb76470ea|Interesting Gang|Fri Oct 2 07:29:57 2026 +0800|luci-app-passwall: bump to 26.10.4
+5a7cb5f49c|Interesting Gang|Thu Sep 17 20:10:49 2026 +0800|luci-app-passwall: bump to 26.10.1
+860893468c|Interesting Gang|Wed Sep 9 15:26:28 2026 +0800|luci-app-passwall: bump to 26.9.16
+d422656c22|Interesting Gang|Wed Sep 2 12:11:21 2026 +0800|luci-app-passwall: bump to 26.9.9
+e34ea91b94|Tianling Shen|Fri Oct 2 20:26:30 2026 +0800|luci-app-wechatpush: sync with upstream source
+</details>

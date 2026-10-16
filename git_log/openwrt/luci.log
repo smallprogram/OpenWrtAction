@@ -1,17 +1,13 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/6e4d9796f8ef8390fe60b56a079e1d5209ad335e...8125d1288b359f6df505d3328b712bf059843fc8)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/8125d1288b359f6df505d3328b712bf059843fc8...75a306df84a020c57a631ef5b4c02ace56d93387)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-8125d1288b|Ivan Kvashonkin|Sun Oct 11 09:12:30 2026 +0300|treewide: wrap loose view content in cbi-section
-350fc91967|Hannu Nyman|Sat Oct 10 16:55:38 2026 +0300|treewide: backport i18n translations
-d1cd725b3e|Ivan Kvashonkin|Sat Oct 10 16:50:48 2026 +0300|luci-theme-footstrap: full load after a page litters body
-4077dc76aa|Ivan Kvashonkin|Sat Oct 10 16:50:27 2026 +0300|luci-theme-footstrap: use autofocus and shared input checks
-34064ffd47|Ivan Kvashonkin|Sat Oct 10 16:50:13 2026 +0300|luci-theme-footstrap: dedupe js and drop pre-24.10 paths
-4627f3a8b6|Ivan Kvashonkin|Sat Oct 10 16:49:59 2026 +0300|luci-theme-footstrap: drop dead css rules and tokens
-8ccab69817|Ivan Kvashonkin|Sat Oct 10 16:49:39 2026 +0300|luci-theme-footstrap: remove unused plugin and search api
-afa18ed184|Ivan Kvashonkin|Sat Oct 10 16:49:22 2026 +0300|luci-theme-footstrap: fix foreign-app styling
-a450f0d67c|Julius Bairaktaris|Sat Aug 1 04:27:18 2026 +0200|luci-app-ddns: quote the date format passed to the shell
+75a306df84|Dirk Brenken|Thu Oct 15 17:49:21 2026 +0200|luci-app-adblock: fix a caching glitch
+cf0ce5b425|Dirk Brenken|Thu Oct 15 17:39:24 2026 +0200|luci-app-banip: fix a caching glitch
+dc433f3d2e|Dirk Brenken|Thu Oct 15 17:09:39 2026 +0200|luci-app-banip: sync with base package
+ae5571bc7a|Dirk Brenken|Thu Oct 15 13:01:31 2026 +0200|luci-app-adblock: sync with base package
+74c485ab71|Dirk Brenken|Wed Oct 14 12:54:21 2026 +0200|luci-app-travelmate sync with base packages
 </details>

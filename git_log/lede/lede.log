@@ -1,18 +1,24 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/88f08888bbd5804b660379f185125536d7d44ea1...d5ccef5f796981c79811f27722596173482a35e3)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/d5ccef5f796981c79811f27722596173482a35e3...30169012ecc638da9a7ecde72037d624da67b131)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
+30169012e|coolsnowwolf|Thu Oct 15 23:37:37 2026 +0800|dnsmasq: update to 2.93
+deb9903e2|coolsnowwolf|Thu Oct 15 23:20:07 2026 +0800|dnsmasq: use netlink for simple nftset address updates
+4ed9d50c0|coolsnowwolf|Thu Oct 15 23:19:11 2026 +0800|firewall4: fix undefined fullcone argument for IPv6 masquerading
+e2c1ff042|coolsnowwolf|Wed Oct 14 16:35:45 2026 +0800|linux-firmware: update to 20260910 and add RTL8261C firmware
+dcafc376a|coolsnowwolf|Tue Oct 13 19:27:50 2026 +0800|ipq-wifi: use zstd source archive
+6cec749dc|coolsnowwolf|Tue Oct 13 19:27:50 2026 +0800|ustream-ssl: use zstd source archive
+d56b61da8|coolsnowwolf|Tue Oct 13 19:27:50 2026 +0800|uclient: use zstd source archive
+a520c88ce|coolsnowwolf|Tue Oct 13 19:27:50 2026 +0800|hostapd: use zstd source archive
+ff7be3fa2|coolsnowwolf|Sun Oct 11 21:02:31 2026 +0800|tools: firmware-utils: update to Git HEAD (2026-09-30)
+ee9726bef|coolsnowwolf|Sun Oct 11 13:45:45 2026 +0800|ath10k-ct: fix fortify build error on Linux 6.6
+14ac60bd9|coolsnowwolf|Sun Oct 11 13:45:37 2026 +0800|ath79: fix builds with shared driver sources
+b50341874|DoveKi|Sun Oct 11 13:03:25 2026 +0800|mediatek: add stock layout support for Redmi Router AX6000 (#14212)
 d5ccef5f7|coolsnowwolf|Sun Oct 11 21:02:31 2026 +0800|tools: firmware-utils: update to Git HEAD (2026-09-30)
 27d57f45e|coolsnowwolf|Sun Oct 11 13:45:45 2026 +0800|ath10k-ct: fix fortify build error on Linux 6.6
 02629de75|coolsnowwolf|Sun Oct 11 13:45:37 2026 +0800|ath79: fix builds with shared driver sources
-73bc2d2fe|DoveKi|Sun Oct 11 13:03:25 2026 +0800|mediatek: add stock layout support for Redmi Router AX6000 (#14212)
-1d585dc90|coolsnowwolf|Fri Oct 9 03:19:17 2026 +0800|mediatek: complete TL-7DR7299 v1 Ethernet and upgrade support
-4b159f4ca|coolsnowwolf|Thu Oct 8 12:15:50 2026 +0800|kernel: fix resolve_btfids host libelf detection on 5.10
-83d271087|coolsnowwolf|Wed Oct 7 20:25:33 2026 +0800|default-settings: generate revision in Beijing time
-0bf8f083b|coolsnowwolf|Wed Oct 7 15:55:27 2026 +0800|qualcommax: refresh patches for Linux 6.12.112
-11d67efe2|coolsnowwolf|Wed Oct 7 15:44:40 2026 +0800|mediatek: add support for CLX S20L
-f9afd0ed6|coolsnowwolf|Wed Oct 7 03:52:35 2026 +0800|kernel: fix nft flow offload with unknown forward paths
+
 </details>

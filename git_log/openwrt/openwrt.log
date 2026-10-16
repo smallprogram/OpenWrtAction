@@ -1,19 +1,14 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/0110eab5aa100fe7334bcca50398b632869aa16a...58efa9917d4cc53fceed173529a286187649e827)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/58efa9917d4cc53fceed173529a286187649e827...6790b061252e34b97c8d7ad646dbb84b186a1445)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-58efa9917d|Shiji Yang|Wed May 20 18:20:50 2026 +0800|uboot-mediatek: fix malformed patch
-66673aad8f|Sander van Deijck|Sun Sep 27 17:41:59 2026 +0200|wolfssl: update to 5.9.4
-1682d87632|Felix Fietkau|Fri Jul 10 14:45:10 2026 +0200|wifi-scripts: pass multicast_to_unicast as an integer
-c740570351|David Bauer|Wed Oct 7 15:48:17 2026 +0200|hostapd: refresh patches
-647fabb38c|David Bauer|Wed Oct 7 15:46:29 2026 +0200|hostapd: depend ubus support on base64
-7f72f1c356|John Crispin|Mon Aug 4 07:37:47 2025 +0200|hostapd: add raw beacon report data to ubus notification
-2da3e5c149|Serv Pol|Sun Oct 4 17:32:20 2026 +0300|ath79: gl-e750: fix 5 GHz calibration on V2
-6100eec644|Hauke Mehrtens|Sun Oct 4 23:09:25 2026 +0200|umdns: update to Git HEAD (2026-10-04)
-4b42bd73a2|Hauke Mehrtens|Sun Oct 4 18:34:01 2026 +0200|uhttpd: update to Git HEAD (2026-08-24)
-b97f66de32|Gilberto Conde|Sat Oct 3 23:34:04 2026 +0300|kernel: qmi_wwan: add support for Quectel EG120K-EA
-099e5bc518|Hauke Mehrtens|Sat Oct 3 19:08:23 2026 +0200|mt76: cherry pick upstream Linux patches from 6.18.55
+6790b06125|Yalei Zang|Wed Sep 23 20:54:42 2026 +0800|airoha: backport EN7581 device-tree updates
+9f89ef7bd2|David Bauer|Fri Oct 16 00:48:16 2026 +0200|hostapd: bump PKG_RELEASE
+3f0f32ac6b|Felix Fietkau|Wed Mar 18 15:58:52 2026 +0000|hostapd: ubus: fix beacon request reporting detail field size
+8ff015a72b|Felix Fietkau|Wed Mar 18 15:58:37 2026 +0000|hostapd: ubus: fix beacon request buffer overflow with reporting detail
+fd75710151|John Crispin|Tue Jul 29 14:04:16 2025 +0200|hostapd: add reporting detail support to RRM beacon request
+da898a239d|Hsiu-Chi Tsai|Fri Oct 9 06:54:16 2026 +0800|ramips: ethernet: ralink: check napi_complete_done() result
 </details>

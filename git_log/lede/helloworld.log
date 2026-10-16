@@ -1,14 +1,9 @@
 <details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/c39f1e350105f5fc6445506f03363c5bfa44273b...2d9199beb9f363156d83863e1cae42cda87c161d)  
+#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/2d9199beb9f363156d83863e1cae42cda87c161d...1f0849ec0668e59865c30ab7d89bb2139c270d00)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-2d9199b|coolsnowwolf|Sun Oct 11 18:06:00 2026 +0800|luci-app-ssr-plus: fix logger argument handling
-f2e92f4|coolsnowwolf|Fri Oct 9 01:21:19 2026 +0800|luci-app-ssr-plus: make Mihomo optional on ARM targets
-16617be|coolsnowwolf|Wed Oct 7 18:08:44 2026 +0800|luci-app-ssr-plus: fix legacy SS subscription parsing with Xray
-baf2040|coolsnowwolf|Wed Oct 7 17:42:40 2026 +0800|xray-core: restore legacy VMess alterId outbound support
-afb3aaf|coolsnowwolf|Wed Oct 7 15:26:12 2026 +0800|luci-app-ssr-plus: add optional IPv6 traffic proxy support
-b791299|coolsnowwolf|Wed Oct 7 14:52:09 2026 +0800|luci-app-ssr-plus: fix DNS forwarding in nftables GFW mode
+1f0849e|zxlhhyccc|Wed Oct 14 20:08:26 2026 +0800|luci-app-ssr-plus: fix(ipv6): add missing @gmlan6 rule in nftables backend Problem:   ipv6_policy_rules() in ipv6.sh (nftables backend) is missing the   gmlan6 match that the iptables backend already has. In router mode,   traffic sourced from the game-mode LAN set is not routed through   the proxy on IPv6, while IPv4 handles it correctly via the   equivalent gmlan rule.
 </details>

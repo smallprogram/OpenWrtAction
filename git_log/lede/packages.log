@@ -1,16 +1,13 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/51c86b499c149255c8b04821f6f6726705dc3772...7932e2af2573b98932fa3aa7d3f3129fbe7fa5de)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/7932e2af2573b98932fa3aa7d3f3129fbe7fa5de...d0f211716bf1f69f8a638b49023d2256749a1613)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-7932e2af|coolsnowwolf|Sun Oct 11 15:10:47 2026 +0800|nlbwmon: preserve traffic database on sysupgrade
-8127addd|coolsnowwolf|Sun Oct 11 14:04:47 2026 +0800|igmpproxy: fix autoreconf build failure
-1add1d0c|github-actions[bot]|Fri Oct 9 09:16:47 2026 +0000|ci: sync upstream packages
-cdff9ca6|coolsnowwolf|Fri Oct 9 13:41:35 2026 +0800|ksmbd-tools: disable network sharing by default
-6c2ee823|coolsnowwolf|Fri Oct 9 01:21:17 2026 +0800|adblock: disable filtering by default
-8a8e3132|coolsnowwolf|Thu Oct 8 19:24:46 2026 +0800|ksmbd-tools: use the OOT server module on Linux 6.6
-c72b5466|coolsnowwolf|Wed Oct 7 20:14:52 2026 +0800|qt6base: allow builds through symlinked paths
-03ead879|coolsnowwolf|Wed Oct 7 15:09:56 2026 +0800|adblock: sync 4.5.8 and adblock-fast 1.2.4 with OpenWrt
+d0f21171|coolsnowwolf|Fri Oct 16 16:33:03 2026 +0800|pon: import Airoha packages with conditional Linux 5.4 patches
+3ba0aeef|github-actions[bot]|Thu Oct 15 07:34:23 2026 +0000|ci: sync upstream packages
+3d95b298|github-actions[bot]|Wed Oct 14 03:06:16 2026 +0000|ci: sync upstream packages
+4c371ed4|coolsnowwolf|Wed Oct 14 11:05:52 2026 +0800|ci: add nikki to upstream package sync
+3cfeea42|coolsnowwolf|Tue Oct 13 19:38:55 2026 +0800|mwan3: retry disabled interfaces during startup
 </details>

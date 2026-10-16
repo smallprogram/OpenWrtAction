@@ -1,9 +1,25 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/84bd86384928955b568988ca0e09e2c78c75173d...52ddbd11d66106615543af7352bf84ae20e5f1f8)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/52ddbd11d66106615543af7352bf84ae20e5f1f8...9bd2f7b757f0e41b628ea6fd7e2659722a720540)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-52ddbd11d|Tianling Shen|Sat Oct 10 10:24:51 2026 +0800|postfix: fix build with kernel 7.x
+9bd2f7b75|Tianling Shen|Fri Oct 16 11:07:02 2026 +0800|Merge Official Source
+5e1b17059|Tianling Shen|Sat Oct 10 11:07:01 2026 +0800|v2ray-geodata: update to latest version
+be8bb5370|Tianling Shen|Sat Oct 10 10:58:49 2026 +0800|msgpack-c: update to 7.0.2
+bb2fce9ae|Tianling Shen|Sat Oct 10 10:53:41 2026 +0800|v2raya: backport memory fix for GeoIP parser
+73842ebc7|Dirk Brenken|Thu Oct 15 17:06:18 2026 +0200|banip: release 1.9.1-1
+71beb0dd2|Dirk Brenken|Thu Oct 15 07:43:34 2026 +0200|adblock: release 4.5.9-1
+84f4958af|Niklas Thorild|Mon Oct 12 18:18:36 2026 +0200|telegraf: update to 1.40.2
+bf57d9351|Remi Gacogne|Mon Oct 12 11:36:15 2026 +0200|dnsdist: update to 2.0.11
+fbb987072|Tianling Shen|Sat Oct 10 12:22:55 2026 +0800|qt6tools: Update to 6.12.0
+cabf7f6c0|Tianling Shen|Sat Oct 10 12:22:45 2026 +0800|qt6base: Update to 6.12.0
+2fc6de250|Tianling Shen|Sat Oct 10 11:30:59 2026 +0800|qBittorrent-Enhanced-Edition: update to 5.2.4.10
+cf6cb062e|Tianling Shen|Sat Oct 10 11:25:33 2026 +0800|qbittorrent: update to 5.2.4
+174022994|Tianling Shen|Sun Oct 4 18:00:08 2026 +0800|7z: Update to 26.03
+e3f62c013|Tianling Shen|Fri Oct 2 19:38:13 2026 +0800|naiveproxy: fix build with python3.9
+727f75697|Tianling Shen|Fri Oct 2 18:03:53 2026 +0800|gn: downgrade to 2026-06-27
+
+
 </details>

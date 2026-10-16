@@ -1,25 +1,25 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/ee3df650387c2c028937060f523d93c72c9cc38f...1a5fae4d664c480168504a367e5261d416e1e66a)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/1a5fae4d664c480168504a367e5261d416e1e66a...d811f45d8fd51054052969c6fe026fa4fa23c4d3)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-1a5fae4d6|Hannu Nyman|Sun Oct 11 09:54:16 2026 +0300|haveged: update to 1.9.26
-22117a5f8|Antonio Pastor|Sun Oct 4 22:56:34 2026 -0400|iniparser: update to 4.3.2
-5f5c13ba2|Alexandru Ardelean|Sat May 30 11:46:25 2026 +0300|kea: add functional test.sh covering all subpackages
-78174ad51|Alexandru Ardelean|Sat May 30 09:46:39 2026 +0300|kea: ship admin-utils.sh and kea-shell Python modules
-56897b43f|Josef Schlehofer|Mon Aug 10 10:18:30 2026 +0200|openzwave: rename version check test.sh to test-version.sh
-09b3650c0|Alexandru Ardelean|Sat May 2 22:03:39 2026 +0300|openzwave: add test.sh
-ae3e96196|Josef Schlehofer|Mon Aug 10 10:18:29 2026 +0200|domoticz: rename version check test.sh to test-version.sh
-949109aad|Josef Schlehofer|Sun Sep 27 17:12:17 2026 +0200|treewide: bump PKG_RELEASE of packages linking boost
-1afe1bab0|Alexandru Ardelean|Thu May 28 19:23:55 2026 +0300|kea: fix BOOST_STATIC_ASSERT use in src/lib/dns/rdataclass.cc
-0c170fce8|Philip Prindeville|Mon Jan 5 16:20:55 2026 -0700|kea: fix build issue with boost-1.90 static assert
-f87e84aae|Alexandru Ardelean|Sat May 2 21:50:05 2026 +0300|boost: build libquadmath only on some archs
-442e88d65|Carlos Miguel Ferreira|Fri Dec 26 22:34:05 2025 +0000|boost: updates package to version 1.90.0
-a019ca1af|Chris Swan|Wed Sep 9 15:03:42 2026 +0100|csshnpd: bump to c1.1.1 release
-5d6ecf480|Sandro Jäckel|Wed Sep 2 09:56:58 2026 +0200|tailscale: update to 1.102.3, disable the update feature
-354ae1413|Sandro Jäckel|Mon Jul 27 00:43:32 2026 +0200|tailscale: update to 1.102.2
+d811f45d8|Dirk Brenken|Fri Oct 16 09:50:36 2026 +0200|adblock: update 4.5.9-2
+5e1b17059|Tianling Shen|Sat Oct 10 11:07:01 2026 +0800|v2ray-geodata: update to latest version
+be8bb5370|Tianling Shen|Sat Oct 10 10:58:49 2026 +0800|msgpack-c: update to 7.0.2
+bb2fce9ae|Tianling Shen|Sat Oct 10 10:53:41 2026 +0800|v2raya: backport memory fix for GeoIP parser
+73842ebc7|Dirk Brenken|Thu Oct 15 17:06:18 2026 +0200|banip: release 1.9.1-1
+71beb0dd2|Dirk Brenken|Thu Oct 15 07:43:34 2026 +0200|adblock: release 4.5.9-1
+84f4958af|Niklas Thorild|Mon Oct 12 18:18:36 2026 +0200|telegraf: update to 1.40.2
+bf57d9351|Remi Gacogne|Mon Oct 12 11:36:15 2026 +0200|dnsdist: update to 2.0.11
+54fab7fa4|George Sapkin|Tue Oct 13 20:37:34 2026 +0300|golang: bump 1.26 to 1.26.9
+2e60045ba|Daniel F. Dickinson|Mon Oct 5 01:48:46 2026 -0400|zabbix: bump version to 7.0.31
+44854efff|Daniel F. Dickinson|Tue Sep 1 20:55:20 2026 -0400|zabbix: remove unneeded postinsts
+58302cd47|Daniel F. Dickinson|Sun Oct 11 00:28:04 2026 -0400|radicale3: security bump to version 3.8.3
+dc3d72691|Daniel F. Dickinson|Tue Oct 6 22:55:21 2026 -0400|radicale3: bump version 3.8.2
+54d77dd57|John Audia|Fri Oct 9 15:47:05 2026 -0400|openssh: update to 10.6_p1
+25772d8c1|Andrey Brusnik|Tue Aug 11 18:56:44 2026 +0200|unbound: add DNSSEC KSK-2024 and remove KSK-2010
 
 
 </details>

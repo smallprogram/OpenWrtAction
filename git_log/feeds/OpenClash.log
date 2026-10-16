@@ -1,0 +1,25 @@
+<details> <summary> <b>OpenClash new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/vernesong/OpenClash/compare/c3a33c1d3407956fdf8f0e0b7c1a4c52e6ad9593...e553e82e01c697aefbe1555261a503f425e00ccd)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+e553e82e|vernesong|Sun Oct 11 13:10:57 2026 +0800|0.48.002
+e5018342|vernesong|Sun Oct 11 05:55:11 2026 +0800|chore: remove upload file size limit
+773bbdb5|vernesong|Sat Oct 10 11:44:24 2026 +0800|0.48.001
+407ebe4c|vernesong|Sat Oct 10 11:42:47 2026 +0800|chore: refine style
+f760b443|vernesong|Fri Oct 9 12:04:16 2026 +0800|chore: add Tailscale & WiFi_Calling module
+7144dd66|vernesong|Thu Oct 8 12:15:27 2026 +0800|0.47.171
+b425840d|vernesong|Thu Oct 8 07:28:29 2026 +0800|chore: refine
+4677ac13|vernesong|Thu Oct 8 04:49:16 2026 +0800|fix #5344
+9883813b|vernesong|Thu Oct 8 01:59:58 2026 +0800|fix #5343
+98710c6e|vernesong|Wed Oct 7 07:42:15 2026 +0800|0.47.170
+03741d98|vernesong|Wed Oct 7 06:58:27 2026 +0800|chore: add unlock info mode for myip module
+33b42767|vernesong|Tue Oct 6 13:00:45 2026 +0800|fix #5340
+32f2cb25|vernesong|Tue Oct 6 11:41:22 2026 +0800|chore: adjust style
+5c378824|vernesong|Tue Oct 6 11:32:37 2026 +0800|chore: disable TCP Fast Open blackhole timeout for some builds
+66da7c29|vernesong|Mon Oct 5 07:01:23 2026 +0800|0.47.169
+
+
+</details>

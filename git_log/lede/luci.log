@@ -1,22 +1,20 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/2fa3f68a78e875fee86d9f9d55e38641834db225...3523701f340fe395f21ec033df946cb9519e14fa)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/3523701f340fe395f21ec033df946cb9519e14fa...11ed768ac3ba0d5a3a631ff15c8566790a724221)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-3523701f34|github-actions[bot]|Sun Oct 11 08:52:33 2026 +0000|ci: sync upstream luci applications
-c064bcfc08|github-actions[bot]|Sat Oct 10 08:30:38 2026 +0000|ci: sync upstream luci applications
-b3d139beff|coolsnowwolf|Fri Oct 9 21:46:08 2026 +0800|luci-mod-status: honor board port labels and hide CPU ports
-f74f25722e|coolsnowwolf|Fri Oct 9 20:14:10 2026 +0800|luci-theme-design: allow ten port status cards per desktop row
-2993d410a4|github-actions[bot]|Fri Oct 9 09:05:44 2026 +0000|ci: sync upstream luci applications
-012434cc43|coolsnowwolf|Fri Oct 9 13:41:35 2026 +0800|luci-app-ksmbd: default the enable option to disabled
-f496ba6e50|coolsnowwolf|Fri Oct 9 13:38:40 2026 +0800|luci-base: translate Very Low wireless transmit power into Chinese
-dde9c89171|github-actions[bot]|Thu Oct 8 08:59:02 2026 +0000|ci: sync upstream luci applications
-aa4cf73add|coolsnowwolf|Wed Oct 7 20:26:03 2026 +0800|luci-theme-bootstrap: hide empty revision brackets
-4231d7f7e0|github-actions[bot]|Wed Oct 7 08:40:07 2026 +0000|ci: sync upstream luci applications
-635645e0e1|coolsnowwolf|Wed Oct 7 16:01:53 2026 +0800|luci-mod-network: fix QCA WPA3 settings and encryption display
-cd51674ebd|coolsnowwolf|Wed Oct 7 14:45:43 2026 +0800|luci-app-adblock: sync adblock 4.5.8 and adblock-fast 1.2.4 UIs
-2ca460dfcb|coolsnowwolf|Wed Oct 7 12:09:36 2026 +0800|luci-mod-network: prefer active BSSID over configured MAC addresses
-adbd43e897|coolsnowwolf|Wed Oct 7 02:50:43 2026 +0800|luci-mod-network: support QCA OWE and restrict 6 GHz security
+11ed768ac3|github-actions[bot]|Fri Oct 16 07:11:00 2026 +0000|ci: sync upstream luci applications
+7607a48fca|coolsnowwolf|Thu Oct 15 23:52:51 2026 +0800|luci-theme-design: align standalone top-level menu links
+df780628b9|github-actions[bot]|Thu Oct 15 07:27:53 2026 +0000|ci: sync upstream luci applications
+ff1f7d12fe|coolsnowwolf|Wed Oct 14 19:51:29 2026 +0800|luci: expose AN758x hardware offload and fix NPU firmware version
+e13753d016|coolsnowwolf|Wed Oct 14 16:44:11 2026 +0800|luci-base: translate MTK wireless settings into Simplified Chinese
+176f9a8c95|coolsnowwolf|Wed Oct 14 15:47:05 2026 +0800|luci-mod-network: fix MTK noscan and initial bitrate display
+096ea464ed|github-actions[bot]|Wed Oct 14 07:39:31 2026 +0000|ci: sync upstream luci applications
+87374b87b9|coolsnowwolf|Wed Oct 14 15:18:36 2026 +0800|luci-mod-network: show MTK EHT theoretical bitrate
+cae27bd8ad|github-actions[bot]|Tue Oct 13 09:26:36 2026 +0000|ci: sync upstream luci applications
+c8bc2610ae|github-actions[bot]|Mon Oct 12 09:14:02 2026 +0000|ci: sync upstream luci applications
+0a197629e9|coolsnowwolf|Mon Oct 12 02:26:40 2026 +0800|luci-app-diskman: show eMMC health and protect leading free space
+3849950fc3|coolsnowwolf|Mon Oct 12 02:20:12 2026 +0800|luci-app-diskman: improve layout and identify firmware partitions
 </details>
