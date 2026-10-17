@@ -1,15 +1,19 @@
 <details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/2de5aee7a4c704a5b689fdab47b97a18ad11c1a2...74ab9b7901c98ad21fc927b176ac06921d88e3a4)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/74ab9b7901c98ad21fc927b176ac06921d88e3a4...c2f83897a23534407ed5035f51565ae2eb3a1462)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-74ab9b7|A-BO|Fri Oct 16 22:03:08 2026 +0800|luci: support pipe-separated subscription filter keywords and optimize matching
-492309e|A-BO|Tue Oct 13 20:32:32 2026 +0800|luci: add download progress display in app updates
-69542fe|A-BO|Tue Oct 13 20:15:59 2026 +0800|luci: reduce HAProxy URL health check overhead and optimize check scheduling
-04b7a66|A-BO|Tue Oct 13 20:01:28 2026 +0800|luci: deduplicate node selector group data and isolate caches
-b8fa2cc|A-BO|Tue Oct 13 19:52:24 2026 +0800|luci: optimize binary version cache
-380a690|A-BO|Tue Oct 13 19:40:58 2026 +0800|luci: refactor curl direct download logic
-50c4314|A-BO|Tue Oct 13 01:45:44 2026 +0800|luci: fix acl config
+c2f8389|A-BO|Mon Oct 12 21:17:10 2026 +0800|luci: add odhcpd leases and static DHCP hosts to dnsmasq replicas
+5833edc|A-BO|Wed Oct 7 12:56:45 2026 +0800|luci: modify the unit for the hy2 quic receive window setting
+a008cdc|A-BO|Sun Oct 4 22:15:51 2026 +0800|luci: add quic receive window settings for hy2
+cb2ff04|A-BO|Sat Oct 3 20:42:18 2026 +0800|luci: fix the `remove` function in api
+4a2202c|A-BO|Fri Oct 2 19:30:18 2026 +0800|luci: detach cron jobs with setsid when available
+1509f6a|handsomeji|Tue Oct 6 17:44:10 2026 +0800|i18n: update
+25a36b5|A-BO|Sat Oct 17 12:56:32 2026 +0800|luci: add LuCI main program update function
+24595ef|A-BO|Sat Oct 17 00:56:16 2026 +0800|luci: add MASQUE support
+ab72ff4|A-BO|Sat Oct 17 00:30:02 2026 +0800|luci: refactor locking for subscription and rule updates
+fc2be8d|A-BO|Fri Oct 16 23:37:32 2026 +0800|luci: add github proxy in app update
+c7acd11|A-BO|Fri Oct 16 22:39:55 2026 +0800|luci: optimize iface hotplug code
 </details>

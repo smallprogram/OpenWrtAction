@@ -1,9 +1,11 @@
 <details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/2d9199beb9f363156d83863e1cae42cda87c161d...1f0849ec0668e59865c30ab7d89bb2139c270d00)  
+#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/1f0849ec0668e59865c30ab7d89bb2139c270d00...412179975d1709a74df4ddd595796e138d86c31a)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-1f0849e|zxlhhyccc|Wed Oct 14 20:08:26 2026 +0800|luci-app-ssr-plus: fix(ipv6): add missing @gmlan6 rule in nftables backend Problem:   ipv6_policy_rules() in ipv6.sh (nftables backend) is missing the   gmlan6 match that the iptables backend already has. In router mode,   traffic sourced from the game-mode LAN set is not routed through   the proxy on IPv6, while IPv4 handles it correctly via the   equivalent gmlan rule.
+4121799|zxl hhyccc|Sat Oct 17 19:00:18 2026 +0800|luci-app-ssr-plus: fix(shadowsocksr): don't pass empty flag vars as empty arguments
+356dd51|zxl hhyccc|Sat Oct 17 16:51:14 2026 +0800|luci-app-ssr-plus: fix(shadowsocksr): read custom_ports from global config
+59b2880|zxl hhyccc|Sat Oct 17 16:24:49 2026 +0800|luci-app-ssr-plus: fix(ssr-monitor): drop local keyword outside function scope,
 </details>

@@ -1,9 +1,0 @@
-<details> <summary> <b>luci-app-argon-config new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/jerrykuku/luci-app-argon-config/compare/3f844c467ce5075e2b0dd61ebf7271640eb08da2...445af53fbee6e00fa6efc0ae33f8b2854df65500)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-445af53|老竭力|Mon Oct 12 10:38:25 2026 +0800|fix(branding): validate PNG uploads with OpenWrt tools
-</details>

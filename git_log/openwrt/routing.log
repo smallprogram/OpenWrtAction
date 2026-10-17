@@ -1,9 +1,0 @@
-<details> <summary> <b>routing new commit log :rocket: </b> </summary>
-
-#### [:mega: Full Changelog. ](https://github.com/openwrt/routing/compare/23912fb99fc2fd0888466eb5f4f550651bc12aa3...48c808034414a2112cf9d5261a20a320e8d0d170)  
-:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
-
-SHA|Author|Date|Message
--|-|-|-
-48c8080|Rob White|Tue Oct 13 22:47:38 2026 +0100|mesh11sd: update to version 7.3.1
-</details>

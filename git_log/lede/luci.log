@@ -1,20 +1,10 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/3523701f340fe395f21ec033df946cb9519e14fa...11ed768ac3ba0d5a3a631ff15c8566790a724221)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/11ed768ac3ba0d5a3a631ff15c8566790a724221...26c82e0a16643927a29e7cf2d55ddf4ca1ca97b4)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-11ed768ac3|github-actions[bot]|Fri Oct 16 07:11:00 2026 +0000|ci: sync upstream luci applications
-7607a48fca|coolsnowwolf|Thu Oct 15 23:52:51 2026 +0800|luci-theme-design: align standalone top-level menu links
-df780628b9|github-actions[bot]|Thu Oct 15 07:27:53 2026 +0000|ci: sync upstream luci applications
-ff1f7d12fe|coolsnowwolf|Wed Oct 14 19:51:29 2026 +0800|luci: expose AN758x hardware offload and fix NPU firmware version
-e13753d016|coolsnowwolf|Wed Oct 14 16:44:11 2026 +0800|luci-base: translate MTK wireless settings into Simplified Chinese
-176f9a8c95|coolsnowwolf|Wed Oct 14 15:47:05 2026 +0800|luci-mod-network: fix MTK noscan and initial bitrate display
-096ea464ed|github-actions[bot]|Wed Oct 14 07:39:31 2026 +0000|ci: sync upstream luci applications
-87374b87b9|coolsnowwolf|Wed Oct 14 15:18:36 2026 +0800|luci-mod-network: show MTK EHT theoretical bitrate
-cae27bd8ad|github-actions[bot]|Tue Oct 13 09:26:36 2026 +0000|ci: sync upstream luci applications
-c8bc2610ae|github-actions[bot]|Mon Oct 12 09:14:02 2026 +0000|ci: sync upstream luci applications
-0a197629e9|coolsnowwolf|Mon Oct 12 02:26:40 2026 +0800|luci-app-diskman: show eMMC health and protect leading free space
-3849950fc3|coolsnowwolf|Mon Oct 12 02:20:12 2026 +0800|luci-app-diskman: improve layout and identify firmware partitions
+26c82e0a16|github-actions[bot]|Sat Oct 17 06:58:10 2026 +0000|ci: sync upstream luci applications
+6f91cc8aa7|coolsnowwolf|Sat Oct 17 13:42:20 2026 +0800|luci-mod-network: limit IPQ8074 V1 channel widths to 80 MHz
 </details>

@@ -1,25 +1,9 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/b0449b1d1139cb730eef7acdf61f60897a140c9d...d8ec3c81988d775ba16ade9059cd972d5d5b8bc0)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/d8ec3c81988d775ba16ade9059cd972d5d5b8bc0...5bd0740772940edef9cd45bfc4a9f796933c54d9)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-d8ec3c81|A-BO|Fri Oct 16 21:52:50 2026 +0800|luci: bump 26.10.16-2
-d048e632|A-BO|Fri Oct 16 21:41:08 2026 +0800|luci: optimize and fix
-743d9edf|A-BO|Fri Oct 16 21:26:35 2026 +0800|luci: support pipe-separated subscription filter keywords and optimize matching
-31d11ce5|A-BO|Fri Oct 16 20:03:42 2026 +0800|luci: Fix SmartDNS auto fallback with CNAME records
-b15b5799|A-BO|Fri Oct 16 00:45:04 2026 +0800|luci: bump 26.10.16
-e4d136e1|A-BO|Fri Oct 16 00:43:05 2026 +0800|luci: Remove unused translation entries from passwall.po
-aa28b352|A-BO|Fri Oct 16 00:11:43 2026 +0800|luci: Fix some field translations
-c3bf105c|A-BO|Thu Oct 15 23:43:27 2026 +0800|luci: support xray masque warp (client)
-8cf35732|A-BO|Thu Oct 15 21:24:55 2026 +0800|luci: Adjust SmartDNS direct DNS config
-356dc9c4|A-BO|Thu Oct 15 01:56:38 2026 +0800|luci: refactor SmartDNS logic
-586d7cf6|ShanStone|Wed Oct 14 17:19:20 2026 +0800|luci: make insert_nftset function accept pipe input only
-8f732385|A-BO|Wed Oct 14 03:22:05 2026 +0800|luci: Add automatic mode for SmartDNS default DNS
-09115691|A-BO|Tue Oct 13 01:43:07 2026 +0800|luci: fix acl config
-1856616a|A-BO|Tue Oct 13 01:25:22 2026 +0800|luci: deduplicate node selector group data and isolate caches
-61b39bce|A-BO|Tue Oct 13 00:02:26 2026 +0800|luci: optimize binary version cache
-
-
+5bd07407|A-BO|Sat Oct 17 00:33:42 2026 +0800|luci: optimize
 </details>

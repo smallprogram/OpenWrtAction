@@ -1,25 +1,9 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/1a5fae4d664c480168504a367e5261d416e1e66a...d811f45d8fd51054052969c6fe026fa4fa23c4d3)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/d811f45d8fd51054052969c6fe026fa4fa23c4d3...f9fe78b923d4603988c9fc9cadf008f75964988a)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-d811f45d8|Dirk Brenken|Fri Oct 16 09:50:36 2026 +0200|adblock: update 4.5.9-2
-5e1b17059|Tianling Shen|Sat Oct 10 11:07:01 2026 +0800|v2ray-geodata: update to latest version
-be8bb5370|Tianling Shen|Sat Oct 10 10:58:49 2026 +0800|msgpack-c: update to 7.0.2
-bb2fce9ae|Tianling Shen|Sat Oct 10 10:53:41 2026 +0800|v2raya: backport memory fix for GeoIP parser
-73842ebc7|Dirk Brenken|Thu Oct 15 17:06:18 2026 +0200|banip: release 1.9.1-1
-71beb0dd2|Dirk Brenken|Thu Oct 15 07:43:34 2026 +0200|adblock: release 4.5.9-1
-84f4958af|Niklas Thorild|Mon Oct 12 18:18:36 2026 +0200|telegraf: update to 1.40.2
-bf57d9351|Remi Gacogne|Mon Oct 12 11:36:15 2026 +0200|dnsdist: update to 2.0.11
-54fab7fa4|George Sapkin|Tue Oct 13 20:37:34 2026 +0300|golang: bump 1.26 to 1.26.9
-2e60045ba|Daniel F. Dickinson|Mon Oct 5 01:48:46 2026 -0400|zabbix: bump version to 7.0.31
-44854efff|Daniel F. Dickinson|Tue Sep 1 20:55:20 2026 -0400|zabbix: remove unneeded postinsts
-58302cd47|Daniel F. Dickinson|Sun Oct 11 00:28:04 2026 -0400|radicale3: security bump to version 3.8.3
-dc3d72691|Daniel F. Dickinson|Tue Oct 6 22:55:21 2026 -0400|radicale3: bump version 3.8.2
-54d77dd57|John Audia|Fri Oct 9 15:47:05 2026 -0400|openssh: update to 10.6_p1
-25772d8c1|Andrey Brusnik|Tue Aug 11 18:56:44 2026 +0200|unbound: add DNSSEC KSK-2024 and remove KSK-2010
-
-
+f9fe78b92|Sandro Jäckel|Tue Oct 13 00:14:07 2026 +0200|tailscale: update to 1.104.1
 </details>
