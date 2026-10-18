@@ -1,0 +1,11 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/d0f211716bf1f69f8a638b49023d2256749a1613...db878c7c6a2b6af593f0b02281f738dad3d7670f)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+db878c7c|coolsnowwolf|Sun Oct 18 22:21:40 2026 +0800|pon: clarify LOID status and retain OMCI parse error details
+2e083a2d|coolsnowwolf|Sun Oct 18 21:59:22 2026 +0800|pon: fix BSP EPON OAM FCS and CTC version negotiation
+0249bd55|coolsnowwolf|Sun Oct 18 14:02:43 2026 +0800|luci-app-pon: restore hardware identity menu marker at boot
+</details>

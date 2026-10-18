@@ -1,10 +1,13 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/11ed768ac3ba0d5a3a631ff15c8566790a724221...26c82e0a16643927a29e7cf2d55ddf4ca1ca97b4)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/26c82e0a16643927a29e7cf2d55ddf4ca1ca97b4...2189eb728b6d8bbe30b455b989c5ba49b557e5e2)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-26c82e0a16|github-actions[bot]|Sat Oct 17 06:58:10 2026 +0000|ci: sync upstream luci applications
-6f91cc8aa7|coolsnowwolf|Sat Oct 17 13:42:20 2026 +0800|luci-mod-network: limit IPQ8074 V1 channel widths to 80 MHz
+2189eb728b|coolsnowwolf|Sun Oct 18 15:26:29 2026 +0800|luci-mod-status: avoid scanning external storage on first login
+5246d16b90|github-actions[bot]|Sun Oct 18 07:14:43 2026 +0000|ci: sync upstream luci applications
+2626f7c178|coolsnowwolf|Sun Oct 18 12:50:16 2026 +0800|luci-mod-status: defer vendor wireless queries on overview
+82cc65957f|coolsnowwolf|Sun Oct 18 11:56:11 2026 +0800|luci-app-diskman: select external exFAT driver on Linux 5.4
+209ec8209f|coolsnowwolf|Sat Oct 17 23:05:40 2026 +0800|luci-mod-network: keep MTWIFI AP badges in transmit-power units
 </details>

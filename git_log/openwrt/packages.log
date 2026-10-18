@@ -1,9 +1,11 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/d811f45d8fd51054052969c6fe026fa4fa23c4d3...f9fe78b923d4603988c9fc9cadf008f75964988a)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/f9fe78b923d4603988c9fc9cadf008f75964988a...093d551675b1119a06ef224d419905e8d6b2af1a)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-f9fe78b92|Sandro Jäckel|Tue Oct 13 00:14:07 2026 +0200|tailscale: update to 1.104.1
+093d55167|Ray Wang|Sat Oct 17 13:32:41 2026 +0800|hev-socks5-tunnel: update to 2.19.0
+457e1338f|Dirk Brenken|Sat Oct 17 15:10:28 2026 +0200|banip: update 1.9.1-2
+1561fa6b2|Dirk Brenken|Sat Oct 17 14:34:53 2026 +0200|adblock: update 4.5.9-3
 </details>

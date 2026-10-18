@@ -1,19 +1,9 @@
 <details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/74ab9b7901c98ad21fc927b176ac06921d88e3a4...c2f83897a23534407ed5035f51565ae2eb3a1462)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/c2f83897a23534407ed5035f51565ae2eb3a1462...e3788855d3cb3ddc3f4027ea2480d7c19019f033)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-c2f8389|A-BO|Mon Oct 12 21:17:10 2026 +0800|luci: add odhcpd leases and static DHCP hosts to dnsmasq replicas
-5833edc|A-BO|Wed Oct 7 12:56:45 2026 +0800|luci: modify the unit for the hy2 quic receive window setting
-a008cdc|A-BO|Sun Oct 4 22:15:51 2026 +0800|luci: add quic receive window settings for hy2
-cb2ff04|A-BO|Sat Oct 3 20:42:18 2026 +0800|luci: fix the `remove` function in api
-4a2202c|A-BO|Fri Oct 2 19:30:18 2026 +0800|luci: detach cron jobs with setsid when available
-1509f6a|handsomeji|Tue Oct 6 17:44:10 2026 +0800|i18n: update
-25a36b5|A-BO|Sat Oct 17 12:56:32 2026 +0800|luci: add LuCI main program update function
-24595ef|A-BO|Sat Oct 17 00:56:16 2026 +0800|luci: add MASQUE support
-ab72ff4|A-BO|Sat Oct 17 00:30:02 2026 +0800|luci: refactor locking for subscription and rule updates
-fc2be8d|A-BO|Fri Oct 16 23:37:32 2026 +0800|luci: add github proxy in app update
-c7acd11|A-BO|Fri Oct 16 22:39:55 2026 +0800|luci: optimize iface hotplug code
+e378885|A-BO|Sat Oct 17 21:01:58 2026 +0800|luci: optimize socks auto switch
 </details>
