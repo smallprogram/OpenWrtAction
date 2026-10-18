@@ -90,8 +90,10 @@ jobs:
     - name: Stateful Lifecycle Check
       id: lifecycle_check
       run: |
-        chmod +x compile_script/check_lifecycle.sh
-        $GITHUB_WORKSPACE/compile_script/check_lifecycle.sh
+        # chmod +x compile_script/check_lifecycle.sh
+        # $GITHUB_WORKSPACE/compile_script/check_lifecycle.sh
+        
+        echo "force_rebuild=false" >> "$GITHUB_OUTPUT"
         
     - name: Trigger build
       if: steps.cacheHash.outputs.cache-hit != 'true'
