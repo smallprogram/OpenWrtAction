@@ -10,4 +10,4 @@ rm -rf .config && make menuconfig && cat ../OpenWrtAction/config/seed/immortalwr
 rm -rf .config && make menuconfig && cat ../OpenWrtAction/config/seed/openwrt_seed.config >> .config && make defconfig && cp -f .config ../OpenWrtAction/config/openwrt_config/XXX.config
 
 ##### 初始化lean config
-rm -rf .config && make menuconfig && cat ../OpenWrtAction/config/seed/lean_seed.config >> .config && make defconfig && cp -f .config ../OpenWrtAction/config/leanlede_config/XXX.config
+rm -rf .config && make menuconfig && cat ../OpenWrtAction/config/seed/lean_seed.config >> .config && make defconfig && cp -f .config ../OpenWrtAction/config/lede_config/XXX.config

@@ -107,7 +107,7 @@ jobs:
 
       - name: Load Configuration
         run: |
-          cp -r config/leanlede_config/X86.config openwrt/.config
+          cp -r config/lede_config/X86.config openwrt/.config
           chmod +x diy_script/lean_diy/diy-part2.sh
           cd openwrt
           $GITHUB_WORKSPACE/diy_script/lean_diy/diy-part2.sh

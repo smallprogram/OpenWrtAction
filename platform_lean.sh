@@ -1,8 +1,8 @@
 # 默认源码文件夹名
-openwrt_dir_front=leanlede
+openwrt_dir_front=lede
 openwrt_dir=${openwrt_dir_front}_${openwrt_branch}_${config_name}
 # 默认的config目录
-config_dir=config/leanlede_config
+config_dir=config/lede_config
 # config列表
 config_list=($(ls /home/$user_name/OpenWrtAction/$config_dir))
 # feeds目录

@@ -26,7 +26,7 @@ immortalwrt_value='{
 lede_value='{
   "REPO_URL": "https://github.com/coolsnowwolf/lede",
   "REPO_BRANCH": "master",
-  "CONFIGS": "config/leanlede_config",
+  "CONFIGS": "config/lede_config",
   "DIY_P1_SH": "diy_script/lean_diy/diy-part1.sh",
   "DIY_P2_SH": "diy_script/lean_diy/diy-part2.sh",
   "DIY_P3_SH": "diy_script/lean_diy/diy-part3.sh",
