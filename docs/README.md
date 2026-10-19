@@ -234,9 +234,19 @@ Special thanks to the following projects/communities for providing inspiration a
 - And every enthusiastic user in the community ❤️
 
 <p align="center">
+  <a href="https://github.com/l0rdg3x"><img src="https://github.com/l0rdg3x.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/JuliusBairaktaris"><img src="https://github.com/JuliusBairaktaris.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/claude"><img src="https://github.com/claude.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/981213"><img src="https://github.com/981213.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/adschm"><img src="https://github.com/adschm.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/arinc9"><img src="https://github.com/arinc9.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/blocktrron"><img src="https://github.com/blocktrron.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/GeorgeSapkin"><img src="https://github.com/GeorgeSapkin.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/jmccrohan"><img src="https://github.com/jmccrohan.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/mhei"><img src="https://github.com/mhei.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
   <a href="https://github.com/1715173329"><img src="https://github.com/1715173329.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
   <a href="https://github.com/coolsnowwolf"><img src="https://github.com/coolsnowwolf.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
-  <a href="https://github.com/Beginner-Go"><img src="https://github.com/Beginner-Go.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/mirko"><img src="https://github.com/mirko.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
   <a href="https://github.com/graysky2"><img src="https://github.com/graysky2.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
   <a href="https://github.com/QiuSimons"><img src="https://github.com/QiuSimons.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
   <a href="https://github.com/Ansuel"><img src="https://github.com/Ansuel.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
