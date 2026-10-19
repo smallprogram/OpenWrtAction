@@ -228,8 +228,8 @@ Thanks to everyone who used, contributed to, and contributed to this project!
 
 Special thanks to the following projects/communities for providing inspiration and support for this project:
 
-- [immortalwrt](https://github.com/immortalwrt/immortalwrt.git)
 - [openwrt](https://github.com/openwrt/openwrt.git)
+- [immortalwrt](https://github.com/immortalwrt/immortalwrt.git)
 - [lede](https://github.com/coolsnowwolf/lede)
 - And every enthusiastic user in the community ❤️
 

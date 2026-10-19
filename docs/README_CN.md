@@ -228,8 +228,8 @@ bash wsl2op.sh
 
 特别鸣谢以下项目/社区为本项目提供了灵感与支持：
 
-- [immortalwrt](https://github.com/immortalwrt/immortalwrt.git)
 - [openwrt](https://github.com/openwrt/openwrt.git)
+- [immortalwrt](https://github.com/immortalwrt/immortalwrt.git)
 - [lede](https://github.com/coolsnowwolf/lede)
 - 以及社区中的每一位热心用户 ❤️
   
