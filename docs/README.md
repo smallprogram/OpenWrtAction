@@ -236,7 +236,7 @@ Special thanks to the following projects/communities for providing inspiration a
 <p align="center">
   <a href="https://github.com/l0rdg3x"><img src="https://github.com/l0rdg3x.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
   <a href="https://github.com/JuliusBairaktaris"><img src="https://github.com/JuliusBairaktaris.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
-  <a href="https://github.com/claude"><img src="https://github.com/claude.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
+  <a href="https://github.com/dibdot"><img src="https://github.com/dibdot.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
   <a href="https://github.com/981213"><img src="https://github.com/981213.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
   <a href="https://github.com/adschm"><img src="https://github.com/adschm.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
   <a href="https://github.com/arinc9"><img src="https://github.com/arinc9.png" width="75" style="border-radius:10%; margin: 5px;" /></a>
