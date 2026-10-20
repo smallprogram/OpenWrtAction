@@ -84,13 +84,22 @@
 |[![Build_Multi_Platform(V6)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build_Multi_Platform(V6).yml/badge.svg)](https://github.com/smallprogram/OpenWrtAction/actions/workflows/Build_Multi_Platform(V6).yml)|![](https://img.shields.io/badge/-IPv4-green) ![](https://img.shields.io/badge/-IPv6-yellowgreen)|![GitHub release (with filter)](https://img.shields.io/github/v/release/smallprogram/OpenWrtAction)|[![GitHub release (latest by date)](https://img.shields.io/github/downloads/smallprogram/OpenWrtAction/latest/total?style=flat-square)](https://github.com/smallprogram/OpenWrtAction/releases/latest)|
 
 
-> 每一个Release包含多个源码平台固件，请根据自己的平台选择对应的固件下载
 
-> 有时候可能某个Release没有你需要的固件，例如找不到X86固件，那有可能是Action中编译失败了，请耐心等待下次编译上传的Release
+## 📥 Release Guide
 
-> 每个Release包含各个平台的packages压缩包，名称格式为buildinfo_[源码平台]_[平台名称]，例如，`buildinfo_immortalwrt_X86`,如果你不想升级固件，只想升级某个ipk可以下载压缩包选择ipk上传至软路由安装即可。
-
-> 详细信息请参考release中的说明
+<table>
+  <tr>
+    <td width="75%" valign="top">
+      <p>每一个Release包含多个源码平台固件，请根据自己的平台选择对应的固件下载</p>
+      <p>有时候可能某个Release没有你需要的固件，例如找不到X86固件，那有可能是Action中编译失败了，请耐心等待下次编译上传的Release</p>
+      <p>每个Release包含各个平台的packages压缩包，名称格式为buildinfo_[源码平台]_[平台名称]，例如，<code>buildinfo_immortalwrt_X86</code>,如果你不想升级固件，只想升级某个ipk可以下载压缩包选择ipk上传至软路由安装即可</p>
+      <p>详细信息请参考release中的说明</p>
+    </td>
+    <td width="25%" valign="top">
+      <img src="pic/telegram.png" width="100%" alt="Telegram">
+    </td>
+  </tr>
+</table>
 ---
 
 ## 🌟 特色插件
