@@ -1,0 +1,13 @@
+<details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/214e26e407172790c0045f59afe03a9715608ef8...96f566f4a4d04ab44592314bc0279ba9e7de3de0)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+96f566f4a4|Tianling Shen|Tue Oct 20 17:10:52 2026 +0800|Merge Official Source
+450459bef3|Hauke Mehrtens|Sun Oct 18 02:11:07 2026 +0200|OpenWrt v25.12.6: revert to branch defaults
+64900e756e|Hauke Mehrtens|Sun Oct 18 02:11:00 2026 +0200|OpenWrt v25.12.6: adjust config defaults
+981c978eff|Josef Schlehofer|Wed Sep 30 13:30:47 2026 +0200|mac80211: realtek: use long TX report timeout for non-PCIe
+6790b06125|Yalei Zang|Wed Sep 23 20:54:42 2026 +0800|airoha: backport EN7581 device-tree updates
+</details>

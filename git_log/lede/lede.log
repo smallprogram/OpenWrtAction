@@ -1,0 +1,14 @@
+<details> <summary> <b>lede new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/30169012ecc638da9a7ecde72037d624da67b131...b941247a240b2e7e7e1245d96f09cd6605e779d1)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+b941247a2|coolsnowwolf|Wed Oct 21 15:44:14 2026 +0800|amlogic: enable GXL MDIO mux on Linux 6.18
+2def33628|coolsnowwolf|Wed Oct 21 13:58:36 2026 +0800|mac80211: fix brcmfmac build with stable kernels
+07cebbcf2|coolsnowwolf|Mon Oct 19 02:14:58 2026 +0800|fibocom-qmi-wwan: fix build with Linux 6.18
+4926579d2|coolsnowwolf|Mon Oct 19 01:57:26 2026 +0800|qualcommax: reduce ipq60xx kernel size
+20c3817f6|coolsnowwolf|Mon Oct 19 01:34:14 2026 +0800|amlogic: include Realtek PHY driver for Phicomm N1
+73824c52b|coolsnowwolf|Mon Oct 19 01:34:00 2026 +0800|mac80211: brcmfmac: disable survey dump for SDIO
+</details>

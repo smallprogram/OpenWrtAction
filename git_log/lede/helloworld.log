@@ -1,14 +1,19 @@
 <details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/412179975d1709a74df4ddd595796e138d86c31a...0d24da050f2354f48fe8992628054417a5c4b9da)  
+#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/0d24da050f2354f48fe8992628054417a5c4b9da...4e4dee0c0634ea6846d8e04f483fed675c3a0567)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-0d24da0|zxl hhyccc|Sun Oct 18 14:44:24 2026 +0800|redsocks2: update to 0.72
-1a7a1e4|zxl hhyccc|Sun Oct 18 14:30:43 2026 +0800|dns2socks-rust: update to 0.2.6
-0993f66|zxl hhyccc|Sun Oct 18 14:22:33 2026 +0800|hysteria: update to 2.13.0
-25188df|zxlhhyccc|Sun Oct 18 14:19:13 2026 +0800|naiveproxy: update to 154.0.8037.49-4
-46eff22|zxlhhyccc|Sun Oct 18 14:12:16 2026 +0800|gn: update to git HEAD
-2e60703|zxlhhyccc|Sun Oct 18 14:09:49 2026 +0800|xray-core: update to 26.10.17
+4e4dee0|coolsnowwolf|Wed Oct 21 17:10:39 2026 +0800|ci: fix Xray preparation and require complete release builds
+f681871|coolsnowwolf|Wed Oct 21 12:41:17 2026 +0800|xray-core: add Kcptun transport and LuCI settings
+a8d8c74|coolsnowwolf|Wed Oct 21 12:17:29 2026 +0800|xray-core: add ShadowTLS transport and LuCI configuration
+12b7dd5|coolsnowwolf|Wed Oct 21 11:56:39 2026 +0800|luci-app-ssr-plus: bump to 197 and disable legacy package defaults
+63a8904|coolsnowwolf|Wed Oct 21 11:50:50 2026 +0800|xray-core: add ShadowsocksR inbound and consolidate protocol patch
+a970802|coolsnowwolf|Wed Oct 21 10:47:38 2026 +0800|xray-core: add AnyTLS inbound and consolidate protocol patch
+092886c|coolsnowwolf|Wed Oct 21 10:31:53 2026 +0800|xray-core: add Mihomo Snell support and LuCI integration
+2a70c30|coolsnowwolf|Wed Oct 21 10:07:57 2026 +0800|xray-core: add Mihomo TUIC v4/v5 support and LuCI integration
+ac70ddc|coolsnowwolf|Wed Oct 21 09:43:46 2026 +0800|ci: replace naiveproxy release package with SSR Plus Chinese translation
+1cea3d2|coolsnowwolf|Wed Oct 21 02:20:24 2026 +0800|xray-core: add Mihomo ShadowsocksR outbound and LuCI support
+cc3862b|coolsnowwolf|Wed Oct 21 01:58:55 2026 +0800|xray-core: add Cronet NaiveProxy support and SSR Plus configuration
 </details>

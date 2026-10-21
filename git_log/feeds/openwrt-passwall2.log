@@ -1,9 +1,12 @@
 <details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/c2f83897a23534407ed5035f51565ae2eb3a1462...e3788855d3cb3ddc3f4027ea2480d7c19019f033)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/e3788855d3cb3ddc3f4027ea2480d7c19019f033...300ea00edaec392e935a83f019aa2a5053683652)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-e378885|A-BO|Sat Oct 17 21:01:58 2026 +0800|luci: optimize socks auto switch
+300ea00|A-BO|Tue Oct 20 23:21:05 2026 +0800|feat(subscribe): compute md5 on parsed nodes and decouple account info refresh
+20ecdbe|handsomeji|Tue Oct 20 18:14:05 2026 +0800|luci: bump to 26.10.20
+dd70743|ShanStone|Wed Oct 14 17:19:20 2026 +0800|luci: make insert_nftset function accept pipe input only
+6af638d|kuaifan|Tue Oct 20 17:29:44 2026 +0800|fix(app): return 0 from start() so boot creates ready.lock (#1324)
 </details>

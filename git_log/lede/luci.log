@@ -1,13 +1,14 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/26c82e0a16643927a29e7cf2d55ddf4ca1ca97b4...2189eb728b6d8bbe30b455b989c5ba49b557e5e2)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/2189eb728b6d8bbe30b455b989c5ba49b557e5e2...52fe2099ced3b25532d7607877223b4763a192a9)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-2189eb728b|coolsnowwolf|Sun Oct 18 15:26:29 2026 +0800|luci-mod-status: avoid scanning external storage on first login
-5246d16b90|github-actions[bot]|Sun Oct 18 07:14:43 2026 +0000|ci: sync upstream luci applications
-2626f7c178|coolsnowwolf|Sun Oct 18 12:50:16 2026 +0800|luci-mod-status: defer vendor wireless queries on overview
-82cc65957f|coolsnowwolf|Sun Oct 18 11:56:11 2026 +0800|luci-app-diskman: select external exFAT driver on Linux 5.4
-209ec8209f|coolsnowwolf|Sat Oct 17 23:05:40 2026 +0800|luci-mod-network: keep MTWIFI AP badges in transmit-power units
+52fe2099ce|github-actions[bot]|Wed Oct 21 07:40:28 2026 +0000|ci: sync upstream luci applications
+d76b5e588c|github-actions[bot]|Tue Oct 20 07:35:52 2026 +0000|ci: sync upstream luci applications
+76e7be120d|lean|Tue Oct 20 10:23:14 2026 +0800|luci-mod-status: read normalized board device labels
+f017a872bf|lean|Tue Oct 20 02:34:57 2026 +0800|luci-mod-network: expose MT7996 BSP 6 GHz controls
+db1769bb91|github-actions[bot]|Mon Oct 19 07:47:38 2026 +0000|ci: sync upstream luci applications
+7b6bba0ffb|fxfall|Mon Oct 19 01:20:55 2026 +0800|luci-app-design-config: add JavaScript settings page (#420)
 </details>

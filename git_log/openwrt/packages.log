@@ -1,11 +1,16 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/f9fe78b923d4603988c9fc9cadf008f75964988a...093d551675b1119a06ef224d419905e8d6b2af1a)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/093d551675b1119a06ef224d419905e8d6b2af1a...808f150a07a2071ebe032e17b5b3f567c0e27181)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-093d55167|Ray Wang|Sat Oct 17 13:32:41 2026 +0800|hev-socks5-tunnel: update to 2.19.0
-457e1338f|Dirk Brenken|Sat Oct 17 15:10:28 2026 +0200|banip: update 1.9.1-2
-1561fa6b2|Dirk Brenken|Sat Oct 17 14:34:53 2026 +0200|adblock: update 4.5.9-3
+808f150a0|George Sapkin|Tue Oct 20 16:52:45 2026 +0300|golang: bump 1.27 to 1.27.3
+625bb8dcf|Andy Chiang|Sun Oct 11 16:04:47 2026 +0700|golang: bump 1.27 to 1.27.2
+9edff735c|Josef Schlehofer|Sat Oct 17 20:50:05 2026 +0200|weechat: fix recursive Kconfig dependency
+b92440c55|Ivan Pavlov|Sat Oct 17 08:02:05 2026 +0300|curl: update to 8.23.0
+65493e273|George Sapkin|Tue Oct 20 17:08:38 2026 +0300|golang: bump 1.26 to 1.26.10
+d826d96c7|Dirk Brenken|Tue Oct 20 15:04:14 2026 +0200|travelmate: update 2.4.9-6
+9822cc9ee|Jose Luis Sanroma Tato|Wed Sep 23 10:19:27 2026 +0200|gpsd: install gps2udp client
+58389500f|Dirk Brenken|Mon Oct 19 07:27:58 2026 +0200|adblock: update 4.5.9-4
 </details>

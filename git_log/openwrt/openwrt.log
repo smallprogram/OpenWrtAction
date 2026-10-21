@@ -1,11 +1,11 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/6790b061252e34b97c8d7ad646dbb84b186a1445...450459bef3b5ba2414abf68feafe60446f53db51)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/450459bef3b5ba2414abf68feafe60446f53db51...4a686570eb6495635279273f034caa2a0f37f36e)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-450459bef3|Hauke Mehrtens|Sun Oct 18 02:11:07 2026 +0200|OpenWrt v25.12.6: revert to branch defaults
-64900e756e|Hauke Mehrtens|Sun Oct 18 02:11:00 2026 +0200|OpenWrt v25.12.6: adjust config defaults
-981c978eff|Josef Schlehofer|Wed Sep 30 13:30:47 2026 +0200|mac80211: realtek: use long TX report timeout for non-PCIe
+4a686570eb|Hauke Mehrtens|Wed Oct 21 01:07:45 2026 +0200|ca-certificates: blacklist "emSign ECC Root CA - G3"
+6e05e0474c|Mieczyslaw Nalewaj|Sat Oct 17 17:26:06 2026 +0200|ipq806x: stmmac: force netdev name from DT ethernet alias
+a9291399cb|Mieczyslaw Nalewaj|Mon Sep 14 11:10:20 2026 +0200|ipq806x: fix ethernet aliases
 </details>

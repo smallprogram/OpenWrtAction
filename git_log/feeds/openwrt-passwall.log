@@ -1,12 +1,11 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/5bd0740772940edef9cd45bfc4a9f796933c54d9...00202bb00d3781d33ad29057e4e833a833d476dc)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/00202bb00d3781d33ad29057e4e833a833d476dc...ae258e4da46aa34567230f55e401ced4cb7738ad)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-00202bb0|A-BO|Sun Oct 18 14:41:36 2026 +0800|luci: optimize log output
-d19c26d5|A-BO|Sun Oct 18 12:55:12 2026 +0800|luci: Adjust DNS relevant
-5ed12a5e|A-BO|Sat Oct 17 00:33:42 2026 +0800|luci: optimize
-5bd07407|A-BO|Sat Oct 17 00:33:42 2026 +0800|luci: optimize
+ae258e4d|A-BO|Tue Oct 20 17:33:27 2026 +0800|fix(app): return 0 from start() so boot creates ready.lock
+ab7ff4c2|A-BO|Tue Oct 20 01:35:03 2026 +0800|luci: optimize and fix clash subconverter
+70994636|Husky|Mon Oct 19 19:48:57 2026 +0800|feat(subscribe): compute md5 on parsed nodes and decouple account info refresh (#4496)
 </details>

@@ -1,4 +1,4 @@
-luci-theme-argon:539e3e1db56b2348c3655615540e45638b797c73
+luci-theme-argon:915602d22e3d2098a285d02e55fdea77ea86b59a
 luci-app-argon-config:445af53fbee6e00fa6efc0ae33f8b2854df65500
 luci-theme-kucat:1c8e7f7c1052552f4fac09d60e5adc07ed33bfa3
 luci-app-kucat-config:e51de5e4f9c98c234777c26948ff454a2ae3dc99
@@ -13,8 +13,8 @@ luci-app-alpha-config:e3f1dab7abf775be66846008b6aff7c62619ba35
 luci-theme-material3:38397ed978b0f9ed2d82b73d52c9a7c6bbd023ad
 luci-theme-arwi:9f863bdc99a0c2a34fdd20ba6fce0a07335c474a
 netspeedtest:0c936e9dd513b2915229871b088b85ca817f5083
-luci-app-bandix-plus:b491618e897e8c03b9a7096dffb8c962b0b65e78
-openwrt-bandix-plus:87fc76466b775059127be9b850e708c485afc8dc
+luci-app-bandix-plus:c4f002f74f3a0f4aeb79fb5d35f5a7bbd3392a1f
+openwrt-bandix-plus:fba9704300f2900451e00a1645e11b1f179204b8
 luci-app-ddns-go:7092e6de6ad9fe3f7d327f70468dfd19e00d6f0e
 openwrt-smartdns:4be700dc3366275605a2a1996865d83ea9bb9a18
 luci-app-smartdns:581e5e816d92d3a663b1b2e331e3f21685968cf1

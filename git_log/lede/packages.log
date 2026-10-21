@@ -1,11 +1,12 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/d0f211716bf1f69f8a638b49023d2256749a1613...db878c7c6a2b6af593f0b02281f738dad3d7670f)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/db878c7c6a2b6af593f0b02281f738dad3d7670f...ae3a5551ae44719062e728024f92db1d0dbd5fe0)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-db878c7c|coolsnowwolf|Sun Oct 18 22:21:40 2026 +0800|pon: clarify LOID status and retain OMCI parse error details
-2e083a2d|coolsnowwolf|Sun Oct 18 21:59:22 2026 +0800|pon: fix BSP EPON OAM FCS and CTC version negotiation
-0249bd55|coolsnowwolf|Sun Oct 18 14:02:43 2026 +0800|luci-app-pon: restore hardware identity menu marker at boot
+ae3a5551|github-actions[bot]|Wed Oct 21 07:48:44 2026 +0000|ci: sync upstream packages
+6ca187cb|github-actions[bot]|Tue Oct 20 07:44:32 2026 +0000|ci: sync upstream packages
+37992e69|coolsnowwolf|Mon Oct 19 20:02:17 2026 +0800|luci-app-pon: add luci-app-iptv depend
+e91bf895|coolsnowwolf|Mon Oct 19 11:45:53 2026 +0800|luci-app-pon: add airoha-pon-debug depend by default
 </details>

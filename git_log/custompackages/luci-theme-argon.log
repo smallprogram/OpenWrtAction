@@ -1,0 +1,11 @@
+<details> <summary> <b>luci-theme-argon new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/jerrykuku/luci-theme-argon/compare/539e3e1db56b2348c3655615540e45638b797c73...915602d22e3d2098a285d02e55fdea77ea86b59a)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+915602d|jerrykuku|Tue Oct 20 08:12:10 2026 +0000|fix(updates): clarify completed installation state
+8174810|jerrykuku|Tue Oct 20 07:32:40 2026 +0000|feat(updates): add theme update checks and installation
+6d9dd1a|jerrykuku|Tue Oct 20 06:26:27 2026 +0000|fix(ui): polish overview and legacy plugin layouts
+</details>
