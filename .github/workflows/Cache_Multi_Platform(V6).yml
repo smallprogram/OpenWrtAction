@@ -38,7 +38,7 @@ env:
 
 jobs:
   job_init: 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     name: Init
     outputs:
       platforms: ${{ steps.read-platforms.outputs.matrix }}
@@ -459,7 +459,7 @@ jobs:
           df -hT
 
   rerun-failed-jobs:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: [job_init, job_source_init, job_cache_compile_and_upload]
     if: failure() && fromJSON(github.run_attempt) < 3  && !cancelled()
     steps:

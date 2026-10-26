@@ -10,7 +10,7 @@ openwrt_value='{
   "DIY_P2_SH": "diy_script/openwrt_diy/diy-part2.sh",
   "DIY_P3_SH": "diy_script/openwrt_diy/diy-part3.sh",
   "DIY_P4_SH": "diy_script/openwrt_diy/diy-part4.sh",
-  "OS": "ubuntu-latest"
+  "OS": "ubuntu-24.04"
 }'
 
 immortalwrt_value='{
@@ -20,7 +20,7 @@ immortalwrt_value='{
   "DIY_P1_SH": "diy_script/immortalwrt_diy/diy-part1.sh",
   "DIY_P2_SH": "diy_script/immortalwrt_diy/diy-part2.sh",
   "DIY_P3_SH": "diy_script/immortalwrt_diy/diy-part3.sh",
-  "OS": "ubuntu-latest"
+  "OS": "ubuntu-24.04"
 }'
 
 lede_value='{
@@ -30,7 +30,7 @@ lede_value='{
   "DIY_P1_SH": "diy_script/lean_diy/diy-part1.sh",
   "DIY_P2_SH": "diy_script/lean_diy/diy-part2.sh",
   "DIY_P3_SH": "diy_script/lean_diy/diy-part3.sh",
-  "OS": "ubuntu-latest"
+  "OS": "ubuntu-24.04"
 }'
 
 openwrt_platforms=(X86 R2S R3S R4S R4SE R5C R5S R6C R6S)

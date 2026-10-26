@@ -38,7 +38,7 @@ env:
 
 jobs:
   job_init: 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     name: Init
     outputs:
       output_release_tag: ${{ steps.gen_release_tag.outputs.release_tag }}
@@ -227,7 +227,7 @@ jobs:
 
   job_generate_release_tag: 
     needs: [job_init, job_source_init]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     name: Generate-Release-Tag-And-Git-Log
     steps:
       - name: Checkout
@@ -741,7 +741,7 @@ jobs:
   job_organize_tags:
     needs: [job_init, job_source_init, job_generate_release_tag, job_compile_and_upload]
     if: ${{ !cancelled() && needs.job_source_init.result == 'success' && needs.job_generate_release_tag.result == 'success' }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     name: Organize-Release-Tags
     outputs:
       output_tag_status: ${{ steps.organize_tags.outputs.status }}
@@ -783,7 +783,7 @@ jobs:
           body_path: release.txt
 
   rerun-failed-jobs:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: [job_init, job_source_init, job_generate_release_tag, job_compile_and_upload, job_organize_tags]
     if: failure() && fromJSON(github.run_attempt) < 3  && !cancelled()
     steps:
@@ -796,7 +796,7 @@ jobs:
           gh workflow run Retry_Failure_Jobs.yml -F run_id=${{ github.run_id }}
 
   final-execution-jobs:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: [rerun-failed-jobs, job_organize_tags]
     if: ${{ always() && !cancelled() }}
     steps:

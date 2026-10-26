@@ -10,7 +10,7 @@ permissions:
 
 jobs:
     rerun:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-24.04
         steps:
             - name: rerun ${{ inputs.run_id }}
               env:
