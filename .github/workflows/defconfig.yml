@@ -63,7 +63,7 @@ jobs:
   
   job_source_init:
     needs: job_init
-    runs-on: ${{ matrix.value.OS }}
+    runs-on: ubuntu-24.04
     name: Source-Init-${{ matrix.source_code_platform }}
     strategy:
       fail-fast: false

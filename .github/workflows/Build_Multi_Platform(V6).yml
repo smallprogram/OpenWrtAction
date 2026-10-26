@@ -62,7 +62,7 @@ jobs:
   
   job_source_init:
     needs: job_init
-    runs-on: ${{ matrix.value.OS }}
+    runs-on: ubuntu-24.04
     name: Source-Init-${{ matrix.source_code_platform }}
     strategy:
       fail-fast: false
@@ -320,7 +320,7 @@ jobs:
 
   job_compile_and_upload:
     needs: [job_init, job_source_init, job_generate_release_tag]
-    runs-on: ${{ matrix.value.OS }}
+    runs-on: ubuntu-24.04
     if: ${{ !cancelled() && needs.job_source_init.result == 'success' && needs.job_generate_release_tag.result == 'success' }}
     strategy:
       fail-fast: false
