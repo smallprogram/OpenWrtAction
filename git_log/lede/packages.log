@@ -1,12 +1,25 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/db878c7c6a2b6af593f0b02281f738dad3d7670f...ae3a5551ae44719062e728024f92db1d0dbd5fe0)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/ae3a5551ae44719062e728024f92db1d0dbd5fe0...72d8820579ad2a40d5f8c71a1b95cbeebd46ec2d)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-ae3a5551|github-actions[bot]|Wed Oct 21 07:48:44 2026 +0000|ci: sync upstream packages
-6ca187cb|github-actions[bot]|Tue Oct 20 07:44:32 2026 +0000|ci: sync upstream packages
-37992e69|coolsnowwolf|Mon Oct 19 20:02:17 2026 +0800|luci-app-pon: add luci-app-iptv depend
-e91bf895|coolsnowwolf|Mon Oct 19 11:45:53 2026 +0800|luci-app-pon: add airoha-pon-debug depend by default
+72d88205|github-actions[bot]|Mon Oct 26 07:55:13 2026 +0000|ci: sync upstream packages
+ec41c4f8|coolsnowwolf|Mon Oct 26 10:48:50 2026 +0800|Merge pull request #1154 from BROBIRD/patch-1
+70726d0a|BROBIRD|Mon Oct 26 09:51:26 2026 +0800|Fix PKG_HASH format in Makefile
+966dd535|coolsnowwolf|Mon Oct 26 00:10:39 2026 +0800|Merge pull request #1152 from Internet1235/rust
+05b29e84|coolsnowwolf|Mon Oct 26 00:10:27 2026 +0800|Merge pull request #1153 from jiaopengzi/update-golang-1.27.3
+cd628fa2|coolsnowwolf|Mon Oct 26 00:09:34 2026 +0800|Merge pull request #1151 from Internet1235/openlist
+21b4d5aa|coolsnowwolf|Mon Oct 26 00:08:32 2026 +0800|Merge pull request #1150 from Internet1235/golang
+71dc133f|sKyissKy|Mon Oct 26 00:07:54 2026 +0800|zerotier: add safe EIP-93 AES-CTR offload (#1149)
+c026b888|coolsnowwolf|Sun Oct 25 23:49:23 2026 +0800|zerotier: create the persistent configuration directory on startup
+2c1cd3ad|jiaopengzi|Sun Oct 25 20:39:02 2026 +0800|golang: update to 1.27.3
+623dfe88|coolsnowwolf|Sun Oct 25 14:33:32 2026 +0800|zerotier: update to 1.16.2
+ed00d987|coolsnowwolf|Sun Oct 25 14:23:33 2026 +0800|zerotier: restore firewall4 integration for LuCI network options
+74e002c9|coolsnowwolf|Sun Oct 25 00:44:18 2026 +0800|xray-core,mihomo: reuse UPX binaries during packaging
+5f3e19ca|github-actions[bot]|Sat Oct 24 07:25:21 2026 +0000|ci: sync upstream packages
+c9efc0eb|Internet1235|Fri Oct 23 23:50:55 2026 +0800|openlist: update to 4.2.7
+
+
 </details>

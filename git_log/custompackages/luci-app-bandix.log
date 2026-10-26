@@ -1,0 +1,12 @@
+<details> <summary> <b>luci-app-bandix new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/timsaya/luci-app-bandix/compare/159a6de184b8cbd0694b40f018e737d0a3c82e7e...2cb887a1b3dd9d9b206f7194aaf9a257710c1cd6)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+2cb887a|stefanlei|Mon Oct 26 19:30:43 2026 +0800|fix: align device checkboxes with the Device Info header
+8aed12e|stefanlei|Mon Oct 26 19:12:53 2026 +0800|Improve device management and connection monitoring UI
+f06ee5c|stefanlei|Mon Oct 26 19:12:48 2026 +0800|fix: identify Wi-Fi bands by frequency instead of channel number
+9a89d40|stefanlei|Mon Oct 26 11:33:23 2026 +0800|Add geoip
+</details>

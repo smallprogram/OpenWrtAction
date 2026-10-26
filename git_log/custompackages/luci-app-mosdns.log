@@ -1,0 +1,10 @@
+<details> <summary> <b>luci-app-mosdns new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/sbwml/luci-app-mosdns/compare/bd40245303cd0ba56804d49eed5dbc4be2a082ca...dbdd91ab8ac8b079b6a3ca1a48d99e970d17111b)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+dbdd91a|sbwml|Sun Oct 25 18:29:46 2026 +0800|mosdns: bump pkgrel to r15
+480d2b4|sbwml|Sun Oct 25 18:17:54 2026 +0800|luci-app-mosdns: luci.mosdns: limit log read size to 256KiB
+</details>

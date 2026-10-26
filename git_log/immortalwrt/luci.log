@@ -1,25 +1,9 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/luci/compare/36e3f0d13622f5be6d59d9ba257811914d76e34d...61e876e98f91446fd8968dfede721b98ddf80a32)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/luci/compare/61e876e98f91446fd8968dfede721b98ddf80a32...c84adb975e207ae8b14982191838ec6218d632cd)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-61e876e98f|Tianling Shen|Tue Oct 20 11:36:49 2026 +0800|Merge Official Source
-79ff489c0d|Aethersailor|Tue Oct 20 10:31:10 2026 +0800|luci-app-openclash: update to 0.48.002
-75a306df84|Dirk Brenken|Thu Oct 15 17:49:21 2026 +0200|luci-app-adblock: fix a caching glitch
-cf0ce5b425|Dirk Brenken|Thu Oct 15 17:39:24 2026 +0200|luci-app-banip: fix a caching glitch
-dc433f3d2e|Dirk Brenken|Thu Oct 15 17:09:39 2026 +0200|luci-app-banip: sync with base package
-ae5571bc7a|Dirk Brenken|Thu Oct 15 13:01:31 2026 +0200|luci-app-adblock: sync with base package
-74c485ab71|Dirk Brenken|Wed Oct 14 12:54:21 2026 +0200|luci-app-travelmate sync with base packages
-8125d1288b|Ivan Kvashonkin|Sun Oct 11 09:12:30 2026 +0300|treewide: wrap loose view content in cbi-section
-350fc91967|Hannu Nyman|Sat Oct 10 16:55:38 2026 +0300|treewide: backport i18n translations
-d1cd725b3e|Ivan Kvashonkin|Sat Oct 10 16:50:48 2026 +0300|luci-theme-footstrap: full load after a page litters body
-4077dc76aa|Ivan Kvashonkin|Sat Oct 10 16:50:27 2026 +0300|luci-theme-footstrap: use autofocus and shared input checks
-34064ffd47|Ivan Kvashonkin|Sat Oct 10 16:50:13 2026 +0300|luci-theme-footstrap: dedupe js and drop pre-24.10 paths
-4627f3a8b6|Ivan Kvashonkin|Sat Oct 10 16:49:59 2026 +0300|luci-theme-footstrap: drop dead css rules and tokens
-8ccab69817|Ivan Kvashonkin|Sat Oct 10 16:49:39 2026 +0300|luci-theme-footstrap: remove unused plugin and search api
-afa18ed184|Ivan Kvashonkin|Sat Oct 10 16:49:22 2026 +0300|luci-theme-footstrap: fix foreign-app styling
-
-
+c84adb975e|Interesting Gang|Mon Oct 19 08:52:57 2026 +0800|luci-app-passwall: bump to 26.10.22
 </details>

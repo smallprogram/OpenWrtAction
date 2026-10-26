@@ -1,16 +1,9 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/9bd2f7b757f0e41b628ea6fd7e2659722a720540...d200499b31751dc5c72905f37a747712f009f155)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/d200499b31751dc5c72905f37a747712f009f155...6f8f6461e8a6a0bbc134592d12353700fe698506)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-d200499b3|Tianling Shen|Tue Oct 20 11:32:39 2026 +0800|Merge Official Source
-9822cc9ee|Jose Luis Sanroma Tato|Wed Sep 23 10:19:27 2026 +0200|gpsd: install gps2udp client
-58389500f|Dirk Brenken|Mon Oct 19 07:27:58 2026 +0200|adblock: update 4.5.9-4
-093d55167|Ray Wang|Sat Oct 17 13:32:41 2026 +0800|hev-socks5-tunnel: update to 2.19.0
-457e1338f|Dirk Brenken|Sat Oct 17 15:10:28 2026 +0200|banip: update 1.9.1-2
-1561fa6b2|Dirk Brenken|Sat Oct 17 14:34:53 2026 +0200|adblock: update 4.5.9-3
-f9fe78b92|Sandro Jäckel|Tue Oct 13 00:14:07 2026 +0200|tailscale: update to 1.104.1
-d811f45d8|Dirk Brenken|Fri Oct 16 09:50:36 2026 +0200|adblock: update 4.5.9-2
+6f8f6461e|Interesting Gang|Mon Oct 19 18:34:27 2026 +0800|geoview: update to 0.2.8
 </details>

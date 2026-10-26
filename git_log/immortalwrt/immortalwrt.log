@@ -1,13 +1,12 @@
 <details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/214e26e407172790c0045f59afe03a9715608ef8...96f566f4a4d04ab44592314bc0279ba9e7de3de0)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/96f566f4a4d04ab44592314bc0279ba9e7de3de0...84b665b5de552e297d0f7d755b88a46fc0cfeb13)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-96f566f4a4|Tianling Shen|Tue Oct 20 17:10:52 2026 +0800|Merge Official Source
-450459bef3|Hauke Mehrtens|Sun Oct 18 02:11:07 2026 +0200|OpenWrt v25.12.6: revert to branch defaults
-64900e756e|Hauke Mehrtens|Sun Oct 18 02:11:00 2026 +0200|OpenWrt v25.12.6: adjust config defaults
-981c978eff|Josef Schlehofer|Wed Sep 30 13:30:47 2026 +0200|mac80211: realtek: use long TX report timeout for non-PCIe
-6790b06125|Yalei Zang|Wed Sep 23 20:54:42 2026 +0800|airoha: backport EN7581 device-tree updates
+84b665b5de|Tianling Shen|Fri Oct 23 11:22:13 2026 +0800|Merge Official Source
+4a686570eb|Hauke Mehrtens|Wed Oct 21 01:07:45 2026 +0200|ca-certificates: blacklist "emSign ECC Root CA - G3"
+6e05e0474c|Mieczyslaw Nalewaj|Sat Oct 17 17:26:06 2026 +0200|ipq806x: stmmac: force netdev name from DT ethernet alias
+a9291399cb|Mieczyslaw Nalewaj|Mon Sep 14 11:10:20 2026 +0200|ipq806x: fix ethernet aliases
 </details>

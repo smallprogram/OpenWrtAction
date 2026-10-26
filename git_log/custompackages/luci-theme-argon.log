@@ -1,11 +1,23 @@
 <details> <summary> <b>luci-theme-argon new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/jerrykuku/luci-theme-argon/compare/539e3e1db56b2348c3655615540e45638b797c73...915602d22e3d2098a285d02e55fdea77ea86b59a)  
+#### [:mega: Full Changelog. ](https://github.com/jerrykuku/luci-theme-argon/compare/915602d22e3d2098a285d02e55fdea77ea86b59a...815f0b27275f3c9555a8cc7c5bb2332b5a798533)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-915602d|jerrykuku|Tue Oct 20 08:12:10 2026 +0000|fix(updates): clarify completed installation state
-8174810|jerrykuku|Tue Oct 20 07:32:40 2026 +0000|feat(updates): add theme update checks and installation
-6d9dd1a|jerrykuku|Tue Oct 20 06:26:27 2026 +0000|fix(ui): polish overview and legacy plugin layouts
+815f0b2|jerrykuku|Mon Oct 26 07:22:12 2026 +0000|fix(ui): restore mobile navigation and improve network layouts
+765cd4b|老竭力|Mon Oct 26 10:37:26 2026 +0800|Merge pull request #727 from Aethersailor/fix/luci-native-page-cards
+4f54ff6|老竭力|Mon Oct 26 10:37:19 2026 +0800|Merge pull request #723 from Aethersailor/fix/openclash-update-log-layout
+2c426d9|老竭力|Mon Oct 26 10:37:12 2026 +0800|Merge pull request #722 from Aethersailor/fix/wol-layout
+a032e03|Aethersailor|Sat Oct 24 16:25:40 2026 +0800|fix(pages): correct native LuCI card layouts (#727)
+08fd01c|Aethersailor|Sat Oct 24 03:41:49 2026 +0800|fix(openclash): align layouts and restore theme accents
+0fffd9b|Aethersailor|Sat Oct 24 02:48:40 2026 +0800|fix(wol): correct settings and output spacing
+81e781c|jerrykuku|Thu Oct 22 08:08:06 2026 +0000|docs(release): categorize changelog entries
+1ec5a74|jerrykuku|Thu Oct 22 07:59:14 2026 +0000|docs(release): focus update notes on user-facing changes
+ce5e1c3|github-actions[bot]|Thu Oct 22 15:34:01 2026 +0800|docs: sync release notes for v3.1.0
+96734f4|jerrykuku|Thu Oct 22 07:19:46 2026 +0000|fix(build): select coreutils parent for timeout dependency
+95accd2|jerrykuku|Thu Oct 22 07:00:57 2026 +0000|release: v3.1.0
+efabd57|jerrykuku|Thu Oct 22 06:33:22 2026 +0000|fix(build): disable theme template precompilation step
+7da0555|jerrykuku|Thu Oct 22 06:33:08 2026 +0000|fix(ui): correct dashboard and dynamic list layouts
+2565c3c|jerrykuku|Thu Oct 22 05:38:53 2026 +0000|feat(updates): move version checks to static Pages feeds
 </details>

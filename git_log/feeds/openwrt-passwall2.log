@@ -1,12 +1,14 @@
 <details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/e3788855d3cb3ddc3f4027ea2480d7c19019f033...300ea00edaec392e935a83f019aa2a5053683652)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/300ea00edaec392e935a83f019aa2a5053683652...22e37d49b18ef6bf1c2a942be9c3a066095931b1)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-300ea00|A-BO|Tue Oct 20 23:21:05 2026 +0800|feat(subscribe): compute md5 on parsed nodes and decouple account info refresh
-20ecdbe|handsomeji|Tue Oct 20 18:14:05 2026 +0800|luci: bump to 26.10.20
-dd70743|ShanStone|Wed Oct 14 17:19:20 2026 +0800|luci: make insert_nftset function accept pipe input only
-6af638d|kuaifan|Tue Oct 20 17:29:44 2026 +0800|fix(app): return 0 from start() so boot creates ready.lock (#1324)
+22e37d4|A-BO|Sun Oct 25 23:50:50 2026 +0800|luci: validate Geo files when SHA256 checksums are unavailable
+b68b3a0|A-BO|Sat Oct 24 13:52:32 2026 +0800|luci: fix missing VLESS decryption when no valid users are configured
+e0ada43|ANDY BUM|Sat Oct 24 08:30:38 2026 +0300|luci: add click-to-sort and filters on the node list (#1325)
+0f923be|David Mandy|Fri Oct 23 00:16:12 2026 +0800|ci: add trigger for cache Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
+896c586|A-BO|Wed Oct 21 23:54:26 2026 +0800|luci: select nslookup DNS port format based on BusyBox version
+f0a622b|A-BO|Wed Oct 21 22:53:51 2026 +0800|luci: add shared SHA256 verification for update downloads
 </details>

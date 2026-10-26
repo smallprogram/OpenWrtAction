@@ -1,19 +1,20 @@
 <details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/0d24da050f2354f48fe8992628054417a5c4b9da...4e4dee0c0634ea6846d8e04f483fed675c3a0567)  
+#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/4e4dee0c0634ea6846d8e04f483fed675c3a0567...31b180df838e456bb36036bb8791f569af0fd661)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-4e4dee0|coolsnowwolf|Wed Oct 21 17:10:39 2026 +0800|ci: fix Xray preparation and require complete release builds
-f681871|coolsnowwolf|Wed Oct 21 12:41:17 2026 +0800|xray-core: add Kcptun transport and LuCI settings
-a8d8c74|coolsnowwolf|Wed Oct 21 12:17:29 2026 +0800|xray-core: add ShadowTLS transport and LuCI configuration
-12b7dd5|coolsnowwolf|Wed Oct 21 11:56:39 2026 +0800|luci-app-ssr-plus: bump to 197 and disable legacy package defaults
-63a8904|coolsnowwolf|Wed Oct 21 11:50:50 2026 +0800|xray-core: add ShadowsocksR inbound and consolidate protocol patch
-a970802|coolsnowwolf|Wed Oct 21 10:47:38 2026 +0800|xray-core: add AnyTLS inbound and consolidate protocol patch
-092886c|coolsnowwolf|Wed Oct 21 10:31:53 2026 +0800|xray-core: add Mihomo Snell support and LuCI integration
-2a70c30|coolsnowwolf|Wed Oct 21 10:07:57 2026 +0800|xray-core: add Mihomo TUIC v4/v5 support and LuCI integration
-ac70ddc|coolsnowwolf|Wed Oct 21 09:43:46 2026 +0800|ci: replace naiveproxy release package with SSR Plus Chinese translation
-1cea3d2|coolsnowwolf|Wed Oct 21 02:20:24 2026 +0800|xray-core: add Mihomo ShadowsocksR outbound and LuCI support
-cc3862b|coolsnowwolf|Wed Oct 21 01:58:55 2026 +0800|xray-core: add Cronet NaiveProxy support and SSR Plus configuration
+31b180d|zxlhhyccc|Sun Oct 25 10:57:08 2026 +0800|luci-app-ssr-plus: fix layer order of mkcp-legacy entries in Xray finalmask
+20756ea|coolsnowwolf|Sun Oct 25 00:44:18 2026 +0800|xray-core,mihomo: reuse UPX binaries during packaging
+652714b|zxlhhyccc|Sat Oct 24 21:22:50 2026 +0800|luci-app-ssr-plus: add Hysteria2 realm UPnP option and Xray 260601+ KCP support
+69840fb|zxl hhyccc|Sat Oct 24 19:57:46 2026 +0800|luci-app-ssr-plus: fix builtin DNS detection for v2ray nodes.
+9213963|coolsnowwolf|Thu Oct 22 23:38:55 2026 +0800|mihomo: add automatic AN7581 EIP93 hybrid AES-GCM acceleration
+c2a6340|zxlhhyccc|Thu Oct 22 20:38:50 2026 +0800|luci-app-ssr-plus: normalize whitespace and indentation
+45893d7|coolsnowwolf|Thu Oct 22 11:38:30 2026 +0800|luci-app-ssr-plus: bump version to v198.2
+bb3bf44|coolsnowwolf|Thu Oct 22 10:48:20 2026 +0800|xray-core: use selected Go toolchain for ARM64 EIP93 overlay
+676e99c|coolsnowwolf|Thu Oct 22 10:36:44 2026 +0800|xray-core: document distinct Airoha EIP93 kernel package
+80d7bff|coolsnowwolf|Thu Oct 22 02:02:50 2026 +0800|luci-app-ssr-plus: bump version to v198.1
+8547820|coolsnowwolf|Thu Oct 22 01:47:19 2026 +0800|xray-core: update to 26.10.21 and accelerate AN7581 AES-GCM
+b87e1d6|coolsnowwolf|Thu Oct 22 00:46:18 2026 +0800|ci: fix Cronet linker selection and SDK configuration cycle
 </details>

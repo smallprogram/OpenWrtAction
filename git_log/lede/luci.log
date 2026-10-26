@@ -1,14 +1,17 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/2189eb728b6d8bbe30b455b989c5ba49b557e5e2...52fe2099ced3b25532d7607877223b4763a192a9)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/52fe2099ced3b25532d7607877223b4763a192a9...3f7352d94a61a4c8b77dc8a3a7e67c1fa7181a17)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-52fe2099ce|github-actions[bot]|Wed Oct 21 07:40:28 2026 +0000|ci: sync upstream luci applications
-d76b5e588c|github-actions[bot]|Tue Oct 20 07:35:52 2026 +0000|ci: sync upstream luci applications
-76e7be120d|lean|Tue Oct 20 10:23:14 2026 +0800|luci-mod-status: read normalized board device labels
-f017a872bf|lean|Tue Oct 20 02:34:57 2026 +0800|luci-mod-network: expose MT7996 BSP 6 GHz controls
-db1769bb91|github-actions[bot]|Mon Oct 19 07:47:38 2026 +0000|ci: sync upstream luci applications
-7b6bba0ffb|fxfall|Mon Oct 19 01:20:55 2026 +0800|luci-app-design-config: add JavaScript settings page (#420)
+3f7352d94a|github-actions[bot]|Mon Oct 26 07:48:46 2026 +0000|ci: sync upstream luci applications
+716513dd79|uparrows|Mon Oct 26 00:11:12 2026 +0800|luci-app-dockerman:add a start button to avoid not being able to launch Docker from the web page after clicking stop (#425)
+ab58f9a176|github-actions[bot]|Sun Oct 25 07:36:10 2026 +0000|ci: sync upstream luci applications
+33ddcd48d4|github-actions[bot]|Sat Oct 24 07:18:21 2026 +0000|ci: sync upstream luci applications
+c80fbeccff|lean|Fri Oct 23 17:23:04 2026 +0800|luci: fix vendor MT7621 offload and switch status reporting
+60f18fff07|github-actions[bot]|Fri Oct 23 07:33:26 2026 +0000|ci: sync upstream luci applications
+8fa3a69d16|coolsnowwolf|Fri Oct 23 12:18:23 2026 +0800|luci-app-nikki: prewarm version cache and preserve it during sync
+fca0b4ac96|uparrows|Fri Oct 23 00:52:22 2026 +0800|Fix the format in the ad block configuration message to fit the translation (#423)
+4f45cb869a|github-actions[bot]|Thu Oct 22 07:36:19 2026 +0000|ci: sync upstream luci applications
 </details>
