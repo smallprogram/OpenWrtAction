@@ -1,13 +1,24 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/b941247a240b2e7e7e1245d96f09cd6605e779d1...0185dc5814710b6f3372c08affcb91f468a4b2a3)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/0185dc5814710b6f3372c08affcb91f468a4b2a3...1e71a219ca01c5e8706f1ce6a2305f8b5389211b)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-0185dc581|coolsnowwolf|Mon Oct 26 10:00:29 2026 +0800|kernel: bump all to latest HEAD
-cc4d5400d|coolsnowwolf|Sun Oct 25 01:17:03 2026 +0800|qualcommax: reduce kernel image size
-cbe28467f|coolsnowwolf|Fri Oct 23 01:02:54 2026 +0800|exfat-oot: restore support for Linux 5.4
-09c5b021a|coolsnowwolf|Fri Oct 23 00:49:19 2026 +0800|airoha: add kmod-crypto-hw-airoha-eip93 module package
-704e907c6|coolsnowwolf|Thu Oct 22 19:25:48 2026 +0800|kernel: restore accelerated crypto modules on ARM
+1e71a219c|coolsnowwolf|Sat Oct 31 21:42:35 2026 +0800|airoha: replace Nokia XG-040G-MF with the UBI profile
+98b3eed3e|coolsnowwolf|Sat Oct 31 18:49:30 2026 +0800|airoha: add Gemtek XG2010G and XR1710G support
+72dd45919|coolsnowwolf|Sat Oct 31 17:24:37 2026 +0800|airoha: add ZNXT ZN515XG-D and ZN504XG-D support
+89406dfa1|coolsnowwolf|Sat Oct 31 16:53:38 2026 +0800|airoha: add H3C HM2004-DU support
+c4c0363c5|coolsnowwolf|Sat Oct 31 16:33:35 2026 +0800|airoha: add FiberHome HG5382A support
+7db2ab662|coolsnowwolf|Sat Oct 31 16:17:34 2026 +0800|airoha: add Nokia XG-040G-TF UBI and complete Nokia PON support
+ca2d4e87a|coolsnowwolf|Sat Oct 31 16:06:44 2026 +0800|airoha: add FiberHome HG5585F CT and CU
+3cb7960ff|coolsnowwolf|Sat Oct 31 15:40:43 2026 +0800|airoha: refresh Linux 6.18 and switch Nokia XG-040G-MD to UBI
+f69300193|coolsnowwolf|Sat Oct 31 10:57:04 2026 +0800|kernel: fix CVE-2026-98432 for Linux 5.4
+9c6d0c407|coolsnowwolf|Sat Oct 31 01:47:55 2026 +0800|mac80211: handle netns_immutable in Linux 6.12.114
+dbbcb4d94|coolsnowwolf|Sat Oct 31 01:44:11 2026 +0800|ipq806x: fix E8350 device tree on Linux 5.10
+58fae3aae|coolsnowwolf|Sat Oct 31 01:29:03 2026 +0800|kernel: update maintained LTS releases
+b325018cd|milkman|Sat Oct 31 02:22:00 2026 +0900|fullconenat-nft: honour the port range and flags, fix build on 5.4 and 6.1 (#14250)
+8867669e2|coolsnowwolf|Wed Oct 28 10:27:19 2026 +0800|kernel: refresh Linux 6.18.58 patch stacks
+d73d072db|coolsnowwolf|Wed Oct 28 10:27:19 2026 +0800|kernel: refresh Linux 6.12.114 patch stacks
+
 </details>

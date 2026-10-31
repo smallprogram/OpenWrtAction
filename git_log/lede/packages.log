@@ -1,25 +1,19 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/ae3a5551ae44719062e728024f92db1d0dbd5fe0...72d8820579ad2a40d5f8c71a1b95cbeebd46ec2d)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/72d8820579ad2a40d5f8c71a1b95cbeebd46ec2d...d2aeba055a0d978e3f74d1c0b414940d297165ee)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-72d88205|github-actions[bot]|Mon Oct 26 07:55:13 2026 +0000|ci: sync upstream packages
-ec41c4f8|coolsnowwolf|Mon Oct 26 10:48:50 2026 +0800|Merge pull request #1154 from BROBIRD/patch-1
-70726d0a|BROBIRD|Mon Oct 26 09:51:26 2026 +0800|Fix PKG_HASH format in Makefile
-966dd535|coolsnowwolf|Mon Oct 26 00:10:39 2026 +0800|Merge pull request #1152 from Internet1235/rust
-05b29e84|coolsnowwolf|Mon Oct 26 00:10:27 2026 +0800|Merge pull request #1153 from jiaopengzi/update-golang-1.27.3
-cd628fa2|coolsnowwolf|Mon Oct 26 00:09:34 2026 +0800|Merge pull request #1151 from Internet1235/openlist
-21b4d5aa|coolsnowwolf|Mon Oct 26 00:08:32 2026 +0800|Merge pull request #1150 from Internet1235/golang
-71dc133f|sKyissKy|Mon Oct 26 00:07:54 2026 +0800|zerotier: add safe EIP-93 AES-CTR offload (#1149)
-c026b888|coolsnowwolf|Sun Oct 25 23:49:23 2026 +0800|zerotier: create the persistent configuration directory on startup
-2c1cd3ad|jiaopengzi|Sun Oct 25 20:39:02 2026 +0800|golang: update to 1.27.3
-623dfe88|coolsnowwolf|Sun Oct 25 14:33:32 2026 +0800|zerotier: update to 1.16.2
-ed00d987|coolsnowwolf|Sun Oct 25 14:23:33 2026 +0800|zerotier: restore firewall4 integration for LuCI network options
-74e002c9|coolsnowwolf|Sun Oct 25 00:44:18 2026 +0800|xray-core,mihomo: reuse UPX binaries during packaging
-5f3e19ca|github-actions[bot]|Sat Oct 24 07:25:21 2026 +0000|ci: sync upstream packages
-c9efc0eb|Internet1235|Fri Oct 23 23:50:55 2026 +0800|openlist: update to 4.2.7
-
-
+d2aeba05|coolsnowwolf|Sat Oct 31 16:06:26 2026 +0800|airoha-xpon: retain mainline and BSP PCS APIs on Linux 6.18
+c3b018cf|coolsnowwolf|Sat Oct 31 12:40:16 2026 +0800|mihomo: bump to 1.19.33 and support Linux 7.3 EIP93
+e615b749|coolsnowwolf|Sat Oct 31 01:46:40 2026 +0800|node: preserve Highway compiler target exclusions
+0cfc5edc|coolsnowwolf|Sat Oct 31 00:13:56 2026 +0800|xray-core: update to 26.10.29 and refresh patches
+a5e66a9c|coolsnowwolf|Thu Oct 29 21:18:07 2026 +0800|xray-core: support legacy and library GHASH EIP93 backends
+1493192c|coolsnowwolf|Thu Oct 29 09:57:46 2026 +0800|pon: support Airoha BSP packages on Linux 6.18
+592c03cc|coolsnowwolf|Thu Oct 29 04:04:15 2026 +0800|luci-app-pon: distinguish unavailable services from invalid status JSON
+162de122|coolsnowwolf|Thu Oct 29 04:04:15 2026 +0800|airoha-pon-frontends: register BSP NVMEM cells on Linux 7.3
+70191654|coolsnowwolf|Thu Oct 29 02:54:52 2026 +0800|airoha-xpon: include the hex parser header directly
+ba57cef3|coolsnowwolf|Thu Oct 29 02:07:42 2026 +0800|pon: add independent Airoha BSP Linux 7.3 patch stacks
+12fe9409|github-actions[bot]|Tue Oct 27 08:01:45 2026 +0000|ci: sync upstream packages
 </details>

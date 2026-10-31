@@ -1,0 +1,10 @@
+<details> <summary> <b>telephony new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/openwrt/telephony/compare/2618106d5846a4a542fdf5809f0d3ed228ce439b...c58ec5a6703966dcccb53d0919698c8aba3a9ef5)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+c58ec5a|Roman Azarenko|Wed May 27 13:45:44 2026 +0200|pjproject: update CPE ID
+bcd9b44|Roman Azarenko|Wed May 27 12:34:38 2026 +0200|asterisk: update CPE ID
+</details>

@@ -1,0 +1,11 @@
+<details> <summary> <b>openwrt-bandix new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/timsaya/openwrt-bandix/compare/c95b03d40b30c31e89c090aaf134750f05bf3f19...0760d1f5b52d1a2317dfd171ab00fe6543a9a0c4)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+0760d1f|stefanlei|Tue Oct 27 08:49:09 2026 +0800|chore: reset package release to 1 for Bandix 0.12.12
+cb9b3ae|stefanlei|Tue Oct 27 08:46:11 2026 +0800|chore: bump Bandix to 0.12.12 and trim documentation
+015d5be|stefanlei|Mon Oct 26 19:20:57 2026 +0800|feat: support configurable listen address and GeoIP directory
+</details>

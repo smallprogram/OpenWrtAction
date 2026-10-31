@@ -1,14 +1,22 @@
 <details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/300ea00edaec392e935a83f019aa2a5053683652...22e37d49b18ef6bf1c2a942be9c3a066095931b1)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/22e37d49b18ef6bf1c2a942be9c3a066095931b1...d08e7f88fcb5c7f94b870f7281db0045a0477293)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-22e37d4|A-BO|Sun Oct 25 23:50:50 2026 +0800|luci: validate Geo files when SHA256 checksums are unavailable
-b68b3a0|A-BO|Sat Oct 24 13:52:32 2026 +0800|luci: fix missing VLESS decryption when no valid users are configured
-e0ada43|ANDY BUM|Sat Oct 24 08:30:38 2026 +0300|luci: add click-to-sort and filters on the node list (#1325)
-0f923be|David Mandy|Fri Oct 23 00:16:12 2026 +0800|ci: add trigger for cache Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
-896c586|A-BO|Wed Oct 21 23:54:26 2026 +0800|luci: select nslookup DNS port format based on BusyBox version
-f0a622b|A-BO|Wed Oct 21 22:53:51 2026 +0800|luci: add shared SHA256 verification for update downloads
+d08e7f8|A-BO|Sat Oct 31 13:02:18 2026 +0800|luci: normalize whitespace
+6e06876|A-BO|Fri Oct 30 21:53:01 2026 +0800|luci: normalize app update row spacing across themes
+e16790a|A-BO|Fri Oct 30 09:05:52 2026 +0800|luci: fix mkcp-legacy entry order in Xray finalmask
+9044544|Jackie Han|Thu Oct 29 19:37:57 2026 +0800|luci: enhance app version display with additional styling (#1337)
+d472f8b|A-BO|Thu Oct 29 19:25:12 2026 +0800|luci: optimize installation cache cleanup
+b7ec339|A-BO|Thu Oct 29 09:19:54 2026 +0800|luci: bump 26.10.29
+6124c2a|Denis|Thu Oct 29 04:14:35 2026 +0300|luci: flush NFTSet/IPSet when GeoIP data parsing changes (#1336)
+52167c5|A-BO|Thu Oct 29 00:16:57 2026 +0800|luci: fix update failures on legacy LuCI
+df4ff0c|A-BO|Thu Oct 29 00:13:35 2026 +0800|luci: replace node-list custom modal group dropdowns with native LuCI widgets
+b6e75a3|Nonosword|Wed Oct 28 11:39:34 2026 +0800|luci: check core update space before stopping the proxy (#1334)
+7212f51|Nonosword|Wed Oct 28 11:35:42 2026 +0800|luci: match SOCKS backup node keywords literally (#1333)
+aaef0aa|A-BO|Wed Oct 28 11:24:11 2026 +0800|luci: set QUIC max window size to the same value as init for Xray
+ed87be8|A-BO|Tue Oct 27 22:11:44 2026 +0800|luci: unify node list filter control heights across themes
+a7445bd|A-BO|Tue Oct 27 21:15:35 2026 +0800|luci: cache sing-box build tags alongside version
 </details>

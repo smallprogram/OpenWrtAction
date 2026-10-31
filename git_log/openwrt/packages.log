@@ -1,25 +1,25 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/808f150a07a2071ebe032e17b5b3f567c0e27181...772e091b09ba9443532d221f729c8213ad3d06e1)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/772e091b09ba9443532d221f729c8213ad3d06e1...6d7a9186ae29d7b28c38bcbea83ab839dc71b666)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-772e091b0|Fabrice Fontaine|Sat Mar 14 21:20:04 2026 +0100|multimedia/go2rtc: assign PKG_CPE_ID
-f9c6faaf0|Vladimir Ermakov|Sat Jan 24 10:05:38 2026 +0100|go2rtc: update to 1.9.14
-7f116bcc8|Vladimir Ermakov|Mon Dec 15 10:41:40 2025 +0100|go2rtc: update to 1.9.13
-d6d01b496|Paweł Owoc|Sat Oct 24 15:06:05 2026 +0200|node: bump to 22.23.4
-3d04dec6f|Hirokazu MORIKAWA|Thu Oct 22 08:00:04 2026 +0900|c-ares: bump to 1.34.9
-7e29621d8|Jianhui Zhao|Sat Oct 3 19:32:10 2026 +0800|luaossl: fix Lua 5.4 module installation paths
-4261196db|Jianhui Zhao|Sat Oct 3 19:32:10 2026 +0800|cqueues: fix Lua 5.4 module installation paths
-fad819e05|Jianhui Zhao|Sat Oct 3 13:20:47 2026 +0800|lua-ffi: fix Lua 5.4 module installation path
-2cbdf4054|Jianhui Zhao|Sat Oct 3 13:20:23 2026 +0800|lua-cjson: fix Lua 5.4 module installation path
-b7259ba7d|Jianhui Zhao|Sat Oct 3 13:15:28 2026 +0800|lua-eco: align module installation with Lua 5.4 search paths
-a3168269b|Alexandru Ardelean|Tue May 26 14:15:12 2026 +0300|luasec: add Lua 5.4 variant
-9b42f4d05|Alexandru Ardelean|Tue May 26 14:15:12 2026 +0300|luasocket: add Lua 5.4 variant
-ec387ebde|Alexandru Ardelean|Tue May 26 14:15:12 2026 +0300|luaexpat: add Lua 5.4 variant
-322d63a4f|Alexandru Ardelean|Tue May 26 14:15:12 2026 +0300|luafilesystem: add Lua 5.4 variant
-6e5cd49c8|Alexandru Ardelean|Wed Jul 22 14:52:14 2026 +0300|lua: look for lua5.4 modules under /usr instead of /usr/local
+6d7a9186a|Hannu Nyman|Sat Oct 31 11:50:08 2026 +0200|haveged: update to 1.9.27
+b91f7c1df|Dirk Brenken|Sat Oct 31 08:15:21 2026 +0100|banip: update 1.9.1-3
+4f3530534|Saxon Sun|Sun Oct 25 17:22:16 2026 +0800|xray-core: use golang1.27/host
+6eb3b79ed|Mikhail Stolyarov|Wed Oct 21 23:18:07 2026 +0300|xray-core: bump to v26.10.21
+0770b233a|Mikhail Stolyarov|Tue Sep 15 00:06:04 2026 +0300|xray-core: update to 26.9.9
+759299d81|Dirk Brenken|Fri Oct 30 07:22:35 2026 +0100|adblock: run report capture as separate procd instance
+0c05984a0|Antonio Pastor|Mon Oct 26 19:18:55 2026 -0400|netatalk: remove buildbot added dependency on libunwind
+de95f6923|Antonio Pastor|Mon Oct 5 20:42:49 2026 -0400|netatalk: update to 4.6.1
+1567eb71e|Josef Schlehofer|Mon Oct 26 12:40:28 2026 +0100|apache: update to version 2.4.69
+88b0e4d4b|Josef Schlehofer|Mon Oct 26 13:09:14 2026 +0100|gzip: update to version 1.15
+eecff1720|Tianling Shen|Fri Oct 30 11:04:53 2026 +0800|cloudflared: update to 2026.10.6
+33230cf6e|Tianling Shen|Thu Oct 29 10:07:49 2026 +0800|cloudflared: update to 2026.10.5
+577016d8e|Tianling Shen|Fri Oct 23 15:07:51 2026 +0800|yq: update to 4.54.1
+16fe7222e|Tianling Shen|Fri Oct 23 15:07:16 2026 +0800|dufs: update to 0.47.0
+28469835c|Tianling Shen|Fri Oct 23 15:05:59 2026 +0800|openlist: update to 4.2.7
 
 
 </details>

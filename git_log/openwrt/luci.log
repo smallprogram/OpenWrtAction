@@ -1,0 +1,12 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/75a306df84a020c57a631ef5b4c02ace56d93387...e969939b49167516e219d465df8030d98d443d67)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+e969939b49|Dirk Brenken|Sat Oct 31 08:19:01 2026 +0100|luci-app-banip: sync with base package
+9fe44cfb65|Hannu Nyman|Sat Oct 31 09:05:31 2026 +0200|treewide: backport translations - i18n
+0229375b45|Dirk Brenken|Fri Oct 30 08:58:22 2026 +0100|luci-app-travelmate: move command execution to the write ACL
+6db2638290|Dirk Brenken|Wed Oct 14 22:25:24 2026 +0200|luci-app-uhttpd: drop unrestricted file read grant
+</details>

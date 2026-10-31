@@ -1,12 +1,25 @@
 <details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/96f566f4a4d04ab44592314bc0279ba9e7de3de0...84b665b5de552e297d0f7d755b88a46fc0cfeb13)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/84b665b5de552e297d0f7d755b88a46fc0cfeb13...3682a14dd5ec6382af65d7e72b5b415b5f3173a8)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-84b665b5de|Tianling Shen|Fri Oct 23 11:22:13 2026 +0800|Merge Official Source
-4a686570eb|Hauke Mehrtens|Wed Oct 21 01:07:45 2026 +0200|ca-certificates: blacklist "emSign ECC Root CA - G3"
-6e05e0474c|Mieczyslaw Nalewaj|Sat Oct 17 17:26:06 2026 +0200|ipq806x: stmmac: force netdev name from DT ethernet alias
-a9291399cb|Mieczyslaw Nalewaj|Mon Sep 14 11:10:20 2026 +0200|ipq806x: fix ethernet aliases
+3682a14dd5|Tianling Shen|Fri Oct 30 10:44:42 2026 +0800|Merge Official Source
+5cf752f7ff|Fil Dunsky|Fri Oct 9 23:00:52 2026 +0300|uboot-mediatek: wl-wnt100x3: reduce ram speed to 1866 MT/s
+29bc851e50|Harin Lee|Sat Jul 4 20:04:31 2026 +0900|wifi-scripts: fix macaddr lookup in utils.uc
+514fad5218|Tyrel M. McQueen|Sun Oct 18 15:58:54 2026 -0400|dnsmasq: cherrypick upstream to fix slow loading
+1684a761a3|Hauke Mehrtens|Sun Sep 20 19:52:51 2026 +0200|toolchain: musl: fix multiple integer overflows in regcomp
+79d87e9f6f|Mieczyslaw Nalewaj|Wed Oct 28 17:49:31 2026 +0100|treewide: handle name collisions in set_netdev_labels
+75cd6e6649|Yalei Zang|Wed Oct 14 20:55:22 2026 +0800|airoha: backport LRO offload patch
+f368a9e03e|Robert Marko|Tue Oct 27 09:55:59 2026 +0100|Revert "airoha: backport LRO offload patch"
+c5f7322921|Yalei Zang|Wed Oct 14 20:55:22 2026 +0800|airoha: backport LRO offload patch
+2fd9d4c150|Yalei Zang|Wed Oct 14 20:44:16 2026 +0800|airoha: backport on-demand GDM3/GDM4 QoS configuration
+e2056c9751|Alex Sunekants|Sun Oct 25 23:32:00 2026 +0000|ramips: mt7621: fix SATA detection on MQMaker WiTi
+e0c2fe231e|Robert Marko|Thu Jun 4 22:20:53 2026 +0200|qca-ssdk: update to Git HEAD (2026-06-04)
+2656f60a1b|Christian Marangi|Mon Oct 26 11:37:28 2026 +0100|Revert "qca-ssdk: update to Git HEAD (2026-06-04)"
+f3f5c2e54b|George Moussalem|Thu Jun 4 09:51:33 2026 +0400|qualcommax: ipq50xx: ess-switch: Remove AHB reset quirk
+4651c89ae6|Robert Marko|Thu Jun 4 22:20:53 2026 +0200|qca-ssdk: update to Git HEAD (2026-06-04)
+
+
 </details>

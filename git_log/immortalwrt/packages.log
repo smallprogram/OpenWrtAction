@@ -1,9 +1,25 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/d200499b31751dc5c72905f37a747712f009f155...6f8f6461e8a6a0bbc134592d12353700fe698506)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/6f8f6461e8a6a0bbc134592d12353700fe698506...2dba1dd2af3b447faf52f85c0850a6f9667cac17)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-6f8f6461e|Interesting Gang|Mon Oct 19 18:34:27 2026 +0800|geoview: update to 0.2.8
+2dba1dd2a|Tianling Shen|Fri Oct 30 11:03:30 2026 +0800|CI: upate qemu package for ubuntu 26.04
+59d9253f8|Tianling Shen|Fri Oct 30 12:05:00 2026 +0800|Merge Official Source
+eecff1720|Tianling Shen|Fri Oct 30 11:04:53 2026 +0800|cloudflared: update to 2026.10.6
+33230cf6e|Tianling Shen|Thu Oct 29 10:07:49 2026 +0800|cloudflared: update to 2026.10.5
+577016d8e|Tianling Shen|Fri Oct 23 15:07:51 2026 +0800|yq: update to 4.54.1
+16fe7222e|Tianling Shen|Fri Oct 23 15:07:16 2026 +0800|dufs: update to 0.47.0
+28469835c|Tianling Shen|Fri Oct 23 15:05:59 2026 +0800|openlist: update to 4.2.7
+729471f17|Tianling Shen|Fri Oct 16 10:36:02 2026 +0800|dnsproxy: update to 0.86.0
+21d8384fd|Tawhidul Islam|Sun Sep 13 22:46:30 2026 +0600|dnsproxy: update to 0.84.2
+254f13c7d|Tianling Shen|Fri Oct 16 10:35:42 2026 +0800|rclone: update to 1.75.2
+dfaccea23|Tianling Shen|Fri Oct 16 10:35:04 2026 +0800|cloudflared: update to 2026.10.0
+a1f1b76cb|Tianling Shen|Fri Oct 16 11:04:21 2026 +0800|7z: Update to 26.04
+c0e5a2b02|Tianling Shen|Tue Oct 20 16:24:26 2026 +0800|naiveproxy: Update to 154.0.8037.49-4
+539b521cf|Tianling Shen|Fri Oct 30 11:25:08 2026 +0800|gst1-plugins-bad: disable unused QSV and VA support
+7691e61b7|Tianling Shen|Fri Oct 30 11:20:15 2026 +0800|node-hashmap: remove broken devDependencies
+
+
 </details>

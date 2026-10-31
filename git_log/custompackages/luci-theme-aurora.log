@@ -1,0 +1,9 @@
+<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/84c27b66952e6fc4be60128067a6b88bfd34afb5...a09fc305fc015f722ef4ad9ed07f8b3f29e3386e)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+a09fc30|Eamon|Sat Oct 31 00:07:33 2026 +0800|fix: restore notification dismissal (#103)
+</details>
