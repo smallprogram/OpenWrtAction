@@ -653,7 +653,7 @@ jobs:
         if: steps.matrix_status.outputs.status != 'success' && !cancelled()
         run: |
           cd $GITHUB_WORKSPACE/openwrt
-          timeout 12m make download -j8
+          timeout 25m make download -j8
 
       - name: Compile Packages and Firmware
         id: compile
