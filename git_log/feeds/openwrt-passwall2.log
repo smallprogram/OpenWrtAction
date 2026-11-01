@@ -1,22 +1,10 @@
 <details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/22e37d49b18ef6bf1c2a942be9c3a066095931b1...d08e7f88fcb5c7f94b870f7281db0045a0477293)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/d08e7f88fcb5c7f94b870f7281db0045a0477293...be8d917a3b88a090c084540af9bb9c1864578552)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-d08e7f8|A-BO|Sat Oct 31 13:02:18 2026 +0800|luci: normalize whitespace
-6e06876|A-BO|Fri Oct 30 21:53:01 2026 +0800|luci: normalize app update row spacing across themes
-e16790a|A-BO|Fri Oct 30 09:05:52 2026 +0800|luci: fix mkcp-legacy entry order in Xray finalmask
-9044544|Jackie Han|Thu Oct 29 19:37:57 2026 +0800|luci: enhance app version display with additional styling (#1337)
-d472f8b|A-BO|Thu Oct 29 19:25:12 2026 +0800|luci: optimize installation cache cleanup
-b7ec339|A-BO|Thu Oct 29 09:19:54 2026 +0800|luci: bump 26.10.29
-6124c2a|Denis|Thu Oct 29 04:14:35 2026 +0300|luci: flush NFTSet/IPSet when GeoIP data parsing changes (#1336)
-52167c5|A-BO|Thu Oct 29 00:16:57 2026 +0800|luci: fix update failures on legacy LuCI
-df4ff0c|A-BO|Thu Oct 29 00:13:35 2026 +0800|luci: replace node-list custom modal group dropdowns with native LuCI widgets
-b6e75a3|Nonosword|Wed Oct 28 11:39:34 2026 +0800|luci: check core update space before stopping the proxy (#1334)
-7212f51|Nonosword|Wed Oct 28 11:35:42 2026 +0800|luci: match SOCKS backup node keywords literally (#1333)
-aaef0aa|A-BO|Wed Oct 28 11:24:11 2026 +0800|luci: set QUIC max window size to the same value as init for Xray
-ed87be8|A-BO|Tue Oct 27 22:11:44 2026 +0800|luci: unify node list filter control heights across themes
-a7445bd|A-BO|Tue Oct 27 21:15:35 2026 +0800|luci: cache sing-box build tags alongside version
+be8d917|bruceliu1388|Sun Nov 1 13:10:48 2026 +0800|luci: restart rpcd only when ACL file changes during luci update (#1339)
+b611038|A-BO|Sun Nov 1 12:33:58 2026 +0800|luci: fix typos in English help text and comments
 </details>

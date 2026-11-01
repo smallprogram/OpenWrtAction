@@ -1,11 +1,9 @@
 <details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/31b180df838e456bb36036bb8791f569af0fd661...aaef4910416339301522d7bb4575d3557dc06f4c)  
+#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/aaef4910416339301522d7bb4575d3557dc06f4c...04fe559424048d44aaf7c53f3b3c9a775c513a3b)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-aaef491|coolsnowwolf|Sat Oct 31 12:40:16 2026 +0800|mihomo: bump to 1.19.33 and support Linux 7.3 EIP93
-41959d1|coolsnowwolf|Sat Oct 31 00:20:20 2026 +0800|xray-core: update to 26.10.29 and refresh patches
-09afd16|coolsnowwolf|Thu Oct 29 21:23:25 2026 +0800|xray-core: support legacy and library GHASH EIP93 backends
+04fe559|coolsnowwolf|Sun Nov 1 00:53:31 2026 +0800|xray-core: update to 26.10.31 and harden EIP93 backend fallback
 </details>

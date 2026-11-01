@@ -1,25 +1,13 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/772e091b09ba9443532d221f729c8213ad3d06e1...6d7a9186ae29d7b28c38bcbea83ab839dc71b666)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/6d7a9186ae29d7b28c38bcbea83ab839dc71b666...630cd7a8155db7be16abd00a2f41330f2d016add)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-6d7a9186a|Hannu Nyman|Sat Oct 31 11:50:08 2026 +0200|haveged: update to 1.9.27
-b91f7c1df|Dirk Brenken|Sat Oct 31 08:15:21 2026 +0100|banip: update 1.9.1-3
-4f3530534|Saxon Sun|Sun Oct 25 17:22:16 2026 +0800|xray-core: use golang1.27/host
-6eb3b79ed|Mikhail Stolyarov|Wed Oct 21 23:18:07 2026 +0300|xray-core: bump to v26.10.21
-0770b233a|Mikhail Stolyarov|Tue Sep 15 00:06:04 2026 +0300|xray-core: update to 26.9.9
-759299d81|Dirk Brenken|Fri Oct 30 07:22:35 2026 +0100|adblock: run report capture as separate procd instance
-0c05984a0|Antonio Pastor|Mon Oct 26 19:18:55 2026 -0400|netatalk: remove buildbot added dependency on libunwind
-de95f6923|Antonio Pastor|Mon Oct 5 20:42:49 2026 -0400|netatalk: update to 4.6.1
-1567eb71e|Josef Schlehofer|Mon Oct 26 12:40:28 2026 +0100|apache: update to version 2.4.69
-88b0e4d4b|Josef Schlehofer|Mon Oct 26 13:09:14 2026 +0100|gzip: update to version 1.15
-eecff1720|Tianling Shen|Fri Oct 30 11:04:53 2026 +0800|cloudflared: update to 2026.10.6
-33230cf6e|Tianling Shen|Thu Oct 29 10:07:49 2026 +0800|cloudflared: update to 2026.10.5
-577016d8e|Tianling Shen|Fri Oct 23 15:07:51 2026 +0800|yq: update to 4.54.1
-16fe7222e|Tianling Shen|Fri Oct 23 15:07:16 2026 +0800|dufs: update to 0.47.0
-28469835c|Tianling Shen|Fri Oct 23 15:05:59 2026 +0800|openlist: update to 4.2.7
-
-
+630cd7a81|Qingfang Deng|Mon Oct 26 22:24:56 2026 +0800|ovpn-dco: update to 7.3.0.2026100801
+62ea8befc|Qingfang Deng|Mon Oct 26 22:24:03 2026 +0800|openvpn: update to 2.7.8
+fae099b50|Martino Dell'Ambrogio|Sat Oct 31 12:29:58 2026 +0100|miniupnpd: backport the CVE-2026-5720 fix to 2.3.9
+9b52d3f7a|John Audia|Thu Oct 29 19:15:01 2026 +0000|openssh: add mldsa44-ed25519 host key
+b7d93a0bb|Olivier Poitrey|Thu Oct 29 23:33:57 2026 +0000|nextdns: update to version 1.49.0
 </details>

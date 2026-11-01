@@ -1,19 +1,9 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/72d8820579ad2a40d5f8c71a1b95cbeebd46ec2d...d2aeba055a0d978e3f74d1c0b414940d297165ee)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/d2aeba055a0d978e3f74d1c0b414940d297165ee...e11984b9a88abdbfa4e0dbc2d423e18e83d39d01)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-d2aeba05|coolsnowwolf|Sat Oct 31 16:06:26 2026 +0800|airoha-xpon: retain mainline and BSP PCS APIs on Linux 6.18
-c3b018cf|coolsnowwolf|Sat Oct 31 12:40:16 2026 +0800|mihomo: bump to 1.19.33 and support Linux 7.3 EIP93
-e615b749|coolsnowwolf|Sat Oct 31 01:46:40 2026 +0800|node: preserve Highway compiler target exclusions
-0cfc5edc|coolsnowwolf|Sat Oct 31 00:13:56 2026 +0800|xray-core: update to 26.10.29 and refresh patches
-a5e66a9c|coolsnowwolf|Thu Oct 29 21:18:07 2026 +0800|xray-core: support legacy and library GHASH EIP93 backends
-1493192c|coolsnowwolf|Thu Oct 29 09:57:46 2026 +0800|pon: support Airoha BSP packages on Linux 6.18
-592c03cc|coolsnowwolf|Thu Oct 29 04:04:15 2026 +0800|luci-app-pon: distinguish unavailable services from invalid status JSON
-162de122|coolsnowwolf|Thu Oct 29 04:04:15 2026 +0800|airoha-pon-frontends: register BSP NVMEM cells on Linux 7.3
-70191654|coolsnowwolf|Thu Oct 29 02:54:52 2026 +0800|airoha-xpon: include the hex parser header directly
-ba57cef3|coolsnowwolf|Thu Oct 29 02:07:42 2026 +0800|pon: add independent Airoha BSP Linux 7.3 patch stacks
-12fe9409|github-actions[bot]|Tue Oct 27 08:01:45 2026 +0000|ci: sync upstream packages
+e11984b9|github-actions[bot]|Sun Nov 1 09:24:14 2026 +0000|ci: sync upstream packages
 </details>
