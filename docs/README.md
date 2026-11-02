@@ -92,7 +92,7 @@
     <td width="75%" valign="top">
       <p>Each Release contains multiple source platform firmwares. Please select the corresponding firmware download according to your platform.</p>
       <p>Sometimes a Release may not have the firmware you need, for example, the X86 firmware cannot be found. It may be that the compilation in the Action failed. Please wait patiently for the next compiled and uploaded Release.</p>
-      <p>Each Release contains the package compression package of each platform. The name format is buildinfo_[source platform]_[platform name]. For example, <code>buildinfo_immortalwrt_X86</code>. If you do not want to upgrade the firmware, but only want to upgrade a certain ipk, you can download the compressed package and select the ipk to upload to the soft router for installation.</p>
+      <p>Each Release contains the package compression package of each platform. The name format is buildinfo_[source platform]_[platform name]. For example, <code>buildinfo_immortalwrt_X86</code>. If you do not want to upgrade the firmware, but only want to upgrade a certain package, you can download the compressed package and select the package to upload to the soft router for installation.</p>
       <p>For more information, please refer to the instructions in the release</p>
     </td>
     <td width="25%" valign="top">
@@ -175,6 +175,7 @@ CONFIG_PACKAGE_luci-app-banip=y
 ```
 CONFIG_PACKAGE_luci-theme-argon=y
 CONFIG_PACKAGE_luci-app-argon-config=y
+CONFIG_PACKAGE_luci-theme-ctmodem
 CONFIG_PACKAGE_luci-theme-kucat=y
 CONFIG_PACKAGE_luci-app-kucat-config=y
 CONFIG_PACKAGE_luci-theme-aurora=y

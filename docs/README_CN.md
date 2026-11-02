@@ -92,7 +92,7 @@
     <td width="75%" valign="top">
       <p>每一个Release包含多个源码平台固件，请根据自己的平台选择对应的固件下载</p>
       <p>有时候可能某个Release没有你需要的固件，例如找不到X86固件，那有可能是Action中编译失败了，请耐心等待下次编译上传的Release</p>
-      <p>每个Release包含各个平台的packages压缩包，名称格式为buildinfo_[源码平台]_[平台名称]，例如，<code>buildinfo_immortalwrt_X86</code>,如果你不想升级固件，只想升级某个ipk可以下载压缩包选择ipk上传至软路由安装即可</p>
+      <p>每个Release包含各个平台的packages压缩包，名称格式为buildinfo_[源码平台]_[平台名称]，例如，<code>buildinfo_immortalwrt_X86</code>,如果你不想升级固件，只想升级某个包可以下载压缩包选择包上传至软路由安装即可</p>
       <p>详细信息请参考release中的说明</p>
     </td>
     <td width="25%" valign="top">
@@ -173,6 +173,7 @@ CONFIG_PACKAGE_luci-app-banip=y
 ```
 CONFIG_PACKAGE_luci-theme-argon=y
 CONFIG_PACKAGE_luci-app-argon-config=y
+CONFIG_PACKAGE_luci-theme-ctmodem
 CONFIG_PACKAGE_luci-theme-kucat=y
 CONFIG_PACKAGE_luci-app-kucat-config=y
 CONFIG_PACKAGE_luci-theme-aurora=y
