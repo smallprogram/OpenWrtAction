@@ -171,6 +171,7 @@ CONFIG_PACKAGE_luci-app-banip=y
 ```
 ### 🎨 UI 主题与界面
 ```
+CONFIG_PACKAGE_luci-theme-7dollar=y
 CONFIG_PACKAGE_luci-theme-argon=y
 CONFIG_PACKAGE_luci-app-argon-config=y
 CONFIG_PACKAGE_luci-theme-ctmodem
