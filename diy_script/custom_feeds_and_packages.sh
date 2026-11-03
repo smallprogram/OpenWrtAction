@@ -36,6 +36,7 @@ clone_custom_packages () {
     git clone https://github.com/derisamedia/luci-theme-alpha.git ${path}luci-theme-alpha
     git clone https://github.com/animegasan/luci-app-alpha-config.git ${path}luci-app-alpha-config
     git clone https://github.com/AngelaCooljx/luci-theme-material3.git ${path}luci-theme-material3
+    git clone https://github.com/anothaDev/luci-theme-vantage.git ${path}luci-theme-vantage
     git clone https://github.com/hakureiyuyuko/luci-theme-ctmodem.git ${path}luci-theme-ctmodem
     # 该主题 Makefile 使用相对路径 ../../luci.mk, 在 package/custom_packages 下无法找到, 改为 feeds 中的路径
     sed -i 's#^include[[:blank:]]\+\.\./\.\./luci\.mk#include $(TOPDIR)/feeds/luci/luci.mk#' "${path}luci-theme-ctmodem/luci-theme-ctmodem/Makefile"

@@ -189,6 +189,8 @@ CONFIG_PACKAGE_luci-theme-footstrap=y
 CONFIG_PACKAGE_luci-theme-material=y
 CONFIG_PACKAGE_luci-theme-openwrt=y
 CONFIG_PACKAGE_luci-theme-openwrt-2020=y
+CONFIG_PACKAGE_luci-app-vantage=y
+CONFIG_PACKAGE_luci-theme-vantage=y
 ```
 
 ### 🚀 luci-app-ghfu
