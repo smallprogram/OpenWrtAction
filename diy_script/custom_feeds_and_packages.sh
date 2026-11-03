@@ -90,10 +90,17 @@ clone_custom_packages () {
 cat << "EOF" > files/etc/uci-defaults/zz-set-default-theme
 #!/bin/sh
 
-# 强制覆写节点，不判断任何条件
+# 强制覆写节点，不判断任何条件，设置默认主题
+
+# 设置默认主题为 Argon
 # uci set luci.themes.Argon=/luci-static/argon
 # uci set luci.main.mediaurlbase=/luci-static/argon
 # uci commit luci
+
+# 设置默认主题为 vantage
+uci set luci.themes.Vantage=/luci-static/vantage
+uci set luci.main.mediaurlbase=/luci-static/vantage
+uci commit luci
 
 exit 0
 EOF
