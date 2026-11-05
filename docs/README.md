@@ -103,6 +103,39 @@
 
 ---
 
+## 🌈 Screenshot (selecting the Vantage theme)
+
+<p align="center">
+  <img src="screenshots/dashboard-dark.png" alt="The Vantage dashboard in dark mode: health strip flagging a weak client, network path from gateway to access point, radios and SSIDs with packets moving on its grid, live throughput with download and upload in their own colours, and radio cards" width="100%">
+</p>
+
+<table>
+  <tr>
+    <td width="50%"><img src="screenshots/dashboard-light.png" alt="Dashboard in light mode with every check passing"></td>
+    <td width="50%"><img src="screenshots/client-drawer.png" alt="Client inspector drawer open over the clients table"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Light mode: health checks, network path and live throughput</sub></td>
+    <td align="center"><sub>Client inspector with experience score, signal and link details</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="screenshots/palette.png" alt="Command palette searching pages"></td>
+    <td width="50%"><img src="screenshots/status-overview.png" alt="LuCI Status Overview page restyled by the theme"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><kbd>Ctrl</kbd>+<kbd>K</kbd> palette: every page, fuzzy matched</sub></td>
+    <td align="center"><sub>Stock Status page under the theme, with a combined memory bar</sub></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="middle"><img src="screenshots/channel-analysis.png" alt="Channel Analysis page showing neighbouring networks"></td>
+    <td width="50%" align="center"><img src="screenshots/mobile.png" alt="Dashboard on a phone-sized screen" width="40%"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Stock Channel Analysis (neighbour networks are generated)</sub></td>
+    <td align="center"><sub>Phone layout with the bottom bar and the Wi-Fi/Wired switch</sub></td>
+  </tr>
+</table>
+
 ## 🌟 Featured Plugins
 
 Selected plug-in configuration, covering common functions such as network acceleration, theme beautification, system management, etc.

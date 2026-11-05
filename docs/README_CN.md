@@ -100,7 +100,41 @@
     </td>
   </tr>
 </table>
+
 ---
+
+## 🌈 截图(选择Vantage主题)
+
+<p align="center">
+  <img src="screenshots/dashboard-dark.png" alt="深色模式下的 Vantage 仪表板：显示客户端状态不佳的健康状况栏；从网关到接入点的网络路径；网格中呈现的无线射频与 SSID（以及在其间传输的数据包）；以不同颜色区分下载与上传的实时吞吐量数据；以及无线射频卡片。" width="100%">
+</p>
+
+<table>
+  <tr>
+    <td width="50%"><img src="screenshots/dashboard-light.png" alt="Dashboard in light mode with every check passing"></td>
+    <td width="50%"><img src="screenshots/client-drawer.png" alt="Client inspector drawer open over the clients table"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>浅色模式：健康检查、网络路径及实时吞吐量</sub></td>
+    <td align="center"><sub>包含经验评分、信号及链接详情的客户端检查器</sub></td>
+  </tr>
+  <tr>
+    <td width="50%"><img src="screenshots/palette.png" alt="在命令面板中搜索页面"></td>
+    <td width="50%"><img src="screenshots/status-overview.png" alt="经该主题重新设计后的 LuCI 状态概览页面"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><kbd>Ctrl</kbd>+<kbd>K</kbd> 调色板：每个页面，模糊匹配</sub></td>
+    <td align="center"><sub>主题下的“库存状态”页面，包含一个综合内存条</sub></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="middle"><img src="screenshots/channel-analysis.png" alt="显示相邻网络的信道分析页面"></td>
+    <td width="50%" align="center"><img src="screenshots/mobile.png" alt="手机尺寸屏幕上的仪表盘" width="40%"></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>通道分析（生成邻近网络）</sub></td>
+    <td align="center"><sub>手机布局，包含底部栏以及 Wi-Fi/有线连接切换开关</sub></td>
+  </tr>
+</table>
 
 ## 🌟 特色插件
 

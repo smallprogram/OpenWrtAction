@@ -105,9 +105,9 @@ cat << "EOF" > files/etc/uci-defaults/zz-set-default-theme
 # uci commit luci
 
 # 设置默认主题为 vantage
-uci set luci.themes.Vantage=/luci-static/vantage
-uci set luci.main.mediaurlbase=/luci-static/vantage
-uci commit luci
+# uci set luci.themes.Vantage=/luci-static/vantage
+# uci set luci.main.mediaurlbase=/luci-static/vantage
+# uci commit luci
 
 exit 0
 EOF
