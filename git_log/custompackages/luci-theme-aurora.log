@@ -1,0 +1,10 @@
+<details> <summary> <b>luci-theme-aurora new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/eamonxg/luci-theme-aurora/compare/a09fc305fc015f722ef4ad9ed07f8b3f29e3386e...298dbcc74ddf820923a51285fb0826d429e5d7ca)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+298dbcc|Eamon Xiong|Wed Nov 4 14:54:44 2026 +0800|fix: streamline login template and auth compatibility
+a80c798|Eamon|Wed Nov 4 00:59:54 2026 +0800|fix: optimize navigation loading
+</details>

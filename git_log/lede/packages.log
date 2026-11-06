@@ -1,9 +1,12 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/d2aeba055a0d978e3f74d1c0b414940d297165ee...e11984b9a88abdbfa4e0dbc2d423e18e83d39d01)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/e11984b9a88abdbfa4e0dbc2d423e18e83d39d01...22bc97f148542e03c1de3e30d95f82107ae582f4)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-e11984b9|github-actions[bot]|Sun Nov 1 09:24:14 2026 +0000|ci: sync upstream packages
+22bc97f1|coolsnowwolf|Fri Nov 6 12:18:10 2026 +0800|multimedia: add missing video feed dependencies
+970d7296|coolsnowwolf|Tue Nov 3 15:02:50 2026 +0800|mihomo: fix source mirror hash to avoid repeated rebuilds
+bbe00470|coolsnowwolf|Tue Nov 3 13:49:32 2026 +0800|zerotier: bump version
+2c49f074|coolsnowwolf|Mon Nov 2 23:34:25 2026 +0800|qt6base: select SQLite column metadata support
 </details>

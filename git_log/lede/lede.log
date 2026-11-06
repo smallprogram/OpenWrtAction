@@ -1,25 +1,25 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/1e71a219ca01c5e8706f1ce6a2305f8b5389211b...e7958d8bc7ce7f3e299b63ba3518170423f2e8c0)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/e7958d8bc7ce7f3e299b63ba3518170423f2e8c0...74a59a5826862feacff9b9e9c93d28aec31aefd8)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-e7958d8bc|coolsnowwolf|Sun Nov 1 22:02:46 2026 +0800|arc770: switch default kernel to 6.18
-b3f23735f|coolsnowwolf|Sun Nov 1 21:30:04 2026 +0800|lantiq: switch default kernel to 6.18
-c1f9f9185|coolsnowwolf|Sun Nov 1 21:12:32 2026 +0800|layerscape: switch default kernel to 6.18
-050365238|coolsnowwolf|Sun Nov 1 21:05:37 2026 +0800|bcm27xx: switch default kernel to 6.18
-7b1b26b85|coolsnowwolf|Sun Nov 1 20:43:17 2026 +0800|starfive: switch default kernel to 6.18
-b887eef0e|coolsnowwolf|Sun Nov 1 20:40:34 2026 +0800|sifiveu: switch default kernel to 6.18
-5fd4fd911|coolsnowwolf|Sun Nov 1 20:34:07 2026 +0800|octeon: switch default kernel to 6.18
-57ee620c9|coolsnowwolf|Sun Nov 1 20:27:22 2026 +0800|ath79: switch default kernel to 6.18
-451a77568|coolsnowwolf|Sun Nov 1 20:16:13 2026 +0800|malta: switch default kernel to 6.18
-70f6d71bf|coolsnowwolf|Sun Nov 1 19:57:46 2026 +0800|mpc85xx: switch default kernel to 6.18
-0b496dd27|coolsnowwolf|Sun Nov 1 19:46:42 2026 +0800|bcm47xx: switch default kernel to 6.18
-ca251a418|coolsnowwolf|Sun Nov 1 19:36:57 2026 +0800|bcm53xx: switch default kernel to 6.18
-6b2825c52|coolsnowwolf|Sun Nov 1 19:30:14 2026 +0800|mvebu: switch default kernel to 6.18
-f07e015c2|coolsnowwolf|Sun Nov 1 19:18:25 2026 +0800|apm821xx: switch default kernel to 6.18
-644a29e33|coolsnowwolf|Sun Nov 1 19:08:17 2026 +0800|at91: switch default kernel to 6.18
+74a59a582|fxfall|Wed Nov 4 22:51:08 2026 +0800|zte: add support for ZXSLC SR1010 (ZX279133) (#14272)
+f61f09e85|coolsnowwolf|Wed Nov 4 13:45:20 2026 +0800|generic: port Linux kernel 7.3 support
+95e79ab15|coolsnowwolf|Mon Nov 2 23:49:07 2026 +0800|armsr: enable generic ALSA drivers on armv8 Linux 6.18
+ec2b9317f|coolsnowwolf|Mon Nov 2 23:34:25 2026 +0800|rockchip: allow NanoPi R4S SD power cycling on Linux 6.18
+667a1afd8|coolsnowwolf|Mon Nov 2 15:21:51 2026 +0800|qualcommbe: restore original authors and patch sign-offs
+d320b9c9a|Miles Poupart|Mon Nov 2 10:42:28 2026 +0800|kernel: fix NFS Kerberos module packaging on 6.18 and add missing Panfrost shmem helper dependency (#14264)
+0896ac040|coolsnowwolf|Mon Nov 2 10:15:26 2026 +0800|qualcommbe: update JDCloud IPQ53xx display models
+7390bdac4|coolsnowwolf|Mon Nov 2 10:11:37 2026 +0800|realtek: fix image metadata scanning in menuconfig
+b766e605c|coolsnowwolf|Mon Nov 2 08:19:59 2026 +0800|sunxi: fix A523 IOMMU callback for Linux 6.18
+390ec7e7d|coolsnowwolf|Mon Nov 2 04:56:11 2026 +0800|silicon: add Apple ARM64 platform support with Linux 6.18
+7ac6fc2f0|coolsnowwolf|Mon Nov 2 04:16:41 2026 +0800|oxnas: restore platform support and switch to Linux 6.18
+509da39ef|coolsnowwolf|Mon Nov 2 03:46:10 2026 +0800|yt6801: correct timer compatibility patch for Linux 6.18
+026729f11|coolsnowwolf|Mon Nov 2 03:29:28 2026 +0800|ipq806x: switch to Linux 6.18 and sync upstream board support
+e4dc36dcf|coolsnowwolf|Mon Nov 2 03:21:29 2026 +0800|econet: sync Linux 6.18 EN7528 pinctrl and PHY support
+85ce93826|coolsnowwolf|Mon Nov 2 03:00:21 2026 +0800|bcm63xx: switch generic and SMP targets to Linux 6.18
 
 
 </details>

@@ -1,10 +1,14 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/a2aebe9faffb6d753c8f22ee9a6de2c2a2138a77...f0e4c0f6b87228ba3c21888e52a4d10ae8b2510b)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/f0e4c0f6b87228ba3c21888e52a4d10ae8b2510b...b4df3bda1b3a6ca83ae20247472e575dc0117d1f)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-f0e4c0f6b8|github-actions[bot]|Sun Nov 1 09:17:04 2026 +0000|ci: sync upstream luci applications
-d7d7e0849d|coolsnowwolf|Sun Nov 1 09:15:50 2026 +0800|luci: integrate per-client hardware QoS controls and routed connection counts
+b4df3bda1b|github-actions[bot]|Fri Nov 6 09:25:51 2026 +0000|ci: sync upstream luci applications
+7b675b7077|coolsnowwolf|Fri Nov 6 10:36:12 2026 +0800|luci-app-firewall: add Airoha PPE binding threshold setting
+04bdb60fc1|github-actions[bot]|Wed Nov 4 09:13:36 2026 +0000|ci: sync upstream luci applications
+d9b0cc4812|coolsnowwolf|Tue Nov 3 22:18:33 2026 +0800|luci-app-firewall: add hardware offload protocol selection
+f784ce161a|coolsnowwolf|Tue Nov 3 10:25:03 2026 +0800|luci-app-zerotier: bump version
+f4c14a85d6|github-actions[bot]|Mon Nov 2 09:31:47 2026 +0000|ci: sync upstream luci applications
 </details>

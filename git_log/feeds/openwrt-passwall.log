@@ -1,10 +1,14 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/c873b70eee09541b8ed69c1dcf750ada5b5aeeb6...2a38efbb4a87c904a16c37735388daec28c9c8fd)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/2a38efbb4a87c904a16c37735388daec28c9c8fd...9815bf90e9213d872845a19b5922547ee3d80d89)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-2a38efbb|A-BO|Sun Nov 1 13:11:14 2026 +0800|luci: restart rpcd only when ACL file changes during luci update
-7fd613a2|RoomWithOutRoof|Sun Nov 1 12:26:17 2026 +0800|luci: fix typos in English help text and comments (#4506)
+9815bf90|A-BO|Fri Nov 6 13:35:13 2026 +0800|luci: center the node list toolbar across themes
+eddb5013|A-BO|Fri Nov 6 02:32:48 2026 +0800|luci: improve node selection dialog theme compatibility and layout
+39d8ca06|A-BO|Fri Nov 6 00:03:24 2026 +0800|luci: fix node selector theme compatibility
+0b969d5a|lwb1978|Tue Nov 3 23:26:50 2026 +0800|luci: bump 26.11.3
+86272672|lwb1978|Tue Nov 3 20:09:28 2026 +0800|luci: fix the haproxy port auto-fill error
+cde9833e|A-BO|Mon Nov 2 11:31:46 2026 +0800|luci: validate update assets before starting downloads
 </details>

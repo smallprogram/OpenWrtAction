@@ -1,10 +1,18 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/8303e9b2a004a6c3754aaa1edb32cfc7c0cfe55b...2d44c5ae2269efdc73a9febf4b99f60cfcafcd7d)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/2d44c5ae2269efdc73a9febf4b99f60cfcafcd7d...2ab43560b164a8fa9c9c2d3b6a39d51579a4e3b5)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-2d44c5ae22|David Bauer|Fri Jul 24 15:11:08 2026 +0200|mpc85xx: relocate simpleImage for WS-AP3710i
-f9d2a05684|Paul Donald|Wed May 27 19:16:22 2026 +0300|lldpd: bump to 1.0.22
+2ab43560b1|Florian Maurer|Sun May 31 21:04:41 2026 +0000|wifi-scripts: ucode: check wpa_supplicant exists before mesh probe
+e46e210884|Florian Maurer|Sun May 31 21:04:26 2026 +0000|wifi-scripts: ucode: remove trailing whitespace
+4522c07608|Florian Maurer|Sun May 31 20:14:38 2026 +0000|wifi-scripts: ucode: only set antenna when config changes
+d4cb702258|Jo-Philipp Wich|Thu Nov 5 22:56:07 2026 +0100|uhttpd: update to Git HEAD (2026-11-05)
+5c334c12e2|Felix Fietkau|Mon Oct 19 18:56:08 2026 +0200|uhttpd: update to Git HEAD (2026-10-19)
+69af20612b|Jonas Jelonek|Mon Jun 22 08:35:06 2026 +0000|tools: bc: update to 1.08.2
+cf2cae90b4|David Bentham|Fri Oct 16 05:03:36 2026 +0100|hostapd: silence unexpected link measurement report log
+6c57f7cd04|Hauke Mehrtens|Tue Nov 3 01:27:41 2026 +0100|libubox: update to Git openwrt-25.12 (2026-11-03)
+5858ebc1fc|Jackie Han|Sat Oct 24 15:45:33 2026 +0800|ipq40xx: whw03v2: fix PHY reset GPIO description
+ba477a8a1c|Jackie Han|Sat Oct 24 15:45:33 2026 +0800|ipq40xx: revert qcom_scm SDI/download mode probe change
 </details>

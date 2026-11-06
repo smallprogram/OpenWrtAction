@@ -1,0 +1,19 @@
+<details> <summary> <b>luci-theme-argon new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/jerrykuku/luci-theme-argon/compare/517971b773991541ecb5e118b0c5d0b609a79e06...c6d63bd68aa9272e40c35cee5e615f45cc1e4eb0)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+c6d63bd|jerrykuku|Fri Nov 6 09:29:04 2026 +0000|docs: keep v3.1.3 release notes concise
+2f5afba|github-actions[bot]|Fri Nov 6 17:27:33 2026 +0800|docs: sync release notes for v3.1.3
+6bdb62e|jerrykuku|Fri Nov 6 09:11:52 2026 +0000|release: v3.1.3
+c76818b|jerrykuku|Fri Nov 6 08:58:50 2026 +0000|fix(updates): preserve and synchronize Argon translations
+45a06e0|jerrykuku|Fri Nov 6 08:58:34 2026 +0000|fix(theme): restore online wallpapers and VLAN dropdown labels
+378db9f|jerrykuku|Mon Nov 2 07:14:53 2026 +0000|docs: keep v3.1.2 release notes concise
+8a0ae13|github-actions[bot]|Mon Nov 2 15:12:18 2026 +0800|docs: sync release notes for v3.1.2
+7b77b44|jerrykuku|Mon Nov 2 07:00:53 2026 +0000|release: v3.1.2
+858cd14|jerrykuku|Mon Nov 2 06:40:29 2026 +0000|fix(overview): normalize ImmortalWrt port card sizing
+b6edd95|jerrykuku|Mon Nov 2 06:40:29 2026 +0000|fix(openclash): contain startup status logs
+06db78b|jerrykuku|Mon Nov 2 06:40:29 2026 +0000|fix(theme): style standalone input buttons consistently
+</details>
