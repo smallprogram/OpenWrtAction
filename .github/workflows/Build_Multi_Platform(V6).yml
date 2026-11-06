@@ -658,6 +658,8 @@ jobs:
       - name: Compile Packages and Firmware
         id: compile
         if: steps.matrix_status.outputs.status != 'success' && !cancelled()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd openwrt
           df -h
