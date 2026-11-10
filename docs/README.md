@@ -209,7 +209,7 @@ CONFIG_PACKAGE_luci-app-banip=y
 CONFIG_PACKAGE_luci-theme-7dollar=y
 CONFIG_PACKAGE_luci-theme-argon=y
 CONFIG_PACKAGE_luci-app-argon-config=y
-CONFIG_PACKAGE_luci-theme-ctmodem
+CONFIG_PACKAGE_luci-theme-carbon=y
 CONFIG_PACKAGE_luci-theme-kucat=y
 CONFIG_PACKAGE_luci-app-kucat-config=y
 CONFIG_PACKAGE_luci-theme-aurora=y
