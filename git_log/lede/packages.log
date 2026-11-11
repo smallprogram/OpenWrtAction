@@ -1,12 +1,13 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/e11984b9a88abdbfa4e0dbc2d423e18e83d39d01...22bc97f148542e03c1de3e30d95f82107ae582f4)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/22bc97f148542e03c1de3e30d95f82107ae582f4...a25f30bbfcdd3cc130dc7dc5c35b9ed54e0155e8)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-22bc97f1|coolsnowwolf|Fri Nov 6 12:18:10 2026 +0800|multimedia: add missing video feed dependencies
-970d7296|coolsnowwolf|Tue Nov 3 15:02:50 2026 +0800|mihomo: fix source mirror hash to avoid repeated rebuilds
-bbe00470|coolsnowwolf|Tue Nov 3 13:49:32 2026 +0800|zerotier: bump version
-2c49f074|coolsnowwolf|Mon Nov 2 23:34:25 2026 +0800|qt6base: select SQLite column metadata support
+a25f30bb|github-actions[bot]|Tue Nov 10 10:02:09 2026 +0000|ci: sync upstream packages
+ac62ee3c|coolsnowwolf|Tue Nov 10 14:24:25 2026 +0800|ruby: update to 4.0.7 ruby 4.0.3 only contains ERB 6.0.1.1, which fixes CVE-2026-41316.
+be676542|coolsnowwolf|Mon Nov 9 02:16:17 2026 +0800|Merge pull request #1156 from 21hkcloud/codex/51ddns-agent-067r7-lean
+42e955c6|Jinshuan Wang|Sun Nov 8 01:29:48 2026 -0800|51ddns-agent: add remote access agent
+497b99d7|coolsnowwolf|Sat Nov 7 11:21:47 2026 +0800|openssh: update to 10.6p2
 </details>

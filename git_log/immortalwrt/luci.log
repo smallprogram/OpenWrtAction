@@ -1,9 +1,21 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/luci/compare/c84adb975e207ae8b14982191838ec6218d632cd...c38e5665e826f5e6e2ac9168e167ee368d0969d9)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/luci/compare/c38e5665e826f5e6e2ac9168e167ee368d0969d9...8f18275bb510818c501e4b124f872b6d30573d8a)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-c38e5665e8|Interesting Gang|Fri Oct 23 09:11:10 2026 +0800|luci-app-passwall: bump to 26.10.29
+8f18275bb5|Tianling Shen|Wed Nov 11 10:49:43 2026 +0800|Merge Official Source
+33d81ca9e8|Interesting Gang|Fri Nov 6 07:41:31 2026 +0800|luci-app-passwall: bump to 26.11.11
+2b2c68fcc9|Aethersailor|Tue Nov 10 10:34:37 2026 +0800|luci-theme-argon: bump to 3.1.3
+a89e6ff71a|Aethersailor|Tue Nov 3 10:09:47 2026 +0800|luci-theme-argon: bump to 3.1.2
+84907a60e4|Interesting Gang|Thu Oct 29 19:45:54 2026 +0800|luci-app-passwall: bump to 26.11.3
+2f4ebba48a|Aethersailor|Tue Oct 27 16:03:42 2026 +0800|luci-theme-argon: bump to 3.1.0
+3431da3f6b|Aethersailor|Wed Oct 21 17:31:19 2026 +0800|luci-theme-argon: update to 3.0.0
+9602dd94f8|Kitt Diebold|Sun Nov 8 11:11:05 2026 +0200|luci-app-usteer: fix formatting of band_steering_signal_threshold option
+76f7b462d8|Dirk Brenken|Sat Oct 31 18:04:33 2026 +0100|luci-app-unbound: fix stored XSS in lease trigger notice
+e969939b49|Dirk Brenken|Sat Oct 31 08:19:01 2026 +0100|luci-app-banip: sync with base package
+9fe44cfb65|Hannu Nyman|Sat Oct 31 09:05:31 2026 +0200|treewide: backport translations - i18n
+0229375b45|Dirk Brenken|Fri Oct 30 08:58:22 2026 +0100|luci-app-travelmate: move command execution to the write ACL
+6db2638290|Dirk Brenken|Wed Oct 14 22:25:24 2026 +0200|luci-app-uhttpd: drop unrestricted file read grant
 </details>

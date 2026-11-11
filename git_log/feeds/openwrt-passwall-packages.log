@@ -1,0 +1,13 @@
+<details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/da712cf06cf4e6fd39e147fb36e6ec936003fcc9...4dad9be70a37343ad3ef88cd3722576e8e234edf)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+4dad9be|David Mandy|Mon Nov 9 21:28:44 2026 +0800|smartdns: update to 48.5_rc1 (#776)
+39fdb75|David Mandy|Mon Nov 9 21:05:42 2026 +0800|ci: optimize smartdns auto update code Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
+f9c2e88|David Mandy|Mon Nov 9 20:38:20 2026 +0800|v2ray-geosite: update to 202611082203 (#774)
+a837964|David Mandy|Mon Nov 9 20:37:57 2026 +0800|v2ray-geoip: update to 202611050019 (#775)
+cf3c9df|David Mandy|Mon Nov 9 15:07:18 2026 +0800|xray-core: update to 26.11.9 (#772)
+</details>

@@ -1,0 +1,10 @@
+<details> <summary> <b>routing new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/openwrt/routing/compare/48c808034414a2112cf9d5261a20a320e8d0d170...625f9d8446807708bab4eef26cdc44692164818a)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+625f9d8|Simon Wunderlich|Fri Nov 6 18:14:51 2026 +0100|Merge pull request #1209 from ecsv/batadv-for-25.12
+27ce791|Sven Eckelmann|Fri Nov 6 17:39:49 2026 +0100|batman-adv: merge bugfixes from 2026.4
+</details>
