@@ -1,25 +1,17 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/e7958d8bc7ce7f3e299b63ba3518170423f2e8c0...74a59a5826862feacff9b9e9c93d28aec31aefd8)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/74a59a5826862feacff9b9e9c93d28aec31aefd8...80122feac964889bc69b62420cedfefaaf701eb0)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-74a59a582|fxfall|Wed Nov 4 22:51:08 2026 +0800|zte: add support for ZXSLC SR1010 (ZX279133) (#14272)
-f61f09e85|coolsnowwolf|Wed Nov 4 13:45:20 2026 +0800|generic: port Linux kernel 7.3 support
-95e79ab15|coolsnowwolf|Mon Nov 2 23:49:07 2026 +0800|armsr: enable generic ALSA drivers on armv8 Linux 6.18
-ec2b9317f|coolsnowwolf|Mon Nov 2 23:34:25 2026 +0800|rockchip: allow NanoPi R4S SD power cycling on Linux 6.18
-667a1afd8|coolsnowwolf|Mon Nov 2 15:21:51 2026 +0800|qualcommbe: restore original authors and patch sign-offs
-d320b9c9a|Miles Poupart|Mon Nov 2 10:42:28 2026 +0800|kernel: fix NFS Kerberos module packaging on 6.18 and add missing Panfrost shmem helper dependency (#14264)
-0896ac040|coolsnowwolf|Mon Nov 2 10:15:26 2026 +0800|qualcommbe: update JDCloud IPQ53xx display models
-7390bdac4|coolsnowwolf|Mon Nov 2 10:11:37 2026 +0800|realtek: fix image metadata scanning in menuconfig
-b766e605c|coolsnowwolf|Mon Nov 2 08:19:59 2026 +0800|sunxi: fix A523 IOMMU callback for Linux 6.18
-390ec7e7d|coolsnowwolf|Mon Nov 2 04:56:11 2026 +0800|silicon: add Apple ARM64 platform support with Linux 6.18
-7ac6fc2f0|coolsnowwolf|Mon Nov 2 04:16:41 2026 +0800|oxnas: restore platform support and switch to Linux 6.18
-509da39ef|coolsnowwolf|Mon Nov 2 03:46:10 2026 +0800|yt6801: correct timer compatibility patch for Linux 6.18
-026729f11|coolsnowwolf|Mon Nov 2 03:29:28 2026 +0800|ipq806x: switch to Linux 6.18 and sync upstream board support
-e4dc36dcf|coolsnowwolf|Mon Nov 2 03:21:29 2026 +0800|econet: sync Linux 6.18 EN7528 pinctrl and PHY support
-85ce93826|coolsnowwolf|Mon Nov 2 03:00:21 2026 +0800|bcm63xx: switch generic and SMP targets to Linux 6.18
-
-
+80122feac|coolsnowwolf|Tue Nov 10 09:51:50 2026 +0800|ramips: fix HNAT netlink bind across stable kernel APIs
+ff6b739d4|coolsnowwolf|Sun Nov 8 17:52:35 2026 +0800|target.mk: add luci-theme-design as default theme
+112647c9c|iIl1o0O304|Sun Nov 8 16:14:46 2026 +0800|kernel: modules: netdevices: add libeth-xdp for Intel ice (#14279)
+5b3fb1a5e|fxfall|Sat Nov 7 16:36:43 2026 +0800|zte: add NPU VLAN/SQM support and reset button (#14278)
+8befdf1b8|coolsnowwolf|Sat Nov 7 11:32:36 2026 +0800|feeds: enable coolsnowwolf video feed
+3e55a98a1|coolsnowwolf|Sat Nov 7 11:06:21 2026 +0800|kernel: update LTS releases and Linux 7.3
+55897b736|coolsnowwolf|Sat Nov 7 01:29:55 2026 +0800|aic8800: terminate the PCI device ID table
+0f0867954|coolsnowwolf|Sat Nov 7 01:29:44 2026 +0800|qca-nss-ecm: fix netlink bind on newer stable kernels
+f421cd2b0|coolsnowwolf|Sat Nov 7 01:29:33 2026 +0800|build: skip dependencies implied by compound conditions
 </details>

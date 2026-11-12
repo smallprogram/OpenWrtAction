@@ -1,18 +1,25 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/2d44c5ae2269efdc73a9febf4b99f60cfcafcd7d...2ab43560b164a8fa9c9c2d3b6a39d51579a4e3b5)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/2ab43560b164a8fa9c9c2d3b6a39d51579a4e3b5...4e9642517b48bae612ff10fb72fb9199e559500e)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-2ab43560b1|Florian Maurer|Sun May 31 21:04:41 2026 +0000|wifi-scripts: ucode: check wpa_supplicant exists before mesh probe
-e46e210884|Florian Maurer|Sun May 31 21:04:26 2026 +0000|wifi-scripts: ucode: remove trailing whitespace
-4522c07608|Florian Maurer|Sun May 31 20:14:38 2026 +0000|wifi-scripts: ucode: only set antenna when config changes
-d4cb702258|Jo-Philipp Wich|Thu Nov 5 22:56:07 2026 +0100|uhttpd: update to Git HEAD (2026-11-05)
-5c334c12e2|Felix Fietkau|Mon Oct 19 18:56:08 2026 +0200|uhttpd: update to Git HEAD (2026-10-19)
-69af20612b|Jonas Jelonek|Mon Jun 22 08:35:06 2026 +0000|tools: bc: update to 1.08.2
-cf2cae90b4|David Bentham|Fri Oct 16 05:03:36 2026 +0100|hostapd: silence unexpected link measurement report log
-6c57f7cd04|Hauke Mehrtens|Tue Nov 3 01:27:41 2026 +0100|libubox: update to Git openwrt-25.12 (2026-11-03)
-5858ebc1fc|Jackie Han|Sat Oct 24 15:45:33 2026 +0800|ipq40xx: whw03v2: fix PHY reset GPIO description
-ba477a8a1c|Jackie Han|Sat Oct 24 15:45:33 2026 +0800|ipq40xx: revert qcom_scm SDI/download mode probe change
+4e9642517b|David Bauer|Wed Nov 11 22:48:17 2026 +0100|ipq806x: set device-specific mac for AP-325
+c24ef49cc4|Martin Schiller|Wed Nov 11 09:26:28 2026 +0000|imx: disable unused 8250 serial driver
+94701b14e0|André Valentin|Fri Oct 30 17:43:49 2026 +0100|ucode: backport ubus request prototype fix
+951512a7c1|André Valentin|Thu Oct 29 14:35:23 2026 +0100|ucode: backport socket fix for 64-bit big-endian
+a5349c0234|Felix Fietkau|Fri Jul 10 13:57:49 2026 +0200|wifi-scripts: fix undeclared variable in service wifi-device injection
+a3c1b5fc1c|Felix Fietkau|Mon Jul 13 11:33:44 2026 +0200|ucode: update to Git HEAD (2026-07-09)
+2bd932914f|Felix Fietkau|Tue Jul 7 10:31:42 2026 +0200|ucode: fix two compiler issues
+609e08f4e2|Felix Fietkau|Wed Jun 3 12:55:26 2026 +0200|ucode: update to Git HEAD (2026-06-03)
+40ed15c858|Felix Fietkau|Tue Apr 14 15:36:04 2026 +0000|ucode: update to Git HEAD (2026-04-24)
+9445bd24fd|Felix Fietkau|Sat Mar 21 16:15:31 2026 +0000|ucode: nl80211: fix HE MCS parsing
+c932b4381c|Felix Fietkau|Sat Feb 28 11:39:33 2026 +0000|ucode: nl80211: add missing survey info attributes and fix DFS CAC time
+37c3040170|Felix Fietkau|Sat Feb 28 11:19:04 2026 +0000|ucode: update to Git HEAD (2026-02-27)
+fd6d730188|Florian Maurer|Tue Sep 22 08:31:17 2026 +0200|ath79: add supported device alias for D-Link DIR825-b1
+9e2a2d6a19|Mieczyslaw Nalewaj|Fri Nov 6 22:36:25 2026 +0100|kernel: bump 6.12 to 6.12.116
+74fefb54af|Mieczyslaw Nalewaj|Sun Nov 1 18:17:43 2026 +0100|kernel: bump 6.12 to 6.12.115
+
+
 </details>

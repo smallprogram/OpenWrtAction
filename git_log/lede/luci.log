@@ -1,14 +1,21 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/f0e4c0f6b87228ba3c21888e52a4d10ae8b2510b...b4df3bda1b3a6ca83ae20247472e575dc0117d1f)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/b4df3bda1b3a6ca83ae20247472e575dc0117d1f...7f7c25ca97d31277d14d760abf37e606a3581131)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-b4df3bda1b|github-actions[bot]|Fri Nov 6 09:25:51 2026 +0000|ci: sync upstream luci applications
-7b675b7077|coolsnowwolf|Fri Nov 6 10:36:12 2026 +0800|luci-app-firewall: add Airoha PPE binding threshold setting
-04bdb60fc1|github-actions[bot]|Wed Nov 4 09:13:36 2026 +0000|ci: sync upstream luci applications
-d9b0cc4812|coolsnowwolf|Tue Nov 3 22:18:33 2026 +0800|luci-app-firewall: add hardware offload protocol selection
-f784ce161a|coolsnowwolf|Tue Nov 3 10:25:03 2026 +0800|luci-app-zerotier: bump version
-f4c14a85d6|github-actions[bot]|Mon Nov 2 09:31:47 2026 +0000|ci: sync upstream luci applications
+7f7c25ca97|github-actions[bot]|Wed Nov 11 09:26:58 2026 +0000|ci: sync upstream luci applications
+e5c479b0a9|fxfall|Tue Nov 10 22:35:51 2026 +0800|luci: add SR1010 NPU offload detection and flow totals (#427)
+f4f847040c|coolsnowwolf|Tue Nov 10 22:34:31 2026 +0800|luci-app-openclash: enable China IP routing by default after sync
+8f7eed5d3b|github-actions[bot]|Tue Nov 10 09:51:33 2026 +0000|ci: sync upstream luci applications
+4e6e9415a4|coolsnowwolf|Mon Nov 9 02:25:43 2026 +0800|luci-mod-status: display Qualcomm Atheros vendor for QCA radios
+a33aab3a11|coolsnowwolf|Mon Nov 9 02:22:37 2026 +0800|luci-mod-network: fix carrier status for dynamic interfaces
+0a2c71f213|coolsnowwolf|Mon Nov 9 02:14:54 2026 +0800|luci-theme-design: stabilize wireless actions during polling
+84d88f3fb7|coolsnowwolf|Sun Nov 8 17:15:25 2026 +0800|luci-theme-design: fix mobile layout overflow
+168f616e4e|github-actions[bot]|Sun Nov 8 09:00:14 2026 +0000|ci: sync upstream luci applications
+57bd5cd663|coolsnowwolf|Sun Nov 8 12:15:11 2026 +0800|luci-mod-system: support exporting eMMC partitions
+47cb125b73|coolsnowwolf|Sun Nov 8 11:44:49 2026 +0800|luci-mod-network: use native iwinfo for QCA PHY bitrate
+7926f1c78c|coolsnowwolf|Sat Nov 7 17:51:38 2026 +0800|luci-app-firewall: expose PPE binding threshold for MediaTek HNAT
+92ee82168a|github-actions[bot]|Sat Nov 7 08:48:00 2026 +0000|ci: sync upstream luci applications
 </details>

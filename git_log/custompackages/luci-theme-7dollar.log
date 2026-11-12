@@ -1,5 +1,12 @@
 <details> <summary> <b>luci-theme-7dollar new commit log :rocket: </b> </summary>
 
-<b>Initial commit log for luci-theme-7dollar, no previous SHA.</b>
+#### [:mega: Full Changelog. ](https://github.com/itsmaiGe/luci-theme-7dollar/compare/1bc9e70226f8caf3e9522d6e61e057baffb21876...b7cdbbc92fed9e0ed3c829862d94635b9a528fe6)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
+SHA|Author|Date|Message
+-|-|-|-
+b7cdbbc|github-actions[bot]|Sat Nov 7 15:59:34 2026 +0000|dist: luci-theme-7dollar-1.0.14-r1.apk
+6fee7b5|itsmaiGe|Sat Nov 7 23:59:01 2026 +0800|1.0.14
+7f444ab|itsmaiGe|Sat Nov 7 23:16:43 2026 +0800|Menu: plugins under System/Status go to Apps; rarely used pages fold behind More. Apps card shows a few rows and counts the rest
+d368be1|itsmaiGe|Sat Nov 7 10:07:33 2026 +0800|Devices: a box without its own Wi-Fi counts LAN devices as LAN, not wired (#12)
 </details>
