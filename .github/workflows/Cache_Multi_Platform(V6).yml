@@ -38,7 +38,7 @@ env:
 
 jobs:
   job_init: 
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     name: Init
     outputs:
       platforms: ${{ steps.read-platforms.outputs.matrix }}
@@ -56,7 +56,7 @@ jobs:
   
   job_source_init:
     needs: job_init
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     name: Source-Init-${{ matrix.source_code_platform }}
     strategy:
       fail-fast: false
@@ -134,7 +134,7 @@ jobs:
 
   job_cache_compile_and_upload:
     needs: [job_init, job_source_init]
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     if: ${{ always() && !cancelled() }} 
     strategy:
       fail-fast: false
@@ -459,7 +459,7 @@ jobs:
           df -hT
 
   rerun-failed-jobs:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     needs: [job_init, job_source_init, job_cache_compile_and_upload]
     if: failure() && fromJSON(github.run_attempt) < 3  && !cancelled()
     steps:
