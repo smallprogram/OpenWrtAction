@@ -1,21 +1,15 @@
 <details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/c5894c4e0b5c984d6eabccbd009ebfcd78d1d621...7aeb0aa4e10246115f6a568b5c69bca122c75794)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/be8d917a3b88a090c084540af9bb9c1864578552...c5894c4e0b5c984d6eabccbd009ebfcd78d1d621)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-7aeb0aa|A-BO|Wed Nov 11 23:48:20 2026 +0800|luci: fix group dropdown text alignment in some themes
-48f0a7a|FunnyFly|Wed Nov 11 23:16:45 2026 +0800|luci: make current node highlight follow theme accent (#1355)
-24baf7c|A-BO|Wed Nov 11 00:45:39 2026 +0800|luci: bump 26.11.11
-4c25d8f|A-BO|Wed Nov 11 00:42:41 2026 +0800|luci: Add socks/http/https URI import/export
-4fed055|A-BO|Wed Nov 11 00:23:02 2026 +0800|luci: Add WireGuard URI import/export
-61d1ee7|A-BO|Tue Nov 10 20:47:30 2026 +0800|luci: fix Xray Hysteria2 port hopping and require core 26.9.9+
-1e9e016|A-BO|Tue Nov 10 20:14:50 2026 +0800|luci: simplify sing-box WebSocket transport settings
-805b21d|A-BO|Tue Nov 10 16:59:29 2026 +0800|luci: optimize
-0d5a169|A-BO|Sun Nov 8 13:53:54 2026 +0800|luci: fix component update button clipping across themes
-7d6b5bc|A-BO|Sat Nov 7 15:58:50 2026 +0800|luci: sync Clash subscription conversion from PassWall
-edef18e|A-BO|Sat Nov 7 01:24:58 2026 +0800|luci: fix share link host parsing and default ports
-4a7ecc1|A-BO|Fri Nov 6 23:59:56 2026 +0800|luci: fix double URL decoding of Shadowsocks passwords
-2c58e9a|A-BO|Fri Nov 6 23:17:41 2026 +0800|luci: fix Naive share link userinfo parsing
+c5894c4|A-BO|Fri Nov 6 13:50:40 2026 +0800|luci: center the node list toolbar across themes
+819de45|A-BO|Fri Nov 6 02:49:42 2026 +0800|luci: improve node selection dialog theme compatibility and layout
+5bf637a|A-BO|Fri Nov 6 00:08:00 2026 +0800|luci: fix node selector theme compatibility
+1a1bb44|itoywh|Thu Nov 5 20:07:41 2026 +0800|fix(helper_dnsmasq): strip the trailing newline from the node address md5 so the config cache can hit (#1347)
+176e27c|lwb1978|Tue Nov 3 23:28:37 2026 +0800|luci: bump 26.11.3
+fe90ae8|lwb1978|Tue Nov 3 20:12:42 2026 +0800|luci: fix the haproxy port auto-fill error
+8c67190|A-BO|Mon Nov 2 11:44:46 2026 +0800|luci: validate update assets before starting downloads
 </details>

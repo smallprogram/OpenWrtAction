@@ -1,24 +1,14 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/9815bf90e9213d872845a19b5922547ee3d80d89...44e9a0295cd86bad7339d6a2730f72ebcde73656)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/2a38efbb4a87c904a16c37735388daec28c9c8fd...9815bf90e9213d872845a19b5922547ee3d80d89)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-44e9a029|A-BO|Wed Nov 11 23:46:16 2026 +0800|luci: fix group dropdown text alignment in some themes
-b673df3a|FunnyFly|Wed Nov 11 22:52:54 2026 +0800|luci: make current node highlight follow theme accent (#4515)
-5f03390a|A-BO|Wed Nov 11 00:44:36 2026 +0800|luci: bump 26.11.11
-1a396e01|A-BO|Wed Nov 11 00:07:22 2026 +0800|luci: Add socks/http/https URI import/export
-596ca9c1|A-BO|Tue Nov 10 23:05:42 2026 +0800|luci: Add WireGuard URI import/export
-444d379c|A-BO|Tue Nov 10 20:42:43 2026 +0800|luci: fix Xray Hysteria2 port hopping and require core 26.9.9+
-f42a7b49|A-BO|Tue Nov 10 19:34:20 2026 +0800|luci: keep the ws path query when removing ed for sing-box
-9dc6e048|A-BO|Tue Nov 10 16:57:31 2026 +0800|luci: optimize
-33ebdb39|A-BO|Tue Nov 10 00:59:30 2026 +0800|luci: clean up shunt sets on service stop
-4c542220|A-BO|Mon Nov 9 23:48:41 2026 +0800|luci: disable auto-merge for dynamic nftsets
-e7f0ed63|A-BO|Mon Nov 9 23:21:21 2026 +0800|luci: move ISP DNS addresses to VPS bypass sets
-f19da543|A-BO|Sun Nov 8 13:55:52 2026 +0800|luci: fix component update button clipping across themes
-82678e8e|A-BO|Sat Nov 7 15:22:53 2026 +0800|luci: add optional node DNS extraction from Clash subscriptions
-edf166fb|A-BO|Sat Nov 7 01:16:13 2026 +0800|luci: fix share link host parsing and default ports
-c55e859c|A-BO|Fri Nov 6 23:56:12 2026 +0800|luci: fix double URL decoding of Shadowsocks passwords
-
+9815bf90|A-BO|Fri Nov 6 13:35:13 2026 +0800|luci: center the node list toolbar across themes
+eddb5013|A-BO|Fri Nov 6 02:32:48 2026 +0800|luci: improve node selection dialog theme compatibility and layout
+39d8ca06|A-BO|Fri Nov 6 00:03:24 2026 +0800|luci: fix node selector theme compatibility
+0b969d5a|lwb1978|Tue Nov 3 23:26:50 2026 +0800|luci: bump 26.11.3
+86272672|lwb1978|Tue Nov 3 20:09:28 2026 +0800|luci: fix the haproxy port auto-fill error
+cde9833e|A-BO|Mon Nov 2 11:31:46 2026 +0800|luci: validate update assets before starting downloads
 </details>
