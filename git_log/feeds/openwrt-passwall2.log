@@ -1,21 +1,13 @@
 <details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/c5894c4e0b5c984d6eabccbd009ebfcd78d1d621...7aeb0aa4e10246115f6a568b5c69bca122c75794)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/7aeb0aa4e10246115f6a568b5c69bca122c75794...0c817f7dbfc10038510c4e6e9d13e54bd94f769d)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-7aeb0aa|A-BO|Wed Nov 11 23:48:20 2026 +0800|luci: fix group dropdown text alignment in some themes
-48f0a7a|FunnyFly|Wed Nov 11 23:16:45 2026 +0800|luci: make current node highlight follow theme accent (#1355)
-24baf7c|A-BO|Wed Nov 11 00:45:39 2026 +0800|luci: bump 26.11.11
-4c25d8f|A-BO|Wed Nov 11 00:42:41 2026 +0800|luci: Add socks/http/https URI import/export
-4fed055|A-BO|Wed Nov 11 00:23:02 2026 +0800|luci: Add WireGuard URI import/export
-61d1ee7|A-BO|Tue Nov 10 20:47:30 2026 +0800|luci: fix Xray Hysteria2 port hopping and require core 26.9.9+
-1e9e016|A-BO|Tue Nov 10 20:14:50 2026 +0800|luci: simplify sing-box WebSocket transport settings
-805b21d|A-BO|Tue Nov 10 16:59:29 2026 +0800|luci: optimize
-0d5a169|A-BO|Sun Nov 8 13:53:54 2026 +0800|luci: fix component update button clipping across themes
-7d6b5bc|A-BO|Sat Nov 7 15:58:50 2026 +0800|luci: sync Clash subscription conversion from PassWall
-edef18e|A-BO|Sat Nov 7 01:24:58 2026 +0800|luci: fix share link host parsing and default ports
-4a7ecc1|A-BO|Fri Nov 6 23:59:56 2026 +0800|luci: fix double URL decoding of Shadowsocks passwords
-2c58e9a|A-BO|Fri Nov 6 23:17:41 2026 +0800|luci: fix Naive share link userinfo parsing
+0c817f7|A-BO|Mon Nov 16 21:50:20 2026 +0800|luci: prevent duplicate node references during subscription updates
+9ea760f|A-BO|Sun Nov 15 20:03:10 2026 +0800|luci: align SOCKS table layout and port status with PassWall
+097b01d|A-BO|Sun Nov 15 19:17:31 2026 +0800|luci: improve responsive layouts and node selector theming
+35d20ce|A-BO|Sun Nov 15 09:59:35 2026 +0800|luci: fix port allocation and node test startup races
+dd77a23|A-BO|Fri Nov 13 00:01:39 2026 +0800|luci: add proxy warm-up before node latency tests
 </details>

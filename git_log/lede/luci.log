@@ -1,21 +1,12 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/b4df3bda1b3a6ca83ae20247472e575dc0117d1f...7f7c25ca97d31277d14d760abf37e606a3581131)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/7f7c25ca97d31277d14d760abf37e606a3581131...e881fed794a36dd18f282a4e227b7a1ced5679e5)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-7f7c25ca97|github-actions[bot]|Wed Nov 11 09:26:58 2026 +0000|ci: sync upstream luci applications
-e5c479b0a9|fxfall|Tue Nov 10 22:35:51 2026 +0800|luci: add SR1010 NPU offload detection and flow totals (#427)
-f4f847040c|coolsnowwolf|Tue Nov 10 22:34:31 2026 +0800|luci-app-openclash: enable China IP routing by default after sync
-8f7eed5d3b|github-actions[bot]|Tue Nov 10 09:51:33 2026 +0000|ci: sync upstream luci applications
-4e6e9415a4|coolsnowwolf|Mon Nov 9 02:25:43 2026 +0800|luci-mod-status: display Qualcomm Atheros vendor for QCA radios
-a33aab3a11|coolsnowwolf|Mon Nov 9 02:22:37 2026 +0800|luci-mod-network: fix carrier status for dynamic interfaces
-0a2c71f213|coolsnowwolf|Mon Nov 9 02:14:54 2026 +0800|luci-theme-design: stabilize wireless actions during polling
-84d88f3fb7|coolsnowwolf|Sun Nov 8 17:15:25 2026 +0800|luci-theme-design: fix mobile layout overflow
-168f616e4e|github-actions[bot]|Sun Nov 8 09:00:14 2026 +0000|ci: sync upstream luci applications
-57bd5cd663|coolsnowwolf|Sun Nov 8 12:15:11 2026 +0800|luci-mod-system: support exporting eMMC partitions
-47cb125b73|coolsnowwolf|Sun Nov 8 11:44:49 2026 +0800|luci-mod-network: use native iwinfo for QCA PHY bitrate
-7926f1c78c|coolsnowwolf|Sat Nov 7 17:51:38 2026 +0800|luci-app-firewall: expose PPE binding threshold for MediaTek HNAT
-92ee82168a|github-actions[bot]|Sat Nov 7 08:48:00 2026 +0000|ci: sync upstream luci applications
+e881fed794|github-actions[bot]|Mon Nov 16 09:44:53 2026 +0000|ci: sync upstream luci applications
+f43c53a60f|github-actions[bot]|Sun Nov 15 09:27:08 2026 +0000|ci: sync upstream luci applications
+b077e7af4d|github-actions[bot]|Fri Nov 13 09:31:42 2026 +0000|ci: sync upstream luci applications
+f0a0167429|github-actions[bot]|Thu Nov 12 09:51:00 2026 +0000|ci: sync upstream luci applications
 </details>

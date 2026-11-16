@@ -1,17 +1,25 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/74a59a5826862feacff9b9e9c93d28aec31aefd8...80122feac964889bc69b62420cedfefaaf701eb0)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/80122feac964889bc69b62420cedfefaaf701eb0...017c3a4a22611fce5c3ea985855c752598d3b998)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-80122feac|coolsnowwolf|Tue Nov 10 09:51:50 2026 +0800|ramips: fix HNAT netlink bind across stable kernel APIs
-ff6b739d4|coolsnowwolf|Sun Nov 8 17:52:35 2026 +0800|target.mk: add luci-theme-design as default theme
-112647c9c|iIl1o0O304|Sun Nov 8 16:14:46 2026 +0800|kernel: modules: netdevices: add libeth-xdp for Intel ice (#14279)
-5b3fb1a5e|fxfall|Sat Nov 7 16:36:43 2026 +0800|zte: add NPU VLAN/SQM support and reset button (#14278)
-8befdf1b8|coolsnowwolf|Sat Nov 7 11:32:36 2026 +0800|feeds: enable coolsnowwolf video feed
-3e55a98a1|coolsnowwolf|Sat Nov 7 11:06:21 2026 +0800|kernel: update LTS releases and Linux 7.3
-55897b736|coolsnowwolf|Sat Nov 7 01:29:55 2026 +0800|aic8800: terminate the PCI device ID table
-0f0867954|coolsnowwolf|Sat Nov 7 01:29:44 2026 +0800|qca-nss-ecm: fix netlink bind on newer stable kernels
-f421cd2b0|coolsnowwolf|Sat Nov 7 01:29:33 2026 +0800|build: skip dependencies implied by compound conditions
+017c3a4a2|coolsnowwolf|Mon Nov 16 15:03:10 2026 +0800|ltq-ifxos: use kernel_bind instead of guessing socket ABI
+e5dc1a534|coolsnowwolf|Mon Nov 16 00:07:08 2026 +0800|ath10k-ct: match upstream source archive for Linux 6.18
+6a6ea2625|coolsnowwolf|Sun Nov 15 21:27:37 2026 +0800|tools: wait for bison before building elfutils
+d9d755738|coolsnowwolf|Sun Nov 15 16:40:49 2026 +0800|build: fix metadata for automatically gzipped images
+d7f5374b9|coolsnowwolf|Sun Nov 15 07:45:54 2026 +0800|firmware-utils: fix bcm4908asus options on macOS
+a0c958aee|coolsnowwolf|Sat Nov 14 21:23:13 2026 +0800|bcm27xx: enlarge default rootfs partition for runtime tools
+9fc7f74e4|coolsnowwolf|Sat Nov 14 16:48:26 2026 +0800|ath25: fix ELF image generation
+2ff320ada|coolsnowwolf|Sat Nov 14 14:36:02 2026 +0800|at91: restrict images to supported filesystems
+afa6274c4|coolsnowwolf|Sat Nov 14 14:18:04 2026 +0800|at91: use XZ for the SAMA5 6.18 kernel
+91f956415|coolsnowwolf|Sat Nov 14 13:50:44 2026 +0800|at91: fix native builds with current toolchains
+3d3d4f320|coolsnowwolf|Sat Nov 14 08:42:58 2026 +0800|amlogic: fix OneCloud boot partition and image metadata
+a5e57fadf|coolsnowwolf|Sat Nov 14 04:58:21 2026 +0800|airoha: build reference board boot firmware on native macOS
+610cb3560|coolsnowwolf|Sat Nov 14 02:12:36 2026 +0800|uboot: preserve disabled configuration with Clang
+0ea8152d5|coolsnowwolf|Sat Nov 14 00:54:52 2026 +0800|glibc: use the build system make during configure
+4c670766f|coolsnowwolf|Fri Nov 13 21:38:31 2026 +0800|upx: update to 5.3.0 for RISC-V executable support
+
+
 </details>

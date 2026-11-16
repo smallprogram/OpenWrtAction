@@ -1,0 +1,16 @@
+<details> <summary> <b>luci-theme-argon new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/jerrykuku/luci-theme-argon/compare/c6d63bd68aa9272e40c35cee5e615f45cc1e4eb0...a121960d2adbe9d57333db3f4e045467dcb375c9)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+a121960|jerrykuku|Fri Nov 13 10:52:32 2026 +0000|docs: keep v3.1.4 release notes concise
+2594f6f|github-actions[bot]|Fri Nov 13 18:49:05 2026 +0800|docs: sync release notes for v3.1.4
+c5c0873|jerrykuku|Fri Nov 13 10:32:39 2026 +0000|release: v3.1.4
+53dfb19|jerrykuku|Fri Nov 13 10:18:06 2026 +0000|fix(theme): improve motion controls, navigation and chart performance
+c565b91|jerrykuku|Fri Nov 13 10:18:06 2026 +0000|fix(theme): improve Firefox ESR compatibility
+c9cd848|jerrykuku|Fri Nov 13 10:18:06 2026 +0000|fix(dashboard): support configurable widgets in newer LuCI
+e2611f6|jerrykuku|Fri Nov 13 10:18:06 2026 +0000|fix(theme): allow table dropdowns to expand
+4c40bbe|jerrykuku|Fri Nov 13 10:18:06 2026 +0000|fix(theme): keep inline alerts below dropdowns
+</details>

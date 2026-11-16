@@ -1,0 +1,10 @@
+<details> <summary> <b>openwrt-ghfu new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/smallprogram/openwrt-ghfu/compare/09ea64e75de147ad2a2f77475646540388fc7748...1f06bd2ffc6f897a71d96543faa99767833be5f1)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+1f06bd2|David Mandy|Thu Nov 12 22:17:01 2026 +0800|luci: bump version to 1.3.3-r1 Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
+55c3a96|David Mandy|Thu Nov 12 22:16:23 2026 +0800|luci: use wget-ssl replace uclient-fetch Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
+</details>

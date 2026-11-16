@@ -1,5 +1,16 @@
 <details> <summary> <b>luci-theme-carbon new commit log :rocket: </b> </summary>
 
-<b>Initial commit log for luci-theme-carbon, no previous SHA.</b>
+#### [:mega: Full Changelog. ](https://github.com/mrjoechen/luci-theme-carbon/compare/4b57f8fffc7fa29c4ebf850337497e5d83a8c021...b20ac0c6a079899d47ea2362822d6be34af2a3c9)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
+SHA|Author|Date|Message
+-|-|-|-
+b20ac0c|mrjoechen|Mon Nov 16 16:50:25 2026 +0800|Release Carbon v1.1.6
+6e593c4|mrjoechen|Mon Nov 16 16:40:34 2026 +0800|Pin browser CI to Ubuntu 24.04 for Playwright compatibility
+8e0ccb7|mrjoechen|Mon Nov 16 16:24:34 2026 +0800|Fix mount dropdown menus clipped by tables
+c3184c2|Joe Chen|Mon Nov 16 16:06:22 2026 +0800|Add per-device upload and download speeds
+d1202ff|Joe Chen|Mon Nov 16 14:03:30 2026 +0800|Fix realtime graph resizing after layout changes
+8a2e0ac|mrjoechen|Fri Nov 13 17:42:30 2026 +0800|Release Carbon v1.1.5
+3a7b71b|mrjoechen|Fri Nov 13 17:30:40 2026 +0800|Fix device discovery for side routers
+b2680f6|mrjoechen|Thu Nov 12 19:48:23 2026 +0800|Fix checked switch color in dark mode
 </details>

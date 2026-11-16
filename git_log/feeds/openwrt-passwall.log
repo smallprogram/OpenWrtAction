@@ -1,24 +1,13 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/9815bf90e9213d872845a19b5922547ee3d80d89...44e9a0295cd86bad7339d6a2730f72ebcde73656)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/44e9a0295cd86bad7339d6a2730f72ebcde73656...26aabe78d8466ed4db83ad66166b6db23f7ab24f)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-44e9a029|A-BO|Wed Nov 11 23:46:16 2026 +0800|luci: fix group dropdown text alignment in some themes
-b673df3a|FunnyFly|Wed Nov 11 22:52:54 2026 +0800|luci: make current node highlight follow theme accent (#4515)
-5f03390a|A-BO|Wed Nov 11 00:44:36 2026 +0800|luci: bump 26.11.11
-1a396e01|A-BO|Wed Nov 11 00:07:22 2026 +0800|luci: Add socks/http/https URI import/export
-596ca9c1|A-BO|Tue Nov 10 23:05:42 2026 +0800|luci: Add WireGuard URI import/export
-444d379c|A-BO|Tue Nov 10 20:42:43 2026 +0800|luci: fix Xray Hysteria2 port hopping and require core 26.9.9+
-f42a7b49|A-BO|Tue Nov 10 19:34:20 2026 +0800|luci: keep the ws path query when removing ed for sing-box
-9dc6e048|A-BO|Tue Nov 10 16:57:31 2026 +0800|luci: optimize
-33ebdb39|A-BO|Tue Nov 10 00:59:30 2026 +0800|luci: clean up shunt sets on service stop
-4c542220|A-BO|Mon Nov 9 23:48:41 2026 +0800|luci: disable auto-merge for dynamic nftsets
-e7f0ed63|A-BO|Mon Nov 9 23:21:21 2026 +0800|luci: move ISP DNS addresses to VPS bypass sets
-f19da543|A-BO|Sun Nov 8 13:55:52 2026 +0800|luci: fix component update button clipping across themes
-82678e8e|A-BO|Sat Nov 7 15:22:53 2026 +0800|luci: add optional node DNS extraction from Clash subscriptions
-edf166fb|A-BO|Sat Nov 7 01:16:13 2026 +0800|luci: fix share link host parsing and default ports
-c55e859c|A-BO|Fri Nov 6 23:56:12 2026 +0800|luci: fix double URL decoding of Shadowsocks passwords
-
+26aabe78|A-BO|Mon Nov 16 21:37:48 2026 +0800|luci: prevent duplicate node references during subscription updates
+dc199849|A-BO|Sun Nov 15 19:47:45 2026 +0800|luci: show a cross for inactive HTTP ports in SOCKS settings
+f88be2d1|A-BO|Sun Nov 15 19:03:33 2026 +0800|luci: improve responsive layouts and node selector theming
+e399ebbd|A-BO|Sun Nov 15 09:53:57 2026 +0800|luci: prevent port collisions during URL test startup
+aada0ff4|A-BO|Thu Nov 12 23:58:00 2026 +0800|luci: add proxy warm-up before node latency tests
 </details>

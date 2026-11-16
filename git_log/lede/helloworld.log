@@ -1,11 +1,10 @@
 <details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/81c6320d40d455e6d623b6579f460d0665e1a421...e8efa31ae45ddf217863dced9068730bf24dd37a)  
+#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/e8efa31ae45ddf217863dced9068730bf24dd37a...6fbc9f563c9e7cd3b65061fba13ffc62666066aa)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-e8efa31|coolsnowwolf|Tue Nov 10 10:08:59 2026 +0800|xray-core: disable cronet build when in non-x64 host os
-425d480|coolsnowwolf|Sun Nov 8 11:34:05 2026 +0800|luci-app-ssr-plus: remove NaiveProxy component updater
-c4a7226|zxl hhyccc|Fri Nov 6 22:58:32 2026 +0800|luci-app-ssr-plus: fix(clash): fix YAML generation defects for xhttp-opts.
+6fbc9f5|coolsnowwolf|Fri Nov 13 11:16:43 2026 +0800|luci-app-ssr-plus: default to Xray and require timeout for all cores
+3e6fcaa|coolsnowwolf|Fri Nov 13 10:41:32 2026 +0800|xray-core: update to 26.11.9 and refresh patches
 </details>
