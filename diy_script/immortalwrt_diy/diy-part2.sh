@@ -165,6 +165,14 @@ EOF
 chmod +x files/etc/uci-defaults/99-custom-ssh-config
 
 # --- End Modify SSH Configuration ---
+
+# --- Enable BBR ---
+mkdir -p files/etc/sysctl.d
+cat << 'EOF' > files/etc/sysctl.d/99-bbr.conf
+net.ipv4.tcp_congestion_control=bbr
+EOF
+# --- End BBR Configuration ---
+
 #------------------------------------------------end 修改脚本-------------------------------------------------------
 
 
