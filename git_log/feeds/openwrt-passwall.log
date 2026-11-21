@@ -1,13 +1,15 @@
 <details> <summary> <b>openwrt-passwall new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/44e9a0295cd86bad7339d6a2730f72ebcde73656...26aabe78d8466ed4db83ad66166b6db23f7ab24f)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall/compare/26aabe78d8466ed4db83ad66166b6db23f7ab24f...b3cf8e768ba11d9172e9db7bdd6af17eaf8580f7)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-26aabe78|A-BO|Mon Nov 16 21:37:48 2026 +0800|luci: prevent duplicate node references during subscription updates
-dc199849|A-BO|Sun Nov 15 19:47:45 2026 +0800|luci: show a cross for inactive HTTP ports in SOCKS settings
-f88be2d1|A-BO|Sun Nov 15 19:03:33 2026 +0800|luci: improve responsive layouts and node selector theming
-e399ebbd|A-BO|Sun Nov 15 09:53:57 2026 +0800|luci: prevent port collisions during URL test startup
-aada0ff4|A-BO|Thu Nov 12 23:58:00 2026 +0800|luci: add proxy warm-up before node latency tests
+b3cf8e76|A-BO|Fri Nov 20 01:53:39 2026 +0800|luci: batch UCI writes for subscription nodes
+38885d95|A-BO|Thu Nov 19 21:55:06 2026 +0800|luci: resolve XHTTP download addresses with node-specific DNS
+d68b9bff|A-BO|Thu Nov 19 21:41:42 2026 +0800|luci: support per-node DNS policies in Clash subscriptions
+f8001b90|A-BO|Wed Nov 18 22:31:06 2026 +0800|luci: add WireGuard and MASQUE support to Clash subscription conversion
+190d5d4a|A-BO|Wed Nov 18 22:06:26 2026 +0800|luci: Add MASQUE URI import/export
+4cca0dc9|A-BO|Tue Nov 17 22:46:40 2026 +0800|luci: explicitly specify IPv6 family for nftables TPROXY rules
+de002401|A-BO|Tue Nov 17 19:41:51 2026 +0800|luci: reset src_valid_mark for TPROXY compatibility
 </details>

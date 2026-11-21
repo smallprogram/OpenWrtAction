@@ -1,16 +1,22 @@
 <details> <summary> <b>luci-theme-carbon new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/mrjoechen/luci-theme-carbon/compare/4b57f8fffc7fa29c4ebf850337497e5d83a8c021...b20ac0c6a079899d47ea2362822d6be34af2a3c9)  
+#### [:mega: Full Changelog. ](https://github.com/mrjoechen/luci-theme-carbon/compare/b20ac0c6a079899d47ea2362822d6be34af2a3c9...239cf7b2f33dd93c34251ad201c4322fa279b3bd)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-b20ac0c|mrjoechen|Mon Nov 16 16:50:25 2026 +0800|Release Carbon v1.1.6
-6e593c4|mrjoechen|Mon Nov 16 16:40:34 2026 +0800|Pin browser CI to Ubuntu 24.04 for Playwright compatibility
-8e0ccb7|mrjoechen|Mon Nov 16 16:24:34 2026 +0800|Fix mount dropdown menus clipped by tables
-c3184c2|Joe Chen|Mon Nov 16 16:06:22 2026 +0800|Add per-device upload and download speeds
-d1202ff|Joe Chen|Mon Nov 16 14:03:30 2026 +0800|Fix realtime graph resizing after layout changes
-8a2e0ac|mrjoechen|Fri Nov 13 17:42:30 2026 +0800|Release Carbon v1.1.5
-3a7b71b|mrjoechen|Fri Nov 13 17:30:40 2026 +0800|Fix device discovery for side routers
-b2680f6|mrjoechen|Thu Nov 12 19:48:23 2026 +0800|Fix checked switch color in dark mode
+239cf7b|mrjoechen|Fri Nov 20 17:25:15 2026 +0800|Release Carbon v1.1.8
+a9fd0b1|mrjoechen|Fri Nov 20 16:45:58 2026 +0800|Fix control-group alignment, table action buttons, and lease table avatars
+e49abb5|mrjoechen|Fri Nov 20 11:58:32 2026 +0800|Add customizable dashboard layout with UCI persistence
+e65b1db|mrjoechen|Thu Nov 19 20:31:20 2026 +0800|Merge remote-tracking branch 'origin/main'
+bc50f02|mrjoechen|Thu Nov 19 20:31:09 2026 +0800|update: release doc template
+626b249|Joe Chen|Thu Nov 19 20:23:22 2026 +0800|Update README.zh-CN.md with wget installation instructions
+6162626|Joe Chen|Thu Nov 19 20:22:51 2026 +0800|Update README with wget installation instructions
+7d9a78a|mrjoechen|Thu Nov 19 14:31:29 2026 +0800|Release v1.1.7 with opt-in nftables device accounting
+ff431ff|mrjoechen|Thu Nov 19 13:55:59 2026 +0800|Add nftables fallback for device traffic accounting
+558bfb6|mrjoechen|Wed Nov 18 14:15:16 2026 +0800|Fix Open-Box radio indicator covering the page
+cd820f2|mrjoechen|Tue Nov 17 19:49:25 2026 +0800|Fix container memory reporting with consistent proc data
+364d79a|Joe Chen|Tue Nov 17 19:19:55 2026 +0800|Update README.zh-CN.md with demo links
+22133cb|Joe Chen|Tue Nov 17 19:19:38 2026 +0800|Change video source link in README
+42e68e2|Joe Chen|Tue Nov 17 19:17:17 2026 +0800|Add video demo to README
 </details>

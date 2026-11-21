@@ -1,25 +1,25 @@
 <details> <summary> <b>lede new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/80122feac964889bc69b62420cedfefaaf701eb0...017c3a4a22611fce5c3ea985855c752598d3b998)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/lede/compare/017c3a4a22611fce5c3ea985855c752598d3b998...dca9ba875e319cb05c25fe3a1d092833bf457ccc)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-017c3a4a2|coolsnowwolf|Mon Nov 16 15:03:10 2026 +0800|ltq-ifxos: use kernel_bind instead of guessing socket ABI
-e5dc1a534|coolsnowwolf|Mon Nov 16 00:07:08 2026 +0800|ath10k-ct: match upstream source archive for Linux 6.18
-6a6ea2625|coolsnowwolf|Sun Nov 15 21:27:37 2026 +0800|tools: wait for bison before building elfutils
-d9d755738|coolsnowwolf|Sun Nov 15 16:40:49 2026 +0800|build: fix metadata for automatically gzipped images
-d7f5374b9|coolsnowwolf|Sun Nov 15 07:45:54 2026 +0800|firmware-utils: fix bcm4908asus options on macOS
-a0c958aee|coolsnowwolf|Sat Nov 14 21:23:13 2026 +0800|bcm27xx: enlarge default rootfs partition for runtime tools
-9fc7f74e4|coolsnowwolf|Sat Nov 14 16:48:26 2026 +0800|ath25: fix ELF image generation
-2ff320ada|coolsnowwolf|Sat Nov 14 14:36:02 2026 +0800|at91: restrict images to supported filesystems
-afa6274c4|coolsnowwolf|Sat Nov 14 14:18:04 2026 +0800|at91: use XZ for the SAMA5 6.18 kernel
-91f956415|coolsnowwolf|Sat Nov 14 13:50:44 2026 +0800|at91: fix native builds with current toolchains
-3d3d4f320|coolsnowwolf|Sat Nov 14 08:42:58 2026 +0800|amlogic: fix OneCloud boot partition and image metadata
-a5e57fadf|coolsnowwolf|Sat Nov 14 04:58:21 2026 +0800|airoha: build reference board boot firmware on native macOS
-610cb3560|coolsnowwolf|Sat Nov 14 02:12:36 2026 +0800|uboot: preserve disabled configuration with Clang
-0ea8152d5|coolsnowwolf|Sat Nov 14 00:54:52 2026 +0800|glibc: use the build system make during configure
-4c670766f|coolsnowwolf|Fri Nov 13 21:38:31 2026 +0800|upx: update to 5.3.0 for RISC-V executable support
+dca9ba875|coolsnowwolf|Fri Nov 20 15:51:24 2026 +0800|docs: explain kernel size trimming for 8 MiB devices
+0ee4f4be5|coolsnowwolf|Fri Nov 20 12:17:35 2026 +0800|docs: describe the minimum flash size for native macOS builds
+cfada1012|coolsnowwolf|Fri Nov 20 12:17:35 2026 +0800|targets: disable profiles with unsupported small firmware partitions
+972cd0f50|coolsnowwolf|Fri Nov 20 07:37:06 2026 +0800|uboot-zynq: fix host image tools on macOS arm64
+01ba61740|coolsnowwolf|Fri Nov 20 07:10:24 2026 +0800|uboot-zynq: select bootloaders for the generic subtarget
+7cdba64d7|coolsnowwolf|Fri Nov 20 06:17:29 2026 +0800|gpio-button-hotplug: avoid removed OF GPIO header on newer kernels
+0a6c76737|coolsnowwolf|Fri Nov 20 03:37:30 2026 +0800|uboot-tegra: support native macOS arm64 host tools
+e0ceff96c|coolsnowwolf|Fri Nov 20 01:17:24 2026 +0800|uboot-sunxi: support current SWIG and native Darwin builds
+0c50b9ed2|coolsnowwolf|Fri Nov 20 00:24:09 2026 +0800|arm-trusted-firmware-stm32: build stm32image on Darwin
+da58f659a|coolsnowwolf|Thu Nov 19 23:55:55 2026 +0800|docs: include cryptography in macOS native build dependencies
+9066b4b7a|coolsnowwolf|Thu Nov 19 21:14:39 2026 +0800|uboot-sifiveu: use one staged Python interpreter for host tools
+ac846d875|coolsnowwolf|Thu Nov 19 21:08:57 2026 +0800|uboot-sifiveu: migrate binman to importlib.resources
+5a24ea335|coolsnowwolf|Thu Nov 19 20:42:40 2026 +0800|uboot-sifiveu: link pylibfdt as a bundle on Darwin
+88377d893|coolsnowwolf|Thu Nov 19 20:11:50 2026 +0800|uboot-sifiveu: replace removed SWIG Python 2 compatibility macros
+240b85a19|coolsnowwolf|Thu Nov 19 19:43:15 2026 +0800|uboot-sifiveu: fix pylibfdt builds with SWIG 4.3 and later
 
 
 </details>

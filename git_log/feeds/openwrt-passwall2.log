@@ -1,13 +1,15 @@
 <details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/7aeb0aa4e10246115f6a568b5c69bca122c75794...0c817f7dbfc10038510c4e6e9d13e54bd94f769d)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/0c817f7dbfc10038510c4e6e9d13e54bd94f769d...7d6bae5bdd164abfdae5a34e85af3774f7481497)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-0c817f7|A-BO|Mon Nov 16 21:50:20 2026 +0800|luci: prevent duplicate node references during subscription updates
-9ea760f|A-BO|Sun Nov 15 20:03:10 2026 +0800|luci: align SOCKS table layout and port status with PassWall
-097b01d|A-BO|Sun Nov 15 19:17:31 2026 +0800|luci: improve responsive layouts and node selector theming
-35d20ce|A-BO|Sun Nov 15 09:59:35 2026 +0800|luci: fix port allocation and node test startup races
-dd77a23|A-BO|Fri Nov 13 00:01:39 2026 +0800|luci: add proxy warm-up before node latency tests
+7d6bae5|A-BO|Fri Nov 20 02:03:05 2026 +0800|luci: batch UCI writes for subscription nodes
+cb6fc9f|A-BO|Thu Nov 19 23:38:56 2026 +0800|luci: resolve XHTTP download addresses with node-specific DNS
+8b24c84|A-BO|Thu Nov 19 23:23:52 2026 +0800|luci: support per-node DNS policies in Clash subscriptions
+a32c046|A-BO|Wed Nov 18 23:35:02 2026 +0800|luci: add WireGuard and MASQUE support to Clash subscription conversion
+eab954e|A-BO|Wed Nov 18 22:43:58 2026 +0800|luci: Add MASQUE URI import/export
+fbe2b6b|A-BO|Tue Nov 17 22:51:20 2026 +0800|luci: explicitly specify IPv6 family for nftables TPROXY rules
+9c6d23d|A-BO|Tue Nov 17 19:52:40 2026 +0800|luci: reset rp_filter and src_valid_mark for TPROXY compatibility
 </details>

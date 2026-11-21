@@ -1,11 +1,11 @@
 <details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/b094b79c32ac4e4de3113a5c44971c6182eee535...8147e8bf8abc62b5357f76defa37f380e35f6e0a)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/8147e8bf8abc62b5357f76defa37f380e35f6e0a...a880c9046f8bd5d2d4f1fb6b8f2e70968c463322)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-8147e8b|David Mandy|Mon Nov 16 19:52:17 2026 +0800|v2ray-geosite: update to 202611152204 (#779)
-7354219|David Mandy|Mon Nov 16 19:52:03 2026 +0800|v2ray-geoip: update to 202611120018 (#778)
-efc4093|David Mandy|Sun Nov 15 15:17:26 2026 +0800|hysteria: update to 2.14.0 (#777)
+a880c90|David Mandy|Fri Nov 20 11:33:28 2026 +0800|smartdns: update to 48.5 (#781)
+ca5da9e|David Mandy|Fri Nov 20 11:33:04 2026 +0800|v2ray-geoip: update to 202611190019 (#782)
+17a9e10|David Mandy|Fri Nov 20 11:32:47 2026 +0800|v2ray-geosite: update to 202611192204 (#780)
 </details>

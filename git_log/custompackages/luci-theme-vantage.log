@@ -1,11 +1,20 @@
 <details> <summary> <b>luci-theme-vantage new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/anothaDev/luci-theme-vantage/compare/ed6be0a7c2fb836164ac0c2be9530ae5e2a21deb...0f8d16f2ce25132e6a074575af16468524d2d5dd)  
+#### [:mega: Full Changelog. ](https://github.com/anothaDev/luci-theme-vantage/compare/0f8d16f2ce25132e6a074575af16468524d2d5dd...8729104405b85d6c43347233d1cce15c2ed8d750)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-0f8d16f|anothaDev|Thu Nov 12 10:53:56 2026 +0100|Release manifest for v1.0.20 (#126)
-76d70ac|anothaDev|Thu Nov 12 10:43:17 2026 +0100|Release 1.0.20: rpcd crash on MediaTek mtwifi, Wireless and dashboard layout (#125)
-c41ea7e|anothaDev|Thu Nov 12 10:36:38 2026 +0100|Fixes after 1.0.19: rpcd crash on MediaTek mtwifi, Wireless and dashboard layout (#123)
+8729104|anothaDev|Sat Nov 21 11:38:56 2026 +0100|Release manifest for v1.1.1 (#151)
+7c37741|anothaDev|Sat Nov 21 11:24:50 2026 +0100|Release 1.1.1: Speed units, a switch to keep the login page on HTTP (#150)
+e953e95|anothaDev|Sat Nov 21 11:19:12 2026 +0100|After 1.1.0: Speed units, a switch to keep the login page on HTTP (#149)
+b7d8cd5|anothaDev|Sat Nov 21 09:38:59 2026 +0100|Release manifest for v1.1.0 (#148)
+8b413e0|anothaDev|Sat Nov 21 09:26:00 2026 +0100|Release 1.1.0: other access points, search, WireGuard and Ports tiles, daily update check (#147)
+7c100d5|anothaDev|Sat Nov 21 09:18:56 2026 +0100|1.1: other access points, search, WireGuard and Ports tiles, daily update check (#146)
+44c552a|ChAdi|Fri Nov 20 09:10:46 2026 +0100|Add German translation (#142)
+1f90415|milkman|Fri Nov 20 04:39:15 2026 +0900|Read Qualcomm qcawificfg80211 radios from the wireless config (#138)
+f49b4f2|anothaDev|Thu Nov 19 20:18:43 2026 +0100|Release manifest for v1.0.21 (#140)
+03731be|anothaDev|Thu Nov 19 20:08:24 2026 +0100|Release 1.0.21: client order, motion without focus, the gateway, Russian (#139)
+99c2f99|anothaDev|Thu Nov 19 20:02:41 2026 +0100|Fixes after 1.0.20: client order, motion without focus, the gateway, Russian corrections (#136)
+faade36|akorshun|Wed Nov 18 22:00:16 2026 +0300|Add Russian translation (#135)
 </details>

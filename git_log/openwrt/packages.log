@@ -1,9 +1,25 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/07e0d16305d2b5903b37ad7913e33e18795f81a4...c2c619e6f065b238ab000b6cfc5afa238658b0c9)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/c2c619e6f065b238ab000b6cfc5afa238658b0c9...70792587c1d0e22d0be73cc64b8fb1e2cd4722c9)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-c2c619e6f|Josef Schlehofer|Thu Nov 12 05:36:21 2026 +0100|apache: update to version 2.4.71
+70792587c|Christian Marangi|Wed Nov 18 22:06:27 2026 +0100|nginx: update to 1.30.7
+088bdcbe0|Tianshuai Gao|Mon Jul 6 10:58:07 2026 +0800|nginx: 302 the "/" path to "/cgi-bin/luci/"
+211801cf6|Nikita Solianik|Mon Sep 29 19:20:59 2025 +0200|nginx-util: specify gzip_types to actually enable gzip
+a3df40fd2|Florian Wagner|Thu Oct 8 10:34:06 2026 +0200|nginx: only build luajit2 if required
+da4e543d7|Keiji Hata|Fri Jul 24 16:26:46 2026 +0800|nginx: update repository of maintained naxsi module
+ec1831d4f|Josef Schlehofer|Sun Sep 27 23:50:36 2026 +0200|nginx: update to 1.30.5
+92ed28af6|Jan Klos|Wed Jul 1 11:49:54 2026 +0200|nginx: update to 1.30.3
+c3c438f0f|Seo Suchan|Fri May 29 00:08:39 2026 +0900|nginx: update to 1.30.2
+7625a2104|Daniel F. Dickinson|Mon Feb 16 23:42:33 2026 -0500|nginx: fix module depends on nginx
+0b3330b3c|Trix Taiclet|Mon Sep 21 15:22:44 2026 +0200|mox-pkcs11: fix broken Makefile
+ec7033866|Tomáš Macholda|Thu Sep 25 15:17:42 2025 +0200|mox-pkcs11: add new package
+e61fb9a58|Tianling Shen|Wed Nov 11 11:24:43 2026 +0800|xray-core: update to 26.11.9
+ea2476bc1|Sami Salonen|Fri Oct 30 20:54:57 2026 +0200|netbird: update to 0.82.0
+7f2a6bbc0|Olivier Poitrey|Sun Nov 15 23:04:07 2026 +0000|nextdns: update to version 1.50.2
+ccb56eff0|Dirk Brenken|Fri Nov 20 22:17:19 2026 +0100|banip: release 1.9.2-1
+
+
 </details>

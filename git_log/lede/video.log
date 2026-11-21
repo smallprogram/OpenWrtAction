@@ -1,0 +1,14 @@
+<details> <summary> <b>video new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/video/compare/a1c0945bdd677b6c1da20724e555e97861445bce...3a27d96d3b65355df0f25d5bd30d9795f477c717)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+3a27d96|coolsnowwolf|Thu Nov 19 13:31:45 2026 +0800|accel-support: restore package for buildroots without QWRT core providers
+4cb8172|coolsnowwolf|Thu Nov 19 13:31:45 2026 +0800|glslang: restore package for buildroots without QWRT core providers
+a7808a9|coolsnowwolf|Thu Nov 19 13:31:45 2026 +0800|vulkan-loader: restore package for buildroots without QWRT core providers
+e50ce12|coolsnowwolf|Thu Nov 19 13:31:45 2026 +0800|vulkan-headers: restore package for buildroots without QWRT core providers
+c455e44|coolsnowwolf|Thu Nov 19 13:31:45 2026 +0800|harfbuzz: restore package for buildroots without QWRT core providers
+18daef8|Chen Lin|Tue Nov 17 13:28:41 2026 +0800|Remove packages provided by QWRT core
+</details>

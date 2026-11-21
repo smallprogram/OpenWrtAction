@@ -1,11 +1,12 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/a25f30bbfcdd3cc130dc7dc5c35b9ed54e0155e8...bdb45ca0f4b1cb38605098021012967425dcf95d)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/bdb45ca0f4b1cb38605098021012967425dcf95d...2813256827a60adc60aac76b54a21e719f38eea7)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-bdb45ca0|github-actions[bot]|Sat Nov 14 09:06:28 2026 +0000|ci: sync upstream packages
-3e08bc51|coolsnowwolf|Sat Nov 14 00:07:09 2026 +0800|mihomo: skip unsupported UPX compression on LoongArch
-789ce9f6|github-actions[bot]|Fri Nov 13 02:48:23 2026 +0000|ci: sync upstream packages
+28132568|coolsnowwolf|Thu Nov 19 14:55:19 2026 +0800|perl: avoid conflicting allocator declarations in SDBM_File
+bee0f866|coolsnowwolf|Wed Nov 18 10:06:37 2026 +0800|node: select official host binaries by build-host architecture
+a711b104|coolsnowwolf|Wed Nov 18 09:52:39 2026 +0800|libdrm: move split GPU library packaging from LEDE core
+54bab6b6|github-actions[bot]|Tue Nov 17 10:51:03 2026 +0000|ci: sync upstream packages
 </details>

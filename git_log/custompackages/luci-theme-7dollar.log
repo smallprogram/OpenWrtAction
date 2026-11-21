@@ -1,22 +1,13 @@
 <details> <summary> <b>luci-theme-7dollar new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/itsmaiGe/luci-theme-7dollar/compare/b7cdbbc92fed9e0ed3c829862d94635b9a528fe6...5e9007318abbc956c9833db0dd5903c9d02b1ab3)  
+#### [:mega: Full Changelog. ](https://github.com/itsmaiGe/luci-theme-7dollar/compare/5e9007318abbc956c9833db0dd5903c9d02b1ab3...35aa4b4660aec932b17129517ad8a28f509c991e)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-5e90073|github-actions[bot]|Mon Nov 16 07:16:41 2026 +0000|dist: luci-theme-7dollar-1.0.17-r1.apk
-3062aa6|itsmaiGe|Mon Nov 16 15:16:11 2026 +0800|1.0.17
-f31e96b|itsmaiGe|Mon Nov 16 10:11:12 2026 +0800|Connection card and keyboard use, after #20: keep node labels on narrow cards, clear stale facts when offline, ignore a ping reply for an old gateway; search returns focus and holds Tab, Esc closes the phone sheet, toggles carry aria-pressed
-0a28e51|itsmaiGe|Sun Nov 15 10:07:35 2026 +0800|Home: live traffic can show MB/s instead of Mbps (Appearance, speed unit) (#19)
-de8af6e|itsmaiGe|Sat Nov 14 09:58:23 2026 +0800|Source builds: ship CSS and JS unminified. csstidy drops @container (home page fell into one column, #13 #18) and jsmin misreads regex literals (#17); the jsmin check is no longer needed
-a9b1a27|itsmaiGe|Fri Nov 13 09:59:52 2026 +0800|Cache: put the theme version into the ?v= LuCI adds to scripts, so a firmware rebuilt with a newer theme no longer mixes old and new files (#18)
-af8a09a|github-actions[bot]|Thu Nov 12 17:38:11 2026 +0000|dist: luci-theme-7dollar-1.0.16-r1.apk
-4a7a8f3|itsmaiGe|Fri Nov 13 01:37:50 2026 +0800|1.0.16
-7f66cf2|sakuradairong|Thu Nov 12 20:11:04 2026 +0800|fix(home): attribute PPPoE dial-up to the local router
-d13facf|itsmaiGe|Fri Nov 13 00:08:19 2026 +0800|Fix source builds: LuCI's jsmin misread a regex after return and broke common.js (#17); check every script against jsmin when building
-0e844b9|github-actions[bot]|Thu Nov 12 06:03:40 2026 +0000|dist: luci-theme-7dollar-1.0.15-r1.apk
-899a30e|itsmaiGe|Thu Nov 12 14:03:16 2026 +0800|1.0.15
-43d8057|itsmaiGe|Thu Nov 12 13:56:26 2026 +0800|Menu: System takes LuCI's own status/system pages by the view they open, so pages added in newer LuCI (routesj, dns, plugins) land in the right group (#15)
-0ac1bba|sakuradairong|Thu Nov 12 10:07:16 2026 +0800|fix(menu): keep Overview on the 7Dollar home page (#14)
+35aa4b4|github-actions[bot]|Wed Nov 18 04:05:01 2026 +0000|dist: luci-theme-7dollar-1.0.18-r1.apk
+381eb4c|itsmaiGe|Wed Nov 18 12:04:44 2026 +0800|1.0.18
+452f0e7|itsmaiGe|Tue Nov 17 21:31:17 2026 +0800|Inputs filled in by the browser (saved password) keep the field's own colours instead of the autofill highlight (#23)
+ffc61be|itsmaiGe|Tue Nov 17 18:13:55 2026 +0800|Home: swap size was shown 1024 times too large (system info reports swap in bytes, root and tmp in KiB) (#22)
+519b0f9|itsmaiGe|Tue Nov 17 09:59:59 2026 +0800|Home: live traffic also reads the port under a PPPoE link, whose own download counter is bypassed by kernel flow offloading (#21)
 </details>

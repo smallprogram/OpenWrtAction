@@ -1,0 +1,16 @@
+<details> <summary> <b>luci new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/luci/compare/8f18275bb510818c501e4b124f872b6d30573d8a...476b5257e3aa8274a727d648ba06c4ed284c159b)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+476b5257e3|Tianling Shen|Wed Nov 18 15:39:29 2026 +0800|Merge Official Source
+8ca5c25240|Aethersailor|Tue Nov 17 17:27:13 2026 +0800|luci-theme-argon: bump to 3.1.4
+5331286252|Josef Schlehofer|Mon Sep 28 09:15:27 2026 +0200|luci-app-librespeed: offer a weekly interval
+0fba8c9da4|Josef Schlehofer|Thu Sep 24 08:26:25 2026 +0200|luci-app-librespeed: test and schedule per interface
+45d88f61ff|Josef Schlehofer|Thu Sep 24 08:51:03 2026 +0200|luci-app-librespeed: order history by time
+1c75ea46c6|Jo-Philipp Wich|Wed Apr 1 13:11:14 2026 +0200|luci-base: fix ubus getFeatures() crash
+2092eefe65|Jo-Philipp Wich|Tue Mar 24 20:50:05 2026 +0100|luci-base: fix feature detection patterns
+b2e0be4b46|Paul Donald|Tue May 26 00:32:15 2026 +0300|luci-app-wol: correctness fixes
+</details>
