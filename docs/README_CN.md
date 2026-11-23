@@ -222,6 +222,8 @@ CONFIG_PACKAGE_luci-theme-material=y
 CONFIG_PACKAGE_luci-theme-openwrt=y
 CONFIG_PACKAGE_luci-theme-openwrt-2020=y
 CONFIG_PACKAGE_luci-app-vantage=y
+CONFIG_PACKAGE_luci-app-vantage-aps=y
+CONFIG_PACKAGE_luci-app-vantage-traffic=y
 CONFIG_PACKAGE_luci-theme-vantage=y
 ```
 ---
