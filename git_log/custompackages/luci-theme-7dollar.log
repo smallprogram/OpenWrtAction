@@ -1,13 +1,16 @@
 <details> <summary> <b>luci-theme-7dollar new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/itsmaiGe/luci-theme-7dollar/compare/5e9007318abbc956c9833db0dd5903c9d02b1ab3...35aa4b4660aec932b17129517ad8a28f509c991e)  
+#### [:mega: Full Changelog. ](https://github.com/itsmaiGe/luci-theme-7dollar/compare/35aa4b4660aec932b17129517ad8a28f509c991e...4c66e8e6099cd2426cfd75e6878ece6c3362dab5)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-35aa4b4|github-actions[bot]|Wed Nov 18 04:05:01 2026 +0000|dist: luci-theme-7dollar-1.0.18-r1.apk
-381eb4c|itsmaiGe|Wed Nov 18 12:04:44 2026 +0800|1.0.18
-452f0e7|itsmaiGe|Tue Nov 17 21:31:17 2026 +0800|Inputs filled in by the browser (saved password) keep the field's own colours instead of the autofill highlight (#23)
-ffc61be|itsmaiGe|Tue Nov 17 18:13:55 2026 +0800|Home: swap size was shown 1024 times too large (system info reports swap in bytes, root and tmp in KiB) (#22)
-519b0f9|itsmaiGe|Tue Nov 17 09:59:59 2026 +0800|Home: live traffic also reads the port under a PPPoE link, whose own download counter is bypassed by kernel flow offloading (#21)
+4c66e8e|github-actions[bot]|Thu Nov 26 02:14:25 2026 +0000|dist: luci-theme-7dollar-1.0.20-r1.apk
+5dcbcd5|itsmaiGe|Thu Nov 26 10:14:05 2026 +0800|1.0.20
+15347ed|itsmaiGe|Thu Nov 26 10:02:35 2026 +0800|Home: the apps card finds its running apps in one step of its own; adblock-fast shows the size of its block list, EQoS counts only the rules that are switched on (#26)
+8a3465c|wanghws|Wed Nov 25 20:03:06 2026 +0800|Home: detect non-procd and data-only services in the apps card
+f9c783f|github-actions[bot]|Sun Nov 22 14:00:17 2026 +0000|dist: luci-theme-7dollar-1.0.19-r1.apk
+cc35339|itsmaiGe|Sun Nov 22 21:59:50 2026 +0800|1.0.19
+abfba24|itsmaiGe|Sun Nov 22 02:35:27 2026 +0800|Login: the sign-in button stays enabled while the form is sent, so a browser that does not submit it leaves a page that can be retried (#25)
+967805e|akorshun|Sat Nov 21 16:57:02 2026 +0300|i18n: add Russian translation
 </details>

@@ -1,25 +1,25 @@
 <details> <summary> <b>immortalwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/761b7ff22cbf7c13f28fc631bd70a84d295fd627...03ca1c076b94bf9731e189571e6d81741f6bc13d)  
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/immortalwrt/compare/03ca1c076b94bf9731e189571e6d81741f6bc13d...b1088b5661bf257b3e89f8537df906a67b8e7289)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-03ca1c076b|Tianling Shen|Wed Nov 18 14:15:59 2026 +0800|rockchip: refresh patches
-2e32ec94f3|Tianling Shen|Wed Nov 18 14:03:01 2026 +0800|Merge Official Source
-08379a3a86|Yalei Zang|Wed Oct 28 14:36:01 2026 +0800|airoha: backport PCI mediatek-gen3 link speed/width patches
-e578140c3a|Yalei Zang|Tue Nov 3 17:00:03 2026 +0800|airoha: backport NPU fix for missing streaming DMA mask
-c0f6e74256|Yalei Zang|Wed Sep 23 15:56:42 2026 +0800|airoha: backport EN7581 NPU DT bindings
-170d7fab2f|Vitaliy Sochnev|Sat Aug 22 15:55:46 2026 +0100|airoha: npu: update firmware loading patch to the upstream version
-680c0c031d|Christoph Krapp|Mon Nov 16 21:20:36 2026 +0100|ipq40xx: fix LAN/WAN MAC address on ASUS Lyra Mini
-9933db673b|Grische|Wed Sep 16 19:10:33 2026 +0200|mpc85xx: relocate simpleImage loader to 0x3000000
-60c494ad06|Josef Schlehofer|Sun Oct 4 21:48:29 2026 +0200|px5g-mbedtls: reject unsupported -addext values
-2a768141e6|Josef Schlehofer|Sun Oct 4 14:51:36 2026 +0200|px5g-mbedtls: fix the subjectAltName extension
-94814b0862|David Bauer|Thu Nov 12 11:45:50 2026 +0100|ipq40xx: use board-specific Aruba BDFs
-8dda6aaf67|David Bauer|Thu Nov 12 11:41:03 2026 +0100|ipq-wifi: add BDFs for IPQ4019 Aruba boards
-3c132d0370|David Bauer|Thu Nov 12 11:38:33 2026 +0100|ipq806x: use custom Aruba AP-325 BDF
-f27bf8487f|David Bauer|Thu Nov 12 11:37:13 2026 +0100|ipq-wifi: add Aruba AP-325 BDF
-7cd348b8bb|David Bauer|Thu Nov 12 19:22:40 2026 +0100|ipq-wifi: update to latest HEAD
+b1088b5661|Tianling Shen|Tue Nov 24 10:50:07 2026 +0800|Merge Official Source
+c8a7c4c065|David Bauer|Mon Nov 23 23:22:44 2026 +0100|ipq806x: refresh patches
+c100ccd7a8|David Bauer|Mon Nov 23 23:04:51 2026 +0100|ipq806x: backport stmmac UDP checksum fixes
+0a6d9c09a3|Deomid rojer Ryabkov|Tue Nov 10 17:36:26 2026 +0200|rockchip: enable SDIO Wi-Fi on NanoPi R2S Plus
+fb07737946|David Härdeman|Mon Nov 16 14:13:46 2026 +0000|generic: backport SDIO UHS fixes for cards misreporting S18A
+c5adc39903|Tianling Shen|Sun Oct 4 18:08:27 2026 +0800|tools/7z: update to 26.03
+80a9ec2433|John Audia|Thu Oct 22 18:07:57 2026 -0400|linux-firmware: update to 20261019
+2291003fb9|John Audia|Wed Sep 16 15:15:54 2026 -0400|linux-firmware: update to 20260916
+42279bea9c|John Audia|Thu Sep 10 16:33:38 2026 -0400|linux-firmware: update to 20260910
+4755bf4bd4|John Audia|Mon Aug 10 16:13:12 2026 -0400|linux-firmware: update to 20260810
+5780bdf43f|John Audia|Sat Jun 27 14:17:02 2026 -0400|linux-firmware: update 20260622
+fae355a67a|John Audia|Tue May 19 14:15:47 2026 -0400|linux-firmware: update to 20260519
+dc90441d16|Christian Marangi|Thu Apr 23 17:01:09 2026 +0200|firmware: better specify the supported WiFi chip for basic AN7581 NPU FW
+787697b2a9|John Audia|Fri Apr 10 15:28:01 2026 -0400|linux-firmware: update to 20260410
+4c45e251b5|John Audia|Tue Mar 10 16:22:39 2026 -0400|linux-firmware: update to 20260309
 
 
 </details>

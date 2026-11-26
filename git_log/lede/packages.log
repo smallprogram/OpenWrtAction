@@ -1,12 +1,10 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/bdb45ca0f4b1cb38605098021012967425dcf95d...2813256827a60adc60aac76b54a21e719f38eea7)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/packages/compare/2813256827a60adc60aac76b54a21e719f38eea7...7a3926f03f9a9c156610c0ace0739c14561ea3a6)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-28132568|coolsnowwolf|Thu Nov 19 14:55:19 2026 +0800|perl: avoid conflicting allocator declarations in SDBM_File
-bee0f866|coolsnowwolf|Wed Nov 18 10:06:37 2026 +0800|node: select official host binaries by build-host architecture
-a711b104|coolsnowwolf|Wed Nov 18 09:52:39 2026 +0800|libdrm: move split GPU library packaging from LEDE core
-54bab6b6|github-actions[bot]|Tue Nov 17 10:51:03 2026 +0000|ci: sync upstream packages
+7a3926f0|coolsnowwolf|Thu Nov 26 17:17:15 2026 +0800|miniupnpd: restore nftables mappings after firewall and WAN updates
+027ad73e|github-actions[bot]|Mon Nov 23 10:55:41 2026 +0000|ci: sync upstream packages
 </details>

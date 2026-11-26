@@ -1,20 +1,23 @@
 <details> <summary> <b>luci-theme-vantage new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/anothaDev/luci-theme-vantage/compare/0f8d16f2ce25132e6a074575af16468524d2d5dd...8729104405b85d6c43347233d1cce15c2ed8d750)  
+#### [:mega: Full Changelog. ](https://github.com/anothaDev/luci-theme-vantage/compare/8729104405b85d6c43347233d1cce15c2ed8d750...fd2440318ed295b9979094f83dc96c91c7ea72dc)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-8729104|anothaDev|Sat Nov 21 11:38:56 2026 +0100|Release manifest for v1.1.1 (#151)
-7c37741|anothaDev|Sat Nov 21 11:24:50 2026 +0100|Release 1.1.1: Speed units, a switch to keep the login page on HTTP (#150)
-e953e95|anothaDev|Sat Nov 21 11:19:12 2026 +0100|After 1.1.0: Speed units, a switch to keep the login page on HTTP (#149)
-b7d8cd5|anothaDev|Sat Nov 21 09:38:59 2026 +0100|Release manifest for v1.1.0 (#148)
-8b413e0|anothaDev|Sat Nov 21 09:26:00 2026 +0100|Release 1.1.0: other access points, search, WireGuard and Ports tiles, daily update check (#147)
-7c100d5|anothaDev|Sat Nov 21 09:18:56 2026 +0100|1.1: other access points, search, WireGuard and Ports tiles, daily update check (#146)
-44c552a|ChAdi|Fri Nov 20 09:10:46 2026 +0100|Add German translation (#142)
-1f90415|milkman|Fri Nov 20 04:39:15 2026 +0900|Read Qualcomm qcawificfg80211 radios from the wireless config (#138)
-f49b4f2|anothaDev|Thu Nov 19 20:18:43 2026 +0100|Release manifest for v1.0.21 (#140)
-03731be|anothaDev|Thu Nov 19 20:08:24 2026 +0100|Release 1.0.21: client order, motion without focus, the gateway, Russian (#139)
-99c2f99|anothaDev|Thu Nov 19 20:02:41 2026 +0100|Fixes after 1.0.20: client order, motion without focus, the gateway, Russian corrections (#136)
-faade36|akorshun|Wed Nov 18 22:00:16 2026 +0300|Add Russian translation (#135)
+fd24403|anothaDev|Wed Nov 25 12:40:34 2026 +0200|Release manifest for v1.2.1 (#172)
+a18e86c|anothaDev|Wed Nov 25 12:28:22 2026 +0200|Release 1.2.1: the uplink beside the LAN's VLANs, Wi-Fi clients on VLAN interfaces, an access point's own addresses (#171)
+df0b304|anothaDev|Wed Nov 25 12:21:21 2026 +0200|Review before 1.2.1: an access point's own address is not "not connected", and the wire stops at a line's port (#170)
+5d25748|anothaDev|Wed Nov 25 11:22:09 2026 +0200|After 1.2.0: the uplink beside the LAN's VLANs, Wi-Fi clients on VLAN interfaces, an access point's own addresses, wrapping (#169)
+6fd739d|anothaDev|Tue Nov 24 10:31:02 2026 +0200|CI: a manual job that publishes the site page again between releases (#165)
+f641a33|anothaDev|Tue Nov 24 09:05:46 2026 +0200|README, roadmap and landing page up to 1.2.0, with new screenshots (#163)
+df52ecb|anothaDev|Mon Nov 23 12:21:45 2026 +0200|Build with the OpenWrt 25.12.6 SDK (#162)
+a7ff63b|anothaDev|Mon Nov 23 09:04:02 2026 +0200|Release manifest for v1.2.0 (#161)
+188401f|anothaDev|Mon Nov 23 08:53:05 2026 +0200|Release 1.2.0: provider tiles, per-device traffic, switch counters and a compact network path (#160)
+484d2f8|anothaDev|Sun Nov 22 15:30:39 2026 +0200|Name the release 1.2.0; remove the dashboard config's upgrade copy at install (#159)
+33ebe95|anothaDev|Sun Nov 22 12:20:12 2026 +0100|Provider tiles, per-device traffic, switch counters and a compact network path (#158)
+d972150|Eldhose|Sun Nov 22 14:07:39 2026 +0530|Network path: "+n more" opens the rest of a node's clients (#154)
+4e871a4|Eldhose|Sun Nov 22 14:01:10 2026 +0530|Other access points: wired hosts behind one count in its branch, not the router's Wired (#153)
+287b5b0|Eldhose|Sun Nov 22 13:52:19 2026 +0530|Paired access points: carry each station's Wi-Fi standard and width (#155)
+a07820e|anothaDev|Sun Nov 22 08:17:54 2026 +0100|After 1.1.1: #134, a wired device behind an access point, feed deploy retry, versioning rule (#152)
 </details>

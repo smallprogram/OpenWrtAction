@@ -1,21 +1,25 @@
 <details> <summary> <b>openwrt new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/60c494ad065fe3fcaeadf0e9ff4a8a2dc6e6be43...6ad88cfb335af314dc8d9827882e3b79581be873)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/openwrt/compare/6ad88cfb335af314dc8d9827882e3b79581be873...b96479146011e778e634a4fb6dd27d1573aead4a)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-6ad88cfb33|Yalei Zang|Thu Nov 19 14:29:32 2026 +0800|airoha: Fix NPU mailbox DMA direction (CVE-2026-68330)
-61a15235e4|Marco Martins|Sun Nov 15 12:51:58 2026 +0000|ramips: mt7620: enable LIST_HARDENED again
-d8b3a09468|Marco Martins|Sun Nov 15 18:42:15 2026 +0000|ramips: rt305x: keep the kernel code out of the first 32 KiB
-fbefc18c8a|Mieczyslaw Nalewaj|Thu Nov 12 16:12:32 2026 +0000|ramips: free the padding in front of the kernel text
-e1a4153072|Marco Martins|Sat Nov 14 18:58:33 2026 +0000|generic: mips: keep module code out of the first 32 KiB
-9974e6ff11|Marco Martins|Thu Nov 12 19:56:54 2026 +0000|ramips: mt7620: drop the workarounds for the EPC erratum
-205ac6baf7|Marco Martins|Wed Nov 11 22:14:28 2026 +0000|ramips: mt7620: keep the kernel code out of the first 32 KiB
-08379a3a86|Yalei Zang|Wed Oct 28 14:36:01 2026 +0800|airoha: backport PCI mediatek-gen3 link speed/width patches
-e578140c3a|Yalei Zang|Tue Nov 3 17:00:03 2026 +0800|airoha: backport NPU fix for missing streaming DMA mask
-c0f6e74256|Yalei Zang|Wed Sep 23 15:56:42 2026 +0800|airoha: backport EN7581 NPU DT bindings
-170d7fab2f|Vitaliy Sochnev|Sat Aug 22 15:55:46 2026 +0100|airoha: npu: update firmware loading patch to the upstream version
-680c0c031d|Christoph Krapp|Mon Nov 16 21:20:36 2026 +0100|ipq40xx: fix LAN/WAN MAC address on ASUS Lyra Mini
-9933db673b|Grische|Wed Sep 16 19:10:33 2026 +0200|mpc85xx: relocate simpleImage loader to 0x3000000
+b964791460|Martin Pecka|Mon Nov 2 00:53:24 2026 +0100|ppp: fix default config
+d4c036a9f3|Martin Pecka|Fri Jul 24 03:27:41 2026 +0200|ppp: update MPPE options in PPTP configuration
+081ea0bddb|Zhixuan WU|Thu Oct 22 19:34:51 2026 -0700|ipq40xx: fix sysupgrade images for Netgear Orbi
+a3c635d34d|Zhengping Zhang|Tue Nov 24 13:51:03 2026 +0800|airoha: fix watchdog zero clock frequency (CVE-2026-68356)
+b14822aecc|Zhengping Zhang|Tue Nov 24 13:51:03 2026 +0800|airoha: fix MDIO regmap error handling (CVE-2025-68187)
+c8a7c4c065|David Bauer|Mon Nov 23 23:22:44 2026 +0100|ipq806x: refresh patches
+c100ccd7a8|David Bauer|Mon Nov 23 23:04:51 2026 +0100|ipq806x: backport stmmac UDP checksum fixes
+0a6d9c09a3|Deomid rojer Ryabkov|Tue Nov 10 17:36:26 2026 +0200|rockchip: enable SDIO Wi-Fi on NanoPi R2S Plus
+fb07737946|David Härdeman|Mon Nov 16 14:13:46 2026 +0000|generic: backport SDIO UHS fixes for cards misreporting S18A
+c5adc39903|Tianling Shen|Sun Oct 4 18:08:27 2026 +0800|tools/7z: update to 26.03
+80a9ec2433|John Audia|Thu Oct 22 18:07:57 2026 -0400|linux-firmware: update to 20261019
+2291003fb9|John Audia|Wed Sep 16 15:15:54 2026 -0400|linux-firmware: update to 20260916
+42279bea9c|John Audia|Thu Sep 10 16:33:38 2026 -0400|linux-firmware: update to 20260910
+4755bf4bd4|John Audia|Mon Aug 10 16:13:12 2026 -0400|linux-firmware: update to 20260810
+5780bdf43f|John Audia|Sat Jun 27 14:17:02 2026 -0400|linux-firmware: update 20260622
+
+
 </details>

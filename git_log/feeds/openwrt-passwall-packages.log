@@ -1,11 +1,12 @@
 <details> <summary> <b>openwrt-passwall-packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/8147e8bf8abc62b5357f76defa37f380e35f6e0a...a880c9046f8bd5d2d4f1fb6b8f2e70968c463322)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall-packages/compare/a880c9046f8bd5d2d4f1fb6b8f2e70968c463322...a7e65d1d5d624f4b7910ba738ba7045fc2f534ce)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-a880c90|David Mandy|Fri Nov 20 11:33:28 2026 +0800|smartdns: update to 48.5 (#781)
-ca5da9e|David Mandy|Fri Nov 20 11:33:04 2026 +0800|v2ray-geoip: update to 202611190019 (#782)
-17a9e10|David Mandy|Fri Nov 20 11:32:47 2026 +0800|v2ray-geosite: update to 202611192204 (#780)
+a7e65d1|David Mandy|Tue Nov 24 01:46:30 2026 +0800|v2ray-geosite: update to 202611222203 (#784)
+2d1d11a|David Mandy|Tue Nov 24 01:43:09 2026 +0800|ci: compile test ignore smartdns Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
+71e5c6d|David Mandy|Tue Nov 24 01:35:31 2026 +0800|ci: add sync smartdns to upstream action Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
+65ae3f5|David Mandy|Sun Nov 22 18:47:05 2026 +0800|smartdns-webui: update to 6a64c5b (#783)
 </details>

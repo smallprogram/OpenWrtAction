@@ -1,16 +1,11 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/e881fed794a36dd18f282a4e227b7a1ced5679e5...2f40483eff76287790c6653fed2a54e2c1bc1128)  
+#### [:mega: Full Changelog. ](https://github.com/coolsnowwolf/luci/compare/2f40483eff76287790c6653fed2a54e2c1bc1128...d4e08234deb3cfc74101492465f6e4bfad75840d)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-2f40483eff|github-actions[bot]|Fri Nov 20 10:01:50 2026 +0000|ci: sync upstream luci applications
-b3c4738cd1|coolsnowwolf|Fri Nov 20 15:13:13 2026 +0800|luci-app-openclash: gate firewall defaults on package selection
-883903c41f|github-actions[bot]|Thu Nov 19 10:21:38 2026 +0000|ci: sync upstream luci applications
-4cedffdfde|github-actions[bot]|Wed Nov 18 10:10:50 2026 +0000|ci: sync upstream luci applications
-ca472c912b|coolsnowwolf|Wed Nov 18 09:42:27 2026 +0800|luci-app-msd_lite: restore shared feed package
-14761f22dd|coolsnowwolf|Wed Nov 18 09:42:25 2026 +0800|luci-mod-network: restore shared feed package
-24268e57f3|github-actions[bot]|Tue Nov 17 10:44:26 2026 +0000|ci: sync upstream luci applications
-d3412310bd|Chen Lin|Tue Nov 17 13:28:41 2026 +0800|Remove packages provided by QWRT core
+d4e08234de|coolsnowwolf|Thu Nov 26 17:17:15 2026 +0800|luci-app-upnp: use the private WAN IPv4 forwarding option
+9a09032dd7|github-actions[bot]|Tue Nov 24 12:29:48 2026 +0000|ci: sync upstream luci applications
+da57236d2d|github-actions[bot]|Mon Nov 23 10:47:04 2026 +0000|ci: sync upstream luci applications
 </details>

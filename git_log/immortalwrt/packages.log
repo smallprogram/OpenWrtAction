@@ -1,0 +1,25 @@
+<details> <summary> <b>packages new commit log :rocket: </b> </summary>
+
+#### [:mega: Full Changelog. ](https://github.com/immortalwrt/packages/compare/fa25995d74a720c1c98bf6265d3dd8b4eb620d1f...3f37537ae8f410bd300852330a0e540d71c70a95)  
+:heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
+
+SHA|Author|Date|Message
+-|-|-|-
+3f37537ae|Tianling Shen|Tue Nov 24 11:03:49 2026 +0800|Merge Official Source
+53c6ace87|George Sapkin|Thu Nov 19 20:03:34 2026 +0200|adguardhome: bump to 1.0.0
+bc6d9fddc|George Sapkin|Thu Nov 19 20:41:32 2026 +0200|adguardhome: normalize Makefile
+741d854b4|George Sapkin|Thu Nov 19 20:12:32 2026 +0200|adguardhome: drop inactive maintainer
+1470d878a|Dirk Brenken|Sun Nov 22 20:06:29 2026 +0100|adblock: release 4.5.10-1
+faedd483e|Josef Schlehofer|Wed Sep 23 00:57:01 2026 +0200|syslog-ng: use CMake instead of autotools
+98a61de47|Sander van Deijck|Fri Oct 30 15:31:05 2026 +0100|syslog-ng: drop unused libdbi dependency
+32514adde|Ray Wang|Fri Nov 13 21:16:20 2026 +0800|hev-socks5-tunnel: update to 2.20.0
+46bea15a5|Ray Wang|Wed Nov 11 21:06:22 2026 +0800|hev-socks5-tproxy: update to 2.14.0
+fcf581f85|Ray Wang|Wed Nov 11 21:04:50 2026 +0800|fsh: update to 4.12.0
+36bcf38e0|Noah Meyerhans|Sat Nov 21 11:13:34 2026 -0500|bind: bump to 9.20.31
+70792587c|Christian Marangi|Wed Nov 18 22:06:27 2026 +0100|nginx: update to 1.30.7
+088bdcbe0|Tianshuai Gao|Mon Jul 6 10:58:07 2026 +0800|nginx: 302 the "/" path to "/cgi-bin/luci/"
+211801cf6|Nikita Solianik|Mon Sep 29 19:20:59 2025 +0200|nginx-util: specify gzip_types to actually enable gzip
+a3df40fd2|Florian Wagner|Thu Oct 8 10:34:06 2026 +0200|nginx: only build luajit2 if required
+
+
+</details>

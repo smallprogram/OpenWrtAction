@@ -1,13 +1,10 @@
 <details> <summary> <b>luci new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/1c75ea46c68ebc386fef9922089260de16f30417...92d84fc384f61a03313c137f9efd565c3cb013cc)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/luci/compare/92d84fc384f61a03313c137f9efd565c3cb013cc...0ffd555907816f80174842f2387e42ccb81d7167)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-92d84fc384|Hannu Nyman|Sat Nov 21 09:32:43 2026 +0200|treewide: backport translations from master
-851d45487d|Dirk Brenken|Fri Nov 20 22:23:16 2026 +0100|luci-app-banip: sync with base package 1.9.2-1
-5331286252|Josef Schlehofer|Mon Sep 28 09:15:27 2026 +0200|luci-app-librespeed: offer a weekly interval
-0fba8c9da4|Josef Schlehofer|Thu Sep 24 08:26:25 2026 +0200|luci-app-librespeed: test and schedule per interface
-45d88f61ff|Josef Schlehofer|Thu Sep 24 08:51:03 2026 +0200|luci-app-librespeed: order history by time
+0ffd555907|Valentin Berezhnoy|Mon Nov 23 07:18:54 2026 +0200|luci-mod-network: add acs_exclude_dfs option
+cb87fe60e1|Dirk Brenken|Sun Nov 22 20:11:07 2026 +0100|luci-app-adblock: release 4.5.10-1
 </details>

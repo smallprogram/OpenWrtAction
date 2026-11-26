@@ -1,15 +1,14 @@
 <details> <summary> <b>openwrt-passwall2 new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/0c817f7dbfc10038510c4e6e9d13e54bd94f769d...7d6bae5bdd164abfdae5a34e85af3774f7481497)  
+#### [:mega: Full Changelog. ](https://github.com/Openwrt-Passwall/openwrt-passwall2/compare/7d6bae5bdd164abfdae5a34e85af3774f7481497...ba02b03c91d7f7ec515583af048f171b1302f58b)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-7d6bae5|A-BO|Fri Nov 20 02:03:05 2026 +0800|luci: batch UCI writes for subscription nodes
-cb6fc9f|A-BO|Thu Nov 19 23:38:56 2026 +0800|luci: resolve XHTTP download addresses with node-specific DNS
-8b24c84|A-BO|Thu Nov 19 23:23:52 2026 +0800|luci: support per-node DNS policies in Clash subscriptions
-a32c046|A-BO|Wed Nov 18 23:35:02 2026 +0800|luci: add WireGuard and MASQUE support to Clash subscription conversion
-eab954e|A-BO|Wed Nov 18 22:43:58 2026 +0800|luci: Add MASQUE URI import/export
-fbe2b6b|A-BO|Tue Nov 17 22:51:20 2026 +0800|luci: explicitly specify IPv6 family for nftables TPROXY rules
-9c6d23d|A-BO|Tue Nov 17 19:52:40 2026 +0800|luci: reset rp_filter and src_valid_mark for TPROXY compatibility
+ba02b03|A-BO|Thu Nov 26 20:19:26 2026 +0800|luci: Show an error when a share URL is too long for a QR code
+8900ebc|David Mandy|Tue Nov 24 18:56:54 2026 +0800|ci: fixes donwload sdk error Signed-off-by: David Mandy <smallprogramzhusir@gmail.com>
+d9ba18d|A-BO|Mon Nov 23 23:53:09 2026 +0800|luci: prevent line wrapping in client and server logs
+7cad798|A-BO|Mon Nov 23 22:26:19 2026 +0800|luci: bump 26.11.23
+31b5265|A-BO|Mon Nov 23 20:39:09 2026 +0800|luci: optimize
+ccae1fd|A-BO|Mon Nov 23 01:47:24 2026 +0800|luci: fix RAW HTTP Host and Path handling
 </details>

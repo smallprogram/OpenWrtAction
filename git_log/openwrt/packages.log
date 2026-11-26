@@ -1,25 +1,20 @@
 <details> <summary> <b>packages new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/c2c619e6f065b238ab000b6cfc5afa238658b0c9...70792587c1d0e22d0be73cc64b8fb1e2cd4722c9)  
+#### [:mega: Full Changelog. ](https://github.com/openwrt/packages/compare/70792587c1d0e22d0be73cc64b8fb1e2cd4722c9...59b79c524e81159aa13fe5bfb12edb97d2002268)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-70792587c|Christian Marangi|Wed Nov 18 22:06:27 2026 +0100|nginx: update to 1.30.7
-088bdcbe0|Tianshuai Gao|Mon Jul 6 10:58:07 2026 +0800|nginx: 302 the "/" path to "/cgi-bin/luci/"
-211801cf6|Nikita Solianik|Mon Sep 29 19:20:59 2025 +0200|nginx-util: specify gzip_types to actually enable gzip
-a3df40fd2|Florian Wagner|Thu Oct 8 10:34:06 2026 +0200|nginx: only build luajit2 if required
-da4e543d7|Keiji Hata|Fri Jul 24 16:26:46 2026 +0800|nginx: update repository of maintained naxsi module
-ec1831d4f|Josef Schlehofer|Sun Sep 27 23:50:36 2026 +0200|nginx: update to 1.30.5
-92ed28af6|Jan Klos|Wed Jul 1 11:49:54 2026 +0200|nginx: update to 1.30.3
-c3c438f0f|Seo Suchan|Fri May 29 00:08:39 2026 +0900|nginx: update to 1.30.2
-7625a2104|Daniel F. Dickinson|Mon Feb 16 23:42:33 2026 -0500|nginx: fix module depends on nginx
-0b3330b3c|Trix Taiclet|Mon Sep 21 15:22:44 2026 +0200|mox-pkcs11: fix broken Makefile
-ec7033866|Tomáš Macholda|Thu Sep 25 15:17:42 2025 +0200|mox-pkcs11: add new package
-e61fb9a58|Tianling Shen|Wed Nov 11 11:24:43 2026 +0800|xray-core: update to 26.11.9
-ea2476bc1|Sami Salonen|Fri Oct 30 20:54:57 2026 +0200|netbird: update to 0.82.0
-7f2a6bbc0|Olivier Poitrey|Sun Nov 15 23:04:07 2026 +0000|nextdns: update to version 1.50.2
-ccb56eff0|Dirk Brenken|Fri Nov 20 22:17:19 2026 +0100|banip: release 1.9.2-1
-
-
+59b79c524|George Sapkin|Tue Nov 24 14:16:30 2026 +0200|yt-dlp: bump to 2026.11.23
+56d8e76e2|Kirpal Singh|Fri Nov 20 15:51:23 2026 +0530|zerotier: build without MIPS16
+53c6ace87|George Sapkin|Thu Nov 19 20:03:34 2026 +0200|adguardhome: bump to 1.0.0
+bc6d9fddc|George Sapkin|Thu Nov 19 20:41:32 2026 +0200|adguardhome: normalize Makefile
+741d854b4|George Sapkin|Thu Nov 19 20:12:32 2026 +0200|adguardhome: drop inactive maintainer
+1470d878a|Dirk Brenken|Sun Nov 22 20:06:29 2026 +0100|adblock: release 4.5.10-1
+faedd483e|Josef Schlehofer|Wed Sep 23 00:57:01 2026 +0200|syslog-ng: use CMake instead of autotools
+98a61de47|Sander van Deijck|Fri Oct 30 15:31:05 2026 +0100|syslog-ng: drop unused libdbi dependency
+32514adde|Ray Wang|Fri Nov 13 21:16:20 2026 +0800|hev-socks5-tunnel: update to 2.20.0
+46bea15a5|Ray Wang|Wed Nov 11 21:06:22 2026 +0800|hev-socks5-tproxy: update to 2.14.0
+fcf581f85|Ray Wang|Wed Nov 11 21:04:50 2026 +0800|fsh: update to 4.12.0
+36bcf38e0|Noah Meyerhans|Sat Nov 21 11:13:34 2026 -0500|bind: bump to 9.20.31
 </details>

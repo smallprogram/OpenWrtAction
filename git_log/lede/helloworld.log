@@ -1,14 +1,12 @@
 <details> <summary> <b>helloworld new commit log :rocket: </b> </summary>
 
-#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/6fbc9f563c9e7cd3b65061fba13ffc62666066aa...8134e2fff2b49b5f4308d295d2b2a987ca7207ec)  
+#### [:mega: Full Changelog. ](https://github.com/fw876/helloworld/compare/8134e2fff2b49b5f4308d295d2b2a987ca7207ec...a8ae1e4a7e0a8753cbfcca83d7f4bb2356d87014)  
 :heavy_exclamation_mark: The list displays only the latest 15 commit logs.  
 
 SHA|Author|Date|Message
 -|-|-|-
-8134e2f|zxlhhyccc|Sat Nov 21 14:38:02 2026 +0800|luci-app-ssr-plus: add IDN domain handling in gfw2ipset
-260ff84|zxlhhyccc|Sat Nov 21 14:34:03 2026 +0800|luci-app-ssr-plus: fix Makefile dependency drift
-67449c6|coolsnowwolf|Fri Nov 20 12:17:48 2026 +0800|luci-app-ssr-plus: guard runtime selections when the package is disabled
-e825742|coolsnowwolf|Tue Nov 17 21:07:24 2026 +0800|luci-app-ssr-plus: select coreutils for timeout dependency
-c9525e6|coolsnowwolf|Tue Nov 17 13:19:22 2026 +0800|luci-app-ssr-plus: bump version to v198.5
-fa29e87|coolsnowwolf|Tue Nov 17 13:18:18 2026 +0800|xray-core: allow Cronet archive linker flag in cgo
+a8ae1e4|zxl hhyccc|Sun Nov 22 21:07:29 2026 +0800|mihomo: update to 1.19.34
+16e0554|coolsnowwolf|Sun Nov 22 20:26:40 2026 +0800|luci-app-ssr-plus: silence routine rules status checks
+5c43a70|zxlhhyccc|Sun Nov 22 20:14:05 2026 +0800|luci-app-ssr-plus: replace unavailable GitHub proxy mirrors
+e2cfe66|zxlhhyccc|Sun Nov 22 14:50:49 2026 +0800|luci-app-ssr-plus: fix component page dispatch
 </details>
